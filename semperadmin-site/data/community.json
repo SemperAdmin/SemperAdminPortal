@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "title": "Welcome to Community Discussions",
+    "body": "Share updates, ask questions, and help fellow Marines succeed.",
+    "category": "announcements",
+    "community": "marines",
+    "votes": 12,
+    "createdAt": 1734374400000,
+    "author": "Semper Admin"
+  },
+  {
+    "id": "2",
+    "title": "Checklist for DTS travel",
+    "body": "Posting a checklist to avoid common DTS errors.",
+    "category": "templates",
+    "community": "administrators",
+    "votes": 9,
+    "createdAt": 1734417600000,
+    "author": "Admin Ops"
+  },
+  {
+    "id": "3",
+    "title": "SkillBridge success story",
+    "body": "Completed SkillBridge with great results.",
+    "category": "success",
+    "community": "leaders",
+    "votes": 15,
+    "createdAt": 1734446400000,
+    "author": "Unit Lead"
+  }
+]
