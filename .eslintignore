@@ -1,0 +1,5 @@
+app/knowledge/KnowladgeApp/
+.next/
+out/
+node_modules/
+semperadmin-site/
