@@ -22,6 +22,7 @@ import SDAPContent from "../../../../../components/SDAPContent";
 import SDPContent from "../../../../../components/SDPContent";
 import BRSContent from "../../../../../components/BRSContent";
 import ContinuationPayContent from "../../../../../components/ContinuationPayContent";
+import High3Content from "../../../../../components/High3Content";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -812,6 +813,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
   const isSDAP = itemSlug === "sdap";
   const isSDP = itemSlug === "savings-deposit-program";
   const isBRS = itemSlug === "blended-retirement-system";
+  const isHIGH3 = itemSlug === "legacy-high-3-retirement-system";
   const isCP = itemSlug === "continuation-pay";
   const displayTitle = isSDAP ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
 
@@ -825,7 +827,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
         <Link prefetch={false} href={`/roles/${safeRole}/${safeSection}`} className="inline-flex items-center justify-center rounded-md border border-black/10 bg-white px-4 py-2 text-[var(--sa-navy)] shadow-sm transition hover:bg-[var(--sa-cream)]/60 dark:border-white/15 dark:bg-black/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Back</Link>
       </div>
 
-      {isBAH ? <BAHContent bahData={BAH_DATA} /> : isBAS ? <BASContent basData={BAS_DATA} /> : isCOLA ? <COLAContent colaData={COLA_DATA} /> : isOHA ? <OHAContent ohaData={OHA_DATA} /> : isFSA ? <FSAContent fsaData={FSA_DATA} /> : isHFP ? <HostileFirePayContent hfpData={HFP_DATA} /> : isIDP ? <ImminentDangerPayContent idpData={IDP_DATA} /> : isHDIP ? <HDIPContent hdipData={HDIP_DATA} /> : isHDP ? <HDPContent hdpData={HDP_DATA} /> : isSDAP ? <SDAPContent sdapData={SDAP_DATA} /> : isSDP ? <SDPContent sdpData={SDP_DATA} /> : isBRS ? <BRSContent /> : isCP ? <ContinuationPayContent /> : isDIVE ? <DivePayContent diveData={DIVE_DATA} /> : isSTRESS ? <ExperimentalStressContent stressData={STRESS_DATA} /> : isFDHD ? <FlightDeckContent fdhdData={FDHD_DATA} /> : isPARACHUTE ? <ParachuteContent parachuteData={PARACHUTE_DATA} /> : isVBSS ? <VBSSContent vbssData={VBSS_DATA} /> : isSO ? <SpecialOperationsContent soData={SO_DATA} /> : isTOXIC ? <ToxicMaterialsContent tmData={TM_DATA} /> : isACIP ? <AviationCareerIncentivePayContent acipData={ACIP_DATA} /> : (isFLPP || isFLPB) ? <ForeignLanguageProficiencyPayContent flppData={FLPP_DATA} /> : <GenericContent title={itemTitle} />}
+      {isBAH ? <BAHContent bahData={BAH_DATA} /> : isBAS ? <BASContent basData={BAS_DATA} /> : isCOLA ? <COLAContent colaData={COLA_DATA} /> : isOHA ? <OHAContent ohaData={OHA_DATA} /> : isFSA ? <FSAContent fsaData={FSA_DATA} /> : isHFP ? <HostileFirePayContent hfpData={HFP_DATA} /> : isIDP ? <ImminentDangerPayContent idpData={IDP_DATA} /> : isHDIP ? <HDIPContent hdipData={HDIP_DATA} /> : isHDP ? <HDPContent hdpData={HDP_DATA} /> : isSDAP ? <SDAPContent sdapData={SDAP_DATA} /> : isSDP ? <SDPContent sdpData={SDP_DATA} /> : isHIGH3 ? <High3Content /> : isBRS ? <BRSContent /> : isCP ? <ContinuationPayContent /> : isDIVE ? <DivePayContent diveData={DIVE_DATA} /> : isSTRESS ? <ExperimentalStressContent stressData={STRESS_DATA} /> : isFDHD ? <FlightDeckContent fdhdData={FDHD_DATA} /> : isPARACHUTE ? <ParachuteContent parachuteData={PARACHUTE_DATA} /> : isVBSS ? <VBSSContent vbssData={VBSS_DATA} /> : isSO ? <SpecialOperationsContent soData={SO_DATA} /> : isTOXIC ? <ToxicMaterialsContent tmData={TM_DATA} /> : isACIP ? <AviationCareerIncentivePayContent acipData={ACIP_DATA} /> : (isFLPP || isFLPB) ? <ForeignLanguageProficiencyPayContent flppData={FLPP_DATA} /> : <GenericContent title={itemTitle} />}
     </div>
   );
 }
@@ -834,6 +836,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   const roles: Role[] = ["marines", "administrators", "leaders", "commanders"];
   const section = "pay-allowances";
   const itemSlugs = [
+    "legacy-high-3-retirement-system",
     "blended-retirement-system",
     "continuation-pay",
     "basic-allowance-for-housing",
