@@ -10,7 +10,7 @@ export default function BAHContent({ bahData }: { bahData: { examples: Example[]
   return (
     <div className="grid gap-6 lg:grid-cols-3">
       <div className="lg:col-span-2 space-y-6">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 overflow-x-auto [&>button]:whitespace-nowrap [&>button]:shrink-0">
           <button onClick={() => setTab("overview")} className={`rounded-md px-3 py-2 text-sm ${tab === "overview" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Overview</button>
           <button onClick={() => setTab("eligibility")} className={`rounded-md px-3 py-2 text-sm ${tab === "eligibility" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Eligibility</button>
           <button onClick={() => setTab("documents")} className={`rounded-md px-3 py-2 text-sm ${tab === "documents" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Documents</button>
@@ -22,7 +22,7 @@ export default function BAHContent({ bahData }: { bahData: { examples: Example[]
         </div>
 
         {tab === "overview" && (
-          <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">What Is BAH?</h2>
             <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Basic Allowance for Housing (BAH) is a monthly allowance to help pay for housing when living off-base. The amount depends on pay grade, duty station ZIP code, and dependency status. BAH is not taxable and is paid in addition to basic pay.</p>
             <div className="mt-4 grid gap-4 sm:grid-cols-3">
@@ -57,7 +57,7 @@ export default function BAHContent({ bahData }: { bahData: { examples: Example[]
         )}
 
         {tab === "eligibility" && (
-          <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Who Gets BAH?</h2>
             <div className="mt-3 grid gap-4 md:grid-cols-2">
               <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
@@ -84,7 +84,7 @@ export default function BAHContent({ bahData }: { bahData: { examples: Example[]
         )}
 
         {tab === "documents" && (
-          <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Required Documents</h2>
             <div className="mt-3 grid gap-4 md:grid-cols-3">
               <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
@@ -123,7 +123,7 @@ export default function BAHContent({ bahData }: { bahData: { examples: Example[]
         )}
 
         {tab === "apply" && (
-          <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">How To Apply or Update BAH</h2>
             <div className="mt-4 space-y-4">
               <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
@@ -147,7 +147,7 @@ export default function BAHContent({ bahData }: { bahData: { examples: Example[]
         )}
 
         {tab === "timeline" && (
-          <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Timeline</h2>
             <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
               <li>Submit within 30 days of marriage or birth</li>
@@ -159,7 +159,7 @@ export default function BAHContent({ bahData }: { bahData: { examples: Example[]
         )}
 
         {tab === "important" && (
-          <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Important Things To Know</h2>
             <div className="mt-4 space-y-6">
               <div>
@@ -187,7 +187,7 @@ export default function BAHContent({ bahData }: { bahData: { examples: Example[]
         )}
 
         {tab === "troubleshooter" && (
-          <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Common Problems & Solutions</h2>
             <div className="mt-3 space-y-4">
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
@@ -222,7 +222,7 @@ export default function BAHContent({ bahData }: { bahData: { examples: Example[]
         )}
 
         {tab === "references" && (
-          <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">References</h2>
             <div className="mt-4 grid grid-cols-1 gap-4">
               {bahData.references.map((ref) => (

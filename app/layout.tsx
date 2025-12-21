@@ -54,6 +54,14 @@ export default function RootLayout({
                 apply(next);
               });
             }
+            document.addEventListener('click', function(e){
+              var t = e.target && (e.target.closest ? e.target.closest('#sa-theme-toggle') : null);
+              if (!t) return;
+              var pref = localStorage.getItem(KEY) || 'system';
+              var next = (pref === 'dark') ? 'light' : 'dark';
+              try { localStorage.setItem(KEY, next); } catch {}
+              apply(next);
+            });
             var roles = document.getElementById('sa-roles');
             var toggle = document.getElementById('sa-roles-toggle');
             var panel = document.getElementById('sa-roles-panel');
@@ -67,14 +75,14 @@ export default function RootLayout({
           })();
         `}} />
         <header className="sticky top-0 z-50 border-b border-black/5 bg-[var(--sa-cream)]/80 backdrop-blur supports-[backdrop-filter]:bg-[var(--sa-cream)]/60 dark:bg-[var(--sa-navy)]/80 dark:supports-[backdrop-filter]:bg-[var(--sa-navy)]/60">
-          <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
+          <div className="mx-auto flex h-12 sm:h-14 max-w-full sm:max-w-6xl items-center justify-between px-2 sm:px-4">
             <div className="flex items-center gap-3">
               <div className="relative h-8 w-8 overflow-hidden rounded-full ring-2 ring-[var(--sa-gold)]">
                 <Image src={`${BP}/logo.png`} alt="Semper Admin" fill sizes="32px" className="object-cover" />
               </div>
               <span className="text-lg font-semibold tracking-wide text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Semper Admin</span>
             </div>
-            <nav className="flex items-center gap-6 text-sm">
+            <nav className="flex items-center gap-3 sm:gap-6 text-xs sm:text-sm overflow-x-auto sm:overflow-visible whitespace-nowrap [--scrollbar-color:transparent] [&>a]:shrink-0 [&>button]:shrink-0">
               <Link href="/" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Home</Link>
               <Link href="/about" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">About</Link>
               <Link href="/announcements" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Announcements</Link>
@@ -156,7 +164,9 @@ export default function RootLayout({
           </div>
         </header>
         <main className="mx-auto max-w-6xl px-4 py-8">
-          {children}
+          <div className="space-y-8">
+            {children}
+          </div>
         </main>
         <footer className="mt-12 border-t border-black/5 px-4 py-6 text-sm text-zinc-600 dark:text-zinc-400">
           <div className="mx-auto max-w-6xl space-y-3">

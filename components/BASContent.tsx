@@ -20,8 +20,8 @@ export default function BASContent({ basData }: { basData: { rates: Rates; codes
   return (
     <div className="grid gap-6 lg:grid-cols-3">
       <div className="lg:col-span-2 space-y-6">
-        <div className="flex items-center gap-2">
-          <button onClick={() => setActiveTab("dashboard")} className={`rounded-md px-3 py-2 text-sm ${activeTab === "dashboard" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Dashboard</button>
+        <div className="flex items-center gap-2 overflow-x-auto [&>button]:whitespace-nowrap [&>button]:shrink-0">
+          <button onClick={() => setActiveTab("dashboard")} className={`rounded-md px-3 py-2 text-sm ${activeTab === "dashboard" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Overview</button>
           <button onClick={() => setActiveTab("documents")} className={`rounded-md px-3 py-2 text-sm ${activeTab === "documents" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Documents</button>
           <button onClick={() => setActiveTab("calculator")} className={`rounded-md px-3 py-2 text-sm ${activeTab === "calculator" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Loss Calculator</button>
           <button onClick={() => setActiveTab("troubleshooter")} className={`rounded-md px-3 py-2 text-sm ${activeTab === "troubleshooter" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Troubleshooter</button>

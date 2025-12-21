@@ -20,7 +20,7 @@ export default function SDPContent({ sdpData }: { sdpData: { references: Ref[] }
   return (
     <div className="grid gap-6 lg:grid-cols-3">
       <div className="lg:col-span-2 space-y-6">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 overflow-x-auto [&>button]:whitespace-nowrap [&>button]:shrink-0">
           {(
             [
               ["overview", "Overview"],
