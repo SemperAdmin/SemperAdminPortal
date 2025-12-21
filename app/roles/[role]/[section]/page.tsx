@@ -121,3 +121,13 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     </div>
   );
 }
+
+export function generateStaticParams(): { role: Role; section: string }[] {
+  const roles: Role[] = ["marines", "administrators", "leaders", "commanders"];
+  const sections = Object.keys(SECTIONS);
+  const params: { role: Role; section: string }[] = [];
+  for (const role of roles) {
+    for (const section of sections) params.push({ role, section });
+  }
+  return params;
+}

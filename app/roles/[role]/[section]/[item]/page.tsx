@@ -781,7 +781,7 @@ function toTitle(slug: string) {
     .replace(/Foreign Language Proficiency Pay/i, "Foreign Language Proficiency Bonus");
 }
 
-export default async function ItemPage({ params }: { params: Promise<Params> }) {
+export default async function RoleItemPage({ params }: { params: Promise<Params> }) {
   const p = await params;
   const safeRole = p.role ?? "marines";
   const safeSection = p.section ?? "unknown";
@@ -824,6 +824,38 @@ export default async function ItemPage({ params }: { params: Promise<Params> }) 
       {isBAH ? <BAHContent bahData={BAH_DATA} /> : isBAS ? <BASContent basData={BAS_DATA} /> : isCOLA ? <COLAContent colaData={COLA_DATA} /> : isOHA ? <OHAContent ohaData={OHA_DATA} /> : isFSA ? <FSAContent fsaData={FSA_DATA} /> : isHFP ? <HostileFirePayContent hfpData={HFP_DATA} /> : isIDP ? <ImminentDangerPayContent idpData={IDP_DATA} /> : isHDIP ? <HDIPContent hdipData={HDIP_DATA} /> : isHDP ? <HDPContent hdpData={HDP_DATA} /> : isSDAP ? <SDAPContent sdapData={SDAP_DATA} /> : isSDP ? <SDPContent sdpData={SDP_DATA} /> : isDIVE ? <DivePayContent diveData={DIVE_DATA} /> : isSTRESS ? <ExperimentalStressContent stressData={STRESS_DATA} /> : isFDHD ? <FlightDeckContent fdhdData={FDHD_DATA} /> : isPARACHUTE ? <ParachuteContent parachuteData={PARACHUTE_DATA} /> : isVBSS ? <VBSSContent vbssData={VBSS_DATA} /> : isSO ? <SpecialOperationsContent soData={SO_DATA} /> : isTOXIC ? <ToxicMaterialsContent tmData={TM_DATA} /> : isACIP ? <AviationCareerIncentivePayContent acipData={ACIP_DATA} /> : (isFLPP || isFLPB) ? <ForeignLanguageProficiencyPayContent flppData={FLPP_DATA} /> : <GenericContent title={itemTitle} />}
     </div>
   );
+}
+
+export function generateStaticParams(): { role: Role; section: string; item: string }[] {
+  const roles: Role[] = ["marines", "administrators", "leaders", "commanders"];
+  const section = "pay-allowances";
+  const itemSlugs = [
+    "basic-allowance-for-housing",
+    "basic-allowance-for-subsistence",
+    "cost-of-living-allowance",
+    "overseas-housing-allowance",
+    "demolition-pay",
+    "dive-pay",
+    "experimental-stress-duty",
+    "aviation-career-incentive-pay",
+    "flight-deck-duty",
+    "foreign-language-proficiency-pay",
+    "hardship-duty-pay",
+    "parachute-duty-pay",
+    "maritime-vbss-duty",
+    "sdap",
+    "special-operations-pay",
+    "toxic-materials-duty",
+    "family-separation-allowance",
+    "hostile-fire-pay",
+    "imminent-danger-pay",
+    "savings-deposit-program",
+  ];
+  const params: { role: Role; section: string; item: string }[] = [];
+  for (const role of roles) {
+    for (const item of itemSlugs) params.push({ role, section, item });
+  }
+  return params;
 }
 
 function GenericContent({ title }: { title: string }) {

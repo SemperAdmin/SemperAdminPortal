@@ -62,3 +62,8 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
     </div>
   );
 }
+
+export function generateStaticParams(): { role: Role }[] {
+  const roles: Role[] = ["marines", "administrators", "leaders", "commanders"];
+  return roles.map((role) => ({ role }));
+}
