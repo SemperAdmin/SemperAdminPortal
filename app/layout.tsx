@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en" className="dark" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="fixed inset-0 -z-10">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a]" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#fafafa] via-[#f4f4f5] to-[#fafafa] dark:from-[#0f172a] dark:via-[#1e293b] dark:to-[#0f172a]" />
         </div>
         <script dangerouslySetInnerHTML={{__html: `
           (function(){
