@@ -20,6 +20,7 @@ const featuredTracks = [
 ];
 
 export default function SoundtracksPage() {
+  const BP = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <div className="space-y-8">
       <section className="rounded-2xl bg-[var(--sa-cream)] px-6 py-12 shadow-sm ring-1 ring-black/5 dark:bg-[var(--sa-navy)]">
@@ -36,7 +37,7 @@ export default function SoundtracksPage() {
           </div>
           <div className="flex items-center justify-center">
             <div className="relative h-48 w-48 overflow-hidden rounded-full ring-4 ring-[var(--sa-gold)]">
-              <Image src="/Semper Soundtracks DJ Logo.jpg" alt="Semper Soundtracks" fill sizes="192px" className="object-cover" />
+              <Image src={`${BP}/Semper Soundtracks DJ Logo.jpg`} alt="Semper Soundtracks" fill sizes="192px" className="object-cover" />
             </div>
           </div>
         </div>

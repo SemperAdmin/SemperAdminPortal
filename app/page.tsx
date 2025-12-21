@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
+  const BP = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <div className="relative isolate">
       <section className="relative isolate rounded-2xl bg-[var(--sa-cream)] py-20 shadow-sm ring-1 ring-black/5 dark:bg-[var(--sa-navy)]">
@@ -9,7 +10,7 @@ export default function Home() {
           <div className="grid items-center gap-8 lg:grid-cols-2">
             <div className="flex justify-center">
               <div className="relative h-48 w-48 overflow-hidden rounded-full ring-4 ring-[var(--sa-gold)] mx-auto">
-                <Image src="/logo.png" alt="Semper Admin logo" fill sizes="192px" priority className="object-cover object-center" />
+                <Image src={`${BP}/logo.png`} alt="Semper Admin logo" fill sizes="192px" priority className="object-cover object-center" />
               </div>
             </div>
             <div className="text-center lg:text-left">

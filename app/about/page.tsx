@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function AboutPage() {
+  const BP = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <div className="space-y-8">
       <h1 className="text-3xl font-bold tracking-tight text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">What We Offer</h1>
@@ -31,7 +32,7 @@ export default function AboutPage() {
         <div>
           <div className="flex items-center justify-center">
             <div className="relative h-48 w-48 overflow-hidden rounded-full ring-4 ring-[var(--sa-gold)]">
-              <Image src="/logo.png" alt="Semper Admin logo" fill sizes="192px" priority className="object-cover" />
+              <Image src={`${BP}/logo.png`} alt="Semper Admin logo" fill sizes="192px" priority className="object-cover" />
             </div>
           </div>
           <div className="mt-6 flex justify-center">

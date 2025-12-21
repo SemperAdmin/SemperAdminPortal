@@ -88,6 +88,7 @@ const apps = [
 ];
 
 export default function AppsPage() {
+  const BP = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<string | null>(null);
   const [favoritesOnly, setFavoritesOnly] = useState(false);
@@ -161,7 +162,7 @@ export default function AppsPage() {
         <div className="text-center">
           <div className="mx-auto mb-6 inline-block">
             <div className="relative h-24 w-24 overflow-hidden rounded-full bg-white p-2 shadow-2xl ring-4 ring-red-600/20 transition">
-              <Image src="/logo.png" alt="Semper Admin" fill sizes="96px" className="rounded-full object-cover" />
+              <Image src={`${BP}/logo.png`} alt="Semper Admin" fill sizes="96px" className="rounded-full object-cover" />
             </div>
           </div>
           <h1 className="bg-gradient-to-r from-white via-rose-200 to-amber-100 bg-clip-text text-3xl font-bold text-transparent sm:text-4xl">

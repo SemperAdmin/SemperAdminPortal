@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function ReportsPage() {
+  const BP = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <div className="space-y-6">
       <h1 className="text-3xl font-bold tracking-tight text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Reports</h1>
@@ -11,7 +12,7 @@ export default function ReportsPage() {
       <div className="mx-auto max-w-3xl rounded-xl border border-black/5 bg-white shadow-sm dark:border-white/15 dark:bg-black/40">
         <div className="relative h-40 sm:h-52 md:h-64">
           <Image
-            src="/Reports MOL login.png"
+            src={`${BP}/Reports MOL login.png`}
             alt="Reports login instructions"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"

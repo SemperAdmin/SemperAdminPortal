@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Image from "next/image";
 
 type CACRequiredProps = {
   title?: string;
@@ -10,6 +11,8 @@ type CACRequiredProps = {
 };
 
 export default function CACRequired({ title = "CAC Enabled", description = "This action requires Common Access Card (CAC) authentication.", imageSrc, alt = "CAC identification", right, svgLeft }: CACRequiredProps) {
+  const BP = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const resolvedSrc = imageSrc && imageSrc.startsWith("/") ? `${BP}${imageSrc}` : imageSrc;
   return (
     <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
       <div className="flex items-start justify-between">
@@ -22,7 +25,9 @@ export default function CACRequired({ title = "CAC Enabled", description = "This
           {svgLeft ? (
             svgLeft
           ) : imageSrc ? (
-            <img src={imageSrc} alt={alt} className="h-auto w-full max-w-[250px] object-contain" />
+            <div className="relative w-full max-w-[250px] aspect-[1/1]">
+              <Image src={resolvedSrc as string} alt={alt} fill sizes="250px" className="object-contain" />
+            </div>
           ) : (
             <svg width="250" height="400" viewBox="0 0 250 400" xmlns="http://www.w3.org/2000/svg" className="h-auto w-full max-w-[250px]">
               <rect x="10" y="10" width="230" height="380" rx="15" fill="#f8f9fa" stroke="#d1d1ca" strokeWidth="2" />
@@ -75,4 +80,3 @@ export default function CACRequired({ title = "CAC Enabled", description = "This
     </section>
   );
 }
-

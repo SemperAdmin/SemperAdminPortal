@@ -25,6 +25,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const BP = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
@@ -69,7 +70,7 @@ export default function RootLayout({
           <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
             <div className="flex items-center gap-3">
               <div className="relative h-8 w-8 overflow-hidden rounded-full ring-2 ring-[var(--sa-gold)]">
-                <Image src="/logo.png" alt="Semper Admin" fill sizes="32px" className="object-cover" />
+                <Image src={`${BP}/logo.png`} alt="Semper Admin" fill sizes="32px" className="object-cover" />
               </div>
               <span className="text-lg font-semibold tracking-wide text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Semper Admin</span>
             </div>

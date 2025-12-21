@@ -56,5 +56,3 @@ export async function GET() {
   const posts = await readPosts();
   return new Response(JSON.stringify({ posts }), { headers: { "content-type": "application/json" } });
 }
-
-// Static export supports only GET. Mutations (POST/PATCH) are disabled for Pages deployment.
