@@ -1,3 +1,8 @@
+@custom-variant dark {
+  &:where(.dark *) { @slot; }
+  &:where([data-theme="dark"] *) { @slot; }
+}
+
 @import "tailwindcss";
 
 :root {
@@ -70,6 +75,7 @@ html.dark {
   --sa-muted-text: #94a3b8;
   --sa-muted-strong: #64748b;
   --sa-muted-heading: #cbd5e1;
+  color-scheme: dark;
 }
 
 html:not(.dark) {
@@ -91,6 +97,7 @@ html:not(.dark) {
   --sa-muted-text: #94a3b8;
   --sa-muted-strong: #64748b;
   --sa-muted-heading: #cbd5e1;
+  color-scheme: light;
 }
 
 body {
@@ -215,6 +222,11 @@ html:not(.dark) .theme-icon-moon { display: none; }
   height: 100%;
 }
 
+.dark .app-card-inner {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
 .surface-card {
   backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.16);
@@ -222,8 +234,11 @@ html:not(.dark) .theme-icon-moon { display: none; }
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.35);
   color: var(--sa-navy);
 }
-
-.dark .surface-card { color: var(--sa-cream); }
+.dark .surface-card { 
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: var(--sa-cream);
+}
 
 .pillar-card { position: relative; overflow: visible; min-height: 16rem; backdrop-filter: none !important; box-shadow: none !important; border: none !important; }
 .pillar-card { background: var(--sa-cream) !important; }
@@ -448,6 +463,11 @@ button:active {
   border-radius: 9999px;
   padding: 0.75rem 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .footer-badge {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .footer-text { color: var(--sa-muted-text); font-size: 0.875rem; }
