@@ -44,6 +44,13 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
     { label: "Training & Education", slug: "training-education" },
     { label: "Systems Management", slug: "systems-management" },
   ];
+  const isAdministrators = safeRole === "administrators";
+  const adminOptions: { label: string; slug: string }[] = [
+    { label: "S-1 / G-1 Administration", slug: "s1-g1-administration" },
+    { label: "PAC (Personnel Admin Center)", slug: "pac-personnel-admin-center" },
+    { label: "I&I Staff Administration", slug: "ii-i-staff-administration" },
+  ];
+  const visibleItems = isAdministrators ? adminOptions : categories;
   const posts = (await readPosts()).filter((p) => p.community === safeRole).sort((a, b) => b.votes * 2 + b.createdAt - (a.votes * 2 + a.createdAt)).slice(0, 5);
 
   return (
@@ -52,7 +59,7 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
       <p className="text-zinc-700 dark:text-zinc-300">This page helps {safeRole === "marines" ? "every Marine" : roleTitle.toLowerCase()} understand and manage their administrative requirements. You will find guidance, checklists, and tools for pay, leave, travel, and readiness actions. The goal is to make admin simple, accurate, and accessible so you can stay focused on your mission.</p>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {categories.map((c) => (
+        {visibleItems.map((c) => (
           <div key={c.slug} className="flex items-center justify-center">
             <Link prefetch={false} href={`/roles/${safeRole}/${c.slug}`} className="rounded-md bg-[var(--sa-navy)] px-4 py-2 text-[var(--sa-cream)] shadow-sm transition hover:bg-[var(--sa-navy-hover)] dark:hover:bg-[var(--sa-red)]/60">{c.label}</Link>
           </div>

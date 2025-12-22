@@ -1,5 +1,6 @@
-import { type Role } from "../../../../data/links";
+import { type Role, catalogGroups, reportGroups, type CatalogGroup } from "../../../../data/links";
 import Link from "next/link";
+import CatalogGrid from "../../../../components/CatalogGrid";
 
 type Params = { role: Role; section: string };
 
@@ -73,6 +74,18 @@ const SECTIONS: Record<string, { title: string; intro?: string; groups?: { title
       },
     ],
   },
+  "s1-g1-administration": {
+    title: "S-1 / G-1 Administration",
+    intro: "S-1 / G-1 (Administration Section) Handles all personnel administration and manpower functions. Manages pay, leave, promotions, awards, and official correspondence. Maintains service records and ensures compliance with personnel policies and reporting requirements. Serves as the command's administrative hub and liaison with higher headquarters for manpower actions.",
+  },
+  "pac-personnel-admin-center": {
+    title: "PAC (Personnel Admin Center)",
+    intro: "PAC-specific resources for personnel administration centers supporting commands and units.",
+  },
+  "ii-i-staff-administration": {
+    title: "I&I Staff Administration",
+    intro: "Inspector-Instructor staff administration resources for supporting reserve units.",
+  },
 };
 
 export default async function RoleSectionPage({ params }: { params: Promise<Params> }) {
@@ -80,13 +93,64 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
   const key = p.section ?? "unknown";
   const safeRole = p.role ?? "marines";
   const section = SECTIONS[key] ?? { title: key.replace(/-/g, " "), intro: "Content coming soon." };
+  const isAdminSection = key === "s1-g1-administration" || key === "pac-personnel-admin-center" || key === "ii-i-staff-administration";
+  const byName = (n: string) => catalogGroups.find((g) => g.name === n) as CatalogGroup | undefined;
+  const coreNames = [
+    "Semper Admin Links",
+    "System Links",
+    "Reference Links",
+    "AI Links",
+    "Teams Channels",
+    "SharePoints",
+    "More Great Links",
+  ];
+  const coreGroups = (coreNames.map(byName).filter(Boolean) as CatalogGroup[]).map((g) => ({ name: g.name, items: g.items.filter((i) => !i.roles || i.roles.includes("administrators")) }));
+  const rByName = (n: string) => reportGroups.find((g) => g.name === n) as CatalogGroup | undefined;
+  const reportNames = [
+    "Enterprise Reports",
+    "Portals",
+    "Non Routine",
+    "Promotions",
+    "Training",
+    "Mondays",
+    "SBP",
+    "1st of the Month",
+    "15th of the Month",
+    "U&E",
+  ];
+  const reports = (reportNames.map(rByName).filter(Boolean) as CatalogGroup[]);
   return (
     <div className="space-y-8">
       <h1 className="text-3xl font-bold tracking-tight text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{section.title}</h1>
       {section.intro && (
         <p className="text-zinc-700 dark:text-zinc-300">{section.intro}</p>
       )}
-      {section.groups ? (
+      {isAdminSection ? (
+        <div className="space-y-8">
+          <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Actions</h2>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              <Link prefetch={false} href="/reports/unit-user" className="inline-flex items-center justify-center rounded-md bg-[var(--sa-navy)] px-4 py-2 text-[var(--sa-cream)] shadow-sm transition hover:bg-[var(--sa-navy-hover)] dark:hover:bg-[var(--sa-red)]/60">Unit User Reports</Link>
+              <Link prefetch={false} href="/reports/enterprise" className="inline-flex items-center justify-center rounded-md bg-[var(--sa-navy)] px-4 py-2 text-[var(--sa-cream)] shadow-sm transition hover:bg-[var(--sa-navy-hover)] dark:hover:bg-[var(--sa-red)]/60">Enterprise Reports</Link>
+              <Link prefetch={false} href="/links" className="inline-flex items-center justify-center rounded-md bg-[var(--sa-navy)] px-4 py-2 text-[var(--sa-cream)] shadow-sm transition hover:bg-[var(--sa-navy-hover)] dark:hover:bg-[var(--sa-red)]/60">Important Links</Link>
+              <Link prefetch={false} href="/documents" className="inline-flex items-center justify-center rounded-md bg-[var(--sa-navy)] px-4 py-2 text-[var(--sa-cream)] shadow-sm transition hover:bg-[var(--sa-navy-hover)] dark:hover:bg-[var(--sa-red)]/60">Documents</Link>
+            </div>
+          </section>
+          
+          <section>
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Core Resources</h2>
+            <div className="mt-4">
+              <CatalogGrid groups={coreGroups} />
+            </div>
+          </section>
+          <section>
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Reports & Dashboards</h2>
+            <div className="mt-4">
+              <CatalogGrid groups={reports} />
+            </div>
+          </section>
+        </div>
+      ) : section.groups ? (
         <div className="space-y-6">
           {section.groups.map((g) => (
             <section key={g.title} className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
@@ -124,9 +188,13 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
 export function generateStaticParams(): { role: Role; section: string }[] {
   const roles: Role[] = ["marines", "administrators", "leaders", "commanders"];
   const sections = Object.keys(SECTIONS);
+  const adminOnly = new Set(["s1-g1-administration", "pac-personnel-admin-center", "ii-i-staff-administration"]);
   const params: { role: Role; section: string }[] = [];
   for (const role of roles) {
-    for (const section of sections) params.push({ role, section });
+    for (const section of sections) {
+      if (adminOnly.has(section) && role !== "administrators") continue;
+      params.push({ role, section });
+    }
   }
   return params;
 }

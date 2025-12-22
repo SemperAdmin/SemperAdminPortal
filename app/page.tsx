@@ -20,6 +20,27 @@ export default function Home() {
                 <Link href="/links" className="inline-flex items-center justify-center rounded-full bg-[var(--sa-navy)] px-6 py-3 text-[var(--sa-cream)] shadow-sm transition hover:bg-[var(--sa-navy-hover)]">Explore Semper Admin</Link>
                 <Link href="/about" className="inline-flex items-center justify-center rounded-full border border-[var(--sa-navy)] px-6 py-3 text-[var(--sa-navy)] transition hover:bg-[var(--sa-cream)]/60 dark:border-[var(--sa-cream)] dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Learn More</Link>
               </div>
+              <div className="mt-4 flex justify-center lg:justify-start">
+                <a
+                  href="https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCMRA_mra_SemperAdmin/SitePages/Goverment-Shutdown.aspx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Government Shutdown (CAC-protected SharePoint)"
+                  className="inline-flex items-center gap-3 justify-center rounded-none px-8 py-4 text-base font-semibold bg-[var(--sa-red)] text-[var(--sa-cream)] shadow-md transition hover:bg-[var(--sa-red)]/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sa-gold)] dark:bg-[var(--sa-red)]/80 dark:hover:bg-[var(--sa-red)]/60"
+                >
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" className="inline align-middle opacity-90">
+                    <path d="M12 3l8 4v5c0 5-8 9-8 9s-8-4-8-9V7l8-4z" />
+                  </svg>
+                  <span>Government Shutdown</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" className="ml-2 inline align-middle opacity-90">
+                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                    <rect x="8" y="9" width="5" height="6" rx="1"/>
+                    <path d="M4 9h3"/>
+                    <path d="M4 12h3"/>
+                    <path d="M4 15h3"/>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>

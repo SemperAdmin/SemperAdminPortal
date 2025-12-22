@@ -3,32 +3,50 @@ import type { ReactNode } from "react";
 
 type Props = {
   groups: CatalogGroup[];
+  columns?: boolean;
+  stackTitles?: boolean;
 };
 
-function ItemCard({ item, icon }: { item: CatalogItem; icon: ReactNode }) {
+function ItemCard({ item, icon, stack }: { item: CatalogItem; icon: ReactNode; stack?: boolean }) {
   const clickable = Boolean(item.href);
   const className = clickable
     ? "block rounded-lg px-3 py-2 transition hover:bg-[var(--sa-cream)]/60 dark:hover:bg-[var(--sa-red)]/40"
     : "block rounded-lg px-3 py-2 opacity-70 cursor-not-allowed";
   const content = (
     <div>
-      <div className="flex items-center gap-2">
-        <span className="text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-          {icon}
-        </span>
-        <span className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-          {item.title}
-          {item.href && item.href.toLowerCase().includes("sharepoint") && (
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" className="ml-1 inline align-middle opacity-80">
-              <rect x="3" y="5" width="18" height="14" rx="2"/>
-              <rect x="8" y="9" width="5" height="6" rx="1"/>
-              <path d="M4 9h3"/>
-              <path d="M4 12h3"/>
-              <path d="M4 15h3"/>
-            </svg>
-          )}
-        </span>
-      </div>
+      {stack ? (
+        <div className="space-y-1">
+          <span className="text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{icon}</span>
+          <span className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+            {item.title}
+            {item.href && item.href.toLowerCase().includes("sharepoint") && (
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" className="ml-1 inline align-middle opacity-80">
+                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                <rect x="8" y="9" width="5" height="6" rx="1"/>
+                <path d="M4 9h3"/>
+                <path d="M4 12h3"/>
+                <path d="M4 15h3"/>
+              </svg>
+            )}
+          </span>
+        </div>
+      ) : (
+        <div className="flex items-center gap-2">
+          <span className="text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{icon}</span>
+          <span className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+            {item.title}
+            {item.href && item.href.toLowerCase().includes("sharepoint") && (
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" className="ml-1 inline align-middle opacity-80">
+                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                <rect x="8" y="9" width="5" height="6" rx="1"/>
+                <path d="M4 9h3"/>
+                <path d="M4 12h3"/>
+                <path d="M4 15h3"/>
+              </svg>
+            )}
+          </span>
+        </div>
+      )}
       {item.roles && (
         <div className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">{item.roles.join(", ")}</div>
       )}
@@ -44,7 +62,7 @@ function ItemCard({ item, icon }: { item: CatalogItem; icon: ReactNode }) {
   return <div className={className}>{content}</div>;
 }
 
-export default function CatalogGrid({ groups }: Props) {
+export default function CatalogGrid({ groups, columns, stackTitles }: Props) {
   const iconFor = (name: string): ReactNode => {
     switch (name) {
       case "Semper Admin Links":
@@ -97,15 +115,16 @@ export default function CatalogGrid({ groups }: Props) {
         );
     }
   };
+  const container = columns ? "grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" : "space-y-10";
   return (
-    <div className="space-y-10">
+    <div className={container}>
       {groups.map((group) => (
         <section key={group.name} className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{group.name}</h3>
           <ul className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {group.items.map((item) => (
               <li key={`${group.name}-${item.title}`}>
-                <ItemCard item={item} icon={iconFor(group.name)} />
+                <ItemCard item={item} icon={iconFor(group.name)} stack={stackTitles} />
               </li>
             ))}
           </ul>

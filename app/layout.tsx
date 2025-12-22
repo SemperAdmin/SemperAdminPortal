@@ -62,16 +62,17 @@ export default function RootLayout({
               try { localStorage.setItem(KEY, next); } catch {}
               apply(next);
             });
-            var roles = document.getElementById('sa-roles');
-            var toggle = document.getElementById('sa-roles-toggle');
-            var panel = document.getElementById('sa-roles-panel');
-            function close(){ if (roles) roles.setAttribute('data-open','false'); if (toggle) toggle.setAttribute('aria-expanded','false'); if (panel) panel.classList.add('hidden'); }
-            function open(){ if (roles) roles.setAttribute('data-open','true'); if (toggle) toggle.setAttribute('aria-expanded','true'); if (panel) panel.classList.remove('hidden'); }
-            if (toggle && roles && panel){
-              close();
-              toggle.addEventListener('click', function(e){ e.preventDefault(); var isOpen = roles.getAttribute('data-open') === 'true'; if (isOpen) close(); else open(); });
-              document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
-              document.addEventListener('click', function(e){ if (!roles.contains(e.target)) close(); });
+            // Roles menu uses hover-based popout like Inspection
+            var inspection = document.getElementById('sa-inspection');
+            var itoggle = document.getElementById('sa-inspection-toggle');
+            var ipanel = document.getElementById('sa-inspection-panel');
+            function iclose(){ if (inspection) inspection.setAttribute('data-open','false'); if (itoggle) itoggle.setAttribute('aria-expanded','false'); if (ipanel) ipanel.classList.add('hidden'); }
+            function iopen(){ if (inspection) inspection.setAttribute('data-open','true'); if (itoggle) itoggle.setAttribute('aria-expanded','true'); if (ipanel) ipanel.classList.remove('hidden'); }
+            if (itoggle && inspection && ipanel){
+              iclose();
+              itoggle.addEventListener('click', function(e){ e.preventDefault(); var isOpen = inspection.getAttribute('data-open') === 'true'; if (isOpen) iclose(); else iopen(); });
+              document.addEventListener('keydown', function(e){ if (e.key === 'Escape') iclose(); });
+              document.addEventListener('click', function(e){ if (!inspection.contains(e.target)) iclose(); });
             }
           })();
         `}} />
@@ -81,68 +82,30 @@ export default function RootLayout({
               <div className="relative h-8 w-8 overflow-hidden rounded-full ring-2 ring-[var(--sa-gold)]">
                 <Image src={`${BP}/logo.png`} alt="Semper Admin" fill sizes="32px" className="object-cover" />
               </div>
-              <span className="text-lg font-semibold tracking-wide text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Semper Admin</span>
+              <a href="https://linktr.ee/semperadmin" target="_blank" rel="noopener noreferrer" className="pr-3 text-sm sm:text-base font-semibold tracking-wide underline whitespace-nowrap text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Semper Admin</a>
             </div>
             <nav className="flex items-center gap-3 sm:gap-6 text-xs sm:text-sm overflow-x-auto sm:overflow-visible whitespace-nowrap [--scrollbar-color:transparent] [&>a]:shrink-0 [&>button]:shrink-0">
               <Link href="/" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Home</Link>
               <Link href="/about" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">About</Link>
-              <Link href="/announcements" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Announcements</Link>
+              <a href="https://semperadmin.github.io/usmc-directives-hub/" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Announcements</a>
               <a href="https://semperadmin.github.io/Sentinel/" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Apps</a>
-              <div className="relative group">
-                <button type="button" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Inspection</button>
-                <div className="absolute left-0 top-full mt-2 hidden min-w-[14rem] z-50 rounded-lg border border-black/5 bg-white p-2 shadow-lg group-hover:block group-focus-within:block dark:border-white/15 dark:bg-black/80">
-                  <div className="block rounded-md px-3 py-2 text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">IGMC</div>
-                  <div className="block rounded-md px-3 py-2 text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">MCAAT</div>
+              <div id="sa-inspection" className="relative inspection-menu group" data-open="false">
+                <button id="sa-inspection-toggle" type="button" aria-haspopup="true" aria-expanded="false" className="peer text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Inspection</button>
+                <div id="sa-inspection-panel" className="inspection-panel hidden peer-aria-expanded:block absolute left-0 top-full mt-2 min-w-[14rem] z-[999] rounded-lg border border-black/5 bg-white p-2 shadow-lg group-hover:block group-focus-within:block dark:border-white/15 dark:bg-black/80">
+                  <Link href="/inspections/igmc" prefetch={false} className="block rounded-md px-3 py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">IGMC</Link>
+                  <Link href="/inspections/mcaat" prefetch={false} className="block rounded-md px-3 py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">MCAAT</Link>
                   <div className="block rounded-md px-3 py-2 text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">MISSO</div>
                 </div>
               </div>
               <Link href="/links" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Links</Link>
               <Link href="/reports" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Reports</Link>
-              <div id="sa-roles" className="relative role-menu" data-open="false">
-                <button id="sa-roles-toggle" type="button" aria-haspopup="true" aria-expanded="false" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Roles</button>
-                <div id="sa-roles-panel" className="role-panel hidden absolute left-0 top-full mt-2 min-w-[18rem] z-50 rounded-lg border border-black/5 bg-white p-3 shadow-lg dark:border-white/15 dark:bg-black/80">
-                  <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                    <div className="role-column">
-                      <Link href="/roles/marines" prefetch={false} className="role-link text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">All Marines</Link>
-                      <ul className="text-sm text-zinc-700 dark:text-zinc-300">
-                        <li>
-                          <Link href="/roles/marines/pay-and-allowances" prefetch={false} className="role-link">Pay &amp; Allowances</Link>
-                          <ul className="text-xs text-zinc-600 dark:text-zinc-400">
-                            <li><Link href="/roles/marines/pay-and-allowances/hdip" prefetch={false} className="role-link">HDIP</Link></li>
-                            <li><Link href="/roles/marines/pay-and-allowances/basic-pay" prefetch={false} className="role-link">Basic Pay</Link></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <Link href="/roles/marines/travel-and-transportation" prefetch={false} className="role-link">Travel &amp; Transportation</Link>
-                          <ul className="text-xs text-zinc-600 dark:text-zinc-400">
-                            <li><Link href="/roles/marines/travel-and-transportation/tdy" prefetch={false} className="role-link">TDY</Link></li>
-                            <li><Link href="/roles/marines/travel-and-transportation/pcs" prefetch={false} className="role-link">PCS</Link></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="role-column">
-                      <Link href="/roles/administrators" prefetch={false} className="role-link text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Administrators</Link>
-                      <ul className="text-sm text-zinc-700 dark:text-zinc-300">
-                        <li><Link href="/roles/administrators/pay-and-allowances" prefetch={false} className="role-link">Pay &amp; Allowances</Link></li>
-                        <li><Link href="/roles/administrators/travel-and-transportation" prefetch={false} className="role-link">Travel &amp; Transportation</Link></li>
-                      </ul>
-                    </div>
-                    <div className="role-column">
-                      <Link href="/roles/leaders" prefetch={false} className="role-link text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Leaders</Link>
-                      <ul className="text-sm text-zinc-700 dark:text-zinc-300">
-                        <li><Link href="/roles/leaders/pay-and-allowances" prefetch={false} className="role-link">Pay &amp; Allowances</Link></li>
-                        <li><Link href="/roles/leaders/travel-and-transportation" prefetch={false} className="role-link">Travel &amp; Transportation</Link></li>
-                      </ul>
-                    </div>
-                    <div className="role-column">
-                      <Link href="/roles/commanders" prefetch={false} className="role-link text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Commanders</Link>
-                      <ul className="text-sm text-zinc-700 dark:text-zinc-300">
-                        <li><Link href="/roles/commanders/pay-and-allowances" prefetch={false} className="role-link">Pay &amp; Allowances</Link></li>
-                        <li><Link href="/roles/commanders/travel-and-transportation" prefetch={false} className="role-link">Travel &amp; Transportation</Link></li>
-                      </ul>
-                    </div>
-                  </div>
+              <div className="relative group">
+                <button type="button" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Roles</button>
+                <div className="absolute left-0 top-full mt-2 hidden min-w-[14rem] z-50 rounded-lg border border-black/5 bg-white p-2 shadow-lg group-hover:block group-focus-within:block dark:border-white/15 dark:bg-black/80">
+                  <Link href="/roles/marines" prefetch={false} className="block rounded-md px-3 py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">All Marines</Link>
+                  <Link href="/roles/administrators" prefetch={false} className="block rounded-md px-3 py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Administrators</Link>
+                  <Link href="/roles/leaders" prefetch={false} className="block rounded-md px-3 py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Leaders</Link>
+                  <Link href="/roles/commanders" prefetch={false} className="block rounded-md px-3 py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Commanders</Link>
                 </div>
               </div>
               <Link href="/soundtracks" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Soundtracks</Link>
