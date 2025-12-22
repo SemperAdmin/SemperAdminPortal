@@ -16,6 +16,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_BASE_PATH: /SemperAdminPortal
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,7 +28,7 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      - name: Build (static export)
+      - name: Build
         run: npm run build
       - name: Disable Jekyll
         run: echo > out/.nojekyll
@@ -45,4 +47,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
