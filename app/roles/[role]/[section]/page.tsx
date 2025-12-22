@@ -69,7 +69,6 @@ const SECTIONS: Record<string, { title: string; intro?: string; groups?: { title
           { title: "Debt Management", slug: "debt-management", desc: "Repay military debts" },
           { title: "Financial Hardship Assistance", slug: "financial-hardship-assistance", desc: "Get help during emergencies" },
           { title: "Overpayment Repayment Plans", slug: "overpayment-repayment-plans", desc: "Set up payment arrangements" },
-          { title: "Pay Corrections", slug: "pay-corrections", desc: "Fix errors on your LES" },
         ],
       },
     ],

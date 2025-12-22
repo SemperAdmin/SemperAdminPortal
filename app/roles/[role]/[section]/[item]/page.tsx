@@ -1,5 +1,6 @@
 import { type Role } from "../../../../../data/links";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import BASContent from "../../../../../components/BASContent";
 import HostileFirePayContent from "../../../../../components/HostileFirePayContent";
 import ImminentDangerPayContent from "../../../../../components/ImminentDangerPayContent";
@@ -23,6 +24,16 @@ import SDPContent from "../../../../../components/SDPContent";
 import BRSContent from "../../../../../components/BRSContent";
 import ContinuationPayContent from "../../../../../components/ContinuationPayContent";
 import High3Content from "../../../../../components/High3Content";
+import TEBContent from "../../../../../components/TEBContent";
+import TSPContent from "../../../../../components/TSPContent";
+import CZTEContent from "../../../../../components/CZTEContent";
+import FlexibleSpendingAccountsContent from "../../../../../components/FlexibleSpendingAccountsContent";
+import MilitaryStateTaxReliefContent from "../../../../../components/MilitaryStateTaxReliefContent";
+import AllotmentsContent from "../../../../../components/AllotmentsContent";
+import BasicNeedsAllowanceContent from "../../../../../components/BasicNeedsAllowanceContent";
+import DebtManagementContent from "../../../../../components/DebtManagementContent";
+import FinancialHardshipAssistanceContent from "../../../../../components/FinancialHardshipAssistanceContent";
+import OverpaymentRepaymentPlansContent from "../../../../../components/OverpaymentRepaymentPlansContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -790,6 +801,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
   const safeSection = p.section ?? "unknown";
   const itemSlug = p.item ?? "item";
   const itemTitle = toTitle(itemSlug);
+  if (itemSlug === "pay-corrections") return notFound();
 
   const isBAH = itemSlug === "basic-allowance-for-housing";
   const isBAS = itemSlug === "basic-allowance-for-subsistence";
@@ -815,6 +827,16 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
   const isBRS = itemSlug === "blended-retirement-system";
   const isHIGH3 = itemSlug === "legacy-high-3-retirement-system";
   const isCP = itemSlug === "continuation-pay";
+  const isTEB = itemSlug === "transfer-of-educational-benefits";
+  const isTSP = itemSlug === "thrift-savings-plan";
+  const isCZTE = itemSlug === "combat-zone-tax-exclusion";
+  const isFLEXFSA = itemSlug === "flexible-spending-accounts";
+  const isStateTax = itemSlug === "military-state-tax-relief" || itemSlug === "state-tax-relief";
+  const isALLOTMENTS = itemSlug === "allotments";
+  const isBNA = itemSlug === "basic-needs-allowance";
+  const isDEBT = itemSlug === "debt-management";
+  const isFHA = itemSlug === "financial-hardship-assistance";
+  const isOVERPAY = itemSlug === "overpayment-repayment-plans";
   const displayTitle = isSDAP ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
 
   return (
@@ -827,7 +849,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
         <Link prefetch={false} href={`/roles/${safeRole}/${safeSection}`} className="inline-flex items-center justify-center rounded-md border border-black/10 bg-white px-4 py-2 text-[var(--sa-navy)] shadow-sm transition hover:bg-[var(--sa-cream)]/60 dark:border-white/15 dark:bg-black/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Back</Link>
       </div>
 
-      {isBAH ? <BAHContent bahData={BAH_DATA} /> : isBAS ? <BASContent basData={BAS_DATA} /> : isCOLA ? <COLAContent colaData={COLA_DATA} /> : isOHA ? <OHAContent ohaData={OHA_DATA} /> : isFSA ? <FSAContent fsaData={FSA_DATA} /> : isHFP ? <HostileFirePayContent hfpData={HFP_DATA} /> : isIDP ? <ImminentDangerPayContent idpData={IDP_DATA} /> : isHDIP ? <HDIPContent hdipData={HDIP_DATA} /> : isHDP ? <HDPContent hdpData={HDP_DATA} /> : isSDAP ? <SDAPContent sdapData={SDAP_DATA} /> : isSDP ? <SDPContent sdpData={SDP_DATA} /> : isHIGH3 ? <High3Content /> : isBRS ? <BRSContent /> : isCP ? <ContinuationPayContent /> : isDIVE ? <DivePayContent diveData={DIVE_DATA} /> : isSTRESS ? <ExperimentalStressContent stressData={STRESS_DATA} /> : isFDHD ? <FlightDeckContent fdhdData={FDHD_DATA} /> : isPARACHUTE ? <ParachuteContent parachuteData={PARACHUTE_DATA} /> : isVBSS ? <VBSSContent vbssData={VBSS_DATA} /> : isSO ? <SpecialOperationsContent soData={SO_DATA} /> : isTOXIC ? <ToxicMaterialsContent tmData={TM_DATA} /> : isACIP ? <AviationCareerIncentivePayContent acipData={ACIP_DATA} /> : (isFLPP || isFLPB) ? <ForeignLanguageProficiencyPayContent flppData={FLPP_DATA} /> : <GenericContent title={itemTitle} />}
+      {isBAH ? <BAHContent bahData={BAH_DATA} /> : isBAS ? <BASContent basData={BAS_DATA} /> : isCOLA ? <COLAContent colaData={COLA_DATA} /> : isOHA ? <OHAContent ohaData={OHA_DATA} /> : isFSA ? <FSAContent fsaData={FSA_DATA} /> : isHFP ? <HostileFirePayContent hfpData={HFP_DATA} /> : isIDP ? <ImminentDangerPayContent idpData={IDP_DATA} /> : isHDIP ? <HDIPContent hdipData={HDIP_DATA} /> : isHDP ? <HDPContent hdpData={HDP_DATA} /> : isSDAP ? <SDAPContent sdapData={SDAP_DATA} /> : isSDP ? <SDPContent sdpData={SDP_DATA} /> : isHIGH3 ? <High3Content /> : isBRS ? <BRSContent /> : isCP ? <ContinuationPayContent /> : isTEB ? <TEBContent /> : isTSP ? <TSPContent /> : isCZTE ? <CZTEContent /> : isStateTax ? <MilitaryStateTaxReliefContent /> : isFLEXFSA ? <FlexibleSpendingAccountsContent /> : isALLOTMENTS ? <AllotmentsContent /> : isBNA ? <BasicNeedsAllowanceContent /> : isDEBT ? <DebtManagementContent /> : isFHA ? <FinancialHardshipAssistanceContent /> : isOVERPAY ? <OverpaymentRepaymentPlansContent /> : isDIVE ? <DivePayContent diveData={DIVE_DATA} /> : isSTRESS ? <ExperimentalStressContent stressData={STRESS_DATA} /> : isFDHD ? <FlightDeckContent fdhdData={FDHD_DATA} /> : isPARACHUTE ? <ParachuteContent parachuteData={PARACHUTE_DATA} /> : isVBSS ? <VBSSContent vbssData={VBSS_DATA} /> : isSO ? <SpecialOperationsContent soData={SO_DATA} /> : isTOXIC ? <ToxicMaterialsContent tmData={TM_DATA} /> : isACIP ? <AviationCareerIncentivePayContent acipData={ACIP_DATA} /> : (isFLPP || isFLPB) ? <ForeignLanguageProficiencyPayContent flppData={FLPP_DATA} /> : <GenericContent title={itemTitle} />}
     </div>
   );
 }
@@ -839,6 +861,17 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "legacy-high-3-retirement-system",
     "blended-retirement-system",
     "continuation-pay",
+    "transfer-of-educational-benefits",
+    "thrift-savings-plan",
+    "combat-zone-tax-exclusion",
+    "military-state-tax-relief",
+    "state-tax-relief",
+    "allotments",
+    "basic-needs-allowance",
+    "debt-management",
+    "financial-hardship-assistance",
+    "overpayment-repayment-plans",
+    "flexible-spending-accounts",
     "basic-allowance-for-housing",
     "basic-allowance-for-subsistence",
     "cost-of-living-allowance",

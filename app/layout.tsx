@@ -65,9 +65,10 @@ export default function RootLayout({
             var roles = document.getElementById('sa-roles');
             var toggle = document.getElementById('sa-roles-toggle');
             var panel = document.getElementById('sa-roles-panel');
-            function close(){ if (roles) roles.setAttribute('data-open','false'); if (toggle) toggle.setAttribute('aria-expanded','false'); }
-            function open(){ if (roles) roles.setAttribute('data-open','true'); if (toggle) toggle.setAttribute('aria-expanded','true'); }
+            function close(){ if (roles) roles.setAttribute('data-open','false'); if (toggle) toggle.setAttribute('aria-expanded','false'); if (panel) panel.classList.add('hidden'); }
+            function open(){ if (roles) roles.setAttribute('data-open','true'); if (toggle) toggle.setAttribute('aria-expanded','true'); if (panel) panel.classList.remove('hidden'); }
             if (toggle && roles && panel){
+              close();
               toggle.addEventListener('click', function(e){ e.preventDefault(); var isOpen = roles.getAttribute('data-open') === 'true'; if (isOpen) close(); else open(); });
               document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
               document.addEventListener('click', function(e){ if (!roles.contains(e.target)) close(); });
@@ -86,7 +87,7 @@ export default function RootLayout({
               <Link href="/" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Home</Link>
               <Link href="/about" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">About</Link>
               <Link href="/announcements" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Announcements</Link>
-              <Link href="/apps" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Apps</Link>
+              <a href="https://semperadmin.github.io/Sentinel/" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Apps</a>
               <div className="relative group">
                 <button type="button" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Inspection</button>
                 <div className="absolute left-0 top-full mt-2 hidden min-w-[14rem] z-50 rounded-lg border border-black/5 bg-white p-2 shadow-lg group-hover:block group-focus-within:block dark:border-white/15 dark:bg-black/80">
@@ -99,7 +100,7 @@ export default function RootLayout({
               <Link href="/reports" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Reports</Link>
               <div id="sa-roles" className="relative role-menu" data-open="false">
                 <button id="sa-roles-toggle" type="button" aria-haspopup="true" aria-expanded="false" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Roles</button>
-                <div id="sa-roles-panel" className="role-panel absolute left-0 top-full mt-2 min-w-[18rem] z-50 rounded-lg border border-black/5 bg-white p-3 shadow-lg dark:border-white/15 dark:bg-black/80">
+                <div id="sa-roles-panel" className="role-panel hidden absolute left-0 top-full mt-2 min-w-[18rem] z-50 rounded-lg border border-black/5 bg-white p-3 shadow-lg dark:border-white/15 dark:bg-black/80">
                   <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                     <div className="role-column">
                       <Link href="/roles/marines" prefetch={false} className="role-link text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">All Marines</Link>
