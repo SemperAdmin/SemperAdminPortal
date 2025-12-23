@@ -1493,6 +1493,110 @@ export const gtccChecklist: FACChecklistData = {
   ],
 };
 
+// Leave, Liberty and Administrative Absence Checklist Data
+export const leaveLibertyChecklist: FACChecklistData = {
+  slug: "leave-liberty",
+  applicabilityNote: "This checklist is applicable to all O-5 and O-6 Level Commands.",
+  revisedDate: "September 3, 2025",
+  smes: [
+    {
+      name: "Capt Marquale Coleman",
+      email: "SMB_HQMC_MPO@usmc.mil",
+      phone: "(703) 784-9371",
+    },
+    {
+      name: "CWO5 Wojciech Faryniarz",
+      email: "SMB_HQMC_MPO@usmc.mil",
+      phone: "(703) 432-9083",
+    },
+  ],
+  subsections: [
+    {
+      id: "01",
+      title: "Leave and Liberty",
+      questions: [
+        {
+          number: "0101",
+          text: "Has the command published a directive or established a program on leave and liberty?",
+          reference: {
+            text: "DoDI 1327.06 Sect 3.1; MCO 1050.3J, chap 4, par 1",
+          },
+        },
+        {
+          number: "0102",
+          text: "Is lost leave restored as special leave accrual (SLA) when Marines were eligible and approved for SLA?",
+          reference: {
+            text: "DoDI 1327.06 Sect 3.8; MCO 1050.3J, chap 2, par 9",
+          },
+        },
+        {
+          number: "0103",
+          text: "Have internal controls for check-out and check-in procedures been established to ensure requests, approvals, execution, and close out of all leave/PTAD is completed in MOL?",
+          reference: {
+            text: "MCO 1050.3J, chap 2, par 5; chap 3, par 1a and 1b; chap 4, par 8",
+          },
+        },
+        {
+          number: "0104",
+          text: "Are Marines granted PTAD only for the purposes permitted in the reference?",
+          reference: {
+            text: "DoDI 1327.06 Sect 4.4",
+          },
+        },
+        {
+          number: "0105",
+          text: "Are periods of absence over leave and absent without leave, when excused as unavoidable, charged as annual leave when appropriate?",
+          reference: {
+            text: "DoDI 1327.06 Sect 5.2; MCO 1050.3J, chap 2, par 20",
+          },
+        },
+        {
+          number: "0106",
+          text: "Are chargeable leave periods being reported on MOL or UD? (check morning reports for individuals marked as on leave with no corresponding approved leave request in MOL and that check-out and check-in were completed)",
+          reference: {
+            text: "MCO 1050.3J, chap 4, par 7b; MCTFSPRIUM, par 70101",
+          },
+        },
+        {
+          number: "0107",
+          text: "Does the command have procedures to ensure Marines are not being approved for Active-Duty Parental Leave for no more than 84 days?",
+          reference: {
+            text: "DoDI 1327.06 Sect 3.11.c, and MARADMIN 051/23",
+          },
+        },
+        {
+          number: "0108",
+          text: "Is the command ensuring that Marines are executing their Active-Duty Parental Leave periods in increments not less than 7 days?",
+          reference: {
+            text: "DoDI 1327.06 Sect 3.11.c.(7)(a); and MARADMIN 051/23",
+          },
+        },
+        {
+          number: "0109",
+          text: "Are Marines being charged for leave when they check out on a non-duty day?",
+          reference: {
+            text: "DoDI 1327.06 Sect 5.1.b.(1)",
+          },
+        },
+        {
+          number: "0110",
+          text: "Does the command have procedures in place for convalescent leave following childbirth or perinatal loss?",
+          reference: {
+            text: "DoDI 1327.06 Sect 3.11.c.(13), BUMED NOTE 6000, and MARADMIN 129/23",
+          },
+        },
+        {
+          number: "0111",
+          text: "Does the command have established procedures and requirements in place for managing the allocation of bereavement leave?",
+          reference: {
+            text: "DoDI 1327.06 Sect 3.11.j.(5); MARADMIN 220/23",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 // Map of all FAC checklists
 const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   pes: pesChecklist,
@@ -1502,6 +1606,7 @@ const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   dts: dtsChecklist,
   "directives-management": directivesManagementChecklist,
   gtcc: gtccChecklist,
+  "leave-liberty": leaveLibertyChecklist,
 };
 
 // Helper functions
