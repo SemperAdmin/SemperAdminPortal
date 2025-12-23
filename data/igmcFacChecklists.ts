@@ -3309,6 +3309,90 @@ export const separationRetirementChecklist: FACChecklistData = {
   ],
 };
 
+// Transition Readiness Program (TRP) Checklist Data
+export const transitionReadinessChecklist: FACChecklistData = {
+  slug: "transition-readiness",
+  applicabilityNote: "This checklist applies to all levels and types of commands.",
+  revisedDate: "February 21, 2024",
+  sme: {
+    name: "Ms. Nathaly Islas",
+    email: "TRP_HQMC@usmc.mil",
+    phone: "(703) 784-9550",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Unit-Specific Items (All commands)",
+      note: "This section also applies to other intermediate echelons of command with subordinate Unit Transition Coordinators.",
+      questions: [
+        {
+          number: "0101",
+          text: "Did the Commanding Officer (CO) appoint, in writing, Unit Transition Coordinators (UTCs) and Designees? Was the UTCN code reported?",
+          reference: {
+            text: "MCO 1700.31, par 3b(5)(c); MARADMIN 632/19, par 11c; MARADMIN 632/19, par 5",
+          },
+        },
+        {
+          number: "0102",
+          text: "Did the UTC(s) complete UTC training with the installation's TRP office no later than 45 days following appointment?",
+          reference: {
+            text: "MCO 1700.31, par 3b(5)(d); MARADMIN 632/19, par 11c",
+          },
+        },
+        {
+          number: "0103",
+          text: "Does the UTC facilitate all unit transition activities and coordinate with appropriate personnel to identify, notify and track all eligible Marines within the unit?",
+          reference: {
+            text: "MCO 1700.31, par 3b(6)(a); MARADMIN 632/19, par 11c",
+          },
+        },
+        {
+          number: "0104",
+          text: "Does the CO ensure that all Active Duty (AD) and Reserve Component (RC) Marines complete mandatory Individualized Initial Counseling (IC) beginning 24 months from retirement, or 18 months from separation, demobilization, or deactivation, but no later than 12 months prior to End of Active Service (EAS) date?",
+          reference: {
+            text: "10 USC ch. 58, § 1142; DoDI 1332.35, Section 6; MCO 1700.31, par 3b (5)(b); MARADMIN 632/19, par 5",
+          },
+        },
+        {
+          number: "0105",
+          text: "Does the CO ensure that all AD and RC Marines attend the mandatory Pre-separation Counseling Brief, beginning 24 months from retirement, or 18 months from separation, demobilization, or deactivation, but no later than 12 months prior to EAS date?",
+          reference: {
+            text: "10 USC ch. 58, § 1142; DoDI 1332.35, Section 5; MCO 1700.31, par 3b (5)(b); MARADMIN 632/19, par 5",
+          },
+        },
+        {
+          number: "0106",
+          text: "Does the CO ensure that all AD and RC Marines attend mandatory TRS courses and 2-day tracks, beginning 24 months from retirement, or 18 months from separation, demobilization, or deactivation, but no later than 6 months prior to EAS date?",
+          reference: {
+            text: "10 USC ch. 58, § 1144; MCO 1700.31, par 3b (5)(e); MARADMIN 632/19, par 7",
+          },
+        },
+        {
+          number: "0107",
+          text: "Does the CO or Designee personally conduct Commander's Verification no later than 90 days prior to EAS, using the DD Form 2648 eForm?",
+          reference: {
+            text: "DoDI 1332.35, Section 9; MARADMIN 632/19, par 9",
+          },
+        },
+        {
+          number: "0108",
+          text: 'Does the UTC coordinate entry of the training event code "TA" (Transition Readiness Seminar) and training event code "TZ" (Transition Readiness Capstone)?',
+          reference: {
+            text: "MCO 1700.31, par 3b (4)(u); MARADMIN 632/19, par 7c",
+          },
+        },
+        {
+          number: "0109",
+          text: "Does the UTC ensure that the final completed DD Form 2648 is filed in the Command's official files for 12 months following the Marine's EAS date?",
+          reference: {
+            text: "MCO 1700.31, par 3b(5)(j); MARADMIN 632/19, par 9b",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 // Map of all FAC checklists
 const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   pes: pesChecklist,
@@ -3327,6 +3411,7 @@ const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   "records-management": recordsManagementChecklist,
   "reports-management": reportsManagementChecklist,
   "separation-retirement": separationRetirementChecklist,
+  "transition-readiness": transitionReadinessChecklist,
 };
 
 // Helper functions
