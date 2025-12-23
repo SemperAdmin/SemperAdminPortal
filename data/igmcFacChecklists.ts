@@ -3038,6 +3038,112 @@ export const recordsManagementChecklist: FACChecklistData = {
   ],
 };
 
+// Reports Management Checklist Data
+export const reportsManagementChecklist: FACChecklistData = {
+  slug: "reports-management",
+  applicabilityNote:
+    "This checklist applies to ALL commands. Reports Management is the assurance that information being collected (via a form, request for information, data call, system, etc.) is required by policy, not already available from other sources, is worth the imposition of the burden to collect, and challenged when necessary or no longer needed.",
+  revisedDate: "April 29, 2024",
+  sme: {
+    name: "Mr. Mark A. Kazzi",
+    email: "smb_hqmc_reports@usmc.mil",
+    phone: "(571) 465-6640",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Reports Management",
+      note: "Applies to all commands.",
+      questions: [
+        {
+          number: "0101",
+          text: "Has the command designated and appointed, in writing, a Command Reports Manager?",
+          reference: {
+            text: "MCO 5214.2G, par 4b(4)(b)",
+          },
+        },
+        {
+          number: "0102",
+          text: "Has the command promulgated command policy (i.e., order or bulletin) for the command's Reports Management Program to ensure organizational reporting requirements are documented, tracked, and in compliance with legal and statutory requirements? Note: Template directive available on ARDB SharePoint site. Reports Management ensures staff agencies are not putting undue burden on staff regarding the completion of reports/surveys, thus taking away from daily tasks. The Reports Management program ensures that reports and reporting systems are compliant with federal mandates (i.e., 5 CFR Part 1320, SSN Reduction Act, etc.) and provide necessary information effectively, efficiently, and economically.",
+          reference: {
+            text: "MCO 5214.2G, 4b(4)(a), chap 1, par 3a, and SECNAVINST 5210.16, par 5 a-d",
+          },
+        },
+        {
+          number: "0103",
+          text: "Does the command have a continuity binder for reports management? Note: Recommend continuity binder, to include at minimum: POCs for each section, Marine Corps Order 5214.2G and SECNAV Instruction 5210.16, reports inventory, and documentation of 3-year review.",
+          reference: {
+            text: "MCO 5214.2G, par 4b(4)(c)",
+          },
+        },
+        {
+          number: "0104",
+          text: "Has the command published a Reports Inventory of all valid and cancelled recurring reporting requirements? Note: The Reports Inventory is necessary to keep track of what licensed reports are available, eliminates duplication, and can be used as a resource for data that may be needed by other staff sections in the command.",
+          reference: {
+            text: "MCO 5214.2G, chap 1, par 3a(1), chap 3, par 1, and chap 5, par 2d",
+          },
+        },
+        {
+          number: "0105",
+          text: "Is the Reports Manager ensuring that information collections are not redundant with forms and information collections of a higher authority? Note: Local forms shall not be used if a higher level form and report (i.e., NAVMC, DD, SF, etc.) already exists for the information being collected.",
+          reference: {
+            text: "SECNAVINST 5210.16, par 7d-f",
+          },
+        },
+        {
+          number: "0106",
+          text: "Are reports program managers conducting a review of all existing reports every three years?",
+          reference: {
+            text: "MCO 5214.2G, chap 1, par 3.a.(4) and chap 5, par 1",
+          },
+        },
+        {
+          number: "0107",
+          text: "Does the command originate information (reports) requirements (i.e., collection of information is not already mandated by higher authority and not already collected/available by other sources)? Note: Examples of collecting information include, but are not limited to: creation of new forms or duplicative forms; adding additional fields or taking away existing fields; requests for information, data calls, systems, etc. If YES: Complete Section 2. If NO: End of Inspection.",
+          reference: {
+            text: "MCO 5214.2G",
+          },
+        },
+      ],
+    },
+    {
+      id: "02",
+      title: "Commands Who Originate Information Requirements",
+      note: "Applies to commands who originate (i.e., not already mandated by higher authority and not already collected/available by other sources) information (reports) requirements such as creation of forms, requests for information, data calls, systems, etc.",
+      questions: [
+        {
+          number: "0201",
+          text: "Are all local reporting requirements published within a command directive (i.e., order or bulletin)?",
+          reference: {
+            text: "MCO 5214.2G, 4b(4)(f)",
+          },
+        },
+        {
+          number: "0202",
+          text: "Is the Reports Manager ensuring that information collections from 10 or more members of the public (i.e., spouses, contractors, etc.) has OMB approval? Note: Local forms and/or local surveys shall not be used to collect information from members of the public; use of a higher level form approved by OMB is required.",
+          reference: {
+            text: "MCO 5214.2G, chap 6, par 1d, and 5 CFR Part 1320",
+          },
+        },
+        {
+          number: "0203",
+          text: "Does the command maintain a case file for all local reporting requirements not covered by higher authority? Note: The case file is required for a report not mandated by higher authority. The case file validates the purpose for the information collection and shows the life of the report, (i.e., what directive required it, when it was required, a sample of the report or snapshot of the database and what Report Control Symbol was assigned to it.",
+          reference: {
+            text: "MCO 5214.2G, 4b(4)(e), chap 2, par 7a, and Appendix A",
+          },
+        },
+        {
+          number: "0204",
+          text: "If the command sponsors, or is the program owner of an electronic reports system, is the system registered in Department of Defense Information Technology Portfolio Repository-Department of the Navy (DITPR-DON) to ensure all records within are managed in accordance with SECNAV Note 5210 and SECNAV M-5210.1?",
+          reference: {
+            text: "MCO 5214.2G, par 5b(2)",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 // Map of all FAC checklists
 const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   pes: pesChecklist,
@@ -3054,6 +3160,7 @@ const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   "postal-affairs": postalAffairsChecklist,
   "force-preservation-council": forcePreservationCouncilChecklist,
   "records-management": recordsManagementChecklist,
+  "reports-management": reportsManagementChecklist,
 };
 
 // Helper functions
