@@ -2199,6 +2199,1606 @@ export const militaryAwardsChecklist: FACChecklistData = {
   ],
 };
 
+// Postal Affairs and Official Mail Program Checklist Data
+export const postalAffairsChecklist: FACChecklistData = {
+  slug: "postal-affairs",
+  applicabilityNote: "",
+  revisedDate: "June 3, 2025",
+  sme: {
+    name: "MGySgt Billy Gillenwater",
+    email: "postal.affairs@usmc.mil",
+    phone: "(703) 784-9538",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Unit Mail Room",
+      questions: [
+        {
+          number: "0101",
+          text: "Has the command published a Unit Mail Handling Order?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 7",
+          },
+        },
+        {
+          number: "0102",
+          text: "Has the Commanding Officer appointed in writing a Unit Mail Officer and Assistant Unit Mail Officer?",
+          reference: {
+            text: "MPM 12.2i, 12.2j, 2.18a and MCO 5110.4B, Chap 1, par 2j(1)",
+          },
+        },
+        {
+          number: "0103",
+          text: "Are two Unit Mail Clerks/Orderlies appointed at a minimum for each unit/section?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 3e",
+          },
+        },
+        {
+          number: "0104",
+          text: "Has the current Commanding Officer designated in writing personnel authorized to receive and open official mail to include accountable mail?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 20c-f",
+          },
+        },
+        {
+          number: "0105",
+          text: "Are the designation documents completed and maintained for personnel?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 3 and 4",
+          },
+        },
+        {
+          number: "0106",
+          text: "Has the Unit Mail Officer, Assistant Unit Mail Officer, mail clerks, and mail orderlies received mail handling training within the required period?",
+          reference: {
+            text: "MPM 2.19a, MCO 5110.4B, Chap 1, par 2l(1) and (5)",
+          },
+        },
+        {
+          number: "0107",
+          text: "Does the UMR meet structural requirements?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 9",
+          },
+        },
+        {
+          number: "0108",
+          text: "Has the Commanding Officer provided space and equipment necessary for proper mail handling and security?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2j (6) and Chap 3, par 9",
+          },
+        },
+        {
+          number: "0109",
+          text: "Does the Unit Mail Officer maintain restricted access to the UMR keys?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 10a",
+          },
+        },
+        {
+          number: "0110",
+          text: "Are duplicate keys/combinations maintained and secured?",
+          reference: {
+            text: "USPS Handbook F-101, Chap 3-8, 3-9.1, USPS RE-05, 3-1.12.2, and MCO 5110.4B, Chap 3, par 10c and d",
+          },
+        },
+        {
+          number: "0111",
+          text: "Is the Unit Mail Clerk returning the UMR key to the Unit Mail Officer daily and annotated on a key control log?",
+          reference: {
+            text: "USPS ASM, 273.434 and MCO 5110.4B, Chap 3, par 10a",
+          },
+        },
+        {
+          number: "0112",
+          text: "Does the UMR maintain a separate key control log to transfer the key to another designated Unit Mail Clerk?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 10b",
+          },
+        },
+        {
+          number: "0113",
+          text: 'Is a DD Form 1115, Mail Room No Admittance Except to Authorized Personnel, displayed on or near the entrance to the UMR?',
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 8h",
+          },
+        },
+        {
+          number: "0114",
+          text: "Are only authorized personnel allowed to enter the UMR?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2m(8) and Chap 3, par 8g",
+          },
+        },
+        {
+          number: "0115",
+          text: "Is the UMR free of items not related to the delivery or processing of U.S. mail?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 8a and b",
+          },
+        },
+        {
+          number: "0116",
+          text: "Are random and unannounced weekly inspections conducted by the Unit Mail Officer or Assistant Unit Mail Officer utilizing the current Inspectors General (IG) checklist?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 14a-c",
+          },
+        },
+        {
+          number: "0117",
+          text: "Has the Commanding Officer provided sustained and networked computer access in the UMR to process directory mail?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2j(7)",
+          },
+        },
+        {
+          number: "0118",
+          text: "Does the UMR maintain a copy of the most current edition of the required publications/directives?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 6",
+          },
+        },
+        {
+          number: "0119",
+          text: "Do mail clerks and orderlies have in their possession their DD Form 285?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2m(1), par 2n(1) and Chap 3 par 8(d)",
+          },
+        },
+        {
+          number: "0120",
+          text: "Are the required protections given to the mail to/from the serving MPA?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 11",
+          },
+        },
+        {
+          number: "0121",
+          text: "Do the mail clerks understand the privileged nature of mail and postal records?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 12",
+          },
+        },
+        {
+          number: "0122",
+          text: "Is mail date stamped on reverse side to indicate day of receipt?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2m(4) and Chap 3 par15d",
+          },
+        },
+        {
+          number: "0123",
+          text: "Do Mail Orderlies pick up mail at designated times daily?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2n(2) and Chap 3, par 15d-f",
+          },
+        },
+        {
+          number: "0124",
+          text: "Are Unit Mail Officers providing the serving Post Office timely mobile unit mail routing information?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 28",
+          },
+        },
+        {
+          number: "0125",
+          text: "Do mail clerks understand the instructions concerning the receipt and delivery of Balloting material?",
+          reference: {
+            text: "MPM 19.2.a(1) and MCO 5110.4B, Chap 3, par 21",
+          },
+        },
+        {
+          number: "0126",
+          text: "Do mail clerks understand the instructions concerning the receipt and delivery of Refused mail?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 17",
+          },
+        },
+        {
+          number: "0127",
+          text: "Do mail clerks understand the instructions concerning the receipt and delivery of Open by mistake?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 18",
+          },
+        },
+        {
+          number: "0128",
+          text: "Do mail clerks understand the instructions concerning the receipt and delivery of Mail received open, damaged, or missing contents?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 15b and c",
+          },
+        },
+        {
+          number: "0129",
+          text: 'Do the mail clerks and orderlies understand the delivery instructions of PS Form 3849, "Delivery Notice/Reminder/Receipt," for personal accountable mail?',
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 19",
+          },
+        },
+        {
+          number: "0130",
+          text: "Is mail addressed to the mail clerks processed by his/her section mail orderly?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 16e",
+          },
+        },
+        {
+          number: "0131",
+          text: "Do the mail clerks understand the detection/notification instructions for potential mail bombs and suspicious mail?",
+          reference: {
+            text: "MPM 7.2b, 8.2j and MCO 5110.4B, Chap 6",
+          },
+        },
+        {
+          number: "0132",
+          text: "Do the mail delivery receipt log annotations match the assigned section, DD Form 285, and DD Form 2260?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 15e",
+          },
+        },
+        {
+          number: "0133",
+          text: "Are mail orderly receipt logs properly completed and maintained?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 15e",
+          },
+        },
+        {
+          number: "0134",
+          text: "Is mail delivered to an authorized section Mail Orderly?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 15e and f",
+          },
+        },
+        {
+          number: "0135",
+          text: "Is there a chain of receipts for the delivery of official accountable mail to an authorized agent?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 20g-k",
+          },
+        },
+        {
+          number: "0136",
+          text: "Is official accountable mail that cannot be delivered or properly secured that day returned to the serving MPA?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3 par 20j",
+          },
+        },
+        {
+          number: "0137",
+          text: "Are delivery records for accountable mail properly completed, maintained, and verified by the Unit Mail Officer daily?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 20h-k",
+          },
+        },
+        {
+          number: "0138",
+          text: "Does the command require personnel to check in/out of the UMR?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 23 and 26b",
+          },
+        },
+        {
+          number: "0139",
+          text: "Are mail delivery receptacles issued to authorized patrons?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 2a, 2b, 3a, 6d",
+          },
+        },
+        {
+          number: "0140",
+          text: "Are mail delivery receptacles assigned with required forms and information?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 2 and 3",
+          },
+        },
+        {
+          number: "0141",
+          text: "Are mail delivery receptacles correctly closed?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 9",
+          },
+        },
+        {
+          number: "0142",
+          text: "Are mail delivery receptacle key lock cylinder/combination procedures followed?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 7",
+          },
+        },
+        {
+          number: "0143",
+          text: "Are correct receptacle maintenance and records procedures followed?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 5",
+          },
+        },
+        {
+          number: "0144",
+          text: "Is correctly addressed mail placed in assigned receptacles?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 8",
+          },
+        },
+        {
+          number: "0145",
+          text: "Are the mail delivery receptacles checked bi-weekly for excessive mail accumulation, old mail, or non-use?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 6",
+          },
+        },
+        {
+          number: "0146",
+          text: "Are customers notified of large mail items or excess mail accumulation using a PS Form 3907?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 8c",
+          },
+        },
+        {
+          number: "0147",
+          text: "Are DD Form 2258 - Temporary Mail Disposition Instructions used to indicate the status of addressee and proper mail disposition?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 6b, 8d and 8e",
+          },
+        },
+        {
+          number: "0148",
+          text: "Is general delivery service provided to mail addressed for members due to arrive?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 26j and Chap 4 par 4",
+          },
+        },
+        {
+          number: "0149",
+          text: 'Are NAVMCs 10572 "Directory File Cards" correctly completed, filed, and maintained?',
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 24 and 25",
+          },
+        },
+        {
+          number: "0150",
+          text: "Are mail clerks properly processing directory mail?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 26",
+          },
+        },
+        {
+          number: "0151",
+          text: "Do unit Mail Clerks pick up mail daily from the serving MPA?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2m(3)",
+          },
+        },
+      ],
+    },
+    {
+      id: "02",
+      title: "Command Official Mail Program",
+      questions: [
+        {
+          number: "0201",
+          text: "Has the unit, organization, and/or activity that handles command mail established an Official Mail Program (OMP)?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2j(10) and Chap 5, par 1",
+          },
+        },
+        {
+          number: "0202",
+          text: "Has the unit established policy on incoming and outgoing official mail?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 7p",
+          },
+        },
+        {
+          number: "0203",
+          text: "Has the unit, organization, and/or activity that handles command mail established an Official Mail Center?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 10a, b, and d",
+          },
+        },
+        {
+          number: "0204",
+          text: "Has the Command appointed personnel in writing the grade of E-6/GS-6 or above as the OMM and Assistant OMM?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 3",
+          },
+        },
+        {
+          number: "0205",
+          text: "Has the OMM and assistant OMM completed mail handling training?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5 par 4",
+          },
+        },
+        {
+          number: "0206",
+          text: "Has the Unit Mail Officers and Unit Mail Clerks signed PS Form 8139 – Your Role in Protecting the Security of the United States Mail?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2j(2) and Chap 3, par 3c",
+          },
+        },
+        {
+          number: "0207",
+          text: "Has the command appointed Unit Mail Clerks for units that do not maintain a UMR to deliver official mail to authorized agents?",
+          reference: {
+            text: "MPM 41.2.n, MCO 5110.4B, Chap 3, par 3 and Chap 5, par 10c",
+          },
+        },
+        {
+          number: "0208",
+          text: "Has the current Commanding Officer designated in writing personnel authorized to receive and open official mail, to include official accountable mail?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 20c-f",
+          },
+        },
+        {
+          number: "0209",
+          text: "Is there a chain of receipts for the delivery of official accountable mail to an authorized agent?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 20g-k",
+          },
+        },
+        {
+          number: "0210",
+          text: "Are delivery records properly completed, maintained, and verified by the OMM?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 20h-k",
+          },
+        },
+        {
+          number: "0211",
+          text: "Are official mail addresses verified for accuracy and correctly used?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 18 and 19",
+          },
+        },
+        {
+          number: "0212",
+          text: "Does the OMM maintain a copy of the most current edition of the publications/directives?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 8",
+          },
+        },
+        {
+          number: "0213",
+          text: "Does the command OMC serve as a control point for outgoing official matter?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 10e",
+          },
+        },
+        {
+          number: "0214",
+          text: "Does the OMM understand the provisions for the use of extra services?",
+          reference: {
+            text: "MPM 41.1.c and MCO 5110.4B, Chap 5, par 17",
+          },
+        },
+        {
+          number: "0215",
+          text: "Is the maximum consolidation of correspondence applied for official mailings?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 22b",
+          },
+        },
+        {
+          number: "0216",
+          text: "Has the OMM completed quarterly OMP inspections?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2k(2)",
+          },
+        },
+      ],
+    },
+    {
+      id: "03",
+      title: "Official Postage Application",
+      questions: [
+        {
+          number: "0301",
+          text: "Are postage meters/stamps correctly secured?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 28 and 30b",
+          },
+        },
+        {
+          number: "0302",
+          text: "Are postage meter keys/combinations correctly secured?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 28 and 30b",
+          },
+        },
+        {
+          number: "0303",
+          text: "Is a postage stamp inventory maintained for the authorized unit?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 30a",
+          },
+        },
+        {
+          number: "0304",
+          text: "Are postage stamp stock audits conducted?",
+          reference: {
+            text: "DODI 4525.09, 3.11c and MCO 5110.4B, Chap 5, par 30c",
+          },
+        },
+        {
+          number: "0305",
+          text: "Is a daily record of meter register correctly recorded?",
+          reference: {
+            text: "MPM Appendix 25A, Table 5, Steps 1-2 and MCO 5110.4B, Chap 5, par 26",
+          },
+        },
+        {
+          number: "0306",
+          text: "Is PS Forms 3533 Application for Voucher for Refund of Postage and Fees, processed and submitted?",
+          reference: {
+            text: "USPS DMM 604, 9.3 and MCO 5110.4B, Chap 5, par 27",
+          },
+        },
+        {
+          number: "0307",
+          text: "Has the OMM analyzed the record of postage expended weekly?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 31",
+          },
+        },
+        {
+          number: "0308",
+          text: "Are cost saving measures applied to official mailings?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 20 and 22b",
+          },
+        },
+        {
+          number: "0309",
+          text: "Are the Priority Mail Express provisions correctly followed?",
+          reference: {
+            text: "MPM 41.1c, e, g and MCO 5110.4B, Chap 5, par 17a",
+          },
+        },
+        {
+          number: "0310",
+          text: "Is the classification of official items correctly endorsed?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 15",
+          },
+        },
+        {
+          number: "0311",
+          text: "Are appropriated funds for postage properly used?",
+          reference: {
+            text: "MPM 41.1.a-b and 41.2.ff and MCO 5110.4B, Chap 5, par 1",
+          },
+        },
+        {
+          number: "0312",
+          text: "Are postage expenditure reports submitted?",
+          reference: {
+            text: "DODI 4525.09, 2.2c and MCO 5110.4B, Chap 5, par 32",
+          },
+        },
+        {
+          number: "0313",
+          text: "Is the OMM conducting regional OMP inspections each fiscal year?",
+          reference: {
+            text: "MPM 25.1.c. and 41.2.e. and MCO 5110.4B, chap 5, par 6",
+          },
+        },
+      ],
+    },
+  ],
+};
+
+// Force Preservation Council (FPC) Program Checklist Data
+export const forcePreservationCouncilChecklist: FACChecklistData = {
+  slug: "force-preservation-council",
+  applicabilityNote: "This checklist applies to all levels and types of commands.",
+  revisedDate: "February 10, 2025",
+  sme: {
+    name: "LtCol Nathan Harmon",
+    email: "nathan.harmon@usmc.mil",
+    phone: "(703) 432-5697",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Unit-Specific Items (All commands)",
+      questions: [
+        {
+          number: "0101",
+          text: "Has the unit codified its FPC process with a written policy letter or SOP and made it available to all assigned Service Members?",
+          reference: {
+            text: "MCO 1500.60A, par 4b(3)(n)",
+          },
+        },
+        {
+          number: "0102",
+          text: "Are FPCs held at least once per month for the active component and not less than semi-annually for the reserve component?",
+          reference: {
+            text: "MCO 1500.60A, par 4b",
+          },
+        },
+        {
+          number: "0103",
+          text: "Does the unit SOP discuss how each Service Member is considered through the unit's FPC process?",
+          reference: {
+            text: "MCO 1500.60A, par 4a(2)(a), 4a(2)(a)1, 4a(2)(a)2, 4b(3)(a)1",
+          },
+        },
+        {
+          number: "0104",
+          text: "Does the command's profile percentage completion report display an 80% or higher completion rate, showing the command is maintaining each CIRRAS profile in a fully completed state?",
+          reference: {
+            text: "MCO 1500.60A, par 4a(2)(a)2",
+          },
+        },
+        {
+          number: "0105",
+          text: "Has the command included procedures within their unit check-in/out processes for the assignment and removal of CIRRAS permissions and to ensure all Marines have an updated CIRRAS profile prior to departing the unit?",
+          reference: {
+            text: "MCO 1500.60A, par 4b(3)(g)2. NAVMC 1500.50, par 3f, par 5d",
+          },
+        },
+        {
+          number: "0106",
+          text: 'Does the command\'s policy letter or SOP contain processes to ensure transferred Marines who arrive at the unit with a risk determination of low are assigned to "elevated" for 90 days from their join date and discussed during FPCs while in this status?',
+          reference: {
+            text: "MCO 1500.60A, par 4b(3)(g)3, NAVMC 1500.50, par 5c",
+          },
+        },
+        {
+          number: "0107",
+          text: "Are FPC records managed according to National Archives and Records Administration approved dispositions to ensure proper maintenance, accessibility, and preservation, regardless of medium or format?",
+          reference: {
+            text: "MCO 1500.60A, par 5a; NAVMC 1500.50, par 7b",
+          },
+        },
+        {
+          number: "0108",
+          text: "Does the command ensure all CIRRAS users have completed annual PII and HIPAA training, as well as the CIRRAS MarineNet training course?",
+          reference: {
+            text: "MCO 1500.60A, par 4b(3)(c)1e. NAVMC 1500.50, par 3a",
+          },
+        },
+        {
+          number: "0109",
+          text: "Does the command require and retain appointment letters for all personnel assigned to the FPC Certifier role in CIRRAS?",
+          reference: {
+            text: "NAVMC 1500.50, par 3h",
+          },
+        },
+        {
+          number: "0110",
+          text: "Has the command assigned their Higher Headquarters' Commander to the Higher Headquarters Commander user role within the unit's CIRRAS organization?",
+          reference: {
+            text: "NAVMC 1500.50, par 3j",
+          },
+        },
+        {
+          number: "0111",
+          text: "Does the unit's policy letter or SOP directly task the Unit Administrator with conducting periodic user role assignment reviews to ensure CIRRAS access is appropriately assigned and unassigned?",
+          reference: {
+            text: "NAVMC 1500.50, par 3b, par 3c",
+          },
+        },
+      ],
+    },
+  ],
+};
+
+// Records Management Program Checklist Data
+export const recordsManagementChecklist: FACChecklistData = {
+  slug: "records-management",
+  applicabilityNote:
+    "This checklist applies to all Marine Corps commands and activities. Records Management (RM) is the responsibility of all Marines in uniform as well as civilian Marines and contractors. In keeping with the Headquarters Marine Corps 3-Phased Approach to electronic records management (ERM), questions within each of the subsections of this checklist lead to compliance in the RM program.",
+  revisedDate: "September 16, 2025",
+  sme: {
+    name: "Mrs. Kristen Meehan",
+    phone: "703-571-3927",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Electronic Records Management (ERM)",
+      questions: [
+        {
+          number: "0101",
+          text: "Has the command appointed a Command Designated Records Manager (CDRM) in CROSS? Note: Appointed CDRMs must be the rank/grade of E-6/GS-09 or higher. If appointment letters are not generated in CROSS, hardcopy letters can be scanned and uploaded to the 'Documents' and 'Miscellaneous' tabs within CROSS.",
+          reference: {
+            text: "MCO 5210.11F, par 4b(5)(a) and par 4c(2)(c); MCBul 5210 dtd 29 Aug 25, par 3b(1)(a)1",
+          },
+        },
+        {
+          number: "0102",
+          text: "Has the commanding officer signed NAVMC 10030, 'Commander's Records Management Acknowledgement Agreement,' within 90 days of assuming command?",
+          reference: {
+            text: "MCBul 5210 dtd 29 Aug 25, 3b(1)(a)",
+          },
+        },
+        {
+          number: "0103",
+          text: "Does the CDRM annually monitor Records Management training for the command? Are individual RM training certificates for all CDRM(s) and Staff Section Records Managers (SSRM) uploaded in CROSS? Note: Training events are available at Waypoints, CROSS, or HQMC ARD RM SharePoint homepage. Proof of training is required to be uploaded in CROSS under the 'Documents' tab, 'Training Documents'. For command/block proof of training, CDRMs may upload a signed organizational training roster in CROSS, or a Marine Corps Training Information Management System occasion (MCTIMS) as proof of completion. CDRM and SSRM training certificates are to be uploaded as separate records within the 'Documents' and 'Training Documents' tabs.",
+          reference: {
+            text: "NARA Bulletin 2017-01, par 3A; SECNAV Instruction 5210.8F, par 5.1, encl(4), par 2b(2) and par 4j; MCO 5210.11F, chap 8, par 5; MCBul 5210 dtd 29 Aug 25, 3b(1)(a)5",
+          },
+        },
+        {
+          number: "0104",
+          text: "Has the command appointed Staff Section Records Managers (SSRM) in CROSS? Note: SSRMs manage records created and collected separately from the HQ component, i.e., records within sections, directorates, and/or major programs outside of the traditional G1/S1 shops. It is required for each SSRM to upload their individual annual RM training certificate in CROSS.",
+          reference: {
+            text: "MCO 5210.11F, par 4b(5)(a), par 4c(2)(c), and par 4c(3)(b)",
+          },
+        },
+        {
+          number: "0105",
+          text: "Has the command identified a file plan in CROSS, and do the identified record schedules correspond with the records maintained in the command's SharePoint Online (SPO) Records Library? UPDATE: It is now the responsibility of the CDRM to account for all command records within one file plan versus multiple command file plans. All separate file plans will \"roll into\" a master command file plan within CROSS. Commands are required to use the new disposition schedule metadata or the available labeling options within Microsoft SPO. Note: If the command has approval to manage paper records, they must be identified on the file plan in CROSS. Locations of the paper records will be annotated in the Excel spreadsheet version.",
+          reference: {
+            text: "MCO 5210.11F, chap 3, par 3 and Figure 303; ARD's RM SOP, section 3.2.4; SECNAV M-5210.1 Part III, par 2b",
+          },
+        },
+        {
+          number: "0106",
+          text: "Has the command developed and maintained an updated SOP to govern the creation and maintenance of command records in accordance with ERM practices? Note: A local order, bulletin, or SOP satisfies this requirement. Upload the updated RM SOP into CROSS under the 'Documents' and 'SOP/COOP' tabs.",
+          reference: {
+            text: "MCO 5210.11F, par 4b(5)(a-c), 4c(2)(a-q), and par 4c(3)(a)",
+          },
+        },
+      ],
+    },
+    {
+      id: "02",
+      title: "Paper Records Management",
+      questions: [
+        {
+          number: "0201",
+          text: "SKIP TO 0202 IF COMMAND HAS NO PAPER RECORDS ON PREMISE. Does the command have an approved and current NAVMC 10030/1, 'Records Management Paper Waiver Request'? Note: All NAVMC 10030/1s in the Marine Corps have unique expiration dates that are determined by the Records Officer of the Marine Corps. Commands with an approved NAVMC 10030/1 have until the form's expiration date to transition the identified paper records to an electronic format. Failure to do so within the approved timeframe will result in non-compliance. Only under extremely rare circumstances will a NAVMC 10030/1 be approved or renewed. Paper records that are identified as exceptions on an approved NAVMC 11030/1 must be annotated on the command File Plan (Excel version). Add a 'Notes' section (column F) to describe the physical locations of paper records.",
+          reference: {
+            text: "MCO 5210.11F, Chap 3 par 2a, par 3c, par 5a, Figures 3-1, 3-2, and 3-3",
+          },
+        },
+        {
+          number: "0202",
+          text: "Does the command have legacy paper records or collections that are being stored off-site at a Federal Records Center that, in some cases, may require access? If so, does the CDRM have an Archives and Records Center Information System (ARCIS) account to submit reference requests when necessary? Note: ARCIS is no longer used to transfer records to FRCs. ARCIS accounts are only provided to primary CDRMs to retrieve records if required for events that require them (legal records holds, discovery, and FOIA requests to name a few). Command records residing in approved ERM systems such as iAPS, DTS, or other enterprise- or government-wide systems of record shall remain resident in their respective systems – no need to transfer them. Annotate types and locations of records residing in ERM systems within the command CROSS file plan.",
+          reference: {
+            text: "MCO 5210.11F, Chap 3 par 1f(1) and par 3c(3)(b)",
+          },
+        },
+      ],
+    },
+    {
+      id: "03",
+      title: "Essential Records",
+      questions: [
+        {
+          number: "0301",
+          text: "Has the command developed and maintained an Essential Records (formerly Vital Records) plan? Is it included as part of the command RM SOP? Is it integrated into the command's Continuity of Operations Plan (COOP)? or Does it stand alone? Note: It is recommended that commands adopt their higher headquarters' Continuity of Operations Plans if appropriate. Commands can include their Essential Records and Emergency Action Plans within the adopted COOP. All command sections, directorates, and programs must identify their respective essential records and add that information into the command's master Essential Records inventory. Essential Records inventory must be uploaded to CROSS. Templates and samples are available in CROSS.",
+          reference: {
+            text: "MCO 5210.11F, par 4a(1)(b)6, par 4b(5)(b-c), par 4c(2)(q), Chap 7; ARD RM SOP, section 5.1",
+          },
+        },
+        {
+          number: "0302",
+          text: "Has the command conducted an annual inventory of all essential records? Note: Must provide textual and/or electronic evidence than an inventory was conducted. Upload inventory to CROSS.",
+          reference: {
+            text: "MCO 5210.11F, Chap 7",
+          },
+        },
+        {
+          number: "0303",
+          text: "Are all essential records current and properly managed throughout their lifecycle? Note: The inspector will take a random sampling of no more than (5) essential records currently being managed. This is to ensure the records are being managed according to the correct Records Schedules and dispositions.",
+          reference: {
+            text: "MCO 5210.11F, Chap 7",
+          },
+        },
+      ],
+    },
+    {
+      id: "04",
+      title: "Capstone",
+      note: "This section applies to commands with billets identified in General Records Schedule 6.1.",
+      questions: [
+        {
+          number: "0401",
+          text: "Does the command have a Capstone official? If yes, is General Records Schedule 6.1 part of the command file plan? Note: Upload Capstone official information in CROSS. If no, SKIP TO SUBSECTION 5 below.",
+          reference: {
+            text: "MCO 5210.11F, par 4(b)(12); MCBul 5210 dtd 29 Aug 2025, 3b(1)(a)3.a.",
+          },
+        },
+        {
+          number: "0402",
+          text: "Has the command responded to the quarterly Capstone reconciliation requirement via the Marine Corps tasker system (ETMS2)? Note: The command task manager must notify the CDRM of this quarterly requirement upon receipt of task. It is an OMB requirement to maintain updates of this information.",
+          reference: {
+            text: "OMB M-19-21, section 1.1; SECNAVINST 5210.8F, encl(4), par 6.g and encl(5), par 4; SECNAV-M 5210.1, Part 1, par 16.b.(e); MCO 5210.11F Chap 1, 1b(1)(a)",
+          },
+        },
+        {
+          number: "0403",
+          text: "Upon change of command/rotation/departure of Capstone official, did the CDRM revise the CROSS 'Capstone' tab to reflect changes? Note: If a change of command has occurred, the CDRM must initiate the NAVMC 10030 within 90 days and upload the signed form to CROSS.",
+          reference: {
+            text: "OMB M-19-21, section 1.1; SECNAVINST 5210.8F, encl(4), par 6.g and encl(5), par 4; SECNAV M-5210.1, Part 1, par 16.b(e); MCBul 5210 dtd 29 Aug 25, par 3b(1)(a)",
+          },
+        },
+      ],
+    },
+    {
+      id: "05",
+      title: "Command Chronology Records and Annual Reporting Status",
+      questions: [
+        {
+          number: "0501",
+          text: "Has the command submitted command chronologies to the Archives Branch, Marine Corps History Division, by the deadlines provided by receipt of letters and/or emails from the Archives Branch? Command historical summary files include the following elements: Copies of lineage and honors certificates, Copy of streamer entitlement, Copies of past (5) years of command chronologies, Master copy of command/unit insignia and corresponding documentation/correspondence, List of all property, facilities, and/or commemorative sites. Note: Command chronologies are due NLT 90 days after the end of the reporting period. For semiannual submissions, due dates are 30 June and 31 December. For annual submissions, due dates are NLT 31 December.",
+          reference: {
+            text: "MCO 5750.1H, encl(1), Chap 5; Annex 5 of App A; and MARADMIN 200/25",
+          },
+        },
+      ],
+    },
+  ],
+};
+
+// Reports Management Checklist Data
+export const reportsManagementChecklist: FACChecklistData = {
+  slug: "reports-management",
+  applicabilityNote:
+    "This checklist applies to ALL commands. Reports Management is the assurance that information being collected (via a form, request for information, data call, system, etc.) is required by policy, not already available from other sources, is worth the imposition of the burden to collect, and challenged when necessary or no longer needed.",
+  revisedDate: "April 29, 2024",
+  sme: {
+    name: "Mr. Mark A. Kazzi",
+    email: "smb_hqmc_reports@usmc.mil",
+    phone: "(571) 465-6640",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Reports Management",
+      note: "Applies to all commands.",
+      questions: [
+        {
+          number: "0101",
+          text: "Has the command designated and appointed, in writing, a Command Reports Manager?",
+          reference: {
+            text: "MCO 5214.2G, par 4b(4)(b)",
+          },
+        },
+        {
+          number: "0102",
+          text: "Has the command promulgated command policy (i.e., order or bulletin) for the command's Reports Management Program to ensure organizational reporting requirements are documented, tracked, and in compliance with legal and statutory requirements? Note: Template directive available on ARDB SharePoint site. Reports Management ensures staff agencies are not putting undue burden on staff regarding the completion of reports/surveys, thus taking away from daily tasks. The Reports Management program ensures that reports and reporting systems are compliant with federal mandates (i.e., 5 CFR Part 1320, SSN Reduction Act, etc.) and provide necessary information effectively, efficiently, and economically.",
+          reference: {
+            text: "MCO 5214.2G, 4b(4)(a), chap 1, par 3a, and SECNAVINST 5210.16, par 5 a-d",
+          },
+        },
+        {
+          number: "0103",
+          text: "Does the command have a continuity binder for reports management? Note: Recommend continuity binder, to include at minimum: POCs for each section, Marine Corps Order 5214.2G and SECNAV Instruction 5210.16, reports inventory, and documentation of 3-year review.",
+          reference: {
+            text: "MCO 5214.2G, par 4b(4)(c)",
+          },
+        },
+        {
+          number: "0104",
+          text: "Has the command published a Reports Inventory of all valid and cancelled recurring reporting requirements? Note: The Reports Inventory is necessary to keep track of what licensed reports are available, eliminates duplication, and can be used as a resource for data that may be needed by other staff sections in the command.",
+          reference: {
+            text: "MCO 5214.2G, chap 1, par 3a(1), chap 3, par 1, and chap 5, par 2d",
+          },
+        },
+        {
+          number: "0105",
+          text: "Is the Reports Manager ensuring that information collections are not redundant with forms and information collections of a higher authority? Note: Local forms shall not be used if a higher level form and report (i.e., NAVMC, DD, SF, etc.) already exists for the information being collected.",
+          reference: {
+            text: "SECNAVINST 5210.16, par 7d-f",
+          },
+        },
+        {
+          number: "0106",
+          text: "Are reports program managers conducting a review of all existing reports every three years?",
+          reference: {
+            text: "MCO 5214.2G, chap 1, par 3.a.(4) and chap 5, par 1",
+          },
+        },
+        {
+          number: "0107",
+          text: "Does the command originate information (reports) requirements (i.e., collection of information is not already mandated by higher authority and not already collected/available by other sources)? Note: Examples of collecting information include, but are not limited to: creation of new forms or duplicative forms; adding additional fields or taking away existing fields; requests for information, data calls, systems, etc. If YES: Complete Section 2. If NO: End of Inspection.",
+          reference: {
+            text: "MCO 5214.2G",
+          },
+        },
+      ],
+    },
+    {
+      id: "02",
+      title: "Commands Who Originate Information Requirements",
+      note: "Applies to commands who originate (i.e., not already mandated by higher authority and not already collected/available by other sources) information (reports) requirements such as creation of forms, requests for information, data calls, systems, etc.",
+      questions: [
+        {
+          number: "0201",
+          text: "Are all local reporting requirements published within a command directive (i.e., order or bulletin)?",
+          reference: {
+            text: "MCO 5214.2G, 4b(4)(f)",
+          },
+        },
+        {
+          number: "0202",
+          text: "Is the Reports Manager ensuring that information collections from 10 or more members of the public (i.e., spouses, contractors, etc.) has OMB approval? Note: Local forms and/or local surveys shall not be used to collect information from members of the public; use of a higher level form approved by OMB is required.",
+          reference: {
+            text: "MCO 5214.2G, chap 6, par 1d, and 5 CFR Part 1320",
+          },
+        },
+        {
+          number: "0203",
+          text: "Does the command maintain a case file for all local reporting requirements not covered by higher authority? Note: The case file is required for a report not mandated by higher authority. The case file validates the purpose for the information collection and shows the life of the report, (i.e., what directive required it, when it was required, a sample of the report or snapshot of the database and what Report Control Symbol was assigned to it.",
+          reference: {
+            text: "MCO 5214.2G, 4b(4)(e), chap 2, par 7a, and Appendix A",
+          },
+        },
+        {
+          number: "0204",
+          text: "If the command sponsors, or is the program owner of an electronic reports system, is the system registered in Department of Defense Information Technology Portfolio Repository-Department of the Navy (DITPR-DON) to ensure all records within are managed in accordance with SECNAV Note 5210 and SECNAV M-5210.1?",
+          reference: {
+            text: "MCO 5214.2G, par 5b(2)",
+          },
+        },
+      ],
+    },
+  ],
+};
+
+// Separation, Retirement & Limited Duty Checklist Data
+export const separationRetirementChecklist: FACChecklistData = {
+  slug: "separation-retirement",
+  applicabilityNote:
+    "This checklist applies to ALL commands. For inspection purposes, Marine Corps activities effecting separations are accountable for compliance with MCO 1900.16 w/Change 2. Written internal control procedures, i.e., local directives, desktop procedures, checklists, etc., can attribute to a successful functional area and provide continuity.",
+  revisedDate: "March 24, 2025",
+  sme: {
+    name: "Major Cody E. Pennington",
+    phone: "(703) 784-9314",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Separation & Retirement Processing",
+      questions: [
+        {
+          number: "0101",
+          text: "Are copies of separation documents maintained in (a) command file and as required forwarded to CMC (MMRP) for inclusion in the Marine's OMPF for all cases of discharge, release from active duty, or retirement? To include: Appendix J, MCO 1900.16 w/ch 2, Naval Letter, or NAVMC 10274 (AA form); NAVMC 118(11) Page 11 entries (6105 counseling); DD Form 2648 series including eForm (Pre-separation/transition counseling and career readiness standards Eform)",
+          reference: {
+            text: "MCO 1900.16 w/ch 2 par 1101.1.b.(2) and c.(3), & par 6105.3.e. Appendix J",
+          },
+        },
+        {
+          number: "0102",
+          text: "In cases of administrative separation, are copies of separation documents that are resident within the Command Legal Action (CLA) application, or maintained in command files been forwarded to CMC (MMRP) for inclusion in the Marine's OMPF? (CMC (MMRP) will file separation documents in the Marine's OMPF if they are resident in CLA. Otherwise, commands need to manually forward files to CMC (MMRP) for inclusion in the OMPF and validate.)",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 6311.5",
+          },
+        },
+        {
+          number: "0103",
+          text: 'Does the separation letter for administrative separation cases with a basis of "condition not a disability," not ratable by the Physical Evaluation Board (PEB), endorsed by a Medical Evaluation Board (MEB) Convening Authority?',
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 6203.2.b.(1)",
+          },
+        },
+        {
+          number: "0104",
+          text: 'In cases of administrative separation with a basis of "condition not a disability," is there compliance with the procedures and documentation required per the reference?',
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 6203.2f",
+          },
+        },
+        {
+          number: "0105",
+          text: "Are Marines processed for administrative separation following the first substantiated incident of sexual harassment and wrongful distribution or broadcasting of an intimate image?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 4103.2.c, and par 6210.8.c",
+          },
+        },
+        {
+          number: "0106",
+          text: "Are Marines processed for administrative separation once determined to have committed an offense of the following: child abuse, intimate partner abuse, immediate family abuse or any form of domestic abuse?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 1004.4.f",
+          },
+        },
+      ],
+    },
+    {
+      id: "02",
+      title: "Survivor Benefit Plan",
+      questions: [
+        {
+          number: "0201",
+          text: 'Does the commander ensure that all retirement eligible Marines complete SBP training via MarineNet prior to retirement and verify that the SBP counseling code "SP" has posted in MCTFS?',
+          reference: {
+            text: "MCO 1741.11D, pgs 2, 4a-b",
+          },
+        },
+        {
+          number: "0202",
+          text: 'Does the commander have policies/procedures in place to ensure that spousal concurrence is obtained, and properly notarized on the DD 2656 for all married Marines making an election OTHER than "Spouse Coverage" and any level of coverage OTHER than "Full Gross Pay"?',
+          reference: {
+            text: "DODI 1332.42 30 Dec 2020, MCO 1741.11D par 4.b.(1) (b)",
+          },
+        },
+        {
+          number: "0203",
+          text: "Has the command verified that the completed DD Form 2656 was submitted to DFAS at least 30 days prior to a Marine's retirement, transfer to the FMCR, or transfer to TDRL or PDRL? (Command will verify that the TTC training code ZW has been reported in MCTFS reflecting that the DD Form 2656 was sent to DFAS)",
+          reference: {
+            text: "MCO 1900.16 w/ch 2 par 1406.1, Appendix E, E007.4; MCO 1741.11D par 5.b",
+          },
+        },
+      ],
+    },
+    {
+      id: "03",
+      title: "Limited Duty",
+      questions: [
+        {
+          number: "0301",
+          text: "Is a Unit Limited Duty Coordinator, SNCO or above, appointed in writing.",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8110.1b",
+          },
+        },
+        {
+          number: "0302",
+          text: "Does the Unit Limited Duty Coordinator ensure that Marine-On-Line (MOL) reports, MCTFS and Sailor and Marine Readiness Tracker (SMART) uniformly reflect the status of medically non-deployable, light duty, Temporary Limited Duty (TLD), Permanent Limited Duty (PLD) Marines and those who are processing through the Disability Evaluation System (DES)?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8110.1b (1-7)",
+          },
+        },
+        {
+          number: "0303",
+          text: "Has the unit established internal control procedures for Marines in a non-deployable status over 12 consecutive months to identify, track and initiate administrative or disability separation or submit retention waivers to HQMC (MMSR-2)?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, para 1601.3 and 1602.1(a-c)",
+          },
+        },
+        {
+          number: "0304",
+          text: "Are disabled Marines found unfit to continue naval service by the Navy Physical Evaluation Board (PEB) separated or retired as directed by the CMC (MMSR-4)?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8402.2(a-g)",
+          },
+        },
+        {
+          number: "0305",
+          text: "Are Marines in a Temporary Limited Duty (TLD) status expiring within 60 days scheduled for a reevaluation prior to expiration of the TLD period?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8104.4, par 8110.1.b.(7)(e)",
+          },
+        },
+        {
+          number: "0306",
+          text: "Are all recommendations for periods of Temporary Limited Duty (TLD) exceeding 12 months over the span of a career submitted to the CMC (MMSR-4) for approval with the LDNMA when applicable?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8003.24a, par 8104.3a(2), par 8110.2c",
+          },
+        },
+        {
+          number: "0307",
+          text: "Are Marines with an EAS expiring while on Temporary Limited Duty (TLD) or while going through the Disability Evaluation System (DES) afforded the opportunity to voluntarily extend beyond their current contract until the TLD period or DES process is complete?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8111.1",
+          },
+        },
+        {
+          number: "0308",
+          text: "Are Marines only placed in an involuntary, Convenience of the Government, medical hold status in cases of mental incompetence, physical incapacity, serious contagious disease, or if the Marine poses a hazard to self or others?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8003.16",
+          },
+        },
+        {
+          number: "0309",
+          text: "Are Marines in a light duty status being referred to a Medical Treatment Facility (MTF) for re-evaluation before exceeding 90 days?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8103.1-5",
+          },
+        },
+        {
+          number: "0310",
+          text: 'Do Marines receive approval from the CMC (MMSR-4) before being released "home awaiting orders" while being processed through the Disability Evaluation System?',
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8304.1-2",
+          },
+        },
+      ],
+    },
+  ],
+};
+
+// Transition Readiness Program (TRP) Checklist Data
+export const transitionReadinessChecklist: FACChecklistData = {
+  slug: "transition-readiness",
+  applicabilityNote: "This checklist applies to all levels and types of commands.",
+  revisedDate: "February 21, 2024",
+  sme: {
+    name: "Ms. Nathaly Islas",
+    email: "TRP_HQMC@usmc.mil",
+    phone: "(703) 784-9550",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Unit-Specific Items (All commands)",
+      note: "This section also applies to other intermediate echelons of command with subordinate Unit Transition Coordinators.",
+      questions: [
+        {
+          number: "0101",
+          text: "Did the Commanding Officer (CO) appoint, in writing, Unit Transition Coordinators (UTCs) and Designees? Was the UTCN code reported?",
+          reference: {
+            text: "MCO 1700.31, par 3b(5)(c); MARADMIN 632/19, par 11c; MARADMIN 632/19, par 5",
+          },
+        },
+        {
+          number: "0102",
+          text: "Did the UTC(s) complete UTC training with the installation's TRP office no later than 45 days following appointment?",
+          reference: {
+            text: "MCO 1700.31, par 3b(5)(d); MARADMIN 632/19, par 11c",
+          },
+        },
+        {
+          number: "0103",
+          text: "Does the UTC facilitate all unit transition activities and coordinate with appropriate personnel to identify, notify and track all eligible Marines within the unit?",
+          reference: {
+            text: "MCO 1700.31, par 3b(6)(a); MARADMIN 632/19, par 11c",
+          },
+        },
+        {
+          number: "0104",
+          text: "Does the CO ensure that all Active Duty (AD) and Reserve Component (RC) Marines complete mandatory Individualized Initial Counseling (IC) beginning 24 months from retirement, or 18 months from separation, demobilization, or deactivation, but no later than 12 months prior to End of Active Service (EAS) date?",
+          reference: {
+            text: "10 USC ch. 58, § 1142; DoDI 1332.35, Section 6; MCO 1700.31, par 3b (5)(b); MARADMIN 632/19, par 5",
+          },
+        },
+        {
+          number: "0105",
+          text: "Does the CO ensure that all AD and RC Marines attend the mandatory Pre-separation Counseling Brief, beginning 24 months from retirement, or 18 months from separation, demobilization, or deactivation, but no later than 12 months prior to EAS date?",
+          reference: {
+            text: "10 USC ch. 58, § 1142; DoDI 1332.35, Section 5; MCO 1700.31, par 3b (5)(b); MARADMIN 632/19, par 5",
+          },
+        },
+        {
+          number: "0106",
+          text: "Does the CO ensure that all AD and RC Marines attend mandatory TRS courses and 2-day tracks, beginning 24 months from retirement, or 18 months from separation, demobilization, or deactivation, but no later than 6 months prior to EAS date?",
+          reference: {
+            text: "10 USC ch. 58, § 1144; MCO 1700.31, par 3b (5)(e); MARADMIN 632/19, par 7",
+          },
+        },
+        {
+          number: "0107",
+          text: "Does the CO or Designee personally conduct Commander's Verification no later than 90 days prior to EAS, using the DD Form 2648 eForm?",
+          reference: {
+            text: "DoDI 1332.35, Section 9; MARADMIN 632/19, par 9",
+          },
+        },
+        {
+          number: "0108",
+          text: 'Does the UTC coordinate entry of the training event code "TA" (Transition Readiness Seminar) and training event code "TZ" (Transition Readiness Capstone)?',
+          reference: {
+            text: "MCO 1700.31, par 3b (4)(u); MARADMIN 632/19, par 7c",
+          },
+        },
+        {
+          number: "0109",
+          text: "Does the UTC ensure that the final completed DD Form 2648 is filed in the Command's official files for 12 months following the Marine's EAS date?",
+          reference: {
+            text: "MCO 1700.31, par 3b(5)(j); MARADMIN 632/19, par 9b",
+          },
+        },
+      ],
+    },
+  ],
+};
+
+// Voting Assistance Program Checklist Data
+export const votingAssistanceChecklist: FACChecklistData = {
+  slug: "voting-assistance",
+  applicabilityNote: "This checklist applies to all Marine Corps Commands.",
+  revisedDate: "March 1, 2025",
+  sme: {
+    name: "Mr. Brian N. Mitchell",
+    email: "vote@usmc.mil",
+    phone: "(703) 784-9511",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Major Command Voting Assistance Officer (MCVAO)",
+      note: "This section also applies to other intermediate echelons of command with subordinate Unit Voting Assistance Officers.",
+      questions: [
+        {
+          number: "0101",
+          text: "Has a civilian employee at the GS-12 level or above, or a field grade officer been assigned to serve as the Major Command Voting Assistance Officer (MCVAO), or is there a HQMC SVAO approved grade waiver?",
+          reference: {
+            text: "DoDI 1000.04, 3.1.b(1), MCO 1742.1C, par 4b(4)(a)",
+          },
+        },
+        {
+          number: "0102",
+          text: "Has the Commanding Officer given specific written authorization (if a SNCO or civilian equivalent) to witness and administer oaths as required by some State's voting regulations?",
+          reference: {
+            text: "MCO 1742.1C, par 4b(6)(a)",
+          },
+        },
+        {
+          number: "0103",
+          text: "Did the MCVAO submit a copy of his/her appointment letter to their immediate higher headquarters, and to the HQMC SVAO, (MFP-4)?",
+          reference: {
+            text: "MCO 1742.1C, par 4b(4)(a)",
+          },
+        },
+        {
+          number: "0104",
+          text: "Has the MCVAO completed the required FVAP VAO Training Course and maintain a copy of their training certificate?",
+          reference: {
+            text: "DoDI 1000.04, 3.1.b(5), MCO 1742.1C, Chap 1, par 1",
+          },
+        },
+        {
+          number: "0105",
+          text: "Does the MCVAO maintain an updated Voting Continuity Folder with all its required contents?",
+          reference: {
+            text: "MCO 1742.1C, Chap 1, par 16",
+          },
+        },
+        {
+          number: "0106",
+          text: "Does the MCVAO maintain current copies of the appointment letters and training certificates of their subordinate commands VAOs?",
+          reference: {
+            text: "MCO 1742.1C, Chap 1, par 17",
+          },
+        },
+        {
+          number: "0107",
+          text: "Does the MCVAO have an active Federal Voting Assistance Program (FVAP) Portal account and utilizes the portal to submit all quarterly voting assistance metrics reports, when required to FVAP?",
+          reference: {
+            text: "DoDI 1000.04, 3.1.b(7)(c), MCO 1742.1C, Chap 1, par 12",
+          },
+        },
+        {
+          number: "0108",
+          text: "Does the MCVAO maintain copies (electronic or paper) of all submitted voting assistance metrics reports, and copies of all submitted quarterly metrics reports from their subordinate units in accordance with record schedule 1000-35 for a period of three (3) years?",
+          reference: {
+            text: "DoDI 1000.04, 3.1.b(7)(c), MCO 1742.1C, Chap 1, par 13",
+          },
+        },
+        {
+          number: "0109",
+          text: "Did the MCVAO forward the results of all inspections conducted by the IGMC and CGIP, including the inspections of subordinate units on the Voter Assistance Program (FA 1742), to the HQMC SVAO, MFP-4?",
+          reference: {
+            text: "MCO 1742.1C, Chap 1, par 11",
+          },
+        },
+        {
+          number: "0110",
+          text: "Does the MCVAO disseminate all voting messages/information from FVAP/HQMC SVAO as necessary to their subordinate commands?",
+          reference: {
+            text: "MCO 1742.1C, par 4b(4)(b)",
+          },
+        },
+      ],
+    },
+    {
+      id: "02",
+      title: "Installation Voting Assistance Officer (IVAO)",
+      note: "Applies to all Marine Corps Installations.",
+      questions: [
+        {
+          number: "0201",
+          text: "Has a civilian employee (GS-11 level or above), Captain (0-3 or above), or Chief Warrant Officer (W-2 or above) been assigned to serve as the Installation Voting Assistance Officer, or is there a HQMC SVAO approved grade waiver?",
+          reference: {
+            text: "DoDI 1000.04, 3.1.b(1), MCO 1742.1C, par 4b(5)(a)",
+          },
+        },
+        {
+          number: "0202",
+          text: "Has specific written authorization by the Commander been given (required only if a SNCO or civilian is appointed) to witness and administer oaths as required by some State's voting regulations?",
+          reference: {
+            text: "MCO 1742.1C, par 4b(6)(a)",
+          },
+        },
+        {
+          number: "0203",
+          text: "Did the IVAO submit a copy of his/her appointment letter to their higher Headquarters and to the HQMC SVAO, MFP-4?",
+          reference: {
+            text: "MCO 1742.1C, par 4b(5)(a)",
+          },
+        },
+        {
+          number: "0204",
+          text: "Has the IVAO and the IVA Office staff completed the required FVAP IVAO Training Course and maintain a copy of their training certificate?",
+          reference: {
+            text: "DoDI 1000.04, 3.3.a; MCO 1742.1C, Chap 2, par 1",
+          },
+        },
+        {
+          number: "0205",
+          text: "Does the IVAO maintain an updated Voting Continuity Folder with all its required contents for the IVA Office?",
+          reference: {
+            text: "MCO 1742.1C, Chap 2, par 12",
+          },
+        },
+        {
+          number: "0206",
+          text: "Does the IVAO maintain the current version of the Voting Assistance Guide (VAG)? (Electronic or paper version)",
+          reference: {
+            text: "MCO 1742.1C, Chap 6, par 1",
+          },
+        },
+        {
+          number: "0207",
+          text: "Does the IVAO have an active FVAP Portal account and utilizes the portal to submit all required quarterly IVA Office voting assistance metrics reports to FVAP?",
+          reference: {
+            text: "DoDI 1000.04, 3.1.b(7)(c); MCO 1742.1C, Chap 2, par 6",
+          },
+        },
+        {
+          number: "0208",
+          text: "Does the IVAO maintain copies (electronic or paper) of all submitted required quarterly voting assistance metrics reports in accordance with record schedule 1000-35 for a period of three (3) years?",
+          reference: {
+            text: "DoDI 1000.04, 3.1.b(7)(c); MCO 1742.1C, Chap 2, par 7",
+          },
+        },
+        {
+          number: "0209",
+          text: "Does the IVAO provide a copy of all submitted required quarterly IVA Office voting assistance metrics reports to the appropriate MCVAO in their chain of command?",
+          reference: {
+            text: "MCO 1742.1C, Chap 2, par 7",
+          },
+        },
+        {
+          number: "0210",
+          text: "Has the IVAO established an IVA Office in a well-advertised, fixed location that is easily accessible, and receives extensive visits by service personnel, their families, and civilian federal employees?",
+          reference: {
+            text: "DoDI 1000.04, 3.2.e(1), f; MCO 1742.1C, Chap 2, par 2",
+          },
+        },
+        {
+          number: "0211",
+          text: "Has the IVA Office been established within the installation headquarters organization and the IVAO reports directly to the Installation Commander?",
+          reference: {
+            text: "DoDI 1000.04, 3.2.e; MCO 1742.1C, par 4b(5)(a)",
+          },
+        },
+        {
+          number: "0212",
+          text: "Has the IVAO ensured the installation directory and/or website includes the email, location, and telephone numbers of the IVAO and IVA Office?",
+          reference: {
+            text: "DoDI 1000.04, 3.3.b; MCO 1742.1C, Chap 2, par 8",
+          },
+        },
+        {
+          number: "0213",
+          text: "Is the IVA Office adequately staffed to provide voter assistance and voting information to all eligible voters on the installation?",
+          reference: {
+            text: "DoDI 1000.04, 3.2.f; MCO 1742.1C, Chap 2, par 14",
+          },
+        },
+        {
+          number: "0214",
+          text: "Does the IVA Office have all the necessary equipment (computers, printers, scanners, etc.) to assist voters with completing/submitting the FPCA and all other necessary forms to the State election offices?",
+          reference: {
+            text: "MCO 1742.1C, Chap 2, par 17",
+          },
+        },
+        {
+          number: "0215",
+          text: "Does the IVAO maintain and disseminate voting materials and current voting information to all subordinate and tenant commands on their installation?",
+          reference: {
+            text: "DoDI 1000.04, 3.3.g; MCO 1742.1C, Chap 2, par 3",
+          },
+        },
+        {
+          number: "0216",
+          text: "Does the IVAO and IVA Office provide eligible installation personnel with current information on absentee voting, voter registration, voting procedures, and voting assistance?",
+          reference: {
+            text: "DoDI 1000.04 3.3.g; MCO 1742.1C, Chap 2, Par 4",
+          },
+        },
+        {
+          number: "0217",
+          text: "Is the IVA Office included in the commands check-in/out process? (This applies only if the command's check-in/out process does not include the subordinate Unit Voting Assistance Officer)",
+          reference: {
+            text: "DoDI 1000.04, 3.4.c(2); MCO 1742.1C, Chap 2, par 15",
+          },
+        },
+        {
+          number: "0218",
+          text: "Does the IVA Office assist in mailing all completed voting materials, and when requested, transmit all completed registration applications in a timely manner to the appropriate State Election offices?",
+          reference: {
+            text: "DoDI 1000.04, 3.4.f; MCO 1742.1C, Chap 2, par 16",
+          },
+        },
+        {
+          number: "0219",
+          text: "Does the IVA Office have a voicemail established with a greeting indicating that the caller has reached the IVA Office, the hours of operation, and an anticipated response time to return their calls?",
+          reference: {
+            text: "DoDI 1000.04, 3.2.f(2); MCO 1742.1C, Chap 2, par 19",
+          },
+        },
+        {
+          number: "0220",
+          text: 'Does the IVA Office have the standard email address in the form of "vote(unit)@usmc.mil" for personnel and their families to have email access to the IVA Office?',
+          reference: {
+            text: "DoDI 1000.04, 3.2.f(2); MCO 1742.1C, Chap 2, par 18",
+          },
+        },
+      ],
+    },
+    {
+      id: "03",
+      title: "Unit Voting Assistance Officer (UVAO)",
+      note: "Applies to all Marine Corps Commands.",
+      questions: [
+        {
+          number: "0301",
+          text: "Has the command appointed an officer (O-1/W-1 or above), or Staff Non-Commissioned Officer (E-7 or above) as the UVAO, or is there a HQMC SVAO approved grade waiver?",
+          reference: {
+            text: "DoDI 1000.04, 3.1.b(1); MCO 1742.1C, par 4b(6)(a)",
+          },
+        },
+        {
+          number: "0302",
+          text: "Has specific written authorization by the unit's commanding officer been given to the UVAO (only if a SNCO or civilian) to witness and administer oaths required by some State's voting regulations?",
+          reference: {
+            text: "MCO 1742.1C, par 4b(6)(a); Chap 3, par 14",
+          },
+        },
+        {
+          number: "0303",
+          text: "Did the UVAO submit a copy of his/her appointment letter to the appropriate higher headquarters MCVAO in their chain of command?",
+          reference: {
+            text: "MCO 1742.1C, par 4b(6)(a)",
+          },
+        },
+        {
+          number: "0304",
+          text: "Has the UVAO completed the required FVAP VAO Training Course and maintain a copy of their training certificate?",
+          reference: {
+            text: "DoDI 1000.04, 3.1.b(5); MCO 1742.1C, Chap 3, par 1",
+          },
+        },
+        {
+          number: "0305",
+          text: "Does the UVAO maintain an updated Voting Continuity Folder with all its required contents?",
+          reference: {
+            text: "MCO 1742.1C, Chap 3, par 8",
+          },
+        },
+        {
+          number: "0306",
+          text: "Does the UVAO maintain the current version of the Voting Assistance Guide (VAG)? (Electronic or paper version)",
+          reference: {
+            text: "MCO 1742.1C, Chap 6, par 1",
+          },
+        },
+        {
+          number: "0307",
+          text: "Does the UVAO provide adequate absentee voting assistance, increase voting awareness, and ensure all eligible voters in their unit receives current voting information?",
+          reference: {
+            text: "DoDI 1000.04, 3.1.b(7)(e); MCO 1742.1C, Chap 3, par 2, 3, 7 and 15",
+          },
+        },
+        {
+          number: "0308",
+          text: "Did the UVAO provide voter training on absentee voting procedures to all unit personnel annually, and maintained training rosters? (Training rosters are to be maintained in accordance with record schedule 1000-35 for a period of three (3) years.)",
+          reference: {
+            text: "MCO 1742.1C, Chap 3, par 17",
+          },
+        },
+        {
+          number: "0309",
+          text: "Does the UVAO maintain sufficient Federal Post Card Applications (FPCA) and Federal Write-in Absentee Ballots (FWAB) on hand to support their unit personnel? (Electronic or paper forms)",
+          reference: {
+            text: "MCO 1742.1C, Chap 3, par 13; Chap 6, par 2a and 2b",
+          },
+        },
+        {
+          number: "0310",
+          text: "Is the UVAO providing the FPCA (electronic or paper) to all unit personnel during the unit's check-in and check-out process, and during all pre-deployment briefs?",
+          reference: {
+            text: "MCO 1742.1C, Chap 3, par 12 and 19",
+          },
+        },
+        {
+          number: "0311",
+          text: "Is the UVAO providing the FPCA (electronic or paper) by 15 January of each calendar year, and additional copies by 15 July during even numbered years to all personnel in the unit?",
+          reference: {
+            text: "DoDI 1000.04, 3.1.b(7)(b); MCO 1742.1C, Chap 3, par 12",
+          },
+        },
+        {
+          number: "0312",
+          text: "Is the UVAO familiar with, or can locate the required procedures within the reference to be used when military prisoners desire to vote?",
+          reference: {
+            text: "MCO 1742.1C, Chap 3, par 24",
+          },
+        },
+        {
+          number: "0313",
+          text: "Does the UVAO display voting posters and all other relevant voting information received from FVAP, the HQMC SVAO, and the higher headquarters MCVAO throughout the organization's common areas?",
+          reference: {
+            text: "MCO 1742.1C, Chap 3, par 3",
+          },
+        },
+        {
+          number: "0314",
+          text: "Does the UVAO maintains an active FVAP Portal account and utilizes the portal to submit all quarterly voting assistance metrics reports to FVAP?",
+          reference: {
+            text: "DoDI 1000.04 3.1.b(7)(c); MCO 1742.1C, Chap 3, par 4",
+          },
+        },
+        {
+          number: "0315",
+          text: "Does the UVAO maintain copies (electronic or paper) of all submitted required quarterly voting assistance metrics reports in accordance with record schedule 1000-35 for a period of three (3) years, and provide a copy to the appropriate higher headquarters MCVAO?",
+          reference: {
+            text: "DoDI 1000.04 3.1.b(7)(c); MCO 1742.1C, Chap 3, par 5",
+          },
+        },
+        {
+          number: "0316",
+          text: "Is the UVAO within the maximum (200) number of eligible voters a UVAO can represent? If more than (200) unit members, is/are there additional Voting Assistance Officers assigned? If a Training Command, Officer Candidates School or MCRD, is there a HQMC approved local policy that ensures adequate voting assistance to student personnel?",
+          reference: {
+            text: "DoDI 1000.04, 3.1.b(1); MCO 1742.1C, Chap 3, par 18",
+          },
+        },
+      ],
+    },
+    {
+      id: "04",
+      title: "Recruiting Stations/Recruiting Sub-Stations (RS/RSS)",
+      note: "Applies to all Marine Corps Recruiting Commands.",
+      questions: [
+        {
+          number: "0401",
+          text: "Does the RS/RSS offer the Voter Registration Information Form (DD 2645) and a National Mail Voter Registration Form (NVRF) to anyone receiving services and assistance?",
+          reference: {
+            text: "DoDI 1000.04, 3.5.b; MCO 1742.1C, Chap 4, par 1a and 1b",
+          },
+        },
+        {
+          number: "0402",
+          text: "Does the RS/RSS provide assistance to prospective enlistees and eligible citizens in completing NVRF applications?",
+          reference: {
+            text: "DoDI 1000.04, 3.5.b; MCO 1742.1C, Chap 4, par 1b",
+          },
+        },
+        {
+          number: "0403",
+          text: "Does the RS/RSS accept completed voter registration forms and send them to the appropriate State election official by the State's deadline?",
+          reference: {
+            text: "DoDI 1000.04, 3.5.b(2); MCO 1742.1C, Chap 4, par 1c",
+          },
+        },
+        {
+          number: "0404",
+          text: "Does the RS/RSS provide to each eligible citizen, whether a prospective enlistee or not, the same degree of assistance for the completion of the registration application form as is provided by the office for the completion of its own forms (i.e., application for enlistment) unless the person refuses such assistance?",
+          reference: {
+            text: "DoDI 1000.04, 3.5.b(1)(b); MCO 1742.1C, Chap 4, par 1d",
+          },
+        },
+        {
+          number: "0405",
+          text: "Does the RS/RSS maintain an active FVAP Admin Portal account and utilizes the admin portal to submit quarterly voter assistance metrics reports and the recruiter registration summary reports to FVAP?",
+          reference: {
+            text: "DoDI 1000.04 3.1.b(7)(c); MCO 1742.1C, Chap 4, par 1e",
+          },
+        },
+        {
+          number: "0406",
+          text: "Does the RS/RSS maintain records (electronic or paper) pertaining to voter registration assistance or activities in accordance with record schedule 1000-35 for a period of three (3) years, and provide a copy to the higher headquarters MCVAO?",
+          reference: {
+            text: "DoDI 1000.04 3.5.b(3); MCO 1742.1C, Chap 4, par 1e",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 // Map of all FAC checklists
 const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   pes: pesChecklist,
@@ -2212,6 +3812,13 @@ const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   "legal-administration": legalAdministrationChecklist,
   "sponsorship-program": sponsorshipProgramChecklist,
   "military-awards": militaryAwardsChecklist,
+  "postal-affairs": postalAffairsChecklist,
+  "force-preservation-council": forcePreservationCouncilChecklist,
+  "records-management": recordsManagementChecklist,
+  "reports-management": reportsManagementChecklist,
+  "separation-retirement": separationRetirementChecklist,
+  "transition-readiness": transitionReadinessChecklist,
+  "voting-assistance": votingAssistanceChecklist,
 };
 
 // Helper functions

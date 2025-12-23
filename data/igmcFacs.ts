@@ -16,12 +16,10 @@ export type FACSlug =
   | "military-awards"
   | "pes"
   | "postal-military"
-  | "postal-organization"
   | "records-management"
   | "reports-management"
   | "separation-retirement"
   | "trp"
-  | "utm"
   | "voting-assistance";
 
 export interface FunctionalAreaChecklist {
@@ -170,16 +168,6 @@ export const functionalAreaChecklists: FunctionalAreaChecklist[] = [
     externalUrl: FACS_BASE_URL,
   },
   {
-    name: "Postal Affairs and Official Mail Program - Organization",
-    slug: "postal-organization",
-    category: "CoRE",
-    faNumber: "5110.2",
-    sponsor: "M&RA",
-    sponsorAbbrev: "MF",
-    effectiveDate: "6/3/2025",
-    externalUrl: FACS_BASE_URL,
-  },
-  {
     name: "Records Management",
     slug: "records-management",
     category: "CoRE",
@@ -217,16 +205,6 @@ export const functionalAreaChecklists: FunctionalAreaChecklist[] = [
     sponsor: "M&RA",
     sponsorAbbrev: "MF",
     effectiveDate: "5/15/2025",
-    externalUrl: FACS_BASE_URL,
-  },
-  {
-    name: "Unit Training Management (UTM)",
-    slug: "utm",
-    category: "CoRE",
-    faNumber: "1553.3",
-    sponsor: "TECOM",
-    sponsorAbbrev: "SD",
-    effectiveDate: "9/23/2025",
     externalUrl: FACS_BASE_URL,
   },
   {
