@@ -134,6 +134,8 @@ export const commonReferenceUrls: Record<string, string> = {
   "MARADMIN 359/25": "https://www.marines.mil/News/Messages/Messages-Display/Article/4262230/updated-guidance-for-processing-unsubmitted-defense-travel-system-travel-vouche/",
   "MARADMIN 601/24": "https://www.marines.mil/News/Messages/Messages-Display/Article/4000417/directed-usage-of-the-unit-diarymanpower-integrated-personnel-service-udmips-fo/",
   "MARADMINS 106/24": "https://www.marines.mil/News/Messages/Messages-Display/Article/3689532/2024-secretary-of-defense-field-depot-and-software-maintenance-awards/",
+  "MARADMIN 619/14": "https://www.marines.mil/News/Messages/Messages-Display/Article/896817/hardship-duty-pay-tempo-hdp-t-program-details/",
+  "MARADMIN 661/19": "https://www.marines.mil/News/Messages/Messages-Display/Article/2029557/manpower-audit-advisory-1-19-audit-compensating-controls-to-dependency-applicat/",
 
   // MCTFSPRIUM - Add specific chapter URLs as available
   "MCTFSPRIUM": "",
