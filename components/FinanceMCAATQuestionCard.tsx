@@ -2,7 +2,6 @@ import type { FinanceMCAATQuestion } from "../data/financeMcaatQuestions";
 
 type Props = {
   question: FinanceMCAATQuestion;
-  index: number;
 };
 
 // Applicability badge component
@@ -20,7 +19,7 @@ function ApplicabilityBadge({ label, active }: { label: string; active: boolean 
   );
 }
 
-export default function FinanceMCAATQuestionCard({ question, index }: Props) {
+export default function FinanceMCAATQuestionCard({ question }: Props) {
   return (
     <div className="rounded-lg border border-black/5 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-black/30">
       <div className="flex gap-3">

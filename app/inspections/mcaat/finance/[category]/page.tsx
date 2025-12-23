@@ -1,14 +1,12 @@
 import { notFound } from "next/navigation";
 import {
   financeCategories,
-  financeMcaatQuestions,
   getFinanceQuestionsByCategory,
-  type FinanceCategorySlug,
 } from "../../../../../data/financeMcaatQuestions";
 import FinanceMCAATCategoryContent from "../../../../../components/FinanceMCAATCategoryContent";
 
 type Props = {
-  params: Promise<{ category: string }>;
+  params: { category: string };
 };
 
 // Generate static params for all finance categories
@@ -24,8 +22,8 @@ function getCategoryBySlug(slug: string) {
 }
 
 // Generate metadata for each category page
-export async function generateMetadata({ params }: Props) {
-  const { category: slug } = await params;
+export function generateMetadata({ params }: Props) {
+  const { category: slug } = params;
   const category = getCategoryBySlug(slug);
 
   if (!category) {
@@ -38,8 +36,8 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-export default async function FinanceMCAATCategoryPage({ params }: Props) {
-  const { category: slug } = await params;
+export default function FinanceMCAATCategoryPage({ params }: Props) {
+  const { category: slug } = params;
   const category = getCategoryBySlug(slug);
 
   if (!category) {
