@@ -53,6 +53,8 @@ export const commonReferenceUrls: Record<string, string> = {
   "DoDFMR Vol 7A, Ch 25": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_25.pdf",
   "DoDFMR Vol. 7A, Chap. 26": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_26.pdf",
   "DoDFMR Vol 7A, Chap 26": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_26.pdf",
+  "DoDFMR Vol. 7A, Chap 26": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_26.pdf",
+  "DoDFMR, Vol. 7A, Chap. 26": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_26.pdf",
   "DoDFMR VOL 7A, CHAP. 26": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_26.pdf",
   "DoDFMR Vol. 7A, Chap. 27": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_27.pdf",
   "DoDFMR Vol 7A, Chap. 27": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_27.pdf",
@@ -68,6 +70,7 @@ export const commonReferenceUrls: Record<string, string> = {
   "Chap. 58": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_58.pdf",
   "DoDFMR Vol. 7A, Chap. 65": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_65.pdf",
   "DoDFMR Vol 7A, Chap 65": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_65.pdf",
+  "DoDFMR Vol. 7A, Chap 65": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_65.pdf",
 
   // DoDFMR Volume 1
   "DoDFMR Vol. 1, Chap. 9": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/01/01_09.pdf",
@@ -543,7 +546,7 @@ export const mcaatQuestions: MCCATCategory[] = [
           {
             id: 44,
             question: "Is HDP reported IAW applicable regulations?",
-            reference: "DoDFMR Vol. 7A, Chap. 17, par. 1702, Fig. 17-1, Table 17-1; MARADMIN 092/21; MARAMDIN 619/14; MCTFSPRIUM, 9-90801, 9-90802, 9-90803, Table 9-8"
+            reference: "DoDFMR Vol. 7A, Chap. 17, par. 1702, Fig. 17-1, Table 17-1; MARADMIN 092/21; MARADMIN 619/14; MCTFSPRIUM, 9-90801, 9-90802, 9-90803, Table 9-8"
           },
           {
             id: 45,
@@ -643,7 +646,7 @@ export const mcaatQuestions: MCCATCategory[] = [
           {
             id: 27,
             question: "Is the unit validating HDP for exercises, operations, or deployments is reported IAW applicable regulations by the reporting unit?",
-            reference: "DoDFMR Vol. 7A, Chap. 17, par. 1702, Fig. 17-1, Table 17-1; MCTFSPRIUM, 1-10111, 9-90801, 9-90802 and 9-90803, Table 9-8; MARADMIN 092/21; MARAMDIN 619/14"
+            reference: "DoDFMR Vol. 7A, Chap. 17, par. 1702, Fig. 17-1, Table 17-1; MCTFSPRIUM, 1-10111, 9-90801, 9-90802 and 9-90803, Table 9-8; MARADMIN 092/21; MARADMIN 619/14"
           },
           {
             id: 28,
