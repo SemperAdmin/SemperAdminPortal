@@ -13,7 +13,7 @@ export interface FACVideoResource extends FACResource {
 
 export interface FACSME {
   name: string;
-  email: string;
+  email?: string;
   phone?: string;
 }
 
