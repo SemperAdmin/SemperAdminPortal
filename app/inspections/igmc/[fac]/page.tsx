@@ -5,6 +5,11 @@ import {
   getFACBySlug,
   type FACCategory,
 } from "../../../../data/igmcFacs";
+import {
+  getFACChecklistBySlug,
+  hasFACChecklist,
+} from "../../../../data/igmcFacChecklists";
+import FACChecklistContent from "../../../../components/FACChecklistContent";
 
 // Generate static params for all FACs
 export function generateStaticParams() {
@@ -13,7 +18,19 @@ export function generateStaticParams() {
   }));
 }
 
-// Category badge component
+// Generate metadata
+export function generateMetadata({ params }: { params: { fac: string } }) {
+  const fac = getFACBySlug(params.fac);
+  if (!fac) {
+    return { title: "FAC Not Found" };
+  }
+  return {
+    title: `${fac.name} - IGMC Functional Area Checklist`,
+    description: `IGMC inspection checklist for ${fac.name} (FA ${fac.faNumber})`,
+  };
+}
+
+// Category badge component (used when no checklist data available)
 function CategoryBadge({ category }: { category: FACCategory }) {
   const styles = {
     CoRE: "bg-[var(--sa-navy)] text-white",
@@ -39,18 +56,22 @@ function CategoryBadge({ category }: { category: FACCategory }) {
   );
 }
 
-export default async function FACPage({
-  params,
-}: {
-  params: Promise<{ fac: string }>;
-}) {
-  const { fac: slug } = await params;
-  const fac = getFACBySlug(slug);
+export default function FACPage({ params }: { params: { fac: string } }) {
+  const fac = getFACBySlug(params.fac);
 
   if (!fac) {
     notFound();
   }
 
+  // Check if we have checklist data for this FAC
+  const checklist = getFACChecklistBySlug(fac.slug);
+
+  // If we have checklist data, render the full checklist component
+  if (checklist) {
+    return <FACChecklistContent fac={fac} checklist={checklist} />;
+  }
+
+  // Otherwise, render the placeholder page
   return (
     <div className="space-y-6">
       {/* Header with back link */}
