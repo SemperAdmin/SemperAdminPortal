@@ -222,6 +222,39 @@ const sharePointLinks = [
   { title: "TASO Mainframe", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/MCEN_SUPPORT_MCCOG/SitePages/Mainframe-Home.aspx", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
 ];
 
+// More Great Links - alphabetically ordered
+const moreGreatLinks = [
+  { title: "Citi Manager", href: "https://home.cards.citidirect.com/CommercialCard/login", icon: <LinkIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "City Pair Program (CPP)", href: "https://www.gsa.gov/travel/plan-a-trip/transportation-airfare-rates-pov-rates-etc/airfare-rates-city-pair-program", icon: <GlobeIcon className="h-5 w-5" /> },
+  { title: "Cutting Scores", href: "https://www.manpower.marines.mil/Manpower-Management/Performance-Branch/Promotion-Section/Enlisted-Promotions/#tab/sergeants-and-below", icon: <ChartIcon className="h-5 w-5" /> },
+  { title: "Defense Travel Management Office (DTMO)", href: "https://www.travel.dod.mil/", icon: <GlobeIcon className="h-5 w-5" /> },
+  { title: "DoD SAFE", href: "https://safe.apps.mil/", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "EDIPI to SSN Tool", href: "https://www2.manpower.usmc.mil/edipi/", icon: <LinkIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Electronic Benchbook", href: "https://www.jagcnet.army.mil/EBB/", icon: <FileTextIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Electronic Health Assessment", href: "https://eha.health.mil/EHA/", icon: <ClipboardIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "FAST Tool", href: "https://fast.mfr.nps.edu/", icon: <LinkIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Functional Area Checklists (FACS)", href: "https://www.igmc.marines.mil/Divisions/Inspections-Division/Checklists/", icon: <ClipboardIcon className="h-5 w-5" /> },
+  { title: "Game Changer", href: "https://gamechanger.advana.data.mil/", icon: <LinkIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "GSA SmartPay Program APC Forms", href: "https://www.citibank.com/tts/sa/federal-government-program-administrators-guides-and-forms/gsa.html", icon: <FileTextIcon className="h-5 w-5" /> },
+  { title: "Inspector General Connections", href: "https://www.igmc.marines.mil/Divisions/Connections/", icon: <LinkIcon className="h-5 w-5" /> },
+  { title: "Intelink", href: "https://intelshare.intelink.gov/my.policy", icon: <GlobeIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Manpower & Reserve Affairs Site", href: "https://www.manpower.marines.mil/", icon: <GlobeIcon className="h-5 w-5" /> },
+  { title: "MCA Information Awards", href: "https://www.information.marines.mil/MCA-Awards/", icon: <LinkIcon className="h-5 w-5" /> },
+  { title: "MCILAP", href: "https://www.iandl.marines.mil/Resources/MCILAP/", icon: <LinkIcon className="h-5 w-5" /> },
+  { title: "Medical Readiness Reporting System (MRRS)", href: "https://mrrs.dc3n.navy.mil/mrrs/secure/welcome.m", icon: <ClipboardIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "MHS GENESIS", href: "https://myaccess.dmdc.osd.mil/identitymanagement/app/login", icon: <LinkIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Microsoft 365 Roadmap (DoD)", href: "https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=%5b%22DoD%22%5d", icon: <GlobeIcon className="h-5 w-5" /> },
+  { title: "Military One Source", href: "https://www.militaryonesource.mil/", icon: <GlobeIcon className="h-5 w-5" /> },
+  { title: "NARA Military Service Records", href: "https://www.archives.gov/veterans/military-service-records", icon: <FolderIcon className="h-5 w-5" /> },
+  { title: "Naval Letter Format Generator", href: "https://marines.dev/navalletter/", icon: <FileTextIcon className="h-5 w-5" /> },
+  { title: "Officer Naval and Enlistment Programs", href: "https://www.mcrc.marines.mil/Marine-Officer/Officer-Naval-Enlisted-Applicants/", icon: <UsersIcon className="h-5 w-5" /> },
+  { title: "Periodic Health Assessment", href: "https://eha.health.mil/EHA/", icon: <ClipboardIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Personnel Administration School", href: "https://www.mccsss.marines.mil/Schools/Personnel-Administration-School/", icon: <UsersIcon className="h-5 w-5" /> },
+  { title: "PFT/CFT Calculator", href: "https://www.hqmc.marines.mil/portals/211/fitnesscalc/calcmini.html", icon: <ChartIcon className="h-5 w-5" /> },
+  { title: "Program Templates", href: "https://www.pendleton.marines.mil/Main-Menu/Staff-Agencies/Communication-Strategy-and-Operations-COMMSTRAT/Graphics/Program_Templates/", icon: <FileTextIcon className="h-5 w-5" /> },
+  { title: "Red Cross Emergency Communication", href: "https://www.redcross.org/get-help/military-families/emergency-communication.html", icon: <LinkIcon className="h-5 w-5" /> },
+];
+
 const financeChecklist: CatalogGroup[] = [
   {
     name: "MCAAT Finance Checklist",
@@ -290,6 +323,21 @@ export default function MCAATPage() {
         </div>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {sharePointLinks.map((link) => (
+            <QuickLinkCard key={link.title} {...link} />
+          ))}
+        </div>
+      </section>
+
+      {/* More Great Links Section */}
+      <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+        <div className="flex items-center gap-2 mb-4">
+          <LinkIcon className="h-5 w-5 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+            More Great Links
+          </h2>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {moreGreatLinks.map((link) => (
             <QuickLinkCard key={link.title} {...link} />
           ))}
         </div>
