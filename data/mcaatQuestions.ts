@@ -1830,9 +1830,231 @@ export const mcaatQuestions: MCCATCategory[] = [
     name: "Special & Hazardous Duty Pay",
     description: "SDA, AIP, VSI, flight pay, dive pay, jump pay, and demolition duty pay certification and reporting.",
     sections: [
-      { unitType: "REPORTING", questions: [] },
-      { unitType: "IPAC", questions: [] },
-      { unitType: "SUPPORTING", questions: [] }
+      {
+        unitType: "REPORTING",
+        questions: [
+          {
+            id: 1,
+            question: "Is Special Duty Assignment Pay (SDA) reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 15; MCTFSPRIUM, 9-90200"
+          },
+          {
+            id: 2,
+            question: "Is SDA reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 3,
+            question: "Is Assignment Incentive Pay (AIP) reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 16; MCTFSPRIUM, 9-90201"
+          },
+          {
+            id: 4,
+            question: "Is AIP reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 5,
+            question: "Is Voluntary Separation Incentive (VSI) reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 35; MCTFSPRIUM, 9-91600"
+          },
+          {
+            id: 6,
+            question: "Is Aviation Career Incentive Pay (ACIP) / Flight Pay reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 22; MCTFSPRIUM, 9-90100"
+          },
+          {
+            id: 7,
+            question: "Is Flight Pay reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 8,
+            question: "Is Dive Pay reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 24; MCTFSPRIUM, 9-90101"
+          },
+          {
+            id: 9,
+            question: "Is Dive Pay reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 10,
+            question: "Is Parachute / Jump Pay reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 24; MCTFSPRIUM, 9-90101"
+          },
+          {
+            id: 11,
+            question: "Is Jump Pay reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 12,
+            question: "Is Demolition Duty Pay reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 24; MCTFSPRIUM, 9-90101"
+          },
+          {
+            id: 13,
+            question: "Is Demolition Duty Pay reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 14,
+            question: "Is the unit ensuring key supporting documents for hazardous duty pay are signed by the appropriate certifying authority?",
+            reference: "DoDFMR Vol. 7A, Chap. 24; MCTFSPRIUM, 9-90101"
+          },
+          {
+            id: 15,
+            question: "Are Proficiency Pay entitlements reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 19; MCTFSPRIUM, 9-90900"
+          },
+          {
+            id: 16,
+            question: "Is Proficiency Pay reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          }
+        ]
+      },
+      {
+        unitType: "IPAC",
+        questions: [
+          {
+            id: 17,
+            question: "Is Special Duty Assignment Pay (SDA) reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 15; MCTFSPRIUM, 9-90200"
+          },
+          {
+            id: 18,
+            question: "Is SDA reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 19,
+            question: "Is Assignment Incentive Pay (AIP) reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 16; MCTFSPRIUM, 9-90201"
+          },
+          {
+            id: 20,
+            question: "Is AIP reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 21,
+            question: "Is Aviation Career Incentive Pay (ACIP) / Flight Pay reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 22; MCTFSPRIUM, 9-90100"
+          },
+          {
+            id: 22,
+            question: "Is Flight Pay reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 23,
+            question: "Is Dive Pay reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 24; MCTFSPRIUM, 9-90101"
+          },
+          {
+            id: 24,
+            question: "Is Dive Pay reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 25,
+            question: "Is Parachute / Jump Pay reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 24; MCTFSPRIUM, 9-90101"
+          },
+          {
+            id: 26,
+            question: "Is Jump Pay reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 27,
+            question: "Is Demolition Duty Pay reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 24; MCTFSPRIUM, 9-90101"
+          },
+          {
+            id: 28,
+            question: "Is Demolition Duty Pay reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 29,
+            question: "Are Proficiency Pay entitlements reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 19; MCTFSPRIUM, 9-90900"
+          },
+          {
+            id: 30,
+            question: "Is Proficiency Pay reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          }
+        ]
+      },
+      {
+        unitType: "SUPPORTING",
+        questions: [
+          {
+            id: 31,
+            question: "Is the unit ensuring key supporting documents for SDA are submitted to and received by the reporting unit within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 32,
+            question: "Is the unit validating SDA is reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol. 7A, Chap. 15; MCTFSPRIUM, 1-10111, 9-90200"
+          },
+          {
+            id: 33,
+            question: "Is the unit ensuring key supporting documents for AIP are submitted to and received by the reporting unit within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 34,
+            question: "Is the unit validating AIP is reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol. 7A, Chap. 16; MCTFSPRIUM, 1-10111, 9-90201"
+          },
+          {
+            id: 35,
+            question: "Is the unit ensuring key supporting documents for Flight Pay are submitted to and received by the reporting unit within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 36,
+            question: "Is the unit validating Flight Pay is reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol. 7A, Chap. 22; MCTFSPRIUM, 1-10111, 9-90100"
+          },
+          {
+            id: 37,
+            question: "Is the unit ensuring key supporting documents for Dive Pay are submitted to and received by the reporting unit within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 38,
+            question: "Is the unit validating Dive Pay is reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol. 7A, Chap. 24; MCTFSPRIUM, 1-10111, 9-90101"
+          },
+          {
+            id: 39,
+            question: "Is the unit ensuring key supporting documents for Jump Pay are submitted to and received by the reporting unit within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 40,
+            question: "Is the unit validating Jump Pay is reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol. 7A, Chap. 24; MCTFSPRIUM, 1-10111, 9-90101"
+          },
+          {
+            id: 41,
+            question: "Is the unit ensuring key supporting documents for Demolition Duty Pay are submitted to and received by the reporting unit within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 42,
+            question: "Is the unit ensuring key supporting documents that validate special and hazardous duty pay entitlements are maintained on file for audit, and in accordance with retention policies?",
+            reference: "DoDFMR, Vol. 1, Chap. 9; SECNAV M-5210.1; MARADMIN 601/24"
+          }
+        ]
+      }
     ]
   },
   {
