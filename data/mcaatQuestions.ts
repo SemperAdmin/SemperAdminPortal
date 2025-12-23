@@ -99,7 +99,6 @@ export const mcaatQuestions: MCCATCategory[] = [
       {
         unitType: "REPORTING",
         questions: [
-          // Example format - add your REPORTING questions here:
           {
             id: 1,
             question: "Does the reporting unit have access to other service LES, via DFAS MilPay Repository (DMR), in order to assist member married to non Marine member audits?",
@@ -107,20 +106,101 @@ export const mcaatQuestions: MCCATCategory[] = [
             link: "https://dmoapps.csd.disa.mil/MilPayRepository/Warning.aspx?DFAS=bbd7d645-5487-4bec-9871-b73f079c1fc9",
             video: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6218A6BECBEC"
           },
-          // Add more REPORTING questions...
+          {
+            id: 2,
+            question: "Is the Travel Flag changed to 'N' and are other entitlements adjusted, as needed, NLT the 15th day, when a member fails to provide the required documents to claim child(ren) over the age of 21 as a dependent?",
+            reference: "DoDFMR Vol. 7A, Chap 26, par. 3.1.1.2; MCO 1751.3 CH-1, par. 6; MCTFSPRIUM, 12-120103",
+            link: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders%2FEnterprise%2BUser%2BReports%2FHQMC%2FSemper%2BAdmin%2FMCAAT%2FDependent%2BOver%2B21"
+          },
+          {
+            id: 3,
+            question: "Is a current Member to Member data sheet filed in OMPF? Note: Data sheet must correspond with the current household status and spouse's current military status. Additionally, marriage certificate and birth certificate for children whether or not claimed for BAH or travel purposes must be resident in each member's OMPF.",
+            reference: "MCTFSPRIUM, 12-120103 and Table 12-4, MARADMIN 015/20",
+            link: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders%2FEnterprise%2BUser%2BReports%2FHQMC%2FSemper%2BAdmin%2FMCAAT%2FMember%2BMarried%2BTo%2BMember%2528M2M%2529%2BAudit"
+          },
+          {
+            id: 4,
+            question: "Are member married to member (M2M) pay and entitlements audited for accuracy upon the occasion outlined in the reference?",
+            reference: "MCTFSPRIUM, 12-120103",
+            link: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/MISSA%252C%2BHQMC/MISSO%2B6/Dashboards/Semper%2BAdmin/MCAAT/MCAAT%2BReports/01.%2BAudit/Member%2BMarried%2BTo%2BMember%2528M2M%2529%2BAudit"
+          },
+          {
+            id: 5,
+            question: "Does the organization maintain and retain supporting documents on file for audit and to validate the completion of the member married to member audit in accordance with retention policies?",
+            reference: "MCTFSPRIUM, 12-120103; MARADMIN 601/24",
+            link: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/MISSA%252C%2BHQMC/MISSO%2B6/Dashboards/Semper%2BAdmin/MCAAT/MCAAT%2BReports/01.%2BAudit/Member%2BMarried%2BTo%2BMember%2528M2M%2529%2BAudit"
+          },
+          {
+            id: 7,
+            question: "Is the NAVMC 10922 properly completed and are key supporting documents that validate dependents (i.e. NAVMC 10922, Marriage Cert, Birth Cert, Divorce Decree) filed in OMPF within 10 working days from the effective date?",
+            reference: "MCO 1751.3; MARADMIN 015/20; MARADMIN 661/19",
+            link: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders%2FEnterprise%2BUser%2BReports%2FHQMC%2FSemper%2BAdmin%2FMCAAT%2F10922%2BMONTHLY%2BVERIFICATION"
+          },
+          {
+            id: 8,
+            question: "Is the unit completing member married to member (M2M) audits, either in person or telephonically, within 60 days of the join date, and that telephonic audits are verified by an E6 or above?",
+            reference: "MCTFSPRIUM, 12-120103",
+            link: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/MISSA%252C%2BHQMC/MISSO%2B6/Dashboards/Semper%2BAdmin/MCAAT/MCAAT%2BReports/01.%2BAudit/Member%2BMarried%2BTo%2BMember%2528M2M%2529%2BAudit"
+          },
+          {
+            id: 9,
+            question: "Is the NAVMC 10922 properly completed and are key supporting documents that validate dependents (i.e. NAVMC 10922, Marriage Cert, Birth Cert, Divorce Decree) filed in OMPF within 10 working days from the effective date?",
+            reference: "MCO 1751.3 w/Ch-1 par. 1f; MARADMIN 015/20; MARADMIN 661/19",
+            link: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders%2FEnterprise%2BUser%2BReports%2FHQMC%2FSemper%2BAdmin%2FMCAAT%2F10922%2BMONTHLY%2BVERIFICATION"
+          }
         ]
       },
       {
         unitType: "IPAC",
         questions: [
-          // Add your IPAC questions here
+          {
+            id: 6,
+            question: "Is the NAVMC 10922 properly completed and are key supporting documents that validate dependents (i.e. NAVMC 10922, Marriage Cert, Birth Cert, Divorce Decree) filed in OMPF within 10 working days from the date reported on unit diary?",
+            reference: "MCO 1751.3; MARADMIN 015/20; MARADMIN 661/19",
+            link: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders%2FEnterprise%2BUser%2BReports%2FHQMC%2FSemper%2BAdmin%2FMCAAT%2F10922%2BMONTHLY%2BVERIFICATION"
+          },
+          {
+            id: 10,
+            question: "Is the unit completing member married to member (M2M) audits, either in person or telephonically, within 60 days of the join date, and that telephonic audits are verified by an E6 or above?",
+            reference: "MCTFSPRIUM, 12-120103",
+            link: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/MISSA%252C%2BHQMC/MISSO%2B6/Dashboards/Semper%2BAdmin/MCAAT/MCAAT%2BReports/01.%2BAudit/Member%2BMarried%2BTo%2BMember%2528M2M%2529%2BAudit"
+          },
+          {
+            id: 11,
+            question: "Is the Travel Flag changed to 'N' and are other entitlements adjusted, as needed, NLT the 15th day, when a member fails to provide the required documents to claim child(ren) over the age of 21 as a dependent?",
+            reference: "DoDFMR Vol. 7A, Chap 26, par. 3.1.1.2; MCO 1751.3 CH-1, par. 6; MCTFSPRIUM, 12-120103",
+            link: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders%2FEnterprise%2BUser%2BReports%2FHQMC%2FSemper%2BAdmin%2FMCAAT%2FDependent%2BOver%2B21"
+          },
+          {
+            id: 12,
+            question: "Are member married to member (M2M) pay and entitlements audited for accuracy upon the occasion outlined in the reference?",
+            reference: "MCTFSPRIUM, 12-120103",
+            link: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/MISSA%252C%2BHQMC/MISSO%2B6/Dashboards/Semper%2BAdmin/MCAAT/MCAAT%2BReports/01.%2BAudit/Member%2BMarried%2BTo%2BMember%2528M2M%2529%2BAudit"
+          },
+          {
+            id: 13,
+            question: "Is a current Member to Member data sheet filed in OMPF? Note: Data sheet must correspond with the current household status and spouse's current military status. Additionally, marriage certificate and birth certificate for children whether or not claimed for BAH or travel purposes must be resident in each member's OMPF.",
+            reference: "MARADMIN 015/20; MCTFSPRIUM, 12-120103, Table 12-4",
+            link: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/MISSA%252C%2BHQMC/MISSO%2B6/Dashboards/Semper%2BAdmin/MCAAT/MCAAT%2BReports/01.%2BAudit/Member%2BMarried%2BTo%2BMember%2528M2M%2529%2BAudit"
+          },
+          {
+            id: 14,
+            question: "Does the organization maintain and retain supporting documents on file for audit and to validate the completion of the member married to member audit in accordance with retention policies?",
+            reference: "MCTFSPRIUM, 12-120103; MARADMIN 601/24",
+            link: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/MISSA%252C%2BHQMC/MISSO%2B6/Dashboards/Semper%2BAdmin/MCAAT/MCAAT%2BReports/01.%2BAudit/Member%2BMarried%2BTo%2BMember%2528M2M%2529%2BAudit"
+          },
+          {
+            id: 15,
+            question: "Does the reporting unit have access to other service LES, via DFAS MilPay Repository (DMR), in order to assist member to non Marine member audits?",
+            reference: "MCTFSPRIUM 12-120103",
+            link: "https://dmoapps.csd.disa.mil/MilPayRepository/Warning.aspx?DFAS=bbd7d645-5487-4bec-9871-b73f079c1fc9",
+            video: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6218A6BECBEC"
+          }
         ]
       },
       {
         unitType: "SUPPORTING",
-        questions: [
-          // Add your SUPPORTING questions here
-        ]
+        questions: []
       }
     ]
   },
