@@ -681,11 +681,209 @@ export const bodyCompositionChecklist: FACChecklistData = {
   ],
 };
 
+// Casualty Affairs Checklist Data
+export const casualtyAffairsChecklist: FACChecklistData = {
+  slug: "casualty-affairs",
+  applicabilityNote:
+    "This checklist is applicable to all commands down to the battalion, squadron, and I&I level.",
+  revisedDate: "March 21, 2025",
+  sme: {
+    name: "Master Sergeant Jenny Cartagena",
+    email: "jenny.cartagena@usmc.mil",
+    phone: "(703) 784-9512",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "General",
+      questions: [
+        {
+          number: "0101",
+          text: "Does the command have a Casualty Assistance Command Representative (CACR) appointed in writing?",
+          reference: {
+            text: "MCO 3040.4, chap 1, par 2g; chap 2, par 3",
+          },
+        },
+        {
+          number: "0102",
+          text: "Is the CACR maintaining Casualty Assistance Calls Officer (CACO) annual training status rosters of eligible SNCOs and Officers, and training rosters of authorized casualty reporting personnel?",
+          reference: {
+            text: "MCO 3040.4, chap 2, par 3a(5-6)",
+          },
+        },
+        {
+          number: "0103",
+          text: "Does the command have a process in place that ensures all personnel have made an election or verified/updated their SGLI beneficiary in SOES?",
+          reference: {
+            text: "MARADMIN 076/22",
+          },
+        },
+        {
+          number: "0104",
+          text: "Is the command ensuring that all Marines update information and elections on the DD Form 93/Record of Emergency Data (RED)?",
+          reference: {
+            text: "MCO 3040.4, par 4.c(8)(b)",
+          },
+        },
+        {
+          number: "0105",
+          text: "Is the CACR documenting the telephonic contact with the HQMC Casualty Section (MFPC) prior to releasing a Personnel Casualty Report (PCR) and submitting the PCR to MFPC within one hour of the voice notification?",
+          reference: {
+            text: "MCO 3040.4, chap 2, par 4a and 5a; chap 3, par 1b and 4a",
+          },
+        },
+        {
+          number: "0106",
+          text: "Is the CACR familiar with and properly submitting PCRs of the type, status, and categories of casualties reported, to include mass casualty incidents and deceased dependents?",
+          reference: {
+            text: "MCO 3040.4, chap 3, sect 2, figures 3-1 and 3-2",
+          },
+        },
+        {
+          number: "0107",
+          text: "Is the CACR familiar with and properly submitting both initial and supplemental PCRs regarding the circumstances under which a Marine is DUSTWUN, and the timelines associated with this status?",
+          reference: {
+            text: "MCO 3040.4, chap 8, figure 3-13",
+          },
+        },
+        {
+          number: "0108",
+          text: "Is the CACR preparing, submitting, and maintaining progress reports regarding the location and status of hospitalized Marines, if reportable, to HQMC Casualty (MFPC)?",
+          reference: {
+            text: "MCO 3040.4, chap 3",
+          },
+        },
+        {
+          number: "0109",
+          text: "Is the CACR familiar and complying with the reference in regards to reporting and classifying Special Patient cases?",
+          reference: {
+            text: "MCO 3040.4, chap 1, par 2iii",
+          },
+        },
+        {
+          number: "0110",
+          text: "Can the CACR explain the Accelerated Benefit Option (ABO) and its applicability to Marines who are diagnosed as terminally ill?",
+          reference: {
+            text: "MCO 3040.4, chap 7, sect 2, par 9; MCO 1741.8, chap 5",
+          },
+        },
+        {
+          number: "0111",
+          text: "Can the CACR explain the procedures and responsibilities for notification to the next of kin for Marines who are ill/injured?",
+          reference: {
+            text: "MCO 3040.4, chap 4, sect 2, par 2",
+          },
+        },
+        {
+          number: "0112",
+          text: "Can the CACR explain the process for initiating Invitational Travel Authorizations (ITAs) for designated individuals traveling to the bedside of a seriously ill or injured Marine and explain who is eligible for ITAs to the burial of a deceased Marine and the limitations on reimbursements?",
+          reference: {
+            text: "MCO 3040.4, chap 7, sect 2, pars 6 and 28",
+          },
+        },
+        {
+          number: "0113",
+          text: "Can the CACR explain the process and limitations for issuance of Invitational Travel Authorizations (ITAs) to eligible family members to attend unit memorial services?",
+          reference: {
+            text: "MCO 3040.4, chap 7, sect 2, par 6b; MARADMIN 500/10",
+          },
+        },
+        {
+          number: "0114",
+          text: "Can the CACR identify the required documents that must be emailed to HQMC Casualty (MFPC) in all death cases?",
+          reference: {
+            text: "MCO 3040.4, chap 2, par 5e; chap 8, sect 3, par 1",
+          },
+        },
+        {
+          number: "0115",
+          text: "Is the command properly forwarding Medical and Dental records for deaths occurring in a theater of combat operations to the Dover Port Mortuary?",
+          reference: {
+            text: "MCO 3040.4, chap 2, par 5j",
+          },
+        },
+        {
+          number: "0116",
+          text: 'Can the CACR provide evidence of coordination with the IPAC to properly "drop from the rolls" deceased Marines and validate completion?',
+          reference: {
+            text: "MCO P1070.12K w/ CH 1, (IRAM) chap 4; table 4-2",
+          },
+        },
+        {
+          number: "0117",
+          text: "Does the CACR have procedures in place to ensure the maintenance, inventory, and shipping of a deceased Marine's personal effects?",
+          reference: {
+            text: "MCO 3040.4, chap 8, sect 2, par 5a; chap 8, sect 3, par 4a and MCO 4400.201 Volume 13, chap 15-17",
+          },
+        },
+        {
+          number: "0118",
+          text: "Is the CACR familiar with death benefits payable to the survivors of deceased Marines, specifically: death gratuity, arrears of pay, life insurance, and burial and interment benefits?",
+          reference: {
+            text: "MCO 3040.4, chap 4, sect 3, sect 4; chap 7; figure 7-1",
+          },
+        },
+        {
+          number: "0119",
+          text: "Is the command aware of the benefits and entitlements associated with Marines who have died within 120 days and/or are on the T/PDRL?",
+          reference: {
+            text: "MCO 3040.4, chap 7, sect 1, par 5a; figure 4-1",
+          },
+        },
+        {
+          number: "0120",
+          text: "Is the command generating and delivering unit-level commander condolence letters to the appropriate NOK, as required?",
+          reference: {
+            text: "MCO 3040.4, chap 8, sect 4",
+          },
+        },
+        {
+          number: "0121",
+          text: "Is the command ensuring the generation of PCS travel orders to authorized family members of deceased Marines?",
+          reference: {
+            text: "JTR, Chap 5, sect 051104; MCO 3040.4, chap 7, sect 2, par 24; PAA 1-17",
+          },
+        },
+        {
+          number: "0122",
+          text: "Is the command conducting preliminary inquiries and/or command investigations, when warranted into the deaths and injuries/illnesses of Marines, as well as submitting and maintaining supplemental PCRs upon the initiation of command investigations and monthly supplemental PCRs thereafter until completion?",
+          reference: {
+            text: "MCO 3040.4, chap 2, par 4g and 5l; chap 3, sect 2, par 2b; JAGINST 5800.7F",
+          },
+        },
+        {
+          number: "0123",
+          text: "Is the command submitting and maintaining supplemental PCRs regarding the death investigation, including final summaries after the completion of a command investigation within 24 hours, and endorsements to HQMC (MFPC) to ensure delivery to NOK?",
+          reference: {
+            text: "MCO 3040.4, chap 3, sect 2, par 2e(4); chap 8, sect 3, par 7d",
+          },
+        },
+        {
+          number: "0124",
+          text: "Is the command archiving copies of PCRs for at least six years in accordance with the Freedom of Information Act (FOIA) requirements?",
+          reference: {
+            text: "MCO 3040.4, chap 3, sect 2, par 1",
+          },
+        },
+        {
+          number: "0125",
+          text: "Is the CACR ensuring assigned CACOs are submitting the initial Online CACO Report within 30 days of assignment and briefing the unit commander on the status of the Online CACO Report weekly?",
+          note: "https://www2.manpower.usmc.mil/cacov3/",
+          reference: {
+            text: "MCO 3040.4, chap 3, sect 1; chap 4, sect 1, par 3p",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 // Map of all FAC checklists
 const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   pes: pesChecklist,
   "career-planning": careerPlanningChecklist,
   "body-composition": bodyCompositionChecklist,
+  "casualty-affairs": casualtyAffairsChecklist,
 };
 
 // Helper functions
