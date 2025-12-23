@@ -84,11 +84,19 @@ export const commonReferenceUrls: Record<string, string> = {
   "JTR Chap. 10": "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/",
 
   // MCOs
+  "MCO 1000.6": "https://www.marines.mil/portals/1/Publications/MCO%201000.6.pdf",
+  "MCO 1050.16A": "https://www.marines.mil/portals/1/Publications/MCO%201050.16A.pdf?ver=2012-10-11-163555-680",
+  "MCO 1050.3J": "https://www.marines.mil/portals/1/Publications/MCO%201050.3J.pdf?ver=2017-06-20-111036-847",
   "MCO 1070.1": "https://www.marines.mil/portals/1/Publications/MCO%201070.1.pdf?ver=2019-05-16-133644-923",
-  "MCO 1900.16": "https://www.marines.mil/Portals/1/Publications/MCO%201900.16%20ADMIN%20CH-3%20(SECURED).pdf?ver=SZptuAh1jjvolL-Gf5s5CQ%3d%3d",
-  "MCO 6100.13A": "https://www.marines.mil/Portals/1/Publications/MCO%206100.13A%20W%20ADMIN%20CH-5%20(SECURED).pdf?ver=_Cd9D-v4wfAiMrAXq3Y-Mw%3d%3d",
+  "MCO 10110.47A": "https://www.marines.mil/portals/1/MCO%2010110.47A.pdf",
   "MCO 1400.32D": "https://www.marines.mil/portals/1/Publications/MCO%20P1400.32D%20W%20CH%201-2.pdf",
   "MCO P1400.32D": "https://www.marines.mil/portals/1/Publications/MCO%20P1400.32D%20W%20CH%201-2.pdf",
+  "MCO 1500.59A": "https://www.marines.mil/Portals/1/Publications/MCO%201500.59A.pdf?ver=2019-09-27-154522-420",
+  "MCO 1616.1": "https://www.marines.mil/Portals/1/Publications/MCO%201616.1.pdf?ver=2pWMQ3wSas3g628sXsBV4g%3d%3d",
+  "MCO 1620.3A": "https://www.marines.mil/portals/1/Publications/MCO%201620.3A.pdf",
+  "MCO 1751.3": "https://www.marines.mil/Portals/1/Publications/MCO%201751.3%20CH-1.pdf?ver=OwVPdeeN2m58m6-JopUjIw%3d%3d",
+  "MCO 1900.16": "https://www.marines.mil/Portals/1/Publications/MCO%201900.16%20ADMIN%20CH-3%20(SECURED).pdf?ver=SZptuAh1jjvolL-Gf5s5CQ%3d%3d",
+  "MCO 6100.13A": "https://www.marines.mil/Portals/1/Publications/MCO%206100.13A%20W%20ADMIN%20CH-5%20(SECURED).pdf?ver=_Cd9D-v4wfAiMrAXq3Y-Mw%3d%3d",
 
   // MCTFSPRIUM - Add specific chapter URLs as available
   "MCTFSPRIUM": "",
