@@ -160,36 +160,38 @@ function QuickLinkCard({ title, href, icon }: { title: string; href: string; ico
 }
 
 // Static constants defined outside component to avoid recreation on each render
-const MCAAT_SP = "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCMRA_mra_SemperAdmin/SitePages/Marine-Corps-Administrative-Analysis-Team-(MCAAT).aspx";
+const MCAAT_POAM = "https://usmc.sharepoint-mil.us/sites/DCMRA_mra_SemperAdmin/Template%20Toolbox/MCAAT%20POA%26M.xlsb?web=1";
+const MCAAT_SHAREPOINT = "https://usmc.sharepoint-mil.us/sites/DCMRA_MCAAT/SitePages/Marine-Corps-Administrative-Analyst-Team.aspx";
+const MCAAT_MARINES_MIL = "https://www.manpower.marines.mil/Plans-and-Policies/Manpower-Strategy/MCAAT/";
 
 const topLinks = [
-  { title: "MCAAT POAM", href: MCAAT_SP, icon: <ClipboardIcon className="h-5 w-5" /> },
-  { title: "FNF MCAAT SharePoint", href: MCAAT_SP, icon: <FolderIcon className="h-5 w-5" /> },
-  { title: "MCAAT Marines.mil", href: MCAAT_SP, icon: <GlobeIcon className="h-5 w-5" /> },
+  { title: "MCAAT POA&M", href: MCAAT_POAM, icon: <ClipboardIcon className="h-5 w-5" /> },
+  { title: "FMF MCAAT SharePoint", href: MCAAT_SHAREPOINT, icon: <FolderIcon className="h-5 w-5" /> },
+  { title: "MCAAT Marines.mil", href: MCAAT_MARINES_MIL, icon: <GlobeIcon className="h-5 w-5" /> },
 ];
 
 const tools = [
-  { title: "Analysis Statistics (AS)", description: "View statistical analysis and metrics for MCAAT operations", href: MCAAT_SP, icon: <ChartIcon className="h-5 w-5" />, color: "navy" as const },
-  { title: "Process Audit Case Overview (PACO)", description: "Track and manage individual audit cases", href: MCAAT_SP, icon: <ClipboardIcon className="h-5 w-5" />, color: "gold" as const },
-  { title: "Process Audit Results Overview (PAR)", description: "Review comprehensive audit results and findings", href: MCAAT_SP, icon: <FileTextIcon className="h-5 w-5" />, color: "navy" as const },
-  { title: "RUC Unit Results", description: "View results by Reporting Unit Code", href: MCAAT_SP, icon: <ChartIcon className="h-5 w-5" />, color: "gold" as const },
-  { title: "Marine Focused Unit Data Results (UFDR)", description: "Individual Marine-level data analysis", href: MCAAT_SP, icon: <UsersIcon className="h-5 w-5" />, color: "navy" as const },
-  { title: "Shared Unit Data Results (SU DR)", description: "Shared data across multiple units", href: MCAAT_SP, icon: <UsersIcon className="h-5 w-5" />, color: "gold" as const },
-  { title: "Team Analysis Results (TAR)", description: "Team-level performance and analysis", href: MCAAT_SP, icon: <ChartIcon className="h-5 w-5" />, color: "navy" as const },
-  { title: "Admin POC / POCN Compliance", description: "Point of contact compliance tracking", href: MCAAT_SP, icon: <UsersIcon className="h-5 w-5" />, color: "gold" as const },
-  { title: "Admin Schedule", description: "View and manage MCAAT schedules", href: MCAAT_SP, icon: <CalendarIcon className="h-5 w-5" />, color: "navy" as const },
+  { title: "Analysis Statistics (AS)", description: "View statistical analysis and metrics for MCAAT operations", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=930", icon: <ChartIcon className="h-5 w-5" />, color: "navy" as const },
+  { title: "Finance Audit Scores - Current FY (FAS)", description: "Current fiscal year finance audit scores", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=960", icon: <FileTextIcon className="h-5 w-5" />, color: "gold" as const },
+  { title: "Finance Audit Scores - Previous FYs (FAS)", description: "Historical finance audit scores from previous fiscal years", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=961", icon: <FileTextIcon className="h-5 w-5" />, color: "navy" as const },
+  { title: "IPAC Unit Results (UR)", description: "Installation Personnel Administration Center unit results", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=926", icon: <ChartIcon className="h-5 w-5" />, color: "gold" as const },
+  { title: "Marine Forces Reserve Unit Results (UR)", description: "MFR unit-level results and analysis", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=927", icon: <UsersIcon className="h-5 w-5" />, color: "navy" as const },
+  { title: "Stand Alone Unit Results (UR)", description: "Results for stand-alone reporting units", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=928", icon: <ChartIcon className="h-5 w-5" />, color: "gold" as const },
+  { title: "Supported Unit Results (UR)", description: "Results for supported units", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=929", icon: <ChartIcon className="h-5 w-5" />, color: "navy" as const },
+  { title: "Admin POCA / Non-Compliance", description: "Point of contact compliance tracking", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=897", icon: <UsersIcon className="h-5 w-5" />, color: "gold" as const },
+  { title: "Admin Schedule", description: "View and manage MCAAT schedules", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=890", icon: <CalendarIcon className="h-5 w-5" />, color: "navy" as const },
 ];
 
 const financeChecklist: CatalogGroup[] = [
   {
     name: "MCAAT Finance Checklist",
     items: [
-      { title: "Administrative Management", href: MCAAT_SP },
-      { title: "Fiscal Processes", href: MCAAT_SP },
-      { title: "Internal Audit Processes", href: MCAAT_SP },
-      { title: "Pay Processes", href: MCAAT_SP },
-      { title: "Separation Processes", href: MCAAT_SP },
-      { title: "Travel Processes", href: MCAAT_SP },
+      { title: "Administrative Management", href: MCAAT_SHAREPOINT },
+      { title: "Fiscal Processes", href: MCAAT_SHAREPOINT },
+      { title: "Internal Audit Processes", href: MCAAT_SHAREPOINT },
+      { title: "Pay Processes", href: MCAAT_SHAREPOINT },
+      { title: "Separation Processes", href: MCAAT_SHAREPOINT },
+      { title: "Travel Processes", href: MCAAT_SHAREPOINT },
     ],
   },
 ];
