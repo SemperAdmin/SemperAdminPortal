@@ -5,7 +5,8 @@ import { mcaatQuestions, getCategoryQuestionCount } from "../../../data/mcaatQue
 
 export default function MCAATPage() {
   const MCAAT_SP = "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCMRA_mra_SemperAdmin/SitePages/Marine-Corps-Administrative-Analysis-Team-(MCAAT).aspx";
-  const groups: CatalogGroup[] = [
+
+  const topLinksAndTools: CatalogGroup[] = [
     {
       name: "MCAAT Top Links",
       items: [
@@ -28,6 +29,9 @@ export default function MCAATPage() {
         { title: "MCAAT Admin Schedule", href: MCAAT_SP },
       ],
     },
+  ];
+
+  const financeChecklist: CatalogGroup[] = [
     {
       name: "MCAAT Finance Checklist",
       items: [
@@ -54,12 +58,15 @@ export default function MCAATPage() {
         </p>
       </div>
 
-      {/* Inspection Questions Section */}
+      {/* Top Links and Tools */}
+      <CatalogGrid groups={topLinksAndTools} columns stackTitles />
+
+      {/* Admin Inspection Questions Section */}
       <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
         <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-              Inspection Questions by Category
+              Admin Inspection Questions by Category
             </h2>
             <p className="text-sm text-zinc-600 dark:text-zinc-400">
               Select a category to view questions organized by unit type (Reporting, IPAC, Supporting)
@@ -109,8 +116,8 @@ export default function MCAATPage() {
         </div>
       </section>
 
-      {/* External Links Section */}
-      <CatalogGrid groups={groups} columns stackTitles />
+      {/* Finance Checklist Section */}
+      <CatalogGrid groups={financeChecklist} columns stackTitles />
     </div>
   );
 }
