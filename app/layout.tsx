@@ -107,23 +107,23 @@ export default function RootLayout({
               <Link href="/about" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">About</Link>
               <a href="https://semperadmin.github.io/usmc-directives-hub/" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Announcements</a>
               <a href="https://semperadmin.github.io/Sentinel/" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Apps</a>
-              <div id="sa-inspection" className="relative inspection-menu group" data-open="false">
-                <button id="sa-inspection-toggle" type="button" aria-haspopup="true" aria-expanded="false" className="peer text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Inspection</button>
-                <div id="sa-inspection-panel" className="inspection-panel hidden peer-aria-expanded:block absolute left-0 top-full mt-2 min-w-[14rem] z-[999] rounded-lg border border-black/5 bg-white p-2 shadow-lg group-hover:block group-focus-within:block dark:border-white/15 dark:bg-black/80">
-                  <Link href="/inspections/igmc" prefetch={false} className="block rounded-md px-3 py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">IGMC</Link>
-                  <Link href="/inspections/mcaat" prefetch={false} className="block rounded-md px-3 py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">MCAAT</Link>
-                  <div className="block rounded-md px-3 py-2 text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">MISSO</div>
+              <div id="sa-inspection" className="relative inspection-menu" data-open="false">
+                <button id="sa-inspection-toggle" type="button" aria-haspopup="true" aria-expanded="false" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Inspection</button>
+                <div id="sa-inspection-panel" className="hidden fixed sm:absolute left-2 right-2 sm:left-0 sm:right-auto top-14 sm:top-full sm:mt-2 min-w-[14rem] z-[999] rounded-lg border border-black/5 bg-white p-2 shadow-lg dark:border-white/15 dark:bg-black/90">
+                  <Link href="/inspections/igmc" prefetch={false} className="block rounded-md px-4 py-3 sm:px-3 sm:py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">IGMC</Link>
+                  <Link href="/inspections/mcaat" prefetch={false} className="block rounded-md px-4 py-3 sm:px-3 sm:py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">MCAAT</Link>
+                  <div className="block rounded-md px-4 py-3 sm:px-3 sm:py-2 text-[var(--sa-navy)]/50 dark:text-[var(--sa-cream)]/50">MISSO</div>
                 </div>
               </div>
               <Link href="/links" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Links</Link>
               <Link href="/reports" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Reports</Link>
               <div id="sa-roles" className="relative" data-open="false">
                 <button id="sa-roles-toggle" type="button" aria-haspopup="true" aria-expanded="false" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Roles</button>
-                <div id="sa-roles-panel" className="hidden absolute left-0 top-full mt-2 min-w-[14rem] z-[999] rounded-lg border border-black/5 bg-white p-2 shadow-lg dark:border-white/15 dark:bg-black/80">
-                  <Link href="/roles/marines" prefetch={false} className="block rounded-md px-3 py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">All Marines</Link>
-                  <Link href="/roles/administrators" prefetch={false} className="block rounded-md px-3 py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Administrators</Link>
-                  <Link href="/roles/leaders" prefetch={false} className="block rounded-md px-3 py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Leaders</Link>
-                  <Link href="/roles/commanders" prefetch={false} className="block rounded-md px-3 py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Commanders</Link>
+                <div id="sa-roles-panel" className="hidden fixed sm:absolute left-2 right-2 sm:left-0 sm:right-auto top-14 sm:top-full sm:mt-2 min-w-[14rem] z-[999] rounded-lg border border-black/5 bg-white p-2 shadow-lg dark:border-white/15 dark:bg-black/90">
+                  <Link href="/roles/marines" prefetch={false} className="block rounded-md px-4 py-3 sm:px-3 sm:py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">All Marines</Link>
+                  <Link href="/roles/administrators" prefetch={false} className="block rounded-md px-4 py-3 sm:px-3 sm:py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Administrators</Link>
+                  <Link href="/roles/leaders" prefetch={false} className="block rounded-md px-4 py-3 sm:px-3 sm:py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Leaders</Link>
+                  <Link href="/roles/commanders" prefetch={false} className="block rounded-md px-4 py-3 sm:px-3 sm:py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Commanders</Link>
                 </div>
               </div>
               <Link href="/soundtracks" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Soundtracks</Link>
