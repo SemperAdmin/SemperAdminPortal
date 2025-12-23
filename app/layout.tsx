@@ -62,36 +62,50 @@ export default function RootLayout({
               try { localStorage.setItem(KEY, next); } catch {}
               apply(next);
             });
-            // Inspection menu click handling
-            var inspection = document.getElementById('sa-inspection');
-            var itoggle = document.getElementById('sa-inspection-toggle');
-            var ipanel = document.getElementById('sa-inspection-panel');
-            function iclose(){ if (inspection) inspection.setAttribute('data-open','false'); if (itoggle) itoggle.setAttribute('aria-expanded','false'); if (ipanel) ipanel.classList.add('hidden'); }
-            function iopen(){ if (inspection) inspection.setAttribute('data-open','true'); if (itoggle) itoggle.setAttribute('aria-expanded','true'); if (ipanel) ipanel.classList.remove('hidden'); }
+            // Menu initialization - wait for DOM
+            function initMenus() {
+              var inspection = document.getElementById('sa-inspection');
+              var itoggle = document.getElementById('sa-inspection-toggle');
+              var ipanel = document.getElementById('sa-inspection-panel');
+              var roles = document.getElementById('sa-roles');
+              var rtoggle = document.getElementById('sa-roles-toggle');
+              var rpanel = document.getElementById('sa-roles-panel');
 
-            // Roles menu click handling
-            var roles = document.getElementById('sa-roles');
-            var rtoggle = document.getElementById('sa-roles-toggle');
-            var rpanel = document.getElementById('sa-roles-panel');
-            function rclose(){ if (roles) roles.setAttribute('data-open','false'); if (rtoggle) rtoggle.setAttribute('aria-expanded','false'); if (rpanel) rpanel.classList.add('hidden'); }
-            function ropen(){ if (roles) roles.setAttribute('data-open','true'); if (rtoggle) rtoggle.setAttribute('aria-expanded','true'); if (rpanel) rpanel.classList.remove('hidden'); }
+              function iclose(){ if (ipanel) ipanel.classList.add('hidden'); if (itoggle) itoggle.setAttribute('aria-expanded','false'); }
+              function iopen(){ if (ipanel) ipanel.classList.remove('hidden'); if (itoggle) itoggle.setAttribute('aria-expanded','true'); }
+              function rclose(){ if (rpanel) rpanel.classList.add('hidden'); if (rtoggle) rtoggle.setAttribute('aria-expanded','false'); }
+              function ropen(){ if (rpanel) rpanel.classList.remove('hidden'); if (rtoggle) rtoggle.setAttribute('aria-expanded','true'); }
 
-            // Initialize both menus
-            if (itoggle && inspection && ipanel){
-              iclose();
-              itoggle.addEventListener('click', function(e){ e.preventDefault(); rclose(); var isOpen = inspection.getAttribute('data-open') === 'true'; if (isOpen) iclose(); else iopen(); });
+              if (itoggle) {
+                itoggle.addEventListener('click', function(e){
+                  e.preventDefault();
+                  e.stopPropagation();
+                  rclose();
+                  var isOpen = !ipanel.classList.contains('hidden');
+                  if (isOpen) iclose(); else iopen();
+                });
+              }
+              if (rtoggle) {
+                rtoggle.addEventListener('click', function(e){
+                  e.preventDefault();
+                  e.stopPropagation();
+                  iclose();
+                  var isOpen = !rpanel.classList.contains('hidden');
+                  if (isOpen) rclose(); else ropen();
+                });
+              }
+
+              document.addEventListener('keydown', function(e){ if (e.key === 'Escape') { iclose(); rclose(); } });
+              document.addEventListener('click', function(e){
+                if (itoggle && !itoggle.contains(e.target) && ipanel && !ipanel.contains(e.target)) iclose();
+                if (rtoggle && !rtoggle.contains(e.target) && rpanel && !rpanel.contains(e.target)) rclose();
+              });
             }
-            if (rtoggle && roles && rpanel){
-              rclose();
-              rtoggle.addEventListener('click', function(e){ e.preventDefault(); iclose(); var isOpen = roles.getAttribute('data-open') === 'true'; if (isOpen) rclose(); else ropen(); });
+            if (document.readyState === 'loading') {
+              document.addEventListener('DOMContentLoaded', initMenus);
+            } else {
+              initMenus();
             }
-
-            // Close on escape or outside click
-            document.addEventListener('keydown', function(e){ if (e.key === 'Escape') { iclose(); rclose(); } });
-            document.addEventListener('click', function(e){
-              if (inspection && !inspection.contains(e.target)) iclose();
-              if (roles && !roles.contains(e.target)) rclose();
-            });
           })();
         `}} />
         <header className="sticky top-0 z-50 border-b border-black/5 bg-[var(--sa-cream)]/80 backdrop-blur supports-[backdrop-filter]:bg-[var(--sa-cream)]/60 dark:bg-[var(--sa-navy)]/80 dark:supports-[backdrop-filter]:bg-[var(--sa-navy)]/60">
