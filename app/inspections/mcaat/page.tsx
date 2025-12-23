@@ -248,6 +248,7 @@ const moreGreatLinks = [
   { title: "JET SharePoint", href: "https://usmc.sharepoint-mil.us/sites/SJA_JET/SitePages/Home.aspx", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
   { title: "M&RA SharePoint", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/dcmra", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
   { title: "M&RA Site", href: "https://www.manpower.marines.mil/", icon: <GlobeIcon className="h-5 w-5" /> },
+  { title: "Manpower Codes Lookup", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action", icon: <LinkIcon className="h-5 w-5" />, requiresCAC: true },
   { title: "MCA Information Awards", href: "https://www.information.marines.mil/MCA-Awards/", icon: <LinkIcon className="h-5 w-5" /> },
   { title: "MCAAT SharePoint", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCMRA_MCAAT/SitePages/Marine-Corps-Administrative-Analyst-Team.aspx", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
   { title: "MCILAP", href: "https://www.iandl.marines.mil/Resources/MCILAP/", icon: <LinkIcon className="h-5 w-5" /> },
