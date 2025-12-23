@@ -700,9 +700,321 @@ export const mcaatQuestions: MCCATCategory[] = [
     name: "Legal",
     description: "NJP reporting, courts-martial, confinement orders, UA/desertion, appellate leave, and legal hold procedures.",
     sections: [
-      { unitType: "REPORTING", questions: [] },
-      { unitType: "IPAC", questions: [] },
-      { unitType: "SUPPORTING", questions: [] }
+      {
+        unitType: "REPORTING",
+        questions: [
+          {
+            id: 2,
+            question: "Is the unit ensuring the Good Conduct Medal/Selected Marine Corps Reserve Medal is reported IAW appropriate legal action?",
+            reference: "SECNAV M-1650.1, MCO 5800.16 VOL 14"
+          },
+          {
+            id: 4,
+            question: "Are NAVMC 10132(s) reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM 2-20103"
+          },
+          {
+            id: 5,
+            question: "Are promotion restrictions reported according to the imposed articles and IAW the reference?",
+            reference: "MCO 1400.32D Par 1204.4"
+          },
+          {
+            id: 6,
+            question: "For Marines in the grades of E4 and below, are JEPES occasions approved by the individual with appropriate promotion authority on the effective date of the grade reduction or Declared Deserter?",
+            reference: "MCO P1400.32D, para 1200.3.b; MCO 1616.1, Ch 1, para 5.g; Ch 2, para 1.f"
+          },
+          {
+            id: 8,
+            question: "Are NAVMC 10132(s) filed in OMPF within 10 working days from the date reported on unit diary?",
+            reference: "MCO 5800.16A, Volume 14, para(s) 0109, 0111; DoDFMR Vol 7A, Chap 49, para 4903; MCTFSPRIUM, 7-70502, 7-70503, 7-70507, Chapter 13 Appendix C; MCO 1070.1"
+          },
+          {
+            id: 9,
+            question: "Is the unit ensuring the NAVMC 10132(s) UPB is prepared IAW applicable regulations?",
+            reference: "DoDFMR Vol 7A, Chap 49; MCO 5800.16A, Volume 14, para(s) 0109, 0111"
+          },
+          {
+            id: 10,
+            question: "In the case of NJP punishments that have been vacated, is the unit ensuring the original NAVMC 10132 UPB is updated with the proper annotations IAW applicable references?",
+            reference: "DoDFMR Vol 7A, Chap 49; MCO 5800.16, Volume 14, para 0112, figure 14-1, 011105.P"
+          },
+          {
+            id: 11,
+            question: "Are punishments and vacations awarded on the NAVMC 10132(s) reported IAW applicable regulations?",
+            reference: "MCO 5800.16 Ch 7, Volume 14, para(s) 0109, 0111; DoDFMR Vol 7A, Chap 49; MCTFSPRIUM, 7-70502, 7-70503, 7-70507"
+          },
+          {
+            id: 12,
+            question: "Is TTC 257 000 (Automated Court-Martial) entry reported IAW applicable regulations for Courts-Martial (TTC 283-000 for all Reserve courts-martial)?",
+            reference: "MCTFSPRIUM, 7-70501, 7-70502"
+          },
+          {
+            id: 13,
+            question: "Are Record of Trial / Results of Trial/Convening Authority's Action filed in OMPF within 10 working days from the date reported on unit diary?",
+            reference: "MCTFSPRIUM, Chapter 13, Appendix C; MCO 1070.1"
+          },
+          {
+            id: 14,
+            question: "Is TTC 262 000 (CA Action Ordered Executed) reported IAW applicable regulations?",
+            reference: "MCTFSPRIUM, 7-70501; MCO 5800.16 Vol 12, 0105"
+          },
+          {
+            id: 15,
+            question: "Are Confinement Orders reported IAW applicable regulations?",
+            reference: "MCTFSPRIUM 7-70506"
+          },
+          {
+            id: 16,
+            question: "Is to and from In Hands of Civilian Authorities (IHCA) / In Hands of Foreign Authorities (IHFA) reported IAW applicable regulations?",
+            reference: "MCTFSPRIUM, Table 6-2, 7-70303, 7-70304, 7-70305, 7-70306"
+          },
+          {
+            id: 37,
+            question: "Are Unauthorized Absence (UA) reported IAW applicable regulations?",
+            reference: "MCO 1620.3A; MCTFS PRIUM, 7-70301, 7-70302"
+          },
+          {
+            id: 38,
+            question: "Are Drop Declared Deserter and Join from Desertion reported IAW applicable regulations?",
+            reference: "MCTFS PRIUM, 7-70307, 6-60212"
+          },
+          {
+            id: 39,
+            question: "Are documents for absentees (DD Form 553 / 616) filed in OMPF within 10 working days from the date reported on unit diary?",
+            reference: "MCTFSPRIUM, Chapter 13, Appendix C; MCO 1620.3A; MCO 1070.1"
+          },
+          {
+            id: 40,
+            question: "Is the unit ensuring key supporting documents that validate periods of confinement, UA, or desertion are maintained on file for audit, and in accordance with retention policies?",
+            reference: "DoDFMR, Vol 1, Ch 9; SECNAV M-5210.1; MCO 1620.3A; MARADMIN 601/24"
+          },
+          {
+            id: 41,
+            question: "Are Appellate Leave Orders reported IAW applicable regulations?",
+            reference: "MCO 1050.16A; MCTFSPRIUM, 7-70505"
+          },
+          {
+            id: 42,
+            question: "Is the unit ensuring Marines that are placed on Legal Hold beyond their Expiration of Active Service date are placed only in IAW applicable regulations? Is the unit tracking the status of Marines held beyond their EAS on legal hold?",
+            reference: "MCO 1900.16 CH 2; MCTFSPRIUM, 3-30306, 3-30307"
+          },
+          {
+            id: 44,
+            question: "Is TTC 263 000 (Entry of Judgement) reported IAW applicable regulations?",
+            reference: "PAA 01-24; MCTFSPRIUM, 7-70501"
+          },
+          {
+            id: 47,
+            question: "Is TTC 212 (Courts-Martial and Nonjudicial Punishment Statistical Data) reported IAW applicable regulations?",
+            reference: "NDAA FY 2020, Sec 540I; MCTFSPRIUM, 7-70508"
+          }
+        ]
+      },
+      {
+        unitType: "IPAC",
+        questions: [
+          {
+            id: 1,
+            question: "Is the unit ensuring the Good Conduct Medal/Selected Marine Corps Reserve Medal is reported IAW appropriate legal action?",
+            reference: "SECNAV M-1650.1, MCO 5800.16 VOL 14"
+          },
+          {
+            id: 36,
+            question: "Are promotion restrictions reported according to the imposed articles and IAW the reference?",
+            reference: "MCO 1400.32D Par 1204.4"
+          },
+          {
+            id: 45,
+            question: "Is TTC 263 000 (Entry of Judgement) reported IAW applicable regulations?",
+            reference: "PAA 01-24; MCTFSPRIUM, 7-70501"
+          },
+          {
+            id: 46,
+            question: "Is TTC 212 (Courts-Martial and Nonjudicial Punishment Statistical Data) reported IAW applicable regulations?",
+            reference: "NDAA FY 2020, Sec 540I; MCTFSPRIUM, 7-70508"
+          },
+          {
+            id: 49,
+            question: "Are punishments and vacations awarded on the NAVMC 10132(s) reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 49; MCO 5800.16, Vol 14, par(s). 0109, 0111; MCTFSPRIUM, 7-70502, 7-70503, 7-70507"
+          },
+          {
+            id: 50,
+            question: "Are NAVMC 10132(s) reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM 2-20103"
+          },
+          {
+            id: 51,
+            question: "Are NAVMC 10132(s) filed in OMPF within 10 working days from the date reported on unit diary?",
+            reference: "MCO 5800.16A, Vol. 14, par(s). 0109, 0111; DoDFMR Vol. 7A, Chap. 49, par. 4903; MCO 1070.1, Chapter 4; MCTFSPRIUM, 7-70502, 7-70503, 7-70507, Chap. 13, Appendix C"
+          },
+          {
+            id: 52,
+            question: "Is TTC 257 000 (Automated Court-Martial) entry reported IAW applicable regulations for Courts-Martial (TTC 283-000 for all Reserve courts-martial)?",
+            reference: "MCTFSPRIUM, 7-70501, 7-70502"
+          },
+          {
+            id: 53,
+            question: "Are Record of Trial / Results of Trial / Convening Authority's Action filed in OMPF within 10 working days from the date reported on unit diary?",
+            reference: "MCTFSPRIUM, Chap. 13, Appendix C; MCO 1070.1"
+          },
+          {
+            id: 54,
+            question: "Is TTC 262 000 (CA Action Ordered Executed) reported IAW applicable regulations?",
+            reference: "MCO 5800.16 Vol. 12, par. 0105; MCTFSPRIUM, 7-70501"
+          },
+          {
+            id: 55,
+            question: "Are Appellate Leave Orders reported IAW applicable regulations?",
+            reference: "MCO 1050.16A; MCTFSPRIUM, 7-70505"
+          },
+          {
+            id: 56,
+            question: "Are Unauthorized Absence (UA) entries reported IAW applicable regulations?",
+            reference: "MCO 1620.3A; MCTFS PRIUM, 7-70301, 7-70302"
+          },
+          {
+            id: 57,
+            question: "Are Drop Declared Deserter and Joins from Desertion entries reported IAW applicable regulations?",
+            reference: "MCTFSPRIUM, 7-70307, 6-60212"
+          },
+          {
+            id: 58,
+            question: "Are documents for absentees (DD Form 553 / 616) filed in OMPF within 10 working days from the date reported on unit diary?",
+            reference: "MCO 1620.3A; MCTFSPRIUM, Chap. 13, Appendix C; MCO 1070.1"
+          },
+          {
+            id: 59,
+            question: "Are Confinement Orders reported IAW applicable regulations?",
+            reference: "MCTFSPRIUM 7-70506"
+          },
+          {
+            id: 60,
+            question: "Are In Hands of Civilian Authorities / In Hands of Foreign Authorities entries reported IAW applicable regulations?",
+            reference: "MCTFSPRIUM, Table 6-2, 7-70303, 7-70304, 7-70305, 7-70306"
+          }
+        ]
+      },
+      {
+        unitType: "SUPPORTING",
+        questions: [
+          {
+            id: 3,
+            question: "Is the unit ensuring the Good Conduct Medal/Selected Marine Corps Reserve Medal is reported IAW appropriate legal action?",
+            reference: "SECNAV M-1650.1, MCO 5800.16 VOL 14"
+          },
+          {
+            id: 7,
+            question: "For Marines in the grades of E4 and below, are JEPES occasions approved by the individual with appropriate promotion authority on the effective date of the grade reduction or Declared Deserter?",
+            reference: "MCO P1400.32D, para 1200.3.b; MCO 1616.1, Ch 1, para 5.g; Ch 2, para 1.f"
+          },
+          {
+            id: 17,
+            question: "In the case of NJP punishments that have been vacated, is the unit ensuring the original NAVMC 10132 UPB is updated with the proper annotations IAW applicable references?",
+            reference: "DoDFMR Vol. 7A, Chap. 49; MCO 5800.16, Vol. 14, par(s). 0112, 011105, Fig. 14-1"
+          },
+          {
+            id: 18,
+            question: "Is the unit ensuring Appellate Leave Orders are submitted to and received by the reporting unit within 5 days of execution?",
+            reference: "MCO 1050.16A; MCTFSPRIUM, 1-10100.6"
+          },
+          {
+            id: 19,
+            question: "Is the unit validating Appellate Leave is reported IAW applicable regulations by the reporting unit?",
+            reference: "MCO 1050.16A; MCTFSPRIUM, 1-10111, 7-70505"
+          },
+          {
+            id: 20,
+            question: "Is the unit ensuring Marines that are placed on Legal Hold beyond their Expiration of Active Service date are placed only in IAW applicable regulations? Is the unit tracking the status of Marines held beyond their EAS on legal hold?",
+            reference: "MCO 1900.16 CH 2, para 1008; MCTFSPRIUM, 1-10111, 3-30306, 3-30307;"
+          },
+          {
+            id: 21,
+            question: "Is the unit ensuring key supporting documents to report or remove a Marine from In Hands of Civilian Authority / In Hands of Foreign Authority, in excess of 24 hours, are submitted to and received by the reporting unit within 5 days of occurrence?",
+            reference: "MCO 1620.3A; MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 22,
+            question: "Is the unit ensuring key supporting documents to report or remove a Marine from an Unauthorized Absent status, in excess of 24 hours, are submitted to and received by the reporting unit within 5 days of occurrence?",
+            reference: "MCO 1620.3A; MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 23,
+            question: "Is the unit ensuring key supporting documents (DD Form 553 or DD Form 616) for Marines declared or returned from desertion are submitted to and received by the reporting unit within 5 days of occurrence?",
+            reference: "MCO 1620.3A; MCTFSPRIUM 1-10100.6, 2-20103"
+          },
+          {
+            id: 24,
+            question: "Is the unit ensuring key supporting documents that validate periods of confinement, UA, or desertion are maintained on file for audit, and in accordance with retention policies?",
+            reference: "DoDFMR, Vol. 1, Chap. 9; SECNAV M-5210.1; MCO 1620.3A"
+          },
+          {
+            id: 25,
+            question: "Is the unit ensuring the NAVMC 10132(s) UPB is prepared IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap .49; MCO 5800.16A, Vol. 14, par(s). 0109, 0111"
+          },
+          {
+            id: 26,
+            question: "Is the unit ensuring the NAVMC 10132(s) UPB is submitted to and received by the reporting unit within 5 days of occurrence?",
+            reference: "MCTFSPRIUM, 1-10100.6, 1-10111, 2-20103"
+          },
+          {
+            id: 27,
+            question: "Is the unit ensuring the NAVMC 10132(s) UPB is maintained on file for audit, and in accordance with retention policies?",
+            reference: "DoDFMR, Vol. 1, Chap. 9; SECNAV M-5210.1; MCO 5800.16, Vol. 14, par. 011110;"
+          },
+          {
+            id: 28,
+            question: "Is the unit ensuring all NJP punishments are reported properly IAW applicable regulations by the reporting unit?",
+            reference: "MCO 5800.16 Vol. 14; MCO 1400.32D, par. 6004; MCTFSPRIUM, 1-10111, 7-70502, 7-70503, 7-70507"
+          },
+          {
+            id: 29,
+            question: "Is the unit ensuring vacated NJP punishment(s) are reported properly by the reported unit IAW applicable regulations?",
+            reference: "MCTFSPRIUM, 1-10111, 7-70502, 7-70504, 7-70507"
+          },
+          {
+            id: 30,
+            question: "Is the unit ensuring Confinement Orders are submitted to and received by the reporting unit within 5 days of the effective date?",
+            reference: "MCTFSPRIUM 1-10100.6, 2-20103"
+          },
+          {
+            id: 31,
+            question: "Is the unit ensuring Court Martial documents (results of trial, convening authority's action) are submitted to and received by the reporting unit within 5 days of occurrence?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 32,
+            question: "Is the unit validating Court Martial (TTC 257) is reported IAW applicable regulations by the reporting unit?",
+            reference: "MCTFSPRIUM, 1-10111, 7-70501, 7-70502, 7-70503"
+          },
+          {
+            id: 33,
+            question: "Is the unit validating the Convening Authority's Action (TTC 262) is reported IAW applicable regulations by the reporting unit?",
+            reference: "MCTFSPRIUM, 1-10111, 7-70501, 7-70502"
+          },
+          {
+            id: 34,
+            question: "Is the unit ensuring Court Martial documents (results of trial and convening authority's action) are maintained on file for audit, and in accordance with retention policies?",
+            reference: "DoDFMR, Vol. 1, Chap. 9; SECNAV M-5210.1; MCTFSPRIUM, Chap. 13, Appendix C"
+          },
+          {
+            id: 35,
+            question: "Is the unit creating Appellate Leave Orders IAW applicable regulations?",
+            reference: "MCO 1050.16A"
+          },
+          {
+            id: 43,
+            question: "Is the unit validating Entry of Judgement (TTC 263 000) is reported IAW applicable regulations?",
+            reference: "PAA 01-24; MCTFSPRIUM, 7-70501"
+          },
+          {
+            id: 48,
+            question: "Is the unit validating Courts-Martial and Nonjudicial Punishment Statistical Data (TTC 212) is reported IAW applicable regulations by the reporting unit?",
+            reference: "NDAA FY 2020, Sec 540I; MCTFSPRIUM, 7-70508"
+          }
+        ]
+      }
     ]
   },
   {
@@ -710,9 +1022,381 @@ export const mcaatQuestions: MCCATCategory[] = [
     name: "MilPay",
     description: "Pay and allowances including BAH, COLA, FSA, commuted rations, BNA, and contractual documents.",
     sections: [
-      { unitType: "REPORTING", questions: [] },
-      { unitType: "IPAC", questions: [] },
-      { unitType: "SUPPORTING", questions: [] }
+      {
+        unitType: "REPORTING",
+        questions: [
+          {
+            id: 1,
+            question: "Is BAH reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 26; JTR Chap. 10; MCTFSPRIUM, 9-90400 and 9-90401"
+          },
+          {
+            id: 2,
+            question: "Is BAH reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 3,
+            question: "Is OHA reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 26; JTR Chap. 10; MCTFSPRIUM, 9-90400 and 9-90401"
+          },
+          {
+            id: 4,
+            question: "Is OHA reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 5,
+            question: "Is COLA reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 26, CONUS; Chap. 58, OCONUS; JTR Chap. 9; MCTFSPRIUM, 9-90500"
+          },
+          {
+            id: 6,
+            question: "Is COLA reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 7,
+            question: "Is FSA reported IAW applicable regulations for Unaccompanied Tour, Dependent Restricted Station, and/or Ship's Based?",
+            reference: "DoDFMR Vol 7A, Chap. 27; MCTFSPRIUM, 9-90301 and 9-90302"
+          },
+          {
+            id: 8,
+            question: "Is FSA for Unaccompanied Tours, Dependent Restricted Stations, and/or Ship's Based reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 9,
+            question: "Is Commuted Rations reported IAW applicable regulations?",
+            reference: "DoDFMR Vol 7A, Chap. 25, par(s). 2.3.3, 2.4.3.2; MCO 10110.47A; MCTFSPRIUM, 8-80401, 8-80402"
+          },
+          {
+            id: 10,
+            question: "Is Commuted Rations reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 11,
+            question: "Is Discount Meal Rate reported IAW applicable regulations?",
+            reference: "DoDFMR Vol 7A, Chap. 25, par. 2.4.3.2; MCO 10110.47A; MCTFSPRIUM, 8-80402, 8-80403"
+          },
+          {
+            id: 12,
+            question: "Is Discount Meal Rate reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 13,
+            question: "Are dependents that reside in Government housing properly reported as such?",
+            reference: "DoDFMR Vol. 7A, Chap. 26; JTR, Chap. 10; MCTFSPRIUM, 9-90401"
+          },
+          {
+            id: 14,
+            question: "Is the unit ensuring all required OMPF documents are filed within 10 working days from the date reported on unit diary?",
+            reference: "MCTFSPRIUM, Chap. 13, Appendix C; MCO 1070.1"
+          },
+          {
+            id: 15,
+            question: "Are contractual documents (DD-4, DD-1966 from this and previous enlistment contracts) resident in OMPF?",
+            reference: "MCO 1070.1; MCTFSPRIUM, Chap. 13; MARADMIN 015/20"
+          },
+          {
+            id: 16,
+            question: "Is Basic Needs Allowance (BNA) reported within 5 days of the effective date?",
+            reference: "DoDFMR Vol. 7A, Chap. 28; MCO 7200.1"
+          },
+          {
+            id: 17,
+            question: "Is Basic Needs Allowance reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 28; MCO 7200.1"
+          },
+          {
+            id: 18,
+            question: "Is the unit using the proper BAH/OHA rate based on location or duty status (i.e. Marines on Appellate Leave)?",
+            reference: "DoDFMR Vol. 7A, Chap. 26; JTR Chap. 10; MCO 1050.16A, par. 4; MCTFSPRIUM, 7-70505, 9-90401"
+          },
+          {
+            id: 19,
+            question: "Is the reporting unit starting and stopping dependent travel authorized entries within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103, 6-60504"
+          },
+          {
+            id: 20,
+            question: "For members in receipt of GS or GMT, are dependent travel authorized entries reported IAW applicable regulations?",
+            reference: "MCTFSPRIUM, 6-60504; DoDFMR, Vol. 7A, Chap. 26; JTR, Chap. 9"
+          },
+          {
+            id: 21,
+            question: "For Marines in receipt of Sole Survivorship or Parenthood status, are documents filed in OMPF within 10 working days?",
+            reference: "MCO 1070.1; MCTFSPRIUM, 12-120103; MARADMIN 015/20"
+          },
+          {
+            id: 22,
+            question: "Is the reporting unit accurately reporting Marines' marital status within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 23,
+            question: "Is the reporting unit ensuring dependent additions/deletions are reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 24,
+            question: "Are Continuation Pays/SRBs reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 9; MARADMIN(s) 081/18, 082/18, 009/25; MCTFSPRIUM, 9-91701"
+          },
+          {
+            id: 25,
+            question: "Are Continuation Pays/SRBs reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 26,
+            question: "Are Enlistment bonuses reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 9; MCTFSPRIUM, 9-91700"
+          },
+          {
+            id: 27,
+            question: "Are Enlistment bonuses reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 44,
+            question: "Are HSDIP/SLRP entitlements reported IAW applicable regulations?",
+            reference: "HSDIP - MARADMINS 106/24, 107/24, 359/24; SLRP - MARADMINS 0111/20, 0351/24; DoDFMR Vol. 7A, Chap. 9; MCTFSPRIUM, 9-91702"
+          },
+          {
+            id: 45,
+            question: "Is the unit ensuring HSDIP/SLRP entitlements are reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          }
+        ]
+      },
+      {
+        unitType: "IPAC",
+        questions: [
+          {
+            id: 28,
+            question: "Is OHA reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 26; JTR, Chap. 10; MCTFSPRIUM, 9-90400, 9-90401"
+          },
+          {
+            id: 29,
+            question: "Is OHA reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 30,
+            question: "Is BAH reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 26; JTR Chap. 10; MCTFSPRIUM, 9-90400, 9-90401"
+          },
+          {
+            id: 31,
+            question: "Is BAH reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 32,
+            question: "Is COLA reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 26 (CONUS), Chap. 58 (OCONUS); JTR Chap. 9; MCTFSPRIUM, 9-90500"
+          },
+          {
+            id: 33,
+            question: "Is COLA reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 34,
+            question: "Is FSA for Unaccompanied Tour, Dependent Restricted Station, and/or Ship's Based reported IAW applicable regulations?",
+            reference: "DoDFMR Vol 7A, Chap. 27; MCTFSPRIUM, 9-90301, 9-90302"
+          },
+          {
+            id: 35,
+            question: "Is FSA for Unaccompanied Tours, Dependent Restricted Stations, and/or Ship's Based reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 36,
+            question: "Is Commuted Rations reported IAW applicable regulations?",
+            reference: "DoDFMR Vol 7A, Chap. 25, par(s). 2.3.3, 2.4.3.2; MCO 10110.47A; MCTFSPRIUM, 8-80401, 8-80402"
+          },
+          {
+            id: 37,
+            question: "Is Commuted Rations reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 38,
+            question: "Is Discount Meal Rate reported IAW applicable regulations?",
+            reference: "DoDFMR Vol 7A, Chap. 25, par. 2.4.3.2; MCO 10110.47A; MCTFSPRIUM, 8-80402, 8-80403"
+          },
+          {
+            id: 39,
+            question: "Is Discount Meal Rate reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 40,
+            question: "Are Continuation Pays/SRBs reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 9; MARADMIN(s) 081/18, 082/18, 009/25; MCTFSPRIUM, 9-91701"
+          },
+          {
+            id: 41,
+            question: "Are Continuation Pays/SRBs reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 42,
+            question: "Are Enlistment bonuses reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 9; MCTFSPRIUM, 9-91700"
+          },
+          {
+            id: 43,
+            question: "Are Enlistment bonuses reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 46,
+            question: "Is the unit using the proper BAH/OHA rate based on location or duty status (i.e. Marines on Appellate Leave)?",
+            reference: "DoDFMR Vol. 7A, Chap. 26; JTR Chap. 10; MCO 1050.16A, par. 4; MCTFSPRIUM, 7-70505, 9-90401"
+          },
+          {
+            id: 47,
+            question: "Are dependents that reside in Government housing properly reported as such?",
+            reference: "DoDFMR Vol. 7A, Chap. 26; JTR, Chap. 10; MCTFSPRIUM, 9-90401"
+          },
+          {
+            id: 48,
+            question: "Is the unit ensuring all required OMPF documents are filed within 10 working days from the date reported on unit diary?",
+            reference: "MCTFSPRIUM, Chap. 13, Appendix C; MCO 1070.1"
+          },
+          {
+            id: 49,
+            question: "Are contractual documents (DD-4, DD-1966 from this and previous enlistment contracts) resident in OMPF?",
+            reference: "MCO 1070.1; MCTFSPRIUM, Chap. 13; MARADMIN 015/20"
+          },
+          {
+            id: 50,
+            question: "Is Basic Needs Allowance (BNA) reported within 5 days of receiving key supporting documents?",
+            reference: "DoDFMR Vol. 7A, Chap. 28; MCO 7200.1"
+          },
+          {
+            id: 51,
+            question: "Is Basic Needs Allowance reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 28; MCO 7200.1"
+          },
+          {
+            id: 52,
+            question: "Is the reporting unit starting and stopping dependent travel authorized entries within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103, 6-60504"
+          },
+          {
+            id: 53,
+            question: "For members in receipt of GS or GMT, are dependent travel authorized entries reported IAW applicable regulations?",
+            reference: "MCTFSPRIUM, 6-60504; DoDFMR, Vol. 7A, Chap. 26; JTR, Chap. 9"
+          },
+          {
+            id: 54,
+            question: "For Marines in receipt of Sole Survivorship or Parenthood status, are documents filed in OMPF within 10 working days?",
+            reference: "MCO 1070.1; MCTFSPRIUM, 12-120103; MARADMIN 015/20"
+          },
+          {
+            id: 55,
+            question: "Is the reporting unit accurately reporting Marines' marital status within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 56,
+            question: "Is the reporting unit ensuring dependent additions/deletions are reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 68,
+            question: "Are HSDIP/SLRP entitlements reported IAW applicable regulations?",
+            reference: "HSDIP - MARADMINS 106/24, 107/24, 359/24; SLRP - MARADMINS 0111/20, 0351/24; DoDFMR Vol. 7A, Chap. 9; MCTFSPRIUM, 9-91702"
+          },
+          {
+            id: 69,
+            question: "Is the unit ensuring HSDIP/SLRP entitlements are reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          }
+        ]
+      },
+      {
+        unitType: "SUPPORTING",
+        questions: [
+          {
+            id: 57,
+            question: "Is the unit ensuring BAH key supporting documents are submitted to and received by the reporting unit within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 58,
+            question: "Is the unit validating BAH is reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol. 7A, Chap. 26; JTR Chap. 10; MCTFSPRIUM, 1-10111, 9-90400, 9-90401"
+          },
+          {
+            id: 59,
+            question: "Is the unit ensuring OHA key supporting documents are submitted to and received by the reporting unit within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 60,
+            question: "Is the unit validating OHA is reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol. 7A, Chap. 26; JTR Chap. 10; MCTFSPRIUM, 1-10111, 9-90400, 9-90401"
+          },
+          {
+            id: 61,
+            question: "Is the unit ensuring COLA key supporting documents are submitted to and received by the reporting unit within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 62,
+            question: "Is the unit validating COLA is reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol. 7A, Chap. 26 (CONUS), Chap. 58 (OCONUS); JTR Chap. 9; MCTFSPRIUM, 1-10111, 9-90500"
+          },
+          {
+            id: 63,
+            question: "Is the unit ensuring FSA key supporting documents for Unaccompanied Tour, Dependent Restricted Station, and/or Ship's Based are submitted to and received by the reporting unit within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 64,
+            question: "Is the unit validating FSA for Unaccompanied Tours, Dependent Restricted Stations, and/or Ship's Based is reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol 7A, Chap. 27; MCTFSPRIUM, 1-10111, 9-90301, 9-90302"
+          },
+          {
+            id: 65,
+            question: "Is the unit validating Commuted Rations is reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol 7A, Chap. 25, par(s). 2.3.3, 2.4.3.2; MCO 10110.47A; MCTFSPRIUM, 1-10111, 8-80401, 8-80402"
+          },
+          {
+            id: 66,
+            question: "Is the unit validating Discount Meal Rate is reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol 7A, Chap. 25, par. 2.4.3.2; MCO 10110.47A; MCTFSPRIUM, 1-10111, 8-80402, 8-80403"
+          },
+          {
+            id: 67,
+            question: "Is the unit ensuring key supporting documents that validate MilPay entitlements are maintained on file for audit, and in accordance with retention policies?",
+            reference: "DoDFMR, Vol. 1, Chap. 9; SECNAV M-5210.1; MARADMIN 601/24"
+          },
+          {
+            id: 70,
+            question: "Is the unit validating HSDIP/SLRP is reported IAW applicable regulations by the reporting unit?",
+            reference: "HSDIP - MARADMINS 106/24, 107/24, 359/24; SLRP - MARADMINS 0111/20, 0351/24; DoDFMR Vol. 7A, Chap. 9; MCTFSPRIUM, 1-10111, 9-91702"
+          },
+          {
+            id: 71,
+            question: "Is the unit ensuring HSDIP/SLRP key supporting documents are submitted to and received by the reporting unit within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 72,
+            question: "Is the unit ensuring key supporting documents that validate HSDIP/SLRP entitlements are maintained on file for audit, and in accordance with retention policies?",
+            reference: "DoDFMR, Vol. 1, Chap. 9; SECNAV M-5210.1; MARADMIN 601/24"
+          }
+        ]
+      }
     ]
   },
   {
