@@ -281,18 +281,6 @@ export const careerPlanningChecklist: FACChecklistData = {
       phone: "(703) 432-9238",
     },
   ],
-  resources: {
-    directives: [
-      {
-        title: "MCO 1040.31 (Career Planning Program)",
-        url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
-      },
-      {
-        title: "MCO 1040R.31 (Reserve Career Planning)",
-        url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899056/mco-1040r31/",
-      },
-    ],
-  },
   subsections: [
     {
       id: "01",
@@ -303,7 +291,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is there a current letter designating a Unit Career Planner (UCP) on file?",
           reference: {
             text: "MCO 1040.31, Chapter 2, paragraph 2.b",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -311,7 +298,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Does the UCP hold a secondary MOS 8421?",
           reference: {
             text: "MCO 1040.31, Chapter 2, paragraph 2.a",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -319,7 +305,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Has the UCP completed the Career Retention Specialist Course (CRSC) or does the UCP have an approved waiver on file?",
           reference: {
             text: "MCO 1040.31, Chapter 2, paragraph 2.a",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -327,7 +312,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the UCP performing duties commensurate with a full-time career planner?",
           reference: {
             text: "MCO 1040.31, Chapter 2, paragraph 2.a",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -335,7 +319,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Does the UCP have a Career Planning workspace that is accessible during normal working hours and allows for private counseling?",
           reference: {
             text: "MCO 1040.31, Chapter 2, paragraph 2.d",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -344,7 +327,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           note: "If required based on unit size.",
           reference: {
             text: "MCO 1040.31, Chapter 2, paragraph 2.c",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -352,7 +334,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Does the AUCP hold a secondary MOS 8421?",
           reference: {
             text: "MCO 1040.31, Chapter 2, paragraph 2.c",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -360,7 +341,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Has the AUCP completed the Career Retention Specialist Course (CRSC) or does the AUCP have an approved waiver on file?",
           reference: {
             text: "MCO 1040.31, Chapter 2, paragraph 2.c",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -369,7 +349,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           note: "Required for commands with multiple UCPs.",
           reference: {
             text: "MCO 1040.31, Chapter 2, paragraph 3",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -377,7 +356,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Are Career Planning briefs being conducted for all newly reporting Marines within 30 days of joining the command?",
           reference: {
             text: "MCO 1040.31, Chapter 3, paragraph 3.a",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -385,7 +363,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the command meeting the Career Planning Program objectives and goals as established by higher headquarters?",
           reference: {
             text: "MCO 1040.31, Chapter 1, paragraph 3",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
       ],
@@ -399,7 +376,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the UCP maintaining a Career Planning continuity book or folder?",
           reference: {
             text: "MCO 1040.31, Chapter 3, paragraph 1.a",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -407,7 +383,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the UCP maintaining a Career Planning tracking system for all Marines within the command?",
           reference: {
             text: "MCO 1040.31, Chapter 3, paragraph 1.b",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -415,7 +390,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the UCP conducting reenlistment interviews with all Marines between 6-12 months prior to their EAS?",
           reference: {
             text: "MCO 1040.31, Chapter 3, paragraph 3.b",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -423,7 +397,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the UCP providing career counseling to Marines on reenlistment options, bonus eligibility, and career progression?",
           reference: {
             text: "MCO 1040.31, Chapter 3, paragraph 3.c",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -431,7 +404,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the UCP processing reenlistment packages in a timely manner?",
           reference: {
             text: "MCO 1040.31, Chapter 3, paragraph 4.a",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -439,7 +411,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the UCP submitting accurate and complete reenlistment packages?",
           reference: {
             text: "MCO 1040.31, Chapter 3, paragraph 4.b",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -447,7 +418,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the UCP maintaining statistics on reenlistment rates and attrition?",
           reference: {
             text: "MCO 1040.31, Chapter 3, paragraph 5.a",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -455,7 +425,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the UCP reporting reenlistment statistics to higher headquarters as required?",
           reference: {
             text: "MCO 1040.31, Chapter 3, paragraph 5.b",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -463,7 +432,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the UCP attending Career Planner training and meetings as required?",
           reference: {
             text: "MCO 1040.31, Chapter 2, paragraph 2.e",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -471,7 +439,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the UCP conducting Career Planning training for unit leadership and SNCOs?",
           reference: {
             text: "MCO 1040.31, Chapter 3, paragraph 2.a",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -479,7 +446,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the UCP providing information on lateral move opportunities and programs to eligible Marines?",
           reference: {
             text: "MCO 1040.31, Chapter 3, paragraph 3.d",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
       ],
@@ -493,7 +459,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the Career Planner SNCOIC supervising and coordinating the activities of all UCPs within the command?",
           reference: {
             text: "MCO 1040.31, Chapter 2, paragraph 3.a",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -501,7 +466,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the Career Planner SNCOIC conducting periodic inspections of subordinate unit career planning programs?",
           reference: {
             text: "MCO 1040.31, Chapter 2, paragraph 3.b",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -509,7 +473,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the Career Planner SNCOIC consolidating and reporting career planning statistics to higher headquarters?",
           reference: {
             text: "MCO 1040.31, Chapter 2, paragraph 3.c",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -517,7 +480,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the Career Planner SNCOIC coordinating training for all UCPs within the command?",
           reference: {
             text: "MCO 1040.31, Chapter 2, paragraph 3.d",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
         {
@@ -525,7 +487,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the Career Planner SNCOIC acting as the liaison between the command and higher headquarters on career planning matters?",
           reference: {
             text: "MCO 1040.31, Chapter 2, paragraph 3.e",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
           },
         },
       ],
@@ -539,7 +500,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is there a current letter designating a Reserve Unit Career Planner on file?",
           reference: {
             text: "MCO 1040R.31, Chapter 2, paragraph 2.a",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899056/mco-1040r31/",
           },
         },
         {
@@ -547,7 +507,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the Reserve UCP providing career counseling on reserve-specific programs and opportunities?",
           reference: {
             text: "MCO 1040R.31, Chapter 3, paragraph 3.a",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899056/mco-1040r31/",
           },
         },
         {
@@ -555,7 +514,6 @@ export const careerPlanningChecklist: FACChecklistData = {
           text: "Is the Reserve UCP coordinating with the Active Component Career Planner as required?",
           reference: {
             text: "MCO 1040R.31, Chapter 2, paragraph 2.c",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899056/mco-1040r31/",
           },
         },
       ],
@@ -580,14 +538,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
       phone: "(703) 784-1226",
     },
   ],
-  resources: {
-    directives: [
-      {
-        title: "MCO 6110.3A with Change 3 (Body Composition and Military Appearance Program)",
-        url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
-      },
-    ],
-  },
   subsections: [
     {
       id: "01",
@@ -598,7 +548,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Has the unit appointed a Force Fitness Instructor (FFI) or command physical training representative (CPTR) that is responsible to the commander for the development, implementation, management and supervision of the organizational Marine Appearance Program (MAP), Body Composition Program (BCP), and Remedial Conditioning Program (RCP)?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 2c(2)",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -606,7 +555,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Do Commanders/Officers in Charge ensure Marines receive a medical evaluation from an authorized medical provider (Independent Duty Corpsman, Nurse Practitioner, Physician, or Physician Assistant) prior to being assigned to BCP or MAP?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 2a(2) & 2a(2)(a)-(d)",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -614,7 +562,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Have policies and procedures for a MAP been developed by the unit? Do these cover the uniform application of periodic assessments, assignment, and supervisory procedures?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 2a(1)",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -622,7 +569,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Does the unit properly identify and assign Marines who do not meet established military appearance standards to the MAP?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 4b(2) & par 4g",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -630,7 +576,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Does the unit properly perform military appearance evaluations for Marines who present an unsuitable military appearance?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 3f(5)(d)1-2",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -638,7 +583,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Does the unit properly remove Marines from the MAP who comply with established military appearance standards?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 4i",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -646,7 +590,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Does a FFI or CPTR manage and maintain MAP documentation, to include medical evaluation forms?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 2c, 11",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -654,7 +597,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Have policies and procedures for a BCP been developed by the unit? Do these cover the uniform application of periodic assessments, assignment, and supervisory procedures?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 2a(1)",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -662,7 +604,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Does the unit identify and properly assign Marines who exceed established body composition standards to the BCP?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 2a(1) & par 4b(1) & c(1)-(8), 7a&b",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -670,7 +611,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Does the unit properly measure height with an approved, calibrated device?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 3f(4), (5)a",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -678,7 +618,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Does the unit properly measure weight with a calibrated digital or balance beam scale?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 3f(4), (5)b",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -686,7 +625,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Does the unit properly perform body composition evaluations for Marines who exceed established height/weight standards using a self-tensioning taping device?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 3f(5)1-2",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -694,7 +632,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Does the unit conduct weekly weigh in to check the progress of Marines while on BCP?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 2c(4)(d)4",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -702,7 +639,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Did all Marines conduct both previous semi-annual weigh-ins for 1 Jan to 30 June and 1 July to 31 December?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 3d(1)(3)",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -710,7 +646,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Does the unit have procedures established for Marines who transfer while assigned to BCP?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 3d(4)",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -718,7 +653,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "When a Marine becomes pregnant while assigned to BCP, does the unit place the Marine on an inactive status for the required time period as outlined in the reference?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 7b(3), par 8a(2)",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -726,7 +660,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Does the unit initiate administrative separation procedures for Marines who fail to meet established BCP standards after the first or second six-month BCP assignment?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 4f(3)-(5)",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -734,7 +667,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Does the unit properly remove Marines from the BCP who meet established weight or body composition standards?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 4f(1)-(2), par 7a&b(5)",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
         {
@@ -742,7 +674,6 @@ export const bodyCompositionChecklist: FACChecklistData = {
           text: "Does an FFI or CPTR manage and maintain Body Composition Evaluation (BCE) documentation, to include medical evaluation forms and SemperFit Basic/Advanced Fitness Course?",
           reference: {
             text: "MCO 6110.3A with Change 3, encl 1, par 2(c)4d, 2c(6)(7)",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
           },
         },
       ],
