@@ -1,7 +1,6 @@
-import CatalogGrid from "../../../components/CatalogGrid";
-import type { CatalogGroup } from "../../../data/links";
 import Link from "next/link";
 import { mcaatQuestions, getCategoryQuestionCount } from "../../../data/mcaatQuestions";
+import { financeCategories, financeMcaatQuestions, getFinanceQuestionsByCategory } from "../../../data/financeMcaatQuestions";
 
 // CAC Required icon
 function CACIcon({ className }: { className?: string }) {
@@ -206,22 +205,9 @@ const tools = [
   { title: "Admin Schedule", description: "View and manage MCAAT schedules", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=890", icon: <CalendarIcon className="h-5 w-5" />, color: "navy" as const, requiresCAC: true },
 ];
 
-const financeChecklist: CatalogGroup[] = [
-  {
-    name: "MCAAT Finance Checklist",
-    items: [
-      { title: "Administrative Management", href: MCAAT_SHAREPOINT },
-      { title: "Fiscal Processes", href: MCAAT_SHAREPOINT },
-      { title: "Internal Audit Processes", href: MCAAT_SHAREPOINT },
-      { title: "Pay Processes", href: MCAAT_SHAREPOINT },
-      { title: "Separation Processes", href: MCAAT_SHAREPOINT },
-      { title: "Travel Processes", href: MCAAT_SHAREPOINT },
-    ],
-  },
-];
-
 export default function MCAATPage() {
-  const totalQuestions = mcaatQuestions.reduce((sum, cat) => sum + getCategoryQuestionCount(cat), 0);
+  const totalAdminQuestions = mcaatQuestions.reduce((sum, cat) => sum + getCategoryQuestionCount(cat), 0);
+  const totalFinanceQuestions = financeMcaatQuestions.length;
 
   return (
     <div className="space-y-8">
@@ -282,7 +268,7 @@ export default function MCAATPage() {
               <line x1="12" y1="17" x2="12.01" y2="17" />
             </svg>
             <span className="text-sm font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-              {totalQuestions} Total Questions
+              {totalAdminQuestions} Total Questions
             </span>
           </div>
         </div>
@@ -319,8 +305,68 @@ export default function MCAATPage() {
         </div>
       </section>
 
-      {/* Finance Checklist Section */}
-      <CatalogGrid groups={financeChecklist} columns stackTitles />
+      {/* Finance Inspection Questions Section */}
+      <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+        <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+              Finance Inspection Questions by Category
+            </h2>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">
+              Select a category to view questions organized by applicability (DO, FO, Outside Agency)
+            </p>
+          </div>
+          <div className="flex items-center gap-2 rounded-lg bg-[var(--sa-gold)]/10 px-3 py-1.5 dark:bg-[var(--sa-gold)]/20">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4 text-[var(--sa-gold)]">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+              <line x1="12" y1="17" x2="12.01" y2="17" />
+            </svg>
+            <span className="text-sm font-semibold text-[var(--sa-gold)]">
+              {totalFinanceQuestions} Total Questions
+            </span>
+          </div>
+        </div>
+
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {financeCategories.map((category) => {
+            const questions = getFinanceQuestionsByCategory(category.slug);
+            const questionCount = questions.length;
+            const doCount = questions.filter(q => q.applicability.DO).length;
+            const foCount = questions.filter(q => q.applicability.FO).length;
+            return (
+              <Link
+                key={category.slug}
+                href={`/inspections/mcaat/finance/${category.slug}`}
+                className="group flex flex-col rounded-lg border border-black/5 bg-[var(--sa-gold)]/5 p-4 transition hover:border-[var(--sa-gold)]/30 hover:bg-[var(--sa-gold)]/10 hover:shadow-md dark:border-white/10 dark:bg-[var(--sa-gold)]/5 dark:hover:border-[var(--sa-gold)]/40 dark:hover:bg-[var(--sa-gold)]/10"
+              >
+                <div className="flex items-start justify-between gap-2">
+                  <h3 className="font-medium text-[var(--sa-navy)] group-hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:group-hover:text-[var(--sa-gold)]">
+                    {category.name}
+                  </h3>
+                  <span className="shrink-0 rounded-full bg-[var(--sa-gold)]/20 px-2 py-0.5 text-xs font-bold text-[var(--sa-gold)]">
+                    {questionCount}
+                  </span>
+                </div>
+                <div className="mt-2 flex gap-2">
+                  <span className="rounded bg-[var(--sa-navy)]/10 px-1.5 py-0.5 text-[10px] font-medium text-[var(--sa-navy)] dark:bg-[var(--sa-navy)]/30 dark:text-[var(--sa-cream)]">
+                    DO: {doCount}
+                  </span>
+                  <span className="rounded bg-[var(--sa-red)]/10 px-1.5 py-0.5 text-[10px] font-medium text-[var(--sa-red)]">
+                    FO: {foCount}
+                  </span>
+                </div>
+                <div className="mt-3 flex items-center gap-1 text-xs text-[var(--sa-navy)]/60 dark:text-[var(--sa-cream)]/60">
+                  <span>View questions</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-3 w-3 transition group-hover:translate-x-0.5">
+                    <polyline points="9 18 15 12 9 6" />
+                  </svg>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
     </div>
   );
 }
