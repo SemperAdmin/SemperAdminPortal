@@ -39,6 +39,7 @@ export interface FACChecklistData {
   applicabilityNote?: string;
   revisedDate?: string;
   sme?: FACSME;
+  smes?: FACSME[];
   resources?: {
     directives?: FACResource[];
     sharepoints?: FACResource[];
@@ -262,9 +263,310 @@ export const pesChecklist: FACChecklistData = {
   ],
 };
 
+// Career Planning Program Checklist Data
+export const careerPlanningChecklist: FACChecklistData = {
+  slug: "career-planning",
+  applicabilityNote:
+    "This checklist is applicable to all commands from Battalion/Squadron level to Commanding General level, affecting all command unit types.",
+  revisedDate: "March 7, 2024",
+  smes: [
+    {
+      name: "MGySgt Bryant Lodge",
+      email: "bryant.lodge@usmc.mil",
+      phone: "(703) 614-5209",
+    },
+    {
+      name: "MGySgt James Williams",
+      email: "james.williams@usmc.mil",
+      phone: "(703) 432-9238",
+    },
+  ],
+  resources: {
+    directives: [
+      {
+        title: "MCO 1040.31 (Career Planning Program)",
+        url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+      },
+      {
+        title: "MCO 1040R.31 (Reserve Career Planning)",
+        url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899056/mco-1040r31/",
+      },
+    ],
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Command Group",
+      questions: [
+        {
+          number: "0101",
+          text: "Is there a current letter designating a Unit Career Planner (UCP) on file?",
+          reference: {
+            text: "MCO 1040.31, Chapter 2, paragraph 2.b",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0102",
+          text: "Does the UCP hold a secondary MOS 8421?",
+          reference: {
+            text: "MCO 1040.31, Chapter 2, paragraph 2.a",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0103",
+          text: "Has the UCP completed the Career Retention Specialist Course (CRSC) or does the UCP have an approved waiver on file?",
+          reference: {
+            text: "MCO 1040.31, Chapter 2, paragraph 2.a",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0104",
+          text: "Is the UCP performing duties commensurate with a full-time career planner?",
+          reference: {
+            text: "MCO 1040.31, Chapter 2, paragraph 2.a",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0105",
+          text: "Does the UCP have a Career Planning workspace that is accessible during normal working hours and allows for private counseling?",
+          reference: {
+            text: "MCO 1040.31, Chapter 2, paragraph 2.d",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0106",
+          text: "Is there a current letter designating an Assistant Unit Career Planner (AUCP) on file?",
+          note: "If required based on unit size.",
+          reference: {
+            text: "MCO 1040.31, Chapter 2, paragraph 2.c",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0107",
+          text: "Does the AUCP hold a secondary MOS 8421?",
+          reference: {
+            text: "MCO 1040.31, Chapter 2, paragraph 2.c",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0108",
+          text: "Has the AUCP completed the Career Retention Specialist Course (CRSC) or does the AUCP have an approved waiver on file?",
+          reference: {
+            text: "MCO 1040.31, Chapter 2, paragraph 2.c",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0109",
+          text: "Is there a current letter designating a Career Planner SNCOIC on file?",
+          note: "Required for commands with multiple UCPs.",
+          reference: {
+            text: "MCO 1040.31, Chapter 2, paragraph 3",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0110",
+          text: "Are Career Planning briefs being conducted for all newly reporting Marines within 30 days of joining the command?",
+          reference: {
+            text: "MCO 1040.31, Chapter 3, paragraph 3.a",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0111",
+          text: "Is the command meeting the Career Planning Program objectives and goals as established by higher headquarters?",
+          reference: {
+            text: "MCO 1040.31, Chapter 1, paragraph 3",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+      ],
+    },
+    {
+      id: "02",
+      title: "Unit Career Planner Functions",
+      questions: [
+        {
+          number: "0201",
+          text: "Is the UCP maintaining a Career Planning continuity book or folder?",
+          reference: {
+            text: "MCO 1040.31, Chapter 3, paragraph 1.a",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0202",
+          text: "Is the UCP maintaining a Career Planning tracking system for all Marines within the command?",
+          reference: {
+            text: "MCO 1040.31, Chapter 3, paragraph 1.b",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0203",
+          text: "Is the UCP conducting reenlistment interviews with all Marines between 6-12 months prior to their EAS?",
+          reference: {
+            text: "MCO 1040.31, Chapter 3, paragraph 3.b",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0204",
+          text: "Is the UCP providing career counseling to Marines on reenlistment options, bonus eligibility, and career progression?",
+          reference: {
+            text: "MCO 1040.31, Chapter 3, paragraph 3.c",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0205",
+          text: "Is the UCP processing reenlistment packages in a timely manner?",
+          reference: {
+            text: "MCO 1040.31, Chapter 3, paragraph 4.a",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0206",
+          text: "Is the UCP submitting accurate and complete reenlistment packages?",
+          reference: {
+            text: "MCO 1040.31, Chapter 3, paragraph 4.b",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0207",
+          text: "Is the UCP maintaining statistics on reenlistment rates and attrition?",
+          reference: {
+            text: "MCO 1040.31, Chapter 3, paragraph 5.a",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0208",
+          text: "Is the UCP reporting reenlistment statistics to higher headquarters as required?",
+          reference: {
+            text: "MCO 1040.31, Chapter 3, paragraph 5.b",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0209",
+          text: "Is the UCP attending Career Planner training and meetings as required?",
+          reference: {
+            text: "MCO 1040.31, Chapter 2, paragraph 2.e",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0210",
+          text: "Is the UCP conducting Career Planning training for unit leadership and SNCOs?",
+          reference: {
+            text: "MCO 1040.31, Chapter 3, paragraph 2.a",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0211",
+          text: "Is the UCP providing information on lateral move opportunities and programs to eligible Marines?",
+          reference: {
+            text: "MCO 1040.31, Chapter 3, paragraph 3.d",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+      ],
+    },
+    {
+      id: "03",
+      title: "Career Planner SNCOIC",
+      questions: [
+        {
+          number: "0301",
+          text: "Is the Career Planner SNCOIC supervising and coordinating the activities of all UCPs within the command?",
+          reference: {
+            text: "MCO 1040.31, Chapter 2, paragraph 3.a",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0302",
+          text: "Is the Career Planner SNCOIC conducting periodic inspections of subordinate unit career planning programs?",
+          reference: {
+            text: "MCO 1040.31, Chapter 2, paragraph 3.b",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0303",
+          text: "Is the Career Planner SNCOIC consolidating and reporting career planning statistics to higher headquarters?",
+          reference: {
+            text: "MCO 1040.31, Chapter 2, paragraph 3.c",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0304",
+          text: "Is the Career Planner SNCOIC coordinating training for all UCPs within the command?",
+          reference: {
+            text: "MCO 1040.31, Chapter 2, paragraph 3.d",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+        {
+          number: "0305",
+          text: "Is the Career Planner SNCOIC acting as the liaison between the command and higher headquarters on career planning matters?",
+          reference: {
+            text: "MCO 1040.31, Chapter 2, paragraph 3.e",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899055/mco-104031/",
+          },
+        },
+      ],
+    },
+    {
+      id: "04",
+      title: "Reserve Command Group",
+      questions: [
+        {
+          number: "0401",
+          text: "Is there a current letter designating a Reserve Unit Career Planner on file?",
+          reference: {
+            text: "MCO 1040R.31, Chapter 2, paragraph 2.a",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899056/mco-1040r31/",
+          },
+        },
+        {
+          number: "0402",
+          text: "Is the Reserve UCP providing career counseling on reserve-specific programs and opportunities?",
+          reference: {
+            text: "MCO 1040R.31, Chapter 3, paragraph 3.a",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899056/mco-1040r31/",
+          },
+        },
+        {
+          number: "0403",
+          text: "Is the Reserve UCP coordinating with the Active Component Career Planner as required?",
+          reference: {
+            text: "MCO 1040R.31, Chapter 2, paragraph 2.c",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899056/mco-1040r31/",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 // Map of all FAC checklists
 const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   pes: pesChecklist,
+  "career-planning": careerPlanningChecklist,
 };
 
 // Helper functions
