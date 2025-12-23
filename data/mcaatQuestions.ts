@@ -146,9 +146,31 @@ export const commonReferenceUrls: Record<string, string> = {
   // NDAA
   "NDAA FY 2020": "https://www.congress.gov/116/plaws/publ92/PLAW-116publ92.pdf",
 
-  // MCTFSPRIUM - Add specific chapter URLs as available
-  "MCTFSPRIUM": "",
+  // MCTFSPRIUM (CAC required)
+  "MCTFSPRIUM": "https://mol.tfs.usmc.mil/prium/app/publicPrium?execution=e1s1",
+  "MCTFS PRIUM": "https://mol.tfs.usmc.mil/prium/app/publicPrium?execution=e1s1",
+  "MCFTSPRIUM": "https://mol.tfs.usmc.mil/prium/app/publicPrium?execution=e1s1",
+
+  // FPM (CAC required)
+  "FPM Vol 2": "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCPR_RFF_External/Finance_Policy/Active%20FPM%20Volumes/Forms/Grouped.aspx?id=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FActive%20FPM%20Volumes%2FVol%202%2020251217%2Epdf&parent=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FActive%20FPM%20Volumes",
+  "FPM Vol. 2": "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCPR_RFF_External/Finance_Policy/Active%20FPM%20Volumes/Forms/Grouped.aspx?id=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FActive%20FPM%20Volumes%2FVol%202%2020251217%2Epdf&parent=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FActive%20FPM%20Volumes",
+  "FPM, Vol 2": "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCPR_RFF_External/Finance_Policy/Active%20FPM%20Volumes/Forms/Grouped.aspx?id=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FActive%20FPM%20Volumes%2FVol%202%2020251217%2Epdf&parent=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FActive%20FPM%20Volumes",
+  "FPM Volume 2": "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCPR_RFF_External/Finance_Policy/Active%20FPM%20Volumes/Forms/Grouped.aspx?id=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FActive%20FPM%20Volumes%2FVol%202%2020251217%2Epdf&parent=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FActive%20FPM%20Volumes",
+
+  // PAA/PAAN (CAC required)
+  "PAAN 2-15": "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCPR_RFF_External/Finance_Policy/Advisory%20Notifications/Forms/Grouped.aspx?id=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FAdvisory%20Notifications%2FPAAN%2002%2D15%2Epdf&parent=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FAdvisory%20Notifications",
+  "PAA 01-24": "https://usmc.sharepoint-mil.us/sites/dcmra_mra_mi_missa/Lists/PAA/DispForm.aspx?ID=122&e=cl5wom",
+  "PAA 02-21": "https://usmc.sharepoint-mil.us/sites/dcmra_mra_mi_missa/Lists/PAA/DispForm.aspx?ID=17&e=zmMgq9",
+  "PAA 2-21": "https://usmc.sharepoint-mil.us/sites/dcmra_mra_mi_missa/Lists/PAA/DispForm.aspx?ID=17&e=zmMgq9",
+  "PAA 07-10": "https://usmc.sharepoint-mil.us/sites/dcmra_mra_mi_missa/Lists/PAA/DispForm.aspx?ID=116&e=oT6Xal",
 };
+
+// Domains that require CAC access
+export const cacRequiredDomains = [
+  "mol.tfs.usmc.mil",
+  "usmc.sharepoint-mil.us",
+  "usmc.sharepoint-mil.us.mcas-gov.us",
+];
 
 export interface MCCATUnitSection {
   unitType: UnitType;
