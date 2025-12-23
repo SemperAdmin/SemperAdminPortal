@@ -112,6 +112,15 @@ function FolderIcon({ className }: { className?: string }) {
   );
 }
 
+function TeamsIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+      <path d="M19.5 6.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM17 7h5a1 1 0 0 1 1 1v5a3 3 0 0 1-3 3h-1v-5a3 3 0 0 0-3-3h-2V7h3z" opacity="0.5" />
+      <path d="M14.5 5.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM11 6h7a2 2 0 0 1 2 2v6a4 4 0 0 1-4 4h-2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h1V8a2 2 0 0 1 2-2h3z" />
+    </svg>
+  );
+}
+
 type ToolCardProps = {
   title: string;
   description: string;
@@ -256,6 +265,23 @@ const moreGreatLinks = [
   { title: "Red Cross Emergency Communication", href: "https://www.redcross.org/get-help/military-families/emergency-communication.html", icon: <LinkIcon className="h-5 w-5" /> },
 ];
 
+// Teams Channels - alphabetically ordered, all require CAC
+const teamsChannels = [
+  { title: "Directives COI", href: "https://dod.teams.microsoft.us/l/team/19:dod:11971746bffc45719d033aec8362bb90%40thread.tacv2/conversations?groupId=09d2500a-e3c9-4efb-b840-1dbf825c8cfc&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd", icon: <UsersIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "HQMC, MFPC DCIPS-PCR Transition", href: "https://dod.teams.microsoft.us/l/team/19:dod:4dcc8838ae4e48b785ce4977cb08cd53%40thread.tacv2/conversations?groupId=fda095c3-6af1-4101-8929-ce8f772e5e55&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd", icon: <UsersIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "M&RA Key Leader Monthly Manpower Meeting", href: "https://dod.teams.microsoft.us/l/channel/19:dod:c20b6ec57ea047e088fafad563c02e32%40thread.skype/General?groupId=273b23ca-bf28-4337-8dc8-9628e4ee2515&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd", icon: <CalendarIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "MISSO-02", href: "https://dod.teams.microsoft.us/l/team/19:dod:7f4ddd71c9484bf584cc63b6a1dd3bf3%40thread.skype/conversations?groupId=a41eb10c-8e15-43f7-98cb-494ed593d790&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd", icon: <UsersIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "MISSO-03/06", href: "https://dod.teams.microsoft.us/l/team/19:dod:f0483ec29ef441a7bc13bd6f6ec1b7eb%40thread.skype/conversations?groupId=228439f5-b545-4e58-90ed-1270f9370550&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd", icon: <UsersIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "MISSO-09", href: "https://dod.teams.microsoft.us/l/team/19:dod:4e6ec9ba34c0409480822e46c9d619f6%40thread.tacv2/conversations?groupId=174c90ac-736c-4702-b816-b6312012fc8e&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd", icon: <UsersIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "MISSO-16/17", href: "https://dod.teams.microsoft.us/l/team/19:dod:d55c88848dda48f6a6591c8abdb468a3%40thread.skype/conversations?groupId=0895f5f9-e707-49a9-b9b8-a780f689a36b&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd", icon: <UsersIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "MISSO-27", href: "https://dod.teams.microsoft.us/l/team/19:dod:08d880cf79634e439386cea7cb744c62%40thread.tacv2/conversations?groupId=7fee38ca-16af-4033-b942-5315c450d94e&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd", icon: <UsersIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Records Management Training", href: "https://dod.teams.microsoft.us/l/team/19:dod:41a3f07c26d24a9a87c6289f270850f7%40thread.tacv2/conversations?groupId=469fd377-2963-4696-99e0-391c35cca74e&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd", icon: <UsersIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Semper Admin", href: "https://dod.teams.microsoft.us/l/team/19:dod:570243b431724971aeff925ef3cca4d8%40thread.tacv2/conversations?groupId=e130aa9e-3737-4d0e-baea-a03737570727&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd", icon: <UsersIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "SMART", href: "https://dod.teams.microsoft.us/l/team/19:dod:70e4efb98721461e91daf6810bc72f71%40thread.tacv2/conversations?groupId=14aeb7fc-5b88-4d73-abfb-1e4e1f094cf1&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd", icon: <UsersIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "USMC Administrators", href: "https://dod.teams.microsoft.us/l/team/19:dod:e0b755c8963f41b9b611a56b2a4902e6%40thread.skype/conversations?groupId=6a3d244f-49ed-4396-9bec-d50770c96ca3&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd", icon: <UsersIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "USMC GTCC IBA APCs", href: "https://dod.teams.microsoft.us/l/team/19:dod:49d596f26c5441d1a8dd8744e228f53c%40thread.tacv2/conversations?groupId=6a7d7191-1780-48f1-8cab-a696d6995fd7&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd", icon: <UsersIcon className="h-5 w-5" />, requiresCAC: true },
+];
+
 const financeChecklist: CatalogGroup[] = [
   {
     name: "MCAAT Finance Checklist",
@@ -339,6 +365,21 @@ export default function MCAATPage() {
         </div>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {moreGreatLinks.map((link) => (
+            <QuickLinkCard key={link.title} {...link} />
+          ))}
+        </div>
+      </section>
+
+      {/* Teams Channels Section */}
+      <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+        <div className="flex items-center gap-2 mb-4">
+          <TeamsIcon className="h-5 w-5 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+            Teams Channels
+          </h2>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {teamsChannels.map((link) => (
             <QuickLinkCard key={link.title} {...link} />
           ))}
         </div>
