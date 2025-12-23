@@ -1,5 +1,3 @@
-import CatalogGrid from "../../components/CatalogGrid";
-import { reportGroups, type CatalogGroup } from "../../data/links";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -36,37 +34,6 @@ export default function ReportsPage() {
           </div>
         </section>
       </div>
-      {(() => {
-        const enterprise = reportGroups.find((g) => g.name === "Enterprise Reports") as CatalogGroup | undefined;
-        const unitUserItem = reportGroups.find((g) => g.name === "Portals")?.items.find((i) => i.title === "Unit User Reports");
-        const unitUserGroup: CatalogGroup = {
-          name: "Unit User Reports",
-          items: unitUserItem ? [unitUserItem] : [],
-        };
-        const byName = (n: string) => reportGroups.find((g) => g.name === n) as CatalogGroup | undefined;
-        const common = [
-          byName("Portals"),
-          byName("Non Routine"),
-          byName("Promotions"),
-          byName("Training"),
-          byName("Mondays"),
-          byName("1st of the Month"),
-          byName("15th of the Month"),
-          byName("U&E"),
-        ].filter(Boolean) as CatalogGroup[];
-        const leftGroups = ([enterprise, ...common].filter(Boolean) as CatalogGroup[]);
-        const rightGroups = ([unitUserGroup, ...common].filter(Boolean) as CatalogGroup[]);
-        return (
-          <div className="grid gap-6 md:grid-cols-2">
-            <div id="enterprise">
-              <CatalogGrid groups={leftGroups} />
-            </div>
-            <div id="unit-user">
-              <CatalogGrid groups={rightGroups} />
-            </div>
-          </div>
-        );
-      })()}
     </div>
   );
 }
