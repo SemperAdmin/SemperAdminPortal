@@ -115,6 +115,10 @@ export const commonReferenceUrls: Record<string, string> = {
   "MCO 5800.16A, Vol. 14": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
   "MCO 5800.16A, Volume 14": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
 
+  // SECNAV
+  "SECNAV M-5210.1": "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/5210.1.pdf",
+  "SECNAV M-1650.1": "https://www.marines.mil/Portals/1/Publications/SECNAV%20M-1650.1.pdf?ver=2019-08-23-121307-600",
+
   // MCTFSPRIUM - Add specific chapter URLs as available
   "MCTFSPRIUM": "",
 };
