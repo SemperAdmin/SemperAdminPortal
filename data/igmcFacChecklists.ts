@@ -31,6 +31,7 @@ export interface FACQuestion {
 export interface FACSubsection {
   id: string;
   title: string;
+  note?: string;
   questions: FACQuestion[];
 }
 
