@@ -2199,6 +2199,598 @@ export const militaryAwardsChecklist: FACChecklistData = {
   ],
 };
 
+// Postal Affairs and Official Mail Program Checklist Data
+export const postalAffairsChecklist: FACChecklistData = {
+  slug: "postal-affairs",
+  applicabilityNote: "",
+  revisedDate: "June 3, 2025",
+  sme: {
+    name: "MGySgt Billy Gillenwater",
+    email: "postal.affairs@usmc.mil",
+    phone: "(703) 784-9538",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Unit Mail Room",
+      questions: [
+        {
+          number: "0101",
+          text: "Has the command published a Unit Mail Handling Order?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 7",
+          },
+        },
+        {
+          number: "0102",
+          text: "Has the Commanding Officer appointed in writing a Unit Mail Officer and Assistant Unit Mail Officer?",
+          reference: {
+            text: "MPM 12.2i, 12.2j, 2.18a and MCO 5110.4B, Chap 1, par 2j(1)",
+          },
+        },
+        {
+          number: "0103",
+          text: "Are two Unit Mail Clerks/Orderlies appointed at a minimum for each unit/section?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 3e",
+          },
+        },
+        {
+          number: "0104",
+          text: "Has the current Commanding Officer designated in writing personnel authorized to receive and open official mail to include accountable mail?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 20c-f",
+          },
+        },
+        {
+          number: "0105",
+          text: "Are the designation documents completed and maintained for personnel?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 3 and 4",
+          },
+        },
+        {
+          number: "0106",
+          text: "Has the Unit Mail Officer, Assistant Unit Mail Officer, mail clerks, and mail orderlies received mail handling training within the required period?",
+          reference: {
+            text: "MPM 2.19a, MCO 5110.4B, Chap 1, par 2l(1) and (5)",
+          },
+        },
+        {
+          number: "0107",
+          text: "Does the UMR meet structural requirements?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 9",
+          },
+        },
+        {
+          number: "0108",
+          text: "Has the Commanding Officer provided space and equipment necessary for proper mail handling and security?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2j (6) and Chap 3, par 9",
+          },
+        },
+        {
+          number: "0109",
+          text: "Does the Unit Mail Officer maintain restricted access to the UMR keys?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 10a",
+          },
+        },
+        {
+          number: "0110",
+          text: "Are duplicate keys/combinations maintained and secured?",
+          reference: {
+            text: "USPS Handbook F-101, Chap 3-8, 3-9.1, USPS RE-05, 3-1.12.2, and MCO 5110.4B, Chap 3, par 10c and d",
+          },
+        },
+        {
+          number: "0111",
+          text: "Is the Unit Mail Clerk returning the UMR key to the Unit Mail Officer daily and annotated on a key control log?",
+          reference: {
+            text: "USPS ASM, 273.434 and MCO 5110.4B, Chap 3, par 10a",
+          },
+        },
+        {
+          number: "0112",
+          text: "Does the UMR maintain a separate key control log to transfer the key to another designated Unit Mail Clerk?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 10b",
+          },
+        },
+        {
+          number: "0113",
+          text: 'Is a DD Form 1115, Mail Room No Admittance Except to Authorized Personnel, displayed on or near the entrance to the UMR?',
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 8h",
+          },
+        },
+        {
+          number: "0114",
+          text: "Are only authorized personnel allowed to enter the UMR?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2m(8) and Chap 3, par 8g",
+          },
+        },
+        {
+          number: "0115",
+          text: "Is the UMR free of items not related to the delivery or processing of U.S. mail?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 8a and b",
+          },
+        },
+        {
+          number: "0116",
+          text: "Are random and unannounced weekly inspections conducted by the Unit Mail Officer or Assistant Unit Mail Officer utilizing the current Inspectors General (IG) checklist?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 14a-c",
+          },
+        },
+        {
+          number: "0117",
+          text: "Has the Commanding Officer provided sustained and networked computer access in the UMR to process directory mail?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2j(7)",
+          },
+        },
+        {
+          number: "0118",
+          text: "Does the UMR maintain a copy of the most current edition of the required publications/directives?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 6",
+          },
+        },
+        {
+          number: "0119",
+          text: "Do mail clerks and orderlies have in their possession their DD Form 285?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2m(1), par 2n(1) and Chap 3 par 8(d)",
+          },
+        },
+        {
+          number: "0120",
+          text: "Are the required protections given to the mail to/from the serving MPA?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 11",
+          },
+        },
+        {
+          number: "0121",
+          text: "Do the mail clerks understand the privileged nature of mail and postal records?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 12",
+          },
+        },
+        {
+          number: "0122",
+          text: "Is mail date stamped on reverse side to indicate day of receipt?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2m(4) and Chap 3 par15d",
+          },
+        },
+        {
+          number: "0123",
+          text: "Do Mail Orderlies pick up mail at designated times daily?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2n(2) and Chap 3, par 15d-f",
+          },
+        },
+        {
+          number: "0124",
+          text: "Are Unit Mail Officers providing the serving Post Office timely mobile unit mail routing information?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 28",
+          },
+        },
+        {
+          number: "0125",
+          text: "Do mail clerks understand the instructions concerning the receipt and delivery of Balloting material?",
+          reference: {
+            text: "MPM 19.2.a(1) and MCO 5110.4B, Chap 3, par 21",
+          },
+        },
+        {
+          number: "0126",
+          text: "Do mail clerks understand the instructions concerning the receipt and delivery of Refused mail?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 17",
+          },
+        },
+        {
+          number: "0127",
+          text: "Do mail clerks understand the instructions concerning the receipt and delivery of Open by mistake?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 18",
+          },
+        },
+        {
+          number: "0128",
+          text: "Do mail clerks understand the instructions concerning the receipt and delivery of Mail received open, damaged, or missing contents?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 15b and c",
+          },
+        },
+        {
+          number: "0129",
+          text: 'Do the mail clerks and orderlies understand the delivery instructions of PS Form 3849, "Delivery Notice/Reminder/Receipt," for personal accountable mail?',
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 19",
+          },
+        },
+        {
+          number: "0130",
+          text: "Is mail addressed to the mail clerks processed by his/her section mail orderly?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 16e",
+          },
+        },
+        {
+          number: "0131",
+          text: "Do the mail clerks understand the detection/notification instructions for potential mail bombs and suspicious mail?",
+          reference: {
+            text: "MPM 7.2b, 8.2j and MCO 5110.4B, Chap 6",
+          },
+        },
+        {
+          number: "0132",
+          text: "Do the mail delivery receipt log annotations match the assigned section, DD Form 285, and DD Form 2260?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 15e",
+          },
+        },
+        {
+          number: "0133",
+          text: "Are mail orderly receipt logs properly completed and maintained?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 15e",
+          },
+        },
+        {
+          number: "0134",
+          text: "Is mail delivered to an authorized section Mail Orderly?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 15e and f",
+          },
+        },
+        {
+          number: "0135",
+          text: "Is there a chain of receipts for the delivery of official accountable mail to an authorized agent?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 20g-k",
+          },
+        },
+        {
+          number: "0136",
+          text: "Is official accountable mail that cannot be delivered or properly secured that day returned to the serving MPA?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3 par 20j",
+          },
+        },
+        {
+          number: "0137",
+          text: "Are delivery records for accountable mail properly completed, maintained, and verified by the Unit Mail Officer daily?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 20h-k",
+          },
+        },
+        {
+          number: "0138",
+          text: "Does the command require personnel to check in/out of the UMR?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 23 and 26b",
+          },
+        },
+        {
+          number: "0139",
+          text: "Are mail delivery receptacles issued to authorized patrons?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 2a, 2b, 3a, 6d",
+          },
+        },
+        {
+          number: "0140",
+          text: "Are mail delivery receptacles assigned with required forms and information?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 2 and 3",
+          },
+        },
+        {
+          number: "0141",
+          text: "Are mail delivery receptacles correctly closed?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 9",
+          },
+        },
+        {
+          number: "0142",
+          text: "Are mail delivery receptacle key lock cylinder/combination procedures followed?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 7",
+          },
+        },
+        {
+          number: "0143",
+          text: "Are correct receptacle maintenance and records procedures followed?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 5",
+          },
+        },
+        {
+          number: "0144",
+          text: "Is correctly addressed mail placed in assigned receptacles?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 8",
+          },
+        },
+        {
+          number: "0145",
+          text: "Are the mail delivery receptacles checked bi-weekly for excessive mail accumulation, old mail, or non-use?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 6",
+          },
+        },
+        {
+          number: "0146",
+          text: "Are customers notified of large mail items or excess mail accumulation using a PS Form 3907?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 8c",
+          },
+        },
+        {
+          number: "0147",
+          text: "Are DD Form 2258 - Temporary Mail Disposition Instructions used to indicate the status of addressee and proper mail disposition?",
+          reference: {
+            text: "MCO 5110.4B, Chap 4, par 6b, 8d and 8e",
+          },
+        },
+        {
+          number: "0148",
+          text: "Is general delivery service provided to mail addressed for members due to arrive?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 26j and Chap 4 par 4",
+          },
+        },
+        {
+          number: "0149",
+          text: 'Are NAVMCs 10572 "Directory File Cards" correctly completed, filed, and maintained?',
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 24 and 25",
+          },
+        },
+        {
+          number: "0150",
+          text: "Are mail clerks properly processing directory mail?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 26",
+          },
+        },
+        {
+          number: "0151",
+          text: "Do unit Mail Clerks pick up mail daily from the serving MPA?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2m(3)",
+          },
+        },
+      ],
+    },
+    {
+      id: "02",
+      title: "Command Official Mail Program",
+      questions: [
+        {
+          number: "0201",
+          text: "Has the unit, organization, and/or activity that handles command mail established an Official Mail Program (OMP)?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2j(10) and Chap 5, par 1",
+          },
+        },
+        {
+          number: "0202",
+          text: "Has the unit established policy on incoming and outgoing official mail?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 7p",
+          },
+        },
+        {
+          number: "0203",
+          text: "Has the unit, organization, and/or activity that handles command mail established an Official Mail Center?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 10a, b, and d",
+          },
+        },
+        {
+          number: "0204",
+          text: "Has the Command appointed personnel in writing the grade of E-6/GS-6 or above as the OMM and Assistant OMM?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 3",
+          },
+        },
+        {
+          number: "0205",
+          text: "Has the OMM and assistant OMM completed mail handling training?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5 par 4",
+          },
+        },
+        {
+          number: "0206",
+          text: "Has the Unit Mail Officers and Unit Mail Clerks signed PS Form 8139 – Your Role in Protecting the Security of the United States Mail?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2j(2) and Chap 3, par 3c",
+          },
+        },
+        {
+          number: "0207",
+          text: "Has the command appointed Unit Mail Clerks for units that do not maintain a UMR to deliver official mail to authorized agents?",
+          reference: {
+            text: "MPM 41.2.n, MCO 5110.4B, Chap 3, par 3 and Chap 5, par 10c",
+          },
+        },
+        {
+          number: "0208",
+          text: "Has the current Commanding Officer designated in writing personnel authorized to receive and open official mail, to include official accountable mail?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 20c-f",
+          },
+        },
+        {
+          number: "0209",
+          text: "Is there a chain of receipts for the delivery of official accountable mail to an authorized agent?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 20g-k",
+          },
+        },
+        {
+          number: "0210",
+          text: "Are delivery records properly completed, maintained, and verified by the OMM?",
+          reference: {
+            text: "MCO 5110.4B, Chap 3, par 20h-k",
+          },
+        },
+        {
+          number: "0211",
+          text: "Are official mail addresses verified for accuracy and correctly used?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 18 and 19",
+          },
+        },
+        {
+          number: "0212",
+          text: "Does the OMM maintain a copy of the most current edition of the publications/directives?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 8",
+          },
+        },
+        {
+          number: "0213",
+          text: "Does the command OMC serve as a control point for outgoing official matter?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 10e",
+          },
+        },
+        {
+          number: "0214",
+          text: "Does the OMM understand the provisions for the use of extra services?",
+          reference: {
+            text: "MPM 41.1.c and MCO 5110.4B, Chap 5, par 17",
+          },
+        },
+        {
+          number: "0215",
+          text: "Is the maximum consolidation of correspondence applied for official mailings?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 22b",
+          },
+        },
+        {
+          number: "0216",
+          text: "Has the OMM completed quarterly OMP inspections?",
+          reference: {
+            text: "MCO 5110.4B, Chap 1, par 2k(2)",
+          },
+        },
+      ],
+    },
+    {
+      id: "03",
+      title: "Official Postage Application",
+      questions: [
+        {
+          number: "0301",
+          text: "Are postage meters/stamps correctly secured?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 28 and 30b",
+          },
+        },
+        {
+          number: "0302",
+          text: "Are postage meter keys/combinations correctly secured?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 28 and 30b",
+          },
+        },
+        {
+          number: "0303",
+          text: "Is a postage stamp inventory maintained for the authorized unit?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 30a",
+          },
+        },
+        {
+          number: "0304",
+          text: "Are postage stamp stock audits conducted?",
+          reference: {
+            text: "DODI 4525.09, 3.11c and MCO 5110.4B, Chap 5, par 30c",
+          },
+        },
+        {
+          number: "0305",
+          text: "Is a daily record of meter register correctly recorded?",
+          reference: {
+            text: "MPM Appendix 25A, Table 5, Steps 1-2 and MCO 5110.4B, Chap 5, par 26",
+          },
+        },
+        {
+          number: "0306",
+          text: "Is PS Forms 3533 Application for Voucher for Refund of Postage and Fees, processed and submitted?",
+          reference: {
+            text: "USPS DMM 604, 9.3 and MCO 5110.4B, Chap 5, par 27",
+          },
+        },
+        {
+          number: "0307",
+          text: "Has the OMM analyzed the record of postage expended weekly?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 31",
+          },
+        },
+        {
+          number: "0308",
+          text: "Are cost saving measures applied to official mailings?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 20 and 22b",
+          },
+        },
+        {
+          number: "0309",
+          text: "Are the Priority Mail Express provisions correctly followed?",
+          reference: {
+            text: "MPM 41.1c, e, g and MCO 5110.4B, Chap 5, par 17a",
+          },
+        },
+        {
+          number: "0310",
+          text: "Is the classification of official items correctly endorsed?",
+          reference: {
+            text: "MCO 5110.4B, Chap 5, par 15",
+          },
+        },
+        {
+          number: "0311",
+          text: "Are appropriated funds for postage properly used?",
+          reference: {
+            text: "MPM 41.1.a-b and 41.2.ff and MCO 5110.4B, Chap 5, par 1",
+          },
+        },
+        {
+          number: "0312",
+          text: "Are postage expenditure reports submitted?",
+          reference: {
+            text: "DODI 4525.09, 2.2c and MCO 5110.4B, Chap 5, par 32",
+          },
+        },
+        {
+          number: "0313",
+          text: "Is the OMM conducting regional OMP inspections each fiscal year?",
+          reference: {
+            text: "MPM 25.1.c. and 41.2.e. and MCO 5110.4B, chap 5, par 6",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 // Map of all FAC checklists
 const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   pes: pesChecklist,
@@ -2212,6 +2804,7 @@ const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   "legal-administration": legalAdministrationChecklist,
   "sponsorship-program": sponsorshipProgramChecklist,
   "military-awards": militaryAwardsChecklist,
+  "postal-affairs": postalAffairsChecklist,
 };
 
 // Helper functions
