@@ -259,11 +259,13 @@ export function getUniqueSponors(): string[] {
 }
 
 export function getCategoryCounts(): Record<FACCategory, number> {
-  return {
-    CoRE: functionalAreaChecklists.filter((f) => f.category === "CoRE").length,
-    "Non-CoRE": functionalAreaChecklists.filter((f) => f.category === "Non-CoRE").length,
-    "CoRE+": functionalAreaChecklists.filter((f) => f.category === "CoRE+").length,
-  };
+  return functionalAreaChecklists.reduce(
+    (acc, f) => {
+      acc[f.category]++;
+      return acc;
+    },
+    { CoRE: 0, "Non-CoRE": 0, "CoRE+": 0 } as Record<FACCategory, number>
+  );
 }
 
 export function getAllFACSlugs(): FACSlug[] {
