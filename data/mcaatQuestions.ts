@@ -119,6 +119,17 @@ export const commonReferenceUrls: Record<string, string> = {
   "SECNAV M-5210.1": "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/5210.1.pdf",
   "SECNAV M-1650.1": "https://www.marines.mil/Portals/1/Publications/SECNAV%20M-1650.1.pdf?ver=2019-08-23-121307-600",
 
+  // MARADMINs
+  "MARADMIN 009/25": "https://www.marines.mil/News/Messages/Messages-Display/Article/4027354/marine-corps-lethal-means-safety-needs-assessment-survey/",
+  "MARADMIN 015/20": "https://www.marines.mil/News/Messages/Messages-Display/Article/2055563/manpower-audit-advisory-1-20-requirement-for-using-the-official-military-person/",
+  "MARADMIN 050/03": "https://www.marines.mil/News/Messages/Messages-Display/Article/894099/bas-deductions-and-per-diem-for-marines-participating-in-joint-force-contingenc/",
+  "MARADMIN 081/18": "https://www.marines.mil/News/Messages/Messages-Display/Article/1434154/cy-2017-kallstrom-and-security-emergency-services-civilian-awards/",
+  "MARADMIN 082/18": "https://www.marines.mil/News/Messages/Messages-Display/Article/1434158/awards-update/",
+  "MARADMIN 092/21": "https://www.marines.mil/News/Messages/Messages-Display/Article/2512028/update-to-maradmin-41420-fy21-hardship-duty-pay-tempo-program-details/",
+  "MARADMIN 106/24": "https://www.marines.mil/News/Messages/Messages-Display/Article/3689532/2024-secretary-of-defense-field-depot-and-software-maintenance-awards/",
+  "MARADMIN 111/20": "https://www.marines.mil/News/Messages/Messages-Display/Article/2093168/annual-rifle-training-table-one-score-conversion/",
+  "MARADMINS 0111/20": "https://www.marines.mil/News/Messages/Messages-Display/Article/2093168/annual-rifle-training-table-one-score-conversion/",
+
   // MCTFSPRIUM - Add specific chapter URLs as available
   "MCTFSPRIUM": "",
 };
