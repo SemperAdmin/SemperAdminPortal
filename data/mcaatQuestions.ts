@@ -209,9 +209,61 @@ export const mcaatQuestions: MCCATCategory[] = [
     name: "Defense Travel System",
     description: "DTS compliance including travel vouchers, per diem, BAS/DMR entitlements, and Personnel Tempo reporting.",
     sections: [
-      { unitType: "REPORTING", questions: [] },
-      { unitType: "IPAC", questions: [] },
-      { unitType: "SUPPORTING", questions: [] }
+      {
+        unitType: "REPORTING",
+        questions: [
+          {
+            id: 1,
+            question: "Is Personnel Tempo for Temporarily Additional Duty period(s) reported IAW applicable regulations?",
+            reference: "DoDFMR Vol 7A, Chap 65; MCO 4650.39A, para 4.b(7); MCTFSPRIUM 2-20103, 9-91001",
+            link: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders%2FEnterprise%2BUser%2BReports%2FHQMC%2FSemper%2BAdmin%2FMCAAT%2FPERSTEMPO%2B-%2BReported"
+          },
+          {
+            id: 2,
+            question: "Is the proper BAS/DMR entitlement for Temporarily Additional Duty period(s) reported IAW applicable regulations?",
+            reference: "DoDFMR Vol 7A, Chap 25, para 2.4.3.2; MCTFSPRIUM 2-20103, 8-80402, 8-80403"
+          },
+          {
+            id: 3,
+            question: "Is the unit ensuring the traveler is submitting a completed travel vouchers within 5 working days? (Note: Submitted is identified as created and signed by the traveler within this time period).",
+            reference: "FPM Volume 2 - Travel Policies Chapter 2; MCO 4650.39A, encl 1, chap 1, par 5a(2)(d) and par 11d"
+          },
+          {
+            id: 6,
+            question: "Is the unit ensuring submission of zero dollar vouchers once an unsubmitted voucher exceeds 30 days past the authorized trip end date?",
+            reference: "MARADMIN 359/25"
+          }
+        ]
+      },
+      {
+        unitType: "IPAC",
+        questions: []
+      },
+      {
+        unitType: "SUPPORTING",
+        questions: [
+          {
+            id: 4,
+            question: "Is the unit ensuring the traveler is submitting a completed travel vouchers within 5 working days? (Note: Submitted is identified as created and signed by the traveler within this time period).",
+            reference: "FPM Volume 2 - Travel Policies Chapter 2; MCO 4650.39A, encl 1, chap 1, par 5a(2)(d) and par 11d"
+          },
+          {
+            id: 5,
+            question: "Is the unit ensuring submission of zero dollar vouchers once an unsubmitted voucher exceeds 30 days past the authorized trip end date?",
+            reference: "MARADMIN 359/25"
+          },
+          {
+            id: 7,
+            question: "Is the unit validating Personnel Tempo was reported correctly for Marines that have completed an applicable period?",
+            reference: "DoDFMR Vol. 7A, Chap. 65; MCTFSPRIUM 9-91001"
+          },
+          {
+            id: 8,
+            question: "Is the unit validating that Marines are receiving the proper BAS/DMR entitlement when executing TAD?",
+            reference: "DoDFMR Vol. 7A, Chap. 25, par. 2.4.3.2; MCTFSPRIUM 8-80402, 8-80403"
+          }
+        ]
+      }
     ]
   },
   {
