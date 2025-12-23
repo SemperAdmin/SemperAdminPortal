@@ -1493,6 +1493,712 @@ export const gtccChecklist: FACChecklistData = {
   ],
 };
 
+// Leave, Liberty and Administrative Absence Checklist Data
+export const leaveLibertyChecklist: FACChecklistData = {
+  slug: "leave-liberty",
+  applicabilityNote: "This checklist is applicable to all O-5 and O-6 Level Commands.",
+  revisedDate: "September 3, 2025",
+  smes: [
+    {
+      name: "Capt Marquale Coleman",
+      email: "SMB_HQMC_MPO@usmc.mil",
+      phone: "(703) 784-9371",
+    },
+    {
+      name: "CWO5 Wojciech Faryniarz",
+      email: "SMB_HQMC_MPO@usmc.mil",
+      phone: "(703) 432-9083",
+    },
+  ],
+  subsections: [
+    {
+      id: "01",
+      title: "Leave and Liberty",
+      questions: [
+        {
+          number: "0101",
+          text: "Has the command published a directive or established a program on leave and liberty?",
+          reference: {
+            text: "DoDI 1327.06 Sect 3.1; MCO 1050.3J, chap 4, par 1",
+          },
+        },
+        {
+          number: "0102",
+          text: "Is lost leave restored as special leave accrual (SLA) when Marines were eligible and approved for SLA?",
+          reference: {
+            text: "DoDI 1327.06 Sect 3.8; MCO 1050.3J, chap 2, par 9",
+          },
+        },
+        {
+          number: "0103",
+          text: "Have internal controls for check-out and check-in procedures been established to ensure requests, approvals, execution, and close out of all leave/PTAD is completed in MOL?",
+          reference: {
+            text: "MCO 1050.3J, chap 2, par 5; chap 3, par 1a and 1b; chap 4, par 8",
+          },
+        },
+        {
+          number: "0104",
+          text: "Are Marines granted PTAD only for the purposes permitted in the reference?",
+          reference: {
+            text: "DoDI 1327.06 Sect 4.4",
+          },
+        },
+        {
+          number: "0105",
+          text: "Are periods of absence over leave and absent without leave, when excused as unavoidable, charged as annual leave when appropriate?",
+          reference: {
+            text: "DoDI 1327.06 Sect 5.2; MCO 1050.3J, chap 2, par 20",
+          },
+        },
+        {
+          number: "0106",
+          text: "Are chargeable leave periods being reported on MOL or UD? (check morning reports for individuals marked as on leave with no corresponding approved leave request in MOL and that check-out and check-in were completed)",
+          reference: {
+            text: "MCO 1050.3J, chap 4, par 7b; MCTFSPRIUM, par 70101",
+          },
+        },
+        {
+          number: "0107",
+          text: "Does the command have procedures to ensure Marines are not being approved for Active-Duty Parental Leave for no more than 84 days?",
+          reference: {
+            text: "DoDI 1327.06 Sect 3.11.c, and MARADMIN 051/23",
+          },
+        },
+        {
+          number: "0108",
+          text: "Is the command ensuring that Marines are executing their Active-Duty Parental Leave periods in increments not less than 7 days?",
+          reference: {
+            text: "DoDI 1327.06 Sect 3.11.c.(7)(a); and MARADMIN 051/23",
+          },
+        },
+        {
+          number: "0109",
+          text: "Are Marines being charged for leave when they check out on a non-duty day?",
+          reference: {
+            text: "DoDI 1327.06 Sect 5.1.b.(1)",
+          },
+        },
+        {
+          number: "0110",
+          text: "Does the command have procedures in place for convalescent leave following childbirth or perinatal loss?",
+          reference: {
+            text: "DoDI 1327.06 Sect 3.11.c.(13), BUMED NOTE 6000, and MARADMIN 129/23",
+          },
+        },
+        {
+          number: "0111",
+          text: "Does the command have established procedures and requirements in place for managing the allocation of bereavement leave?",
+          reference: {
+            text: "DoDI 1327.06 Sect 3.11.j.(5); MARADMIN 220/23",
+          },
+        },
+      ],
+    },
+  ],
+};
+
+// Legal Administration Checklist Data
+export const legalAdministrationChecklist: FACChecklistData = {
+  slug: "legal-administration",
+  applicabilityNote:
+    "This checklist applies to all Commanders/Commanding Generals at the Air, Ground, Logistics, and Installation level but is not intended to inspect legal support functions within the Office of the Staff Judge Advocate.",
+  revisedDate: "September 17, 2025",
+  smes: [
+    {
+      name: "CWO4 Jeremy M. Burns",
+      email: "jeremy.m.burns@usmc.mil",
+      phone: "(703) 614-8661",
+    },
+    {
+      name: "MGySgt Walter J. Blagg",
+      email: "walter.blagg@usmc.mil",
+      phone: "(703) 614-8661",
+    },
+  ],
+  subsections: [
+    {
+      id: "01",
+      title: "Non-Judicial Punishment",
+      note: "Questions apply to all NJPs conducted during the last 24 months.",
+      questions: [
+        {
+          number: "0101",
+          text: "Is the current version of the UPB (NAVMC 10132 (REV. 08-2023)) being utilized in each instance where NJP is imposed on Marine enlisted personnel with a separate binder or digital file folder for each calendar year?",
+          reference: {
+            text: "MCO 5800.16, V-14, par 011101 and 011110",
+          },
+        },
+        {
+          number: "0102",
+          text: "Are UPBs maintained alphabetically for 3 full years in either a loose-leaf binder or an electronic file folder with disposal instructions?",
+          reference: {
+            text: "MCO 5800.16, V-14, par 011110.A and B and SECNAV M 5210.1 (2019), pg. III-1, par 2.b., electronic file – Schedules Cross Walked by Chapter",
+          },
+        },
+        {
+          number: "0103",
+          text: "Does the UPB file consist of original (if hard copy) UPB including attached pages, appeals and summary transcript or digital file IAW the command's file plan?",
+          reference: {
+            text: "MCO 5800.16, V-14, par 011110.A",
+          },
+        },
+        {
+          number: "0104",
+          text: "Are original (if hard copy) letters of appeal and allied papers (e.g., statements, investigative reports, documents, records, photographs, etc.) filed with the UPB files of the unit that conducted the NJP?",
+          reference: {
+            text: "MCO 5800.16, V-14, par 011107",
+          },
+        },
+        {
+          number: "0105",
+          text: "Is a copy of the UPB (NAVMC 10132) provided to IPAC/Admin Section and are all NJPs run on unit diary, with the exception of non-punitive measures, and are entries recorded on the UPB consistent with entries recorded on the unit diary?",
+          reference: {
+            text: "MCO 5800.16, V-14, par 011109",
+          },
+        },
+        {
+          number: "0106",
+          text: "Are punishments imposed in compliance with allowable maximum punishments?",
+          reference: {
+            text: "Manual for Courts-Martial (2024), Part V, par 5, pg. V-4 to V-7; JAGINST 5800.7G w/CH 1, Chap 1, par 0111",
+          },
+        },
+        {
+          number: "0107",
+          text: "Are appeals requesting stays of punishment involving restriction/extra duties acted on within five days? If not are punishments stayed?",
+          reference: {
+            text: "Manual for Courts-Martial (2024), Part V, par 7d, pg. V-8",
+          },
+        },
+        {
+          number: "0108",
+          text: "Are all the appropriate blocks of each UPB for the past 3 calendar years filled out in accordance with the reference? (a) Item 1: Does this include article(s) of the UCMJ violated and a summary of each offense alleged to include date, time, and place of the alleged offense. (b) Item 2: Requires advising the accused in accordance with Article 31, UCMJ. Did the accused indicate intentions by selecting from drop-down choices or by manually writing in their intentions? Did the accused date and sign? If accused refused to sign, is the \"refused to sign\" box checked and did the CO sign in this block instead? (c) Item 3: Completed upon ensuring that the individual has been informed of rights enumerated in item 2. Did the immediate commanding officer date and sign item 3 prior to imposition of NJP. (d) Item 4: Does this block contain current and previous UAs in excess of 24 hours and current and previous desertions recorded? (e) Item 5: Is the correct drop down selected for each charge or written in for each charge? (f) Item 6: Record complete and accurate punishment(s) imposed followed by date of imposition. (g) Item 7: Record date of suspension followed by complete and accurate description of all or parts of punishment being suspended. If none, is the word \"NONE\" recorded? (h) Item 8, 8A, and 8B: Is complete name, rank/grade, title, and EDIPI of the officer imposing punishment listed? (i) Item 9: Is this block signed by the officer imposing punishment? (j) Item 10: Does this block properly reflect the date of notification? (k) Item 11: Is this block signed and dated by the officer imposing punishment? (l) Item 12: Did the accused select a choice from the drop-down selections and sign? (m) Item 13: Is this block dated? If not appealed, is the \"Not appealed\" box checked? (n) Item 14: Has the officer who acted on the appeal completed this block or has it been left blank (no appeal). (o) Item 15: Is there a date of notification of appeal decision listed or has it been left blank (no appeal)? (p) Item 16: Has the officer responsible for required administrative action initialed? Must be complete; cannot be left blank. (q) Item 17: Correctly reflect complete unit. (r) Item 18: Correctly reflect last name, first name, middle initial. (s) Item 19: Correctly reflect rank/grade. (t) Item 20: Correctly reflect EDIPI. (u) Item 21: Correctly reflect amplifying remarks. (v) Item 22: Are victim demographic information entries made in cases with victims, \"unknown\" if victim declines to answer, or left blank if there are no victims?",
+          reference: {
+            text: "MCO 5800.16, V-14, par 011105",
+          },
+        },
+        {
+          number: "0109",
+          text: "Can the unit confirm a copy of the UPB (NAVMC 10132) is provided to IPAC/Admin Section for Inclusion into Marine's OMPF?",
+          reference: {
+            text: "MCO 5800.16, V-14, par 011103 and par 011109",
+          },
+        },
+        {
+          number: "0110",
+          text: "Explain the processes in place to ensure the Marine is provided a copy of the UPB once proceedings are completed and filed.",
+          reference: {
+            text: "MCO 5800.16, V-14, par 011109",
+          },
+        },
+        {
+          number: "0111",
+          text: "Are signatures on the UPB that of the Commander or as authorized by the references?",
+          reference: {
+            text: "MCO P1070.12K W/CH 1, par 4007.2a and MCO 5800.16, V-14, par 011105.Q",
+          },
+        },
+        {
+          number: "0112",
+          text: "If a Commander intends for an oral reprimand to be non-punitive, is the UPB being retained or disposed?",
+          reference: {
+            text: "MCO P1070.12K w/CH 1, par 4007.2b(1)",
+          },
+        },
+        {
+          number: "0113",
+          text: "If a hearing of NJP results in no punishment imposed, is the UPB being retained or disposed?",
+          reference: {
+            text: "MCO 5800.16, V-14, par 011110.C",
+          },
+        },
+        {
+          number: "0114",
+          text: "When an officer receives NJP, is the UPB entry, acknowledgement of the opportunity to submit matters, and any response provided to the local personnel administration center for inclusion into the officer's OMPF?",
+          reference: {
+            text: "MARADMIN 427/23",
+          },
+        },
+        {
+          number: "0115",
+          text: "Are processes in place to ensure that victims are notified of any decision to dispose of an alleged offense at non-judicial punishment?",
+          reference: {
+            text: "MCO 5800.16-V16, para. 040401.Y",
+          },
+        },
+        {
+          number: "0116",
+          text: "Are processes in place to ensure that victims are notified of the time and location of any NJP?",
+          reference: {
+            text: "MCO 5800.16-V16, para. 040401.Y",
+          },
+        },
+        {
+          number: "0117",
+          text: "Are processes in place to ensure that victims are notified of the findings and sentence imposed at NJP?",
+          reference: {
+            text: "MCO 5800.16-V16, para. 040401.Y",
+          },
+        },
+      ],
+    },
+    {
+      id: "02",
+      title: "Courts-Martial",
+      note: "Questions apply to all Summary, Special, and General Courts-martial conducted during the last 24 months.",
+      questions: [
+        {
+          number: "0201",
+          text: "Does the unit forward all summary courts-martial to a Judge Advocate for the required post-trial review?",
+          reference: {
+            text: "Manual for Courts Martial (2024), Article 64, pg. A2-28 to A2-29",
+          },
+        },
+        {
+          number: "0202",
+          text: "Does the unit maintain copies of all summary courts-martial cases, to include a copy of the record of trial and Judge Advocate Review, for 2 years?",
+          reference: {
+            text: "SECNAV M 5210.1 (2019), pg. III-1, par 2.b., electronic file – Schedules Cross Walked by Chapter",
+          },
+        },
+        {
+          number: "0203",
+          text: "Does the unit maintain copies of all special/general courts-martial cases, to include a copy of the record of trial and Judge Advocate Review, for two years after completion of appellate review or are the case files maintained by the servicing Legal Services Support Section (if the command's legal services is provided by another Service (e.g. Navy, Army, Air Force) then the command must retain copies of all courts-martial cases for two years after appellate review)?",
+          reference: {
+            text: "SECNAV M 5210.1 (2019), pg. III-1, par 2.b., electronic file – Schedules Cross Walked by Chapter",
+          },
+        },
+      ],
+    },
+    {
+      id: "03",
+      title: "Files",
+      note: "Question applies to all legal files accumulated by the command regarding all legal matters, to include but not limited to, Investigations, Administrative Separations, and Courts-Martial.",
+      questions: [
+        {
+          number: "0301",
+          text: "Is each legal file folder labeled with appropriate standard subject identification codes, open/close dates, and disposal instructions on the outside of the file folder?",
+          reference: {
+            text: "SECNAV M-5210.2, Part I, Chap 2, par 2-2(a)-(c)",
+          },
+        },
+      ],
+    },
+    {
+      id: "04",
+      title: "Administrative Investigations",
+      questions: [
+        {
+          number: "0401",
+          text: "Does the unit have complete file copies (to include all endorsements) of each Administrative Investigation processed during the past two years? [Must include endorsement from HHQ as appropriate]",
+          reference: {
+            text: "SECNAV M 5210.1 (2019), pg. III-1, par 2.b., electronic file – Schedules Cross Walked by Chapter; JAGINST 5800.7G w/Ch.1, Chap II, sect 0209f(3)",
+          },
+        },
+        {
+          number: "0402",
+          text: "Do Administrative Investigations comply with time limitations set for completing, reviewing and forwarding? If not, has an explanation of the delay been provided in the Commanding Officer's endorsement or in the IO's preliminary statement, or have extensions been properly requested and approved?",
+          reference: {
+            text: "JAGINST 5800.7G w/CH 1, Chap II, sect 0203e, 0206c(9), 0209f, 0210c(7), 0210f(1) and 0225e",
+          },
+        },
+        {
+          number: "0403",
+          text: "Do Command Investigation convening orders contain all relevant elements identified in the reference?",
+          reference: {
+            text: "JAGINST 5800.7G w/CH 1, Chap II, sect 0206c",
+          },
+        },
+        {
+          number: "0404",
+          text: "When photographs or video recordings are included as part of the investigation are they marked properly?",
+          reference: {
+            text: "JAGINST 5800.7G w/CH 1, Chap II, sect 0207b(4)",
+          },
+        },
+        {
+          number: "0405",
+          text: "Has the commander properly endorsed all Command Investigations to include investigations closed at the unit level to file?",
+          reference: {
+            text: "JAGINST 5800.7G w/CH 1, Chap II, sect 0204d",
+          },
+        },
+        {
+          number: "0406",
+          text: "Has the commander forwarded all Command Investigations (except those Command Investigations that meet the criteria under section 0209(f)(1)) to the General Court-Martial Convening Authority for review?",
+          reference: {
+            text: "JAGINST 5800.7G w/CH 1, Chap II, sect 0209g(1)",
+          },
+        },
+        {
+          number: "0407",
+          text: "Has the command convened or conducted any Litigation-Report Investigations over the past two years? (If not, proceed to 0410). Do Litigation-Report Investigation convening orders contain all relevant elements identified in the reference?",
+          reference: {
+            text: "JAGINST 5800.7G w/CH 1, Chap II, sect 0210c",
+          },
+        },
+        {
+          number: "0408",
+          text: 'Do Litigation-Report Investigations state specifically: "This investigation is being convened and your report is being prepared in contemplation of litigation and for the express purpose of assisting attorneys representing the interests of the United States in the matter"?',
+          reference: {
+            text: "JAGINST 5800.7G w/CH 1, Chap II, sect 0210c(3)",
+          },
+        },
+        {
+          number: "0409",
+          text: 'Are all Litigation-Report Investigation files kept in a file marked "FOR OFFICIAL USE ONLY: LITIGATION/ATTORNEY WORK PRODUCT"?',
+          reference: {
+            text: "JAGINST 5800.7G w/CH 1, Chap II, sect 0210f(2)",
+          },
+        },
+        {
+          number: "0410",
+          text: "In the event of a service member's death, did the commander initially order a Preliminary Inquiry into the circumstances surrounding the incident? At the conclusion of the Preliminary Inquiry, what option listed in section 0204 of the reference did the commander exercise?",
+          reference: {
+            text: "JAGINST 5800.7G w/CH 1, Chap II, sect 0226",
+          },
+        },
+        {
+          number: "0411",
+          text: "Was a line of duty determination recommendation made in each case and forwarded to the first GCMCA in the chain of command with an assigned judge advocate.",
+          reference: {
+            text: "JAGINST 5800.7G w/CH 1, Chap II, sect 0229d",
+          },
+        },
+      ],
+    },
+    {
+      id: "05",
+      title: "Enlisted Involuntary Administrative Separations",
+      questions: [
+        {
+          number: "0501",
+          text: "Does the unit have a complete file copy (to include a copy of the separation authority's endorsement) of each Enlisted Involuntary Administrative Discharge processed during the past 3 years?",
+          reference: {
+            text: "SECNAV M 5210.1 (2019), pg. III-1, par 2.b., electronic file – Schedules Cross Walked by Chapter",
+          },
+        },
+        {
+          number: "0502",
+          text: "Are activity copies of Administrative Discharge Records destroyed when 3 years old?",
+          reference: {
+            text: "SECNAV M 5210.1 (2019), pg. III-1, par 2.b., electronic file – Schedules Cross Walked by Chapter",
+          },
+        },
+        {
+          number: "0503",
+          text: 'Are notification letters and command recommendations signed personally by the commanding officer, or during the commanding officer\'s official absence, are these letters signed "Acting" by the officer temporarily succeeding to command?',
+          reference: {
+            text: "MCO 1900.16 w/CH 2, Chap 6, par 6302.3",
+          },
+        },
+        {
+          number: "0504",
+          text: "If there is evidence of alcohol or drug abuse/dependence, is the respondent being screened at a SACC or an equivalent facility (i.e., military MTF, or other DOD counseling facility) and offered treatment before the case is referred to a board or forwarded to the separation authority?",
+          reference: {
+            text: "MCO 1900.16 w/CH 2, Chap 6, par 6303.3",
+          },
+        },
+        {
+          number: "0505",
+          text: "Are all Enlisted Involuntary Administrative Separations processed for a Personality Disorder in compliance with the procedural requirements?",
+          reference: {
+            text: "MCO 1900.16 w/CH 2, Chap 6, 6203.2",
+          },
+        },
+        {
+          number: "0506",
+          text: "Are all Enlisted Involuntary Administrative Separations processed for Sexual Misconduct procedurally compliant?",
+          reference: {
+            text: "MCO 1900.16 w/CH 2, Chap 6, sect 6210.4",
+          },
+        },
+      ],
+    },
+    {
+      id: "06",
+      title: "Criminal Justice Information Reporting",
+      questions: [
+        {
+          number: "0601",
+          text: "In any case where a member of the command is subject to a civilian court-issued restraining order or is convicted at SPCM, GCM, or in a civilian court of a crime of domestic violence, did the commanding officer provide supporting documentation to and direct the member to report to the servicing law enforcement agency, (NCIS, CID, PMO or other) within five working days of notification?",
+          reference: {
+            text: "MCBUL 5810 of 22 May 2024, encl (2)",
+          },
+        },
+        {
+          number: "0602",
+          text: "In any case where a member of the command is determined, via a finding at an NJP, SCM, SPCM, or Admin Separation Proceedings to have wrongfully used any controlled substance in violation of Article 112a, UCMJ, did the commanding officer provide supporting documentation to and direct the member to report to the servicing law enforcement agency (NCIS, CID, PMO or other) within five working days of disposition?",
+          reference: {
+            text: "MCBUL 5810 of 22 May 2024, encl (2)",
+          },
+        },
+        {
+          number: "0603",
+          text: "In any case where a member of the command is either: 1. Subject to charges referred to a GCM; 2. Is convicted by a GCM of any offense punishable by more than one year confinement, regardless of the amount of confinement actually awarded or imposed; 3. Is found guilty at trial by SPCM or GCM of any offense of domestic violence as defined in the reference regardless of the punishment awarded; 4. Is found incompetent to stand trial or found not guilty by reason of lack of mental responsibility at trial by SPCM or GCM; or 5. Enters an unauthorized absence or deserter status following preferral of charges; Did the commanding officer provide supporting documentation to and direct the member to report to the servicing law enforcement agency (NCIS, CID, PMO or other) within five working days of disposition?",
+          reference: {
+            text: "MCBUL 5810 of 22 May 2024, encl (2)",
+          },
+        },
+        {
+          number: "0604",
+          text: 'Did the commanding officer counsel in writing a "prohibited person" to abide by Federal law pertaining to restricted access to personally owned firearms and ammunition and to make arrangements to dispose of all such items?',
+          reference: {
+            text: "MCBUL 5810 of 22 May 2024, encl (2)",
+          },
+        },
+        {
+          number: "0605",
+          text: 'Does the command have a procedure in place to ensure a "prohibited person" is not permitted access to privately owned firearms stored in unit armories? If yes, what is the procedure?',
+          reference: {
+            text: "MCBUL 5810 of 22 May 2024, encl (2)",
+          },
+        },
+      ],
+    },
+    {
+      id: "07",
+      title: "General",
+      questions: [
+        {
+          number: "0701",
+          text: "What system is in effect for placing an accused on legal hold for a court-martial?",
+          reference: {
+            text: "MCO 1900.16, par 1008.1(c)",
+          },
+        },
+        {
+          number: "0702",
+          text: "What procedures are implemented to ensure a member is processed for appellate leave, if applicable? Describe briefly.",
+          reference: {
+            text: "SECNAVINST 1050.1A; MCO 1050.16A",
+          },
+        },
+      ],
+    },
+  ],
+};
+
+// Marine Corps Sponsorship Program Checklist Data
+export const sponsorshipProgramChecklist: FACChecklistData = {
+  slug: "sponsorship-program",
+  applicabilityNote: "This checklist applies to all levels and types of commands.",
+  revisedDate: "March 24, 2025",
+  sme: {
+    name: "Ms. Lucinda Lorei",
+    email: "lucinda.lorei@usmc.mil",
+    phone: "(703) 784-0518",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Unit-Specific Items (All commands)",
+      questions: [
+        {
+          number: "0101",
+          text: "Is a hard copy and an electronic copy of the Sponsorship turnover binder maintained, and does it include all required items per the MCO?",
+          reference: {
+            text: "MCO 1320.11H, Par 4b(7)(m)",
+          },
+        },
+        {
+          number: "0102",
+          text: "Have all Sponsorship Coordinators (SC) and Sponsors within the Command completed the required training according to the respective timelines prescribed in the MCO?",
+          reference: {
+            text: "MCO 1320.11H, Par 4b(7)(a) and Par 4b(7)d",
+          },
+        },
+        {
+          number: "0103",
+          text: "Does the Command assign a Sponsor to all Service Members executing a PCS, using NAVMC 11799?",
+          reference: {
+            text: "MCO 1320.11H, Par 4a(2)e; Par 4b(7)g",
+          },
+        },
+        {
+          number: "0104",
+          text: "Is the SC contact information provided to the installation and supporting Information, Referral and Relocation (IR&R) Manager, and is this information updated when a new SC is assigned?",
+          reference: {
+            text: "MCO 1320.11H, Par 4b(7)(b); Par 4b(7)(l)",
+          },
+        },
+        {
+          number: "0105",
+          text: "Does the SC maintain sponsor assignment tracking documentation and program utilization metrics; provide this information to the installation and supporting IR&R Manager at the end of each quarter?",
+          reference: {
+            text: "MCO 1320.11H, Par 4b(7)(i)",
+          },
+        },
+        {
+          number: "0106",
+          text: "Does the Unit Commander review NAVMC 11791, Sponsorship Program Questionnaire, periodically to determine trends in order to enhance the Unit's Sponsorship Program?",
+          reference: {
+            text: "MCO 1320.11H, Par 4b(6)(j)",
+          },
+        },
+      ],
+    },
+  ],
+};
+
+// Military Awards Checklist Data
+export const militaryAwardsChecklist: FACChecklistData = {
+  slug: "military-awards",
+  applicabilityNote:
+    "This checklist applies to all commands and activities that have an awarding authority for any awards. All elements of a question must be satisfied to be found compliant.",
+  revisedDate: "June 3, 2025",
+  sme: {
+    name: "Capt Josefina Cisneros",
+    email: "smb_hqmc_pers_awards@usmc.mil",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "General Military Awards Policy",
+      questions: [
+        {
+          number: "0101",
+          text: "Does the command have the pertinent military awards references and are the command's administrative personnel familiar with the requirements of current awards directives? Must have access to the following references either electronically or on-hand: (a) MCO 1650.19J (b) SECNAVINST 1650.1J (c) SECNAV M-1650.1 (d) SECNAV M-5216.5 (e) DoD Instruction 1348.33 (f) DoD Manual 1348.33; Vol 1-4",
+          reference: {
+            text: "SECNAV M-1650.1, Ch. 1, Para. 1.1.b. (p 1-1); MCO 1650.1J, Encl. 1, Para 1.a.-1.c. (p 1)",
+          },
+        },
+        {
+          number: "0102",
+          text: "If the command has published local awards instructions or orders, do they comply with the orders and directives established in the references?",
+          reference: {
+            text: "SECNAVINST 1650.1J, Encl. 7, Para. 3.a.; DoD Instruction 1348.33, Para. 2.9.b. & 2.9.c.",
+          },
+        },
+        {
+          number: "0103",
+          text: "Are the command's administrative personnel familiar with procedures for processing awards approved by Navy, Joint, and other U.S. Armed Forces (i.e. awards receive validation by MMPB-31 and entry into personnel records)? At a minimum, are personnel familiar with the following: (a) In what situation is a Marine eligible for another Service's award? (b) In what situation is a Marine eligible to receive a Joint award? (c) What actions can a command take if one of their Marines was erroneously presented another service's award or a Joint Award for which the Marine was not eligible?",
+          reference: {
+            text: "SECNAVINST 1650.1J, Encl. 4, Para. 1",
+          },
+        },
+        {
+          number: "0104",
+          text: "Are administrative personnel and/or the awarding authority familiar with the requirements for the Military Outstanding Volunteer Service Medal (MOVSM)? Does a review of approved MOVSM's reveal that they were only awarded when the following criteria were clearly met: (a) Three (3) years of sustained service (b) Service cannot have a connection/link to a military mission (i.e. Toys for Tots, military recruiting, etc.)",
+          reference: {
+            text: "SECNAV M-1650.1, Appendix 4A, TAB 18 MOVSM",
+          },
+        },
+        {
+          number: "0105",
+          text: "Does the command ensure that only the awards which are authorized to have certificates as part of the award elements have them (i.e. NA, NC, MM, LM, etc) and that those awards which are not authorized to have certificates do not (i.e. CR, OV, HSM, AFSM, Recruiting Ribbon)?",
+          reference: {
+            text: "SECNAV M-1650.1, see Award Element for guidance per each Award Criteria",
+          },
+        },
+      ],
+    },
+    {
+      id: "02",
+      title: "Program Administration and Timeliness",
+      questions: [
+        {
+          number: "0201",
+          text: "Originator Timeliness: Are commands/administrative personnel ensuring that ALL awards are submitted within the Secretary of the Navy's timeline? (a) Retirement/Transfer. All Personal Military Decorations (PMD)s must have sufficient time to arrive at the final awarding authority for adjudication at least 60 days prior to the desired presentation date, 90 days prior during the summer months, or 90 days prior for any award that requires approval/endorsement by the Secretary of the Navy. (b) PMD time limits. All PMD nominations, except the Combat Action Ribbon (CR) and Purple Heart Medal (PH), must be officially originated with three (3) years of the distinguishing act or end of the period of service, and a final determination made within two (2) years of that, in no case more than five (5) years after the act. (c) Valor PMDs. All nominations for valor decorations are a priority and warrant special handling. Nominations must be originated and entered into official channels within 45 days of the distinguishing act. (d) Unit decoration submissions. Same as for PMDs. (e) CE&S. Not subject to time limits.",
+          reference: {
+            text: "SECNAVINST 1650.1J, Para. 5.h (p 3) & Encl. 5 Timeliness Standards; SECNAV M-1650.1, Appendix 1A, (p 1-9); MCO 1650.19J, Encl. 1, Para. 2.f. (p 3); SECNAVINST 1650.1J, Encl. 5. Para. 2; SECNAVINST 1650.1J, Encl. 5 Timeliness Standards; SECNAV M-1650.1, Appendix 1A, Para. 1A.2.b.(1) Valor Time Limits (p 1-9)",
+          },
+        },
+        {
+          number: "0202",
+          text: "Commander Timeliness: Is the command taking timely action on recommendations for award recognition as verified by a review of all awards currently pending at the command's level or pending approval at a higher level? Timely action is defined as the following: (a) Commands must process all valor award recommendations, to either approve the award or forward via the chain of command to the appropriate awarding authority within 20 days of receipt. (b) Are commands entering explanatory comments when awards submissions are outside of the above time limits? (c) Is the Commander taking action to endorse awards in compliance with references?",
+          reference: {
+            text: "SECNAV M-1650.1, Appendix 1A, Para. 1A.2.b2. (p 1-10); SECNAVINST 1650.1J, Encl. (5), Para. 7.a; MCO 1650.19J, Encl 1; SECNAVINST 1650.1J, Encl 5; MARADMIN 99/18",
+          },
+        },
+        {
+          number: "0203",
+          text: "Are the command's administrative personnel processing all awards requiring approval by a Marine Corps awarding authority electronically via the Improved Awards Processing System (iAPS)?",
+          reference: {
+            text: "SECNAV M-1650.1, Ch3, Para. 3.2a.(1)(b) (p 3-4), MARADMIN 042/08",
+          },
+        },
+        {
+          number: "0204",
+          text: 'Is the command appropriately approving and delegating iAPS permissions IAW regulations in a timely manner by responding to "Pending" requests within 30 days and removing permissions from personnel who depart the command within 30 days?',
+          reference: {
+            text: "SECNAVINST 1650.1J Encl (4) 2.a.(3), MARADMIN 99/18",
+          },
+        },
+        {
+          number: "0205",
+          text: "Is the command ensuring that awards are originated by authorized personnel only (originator must be senior to the nominee by billet or rank and in the same chain of command during the time of action)? Is the command ensuring that awards are endorsed and approved by Commanders and/or Officers in Charge (OIC) in the Chain of Command (CoC)? Is this supported by a review of a random sample of completed awards and current iAPS permissions delegation?",
+          reference: {
+            text: "SECNAVINST 1650.1J, Encl. 4, Para. 2.a.(3); SECNAV M-1650.1, Ch. 1, Para. 1.2.b.(1)",
+          },
+        },
+      ],
+    },
+    {
+      id: "03",
+      title: "Editing and Administrative Processing",
+      questions: [
+        {
+          number: "0301",
+          text: "Is the command ensuring that all award recommendations are being routed to the awarding authority whom had jurisdiction over the nominee at the time of the action or service? Is the award nomination being forwarded to the commander who has authority to approve the level of PMD recommended by the originator? Note: The official with award approval authority must be in the awardee's CoC at the time of the distinguishing act, or the end of the meritorious service.",
+          reference: {
+            text: "SECNAV M-1650.1, Para. 2.2.a.(4) (p 2-5); MCO 1650.19J, Encl. 2, Para. 8.d. (p 3)",
+          },
+        },
+        {
+          number: "0302",
+          text: 'Is the command ensuring all awards endorsed or approved for a specific achievement satisfy the below: (a) Award has a full detailed SOA within page limit requirement (2 pages). (b) Valor award nominations contains the "Standard Valor Award Key Information" format in SOA. (c) Award information/NAVMC 11533 data is complete and administratively correct (i.e. detachment types/dates, endorsements, geographic location, and awarding authority address, etc.). (d) Award has a properly formatted citation free of grammar or spelling errors. (e) Opening and Closing sentences are correct, IAW references.',
+          reference: {
+            text: "SECNAV M-1650.1, Appendix 2D.2e. SOA (p 2-68/69/70); SECNAV M-1650.1, Appendix 2D (p 2-72),TAB 1: Nominations for Valor PMD Table 12 (p 2-72) & Table 13 (p 2-73); SECNAV M-1650.1, Appendix 2D, Para. d (p 2-74); SECNAV M-5216.5, Ch. 2, Para. 1.a. (p 2-1); SECNAV M-1650.1, Appendix 2E How to Prepare a PMD; Citation/Certificate; Table 18, p 2-85/86 (Air Medal & Above) and Table 21, p 2-96 (NC & NAM)",
+          },
+        },
+        {
+          number: "0303",
+          text: "Does the command ensure all formal certificates and citations are correctly produced and that any changes made to the final citation are reflected in iAPS prior to presentation, filing, and forwarding to CMC (MMPB-31) for archiving? (a) Is the command attaching a PDF copy of the award certificate(s) to the Certificates tab in iAPS? (b) Is this confirmed by a review of all formal certificates from an iAPS report of the unit's approved awards in iAPS?",
+          reference: {
+            text: "SECNAV M-1650.1, Ch. 2, Para. 2.2.e (p 2-8)",
+          },
+        },
+        {
+          number: "0304",
+          text: "Does the command strictly enforce the SECNAV policy concerning duplication of awards so that only one award will be approved for the same act, achievement, or period of meritorious service for an individual by reviewing the member's records in MCTFS, OMPF, and iAPS to ensure that no material from a previous award is duplicated in a new award submission?",
+          reference: {
+            text: "DoD Instruction 1348.33, Sect. 3, 3.1.a (p 12); SECNAVINST 1650.1J, Encl. 4, 1.b.3. (p 2) & 1.c.4. (p 3); SECNAV M-1650.1, Ch. 2, 2.1.c. (p 2-1) & Ch. 3, 3.1.d. (p 3-3)",
+          },
+        },
+        {
+          number: "0305",
+          text: "Does the command submit approved awards to MMPB-31 in iAPS within 10 working days after the summary of action end date or date of presentation (whichever is later)? Is this confirmed by a review of at least five command approved awards in the iAPS archives and all awards currently in processing?",
+          reference: {
+            text: "SECNAV M-5216.5, Ch. 2, Para. 2.2.8.a. (p 2-6)",
+          },
+        },
+        {
+          number: "0306",
+          text: "Does the command ensure that no awards are awarded to an individual whose actions are less than honorable in accordance with 10 USC § 1136? Is this supported by a review of the command's Quarterly Criminal Activity Report, Legal Report, and/or Command Legal Action Module against awards approved in iAPS and on Marine Online (i.e. Good Conduct Medal)?",
+          reference: {
+            text: "DoD Instruction 1348.33, Sect 1, Para. 1.2.c. (p 5) & Sect 8 (p 27); SECNAVINST 1650.1J, Para. 5.k. (p 3); SECNAV M-1650.1, Ch. 2, Para. 2.1.h. (p 2-3)",
+          },
+        },
+        {
+          number: "0307",
+          text: "Does the command ensure that any casualty reports submitted as a result of hostile enemy action contain sufficient information for the Purple Heart Medal (PH) awarding authority to make a PH determination?",
+          reference: {
+            text: "SECNAV M-1650.1, Appendix 2B, Para. 2B.5.a. (p 2-59)",
+          },
+        },
+        {
+          number: "0308",
+          text: "Has the command ensured that any Bronze Star Medal awarded met the requirement that the recipient was in receipt of special pay(s) during the period of action?",
+          reference: {
+            text: "SECNAV M-1650.1, Appendix 2A, Tab 8, Para. c.(2)",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 // Map of all FAC checklists
 const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   pes: pesChecklist,
@@ -1502,6 +2208,10 @@ const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   dts: dtsChecklist,
   "directives-management": directivesManagementChecklist,
   gtcc: gtccChecklist,
+  "leave-liberty": leaveLibertyChecklist,
+  "legal-administration": legalAdministrationChecklist,
+  "sponsorship-program": sponsorshipProgramChecklist,
+  "military-awards": militaryAwardsChecklist,
 };
 
 // Helper functions
