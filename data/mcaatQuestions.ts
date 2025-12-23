@@ -588,9 +588,111 @@ export const mcaatQuestions: MCCATCategory[] = [
     name: "Inbound Management / Gains",
     description: "Join processing, inbound interviews, PCS travel claims, and OMPF document requirements.",
     sections: [
-      { unitType: "REPORTING", questions: [] },
-      { unitType: "IPAC", questions: [] },
-      { unitType: "SUPPORTING", questions: [] }
+      {
+        unitType: "REPORTING",
+        questions: [
+          {
+            id: 1,
+            question: "For joins processed outside of IBI, is the join audit process completed IAW MCTFSPRIUM, 12-120103?",
+            reference: "MCTFSPRIUM, 12-120103,12-120104"
+          },
+          {
+            id: 2,
+            question: "For joins processed outside of IBI, does the organization maintain and retain supporting documents on file for audit, and in accordance with retention policies?",
+            reference: "MCTFSPRIUM, 12-120103; MARADMIN 601/24"
+          },
+          {
+            id: 3,
+            question: "For joins processed outside of IBI, is the PCS travel claim submitted in accordance with current regulations?",
+            reference: "FPM, Vol 2, para 03050"
+          },
+          {
+            id: 4,
+            question: "For joins processed outside of IBI or at DUINS station, is the unit ensuring all required documents are resident in the OMPF? (Contractual documents (i.e. DD Form 4, DD Form 1966), dependent documents (as applicable i.e. NAVMC 10922, Marriage Certificate), and as applicable, Meritorious Promotion Warrants (DD Form 216), Montgomery G.I Bill Form DD Form 2366, etc).",
+            reference: "MCO 1070.1; MCTFSPRIUM, 12-120103; MARADMIN 015/20"
+          },
+          {
+            id: 5,
+            question: "For Marines arriving to their first Permanent Duty Station (PDS), is a comprehensive review of Pay and Allowance received through the training pipeline completed within 60 days of reporting?",
+            reference: "MCTFSPRIUM, 12-120103"
+          },
+          {
+            id: 6,
+            question: "Is the Inbound Interview (IBI) set in a 'MOL-Submitted' status within 5 days of the report date?",
+            reference: "MCTFSPRIUM, 12-120103"
+          },
+          {
+            id: 7,
+            question: "Is the Travel Interview (TVI) submitted within 5 working days of the report date?",
+            reference: "FPM Vol 2, para 030102 and 030504; MCTFSPRIUM, 12-120103"
+          },
+          {
+            id: 8,
+            question: "Is the Inbound Interview (IBI) set in a 'MOL-Approved' status within 15 days of the report date?",
+            reference: "MCTFSPRIUM, 12-120103"
+          },
+          {
+            id: 13,
+            question: "Are active duty reporting units validating pay and entitlements for activated reservist attached to their administrative reporting unit code (ARUC)?",
+            reference: "DoDFMR VOL 7A, CHAP. 26 PAR 261005; MCTFSPRIUM 9-91800; MARADMIN 015/20"
+          }
+        ]
+      },
+      {
+        unitType: "IPAC",
+        questions: [
+          {
+            id: 12,
+            question: "Are active duty reporting units validating pay and entitlements for activated reservist attached to their administrative reporting unit code (ARUC)?",
+            reference: "DoDFMR VOL 7A, CHAP. 26 PAR 261005; MCTFSPRIUM 9-91800; MARADMIN 015/20"
+          },
+          {
+            id: 14,
+            question: "For joins processed outside of IBI, is the join audit process completed IAW MCTFSPRIUM, 12-120103?",
+            reference: "MCTFSPRIUM, 12-120103, 12-120104"
+          },
+          {
+            id: 15,
+            question: "For joins processed outside of IBI, does the organization maintain and retain supporting documents on file for audit, and in accordance with retention policies?",
+            reference: "MCTFSPRIUM, 12-120103; MARADMIN 601/24"
+          },
+          {
+            id: 16,
+            question: "For joins processed outside of IBI, is the PCS travel claim submitted in accordance with current regulations?",
+            reference: "FPM, Vol 2, para 030501"
+          },
+          {
+            id: 17,
+            question: "For joins processed outside of IBI or at DUINS station, is the unit ensuring all required documents are resident in the OMPF? (Contractual documents (i.e. DD Form 4, DD Form 1966), dependent documents (as applicable i.e. NAVMC 10922, Marriage Certificate), and as applicable, Meritorious Promotion Warrants (DD Form 216), Montgomery G.I Bill Form DD Form 2366, etc).",
+            reference: "MCO 1070.1; MCTFSPRIUM, 12-120103; MARADMIN 015/20"
+          },
+          {
+            id: 18,
+            question: "For Marines arriving to their first Permanent Duty Station (PDS), is a comprehensive review of Pay and Allowance received through the training pipeline completed within 60 days of join?",
+            reference: "MCTFSPRIUM, 12-120103"
+          }
+        ]
+      },
+      {
+        unitType: "SUPPORTING",
+        questions: [
+          {
+            id: 9,
+            question: "Is the Inbound Interview (IBI) set in a 'MOL-Submitted' status within 5 days of the report date?",
+            reference: "MCTFSPRIUM, 12-120103"
+          },
+          {
+            id: 10,
+            question: "Is the Travel Interview (TVI) submitted within 5 working days of the report date?",
+            reference: "FPM Vol 2, para 030101; MCTFSPRIUM, 12-120103"
+          },
+          {
+            id: 11,
+            question: "Is the Inbound Interview (IBI) set in a 'MOL-Approved' status within 15 days of the report date?",
+            reference: "MCTFSPRIUM, 12-120103"
+          }
+        ]
+      }
     ]
   },
   {
