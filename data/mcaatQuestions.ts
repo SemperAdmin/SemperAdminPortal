@@ -1404,9 +1404,186 @@ export const mcaatQuestions: MCCATCategory[] = [
     name: "Outbound Management",
     description: "Separation processing, DD-214 preparation, terminal leave, SkillBridge, and STR submission.",
     sections: [
-      { unitType: "REPORTING", questions: [] },
-      { unitType: "IPAC", questions: [] },
-      { unitType: "SUPPORTING", questions: [] }
+      {
+        unitType: "REPORTING",
+        questions: [
+          {
+            id: 1,
+            question: "Is the unit using Separation Appointment Scheduler and Tracking (SAST) to schedule and track separating Marines?",
+            reference: "MARADMIN 236/22; MCTFSPRIUM, 6-60802"
+          },
+          {
+            id: 2,
+            question: "Are separation transactions reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 3,
+            question: "Are separation transactions reported IAW applicable regulations?",
+            reference: "MCTFSPRIUM, 6-60800, 6-60801, 6-60802"
+          },
+          {
+            id: 4,
+            question: "Is the DD-214 prepared accurately and in accordance with applicable regulations?",
+            reference: "MCO 1900.16, enclosure (3); MCTFSPRIUM, 6-60802"
+          },
+          {
+            id: 5,
+            question: "Is the DD-214 prepared and provided to the Marine on the date of separation (or the last working day prior for those separating on a weekend or holiday)?",
+            reference: "MCO 1900.16, enclosure (3), para 2.a; MCTFSPRIUM, 6-60802"
+          },
+          {
+            id: 6,
+            question: "Is terminal leave reported IAW applicable regulations?",
+            reference: "MCO 1050.3J; MCTFSPRIUM, 8-81302"
+          },
+          {
+            id: 7,
+            question: "Is terminal leave reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 8,
+            question: "For Marines executing SkillBridge, is the unit ensuring SkillBridge is reported IAW applicable regulations?",
+            reference: "MARADMIN 344/22; MCTFSPRIUM, 6-60802"
+          },
+          {
+            id: 9,
+            question: "Is the unit ensuring Service Treatment Records (STR) are submitted to DPRIS NLT 30 days prior to separation date?",
+            reference: "MCO 1900.16 CH 2, par. 1006.2"
+          },
+          {
+            id: 10,
+            question: "Is the unit ensuring the final pay audit is completed prior to separation?",
+            reference: "MCTFSPRIUM, 12-120103"
+          },
+          {
+            id: 11,
+            question: "Is the unit ensuring that Marines with an established debt have a DD Form 2653 completed prior to separation?",
+            reference: "DoDFMR Vol. 7A, Chap. 50, par. 5004; MCO 1900.16"
+          },
+          {
+            id: 12,
+            question: "Is the unit ensuring Travel Liquidation Program (TLP) transactions are reported on the same day as the separation entry?",
+            reference: "MCTFSPRIUM, 6-60802"
+          }
+        ]
+      },
+      {
+        unitType: "IPAC",
+        questions: [
+          {
+            id: 13,
+            question: "Is the unit using Separation Appointment Scheduler and Tracking (SAST) to schedule and track separating Marines?",
+            reference: "MARADMIN 236/22; MCTFSPRIUM, 6-60802"
+          },
+          {
+            id: 14,
+            question: "Are separation transactions reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 15,
+            question: "Are separation transactions reported IAW applicable regulations?",
+            reference: "MCTFSPRIUM, 6-60800, 6-60801, 6-60802"
+          },
+          {
+            id: 16,
+            question: "Is the DD-214 prepared accurately and in accordance with applicable regulations?",
+            reference: "MCO 1900.16, enclosure (3); MCTFSPRIUM, 6-60802"
+          },
+          {
+            id: 17,
+            question: "Is the DD-214 prepared and provided to the Marine on the date of separation (or the last working day prior for those separating on a weekend or holiday)?",
+            reference: "MCO 1900.16, enclosure (3), para 2.a; MCTFSPRIUM, 6-60802"
+          },
+          {
+            id: 18,
+            question: "Is terminal leave reported IAW applicable regulations?",
+            reference: "MCO 1050.3J; MCTFSPRIUM, 8-81302"
+          },
+          {
+            id: 19,
+            question: "Is terminal leave reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 20,
+            question: "For Marines executing SkillBridge, is the unit ensuring SkillBridge is reported IAW applicable regulations?",
+            reference: "MARADMIN 344/22; MCTFSPRIUM, 6-60802"
+          },
+          {
+            id: 21,
+            question: "Is the unit ensuring Service Treatment Records (STR) are submitted to DPRIS NLT 30 days prior to separation date?",
+            reference: "MCO 1900.16 CH 2, par. 1006.2"
+          },
+          {
+            id: 22,
+            question: "Is the unit ensuring the final pay audit is completed prior to separation?",
+            reference: "MCTFSPRIUM, 12-120103"
+          },
+          {
+            id: 23,
+            question: "Is the unit ensuring that Marines with an established debt have a DD Form 2653 completed prior to separation?",
+            reference: "DoDFMR Vol. 7A, Chap. 50, par. 5004; MCO 1900.16"
+          },
+          {
+            id: 24,
+            question: "Is the unit ensuring Travel Liquidation Program (TLP) transactions are reported on the same day as the separation entry?",
+            reference: "MCTFSPRIUM, 6-60802"
+          }
+        ]
+      },
+      {
+        unitType: "SUPPORTING",
+        questions: [
+          {
+            id: 25,
+            question: "Is the unit ensuring Marines are scheduled for separation appointments via SAST NLT 180 days prior to separation date?",
+            reference: "MARADMIN 236/22; MCTFSPRIUM, 1-10100.6"
+          },
+          {
+            id: 26,
+            question: "Is the unit ensuring key supporting documents for separation are submitted to and received by the reporting unit within 5 days of occurrence?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 27,
+            question: "Is the unit validating separation transactions are reported IAW applicable regulations by the reporting unit?",
+            reference: "MCTFSPRIUM, 1-10111, 6-60800, 6-60801, 6-60802"
+          },
+          {
+            id: 28,
+            question: "Is the unit ensuring key supporting documents for terminal leave are submitted to and received by the reporting unit within 5 days of occurrence?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 29,
+            question: "Is the unit validating terminal leave is reported IAW applicable regulations by the reporting unit?",
+            reference: "MCO 1050.3J; MCTFSPRIUM, 1-10111, 8-81302"
+          },
+          {
+            id: 30,
+            question: "Is the unit ensuring key supporting documents for SkillBridge are submitted to and received by the reporting unit within 5 days of occurrence?",
+            reference: "MARADMIN 344/22; MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 31,
+            question: "Is the unit validating SkillBridge is reported IAW applicable regulations by the reporting unit?",
+            reference: "MARADMIN 344/22; MCTFSPRIUM, 1-10111, 6-60802"
+          },
+          {
+            id: 32,
+            question: "Is the unit ensuring the final pay audit worksheet is reviewed and signed by the separating Marine?",
+            reference: "MCTFSPRIUM, 12-120103"
+          },
+          {
+            id: 33,
+            question: "Is the unit ensuring key supporting documents that validate separation entitlements are maintained on file for audit, and in accordance with retention policies?",
+            reference: "DoDFMR, Vol. 1, Chap. 9; SECNAV M-5210.1; MARADMIN 601/24"
+          }
+        ]
+      }
     ]
   },
   {
