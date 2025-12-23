@@ -1979,6 +1979,68 @@ export const legalAdministrationChecklist: FACChecklistData = {
   ],
 };
 
+// Marine Corps Sponsorship Program Checklist Data
+export const sponsorshipProgramChecklist: FACChecklistData = {
+  slug: "sponsorship-program",
+  applicabilityNote: "This checklist applies to all levels and types of commands.",
+  revisedDate: "March 24, 2025",
+  sme: {
+    name: "Ms. Lucinda Lorei",
+    email: "lucinda.lorei@usmc.mil",
+    phone: "(703) 784-0518",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Unit-Specific Items (All commands)",
+      questions: [
+        {
+          number: "0101",
+          text: "Is a hard copy and an electronic copy of the Sponsorship turnover binder maintained, and does it include all required items per the MCO?",
+          reference: {
+            text: "MCO 1320.11H, Par 4b(7)(m)",
+          },
+        },
+        {
+          number: "0102",
+          text: "Have all Sponsorship Coordinators (SC) and Sponsors within the Command completed the required training according to the respective timelines prescribed in the MCO?",
+          reference: {
+            text: "MCO 1320.11H, Par 4b(7)(a) and Par 4b(7)d",
+          },
+        },
+        {
+          number: "0103",
+          text: "Does the Command assign a Sponsor to all Service Members executing a PCS, using NAVMC 11799?",
+          reference: {
+            text: "MCO 1320.11H, Par 4a(2)e; Par 4b(7)g",
+          },
+        },
+        {
+          number: "0104",
+          text: "Is the SC contact information provided to the installation and supporting Information, Referral and Relocation (IR&R) Manager, and is this information updated when a new SC is assigned?",
+          reference: {
+            text: "MCO 1320.11H, Par 4b(7)(b); Par 4b(7)(l)",
+          },
+        },
+        {
+          number: "0105",
+          text: "Does the SC maintain sponsor assignment tracking documentation and program utilization metrics; provide this information to the installation and supporting IR&R Manager at the end of each quarter?",
+          reference: {
+            text: "MCO 1320.11H, Par 4b(7)(i)",
+          },
+        },
+        {
+          number: "0106",
+          text: "Does the Unit Commander review NAVMC 11791, Sponsorship Program Questionnaire, periodically to determine trends in order to enhance the Unit's Sponsorship Program?",
+          reference: {
+            text: "MCO 1320.11H, Par 4b(6)(j)",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 // Map of all FAC checklists
 const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   pes: pesChecklist,
@@ -1990,6 +2052,7 @@ const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   gtcc: gtccChecklist,
   "leave-liberty": leaveLibertyChecklist,
   "legal-administration": legalAdministrationChecklist,
+  "sponsorship-program": sponsorshipProgramChecklist,
 };
 
 // Helper functions
