@@ -271,9 +271,316 @@ export const mcaatQuestions: MCCATCategory[] = [
     name: "Deployments / Exercises / Operations",
     description: "Entitlements and reporting for FSA, HDP, IDP/HFP, Per Diem, Combat Zone Tax Exclusion, and Flight Deck Duty Pay.",
     sections: [
-      { unitType: "REPORTING", questions: [] },
-      { unitType: "IPAC", questions: [] },
-      { unitType: "SUPPORTING", questions: [] }
+      {
+        unitType: "REPORTING",
+        questions: [
+          {
+            id: 2,
+            question: "Is FSA for Temporarily Additional Duty period(s), deployments, exercises, and operations reported within 5 days of the effective date for periods greater than 30 days?",
+            reference: "DoDFMR Vol. 7A, Chap. 18, Tables 18-1, 18-3, MCTFSPRIUM, 9-90601"
+          },
+          {
+            id: 3,
+            question: "Is the unit reporting TO TAD entries when periods of TAD exceed 31 days?",
+            reference: "MCTFSPRIUM 2-20103, 6-60300"
+          },
+          {
+            id: 4,
+            question: "Is Personnel Tempo for Temporarily Additional Duty period(s), deployments, exercises, or operations reported IAW applicable regulations?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 5,
+            question: "Is HDP reported IAW applicable regulations?",
+            reference: "DoDFMR Vol 7A, Ch 17, par 17.2, Table 17-1 MCTFSPRIUM, 9-90801, 9-90802 and 9-90803, Table 9-8; MARADMIN 092/21; MARADMIN 619/14"
+          },
+          {
+            id: 6,
+            question: "Is HDP reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 7,
+            question: "Is IDP/HFP reported IAW applicable regulations?",
+            reference: "DoDFMR Vol 7A, Ch 10 and Figure 10-1; MCTFSPRIUM, 9-90700, 9-90701, 9-90702, 11-110502"
+          },
+          {
+            id: 8,
+            question: "Is IDP/HFP reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM 2-20103"
+          },
+          {
+            id: 9,
+            question: "Is Combat Zone Tax Exclusion reported IAW applicable regulations?",
+            reference: "DoDFMR Vol 7A, Ch 44, para 2 and Table 44-1 and Table 44-2; MCTFSPRIUM, 8-80604"
+          },
+          {
+            id: 10,
+            question: "Is Combat Zone Tax Exclusion reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM 2-20103"
+          },
+          {
+            id: 11,
+            question: "Is Per Diem for deployments, exercises, or operations reported IAW applicable regulations?",
+            reference: "JTR, Ch 3, Part C, para 0329; MCO P3000.15B, Ch 3, Para 3000; FPM Vol 2 Chap 6, para 0601; MARADMIN 050/03; MCTFSPRIUM, 9-91003 and Table 9-9"
+          },
+          {
+            id: 12,
+            question: "Is Per Diem for deployments, exercises, or operations reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM 2-20103"
+          },
+          {
+            id: 13,
+            question: "Is Career Sea Time/Pay reported IAW applicable regulations?",
+            reference: "DoDFMR Vol 7A, Ch 18, Tables 18-1 and 18-3; MCTFSPRIUM, 9-90601"
+          },
+          {
+            id: 14,
+            question: "Is Career Sea Time/Pay reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM 2-20103"
+          },
+          {
+            id: 15,
+            question: "Is Discount Meal Rate or Field Rations for Temporarily Additional Duty period(s), deployments, exercises, or operations reported IAW applicable regulations?",
+            reference: "DoDFMR Vol 7A, Ch 25, para 2.4; PAA 02-21; MCFTSPRIUM, 8-80402 and 8-80403"
+          },
+          {
+            id: 16,
+            question: "Is the unit ensuring key supporting documents for Flight Deck Duty Pay are signed by the appropriate authority (Ship's CO, Squadron CO or Combat Cargo Officer if delegated by the Ship's CO)?",
+            reference: "DoDFMR Vol 7A Chap 24, para(s) 2402 and 2404; OPNAVINST 7220.4L para 16; PAA 07-10"
+          },
+          {
+            id: 17,
+            question: "Is the reporting unit reporting Flight Deck Duty Pay within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM 2-20103"
+          },
+          {
+            id: 18,
+            question: "Is Flight Deck Duty Pay reported IAW applicable regulations?",
+            reference: "DoDFMR Vol 7A Chap 24, para(s) 2402 and 2404; OPNAVINST 7220.4L para 6, 7 10.e, and 11; MCO 1000.6, Chap 1, Sect 2, para 15; PAA 07-10; MCTFSPRIUM, 9-90101, Table 9-3"
+          },
+          {
+            id: 19,
+            question: "For UDP, is DMR reported correctly IAW applicable regulations and are UDP advance/rear party DMR entitlement reported based on main body's arrival and departure?",
+            reference: "MCO P3000.15B; PAA 02-21; MCTFSPRIUM 9-91003"
+          },
+          {
+            id: 20,
+            question: "For UDP, is deployed per diem reported correctly IAW applicable regulations and are UDP advance/rear party deployed per diem entitlement reported based on main body's arrival and departure?",
+            reference: "MCO P3000.15B; PAA 02-21; PAAN 2-15; MCTFSPRIUM 9-91003"
+          },
+          {
+            id: 21,
+            question: "For UDPs, is the unit ensuring payment of per diem via DTS for advance party personnel is stopped the day prior to the main body's arrival? For rear party, is per diem paid via DTS the day after main body's departure?",
+            reference: "JTR, para(s) 0327, 0328; MCO P3000.15B, para 3000; PAA 2-21; MCFTSPRIUM, 9-91003.5, Table 9-9"
+          },
+          {
+            id: 36,
+            question: "Is the unit reporting FR TAD entries when a Marine returns from a TAD period that exceeded 31 days?",
+            reference: "MCTFSPRIUM 2-20103, 6-60300"
+          },
+          {
+            id: 37,
+            question: "Is Personnel Tempo for Temporarily Additional Duty period(s), deployments, exercises, or operations reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 39,
+            question: "Is FSA reported IAW applicable regulations for Temporarily Additional Duty period(s), deployments, exercises, or operations greater than 30 days?",
+            reference: "DoDFMR Vol. 7A, Chap. 27; MCTFSPRIUM, 9-90301"
+          }
+        ]
+      },
+      {
+        unitType: "IPAC",
+        questions: [
+          {
+            id: 22,
+            question: "Is Flight Deck Duty Pay reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A Chap. 24, par(s). 2402, 2404; OPNAVINST 7220.4L par(s). 6, 7, 10.e, 11; MCO 1000.6, Chap. 1, Sect. 2, par. 15; PAA 07-10; MCTFSPRIUM, 9-90101, Table 9-3"
+          },
+          {
+            id: 35,
+            question: "Is FSA reported IAW applicable regulations for Temporarily Additional Duty period(s), deployments, exercises, or operations greater than 30 days?",
+            reference: "DoDFMR Vol. 7A, Chap. 27; MCTFSPRIUM, 9-90301"
+          },
+          {
+            id: 40,
+            question: "Is Personnel Tempo reported IAW applicable regulations for Active-Duty Operational Support ADOS and Annual Training AT periods?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 41,
+            question: "Is Personnel Tempo for Temporarily Additional Duty period(s), deployments, exercises, or operations reported within 5 days of receiving the key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 42,
+            question: "Is Personnel Tempo for Temporarily Additional Duty period(s), deployments, exercises, or operations reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 65; MCTFSPRIUM, 9-91001"
+          },
+          {
+            id: 43,
+            question: "Is HDP reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 44,
+            question: "Is HDP reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 17, par. 1702, Fig. 17-1, Table 17-1; MARADMIN 092/21; MARAMDIN 619/14; MCTFSPRIUM, 9-90801, 9-90802, 9-90803, Table 9-8"
+          },
+          {
+            id: 45,
+            question: "Is IDP/HFP reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM 2-20103"
+          },
+          {
+            id: 46,
+            question: "Is IDP/HFP reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 10 and Fig. 10-1; MCTFSPRIUM, 9-90700, 9-90701, 9-90702, 11-110502"
+          },
+          {
+            id: 47,
+            question: "Is Combat Zone Tax Exclusion reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM 2-20103"
+          },
+          {
+            id: 48,
+            question: "Is Combat Zone Tax Exclusion reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 44, par 2, Table 44-1, 44-2; MCTFSPRIUM, 8-80604"
+          },
+          {
+            id: 49,
+            question: "Is Per Diem for deployments, exercises, or operations reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM 2-20103"
+          },
+          {
+            id: 50,
+            question: "Is Per Diem for deployments, exercises, or operations reported IAW applicable regulations?",
+            reference: "JTR, Chap. 3, Part C, par. 0329; MCO P3000.15B, Chap. 3, par. 3000; FPM Vol. 2 Chap. 6, par. 0601; MARADMIN 050/03; MCTFSPRIUM, 9-91003 and Table 9-9"
+          },
+          {
+            id: 51,
+            question: "Is Career Sea Time/Pay reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM 2-20103"
+          },
+          {
+            id: 52,
+            question: "Is Career Sea Time/Pay reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 18, Tables 18-1, 18-3; MCTFSPRIUM, 9-90601"
+          },
+          {
+            id: 53,
+            question: "Is Discount Meal Rate or Field Rations for Temporarily Additional Duty period(s), deployments, exercises, or operations reported IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 25, par. 2.4; PAA 02-21; MCO 10110.47A, enclosure(1), Chapter 1; MCFTSPRIUM, 8-80402 and 8-80403"
+          },
+          {
+            id: 54,
+            question: "For UDP, is DMR reported correctly IAW applicable regulations and are UDP advance/rear party DMR entitlement reported based on main body's arrival and departure?",
+            reference: "MCO P3000.15B; PAA 02-21; MCTFSPRIUM 9-91003"
+          },
+          {
+            id: 55,
+            question: "For UDP, deployed per diem reported correctly IAW applicable regulations and are UDP advance/rear party deployed per diem entitlement reported based on main body's arrival and departure?",
+            reference: "MCO P3000.15B; PAA 02-21; PAAN 2-15; MCTFSPRIUM 9-91003"
+          },
+          {
+            id: 56,
+            question: "Is the reporting unit reporting Flight Deck Duty Pay within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM 2-20103"
+          },
+          {
+            id: 57,
+            question: "Is FSA reported within 5 days of receiving key supporting documents for Temporarily Additional Duty period(s), deployments, exercises, or operations greater than 30 days?",
+            reference: "DoDFMR Vol. 7A, Chap. 18, Tables 18-1, 18-3; MCTFSPRIUM, 9-90601"
+          }
+        ]
+      },
+      {
+        unitType: "SUPPORTING",
+        questions: [
+          {
+            id: 1,
+            question: "Is FSA for Temporarily Additional Duty period(s), deployments, exercises, and operations is the unit submitting supporting documents to the reporting within 5 days of the effective date for periods greater than 30 days?",
+            reference: "DoDFMR Vol. 7A, Chap. 27 para. 2.3.1.3, Tables 27-1, 27-4, MCTFSPRIUM, 9-90301 instead of DoDFMR Vol. 7A, Chap. 18, Tables 18-1, 18-3, MCTFSPRIUM, 9-90901"
+          },
+          {
+            id: 23,
+            question: "Is the unit ensuring key supporting documents to report exercises, operations, or deployments entitlements are submitted to and received by the reporting unit within 5 days from the end of the deployment/exercise/operation period?",
+            reference: "MCTFSPRIUM 1-10100.6, 2-20103, 12-120103.6"
+          },
+          {
+            id: 24,
+            question: "Is the unit ensuring key supporting documents that validate exercises, operations, or deployments entitlements are maintained on file for audit, and in accordance with retention policies?",
+            reference: "DoDFMR, Vol. 1, Chap. 9; SECNAV M-5210.1"
+          },
+          {
+            id: 25,
+            question: "Is the unit validating Personnel Tempo for exercises, operations, or deployments are reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol. 7A, Chap 65; MCTFSPRIUM, 1-10111, 9-91001, 12-120103"
+          },
+          {
+            id: 26,
+            question: "Is the unit validating Per Diem for exercises, operations, or deployments are reported IAW applicable regulations by the reporting unit?",
+            reference: "JTR, Chap., 3, Part C, par. 0329; MCO P3000.15B, Chap. 3, par. 3000; FPM Vol. 2 Chap. 6, par. 0601; MARADMIN 050/03; MCTFSPRIUM, 1-10111, 9-91003, Table 9-9"
+          },
+          {
+            id: 27,
+            question: "Is the unit validating HDP for exercises, operations, or deployments is reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol. 7A, Chap. 17, par. 1702, Fig. 17-1, Table 17-1; MCTFSPRIUM, 1-10111, 9-90801, 9-90802 and 9-90803, Table 9-8; MARADMIN 092/21; MARAMDIN 619/14"
+          },
+          {
+            id: 28,
+            question: "Is the unit validating IDP/HFP exercises, operations, or deployments is reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol. 7A, Chap. 10, Fig. 10-1; MCTFSPRIUM, 1-10111, 9-90700, 9-90701, 9-90702, 11-110502"
+          },
+          {
+            id: 29,
+            question: "Is the unit validating Combat Zone Tax Exclusion for exercises, operations, or deployments is reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol. 7A, Chap. 44, par. 4402, Fig. 44-1, Fig. 44-2; MCTFSPRIUM, 1-10111, 8-80604"
+          },
+          {
+            id: 30,
+            question: "Is the unit validating that Field Ration deductions for exercises, operations, or deployments are reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol. 7A, Chap. 25, par(s). 2.4.3, 2.5; MCFTSPRIUM, 1-10111, 2-20103,8-80402, 8-80403"
+          },
+          {
+            id: 31,
+            question: "Is the unit ensuring key supporting documents for Flight Deck Duty Pay are signed by the appropriate authority (Ship's CO, Squadron CO or Combat Cargo Officer if delegated by the Ship's CO)?",
+            reference: "DoDFMR Vol. 7A Chap. 24, par(s). 2402, 2404; OPNAVINST 7220.4L par. 16; PAA 07-10"
+          },
+          {
+            id: 32,
+            question: "Is the unit ensuring key supporting documents, that substantiates payment of Flight Deck Duty Pay, are submitted to and received by the reporting unit no later than 5 days after the end of the month?",
+            reference: "MCTFSPRIUM 1-10100.6, 2-20103"
+          },
+          {
+            id: 33,
+            question: "Is the unit validating Flight Deck Duty Pay is reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol. 7A Chap. 24 par(s). 2402, 2404; OPNAVINST 7220.4L; MCO 1000.6, Chap. 1, Sect. 2, par. 15; PAA 07-10; MCTFSPRIUM, 1-10111, 2-20103, 9-90101, Table 9-3"
+          },
+          {
+            id: 34,
+            question: "For UDPs, is the unit ensuring payment of per diem via DTS for advance party personnel is stopped the day prior to the main body's arrival? For rear party, is per diem paid via DTS the day after main body's departure?",
+            reference: "JTR, para(s) 0327, 0328; MCO P3000.15B, par. 3000; PAA 2-21; MCFTSPRIUM, 9-91003.5, Table 9-9"
+          },
+          {
+            id: 38,
+            question: "Is the unit validating Career Sea Time/Pay for exercises, operations, or deployments is reported IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR, Vol 7A, Chap. 18, MCTFSPRIUM, Chap. 9, para. 90601"
+          },
+          {
+            id: 58,
+            question: "For Marines executing TAD period in excess of 31 days, or Fleet Assistance Program (FAP), is the unit ensuring a copy of the orders are submitted to and received by the reporting unit, NLT 5 days after the Marine's departure?",
+            reference: "MCTFSPRIUM 1-10100.6, 2-20103, 12-120103.5"
+          },
+          {
+            id: 59,
+            question: "Upon a Marine's return from deployment, TAD in excess of 31 days, or FAP, but not to exceed 5 days from the date of return, is the unit ensuring a copy of the orders returning a Marine from a TAD period in excess of 31 days, or FAP are submitted to and received by the reporting unit?",
+            reference: "MCTFSPRIUM 1-10100.6, 2-20103, 12-120103.6"
+          }
+        ]
+      }
     ]
   },
   {
