@@ -83,10 +83,12 @@ export const commonReferenceUrls: Record<string, string> = {
   "JTR Chap. 9": "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/",
   "JTR Chap. 10": "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/",
 
-  // MCOs - Add specific URLs as available
-  "MCO 1070.1": "",
-  "MCO 1900.16": "",
-  "MCO 6100.13A": "",
+  // MCOs
+  "MCO 1070.1": "https://www.marines.mil/portals/1/Publications/MCO%201070.1.pdf?ver=2019-05-16-133644-923",
+  "MCO 1900.16": "https://www.marines.mil/Portals/1/Publications/MCO%201900.16%20ADMIN%20CH-3%20(SECURED).pdf?ver=SZptuAh1jjvolL-Gf5s5CQ%3d%3d",
+  "MCO 6100.13A": "https://www.marines.mil/Portals/1/Publications/MCO%206100.13A%20W%20ADMIN%20CH-5%20(SECURED).pdf?ver=_Cd9D-v4wfAiMrAXq3Y-Mw%3d%3d",
+  "MCO 1400.32D": "https://www.marines.mil/portals/1/Publications/MCO%20P1400.32D%20W%20CH%201-2.pdf",
+  "MCO P1400.32D": "https://www.marines.mil/portals/1/Publications/MCO%20P1400.32D%20W%20CH%201-2.pdf",
 
   // MCTFSPRIUM - Add specific chapter URLs as available
   "MCTFSPRIUM": "",
