@@ -2184,9 +2184,111 @@ export const mcaatQuestions: MCCATCategory[] = [
     name: "Training",
     description: "PFT, CFT, rifle qualification, MCMAP, schools, and Body Composition Program reporting.",
     sections: [
-      { unitType: "REPORTING", questions: [] },
-      { unitType: "IPAC", questions: [] },
-      { unitType: "SUPPORTING", questions: [] }
+      {
+        unitType: "REPORTING",
+        questions: [
+          {
+            id: 1,
+            question: "Are Physical Fitness Test (PFT) scores reported IAW applicable regulations?",
+            reference: "MCO 6100.13A; MCTFSPRIUM, 10-100100"
+          },
+          {
+            id: 2,
+            question: "Are PFT scores reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 3,
+            question: "Are Combat Fitness Test (CFT) scores reported IAW applicable regulations?",
+            reference: "MCO 6100.13A; MCTFSPRIUM, 10-100100"
+          },
+          {
+            id: 4,
+            question: "Are CFT scores reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 5,
+            question: "Are Rifle Qualification scores reported IAW applicable regulations?",
+            reference: "MCO 3574.2L; MCTFSPRIUM, 10-100200"
+          },
+          {
+            id: 6,
+            question: "Are Rifle Qualification scores reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 7,
+            question: "Are MCMAP belt levels reported IAW applicable regulations?",
+            reference: "MCO 1500.59A; MCTFSPRIUM, 10-100300"
+          },
+          {
+            id: 8,
+            question: "Are Body Composition Program (BCP) entries reported IAW applicable regulations?",
+            reference: "MCO 6110.3A; MCTFSPRIUM, 10-100400"
+          }
+        ]
+      },
+      {
+        unitType: "IPAC",
+        questions: [
+          {
+            id: 9,
+            question: "Are Physical Fitness Test (PFT) scores reported IAW applicable regulations?",
+            reference: "MCO 6100.13A; MCTFSPRIUM, 10-100100"
+          },
+          {
+            id: 10,
+            question: "Are PFT scores reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 11,
+            question: "Are Combat Fitness Test (CFT) scores reported IAW applicable regulations?",
+            reference: "MCO 6100.13A; MCTFSPRIUM, 10-100100"
+          },
+          {
+            id: 12,
+            question: "Are Rifle Qualification scores reported IAW applicable regulations?",
+            reference: "MCO 3574.2L; MCTFSPRIUM, 10-100200"
+          },
+          {
+            id: 13,
+            question: "Are MCMAP belt levels reported IAW applicable regulations?",
+            reference: "MCO 1500.59A; MCTFSPRIUM, 10-100300"
+          },
+          {
+            id: 14,
+            question: "Are Body Composition Program (BCP) entries reported IAW applicable regulations?",
+            reference: "MCO 6110.3A; MCTFSPRIUM, 10-100400"
+          }
+        ]
+      },
+      {
+        unitType: "SUPPORTING",
+        questions: [
+          {
+            id: 15,
+            question: "Is the unit ensuring PFT/CFT scores are submitted to the reporting unit within 5 days of the event?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 16,
+            question: "Is the unit validating PFT/CFT scores are reported IAW applicable regulations by the reporting unit?",
+            reference: "MCO 6100.13A; MCTFSPRIUM, 1-10111, 10-100100"
+          },
+          {
+            id: 17,
+            question: "Is the unit ensuring Rifle Qualification scores are submitted to the reporting unit within 5 days of the event?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 18,
+            question: "Is the unit ensuring key supporting documents that validate training events are maintained on file for audit, and in accordance with retention policies?",
+            reference: "DoDFMR, Vol. 1, Chap. 9; SECNAV M-5210.1; MARADMIN 601/24"
+          }
+        ]
+      }
     ]
   }
 ];
