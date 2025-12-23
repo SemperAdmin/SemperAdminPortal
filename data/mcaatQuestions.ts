@@ -140,6 +140,12 @@ export const commonReferenceUrls: Record<string, string> = {
   "MARADMIN 619/14": "https://www.marines.mil/News/Messages/Messages-Display/Article/896817/hardship-duty-pay-tempo-hdp-t-program-details/",
   "MARADMIN 661/19": "https://www.marines.mil/News/Messages/Messages-Display/Article/2029557/manpower-audit-advisory-1-19-audit-compensating-controls-to-dependency-applicat/",
 
+  // OPNAVINST
+  "OPNAVINST 7220.4L": "https://www.secnav.navy.mil/doni/Directives/07000%20Financial%20Management%20Services/07-200%20Disbursing%20Services/7220.4L.pdf",
+
+  // NDAA
+  "NDAA FY 2020": "https://www.congress.gov/116/plaws/publ92/PLAW-116publ92.pdf",
+
   // MCTFSPRIUM - Add specific chapter URLs as available
   "MCTFSPRIUM": "",
 };
