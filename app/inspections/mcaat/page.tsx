@@ -3,6 +3,23 @@ import type { CatalogGroup } from "../../../data/links";
 import Link from "next/link";
 import { mcaatQuestions, getCategoryQuestionCount } from "../../../data/mcaatQuestions";
 
+// CAC Required icon
+function CACIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-label="CAC Required">
+      <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" strokeWidth="1.5" fill="none" />
+      <rect x="4" y="6" width="5" height="5" rx="0.5" fill="currentColor" opacity="0.3" />
+      <circle cx="6.5" cy="8" r="1.5" fill="currentColor" />
+      <rect x="11" y="6" width="9" height="1.5" rx="0.5" fill="currentColor" opacity="0.5" />
+      <rect x="11" y="9" width="6" height="1.5" rx="0.5" fill="currentColor" opacity="0.5" />
+      <rect x="4" y="13" width="16" height="4" rx="0.5" fill="currentColor" opacity="0.2" />
+      <rect x="5" y="14" width="2" height="2" fill="currentColor" opacity="0.6" />
+      <rect x="8" y="14" width="2" height="2" fill="currentColor" opacity="0.6" />
+      <rect x="11" y="14" width="2" height="2" fill="currentColor" opacity="0.6" />
+    </svg>
+  );
+}
+
 // Icon components for MCAAT tools
 function LinkIcon({ className }: { className?: string }) {
   return (
@@ -101,9 +118,10 @@ type ToolCardProps = {
   href: string;
   icon: React.ReactNode;
   color: "navy" | "gold" | "red";
+  requiresCAC?: boolean;
 };
 
-function ToolCard({ title, description, href, icon, color }: ToolCardProps) {
+function ToolCard({ title, description, href, icon, color, requiresCAC }: ToolCardProps) {
   const colorClasses = {
     navy: "from-[var(--sa-navy)]/10 to-[var(--sa-navy)]/5 hover:from-[var(--sa-navy)]/20 hover:to-[var(--sa-navy)]/10 border-[var(--sa-navy)]/10 hover:border-[var(--sa-navy)]/30",
     gold: "from-[var(--sa-gold)]/10 to-[var(--sa-gold)]/5 hover:from-[var(--sa-gold)]/20 hover:to-[var(--sa-gold)]/10 border-[var(--sa-gold)]/20 hover:border-[var(--sa-gold)]/40",
@@ -126,7 +144,10 @@ function ToolCard({ title, description, href, icon, color }: ToolCardProps) {
         <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/80 shadow-sm dark:bg-black/30 ${iconColorClasses[color]}`}>
           {icon}
         </div>
-        <ExternalLinkIcon className="h-4 w-4 text-zinc-400 opacity-0 transition-opacity group-hover:opacity-100" />
+        <div className="flex items-center gap-1">
+          {requiresCAC && <CACIcon className="h-4 w-4 text-[var(--sa-gold)]" />}
+          <ExternalLinkIcon className="h-4 w-4 text-zinc-400 opacity-0 transition-opacity group-hover:opacity-100" />
+        </div>
       </div>
       <h3 className="mt-3 font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
         {title}
@@ -138,7 +159,7 @@ function ToolCard({ title, description, href, icon, color }: ToolCardProps) {
   );
 }
 
-function QuickLinkCard({ title, href, icon }: { title: string; href: string; icon: React.ReactNode }) {
+function QuickLinkCard({ title, href, icon, requiresCAC }: { title: string; href: string; icon: React.ReactNode; requiresCAC?: boolean }) {
   return (
     <a
       href={href}
@@ -154,7 +175,10 @@ function QuickLinkCard({ title, href, icon }: { title: string; href: string; ico
           {title}
         </span>
       </div>
-      <ExternalLinkIcon className="h-4 w-4 shrink-0 text-zinc-400 opacity-0 transition-opacity group-hover:opacity-100" />
+      <div className="flex items-center gap-1">
+        {requiresCAC && <CACIcon className="h-4 w-4 shrink-0 text-[var(--sa-gold)]" />}
+        <ExternalLinkIcon className="h-4 w-4 shrink-0 text-zinc-400 opacity-0 transition-opacity group-hover:opacity-100" />
+      </div>
     </a>
   );
 }
@@ -165,21 +189,37 @@ const MCAAT_SHAREPOINT = "https://usmc.sharepoint-mil.us/sites/DCMRA_MCAAT/SiteP
 const MCAAT_MARINES_MIL = "https://www.manpower.marines.mil/Plans-and-Policies/Manpower-Strategy/MCAAT/";
 
 const topLinks = [
-  { title: "MCAAT POA&M", href: MCAAT_POAM, icon: <ClipboardIcon className="h-5 w-5" /> },
-  { title: "FMF MCAAT SharePoint", href: MCAAT_SHAREPOINT, icon: <FolderIcon className="h-5 w-5" /> },
+  { title: "MCAAT POA&M", href: MCAAT_POAM, icon: <ClipboardIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "FMF MCAAT SharePoint", href: MCAAT_SHAREPOINT, icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
   { title: "MCAAT Marines.mil", href: MCAAT_MARINES_MIL, icon: <GlobeIcon className="h-5 w-5" /> },
 ];
 
 const tools = [
-  { title: "Analysis Statistics (AS)", description: "View statistical analysis and metrics for MCAAT operations", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=930", icon: <ChartIcon className="h-5 w-5" />, color: "navy" as const },
-  { title: "Finance Audit Scores - Current FY (FAS)", description: "Current fiscal year finance audit scores", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=960", icon: <FileTextIcon className="h-5 w-5" />, color: "gold" as const },
-  { title: "Finance Audit Scores - Previous FYs (FAS)", description: "Historical finance audit scores from previous fiscal years", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=961", icon: <FileTextIcon className="h-5 w-5" />, color: "navy" as const },
-  { title: "IPAC Unit Results (UR)", description: "Installation Personnel Administration Center unit results", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=926", icon: <ChartIcon className="h-5 w-5" />, color: "gold" as const },
-  { title: "Marine Forces Reserve Unit Results (UR)", description: "MFR unit-level results and analysis", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=927", icon: <UsersIcon className="h-5 w-5" />, color: "navy" as const },
-  { title: "Stand Alone Unit Results (UR)", description: "Results for stand-alone reporting units", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=928", icon: <ChartIcon className="h-5 w-5" />, color: "gold" as const },
-  { title: "Supported Unit Results (UR)", description: "Results for supported units", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=929", icon: <ChartIcon className="h-5 w-5" />, color: "navy" as const },
-  { title: "Admin POCA / Non-Compliance", description: "Point of contact compliance tracking", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=897", icon: <UsersIcon className="h-5 w-5" />, color: "gold" as const },
-  { title: "Admin Schedule", description: "View and manage MCAAT schedules", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=890", icon: <CalendarIcon className="h-5 w-5" />, color: "navy" as const },
+  { title: "Analysis Statistics (AS)", description: "View statistical analysis and metrics for MCAAT operations", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=930", icon: <ChartIcon className="h-5 w-5" />, color: "navy" as const, requiresCAC: true },
+  { title: "Finance Audit Scores - Current FY (FAS)", description: "Current fiscal year finance audit scores", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=960", icon: <FileTextIcon className="h-5 w-5" />, color: "gold" as const, requiresCAC: true },
+  { title: "Finance Audit Scores - Previous FYs (FAS)", description: "Historical finance audit scores from previous fiscal years", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=961", icon: <FileTextIcon className="h-5 w-5" />, color: "navy" as const, requiresCAC: true },
+  { title: "IPAC Unit Results (UR)", description: "Installation Personnel Administration Center unit results", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=926", icon: <ChartIcon className="h-5 w-5" />, color: "gold" as const, requiresCAC: true },
+  { title: "Marine Forces Reserve Unit Results (UR)", description: "MFR unit-level results and analysis", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=927", icon: <UsersIcon className="h-5 w-5" />, color: "navy" as const, requiresCAC: true },
+  { title: "Stand Alone Unit Results (UR)", description: "Results for stand-alone reporting units", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=928", icon: <ChartIcon className="h-5 w-5" />, color: "gold" as const, requiresCAC: true },
+  { title: "Supported Unit Results (UR)", description: "Results for supported units", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=929", icon: <ChartIcon className="h-5 w-5" />, color: "navy" as const, requiresCAC: true },
+  { title: "Admin POCA / Non-Compliance", description: "Point of contact compliance tracking", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=897", icon: <UsersIcon className="h-5 w-5" />, color: "gold" as const, requiresCAC: true },
+  { title: "Admin Schedule", description: "View and manage MCAAT schedules", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=890", icon: <CalendarIcon className="h-5 w-5" />, color: "navy" as const, requiresCAC: true },
+];
+
+// SharePoint links - alphabetically ordered, all require CAC
+const sharePointLinks = [
+  { title: "ARDB Directives Management", href: "https://usmc.sharepoint-mil.us/sites/AR_DirectivesManagement/SitePages/ProjectHome.aspx", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "ARDB Directives Management Resources", href: "https://usmc.sharepoint-mil.us/sites/AR_DirectivesManagement/SitePages/RESOURCES.aspx", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Command Data and Analytics", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/TECOM_CDAO/SitePages/Command-Data-and-Analytics-Office.aspx", icon: <ChartIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Judge Advocate Division (JET) SharePoint", href: "https://usmc.sharepoint-mil.us/sites/SJA_JET/SitePages/Home.aspx", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Manpower & Personnel Administration Board", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/dcmra_mra_mpa_opt", icon: <UsersIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Manpower & Reserve Affairs SharePoint", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/dcmra", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Manpower Military Policy (MPO)", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/dcmra_mra_mp_mpo", icon: <FileTextIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "MCAAT SharePoint", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCMRA_MCAAT/SitePages/Marine-Corps-Administrative-Analyst-Team.aspx", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "MISSA/MISSO Portal", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/dcmra_mra_mi_missa", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "RFF-KCI SharePoint", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCPR_RFF_External/Finance_Policy", icon: <FileTextIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Semper Admin SharePoint", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCMRA_mra_SemperAdmin", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "TASO Mainframe", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/MCEN_SUPPORT_MCCOG/SitePages/Mainframe-Home.aspx", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
 ];
 
 const financeChecklist: CatalogGroup[] = [
@@ -236,6 +276,21 @@ export default function MCAATPage() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {tools.map((tool) => (
             <ToolCard key={tool.title} {...tool} />
+          ))}
+        </div>
+      </section>
+
+      {/* SharePoints Section */}
+      <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+        <div className="flex items-center gap-2 mb-4">
+          <FolderIcon className="h-5 w-5 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+            SharePoints
+          </h2>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {sharePointLinks.map((link) => (
+            <QuickLinkCard key={link.title} {...link} />
           ))}
         </div>
       </section>
