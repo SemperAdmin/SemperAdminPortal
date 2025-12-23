@@ -2791,6 +2791,103 @@ export const postalAffairsChecklist: FACChecklistData = {
   ],
 };
 
+// Force Preservation Council (FPC) Program Checklist Data
+export const forcePreservationCouncilChecklist: FACChecklistData = {
+  slug: "force-preservation-council",
+  applicabilityNote: "This checklist applies to all levels and types of commands.",
+  revisedDate: "February 10, 2025",
+  sme: {
+    name: "LtCol Nathan Harmon",
+    email: "nathan.harmon@usmc.mil",
+    phone: "(703) 432-5697",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Unit-Specific Items (All commands)",
+      questions: [
+        {
+          number: "0101",
+          text: "Has the unit codified its FPC process with a written policy letter or SOP and made it available to all assigned Service Members?",
+          reference: {
+            text: "MCO 1500.60A, par 4b(3)(n)",
+          },
+        },
+        {
+          number: "0102",
+          text: "Are FPCs held at least once per month for the active component and not less than semi-annually for the reserve component?",
+          reference: {
+            text: "MCO 1500.60A, par 4b",
+          },
+        },
+        {
+          number: "0103",
+          text: "Does the unit SOP discuss how each Service Member is considered through the unit's FPC process?",
+          reference: {
+            text: "MCO 1500.60A, par 4a(2)(a), 4a(2)(a)1, 4a(2)(a)2, 4b(3)(a)1",
+          },
+        },
+        {
+          number: "0104",
+          text: "Does the command's profile percentage completion report display an 80% or higher completion rate, showing the command is maintaining each CIRRAS profile in a fully completed state?",
+          reference: {
+            text: "MCO 1500.60A, par 4a(2)(a)2",
+          },
+        },
+        {
+          number: "0105",
+          text: "Has the command included procedures within their unit check-in/out processes for the assignment and removal of CIRRAS permissions and to ensure all Marines have an updated CIRRAS profile prior to departing the unit?",
+          reference: {
+            text: "MCO 1500.60A, par 4b(3)(g)2. NAVMC 1500.50, par 3f, par 5d",
+          },
+        },
+        {
+          number: "0106",
+          text: 'Does the command\'s policy letter or SOP contain processes to ensure transferred Marines who arrive at the unit with a risk determination of low are assigned to "elevated" for 90 days from their join date and discussed during FPCs while in this status?',
+          reference: {
+            text: "MCO 1500.60A, par 4b(3)(g)3, NAVMC 1500.50, par 5c",
+          },
+        },
+        {
+          number: "0107",
+          text: "Are FPC records managed according to National Archives and Records Administration approved dispositions to ensure proper maintenance, accessibility, and preservation, regardless of medium or format?",
+          reference: {
+            text: "MCO 1500.60A, par 5a; NAVMC 1500.50, par 7b",
+          },
+        },
+        {
+          number: "0108",
+          text: "Does the command ensure all CIRRAS users have completed annual PII and HIPAA training, as well as the CIRRAS MarineNet training course?",
+          reference: {
+            text: "MCO 1500.60A, par 4b(3)(c)1e. NAVMC 1500.50, par 3a",
+          },
+        },
+        {
+          number: "0109",
+          text: "Does the command require and retain appointment letters for all personnel assigned to the FPC Certifier role in CIRRAS?",
+          reference: {
+            text: "NAVMC 1500.50, par 3h",
+          },
+        },
+        {
+          number: "0110",
+          text: "Has the command assigned their Higher Headquarters' Commander to the Higher Headquarters Commander user role within the unit's CIRRAS organization?",
+          reference: {
+            text: "NAVMC 1500.50, par 3j",
+          },
+        },
+        {
+          number: "0111",
+          text: "Does the unit's policy letter or SOP directly task the Unit Administrator with conducting periodic user role assignment reviews to ensure CIRRAS access is appropriately assigned and unassigned?",
+          reference: {
+            text: "NAVMC 1500.50, par 3b, par 3c",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 // Map of all FAC checklists
 const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   pes: pesChecklist,
@@ -2805,6 +2902,7 @@ const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   "sponsorship-program": sponsorshipProgramChecklist,
   "military-awards": militaryAwardsChecklist,
   "postal-affairs": postalAffairsChecklist,
+  "force-preservation-council": forcePreservationCouncilChecklist,
 };
 
 // Helper functions
