@@ -2888,6 +2888,156 @@ export const forcePreservationCouncilChecklist: FACChecklistData = {
   ],
 };
 
+// Records Management Program Checklist Data
+export const recordsManagementChecklist: FACChecklistData = {
+  slug: "records-management",
+  applicabilityNote:
+    "This checklist applies to all Marine Corps commands and activities. Records Management (RM) is the responsibility of all Marines in uniform as well as civilian Marines and contractors. In keeping with the Headquarters Marine Corps 3-Phased Approach to electronic records management (ERM), questions within each of the subsections of this checklist lead to compliance in the RM program.",
+  revisedDate: "September 16, 2025",
+  sme: {
+    name: "Mrs. Kristen Meehan",
+    phone: "703-571-3927",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Electronic Records Management (ERM)",
+      questions: [
+        {
+          number: "0101",
+          text: "Has the command appointed a Command Designated Records Manager (CDRM) in CROSS? Note: Appointed CDRMs must be the rank/grade of E-6/GS-09 or higher. If appointment letters are not generated in CROSS, hardcopy letters can be scanned and uploaded to the 'Documents' and 'Miscellaneous' tabs within CROSS.",
+          reference: {
+            text: "MCO 5210.11F, par 4b(5)(a) and par 4c(2)(c); MCBul 5210 dtd 29 Aug 25, par 3b(1)(a)1",
+          },
+        },
+        {
+          number: "0102",
+          text: "Has the commanding officer signed NAVMC 10030, 'Commander's Records Management Acknowledgement Agreement,' within 90 days of assuming command?",
+          reference: {
+            text: "MCBul 5210 dtd 29 Aug 25, 3b(1)(a)",
+          },
+        },
+        {
+          number: "0103",
+          text: "Does the CDRM annually monitor Records Management training for the command? Are individual RM training certificates for all CDRM(s) and Staff Section Records Managers (SSRM) uploaded in CROSS? Note: Training events are available at Waypoints, CROSS, or HQMC ARD RM SharePoint homepage. Proof of training is required to be uploaded in CROSS under the 'Documents' tab, 'Training Documents'. For command/block proof of training, CDRMs may upload a signed organizational training roster in CROSS, or a Marine Corps Training Information Management System occasion (MCTIMS) as proof of completion. CDRM and SSRM training certificates are to be uploaded as separate records within the 'Documents' and 'Training Documents' tabs.",
+          reference: {
+            text: "NARA Bulletin 2017-01, par 3A; SECNAV Instruction 5210.8F, par 5.1, encl(4), par 2b(2) and par 4j; MCO 5210.11F, chap 8, par 5; MCBul 5210 dtd 29 Aug 25, 3b(1)(a)5",
+          },
+        },
+        {
+          number: "0104",
+          text: "Has the command appointed Staff Section Records Managers (SSRM) in CROSS? Note: SSRMs manage records created and collected separately from the HQ component, i.e., records within sections, directorates, and/or major programs outside of the traditional G1/S1 shops. It is required for each SSRM to upload their individual annual RM training certificate in CROSS.",
+          reference: {
+            text: "MCO 5210.11F, par 4b(5)(a), par 4c(2)(c), and par 4c(3)(b)",
+          },
+        },
+        {
+          number: "0105",
+          text: "Has the command identified a file plan in CROSS, and do the identified record schedules correspond with the records maintained in the command's SharePoint Online (SPO) Records Library? UPDATE: It is now the responsibility of the CDRM to account for all command records within one file plan versus multiple command file plans. All separate file plans will \"roll into\" a master command file plan within CROSS. Commands are required to use the new disposition schedule metadata or the available labeling options within Microsoft SPO. Note: If the command has approval to manage paper records, they must be identified on the file plan in CROSS. Locations of the paper records will be annotated in the Excel spreadsheet version.",
+          reference: {
+            text: "MCO 5210.11F, chap 3, par 3 and Figure 303; ARD's RM SOP, section 3.2.4; SECNAV M-5210.1 Part III, par 2b",
+          },
+        },
+        {
+          number: "0106",
+          text: "Has the command developed and maintained an updated SOP to govern the creation and maintenance of command records in accordance with ERM practices? Note: A local order, bulletin, or SOP satisfies this requirement. Upload the updated RM SOP into CROSS under the 'Documents' and 'SOP/COOP' tabs.",
+          reference: {
+            text: "MCO 5210.11F, par 4b(5)(a-c), 4c(2)(a-q), and par 4c(3)(a)",
+          },
+        },
+      ],
+    },
+    {
+      id: "02",
+      title: "Paper Records Management",
+      questions: [
+        {
+          number: "0201",
+          text: "SKIP TO 0202 IF COMMAND HAS NO PAPER RECORDS ON PREMISE. Does the command have an approved and current NAVMC 10030/1, 'Records Management Paper Waiver Request'? Note: All NAVMC 10030/1s in the Marine Corps have unique expiration dates that are determined by the Records Officer of the Marine Corps. Commands with an approved NAVMC 10030/1 have until the form's expiration date to transition the identified paper records to an electronic format. Failure to do so within the approved timeframe will result in non-compliance. Only under extremely rare circumstances will a NAVMC 10030/1 be approved or renewed. Paper records that are identified as exceptions on an approved NAVMC 11030/1 must be annotated on the command File Plan (Excel version). Add a 'Notes' section (column F) to describe the physical locations of paper records.",
+          reference: {
+            text: "MCO 5210.11F, Chap 3 par 2a, par 3c, par 5a, Figures 3-1, 3-2, and 3-3",
+          },
+        },
+        {
+          number: "0202",
+          text: "Does the command have legacy paper records or collections that are being stored off-site at a Federal Records Center that, in some cases, may require access? If so, does the CDRM have an Archives and Records Center Information System (ARCIS) account to submit reference requests when necessary? Note: ARCIS is no longer used to transfer records to FRCs. ARCIS accounts are only provided to primary CDRMs to retrieve records if required for events that require them (legal records holds, discovery, and FOIA requests to name a few). Command records residing in approved ERM systems such as iAPS, DTS, or other enterprise- or government-wide systems of record shall remain resident in their respective systems – no need to transfer them. Annotate types and locations of records residing in ERM systems within the command CROSS file plan.",
+          reference: {
+            text: "MCO 5210.11F, Chap 3 par 1f(1) and par 3c(3)(b)",
+          },
+        },
+      ],
+    },
+    {
+      id: "03",
+      title: "Essential Records",
+      questions: [
+        {
+          number: "0301",
+          text: "Has the command developed and maintained an Essential Records (formerly Vital Records) plan? Is it included as part of the command RM SOP? Is it integrated into the command's Continuity of Operations Plan (COOP)? or Does it stand alone? Note: It is recommended that commands adopt their higher headquarters' Continuity of Operations Plans if appropriate. Commands can include their Essential Records and Emergency Action Plans within the adopted COOP. All command sections, directorates, and programs must identify their respective essential records and add that information into the command's master Essential Records inventory. Essential Records inventory must be uploaded to CROSS. Templates and samples are available in CROSS.",
+          reference: {
+            text: "MCO 5210.11F, par 4a(1)(b)6, par 4b(5)(b-c), par 4c(2)(q), Chap 7; ARD RM SOP, section 5.1",
+          },
+        },
+        {
+          number: "0302",
+          text: "Has the command conducted an annual inventory of all essential records? Note: Must provide textual and/or electronic evidence than an inventory was conducted. Upload inventory to CROSS.",
+          reference: {
+            text: "MCO 5210.11F, Chap 7",
+          },
+        },
+        {
+          number: "0303",
+          text: "Are all essential records current and properly managed throughout their lifecycle? Note: The inspector will take a random sampling of no more than (5) essential records currently being managed. This is to ensure the records are being managed according to the correct Records Schedules and dispositions.",
+          reference: {
+            text: "MCO 5210.11F, Chap 7",
+          },
+        },
+      ],
+    },
+    {
+      id: "04",
+      title: "Capstone",
+      note: "This section applies to commands with billets identified in General Records Schedule 6.1.",
+      questions: [
+        {
+          number: "0401",
+          text: "Does the command have a Capstone official? If yes, is General Records Schedule 6.1 part of the command file plan? Note: Upload Capstone official information in CROSS. If no, SKIP TO SUBSECTION 5 below.",
+          reference: {
+            text: "MCO 5210.11F, par 4(b)(12); MCBul 5210 dtd 29 Aug 2025, 3b(1)(a)3.a.",
+          },
+        },
+        {
+          number: "0402",
+          text: "Has the command responded to the quarterly Capstone reconciliation requirement via the Marine Corps tasker system (ETMS2)? Note: The command task manager must notify the CDRM of this quarterly requirement upon receipt of task. It is an OMB requirement to maintain updates of this information.",
+          reference: {
+            text: "OMB M-19-21, section 1.1; SECNAVINST 5210.8F, encl(4), par 6.g and encl(5), par 4; SECNAV-M 5210.1, Part 1, par 16.b.(e); MCO 5210.11F Chap 1, 1b(1)(a)",
+          },
+        },
+        {
+          number: "0403",
+          text: "Upon change of command/rotation/departure of Capstone official, did the CDRM revise the CROSS 'Capstone' tab to reflect changes? Note: If a change of command has occurred, the CDRM must initiate the NAVMC 10030 within 90 days and upload the signed form to CROSS.",
+          reference: {
+            text: "OMB M-19-21, section 1.1; SECNAVINST 5210.8F, encl(4), par 6.g and encl(5), par 4; SECNAV M-5210.1, Part 1, par 16.b(e); MCBul 5210 dtd 29 Aug 25, par 3b(1)(a)",
+          },
+        },
+      ],
+    },
+    {
+      id: "05",
+      title: "Command Chronology Records and Annual Reporting Status",
+      questions: [
+        {
+          number: "0501",
+          text: "Has the command submitted command chronologies to the Archives Branch, Marine Corps History Division, by the deadlines provided by receipt of letters and/or emails from the Archives Branch? Command historical summary files include the following elements: Copies of lineage and honors certificates, Copy of streamer entitlement, Copies of past (5) years of command chronologies, Master copy of command/unit insignia and corresponding documentation/correspondence, List of all property, facilities, and/or commemorative sites. Note: Command chronologies are due NLT 90 days after the end of the reporting period. For semiannual submissions, due dates are 30 June and 31 December. For annual submissions, due dates are NLT 31 December.",
+          reference: {
+            text: "MCO 5750.1H, encl(1), Chap 5; Annex 5 of App A; and MARADMIN 200/25",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 // Map of all FAC checklists
 const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   pes: pesChecklist,
@@ -2903,6 +3053,7 @@ const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   "military-awards": militaryAwardsChecklist,
   "postal-affairs": postalAffairsChecklist,
   "force-preservation-council": forcePreservationCouncilChecklist,
+  "records-management": recordsManagementChecklist,
 };
 
 // Helper functions
