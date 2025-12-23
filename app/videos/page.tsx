@@ -1,6 +1,13 @@
 import Image from "next/image";
 
-const playlists = [
+interface Playlist {
+  title: string;
+  youtubeUrl: string;
+  marineNetUrl: string;
+  videoId: string;
+}
+
+const playlists: Playlist[] = [
   {
     title: "Promotions",
     youtubeUrl: "https://www.youtube.com/watch?v=qzwBpl1XGn0&list=PLNGr21c4scCCeraDG0BZnPwtaGJhOV0MR",
@@ -45,52 +52,70 @@ export default function VideosPage() {
       <h1 className="text-3xl font-bold tracking-tight text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Instructional Videos</h1>
       <p className="text-zinc-700 dark:text-zinc-300">Curated YouTube playlists for core topics. Thumbnails link directly to playlists.</p>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {playlists.map((p) => (
-          <div key={p.title} className="flex flex-col rounded-xl border border-black/5 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <a
-              href={p.youtubeUrl || p.marineNetUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block overflow-hidden rounded transition hover:opacity-90"
-            >
-              <div className="relative h-40 w-full overflow-hidden rounded">
-                <Image
-                  src={`https://i.ytimg.com/vi/${p.videoId}/hqdefault.jpg`}
-                  alt={`${p.title} playlist thumbnail`}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover"
-                />
+        {playlists.map((p) => {
+          const thumbnailUrl = p.youtubeUrl || p.marineNetUrl;
+          return (
+            <div key={p.videoId} className="flex flex-col rounded-xl border border-black/5 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/40">
+              {thumbnailUrl ? (
+                <a
+                  href={thumbnailUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block overflow-hidden rounded transition hover:opacity-90"
+                >
+                  <span className="sr-only">Open {p.title} playlist (opens in new tab)</span>
+                  <div className="relative h-40 w-full overflow-hidden rounded">
+                    <Image
+                      src={`https://i.ytimg.com/vi/${p.videoId}/hqdefault.jpg`}
+                      alt={`${p.title} playlist thumbnail`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover"
+                    />
+                  </div>
+                </a>
+              ) : (
+                <div className="relative h-40 w-full overflow-hidden rounded bg-zinc-200 dark:bg-zinc-700">
+                  <Image
+                    src={`https://i.ytimg.com/vi/${p.videoId}/hqdefault.jpg`}
+                    alt={`${p.title} playlist thumbnail`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover"
+                  />
+                </div>
+              )}
+              <div className="mt-3 text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{p.title}</div>
+              <div className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">Open playlist</div>
+              <div className="mt-3 flex gap-2">
+                {p.marineNetUrl && (
+                  <a
+                    href={p.marineNetUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-[var(--sa-gold)] px-3 py-2 text-sm font-semibold text-[var(--sa-navy)] shadow-sm transition hover:bg-[var(--sa-gold)]/80"
+                  >
+                    <MarineNetIcon className="h-4 w-4" />
+                    MarineNet
+                    <span className="sr-only">(opens in new tab)</span>
+                  </a>
+                )}
+                {p.youtubeUrl && (
+                  <a
+                    href={p.youtubeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-[var(--sa-red)] px-3 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--sa-red)]/80"
+                  >
+                    <YouTubeIcon className="h-4 w-4" />
+                    YouTube
+                    <span className="sr-only">(opens in new tab)</span>
+                  </a>
+                )}
               </div>
-            </a>
-            <div className="mt-3 text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{p.title}</div>
-            <div className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">Open playlist</div>
-            <div className="mt-3 flex gap-2">
-              {p.marineNetUrl && (
-                <a
-                  href={p.marineNetUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-[var(--sa-gold)] px-3 py-2 text-sm font-semibold text-[var(--sa-navy)] shadow-sm transition hover:bg-[var(--sa-gold)]/80"
-                >
-                  <MarineNetIcon className="h-4 w-4" />
-                  MarineNet
-                </a>
-              )}
-              {p.youtubeUrl && (
-                <a
-                  href={p.youtubeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-[var(--sa-red)] px-3 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--sa-red)]/80"
-                >
-                  <YouTubeIcon className="h-4 w-4" />
-                  YouTube
-                </a>
-              )}
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
