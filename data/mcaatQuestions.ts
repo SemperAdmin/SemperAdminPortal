@@ -2062,9 +2062,121 @@ export const mcaatQuestions: MCCATCategory[] = [
     name: "Systems Management",
     description: "UDMIPS, DTMS, DMM certifying officials, COL training, DFR certification, and OMPF access.",
     sections: [
-      { unitType: "REPORTING", questions: [] },
-      { unitType: "IPAC", questions: [] },
-      { unitType: "SUPPORTING", questions: [] }
+      {
+        unitType: "REPORTING",
+        questions: [
+          {
+            id: 1,
+            question: "Does the unit have current UDMIPS access and are users properly trained on UDMIPS functionality?",
+            reference: "MCTFSPRIUM, 1-10100"
+          },
+          {
+            id: 2,
+            question: "Is the unit utilizing the Defense Travel Management System (DTMS) for travel authorization and voucher processing?",
+            reference: "MCO 4650.39A; MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 3,
+            question: "Are Disbursing / Military Money (DMM) certifying officials properly appointed and trained?",
+            reference: "DoDFMR Vol. 5; MCTFSPRIUM, 1-10100"
+          },
+          {
+            id: 4,
+            question: "Is the unit ensuring personnel complete required Certifying Officer Legislation (COL) training annually?",
+            reference: "DoDFMR Vol. 5, Chap. 33; MCTFSPRIUM, 1-10100"
+          },
+          {
+            id: 5,
+            question: "Are Defense Finance Reporting (DFR) certifications current and accurate?",
+            reference: "MCTFSPRIUM, 1-10100"
+          },
+          {
+            id: 6,
+            question: "Does the unit have appropriate OMPF access levels for personnel requiring access?",
+            reference: "MCO 1070.1; MCTFSPRIUM, 1-10100"
+          },
+          {
+            id: 7,
+            question: "Is the unit ensuring MOL accounts are properly managed and access levels are appropriate?",
+            reference: "MCTFSPRIUM, 1-10100"
+          },
+          {
+            id: 8,
+            question: "Are unit diary clerks properly trained and certified on unit diary reporting procedures?",
+            reference: "MCTFSPRIUM, 1-10100, 2-20103"
+          }
+        ]
+      },
+      {
+        unitType: "IPAC",
+        questions: [
+          {
+            id: 9,
+            question: "Does the unit have current UDMIPS access and are users properly trained on UDMIPS functionality?",
+            reference: "MCTFSPRIUM, 1-10100"
+          },
+          {
+            id: 10,
+            question: "Are Disbursing / Military Money (DMM) certifying officials properly appointed and trained?",
+            reference: "DoDFMR Vol. 5; MCTFSPRIUM, 1-10100"
+          },
+          {
+            id: 11,
+            question: "Is the unit ensuring personnel complete required Certifying Officer Legislation (COL) training annually?",
+            reference: "DoDFMR Vol. 5, Chap. 33; MCTFSPRIUM, 1-10100"
+          },
+          {
+            id: 12,
+            question: "Are Defense Finance Reporting (DFR) certifications current and accurate?",
+            reference: "MCTFSPRIUM, 1-10100"
+          },
+          {
+            id: 13,
+            question: "Does the unit have appropriate OMPF access levels for personnel requiring access?",
+            reference: "MCO 1070.1; MCTFSPRIUM, 1-10100"
+          },
+          {
+            id: 14,
+            question: "Is the unit ensuring MOL accounts are properly managed and access levels are appropriate?",
+            reference: "MCTFSPRIUM, 1-10100"
+          },
+          {
+            id: 15,
+            question: "Are unit diary clerks properly trained and certified on unit diary reporting procedures?",
+            reference: "MCTFSPRIUM, 1-10100, 2-20103"
+          }
+        ]
+      },
+      {
+        unitType: "SUPPORTING",
+        questions: [
+          {
+            id: 16,
+            question: "Is the unit ensuring personnel have appropriate system access levels for their duties?",
+            reference: "MCTFSPRIUM, 1-10100"
+          },
+          {
+            id: 17,
+            question: "Is the unit validating that MOL access requests are processed IAW applicable regulations?",
+            reference: "MCTFSPRIUM, 1-10100, 1-10111"
+          },
+          {
+            id: 18,
+            question: "Is the unit ensuring personnel complete required systems training before gaining access?",
+            reference: "MCTFSPRIUM, 1-10100"
+          },
+          {
+            id: 19,
+            question: "Is the unit maintaining a current roster of personnel with system access and their access levels?",
+            reference: "MCTFSPRIUM, 1-10100"
+          },
+          {
+            id: 20,
+            question: "Is the unit ensuring system access is removed for personnel who no longer require access or have transferred?",
+            reference: "MCTFSPRIUM, 1-10100"
+          }
+        ]
+      }
     ]
   },
   {
