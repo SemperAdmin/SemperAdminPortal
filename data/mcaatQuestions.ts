@@ -1591,9 +1591,156 @@ export const mcaatQuestions: MCCATCategory[] = [
     name: "Promotions",
     description: "Meritorious promotions, CRB reporting, JEPES occasions, and promotion recommendation procedures.",
     sections: [
-      { unitType: "REPORTING", questions: [] },
-      { unitType: "IPAC", questions: [] },
-      { unitType: "SUPPORTING", questions: [] }
+      {
+        unitType: "REPORTING",
+        questions: [
+          {
+            id: 1,
+            question: "Are meritorious promotions reported IAW applicable regulations?",
+            reference: "MCO 1400.32D, Chap. 4; MCTFSPRIUM, 5-50102"
+          },
+          {
+            id: 2,
+            question: "Are meritorious promotions reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 3,
+            question: "Are Meritorious Promotion Warrants (DD Form 216) filed in OMPF within 10 working days from the date reported on unit diary?",
+            reference: "MCO 1400.32D; MCTFSPRIUM, Chap. 13, Appendix C; MCO 1070.1"
+          },
+          {
+            id: 4,
+            question: "Are CRB transactions reported IAW applicable regulations?",
+            reference: "MCO 1400.32D, Chap. 12; MCTFSPRIUM, 5-50400"
+          },
+          {
+            id: 5,
+            question: "Are CRB transactions reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 6,
+            question: "Are JEPES occasions approved by the appropriate authority?",
+            reference: "MCO 1616.1, Chap. 1, par. 5; Chap. 2, par. 1"
+          },
+          {
+            id: 7,
+            question: "Are JEPES occasions reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 8,
+            question: "For Marines in the grades of E4 and below, are JEPES occasions approved by the individual with appropriate promotion authority on the effective date of the promotion?",
+            reference: "MCO P1400.32D, para 1200.3.b; MCO 1616.1, Ch 1, para 5.g; Ch 2, para 1.f"
+          },
+          {
+            id: 9,
+            question: "Are promotion recommendations (TTC 193) reported IAW applicable regulations?",
+            reference: "MCO 1400.32D, Chap. 6; MCTFSPRIUM, 5-50200"
+          },
+          {
+            id: 10,
+            question: "Are promotion recommendations reported within 5 days of the effective date?",
+            reference: "MCTFSPRIUM, 2-20103"
+          }
+        ]
+      },
+      {
+        unitType: "IPAC",
+        questions: [
+          {
+            id: 11,
+            question: "Are meritorious promotions reported IAW applicable regulations?",
+            reference: "MCO 1400.32D, Chap. 4; MCTFSPRIUM, 5-50102"
+          },
+          {
+            id: 12,
+            question: "Are meritorious promotions reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 13,
+            question: "Are Meritorious Promotion Warrants (DD Form 216) filed in OMPF within 10 working days from the date reported on unit diary?",
+            reference: "MCO 1400.32D; MCTFSPRIUM, Chap. 13, Appendix C; MCO 1070.1"
+          },
+          {
+            id: 14,
+            question: "Are CRB transactions reported IAW applicable regulations?",
+            reference: "MCO 1400.32D, Chap. 12; MCTFSPRIUM, 5-50400"
+          },
+          {
+            id: 15,
+            question: "Are CRB transactions reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 16,
+            question: "Are JEPES occasions approved by the appropriate authority?",
+            reference: "MCO 1616.1, Chap. 1, par. 5; Chap. 2, par. 1"
+          },
+          {
+            id: 17,
+            question: "Are JEPES occasions reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          },
+          {
+            id: 18,
+            question: "Are promotion recommendations (TTC 193) reported IAW applicable regulations?",
+            reference: "MCO 1400.32D, Chap. 6; MCTFSPRIUM, 5-50200"
+          },
+          {
+            id: 19,
+            question: "Are promotion recommendations reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103"
+          }
+        ]
+      },
+      {
+        unitType: "SUPPORTING",
+        questions: [
+          {
+            id: 20,
+            question: "Is the unit ensuring key supporting documents for meritorious promotions are submitted to and received by the reporting unit within 5 days of occurrence?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 21,
+            question: "Is the unit validating meritorious promotions are reported IAW applicable regulations by the reporting unit?",
+            reference: "MCO 1400.32D, Chap. 4; MCTFSPRIUM, 1-10111, 5-50102"
+          },
+          {
+            id: 22,
+            question: "Is the unit ensuring key supporting documents for CRB transactions are submitted to and received by the reporting unit within 5 days of occurrence?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 23,
+            question: "Is the unit validating CRB transactions are reported IAW applicable regulations by the reporting unit?",
+            reference: "MCO 1400.32D, Chap. 12; MCTFSPRIUM, 1-10111, 5-50400"
+          },
+          {
+            id: 24,
+            question: "Is the unit ensuring JEPES occasions are approved by the appropriate authority before submission to the reporting unit?",
+            reference: "MCO 1616.1, Chap. 1, par. 5; Chap. 2, par. 1"
+          },
+          {
+            id: 25,
+            question: "Is the unit ensuring key supporting documents for promotion recommendations are submitted to and received by the reporting unit within 5 days of occurrence?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 26,
+            question: "Is the unit validating promotion recommendations are reported IAW applicable regulations by the reporting unit?",
+            reference: "MCO 1400.32D, Chap. 6; MCTFSPRIUM, 1-10111, 5-50200"
+          },
+          {
+            id: 27,
+            question: "Is the unit ensuring key supporting documents that validate promotion entitlements are maintained on file for audit, and in accordance with retention policies?",
+            reference: "DoDFMR, Vol. 1, Chap. 9; SECNAV M-5210.1; MARADMIN 601/24"
+          }
+        ]
+      }
     ]
   },
   {
