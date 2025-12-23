@@ -28,13 +28,60 @@ export interface MCCATQuestion {
 
 // Common reference URLs - add URLs here as they become available
 export const commonReferenceUrls: Record<string, string> = {
-  // DoDFMR Volumes
-  "DoDFMR Vol. 7A": "https://comptroller.defense.gov/FMR/fmrvolumes.aspx",
-  "DoDFMR Vol. 1": "https://comptroller.defense.gov/FMR/fmrvolumes.aspx",
-  "DoDFMR Vol. 5": "https://comptroller.defense.gov/FMR/fmrvolumes.aspx",
+  // DoDFMR Volume 7A - Specific Chapters
+  "DoDFMR Vol. 7A, Chap. 3": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_03.pdf",
+  "DoDFMR Vol 7A, Chap. 3": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_03.pdf",
+  "DoDFMR Vol. 7A, Chap. 9": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_09.pdf",
+  "DoDFMR Vol 7A, Chap. 9": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_09.pdf",
+  "DoDFMR Vol. 7A, Chap. 10": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_10.pdf",
+  "DoDFMR Vol 7A, Ch 10": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_10.pdf",
+  "DoDFMR Vol. 7A, Chap. 15": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_15.pdf",
+  "DoDFMR Vol. 7A, Chap. 16": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_16.pdf",
+  "DoDFMR Vol. 7A, Chap. 17": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_17.pdf",
+  "DoDFMR Vol 7A, Ch 17": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_17.pdf",
+  "DoDFMR Vol. 7A, Chap. 18": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_18.pdf",
+  "DoDFMR Vol 7A, Ch 18": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_18.pdf",
+  "DoDFMR Vol. 7A, Chap. 19": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_19.pdf",
+  "DoDFMR Vol. 7A, Chap. 22": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_22.pdf",
+  "DoDFMR Vol. 7A, Chap. 24": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_24.pdf",
+  "DoDFMR Vol 7A, Chap 24": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_24.pdf",
+  "DoDFMR Vol 7A Chap 24": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_24.pdf",
+  "DoDFMR Vol. 7A Chap. 24": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_24.pdf",
+  "DoDFMR Vol. 7A, Chap. 25": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_25.pdf",
+  "DoDFMR Vol 7A, Chap. 25": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_25.pdf",
+  "DoDFMR Vol 7A, Chap 25": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_25.pdf",
+  "DoDFMR Vol 7A, Ch 25": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_25.pdf",
+  "DoDFMR Vol. 7A, Chap. 26": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_26.pdf",
+  "DoDFMR Vol 7A, Chap 26": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_26.pdf",
+  "DoDFMR VOL 7A, CHAP. 26": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_26.pdf",
+  "DoDFMR Vol. 7A, Chap. 27": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_27.pdf",
+  "DoDFMR Vol 7A, Chap. 27": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_27.pdf",
+  "DoDFMR Vol. 7A, Chap. 28": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_28.pdf",
+  "DoDFMR Vol. 7A, Chap. 35": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_35.pdf",
+  "DoDFMR Vol. 7A, Chap. 44": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_44.pdf",
+  "DoDFMR Vol 7A, Ch 44": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_44.pdf",
+  "DoDFMR Vol. 7A, Chap. 49": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_49.pdf",
+  "DoDFMR Vol 7A, Chap 49": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_49.pdf",
+  "DoDFMR Vol. 7A, Chap .49": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_49.pdf",
+  "DoDFMR Vol. 7A, Chap. 50": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_50.pdf",
+  "DoDFMR Vol. 7A, Chap. 58": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_58.pdf",
+  "Chap. 58": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_58.pdf",
+  "DoDFMR Vol. 7A, Chap. 65": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_65.pdf",
+  "DoDFMR Vol 7A, Chap 65": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_65.pdf",
+
+  // DoDFMR Volume 1
+  "DoDFMR Vol. 1, Chap. 9": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/01/01_09.pdf",
+  "DoDFMR, Vol. 1, Chap. 9": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/01/01_09.pdf",
+  "DoDFMR, Vol 1, Ch 9": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/01/01_09.pdf",
+
+  // DoDFMR Volume 5
+  "DoDFMR Vol. 5": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/05/05_33.pdf",
+  "DoDFMR Vol. 5, Chap. 33": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/05/05_33.pdf",
 
   // JTR
   "JTR": "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/",
+  "JTR Chap. 9": "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/",
+  "JTR Chap. 10": "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/",
 
   // MCOs - Add specific URLs as available
   "MCO 1070.1": "",
