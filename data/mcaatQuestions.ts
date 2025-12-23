@@ -103,6 +103,15 @@ export const commonReferenceUrls: Record<string, string> = {
   "MCO 6100.13A": "https://www.marines.mil/Portals/1/Publications/MCO%206100.13A%20W%20ADMIN%20CH-5%20(SECURED).pdf?ver=_Cd9D-v4wfAiMrAXq3Y-Mw%3d%3d",
 
   // MCO 5800.16 - separate volumes
+  "MCO 5800.16 Vol 12": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Volume%2012.pdf?ver=2018-08-16-075707-797",
+  "MCO 5800.16 Vol. 12": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Volume%2012.pdf?ver=2018-08-16-075707-797",
+  "MCO 5800.16 Vol 14": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
+  "MCO 5800.16 Vol. 14": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
+  "MCO 5800.16, Vol 14": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
+  "MCO 5800.16, Vol. 14": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
+  "MCO 5800.16, Volume 14": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
+  "MCO 5800.16A, Vol. 14": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
+  "MCO 5800.16A, Volume 14": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
 
   // MCTFSPRIUM - Add specific chapter URLs as available
   "MCTFSPRIUM": "",
