@@ -1,10 +1,37 @@
 import type { MCCATQuestion } from "../data/mcaatQuestions";
-import { commonReferenceUrls } from "../data/mcaatQuestions";
+import { commonReferenceUrls, cacRequiredDomains } from "../data/mcaatQuestions";
 
 type Props = {
   question: MCCATQuestion;
   index: number;
 };
+
+// Helper to check if URL requires CAC
+function requiresCAC(url: string): boolean {
+  try {
+    const hostname = new URL(url).hostname;
+    return cacRequiredDomains.some(domain => hostname.includes(domain));
+  } catch {
+    return false;
+  }
+}
+
+// CAC Card Icon SVG component
+function CACIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-label="CAC Required">
+      <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" strokeWidth="1.5" fill="none" />
+      <rect x="4" y="6" width="5" height="5" rx="0.5" fill="currentColor" opacity="0.3" />
+      <circle cx="6.5" cy="8" r="1.5" fill="currentColor" />
+      <rect x="11" y="6" width="9" height="1.5" rx="0.5" fill="currentColor" opacity="0.5" />
+      <rect x="11" y="9" width="6" height="1.5" rx="0.5" fill="currentColor" opacity="0.5" />
+      <rect x="4" y="13" width="16" height="4" rx="0.5" fill="currentColor" opacity="0.2" />
+      <rect x="5" y="14" width="2" height="2" fill="currentColor" opacity="0.6" />
+      <rect x="8" y="14" width="2" height="2" fill="currentColor" opacity="0.6" />
+      <rect x="11" y="14" width="2" height="2" fill="currentColor" opacity="0.6" />
+    </svg>
+  );
+}
 
 // Helper to find URL for a reference part
 function findReferenceUrl(refPart: string, referenceLinks?: Record<string, string>): string | null {
@@ -50,6 +77,7 @@ export default function MCCATQuestionCard({ question, index }: Props) {
             <span className="font-semibold">Reference: </span>
             {referenceParts.map((part, idx) => {
               const url = findReferenceUrl(part, question.referenceLinks);
+              const isCAC = url ? requiresCAC(url) : false;
               return (
                 <span key={idx}>
                   {url ? (
@@ -57,9 +85,11 @@ export default function MCCATQuestionCard({ question, index }: Props) {
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[var(--sa-navy)] underline decoration-dotted underline-offset-2 hover:text-[var(--sa-red)] hover:decoration-solid dark:text-[var(--sa-gold)] dark:hover:text-[var(--sa-cream)]"
+                      className="inline-flex items-center gap-0.5 text-[var(--sa-navy)] underline decoration-dotted underline-offset-2 hover:text-[var(--sa-red)] hover:decoration-solid dark:text-[var(--sa-gold)] dark:hover:text-[var(--sa-cream)]"
+                      title={isCAC ? "CAC Required" : undefined}
                     >
                       {part}
+                      {isCAC && <CACIcon className="inline-block h-3.5 w-3.5 ml-0.5 text-[var(--sa-gold)]" />}
                     </a>
                   ) : (
                     <span>{part}</span>

@@ -53,6 +53,8 @@ export const commonReferenceUrls: Record<string, string> = {
   "DoDFMR Vol 7A, Ch 25": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_25.pdf",
   "DoDFMR Vol. 7A, Chap. 26": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_26.pdf",
   "DoDFMR Vol 7A, Chap 26": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_26.pdf",
+  "DoDFMR Vol. 7A, Chap 26": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_26.pdf",
+  "DoDFMR, Vol. 7A, Chap. 26": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_26.pdf",
   "DoDFMR VOL 7A, CHAP. 26": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_26.pdf",
   "DoDFMR Vol. 7A, Chap. 27": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_27.pdf",
   "DoDFMR Vol 7A, Chap. 27": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_27.pdf",
@@ -68,6 +70,7 @@ export const commonReferenceUrls: Record<string, string> = {
   "Chap. 58": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_58.pdf",
   "DoDFMR Vol. 7A, Chap. 65": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_65.pdf",
   "DoDFMR Vol 7A, Chap 65": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_65.pdf",
+  "DoDFMR Vol. 7A, Chap 65": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_65.pdf",
 
   // DoDFMR Volume 1
   "DoDFMR Vol. 1, Chap. 9": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/01/01_09.pdf",
@@ -137,9 +140,37 @@ export const commonReferenceUrls: Record<string, string> = {
   "MARADMIN 619/14": "https://www.marines.mil/News/Messages/Messages-Display/Article/896817/hardship-duty-pay-tempo-hdp-t-program-details/",
   "MARADMIN 661/19": "https://www.marines.mil/News/Messages/Messages-Display/Article/2029557/manpower-audit-advisory-1-19-audit-compensating-controls-to-dependency-applicat/",
 
-  // MCTFSPRIUM - Add specific chapter URLs as available
-  "MCTFSPRIUM": "",
+  // OPNAVINST
+  "OPNAVINST 7220.4L": "https://www.secnav.navy.mil/doni/Directives/07000%20Financial%20Management%20Services/07-200%20Disbursing%20Services/7220.4L.pdf",
+
+  // NDAA
+  "NDAA FY 2020": "https://www.congress.gov/116/plaws/publ92/PLAW-116publ92.pdf",
+
+  // MCTFSPRIUM (CAC required)
+  "MCTFSPRIUM": "https://mol.tfs.usmc.mil/prium/app/publicPrium?execution=e1s1",
+  "MCTFS PRIUM": "https://mol.tfs.usmc.mil/prium/app/publicPrium?execution=e1s1",
+  "MCFTSPRIUM": "https://mol.tfs.usmc.mil/prium/app/publicPrium?execution=e1s1",
+
+  // FPM (CAC required)
+  "FPM Vol 2": "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCPR_RFF_External/Finance_Policy/Active%20FPM%20Volumes/Forms/Grouped.aspx?id=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FActive%20FPM%20Volumes%2FVol%202%2020251217%2Epdf&parent=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FActive%20FPM%20Volumes",
+  "FPM Vol. 2": "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCPR_RFF_External/Finance_Policy/Active%20FPM%20Volumes/Forms/Grouped.aspx?id=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FActive%20FPM%20Volumes%2FVol%202%2020251217%2Epdf&parent=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FActive%20FPM%20Volumes",
+  "FPM, Vol 2": "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCPR_RFF_External/Finance_Policy/Active%20FPM%20Volumes/Forms/Grouped.aspx?id=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FActive%20FPM%20Volumes%2FVol%202%2020251217%2Epdf&parent=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FActive%20FPM%20Volumes",
+  "FPM Volume 2": "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCPR_RFF_External/Finance_Policy/Active%20FPM%20Volumes/Forms/Grouped.aspx?id=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FActive%20FPM%20Volumes%2FVol%202%2020251217%2Epdf&parent=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FActive%20FPM%20Volumes",
+
+  // PAA/PAAN (CAC required)
+  "PAAN 2-15": "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCPR_RFF_External/Finance_Policy/Advisory%20Notifications/Forms/Grouped.aspx?id=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FAdvisory%20Notifications%2FPAAN%2002%2D15%2Epdf&parent=%2Fsites%2FDCPR%5FRFF%5FExternal%2FFinance%5FPolicy%2FAdvisory%20Notifications",
+  "PAA 01-24": "https://usmc.sharepoint-mil.us/sites/dcmra_mra_mi_missa/Lists/PAA/DispForm.aspx?ID=122&e=cl5wom",
+  "PAA 02-21": "https://usmc.sharepoint-mil.us/sites/dcmra_mra_mi_missa/Lists/PAA/DispForm.aspx?ID=17&e=zmMgq9",
+  "PAA 2-21": "https://usmc.sharepoint-mil.us/sites/dcmra_mra_mi_missa/Lists/PAA/DispForm.aspx?ID=17&e=zmMgq9",
+  "PAA 07-10": "https://usmc.sharepoint-mil.us/sites/dcmra_mra_mi_missa/Lists/PAA/DispForm.aspx?ID=116&e=oT6Xal",
 };
+
+// Domains that require CAC access
+export const cacRequiredDomains = [
+  "mol.tfs.usmc.mil",
+  "usmc.sharepoint-mil.us",
+  "usmc.sharepoint-mil.us.mcas-gov.us",
+];
 
 export interface MCCATUnitSection {
   unitType: UnitType;
@@ -543,7 +574,7 @@ export const mcaatQuestions: MCCATCategory[] = [
           {
             id: 44,
             question: "Is HDP reported IAW applicable regulations?",
-            reference: "DoDFMR Vol. 7A, Chap. 17, par. 1702, Fig. 17-1, Table 17-1; MARADMIN 092/21; MARAMDIN 619/14; MCTFSPRIUM, 9-90801, 9-90802, 9-90803, Table 9-8"
+            reference: "DoDFMR Vol. 7A, Chap. 17, par. 1702, Fig. 17-1, Table 17-1; MARADMIN 092/21; MARADMIN 619/14; MCTFSPRIUM, 9-90801, 9-90802, 9-90803, Table 9-8"
           },
           {
             id: 45,
@@ -643,7 +674,7 @@ export const mcaatQuestions: MCCATCategory[] = [
           {
             id: 27,
             question: "Is the unit validating HDP for exercises, operations, or deployments is reported IAW applicable regulations by the reporting unit?",
-            reference: "DoDFMR Vol. 7A, Chap. 17, par. 1702, Fig. 17-1, Table 17-1; MCTFSPRIUM, 1-10111, 9-90801, 9-90802 and 9-90803, Table 9-8; MARADMIN 092/21; MARAMDIN 619/14"
+            reference: "DoDFMR Vol. 7A, Chap. 17, par. 1702, Fig. 17-1, Table 17-1; MCTFSPRIUM, 1-10111, 9-90801, 9-90802 and 9-90803, Table 9-8; MARADMIN 092/21; MARADMIN 619/14"
           },
           {
             id: 28,
