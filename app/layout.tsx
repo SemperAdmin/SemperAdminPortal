@@ -62,18 +62,36 @@ export default function RootLayout({
               try { localStorage.setItem(KEY, next); } catch {}
               apply(next);
             });
-            // Roles menu uses hover-based popout like Inspection
+            // Inspection menu click handling
             var inspection = document.getElementById('sa-inspection');
             var itoggle = document.getElementById('sa-inspection-toggle');
             var ipanel = document.getElementById('sa-inspection-panel');
             function iclose(){ if (inspection) inspection.setAttribute('data-open','false'); if (itoggle) itoggle.setAttribute('aria-expanded','false'); if (ipanel) ipanel.classList.add('hidden'); }
             function iopen(){ if (inspection) inspection.setAttribute('data-open','true'); if (itoggle) itoggle.setAttribute('aria-expanded','true'); if (ipanel) ipanel.classList.remove('hidden'); }
+
+            // Roles menu click handling
+            var roles = document.getElementById('sa-roles');
+            var rtoggle = document.getElementById('sa-roles-toggle');
+            var rpanel = document.getElementById('sa-roles-panel');
+            function rclose(){ if (roles) roles.setAttribute('data-open','false'); if (rtoggle) rtoggle.setAttribute('aria-expanded','false'); if (rpanel) rpanel.classList.add('hidden'); }
+            function ropen(){ if (roles) roles.setAttribute('data-open','true'); if (rtoggle) rtoggle.setAttribute('aria-expanded','true'); if (rpanel) rpanel.classList.remove('hidden'); }
+
+            // Initialize both menus
             if (itoggle && inspection && ipanel){
               iclose();
-              itoggle.addEventListener('click', function(e){ e.preventDefault(); var isOpen = inspection.getAttribute('data-open') === 'true'; if (isOpen) iclose(); else iopen(); });
-              document.addEventListener('keydown', function(e){ if (e.key === 'Escape') iclose(); });
-              document.addEventListener('click', function(e){ if (!inspection.contains(e.target)) iclose(); });
+              itoggle.addEventListener('click', function(e){ e.preventDefault(); rclose(); var isOpen = inspection.getAttribute('data-open') === 'true'; if (isOpen) iclose(); else iopen(); });
             }
+            if (rtoggle && roles && rpanel){
+              rclose();
+              rtoggle.addEventListener('click', function(e){ e.preventDefault(); iclose(); var isOpen = roles.getAttribute('data-open') === 'true'; if (isOpen) rclose(); else ropen(); });
+            }
+
+            // Close on escape or outside click
+            document.addEventListener('keydown', function(e){ if (e.key === 'Escape') { iclose(); rclose(); } });
+            document.addEventListener('click', function(e){
+              if (inspection && !inspection.contains(e.target)) iclose();
+              if (roles && !roles.contains(e.target)) rclose();
+            });
           })();
         `}} />
         <header className="sticky top-0 z-50 border-b border-black/5 bg-[var(--sa-cream)]/80 backdrop-blur supports-[backdrop-filter]:bg-[var(--sa-cream)]/60 dark:bg-[var(--sa-navy)]/80 dark:supports-[backdrop-filter]:bg-[var(--sa-navy)]/60">
@@ -99,9 +117,9 @@ export default function RootLayout({
               </div>
               <Link href="/links" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Links</Link>
               <Link href="/reports" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Reports</Link>
-              <div className="relative group">
-                <button type="button" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Roles</button>
-                <div className="absolute left-0 top-full mt-2 hidden min-w-[14rem] z-50 rounded-lg border border-black/5 bg-white p-2 shadow-lg group-hover:block group-focus-within:block dark:border-white/15 dark:bg-black/80">
+              <div id="sa-roles" className="relative" data-open="false">
+                <button id="sa-roles-toggle" type="button" aria-haspopup="true" aria-expanded="false" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Roles</button>
+                <div id="sa-roles-panel" className="hidden absolute left-0 top-full mt-2 min-w-[14rem] z-[999] rounded-lg border border-black/5 bg-white p-2 shadow-lg dark:border-white/15 dark:bg-black/80">
                   <Link href="/roles/marines" prefetch={false} className="block rounded-md px-3 py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">All Marines</Link>
                   <Link href="/roles/administrators" prefetch={false} className="block rounded-md px-3 py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Administrators</Link>
                   <Link href="/roles/leaders" prefetch={false} className="block rounded-md px-3 py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Leaders</Link>
