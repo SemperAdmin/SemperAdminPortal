@@ -101,6 +101,8 @@ export const commonReferenceUrls: Record<string, string> = {
   "MCO 3574.2M": "https://www.marines.mil/Portals/1/Publications/MCO%203574.2M.pdf?ver=xsW2GP8UoKM6kVJ2D58skQ%3d%3d",
   "MCO 4650.39A": "https://www.marines.mil/portals/1/Publications/MCO%204650.39A.pdf",
   "MCO 6100.13A": "https://www.marines.mil/Portals/1/Publications/MCO%206100.13A%20W%20ADMIN%20CH-5%20(SECURED).pdf?ver=_Cd9D-v4wfAiMrAXq3Y-Mw%3d%3d",
+  "MCO 6110.3A": "https://www.marines.mil/Portals/1/Publications/MCO%206110.3A%20W%20ADMIN%20CH-4%20(SECURED).pdf?ver=7XYc4AD_PjViwRYVmHjkpw%3d%3d",
+  "MCO P3000.15B": "https://www.marines.mil/portals/1/Publications/MCO%20P3000.15B.pdf?ver=2012-10-11-163734-160",
 
   // MCO 5800.16 - separate volumes
   "MCO 5800.16 Vol 12": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Volume%2012.pdf?ver=2018-08-16-075707-797",
