@@ -19,8 +19,9 @@ export function generateStaticParams() {
 }
 
 // Generate metadata
-export function generateMetadata({ params }: { params: { fac: string } }) {
-  const fac = getFACBySlug(params.fac);
+export async function generateMetadata({ params }: { params: Promise<{ fac: string }> }) {
+  const { fac: facSlug } = await params;
+  const fac = getFACBySlug(facSlug);
   if (!fac) {
     return { title: "FAC Not Found" };
   }
@@ -56,8 +57,9 @@ function CategoryBadge({ category }: { category: FACCategory }) {
   );
 }
 
-export default function FACPage({ params }: { params: { fac: string } }) {
-  const fac = getFACBySlug(params.fac);
+export default async function FACPage({ params }: { params: Promise<{ fac: string }> }) {
+  const { fac: facSlug } = await params;
+  const fac = getFACBySlug(facSlug);
 
   if (!fac) {
     notFound();
