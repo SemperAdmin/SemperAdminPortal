@@ -26,10 +26,8 @@ function CategoryBadge({ category }: { category: FACCategory }) {
 // FAC Card component
 function FACCard({ fac }: { fac: (typeof functionalAreaChecklists)[number] }) {
   return (
-    <a
-      href={fac.href}
-      target="_blank"
-      rel="noopener noreferrer"
+    <Link
+      href={`/inspections/igmc/${fac.slug}`}
       className="group flex flex-col rounded-xl border border-black/5 bg-white p-4 shadow-sm transition hover:border-[var(--sa-navy)]/30 hover:shadow-md dark:border-white/10 dark:bg-black/40 dark:hover:border-[var(--sa-gold)]/30"
     >
       <div className="mb-3 flex items-start justify-between gap-2">
@@ -55,10 +53,10 @@ function FACCard({ fac }: { fac: (typeof functionalAreaChecklists)[number] }) {
       <div className="mt-3 flex items-center gap-1 text-xs font-medium text-[var(--sa-navy)] group-hover:text-[var(--sa-red)] dark:text-[var(--sa-gold)] dark:group-hover:text-[var(--sa-cream)]">
         <span>View Checklist</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-3 w-3">
-          <path d="M7 17L17 7M17 7H7M17 7V17" />
+          <polyline points="9 18 15 12 9 6" />
         </svg>
       </div>
-    </a>
+    </Link>
   );
 }
 
