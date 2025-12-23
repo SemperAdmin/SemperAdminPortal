@@ -129,6 +129,11 @@ export const commonReferenceUrls: Record<string, string> = {
   "MARADMIN 106/24": "https://www.marines.mil/News/Messages/Messages-Display/Article/3689532/2024-secretary-of-defense-field-depot-and-software-maintenance-awards/",
   "MARADMIN 111/20": "https://www.marines.mil/News/Messages/Messages-Display/Article/2093168/annual-rifle-training-table-one-score-conversion/",
   "MARADMINS 0111/20": "https://www.marines.mil/News/Messages/Messages-Display/Article/2093168/annual-rifle-training-table-one-score-conversion/",
+  "MARADMIN 236/22": "https://www.marines.mil/News/Messages/Messages-Display/Article/3023343/announcement-of-the-2022-liz-blanc-exceptional-sexual-assault-response-coordina/",
+  "MARADMIN 344/22": "https://www.marines.mil/News/Messages/Messages-Display/Article/3086743/amplifying-guidance-for-use-of-military-airlift-and-conus-dedicated-operational/",
+  "MARADMIN 359/25": "https://www.marines.mil/News/Messages/Messages-Display/Article/4262230/updated-guidance-for-processing-unsubmitted-defense-travel-system-travel-vouche/",
+  "MARADMIN 601/24": "https://www.marines.mil/News/Messages/Messages-Display/Article/4000417/directed-usage-of-the-unit-diarymanpower-integrated-personnel-service-udmips-fo/",
+  "MARADMINS 106/24": "https://www.marines.mil/News/Messages/Messages-Display/Article/3689532/2024-secretary-of-defense-field-depot-and-software-maintenance-awards/",
 
   // MCTFSPRIUM - Add specific chapter URLs as available
   "MCTFSPRIUM": "",
