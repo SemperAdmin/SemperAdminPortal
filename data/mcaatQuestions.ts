@@ -1748,9 +1748,81 @@ export const mcaatQuestions: MCCATCategory[] = [
     name: "Reserve Pay",
     description: "SMCR pay processing, drill certification, AT/ADOS audits, travel claims, and muster management.",
     sections: [
-      { unitType: "REPORTING", questions: [] },
-      { unitType: "IPAC", questions: [] },
-      { unitType: "SUPPORTING", questions: [] }
+      {
+        unitType: "REPORTING",
+        questions: [
+          {
+            id: 1,
+            question: "Is the unit ensuring SMCR pay is processed IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 3; MCTFSPRIUM, 9-91800"
+          },
+          {
+            id: 2,
+            question: "Is the unit ensuring drill attendance is certified and reported within 5 days of the drill period?",
+            reference: "MCTFSPRIUM, 2-20103, 9-91800"
+          },
+          {
+            id: 3,
+            question: "Is the unit ensuring AT/ADOS orders are audited for pay and entitlements accuracy?",
+            reference: "DoDFMR Vol. 7A, Chap. 3; MCTFSPRIUM, 9-91800, 12-120103"
+          },
+          {
+            id: 4,
+            question: "Is the unit ensuring travel claims for AT/ADOS periods are submitted within 5 working days of completion?",
+            reference: "FPM Vol 2, para 030102; MCTFSPRIUM, 2-20103"
+          }
+        ]
+      },
+      {
+        unitType: "IPAC",
+        questions: [
+          {
+            id: 5,
+            question: "Is the unit ensuring SMCR pay is processed IAW applicable regulations?",
+            reference: "DoDFMR Vol. 7A, Chap. 3; MCTFSPRIUM, 9-91800"
+          },
+          {
+            id: 6,
+            question: "Is the unit ensuring drill attendance is certified and reported within 5 days of receiving key supporting documents?",
+            reference: "MCTFSPRIUM, 2-20103, 9-91800"
+          },
+          {
+            id: 7,
+            question: "Is the unit ensuring AT/ADOS orders are audited for pay and entitlements accuracy?",
+            reference: "DoDFMR Vol. 7A, Chap. 3; MCTFSPRIUM, 9-91800, 12-120103"
+          },
+          {
+            id: 8,
+            question: "Is the unit ensuring muster reports are processed and reported IAW applicable regulations?",
+            reference: "MCO 3040.4; MCTFSPRIUM, 9-91800"
+          }
+        ]
+      },
+      {
+        unitType: "SUPPORTING",
+        questions: [
+          {
+            id: 9,
+            question: "Is the unit ensuring drill attendance rosters are submitted to the reporting unit within 5 days of the drill period?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 10,
+            question: "Is the unit validating SMCR pay is processed IAW applicable regulations by the reporting unit?",
+            reference: "DoDFMR Vol. 7A, Chap. 3; MCTFSPRIUM, 1-10111, 9-91800"
+          },
+          {
+            id: 11,
+            question: "Is the unit ensuring key supporting documents for AT/ADOS periods are submitted to the reporting unit within 5 days of occurrence?",
+            reference: "MCTFSPRIUM, 1-10100.6, 2-20103"
+          },
+          {
+            id: 12,
+            question: "Is the unit ensuring key supporting documents that validate reserve pay entitlements are maintained on file for audit, and in accordance with retention policies?",
+            reference: "DoDFMR, Vol. 1, Chap. 9; SECNAV M-5210.1; MARADMIN 601/24"
+          }
+        ]
+      }
     ]
   },
   {
