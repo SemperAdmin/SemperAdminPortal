@@ -3144,6 +3144,171 @@ export const reportsManagementChecklist: FACChecklistData = {
   ],
 };
 
+// Separation, Retirement & Limited Duty Checklist Data
+export const separationRetirementChecklist: FACChecklistData = {
+  slug: "separation-retirement",
+  applicabilityNote:
+    "This checklist applies to ALL commands. For inspection purposes, Marine Corps activities effecting separations are accountable for compliance with MCO 1900.16 w/Change 2. Written internal control procedures, i.e., local directives, desktop procedures, checklists, etc., can attribute to a successful functional area and provide continuity.",
+  revisedDate: "March 24, 2025",
+  sme: {
+    name: "Major Cody E. Pennington",
+    phone: "(703) 784-9314",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Separation & Retirement Processing",
+      questions: [
+        {
+          number: "0101",
+          text: "Are copies of separation documents maintained in (a) command file and as required forwarded to CMC (MMRP) for inclusion in the Marine's OMPF for all cases of discharge, release from active duty, or retirement? To include: Appendix J, MCO 1900.16 w/ch 2, Naval Letter, or NAVMC 10274 (AA form); NAVMC 118(11) Page 11 entries (6105 counseling); DD Form 2648 series including eForm (Pre-separation/transition counseling and career readiness standards Eform)",
+          reference: {
+            text: "MCO 1900.16 w/ch 2 par 1101.1.b.(2) and c.(3), & par 6105.3.e. Appendix J",
+          },
+        },
+        {
+          number: "0102",
+          text: "In cases of administrative separation, are copies of separation documents that are resident within the Command Legal Action (CLA) application, or maintained in command files been forwarded to CMC (MMRP) for inclusion in the Marine's OMPF? (CMC (MMRP) will file separation documents in the Marine's OMPF if they are resident in CLA. Otherwise, commands need to manually forward files to CMC (MMRP) for inclusion in the OMPF and validate.)",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 6311.5",
+          },
+        },
+        {
+          number: "0103",
+          text: 'Does the separation letter for administrative separation cases with a basis of "condition not a disability," not ratable by the Physical Evaluation Board (PEB), endorsed by a Medical Evaluation Board (MEB) Convening Authority?',
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 6203.2.b.(1)",
+          },
+        },
+        {
+          number: "0104",
+          text: 'In cases of administrative separation with a basis of "condition not a disability," is there compliance with the procedures and documentation required per the reference?',
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 6203.2f",
+          },
+        },
+        {
+          number: "0105",
+          text: "Are Marines processed for administrative separation following the first substantiated incident of sexual harassment and wrongful distribution or broadcasting of an intimate image?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 4103.2.c, and par 6210.8.c",
+          },
+        },
+        {
+          number: "0106",
+          text: "Are Marines processed for administrative separation once determined to have committed an offense of the following: child abuse, intimate partner abuse, immediate family abuse or any form of domestic abuse?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 1004.4.f",
+          },
+        },
+      ],
+    },
+    {
+      id: "02",
+      title: "Survivor Benefit Plan",
+      questions: [
+        {
+          number: "0201",
+          text: 'Does the commander ensure that all retirement eligible Marines complete SBP training via MarineNet prior to retirement and verify that the SBP counseling code "SP" has posted in MCTFS?',
+          reference: {
+            text: "MCO 1741.11D, pgs 2, 4a-b",
+          },
+        },
+        {
+          number: "0202",
+          text: 'Does the commander have policies/procedures in place to ensure that spousal concurrence is obtained, and properly notarized on the DD 2656 for all married Marines making an election OTHER than "Spouse Coverage" and any level of coverage OTHER than "Full Gross Pay"?',
+          reference: {
+            text: "DODI 1332.42 30 Dec 2020, MCO 1741.11D par 4.b.(1) (b)",
+          },
+        },
+        {
+          number: "0203",
+          text: "Has the command verified that the completed DD Form 2656 was submitted to DFAS at least 30 days prior to a Marine's retirement, transfer to the FMCR, or transfer to TDRL or PDRL? (Command will verify that the TTC training code ZW has been reported in MCTFS reflecting that the DD Form 2656 was sent to DFAS)",
+          reference: {
+            text: "MCO 1900.16 w/ch 2 par 1406.1, Appendix E, E007.4; MCO 1741.11D par 5.b",
+          },
+        },
+      ],
+    },
+    {
+      id: "03",
+      title: "Limited Duty",
+      questions: [
+        {
+          number: "0301",
+          text: "Is a Unit Limited Duty Coordinator, SNCO or above, appointed in writing.",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8110.1b",
+          },
+        },
+        {
+          number: "0302",
+          text: "Does the Unit Limited Duty Coordinator ensure that Marine-On-Line (MOL) reports, MCTFS and Sailor and Marine Readiness Tracker (SMART) uniformly reflect the status of medically non-deployable, light duty, Temporary Limited Duty (TLD), Permanent Limited Duty (PLD) Marines and those who are processing through the Disability Evaluation System (DES)?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8110.1b (1-7)",
+          },
+        },
+        {
+          number: "0303",
+          text: "Has the unit established internal control procedures for Marines in a non-deployable status over 12 consecutive months to identify, track and initiate administrative or disability separation or submit retention waivers to HQMC (MMSR-2)?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, para 1601.3 and 1602.1(a-c)",
+          },
+        },
+        {
+          number: "0304",
+          text: "Are disabled Marines found unfit to continue naval service by the Navy Physical Evaluation Board (PEB) separated or retired as directed by the CMC (MMSR-4)?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8402.2(a-g)",
+          },
+        },
+        {
+          number: "0305",
+          text: "Are Marines in a Temporary Limited Duty (TLD) status expiring within 60 days scheduled for a reevaluation prior to expiration of the TLD period?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8104.4, par 8110.1.b.(7)(e)",
+          },
+        },
+        {
+          number: "0306",
+          text: "Are all recommendations for periods of Temporary Limited Duty (TLD) exceeding 12 months over the span of a career submitted to the CMC (MMSR-4) for approval with the LDNMA when applicable?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8003.24a, par 8104.3a(2), par 8110.2c",
+          },
+        },
+        {
+          number: "0307",
+          text: "Are Marines with an EAS expiring while on Temporary Limited Duty (TLD) or while going through the Disability Evaluation System (DES) afforded the opportunity to voluntarily extend beyond their current contract until the TLD period or DES process is complete?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8111.1",
+          },
+        },
+        {
+          number: "0308",
+          text: "Are Marines only placed in an involuntary, Convenience of the Government, medical hold status in cases of mental incompetence, physical incapacity, serious contagious disease, or if the Marine poses a hazard to self or others?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8003.16",
+          },
+        },
+        {
+          number: "0309",
+          text: "Are Marines in a light duty status being referred to a Medical Treatment Facility (MTF) for re-evaluation before exceeding 90 days?",
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8103.1-5",
+          },
+        },
+        {
+          number: "0310",
+          text: 'Do Marines receive approval from the CMC (MMSR-4) before being released "home awaiting orders" while being processed through the Disability Evaluation System?',
+          reference: {
+            text: "MCO 1900.16 w/ch 2, par 8304.1-2",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 // Map of all FAC checklists
 const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   pes: pesChecklist,
@@ -3161,6 +3326,7 @@ const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   "force-preservation-council": forcePreservationCouncilChecklist,
   "records-management": recordsManagementChecklist,
   "reports-management": reportsManagementChecklist,
+  "separation-retirement": separationRetirementChecklist,
 };
 
 // Helper functions
