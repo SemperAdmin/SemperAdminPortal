@@ -332,8 +332,14 @@ export default function MCAATPage() {
           {financeCategories.map((category) => {
             const questions = getFinanceQuestionsByCategory(category.slug);
             const questionCount = questions.length;
-            const doCount = questions.filter(q => q.applicability.DO).length;
-            const foCount = questions.filter(q => q.applicability.FO).length;
+            const { doCount, foCount } = questions.reduce(
+              (counts, q) => {
+                if (q.applicability.DO) counts.doCount++;
+                if (q.applicability.FO) counts.foCount++;
+                return counts;
+              },
+              { doCount: 0, foCount: 0 }
+            );
             return (
               <Link
                 key={category.slug}

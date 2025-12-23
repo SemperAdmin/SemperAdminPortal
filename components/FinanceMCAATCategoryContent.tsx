@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import type { FinanceCategory, FinanceMCAATQuestion } from "../data/financeMcaatQuestions";
 import FinanceMCAATQuestionCard from "./FinanceMCAATQuestionCard";
 import Link from "next/link";
@@ -16,19 +16,37 @@ export default function FinanceMCAATCategoryContent({ category, questions }: Pro
   const [filter, setFilter] = useState<FilterType>("all");
   const [isExpanded, setIsExpanded] = useState(true);
 
-  // Filter questions based on selected filter
-  const filteredQuestions = questions.filter((q) => {
-    if (filter === "all") return true;
-    if (filter === "DO") return q.applicability.DO;
-    if (filter === "FO") return q.applicability.FO;
-    if (filter === "outsideAgency") return q.applicability.outsideAgency;
-    return true;
-  });
+  // Memoize counts to avoid recalculating on every render
+  const { doCount, foCount, outsideCount } = useMemo(() => {
+    return questions.reduce(
+      (counts, q) => {
+        if (q.applicability.DO) counts.doCount++;
+        if (q.applicability.FO) counts.foCount++;
+        if (q.applicability.outsideAgency) counts.outsideCount++;
+        return counts;
+      },
+      { doCount: 0, foCount: 0, outsideCount: 0 }
+    );
+  }, [questions]);
 
-  // Count questions by applicability
-  const doCount = questions.filter((q) => q.applicability.DO).length;
-  const foCount = questions.filter((q) => q.applicability.FO).length;
-  const outsideCount = questions.filter((q) => q.applicability.outsideAgency).length;
+  // Memoize filtered questions to prevent re-filtering when only isExpanded changes
+  const filteredQuestions = useMemo(() => {
+    if (filter === "all") {
+      return questions;
+    }
+    return questions.filter((q) => {
+      switch (filter) {
+        case "DO":
+          return q.applicability.DO;
+        case "FO":
+          return q.applicability.FO;
+        case "outsideAgency":
+          return q.applicability.outsideAgency;
+        default:
+          return false;
+      }
+    });
+  }, [questions, filter]);
 
   return (
     <div className="space-y-6">
@@ -206,8 +224,8 @@ export default function FinanceMCAATCategoryContent({ category, questions }: Pro
         {isExpanded && (
           <div className="border-t border-black/5 p-4 dark:border-white/10">
             <div className="space-y-3">
-              {filteredQuestions.map((question, idx) => (
-                <FinanceMCAATQuestionCard key={question.id} question={question} index={idx} />
+              {filteredQuestions.map((question) => (
+                <FinanceMCAATQuestionCard key={question.id} question={question} />
               ))}
             </div>
           </div>
