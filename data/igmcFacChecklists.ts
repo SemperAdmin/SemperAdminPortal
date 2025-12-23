@@ -563,10 +563,198 @@ export const careerPlanningChecklist: FACChecklistData = {
   ],
 };
 
+// Body Composition and Military Appearance Program Checklist Data
+export const bodyCompositionChecklist: FACChecklistData = {
+  slug: "body-composition",
+  applicabilityNote: "This checklist applies to all levels and types of commands.",
+  revisedDate: "April 2, 2025",
+  smes: [
+    {
+      name: "GySgt Autumn Robancho",
+      email: "tecom.forcefitness@usmc.mil",
+      phone: "(703) 432-1688",
+    },
+    {
+      name: "GySgt Lexus Schaeffer",
+      email: "tecom.forcefitness@usmc.mil",
+      phone: "(703) 784-1226",
+    },
+  ],
+  resources: {
+    directives: [
+      {
+        title: "MCO 6110.3A with Change 3 (Body Composition and Military Appearance Program)",
+        url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+      },
+    ],
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "General",
+      questions: [
+        {
+          number: "0101",
+          text: "Has the unit appointed a Force Fitness Instructor (FFI) or command physical training representative (CPTR) that is responsible to the commander for the development, implementation, management and supervision of the organizational Marine Appearance Program (MAP), Body Composition Program (BCP), and Remedial Conditioning Program (RCP)?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 2c(2)",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0102",
+          text: "Do Commanders/Officers in Charge ensure Marines receive a medical evaluation from an authorized medical provider (Independent Duty Corpsman, Nurse Practitioner, Physician, or Physician Assistant) prior to being assigned to BCP or MAP?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 2a(2) & 2a(2)(a)-(d)",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0103",
+          text: "Have policies and procedures for a MAP been developed by the unit? Do these cover the uniform application of periodic assessments, assignment, and supervisory procedures?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 2a(1)",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0104",
+          text: "Does the unit properly identify and assign Marines who do not meet established military appearance standards to the MAP?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 4b(2) & par 4g",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0105",
+          text: "Does the unit properly perform military appearance evaluations for Marines who present an unsuitable military appearance?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 3f(5)(d)1-2",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0106",
+          text: "Does the unit properly remove Marines from the MAP who comply with established military appearance standards?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 4i",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0107",
+          text: "Does a FFI or CPTR manage and maintain MAP documentation, to include medical evaluation forms?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 2c, 11",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0108",
+          text: "Have policies and procedures for a BCP been developed by the unit? Do these cover the uniform application of periodic assessments, assignment, and supervisory procedures?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 2a(1)",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0109",
+          text: "Does the unit identify and properly assign Marines who exceed established body composition standards to the BCP?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 2a(1) & par 4b(1) & c(1)-(8), 7a&b",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0110",
+          text: "Does the unit properly measure height with an approved, calibrated device?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 3f(4), (5)a",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0111",
+          text: "Does the unit properly measure weight with a calibrated digital or balance beam scale?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 3f(4), (5)b",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0112",
+          text: "Does the unit properly perform body composition evaluations for Marines who exceed established height/weight standards using a self-tensioning taping device?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 3f(5)1-2",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0113",
+          text: "Does the unit conduct weekly weigh in to check the progress of Marines while on BCP?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 2c(4)(d)4",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0114",
+          text: "Did all Marines conduct both previous semi-annual weigh-ins for 1 Jan to 30 June and 1 July to 31 December?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 3d(1)(3)",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0115",
+          text: "Does the unit have procedures established for Marines who transfer while assigned to BCP?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 3d(4)",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0116",
+          text: "When a Marine becomes pregnant while assigned to BCP, does the unit place the Marine on an inactive status for the required time period as outlined in the reference?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 7b(3), par 8a(2)",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0117",
+          text: "Does the unit initiate administrative separation procedures for Marines who fail to meet established BCP standards after the first or second six-month BCP assignment?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 4f(3)-(5)",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0118",
+          text: "Does the unit properly remove Marines from the BCP who meet established weight or body composition standards?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 4f(1)-(2), par 7a&b(5)",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+        {
+          number: "0119",
+          text: "Does an FFI or CPTR manage and maintain Body Composition Evaluation (BCE) documentation, to include medical evaluation forms and SemperFit Basic/Advanced Fitness Course?",
+          reference: {
+            text: "MCO 6110.3A with Change 3, encl 1, par 2(c)4d, 2c(6)(7)",
+            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899565/mco-61103a/",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 // Map of all FAC checklists
 const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   pes: pesChecklist,
   "career-planning": careerPlanningChecklist,
+  "body-composition": bodyCompositionChecklist,
 };
 
 // Helper functions
