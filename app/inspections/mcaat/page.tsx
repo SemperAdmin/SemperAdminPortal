@@ -211,6 +211,7 @@ const sharePointLinks = [
   { title: "ARDB Directives Management", href: "https://usmc.sharepoint-mil.us/sites/AR_DirectivesManagement/SitePages/ProjectHome.aspx", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
   { title: "ARDB Directives Management Resources", href: "https://usmc.sharepoint-mil.us/sites/AR_DirectivesManagement/SitePages/RESOURCES.aspx", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
   { title: "Command Data and Analytics", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/TECOM_CDAO/SitePages/Command-Data-and-Analytics-Office.aspx", icon: <ChartIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Government Travel Charge Card P&R (RFF)", href: "https://usmc.sharepoint-mil.us/sites/DCPR_RFF_External/GTCC", icon: <FileTextIcon className="h-5 w-5" />, requiresCAC: true },
   { title: "Judge Advocate Division (JET) SharePoint", href: "https://usmc.sharepoint-mil.us/sites/SJA_JET/SitePages/Home.aspx", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
   { title: "Manpower & Personnel Administration Board", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/dcmra_mra_mpa_opt", icon: <UsersIcon className="h-5 w-5" />, requiresCAC: true },
   { title: "Manpower & Reserve Affairs SharePoint", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/dcmra", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
