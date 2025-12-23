@@ -2041,6 +2041,164 @@ export const sponsorshipProgramChecklist: FACChecklistData = {
   ],
 };
 
+// Military Awards Checklist Data
+export const militaryAwardsChecklist: FACChecklistData = {
+  slug: "military-awards",
+  applicabilityNote:
+    "This checklist applies to all commands and activities that have an awarding authority for any awards. All elements of a question must be satisfied to be found compliant.",
+  revisedDate: "June 3, 2025",
+  sme: {
+    name: "Capt Josefina Cisneros",
+    email: "smb_hqmc_pers_awards@usmc.mil",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "General Military Awards Policy",
+      questions: [
+        {
+          number: "0101",
+          text: "Does the command have the pertinent military awards references and are the command's administrative personnel familiar with the requirements of current awards directives? Must have access to the following references either electronically or on-hand: (a) MCO 1650.19J (b) SECNAVINST 1650.1J (c) SECNAV M-1650.1 (d) SECNAV M-5216.5 (e) DoD Instruction 1348.33 (f) DoD Manual 1348.33; Vol 1-4",
+          reference: {
+            text: "SECNAV M-1650.1, Ch. 1, Para. 1.1.b. (p 1-1); MCO 1650.1J, Encl. 1, Para 1.a.-1.c. (p 1)",
+          },
+        },
+        {
+          number: "0102",
+          text: "If the command has published local awards instructions or orders, do they comply with the orders and directives established in the references?",
+          reference: {
+            text: "SECNAVINST 1650.1J, Encl. 7, Para. 3.a.; DoD Instruction 1348.33, Para. 2.9.b. & 2.9.c.",
+          },
+        },
+        {
+          number: "0103",
+          text: "Are the command's administrative personnel familiar with procedures for processing awards approved by Navy, Joint, and other U.S. Armed Forces (i.e. awards receive validation by MMPB-31 and entry into personnel records)? At a minimum, are personnel familiar with the following: (a) In what situation is a Marine eligible for another Service's award? (b) In what situation is a Marine eligible to receive a Joint award? (c) What actions can a command take if one of their Marines was erroneously presented another service's award or a Joint Award for which the Marine was not eligible?",
+          reference: {
+            text: "SECNAVINST 1650.1J, Encl. 4, Para. 1",
+          },
+        },
+        {
+          number: "0104",
+          text: "Are administrative personnel and/or the awarding authority familiar with the requirements for the Military Outstanding Volunteer Service Medal (MOVSM)? Does a review of approved MOVSM's reveal that they were only awarded when the following criteria were clearly met: (a) Three (3) years of sustained service (b) Service cannot have a connection/link to a military mission (i.e. Toys for Tots, military recruiting, etc.)",
+          reference: {
+            text: "SECNAV M-1650.1, Appendix 4A, TAB 18 MOVSM",
+          },
+        },
+        {
+          number: "0105",
+          text: "Does the command ensure that only the awards which are authorized to have certificates as part of the award elements have them (i.e. NA, NC, MM, LM, etc) and that those awards which are not authorized to have certificates do not (i.e. CR, OV, HSM, AFSM, Recruiting Ribbon)?",
+          reference: {
+            text: "SECNAV M-1650.1, see Award Element for guidance per each Award Criteria",
+          },
+        },
+      ],
+    },
+    {
+      id: "02",
+      title: "Program Administration and Timeliness",
+      questions: [
+        {
+          number: "0201",
+          text: "Originator Timeliness: Are commands/administrative personnel ensuring that ALL awards are submitted within the Secretary of the Navy's timeline? (a) Retirement/Transfer. All Personal Military Decorations (PMD)s must have sufficient time to arrive at the final awarding authority for adjudication at least 60 days prior to the desired presentation date, 90 days prior during the summer months, or 90 days prior for any award that requires approval/endorsement by the Secretary of the Navy. (b) PMD time limits. All PMD nominations, except the Combat Action Ribbon (CR) and Purple Heart Medal (PH), must be officially originated with three (3) years of the distinguishing act or end of the period of service, and a final determination made within two (2) years of that, in no case more than five (5) years after the act. (c) Valor PMDs. All nominations for valor decorations are a priority and warrant special handling. Nominations must be originated and entered into official channels within 45 days of the distinguishing act. (d) Unit decoration submissions. Same as for PMDs. (e) CE&S. Not subject to time limits.",
+          reference: {
+            text: "SECNAVINST 1650.1J, Para. 5.h (p 3) & Encl. 5 Timeliness Standards; SECNAV M-1650.1, Appendix 1A, (p 1-9); MCO 1650.19J, Encl. 1, Para. 2.f. (p 3); SECNAVINST 1650.1J, Encl. 5. Para. 2; SECNAVINST 1650.1J, Encl. 5 Timeliness Standards; SECNAV M-1650.1, Appendix 1A, Para. 1A.2.b.(1) Valor Time Limits (p 1-9)",
+          },
+        },
+        {
+          number: "0202",
+          text: "Commander Timeliness: Is the command taking timely action on recommendations for award recognition as verified by a review of all awards currently pending at the command's level or pending approval at a higher level? Timely action is defined as the following: (a) Commands must process all valor award recommendations, to either approve the award or forward via the chain of command to the appropriate awarding authority within 20 days of receipt. (b) Are commands entering explanatory comments when awards submissions are outside of the above time limits? (c) Is the Commander taking action to endorse awards in compliance with references?",
+          reference: {
+            text: "SECNAV M-1650.1, Appendix 1A, Para. 1A.2.b2. (p 1-10); SECNAVINST 1650.1J, Encl. (5), Para. 7.a; MCO 1650.19J, Encl 1; SECNAVINST 1650.1J, Encl 5; MARADMIN 99/18",
+          },
+        },
+        {
+          number: "0203",
+          text: "Are the command's administrative personnel processing all awards requiring approval by a Marine Corps awarding authority electronically via the Improved Awards Processing System (iAPS)?",
+          reference: {
+            text: "SECNAV M-1650.1, Ch3, Para. 3.2a.(1)(b) (p 3-4), MARADMIN 042/08",
+          },
+        },
+        {
+          number: "0204",
+          text: 'Is the command appropriately approving and delegating iAPS permissions IAW regulations in a timely manner by responding to "Pending" requests within 30 days and removing permissions from personnel who depart the command within 30 days?',
+          reference: {
+            text: "SECNAVINST 1650.1J Encl (4) 2.a.(3), MARADMIN 99/18",
+          },
+        },
+        {
+          number: "0205",
+          text: "Is the command ensuring that awards are originated by authorized personnel only (originator must be senior to the nominee by billet or rank and in the same chain of command during the time of action)? Is the command ensuring that awards are endorsed and approved by Commanders and/or Officers in Charge (OIC) in the Chain of Command (CoC)? Is this supported by a review of a random sample of completed awards and current iAPS permissions delegation?",
+          reference: {
+            text: "SECNAVINST 1650.1J, Encl. 4, Para. 2.a.(3); SECNAV M-1650.1, Ch. 1, Para. 1.2.b.(1)",
+          },
+        },
+      ],
+    },
+    {
+      id: "03",
+      title: "Editing and Administrative Processing",
+      questions: [
+        {
+          number: "0301",
+          text: "Is the command ensuring that all award recommendations are being routed to the awarding authority whom had jurisdiction over the nominee at the time of the action or service? Is the award nomination being forwarded to the commander who has authority to approve the level of PMD recommended by the originator? Note: The official with award approval authority must be in the awardee's CoC at the time of the distinguishing act, or the end of the meritorious service.",
+          reference: {
+            text: "SECNAV M-1650.1, Para. 2.2.a.(4) (p 2-5); MCO 1650.19J, Encl. 2, Para. 8.d. (p 3)",
+          },
+        },
+        {
+          number: "0302",
+          text: 'Is the command ensuring all awards endorsed or approved for a specific achievement satisfy the below: (a) Award has a full detailed SOA within page limit requirement (2 pages). (b) Valor award nominations contains the "Standard Valor Award Key Information" format in SOA. (c) Award information/NAVMC 11533 data is complete and administratively correct (i.e. detachment types/dates, endorsements, geographic location, and awarding authority address, etc.). (d) Award has a properly formatted citation free of grammar or spelling errors. (e) Opening and Closing sentences are correct, IAW references.',
+          reference: {
+            text: "SECNAV M-1650.1, Appendix 2D.2e. SOA (p 2-68/69/70); SECNAV M-1650.1, Appendix 2D (p 2-72),TAB 1: Nominations for Valor PMD Table 12 (p 2-72) & Table 13 (p 2-73); SECNAV M-1650.1, Appendix 2D, Para. d (p 2-74); SECNAV M-5216.5, Ch. 2, Para. 1.a. (p 2-1); SECNAV M-1650.1, Appendix 2E How to Prepare a PMD; Citation/Certificate; Table 18, p 2-85/86 (Air Medal & Above) and Table 21, p 2-96 (NC & NAM)",
+          },
+        },
+        {
+          number: "0303",
+          text: "Does the command ensure all formal certificates and citations are correctly produced and that any changes made to the final citation are reflected in iAPS prior to presentation, filing, and forwarding to CMC (MMPB-31) for archiving? (a) Is the command attaching a PDF copy of the award certificate(s) to the Certificates tab in iAPS? (b) Is this confirmed by a review of all formal certificates from an iAPS report of the unit's approved awards in iAPS?",
+          reference: {
+            text: "SECNAV M-1650.1, Ch. 2, Para. 2.2.e (p 2-8)",
+          },
+        },
+        {
+          number: "0304",
+          text: "Does the command strictly enforce the SECNAV policy concerning duplication of awards so that only one award will be approved for the same act, achievement, or period of meritorious service for an individual by reviewing the member's records in MCTFS, OMPF, and iAPS to ensure that no material from a previous award is duplicated in a new award submission?",
+          reference: {
+            text: "DoD Instruction 1348.33, Sect. 3, 3.1.a (p 12); SECNAVINST 1650.1J, Encl. 4, 1.b.3. (p 2) & 1.c.4. (p 3); SECNAV M-1650.1, Ch. 2, 2.1.c. (p 2-1) & Ch. 3, 3.1.d. (p 3-3)",
+          },
+        },
+        {
+          number: "0305",
+          text: "Does the command submit approved awards to MMPB-31 in iAPS within 10 working days after the summary of action end date or date of presentation (whichever is later)? Is this confirmed by a review of at least five command approved awards in the iAPS archives and all awards currently in processing?",
+          reference: {
+            text: "SECNAV M-5216.5, Ch. 2, Para. 2.2.8.a. (p 2-6)",
+          },
+        },
+        {
+          number: "0306",
+          text: "Does the command ensure that no awards are awarded to an individual whose actions are less than honorable in accordance with 10 USC § 1136? Is this supported by a review of the command's Quarterly Criminal Activity Report, Legal Report, and/or Command Legal Action Module against awards approved in iAPS and on Marine Online (i.e. Good Conduct Medal)?",
+          reference: {
+            text: "DoD Instruction 1348.33, Sect 1, Para. 1.2.c. (p 5) & Sect 8 (p 27); SECNAVINST 1650.1J, Para. 5.k. (p 3); SECNAV M-1650.1, Ch. 2, Para. 2.1.h. (p 2-3)",
+          },
+        },
+        {
+          number: "0307",
+          text: "Does the command ensure that any casualty reports submitted as a result of hostile enemy action contain sufficient information for the Purple Heart Medal (PH) awarding authority to make a PH determination?",
+          reference: {
+            text: "SECNAV M-1650.1, Appendix 2B, Para. 2B.5.a. (p 2-59)",
+          },
+        },
+        {
+          number: "0308",
+          text: "Has the command ensured that any Bronze Star Medal awarded met the requirement that the recipient was in receipt of special pay(s) during the period of action?",
+          reference: {
+            text: "SECNAV M-1650.1, Appendix 2A, Tab 8, Para. c.(2)",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 // Map of all FAC checklists
 const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   pes: pesChecklist,
@@ -2053,6 +2211,7 @@ const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   "leave-liberty": leaveLibertyChecklist,
   "legal-administration": legalAdministrationChecklist,
   "sponsorship-program": sponsorshipProgramChecklist,
+  "military-awards": militaryAwardsChecklist,
 };
 
 // Helper functions
