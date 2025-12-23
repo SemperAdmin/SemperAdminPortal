@@ -159,41 +159,42 @@ function QuickLinkCard({ title, href, icon }: { title: string; href: string; ico
   );
 }
 
+// Static constants defined outside component to avoid recreation on each render
+const MCAAT_SP = "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCMRA_mra_SemperAdmin/SitePages/Marine-Corps-Administrative-Analysis-Team-(MCAAT).aspx";
+
+const topLinks = [
+  { title: "MCAAT POAM", href: MCAAT_SP, icon: <ClipboardIcon className="h-5 w-5" /> },
+  { title: "FNF MCAAT SharePoint", href: MCAAT_SP, icon: <FolderIcon className="h-5 w-5" /> },
+  { title: "MCAAT Marines.mil", href: MCAAT_SP, icon: <GlobeIcon className="h-5 w-5" /> },
+];
+
+const tools = [
+  { title: "Analysis Statistics (AS)", description: "View statistical analysis and metrics for MCAAT operations", href: MCAAT_SP, icon: <ChartIcon className="h-5 w-5" />, color: "navy" as const },
+  { title: "Process Audit Case Overview (PACO)", description: "Track and manage individual audit cases", href: MCAAT_SP, icon: <ClipboardIcon className="h-5 w-5" />, color: "gold" as const },
+  { title: "Process Audit Results Overview (PAR)", description: "Review comprehensive audit results and findings", href: MCAAT_SP, icon: <FileTextIcon className="h-5 w-5" />, color: "navy" as const },
+  { title: "RUC Unit Results", description: "View results by Reporting Unit Code", href: MCAAT_SP, icon: <ChartIcon className="h-5 w-5" />, color: "gold" as const },
+  { title: "Marine Focused Unit Data Results (UFDR)", description: "Individual Marine-level data analysis", href: MCAAT_SP, icon: <UsersIcon className="h-5 w-5" />, color: "navy" as const },
+  { title: "Shared Unit Data Results (SU DR)", description: "Shared data across multiple units", href: MCAAT_SP, icon: <UsersIcon className="h-5 w-5" />, color: "gold" as const },
+  { title: "Team Analysis Results (TAR)", description: "Team-level performance and analysis", href: MCAAT_SP, icon: <ChartIcon className="h-5 w-5" />, color: "navy" as const },
+  { title: "Admin POC / POCN Compliance", description: "Point of contact compliance tracking", href: MCAAT_SP, icon: <UsersIcon className="h-5 w-5" />, color: "gold" as const },
+  { title: "Admin Schedule", description: "View and manage MCAAT schedules", href: MCAAT_SP, icon: <CalendarIcon className="h-5 w-5" />, color: "navy" as const },
+];
+
+const financeChecklist: CatalogGroup[] = [
+  {
+    name: "MCAAT Finance Checklist",
+    items: [
+      { title: "Administrative Management", href: MCAAT_SP },
+      { title: "Fiscal Processes", href: MCAAT_SP },
+      { title: "Internal Audit Processes", href: MCAAT_SP },
+      { title: "Pay Processes", href: MCAAT_SP },
+      { title: "Separation Processes", href: MCAAT_SP },
+      { title: "Travel Processes", href: MCAAT_SP },
+    ],
+  },
+];
+
 export default function MCAATPage() {
-  const MCAAT_SP = "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCMRA_mra_SemperAdmin/SitePages/Marine-Corps-Administrative-Analysis-Team-(MCAAT).aspx";
-
-  const topLinks = [
-    { title: "MCAAT POAM", href: MCAAT_SP, icon: <ClipboardIcon className="h-5 w-5" /> },
-    { title: "FNF MCAAT SharePoint", href: MCAAT_SP, icon: <FolderIcon className="h-5 w-5" /> },
-    { title: "MCAAT Marines.mil", href: MCAAT_SP, icon: <GlobeIcon className="h-5 w-5" /> },
-  ];
-
-  const tools = [
-    { title: "Analysis Statistics (AS)", description: "View statistical analysis and metrics for MCAAT operations", href: MCAAT_SP, icon: <ChartIcon className="h-5 w-5" />, color: "navy" as const },
-    { title: "Process Audit Case Overview (PACO)", description: "Track and manage individual audit cases", href: MCAAT_SP, icon: <ClipboardIcon className="h-5 w-5" />, color: "gold" as const },
-    { title: "Process Audit Results Overview (PAR)", description: "Review comprehensive audit results and findings", href: MCAAT_SP, icon: <FileTextIcon className="h-5 w-5" />, color: "navy" as const },
-    { title: "RUC Unit Results", description: "View results by Reporting Unit Code", href: MCAAT_SP, icon: <ChartIcon className="h-5 w-5" />, color: "gold" as const },
-    { title: "Marine Focused Unit Data Results (UFDR)", description: "Individual Marine-level data analysis", href: MCAAT_SP, icon: <UsersIcon className="h-5 w-5" />, color: "navy" as const },
-    { title: "Shared Unit Data Results (SU DR)", description: "Shared data across multiple units", href: MCAAT_SP, icon: <UsersIcon className="h-5 w-5" />, color: "gold" as const },
-    { title: "Team Analysis Results (TAR)", description: "Team-level performance and analysis", href: MCAAT_SP, icon: <ChartIcon className="h-5 w-5" />, color: "navy" as const },
-    { title: "Admin POC / POCN Compliance", description: "Point of contact compliance tracking", href: MCAAT_SP, icon: <UsersIcon className="h-5 w-5" />, color: "gold" as const },
-    { title: "Admin Schedule", description: "View and manage MCAAT schedules", href: MCAAT_SP, icon: <CalendarIcon className="h-5 w-5" />, color: "navy" as const },
-  ];
-
-  const financeChecklist: CatalogGroup[] = [
-    {
-      name: "MCAAT Finance Checklist",
-      items: [
-        { title: "Administrative Management", href: MCAAT_SP },
-        { title: "Fiscal Processes", href: MCAAT_SP },
-        { title: "Internal Audit Processes", href: MCAAT_SP },
-        { title: "Pay Processes", href: MCAAT_SP },
-        { title: "Separation Processes", href: MCAAT_SP },
-        { title: "Travel Processes", href: MCAAT_SP },
-      ],
-    },
-  ];
-
   const totalQuestions = mcaatQuestions.reduce((sum, cat) => sum + getCategoryQuestionCount(cat), 0);
 
   return (
