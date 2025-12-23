@@ -96,7 +96,13 @@ export const commonReferenceUrls: Record<string, string> = {
   "MCO 1620.3A": "https://www.marines.mil/portals/1/Publications/MCO%201620.3A.pdf",
   "MCO 1751.3": "https://www.marines.mil/Portals/1/Publications/MCO%201751.3%20CH-1.pdf?ver=OwVPdeeN2m58m6-JopUjIw%3d%3d",
   "MCO 1900.16": "https://www.marines.mil/Portals/1/Publications/MCO%201900.16%20ADMIN%20CH-3%20(SECURED).pdf?ver=SZptuAh1jjvolL-Gf5s5CQ%3d%3d",
+  "MCO 3040.4": "https://www.marines.mil/portals/1/publications/mco%203040.4.pdf",
+  "MCO 3574.2L": "https://www.marines.mil/Portals/1/Publications/MCO%203574.2M.pdf?ver=xsW2GP8UoKM6kVJ2D58skQ%3d%3d",
+  "MCO 3574.2M": "https://www.marines.mil/Portals/1/Publications/MCO%203574.2M.pdf?ver=xsW2GP8UoKM6kVJ2D58skQ%3d%3d",
+  "MCO 4650.39A": "https://www.marines.mil/portals/1/Publications/MCO%204650.39A.pdf",
   "MCO 6100.13A": "https://www.marines.mil/Portals/1/Publications/MCO%206100.13A%20W%20ADMIN%20CH-5%20(SECURED).pdf?ver=_Cd9D-v4wfAiMrAXq3Y-Mw%3d%3d",
+
+  // MCO 5800.16 - separate volumes
 
   // MCTFSPRIUM - Add specific chapter URLs as available
   "MCTFSPRIUM": "",
