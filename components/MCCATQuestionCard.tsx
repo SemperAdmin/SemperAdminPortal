@@ -1,13 +1,40 @@
 import type { MCCATQuestion } from "../data/mcaatQuestions";
+import { commonReferenceUrls } from "../data/mcaatQuestions";
 
 type Props = {
   question: MCCATQuestion;
   index: number;
 };
 
+// Helper to find URL for a reference part
+function findReferenceUrl(refPart: string, referenceLinks?: Record<string, string>): string | null {
+  const trimmed = refPart.trim();
+
+  // First check question-specific reference links
+  if (referenceLinks) {
+    for (const [key, url] of Object.entries(referenceLinks)) {
+      if (trimmed.includes(key) && url) {
+        return url;
+      }
+    }
+  }
+
+  // Then check common reference URLs
+  for (const [key, url] of Object.entries(commonReferenceUrls)) {
+    if (trimmed.includes(key) && url) {
+      return url;
+    }
+  }
+
+  return null;
+}
+
 export default function MCCATQuestionCard({ question, index }: Props) {
   // Check if link is a report (contains tfsbi which is the BI reporting system)
   const isReport = question.link?.toLowerCase().includes('tfsbi');
+
+  // Parse references by semicolon
+  const referenceParts = question.reference.split(';').map(part => part.trim()).filter(Boolean);
 
   return (
     <div className="rounded-lg border border-black/5 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-black/30">
@@ -19,9 +46,29 @@ export default function MCCATQuestionCard({ question, index }: Props) {
           <p className="text-sm font-medium leading-relaxed text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
             {question.question}
           </p>
-          <p className="text-xs text-zinc-600 dark:text-zinc-400">
-            <span className="font-semibold">Reference:</span> {question.reference}
-          </p>
+          <div className="text-xs text-zinc-600 dark:text-zinc-400">
+            <span className="font-semibold">Reference: </span>
+            {referenceParts.map((part, idx) => {
+              const url = findReferenceUrl(part, question.referenceLinks);
+              return (
+                <span key={idx}>
+                  {url ? (
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[var(--sa-navy)] underline decoration-dotted underline-offset-2 hover:text-[var(--sa-red)] hover:decoration-solid dark:text-[var(--sa-gold)] dark:hover:text-[var(--sa-cream)]"
+                    >
+                      {part}
+                    </a>
+                  ) : (
+                    <span>{part}</span>
+                  )}
+                  {idx < referenceParts.length - 1 && <span>; </span>}
+                </span>
+              );
+            })}
+          </div>
           {(question.link || question.video) && (
             <div className="flex flex-wrap gap-2 pt-1">
               {question.link && isReport && (

@@ -21,9 +21,29 @@ export interface MCCATQuestion {
   id: number;
   question: string;
   reference: string;
+  referenceLinks?: Record<string, string>; // Maps reference text to URL
   link?: string;
   video?: string;
 }
+
+// Common reference URLs - add URLs here as they become available
+export const commonReferenceUrls: Record<string, string> = {
+  // DoDFMR Volumes
+  "DoDFMR Vol. 7A": "https://comptroller.defense.gov/FMR/fmrvolumes.aspx",
+  "DoDFMR Vol. 1": "https://comptroller.defense.gov/FMR/fmrvolumes.aspx",
+  "DoDFMR Vol. 5": "https://comptroller.defense.gov/FMR/fmrvolumes.aspx",
+
+  // JTR
+  "JTR": "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/",
+
+  // MCOs - Add specific URLs as available
+  "MCO 1070.1": "",
+  "MCO 1900.16": "",
+  "MCO 6100.13A": "",
+
+  // MCTFSPRIUM - Add specific chapter URLs as available
+  "MCTFSPRIUM": "",
+};
 
 export interface MCCATUnitSection {
   unitType: UnitType;
