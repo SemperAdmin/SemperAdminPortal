@@ -206,6 +206,22 @@ const tools = [
   { title: "Admin Schedule", description: "View and manage MCAAT schedules", href: "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=890", icon: <CalendarIcon className="h-5 w-5" />, color: "navy" as const, requiresCAC: true },
 ];
 
+// SharePoint links - alphabetically ordered, all require CAC
+const sharePointLinks = [
+  { title: "ARDB Directives Management", href: "https://usmc.sharepoint-mil.us/sites/AR_DirectivesManagement/SitePages/ProjectHome.aspx", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "ARDB Directives Management Resources", href: "https://usmc.sharepoint-mil.us/sites/AR_DirectivesManagement/SitePages/RESOURCES.aspx", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Command Data and Analytics", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/TECOM_CDAO/SitePages/Command-Data-and-Analytics-Office.aspx", icon: <ChartIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Judge Advocate Division (JET) SharePoint", href: "https://usmc.sharepoint-mil.us/sites/SJA_JET/SitePages/Home.aspx", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Manpower & Personnel Administration Board", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/dcmra_mra_mpa_opt", icon: <UsersIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Manpower & Reserve Affairs SharePoint", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/dcmra", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Manpower Military Policy (MPO)", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/dcmra_mra_mp_mpo", icon: <FileTextIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "MCAAT SharePoint", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCMRA_MCAAT/SitePages/Marine-Corps-Administrative-Analyst-Team.aspx", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "MISSA/MISSO Portal", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/dcmra_mra_mi_missa", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "RFF-KCI SharePoint", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCPR_RFF_External/Finance_Policy", icon: <FileTextIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "Semper Admin SharePoint", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCMRA_mra_SemperAdmin", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
+  { title: "TASO Mainframe", href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/MCEN_SUPPORT_MCCOG/SitePages/Mainframe-Home.aspx", icon: <FolderIcon className="h-5 w-5" />, requiresCAC: true },
+];
+
 const financeChecklist: CatalogGroup[] = [
   {
     name: "MCAAT Finance Checklist",
@@ -260,6 +276,21 @@ export default function MCAATPage() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {tools.map((tool) => (
             <ToolCard key={tool.title} {...tool} />
+          ))}
+        </div>
+      </section>
+
+      {/* SharePoints Section */}
+      <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+        <div className="flex items-center gap-2 mb-4">
+          <FolderIcon className="h-5 w-5 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+            SharePoints
+          </h2>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {sharePointLinks.map((link) => (
+            <QuickLinkCard key={link.title} {...link} />
           ))}
         </div>
       </section>
