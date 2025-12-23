@@ -1071,6 +1071,72 @@ export const dtsChecklist: FACChecklistData = {
   ],
 };
 
+// Directives Management Checklist Data
+export const directivesManagementChecklist: FACChecklistData = {
+  slug: "directives-management",
+  applicabilityNote:
+    "This checklist applies to ALL commands. Directives Management is the assurance that promulgation of policy maintains compliance with federal statutes and policy of higher authority, policy maintains currency, and ensures appropriate publication/accessibility by command personnel.",
+  revisedDate: "September 30, 2025",
+  sme: {
+    name: "Ms. Amaya Ashe",
+    email: "smb_hqmc_directives@usmc.mil",
+    phone: "(703) 695-8927",
+  },
+  subsections: [
+    {
+      id: "01",
+      title: "Directives Management (applies to all commands)",
+      questions: [
+        {
+          number: "0101",
+          text: "Has the command appointed in writing a Directives Control Point (DCP) to manage and administer the command's Directives (Policy) Program?",
+          reference: {
+            text: "MCO 5215.1K w/Admin CH-3, par 4b(2)(d)9, and Chap 1, par 8",
+          },
+        },
+        {
+          number: "0102",
+          text: "Has the command established a Directives Management Program (i.e., policy directive or procedures outlining the staffing process and review cycle of directives)?",
+          note: "Template directive available on ARDB public website.",
+          reference: {
+            text: "MCO 5215.1K w/Admin CH-3, par 4a(1)(b)2, par 4a(2)(e), and par 4b(2)(d)9",
+          },
+        },
+        {
+          number: "0103",
+          text: "Does the command have any directives that have reached their 9-year anniversary without reissuance (i.e., revision)?",
+          note: "A full revision of the order in its entirety is required every 9 years; a substantial change and/or administrative change does not restart the length of the lifecycle nor extend the lifecycle of the order. Directives reaching a 9-year anniversary without reissuance may be certified as current for an additional year by the signing authority.",
+          reference: {
+            text: "MCO 5215.1K w/Admin CH-3, par 4b(2)(d)2",
+          },
+        },
+        {
+          number: "0104",
+          text: "Is the command using bulletins that are over 12 months old?",
+          reference: {
+            text: "MCO 5215.1K w/Admin CH-3, Chap 1, par 3c, and Chap 3, par 15g",
+          },
+        },
+        {
+          number: "0105",
+          text: 'Are command issued directives (orders and bulletins) published in the correct format using the command\'s letterhead and correct paragraph elements ("SMEAC")?',
+          reference: {
+            text: "MCO 5215.1K w/Admin CH-3, Chap 1, par 18a(2)(a), and Chap 2, par 3-7",
+          },
+        },
+        {
+          number: "0106",
+          text: 'Are command directives being reviewed annually via NAVMC 10974 form, "Directives Review"?',
+          note: "This review is to evaluate necessity, validate currency, track consistency with Marine Corps policy, and ensure laws and statutory authority are being followed.",
+          reference: {
+            text: "MCO 5215.1K w/Admin CH-3, par 4a(2)(f), par 4b(2)(d)1-10, Chap 1, par 14a-c",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 // Map of all FAC checklists
 const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   pes: pesChecklist,
@@ -1078,6 +1144,7 @@ const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   "body-composition": bodyCompositionChecklist,
   "casualty-affairs": casualtyAffairsChecklist,
   dts: dtsChecklist,
+  "directives-management": directivesManagementChecklist,
 };
 
 // Helper functions
