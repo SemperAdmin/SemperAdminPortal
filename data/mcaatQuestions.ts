@@ -21,9 +21,125 @@ export interface MCCATQuestion {
   id: number;
   question: string;
   reference: string;
+  referenceLinks?: Record<string, string>; // Maps reference text to URL
   link?: string;
   video?: string;
 }
+
+// Common reference URLs - add URLs here as they become available
+export const commonReferenceUrls: Record<string, string> = {
+  // DoDFMR Volume 7A - Specific Chapters
+  "DoDFMR Vol. 7A, Chap. 3": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_03.pdf",
+  "DoDFMR Vol 7A, Chap. 3": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_03.pdf",
+  "DoDFMR Vol. 7A, Chap. 9": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_09.pdf",
+  "DoDFMR Vol 7A, Chap. 9": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_09.pdf",
+  "DoDFMR Vol. 7A, Chap. 10": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_10.pdf",
+  "DoDFMR Vol 7A, Ch 10": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_10.pdf",
+  "DoDFMR Vol. 7A, Chap. 15": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_15.pdf",
+  "DoDFMR Vol. 7A, Chap. 16": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_16.pdf",
+  "DoDFMR Vol. 7A, Chap. 17": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_17.pdf",
+  "DoDFMR Vol 7A, Ch 17": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_17.pdf",
+  "DoDFMR Vol. 7A, Chap. 18": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_18.pdf",
+  "DoDFMR Vol 7A, Ch 18": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_18.pdf",
+  "DoDFMR Vol. 7A, Chap. 19": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_19.pdf",
+  "DoDFMR Vol. 7A, Chap. 22": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_22.pdf",
+  "DoDFMR Vol. 7A, Chap. 24": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_24.pdf",
+  "DoDFMR Vol 7A, Chap 24": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_24.pdf",
+  "DoDFMR Vol 7A Chap 24": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_24.pdf",
+  "DoDFMR Vol. 7A Chap. 24": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_24.pdf",
+  "DoDFMR Vol. 7A, Chap. 25": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_25.pdf",
+  "DoDFMR Vol 7A, Chap. 25": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_25.pdf",
+  "DoDFMR Vol 7A, Chap 25": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_25.pdf",
+  "DoDFMR Vol 7A, Ch 25": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_25.pdf",
+  "DoDFMR Vol. 7A, Chap. 26": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_26.pdf",
+  "DoDFMR Vol 7A, Chap 26": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_26.pdf",
+  "DoDFMR VOL 7A, CHAP. 26": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_26.pdf",
+  "DoDFMR Vol. 7A, Chap. 27": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_27.pdf",
+  "DoDFMR Vol 7A, Chap. 27": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_27.pdf",
+  "DoDFMR Vol. 7A, Chap. 28": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_28.pdf",
+  "DoDFMR Vol. 7A, Chap. 35": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_35.pdf",
+  "DoDFMR Vol. 7A, Chap. 44": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_44.pdf",
+  "DoDFMR Vol 7A, Ch 44": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_44.pdf",
+  "DoDFMR Vol. 7A, Chap. 49": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_49.pdf",
+  "DoDFMR Vol 7A, Chap 49": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_49.pdf",
+  "DoDFMR Vol. 7A, Chap .49": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_49.pdf",
+  "DoDFMR Vol. 7A, Chap. 50": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_50.pdf",
+  "DoDFMR Vol. 7A, Chap. 58": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_58.pdf",
+  "Chap. 58": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_58.pdf",
+  "DoDFMR Vol. 7A, Chap. 65": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_65.pdf",
+  "DoDFMR Vol 7A, Chap 65": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_65.pdf",
+
+  // DoDFMR Volume 1
+  "DoDFMR Vol. 1, Chap. 9": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/01/01_09.pdf",
+  "DoDFMR, Vol. 1, Chap. 9": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/01/01_09.pdf",
+  "DoDFMR, Vol 1, Ch 9": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/01/01_09.pdf",
+
+  // DoDFMR Volume 5
+  "DoDFMR Vol. 5": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/05/05_33.pdf",
+  "DoDFMR Vol. 5, Chap. 33": "https://comptroller.defense.gov/Portals/45/documents/fmr/current/05/05_33.pdf",
+
+  // JTR
+  "JTR": "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/",
+  "JTR Chap. 9": "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/",
+  "JTR Chap. 10": "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/",
+
+  // MCOs
+  "MCO 1000.6": "https://www.marines.mil/portals/1/Publications/MCO%201000.6.pdf",
+  "MCO 1050.16A": "https://www.marines.mil/portals/1/Publications/MCO%201050.16A.pdf?ver=2012-10-11-163555-680",
+  "MCO 1050.3J": "https://www.marines.mil/portals/1/Publications/MCO%201050.3J.pdf?ver=2017-06-20-111036-847",
+  "MCO 1070.1": "https://www.marines.mil/portals/1/Publications/MCO%201070.1.pdf?ver=2019-05-16-133644-923",
+  "MCO 10110.47A": "https://www.marines.mil/portals/1/MCO%2010110.47A.pdf",
+  "MCO 1400.32D": "https://www.marines.mil/portals/1/Publications/MCO%20P1400.32D%20W%20CH%201-2.pdf",
+  "MCO P1400.32D": "https://www.marines.mil/portals/1/Publications/MCO%20P1400.32D%20W%20CH%201-2.pdf",
+  "MCO 1500.59A": "https://www.marines.mil/Portals/1/Publications/MCO%201500.59A.pdf?ver=2019-09-27-154522-420",
+  "MCO 1616.1": "https://www.marines.mil/Portals/1/Publications/MCO%201616.1.pdf?ver=2pWMQ3wSas3g628sXsBV4g%3d%3d",
+  "MCO 1620.3A": "https://www.marines.mil/portals/1/Publications/MCO%201620.3A.pdf",
+  "MCO 1751.3": "https://www.marines.mil/Portals/1/Publications/MCO%201751.3%20CH-1.pdf?ver=OwVPdeeN2m58m6-JopUjIw%3d%3d",
+  "MCO 1900.16": "https://www.marines.mil/Portals/1/Publications/MCO%201900.16%20ADMIN%20CH-3%20(SECURED).pdf?ver=SZptuAh1jjvolL-Gf5s5CQ%3d%3d",
+  "MCO 3040.4": "https://www.marines.mil/portals/1/publications/mco%203040.4.pdf",
+  "MCO 3574.2L": "https://www.marines.mil/Portals/1/Publications/MCO%203574.2M.pdf?ver=xsW2GP8UoKM6kVJ2D58skQ%3d%3d",
+  "MCO 3574.2M": "https://www.marines.mil/Portals/1/Publications/MCO%203574.2M.pdf?ver=xsW2GP8UoKM6kVJ2D58skQ%3d%3d",
+  "MCO 4650.39A": "https://www.marines.mil/portals/1/Publications/MCO%204650.39A.pdf",
+  "MCO 6100.13A": "https://www.marines.mil/Portals/1/Publications/MCO%206100.13A%20W%20ADMIN%20CH-5%20(SECURED).pdf?ver=_Cd9D-v4wfAiMrAXq3Y-Mw%3d%3d",
+  "MCO 6110.3A": "https://www.marines.mil/Portals/1/Publications/MCO%206110.3A%20W%20ADMIN%20CH-4%20(SECURED).pdf?ver=7XYc4AD_PjViwRYVmHjkpw%3d%3d",
+  "MCO P3000.15B": "https://www.marines.mil/portals/1/Publications/MCO%20P3000.15B.pdf?ver=2012-10-11-163734-160",
+
+  // MCO 5800.16 - separate volumes
+  "MCO 5800.16 Vol 12": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Volume%2012.pdf?ver=2018-08-16-075707-797",
+  "MCO 5800.16 Vol. 12": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Volume%2012.pdf?ver=2018-08-16-075707-797",
+  "MCO 5800.16 Vol 14": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
+  "MCO 5800.16 Vol. 14": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
+  "MCO 5800.16, Vol 14": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
+  "MCO 5800.16, Vol. 14": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
+  "MCO 5800.16, Volume 14": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
+  "MCO 5800.16A, Vol. 14": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
+  "MCO 5800.16A, Volume 14": "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
+
+  // SECNAV
+  "SECNAV M-5210.1": "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/5210.1.pdf",
+  "SECNAV M-1650.1": "https://www.marines.mil/Portals/1/Publications/SECNAV%20M-1650.1.pdf?ver=2019-08-23-121307-600",
+
+  // MARADMINs
+  "MARADMIN 009/25": "https://www.marines.mil/News/Messages/Messages-Display/Article/4027354/marine-corps-lethal-means-safety-needs-assessment-survey/",
+  "MARADMIN 015/20": "https://www.marines.mil/News/Messages/Messages-Display/Article/2055563/manpower-audit-advisory-1-20-requirement-for-using-the-official-military-person/",
+  "MARADMIN 050/03": "https://www.marines.mil/News/Messages/Messages-Display/Article/894099/bas-deductions-and-per-diem-for-marines-participating-in-joint-force-contingenc/",
+  "MARADMIN 081/18": "https://www.marines.mil/News/Messages/Messages-Display/Article/1434154/cy-2017-kallstrom-and-security-emergency-services-civilian-awards/",
+  "MARADMIN 082/18": "https://www.marines.mil/News/Messages/Messages-Display/Article/1434158/awards-update/",
+  "MARADMIN 092/21": "https://www.marines.mil/News/Messages/Messages-Display/Article/2512028/update-to-maradmin-41420-fy21-hardship-duty-pay-tempo-program-details/",
+  "MARADMIN 106/24": "https://www.marines.mil/News/Messages/Messages-Display/Article/3689532/2024-secretary-of-defense-field-depot-and-software-maintenance-awards/",
+  "MARADMIN 111/20": "https://www.marines.mil/News/Messages/Messages-Display/Article/2093168/annual-rifle-training-table-one-score-conversion/",
+  "MARADMINS 0111/20": "https://www.marines.mil/News/Messages/Messages-Display/Article/2093168/annual-rifle-training-table-one-score-conversion/",
+  "MARADMIN 236/22": "https://www.marines.mil/News/Messages/Messages-Display/Article/3023343/announcement-of-the-2022-liz-blanc-exceptional-sexual-assault-response-coordina/",
+  "MARADMIN 344/22": "https://www.marines.mil/News/Messages/Messages-Display/Article/3086743/amplifying-guidance-for-use-of-military-airlift-and-conus-dedicated-operational/",
+  "MARADMIN 359/25": "https://www.marines.mil/News/Messages/Messages-Display/Article/4262230/updated-guidance-for-processing-unsubmitted-defense-travel-system-travel-vouche/",
+  "MARADMIN 601/24": "https://www.marines.mil/News/Messages/Messages-Display/Article/4000417/directed-usage-of-the-unit-diarymanpower-integrated-personnel-service-udmips-fo/",
+  "MARADMINS 106/24": "https://www.marines.mil/News/Messages/Messages-Display/Article/3689532/2024-secretary-of-defense-field-depot-and-software-maintenance-awards/",
+  "MARADMIN 619/14": "https://www.marines.mil/News/Messages/Messages-Display/Article/896817/hardship-duty-pay-tempo-hdp-t-program-details/",
+  "MARADMIN 661/19": "https://www.marines.mil/News/Messages/Messages-Display/Article/2029557/manpower-audit-advisory-1-19-audit-compensating-controls-to-dependency-applicat/",
+
+  // MCTFSPRIUM - Add specific chapter URLs as available
+  "MCTFSPRIUM": "",
+};
 
 export interface MCCATUnitSection {
   unitType: UnitType;
