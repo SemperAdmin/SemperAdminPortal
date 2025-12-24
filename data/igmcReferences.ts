@@ -123,10 +123,11 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     url: "https://www.marines.mil/portals/1/Publications/MCO%203040.4.pdf",
     category: "mco",
   },
-  "mco-4400-201": {
-    id: "mco-4400-201",
-    title: "MCO 4400.201",
-    fullTitle: "Management of Property in the Possession of the Marine Corps",
+  "mco-4400-201-v13": {
+    id: "mco-4400-201-v13",
+    title: "MCO 4400.201 Volume 13",
+    fullTitle: "Management of Property in the Possession of the Marine Corps - Volume 13",
+    url: "https://www.marines.mil/Portals/1/Publications/MCO%204400.201%20Volume%2013%20v2.pdf?ver=2018-07-26-152003-973",
     category: "mco",
   },
   "mco-4600-40b": {
@@ -290,6 +291,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "dod-5200-2r",
     title: "DoD 5200.2-R",
     fullTitle: "DoD Personnel Security Program",
+    url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodm/520002m.pdf",
     category: "dodr",
   },
 
@@ -330,6 +332,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "secnav-m-5210-1",
     title: "SECNAV M-5210.1",
     fullTitle: "Department of the Navy Records Management Manual",
+    url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/5210.1.pdf",
     category: "secnav",
   },
   "secnav-m-5210-2": {
