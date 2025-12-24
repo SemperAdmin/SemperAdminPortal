@@ -36,12 +36,14 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-1050-3j",
     title: "MCO 1050.3J",
     fullTitle: "Regulations for Leave, Liberty, and Administrative Absence",
+    url: "https://www.marines.mil/portals/1/publications/mco%201050.3j.pdf",
     category: "mco",
   },
   "mco-1050-16a": {
     id: "mco-1050-16a",
     title: "MCO 1050.16A",
     fullTitle: "Permissive Temporary Additional Duty",
+    url: "https://www.marines.mil/portals/1/Publications/MCO%201050.16A.pdf?ver=2012-10-11-163555-680",
     category: "mco",
   },
   "mco-1320-11h": {
@@ -72,34 +74,32 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899290/mco-16161/",
     category: "mco",
   },
-  "mco-1650-1j": {
-    id: "mco-1650-1j",
-    title: "MCO 1650.1J",
-    fullTitle: "Marine Corps Personal Awards Manual",
-    category: "mco",
-  },
   "mco-1650-19j": {
     id: "mco-1650-19j",
     title: "MCO 1650.19J",
     fullTitle: "Marine Corps Awards Manual",
+    url: "https://www.marines.mil/Portals/1/Publications/MCO%201650.19J%20W%20CH%201%20(SECURED).pdf?ver=zkGSM_UW7RT34nnQiKYTBA%3d%3d",
     category: "mco",
   },
   "mco-1700-31": {
     id: "mco-1700-31",
     title: "MCO 1700.31",
     fullTitle: "Transition Readiness Program",
+    url: "https://www.marines.mil/portals/1/MCO%201700.31.pdf",
     category: "mco",
   },
   "mco-1741-8": {
     id: "mco-1741-8",
     title: "MCO 1741.8",
     fullTitle: "Casualty Reporting",
+    url: "https://www.marines.mil/portals/1/MCO%201741.8.PDF",
     category: "mco",
   },
   "mco-1741-11d": {
     id: "mco-1741-11d",
     title: "MCO 1741.11D",
     fullTitle: "Casualty Assistance Program",
+    url: "https://www.marines.mil/portals/1/Publications/MCO%201741.11D.pdf",
     category: "mco",
   },
   "mco-1742-1c": {
@@ -123,10 +123,11 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     url: "https://www.marines.mil/portals/1/Publications/MCO%203040.4.pdf",
     category: "mco",
   },
-  "mco-4400-201": {
-    id: "mco-4400-201",
-    title: "MCO 4400.201",
-    fullTitle: "Management of Property in the Possession of the Marine Corps",
+  "mco-4400-201-v13": {
+    id: "mco-4400-201-v13",
+    title: "MCO 4400.201 Volume 13",
+    fullTitle: "Management of Property in the Possession of the Marine Corps - Volume 13",
+    url: "https://www.marines.mil/Portals/1/Publications/MCO%204400.201%20Volume%2013%20v2.pdf?ver=2018-07-26-152003-973",
     category: "mco",
   },
   "mco-4600-40b": {
@@ -147,6 +148,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-5110-4b",
     title: "MCO 5110.4B",
     fullTitle: "Postal Affairs and Official Mail Management",
+    url: "https://www.marines.mil/Portals/1/Publications/MCO%205110.4B%20(SECURED).pdf?ver=F8tTfDWHjWCTVMb8q0Dsew%3d%3d",
     category: "mco",
   },
   "mco-5210-11f": {
@@ -174,12 +176,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-5750-1h",
     title: "MCO 5750.1H",
     fullTitle: "Historical Program",
-    category: "mco",
-  },
-  "mco-5800-16": {
-    id: "mco-5800-16",
-    title: "MCO 5800.16",
-    fullTitle: "Legal Administration Manual",
+    url: "https://www.marines.mil/portals/1/Publications/MCO%205750.1H.pdf?ver=2012-10-11-163836-987",
     category: "mco",
   },
   "mco-5800-16-v14": {
@@ -223,30 +220,35 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "dodi-1332-35",
     title: "DoDI 1332.35",
     fullTitle: "Transition Assistance Program for Military Personnel",
+    url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/133235p.pdf",
     category: "dodi",
   },
   "dodi-1332-42": {
     id: "dodi-1332-42",
     title: "DoDI 1332.42",
     fullTitle: "Survivor Assistance Programs",
+    url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/133242p.pdf",
     category: "dodi",
   },
   "dodi-1348-33": {
     id: "dodi-1348-33",
     title: "DoDI 1348.33",
     fullTitle: "Military Awards Program",
+    url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/134833p.pdf",
     category: "dodi",
   },
   "dodi-4525-09": {
     id: "dodi-4525-09",
     title: "DoDI 4525.09",
     fullTitle: "DoD Official Mail Management",
+    url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/452509p.pdf",
     category: "dodi",
   },
   "dodi-8500-01": {
     id: "dodi-8500-01",
     title: "DoDI 8500.01",
     fullTitle: "Cybersecurity",
+    url: "https://www.esd.whs.mil/portals/54/documents/dd/issuances/dodi/850001_2014.pdf",
     category: "dodi",
   },
 
@@ -255,6 +257,20 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "dod-fmr",
     title: "DoD FMR",
     fullTitle: "DoD Financial Management Regulation (7000.14-R)",
+    category: "dodr",
+  },
+  "dod-fmr-vol5-ch1": {
+    id: "dod-fmr-vol5-ch1",
+    title: "DoD FMR Vol 5, Ch 1",
+    fullTitle: "DoD Financial Management Regulation Volume 5 Chapter 1",
+    url: "https://comptroller.war.gov/Portals/45/documents/fmr/current/05/05_01.pdf",
+    category: "dodr",
+  },
+  "dod-fmr-vol5-ch5": {
+    id: "dod-fmr-vol5-ch5",
+    title: "DoD FMR Vol 5, Ch 5",
+    fullTitle: "DoD Financial Management Regulation Volume 5 Chapter 5",
+    url: "https://comptroller.war.gov/Portals/45/documents/fmr/current/05/05_05.pdf",
     category: "dodr",
   },
   "dod-gtcc-regs": {
@@ -275,32 +291,35 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "dod-5200-2r",
     title: "DoD 5200.2-R",
     fullTitle: "DoD Personnel Security Program",
+    url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodm/520002m.pdf",
     category: "dodr",
   },
 
   // SECNAV Instructions and Manuals
   "secnavinst-1050-1a": {
     id: "secnavinst-1050-1a",
-    title: "SECNAVINST 1050.1A",
-    fullTitle: "Leave, Liberty, and Administrative Absence",
+    title: "SECNAVINST 1050.1A (Canc)",
+    fullTitle: "Leave, Liberty, and Administrative Absence (Cancelled)",
     category: "secnav",
   },
   "secnavinst-1650-1j": {
     id: "secnavinst-1650-1j",
     title: "SECNAVINST 1650.1J",
     fullTitle: "Navy and Marine Corps Awards Manual",
+    url: "https://www.mcieast.marines.mil/Portals/33/SECNAVINST%201650_1J_1.pdf",
     category: "secnav",
   },
   "secnavinst-5210-8f": {
     id: "secnavinst-5210-8f",
     title: "SECNAVINST 5210.8F",
     fullTitle: "Department of the Navy Records Management Program",
+    url: "https://www.secnav.navy.mil/doni/Directives/05000%20General%20Management%20Security%20and%20Safety%20Services/05-200%20Management%20Program%20and%20Techniques%20Services/5210.8F.pdf",
     category: "secnav",
   },
   "secnavinst-5210-16": {
     id: "secnavinst-5210-16",
-    title: "SECNAVINST 5210.16",
-    fullTitle: "Essential Records Program",
+    title: "SECNAVINST 5210.16 (Canc)",
+    fullTitle: "Essential Records Program (Cancelled)",
     category: "secnav",
   },
   "secnav-m-1650-1": {
@@ -314,18 +333,21 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "secnav-m-5210-1",
     title: "SECNAV M-5210.1",
     fullTitle: "Department of the Navy Records Management Manual",
+    url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/5210.1.pdf",
     category: "secnav",
   },
   "secnav-m-5210-2": {
     id: "secnav-m-5210-2",
     title: "SECNAV M-5210.2",
     fullTitle: "Department of the Navy Standard Subject Identification Codes",
+    url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/5210.2.pdf",
     category: "secnav",
   },
   "secnav-m-5216-5": {
     id: "secnav-m-5216-5",
     title: "SECNAV M-5216.5",
     fullTitle: "Department of the Navy Correspondence Manual",
+    url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/5216.5%20%20CH-1.pdf",
     category: "secnav",
   },
 
@@ -518,13 +540,27 @@ export function getDocumentsByCategory(category: ReferenceCategory): ReferenceDo
   return Object.values(referenceDocuments).filter((doc) => doc.category === category);
 }
 
+// Normalize text for matching (remove periods after abbreviations, normalize spacing)
+function normalizeForMatch(text: string): string {
+  return text
+    .replace(/Ch\.\s*/gi, "Ch ")  // "Ch. 5" → "Ch 5"
+    .replace(/Vol\.\s*/gi, "Vol ") // "Vol. 5" → "Vol 5"
+    .replace(/,\s+/g, " ")         // Remove commas
+    .replace(/\s+/g, " ");         // Normalize whitespace
+}
+
 // Helper function to find a document URL by matching reference text
 // This allows auto-resolution without requiring documentId on every reference
 export function findDocumentUrlByText(referenceText: string): string | undefined {
+  const normalizedRef = normalizeForMatch(referenceText);
+
   // Try to match document titles in the reference text
   for (const doc of Object.values(referenceDocuments)) {
-    if (doc.url && referenceText.includes(doc.title)) {
-      return doc.url;
+    if (doc.url) {
+      const normalizedTitle = normalizeForMatch(doc.title);
+      if (normalizedRef.includes(normalizedTitle)) {
+        return doc.url;
+      }
     }
   }
   return undefined;

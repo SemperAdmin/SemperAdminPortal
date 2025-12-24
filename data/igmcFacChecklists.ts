@@ -2062,7 +2062,7 @@ export const militaryAwardsChecklist: FACChecklistData = {
           number: "0101",
           text: "Does the command have the pertinent military awards references and are the command's administrative personnel familiar with the requirements of current awards directives? Must have access to the following references either electronically or on-hand: (a) MCO 1650.19J (b) SECNAVINST 1650.1J (c) SECNAV M-1650.1 (d) SECNAV M-5216.5 (e) DoD Instruction 1348.33 (f) DoD Manual 1348.33; Vol 1-4",
           reference: {
-            text: "SECNAV M-1650.1, Ch. 1, Para. 1.1.b. (p 1-1); MCO 1650.1J, Encl. 1, Para 1.a.-1.c. (p 1)",
+            text: "SECNAV M-1650.1, Ch. 1, Para. 1.1.b. (p 1-1); MCO 1650.19J, Encl. 1, Para 1.a.-1.c. (p 1)",
           },
         },
         {
