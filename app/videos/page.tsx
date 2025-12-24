@@ -22,8 +22,9 @@ const playlists: Playlist[] = [
     videoId: "l1emYAOT8HY",
   },
   {
-    title: "FITREPS",
+    title: "Fitness Reports",
     youtubeUrl: "https://www.youtube.com/watch?v=xEqkOUpJvyw&list=PLNGr21c4scCC7BK16TlmvqxnDZht-Ow0x",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=626133DA3454&playlistId=78a99998-6c24-48d0-bb53-dc4bae7561f6",
     videoId: "xEqkOUpJvyw",
   },
   // MarineNet Playlists
@@ -62,14 +63,11 @@ const playlists: Playlist[] = [
   {
     title: "Directives",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6220DD223F2B&playlistId=0a9e4575-014f-4f42-9fa3-885c5cd47bb5",
+    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCBg9o6gtFHpOFJbO0Z1gQOt",
   },
   {
     title: "Education",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=622386A5FAAD&playlistId=0e883c0d-9998-40d0-a598-df2dbfa7ce92",
-  },
-  {
-    title: "Fitness Reports",
-    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=626133DA3454&playlistId=78a99998-6c24-48d0-bb53-dc4bae7561f6",
   },
   {
     title: "Government Travel Charge Card",
@@ -99,6 +97,7 @@ const playlists: Playlist[] = [
   {
     title: "Leave and Liberty",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6300A5D61E66&playlistId=83e16a6c-9ef1-4672-a997-5cbb9f78d5d1",
+    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCDm6McJiiWnrgkQuY2eIcEx",
   },
   {
     title: "Manpower",
@@ -107,6 +106,7 @@ const playlists: Playlist[] = [
   {
     title: "Manpower & Reserve Affairs",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6302111B6584&playlistId=1f3f9e63-f1e6-4acb-bfd6-80bb1ef8324d",
+    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCDKdkw2NJrYz9YZTL_WFHBz",
   },
   {
     title: "Marine Corps Total Force System",
