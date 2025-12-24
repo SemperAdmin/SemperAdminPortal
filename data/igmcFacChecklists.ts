@@ -2721,7 +2721,7 @@ export const separationRetirementChecklist: FACChecklistData = {
 
 // Transition Readiness Program (TRP) Checklist Data
 export const transitionReadinessChecklist: FACChecklistData = {
-  slug: "transition-readiness",
+  slug: "trp",
   applicabilityNote: "This checklist applies to all levels and types of commands.",
   revisedDate: "February 21, 2024",
   sme: {
@@ -3226,7 +3226,7 @@ const facChecklists: Partial<Record<FACSlug, FACChecklistData>> = {
   "records-management": recordsManagementChecklist,
   "reports-management": reportsManagementChecklist,
   "separation-retirement": separationRetirementChecklist,
-  "transition-readiness": transitionReadinessChecklist,
+  trp: transitionReadinessChecklist,
   "voting-assistance": votingAssistanceChecklist,
 };
 
