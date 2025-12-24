@@ -43,6 +43,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-1050-16a",
     title: "MCO 1050.16A",
     fullTitle: "Permissive Temporary Additional Duty",
+    url: "https://www.marines.mil/portals/1/Publications/MCO%201050.16A.pdf?ver=2012-10-11-163555-680",
     category: "mco",
   },
   "mco-1320-11h": {
@@ -73,16 +74,11 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899290/mco-16161/",
     category: "mco",
   },
-  "mco-1650-1j": {
-    id: "mco-1650-1j",
-    title: "MCO 1650.1J",
-    fullTitle: "Marine Corps Personal Awards Manual",
-    category: "mco",
-  },
   "mco-1650-19j": {
     id: "mco-1650-19j",
     title: "MCO 1650.19J",
     fullTitle: "Marine Corps Awards Manual",
+    url: "https://www.marines.mil/Portals/1/Publications/MCO%201650.19J%20W%20CH%201%20(SECURED).pdf?ver=zkGSM_UW7RT34nnQiKYTBA%3d%3d",
     category: "mco",
   },
   "mco-1700-31": {
@@ -96,6 +92,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-1741-8",
     title: "MCO 1741.8",
     fullTitle: "Casualty Reporting",
+    url: "https://www.marines.mil/portals/1/MCO%201741.8.PDF",
     category: "mco",
   },
   "mco-1741-11d": {
