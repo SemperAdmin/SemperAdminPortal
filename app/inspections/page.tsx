@@ -145,7 +145,7 @@ const inspections: InspectionCardProps[] = [
     abbreviation: "IGMC",
     conductedBy: "IGMC",
     description:
-      "Command inspection program using Functional Area Checklists (FACs) to evaluate unit readiness across CoRE, Non-CoRE, and CoRE+ areas.",
+      "To provide the Commandant with an objective assessment of a command's health, discipline, and institutional readiness.",
     href: "/inspections/igmc",
     icon: <ShieldCheckIcon className="h-7 w-7" />,
     color: "navy",
@@ -156,18 +156,18 @@ const inspections: InspectionCardProps[] = [
     abbreviation: "MCAAT",
     conductedBy: "MX (Manpower)",
     description:
-      "Administrative inspections evaluating personnel administration accuracy, finance operations, and compliance with Marine Corps policies.",
+      "To verify the integrity of personnel administration and financial records within the Marine Corps Total Force System (MCTFS).",
     href: "/inspections/mcaat",
     icon: <ClipboardCheckIcon className="h-7 w-7" />,
     color: "gold",
     available: true,
   },
   {
-    title: "Marine Corps Information Security Self-Assessment",
+    title: "Manpower Information Systems Support Office",
     abbreviation: "MISSO",
-    conductedBy: "MI (Marine Corps Intelligence)",
+    conductedBy: "MI (Manpower Information)",
     description:
-      "Information security inspections assessing command security posture, classification management, and intelligence oversight compliance.",
+      "To provide technical training and system support to administrative personnel to improve data accuracy and personnel reporting.",
     href: "/inspections/misso",
     icon: <EyeIcon className="h-7 w-7" />,
     color: "red",
