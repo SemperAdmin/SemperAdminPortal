@@ -24,6 +24,7 @@ export interface FACQuestion {
   reference: {
     text: string;
     url?: string;
+    documentId?: string; // References igmcReferences.ts registry - takes precedence over url
   };
   video?: FACVideoResource;
 }
@@ -65,11 +66,11 @@ export const pesChecklist: FACChecklistData = {
     directives: [
       {
         title: "MCO 1610.7B (Performance Evaluation System)",
-        url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899222/mco-16107b/",
+        documentId: "mco-1610-7b",
       },
       {
         title: "MCO 1616.1 Ch 1 (JEPES)",
-        url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899290/mco-16161/",
+        documentId: "mco-1616-1",
       },
     ],
     sharepoints: [
@@ -96,7 +97,7 @@ export const pesChecklist: FACChecklistData = {
           note: "Generally, this includes a review of the appropriate way to submit an MROW and a MBS audit. This requires a review of chapters 2, 3 and 4 of the PES, with special attention on section A data.",
           reference: {
             text: "MCO 1610.7B, Paragraph 4 (Execution)b., Chapter 8 paragraph 4, Chapter 9 paragraph 5.d.",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899222/mco-16107b/",
+            documentId: "mco-1610-7b",
           },
         },
         {
@@ -105,7 +106,7 @@ export const pesChecklist: FACChecklistData = {
           note: "Generally, this includes a verification of sections A, B, and C, review the requirements for high mark and adverse justifications, and a review of the performance anchored rating scale and marking philosophy. This requires a review of chapters 1-4, and 8 of the PES.",
           reference: {
             text: "MCO 1610.7B, Paragraph 4 (Execution).b., Chapter 8 paragraph 4, Chapter 9 paragraph 5.d.",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899222/mco-16107b/",
+            documentId: "mco-1610-7b",
           },
         },
         {
@@ -114,7 +115,7 @@ export const pesChecklist: FACChecklistData = {
           note: "Generally, this includes the supervision of the verification of sections A through C, a review of the RS's markings in sections D-H, requirements for high mark and adverse justifications, a review of section I, and a review of the RO's profile. This requires a review of chapters 1-4, and 8 of the PES.",
           reference: {
             text: "MCO 1610.7B, Paragraph 4 (Execution).b., Chapter 8 paragraph 4, Chapter 9 paragraph 5.d.",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899222/mco-16107b/",
+            documentId: "mco-1610-7b",
           },
         },
         {
@@ -123,7 +124,7 @@ export const pesChecklist: FACChecklistData = {
           note: "This requires a review of chapter 5.",
           reference: {
             text: "MCO 1610.7B, Paragraph 4 (Execution).b., Chapter 5, paragraph 1.a., Chapter 8 paragraph 4, Chapter 9 paragraph 5.d.",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899222/mco-16107b/",
+            documentId: "mco-1610-7b",
           },
         },
         {
@@ -132,7 +133,7 @@ export const pesChecklist: FACChecklistData = {
           note: "\"FITREP Inventory\" tool is located in MOL under Resources, APES, MMRP.",
           reference: {
             text: "MCO 1610.7B, Chapter 3, paragraphs 4.a. and 4.b, Chapter 5.",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899222/mco-16107b/",
+            documentId: "mco-1610-7b",
           },
         },
         {
@@ -141,7 +142,7 @@ export const pesChecklist: FACChecklistData = {
           note: "CTRs must be requested by submitting an email to the organizational email at smb.manpower.mmrp-31@usmc.mil along with the RUC and MCC of the command.",
           reference: {
             text: "MCO 1610.7B, Chapter 9, paragraph 5.f.",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899222/mco-16107b/",
+            documentId: "mco-1610-7b",
           },
         },
         {
@@ -150,7 +151,7 @@ export const pesChecklist: FACChecklistData = {
           note: "Reports must be submitted to HQMC within 30 days of the end of the reporting period for normal reports and 60 days for adverse reports.",
           reference: {
             text: "MCO 1610.7B, Chapter 1, paragraph 3.c., Chapter 9 paragraph 5.d. and paragraph 5.f.(1).",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899222/mco-16107b/",
+            documentId: "mco-1610-7b",
           },
         },
         {
@@ -159,7 +160,7 @@ export const pesChecklist: FACChecklistData = {
           note: "Missing last annual queries are available in MOL under Resources, APES, MMRP web tool. Missing last annual must be pulled by RUC/MCC and grade for all E5-O6.",
           reference: {
             text: "MCO 1610.7B, Chapter 9, paragraph 5.f.",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899222/mco-16107b/",
+            documentId: "mco-1610-7b",
           },
         },
         {
@@ -168,7 +169,7 @@ export const pesChecklist: FACChecklistData = {
           note: "Date gap queries are available in MOL under Resources, APES, MMRP web tool. Date gaps can be pulled by RUC/MCC.",
           reference: {
             text: "MCO 1610.7B, Chapter 9 paragraph 5.f.",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899222/mco-16107b/",
+            documentId: "mco-1610-7b",
           },
         },
         {
@@ -177,7 +178,7 @@ export const pesChecklist: FACChecklistData = {
           note: "For example, correcting date gaps, overlaps, or correcting occasion codes.",
           reference: {
             text: "MCO 1610.7B, chapter 9, par 5.a.(1), Chapter 9 paragraph 5.d.",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899222/mco-16107b/",
+            documentId: "mco-1610-7b",
           },
         },
         {
@@ -186,7 +187,7 @@ export const pesChecklist: FACChecklistData = {
           note: "A record log can consist of an excel spreadsheet, a logbook, or another format that shows a proactive effort in verifying FITREPs are processed/completed including the FITREP Inventory which is maintained for a minimum of 12 months.",
           reference: {
             text: "MCO 1610.7B, Chapter 9, paragraph 5.f.(2).",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899222/mco-16107b/",
+            documentId: "mco-1610-7b",
           },
         },
       ],
@@ -200,7 +201,7 @@ export const pesChecklist: FACChecklistData = {
           text: "Does every Marine in the grades E-1 through E-4 have a reporting chain established within 30 days of checking into the unit, and all omitted roles are marked \"N/A\" instead of \"unassigned\"?",
           reference: {
             text: "MCO 1616.1 Ch 1, chap 1, para 6.a).",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899290/mco-16161/",
+            documentId: "mco-1616-1",
           },
         },
         {
@@ -208,7 +209,7 @@ export const pesChecklist: FACChecklistData = {
           text: "Does the unit use the correct JEPES occasion types and effective dates?",
           reference: {
             text: "MCO 1616.1 Ch 1, chap 2, para 2, 2.a, & 2.b",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899290/mco-16161/",
+            documentId: "mco-1616-1",
           },
         },
         {
@@ -216,7 +217,7 @@ export const pesChecklist: FACChecklistData = {
           text: "Does the unit effectively manage JEPES reporting chain, Senior Enlisted Reviewer, Command Reviewer, and Unit Admin permissions within the unit organizational scopes?",
           reference: {
             text: "MCO 1616.1 Ch 1, chap 1, para 5.h",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899290/mco-16161/",
+            documentId: "mco-1616-1",
           },
         },
         {
@@ -224,7 +225,7 @@ export const pesChecklist: FACChecklistData = {
           text: "Does the unit have a process to ensure that first-line supervisors provide initial counselling's to each MRO within 30 days?",
           reference: {
             text: "MCO 1616.1 Ch 1, chap 1, para 6.b & chap 2, para 1.b",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899290/mco-16161/",
+            documentId: "mco-1616-1",
           },
         },
         {
@@ -232,7 +233,7 @@ export const pesChecklist: FACChecklistData = {
           text: "Does the unit ensure that all JEPES occasions are approved within 30 days of the effective \"TO DATE\"?",
           reference: {
             text: "MCO 1616.1 Ch 1, chap 2, para 2.h.(3)",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899290/mco-16161/",
+            documentId: "mco-1616-1",
           },
         },
         {
@@ -240,7 +241,7 @@ export const pesChecklist: FACChecklistData = {
           text: "Does the unit ensure that JEPES occasions are approved by the appropriate promotion authority, with an \"Acting Letter\" on file when required?",
           reference: {
             text: "MCO 1616.1 Ch 1, chap 1, para 5.g & chap 2, para 1.f",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899290/mco-16161/",
+            documentId: "mco-1616-1",
           },
         },
         {
@@ -248,7 +249,7 @@ export const pesChecklist: FACChecklistData = {
           text: "Can the unit show correctly processed examples of, or demonstrate the ability to process command corrections for JEPES occasions when required?",
           reference: {
             text: "MCO 1616.1 Ch 1, chap 2, para 4",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899290/mco-16161/",
+            documentId: "mco-1616-1",
           },
         },
         {
@@ -256,7 +257,7 @@ export const pesChecklist: FACChecklistData = {
           text: "Does the unit ensure that high and low command input marks are receiving appropriate justifications?",
           reference: {
             text: "MCO 1616.1 Ch 1, chap 2, para 3.a.(1) & (5)",
-            url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899290/mco-16161/",
+            documentId: "mco-1616-1",
           },
         },
       ],
