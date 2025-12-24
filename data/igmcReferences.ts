@@ -54,6 +54,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-1500-60a",
     title: "MCO 1500.60A",
     fullTitle: "Force Preservation Council Program",
+    url: "https://www.marines.mil/Portals/1/Publications/MCO%201500.60A%20(SECURED).pdf?ver=nvzlA07lE4cFOfdWZjkLQA%3d%3d",
     category: "mco",
   },
   "mco-1610-7b": {
@@ -131,6 +132,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-4600-40b",
     title: "MCO 4600.40B",
     fullTitle: "Government Travel Charge Card Program",
+    url: "https://www.marines.mil/portals/1/MCO%204600.40B.pdf",
     category: "mco",
   },
   "mco-4650-39a": {
@@ -150,6 +152,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-5210-11f",
     title: "MCO 5210.11F",
     fullTitle: "Records Management Program",
+    url: "https://www.marines.mil/portals/1/MCO_5210%2011F_ORIGNAL%20SIGNED_EDD.pdf",
     category: "mco",
   },
   "mco-5214-2g": {
@@ -211,6 +214,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "dodi-1327-06",
     title: "DoDI 1327.06",
     fullTitle: "Leave and Liberty Policy and Procedures",
+    url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132706p.pdf",
     category: "dodi",
   },
   "dodi-1332-35": {
@@ -255,6 +259,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "dod-gtcc-regs",
     title: "DoD GTCC Regulations",
     fullTitle: "Government Travel Charge Card Regulations",
+    url: "https://www.travel.dod.mil/Portals/119/Documents/GTCC/GTCC-Regs.pdf",
     category: "dodr",
   },
   "dod-dts-regs": {
