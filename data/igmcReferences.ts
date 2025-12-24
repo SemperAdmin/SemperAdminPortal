@@ -260,6 +260,20 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     fullTitle: "DoD Financial Management Regulation (7000.14-R)",
     category: "dodr",
   },
+  "dod-fmr-vol5-ch1": {
+    id: "dod-fmr-vol5-ch1",
+    title: "DoD FMR Vol 5, Ch 1",
+    fullTitle: "DoD Financial Management Regulation Volume 5 Chapter 1",
+    url: "https://comptroller.war.gov/Portals/45/documents/fmr/current/05/05_01.pdf",
+    category: "dodr",
+  },
+  "dod-fmr-vol5-ch5": {
+    id: "dod-fmr-vol5-ch5",
+    title: "DoD FMR Vol 5, Ch 5",
+    fullTitle: "DoD Financial Management Regulation Volume 5 Chapter 5",
+    url: "https://comptroller.war.gov/Portals/45/documents/fmr/current/05/05_05.pdf",
+    category: "dodr",
+  },
   "dod-gtcc-regs": {
     id: "dod-gtcc-regs",
     title: "DoD GTCC Regulations",
@@ -524,13 +538,27 @@ export function getDocumentsByCategory(category: ReferenceCategory): ReferenceDo
   return Object.values(referenceDocuments).filter((doc) => doc.category === category);
 }
 
+// Normalize text for matching (remove periods after abbreviations, normalize spacing)
+function normalizeForMatch(text: string): string {
+  return text
+    .replace(/Ch\.\s*/gi, "Ch ")  // "Ch. 5" → "Ch 5"
+    .replace(/Vol\.\s*/gi, "Vol ") // "Vol. 5" → "Vol 5"
+    .replace(/,\s+/g, " ")         // Remove commas
+    .replace(/\s+/g, " ");         // Normalize whitespace
+}
+
 // Helper function to find a document URL by matching reference text
 // This allows auto-resolution without requiring documentId on every reference
 export function findDocumentUrlByText(referenceText: string): string | undefined {
+  const normalizedRef = normalizeForMatch(referenceText);
+
   // Try to match document titles in the reference text
   for (const doc of Object.values(referenceDocuments)) {
-    if (doc.url && referenceText.includes(doc.title)) {
-      return doc.url;
+    if (doc.url) {
+      const normalizedTitle = normalizeForMatch(doc.title);
+      if (normalizedRef.includes(normalizedTitle)) {
+        return doc.url;
+      }
     }
   }
   return undefined;
