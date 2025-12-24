@@ -249,6 +249,7 @@ function CACIcon({ className }: { className?: string }) {
 }
 
 function PlaylistCard({ playlist }: { playlist: Playlist }) {
+  const BP = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const hasYouTube = !!playlist.youtubeUrl;
   const hasMarineNet = !!playlist.marineNetUrl;
   const hasCustomImage = !!playlist.image;
@@ -260,7 +261,7 @@ function PlaylistCard({ playlist }: { playlist: Playlist }) {
       return (
         <div className="relative h-40 w-full overflow-hidden rounded">
           <Image
-            src={playlist.image!}
+            src={`${BP}${playlist.image}`}
             alt={`${playlist.title} playlist thumbnail`}
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
