@@ -137,6 +137,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-4650-39a",
     title: "MCO 4650.39A",
     fullTitle: "Defense Travel System",
+    url: "https://www.marines.mil/portals/1/Publications/MCO%204650.39A.pdf",
     category: "mco",
   },
   "mco-5110-4b": {
@@ -155,6 +156,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-5214-2g",
     title: "MCO 5214.2G",
     fullTitle: "Reports Management",
+    url: "https://www.marines.mil/portals/1/Publications/MCO%205214%202G.pdf?ver=2018-08-06-130852-213",
     category: "mco",
   },
   "mco-5215-1k": {
@@ -179,6 +181,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-6110-3a",
     title: "MCO 6110.3A",
     fullTitle: "Marine Corps Body Composition and Military Appearance Program",
+    url: "https://www.marines.mil/Portals/1/Publications/MCO%206110.3A%20W%20ADMIN%20CH-4%20(SECURED).pdf?ver=7XYc4AD_PjViwRYVmHjkpw%3d%3d",
     category: "mco",
   },
 
@@ -282,6 +285,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "secnav-m-1650-1",
     title: "SECNAV M-1650.1",
     fullTitle: "Navy and Marine Corps Awards Manual",
+    url: "https://www.marines.mil/Portals/1/Publications/SECNAV%20M-1650.1.pdf?ver=2019-08-23-121307-600",
     category: "secnav",
   },
   "secnav-m-5210-1": {
