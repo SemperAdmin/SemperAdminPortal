@@ -355,16 +355,19 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
   "maradmin-042-08": {
     id: "maradmin-042-08",
     title: "MARADMIN 042/08",
+    url: "https://www.marines.mil/News/Messages/MARADMINS/Article/893622/implementation-of-the-improved-awards-processing-system-iaps/",
     category: "maradmin",
   },
   "maradmin-051-23": {
     id: "maradmin-051-23",
     title: "MARADMIN 051/23",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/3281525/expansion-of-the-marine-corps-military-parental-leave-program/",
     category: "maradmin",
   },
   "maradmin-076-22": {
     id: "maradmin-076-22",
     title: "MARADMIN 076/22",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/2947041/updated-requirements-regarding-implementation-of-servicemembers-group-life-insu/",
     category: "maradmin",
   },
   "maradmin-099-18": {
