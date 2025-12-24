@@ -29,6 +29,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-1040-31",
     title: "MCO 1040.31",
     fullTitle: "Marine Corps Enlisted Retention and Career Development Program",
+    url: "https://www.marines.mil/portals/1/Publications/MCO%201040.31.pdf?ver=2012-10-11-163756-583",
     category: "mco",
   },
   "mco-1050-3j": {
@@ -115,6 +116,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-3040-4",
     title: "MCO 3040.4",
     fullTitle: "Marine Corps Combat Readiness Evaluation System",
+    url: "https://www.marines.mil/portals/1/Publications/MCO%203040.4.pdf",
     category: "mco",
   },
   "mco-4400-201": {
@@ -183,6 +185,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "dodi-1000-04",
     title: "DoDI 1000.04",
     fullTitle: "Federal Voting Assistance Program",
+    url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/100004p.pdf?ver=2019-11-12-130718-750",
     category: "dodi",
   },
   "dodi-1327-06": {
