@@ -445,6 +445,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "navmc-1500",
     title: "NAVMC 1500",
     fullTitle: "Training and Readiness Manual",
+    url: "https://www.marines.mil/Portals/1/Publications/NAVMC%201500.5%20(SECURED).pdf?ver=McdyXSq23sgZB2UWjw5u7A%3d%3d",
     category: "navmc",
   },
 
