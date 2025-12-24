@@ -313,6 +313,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "secnavinst-5210-8f",
     title: "SECNAVINST 5210.8F",
     fullTitle: "Department of the Navy Records Management Program",
+    url: "https://www.secnav.navy.mil/doni/Directives/05000%20General%20Management%20Security%20and%20Safety%20Services/05-200%20Management%20Program%20and%20Techniques%20Services/5210.8F.pdf",
     category: "secnav",
   },
   "secnavinst-5210-16": {
