@@ -117,6 +117,54 @@ const playlists: Playlist[] = [
     title: "MarineNet",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=631242C725D9&playlistId=cb684aa7-fa6f-4f89-8987-3f6720f42fc7",
   },
+  {
+    title: "Microsoft Excel",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6243815A35FF&playlistId=b5947adb-e853-4916-9d26-31887198bb85",
+  },
+  {
+    title: "MISSA/MISSO Portal",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6320AFF6E96A&playlistId=ec104de4-6e2f-4c39-a911-f3a2c758d997",
+  },
+  {
+    title: "O-RMA",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=63246AE88CDF&playlistId=8060c188-07e0-4a2a-95ad-df574255f1fb",
+  },
+  {
+    title: "Outbound Interview",
+    marineNetUrl: "https://www.marinenet.usmc.mil/MVS/watchVideo.aspx?Id=64189F33255E&playlistId=dc31fe4e-44bb-4698-801e-8b03a1499a04",
+  },
+  {
+    title: "Pay and Entitlements",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=63831964B681&playlistId=fb0f6044-751b-494b-9564-546c941b280e",
+  },
+  {
+    title: "Promotions",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6333641429BE&playlistId=c66703d2-d293-4fed-a224-dd55899f0cfe",
+  },
+  {
+    title: "Tech Tips",
+    marineNetUrl: "https://www.marinenet.usmc.mil/MVS/watchVideo.aspx?Id=7097569D2864&playlistId=4fa66f1a-cfc5-44ae-8649-99d313c69b3f",
+  },
+  {
+    title: "Semper Admin",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=633587A459EB&playlistId=f80a5b99-0bab-4e14-804a-3fdae31ce528",
+  },
+  {
+    title: "Separations and Retirement",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=63375351C274&playlistId=16e098a2-e0bb-4a40-a177-2c7db5b2faa5",
+  },
+  {
+    title: "SharePoint",
+    marineNetUrl: "https://www.marinenet.usmc.mil/MVS/watchVideo.aspx?Id=640817BEDE96&playlistId=3de59f4f-7118-4527-b3f9-d6771ee02690",
+  },
+  {
+    title: "Travel Claim",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6128637E6663&playlistId=b99b589b-c290-4bd1-9b6c-036f23f45388",
+  },
+  {
+    title: "Travel Voucher Interview",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=63383D956415&playlistId=cad68746-7279-4b35-a208-6725614e2f39",
+  },
 ];
 
 function MarineNetIcon({ className }: { className?: string }) {
