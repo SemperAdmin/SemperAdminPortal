@@ -441,30 +441,6 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     url: "https://www.hqmc.marines.mil/Portals/138/Docs/AA%20Form%20SLDP.pdf",
     category: "navmc",
   },
-  "navmc-11030": {
-    id: "navmc-11030",
-    title: "NAVMC 11030",
-    fullTitle: "Records Management Forms Series (Paper Waiver Request, Disposition Extensions)",
-    category: "navmc",
-  },
-  "navmc-11791": {
-    id: "navmc-11791",
-    title: "NAVMC 11791",
-    fullTitle: "Sponsorship Program Questionnaire",
-    category: "navmc",
-  },
-  "navmc-11799": {
-    id: "navmc-11799",
-    title: "NAVMC 11799",
-    fullTitle: "Sponsor Assignment Form",
-    category: "navmc",
-  },
-  "navmc-118": {
-    id: "navmc-118",
-    title: "NAVMC 118",
-    fullTitle: "Service Record Book",
-    category: "navmc",
-  },
   "navmc-1500": {
     id: "navmc-1500",
     title: "NAVMC 1500",
@@ -491,8 +467,8 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
   // Military Postal Manual
   "mpm": {
     id: "mpm",
-    title: "MPM",
-    fullTitle: "Military Postal Manual (DoD 4525.6-M)",
+    title: "MPM (Canc)",
+    fullTitle: "Military Postal Manual (DoD 4525.6-M) - Cancelled, replaced by DoDI 4525.09",
     category: "mpm",
   },
 
