@@ -91,14 +91,10 @@ function InspectionCard({
 
   const styles = colorClasses[color];
 
-  const CardWrapper = available ? Link : "div";
-  const cardProps = available ? { href } : {};
+  const cardClassName = `group relative flex flex-col rounded-xl border bg-white p-6 shadow-sm transition-all duration-200 dark:bg-black/40 ${styles.card} ${available ? "cursor-pointer hover:-translate-y-1" : "opacity-60"}`;
 
-  return (
-    <CardWrapper
-      {...cardProps}
-      className={`group relative flex flex-col rounded-xl border bg-white p-6 shadow-sm transition-all duration-200 dark:bg-black/40 ${styles.card} ${available ? "cursor-pointer hover:-translate-y-1" : "opacity-60"}`}
-    >
+  const cardContent = (
+    <>
       {/* Header with icon and badge */}
       <div className="flex items-start justify-between gap-4">
         <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-xl ${styles.icon}`}>
@@ -135,7 +131,21 @@ function InspectionCard({
           </span>
         )}
       </div>
-    </CardWrapper>
+    </>
+  );
+
+  if (available) {
+    return (
+      <Link href={href} className={cardClassName}>
+        {cardContent}
+      </Link>
+    );
+  }
+
+  return (
+    <div className={cardClassName}>
+      {cardContent}
+    </div>
   );
 }
 
