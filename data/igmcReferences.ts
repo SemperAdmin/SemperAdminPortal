@@ -489,3 +489,15 @@ export function getDocumentUrl(id: string): string | undefined {
 export function getDocumentsByCategory(category: ReferenceCategory): ReferenceDocument[] {
   return Object.values(referenceDocuments).filter((doc) => doc.category === category);
 }
+
+// Helper function to find a document URL by matching reference text
+// This allows auto-resolution without requiring documentId on every reference
+export function findDocumentUrlByText(referenceText: string): string | undefined {
+  // Try to match document titles in the reference text
+  for (const doc of Object.values(referenceDocuments)) {
+    if (doc.url && referenceText.includes(doc.title)) {
+      return doc.url;
+    }
+  }
+  return undefined;
+}

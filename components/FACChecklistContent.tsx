@@ -4,16 +4,23 @@ import { useState, useMemo } from "react";
 import type { FunctionalAreaChecklist, FACCategory } from "../data/igmcFacs";
 import type { FACChecklistData, FACSubsection, FACQuestion } from "../data/igmcFacChecklists";
 import { getTotalQuestionCount } from "../data/igmcFacChecklists";
-import { getDocumentById } from "../data/igmcReferences";
+import { getDocumentById, findDocumentUrlByText } from "../data/igmcReferences";
 import Link from "next/link";
 
-// Helper to resolve reference URL (documentId takes precedence over inline url)
+// Helper to resolve reference URL
+// Priority: 1) documentId lookup, 2) inline url, 3) auto-match from reference text
 function resolveReferenceUrl(reference: FACQuestion["reference"]): string | undefined {
+  // First try explicit documentId
   if (reference.documentId) {
     const doc = getDocumentById(reference.documentId);
-    return doc?.url;
+    if (doc?.url) return doc.url;
   }
-  return reference.url;
+  // Then try inline url
+  if (reference.url) {
+    return reference.url;
+  }
+  // Finally try auto-matching from reference text
+  return findDocumentUrlByText(reference.text);
 }
 
 type Props = {
