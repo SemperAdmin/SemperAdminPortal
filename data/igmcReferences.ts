@@ -516,6 +516,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mcbul-5810",
     title: "MCBUL 5810",
     fullTitle: "Legal Services Support Section Bulletin",
+    url: "https://www.marines.mil/Portals/1/Publications/MCBul%205810%20DTD%2022%20MAY%202024%20(SECURED).pdf?ver=9jP9WxOlAnuK3mmboToGOA%3d%3d",
     category: "mco",
   },
 
