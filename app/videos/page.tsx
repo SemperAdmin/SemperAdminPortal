@@ -57,6 +57,66 @@ const playlists: Playlist[] = [
     title: "Dependents",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6217F3779830&playlistId=2a854407-06f8-4ef6-9081-738c0725f5cb",
   },
+  {
+    title: "Directives",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6220DD223F2B&playlistId=0a9e4575-014f-4f42-9fa3-885c5cd47bb5",
+  },
+  {
+    title: "Education",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=622386A5FAAD&playlistId=0e883c0d-9998-40d0-a598-df2dbfa7ce92",
+  },
+  {
+    title: "Fitness Reports",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=626133DA3454&playlistId=78a99998-6c24-48d0-bb53-dc4bae7561f6",
+  },
+  {
+    title: "Government Travel Charge Card",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6269BDE90472&playlistId=d92edb0c-4ded-404f-b42b-2b34e504bb3f",
+  },
+  {
+    title: "Improved Awards Processing System",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6277F4811CA2&playlistId=2580701f-2e7b-4be0-ac39-02b48fbfc3ec",
+  },
+  {
+    title: "Inbound Interview",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6282498228DE&playlistId=1bf66ad1-ebcb-4c0f-ae8c-c596ece93743",
+  },
+  {
+    title: "Junior Enlisted Performance Evaluation System",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=628559B2BC56&playlistId=b792cc9f-780c-4f5b-a5f8-f72706cb52b6",
+  },
+  {
+    title: "Joint Travel Regulations",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=629454D65C54&playlistId=1d2d96a8-6009-4a4e-83fa-2397f80f7d90",
+  },
+  {
+    title: "Large Language Models",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=7032F0E2A351&playlistId=776a1463-90a7-41ba-92a6-16339c137d98",
+  },
+  {
+    title: "Leave and Liberty",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6300A5D61E66&playlistId=83e16a6c-9ef1-4672-a997-5cbb9f78d5d1",
+  },
+  {
+    title: "Manpower",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6165057F7BB8&playlistId=ddad9cd5-3b36-4f75-b792-131531c99890",
+  },
+  {
+    title: "Manpower & Reserve Affairs",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6302111B6584&playlistId=1f3f9e63-f1e6-4acb-bfd6-80bb1ef8324d",
+  },
+  {
+    title: "Marine Corps Total Force System",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6304DC378AF4&playlistId=a5c01a6b-ca55-4e80-afb3-e504340e4aa0",
+  },
+  {
+    title: "Marine Online Management",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=630944A9E9B3&playlistId=99c8a7c5-aa83-4d40-b249-adea29ca16a7",
+  },
+  {
+    title: "MarineNet",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=631242C725D9&playlistId=cb684aa7-fa6f-4f89-8987-3f6720f42fc7",
+  },
 ];
 
 function MarineNetIcon({ className }: { className?: string }) {
