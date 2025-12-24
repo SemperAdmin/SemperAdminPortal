@@ -35,6 +35,7 @@ const playlists: Playlist[] = [
   {
     title: "Awards",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6137BCBD761B&playlistId=d5d59310-d591-4c48-95d0-9ab6cbf23f82",
+    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCBNbHXtLkmZs0pEgQ-MtWwa",
   },
   {
     title: "Battle Rhythms",
@@ -73,6 +74,7 @@ const playlists: Playlist[] = [
   {
     title: "Government Travel Charge Card",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6269BDE90472&playlistId=d92edb0c-4ded-404f-b42b-2b34e504bb3f",
+    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCC2MYNnC1F4PSlMj9jkEzxA",
   },
   {
     title: "Improved Awards Processing System",
@@ -126,6 +128,7 @@ const playlists: Playlist[] = [
   {
     title: "Microsoft Excel",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6243815A35FF&playlistId=b5947adb-e853-4916-9d26-31887198bb85",
+    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCA1AuVf4UEbUu2cy9Nf2nwg",
   },
   {
     title: "MISSA/MISSO Portal",
