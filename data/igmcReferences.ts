@@ -501,18 +501,21 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "usps-dmm",
     title: "USPS DMM",
     fullTitle: "Domestic Mail Manual",
+    url: "https://pe.usps.com/cpim/ftp/manuals/dmm300/full/mailingstandards.pdf",
     category: "usps",
   },
   "usps-asm": {
     id: "usps-asm",
     title: "USPS ASM",
     fullTitle: "Administrative Support Manual",
+    url: "https://nalc.org/workplace-issues/body/Administrative-Support-Manual-ASM-Jan-2024-1.pdf",
     category: "usps",
   },
   "usps-f-101": {
     id: "usps-f-101",
     title: "USPS Handbook F-101",
     fullTitle: "Field Accounting Procedures",
+    url: "https://www.nalc.org/workplace-issues/body/f101_2022.pdf",
     category: "usps",
   },
 
