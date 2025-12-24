@@ -39,6 +39,7 @@ const playlists: Playlist[] = [
   {
     title: "Battle Rhythms",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6162D0E6C435&playlistId=5c8e07a8-c60f-4e65-b19b-37ae1e2867c9",
+    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCBbgvFzbtZRdKn27mR3BGxx",
   },
   {
     title: "Casualty Affairs",
@@ -88,6 +89,7 @@ const playlists: Playlist[] = [
   {
     title: "Joint Travel Regulations",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=629454D65C54&playlistId=1d2d96a8-6009-4a4e-83fa-2397f80f7d90",
+    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCCPqVooxaW7DizzA1N1flnS",
   },
   {
     title: "Large Language Models",
@@ -111,6 +113,7 @@ const playlists: Playlist[] = [
   {
     title: "Marine Corps Total Force System",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6304DC378AF4&playlistId=a5c01a6b-ca55-4e80-afb3-e504340e4aa0",
+    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCAztetKnyVAzvtWjzto7dMR",
   },
   {
     title: "Marine Online Management",
