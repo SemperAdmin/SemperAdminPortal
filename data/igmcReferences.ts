@@ -424,24 +424,27 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "navmc-10030",
     title: "NAVMC 10030",
     fullTitle: "Records Management Self-Assessment Checklist",
+    url: "https://www.ar.marines.mil/Portals/137/NAVMC%2010030_1.pdf",
     category: "navmc",
   },
   "navmc-10132": {
     id: "navmc-10132",
     title: "NAVMC 10132",
     fullTitle: "Unit Punishment Book",
+    url: "https://www.sja.marines.mil/Portals/135/3%20JMJ/NAVMC%2010132%20Unit%20Punishment%20Book%20(5812)%20(2025%2003).pdf?ver=NTiaGRM-njjPWsGwsSRRoQ%3D%3D",
     category: "navmc",
   },
   "navmc-10274": {
     id: "navmc-10274",
     title: "NAVMC 10274",
     fullTitle: "Administrative Action Form",
+    url: "https://www.hqmc.marines.mil/Portals/138/Docs/AA%20Form%20SLDP.pdf",
     category: "navmc",
   },
   "navmc-11030": {
     id: "navmc-11030",
     title: "NAVMC 11030",
-    fullTitle: "Records Management Paper Waiver Request",
+    fullTitle: "Records Management Forms Series (Paper Waiver Request, Disposition Extensions)",
     category: "navmc",
   },
   "navmc-11791": {
