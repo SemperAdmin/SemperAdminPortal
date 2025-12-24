@@ -12,11 +12,13 @@ const playlists: Playlist[] = [
   {
     title: "Promotions",
     youtubeUrl: "https://www.youtube.com/watch?v=qzwBpl1XGn0&list=PLNGr21c4scCCeraDG0BZnPwtaGJhOV0MR",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6333641429BE&playlistId=c66703d2-d293-4fed-a224-dd55899f0cfe",
     videoId: "qzwBpl1XGn0",
   },
   {
     title: "Separations and Retirement",
     youtubeUrl: "https://www.youtube.com/watch?v=l1emYAOT8HY&list=PLNGr21c4scCBv7IB8qoW5MnmMZNdE-QVu",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=63375351C274&playlistId=16e098a2-e0bb-4a40-a177-2c7db5b2faa5",
     videoId: "l1emYAOT8HY",
   },
   {
@@ -140,10 +142,6 @@ const playlists: Playlist[] = [
     youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCD9KpSIxJfMzB-BxR7V4Y_s",
   },
   {
-    title: "Promotions",
-    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6333641429BE&playlistId=c66703d2-d293-4fed-a224-dd55899f0cfe",
-  },
-  {
     title: "Tech Tips",
     marineNetUrl: "https://www.marinenet.usmc.mil/MVS/watchVideo.aspx?Id=7097569D2864&playlistId=4fa66f1a-cfc5-44ae-8649-99d313c69b3f",
     youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCAGYPcHbzyrpEyVOtCXsh1I",
@@ -152,10 +150,6 @@ const playlists: Playlist[] = [
     title: "Semper Admin",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=633587A459EB&playlistId=f80a5b99-0bab-4e14-804a-3fdae31ce528",
     youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCDJgq1xvtr24sn9PJpLG1nr",
-  },
-  {
-    title: "Separations and Retirement",
-    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=63375351C274&playlistId=16e098a2-e0bb-4a40-a177-2c7db5b2faa5",
   },
   {
     title: "SharePoint",
