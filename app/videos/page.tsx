@@ -57,6 +57,7 @@ const playlists: Playlist[] = [
   {
     title: "Creating Correspondence",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6206E6703BE9&playlistId=d127f62a-9600-40c1-a6e9-3fd6eb53ccff",
+    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCCPfMKYpBl_UuytCNlO13mH",
   },
   {
     title: "Dependents",
@@ -70,6 +71,7 @@ const playlists: Playlist[] = [
   {
     title: "Education",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=622386A5FAAD&playlistId=0e883c0d-9998-40d0-a598-df2dbfa7ce92",
+    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCDRw63sOXPUUN3uGfExaAjF",
   },
   {
     title: "Government Travel Charge Card",
