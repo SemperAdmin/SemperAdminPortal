@@ -4,7 +4,8 @@ import type { FACSlug } from "./igmcFacs";
 // Types for FAC Checklist structure
 export interface FACResource {
   title: string;
-  url: string;
+  url?: string;
+  documentId?: string; // References igmcReferences.ts registry - URL resolved at render time
 }
 
 export interface FACVideoResource extends FACResource {

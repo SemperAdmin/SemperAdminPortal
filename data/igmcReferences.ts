@@ -542,7 +542,7 @@ function normalizeForMatch(text: string): string {
   return text
     .replace(/Ch\.\s*/gi, "Ch ")  // "Ch. 5" → "Ch 5"
     .replace(/Vol\.\s*/gi, "Vol ") // "Vol. 5" → "Vol 5"
-    .replace(/,\s+/g, " ")         // Remove commas
+    .replace(/,/g, " ")            // Remove commas
     .replace(/\s+/g, " ");         // Normalize whitespace
 }
 
@@ -552,7 +552,8 @@ export function findDocumentUrlByText(referenceText: string): string | undefined
   const normalizedRef = normalizeForMatch(referenceText);
 
   // Try to match document titles in the reference text
-  for (const doc of Object.values(referenceDocuments)) {
+  // Sort by title length descending to match most specific first (e.g., "MCO 100.1" before "MCO 100")
+  for (const doc of Object.values(referenceDocuments).sort((a, b) => b.title.length - a.title.length)) {
     if (doc.url) {
       const normalizedTitle = normalizeForMatch(doc.title);
       if (normalizedRef.includes(normalizedTitle)) {

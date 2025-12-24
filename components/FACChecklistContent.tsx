@@ -2,10 +2,19 @@
 
 import { useState, useMemo } from "react";
 import type { FunctionalAreaChecklist, FACCategory } from "../data/igmcFacs";
-import type { FACChecklistData, FACSubsection, FACQuestion } from "../data/igmcFacChecklists";
+import type { FACChecklistData, FACSubsection, FACQuestion, FACResource } from "../data/igmcFacChecklists";
 import { getTotalQuestionCount } from "../data/igmcFacChecklists";
 import { getDocumentById, findDocumentUrlByText } from "../data/igmcReferences";
 import Link from "next/link";
+
+// Helper to resolve resource URL from documentId or inline url
+function resolveResourceUrl(resource: FACResource): string | undefined {
+  if (resource.documentId) {
+    const doc = getDocumentById(resource.documentId);
+    if (doc?.url) return doc.url;
+  }
+  return resource.url;
+}
 
 // Helper to resolve reference URL
 // Priority: 1) documentId lookup, 2) inline url, 3) auto-match from reference text
@@ -317,86 +326,101 @@ export default function FACChecklistContent({ fac, checklist }: Props) {
           </div>
           <div className="mt-3 flex flex-wrap gap-2">
             {/* Directives */}
-            {checklist.resources.directives?.map((resource) => (
-              <a
-                key={resource.url}
-                href={resource.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-lg bg-[var(--sa-navy)]/10 px-3 py-1.5 text-sm font-medium text-[var(--sa-navy)] transition hover:bg-[var(--sa-navy)]/20 dark:bg-[var(--sa-gold)]/20 dark:text-[var(--sa-gold)] dark:hover:bg-[var(--sa-gold)]/30"
-              >
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                  <polyline points="14 2 14 8 20 8" />
-                </svg>
-                {resource.title}
-              </a>
-            ))}
+            {checklist.resources.directives?.map((resource) => {
+              const url = resolveResourceUrl(resource);
+              return url ? (
+                <a
+                  key={resource.documentId || resource.url || resource.title}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-[var(--sa-navy)]/10 px-3 py-1.5 text-sm font-medium text-[var(--sa-navy)] transition hover:bg-[var(--sa-navy)]/20 dark:bg-[var(--sa-gold)]/20 dark:text-[var(--sa-gold)] dark:hover:bg-[var(--sa-gold)]/30"
+                >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                  </svg>
+                  {resource.title}
+                </a>
+              ) : null;
+            })}
             {/* SharePoints */}
-            {checklist.resources.sharepoints?.map((resource) => (
-              <a
-                key={resource.url}
-                href={resource.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-lg bg-blue-500/10 px-3 py-1.5 text-sm font-medium text-blue-600 transition hover:bg-blue-500/20 dark:text-blue-400"
-              >
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
-                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
-                </svg>
-                {resource.title}
-              </a>
-            ))}
+            {checklist.resources.sharepoints?.map((resource) => {
+              const url = resolveResourceUrl(resource);
+              return url ? (
+                <a
+                  key={resource.documentId || resource.url || resource.title}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-blue-500/10 px-3 py-1.5 text-sm font-medium text-blue-600 transition hover:bg-blue-500/20 dark:text-blue-400"
+                >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                  </svg>
+                  {resource.title}
+                </a>
+              ) : null;
+            })}
             {/* Teams */}
-            {checklist.resources.teams?.map((resource) => (
-              <a
-                key={resource.url}
-                href={resource.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-lg bg-purple-500/10 px-3 py-1.5 text-sm font-medium text-purple-600 transition hover:bg-purple-500/20 dark:text-purple-400"
-              >
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg>
-                {resource.title}
-              </a>
-            ))}
+            {checklist.resources.teams?.map((resource) => {
+              const url = resolveResourceUrl(resource);
+              return url ? (
+                <a
+                  key={resource.documentId || resource.url || resource.title}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-purple-500/10 px-3 py-1.5 text-sm font-medium text-purple-600 transition hover:bg-purple-500/20 dark:text-purple-400"
+                >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                  {resource.title}
+                </a>
+              ) : null;
+            })}
             {/* Videos */}
-            {checklist.resources.videos?.map((resource) => (
-              <a
-                key={resource.url}
-                href={resource.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-lg bg-red-500/10 px-3 py-1.5 text-sm font-medium text-red-600 transition hover:bg-red-500/20 dark:text-red-400"
-              >
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
-                  <polygon points="5 3 19 12 5 21 5 3" />
-                </svg>
-                {resource.title}
-              </a>
-            ))}
+            {checklist.resources.videos?.map((resource) => {
+              const url = resolveResourceUrl(resource);
+              return url ? (
+                <a
+                  key={resource.documentId || resource.url || resource.title}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-red-500/10 px-3 py-1.5 text-sm font-medium text-red-600 transition hover:bg-red-500/20 dark:text-red-400"
+                >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
+                    <polygon points="5 3 19 12 5 21 5 3" />
+                  </svg>
+                  {resource.title}
+                </a>
+              ) : null;
+            })}
             {/* Other */}
-            {checklist.resources.other?.map((resource) => (
-              <a
-                key={resource.url}
-                href={resource.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-lg bg-zinc-500/10 px-3 py-1.5 text-sm font-medium text-zinc-600 transition hover:bg-zinc-500/20 dark:text-zinc-400"
-              >
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
-                  <circle cx="12" cy="12" r="10" />
-                  <line x1="2" y1="12" x2="22" y2="12" />
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                </svg>
-                {resource.title}
-              </a>
-            ))}
+            {checklist.resources.other?.map((resource) => {
+              const url = resolveResourceUrl(resource);
+              return url ? (
+                <a
+                  key={resource.documentId || resource.url || resource.title}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-zinc-500/10 px-3 py-1.5 text-sm font-medium text-zinc-600 transition hover:bg-zinc-500/20 dark:text-zinc-400"
+                >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                  </svg>
+                  {resource.title}
+                </a>
+              ) : null;
+            })}
           </div>
         </div>
       )}
