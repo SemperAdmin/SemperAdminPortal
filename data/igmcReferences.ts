@@ -373,41 +373,49 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
   "maradmin-099-18": {
     id: "maradmin-099-18",
     title: "MARADMIN 099/18",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/1438860/improved-awards-processing-system-iaps-updates/",
     category: "maradmin",
   },
   "maradmin-115-19": {
     id: "maradmin-115-19",
     title: "MARADMIN 115/19",
+    url: "https://www.marines.mil/News/Messages/MARADMINS/Article/1766105/use-of-visa-intellilink-data-analytics-and-misuse-case-management-system-for-mo/",
     category: "maradmin",
   },
   "maradmin-129-23": {
     id: "maradmin-129-23",
     title: "MARADMIN 129/23",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/3322160/clarification-to-maradmin-05123/",
     category: "maradmin",
   },
   "maradmin-200-25": {
     id: "maradmin-200-25",
     title: "MARADMIN 200/25",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4160984/command-chronology-submission-requirements/",
     category: "maradmin",
   },
   "maradmin-220-23": {
     id: "maradmin-220-23",
     title: "MARADMIN 220/23",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/3373144/advance-notification-of-the-establishment-of-bereavement-leave/",
     category: "maradmin",
   },
   "maradmin-427-23": {
     id: "maradmin-427-23",
     title: "MARADMIN 427/23",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/3507627/unit-punishment-book-policy-update/",
     category: "maradmin",
   },
   "maradmin-500-10": {
     id: "maradmin-500-10",
     title: "MARADMIN 500/10",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/888660/invitational-travel-orders-to-unit-memorial-services/",
     category: "maradmin",
   },
   "maradmin-632-19": {
     id: "maradmin-632-19",
     title: "MARADMIN 632/19",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/2015875/transition-readiness/",
     category: "maradmin",
   },
 
