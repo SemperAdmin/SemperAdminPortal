@@ -4,7 +4,17 @@ import { useState, useMemo } from "react";
 import type { FunctionalAreaChecklist, FACCategory } from "../data/igmcFacs";
 import type { FACChecklistData, FACSubsection, FACQuestion } from "../data/igmcFacChecklists";
 import { getTotalQuestionCount } from "../data/igmcFacChecklists";
+import { getDocumentById } from "../data/igmcReferences";
 import Link from "next/link";
+
+// Helper to resolve reference URL (documentId takes precedence over inline url)
+function resolveReferenceUrl(reference: FACQuestion["reference"]): string | undefined {
+  if (reference.documentId) {
+    const doc = getDocumentById(reference.documentId);
+    return doc?.url;
+  }
+  return reference.url;
+}
 
 type Props = {
   fac: FunctionalAreaChecklist;
@@ -68,18 +78,21 @@ function QuestionCard({ question }: { question: FACQuestion }) {
             </svg>
             <div>
               <span className="font-semibold text-zinc-500 dark:text-zinc-400">Reference: </span>
-              {question.reference.url ? (
-                <a
-                  href={question.reference.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[var(--sa-navy)] underline decoration-[var(--sa-navy)]/30 transition hover:decoration-[var(--sa-navy)] dark:text-[var(--sa-gold)] dark:decoration-[var(--sa-gold)]/30 dark:hover:decoration-[var(--sa-gold)]"
-                >
-                  {question.reference.text}
-                </a>
-              ) : (
-                <span className="text-zinc-600 dark:text-zinc-400">{question.reference.text}</span>
-              )}
+              {(() => {
+                const url = resolveReferenceUrl(question.reference);
+                return url ? (
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--sa-navy)] underline decoration-[var(--sa-navy)]/30 transition hover:decoration-[var(--sa-navy)] dark:text-[var(--sa-gold)] dark:decoration-[var(--sa-gold)]/30 dark:hover:decoration-[var(--sa-gold)]"
+                  >
+                    {question.reference.text}
+                  </a>
+                ) : (
+                  <span className="text-zinc-600 dark:text-zinc-400">{question.reference.text}</span>
+                );
+              })()}
             </div>
           </div>
 
