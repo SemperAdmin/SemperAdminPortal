@@ -177,6 +177,20 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     fullTitle: "Legal Administration Manual",
     category: "mco",
   },
+  "mco-5800-16-v14": {
+    id: "mco-5800-16-v14",
+    title: "MCO 5800.16, V-14",
+    fullTitle: "Legal Administration Manual - Volume 14 (Administrative Investigations)",
+    url: "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol14.pdf?ver=GiRsIU5b8B1FOhzJlbyB2Q%3d%3d",
+    category: "mco",
+  },
+  "mco-5800-16-v16": {
+    id: "mco-5800-16-v16",
+    title: "MCO 5800.16-V16",
+    fullTitle: "Legal Administration Manual - Volume 16 (Non-Judicial Punishment)",
+    url: "https://www.marines.mil/Portals/1/Publications/MCO%205800.16%20Vol%2016.pdf?ver=Kw6Bv7bjXXFICy5ujnlk1Q%3d%3d",
+    category: "mco",
+  },
   "mco-6110-3a": {
     id: "mco-6110-3a",
     title: "MCO 6110.3A",
