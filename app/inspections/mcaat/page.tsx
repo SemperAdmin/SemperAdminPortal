@@ -212,6 +212,15 @@ export default function MCAATPage() {
   return (
     <div className="space-y-8">
       <div>
+        <Link
+          href="/inspections"
+          className="mb-2 inline-flex items-center gap-1 text-sm text-zinc-600 transition hover:text-[var(--sa-navy)] dark:text-zinc-400 dark:hover:text-[var(--sa-cream)]"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+          Back to Inspections
+        </Link>
         <h1 className="text-3xl font-bold tracking-tight text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
           Marine Corps Administrative Analysis Team (MCAAT)
         </h1>
