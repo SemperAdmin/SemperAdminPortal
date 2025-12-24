@@ -92,6 +92,7 @@ const playlists: Playlist[] = [
   {
     title: "Large Language Models",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=7032F0E2A351&playlistId=776a1463-90a7-41ba-92a6-16339c137d98",
+    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCDWkO08_ou4a2PNx9eauLlo",
   },
   {
     title: "Leave and Liberty",
@@ -136,6 +137,7 @@ const playlists: Playlist[] = [
   {
     title: "Pay and Entitlements",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=63831964B681&playlistId=fb0f6044-751b-494b-9564-546c941b280e",
+    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCD9KpSIxJfMzB-BxR7V4Y_s",
   },
   {
     title: "Promotions",
@@ -144,10 +146,12 @@ const playlists: Playlist[] = [
   {
     title: "Tech Tips",
     marineNetUrl: "https://www.marinenet.usmc.mil/MVS/watchVideo.aspx?Id=7097569D2864&playlistId=4fa66f1a-cfc5-44ae-8649-99d313c69b3f",
+    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCAGYPcHbzyrpEyVOtCXsh1I",
   },
   {
     title: "Semper Admin",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=633587A459EB&playlistId=f80a5b99-0bab-4e14-804a-3fdae31ce528",
+    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCDJgq1xvtr24sn9PJpLG1nr",
   },
   {
     title: "Separations and Retirement",
