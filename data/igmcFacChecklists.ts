@@ -66,11 +66,11 @@ export const pesChecklist: FACChecklistData = {
     directives: [
       {
         title: "MCO 1610.7B (Performance Evaluation System)",
-        documentId: "mco-1610-7b",
+        url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899222/mco-16107b/",
       },
       {
         title: "MCO 1616.1 Ch 1 (JEPES)",
-        documentId: "mco-1616-1",
+        url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899290/mco-16161/",
       },
     ],
     sharepoints: [
