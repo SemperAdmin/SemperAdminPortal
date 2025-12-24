@@ -48,6 +48,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-1320-11h",
     title: "MCO 1320.11H",
     fullTitle: "Marine Corps Sponsorship Program",
+    url: "https://www.marines.mil/Portals/1/Publications/MCO%201320.11H%20Admin%20CH-1%20(SECURED).pdf?ver=6NAyRQJB7f_LtrPgBtHPuQ%3d%3d",
     category: "mco",
   },
   "mco-1500-60a": {
@@ -166,6 +167,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-5215-1k",
     title: "MCO 5215.1K",
     fullTitle: "Directives Management",
+    url: "https://www.marines.mil/Portals/1/Publications/MCO%205215.1K%20W%20ADMIN%20CH-3%20(SECURED).pdf?ver=JZUsBjYy6hoHP-ruH12osw%3d%3d",
     category: "mco",
   },
   "mco-5750-1h": {
@@ -266,6 +268,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "dod-dts-regs",
     title: "DoD DTS Regulations",
     fullTitle: "Defense Travel System Regulations",
+    url: "https://www.travel.dod.mil/Portals/119/Documents/DTS/DTS_Regulations.pdf",
     category: "dodr",
   },
   "dod-5200-2r": {
