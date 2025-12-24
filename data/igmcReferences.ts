@@ -147,6 +147,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-5110-4b",
     title: "MCO 5110.4B",
     fullTitle: "Postal Affairs and Official Mail Management",
+    url: "https://www.marines.mil/Portals/1/Publications/MCO%205110.4B%20(SECURED).pdf?ver=F8tTfDWHjWCTVMb8q0Dsew%3d%3d",
     category: "mco",
   },
   "mco-5210-11f": {
@@ -174,12 +175,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-5750-1h",
     title: "MCO 5750.1H",
     fullTitle: "Historical Program",
-    category: "mco",
-  },
-  "mco-5800-16": {
-    id: "mco-5800-16",
-    title: "MCO 5800.16",
-    fullTitle: "Legal Administration Manual",
+    url: "https://www.marines.mil/portals/1/Publications/MCO%205750.1H.pdf?ver=2012-10-11-163836-987",
     category: "mco",
   },
   "mco-5800-16-v14": {
