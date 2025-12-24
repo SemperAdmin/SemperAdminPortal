@@ -284,8 +284,8 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
   // SECNAV Instructions and Manuals
   "secnavinst-1050-1a": {
     id: "secnavinst-1050-1a",
-    title: "SECNAVINST 1050.1A",
-    fullTitle: "Leave, Liberty, and Administrative Absence",
+    title: "SECNAVINST 1050.1A (Canc)",
+    fullTitle: "Leave, Liberty, and Administrative Absence (Cancelled)",
     category: "secnav",
   },
   "secnavinst-1650-1j": {
@@ -303,8 +303,8 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
   },
   "secnavinst-5210-16": {
     id: "secnavinst-5210-16",
-    title: "SECNAVINST 5210.16",
-    fullTitle: "Essential Records Program",
+    title: "SECNAVINST 5210.16 (Canc)",
+    fullTitle: "Essential Records Program (Cancelled)",
     category: "secnav",
   },
   "secnav-m-1650-1": {
