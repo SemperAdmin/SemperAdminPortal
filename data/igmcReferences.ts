@@ -104,12 +104,14 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-1742-1c",
     title: "MCO 1742.1C",
     fullTitle: "Voting Assistance Program",
+    url: "https://www.marines.mil/Portals/1/Publications/MCO%201742.1C.pdf?ver=-5MApH5dZdP2C5Aie9D_OA%3d%3d",
     category: "mco",
   },
   "mco-1900-16": {
     id: "mco-1900-16",
     title: "MCO 1900.16",
     fullTitle: "Separation and Retirement Manual",
+    url: "https://www.marines.mil/Portals/1/Publications/MCO%201900.16%20ADMIN%20CH-3%20(SECURED).pdf?ver=SZptuAh1jjvolL-Gf5s5CQ%3d%3d",
     category: "mco",
   },
   "mco-3040-4": {
