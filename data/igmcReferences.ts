@@ -36,6 +36,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-1050-3j",
     title: "MCO 1050.3J",
     fullTitle: "Regulations for Leave, Liberty, and Administrative Absence",
+    url: "https://www.marines.mil/portals/1/publications/mco%201050.3j.pdf",
     category: "mco",
   },
   "mco-1050-16a": {
@@ -88,6 +89,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-1700-31",
     title: "MCO 1700.31",
     fullTitle: "Transition Readiness Program",
+    url: "https://www.marines.mil/portals/1/MCO%201700.31.pdf",
     category: "mco",
   },
   "mco-1741-8": {
@@ -100,6 +102,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-1741-11d",
     title: "MCO 1741.11D",
     fullTitle: "Casualty Assistance Program",
+    url: "https://www.marines.mil/portals/1/Publications/MCO%201741.11D.pdf",
     category: "mco",
   },
   "mco-1742-1c": {
@@ -289,6 +292,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "secnavinst-1650-1j",
     title: "SECNAVINST 1650.1J",
     fullTitle: "Navy and Marine Corps Awards Manual",
+    url: "https://www.mcieast.marines.mil/Portals/33/SECNAVINST%201650_1J_1.pdf",
     category: "secnav",
   },
   "secnavinst-5210-8f": {
@@ -320,12 +324,14 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "secnav-m-5210-2",
     title: "SECNAV M-5210.2",
     fullTitle: "Department of the Navy Standard Subject Identification Codes",
+    url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/5210.2.pdf",
     category: "secnav",
   },
   "secnav-m-5216-5": {
     id: "secnav-m-5216-5",
     title: "SECNAV M-5216.5",
     fullTitle: "Department of the Navy Correspondence Manual",
+    url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/5216.5%20%20CH-1.pdf",
     category: "secnav",
   },
 
