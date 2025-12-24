@@ -474,12 +474,14 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "usc-10",
     title: "10 USC",
     fullTitle: "Title 10, United States Code - Armed Forces",
+    url: "https://uscode.house.gov/view.xhtml?path=/prelim@title10/subtitleA&edition=prelim",
     category: "usc",
   },
   "usc-41": {
     id: "usc-41",
     title: "41 USC",
     fullTitle: "Title 41, United States Code - Public Contracts",
+    url: "https://uscode.house.gov/view.xhtml?path=/prelim@title41&edition=prelim",
     category: "usc",
   },
 
