@@ -8,26 +8,6 @@ interface Playlist {
 }
 
 const playlists: Playlist[] = [
-  // YouTube Playlists
-  {
-    title: "Promotions",
-    youtubeUrl: "https://www.youtube.com/watch?v=qzwBpl1XGn0&list=PLNGr21c4scCCeraDG0BZnPwtaGJhOV0MR",
-    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6333641429BE&playlistId=c66703d2-d293-4fed-a224-dd55899f0cfe",
-    videoId: "qzwBpl1XGn0",
-  },
-  {
-    title: "Separations and Retirement",
-    youtubeUrl: "https://www.youtube.com/watch?v=l1emYAOT8HY&list=PLNGr21c4scCBv7IB8qoW5MnmMZNdE-QVu",
-    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=63375351C274&playlistId=16e098a2-e0bb-4a40-a177-2c7db5b2faa5",
-    videoId: "l1emYAOT8HY",
-  },
-  {
-    title: "Fitness Reports",
-    youtubeUrl: "https://www.youtube.com/watch?v=xEqkOUpJvyw&list=PLNGr21c4scCC7BK16TlmvqxnDZht-Ow0x",
-    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=626133DA3454&playlistId=78a99998-6c24-48d0-bb53-dc4bae7561f6",
-    videoId: "xEqkOUpJvyw",
-  },
-  // MarineNet Playlists
   {
     title: "AutoSAAR",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6131486F2E9A&playlistId=ad0ee003-7bea-4daa-bacb-3bb560869bfa",
@@ -74,6 +54,12 @@ const playlists: Playlist[] = [
     youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCDRw63sOXPUUN3uGfExaAjF",
   },
   {
+    title: "Fitness Reports",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=626133DA3454&playlistId=78a99998-6c24-48d0-bb53-dc4bae7561f6",
+    youtubeUrl: "https://www.youtube.com/watch?v=xEqkOUpJvyw&list=PLNGr21c4scCC7BK16TlmvqxnDZht-Ow0x",
+    videoId: "xEqkOUpJvyw",
+  },
+  {
     title: "Government Travel Charge Card",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6269BDE90472&playlistId=d92edb0c-4ded-404f-b42b-2b34e504bb3f",
     youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCC2MYNnC1F4PSlMj9jkEzxA",
@@ -87,13 +73,13 @@ const playlists: Playlist[] = [
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6282498228DE&playlistId=1bf66ad1-ebcb-4c0f-ae8c-c596ece93743",
   },
   {
-    title: "Junior Enlisted Performance Evaluation System",
-    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=628559B2BC56&playlistId=b792cc9f-780c-4f5b-a5f8-f72706cb52b6",
-  },
-  {
     title: "Joint Travel Regulations",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=629454D65C54&playlistId=1d2d96a8-6009-4a4e-83fa-2397f80f7d90",
     youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCCPqVooxaW7DizzA1N1flnS",
+  },
+  {
+    title: "Junior Enlisted Performance Evaluation System",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=628559B2BC56&playlistId=b792cc9f-780c-4f5b-a5f8-f72706cb52b6",
   },
   {
     title: "Large Language Models",
@@ -150,9 +136,10 @@ const playlists: Playlist[] = [
     youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCD9KpSIxJfMzB-BxR7V4Y_s",
   },
   {
-    title: "Tech Tips",
-    marineNetUrl: "https://www.marinenet.usmc.mil/MVS/watchVideo.aspx?Id=7097569D2864&playlistId=4fa66f1a-cfc5-44ae-8649-99d313c69b3f",
-    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCAGYPcHbzyrpEyVOtCXsh1I",
+    title: "Promotions",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6333641429BE&playlistId=c66703d2-d293-4fed-a224-dd55899f0cfe",
+    youtubeUrl: "https://www.youtube.com/watch?v=qzwBpl1XGn0&list=PLNGr21c4scCCeraDG0BZnPwtaGJhOV0MR",
+    videoId: "qzwBpl1XGn0",
   },
   {
     title: "Semper Admin",
@@ -160,8 +147,19 @@ const playlists: Playlist[] = [
     youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCDJgq1xvtr24sn9PJpLG1nr",
   },
   {
+    title: "Separations and Retirement",
+    marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=63375351C274&playlistId=16e098a2-e0bb-4a40-a177-2c7db5b2faa5",
+    youtubeUrl: "https://www.youtube.com/watch?v=l1emYAOT8HY&list=PLNGr21c4scCBv7IB8qoW5MnmMZNdE-QVu",
+    videoId: "l1emYAOT8HY",
+  },
+  {
     title: "SharePoint",
     marineNetUrl: "https://www.marinenet.usmc.mil/MVS/watchVideo.aspx?Id=640817BEDE96&playlistId=3de59f4f-7118-4527-b3f9-d6771ee02690",
+  },
+  {
+    title: "Tech Tips",
+    marineNetUrl: "https://www.marinenet.usmc.mil/MVS/watchVideo.aspx?Id=7097569D2864&playlistId=4fa66f1a-cfc5-44ae-8649-99d313c69b3f",
+    youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCAGYPcHbzyrpEyVOtCXsh1I",
   },
   {
     title: "Travel Claim",
@@ -216,8 +214,9 @@ function CACIcon({ className }: { className?: string }) {
 }
 
 function PlaylistCard({ playlist }: { playlist: Playlist }) {
-  const hasYouTube = !!playlist.youtubeUrl && !!playlist.videoId;
+  const hasYouTube = !!playlist.youtubeUrl;
   const hasMarineNet = !!playlist.marineNetUrl;
+  const hasThumbnail = !!playlist.youtubeUrl && !!playlist.videoId;
   const primaryUrl = playlist.youtubeUrl || playlist.marineNetUrl;
 
   return (
@@ -231,7 +230,7 @@ function PlaylistCard({ playlist }: { playlist: Playlist }) {
           className="block overflow-hidden rounded transition hover:opacity-90"
         >
           <span className="sr-only">Open {playlist.title} playlist (opens in new tab)</span>
-          {hasYouTube ? (
+          {hasThumbnail ? (
             <div className="relative h-40 w-full overflow-hidden rounded">
               <Image
                 src={`https://i.ytimg.com/vi/${playlist.videoId}/hqdefault.jpg`}
@@ -299,10 +298,16 @@ function PlaylistCard({ playlist }: { playlist: Playlist }) {
   );
 }
 
-export default function VideosPage() {
-  const youtubePlaylists = playlists.filter((p) => p.youtubeUrl);
-  const marineNetOnlyPlaylists = playlists.filter((p) => p.marineNetUrl && !p.youtubeUrl);
+function VideoIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={className}>
+      <polygon points="23 7 16 12 23 17 23 7" />
+      <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+    </svg>
+  );
+}
 
+export default function VideosPage() {
   return (
     <div className="space-y-8">
       <div>
@@ -314,43 +319,23 @@ export default function VideosPage() {
         </p>
       </div>
 
-      {/* YouTube Playlists */}
-      {youtubePlaylists.length > 0 && (
-        <section>
-          <div className="mb-4 flex items-center gap-2">
-            <YouTubeIcon className="h-5 w-5 text-[var(--sa-red)]" />
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-              YouTube Playlists
-            </h2>
-          </div>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {youtubePlaylists.map((p) => (
-              <PlaylistCard key={p.title} playlist={p} />
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* MarineNet Playlists */}
-      {marineNetOnlyPlaylists.length > 0 && (
-        <section>
-          <div className="mb-4 flex items-center gap-2">
-            <MarineNetIcon className="h-5 w-5 text-[var(--sa-gold)]" />
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-              MarineNet Playlists
-            </h2>
-            <span className="flex items-center gap-1 rounded-full bg-[var(--sa-gold)]/20 px-2 py-0.5 text-xs font-medium text-[var(--sa-gold)]">
-              <CACIcon className="h-3 w-3" />
-              CAC Required
-            </span>
-          </div>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {marineNetOnlyPlaylists.map((p) => (
-              <PlaylistCard key={p.title} playlist={p} />
-            ))}
-          </div>
-        </section>
-      )}
+      {/* Video Playlists */}
+      <section>
+        <div className="mb-4 flex items-center gap-2">
+          <VideoIcon className="h-5 w-5 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+            Video Playlists
+          </h2>
+          <span className="rounded-full bg-zinc-200 px-2 py-0.5 text-xs font-medium text-zinc-600 dark:bg-zinc-700 dark:text-zinc-300">
+            {playlists.length}
+          </span>
+        </div>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {playlists.map((p) => (
+            <PlaylistCard key={p.title} playlist={p} />
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
