@@ -355,56 +355,67 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
   "maradmin-042-08": {
     id: "maradmin-042-08",
     title: "MARADMIN 042/08",
+    url: "https://www.marines.mil/News/Messages/MARADMINS/Article/893622/implementation-of-the-improved-awards-processing-system-iaps/",
     category: "maradmin",
   },
   "maradmin-051-23": {
     id: "maradmin-051-23",
     title: "MARADMIN 051/23",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/3281525/expansion-of-the-marine-corps-military-parental-leave-program/",
     category: "maradmin",
   },
   "maradmin-076-22": {
     id: "maradmin-076-22",
     title: "MARADMIN 076/22",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/2947041/updated-requirements-regarding-implementation-of-servicemembers-group-life-insu/",
     category: "maradmin",
   },
   "maradmin-099-18": {
     id: "maradmin-099-18",
     title: "MARADMIN 099/18",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/1438860/improved-awards-processing-system-iaps-updates/",
     category: "maradmin",
   },
   "maradmin-115-19": {
     id: "maradmin-115-19",
     title: "MARADMIN 115/19",
+    url: "https://www.marines.mil/News/Messages/MARADMINS/Article/1766105/use-of-visa-intellilink-data-analytics-and-misuse-case-management-system-for-mo/",
     category: "maradmin",
   },
   "maradmin-129-23": {
     id: "maradmin-129-23",
     title: "MARADMIN 129/23",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/3322160/clarification-to-maradmin-05123/",
     category: "maradmin",
   },
   "maradmin-200-25": {
     id: "maradmin-200-25",
     title: "MARADMIN 200/25",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4160984/command-chronology-submission-requirements/",
     category: "maradmin",
   },
   "maradmin-220-23": {
     id: "maradmin-220-23",
     title: "MARADMIN 220/23",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/3373144/advance-notification-of-the-establishment-of-bereavement-leave/",
     category: "maradmin",
   },
   "maradmin-427-23": {
     id: "maradmin-427-23",
     title: "MARADMIN 427/23",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/3507627/unit-punishment-book-policy-update/",
     category: "maradmin",
   },
   "maradmin-500-10": {
     id: "maradmin-500-10",
     title: "MARADMIN 500/10",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/888660/invitational-travel-orders-to-unit-memorial-services/",
     category: "maradmin",
   },
   "maradmin-632-19": {
     id: "maradmin-632-19",
     title: "MARADMIN 632/19",
+    url: "https://www.marines.mil/News/Messages/Messages-Display/Article/2015875/transition-readiness/",
     category: "maradmin",
   },
 
@@ -413,48 +424,28 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "navmc-10030",
     title: "NAVMC 10030",
     fullTitle: "Records Management Self-Assessment Checklist",
+    url: "https://www.ar.marines.mil/Portals/137/NAVMC%2010030_1.pdf",
     category: "navmc",
   },
   "navmc-10132": {
     id: "navmc-10132",
     title: "NAVMC 10132",
     fullTitle: "Unit Punishment Book",
+    url: "https://www.sja.marines.mil/Portals/135/3%20JMJ/NAVMC%2010132%20Unit%20Punishment%20Book%20(5812)%20(2025%2003).pdf?ver=NTiaGRM-njjPWsGwsSRRoQ%3D%3D",
     category: "navmc",
   },
   "navmc-10274": {
     id: "navmc-10274",
     title: "NAVMC 10274",
     fullTitle: "Administrative Action Form",
-    category: "navmc",
-  },
-  "navmc-11030": {
-    id: "navmc-11030",
-    title: "NAVMC 11030",
-    fullTitle: "Records Management Paper Waiver Request",
-    category: "navmc",
-  },
-  "navmc-11791": {
-    id: "navmc-11791",
-    title: "NAVMC 11791",
-    fullTitle: "Sponsorship Program Questionnaire",
-    category: "navmc",
-  },
-  "navmc-11799": {
-    id: "navmc-11799",
-    title: "NAVMC 11799",
-    fullTitle: "Sponsor Assignment Form",
-    category: "navmc",
-  },
-  "navmc-118": {
-    id: "navmc-118",
-    title: "NAVMC 118",
-    fullTitle: "Service Record Book",
+    url: "https://www.hqmc.marines.mil/Portals/138/Docs/AA%20Form%20SLDP.pdf",
     category: "navmc",
   },
   "navmc-1500": {
     id: "navmc-1500",
     title: "NAVMC 1500",
     fullTitle: "Training and Readiness Manual",
+    url: "https://www.marines.mil/Portals/1/Publications/NAVMC%201500.5%20(SECURED).pdf?ver=McdyXSq23sgZB2UWjw5u7A%3d%3d",
     category: "navmc",
   },
 
@@ -463,20 +454,22 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "usc-10",
     title: "10 USC",
     fullTitle: "Title 10, United States Code - Armed Forces",
+    url: "https://uscode.house.gov/view.xhtml?path=/prelim@title10/subtitleA&edition=prelim",
     category: "usc",
   },
   "usc-41": {
     id: "usc-41",
     title: "41 USC",
     fullTitle: "Title 41, United States Code - Public Contracts",
+    url: "https://uscode.house.gov/view.xhtml?path=/prelim@title41&edition=prelim",
     category: "usc",
   },
 
   // Military Postal Manual
   "mpm": {
     id: "mpm",
-    title: "MPM",
-    fullTitle: "Military Postal Manual (DoD 4525.6-M)",
+    title: "MPM (Canc)",
+    fullTitle: "Military Postal Manual (DoD 4525.6-M) - Cancelled, replaced by DoDI 4525.09",
     category: "mpm",
   },
 
@@ -485,18 +478,21 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "usps-dmm",
     title: "USPS DMM",
     fullTitle: "Domestic Mail Manual",
+    url: "https://pe.usps.com/cpim/ftp/manuals/dmm300/full/mailingstandards.pdf",
     category: "usps",
   },
   "usps-asm": {
     id: "usps-asm",
     title: "USPS ASM",
     fullTitle: "Administrative Support Manual",
+    url: "https://nalc.org/workplace-issues/body/Administrative-Support-Manual-ASM-Jan-2024-1.pdf",
     category: "usps",
   },
   "usps-f-101": {
     id: "usps-f-101",
     title: "USPS Handbook F-101",
     fullTitle: "Field Accounting Procedures",
+    url: "https://www.nalc.org/workplace-issues/body/f101_2022.pdf",
     category: "usps",
   },
 
@@ -505,6 +501,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mcbul-5810",
     title: "MCBUL 5810",
     fullTitle: "Legal Services Support Section Bulletin",
+    url: "https://www.marines.mil/Portals/1/Publications/MCBul%205810%20DTD%2022%20MAY%202024%20(SECURED).pdf?ver=9jP9WxOlAnuK3mmboToGOA%3d%3d",
     category: "mco",
   },
 
@@ -545,7 +542,7 @@ function normalizeForMatch(text: string): string {
   return text
     .replace(/Ch\.\s*/gi, "Ch ")  // "Ch. 5" → "Ch 5"
     .replace(/Vol\.\s*/gi, "Vol ") // "Vol. 5" → "Vol 5"
-    .replace(/,\s+/g, " ")         // Remove commas
+    .replace(/,/g, " ")            // Remove commas
     .replace(/\s+/g, " ");         // Normalize whitespace
 }
 
@@ -555,7 +552,8 @@ export function findDocumentUrlByText(referenceText: string): string | undefined
   const normalizedRef = normalizeForMatch(referenceText);
 
   // Try to match document titles in the reference text
-  for (const doc of Object.values(referenceDocuments)) {
+  // Sort by title length descending to match most specific first (e.g., "MCO 100.1" before "MCO 100")
+  for (const doc of Object.values(referenceDocuments).sort((a, b) => b.title.length - a.title.length)) {
     if (doc.url) {
       const normalizedTitle = normalizeForMatch(doc.title);
       if (normalizedRef.includes(normalizedTitle)) {
