@@ -143,12 +143,14 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
               <CatalogGrid groups={coreGroups} />
             </div>
           </section>
-          <section>
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Reports & Dashboards</h2>
-            <div className="mt-4">
-              <CatalogGrid groups={reports} />
-            </div>
-          </section>
+          {key !== "s1-g1-administration" && (
+            <section>
+              <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Reports & Dashboards</h2>
+              <div className="mt-4">
+                <CatalogGrid groups={reports} />
+              </div>
+            </section>
+          )}
         </div>
       ) : section.groups ? (
         <div className="space-y-6">
