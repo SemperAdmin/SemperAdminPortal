@@ -32,6 +32,13 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     url: "https://www.marines.mil/portals/1/Publications/MCO%201040.31.pdf?ver=2012-10-11-163756-583",
     category: "mco",
   },
+  "mco-1040r-31": {
+    id: "mco-1040r-31",
+    title: "MCO 1040R.31",
+    fullTitle: "Marine Corps Reserve Enlisted Retention and Career Development Program",
+    url: "https://www.marines.mil/Portals/1/Publications/MCO%201040R.31.pdf?ver=2020-07-29-081706-337",
+    category: "mco",
+  },
   "mco-1050-3j": {
     id: "mco-1050-3j",
     title: "MCO 1050.3J",
@@ -114,6 +121,13 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     title: "MCO 1900.16",
     fullTitle: "Separation and Retirement Manual",
     url: "https://www.marines.mil/Portals/1/Publications/MCO%201900.16%20ADMIN%20CH-3%20(SECURED).pdf?ver=SZptuAh1jjvolL-Gf5s5CQ%3d%3d",
+    category: "mco",
+  },
+  "mco-p1070-12k": {
+    id: "mco-p1070-12k",
+    title: "MCO P1070.12K",
+    fullTitle: "Marine Corps Individual Records Administration Manual (IRAM)",
+    url: "https://www.marines.mil/portals/1/Publications/MCO%20P1070.12K%20W%20CH%201.pdf?ver=2012-10-11-163726-583",
     category: "mco",
   },
   "mco-3040-4": {
