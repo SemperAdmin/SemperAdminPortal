@@ -118,18 +118,18 @@ const playlists: Playlist[] = [
     title: "Manpower & Reserve Affairs",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6302111B6584&playlistId=1f3f9e63-f1e6-4acb-bfd6-80bb1ef8324d",
     youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCDKdkw2NJrYz9YZTL_WFHBz",
-    image: "/Manpower & Reserve Affairs.png",
+    image: "/Manpower-and-Reserve-Affairs.png",
   },
   {
     title: "Marine Corps Total Force System",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6304DC378AF4&playlistId=a5c01a6b-ca55-4e80-afb3-e504340e4aa0",
     youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCAztetKnyVAzvtWjzto7dMR",
-    image: "/Marine Corps Total Force System.png",
+    image: "/Marine-Corps-Total-Force-System.png",
   },
   {
     title: "Marine Online Management",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=630944A9E9B3&playlistId=99c8a7c5-aa83-4d40-b249-adea29ca16a7",
-    image: "/Marine Online Management.png",
+    image: "/Marine-Online-Management.png",
   },
   {
     title: "MarineNet",
@@ -145,7 +145,7 @@ const playlists: Playlist[] = [
   {
     title: "MISSA/MISSO Portal",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6320AFF6E96A&playlistId=ec104de4-6e2f-4c39-a911-f3a2c758d997",
-    image: "/MISSA_MISSO Portal.png",
+    image: "/MISSA-MISSO-Portal.png",
   },
   {
     title: "O-RMA",
@@ -155,13 +155,13 @@ const playlists: Playlist[] = [
   {
     title: "Outbound Interview",
     marineNetUrl: "https://www.marinenet.usmc.mil/MVS/watchVideo.aspx?Id=64189F33255E&playlistId=dc31fe4e-44bb-4698-801e-8b03a1499a04",
-    image: "/Outbound Interview.png",
+    image: "/Outbound-Interview.png",
   },
   {
     title: "Pay and Entitlements",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=63831964B681&playlistId=fb0f6044-751b-494b-9564-546c941b280e",
     youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCD9KpSIxJfMzB-BxR7V4Y_s",
-    image: "/Pay and Entitlements.png",
+    image: "/Pay-and-Entitlements.png",
   },
   {
     title: "Promotions",
@@ -174,35 +174,35 @@ const playlists: Playlist[] = [
     title: "Semper Admin",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=633587A459EB&playlistId=f80a5b99-0bab-4e14-804a-3fdae31ce528",
     youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCDJgq1xvtr24sn9PJpLG1nr",
-    image: "/Semper Admin.png",
+    image: "/Semper-Admin.png",
   },
   {
     title: "Separations and Retirement",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=63375351C274&playlistId=16e098a2-e0bb-4a40-a177-2c7db5b2faa5",
     youtubeUrl: "https://www.youtube.com/watch?v=l1emYAOT8HY&list=PLNGr21c4scCBv7IB8qoW5MnmMZNdE-QVu",
     videoId: "l1emYAOT8HY",
-    image: "/Separations and Retirement.png",
+    image: "/Separations-and-Retirement.png",
   },
   {
     title: "SharePoint",
     marineNetUrl: "https://www.marinenet.usmc.mil/MVS/watchVideo.aspx?Id=640817BEDE96&playlistId=3de59f4f-7118-4527-b3f9-d6771ee02690",
-    image: "/SharePoint O365.png",
+    image: "/SharePoint-O365.png",
   },
   {
     title: "Tech Tips",
     marineNetUrl: "https://www.marinenet.usmc.mil/MVS/watchVideo.aspx?Id=7097569D2864&playlistId=4fa66f1a-cfc5-44ae-8649-99d313c69b3f",
     youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCAGYPcHbzyrpEyVOtCXsh1I",
-    image: "/Tech Tips.png",
+    image: "/Tech-Tips.png",
   },
   {
     title: "Travel Claim",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6128637E6663&playlistId=b99b589b-c290-4bd1-9b6c-036f23f45388",
-    image: "/Travel Claim.png",
+    image: "/Travel-Claim.png",
   },
   {
     title: "Travel Voucher Interview",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=63383D956415&playlistId=cad68746-7279-4b35-a208-6725614e2f39",
-    image: "/Travel Voucher Interview.png",
+    image: "/Travel-Voucher-Interview.png",
   },
 ];
 
