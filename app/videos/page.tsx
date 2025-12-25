@@ -108,6 +108,7 @@ const playlists: Playlist[] = [
     title: "Leave and Liberty",
     marineNetUrl: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6300A5D61E66&playlistId=83e16a6c-9ef1-4672-a997-5cbb9f78d5d1",
     youtubeUrl: "https://youtube.com/playlist?list=PLNGr21c4scCDm6McJiiWnrgkQuY2eIcEx",
+    image: "/Leave-and-Liberty.png",
   },
   {
     title: "Manpower",
