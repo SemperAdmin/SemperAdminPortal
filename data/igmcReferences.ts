@@ -36,7 +36,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-1040r-31",
     title: "MCO 1040R.31",
     fullTitle: "Marine Corps Reserve Enlisted Retention and Career Development Program",
-    url: "https://www.marines.mil/Portals/1/Publications/MCO%201040R.31.pdf",
+    url: "https://www.marines.mil/Portals/1/Publications/MCO%201040R.31.pdf?ver=2020-07-29-081706-337",
     category: "mco",
   },
   "mco-1050-3j": {
@@ -127,7 +127,7 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "mco-p1070-12k",
     title: "MCO P1070.12K",
     fullTitle: "Marine Corps Individual Records Administration Manual (IRAM)",
-    url: "https://www.marines.mil/Portals/1/Publications/MCO%20P1070.12K%20W%20CH%201.pdf",
+    url: "https://www.marines.mil/portals/1/Publications/MCO%20P1070.12K%20W%20CH%201.pdf?ver=2012-10-11-163726-583",
     category: "mco",
   },
   "mco-3040-4": {
