@@ -130,7 +130,7 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
           <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Actions</h2>
             <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-              {key === "s1-g1-administration" ? (
+              {key === "s1-g1-administration" || key === "ii-i-staff-administration" ? (
                 <>
                   <Link prefetch={false} href="/announcements" className="inline-flex items-center justify-center rounded-md bg-[var(--sa-navy)] px-4 py-2 text-[var(--sa-cream)] shadow-sm transition hover:bg-[var(--sa-navy-hover)] dark:hover:bg-[var(--sa-red)]/60">Announcements</Link>
                   <Link prefetch={false} href="/inspections" className="inline-flex items-center justify-center rounded-md bg-[var(--sa-navy)] px-4 py-2 text-[var(--sa-cream)] shadow-sm transition hover:bg-[var(--sa-navy-hover)] dark:hover:bg-[var(--sa-red)]/60">Inspections</Link>
@@ -154,7 +154,7 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
               <CatalogGrid groups={coreGroups} />
             </div>
           </section>
-          {key !== "s1-g1-administration" && (
+          {key !== "s1-g1-administration" && key !== "ii-i-staff-administration" && (
             <section>
               <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Reports & Dashboards</h2>
               <div className="mt-4">
