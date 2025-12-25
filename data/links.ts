@@ -55,10 +55,13 @@ export const linkGroups: LinkGroup[] = [
 
 export type Role = "marines" | "administrators" | "leaders" | "commanders";
 
+export type AdminRole = "s1-g1" | "pac" | "ii";
+
 export type CatalogItem = {
   title: string;
   href?: string;
   roles?: Role[];
+  adminRoles?: AdminRole[];
 };
 
 export type CatalogGroup = {
