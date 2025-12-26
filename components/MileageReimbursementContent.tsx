@@ -72,7 +72,7 @@ export default function MileageReimbursementContent({ data }: { data: { mileageR
                   {data.mileageRates.map((r) => (
                     <tr key={r.year} className="border-b border-black/5 dark:border-white/10">
                       <td className="px-4 py-3 text-zinc-700 dark:text-zinc-300">{r.year}</td>
-                      <td className="px-4 py-3 font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">${r.rate.toFixed(2)}/mile</td>
+                      <td className="px-4 py-3 font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">${r.rate.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 3 })}/mile</td>
                       <td className="px-4 py-3 text-zinc-700 dark:text-zinc-300">{r.effective}</td>
                     </tr>
                   ))}

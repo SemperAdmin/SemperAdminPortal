@@ -1111,6 +1111,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "aviation-career-incentive-pay",
     "flight-deck-duty",
     "foreign-language-proficiency-pay",
+    "foreign-language-proficiency-bonus",
     "hardship-duty-pay",
     "parachute-duty-pay",
     "maritime-vbss-duty",
