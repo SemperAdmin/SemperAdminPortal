@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-type Ref = { title: string; desc: string; url: string; type: string };
+type Ref = { title: string; desc: string; url: string; type: string; isQuickLink?: boolean };
 type Tab = "overview" | "steps" | "important" | "special" | "troubleshooter" | "references";
 
 const TABS: { key: Tab; label: string }[] = [
@@ -11,6 +11,16 @@ const TABS: { key: Tab; label: string }[] = [
   { key: "special", label: "Special" },
   { key: "troubleshooter", label: "Troubleshooter" },
   { key: "references", label: "References" },
+];
+
+const VEHICLE_STEPS = [
+  { title: "Contact Your Transportation Office (TMO/PPSO)", desc: "Visit your local TMO or Personal Property Shipping Office BEFORE making any plans. Obtain a letter authorizing POV shipment or storage. Confirm your destination allows POV entry." },
+  { title: "Create a PCSmyPOV Account", desc: "Go to www.pcsmypov.com. Register using a personal device (DoD network restrictions affect functionality). Use the site to locate VPCs, schedule appointments, and track your vehicle." },
+  { title: "Schedule a VPC Appointment", desc: "All Vehicle Processing Centers require appointments. Call 1-855-389-9499 for U.S. domestic appointments. Schedule early during peak PCS season (May-August). VPC hours: Monday-Friday, 0800-1600 (arrive by 1500)." },
+  { title: "Prepare Your Vehicle", desc: "Fuel tank: 1/4 tank or less. Interior: Clean, dry, free of dirt, sand, food, pet hair. Exterior: Washed. Battery: 11.5-13.2 volts. No unresolved electrical/fire recalls. Alarms disabled. Complete set of keys." },
+  { title: "Gather Required Documents", desc: "Complete PCS orders (including amendments), Web Orders for Marines, Military ID, vehicle registration, title or lienholder authorization, Power of Attorney if needed, pre-shipping forms, recall printout." },
+  { title: "Turn In Your Vehicle", desc: "Arrive at VPC with all documents. Complete joint inspection with inspector. Sign DD Form 788 (Private Vehicle Shipping Document). Receive copies of all forms. Provide emergency contact and OCONUS address." },
+  { title: "Track and Receive Your Vehicle", desc: "Track status through PCSmyPOV using your Shipping Instruction Number. Notify contractor at least 30 days before required delivery date. Complete pickup inspection at destination VPC. Document any damage immediately." },
 ];
 
 export default function VehicleProcessingStorageContent({ data }: { data: { references: Ref[] } }) {
@@ -93,16 +103,8 @@ export default function VehicleProcessingStorageContent({ data }: { data: { refe
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">How POV Processing Works</h2>
             <div className="mt-4 space-y-4">
-              {[
-                { title: "Contact Your Transportation Office (TMO/PPSO)", desc: "Visit your local TMO or Personal Property Shipping Office BEFORE making any plans. Obtain a letter authorizing POV shipment or storage. Confirm your destination allows POV entry." },
-                { title: "Create a PCSmyPOV Account", desc: "Go to www.pcsmypov.com. Register using a personal device (DoD network restrictions affect functionality). Use the site to locate VPCs, schedule appointments, and track your vehicle." },
-                { title: "Schedule a VPC Appointment", desc: "All Vehicle Processing Centers require appointments. Call 1-855-389-9499 for U.S. domestic appointments. Schedule early during peak PCS season (May-August). VPC hours: Monday-Friday, 0800-1600 (arrive by 1500)." },
-                { title: "Prepare Your Vehicle", desc: "Fuel tank: 1/4 tank or less. Interior: Clean, dry, free of dirt, sand, food, pet hair. Exterior: Washed. Battery: 11.5-13.2 volts. No unresolved electrical/fire recalls. Alarms disabled. Complete set of keys." },
-                { title: "Gather Required Documents", desc: "Complete PCS orders (including amendments), Web Orders for Marines, Military ID, vehicle registration, title or lienholder authorization, Power of Attorney if needed, pre-shipping forms, recall printout." },
-                { title: "Turn In Your Vehicle", desc: "Arrive at VPC with all documents. Complete joint inspection with inspector. Sign DD Form 788 (Private Vehicle Shipping Document). Receive copies of all forms. Provide emergency contact and OCONUS address." },
-                { title: "Track and Receive Your Vehicle", desc: "Track status through PCSmyPOV using your Shipping Instruction Number. Notify contractor at least 30 days before required delivery date. Complete pickup inspection at destination VPC. Document any damage immediately." },
-              ].map((step, index) => (
-                <div key={index} className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+              {VEHICLE_STEPS.map((step, index) => (
+                <div key={step.title} className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
                   <div className="flex items-center gap-3">
                     <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">{index + 1}</div>
                     <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{step.title}</h3>
@@ -337,8 +339,9 @@ export default function VehicleProcessingStorageContent({ data }: { data: { refe
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Links</h3>
           <ul className="mt-3 space-y-1 text-sm">
-            <li><a href="https://www.pcsmypov.com/" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">PCSmyPOV Portal</a></li>
-            <li><a href="https://www.nhtsa.gov/recalls" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">NHTSA Recall Check</a></li>
+            {data.references.filter((ref) => ref.isQuickLink).map((ref) => (
+              <li key={ref.title}><a href={ref.url} target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">{ref.title}</a></li>
+            ))}
           </ul>
         </section>
       </aside>

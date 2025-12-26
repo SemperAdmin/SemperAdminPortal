@@ -16,6 +16,14 @@ const TABS: { key: Tab; label: string }[] = [
   { key: "references", label: "References" },
 ];
 
+const PPM_STORAGE_STEPS = [
+  { title: "Pre-Approval", desc: <>Request <strong>pre-approval</strong> from your Transportation Office BEFORE placing items in storage</> },
+  { title: "Storage Contract", desc: <>Find a commercial storage facility and get a signed storage contract</> },
+  { title: "Weight Tickets", desc: <>Obtain <strong>certified weight tickets</strong> before and after loading items into storage</> },
+  { title: "Retain Receipts", desc: <>Retain all receipts: storage contract, monthly payments, delivery charges</> },
+  { title: "Submit Claim", desc: <>Submit documentation with your PPM claim for reimbursement</> },
+];
+
 export default function PCSStorageContent({ data }: { data: { references: Ref[] } }) {
   const [tab, setTab] = useState<Tab>("overview");
 
@@ -218,16 +226,10 @@ export default function PCSStorageContent({ data }: { data: { references: Ref[] 
             <div className="mt-4 rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
               <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">How to Arrange PPM Storage</h3>
               <div className="mt-3 space-y-3">
-                {[
-                  <>Request <strong>pre-approval</strong> from your Transportation Office BEFORE placing items in storage</>,
-                  <>Find a commercial storage facility and get a signed storage contract</>,
-                  <>Obtain <strong>certified weight tickets</strong> before and after loading items into storage</>,
-                  <>Retain all receipts: storage contract, monthly payments, delivery charges</>,
-                  <>Submit documentation with your PPM claim for reimbursement</>,
-                ].map((step, index) => (
-                  <div key={index} className="flex items-start gap-3">
+                {PPM_STORAGE_STEPS.map((step, index) => (
+                  <div key={step.title} className="flex items-start gap-3">
                     <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">{index + 1}</div>
-                    <p className="text-sm text-zinc-700 dark:text-zinc-300">{step}</p>
+                    <p className="text-sm text-zinc-700 dark:text-zinc-300">{step.desc}</p>
                   </div>
                 ))}
               </div>

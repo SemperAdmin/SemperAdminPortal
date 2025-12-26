@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-type Ref = { title: string; desc: string; url: string; type: string };
+type Ref = { title: string; desc: string; url: string; type: string; isQuickLink?: boolean };
 type ReimbursementRate = { persons: string; percentage: string };
 type Tab = "overview" | "eligibility" | "steps" | "special" | "troubleshooter" | "references";
 
@@ -12,6 +12,14 @@ const TABS: { key: Tab; label: string }[] = [
   { key: "special", label: "Special" },
   { key: "troubleshooter", label: "Troubleshooter" },
   { key: "references", label: "References" },
+];
+
+const TLE_STEPS = [
+  { title: "Confirm Eligibility", desc: "Verify your PCS orders involve a CONUS PDS. Determine your authorized TLE days based on move type." },
+  { title: "Check Government Quarters", desc: "Contact billeting at your old and new PDS. Obtain a certificate of nonavailability if quarters are full. Note: Government quarters check not required at designated places." },
+  { title: "Book Temporary Lodging", desc: "Stay in the vicinity of your PDS, home of record, or designated place. Track all lodging receipts with itemized charges and taxes." },
+  { title: "Submit Your Claim", desc: "Complete DD Form 1351-2 and DFAS Form 9098. Attach itemized zero-balance lodging receipts and PCS orders. Submit with your travel voucher." },
+  { title: "Receive Reimbursement", desc: "DFAS calculates your entitlement using locality per diem rates. Reimbursement equals the lesser of actual cost or calculated ceiling. Maximum daily reimbursement is $290." },
 ];
 
 export default function TemporaryLodgingExpenseContent({ data }: { data: { reimbursementRates: ReimbursementRate[]; references: Ref[] } }) {
@@ -127,14 +135,8 @@ export default function TemporaryLodgingExpenseContent({ data }: { data: { reimb
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">How TLE Works</h2>
             <div className="mt-4 space-y-4">
-              {[
-                { title: "Confirm Eligibility", desc: "Verify your PCS orders involve a CONUS PDS. Determine your authorized TLE days based on move type." },
-                { title: "Check Government Quarters", desc: "Contact billeting at your old and new PDS. Obtain a certificate of nonavailability if quarters are full. Note: Government quarters check not required at designated places." },
-                { title: "Book Temporary Lodging", desc: "Stay in the vicinity of your PDS, home of record, or designated place. Track all lodging receipts with itemized charges and taxes." },
-                { title: "Submit Your Claim", desc: "Complete DD Form 1351-2 and DFAS Form 9098. Attach itemized zero-balance lodging receipts and PCS orders. Submit with your travel voucher." },
-                { title: "Receive Reimbursement", desc: "DFAS calculates your entitlement using locality per diem rates. Reimbursement equals the lesser of actual cost or calculated ceiling. Maximum daily reimbursement is $290." },
-              ].map((step, index) => (
-                <div key={index} className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+              {TLE_STEPS.map((step, index) => (
+                <div key={step.title} className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
                   <div className="flex items-center gap-3">
                     <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">{index + 1}</div>
                     <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{step.title}</h3>
@@ -288,9 +290,9 @@ export default function TemporaryLodgingExpenseContent({ data }: { data: { reimb
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Links</h3>
           <ul className="mt-3 space-y-1 text-sm">
-            <li><a href="https://www.dfas.mil/MilitaryMembers/travelpay/armypcs/tle/" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">DFAS TLE Information</a></li>
-            <li><a href="https://www.gsa.gov/travel/plan-book/per-diem-rates" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">GSA Per Diem Rates</a></li>
-            <li><a href="https://www.dfas.mil/Portals/98/Documents/Military%20Members/travelpay/Locations%20with%20Approved%20TLE%20Extensions.pdf" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">TLE Extension Locations</a></li>
+            {data.references.filter((ref) => ref.isQuickLink).map((ref) => (
+              <li key={ref.title}><a href={ref.url} target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">{ref.title}</a></li>
+            ))}
           </ul>
         </section>
       </aside>
