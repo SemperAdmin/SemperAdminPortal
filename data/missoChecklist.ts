@@ -212,8 +212,8 @@ export const missoCategories: MISSOCategory[] = [
     icon: "home",
     items: [
       { id: "12.1", question: "Does the command know where to reference the Family Readiness Module training material via the MISSA/MISSO portal?" },
-      { id: "13.1", question: "Does the command know where to reference the Family Care Plan Module training material via the MISSA/MISSO portal?" },
-      { id: "13.2", question: "Does the command request training on the Family Care Plan Module?", trainingCode: "ZC" },
+      { id: "12.2", question: "Does the command know where to reference the Family Care Plan Module training material via the MISSA/MISSO portal?" },
+      { id: "12.3", question: "Does the command request training on the Family Care Plan Module?", trainingCode: "ZC" },
     ],
   },
   {
