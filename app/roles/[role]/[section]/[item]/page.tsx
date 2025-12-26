@@ -958,17 +958,26 @@ const PER_DIEM_DATA = {
 
 const VOUCHER_DATA = {
   references: [
-    { title: "Defense Travel System", desc: "DTS voucher submission portal.", url: "https://www.defensetravel.dod.mil/", type: "Website" },
-    { title: "Joint Travel Regulations Ch 2", desc: "Voucher requirements and deadlines.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
-    { title: "DFAS Travel Pay", desc: "Voucher processing and payment.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+    { title: "DTS Login", desc: "Official DTS login portal for voucher submission.", url: "https://dtsproweb.defensetravel.osd.mil/", type: "Website", isQuickLink: true },
+    { title: "DTMO Website", desc: "Defense Travel Management Office resources and guidance.", url: "https://www.travel.dod.mil/", type: "Website", isQuickLink: true },
+    { title: "Per Diem Rate Lookup", desc: "Look up per diem rates by location.", url: "https://www.travel.dod.mil/Travel-Transportation-Rates/Per-Diem/", type: "Website", isQuickLink: true },
+    { title: "DFAS Travel Pay", desc: "Voucher processing, payment status, and travel pay information.", url: "https://www.dfas.mil/MilitaryMembers/travelpay/", type: "Website", isQuickLink: true },
+    { title: "Joint Travel Regulations", desc: "JTR - official travel policy and voucher requirements.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "DTS Guide 2: Vouchers", desc: "Official guide for creating and submitting DTS vouchers.", url: "https://www.defensetravel.dod.mil/Docs/DTS_Guide_2_Voucher.pdf", type: "Policy" },
+    { title: "MCO 1000.6", desc: "Marine Corps Assignment, Classification, and Travel Systems Manual.", url: "https://www.marines.mil/", type: "Policy" },
+    { title: "DoD FMR Volume 9", desc: "DoD Financial Management Regulation - Travel Policy.", url: "https://comptroller.defense.gov/", type: "Policy" },
   ],
 };
 
 const DTS_DATA = {
   references: [
-    { title: "Defense Travel System", desc: "Official DTS login and resources.", url: "https://www.defensetravel.dod.mil/", type: "Website" },
-    { title: "DTS Training", desc: "DTS user training modules.", url: "https://www.defensetravel.dod.mil/Training/", type: "Website" },
-    { title: "Joint Travel Regulations", desc: "Travel policy underlying DTS.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "DTS Login", desc: "Official DTS login portal for travel authorization and vouchers.", url: "https://dtsproweb.defensetravel.osd.mil/dts-app/pubsite/all/view/", type: "Website", isQuickLink: true },
+    { title: "DTMO Website", desc: "Defense Travel Management Office resources and guidance.", url: "https://www.travel.dod.mil/", type: "Website", isQuickLink: true },
+    { title: "DTS Training", desc: "DTS user training modules and guides.", url: "https://www.travel.dod.mil/Training/", type: "Website", isQuickLink: true },
+    { title: "Per Diem Rate Lookup", desc: "Look up per diem rates by location.", url: "https://www.travel.dod.mil/Travel-Transportation-Rates/Per-Diem/Per-Diem-Rate-Lookup/", type: "Website", isQuickLink: true },
+    { title: "ILP Site Search Tool", desc: "Find Integrated Lodging Program properties.", url: "https://www.travel.dod.mil/Programs/Lodging/", type: "Website" },
+    { title: "Joint Travel Regulations", desc: "JTR Chapters 2-3 for travel policy.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "DTS Guide 2: Authorizations", desc: "Official guide for creating DTS authorizations.", url: "https://www.defensetravel.dod.mil/Docs/DTS_Guide_2_Authorization.pdf", type: "Policy" },
   ],
 };
 

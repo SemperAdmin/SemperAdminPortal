@@ -1,43 +1,108 @@
 "use client";
 import { useState } from "react";
 
-type Ref = { title: string; desc: string; url: string; type: string };
+type Ref = { title: string; desc: string; url: string; type: string; isQuickLink?: boolean };
+type Tab = "overview" | "steps" | "receipts" | "blocks" | "special" | "tips" | "troubleshooter" | "references";
+
+const TABS: { key: Tab; label: string }[] = [
+  { key: "overview", label: "Overview" },
+  { key: "steps", label: "Steps" },
+  { key: "receipts", label: "Receipts" },
+  { key: "blocks", label: "Blocks" },
+  { key: "special", label: "Special" },
+  { key: "tips", label: "Tips" },
+  { key: "troubleshooter", label: "Troubleshooter" },
+  { key: "references", label: "References" },
+];
+
+const VOUCHER_STEPS = [
+  { title: "Log into DTS", desc: "Access the DTS portal at dtsproweb.defensetravel.osd.mil. Use your CAC for authentication." },
+  { title: "Create Voucher from Authorization", desc: "Select \"Official Travel\" then \"Vouchers.\" Click \"Create New Voucher\" and select your approved travel authorization. DTS will pre-populate trip data from your authorization." },
+  { title: "Verify Trip Data", desc: "Confirm your actual travel dates match what occurred. Update departure and arrival times. Verify all TDY locations are correct. Ensure the itinerary reflects your actual travel." },
+  { title: "Add and Update Expenses", desc: "Navigate to the Expenses module. Update estimated expenses to actual amounts. Add any additional expenses incurred during travel. Attach receipts for all expenses $75 or more." },
+  { title: "Verify Line of Accounting (LOA)", desc: "Confirm the LOA matches your unit's funding. Contact your unit admin or Resource Manager if the accounting code needs correction. Orders must contain proper lines of accounting per MCO 1000.6." },
+  { title: "Complete Remarks (Block 29)", desc: "Add required remarks for special circumstances. See Block 29 Requirements section for Marine-specific entries." },
+  { title: "Review and Sign", desc: "Run the Pre-Audit to identify errors. Correct any flagged issues. Digitally sign the voucher using your CAC. The reviewer/approver signature date must be on or after your signature date." },
+  { title: "Submit Voucher", desc: "Route the voucher through your approval chain. Monitor status in DTS. Respond promptly to any return for corrections." },
+];
+
+const RECEIPT_ITEMS = [
+  "Lodging (itemized hotel folio showing nightly rate, taxes, and fees)",
+  "Commercial airfare (passenger receipt or e-ticket)",
+  "Rental car (final rental agreement showing total charges)",
+  "Fuel for rental car (if purchased)",
+  "Conference or registration fees",
+  "Tolls (if total exceeds $75)",
+  "Parking (if total exceeds $75)",
+];
+
+const BLOCK_29_REMARKS = [
+  { title: "More Than 24 Hours", desc: "Explain if travel exceeded 24 hours due to mission requirements or transportation delays" },
+  { title: "Government Quarters Unavailable", desc: "Document certificate of non-availability (CNA) when required to use commercial lodging" },
+  { title: "Actual Expense Authority", desc: "Cite authorization if claiming above standard per diem rates" },
+  { title: "POV vs Commercial", desc: "Explain mode of travel if different from authorization" },
+  { title: "Separation Claims", desc: "Document specific entitlements for separation/retirement travel" },
+];
+
+const SPECIAL_SITUATIONS = [
+  { situation: "Reserve Duty (IDT)", action: "Submit within 5 days. MROWS orders require voucher in DTS. Ensure travel mode matches order authorization." },
+  { situation: "Non-DTS Personnel", action: "Use DFAS SmartVoucher or Travel Voucher Direct for manual claims. Contact disbursing office for guidance." },
+  { situation: "TDY Over 180 Days", action: "TDY exceeding 180 days becomes PCS. CMC (MMIA) approval required before 179th day per MCO 1000.6." },
+  { situation: "Advance Outstanding", action: "Failure to submit voucher within 5 days results in advance deduction from pay. Submit on time to avoid payroll action." },
+  { situation: "POV Travel", action: "POV authorization as advantageous or not advantageous affects reimbursement. Claim mileage at current MALT rate from JTR." },
+];
+
+const TIPS = [
+  { title: "Save receipts immediately", desc: "Photograph or scan receipts during travel before they fade or get lost." },
+  { title: "Match dates exactly", desc: "Your voucher dates must align with your orders and authorization." },
+  { title: "Use lodging per diem lookup", desc: "Verify locality rates at travel.dod.mil before claiming." },
+  { title: "Run Pre-Audit before signing", desc: "Fix all errors before routing to approver." },
+  { title: "Contact admin early", desc: "Reach out to your unit administrator for LOA issues or unusual circumstances." },
+  { title: "Track your voucher", desc: "Monitor DTS status and respond immediately to any return for corrections." },
+];
 
 export default function TravelVoucherSubmissionContent({ data }: { data: { references: Ref[] } }) {
-  const [tab, setTab] = useState<"overview" | "form" | "documents" | "steps" | "dts" | "troubleshooter" | "references">("overview");
+  const [tab, setTab] = useState<Tab>("overview");
 
   return (
     <div className="grid gap-6 lg:grid-cols-3">
       <div className="lg:col-span-2 space-y-6">
         <div className="flex items-center gap-2 overflow-x-auto [&>button]:whitespace-nowrap [&>button]:shrink-0">
-          <button onClick={() => setTab("overview")} className={`rounded-md px-3 py-2 text-sm ${tab === "overview" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Overview</button>
-          <button onClick={() => setTab("form")} className={`rounded-md px-3 py-2 text-sm ${tab === "form" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>DD 1351-2</button>
-          <button onClick={() => setTab("documents")} className={`rounded-md px-3 py-2 text-sm ${tab === "documents" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Documents</button>
-          <button onClick={() => setTab("steps")} className={`rounded-md px-3 py-2 text-sm ${tab === "steps" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Steps</button>
-          <button onClick={() => setTab("dts")} className={`rounded-md px-3 py-2 text-sm ${tab === "dts" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>DTS Voucher</button>
-          <button onClick={() => setTab("troubleshooter")} className={`rounded-md px-3 py-2 text-sm ${tab === "troubleshooter" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Troubleshooter</button>
-          <button onClick={() => setTab("references")} className={`rounded-md px-3 py-2 text-sm ${tab === "references" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>References</button>
+          {TABS.map((t) => (
+            <button
+              key={t.key}
+              onClick={() => setTab(t.key)}
+              className={`rounded-md px-3 py-2 text-sm ${tab === t.key ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}
+            >
+              {t.label}
+            </button>
+          ))}
         </div>
 
         {tab === "overview" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Travel Voucher Overview</h2>
-            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">A travel voucher is your claim for reimbursement of official travel expenses. It documents your actual itinerary, expenses, and supporting receipts. Most travel vouchers are now submitted through DTS, but manual DD 1351-2 may be required for certain situations.</p>
-            <div className="mt-4 grid gap-4 sm:grid-cols-3">
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">DD Form 1351-2 Overview</h2>
+            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">The DD Form 1351-2 is your official travel voucher for claiming reimbursement after completing official travel. For USMC personnel, you create this voucher in the Defense Travel System (DTS) from your approved authorization. The voucher documents your actual travel expenses and routes payment to your account.</p>
+            <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
                 <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Deadline</div>
                 <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">5 Days</div>
-                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">After completing travel</p>
+                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Working days after travel</p>
               </div>
               <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
                 <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Receipt Threshold</div>
-                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">&gt;$75</div>
-                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">All lodging + expenses over $75</p>
+                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">$75+</div>
+                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Single expense amount</p>
               </div>
               <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Primary System</div>
+                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">System</div>
                 <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">DTS</div>
                 <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Defense Travel System</p>
+              </div>
+              <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Authority</div>
+                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">JTR</div>
+                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">MCO 1000.6 Chapter 4</p>
               </div>
             </div>
             <div className="mt-6 rounded-2xl bg-[var(--sa-navy)] p-6 text-[var(--sa-cream)]">
@@ -45,190 +110,167 @@ export default function TravelVoucherSubmissionContent({ data }: { data: { refer
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
                 BLUF
               </div>
-              <p className="mt-2 text-sm opacity-90">Submit within 5 days. Attach all lodging receipts (regardless of amount) and any other receipts over $75. Accurate dates and times matter for per diem calculations. Late submission may result in GTCC delinquency and pay issues.</p>
-              <div className="mt-4 flex gap-3 text-sm">
+              <p className="mt-2 text-sm opacity-90">Submit within 5 working days of completing travel. Attach receipts for any single expense $75 or more. Accurate dates and times directly affect per diem calculations. Late submission may result in advance deductions from pay and GTCC delinquency.</p>
+              <div className="mt-4 flex flex-wrap gap-3 text-sm">
                 <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">5-Day Deadline</span>
-                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">All Lodging Receipts</span>
+                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">$75 Receipt Threshold</span>
+                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">Accurate Dates/Times</span>
               </div>
-            </div>
-          </section>
-        )}
-
-        {tab === "form" && (
-          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">DD Form 1351-2</h2>
-            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">The DD Form 1351-2 is the standard travel voucher form. While most travel uses DTS, manual forms may be required for certain types of travel.</p>
-            <div className="mt-4 space-y-4">
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Key Sections</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Block 1-4: Personal identification</li>
-                  <li>Block 5-9: Payment information</li>
-                  <li>Block 10: Itinerary (dates, times, locations)</li>
-                  <li>Block 11-14: Expense claims</li>
-                  <li>Block 15: Advances received</li>
-                  <li>Block 16-20: Signatures and certification</li>
-                </ul>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">When Manual Form Required</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>PCS travel (often combined with DTS)</li>
-                  <li>Emergency travel without DTS access</li>
-                  <li>Certain types of local travel</li>
-                  <li>Non-DTS commands</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {tab === "documents" && (
-          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Required Documents</h2>
-            <div className="mt-3 grid gap-4 md:grid-cols-2">
-              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Always Required</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Lodging receipts (all amounts)</li>
-                  <li>Orders or approved authorization</li>
-                  <li>Airline ticket receipt/itinerary</li>
-                  <li>Rental car receipt (if used)</li>
-                </ul>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">If Over $75</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Taxi/rideshare receipts</li>
-                  <li>Parking receipts</li>
-                  <li>Baggage fees</li>
-                  <li>Registration fees</li>
-                  <li>Other reimbursable expenses</li>
-                </ul>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">For PCS Travel</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>PCS orders with amendments</li>
-                  <li>TLE receipts</li>
-                  <li>Detaching/reporting endorsements</li>
-                  <li>Dependent travel documentation</li>
-                </ul>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">For POC Travel</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Mileage log (if required)</li>
-                  <li>Toll receipts</li>
-                  <li>Fuel receipts (TDY fleet)</li>
-                </ul>
-              </div>
-            </div>
-            <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-amber-800 dark:border-white/15 dark:bg-white/10 dark:text-[var(--sa-cream)]">
-              <div className="text-xs font-semibold">Receipt Requirements</div>
-              <div className="mt-1 text-xs">All receipts must show: vendor name, date, amount paid, and itemized charges. Credit card statements alone are not sufficient documentation.</div>
             </div>
           </section>
         )}
 
         {tab === "steps" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Voucher Submission Steps</h2>
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">DTS Voucher Submission Steps</h2>
+            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Follow these steps to submit your travel voucher in DTS after completing official travel.</p>
             <div className="mt-4 space-y-4">
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 1: Gather All Receipts</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Collect all lodging receipts and expense receipts over $75. Scan or photograph clearly. Organize by date.</p>
+              {VOUCHER_STEPS.map((step, index) => (
+                <div key={step.title} className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+                  <div className="flex items-start gap-3">
+                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-[var(--sa-cream)]">{index + 1}</span>
+                    <div>
+                      <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{step.title}</h3>
+                      <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">{step.desc}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {tab === "receipts" && (
+          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Receipt Requirements</h2>
+            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Receipts are required for any single expense of $75 or more. Common items requiring receipts:</p>
+            <div className="mt-4 rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+              <ul className="space-y-2">
+                {RECEIPT_ITEMS.map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="mt-0.5 h-4 w-4 shrink-0 text-[var(--sa-red)]"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-amber-800 dark:border-white/15 dark:bg-white/10 dark:text-[var(--sa-cream)]">
+              <div className="flex items-center gap-2 text-sm font-semibold">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Receipt Requirements
               </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 2: Create Voucher in DTS</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Navigate to your approved authorization. Select &quot;Create Voucher.&quot; DTS will populate from your authorization.</p>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 3: Update Actual Itinerary</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Correct any dates, times, or locations that changed from your original authorization. Accuracy affects per diem calculation.</p>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 4: Enter Expenses</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Update lodging costs to actual amounts. Add any expenses not on original authorization. Remove expenses that didn&apos;t occur.</p>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 5: Upload Receipts</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Attach all required receipts to the voucher. Ensure they&apos;re legible. Match receipts to claimed expenses.</p>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 6: Sign and Submit</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Review the calculated amount. Sign the voucher. Route for approval. Track status in DTS.</p>
+              <p className="mt-1 text-xs">All receipts must show: vendor name, date, amount paid, and itemized charges. Credit card statements alone are not sufficient documentation.</p>
+            </div>
+          </section>
+        )}
+
+        {tab === "blocks" && (
+          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Signature and Remarks Blocks</h2>
+
+            <div className="mt-4 rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+              <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Block 21 - Approving Official Signature</h3>
+              <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Per MCO 1000.6, the Approving Official (AO) signs Block 21 of the DD Form 1351-2. Written modification is not required if the AO states on the face of the travel claim what has been approved and signs Block 21. The AO signature date must be on or after the traveler&apos;s signature date.</p>
+            </div>
+
+            <div className="mt-4 rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+              <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Block 29 - Remarks</h3>
+              <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Use Block 29 for required explanations and Marine-specific entries:</p>
+              <div className="mt-3 space-y-3">
+                {BLOCK_29_REMARKS.map((remark) => (
+                  <div key={remark.title} className="rounded-lg border border-black/5 bg-white p-3 dark:border-white/10 dark:bg-black/40">
+                    <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{remark.title}</div>
+                    <div className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">{remark.desc}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </section>
         )}
 
-        {tab === "dts" && (
+        {tab === "special" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">DTS Voucher Tips</h2>
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Special Considerations</h2>
+            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Specific guidance for unique travel situations.</p>
             <div className="mt-4 space-y-4">
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Pre-Audit Check</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">DTS performs a pre-audit before submission. Address any flagged items. Common flags: missing receipts, expenses exceeding authorization, date discrepancies.</p>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Adjusting Per Diem</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Mark meals as &quot;provided&quot; if furnished</li>
-                  <li>Adjust for government quarters if applicable</li>
-                  <li>Ensure correct locations for rate calculation</li>
-                </ul>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Split Disbursement</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Set up split disbursement to pay GTCC directly. This helps avoid GTCC delinquency. Remaining amount goes to your account.</p>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Tracking Status</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Monitor your voucher in DTS. Check for returns requiring action. Contact approvers if stuck in routing. Payment typically 3-5 days after final approval.</p>
-              </div>
+              {SPECIAL_SITUATIONS.map((item) => (
+                <div key={item.situation} className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                  <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{item.situation}</h3>
+                  <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">{item.action}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {tab === "tips" && (
+          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Tips for Voucher Success</h2>
+            <div className="mt-4 grid gap-4 sm:grid-cols-2">
+              {TIPS.map((tip) => (
+                <div key={tip.title} className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+                  <div className="flex items-start gap-3">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="mt-0.5 h-5 w-5 shrink-0 text-[var(--sa-red)]"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <div>
+                      <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{tip.title}</h3>
+                      <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">{tip.desc}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </section>
         )}
 
         {tab === "troubleshooter" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Common Problems & Solutions</h2>
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Common Problems &amp; Solutions</h2>
             <div className="mt-3 space-y-4">
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
                 <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Voucher returned for corrections</h3>
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
                   <li>Read the return comments carefully</li>
                   <li>Correct the identified issues</li>
-                  <li>Resubmit promptly</li>
-                  <li>Contact ODTA if unclear on correction needed</li>
+                  <li>Resubmit promptly to avoid further delays</li>
+                  <li>Contact your DTA if unclear on correction needed</li>
                 </ul>
               </div>
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
                 <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Missed 5-day deadline</h3>
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
                   <li>Submit as soon as possible</li>
-                  <li>May need to add justification</li>
+                  <li>May need to add justification in remarks</li>
                   <li>Late vouchers may still be paid</li>
+                  <li>Outstanding advance may be deducted from pay</li>
                   <li>GTCC delinquency may result</li>
                 </ul>
               </div>
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
                 <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Lost receipt</h3>
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Contact vendor for duplicate</li>
-                  <li>Write a lost receipt statement</li>
-                  <li>Include credit card statement as support</li>
-                  <li>Lost receipt statements are sworn statements</li>
+                  <li>Contact vendor for duplicate receipt</li>
+                  <li>Write a lost receipt statement (sworn statement)</li>
+                  <li>Include credit card statement as supporting documentation</li>
+                  <li>Lost receipt statements require detailed explanation</li>
                 </ul>
               </div>
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
                 <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Reimbursement different than expected</h3>
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
                   <li>Review DTS calculation breakdown</li>
-                  <li>Check for meal deductions</li>
-                  <li>Verify advance was subtracted</li>
-                  <li>Contact ODTA for explanation</li>
+                  <li>Check for meal deductions (provided meals)</li>
+                  <li>Verify travel advance was subtracted correctly</li>
+                  <li>Confirm per diem rates for your TDY location</li>
+                  <li>Contact your DTA or ODTA for explanation</li>
+                </ul>
+              </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">LOA rejected or invalid</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>Contact your unit Resource Manager</li>
+                  <li>Verify the LOA matches current fiscal year funding</li>
+                  <li>Request corrected LOA from admin section</li>
+                  <li>Do not submit voucher with invalid LOA</li>
                 </ul>
               </div>
             </div>
@@ -269,19 +311,47 @@ export default function TravelVoucherSubmissionContent({ data }: { data: { refer
           <ul className="mt-3 space-y-2 text-sm">
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
               <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Submission Deadline</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">5 days after travel</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">5 working days after travel</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
               <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Receipt Threshold</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">&gt;$75 (all lodging)</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">$75 or more for any single expense</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
               <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Payment Time</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">3-5 days after approval</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">3-5 days after final approval</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
               <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Form Number</div>
               <div className="text-xs text-zinc-700 dark:text-zinc-300">DD Form 1351-2</div>
+            </li>
+          </ul>
+        </section>
+
+        <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Links</h3>
+          <ul className="mt-3 space-y-2">
+            {data.references.filter((ref) => ref.isQuickLink).map((ref) => (
+              <li key={ref.title}>
+                <a href={ref.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-md border border-black/10 bg-white p-3 text-sm text-[var(--sa-navy)] shadow-sm transition hover:border-[var(--sa-red)] hover:bg-[var(--sa-cream)]/40 dark:border-white/15 dark:bg-black/60 dark:text-[var(--sa-cream)]">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  {ref.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Need Help?</h3>
+          <ul className="mt-3 space-y-2 text-sm">
+            <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">DTS Help Desk</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">1-888-HELP1GO (1-888-435-7146)</div>
+            </li>
+            <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Unit DTA</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">Contact your unit admin section</div>
             </li>
           </ul>
         </section>
