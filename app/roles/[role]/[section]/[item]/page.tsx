@@ -994,15 +994,13 @@ const GTCC_DATA = {
 };
 
 const MILEAGE_DATA = {
-  mileageRates: [
-    { year: "2025", rate: 0.70, effective: "January 1, 2025" },
-    { year: "2024", rate: 0.67, effective: "January 1, 2024" },
-    { year: "2023", rate: 0.655, effective: "January 1, 2023" },
-  ],
   references: [
-    { title: "GSA Mileage Rates", desc: "Official POC mileage reimbursement rates.", url: "https://www.gsa.gov/travel/plan-book/transportation-airfare-pov-etc/privately-owned-vehicle-pov-mileage-reimbursement", type: "Website" },
-    { title: "Joint Travel Regulations Ch 2", desc: "POC authorization and mileage policy.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
-    { title: "DTOD", desc: "Defense Table of Official Distances.", url: "https://dtod.sddc.army.mil/", type: "Website" },
+    { title: "GSA Mileage Rates", url: "https://www.gsa.gov/travel/plan-book/transportation-airfare-pov-etc/privately-owned-vehicle-pov-mileage-reimbursement", isQuickLink: true },
+    { title: "DTOD (Official Distance Tool)", url: "https://dtod.sddc.army.mil/", isQuickLink: true },
+    { title: "Joint Travel Regulations", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: true },
+    { title: "DTS Portal", url: "https://dtsproweb.defensetravel.osd.mil", isQuickLink: true },
+    { title: "MARADMIN 070/21 (Reserve IDT Travel)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
+    { title: "DFAS Travel Pay", url: "https://www.dfas.mil/militarymembers/travelpay/", isQuickLink: false },
   ],
 };
 
