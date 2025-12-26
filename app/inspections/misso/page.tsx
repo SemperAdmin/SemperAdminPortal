@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { missoCategories, missoLinks, trainingEventCodes, getTotalChecklistItems } from "../../../data/missoChecklist";
+import { missoCategories, missoLinks, missoTeamsChannels, trainingEventCodes, getTotalChecklistItems } from "../../../data/missoChecklist";
 
 // Icon components
 function GlobeIcon({ className }: { className?: string }) {
@@ -273,21 +273,17 @@ export default function MISSOPage() {
             </svg>
             Teams Channels:
           </span>
-          <a href="https://dod.teams.microsoft.us/l/team/19:dod:7f4ddd71c9484bf584cc63b6a1dd3bf3%40thread.skype/conversations?groupId=a41eb10c-8e15-43f7-98cb-494ed593d790&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 rounded-full bg-[var(--sa-navy)]/10 px-3 py-1 text-xs font-medium text-[var(--sa-navy)] transition hover:bg-[var(--sa-navy)]/20 dark:bg-[var(--sa-cream)]/10 dark:text-[var(--sa-cream)] dark:hover:bg-[var(--sa-cream)]/20">
-            MISSO-02
-          </a>
-          <a href="https://dod.teams.microsoft.us/l/team/19:dod:f0483ec29ef441a7bc13bd6f6ec1b7eb%40thread.skype/conversations?groupId=228439f5-b545-4e58-90ed-1270f9370550&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 rounded-full bg-[var(--sa-navy)]/10 px-3 py-1 text-xs font-medium text-[var(--sa-navy)] transition hover:bg-[var(--sa-navy)]/20 dark:bg-[var(--sa-cream)]/10 dark:text-[var(--sa-cream)] dark:hover:bg-[var(--sa-cream)]/20">
-            MISSO-03/06
-          </a>
-          <a href="https://dod.teams.microsoft.us/l/team/19:dod:4e6ec9ba34c0409480822e46c9d619f6%40thread.tacv2/conversations?groupId=174c90ac-736c-4702-b816-b6312012fc8e&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 rounded-full bg-[var(--sa-navy)]/10 px-3 py-1 text-xs font-medium text-[var(--sa-navy)] transition hover:bg-[var(--sa-navy)]/20 dark:bg-[var(--sa-cream)]/10 dark:text-[var(--sa-cream)] dark:hover:bg-[var(--sa-cream)]/20">
-            MISSO-09
-          </a>
-          <a href="https://dod.teams.microsoft.us/l/team/19:dod:d55c88848dda48f6a6591c8abdb468a3%40thread.skype/conversations?groupId=0895f5f9-e707-49a9-b9b8-a780f689a36b&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 rounded-full bg-[var(--sa-navy)]/10 px-3 py-1 text-xs font-medium text-[var(--sa-navy)] transition hover:bg-[var(--sa-navy)]/20 dark:bg-[var(--sa-cream)]/10 dark:text-[var(--sa-cream)] dark:hover:bg-[var(--sa-cream)]/20">
-            MISSO-16/17
-          </a>
-          <a href="https://dod.teams.microsoft.us/l/team/19:dod:08d880cf79634e439386cea7cb744c62%40thread.tacv2/conversations?groupId=7fee38ca-16af-4033-b942-5315c450d94e&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 rounded-full bg-[var(--sa-navy)]/10 px-3 py-1 text-xs font-medium text-[var(--sa-navy)] transition hover:bg-[var(--sa-navy)]/20 dark:bg-[var(--sa-cream)]/10 dark:text-[var(--sa-cream)] dark:hover:bg-[var(--sa-cream)]/20">
-            MISSO-27
-          </a>
+          {missoTeamsChannels.map((channel) => (
+            <a
+              key={channel.name}
+              href={channel.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 rounded-full bg-[var(--sa-navy)]/10 px-3 py-1 text-xs font-medium text-[var(--sa-navy)] transition hover:bg-[var(--sa-navy)]/20 dark:bg-[var(--sa-cream)]/10 dark:text-[var(--sa-cream)] dark:hover:bg-[var(--sa-cream)]/20"
+            >
+              {channel.name}
+            </a>
+          ))}
         </div>
       </div>
 
