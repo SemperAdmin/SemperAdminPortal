@@ -181,7 +181,7 @@ const inspections: InspectionCardProps[] = [
     href: "/inspections/misso",
     icon: <EyeIcon className="h-7 w-7" />,
     color: "red",
-    available: false,
+    available: true,
   },
 ];
 
