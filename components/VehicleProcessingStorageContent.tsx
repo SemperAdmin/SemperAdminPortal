@@ -2,38 +2,54 @@
 import { useState } from "react";
 
 type Ref = { title: string; desc: string; url: string; type: string };
+type Tab = "overview" | "steps" | "important" | "special" | "troubleshooter" | "references";
+
+const TABS: { key: Tab; label: string }[] = [
+  { key: "overview", label: "Overview" },
+  { key: "steps", label: "Steps" },
+  { key: "important", label: "Important" },
+  { key: "special", label: "Special" },
+  { key: "troubleshooter", label: "Troubleshooter" },
+  { key: "references", label: "References" },
+];
 
 export default function VehicleProcessingStorageContent({ data }: { data: { references: Ref[] } }) {
-  const [tab, setTab] = useState<"overview" | "eligibility" | "shipment" | "storage" | "documents" | "steps" | "troubleshooter" | "references">("overview");
+  const [tab, setTab] = useState<Tab>("overview");
 
   return (
     <div className="grid gap-6 lg:grid-cols-3">
       <div className="lg:col-span-2 space-y-6">
         <div className="flex items-center gap-2 overflow-x-auto [&>button]:whitespace-nowrap [&>button]:shrink-0">
-          <button onClick={() => setTab("overview")} className={`rounded-md px-3 py-2 text-sm ${tab === "overview" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Overview</button>
-          <button onClick={() => setTab("eligibility")} className={`rounded-md px-3 py-2 text-sm ${tab === "eligibility" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Eligibility</button>
-          <button onClick={() => setTab("shipment")} className={`rounded-md px-3 py-2 text-sm ${tab === "shipment" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Shipment</button>
-          <button onClick={() => setTab("storage")} className={`rounded-md px-3 py-2 text-sm ${tab === "storage" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Storage</button>
-          <button onClick={() => setTab("documents")} className={`rounded-md px-3 py-2 text-sm ${tab === "documents" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Documents</button>
-          <button onClick={() => setTab("steps")} className={`rounded-md px-3 py-2 text-sm ${tab === "steps" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Steps</button>
-          <button onClick={() => setTab("troubleshooter")} className={`rounded-md px-3 py-2 text-sm ${tab === "troubleshooter" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Troubleshooter</button>
-          <button onClick={() => setTab("references")} className={`rounded-md px-3 py-2 text-sm ${tab === "references" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>References</button>
+          {TABS.map((t) => (
+            <button
+              key={t.key}
+              onClick={() => setTab(t.key)}
+              className={`rounded-md px-3 py-2 text-sm ${tab === t.key ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}
+            >
+              {t.label}
+            </button>
+          ))}
         </div>
 
         {tab === "overview" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">POV Shipment & Storage</h2>
-            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">When you PCS to or from an overseas location, you may be entitled to ship your Privately Owned Vehicle (POV) at government expense or store it while you&apos;re overseas. The entitlement depends on your orders and destination.</p>
-            <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">What Is POV Shipment and Storage?</h2>
+            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">POV shipment and storage is a Government entitlement for moving or holding your personal vehicle during a PCS. You ship your POV when transferring to an OCONUS location where the vehicle is authorized. You store your POV at Government expense when shipping is not permitted or when extensive vehicle modifications would be required at the destination.</p>
+            <div className="mt-4 grid gap-4 sm:grid-cols-3">
               <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">POV Shipment</div>
-                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">1 Vehicle</div>
-                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">To/from OCONUS location</p>
+                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Entitlement</div>
+                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">1 POV</div>
+                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Per set of orders</p>
               </div>
               <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">POV Storage</div>
-                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">1 Vehicle</div>
-                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">During OCONUS assignment</p>
+                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Max Size</div>
+                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">20 MT</div>
+                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Measurement tons</p>
+              </div>
+              <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Insurance</div>
+                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">$20,000</div>
+                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Govt coverage limit</p>
               </div>
             </div>
             <div className="mt-6 rounded-2xl bg-[var(--sa-navy)] p-6 text-[var(--sa-cream)]">
@@ -41,166 +57,163 @@ export default function VehicleProcessingStorageContent({ data }: { data: { refe
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
                 BLUF
               </div>
-              <p className="mt-2 text-sm opacity-90">Schedule POV shipment at least 45-60 days before your departure. Ensure your vehicle meets safety and emissions requirements for the destination country. Vehicle must be in running condition and free of personal items except installed accessories.</p>
-              <div className="mt-4 flex gap-3 text-sm">
-                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">45-60 Day Lead Time</span>
-                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">One POV Only</span>
+              <p className="mt-2 text-sm opacity-90">Contact TMO/PPSO before making any plans. Schedule VPC appointments early during peak PCS season. Ensure vehicle meets all requirements before your appointment. Storage is in lieu of shipment—you choose one or the other on the same orders.</p>
+              <div className="mt-4 flex flex-wrap gap-3 text-sm">
+                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">Contact TMO First</span>
+                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">1 POV Per Orders</span>
+                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">Ship OR Store</span>
               </div>
             </div>
-          </section>
-        )}
-
-        {tab === "eligibility" && (
-          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">POV Entitlement Eligibility</h2>
-            <div className="mt-3 grid gap-4 md:grid-cols-2">
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">POV Shipment Eligible</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>PCS from CONUS to OCONUS</li>
-                  <li>PCS from OCONUS to CONUS</li>
-                  <li>PCS from OCONUS to OCONUS</li>
-                  <li>Destination allows POV import</li>
-                  <li>Orders duration 12+ months typically</li>
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              <div className="rounded-xl border border-green-200 bg-green-50 p-4 dark:border-white/15 dark:bg-white/10">
+                <h3 className="font-bold text-green-800 dark:text-green-400">Who Qualifies?</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-green-800 dark:text-zinc-300">
+                  <li>PCS orders to, from, or between OCONUS duty stations</li>
+                  <li>Vehicle registered in your name (or dependent&apos;s with authorization)</li>
+                  <li>Vehicle is self-propelled, licensed for public highways, designed to carry passengers</li>
+                  <li>Vehicle does not exceed 20 measurement tons</li>
                 </ul>
               </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">POV Storage Eligible</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>OCONUS assignment (unaccompanied)</li>
-                  <li>Destination doesn&apos;t allow POV</li>
-                  <li>Deployment (contingency)</li>
-                  <li>Short tour where shipment not practical</li>
+              <div className="rounded-xl border border-blue-200 bg-blue-50 p-4 dark:border-white/15 dark:bg-white/10">
+                <h3 className="font-bold text-blue-800 dark:text-blue-400">Storage Eligibility</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-blue-800 dark:text-zinc-300">
+                  <li>OCONUS location where POVs not authorized or require extensive modification</li>
+                  <li>Single Marines, geographic bachelors, or single parents on contingency TAD 30+ days (unit-funded)</li>
                 </ul>
               </div>
             </div>
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-amber-800 dark:border-white/15 dark:bg-white/10 dark:text-[var(--sa-cream)]">
-              <div className="text-xs font-semibold">Important Note</div>
-              <div className="mt-1 text-xs">You may ship OR store one POV at government expense, not both. If you choose to ship, storage is not authorized. Check destination restrictions before deciding.</div>
-            </div>
-          </section>
-        )}
-
-        {tab === "shipment" && (
-          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">POV Shipment</h2>
-            <div className="mt-4 space-y-4">
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Vehicle Requirements</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Running condition (must start and drive)</li>
-                  <li>Clean interior and exterior</li>
-                  <li>No more than 1/4 tank of fuel</li>
-                  <li>No personal items inside</li>
-                  <li>Current registration and insurance</li>
-                  <li>Meet destination country requirements</li>
-                </ul>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Transit Times (Approximate)</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>CONUS to Europe: 4-8 weeks</li>
-                  <li>CONUS to Pacific: 6-10 weeks</li>
-                  <li>CONUS to Japan/Korea: 6-8 weeks</li>
-                  <li>Processing adds 1-2 weeks each end</li>
-                </ul>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">VPC Locations</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Vehicle Processing Centers (VPCs) are located at major ports. Common CONUS locations include: Baltimore, Charleston, Jacksonville, San Diego, and Tacoma.</p>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {tab === "storage" && (
-          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">POV Storage</h2>
-            <div className="mt-4 space-y-4">
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Government Storage</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Arranged through VPC/PPO</li>
-                  <li>Covered for duration of OCONUS orders</li>
-                  <li>Vehicle must be in running condition</li>
-                  <li>Limited liability coverage included</li>
-                  <li>Periodic maintenance may be performed</li>
-                </ul>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Storage Duration</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Authorized for length of OCONUS assignment</li>
-                  <li>Notify for extension if tour extended</li>
-                  <li>Must retrieve within 90 days of return</li>
-                  <li>Excess time is member&apos;s expense</li>
-                </ul>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Storage Preparation</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Clean vehicle inside and out</li>
-                  <li>Remove all personal items</li>
-                  <li>Document existing damage with photos</li>
-                  <li>Maintain registration and insurance</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {tab === "documents" && (
-          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Required Documents</h2>
-            <div className="mt-3 grid gap-4 md:grid-cols-2">
-              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">For POV Shipment</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>PCS orders</li>
-                  <li>Vehicle registration</li>
-                  <li>Valid driver&apos;s license</li>
-                  <li>Proof of insurance</li>
-                  <li>Title or lien holder authorization</li>
-                  <li>Power of attorney (if spouse dropping off)</li>
-                </ul>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">For POV Storage</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>PCS orders</li>
-                  <li>Vehicle registration</li>
-                  <li>Proof of insurance (may need to maintain)</li>
-                  <li>Title or lien holder authorization</li>
-                  <li>Vehicle inspection report</li>
-                </ul>
-              </div>
+              <div className="text-xs font-semibold">Dual Military Couples</div>
+              <div className="mt-1 text-xs">Two service members married to each other: Each receives one POV entitlement on their respective orders.</div>
             </div>
           </section>
         )}
 
         {tab === "steps" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">POV Processing Steps</h2>
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">How POV Processing Works</h2>
             <div className="mt-4 space-y-4">
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 1: Verify Entitlement</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Check with PPO if your orders authorize POV shipment or storage. Verify destination country allows your vehicle type.</p>
+              {[
+                { title: "Contact Your Transportation Office (TMO/PPSO)", desc: "Visit your local TMO or Personal Property Shipping Office BEFORE making any plans. Obtain a letter authorizing POV shipment or storage. Confirm your destination allows POV entry." },
+                { title: "Create a PCSmyPOV Account", desc: "Go to www.pcsmypov.com. Register using a personal device (DoD network restrictions affect functionality). Use the site to locate VPCs, schedule appointments, and track your vehicle." },
+                { title: "Schedule a VPC Appointment", desc: "All Vehicle Processing Centers require appointments. Call 1-855-389-9499 for U.S. domestic appointments. Schedule early during peak PCS season (May-August). VPC hours: Monday-Friday, 0800-1600 (arrive by 1500)." },
+                { title: "Prepare Your Vehicle", desc: "Fuel tank: 1/4 tank or less. Interior: Clean, dry, free of dirt, sand, food, pet hair. Exterior: Washed. Battery: 11.5-13.2 volts. No unresolved electrical/fire recalls. Alarms disabled. Complete set of keys." },
+                { title: "Gather Required Documents", desc: "Complete PCS orders (including amendments), Web Orders for Marines, Military ID, vehicle registration, title or lienholder authorization, Power of Attorney if needed, pre-shipping forms, recall printout." },
+                { title: "Turn In Your Vehicle", desc: "Arrive at VPC with all documents. Complete joint inspection with inspector. Sign DD Form 788 (Private Vehicle Shipping Document). Receive copies of all forms. Provide emergency contact and OCONUS address." },
+                { title: "Track and Receive Your Vehicle", desc: "Track status through PCSmyPOV using your Shipping Instruction Number. Notify contractor at least 30 days before required delivery date. Complete pickup inspection at destination VPC. Document any damage immediately." },
+              ].map((step, index) => (
+                <div key={index} className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">{index + 1}</div>
+                    <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{step.title}</h3>
+                  </div>
+                  <p className="mt-2 pl-11 text-sm text-zinc-700 dark:text-zinc-300">{step.desc}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {tab === "important" && (
+          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Important Things to Know</h2>
+            <div className="mt-4 space-y-4">
+              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">POV Size Limitations</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li><strong>Maximum:</strong> 20 measurement tons (MT)</li>
+                  <li>Oversized vehicles incur excess cost at your expense</li>
+                  <li><strong>To calculate MT:</strong> Multiply length x width x height (inches), divide by 1728, then divide by 40</li>
+                  <li><strong>Exceptions:</strong> Oversized POV for approved medical reasons or dual-military combining entitlements</li>
+                </ul>
               </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 2: Schedule Appointment</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Book appointment with VPC 45-60 days in advance. Peak season may require earlier scheduling.</p>
+              <div className="rounded-xl border border-green-200 bg-green-50 p-4 dark:border-white/15 dark:bg-white/10">
+                <h3 className="font-bold text-green-800 dark:text-green-400">What Qualifies as a POV</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-green-800 dark:text-zinc-300">
+                  <li>Automobiles, station wagons, trucks, vans, pickups, jeeps</li>
+                  <li>Motorcycles and motor scooters (in lieu of a four-wheeled vehicle on same orders)</li>
+                  <li>Passenger-carrying multipurpose vehicles (written certification required)</li>
+                </ul>
               </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 3: Prepare Vehicle</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Clean vehicle, remove personal items, ensure 1/4 tank or less fuel, document existing damage with dated photos.</p>
+              <div className="rounded-xl border border-red-200 bg-red-50 p-4 dark:border-white/15 dark:bg-white/10">
+                <h3 className="font-bold text-red-800 dark:text-red-400">What Does NOT Qualify</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-red-800 dark:text-zinc-300">
+                  <li>Trailers</li>
+                  <li>Airplanes</li>
+                  <li>Vehicles intended for commercial use</li>
+                  <li>Non-conforming POVs (less than 25 years old must meet Federal safety standards)</li>
+                </ul>
               </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 4: Drop Off at VPC</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Bring all required documents. Complete inspection with VPC staff. Review and sign condition report. Get copy of all paperwork.</p>
+              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Insurance While in Storage</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>Government insures stored POVs up to <strong>$20,000</strong></li>
+                  <li>Coverage above $20,000 is your responsibility</li>
+                  <li>No personal insurance or licensing required while in Government storage on private property</li>
+                  <li>Contact your state DMV about De-Insured or Non-Use certificates to avoid re-registration penalties</li>
+                </ul>
               </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 5: Pick Up (Shipment)</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Upon arrival at destination, contact destination VPC. Complete receiving inspection. Note any damage on pickup form.</p>
+              <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-amber-800 dark:border-white/15 dark:bg-white/10 dark:text-[var(--sa-cream)]">
+                <div className="text-xs font-semibold">Storage Duration</div>
+                <ul className="mt-1 list-disc space-y-1 pl-5 text-xs">
+                  <li>POV remains in storage during your entire tour of duty</li>
+                  <li>Vehicles stored 90 days after tour termination with no contact become abandoned</li>
+                  <li>Once removed from storage, the POV cannot return to Government-funded storage under the same orders</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {tab === "special" && (
+          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Special Situations</h2>
+            <div className="mt-4 space-y-4">
+              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Self-Procured Storage</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">You arrange commercial storage at your own expense and receive Government reimbursement. Requirements:</p>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>Storage must be at a commercial fee-for-service facility open to the public</li>
+                  <li>Upon return, the Government does NOT ship the POV to your new PDS VPC</li>
+                  <li>You are responsible for picking up and transporting the vehicle</li>
+                </ul>
+              </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Contingency Operations (TAD 30+ Days)</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>Only single Marines, geographic bachelors, or single parents qualify</li>
+                  <li>Unit funds the storage</li>
+                  <li>TMO letter required</li>
+                </ul>
+              </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Early Release from Storage Without New Orders</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>You forfeit future shipment or storage entitlements under the same orders</li>
+                  <li>POV must be picked up at a CONUS VPC or the VPC serving the storage site</li>
+                </ul>
+              </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Dual-Military Couples</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>Each member has one POV entitlement per set of orders</li>
+                  <li>Option to combine the 20-MT limitation and ship one large POV at Government expense (limited to total cost of shipping two separate POVs)</li>
+                </ul>
+              </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Leased Vehicles</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>You must provide written authorization from the leasing company to ship or store</li>
+                  <li>All lease requirements remain your responsibility</li>
+                </ul>
+              </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Alternate VPC Selection</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>You receive travel entitlements to the service-designated VPC only</li>
+                  <li>Selecting an alternate VPC does not require CMC approval</li>
+                  <li>Orders must identify both the service-designated VPC and the alternate chosen</li>
+                </ul>
               </div>
             </div>
           </section>
@@ -211,39 +224,32 @@ export default function VehicleProcessingStorageContent({ data }: { data: { refe
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Common Problems & Solutions</h2>
             <div className="mt-3 space-y-4">
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Vehicle damaged during shipment</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Document damage at pickup before signing</li>
-                  <li>Take photos of all damage</li>
-                  <li>File claim with VPC/shipping company</li>
-                  <li>Keep copies of drop-off condition report</li>
-                </ul>
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Vehicle rejected at VPC for cleanliness</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300"><strong>Solution:</strong> Clean interior and exterior thoroughly before your appointment. Remove all dirt, food, pet hair, and debris. Ensure the interior is completely dry.</p>
               </div>
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Vehicle rejected at VPC</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Common reasons: won&apos;t start, too much fuel, personal items</li>
-                  <li>Fix issue and reschedule</li>
-                  <li>May need to arrange repair before drop-off</li>
-                </ul>
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">VPC will not accept vehicle due to open recalls</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300"><strong>Solution:</strong> Check for recalls before your appointment at www.nhtsa.gov. Bring documented proof of no open electrical or fire-related recalls.</p>
               </div>
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Vehicle not at destination when expected</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Check tracking through VPC</li>
-                  <li>Transit delays are common</li>
-                  <li>Contact origin and destination VPCs</li>
-                  <li>Keep rental car receipts for potential reimbursement</li>
-                </ul>
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Vehicle exceeds 20 measurement tons</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300"><strong>Solution:</strong> Calculate your vehicle&apos;s MT before turn-in. Remove non-essential accessories (ladder, external spare tire, luggage racks) to reduce size. Pay excess costs if oversized.</p>
               </div>
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Vehicle doesn&apos;t meet country requirements</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Research requirements BEFORE shipping</li>
-                  <li>Some countries require specific modifications</li>
-                  <li>May need to store instead of ship</li>
-                  <li>Consult destination installation</li>
-                </ul>
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Battery reading is below 11.5 volts</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300"><strong>Solution:</strong> Replace the battery at your expense before turn-in.</p>
+              </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Missing lienholder authorization for financed vehicle</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300"><strong>Solution:</strong> Contact your lender and obtain a letter of authorization on company letterhead with full vehicle description and VIN before your VPC appointment.</p>
+              </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Vehicle stored but member needs it back before new orders</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300"><strong>Solution:</strong> Request early release understanding you forfeit remaining storage and shipment entitlements under those orders.</p>
+              </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Vehicle abandoned due to no contact after tour</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300"><strong>Solution:</strong> Notify the VPC of your new address and pickup instructions at least 30 days before your required delivery date. Respond to all contractor notifications promptly.</p>
               </div>
             </div>
           </section>
@@ -279,24 +285,60 @@ export default function VehicleProcessingStorageContent({ data }: { data: { refe
 
       <aside className="space-y-6 lg:mt-6">
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Facts</h3>
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Key Contacts</h3>
           <ul className="mt-3 space-y-2 text-sm">
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">POV Limit</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">1 vehicle per PCS</div>
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">PCSmyPOV Appointments</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">1-855-389-9499</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Lead Time</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">45-60 days minimum</div>
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Local TMO/PPSO</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">Contact your installation</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Transit Time</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">4-10 weeks depending on route</div>
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">International Auto Logistics</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">www.pcsmypov.com</div>
+            </li>
+          </ul>
+        </section>
+
+        <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Facts</h3>
+          <ul className="mt-3 space-y-2 text-sm">
+            <li className="rounded-md border border-red-200 bg-red-50 p-3 dark:border-white/15 dark:bg-white/10">
+              <div className="font-medium text-red-700 dark:text-[var(--sa-cream)]">20 MT Max</div>
+              <div className="text-xs text-red-600 dark:text-zinc-300">Size limit for POV</div>
+            </li>
+            <li className="rounded-md border border-amber-200 bg-amber-50 p-3 dark:border-white/15 dark:bg-white/10">
+              <div className="font-medium text-amber-700 dark:text-[var(--sa-cream)]">$20,000</div>
+              <div className="text-xs text-amber-600 dark:text-zinc-300">Govt insurance coverage</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Storage Limit</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">Duration of OCONUS tour</div>
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">VPC Hours</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">Mon-Fri 0800-1600</div>
             </li>
+            <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Peak Season</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">May - August</div>
+            </li>
+          </ul>
+        </section>
+
+        <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Key Forms</h3>
+          <ul className="mt-3 space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
+            <li><strong>DD 788</strong> - Private Vehicle Shipping Document</li>
+            <li><strong>Shipper Acknowledgement</strong></li>
+            <li><strong>Storage Acknowledgement</strong></li>
+            <li><strong>Recall Printout</strong></li>
+          </ul>
+        </section>
+
+        <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Links</h3>
+          <ul className="mt-3 space-y-1 text-sm">
+            <li><a href="https://www.pcsmypov.com/" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">PCSmyPOV Portal</a></li>
+            <li><a href="https://www.nhtsa.gov/recalls" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">NHTSA Recall Check</a></li>
           </ul>
         </section>
       </aside>
