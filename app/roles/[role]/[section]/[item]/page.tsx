@@ -805,9 +805,9 @@ const FLPP_DATA = {
 // Travel & Transportation Data Objects
 const PCS_ORDERS_DATA = {
   references: [
-    { title: "MOL (Marine Online)", desc: "Access PCS orders through OBI module.", url: "https://mol.tfs.usmc.mil/", type: "Website" },
-    { title: "move.mil (DPS)", desc: "Register HHG shipments and track moves.", url: "https://www.move.mil/", type: "Website" },
-    { title: "Plan My Move", desc: "Personalized PCS checklist and timeline.", url: "https://planmymove.militaryonesource.mil/", type: "Website" },
+    { title: "MOL (Marine Online)", desc: "Access PCS orders through OBI module.", url: "https://mol.tfs.usmc.mil/", type: "Website", isQuickLink: true },
+    { title: "move.mil (DPS)", desc: "Register HHG shipments and track moves.", url: "https://www.move.mil/", type: "Website", isQuickLink: true },
+    { title: "Plan My Move", desc: "Personalized PCS checklist and timeline.", url: "https://planmymove.militaryonesource.mil/", type: "Website", isQuickLink: true },
     { title: "Military OneSource PCS", desc: "PCS resources and support.", url: "https://www.militaryonesource.mil/", type: "Website" },
     { title: "HQMC PCS Move Resources", desc: "Official Marine Corps PCS guidance.", url: "https://www.iandl.marines.mil/Divisions/Logistics-Division-LP/Logistics-Distribution-Policy-Branch-LPD/PCS-Move-Resources/", type: "Website" },
     { title: "IRR Program", desc: "Information, Referral, and Relocation support.", url: "https://www.usmc-mccs.org/marine-family-support/information-referral-and-relocation", type: "Website" },
@@ -929,23 +929,30 @@ const VEHICLE_DATA = {
 
 const TAD_DATA = {
   references: [
-    { title: "Joint Travel Regulations Ch 2", desc: "TAD/TDY travel policy and entitlements.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
-    { title: "Defense Travel System", desc: "Official DTS portal.", url: "https://www.defensetravel.dod.mil/", type: "Website" },
-    { title: "DFAS Travel Pay", desc: "TAD reimbursement processing.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+    { title: "Defense Travel System (DTS)", desc: "Official DTS portal for TAD orders and travel vouchers.", url: "https://www.defensetravel.dod.mil/", type: "Website", isQuickLink: true },
+    { title: "Per Diem Rates (CONUS)", desc: "GSA lodging and M&IE rates for CONUS locations.", url: "https://www.gsa.gov/travel/plan-book/per-diem-rates", type: "Website", isQuickLink: true },
+    { title: "Per Diem Rates (OCONUS)", desc: "DTMO per diem rates for OCONUS locations.", url: "https://www.travel.dod.mil/Travel-Transportation-Rates/Per-Diem/", type: "Website", isQuickLink: true },
+    { title: "Joint Travel Regulations", desc: "Official policy for TAD/TDY travel and entitlements.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "GTCC Information", desc: "Government Travel Charge Card policies and requirements.", url: "https://www.defensetravel.dod.mil/site/govtravelcard.cfm", type: "Website", isQuickLink: true },
+    { title: "MCO 1000.6 Chapter 4", desc: "Marine Corps TAD order policies.", url: "https://www.marines.mil/Portals/1/Publications/MCO%201000.6.pdf", type: "Policy" },
+    { title: "MCO 4650.39A", desc: "Marine Corps travel and transportation policy.", url: "https://www.marines.mil/Portals/1/Publications/MCO%204650.39A.pdf", type: "Policy" },
   ],
 };
 
 const PER_DIEM_DATA = {
   perDiemRates: [
-    { location: "CONUS Standard", lodging: 110, mie: 64, total: 174 },
+    { location: "CONUS Standard", lodging: 110, mie: 68, total: 178 },
     { location: "Washington DC", lodging: 267, mie: 79, total: 346 },
     { location: "San Diego, CA", lodging: 225, mie: 79, total: 304 },
     { location: "New York City", lodging: 343, mie: 79, total: 422 },
   ],
   references: [
-    { title: "GSA Per Diem Rates", desc: "Official CONUS per diem rates.", url: "https://www.gsa.gov/travel/plan-book/per-diem-rates", type: "Website" },
-    { title: "DTMO Per Diem", desc: "OCONUS per diem rate lookup.", url: "https://www.travel.dod.mil/Allowances/Per-Diem/", type: "Website" },
-    { title: "Joint Travel Regulations Ch 2", desc: "Per diem policy and computation.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "GSA Per Diem Lookup (CONUS)", desc: "Official CONUS per diem rates by location.", url: "https://www.gsa.gov/travel/plan-book/per-diem-rates", type: "Website", isQuickLink: true },
+    { title: "DTMO Per Diem Lookup (OCONUS)", desc: "OCONUS per diem rate lookup tool.", url: "https://www.travel.dod.mil/Travel-Transportation-Rates/Per-Diem/Per-Diem-Rate-Lookup/", type: "Website", isQuickLink: true },
+    { title: "M&IE Breakdown Tables", desc: "Meal deduction amounts by M&IE tier.", url: "https://www.gsa.gov/travel/plan-a-trip/per-diem-rates/mie-breakdowns", type: "Website", isQuickLink: true },
+    { title: "Foreign Per Diem Rates", desc: "State Department foreign per diem rates.", url: "https://aoprals.state.gov/content.asp?content_id=184&menu_id=78", type: "Website" },
+    { title: "POV Mileage Rates", desc: "Current GSA privately owned vehicle mileage rates.", url: "https://www.gsa.gov/travel/plan-a-trip/transportation-airfare-rates-pov-rates-etc/privately-owned-vehicle-pov-mileage-reimbursement", type: "Website", isQuickLink: true },
+    { title: "Joint Travel Regulations", desc: "JTR Chapter 2 - Per diem policy and computation.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
   ],
 };
 
