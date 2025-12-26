@@ -983,9 +983,13 @@ const DTS_DATA = {
 
 const GTCC_DATA = {
   references: [
-    { title: "DoD Travel Card Program", desc: "GTCC program overview and policies.", url: "https://www.defensetravel.dod.mil/site/govtravelcard.cfm", type: "Policy" },
-    { title: "Citibank GTCC", desc: "Cardholder account management.", url: "https://www.citimanager.com/", type: "Website" },
-    { title: "Joint Travel Regulations App A", desc: "GTCC policy and usage requirements.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "CitiManager Portal", desc: "Manage your GTCC account, view statements, make payments.", url: "https://www.citimanager.com/", type: "Website", isQuickLink: true },
+    { title: "DTMO GTCC Information", desc: "Government Travel Charge Card program overview and resources.", url: "https://www.travel.dod.mil/Programs/Government-Travel-Charge-Card/", type: "Website", isQuickLink: true },
+    { title: "GTCC Cardholder Guide", desc: "Official cardholder guidance and policies.", url: "https://www.travel.dod.mil/Programs/Government-Travel-Charge-Card/Cardholders/", type: "Website", isQuickLink: true },
+    { title: "Travel Explorer (TraX)", desc: "GTCC training modules and certification.", url: "https://www.defensetravel.dod.mil/neoaccess/login.php", type: "Website", isQuickLink: true },
+    { title: "MCO 4600.40B", desc: "Marine Corps Government Travel Charge Card Program order.", url: "https://www.marines.mil/News/Publications/MCPEL/", type: "Policy" },
+    { title: "DoD 7000.14-R Volume 9", desc: "DoD Financial Management Regulation - Travel Policy.", url: "https://comptroller.defense.gov/FMR/vol9.aspx", type: "Policy" },
+    { title: "Joint Travel Regulations", desc: "JTR Appendix A - GTCC policy and usage requirements.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
   ],
 };
 
