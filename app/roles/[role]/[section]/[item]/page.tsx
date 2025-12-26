@@ -941,15 +941,18 @@ const TAD_DATA = {
 
 const PER_DIEM_DATA = {
   perDiemRates: [
-    { location: "CONUS Standard", lodging: 110, mie: 64, total: 174 },
+    { location: "CONUS Standard", lodging: 110, mie: 68, total: 178 },
     { location: "Washington DC", lodging: 267, mie: 79, total: 346 },
     { location: "San Diego, CA", lodging: 225, mie: 79, total: 304 },
     { location: "New York City", lodging: 343, mie: 79, total: 422 },
   ],
   references: [
-    { title: "GSA Per Diem Rates", desc: "Official CONUS per diem rates.", url: "https://www.gsa.gov/travel/plan-book/per-diem-rates", type: "Website" },
-    { title: "DTMO Per Diem", desc: "OCONUS per diem rate lookup.", url: "https://www.travel.dod.mil/Allowances/Per-Diem/", type: "Website" },
-    { title: "Joint Travel Regulations Ch 2", desc: "Per diem policy and computation.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "GSA Per Diem Lookup (CONUS)", desc: "Official CONUS per diem rates by location.", url: "https://www.gsa.gov/travel/plan-book/per-diem-rates", type: "Website", isQuickLink: true },
+    { title: "DTMO Per Diem Lookup (OCONUS)", desc: "OCONUS per diem rate lookup tool.", url: "https://www.travel.dod.mil/Travel-Transportation-Rates/Per-Diem/Per-Diem-Rate-Lookup/", type: "Website", isQuickLink: true },
+    { title: "M&IE Breakdown Tables", desc: "Meal deduction amounts by M&IE tier.", url: "https://www.gsa.gov/travel/plan-a-trip/per-diem-rates/mie-breakdowns", type: "Website", isQuickLink: true },
+    { title: "Foreign Per Diem Rates", desc: "State Department foreign per diem rates.", url: "https://aoprals.state.gov/content.asp?content_id=184&menu_id=78", type: "Website" },
+    { title: "POV Mileage Rates", desc: "Current GSA privately owned vehicle mileage rates.", url: "https://www.gsa.gov/travel/plan-a-trip/transportation-airfare-rates-pov-rates-etc/privately-owned-vehicle-pov-mileage-reimbursement", type: "Website", isQuickLink: true },
+    { title: "Joint Travel Regulations", desc: "JTR Chapter 2 - Per diem policy and computation.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
   ],
 };
 
