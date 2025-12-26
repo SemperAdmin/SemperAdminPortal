@@ -160,6 +160,28 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
                 alt={key === "pac-personnel-admin-center" ? "PAC Battle Rhythm" : "S-1 Battle Rhythm"}
                 className="w-full h-auto rounded-lg border border-black/10 dark:border-white/10"
               />
+              <div className="mt-4 flex gap-3">
+                <a
+                  href={key === "pac-personnel-admin-center"
+                    ? "https://usmc.sharepoint-mil.us/:w:/r/sites/DCMRA_mra_SemperAdmin/Template%20Toolbox/Battle%20Rhythms%20PAC.docx?d=w38a97bcabfeb4878b9124a7ccb46e4e5&csf=1&web=1&e=PqVdao"
+                    : "https://usmc.sharepoint-mil.us/:w:/r/sites/DCMRA_mra_SemperAdmin/Template%20Toolbox/Battle%20Rhythms%20S-1.docx?d=we95586cde4be4d50a3c39994d2035bd4&csf=1&web=1&e=HxdR4y"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-md bg-[var(--sa-navy)] px-4 py-2 text-[var(--sa-cream)] shadow-sm transition hover:bg-[var(--sa-navy-hover)] dark:hover:bg-[var(--sa-red)]/60"
+                >
+                  Live Document
+                </a>
+                <a
+                  href={key === "pac-personnel-admin-center"
+                    ? "https://youtu.be/T14cDRxZnt8"
+                    : "https://youtu.be/Fji5rH5zmqg"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-md bg-[var(--sa-red)] px-4 py-2 text-[var(--sa-cream)] shadow-sm transition hover:bg-[var(--sa-red)]/80"
+                >
+                  Video
+                </a>
+              </div>
             </div>
           </section>
 
