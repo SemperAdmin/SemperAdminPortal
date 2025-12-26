@@ -1,6 +1,5 @@
 import { type Role, catalogGroups, reportGroups, type CatalogGroup } from "../../../../data/links";
 import Link from "next/link";
-import Image from "next/image";
 import CatalogGrid from "../../../../components/CatalogGrid";
 
 type Params = { role: Role; section: string };
@@ -153,23 +152,12 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
           <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Battle Rhythm</h2>
             <div className="mt-4">
-              {key === "pac-personnel-admin-center" ? (
-                <Image
-                  src="/PAC-Battle-Rhythm.png"
-                  alt="PAC Battle Rhythm"
-                  width={1024}
-                  height={800}
-                  className="w-full h-auto rounded-lg border border-black/10 dark:border-white/10"
-                />
-              ) : (
-                <Image
-                  src="/S-1-Battle-Rhythm.png"
-                  alt="S-1 Battle Rhythm"
-                  width={1024}
-                  height={800}
-                  className="w-full h-auto rounded-lg border border-black/10 dark:border-white/10"
-                />
-              )}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={key === "pac-personnel-admin-center" ? "/PAC-Battle-Rhythm.png" : "/S-1-Battle-Rhythm.png"}
+                alt={key === "pac-personnel-admin-center" ? "PAC Battle Rhythm" : "S-1 Battle Rhythm"}
+                className="w-full h-auto rounded-lg border border-black/10 dark:border-white/10"
+              />
             </div>
           </section>
 
