@@ -131,9 +131,9 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
         <div className="space-y-8">
           {/* Battle Rhythm + Quick Actions Side by Side */}
           <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <div className="grid gap-6 lg:grid-cols-[1fr,280px]">
+            <div className="flex flex-col gap-6 md:flex-row">
               {/* Battle Rhythm - Left Side */}
-              <div>
+              <div className="flex-1">
                 <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Battle Rhythm</h2>
                 <div className="mt-4">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -168,7 +168,7 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
               </div>
 
               {/* Quick Actions - Right Side */}
-              <div>
+              <div className="w-full md:w-64 shrink-0">
                 <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Actions</h2>
                 <div className="mt-4 flex flex-col gap-3">
                   {key === "s1-g1-administration" || key === "ii-i-staff-administration" ? (
