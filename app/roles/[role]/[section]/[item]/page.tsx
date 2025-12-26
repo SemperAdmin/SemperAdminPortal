@@ -994,23 +994,24 @@ const GTCC_DATA = {
 };
 
 const MILEAGE_DATA = {
-  mileageRates: [
-    { year: "2025", rate: 0.70, effective: "January 1, 2025" },
-    { year: "2024", rate: 0.67, effective: "January 1, 2024" },
-    { year: "2023", rate: 0.655, effective: "January 1, 2023" },
-  ],
   references: [
-    { title: "GSA Mileage Rates", desc: "Official POC mileage reimbursement rates.", url: "https://www.gsa.gov/travel/plan-book/transportation-airfare-pov-etc/privately-owned-vehicle-pov-mileage-reimbursement", type: "Website" },
-    { title: "Joint Travel Regulations Ch 2", desc: "POC authorization and mileage policy.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
-    { title: "DTOD", desc: "Defense Table of Official Distances.", url: "https://dtod.sddc.army.mil/", type: "Website" },
+    { title: "GSA Mileage Rates", url: "https://www.gsa.gov/travel/plan-book/transportation-airfare-pov-etc/privately-owned-vehicle-pov-mileage-reimbursement", isQuickLink: true },
+    { title: "DTOD (Official Distance Tool)", url: "https://dtod.sddc.army.mil/", isQuickLink: true },
+    { title: "Joint Travel Regulations", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: true },
+    { title: "DTS Portal", url: "https://dtsproweb.defensetravel.osd.mil", isQuickLink: true },
+    { title: "MARADMIN 070/21 (Reserve IDT Travel)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
+    { title: "DFAS Travel Pay", url: "https://www.dfas.mil/militarymembers/travelpay/", isQuickLink: false },
   ],
 };
 
 const ADVANCE_PAY_DATA = {
   references: [
-    { title: "Joint Travel Regulations Ch 2", desc: "Travel advance policies and limits.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
-    { title: "Defense Travel System", desc: "Advance request through DTS.", url: "https://www.defensetravel.dod.mil/", type: "Website" },
-    { title: "DFAS Travel Pay", desc: "Advance payment processing.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+    { title: "DFAS Travel Pay", url: "https://www.dfas.mil/militarymembers/travelpay/", isQuickLink: true },
+    { title: "Joint Travel Regulations", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: true },
+    { title: "DTS Help Desk", url: "https://www.defensetravel.dod.mil/", isQuickLink: true },
+    { title: "DoD FMR Volume 9", url: "https://comptroller.defense.gov/portals/45/documents/fmr/volume_09.pdf", isQuickLink: true },
+    { title: "MCO 1000.6 (Travel Systems Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
+    { title: "MCO 4600.40B (GTCC Program)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
   ],
 };
 
