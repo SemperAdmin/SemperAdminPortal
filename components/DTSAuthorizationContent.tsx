@@ -249,7 +249,7 @@ export default function DTSAuthorizationContent({ data }: { data: { references: 
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
               <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">DTMO Travel Assistance</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">travel.dod.mil/Support</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">https://travel.dod.mil/Support</div>
             </li>
           </ul>
         </section>

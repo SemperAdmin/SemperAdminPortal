@@ -17,7 +17,7 @@ const TABS: { key: Tab; label: string }[] = [
 ];
 
 const VOUCHER_STEPS = [
-  { title: "Log into DTS", desc: "Access the DTS portal at dtsproweb.defensetravel.osd.mil. Use your CAC for authentication." },
+  { title: "Log into DTS", desc: "Access the DTS portal at https://dtsproweb.defensetravel.osd.mil. Use your CAC for authentication." },
   { title: "Create Voucher from Authorization", desc: "Select \"Official Travel\" then \"Vouchers.\" Click \"Create New Voucher\" and select your approved travel authorization. DTS will pre-populate trip data from your authorization." },
   { title: "Verify Trip Data", desc: "Confirm your actual travel dates match what occurred. Update departure and arrival times. Verify all TDY locations are correct. Ensure the itinerary reflects your actual travel." },
   { title: "Add and Update Expenses", desc: "Navigate to the Expenses module. Update estimated expenses to actual amounts. Add any additional expenses incurred during travel. Attach receipts for all expenses $75 or more." },
@@ -56,7 +56,7 @@ const SPECIAL_SITUATIONS = [
 const TIPS = [
   { title: "Save receipts immediately", desc: "Photograph or scan receipts during travel before they fade or get lost." },
   { title: "Match dates exactly", desc: "Your voucher dates must align with your orders and authorization." },
-  { title: "Use lodging per diem lookup", desc: "Verify locality rates at travel.dod.mil before claiming." },
+  { title: "Use lodging per diem lookup", desc: "Verify locality rates at https://travel.dod.mil before claiming." },
   { title: "Run Pre-Audit before signing", desc: "Fix all errors before routing to approver." },
   { title: "Contact admin early", desc: "Reach out to your unit administrator for LOA issues or unusual circumstances." },
   { title: "Track your voucher", desc: "Monitor DTS status and respond immediately to any return for corrections." },
@@ -111,7 +111,7 @@ export default function TravelVoucherSubmissionContent({ data }: { data: { refer
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
                 BLUF
               </div>
-              <p className="mt-2 text-sm opacity-90">Submit within 5 working days of completing travel. Attach receipts for any single expense $75 or more. Accurate dates and times directly affect per diem calculations. Late submission may result in advance deductions from pay and GTCC delinquency.</p>
+              <p className="mt-2 text-sm opacity-90">Submit within 5 working days of completing travel. Attach all lodging receipts (regardless of amount) and receipts for any other single expense of $75 or more. Accurate dates and times directly affect per diem calculations. Late submission may result in advance deductions from pay and GTCC delinquency.</p>
               <div className="mt-4 flex flex-wrap gap-3 text-sm">
                 <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">5-Day Deadline</span>
                 <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">$75 Receipt Threshold</span>
@@ -144,7 +144,7 @@ export default function TravelVoucherSubmissionContent({ data }: { data: { refer
         {tab === "receipts" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Receipt Requirements</h2>
-            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Receipts are required for any single expense of $75 or more. Common items requiring receipts:</p>
+            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Receipts are required for all lodging expenses (regardless of amount) and for any other single expense of $75 or more. Common items requiring receipts:</p>
             <div className="mt-4 rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
               <ul className="space-y-2">
                 {RECEIPT_ITEMS.map((item) => (
@@ -316,7 +316,7 @@ export default function TravelVoucherSubmissionContent({ data }: { data: { refer
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
               <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Receipt Threshold</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">$75 or more for any single expense</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">All lodging, plus other expenses over $75</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
               <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Payment Time</div>
