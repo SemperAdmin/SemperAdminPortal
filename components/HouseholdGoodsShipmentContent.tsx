@@ -3,21 +3,34 @@ import { useState } from "react";
 
 type Ref = { title: string; desc: string; url: string; type: string };
 type WeightAllowance = { rank: string; withDependents: number; withoutDependents: number };
+type Tab = "overview" | "weights" | "options" | "steps" | "oconus" | "troubleshooter" | "references";
+
+const TABS: { key: Tab; label: string }[] = [
+  { key: "overview", label: "Overview" },
+  { key: "weights", label: "Weight Allowances" },
+  { key: "options", label: "Move Options" },
+  { key: "steps", label: "Steps" },
+  { key: "oconus", label: "OCONUS" },
+  { key: "troubleshooter", label: "Troubleshooter" },
+  { key: "references", label: "References" },
+];
 
 export default function HouseholdGoodsShipmentContent({ data }: { data: { weightAllowances: WeightAllowance[]; references: Ref[] } }) {
-  const [tab, setTab] = useState<"overview" | "weights" | "options" | "steps" | "oconus" | "troubleshooter" | "references">("overview");
+  const [tab, setTab] = useState<Tab>("overview");
 
   return (
     <div className="grid gap-6 lg:grid-cols-3">
       <div className="lg:col-span-2 space-y-6">
         <div className="flex items-center gap-2 overflow-x-auto [&>button]:whitespace-nowrap [&>button]:shrink-0">
-          <button onClick={() => setTab("overview")} className={`rounded-md px-3 py-2 text-sm ${tab === "overview" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Overview</button>
-          <button onClick={() => setTab("weights")} className={`rounded-md px-3 py-2 text-sm ${tab === "weights" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Weight Allowances</button>
-          <button onClick={() => setTab("options")} className={`rounded-md px-3 py-2 text-sm ${tab === "options" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Move Options</button>
-          <button onClick={() => setTab("steps")} className={`rounded-md px-3 py-2 text-sm ${tab === "steps" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Steps</button>
-          <button onClick={() => setTab("oconus")} className={`rounded-md px-3 py-2 text-sm ${tab === "oconus" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>OCONUS</button>
-          <button onClick={() => setTab("troubleshooter")} className={`rounded-md px-3 py-2 text-sm ${tab === "troubleshooter" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Troubleshooter</button>
-          <button onClick={() => setTab("references")} className={`rounded-md px-3 py-2 text-sm ${tab === "references" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>References</button>
+          {TABS.map((t) => (
+            <button
+              key={t.key}
+              onClick={() => setTab(t.key)}
+              className={`rounded-md px-3 py-2 text-sm ${tab === t.key ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}
+            >
+              {t.label}
+            </button>
+          ))}
         </div>
 
         {tab === "overview" && (

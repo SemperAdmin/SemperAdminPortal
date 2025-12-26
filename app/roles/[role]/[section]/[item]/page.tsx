@@ -828,9 +828,9 @@ const HHG_DATA = {
     { rank: "E-3 and below", withDependents: 8000, withoutDependents: 5000 },
   ],
   references: [
-    { title: "MCO 4600.39", desc: "Marine Corps Personal Property Manual (19 Aug 2016).", url: "https://www.marines.mil/", type: "Policy" },
-    { title: "MARADMIN 208/25", desc: "FY25 Personal Property Peak Season guidance.", url: "https://www.marines.mil/News/Messages/", type: "Policy" },
-    { title: "JTR Chapter 5 Part D", desc: "Joint Travel Regulations - HHG shipping entitlements.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "MCO 4600.39", desc: "Marine Corps Personal Property Manual (19 Aug 2016).", url: "https://www.marines.mil/News/Publications/ELECTRONIC-LIBRARY/Electronic-Library-Display/Article/900116/mco-460039/", type: "Policy" },
+    { title: "MARADMIN 208/25", desc: "FY25 Personal Property Peak Season guidance.", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/3769591/fy25-personal-property-peak-season-guidance/", type: "Policy" },
+    { title: "JTR Chapter 5 Part D", desc: "Joint Travel Regulations - HHG shipping entitlements.", url: "https://www.defensetravel.dod.mil/Docs/perdiem/JTR.pdf", type: "Policy" },
     { title: "DPS Landing Page", desc: "Defense Personal Property System - Start your move here.", url: "https://dps.move.mil", type: "Website" },
     { title: "Move.mil", desc: "Official DoD moving portal for HHG shipments.", url: "https://www.move.mil/", type: "Website" },
   ],
@@ -838,19 +838,19 @@ const HHG_DATA = {
 
 const PPM_DATA = {
   references: [
-    { title: "JTR Chapter 5", desc: "Permanent Duty Travel - PPM entitlements, GCC calculation, and reimbursement.", url: "https://www.defensetravel.dod.mil/site/travelreg.cfm", type: "Policy" },
-    { title: "MCO 4600.39", desc: "Marine Corps Personal Property Manual - PPM procedures and requirements.", url: "https://www.marines.mil/", type: "Policy" },
-    { title: "DTR Part IV Appendix K-1", desc: "Defense Transportation Regulation - PPM weight and expense documentation.", url: "https://www.ustranscom.mil/dtr/", type: "Policy" },
+    { title: "JTR Chapter 5", desc: "Permanent Duty Travel - PPM entitlements, GCC calculation, and reimbursement.", url: "https://www.defensetravel.dod.mil/Docs/perdiem/JTR.pdf", type: "Policy" },
+    { title: "MCO 4600.39", desc: "Marine Corps Personal Property Manual - PPM procedures and requirements.", url: "https://www.marines.mil/News/Publications/ELECTRONIC-LIBRARY/Electronic-Library-Display/Article/900116/mco-460039/", type: "Policy" },
+    { title: "DTR Part IV Appendix K-1", desc: "Defense Transportation Regulation - PPM weight and expense documentation.", url: "https://www.ustranscom.mil/dtr/part-iv/dtr-part-4-app-k-1.pdf", type: "Policy" },
     { title: "MilMove Portal", desc: "Create PPM shipments, request AOA, and submit claims.", url: "https://my.move.mil/", type: "Website" },
-    { title: "LOGCOM TVCB", desc: "Travel Voucher Certification Branch - PPM claim processing.", url: "https://www.logcom.marines.mil/", type: "Website" },
+    { title: "LOGCOM TVCB", desc: "Travel Voucher Certification Branch - PPM claim processing.", url: "https://www.logcom.marines.mil/Subordinate-Commands/Fiscal/Travel-Voucher-Certification-Branch/", type: "Website" },
   ],
 };
 
 const PCS_STORAGE_DATA = {
   references: [
     { title: "JTR Chapter 5", desc: "Storage entitlements - SIT, NTS time limits, and extension requirements.", url: "https://www.defensetravel.dod.mil/Docs/perdiem/JTR.pdf", type: "Policy" },
-    { title: "MCO 4600.39", desc: "Marine Corps Personal Property Manual - storage procedures.", url: "https://www.marines.mil/", type: "Policy" },
-    { title: "DTR Part IV Ch 406", desc: "Defense Transportation Regulation - storage program administration.", url: "https://www.ustranscom.mil/dtr/dtrp4.cfm", type: "Policy" },
+    { title: "MCO 4600.39", desc: "Marine Corps Personal Property Manual - storage procedures.", url: "https://www.marines.mil/News/Publications/ELECTRONIC-LIBRARY/Electronic-Library-Display/Article/900116/mco-460039/", type: "Policy" },
+    { title: "DTR Part IV Ch 406", desc: "Defense Transportation Regulation - storage program administration.", url: "https://www.ustranscom.mil/dtr/part-iv/dtr-part-4-406.pdf", type: "Policy" },
     { title: "MilMove Portal", desc: "DPS/MilMove for storage requests and tracking.", url: "https://www.move.mil/", type: "Website" },
     { title: "PCSmyPOV.com", desc: "POV shipping and storage for OCONUS moves.", url: "https://www.pcsmypov.com/", type: "Website" },
     { title: "Military OneSource", desc: "Moving and storage resources and guidance.", url: "https://www.militaryonesource.mil/moving-pcs/", type: "Website" },
@@ -886,7 +886,7 @@ const DLA_DATA = {
   ],
   references: [
     { title: "JTR Chapter 5 Section 0505", desc: "DLA entitlement, eligibility, and fiscal year limitations.", url: "https://media.defense.gov/2022/Jan/04/2002917147/-1/-1/0/JTR.PDF", type: "Policy" },
-    { title: "MCO 1000.6", desc: "Marine Corps assignment and travel policy.", url: "https://www.marines.mil/", type: "Policy" },
+    { title: "MCO 1000.6", desc: "Marine Corps assignment and travel policy.", url: "https://www.marines.mil/News/Publications/ELECTRONIC-LIBRARY/Electronic-Library-Display/Article/899526/mco-10006/", type: "Policy" },
     { title: "37 U.S.C. 477", desc: "Statutory authority for DLA payment.", url: "https://www.law.cornell.edu/uscode/text/37/477", type: "Policy" },
     { title: "DTMO DLA Rate Lookup", desc: "Current DLA rates by grade and dependency status.", url: "https://www.travel.dod.mil/Travel-Transportation-Rates/Dislocation-Allowance/", type: "Website" },
     { title: "2025 DLA Rate Table (PDF)", desc: "Official DLA rates effective 1 January 2025.", url: "https://www.travel.dod.mil/Portals/119/Documents/DLA/DLA-2025-01-01.pdf", type: "Website" },
