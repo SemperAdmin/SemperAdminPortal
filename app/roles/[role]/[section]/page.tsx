@@ -2,6 +2,8 @@ import { type Role, catalogGroups, reportGroups, type CatalogGroup } from "../..
 import Link from "next/link";
 import CatalogGrid from "../../../../components/CatalogGrid";
 
+const BP = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 type Params = { role: Role; section: string };
 
 const SECTIONS: Record<string, { title: string; intro?: string; groups?: { title: string; items: { title: string; slug?: string; desc: string }[] }[] }> = {
@@ -154,7 +156,7 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
             <div className="mt-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={key === "pac-personnel-admin-center" ? "/PAC-Battle-Rhythm.png" : "/S-1-Battle-Rhythm.png"}
+                src={`${BP}${key === "pac-personnel-admin-center" ? "/PAC-Battle-Rhythm.png" : "/S-1-Battle-Rhythm.png"}`}
                 alt={key === "pac-personnel-admin-center" ? "PAC Battle Rhythm" : "S-1 Battle Rhythm"}
                 className="w-full h-auto rounded-lg border border-black/10 dark:border-white/10"
               />
