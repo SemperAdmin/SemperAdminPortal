@@ -929,9 +929,13 @@ const VEHICLE_DATA = {
 
 const TAD_DATA = {
   references: [
-    { title: "Joint Travel Regulations Ch 2", desc: "TAD/TDY travel policy and entitlements.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
-    { title: "Defense Travel System", desc: "Official DTS portal.", url: "https://www.defensetravel.dod.mil/", type: "Website" },
-    { title: "DFAS Travel Pay", desc: "TAD reimbursement processing.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+    { title: "Defense Travel System (DTS)", desc: "Official DTS portal for TAD orders and travel vouchers.", url: "https://www.defensetravel.dod.mil/", type: "Website", isQuickLink: true },
+    { title: "Per Diem Rates (CONUS)", desc: "GSA lodging and M&IE rates for CONUS locations.", url: "https://www.gsa.gov/travel/plan-book/per-diem-rates", type: "Website", isQuickLink: true },
+    { title: "Per Diem Rates (OCONUS)", desc: "DTMO per diem rates for OCONUS locations.", url: "https://www.travel.dod.mil/Travel-Transportation-Rates/Per-Diem/", type: "Website", isQuickLink: true },
+    { title: "Joint Travel Regulations", desc: "Official policy for TAD/TDY travel and entitlements.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "GTCC Information", desc: "Government Travel Charge Card policies and requirements.", url: "https://www.defensetravel.dod.mil/site/govtravelcard.cfm", type: "Website", isQuickLink: true },
+    { title: "MCO 1000.6 Chapter 4", desc: "Marine Corps TAD order policies.", url: "https://www.marines.mil/Portals/1/Publications/MCO%201000.6.pdf", type: "Policy" },
+    { title: "MCO 4650.39A", desc: "Marine Corps travel and transportation policy.", url: "https://www.marines.mil/Portals/1/Publications/MCO%204650.39A.pdf", type: "Policy" },
   ],
 };
 
