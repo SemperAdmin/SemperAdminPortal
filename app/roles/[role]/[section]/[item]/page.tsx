@@ -1017,9 +1017,11 @@ const ADVANCE_PAY_DATA = {
 
 const LEAVE_ENROUTE_DATA = {
   references: [
-    { title: "Joint Travel Regulations Ch 5", desc: "Leave en route during PCS.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
-    { title: "MCO 1050.3J", desc: "Marine Corps leave and liberty policy.", url: "https://www.marines.mil/", type: "Order" },
-    { title: "DFAS Travel Pay", desc: "Per diem computation with leave.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+    { title: "Joint Travel Regulations", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: true },
+    { title: "MCO 1050.3J (Leave Regulations)", url: "https://www.marines.mil/portals/1/publications/mco%201050.3j.pdf", isQuickLink: true },
+    { title: "MCO 1000.6 (Travel of Personnel)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "MARADMIN 531/23 (Leisure Travel)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
+    { title: "DFAS Travel Pay", url: "https://www.dfas.mil/militarymembers/travelpay/", isQuickLink: false },
   ],
 };
 

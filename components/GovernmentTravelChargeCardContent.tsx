@@ -72,6 +72,50 @@ const TIPS = [
   { title: "Never mix personal and official", desc: "Keep a separate personal card for non-travel expenses." },
 ];
 
+const TRAINING_REQUIREMENTS = [
+  { title: "Initial Training", desc: "Complete before receiving GTCC via Travel Explorer (TraX)" },
+  { title: "Refresher Training", desc: "Required every 3 years or after delinquency/misuse" },
+];
+
+const STANDARD_TDY_STEPS = [
+  "Use GTCC for all authorized expenses during travel",
+  "Submit your travel voucher in DTS within 5 working days of return",
+  "Set up split disbursement to pay Citibank directly from your reimbursement",
+  "Pay any remaining balance through CitiManager",
+  "Payment due 25-45 days from statement date",
+];
+
+const SPLIT_DISBURSEMENT_STEPS = [
+  "In DTS, navigate to your voucher",
+  "Select the \"Additional Options\" or \"Accounting\" section",
+  "Enter split disbursement amount to match your GTCC charges",
+  "The system routes payment directly to Citibank",
+  "Remaining funds deposit to your personal account",
+];
+
+const PCS_AUTHORIZED_USES = [
+  "Temporary Lodging Expense (TLE) at old and new duty station",
+  "En route lodging",
+  "Meals during travel",
+  "Rental car (if authorized)",
+  "Fuel for POV travel",
+  "Tolls and ferry fees",
+];
+
+const PCS_PAYMENT_TIMELINE = [
+  "Request Mission Critical status from APC before executing orders",
+  "Extended payment terms up to 120 days available for PCS",
+  "Submit PCS voucher promptly to generate reimbursement",
+  "Use split disbursement to avoid delinquency",
+];
+
+const QUICK_FACTS = [
+  { title: "Citibank (CONUS)", detail: "1-800-790-7206" },
+  { title: "Citibank (OCONUS)", detail: "1-904-954-7850 (collect)" },
+  { title: "Payment Window", detail: "25-45 days (120 for PCS)" },
+  { title: "Authority", detail: "MCO 4600.40B" },
+];
+
 export default function GovernmentTravelChargeCardContent({ data }: { data: { references: Ref[] } }) {
   const [tab, setTab] = useState<Tab>("overview");
 
@@ -181,14 +225,12 @@ export default function GovernmentTravelChargeCardContent({ data }: { data: { re
             <div className="mt-4 rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
               <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Training Requirements</h3>
               <div className="mt-2 grid gap-3 sm:grid-cols-2">
-                <div className="rounded-lg border border-black/5 bg-white p-3 dark:border-white/10 dark:bg-black/40">
-                  <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Initial Training</div>
-                  <div className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Complete before receiving GTCC via Travel Explorer (TraX)</div>
-                </div>
-                <div className="rounded-lg border border-black/5 bg-white p-3 dark:border-white/10 dark:bg-black/40">
-                  <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Refresher Training</div>
-                  <div className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Required every 3 years or after delinquency/misuse</div>
-                </div>
+                {TRAINING_REQUIREMENTS.map((req) => (
+                  <div key={req.title} className="rounded-lg border border-black/5 bg-white p-3 dark:border-white/10 dark:bg-black/40">
+                    <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{req.title}</div>
+                    <div className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">{req.desc}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </section>
@@ -201,22 +243,18 @@ export default function GovernmentTravelChargeCardContent({ data }: { data: { re
               <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
                 <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Standard TDY Travel</h3>
                 <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Use GTCC for all authorized expenses during travel</li>
-                  <li>Submit your travel voucher in DTS within 5 working days of return</li>
-                  <li>Set up split disbursement to pay Citibank directly from your reimbursement</li>
-                  <li>Pay any remaining balance through CitiManager</li>
-                  <li>Payment due 25-45 days from statement date</li>
+                  {STANDARD_TDY_STEPS.map((step) => (
+                    <li key={step}>{step}</li>
+                  ))}
                 </ol>
               </div>
               <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
                 <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Split Disbursement</h3>
                 <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Split disbursement sends part of your travel reimbursement directly to Citibank to pay your GTCC balance. This prevents late payments and protects your credit.</p>
                 <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>In DTS, navigate to your voucher</li>
-                  <li>Select the &quot;Additional Options&quot; or &quot;Accounting&quot; section</li>
-                  <li>Enter split disbursement amount to match your GTCC charges</li>
-                  <li>The system routes payment directly to Citibank</li>
-                  <li>Remaining funds deposit to your personal account</li>
+                  {SPLIT_DISBURSEMENT_STEPS.map((step) => (
+                    <li key={step}>{step}</li>
+                  ))}
                 </ol>
               </div>
               <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-amber-800 dark:border-white/15 dark:bg-white/10 dark:text-[var(--sa-cream)]">
@@ -271,21 +309,17 @@ export default function GovernmentTravelChargeCardContent({ data }: { data: { re
             <div className="mt-4 rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
               <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">PCS Authorized Uses</h3>
               <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                <li>Temporary Lodging Expense (TLE) at old and new duty station</li>
-                <li>En route lodging</li>
-                <li>Meals during travel</li>
-                <li>Rental car (if authorized)</li>
-                <li>Fuel for POV travel</li>
-                <li>Tolls and ferry fees</li>
+                {PCS_AUTHORIZED_USES.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
             </div>
             <div className="mt-4 rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
               <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">PCS Payment Timeline</h3>
               <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                <li>Request Mission Critical status from APC before executing orders</li>
-                <li>Extended payment terms up to 120 days available for PCS</li>
-                <li>Submit PCS voucher promptly to generate reimbursement</li>
-                <li>Use split disbursement to avoid delinquency</li>
+                {PCS_PAYMENT_TIMELINE.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
             </div>
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-amber-800 dark:border-white/15 dark:bg-white/10 dark:text-[var(--sa-cream)]">
@@ -377,22 +411,12 @@ export default function GovernmentTravelChargeCardContent({ data }: { data: { re
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Facts</h3>
           <ul className="mt-3 space-y-2 text-sm">
-            <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Citibank (CONUS)</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">1-800-790-7206</div>
-            </li>
-            <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Citibank (OCONUS)</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">1-904-954-7850 (collect)</div>
-            </li>
-            <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Payment Window</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">25-45 days (120 for PCS)</div>
-            </li>
-            <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Authority</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">MCO 4600.40B</div>
-            </li>
+            {QUICK_FACTS.map((fact) => (
+              <li key={fact.title} className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{fact.title}</div>
+                <div className="text-xs text-zinc-700 dark:text-zinc-300">{fact.detail}</div>
+              </li>
+            ))}
           </ul>
         </section>
 
