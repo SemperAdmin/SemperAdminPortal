@@ -913,9 +913,12 @@ const TLE_DATA = {
 
 const VEHICLE_DATA = {
   references: [
-    { title: "Joint Travel Regulations Ch 5", desc: "POV shipment and storage entitlements.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
-    { title: "USTRANSCOM POV", desc: "Vehicle Coordination Office info.", url: "https://www.ustranscom.mil/", type: "Website" },
-    { title: "PCSmyPOV", desc: "Official POV shipping portal.", url: "https://www.pcsmypov.com/", type: "Website" },
+    { title: "PCSmyPOV Portal", desc: "Schedule appointments, track vehicle, locate VPCs.", url: "https://www.pcsmypov.com/", type: "Website" },
+    { title: "Military OneSource POV Info", desc: "POV shipment and storage guidance.", url: "https://www.militaryonesource.mil/resources/external/pcsmypov/", type: "Website" },
+    { title: "DTR Part IV - POV Shipment", desc: "Official POV shipment regulations.", url: "https://www.ustranscom.mil/dtr/part-iv/dtr_part_iv_att_A-k_3.pdf", type: "Policy" },
+    { title: "DTR Part IV - POV Storage", desc: "Official POV storage regulations.", url: "https://www.ustranscom.mil/dtr/part-iv/dtr_part_iv_app_k_4.pdf", type: "Policy" },
+    { title: "NHTSA Vehicle Recall Check", desc: "Check for open recalls before VPC appointment.", url: "https://www.nhtsa.gov/recalls", type: "Website" },
+    { title: "JTR Chapter 5 (POV Entitlements)", desc: "POV shipment and storage policy.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
   ],
 };
 
