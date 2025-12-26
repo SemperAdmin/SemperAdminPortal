@@ -838,9 +838,11 @@ const HHG_DATA = {
 
 const PPM_DATA = {
   references: [
-    { title: "Joint Travel Regulations Ch 5", desc: "PPM/DITY move entitlements and reimbursement.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
-    { title: "Move.mil PPM Guide", desc: "PPM planning and execution guidance.", url: "https://www.move.mil/", type: "Website" },
-    { title: "DFAS Travel Pay", desc: "PPM reimbursement processing.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+    { title: "JTR Chapter 5", desc: "Permanent Duty Travel - PPM entitlements, GCC calculation, and reimbursement.", url: "https://www.defensetravel.dod.mil/site/travelreg.cfm", type: "Policy" },
+    { title: "MCO 4600.39", desc: "Marine Corps Personal Property Manual - PPM procedures and requirements.", url: "https://www.marines.mil/", type: "Policy" },
+    { title: "DTR Part IV Appendix K-1", desc: "Defense Transportation Regulation - PPM weight and expense documentation.", url: "https://www.ustranscom.mil/dtr/", type: "Policy" },
+    { title: "MilMove Portal", desc: "Create PPM shipments, request AOA, and submit claims.", url: "https://my.move.mil/", type: "Website" },
+    { title: "LOGCOM TVCB", desc: "Travel Voucher Certification Branch - PPM claim processing.", url: "https://www.logcom.marines.mil/", type: "Website" },
   ],
 };
 
