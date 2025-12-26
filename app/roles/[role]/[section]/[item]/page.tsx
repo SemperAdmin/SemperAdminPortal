@@ -49,6 +49,18 @@ import GovernmentTravelChargeCardContent from "../../../../../components/Governm
 import MileageReimbursementContent from "../../../../../components/MileageReimbursementContent";
 import AdvanceTravelPayContent from "../../../../../components/AdvanceTravelPayContent";
 import LeaveEnRouteTravelContent from "../../../../../components/LeaveEnRouteTravelContent";
+import { MarriageDocumentationContent } from "../../../../../components/MarriageDocumentationContent";
+import { BirthAdoptionContent } from "../../../../../components/BirthAdoptionContent";
+import { StepchildrenAdditionContent } from "../../../../../components/StepchildrenAdditionContent";
+import { SecondaryDependentsContent } from "../../../../../components/SecondaryDependentsContent";
+import { DivorceLegalSeparationContent } from "../../../../../components/DivorceLegalSeparationContent";
+import { DeathOfDependentsContent } from "../../../../../components/DeathOfDependentsContent";
+import { AdultChildrenContent } from "../../../../../components/AdultChildrenContent";
+import { FamilyCarePlanContent } from "../../../../../components/FamilyCarePlanContent";
+import { EFMPContent } from "../../../../../components/EFMPContent";
+import { EmergencyContactUpdatesContent } from "../../../../../components/EmergencyContactUpdatesContent";
+import { DependentIDCardUpdatesContent } from "../../../../../components/DependentIDCardUpdatesContent";
+import { CommandSponsorshipContent } from "../../../../../components/CommandSponsorshipContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1025,6 +1037,127 @@ const LEAVE_ENROUTE_DATA = {
   ],
 };
 
+// Dependency Management Data
+const MARRIAGE_DATA = {
+  references: [
+    { title: "DEERS Website", url: "https://www.tricare.mil/deers", isQuickLink: true },
+    { title: "ID Card Office Locator", url: "https://idco.dmdc.osd.mil/idco/", isQuickLink: true },
+    { title: "NAVMC 10922", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "MCO 1750.1 (Family Readiness)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
+    { title: "DoDI 1341.02 (Dependency Determination)", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: false },
+  ],
+};
+
+const BIRTH_ADOPTION_DATA = {
+  references: [
+    { title: "DEERS Website", url: "https://www.tricare.mil/deers", isQuickLink: true },
+    { title: "ID Card Office Locator", url: "https://idco.dmdc.osd.mil/idco/", isQuickLink: true },
+    { title: "NAVMC 10922", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "TRICARE Newborn Coverage", url: "https://www.tricare.mil/LifeEvents/Baby", isQuickLink: true },
+    { title: "DoDI 1341.02 (Dependency Determination)", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: false },
+  ],
+};
+
+const STEPCHILDREN_DATA = {
+  references: [
+    { title: "DEERS Website", url: "https://www.tricare.mil/deers", isQuickLink: true },
+    { title: "ID Card Office Locator", url: "https://idco.dmdc.osd.mil/idco/", isQuickLink: true },
+    { title: "NAVMC 10922", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "DoDI 1341.02 (Dependency Determination)", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: false },
+    { title: "DoD FMR Vol 7A Ch 35 (Dependents)", url: "https://comptroller.defense.gov/FMR/vol7a.aspx", isQuickLink: false },
+  ],
+};
+
+const SECONDARY_DEPENDENTS_DATA = {
+  references: [
+    { title: "DEERS Website", url: "https://www.tricare.mil/deers", isQuickLink: true },
+    { title: "DD Form 137 Series", url: "https://www.esd.whs.mil/Directives/forms/dd0001_0499/", isQuickLink: true },
+    { title: "DoDI 1341.02 (Dependency Determination)", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: true },
+    { title: "DoD FMR Vol 7A Ch 35 (Dependents)", url: "https://comptroller.defense.gov/FMR/vol7a.aspx", isQuickLink: false },
+    { title: "DFAS Secondary Dependency Info", url: "https://www.dfas.mil/", isQuickLink: false },
+  ],
+};
+
+const DIVORCE_DATA = {
+  references: [
+    { title: "DEERS Website", url: "https://www.tricare.mil/deers", isQuickLink: true },
+    { title: "ID Card Office Locator", url: "https://idco.dmdc.osd.mil/idco/", isQuickLink: true },
+    { title: "TRICARE After Divorce", url: "https://www.tricare.mil/LifeEvents/Divorce", isQuickLink: true },
+    { title: "DFAS Garnishment Info", url: "https://www.dfas.mil/garnishment/", isQuickLink: false },
+    { title: "Uniformed Services Former Spouses' Protection Act", url: "https://www.dfas.mil/garnishment/usfspa/", isQuickLink: false },
+  ],
+};
+
+const DEATH_OF_DEPENDENTS_DATA = {
+  references: [
+    { title: "DEERS Website", url: "https://www.tricare.mil/deers", isQuickLink: true },
+    { title: "Military OneSource", url: "https://www.militaryonesource.mil/", isQuickLink: true },
+    { title: "Marine Corps Community Services", url: "https://usmc-mccs.org/", isQuickLink: true },
+    { title: "SGLI Online", url: "https://www.benefits.va.gov/insurance/sgli.asp", isQuickLink: false },
+    { title: "Casualty Assistance", url: "https://www.hqmc.marines.mil/Agencies/Casualty-Assistance/", isQuickLink: false },
+  ],
+};
+
+const ADULT_CHILDREN_DATA = {
+  references: [
+    { title: "DEERS Website", url: "https://www.tricare.mil/deers", isQuickLink: true },
+    { title: "TRICARE Young Adult", url: "https://www.tricare.mil/tya", isQuickLink: true },
+    { title: "ID Card Office Locator", url: "https://idco.dmdc.osd.mil/idco/", isQuickLink: true },
+    { title: "DoDI 1341.02 (Dependency Determination)", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: false },
+    { title: "Student Eligibility Requirements", url: "https://www.tricare.mil/Plans/Eligibility/ChildrenDependents", isQuickLink: false },
+  ],
+};
+
+const FCP_DATA = {
+  references: [
+    { title: "MCO 1740.13C (Family Care Plans)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "NAVMC 11800", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "Military OneSource", url: "https://www.militaryonesource.mil/", isQuickLink: true },
+    { title: "DoDI 1342.19 (Family Care Plans)", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: false },
+    { title: "Marine Corps Family Team Building", url: "https://usmc-mccs.org/services/support/family-team-building/", isQuickLink: false },
+  ],
+};
+
+const EFMP_DATA = {
+  references: [
+    { title: "Marine Corps EFMP", url: "https://usmc-mccs.org/services/family/exceptional-family-member/", isQuickLink: true },
+    { title: "Military OneSource EFMP", url: "https://www.militaryonesource.mil/family-relationships/special-needs/", isQuickLink: true },
+    { title: "TRICARE Special Needs", url: "https://www.tricare.mil/Plans/SpecialPrograms/ECHO", isQuickLink: true },
+    { title: "MCO 1754.4C (EFMP)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
+    { title: "DoDI 1315.19 (EFMP)", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: false },
+  ],
+};
+
+const EMERGENCY_CONTACT_DATA = {
+  references: [
+    { title: "SGLI Online", url: "https://www.benefits.va.gov/insurance/sgli.asp", isQuickLink: true },
+    { title: "MOL (Marine Online)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "vRED (Virtual Record of Emergency Data)", url: "https://www.dmdc.osd.mil/milconnect/", isQuickLink: true },
+    { title: "DD Form 93", url: "https://www.esd.whs.mil/Directives/forms/dd0001_0499/", isQuickLink: false },
+    { title: "SGLV 8286", url: "https://www.benefits.va.gov/insurance/forms/", isQuickLink: false },
+  ],
+};
+
+const ID_CARD_DATA = {
+  references: [
+    { title: "ID Card Office Locator", url: "https://idco.dmdc.osd.mil/idco/", isQuickLink: true },
+    { title: "RAPIDS Appointment Scheduler", url: "https://idco.dmdc.osd.mil/idco/", isQuickLink: true },
+    { title: "DEERS Website", url: "https://www.tricare.mil/deers", isQuickLink: true },
+    { title: "DoD ID Card Guide", url: "https://www.cac.mil/", isQuickLink: false },
+    { title: "DoDI 1000.13 (ID Cards)", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: false },
+  ],
+};
+
+const COMMAND_SPONSORSHIP_DATA = {
+  references: [
+    { title: "Joint Travel Regulations", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: true },
+    { title: "DEERS Website", url: "https://www.tricare.mil/deers", isQuickLink: true },
+    { title: "TRICARE Overseas", url: "https://www.tricare.mil/Plans/HealthPlans/TOS", isQuickLink: true },
+    { title: "MCO 1300.8 (Personnel Assignments)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
+    { title: "DoD 1400.25-M (Civilian HR)", url: "https://www.esd.whs.mil/Directives/", isQuickLink: false },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -1038,6 +1171,10 @@ function toTitle(slug: string) {
     .replace(/\bTad\b/g, "TAD")
     .replace(/\bDts\b/g, "DTS")
     .replace(/\bGtcc\b/g, "GTCC")
+    .replace(/\bEfmp\b/g, "EFMP")
+    .replace(/\bOconus\b/g, "OCONUS")
+    .replace(/\bId\b/g, "ID")
+    .replace(/\bFcp\b/g, "FCP")
     .replace(/Foreign Language Proficiency Pay/i, "Foreign Language Proficiency Bonus");
 }
 
@@ -1102,6 +1239,19 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "mileage-reimbursement": <MileageReimbursementContent data={MILEAGE_DATA} />,
     "advance-travel-pay": <AdvanceTravelPayContent data={ADVANCE_PAY_DATA} />,
     "leave-en-route-travel": <LeaveEnRouteTravelContent data={LEAVE_ENROUTE_DATA} />,
+    // Dependency Management
+    "marriage-documentation": <MarriageDocumentationContent data={MARRIAGE_DATA} />,
+    "birth-adoption-of-children": <BirthAdoptionContent data={BIRTH_ADOPTION_DATA} />,
+    "stepchildren-addition": <StepchildrenAdditionContent data={STEPCHILDREN_DATA} />,
+    "secondary-dependents": <SecondaryDependentsContent data={SECONDARY_DEPENDENTS_DATA} />,
+    "divorce-legal-separation": <DivorceLegalSeparationContent data={DIVORCE_DATA} />,
+    "death-of-dependents": <DeathOfDependentsContent data={DEATH_OF_DEPENDENTS_DATA} />,
+    "adult-children-age-21": <AdultChildrenContent data={ADULT_CHILDREN_DATA} />,
+    "family-care-plan": <FamilyCarePlanContent data={FCP_DATA} />,
+    "efmp": <EFMPContent data={EFMP_DATA} />,
+    "emergency-contact-updates": <EmergencyContactUpdatesContent data={EMERGENCY_CONTACT_DATA} />,
+    "dependent-id-card-updates": <DependentIDCardUpdatesContent data={ID_CARD_DATA} />,
+    "command-sponsorship-oconus": <CommandSponsorshipContent data={COMMAND_SPONSORSHIP_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -1179,10 +1329,26 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "advance-travel-pay",
     "leave-en-route-travel",
   ];
+  const dependencySection = "dependency-management";
+  const dependencySlugs = [
+    "marriage-documentation",
+    "birth-adoption-of-children",
+    "stepchildren-addition",
+    "secondary-dependents",
+    "divorce-legal-separation",
+    "death-of-dependents",
+    "adult-children-age-21",
+    "family-care-plan",
+    "efmp",
+    "emergency-contact-updates",
+    "dependent-id-card-updates",
+    "command-sponsorship-oconus",
+  ];
   const params: { role: Role; section: string; item: string }[] = [];
   for (const role of roles) {
     for (const item of payAllowancesSlugs) params.push({ role, section: payAllowancesSection, item });
     for (const item of travelSlugs) params.push({ role, section: travelSection, item });
+    for (const item of dependencySlugs) params.push({ role, section: dependencySection, item });
   }
   return params;
 }
