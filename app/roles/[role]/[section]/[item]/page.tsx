@@ -34,6 +34,21 @@ import BasicNeedsAllowanceContent from "../../../../../components/BasicNeedsAllo
 import DebtManagementContent from "../../../../../components/DebtManagementContent";
 import FinancialHardshipAssistanceContent from "../../../../../components/FinancialHardshipAssistanceContent";
 import OverpaymentRepaymentPlansContent from "../../../../../components/OverpaymentRepaymentPlansContent";
+import PCSOrdersProcessingContent from "../../../../../components/PCSOrdersProcessingContent";
+import HouseholdGoodsShipmentContent from "../../../../../components/HouseholdGoodsShipmentContent";
+import PersonallyProcuredMoveContent from "../../../../../components/PersonallyProcuredMoveContent";
+import PCSStorageContent from "../../../../../components/PCSStorageContent";
+import DislocationAllowanceContent from "../../../../../components/DislocationAllowanceContent";
+import TemporaryLodgingExpenseContent from "../../../../../components/TemporaryLodgingExpenseContent";
+import VehicleProcessingStorageContent from "../../../../../components/VehicleProcessingStorageContent";
+import TADOrdersContent from "../../../../../components/TADOrdersContent";
+import PerDiemRatesContent from "../../../../../components/PerDiemRatesContent";
+import TravelVoucherSubmissionContent from "../../../../../components/TravelVoucherSubmissionContent";
+import DTSAuthorizationContent from "../../../../../components/DTSAuthorizationContent";
+import GovernmentTravelChargeCardContent from "../../../../../components/GovernmentTravelChargeCardContent";
+import MileageReimbursementContent from "../../../../../components/MileageReimbursementContent";
+import AdvanceTravelPayContent from "../../../../../components/AdvanceTravelPayContent";
+import LeaveEnRouteTravelContent from "../../../../../components/LeaveEnRouteTravelContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -787,11 +802,172 @@ const FLPP_DATA = {
   ],
 };
 
+// Travel & Transportation Data Objects
+const PCS_ORDERS_DATA = {
+  references: [
+    { title: "Joint Travel Regulations (JTR)", desc: "Official travel policy for PCS moves.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "MCO 1320.12", desc: "Marine Corps PCS Order Administration.", url: "https://www.marines.mil/", type: "Order" },
+    { title: "DFAS Travel Pay", desc: "Travel pay and allowances overview.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+  ],
+};
+
+const HHG_DATA = {
+  weightAllowances: [
+    { rank: "E-1 to E-4", withDependents: 8000, withoutDependents: 5000 },
+    { rank: "E-5 to E-6", withDependents: 11000, withoutDependents: 8000 },
+    { rank: "E-7 to E-9", withDependents: 13000, withoutDependents: 11000 },
+    { rank: "W-1 to W-2", withDependents: 14000, withoutDependents: 12500 },
+    { rank: "W-3 to W-5", withDependents: 17000, withoutDependents: 14500 },
+    { rank: "O-1 to O-2", withDependents: 12000, withoutDependents: 10000 },
+    { rank: "O-3 to O-4", withDependents: 14000, withoutDependents: 12500 },
+    { rank: "O-5 to O-6", withDependents: 17000, withoutDependents: 16000 },
+    { rank: "O-7+", withDependents: 18000, withoutDependents: 18000 },
+  ],
+  references: [
+    { title: "Joint Travel Regulations Ch 5", desc: "HHG shipping entitlements and procedures.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "Move.mil", desc: "Official DoD moving portal for HHG shipments.", url: "https://www.move.mil/", type: "Website" },
+    { title: "USTRANSCOM", desc: "Transportation Command HHG program info.", url: "https://www.ustranscom.mil/", type: "Website" },
+  ],
+};
+
+const PPM_DATA = {
+  references: [
+    { title: "Joint Travel Regulations Ch 5", desc: "PPM/DITY move entitlements and reimbursement.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "Move.mil PPM Guide", desc: "PPM planning and execution guidance.", url: "https://www.move.mil/", type: "Website" },
+    { title: "DFAS Travel Pay", desc: "PPM reimbursement processing.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+  ],
+};
+
+const PCS_STORAGE_DATA = {
+  references: [
+    { title: "Joint Travel Regulations Ch 5", desc: "Storage entitlements during PCS.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "Move.mil Storage Info", desc: "Government storage options and procedures.", url: "https://www.move.mil/", type: "Website" },
+    { title: "USTRANSCOM", desc: "Storage program administration.", url: "https://www.ustranscom.mil/", type: "Website" },
+  ],
+};
+
+const DLA_DATA = {
+  rates: [
+    { rank: "E-1 to E-5", withDependents: 2386.26, withoutDependents: 1680.22 },
+    { rank: "E-6", withDependents: 2818.06, withoutDependents: 1971.82 },
+    { rank: "E-7 to E-9", withDependents: 2973.13, withoutDependents: 2188.09 },
+    { rank: "W-1 to W-2", withDependents: 2973.13, withoutDependents: 2188.09 },
+    { rank: "W-3 to W-5", withDependents: 3396.58, withoutDependents: 2573.00 },
+    { rank: "O-1 to O-2", withDependents: 2973.13, withoutDependents: 2188.09 },
+    { rank: "O-3", withDependents: 3396.58, withoutDependents: 2573.00 },
+    { rank: "O-4 to O-5", withDependents: 3626.43, withoutDependents: 2798.53 },
+    { rank: "O-6+", withDependents: 4064.93, withoutDependents: 3150.30 },
+  ],
+  references: [
+    { title: "Joint Travel Regulations Ch 5", desc: "DLA entitlement and calculation.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "DFAS DLA Info", desc: "DLA payment processing.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+  ],
+};
+
+const TLE_DATA = {
+  references: [
+    { title: "Joint Travel Regulations Ch 5", desc: "TLE entitlement and limits.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "DTMO TLE Rates", desc: "TLE per diem rate lookup.", url: "https://www.travel.dod.mil/Allowances/Temporary-Lodging-Expense/", type: "Website" },
+    { title: "DFAS Travel Pay", desc: "TLE reimbursement procedures.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+  ],
+};
+
+const VEHICLE_DATA = {
+  references: [
+    { title: "Joint Travel Regulations Ch 5", desc: "POV shipment and storage entitlements.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "USTRANSCOM POV", desc: "Vehicle Coordination Office info.", url: "https://www.ustranscom.mil/", type: "Website" },
+    { title: "PCSmyPOV", desc: "Official POV shipping portal.", url: "https://www.pcsmypov.com/", type: "Website" },
+  ],
+};
+
+const TAD_DATA = {
+  references: [
+    { title: "Joint Travel Regulations Ch 2", desc: "TAD/TDY travel policy and entitlements.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "Defense Travel System", desc: "Official DTS portal.", url: "https://www.defensetravel.dod.mil/", type: "Website" },
+    { title: "DFAS Travel Pay", desc: "TAD reimbursement processing.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+  ],
+};
+
+const PER_DIEM_DATA = {
+  perDiemRates: [
+    { location: "CONUS Standard", lodging: "$110", mie: "$64", total: "$174" },
+    { location: "Washington DC", lodging: "$267", mie: "$79", total: "$346" },
+    { location: "San Diego, CA", lodging: "$225", mie: "$79", total: "$304" },
+    { location: "New York City", lodging: "$343", mie: "$79", total: "$422" },
+  ],
+  references: [
+    { title: "GSA Per Diem Rates", desc: "Official CONUS per diem rates.", url: "https://www.gsa.gov/travel/plan-book/per-diem-rates", type: "Website" },
+    { title: "DTMO Per Diem", desc: "OCONUS per diem rate lookup.", url: "https://www.travel.dod.mil/Allowances/Per-Diem/", type: "Website" },
+    { title: "Joint Travel Regulations Ch 2", desc: "Per diem policy and computation.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+  ],
+};
+
+const VOUCHER_DATA = {
+  references: [
+    { title: "Defense Travel System", desc: "DTS voucher submission portal.", url: "https://www.defensetravel.dod.mil/", type: "Website" },
+    { title: "Joint Travel Regulations Ch 2", desc: "Voucher requirements and deadlines.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "DFAS Travel Pay", desc: "Voucher processing and payment.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+  ],
+};
+
+const DTS_DATA = {
+  references: [
+    { title: "Defense Travel System", desc: "Official DTS login and resources.", url: "https://www.defensetravel.dod.mil/", type: "Website" },
+    { title: "DTS Training", desc: "DTS user training modules.", url: "https://www.defensetravel.dod.mil/Training/", type: "Website" },
+    { title: "Joint Travel Regulations", desc: "Travel policy underlying DTS.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+  ],
+};
+
+const GTCC_DATA = {
+  references: [
+    { title: "DoD Travel Card Program", desc: "GTCC program overview and policies.", url: "https://www.defensetravel.dod.mil/site/govtravelcard.cfm", type: "Policy" },
+    { title: "Citibank GTCC", desc: "Cardholder account management.", url: "https://www.citimanager.com/", type: "Website" },
+    { title: "Joint Travel Regulations App A", desc: "GTCC policy and usage requirements.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+  ],
+};
+
+const MILEAGE_DATA = {
+  mileageRates: [
+    { year: "2025", rate: "$0.70/mile", effective: "January 1, 2025" },
+    { year: "2024", rate: "$0.67/mile", effective: "January 1, 2024" },
+    { year: "2023", rate: "$0.655/mile", effective: "January 1, 2023" },
+  ],
+  references: [
+    { title: "GSA Mileage Rates", desc: "Official POC mileage reimbursement rates.", url: "https://www.gsa.gov/travel/plan-book/transportation-airfare-pov-etc/privately-owned-vehicle-pov-mileage-reimbursement", type: "Website" },
+    { title: "Joint Travel Regulations Ch 2", desc: "POC authorization and mileage policy.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "DTOD", desc: "Defense Table of Official Distances.", url: "https://dtod.sddc.army.mil/", type: "Website" },
+  ],
+};
+
+const ADVANCE_PAY_DATA = {
+  references: [
+    { title: "Joint Travel Regulations Ch 2", desc: "Travel advance policies and limits.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "Defense Travel System", desc: "Advance request through DTS.", url: "https://www.defensetravel.dod.mil/", type: "Website" },
+    { title: "DFAS Travel Pay", desc: "Advance payment processing.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+  ],
+};
+
+const LEAVE_ENROUTE_DATA = {
+  references: [
+    { title: "Joint Travel Regulations Ch 5", desc: "Leave en route during PCS.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "MCO 1050.3J", desc: "Marine Corps leave and liberty policy.", url: "https://www.marines.mil/", type: "Order" },
+    { title: "DFAS Travel Pay", desc: "Per diem computation with leave.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
     .replace(/\bSdap\b/g, "SDAP")
     .replace(/\bVbss\b/g, "VBSS")
+    .replace(/\bPcs\b/g, "PCS")
+    .replace(/\bHhg\b/g, "HHG")
+    .replace(/\bPpm\b/g, "PPM")
+    .replace(/\bDla\b/g, "DLA")
+    .replace(/\bTle\b/g, "TLE")
+    .replace(/\bTad\b/g, "TAD")
+    .replace(/\bDts\b/g, "DTS")
+    .replace(/\bGtcc\b/g, "GTCC")
     .replace(/Foreign Language Proficiency Pay/i, "Foreign Language Proficiency Bonus");
 }
 
@@ -837,6 +1013,22 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
   const isDEBT = itemSlug === "debt-management";
   const isFHA = itemSlug === "financial-hardship-assistance";
   const isOVERPAY = itemSlug === "overpayment-repayment-plans";
+  // Travel & Transportation
+  const isPCSOrders = itemSlug === "pcs-orders-processing";
+  const isHHG = itemSlug === "household-goods-shipment";
+  const isPPM = itemSlug === "personally-procured-move";
+  const isPCSStorage = itemSlug === "pcs-storage-entitlements";
+  const isDLA = itemSlug === "dislocation-allowance";
+  const isTLE = itemSlug === "temporary-lodging-expense";
+  const isVehicle = itemSlug === "vehicle-processing-storage";
+  const isTAD = itemSlug === "tad-orders";
+  const isPerDiem = itemSlug === "per-diem-rates";
+  const isVoucher = itemSlug === "travel-voucher-submission";
+  const isDTS = itemSlug === "dts-authorization";
+  const isGTCC = itemSlug === "government-travel-charge-card";
+  const isMileage = itemSlug === "mileage-reimbursement";
+  const isAdvancePay = itemSlug === "advance-travel-pay";
+  const isLeaveEnRoute = itemSlug === "leave-en-route-travel";
   const displayTitle = isSDAP ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
 
   return (
@@ -849,15 +1041,15 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
         <Link prefetch={false} href={`/roles/${safeRole}/${safeSection}`} className="inline-flex items-center justify-center rounded-md border border-black/10 bg-white px-4 py-2 text-[var(--sa-navy)] shadow-sm transition hover:bg-[var(--sa-cream)]/60 dark:border-white/15 dark:bg-black/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Back</Link>
       </div>
 
-      {isBAH ? <BAHContent bahData={BAH_DATA} /> : isBAS ? <BASContent basData={BAS_DATA} /> : isCOLA ? <COLAContent colaData={COLA_DATA} /> : isOHA ? <OHAContent ohaData={OHA_DATA} /> : isFSA ? <FSAContent fsaData={FSA_DATA} /> : isHFP ? <HostileFirePayContent hfpData={HFP_DATA} /> : isIDP ? <ImminentDangerPayContent idpData={IDP_DATA} /> : isHDIP ? <HDIPContent hdipData={HDIP_DATA} /> : isHDP ? <HDPContent hdpData={HDP_DATA} /> : isSDAP ? <SDAPContent sdapData={SDAP_DATA} /> : isSDP ? <SDPContent sdpData={SDP_DATA} /> : isHIGH3 ? <High3Content /> : isBRS ? <BRSContent /> : isCP ? <ContinuationPayContent /> : isTEB ? <TEBContent /> : isTSP ? <TSPContent /> : isCZTE ? <CZTEContent /> : isStateTax ? <MilitaryStateTaxReliefContent /> : isFLEXFSA ? <FlexibleSpendingAccountsContent /> : isALLOTMENTS ? <AllotmentsContent /> : isBNA ? <BasicNeedsAllowanceContent /> : isDEBT ? <DebtManagementContent /> : isFHA ? <FinancialHardshipAssistanceContent /> : isOVERPAY ? <OverpaymentRepaymentPlansContent /> : isDIVE ? <DivePayContent diveData={DIVE_DATA} /> : isSTRESS ? <ExperimentalStressContent stressData={STRESS_DATA} /> : isFDHD ? <FlightDeckContent fdhdData={FDHD_DATA} /> : isPARACHUTE ? <ParachuteContent parachuteData={PARACHUTE_DATA} /> : isVBSS ? <VBSSContent vbssData={VBSS_DATA} /> : isSO ? <SpecialOperationsContent soData={SO_DATA} /> : isTOXIC ? <ToxicMaterialsContent tmData={TM_DATA} /> : isACIP ? <AviationCareerIncentivePayContent acipData={ACIP_DATA} /> : (isFLPP || isFLPB) ? <ForeignLanguageProficiencyPayContent flppData={FLPP_DATA} /> : <GenericContent title={itemTitle} />}
+      {isBAH ? <BAHContent bahData={BAH_DATA} /> : isBAS ? <BASContent basData={BAS_DATA} /> : isCOLA ? <COLAContent colaData={COLA_DATA} /> : isOHA ? <OHAContent ohaData={OHA_DATA} /> : isFSA ? <FSAContent fsaData={FSA_DATA} /> : isHFP ? <HostileFirePayContent hfpData={HFP_DATA} /> : isIDP ? <ImminentDangerPayContent idpData={IDP_DATA} /> : isHDIP ? <HDIPContent hdipData={HDIP_DATA} /> : isHDP ? <HDPContent hdpData={HDP_DATA} /> : isSDAP ? <SDAPContent sdapData={SDAP_DATA} /> : isSDP ? <SDPContent sdpData={SDP_DATA} /> : isHIGH3 ? <High3Content /> : isBRS ? <BRSContent /> : isCP ? <ContinuationPayContent /> : isTEB ? <TEBContent /> : isTSP ? <TSPContent /> : isCZTE ? <CZTEContent /> : isStateTax ? <MilitaryStateTaxReliefContent /> : isFLEXFSA ? <FlexibleSpendingAccountsContent /> : isALLOTMENTS ? <AllotmentsContent /> : isBNA ? <BasicNeedsAllowanceContent /> : isDEBT ? <DebtManagementContent /> : isFHA ? <FinancialHardshipAssistanceContent /> : isOVERPAY ? <OverpaymentRepaymentPlansContent /> : isDIVE ? <DivePayContent diveData={DIVE_DATA} /> : isSTRESS ? <ExperimentalStressContent stressData={STRESS_DATA} /> : isFDHD ? <FlightDeckContent fdhdData={FDHD_DATA} /> : isPARACHUTE ? <ParachuteContent parachuteData={PARACHUTE_DATA} /> : isVBSS ? <VBSSContent vbssData={VBSS_DATA} /> : isSO ? <SpecialOperationsContent soData={SO_DATA} /> : isTOXIC ? <ToxicMaterialsContent tmData={TM_DATA} /> : isACIP ? <AviationCareerIncentivePayContent acipData={ACIP_DATA} /> : (isFLPP || isFLPB) ? <ForeignLanguageProficiencyPayContent flppData={FLPP_DATA} /> : isPCSOrders ? <PCSOrdersProcessingContent data={PCS_ORDERS_DATA} /> : isHHG ? <HouseholdGoodsShipmentContent data={HHG_DATA} /> : isPPM ? <PersonallyProcuredMoveContent data={PPM_DATA} /> : isPCSStorage ? <PCSStorageContent data={PCS_STORAGE_DATA} /> : isDLA ? <DislocationAllowanceContent data={DLA_DATA} /> : isTLE ? <TemporaryLodgingExpenseContent data={TLE_DATA} /> : isVehicle ? <VehicleProcessingStorageContent data={VEHICLE_DATA} /> : isTAD ? <TADOrdersContent data={TAD_DATA} /> : isPerDiem ? <PerDiemRatesContent data={PER_DIEM_DATA} /> : isVoucher ? <TravelVoucherSubmissionContent data={VOUCHER_DATA} /> : isDTS ? <DTSAuthorizationContent data={DTS_DATA} /> : isGTCC ? <GovernmentTravelChargeCardContent data={GTCC_DATA} /> : isMileage ? <MileageReimbursementContent data={MILEAGE_DATA} /> : isAdvancePay ? <AdvanceTravelPayContent data={ADVANCE_PAY_DATA} /> : isLeaveEnRoute ? <LeaveEnRouteTravelContent data={LEAVE_ENROUTE_DATA} /> : <GenericContent title={itemTitle} />}
     </div>
   );
 }
 
 export function generateStaticParams(): { role: Role; section: string; item: string }[] {
   const roles: Role[] = ["marines", "administrators", "leaders", "commanders"];
-  const section = "pay-allowances";
-  const itemSlugs = [
+  const payAllowancesSection = "pay-allowances";
+  const payAllowancesSlugs = [
     "legacy-high-3-retirement-system",
     "blended-retirement-system",
     "continuation-pay",
@@ -893,9 +1085,28 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "imminent-danger-pay",
     "savings-deposit-program",
   ];
+  const travelSection = "travel-transportation";
+  const travelSlugs = [
+    "pcs-orders-processing",
+    "household-goods-shipment",
+    "personally-procured-move",
+    "pcs-storage-entitlements",
+    "dislocation-allowance",
+    "temporary-lodging-expense",
+    "vehicle-processing-storage",
+    "tad-orders",
+    "per-diem-rates",
+    "travel-voucher-submission",
+    "dts-authorization",
+    "government-travel-charge-card",
+    "mileage-reimbursement",
+    "advance-travel-pay",
+    "leave-en-route-travel",
+  ];
   const params: { role: Role; section: string; item: string }[] = [];
   for (const role of roles) {
-    for (const item of itemSlugs) params.push({ role, section, item });
+    for (const item of payAllowancesSlugs) params.push({ role, section: payAllowancesSection, item });
+    for (const item of travelSlugs) params.push({ role, section: travelSection, item });
   }
   return params;
 }
