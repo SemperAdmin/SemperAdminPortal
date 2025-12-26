@@ -805,9 +805,14 @@ const FLPP_DATA = {
 // Travel & Transportation Data Objects
 const PCS_ORDERS_DATA = {
   references: [
-    { title: "Joint Travel Regulations (JTR)", desc: "Official travel policy for PCS moves.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
-    { title: "MCO 1320.12", desc: "Marine Corps PCS Order Administration.", url: "https://www.marines.mil/", type: "Order" },
-    { title: "DFAS Travel Pay", desc: "Travel pay and allowances overview.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+    { title: "MOL (Marine Online)", desc: "Access PCS orders through OBI module.", url: "https://mol.tfs.usmc.mil/", type: "Website" },
+    { title: "move.mil (DPS)", desc: "Register HHG shipments and track moves.", url: "https://www.move.mil/", type: "Website" },
+    { title: "Plan My Move", desc: "Personalized PCS checklist and timeline.", url: "https://planmymove.militaryonesource.mil/", type: "Website" },
+    { title: "Military OneSource PCS", desc: "PCS resources and support.", url: "https://www.militaryonesource.mil/", type: "Website" },
+    { title: "HQMC PCS Move Resources", desc: "Official Marine Corps PCS guidance.", url: "https://www.iandl.marines.mil/Divisions/Logistics-Division-LP/Logistics-Distribution-Policy-Branch-LPD/PCS-Move-Resources/", type: "Website" },
+    { title: "IRR Program", desc: "Information, Referral, and Relocation support.", url: "https://www.usmc-mccs.org/marine-family-support/information-referral-and-relocation", type: "Website" },
+    { title: "MCO 1754.10B (IRR Program)", desc: "Mandatory PCS Workshop requirements.", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900673/mco-175410b/", type: "Policy" },
+    { title: "MCO 1320.11H (Sponsorship)", desc: "Sponsor assignment requirements.", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/980074/mco-132011h-wadmin-ch-1/", type: "Policy" },
   ],
 };
 
@@ -902,22 +907,22 @@ const TLE_DATA = {
     { persons: "Each additional dependent under 12", percentage: "Add 25%" },
   ],
   references: [
-    { title: "DFAS TLE Information", desc: "Official TLE reimbursement guidance and procedures.", url: "https://www.dfas.mil/MilitaryMembers/travelpay/armypcs/tle/", type: "Website" },
-    { title: "GSA Per Diem Rates", desc: "Locality rates used for TLE calculations.", url: "https://www.gsa.gov/travel/plan-book/per-diem-rates", type: "Website" },
+    { title: "DFAS TLE Information", desc: "Official TLE reimbursement guidance and procedures.", url: "https://www.dfas.mil/MilitaryMembers/travelpay/armypcs/tle/", type: "Website", isQuickLink: true },
+    { title: "GSA Per Diem Rates", desc: "Locality rates used for TLE calculations.", url: "https://www.gsa.gov/travel/plan-book/per-diem-rates", type: "Website", isQuickLink: true },
     { title: "JTR Chapter 5 (TLE Section)", desc: "Official policy for Temporary Lodging Expense.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
     { title: "TLE FAQs", desc: "Frequently asked questions about TLE.", url: "https://www.travel.dod.mil/Support/ALL-FAQs/Article/3174593/temporary-lodging-expenses/", type: "Website" },
-    { title: "TLE Extension Locations", desc: "Approved locations for TLE extensions.", url: "https://www.dfas.mil/Portals/98/Documents/Military%20Members/travelpay/Locations%20with%20Approved%20TLE%20Extensions.pdf", type: "Policy" },
+    { title: "TLE Extension Locations", desc: "Approved locations for TLE extensions.", url: "https://www.dfas.mil/Portals/98/Documents/Military%20Members/travelpay/Locations%20with%20Approved%20TLE%20Extensions.pdf", type: "Policy", isQuickLink: true },
     { title: "Military OneSource TLE Overview", desc: "TLE guidance from Military OneSource.", url: "https://www.militaryonesource.mil/benefits/temporary-lodging-expense/", type: "Website" },
   ],
 };
 
 const VEHICLE_DATA = {
   references: [
-    { title: "PCSmyPOV Portal", desc: "Schedule appointments, track vehicle, locate VPCs.", url: "https://www.pcsmypov.com/", type: "Website" },
+    { title: "PCSmyPOV Portal", desc: "Schedule appointments, track vehicle, locate VPCs.", url: "https://www.pcsmypov.com/", type: "Website", isQuickLink: true },
     { title: "Military OneSource POV Info", desc: "POV shipment and storage guidance.", url: "https://www.militaryonesource.mil/resources/external/pcsmypov/", type: "Website" },
     { title: "DTR Part IV - POV Shipment", desc: "Official POV shipment regulations.", url: "https://www.ustranscom.mil/dtr/part-iv/dtr_part_iv_att_A-k_3.pdf", type: "Policy" },
     { title: "DTR Part IV - POV Storage", desc: "Official POV storage regulations.", url: "https://www.ustranscom.mil/dtr/part-iv/dtr_part_iv_app_k_4.pdf", type: "Policy" },
-    { title: "NHTSA Vehicle Recall Check", desc: "Check for open recalls before VPC appointment.", url: "https://www.nhtsa.gov/recalls", type: "Website" },
+    { title: "NHTSA Vehicle Recall Check", desc: "Check for open recalls before VPC appointment.", url: "https://www.nhtsa.gov/recalls", type: "Website", isQuickLink: true },
     { title: "JTR Chapter 5 (POV Entitlements)", desc: "POV shipment and storage policy.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
   ],
 };
@@ -1041,7 +1046,6 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "special-operations-pay": <SpecialOperationsContent soData={SO_DATA} />,
     "toxic-materials-duty": <ToxicMaterialsContent tmData={TM_DATA} />,
     "aviation-career-incentive-pay": <AviationCareerIncentivePayContent acipData={ACIP_DATA} />,
-    "foreign-language-proficiency-pay": <ForeignLanguageProficiencyPayContent flppData={FLPP_DATA} />,
     "foreign-language-proficiency-bonus": <ForeignLanguageProficiencyPayContent flppData={FLPP_DATA} />,
     "sdap": <SDAPContent sdapData={SDAP_DATA} />,
     "savings-deposit-program": <SDPContent sdpData={SDP_DATA} />,
@@ -1122,7 +1126,6 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "experimental-stress-duty",
     "aviation-career-incentive-pay",
     "flight-deck-duty",
-    "foreign-language-proficiency-pay",
     "foreign-language-proficiency-bonus",
     "hardship-duty-pay",
     "parachute-duty-pay",

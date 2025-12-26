@@ -2,39 +2,49 @@
 import { useState } from "react";
 
 type Ref = { title: string; desc: string; url: string; type: string };
+type Tab = "overview" | "steps" | "important" | "special" | "troubleshooter" | "references";
+
+const TABS: { key: Tab; label: string }[] = [
+  { key: "overview", label: "Overview" },
+  { key: "steps", label: "Steps" },
+  { key: "important", label: "Important" },
+  { key: "special", label: "Special" },
+  { key: "troubleshooter", label: "Troubleshooter" },
+  { key: "references", label: "References" },
+];
 
 export default function PCSOrdersProcessingContent({ data }: { data: { references: Ref[] } }) {
-  const [tab, setTab] = useState<"overview" | "types" | "documents" | "steps" | "timeline" | "troubleshooter" | "references">("overview");
+  const [tab, setTab] = useState<Tab>("overview");
 
   return (
     <div className="grid gap-6 lg:grid-cols-3">
       <div className="lg:col-span-2 space-y-6">
         <div className="flex items-center gap-2 overflow-x-auto [&>button]:whitespace-nowrap [&>button]:shrink-0">
-          <button onClick={() => setTab("overview")} className={`rounded-md px-3 py-2 text-sm ${tab === "overview" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Overview</button>
-          <button onClick={() => setTab("types")} className={`rounded-md px-3 py-2 text-sm ${tab === "types" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Order Types</button>
-          <button onClick={() => setTab("documents")} className={`rounded-md px-3 py-2 text-sm ${tab === "documents" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Documents</button>
-          <button onClick={() => setTab("steps")} className={`rounded-md px-3 py-2 text-sm ${tab === "steps" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Steps</button>
-          <button onClick={() => setTab("timeline")} className={`rounded-md px-3 py-2 text-sm ${tab === "timeline" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Timeline</button>
-          <button onClick={() => setTab("troubleshooter")} className={`rounded-md px-3 py-2 text-sm ${tab === "troubleshooter" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Troubleshooter</button>
-          <button onClick={() => setTab("references")} className={`rounded-md px-3 py-2 text-sm ${tab === "references" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>References</button>
+          {TABS.map((t) => (
+            <button
+              key={t.key}
+              onClick={() => setTab(t.key)}
+              className={`rounded-md px-3 py-2 text-sm ${tab === t.key ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}
+            >
+              {t.label}
+            </button>
+          ))}
         </div>
 
         {tab === "overview" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">What Are PCS Orders?</h2>
-            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Permanent Change of Station (PCS) orders are official military orders directing you to relocate from one duty station to another. These orders authorize travel, movement of household goods, and various entitlements to support your move.</p>
-            <div className="mt-4 grid gap-4 sm:grid-cols-3">
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">What Is PCS Orders Processing?</h2>
+            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">PCS orders processing is the administrative workflow for receiving, endorsing, and executing your Permanent Change of Station orders. You access your Basic Orders through the Outbound Interview (OBI) module in Marine Online (MOL). Your supporting IPAC or RPAC endorses the orders and provides final authorization to detach from your current command.</p>
+            <div className="mt-4 grid gap-4 sm:grid-cols-2">
               <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Key Element</div>
-                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Report Date</div>
+                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Orders System</div>
+                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">BOS/MOL</div>
+                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Basic Orders System in MOL</p>
               </div>
               <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Key Element</div>
-                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Detach Date</div>
-              </div>
-              <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Key Element</div>
-                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Entitlements</div>
+                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">HHG System</div>
+                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">move.mil</div>
+                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Defense Personal Property</p>
               </div>
             </div>
             <div className="mt-6 rounded-2xl bg-[var(--sa-navy)] p-6 text-[var(--sa-cream)]">
@@ -42,90 +52,30 @@ export default function PCSOrdersProcessingContent({ data }: { data: { reference
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
                 BLUF
               </div>
-              <p className="mt-2 text-sm opacity-90">Review your orders immediately upon receipt. Verify report dates, authorized entitlements, and accounting data. Contact your S-1 if anything appears incorrect. Begin your PCS checklist at least 90 days before your detach date.</p>
-              <div className="mt-4 flex gap-3 text-sm">
-                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">90-Day Planning</span>
-                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">Verify Entitlements</span>
+              <p className="mt-2 text-sm opacity-90">Access orders through MOL OBI module. Get IPAC/RPAC endorsement before detaching. Register on move.mil for HHG shipment. Basic Orders are NOT valid without proper endorsement.</p>
+              <div className="mt-4 flex flex-wrap gap-3 text-sm">
+                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">MOL OBI Access</span>
+                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">IPAC Endorsement Required</span>
+                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">Register move.mil</span>
               </div>
             </div>
-          </section>
-        )}
-
-        {tab === "types" && (
-          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Types of PCS Orders</h2>
-            <div className="mt-4 space-y-4">
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">CONUS to CONUS</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Move within the continental United States. Standard HHG shipment, TLE at old and new duty station, DLA authorized.</p>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">CONUS to OCONUS</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Move from CONUS to overseas. May include POV shipment, additional storage, and overseas screening requirements.</p>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">OCONUS to CONUS</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Return to CONUS from overseas. May include POV return shipment and retrieval of stored HHG.</p>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">OCONUS to OCONUS</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Consecutive overseas tours. Special entitlements may apply including shipment between OCONUS locations.</p>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Unaccompanied Orders</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Member moves without dependents. Reduced HHG weight allowance, FSA entitlement may apply.</p>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Accompanied Orders</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Member moves with dependents. Full HHG weight allowance based on rank, dependent travel authorized.</p>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {tab === "documents" && (
-          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Required Documents</h2>
-            <div className="mt-3 grid gap-4 md:grid-cols-2">
-              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Before Departure</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Certified copy of PCS orders</li>
-                  <li>Amendments (if any)</li>
-                  <li>Dependent travel authorization</li>
-                  <li>NAVMC 11116 (PCS Checklist)</li>
-                  <li>DD Form 1299 (HHG application)</li>
-                  <li>POV inspection documentation</li>
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              <div className="rounded-xl border border-green-200 bg-green-50 p-4 dark:border-white/15 dark:bg-white/10">
+                <h3 className="font-bold text-green-800 dark:text-green-400">Who Receives PCS Orders?</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-green-800 dark:text-zinc-300">
+                  <li>HQMC monitors assign you to a new PDS</li>
+                  <li>Complete initial training with orders to operating forces</li>
+                  <li>Transfer between CONUS and OCONUS</li>
+                  <li>Humanitarian, hardship, or approved reassignment</li>
                 </ul>
               </div>
-              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">For Check-Out</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Detaching endorsement</li>
-                  <li>Base clearance sheet</li>
-                  <li>Housing clearance</li>
-                  <li>Medical/dental records transfer</li>
-                  <li>Unit clearance signatures</li>
-                </ul>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">For Check-In</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Orders with detaching endorsement</li>
-                  <li>Service Record Book (SRB)</li>
-                  <li>Medical/dental records</li>
-                  <li>Marriage/birth certificates (if applicable)</li>
-                  <li>NAVMC 10922 (dependency update)</li>
-                </ul>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">For Travel Claim</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>DD Form 1351-2 (Travel Voucher)</li>
-                  <li>Lodging receipts (over $75)</li>
-                  <li>TLE receipts</li>
-                  <li>Fuel receipts (if POC)</li>
-                  <li>Toll receipts</li>
+              <div className="rounded-xl border border-blue-200 bg-blue-50 p-4 dark:border-white/15 dark:bg-white/10">
+                <h3 className="font-bold text-blue-800 dark:text-blue-400">Key Systems</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-blue-800 dark:text-zinc-300">
+                  <li><strong>BOS:</strong> Basic Orders System in MOL</li>
+                  <li><strong>OBI:</strong> Outbound Interview module</li>
+                  <li><strong>DPS/move.mil:</strong> HHG shipment registration</li>
+                  <li><strong>MROWS:</strong> Reserve Component orders</li>
                 </ul>
               </div>
             </div>
@@ -134,85 +84,123 @@ export default function PCSOrdersProcessingContent({ data }: { data: { reference
 
         {tab === "steps" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">PCS Processing Steps</h2>
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">How PCS Orders Processing Works</h2>
             <div className="mt-4 space-y-4">
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 1: Receive and Review Orders</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Verify all information including rank, name, SSN, gaining unit, report date, and authorized entitlements. Report discrepancies to S-1 immediately.</p>
+              {[
+                { title: "Receive and Access Your Orders", desc: "Log into MOL (Marine Online). Navigate to the Outbound Interview (OBI) module. View your PCA/PCS Basic Orders. Unit leaders with Outbound Management access view orders through Outbound Tracker." },
+                { title: "Verify Your Information", desc: "Confirm all dependents are correct in MOL. If incorrect, submit an EPAR through MOL or visit your IPAC/RPAC. Verify TAD or FAP status with your S-1. Check obligated service for OCONUS orders." },
+                { title: "Attend the Mandatory PCS Workshop", desc: "Contact your installation's IRR Program. Sign up for the PCS Workshop (MCO 1754.10B). Receive briefs from DMO, IPAC, TRICARE, School Liaison, Travel, and Personal Financial Management." },
+                { title: "Request Unit Approval in MOL", desc: "Your unit S-1 approves the OBI in MOL. CONUS PCS: NLT 14 days prior. OCONUS Unaccompanied: NLT 30 days prior. OCONUS Accompanied: NLT 60 days prior." },
+                { title: "Submit Required Documents to IPAC/RPAC", desc: "OCONUS moves: Area Clearance, Medical Suitability, JKO Anti-Terrorism certificate for dependents 16+. Vehicle Processing Letter (if POV). DD Form 1056 for no-fee passports." },
+                { title: "IPAC/RPAC Processes Your Package", desc: "Admin clerk works your package. RPAC submits Area Clearance requests (OCONUS). RPAC submits Port Call requests to DMO. IPAC/RPAC certifies OBI within 5-10 business days." },
+                { title: "Complete Unit Checkout", desc: "Obtain your battalion/unit checkout sheet. Complete all checkout requirements (supply, armory, S-1, etc.). Requested detach date is the day you pick up endorsed orders." },
+                { title: "Pick Up Endorsed Orders", desc: "Collect original orders and endorsement from IPAC, RPAC, Satellite Support Center, or S-1. Basic Orders are NOT valid without proper IPAC/RPAC endorsement." },
+                { title: "Register for HHG Shipment", desc: "Go to move.mil. Upload orders and create shipment requests (HHG, UB, NTS, PPM). Contact local DMO early. Peak season: May-August." },
+              ].map((step, index) => (
+                <div key={index} className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">{index + 1}</div>
+                    <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{step.title}</h3>
+                  </div>
+                  <p className="mt-2 pl-11 text-sm text-zinc-700 dark:text-zinc-300">{step.desc}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {tab === "important" && (
+          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Important Things to Know</h2>
+            <div className="mt-4 space-y-4">
+              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">OBI Status Meanings</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li><strong>MOL Approved:</strong> S-1 approved. RPAC/IPAC ready to work on your package.</li>
+                  <li><strong>Admin Being Worked:</strong> Admin clerks processing your package.</li>
+                  <li><strong>Admin Finalized:</strong> Package prepared and ready for certification.</li>
+                  <li><strong>Certified:</strong> Package complete. Pick up on your detach date.</li>
+                </ul>
               </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 2: Schedule Transportation Brief</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Attend the Installation Personal Property Office (IPPO) brief. Schedule HHG pickup, learn about PPM options, and understand weight allowances.</p>
+              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Order Modifications</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>Requests to modify or cancel orders go through your Chain of Command</li>
+                  <li>IPAC/RPAC does not modify orders—your parent command submits requests</li>
+                  <li>OBI modifications go back to unit for approval. RPAC certifies within 2 days.</li>
+                </ul>
               </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 3: Create DTS Authorization</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Enter your travel itinerary in DTS. Request advance travel pay if needed. Route for approval before travel.</p>
+              <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-amber-800 dark:border-white/15 dark:bg-white/10 dark:text-[var(--sa-cream)]">
+                <div className="text-xs font-semibold">Timing Requirements</div>
+                <ul className="mt-1 list-disc space-y-1 pl-5 text-xs">
+                  <li><strong>CONUS to CONUS:</strong> Unit approval NLT 14 days prior</li>
+                  <li><strong>OCONUS Unaccompanied:</strong> Unit approval NLT 30 days prior</li>
+                  <li><strong>OCONUS Accompanied:</strong> Unit approval NLT 60 days prior</li>
+                </ul>
               </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 4: Complete Check-Out</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Obtain all required signatures on your checkout sheet. Clear housing, return gear, and get detaching endorsement.</p>
+              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Obligated Service</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>Must have sufficient obligated service to complete prescribed tour length</li>
+                  <li>Extensions or reenlistment resolve obligations before orders execute</li>
+                  <li>Request extensions through your Career Planner</li>
+                </ul>
               </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 5: Execute PCS Travel</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Travel via authorized mode (POC, commercial air, etc.). Keep all receipts. Claim TLE at old and/or new duty station as authorized.</p>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 6: Check In at New Duty Station</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Report to gaining command within orders timeframe. Complete check-in requirements and update housing/BAH status.</p>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 7: Submit Travel Voucher</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Complete DD Form 1351-2 or DTS voucher within 5 days of arrival. Attach all required receipts and documentation.</p>
+              <div className="rounded-xl border border-red-200 bg-red-50 p-4 dark:border-white/15 dark:bg-white/10">
+                <h3 className="font-bold text-red-800 dark:text-red-400">PCA Orders (Local Moves)</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-red-800 dark:text-zinc-300">
+                  <li>Executed same day</li>
+                  <li>Checkout at 0800, report by 2359</li>
+                  <li>No travel days, leave in conjunction, or travel entitlements</li>
+                  <li>Bring completed checkout sheet on departure day</li>
+                </ul>
               </div>
             </div>
           </section>
         )}
 
-        {tab === "timeline" && (
+        {tab === "special" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">PCS Timeline</h2>
-            <div className="mt-4 space-y-3">
-              <div className="flex items-start gap-4">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-[var(--sa-cream)]">90</div>
-                <div>
-                  <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">90 Days Out</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Receive orders, attend TMO brief, schedule HHG pickup, begin housing search at new location</p>
-                </div>
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Special Situations</h2>
+            <div className="mt-4 space-y-4">
+              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">OCONUS Accompanied Tours</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>Complete Area Clearance/Dependent Entry Approval (DEA)</li>
+                  <li>Submit Medical Suitability screening for all dependents</li>
+                  <li>Obtain no-fee passports (DD Form 1056)</li>
+                  <li>Complete JKO Anti-Terrorism certificate for dependents over 16</li>
+                  <li>IPAC/RPAC coordinates Port Call through DMO</li>
+                </ul>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-[var(--sa-cream)]">60</div>
-                <div>
-                  <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">60 Days Out</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Create DTS authorization, schedule POV shipment (if OCONUS), begin checkout process</p>
-                </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">EFMP Families</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>All PCS orders for EFMP-enrolled sponsors route to HQMC EFMP for screening (MCO 1754.4C)</li>
+                  <li>Orders reviewed for medical and educational suitability at proposed location</li>
+                  <li>EFMP enrollment does not prevent deployments or IA assignments</li>
+                </ul>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-[var(--sa-cream)]">30</div>
-                <div>
-                  <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">30 Days Out</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Complete medical/dental screenings, finalize housing arrangements, complete unit turnover</p>
-                </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">TAD or FAP Status</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>Verify with your S-1</li>
+                  <li>Provide a detaching endorsement to IPAC/RPAC before you detach</li>
+                </ul>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-[var(--sa-cream)]">14</div>
-                <div>
-                  <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">14 Days Out</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">HHG pickup, clear housing, complete remaining checkout signatures</p>
-                </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Dual-Military Couples</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>Coordinate detach dates with your spouse&apos;s command</li>
+                  <li>Submit spouse&apos;s travel claim copy with your travel voucher</li>
+                </ul>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-red)] text-sm font-bold text-[var(--sa-cream)]">0</div>
-                <div>
-                  <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Detach Date</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Depart old duty station, begin TLE if authorized, execute travel</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-[var(--sa-cream)]">+5</div>
-                <div>
-                  <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Within 5 Days of Arrival</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Check in to gaining command, submit travel voucher, update records</p>
-                </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Reserve Component</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>ADOS or mobilization orders over 180 days use MROWS</li>
+                  <li>Contact your I-I staff for Reserve-specific procedures</li>
+                </ul>
               </div>
             </div>
           </section>
@@ -223,46 +211,32 @@ export default function PCSOrdersProcessingContent({ data }: { data: { reference
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Common Problems & Solutions</h2>
             <div className="mt-3 space-y-4">
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Orders have incorrect information</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Contact S-1/IPAC immediately to request an amendment</li>
-                  <li>Do not begin travel until orders are corrected</li>
-                  <li>Document discrepancies in writing</li>
-                </ul>
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Dependents incorrect in MOL</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300"><strong>Solution:</strong> Submit an EPAR through MOL or visit your IPAC/RPAC with supporting documentation (birth certificates, marriage license) to correct MCTFS records before your package processes.</p>
               </div>
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Need to change report date</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Request must come from gaining command or higher authority</li>
-                  <li>Submit request through your chain of command</li>
-                  <li>Amendment required before executing different travel dates</li>
-                </ul>
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Insufficient obligated service for OCONUS tour</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300"><strong>Solution:</strong> Contact your Career Planner to extend or reenlist. Orders require sufficient service to complete the prescribed tour length.</p>
               </div>
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Dependents not authorized on orders</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Verify DEERS enrollment for all dependents</li>
-                  <li>Request orders amendment to add dependent travel</li>
-                  <li>Ensure NAVMC 10922 is current</li>
-                </ul>
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">OBI not approved by unit</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300"><strong>Solution:</strong> Contact your S-1 to approve the OBI in MOL. IPAC/RPAC cannot process your package until the unit approves.</p>
               </div>
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Travel voucher returned for corrections</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Review rejection reason carefully</li>
-                  <li>Provide missing receipts or documentation</li>
-                  <li>Correct any calculation errors</li>
-                  <li>Resubmit within 5 days of correction</li>
-                </ul>
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Picked up orders without endorsement</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300"><strong>Solution:</strong> Return to IPAC/RPAC. Basic Orders are not valid for travel without proper endorsement. You are not authorized to detach without endorsed orders.</p>
               </div>
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Can&apos;t complete checkout in time</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Notify chain of command immediately</li>
-                  <li>Prioritize critical items (housing, unit, medical)</li>
-                  <li>Request extended checkout if needed</li>
-                  <li>Some items can be completed remotely</li>
-                </ul>
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">DMO has no availability during peak season</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300"><strong>Solution:</strong> Contact DMO early. Register on move.mil as soon as you receive orders. Scheduling is first-come, first-served. Peak season runs May through August.</p>
+              </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Area Clearance delayed for OCONUS move</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300"><strong>Solution:</strong> Submit all required documents (Medical Suitability, JKO certificates) to IPAC/RPAC as early as possible. Area Clearances take time to process.</p>
+              </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">No sponsor assigned at gaining command</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300"><strong>Solution:</strong> Contact your IRR program. MCO 1320.11H mandates sponsor assignment. IRR connects you to gaining installation POCs and Welcome Aboard Packet.</p>
               </div>
             </div>
           </section>
@@ -298,35 +272,57 @@ export default function PCSOrdersProcessingContent({ data }: { data: { reference
 
       <aside className="space-y-6 lg:mt-6">
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Facts</h3>
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Key Contacts</h3>
           <ul className="mt-3 space-y-2 text-sm">
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Orders Distribution</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">Usually 90+ days before detach date</div>
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">HQMC BOS Support</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">DSN 278-9971</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Proceed Time</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">Typically 4-10 days authorized</div>
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Local IPAC/RPAC</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">Contact your installation</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Travel Voucher</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">Submit within 5 days of arrival</div>
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Local DMO</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">Transportation Office</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">DLA</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">Paid with travel voucher settlement</div>
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">IRR Program</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">Marine & Family Programs</div>
             </li>
           </ul>
         </section>
 
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Key Contacts</h3>
-          <ul className="mt-3 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
-            <li><strong>S-1/IPAC:</strong> Orders amendments, check-in/out</li>
-            <li><strong>TMO/PPSO:</strong> HHG shipment, storage</li>
-            <li><strong>Housing Office:</strong> Quarters termination</li>
-            <li><strong>Travel Office:</strong> DTS, vouchers</li>
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Approval Timelines</h3>
+          <ul className="mt-3 space-y-2 text-sm">
+            <li className="rounded-md border border-red-200 bg-red-50 p-3 dark:border-white/15 dark:bg-white/10">
+              <div className="font-medium text-red-700 dark:text-[var(--sa-cream)]">OCONUS Accompanied</div>
+              <div className="text-xs text-red-600 dark:text-zinc-300">NLT 60 days prior</div>
+            </li>
+            <li className="rounded-md border border-amber-200 bg-amber-50 p-3 dark:border-white/15 dark:bg-white/10">
+              <div className="font-medium text-amber-700 dark:text-[var(--sa-cream)]">OCONUS Unaccompanied</div>
+              <div className="text-xs text-amber-600 dark:text-zinc-300">NLT 30 days prior</div>
+            </li>
+            <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">CONUS PCS</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">NLT 14 days prior</div>
+            </li>
           </ul>
+        </section>
+
+        <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Links</h3>
+          <ul className="mt-3 space-y-1 text-sm">
+            <li><a href="https://mol.tfs.usmc.mil/" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">MOL (Marine Online)</a></li>
+            <li><a href="https://www.move.mil/" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">move.mil (DPS)</a></li>
+            <li><a href="https://planmymove.militaryonesource.mil/" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">Plan My Move</a></li>
+          </ul>
+        </section>
+
+        <section className="rounded-xl border border-amber-200 bg-amber-50 p-4 dark:border-white/15 dark:bg-white/10">
+          <h3 className="font-semibold text-amber-800 dark:text-amber-400">Peak Season</h3>
+          <p className="mt-1 text-xs text-amber-700 dark:text-zinc-300">May through August. Contact DMO and register on move.mil as early as possible for HHG scheduling.</p>
         </section>
       </aside>
     </div>
