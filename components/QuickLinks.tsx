@@ -1,7 +1,7 @@
-type Ref = { title: string; url: string; isQuickLink?: boolean };
+type QuickLink = { title: string; url: string; isQuickLink?: boolean };
 
 type QuickLinksProps = {
-  references: Ref[];
+  references: QuickLink[];
   variant?: "simple" | "card";
 };
 
