@@ -2,22 +2,36 @@
 import { useState } from "react";
 
 type Ref = { title: string; desc: string; url: string; type: string };
+type Tab = "overview" | "sit" | "nts" | "ppm" | "pov" | "steps" | "special" | "troubleshooter" | "references";
+
+const TABS: { key: Tab; label: string }[] = [
+  { key: "overview", label: "Overview" },
+  { key: "sit", label: "SIT" },
+  { key: "nts", label: "NTS" },
+  { key: "ppm", label: "PPM Storage" },
+  { key: "pov", label: "POV Storage" },
+  { key: "steps", label: "Steps" },
+  { key: "special", label: "Special" },
+  { key: "troubleshooter", label: "Troubleshooter" },
+  { key: "references", label: "References" },
+];
 
 export default function PCSStorageContent({ data }: { data: { references: Ref[] } }) {
-  const [tab, setTab] = useState<"overview" | "sit" | "nts" | "pov" | "steps" | "special" | "troubleshooter" | "references">("overview");
+  const [tab, setTab] = useState<Tab>("overview");
 
   return (
     <div className="grid gap-6 lg:grid-cols-3">
       <div className="lg:col-span-2 space-y-6">
         <div className="flex items-center gap-2 overflow-x-auto [&>button]:whitespace-nowrap [&>button]:shrink-0">
-          <button onClick={() => setTab("overview")} className={`rounded-md px-3 py-2 text-sm ${tab === "overview" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Overview</button>
-          <button onClick={() => setTab("sit")} className={`rounded-md px-3 py-2 text-sm ${tab === "sit" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>SIT</button>
-          <button onClick={() => setTab("nts")} className={`rounded-md px-3 py-2 text-sm ${tab === "nts" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>NTS</button>
-          <button onClick={() => setTab("pov")} className={`rounded-md px-3 py-2 text-sm ${tab === "pov" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>POV Storage</button>
-          <button onClick={() => setTab("steps")} className={`rounded-md px-3 py-2 text-sm ${tab === "steps" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Steps</button>
-          <button onClick={() => setTab("special")} className={`rounded-md px-3 py-2 text-sm ${tab === "special" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Special</button>
-          <button onClick={() => setTab("troubleshooter")} className={`rounded-md px-3 py-2 text-sm ${tab === "troubleshooter" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Troubleshooter</button>
-          <button onClick={() => setTab("references")} className={`rounded-md px-3 py-2 text-sm ${tab === "references" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>References</button>
+          {TABS.map((t) => (
+            <button
+              key={t.key}
+              onClick={() => setTab(t.key)}
+              className={`rounded-md px-3 py-2 text-sm ${tab === t.key ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}
+            >
+              {t.label}
+            </button>
+          ))}
         </div>
 
         {tab === "overview" && (
@@ -91,13 +105,13 @@ export default function PCSStorageContent({ data }: { data: { references: Ref[] 
             <div className="mt-4 rounded-xl border border-green-200 bg-green-50 p-4 dark:border-white/15 dark:bg-white/10">
               <h3 className="font-bold text-green-800 dark:text-green-400">Extension Approval Circumstances</h3>
               <p className="mt-1 text-xs text-green-700 dark:text-zinc-300">Submit DD Form 1857 with supporting documentation BEFORE the 90-day period expires:</p>
-              <ul className="mt-2 grid gap-1 sm:grid-cols-2 text-xs text-green-800 dark:text-zinc-300">
-                <li>• Serious illness of member or dependent</li>
-                <li>• Death of a dependent</li>
-                <li>• Impending assignment to government housing</li>
-                <li>• TDY after arrival at new PDS</li>
-                <li>• Non-availability of suitable housing</li>
-                <li>• Acts of God (natural disasters)</li>
+              <ul className="mt-2 grid gap-1 sm:grid-cols-2 text-xs text-green-800 dark:text-zinc-300 list-disc list-inside">
+                <li>Serious illness of member or dependent</li>
+                <li>Death of a dependent</li>
+                <li>Impending assignment to government housing</li>
+                <li>TDY after arrival at new PDS</li>
+                <li>Non-availability of suitable housing</li>
+                <li>Acts of God (natural disasters)</li>
               </ul>
             </div>
             <div className="mt-4 rounded-xl border border-red-200 bg-red-50 p-4 dark:border-white/15 dark:bg-white/10">
@@ -180,6 +194,79 @@ export default function PCSStorageContent({ data }: { data: { references: Ref[] 
           </section>
         )}
 
+        {tab === "ppm" && (
+          <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">PPM Storage</h2>
+            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">When conducting a Personally Procured Move (PPM), you can arrange your own storage at a commercial facility. You receive reimbursement up to the Government Constructive Cost (GCC) for storage expenses.</p>
+            <div className="mt-4 grid gap-4 sm:grid-cols-3">
+              <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Time Limit</div>
+                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">90 Days</div>
+                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">For military members</p>
+              </div>
+              <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Reimbursement</div>
+                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Up to GCC</div>
+                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Government cost limit</p>
+              </div>
+              <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
+                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Approval</div>
+                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Pre-Approval</div>
+                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Required before storage</p>
+              </div>
+            </div>
+            <div className="mt-4 rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+              <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">How to Arrange PPM Storage</h3>
+              <div className="mt-3 space-y-3">
+                <div className="flex items-start gap-3">
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">1</div>
+                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Request <strong>pre-approval</strong> from your Transportation Office BEFORE placing items in storage</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">2</div>
+                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Find a commercial storage facility and get a signed storage contract</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">3</div>
+                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Obtain <strong>certified weight tickets</strong> before and after loading items into storage</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">4</div>
+                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Retain all receipts: storage contract, monthly payments, delivery charges</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">5</div>
+                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Submit documentation with your PPM claim for reimbursement</p>
+                </div>
+              </div>
+            </div>
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              <div className="rounded-xl border border-green-200 bg-green-50 p-4 dark:border-white/15 dark:bg-white/10">
+                <h3 className="font-bold text-green-800 dark:text-green-400">Reimbursable Expenses</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-green-800 dark:text-zinc-300">
+                  <li>Monthly storage fees (up to 90 days)</li>
+                  <li>Initial pickup/delivery charges</li>
+                  <li>Insurance costs (if required by facility)</li>
+                  <li>Packing materials for storage</li>
+                </ul>
+              </div>
+              <div className="rounded-xl border border-red-200 bg-red-50 p-4 dark:border-white/15 dark:bg-white/10">
+                <h3 className="font-bold text-red-800 dark:text-red-400">NOT Reimbursable</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-red-800 dark:text-zinc-300">
+                  <li>Storage beyond 90 days</li>
+                  <li>Storage without pre-approval</li>
+                  <li>Late fees or penalties</li>
+                  <li>Costs exceeding GCC</li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-amber-800 dark:border-white/15 dark:bg-white/10 dark:text-[var(--sa-cream)]">
+              <div className="text-xs font-semibold">Required Documentation</div>
+              <div className="mt-1 text-xs">When submitting your PPM claim, include: (1) Pre-approval from Transportation Office, (2) Storage contract with facility, (3) All paid receipts, (4) Weight tickets showing stored items, (5) Final invoice showing storage end date.</div>
+            </div>
+          </section>
+        )}
+
         {tab === "pov" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">POV Storage</h2>
@@ -219,15 +306,9 @@ export default function PCSStorageContent({ data }: { data: { references: Ref[] 
                 <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Only ONE POV qualifies. Must be owned or leased by you or your dependent for personal use.</p>
               </div>
             </div>
-            <div className="mt-4 rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-              <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">PPM Storage</h3>
-              <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">When conducting a Personally Procured Move, you can arrange your own storage at a commercial facility. You receive reimbursement up to the Government Constructive Cost (GCC).</p>
-              <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                <li><strong>Time Limit:</strong> 90 days for military members</li>
-                <li>Pre-approval from Transportation Office required BEFORE placing items in storage</li>
-                <li>Retain weight tickets, storage contracts, and paid receipts</li>
-                <li>Submit documentation with your PPM claim</li>
-              </ul>
+            <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-amber-800 dark:border-white/15 dark:bg-white/10 dark:text-[var(--sa-cream)]">
+              <div className="text-xs font-semibold">Important</div>
+              <div className="mt-1 text-xs">Once you remove your POV from storage, it cannot be returned to government-funded storage without new PCS orders.</div>
             </div>
           </section>
         )}
