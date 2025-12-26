@@ -1006,9 +1006,12 @@ const MILEAGE_DATA = {
 
 const ADVANCE_PAY_DATA = {
   references: [
-    { title: "Joint Travel Regulations Ch 2", desc: "Travel advance policies and limits.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
-    { title: "Defense Travel System", desc: "Advance request through DTS.", url: "https://www.defensetravel.dod.mil/", type: "Website" },
-    { title: "DFAS Travel Pay", desc: "Advance payment processing.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+    { title: "DFAS Travel Pay", url: "https://www.dfas.mil/militarymembers/travelpay/", isQuickLink: true },
+    { title: "Joint Travel Regulations", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: true },
+    { title: "DTS Help Desk", url: "https://www.defensetravel.dod.mil/", isQuickLink: true },
+    { title: "DoD FMR Volume 9", url: "https://comptroller.defense.gov/portals/45/documents/fmr/volume_09.pdf", isQuickLink: true },
+    { title: "MCO 1000.6 (Travel Systems Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
+    { title: "MCO 4600.40B (GTCC Program)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
   ],
 };
 
