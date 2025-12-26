@@ -839,10 +839,10 @@ const HHG_DATA = {
 const PPM_DATA = {
   references: [
     { title: "JTR Chapter 5", desc: "Permanent Duty Travel - PPM entitlements, GCC calculation, and reimbursement.", url: "https://www.defensetravel.dod.mil/Docs/perdiem/JTR.pdf", type: "Policy" },
-    { title: "MCO 4600.39", desc: "Marine Corps Personal Property Manual - PPM procedures and requirements.", url: "https://www.marines.mil/News/Publications/ELECTRONIC-LIBRARY/Electronic-Library-Display/Article/900116/mco-460039/", type: "Policy" },
+    { title: "MCO 4600.39", desc: "Marine Corps Personal Property Manual - PPM procedures and requirements.", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/1561175/mco-460039-w-ch-1/", type: "Policy" },
     { title: "DTR Part IV Appendix K-1", desc: "Defense Transportation Regulation - PPM weight and expense documentation.", url: "https://www.ustranscom.mil/dtr/part-iv/dtr-part-4-app-k-1.pdf", type: "Policy" },
     { title: "MilMove Portal", desc: "Create PPM shipments, request AOA, and submit claims.", url: "https://my.move.mil/", type: "Website" },
-    { title: "LOGCOM TVCB", desc: "Travel Voucher Certification Branch - PPM claim processing.", url: "https://www.logcom.marines.mil/Subordinate-Commands/Fiscal/Travel-Voucher-Certification-Branch/", type: "Website" },
+    { title: "LOGCOM TVCB", desc: "Travel Voucher Certification Branch - PPM claim processing.", url: "https://www.logcom.marines.mil/G8/TVCB/", type: "Website" },
   ],
 };
 
@@ -920,10 +920,10 @@ const TAD_DATA = {
 
 const PER_DIEM_DATA = {
   perDiemRates: [
-    { location: "CONUS Standard", lodging: "$110", mie: "$64", total: "$174" },
-    { location: "Washington DC", lodging: "$267", mie: "$79", total: "$346" },
-    { location: "San Diego, CA", lodging: "$225", mie: "$79", total: "$304" },
-    { location: "New York City", lodging: "$343", mie: "$79", total: "$422" },
+    { location: "CONUS Standard", lodging: 110, mie: 64, total: 174 },
+    { location: "Washington DC", lodging: 267, mie: 79, total: 346 },
+    { location: "San Diego, CA", lodging: 225, mie: 79, total: 304 },
+    { location: "New York City", lodging: 343, mie: 79, total: 422 },
   ],
   references: [
     { title: "GSA Per Diem Rates", desc: "Official CONUS per diem rates.", url: "https://www.gsa.gov/travel/plan-book/per-diem-rates", type: "Website" },
@@ -958,9 +958,9 @@ const GTCC_DATA = {
 
 const MILEAGE_DATA = {
   mileageRates: [
-    { year: "2025", rate: "$0.70/mile", effective: "January 1, 2025" },
-    { year: "2024", rate: "$0.67/mile", effective: "January 1, 2024" },
-    { year: "2023", rate: "$0.655/mile", effective: "January 1, 2023" },
+    { year: "2025", rate: 0.70, effective: "January 1, 2025" },
+    { year: "2024", rate: 0.67, effective: "January 1, 2024" },
+    { year: "2023", rate: 0.655, effective: "January 1, 2023" },
   ],
   references: [
     { title: "GSA Mileage Rates", desc: "Official POC mileage reimbursement rates.", url: "https://www.gsa.gov/travel/plan-book/transportation-airfare-pov-etc/privately-owned-vehicle-pov-mileage-reimbursement", type: "Website" },
@@ -1009,57 +1009,64 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
   const itemTitle = toTitle(itemSlug);
   if (itemSlug === "pay-corrections") return notFound();
 
-  const isBAH = itemSlug === "basic-allowance-for-housing";
-  const isBAS = itemSlug === "basic-allowance-for-subsistence";
-  const isCOLA = itemSlug === "cost-of-living-allowance";
-  const isOHA = itemSlug === "overseas-housing-allowance";
-  const isFSA = itemSlug === "family-separation-allowance";
-  const isHFP = itemSlug === "hostile-fire-pay";
-  const isIDP = itemSlug === "imminent-danger-pay";
-  const isHDIP = itemSlug === "demolition-pay";
-  const isHDP = itemSlug === "hardship-duty-pay";
-  const isDIVE = itemSlug === "dive-pay";
-  const isSTRESS = itemSlug === "experimental-stress-duty";
-  const isFDHD = itemSlug === "flight-deck-duty";
-  const isPARACHUTE = itemSlug === "parachute-duty-pay";
-  const isVBSS = itemSlug === "maritime-vbss-duty";
-  const isSO = itemSlug === "special-operations-pay";
-  const isTOXIC = itemSlug === "toxic-materials-duty";
-  const isACIP = itemSlug === "aviation-career-incentive-pay";
-  const isFLPP = itemSlug === "foreign-language-proficiency-pay";
-  const isFLPB = itemSlug === "foreign-language-proficiency-bonus";
-  const isSDAP = itemSlug === "sdap";
-  const isSDP = itemSlug === "savings-deposit-program";
-  const isBRS = itemSlug === "blended-retirement-system";
-  const isHIGH3 = itemSlug === "legacy-high-3-retirement-system";
-  const isCP = itemSlug === "continuation-pay";
-  const isTEB = itemSlug === "transfer-of-educational-benefits";
-  const isTSP = itemSlug === "thrift-savings-plan";
-  const isCZTE = itemSlug === "combat-zone-tax-exclusion";
-  const isFLEXFSA = itemSlug === "flexible-spending-accounts";
-  const isStateTax = itemSlug === "military-state-tax-relief" || itemSlug === "state-tax-relief";
-  const isALLOTMENTS = itemSlug === "allotments";
-  const isBNA = itemSlug === "basic-needs-allowance";
-  const isDEBT = itemSlug === "debt-management";
-  const isFHA = itemSlug === "financial-hardship-assistance";
-  const isOVERPAY = itemSlug === "overpayment-repayment-plans";
-  // Travel & Transportation
-  const isPCSOrders = itemSlug === "pcs-orders-processing";
-  const isHHG = itemSlug === "household-goods-shipment";
-  const isPPM = itemSlug === "personally-procured-move";
-  const isPCSStorage = itemSlug === "pcs-storage-entitlements";
-  const isDLA = itemSlug === "dislocation-allowance";
-  const isTLE = itemSlug === "temporary-lodging-expense";
-  const isVehicle = itemSlug === "vehicle-processing-storage";
-  const isTAD = itemSlug === "tad-orders";
-  const isPerDiem = itemSlug === "per-diem-rates";
-  const isVoucher = itemSlug === "travel-voucher-submission";
-  const isDTS = itemSlug === "dts-authorization";
-  const isGTCC = itemSlug === "government-travel-charge-card";
-  const isMileage = itemSlug === "mileage-reimbursement";
-  const isAdvancePay = itemSlug === "advance-travel-pay";
-  const isLeaveEnRoute = itemSlug === "leave-en-route-travel";
-  const displayTitle = isSDAP ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
+  // Content map for slug-to-component mapping
+  const contentMap: Record<string, React.ReactNode> = {
+    // Pay & Allowances
+    "basic-allowance-for-housing": <BAHContent bahData={BAH_DATA} />,
+    "basic-allowance-for-subsistence": <BASContent basData={BAS_DATA} />,
+    "cost-of-living-allowance": <COLAContent colaData={COLA_DATA} />,
+    "overseas-housing-allowance": <OHAContent ohaData={OHA_DATA} />,
+    "family-separation-allowance": <FSAContent fsaData={FSA_DATA} />,
+    "hostile-fire-pay": <HostileFirePayContent hfpData={HFP_DATA} />,
+    "imminent-danger-pay": <ImminentDangerPayContent idpData={IDP_DATA} />,
+    "demolition-pay": <HDIPContent hdipData={HDIP_DATA} />,
+    "hardship-duty-pay": <HDPContent hdpData={HDP_DATA} />,
+    "dive-pay": <DivePayContent diveData={DIVE_DATA} />,
+    "experimental-stress-duty": <ExperimentalStressContent stressData={STRESS_DATA} />,
+    "flight-deck-duty": <FlightDeckContent fdhdData={FDHD_DATA} />,
+    "parachute-duty-pay": <ParachuteContent parachuteData={PARACHUTE_DATA} />,
+    "maritime-vbss-duty": <VBSSContent vbssData={VBSS_DATA} />,
+    "special-operations-pay": <SpecialOperationsContent soData={SO_DATA} />,
+    "toxic-materials-duty": <ToxicMaterialsContent tmData={TM_DATA} />,
+    "aviation-career-incentive-pay": <AviationCareerIncentivePayContent acipData={ACIP_DATA} />,
+    "foreign-language-proficiency-pay": <ForeignLanguageProficiencyPayContent flppData={FLPP_DATA} />,
+    "foreign-language-proficiency-bonus": <ForeignLanguageProficiencyPayContent flppData={FLPP_DATA} />,
+    "sdap": <SDAPContent sdapData={SDAP_DATA} />,
+    "savings-deposit-program": <SDPContent sdpData={SDP_DATA} />,
+    "blended-retirement-system": <BRSContent />,
+    "legacy-high-3-retirement-system": <High3Content />,
+    "continuation-pay": <ContinuationPayContent />,
+    "transfer-of-educational-benefits": <TEBContent />,
+    "thrift-savings-plan": <TSPContent />,
+    "combat-zone-tax-exclusion": <CZTEContent />,
+    "flexible-spending-accounts": <FlexibleSpendingAccountsContent />,
+    "military-state-tax-relief": <MilitaryStateTaxReliefContent />,
+    "state-tax-relief": <MilitaryStateTaxReliefContent />,
+    "allotments": <AllotmentsContent />,
+    "basic-needs-allowance": <BasicNeedsAllowanceContent />,
+    "debt-management": <DebtManagementContent />,
+    "financial-hardship-assistance": <FinancialHardshipAssistanceContent />,
+    "overpayment-repayment-plans": <OverpaymentRepaymentPlansContent />,
+    // Travel & Transportation
+    "pcs-orders-processing": <PCSOrdersProcessingContent data={PCS_ORDERS_DATA} />,
+    "household-goods-shipment": <HouseholdGoodsShipmentContent data={HHG_DATA} />,
+    "personally-procured-move": <PersonallyProcuredMoveContent data={PPM_DATA} />,
+    "pcs-storage-entitlements": <PCSStorageContent data={PCS_STORAGE_DATA} />,
+    "dislocation-allowance": <DislocationAllowanceContent data={DLA_DATA} />,
+    "temporary-lodging-expense": <TemporaryLodgingExpenseContent data={TLE_DATA} />,
+    "vehicle-processing-storage": <VehicleProcessingStorageContent data={VEHICLE_DATA} />,
+    "tad-orders": <TADOrdersContent data={TAD_DATA} />,
+    "per-diem-rates": <PerDiemRatesContent data={PER_DIEM_DATA} />,
+    "travel-voucher-submission": <TravelVoucherSubmissionContent data={VOUCHER_DATA} />,
+    "dts-authorization": <DTSAuthorizationContent data={DTS_DATA} />,
+    "government-travel-charge-card": <GovernmentTravelChargeCardContent data={GTCC_DATA} />,
+    "mileage-reimbursement": <MileageReimbursementContent data={MILEAGE_DATA} />,
+    "advance-travel-pay": <AdvanceTravelPayContent data={ADVANCE_PAY_DATA} />,
+    "leave-en-route-travel": <LeaveEnRouteTravelContent data={LEAVE_ENROUTE_DATA} />,
+  };
+
+  const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
+  const contentToRender = contentMap[itemSlug] ?? <GenericContent title={itemTitle} />;
 
   return (
     <div className="space-y-8">
@@ -1071,7 +1078,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
         <Link prefetch={false} href={`/roles/${safeRole}/${safeSection}`} className="inline-flex items-center justify-center rounded-md border border-black/10 bg-white px-4 py-2 text-[var(--sa-navy)] shadow-sm transition hover:bg-[var(--sa-cream)]/60 dark:border-white/15 dark:bg-black/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Back</Link>
       </div>
 
-      {isBAH ? <BAHContent bahData={BAH_DATA} /> : isBAS ? <BASContent basData={BAS_DATA} /> : isCOLA ? <COLAContent colaData={COLA_DATA} /> : isOHA ? <OHAContent ohaData={OHA_DATA} /> : isFSA ? <FSAContent fsaData={FSA_DATA} /> : isHFP ? <HostileFirePayContent hfpData={HFP_DATA} /> : isIDP ? <ImminentDangerPayContent idpData={IDP_DATA} /> : isHDIP ? <HDIPContent hdipData={HDIP_DATA} /> : isHDP ? <HDPContent hdpData={HDP_DATA} /> : isSDAP ? <SDAPContent sdapData={SDAP_DATA} /> : isSDP ? <SDPContent sdpData={SDP_DATA} /> : isHIGH3 ? <High3Content /> : isBRS ? <BRSContent /> : isCP ? <ContinuationPayContent /> : isTEB ? <TEBContent /> : isTSP ? <TSPContent /> : isCZTE ? <CZTEContent /> : isStateTax ? <MilitaryStateTaxReliefContent /> : isFLEXFSA ? <FlexibleSpendingAccountsContent /> : isALLOTMENTS ? <AllotmentsContent /> : isBNA ? <BasicNeedsAllowanceContent /> : isDEBT ? <DebtManagementContent /> : isFHA ? <FinancialHardshipAssistanceContent /> : isOVERPAY ? <OverpaymentRepaymentPlansContent /> : isDIVE ? <DivePayContent diveData={DIVE_DATA} /> : isSTRESS ? <ExperimentalStressContent stressData={STRESS_DATA} /> : isFDHD ? <FlightDeckContent fdhdData={FDHD_DATA} /> : isPARACHUTE ? <ParachuteContent parachuteData={PARACHUTE_DATA} /> : isVBSS ? <VBSSContent vbssData={VBSS_DATA} /> : isSO ? <SpecialOperationsContent soData={SO_DATA} /> : isTOXIC ? <ToxicMaterialsContent tmData={TM_DATA} /> : isACIP ? <AviationCareerIncentivePayContent acipData={ACIP_DATA} /> : (isFLPP || isFLPB) ? <ForeignLanguageProficiencyPayContent flppData={FLPP_DATA} /> : isPCSOrders ? <PCSOrdersProcessingContent data={PCS_ORDERS_DATA} /> : isHHG ? <HouseholdGoodsShipmentContent data={HHG_DATA} /> : isPPM ? <PersonallyProcuredMoveContent data={PPM_DATA} /> : isPCSStorage ? <PCSStorageContent data={PCS_STORAGE_DATA} /> : isDLA ? <DislocationAllowanceContent data={DLA_DATA} /> : isTLE ? <TemporaryLodgingExpenseContent data={TLE_DATA} /> : isVehicle ? <VehicleProcessingStorageContent data={VEHICLE_DATA} /> : isTAD ? <TADOrdersContent data={TAD_DATA} /> : isPerDiem ? <PerDiemRatesContent data={PER_DIEM_DATA} /> : isVoucher ? <TravelVoucherSubmissionContent data={VOUCHER_DATA} /> : isDTS ? <DTSAuthorizationContent data={DTS_DATA} /> : isGTCC ? <GovernmentTravelChargeCardContent data={GTCC_DATA} /> : isMileage ? <MileageReimbursementContent data={MILEAGE_DATA} /> : isAdvancePay ? <AdvanceTravelPayContent data={ADVANCE_PAY_DATA} /> : isLeaveEnRoute ? <LeaveEnRouteTravelContent data={LEAVE_ENROUTE_DATA} /> : <GenericContent title={itemTitle} />}
+      {contentToRender}
     </div>
   );
 }

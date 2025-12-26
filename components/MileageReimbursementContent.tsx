@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 type Ref = { title: string; desc: string; url: string; type: string };
-type MileageRate = { year: string; rate: string; effective: string };
+type MileageRate = { year: string; rate: number; effective: string };
 
 export default function MileageReimbursementContent({ data }: { data: { mileageRates: MileageRate[]; references: Ref[] } }) {
   const [tab, setTab] = useState<"overview" | "rates" | "eligibility" | "documents" | "steps" | "troubleshooter" | "references">("overview");
@@ -72,7 +72,7 @@ export default function MileageReimbursementContent({ data }: { data: { mileageR
                   {data.mileageRates.map((r) => (
                     <tr key={r.year} className="border-b border-black/5 dark:border-white/10">
                       <td className="px-4 py-3 text-zinc-700 dark:text-zinc-300">{r.year}</td>
-                      <td className="px-4 py-3 font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{r.rate}</td>
+                      <td className="px-4 py-3 font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">${r.rate.toFixed(2)}/mile</td>
                       <td className="px-4 py-3 text-zinc-700 dark:text-zinc-300">{r.effective}</td>
                     </tr>
                   ))}
