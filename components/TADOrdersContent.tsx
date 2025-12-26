@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { QuickLinks } from "./QuickLinks";
 
 type Ref = { title: string; desc: string; url: string; type: string; isQuickLink?: boolean };
 type Tab = "overview" | "required" | "steps" | "important" | "special" | "troubleshooter" | "references";
@@ -355,14 +356,7 @@ export default function TADOrdersContent({ data }: { data: { references: Ref[] }
           </ul>
         </section>
 
-        <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Links</h3>
-          <ul className="mt-3 space-y-1 text-sm">
-            {data.references.filter((ref) => ref.isQuickLink).map((ref) => (
-              <li key={ref.title}><a href={ref.url} target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">{ref.title}</a></li>
-            ))}
-          </ul>
-        </section>
+        <QuickLinks references={data.references} />
       </aside>
     </div>
   );
