@@ -848,9 +848,12 @@ const PPM_DATA = {
 
 const PCS_STORAGE_DATA = {
   references: [
-    { title: "Joint Travel Regulations Ch 5", desc: "Storage entitlements during PCS.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
-    { title: "Move.mil Storage Info", desc: "Government storage options and procedures.", url: "https://www.move.mil/", type: "Website" },
-    { title: "USTRANSCOM", desc: "Storage program administration.", url: "https://www.ustranscom.mil/", type: "Website" },
+    { title: "JTR Chapter 5", desc: "Storage entitlements - SIT, NTS time limits, and extension requirements.", url: "https://www.defensetravel.dod.mil/Docs/perdiem/JTR.pdf", type: "Policy" },
+    { title: "MCO 4600.39", desc: "Marine Corps Personal Property Manual - storage procedures.", url: "https://www.marines.mil/", type: "Policy" },
+    { title: "DTR Part IV Ch 406", desc: "Defense Transportation Regulation - storage program administration.", url: "https://www.ustranscom.mil/dtr/dtrp4.cfm", type: "Policy" },
+    { title: "MilMove Portal", desc: "DPS/MilMove for storage requests and tracking.", url: "https://www.move.mil/", type: "Website" },
+    { title: "PCSmyPOV.com", desc: "POV shipping and storage for OCONUS moves.", url: "https://www.pcsmypov.com/", type: "Website" },
+    { title: "Military OneSource", desc: "Moving and storage resources and guidance.", url: "https://www.militaryonesource.mil/moving-pcs/", type: "Website" },
   ],
 };
 
