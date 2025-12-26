@@ -805,9 +805,9 @@ const FLPP_DATA = {
 // Travel & Transportation Data Objects
 const PCS_ORDERS_DATA = {
   references: [
-    { title: "MOL (Marine Online)", desc: "Access PCS orders through OBI module.", url: "https://mol.tfs.usmc.mil/", type: "Website" },
-    { title: "move.mil (DPS)", desc: "Register HHG shipments and track moves.", url: "https://www.move.mil/", type: "Website" },
-    { title: "Plan My Move", desc: "Personalized PCS checklist and timeline.", url: "https://planmymove.militaryonesource.mil/", type: "Website" },
+    { title: "MOL (Marine Online)", desc: "Access PCS orders through OBI module.", url: "https://mol.tfs.usmc.mil/", type: "Website", isQuickLink: true },
+    { title: "move.mil (DPS)", desc: "Register HHG shipments and track moves.", url: "https://www.move.mil/", type: "Website", isQuickLink: true },
+    { title: "Plan My Move", desc: "Personalized PCS checklist and timeline.", url: "https://planmymove.militaryonesource.mil/", type: "Website", isQuickLink: true },
     { title: "Military OneSource PCS", desc: "PCS resources and support.", url: "https://www.militaryonesource.mil/", type: "Website" },
     { title: "HQMC PCS Move Resources", desc: "Official Marine Corps PCS guidance.", url: "https://www.iandl.marines.mil/Divisions/Logistics-Division-LP/Logistics-Distribution-Policy-Branch-LPD/PCS-Move-Resources/", type: "Website" },
     { title: "IRR Program", desc: "Information, Referral, and Relocation support.", url: "https://www.usmc-mccs.org/marine-family-support/information-referral-and-relocation", type: "Website" },

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-type Ref = { title: string; desc: string; url: string; type: string };
+type Ref = { title: string; desc: string; url: string; type: string; isQuickLink?: boolean };
 type Tab = "overview" | "steps" | "important" | "special" | "troubleshooter" | "references";
 
 const TABS: { key: Tab; label: string }[] = [
@@ -11,6 +11,18 @@ const TABS: { key: Tab; label: string }[] = [
   { key: "special", label: "Special" },
   { key: "troubleshooter", label: "Troubleshooter" },
   { key: "references", label: "References" },
+];
+
+const PCS_ORDERS_STEPS = [
+  { title: "Receive and Access Your Orders", desc: "Log into MOL (Marine Online). Navigate to the Outbound Interview (OBI) module. View your PCA/PCS Basic Orders. Unit leaders with Outbound Management access view orders through Outbound Tracker." },
+  { title: "Verify Your Information", desc: "Confirm all dependents are correct in MOL. If incorrect, submit an EPAR through MOL or visit your IPAC/RPAC. Verify TAD or FAP status with your S-1. Check obligated service for OCONUS orders." },
+  { title: "Attend the Mandatory PCS Workshop", desc: "Contact your installation's IRR Program. Sign up for the PCS Workshop (MCO 1754.10B). Receive briefs from DMO, IPAC, TRICARE, School Liaison, Travel, and Personal Financial Management." },
+  { title: "Request Unit Approval in MOL", desc: "Your unit S-1 approves the OBI in MOL. CONUS PCS: NLT 14 days prior. OCONUS Unaccompanied: NLT 30 days prior. OCONUS Accompanied: NLT 60 days prior." },
+  { title: "Submit Required Documents to IPAC/RPAC", desc: "OCONUS moves: Area Clearance, Medical Suitability, JKO Anti-Terrorism certificate for dependents 16+. Vehicle Processing Letter (if POV). DD Form 1056 for no-fee passports." },
+  { title: "IPAC/RPAC Processes Your Package", desc: "Admin clerk works your package. RPAC submits Area Clearance requests (OCONUS). RPAC submits Port Call requests to DMO. IPAC/RPAC certifies OBI within 5-10 business days." },
+  { title: "Complete Unit Checkout", desc: "Obtain your battalion/unit checkout sheet. Complete all checkout requirements (supply, armory, S-1, etc.). Requested detach date is the day you pick up endorsed orders." },
+  { title: "Pick Up Endorsed Orders", desc: "Collect original orders and endorsement from IPAC, RPAC, Satellite Support Center, or S-1. Basic Orders are NOT valid without proper IPAC/RPAC endorsement." },
+  { title: "Register for HHG Shipment", desc: "Go to move.mil. Upload orders and create shipment requests (HHG, UB, NTS, PPM). Contact local DMO early. Peak season: May-August." },
 ];
 
 export default function PCSOrdersProcessingContent({ data }: { data: { references: Ref[] } }) {
@@ -86,18 +98,8 @@ export default function PCSOrdersProcessingContent({ data }: { data: { reference
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">How PCS Orders Processing Works</h2>
             <div className="mt-4 space-y-4">
-              {[
-                { title: "Receive and Access Your Orders", desc: "Log into MOL (Marine Online). Navigate to the Outbound Interview (OBI) module. View your PCA/PCS Basic Orders. Unit leaders with Outbound Management access view orders through Outbound Tracker." },
-                { title: "Verify Your Information", desc: "Confirm all dependents are correct in MOL. If incorrect, submit an EPAR through MOL or visit your IPAC/RPAC. Verify TAD or FAP status with your S-1. Check obligated service for OCONUS orders." },
-                { title: "Attend the Mandatory PCS Workshop", desc: "Contact your installation's IRR Program. Sign up for the PCS Workshop (MCO 1754.10B). Receive briefs from DMO, IPAC, TRICARE, School Liaison, Travel, and Personal Financial Management." },
-                { title: "Request Unit Approval in MOL", desc: "Your unit S-1 approves the OBI in MOL. CONUS PCS: NLT 14 days prior. OCONUS Unaccompanied: NLT 30 days prior. OCONUS Accompanied: NLT 60 days prior." },
-                { title: "Submit Required Documents to IPAC/RPAC", desc: "OCONUS moves: Area Clearance, Medical Suitability, JKO Anti-Terrorism certificate for dependents 16+. Vehicle Processing Letter (if POV). DD Form 1056 for no-fee passports." },
-                { title: "IPAC/RPAC Processes Your Package", desc: "Admin clerk works your package. RPAC submits Area Clearance requests (OCONUS). RPAC submits Port Call requests to DMO. IPAC/RPAC certifies OBI within 5-10 business days." },
-                { title: "Complete Unit Checkout", desc: "Obtain your battalion/unit checkout sheet. Complete all checkout requirements (supply, armory, S-1, etc.). Requested detach date is the day you pick up endorsed orders." },
-                { title: "Pick Up Endorsed Orders", desc: "Collect original orders and endorsement from IPAC, RPAC, Satellite Support Center, or S-1. Basic Orders are NOT valid without proper IPAC/RPAC endorsement." },
-                { title: "Register for HHG Shipment", desc: "Go to move.mil. Upload orders and create shipment requests (HHG, UB, NTS, PPM). Contact local DMO early. Peak season: May-August." },
-              ].map((step, index) => (
-                <div key={index} className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+              {PCS_ORDERS_STEPS.map((step, index) => (
+                <div key={step.title} className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
                   <div className="flex items-center gap-3">
                     <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">{index + 1}</div>
                     <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{step.title}</h3>
@@ -314,9 +316,9 @@ export default function PCSOrdersProcessingContent({ data }: { data: { reference
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Links</h3>
           <ul className="mt-3 space-y-1 text-sm">
-            <li><a href="https://mol.tfs.usmc.mil/" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">MOL (Marine Online)</a></li>
-            <li><a href="https://www.move.mil/" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">move.mil (DPS)</a></li>
-            <li><a href="https://planmymove.militaryonesource.mil/" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">Plan My Move</a></li>
+            {data.references.filter((ref) => ref.isQuickLink).map((ref) => (
+              <li key={ref.title}><a href={ref.url} target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">{ref.title}</a></li>
+            ))}
           </ul>
         </section>
 
