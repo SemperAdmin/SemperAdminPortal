@@ -223,11 +223,30 @@ function QuickLinkCard({ title, href, icon, requiresCAC }: { title: string; href
   );
 }
 
+function SidebarLink({ title, href, icon, requiresCAC }: { title: string; href: string; icon: React.ReactNode; requiresCAC?: boolean }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group flex items-center gap-2 rounded-lg border border-black/5 bg-white p-2 text-sm shadow-sm transition-all hover:border-[var(--sa-red)]/20 hover:shadow-md dark:border-white/10 dark:bg-black/30 dark:hover:border-[var(--sa-red)]/30"
+    >
+      <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded bg-[var(--sa-red)]/10 text-[var(--sa-red)]">
+        {icon}
+      </div>
+      <span className="flex-1 font-medium text-[var(--sa-navy)] group-hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] text-xs">
+        {title}
+      </span>
+      {requiresCAC && <CACIcon className="h-3.5 w-3.5 shrink-0 text-[var(--sa-gold)]" />}
+    </a>
+  );
+}
+
 export default function MISSOPage() {
   const totalItems = getTotalChecklistItems();
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       {/* Header */}
       <div>
         <Link
@@ -247,130 +266,139 @@ export default function MISSOPage() {
         </p>
       </div>
 
-      {/* Key Links Section */}
-      <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-        <div className="flex items-center gap-2 mb-4">
-          <GlobeIcon className="h-5 w-5 text-[var(--sa-red)]" />
-          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-            MISSO Key Links
-          </h2>
-        </div>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          <QuickLinkCard title="MISSA/MISSO Portal" href={missoLinks.portal} icon={<HomeIcon className="h-5 w-5" />} requiresCAC />
-          <QuickLinkCard title="DISA Portal (MCTFS)" href={missoLinks.disa} icon={<TerminalIcon className="h-5 w-5" />} requiresCAC />
-          <QuickLinkCard title="TFSMS (T/O Access)" href={missoLinks.tfsms} icon={<BriefcaseIcon className="h-5 w-5" />} requiresCAC />
-          <QuickLinkCard title="Command Profile" href={missoLinks.commandProfile} icon={<BuildingIcon className="h-5 w-5" />} requiresCAC />
-          <QuickLinkCard title="Marine Online (MOL)" href={missoLinks.mol} icon={<UsersIcon className="h-5 w-5" />} requiresCAC />
-        </div>
-      </section>
-
-      {/* Training Event Codes */}
-      <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center gap-2">
-            <StarIcon className="h-5 w-5 text-[var(--sa-gold)]" />
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-              Training Event Codes
-            </h2>
-          </div>
-          <span className="text-sm text-zinc-500 dark:text-zinc-400">
-            Request training via TTS
-          </span>
-        </div>
-        <div className="grid gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {trainingEventCodes.map((code) => (
-            <div
-              key={code.code}
-              className="flex items-center gap-3 rounded-lg border border-black/5 bg-[var(--sa-cream)]/30 p-3 dark:border-white/10 dark:bg-white/5"
-            >
-              <span className="flex h-8 w-8 items-center justify-center rounded bg-[var(--sa-navy)] text-xs font-bold text-white">
-                {code.code}
-              </span>
-              <span className="text-sm text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-                {code.module}
-              </span>
+      {/* Main Layout: Sticky Sidebar + Content */}
+      <div className="flex flex-col lg:flex-row gap-6">
+        {/* Left Sidebar - Sticky */}
+        <aside className="lg:w-64 shrink-0">
+          <div className="lg:sticky lg:top-4 space-y-4">
+            {/* Key Links */}
+            <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+              <div className="flex items-center gap-2 mb-3">
+                <GlobeIcon className="h-4 w-4 text-[var(--sa-red)]" />
+                <h2 className="text-sm font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                  Key Links
+                </h2>
+              </div>
+              <div className="flex flex-col gap-2">
+                <SidebarLink title="MISSA/MISSO Portal" href={missoLinks.portal} icon={<HomeIcon className="h-4 w-4" />} requiresCAC />
+                <SidebarLink title="DISA Portal (MCTFS)" href={missoLinks.disa} icon={<TerminalIcon className="h-4 w-4" />} requiresCAC />
+                <SidebarLink title="TFSMS (T/O Access)" href={missoLinks.tfsms} icon={<BriefcaseIcon className="h-4 w-4" />} requiresCAC />
+                <SidebarLink title="Command Profile" href={missoLinks.commandProfile} icon={<BuildingIcon className="h-4 w-4" />} requiresCAC />
+                <SidebarLink title="Marine Online (MOL)" href={missoLinks.mol} icon={<UsersIcon className="h-4 w-4" />} requiresCAC />
+              </div>
             </div>
-          ))}
-        </div>
-      </section>
 
-      {/* Site Visit Checklist Categories */}
-      <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-        <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-              Site Visit Checklist Categories
-            </h2>
-            <p className="text-sm text-zinc-600 dark:text-zinc-400">
-              MISSO Field Support Team evaluation areas
-            </p>
-          </div>
-          <div className="flex items-center gap-2 rounded-lg bg-[var(--sa-red)]/10 px-3 py-1.5">
-            <ClipboardListIcon className="h-4 w-4 text-[var(--sa-red)]" />
-            <span className="text-sm font-semibold text-[var(--sa-red)]">
-              {totalItems} Total Items
-            </span>
-          </div>
-        </div>
-
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {missoCategories.map((category) => (
-            <Link
-              key={category.id}
-              href={`/inspections/misso/${category.id}`}
-              className="group flex flex-col rounded-lg border border-black/5 bg-[var(--sa-cream)]/20 p-4 transition hover:border-[var(--sa-red)]/20 hover:bg-[var(--sa-cream)]/40 hover:shadow-md dark:border-white/10 dark:bg-white/5 dark:hover:border-[var(--sa-red)]/30 dark:hover:bg-white/10"
-            >
-              <div className="flex items-start justify-between gap-2">
-                <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--sa-red)]/10 text-[var(--sa-red)]">
-                    {iconMap[category.icon] || <FileTextIcon className="h-5 w-5" />}
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-[var(--sa-navy)] group-hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)]">
-                      {category.name}
-                    </h3>
-                    <span className="text-xs text-zinc-500 dark:text-zinc-400">
-                      {category.shortName}
+            {/* Training Event Codes */}
+            <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+              <div className="flex items-center gap-2 mb-3">
+                <StarIcon className="h-4 w-4 text-[var(--sa-gold)]" />
+                <h2 className="text-sm font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                  Training Codes
+                </h2>
+              </div>
+              <p className="text-[10px] text-zinc-500 dark:text-zinc-400 mb-2">
+                Request via TTS
+              </p>
+              <div className="flex flex-col gap-1.5">
+                {trainingEventCodes.map((code) => (
+                  <div
+                    key={code.code}
+                    className="flex items-center gap-2 rounded border border-black/5 bg-[var(--sa-cream)]/30 px-2 py-1.5 dark:border-white/10 dark:bg-white/5"
+                  >
+                    <span className="flex h-6 w-6 items-center justify-center rounded bg-[var(--sa-navy)] text-[10px] font-bold text-white">
+                      {code.code}
+                    </span>
+                    <span className="text-xs text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                      {code.module}
                     </span>
                   </div>
-                </div>
-                <span className="shrink-0 rounded-full bg-[var(--sa-red)]/10 px-2 py-0.5 text-xs font-bold text-[var(--sa-red)]">
-                  {category.items.length}
+                ))}
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        {/* Main Content */}
+        <main className="flex-1 space-y-6">
+          {/* Site Visit Checklist Categories */}
+          <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+            <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                  Site Visit Checklist Categories
+                </h2>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                  MISSO Field Support Team evaluation areas
+                </p>
+              </div>
+              <div className="flex items-center gap-2 rounded-lg bg-[var(--sa-red)]/10 px-3 py-1.5">
+                <ClipboardListIcon className="h-4 w-4 text-[var(--sa-red)]" />
+                <span className="text-sm font-semibold text-[var(--sa-red)]">
+                  {totalItems} Total Items
                 </span>
               </div>
-              <p className="mt-3 line-clamp-2 text-xs text-zinc-600 dark:text-zinc-400">
-                {category.description}
-              </p>
-              <div className="mt-3 flex items-center gap-1 text-xs text-[var(--sa-navy)]/60 group-hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)]/60">
-                <span>View checklist items</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-3 w-3 transition group-hover:translate-x-0.5">
-                  <polyline points="9 18 15 12 9 6" />
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+              {missoCategories.map((category) => (
+                <Link
+                  key={category.id}
+                  href={`/inspections/misso/${category.id}`}
+                  className="group flex flex-col rounded-lg border border-black/5 bg-[var(--sa-cream)]/20 p-4 transition hover:border-[var(--sa-red)]/20 hover:bg-[var(--sa-cream)]/40 hover:shadow-md dark:border-white/10 dark:bg-white/5 dark:hover:border-[var(--sa-red)]/30 dark:hover:bg-white/10"
+                >
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--sa-red)]/10 text-[var(--sa-red)]">
+                        {iconMap[category.icon] || <FileTextIcon className="h-5 w-5" />}
+                      </div>
+                      <div>
+                        <h3 className="font-medium text-[var(--sa-navy)] group-hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)]">
+                          {category.name}
+                        </h3>
+                        <span className="text-xs text-zinc-500 dark:text-zinc-400">
+                          {category.shortName}
+                        </span>
+                      </div>
+                    </div>
+                    <span className="shrink-0 rounded-full bg-[var(--sa-red)]/10 px-2 py-0.5 text-xs font-bold text-[var(--sa-red)]">
+                      {category.items.length}
+                    </span>
+                  </div>
+                  <p className="mt-3 line-clamp-2 text-xs text-zinc-600 dark:text-zinc-400">
+                    {category.description}
+                  </p>
+                  <div className="mt-3 flex items-center gap-1 text-xs text-[var(--sa-navy)]/60 group-hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)]/60">
+                    <span>View checklist items</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-3 w-3 transition group-hover:translate-x-0.5">
+                      <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+
+          {/* Info Box */}
+          <div className="rounded-xl border border-[var(--sa-red)]/10 bg-[var(--sa-red)]/5 p-4 dark:border-[var(--sa-red)]/20 dark:bg-[var(--sa-red)]/5">
+            <div className="flex gap-3">
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[var(--sa-red)]/10">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4 text-[var(--sa-red)]">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="16" x2="12" y2="12" />
+                  <line x1="12" y1="8" x2="12.01" y2="8" />
                 </svg>
               </div>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* Info Box */}
-      <div className="rounded-xl border border-[var(--sa-red)]/10 bg-[var(--sa-red)]/5 p-4 dark:border-[var(--sa-red)]/20 dark:bg-[var(--sa-red)]/5">
-        <div className="flex gap-3">
-          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[var(--sa-red)]/10">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4 text-[var(--sa-red)]">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="16" x2="12" y2="12" />
-              <line x1="12" y1="8" x2="12.01" y2="8" />
-            </svg>
+              <div>
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                  About MISSO Site Visits
+                </h3>
+                <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                  MISSO Field Support Teams conduct site visits to provide technical training and system support to administrative personnel. Use this checklist to prepare your command for a visit and ensure compliance with MOL, MCTFS, and related systems.
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-              About MISSO Site Visits
-            </h3>
-            <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
-              MISSO Field Support Teams conduct site visits to provide technical training and system support to administrative personnel. Use this checklist to prepare your command for a visit and ensure compliance with MOL, MCTFS, and related systems.
-            </p>
-          </div>
-        </div>
+        </main>
       </div>
     </div>
   );
