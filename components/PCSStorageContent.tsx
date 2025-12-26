@@ -218,26 +218,18 @@ export default function PCSStorageContent({ data }: { data: { references: Ref[] 
             <div className="mt-4 rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
               <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">How to Arrange PPM Storage</h3>
               <div className="mt-3 space-y-3">
-                <div className="flex items-start gap-3">
-                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">1</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Request <strong>pre-approval</strong> from your Transportation Office BEFORE placing items in storage</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">2</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Find a commercial storage facility and get a signed storage contract</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">3</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Obtain <strong>certified weight tickets</strong> before and after loading items into storage</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">4</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Retain all receipts: storage contract, monthly payments, delivery charges</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">5</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Submit documentation with your PPM claim for reimbursement</p>
-                </div>
+                {[
+                  <>Request <strong>pre-approval</strong> from your Transportation Office BEFORE placing items in storage</>,
+                  <>Find a commercial storage facility and get a signed storage contract</>,
+                  <>Obtain <strong>certified weight tickets</strong> before and after loading items into storage</>,
+                  <>Retain all receipts: storage contract, monthly payments, delivery charges</>,
+                  <>Submit documentation with your PPM claim for reimbursement</>,
+                ].map((step, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">{index + 1}</div>
+                    <p className="text-sm text-zinc-700 dark:text-zinc-300">{step}</p>
+                  </div>
+                ))}
               </div>
             </div>
             <div className="mt-4 grid gap-4 md:grid-cols-2">
@@ -262,7 +254,16 @@ export default function PCSStorageContent({ data }: { data: { references: Ref[] 
             </div>
             <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-amber-800 dark:border-white/15 dark:bg-white/10 dark:text-[var(--sa-cream)]">
               <div className="text-xs font-semibold">Required Documentation</div>
-              <div className="mt-1 text-xs">When submitting your PPM claim, include: (1) Pre-approval from Transportation Office, (2) Storage contract with facility, (3) All paid receipts, (4) Weight tickets showing stored items, (5) Final invoice showing storage end date.</div>
+              <div className="mt-1 text-xs">
+                When submitting your PPM claim, include:
+                <ol className="list-decimal list-inside mt-1">
+                  <li>Pre-approval from Transportation Office</li>
+                  <li>Storage contract with facility</li>
+                  <li>All paid receipts</li>
+                  <li>Weight tickets showing stored items</li>
+                  <li>Final invoice showing storage end date</li>
+                </ol>
+              </div>
             </div>
           </section>
         )}
