@@ -813,20 +813,26 @@ const PCS_ORDERS_DATA = {
 
 const HHG_DATA = {
   weightAllowances: [
-    { rank: "E-1 to E-4", withDependents: 8000, withoutDependents: 5000 },
-    { rank: "E-5 to E-6", withDependents: 11000, withoutDependents: 8000 },
-    { rank: "E-7 to E-9", withDependents: 13000, withoutDependents: 11000 },
-    { rank: "W-1 to W-2", withDependents: 14000, withoutDependents: 12500 },
-    { rank: "W-3 to W-5", withDependents: 17000, withoutDependents: 14500 },
-    { rank: "O-1 to O-2", withDependents: 12000, withoutDependents: 10000 },
-    { rank: "O-3 to O-4", withDependents: 14000, withoutDependents: 12500 },
-    { rank: "O-5 to O-6", withDependents: 17000, withoutDependents: 16000 },
-    { rank: "O-7+", withDependents: 18000, withoutDependents: 18000 },
+    { rank: "O-6 and above", withDependents: 18000, withoutDependents: 18000 },
+    { rank: "O-5 / W-5", withDependents: 17500, withoutDependents: 16000 },
+    { rank: "O-4 / W-4", withDependents: 17000, withoutDependents: 14000 },
+    { rank: "O-3 / W-3", withDependents: 14500, withoutDependents: 13000 },
+    { rank: "O-2 / W-2", withDependents: 13500, withoutDependents: 12500 },
+    { rank: "O-1 / W-1", withDependents: 12000, withoutDependents: 10000 },
+    { rank: "E-9", withDependents: 15000, withoutDependents: 13000 },
+    { rank: "E-8", withDependents: 14000, withoutDependents: 12000 },
+    { rank: "E-7", withDependents: 13000, withoutDependents: 11000 },
+    { rank: "E-6", withDependents: 11000, withoutDependents: 8000 },
+    { rank: "E-5", withDependents: 9000, withoutDependents: 7000 },
+    { rank: "E-4", withDependents: 8000, withoutDependents: 7000 },
+    { rank: "E-3 and below", withDependents: 8000, withoutDependents: 5000 },
   ],
   references: [
-    { title: "Joint Travel Regulations Ch 5", desc: "HHG shipping entitlements and procedures.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "MCO 4600.39", desc: "Marine Corps Personal Property Manual (19 Aug 2016).", url: "https://www.marines.mil/", type: "Policy" },
+    { title: "MARADMIN 208/25", desc: "FY25 Personal Property Peak Season guidance.", url: "https://www.marines.mil/News/Messages/", type: "Policy" },
+    { title: "JTR Chapter 5 Part D", desc: "Joint Travel Regulations - HHG shipping entitlements.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "DPS Landing Page", desc: "Defense Personal Property System - Start your move here.", url: "https://dps.move.mil", type: "Website" },
     { title: "Move.mil", desc: "Official DoD moving portal for HHG shipments.", url: "https://www.move.mil/", type: "Website" },
-    { title: "USTRANSCOM", desc: "Transportation Command HHG program info.", url: "https://www.ustranscom.mil/", type: "Website" },
   ],
 };
 

@@ -5,7 +5,7 @@ type Ref = { title: string; desc: string; url: string; type: string };
 type WeightAllowance = { rank: string; withDependents: number; withoutDependents: number };
 
 export default function HouseholdGoodsShipmentContent({ data }: { data: { weightAllowances: WeightAllowance[]; references: Ref[] } }) {
-  const [tab, setTab] = useState<"overview" | "weights" | "documents" | "steps" | "timeline" | "troubleshooter" | "references">("overview");
+  const [tab, setTab] = useState<"overview" | "weights" | "options" | "steps" | "oconus" | "troubleshooter" | "references">("overview");
 
   return (
     <div className="grid gap-6 lg:grid-cols-3">
@@ -13,32 +13,32 @@ export default function HouseholdGoodsShipmentContent({ data }: { data: { weight
         <div className="flex items-center gap-2 overflow-x-auto [&>button]:whitespace-nowrap [&>button]:shrink-0">
           <button onClick={() => setTab("overview")} className={`rounded-md px-3 py-2 text-sm ${tab === "overview" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Overview</button>
           <button onClick={() => setTab("weights")} className={`rounded-md px-3 py-2 text-sm ${tab === "weights" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Weight Allowances</button>
-          <button onClick={() => setTab("documents")} className={`rounded-md px-3 py-2 text-sm ${tab === "documents" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Documents</button>
+          <button onClick={() => setTab("options")} className={`rounded-md px-3 py-2 text-sm ${tab === "options" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Move Options</button>
           <button onClick={() => setTab("steps")} className={`rounded-md px-3 py-2 text-sm ${tab === "steps" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Steps</button>
-          <button onClick={() => setTab("timeline")} className={`rounded-md px-3 py-2 text-sm ${tab === "timeline" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Timeline</button>
+          <button onClick={() => setTab("oconus")} className={`rounded-md px-3 py-2 text-sm ${tab === "oconus" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>OCONUS</button>
           <button onClick={() => setTab("troubleshooter")} className={`rounded-md px-3 py-2 text-sm ${tab === "troubleshooter" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Troubleshooter</button>
           <button onClick={() => setTab("references")} className={`rounded-md px-3 py-2 text-sm ${tab === "references" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>References</button>
         </div>
 
         {tab === "overview" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">What Is HHG Shipment?</h2>
-            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Household Goods (HHG) shipment is a government-arranged service that packs and transports your personal property from your old duty station to your new duty station. The government contracts with moving companies to handle your belongings.</p>
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">What Are Household Goods?</h2>
+            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Your Household Goods include furniture, appliances, clothing, and personal items the Government ships during your PCS move. Your weight allowance depends on your rank and whether you have dependents. You pay for all weight exceeding your authorized allowance.</p>
             <div className="mt-4 grid gap-4 sm:grid-cols-3">
               <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Benefit</div>
-                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Full Pack</div>
-                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Movers pack everything</p>
+                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Submit Request</div>
+                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">90 Days</div>
+                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Before pickup date</p>
               </div>
               <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Benefit</div>
-                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Insurance</div>
-                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Full replacement value</p>
+                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Peak Season</div>
+                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">15 May - 31 Aug</div>
+                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Book early</p>
               </div>
               <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Benefit</div>
-                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">No Cost</div>
-                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Government funded</p>
+                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Move Systems</div>
+                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">DPS / MilMove</div>
+                <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Sort Tool assigns</p>
               </div>
             </div>
             <div className="mt-6 rounded-2xl bg-[var(--sa-navy)] p-6 text-[var(--sa-cream)]">
@@ -46,10 +46,11 @@ export default function HouseholdGoodsShipmentContent({ data }: { data: { weight
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
                 BLUF
               </div>
-              <p className="mt-2 text-sm opacity-90">Schedule your HHG shipment at least 45 days before your desired pickup date. Document the condition of all items before packing. Report damage within 75 days of delivery to file a claim.</p>
-              <div className="mt-4 flex gap-3 text-sm">
-                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">45-Day Advance</span>
-                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">Document Everything</span>
+              <p className="mt-2 text-sm opacity-90">Submit your shipment request at least 90 days before pickup. Pro Gear ships separately from your weight allowance (2,000 lbs Marine, 500 lbs Spouse). You have 180 days from delivery to identify loss or damage and 9 months to file your claim. TSP max liability is $75,000.</p>
+              <div className="mt-4 flex flex-wrap gap-3 text-sm">
+                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">90-Day Advance</span>
+                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">180 Days to Identify</span>
+                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1">9 Months to File</span>
               </div>
             </div>
           </section>
@@ -57,156 +58,130 @@ export default function HouseholdGoodsShipmentContent({ data }: { data: { weight
 
         {tab === "weights" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Weight Allowances by Rank</h2>
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Weight Allowances (JTR Table 5-37)</h2>
             <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Your authorized weight allowance depends on your rank and dependency status. Exceeding your weight allowance results in excess cost charges to you.</p>
             <div className="mt-4 overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="text-left text-zinc-600 dark:text-zinc-400">
-                    <th className="py-2 pr-4">Pay Grade</th>
-                    <th className="py-2 pr-4">With Dependents (lbs)</th>
-                    <th className="py-2">Without Dependents (lbs)</th>
+                    <th className="py-2 pr-4">Grade</th>
+                    <th className="py-2 pr-4">Without Dependents</th>
+                    <th className="py-2">With Dependents</th>
                   </tr>
                 </thead>
                 <tbody className="text-zinc-700 dark:text-zinc-300">
                   {data.weightAllowances.map((w) => (
                     <tr key={w.rank} className="border-t border-black/5 dark:border-white/10">
                       <td className="py-2 pr-4 font-medium">{w.rank}</td>
-                      <td className="py-2 pr-4">{w.withDependents.toLocaleString()}</td>
-                      <td className="py-2">{w.withoutDependents.toLocaleString()}</td>
+                      <td className="py-2 pr-4">{w.withoutDependents.toLocaleString()} lbs</td>
+                      <td className="py-2">{w.withDependents.toLocaleString()} lbs</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-amber-800 dark:border-white/15 dark:bg-white/10 dark:text-[var(--sa-cream)]">
-              <div className="text-xs font-semibold">Weight Allowance Note</div>
-              <div className="mt-1 text-xs">Professional Books, Papers, and Equipment (PBP&E) up to 2,000 lbs for officers and 500 lbs for enlisted is in addition to HHG allowance.</div>
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Pro Gear Allowances</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Professional Books, Papers, and Equipment ships separately from your HHG allowance.</p>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li><strong>Marine:</strong> Up to 2,000 lbs (mark M-PRO)</li>
+                  <li><strong>Spouse:</strong> Up to 500 lbs for employment or community support (mark S-PRO)</li>
+                </ul>
+              </div>
+              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">7-Day Spread Rule</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Your requested pickup date is the last day your HHG must be ready. The mover selects the actual pickup date from any of the 7 calendar days ending on your requested date. Once confirmed, the pickup date drives all other move dates.</p>
+              </div>
             </div>
           </section>
         )}
 
-        {tab === "documents" && (
+        {tab === "options" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Required Documents</h2>
-            <div className="mt-3 grid gap-4 md:grid-cols-2">
-              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">To Schedule Shipment</h3>
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Move Options</h2>
+            <div className="mt-4 space-y-4">
+              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Government-Arranged Move</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">The Government hires a Transportation Service Provider (TSP) or HomeSafe Alliance to pack, ship, and deliver your HHG. This is the most common option.</p>
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Copy of PCS orders</li>
-                  <li>DD Form 1299 (Application for Shipment)</li>
-                  <li>Government ID</li>
-                  <li>POA if spouse is shipping</li>
+                  <li>Full pack and unpack service included</li>
+                  <li>Full replacement value protection</li>
+                  <li>TSP contacts you within 3 days of award</li>
+                  <li>Complete Customer Satisfaction Survey within 7 days of delivery</li>
                 </ul>
               </div>
-              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">At Pickup</h3>
+              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Personally Procured Move (PPM)</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">You move your own HHG and receive 100% of the Government&apos;s cost to move the same weight.</p>
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Inventory sheet (review carefully)</li>
-                  <li>High-value inventory form</li>
-                  <li>Pre-move photos/videos</li>
-                  <li>Sign pickup documents</li>
+                  <li>Use your GTCC for all PPM expenses</li>
+                  <li>Set GTCC to PCS Mission Critical status 10 days before departure</li>
+                  <li>Obtain certified empty and full weight tickets</li>
+                  <li>Submit claim via MOL (DPS) or MilMove (GHC) within 45 days if you received an Advance Operating Allowance</li>
                 </ul>
               </div>
-              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">At Delivery</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Check inventory against original</li>
-                  <li>Note all damage on delivery form</li>
-                  <li>Take photos of damage immediately</li>
-                  <li>Sign delivery documents</li>
-                </ul>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">For Claims</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>DD Form 1840/1840R (Loss/Damage)</li>
-                  <li>Photos of damage</li>
-                  <li>Repair estimates</li>
-                  <li>Purchase receipts (if available)</li>
-                </ul>
-              </div>
+            </div>
+            <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-amber-800 dark:border-white/15 dark:bg-white/10 dark:text-[var(--sa-cream)]">
+              <div className="text-xs font-semibold">Required Counseling</div>
+              <div className="mt-1 text-xs">First-time movers, separatees, retirees, and mobile home shippers must receive in-person counseling at the local DMO before submitting their application.</div>
             </div>
           </section>
         )}
 
         {tab === "steps" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">HHG Shipment Process</h2>
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Government-Arranged Move Steps</h2>
             <div className="mt-4 space-y-4">
               <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 1: Attend Transportation Brief</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Visit the Personal Property Office (PPO/TMO). Bring your orders. Learn about weight allowances, prohibited items, and your rights.</p>
+                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 1: Create Account & Self-Counsel</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Create an account or log in at dps.move.mil. Complete self-counseling in DPS. The Sort Tool determines if you use DPS or GHC MilMove.</p>
               </div>
               <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 2: Schedule in Move.mil</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Create an account at move.mil. Enter your move details, upload orders, and request pickup dates. The system will assign a Transportation Service Provider (TSP).</p>
+                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 2: Upload Orders & Submit Request</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Upload your PCS orders and endorsements. Submit your requested pickup date (90 days in advance when possible). Avoid the first two and last two days of any month.</p>
               </div>
               <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 3: Pre-Move Preparation</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Photograph/video all belongings. Create a high-value inventory. Separate items not being shipped. Dispose of hazardous materials.</p>
+                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 3: Pre-Move Survey</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">TSP or HomeSafe contacts you within 3 days of award with confirmed dates. Complete pre-move survey (in-person or virtual) to estimate weight and supplies.</p>
               </div>
               <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
                 <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 4: Pack-Out Day</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Be present during packing. Watch inventory process. Review condition codes on inventory. Note any concerns before signing.</p>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Be present during packing to verify inventory. Review condition codes. Mark Pro Gear as M-PRO (Marine) or S-PRO (Spouse). Note any concerns before signing.</p>
               </div>
               <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 5: Delivery</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Be present at delivery. Check items against inventory. Note all damage on delivery documents. Do not sign that everything is satisfactory if it is not.</p>
+                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 5: Delivery & Inspection</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Inspect all items at delivery and document any damage on the inventory form. Take photos immediately. Do not sign that everything is satisfactory if it is not.</p>
               </div>
               <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 6: File Claims (if needed)</h3>
-                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">File claims within 75 days of delivery through move.mil. Document all damage with photos. Keep repair estimates and receipts.</p>
+                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Step 6: Survey & Claims</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Complete Customer Satisfaction Survey within 7 days of delivery. You have 180 days from delivery to identify lost or damaged items and 9 months to file your claim.</p>
               </div>
             </div>
           </section>
         )}
 
-        {tab === "timeline" && (
+        {tab === "oconus" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">HHG Timeline</h2>
-            <div className="mt-4 space-y-3">
-              <div className="flex items-start gap-4">
-                <div className="flex h-8 w-16 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-[var(--sa-cream)]">45+ Days</div>
-                <div>
-                  <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Schedule Shipment</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Book through move.mil, especially during peak season (May-Aug)</p>
-                </div>
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">OCONUS Moves & Special Situations</h2>
+            <div className="mt-4 space-y-4">
+              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">OCONUS Moves</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">All OCONUS moves use the legacy DPS system until late 2025. Many OCONUS locations have reduced weight allowances due to housing size limits.</p>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li><strong>Okinawa (unaccompanied, barracks):</strong> 600 lbs unaccompanied baggage only</li>
+                  <li><strong>MCAS Iwakuni (unaccompanied):</strong> 600 lbs UB only, or 10% if approved for off-base housing</li>
+                  <li><strong>Embassy Duty (MCESG):</strong> 25% of full allowance or 2,500 lbs, whichever is greater</li>
+                </ul>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Contact your DMO for location-specific weight restrictions.</p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-8 w-16 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-[var(--sa-cream)]">7 Days</div>
-                <div>
-                  <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Pre-Move Survey</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">TSP may conduct survey to estimate weight and supplies needed</p>
-                </div>
+              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Short Fuse Orders</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">If you receive orders with limited time before your departure date, contact your local DMO immediately. Standard timelines do not apply, but capacity limitations during peak season affect your options.</p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-8 w-16 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-[var(--sa-cream)]">1-2 Days</div>
-                <div>
-                  <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Pack-Out</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Movers pack and load your belongings (may take 1-3 days for large shipments)</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-8 w-16 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-[var(--sa-cream)]">In Transit</div>
-                <div>
-                  <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Shipment in Transit</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">CONUS: 1-3 weeks; OCONUS: 4-12 weeks depending on location</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-8 w-16 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-[var(--sa-cream)]">Delivery</div>
-                <div>
-                  <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Receive Shipment</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">Inspect all items, note damage, sign delivery paperwork</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-8 w-16 shrink-0 items-center justify-center rounded-full bg-[var(--sa-red)] text-xs font-bold text-[var(--sa-cream)]">75 Days</div>
-                <div>
-                  <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Claims Deadline</div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300">File all damage/loss claims within 75 days of delivery</p>
-                </div>
+              <div className="rounded-xl border border-black/10 bg-[var(--sa-cream)]/40 p-4 dark:border-white/15 dark:bg-white/10">
+                <h3 className="font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Dual Military (Member-to-Member)</h3>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Both members maintain separate weight allowances. Coordinate with your DMO to determine how to structure your shipments.</p>
               </div>
             </div>
           </section>
@@ -217,48 +192,45 @@ export default function HouseholdGoodsShipmentContent({ data }: { data: { weight
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Common Problems & Solutions</h2>
             <div className="mt-3 space-y-4">
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">TSP missed the confirmed pickup date</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>Contact the Quality Assurance Section at your origin DMO</li>
+                  <li>File an Inconvenience Claim with the TSP or HomeSafe</li>
+                  <li>Document all additional expenses incurred</li>
+                </ul>
+              </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Items arrived damaged or missing</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>Document damage on the inventory form at delivery</li>
+                  <li>You have 180 days from delivery to identify lost or damaged items</li>
+                  <li>File your claim within 9 months of delivery</li>
+                  <li>TSP max liability is $75,000</li>
+                </ul>
+              </div>
+              <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
                 <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Exceeded weight allowance</h3>
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Review the weight tickets for accuracy</li>
-                  <li>Request reweigh if you believe there&apos;s an error</li>
-                  <li>Consider PPM for portion of goods to offset</li>
-                  <li>You are responsible for excess weight charges</li>
+                  <li>You pay for excess weight</li>
+                  <li>Request a reweigh before delivery if you believe the weight is incorrect</li>
+                  <li>Contact your DMO for the reweigh process</li>
                 </ul>
               </div>
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Items damaged during move</h3>
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Peak season pickup issues</h3>
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Note damage on delivery form before signing</li>
-                  <li>Take photos immediately</li>
-                  <li>File claim within 75 days through move.mil</li>
-                  <li>Keep damaged items until claim is resolved</li>
+                  <li>Submit your request as early as possible (90 days)</li>
+                  <li>Consider a PPM for more control over your dates</li>
+                  <li>Avoid the first two and last two days of any month</li>
+                  <li>Late May through mid-July is the peak of peak season</li>
                 </ul>
               </div>
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Missing items</h3>
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">GTCC declined during PPM</h3>
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Verify against original inventory</li>
-                  <li>Contact TSP immediately</li>
-                  <li>File loss claim through move.mil</li>
-                  <li>Provide photos and proof of ownership if available</li>
-                </ul>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Shipment delayed</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Contact TSP for estimated delivery date</li>
-                  <li>Request inconvenience claim if significantly delayed</li>
-                  <li>Document additional expenses incurred</li>
-                  <li>Contact PPO/TMO for assistance</li>
-                </ul>
-              </div>
-              <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">No dates available during peak season</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Schedule as early as possible</li>
-                  <li>Consider flexible dates</li>
-                  <li>Look at partial PPM option</li>
-                  <li>Contact PPO for alternative solutions</li>
+                  <li>Contact your APC at least 10 days before departure</li>
+                  <li>Request PCS Mission Critical status</li>
+                  <li>Request credit limit increase if needed</li>
                 </ul>
               </div>
             </div>
@@ -295,36 +267,57 @@ export default function HouseholdGoodsShipmentContent({ data }: { data: { weight
 
       <aside className="space-y-6 lg:mt-6">
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Facts</h3>
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Key Contacts</h3>
           <ul className="mt-3 space-y-2 text-sm">
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Scheduling Portal</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">move.mil</div>
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">USMC Personal Property</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">855-HHG-MOVE (855-444-6683)</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Claims Deadline</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">75 days from delivery</div>
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">GHC / HomeSafe Issues</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">(904) 567-6033</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Peak Season</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">May through August</div>
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">DPS System Help</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">(800) 462-2176</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Full Replacement</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">$6.00 per pound minimum</div>
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Email</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">usmcpersonalproperty@usmc.mil</div>
             </li>
           </ul>
         </section>
 
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Prohibited Items</h3>
-          <ul className="mt-3 space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
-            <li>Hazardous materials</li>
-            <li>Ammunition and explosives</li>
-            <li>Perishable food</li>
-            <li>Propane tanks</li>
-            <li>Gasoline/fuel</li>
-            <li>Aerosol cans</li>
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Key Deadlines</h3>
+          <ul className="mt-3 space-y-2 text-sm">
+            <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Submit Request</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">90 days before pickup</div>
+            </li>
+            <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Identify Loss/Damage</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">180 days from delivery</div>
+            </li>
+            <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">File Claim</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">9 months from delivery</div>
+            </li>
+            <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">TSP Max Liability</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">$75,000</div>
+            </li>
+          </ul>
+        </section>
+
+        <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Links</h3>
+          <ul className="mt-3 space-y-1 text-sm">
+            <li><a href="https://dps.move.mil" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] hover:underline">DPS Landing Page</a></li>
+            <li><a href="https://www.ustranscom.mil/dp3/weightestimator.cfm" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] hover:underline">Weight Estimator Tool</a></li>
+            <li><a href="https://www.logcom.marines.mil/Marines/Personally-Procured-Move/" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] hover:underline">PPM Claims Settlement</a></li>
+            <li><a href="https://www.pcsmypov.com" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] hover:underline">POV Shipment Scheduling</a></li>
+            <li><a href="https://www.ustranscom.mil/dp3/tspinformation.cfm" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] hover:underline">TSP Ratings Lookup</a></li>
           </ul>
         </section>
       </aside>
