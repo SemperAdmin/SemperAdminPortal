@@ -805,9 +805,14 @@ const FLPP_DATA = {
 // Travel & Transportation Data Objects
 const PCS_ORDERS_DATA = {
   references: [
-    { title: "Joint Travel Regulations (JTR)", desc: "Official travel policy for PCS moves.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
-    { title: "MCO 1320.12", desc: "Marine Corps PCS Order Administration.", url: "https://www.marines.mil/", type: "Order" },
-    { title: "DFAS Travel Pay", desc: "Travel pay and allowances overview.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+    { title: "MOL (Marine Online)", desc: "Access PCS orders through OBI module.", url: "https://mol.tfs.usmc.mil/", type: "Website" },
+    { title: "move.mil (DPS)", desc: "Register HHG shipments and track moves.", url: "https://www.move.mil/", type: "Website" },
+    { title: "Plan My Move", desc: "Personalized PCS checklist and timeline.", url: "https://planmymove.militaryonesource.mil/", type: "Website" },
+    { title: "Military OneSource PCS", desc: "PCS resources and support.", url: "https://www.militaryonesource.mil/", type: "Website" },
+    { title: "HQMC PCS Move Resources", desc: "Official Marine Corps PCS guidance.", url: "https://www.iandl.marines.mil/Divisions/Logistics-Division-LP/Logistics-Distribution-Policy-Branch-LPD/PCS-Move-Resources/", type: "Website" },
+    { title: "IRR Program", desc: "Information, Referral, and Relocation support.", url: "https://www.usmc-mccs.org/marine-family-support/information-referral-and-relocation", type: "Website" },
+    { title: "MCO 1754.10B (IRR Program)", desc: "Mandatory PCS Workshop requirements.", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900673/mco-175410b/", type: "Policy" },
+    { title: "MCO 1320.11H (Sponsorship)", desc: "Sponsor assignment requirements.", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/980074/mco-132011h-wadmin-ch-1/", type: "Policy" },
   ],
 };
 
