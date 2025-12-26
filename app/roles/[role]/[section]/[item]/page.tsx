@@ -895,10 +895,19 @@ const DLA_DATA = {
 };
 
 const TLE_DATA = {
+  reimbursementRates: [
+    { persons: "Member only or 1 dependent", percentage: "65%" },
+    { persons: "Member + 1 dependent or 2 dependents only", percentage: "100%" },
+    { persons: "Each additional dependent age 12+", percentage: "Add 35%" },
+    { persons: "Each additional dependent under 12", percentage: "Add 25%" },
+  ],
   references: [
-    { title: "Joint Travel Regulations Ch 5", desc: "TLE entitlement and limits.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
-    { title: "DTMO TLE Rates", desc: "TLE per diem rate lookup.", url: "https://www.travel.dod.mil/Allowances/Temporary-Lodging-Expense/", type: "Website" },
-    { title: "DFAS Travel Pay", desc: "TLE reimbursement procedures.", url: "https://www.dfas.mil/militarymembers/travelpay/", type: "Website" },
+    { title: "DFAS TLE Information", desc: "Official TLE reimbursement guidance and procedures.", url: "https://www.dfas.mil/MilitaryMembers/travelpay/armypcs/tle/", type: "Website" },
+    { title: "GSA Per Diem Rates", desc: "Locality rates used for TLE calculations.", url: "https://www.gsa.gov/travel/plan-book/per-diem-rates", type: "Website" },
+    { title: "JTR Chapter 5 (TLE Section)", desc: "Official policy for Temporary Lodging Expense.", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", type: "Policy" },
+    { title: "TLE FAQs", desc: "Frequently asked questions about TLE.", url: "https://www.travel.dod.mil/Support/ALL-FAQs/Article/3174593/temporary-lodging-expenses/", type: "Website" },
+    { title: "TLE Extension Locations", desc: "Approved locations for TLE extensions.", url: "https://www.dfas.mil/Portals/98/Documents/Military%20Members/travelpay/Locations%20with%20Approved%20TLE%20Extensions.pdf", type: "Policy" },
+    { title: "Military OneSource TLE Overview", desc: "TLE guidance from Military OneSource.", url: "https://www.militaryonesource.mil/benefits/temporary-lodging-expense/", type: "Website" },
   ],
 };
 
