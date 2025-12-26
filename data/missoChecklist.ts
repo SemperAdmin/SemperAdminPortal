@@ -301,6 +301,15 @@ export const missoLinks = {
   mol: "https://mol.tfs.usmc.mil/",
 };
 
+// MISSO Teams Channels
+export const missoTeamsChannels = [
+  { name: "MISSO-02", href: "https://dod.teams.microsoft.us/l/team/19:dod:7f4ddd71c9484bf584cc63b6a1dd3bf3%40thread.skype/conversations?groupId=a41eb10c-8e15-43f7-98cb-494ed593d790&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd" },
+  { name: "MISSO-03/06", href: "https://dod.teams.microsoft.us/l/team/19:dod:f0483ec29ef441a7bc13bd6f6ec1b7eb%40thread.skype/conversations?groupId=228439f5-b545-4e58-90ed-1270f9370550&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd" },
+  { name: "MISSO-09", href: "https://dod.teams.microsoft.us/l/team/19:dod:4e6ec9ba34c0409480822e46c9d619f6%40thread.tacv2/conversations?groupId=174c90ac-736c-4702-b816-b6312012fc8e&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd" },
+  { name: "MISSO-16/17", href: "https://dod.teams.microsoft.us/l/team/19:dod:d55c88848dda48f6a6591c8abdb468a3%40thread.skype/conversations?groupId=0895f5f9-e707-49a9-b9b8-a780f689a36b&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd" },
+  { name: "MISSO-27", href: "https://dod.teams.microsoft.us/l/team/19:dod:08d880cf79634e439386cea7cb744c62%40thread.tacv2/conversations?groupId=7fee38ca-16af-4033-b942-5315c450d94e&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd" },
+];
+
 // Helper functions
 export function getCategoryById(id: string): MISSOCategory | undefined {
   return missoCategories.find((cat) => cat.id === id);
