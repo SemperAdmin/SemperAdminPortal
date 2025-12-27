@@ -109,6 +109,59 @@ const SECTIONS: Record<string, { title: string; intro?: string; groups?: { title
       },
     ],
   },
+  "inbound-processing": {
+    title: "Inbound Processing",
+    intro: "Complete guidance for check-in procedures and initial administrative requirements when reporting to a new duty station. Ensure a smooth transition with proper documentation and timely completion of all inbound requirements.",
+    groups: [
+      {
+        title: "Inbound Processing",
+        items: [
+          { title: "Check-In Procedures", slug: "check-in-procedures", desc: "Step-by-step guide for reporting to your new command" },
+          { title: "Sponsorship Programs", slug: "sponsorship-programs", desc: "Unit sponsorship program requirements and responsibilities" },
+          { title: "Initial BAH/BAS Verification", slug: "initial-bah-bas-verification", desc: "Verify and establish housing and subsistence allowances" },
+          { title: "Records Review", slug: "records-review", desc: "Review and update personnel records upon check-in" },
+          { title: "Security Clearance Transfer", slug: "security-clearance-transfer", desc: "Transfer and verify security clearance to new command" },
+        ],
+      },
+    ],
+  },
+  "outbound-processing": {
+    title: "Outbound Processing",
+    intro: "Comprehensive procedures for properly checking out of your current command. Complete all required actions to ensure seamless transition and final pay settlement.",
+    groups: [
+      {
+        title: "Outbound Processing",
+        items: [
+          { title: "Checkout Procedures", slug: "checkout-procedures", desc: "Complete checkout requirements before departing command" },
+          { title: "Final Pay Settlement", slug: "final-pay-settlement", desc: "Ensure accurate final pay and entitlements" },
+          { title: "Records Transfer", slug: "records-transfer", desc: "Transfer service records to gaining command or archive" },
+          { title: "Leave Settlement", slug: "leave-settlement", desc: "Settle leave balance and terminal leave processing" },
+        ],
+      },
+    ],
+  },
+  "personnel-records": {
+    title: "Personnel Records",
+    intro: "Guidance for maintaining, updating, and correcting official military personnel records. Ensure accuracy and completeness of your service record throughout your career.",
+    groups: [
+      {
+        title: "Official Records",
+        items: [
+          { title: "Official Military Personnel File (OMPF) Management", slug: "ompf-management", desc: "Understanding and managing your official personnel file" },
+          { title: "Page 11 Entries (Administrative Remarks)", slug: "page-11-entries", desc: "Administrative remarks and counseling documentation" },
+          { title: "Service Record Book (SRB) Corrections", slug: "srb-corrections", desc: "Correcting errors in your service record book" },
+        ],
+      },
+      {
+        title: "Supporting Records",
+        items: [
+          { title: "Awards and Decorations", slug: "awards-decorations", desc: "Processing and documenting military awards" },
+          { title: "Medical Records", slug: "medical-records", desc: "Maintaining and accessing medical documentation" },
+          { title: "Training Jackets", slug: "training-jackets", desc: "Training records and professional military education" },
+        ],
+      },
+    ],
+  },
   "travel-transportation": {
     title: "Travel & Transportation",
     intro: "This page covers all travel entitlements and transportation support for Marines. Whether you are moving to a new duty station, going on temporary duty, or need to understand your travel benefits, you will find guidance and resources here.",
