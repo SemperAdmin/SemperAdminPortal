@@ -293,8 +293,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                       </tr>
                     </thead>
                     <tbody>
-                      {KEY_REQUIREMENTS.map((item, idx) => (
-                        <tr key={idx} className="border-b border-zinc-100 dark:border-zinc-800">
+                      {KEY_REQUIREMENTS.map((item) => (
+                        <tr key={item.element} className="border-b border-zinc-100 dark:border-zinc-800">
                           <td className="py-2 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{item.element}</td>
                           <td className="py-2 text-zinc-600 dark:text-zinc-400">{item.requirement}</td>
                         </tr>
@@ -312,8 +312,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                   <div className="rounded-lg bg-green-50 p-4 dark:bg-green-900/20">
                     <h4 className="font-semibold text-green-800 dark:text-green-200">Travel Entitlements</h4>
                     <ul className="mt-2 space-y-1">
-                      {TRAVEL_ENTITLEMENTS.map((item, idx) => (
-                        <li key={idx} className="text-sm text-green-700 dark:text-green-300 flex items-start gap-2">
+                      {TRAVEL_ENTITLEMENTS.map((item) => (
+                        <li key={item} className="text-sm text-green-700 dark:text-green-300 flex items-start gap-2">
                           <span className="text-green-600 mt-1">•</span>
                           {item}
                         </li>
@@ -323,8 +323,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                   <div className="rounded-lg bg-blue-50 p-4 dark:bg-blue-900/20">
                     <h4 className="font-semibold text-blue-800 dark:text-blue-200">Housing Entitlements</h4>
                     <ul className="mt-2 space-y-1">
-                      {HOUSING_ENTITLEMENTS.map((item, idx) => (
-                        <li key={idx} className="text-sm text-blue-700 dark:text-blue-300 flex items-start gap-2">
+                      {HOUSING_ENTITLEMENTS.map((item) => (
+                        <li key={item} className="text-sm text-blue-700 dark:text-blue-300 flex items-start gap-2">
                           <span className="text-blue-600 mt-1">•</span>
                           {item}
                         </li>
@@ -334,8 +334,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                   <div className="rounded-lg bg-purple-50 p-4 dark:bg-purple-900/20">
                     <h4 className="font-semibold text-purple-800 dark:text-purple-200">Other Benefits</h4>
                     <ul className="mt-2 space-y-1">
-                      {OTHER_BENEFITS.map((item, idx) => (
-                        <li key={idx} className="text-sm text-purple-700 dark:text-purple-300 flex items-start gap-2">
+                      {OTHER_BENEFITS.map((item) => (
+                        <li key={item} className="text-sm text-purple-700 dark:text-purple-300 flex items-start gap-2">
                           <span className="text-purple-600 mt-1">•</span>
                           {item}
                         </li>
@@ -365,10 +365,10 @@ export function CommandSponsorshipContent({ data }: Props) {
                     Dependents Requiring Sponsorship
                   </h3>
                   <ul className="mt-4 space-y-2">
-                    {DEPENDENTS_REQUIRING_SPONSORSHIP.map((item, idx) => (
-                      <li key={idx} className="flex items-center gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    {DEPENDENTS_REQUIRING_SPONSORSHIP.map((item, index) => (
+                      <li key={item} className="flex items-center gap-2 text-sm text-zinc-700 dark:text-zinc-300">
                         <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs text-white">
-                          {idx + 1}
+                          {index + 1}
                         </span>
                         {item}
                       </li>
@@ -381,8 +381,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                     Situations Requiring Application
                   </h3>
                   <ul className="mt-4 space-y-2">
-                    {SITUATIONS_REQUIRING_APPLICATION.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    {SITUATIONS_REQUIRING_APPLICATION.map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
                         <span className="text-[var(--sa-red)] mt-0.5">→</span>
                         {item}
                       </li>
@@ -431,8 +431,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                           <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{step.description}</p>
                         )}
                         <ul className="mt-3 space-y-1">
-                          {step.actions.map((action, idx) => (
-                            <li key={idx} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                          {step.actions.map((action) => (
+                            <li key={action} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
                               <span className="text-[var(--sa-red)] mt-0.5">✓</span>
                               {action}
                             </li>
@@ -457,8 +457,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                       </tr>
                     </thead>
                     <tbody>
-                      {TIMELINE_ITEMS.map((item, idx) => (
-                        <tr key={idx} className="border-b border-zinc-100 dark:border-zinc-800">
+                      {TIMELINE_ITEMS.map((item) => (
+                        <tr key={item.action} className="border-b border-zinc-100 dark:border-zinc-800">
                           <td className="py-2 pr-4 text-zinc-700 dark:text-zinc-300">{item.action}</td>
                           <td className="py-2 font-medium text-zinc-600 dark:text-zinc-400">{item.timeline}</td>
                         </tr>
@@ -488,8 +488,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                     Sponsor Documents
                   </h3>
                   <ul className="mt-4 space-y-2">
-                    {SPONSOR_DOCUMENTS.map((doc, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    {SPONSOR_DOCUMENTS.map((doc) => (
+                      <li key={doc} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
                         <input type="checkbox" className="mt-1 h-4 w-4 rounded border-zinc-300" />
                         {doc}
                       </li>
@@ -502,8 +502,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                     Dependent Documents
                   </h3>
                   <ul className="mt-4 space-y-2">
-                    {DEPENDENT_DOCUMENTS.map((doc, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    {DEPENDENT_DOCUMENTS.map((doc) => (
+                      <li key={doc} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
                         <input type="checkbox" className="mt-1 h-4 w-4 rounded border-zinc-300" />
                         {doc}
                       </li>
@@ -516,8 +516,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                     Medical Documents
                   </h3>
                   <ul className="mt-4 space-y-2">
-                    {MEDICAL_DOCUMENTS.map((doc, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    {MEDICAL_DOCUMENTS.map((doc) => (
+                      <li key={doc} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
                         <input type="checkbox" className="mt-1 h-4 w-4 rounded border-zinc-300" />
                         {doc}
                       </li>
@@ -568,8 +568,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                     The DD Form 2792 captures medical information for each dependent:
                   </p>
                   <ul className="mt-4 space-y-2">
-                    {DD_2792_INFO.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    {DD_2792_INFO.map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
                         <span className="text-[var(--sa-red)]">•</span>
                         {item}
                       </li>
@@ -585,8 +585,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                     Additional documentation required for dependents with special needs:
                   </p>
                   <ul className="mt-4 space-y-2">
-                    {SPECIAL_NEEDS_DOCS.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    {SPECIAL_NEEDS_DOCS.map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
                         <span className="text-[var(--sa-red)]">•</span>
                         {item}
                       </li>
@@ -652,8 +652,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                       </tr>
                     </thead>
                     <tbody>
-                      {TOUR_LENGTH_EXAMPLES.map((item, idx) => (
-                        <tr key={idx} className="border-b border-zinc-100 dark:border-zinc-800">
+                      {TOUR_LENGTH_EXAMPLES.map((item) => (
+                        <tr key={`${item.orderedTour}-${item.familyArrival}`} className="border-b border-zinc-100 dark:border-zinc-800">
                           <td className="py-2 pr-4 text-zinc-700 dark:text-zinc-300">{item.orderedTour}</td>
                           <td className="py-2 pr-4 text-zinc-700 dark:text-zinc-300">{item.familyArrival}</td>
                           <td className="py-2 pr-4 text-zinc-700 dark:text-zinc-300">{item.remaining}</td>
@@ -702,8 +702,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                 <section className="rounded-xl border-l-4 border-green-500 bg-green-50 p-4 dark:bg-green-900/20">
                   <h4 className="font-semibold text-green-800 dark:text-green-200">Accompanied Orders</h4>
                   <ul className="mt-2 space-y-1 text-sm text-green-700 dark:text-green-300">
-                    {ACCOMPANIED_BENEFITS.map((item, idx) => (
-                      <li key={idx}>• {item}</li>
+                    {ACCOMPANIED_BENEFITS.map((item) => (
+                      <li key={item}>• {item}</li>
                     ))}
                   </ul>
                 </section>
@@ -711,8 +711,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                 <section className="rounded-xl border-l-4 border-amber-500 bg-amber-50 p-4 dark:bg-amber-900/20">
                   <h4 className="font-semibold text-amber-800 dark:text-amber-200">Unaccompanied Orders</h4>
                   <ul className="mt-2 space-y-1 text-sm text-amber-700 dark:text-amber-300">
-                    {UNACCOMPANIED_LIMITATIONS.map((item, idx) => (
-                      <li key={idx}>• {item}</li>
+                    {UNACCOMPANIED_LIMITATIONS.map((item) => (
+                      <li key={item}>• {item}</li>
                     ))}
                   </ul>
                 </section>
@@ -738,8 +738,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                     Medical/EFMP Denial Reasons
                   </h3>
                   <ul className="mt-4 space-y-2">
-                    {MEDICAL_DENIAL_REASONS.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    {MEDICAL_DENIAL_REASONS.map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
                         <span className="text-red-500 mt-0.5">✕</span>
                         {item}
                       </li>
@@ -752,8 +752,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                     Administrative Denial Reasons
                   </h3>
                   <ul className="mt-4 space-y-2">
-                    {ADMIN_DENIAL_REASONS.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    {ADMIN_DENIAL_REASONS.map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
                         <span className="text-red-500 mt-0.5">✕</span>
                         {item}
                       </li>
@@ -767,10 +767,10 @@ export function CommandSponsorshipContent({ data }: Props) {
                   What To Do If Denied
                 </h3>
                 <ol className="mt-4 space-y-3">
-                  {DENIAL_ACTIONS.map((action, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
+                  {DENIAL_ACTIONS.map((action, index) => (
+                    <li key={action} className="flex items-start gap-3">
                       <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-red)] text-xs font-bold text-white">
-                        {idx + 1}
+                        {index + 1}
                       </span>
                       <span className="text-sm text-zinc-700 dark:text-zinc-300">{action}</span>
                     </li>
@@ -887,8 +887,8 @@ export function CommandSponsorshipContent({ data }: Props) {
                   Tips for Success
                 </h3>
                 <div className="mt-4 grid gap-3 md:grid-cols-2">
-                  {SUCCESS_TIPS.map((item, idx) => (
-                    <div key={idx} className="rounded-lg bg-zinc-50 p-3 dark:bg-zinc-800/50">
+                  {SUCCESS_TIPS.map((item) => (
+                    <div key={item.tip} className="rounded-lg bg-zinc-50 p-3 dark:bg-zinc-800/50">
                       <p className="font-medium text-zinc-900 dark:text-zinc-100">{item.tip}</p>
                       <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{item.detail}</p>
                     </div>
