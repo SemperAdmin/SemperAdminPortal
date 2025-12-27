@@ -7,6 +7,39 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 type Params = { role: Role; section: string };
 
 const SECTIONS: Record<string, { title: string; intro?: string; groups?: { title: string; items: { title: string; slug?: string; desc: string }[] }[] }> = {
+  "dependency-management": {
+    title: "Dependency Management",
+    intro: "Comprehensive guidance for managing dependent status changes throughout your Marine Corps career. From adding new dependents to updating records and navigating special programs, find step-by-step procedures and required documentation.",
+    groups: [
+      {
+        title: "Adding Dependents",
+        items: [
+          { title: "Marriage Documentation", slug: "marriage-documentation", desc: "Register your marriage and add your spouse to DEERS" },
+          { title: "Birth/Adoption of Children", slug: "birth-adoption-of-children", desc: "Add newborn or adopted children to your records" },
+          { title: "Stepchildren Addition", slug: "stepchildren-addition", desc: "Add stepchildren to DEERS and update benefits" },
+          { title: "Secondary Dependents", slug: "secondary-dependents", desc: "Add parents or other eligible secondary dependents" },
+        ],
+      },
+      {
+        title: "Removing/Changing Dependents",
+        items: [
+          { title: "Divorce/Legal Separation", slug: "divorce-legal-separation", desc: "Update records after divorce or legal separation" },
+          { title: "Death of Dependents", slug: "death-of-dependents", desc: "Process dependent death and update records" },
+          { title: "Adult Children (Age 21+)", slug: "adult-children-age-21", desc: "Manage dependent status when children reach adulthood" },
+        ],
+      },
+      {
+        title: "Special Programs & Updates",
+        items: [
+          { title: "Family Care Plan (FCP)", slug: "family-care-plan", desc: "Establish care plans for single parents and dual-military" },
+          { title: "Exceptional Family Member Program", slug: "efmp", desc: "Enrollment and support for special needs dependents" },
+          { title: "Emergency Contact Updates", slug: "emergency-contact-updates", desc: "Update DD 93, SGLI, and emergency contacts" },
+          { title: "Dependent ID Card Updates", slug: "dependent-id-card-updates", desc: "Renew or replace dependent ID cards" },
+          { title: "Command Sponsorship (OCONUS)", slug: "command-sponsorship-oconus", desc: "Request command sponsorship for overseas assignments" },
+        ],
+      },
+    ],
+  },
   "pay-allowances": {
     title: "Pay & Allowances",
     intro: "Your pay supports your mission and your family. This page explains each type of pay and allowance, what documents you need to provide, and how to take action.",
