@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { QuickLinks } from "./QuickLinks";
+import { ListItem } from "./ui/ListItem";
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
 
@@ -57,6 +58,12 @@ const STEPCHILD_DOCS = [
   "Birth certificate or documentation showing spouse is the child's parent",
 ];
 
+const PRE_ADOPTIVE_CHILD_DOCS = [
+  "Completed NAVMC 10922 signed by member and attesting officer",
+  "Court order or agency documentation showing placement",
+  "Documentation of pending adoption proceedings",
+];
+
 const PROCESSING_TIMELINE = [
   { action: "Birth or adoption occurs", timeline: "Day 0" },
   { action: "Notify command", timeline: "Immediately" },
@@ -69,9 +76,9 @@ const PROCESSING_TIMELINE = [
 ];
 
 const BIRTH_MOTHER_LEAVE = [
-  { type: "Convalescent Leave", duration: "6 weeks" },
-  { type: "Primary Caregiver Leave", duration: "12 weeks" },
-  { type: "Total Non-Chargeable Leave", duration: "18 weeks" },
+  { type: "Convalescent Leave", duration: "6 weeks", isTotal: false },
+  { type: "Primary Caregiver Leave", duration: "12 weeks", isTotal: false },
+  { type: "Total Non-Chargeable Leave", duration: "18 weeks", isTotal: true },
 ];
 
 const ACCEPTABLE_SUPPORT_PROOF = [
@@ -239,19 +246,10 @@ export function BirthAdoptionContent({ data }: Props) {
                   A pre-adoptive child is placed in your home pending finalization of adoption.
                 </p>
                 <h4 className="mt-4 font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Required Documents:</h4>
-                <ul className="mt-2 space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" />
-                    Completed NAVMC 10922 signed by member and attesting officer
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" />
-                    Court order or agency documentation showing placement
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" />
-                    Documentation of pending adoption proceedings
-                  </li>
+                <ul className="mt-2 space-y-1">
+                  {PRE_ADOPTIVE_CHILD_DOCS.map((doc) => (
+                    <ListItem key={doc}>{doc}</ListItem>
+                  ))}
                 </ul>
                 <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400"><strong>Approval:</strong> Commanding Officer (may require CMC MFP-1 review)</p>
               </section>
@@ -377,7 +375,7 @@ export function BirthAdoptionContent({ data }: Props) {
                     </thead>
                     <tbody>
                       {BIRTH_MOTHER_LEAVE.map((item) => (
-                        <tr key={item.type} className={`border-b border-black/5 dark:border-white/5 ${item.type.includes("Total") ? "font-semibold bg-green-50 dark:bg-green-900/20" : ""}`}>
+                        <tr key={item.type} className={`border-b border-black/5 dark:border-white/5 ${item.isTotal ? "font-semibold bg-green-50 dark:bg-green-900/20" : ""}`}>
                           <td className="py-2 pr-4 text-zinc-700 dark:text-zinc-300">{item.type}</td>
                           <td className="py-2 text-zinc-900 dark:text-zinc-100">{item.duration}</td>
                         </tr>

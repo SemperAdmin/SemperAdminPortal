@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { QuickLinks } from "./QuickLinks";
+import { ListItem } from "./ui/ListItem";
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
 
@@ -86,6 +87,12 @@ const FOREIGN_DIVORCE_DOCS = [
   "English translation of all foreign documents",
   "Proof of residency",
   "Submit to CMC (MFP-1) for determination",
+];
+
+const FOREIGN_DIVORCE_MARRIAGE_REQS = [
+  "Submit to CMC (MFP-1) for validity determination before approval",
+  "Include all documentation of prior divorce",
+  "Await determination before processing dependent enrollment",
 ];
 
 export function MarriageDocumentationContent({ data }: Props) {
@@ -222,19 +229,10 @@ export function MarriageDocumentationContent({ data }: Props) {
                   </p>
                 </div>
                 <h4 className="mt-4 font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Requirements:</h4>
-                <ul className="mt-2 space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" />
-                    Submit to CMC (MFP-1) for validity determination before approval
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" />
-                    Include all documentation of prior divorce
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" />
-                    Await determination before processing dependent enrollment
-                  </li>
+                <ul className="mt-2 space-y-1">
+                  {FOREIGN_DIVORCE_MARRIAGE_REQS.map((req) => (
+                    <ListItem key={req}>{req}</ListItem>
+                  ))}
                 </ul>
               </section>
             </>
