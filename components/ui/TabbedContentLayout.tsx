@@ -4,7 +4,7 @@ import { useState, useMemo, type ReactNode } from "react";
 import { QuickLinks } from "../QuickLinks";
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
-type Tab = { id: string; label: string };
+type Tab = { id: string; label: string; type?: "references" };
 
 type Props = {
   tabs: Tab[];
@@ -18,7 +18,8 @@ type Props = {
  * and similar content sections. Handles tab navigation, grid layout, and
  * sidebar with QuickLinks.
  *
- * @param tabs - Array of tab definitions with id and label
+ * @param tabs - Array of tab definitions with id, label, and optional type.
+ *               Use type: "references" to auto-generate a references tab.
  * @param data - Reference data including references array
  * @param content - Record mapping tab IDs to their content (ReactNode)
  * @param sidebar - Optional additional sidebar content below QuickLinks
@@ -29,16 +30,17 @@ export function TabbedContentLayout({ tabs, data, content, sidebar }: Props) {
   const allContent = useMemo(() => {
     const dynamicContent = { ...content };
 
-    // Auto-generate references tab if it exists in tabs but not in content
-    if (tabs.some(tab => tab.id === "references") && !content.references) {
-      dynamicContent.references = (
+    // Auto-generate references tab based on tab type property
+    const referencesTab = tabs.find(tab => tab.type === "references");
+    if (referencesTab && !content[referencesTab.id]) {
+      dynamicContent[referencesTab.id] = (
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
             References & Resources
           </h2>
           <ul className="mt-4 space-y-2">
             {data.references.map((ref) => (
-              <li key={ref.title}>
+              <li key={ref.url}>
                 <a
                   href={ref.url}
                   target="_blank"
