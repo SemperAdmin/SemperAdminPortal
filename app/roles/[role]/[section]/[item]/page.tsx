@@ -63,6 +63,7 @@ import { DependentIDCardUpdatesContent } from "../../../../../components/Depende
 import { CommandSponsorshipContent } from "../../../../../components/CommandSponsorshipContent";
 import { CheckInProceduresContent } from "../../../../../components/CheckInProceduresContent";
 import { SponsorshipProgramContent } from "../../../../../components/SponsorshipProgramContent";
+import { InitialBAHBASVerificationContent } from "../../../../../components/InitialBAHBASVerificationContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1181,6 +1182,18 @@ const SPONSORSHIP_DATA = {
   ],
 };
 
+const INITIAL_BAH_BAS_DATA = {
+  references: [
+    { title: "BAH Calculator", url: "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/", isQuickLink: true },
+    { title: "DFAS BAS Rates", url: "https://www.dfas.mil/militarymembers/payentitlements/Pay-Tables/BAS/", isQuickLink: true },
+    { title: "DFAS Military Pay", url: "https://www.dfas.mil/MilitaryMembers/", isQuickLink: true },
+    { title: "37 U.S.C. 402 (BAS)", url: "https://www.law.cornell.edu/uscode/text/37/402", isQuickLink: false },
+    { title: "37 U.S.C. 403 (BAH)", url: "https://www.law.cornell.edu/uscode/text/37/403", isQuickLink: false },
+    { title: "MCO 1751.3 (Dependency Determination)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
+    { title: "Joint Travel Regulations (JTR)", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: false },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -1278,6 +1291,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     // Personnel Administration
     "check-in-procedures": <CheckInProceduresContent data={CHECK_IN_DATA} />,
     "sponsorship-programs": <SponsorshipProgramContent data={SPONSORSHIP_DATA} />,
+    "initial-bah-bas-verification": <InitialBAHBASVerificationContent data={INITIAL_BAH_BAS_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
