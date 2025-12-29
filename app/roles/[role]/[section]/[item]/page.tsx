@@ -66,6 +66,7 @@ import { SponsorshipProgramContent } from "../../../../../components/Sponsorship
 import { InitialBAHBASVerificationContent } from "../../../../../components/InitialBAHBASVerificationContent";
 import { RecordsReviewContent } from "../../../../../components/RecordsReviewContent";
 import { SecurityClearanceTransferContent } from "../../../../../components/SecurityClearanceTransferContent";
+import { CheckoutProceduresContent } from "../../../../../components/CheckoutProceduresContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1218,6 +1219,17 @@ const SECURITY_CLEARANCE_DATA = {
   ],
 };
 
+const CHECKOUT_DATA = {
+  references: [
+    { title: "IPAC (Personnel Admin Center)", url: "#", isQuickLink: true },
+    { title: "Personal Property Office", url: "https://www.move.mil/", isQuickLink: true },
+    { title: "Travel Claim Worksheet", url: "https://www.dfas.mil/", isQuickLink: true },
+    { title: "MCO P1000.6H (Separations Manual)", url: "https://www.marines.mil/Portals/1/MCO%20P1000.6H.pdf", isQuickLink: false },
+    { title: "JTR (Joint Travel Regulations)", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: false },
+    { title: "MARADMIN Leave & Earnings", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -1318,6 +1330,8 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "initial-bah-bas-verification": <InitialBAHBASVerificationContent data={INITIAL_BAH_BAS_DATA} />,
     "records-review": <RecordsReviewContent data={RECORDS_REVIEW_DATA} />,
     "security-clearance-transfer": <SecurityClearanceTransferContent data={SECURITY_CLEARANCE_DATA} />,
+    // Outbound Processing
+    "checkout-procedures": <CheckoutProceduresContent data={CHECKOUT_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
