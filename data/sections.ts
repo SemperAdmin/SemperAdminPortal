@@ -1,0 +1,212 @@
+export type SectionItem = {
+  title: string;
+  slug?: string;
+  desc: string;
+};
+
+export type SectionGroup = {
+  title: string;
+  items: SectionItem[];
+};
+
+export type Section = {
+  title: string;
+  intro?: string;
+  groups?: SectionGroup[];
+};
+
+export const SECTIONS: Record<string, Section> = {
+  "personnel-administration": {
+    title: "Personnel Administration",
+    intro: "Comprehensive guidance for all personnel administration actions throughout your Marine Corps career. From check-in procedures to records management, find step-by-step procedures and required documentation.",
+    groups: [
+      {
+        title: "Inbound Processing",
+        items: [
+          { title: "Check-In Procedures", slug: "check-in-procedures", desc: "Step-by-step guide for reporting to your new command" },
+          { title: "Sponsorship Programs", slug: "sponsorship-programs", desc: "Unit sponsorship program requirements and responsibilities" },
+          { title: "Initial BAH/BAS Verification", slug: "initial-bah-bas-verification", desc: "Verify and establish housing and subsistence allowances" },
+          { title: "Records Review", slug: "records-review", desc: "Review and update personnel records upon check-in" },
+          { title: "Security Clearance Transfer", slug: "security-clearance-transfer", desc: "Transfer and verify security clearance to new command" },
+        ],
+      },
+      {
+        title: "Outbound Processing",
+        items: [
+          { title: "Checkout Procedures", slug: "checkout-procedures", desc: "Complete checkout requirements before departing command" },
+          { title: "Final Pay Settlement", slug: "final-pay-settlement", desc: "Ensure accurate final pay and entitlements" },
+          { title: "Records Transfer", slug: "records-transfer", desc: "Transfer service records to gaining command or archive" },
+          { title: "Leave Settlement", slug: "leave-settlement", desc: "Settle leave balance and terminal leave processing" },
+        ],
+      },
+      {
+        title: "Personnel Records",
+        items: [
+          { title: "Official Military Personnel File (OMPF) Management", slug: "ompf-management", desc: "Understanding and managing your official personnel file" },
+          { title: "Page 11 Entries (Administrative Remarks)", slug: "page-11-entries", desc: "Administrative remarks and counseling documentation" },
+          { title: "Service Record Book (SRB) Corrections", slug: "srb-corrections", desc: "Correcting errors in your service record book" },
+          { title: "Awards and Decorations", slug: "awards-decorations", desc: "Processing and documenting military awards" },
+          { title: "Medical Records", slug: "medical-records", desc: "Maintaining and accessing medical documentation" },
+          { title: "Training Jackets", slug: "training-jackets", desc: "Training records and professional military education" },
+        ],
+      },
+    ],
+  },
+  "dependency-management": {
+    title: "Dependency Management",
+    intro: "Comprehensive guidance for managing dependent status changes throughout your Marine Corps career. From adding new dependents to updating records and navigating special programs, find step-by-step procedures and required documentation.",
+    groups: [
+      {
+        title: "Adding Dependents",
+        items: [
+          { title: "Marriage Documentation", slug: "marriage-documentation", desc: "Register your marriage and add your spouse to DEERS" },
+          { title: "Birth/Adoption of Children", slug: "birth-adoption-of-children", desc: "Add newborn or adopted children to your records" },
+          { title: "Stepchildren Addition", slug: "stepchildren-addition", desc: "Add stepchildren to DEERS and update benefits" },
+          { title: "Secondary Dependents", slug: "secondary-dependents", desc: "Add parents or other eligible secondary dependents" },
+        ],
+      },
+      {
+        title: "Removing/Changing Dependents",
+        items: [
+          { title: "Divorce/Legal Separation", slug: "divorce-legal-separation", desc: "Update records after divorce or legal separation" },
+          { title: "Death of Dependents", slug: "death-of-dependents", desc: "Process dependent death and update records" },
+          { title: "Adult Children (Age 21+)", slug: "adult-children-age-21", desc: "Manage dependent status when children reach adulthood" },
+        ],
+      },
+      {
+        title: "Special Programs & Updates",
+        items: [
+          { title: "Family Care Plan (FCP)", slug: "family-care-plan", desc: "Establish care plans for single parents and dual-military" },
+          { title: "Exceptional Family Member Program", slug: "efmp", desc: "Enrollment and support for special needs dependents" },
+          { title: "Emergency Contact Updates", slug: "emergency-contact-updates", desc: "Update DD 93, SGLI, and emergency contacts" },
+          { title: "Dependent ID Card Updates", slug: "dependent-id-card-updates", desc: "Renew or replace dependent ID cards" },
+          { title: "Command Sponsorship (OCONUS)", slug: "command-sponsorship-oconus", desc: "Request command sponsorship for overseas assignments" },
+        ],
+      },
+    ],
+  },
+  "pay-allowances": {
+    title: "Pay & Allowances",
+    intro: "Your pay supports your mission and your family. This page explains each type of pay and allowance, what documents you need to provide, and how to take action.",
+    groups: [
+      {
+        title: "Basic Allowances",
+        items: [
+          { title: "Basic Allowance for Housing", slug: "basic-allowance-for-housing", desc: "Pay for off-base housing based on rank, location, and dependents" },
+          { title: "Basic Allowance for Subsistence", slug: "basic-allowance-for-subsistence", desc: "Monthly food allowance for all Marines" },
+          { title: "Cost of Living Allowance", slug: "cost-of-living-allowance", desc: "Additional pay for high-cost duty locations" },
+          { title: "Overseas Housing Allowance", slug: "overseas-housing-allowance", desc: "Housing allowance for OCONUS assignments" },
+        ],
+      },
+      {
+        title: "Special & Incentive Pay",
+        items: [
+          { title: "Demolition Pay", slug: "demolition-pay", desc: "Pay for explosive ordnance disposal" },
+          { title: "Dive Pay", slug: "dive-pay", desc: "Compensation for diving duties" },
+          { title: "Experimental Stress Duty", slug: "experimental-stress-duty", desc: "Rate: $150/month. Covers human test subject operations." },
+          { title: "Flight Pay (ACIP)", slug: "aviation-career-incentive-pay", desc: "Monthly pay for aviators" },
+          { title: "Flight Deck Duty", slug: "flight-deck-duty", desc: "Operations on aircraft carriers and air-capable ships. Rate: $150/month." },
+          { title: "Foreign Language Proficiency Bonus (FLPB)", slug: "foreign-language-proficiency-pay", desc: "Bonus for foreign language proficiency" },
+          { title: "Hardship Duty Pay (HDP)", slug: "hardship-duty-pay", desc: "$50–$150/month for difficult living conditions at duty station" },
+          { title: "Parachute Duty", slug: "parachute-duty-pay", desc: "$150/month. Military Free Fall (MFF/HALO): $225/month." },
+          { title: "Maritime VBSS Duty", slug: "maritime-vbss-duty", desc: "Rate: $150/month. Visit, Board, Search, and Seizure operations." },
+          { title: "Special Duty Assignment Pay (SDAP)", slug: "sdap", desc: "Pay for challenging billets" },
+          { title: "Special Operations", slug: "special-operations-pay", desc: "Rate: $150/month. Specialized high-risk operations." },
+          { title: "Toxic Materials Duty", slug: "toxic-materials-duty", desc: "Rate: $150/month per duty type. Handling toxic materials." },
+        ],
+      },
+      {
+        title: "Deployment & Hardship Pay",
+        items: [
+          { title: "Family Separation Allowance", slug: "family-separation-allowance", desc: "$250/month when separated from dependents 30+ days" },
+          { title: "Hostile Fire Pay", slug: "hostile-fire-pay", desc: "$225/month for exposure to hostile fire or mine explosions" },
+          { title: "Imminent Danger Pay", slug: "imminent-danger-pay", desc: "$7.50/day up to $225/month; designated danger areas" },
+          { title: "Savings Deposit Program (SDP)", slug: "savings-deposit-program", desc: "Earn 10% interest on deployment savings up to $10,000" },
+        ],
+      },
+      {
+        title: "Retirement & Career Incentives",
+        items: [
+          { title: "Blended Retirement System", slug: "blended-retirement-system", desc: "Modern retirement combining pension and TSP matching" },
+          { title: "Continuation Pay", slug: "continuation-pay", desc: "One-time mid-career bonus at 8–12 years for 4-year commitment" },
+          { title: "Legacy High-3 Traditional Plan", slug: "legacy-high-3-retirement-system", desc: "Pre-2018 retirement at 2.5% per year of service" },
+          { title: "Thrift Savings Plan", slug: "thrift-savings-plan", desc: "Military 401k with automatic 1% plus up to 4% matching" },
+          { title: "Transfer of Educational Benefits", slug: "transfer-of-educational-benefits", desc: "Transfer your GI Bill benefits to spouse or dependents" },
+        ],
+      },
+      {
+        title: "Tax Benefits & Flexible Spending",
+        items: [
+          { title: "Combat Zone Tax Exclusion", slug: "combat-zone-tax-exclusion", desc: "Tax-free pay while serving in designated combat zones" },
+          { title: "Flexible Spending Accounts", slug: "flexible-spending-accounts", desc: "Save up to $2,850 pre-tax for healthcare and childcare" },
+          { title: "State Tax Relief", slug: "state-tax-relief", desc: "Exemption from state income tax based on legal residence" },
+        ],
+      },
+      {
+        title: "Financial Management & Pay Problems",
+        items: [
+          { title: "Allotments", slug: "allotments", desc: "Set up automatic payments" },
+          { title: "Basic Needs Allowance (BNA)", slug: "basic-needs-allowance", desc: "Support for low-income families" },
+          { title: "Debt Management", slug: "debt-management", desc: "Repay military debts" },
+          { title: "Financial Hardship Assistance", slug: "financial-hardship-assistance", desc: "Get help during emergencies" },
+          { title: "Overpayment Repayment Plans", slug: "overpayment-repayment-plans", desc: "Set up payment arrangements" },
+        ],
+      },
+    ],
+  },
+  "travel-transportation": {
+    title: "Travel & Transportation",
+    intro: "This page covers all travel entitlements and transportation support for Marines. Whether you are moving to a new duty station, going on temporary duty, or need to understand your travel benefits, you will find guidance and resources here.",
+    groups: [
+      {
+        title: "Permanent Change of Station (PCS)",
+        items: [
+          { title: "PCS Orders Processing", slug: "pcs-orders-processing", desc: "How to receive, review, and execute your PCS orders" },
+          { title: "Household Goods (HHG) Shipment", slug: "household-goods-shipment", desc: "Government-arranged shipping of your belongings to new duty station" },
+          { title: "Personally Procured Move (PPM/DITY)", slug: "personally-procured-move", desc: "Move yourself and get reimbursed for authorized expenses" },
+          { title: "Storage", slug: "pcs-storage", desc: "Short-term and long-term storage options during PCS" },
+          { title: "Dislocation Allowance (DLA)", slug: "dislocation-allowance", desc: "One-time payment to offset moving costs based on rank and dependents" },
+          { title: "Temporary Lodging Expense (TLE)", slug: "temporary-lodging-expense", desc: "Reimbursement for lodging during PCS transition periods" },
+          { title: "Vehicle Processing and Storage", slug: "vehicle-processing-storage", desc: "Ship or store your POV during OCONUS assignments" },
+        ],
+      },
+      {
+        title: "Temporary Duty (TAD/TDY)",
+        items: [
+          { title: "TAD Orders", slug: "tad-orders", desc: "Temporary additional duty orders for training, missions, or assignments" },
+          { title: "Per Diem Rates", slug: "per-diem-rates", desc: "Daily allowance for lodging, meals, and incidentals while traveling" },
+          { title: "Travel Voucher Submission (DD 1351-2)", slug: "travel-voucher-submission", desc: "How to complete and submit your travel claim for reimbursement" },
+          { title: "Defense Travel System (DTS) Authorization", slug: "dts-authorization", desc: "Creating and routing travel authorizations in DTS" },
+        ],
+      },
+      {
+        title: "Transportation Entitlements",
+        items: [
+          { title: "Government Travel Charge Card (GTCC)", slug: "government-travel-charge-card", desc: "Mandatory card for official travel expenses" },
+          { title: "Mileage Reimbursement", slug: "mileage-reimbursement", desc: "POV mileage rates and reimbursement procedures" },
+          { title: "Advance Travel Pay", slug: "advance-travel-pay", desc: "Request advance funds before official travel" },
+          { title: "Leave En Route Travel", slug: "leave-en-route-travel", desc: "Taking authorized leave during PCS travel" },
+        ],
+      },
+    ],
+  },
+  "s1-g1-administration": {
+    title: "S-1 / G-1 Administration",
+    intro: "S-1 / G-1 (Administration Section) Handles all personnel administration and manpower functions. Manages pay, leave, promotions, awards, and official correspondence. Maintains service records and ensures compliance with personnel policies and reporting requirements. Serves as the command's administrative hub and liaison with higher headquarters for manpower actions.",
+  },
+  "pac-personnel-admin-center": {
+    title: "PAC (Personnel Admin Center)",
+    intro: "PAC-specific resources for personnel administration centers supporting commands and units.",
+  },
+  "ii-i-staff-administration": {
+    title: "I&I Staff Administration",
+    intro: "Inspector-Instructor staff administration resources for supporting reserve units.",
+  },
+};
+
+/** Set of section keys that are only accessible by administrators */
+export const ADMIN_ONLY_SECTIONS = new Set([
+  "s1-g1-administration",
+  "pac-personnel-admin-center",
+  "ii-i-staff-administration",
+]);
