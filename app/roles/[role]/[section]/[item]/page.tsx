@@ -64,6 +64,7 @@ import { CommandSponsorshipContent } from "../../../../../components/CommandSpon
 import { CheckInProceduresContent } from "../../../../../components/CheckInProceduresContent";
 import { SponsorshipProgramContent } from "../../../../../components/SponsorshipProgramContent";
 import { InitialBAHBASVerificationContent } from "../../../../../components/InitialBAHBASVerificationContent";
+import { RecordsReviewContent } from "../../../../../components/RecordsReviewContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1194,6 +1195,17 @@ const INITIAL_BAH_BAS_DATA = {
   ],
 };
 
+const RECORDS_REVIEW_DATA = {
+  references: [
+    { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "milConnect", url: "https://milconnect.dmdc.osd.mil/", isQuickLink: true },
+    { title: "OMPF Viewer (MOL)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "MCO 1070.1 (Individual Records)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
+    { title: "BCNR (DD Form 149)", url: "https://www.secnav.navy.mil/mra/bcnr/Pages/default.aspx", isQuickLink: false },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -1292,6 +1304,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "check-in-procedures": <CheckInProceduresContent data={CHECK_IN_DATA} />,
     "sponsorship-programs": <SponsorshipProgramContent data={SPONSORSHIP_DATA} />,
     "initial-bah-bas-verification": <InitialBAHBASVerificationContent data={INITIAL_BAH_BAS_DATA} />,
+    "records-review": <RecordsReviewContent data={RECORDS_REVIEW_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
