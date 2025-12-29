@@ -61,6 +61,7 @@ import { EFMPContent } from "../../../../../components/EFMPContent";
 import { EmergencyContactUpdatesContent } from "../../../../../components/EmergencyContactUpdatesContent";
 import { DependentIDCardUpdatesContent } from "../../../../../components/DependentIDCardUpdatesContent";
 import { CommandSponsorshipContent } from "../../../../../components/CommandSponsorshipContent";
+import { CheckInProceduresContent } from "../../../../../components/CheckInProceduresContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1158,6 +1159,17 @@ const COMMAND_SPONSORSHIP_DATA = {
   ],
 };
 
+// Personnel Administration Data
+const CHECK_IN_DATA = {
+  references: [
+    { title: "MCO 1000.6 (Assignment, Classification, Travel)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "MARADMIN Check-In Procedures", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "IPAC Locator", url: "https://www.manpower.usmc.mil/webcenter/portal/MISSA", isQuickLink: true },
+    { title: "MOL (Marine Online)", url: "https://mol.tfs.usmc.mil/", isQuickLink: false },
+    { title: "TRICARE Regional Contacts", url: "https://www.tricare.mil/ContactUs", isQuickLink: false },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -1252,6 +1264,8 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "emergency-contact-updates": <EmergencyContactUpdatesContent data={EMERGENCY_CONTACT_DATA} />,
     "dependent-id-card-updates": <DependentIDCardUpdatesContent data={ID_CARD_DATA} />,
     "command-sponsorship-oconus": <CommandSponsorshipContent data={COMMAND_SPONSORSHIP_DATA} />,
+    // Personnel Administration
+    "check-in-procedures": <CheckInProceduresContent data={CHECK_IN_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -1344,11 +1358,30 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "dependent-id-card-updates",
     "command-sponsorship-oconus",
   ];
+  const personnelSection = "personnel-administration";
+  const personnelSlugs = [
+    "check-in-procedures",
+    "sponsorship-programs",
+    "initial-bah-bas-verification",
+    "records-review",
+    "security-clearance-transfer",
+    "checkout-procedures",
+    "final-pay-settlement",
+    "records-transfer",
+    "leave-settlement",
+    "ompf-management",
+    "page-11-entries",
+    "srb-corrections",
+    "awards-decorations",
+    "medical-records",
+    "training-jackets",
+  ];
   const params: { role: Role; section: string; item: string }[] = [];
   for (const role of roles) {
     for (const item of payAllowancesSlugs) params.push({ role, section: payAllowancesSection, item });
     for (const item of travelSlugs) params.push({ role, section: travelSection, item });
     for (const item of dependencySlugs) params.push({ role, section: dependencySection, item });
+    for (const item of personnelSlugs) params.push({ role, section: personnelSection, item });
   }
   return params;
 }
