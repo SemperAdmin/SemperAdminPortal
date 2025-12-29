@@ -62,6 +62,7 @@ import { EmergencyContactUpdatesContent } from "../../../../../components/Emerge
 import { DependentIDCardUpdatesContent } from "../../../../../components/DependentIDCardUpdatesContent";
 import { CommandSponsorshipContent } from "../../../../../components/CommandSponsorshipContent";
 import { CheckInProceduresContent } from "../../../../../components/CheckInProceduresContent";
+import { SponsorshipProgramContent } from "../../../../../components/SponsorshipProgramContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1170,6 +1171,16 @@ const CHECK_IN_DATA = {
   ],
 };
 
+const SPONSORSHIP_DATA = {
+  references: [
+    { title: "MCO 1320.11 (Sponsorship Program)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "NAVMC 11382 (Sponsor Checklist)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "Unit Sponsorship Training (MarineNet)", url: "https://www.marinenet.usmc.mil/", isQuickLink: true },
+    { title: "IPAC Locator", url: "https://www.manpower.usmc.mil/webcenter/portal/MISSA", isQuickLink: false },
+    { title: "MOL (Marine Online)", url: "https://mol.tfs.usmc.mil/", isQuickLink: false },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -1266,6 +1277,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "command-sponsorship-oconus": <CommandSponsorshipContent data={COMMAND_SPONSORSHIP_DATA} />,
     // Personnel Administration
     "check-in-procedures": <CheckInProceduresContent data={CHECK_IN_DATA} />,
+    "sponsorship-programs": <SponsorshipProgramContent data={SPONSORSHIP_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
