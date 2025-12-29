@@ -65,6 +65,7 @@ import { CheckInProceduresContent } from "../../../../../components/CheckInProce
 import { SponsorshipProgramContent } from "../../../../../components/SponsorshipProgramContent";
 import { InitialBAHBASVerificationContent } from "../../../../../components/InitialBAHBASVerificationContent";
 import { RecordsReviewContent } from "../../../../../components/RecordsReviewContent";
+import { SecurityClearanceTransferContent } from "../../../../../components/SecurityClearanceTransferContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1206,6 +1207,17 @@ const RECORDS_REVIEW_DATA = {
   ],
 };
 
+const SECURITY_CLEARANCE_DATA = {
+  references: [
+    { title: "DCSA Personnel Vetting", url: "https://www.dcsa.mil/Personnel-Vetting/", isQuickLink: true },
+    { title: "Unit Security Manager", url: "#", isQuickLink: true },
+    { title: "e-QIP (SF-86 System)", url: "https://www.opm.gov/investigations/e-qip-application/", isQuickLink: true },
+    { title: "DoD 5200.2-R (Personnel Security Program)", url: "https://www.esd.whs.mil/Directives/", isQuickLink: false },
+    { title: "SECNAV M-5510.30 (Personnel Security)", url: "https://www.secnav.navy.mil/doni/", isQuickLink: false },
+    { title: "Executive Order 12968", url: "https://www.archives.gov/federal-register/executive-orders", isQuickLink: false },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -1305,6 +1317,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "sponsorship-programs": <SponsorshipProgramContent data={SPONSORSHIP_DATA} />,
     "initial-bah-bas-verification": <InitialBAHBASVerificationContent data={INITIAL_BAH_BAS_DATA} />,
     "records-review": <RecordsReviewContent data={RECORDS_REVIEW_DATA} />,
+    "security-clearance-transfer": <SecurityClearanceTransferContent data={SECURITY_CLEARANCE_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
