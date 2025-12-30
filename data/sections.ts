@@ -268,6 +268,32 @@ export const SECTIONS: Record<string, Section> = {
       },
     ],
   },
+  "insurance-healthcare": {
+    title: "Insurance & Healthcare",
+    intro: "Insurance and healthcare benefits protect you and your family from financial hardship due to death, injury, or medical expenses. Understanding your coverage options ensures you have adequate protection and can make informed decisions about optional benefits.",
+    groups: [
+      {
+        title: "Life Insurance",
+        items: [
+          { title: "SGLI (Servicemembers' Group Life Insurance)", slug: "sgli", desc: "Low-cost group life insurance up to $500,000" },
+          { title: "FSGLI (Family SGLI)", slug: "fsgli", desc: "Life insurance for spouse and dependent children" },
+          { title: "TSGLI (Traumatic Injury)", slug: "tsgli", desc: "Payment for traumatic injuries resulting in qualifying losses" },
+          { title: "VGLI (Veterans' Group Life Insurance)", slug: "vgli", desc: "Convert SGLI to veteran life insurance after separation" },
+          { title: "Beneficiary Updates", slug: "beneficiary-updates", desc: "Keep your life insurance beneficiaries current" },
+        ],
+      },
+      {
+        title: "Healthcare Benefits",
+        items: [
+          { title: "TRICARE Enrollment", slug: "tricare-enrollment", desc: "Enroll dependents in TRICARE healthcare coverage" },
+          { title: "Healthcare FSA (HCFSA)", slug: "hcfsa", desc: "Pre-tax dollars for eligible medical expenses" },
+          { title: "EFMP Medical Screening", slug: "efmp-medical-screening", desc: "Enroll family members with special needs in EFMP" },
+          { title: "Dental Coverage (FEDVIP)", slug: "dental-coverage-fedvip", desc: "Dental insurance for family members through FEDVIP" },
+          { title: "Vision Coverage", slug: "vision-coverage", desc: "Vision insurance through FEDVIP for eye exams and eyewear" },
+        ],
+      },
+    ],
+  },
   "s1-g1-administration": {
     title: "S-1 / G-1 Administration",
     intro: "S-1 / G-1 (Administration Section) Handles all personnel administration and manpower functions. Manages pay, leave, promotions, awards, and official correspondence. Maintains service records and ensures compliance with personnel policies and reporting requirements. Serves as the command's administrative hub and liaison with higher headquarters for manpower actions.",

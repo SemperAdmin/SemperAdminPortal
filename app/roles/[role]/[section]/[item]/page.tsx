@@ -109,6 +109,18 @@ import { ReintegrationProcessingContent } from "../../../../../components/Reinte
 import { PayEntitlementVerificationContent } from "../../../../../components/PayEntitlementVerificationContent";
 import { LeaveAccrualReviewContent } from "../../../../../components/LeaveAccrualReviewContent";
 import { CRSCContent } from "../../../../../components/CRSCContent";
+// Insurance & Healthcare - Life Insurance
+import { SGLIContent } from "../../../../../components/SGLIContent";
+import { FSGLIContent } from "../../../../../components/FSGLIContent";
+import { TSGLIContent } from "../../../../../components/TSGLIContent";
+import { VGLIContent } from "../../../../../components/VGLIContent";
+import { BeneficiaryUpdatesContent } from "../../../../../components/BeneficiaryUpdatesContent";
+// Insurance & Healthcare - Healthcare Benefits
+import { TRICAREEnrollmentContent } from "../../../../../components/TRICAREEnrollmentContent";
+import { HCFSAContent } from "../../../../../components/HCFSAContent";
+import { EFMPMedicalScreeningContent } from "../../../../../components/EFMPMedicalScreeningContent";
+import { DentalCoverageFEDVIPContent } from "../../../../../components/DentalCoverageFEDVIPContent";
+import { VisionCoverageContent } from "../../../../../components/VisionCoverageContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1672,6 +1684,108 @@ const CRSC_DATA = {
   ],
 };
 
+// Insurance & Healthcare - Life Insurance DATA
+const SGLI_DATA = {
+  references: [
+    { title: "VA SGLI Website", url: "https://www.va.gov/life-insurance/options-eligibility/sgli/", isQuickLink: true },
+    { title: "milConnect SOES", url: "https://milconnect.dmdc.osd.mil/", isQuickLink: true },
+    { title: "SGLI Handbook", url: "https://www.benefits.va.gov/INSURANCE/resources-forms.asp", isQuickLink: true },
+    { title: "38 U.S.C. Chapter 19 (Life Insurance)", url: "https://www.law.cornell.edu/uscode/text/38/chapter-19", isQuickLink: false },
+    { title: "VA Form SGLV 8286 (Beneficiary Designation)", url: "https://www.va.gov/vaforms/", isQuickLink: false },
+  ],
+};
+
+const FSGLI_DATA = {
+  references: [
+    { title: "VA FSGLI Website", url: "https://www.va.gov/life-insurance/options-eligibility/fsgli/", isQuickLink: true },
+    { title: "milConnect SOES", url: "https://milconnect.dmdc.osd.mil/", isQuickLink: true },
+    { title: "FSGLI Handbook", url: "https://www.benefits.va.gov/INSURANCE/resources-forms.asp", isQuickLink: true },
+    { title: "38 U.S.C. § 1967 (FSGLI)", url: "https://www.law.cornell.edu/uscode/text/38/1967", isQuickLink: false },
+    { title: "VA Form SGLV 8286A", url: "https://www.va.gov/vaforms/", isQuickLink: false },
+  ],
+};
+
+const TSGLI_DATA = {
+  references: [
+    { title: "VA TSGLI Website", url: "https://www.va.gov/life-insurance/options-eligibility/tsgli/", isQuickLink: true },
+    { title: "TSGLI Claim Form (SGLV 8600)", url: "https://www.benefits.va.gov/INSURANCE/forms/SGLV_8600_ed2019-11.pdf", isQuickLink: true },
+    { title: "TSGLI Procedures Guide", url: "https://www.benefits.va.gov/INSURANCE/tsgli_schedule_702.asp", isQuickLink: true },
+    { title: "38 U.S.C. § 1980A (TSGLI)", url: "https://www.law.cornell.edu/uscode/text/38/1980A", isQuickLink: false },
+    { title: "Branch TSGLI Office", url: "#", isQuickLink: false },
+  ],
+};
+
+const VGLI_DATA = {
+  references: [
+    { title: "VA VGLI Website", url: "https://www.va.gov/life-insurance/options-eligibility/vgli/", isQuickLink: true },
+    { title: "VGLI Online Application", url: "https://www.benefits.va.gov/INSURANCE/vgli.asp", isQuickLink: true },
+    { title: "VGLI Premium Calculator", url: "https://www.benefits.va.gov/INSURANCE/vgli_rates_702.asp", isQuickLink: true },
+    { title: "38 U.S.C. § 1977 (VGLI)", url: "https://www.law.cornell.edu/uscode/text/38/1977", isQuickLink: false },
+    { title: "SGLV 8714 (VGLI Application)", url: "https://www.va.gov/vaforms/", isQuickLink: false },
+  ],
+};
+
+const BENEFICIARY_UPDATES_DATA = {
+  references: [
+    { title: "milConnect SOES", url: "https://milconnect.dmdc.osd.mil/", isQuickLink: true },
+    { title: "VA Form SGLV 8286", url: "https://www.va.gov/vaforms/", isQuickLink: true },
+    { title: "VA SGLI Website", url: "https://www.va.gov/life-insurance/options-eligibility/sgli/", isQuickLink: true },
+    { title: "38 U.S.C. § 1970 (Beneficiary Designation)", url: "https://www.law.cornell.edu/uscode/text/38/1970", isQuickLink: false },
+    { title: "Estate Planning Resources", url: "#", isQuickLink: false },
+  ],
+};
+
+// Insurance & Healthcare - Healthcare Benefits DATA
+const TRICARE_ENROLLMENT_DATA = {
+  references: [
+    { title: "TRICARE Website", url: "https://www.tricare.mil/", isQuickLink: true },
+    { title: "milConnect", url: "https://milconnect.dmdc.osd.mil/", isQuickLink: true },
+    { title: "DEERS Information", url: "https://www.tricare.mil/DEERS", isQuickLink: true },
+    { title: "10 U.S.C. Chapter 55 (Medical and Dental Care)", url: "https://www.law.cornell.edu/uscode/text/10/subtitle-A/part-II/chapter-55", isQuickLink: false },
+    { title: "TRICARE Regional Contractors", url: "https://www.tricare.mil/About/Regions", isQuickLink: false },
+  ],
+};
+
+const HCFSA_DATA = {
+  references: [
+    { title: "FSAFEDS Website", url: "https://www.fsafeds.com/", isQuickLink: true },
+    { title: "OPM FSA Information", url: "https://www.opm.gov/healthcare-insurance/flexible-spending-accounts/", isQuickLink: true },
+    { title: "IRS Publication 502", url: "https://www.irs.gov/publications/p502", isQuickLink: true },
+    { title: "26 U.S.C. § 125 (Cafeteria Plans)", url: "https://www.law.cornell.edu/uscode/text/26/125", isQuickLink: false },
+    { title: "Eligible Expense List", url: "https://www.fsafeds.com/explore/hcfsa/expenses", isQuickLink: false },
+  ],
+};
+
+const EFMP_MEDICAL_SCREENING_DATA = {
+  references: [
+    { title: "EFMP Website", url: "https://www.militaryonesource.mil/family-relationships/special-needs/", isQuickLink: true },
+    { title: "DD Form 2792", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd2792.pdf", isQuickLink: true },
+    { title: "DD Form 2792-1", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd2792-1.pdf", isQuickLink: true },
+    { title: "MCO 1754.4B (EFMP)", url: "#", isQuickLink: false },
+    { title: "DoDI 1315.19 (EFMP)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/131519p.pdf", isQuickLink: false },
+  ],
+};
+
+const DENTAL_COVERAGE_FEDVIP_DATA = {
+  references: [
+    { title: "BENEFEDS Website", url: "https://www.benefeds.com/", isQuickLink: true },
+    { title: "OPM FEDVIP Information", url: "https://www.opm.gov/healthcare-insurance/dental-vision/", isQuickLink: true },
+    { title: "FEDVIP Plan Comparison", url: "https://www.benefeds.com/education/dental", isQuickLink: true },
+    { title: "5 U.S.C. Chapter 89A (FEDVIP)", url: "https://www.law.cornell.edu/uscode/text/5/chapter-89A", isQuickLink: false },
+    { title: "TRICARE Retiree Dental Program", url: "https://www.tricare.mil/CoveredServices/Dental/TDP", isQuickLink: false },
+  ],
+};
+
+const VISION_COVERAGE_DATA = {
+  references: [
+    { title: "BENEFEDS Website", url: "https://www.benefeds.com/", isQuickLink: true },
+    { title: "OPM FEDVIP Vision Information", url: "https://www.opm.gov/healthcare-insurance/dental-vision/", isQuickLink: true },
+    { title: "FEDVIP Vision Plan Comparison", url: "https://www.benefeds.com/education/vision", isQuickLink: true },
+    { title: "5 U.S.C. Chapter 89A (FEDVIP)", url: "https://www.law.cornell.edu/uscode/text/5/chapter-89A", isQuickLink: false },
+    { title: "Provider Network Locators", url: "#", isQuickLink: false },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -1713,6 +1827,10 @@ function toTitle(slug: string) {
     .replace(/\bMol\b/g, "MOL")
     .replace(/\bTsgli\b/g, "TSGLI")
     .replace(/\bFsgli\b/g, "FSGLI")
+    .replace(/\bVgli\b/g, "VGLI")
+    .replace(/\bTricare\b/g, "TRICARE")
+    .replace(/\bHcfsa\b/g, "HCFSA")
+    .replace(/\bFedvip\b/g, "FEDVIP")
     .replace(/Foreign Language Proficiency Pay/i, "Foreign Language Proficiency Bonus");
 }
 
@@ -1842,6 +1960,18 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "pay-entitlement-verification": <PayEntitlementVerificationContent data={PAY_ENTITLEMENT_VERIFICATION_DATA} />,
     "leave-accrual-review": <LeaveAccrualReviewContent data={LEAVE_ACCRUAL_REVIEW_DATA} />,
     "crsc": <CRSCContent data={CRSC_DATA} />,
+    // Insurance & Healthcare - Life Insurance
+    "sgli": <SGLIContent data={SGLI_DATA} />,
+    "fsgli": <FSGLIContent data={FSGLI_DATA} />,
+    "tsgli": <TSGLIContent data={TSGLI_DATA} />,
+    "vgli": <VGLIContent data={VGLI_DATA} />,
+    "beneficiary-updates": <BeneficiaryUpdatesContent data={BENEFICIARY_UPDATES_DATA} />,
+    // Insurance & Healthcare - Healthcare Benefits
+    "tricare-enrollment": <TRICAREEnrollmentContent data={TRICARE_ENROLLMENT_DATA} />,
+    "hcfsa": <HCFSAContent data={HCFSA_DATA} />,
+    "efmp-medical-screening": <EFMPMedicalScreeningContent data={EFMP_MEDICAL_SCREENING_DATA} />,
+    "dental-coverage-fedvip": <DentalCoverageFEDVIPContent data={DENTAL_COVERAGE_FEDVIP_DATA} />,
+    "vision-coverage": <VisionCoverageContent data={VISION_COVERAGE_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -1992,6 +2122,21 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "leave-accrual-review",
     "crsc",
   ];
+  const insuranceHealthcareSection = "insurance-healthcare";
+  const insuranceHealthcareSlugs = [
+    // Life Insurance
+    "sgli",
+    "fsgli",
+    "tsgli",
+    "vgli",
+    "beneficiary-updates",
+    // Healthcare Benefits
+    "tricare-enrollment",
+    "hcfsa",
+    "efmp-medical-screening",
+    "dental-coverage-fedvip",
+    "vision-coverage",
+  ];
   const params: { role: Role; section: string; item: string }[] = [];
   for (const role of roles) {
     for (const item of payAllowancesSlugs) params.push({ role, section: payAllowancesSection, item });
@@ -2000,6 +2145,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     for (const item of personnelSlugs) params.push({ role, section: personnelSection, item });
     for (const item of promotionsSlugs) params.push({ role, section: promotionsSection, item });
     for (const item of deploymentSlugs) params.push({ role, section: deploymentSection, item });
+    for (const item of insuranceHealthcareSlugs) params.push({ role, section: insuranceHealthcareSection, item });
   }
   return params;
 }
