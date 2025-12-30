@@ -294,6 +294,41 @@ export const SECTIONS: Record<string, Section> = {
       },
     ],
   },
+  "education-training": {
+    title: "Education & Training",
+    intro: "Education and training opportunities enhance your military effectiveness and prepare you for career advancement. The Marine Corps invests in your professional development through military schools, tuition assistance, and credentialing programs. Taking advantage of these programs improves your promotion competitiveness, expands your skills, and prepares you for post-military success.",
+    groups: [
+      {
+        title: "Military Education",
+        items: [
+          { title: "Professional Military Education (PME)", slug: "pme", desc: "Complete required PME for promotion eligibility" },
+          { title: "Resident and Non-Resident Schools", slug: "resident-non-resident-schools", desc: "Military education delivery formats and school options" },
+          { title: "Command and Staff College", slug: "command-staff-college", desc: "Intermediate-level PME for field grade officers and senior enlisted" },
+          { title: "War College", slug: "war-college", desc: "Senior-level PME for strategic leadership development" },
+          { title: "MOS-Specific Training", slug: "mos-specific-training", desc: "Technical proficiency training for your occupational specialty" },
+        ],
+      },
+      {
+        title: "Civilian Education",
+        items: [
+          { title: "Tuition Assistance (TA)", slug: "tuition-assistance", desc: "Fund college courses while on active duty" },
+          { title: "GI Bill Benefits", slug: "gi-bill-benefits", desc: "Post-9/11 and Montgomery GI Bill education benefits" },
+          { title: "Post-9/11 GI Bill Transfer", slug: "gi-bill-transfer", desc: "Transfer education benefits to spouse or children" },
+          { title: "Joint Services Transcript (JST)", slug: "jst", desc: "Convert military training to college credit" },
+          { title: "College Credit for Military Training", slug: "college-credit-military", desc: "Maximize credit through CLEP, DSST, and portfolio assessment" },
+        ],
+      },
+      {
+        title: "Professional Development",
+        items: [
+          { title: "Credentialing Programs", slug: "credentialing-programs", desc: "Obtain civilian certifications through Marine Corps COOL" },
+          { title: "Certification Reimbursement", slug: "certification-reimbursement", desc: "Get reimbursed for professional certification costs" },
+          { title: "Language Training (DLPT)", slug: "language-training-dlpt", desc: "Develop language proficiency and earn FLPP" },
+          { title: "Technical Certifications", slug: "technical-certifications", desc: "Industry certifications in IT, aviation, automotive, and more" },
+        ],
+      },
+    ],
+  },
   "s1-g1-administration": {
     title: "S-1 / G-1 Administration",
     intro: "S-1 / G-1 (Administration Section) Handles all personnel administration and manpower functions. Manages pay, leave, promotions, awards, and official correspondence. Maintains service records and ensures compliance with personnel policies and reporting requirements. Serves as the command's administrative hub and liaison with higher headquarters for manpower actions.",

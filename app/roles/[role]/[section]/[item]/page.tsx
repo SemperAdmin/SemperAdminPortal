@@ -121,6 +121,23 @@ import { HCFSAContent } from "../../../../../components/HCFSAContent";
 import { EFMPMedicalScreeningContent } from "../../../../../components/EFMPMedicalScreeningContent";
 import { DentalCoverageFEDVIPContent } from "../../../../../components/DentalCoverageFEDVIPContent";
 import { VisionCoverageContent } from "../../../../../components/VisionCoverageContent";
+// Education & Training - Military Education
+import { PMEContent } from "../../../../../components/PMEContent";
+import { ResidentNonResidentSchoolsContent } from "../../../../../components/ResidentNonResidentSchoolsContent";
+import { CommandStaffCollegeContent } from "../../../../../components/CommandStaffCollegeContent";
+import { WarCollegeContent } from "../../../../../components/WarCollegeContent";
+import { MOSSpecificTrainingContent } from "../../../../../components/MOSSpecificTrainingContent";
+// Education & Training - Civilian Education
+import { TuitionAssistanceContent } from "../../../../../components/TuitionAssistanceContent";
+import { GIBillBenefitsContent } from "../../../../../components/GIBillBenefitsContent";
+import { GIBillTransferContent } from "../../../../../components/GIBillTransferContent";
+import { JSTContent } from "../../../../../components/JSTContent";
+import { CollegeCreditMilitaryContent } from "../../../../../components/CollegeCreditMilitaryContent";
+// Education & Training - Professional Development
+import { CredentialingProgramsContent } from "../../../../../components/CredentialingProgramsContent";
+import { CertificationReimbursementContent } from "../../../../../components/CertificationReimbursementContent";
+import { LanguageTrainingDLPTContent } from "../../../../../components/LanguageTrainingDLPTContent";
+import { TechnicalCertificationsContent } from "../../../../../components/TechnicalCertificationsContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1786,6 +1803,136 @@ const VISION_COVERAGE_DATA = {
   ],
 };
 
+// Education & Training - Military Education
+const PME_DATA = {
+  references: [
+    { title: "MCO 1553.4B", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MARADMIN 627/24 - SNCO Leadership School", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "MARADMIN 630/24 - SNCO LS Implementation", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "Marine Corps University", url: "https://www.usmcu.edu/", isQuickLink: true },
+    { title: "MarineNet PME Courses", url: "https://www.marinenet.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const RESIDENT_NON_RESIDENT_SCHOOLS_DATA = {
+  references: [
+    { title: "Marine Corps University", url: "https://www.usmcu.edu/", isQuickLink: true },
+    { title: "MarineNet", url: "https://www.marinenet.usmc.mil/", isQuickLink: true },
+    { title: "MCO 1553.4B", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "Joint Chiefs of Staff PME Policy", url: "https://www.jcs.mil/", isQuickLink: false },
+  ],
+};
+
+const COMMAND_STAFF_COLLEGE_DATA = {
+  references: [
+    { title: "Marine Corps Command and Staff College", url: "https://www.usmcu.edu/CSC/", isQuickLink: true },
+    { title: "MCO 1553.4B", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "Joint PME Phase II", url: "https://www.jcs.mil/Doctrine/Education/", isQuickLink: false },
+    { title: "SNCO Commandant's Board Selection", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const WAR_COLLEGE_DATA = {
+  references: [
+    { title: "Marine Corps War College", url: "https://www.usmcu.edu/MCWAR/", isQuickLink: true },
+    { title: "National Defense University", url: "https://www.ndu.edu/", isQuickLink: true },
+    { title: "Army War College", url: "https://www.armywarcollege.edu/", isQuickLink: false },
+    { title: "Naval War College", url: "https://usnwc.edu/", isQuickLink: false },
+    { title: "Air War College", url: "https://www.airuniversity.af.edu/AWC/", isQuickLink: false },
+  ],
+};
+
+const MOS_SPECIFIC_TRAINING_DATA = {
+  references: [
+    { title: "MCO 1510.118A", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "TECOM Training Information", url: "https://www.trngcmd.marines.mil/", isQuickLink: true },
+    { title: "JEPES Marine Corps Order", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MOS Manual", url: "https://www.marines.mil/", isQuickLink: false },
+  ],
+};
+
+// Education & Training - Civilian Education
+const TUITION_ASSISTANCE_DATA = {
+  references: [
+    { title: "DoD Tuition Assistance Policy", url: "https://www.dodmou.com/", isQuickLink: true },
+    { title: "Marine Corps TA Request (via MOL)", url: "https://www.mol.usmc.mil/", isQuickLink: true },
+    { title: "MCO 1560.25A", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "JEPES Marine Corps Order", url: "https://www.marines.mil/", isQuickLink: false },
+  ],
+};
+
+const GI_BILL_BENEFITS_DATA = {
+  references: [
+    { title: "VA Education Benefits", url: "https://www.va.gov/education/", isQuickLink: true },
+    { title: "GI Bill Comparison Tool", url: "https://www.va.gov/gi-bill-comparison-tool/", isQuickLink: true },
+    { title: "eBenefits Portal", url: "https://www.ebenefits.va.gov/", isQuickLink: true },
+    { title: "38 U.S.C. Chapter 33", url: "https://www.law.cornell.edu/uscode/text/38/chapter-33", isQuickLink: false },
+    { title: "38 U.S.C. Chapter 30", url: "https://www.law.cornell.edu/uscode/text/38/chapter-30", isQuickLink: false },
+  ],
+};
+
+const GI_BILL_TRANSFER_DATA = {
+  references: [
+    { title: "milConnect TEB", url: "https://milconnect.dmdc.osd.mil/", isQuickLink: true },
+    { title: "VA Transfer of Benefits", url: "https://www.va.gov/education/transfer-post-9-11-gi-bill-benefits/", isQuickLink: true },
+    { title: "DoD TEB Policy", url: "https://www.defense.gov/", isQuickLink: false },
+    { title: "38 U.S.C. § 3319", url: "https://www.law.cornell.edu/uscode/text/38/3319", isQuickLink: false },
+  ],
+};
+
+const JST_DATA = {
+  references: [
+    { title: "Joint Services Transcript", url: "https://jst.doded.mil/", isQuickLink: true },
+    { title: "ACE Credit Recommendations", url: "https://www.acenet.edu/Programs-Services/Pages/Credit-Transcripts/Military-Guide.aspx", isQuickLink: true },
+    { title: "DoD Voluntary Education", url: "https://www.dodmou.com/", isQuickLink: false },
+  ],
+};
+
+const COLLEGE_CREDIT_MILITARY_DATA = {
+  references: [
+    { title: "CLEP Official Site", url: "https://clep.collegeboard.org/", isQuickLink: true },
+    { title: "DSST Exams", url: "https://getcollegecredit.com/", isQuickLink: true },
+    { title: "Joint Services Transcript", url: "https://jst.doded.mil/", isQuickLink: true },
+    { title: "CAEL Prior Learning Assessment", url: "https://www.cael.org/", isQuickLink: false },
+  ],
+};
+
+// Education & Training - Professional Development
+const CREDENTIALING_PROGRAMS_DATA = {
+  references: [
+    { title: "Marine Corps COOL", url: "https://www.cool.osd.mil/usmc/", isQuickLink: true },
+    { title: "DoD COOL Portal", url: "https://www.cool.osd.mil/", isQuickLink: true },
+    { title: "Credential Finder", url: "https://www.cool.osd.mil/usmc/search/CREDENTIAL_SEARCH.htm", isQuickLink: false },
+  ],
+};
+
+const CERTIFICATION_REIMBURSEMENT_DATA = {
+  references: [
+    { title: "Marine Corps COOL", url: "https://www.cool.osd.mil/usmc/", isQuickLink: true },
+    { title: "COOL Funding Request", url: "https://www.cool.osd.mil/usmc/", isQuickLink: true },
+    { title: "VA Certification Benefits", url: "https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/test-fees/", isQuickLink: false },
+  ],
+};
+
+const LANGUAGE_TRAINING_DLPT_DATA = {
+  references: [
+    { title: "Defense Language Institute", url: "https://www.dliflc.edu/", isQuickLink: true },
+    { title: "FLPP Policy", url: "https://www.dfas.mil/", isQuickLink: true },
+    { title: "DLPT Information", url: "https://www.dliflc.edu/dlpt-guides/", isQuickLink: true },
+    { title: "DoD Foreign Language Policy", url: "https://www.esd.whs.mil/", isQuickLink: false },
+  ],
+};
+
+const TECHNICAL_CERTIFICATIONS_DATA = {
+  references: [
+    { title: "Marine Corps COOL", url: "https://www.cool.osd.mil/usmc/", isQuickLink: true },
+    { title: "DoD 8570/8140 Certification Requirements", url: "https://public.cyber.mil/cw/cwmp/dod-approved-8570-baseline-certifications/", isQuickLink: true },
+    { title: "CompTIA Certifications", url: "https://www.comptia.org/certifications", isQuickLink: false },
+    { title: "FAA Certification", url: "https://www.faa.gov/mechanics/become", isQuickLink: false },
+    { title: "ASE Certification", url: "https://www.ase.com/", isQuickLink: false },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -1831,7 +1978,18 @@ function toTitle(slug: string) {
     .replace(/\bTricare\b/g, "TRICARE")
     .replace(/\bHcfsa\b/g, "HCFSA")
     .replace(/\bFedvip\b/g, "FEDVIP")
-    .replace(/Foreign Language Proficiency Pay/i, "Foreign Language Proficiency Bonus");
+    .replace(/Foreign Language Proficiency Pay/i, "Foreign Language Proficiency Bonus")
+    .replace(/\bPme\b/g, "PME")
+    .replace(/\bCsc\b/g, "CSC")
+    .replace(/\bDlpt\b/g, "DLPT")
+    .replace(/\bFlpp\b/g, "FLPP")
+    .replace(/\bCool\b/g, "COOL")
+    .replace(/\bJst\b/g, "JST")
+    .replace(/\bClep\b/g, "CLEP")
+    .replace(/\bDsst\b/g, "DSST")
+    .replace(/\bPla\b/g, "PLA")
+    .replace(/\bTa\b/g, "TA")
+    .replace(/\bGi\b/g, "GI");
 }
 
 export default async function RoleItemPage({ params }: { params: Promise<Params> }) {
@@ -1972,6 +2130,23 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "efmp-medical-screening": <EFMPMedicalScreeningContent data={EFMP_MEDICAL_SCREENING_DATA} />,
     "dental-coverage-fedvip": <DentalCoverageFEDVIPContent data={DENTAL_COVERAGE_FEDVIP_DATA} />,
     "vision-coverage": <VisionCoverageContent data={VISION_COVERAGE_DATA} />,
+    // Education & Training - Military Education
+    "pme": <PMEContent data={PME_DATA} />,
+    "resident-non-resident-schools": <ResidentNonResidentSchoolsContent data={RESIDENT_NON_RESIDENT_SCHOOLS_DATA} />,
+    "command-staff-college": <CommandStaffCollegeContent data={COMMAND_STAFF_COLLEGE_DATA} />,
+    "war-college": <WarCollegeContent data={WAR_COLLEGE_DATA} />,
+    "mos-specific-training": <MOSSpecificTrainingContent data={MOS_SPECIFIC_TRAINING_DATA} />,
+    // Education & Training - Civilian Education
+    "tuition-assistance": <TuitionAssistanceContent data={TUITION_ASSISTANCE_DATA} />,
+    "gi-bill-benefits": <GIBillBenefitsContent data={GI_BILL_BENEFITS_DATA} />,
+    "gi-bill-transfer": <GIBillTransferContent data={GI_BILL_TRANSFER_DATA} />,
+    "jst": <JSTContent data={JST_DATA} />,
+    "college-credit-military": <CollegeCreditMilitaryContent data={COLLEGE_CREDIT_MILITARY_DATA} />,
+    // Education & Training - Professional Development
+    "credentialing-programs": <CredentialingProgramsContent data={CREDENTIALING_PROGRAMS_DATA} />,
+    "certification-reimbursement": <CertificationReimbursementContent data={CERTIFICATION_REIMBURSEMENT_DATA} />,
+    "language-training-dlpt": <LanguageTrainingDLPTContent data={LANGUAGE_TRAINING_DLPT_DATA} />,
+    "technical-certifications": <TechnicalCertificationsContent data={TECHNICAL_CERTIFICATIONS_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -2137,6 +2312,26 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "dental-coverage-fedvip",
     "vision-coverage",
   ];
+  const educationTrainingSection = "education-training";
+  const educationTrainingSlugs = [
+    // Military Education
+    "pme",
+    "resident-non-resident-schools",
+    "command-staff-college",
+    "war-college",
+    "mos-specific-training",
+    // Civilian Education
+    "tuition-assistance",
+    "gi-bill-benefits",
+    "gi-bill-transfer",
+    "jst",
+    "college-credit-military",
+    // Professional Development
+    "credentialing-programs",
+    "certification-reimbursement",
+    "language-training-dlpt",
+    "technical-certifications",
+  ];
   const params: { role: Role; section: string; item: string }[] = [];
   for (const role of roles) {
     for (const item of payAllowancesSlugs) params.push({ role, section: payAllowancesSection, item });
@@ -2146,6 +2341,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     for (const item of promotionsSlugs) params.push({ role, section: promotionsSection, item });
     for (const item of deploymentSlugs) params.push({ role, section: deploymentSection, item });
     for (const item of insuranceHealthcareSlugs) params.push({ role, section: insuranceHealthcareSection, item });
+    for (const item of educationTrainingSlugs) params.push({ role, section: educationTrainingSection, item });
   }
   return params;
 }
