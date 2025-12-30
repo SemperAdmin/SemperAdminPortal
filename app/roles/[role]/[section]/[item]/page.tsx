@@ -91,6 +91,7 @@ import { DateOfRankCorrectionsContent } from "../../../../../components/DateOfRa
 import { MOSReclassificationContent } from "../../../../../components/MOSReclassificationContent";
 import { AdditionalMOSAssignmentContent } from "../../../../../components/AdditionalMOSAssignmentContent";
 import { PrimaryMOSChangesContent } from "../../../../../components/PrimaryMOSChangesContent";
+import { EPMERequirementsContent } from "../../../../../components/EPMERequirementsContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1504,6 +1505,18 @@ const PRIMARY_MOS_CHANGES_DATA = {
   ],
 };
 
+const EPME_DATA = {
+  references: [
+    { title: "CEME Website", url: "https://www.usmcu.edu/CEME/", isQuickLink: true },
+    { title: "MarineNet", url: "https://www.marinenet.usmc.mil/", isQuickLink: true },
+    { title: "JKOdirect (Joint PME)", url: "https://jkodirect.jten.mil/", isQuickLink: true },
+    { title: "MCO 1553.4B (Professional Military Education)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899450/mco-15534b/", isQuickLink: false },
+    { title: "MARADMIN 627/24 (SNCO Leadership School)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
+    { title: "MARADMIN 630/24 (EPME Requirements)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
+    { title: "ALMAR 018/23 (Professional Reading Program)", url: "https://www.marines.mil/News/Messages/ALMARS/", isQuickLink: false },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -1527,6 +1540,7 @@ function toTitle(slug: string) {
     .replace(/\bBah\b/g, "BAH")
     .replace(/\bBas\b/g, "BAS")
     .replace(/\bJepes\b/g, "JEPES")
+    .replace(/\bEpme\b/g, "EPME")
     .replace(/\bTig\b/g, "TIG")
     .replace(/\bMos\b/g, "MOS")
     .replace(/\bPmos\b/g, "PMOS")
@@ -1641,6 +1655,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "mos-reclassification": <MOSReclassificationContent data={MOS_RECLASSIFICATION_DATA} />,
     "additional-mos-assignment": <AdditionalMOSAssignmentContent data={ADDITIONAL_MOS_ASSIGNMENT_DATA} />,
     "primary-mos-changes": <PrimaryMOSChangesContent data={PRIMARY_MOS_CHANGES_DATA} />,
+    "epme-requirements": <EPMERequirementsContent data={EPME_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -1768,6 +1783,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "mos-reclassification",
     "additional-mos-assignment",
     "primary-mos-changes",
+    "epme-requirements",
   ];
   const params: { role: Role; section: string; item: string }[] = [];
   for (const role of roles) {
