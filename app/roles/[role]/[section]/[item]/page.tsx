@@ -183,6 +183,14 @@ import { LegalAssistanceContent } from "../../../../../components/LegalAssistanc
 import { VWAPContent } from "../../../../../components/VWAPContent";
 import { MilitaryProtectiveOrdersContent } from "../../../../../components/MilitaryProtectiveOrdersContent";
 import { IGComplaintsContent } from "../../../../../components/IGComplaintsContent";
+// Leaders - Accountability & Discipline
+import { NJPAuthorityLevelsContent } from "../../../../../components/leaders/NJPAuthorityLevelsContent";
+import { NJPRecommendationContent } from "../../../../../components/leaders/NJPRecommendationContent";
+import { UADesertionReportingContent } from "../../../../../components/leaders/UADesertionReportingContent";
+import { ADSEPOverviewContent } from "../../../../../components/leaders/ADSEPOverviewContent";
+import { LegalHoldInvestigationsContent } from "../../../../../components/leaders/LegalHoldInvestigationsContent";
+import { Article31bRightsContent } from "../../../../../components/leaders/Article31bRightsContent";
+import { ProgressiveDisciplineContent } from "../../../../../components/leaders/ProgressiveDisciplineContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -2290,6 +2298,66 @@ const IG_COMPLAINTS_DATA = {
   ],
 };
 
+// ============================================
+// LEADERS - ACCOUNTABILITY & DISCIPLINE
+// ============================================
+
+const NJP_AUTHORITY_LEVELS_DATA = {
+  references: [
+    { title: "MCO 5800.16 Volume 14 - Legal Support and Administration Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/" },
+    { title: "Manual for Courts-Martial, Part V - NJP Procedures", url: "https://jsc.defense.gov/Military-Law/Current-Publications-702-HG/" },
+    { title: "JAGMAN 0111 - NJP Guidance", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf" },
+  ],
+};
+
+const NJP_RECOMMENDATION_DATA = {
+  references: [
+    { title: "MCO 5800.16 Volume 14 - Legal Support and Administration Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/" },
+    { title: "MCO P1070.12K - Individual Records Administration Manual (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899135/mco-p107012k/" },
+  ],
+};
+
+const UA_DESERTION_REPORTING_DATA = {
+  references: [
+    { title: "MCO 1620.3A - Absentee and Deserter Apprehension Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899304/mco-16203a/" },
+    { title: "MCO P5800.16A - Legal Administration Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/" },
+    { title: "MCO 1610.7 - Performance Evaluation System (Chapter 3)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899293/mco-16107/" },
+  ],
+};
+
+const ADSEP_OVERVIEW_DATA = {
+  references: [
+    { title: "MCO P1900.16 - MARCORSEPMAN (Paragraph 6105)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899390/mco-190016g/" },
+    { title: "MCO P1070.12K - Individual Records Administration Manual (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899135/mco-p107012k/" },
+    { title: "DoDI 1332.14 - Enlisted Administrative Separations", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/133214p.pdf" },
+  ],
+};
+
+const LEGAL_HOLD_INVESTIGATIONS_DATA = {
+  references: [
+    { title: "MCO 5800.16 - Legal Support and Administration Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/" },
+    { title: "JAGMAN - Judge Advocate General Manual", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf" },
+  ],
+};
+
+const ARTICLE_31B_RIGHTS_DATA = {
+  references: [
+    { title: "10 U.S.C. 831 - Article 31, UCMJ", url: "https://www.law.cornell.edu/uscode/text/10/831" },
+    { title: "Military Rules of Evidence 305", url: "https://jsc.defense.gov/Military-Law/Current-Publications-702-HG/" },
+    { title: "MCO 5800.16 - Legal Support and Administration Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/" },
+    { title: "HQMC Practice Advisory 21-4 - Article 31 Rights Advisories", url: "https://www.hqmc.marines.mil/sja/" },
+  ],
+};
+
+const PROGRESSIVE_DISCIPLINE_DATA = {
+  references: [
+    { title: "MCO P1070.12K - IRAM (Page 11 Entries)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899135/mco-p107012k/" },
+    { title: "MCO P1900.16 - MARCORSEPMAN (Paragraph 6105)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899390/mco-190016g/" },
+    { title: "JAGMAN Chapter I - EMI and Administrative Measures", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf" },
+    { title: "MCO 5800.16 - Legal Support and Administration Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/" },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -2607,6 +2675,14 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "gtcc-portal": <GenericContent title="GTCC Portal" />,
     // Systems Management - Reserve Systems
     "mrows": <GenericContent title="MROWS" />,
+    // Leaders - Accountability & Discipline
+    "njp-authority-levels": <NJPAuthorityLevelsContent data={NJP_AUTHORITY_LEVELS_DATA} />,
+    "njp-recommendation-documentation": <NJPRecommendationContent data={NJP_RECOMMENDATION_DATA} />,
+    "ua-desertion-reporting": <UADesertionReportingContent data={UA_DESERTION_REPORTING_DATA} />,
+    "adsep-overview": <ADSEPOverviewContent data={ADSEP_OVERVIEW_DATA} />,
+    "legal-hold-investigations": <LegalHoldInvestigationsContent data={LEGAL_HOLD_INVESTIGATIONS_DATA} />,
+    "article-31b-rights": <Article31bRightsContent data={ARTICLE_31B_RIGHTS_DATA} />,
+    "progressive-discipline": <ProgressiveDisciplineContent data={PROGRESSIVE_DISCIPLINE_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
