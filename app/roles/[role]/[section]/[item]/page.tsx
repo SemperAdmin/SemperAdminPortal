@@ -68,6 +68,8 @@ import { RecordsReviewContent } from "../../../../../components/RecordsReviewCon
 import { SecurityClearanceTransferContent } from "../../../../../components/SecurityClearanceTransferContent";
 import { CheckoutProceduresContent } from "../../../../../components/CheckoutProceduresContent";
 import { FinalPaySettlementContent } from "../../../../../components/FinalPaySettlementContent";
+import { RecordsTransferContent } from "../../../../../components/RecordsTransferContent";
+import { LeaveSettlementContent } from "../../../../../components/LeaveSettlementContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1234,11 +1236,33 @@ const CHECKOUT_DATA = {
 const FINAL_PAY_DATA = {
   references: [
     { title: "myPay (DFAS)", url: "https://mypay.dfas.mil/", isQuickLink: true },
-    { title: "DFAS Separations", url: "https://www.dfas.mil/separations", isQuickLink: true },
-    { title: "DFAS Customer Service", url: "https://www.dfas.mil/MilitaryMembers/", isQuickLink: true },
+    { title: "DTS (Travel Vouchers)", url: "https://dtsproweb.defensetravel.osd.mil/", isQuickLink: true },
+    { title: "Unit Finance/Disbursing", url: "#", isQuickLink: true },
+    { title: "JTR (Joint Travel Regulations)", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: false },
     { title: "DoD FMR 7000.14-R Volume 7A", url: "https://comptroller.defense.gov/FMR/", isQuickLink: false },
-    { title: "MCO 1900.16 (Separations Manual)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO 1000.6 (Assignment Systems)", url: "https://www.marines.mil/", isQuickLink: false },
+  ],
+};
+
+const RECORDS_TRANSFER_DATA = {
+  references: [
+    { title: "MOL OMPF Viewer", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "ORMA (Record Corrections)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO 1070.1 (Individual Records)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "BUMEDINST 6150.29 (Medical Records)", url: "https://www.med.navy.mil/", isQuickLink: false },
+  ],
+};
+
+const LEAVE_SETTLEMENT_DATA = {
+  references: [
+    { title: "MOL Leave Management", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "IPAC", url: "#", isQuickLink: true },
     { title: "MCO 1050.3J (Leave Manual)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "JTR (Joint Travel Regulations)", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: false },
+    { title: "DoD FMR 7000.14-R Volume 7A", url: "https://comptroller.defense.gov/FMR/", isQuickLink: false },
   ],
 };
 
@@ -1345,6 +1369,8 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     // Outbound Processing
     "checkout-procedures": <CheckoutProceduresContent data={CHECKOUT_DATA} />,
     "final-pay-settlement": <FinalPaySettlementContent data={FINAL_PAY_DATA} />,
+    "records-transfer": <RecordsTransferContent data={RECORDS_TRANSFER_DATA} />,
+    "leave-settlement": <LeaveSettlementContent data={LEAVE_SETTLEMENT_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
