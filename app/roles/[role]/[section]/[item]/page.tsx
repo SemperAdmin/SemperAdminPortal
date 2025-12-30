@@ -70,6 +70,12 @@ import { CheckoutProceduresContent } from "../../../../../components/CheckoutPro
 import { FinalPaySettlementContent } from "../../../../../components/FinalPaySettlementContent";
 import { RecordsTransferContent } from "../../../../../components/RecordsTransferContent";
 import { LeaveSettlementContent } from "../../../../../components/LeaveSettlementContent";
+import { OMPFManagementContent } from "../../../../../components/OMPFManagementContent";
+import { SRBCorrectionsContent } from "../../../../../components/SRBCorrectionsContent";
+import { AwardsDecorationsContent } from "../../../../../components/AwardsDecorationsContent";
+import { TrainingRecordUpdatesContent } from "../../../../../components/TrainingRecordUpdatesContent";
+import { EducationRecordsContent } from "../../../../../components/EducationRecordsContent";
+import { BCNRContent } from "../../../../../components/BCNRContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1266,6 +1272,72 @@ const LEAVE_SETTLEMENT_DATA = {
   ],
 };
 
+const OMPF_MANAGEMENT_DATA = {
+  references: [
+    { title: "MOL OMPF Viewer", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "ORMA (Online Record Modular Application)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MMRP (Military Manpower Records Program)", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+    { title: "NPRC (National Personnel Records Center)", url: "https://www.archives.gov/veterans", isQuickLink: false },
+  ],
+};
+
+const SRB_CORRECTIONS_DATA = {
+  references: [
+    { title: "MOL (BIR/BTR Access)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "ORMA", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "IPAC", url: "#", isQuickLink: false },
+    { title: "BCNR (Board for Correction of Naval Records)", url: "https://www.secnav.navy.mil/mra/bcnr/", isQuickLink: false },
+  ],
+};
+
+const AWARDS_DECORATIONS_DATA = {
+  references: [
+    { title: "MOL Awards Summary", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "Awards Board", url: "#", isQuickLink: true },
+    { title: "SECNAVINST 1650.1H (Navy/Marine Corps Awards Manual)", url: "https://www.secnav.navy.mil/", isQuickLink: false },
+    { title: "NAVMC 11533 (Personal Award Recommendation)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MARADMIN Award Messages", url: "https://www.marines.mil/News/Messages/", isQuickLink: false },
+  ],
+};
+
+const TRAINING_RECORD_DATA = {
+  references: [
+    { title: "MOL (BTR Access)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "Unit S-3/Training", url: "#", isQuickLink: true },
+    { title: "MarineNet", url: "https://www.marinenet.usmc.mil/", isQuickLink: true },
+    { title: "MCO 1553.4B (Training and Readiness Manual)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "COOL (Credentialing Opportunities On-Line)", url: "https://www.cool.osd.mil/usmc/", isQuickLink: false },
+    { title: "JST (Joint Services Transcript)", url: "https://jst.doded.mil/", isQuickLink: false },
+  ],
+};
+
+const EDUCATION_RECORDS_DATA = {
+  references: [
+    { title: "MOL (Education Record)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "JST Portal", url: "https://jst.doded.mil/", isQuickLink: true },
+    { title: "Education Office", url: "#", isQuickLink: true },
+    { title: "MCO 1560.25 (Tuition Assistance)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "COOL Program", url: "https://www.cool.osd.mil/usmc/", isQuickLink: false },
+    { title: "VA Education Benefits", url: "https://www.va.gov/education/", isQuickLink: false },
+  ],
+};
+
+const BCNR_DATA = {
+  references: [
+    { title: "BCNR Website", url: "https://www.secnav.navy.mil/mra/bcnr/", isQuickLink: true },
+    { title: "DD Form 149", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd0149.pdf", isQuickLink: true },
+    { title: "Legal Assistance Office", url: "#", isQuickLink: true },
+    { title: "10 U.S.C. § 1552 (Correction of Military Records)", url: "https://www.law.cornell.edu/uscode/text/10/1552", isQuickLink: false },
+    { title: "NDRB (Naval Discharge Review Board)", url: "https://www.secnav.navy.mil/mra/CORB/Pages/NDRB/default.aspx", isQuickLink: false },
+    { title: "Veterans Service Organizations", url: "https://www.va.gov/vso/", isQuickLink: false },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -1283,6 +1355,11 @@ function toTitle(slug: string) {
     .replace(/\bOconus\b/g, "OCONUS")
     .replace(/\bId\b/g, "ID")
     .replace(/\bFcp\b/g, "FCP")
+    .replace(/\bOmpf\b/g, "OMPF")
+    .replace(/\bSrb\b/g, "SRB")
+    .replace(/\bBcnr\b/g, "BCNR")
+    .replace(/\bBah\b/g, "BAH")
+    .replace(/\bBas\b/g, "BAS")
     .replace(/Foreign Language Proficiency Pay/i, "Foreign Language Proficiency Bonus");
 }
 
@@ -1371,6 +1448,13 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "final-pay-settlement": <FinalPaySettlementContent data={FINAL_PAY_DATA} />,
     "records-transfer": <RecordsTransferContent data={RECORDS_TRANSFER_DATA} />,
     "leave-settlement": <LeaveSettlementContent data={LEAVE_SETTLEMENT_DATA} />,
+    // Personnel Records
+    "ompf-management": <OMPFManagementContent data={OMPF_MANAGEMENT_DATA} />,
+    "srb-corrections": <SRBCorrectionsContent data={SRB_CORRECTIONS_DATA} />,
+    "awards-decorations": <AwardsDecorationsContent data={AWARDS_DECORATIONS_DATA} />,
+    "training-record-updates": <TrainingRecordUpdatesContent data={TRAINING_RECORD_DATA} />,
+    "education-records": <EducationRecordsContent data={EDUCATION_RECORDS_DATA} />,
+    "bcnr": <BCNRContent data={BCNR_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
