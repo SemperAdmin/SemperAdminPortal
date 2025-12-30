@@ -138,6 +138,27 @@ import { CredentialingProgramsContent } from "../../../../../components/Credenti
 import { CertificationReimbursementContent } from "../../../../../components/CertificationReimbursementContent";
 import { LanguageTrainingDLPTContent } from "../../../../../components/LanguageTrainingDLPTContent";
 import { TechnicalCertificationsContent } from "../../../../../components/TechnicalCertificationsContent";
+// Separations & Transitions - Voluntary Separation
+import { EASContent } from "../../../../../components/EASContent";
+import { VoluntaryEarlyReleaseContent } from "../../../../../components/VoluntaryEarlyReleaseContent";
+import { ResignationOfficersContent } from "../../../../../components/ResignationOfficersContent";
+// Separations & Transitions - Involuntary Separation
+import { AdministrativeSeparationContent } from "../../../../../components/AdministrativeSeparationContent";
+import { MedicalSeparationContent } from "../../../../../components/MedicalSeparationContent";
+import { FailureToMeetStandardsContent } from "../../../../../components/FailureToMeetStandardsContent";
+import { EntryLevelSeparationContent } from "../../../../../components/EntryLevelSeparationContent";
+// Separations & Transitions - Retirement
+import { ActiveDutyRetirementContent } from "../../../../../components/ActiveDutyRetirementContent";
+import { ReserveRetirementContent } from "../../../../../components/ReserveRetirementContent";
+import { MedicalRetirementContent } from "../../../../../components/MedicalRetirementContent";
+import { TDRLContent } from "../../../../../components/TDRLContent";
+import { SBPElectionsContent } from "../../../../../components/SBPElectionsContent";
+// Separations & Transitions - Transition Programs
+import { TAPContent } from "../../../../../components/TAPContent";
+import { VABenefitsContent } from "../../../../../components/VABenefitsContent";
+import { EmploymentAssistanceContent } from "../../../../../components/EmploymentAssistanceContent";
+import { EducationBenefitsTransferContent } from "../../../../../components/EducationBenefitsTransferContent";
+import { SkillBridgeContent } from "../../../../../components/SkillBridgeContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1933,6 +1954,142 @@ const TECHNICAL_CERTIFICATIONS_DATA = {
   ],
 };
 
+// Separations & Transitions - Voluntary Separation
+const EAS_DATA = {
+  references: [
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1040.31 - Transition Readiness Program", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "TAP Website", url: "https://www.tapevents.mil/", isQuickLink: true },
+    { title: "DD-214 Information", url: "https://www.archives.gov/veterans/military-service-records", isQuickLink: false },
+  ],
+};
+
+const VOLUNTARY_EARLY_RELEASE_DATA = {
+  references: [
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MARADMIN Messages", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
+  ],
+};
+
+const RESIGNATION_OFFICERS_DATA = {
+  references: [
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "10 U.S.C. Officer Separations", url: "https://uscode.house.gov/", isQuickLink: false },
+    { title: "MMOA", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+// Separations & Transitions - Involuntary Separation
+const ADMINISTRATIVE_SEPARATION_DATA = {
+  references: [
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "Legal Assistance Office", url: "https://www.marines.mil/", isQuickLink: false },
+  ],
+};
+
+const MEDICAL_SEPARATION_DATA = {
+  references: [
+    { title: "10 U.S.C. Chapter 61 - Disability Retirement", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "SECNAVINST 1850.4 - IDES", url: "https://www.secnav.navy.mil/", isQuickLink: true },
+    { title: "Wounded Warrior Regiment", url: "https://www.woundedwarriorregiment.org/", isQuickLink: false },
+  ],
+};
+
+const FAILURE_TO_MEET_STANDARDS_DATA = {
+  references: [
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 6110.3A - Physical Fitness", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 6110.3 - Body Composition Program", url: "https://www.marines.mil/", isQuickLink: false },
+  ],
+};
+
+const ENTRY_LEVEL_SEPARATION_DATA = {
+  references: [
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+  ],
+};
+
+// Separations & Transitions - Retirement
+const ACTIVE_DUTY_RETIREMENT_DATA = {
+  references: [
+    { title: "10 U.S.C. Chapter 71 - Retirement", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "DFAS Retired Pay", url: "https://www.dfas.mil/retiredmilitary/", isQuickLink: true },
+  ],
+};
+
+const RESERVE_RETIREMENT_DATA = {
+  references: [
+    { title: "10 U.S.C. Chapter 1223 - Reserve Retirement", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: false },
+  ],
+};
+
+const MEDICAL_RETIREMENT_DATA = {
+  references: [
+    { title: "10 U.S.C. Chapter 61 - Disability Retirement", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "SECNAVINST 1850.4 - IDES", url: "https://www.secnav.navy.mil/", isQuickLink: true },
+    { title: "DFAS Retired Pay", url: "https://www.dfas.mil/retiredmilitary/", isQuickLink: false },
+  ],
+};
+
+const TDRL_DATA = {
+  references: [
+    { title: "10 U.S.C. 1202, 1210 - TDRL", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "SECNAVINST 1850.4 - IDES", url: "https://www.secnav.navy.mil/", isQuickLink: true },
+  ],
+};
+
+const SBP_ELECTIONS_DATA = {
+  references: [
+    { title: "10 U.S.C. Chapter 73 - Survivor Benefit Plan", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "DD Form 2656 - SBP Election", url: "https://www.esd.whs.mil/Directives/forms/", isQuickLink: true },
+    { title: "DFAS SBP Information", url: "https://www.dfas.mil/retiredmilitary/survivors/", isQuickLink: false },
+  ],
+};
+
+// Separations & Transitions - Transition Programs
+const TAP_DATA = {
+  references: [
+    { title: "MCO 1040.31 - Transition Readiness Program", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "TAP Website", url: "https://www.tapevents.mil/", isQuickLink: true },
+  ],
+};
+
+const VA_BENEFITS_DATA = {
+  references: [
+    { title: "VA Website", url: "https://www.va.gov/", isQuickLink: true },
+    { title: "VA Benefits Hotline", url: "tel:1-800-827-1000", isQuickLink: true },
+    { title: "eBenefits", url: "https://www.ebenefits.va.gov/", isQuickLink: false },
+  ],
+};
+
+const EMPLOYMENT_ASSISTANCE_DATA = {
+  references: [
+    { title: "DOL Veterans Employment", url: "https://www.dol.gov/agencies/vets", isQuickLink: true },
+    { title: "USAJOBS", url: "https://www.usajobs.gov/", isQuickLink: true },
+    { title: "Hiring Our Heroes", url: "https://www.hiringourheroes.org/", isQuickLink: false },
+  ],
+};
+
+const EDUCATION_BENEFITS_TRANSFER_DATA = {
+  references: [
+    { title: "38 U.S.C. 3319 - Transfer of Entitlement", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "milConnect TEB", url: "https://milconnect.dmdc.osd.mil/", isQuickLink: true },
+    { title: "VA Transfer of Benefits", url: "https://www.va.gov/education/transfer-post-9-11-gi-bill-benefits/", isQuickLink: false },
+  ],
+};
+
+const SKILLBRIDGE_DATA = {
+  references: [
+    { title: "NAVMC 1700.2B - SkillBridge Employment Training", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MARADMIN 280/24 - SkillBridge Interim Guidance", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "DOD SkillBridge", url: "https://skillbridge.osd.mil/", isQuickLink: true },
+    { title: "DODI 1322.29", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: false },
+    { title: "10 U.S.C. 1143(e)", url: "https://uscode.house.gov/", isQuickLink: false },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -1989,7 +2146,13 @@ function toTitle(slug: string) {
     .replace(/\bDsst\b/g, "DSST")
     .replace(/\bPla\b/g, "PLA")
     .replace(/\bTa\b/g, "TA")
-    .replace(/\bGi\b/g, "GI");
+    .replace(/\bGi\b/g, "GI")
+    .replace(/\bEas\b/g, "EAS")
+    .replace(/\bIdes\b/g, "IDES")
+    .replace(/\bTdrl\b/g, "TDRL")
+    .replace(/\bSbp\b/g, "SBP")
+    .replace(/\bTap\b/g, "TAP")
+    .replace(/\bVa\b/g, "VA");
 }
 
 export default async function RoleItemPage({ params }: { params: Promise<Params> }) {
@@ -2147,6 +2310,27 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "certification-reimbursement": <CertificationReimbursementContent data={CERTIFICATION_REIMBURSEMENT_DATA} />,
     "language-training-dlpt": <LanguageTrainingDLPTContent data={LANGUAGE_TRAINING_DLPT_DATA} />,
     "technical-certifications": <TechnicalCertificationsContent data={TECHNICAL_CERTIFICATIONS_DATA} />,
+    // Separations & Transitions - Voluntary Separation
+    "eas": <EASContent data={EAS_DATA} />,
+    "voluntary-early-release": <VoluntaryEarlyReleaseContent data={VOLUNTARY_EARLY_RELEASE_DATA} />,
+    "resignation-officers": <ResignationOfficersContent data={RESIGNATION_OFFICERS_DATA} />,
+    // Separations & Transitions - Involuntary Separation
+    "administrative-separation": <AdministrativeSeparationContent data={ADMINISTRATIVE_SEPARATION_DATA} />,
+    "medical-separation": <MedicalSeparationContent data={MEDICAL_SEPARATION_DATA} />,
+    "failure-to-meet-standards": <FailureToMeetStandardsContent data={FAILURE_TO_MEET_STANDARDS_DATA} />,
+    "entry-level-separation": <EntryLevelSeparationContent data={ENTRY_LEVEL_SEPARATION_DATA} />,
+    // Separations & Transitions - Retirement
+    "active-duty-retirement": <ActiveDutyRetirementContent data={ACTIVE_DUTY_RETIREMENT_DATA} />,
+    "reserve-retirement": <ReserveRetirementContent data={RESERVE_RETIREMENT_DATA} />,
+    "medical-retirement": <MedicalRetirementContent data={MEDICAL_RETIREMENT_DATA} />,
+    "tdrl": <TDRLContent data={TDRL_DATA} />,
+    "sbp-elections": <SBPElectionsContent data={SBP_ELECTIONS_DATA} />,
+    // Separations & Transitions - Transition Programs
+    "tap": <TAPContent data={TAP_DATA} />,
+    "va-benefits": <VABenefitsContent data={VA_BENEFITS_DATA} />,
+    "employment-assistance": <EmploymentAssistanceContent data={EMPLOYMENT_ASSISTANCE_DATA} />,
+    "education-benefits-transfer": <EducationBenefitsTransferContent data={EDUCATION_BENEFITS_TRANSFER_DATA} />,
+    "skillbridge": <SkillBridgeContent data={SKILLBRIDGE_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -2332,6 +2516,30 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "language-training-dlpt",
     "technical-certifications",
   ];
+  const separationsTransitionsSection = "separations-transitions";
+  const separationsTransitionsSlugs = [
+    // Voluntary Separation
+    "eas",
+    "voluntary-early-release",
+    "resignation-officers",
+    // Involuntary Separation
+    "administrative-separation",
+    "medical-separation",
+    "failure-to-meet-standards",
+    "entry-level-separation",
+    // Retirement
+    "active-duty-retirement",
+    "reserve-retirement",
+    "medical-retirement",
+    "tdrl",
+    "sbp-elections",
+    // Transition Programs
+    "tap",
+    "va-benefits",
+    "employment-assistance",
+    "education-benefits-transfer",
+    "skillbridge",
+  ];
   const params: { role: Role; section: string; item: string }[] = [];
   for (const role of roles) {
     for (const item of payAllowancesSlugs) params.push({ role, section: payAllowancesSection, item });
@@ -2342,6 +2550,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     for (const item of deploymentSlugs) params.push({ role, section: deploymentSection, item });
     for (const item of insuranceHealthcareSlugs) params.push({ role, section: insuranceHealthcareSection, item });
     for (const item of educationTrainingSlugs) params.push({ role, section: educationTrainingSection, item });
+    for (const item of separationsTransitionsSlugs) params.push({ role, section: separationsTransitionsSection, item });
   }
   return params;
 }

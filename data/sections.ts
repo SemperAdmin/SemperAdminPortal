@@ -329,6 +329,49 @@ export const SECTIONS: Record<string, Section> = {
       },
     ],
   },
+  "separations-transitions": {
+    title: "Separations & Transitions",
+    intro: "Separations and transitions mark the end of active duty service and the beginning of civilian or retired life. Proper planning and completion of required actions ensures you receive all earned benefits, maintain eligibility for VA services, and successfully transition to your next chapter. Start transition planning early to maximize opportunities and avoid delays.",
+    groups: [
+      {
+        title: "Voluntary Separation",
+        items: [
+          { title: "End of Active Service (EAS)", slug: "eas", desc: "Plan your separation at contract expiration" },
+          { title: "Voluntary Early Release", slug: "voluntary-early-release", desc: "Separate before EAS for education, employment, or hardship" },
+          { title: "Resignation (Officers)", slug: "resignation-officers", desc: "Officer resignation process and service obligations" },
+        ],
+      },
+      {
+        title: "Involuntary Separation",
+        items: [
+          { title: "Administrative Separation", slug: "administrative-separation", desc: "Involuntary separation proceedings and due process" },
+          { title: "Medical Separation/Retirement", slug: "medical-separation", desc: "IDES process for medical conditions" },
+          { title: "Failure to Meet Standards", slug: "failure-to-meet-standards", desc: "Separation for fitness, weight, or performance failures" },
+          { title: "Entry-Level Separation", slug: "entry-level-separation", desc: "Separation within first 180 days of service" },
+        ],
+      },
+      {
+        title: "Retirement",
+        items: [
+          { title: "Active Duty Retirement", slug: "active-duty-retirement", desc: "Retire after 20+ years of active service" },
+          { title: "Reserve Retirement", slug: "reserve-retirement", desc: "Retire after 20 qualifying years of reserve service" },
+          { title: "Medical Retirement", slug: "medical-retirement", desc: "Retire due to disability rating of 30% or higher" },
+          { title: "Temporary Disability Retired List (TDRL)", slug: "tdrl", desc: "Temporary retirement for unstable conditions" },
+          { title: "Survivor Benefit Plan (SBP) Elections", slug: "sbp-elections", desc: "Protect your family with SBP coverage at retirement" },
+        ],
+      },
+      {
+        title: "Transition Programs",
+        items: [
+          { title: "Transition Assistance Program (TAP)", slug: "tap", desc: "Complete mandatory transition workshops" },
+          { title: "Veterans Affairs (VA) Benefits", slug: "va-benefits", desc: "Access earned veterans benefits" },
+          { title: "Employment Assistance", slug: "employment-assistance", desc: "Find civilian employment after service" },
+          { title: "Education Benefits Transfer", slug: "education-benefits-transfer", desc: "Transfer GI Bill to family before separating" },
+          { title: "SkillBridge Program", slug: "skillbridge", desc: "Gain civilian work experience before separation" },
+        ],
+      },
+    ],
+  },
   "s1-g1-administration": {
     title: "S-1 / G-1 Administration",
     intro: "S-1 / G-1 (Administration Section) Handles all personnel administration and manpower functions. Manages pay, leave, promotions, awards, and official correspondence. Maintains service records and ensures compliance with personnel policies and reporting requirements. Serves as the command's administrative hub and liaison with higher headquarters for manpower actions.",
