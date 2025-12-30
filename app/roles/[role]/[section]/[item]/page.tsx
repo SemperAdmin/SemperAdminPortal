@@ -191,6 +191,13 @@ import { ADSEPOverviewContent } from "../../../../../components/leaders/ADSEPOve
 import { LegalHoldInvestigationsContent } from "../../../../../components/leaders/LegalHoldInvestigationsContent";
 import { Article31bRightsContent } from "../../../../../components/leaders/Article31bRightsContent";
 import { ProgressiveDisciplineContent } from "../../../../../components/leaders/ProgressiveDisciplineContent";
+// Leaders - Awards & Recognition
+import { WritingAwardRecommendationsContent } from "../../../../../components/leaders/WritingAwardRecommendationsContent";
+import { CitationFormatRequirementsContent } from "../../../../../components/leaders/CitationFormatRequirementsContent";
+import { CommonAwardErrorsContent } from "../../../../../components/leaders/CommonAwardErrorsContent";
+import { IAPSSubmissionContent } from "../../../../../components/leaders/IAPSSubmissionContent";
+import { AwardRoutingApprovalContent } from "../../../../../components/leaders/AwardRoutingApprovalContent";
+import { AwardTimelineManagementContent } from "../../../../../components/leaders/AwardTimelineManagementContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -2358,6 +2365,55 @@ const PROGRESSIVE_DISCIPLINE_DATA = {
   ],
 };
 
+// Leaders - Awards & Recognition
+const WRITING_AWARD_RECOMMENDATIONS_DATA = {
+  references: [
+    { title: "SECNAV M-1650.1 - Navy and Marine Corps Awards Manual", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf" },
+    { title: "SECNAVINST 1650.1J - Department of the Navy Military Awards Policy", url: "https://www.secnav.navy.mil/doni/Directives/01000%20Military%20Personnel%20Support/01-600%20Performance%20and%20Discipline%20Programs/1650.1J.pdf" },
+    { title: "MCO 1650.19J with CH1 - Administrative and Issue Procedures for Decorations, Medals, and Awards", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899334/mco-165019j-wch-1/" },
+  ],
+};
+
+const CITATION_FORMAT_REQUIREMENTS_DATA = {
+  references: [
+    { title: "SECNAV M-1650.1, Chapter 2, Appendix B - Sample Citations", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf" },
+    { title: "SECNAV M-1650.1, Table 20 - PMD Combination Citation/Certificate Format", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf" },
+    { title: "SECNAV M-1650.1, Table 21 - NC and NAM Standard Opening Sentences", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf" },
+  ],
+};
+
+const COMMON_AWARD_ERRORS_DATA = {
+  references: [
+    { title: "SECNAV M-1650.1 - Navy and Marine Corps Awards Manual", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf" },
+    { title: "MARADMIN 077/25 - CMC Delegation of Awarding Authority", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "Annual MARADMIN on PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+  ],
+};
+
+const IAPS_SUBMISSION_DATA = {
+  references: [
+    { title: "MARADMIN 042/08 - Implementation of iAPS", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "MARADMIN 099/18 - iAPS Updates", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "MARADMIN 077/25 - CMC Delegation of Awarding Authority", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+  ],
+};
+
+const AWARD_ROUTING_APPROVAL_DATA = {
+  references: [
+    { title: "MARADMIN 077/25 (21 Feb 2025) - CMC Delegation of Awarding Authority for Military Awards", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "SECNAVINST 1650.1J - Department of the Navy Military Awards Policy", url: "https://www.secnav.navy.mil/doni/Directives/01000%20Military%20Personnel%20Support/01-600%20Performance%20and%20Discipline%20Programs/1650.1J.pdf" },
+    { title: "SECNAV M-1650.1 - Navy and Marine Corps Awards Manual", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf" },
+    { title: "MCO 1650.19J with CH1 - Administrative and Issue Procedures for Decorations, Medals, and Awards", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899334/mco-165019j-wch-1/" },
+  ],
+};
+
+const AWARD_TIMELINE_MANAGEMENT_DATA = {
+  references: [
+    { title: "Annual MARADMIN on PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "MCO 1650.19J with CH1 - Administrative and Issue Procedures for Decorations, Medals, and Awards", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899334/mco-165019j-wch-1/" },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -2683,6 +2739,13 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "legal-hold-investigations": <LegalHoldInvestigationsContent data={LEGAL_HOLD_INVESTIGATIONS_DATA} />,
     "article-31b-rights": <Article31bRightsContent data={ARTICLE_31B_RIGHTS_DATA} />,
     "progressive-discipline": <ProgressiveDisciplineContent data={PROGRESSIVE_DISCIPLINE_DATA} />,
+    // Leaders - Awards & Recognition
+    "writing-award-recommendations": <WritingAwardRecommendationsContent data={WRITING_AWARD_RECOMMENDATIONS_DATA} />,
+    "citation-format-requirements": <CitationFormatRequirementsContent data={CITATION_FORMAT_REQUIREMENTS_DATA} />,
+    "common-award-errors": <CommonAwardErrorsContent data={COMMON_AWARD_ERRORS_DATA} />,
+    "iaps-submission": <IAPSSubmissionContent data={IAPS_SUBMISSION_DATA} />,
+    "award-routing-approval": <AwardRoutingApprovalContent data={AWARD_ROUTING_APPROVAL_DATA} />,
+    "award-timeline-management": <AwardTimelineManagementContent data={AWARD_TIMELINE_MANAGEMENT_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
