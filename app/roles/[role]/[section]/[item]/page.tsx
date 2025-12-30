@@ -1695,6 +1695,7 @@ function toTitle(slug: string) {
     .replace(/\bBah\b/g, "BAH")
     .replace(/\bBas\b/g, "BAS")
     .replace(/\bJepes\b/g, "JEPES")
+    .replace(/\bEpme\b/g, "EPME")
     .replace(/\bTig\b/g, "TIG")
     .replace(/\bMos\b/g, "MOS")
     .replace(/\bPmos\b/g, "PMOS")
@@ -1968,6 +1969,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "mos-reclassification",
     "additional-mos-assignment",
     "primary-mos-changes",
+    "epme-requirements",
   ];
   const deploymentSection = "deployment-support";
   const deploymentSlugs = [

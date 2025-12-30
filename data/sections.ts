@@ -198,6 +198,7 @@ export const SECTIONS: Record<string, Section> = {
         title: "Promotion System",
         items: [
           { title: "Promotion Documentation", slug: "promotion-documentation", desc: "Required documentation for promotion eligibility and processing" },
+          { title: "EPME Requirements", slug: "epme-requirements", desc: "Know your required and recommended Professional Military Education by grade" },
           { title: "JEPES (Performance Evaluation)", slug: "jepes", desc: "Understanding the JEPES evaluation system and scores" },
           { title: "Cutting Score Verification", slug: "cutting-score-verification", desc: "Verify composite scores and cutting score requirements" },
           { title: "Promotion Warrants", slug: "promotion-warrants", desc: "Processing and documenting promotion warrants" },
