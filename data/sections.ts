@@ -219,6 +219,7 @@ export const SECTIONS: Record<string, Section> = {
         items: [
           { title: "Fitness Reports", slug: "fitness-reports", desc: "Understanding and reviewing fitness reports for SNCOs" },
           { title: "Performance Evaluation Appeals", slug: "performance-evaluation-appeals", desc: "Appealing adverse performance evaluations" },
+          { title: "PERB (Fitness Report Appeals)", slug: "perb", desc: "Appeal fitness reports through the Performance Evaluation Review Board" },
         ],
       },
       {

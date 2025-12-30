@@ -85,6 +85,7 @@ import { TIGCorrectionsContent } from "../../../../../components/TIGCorrectionsC
 import { MOSChangesContent } from "../../../../../components/MOSChangesContent";
 import { FitnessReportsContent } from "../../../../../components/FitnessReportsContent";
 import { PerformanceEvaluationAppealsContent } from "../../../../../components/PerformanceEvaluationAppealsContent";
+import { PERBContent } from "../../../../../components/PERBContent";
 import { RankReductionContent } from "../../../../../components/RankReductionContent";
 import { FrockingContent } from "../../../../../components/FrockingContent";
 import { DateOfRankCorrectionsContent } from "../../../../../components/DateOfRankCorrectionsContent";
@@ -1535,6 +1536,16 @@ const PERFORMANCE_EVALUATION_APPEALS_DATA = {
   ],
 };
 
+const PERB_DATA = {
+  references: [
+    { title: "DD Form 149 (Feb 2025)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd0149.pdf", isQuickLink: true },
+    { title: "MCO 1610.7B - PES Manual", url: "https://www.marines.mil/Portals/1/Publications/MCO1610.7B", isQuickLink: true },
+    { title: "MCO 1610.11D - Performance Evaluation Appeals", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "BCNR (Secondary Review)", url: "https://www.secnav.navy.mil/mra/bcnr/", isQuickLink: false },
+    { title: "MMPB-21 FAQs", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+  ],
+};
+
 const RANK_REDUCTION_DATA = {
   references: [
     { title: "MCO 1900.16 (Separation/Retirement)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899560/mco-190016a/", isQuickLink: true },
@@ -2365,7 +2376,9 @@ function toTitle(slug: string) {
     .replace(/\bJagman\b/g, "JAGMAN")
     .replace(/\bScra\b/g, "SCRA")
     .replace(/\bSvc\b/g, "SVC")
-    .replace(/\bLro\b/g, "LRO");
+    .replace(/\bLro\b/g, "LRO")
+    .replace(/\bPerb\b/g, "PERB")
+    .replace(/\bMmpb\b/g, "MMPB");
 }
 
 export default async function RoleItemPage({ params }: { params: Promise<Params> }) {
@@ -2470,6 +2483,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "mos-changes-lateral-moves": <MOSChangesContent data={MOS_CHANGES_DATA} />,
     "fitness-reports": <FitnessReportsContent data={FITNESS_REPORTS_DATA} />,
     "performance-evaluation-appeals": <PerformanceEvaluationAppealsContent data={PERFORMANCE_EVALUATION_APPEALS_DATA} />,
+    "perb": <PERBContent data={PERB_DATA} />,
     "rank-reduction": <RankReductionContent data={RANK_REDUCTION_DATA} />,
     "frocking": <FrockingContent data={FROCKING_DATA} />,
     "date-of-rank-corrections": <DateOfRankCorrectionsContent data={DATE_OF_RANK_CORRECTIONS_DATA} />,
@@ -2688,6 +2702,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "mos-changes-lateral-moves",
     "fitness-reports",
     "performance-evaluation-appeals",
+    "perb",
     "rank-reduction",
     "frocking",
     "date-of-rank-corrections",
