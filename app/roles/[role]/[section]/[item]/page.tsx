@@ -67,6 +67,7 @@ import { InitialBAHBASVerificationContent } from "../../../../../components/Init
 import { RecordsReviewContent } from "../../../../../components/RecordsReviewContent";
 import { SecurityClearanceTransferContent } from "../../../../../components/SecurityClearanceTransferContent";
 import { CheckoutProceduresContent } from "../../../../../components/CheckoutProceduresContent";
+import { FinalPaySettlementContent } from "../../../../../components/FinalPaySettlementContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1230,6 +1231,17 @@ const CHECKOUT_DATA = {
   ],
 };
 
+const FINAL_PAY_DATA = {
+  references: [
+    { title: "myPay (DFAS)", url: "https://mypay.dfas.mil/", isQuickLink: true },
+    { title: "DFAS Separations", url: "https://www.dfas.mil/separations", isQuickLink: true },
+    { title: "DFAS Customer Service", url: "https://www.dfas.mil/MilitaryMembers/", isQuickLink: true },
+    { title: "DoD FMR 7000.14-R Volume 7A", url: "https://comptroller.defense.gov/FMR/", isQuickLink: false },
+    { title: "MCO 1900.16 (Separations Manual)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO 1050.3J (Leave Manual)", url: "https://www.marines.mil/", isQuickLink: false },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -1332,6 +1344,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "security-clearance-transfer": <SecurityClearanceTransferContent data={SECURITY_CLEARANCE_DATA} />,
     // Outbound Processing
     "checkout-procedures": <CheckoutProceduresContent data={CHECKOUT_DATA} />,
+    "final-pay-settlement": <FinalPaySettlementContent data={FINAL_PAY_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
