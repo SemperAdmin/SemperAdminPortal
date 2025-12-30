@@ -159,6 +159,18 @@ import { VABenefitsContent } from "../../../../../components/VABenefitsContent";
 import { EmploymentAssistanceContent } from "../../../../../components/EmploymentAssistanceContent";
 import { EducationBenefitsTransferContent } from "../../../../../components/EducationBenefitsTransferContent";
 import { SkillBridgeContent } from "../../../../../components/SkillBridgeContent";
+// Reserve & Mobilization - Reserve Administration
+import { ReserveDutyStatusContent } from "../../../../../components/ReserveDutyStatusContent";
+import { IDTPayContent } from "../../../../../components/IDTPayContent";
+import { AnnualTrainingOrdersContent } from "../../../../../components/AnnualTrainingOrdersContent";
+import { RetirementPointsContent } from "../../../../../components/RetirementPointsContent";
+import { ReservePromotionSystemContent } from "../../../../../components/ReservePromotionSystemContent";
+// Reserve & Mobilization - Mobilization/Activation
+import { MobilizationOrdersContent } from "../../../../../components/MobilizationOrdersContent";
+import { ADOSContent } from "../../../../../components/ADOSContent";
+import { ADSWContent } from "../../../../../components/ADSWContent";
+import { ADTContent } from "../../../../../components/ADTContent";
+import { DemobilizationProcessingContent } from "../../../../../components/DemobilizationProcessingContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -2090,6 +2102,92 @@ const SKILLBRIDGE_DATA = {
   ],
 };
 
+// Reserve & Mobilization - Reserve Administration
+const RESERVE_DUTY_STATUS_DATA = {
+  references: [
+    { title: "MCO 1001R.1L W/CH 1 - MCRAMM", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "10 U.S.C. Sections 10141-10154", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "Marine Forces Reserve", url: "https://www.marforres.marines.mil/", isQuickLink: false },
+  ],
+};
+
+const IDT_PAY_DATA = {
+  references: [
+    { title: "MCO 1001R.1L Chapter 3 - Reserve Duty and Training", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MARADMIN 157/25 - IDT Travel Reimbursement", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "MARADMIN 571/25 - Appropriate Duty Policy", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "Joint Travel Regulations", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: false },
+  ],
+};
+
+const ANNUAL_TRAINING_ORDERS_DATA = {
+  references: [
+    { title: "MCO 1001R.1L Chapter 7 - Selected Reserve", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "Joint Travel Regulations", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: true },
+    { title: "MROWS", url: "https://mrows.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const RETIREMENT_POINTS_DATA = {
+  references: [
+    { title: "MCO 1001R.1L Chapter 4 - Reserve Retirement", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "10 U.S.C. Chapter 1223 - Reserve Retirement", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "DoDI 1215.07 - Service Credit", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: false },
+    { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const RESERVE_PROMOTION_SYSTEM_DATA = {
+  references: [
+    { title: "MCO P1400.32D W/CH 2 - Promotion Manual Vol 2", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MARADMIN 373/24 - FY25 SNCO Board Schedule", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "MCO 1001R.1L Chapter 4 - Reserve Promotions", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCIRSA", url: "https://www.marforres.marines.mil/Units/Force-Headquarters-Group/Marine-Corps-Individual-Reserve-Support-Activity/", isQuickLink: false },
+  ],
+};
+
+// Reserve & Mobilization - Mobilization/Activation
+const MOBILIZATION_ORDERS_DATA = {
+  references: [
+    { title: "MCO 3061.1 - Total Force Mobilization Plan", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 3000.19B - MAID-P", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "10 U.S.C. 12301, 12302, 12304, 12304b", url: "https://uscode.house.gov/", isQuickLink: false },
+  ],
+};
+
+const ADOS_DATA = {
+  references: [
+    { title: "MCO 1001R.1L Chapter 3 - Active Duty Types", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MARFORRES Definitions", url: "https://www.marforres.marines.mil/", isQuickLink: false },
+    { title: "MROWS", url: "https://mrows.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const ADSW_DATA = {
+  references: [
+    { title: "MCO 1000.8", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1001R.1L Chapter 3", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "HQMC M&RA", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const ADT_DATA = {
+  references: [
+    { title: "MCO 1001R.1L Chapter 3 and Chapter 7", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1510R.39B - Reserve Training", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MROWS", url: "https://mrows.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const DEMOBILIZATION_PROCESSING_DATA = {
+  references: [
+    { title: "MCO 3061.1 - TFMDP", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 3000.19B - MAID-P", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1001R.1L Chapter 10 - Mobilization", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "VA Benefits", url: "https://www.va.gov/", isQuickLink: false },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -2152,7 +2250,18 @@ function toTitle(slug: string) {
     .replace(/\bTdrl\b/g, "TDRL")
     .replace(/\bSbp\b/g, "SBP")
     .replace(/\bTap\b/g, "TAP")
-    .replace(/\bVa\b/g, "VA");
+    .replace(/\bVa\b/g, "VA")
+    .replace(/\bIdt\b/g, "IDT")
+    .replace(/\bAdos\b/g, "ADOS")
+    .replace(/\bAdsw\b/g, "ADSW")
+    .replace(/\bAdt\b/g, "ADT")
+    .replace(/\bSmcr\b/g, "SMCR")
+    .replace(/\bIma\b/g, "IMA")
+    .replace(/\bIrr\b/g, "IRR")
+    .replace(/\bCrcr\b/g, "CRCR")
+    .replace(/\bMrows\b/g, "MROWS")
+    .replace(/\bMcirsa\b/g, "MCIRSA")
+    .replace(/\bAt\b/g, "AT");
 }
 
 export default async function RoleItemPage({ params }: { params: Promise<Params> }) {
@@ -2331,6 +2440,18 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "employment-assistance": <EmploymentAssistanceContent data={EMPLOYMENT_ASSISTANCE_DATA} />,
     "education-benefits-transfer": <EducationBenefitsTransferContent data={EDUCATION_BENEFITS_TRANSFER_DATA} />,
     "skillbridge": <SkillBridgeContent data={SKILLBRIDGE_DATA} />,
+    // Reserve & Mobilization - Reserve Administration
+    "reserve-duty-status": <ReserveDutyStatusContent data={RESERVE_DUTY_STATUS_DATA} />,
+    "idt-pay": <IDTPayContent data={IDT_PAY_DATA} />,
+    "annual-training-orders": <AnnualTrainingOrdersContent data={ANNUAL_TRAINING_ORDERS_DATA} />,
+    "retirement-points": <RetirementPointsContent data={RETIREMENT_POINTS_DATA} />,
+    "reserve-promotion-system": <ReservePromotionSystemContent data={RESERVE_PROMOTION_SYSTEM_DATA} />,
+    // Reserve & Mobilization - Mobilization/Activation
+    "mobilization-orders": <MobilizationOrdersContent data={MOBILIZATION_ORDERS_DATA} />,
+    "ados": <ADOSContent data={ADOS_DATA} />,
+    "adsw": <ADSWContent data={ADSW_DATA} />,
+    "adt": <ADTContent data={ADT_DATA} />,
+    "demobilization-processing": <DemobilizationProcessingContent data={DEMOBILIZATION_PROCESSING_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -2540,6 +2661,21 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "education-benefits-transfer",
     "skillbridge",
   ];
+  const reserveMobilizationSection = "reserve-mobilization";
+  const reserveMobilizationSlugs = [
+    // Reserve Administration
+    "reserve-duty-status",
+    "idt-pay",
+    "annual-training-orders",
+    "retirement-points",
+    "reserve-promotion-system",
+    // Mobilization/Activation
+    "mobilization-orders",
+    "ados",
+    "adsw",
+    "adt",
+    "demobilization-processing",
+  ];
   const params: { role: Role; section: string; item: string }[] = [];
   for (const role of roles) {
     for (const item of payAllowancesSlugs) params.push({ role, section: payAllowancesSection, item });
@@ -2551,6 +2687,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     for (const item of insuranceHealthcareSlugs) params.push({ role, section: insuranceHealthcareSection, item });
     for (const item of educationTrainingSlugs) params.push({ role, section: educationTrainingSection, item });
     for (const item of separationsTransitionsSlugs) params.push({ role, section: separationsTransitionsSection, item });
+    for (const item of reserveMobilizationSlugs) params.push({ role, section: reserveMobilizationSection, item });
   }
   return params;
 }
