@@ -190,6 +190,47 @@ export const SECTIONS: Record<string, Section> = {
       },
     ],
   },
+  "promotions-career-progression": {
+    title: "Promotions & Career Progression",
+    intro: "Comprehensive guidance for promotions, evaluations, and career progression within the Marine Corps. From JEPES scores to selection boards, find step-by-step procedures for advancement and MOS management.",
+    groups: [
+      {
+        title: "Promotion System",
+        items: [
+          { title: "Promotion Documentation", slug: "promotion-documentation", desc: "Required documentation for promotion eligibility and processing" },
+          { title: "JEPES (Performance Evaluation)", slug: "jepes", desc: "Understanding the JEPES evaluation system and scores" },
+          { title: "Cutting Score Verification", slug: "cutting-score-verification", desc: "Verify composite scores and cutting score requirements" },
+          { title: "Promotion Warrants", slug: "promotion-warrants", desc: "Processing and documenting promotion warrants" },
+          { title: "Meritorious Promotions", slug: "meritorious-promotions", desc: "Commander-initiated promotion programs and requirements" },
+        ],
+      },
+      {
+        title: "Time in Grade & Rank",
+        items: [
+          { title: "TIG Corrections", slug: "tig-corrections", desc: "Correcting Time in Grade calculation errors" },
+          { title: "Date of Rank Corrections", slug: "date-of-rank-corrections", desc: "Correcting errors in Date of Rank records" },
+          { title: "Frocking", slug: "frocking", desc: "Wearing rank before promotion effective date" },
+          { title: "Rank Reduction", slug: "rank-reduction", desc: "Administrative and punitive reduction in rank procedures" },
+        ],
+      },
+      {
+        title: "Performance Evaluations",
+        items: [
+          { title: "Fitness Reports", slug: "fitness-reports", desc: "Understanding and reviewing fitness reports for SNCOs" },
+          { title: "Performance Evaluation Appeals", slug: "performance-evaluation-appeals", desc: "Appealing adverse performance evaluations" },
+        ],
+      },
+      {
+        title: "MOS Management",
+        items: [
+          { title: "MOS Changes (Lateral Moves)", slug: "mos-changes-lateral-moves", desc: "Voluntary MOS changes through lateral move programs" },
+          { title: "MOS Reclassification", slug: "mos-reclassification", desc: "Involuntary MOS changes due to force shaping" },
+          { title: "Additional MOS Assignment", slug: "additional-mos-assignment", desc: "Adding additional MOSs through training or experience" },
+          { title: "Primary MOS Changes", slug: "primary-mos-changes", desc: "Changing your primary MOS designation" },
+        ],
+      },
+    ],
+  },
   "s1-g1-administration": {
     title: "S-1 / G-1 Administration",
     intro: "S-1 / G-1 (Administration Section) Handles all personnel administration and manpower functions. Manages pay, leave, promotions, awards, and official correspondence. Maintains service records and ensures compliance with personnel policies and reporting requirements. Serves as the command's administrative hub and liaison with higher headquarters for manpower actions.",

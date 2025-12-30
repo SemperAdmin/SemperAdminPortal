@@ -36,6 +36,7 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
     { label: "Travel & Transportation", slug: "travel-transportation" },
     { label: "Dependency Management", slug: "dependency-management" },
     { label: "Personnel Administration", slug: "personnel-administration" },
+    { label: "Promotions & Career Progression", slug: "promotions-career-progression" },
     { label: "Deployment Support", slug: "deployment-support" },
     { label: "Legal & Disciplinary", slug: "legal-disciplinary" },
     { label: "Records & Corrections", slug: "records-corrections" },
