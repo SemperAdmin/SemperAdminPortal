@@ -85,6 +85,7 @@ import { TIGCorrectionsContent } from "../../../../../components/TIGCorrectionsC
 import { MOSChangesContent } from "../../../../../components/MOSChangesContent";
 import { FitnessReportsContent } from "../../../../../components/FitnessReportsContent";
 import { PerformanceEvaluationAppealsContent } from "../../../../../components/PerformanceEvaluationAppealsContent";
+import { PERBContent } from "../../../../../components/PERBContent";
 import { RankReductionContent } from "../../../../../components/RankReductionContent";
 import { FrockingContent } from "../../../../../components/FrockingContent";
 import { DateOfRankCorrectionsContent } from "../../../../../components/DateOfRankCorrectionsContent";
@@ -138,6 +139,50 @@ import { CredentialingProgramsContent } from "../../../../../components/Credenti
 import { CertificationReimbursementContent } from "../../../../../components/CertificationReimbursementContent";
 import { LanguageTrainingDLPTContent } from "../../../../../components/LanguageTrainingDLPTContent";
 import { TechnicalCertificationsContent } from "../../../../../components/TechnicalCertificationsContent";
+// Separations & Transitions - Voluntary Separation
+import { EASContent } from "../../../../../components/EASContent";
+import { VoluntaryEarlyReleaseContent } from "../../../../../components/VoluntaryEarlyReleaseContent";
+import { ResignationOfficersContent } from "../../../../../components/ResignationOfficersContent";
+// Separations & Transitions - Involuntary Separation
+import { AdministrativeSeparationContent } from "../../../../../components/AdministrativeSeparationContent";
+import { MedicalSeparationContent } from "../../../../../components/MedicalSeparationContent";
+import { FailureToMeetStandardsContent } from "../../../../../components/FailureToMeetStandardsContent";
+import { EntryLevelSeparationContent } from "../../../../../components/EntryLevelSeparationContent";
+// Separations & Transitions - Retirement
+import { ActiveDutyRetirementContent } from "../../../../../components/ActiveDutyRetirementContent";
+import { ReserveRetirementContent } from "../../../../../components/ReserveRetirementContent";
+import { MedicalRetirementContent } from "../../../../../components/MedicalRetirementContent";
+import { TDRLContent } from "../../../../../components/TDRLContent";
+import { SBPElectionsContent } from "../../../../../components/SBPElectionsContent";
+// Separations & Transitions - Transition Programs
+import { TAPContent } from "../../../../../components/TAPContent";
+import { VABenefitsContent } from "../../../../../components/VABenefitsContent";
+import { EmploymentAssistanceContent } from "../../../../../components/EmploymentAssistanceContent";
+import { EducationBenefitsTransferContent } from "../../../../../components/EducationBenefitsTransferContent";
+import { SkillBridgeContent } from "../../../../../components/SkillBridgeContent";
+// Reserve & Mobilization - Reserve Administration
+import { ReserveDutyStatusContent } from "../../../../../components/ReserveDutyStatusContent";
+import { IDTPayContent } from "../../../../../components/IDTPayContent";
+import { AnnualTrainingOrdersContent } from "../../../../../components/AnnualTrainingOrdersContent";
+import { RetirementPointsContent } from "../../../../../components/RetirementPointsContent";
+import { ReservePromotionSystemContent } from "../../../../../components/ReservePromotionSystemContent";
+// Reserve & Mobilization - Mobilization/Activation
+import { MobilizationOrdersContent } from "../../../../../components/MobilizationOrdersContent";
+import { ADOSContent } from "../../../../../components/ADOSContent";
+import { ADSWContent } from "../../../../../components/ADSWContent";
+import { ADTContent } from "../../../../../components/ADTContent";
+import { DemobilizationProcessingContent } from "../../../../../components/DemobilizationProcessingContent";
+// Legal & Disciplinary - Administrative Actions
+import { NJPArticle15Content } from "../../../../../components/NJPArticle15Content";
+import { PunitiveLettersReprimandContent } from "../../../../../components/PunitiveLettersReprimandContent";
+import { Page11CounselingContent } from "../../../../../components/Page11CounselingContent";
+import { AdministrativeInvestigationsContent } from "../../../../../components/AdministrativeInvestigationsContent";
+// Legal & Disciplinary - Legal Support
+import { CourtMartialSupportContent } from "../../../../../components/CourtMartialSupportContent";
+import { LegalAssistanceContent } from "../../../../../components/LegalAssistanceContent";
+import { VWAPContent } from "../../../../../components/VWAPContent";
+import { MilitaryProtectiveOrdersContent } from "../../../../../components/MilitaryProtectiveOrdersContent";
+import { IGComplaintsContent } from "../../../../../components/IGComplaintsContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1491,6 +1536,16 @@ const PERFORMANCE_EVALUATION_APPEALS_DATA = {
   ],
 };
 
+const PERB_DATA = {
+  references: [
+    { title: "DD Form 149 (Feb 2025)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd0149.pdf", isQuickLink: true },
+    { title: "MCO 1610.7B - PES Manual", url: "https://www.marines.mil/Portals/1/Publications/MCO1610.7B", isQuickLink: true },
+    { title: "MCO 1610.11D - Performance Evaluation Appeals", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "BCNR (Secondary Review)", url: "https://www.secnav.navy.mil/mra/bcnr/", isQuickLink: false },
+    { title: "MMPB-21 FAQs", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+  ],
+};
+
 const RANK_REDUCTION_DATA = {
   references: [
     { title: "MCO 1900.16 (Separation/Retirement)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899560/mco-190016a/", isQuickLink: true },
@@ -1933,6 +1988,308 @@ const TECHNICAL_CERTIFICATIONS_DATA = {
   ],
 };
 
+// Separations & Transitions - Voluntary Separation
+const EAS_DATA = {
+  references: [
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1040.31 - Transition Readiness Program", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "TAP Website", url: "https://www.tapevents.mil/", isQuickLink: true },
+    { title: "DD-214 Information", url: "https://www.archives.gov/veterans/military-service-records", isQuickLink: false },
+  ],
+};
+
+const VOLUNTARY_EARLY_RELEASE_DATA = {
+  references: [
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MARADMIN Messages", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
+  ],
+};
+
+const RESIGNATION_OFFICERS_DATA = {
+  references: [
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "10 U.S.C. Officer Separations", url: "https://uscode.house.gov/", isQuickLink: false },
+    { title: "MMOA", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+// Separations & Transitions - Involuntary Separation
+const ADMINISTRATIVE_SEPARATION_DATA = {
+  references: [
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "Legal Assistance Office", url: "https://www.marines.mil/", isQuickLink: false },
+  ],
+};
+
+const MEDICAL_SEPARATION_DATA = {
+  references: [
+    { title: "10 U.S.C. Chapter 61 - Disability Retirement", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "SECNAVINST 1850.4 - IDES", url: "https://www.secnav.navy.mil/", isQuickLink: true },
+    { title: "Wounded Warrior Regiment", url: "https://www.woundedwarriorregiment.org/", isQuickLink: false },
+  ],
+};
+
+const FAILURE_TO_MEET_STANDARDS_DATA = {
+  references: [
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 6110.3A - Physical Fitness", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 6110.3 - Body Composition Program", url: "https://www.marines.mil/", isQuickLink: false },
+  ],
+};
+
+const ENTRY_LEVEL_SEPARATION_DATA = {
+  references: [
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+  ],
+};
+
+// Separations & Transitions - Retirement
+const ACTIVE_DUTY_RETIREMENT_DATA = {
+  references: [
+    { title: "10 U.S.C. Chapter 71 - Retirement", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "DFAS Retired Pay", url: "https://www.dfas.mil/retiredmilitary/", isQuickLink: true },
+  ],
+};
+
+const RESERVE_RETIREMENT_DATA = {
+  references: [
+    { title: "10 U.S.C. Chapter 1223 - Reserve Retirement", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: false },
+  ],
+};
+
+const MEDICAL_RETIREMENT_DATA = {
+  references: [
+    { title: "10 U.S.C. Chapter 61 - Disability Retirement", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "SECNAVINST 1850.4 - IDES", url: "https://www.secnav.navy.mil/", isQuickLink: true },
+    { title: "DFAS Retired Pay", url: "https://www.dfas.mil/retiredmilitary/", isQuickLink: false },
+  ],
+};
+
+const TDRL_DATA = {
+  references: [
+    { title: "10 U.S.C. 1202, 1210 - TDRL", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "SECNAVINST 1850.4 - IDES", url: "https://www.secnav.navy.mil/", isQuickLink: true },
+  ],
+};
+
+const SBP_ELECTIONS_DATA = {
+  references: [
+    { title: "10 U.S.C. Chapter 73 - Survivor Benefit Plan", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "DD Form 2656 - SBP Election", url: "https://www.esd.whs.mil/Directives/forms/", isQuickLink: true },
+    { title: "DFAS SBP Information", url: "https://www.dfas.mil/retiredmilitary/survivors/", isQuickLink: false },
+  ],
+};
+
+// Separations & Transitions - Transition Programs
+const TAP_DATA = {
+  references: [
+    { title: "MCO 1040.31 - Transition Readiness Program", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "TAP Website", url: "https://www.tapevents.mil/", isQuickLink: true },
+  ],
+};
+
+const VA_BENEFITS_DATA = {
+  references: [
+    { title: "VA Website", url: "https://www.va.gov/", isQuickLink: true },
+    { title: "VA Benefits Hotline", url: "tel:1-800-827-1000", isQuickLink: true },
+    { title: "eBenefits", url: "https://www.ebenefits.va.gov/", isQuickLink: false },
+  ],
+};
+
+const EMPLOYMENT_ASSISTANCE_DATA = {
+  references: [
+    { title: "DOL Veterans Employment", url: "https://www.dol.gov/agencies/vets", isQuickLink: true },
+    { title: "USAJOBS", url: "https://www.usajobs.gov/", isQuickLink: true },
+    { title: "Hiring Our Heroes", url: "https://www.hiringourheroes.org/", isQuickLink: false },
+  ],
+};
+
+const EDUCATION_BENEFITS_TRANSFER_DATA = {
+  references: [
+    { title: "38 U.S.C. 3319 - Transfer of Entitlement", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "milConnect TEB", url: "https://milconnect.dmdc.osd.mil/", isQuickLink: true },
+    { title: "VA Transfer of Benefits", url: "https://www.va.gov/education/transfer-post-9-11-gi-bill-benefits/", isQuickLink: false },
+  ],
+};
+
+const SKILLBRIDGE_DATA = {
+  references: [
+    { title: "NAVMC 1700.2B - SkillBridge Employment Training", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MARADMIN 280/24 - SkillBridge Interim Guidance", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "DOD SkillBridge", url: "https://skillbridge.osd.mil/", isQuickLink: true },
+    { title: "DODI 1322.29", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: false },
+    { title: "10 U.S.C. 1143(e)", url: "https://uscode.house.gov/", isQuickLink: false },
+  ],
+};
+
+// Reserve & Mobilization - Reserve Administration
+const RESERVE_DUTY_STATUS_DATA = {
+  references: [
+    { title: "MCO 1001R.1L W/CH 1 - MCRAMM", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "10 U.S.C. Sections 10141-10154", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "Marine Forces Reserve", url: "https://www.marforres.marines.mil/", isQuickLink: false },
+  ],
+};
+
+const IDT_PAY_DATA = {
+  references: [
+    { title: "MCO 1001R.1L Chapter 3 - Reserve Duty and Training", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MARADMIN 157/25 - IDT Travel Reimbursement", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "MARADMIN 571/25 - Appropriate Duty Policy", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "Joint Travel Regulations", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: false },
+  ],
+};
+
+const ANNUAL_TRAINING_ORDERS_DATA = {
+  references: [
+    { title: "MCO 1001R.1L Chapter 7 - Selected Reserve", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "Joint Travel Regulations", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: true },
+    { title: "MROWS", url: "https://mrows.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const RETIREMENT_POINTS_DATA = {
+  references: [
+    { title: "MCO 1001R.1L Chapter 4 - Reserve Retirement", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "10 U.S.C. Chapter 1223 - Reserve Retirement", url: "https://uscode.house.gov/", isQuickLink: true },
+    { title: "DoDI 1215.07 - Service Credit", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: false },
+    { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const RESERVE_PROMOTION_SYSTEM_DATA = {
+  references: [
+    { title: "MCO P1400.32D W/CH 2 - Promotion Manual Vol 2", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MARADMIN 373/24 - FY25 SNCO Board Schedule", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "MCO 1001R.1L Chapter 4 - Reserve Promotions", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCIRSA", url: "https://www.marforres.marines.mil/Units/Force-Headquarters-Group/Marine-Corps-Individual-Reserve-Support-Activity/", isQuickLink: false },
+  ],
+};
+
+// Reserve & Mobilization - Mobilization/Activation
+const MOBILIZATION_ORDERS_DATA = {
+  references: [
+    { title: "MCO 3061.1 - Total Force Mobilization Plan", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 3000.19B - MAID-P", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "10 U.S.C. 12301, 12302, 12304, 12304b", url: "https://uscode.house.gov/", isQuickLink: false },
+  ],
+};
+
+const ADOS_DATA = {
+  references: [
+    { title: "MCO 1001R.1L Chapter 3 - Active Duty Types", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MARFORRES Definitions", url: "https://www.marforres.marines.mil/", isQuickLink: false },
+    { title: "MROWS", url: "https://mrows.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const ADSW_DATA = {
+  references: [
+    { title: "MCO 1000.8", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1001R.1L Chapter 3", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "HQMC M&RA", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const ADT_DATA = {
+  references: [
+    { title: "MCO 1001R.1L Chapter 3 and Chapter 7", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1510R.39B - Reserve Training", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MROWS", url: "https://mrows.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const DEMOBILIZATION_PROCESSING_DATA = {
+  references: [
+    { title: "MCO 3061.1 - TFMDP", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 3000.19B - MAID-P", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1001R.1L Chapter 10 - Mobilization", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "VA Benefits", url: "https://www.va.gov/", isQuickLink: false },
+  ],
+};
+
+// Legal & Disciplinary - Administrative Actions
+const NJP_ARTICLE_15_DATA = {
+  references: [
+    { title: "MCO 5800.16 Vol 14 - NJP", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "JAGINST 5800.7F - JAG Manual", url: "https://www.jag.navy.mil/", isQuickLink: true },
+    { title: "NAVMC 10132 - Unit Punishment Book", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "Article 15 UCMJ", url: "https://www.law.cornell.edu/uscode/text/10/815", isQuickLink: false },
+  ],
+};
+
+const PUNITIVE_LETTERS_REPRIMAND_DATA = {
+  references: [
+    { title: "MCO 5800.16 Vol 14 - NJP", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "JAGINST 5800.7F - JAG Manual", url: "https://www.jag.navy.mil/", isQuickLink: true },
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/", isQuickLink: false },
+  ],
+};
+
+const PAGE_11_COUNSELING_DATA = {
+  references: [
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "Marine Online (MOL)", url: "https://mol.usmc.mil/", isQuickLink: true },
+    { title: "NAVMC 11035 - Admin Change Request", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "BCNR", url: "https://www.secnav.navy.mil/mra/CORB/pages/home.aspx", isQuickLink: false },
+  ],
+};
+
+const ADMINISTRATIVE_INVESTIGATIONS_DATA = {
+  references: [
+    { title: "JAGINST 5800.7F - JAG Manual", url: "https://www.jag.navy.mil/", isQuickLink: true },
+    { title: "MCO 5830.1A - Command Investigations", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "SECNAVINST 5211.5E - Privacy Act", url: "https://www.secnav.navy.mil/", isQuickLink: false },
+  ],
+};
+
+// Legal & Disciplinary - Legal Support
+const COURT_MARTIAL_SUPPORT_DATA = {
+  references: [
+    { title: "Manual for Courts-Martial (MCM)", url: "https://jsc.defense.gov/Portals/99/Documents/MCM.pdf", isQuickLink: true },
+    { title: "JAGINST 5800.7F - JAG Manual", url: "https://www.jag.navy.mil/", isQuickLink: true },
+    { title: "MCO 5800.16 - LSAM", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "JTR Chapter 7 - Witness Travel", url: "https://www.travel.dod.mil/", isQuickLink: false },
+  ],
+};
+
+const LEGAL_ASSISTANCE_DATA = {
+  references: [
+    { title: "10 U.S.C. § 1044 - Legal Assistance", url: "https://www.law.cornell.edu/uscode/text/10/1044", isQuickLink: true },
+    { title: "SCRA Information", url: "https://www.justice.gov/servicemembers", isQuickLink: true },
+    { title: "Marine Corps Legal Services", url: "https://www.hqmc.marines.mil/Agencies/Judge-Advocate-Division/Legal-Services-Support-Section/", isQuickLink: false },
+  ],
+};
+
+const VWAP_DATA = {
+  references: [
+    { title: "DoDI 1030.2 - VWAP", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/103002p.pdf", isQuickLink: true },
+    { title: "UCMJ Article 6b - Victim Rights", url: "https://www.law.cornell.edu/uscode/text/10/806b", isQuickLink: true },
+    { title: "DD Form 2701 - Initial Victim Info", url: "https://www.esd.whs.mil/", isQuickLink: false },
+    { title: "Crime Victims Rights Act", url: "https://www.justice.gov/usao/resources/crime-victims-rights-ombudsman/victims-rights-act", isQuickLink: false },
+  ],
+};
+
+const MILITARY_PROTECTIVE_ORDERS_DATA = {
+  references: [
+    { title: "DoDI 6400.06 - Domestic Abuse", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/640006p.pdf", isQuickLink: true },
+    { title: "DD Form 2873 - MPO", url: "https://www.esd.whs.mil/", isQuickLink: true },
+    { title: "18 U.S.C. § 2265 - Full Faith & Credit", url: "https://www.law.cornell.edu/uscode/text/18/2265", isQuickLink: false },
+    { title: "NCIC Protection Order File", url: "https://www.fbi.gov/services/cjis/ncic", isQuickLink: false },
+  ],
+};
+
+const IG_COMPLAINTS_DATA = {
+  references: [
+    { title: "DoDI 7050.06 - Whistleblower Protection", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/705006p.pdf", isQuickLink: true },
+    { title: "10 U.S.C. § 1034 - Protected Communications", url: "https://www.law.cornell.edu/uscode/text/10/1034", isQuickLink: true },
+    { title: "DoD Hotline", url: "https://www.dodig.mil/hotline/", isQuickLink: true },
+    { title: "HQMC Inspector General", url: "https://www.hqmc.marines.mil/igmc/", isQuickLink: false },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -1989,7 +2346,39 @@ function toTitle(slug: string) {
     .replace(/\bDsst\b/g, "DSST")
     .replace(/\bPla\b/g, "PLA")
     .replace(/\bTa\b/g, "TA")
-    .replace(/\bGi\b/g, "GI");
+    .replace(/\bGi\b/g, "GI")
+    .replace(/\bEas\b/g, "EAS")
+    .replace(/\bIdes\b/g, "IDES")
+    .replace(/\bTdrl\b/g, "TDRL")
+    .replace(/\bSbp\b/g, "SBP")
+    .replace(/\bTap\b/g, "TAP")
+    .replace(/\bVa\b/g, "VA")
+    .replace(/\bIdt\b/g, "IDT")
+    .replace(/\bAdos\b/g, "ADOS")
+    .replace(/\bAdsw\b/g, "ADSW")
+    .replace(/\bAdt\b/g, "ADT")
+    .replace(/\bSmcr\b/g, "SMCR")
+    .replace(/\bIma\b/g, "IMA")
+    .replace(/\bIrr\b/g, "IRR")
+    .replace(/\bCrcr\b/g, "CRCR")
+    .replace(/\bMrows\b/g, "MROWS")
+    .replace(/\bMcirsa\b/g, "MCIRSA")
+    .replace(/\bAt\b/g, "AT")
+    .replace(/\bNjp\b/g, "NJP")
+    .replace(/\bPlor\b/g, "PLOR")
+    .replace(/\bNploc\b/g, "NPLOC")
+    .replace(/\bVwap\b/g, "VWAP")
+    .replace(/\bMpo\b/g, "MPO")
+    .replace(/\bNcic\b/g, "NCIC")
+    .replace(/\bIg\b/g, "IG")
+    .replace(/\bUcmj\b/g, "UCMJ")
+    .replace(/\bSja\b/g, "SJA")
+    .replace(/\bJagman\b/g, "JAGMAN")
+    .replace(/\bScra\b/g, "SCRA")
+    .replace(/\bSvc\b/g, "SVC")
+    .replace(/\bLro\b/g, "LRO")
+    .replace(/\bPerb\b/g, "PERB")
+    .replace(/\bMmpb\b/g, "MMPB");
 }
 
 export default async function RoleItemPage({ params }: { params: Promise<Params> }) {
@@ -2094,6 +2483,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "mos-changes-lateral-moves": <MOSChangesContent data={MOS_CHANGES_DATA} />,
     "fitness-reports": <FitnessReportsContent data={FITNESS_REPORTS_DATA} />,
     "performance-evaluation-appeals": <PerformanceEvaluationAppealsContent data={PERFORMANCE_EVALUATION_APPEALS_DATA} />,
+    "perb": <PERBContent data={PERB_DATA} />,
     "rank-reduction": <RankReductionContent data={RANK_REDUCTION_DATA} />,
     "frocking": <FrockingContent data={FROCKING_DATA} />,
     "date-of-rank-corrections": <DateOfRankCorrectionsContent data={DATE_OF_RANK_CORRECTIONS_DATA} />,
@@ -2147,6 +2537,50 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "certification-reimbursement": <CertificationReimbursementContent data={CERTIFICATION_REIMBURSEMENT_DATA} />,
     "language-training-dlpt": <LanguageTrainingDLPTContent data={LANGUAGE_TRAINING_DLPT_DATA} />,
     "technical-certifications": <TechnicalCertificationsContent data={TECHNICAL_CERTIFICATIONS_DATA} />,
+    // Separations & Transitions - Voluntary Separation
+    "eas": <EASContent data={EAS_DATA} />,
+    "voluntary-early-release": <VoluntaryEarlyReleaseContent data={VOLUNTARY_EARLY_RELEASE_DATA} />,
+    "resignation-officers": <ResignationOfficersContent data={RESIGNATION_OFFICERS_DATA} />,
+    // Separations & Transitions - Involuntary Separation
+    "administrative-separation": <AdministrativeSeparationContent data={ADMINISTRATIVE_SEPARATION_DATA} />,
+    "medical-separation": <MedicalSeparationContent data={MEDICAL_SEPARATION_DATA} />,
+    "failure-to-meet-standards": <FailureToMeetStandardsContent data={FAILURE_TO_MEET_STANDARDS_DATA} />,
+    "entry-level-separation": <EntryLevelSeparationContent data={ENTRY_LEVEL_SEPARATION_DATA} />,
+    // Separations & Transitions - Retirement
+    "active-duty-retirement": <ActiveDutyRetirementContent data={ACTIVE_DUTY_RETIREMENT_DATA} />,
+    "reserve-retirement": <ReserveRetirementContent data={RESERVE_RETIREMENT_DATA} />,
+    "medical-retirement": <MedicalRetirementContent data={MEDICAL_RETIREMENT_DATA} />,
+    "tdrl": <TDRLContent data={TDRL_DATA} />,
+    "sbp-elections": <SBPElectionsContent data={SBP_ELECTIONS_DATA} />,
+    // Separations & Transitions - Transition Programs
+    "tap": <TAPContent data={TAP_DATA} />,
+    "va-benefits": <VABenefitsContent data={VA_BENEFITS_DATA} />,
+    "employment-assistance": <EmploymentAssistanceContent data={EMPLOYMENT_ASSISTANCE_DATA} />,
+    "education-benefits-transfer": <EducationBenefitsTransferContent data={EDUCATION_BENEFITS_TRANSFER_DATA} />,
+    "skillbridge": <SkillBridgeContent data={SKILLBRIDGE_DATA} />,
+    // Reserve & Mobilization - Reserve Administration
+    "reserve-duty-status": <ReserveDutyStatusContent data={RESERVE_DUTY_STATUS_DATA} />,
+    "idt-pay": <IDTPayContent data={IDT_PAY_DATA} />,
+    "annual-training-orders": <AnnualTrainingOrdersContent data={ANNUAL_TRAINING_ORDERS_DATA} />,
+    "retirement-points": <RetirementPointsContent data={RETIREMENT_POINTS_DATA} />,
+    "reserve-promotion-system": <ReservePromotionSystemContent data={RESERVE_PROMOTION_SYSTEM_DATA} />,
+    // Reserve & Mobilization - Mobilization/Activation
+    "mobilization-orders": <MobilizationOrdersContent data={MOBILIZATION_ORDERS_DATA} />,
+    "ados": <ADOSContent data={ADOS_DATA} />,
+    "adsw": <ADSWContent data={ADSW_DATA} />,
+    "adt": <ADTContent data={ADT_DATA} />,
+    "demobilization-processing": <DemobilizationProcessingContent data={DEMOBILIZATION_PROCESSING_DATA} />,
+    // Legal & Disciplinary - Administrative Actions
+    "njp-article-15": <NJPArticle15Content data={NJP_ARTICLE_15_DATA} />,
+    "punitive-letters-reprimand": <PunitiveLettersReprimandContent data={PUNITIVE_LETTERS_REPRIMAND_DATA} />,
+    "page-11-counseling": <Page11CounselingContent data={PAGE_11_COUNSELING_DATA} />,
+    "administrative-investigations": <AdministrativeInvestigationsContent data={ADMINISTRATIVE_INVESTIGATIONS_DATA} />,
+    // Legal & Disciplinary - Legal Support
+    "court-martial-support": <CourtMartialSupportContent data={COURT_MARTIAL_SUPPORT_DATA} />,
+    "legal-assistance": <LegalAssistanceContent data={LEGAL_ASSISTANCE_DATA} />,
+    "vwap": <VWAPContent data={VWAP_DATA} />,
+    "military-protective-orders": <MilitaryProtectiveOrdersContent data={MILITARY_PROTECTIVE_ORDERS_DATA} />,
+    "ig-complaints": <IGComplaintsContent data={IG_COMPLAINTS_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -2268,6 +2702,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "mos-changes-lateral-moves",
     "fitness-reports",
     "performance-evaluation-appeals",
+    "perb",
     "rank-reduction",
     "frocking",
     "date-of-rank-corrections",
@@ -2332,6 +2767,59 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "language-training-dlpt",
     "technical-certifications",
   ];
+  const separationsTransitionsSection = "separations-transitions";
+  const separationsTransitionsSlugs = [
+    // Voluntary Separation
+    "eas",
+    "voluntary-early-release",
+    "resignation-officers",
+    // Involuntary Separation
+    "administrative-separation",
+    "medical-separation",
+    "failure-to-meet-standards",
+    "entry-level-separation",
+    // Retirement
+    "active-duty-retirement",
+    "reserve-retirement",
+    "medical-retirement",
+    "tdrl",
+    "sbp-elections",
+    // Transition Programs
+    "tap",
+    "va-benefits",
+    "employment-assistance",
+    "education-benefits-transfer",
+    "skillbridge",
+  ];
+  const reserveMobilizationSection = "reserve-mobilization";
+  const reserveMobilizationSlugs = [
+    // Reserve Administration
+    "reserve-duty-status",
+    "idt-pay",
+    "annual-training-orders",
+    "retirement-points",
+    "reserve-promotion-system",
+    // Mobilization/Activation
+    "mobilization-orders",
+    "ados",
+    "adsw",
+    "adt",
+    "demobilization-processing",
+  ];
+  const legalDisciplinarySection = "legal-disciplinary";
+  const legalDisciplinarySlugs = [
+    // Administrative Actions
+    "njp-article-15",
+    "punitive-letters-reprimand",
+    "page-11-counseling",
+    "administrative-investigations",
+    // Legal Support
+    "court-martial-support",
+    "legal-assistance",
+    "vwap",
+    "military-protective-orders",
+    "ig-complaints",
+  ];
   const params: { role: Role; section: string; item: string }[] = [];
   for (const role of roles) {
     for (const item of payAllowancesSlugs) params.push({ role, section: payAllowancesSection, item });
@@ -2342,6 +2830,9 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     for (const item of deploymentSlugs) params.push({ role, section: deploymentSection, item });
     for (const item of insuranceHealthcareSlugs) params.push({ role, section: insuranceHealthcareSection, item });
     for (const item of educationTrainingSlugs) params.push({ role, section: educationTrainingSection, item });
+    for (const item of separationsTransitionsSlugs) params.push({ role, section: separationsTransitionsSection, item });
+    for (const item of reserveMobilizationSlugs) params.push({ role, section: reserveMobilizationSection, item });
+    for (const item of legalDisciplinarySlugs) params.push({ role, section: legalDisciplinarySection, item });
   }
   return params;
 }

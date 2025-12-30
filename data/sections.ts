@@ -219,6 +219,7 @@ export const SECTIONS: Record<string, Section> = {
         items: [
           { title: "Fitness Reports", slug: "fitness-reports", desc: "Understanding and reviewing fitness reports for SNCOs" },
           { title: "Performance Evaluation Appeals", slug: "performance-evaluation-appeals", desc: "Appealing adverse performance evaluations" },
+          { title: "PERB (Fitness Report Appeals)", slug: "perb", desc: "Appeal fitness reports through the Performance Evaluation Review Board" },
         ],
       },
       {
@@ -325,6 +326,100 @@ export const SECTIONS: Record<string, Section> = {
           { title: "Certification Reimbursement", slug: "certification-reimbursement", desc: "Get reimbursed for professional certification costs" },
           { title: "Language Training (DLPT)", slug: "language-training-dlpt", desc: "Develop language proficiency and earn FLPP" },
           { title: "Technical Certifications", slug: "technical-certifications", desc: "Industry certifications in IT, aviation, automotive, and more" },
+        ],
+      },
+    ],
+  },
+  "separations-transitions": {
+    title: "Separations & Transitions",
+    intro: "Separations and transitions mark the end of active duty service and the beginning of civilian or retired life. Proper planning and completion of required actions ensures you receive all earned benefits, maintain eligibility for VA services, and successfully transition to your next chapter. Start transition planning early to maximize opportunities and avoid delays.",
+    groups: [
+      {
+        title: "Voluntary Separation",
+        items: [
+          { title: "End of Active Service (EAS)", slug: "eas", desc: "Plan your separation at contract expiration" },
+          { title: "Voluntary Early Release", slug: "voluntary-early-release", desc: "Separate before EAS for education, employment, or hardship" },
+          { title: "Resignation (Officers)", slug: "resignation-officers", desc: "Officer resignation process and service obligations" },
+        ],
+      },
+      {
+        title: "Involuntary Separation",
+        items: [
+          { title: "Administrative Separation", slug: "administrative-separation", desc: "Involuntary separation proceedings and due process" },
+          { title: "Medical Separation/Retirement", slug: "medical-separation", desc: "IDES process for medical conditions" },
+          { title: "Failure to Meet Standards", slug: "failure-to-meet-standards", desc: "Separation for fitness, weight, or performance failures" },
+          { title: "Entry-Level Separation", slug: "entry-level-separation", desc: "Separation within first 180 days of service" },
+        ],
+      },
+      {
+        title: "Retirement",
+        items: [
+          { title: "Active Duty Retirement", slug: "active-duty-retirement", desc: "Retire after 20+ years of active service" },
+          { title: "Reserve Retirement", slug: "reserve-retirement", desc: "Retire after 20 qualifying years of reserve service" },
+          { title: "Medical Retirement", slug: "medical-retirement", desc: "Retire due to disability rating of 30% or higher" },
+          { title: "Temporary Disability Retired List (TDRL)", slug: "tdrl", desc: "Temporary retirement for unstable conditions" },
+          { title: "Survivor Benefit Plan (SBP) Elections", slug: "sbp-elections", desc: "Protect your family with SBP coverage at retirement" },
+        ],
+      },
+      {
+        title: "Transition Programs",
+        items: [
+          { title: "Transition Assistance Program (TAP)", slug: "tap", desc: "Complete mandatory transition workshops" },
+          { title: "Veterans Affairs (VA) Benefits", slug: "va-benefits", desc: "Access earned veterans benefits" },
+          { title: "Employment Assistance", slug: "employment-assistance", desc: "Find civilian employment after service" },
+          { title: "Education Benefits Transfer", slug: "education-benefits-transfer", desc: "Transfer GI Bill to family before separating" },
+          { title: "SkillBridge Program", slug: "skillbridge", desc: "Gain civilian work experience before separation" },
+        ],
+      },
+    ],
+  },
+  "reserve-mobilization": {
+    title: "Reserve & Mobilization",
+    intro: "Reserve administration and mobilization guidance for Selected Marine Corps Reserve (SMCR), Individual Mobilization Augmentees (IMA), Individual Ready Reserve (IRR), and Active Reserve (AR) Marines. Understand duty status categories, training requirements, retirement points, and activation procedures to effectively manage your Reserve career and meet readiness requirements.",
+    groups: [
+      {
+        title: "Reserve Administration",
+        items: [
+          { title: "Reserve Duty Status", slug: "reserve-duty-status", desc: "Understand your assignment category within the Marine Corps Reserve" },
+          { title: "Inactive Duty for Training (IDT) Pay", slug: "idt-pay", desc: "Earn pay and retirement points during scheduled drill periods" },
+          { title: "Annual Training (AT) Orders", slug: "annual-training-orders", desc: "Complete your mandatory annual active duty training requirement" },
+          { title: "Retirement Points", slug: "retirement-points", desc: "Track points to qualify for Reserve retirement" },
+          { title: "Reserve Promotion System", slug: "reserve-promotion-system", desc: "Advance through cutting scores, selection boards, and meritorious promotions" },
+        ],
+      },
+      {
+        title: "Mobilization/Activation",
+        items: [
+          { title: "Mobilization Orders", slug: "mobilization-orders", desc: "Involuntary activation authorities and processing requirements" },
+          { title: "Active Duty for Operational Support (ADOS)", slug: "ados", desc: "Volunteer for active duty tours supporting AC or RC missions" },
+          { title: "Active Duty for Special Work (ADSW)", slug: "adsw", desc: "Specialized duty beyond normal training requirements" },
+          { title: "Active Duty for Training (ADT)", slug: "adt", desc: "Complete required training on active duty orders" },
+          { title: "Demobilization Processing", slug: "demobilization-processing", desc: "Transition from mobilization back to Reserve status" },
+        ],
+      },
+    ],
+  },
+  "legal-disciplinary": {
+    title: "Legal & Disciplinary",
+    intro: "Legal and disciplinary administration for commanders and administrative personnel. Covers non-judicial punishment processing, administrative investigations, court-martial support, legal assistance programs, and victim witness assistance. Ensures proper documentation of disciplinary actions while protecting due process rights.",
+    groups: [
+      {
+        title: "Administrative Actions",
+        items: [
+          { title: "NJP / Article 15", slug: "njp-article-15", desc: "Non-Judicial Punishment processing and Unit Punishment Book" },
+          { title: "Punitive Letters of Reprimand", slug: "punitive-letters-reprimand", desc: "PLOR drafting and filing determinations" },
+          { title: "Page 11 Counseling", slug: "page-11-counseling", desc: "Administrative Remarks entry requirements" },
+          { title: "Administrative Investigations", slug: "administrative-investigations", desc: "Command investigation support and documentation" },
+        ],
+      },
+      {
+        title: "Legal Support",
+        items: [
+          { title: "Court-Martial Support", slug: "court-martial-support", desc: "Unit-level administrative support for judicial proceedings" },
+          { title: "Legal Assistance", slug: "legal-assistance", desc: "Free legal services for personal civil matters" },
+          { title: "Victim Witness Assistance (VWAP)", slug: "vwap", desc: "Victim and Witness Assistance Program support" },
+          { title: "Military Protective Orders", slug: "military-protective-orders", desc: "MPO processing and NCIC registration" },
+          { title: "IG Complaints", slug: "ig-complaints", desc: "Inspector General complaint procedures" },
         ],
       },
     ],
