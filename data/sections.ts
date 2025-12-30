@@ -2,6 +2,7 @@ export type SectionItem = {
   title: string;
   slug?: string;
   desc: string;
+  isRef?: boolean; // Cross-reference to primary location
 };
 
 export type SectionGroup = {
@@ -16,42 +17,10 @@ export type Section = {
 };
 
 export const SECTIONS: Record<string, Section> = {
-  "personnel-administration": {
-    title: "Personnel Administration",
-    intro: "Comprehensive guidance for all personnel administration actions throughout your Marine Corps career. From check-in procedures to records management, find step-by-step procedures and required documentation.",
-    groups: [
-      {
-        title: "Inbound Processing",
-        items: [
-          { title: "Check-In Procedures", slug: "check-in-procedures", desc: "Step-by-step guide for reporting to your new command" },
-          { title: "Sponsorship Programs", slug: "sponsorship-programs", desc: "Unit sponsorship program requirements and responsibilities" },
-          { title: "Initial BAH/BAS Verification", slug: "initial-bah-bas-verification", desc: "Verify and establish housing and subsistence allowances" },
-          { title: "Records Review", slug: "records-review", desc: "Review and update personnel records upon check-in" },
-          { title: "Security Clearance Transfer", slug: "security-clearance-transfer", desc: "Transfer and verify security clearance to new command" },
-        ],
-      },
-      {
-        title: "Outbound Processing",
-        items: [
-          { title: "Checkout Procedures", slug: "checkout-procedures", desc: "Complete checkout requirements before departing command" },
-          { title: "Final Pay Settlement", slug: "final-pay-settlement", desc: "Ensure accurate final pay and entitlements" },
-          { title: "Records Transfer", slug: "records-transfer", desc: "Transfer service records to gaining command or archive" },
-          { title: "Leave Settlement", slug: "leave-settlement", desc: "Settle leave balance and terminal leave processing" },
-        ],
-      },
-      {
-        title: "Personnel Records",
-        items: [
-          { title: "Official Military Personnel File (OMPF) Management", slug: "ompf-management", desc: "Understanding and managing your official personnel file" },
-          { title: "Page 11 Entries (Administrative Remarks)", slug: "page-11-entries", desc: "Administrative remarks and counseling documentation" },
-          { title: "Service Record Book (SRB) Corrections", slug: "srb-corrections", desc: "Correcting errors in your service record book" },
-          { title: "Awards and Decorations", slug: "awards-decorations", desc: "Processing and documenting military awards" },
-          { title: "Medical Records", slug: "medical-records", desc: "Maintaining and accessing medical documentation" },
-          { title: "Training Jackets", slug: "training-jackets", desc: "Training records and professional military education" },
-        ],
-      },
-    ],
-  },
+  // ============================================
+  // MAIN SECTIONS (Alphabetical Order)
+  // ============================================
+
   "dependency-management": {
     title: "Dependency Management",
     intro: "Comprehensive guidance for managing dependent status changes throughout your Marine Corps career. From adding new dependents to updating records and navigating special programs, find step-by-step procedures and required documentation.",
@@ -85,6 +54,142 @@ export const SECTIONS: Record<string, Section> = {
       },
     ],
   },
+
+  "deployment-support": {
+    title: "Deployment Support",
+    intro: "Comprehensive guidance for all administrative actions required before, during, and after operational deployments. Proper preparation ensures you and your family are protected, your pay and entitlements are correct, and your transition back home goes smoothly.",
+    groups: [
+      {
+        title: "Pre-Deployment",
+        items: [
+          { title: "Deployment Orders", slug: "deployment-orders", desc: "Verify your deployment orders are accurate" },
+          { title: "Medical Readiness", slug: "medical-readiness", desc: "Meet all medical requirements for deployment" },
+          { title: "Dental Readiness", slug: "dental-readiness", desc: "Achieve deployable dental status (Class 1 or 2)" },
+          { title: "Family Care Plan Validation", slug: "family-care-plan-validation", desc: "Ensure your dependent care plan is current and validated", isRef: true },
+          { title: "Power of Attorney", slug: "power-of-attorney", desc: "Grant legal authority to someone while deployed", isRef: true },
+          { title: "SGLI Beneficiary Updates", slug: "sgli-beneficiary-updates", desc: "Ensure your life insurance beneficiaries are current", isRef: true },
+          { title: "Will Preparation", slug: "will-preparation", desc: "Create or update your will before deployment", isRef: true },
+        ],
+      },
+      {
+        title: "During Deployment",
+        items: [
+          { title: "HFP/IDP Verification", slug: "hfp-idp-verification", desc: "Verify Hostile Fire and Imminent Danger Pay on your LES" },
+          { title: "FSA Processing", slug: "fsa-processing", desc: "Receive FSA when separated from dependents over 30 days" },
+          { title: "Dependent Support Services", slug: "dependent-support-services", desc: "Connect your family with support during deployment" },
+          { title: "Emergency Leave Requests", slug: "emergency-leave-requests", desc: "Return home for family emergencies during deployment" },
+        ],
+      },
+      {
+        title: "Post-Deployment",
+        items: [
+          { title: "Reintegration Processing", slug: "reintegration-processing", desc: "Complete required actions when returning from deployment" },
+          { title: "Pay Entitlement Verification", slug: "pay-entitlement-verification", desc: "Verify your pay is correct after returning" },
+          { title: "Leave Accrual Review", slug: "leave-accrual-review", desc: "Check your leave balance after deployment" },
+        ],
+      },
+    ],
+  },
+
+  "education-training": {
+    title: "Education & Training",
+    intro: "Education and training opportunities enhance your military effectiveness and prepare you for career advancement. The Marine Corps invests in your professional development through military schools, tuition assistance, and credentialing programs. Taking advantage of these programs improves your promotion competitiveness, expands your skills, and prepares you for post-military success.",
+    groups: [
+      {
+        title: "Military Education",
+        items: [
+          { title: "Professional Military Education (PME)", slug: "pme", desc: "Complete required PME for promotion eligibility" },
+          { title: "Resident and Non-Resident Schools", slug: "resident-non-resident-schools", desc: "Military education delivery formats and school options" },
+          { title: "Command and Staff College", slug: "command-staff-college", desc: "Intermediate-level PME for field grade officers and senior enlisted" },
+          { title: "War College", slug: "war-college", desc: "Senior-level PME for strategic leadership development" },
+          { title: "MOS-Specific Training", slug: "mos-specific-training", desc: "Technical proficiency training for your occupational specialty" },
+        ],
+      },
+      {
+        title: "Civilian Education",
+        items: [
+          { title: "Tuition Assistance (TA)", slug: "tuition-assistance", desc: "Fund college courses while on active duty" },
+          { title: "GI Bill Benefits", slug: "gi-bill-benefits", desc: "Post-9/11 and Montgomery GI Bill education benefits" },
+          { title: "Post-9/11 GI Bill Transfer", slug: "gi-bill-transfer", desc: "Transfer education benefits to spouse or children" },
+          { title: "Joint Services Transcript (JST)", slug: "jst", desc: "Convert military training to college credit" },
+          { title: "College Credit for Military Training", slug: "college-credit-military", desc: "Maximize credit through CLEP, DSST, and portfolio assessment" },
+        ],
+      },
+      {
+        title: "Professional Development",
+        items: [
+          { title: "Credentialing Programs", slug: "credentialing-programs", desc: "Obtain civilian certifications through Marine Corps COOL" },
+          { title: "Certification Reimbursement", slug: "certification-reimbursement", desc: "Get reimbursed for professional certification costs" },
+          { title: "Language Training (DLPT)", slug: "language-training-dlpt", desc: "Develop language proficiency and earn FLPP" },
+          { title: "Technical Certifications", slug: "technical-certifications", desc: "Industry certifications in IT, aviation, automotive, and more" },
+        ],
+      },
+      {
+        title: "Training Records",
+        items: [
+          { title: "Training Record Updates", slug: "training-record-updates", desc: "Update and maintain training documentation" },
+          { title: "Education Records", slug: "education-records", desc: "Manage education documentation in your official record" },
+        ],
+      },
+    ],
+  },
+
+  "insurance-healthcare": {
+    title: "Insurance & Healthcare",
+    intro: "Insurance and healthcare benefits protect you and your family from financial hardship due to death, injury, or medical expenses. Understanding your coverage options ensures you have adequate protection and can make informed decisions about optional benefits.",
+    groups: [
+      {
+        title: "Life Insurance",
+        items: [
+          { title: "SGLI (Servicemembers' Group Life Insurance)", slug: "sgli", desc: "Low-cost group life insurance up to $500,000" },
+          { title: "FSGLI (Family SGLI)", slug: "fsgli", desc: "Life insurance for spouse and dependent children" },
+          { title: "TSGLI (Traumatic Injury)", slug: "tsgli", desc: "Payment for traumatic injuries resulting in qualifying losses" },
+          { title: "VGLI (Veterans' Group Life Insurance)", slug: "vgli", desc: "Convert SGLI to veteran life insurance after separation" },
+          { title: "Beneficiary Updates", slug: "beneficiary-updates", desc: "Keep your life insurance beneficiaries current" },
+        ],
+      },
+      {
+        title: "Healthcare Benefits",
+        items: [
+          { title: "TRICARE Enrollment", slug: "tricare-enrollment", desc: "Enroll dependents in TRICARE healthcare coverage" },
+          { title: "Healthcare FSA (HCFSA)", slug: "hcfsa", desc: "Pre-tax dollars for eligible medical expenses" },
+          { title: "EFMP Medical Screening", slug: "efmp-medical-screening", desc: "Medical screening for Exceptional Family Member Program", isRef: true },
+          { title: "Dental Coverage (FEDVIP)", slug: "dental-coverage-fedvip", desc: "Dental insurance for family members through FEDVIP" },
+          { title: "Vision Coverage", slug: "vision-coverage", desc: "Vision insurance through FEDVIP for eye exams and eyewear" },
+        ],
+      },
+    ],
+  },
+
+  "legal-disciplinary": {
+    title: "Legal & Disciplinary",
+    intro: "Legal and disciplinary administration for commanders and administrative personnel. Covers non-judicial punishment processing, administrative investigations, court-martial support, legal assistance programs, and victim witness assistance. Ensures proper documentation of disciplinary actions while protecting due process rights.",
+    groups: [
+      {
+        title: "Administrative Actions",
+        items: [
+          { title: "NJP / Article 15", slug: "njp-article-15", desc: "Non-Judicial Punishment processing and Unit Punishment Book" },
+          { title: "Punitive Letters of Reprimand", slug: "punitive-letters-reprimand", desc: "PLOR drafting and filing determinations" },
+          { title: "Page 11 Counseling", slug: "page-11-counseling", desc: "Administrative Remarks entry requirements" },
+          { title: "Administrative Investigations", slug: "administrative-investigations", desc: "Command investigation support and documentation" },
+          { title: "Rank Reduction", slug: "rank-reduction", desc: "Administrative and punitive reduction in rank procedures" },
+        ],
+      },
+      {
+        title: "Legal Support",
+        items: [
+          { title: "Court-Martial Support", slug: "court-martial-support", desc: "Unit-level administrative support for judicial proceedings" },
+          { title: "Legal Assistance", slug: "legal-assistance", desc: "Free legal services for personal civil matters" },
+          { title: "Power of Attorney", slug: "power-of-attorney", desc: "Grant legal authority to act on your behalf" },
+          { title: "Will Preparation", slug: "will-preparation", desc: "Create or update your legal will" },
+          { title: "Victim Witness Assistance (VWAP)", slug: "vwap", desc: "Victim and Witness Assistance Program support" },
+          { title: "Military Protective Orders", slug: "military-protective-orders", desc: "MPO processing and NCIC registration" },
+          { title: "IG Complaints", slug: "ig-complaints", desc: "Inspector General complaint procedures" },
+        ],
+      },
+    ],
+  },
+
   "pay-allowances": {
     title: "Pay & Allowances",
     intro: "Your pay supports your mission and your family. This page explains each type of pay and allowance, what documents you need to provide, and how to take action.",
@@ -154,42 +259,39 @@ export const SECTIONS: Record<string, Section> = {
       },
     ],
   },
-  "travel-transportation": {
-    title: "Travel & Transportation",
-    intro: "This page covers all travel entitlements and transportation support for Marines. Whether you are moving to a new duty station, going on temporary duty, or need to understand your travel benefits, you will find guidance and resources here.",
+
+  "personnel-administration": {
+    title: "Personnel Administration",
+    intro: "Comprehensive guidance for all personnel administration actions throughout your Marine Corps career. From check-in procedures to records management, find step-by-step procedures and required documentation.",
     groups: [
       {
-        title: "Permanent Change of Station (PCS)",
+        title: "Inbound Processing",
         items: [
-          { title: "PCS Orders Processing", slug: "pcs-orders-processing", desc: "How to receive, review, and execute your PCS orders" },
-          { title: "Household Goods (HHG) Shipment", slug: "household-goods-shipment", desc: "Government-arranged shipping of your belongings to new duty station" },
-          { title: "Personally Procured Move (PPM/DITY)", slug: "personally-procured-move", desc: "Move yourself and get reimbursed for authorized expenses" },
-          { title: "Storage", slug: "pcs-storage", desc: "Short-term and long-term storage options during PCS" },
-          { title: "Dislocation Allowance (DLA)", slug: "dislocation-allowance", desc: "One-time payment to offset moving costs based on rank and dependents" },
-          { title: "Temporary Lodging Expense (TLE)", slug: "temporary-lodging-expense", desc: "Reimbursement for lodging during PCS transition periods" },
-          { title: "Vehicle Processing and Storage", slug: "vehicle-processing-storage", desc: "Ship or store your POV during OCONUS assignments" },
+          { title: "Check-In Procedures", slug: "check-in-procedures", desc: "Step-by-step guide for reporting to your new command" },
+          { title: "Sponsorship Programs", slug: "sponsorship-programs", desc: "Unit sponsorship program requirements and responsibilities" },
+          { title: "Initial BAH/BAS Verification", slug: "initial-bah-bas-verification", desc: "Verify and establish housing and subsistence allowances" },
+          { title: "Records Review", slug: "records-review", desc: "Review and update personnel records upon check-in" },
+          { title: "Security Clearance Transfer", slug: "security-clearance-transfer", desc: "Transfer and verify security clearance to new command" },
         ],
       },
       {
-        title: "Temporary Duty (TAD/TDY)",
+        title: "Outbound Processing",
         items: [
-          { title: "TAD Orders", slug: "tad-orders", desc: "Temporary additional duty orders for training, missions, or assignments" },
-          { title: "Per Diem Rates", slug: "per-diem-rates", desc: "Daily allowance for lodging, meals, and incidentals while traveling" },
-          { title: "Travel Voucher Submission (DD 1351-2)", slug: "travel-voucher-submission", desc: "How to complete and submit your travel claim for reimbursement" },
-          { title: "Defense Travel System (DTS) Authorization", slug: "dts-authorization", desc: "Creating and routing travel authorizations in DTS" },
+          { title: "Checkout Procedures", slug: "checkout-procedures", desc: "Complete checkout requirements before departing command" },
+          { title: "Final Pay Settlement", slug: "final-pay-settlement", desc: "Ensure accurate final pay and entitlements" },
+          { title: "Records Transfer", slug: "records-transfer", desc: "Transfer service records to gaining command or archive" },
+          { title: "Leave Settlement", slug: "leave-settlement", desc: "Settle leave balance and terminal leave processing" },
         ],
       },
       {
-        title: "Transportation Entitlements",
+        title: "Awards & Recognition",
         items: [
-          { title: "Government Travel Charge Card (GTCC)", slug: "government-travel-charge-card", desc: "Mandatory card for official travel expenses" },
-          { title: "Mileage Reimbursement", slug: "mileage-reimbursement", desc: "POV mileage rates and reimbursement procedures" },
-          { title: "Advance Travel Pay", slug: "advance-travel-pay", desc: "Request advance funds before official travel" },
-          { title: "Leave En Route Travel", slug: "leave-en-route-travel", desc: "Taking authorized leave during PCS travel" },
+          { title: "Awards and Decorations", slug: "awards-decorations", desc: "Processing and documenting military awards" },
         ],
       },
     ],
   },
+
   "promotions-career-progression": {
     title: "Promotions & Career Progression",
     intro: "Comprehensive guidance for promotions, evaluations, and career progression within the Marine Corps. From JEPES scores to selection boards, find step-by-step procedures for advancement and MOS management.",
@@ -208,17 +310,15 @@ export const SECTIONS: Record<string, Section> = {
       {
         title: "Time in Grade & Rank",
         items: [
-          { title: "TIG Corrections", slug: "tig-corrections", desc: "Correcting Time in Grade calculation errors" },
-          { title: "Date of Rank Corrections", slug: "date-of-rank-corrections", desc: "Correcting errors in Date of Rank records" },
+          { title: "TIG Corrections", slug: "tig-corrections", desc: "Correcting Time in Grade calculation errors", isRef: true },
+          { title: "Date of Rank Corrections", slug: "date-of-rank-corrections", desc: "Correcting errors in Date of Rank records", isRef: true },
           { title: "Frocking", slug: "frocking", desc: "Wearing rank before promotion effective date" },
-          { title: "Rank Reduction", slug: "rank-reduction", desc: "Administrative and punitive reduction in rank procedures" },
         ],
       },
       {
         title: "Performance Evaluations",
         items: [
           { title: "Fitness Reports", slug: "fitness-reports", desc: "Understanding and reviewing fitness reports for SNCOs" },
-          { title: "Performance Evaluation Appeals", slug: "performance-evaluation-appeals", desc: "Appealing adverse performance evaluations" },
           { title: "PERB (Fitness Report Appeals)", slug: "perb", desc: "Appeal fitness reports through the Performance Evaluation Review Board" },
         ],
       },
@@ -233,103 +333,65 @@ export const SECTIONS: Record<string, Section> = {
       },
     ],
   },
-  "deployment-support": {
-    title: "Deployment Support",
-    intro: "Comprehensive guidance for all administrative actions required before, during, and after operational deployments. Proper preparation ensures you and your family are protected, your pay and entitlements are correct, and your transition back home goes smoothly.",
+
+  "records-corrections": {
+    title: "Records & Corrections",
+    intro: "Official military records document your entire career and affect pay, benefits, promotions, and veteran status. Maintaining accurate records and correcting errors promptly protects your entitlements and ensures your service is properly documented. This section covers official record management and correction procedures through administrative and board processes.",
     groups: [
       {
-        title: "Pre-Deployment",
+        title: "Official Records",
         items: [
-          { title: "Deployment Orders", slug: "deployment-orders", desc: "Verify your deployment orders are accurate" },
-          { title: "Medical Readiness", slug: "medical-readiness", desc: "Meet all medical requirements for deployment" },
-          { title: "Dental Readiness", slug: "dental-readiness", desc: "Achieve deployable dental status (Class 1 or 2)" },
-          { title: "Family Care Plan Validation", slug: "family-care-plan-validation", desc: "Ensure your dependent care plan is current and validated" },
-          { title: "Power of Attorney", slug: "power-of-attorney", desc: "Grant legal authority to someone while deployed" },
-          { title: "SGLI Beneficiary Updates", slug: "sgli-beneficiary-updates", desc: "Ensure your life insurance beneficiaries are current" },
-          { title: "Will Preparation", slug: "will-preparation", desc: "Create or update your will before deployment" },
+          { title: "Official Military Personnel File (OMPF)", slug: "ompf-management", desc: "Understanding and managing your official personnel file" },
+          { title: "Service Record Book (SRB) Corrections", slug: "srb-corrections", desc: "Correcting errors in your service record book" },
+          { title: "Medical Records", slug: "medical-records", desc: "Maintaining and accessing medical documentation" },
+          { title: "Training Jackets", slug: "training-jackets", desc: "Training records and professional military education documentation" },
         ],
       },
       {
-        title: "During Deployment",
+        title: "Record Corrections",
         items: [
-          { title: "HFP/IDP Verification", slug: "hfp-idp-verification", desc: "Verify Hostile Fire and Imminent Danger Pay on your LES" },
-          { title: "FSA Processing", slug: "fsa-processing", desc: "Receive FSA when separated from dependents over 30 days" },
-          { title: "Dependent Support Services", slug: "dependent-support-services", desc: "Connect your family with support during deployment" },
-          { title: "Emergency Leave Requests", slug: "emergency-leave-requests", desc: "Return home for family emergencies during deployment" },
+          { title: "TIG Corrections", slug: "tig-corrections", desc: "Correcting Time in Grade calculation errors" },
+          { title: "Date of Rank Corrections", slug: "date-of-rank-corrections", desc: "Correcting errors in Date of Rank records" },
+          { title: "Page 11 Entries (Administrative Remarks)", slug: "page-11-entries", desc: "Administrative remarks and counseling documentation" },
         ],
       },
       {
-        title: "Post-Deployment",
+        title: "Correction Boards",
         items: [
-          { title: "Reintegration Processing", slug: "reintegration-processing", desc: "Complete required actions when returning from deployment" },
-          { title: "Pay Entitlement Verification", slug: "pay-entitlement-verification", desc: "Verify your pay is correct after returning" },
-          { title: "Leave Accrual Review", slug: "leave-accrual-review", desc: "Check your leave balance after deployment" },
-          { title: "Combat-Related Special Compensation", slug: "crsc", desc: "Tax-free compensation for combat-related disabilities" },
+          { title: "Board for Correction of Naval Records (BCNR)", slug: "bcnr", desc: "Request correction of military records through formal board process" },
+          { title: "PERB (Performance Evaluation Review Board)", slug: "perb", desc: "Appeal fitness reports through PERB", isRef: true },
         ],
       },
     ],
   },
-  "insurance-healthcare": {
-    title: "Insurance & Healthcare",
-    intro: "Insurance and healthcare benefits protect you and your family from financial hardship due to death, injury, or medical expenses. Understanding your coverage options ensures you have adequate protection and can make informed decisions about optional benefits.",
+
+  "reserve-mobilization": {
+    title: "Reserve & Mobilization",
+    intro: "Reserve administration and mobilization guidance for Selected Marine Corps Reserve (SMCR), Individual Mobilization Augmentees (IMA), Individual Ready Reserve (IRR), and Active Reserve (AR) Marines. Understand duty status categories, training requirements, retirement points, and activation procedures to effectively manage your Reserve career and meet readiness requirements.",
     groups: [
       {
-        title: "Life Insurance",
+        title: "Reserve Administration",
         items: [
-          { title: "SGLI (Servicemembers' Group Life Insurance)", slug: "sgli", desc: "Low-cost group life insurance up to $500,000" },
-          { title: "FSGLI (Family SGLI)", slug: "fsgli", desc: "Life insurance for spouse and dependent children" },
-          { title: "TSGLI (Traumatic Injury)", slug: "tsgli", desc: "Payment for traumatic injuries resulting in qualifying losses" },
-          { title: "VGLI (Veterans' Group Life Insurance)", slug: "vgli", desc: "Convert SGLI to veteran life insurance after separation" },
-          { title: "Beneficiary Updates", slug: "beneficiary-updates", desc: "Keep your life insurance beneficiaries current" },
+          { title: "Reserve Duty Status", slug: "reserve-duty-status", desc: "Understand your assignment category within the Marine Corps Reserve" },
+          { title: "Inactive Duty for Training (IDT) Pay", slug: "idt-pay", desc: "Earn pay and retirement points during scheduled drill periods" },
+          { title: "Annual Training (AT) Orders", slug: "annual-training-orders", desc: "Complete your mandatory annual active duty training requirement" },
+          { title: "Retirement Points", slug: "retirement-points", desc: "Track points to qualify for Reserve retirement" },
+          { title: "Reserve Promotion System", slug: "reserve-promotion-system", desc: "Advance through cutting scores, selection boards, and meritorious promotions" },
         ],
       },
       {
-        title: "Healthcare Benefits",
+        title: "Mobilization/Activation",
         items: [
-          { title: "TRICARE Enrollment", slug: "tricare-enrollment", desc: "Enroll dependents in TRICARE healthcare coverage" },
-          { title: "Healthcare FSA (HCFSA)", slug: "hcfsa", desc: "Pre-tax dollars for eligible medical expenses" },
-          { title: "EFMP Medical Screening", slug: "efmp-medical-screening", desc: "Enroll family members with special needs in EFMP" },
-          { title: "Dental Coverage (FEDVIP)", slug: "dental-coverage-fedvip", desc: "Dental insurance for family members through FEDVIP" },
-          { title: "Vision Coverage", slug: "vision-coverage", desc: "Vision insurance through FEDVIP for eye exams and eyewear" },
+          { title: "Mobilization Orders", slug: "mobilization-orders", desc: "Involuntary activation authorities and processing requirements" },
+          { title: "Active Duty for Operational Support (ADOS)", slug: "ados", desc: "Volunteer for active duty tours supporting AC or RC missions" },
+          { title: "Active Duty for Special Work (ADSW)", slug: "adsw", desc: "Specialized duty beyond normal training requirements" },
+          { title: "Active Duty for Training (ADT)", slug: "adt", desc: "Complete required training on active duty orders" },
+          { title: "Demobilization Processing", slug: "demobilization-processing", desc: "Transition from mobilization back to Reserve status" },
         ],
       },
     ],
   },
-  "education-training": {
-    title: "Education & Training",
-    intro: "Education and training opportunities enhance your military effectiveness and prepare you for career advancement. The Marine Corps invests in your professional development through military schools, tuition assistance, and credentialing programs. Taking advantage of these programs improves your promotion competitiveness, expands your skills, and prepares you for post-military success.",
-    groups: [
-      {
-        title: "Military Education",
-        items: [
-          { title: "Professional Military Education (PME)", slug: "pme", desc: "Complete required PME for promotion eligibility" },
-          { title: "Resident and Non-Resident Schools", slug: "resident-non-resident-schools", desc: "Military education delivery formats and school options" },
-          { title: "Command and Staff College", slug: "command-staff-college", desc: "Intermediate-level PME for field grade officers and senior enlisted" },
-          { title: "War College", slug: "war-college", desc: "Senior-level PME for strategic leadership development" },
-          { title: "MOS-Specific Training", slug: "mos-specific-training", desc: "Technical proficiency training for your occupational specialty" },
-        ],
-      },
-      {
-        title: "Civilian Education",
-        items: [
-          { title: "Tuition Assistance (TA)", slug: "tuition-assistance", desc: "Fund college courses while on active duty" },
-          { title: "GI Bill Benefits", slug: "gi-bill-benefits", desc: "Post-9/11 and Montgomery GI Bill education benefits" },
-          { title: "Post-9/11 GI Bill Transfer", slug: "gi-bill-transfer", desc: "Transfer education benefits to spouse or children" },
-          { title: "Joint Services Transcript (JST)", slug: "jst", desc: "Convert military training to college credit" },
-          { title: "College Credit for Military Training", slug: "college-credit-military", desc: "Maximize credit through CLEP, DSST, and portfolio assessment" },
-        ],
-      },
-      {
-        title: "Professional Development",
-        items: [
-          { title: "Credentialing Programs", slug: "credentialing-programs", desc: "Obtain civilian certifications through Marine Corps COOL" },
-          { title: "Certification Reimbursement", slug: "certification-reimbursement", desc: "Get reimbursed for professional certification costs" },
-          { title: "Language Training (DLPT)", slug: "language-training-dlpt", desc: "Develop language proficiency and earn FLPP" },
-          { title: "Technical Certifications", slug: "technical-certifications", desc: "Industry certifications in IT, aviation, automotive, and more" },
-        ],
-      },
-    ],
-  },
+
   "separations-transitions": {
     title: "Separations & Transitions",
     intro: "Separations and transitions mark the end of active duty service and the beginning of civilian or retired life. Proper planning and completion of required actions ensures you receive all earned benefits, maintain eligibility for VA services, and successfully transition to your next chapter. Start transition planning early to maximize opportunities and avoid delays.",
@@ -359,6 +421,7 @@ export const SECTIONS: Record<string, Section> = {
           { title: "Medical Retirement", slug: "medical-retirement", desc: "Retire due to disability rating of 30% or higher" },
           { title: "Temporary Disability Retired List (TDRL)", slug: "tdrl", desc: "Temporary retirement for unstable conditions" },
           { title: "Survivor Benefit Plan (SBP) Elections", slug: "sbp-elections", desc: "Protect your family with SBP coverage at retirement" },
+          { title: "Combat-Related Special Compensation (CRSC)", slug: "crsc", desc: "Tax-free compensation for combat-related disabilities" },
         ],
       },
       {
@@ -373,65 +436,86 @@ export const SECTIONS: Record<string, Section> = {
       },
     ],
   },
-  "reserve-mobilization": {
-    title: "Reserve & Mobilization",
-    intro: "Reserve administration and mobilization guidance for Selected Marine Corps Reserve (SMCR), Individual Mobilization Augmentees (IMA), Individual Ready Reserve (IRR), and Active Reserve (AR) Marines. Understand duty status categories, training requirements, retirement points, and activation procedures to effectively manage your Reserve career and meet readiness requirements.",
+
+  "systems-management": {
+    title: "Systems Management",
+    intro: "Marine Corps administrative systems are essential tools for personnel management, travel, and readiness tracking. Understanding how to navigate these systems, troubleshoot common issues, and access information is critical for both individual Marines and administrative personnel. This section provides guidance on key systems used for personnel administration.",
     groups: [
       {
-        title: "Reserve Administration",
+        title: "Personnel Systems",
         items: [
-          { title: "Reserve Duty Status", slug: "reserve-duty-status", desc: "Understand your assignment category within the Marine Corps Reserve" },
-          { title: "Inactive Duty for Training (IDT) Pay", slug: "idt-pay", desc: "Earn pay and retirement points during scheduled drill periods" },
-          { title: "Annual Training (AT) Orders", slug: "annual-training-orders", desc: "Complete your mandatory annual active duty training requirement" },
-          { title: "Retirement Points", slug: "retirement-points", desc: "Track points to qualify for Reserve retirement" },
-          { title: "Reserve Promotion System", slug: "reserve-promotion-system", desc: "Advance through cutting scores, selection boards, and meritorious promotions" },
+          { title: "Marine Online (MOL)", slug: "mol", desc: "Access your records, LES, and self-service personnel actions" },
+          { title: "MCTFS (Total Force System)", slug: "mctfs", desc: "Marine Corps Total Force System for manpower management" },
+          { title: "MCIRSA", slug: "mcirsa", desc: "Marine Corps Incentive Reenlistment System - Authorization" },
         ],
       },
       {
-        title: "Mobilization/Activation",
+        title: "Travel Systems",
         items: [
-          { title: "Mobilization Orders", slug: "mobilization-orders", desc: "Involuntary activation authorities and processing requirements" },
-          { title: "Active Duty for Operational Support (ADOS)", slug: "ados", desc: "Volunteer for active duty tours supporting AC or RC missions" },
-          { title: "Active Duty for Special Work (ADSW)", slug: "adsw", desc: "Specialized duty beyond normal training requirements" },
-          { title: "Active Duty for Training (ADT)", slug: "adt", desc: "Complete required training on active duty orders" },
-          { title: "Demobilization Processing", slug: "demobilization-processing", desc: "Transition from mobilization back to Reserve status" },
+          { title: "Defense Travel System (DTS)", slug: "dts", desc: "Create travel authorizations and vouchers" },
+          { title: "GTCC Portal", slug: "gtcc-portal", desc: "Manage your Government Travel Charge Card account" },
+        ],
+      },
+      {
+        title: "Reserve Systems",
+        items: [
+          { title: "MROWS", slug: "mrows", desc: "Marine Corps Reserve Order Writing System for reserve orders" },
         ],
       },
     ],
   },
-  "legal-disciplinary": {
-    title: "Legal & Disciplinary",
-    intro: "Legal and disciplinary administration for commanders and administrative personnel. Covers non-judicial punishment processing, administrative investigations, court-martial support, legal assistance programs, and victim witness assistance. Ensures proper documentation of disciplinary actions while protecting due process rights.",
+
+  "travel-transportation": {
+    title: "Travel & Transportation",
+    intro: "This page covers all travel entitlements and transportation support for Marines. Whether you are moving to a new duty station, going on temporary duty, or need to understand your travel benefits, you will find guidance and resources here.",
     groups: [
       {
-        title: "Administrative Actions",
+        title: "Permanent Change of Station (PCS)",
         items: [
-          { title: "NJP / Article 15", slug: "njp-article-15", desc: "Non-Judicial Punishment processing and Unit Punishment Book" },
-          { title: "Punitive Letters of Reprimand", slug: "punitive-letters-reprimand", desc: "PLOR drafting and filing determinations" },
-          { title: "Page 11 Counseling", slug: "page-11-counseling", desc: "Administrative Remarks entry requirements" },
-          { title: "Administrative Investigations", slug: "administrative-investigations", desc: "Command investigation support and documentation" },
+          { title: "PCS Orders Processing", slug: "pcs-orders-processing", desc: "How to receive, review, and execute your PCS orders" },
+          { title: "Household Goods (HHG) Shipment", slug: "household-goods-shipment", desc: "Government-arranged shipping of your belongings to new duty station" },
+          { title: "Personally Procured Move (PPM/DITY)", slug: "personally-procured-move", desc: "Move yourself and get reimbursed for authorized expenses" },
+          { title: "Storage", slug: "pcs-storage", desc: "Short-term and long-term storage options during PCS" },
+          { title: "Dislocation Allowance (DLA)", slug: "dislocation-allowance", desc: "One-time payment to offset moving costs based on rank and dependents" },
+          { title: "Temporary Lodging Expense (TLE)", slug: "temporary-lodging-expense", desc: "Reimbursement for lodging during PCS transition periods" },
+          { title: "Vehicle Processing and Storage", slug: "vehicle-processing-storage", desc: "Ship or store your POV during OCONUS assignments" },
         ],
       },
       {
-        title: "Legal Support",
+        title: "Temporary Duty (TAD/TDY)",
         items: [
-          { title: "Court-Martial Support", slug: "court-martial-support", desc: "Unit-level administrative support for judicial proceedings" },
-          { title: "Legal Assistance", slug: "legal-assistance", desc: "Free legal services for personal civil matters" },
-          { title: "Victim Witness Assistance (VWAP)", slug: "vwap", desc: "Victim and Witness Assistance Program support" },
-          { title: "Military Protective Orders", slug: "military-protective-orders", desc: "MPO processing and NCIC registration" },
-          { title: "IG Complaints", slug: "ig-complaints", desc: "Inspector General complaint procedures" },
+          { title: "TAD Orders", slug: "tad-orders", desc: "Temporary additional duty orders for training, missions, or assignments" },
+          { title: "Per Diem Rates", slug: "per-diem-rates", desc: "Daily allowance for lodging, meals, and incidentals while traveling" },
+          { title: "Travel Voucher Submission (DD 1351-2)", slug: "travel-voucher-submission", desc: "How to complete and submit your travel claim for reimbursement" },
+          { title: "Defense Travel System (DTS)", slug: "dts-authorization", desc: "Creating and routing travel authorizations in DTS", isRef: true },
+        ],
+      },
+      {
+        title: "Transportation Entitlements",
+        items: [
+          { title: "Government Travel Charge Card (GTCC)", slug: "government-travel-charge-card", desc: "Mandatory card for official travel expenses", isRef: true },
+          { title: "Mileage Reimbursement", slug: "mileage-reimbursement", desc: "POV mileage rates and reimbursement procedures" },
+          { title: "Advance Travel Pay", slug: "advance-travel-pay", desc: "Request advance funds before official travel" },
+          { title: "Leave En Route Travel", slug: "leave-en-route-travel", desc: "Taking authorized leave during PCS travel" },
         ],
       },
     ],
   },
+
+  // ============================================
+  // ADMIN-ONLY SECTIONS
+  // ============================================
+
   "s1-g1-administration": {
     title: "S-1 / G-1 Administration",
     intro: "S-1 / G-1 (Administration Section) Handles all personnel administration and manpower functions. Manages pay, leave, promotions, awards, and official correspondence. Maintains service records and ensures compliance with personnel policies and reporting requirements. Serves as the command's administrative hub and liaison with higher headquarters for manpower actions.",
   },
+
   "pac-personnel-admin-center": {
     title: "PAC (Personnel Admin Center)",
     intro: "PAC-specific resources for personnel administration centers supporting commands and units.",
   },
+
   "ii-i-staff-administration": {
     title: "I&I Staff Administration",
     intro: "Inspector-Instructor staff administration resources for supporting reserve units.",

@@ -2363,6 +2363,7 @@ function toTitle(slug: string) {
     .replace(/\bCrcr\b/g, "CRCR")
     .replace(/\bMrows\b/g, "MROWS")
     .replace(/\bMcirsa\b/g, "MCIRSA")
+    .replace(/\bMctfs\b/g, "MCTFS")
     .replace(/\bAt\b/g, "AT")
     .replace(/\bNjp\b/g, "NJP")
     .replace(/\bPlor\b/g, "PLOR")
@@ -2581,6 +2582,15 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "vwap": <VWAPContent data={VWAP_DATA} />,
     "military-protective-orders": <MilitaryProtectiveOrdersContent data={MILITARY_PROTECTIVE_ORDERS_DATA} />,
     "ig-complaints": <IGComplaintsContent data={IG_COMPLAINTS_DATA} />,
+    // Systems Management - Personnel Systems
+    "mol": <GenericContent title="Marine Online (MOL)" />,
+    "mctfs": <GenericContent title="MCTFS (Total Force System)" />,
+    "mcirsa": <GenericContent title="MCIRSA" />,
+    // Systems Management - Travel Systems
+    "dts": <GenericContent title="Defense Travel System (DTS)" />,
+    "gtcc-portal": <GenericContent title="GTCC Portal" />,
+    // Systems Management - Reserve Systems
+    "mrows": <GenericContent title="MROWS" />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -2694,22 +2704,20 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   const promotionsSection = "promotions-career-progression";
   const promotionsSlugs = [
     "promotion-documentation",
+    "epme-requirements",
     "jepes",
     "cutting-score-verification",
     "promotion-warrants",
     "meritorious-promotions",
-    "tig-corrections",
-    "mos-changes-lateral-moves",
-    "fitness-reports",
-    "performance-evaluation-appeals",
-    "perb",
-    "rank-reduction",
+    "tig-corrections", // ref to records-corrections
+    "date-of-rank-corrections", // ref to records-corrections
     "frocking",
-    "date-of-rank-corrections",
+    "fitness-reports",
+    "perb",
+    "mos-changes-lateral-moves",
     "mos-reclassification",
     "additional-mos-assignment",
     "primary-mos-changes",
-    "epme-requirements",
   ];
   const deploymentSection = "deployment-support";
   const deploymentSlugs = [
@@ -2717,10 +2725,10 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "deployment-orders",
     "medical-readiness",
     "dental-readiness",
-    "family-care-plan-validation",
-    "power-of-attorney",
-    "sgli-beneficiary-updates",
-    "will-preparation",
+    "family-care-plan-validation", // ref to dependency-management
+    "power-of-attorney", // ref to legal-disciplinary
+    "sgli-beneficiary-updates", // ref to insurance-healthcare
+    "will-preparation", // ref to legal-disciplinary
     // During Deployment
     "hfp-idp-verification",
     "fsa-processing",
@@ -2730,7 +2738,6 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "reintegration-processing",
     "pay-entitlement-verification",
     "leave-accrual-review",
-    "crsc",
   ];
   const insuranceHealthcareSection = "insurance-healthcare";
   const insuranceHealthcareSlugs = [
@@ -2766,6 +2773,9 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "certification-reimbursement",
     "language-training-dlpt",
     "technical-certifications",
+    // Training Records
+    "training-record-updates",
+    "education-records",
   ];
   const separationsTransitionsSection = "separations-transitions";
   const separationsTransitionsSlugs = [
@@ -2784,6 +2794,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "medical-retirement",
     "tdrl",
     "sbp-elections",
+    "crsc",
     // Transition Programs
     "tap",
     "va-benefits",
@@ -2813,12 +2824,42 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "punitive-letters-reprimand",
     "page-11-counseling",
     "administrative-investigations",
+    "rank-reduction",
     // Legal Support
     "court-martial-support",
     "legal-assistance",
+    "power-of-attorney",
+    "will-preparation",
     "vwap",
     "military-protective-orders",
     "ig-complaints",
+  ];
+  const recordsCorrectionsSection = "records-corrections";
+  const recordsCorrectionsSlugs = [
+    // Official Records
+    "ompf-management",
+    "srb-corrections",
+    "medical-records",
+    "training-jackets",
+    // Record Corrections
+    "tig-corrections",
+    "date-of-rank-corrections",
+    "page-11-entries",
+    // Correction Boards
+    "bcnr",
+    "perb", // ref to promotions
+  ];
+  const systemsManagementSection = "systems-management";
+  const systemsManagementSlugs = [
+    // Personnel Systems
+    "mol",
+    "mctfs",
+    "mcirsa",
+    // Travel Systems
+    "dts",
+    "gtcc-portal",
+    // Reserve Systems
+    "mrows",
   ];
   const params: { role: Role; section: string; item: string }[] = [];
   for (const role of roles) {
@@ -2833,6 +2874,8 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     for (const item of separationsTransitionsSlugs) params.push({ role, section: separationsTransitionsSection, item });
     for (const item of reserveMobilizationSlugs) params.push({ role, section: reserveMobilizationSection, item });
     for (const item of legalDisciplinarySlugs) params.push({ role, section: legalDisciplinarySection, item });
+    for (const item of recordsCorrectionsSlugs) params.push({ role, section: recordsCorrectionsSection, item });
+    for (const item of systemsManagementSlugs) params.push({ role, section: systemsManagementSection, item });
   }
   return params;
 }
