@@ -91,7 +91,24 @@ import { DateOfRankCorrectionsContent } from "../../../../../components/DateOfRa
 import { MOSReclassificationContent } from "../../../../../components/MOSReclassificationContent";
 import { AdditionalMOSAssignmentContent } from "../../../../../components/AdditionalMOSAssignmentContent";
 import { PrimaryMOSChangesContent } from "../../../../../components/PrimaryMOSChangesContent";
-import { EPMERequirementsContent } from "../../../../../components/EPMERequirementsContent";
+// Deployment Support - Pre-Deployment
+import { DeploymentOrdersContent } from "../../../../../components/DeploymentOrdersContent";
+import { MedicalReadinessContent } from "../../../../../components/MedicalReadinessContent";
+import { DentalReadinessContent } from "../../../../../components/DentalReadinessContent";
+import { FamilyCarePlanValidationContent } from "../../../../../components/FamilyCarePlanValidationContent";
+import { PowerOfAttorneyContent } from "../../../../../components/PowerOfAttorneyContent";
+import { SGLIBeneficiaryUpdatesContent } from "../../../../../components/SGLIBeneficiaryUpdatesContent";
+import { WillPreparationContent } from "../../../../../components/WillPreparationContent";
+// Deployment Support - During Deployment
+import { HFPIDPVerificationContent } from "../../../../../components/HFPIDPVerificationContent";
+import { FSAProcessingContent } from "../../../../../components/FSAProcessingContent";
+import { DependentSupportServicesContent } from "../../../../../components/DependentSupportServicesContent";
+import { EmergencyLeaveRequestsContent } from "../../../../../components/EmergencyLeaveRequestsContent";
+// Deployment Support - Post-Deployment
+import { ReintegrationProcessingContent } from "../../../../../components/ReintegrationProcessingContent";
+import { PayEntitlementVerificationContent } from "../../../../../components/PayEntitlementVerificationContent";
+import { LeaveAccrualReviewContent } from "../../../../../components/LeaveAccrualReviewContent";
+import { CRSCContent } from "../../../../../components/CRSCContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1505,15 +1522,153 @@ const PRIMARY_MOS_CHANGES_DATA = {
   ],
 };
 
-const EPME_DATA = {
+// Deployment Support - Pre-Deployment
+const DEPLOYMENT_ORDERS_DATA = {
   references: [
-    { title: "CEME Website", url: "https://www.usmcu.edu/CEME/", isQuickLink: true },
-    { title: "MarineNet", url: "https://www.marinenet.usmc.mil/", isQuickLink: true },
-    { title: "JKOdirect (Joint PME)", url: "https://jkodirect.jten.mil/", isQuickLink: true },
-    { title: "MCO 1553.4B (Professional Military Education)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899450/mco-15534b/", isQuickLink: false },
-    { title: "MARADMIN 627/24 (SNCO Leadership School)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
-    { title: "MARADMIN 630/24 (EPME Requirements)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
-    { title: "ALMAR 018/23 (Professional Reading Program)", url: "https://www.marines.mil/News/Messages/ALMARS/", isQuickLink: false },
+    { title: "MARADMIN Deployment Guidance", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "MOL Orders Module", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "Unit Admin (S-1)", url: "#", isQuickLink: true },
+    { title: "MCO 1320.11H (Deployment)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
+    { title: "IPAC", url: "#", isQuickLink: false },
+  ],
+};
+
+const MEDICAL_READINESS_DATA = {
+  references: [
+    { title: "MRRS (Medical Readiness)", url: "https://mrrs.sscno.nmci.navy.mil/", isQuickLink: true },
+    { title: "MOL Medical Module", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "Branch Medical Clinic", url: "#", isQuickLink: true },
+    { title: "MCO 6100.13 (Medical/Dental Readiness)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
+    { title: "DoDI 6025.19 (Individual Medical Readiness)", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: false },
+  ],
+};
+
+const DENTAL_READINESS_DATA = {
+  references: [
+    { title: "MOL Dental Status", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "Dental Clinic", url: "#", isQuickLink: true },
+    { title: "MCO 6100.13 (Medical/Dental Readiness)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
+    { title: "BUMED Dental Readiness", url: "https://www.med.navy.mil/", isQuickLink: false },
+  ],
+};
+
+const FAMILY_CARE_PLAN_VALIDATION_DATA = {
+  references: [
+    { title: "MCO 1740.13C (Family Care)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "NAVMC 11800 (Family Care Plan)", url: "#", isQuickLink: true },
+    { title: "Legal Assistance Office", url: "#", isQuickLink: true },
+    { title: "Marine Corps Family Team Building", url: "https://usmc-mccs.org/services/family/", isQuickLink: false },
+    { title: "Unit Commander", url: "#", isQuickLink: false },
+  ],
+};
+
+const POWER_OF_ATTORNEY_DATA = {
+  references: [
+    { title: "Legal Assistance Office", url: "#", isQuickLink: true },
+    { title: "JAG POA Information", url: "https://www.jag.navy.mil/legal_services/legal_assistance.htm", isQuickLink: true },
+    { title: "Military OneSource", url: "https://www.militaryonesource.mil/", isQuickLink: false },
+    { title: "DoD Legal Assistance", url: "https://legalassistance.law.af.mil/", isQuickLink: false },
+  ],
+};
+
+const SGLI_BENEFICIARY_UPDATES_DATA = {
+  references: [
+    { title: "SGLI Online", url: "https://www.va.gov/life-insurance/options-eligibility/sgli/", isQuickLink: true },
+    { title: "milConnect SGLI", url: "https://milconnect.dmdc.osd.mil/", isQuickLink: true },
+    { title: "SGLV 8286 Form", url: "https://www.va.gov/vaforms/", isQuickLink: true },
+    { title: "VA Life Insurance", url: "https://www.va.gov/life-insurance/", isQuickLink: false },
+    { title: "IPAC", url: "#", isQuickLink: false },
+  ],
+};
+
+const WILL_PREPARATION_DATA = {
+  references: [
+    { title: "Legal Assistance Office", url: "#", isQuickLink: true },
+    { title: "JAG Wills Information", url: "https://www.jag.navy.mil/legal_services/legal_assistance.htm", isQuickLink: true },
+    { title: "Military OneSource", url: "https://www.militaryonesource.mil/", isQuickLink: false },
+    { title: "DoD Legal Assistance", url: "https://legalassistance.law.af.mil/", isQuickLink: false },
+  ],
+};
+
+// Deployment Support - During Deployment
+const HFP_IDP_VERIFICATION_DATA = {
+  references: [
+    { title: "37 U.S.C. § 310 (HFP/IDP)", url: "https://www.law.cornell.edu/uscode/text/37/310", isQuickLink: true },
+    { title: "DoD FMR Vol. 7A, Ch. 10", url: "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_10.pdf", isQuickLink: true },
+    { title: "MyPay", url: "https://mypay.dfas.mil/", isQuickLink: true },
+    { title: "DFAS Pay Entitlements", url: "https://www.dfas.mil/militarymembers/payentitlements/", isQuickLink: false },
+    { title: "IRS Publication 3 (Combat Zone)", url: "https://www.irs.gov/publications/p3", isQuickLink: false },
+  ],
+};
+
+const FSA_PROCESSING_DATA = {
+  references: [
+    { title: "37 U.S.C. § 427 (FSA)", url: "https://www.law.cornell.edu/uscode/text/37/427", isQuickLink: true },
+    { title: "DoD FMR Vol. 7A, Ch. 27", url: "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_27.pdf", isQuickLink: true },
+    { title: "DD Form 1561", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd1561.pdf", isQuickLink: true },
+    { title: "DFAS Pay Entitlements", url: "https://www.dfas.mil/militarymembers/payentitlements/", isQuickLink: false },
+    { title: "IPAC", url: "#", isQuickLink: false },
+  ],
+};
+
+const DEPENDENT_SUPPORT_SERVICES_DATA = {
+  references: [
+    { title: "Marine Corps Family Team Building", url: "https://usmc-mccs.org/services/family/", isQuickLink: true },
+    { title: "Military OneSource", url: "https://www.militaryonesource.mil/", isQuickLink: true },
+    { title: "Navy-Marine Corps Relief Society", url: "https://www.nmcrs.org/", isQuickLink: true },
+    { title: "Armed Forces Legal Assistance", url: "https://legalassistance.law.af.mil/", isQuickLink: false },
+    { title: "Military Family Life Counselors", url: "#", isQuickLink: false },
+  ],
+};
+
+const EMERGENCY_LEAVE_REQUESTS_DATA = {
+  references: [
+    { title: "American Red Cross", url: "https://www.redcross.org/get-help/military-families/emergency-communication.html", isQuickLink: true },
+    { title: "MCO 1050.3J (Leave Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "Unit Commander", url: "#", isQuickLink: true },
+    { title: "CACO (if applicable)", url: "#", isQuickLink: false },
+    { title: "Joint Regional Mortuary Affairs", url: "#", isQuickLink: false },
+  ],
+};
+
+// Deployment Support - Post-Deployment
+const REINTEGRATION_PROCESSING_DATA = {
+  references: [
+    { title: "PDHA (Post-Deployment Health Assessment)", url: "#", isQuickLink: true },
+    { title: "PDHRA (Reassessment)", url: "#", isQuickLink: true },
+    { title: "Marine Corps Family Team Building", url: "https://usmc-mccs.org/services/family/", isQuickLink: true },
+    { title: "Military OneSource", url: "https://www.militaryonesource.mil/", isQuickLink: false },
+    { title: "Combat Operational Stress Control", url: "#", isQuickLink: false },
+  ],
+};
+
+const PAY_ENTITLEMENT_VERIFICATION_DATA = {
+  references: [
+    { title: "MyPay", url: "https://mypay.dfas.mil/", isQuickLink: true },
+    { title: "DFAS Pay Entitlements", url: "https://www.dfas.mil/militarymembers/payentitlements/", isQuickLink: true },
+    { title: "DoD FMR Vol. 7A, Ch. 44 (SDP)", url: "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_44.pdf", isQuickLink: true },
+    { title: "IPAC", url: "#", isQuickLink: false },
+    { title: "Disbursing", url: "#", isQuickLink: false },
+  ],
+};
+
+const LEAVE_ACCRUAL_REVIEW_DATA = {
+  references: [
+    { title: "MCO 1050.3J (Leave Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "MyPay Leave Balance", url: "https://mypay.dfas.mil/", isQuickLink: true },
+    { title: "MOL Leave Module", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "DoD FMR Vol. 7A, Ch. 34 (Leave)", url: "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_34.pdf", isQuickLink: false },
+    { title: "IPAC", url: "#", isQuickLink: false },
+  ],
+};
+
+const CRSC_DATA = {
+  references: [
+    { title: "VA CRSC Information", url: "https://www.va.gov/", isQuickLink: true },
+    { title: "DFAS CRSC", url: "https://www.dfas.mil/", isQuickLink: true },
+    { title: "DD Form 2860", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd2860.pdf", isQuickLink: true },
+    { title: "10 U.S.C. § 1413a (CRSC)", url: "https://www.law.cornell.edu/uscode/text/10/1413a", isQuickLink: false },
+    { title: "Service CRSC Board", url: "#", isQuickLink: false },
   ],
 };
 
@@ -1544,6 +1699,20 @@ function toTitle(slug: string) {
     .replace(/\bTig\b/g, "TIG")
     .replace(/\bMos\b/g, "MOS")
     .replace(/\bPmos\b/g, "PMOS")
+    .replace(/\bSgli\b/g, "SGLI")
+    .replace(/\bCrsc\b/g, "CRSC")
+    .replace(/\bSla\b/g, "SLA")
+    .replace(/\bHfp\b/g, "HFP")
+    .replace(/\bIdp\b/g, "IDP")
+    .replace(/\bFsa\b/g, "FSA")
+    .replace(/\bPdha\b/g, "PDHA")
+    .replace(/\bPdhra\b/g, "PDHRA")
+    .replace(/\bImr\b/g, "IMR")
+    .replace(/\bSdp\b/g, "SDP")
+    .replace(/\bCzte\b/g, "CZTE")
+    .replace(/\bMol\b/g, "MOL")
+    .replace(/\bTsgli\b/g, "TSGLI")
+    .replace(/\bFsgli\b/g, "FSGLI")
     .replace(/Foreign Language Proficiency Pay/i, "Foreign Language Proficiency Bonus");
 }
 
@@ -1655,7 +1824,24 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "mos-reclassification": <MOSReclassificationContent data={MOS_RECLASSIFICATION_DATA} />,
     "additional-mos-assignment": <AdditionalMOSAssignmentContent data={ADDITIONAL_MOS_ASSIGNMENT_DATA} />,
     "primary-mos-changes": <PrimaryMOSChangesContent data={PRIMARY_MOS_CHANGES_DATA} />,
-    "epme-requirements": <EPMERequirementsContent data={EPME_DATA} />,
+    // Deployment Support - Pre-Deployment
+    "deployment-orders": <DeploymentOrdersContent data={DEPLOYMENT_ORDERS_DATA} />,
+    "medical-readiness": <MedicalReadinessContent data={MEDICAL_READINESS_DATA} />,
+    "dental-readiness": <DentalReadinessContent data={DENTAL_READINESS_DATA} />,
+    "family-care-plan-validation": <FamilyCarePlanValidationContent data={FAMILY_CARE_PLAN_VALIDATION_DATA} />,
+    "power-of-attorney": <PowerOfAttorneyContent data={POWER_OF_ATTORNEY_DATA} />,
+    "sgli-beneficiary-updates": <SGLIBeneficiaryUpdatesContent data={SGLI_BENEFICIARY_UPDATES_DATA} />,
+    "will-preparation": <WillPreparationContent data={WILL_PREPARATION_DATA} />,
+    // Deployment Support - During Deployment
+    "hfp-idp-verification": <HFPIDPVerificationContent data={HFP_IDP_VERIFICATION_DATA} />,
+    "fsa-processing": <FSAProcessingContent data={FSA_PROCESSING_DATA} />,
+    "dependent-support-services": <DependentSupportServicesContent data={DEPENDENT_SUPPORT_SERVICES_DATA} />,
+    "emergency-leave-requests": <EmergencyLeaveRequestsContent data={EMERGENCY_LEAVE_REQUESTS_DATA} />,
+    // Deployment Support - Post-Deployment
+    "reintegration-processing": <ReintegrationProcessingContent data={REINTEGRATION_PROCESSING_DATA} />,
+    "pay-entitlement-verification": <PayEntitlementVerificationContent data={PAY_ENTITLEMENT_VERIFICATION_DATA} />,
+    "leave-accrual-review": <LeaveAccrualReviewContent data={LEAVE_ACCRUAL_REVIEW_DATA} />,
+    "crsc": <CRSCContent data={CRSC_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -1785,6 +1971,27 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "primary-mos-changes",
     "epme-requirements",
   ];
+  const deploymentSection = "deployment-support";
+  const deploymentSlugs = [
+    // Pre-Deployment
+    "deployment-orders",
+    "medical-readiness",
+    "dental-readiness",
+    "family-care-plan-validation",
+    "power-of-attorney",
+    "sgli-beneficiary-updates",
+    "will-preparation",
+    // During Deployment
+    "hfp-idp-verification",
+    "fsa-processing",
+    "dependent-support-services",
+    "emergency-leave-requests",
+    // Post-Deployment
+    "reintegration-processing",
+    "pay-entitlement-verification",
+    "leave-accrual-review",
+    "crsc",
+  ];
   const params: { role: Role; section: string; item: string }[] = [];
   for (const role of roles) {
     for (const item of payAllowancesSlugs) params.push({ role, section: payAllowancesSection, item });
@@ -1792,6 +1999,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     for (const item of dependencySlugs) params.push({ role, section: dependencySection, item });
     for (const item of personnelSlugs) params.push({ role, section: personnelSection, item });
     for (const item of promotionsSlugs) params.push({ role, section: promotionsSection, item });
+    for (const item of deploymentSlugs) params.push({ role, section: deploymentSection, item });
   }
   return params;
 }

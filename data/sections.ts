@@ -232,6 +232,42 @@ export const SECTIONS: Record<string, Section> = {
       },
     ],
   },
+  "deployment-support": {
+    title: "Deployment Support",
+    intro: "Comprehensive guidance for all administrative actions required before, during, and after operational deployments. Proper preparation ensures you and your family are protected, your pay and entitlements are correct, and your transition back home goes smoothly.",
+    groups: [
+      {
+        title: "Pre-Deployment",
+        items: [
+          { title: "Deployment Orders", slug: "deployment-orders", desc: "Verify your deployment orders are accurate" },
+          { title: "Medical Readiness", slug: "medical-readiness", desc: "Meet all medical requirements for deployment" },
+          { title: "Dental Readiness", slug: "dental-readiness", desc: "Achieve deployable dental status (Class 1 or 2)" },
+          { title: "Family Care Plan Validation", slug: "family-care-plan-validation", desc: "Ensure your dependent care plan is current and validated" },
+          { title: "Power of Attorney", slug: "power-of-attorney", desc: "Grant legal authority to someone while deployed" },
+          { title: "SGLI Beneficiary Updates", slug: "sgli-beneficiary-updates", desc: "Ensure your life insurance beneficiaries are current" },
+          { title: "Will Preparation", slug: "will-preparation", desc: "Create or update your will before deployment" },
+        ],
+      },
+      {
+        title: "During Deployment",
+        items: [
+          { title: "HFP/IDP Verification", slug: "hfp-idp-verification", desc: "Verify Hostile Fire and Imminent Danger Pay on your LES" },
+          { title: "FSA Processing", slug: "fsa-processing", desc: "Receive FSA when separated from dependents over 30 days" },
+          { title: "Dependent Support Services", slug: "dependent-support-services", desc: "Connect your family with support during deployment" },
+          { title: "Emergency Leave Requests", slug: "emergency-leave-requests", desc: "Return home for family emergencies during deployment" },
+        ],
+      },
+      {
+        title: "Post-Deployment",
+        items: [
+          { title: "Reintegration Processing", slug: "reintegration-processing", desc: "Complete required actions when returning from deployment" },
+          { title: "Pay Entitlement Verification", slug: "pay-entitlement-verification", desc: "Verify your pay is correct after returning" },
+          { title: "Leave Accrual Review", slug: "leave-accrual-review", desc: "Check your leave balance after deployment" },
+          { title: "Combat-Related Special Compensation", slug: "crsc", desc: "Tax-free compensation for combat-related disabilities" },
+        ],
+      },
+    ],
+  },
   "s1-g1-administration": {
     title: "S-1 / G-1 Administration",
     intro: "S-1 / G-1 (Administration Section) Handles all personnel administration and manpower functions. Manages pay, leave, promotions, awards, and official correspondence. Maintains service records and ensures compliance with personnel policies and reporting requirements. Serves as the command's administrative hub and liaison with higher headquarters for manpower actions.",
