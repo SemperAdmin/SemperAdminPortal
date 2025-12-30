@@ -115,6 +115,22 @@ const CHECKLIST_ARRIVAL = [
   "Check OMPF access at new location",
 ];
 
+const SRB_TRANSFER_STEPS = [
+  "S-1 prepares SRB/OQR for transfer",
+  "Records audited for completeness",
+  "Mailed via registered mail to gaining IPAC",
+  "Or hand-carried by Marine (command discretion)",
+];
+
+const KEY_RESOURCES = [
+  { name: "Unit S-1/Admin", purpose: "SRB/OQR transfer" },
+  { name: "IPAC", purpose: "MCTFS data, records processing" },
+  { name: "Medical Treatment Facility", purpose: "Medical records" },
+  { name: "Dental Clinic", purpose: "Dental records" },
+  { name: "MOL OMPF Viewer", purpose: "Review official record" },
+  { name: "ORMA", purpose: "Submit record corrections" },
+];
+
 export function RecordsTransferContent({ data }: Props) {
   const content: Record<string, React.ReactNode> = {
     overview: (
@@ -211,12 +227,7 @@ export function RecordsTransferContent({ data }: Props) {
             SRB/OQR Transfer Process
           </h3>
           <ol className="mt-4 space-y-2">
-            {[
-              "S-1 prepares SRB/OQR for transfer",
-              "Records audited for completeness",
-              "Mailed via registered mail to gaining IPAC",
-              "Or hand-carried by Marine (command discretion)",
-            ].map((step, index) => (
+            {SRB_TRANSFER_STEPS.map((step, index) => (
               <li key={step} className="flex items-start gap-3">
                 <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">
                   {index + 1}
@@ -440,14 +451,7 @@ export function RecordsTransferContent({ data }: Props) {
             Resources
           </h3>
           <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              { name: "Unit S-1/Admin", purpose: "SRB/OQR transfer" },
-              { name: "IPAC", purpose: "MCTFS data, records processing" },
-              { name: "Medical Treatment Facility", purpose: "Medical records" },
-              { name: "Dental Clinic", purpose: "Dental records" },
-              { name: "MOL OMPF Viewer", purpose: "Review official record" },
-              { name: "ORMA", purpose: "Submit record corrections" },
-            ].map((res) => (
+            {KEY_RESOURCES.map((res) => (
               <div key={res.name} className="rounded-lg bg-zinc-50 p-3 dark:bg-zinc-800/50">
                 <h4 className="font-medium text-zinc-900 dark:text-zinc-100">{res.name}</h4>
                 <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{res.purpose}</p>

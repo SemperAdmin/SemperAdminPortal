@@ -70,6 +70,27 @@ import { CheckoutProceduresContent } from "../../../../../components/CheckoutPro
 import { FinalPaySettlementContent } from "../../../../../components/FinalPaySettlementContent";
 import { RecordsTransferContent } from "../../../../../components/RecordsTransferContent";
 import { LeaveSettlementContent } from "../../../../../components/LeaveSettlementContent";
+import { OMPFManagementContent } from "../../../../../components/OMPFManagementContent";
+import { SRBCorrectionsContent } from "../../../../../components/SRBCorrectionsContent";
+import { AwardsDecorationsContent } from "../../../../../components/AwardsDecorationsContent";
+import { TrainingRecordUpdatesContent } from "../../../../../components/TrainingRecordUpdatesContent";
+import { EducationRecordsContent } from "../../../../../components/EducationRecordsContent";
+import { BCNRContent } from "../../../../../components/BCNRContent";
+import { PromotionDocumentationContent } from "../../../../../components/PromotionDocumentationContent";
+import { JEPESContent } from "../../../../../components/JEPESContent";
+import { CuttingScoreVerificationContent } from "../../../../../components/CuttingScoreVerificationContent";
+import { PromotionWarrantsContent } from "../../../../../components/PromotionWarrantsContent";
+import { MeritoriousPromotionsContent } from "../../../../../components/MeritoriousPromotionsContent";
+import { TIGCorrectionsContent } from "../../../../../components/TIGCorrectionsContent";
+import { MOSChangesContent } from "../../../../../components/MOSChangesContent";
+import { FitnessReportsContent } from "../../../../../components/FitnessReportsContent";
+import { PerformanceEvaluationAppealsContent } from "../../../../../components/PerformanceEvaluationAppealsContent";
+import { RankReductionContent } from "../../../../../components/RankReductionContent";
+import { FrockingContent } from "../../../../../components/FrockingContent";
+import { DateOfRankCorrectionsContent } from "../../../../../components/DateOfRankCorrectionsContent";
+import { MOSReclassificationContent } from "../../../../../components/MOSReclassificationContent";
+import { AdditionalMOSAssignmentContent } from "../../../../../components/AdditionalMOSAssignmentContent";
+import { PrimaryMOSChangesContent } from "../../../../../components/PrimaryMOSChangesContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -1180,8 +1201,8 @@ const CHECK_IN_DATA = {
 
 const SPONSORSHIP_DATA = {
   references: [
-    { title: "MCO 1320.11 (Sponsorship Program)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "NAVMC 11382 (Sponsor Checklist)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "MCO 1320.11H (Sponsorship Program)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/980074/mco-132011h-wadmin-ch-1/", isQuickLink: true },
+    { title: "NAVMC Forms (DLA)", url: "https://www.esd.whs.mil/Directives/forms/", isQuickLink: true },
     { title: "Unit Sponsorship Training (MarineNet)", url: "https://www.marinenet.usmc.mil/", isQuickLink: true },
     { title: "IPAC Locator", url: "https://www.manpower.usmc.mil/webcenter/portal/MISSA", isQuickLink: false },
     { title: "MOL (Marine Online)", url: "https://mol.tfs.usmc.mil/", isQuickLink: false },
@@ -1214,7 +1235,7 @@ const RECORDS_REVIEW_DATA = {
 const SECURITY_CLEARANCE_DATA = {
   references: [
     { title: "DCSA Personnel Vetting", url: "https://www.dcsa.mil/Personnel-Vetting/", isQuickLink: true },
-    { title: "Unit Security Manager", url: "#", isQuickLink: true },
+    { title: "DCSA Customer Service", url: "https://www.dcsa.mil/Contact/", isQuickLink: true },
     { title: "e-QIP (SF-86 System)", url: "https://www.opm.gov/investigations/e-qip-application/", isQuickLink: true },
     { title: "DoD 5200.2-R (Personnel Security Program)", url: "https://www.esd.whs.mil/Directives/", isQuickLink: false },
     { title: "SECNAV M-5510.30 (Personnel Security)", url: "https://www.secnav.navy.mil/doni/", isQuickLink: false },
@@ -1224,7 +1245,7 @@ const SECURITY_CLEARANCE_DATA = {
 
 const CHECKOUT_DATA = {
   references: [
-    { title: "IPAC (Personnel Admin Center)", url: "#", isQuickLink: true },
+    { title: "HQMC IPAC", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_pub", isQuickLink: true },
     { title: "Personal Property Office", url: "https://www.move.mil/", isQuickLink: true },
     { title: "Travel Claim Worksheet", url: "https://www.dfas.mil/", isQuickLink: true },
     { title: "MCO P1000.6H (Separations Manual)", url: "https://www.marines.mil/Portals/1/MCO%20P1000.6H.pdf", isQuickLink: false },
@@ -1237,7 +1258,7 @@ const FINAL_PAY_DATA = {
   references: [
     { title: "myPay (DFAS)", url: "https://mypay.dfas.mil/", isQuickLink: true },
     { title: "DTS (Travel Vouchers)", url: "https://dtsproweb.defensetravel.osd.mil/", isQuickLink: true },
-    { title: "Unit Finance/Disbursing", url: "#", isQuickLink: true },
+    { title: "DFAS Customer Service", url: "https://www.dfas.mil/CustomerService/", isQuickLink: true },
     { title: "JTR (Joint Travel Regulations)", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: false },
     { title: "DoD FMR 7000.14-R Volume 7A", url: "https://comptroller.defense.gov/FMR/", isQuickLink: false },
     { title: "MCO 1000.6 (Assignment Systems)", url: "https://www.marines.mil/", isQuickLink: false },
@@ -1248,7 +1269,7 @@ const RECORDS_TRANSFER_DATA = {
   references: [
     { title: "MOL OMPF Viewer", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "ORMA (Record Corrections)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
-    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "HQMC MMRP", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_pub", isQuickLink: true },
     { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/", isQuickLink: false },
     { title: "MCO 1070.1 (Individual Records)", url: "https://www.marines.mil/", isQuickLink: false },
     { title: "BUMEDINST 6150.29 (Medical Records)", url: "https://www.med.navy.mil/", isQuickLink: false },
@@ -1258,11 +1279,228 @@ const RECORDS_TRANSFER_DATA = {
 const LEAVE_SETTLEMENT_DATA = {
   references: [
     { title: "MOL Leave Management", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
-    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
-    { title: "IPAC", url: "#", isQuickLink: true },
+    { title: "myPay (Leave Balance)", url: "https://mypay.dfas.mil/", isQuickLink: true },
+    { title: "HQMC MMRP", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_pub", isQuickLink: true },
     { title: "MCO 1050.3J (Leave Manual)", url: "https://www.marines.mil/", isQuickLink: false },
     { title: "JTR (Joint Travel Regulations)", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: false },
     { title: "DoD FMR 7000.14-R Volume 7A", url: "https://comptroller.defense.gov/FMR/", isQuickLink: false },
+  ],
+};
+
+const OMPF_MANAGEMENT_DATA = {
+  references: [
+    { title: "MOL OMPF Viewer", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "ORMA (Online Record Modular Application)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "HQMC MMRP", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_pub", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MMRP (Military Manpower Records Program)", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+    { title: "NPRC (National Personnel Records Center)", url: "https://www.archives.gov/veterans", isQuickLink: false },
+  ],
+};
+
+const SRB_CORRECTIONS_DATA = {
+  references: [
+    { title: "MOL (BIR/BTR Access)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "ORMA", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "HQMC MMRP", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_pub", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "HQMC IPAC Contacts", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+    { title: "BCNR (Board for Correction of Naval Records)", url: "https://www.secnav.navy.mil/mra/bcnr/", isQuickLink: false },
+  ],
+};
+
+const AWARDS_DECORATIONS_DATA = {
+  references: [
+    { title: "MOL Awards Summary", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "Navy Department Awards", url: "https://www.secnav.navy.mil/mra/CORB/Pages/Awards.aspx", isQuickLink: true },
+    { title: "HQMC MMMA", url: "https://www.manpower.usmc.mil/", isQuickLink: true },
+    { title: "SECNAVINST 1650.1H (Navy/Marine Corps Awards Manual)", url: "https://www.secnav.navy.mil/", isQuickLink: false },
+    { title: "NAVMC 11533 (Personal Award Recommendation)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MARADMIN Award Messages", url: "https://www.marines.mil/News/Messages/", isQuickLink: false },
+  ],
+};
+
+const TRAINING_RECORD_DATA = {
+  references: [
+    { title: "MOL (BTR Access)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "MarineNet", url: "https://www.marinenet.usmc.mil/", isQuickLink: true },
+    { title: "MCTIMS", url: "https://www.trngcmd.marines.mil/", isQuickLink: true },
+    { title: "MCO 1553.4B (Training and Readiness Manual)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "COOL (Credentialing Opportunities On-Line)", url: "https://www.cool.osd.mil/usmc/", isQuickLink: false },
+    { title: "JST (Joint Services Transcript)", url: "https://jst.doded.mil/", isQuickLink: false },
+  ],
+};
+
+const EDUCATION_RECORDS_DATA = {
+  references: [
+    { title: "MOL (Education Record)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "JST Portal", url: "https://jst.doded.mil/", isQuickLink: true },
+    { title: "MCCS Voluntary Education", url: "https://www.usmc-mccs.org/services/education/", isQuickLink: true },
+    { title: "MCO 1560.25 (Tuition Assistance)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "COOL Program", url: "https://www.cool.osd.mil/usmc/", isQuickLink: false },
+    { title: "VA Education Benefits", url: "https://www.va.gov/education/", isQuickLink: false },
+  ],
+};
+
+const BCNR_DATA = {
+  references: [
+    { title: "BCNR Website", url: "https://www.secnav.navy.mil/mra/bcnr/", isQuickLink: true },
+    { title: "DD Form 149", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd0149.pdf", isQuickLink: true },
+    { title: "Marine Corps Legal Services", url: "https://www.hqmc.marines.mil/sja/", isQuickLink: true },
+    { title: "10 U.S.C. § 1552 (Correction of Military Records)", url: "https://www.law.cornell.edu/uscode/text/10/1552", isQuickLink: false },
+    { title: "NDRB (Naval Discharge Review Board)", url: "https://www.secnav.navy.mil/mra/CORB/Pages/NDRB/default.aspx", isQuickLink: false },
+    { title: "Veterans Service Organizations", url: "https://www.va.gov/vso/", isQuickLink: false },
+  ],
+};
+
+// Promotions and Career Progression DATA constants
+const PROMOTION_DOCUMENTATION_DATA = {
+  references: [
+    { title: "MCO 1400.32 (Enlisted Promotions)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899298/mco-140032d/", isQuickLink: true },
+    { title: "MCTFS", url: "https://www.manpower.usmc.mil/", isQuickLink: true },
+    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "MARADMIN (Monthly Cutting Scores)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
+    { title: "OMPF Guidelines", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_PRS/pages_adminandsep/ompf", isQuickLink: false },
+  ],
+};
+
+const JEPES_DATA = {
+  references: [
+    { title: "JEPES Website", url: "https://www.manpower.usmc.mil/webcenter/portal/pmi/pages_pmi/jepes", isQuickLink: true },
+    { title: "MCO 1610.7A (JEPES)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899516/mco-16107/", isQuickLink: true },
+    { title: "MARADMIN 476/23 (JEPES Implementation)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "MCTFS (Score Review)", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+    { title: "MCO 1400.32 (Enlisted Promotions)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899298/mco-140032d/", isQuickLink: false },
+  ],
+};
+
+const CUTTING_SCORE_DATA = {
+  references: [
+    { title: "MARADMIN (Monthly Cutting Scores)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "MCTFS (Composite Score)", url: "https://www.manpower.usmc.mil/", isQuickLink: true },
+    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "MCO 1400.32 (Enlisted Promotions)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899298/mco-140032d/", isQuickLink: false },
+    { title: "JEPES Website", url: "https://www.manpower.usmc.mil/webcenter/portal/pmi/pages_pmi/jepes", isQuickLink: false },
+  ],
+};
+
+const PROMOTION_WARRANTS_DATA = {
+  references: [
+    { title: "MCO 1400.32 (Enlisted Promotions)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899298/mco-140032d/", isQuickLink: true },
+    { title: "MCTFS", url: "https://www.manpower.usmc.mil/", isQuickLink: true },
+    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "OMPF Guidelines", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_PRS/pages_adminandsep/ompf", isQuickLink: false },
+    { title: "NAVMC 118 (Page 11)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899753/navmc-118-1-14/", isQuickLink: false },
+  ],
+};
+
+const MERITORIOUS_PROMOTIONS_DATA = {
+  references: [
+    { title: "MCO 1400.32 (Enlisted Promotions)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899298/mco-140032d/", isQuickLink: true },
+    { title: "Commanding Officer", url: "#", isQuickLink: true },
+    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "MARADMIN (Meritorious Promotion Allocations)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
+    { title: "MCTFS", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const TIG_CORRECTIONS_DATA = {
+  references: [
+    { title: "MCTFS (Date of Rank)", url: "https://www.manpower.usmc.mil/", isQuickLink: true },
+    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "IPAC", url: "#", isQuickLink: true },
+    { title: "MCO 1400.32 (Enlisted Promotions)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899298/mco-140032d/", isQuickLink: false },
+    { title: "BCNR Website", url: "https://www.secnav.navy.mil/mra/bcnr/", isQuickLink: false },
+  ],
+};
+
+const MOS_CHANGES_DATA = {
+  references: [
+    { title: "MCO 1220.1 (MOS Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899473/mco-12201e/", isQuickLink: true },
+    { title: "Career Planner", url: "#", isQuickLink: true },
+    { title: "MMEA (Enlisted Assignments)", url: "https://www.manpower.usmc.mil/webcenter/portal/MMEA", isQuickLink: true },
+    { title: "MCTFS", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+    { title: "MARADMIN (Lateral Move Program)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
+  ],
+};
+
+const FITNESS_REPORTS_DATA = {
+  references: [
+    { title: "MCO 1610.7A (JEPES/Fitness Reports)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899516/mco-16107/", isQuickLink: true },
+    { title: "MCTFS (FITREP Access)", url: "https://www.manpower.usmc.mil/", isQuickLink: true },
+    { title: "Reporting Senior", url: "#", isQuickLink: true },
+    { title: "Performance Evaluation Section (MMRP-30)", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_PRS", isQuickLink: false },
+    { title: "NAVMC 10835 (Fitness Report)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899780/navmc-10835/", isQuickLink: false },
+  ],
+};
+
+const PERFORMANCE_EVALUATION_APPEALS_DATA = {
+  references: [
+    { title: "MCO 1610.7A (JEPES/Fitness Reports)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899516/mco-16107/", isQuickLink: true },
+    { title: "Performance Evaluation Review Board (PERB)", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_PRS", isQuickLink: true },
+    { title: "BCNR Website", url: "https://www.secnav.navy.mil/mra/bcnr/", isQuickLink: true },
+    { title: "Marine Corps Legal Services", url: "https://www.hqmc.marines.mil/sja/", isQuickLink: false },
+    { title: "10 U.S.C. § 1552 (Correction of Military Records)", url: "https://www.law.cornell.edu/uscode/text/10/1552", isQuickLink: false },
+  ],
+};
+
+const RANK_REDUCTION_DATA = {
+  references: [
+    { title: "MCO 1900.16 (Separation/Retirement)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899560/mco-190016a/", isQuickLink: true },
+    { title: "MCO P1900.16F (MARCORSEPMAN)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899555/mco-p190016f/", isQuickLink: true },
+    { title: "Marine Corps Legal Services", url: "https://www.hqmc.marines.mil/sja/", isQuickLink: true },
+    { title: "UCMJ", url: "https://www.law.cornell.edu/uscode/text/10/subtitle-A/part-II/chapter-47", isQuickLink: false },
+    { title: "MCTFS", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const FROCKING_DATA = {
+  references: [
+    { title: "MCO 1400.32 (Enlisted Promotions)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899298/mco-140032d/", isQuickLink: true },
+    { title: "Commanding Officer", url: "#", isQuickLink: true },
+    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "MARADMIN (Selection Board Results)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
+    { title: "MCTFS", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const DATE_OF_RANK_CORRECTIONS_DATA = {
+  references: [
+    { title: "MCTFS (Date of Rank)", url: "https://www.manpower.usmc.mil/", isQuickLink: true },
+    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "IPAC", url: "#", isQuickLink: true },
+    { title: "BCNR Website", url: "https://www.secnav.navy.mil/mra/bcnr/", isQuickLink: false },
+    { title: "MCO 1400.32 (Enlisted Promotions)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899298/mco-140032d/", isQuickLink: false },
+  ],
+};
+
+const MOS_RECLASSIFICATION_DATA = {
+  references: [
+    { title: "MCO 1220.1 (MOS Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899473/mco-12201e/", isQuickLink: true },
+    { title: "Career Planner", url: "#", isQuickLink: true },
+    { title: "MMEA (Enlisted Assignments)", url: "https://www.manpower.usmc.mil/webcenter/portal/MMEA", isQuickLink: true },
+    { title: "MARADMIN (PMOS Reclassification)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
+    { title: "MCTFS", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const ADDITIONAL_MOS_ASSIGNMENT_DATA = {
+  references: [
+    { title: "MCO 1220.1 (MOS Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899473/mco-12201e/", isQuickLink: true },
+    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "Formal School Training Command", url: "#", isQuickLink: true },
+    { title: "MCTFS", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+    { title: "TECOM (Training & Education Command)", url: "https://www.trngcmd.marines.mil/", isQuickLink: false },
+  ],
+};
+
+const PRIMARY_MOS_CHANGES_DATA = {
+  references: [
+    { title: "MCO 1220.1 (MOS Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899473/mco-12201e/", isQuickLink: true },
+    { title: "Career Planner", url: "#", isQuickLink: true },
+    { title: "MMEA (Enlisted Assignments)", url: "https://www.manpower.usmc.mil/webcenter/portal/MMEA", isQuickLink: true },
+    { title: "MCTFS", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+    { title: "MARADMIN (PMOS Change Programs)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
   ],
 };
 
@@ -1283,6 +1521,15 @@ function toTitle(slug: string) {
     .replace(/\bOconus\b/g, "OCONUS")
     .replace(/\bId\b/g, "ID")
     .replace(/\bFcp\b/g, "FCP")
+    .replace(/\bOmpf\b/g, "OMPF")
+    .replace(/\bSrb\b/g, "SRB")
+    .replace(/\bBcnr\b/g, "BCNR")
+    .replace(/\bBah\b/g, "BAH")
+    .replace(/\bBas\b/g, "BAS")
+    .replace(/\bJepes\b/g, "JEPES")
+    .replace(/\bTig\b/g, "TIG")
+    .replace(/\bMos\b/g, "MOS")
+    .replace(/\bPmos\b/g, "PMOS")
     .replace(/Foreign Language Proficiency Pay/i, "Foreign Language Proficiency Bonus");
 }
 
@@ -1371,6 +1618,29 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "final-pay-settlement": <FinalPaySettlementContent data={FINAL_PAY_DATA} />,
     "records-transfer": <RecordsTransferContent data={RECORDS_TRANSFER_DATA} />,
     "leave-settlement": <LeaveSettlementContent data={LEAVE_SETTLEMENT_DATA} />,
+    // Personnel Records
+    "ompf-management": <OMPFManagementContent data={OMPF_MANAGEMENT_DATA} />,
+    "srb-corrections": <SRBCorrectionsContent data={SRB_CORRECTIONS_DATA} />,
+    "awards-decorations": <AwardsDecorationsContent data={AWARDS_DECORATIONS_DATA} />,
+    "training-record-updates": <TrainingRecordUpdatesContent data={TRAINING_RECORD_DATA} />,
+    "education-records": <EducationRecordsContent data={EDUCATION_RECORDS_DATA} />,
+    "bcnr": <BCNRContent data={BCNR_DATA} />,
+    // Promotions and Career Progression
+    "promotion-documentation": <PromotionDocumentationContent data={PROMOTION_DOCUMENTATION_DATA} />,
+    "jepes": <JEPESContent data={JEPES_DATA} />,
+    "cutting-score-verification": <CuttingScoreVerificationContent data={CUTTING_SCORE_DATA} />,
+    "promotion-warrants": <PromotionWarrantsContent data={PROMOTION_WARRANTS_DATA} />,
+    "meritorious-promotions": <MeritoriousPromotionsContent data={MERITORIOUS_PROMOTIONS_DATA} />,
+    "tig-corrections": <TIGCorrectionsContent data={TIG_CORRECTIONS_DATA} />,
+    "mos-changes-lateral-moves": <MOSChangesContent data={MOS_CHANGES_DATA} />,
+    "fitness-reports": <FitnessReportsContent data={FITNESS_REPORTS_DATA} />,
+    "performance-evaluation-appeals": <PerformanceEvaluationAppealsContent data={PERFORMANCE_EVALUATION_APPEALS_DATA} />,
+    "rank-reduction": <RankReductionContent data={RANK_REDUCTION_DATA} />,
+    "frocking": <FrockingContent data={FROCKING_DATA} />,
+    "date-of-rank-corrections": <DateOfRankCorrectionsContent data={DATE_OF_RANK_CORRECTIONS_DATA} />,
+    "mos-reclassification": <MOSReclassificationContent data={MOS_RECLASSIFICATION_DATA} />,
+    "additional-mos-assignment": <AdditionalMOSAssignmentContent data={ADDITIONAL_MOS_ASSIGNMENT_DATA} />,
+    "primary-mos-changes": <PrimaryMOSChangesContent data={PRIMARY_MOS_CHANGES_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -1481,12 +1751,31 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "medical-records",
     "training-jackets",
   ];
+  const promotionsSection = "promotions-career-progression";
+  const promotionsSlugs = [
+    "promotion-documentation",
+    "jepes",
+    "cutting-score-verification",
+    "promotion-warrants",
+    "meritorious-promotions",
+    "tig-corrections",
+    "mos-changes-lateral-moves",
+    "fitness-reports",
+    "performance-evaluation-appeals",
+    "rank-reduction",
+    "frocking",
+    "date-of-rank-corrections",
+    "mos-reclassification",
+    "additional-mos-assignment",
+    "primary-mos-changes",
+  ];
   const params: { role: Role; section: string; item: string }[] = [];
   for (const role of roles) {
     for (const item of payAllowancesSlugs) params.push({ role, section: payAllowancesSection, item });
     for (const item of travelSlugs) params.push({ role, section: travelSection, item });
     for (const item of dependencySlugs) params.push({ role, section: dependencySection, item });
     for (const item of personnelSlugs) params.push({ role, section: personnelSection, item });
+    for (const item of promotionsSlugs) params.push({ role, section: promotionsSection, item });
   }
   return params;
 }
