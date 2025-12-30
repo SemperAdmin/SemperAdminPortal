@@ -2379,7 +2379,23 @@ function toTitle(slug: string) {
     .replace(/\bSvc\b/g, "SVC")
     .replace(/\bLro\b/g, "LRO")
     .replace(/\bPerb\b/g, "PERB")
-    .replace(/\bMmpb\b/g, "MMPB");
+    .replace(/\bMmpb\b/g, "MMPB")
+    // Leader-specific acronyms
+    .replace(/\bAdsep\b/g, "ADSEP")
+    .replace(/\bFitrep\b/g, "FITREP")
+    .replace(/\bFitreps\b/g, "FITREPs")
+    .replace(/\bDeers\b/g, "DEERS")
+    .replace(/\bIaps\b/g, "iAPS")
+    .replace(/\bMarinenet\b/g, "MarineNet")
+    .replace(/\bUa\b/g, "UA")
+    .replace(/\bMro\b/g, "MRO")
+    .replace(/\bPoa\b/g, "POA")
+    .replace(/\bDd93\b/g, "DD93")
+    .replace(/\b6105\b/g, "6105")
+    .replace(/\bRs\b/g, "RS")
+    .replace(/\bRo\b/g, "RO")
+    .replace(/\bRv\b/g, "RV")
+    .replace(/\bSiq\b/g, "SIQ");
 }
 
 export default async function RoleItemPage({ params }: { params: Promise<Params> }) {
@@ -2861,6 +2877,95 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     // Reserve Systems
     "mrows",
   ];
+
+  // ============================================
+  // LEADER-SPECIFIC SECTIONS
+  // ============================================
+  const leadersAccountabilitySection = "leaders-accountability-discipline";
+  const leadersAccountabilitySlugs = [
+    "njp-authority-levels",
+    "njp-recommendation-documentation",
+    "article-31b-rights",
+    "progressive-discipline",
+    "ua-desertion-reporting",
+    "adsep-overview",
+    "legal-hold-investigations",
+    "hazing-harassment-reporting",
+  ];
+  const leadersAwardsSection = "leaders-awards-recognition";
+  const leadersAwardsSlugs = [
+    "writing-award-recommendations",
+    "citation-format-requirements",
+    "common-award-errors",
+    "iaps-submission",
+    "award-routing-approval",
+    "award-timeline-management",
+  ];
+  const leadersCareerSection = "leaders-career-development";
+  const leadersCareerSlugs = [
+    "reenlistment-packages",
+    "reenlistment-prerequisites",
+    "pme-enrollment-tracking",
+    "mos-school-recommendations",
+    "meritorious-promotion-packages",
+    "cutting-score-guidance",
+    "career-counseling",
+  ];
+  const leadersCounselingSection = "leaders-counseling-documentation";
+  const leadersCounselingSlugs = [
+    "page11-vs-6105",
+    "writing-page11-entries",
+    "6105-counseling-requirements",
+    "nploc-guidance",
+    "mro-counseling",
+    "rebuttal-rights-timelines",
+    "common-documentation-errors",
+  ];
+  const leadersDeploymentSection = "leaders-deployment-readiness";
+  const leadersDeploymentSlugs = [
+    "pre-deployment-checklist",
+    "sgli-beneficiary-verification",
+    "dd93-page2-verification",
+    "family-care-plan-requirements",
+    "deers-id-currency",
+    "poa-guidance",
+    "post-deployment-actions",
+    "family-readiness-responsibilities",
+  ];
+  const leadersPerformanceSection = "leaders-performance-evaluation";
+  const leadersPerformanceSlugs = [
+    "rs-ro-responsibilities",
+    "billet-descriptions",
+    "ongoing-counseling",
+    "writing-effective-fitreps",
+    "adverse-fitrep-process",
+    "relative-value-profiles",
+    "fitrep-timelines",
+    "common-fitrep-errors",
+    "jepes-overview",
+    "jepes-command-input",
+  ];
+  const leadersPersonnelSection = "leaders-personnel-accountability";
+  const leadersPersonnelSlugs = [
+    "leave-approval-management",
+    "liberty-policy-enforcement",
+    "checkin-checkout-oversight",
+    "muster-accountability",
+    "tad-tracking",
+    "duty-status-changes",
+    "pcs-support-responsibilities",
+    "gear-equipment-accountability",
+  ];
+  const leadersSystemsSection = "leaders-administrative-systems";
+  const leadersSystemsSlugs = [
+    "mol-leader-functions",
+    "mctfs-leader-tasks",
+    "marinenet-pme-tracking",
+    "iaps-leader-guide",
+    "dts-approval-responsibilities",
+    "system-troubleshooting",
+  ];
+
   const params: { role: Role; section: string; item: string }[] = [];
   for (const role of roles) {
     for (const item of payAllowancesSlugs) params.push({ role, section: payAllowancesSection, item });
@@ -2877,6 +2982,18 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     for (const item of recordsCorrectionsSlugs) params.push({ role, section: recordsCorrectionsSection, item });
     for (const item of systemsManagementSlugs) params.push({ role, section: systemsManagementSection, item });
   }
+
+  // Leaders-only sections
+  const leaderRole: Role = "leaders";
+  for (const item of leadersAccountabilitySlugs) params.push({ role: leaderRole, section: leadersAccountabilitySection, item });
+  for (const item of leadersAwardsSlugs) params.push({ role: leaderRole, section: leadersAwardsSection, item });
+  for (const item of leadersCareerSlugs) params.push({ role: leaderRole, section: leadersCareerSection, item });
+  for (const item of leadersCounselingSlugs) params.push({ role: leaderRole, section: leadersCounselingSection, item });
+  for (const item of leadersDeploymentSlugs) params.push({ role: leaderRole, section: leadersDeploymentSection, item });
+  for (const item of leadersPerformanceSlugs) params.push({ role: leaderRole, section: leadersPerformanceSection, item });
+  for (const item of leadersPersonnelSlugs) params.push({ role: leaderRole, section: leadersPersonnelSection, item });
+  for (const item of leadersSystemsSlugs) params.push({ role: leaderRole, section: leadersSystemsSection, item });
+
   return params;
 }
 

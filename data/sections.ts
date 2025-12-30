@@ -520,6 +520,226 @@ export const SECTIONS: Record<string, Section> = {
     title: "I&I Staff Administration",
     intro: "Inspector-Instructor staff administration resources for supporting reserve units.",
   },
+
+  // ============================================
+  // LEADER-SPECIFIC SECTIONS
+  // ============================================
+
+  "leaders-accountability-discipline": {
+    title: "Accountability & Discipline",
+    intro: "This section helps SNCOs, Warrant Officers, and Company/Field Grade Officers manage accountability and disciplinary processes. Understand your authority levels, documentation requirements, and legal responsibilities to ensure fair and consistent treatment of Marines while protecting their rights.",
+    groups: [
+      {
+        title: "Non-Judicial Punishment",
+        items: [
+          { title: "Understanding NJP Authority Levels", slug: "njp-authority-levels", desc: "Know what NJP authority you have based on your billet and rank" },
+          { title: "Leader Role in NJP Recommendation", slug: "njp-recommendation-documentation", desc: "How to recommend and document NJP actions" },
+          { title: "Article 31(b) Rights and Responsibilities", slug: "article-31b-rights", desc: "Understanding rights advisement and leader responsibilities" },
+          { title: "Progressive Discipline Framework", slug: "progressive-discipline", desc: "Escalating corrective actions before formal punishment" },
+        ],
+      },
+      {
+        title: "Accountability Actions",
+        items: [
+          { title: "UA and Desertion Reporting", slug: "ua-desertion-reporting", desc: "Timelines and procedures for unauthorized absence reporting" },
+          { title: "Administrative Separation Overview", slug: "adsep-overview", desc: "Understanding the ADSEP process and leader involvement" },
+          { title: "Legal Hold and Investigation Support", slug: "legal-hold-investigations", desc: "Supporting legal holds and command investigations" },
+          { title: "Hazing and Harassment Reporting", slug: "hazing-harassment-reporting", desc: "Recognizing, reporting, and preventing hazing and harassment" },
+        ],
+      },
+    ],
+  },
+
+  "leaders-awards-recognition": {
+    title: "Awards & Recognition",
+    intro: "Recognizing Marines for their achievements is a critical leadership responsibility. This section covers how to write effective award recommendations, navigate the approval process, and avoid common errors that delay or derail recognition.",
+    groups: [
+      {
+        title: "Writing Awards",
+        items: [
+          { title: "Writing Effective Award Recommendations", slug: "writing-award-recommendations", desc: "Crafting compelling narratives that justify the award level" },
+          { title: "Citation Format Requirements", slug: "citation-format-requirements", desc: "Format standards by award type and approval authority" },
+          { title: "Common Award Package Errors", slug: "common-award-errors", desc: "Avoid mistakes that delay or reject award packages" },
+        ],
+      },
+      {
+        title: "Processing Awards",
+        items: [
+          { title: "iAPS Submission Process", slug: "iaps-submission", desc: "Step-by-step guidance for submitting awards in iAPS" },
+          { title: "Award Routing and Approval Authority", slug: "award-routing-approval", desc: "Understanding the chain of approval for different award levels" },
+          { title: "Timeline Management", slug: "award-timeline-management", desc: "Planning ahead for PCS, retirement, and end-of-tour awards" },
+        ],
+      },
+    ],
+  },
+
+  "leaders-career-development": {
+    title: "Career Development",
+    intro: "Leaders play a pivotal role in shaping Marine careers through reenlistment support, PME tracking, and promotion recommendations. This section provides guidance on career counseling responsibilities and how to prepare Marines for advancement.",
+    groups: [
+      {
+        title: "Reenlistment",
+        items: [
+          { title: "Leader Role in Reenlistment Packages", slug: "reenlistment-packages", desc: "Supporting Marines through the reenlistment process" },
+          { title: "Verifying Reenlistment Prerequisites", slug: "reenlistment-prerequisites", desc: "Ensure Marines meet all requirements before submission" },
+        ],
+      },
+      {
+        title: "Education and Training",
+        items: [
+          { title: "PME Enrollment and Tracking", slug: "pme-enrollment-tracking", desc: "Ensuring subordinates complete required PME on time" },
+          { title: "MOS School Recommendations", slug: "mos-school-recommendations", desc: "Identifying and recommending Marines for specialty training" },
+        ],
+      },
+      {
+        title: "Promotions",
+        items: [
+          { title: "Meritorious Promotion Packages", slug: "meritorious-promotion-packages", desc: "Preparing and endorsing meritorious promotion recommendations" },
+          { title: "Cutting Score and Composite Guidance", slug: "cutting-score-guidance", desc: "Helping Marines understand and improve their composite scores" },
+          { title: "Career Counseling Responsibilities", slug: "career-counseling", desc: "Conducting meaningful career development discussions" },
+        ],
+      },
+    ],
+  },
+
+  "leaders-counseling-documentation": {
+    title: "Counseling & Documentation",
+    intro: "Proper counseling and documentation protects both Marines and the command. This section covers the different types of counseling entries, when to use each, and how to write effective documentation that stands up to scrutiny.",
+    groups: [
+      {
+        title: "Administrative Entries",
+        items: [
+          { title: "Page 11 vs 6105 Decision Matrix", slug: "page11-vs-6105", desc: "When to use Page 11 entries versus 6105 counseling" },
+          { title: "Writing Effective Page 11 Entries", slug: "writing-page11-entries", desc: "Crafting clear, factual administrative remarks" },
+          { title: "6105 Counseling Requirements", slug: "6105-counseling-requirements", desc: "The four required elements of a valid 6105 entry" },
+          { title: "Non-Punitive Letter of Caution (NPLOC)", slug: "nploc-guidance", desc: "When and how to issue an NPLOC" },
+        ],
+      },
+      {
+        title: "Performance Counseling",
+        items: [
+          { title: "MRO Counseling Before Adverse FITREPs", slug: "mro-counseling", desc: "Required counseling before issuing adverse fitness reports" },
+          { title: "Rebuttal Rights and Timelines", slug: "rebuttal-rights-timelines", desc: "Understanding Marine rights to rebut adverse documentation" },
+          { title: "Common Documentation Errors", slug: "common-documentation-errors", desc: "Avoid mistakes that invalidate counseling entries" },
+        ],
+      },
+    ],
+  },
+
+  "leaders-deployment-readiness": {
+    title: "Deployment & Readiness",
+    intro: "Preparing Marines for deployment requires attention to administrative details that protect service members and their families. This section covers pre-deployment checklists, family readiness, and post-deployment administrative requirements.",
+    groups: [
+      {
+        title: "Pre-Deployment",
+        items: [
+          { title: "Pre-Deployment Administrative Checklist", slug: "pre-deployment-checklist", desc: "Complete administrative requirements before deployment" },
+          { title: "Verifying SGLI and Beneficiary Elections", slug: "sgli-beneficiary-verification", desc: "Ensure life insurance coverage is current and accurate" },
+          { title: "DD93 and Page 2 Verification", slug: "dd93-page2-verification", desc: "Verify emergency contact and next of kin information" },
+          { title: "Family Care Plan Requirements", slug: "family-care-plan-requirements", desc: "Ensure single parents and dual-military have valid plans" },
+        ],
+      },
+      {
+        title: "Documentation and ID",
+        items: [
+          { title: "DEERS and ID Card Currency", slug: "deers-id-currency", desc: "Verify dependent enrollment and ID card expiration dates" },
+          { title: "Power of Attorney Guidance", slug: "poa-guidance", desc: "Advise Marines on POA types and legal assistance" },
+        ],
+      },
+      {
+        title: "Post-Deployment",
+        items: [
+          { title: "Post-Deployment Administrative Actions", slug: "post-deployment-actions", desc: "Required admin tasks upon return from deployment" },
+          { title: "Family Readiness Program Responsibilities", slug: "family-readiness-responsibilities", desc: "Leader role in supporting families during and after deployment" },
+        ],
+      },
+    ],
+  },
+
+  "leaders-performance-evaluation": {
+    title: "Performance Evaluation",
+    intro: "Performance evaluations directly impact Marine careers. This section covers fitness report responsibilities, JEPES for junior Marines, counseling requirements, and how to write effective evaluations that accurately reflect performance.",
+    groups: [
+      {
+        title: "Fitness Reports",
+        items: [
+          { title: "RS and RO Responsibilities", slug: "rs-ro-responsibilities", desc: "Understanding Reporting Senior and Reviewing Officer roles" },
+          { title: "Establishing Billet Descriptions", slug: "billet-descriptions", desc: "30-day requirement for establishing billet descriptions" },
+          { title: "Ongoing Counseling During Reporting Period", slug: "ongoing-counseling", desc: "Documenting performance throughout the reporting period" },
+          { title: "Writing Effective Fitness Reports", slug: "writing-effective-fitreps", desc: "Techniques for writing accurate and impactful evaluations" },
+          { title: "Adverse Fitness Report Process", slug: "adverse-fitrep-process", desc: "Requirements and procedures for adverse reports" },
+        ],
+      },
+      {
+        title: "Understanding Evaluations",
+        items: [
+          { title: "Relative Value and Profiles", slug: "relative-value-profiles", desc: "How RV and RS profiles affect career progression" },
+          { title: "FITREP Submission Timelines", slug: "fitrep-timelines", desc: "30-day standard and 60-day adverse submission requirements" },
+          { title: "Common FITREP Errors", slug: "common-fitrep-errors", desc: "Avoid mistakes that harm Marines or require correction" },
+        ],
+      },
+      {
+        title: "JEPES",
+        items: [
+          { title: "JEPES Overview", slug: "jepes-overview", desc: "Understanding the Junior Enlisted Performance Evaluation System" },
+          { title: "JEPES Command Input", slug: "jepes-command-input", desc: "How leaders provide input to JEPES evaluations" },
+        ],
+      },
+    ],
+  },
+
+  "leaders-personnel-accountability": {
+    title: "Personnel Accountability",
+    intro: "Maintaining accountability of personnel, equipment, and administrative status is fundamental to unit readiness. This section covers leave management, liberty policies, check-in/out procedures, and tracking Marines on temporary duty.",
+    groups: [
+      {
+        title: "Leave and Liberty",
+        items: [
+          { title: "Leave Approval and Management", slug: "leave-approval-management", desc: "Approving leave requests and managing leave balances" },
+          { title: "Liberty Policy Enforcement", slug: "liberty-policy-enforcement", desc: "Implementing and enforcing command liberty policies" },
+        ],
+      },
+      {
+        title: "Personnel Tracking",
+        items: [
+          { title: "Check-In and Check-Out Oversight", slug: "checkin-checkout-oversight", desc: "Ensuring Marines complete all requirements" },
+          { title: "Muster and Accountability Reporting", slug: "muster-accountability", desc: "Daily accountability and emergency muster procedures" },
+          { title: "TAD and Temporary Duty Tracking", slug: "tad-tracking", desc: "Tracking Marines on temporary additional duty" },
+          { title: "Duty Status Changes", slug: "duty-status-changes", desc: "Managing light duty, SIQ, and limited duty status" },
+        ],
+      },
+      {
+        title: "Transfers and Equipment",
+        items: [
+          { title: "PCS Support Responsibilities", slug: "pcs-support-responsibilities", desc: "Leader role in supporting Marines during PCS" },
+          { title: "Gear and Equipment Accountability", slug: "gear-equipment-accountability", desc: "Ensuring Marines maintain accountability of issued gear" },
+        ],
+      },
+    ],
+  },
+
+  "leaders-administrative-systems": {
+    title: "Administrative Systems",
+    intro: "Marine Corps administrative systems are essential tools for personnel management. This section covers leader-specific functions in MOL, MCTFS, MarineNet, iAPS, and DTS, including common troubleshooting scenarios.",
+    groups: [
+      {
+        title: "Personnel Systems",
+        items: [
+          { title: "MOL Leader Functions", slug: "mol-leader-functions", desc: "Leader-specific capabilities in Marine Online" },
+          { title: "MCTFS Access and Common Tasks", slug: "mctfs-leader-tasks", desc: "Accessing and using MCTFS for personnel actions" },
+          { title: "MarineNet PME Tracking", slug: "marinenet-pme-tracking", desc: "Monitoring subordinate PME completion and enrollment" },
+        ],
+      },
+      {
+        title: "Administrative Systems",
+        items: [
+          { title: "iAPS for Awards", slug: "iaps-leader-guide", desc: "Using iAPS to submit and track award packages" },
+          { title: "DTS Approval Responsibilities", slug: "dts-approval-responsibilities", desc: "Approving travel authorizations and vouchers in DTS" },
+          { title: "Troubleshooting Common System Issues", slug: "system-troubleshooting", desc: "Resolving common access and functionality problems" },
+        ],
+      },
+    ],
+  },
 };
 
 /** Set of section keys that are only accessible by administrators */
@@ -527,4 +747,16 @@ export const ADMIN_ONLY_SECTIONS = new Set([
   "s1-g1-administration",
   "pac-personnel-admin-center",
   "ii-i-staff-administration",
+]);
+
+/** Set of section keys that are specific to the leaders role */
+export const LEADER_SECTIONS = new Set([
+  "leaders-accountability-discipline",
+  "leaders-awards-recognition",
+  "leaders-career-development",
+  "leaders-counseling-documentation",
+  "leaders-deployment-readiness",
+  "leaders-performance-evaluation",
+  "leaders-personnel-accountability",
+  "leaders-administrative-systems",
 ]);
