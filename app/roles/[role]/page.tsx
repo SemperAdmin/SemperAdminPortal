@@ -32,18 +32,18 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
   const safeRole = p.role ?? "marines";
   const roleTitle = safeRole === "marines" ? "All Marines" : safeRole[0].toUpperCase() + safeRole.slice(1);
   const categories: { label: string; slug: string }[] = [
-    { label: "Pay & Allowances", slug: "pay-allowances" },
-    { label: "Travel & Transportation", slug: "travel-transportation" },
     { label: "Dependency Management", slug: "dependency-management" },
-    { label: "Personnel Administration", slug: "personnel-administration" },
-    { label: "Promotions & Career Progression", slug: "promotions-career-progression" },
     { label: "Deployment Support", slug: "deployment-support" },
     { label: "Legal & Disciplinary", slug: "legal-disciplinary" },
+    { label: "Pay & Allowances", slug: "pay-allowances" },
+    { label: "Personnel Administration", slug: "personnel-administration" },
+    { label: "Promotions & Career Progression", slug: "promotions-career-progression" },
     { label: "Records & Corrections", slug: "records-corrections" },
     { label: "Reserve & Mobilization", slug: "reserve-mobilization" },
     { label: "Separation & Transitions", slug: "separation-transitions" },
-    { label: "Training & Education", slug: "training-education" },
     { label: "Systems Management", slug: "systems-management" },
+    { label: "Training & Education", slug: "training-education" },
+    { label: "Travel & Transportation", slug: "travel-transportation" },
   ];
   const isAdministrators = safeRole === "administrators";
   const isCommanders = safeRole === "commanders";
