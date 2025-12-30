@@ -398,6 +398,31 @@ export const SECTIONS: Record<string, Section> = {
       },
     ],
   },
+  "legal-disciplinary": {
+    title: "Legal & Disciplinary",
+    intro: "Legal and disciplinary administration for commanders and administrative personnel. Covers non-judicial punishment processing, administrative investigations, court-martial support, legal assistance programs, and victim witness assistance. Ensures proper documentation of disciplinary actions while protecting due process rights.",
+    groups: [
+      {
+        title: "Administrative Actions",
+        items: [
+          { title: "NJP / Article 15", slug: "njp-article-15", desc: "Non-Judicial Punishment processing and Unit Punishment Book" },
+          { title: "Punitive Letters of Reprimand", slug: "punitive-letters-reprimand", desc: "PLOR drafting and filing determinations" },
+          { title: "Page 11 Counseling", slug: "page-11-counseling", desc: "Administrative Remarks entry requirements" },
+          { title: "Administrative Investigations", slug: "administrative-investigations", desc: "Command investigation support and documentation" },
+        ],
+      },
+      {
+        title: "Legal Support",
+        items: [
+          { title: "Court-Martial Support", slug: "court-martial-support", desc: "Unit-level administrative support for judicial proceedings" },
+          { title: "Legal Assistance", slug: "legal-assistance", desc: "Free legal services for personal civil matters" },
+          { title: "Victim Witness Assistance (VWAP)", slug: "vwap", desc: "Victim and Witness Assistance Program support" },
+          { title: "Military Protective Orders", slug: "military-protective-orders", desc: "MPO processing and NCIC registration" },
+          { title: "IG Complaints", slug: "ig-complaints", desc: "Inspector General complaint procedures" },
+        ],
+      },
+    ],
+  },
   "s1-g1-administration": {
     title: "S-1 / G-1 Administration",
     intro: "S-1 / G-1 (Administration Section) Handles all personnel administration and manpower functions. Manages pay, leave, promotions, awards, and official correspondence. Maintains service records and ensures compliance with personnel policies and reporting requirements. Serves as the command's administrative hub and liaison with higher headquarters for manpower actions.",

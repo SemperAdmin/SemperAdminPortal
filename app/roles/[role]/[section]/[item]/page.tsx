@@ -171,6 +171,17 @@ import { ADOSContent } from "../../../../../components/ADOSContent";
 import { ADSWContent } from "../../../../../components/ADSWContent";
 import { ADTContent } from "../../../../../components/ADTContent";
 import { DemobilizationProcessingContent } from "../../../../../components/DemobilizationProcessingContent";
+// Legal & Disciplinary - Administrative Actions
+import { NJPArticle15Content } from "../../../../../components/NJPArticle15Content";
+import { PunitiveLettersReprimandContent } from "../../../../../components/PunitiveLettersReprimandContent";
+import { Page11CounselingContent } from "../../../../../components/Page11CounselingContent";
+import { AdministrativeInvestigationsContent } from "../../../../../components/AdministrativeInvestigationsContent";
+// Legal & Disciplinary - Legal Support
+import { CourtMartialSupportContent } from "../../../../../components/CourtMartialSupportContent";
+import { LegalAssistanceContent } from "../../../../../components/LegalAssistanceContent";
+import { VWAPContent } from "../../../../../components/VWAPContent";
+import { MilitaryProtectiveOrdersContent } from "../../../../../components/MilitaryProtectiveOrdersContent";
+import { IGComplaintsContent } from "../../../../../components/IGComplaintsContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -2188,6 +2199,86 @@ const DEMOBILIZATION_PROCESSING_DATA = {
   ],
 };
 
+// Legal & Disciplinary - Administrative Actions
+const NJP_ARTICLE_15_DATA = {
+  references: [
+    { title: "MCO 5800.16 Vol 14 - NJP", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "JAGINST 5800.7F - JAG Manual", url: "https://www.jag.navy.mil/", isQuickLink: true },
+    { title: "NAVMC 10132 - Unit Punishment Book", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "Article 15 UCMJ", url: "https://www.law.cornell.edu/uscode/text/10/815", isQuickLink: false },
+  ],
+};
+
+const PUNITIVE_LETTERS_REPRIMAND_DATA = {
+  references: [
+    { title: "MCO 5800.16 Vol 14 - NJP", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "JAGINST 5800.7F - JAG Manual", url: "https://www.jag.navy.mil/", isQuickLink: true },
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/", isQuickLink: false },
+  ],
+};
+
+const PAGE_11_COUNSELING_DATA = {
+  references: [
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "Marine Online (MOL)", url: "https://mol.usmc.mil/", isQuickLink: true },
+    { title: "NAVMC 11035 - Admin Change Request", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "BCNR", url: "https://www.secnav.navy.mil/mra/CORB/pages/home.aspx", isQuickLink: false },
+  ],
+};
+
+const ADMINISTRATIVE_INVESTIGATIONS_DATA = {
+  references: [
+    { title: "JAGINST 5800.7F - JAG Manual", url: "https://www.jag.navy.mil/", isQuickLink: true },
+    { title: "MCO 5830.1A - Command Investigations", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "SECNAVINST 5211.5E - Privacy Act", url: "https://www.secnav.navy.mil/", isQuickLink: false },
+  ],
+};
+
+// Legal & Disciplinary - Legal Support
+const COURT_MARTIAL_SUPPORT_DATA = {
+  references: [
+    { title: "Manual for Courts-Martial (MCM)", url: "https://jsc.defense.gov/Portals/99/Documents/MCM.pdf", isQuickLink: true },
+    { title: "JAGINST 5800.7F - JAG Manual", url: "https://www.jag.navy.mil/", isQuickLink: true },
+    { title: "MCO 5800.16 - LSAM", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "JTR Chapter 7 - Witness Travel", url: "https://www.travel.dod.mil/", isQuickLink: false },
+  ],
+};
+
+const LEGAL_ASSISTANCE_DATA = {
+  references: [
+    { title: "10 U.S.C. § 1044 - Legal Assistance", url: "https://www.law.cornell.edu/uscode/text/10/1044", isQuickLink: true },
+    { title: "SCRA Information", url: "https://www.justice.gov/servicemembers", isQuickLink: true },
+    { title: "Marine Corps Legal Services", url: "https://www.hqmc.marines.mil/Agencies/Judge-Advocate-Division/Legal-Services-Support-Section/", isQuickLink: false },
+  ],
+};
+
+const VWAP_DATA = {
+  references: [
+    { title: "DoDI 1030.2 - VWAP", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/103002p.pdf", isQuickLink: true },
+    { title: "UCMJ Article 6b - Victim Rights", url: "https://www.law.cornell.edu/uscode/text/10/806b", isQuickLink: true },
+    { title: "DD Form 2701 - Initial Victim Info", url: "https://www.esd.whs.mil/", isQuickLink: false },
+    { title: "Crime Victims Rights Act", url: "https://www.justice.gov/usao/resources/crime-victims-rights-ombudsman/victims-rights-act", isQuickLink: false },
+  ],
+};
+
+const MILITARY_PROTECTIVE_ORDERS_DATA = {
+  references: [
+    { title: "DoDI 6400.06 - Domestic Abuse", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/640006p.pdf", isQuickLink: true },
+    { title: "DD Form 2873 - MPO", url: "https://www.esd.whs.mil/", isQuickLink: true },
+    { title: "18 U.S.C. § 2265 - Full Faith & Credit", url: "https://www.law.cornell.edu/uscode/text/18/2265", isQuickLink: false },
+    { title: "NCIC Protection Order File", url: "https://www.fbi.gov/services/cjis/ncic", isQuickLink: false },
+  ],
+};
+
+const IG_COMPLAINTS_DATA = {
+  references: [
+    { title: "DoDI 7050.06 - Whistleblower Protection", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/705006p.pdf", isQuickLink: true },
+    { title: "10 U.S.C. § 1034 - Protected Communications", url: "https://www.law.cornell.edu/uscode/text/10/1034", isQuickLink: true },
+    { title: "DoD Hotline", url: "https://www.dodig.mil/hotline/", isQuickLink: true },
+    { title: "HQMC Inspector General", url: "https://www.hqmc.marines.mil/igmc/", isQuickLink: false },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -2261,7 +2352,20 @@ function toTitle(slug: string) {
     .replace(/\bCrcr\b/g, "CRCR")
     .replace(/\bMrows\b/g, "MROWS")
     .replace(/\bMcirsa\b/g, "MCIRSA")
-    .replace(/\bAt\b/g, "AT");
+    .replace(/\bAt\b/g, "AT")
+    .replace(/\bNjp\b/g, "NJP")
+    .replace(/\bPlor\b/g, "PLOR")
+    .replace(/\bNploc\b/g, "NPLOC")
+    .replace(/\bVwap\b/g, "VWAP")
+    .replace(/\bMpo\b/g, "MPO")
+    .replace(/\bNcic\b/g, "NCIC")
+    .replace(/\bIg\b/g, "IG")
+    .replace(/\bUcmj\b/g, "UCMJ")
+    .replace(/\bSja\b/g, "SJA")
+    .replace(/\bJagman\b/g, "JAGMAN")
+    .replace(/\bScra\b/g, "SCRA")
+    .replace(/\bSvc\b/g, "SVC")
+    .replace(/\bLro\b/g, "LRO");
 }
 
 export default async function RoleItemPage({ params }: { params: Promise<Params> }) {
@@ -2452,6 +2556,17 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "adsw": <ADSWContent data={ADSW_DATA} />,
     "adt": <ADTContent data={ADT_DATA} />,
     "demobilization-processing": <DemobilizationProcessingContent data={DEMOBILIZATION_PROCESSING_DATA} />,
+    // Legal & Disciplinary - Administrative Actions
+    "njp-article-15": <NJPArticle15Content data={NJP_ARTICLE_15_DATA} />,
+    "punitive-letters-reprimand": <PunitiveLettersReprimandContent data={PUNITIVE_LETTERS_REPRIMAND_DATA} />,
+    "page-11-counseling": <Page11CounselingContent data={PAGE_11_COUNSELING_DATA} />,
+    "administrative-investigations": <AdministrativeInvestigationsContent data={ADMINISTRATIVE_INVESTIGATIONS_DATA} />,
+    // Legal & Disciplinary - Legal Support
+    "court-martial-support": <CourtMartialSupportContent data={COURT_MARTIAL_SUPPORT_DATA} />,
+    "legal-assistance": <LegalAssistanceContent data={LEGAL_ASSISTANCE_DATA} />,
+    "vwap": <VWAPContent data={VWAP_DATA} />,
+    "military-protective-orders": <MilitaryProtectiveOrdersContent data={MILITARY_PROTECTIVE_ORDERS_DATA} />,
+    "ig-complaints": <IGComplaintsContent data={IG_COMPLAINTS_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -2676,6 +2791,20 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "adt",
     "demobilization-processing",
   ];
+  const legalDisciplinarySection = "legal-disciplinary";
+  const legalDisciplinarySlugs = [
+    // Administrative Actions
+    "njp-article-15",
+    "punitive-letters-reprimand",
+    "page-11-counseling",
+    "administrative-investigations",
+    // Legal Support
+    "court-martial-support",
+    "legal-assistance",
+    "vwap",
+    "military-protective-orders",
+    "ig-complaints",
+  ];
   const params: { role: Role; section: string; item: string }[] = [];
   for (const role of roles) {
     for (const item of payAllowancesSlugs) params.push({ role, section: payAllowancesSection, item });
@@ -2688,6 +2817,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     for (const item of educationTrainingSlugs) params.push({ role, section: educationTrainingSection, item });
     for (const item of separationsTransitionsSlugs) params.push({ role, section: separationsTransitionsSection, item });
     for (const item of reserveMobilizationSlugs) params.push({ role, section: reserveMobilizationSection, item });
+    for (const item of legalDisciplinarySlugs) params.push({ role, section: legalDisciplinarySection, item });
   }
   return params;
 }
