@@ -567,12 +567,12 @@ export function SponsorshipProgramContent({ data }: Props) {
                   <div className="rounded-lg bg-zinc-50 p-4 dark:bg-zinc-800/50">
                     <p className="font-medium text-zinc-900 dark:text-zinc-100">East of Mississippi River</p>
                     <p className="text-sm text-zinc-600 dark:text-zinc-400">(except Wisconsin)</p>
-                    <p className="mt-1 text-sm font-medium text-[var(--sa-red)]">Camp Pendleton MCCS: 1-833-657-2110</p>
+                    <p className="mt-1 text-sm font-medium text-[var(--sa-red)]">MCB Quantico MCCS: 1-800-253-1624</p>
                   </div>
                   <div className="rounded-lg bg-zinc-50 p-4 dark:bg-zinc-800/50">
                     <p className="font-medium text-zinc-900 dark:text-zinc-100">West of Mississippi River</p>
                     <p className="text-sm text-zinc-600 dark:text-zinc-400">(and Wisconsin)</p>
-                    <p className="mt-1 text-sm font-medium text-[var(--sa-red)]">MCB Quantico MCCS: 1-800-253-1624</p>
+                    <p className="mt-1 text-sm font-medium text-[var(--sa-red)]">Camp Pendleton MCCS: 1-833-657-2110</p>
                   </div>
                 </div>
                 <p className="mt-4 text-sm text-zinc-700 dark:text-zinc-300">

@@ -1186,8 +1186,8 @@ const CHECK_IN_DATA = {
 
 const SPONSORSHIP_DATA = {
   references: [
-    { title: "MCO 1320.11 (Sponsorship Program)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "NAVMC 11382 (Sponsor Checklist)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "MCO 1320.11H (Sponsorship Program)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/980074/mco-132011h-wadmin-ch-1/", isQuickLink: true },
+    { title: "NAVMC Forms (DLA)", url: "https://www.esd.whs.mil/Directives/forms/", isQuickLink: true },
     { title: "Unit Sponsorship Training (MarineNet)", url: "https://www.marinenet.usmc.mil/", isQuickLink: true },
     { title: "IPAC Locator", url: "https://www.manpower.usmc.mil/webcenter/portal/MISSA", isQuickLink: false },
     { title: "MOL (Marine Online)", url: "https://mol.tfs.usmc.mil/", isQuickLink: false },
@@ -1220,7 +1220,7 @@ const RECORDS_REVIEW_DATA = {
 const SECURITY_CLEARANCE_DATA = {
   references: [
     { title: "DCSA Personnel Vetting", url: "https://www.dcsa.mil/Personnel-Vetting/", isQuickLink: true },
-    { title: "Unit Security Manager", url: "#", isQuickLink: true },
+    { title: "DCSA Customer Service", url: "https://www.dcsa.mil/Contact/", isQuickLink: true },
     { title: "e-QIP (SF-86 System)", url: "https://www.opm.gov/investigations/e-qip-application/", isQuickLink: true },
     { title: "DoD 5200.2-R (Personnel Security Program)", url: "https://www.esd.whs.mil/Directives/", isQuickLink: false },
     { title: "SECNAV M-5510.30 (Personnel Security)", url: "https://www.secnav.navy.mil/doni/", isQuickLink: false },
@@ -1230,7 +1230,7 @@ const SECURITY_CLEARANCE_DATA = {
 
 const CHECKOUT_DATA = {
   references: [
-    { title: "IPAC (Personnel Admin Center)", url: "#", isQuickLink: true },
+    { title: "HQMC IPAC", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_pub", isQuickLink: true },
     { title: "Personal Property Office", url: "https://www.move.mil/", isQuickLink: true },
     { title: "Travel Claim Worksheet", url: "https://www.dfas.mil/", isQuickLink: true },
     { title: "MCO P1000.6H (Separations Manual)", url: "https://www.marines.mil/Portals/1/MCO%20P1000.6H.pdf", isQuickLink: false },
@@ -1243,7 +1243,7 @@ const FINAL_PAY_DATA = {
   references: [
     { title: "myPay (DFAS)", url: "https://mypay.dfas.mil/", isQuickLink: true },
     { title: "DTS (Travel Vouchers)", url: "https://dtsproweb.defensetravel.osd.mil/", isQuickLink: true },
-    { title: "Unit Finance/Disbursing", url: "#", isQuickLink: true },
+    { title: "DFAS Customer Service", url: "https://www.dfas.mil/CustomerService/", isQuickLink: true },
     { title: "JTR (Joint Travel Regulations)", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: false },
     { title: "DoD FMR 7000.14-R Volume 7A", url: "https://comptroller.defense.gov/FMR/", isQuickLink: false },
     { title: "MCO 1000.6 (Assignment Systems)", url: "https://www.marines.mil/", isQuickLink: false },
@@ -1254,7 +1254,7 @@ const RECORDS_TRANSFER_DATA = {
   references: [
     { title: "MOL OMPF Viewer", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "ORMA (Record Corrections)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
-    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "HQMC MMRP", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_pub", isQuickLink: true },
     { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/", isQuickLink: false },
     { title: "MCO 1070.1 (Individual Records)", url: "https://www.marines.mil/", isQuickLink: false },
     { title: "BUMEDINST 6150.29 (Medical Records)", url: "https://www.med.navy.mil/", isQuickLink: false },
@@ -1264,8 +1264,8 @@ const RECORDS_TRANSFER_DATA = {
 const LEAVE_SETTLEMENT_DATA = {
   references: [
     { title: "MOL Leave Management", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
-    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
-    { title: "IPAC", url: "#", isQuickLink: true },
+    { title: "myPay (Leave Balance)", url: "https://mypay.dfas.mil/", isQuickLink: true },
+    { title: "HQMC MMRP", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_pub", isQuickLink: true },
     { title: "MCO 1050.3J (Leave Manual)", url: "https://www.marines.mil/", isQuickLink: false },
     { title: "JTR (Joint Travel Regulations)", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: false },
     { title: "DoD FMR 7000.14-R Volume 7A", url: "https://comptroller.defense.gov/FMR/", isQuickLink: false },
@@ -1276,7 +1276,7 @@ const OMPF_MANAGEMENT_DATA = {
   references: [
     { title: "MOL OMPF Viewer", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "ORMA (Online Record Modular Application)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
-    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "HQMC MMRP", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_pub", isQuickLink: true },
     { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/", isQuickLink: false },
     { title: "MMRP (Military Manpower Records Program)", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
     { title: "NPRC (National Personnel Records Center)", url: "https://www.archives.gov/veterans", isQuickLink: false },
@@ -1287,9 +1287,9 @@ const SRB_CORRECTIONS_DATA = {
   references: [
     { title: "MOL (BIR/BTR Access)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "ORMA", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
-    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
+    { title: "HQMC MMRP", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_pub", isQuickLink: true },
     { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/", isQuickLink: false },
-    { title: "IPAC", url: "#", isQuickLink: false },
+    { title: "HQMC IPAC Contacts", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
     { title: "BCNR (Board for Correction of Naval Records)", url: "https://www.secnav.navy.mil/mra/bcnr/", isQuickLink: false },
   ],
 };
@@ -1297,8 +1297,8 @@ const SRB_CORRECTIONS_DATA = {
 const AWARDS_DECORATIONS_DATA = {
   references: [
     { title: "MOL Awards Summary", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
-    { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
-    { title: "Awards Board", url: "#", isQuickLink: true },
+    { title: "Navy Department Awards", url: "https://www.secnav.navy.mil/mra/CORB/Pages/Awards.aspx", isQuickLink: true },
+    { title: "HQMC MMMA", url: "https://www.manpower.usmc.mil/", isQuickLink: true },
     { title: "SECNAVINST 1650.1H (Navy/Marine Corps Awards Manual)", url: "https://www.secnav.navy.mil/", isQuickLink: false },
     { title: "NAVMC 11533 (Personal Award Recommendation)", url: "https://www.marines.mil/", isQuickLink: false },
     { title: "MARADMIN Award Messages", url: "https://www.marines.mil/News/Messages/", isQuickLink: false },
@@ -1308,8 +1308,8 @@ const AWARDS_DECORATIONS_DATA = {
 const TRAINING_RECORD_DATA = {
   references: [
     { title: "MOL (BTR Access)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
-    { title: "Unit S-3/Training", url: "#", isQuickLink: true },
     { title: "MarineNet", url: "https://www.marinenet.usmc.mil/", isQuickLink: true },
+    { title: "MCTIMS", url: "https://www.trngcmd.marines.mil/", isQuickLink: true },
     { title: "MCO 1553.4B (Training and Readiness Manual)", url: "https://www.marines.mil/", isQuickLink: false },
     { title: "COOL (Credentialing Opportunities On-Line)", url: "https://www.cool.osd.mil/usmc/", isQuickLink: false },
     { title: "JST (Joint Services Transcript)", url: "https://jst.doded.mil/", isQuickLink: false },
@@ -1320,7 +1320,7 @@ const EDUCATION_RECORDS_DATA = {
   references: [
     { title: "MOL (Education Record)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "JST Portal", url: "https://jst.doded.mil/", isQuickLink: true },
-    { title: "Education Office", url: "#", isQuickLink: true },
+    { title: "MCCS Voluntary Education", url: "https://www.usmc-mccs.org/services/education/", isQuickLink: true },
     { title: "MCO 1560.25 (Tuition Assistance)", url: "https://www.marines.mil/", isQuickLink: false },
     { title: "COOL Program", url: "https://www.cool.osd.mil/usmc/", isQuickLink: false },
     { title: "VA Education Benefits", url: "https://www.va.gov/education/", isQuickLink: false },
@@ -1331,7 +1331,7 @@ const BCNR_DATA = {
   references: [
     { title: "BCNR Website", url: "https://www.secnav.navy.mil/mra/bcnr/", isQuickLink: true },
     { title: "DD Form 149", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd0149.pdf", isQuickLink: true },
-    { title: "Legal Assistance Office", url: "#", isQuickLink: true },
+    { title: "Marine Corps Legal Services", url: "https://www.hqmc.marines.mil/sja/", isQuickLink: true },
     { title: "10 U.S.C. § 1552 (Correction of Military Records)", url: "https://www.law.cornell.edu/uscode/text/10/1552", isQuickLink: false },
     { title: "NDRB (Naval Discharge Review Board)", url: "https://www.secnav.navy.mil/mra/CORB/Pages/NDRB/default.aspx", isQuickLink: false },
     { title: "Veterans Service Organizations", url: "https://www.va.gov/vso/", isQuickLink: false },

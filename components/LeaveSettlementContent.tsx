@@ -90,6 +90,20 @@ const CHECKLIST_ARRIVAL = [
   "Provide documentation if needed",
 ];
 
+const REQUESTING_LEAVE_STEPS = [
+  "Request through command before departure",
+  "Annotated on PCS orders",
+  "Specify number of days",
+  "Identify leave location",
+];
+
+const PCS_TIMELINE_COMPONENTS = [
+  "Detachment date (last duty day)",
+  "Travel days (proceed time)",
+  "Leave en route (if authorized)",
+  "Report date (first duty day at new station)",
+];
+
 export function LeaveSettlementContent({ data }: Props) {
   const content: Record<string, React.ReactNode> = {
     overview: (
@@ -183,12 +197,7 @@ export function LeaveSettlementContent({ data }: Props) {
             Requesting Leave En Route
           </h3>
           <ol className="mt-4 space-y-2">
-            {[
-              "Request through command before departure",
-              "Annotated on PCS orders",
-              "Specify number of days",
-              "Identify leave location",
-            ].map((step, index) => (
+            {REQUESTING_LEAVE_STEPS.map((step, index) => (
               <li key={step} className="flex items-start gap-3">
                 <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">
                   {index + 1}
@@ -301,12 +310,7 @@ export function LeaveSettlementContent({ data }: Props) {
             Typical PCS travel sequence:
           </p>
           <ol className="mt-4 space-y-2">
-            {[
-              "Detachment date (last duty day)",
-              "Travel days (proceed time)",
-              "Leave en route (if authorized)",
-              "Report date (first duty day at new station)",
-            ].map((step, index) => (
+            {PCS_TIMELINE_COMPONENTS.map((step, index) => (
               <li key={step} className="flex items-start gap-3">
                 <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">
                   {index + 1}
