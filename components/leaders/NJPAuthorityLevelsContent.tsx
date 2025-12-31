@@ -34,7 +34,7 @@ export function NJPAuthorityLevelsContent({ data }: Props) {
         </div>
         <div className="rounded-lg bg-amber-50 p-4 dark:bg-amber-900/20">
           <p className="text-sm text-amber-800 dark:text-amber-200">
-            <strong>Key Point:</strong> Marine Corps NCOs (E-6 to E-9) cannot be reduced in grade at NJP. This differs from other services.
+            <strong>Key Point:</strong> Marine Corps SNCOs (E-6 to E-9) cannot be reduced in grade at NJP. This differs from other services.
           </p>
         </div>
       </section>
@@ -95,7 +95,7 @@ export function NJPAuthorityLevelsContent({ data }: Props) {
         <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Important Limitations</h2>
           <ul className="mt-3 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span><strong>SNCO Protection:</strong> Marine Corps NCOs (E-6 to E-9) cannot be reduced in grade at NJP.</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span><strong>SNCO Protection:</strong> Marine Corps SNCOs (E-6 to E-9) cannot be reduced in grade at NJP.</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span><strong>OIC Limitation:</strong> Officers-in-Charge can only impose NJP on enlisted personnel, not officers.</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span><strong>Warrant Officer Limitation:</strong> Warrant Officers do not have authority to reduce Marines in grade.</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span><strong>Concurrent Punishments:</strong> Restriction and extra duties can run concurrently but cannot exceed the maximum for extra duties.</span></li>
