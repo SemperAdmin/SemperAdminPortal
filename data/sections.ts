@@ -769,6 +769,46 @@ export const SECTIONS: Record<string, Section> = {
       },
     ],
   },
+
+  "leaders-conducting-investigations": {
+    title: "Conducting Administrative Investigations",
+    intro: "As an investigating officer (IO), you are responsible for searching out, discovering, collecting, and preserving evidence to document a matter of official interest to your command. This section provides step-by-step guidance on conducting investigations correctly by type, from preliminary inquiries to command investigations.",
+    groups: [
+      {
+        title: "Before You Start",
+        items: [
+          { title: "Review Your Convening Order", slug: "review-convening-order", desc: "Understanding your roadmap: scope, issues, format, and due date" },
+          { title: "Contact a Judge Advocate", slug: "contact-judge-advocate", desc: "Getting legal guidance before beginning your investigation" },
+          { title: "Coordinate With Other Investigations", slug: "coordinate-other-investigations", desc: "Checking for NCIS, safety, or IG investigations" },
+        ],
+      },
+      {
+        title: "Conducting Investigations",
+        items: [
+          { title: "Preliminary Inquiry", slug: "preliminary-inquiry-io", desc: "3-day timeline to determine if formal investigation is warranted" },
+          { title: "Command Investigation", slug: "command-investigation-io", desc: "Planning, evidence collection, witness interviews, and report writing" },
+          { title: "Litigation-Report Investigation", slug: "litigation-report-io", desc: "Investigations conducted under judge advocate supervision" },
+        ],
+      },
+      {
+        title: "Evidence and Witnesses",
+        items: [
+          { title: "Collecting Evidence", slug: "collecting-evidence", desc: "Documentary, physical, and photographic evidence handling" },
+          { title: "Interviewing Witnesses", slug: "interviewing-witnesses", desc: "Procedures for witnesses and Article 31 warnings for suspects" },
+          { title: "Standards of Proof", slug: "standards-of-proof-io", desc: "Preponderance of evidence and drawing reasonable inferences" },
+        ],
+      },
+      {
+        title: "Writing Your Report",
+        items: [
+          { title: "Report Format", slug: "investigation-report-format-io", desc: "Preliminary statement, findings, opinions, recommendations, enclosures" },
+          { title: "LOD/Misconduct Determinations", slug: "lod-misconduct-determinations", desc: "Line of duty findings and misconduct standards" },
+          { title: "Death Case Procedures", slug: "death-case-procedures-io", desc: "Special requirements for death investigations" },
+          { title: "Common Mistakes to Avoid", slug: "common-investigation-mistakes", desc: "Top 10 errors and how to prevent them" },
+        ],
+      },
+    ],
+  },
   // ============================================
   // COMMANDER-SPECIFIC SECTIONS
   // ============================================
@@ -1402,6 +1442,7 @@ export const LEADER_SECTIONS = new Set([
   "leaders-administrative-systems",
   "leaders-awards-recognition",
   "leaders-career-development",
+  "leaders-conducting-investigations",
   "leaders-counseling-documentation",
   "leaders-deployment-readiness",
   "leaders-performance-evaluation",

@@ -22,6 +22,7 @@ import { TransitionOfCommandContent } from "../../../../components/commanders/Tr
 import { EnvironmentalContent } from "../../../../components/commanders/EnvironmentalContent";
 import { SecurityProgramsContent } from "../../../../components/commanders/SecurityProgramsContent";
 import { AdminInvestigationsContent } from "../../../../components/commanders/AdminInvestigationsContent";
+import { ConductingInvestigationsContent } from "../../../../components/leaders/ConductingInvestigationsContent";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -93,9 +94,10 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     key === "commanders-transition-command" ||
     key === "commanders-environmental" ||
     key === "commanders-security" ||
-    key === "commanders-admin-investigations";
+    key === "commanders-admin-investigations" ||
+    key === "leaders-conducting-investigations";
 
-  // Render comprehensive content components for specific commander sections
+  // Render comprehensive content components for specific commander/leader sections
   if (hasComprehensiveContent) {
     if (key === "commanders-authority-legal") {
       return <CommandAuthorityContent />;
@@ -153,6 +155,9 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     }
     if (key === "commanders-admin-investigations") {
       return <AdminInvestigationsContent />;
+    }
+    if (key === "leaders-conducting-investigations") {
+      return <ConductingInvestigationsContent />;
     }
   }
 
