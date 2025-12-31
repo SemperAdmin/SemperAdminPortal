@@ -2385,22 +2385,22 @@ const CITATION_FORMAT_REQUIREMENTS_DATA = {
 const COMMON_AWARD_ERRORS_DATA = {
   references: [
     { title: "SECNAV M-1650.1 - Navy and Marine Corps Awards Manual", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf" },
-    { title: "MARADMIN 077/25 - CMC Delegation of Awarding Authority", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
-    { title: "Annual MARADMIN on PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "MARADMIN 077/25 - CMC Delegation of Awarding Authority", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4073209/commandant-of-the-marine-corps-delegation-of-awarding-authority-for-military-aw/" },
+    { title: "MARADMIN 093/25 - PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4078781/military-awards-guidance-for-permanent-change-of-station-season/" },
   ],
 };
 
 const IAPS_SUBMISSION_DATA = {
   references: [
-    { title: "MARADMIN 042/08 - Implementation of iAPS", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
-    { title: "MARADMIN 099/18 - iAPS Updates", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
-    { title: "MARADMIN 077/25 - CMC Delegation of Awarding Authority", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "MARADMIN 042/08 - Implementation of iAPS", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/893622/implementation-of-the-improved-awards-processing-system-iaps/" },
+    { title: "MARADMIN 099/18 - iAPS Updates", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/1438860/improved-awards-processing-system-iaps-updates/" },
+    { title: "MARADMIN 077/25 - CMC Delegation of Awarding Authority", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4073209/commandant-of-the-marine-corps-delegation-of-awarding-authority-for-military-aw/" },
   ],
 };
 
 const AWARD_ROUTING_APPROVAL_DATA = {
   references: [
-    { title: "MARADMIN 077/25 (21 Feb 2025) - CMC Delegation of Awarding Authority for Military Awards", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "MARADMIN 077/25 (21 Feb 2025) - CMC Delegation of Awarding Authority for Military Awards", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4073209/commandant-of-the-marine-corps-delegation-of-awarding-authority-for-military-aw/" },
     { title: "SECNAVINST 1650.1J - Department of the Navy Military Awards Policy", url: "https://www.secnav.navy.mil/doni/Directives/01000%20Military%20Personnel%20Support/01-600%20Performance%20and%20Discipline%20Programs/1650.1J.pdf" },
     { title: "SECNAV M-1650.1 - Navy and Marine Corps Awards Manual", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf" },
     { title: "MCO 1650.19J with CH1 - Administrative and Issue Procedures for Decorations, Medals, and Awards", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899334/mco-165019j-wch-1/" },
@@ -2409,7 +2409,7 @@ const AWARD_ROUTING_APPROVAL_DATA = {
 
 const AWARD_TIMELINE_MANAGEMENT_DATA = {
   references: [
-    { title: "Annual MARADMIN on PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "MARADMIN 093/25 - PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4078781/military-awards-guidance-for-permanent-change-of-station-season/" },
     { title: "MCO 1650.19J with CH1 - Administrative and Issue Procedures for Decorations, Medals, and Awards", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899334/mco-165019j-wch-1/" },
   ],
 };

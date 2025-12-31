@@ -201,11 +201,11 @@ export function AwardRoutingApprovalContent({ data }: Props) {
         </div>
         <div className="rounded-lg bg-red-50 p-4 dark:bg-red-900/20">
           <h4 className="font-semibold text-red-800 dark:text-red-200">Do Not:</h4>
-          <ul className="mt-2 space-y-1 text-sm text-red-700 dark:text-red-300">
-            <li>• Submit an award package to an authority level below what the award requires</li>
-            <li>• Allow anyone to sign an award citation "By Direction"</li>
-            <li>• Assume an acting commander has the same authority as the permanent commander</li>
-            <li>• Process awards for foreign military personnel without CMC approval</li>
+          <ul className="mt-2 space-y-2 text-sm text-red-700 dark:text-red-300">
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" /><span>Submit an award package to an authority level below what the award requires</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" /><span>Allow anyone to sign an award citation "By Direction"</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" /><span>Assume an acting commander has the same authority as the permanent commander</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" /><span>Process awards for foreign military personnel without CMC approval</span></li>
           </ul>
         </div>
       </section>
