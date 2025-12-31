@@ -1006,10 +1006,79 @@ export const SECTIONS: Record<string, Section> = {
     ],
   },
 
+  "commanders-substance-abuse": {
+    title: "Substance Abuse & Urinalysis",
+    intro: "Commanders are responsible for preventing substance abuse and maintaining unit readiness through effective drug testing programs. This includes urinalysis administration, drug rehabilitation referrals, and administrative separation for drug offenses.",
+    groups: [
+      {
+        title: "Urinalysis Program",
+        items: [
+          { title: "Unit Urinalysis Coordinator", slug: "uuc-appointment", desc: "Appointing and training the UUC" },
+          { title: "Testing Requirements", slug: "testing-requirements", desc: "Random, command-directed, and probable cause testing" },
+          { title: "Inspection Testing", slug: "inspection-testing", desc: "Health and welfare inspection requirements" },
+        ],
+      },
+      {
+        title: "Positive Results",
+        items: [
+          { title: "Positive Result Procedures", slug: "positive-result-procedures", desc: "Actions upon confirmed positive results" },
+          { title: "Administrative Actions", slug: "substance-admin-actions", desc: "NJP, ADSEP, and career implications" },
+          { title: "Treatment Referral", slug: "treatment-referral", desc: "SACO and treatment program referrals" },
+        ],
+      },
+    ],
+  },
+
+  "commanders-equal-opportunity": {
+    title: "Equal Opportunity",
+    intro: "Commanders ensure equal opportunity through policy, training, and complaint resolution. EO programs prevent discrimination based on race, color, religion, sex, national origin, and other protected categories. Understanding complaint processes and climate assessment is essential.",
+    groups: [
+      {
+        title: "EO Program",
+        items: [
+          { title: "EO Representative Appointment", slug: "eor-appointment", desc: "Selecting and training unit EO Representatives" },
+          { title: "EO Policy Statement", slug: "eo-policy", desc: "Commander's equal opportunity policy" },
+          { title: "Climate Assessment", slug: "eo-climate-assessment", desc: "Monitoring unit climate through DEOCS and observation" },
+        ],
+      },
+      {
+        title: "Complaint Resolution",
+        items: [
+          { title: "EO Complaint Process", slug: "eo-complaint-process", desc: "Formal and informal complaint resolution" },
+          { title: "Investigation Requirements", slug: "eo-investigation", desc: "When investigations are required and procedures" },
+          { title: "Retaliation Prevention", slug: "eo-retaliation-prevention", desc: "Protecting complainants from retaliation" },
+        ],
+      },
+    ],
+  },
+
+  "commanders-legal-discipline": {
+    title: "Legal & Discipline",
+    intro: "Commanders exercise legal authority through NJP, administrative separation, and courts-martial. Understanding the UCMJ, due process requirements, and the range of disciplinary options ensures fair and effective command discipline.",
+    groups: [
+      {
+        title: "Non-Judicial Punishment",
+        items: [
+          { title: "NJP Procedures", slug: "njp-procedures", desc: "Article 15 processing requirements" },
+          { title: "Punishment Limits", slug: "punishment-limits", desc: "Maximum authorized punishments by grade" },
+          { title: "Appeal Rights", slug: "appeal-rights", desc: "Marine's right to appeal NJP decisions" },
+        ],
+      },
+      {
+        title: "Administrative Separation",
+        items: [
+          { title: "ADSEP Authority", slug: "adsep-commander-authority", desc: "Separation authority and board requirements" },
+          { title: "Separation Bases", slug: "separation-bases", desc: "Grounds for administrative separation" },
+          { title: "Due Process", slug: "adsep-due-process", desc: "Ensuring Marine's rights are protected" },
+        ],
+      },
+    ],
+  },
+
   // GROUP C: READINESS AND RESOURCES
-  "commanders-readiness-reporting": {
-    title: "Readiness Reporting",
-    intro: "Accurate readiness reporting enables informed decision-making at all echelons. Commanders assess and report unit readiness through DRRS-MC using standardized resource and capability levels. Understanding METL development, C-Level assessments, and commander's override authority is essential.",
+  "commanders-training-readiness": {
+    title: "Training & Readiness",
+    intro: "Training is the commander's business. Effective training management ensures unit readiness through METL-focused training, T&R compliance, DRRS-MC reporting, and accurate readiness assessments. Commanders establish training philosophy and ensure resources are allocated to priority training requirements.",
     groups: [
       {
         title: "DRRS-MC Reporting",
@@ -1072,8 +1141,8 @@ export const SECTIONS: Record<string, Section> = {
     ],
   },
 
-  "commanders-materiel-equipment": {
-    title: "Materiel & Equipment Readiness",
+  "commanders-maintenance-logistics": {
+    title: "Maintenance & Logistics",
     intro: "Equipment readiness directly impacts mission capability. Commanders ensure proper equipment accountability, maintenance, and reporting through appointed officers, regular inventories, and oversight of maintenance management systems. This section covers T/E management, small arms accountability, and maintenance programs.",
     groups: [
       {
@@ -1103,39 +1172,10 @@ export const SECTIONS: Record<string, Section> = {
     ],
   },
 
-  "commanders-training-education": {
-    title: "Training & Education Management",
-    intro: "Training is the commander's business. Effective training management ensures unit readiness through METL-focused training, T&R compliance, range coordination, and PME tracking. Commanders establish training philosophy and ensure resources are allocated to priority training requirements.",
-    groups: [
-      {
-        title: "Training Philosophy",
-        items: [
-          { title: "Commander's Training Philosophy", slug: "training-philosophy", desc: "Establishing and communicating training priorities" },
-          { title: "Annual Training Plan", slug: "annual-training-plan", desc: "Developing and resourcing the ATP" },
-          { title: "Pre-Deployment Training", slug: "pdt-certification", desc: "Certifying unit readiness for deployment" },
-        ],
-      },
-      {
-        title: "Standards & Compliance",
-        items: [
-          { title: "T&R Compliance", slug: "tr-compliance", desc: "Training and Readiness Manual standards" },
-          { title: "METL Assessment (30-Day)", slug: "metl-30-day", desc: "30-day review requirement and T-Level determination" },
-          { title: "Range & Training Area Coordination", slug: "range-coordination", desc: "Scheduling and resource coordination" },
-        ],
-      },
-      {
-        title: "Education & Schools",
-        items: [
-          { title: "PME Tracking", slug: "pme-tracking-commander", desc: "Ensuring Marines complete required PME" },
-          { title: "Formal School Quota Management", slug: "school-quota-management", desc: "Managing and prioritizing school quotas" },
-        ],
-      },
-    ],
-  },
 
   // GROUP D: COMPLIANCE AND SECURITY
-  "commanders-safety": {
-    title: "Safety Program Management",
+  "commanders-safety-risk": {
+    title: "Safety & Risk Management",
     intro: "Safety is a command responsibility. Commanders establish the safety culture through policy, assessment, and integration of Operational Risk Management into all activities. This includes ground safety, aviation safety (where applicable), mishap reporting, and motor vehicle safety programs.",
     groups: [
       {
@@ -1166,8 +1206,8 @@ export const SECTIONS: Record<string, Section> = {
     ],
   },
 
-  "commanders-inspections": {
-    title: "Inspection Program & Compliance",
+  "commanders-inspector-general": {
+    title: "Inspector General & Inspections",
     intro: "Inspections ensure compliance with regulations and identify areas for improvement. Commanders maintain internal inspection programs, prepare for external inspections, and track corrective actions. Understanding IGMC functional areas, FSMAO analysis, and POA&M management is essential for compliance.",
     groups: [
       {
@@ -1286,8 +1326,8 @@ export const SECTIONS: Record<string, Section> = {
     ],
   },
 
-  "commanders-change-of-command": {
-    title: "Change of Command Requirements",
+  "commanders-transition-command": {
+    title: "Transition of Command",
     intro: "Change of command involves numerous timeline-driven requirements. This section consolidates all actions required before assuming command, within specific timeframes after taking command, annual requirements, and actions before relinquishing command. Use this as your comprehensive checklist.",
     groups: [
       {
@@ -1373,16 +1413,18 @@ export const COMMANDER_SECTIONS = new Set([
   "commanders-sapr",
   "commanders-suicide-prevention",
   "commanders-family-readiness",
+  "commanders-substance-abuse",
+  "commanders-equal-opportunity",
+  "commanders-legal-discipline",
   // Group C: Readiness and Resources
-  "commanders-readiness-reporting",
+  "commanders-training-readiness",
   "commanders-fiscal-property",
-  "commanders-materiel-equipment",
-  "commanders-training-education",
+  "commanders-maintenance-logistics",
   // Group D: Compliance and Security
-  "commanders-safety",
-  "commanders-inspections",
+  "commanders-safety-risk",
+  "commanders-inspector-general",
   "commanders-environmental",
   "commanders-security",
   "commanders-public-affairs",
-  "commanders-change-of-command",
+  "commanders-transition-command",
 ]);
