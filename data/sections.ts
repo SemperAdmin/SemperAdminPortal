@@ -766,11 +766,11 @@ export const ADMIN_ONLY_SECTIONS = new Set([
 /** Set of section keys that are specific to the leaders role */
 export const LEADER_SECTIONS = new Set([
   "leaders-accountability-discipline",
+  "leaders-administrative-systems",
   "leaders-awards-recognition",
   "leaders-career-development",
   "leaders-counseling-documentation",
   "leaders-deployment-readiness",
   "leaders-performance-evaluation",
   "leaders-personnel-accountability",
-  "leaders-administrative-systems",
 ]);
