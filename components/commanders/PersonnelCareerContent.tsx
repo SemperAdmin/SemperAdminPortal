@@ -1033,34 +1033,7 @@ export function PersonnelCareerContent() {
 
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <a
-            href="https://www.marines.mil/News/Publications/MCPEL/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
-          >
-            <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
-            <span className="text-sm text-zinc-700 dark:text-zinc-300">MCO 1610.7 (PES Manual)</span>
-          </a>
-          <a
-            href="https://www.marines.mil/News/Publications/MCPEL/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
-          >
-            <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
-            <span className="text-sm text-zinc-700 dark:text-zinc-300">MCO 1616.1 (JEPES)</span>
-          </a>
-          <a
-            href="https://a-pes.mmrp.usmc.mil/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
-          >
-            <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
-            <span className="text-sm text-zinc-700 dark:text-zinc-300">A-PES System</span>
-          </a>
-          <a
-            href="https://mol.tfs.usmc.mil/"
+            href="https://mol.tfs.usmc.mil/mol"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -1069,7 +1042,52 @@ export function PersonnelCareerContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">Marine Online (MOL)</span>
           </a>
           <a
-            href="https://www.marines.mil/News/Publications/MCPEL/"
+            href="https://a-pes.mmrp.usmc.mil/a-pes/dodBanner.jsp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
+          >
+            <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
+            <span className="text-sm text-zinc-700 dark:text-zinc-300">A-PES System</span>
+          </a>
+          <a
+            href="https://www.manpower.marines.mil/Divisions/Manpower-Management/Enlisted-Assignments/Stay-Marine/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
+          >
+            <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
+            <span className="text-sm text-zinc-700 dark:text-zinc-300">Stay Marine</span>
+          </a>
+          <a
+            href="https://www.manpower.marines.mil/Divisions/Plans-and-Policies/Manpower-Plans-and-Policy/Manpower-Military-Policy-MPO/Religious-Accommodations/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
+          >
+            <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
+            <span className="text-sm text-zinc-700 dark:text-zinc-300">Religious Accommodations</span>
+          </a>
+          <a
+            href="https://www.marines.mil/Portals/1/Publications/MCO%201610.7B%20SECURED.pdf?ver=Y104Ok-51cS4PJssb_4t4g%3d%3d"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
+          >
+            <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
+            <span className="text-sm text-zinc-700 dark:text-zinc-300">MCO 1610.7 (PES Manual)</span>
+          </a>
+          <a
+            href="https://www.marines.mil/Portals/1/Publications/MCO%201616.1.pdf?ver=2pWMQ3wSas3g628sXsBV4g%3d%3d"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
+          >
+            <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
+            <span className="text-sm text-zinc-700 dark:text-zinc-300">MCO 1616.1 (JEPES)</span>
+          </a>
+          <a
+            href="https://www.marines.mil/portals/1/Publications/MCO%20P1400.32D%20W%20CH%201-2.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -1078,31 +1096,13 @@ export function PersonnelCareerContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">MCO P1400.32D (Promotion)</span>
           </a>
           <a
-            href="https://www.marines.mil/News/Publications/MCPEL/"
+            href="https://www.marines.mil/portals/1/Publications/MCO%20P1070.12K%20W%20CH%201.pdf?ver=2012-10-11-163726-583"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
           >
             <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
             <span className="text-sm text-zinc-700 dark:text-zinc-300">MCO P1070.12K (IRAM)</span>
-          </a>
-          <a
-            href="https://www.manpower.usmc.mil/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
-          >
-            <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
-            <span className="text-sm text-zinc-700 dark:text-zinc-300">Manpower (MMRP-30)</span>
-          </a>
-          <a
-            href="https://www.manpower.marines.mil/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
-          >
-            <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
-            <span className="text-sm text-zinc-700 dark:text-zinc-300">Stay Marine</span>
           </a>
         </div>
       </div>

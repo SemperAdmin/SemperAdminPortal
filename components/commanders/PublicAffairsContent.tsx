@@ -883,10 +883,20 @@ export function PublicAffairsContent() {
 
           <div>
             <h3 className="font-semibold text-[var(--sa-cream)] mb-2">Resources</h3>
-            <ul className="text-sm text-[var(--sa-cream)]/70 space-y-1">
-              <li>• Marine Corps Communication Playbook</li>
-              <li>• DINFOS Consolidated Guidelines for Release</li>
-              <li>• HHS Summary of HIPAA Privacy Rule</li>
+            <ul className="text-sm space-y-1">
+              <li>
+                <a
+                  href="https://media.defense.gov/2025/Nov/05/2003819006/-1/-1/0/251103-USMCSOCIALMEDIAHANDBOOK.PDF"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--sa-gold)] hover:underline"
+                >
+                  USMC Social Media Handbook
+                </a>
+              </li>
+              <li className="text-[var(--sa-cream)]/70">• Marine Corps Communication Playbook</li>
+              <li className="text-[var(--sa-cream)]/70">• DINFOS Consolidated Guidelines for Release</li>
+              <li className="text-[var(--sa-cream)]/70">• HHS Summary of HIPAA Privacy Rule</li>
             </ul>
           </div>
         </div>

@@ -902,11 +902,39 @@ export function LegalDisciplineContent() {
 
           <div>
             <h3 className="font-semibold text-[var(--sa-cream)] mb-2">References</h3>
-            <ul className="text-sm text-[var(--sa-cream)]/70 space-y-1">
-              <li>• MCO P5800.16A (LEGADMINMAN)</li>
-              <li>• Manual for Courts-Martial</li>
-              <li>• MCO P1900.16 (Separations Manual)</li>
-              <li>• MARADMIN 583/13 (VLCO establishment)</li>
+            <ul className="text-sm space-y-1">
+              <li>
+                <a
+                  href="https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/1447370/mco-580016-wch-1-7-wvol-1-17/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--sa-gold)] hover:underline"
+                >
+                  MCO 5800.16 (LEGADMINMAN)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.marines.mil/Portals/1/Publications/MCO%201900.16%20ADMIN%20CH-3%20(SECURED).pdf?ver=SZptuAh1jjvolL-Gf5s5CQ%3d%3d"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--sa-gold)] hover:underline"
+                >
+                  MCO 1900.16 (Separation Manual)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.marines.mil/portals/1/Publications/MCO%201700.23G.pdf?ver=2019-06-26-101952-623"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--sa-gold)] hover:underline"
+                >
+                  MCO 1700.23G (Request Mast)
+                </a>
+              </li>
+              <li className="text-[var(--sa-cream)]/70">• Manual for Courts-Martial</li>
+              <li className="text-[var(--sa-cream)]/70">• MARADMIN 583/13 (VLCO establishment)</li>
             </ul>
           </div>
         </div>

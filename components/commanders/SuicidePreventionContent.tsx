@@ -793,22 +793,31 @@ export function SuicidePreventionContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">Military Crisis Line Chat</span>
           </a>
           <a
-            href="https://www.dstressline.com"
+            href="https://988lifeline.org/?utm_source=google&utm_medium=web&utm_campaign=onebox"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
           >
             <Phone className="h-4 w-4 text-rose-500" />
-            <span className="text-sm text-zinc-700 dark:text-zinc-300">DSTRESS Line</span>
+            <span className="text-sm text-zinc-700 dark:text-zinc-300">DSTRESS Line (988 Lifeline)</span>
           </a>
           <a
-            href="https://www.usmc-mccs.org"
+            href="https://www.dspo.mil/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
           >
             <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
-            <span className="text-sm text-zinc-700 dark:text-zinc-300">Marine and Family Programs</span>
+            <span className="text-sm text-zinc-700 dark:text-zinc-300">Defense Suicide Prevention Office</span>
+          </a>
+          <a
+            href="https://www.woundedwarrior.marines.mil/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
+          >
+            <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
+            <span className="text-sm text-zinc-700 dark:text-zinc-300">Wounded Warrior Regiment</span>
           </a>
           <a
             href="https://www.thegearlocker.org"
@@ -820,22 +829,22 @@ export function SuicidePreventionContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">Gear Locker (MAPIT Dashboard)</span>
           </a>
           <a
-            href="https://www.dspo.mil"
+            href="https://www.usmc-mccs.org"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
           >
             <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
-            <span className="text-sm text-zinc-700 dark:text-zinc-300">Defense Suicide Prevention Office</span>
+            <span className="text-sm text-zinc-700 dark:text-zinc-300">Marine and Family Programs</span>
           </a>
           <a
-            href="https://www.marines.mil/News/Publications/MCPEL/"
+            href="https://www.marines.mil/Portals/1/Publications/NAVMC%201720.1C%20(SECURED).pdf?ver=-1H0zM0QRwyCKyAoKoN0ow%3d%3d"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
           >
             <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
-            <span className="text-sm text-zinc-700 dark:text-zinc-300">NAVMC 1720.1</span>
+            <span className="text-sm text-zinc-700 dark:text-zinc-300">NAVMC 1720.1 (Suicide Prevention)</span>
           </a>
         </div>
 

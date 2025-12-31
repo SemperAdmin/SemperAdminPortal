@@ -866,9 +866,9 @@ export function SafetyRiskContent() {
                 </a>
               </li>
               <li>
-                <a href="https://www.public.navy.mil/navsafecen" target="_blank" rel="noopener noreferrer"
+                <a href="https://navalsafetycommand.navy.mil/" target="_blank" rel="noopener noreferrer"
                    className="text-[var(--sa-gold)] hover:underline flex items-center gap-1">
-                  Naval Safety Center <ExternalLink className="w-3 h-3" />
+                  Naval Safety Command <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
               <li>
