@@ -51,6 +51,57 @@ export const MCO_URLS = {
 
   /** NAVMC 1720.1C - Marine Corps Suicide Prevention Program */
   SUICIDE_PREVENTION: "https://www.marines.mil/Portals/1/Publications/NAVMC%201720.1C%20(SECURED).pdf?ver=-1H0zM0QRwyCKyAoKoN0ow%3d%3d",
+
+  /** MCO 1730.9 - Accommodation of Religious Practices */
+  RELIGIOUS_ACCOMMODATION: "https://www.marines.mil/Portals/1/Publications/MCO%201730.9.pdf",
+
+  /** MCO 4400.201 - Management of Property (Full with CH-3) */
+  PROPERTY_MANAGEMENT: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900715/mco-4400201-w-ch-3/",
+
+  /** MCO 4400.201 Volume 3 - Retail Supply Management PDF */
+  PROPERTY_MANAGEMENT_VOL3: "https://www.marines.mil/Portals/1/Publications/MCO%204400.201%20Volume%203_Final.pdf",
+
+  /** MCO 5100.29C - Marine Corps Safety Management System (with all Volumes) */
+  SAFETY_MANAGEMENT: "https://www.marines.mil/Portals/1/Publications/MCO%205100.29C%20with%20CH%201-2%20and%20Volumes%201-9.pdf",
+
+  /** MCO 1754.9B - Unit, Personal and Family Readiness Program */
+  FAMILY_READINESS: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf",
+
+  /** MCO 1754.11A - Marine Corps Family Advocacy Program */
+  FAMILY_ADVOCACY: "https://www.marines.mil/Portals/1/Publications/MCO%201754.11A.pdf",
+
+  /** MCO 3000.13B - Marine Corps Readiness Reporting */
+  READINESS_REPORTING: "https://www.marines.mil/Portals/1/Publications/MCO%203000.13B.pdf",
+
+  /** MCO 5300.17A - Marine Corps Substance Abuse Program */
+  SUBSTANCE_ABUSE: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/1567450/mco-530017a-wadmin-ch-2/",
+
+  /** MCO 1553.3C - Unit Training Management Program */
+  UNIT_TRAINING: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899431/mco-15533c/",
+
+  /** MCO 3500.110 - Mission Essential Task List (METL) Development */
+  METL_DEVELOPMENT: "https://www.marines.mil/portals/1/Publications/NAVMC%203500.110A.pdf",
+
+  /** MCO 5510.18B - Information and Personnel Security Program */
+  INFO_SECURITY: "https://www.marines.mil/portals/1/Publications/MCO%205510.18B.pdf",
+
+  /** MCO 5530.14A - Marine Corps Physical Security Program */
+  PHYSICAL_SECURITY: "https://www.marines.mil/portals/1/publications/mco%205530_14a.pdf",
+
+  /** MCO 3070.2 - Marine Corps Operations Security (OPSEC) Program */
+  OPSEC: "https://www.marines.mil/Portals/1/Docs/MCO%203070.2[1].pdf",
+
+  /** MCO 3302.1F - Marine Corps Antiterrorism Program */
+  ANTITERRORISM: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/1824861/mco-33021f/",
+
+  /** MCO 3500.27C - Risk Management (Cancelled by MCO 5100.29C Vol. 2) */
+  RISK_MANAGEMENT: "https://www.marines.mil/Portals/1/MCO%203500.27C.pdf",
+
+  /** MCO P5354.1E - Prohibited Activities and Conduct (PAC) Prevention */
+  PAC_PREVENTION: "https://www.marines.mil/Portals/1/Publications/MCO%205354.1G%20Admin%20Ch%201%20v2.pdf",
+
+  /** MCO 5090.2 - Environmental Compliance and Protection */
+  ENVIRONMENTAL: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899488/mco-50902/",
 } as const;
 
 // ============================================================================
