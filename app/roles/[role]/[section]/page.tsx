@@ -4,6 +4,9 @@ import { Breadcrumb } from "../../../../components/ui/Breadcrumb";
 import Link from "next/link";
 import CatalogGrid from "../../../../components/CatalogGrid";
 import { CommandAuthorityContent } from "../../../../components/commanders/CommandAuthorityContent";
+import { PersonnelCareerContent } from "../../../../components/commanders/PersonnelCareerContent";
+import { CommandClimateContent } from "../../../../components/commanders/CommandClimateContent";
+import { SAPRContent } from "../../../../components/commanders/SAPRContent";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -56,11 +59,26 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
   ];
 
   // Check for commander sections with comprehensive content pages
-  const hasComprehensiveContent = key === "commanders-authority-legal";
+  const hasComprehensiveContent =
+    key === "commanders-authority-legal" ||
+    key === "commanders-personnel-career" ||
+    key === "commanders-climate-culture" ||
+    key === "commanders-sapr";
 
   // Render comprehensive content components for specific commander sections
-  if (hasComprehensiveContent && key === "commanders-authority-legal") {
-    return <CommandAuthorityContent />;
+  if (hasComprehensiveContent) {
+    if (key === "commanders-authority-legal") {
+      return <CommandAuthorityContent />;
+    }
+    if (key === "commanders-personnel-career") {
+      return <PersonnelCareerContent />;
+    }
+    if (key === "commanders-climate-culture") {
+      return <CommandClimateContent />;
+    }
+    if (key === "commanders-sapr") {
+      return <SAPRContent />;
+    }
   }
 
   return (
