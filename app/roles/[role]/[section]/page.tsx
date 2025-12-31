@@ -3,6 +3,7 @@ import { SECTIONS, ADMIN_ONLY_SECTIONS, LEADER_SECTIONS, COMMANDER_SECTIONS } fr
 import { Breadcrumb } from "../../../../components/ui/Breadcrumb";
 import Link from "next/link";
 import CatalogGrid from "../../../../components/CatalogGrid";
+import { CommandAuthorityContent } from "../../../../components/commanders/CommandAuthorityContent";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -53,6 +54,14 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     { label: roleLabel, href: `/roles/${safeRole}` },
     { label: section.title },
   ];
+
+  // Check for commander sections with comprehensive content pages
+  const hasComprehensiveContent = key === "commanders-authority-legal";
+
+  // Render comprehensive content components for specific commander sections
+  if (hasComprehensiveContent && key === "commanders-authority-legal") {
+    return <CommandAuthorityContent />;
+  }
 
   return (
     <div className="space-y-8">
