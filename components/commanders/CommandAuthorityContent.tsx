@@ -101,7 +101,7 @@ export function CommandAuthorityContent() {
     { title: "MCO 5800.16", desc: "Legal Support and Administration Manual", href: MCO_URLS.LEGADMINMAN },
     { title: "Manual for Courts-Martial", desc: "MCM - UCMJ procedures", href: NAVY_DOD_URLS.MCM },
     { title: "MCO 1900.16", desc: "Separation and Retirement Manual", href: MCO_URLS.MARCORSEPMAN_PDF },
-    { title: "MCO 1730.9", desc: "Accommodation of Religious Practices", href: MCO_URLS.RELIGIOUS_ACCOMMODATION },
+    { title: "MCO 1730.9", desc: "Religious Ministry in the Marine Corps", href: MCO_URLS.RELIGIOUS_MINISTRY },
     { title: "MCO 1700.23G", desc: "Request Mast Procedures", href: MCO_URLS.REQUEST_MAST },
   ];
 
