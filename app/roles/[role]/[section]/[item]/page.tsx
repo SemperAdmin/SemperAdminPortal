@@ -191,6 +191,8 @@ import { ADSEPOverviewContent } from "../../../../../components/leaders/ADSEPOve
 import { LegalHoldInvestigationsContent } from "../../../../../components/leaders/LegalHoldInvestigationsContent";
 import { Article31bRightsContent } from "../../../../../components/leaders/Article31bRightsContent";
 import { ProgressiveDisciplineContent } from "../../../../../components/leaders/ProgressiveDisciplineContent";
+import { Page11vs6105DecisionGuideContent } from "../../../../../components/leaders/Page11vs6105DecisionGuideContent";
+import { CounselingRefusalProceduresContent } from "../../../../../components/leaders/CounselingRefusalProceduresContent";
 // Leaders - Awards & Recognition
 import { WritingAwardRecommendationsContent } from "../../../../../components/leaders/WritingAwardRecommendationsContent";
 import { CitationFormatRequirementsContent } from "../../../../../components/leaders/CitationFormatRequirementsContent";
@@ -2416,6 +2418,24 @@ const PROGRESSIVE_DISCIPLINE_DATA = {
   ],
 };
 
+const PAGE11_VS_6105_DECISION_GUIDE_DATA = {
+  references: [
+    { title: "MCO P1070.12K - IRAM (Page 11 Entries)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899135/mco-p107012k/" },
+    { title: "MCO P1900.16 - MARCORSEPMAN (Paragraph 6105)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899390/mco-190016g/" },
+    { title: "MCO 1610.7B - Performance Evaluation System", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16101b/" },
+    { title: "MCO 6100.13A - Physical Fitness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899201/mco-610013a/", isQuickLink: true },
+  ],
+};
+
+const COUNSELING_REFUSAL_PROCEDURES_DATA = {
+  references: [
+    { title: "MCO 1610.7B Chapter 5 - Performance Evaluation (Refusal Procedures)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16101b/", isQuickLink: true },
+    { title: "MCO P1070.12K - IRAM (Page 11 Entries)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899135/mco-p107012k/" },
+    { title: "MCO P1900.16 - MARCORSEPMAN (Paragraph 6105)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899390/mco-190016g/" },
+    { title: "UCMJ Article 92 - Failure to Obey Order", url: "https://www.law.cornell.edu/uscode/text/10/892" },
+  ],
+};
+
 // Leaders - Awards & Recognition
 const WRITING_AWARD_RECOMMENDATIONS_DATA = {
   references: [
@@ -3109,6 +3129,8 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "legal-hold-investigations": <LegalHoldInvestigationsContent data={LEGAL_HOLD_INVESTIGATIONS_DATA} />,
     "article-31b-rights": <Article31bRightsContent data={ARTICLE_31B_RIGHTS_DATA} />,
     "progressive-discipline": <ProgressiveDisciplineContent data={PROGRESSIVE_DISCIPLINE_DATA} />,
+    "page11-vs-6105-decision-guide": <Page11vs6105DecisionGuideContent data={PAGE11_VS_6105_DECISION_GUIDE_DATA} />,
+    "counseling-refusal-procedures": <CounselingRefusalProceduresContent data={COUNSELING_REFUSAL_PROCEDURES_DATA} />,
     // Leaders - Awards & Recognition
     "writing-award-recommendations": <WritingAwardRecommendationsContent data={WRITING_AWARD_RECOMMENDATIONS_DATA} />,
     "citation-format-requirements": <CitationFormatRequirementsContent data={CITATION_FORMAT_REQUIREMENTS_DATA} />,

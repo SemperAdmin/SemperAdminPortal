@@ -539,6 +539,13 @@ export const SECTIONS: Record<string, Section> = {
         ],
       },
       {
+        title: "Disciplinary Documentation",
+        items: [
+          { title: "Page 11 vs 6105 Decision Guide", slug: "page11-vs-6105-decision-guide", desc: "When to use Page 11 entries vs 6105 counseling warnings" },
+          { title: "Counseling Refusal Procedures", slug: "counseling-refusal-procedures", desc: "How to handle Marines who refuse to sign documents" },
+        ],
+      },
+      {
         title: "Accountability Actions",
         items: [
           { title: "UA and Desertion Reporting", slug: "ua-desertion-reporting", desc: "Timelines and procedures for unauthorized absence reporting" },
