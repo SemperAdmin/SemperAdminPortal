@@ -1,5 +1,6 @@
 import { type Role, catalogGroups, reportGroups, type CatalogGroup } from "../../../../data/links";
 import { SECTIONS, ADMIN_ONLY_SECTIONS } from "../../../../data/sections";
+import { Breadcrumb } from "../../../../components/ui/Breadcrumb";
 import Link from "next/link";
 import CatalogGrid from "../../../../components/CatalogGrid";
 
@@ -45,8 +46,17 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     "U&E",
   ];
   const reports = (reportNames.map(rByName).filter(Boolean) as CatalogGroup[]);
+
+  // Breadcrumb setup
+  const roleLabel = safeRole === "marines" ? "All Marines" : safeRole[0].toUpperCase() + safeRole.slice(1);
+  const breadcrumbItems = [
+    { label: roleLabel, href: `/roles/${safeRole}` },
+    { label: section.title },
+  ];
+
   return (
     <div className="space-y-8">
+      <Breadcrumb items={breadcrumbItems} />
       <h1 className="text-3xl font-bold tracking-tight text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{section.title}</h1>
       {section.intro && (
         <p className="text-zinc-700 dark:text-zinc-300">{section.intro}</p>

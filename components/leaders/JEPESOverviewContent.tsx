@@ -1,6 +1,8 @@
 "use client";
 
 import { TabbedContentLayout } from "../ui/TabbedContentLayout";
+import { TimeRequired } from "../ui/TimeRequired";
+import { LastUpdated } from "../ui/LastUpdated";
 
 type Reference = { title: string; url: string; isQuickLink?: boolean };
 type Props = { data: { references: Reference[] } };
@@ -17,6 +19,12 @@ export function JEPESOverviewContent({ data }: Props) {
   const content = {
     overview: (
       <section className="space-y-6">
+        {/* Time and Authority Info */}
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <TimeRequired time="10-15 minutes" label="Reading time" />
+          <LastUpdated date="December 2025" authority="MCO 1616.1" />
+        </div>
+
         <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">JEPES Overview (E-1 through E-4)</h2>
           <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
