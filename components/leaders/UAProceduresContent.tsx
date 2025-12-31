@@ -26,6 +26,13 @@ export function UAProceduresContent({ data }: Props) {
             serious offense with administrative and potential UCMJ consequences.
           </p>
         </div>
+        <div className="rounded-lg bg-amber-50 p-4 dark:bg-amber-900/20">
+          <h4 className="font-semibold text-amber-800 dark:text-amber-200">Related Content</h4>
+          <p className="mt-2 text-sm text-amber-700 dark:text-amber-300">
+            For UA reporting timeline, desertion declaration procedures (Day 5, Day 31, 180+ days), and DD Form 553
+            requirements, see <strong>Accountability & Discipline → UA/Desertion Reporting</strong>.
+          </p>
+        </div>
         <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">When UA Occurs</h3>
           <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">A Marine is in UA status when:</p>

@@ -50,44 +50,47 @@ export function CommonAwardErrorsContent({ data }: Props) {
             Citation formatting is strictly regulated. These errors are among the most common reasons for package returns.
           </p>
         </div>
+        <div className="rounded-lg bg-amber-50 p-4 dark:bg-amber-900/20">
+          <h4 className="font-semibold text-amber-800 dark:text-amber-200">Detailed Format Requirements</h4>
+          <p className="mt-2 text-sm text-amber-700 dark:text-amber-300">
+            For complete citation format requirements including character limits, font specifications, opening/closing
+            sentences, and capitalization rules by award level, see <strong>Awards & Recognition → Citation Format Requirements</strong>.
+          </p>
+        </div>
         <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Opening and Closing Sentences</h3>
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Top Citation Errors That Cause Returns</h3>
           <div className="mt-4 space-y-4">
             <div className="rounded-lg bg-red-50 p-4 dark:bg-red-900/20">
-              <h4 className="font-semibold text-red-800 dark:text-red-200">Common Error</h4>
+              <h4 className="font-semibold text-red-800 dark:text-red-200">Wrong Opening/Closing Sentence</h4>
               <p className="mt-1 text-sm text-red-700 dark:text-red-300">
-                Incorrect opening or closing sentences, especially for NAM/NCM. Each award level has specific required sentence structures found in SECNAV M-1650.1, Appendix B, Chapter 2.
+                Using NAM opening sentence for NCM or vice versa. Always verify the correct template from SECNAV M-1650.1.
+              </p>
+            </div>
+            <div className="rounded-lg bg-red-50 p-4 dark:bg-red-900/20">
+              <h4 className="font-semibold text-red-800 dark:text-red-200">&quot;Great Credit&quot; Misuse</h4>
+              <p className="mt-1 text-sm text-red-700 dark:text-red-300">
+                Using &quot;great credit&quot; on NAM/NCM. This phrase is only authorized for Air Medal and above.
+              </p>
+            </div>
+            <div className="rounded-lg bg-red-50 p-4 dark:bg-red-900/20">
+              <h4 className="font-semibold text-red-800 dark:text-red-200">Character/Line Limit Exceeded</h4>
+              <p className="mt-1 text-sm text-red-700 dark:text-red-300">
+                Citation exceeds maximum characters or lines. Use iAPS &quot;Print PDF&quot; to verify before submission.
+              </p>
+            </div>
+            <div className="rounded-lg bg-red-50 p-4 dark:bg-red-900/20">
+              <h4 className="font-semibold text-red-800 dark:text-red-200">Acronyms or Abbreviations</h4>
+              <p className="mt-1 text-sm text-red-700 dark:text-red-300">
+                Using &quot;USMC,&quot; &quot;CO,&quot; or unit abbreviations. All terms must be spelled out completely.
+              </p>
+            </div>
+            <div className="rounded-lg bg-red-50 p-4 dark:bg-red-900/20">
+              <h4 className="font-semibold text-red-800 dark:text-red-200">Wrong Capitalization</h4>
+              <p className="mt-1 text-sm text-red-700 dark:text-red-300">
+                NAM/NCM not in ALL CAPS, or MSM/above not in sentence case. Each award level has specific capitalization rules.
               </p>
             </div>
           </div>
-        </div>
-        <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">"Great Credit" Usage</h3>
-          <div className="mt-4 space-y-4">
-            <div className="rounded-lg bg-red-50 p-4 dark:bg-red-900/20">
-              <h4 className="font-semibold text-red-800 dark:text-red-200">Common Error</h4>
-              <p className="mt-1 text-sm text-red-700 dark:text-red-300">
-                Using "great credit" on awards below Air Medal. This phrase is only authorized for Air Medal and above.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Character Limits</h3>
-          <ul className="mt-3 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>NAM/NCM: 1,250 characters maximum</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>MSM and above: 1,650/1,670 characters maximum (varies by award)</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Exceeding these limits will cause the package to be returned</span></li>
-          </ul>
-        </div>
-        <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Prohibited Elements</h3>
-          <ul className="mt-3 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>No acronyms, abbreviations, or jargon (spell everything out)</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>No bold, italic, or underline text</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>NAM/NCM require ALL CAPS formatting</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>MSM and above use natural capitalization</span></li>
-          </ul>
         </div>
       </section>
     ),

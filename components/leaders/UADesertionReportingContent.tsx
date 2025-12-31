@@ -24,6 +24,13 @@ export function UADesertionReportingContent({ data }: Props) {
             desertion after 30 days. Your timely reporting protects the command and ensures proper accountability.
           </p>
         </div>
+        <div className="rounded-lg bg-amber-50 p-4 dark:bg-amber-900/20">
+          <h4 className="font-semibold text-amber-800 dark:text-amber-200">Related Content</h4>
+          <p className="mt-2 text-sm text-amber-700 dark:text-amber-300">
+            For immediate response procedures, contact attempts checklist, and accountability tracking when a Marine
+            fails to report, see <strong>Personnel Accountability → UA Procedures</strong>.
+          </p>
+        </div>
         <div className="grid gap-4 md:grid-cols-2">
           <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Unauthorized Absence (UA)</h3>
