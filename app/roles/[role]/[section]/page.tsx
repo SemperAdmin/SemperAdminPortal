@@ -142,21 +142,27 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
             <section key={g.title} className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
               <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{g.title}</h2>
               <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {g.items.map((i) => (
-                  <li key={i.title} className="rounded-md border border-black/5 bg-white p-3 text-sm shadow-sm transition hover:bg-[var(--sa-cream)]/60 dark:border-white/15 dark:bg-black/60 dark:hover:bg-white/10">
-                    {i.slug ? (
-                      <Link prefetch={false} href={`/roles/${safeRole}/${key}/${i.slug}`} className="block">
-                        <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{i.title}</div>
-                        <div className="mt-1 text-xs text-zinc-700 dark:text-zinc-300">{i.desc}</div>
-                      </Link>
-                    ) : (
-                      <div className="block">
-                        <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{i.title}</div>
-                        <div className="mt-1 text-xs text-zinc-700 dark:text-zinc-300">{i.desc}</div>
-                      </div>
-                    )}
-                  </li>
-                ))}
+                {g.items.map((i) => {
+                  // Life events items link to /life-events/[slug] instead of nested under roles
+                  const href = key === "life-events" && i.slug
+                    ? `/life-events/${i.slug}`
+                    : `/roles/${safeRole}/${key}/${i.slug}`;
+                  return (
+                    <li key={i.title} className="rounded-md border border-black/5 bg-white p-3 text-sm shadow-sm transition hover:bg-[var(--sa-cream)]/60 dark:border-white/15 dark:bg-black/60 dark:hover:bg-white/10">
+                      {i.slug ? (
+                        <Link prefetch={false} href={href} className="block">
+                          <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{i.title}</div>
+                          <div className="mt-1 text-xs text-zinc-700 dark:text-zinc-300">{i.desc}</div>
+                        </Link>
+                      ) : (
+                        <div className="block">
+                          <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{i.title}</div>
+                          <div className="mt-1 text-xs text-zinc-700 dark:text-zinc-300">{i.desc}</div>
+                        </div>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </section>
           ))}
