@@ -7,6 +7,15 @@ import { CommandAuthorityContent } from "../../../../components/commanders/Comma
 import { PersonnelCareerContent } from "../../../../components/commanders/PersonnelCareerContent";
 import { CommandClimateContent } from "../../../../components/commanders/CommandClimateContent";
 import { SAPRContent } from "../../../../components/commanders/SAPRContent";
+import { SuicidePreventionContent } from "../../../../components/commanders/SuicidePreventionContent";
+import { FamilyReadinessContent } from "../../../../components/commanders/FamilyReadinessContent";
+import { SubstanceAbuseContent } from "../../../../components/commanders/SubstanceAbuseContent";
+import { SafetyRiskContent } from "../../../../components/commanders/SafetyRiskContent";
+import { TrainingReadinessContent } from "../../../../components/commanders/TrainingReadinessContent";
+import { FiscalPropertyContent } from "../../../../components/commanders/FiscalPropertyContent";
+import { EqualOpportunityContent } from "../../../../components/commanders/EqualOpportunityContent";
+import { LegalDisciplineContent } from "../../../../components/commanders/LegalDisciplineContent";
+import { PublicAffairsContent } from "../../../../components/commanders/PublicAffairsContent";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -63,7 +72,16 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     key === "commanders-authority-legal" ||
     key === "commanders-personnel-career" ||
     key === "commanders-climate-culture" ||
-    key === "commanders-sapr";
+    key === "commanders-sapr" ||
+    key === "commanders-suicide-prevention" ||
+    key === "commanders-family-readiness" ||
+    key === "commanders-substance-abuse" ||
+    key === "commanders-safety-risk" ||
+    key === "commanders-training-readiness" ||
+    key === "commanders-fiscal-property" ||
+    key === "commanders-equal-opportunity" ||
+    key === "commanders-legal-discipline" ||
+    key === "commanders-public-affairs";
 
   // Render comprehensive content components for specific commander sections
   if (hasComprehensiveContent) {
@@ -78,6 +96,33 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     }
     if (key === "commanders-sapr") {
       return <SAPRContent />;
+    }
+    if (key === "commanders-suicide-prevention") {
+      return <SuicidePreventionContent />;
+    }
+    if (key === "commanders-family-readiness") {
+      return <FamilyReadinessContent />;
+    }
+    if (key === "commanders-substance-abuse") {
+      return <SubstanceAbuseContent />;
+    }
+    if (key === "commanders-safety-risk") {
+      return <SafetyRiskContent />;
+    }
+    if (key === "commanders-training-readiness") {
+      return <TrainingReadinessContent />;
+    }
+    if (key === "commanders-fiscal-property") {
+      return <FiscalPropertyContent />;
+    }
+    if (key === "commanders-equal-opportunity") {
+      return <EqualOpportunityContent />;
+    }
+    if (key === "commanders-legal-discipline") {
+      return <LegalDisciplineContent />;
+    }
+    if (key === "commanders-public-affairs") {
+      return <PublicAffairsContent />;
     }
   }
 
