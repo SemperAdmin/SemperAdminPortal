@@ -263,7 +263,7 @@ export const CLIMATE_URLS = {
   MCPEL: "https://www.marines.mil/News/Publications/MCPEL/",
 
   /** USMC Social Media Page */
-  SOCIAL_MEDIA_PAGE: "http://www.marines.mil/News/SocialMedia.aspx",
+  SOCIAL_MEDIA_PAGE: "https://www.marines.mil/News/SocialMedia.aspx",
 } as const;
 
 // ============================================================================
@@ -282,10 +282,10 @@ export const FISCAL_URLS = {
 // ============================================================================
 export const ENVIRONMENTAL_URLS = {
   /** EPA Environmental Topics */
-  EPA_TOPICS: "http://www.epa.gov/environmental-topics",
+  EPA_TOPICS: "https://www.epa.gov/environmental-topics",
 
   /** EPA Enforcement and Compliance History Online (ECHO) */
-  EPA_ECHO: "http://www.epa.gov/echo",
+  EPA_ECHO: "https://www.epa.gov/echo",
 } as const;
 
 // ============================================================================
