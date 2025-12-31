@@ -234,6 +234,7 @@ import { NOTRECContent } from "../../../../../components/leaders/NOTRECContent";
 import { JEPESObjectiveScoresContent } from "../../../../../components/leaders/JEPESObjectiveScoresContent";
 import { JEPESDebriefingContent } from "../../../../../components/leaders/JEPESDebriefingContent";
 import { FitnessReportsLeadersContent } from "../../../../../components/leaders/FitnessReportsLeadersContent";
+import { NOTRECAppealProcessContent } from "../../../../../components/leaders/NOTRECAppealProcessContent";
 import { BilletAccomplishmentsContent } from "../../../../../components/leaders/BilletAccomplishmentsContent";
 import { JEPESCorrectiveProceduresContent } from "../../../../../components/leaders/JEPESCorrectiveProceduresContent";
 // Leaders - Personnel Accountability
@@ -2692,6 +2693,15 @@ const FITNESS_REPORTS_LEADERS_DATA = {
   ],
 };
 
+const NOT_REC_APPEAL_PROCESS_DATA = {
+  references: [
+    { title: "MCO 1616.1 Chapter 2 - JEPES NOT REC Procedures", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: true },
+    { title: "MCO 1610.7B Chapter 10 - PERB and BCNR Appeal Process", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899225/mco-16107/" },
+    { title: "10 U.S.C. 1552 - BCNR Authority", url: "https://www.law.cornell.edu/uscode/text/10/1552" },
+    { title: "DD Form 149 - Application for Correction of Military Record", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd0149.pdf", isQuickLink: true },
+  ],
+};
+
 const BILLET_ACCOMPLISHMENTS_DATA = {
   references: [
     { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
@@ -3169,6 +3179,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "jepes-reporting-occasions": <JEPESReportingOccasionsContent data={JEPES_REPORTING_OCCASIONS_DATA} />,
     "jepes-command-input-metrics": <JEPESCommandInputMetricsContent data={JEPES_COMMAND_INPUT_METRICS_DATA} />,
     "not-rec": <NOTRECContent data={NOT_REC_DATA} />,
+    "not-rec-appeal-process": <NOTRECAppealProcessContent data={NOT_REC_APPEAL_PROCESS_DATA} />,
     "jepes-objective-scores": <JEPESObjectiveScoresContent data={JEPES_OBJECTIVE_SCORES_DATA} />,
     "jepes-debriefing": <JEPESDebriefingContent data={JEPES_DEBRIEFING_DATA} />,
     "fitness-reports-leaders": <FitnessReportsLeadersContent data={FITNESS_REPORTS_LEADERS_DATA} />,

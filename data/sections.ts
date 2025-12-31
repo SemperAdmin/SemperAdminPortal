@@ -690,6 +690,7 @@ export const SECTIONS: Record<string, Section> = {
         items: [
           { title: "Command Input Evaluation Metrics", slug: "jepes-command-input-metrics", desc: "Individual Character, MOS/Mission, Leadership marking guidelines" },
           { title: "NOT REC (Not Recommended)", slug: "not-rec", desc: "When and how to indicate not recommended for promotion" },
+          { title: "NOT REC Appeal Process", slug: "not-rec-appeal-process", desc: "How to correct erroneous NOT REC and appeal through PERB/BCNR" },
           { title: "Objective Scores and Verification", slug: "jepes-objective-scores", desc: "Warfighting, Physical Toughness, Mental Agility verification" },
         ],
       },
