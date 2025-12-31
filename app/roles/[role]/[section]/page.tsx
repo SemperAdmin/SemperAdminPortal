@@ -15,6 +15,7 @@ import { TrainingReadinessContent } from "../../../../components/commanders/Trai
 import { FiscalPropertyContent } from "../../../../components/commanders/FiscalPropertyContent";
 import { EqualOpportunityContent } from "../../../../components/commanders/EqualOpportunityContent";
 import { LegalDisciplineContent } from "../../../../components/commanders/LegalDisciplineContent";
+import { PublicAffairsContent } from "../../../../components/commanders/PublicAffairsContent";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -79,7 +80,8 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     key === "commanders-training-readiness" ||
     key === "commanders-fiscal-property" ||
     key === "commanders-equal-opportunity" ||
-    key === "commanders-legal-discipline";
+    key === "commanders-legal-discipline" ||
+    key === "commanders-public-affairs";
 
   // Render comprehensive content components for specific commander sections
   if (hasComprehensiveContent) {
@@ -118,6 +120,9 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     }
     if (key === "commanders-legal-discipline") {
       return <LegalDisciplineContent />;
+    }
+    if (key === "commanders-public-affairs") {
+      return <PublicAffairsContent />;
     }
   }
 
