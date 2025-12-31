@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Acronym } from "../ui/Acronym";
+import { FAMILY_URLS } from "../../data/references";
 import {
   ChevronDown,
   ChevronRight,
@@ -811,7 +812,7 @@ export function FamilyReadinessContent() {
             </div>
             <div className="mt-2 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               <a
-                href="https://www.usmc-mccs.org"
+                href={FAMILY_URLS.MCCS}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -820,7 +821,7 @@ export function FamilyReadinessContent() {
                 <span className="text-sm text-zinc-700 dark:text-zinc-300">Marine and Family Programs</span>
               </a>
               <a
-                href="https://www.militaryonesource.mil"
+                href={FAMILY_URLS.MILITARY_ONESOURCE}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -841,7 +842,7 @@ export function FamilyReadinessContent() {
             </div>
             <div className="mt-2 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               <a
-                href="https://www.woundedwarriorregiment.org"
+                href={FAMILY_URLS.WOUNDED_WARRIOR_ORG}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"

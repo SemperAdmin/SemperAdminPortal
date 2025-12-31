@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { FAMILY_URLS, MENTAL_HEALTH_URLS, MCO_URLS } from "../../data/references";
 import {
   Scale,
   ChevronDown,
@@ -869,7 +870,7 @@ export function LegalDisciplineContent() {
             <ul className="text-sm space-y-1">
               <li>
                 <a
-                  href="https://usmc-mccs.org/services/career/transition-readiness/"
+                  href={FAMILY_URLS.TRANSITION_READINESS}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--sa-gold)] hover:underline"
@@ -879,7 +880,7 @@ export function LegalDisciplineContent() {
               </li>
               <li>
                 <a
-                  href="https://usmc-mccs.org/articles/everything-you-need-to-know-about-the-marine-for-life-network/"
+                  href={FAMILY_URLS.MARINE_FOR_LIFE}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--sa-gold)] hover:underline"
@@ -889,7 +890,7 @@ export function LegalDisciplineContent() {
               </li>
               <li>
                 <a
-                  href="https://health.mil/Military-Health-Topics/Centers-of-Excellence/Psychological-Health-Center-of-Excellence/inTransition"
+                  href={MENTAL_HEALTH_URLS.IN_TRANSITION}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--sa-gold)] hover:underline"
@@ -905,7 +906,7 @@ export function LegalDisciplineContent() {
             <ul className="text-sm space-y-1">
               <li>
                 <a
-                  href="https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/1447370/mco-580016-wch-1-7-wvol-1-17/"
+                  href={MCO_URLS.LEGADMINMAN}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--sa-gold)] hover:underline"
@@ -915,7 +916,7 @@ export function LegalDisciplineContent() {
               </li>
               <li>
                 <a
-                  href="https://www.marines.mil/Portals/1/Publications/MCO%201900.16%20ADMIN%20CH-3%20(SECURED).pdf?ver=SZptuAh1jjvolL-Gf5s5CQ%3d%3d"
+                  href={MCO_URLS.MARCORSEPMAN_PDF}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--sa-gold)] hover:underline"
@@ -925,7 +926,7 @@ export function LegalDisciplineContent() {
               </li>
               <li>
                 <a
-                  href="https://www.marines.mil/portals/1/Publications/MCO%201700.23G.pdf?ver=2019-06-26-101952-623"
+                  href={MCO_URLS.REQUEST_MAST}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--sa-gold)] hover:underline"

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { CLIMATE_URLS } from "../../data/references";
 import {
   Users,
   Scale,
@@ -674,7 +675,7 @@ export function EqualOpportunityContent() {
             <h4 className="font-semibold text-[var(--sa-gold)] mb-3">Resources</h4>
             <ul className="text-sm space-y-2">
               <li>
-                <a href="http://www.marines.mil/News/SocialMedia.aspx" target="_blank" rel="noopener noreferrer"
+                <a href={CLIMATE_URLS.SOCIAL_MEDIA_PAGE} target="_blank" rel="noopener noreferrer"
                    className="text-[var(--sa-gold)] hover:underline flex items-center gap-1">
                   USMC Social and Online Guidance <ExternalLink className="w-3 h-3" />
                 </a>
@@ -846,7 +847,7 @@ export function EqualOpportunityContent() {
             <h3 className="font-semibold text-[var(--sa-cream)] mb-2">Social Media</h3>
             <ul className="text-sm space-y-2">
               <li>
-                <a href="http://www.marines.mil/News/SocialMedia.aspx" target="_blank" rel="noopener noreferrer"
+                <a href={CLIMATE_URLS.SOCIAL_MEDIA_PAGE} target="_blank" rel="noopener noreferrer"
                    className="text-[var(--sa-gold)] hover:underline flex items-center gap-1">
                   USMC Social Guidance <ExternalLink className="w-3 h-3" />
                 </a>

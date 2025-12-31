@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { FISCAL_URLS } from "../../data/references";
 import {
   DollarSign,
   ClipboardList,
@@ -270,13 +271,13 @@ export function FiscalPropertyContent() {
               <h4 className="font-semibold text-[var(--sa-gold)] mb-2">Training Links</h4>
               <ul className="text-sm space-y-2">
                 <li>
-                  <a href="https://fmbweb1.nmci.navy.mil/pbis/training/pbisweb_training.cfm" target="_blank" rel="noopener noreferrer"
+                  <a href={FISCAL_URLS.PBIS_TRAINING} target="_blank" rel="noopener noreferrer"
                      className="text-[var(--sa-gold)] hover:underline flex items-center gap-1">
                     DON FM Training <ExternalLink className="w-3 h-3" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://fmonline.ousdc.osd.mil/Default.aspx" target="_blank" rel="noopener noreferrer"
+                  <a href={FISCAL_URLS.FM_ONLINE} target="_blank" rel="noopener noreferrer"
                      className="text-[var(--sa-gold)] hover:underline flex items-center gap-1">
                     DoD FM Online <ExternalLink className="w-3 h-3" />
                   </a>
@@ -934,13 +935,13 @@ export function FiscalPropertyContent() {
             <h3 className="font-semibold text-[var(--sa-cream)] mb-2">Training</h3>
             <ul className="text-sm space-y-2">
               <li>
-                <a href="https://fmbweb1.nmci.navy.mil/pbis/training/pbisweb_training.cfm" target="_blank" rel="noopener noreferrer"
+                <a href={FISCAL_URLS.PBIS_TRAINING} target="_blank" rel="noopener noreferrer"
                    className="text-[var(--sa-gold)] hover:underline flex items-center gap-1">
                   DON FM Training <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
               <li>
-                <a href="https://fmonline.ousdc.osd.mil/Default.aspx" target="_blank" rel="noopener noreferrer"
+                <a href={FISCAL_URLS.FM_ONLINE} target="_blank" rel="noopener noreferrer"
                    className="text-[var(--sa-gold)] hover:underline flex items-center gap-1">
                   DoD FM Online <ExternalLink className="w-3 h-3" />
                 </a>

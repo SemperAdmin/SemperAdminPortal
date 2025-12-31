@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Acronym } from "../ui/Acronym";
+import { CLIMATE_URLS, SAFETY_URLS, FAMILY_URLS } from "../../data/references";
 import {
   ChevronDown,
   ChevronRight,
@@ -718,7 +719,7 @@ export function CommandClimateContent() {
 
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <a
-            href="https://www.deomi.mil/"
+            href={CLIMATE_URLS.DEOMI}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -729,7 +730,7 @@ export function CommandClimateContent() {
             </span>
           </a>
           <a
-            href="https://www.igmc.marines.mil/"
+            href={CLIMATE_URLS.IGMC}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -740,7 +741,7 @@ export function CommandClimateContent() {
             </span>
           </a>
           <a
-            href="https://www.safety.marines.mil/"
+            href={SAFETY_URLS.SAFETY_MARINES}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -749,7 +750,7 @@ export function CommandClimateContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">Marine Corps Safety Center</span>
           </a>
           <a
-            href="https://www.marines.mil/News/Publications/MCPEL/"
+            href={CLIMATE_URLS.MCPEL}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -758,7 +759,7 @@ export function CommandClimateContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">MCO P5354.1E (PAC Policy)</span>
           </a>
           <a
-            href="https://usmc-mccs.org/services/support/mcftb/"
+            href={FAMILY_URLS.MCFTB}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"

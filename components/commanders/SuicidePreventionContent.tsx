@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Acronym } from "../ui/Acronym";
+import { MENTAL_HEALTH_URLS, FAMILY_URLS, SAPR_URLS, MCO_URLS } from "../../data/references";
 import {
   ChevronDown,
   ChevronRight,
@@ -784,7 +785,7 @@ export function SuicidePreventionContent() {
 
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <a
-            href="https://www.veteranscrisisline.net/get-help/military-crisis-line"
+            href={MENTAL_HEALTH_URLS.MILITARY_CRISIS_LINE}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -793,7 +794,7 @@ export function SuicidePreventionContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">Military Crisis Line Chat</span>
           </a>
           <a
-            href="https://988lifeline.org/?utm_source=google&utm_medium=web&utm_campaign=onebox"
+            href={MENTAL_HEALTH_URLS.LIFELINE_988}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -802,7 +803,7 @@ export function SuicidePreventionContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">DSTRESS Line (988 Lifeline)</span>
           </a>
           <a
-            href="https://www.dspo.mil/"
+            href={MENTAL_HEALTH_URLS.DSPO}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -811,7 +812,7 @@ export function SuicidePreventionContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">Defense Suicide Prevention Office</span>
           </a>
           <a
-            href="https://www.woundedwarrior.marines.mil/"
+            href={FAMILY_URLS.WOUNDED_WARRIOR}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -820,7 +821,7 @@ export function SuicidePreventionContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">Wounded Warrior Regiment</span>
           </a>
           <a
-            href="https://www.thegearlocker.org"
+            href={SAPR_URLS.GEAR_LOCKER}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -829,7 +830,7 @@ export function SuicidePreventionContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">Gear Locker (MAPIT Dashboard)</span>
           </a>
           <a
-            href="https://www.usmc-mccs.org"
+            href={FAMILY_URLS.MCCS}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -838,7 +839,7 @@ export function SuicidePreventionContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">Marine and Family Programs</span>
           </a>
           <a
-            href="https://www.marines.mil/Portals/1/Publications/NAVMC%201720.1C%20(SECURED).pdf?ver=-1H0zM0QRwyCKyAoKoN0ow%3d%3d"
+            href={MCO_URLS.SUICIDE_PREVENTION}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"

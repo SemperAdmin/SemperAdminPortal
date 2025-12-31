@@ -224,7 +224,7 @@ export function CommandAuthorityContent() {
                 </InfoCard>
                 <InfoCard title="Reduction Restrictions" variant="warning">
                   <ul className="mt-1 list-inside list-disc space-y-1">
-                    <li>Marine Corps NCOs E-6 to E-9 <strong>cannot</strong> be reduced at <Acronym title="Non-Judicial Punishment">NJP</Acronym></li>
+                    <li>Marine Corps SNCOs (E-6 to E-9) <strong>cannot</strong> be reduced at <Acronym title="Non-Judicial Punishment">NJP</Acronym></li>
                     <li>Navy CPOs E-7 to E-9 <strong>cannot</strong> be reduced at <Acronym title="Non-Judicial Punishment">NJP</Acronym></li>
                   </ul>
                 </InfoCard>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { PUBLIC_AFFAIRS_URLS } from "../../data/references";
 import {
   Megaphone,
   ChevronDown,
@@ -886,7 +887,7 @@ export function PublicAffairsContent() {
             <ul className="text-sm space-y-1">
               <li>
                 <a
-                  href="https://media.defense.gov/2025/Nov/05/2003819006/-1/-1/0/251103-USMCSOCIALMEDIAHANDBOOK.PDF"
+                  href={PUBLIC_AFFAIRS_URLS.SOCIAL_MEDIA_HANDBOOK}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--sa-gold)] hover:underline"

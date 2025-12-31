@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Acronym } from "../ui/Acronym";
+import { PERSONNEL_URLS, MCO_URLS } from "../../data/references";
 import {
   ChevronDown,
   ChevronRight,
@@ -1033,7 +1034,7 @@ export function PersonnelCareerContent() {
 
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <a
-            href="https://mol.tfs.usmc.mil/mol"
+            href={PERSONNEL_URLS.MOL}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -1042,7 +1043,7 @@ export function PersonnelCareerContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">Marine Online (MOL)</span>
           </a>
           <a
-            href="https://a-pes.mmrp.usmc.mil/a-pes/dodBanner.jsp"
+            href={PERSONNEL_URLS.A_PES}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -1051,7 +1052,7 @@ export function PersonnelCareerContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">A-PES System</span>
           </a>
           <a
-            href="https://www.manpower.marines.mil/Divisions/Manpower-Management/Enlisted-Assignments/Stay-Marine/"
+            href={PERSONNEL_URLS.STAY_MARINE}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -1060,7 +1061,7 @@ export function PersonnelCareerContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">Stay Marine</span>
           </a>
           <a
-            href="https://www.manpower.marines.mil/Divisions/Plans-and-Policies/Manpower-Plans-and-Policy/Manpower-Military-Policy-MPO/Religious-Accommodations/"
+            href={PERSONNEL_URLS.RELIGIOUS_ACCOMMODATIONS}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -1069,7 +1070,7 @@ export function PersonnelCareerContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">Religious Accommodations</span>
           </a>
           <a
-            href="https://www.marines.mil/Portals/1/Publications/MCO%201610.7B%20SECURED.pdf?ver=Y104Ok-51cS4PJssb_4t4g%3d%3d"
+            href={MCO_URLS.PES_PDF}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -1078,7 +1079,7 @@ export function PersonnelCareerContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">MCO 1610.7 (PES Manual)</span>
           </a>
           <a
-            href="https://www.marines.mil/Portals/1/Publications/MCO%201616.1.pdf?ver=2pWMQ3wSas3g628sXsBV4g%3d%3d"
+            href={MCO_URLS.RETENTION}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -1087,7 +1088,7 @@ export function PersonnelCareerContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">MCO 1616.1 (JEPES)</span>
           </a>
           <a
-            href="https://www.marines.mil/portals/1/Publications/MCO%20P1400.32D%20W%20CH%201-2.pdf"
+            href={MCO_URLS.PROMOTION_MANUAL}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -1096,7 +1097,7 @@ export function PersonnelCareerContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">MCO P1400.32D (Promotion)</span>
           </a>
           <a
-            href="https://www.marines.mil/portals/1/Publications/MCO%20P1070.12K%20W%20CH%201.pdf?ver=2012-10-11-163726-583"
+            href={MCO_URLS.IRAM_PDF}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
