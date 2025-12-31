@@ -200,6 +200,7 @@ import { CommonAwardErrorsContent } from "../../../../../components/leaders/Comm
 import { IAPSSubmissionContent } from "../../../../../components/leaders/IAPSSubmissionContent";
 import { AwardRoutingApprovalContent } from "../../../../../components/leaders/AwardRoutingApprovalContent";
 import { AwardTimelineManagementContent } from "../../../../../components/leaders/AwardTimelineManagementContent";
+import { AwardTroubleshootingContent } from "../../../../../components/leaders/AwardTroubleshootingContent";
 // Leaders - Career Development
 import { SupportingReenlistmentDecisionsContent } from "../../../../../components/leaders/SupportingReenlistmentDecisionsContent";
 import { PMETrackingCompletionContent } from "../../../../../components/leaders/PMETrackingCompletionContent";
@@ -2486,6 +2487,13 @@ const AWARD_TIMELINE_MANAGEMENT_DATA = {
   ],
 };
 
+const AWARD_TROUBLESHOOTING_DATA = {
+  references: [
+    { title: "MCO 1650.19J with CH1 - Administrative and Issue Procedures for Decorations, Medals, and Awards", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899334/mco-165019j-wch-1/" },
+    { title: "MARADMIN 093/25 - PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4078781/military-awards-guidance-for-permanent-change-of-station-season/" },
+  ],
+};
+
 // Leaders - Career Development
 const SUPPORTING_REENLISTMENT_DECISIONS_DATA = {
   references: [
@@ -3148,6 +3156,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "iaps-submission": <IAPSSubmissionContent data={IAPS_SUBMISSION_DATA} />,
     "award-routing-approval": <AwardRoutingApprovalContent data={AWARD_ROUTING_APPROVAL_DATA} />,
     "award-timeline-management": <AwardTimelineManagementContent data={AWARD_TIMELINE_MANAGEMENT_DATA} />,
+    "award-troubleshooting": <AwardTroubleshootingContent data={AWARD_TROUBLESHOOTING_DATA} />,
     // Leaders - Career Development
     "supporting-reenlistment-decisions": <SupportingReenlistmentDecisionsContent data={SUPPORTING_REENLISTMENT_DECISIONS_DATA} />,
     "pme-tracking-completion": <PMETrackingCompletionContent data={PME_TRACKING_COMPLETION_DATA} />,

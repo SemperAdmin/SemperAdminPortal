@@ -575,6 +575,7 @@ export const SECTIONS: Record<string, Section> = {
           { title: "iAPS Submission Process", slug: "iaps-submission", desc: "Step-by-step guidance for submitting awards in iAPS" },
           { title: "Award Routing and Approval Authority", slug: "award-routing-approval", desc: "Understanding the chain of approval for different award levels" },
           { title: "Timeline Management", slug: "award-timeline-management", desc: "Planning ahead for PCS, retirement, and end-of-tour awards" },
+          { title: "Award Troubleshooting (Stuck Awards)", slug: "award-troubleshooting", desc: "Identifying and resolving common issues with delayed awards" },
         ],
       },
     ],
