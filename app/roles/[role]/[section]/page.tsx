@@ -5,6 +5,7 @@ import Link from "next/link";
 import CatalogGrid from "../../../../components/CatalogGrid";
 import { CommandAuthorityContent } from "../../../../components/commanders/CommandAuthorityContent";
 import { PersonnelCareerContent } from "../../../../components/commanders/PersonnelCareerContent";
+import { CommandClimateContent } from "../../../../components/commanders/CommandClimateContent";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -57,7 +58,10 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
   ];
 
   // Check for commander sections with comprehensive content pages
-  const hasComprehensiveContent = key === "commanders-authority-legal" || key === "commanders-personnel-career";
+  const hasComprehensiveContent =
+    key === "commanders-authority-legal" ||
+    key === "commanders-personnel-career" ||
+    key === "commanders-climate-culture";
 
   // Render comprehensive content components for specific commander sections
   if (hasComprehensiveContent) {
@@ -66,6 +70,9 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     }
     if (key === "commanders-personnel-career") {
       return <PersonnelCareerContent />;
+    }
+    if (key === "commanders-climate-culture") {
+      return <CommandClimateContent />;
     }
   }
 
