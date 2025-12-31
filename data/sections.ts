@@ -575,28 +575,28 @@ export const SECTIONS: Record<string, Section> = {
 
   "leaders-career-development": {
     title: "Career Development",
-    intro: "Leaders play a pivotal role in shaping Marine careers through reenlistment support, PME tracking, and promotion recommendations. This section provides guidance on career counseling responsibilities and how to prepare Marines for advancement.",
+    intro: "This section helps line leaders understand your role in developing subordinates' careers. You do not make retention decisions or approve commissioning packages. You identify talent, mentor Marines on career options, prepare them for boards and programs, and ensure they meet administrative prerequisites.",
     groups: [
       {
-        title: "Reenlistment",
+        title: "Reenlistment & Retention",
         items: [
-          { title: "Leader Role in Reenlistment Packages", slug: "reenlistment-packages", desc: "Supporting Marines through the reenlistment process" },
-          { title: "Verifying Reenlistment Prerequisites", slug: "reenlistment-prerequisites", desc: "Ensure Marines meet all requirements before submission" },
+          { title: "Supporting Reenlistment Decisions", slug: "supporting-reenlistment-decisions", desc: "FTAP/STAP processes, JEPES, boatspaces, and leader responsibilities" },
+          { title: "Lateral Move Guidance", slug: "lateral-move-guidance", desc: "When and how Marines can change their PMOS" },
         ],
       },
       {
-        title: "Education and Training",
+        title: "Education & Advancement",
         items: [
-          { title: "PME Enrollment and Tracking", slug: "pme-enrollment-tracking", desc: "Ensuring subordinates complete required PME on time" },
-          { title: "MOS School Recommendations", slug: "mos-school-recommendations", desc: "Identifying and recommending Marines for specialty training" },
+          { title: "PME Tracking and Completion", slug: "pme-tracking-completion", desc: "DEP and resident course requirements by grade" },
+          { title: "Meritorious Promotion Preparation", slug: "meritorious-promotion-preparation", desc: "Quarterly boards, quotas, and preparing Marines to compete" },
         ],
       },
       {
-        title: "Promotions",
+        title: "Special Duty & Programs",
         items: [
-          { title: "Meritorious Promotion Packages", slug: "meritorious-promotion-packages", desc: "Preparing and endorsing meritorious promotion recommendations" },
-          { title: "Cutting Score and Composite Guidance", slug: "cutting-score-guidance", desc: "Helping Marines understand and improve their composite scores" },
-          { title: "Career Counseling Responsibilities", slug: "career-counseling", desc: "Conducting meaningful career development discussions" },
+          { title: "Special Duty Assignment Screening", slug: "special-duty-assignment-screening", desc: "HSST screening, SDAs, and RE-3O consequences" },
+          { title: "Enlisted Commissioning Programs", slug: "enlisted-commissioning-programs", desc: "ECP, MECEP, and MCP pathways to becoming an officer" },
+          { title: "Warrant Officer Program Support", slug: "warrant-officer-program-support", desc: "Application process and technical qualification requirements" },
         ],
       },
     ],
