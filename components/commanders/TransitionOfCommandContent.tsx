@@ -12,24 +12,21 @@ import {
   ChevronDown,
   ChevronUp,
   AlertTriangle,
-  Users,
-  Clipboard,
   Calendar,
   Shield,
   Plane,
   BookOpen,
   Target,
-  DollarSign,
   Package,
   UserCheck,
   BarChart3,
   HelpCircle,
   Lightbulb,
-  MessageSquare,
   Award,
   Heart,
   ClipboardCheck,
 } from "lucide-react";
+import Link from "next/link";
 
 /* ─────────────────────────────────────────────────────────── */
 /*  Local Helper Components                                    */
@@ -671,22 +668,22 @@ export function TransitionOfCommandContent() {
             <h4 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
               Leading Change (Turning Around a Failing Unit)
             </h4>
-            <ul className="mt-2 space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
-              <li>• Confirm with next higher Commander that leading change is specific or implied task</li>
-              <li>• Share observations and discuss way ahead</li>
-              <li>• Get solid base of understanding and support from Wing/Group Commander</li>
-              <li>• Develop plan and implement necessary changes</li>
+            <ul className="mt-2 list-disc list-inside space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
+              <li>Confirm with next higher Commander that leading change is specific or implied task</li>
+              <li>Share observations and discuss way ahead</li>
+              <li>Get solid base of understanding and support from Wing/Group Commander</li>
+              <li>Develop plan and implement necessary changes</li>
             </ul>
           </div>
           <div className="rounded-lg border border-blue-500/30 bg-blue-500/10 p-4 dark:bg-blue-500/20">
             <h4 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
               Aviation Commander Preparation
             </h4>
-            <ul className="mt-2 space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
-              <li>• Arrive at gaining command six months prior to change of command</li>
-              <li>• Complete flight refresher training</li>
-              <li>• Complete Aviation Commander&apos;s Course at <Acronym title="Marine Aviation Weapons and Tactics Squadron One">MAWTS-1</Acronym></li>
-              <li>• Waivers from <Acronym title="Manpower and Reserve Affairs">M&amp;RA</Acronym> only</li>
+            <ul className="mt-2 list-disc list-inside space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
+              <li>Arrive at gaining command six months prior to change of command</li>
+              <li>Complete flight refresher training</li>
+              <li>Complete Aviation Commander&apos;s Course at <Acronym title="Marine Aviation Weapons and Tactics Squadron One">MAWTS-1</Acronym></li>
+              <li>Waivers from <Acronym title="Manpower and Reserve Affairs">M&amp;RA</Acronym> only</li>
             </ul>
           </div>
           <div className="rounded-lg border border-green-500/30 bg-green-500/10 p-4 dark:bg-green-500/20">
@@ -751,58 +748,88 @@ export function TransitionOfCommandContent() {
             <h3 className="mb-3 font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Training</h3>
             <div className="space-y-2">
               {[
-                { name: "Cornerstone", desc: "See current MARADMIN", url: "#" },
+                { name: "Cornerstone", desc: "See current MARADMIN", url: "" },
                 { name: "Fund Control Training", desc: "DON fiscal training", url: "https://fmonline.ousdc.osd.mil/Default.aspx" },
                 { name: "DRRS-MC Training", desc: "Readiness reporting", url: "https://www.marinenet.usmc.mil/" },
                 { name: "Aviation Safety Surveys", desc: "CSA, MCAS, ASPA", url: "https://www.marineaviation.org" },
                 { name: "Safety Climate Survey", desc: "O-5/O-6 requirement", url: "https://www.safety.marines.mil/" },
-              ].map((link) => (
-                <a
-                  key={link.name}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-lg border border-[var(--sa-navy)]/20 bg-[var(--sa-cream)]/30 p-3 transition hover:bg-[var(--sa-navy)]/10 dark:border-white/10 dark:bg-[var(--sa-navy)]/30 dark:hover:bg-white/10"
-                >
-                  <ExternalLink className="h-4 w-4 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
-                  <div>
-                    <div className="text-sm font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-                      {link.name}
+              ].map((link) =>
+                link.url ? (
+                  <a
+                    key={link.name}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 rounded-lg border border-[var(--sa-navy)]/20 bg-[var(--sa-cream)]/30 p-3 transition hover:bg-[var(--sa-navy)]/10 dark:border-white/10 dark:bg-[var(--sa-navy)]/30 dark:hover:bg-white/10"
+                  >
+                    <ExternalLink className="h-4 w-4 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
+                    <div>
+                      <div className="text-sm font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                        {link.name}
+                      </div>
+                      <div className="text-xs text-zinc-600 dark:text-zinc-400">{link.desc}</div>
                     </div>
-                    <div className="text-xs text-zinc-600 dark:text-zinc-400">{link.desc}</div>
+                  </a>
+                ) : (
+                  <div
+                    key={link.name}
+                    className="flex items-center gap-2 rounded-lg border border-[var(--sa-navy)]/20 bg-[var(--sa-cream)]/30 p-3 dark:border-white/10 dark:bg-[var(--sa-navy)]/30"
+                  >
+                    <FileText className="h-4 w-4 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
+                    <div>
+                      <div className="text-sm font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                        {link.name}
+                      </div>
+                      <div className="text-xs text-zinc-600 dark:text-zinc-400">{link.desc}</div>
+                    </div>
                   </div>
-                </a>
-              ))}
+                )
+              )}
             </div>
           </div>
           <div>
             <h3 className="mb-3 font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">References</h3>
             <div className="space-y-2">
               {[
-                { name: "CMC White Letter 3-17", desc: "Status of Command", url: "#" },
+                { name: "CMC White Letter 3-17", desc: "Status of Command", url: "" },
                 { name: "MCO 4400.201 Vol 3", desc: "Management of Property", url: "https://www.marines.mil/News/Publications/MCPEL/" },
                 { name: "MCO 5100.29C", desc: "Safety Management System", url: "https://www.marines.mil/News/Publications/MCPEL/" },
                 { name: "MCO 1752.5C", desc: "SAPR Program", url: "https://www.marines.mil/portals/1/Publications/MCO%201752.5C.pdf?ver=2019-06-10-115714-627" },
                 { name: "MCO 1754.9B", desc: "Unit, Personal and Family Readiness", url: "https://www.marines.mil/News/Publications/MCPEL/" },
                 { name: "MCO P5354.1E", desc: "Prohibited Activities and Conduct", url: "https://www.marines.mil/Portals/1/Publications/MCO%205354.1G%20Admin%20Ch%201%20v2.pdf?ver=Zx2KQaYufT6GZ4AhSHjBgg%3d%3d" },
                 { name: "MCO 3000.13B", desc: "Unit Readiness", url: "https://www.marines.mil/News/Publications/MCPEL/" },
-              ].map((link) => (
-                <a
-                  key={link.name}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-lg border border-[var(--sa-navy)]/20 bg-[var(--sa-cream)]/30 p-3 transition hover:bg-[var(--sa-navy)]/10 dark:border-white/10 dark:bg-[var(--sa-navy)]/30 dark:hover:bg-white/10"
-                >
-                  <ExternalLink className="h-4 w-4 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
-                  <div>
-                    <div className="text-sm font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-                      {link.name}
+              ].map((link) =>
+                link.url ? (
+                  <a
+                    key={link.name}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 rounded-lg border border-[var(--sa-navy)]/20 bg-[var(--sa-cream)]/30 p-3 transition hover:bg-[var(--sa-navy)]/10 dark:border-white/10 dark:bg-[var(--sa-navy)]/30 dark:hover:bg-white/10"
+                  >
+                    <ExternalLink className="h-4 w-4 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
+                    <div>
+                      <div className="text-sm font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                        {link.name}
+                      </div>
+                      <div className="text-xs text-zinc-600 dark:text-zinc-400">{link.desc}</div>
                     </div>
-                    <div className="text-xs text-zinc-600 dark:text-zinc-400">{link.desc}</div>
+                  </a>
+                ) : (
+                  <div
+                    key={link.name}
+                    className="flex items-center gap-2 rounded-lg border border-[var(--sa-navy)]/20 bg-[var(--sa-cream)]/30 p-3 dark:border-white/10 dark:bg-[var(--sa-navy)]/30"
+                  >
+                    <FileText className="h-4 w-4 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
+                    <div>
+                      <div className="text-sm font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                        {link.name}
+                      </div>
+                      <div className="text-xs text-zinc-600 dark:text-zinc-400">{link.desc}</div>
+                    </div>
                   </div>
-                </a>
-              ))}
+                )
+              )}
             </div>
           </div>
         </div>
@@ -810,12 +837,12 @@ export function TransitionOfCommandContent() {
 
       {/* Back Link */}
       <div className="flex gap-3">
-        <a
+        <Link
           href="/roles/commanders"
           className="inline-flex items-center justify-center rounded-md border border-black/10 bg-white px-4 py-2 text-[var(--sa-navy)] shadow-sm transition hover:bg-[var(--sa-cream)]/60 dark:border-white/15 dark:bg-black/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10"
         >
           Back to Commanders Home
-        </a>
+        </Link>
       </div>
     </div>
   );

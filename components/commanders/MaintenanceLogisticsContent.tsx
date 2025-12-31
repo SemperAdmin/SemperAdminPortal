@@ -14,10 +14,8 @@ import {
   ExternalLink,
   Database,
   Package,
-  Truck,
   CheckCircle,
   Settings,
-  Clipboard,
   BarChart3,
   Calendar,
   RefreshCw,
@@ -191,7 +189,7 @@ export function MaintenanceLogisticsContent() {
               <li>• 2016 Commanders Materiel Readiness Handbook</li>
               <li>• Commanders Supply Management Handbook</li>
               <li>• MCO 4400.201 (<Acronym title="Global Combat Support System - Marine Corps">GCSS-MC</Acronym>)</li>
-              <li>• TM-4700-15/1_ (Equipment Records)</li>
+              <li>• TM-4700-15/1 (Equipment Records)</li>
             </ul>
           </div>
         </div>
@@ -953,7 +951,7 @@ export function MaintenanceLogisticsContent() {
               <li>• 2016 Commanders Materiel Readiness Handbook</li>
               <li>• Commanders Supply Management Handbook</li>
               <li>• MCO 4400.201 (GCSS-MC)</li>
-              <li>• TM-4700-15/1_ (Equipment Records)</li>
+              <li>• TM-4700-15/1 (Equipment Records)</li>
               <li>• MCBUL 3000 (Reportable Equipment)</li>
             </ul>
           </div>

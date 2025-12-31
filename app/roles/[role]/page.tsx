@@ -191,7 +191,7 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
 
         {/* Change of Command Quick Reference - Featured */}
         <Link
-          href="/roles/commanders/commanders-change-of-command"
+          href="/roles/commanders/commanders-transition-command"
           prefetch={false}
           className="group block rounded-xl border-2 border-[var(--sa-gold)] bg-gradient-to-r from-amber-50 to-orange-50 p-6 shadow-sm transition hover:shadow-md dark:from-amber-950/30 dark:to-orange-950/30"
         >
