@@ -761,6 +761,12 @@ export const SECTIONS: Record<string, Section> = {
           { title: "Training Information Systems", slug: "training-information-systems", desc: "MCTIMS, MarineNet, and training record systems" },
         ],
       },
+      {
+        title: "Quick Reference",
+        items: [
+          { title: "MCO Quick Reference Table", slug: "mco-quick-reference", desc: "Quick access to frequently used Marine Corps Orders by topic" },
+        ],
+      },
     ],
   },
 };

@@ -253,6 +253,7 @@ import { JEPESSystemNavigationContent } from "../../../../../components/leaders/
 import { TFRSOverviewContent } from "../../../../../components/leaders/TFRSOverviewContent";
 import { UnitDiaryReportingContent } from "../../../../../components/leaders/UnitDiaryReportingContent";
 import { TrainingInformationSystemsContent } from "../../../../../components/leaders/TrainingInformationSystemsContent";
+import { MCOQuickReferenceContent } from "../../../../../components/leaders/MCOQuickReferenceContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -2822,6 +2823,13 @@ const TRAINING_INFORMATION_SYSTEMS_DATA = {
   ],
 };
 
+const MCO_QUICK_REFERENCE_DATA = {
+  references: [
+    { title: "Marines.mil Publications", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+    { title: "Marine Corps Publications Electronic Library (MCPEL)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/" },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -3209,6 +3217,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "tfrs-overview": <TFRSOverviewContent data={TFRS_OVERVIEW_DATA} />,
     "unit-diary-reporting": <UnitDiaryReportingContent data={UNIT_DIARY_REPORTING_DATA} />,
     "training-information-systems": <TrainingInformationSystemsContent data={TRAINING_INFORMATION_SYSTEMS_DATA} />,
+    "mco-quick-reference": <MCOQuickReferenceContent data={MCO_QUICK_REFERENCE_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
