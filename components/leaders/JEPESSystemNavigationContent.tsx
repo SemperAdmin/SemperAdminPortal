@@ -137,7 +137,7 @@ export function JEPESSystemNavigationContent({ data }: Props) {
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Delinquent Worksheet</h3>
           <ul className="mt-3 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Worksheets become delinquent if not approved by period end date</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Check &quot;Delinquent Worksheets&quot; view for pending actions</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Check "Delinquent Worksheets" view for pending actions</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Delinquent reports are reported to higher headquarters every 15/30 days</span></li>
           </ul>
         </div>

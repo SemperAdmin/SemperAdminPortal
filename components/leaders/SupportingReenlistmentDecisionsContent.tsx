@@ -232,7 +232,7 @@ export function SupportingReenlistmentDecisionsContent({ data }: Props) {
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span><strong>Tier III:</strong> Bottom 10% of Marines in their MOS</span></li>
           </ul>
           <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400">
-            Note: Tier III Marines are 50% of the population and should not be viewed as subpar performers.
+            Note: Tier II Marines are 50% of the population and should not be viewed as subpar performers.
           </p>
         </div>
       </section>

@@ -191,6 +191,8 @@ import { ADSEPOverviewContent } from "../../../../../components/leaders/ADSEPOve
 import { LegalHoldInvestigationsContent } from "../../../../../components/leaders/LegalHoldInvestigationsContent";
 import { Article31bRightsContent } from "../../../../../components/leaders/Article31bRightsContent";
 import { ProgressiveDisciplineContent } from "../../../../../components/leaders/ProgressiveDisciplineContent";
+import { Page11vs6105DecisionGuideContent } from "../../../../../components/leaders/Page11vs6105DecisionGuideContent";
+import { CounselingRefusalProceduresContent } from "../../../../../components/leaders/CounselingRefusalProceduresContent";
 // Leaders - Awards & Recognition
 import { WritingAwardRecommendationsContent } from "../../../../../components/leaders/WritingAwardRecommendationsContent";
 import { CitationFormatRequirementsContent } from "../../../../../components/leaders/CitationFormatRequirementsContent";
@@ -198,6 +200,7 @@ import { CommonAwardErrorsContent } from "../../../../../components/leaders/Comm
 import { IAPSSubmissionContent } from "../../../../../components/leaders/IAPSSubmissionContent";
 import { AwardRoutingApprovalContent } from "../../../../../components/leaders/AwardRoutingApprovalContent";
 import { AwardTimelineManagementContent } from "../../../../../components/leaders/AwardTimelineManagementContent";
+import { AwardTroubleshootingContent } from "../../../../../components/leaders/AwardTroubleshootingContent";
 // Leaders - Career Development
 import { SupportingReenlistmentDecisionsContent } from "../../../../../components/leaders/SupportingReenlistmentDecisionsContent";
 import { PMETrackingCompletionContent } from "../../../../../components/leaders/PMETrackingCompletionContent";
@@ -232,12 +235,13 @@ import { NOTRECContent } from "../../../../../components/leaders/NOTRECContent";
 import { JEPESObjectiveScoresContent } from "../../../../../components/leaders/JEPESObjectiveScoresContent";
 import { JEPESDebriefingContent } from "../../../../../components/leaders/JEPESDebriefingContent";
 import { FitnessReportsLeadersContent } from "../../../../../components/leaders/FitnessReportsLeadersContent";
+import { NOTRECAppealProcessContent } from "../../../../../components/leaders/NOTRECAppealProcessContent";
 import { BilletAccomplishmentsContent } from "../../../../../components/leaders/BilletAccomplishmentsContent";
 import { JEPESCorrectiveProceduresContent } from "../../../../../components/leaders/JEPESCorrectiveProceduresContent";
 // Leaders - Personnel Accountability
 import { DailyAccountabilityFundamentalsContent } from "../../../../../components/leaders/DailyAccountabilityFundamentalsContent";
 import { GainsLossesProcessingContent } from "../../../../../components/leaders/GainsLossesProcessingContent";
-import { LeaveLibrtyManagementContent } from "../../../../../components/leaders/LeaveLibrtyManagementContent";
+import { LeaveLibertyManagementContent } from "../../../../../components/leaders/LeaveLibertyManagementContent";
 import { UAProceduresContent } from "../../../../../components/leaders/UAProceduresContent";
 import { TADDetachmentTrackingContent } from "../../../../../components/leaders/TADDetachmentTrackingContent";
 import { MusterFormationProceduresContent } from "../../../../../components/leaders/MusterFormationProceduresContent";
@@ -249,6 +253,7 @@ import { JEPESSystemNavigationContent } from "../../../../../components/leaders/
 import { TFRSOverviewContent } from "../../../../../components/leaders/TFRSOverviewContent";
 import { UnitDiaryReportingContent } from "../../../../../components/leaders/UnitDiaryReportingContent";
 import { TrainingInformationSystemsContent } from "../../../../../components/leaders/TrainingInformationSystemsContent";
+import { MCOQuickReferenceContent } from "../../../../../components/leaders/MCOQuickReferenceContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -2416,6 +2421,24 @@ const PROGRESSIVE_DISCIPLINE_DATA = {
   ],
 };
 
+const PAGE11_VS_6105_DECISION_GUIDE_DATA = {
+  references: [
+    { title: "MCO P1070.12K - IRAM (Page 11 Entries)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899135/mco-p107012k/" },
+    { title: "MCO P1900.16 - MARCORSEPMAN (Paragraph 6105)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899390/mco-190016g/" },
+    { title: "MCO 1610.7B - Performance Evaluation System", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16101b/" },
+    { title: "MCO 6100.13A - Physical Fitness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899201/mco-610013a/", isQuickLink: true },
+  ],
+};
+
+const COUNSELING_REFUSAL_PROCEDURES_DATA = {
+  references: [
+    { title: "MCO 1610.7B Chapter 5 - Performance Evaluation (Refusal Procedures)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16101b/", isQuickLink: true },
+    { title: "MCO P1070.12K - IRAM (Page 11 Entries)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899135/mco-p107012k/" },
+    { title: "MCO P1900.16 - MARCORSEPMAN (Paragraph 6105)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899390/mco-190016g/" },
+    { title: "UCMJ Article 92 - Failure to Obey Order", url: "https://www.law.cornell.edu/uscode/text/10/892" },
+  ],
+};
+
 // Leaders - Awards & Recognition
 const WRITING_AWARD_RECOMMENDATIONS_DATA = {
   references: [
@@ -2465,6 +2488,13 @@ const AWARD_TIMELINE_MANAGEMENT_DATA = {
   ],
 };
 
+const AWARD_TROUBLESHOOTING_DATA = {
+  references: [
+    { title: "MCO 1650.19J with CH1 - Administrative and Issue Procedures for Decorations, Medals, and Awards", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899334/mco-165019j-wch-1/" },
+    { title: "MARADMIN 093/25 - PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4078781/military-awards-guidance-for-permanent-change-of-station-season/" },
+  ],
+};
+
 // Leaders - Career Development
 const SUPPORTING_REENLISTMENT_DECISIONS_DATA = {
   references: [
@@ -2478,7 +2508,7 @@ const PME_TRACKING_COMPLETION_DATA = {
   references: [
     { title: "MCO 1553.4B - Professional Military Education", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899348/mco-15534b/" },
     { title: "MCO P1400.32D - Enlisted Promotion Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899216/mco-p140032d/" },
-    { title: "MARADMIN 474/21 - Updated Enlisted PME Requirements by Grade", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "MARADMIN 474/21 - Updated Enlisted PME Requirements by Grade", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/2763368/updated-enlisted-professional-military-education-requirements-by-grade/" },
   ],
 };
 
@@ -2672,6 +2702,15 @@ const FITNESS_REPORTS_LEADERS_DATA = {
   ],
 };
 
+const NOT_REC_APPEAL_PROCESS_DATA = {
+  references: [
+    { title: "MCO 1616.1 Chapter 2 - JEPES NOT REC Procedures", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: true },
+    { title: "MCO 1610.7B Chapter 10 - PERB and BCNR Appeal Process", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899225/mco-16107/" },
+    { title: "10 U.S.C. 1552 - BCNR Authority", url: "https://www.law.cornell.edu/uscode/text/10/1552" },
+    { title: "DD Form 149 - Application for Correction of Military Record", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd0149.pdf", isQuickLink: true },
+  ],
+};
+
 const BILLET_ACCOMPLISHMENTS_DATA = {
   references: [
     { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
@@ -2780,7 +2819,14 @@ const TRAINING_INFORMATION_SYSTEMS_DATA = {
     { title: "MCO 6100.13A - Physical Fitness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899201/mco-610013a/" },
     { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
     { title: "MarineNet", url: "https://www.usmclearning.usmc.mil", isQuickLink: true },
-    { title: "Fitness Marines", url: "http://www.fitness.marines.mil", isQuickLink: true },
+    { title: "Fitness Marines", url: "https://www.fitness.marines.mil", isQuickLink: true },
+  ],
+};
+
+const MCO_QUICK_REFERENCE_DATA = {
+  references: [
+    { title: "Marines.mil Publications", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+    { title: "Marine Corps Publications Electronic Library (MCPEL)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/" },
   ],
 };
 
@@ -3109,6 +3155,8 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "legal-hold-investigations": <LegalHoldInvestigationsContent data={LEGAL_HOLD_INVESTIGATIONS_DATA} />,
     "article-31b-rights": <Article31bRightsContent data={ARTICLE_31B_RIGHTS_DATA} />,
     "progressive-discipline": <ProgressiveDisciplineContent data={PROGRESSIVE_DISCIPLINE_DATA} />,
+    "page11-vs-6105-decision-guide": <Page11vs6105DecisionGuideContent data={PAGE11_VS_6105_DECISION_GUIDE_DATA} />,
+    "counseling-refusal-procedures": <CounselingRefusalProceduresContent data={COUNSELING_REFUSAL_PROCEDURES_DATA} />,
     // Leaders - Awards & Recognition
     "writing-award-recommendations": <WritingAwardRecommendationsContent data={WRITING_AWARD_RECOMMENDATIONS_DATA} />,
     "citation-format-requirements": <CitationFormatRequirementsContent data={CITATION_FORMAT_REQUIREMENTS_DATA} />,
@@ -3116,6 +3164,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "iaps-submission": <IAPSSubmissionContent data={IAPS_SUBMISSION_DATA} />,
     "award-routing-approval": <AwardRoutingApprovalContent data={AWARD_ROUTING_APPROVAL_DATA} />,
     "award-timeline-management": <AwardTimelineManagementContent data={AWARD_TIMELINE_MANAGEMENT_DATA} />,
+    "award-troubleshooting": <AwardTroubleshootingContent data={AWARD_TROUBLESHOOTING_DATA} />,
     // Leaders - Career Development
     "supporting-reenlistment-decisions": <SupportingReenlistmentDecisionsContent data={SUPPORTING_REENLISTMENT_DECISIONS_DATA} />,
     "pme-tracking-completion": <PMETrackingCompletionContent data={PME_TRACKING_COMPLETION_DATA} />,
@@ -3147,6 +3196,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "jepes-reporting-occasions": <JEPESReportingOccasionsContent data={JEPES_REPORTING_OCCASIONS_DATA} />,
     "jepes-command-input-metrics": <JEPESCommandInputMetricsContent data={JEPES_COMMAND_INPUT_METRICS_DATA} />,
     "not-rec": <NOTRECContent data={NOT_REC_DATA} />,
+    "not-rec-appeal-process": <NOTRECAppealProcessContent data={NOT_REC_APPEAL_PROCESS_DATA} />,
     "jepes-objective-scores": <JEPESObjectiveScoresContent data={JEPES_OBJECTIVE_SCORES_DATA} />,
     "jepes-debriefing": <JEPESDebriefingContent data={JEPES_DEBRIEFING_DATA} />,
     "fitness-reports-leaders": <FitnessReportsLeadersContent data={FITNESS_REPORTS_LEADERS_DATA} />,
@@ -3155,7 +3205,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     // Leaders - Personnel Accountability
     "daily-accountability-fundamentals": <DailyAccountabilityFundamentalsContent data={DAILY_ACCOUNTABILITY_FUNDAMENTALS_DATA} />,
     "gains-losses-processing": <GainsLossesProcessingContent data={GAINS_LOSSES_PROCESSING_DATA} />,
-    "leave-liberty-management": <LeaveLibrtyManagementContent data={LEAVE_LIBERTY_MANAGEMENT_DATA} />,
+    "leave-liberty-management": <LeaveLibertyManagementContent data={LEAVE_LIBERTY_MANAGEMENT_DATA} />,
     "ua-procedures": <UAProceduresContent data={UA_PROCEDURES_DATA} />,
     "tad-detachment-tracking": <TADDetachmentTrackingContent data={TAD_DETACHMENT_TRACKING_DATA} />,
     "muster-formation-procedures": <MusterFormationProceduresContent data={MUSTER_FORMATION_PROCEDURES_DATA} />,
@@ -3167,6 +3217,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "tfrs-overview": <TFRSOverviewContent data={TFRS_OVERVIEW_DATA} />,
     "unit-diary-reporting": <UnitDiaryReportingContent data={UNIT_DIARY_REPORTING_DATA} />,
     "training-information-systems": <TrainingInformationSystemsContent data={TRAINING_INFORMATION_SYSTEMS_DATA} />,
+    "mco-quick-reference": <MCOQuickReferenceContent data={MCO_QUICK_REFERENCE_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;

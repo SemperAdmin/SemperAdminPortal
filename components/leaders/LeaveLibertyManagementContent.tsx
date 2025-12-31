@@ -13,7 +13,7 @@ const TABS = [
   { id: "references", label: "References", type: "references" as const },
 ];
 
-export function LeaveLibrtyManagementContent({ data }: Props) {
+export function LeaveLibertyManagementContent({ data }: Props) {
   const content = {
     overview: (
       <section className="space-y-6">

@@ -53,8 +53,8 @@ export function InitialCounselingSessionContent({ data }: Props) {
             The ICS has specific objectives that set the foundation for the leader-subordinate relationship:
           </p>
         </div>
-        <div className="space-y-3">
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+        <ol className="space-y-3">
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">1</span>
               <div>
@@ -62,8 +62,8 @@ export function InitialCounselingSessionContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Clearly communicate your standards for performance, conduct, and professionalism. Ensure the Marine understands what is expected.</p>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+          </li>
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">2</span>
               <div>
@@ -71,8 +71,8 @@ export function InitialCounselingSessionContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Learn the Marine's short-term and long-term goals. Begin setting SMART goals for the next period.</p>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+          </li>
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">3</span>
               <div>
@@ -80,8 +80,8 @@ export function InitialCounselingSessionContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Begin to know your Marine across all six functional areas. Ask about family, fitness, finances, and future plans.</p>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+          </li>
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">4</span>
               <div>
@@ -89,8 +89,8 @@ export function InitialCounselingSessionContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Establish trust and open communication. Make it clear that you are invested in their success.</p>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+          </li>
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">5</span>
               <div>
@@ -98,8 +98,8 @@ export function InitialCounselingSessionContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Inform the Marine of available resources: Chaplain, Family Readiness, Command Financial Specialist, Force Fitness Instructor.</p>
               </div>
             </div>
-          </div>
-        </div>
+          </li>
+        </ol>
       </section>
     ),
     topics: (

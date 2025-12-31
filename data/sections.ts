@@ -539,6 +539,13 @@ export const SECTIONS: Record<string, Section> = {
         ],
       },
       {
+        title: "Disciplinary Documentation",
+        items: [
+          { title: "Page 11 vs 6105 Decision Guide", slug: "page11-vs-6105-decision-guide", desc: "When to use Page 11 entries vs 6105 counseling warnings" },
+          { title: "Counseling Refusal Procedures", slug: "counseling-refusal-procedures", desc: "How to handle Marines who refuse to sign documents" },
+        ],
+      },
+      {
         title: "Accountability Actions",
         items: [
           { title: "UA and Desertion Reporting", slug: "ua-desertion-reporting", desc: "Timelines and procedures for unauthorized absence reporting" },
@@ -568,6 +575,7 @@ export const SECTIONS: Record<string, Section> = {
           { title: "iAPS Submission Process", slug: "iaps-submission", desc: "Step-by-step guidance for submitting awards in iAPS" },
           { title: "Award Routing and Approval Authority", slug: "award-routing-approval", desc: "Understanding the chain of approval for different award levels" },
           { title: "Timeline Management", slug: "award-timeline-management", desc: "Planning ahead for PCS, retirement, and end-of-tour awards" },
+          { title: "Award Troubleshooting (Stuck Awards)", slug: "award-troubleshooting", desc: "Identifying and resolving common issues with delayed awards" },
         ],
       },
     ],
@@ -683,6 +691,7 @@ export const SECTIONS: Record<string, Section> = {
         items: [
           { title: "Command Input Evaluation Metrics", slug: "jepes-command-input-metrics", desc: "Individual Character, MOS/Mission, Leadership marking guidelines" },
           { title: "NOT REC (Not Recommended)", slug: "not-rec", desc: "When and how to indicate not recommended for promotion" },
+          { title: "NOT REC Appeal Process", slug: "not-rec-appeal-process", desc: "How to correct erroneous NOT REC and appeal through PERB/BCNR" },
           { title: "Objective Scores and Verification", slug: "jepes-objective-scores", desc: "Warfighting, Physical Toughness, Mental Agility verification" },
         ],
       },
@@ -750,6 +759,12 @@ export const SECTIONS: Record<string, Section> = {
           { title: "TFRS Overview", slug: "tfrs-overview", desc: "Total Force Retention System for reenlistment and extensions" },
           { title: "Unit Diary Reporting", slug: "unit-diary-reporting", desc: "Personnel transaction reporting to update MCTFS" },
           { title: "Training Information Systems", slug: "training-information-systems", desc: "MCTIMS, MarineNet, and training record systems" },
+        ],
+      },
+      {
+        title: "Quick Reference",
+        items: [
+          { title: "MCO Quick Reference Table", slug: "mco-quick-reference", desc: "Quick access to frequently used Marine Corps Orders by topic" },
         ],
       },
     ],

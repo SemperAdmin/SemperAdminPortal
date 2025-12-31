@@ -100,7 +100,7 @@ export function TrainingInformationSystemsContent({ data }: Props) {
                 </tr>
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
                   <td className="py-2 pr-4 font-medium">Fitness Marines</td>
-                  <td className="py-2">http://www.fitness.marines.mil</td>
+                  <td className="py-2">https://www.fitness.marines.mil</td>
                 </tr>
                 <tr>
                   <td className="py-2 pr-4 font-medium">MCCS Training (Ethos)</td>

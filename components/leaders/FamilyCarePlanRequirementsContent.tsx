@@ -65,8 +65,8 @@ export function FamilyCarePlanRequirementsContent({ data }: Props) {
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Family Care Plan Components</h2>
           <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Per MCO 1754.6 (Family Care Plan Policy):</p>
         </div>
-        <div className="space-y-3">
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+        <ol className="space-y-3">
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">1</span>
               <div>
@@ -74,8 +74,8 @@ export function FamilyCarePlanRequirementsContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Person who will care for dependents during short-term absences (less than 30 days)</p>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+          </li>
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">2</span>
               <div>
@@ -83,8 +83,8 @@ export function FamilyCarePlanRequirementsContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Person who will care for dependents during deployment or extended TAD</p>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+          </li>
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">3</span>
               <div>
@@ -92,8 +92,8 @@ export function FamilyCarePlanRequirementsContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Plan for financial support of dependents during absence</p>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+          </li>
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">4</span>
               <div>
@@ -101,8 +101,8 @@ export function FamilyCarePlanRequirementsContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Power of Attorney, guardianship documents as required</p>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+          </li>
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">5</span>
               <div>
@@ -110,8 +110,8 @@ export function FamilyCarePlanRequirementsContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Access to medical care for dependents, special needs considerations</p>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+          </li>
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">6</span>
               <div>
@@ -119,8 +119,8 @@ export function FamilyCarePlanRequirementsContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Plan for transporting dependents to care provider</p>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+          </li>
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">7</span>
               <div>
@@ -128,8 +128,8 @@ export function FamilyCarePlanRequirementsContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Updated contact information for all parties</p>
               </div>
             </div>
-          </div>
-        </div>
+          </li>
+        </ol>
         <div className="rounded-lg bg-red-50 p-4 dark:bg-red-900/20">
           <h4 className="font-semibold text-red-800 dark:text-red-200">Common Problems</h4>
           <ul className="mt-2 space-y-2 text-sm text-red-700 dark:text-red-300">
