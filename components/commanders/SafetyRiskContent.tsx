@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { SAFETY_URLS } from "../../data/references";
 import {
   Shield,
   AlertTriangle,
@@ -261,7 +262,7 @@ export function SafetyRiskContent() {
                 <li>• Establishes baseline for new commander</li>
                 <li>• Required annually thereafter</li>
                 <li>• Reference: MCO 5100.29C, Para 060402</li>
-                <li>• Website: <a href="https://www.safety.marines.mil/" target="_blank" rel="noopener noreferrer" className="text-[var(--sa-gold)] hover:underline">safety.marines.mil</a></li>
+                <li>• Website: <a href={SAFETY_URLS.SAFETY_MARINES} target="_blank" rel="noopener noreferrer" className="text-[var(--sa-gold)] hover:underline">safety.marines.mil</a></li>
               </ul>
             </div>
           </div>
@@ -860,19 +861,19 @@ export function SafetyRiskContent() {
             <h3 className="font-semibold text-[var(--sa-cream)] mb-2">Safety Resources</h3>
             <ul className="text-sm space-y-2">
               <li>
-                <a href="https://www.safety.marines.mil/" target="_blank" rel="noopener noreferrer"
+                <a href={SAFETY_URLS.SAFETY_MARINES} target="_blank" rel="noopener noreferrer"
                    className="text-[var(--sa-gold)] hover:underline flex items-center gap-1">
                   Marine Corps Safety <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
               <li>
-                <a href="https://navalsafetycommand.navy.mil/" target="_blank" rel="noopener noreferrer"
+                <a href={SAFETY_URLS.NAVAL_SAFETY_COMMAND} target="_blank" rel="noopener noreferrer"
                    className="text-[var(--sa-gold)] hover:underline flex items-center gap-1">
                   Naval Safety Command <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
               <li>
-                <a href="https://www.marineaviation.org" target="_blank" rel="noopener noreferrer"
+                <a href={SAFETY_URLS.MARINE_AVIATION} target="_blank" rel="noopener noreferrer"
                    className="text-[var(--sa-gold)] hover:underline flex items-center gap-1">
                   Marine Aviation <ExternalLink className="w-3 h-3" />
                 </a>

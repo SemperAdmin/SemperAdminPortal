@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Acronym } from "../ui/Acronym";
+import { SAPR_URLS, FAMILY_URLS, MENTAL_HEALTH_URLS } from "../../data/references";
 import {
   ChevronDown,
   ChevronRight,
@@ -748,7 +749,7 @@ export function SubstanceAbuseContent() {
 
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <a
-            href="https://www.thegearlocker.org"
+            href={SAPR_URLS.GEAR_LOCKER}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -757,7 +758,7 @@ export function SubstanceAbuseContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">Gear Locker (SACO Guidance)</span>
           </a>
           <a
-            href="https://www.usmc-mccs.org"
+            href={FAMILY_URLS.MCCS}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -766,7 +767,7 @@ export function SubstanceAbuseContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">Marine and Family Programs</span>
           </a>
           <a
-            href="https://www.dstressline.com"
+            href={MENTAL_HEALTH_URLS.DSTRESS_LINE}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -775,7 +776,7 @@ export function SubstanceAbuseContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">DSTRESS Line: 1-877-476-7734</span>
           </a>
           <a
-            href="https://www.militaryonesource.mil"
+            href={FAMILY_URLS.MILITARY_ONESOURCE}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"

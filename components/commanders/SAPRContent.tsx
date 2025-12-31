@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Acronym } from "../ui/Acronym";
+import { SAPR_URLS, MCO_URLS } from "../../data/references";
 import {
   ChevronDown,
   ChevronRight,
@@ -899,7 +900,7 @@ export function SAPRContent() {
 
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <a
-            href="https://thegearlocker.org"
+            href={SAPR_URLS.GEAR_LOCKER}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -910,7 +911,7 @@ export function SAPRContent() {
             </span>
           </a>
           <a
-            href="https://hqmcportal.hqi.usmc.mil/sites/family/mfb/SitePages/Home.aspx"
+            href={SAPR_URLS.SAPR_WORKSPACE}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -921,7 +922,7 @@ export function SAPRContent() {
             </span>
           </a>
           <a
-            href="https://hqmcportal.hqi.usmc.mil/sites/family/mfb/SAPR/SitePages/LeadershipToolkit/Command.aspx"
+            href={SAPR_URLS.SAPR_COMMANDER_TOOLKIT}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -932,7 +933,7 @@ export function SAPRContent() {
             </span>
           </a>
           <a
-            href="https://www.safehelpline.org"
+            href={SAPR_URLS.SAFE_HELPLINE}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -941,7 +942,7 @@ export function SAPRContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">Safe Helpline (24/7): 877-995-5247</span>
           </a>
           <a
-            href="https://www.nsopw.gov/en/Search/Verification"
+            href={SAPR_URLS.NSOPW}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
@@ -950,7 +951,7 @@ export function SAPRContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">National Sex Offender Search</span>
           </a>
           <a
-            href="https://www.marines.mil/portals/1/Publications/MCO%201752.5C.pdf?ver=2019-06-10-115714-627"
+            href={MCO_URLS.SAPR}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"

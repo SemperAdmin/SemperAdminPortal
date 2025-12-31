@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Breadcrumb } from "../ui/Breadcrumb";
 import { Acronym } from "../ui/Acronym";
+import { ENVIRONMENTAL_URLS } from "../../data/references";
 import {
   Leaf,
   Shield,
@@ -1028,7 +1029,7 @@ export function EnvironmentalContent() {
             <ul className="space-y-1 text-sm">
               <li>
                 <a
-                  href="http://www.epa.gov/environmental-topics"
+                  href={ENVIRONMENTAL_URLS.EPA_TOPICS}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--sa-gold)] hover:underline"
@@ -1038,7 +1039,7 @@ export function EnvironmentalContent() {
               </li>
               <li>
                 <a
-                  href="http://www.epa.gov/echo"
+                  href={ENVIRONMENTAL_URLS.EPA_ECHO}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--sa-gold)] hover:underline"
