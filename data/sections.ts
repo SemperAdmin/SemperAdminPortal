@@ -734,22 +734,22 @@ export const SECTIONS: Record<string, Section> = {
 
   "leaders-administrative-systems": {
     title: "Administrative Systems",
-    intro: "Marine Corps administrative systems are essential tools for personnel management. This section covers leader-specific functions in MOL, MCTFS, MarineNet, iAPS, and DTS, including common troubleshooting scenarios.",
+    intro: "Understanding Marine Corps administrative systems helps you verify Marine records, track requirements, and ensure administrative actions are properly processed. This section provides an overview of key systems including MCTFS, MOL, JEPES, TFRS, Unit Diary, and training information systems.",
     groups: [
       {
-        title: "Personnel Systems",
+        title: "Core Personnel Systems",
         items: [
-          { title: "MOL Leader Functions", slug: "mol-leader-functions", desc: "Leader-specific capabilities in Marine Online" },
-          { title: "MCTFS Access and Common Tasks", slug: "mctfs-leader-tasks", desc: "Accessing and using MCTFS for personnel actions" },
-          { title: "MarineNet PME Tracking", slug: "marinenet-pme-tracking", desc: "Monitoring subordinate PME completion and enrollment" },
+          { title: "MCTFS Overview", slug: "mctfs-overview", desc: "Marine Corps Total Force System - authoritative pay and personnel data" },
+          { title: "MOL Navigation", slug: "mol-navigation", desc: "Marine Online portal for personnel access and requests" },
+          { title: "JEPES System Navigation", slug: "jepes-system-navigation", desc: "Junior Enlisted Performance Evaluation System in MOL" },
         ],
       },
       {
-        title: "Administrative Systems",
+        title: "Retention and Reporting",
         items: [
-          { title: "iAPS for Awards", slug: "iaps-leader-guide", desc: "Using iAPS to submit and track award packages" },
-          { title: "DTS Approval Responsibilities", slug: "dts-approval-responsibilities", desc: "Approving travel authorizations and vouchers in DTS" },
-          { title: "Troubleshooting Common System Issues", slug: "system-troubleshooting", desc: "Resolving common access and functionality problems" },
+          { title: "TFRS Overview", slug: "tfrs-overview", desc: "Total Force Retention System for reenlistment and extensions" },
+          { title: "Unit Diary Reporting", slug: "unit-diary-reporting", desc: "Personnel transaction reporting to update MCTFS" },
+          { title: "Training Information Systems", slug: "training-information-systems", desc: "MCTIMS, MarineNet, and training record systems" },
         ],
       },
     ],

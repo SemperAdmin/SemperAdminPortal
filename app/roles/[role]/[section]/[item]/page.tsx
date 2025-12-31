@@ -242,6 +242,13 @@ import { UAProceduresContent } from "../../../../../components/leaders/UAProcedu
 import { TADDetachmentTrackingContent } from "../../../../../components/leaders/TADDetachmentTrackingContent";
 import { MusterFormationProceduresContent } from "../../../../../components/leaders/MusterFormationProceduresContent";
 import { RecordKeepingDocumentationContent } from "../../../../../components/leaders/RecordKeepingDocumentationContent";
+// Leaders - Administrative Systems
+import { MCTFSOverviewContent } from "../../../../../components/leaders/MCTFSOverviewContent";
+import { MOLNavigationContent } from "../../../../../components/leaders/MOLNavigationContent";
+import { JEPESSystemNavigationContent } from "../../../../../components/leaders/JEPESSystemNavigationContent";
+import { TFRSOverviewContent } from "../../../../../components/leaders/TFRSOverviewContent";
+import { UnitDiaryReportingContent } from "../../../../../components/leaders/UnitDiaryReportingContent";
+import { TrainingInformationSystemsContent } from "../../../../../components/leaders/TrainingInformationSystemsContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -2729,6 +2736,54 @@ const RECORD_KEEPING_DOCUMENTATION_DATA = {
   ],
 };
 
+// Leaders - Administrative Systems DATA
+const MCTFS_OVERVIEW_DATA = {
+  references: [
+    { title: "MCO 1754.9B - Unit, Personal and Family Readiness", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899257/mco-17549b/" },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "MCO 1040.31 - Enlisted Retention", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
+  ],
+};
+
+const MOL_NAVIGATION_DATA = {
+  references: [
+    { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil", isQuickLink: true },
+    { title: "MarineNet", url: "https://www.usmclearning.usmc.mil", isQuickLink: true },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+  ],
+};
+
+const JEPES_SYSTEM_NAVIGATION_DATA = {
+  references: [
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil", isQuickLink: true },
+  ],
+};
+
+const TFRS_OVERVIEW_DATA = {
+  references: [
+    { title: "MCO 1040.31 - Enlisted Retention", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
+    { title: "NAVMC 11537 - Reenlistment Screening", url: "https://forms.documentservices.dla.mil/order/" },
+  ],
+};
+
+const UNIT_DIARY_REPORTING_DATA = {
+  references: [
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/" },
+    { title: "MCO 6100.13A - Physical Fitness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899201/mco-610013a/" },
+    { title: "MCTFS PRIUM", url: "https://www.manpower.usmc.mil/webcenter/portal/MCTFS" },
+  ],
+};
+
+const TRAINING_INFORMATION_SYSTEMS_DATA = {
+  references: [
+    { title: "MCO 6100.13A - Physical Fitness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899201/mco-610013a/" },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "MarineNet", url: "https://www.usmclearning.usmc.mil", isQuickLink: true },
+    { title: "Fitness Marines", url: "http://www.fitness.marines.mil", isQuickLink: true },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -3105,6 +3160,13 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "tad-detachment-tracking": <TADDetachmentTrackingContent data={TAD_DETACHMENT_TRACKING_DATA} />,
     "muster-formation-procedures": <MusterFormationProceduresContent data={MUSTER_FORMATION_PROCEDURES_DATA} />,
     "record-keeping-documentation": <RecordKeepingDocumentationContent data={RECORD_KEEPING_DOCUMENTATION_DATA} />,
+    // Leaders - Administrative Systems
+    "mctfs-overview": <MCTFSOverviewContent data={MCTFS_OVERVIEW_DATA} />,
+    "mol-navigation": <MOLNavigationContent data={MOL_NAVIGATION_DATA} />,
+    "jepes-system-navigation": <JEPESSystemNavigationContent data={JEPES_SYSTEM_NAVIGATION_DATA} />,
+    "tfrs-overview": <TFRSOverviewContent data={TFRS_OVERVIEW_DATA} />,
+    "unit-diary-reporting": <UnitDiaryReportingContent data={UNIT_DIARY_REPORTING_DATA} />,
+    "training-information-systems": <TrainingInformationSystemsContent data={TRAINING_INFORMATION_SYSTEMS_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -3455,12 +3517,12 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   ];
   const leadersSystemsSection = "leaders-administrative-systems";
   const leadersSystemsSlugs = [
-    "mol-leader-functions",
-    "mctfs-leader-tasks",
-    "marinenet-pme-tracking",
-    "iaps-leader-guide",
-    "dts-approval-responsibilities",
-    "system-troubleshooting",
+    "mctfs-overview",
+    "mol-navigation",
+    "jepes-system-navigation",
+    "tfrs-overview",
+    "unit-diary-reporting",
+    "training-information-systems",
   ];
 
   const params: { role: Role; section: string; item: string }[] = [];
