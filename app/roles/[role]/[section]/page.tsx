@@ -9,6 +9,7 @@ import { CommandClimateContent } from "../../../../components/commanders/Command
 import { SAPRContent } from "../../../../components/commanders/SAPRContent";
 import { SuicidePreventionContent } from "../../../../components/commanders/SuicidePreventionContent";
 import { FamilyReadinessContent } from "../../../../components/commanders/FamilyReadinessContent";
+import { SubstanceAbuseContent } from "../../../../components/commanders/SubstanceAbuseContent";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -67,7 +68,8 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     key === "commanders-climate-culture" ||
     key === "commanders-sapr" ||
     key === "commanders-suicide-prevention" ||
-    key === "commanders-family-readiness";
+    key === "commanders-family-readiness" ||
+    key === "commanders-substance-abuse";
 
   // Render comprehensive content components for specific commander sections
   if (hasComprehensiveContent) {
@@ -88,6 +90,9 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     }
     if (key === "commanders-family-readiness") {
       return <FamilyReadinessContent />;
+    }
+    if (key === "commanders-substance-abuse") {
+      return <SubstanceAbuseContent />;
     }
   }
 
