@@ -668,31 +668,36 @@ export const SECTIONS: Record<string, Section> = {
 
   "leaders-performance-evaluation": {
     title: "Performance Evaluation",
-    intro: "Performance evaluations directly impact Marine careers. This section covers fitness report responsibilities, JEPES for junior Marines, counseling requirements, and how to write effective evaluations that accurately reflect performance.",
+    intro: "Performance evaluations directly impact Marine careers. This section covers JEPES for junior Marines (E-1 through E-4), fitness reports for SNCOs, reporting chain responsibilities, and how to write accurate evaluations that serve both Marines and the institution.",
     groups: [
+      {
+        title: "JEPES Fundamentals",
+        items: [
+          { title: "JEPES Overview", slug: "jepes-overview", desc: "Understanding the four pillars, scoring, and key concepts" },
+          { title: "JEPES Reporting Chain and Roles", slug: "jepes-reporting-chain", desc: "MRO, FLS, Evaluator, SER, Reviewer, and Approver responsibilities" },
+          { title: "JEPES Reporting Occasions", slug: "jepes-reporting-occasions", desc: "When evaluations are required and occasion codes" },
+        ],
+      },
+      {
+        title: "JEPES Evaluation",
+        items: [
+          { title: "Command Input Evaluation Metrics", slug: "jepes-command-input-metrics", desc: "Individual Character, MOS/Mission, Leadership marking guidelines" },
+          { title: "NOT REC (Not Recommended)", slug: "not-rec", desc: "When and how to indicate not recommended for promotion" },
+          { title: "Objective Scores and Verification", slug: "jepes-objective-scores", desc: "Warfighting, Physical Toughness, Mental Agility verification" },
+        ],
+      },
+      {
+        title: "JEPES Administration",
+        items: [
+          { title: "Debriefing Marines", slug: "jepes-debriefing", desc: "How to conduct effective evaluation debriefs" },
+          { title: "Billet Accomplishments", slug: "billet-accomplishments", desc: "Writing specific, quantifiable accomplishments" },
+          { title: "Corrective Procedures", slug: "jepes-corrective-procedures", desc: "Late-run scores and command input corrections" },
+        ],
+      },
       {
         title: "Fitness Reports",
         items: [
-          { title: "RS and RO Responsibilities", slug: "rs-ro-responsibilities", desc: "Understanding Reporting Senior and Reviewing Officer roles" },
-          { title: "Establishing Billet Descriptions", slug: "billet-descriptions", desc: "30-day requirement for establishing billet descriptions" },
-          { title: "Ongoing Counseling During Reporting Period", slug: "ongoing-counseling", desc: "Documenting performance throughout the reporting period" },
-          { title: "Writing Effective Fitness Reports", slug: "writing-effective-fitreps", desc: "Techniques for writing accurate and impactful evaluations" },
-          { title: "Adverse Fitness Report Process", slug: "adverse-fitrep-process", desc: "Requirements and procedures for adverse reports" },
-        ],
-      },
-      {
-        title: "Understanding Evaluations",
-        items: [
-          { title: "Relative Value and Profiles", slug: "relative-value-profiles", desc: "How RV and RS profiles affect career progression" },
-          { title: "FITREP Submission Timelines", slug: "fitrep-timelines", desc: "30-day standard and 60-day adverse submission requirements" },
-          { title: "Common FITREP Errors", slug: "common-fitrep-errors", desc: "Avoid mistakes that harm Marines or require correction" },
-        ],
-      },
-      {
-        title: "JEPES",
-        items: [
-          { title: "JEPES Overview", slug: "jepes-overview", desc: "Understanding the Junior Enlisted Performance Evaluation System" },
-          { title: "JEPES Command Input", slug: "jepes-command-input", desc: "How leaders provide input to JEPES evaluations" },
+          { title: "Fitness Reports (E-5 and Above)", slug: "fitness-reports-leaders", desc: "Key differences from JEPES and RS/RO responsibilities" },
         ],
       },
     ],

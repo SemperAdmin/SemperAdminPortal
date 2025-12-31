@@ -223,6 +223,17 @@ import { ObligatedServiceDeploymentContent } from "../../../../../components/lea
 import { PhysicalFitnessReadinessContent } from "../../../../../components/leaders/PhysicalFitnessReadinessContent";
 import { PreDeploymentChecklistContent } from "../../../../../components/leaders/PreDeploymentChecklistContent";
 import { SupportingIAsAndTADContent } from "../../../../../components/leaders/SupportingIAsAndTADContent";
+// Leaders - Performance Evaluation
+import { JEPESOverviewContent } from "../../../../../components/leaders/JEPESOverviewContent";
+import { JEPESReportingChainContent } from "../../../../../components/leaders/JEPESReportingChainContent";
+import { JEPESReportingOccasionsContent } from "../../../../../components/leaders/JEPESReportingOccasionsContent";
+import { JEPESCommandInputMetricsContent } from "../../../../../components/leaders/JEPESCommandInputMetricsContent";
+import { NOTRECContent } from "../../../../../components/leaders/NOTRECContent";
+import { JEPESObjectiveScoresContent } from "../../../../../components/leaders/JEPESObjectiveScoresContent";
+import { JEPESDebriefingContent } from "../../../../../components/leaders/JEPESDebriefingContent";
+import { FitnessReportsLeadersContent } from "../../../../../components/leaders/FitnessReportsLeadersContent";
+import { BilletAccomplishmentsContent } from "../../../../../components/leaders/BilletAccomplishmentsContent";
+import { JEPESCorrectiveProceduresContent } from "../../../../../components/leaders/JEPESCorrectiveProceduresContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -2594,6 +2605,70 @@ const SUPPORTING_IAS_AND_TAD_DATA = {
   ],
 };
 
+// Leaders - Performance Evaluation
+const JEPES_OVERVIEW_LEADERS_DATA = {
+  references: [
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "MCO P1400.32D - Enlisted Promotion Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899270/mco-p140032d/" },
+  ],
+};
+
+const JEPES_REPORTING_CHAIN_DATA = {
+  references: [
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+  ],
+};
+
+const JEPES_REPORTING_OCCASIONS_DATA = {
+  references: [
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+  ],
+};
+
+const JEPES_COMMAND_INPUT_METRICS_DATA = {
+  references: [
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+  ],
+};
+
+const NOT_REC_DATA = {
+  references: [
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "MCO P1400.32D - Enlisted Promotion Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899270/mco-p140032d/" },
+  ],
+};
+
+const JEPES_OBJECTIVE_SCORES_DATA = {
+  references: [
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "MARADMIN 046/24 - Updates to JEPES MOS Qualifications", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+  ],
+};
+
+const JEPES_DEBRIEFING_DATA = {
+  references: [
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+  ],
+};
+
+const FITNESS_REPORTS_LEADERS_DATA = {
+  references: [
+    { title: "MCO 1610.7 - Performance Evaluation System", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899225/mco-16107/" },
+  ],
+};
+
+const BILLET_ACCOMPLISHMENTS_DATA = {
+  references: [
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+  ],
+};
+
+const JEPES_CORRECTIVE_PROCEDURES_DATA = {
+  references: [
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -2951,6 +3026,17 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "physical-fitness-readiness": <PhysicalFitnessReadinessContent data={PHYSICAL_FITNESS_READINESS_DATA} />,
     "pre-deployment-checklist": <PreDeploymentChecklistContent data={PRE_DEPLOYMENT_CHECKLIST_DATA} />,
     "supporting-ias-and-tad": <SupportingIAsAndTADContent data={SUPPORTING_IAS_AND_TAD_DATA} />,
+    // Leaders - Performance Evaluation
+    "jepes-overview": <JEPESOverviewContent data={JEPES_OVERVIEW_LEADERS_DATA} />,
+    "jepes-reporting-chain": <JEPESReportingChainContent data={JEPES_REPORTING_CHAIN_DATA} />,
+    "jepes-reporting-occasions": <JEPESReportingOccasionsContent data={JEPES_REPORTING_OCCASIONS_DATA} />,
+    "jepes-command-input-metrics": <JEPESCommandInputMetricsContent data={JEPES_COMMAND_INPUT_METRICS_DATA} />,
+    "not-rec": <NOTRECContent data={NOT_REC_DATA} />,
+    "jepes-objective-scores": <JEPESObjectiveScoresContent data={JEPES_OBJECTIVE_SCORES_DATA} />,
+    "jepes-debriefing": <JEPESDebriefingContent data={JEPES_DEBRIEFING_DATA} />,
+    "fitness-reports-leaders": <FitnessReportsLeadersContent data={FITNESS_REPORTS_LEADERS_DATA} />,
+    "billet-accomplishments": <BilletAccomplishmentsContent data={BILLET_ACCOMPLISHMENTS_DATA} />,
+    "jepes-corrective-procedures": <JEPESCorrectiveProceduresContent data={JEPES_CORRECTIVE_PROCEDURES_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -3278,16 +3364,16 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   ];
   const leadersPerformanceSection = "leaders-performance-evaluation";
   const leadersPerformanceSlugs = [
-    "rs-ro-responsibilities",
-    "billet-descriptions",
-    "ongoing-counseling",
-    "writing-effective-fitreps",
-    "adverse-fitrep-process",
-    "relative-value-profiles",
-    "fitrep-timelines",
-    "common-fitrep-errors",
     "jepes-overview",
-    "jepes-command-input",
+    "jepes-reporting-chain",
+    "jepes-reporting-occasions",
+    "jepes-command-input-metrics",
+    "not-rec",
+    "jepes-objective-scores",
+    "jepes-debriefing",
+    "fitness-reports-leaders",
+    "billet-accomplishments",
+    "jepes-corrective-procedures",
   ];
   const leadersPersonnelSection = "leaders-personnel-accountability";
   const leadersPersonnelSlugs = [
