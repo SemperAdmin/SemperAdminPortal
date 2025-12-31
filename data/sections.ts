@@ -638,29 +638,29 @@ export const SECTIONS: Record<string, Section> = {
 
   "leaders-deployment-readiness": {
     title: "Deployment & Readiness",
-    intro: "Preparing Marines for deployment requires attention to administrative details that protect service members and their families. This section covers pre-deployment checklists, family readiness, and post-deployment administrative requirements.",
+    intro: "Individual readiness is a commander's program. You execute it at the small unit level by tracking requirements, identifying deficiencies, and ensuring Marines are prepared to deploy on time. This section covers UPFRP, individual readiness, and deployment preparation.",
     groups: [
       {
-        title: "Pre-Deployment",
+        title: "Family Readiness Program",
         items: [
-          { title: "Pre-Deployment Administrative Checklist", slug: "pre-deployment-checklist", desc: "Complete administrative requirements before deployment" },
-          { title: "Verifying SGLI and Beneficiary Elections", slug: "sgli-beneficiary-verification", desc: "Ensure life insurance coverage is current and accurate" },
-          { title: "DD93 and Page 2 Verification", slug: "dd93-page2-verification", desc: "Verify emergency contact and next of kin information" },
-          { title: "Family Care Plan Requirements", slug: "family-care-plan-requirements", desc: "Ensure single parents and dual-military have valid plans" },
+          { title: "UPFRP Overview", slug: "upfrp-overview", desc: "Unit, Personal and Family Readiness Program fundamentals" },
+          { title: "Deployment Training Events", slug: "deployment-training-events", desc: "Pre, mid, return/reunion, and post-deployment briefs" },
         ],
       },
       {
-        title: "Documentation and ID",
+        title: "Individual Readiness",
         items: [
-          { title: "DEERS and ID Card Currency", slug: "deers-id-currency", desc: "Verify dependent enrollment and ID card expiration dates" },
-          { title: "Power of Attorney Guidance", slug: "poa-guidance", desc: "Advise Marines on POA types and legal assistance" },
+          { title: "Individual Readiness Requirements", slug: "individual-readiness-requirements", desc: "Medical, dental, training, administrative, and legal readiness" },
+          { title: "Family Care Plan Requirements", slug: "family-care-plan-requirements", desc: "Requirements for single parents and dual-military couples" },
+          { title: "Obligated Service for Deployment", slug: "obligated-service-deployment", desc: "Extensions, RE-3O consequences, and Career Planner coordination" },
+          { title: "Physical Fitness Readiness", slug: "physical-fitness-readiness", desc: "PFT/CFT requirements and failure consequences" },
         ],
       },
       {
-        title: "Post-Deployment",
+        title: "Deployment Preparation",
         items: [
-          { title: "Post-Deployment Administrative Actions", slug: "post-deployment-actions", desc: "Required admin tasks upon return from deployment" },
-          { title: "Family Readiness Program Responsibilities", slug: "family-readiness-responsibilities", desc: "Leader role in supporting families during and after deployment" },
+          { title: "Pre-Deployment Checklist", slug: "pre-deployment-checklist", desc: "Administrative, medical, training, and family readiness checklists" },
+          { title: "Supporting IAs and TAD Marines", slug: "supporting-ias-and-tad", desc: "Parent and gaining command responsibilities for individual augmentees" },
         ],
       },
     ],

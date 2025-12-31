@@ -214,6 +214,15 @@ import { RequiredCounselingOccasionsContent } from "../../../../../components/le
 import { InitialCounselingSessionContent } from "../../../../../components/leaders/InitialCounselingSessionContent";
 import { FollowOnCounselingSessionsContent } from "../../../../../components/leaders/FollowOnCounselingSessionsContent";
 import { MarineLeaderNotebooksContent } from "../../../../../components/leaders/MarineLeaderNotebooksContent";
+// Leaders - Deployment & Readiness
+import { UPFRPOverviewContent } from "../../../../../components/leaders/UPFRPOverviewContent";
+import { DeploymentTrainingEventsContent } from "../../../../../components/leaders/DeploymentTrainingEventsContent";
+import { IndividualReadinessRequirementsContent } from "../../../../../components/leaders/IndividualReadinessRequirementsContent";
+import { FamilyCarePlanRequirementsContent } from "../../../../../components/leaders/FamilyCarePlanRequirementsContent";
+import { ObligatedServiceDeploymentContent } from "../../../../../components/leaders/ObligatedServiceDeploymentContent";
+import { PhysicalFitnessReadinessContent } from "../../../../../components/leaders/PhysicalFitnessReadinessContent";
+import { PreDeploymentChecklistContent } from "../../../../../components/leaders/PreDeploymentChecklistContent";
+import { SupportingIAsAndTADContent } from "../../../../../components/leaders/SupportingIAsAndTADContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -2531,6 +2540,60 @@ const MARINE_LEADER_NOTEBOOKS_DATA = {
   ],
 };
 
+// Leaders - Deployment & Readiness
+const UPFRP_OVERVIEW_DATA = {
+  references: [
+    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899530/mco-17549b/" },
+  ],
+};
+
+const DEPLOYMENT_TRAINING_EVENTS_DATA = {
+  references: [
+    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899530/mco-17549b/" },
+  ],
+};
+
+const INDIVIDUAL_READINESS_REQUIREMENTS_DATA = {
+  references: [
+    { title: "MCO 6100.13A - Marine Corps Physical Fitness Program", url: "https://www.marines.mil/Portals/1/Publications/MCO%206100.13A.pdf" },
+    { title: "MCO 1040.31 - Enlisted Retention and Career Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-104031/" },
+    { title: "BUMEDINST 6230.15B - Immunizations and Chemoprophylaxis", url: "https://www.med.navy.mil/Portals/62/Documents/BUMED/Directives/6000s/6230_15B.pdf" },
+  ],
+};
+
+const FAMILY_CARE_PLAN_REQUIREMENTS_DATA = {
+  references: [
+    { title: "MCO 1754.6 - Family Care Plan Policy", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899529/mco-17546/" },
+    { title: "MCO 1040.31 - Enlisted Retention and Career Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-104031/" },
+  ],
+};
+
+const OBLIGATED_SERVICE_DEPLOYMENT_DATA = {
+  references: [
+    { title: "MCO 1040.31 - Enlisted Retention and Career Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-104031/" },
+    { title: "MCO 1300.8 - Marine Corps Personnel Assignment Policy", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899258/mco-13008/" },
+  ],
+};
+
+const PHYSICAL_FITNESS_READINESS_DATA = {
+  references: [
+    { title: "MCO 6100.13A - Marine Corps Physical Fitness Program", url: "https://www.marines.mil/Portals/1/Publications/MCO%206100.13A.pdf" },
+  ],
+};
+
+const PRE_DEPLOYMENT_CHECKLIST_DATA = {
+  references: [
+    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899530/mco-17549b/" },
+    { title: "MCO 3000.11E - Marine Corps Deployment Planning", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899716/mco-300011e/" },
+  ],
+};
+
+const SUPPORTING_IAS_AND_TAD_DATA = {
+  references: [
+    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899530/mco-17549b/" },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -2879,6 +2942,15 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "initial-counseling-session": <InitialCounselingSessionContent data={INITIAL_COUNSELING_SESSION_DATA} />,
     "follow-on-counseling-sessions": <FollowOnCounselingSessionsContent data={FOLLOW_ON_COUNSELING_SESSIONS_DATA} />,
     "marine-leader-notebooks": <MarineLeaderNotebooksContent data={MARINE_LEADER_NOTEBOOKS_DATA} />,
+    // Leaders - Deployment & Readiness
+    "upfrp-overview": <UPFRPOverviewContent data={UPFRP_OVERVIEW_DATA} />,
+    "deployment-training-events": <DeploymentTrainingEventsContent data={DEPLOYMENT_TRAINING_EVENTS_DATA} />,
+    "individual-readiness-requirements": <IndividualReadinessRequirementsContent data={INDIVIDUAL_READINESS_REQUIREMENTS_DATA} />,
+    "family-care-plan-requirements": <FamilyCarePlanRequirementsContent data={FAMILY_CARE_PLAN_REQUIREMENTS_DATA} />,
+    "obligated-service-deployment": <ObligatedServiceDeploymentContent data={OBLIGATED_SERVICE_DEPLOYMENT_DATA} />,
+    "physical-fitness-readiness": <PhysicalFitnessReadinessContent data={PHYSICAL_FITNESS_READINESS_DATA} />,
+    "pre-deployment-checklist": <PreDeploymentChecklistContent data={PRE_DEPLOYMENT_CHECKLIST_DATA} />,
+    "supporting-ias-and-tad": <SupportingIAsAndTADContent data={SUPPORTING_IAS_AND_TAD_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
