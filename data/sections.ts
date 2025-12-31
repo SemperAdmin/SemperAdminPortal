@@ -604,23 +604,33 @@ export const SECTIONS: Record<string, Section> = {
 
   "leaders-counseling-documentation": {
     title: "Counseling & Documentation",
-    intro: "Proper counseling and documentation protects both Marines and the command. This section covers the different types of counseling entries, when to use each, and how to write effective documentation that stands up to scrutiny.",
+    intro: "MCO 1500.61 establishes the Marine Leader Development framework. This section covers the Six Functional Areas, SMART goals, counseling fundamentals, and documentation practices that help leaders develop their Marines holistically.",
     groups: [
       {
-        title: "Administrative Entries",
+        title: "Marine Leader Development Framework",
         items: [
-          { title: "Page 11 vs 6105 Decision Matrix", slug: "page11-vs-6105", desc: "When to use Page 11 entries versus 6105 counseling" },
-          { title: "Writing Effective Page 11 Entries", slug: "writing-page11-entries", desc: "Crafting clear, factual administrative remarks" },
-          { title: "6105 Counseling Requirements", slug: "6105-counseling-requirements", desc: "The four required elements of a valid 6105 entry" },
-          { title: "Non-Punitive Letter of Caution (NPLOC)", slug: "nploc-guidance", desc: "When and how to issue an NPLOC" },
+          { title: "The Six Functional Areas", slug: "six-functional-areas", desc: "Fidelity, Fighter, Fitness, Family, Finances, and Future" },
+          { title: "SMART Goals and How They Apply", slug: "smart-goals", desc: "Setting Specific, Measurable, Achievable, Relevant, Time-Bound goals" },
         ],
       },
       {
-        title: "Performance Counseling",
+        title: "Counseling Fundamentals",
         items: [
-          { title: "MRO Counseling Before Adverse FITREPs", slug: "mro-counseling", desc: "Required counseling before issuing adverse fitness reports" },
-          { title: "Rebuttal Rights and Timelines", slug: "rebuttal-rights-timelines", desc: "Understanding Marine rights to rebut adverse documentation" },
-          { title: "Common Documentation Errors", slug: "common-documentation-errors", desc: "Avoid mistakes that invalidate counseling entries" },
+          { title: "Counseling Fundamentals", slug: "counseling-fundamentals", desc: "Types and process of counseling per NAVMC 2795" },
+          { title: "Required Counseling Occasions", slug: "required-counseling-occasions", desc: "Mandatory and recommended occasions for formal counseling" },
+        ],
+      },
+      {
+        title: "Conducting Counseling Sessions",
+        items: [
+          { title: "Conducting an Initial Counseling Session", slug: "initial-counseling-session", desc: "Objectives, topics, and best practices for the ICS" },
+          { title: "Conducting Follow-On Counseling Sessions", slug: "follow-on-counseling-sessions", desc: "Purpose, process, and frequency of follow-on sessions" },
+        ],
+      },
+      {
+        title: "Documentation",
+        items: [
+          { title: "Marine Leader Notebooks", slug: "marine-leader-notebooks", desc: "What to document and guidelines from NAVMC 2795" },
         ],
       },
     ],

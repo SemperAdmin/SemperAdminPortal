@@ -206,6 +206,14 @@ import { SpecialDutyAssignmentScreeningContent } from "../../../../../components
 import { LateralMoveGuidanceContent } from "../../../../../components/leaders/LateralMoveGuidanceContent";
 import { EnlistedCommissioningProgramsContent } from "../../../../../components/leaders/EnlistedCommissioningProgramsContent";
 import { WarrantOfficerProgramSupportContent } from "../../../../../components/leaders/WarrantOfficerProgramSupportContent";
+// Leaders - Counseling & Documentation
+import { SixFunctionalAreasContent } from "../../../../../components/leaders/SixFunctionalAreasContent";
+import { SMARTGoalsContent } from "../../../../../components/leaders/SMARTGoalsContent";
+import { CounselingFundamentalsContent } from "../../../../../components/leaders/CounselingFundamentalsContent";
+import { RequiredCounselingOccasionsContent } from "../../../../../components/leaders/RequiredCounselingOccasionsContent";
+import { InitialCounselingSessionContent } from "../../../../../components/leaders/InitialCounselingSessionContent";
+import { FollowOnCounselingSessionsContent } from "../../../../../components/leaders/FollowOnCounselingSessionsContent";
+import { MarineLeaderNotebooksContent } from "../../../../../components/leaders/MarineLeaderNotebooksContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -2473,6 +2481,56 @@ const WARRANT_OFFICER_PROGRAM_SUPPORT_DATA = {
   ],
 };
 
+// Leaders - Counseling & Documentation
+const SIX_FUNCTIONAL_AREAS_DATA = {
+  references: [
+    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/" },
+    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf" },
+  ],
+};
+
+const SMART_GOALS_DATA = {
+  references: [
+    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/" },
+    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf" },
+  ],
+};
+
+const COUNSELING_FUNDAMENTALS_DATA = {
+  references: [
+    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/" },
+    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf" },
+  ],
+};
+
+const REQUIRED_COUNSELING_OCCASIONS_DATA = {
+  references: [
+    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/" },
+    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf" },
+  ],
+};
+
+const INITIAL_COUNSELING_SESSION_DATA = {
+  references: [
+    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/" },
+    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf" },
+  ],
+};
+
+const FOLLOW_ON_COUNSELING_SESSIONS_DATA = {
+  references: [
+    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/" },
+    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf" },
+  ],
+};
+
+const MARINE_LEADER_NOTEBOOKS_DATA = {
+  references: [
+    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/" },
+    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf" },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -2813,6 +2871,14 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "lateral-move-guidance": <LateralMoveGuidanceContent data={LATERAL_MOVE_GUIDANCE_DATA} />,
     "enlisted-commissioning-programs": <EnlistedCommissioningProgramsContent data={ENLISTED_COMMISSIONING_PROGRAMS_DATA} />,
     "warrant-officer-program-support": <WarrantOfficerProgramSupportContent data={WARRANT_OFFICER_PROGRAM_SUPPORT_DATA} />,
+    // Leaders - Counseling & Documentation
+    "six-functional-areas": <SixFunctionalAreasContent data={SIX_FUNCTIONAL_AREAS_DATA} />,
+    "smart-goals": <SMARTGoalsContent data={SMART_GOALS_DATA} />,
+    "counseling-fundamentals": <CounselingFundamentalsContent data={COUNSELING_FUNDAMENTALS_DATA} />,
+    "required-counseling-occasions": <RequiredCounselingOccasionsContent data={REQUIRED_COUNSELING_OCCASIONS_DATA} />,
+    "initial-counseling-session": <InitialCounselingSessionContent data={INITIAL_COUNSELING_SESSION_DATA} />,
+    "follow-on-counseling-sessions": <FollowOnCounselingSessionsContent data={FOLLOW_ON_COUNSELING_SESSIONS_DATA} />,
+    "marine-leader-notebooks": <MarineLeaderNotebooksContent data={MARINE_LEADER_NOTEBOOKS_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
