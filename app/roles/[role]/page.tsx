@@ -1,4 +1,5 @@
 import { type Role } from "../../../data/links";
+import { Breadcrumb } from "../../../components/ui/Breadcrumb";
 import Link from "next/link";
 import fs from "fs/promises";
 import path from "path";
@@ -120,9 +121,13 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
     { title: "Semper Admin Teams", href: "https://dod.teams.microsoft.us/l/team/19:dod:570243b431724971aeff925ef3cca4d8%40thread.tacv2/conversations?groupId=e130aa9e-3737-4d0e-baea-a03737570727&tenantId=f4c44cda-18c6-46b0-80f2-e290072444fd" },
   ];
 
+  // Breadcrumb for role home pages
+  const breadcrumbItems = [{ label: roleTitle }];
+
   if (isCommanders) {
     return (
       <div className="space-y-8">
+        <Breadcrumb items={breadcrumbItems} />
         <h1 className="text-3xl font-bold tracking-tight text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Commanders</h1>
         <p className="text-zinc-700 dark:text-zinc-300">Command-level resources for oversight and decision-making.</p>
 
@@ -180,6 +185,7 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
   if (isLeaders) {
     return (
       <div className="space-y-8">
+        <Breadcrumb items={breadcrumbItems} />
         <h1 className="text-3xl font-bold tracking-tight text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Leaders Home</h1>
         <p className="text-zinc-700 dark:text-zinc-300">This page helps leaders understand and manage their administrative requirements. You will find guidance, checklists, and tools for pay, leave, travel, and readiness actions. The goal is to make admin simple, accurate, and accessible so you can stay focused on your mission.</p>
 
@@ -206,6 +212,7 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
 
   return (
     <div className="space-y-8">
+      <Breadcrumb items={breadcrumbItems} />
       <h1 className="text-3xl font-bold tracking-tight text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{roleTitle} Home</h1>
       <p className="text-zinc-700 dark:text-zinc-300">This page helps {safeRole === "marines" ? "every Marine" : roleTitle.toLowerCase()} understand and manage their administrative requirements. You will find guidance, checklists, and tools for pay, leave, travel, and readiness actions. The goal is to make admin simple, accurate, and accessible so you can stay focused on your mission.</p>
 

@@ -3,6 +3,9 @@
 import { useState } from "react";
 import { QuickLinks } from "./QuickLinks";
 import { ListItem } from "./ui/ListItem";
+import { TimeRequired } from "./ui/TimeRequired";
+import { LastUpdated } from "./ui/LastUpdated";
+import { Acronym } from "./ui/Acronym";
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
 
@@ -124,12 +127,18 @@ export function MarriageDocumentationContent({ data }: Props) {
           {/* Overview Tab */}
           {activeTab === "overview" && (
             <>
+              {/* Time and Authority Info */}
+              <div className="flex flex-wrap items-center justify-between gap-4">
+                <TimeRequired time="15-30 minutes" label="Form completion" />
+                <LastUpdated date="December 2025" authority="MCO 1751.3 CH-1" />
+              </div>
+
               <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
                 <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">NAVMC 10922 Overview</h2>
                 <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
                   The NAVMC 10922 (Dependency Application) is the official Marine Corps form used to add, change, or remove
-                  dependents in the Marine Corps Total Force System (MCTFS). For marriage, this form documents your spouse
-                  as a dependent for Basic Allowance for Housing (BAH), DEERS enrollment, and travel/transportation entitlements.
+                  dependents in the <Acronym title="Marine Corps Total Force System">MCTFS</Acronym>. For marriage, this form documents your spouse
+                  as a dependent for <Acronym title="Basic Allowance for Housing">BAH</Acronym>, <Acronym title="Defense Enrollment Eligibility Reporting System">DEERS</Acronym> enrollment, and travel/transportation entitlements.
                 </p>
                 <div className="mt-4 rounded-lg bg-blue-50 p-4 dark:bg-blue-900/20">
                   <p className="text-sm font-medium text-blue-800 dark:text-blue-200">

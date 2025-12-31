@@ -1,4 +1,6 @@
 import { type Role } from "../../../../../data/links";
+import { SECTIONS } from "../../../../../data/sections";
+import { Breadcrumb } from "../../../../../components/ui/Breadcrumb";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import BASContent from "../../../../../components/BASContent";
@@ -3223,8 +3225,20 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
   const contentToRender = contentMap[itemSlug] ?? <GenericContent title={itemTitle} />;
 
+  // Get section title for breadcrumb
+  const sectionData = SECTIONS[safeSection];
+  const sectionTitle = sectionData?.title ?? toTitle(safeSection);
+  const roleLabel = safeRole === "marines" ? "All Marines" : safeRole[0].toUpperCase() + safeRole.slice(1);
+
+  const breadcrumbItems = [
+    { label: roleLabel, href: `/roles/${safeRole}` },
+    { label: sectionTitle, href: `/roles/${safeRole}/${safeSection}` },
+    { label: displayTitle },
+  ];
+
   return (
     <div className="space-y-8">
+      <Breadcrumb items={breadcrumbItems} />
       <div className="flex items-start justify-between">
         <div>
           <h1 className="text-3xl font-bold tracking-tight text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{displayTitle}</h1>
