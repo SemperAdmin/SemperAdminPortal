@@ -705,29 +705,28 @@ export const SECTIONS: Record<string, Section> = {
 
   "leaders-personnel-accountability": {
     title: "Personnel Accountability",
-    intro: "Maintaining accountability of personnel, equipment, and administrative status is fundamental to unit readiness. This section covers leave management, liberty policies, check-in/out procedures, and tracking Marines on temporary duty.",
+    intro: "Personnel accountability is a fundamental leader responsibility. You must know the status and location of every Marine assigned to your unit at all times. This section covers daily accountability, gains and losses, leave and liberty management, UA procedures, TAD tracking, musters, and record keeping.",
     groups: [
       {
-        title: "Leave and Liberty",
+        title: "Accountability Fundamentals",
         items: [
-          { title: "Leave Approval and Management", slug: "leave-approval-management", desc: "Approving leave requests and managing leave balances" },
-          { title: "Liberty Policy Enforcement", slug: "liberty-policy-enforcement", desc: "Implementing and enforcing command liberty policies" },
+          { title: "Daily Accountability Fundamentals", slug: "daily-accountability-fundamentals", desc: "Knowing the status and location of every Marine at all times" },
+          { title: "Gains and Losses Processing", slug: "gains-losses-processing", desc: "Check-in/check-out procedures and Unit Diary reporting" },
         ],
       },
       {
-        title: "Personnel Tracking",
+        title: "Leave, Liberty, and UA",
         items: [
-          { title: "Check-In and Check-Out Oversight", slug: "checkin-checkout-oversight", desc: "Ensuring Marines complete all requirements" },
-          { title: "Muster and Accountability Reporting", slug: "muster-accountability", desc: "Daily accountability and emergency muster procedures" },
-          { title: "TAD and Temporary Duty Tracking", slug: "tad-tracking", desc: "Tracking Marines on temporary additional duty" },
-          { title: "Duty Status Changes", slug: "duty-status-changes", desc: "Managing light duty, SIQ, and limited duty status" },
+          { title: "Leave and Liberty Management", slug: "leave-liberty-management", desc: "Types of leave, liberty limits, and tracking procedures" },
+          { title: "Unauthorized Absence (UA) Procedures", slug: "ua-procedures", desc: "Immediate actions, reporting, and consequences of UA" },
         ],
       },
       {
-        title: "Transfers and Equipment",
+        title: "Tracking and Documentation",
         items: [
-          { title: "PCS Support Responsibilities", slug: "pcs-support-responsibilities", desc: "Leader role in supporting Marines during PCS" },
-          { title: "Gear and Equipment Accountability", slug: "gear-equipment-accountability", desc: "Ensuring Marines maintain accountability of issued gear" },
+          { title: "TAD and Detachment Tracking", slug: "tad-detachment-tracking", desc: "Tracking Marines on temporary additional duty" },
+          { title: "Muster and Formation Procedures", slug: "muster-formation-procedures", desc: "Conducting formations and reporting accountability" },
+          { title: "Record Keeping and Documentation", slug: "record-keeping-documentation", desc: "MCTFS, Unit Diary, SRB/OMPF, and internal records" },
         ],
       },
     ],

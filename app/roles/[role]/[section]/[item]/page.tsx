@@ -234,6 +234,14 @@ import { JEPESDebriefingContent } from "../../../../../components/leaders/JEPESD
 import { FitnessReportsLeadersContent } from "../../../../../components/leaders/FitnessReportsLeadersContent";
 import { BilletAccomplishmentsContent } from "../../../../../components/leaders/BilletAccomplishmentsContent";
 import { JEPESCorrectiveProceduresContent } from "../../../../../components/leaders/JEPESCorrectiveProceduresContent";
+// Leaders - Personnel Accountability
+import { DailyAccountabilityFundamentalsContent } from "../../../../../components/leaders/DailyAccountabilityFundamentalsContent";
+import { GainsLossesProcessingContent } from "../../../../../components/leaders/GainsLossesProcessingContent";
+import { LeaveLibrtyManagementContent } from "../../../../../components/leaders/LeaveLibrtyManagementContent";
+import { UAProceduresContent } from "../../../../../components/leaders/UAProceduresContent";
+import { TADDetachmentTrackingContent } from "../../../../../components/leaders/TADDetachmentTrackingContent";
+import { MusterFormationProceduresContent } from "../../../../../components/leaders/MusterFormationProceduresContent";
+import { RecordKeepingDocumentationContent } from "../../../../../components/leaders/RecordKeepingDocumentationContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -2669,6 +2677,58 @@ const JEPES_CORRECTIVE_PROCEDURES_DATA = {
   ],
 };
 
+// Leaders - Personnel Accountability DATA
+const DAILY_ACCOUNTABILITY_FUNDAMENTALS_DATA = {
+  references: [
+    { title: "MCO 1040.31 - Time Lost", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
+    { title: "MCO 1050.3 - Leave and Liberty", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899184/mco-10503k/" },
+  ],
+};
+
+const GAINS_LOSSES_PROCESSING_DATA = {
+  references: [
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/" },
+    { title: "MCO 1040.31 - Time Lost", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
+  ],
+};
+
+const LEAVE_LIBERTY_MANAGEMENT_DATA = {
+  references: [
+    { title: "MCO 1050.3 - Leave and Liberty", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899184/mco-10503k/" },
+    { title: "DoD FMR Vol 7A, Ch 34 - Leave", url: "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_34.pdf" },
+  ],
+};
+
+const UA_PROCEDURES_DATA = {
+  references: [
+    { title: "MCO 1040.31 - Time Lost", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/" },
+    { title: "UCMJ Article 86 - Absence Without Leave", url: "https://www.law.cornell.edu/uscode/text/10/886" },
+  ],
+};
+
+const TAD_DETACHMENT_TRACKING_DATA = {
+  references: [
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/" },
+    { title: "JTR - Joint Travel Regulations", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/" },
+  ],
+};
+
+const MUSTER_FORMATION_PROCEDURES_DATA = {
+  references: [
+    { title: "MCO 1040.31 - Time Lost", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
+    { title: "MCO P1050.3 - Leave and Liberty", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899184/mco-10503k/" },
+  ],
+};
+
+const RECORD_KEEPING_DOCUMENTATION_DATA = {
+  references: [
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/" },
+    { title: "MCTFS User Guide", url: "https://www.manpower.usmc.mil/webcenter/portal/MCTFS" },
+    { title: "MCO 5210.11 - Records Management", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899348/mco-521011f/" },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -3037,6 +3097,14 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "fitness-reports-leaders": <FitnessReportsLeadersContent data={FITNESS_REPORTS_LEADERS_DATA} />,
     "billet-accomplishments": <BilletAccomplishmentsContent data={BILLET_ACCOMPLISHMENTS_DATA} />,
     "jepes-corrective-procedures": <JEPESCorrectiveProceduresContent data={JEPES_CORRECTIVE_PROCEDURES_DATA} />,
+    // Leaders - Personnel Accountability
+    "daily-accountability-fundamentals": <DailyAccountabilityFundamentalsContent data={DAILY_ACCOUNTABILITY_FUNDAMENTALS_DATA} />,
+    "gains-losses-processing": <GainsLossesProcessingContent data={GAINS_LOSSES_PROCESSING_DATA} />,
+    "leave-liberty-management": <LeaveLibrtyManagementContent data={LEAVE_LIBERTY_MANAGEMENT_DATA} />,
+    "ua-procedures": <UAProceduresContent data={UA_PROCEDURES_DATA} />,
+    "tad-detachment-tracking": <TADDetachmentTrackingContent data={TAD_DETACHMENT_TRACKING_DATA} />,
+    "muster-formation-procedures": <MusterFormationProceduresContent data={MUSTER_FORMATION_PROCEDURES_DATA} />,
+    "record-keeping-documentation": <RecordKeepingDocumentationContent data={RECORD_KEEPING_DOCUMENTATION_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -3377,14 +3445,13 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   ];
   const leadersPersonnelSection = "leaders-personnel-accountability";
   const leadersPersonnelSlugs = [
-    "leave-approval-management",
-    "liberty-policy-enforcement",
-    "checkin-checkout-oversight",
-    "muster-accountability",
-    "tad-tracking",
-    "duty-status-changes",
-    "pcs-support-responsibilities",
-    "gear-equipment-accountability",
+    "daily-accountability-fundamentals",
+    "gains-losses-processing",
+    "leave-liberty-management",
+    "ua-procedures",
+    "tad-detachment-tracking",
+    "muster-formation-procedures",
+    "record-keeping-documentation",
   ];
   const leadersSystemsSection = "leaders-administrative-systems";
   const leadersSystemsSlugs = [
