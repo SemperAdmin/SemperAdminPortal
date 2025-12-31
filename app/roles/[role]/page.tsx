@@ -53,15 +53,47 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
     { label: "PAC (Personnel Admin Center)", slug: "pac-personnel-admin-center" },
     { label: "I&I Staff Administration", slug: "ii-i-staff-administration" },
   ];
-  const leaderCategories: { label: string; slug: string }[] = [
-    { label: "Accountability & Discipline", slug: "leaders-accountability-discipline" },
-    { label: "Administrative Systems", slug: "leaders-administrative-systems" },
-    { label: "Awards & Recognition", slug: "leaders-awards-recognition" },
-    { label: "Career Development", slug: "leaders-career-development" },
-    { label: "Counseling & Documentation", slug: "leaders-counseling-documentation" },
-    { label: "Deployment & Readiness", slug: "leaders-deployment-readiness" },
-    { label: "Performance Evaluation", slug: "leaders-performance-evaluation" },
-    { label: "Personnel Accountability", slug: "leaders-personnel-accountability" },
+  const leaderCategories: { label: string; slug: string; description: string }[] = [
+    {
+      label: "Accountability & Discipline",
+      slug: "leaders-accountability-discipline",
+      description: "NJP authority levels, discipline recommendations, UA/desertion reporting, administrative separation, legal hold procedures, Article 31(b) rights, and progressive discipline framework.",
+    },
+    {
+      label: "Administrative Systems",
+      slug: "leaders-administrative-systems",
+      description: "MCTFS navigation, Marine Online (MOL), JEPES system access, Total Force Retention System (TFRS), Unit Diary reporting, and training systems including MCTIMS and MarineNet.",
+    },
+    {
+      label: "Awards & Recognition",
+      slug: "leaders-awards-recognition",
+      description: "Writing award recommendations, citation format requirements, iAPS submission, routing and approval authority, timeline management for PCS/retirement awards, and common package errors.",
+    },
+    {
+      label: "Career Development",
+      slug: "leaders-career-development",
+      description: "Supporting reenlistment decisions, PME tracking, meritorious promotion preparation, special duty screening, MOS school recommendations, enlisted commissioning, and warrant officer programs.",
+    },
+    {
+      label: "Counseling & Documentation",
+      slug: "leaders-counseling-documentation",
+      description: "Six functional areas (5Fs plus Future), SMART goals, counseling fundamentals, initial and follow-on sessions, adverse counseling documentation, and Marine Leader Notebooks.",
+    },
+    {
+      label: "Deployment & Readiness",
+      slug: "leaders-deployment-readiness",
+      description: "UPFRP overview, deployment training events, individual readiness requirements, Family Care Plan verification, SGLI/emergency data, PFT/CFT requirements, and pre-deployment checklists.",
+    },
+    {
+      label: "Performance Evaluation",
+      slug: "leaders-performance-evaluation",
+      description: "JEPES overview and four pillars, reporting chain roles, reporting occasions, command input marking, NOT REC procedures, MRO counseling, fitness reports (E-5+), and corrective procedures.",
+    },
+    {
+      label: "Personnel Accountability",
+      slug: "leaders-personnel-accountability",
+      description: "Daily accountability fundamentals, gains/losses processing, leave and liberty management, UA procedures, TAD tracking, muster and formation procedures, and record keeping.",
+    },
   ];
   const visibleItems = isAdministrators ? adminOptions : isLeaders ? leaderCategories : categories;
   const posts = (await readPosts()).filter((p) => p.community === safeRole).sort((a, b) => b.votes * 2 + b.createdAt - (a.votes * 2 + a.createdAt)).slice(0, 5);
@@ -141,6 +173,33 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
             ))}
           </div>
         </section>
+      </div>
+    );
+  }
+
+  if (isLeaders) {
+    return (
+      <div className="space-y-8">
+        <h1 className="text-3xl font-bold tracking-tight text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Leaders Home</h1>
+        <p className="text-zinc-700 dark:text-zinc-300">This page helps leaders understand and manage their administrative requirements. You will find guidance, checklists, and tools for pay, leave, travel, and readiness actions. The goal is to make admin simple, accurate, and accessible so you can stay focused on your mission.</p>
+
+        <div className="grid gap-4 sm:grid-cols-2">
+          {leaderCategories.map((c) => (
+            <Link
+              key={c.slug}
+              prefetch={false}
+              href={`/roles/leaders/${c.slug}`}
+              className="group rounded-xl border border-black/5 bg-white p-5 shadow-sm transition hover:border-[var(--sa-navy)]/30 hover:shadow-md dark:border-white/15 dark:bg-black/40 dark:hover:border-[var(--sa-cream)]/30"
+            >
+              <h3 className="text-lg font-semibold text-[var(--sa-navy)] group-hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)]">
+                {c.label}
+              </h3>
+              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                {c.description}
+              </p>
+            </Link>
+          ))}
+        </div>
       </div>
     );
   }
