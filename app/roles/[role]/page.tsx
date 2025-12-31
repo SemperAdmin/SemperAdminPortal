@@ -1,7 +1,7 @@
 import { type Role } from "../../../data/links";
 import { Breadcrumb } from "../../../components/ui/Breadcrumb";
 import Link from "next/link";
-import { Heart, Baby, Plane } from "lucide-react";
+import { Heart, Baby, Plane, Gavel, Users, Shield, ClipboardCheck, CalendarClock } from "lucide-react";
 import fs from "fs/promises";
 import path from "path";
 
@@ -127,12 +127,132 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
   // Breadcrumb for role home pages
   const breadcrumbItems = [{ label: roleTitle }];
 
+  // Commander section groups with categories
+  const commanderGroups = [
+    {
+      id: "authority",
+      title: "Command Authority",
+      color: "rose",
+      icon: Gavel,
+      description: "Legal responsibilities, NJP, personnel management",
+      categories: [
+        { label: "Command Authority & Legal", slug: "commanders-authority-legal", desc: "NJP, court-martial, separation authority" },
+        { label: "Personnel & Career Management", slug: "commanders-personnel-career", desc: "Fitness reports, promotions, admin actions" },
+      ],
+    },
+    {
+      id: "climate",
+      title: "Command Climate & Welfare",
+      color: "sky",
+      icon: Users,
+      description: "Climate programs, SAPR, suicide prevention, family readiness",
+      categories: [
+        { label: "Command Climate & Culture", slug: "commanders-climate-culture", desc: "DEOCS, policy statements, PAC program" },
+        { label: "Sexual Assault Prevention", slug: "commanders-sapr", desc: "SAPR VA, reporting, victim support" },
+        { label: "Suicide Prevention", slug: "commanders-suicide-prevention", desc: "SPPO, CIRRAS, force preservation" },
+        { label: "Family Readiness & Casualty", slug: "commanders-family-readiness", desc: "UPFRP, FAP, casualty affairs" },
+      ],
+    },
+    {
+      id: "readiness",
+      title: "Readiness & Resources",
+      color: "amber",
+      icon: ClipboardCheck,
+      description: "Readiness reporting, fiscal accountability, equipment, training",
+      categories: [
+        { label: "Readiness Reporting", slug: "commanders-readiness-reporting", desc: "DRRS-MC, METL, resource levels" },
+        { label: "Fiscal & Property", slug: "commanders-fiscal-property", desc: "Budget, fund control, accountability" },
+        { label: "Materiel & Equipment", slug: "commanders-materiel-equipment", desc: "T/E, maintenance, small arms" },
+        { label: "Training & Education", slug: "commanders-training-education", desc: "ATP, T&R, PME, schools" },
+      ],
+    },
+    {
+      id: "compliance",
+      title: "Compliance & Security",
+      color: "emerald",
+      icon: Shield,
+      description: "Safety, inspections, environmental, security, public affairs",
+      categories: [
+        { label: "Safety Program", slug: "commanders-safety", desc: "Ground/aviation safety, ORM, mishaps" },
+        { label: "Inspection Program", slug: "commanders-inspections", desc: "CIP, IGMC, FSMAO, POA&M" },
+        { label: "Environmental Stewardship", slug: "commanders-environmental", desc: "EMS, spills, hazmat, NEPA" },
+        { label: "Security Programs", slug: "commanders-security", desc: "Info/personnel/physical/cyber security" },
+        { label: "Public Affairs", slug: "commanders-public-affairs", desc: "Media, crisis comms, social media" },
+      ],
+    },
+  ];
+
   if (isCommanders) {
     return (
       <div className="space-y-8">
         <Breadcrumb items={breadcrumbItems} />
         <h1 className="text-3xl font-bold tracking-tight text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Commanders</h1>
-        <p className="text-zinc-700 dark:text-zinc-300">Command-level resources for oversight and decision-making.</p>
+        <p className="text-zinc-700 dark:text-zinc-300">Comprehensive command-level guidance organized by functional area. Each section covers authorities, responsibilities, timelines, and required actions for commanding officers.</p>
+
+        {/* Change of Command Quick Reference - Featured */}
+        <Link
+          href="/roles/commanders/commanders-change-of-command"
+          prefetch={false}
+          className="group block rounded-xl border-2 border-[var(--sa-gold)] bg-gradient-to-r from-amber-50 to-orange-50 p-6 shadow-sm transition hover:shadow-md dark:from-amber-950/30 dark:to-orange-950/30"
+        >
+          <div className="flex items-center gap-4">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400">
+              <CalendarClock className="h-6 w-6" />
+            </div>
+            <div>
+              <h2 className="text-xl font-semibold text-[var(--sa-navy)] group-hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)]">Change of Command Requirements</h2>
+              <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">Complete timeline checklist: 30/60/90 day requirements, annual actions, and turnover procedures</p>
+            </div>
+          </div>
+        </Link>
+
+        {/* Four Functional Groups */}
+        <div className="space-y-6">
+          {commanderGroups.map((group) => {
+            const Icon = group.icon;
+            const colorClasses = {
+              rose: "border-l-rose-500 bg-rose-50/50 dark:bg-rose-950/20",
+              sky: "border-l-sky-500 bg-sky-50/50 dark:bg-sky-950/20",
+              amber: "border-l-amber-500 bg-amber-50/50 dark:bg-amber-950/20",
+              emerald: "border-l-emerald-500 bg-emerald-50/50 dark:bg-emerald-950/20",
+            };
+            const iconClasses = {
+              rose: "bg-rose-100 text-rose-600 dark:bg-rose-900/30 dark:text-rose-400",
+              sky: "bg-sky-100 text-sky-600 dark:bg-sky-900/30 dark:text-sky-400",
+              amber: "bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400",
+              emerald: "bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400",
+            };
+            return (
+              <section
+                key={group.id}
+                className={`rounded-xl border border-black/5 border-l-4 p-6 shadow-sm dark:border-white/15 ${colorClasses[group.color as keyof typeof colorClasses]}`}
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${iconClasses[group.color as keyof typeof iconClasses]}`}>
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h2 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{group.title}</h2>
+                    <p className="text-sm text-zinc-600 dark:text-zinc-400">{group.description}</p>
+                  </div>
+                </div>
+                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                  {group.categories.map((cat) => (
+                    <Link
+                      key={cat.slug}
+                      href={`/roles/commanders/${cat.slug}`}
+                      prefetch={false}
+                      className="group rounded-lg border border-black/10 bg-white p-4 shadow-sm transition hover:border-[var(--sa-navy)]/30 hover:shadow-md dark:border-white/15 dark:bg-black/40"
+                    >
+                      <div className="font-medium text-[var(--sa-navy)] group-hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)]">{cat.label}</div>
+                      <div className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">{cat.desc}</div>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            );
+          })}
+        </div>
 
         {/* Primary Tools */}
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
@@ -170,17 +290,21 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
           </div>
         </section>
 
-        {/* Administrative Topics */}
-        <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Administrative Topics</h2>
-          <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-            {categories.map((c) => (
-              <Link key={c.slug} prefetch={false} href={`/roles/commanders/${c.slug}`} className="rounded-md px-3 py-2 text-sm text-zinc-700 transition hover:bg-[var(--sa-cream)]/60 dark:text-zinc-300 dark:hover:bg-white/10">
-                {c.label}
-              </Link>
-            ))}
+        {/* Marine Administrative Topics - Collapsed */}
+        <details className="rounded-xl border border-black/5 bg-white shadow-sm dark:border-white/15 dark:bg-black/40">
+          <summary className="cursor-pointer p-6 text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)] hover:bg-[var(--sa-cream)]/30 dark:hover:bg-white/5">
+            All Marines Administrative Topics
+          </summary>
+          <div className="border-t border-black/5 p-6 dark:border-white/15">
+            <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+              {categories.map((c) => (
+                <Link key={c.slug} prefetch={false} href={`/roles/commanders/${c.slug}`} className="rounded-md px-3 py-2 text-sm text-zinc-700 transition hover:bg-[var(--sa-cream)]/60 dark:text-zinc-300 dark:hover:bg-white/10">
+                  {c.label}
+                </Link>
+              ))}
+            </div>
           </div>
-        </section>
+        </details>
       </div>
     );
   }

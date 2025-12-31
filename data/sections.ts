@@ -797,6 +797,551 @@ export const SECTIONS: Record<string, Section> = {
       },
     ],
   },
+  // ============================================
+  // COMMANDER-SPECIFIC SECTIONS
+  // ============================================
+
+  // GROUP A: COMMAND AUTHORITY
+  "commanders-authority-legal": {
+    title: "Command Authority & Legal Responsibilities",
+    intro: "Command authority carries legal responsibilities under the UCMJ, Navy Regulations, and Marine Corps Orders. Understanding your authority levels, limitations, and procedural requirements is essential for fair and lawful command. This section covers NJP, court-martial convening authority, administrative separation, religious accommodation, and request mast.",
+    groups: [
+      {
+        title: "Non-Judicial Punishment",
+        items: [
+          { title: "NJP Authority (Article 15)", slug: "njp-authority", desc: "Who has NJP authority and delegation requirements" },
+          { title: "Punishment Limits by Grade", slug: "njp-punishment-limits", desc: "Maximum punishments authorized by commander grade" },
+          { title: "NJP Process Requirements", slug: "njp-process", desc: "Procedural steps from report to imposition" },
+          { title: "NJP Appeal Procedures", slug: "njp-appeals", desc: "Marine's right to appeal and commander's review authority" },
+        ],
+      },
+      {
+        title: "Court-Martial Authority",
+        items: [
+          { title: "Summary Court-Martial", slug: "summary-court-martial", desc: "Convening authority and procedural requirements" },
+          { title: "Special Court-Martial", slug: "special-court-martial", desc: "SPCM convening and referral procedures" },
+          { title: "General Court-Martial", slug: "general-court-martial", desc: "GCM process and commander's role" },
+          { title: "Disposition Options", slug: "disposition-options", desc: "Alternatives to court-martial and decision factors" },
+        ],
+      },
+      {
+        title: "Administrative Actions",
+        items: [
+          { title: "Administrative Separation Authority", slug: "adsep-authority", desc: "Separation authority levels and board requirements" },
+          { title: "Characterization of Service", slug: "service-characterization", desc: "Honorable, General, OTH determination factors" },
+          { title: "Religious Accommodation", slug: "religious-accommodation", desc: "Adjudication levels and compelling interest standard" },
+          { title: "Request Mast Procedures", slug: "request-mast", desc: "Marine's right to request mast and commander response" },
+        ],
+      },
+    ],
+  },
+
+  "commanders-personnel-career": {
+    title: "Personnel Administration & Career Management",
+    intro: "Commanders are responsible for the career development and administrative management of all assigned Marines. This includes fitness reports, proficiency marks, promotion recommendations, reenlistment decisions, and administrative documentation that affects Marines' careers.",
+    groups: [
+      {
+        title: "Performance Evaluation",
+        items: [
+          { title: "Fitness Report Responsibilities", slug: "fitrep-responsibilities", desc: "Reporting Senior and Reviewing Officer duties" },
+          { title: "Adverse Fitness Reports", slug: "adverse-fitreps", desc: "Requirements for adverse comments and due process" },
+          { title: "Proficiency & Conduct Marks", slug: "procon-oversight", desc: "Commander oversight and marking philosophy" },
+          { title: "JEPES Commander Role", slug: "jepes-commander", desc: "Commander involvement in junior enlisted evaluations" },
+        ],
+      },
+      {
+        title: "Promotion & Retention",
+        items: [
+          { title: "NOT REC Authority", slug: "not-rec-authority", desc: "Authority to recommend against promotion" },
+          { title: "Meritorious Promotion", slug: "meritorious-promotion-authority", desc: "Commander's meritorious promotion authority" },
+          { title: "Reenlistment Authority", slug: "reenlistment-authority", desc: "Approval, disapproval, and waiver authority" },
+          { title: "Transition Readiness Oversight", slug: "transition-oversight", desc: "Commander responsibilities for separating Marines" },
+        ],
+      },
+      {
+        title: "Administrative Documentation",
+        items: [
+          { title: "Page 11 Entries", slug: "page-11-commander", desc: "When and how to document administrative remarks" },
+          { title: "6105 Counseling Entries", slug: "6105-entries", desc: "Counseling warning requirements and procedures" },
+          { title: "Letters of Caution/Admonition/Reprimand", slug: "adverse-letters", desc: "Levels of adverse administrative letters" },
+        ],
+      },
+    ],
+  },
+
+  // GROUP B: COMMAND CLIMATE AND WELFARE
+  "commanders-climate-culture": {
+    title: "Command Climate & Culture Programs",
+    intro: "Command climate directly impacts mission readiness, retention, and Marine welfare. Commanders are responsible for establishing and maintaining a positive command climate through assessment, policy, training, and personal leadership. Required programs include DEOCS, policy statements, and prohibited activities prevention.",
+    groups: [
+      {
+        title: "Climate Assessment",
+        items: [
+          { title: "DEOCS Requirements", slug: "deocs-requirements", desc: "Timeline, administration, and using survey results" },
+          { title: "Command Climate Surveys", slug: "climate-surveys", desc: "Aviation safety surveys (CSA, MCAS, ASPA) and safety climate surveys" },
+          { title: "Command Team Training", slug: "command-team-training", desc: "Required training for command teams within 30 days" },
+        ],
+      },
+      {
+        title: "Required Policy Statements",
+        items: [
+          { title: "Safety Policy (30 Days)", slug: "safety-policy-statement", desc: "Commander's safety policy statement requirement" },
+          { title: "SAPR Policy (60/90 Days)", slug: "sapr-policy-statement", desc: "Sexual assault prevention and response policy" },
+          { title: "UPFRP SOP (60 Days)", slug: "upfrp-sop-requirement", desc: "Unit Personal and Family Readiness Program SOP" },
+          { title: "PAC Policy (90 Days)", slug: "pac-policy-statement", desc: "Prohibited Activities and Conduct policy statement" },
+        ],
+      },
+      {
+        title: "Prohibited Activities Program",
+        items: [
+          { title: "PAC Program Overview", slug: "pac-program-overview", desc: "Discrimination, harassment, hazing, and retaliation prevention" },
+          { title: "Hazing Prevention", slug: "hazing-prevention", desc: "Definitions, indicators, and command response" },
+          { title: "Harassment Response", slug: "harassment-response", desc: "Reporting, investigation, and corrective action" },
+          { title: "Retaliation Prevention", slug: "retaliation-prevention", desc: "Protecting reporters and witnesses from retaliation" },
+        ],
+      },
+    ],
+  },
+
+  "commanders-sapr": {
+    title: "Sexual Assault Prevention & Response",
+    intro: "Commanders are responsible for preventing sexual assault and ensuring appropriate response when incidents occur. This includes appointing qualified SAPR VAs, understanding reporting options, participating in Case Management Groups, and preventing retaliation against victims and witnesses.",
+    groups: [
+      {
+        title: "Program Management",
+        items: [
+          { title: "SAPR VA Appointment", slug: "sapr-va-appointment", desc: "Selection criteria, minimum requirements, and oversight" },
+          { title: "SARC Coordination", slug: "sarc-coordination", desc: "Working with the Sexual Assault Response Coordinator" },
+          { title: "SAPR Policy Posting", slug: "sapr-policy-posting", desc: "Required posting locations and content" },
+        ],
+      },
+      {
+        title: "Reporting & Response",
+        items: [
+          { title: "Reporting Types", slug: "sapr-reporting-types", desc: "Restricted vs unrestricted reporting and conversion" },
+          { title: "8-Day Incident Report", slug: "8-day-report", desc: "Commander's reporting requirements and timeline" },
+          { title: "Case Management Group", slug: "cmg-participation", desc: "Commander participation and CMG functions" },
+          { title: "High Risk Response Team", slug: "hrrt", desc: "When activated and commander's role" },
+        ],
+      },
+      {
+        title: "Victim Support",
+        items: [
+          { title: "Expedited Transfer Authority", slug: "expedited-transfer", desc: "Authority to approve victim transfer requests" },
+          { title: "Military Protective Orders", slug: "mpo-sapr", desc: "Issuing MPOs in sexual assault cases" },
+          { title: "Retaliation Prevention", slug: "sapr-retaliation", desc: "Monitoring and preventing victim retaliation" },
+        ],
+      },
+    ],
+  },
+
+  "commanders-suicide-prevention": {
+    title: "Suicide Prevention & Force Preservation",
+    intro: "Force preservation is a commander's program. Preventing suicide requires understanding risk factors, maintaining awareness through CIRRAS, convening Force Preservation Councils, and ensuring Marines have access to embedded mental health resources. Early intervention saves lives.",
+    groups: [
+      {
+        title: "Program Structure",
+        items: [
+          { title: "SPPO Appointment", slug: "sppo-appointment", desc: "Suicide Prevention Program Officer selection and duties" },
+          { title: "Force Preservation Council", slug: "force-preservation-council", desc: "Meeting frequency, attendees, and required actions" },
+          { title: "Postvention Procedures", slug: "postvention", desc: "Command response after a suicide or attempt" },
+        ],
+      },
+      {
+        title: "Risk Awareness",
+        items: [
+          { title: "CIRRAS Oversight", slug: "cirras-oversight", desc: "What gets entered, update requirements, PCS warm handoffs" },
+          { title: "Critical Stressors", slug: "critical-stressors", desc: "First 90 days post-NJP, relationship distress, financial problems" },
+          { title: "Lethal Means Safety", slug: "lethal-means-safety", desc: "Voluntary firearms storage and safety planning" },
+        ],
+      },
+      {
+        title: "Embedded Resources",
+        items: [
+          { title: "MFLC Program", slug: "mflc-program", desc: "Military and Family Life Counselor availability" },
+          { title: "Chaplain Support", slug: "chaplain-support", desc: "Privileged communication and spiritual support" },
+          { title: "Combat Operational Stress Control", slug: "cosc-oscar", desc: "CCP and OSCAR team integration" },
+        ],
+      },
+    ],
+  },
+
+  "commanders-family-readiness": {
+    title: "Family Readiness & Casualty Affairs",
+    intro: "Family readiness is mission readiness. Commanders oversee the Unit Personal and Family Readiness Program, respond to family advocacy matters, and ensure proper casualty notification and survivor support. Strong family programs reduce distractions and improve unit cohesion.",
+    groups: [
+      {
+        title: "Family Readiness Program",
+        items: [
+          { title: "UPFRP SOP Requirements", slug: "upfrp-sop", desc: "Developing and implementing the family readiness SOP" },
+          { title: "Command Team Roles", slug: "upfrp-command-roles", desc: "Commander, XO, SgtMaj, and FRO responsibilities" },
+          { title: "Deployment Readiness Coordinator", slug: "drc-oversight", desc: "DRC appointment and deployment support" },
+        ],
+      },
+      {
+        title: "Family Advocacy",
+        items: [
+          { title: "FAP Overview", slug: "fap-overview", desc: "Family Advocacy Program and commander's role" },
+          { title: "Child Abuse Response", slug: "child-abuse-response", desc: "Reporting requirements and protective actions" },
+          { title: "Domestic Abuse Response", slug: "domestic-abuse-response", desc: "MPO issuance and victim safety planning" },
+        ],
+      },
+      {
+        title: "Casualty Affairs",
+        items: [
+          { title: "CACO Oversight", slug: "caco-oversight", desc: "Casualty Assistance Calls Officer supervision" },
+          { title: "Personnel Casualty Reports", slug: "pcr-reporting", desc: "PCR submission requirements and timelines" },
+          { title: "Next of Kin Notification", slug: "nok-notification", desc: "Notification procedures and restrictions" },
+        ],
+      },
+      {
+        title: "Wounded Warrior Support",
+        items: [
+          { title: "LIMDU Coordinator", slug: "limdu-coordinator", desc: "Designating and overseeing the LIMDU coordinator" },
+          { title: "Invitational Travel Orders", slug: "ito-authority", desc: "ITO approval for family of seriously ill/injured" },
+          { title: "Recovery Care Coordinator", slug: "rcc-referral", desc: "Connecting Marines to Wounded Warrior resources" },
+          { title: "Benefits Coordination", slug: "ww-benefits", desc: "TSGLI, PAC, and SCAADL coordination" },
+        ],
+      },
+    ],
+  },
+
+  // GROUP C: READINESS AND RESOURCES
+  "commanders-readiness-reporting": {
+    title: "Readiness Reporting",
+    intro: "Accurate readiness reporting enables informed decision-making at all echelons. Commanders assess and report unit readiness through DRRS-MC using standardized resource and capability levels. Understanding METL development, C-Level assessments, and commander's override authority is essential.",
+    groups: [
+      {
+        title: "DRRS-MC Reporting",
+        items: [
+          { title: "DRRS-MC Overview", slug: "drrs-mc-overview", desc: "Defense Readiness Reporting System - Marine Corps" },
+          { title: "C-Level & A-Level Assessments", slug: "c-level-assessment", desc: "Overall and individual MET capability ratings" },
+          { title: "Commander's Override", slug: "commanders-override", desc: "When authorized and documentation requirements" },
+          { title: "Readiness Board Requirements", slug: "readiness-board", desc: "Conducting readiness reviews and briefings" },
+        ],
+      },
+      {
+        title: "Resource Levels",
+        items: [
+          { title: "P-Level (Personnel)", slug: "p-level-reporting", desc: "Personnel readiness measurement and reporting" },
+          { title: "S-Level (Supply/Equipment)", slug: "s-level-reporting", desc: "Equipment on-hand status reporting" },
+          { title: "R-Level (Equipment Readiness)", slug: "r-level-reporting", desc: "Equipment operational status reporting" },
+          { title: "T-Level (Training)", slug: "t-level-reporting", desc: "Training readiness assessment and reporting" },
+        ],
+      },
+      {
+        title: "METL Management",
+        items: [
+          { title: "METL Development", slug: "metl-development", desc: "Developing Mission Essential Task Lists" },
+          { title: "METL Assessment", slug: "metl-assessment", desc: "Assessing task proficiency levels" },
+          { title: "Annual METL Review", slug: "metl-annual-review", desc: "30-day and annual review requirements" },
+        ],
+      },
+    ],
+  },
+
+  "commanders-fiscal-property": {
+    title: "Fiscal & Property Accountability",
+    intro: "Commanders are accountable officers responsible for proper use of government funds and property. This includes budget development, fund control, preventing unauthorized commitments, and maintaining property accountability. Fiscal responsibility is a command responsibility.",
+    groups: [
+      {
+        title: "Fiscal Accountability",
+        items: [
+          { title: "Accountable Officer Responsibilities", slug: "accountable-officer", desc: "Commander's fiscal accountability and liability" },
+          { title: "Budget Development & Execution", slug: "budget-execution", desc: "Annual training plan integration and quarterly budgets" },
+          { title: "Status of Funds Briefings", slug: "status-of-funds", desc: "Regular financial status reviews" },
+          { title: "Fund Control Training", slug: "fund-control-training", desc: "Appropriations law and DON budget execution" },
+        ],
+      },
+      {
+        title: "Financial Controls",
+        items: [
+          { title: "Unauthorized Commitment Prevention", slug: "uac-prevention", desc: "Preventing and addressing unauthorized commitments" },
+          { title: "Unliquidated Orders Validation", slug: "ulo-validation", desc: "ULO review and certification requirements" },
+          { title: "GTCC Program Oversight", slug: "gtcc-oversight", desc: "Government Travel Charge Card program management" },
+        ],
+      },
+      {
+        title: "Property Accountability",
+        items: [
+          { title: "Certificate of Relief", slug: "certificate-of-relief", desc: "Property accountability transfer at change of command" },
+          { title: "Supply Officer Appointment", slug: "supply-officer-appointment", desc: "Appointing and supervising the supply officer" },
+          { title: "Annual Inventory Requirements", slug: "annual-inventory", desc: "Wall-to-wall inventory and support equipment" },
+        ],
+      },
+    ],
+  },
+
+  "commanders-materiel-equipment": {
+    title: "Materiel & Equipment Readiness",
+    intro: "Equipment readiness directly impacts mission capability. Commanders ensure proper equipment accountability, maintenance, and reporting through appointed officers, regular inventories, and oversight of maintenance management systems. This section covers T/E management, small arms accountability, and maintenance programs.",
+    groups: [
+      {
+        title: "Equipment Management",
+        items: [
+          { title: "Responsible Officer Appointment", slug: "ro-appointment", desc: "Appointing ROs and defining responsibilities" },
+          { title: "T/E Review Requirements", slug: "te-review", desc: "Annual review, excess identification, deficiency reporting" },
+          { title: "GCSS-MC Oversight", slug: "gcss-mc-oversight", desc: "Global Combat Support System oversight" },
+        ],
+      },
+      {
+        title: "Accountability",
+        items: [
+          { title: "Small Arms Accountability", slug: "small-arms-accountability", desc: "CRANE verification and 45-day certification" },
+          { title: "TMDE Accountability", slug: "tmde-accountability", desc: "Test, Measurement, and Diagnostic Equipment" },
+          { title: "Equipment Status Report", slug: "esr-reporting", desc: "ESR completion and accuracy" },
+        ],
+      },
+      {
+        title: "Maintenance Programs",
+        items: [
+          { title: "MMO Appointment", slug: "mmo-appointment", desc: "Maintenance Management Officer duties" },
+          { title: "Corrosion Prevention (CPAC)", slug: "cpac-program", desc: "Corrosion Prevention and Control program" },
+          { title: "Enterprise Lifecycle Maintenance", slug: "elmp", desc: "ELMP integration and planning" },
+        ],
+      },
+    ],
+  },
+
+  "commanders-training-education": {
+    title: "Training & Education Management",
+    intro: "Training is the commander's business. Effective training management ensures unit readiness through METL-focused training, T&R compliance, range coordination, and PME tracking. Commanders establish training philosophy and ensure resources are allocated to priority training requirements.",
+    groups: [
+      {
+        title: "Training Philosophy",
+        items: [
+          { title: "Commander's Training Philosophy", slug: "training-philosophy", desc: "Establishing and communicating training priorities" },
+          { title: "Annual Training Plan", slug: "annual-training-plan", desc: "Developing and resourcing the ATP" },
+          { title: "Pre-Deployment Training", slug: "pdt-certification", desc: "Certifying unit readiness for deployment" },
+        ],
+      },
+      {
+        title: "Standards & Compliance",
+        items: [
+          { title: "T&R Compliance", slug: "tr-compliance", desc: "Training and Readiness Manual standards" },
+          { title: "METL Assessment (30-Day)", slug: "metl-30-day", desc: "30-day review requirement and T-Level determination" },
+          { title: "Range & Training Area Coordination", slug: "range-coordination", desc: "Scheduling and resource coordination" },
+        ],
+      },
+      {
+        title: "Education & Schools",
+        items: [
+          { title: "PME Tracking", slug: "pme-tracking-commander", desc: "Ensuring Marines complete required PME" },
+          { title: "Formal School Quota Management", slug: "school-quota-management", desc: "Managing and prioritizing school quotas" },
+        ],
+      },
+    ],
+  },
+
+  // GROUP D: COMPLIANCE AND SECURITY
+  "commanders-safety": {
+    title: "Safety Program Management",
+    intro: "Safety is a command responsibility. Commanders establish the safety culture through policy, assessment, and integration of Operational Risk Management into all activities. This includes ground safety, aviation safety (where applicable), mishap reporting, and motor vehicle safety programs.",
+    groups: [
+      {
+        title: "Safety Program",
+        items: [
+          { title: "Safety Policy Statement", slug: "safety-policy", desc: "30-day requirement for commander's safety policy" },
+          { title: "Safety Climate Survey", slug: "safety-climate-survey", desc: "O-5/O-6 survey requirement within 90 days" },
+          { title: "Ground Safety Program", slug: "ground-safety", desc: "Ground safety program elements and oversight" },
+          { title: "ORM Integration", slug: "orm-integration", desc: "Integrating ORM into planning and operations" },
+        ],
+      },
+      {
+        title: "Aviation Safety",
+        items: [
+          { title: "DOSS Relationship", slug: "doss-relationship", desc: "Director of Safety and Standardization coordination" },
+          { title: "Flight Schedule Approval", slug: "flight-schedule-approval", desc: "Commander's role in flight operations" },
+          { title: "Pre-Mishap Drills", slug: "pre-mishap-drills", desc: "Required drill frequency and elements" },
+        ],
+      },
+      {
+        title: "Mishap Management",
+        items: [
+          { title: "Mishap Reporting", slug: "mishap-reporting", desc: "Class A, B, C definitions and reporting requirements" },
+          { title: "Investigation Requirements", slug: "mishap-investigation", desc: "When investigations are required and commander's role" },
+          { title: "Motor Vehicle Safety", slug: "motor-vehicle-safety", desc: "POV and motorcycle safety programs" },
+        ],
+      },
+    ],
+  },
+
+  "commanders-inspections": {
+    title: "Inspection Program & Compliance",
+    intro: "Inspections ensure compliance with regulations and identify areas for improvement. Commanders maintain internal inspection programs, prepare for external inspections, and track corrective actions. Understanding IGMC functional areas, FSMAO analysis, and POA&M management is essential for compliance.",
+    groups: [
+      {
+        title: "Command Inspection Program",
+        items: [
+          { title: "CIP Overview", slug: "cip-overview", desc: "Command Inspection Program structure and requirements" },
+          { title: "IGMC Functional Areas", slug: "igmc-functional-areas", desc: "CoRE and CoRE+ functional area checklists" },
+          { title: "Internal Inspections", slug: "internal-inspections", desc: "MMIIP and supply inspection programs" },
+        ],
+      },
+      {
+        title: "External Inspections",
+        items: [
+          { title: "FSMAO Analysis", slug: "fsmao-analysis", desc: "Fiscal and supply management analysis" },
+          { title: "CGIP Preparation", slug: "cgip-preparation", desc: "Commanding General's Inspection Program" },
+          { title: "SMAT Inspections", slug: "smat-inspections", desc: "Supply Management Assistance Team visits" },
+        ],
+      },
+      {
+        title: "Corrective Actions",
+        items: [
+          { title: "POA&M Management", slug: "poam-management", desc: "Plan of Action and Milestones tracking" },
+          { title: "Pre-Inspection Preparation", slug: "pre-inspection-prep", desc: "Preparing the command for inspections" },
+          { title: "Corrective Action Tracking", slug: "corrective-action-tracking", desc: "Tracking and closing inspection findings" },
+        ],
+      },
+    ],
+  },
+
+  "commanders-environmental": {
+    title: "Environmental Stewardship",
+    intro: "Environmental compliance is a command responsibility with significant legal and financial implications. Commanders appoint Environmental Compliance Coordinators, ensure proper spill reporting, manage hazardous materials, and comply with NEPA requirements. Non-compliance can result in fines and criminal liability.",
+    groups: [
+      {
+        title: "Program Management",
+        items: [
+          { title: "EMS Overview", slug: "ems-overview", desc: "Environmental Management System requirements" },
+          { title: "ECC Appointment", slug: "ecc-appointment", desc: "Environmental Compliance Coordinator designation" },
+          { title: "Environmental Funding", slug: "environmental-funding", desc: "FC and CMP funding sources" },
+        ],
+      },
+      {
+        title: "Compliance Requirements",
+        items: [
+          { title: "Spill Reporting", slug: "spill-reporting", desc: "30-minute voice report and AFFF requirements" },
+          { title: "Hazmat Management", slug: "hazmat-management", desc: "Hazardous material and waste management" },
+          { title: "NEPA Compliance", slug: "nepa-compliance", desc: "CATEX, EA, and EIS requirements" },
+        ],
+      },
+      {
+        title: "Assessments",
+        items: [
+          { title: "Internal ECE", slug: "internal-ece", desc: "Internal Environmental Compliance Evaluation" },
+          { title: "Benchmark ECE", slug: "benchmark-ece", desc: "External benchmark evaluations" },
+        ],
+      },
+    ],
+  },
+
+  "commanders-security": {
+    title: "Security Programs",
+    intro: "Commanders are responsible for protecting classified information, personnel, and facilities. Security programs include information security, personnel security, physical security, insider threat, OPSEC, and cybersecurity. Effective security requires continuous vigilance and command emphasis.",
+    groups: [
+      {
+        title: "Information Security",
+        items: [
+          { title: "Information Security Program", slug: "infosec-program", desc: "Classified information handling and protection" },
+          { title: "Classified Material Accountability", slug: "classified-accountability", desc: "Inventory and control procedures" },
+          { title: "OPSEC Program", slug: "opsec-program", desc: "Operations Security planning and implementation" },
+        ],
+      },
+      {
+        title: "Personnel & Physical Security",
+        items: [
+          { title: "Personnel Security", slug: "personnel-security", desc: "Clearance sponsorship and access determination" },
+          { title: "Physical Security", slug: "physical-security", desc: "Facility and asset protection" },
+          { title: "Insider Threat Program", slug: "insider-threat", desc: "Identifying and mitigating insider threats" },
+        ],
+      },
+      {
+        title: "Cyber & Force Protection",
+        items: [
+          { title: "Cybersecurity Program", slug: "cybersecurity-program", desc: "Network security and cyber hygiene" },
+          { title: "AT/FP Program", slug: "atfp-program", desc: "Antiterrorism and Force Protection" },
+        ],
+      },
+    ],
+  },
+
+  "commanders-public-affairs": {
+    title: "Public Affairs & Media Relations",
+    intro: "Public affairs is a command responsibility. Commanders engage with media, manage crisis communications, and ensure OPSEC in public statements. Understanding casualty information release procedures and social media policy protects Marines, families, and the mission.",
+    groups: [
+      {
+        title: "Media Engagement",
+        items: [
+          { title: "Media Engagement", slug: "media-engagement", desc: "Interacting with news media and journalists" },
+          { title: "Crisis Communication", slug: "crisis-communication", desc: "Managing communications during crises" },
+          { title: "OPSEC in Public Statements", slug: "opsec-public-statements", desc: "Protecting sensitive information" },
+        ],
+      },
+      {
+        title: "Information Release",
+        items: [
+          { title: "Casualty Information Release", slug: "casualty-info-release", desc: "PNOK notification plus 24-hour rule" },
+          { title: "Releasable Information", slug: "releasable-info", desc: "What can and cannot be released publicly" },
+        ],
+      },
+      {
+        title: "Digital Presence",
+        items: [
+          { title: "Social Media Policy", slug: "social-media-policy", desc: "Command social media guidelines and oversight" },
+          { title: "Command Climate Messaging", slug: "climate-messaging", desc: "Internal and external command messaging" },
+        ],
+      },
+    ],
+  },
+
+  "commanders-change-of-command": {
+    title: "Change of Command Requirements",
+    intro: "Change of command involves numerous timeline-driven requirements. This section consolidates all actions required before assuming command, within specific timeframes after taking command, annual requirements, and actions before relinquishing command. Use this as your comprehensive checklist.",
+    groups: [
+      {
+        title: "Prior to Assuming Command",
+        items: [
+          { title: "Cornerstone Attendance", slug: "cornerstone-attendance", desc: "Complete Cornerstone Course before assuming command" },
+          { title: "Certificate of Relief", slug: "cor-incoming", desc: "Property accountability transfer procedures" },
+          { title: "Status of Command Letter", slug: "status-command-letter", desc: "Receiving the outgoing commander's assessment" },
+          { title: "Aviation Refresher", slug: "aviation-refresher", desc: "Required refresher training for aviation commands" },
+        ],
+      },
+      {
+        title: "Within 30 Days",
+        items: [
+          { title: "Safety Policy Statement", slug: "30-day-safety", desc: "Publish commander's safety policy" },
+          { title: "Command Team Training", slug: "30-day-ctt", desc: "Complete required command team training" },
+          { title: "SARC Brief", slug: "30-day-sarc", desc: "Receive SARC brief on program status" },
+          { title: "METL Review", slug: "30-day-metl", desc: "Review and validate Mission Essential Task List" },
+          { title: "Fund Control Training", slug: "30-day-fund-control", desc: "Begin appropriations law training" },
+          { title: "Aviation Surveys", slug: "30-day-aviation", desc: "CSA, MCAS, ASPA for aviation commands" },
+        ],
+      },
+      {
+        title: "Within 60-90 Days",
+        items: [
+          { title: "SAPR Policy (60 Days)", slug: "60-day-sapr", desc: "Publish SAPR policy statement" },
+          { title: "UPFRP SOP (60 Days)", slug: "60-day-upfrp", desc: "Publish family readiness SOP" },
+          { title: "Command Philosophy (60 Days)", slug: "60-day-philosophy", desc: "Publish commander's philosophy" },
+          { title: "PAC Policy (90 Days)", slug: "90-day-pac", desc: "Publish Prohibited Activities and Conduct policy" },
+          { title: "Safety Climate Survey (90 Days)", slug: "90-day-safety-survey", desc: "O-5/O-6 safety climate survey" },
+          { title: "DEOCS Initiation (90 Days)", slug: "90-day-deocs", desc: "Initiate command climate survey" },
+          { title: "FAP Training (90 Days)", slug: "90-day-fap", desc: "Complete child/domestic abuse training" },
+        ],
+      },
+      {
+        title: "Annual Requirements",
+        items: [
+          { title: "Annual DEOCS", slug: "annual-deocs", desc: "Conduct annual command climate survey" },
+          { title: "Annual Safety Survey", slug: "annual-safety-survey", desc: "Annual safety climate assessment" },
+          { title: "Annual T/E Review", slug: "annual-te-review", desc: "Table of Equipment annual review" },
+          { title: "Annual Inventory", slug: "annual-inventory", desc: "Wall-to-wall property inventory" },
+          { title: "Annual METL Review", slug: "annual-metl-review", desc: "Annual Mission Essential Task List review" },
+        ],
+      },
+      {
+        title: "Prior to Relinquishing Command",
+        items: [
+          { title: "Outgoing DEOCS", slug: "outgoing-deocs", desc: "Initiate climate survey before departing" },
+          { title: "Turnover Documentation", slug: "turnover-documentation", desc: "Prepare comprehensive turnover package" },
+          { title: "Certificate of Relief", slug: "cor-outgoing", desc: "Complete property accountability transfer" },
+        ],
+      },
+    ],
+  },
 };
 
 /** Set of section keys that are only accessible by administrators */
@@ -816,4 +1361,28 @@ export const LEADER_SECTIONS = new Set([
   "leaders-deployment-readiness",
   "leaders-performance-evaluation",
   "leaders-personnel-accountability",
+]);
+
+/** Set of section keys that are specific to the commanders role */
+export const COMMANDER_SECTIONS = new Set([
+  // Group A: Command Authority
+  "commanders-authority-legal",
+  "commanders-personnel-career",
+  // Group B: Command Climate and Welfare
+  "commanders-climate-culture",
+  "commanders-sapr",
+  "commanders-suicide-prevention",
+  "commanders-family-readiness",
+  // Group C: Readiness and Resources
+  "commanders-readiness-reporting",
+  "commanders-fiscal-property",
+  "commanders-materiel-equipment",
+  "commanders-training-education",
+  // Group D: Compliance and Security
+  "commanders-safety",
+  "commanders-inspections",
+  "commanders-environmental",
+  "commanders-security",
+  "commanders-public-affairs",
+  "commanders-change-of-command",
 ]);
