@@ -7,6 +7,8 @@ import { CommandAuthorityContent } from "../../../../components/commanders/Comma
 import { PersonnelCareerContent } from "../../../../components/commanders/PersonnelCareerContent";
 import { CommandClimateContent } from "../../../../components/commanders/CommandClimateContent";
 import { SAPRContent } from "../../../../components/commanders/SAPRContent";
+import { SuicidePreventionContent } from "../../../../components/commanders/SuicidePreventionContent";
+import { FamilyReadinessContent } from "../../../../components/commanders/FamilyReadinessContent";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -63,7 +65,9 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     key === "commanders-authority-legal" ||
     key === "commanders-personnel-career" ||
     key === "commanders-climate-culture" ||
-    key === "commanders-sapr";
+    key === "commanders-sapr" ||
+    key === "commanders-suicide-prevention" ||
+    key === "commanders-family-readiness";
 
   // Render comprehensive content components for specific commander sections
   if (hasComprehensiveContent) {
@@ -78,6 +82,12 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     }
     if (key === "commanders-sapr") {
       return <SAPRContent />;
+    }
+    if (key === "commanders-suicide-prevention") {
+      return <SuicidePreventionContent />;
+    }
+    if (key === "commanders-family-readiness") {
+      return <FamilyReadinessContent />;
     }
   }
 
