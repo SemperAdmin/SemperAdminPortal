@@ -139,6 +139,7 @@ export default function RootLayout({
                   <Link href="/roles/administrators" prefetch={false} className="block rounded-md px-4 py-3 sm:px-3 sm:py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Administrators</Link>
                   <Link href="/roles/leaders" prefetch={false} className="block rounded-md px-4 py-3 sm:px-3 sm:py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Leaders</Link>
                   <Link href="/roles/commanders" prefetch={false} className="block rounded-md px-4 py-3 sm:px-3 sm:py-2 text-[var(--sa-navy)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Commanders</Link>
+                  <Link href="/life-events" prefetch={false} className="block rounded-md px-4 py-3 sm:px-3 sm:py-2 font-medium text-[var(--sa-red)] hover:bg-[var(--sa-cream)]/60 dark:text-[var(--sa-gold)] dark:hover:bg-white/10">Life Events</Link>
                 </div>
               </div>
               <Link href="/soundtracks" className="text-[var(--sa-navy)] hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]">Soundtracks</Link>
