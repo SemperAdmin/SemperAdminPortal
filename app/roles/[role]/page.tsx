@@ -55,13 +55,13 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
   ];
   const leaderCategories: { label: string; slug: string }[] = [
     { label: "Accountability & Discipline", slug: "leaders-accountability-discipline" },
+    { label: "Administrative Systems", slug: "leaders-administrative-systems" },
     { label: "Awards & Recognition", slug: "leaders-awards-recognition" },
     { label: "Career Development", slug: "leaders-career-development" },
     { label: "Counseling & Documentation", slug: "leaders-counseling-documentation" },
     { label: "Deployment & Readiness", slug: "leaders-deployment-readiness" },
     { label: "Performance Evaluation", slug: "leaders-performance-evaluation" },
     { label: "Personnel Accountability", slug: "leaders-personnel-accountability" },
-    { label: "Administrative Systems", slug: "leaders-administrative-systems" },
   ];
   const visibleItems = isAdministrators ? adminOptions : isLeaders ? leaderCategories : categories;
   const posts = (await readPosts()).filter((p) => p.community === safeRole).sort((a, b) => b.votes * 2 + b.createdAt - (a.votes * 2 + a.createdAt)).slice(0, 5);
