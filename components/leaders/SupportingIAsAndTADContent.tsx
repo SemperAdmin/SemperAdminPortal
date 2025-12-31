@@ -65,8 +65,8 @@ export function SupportingIAsAndTADContent({ data }: Props) {
         <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">IA/TAD Support Process</h2>
         </div>
-        <div className="space-y-3">
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+        <ol className="space-y-3">
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">1</span>
               <div>
@@ -74,8 +74,8 @@ export function SupportingIAsAndTADContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Parent command identifies Marine for IA or extended TAD assignment</p>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+          </li>
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">2</span>
               <div>
@@ -83,8 +83,8 @@ export function SupportingIAsAndTADContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Parent command DRC/URC contacts gaining command DRC/URC to initiate hand-off</p>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+          </li>
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">3</span>
               <div>
@@ -92,8 +92,8 @@ export function SupportingIAsAndTADContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Marine completes NAVMC 11654 with gaining command</p>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+          </li>
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">4</span>
               <div>
@@ -101,8 +101,8 @@ export function SupportingIAsAndTADContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Gaining command sends Welcome Aboard information to family</p>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+          </li>
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">5</span>
               <div>
@@ -110,8 +110,8 @@ export function SupportingIAsAndTADContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Both commands maintain communication with Marine and family throughout the assignment</p>
               </div>
             </div>
-          </div>
-          <div className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
+          </li>
+          <li className="rounded-xl border border-black/5 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/40">
             <div className="flex items-start gap-3">
               <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">6</span>
               <div>
@@ -119,8 +119,8 @@ export function SupportingIAsAndTADContent({ data }: Props) {
                 <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Upon return, parent command resumes full UPFRP support</p>
               </div>
             </div>
-          </div>
-        </div>
+          </li>
+        </ol>
         <div className="rounded-lg bg-red-50 p-4 dark:bg-red-900/20">
           <h4 className="font-semibold text-red-800 dark:text-red-200">Common Problems</h4>
           <ul className="mt-2 space-y-2 text-sm text-red-700 dark:text-red-300">

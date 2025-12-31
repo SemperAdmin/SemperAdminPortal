@@ -237,7 +237,7 @@ import { JEPESCorrectiveProceduresContent } from "../../../../../components/lead
 // Leaders - Personnel Accountability
 import { DailyAccountabilityFundamentalsContent } from "../../../../../components/leaders/DailyAccountabilityFundamentalsContent";
 import { GainsLossesProcessingContent } from "../../../../../components/leaders/GainsLossesProcessingContent";
-import { LeaveLibrtyManagementContent } from "../../../../../components/leaders/LeaveLibrtyManagementContent";
+import { LeaveLibertyManagementContent } from "../../../../../components/leaders/LeaveLibertyManagementContent";
 import { UAProceduresContent } from "../../../../../components/leaders/UAProceduresContent";
 import { TADDetachmentTrackingContent } from "../../../../../components/leaders/TADDetachmentTrackingContent";
 import { MusterFormationProceduresContent } from "../../../../../components/leaders/MusterFormationProceduresContent";
@@ -2478,7 +2478,7 @@ const PME_TRACKING_COMPLETION_DATA = {
   references: [
     { title: "MCO 1553.4B - Professional Military Education", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899348/mco-15534b/" },
     { title: "MCO P1400.32D - Enlisted Promotion Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899216/mco-p140032d/" },
-    { title: "MARADMIN 474/21 - Updated Enlisted PME Requirements by Grade", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "MARADMIN 474/21 - Updated Enlisted PME Requirements by Grade", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/2763368/updated-enlisted-professional-military-education-requirements-by-grade/" },
   ],
 };
 
@@ -2780,7 +2780,7 @@ const TRAINING_INFORMATION_SYSTEMS_DATA = {
     { title: "MCO 6100.13A - Physical Fitness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899201/mco-610013a/" },
     { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
     { title: "MarineNet", url: "https://www.usmclearning.usmc.mil", isQuickLink: true },
-    { title: "Fitness Marines", url: "http://www.fitness.marines.mil", isQuickLink: true },
+    { title: "Fitness Marines", url: "https://www.fitness.marines.mil", isQuickLink: true },
   ],
 };
 
@@ -3155,7 +3155,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     // Leaders - Personnel Accountability
     "daily-accountability-fundamentals": <DailyAccountabilityFundamentalsContent data={DAILY_ACCOUNTABILITY_FUNDAMENTALS_DATA} />,
     "gains-losses-processing": <GainsLossesProcessingContent data={GAINS_LOSSES_PROCESSING_DATA} />,
-    "leave-liberty-management": <LeaveLibrtyManagementContent data={LEAVE_LIBERTY_MANAGEMENT_DATA} />,
+    "leave-liberty-management": <LeaveLibertyManagementContent data={LEAVE_LIBERTY_MANAGEMENT_DATA} />,
     "ua-procedures": <UAProceduresContent data={UA_PROCEDURES_DATA} />,
     "tad-detachment-tracking": <TADDetachmentTrackingContent data={TAD_DETACHMENT_TRACKING_DATA} />,
     "muster-formation-procedures": <MusterFormationProceduresContent data={MUSTER_FORMATION_PROCEDURES_DATA} />,
