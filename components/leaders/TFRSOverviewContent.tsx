@@ -97,8 +97,8 @@ export function TFRSOverviewContent({ data }: Props) {
         <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <ul className="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Career Planner&apos;s rank, name, phone, and email</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Deployment status (with PFT code &quot;9&quot; if deployed)</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Pregnancy status (with PFT code &quot;15&quot; if pregnant)</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Deployment status (with PFT code "9" if deployed)</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Pregnancy status (with PFT code "15" if pregnant)</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>SRBP eligibility by zone (if applicable)</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Waiver identification (with scanned documentation)</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Previous RELM requests in past 12 months</span></li>

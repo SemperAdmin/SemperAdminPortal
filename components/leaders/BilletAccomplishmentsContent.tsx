@@ -56,25 +56,25 @@ export function BilletAccomplishmentsContent({ data }: Props) {
         <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">MOS/Mission Examples</h3>
           <ul className="mt-3 space-y-3 text-sm text-zinc-700 dark:text-zinc-300">
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>&quot;Led 4-Marine fire team during MOUT exercise; cleared 12 buildings with zero simulated casualties. Team rated best in company.&quot;</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>&quot;Processed 247 travel claims with 98% accuracy rate, reducing average processing time from 5 days to 3 days.&quot;</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>&quot;Maintained 100% accountability of $2.3M in organic equipment during 3-month deployment.&quot;</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>"Led 4-Marine fire team during MOUT exercise; cleared 12 buildings with zero simulated casualties. Team rated best in company."</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>"Processed 247 travel claims with 98% accuracy rate, reducing average processing time from 5 days to 3 days."</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>"Maintained 100% accountability of $2.3M in organic equipment during 3-month deployment."</span></li>
           </ul>
         </div>
         <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Leadership Examples</h3>
           <ul className="mt-3 space-y-3 text-sm text-zinc-700 dark:text-zinc-300">
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>&quot;Mentored 3 PFCs in MOS skills; all achieved MOS proficiency qualification ahead of schedule.&quot;</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>&quot;Coordinated PME study group of 8 LCpls; 6 selected for meritorious promotion.&quot;</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>&quot;Assumed squad leader responsibilities during SNCO absence; maintained training schedule and accountability.&quot;</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>"Mentored 3 PFCs in MOS skills; all achieved MOS proficiency qualification ahead of schedule."</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>"Coordinated PME study group of 8 LCpls; 6 selected for meritorious promotion."</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>"Assumed squad leader responsibilities during SNCO absence; maintained training schedule and accountability."</span></li>
           </ul>
         </div>
         <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Individual Character Examples</h3>
           <ul className="mt-3 space-y-3 text-sm text-zinc-700 dark:text-zinc-300">
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>&quot;Volunteered 40 hours at local food bank during holiday season; organized 12-Marine volunteer team.&quot;</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>&quot;Completed 15 college credit hours toward Associate&apos;s degree while maintaining superior duty performance.&quot;</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>&quot;Identified and reported safety hazard in motor pool; prevented potential injury and equipment damage.&quot;</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>"Volunteered 40 hours at local food bank during holiday season; organized 12-Marine volunteer team."</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>"Completed 15 college credit hours toward Associate&apos;s degree while maintaining superior duty performance."</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>"Identified and reported safety hazard in motor pool; prevented potential injury and equipment damage."</span></li>
           </ul>
         </div>
         <div className="rounded-lg bg-green-50 p-4 dark:bg-green-900/20">
@@ -102,28 +102,28 @@ export function BilletAccomplishmentsContent({ data }: Props) {
             <li className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" />
               <div>
-                <span className="font-medium">&quot;Performed duties as assigned.&quot;</span>
+                <span className="font-medium">"Performed duties as assigned."</span>
                 <p className="text-red-600 dark:text-red-400">Too vague. This applies to every Marine.</p>
               </div>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" />
               <div>
-                <span className="font-medium">&quot;Hard worker with great attitude.&quot;</span>
+                <span className="font-medium">"Hard worker with great attitude."</span>
                 <p className="text-red-600 dark:text-red-400">Opinion without supporting facts.</p>
               </div>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" />
               <div>
-                <span className="font-medium">&quot;Participated in unit training.&quot;</span>
+                <span className="font-medium">"Participated in unit training."</span>
                 <p className="text-red-600 dark:text-red-400">Routine expectation, not an accomplishment.</p>
               </div>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" />
               <div>
-                <span className="font-medium">&quot;Best Marine in the platoon.&quot;</span>
+                <span className="font-medium">"Best Marine in the platoon."</span>
                 <p className="text-red-600 dark:text-red-400">Superlative without evidence.</p>
               </div>
             </li>
@@ -133,7 +133,7 @@ export function BilletAccomplishmentsContent({ data }: Props) {
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Common Mistakes</h3>
           <ul className="mt-3 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span><strong>Routine duties:</strong> Don&apos;t document expected job functions as accomplishments</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span><strong>Vague language:</strong> Avoid &quot;some,&quot; &quot;many,&quot; &quot;various&quot; - use specific numbers</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span><strong>Vague language:</strong> Avoid "some," "many," "various" - use specific numbers</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span><strong>Subjective opinions:</strong> Support claims with facts and outcomes</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span><strong>Outside reporting period:</strong> Only include accomplishments from the current period</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span><strong>Unverifiable claims:</strong> Don&apos;t exaggerate or fabricate accomplishments</span></li>

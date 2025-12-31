@@ -161,7 +161,7 @@ export function JEPESCommandInputMetricsContent({ data }: Props) {
           <p className="mt-2 text-sm text-red-700 dark:text-red-300">
             Inflated marks harm Marines by creating unrealistic expectations and undermine the integrity of JEPES.
             Accurate marks serve both the Marine and the institution. Document specific examples to support marks above
-            or below the &quot;meets standards&quot; range.
+            or below the "meets standards" range.
           </p>
         </div>
       </section>
@@ -173,7 +173,7 @@ export function JEPESCommandInputMetricsContent({ data }: Props) {
           <ul className="mt-3 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Understand the three command input categories and their definitions</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Apply marks consistently across all Marines</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Document specific examples to justify marks above or below &quot;meets standards&quot;</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Document specific examples to justify marks above or below "meets standards"</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Avoid mark inflation. Accurate marks serve Marines better than inflated ones.</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Counsel Marines on areas for improvement before marking below standards</span></li>
           </ul>

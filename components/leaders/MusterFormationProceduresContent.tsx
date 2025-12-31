@@ -110,7 +110,7 @@ export function MusterFormationProceduresContent({ data }: Props) {
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Accountability Report Format</h3>
           <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Standard report format:</p>
           <div className="mt-3 rounded-lg bg-zinc-100 p-4 font-mono text-sm dark:bg-zinc-800">
-            <p>&quot;Sir/Ma&apos;am, [Unit] reports [X] present, [X] accounted for, [X] UA/Unaccounted.&quot;</p>
+            <p>"Sir/Ma&apos;am, [Unit] reports [X] present, [X] accounted for, [X] UA/Unaccounted."</p>
           </div>
           <ul className="mt-4 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span><strong>Present:</strong> Marines physically present at formation</span></li>
@@ -136,8 +136,8 @@ export function MusterFormationProceduresContent({ data }: Props) {
         <div className="rounded-lg bg-red-50 p-4 dark:bg-red-900/20">
           <h4 className="font-semibold text-red-800 dark:text-red-200">Critical Warning</h4>
           <p className="mt-2 text-sm text-red-700 dark:text-red-300">
-            Never report a Marine as present if you have not physically seen them. Never allow someone else to &quot;answer
-            up&quot; for an absent Marine. Falsifying accountability is a serious offense.
+            Never report a Marine as present if you have not physically seen them. Never allow someone else to "answer
+            up" for an absent Marine. Falsifying accountability is a serious offense.
           </p>
         </div>
         <div className="rounded-lg bg-blue-50 p-4 dark:bg-blue-900/20">

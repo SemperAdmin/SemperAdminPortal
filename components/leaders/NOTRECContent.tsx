@@ -21,7 +21,7 @@ export function NOTRECContent({ data }: Props) {
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">NOT REC (Not Recommended for Promotion)</h2>
           <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
             Per MCO 1616.1, the Approver must indicate whether a Marine is recommended for promotion with every
-            reporting occasion. &quot;NOT REC&quot; is an official determination that the Marine is not recommended for promotion
+            reporting occasion. "NOT REC" is an official determination that the Marine is not recommended for promotion
             based on performance or adverse information.
           </p>
         </div>

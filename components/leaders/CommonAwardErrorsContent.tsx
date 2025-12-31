@@ -67,21 +67,21 @@ export function CommonAwardErrorsContent({ data }: Props) {
               </p>
             </div>
             <div className="rounded-lg bg-red-50 p-4 dark:bg-red-900/20">
-              <h4 className="font-semibold text-red-800 dark:text-red-200">&quot;Great Credit&quot; Misuse</h4>
+              <h4 className="font-semibold text-red-800 dark:text-red-200">"Great Credit" Misuse</h4>
               <p className="mt-1 text-sm text-red-700 dark:text-red-300">
-                Using &quot;great credit&quot; on NAM/NCM. This phrase is only authorized for Air Medal and above.
+                Using "great credit" on NAM/NCM. This phrase is only authorized for Air Medal and above.
               </p>
             </div>
             <div className="rounded-lg bg-red-50 p-4 dark:bg-red-900/20">
               <h4 className="font-semibold text-red-800 dark:text-red-200">Character/Line Limit Exceeded</h4>
               <p className="mt-1 text-sm text-red-700 dark:text-red-300">
-                Citation exceeds maximum characters or lines. Use iAPS &quot;Print PDF&quot; to verify before submission.
+                Citation exceeds maximum characters or lines. Use iAPS "Print PDF" to verify before submission.
               </p>
             </div>
             <div className="rounded-lg bg-red-50 p-4 dark:bg-red-900/20">
               <h4 className="font-semibold text-red-800 dark:text-red-200">Acronyms or Abbreviations</h4>
               <p className="mt-1 text-sm text-red-700 dark:text-red-300">
-                Using &quot;USMC,&quot; &quot;CO,&quot; or unit abbreviations. All terms must be spelled out completely.
+                Using "USMC," "CO," or unit abbreviations. All terms must be spelled out completely.
               </p>
             </div>
             <div className="rounded-lg bg-red-50 p-4 dark:bg-red-900/20">

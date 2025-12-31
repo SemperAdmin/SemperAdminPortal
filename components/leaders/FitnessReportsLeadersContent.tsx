@@ -315,7 +315,7 @@ export function FitnessReportsLeadersContent({ data }: Props) {
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span><strong>Section H:</strong> Fulfillment of Evaluation Responsibilities</span></li>
           </ul>
           <p className="mt-3 text-sm text-zinc-700 dark:text-zinc-300">
-            Per MCO 1610.7B, marks of &quot;A&quot; (adverse), &quot;F,&quot; or &quot;G&quot; require justification with concrete, verifiable examples.
+            Per MCO 1610.7B, marks of "A" (adverse), "F," or "G" require justification with concrete, verifiable examples.
           </p>
         </div>
         <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
@@ -332,10 +332,10 @@ export function FitnessReportsLeadersContent({ data }: Props) {
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-amber-500" /><span>DC (Directed by CMC) occasion: Reason for submission</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-amber-500" /><span>FD occasion: Reason for N/O report or early termination of TAD</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-amber-500" /><span>Combat or Joint duty type codes</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-amber-500" /><span>Marks of &quot;A,&quot; &quot;F,&quot; or &quot;G&quot; in any attribute section</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-amber-500" /><span>Marks of "A," "F," or "G" in any attribute section</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-amber-500" /><span>Not recommended for promotion</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-amber-500" /><span>Rifle/pistol &quot;U&quot; or &quot;X&quot; if MRO was negligent</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-amber-500" /><span>PFT/CFT &quot;FXXX,&quot; &quot;C150,&quot; or &quot;RDNT&quot; if MRO was negligent</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-amber-500" /><span>Rifle/pistol "U" or "X" if MRO was negligent</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-amber-500" /><span>PFT/CFT "FXXX," "C150," or "RDNT" if MRO was negligent</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-amber-500" /><span>Body fat exceeding standards or BCP assignment</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-amber-500" /><span>MRO same grade as RS or RO</span></li>
           </ul>
@@ -379,7 +379,7 @@ export function FitnessReportsLeadersContent({ data }: Props) {
                 </tr>
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
                   <td className="py-2 pr-4 font-medium">A-8a</td>
-                  <td className="py-2 pr-4">Rifle/pistol &quot;U&quot; or &quot;X&quot; (if negligent)</td>
+                  <td className="py-2 pr-4">Rifle/pistol "U" or "X" (if negligent)</td>
                   <td className="py-2">Adverse</td>
                 </tr>
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
@@ -394,7 +394,7 @@ export function FitnessReportsLeadersContent({ data }: Props) {
                 </tr>
                 <tr>
                   <td className="py-2 pr-4 font-medium">D-H</td>
-                  <td className="py-2 pr-4">Any mark of &quot;A&quot;</td>
+                  <td className="py-2 pr-4">Any mark of "A"</td>
                   <td className="py-2">Adverse</td>
                 </tr>
               </tbody>
@@ -463,7 +463,7 @@ export function FitnessReportsLeadersContent({ data }: Props) {
           <ul className="mt-2 space-y-2 text-sm text-red-700 dark:text-red-300">
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" /><span>Missing or incorrect directed comments</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" /><span>Section C containing subjective assessments instead of objective accomplishments</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" /><span>Marks of &quot;A,&quot; &quot;F,&quot; or &quot;G&quot; without proper justification</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" /><span>Marks of "A," "F," or "G" without proper justification</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" /><span>Adverse reports not processed with proper counseling and 3OS sighting</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" /><span>Dates inconsistent across report sections</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" /><span>Missing signatures or certifications</span></li>
