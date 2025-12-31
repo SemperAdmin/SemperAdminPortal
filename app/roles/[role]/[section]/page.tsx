@@ -12,6 +12,7 @@ import { FamilyReadinessContent } from "../../../../components/commanders/Family
 import { SubstanceAbuseContent } from "../../../../components/commanders/SubstanceAbuseContent";
 import { SafetyRiskContent } from "../../../../components/commanders/SafetyRiskContent";
 import { TrainingReadinessContent } from "../../../../components/commanders/TrainingReadinessContent";
+import { FiscalPropertyContent } from "../../../../components/commanders/FiscalPropertyContent";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -73,7 +74,8 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     key === "commanders-family-readiness" ||
     key === "commanders-substance-abuse" ||
     key === "commanders-safety-risk" ||
-    key === "commanders-training-readiness";
+    key === "commanders-training-readiness" ||
+    key === "commanders-fiscal-property";
 
   // Render comprehensive content components for specific commander sections
   if (hasComprehensiveContent) {
@@ -103,6 +105,9 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     }
     if (key === "commanders-training-readiness") {
       return <TrainingReadinessContent />;
+    }
+    if (key === "commanders-fiscal-property") {
+      return <FiscalPropertyContent />;
     }
   }
 
