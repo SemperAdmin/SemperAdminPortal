@@ -465,34 +465,6 @@ export const SECTIONS: Record<string, Section> = {
     ],
   },
 
-  "systems-management": {
-    title: "Systems Management",
-    intro: "Marine Corps administrative systems are essential tools for personnel management, travel, and readiness tracking. Understanding how to navigate these systems, troubleshoot common issues, and access information is critical for both individual Marines and administrative personnel. This section provides guidance on key systems used for personnel administration.",
-    groups: [
-      {
-        title: "Personnel Systems",
-        items: [
-          { title: "Marine Online (MOL)", slug: "mol", desc: "Access your records, LES, and self-service personnel actions" },
-          { title: "MCTFS (Total Force System)", slug: "mctfs", desc: "Marine Corps Total Force System for manpower management" },
-          { title: "MCIRSA", slug: "mcirsa", desc: "Marine Corps Incentive Reenlistment System - Authorization" },
-        ],
-      },
-      {
-        title: "Travel Systems",
-        items: [
-          { title: "Defense Travel System (DTS)", slug: "dts", desc: "Create travel authorizations and vouchers" },
-          { title: "GTCC Portal", slug: "gtcc-portal", desc: "Manage your Government Travel Charge Card account" },
-        ],
-      },
-      {
-        title: "Reserve Systems",
-        items: [
-          { title: "MROWS", slug: "mrows", desc: "Marine Corps Reserve Order Writing System for reserve orders" },
-        ],
-      },
-    ],
-  },
-
   "travel-transportation": {
     title: "Travel & Transportation",
     intro: "This page covers all travel entitlements and transportation support for Marines. Whether you are moving to a new duty station, going on temporary duty, or need to understand your travel benefits, you will find guidance and resources here.",
@@ -797,6 +769,46 @@ export const SECTIONS: Record<string, Section> = {
       },
     ],
   },
+
+  "leaders-conducting-investigations": {
+    title: "Conducting Administrative Investigations",
+    intro: "As an investigating officer (IO), you are responsible for searching out, discovering, collecting, and preserving evidence to document a matter of official interest to your command. This section provides step-by-step guidance on conducting investigations correctly by type, from preliminary inquiries to command investigations.",
+    groups: [
+      {
+        title: "Before You Start",
+        items: [
+          { title: "Review Your Convening Order", slug: "review-convening-order", desc: "Understanding your roadmap: scope, issues, format, and due date" },
+          { title: "Contact a Judge Advocate", slug: "contact-judge-advocate", desc: "Getting legal guidance before beginning your investigation" },
+          { title: "Coordinate With Other Investigations", slug: "coordinate-other-investigations", desc: "Checking for NCIS, safety, or IG investigations" },
+        ],
+      },
+      {
+        title: "Conducting Investigations",
+        items: [
+          { title: "Preliminary Inquiry", slug: "preliminary-inquiry-io", desc: "3-day timeline to determine if formal investigation is warranted" },
+          { title: "Command Investigation", slug: "command-investigation-io", desc: "Planning, evidence collection, witness interviews, and report writing" },
+          { title: "Litigation-Report Investigation", slug: "litigation-report-io", desc: "Investigations conducted under judge advocate supervision" },
+        ],
+      },
+      {
+        title: "Evidence and Witnesses",
+        items: [
+          { title: "Collecting Evidence", slug: "collecting-evidence", desc: "Documentary, physical, and photographic evidence handling" },
+          { title: "Interviewing Witnesses", slug: "interviewing-witnesses", desc: "Procedures for witnesses and Article 31 warnings for suspects" },
+          { title: "Standards of Proof", slug: "standards-of-proof-io", desc: "Preponderance of evidence and drawing reasonable inferences" },
+        ],
+      },
+      {
+        title: "Writing Your Report",
+        items: [
+          { title: "Report Format", slug: "investigation-report-format-io", desc: "Preliminary statement, findings, opinions, recommendations, enclosures" },
+          { title: "LOD/Misconduct Determinations", slug: "lod-misconduct-determinations", desc: "Line of duty findings and misconduct standards" },
+          { title: "Death Case Procedures", slug: "death-case-procedures-io", desc: "Special requirements for death investigations" },
+          { title: "Common Mistakes to Avoid", slug: "common-investigation-mistakes", desc: "Top 10 errors and how to prevent them" },
+        ],
+      },
+    ],
+  },
   // ============================================
   // COMMANDER-SPECIFIC SECTIONS
   // ============================================
@@ -1070,6 +1082,39 @@ export const SECTIONS: Record<string, Section> = {
           { title: "ADSEP Authority", slug: "adsep-commander-authority", desc: "Separation authority and board requirements" },
           { title: "Separation Bases", slug: "separation-bases", desc: "Grounds for administrative separation" },
           { title: "Due Process", slug: "adsep-due-process", desc: "Ensuring Marine's rights are protected" },
+        ],
+      },
+    ],
+  },
+
+  "commanders-admin-investigations": {
+    title: "Administrative Investigations",
+    intro: "Administrative investigations are a critical commander responsibility. JAGMAN Chapter II sets forth principles governing the convening, conduct, review, and storage of administrative investigations conducted in or by the Department of the Navy. Commanders are responsible for initiating investigations into incidents occurring within, or involving personnel of, the command.",
+    groups: [
+      {
+        title: "Types of Investigations",
+        items: [
+          { title: "Preliminary Inquiry", slug: "preliminary-inquiry", desc: "Analytical tool to determine if investigation is warranted (3-day timeline)" },
+          { title: "Command Investigations", slug: "command-investigations", desc: "Type One - Most common, for internal command matters" },
+          { title: "Litigation-Report Investigations", slug: "litigation-report-investigations", desc: "Type Two - For potential claims or litigation" },
+          { title: "Courts and Boards of Inquiry", slug: "courts-boards-inquiry", desc: "Type Three - For major incidents requiring subpoena power or hearings" },
+        ],
+      },
+      {
+        title: "Investigation Procedures",
+        items: [
+          { title: "Convening Orders", slug: "convening-orders", desc: "Requirements for directing and memorializing investigations" },
+          { title: "Standards of Proof", slug: "standards-of-proof", desc: "Preponderance of evidence and evidence handling" },
+          { title: "Witness Procedures", slug: "witness-procedures", desc: "Interviewing witnesses and Article 31 warnings" },
+          { title: "Report Format", slug: "investigation-report-format", desc: "Findings of fact, opinions, and recommendations" },
+        ],
+      },
+      {
+        title: "Special Determinations",
+        items: [
+          { title: "Line of Duty Determinations", slug: "line-of-duty", desc: "LOD/misconduct determinations and their impact on benefits" },
+          { title: "Death Case Procedures", slug: "death-case-procedures", desc: "Special considerations and notification requirements" },
+          { title: "Coordination Requirements", slug: "investigation-coordination", desc: "Coordination with NCIS, safety investigations, and other entities" },
         ],
       },
     ],
@@ -1397,6 +1442,7 @@ export const LEADER_SECTIONS = new Set([
   "leaders-administrative-systems",
   "leaders-awards-recognition",
   "leaders-career-development",
+  "leaders-conducting-investigations",
   "leaders-counseling-documentation",
   "leaders-deployment-readiness",
   "leaders-performance-evaluation",
@@ -1416,6 +1462,7 @@ export const COMMANDER_SECTIONS = new Set([
   "commanders-substance-abuse",
   "commanders-equal-opportunity",
   "commanders-legal-discipline",
+  "commanders-admin-investigations",
   // Group C: Readiness and Resources
   "commanders-training-readiness",
   "commanders-fiscal-property",

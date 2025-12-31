@@ -792,25 +792,41 @@ export function TransitionOfCommandContent() {
             <h3 className="mb-3 font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">References</h3>
             <div className="space-y-2">
               {[
-                { name: "CMC White Letter 3-17", desc: "Status of Command", url: "#" },
-                { name: "MCO 4400.201 Vol 3", desc: "Management of Property", url: MCO_URLS.PROPERTY_MANAGEMENT_VOL3 },
-                { name: "MCO 5100.29C", desc: "Safety Management System", url: MCO_URLS.SAFETY_MANAGEMENT },
-                { name: "MCO 1752.5C", desc: "SAPR Program", url: MCO_URLS.SAPR },
-                { name: "MCO 1754.9B", desc: "Unit, Personal and Family Readiness", url: MCO_URLS.FAMILY_READINESS },
-                { name: "MCO P5354.1E", desc: "Prohibited Activities and Conduct", url: MCO_URLS.PAC_PREVENTION },
-                { name: "MCO 3000.13B", desc: "Unit Readiness", url: MCO_URLS.READINESS_REPORTING },
-              ].map((link) => (
-                <a
-                  key={link.name}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-lg border border-[var(--sa-navy)]/20 bg-[var(--sa-cream)]/30 p-3 transition hover:bg-[var(--sa-navy)]/10 dark:border-white/10 dark:bg-[var(--sa-navy)]/30 dark:hover:bg-white/10"
-                >
-                  <ExternalLink className="h-4 w-4 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
-                  <div>
-                    <div className="text-sm font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-                      {link.name}
+                { name: "CMC White Letter 3-17", desc: "Status of Command", url: "" },
+                { name: "MCO 4400.201 Vol 3", desc: "Management of Property", url: "https://www.marines.mil/Portals/1/Publications/MCO%204400.201%20Volume%203%20v2.pdf?ver=2018-07-26-135024-433" },
+                { name: "MCO 5100.29C", desc: "Safety Management System", url: "https://www.marines.mil/Portals/1/Publications/MCO%205100.29C%20with%20CH%201-2%20and%20Volumes%201-9.pdf?ver=xpHxSYo4uELfIUj-IhgLOA%3d%3d" },
+                { name: "MCO 1752.5C", desc: "SAPR Program", url: "https://www.marines.mil/Portals/1/Publications/MCO%201752.5C.pdf?ver=2019-06-10-115714-627" },
+                { name: "MCO 1754.9B", desc: "Unit, Personal and Family Readiness", url: "https://www.marines.mil/Portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677" },
+                { name: "MCO 5354.1G", desc: "Prohibited Activities and Conduct", url: "https://www.marines.mil/Portals/1/Publications/MCO%205354.1G%20Admin%20Ch%201%20v2.pdf?ver=Zx2KQaYufT6GZ4AhSHjBgg%3d%3d" },
+                { name: "MCO 3000.13B", desc: "Unit Readiness", url: "https://www.marines.mil/Portals/1/Publications/MCO%203000.13B.pdf?ver=2020-07-15-110758-503" },
+              ].map((link) =>
+                link.url ? (
+                  <a
+                    key={link.name}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 rounded-lg border border-[var(--sa-navy)]/20 bg-[var(--sa-cream)]/30 p-3 transition hover:bg-[var(--sa-navy)]/10 dark:border-white/10 dark:bg-[var(--sa-navy)]/30 dark:hover:bg-white/10"
+                  >
+                    <ExternalLink className="h-4 w-4 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
+                    <div>
+                      <div className="text-sm font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                        {link.name}
+                      </div>
+                      <div className="text-xs text-zinc-600 dark:text-zinc-400">{link.desc}</div>
+                    </div>
+                  </a>
+                ) : (
+                  <div
+                    key={link.name}
+                    className="flex items-center gap-2 rounded-lg border border-[var(--sa-navy)]/20 bg-[var(--sa-cream)]/30 p-3 dark:border-white/10 dark:bg-[var(--sa-navy)]/30"
+                  >
+                    <FileText className="h-4 w-4 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
+                    <div>
+                      <div className="text-sm font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                        {link.name}
+                      </div>
+                      <div className="text-xs text-zinc-600 dark:text-zinc-400">{link.desc}</div>
                     </div>
                   </div>
                 )
