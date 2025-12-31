@@ -198,6 +198,14 @@ import { CommonAwardErrorsContent } from "../../../../../components/leaders/Comm
 import { IAPSSubmissionContent } from "../../../../../components/leaders/IAPSSubmissionContent";
 import { AwardRoutingApprovalContent } from "../../../../../components/leaders/AwardRoutingApprovalContent";
 import { AwardTimelineManagementContent } from "../../../../../components/leaders/AwardTimelineManagementContent";
+// Leaders - Career Development
+import { SupportingReenlistmentDecisionsContent } from "../../../../../components/leaders/SupportingReenlistmentDecisionsContent";
+import { PMETrackingCompletionContent } from "../../../../../components/leaders/PMETrackingCompletionContent";
+import { MeritoriousPromotionPreparationContent } from "../../../../../components/leaders/MeritoriousPromotionPreparationContent";
+import { SpecialDutyAssignmentScreeningContent } from "../../../../../components/leaders/SpecialDutyAssignmentScreeningContent";
+import { LateralMoveGuidanceContent } from "../../../../../components/leaders/LateralMoveGuidanceContent";
+import { EnlistedCommissioningProgramsContent } from "../../../../../components/leaders/EnlistedCommissioningProgramsContent";
+import { WarrantOfficerProgramSupportContent } from "../../../../../components/leaders/WarrantOfficerProgramSupportContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -2385,22 +2393,22 @@ const CITATION_FORMAT_REQUIREMENTS_DATA = {
 const COMMON_AWARD_ERRORS_DATA = {
   references: [
     { title: "SECNAV M-1650.1 - Navy and Marine Corps Awards Manual", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf" },
-    { title: "MARADMIN 077/25 - CMC Delegation of Awarding Authority", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
-    { title: "Annual MARADMIN on PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "MARADMIN 077/25 - CMC Delegation of Awarding Authority", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4073209/commandant-of-the-marine-corps-delegation-of-awarding-authority-for-military-aw/" },
+    { title: "MARADMIN 093/25 - PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4078781/military-awards-guidance-for-permanent-change-of-station-season/" },
   ],
 };
 
 const IAPS_SUBMISSION_DATA = {
   references: [
-    { title: "MARADMIN 042/08 - Implementation of iAPS", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
-    { title: "MARADMIN 099/18 - iAPS Updates", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
-    { title: "MARADMIN 077/25 - CMC Delegation of Awarding Authority", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "MARADMIN 042/08 - Implementation of iAPS", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/893622/implementation-of-the-improved-awards-processing-system-iaps/" },
+    { title: "MARADMIN 099/18 - iAPS Updates", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/1438860/improved-awards-processing-system-iaps-updates/" },
+    { title: "MARADMIN 077/25 - CMC Delegation of Awarding Authority", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4073209/commandant-of-the-marine-corps-delegation-of-awarding-authority-for-military-aw/" },
   ],
 };
 
 const AWARD_ROUTING_APPROVAL_DATA = {
   references: [
-    { title: "MARADMIN 077/25 (21 Feb 2025) - CMC Delegation of Awarding Authority for Military Awards", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "MARADMIN 077/25 (21 Feb 2025) - CMC Delegation of Awarding Authority for Military Awards", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4073209/commandant-of-the-marine-corps-delegation-of-awarding-authority-for-military-aw/" },
     { title: "SECNAVINST 1650.1J - Department of the Navy Military Awards Policy", url: "https://www.secnav.navy.mil/doni/Directives/01000%20Military%20Personnel%20Support/01-600%20Performance%20and%20Discipline%20Programs/1650.1J.pdf" },
     { title: "SECNAV M-1650.1 - Navy and Marine Corps Awards Manual", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf" },
     { title: "MCO 1650.19J with CH1 - Administrative and Issue Procedures for Decorations, Medals, and Awards", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899334/mco-165019j-wch-1/" },
@@ -2409,8 +2417,59 @@ const AWARD_ROUTING_APPROVAL_DATA = {
 
 const AWARD_TIMELINE_MANAGEMENT_DATA = {
   references: [
-    { title: "Annual MARADMIN on PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "MARADMIN 093/25 - PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4078781/military-awards-guidance-for-permanent-change-of-station-season/" },
     { title: "MCO 1650.19J with CH1 - Administrative and Issue Procedures for Decorations, Medals, and Awards", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899334/mco-165019j-wch-1/" },
+  ],
+};
+
+// Leaders - Career Development
+const SUPPORTING_REENLISTMENT_DECISIONS_DATA = {
+  references: [
+    { title: "MCO 1616.1 - Junior Enlisted Performance Evaluation System (JEPES)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899293/mco-16107/" },
+    { title: "MCO P1040.31J - Enlisted Retention and Career Development Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899214/mco-p104031j/" },
+    { title: "MARADMIN 046/24 - Updates to JEPES MOS Qualifications Initiative", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/3662965/updates-to-the-implementation-of-military-occupational-specialty-qualifications/" },
+  ],
+};
+
+const PME_TRACKING_COMPLETION_DATA = {
+  references: [
+    { title: "MCO 1553.4B - Professional Military Education", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899348/mco-15534b/" },
+    { title: "MCO P1400.32D - Enlisted Promotion Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899216/mco-p140032d/" },
+    { title: "MARADMIN 474/21 - Updated Enlisted PME Requirements by Grade", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+  ],
+};
+
+const MERITORIOUS_PROMOTION_PREPARATION_DATA = {
+  references: [
+    { title: "MCO P1400.32D - Enlisted Promotion Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899216/mco-p140032d/" },
+    { title: "MARADMIN 667/22 - Update to Meritorious Promotion Policy to Cpl and Sgt", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/3241497/update-to-meritorious-promotion-policy-to-corporal-and-sergeant/" },
+  ],
+};
+
+const SPECIAL_DUTY_ASSIGNMENT_SCREENING_DATA = {
+  references: [
+    { title: "MCO 1326.6 - SCREENMAN (Special Duty Assignment Screening)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899313/mco-13266/" },
+    { title: "MARADMIN 706/19 - SDA and Screenable Billets Compliance Requirements", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/2046247/special-duty-assignment-and-screenable-billets-compliance-requirements/" },
+  ],
+};
+
+const LATERAL_MOVE_GUIDANCE_DATA = {
+  references: [
+    { title: "MCO P1040.31J - Enlisted Retention and Career Development Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899214/mco-p104031j/" },
+  ],
+};
+
+const ENLISTED_COMMISSIONING_PROGRAMS_DATA = {
+  references: [
+    { title: "MCO 1040.43B - Enlisted to Officer Commissioning Programs", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899211/mco-104043b/" },
+    { title: "MCO 1560.15L - Marine Enlisted Commissioning Education Program (MECEP)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899354/mco-156015l/" },
+  ],
+};
+
+const WARRANT_OFFICER_PROGRAM_SUPPORT_DATA = {
+  references: [
+    { title: "MCO 1040.42A/B - Warrant Officer and LDO Accession Programs", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899210/mco-104042b/" },
+    { title: "SECNAVINST 1412.9B - Officer Accession Programs", url: "https://www.secnav.navy.mil/doni/Directives/01000%20Military%20Personnel%20Support/01-400%20Promotion%20and%20Advancement%20Programs/1412.9B.pdf" },
   ],
 };
 
@@ -2746,6 +2805,14 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "iaps-submission": <IAPSSubmissionContent data={IAPS_SUBMISSION_DATA} />,
     "award-routing-approval": <AwardRoutingApprovalContent data={AWARD_ROUTING_APPROVAL_DATA} />,
     "award-timeline-management": <AwardTimelineManagementContent data={AWARD_TIMELINE_MANAGEMENT_DATA} />,
+    // Leaders - Career Development
+    "supporting-reenlistment-decisions": <SupportingReenlistmentDecisionsContent data={SUPPORTING_REENLISTMENT_DECISIONS_DATA} />,
+    "pme-tracking-completion": <PMETrackingCompletionContent data={PME_TRACKING_COMPLETION_DATA} />,
+    "meritorious-promotion-preparation": <MeritoriousPromotionPreparationContent data={MERITORIOUS_PROMOTION_PREPARATION_DATA} />,
+    "special-duty-assignment-screening": <SpecialDutyAssignmentScreeningContent data={SPECIAL_DUTY_ASSIGNMENT_SCREENING_DATA} />,
+    "lateral-move-guidance": <LateralMoveGuidanceContent data={LATERAL_MOVE_GUIDANCE_DATA} />,
+    "enlisted-commissioning-programs": <EnlistedCommissioningProgramsContent data={ENLISTED_COMMISSIONING_PROGRAMS_DATA} />,
+    "warrant-officer-program-support": <WarrantOfficerProgramSupportContent data={WARRANT_OFFICER_PROGRAM_SUPPORT_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
