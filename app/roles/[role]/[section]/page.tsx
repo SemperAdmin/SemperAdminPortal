@@ -21,6 +21,7 @@ import { InspectorGeneralContent } from "../../../../components/commanders/Inspe
 import { TransitionOfCommandContent } from "../../../../components/commanders/TransitionOfCommandContent";
 import { EnvironmentalContent } from "../../../../components/commanders/EnvironmentalContent";
 import { SecurityProgramsContent } from "../../../../components/commanders/SecurityProgramsContent";
+import { AdminInvestigationsContent } from "../../../../components/commanders/AdminInvestigationsContent";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -91,7 +92,8 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     key === "commanders-inspector-general" ||
     key === "commanders-transition-command" ||
     key === "commanders-environmental" ||
-    key === "commanders-security";
+    key === "commanders-security" ||
+    key === "commanders-admin-investigations";
 
   // Render comprehensive content components for specific commander sections
   if (hasComprehensiveContent) {
@@ -148,6 +150,9 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     }
     if (key === "commanders-security") {
       return <SecurityProgramsContent />;
+    }
+    if (key === "commanders-admin-investigations") {
+      return <AdminInvestigationsContent />;
     }
   }
 
