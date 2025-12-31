@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Breadcrumb } from "../ui/Breadcrumb";
 import { Acronym } from "../ui/Acronym";
+import { MCO_URLS } from "../../data/references";
 import {
   ArrowRightLeft,
   Clock,
@@ -780,12 +781,12 @@ export function TransitionOfCommandContent() {
             <div className="space-y-2">
               {[
                 { name: "CMC White Letter 3-17", desc: "Status of Command", url: "#" },
-                { name: "MCO 4400.201 Vol 3", desc: "Management of Property", url: "https://www.marines.mil/News/Publications/MCPEL/" },
-                { name: "MCO 5100.29C", desc: "Safety Management System", url: "https://www.marines.mil/News/Publications/MCPEL/" },
-                { name: "MCO 1752.5C", desc: "SAPR Program", url: "https://www.marines.mil/portals/1/Publications/MCO%201752.5C.pdf?ver=2019-06-10-115714-627" },
-                { name: "MCO 1754.9B", desc: "Unit, Personal and Family Readiness", url: "https://www.marines.mil/News/Publications/MCPEL/" },
-                { name: "MCO P5354.1E", desc: "Prohibited Activities and Conduct", url: "https://www.marines.mil/Portals/1/Publications/MCO%205354.1G%20Admin%20Ch%201%20v2.pdf?ver=Zx2KQaYufT6GZ4AhSHjBgg%3d%3d" },
-                { name: "MCO 3000.13B", desc: "Unit Readiness", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+                { name: "MCO 4400.201 Vol 3", desc: "Management of Property", url: MCO_URLS.PROPERTY_MANAGEMENT_VOL3 },
+                { name: "MCO 5100.29C", desc: "Safety Management System", url: MCO_URLS.SAFETY_MANAGEMENT },
+                { name: "MCO 1752.5C", desc: "SAPR Program", url: MCO_URLS.SAPR },
+                { name: "MCO 1754.9B", desc: "Unit, Personal and Family Readiness", url: MCO_URLS.FAMILY_READINESS },
+                { name: "MCO P5354.1E", desc: "Prohibited Activities and Conduct", url: MCO_URLS.PAC_PREVENTION },
+                { name: "MCO 3000.13B", desc: "Unit Readiness", url: MCO_URLS.READINESS_REPORTING },
               ].map((link) => (
                 <a
                   key={link.name}

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Breadcrumb } from "../ui/Breadcrumb";
 import { LastUpdated } from "../ui/LastUpdated";
 import { Acronym } from "../ui/Acronym";
+import { MCO_URLS, NAVY_DOD_URLS } from "../../data/references";
 import {
   ChevronDown,
   ChevronRight,
@@ -97,11 +98,11 @@ export function CommandAuthorityContent() {
   ];
 
   const keyReferences = [
-    { title: "MCO 5800.16", desc: "Legal Support and Administration Manual", href: "https://www.marines.mil/News/Publications/MCPEL/" },
-    { title: "Manual for Courts-Martial", desc: "MCM - UCMJ procedures", href: "https://jsc.defense.gov/Military-Law/" },
-    { title: "MCO 1900.16", desc: "Separation and Retirement Manual", href: "https://www.marines.mil/News/Publications/MCPEL/" },
-    { title: "MCO 1730.9", desc: "Accommodation of Religious Practices", href: "https://www.marines.mil/News/Publications/MCPEL/" },
-    { title: "MCO 1700.23G", desc: "Request Mast Procedures", href: "https://www.marines.mil/News/Publications/MCPEL/" },
+    { title: "MCO 5800.16", desc: "Legal Support and Administration Manual", href: MCO_URLS.LEGADMINMAN },
+    { title: "Manual for Courts-Martial", desc: "MCM - UCMJ procedures", href: NAVY_DOD_URLS.MCM },
+    { title: "MCO 1900.16", desc: "Separation and Retirement Manual", href: MCO_URLS.MARCORSEPMAN_PDF },
+    { title: "MCO 1730.9", desc: "Accommodation of Religious Practices", href: MCO_URLS.RELIGIOUS_ACCOMMODATION },
+    { title: "MCO 1700.23G", desc: "Request Mast Procedures", href: MCO_URLS.REQUEST_MAST },
   ];
 
   const fieldGradeEnlisted = [
