@@ -51,6 +51,89 @@ export const MCO_URLS = {
 
   /** NAVMC 1720.1C - Marine Corps Suicide Prevention Program */
   SUICIDE_PREVENTION: "https://www.marines.mil/Portals/1/Publications/NAVMC%201720.1C%20(SECURED).pdf?ver=-1H0zM0QRwyCKyAoKoN0ow%3d%3d",
+
+  /** MCO 1730.9 - Religious Ministry in the Marine Corps */
+  RELIGIOUS_MINISTRY: "https://www.marines.mil/Portals/1/Publications/MCO%201730.9.pdf?ver=EEMe3SQH2P9-Z4Bs1GIwtQ%3d%3d",
+
+  /** MCO 1754.9B - Unit, Personal and Family Readiness Program */
+  FAMILY_READINESS: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677",
+
+  /** MCO 1754.11A - Marine Corps Family Advocacy Program */
+  FAMILY_ADVOCACY: "https://www.marines.mil/Portals/1/Publications/MCO%201754.11A.pdf?ver=Xfzb1swgy1MRif5KfEGRlg%3d%3d",
+
+  /** MCO P5354.1E - Prohibited Activities and Conduct Prevention and Response */
+  PROHIBITED_ACTIVITIES: "https://www.marines.mil/Portals/1/Publications/MCO%205354.1G%20Admin%20Ch%201%20v2.pdf?ver=Zx2KQaYufT6GZ4AhSHjBgg%3d%3d",
+
+  /** MCO 5300.17A - Marine Corps Substance Abuse Program */
+  SUBSTANCE_ABUSE: "https://www.marines.mil/Portals/1/Publications/MCO%205300.17A%20W%20ADMIN%20CH-2%20(SECURED).pdf?ver=PrWep3QFQ0oHhng0wLSm0Q%3d%3d",
+
+  /** MCO 3000.13B - Marine Corps Readiness Reporting */
+  READINESS_REPORTING: "https://www.marines.mil/Portals/1/Publications/MCO%203000.13B.pdf?ver=2020-07-15-110758-503",
+
+  /** MCO 1553.3C - Unit Training Management */
+  UNIT_TRAINING: "https://www.marines.mil/Portals/1/Publications/MCO%201553.3C%20(SECURED).pdf?ver=cJBS_XHosQr2aAvK6059Qw%3d%3d",
+
+  /** MCO 3500.110 - Marine Corps Tactical Training System Management */
+  TACTICAL_TRAINING: "https://www.marines.mil/portals/1/Publications/MCO%203500.110.pdf",
+
+  /** NAVMC 3500.27D - Marine Corps Ground Training and Readiness Manual */
+  GROUND_TRAINING: "https://www.marines.mil/portals/1/Publications/NAVMC%203500.27D.pdf?ver=2019-05-07-104242-857",
+
+  /** MCO 5100.29C - Marine Corps Safety Management System */
+  SAFETY_MANAGEMENT: "https://www.marines.mil/Portals/1/Publications/MCO%205100.29C%20with%20CH%201-2%20and%20Volumes%201-9.pdf?ver=xpHxSYo4uELfIUj-IhgLOA%3d%3d",
+
+  /** MCO 5510.18B - Information and Personnel Security Program */
+  PERSONNEL_SECURITY: "https://www.marines.mil/portals/1/Publications/MCO%205510.18B.pdf?ver=2017-01-31-083110-020",
+
+  /** MCO 5530.14A - Marine Corps Physical Security Program */
+  PHYSICAL_SECURITY: "https://www.marines.mil/portals/1/Publications/MCO%205530_14A.pdf?ver=2012-10-11-163834-660",
+
+  /** MCO 3070.2A - OPSEC */
+  OPSEC: "https://www.marines.mil/portals/1/Publications/MCO%203070.2A.pdf",
+
+  /** MCO 5090.2 - Environmental Compliance and Protection Program */
+  ENVIRONMENTAL: "https://www.marines.mil/portals/1/Publications/MCO%205090.2.pdf?ver=2018-06-18-114045-040",
+} as const;
+
+// ============================================================================
+// MCO 4400.201 - Management of Property in the Possession of the Marine Corps
+// ============================================================================
+export const MCO_4400_201_URLS = {
+  /** MCO 4400.201 Volume 1 - Property Administration */
+  VOL_1: "https://www.marines.mil/Portals/1/Publications/MCO%204400%20201%20Volume%201%20v2.pdf?ver=2018-07-26-133316-447",
+
+  /** MCO 4400.201 Volume 2 - Inventory Management */
+  VOL_2: "https://www.marines.mil/Portals/1/Publications/MCO%204400.201%20Volume%202%20v2.pdf?ver=2018-07-26-134100-227",
+
+  /** MCO 4400.201 Volume 3 - Accountability */
+  VOL_3: "https://www.marines.mil/Portals/1/Publications/MCO%204400.201%20Volume%203%20v2.pdf?ver=2018-07-26-135024-433",
+
+  /** MCO 4400.201 Volume 4 - Stock Management */
+  VOL_4: "https://www.marines.mil/Portals/1/Publications/MCO%204400.201%20Volume%204%20v2.pdf?ver=2018-07-26-140045-667",
+
+  /** MCO 4400.201 Volume 6 - Disposal */
+  VOL_6: "https://www.marines.mil/Portals/1/Publications/MCO%204400.201%20Volume%206%20v2.pdf?ver=2018-07-26-141813-297",
+
+  /** MCO 4400.201 Volume 7 - Ammunition Management */
+  VOL_7: "https://www.marines.mil/Portals/1/Publications/MCO%204400.201%20CH-2%20Vol%207.pdf?ver=2020-03-04-130415-487",
+
+  /** MCO 4400.201 Volume 10 - Consumer Level Supply */
+  VOL_10: "https://www.marines.mil/Portals/1/Publications/MCO%204400.201%20Volume%2010%20v2.pdf?ver=2018-07-26-150241-223",
+
+  /** MCO 4400.201 Volume 12 - Special Accounts */
+  VOL_12: "https://www.marines.mil/Portals/1/Publications/MCO%204400.201%20Volume%2012%20v2.pdf?ver=2018-07-26-150737-457",
+
+  /** MCO 4400.201 Volume 13 - Property Adjustments */
+  VOL_13: "https://www.marines.mil/Portals/1/Publications/MCO%204400.201%20Volume%2013%20v2.pdf?ver=2018-07-26-152003-973",
+
+  /** MCO 4400.201 Volume 14 - Material Returns */
+  VOL_14: "https://www.marines.mil/Portals/1/Publications/MCO%204400.201%20Volume%2014%20v2.pdf?ver=2018-07-26-152459-177",
+
+  /** MCO 4400.201 Volume 15 - Retail Operations */
+  VOL_15: "https://www.marines.mil/Portals/1/Publications/MCO%204400%20201%20Vol%2015.pdf?ver=2018-07-26-092314-733",
+
+  /** MCO 4400.201 Volume 17 - GCSS-MC */
+  VOL_17: "https://www.marines.mil/Portals/1/Publications/MCO%204400.201%20Vol%2017.pdf?ver=2018-07-26-094644-517",
 } as const;
 
 // ============================================================================

@@ -212,7 +212,7 @@ export function SecurityProgramsContent() {
             <ul className="space-y-1">
               <li>SECNAVINST 5510.36 (DON Information Security Program)</li>
               <li>MCO 5510.18A (Information and Personnel Security Program)</li>
-              <li>MCO 3302.1 (OPSEC)</li>
+              <li>MCO 3070.2A (OPSEC)</li>
               <li>MCO 5530.14A (Physical Security)</li>
               <li>DoDI 5240.26 (Insider Threat Program)</li>
               <li>MCO 3500.27B (Antiterrorism Program)</li>
@@ -924,7 +924,7 @@ export function SecurityProgramsContent() {
               <li className="text-[var(--sa-cream)]/70">
                 • MCO 5510.18A (Information and Personnel Security Program)
               </li>
-              <li className="text-[var(--sa-cream)]/70">• MCO 3302.1 (OPSEC)</li>
+              <li className="text-[var(--sa-cream)]/70">• MCO 3070.2A (OPSEC)</li>
               <li className="text-[var(--sa-cream)]/70">• MCO 5530.14A (Physical Security)</li>
               <li className="text-[var(--sa-cream)]/70">
                 • DoDI 5240.26 (Insider Threat Program)

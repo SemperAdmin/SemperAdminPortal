@@ -792,12 +792,12 @@ export function TransitionOfCommandContent() {
             <div className="space-y-2">
               {[
                 { name: "CMC White Letter 3-17", desc: "Status of Command", url: "" },
-                { name: "MCO 4400.201 Vol 3", desc: "Management of Property", url: "https://www.marines.mil/News/Publications/MCPEL/" },
-                { name: "MCO 5100.29C", desc: "Safety Management System", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+                { name: "MCO 4400.201 Vol 3", desc: "Management of Property", url: "https://www.marines.mil/Portals/1/Publications/MCO%204400.201%20Volume%203%20v2.pdf?ver=2018-07-26-135024-433" },
+                { name: "MCO 5100.29C", desc: "Safety Management System", url: "https://www.marines.mil/Portals/1/Publications/MCO%205100.29C%20with%20CH%201-2%20and%20Volumes%201-9.pdf?ver=xpHxSYo4uELfIUj-IhgLOA%3d%3d" },
                 { name: "MCO 1752.5C", desc: "SAPR Program", url: "https://www.marines.mil/portals/1/Publications/MCO%201752.5C.pdf?ver=2019-06-10-115714-627" },
-                { name: "MCO 1754.9B", desc: "Unit, Personal and Family Readiness", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+                { name: "MCO 1754.9B", desc: "Unit, Personal and Family Readiness", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677" },
                 { name: "MCO P5354.1E", desc: "Prohibited Activities and Conduct", url: "https://www.marines.mil/Portals/1/Publications/MCO%205354.1G%20Admin%20Ch%201%20v2.pdf?ver=Zx2KQaYufT6GZ4AhSHjBgg%3d%3d" },
-                { name: "MCO 3000.13B", desc: "Unit Readiness", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+                { name: "MCO 3000.13B", desc: "Unit Readiness", url: "https://www.marines.mil/Portals/1/Publications/MCO%203000.13B.pdf?ver=2020-07-15-110758-503" },
               ].map((link) =>
                 link.url ? (
                   <a

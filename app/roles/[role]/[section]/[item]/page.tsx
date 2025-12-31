@@ -2601,13 +2601,13 @@ const MARINE_LEADER_NOTEBOOKS_DATA = {
 // Leaders - Deployment & Readiness
 const UPFRP_OVERVIEW_DATA = {
   references: [
-    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899530/mco-17549b/" },
+    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677" },
   ],
 };
 
 const DEPLOYMENT_TRAINING_EVENTS_DATA = {
   references: [
-    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899530/mco-17549b/" },
+    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677" },
   ],
 };
 
@@ -2641,14 +2641,14 @@ const PHYSICAL_FITNESS_READINESS_DATA = {
 
 const PRE_DEPLOYMENT_CHECKLIST_DATA = {
   references: [
-    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899530/mco-17549b/" },
+    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677" },
     { title: "MCO 3000.11E - Marine Corps Deployment Planning", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899716/mco-300011e/" },
   ],
 };
 
 const SUPPORTING_IAS_AND_TAD_DATA = {
   references: [
-    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899530/mco-17549b/" },
+    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677" },
   ],
 };
 
@@ -2780,7 +2780,7 @@ const RECORD_KEEPING_DOCUMENTATION_DATA = {
 // Leaders - Administrative Systems DATA
 const MCTFS_OVERVIEW_DATA = {
   references: [
-    { title: "MCO 1754.9B - Unit, Personal and Family Readiness", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899257/mco-17549b/" },
+    { title: "MCO 1754.9B - Unit, Personal and Family Readiness", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677" },
     { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
     { title: "MCO 1040.31 - Enlisted Retention", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
   ],
