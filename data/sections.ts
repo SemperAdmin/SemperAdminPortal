@@ -134,6 +134,34 @@ export const SECTIONS: Record<string, Section> = {
     ],
   },
 
+  "life-events": {
+    title: "Life Events",
+    intro: "Major life events require specific administrative actions within set timelines. These step-by-step guides walk you through everything you need to do, when to do it, and what documents you'll need. Complete each checklist to ensure you receive all entitled benefits.",
+    groups: [
+      {
+        title: "Family Changes",
+        items: [
+          { title: "Getting Married", slug: "getting-married", desc: "Add your spouse to DEERS, update BAH, and complete all required documentation" },
+          { title: "Having a Baby", slug: "having-a-baby", desc: "Register your child, update DEERS and SGLI, and claim all entitled benefits" },
+        ],
+      },
+      {
+        title: "Moves & Assignments",
+        items: [
+          { title: "PCS Move", slug: "pcs-move", desc: "Complete checkout, arrange household goods shipment, and check in at new duty station" },
+          { title: "Deploying", slug: "deploying", desc: "Verify readiness, update legal documents, and ensure family is prepared" },
+        ],
+      },
+      {
+        title: "Career Transitions",
+        items: [
+          { title: "Getting Out (EAS)", slug: "getting-out", desc: "Complete TAPS, final checkout, and transition to civilian life" },
+          { title: "Buying a Home", slug: "buying-a-home", desc: "Use VA loan benefits, navigate BAH considerations, and complete the purchase" },
+        ],
+      },
+    ],
+  },
+
   "insurance-healthcare": {
     title: "Insurance & Healthcare",
     intro: "Insurance and healthcare benefits protect you and your family from financial hardship due to death, injury, or medical expenses. Understanding your coverage options ensures you have adequate protection and can make informed decisions about optional benefits.",

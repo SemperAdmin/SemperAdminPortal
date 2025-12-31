@@ -1,6 +1,7 @@
 import { type Role } from "../../../data/links";
 import { Breadcrumb } from "../../../components/ui/Breadcrumb";
 import Link from "next/link";
+import { Heart, Baby, Plane } from "lucide-react";
 import fs from "fs/promises";
 import path from "path";
 
@@ -35,15 +36,17 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
   const categories: { label: string; slug: string }[] = [
     { label: "Dependency Management", slug: "dependency-management" },
     { label: "Deployment Support", slug: "deployment-support" },
+    { label: "Education & Training", slug: "education-training" },
+    { label: "Insurance & Healthcare", slug: "insurance-healthcare" },
     { label: "Legal & Disciplinary", slug: "legal-disciplinary" },
+    { label: "Life Events", slug: "life-events" },
     { label: "Pay & Allowances", slug: "pay-allowances" },
     { label: "Personnel Administration", slug: "personnel-administration" },
     { label: "Promotions & Career Progression", slug: "promotions-career-progression" },
     { label: "Records & Corrections", slug: "records-corrections" },
     { label: "Reserve & Mobilization", slug: "reserve-mobilization" },
-    { label: "Separation & Transitions", slug: "separation-transitions" },
+    { label: "Separations & Transitions", slug: "separations-transitions" },
     { label: "Systems Management", slug: "systems-management" },
-    { label: "Training & Education", slug: "training-education" },
     { label: "Travel & Transportation", slug: "travel-transportation" },
   ];
   const isAdministrators = safeRole === "administrators";
@@ -210,11 +213,56 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
     );
   }
 
+  // Featured life events for All Marines page
+  const featuredLifeEvents = [
+    { title: "Getting Married", slug: "getting-married", icon: Heart, color: "rose", desc: "Add spouse to DEERS & update BAH" },
+    { title: "Having a Baby", slug: "having-a-baby", icon: Baby, color: "sky", desc: "Register child & claim benefits" },
+    { title: "PCS Move", slug: "pcs-move", icon: Plane, color: "amber", desc: "Checkout, HHG & check-in" },
+  ];
+
   return (
     <div className="space-y-8">
       <Breadcrumb items={breadcrumbItems} />
       <h1 className="text-3xl font-bold tracking-tight text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{roleTitle} Home</h1>
       <p className="text-zinc-700 dark:text-zinc-300">This page helps {safeRole === "marines" ? "every Marine" : roleTitle.toLowerCase()} understand and manage their administrative requirements. You will find guidance, checklists, and tools for pay, leave, travel, and readiness actions. The goal is to make admin simple, accurate, and accessible so you can stay focused on your mission.</p>
+
+      {/* Featured Life Events Section - Only show for Marines */}
+      {safeRole === "marines" && (
+        <section className="rounded-xl border-2 border-[var(--sa-gold)] bg-gradient-to-r from-amber-50 to-orange-50 p-6 shadow-sm dark:from-amber-950/30 dark:to-orange-950/30">
+          <div className="flex items-center justify-between">
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Life Events Guides</h2>
+            <Link href="/roles/marines/life-events" prefetch={false} className="text-sm text-[var(--sa-red)] hover:underline">
+              View all →
+            </Link>
+          </div>
+          <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">Step-by-step checklists for major life events. Know exactly what to do and when.</p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-3">
+            {featuredLifeEvents.map((event) => {
+              const Icon = event.icon;
+              return (
+                <Link
+                  key={event.slug}
+                  href={`/life-events/${event.slug}`}
+                  prefetch={false}
+                  className="group flex items-center gap-3 rounded-lg border border-black/10 bg-white p-3 shadow-sm transition hover:border-[var(--sa-navy)]/30 hover:shadow-md dark:border-white/15 dark:bg-black/40"
+                >
+                  <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${
+                    event.color === "rose" ? "bg-rose-100 text-rose-600 dark:bg-rose-900/30 dark:text-rose-400" :
+                    event.color === "sky" ? "bg-sky-100 text-sky-600 dark:bg-sky-900/30 dark:text-sky-400" :
+                    "bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400"
+                  }`}>
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <div className="min-w-0">
+                    <div className="font-medium text-[var(--sa-navy)] group-hover:text-[var(--sa-red)] dark:text-[var(--sa-cream)]">{event.title}</div>
+                    <div className="text-xs text-zinc-500 dark:text-zinc-400">{event.desc}</div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {visibleItems.map((c) => (
