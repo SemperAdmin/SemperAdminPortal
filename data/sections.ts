@@ -604,23 +604,33 @@ export const SECTIONS: Record<string, Section> = {
 
   "leaders-counseling-documentation": {
     title: "Counseling & Documentation",
-    intro: "Proper counseling and documentation protects both Marines and the command. This section covers the different types of counseling entries, when to use each, and how to write effective documentation that stands up to scrutiny.",
+    intro: "MCO 1500.61 establishes the Marine Leader Development framework. This section covers the Six Functional Areas, SMART goals, counseling fundamentals, and documentation practices that help leaders develop their Marines holistically.",
     groups: [
       {
-        title: "Administrative Entries",
+        title: "Marine Leader Development Framework",
         items: [
-          { title: "Page 11 vs 6105 Decision Matrix", slug: "page11-vs-6105", desc: "When to use Page 11 entries versus 6105 counseling" },
-          { title: "Writing Effective Page 11 Entries", slug: "writing-page11-entries", desc: "Crafting clear, factual administrative remarks" },
-          { title: "6105 Counseling Requirements", slug: "6105-counseling-requirements", desc: "The four required elements of a valid 6105 entry" },
-          { title: "Non-Punitive Letter of Caution (NPLOC)", slug: "nploc-guidance", desc: "When and how to issue an NPLOC" },
+          { title: "The Six Functional Areas", slug: "six-functional-areas", desc: "Fidelity, Fighter, Fitness, Family, Finances, and Future" },
+          { title: "SMART Goals and How They Apply", slug: "smart-goals", desc: "Setting Specific, Measurable, Achievable, Relevant, Time-Bound goals" },
         ],
       },
       {
-        title: "Performance Counseling",
+        title: "Counseling Fundamentals",
         items: [
-          { title: "MRO Counseling Before Adverse FITREPs", slug: "mro-counseling", desc: "Required counseling before issuing adverse fitness reports" },
-          { title: "Rebuttal Rights and Timelines", slug: "rebuttal-rights-timelines", desc: "Understanding Marine rights to rebut adverse documentation" },
-          { title: "Common Documentation Errors", slug: "common-documentation-errors", desc: "Avoid mistakes that invalidate counseling entries" },
+          { title: "Counseling Fundamentals", slug: "counseling-fundamentals", desc: "Types and process of counseling per NAVMC 2795" },
+          { title: "Required Counseling Occasions", slug: "required-counseling-occasions", desc: "Mandatory and recommended occasions for formal counseling" },
+        ],
+      },
+      {
+        title: "Conducting Counseling Sessions",
+        items: [
+          { title: "Conducting an Initial Counseling Session", slug: "initial-counseling-session", desc: "Objectives, topics, and best practices for the ICS" },
+          { title: "Conducting Follow-On Counseling Sessions", slug: "follow-on-counseling-sessions", desc: "Purpose, process, and frequency of follow-on sessions" },
+        ],
+      },
+      {
+        title: "Documentation",
+        items: [
+          { title: "Marine Leader Notebooks", slug: "marine-leader-notebooks", desc: "What to document and guidelines from NAVMC 2795" },
         ],
       },
     ],
@@ -628,29 +638,29 @@ export const SECTIONS: Record<string, Section> = {
 
   "leaders-deployment-readiness": {
     title: "Deployment & Readiness",
-    intro: "Preparing Marines for deployment requires attention to administrative details that protect service members and their families. This section covers pre-deployment checklists, family readiness, and post-deployment administrative requirements.",
+    intro: "Individual readiness is a commander's program. You execute it at the small unit level by tracking requirements, identifying deficiencies, and ensuring Marines are prepared to deploy on time. This section covers UPFRP, individual readiness, and deployment preparation.",
     groups: [
       {
-        title: "Pre-Deployment",
+        title: "Family Readiness Program",
         items: [
-          { title: "Pre-Deployment Administrative Checklist", slug: "pre-deployment-checklist", desc: "Complete administrative requirements before deployment" },
-          { title: "Verifying SGLI and Beneficiary Elections", slug: "sgli-beneficiary-verification", desc: "Ensure life insurance coverage is current and accurate" },
-          { title: "DD93 and Page 2 Verification", slug: "dd93-page2-verification", desc: "Verify emergency contact and next of kin information" },
-          { title: "Family Care Plan Requirements", slug: "family-care-plan-requirements", desc: "Ensure single parents and dual-military have valid plans" },
+          { title: "UPFRP Overview", slug: "upfrp-overview", desc: "Unit, Personal and Family Readiness Program fundamentals" },
+          { title: "Deployment Training Events", slug: "deployment-training-events", desc: "Pre, mid, return/reunion, and post-deployment briefs" },
         ],
       },
       {
-        title: "Documentation and ID",
+        title: "Individual Readiness",
         items: [
-          { title: "DEERS and ID Card Currency", slug: "deers-id-currency", desc: "Verify dependent enrollment and ID card expiration dates" },
-          { title: "Power of Attorney Guidance", slug: "poa-guidance", desc: "Advise Marines on POA types and legal assistance" },
+          { title: "Individual Readiness Requirements", slug: "individual-readiness-requirements", desc: "Medical, dental, training, administrative, and legal readiness" },
+          { title: "Family Care Plan Requirements", slug: "family-care-plan-requirements", desc: "Requirements for single parents and dual-military couples" },
+          { title: "Obligated Service for Deployment", slug: "obligated-service-deployment", desc: "Extensions, RE-3O consequences, and Career Planner coordination" },
+          { title: "Physical Fitness Readiness", slug: "physical-fitness-readiness", desc: "PFT/CFT requirements and failure consequences" },
         ],
       },
       {
-        title: "Post-Deployment",
+        title: "Deployment Preparation",
         items: [
-          { title: "Post-Deployment Administrative Actions", slug: "post-deployment-actions", desc: "Required admin tasks upon return from deployment" },
-          { title: "Family Readiness Program Responsibilities", slug: "family-readiness-responsibilities", desc: "Leader role in supporting families during and after deployment" },
+          { title: "Pre-Deployment Checklist", slug: "pre-deployment-checklist", desc: "Administrative, medical, training, and family readiness checklists" },
+          { title: "Supporting IAs and TAD Marines", slug: "supporting-ias-and-tad", desc: "Parent and gaining command responsibilities for individual augmentees" },
         ],
       },
     ],
@@ -658,31 +668,36 @@ export const SECTIONS: Record<string, Section> = {
 
   "leaders-performance-evaluation": {
     title: "Performance Evaluation",
-    intro: "Performance evaluations directly impact Marine careers. This section covers fitness report responsibilities, JEPES for junior Marines, counseling requirements, and how to write effective evaluations that accurately reflect performance.",
+    intro: "Performance evaluations directly impact Marine careers. This section covers JEPES for junior Marines (E-1 through E-4), fitness reports for SNCOs, reporting chain responsibilities, and how to write accurate evaluations that serve both Marines and the institution.",
     groups: [
+      {
+        title: "JEPES Fundamentals",
+        items: [
+          { title: "JEPES Overview", slug: "jepes-overview", desc: "Understanding the four pillars, scoring, and key concepts" },
+          { title: "JEPES Reporting Chain and Roles", slug: "jepes-reporting-chain", desc: "MRO, FLS, Evaluator, SER, Reviewer, and Approver responsibilities" },
+          { title: "JEPES Reporting Occasions", slug: "jepes-reporting-occasions", desc: "When evaluations are required and occasion codes" },
+        ],
+      },
+      {
+        title: "JEPES Evaluation",
+        items: [
+          { title: "Command Input Evaluation Metrics", slug: "jepes-command-input-metrics", desc: "Individual Character, MOS/Mission, Leadership marking guidelines" },
+          { title: "NOT REC (Not Recommended)", slug: "not-rec", desc: "When and how to indicate not recommended for promotion" },
+          { title: "Objective Scores and Verification", slug: "jepes-objective-scores", desc: "Warfighting, Physical Toughness, Mental Agility verification" },
+        ],
+      },
+      {
+        title: "JEPES Administration",
+        items: [
+          { title: "Debriefing Marines", slug: "jepes-debriefing", desc: "How to conduct effective evaluation debriefs" },
+          { title: "Billet Accomplishments", slug: "billet-accomplishments", desc: "Writing specific, quantifiable accomplishments" },
+          { title: "Corrective Procedures", slug: "jepes-corrective-procedures", desc: "Late-run scores and command input corrections" },
+        ],
+      },
       {
         title: "Fitness Reports",
         items: [
-          { title: "RS and RO Responsibilities", slug: "rs-ro-responsibilities", desc: "Understanding Reporting Senior and Reviewing Officer roles" },
-          { title: "Establishing Billet Descriptions", slug: "billet-descriptions", desc: "30-day requirement for establishing billet descriptions" },
-          { title: "Ongoing Counseling During Reporting Period", slug: "ongoing-counseling", desc: "Documenting performance throughout the reporting period" },
-          { title: "Writing Effective Fitness Reports", slug: "writing-effective-fitreps", desc: "Techniques for writing accurate and impactful evaluations" },
-          { title: "Adverse Fitness Report Process", slug: "adverse-fitrep-process", desc: "Requirements and procedures for adverse reports" },
-        ],
-      },
-      {
-        title: "Understanding Evaluations",
-        items: [
-          { title: "Relative Value and Profiles", slug: "relative-value-profiles", desc: "How RV and RS profiles affect career progression" },
-          { title: "FITREP Submission Timelines", slug: "fitrep-timelines", desc: "30-day standard and 60-day adverse submission requirements" },
-          { title: "Common FITREP Errors", slug: "common-fitrep-errors", desc: "Avoid mistakes that harm Marines or require correction" },
-        ],
-      },
-      {
-        title: "JEPES",
-        items: [
-          { title: "JEPES Overview", slug: "jepes-overview", desc: "Understanding the Junior Enlisted Performance Evaluation System" },
-          { title: "JEPES Command Input", slug: "jepes-command-input", desc: "How leaders provide input to JEPES evaluations" },
+          { title: "Fitness Reports (E-5 and Above)", slug: "fitness-reports-leaders", desc: "Key differences from JEPES and RS/RO responsibilities" },
         ],
       },
     ],
