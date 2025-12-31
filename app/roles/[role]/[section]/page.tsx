@@ -1,8 +1,9 @@
 import { type Role, catalogGroups, reportGroups, type CatalogGroup } from "../../../../data/links";
-import { SECTIONS, ADMIN_ONLY_SECTIONS } from "../../../../data/sections";
+import { SECTIONS, ADMIN_ONLY_SECTIONS, LEADER_SECTIONS, COMMANDER_SECTIONS } from "../../../../data/sections";
 import { Breadcrumb } from "../../../../components/ui/Breadcrumb";
 import Link from "next/link";
 import CatalogGrid from "../../../../components/CatalogGrid";
+import { CommandAuthorityContent } from "../../../../components/commanders/CommandAuthorityContent";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -53,6 +54,14 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     { label: roleLabel, href: `/roles/${safeRole}` },
     { label: section.title },
   ];
+
+  // Check for commander sections with comprehensive content pages
+  const hasComprehensiveContent = key === "commanders-authority-legal";
+
+  // Render comprehensive content components for specific commander sections
+  if (hasComprehensiveContent && key === "commanders-authority-legal") {
+    return <CommandAuthorityContent />;
+  }
 
   return (
     <div className="space-y-8">
@@ -183,7 +192,12 @@ export function generateStaticParams(): { role: Role; section: string }[] {
   const params: { role: Role; section: string }[] = [];
   for (const role of roles) {
     for (const section of sections) {
+      // Admin-only sections only for administrators
       if (ADMIN_ONLY_SECTIONS.has(section) && role !== "administrators") continue;
+      // Leader sections only for leaders
+      if (LEADER_SECTIONS.has(section) && role !== "leaders") continue;
+      // Commander sections only for commanders
+      if (COMMANDER_SECTIONS.has(section) && role !== "commanders") continue;
       params.push({ role, section });
     }
   }
