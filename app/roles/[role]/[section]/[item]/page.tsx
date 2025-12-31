@@ -234,6 +234,21 @@ import { JEPESDebriefingContent } from "../../../../../components/leaders/JEPESD
 import { FitnessReportsLeadersContent } from "../../../../../components/leaders/FitnessReportsLeadersContent";
 import { BilletAccomplishmentsContent } from "../../../../../components/leaders/BilletAccomplishmentsContent";
 import { JEPESCorrectiveProceduresContent } from "../../../../../components/leaders/JEPESCorrectiveProceduresContent";
+// Leaders - Personnel Accountability
+import { DailyAccountabilityFundamentalsContent } from "../../../../../components/leaders/DailyAccountabilityFundamentalsContent";
+import { GainsLossesProcessingContent } from "../../../../../components/leaders/GainsLossesProcessingContent";
+import { LeaveLibrtyManagementContent } from "../../../../../components/leaders/LeaveLibrtyManagementContent";
+import { UAProceduresContent } from "../../../../../components/leaders/UAProceduresContent";
+import { TADDetachmentTrackingContent } from "../../../../../components/leaders/TADDetachmentTrackingContent";
+import { MusterFormationProceduresContent } from "../../../../../components/leaders/MusterFormationProceduresContent";
+import { RecordKeepingDocumentationContent } from "../../../../../components/leaders/RecordKeepingDocumentationContent";
+// Leaders - Administrative Systems
+import { MCTFSOverviewContent } from "../../../../../components/leaders/MCTFSOverviewContent";
+import { MOLNavigationContent } from "../../../../../components/leaders/MOLNavigationContent";
+import { JEPESSystemNavigationContent } from "../../../../../components/leaders/JEPESSystemNavigationContent";
+import { TFRSOverviewContent } from "../../../../../components/leaders/TFRSOverviewContent";
+import { UnitDiaryReportingContent } from "../../../../../components/leaders/UnitDiaryReportingContent";
+import { TrainingInformationSystemsContent } from "../../../../../components/leaders/TrainingInformationSystemsContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -2669,6 +2684,106 @@ const JEPES_CORRECTIVE_PROCEDURES_DATA = {
   ],
 };
 
+// Leaders - Personnel Accountability DATA
+const DAILY_ACCOUNTABILITY_FUNDAMENTALS_DATA = {
+  references: [
+    { title: "MCO 1040.31 - Time Lost", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
+    { title: "MCO 1050.3 - Leave and Liberty", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899184/mco-10503k/" },
+  ],
+};
+
+const GAINS_LOSSES_PROCESSING_DATA = {
+  references: [
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/" },
+    { title: "MCO 1040.31 - Time Lost", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
+  ],
+};
+
+const LEAVE_LIBERTY_MANAGEMENT_DATA = {
+  references: [
+    { title: "MCO 1050.3 - Leave and Liberty", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899184/mco-10503k/" },
+    { title: "DoD FMR Vol 7A, Ch 34 - Leave", url: "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_34.pdf" },
+  ],
+};
+
+const UA_PROCEDURES_DATA = {
+  references: [
+    { title: "MCO 1040.31 - Time Lost", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/" },
+    { title: "UCMJ Article 86 - Absence Without Leave", url: "https://www.law.cornell.edu/uscode/text/10/886" },
+  ],
+};
+
+const TAD_DETACHMENT_TRACKING_DATA = {
+  references: [
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/" },
+    { title: "JTR - Joint Travel Regulations", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/" },
+  ],
+};
+
+const MUSTER_FORMATION_PROCEDURES_DATA = {
+  references: [
+    { title: "MCO 1040.31 - Time Lost", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
+    { title: "MCO P1050.3 - Leave and Liberty", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899184/mco-10503k/" },
+  ],
+};
+
+const RECORD_KEEPING_DOCUMENTATION_DATA = {
+  references: [
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/" },
+    { title: "MCTFS User Guide", url: "https://www.manpower.usmc.mil/webcenter/portal/MCTFS" },
+    { title: "MCO 5210.11 - Records Management", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899348/mco-521011f/" },
+  ],
+};
+
+// Leaders - Administrative Systems DATA
+const MCTFS_OVERVIEW_DATA = {
+  references: [
+    { title: "MCO 1754.9B - Unit, Personal and Family Readiness", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899257/mco-17549b/" },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "MCO 1040.31 - Enlisted Retention", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
+  ],
+};
+
+const MOL_NAVIGATION_DATA = {
+  references: [
+    { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil", isQuickLink: true },
+    { title: "MarineNet", url: "https://www.usmclearning.usmc.mil", isQuickLink: true },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+  ],
+};
+
+const JEPES_SYSTEM_NAVIGATION_DATA = {
+  references: [
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil", isQuickLink: true },
+  ],
+};
+
+const TFRS_OVERVIEW_DATA = {
+  references: [
+    { title: "MCO 1040.31 - Enlisted Retention", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
+    { title: "NAVMC 11537 - Reenlistment Screening", url: "https://forms.documentservices.dla.mil/order/" },
+  ],
+};
+
+const UNIT_DIARY_REPORTING_DATA = {
+  references: [
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/" },
+    { title: "MCO 6100.13A - Physical Fitness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899201/mco-610013a/" },
+    { title: "MCTFS PRIUM", url: "https://www.manpower.usmc.mil/webcenter/portal/MCTFS" },
+  ],
+};
+
+const TRAINING_INFORMATION_SYSTEMS_DATA = {
+  references: [
+    { title: "MCO 6100.13A - Physical Fitness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899201/mco-610013a/" },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "MarineNet", url: "https://www.usmclearning.usmc.mil", isQuickLink: true },
+    { title: "Fitness Marines", url: "http://www.fitness.marines.mil", isQuickLink: true },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -3037,6 +3152,21 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "fitness-reports-leaders": <FitnessReportsLeadersContent data={FITNESS_REPORTS_LEADERS_DATA} />,
     "billet-accomplishments": <BilletAccomplishmentsContent data={BILLET_ACCOMPLISHMENTS_DATA} />,
     "jepes-corrective-procedures": <JEPESCorrectiveProceduresContent data={JEPES_CORRECTIVE_PROCEDURES_DATA} />,
+    // Leaders - Personnel Accountability
+    "daily-accountability-fundamentals": <DailyAccountabilityFundamentalsContent data={DAILY_ACCOUNTABILITY_FUNDAMENTALS_DATA} />,
+    "gains-losses-processing": <GainsLossesProcessingContent data={GAINS_LOSSES_PROCESSING_DATA} />,
+    "leave-liberty-management": <LeaveLibrtyManagementContent data={LEAVE_LIBERTY_MANAGEMENT_DATA} />,
+    "ua-procedures": <UAProceduresContent data={UA_PROCEDURES_DATA} />,
+    "tad-detachment-tracking": <TADDetachmentTrackingContent data={TAD_DETACHMENT_TRACKING_DATA} />,
+    "muster-formation-procedures": <MusterFormationProceduresContent data={MUSTER_FORMATION_PROCEDURES_DATA} />,
+    "record-keeping-documentation": <RecordKeepingDocumentationContent data={RECORD_KEEPING_DOCUMENTATION_DATA} />,
+    // Leaders - Administrative Systems
+    "mctfs-overview": <MCTFSOverviewContent data={MCTFS_OVERVIEW_DATA} />,
+    "mol-navigation": <MOLNavigationContent data={MOL_NAVIGATION_DATA} />,
+    "jepes-system-navigation": <JEPESSystemNavigationContent data={JEPES_SYSTEM_NAVIGATION_DATA} />,
+    "tfrs-overview": <TFRSOverviewContent data={TFRS_OVERVIEW_DATA} />,
+    "unit-diary-reporting": <UnitDiaryReportingContent data={UNIT_DIARY_REPORTING_DATA} />,
+    "training-information-systems": <TrainingInformationSystemsContent data={TRAINING_INFORMATION_SYSTEMS_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -3377,23 +3507,22 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   ];
   const leadersPersonnelSection = "leaders-personnel-accountability";
   const leadersPersonnelSlugs = [
-    "leave-approval-management",
-    "liberty-policy-enforcement",
-    "checkin-checkout-oversight",
-    "muster-accountability",
-    "tad-tracking",
-    "duty-status-changes",
-    "pcs-support-responsibilities",
-    "gear-equipment-accountability",
+    "daily-accountability-fundamentals",
+    "gains-losses-processing",
+    "leave-liberty-management",
+    "ua-procedures",
+    "tad-detachment-tracking",
+    "muster-formation-procedures",
+    "record-keeping-documentation",
   ];
   const leadersSystemsSection = "leaders-administrative-systems";
   const leadersSystemsSlugs = [
-    "mol-leader-functions",
-    "mctfs-leader-tasks",
-    "marinenet-pme-tracking",
-    "iaps-leader-guide",
-    "dts-approval-responsibilities",
-    "system-troubleshooting",
+    "mctfs-overview",
+    "mol-navigation",
+    "jepes-system-navigation",
+    "tfrs-overview",
+    "unit-diary-reporting",
+    "training-information-systems",
   ];
 
   const params: { role: Role; section: string; item: string }[] = [];
