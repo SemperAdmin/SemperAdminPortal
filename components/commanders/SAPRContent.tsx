@@ -899,6 +899,17 @@ export function SAPRContent() {
 
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <a
+            href="https://thegearlocker.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
+          >
+            <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
+            <span className="text-sm text-zinc-700 dark:text-zinc-300">
+              Gear Locker (thegearlocker.org)
+            </span>
+          </a>
+          <a
             href="https://hqmcportal.hqi.usmc.mil/sites/family/mfb/SitePages/Home.aspx"
             target="_blank"
             rel="noopener noreferrer"
@@ -906,17 +917,19 @@ export function SAPRContent() {
           >
             <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
             <span className="text-sm text-zinc-700 dark:text-zinc-300">
-              SAPR Gear Locker (8-Day Report, Leadership Toolkit)
+              SAPR Workspace (8-Day Portal, FAQs)
             </span>
           </a>
           <a
-            href="https://www.nsopw.gov/en/Search/Verification"
+            href="https://hqmcportal.hqi.usmc.mil/sites/family/mfb/SAPR/SitePages/LeadershipToolkit/Command.aspx"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
           >
             <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
-            <span className="text-sm text-zinc-700 dark:text-zinc-300">National Sex Offender Search</span>
+            <span className="text-sm text-zinc-700 dark:text-zinc-300">
+              SAPR Commander&apos;s Toolkit
+            </span>
           </a>
           <a
             href="https://www.safehelpline.org"
@@ -928,13 +941,22 @@ export function SAPRContent() {
             <span className="text-sm text-zinc-700 dark:text-zinc-300">Safe Helpline (24/7): 877-995-5247</span>
           </a>
           <a
-            href="https://www.marines.mil/News/Publications/MCPEL/"
+            href="https://www.nsopw.gov/en/Search/Verification"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
           >
             <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
-            <span className="text-sm text-zinc-700 dark:text-zinc-300">MCO 1752.5C</span>
+            <span className="text-sm text-zinc-700 dark:text-zinc-300">National Sex Offender Search</span>
+          </a>
+          <a
+            href="https://www.marines.mil/portals/1/Publications/MCO%201752.5C.pdf?ver=2019-06-10-115714-627"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-lg border border-black/10 p-3 transition-colors hover:bg-zinc-50 dark:border-white/10 dark:hover:bg-zinc-800"
+          >
+            <ExternalLink className="h-4 w-4 text-[var(--sa-gold)]" />
+            <span className="text-sm text-zinc-700 dark:text-zinc-300">MCO 1752.5C (SAPR Program)</span>
           </a>
           <div className="flex items-center gap-2 rounded-lg border border-black/10 p-3 dark:border-white/10">
             <FileText className="h-4 w-4 text-[var(--sa-gold)]" />
