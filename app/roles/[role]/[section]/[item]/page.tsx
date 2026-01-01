@@ -257,9 +257,19 @@ import { UnitDiaryReportingContent } from "../../../../../components/leaders/Uni
 import { TrainingInformationSystemsContent } from "../../../../../components/leaders/TrainingInformationSystemsContent";
 import { MCOQuickReferenceContent } from "../../../../../components/leaders/MCOQuickReferenceContent";
 // Commanders - Transition of Command
-import { CornerstoneAttendanceContent } from "../../../../../components/commanders/transition/CornerstoneAttendanceContent";
-import { CertificateOfReliefContent } from "../../../../../components/commanders/transition/CertificateOfReliefContent";
-import { SafetyPolicyContent } from "../../../../../components/commanders/transition/SafetyPolicyContent";
+import {
+  CornerstoneAttendanceContent,
+  CertificateOfReliefContent,
+  SafetyPolicyContent,
+  StatusCommandLetterContent,
+  AviationRefresherContent,
+  CommandTeamTrainingContent,
+  SARCBriefContent,
+  METLReviewContent,
+  FundControlContent,
+  AviationSurveysContent,
+  FAPTrainingContent,
+} from "../../../../../components/commanders/transition";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -3226,7 +3236,15 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     // Commanders - Transition of Command
     "cornerstone-attendance": <CornerstoneAttendanceContent />,
     "cor-incoming": <CertificateOfReliefContent />,
+    "status-command-letter": <StatusCommandLetterContent />,
+    "aviation-refresher": <AviationRefresherContent />,
     "30-day-safety": <SafetyPolicyContent />,
+    "30-day-ctt": <CommandTeamTrainingContent />,
+    "30-day-sarc": <SARCBriefContent />,
+    "30-day-metl": <METLReviewContent />,
+    "30-day-fund-control": <FundControlContent />,
+    "30-day-aviation": <AviationSurveysContent />,
+    "90-day-fap": <FAPTrainingContent />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
