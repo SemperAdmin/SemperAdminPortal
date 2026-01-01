@@ -3615,6 +3615,22 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "training-information-systems",
     "mco-quick-reference",
   ];
+  const leadersConductingSection = "leaders-conducting-investigations";
+  const leadersConductingSlugs = [
+    "review-convening-order",
+    "contact-judge-advocate",
+    "coordinate-other-investigations",
+    "preliminary-inquiry-io",
+    "command-investigation-io",
+    "litigation-report-io",
+    "collecting-evidence",
+    "interviewing-witnesses",
+    "standards-of-proof-io",
+    "investigation-report-format-io",
+    "lod-misconduct-determinations",
+    "death-case-procedures-io",
+    "common-investigation-mistakes",
+  ];
 
   const params: { role: Role; section: string; item: string }[] = [];
   for (const role of roles) {
@@ -3643,6 +3659,25 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   for (const item of leadersPerformanceSlugs) params.push({ role: leaderRole, section: leadersPerformanceSection, item });
   for (const item of leadersPersonnelSlugs) params.push({ role: leaderRole, section: leadersPersonnelSection, item });
   for (const item of leadersSystemsSlugs) params.push({ role: leaderRole, section: leadersSystemsSection, item });
+  for (const item of leadersConductingSlugs) params.push({ role: leaderRole, section: leadersConductingSection, item });
+
+  // Commanders-only sections
+  const commanderRole: Role = "commanders";
+  const commandersAdminInvestigationsSection = "commanders-admin-investigations";
+  const commandersAdminInvestigationsSlugs = [
+    "preliminary-inquiry",
+    "command-investigations",
+    "litigation-report-investigations",
+    "courts-boards-inquiry",
+    "convening-orders",
+    "standards-of-proof",
+    "witness-procedures",
+    "investigation-report-format",
+    "line-of-duty",
+    "death-case-procedures",
+    "investigation-coordination",
+  ];
+  for (const item of commandersAdminInvestigationsSlugs) params.push({ role: commanderRole, section: commandersAdminInvestigationsSection, item });
 
   return params;
 }
