@@ -269,6 +269,12 @@ import {
   FundControlContent,
   AviationSurveysContent,
   FAPTrainingContent,
+  SAPRPolicyContent,
+  UPFRPSOPContent,
+  CommandPhilosophyContent,
+  PACPolicyContent,
+  SafetyClimateSurveyContent,
+  DEOCSContent,
 } from "../../../../../components/commanders/transition";
 
 type Params = { role: Role; section: string; item: string };
@@ -3245,6 +3251,13 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "30-day-fund-control": <FundControlContent />,
     "30-day-aviation": <AviationSurveysContent />,
     "90-day-fap": <FAPTrainingContent />,
+    // 60-90 Day Items
+    "60-day-sapr": <SAPRPolicyContent />,
+    "60-day-upfrp": <UPFRPSOPContent />,
+    "60-day-philosophy": <CommandPhilosophyContent />,
+    "90-day-pac": <PACPolicyContent />,
+    "90-day-safety-survey": <SafetyClimateSurveyContent />,
+    "90-day-deocs": <DEOCSContent />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;

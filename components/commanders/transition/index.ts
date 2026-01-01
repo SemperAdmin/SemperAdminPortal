@@ -10,3 +10,10 @@ export { METLReviewContent } from "./METLReviewContent";
 export { FundControlContent } from "./FundControlContent";
 export { AviationSurveysContent } from "./AviationSurveysContent";
 export { FAPTrainingContent } from "./FAPTrainingContent";
+// 60-90 Day Items
+export { SAPRPolicyContent } from "./SAPRPolicyContent";
+export { UPFRPSOPContent } from "./UPFRPSOPContent";
+export { CommandPhilosophyContent } from "./CommandPhilosophyContent";
+export { PACPolicyContent } from "./PACPolicyContent";
+export { SafetyClimateSurveyContent } from "./SafetyClimateSurveyContent";
+export { DEOCSContent } from "./DEOCSContent";
