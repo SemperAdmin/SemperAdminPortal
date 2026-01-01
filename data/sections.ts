@@ -239,7 +239,7 @@ export const SECTIONS: Record<string, Section> = {
           { title: "Experimental Stress Duty", slug: "experimental-stress-duty", desc: "Rate: $150/month. Covers human test subject operations." },
           { title: "Flight Pay (ACIP)", slug: "aviation-career-incentive-pay", desc: "Monthly pay for aviators" },
           { title: "Flight Deck Duty", slug: "flight-deck-duty", desc: "Operations on aircraft carriers and air-capable ships. Rate: $150/month." },
-          { title: "Foreign Language Proficiency Bonus (FLPB)", slug: "foreign-language-proficiency-pay", desc: "Bonus for foreign language proficiency" },
+          { title: "Foreign Language Proficiency Bonus (FLPB)", slug: "foreign-language-proficiency-bonus", desc: "Bonus for foreign language proficiency" },
           { title: "Hardship Duty Pay (HDP)", slug: "hardship-duty-pay", desc: "$50–$150/month for difficult living conditions at duty station" },
           { title: "Parachute Duty", slug: "parachute-duty-pay", desc: "$150/month. Military Free Fall (MFF/HALO): $225/month." },
           { title: "Maritime VBSS Duty", slug: "maritime-vbss-duty", desc: "Rate: $150/month. Visit, Board, Search, and Seizure operations." },
@@ -272,7 +272,7 @@ export const SECTIONS: Record<string, Section> = {
         items: [
           { title: "Combat Zone Tax Exclusion", slug: "combat-zone-tax-exclusion", desc: "Tax-free pay while serving in designated combat zones" },
           { title: "Flexible Spending Accounts", slug: "flexible-spending-accounts", desc: "Save up to $2,850 pre-tax for healthcare and childcare" },
-          { title: "State Tax Relief", slug: "state-tax-relief", desc: "Exemption from state income tax based on legal residence" },
+          { title: "State Tax Relief", slug: "military-state-tax-relief", desc: "Exemption from state income tax based on legal residence" },
         ],
       },
       {
@@ -475,7 +475,7 @@ export const SECTIONS: Record<string, Section> = {
           { title: "PCS Orders Processing", slug: "pcs-orders-processing", desc: "How to receive, review, and execute your PCS orders" },
           { title: "Household Goods (HHG) Shipment", slug: "household-goods-shipment", desc: "Government-arranged shipping of your belongings to new duty station" },
           { title: "Personally Procured Move (PPM/DITY)", slug: "personally-procured-move", desc: "Move yourself and get reimbursed for authorized expenses" },
-          { title: "Storage", slug: "pcs-storage", desc: "Short-term and long-term storage options during PCS" },
+          { title: "Storage", slug: "pcs-storage-entitlements", desc: "Short-term and long-term storage options during PCS" },
           { title: "Dislocation Allowance (DLA)", slug: "dislocation-allowance", desc: "One-time payment to offset moving costs based on rank and dependents" },
           { title: "Temporary Lodging Expense (TLE)", slug: "temporary-lodging-expense", desc: "Reimbursement for lodging during PCS transition periods" },
           { title: "Vehicle Processing and Storage", slug: "vehicle-processing-storage", desc: "Ship or store your POV during OCONUS assignments" },
@@ -707,6 +707,7 @@ export const SECTIONS: Record<string, Section> = {
         title: "Fitness Reports",
         items: [
           { title: "Fitness Reports (E-5 and Above)", slug: "fitness-reports-leaders", desc: "Key differences from JEPES and RS/RO responsibilities" },
+          { title: "Performance Evaluation Appeals", slug: "performance-evaluation-appeals", desc: "PERB and BCNR appeal process for FitReps and JEPES" },
         ],
       },
     ],

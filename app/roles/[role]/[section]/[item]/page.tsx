@@ -256,6 +256,10 @@ import { TFRSOverviewContent } from "../../../../../components/leaders/TFRSOverv
 import { UnitDiaryReportingContent } from "../../../../../components/leaders/UnitDiaryReportingContent";
 import { TrainingInformationSystemsContent } from "../../../../../components/leaders/TrainingInformationSystemsContent";
 import { MCOQuickReferenceContent } from "../../../../../components/leaders/MCOQuickReferenceContent";
+// Commanders - Transition of Command
+import { CornerstoneAttendanceContent } from "../../../../../components/commanders/transition/CornerstoneAttendanceContent";
+import { CertificateOfReliefContent } from "../../../../../components/commanders/transition/CertificateOfReliefContent";
+import { SafetyPolicyContent } from "../../../../../components/commanders/transition/SafetyPolicyContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -2979,7 +2983,6 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "combat-zone-tax-exclusion": <CZTEContent />,
     "flexible-spending-accounts": <FlexibleSpendingAccountsContent />,
     "military-state-tax-relief": <MilitaryStateTaxReliefContent />,
-    "state-tax-relief": <MilitaryStateTaxReliefContent />,
     "allotments": <AllotmentsContent />,
     "basic-needs-allowance": <BasicNeedsAllowanceContent />,
     "debt-management": <DebtManagementContent />,
@@ -3220,6 +3223,10 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "unit-diary-reporting": <UnitDiaryReportingContent data={UNIT_DIARY_REPORTING_DATA} />,
     "training-information-systems": <TrainingInformationSystemsContent data={TRAINING_INFORMATION_SYSTEMS_DATA} />,
     "mco-quick-reference": <MCOQuickReferenceContent data={MCO_QUICK_REFERENCE_DATA} />,
+    // Commanders - Transition of Command
+    "cornerstone-attendance": <CornerstoneAttendanceContent />,
+    "cor-incoming": <CertificateOfReliefContent />,
+    "30-day-safety": <SafetyPolicyContent />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -3263,7 +3270,6 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "thrift-savings-plan",
     "combat-zone-tax-exclusion",
     "military-state-tax-relief",
-    "state-tax-relief",
     "allotments",
     "basic-needs-allowance",
     "debt-management",
@@ -3663,6 +3669,129 @@ export function generateStaticParams(): { role: Role; section: string; item: str
 
   // Commanders-only sections
   const commanderRole: Role = "commanders";
+
+  // Group A: Command Authority
+  const commandersAuthoritySection = "commanders-authority-legal";
+  const commandersAuthoritySlugs = [
+    "njp-authority",
+    "njp-punishment-limits",
+    "njp-process",
+    "njp-appeals",
+    "summary-court-martial",
+    "special-court-martial",
+    "general-court-martial",
+    "disposition-options",
+    "adsep-authority",
+    "service-characterization",
+    "religious-accommodation",
+    "request-mast",
+  ];
+
+  const commandersPersonnelSection = "commanders-personnel-career";
+  const commandersPersonnelSlugs = [
+    "fitrep-responsibilities",
+    "adverse-fitreps",
+    "procon-oversight",
+    "jepes-commander",
+    "not-rec-authority",
+    "meritorious-promotion-authority",
+    "reenlistment-authority",
+    "transition-oversight",
+    "page-11-commander",
+    "6105-entries",
+    "adverse-letters",
+  ];
+
+  // Group B: Command Climate and Welfare
+  const commandersClimateSection = "commanders-climate-culture";
+  const commandersClimateSlugs = [
+    "deocs-requirements",
+    "climate-surveys",
+    "command-team-training",
+    "safety-policy-statement",
+    "sapr-policy-statement",
+    "upfrp-sop-requirement",
+    "pac-policy-statement",
+    "pac-program-overview",
+    "hazing-prevention",
+    "harassment-response",
+    "retaliation-prevention",
+  ];
+
+  const commandersSaprSection = "commanders-sapr";
+  const commandersSaprSlugs = [
+    "sapr-va-appointment",
+    "sarc-coordination",
+    "sapr-policy-posting",
+    "sapr-reporting-types",
+    "8-day-report",
+    "cmg-participation",
+    "hrrt",
+    "expedited-transfer",
+    "mpo-sapr",
+    "sapr-retaliation",
+  ];
+
+  const commandersSuicideSection = "commanders-suicide-prevention";
+  const commandersSuicideSlugs = [
+    "sppo-appointment",
+    "force-preservation-council",
+    "postvention",
+    "cirras-oversight",
+    "critical-stressors",
+    "lethal-means-safety",
+    "mflc-program",
+    "chaplain-support",
+    "cosc-oscar",
+  ];
+
+  const commandersFamilySection = "commanders-family-readiness";
+  const commandersFamilySlugs = [
+    "upfrp-sop",
+    "upfrp-command-roles",
+    "drc-oversight",
+    "fap-overview",
+    "child-abuse-response",
+    "domestic-abuse-response",
+    "caco-oversight",
+    "pcr-reporting",
+    "nok-notification",
+    "limdu-coordinator",
+    "ito-authority",
+    "rcc-referral",
+    "ww-benefits",
+  ];
+
+  const commandersSubstanceSection = "commanders-substance-abuse";
+  const commandersSubstanceSlugs = [
+    "uuc-appointment",
+    "testing-requirements",
+    "inspection-testing",
+    "positive-result-procedures",
+    "substance-admin-actions",
+    "treatment-referral",
+  ];
+
+  const commandersEOSection = "commanders-equal-opportunity";
+  const commandersEOSlugs = [
+    "eor-appointment",
+    "eo-policy",
+    "eo-climate-assessment",
+    "eo-complaint-process",
+    "eo-investigation",
+    "eo-retaliation-prevention",
+  ];
+
+  const commandersLegalSection = "commanders-legal-discipline";
+  const commandersLegalSlugs = [
+    "njp-procedures",
+    "punishment-limits",
+    "appeal-rights",
+    "adsep-commander-authority",
+    "separation-bases",
+    "adsep-due-process",
+  ];
+
   const commandersAdminInvestigationsSection = "commanders-admin-investigations";
   const commandersAdminInvestigationsSlugs = [
     "preliminary-inquiry",
@@ -3677,7 +3806,162 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "death-case-procedures",
     "investigation-coordination",
   ];
+
+  // Group C: Readiness and Resources
+  const commandersTrainingSection = "commanders-training-readiness";
+  const commandersTrainingSlugs = [
+    "drrs-mc-overview",
+    "c-level-assessment",
+    "commanders-override",
+    "readiness-board",
+    "p-level-reporting",
+    "s-level-reporting",
+    "r-level-reporting",
+    "t-level-reporting",
+    "metl-development",
+    "metl-assessment",
+    "metl-annual-review",
+  ];
+
+  const commandersFiscalSection = "commanders-fiscal-property";
+  const commandersFiscalSlugs = [
+    "accountable-officer",
+    "budget-execution",
+    "status-of-funds",
+    "fund-control-training",
+    "uac-prevention",
+    "ulo-validation",
+    "gtcc-oversight",
+    "certificate-of-relief",
+    "supply-officer-appointment",
+    "annual-inventory",
+  ];
+
+  const commandersMaintenanceSection = "commanders-maintenance-logistics";
+  const commandersMaintenanceSlugs = [
+    "ro-appointment",
+    "te-review",
+    "gcss-mc-oversight",
+    "small-arms-accountability",
+    "tmde-accountability",
+    "esr-reporting",
+    "mmo-appointment",
+    "cpac-program",
+    "elmp",
+  ];
+
+  // Group D: Compliance and Security
+  const commandersSafetySection = "commanders-safety-risk";
+  const commandersSafetySlugs = [
+    "safety-policy",
+    "safety-climate-survey",
+    "ground-safety",
+    "orm-integration",
+    "doss-relationship",
+    "flight-schedule-approval",
+    "pre-mishap-drills",
+    "mishap-reporting",
+    "mishap-investigation",
+    "motor-vehicle-safety",
+  ];
+
+  const commandersIGSection = "commanders-inspector-general";
+  const commandersIGSlugs = [
+    "cip-overview",
+    "igmc-functional-areas",
+    "internal-inspections",
+    "fsmao-analysis",
+    "cgip-preparation",
+    "smat-inspections",
+    "poam-management",
+    "pre-inspection-prep",
+    "corrective-action-tracking",
+  ];
+
+  const commandersEnvironmentalSection = "commanders-environmental";
+  const commandersEnvironmentalSlugs = [
+    "ems-overview",
+    "ecc-appointment",
+    "environmental-funding",
+    "spill-reporting",
+    "hazmat-management",
+    "nepa-compliance",
+    "internal-ece",
+    "benchmark-ece",
+  ];
+
+  const commandersSecuritySection = "commanders-security";
+  const commandersSecuritySlugs = [
+    "infosec-program",
+    "classified-accountability",
+    "opsec-program",
+    "personnel-security",
+    "physical-security",
+    "insider-threat",
+    "cybersecurity-program",
+    "atfp-program",
+  ];
+
+  const commandersPublicAffairsSection = "commanders-public-affairs";
+  const commandersPublicAffairsSlugs = [
+    "media-engagement",
+    "crisis-communication",
+    "opsec-public-statements",
+    "casualty-info-release",
+    "releasable-info",
+    "social-media-policy",
+    "climate-messaging",
+  ];
+
+  const commandersTransitionSection = "commanders-transition-command";
+  const commandersTransitionSlugs = [
+    "cornerstone-attendance",
+    "cor-incoming",
+    "status-command-letter",
+    "aviation-refresher",
+    "30-day-safety",
+    "30-day-ctt",
+    "30-day-sarc",
+    "30-day-metl",
+    "30-day-fund-control",
+    "30-day-aviation",
+    "60-day-sapr",
+    "60-day-upfrp",
+    "60-day-philosophy",
+    "90-day-pac",
+    "90-day-safety-survey",
+    "90-day-deocs",
+    "90-day-fap",
+    "annual-deocs",
+    "annual-safety-survey",
+    "annual-te-review",
+    "annual-inventory",
+    "annual-metl-review",
+    "outgoing-deocs",
+    "turnover-documentation",
+    "cor-outgoing",
+  ];
+
+  // Push all commander slugs
+  for (const item of commandersAuthoritySlugs) params.push({ role: commanderRole, section: commandersAuthoritySection, item });
+  for (const item of commandersPersonnelSlugs) params.push({ role: commanderRole, section: commandersPersonnelSection, item });
+  for (const item of commandersClimateSlugs) params.push({ role: commanderRole, section: commandersClimateSection, item });
+  for (const item of commandersSaprSlugs) params.push({ role: commanderRole, section: commandersSaprSection, item });
+  for (const item of commandersSuicideSlugs) params.push({ role: commanderRole, section: commandersSuicideSection, item });
+  for (const item of commandersFamilySlugs) params.push({ role: commanderRole, section: commandersFamilySection, item });
+  for (const item of commandersSubstanceSlugs) params.push({ role: commanderRole, section: commandersSubstanceSection, item });
+  for (const item of commandersEOSlugs) params.push({ role: commanderRole, section: commandersEOSection, item });
+  for (const item of commandersLegalSlugs) params.push({ role: commanderRole, section: commandersLegalSection, item });
   for (const item of commandersAdminInvestigationsSlugs) params.push({ role: commanderRole, section: commandersAdminInvestigationsSection, item });
+  for (const item of commandersTrainingSlugs) params.push({ role: commanderRole, section: commandersTrainingSection, item });
+  for (const item of commandersFiscalSlugs) params.push({ role: commanderRole, section: commandersFiscalSection, item });
+  for (const item of commandersMaintenanceSlugs) params.push({ role: commanderRole, section: commandersMaintenanceSection, item });
+  for (const item of commandersSafetySlugs) params.push({ role: commanderRole, section: commandersSafetySection, item });
+  for (const item of commandersIGSlugs) params.push({ role: commanderRole, section: commandersIGSection, item });
+  for (const item of commandersEnvironmentalSlugs) params.push({ role: commanderRole, section: commandersEnvironmentalSection, item });
+  for (const item of commandersSecuritySlugs) params.push({ role: commanderRole, section: commandersSecuritySection, item });
+  for (const item of commandersPublicAffairsSlugs) params.push({ role: commanderRole, section: commandersPublicAffairsSection, item });
+  for (const item of commandersTransitionSlugs) params.push({ role: commanderRole, section: commandersTransitionSection, item });
 
   return params;
 }
