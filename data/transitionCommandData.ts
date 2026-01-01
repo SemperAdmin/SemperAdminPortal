@@ -609,3 +609,129 @@ export const AVIATION_SURVEYS_DATA = {
     { title: "Naval Safety Center", url: "https://safetycenter.navy.mil/" },
   ] as TransitionReference[],
 };
+
+// ============================================================================
+// FAP TRAINING (90-DAY)
+// ============================================================================
+
+export const FAP_TRAINING_DATA = {
+  title: "Family Advocacy Program (FAP) Commander Training",
+  subtitle: "90-Day Post Change of Command Requirement",
+  keyPoints: [
+    { label: "Timeline", value: "Within 90 days of Change of Command" },
+    { label: "Authority", value: "MCO 1754.11A, page 9, par 3b(7)(b)" },
+    { label: "IG Inspection", value: "Functional Area Checklist 1754.11 (Family Advocacy Program)" },
+    { label: "Duration", value: "Typically 1-2 hours" },
+  ] as KeyPoint[],
+  overview: "All commanders must be trained on the prevention and response to child abuse and domestic abuse within 90 days of assuming command. This training is provided through the Family Advocacy Program (FAP).",
+  requiredAttendees: ["Commanding Officer"],
+  recommendedAttendees: [
+    "Executive Officer",
+    "Sergeant Major / Senior Enlisted Leader",
+    "Legal Officer / SJA representative",
+  ],
+  trainingTopics: [
+    "Child abuse prevention and response",
+    "Domestic abuse prevention and response",
+    "Commander responsibilities under MCO 1754.11A",
+    "FAP services and resources",
+    "Reporting requirements",
+    "Case Management Team (CMT) process",
+    "Incident Determination Committee (IDC)",
+    "Military Protective Orders (MPO) for domestic abuse",
+    "Coordination with MCIO and legal",
+  ],
+  schedulingSteps: [
+    "Contact Installation FAP (located at MCCS)",
+    "Request Commander Training - explain you are a new commander needing FAP training within 90 days",
+    "Coordinate schedule - training typically requires 1-2 hours",
+    "Complete training and obtain documentation (certificate or memo)",
+    "File documentation for IG inspection",
+  ],
+  childAbuseInfo: {
+    types: ["Physical abuse", "Sexual abuse", "Emotional abuse", "Neglect"],
+    reportingRequirements: [
+      "Mandatory reporting obligations",
+      "Who to report to",
+      "Timeline for reporting",
+    ],
+    investigationProcess: [
+      "FAP role in investigation",
+      "MCIO role",
+      "Child Protective Services coordination",
+    ],
+  },
+  domesticAbuseInfo: {
+    types: ["Physical abuse", "Sexual abuse", "Emotional abuse", "Economic abuse"],
+    reportingOptions: [
+      "How victims report",
+      "Restricted vs. Unrestricted reporting (for domestic abuse)",
+      "Safety planning",
+    ],
+    mpoInfo: [
+      "When to issue Military Protective Orders",
+      "Contents and enforcement",
+      "Coordination with civilian authorities",
+    ],
+  },
+  fapServices: {
+    prevention: [
+      "New Parent Support Program (NPSP)",
+      "Parenting classes",
+      "Relationship education",
+    ],
+    victimServices: [
+      "24/7 victim advocacy",
+      "Safety planning",
+      "Counseling and support",
+      "Referrals to other services",
+    ],
+    offenderIntervention: [
+      "Treatment programs",
+      "Monitoring",
+      "Coordination with command",
+    ],
+  },
+  commanderResponsibilities: {
+    prevention: [
+      "Promote awareness of FAP services",
+      "Ensure Marines know how to get help",
+      "Support family readiness programs",
+      "Address risk factors (stress, financial issues, etc.)",
+    ],
+    response: [
+      "Take all reports seriously",
+      "Ensure immediate safety of victims",
+      "Coordinate with FAP and MCIO",
+      "Issue MPO when appropriate",
+      "Support investigation process",
+      "Hold offenders accountable",
+    ],
+    ongoing: [
+      "Participate in Case Management Team (CMT) as required",
+      "Monitor command climate for risk factors",
+      "Refer Marines to FAP for prevention services",
+      "Support families affected by family violence",
+    ],
+  },
+  commonInspectionFindings: [
+    "Commander training not completed within 90 days",
+    "No documentation of training",
+    "Commander unaware of FAP services",
+    "MPO procedures not understood",
+    "FAP contact information not readily available",
+  ],
+  keyContacts: [
+    { name: "Installation Family Advocacy Program", info: "Contact through MCCS", url: "https://www.usmc-mccs.org/" },
+    { name: "National Domestic Violence Hotline", info: "1-800-799-SAFE (7233)", url: "https://www.thehotline.org/" },
+    { name: "Military OneSource", info: "1-800-342-9647", url: "https://www.militaryonesource.mil/" },
+    { name: "Safe Helpline (for sexual assault)", info: "1-877-995-5247 - Note: For domestic sexual abuse, coordinate with FAP", url: "" },
+  ],
+  references: [
+    { title: "MCO 1754.11A (FAP Program)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/", isQuickLink: true },
+    { title: "MCCS (to find FAP)", url: "https://www.usmc-mccs.org/" },
+    { title: "Military OneSource Family Violence", url: "https://www.militaryonesource.mil/health-and-wellness/family-violence" },
+    { title: "National Domestic Violence Hotline", url: "https://www.thehotline.org/" },
+  ] as TransitionReference[],
+};
