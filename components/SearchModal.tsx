@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useRouter } from "next/navigation";
-import { Search, X, ArrowRight, Users, Shield, Briefcase } from "lucide-react";
+import Link from "next/link";
+import { Search, X, ArrowRight, Users, Shield, Briefcase, ExternalLink } from "lucide-react";
 import { search, getSearchIndex, type SearchResult } from "../lib/search";
 
 const CATEGORY_ICONS = {
@@ -164,61 +165,74 @@ function SearchModal({ onClose }: { onClose: () => void }) {
             )}
 
             {results.length > 0 && (
-              <ul role="listbox" className="py-2">
-                {results.map((result, index) => {
-                  const CategoryIcon = CATEGORY_ICONS[result.category];
-                  const isSelected = index === selectedIndex;
+              <>
+                <ul role="listbox" className="py-2">
+                  {results.map((result, index) => {
+                    const CategoryIcon = CATEGORY_ICONS[result.category];
+                    const isSelected = index === selectedIndex;
 
-                  return (
-                    <li key={`${result.sectionSlug}-${result.href}`}>
-                      <button
-                        role="option"
-                        aria-selected={isSelected}
-                        onClick={() => navigateToResult(result)}
-                        onMouseEnter={() => setSelectedIndex(index)}
-                        className={`flex w-full items-start gap-3 px-4 py-3 text-left transition ${
-                          isSelected
-                            ? "bg-[var(--sa-navy)]/10 dark:bg-[var(--sa-cream)]/10"
-                            : "hover:bg-zinc-50 dark:hover:bg-zinc-800/50"
-                        }`}
-                      >
-                        <div
-                          className={`mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg ${
-                            result.category === "leaders"
-                              ? "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400"
-                              : result.category === "admin"
-                              ? "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400"
-                              : "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400"
+                    return (
+                      <li key={`${result.sectionSlug}-${result.href}`}>
+                        <button
+                          role="option"
+                          aria-selected={isSelected}
+                          onClick={() => navigateToResult(result)}
+                          onMouseEnter={() => setSelectedIndex(index)}
+                          className={`flex w-full items-start gap-3 px-4 py-3 text-left transition ${
+                            isSelected
+                              ? "bg-[var(--sa-navy)]/10 dark:bg-[var(--sa-cream)]/10"
+                              : "hover:bg-zinc-50 dark:hover:bg-zinc-800/50"
                           }`}
                         >
-                          <CategoryIcon className="h-4 w-4" />
-                        </div>
-                        <div className="min-w-0 flex-1">
-                          <div className="font-medium text-zinc-900 dark:text-zinc-100">
-                            {highlightMatch(result.title, query)}
+                          <div
+                            className={`mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg ${
+                              result.category === "leaders"
+                                ? "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400"
+                                : result.category === "admin"
+                                ? "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400"
+                                : "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400"
+                            }`}
+                          >
+                            <CategoryIcon className="h-4 w-4" />
                           </div>
-                          <p className="mt-0.5 truncate text-sm text-zinc-500 dark:text-zinc-400">
-                            {result.description}
-                          </p>
-                          <div className="mt-1 flex items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
-                            <span>{CATEGORY_LABELS[result.category]}</span>
-                            <span aria-hidden="true">•</span>
-                            <span>{result.section}</span>
+                          <div className="min-w-0 flex-1">
+                            <div className="font-medium text-zinc-900 dark:text-zinc-100">
+                              {highlightMatch(result.title, query)}
+                            </div>
+                            <p className="mt-0.5 truncate text-sm text-zinc-500 dark:text-zinc-400">
+                              {result.description}
+                            </p>
+                            <div className="mt-1 flex items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
+                              <span>{CATEGORY_LABELS[result.category]}</span>
+                              <span aria-hidden="true">•</span>
+                              <span>{result.section}</span>
+                            </div>
                           </div>
-                        </div>
-                        <ArrowRight
-                          className={`mt-1 h-4 w-4 flex-shrink-0 transition ${
-                            isSelected
-                              ? "text-[var(--sa-navy)] dark:text-[var(--sa-cream)]"
-                              : "text-zinc-300 dark:text-zinc-600"
-                          }`}
-                          aria-hidden="true"
-                        />
-                      </button>
-                    </li>
-                  );
-                })}
-              </ul>
+                          <ArrowRight
+                            className={`mt-1 h-4 w-4 flex-shrink-0 transition ${
+                              isSelected
+                                ? "text-[var(--sa-navy)] dark:text-[var(--sa-cream)]"
+                                : "text-zinc-300 dark:text-zinc-600"
+                            }`}
+                            aria-hidden="true"
+                          />
+                        </button>
+                      </li>
+                    );
+                  })}
+                </ul>
+                {/* View All Results Link */}
+                <div className="border-t border-zinc-100 dark:border-zinc-700">
+                  <Link
+                    href={`/search?q=${encodeURIComponent(query)}`}
+                    onClick={onClose}
+                    className="flex w-full items-center justify-center gap-2 px-4 py-3 text-sm font-medium text-[var(--sa-navy)] transition hover:bg-zinc-50 dark:text-[var(--sa-cream)] dark:hover:bg-zinc-800/50"
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                    View all results for &quot;{query}&quot;
+                  </Link>
+                </div>
+              </>
             )}
 
             {query.length < 2 && (
