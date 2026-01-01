@@ -256,6 +256,10 @@ import { TFRSOverviewContent } from "../../../../../components/leaders/TFRSOverv
 import { UnitDiaryReportingContent } from "../../../../../components/leaders/UnitDiaryReportingContent";
 import { TrainingInformationSystemsContent } from "../../../../../components/leaders/TrainingInformationSystemsContent";
 import { MCOQuickReferenceContent } from "../../../../../components/leaders/MCOQuickReferenceContent";
+// Commanders - Transition of Command
+import { CornerstoneAttendanceContent } from "../../../../../components/commanders/transition/CornerstoneAttendanceContent";
+import { CertificateOfReliefContent } from "../../../../../components/commanders/transition/CertificateOfReliefContent";
+import { SafetyPolicyContent } from "../../../../../components/commanders/transition/SafetyPolicyContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -3219,6 +3223,10 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "unit-diary-reporting": <UnitDiaryReportingContent data={UNIT_DIARY_REPORTING_DATA} />,
     "training-information-systems": <TrainingInformationSystemsContent data={TRAINING_INFORMATION_SYSTEMS_DATA} />,
     "mco-quick-reference": <MCOQuickReferenceContent data={MCO_QUICK_REFERENCE_DATA} />,
+    // Commanders - Transition of Command
+    "cornerstone-attendance": <CornerstoneAttendanceContent />,
+    "cor-incoming": <CertificateOfReliefContent />,
+    "30-day-safety": <SafetyPolicyContent />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
