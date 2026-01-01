@@ -1629,3 +1629,344 @@ export const ANNUAL_METL_REVIEW_DATA = {
     { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
   ] as TransitionReference[],
 };
+
+// ============================================================================
+// STATUS OF COMMAND LETTER (OUTGOING)
+// ============================================================================
+
+export const STATUS_COMMAND_LETTER_OUTGOING_DATA = {
+  title: "Status of Command Letter (Outgoing)",
+  subtitle: "Relinquishing Command Requirement",
+  keyPoints: [
+    { label: "Timeline", value: "Submit T-10 days, Brief HHQ T-3 days before CoC" },
+    { label: "Authority", value: "CMC White Letter 3-17 dtd 2 May 2017" },
+    { label: "Recipient", value: "Next higher commander" },
+    { label: "Required Content", value: "Personnel, readiness, investigations, fiscal, property, command climate" },
+    { label: "Coordination", value: "Must brief higher commander prior to CoC" },
+  ] as KeyPoint[],
+  overview: "The Status of Command Letter provides a comprehensive written assessment of your command to your higher commander and incoming CO. It documents the overall status of your unit including personnel, readiness, fiscal, property, and command climate issues. This letter ensures accountability and provides a clear picture of what you are turning over.",
+  timeline: [
+    { time: "T-30 Days", action: "Begin Compiling Data", details: "Gather readiness data, personnel status, fiscal status, property accountability, DEOCS results, ongoing investigations" },
+    { time: "T-14 Days", action: "Draft Status of Command Letter", details: "Write comprehensive letter, coordinate with staff, review with XO and SgtMaj, prepare briefing materials" },
+    { time: "T-10 Days", action: "Submit Letter to Higher Commander", details: "Submit final letter with all attachments, request date/time for formal briefing" },
+    { time: "T-3 Days", action: "Formal Briefing to Higher Commander", details: "Brief next higher commander on command status, discuss significant issues, address questions" },
+    { time: "Day of CoC", action: "Provide Copy to Incoming CO", details: "Present official copy, include in turnover binder, discuss any last-minute changes" },
+  ],
+  requiredContentSections: [
+    {
+      section: "Personnel Status",
+      items: [
+        "Current assigned strength vs authorized",
+        "Key billet vacancies",
+        "Non-deployable personnel summary",
+        "Pending PCS gains/losses",
+        "Personnel on limited duty",
+        "Pending administrative actions",
+        "Retention posture",
+      ],
+    },
+    {
+      section: "Readiness Issues",
+      items: [
+        "Current C-Level and A-Level (if applicable)",
+        "DRRS-MC report summary",
+        "Training deficiencies",
+        "Equipment readiness summary",
+        "Any factors degrading readiness",
+        "Planned actions to improve readiness",
+      ],
+    },
+    {
+      section: "Ongoing Investigations",
+      items: [
+        "JAGMAN investigations (status and timeline)",
+        "Command investigations",
+        "Property investigations (FLIPL, RFI)",
+        "NCIS investigations affecting command",
+        "Administrative boards pending",
+        "Any investigations involving command members",
+      ],
+    },
+    {
+      section: "Fiscal Status",
+      items: [
+        "Status of funds (OPTAR, O&M, etc.)",
+        "Budget execution rate",
+        "Remaining fiscal year projection",
+        "Unfunded requirements",
+        "Unliquidated obligations (ULOs)",
+        "Any fiscal irregularities or concerns",
+      ],
+    },
+    {
+      section: "Supply/Property Status",
+      items: [
+        "CMR reconciliation status",
+        "Significant deficiencies or excesses",
+        "CRANE verification status (small arms)",
+        "Pending property adjustments",
+        "Temporary loans outstanding",
+        "Equipment deadline status",
+      ],
+    },
+    {
+      section: "Command Climate",
+      items: [
+        "DEOCS results summary",
+        "Action plan for identified issues",
+        "Progress on corrective actions",
+        "Any open EO/harassment complaints",
+        "SAPR cases (status appropriate for discussion)",
+        "Morale assessment",
+      ],
+    },
+  ],
+  coordinationWithIncomingCO: {
+    whatToShare: [
+      "Status of Command Letter (provide draft T-14 if possible)",
+      "DEOCS results and action plan",
+      "DRRS-MC reports",
+      "Fiscal status reports",
+      "Property accountability summaries",
+      "Investigation status reports",
+    ],
+    jointMeetings: [
+      "Staff principal meetings",
+      "Key leader introductions",
+      "Operational briefs (S-3)",
+      "Logistics briefs (S-4)",
+      "Personnel briefs (S-1)",
+      "Safety Officer brief",
+      "SARC brief (if applicable)",
+    ],
+    turnoverBinder: [
+      "Status of Command Letter",
+      "Certificate of Relief",
+      "DEOCS results and action plan",
+      "Current policy letters",
+      "CCIR and standing orders",
+      "Key contact list",
+      "Ongoing action items",
+      "Calendar of upcoming requirements",
+    ],
+  },
+  commonMistakes: [
+    { mistake: "Starting Too Late", fix: "Begin compiling data T-30, draft letter T-14" },
+    { mistake: "Incomplete Information", fix: "Use checklist to ensure all required areas covered" },
+    { mistake: "Not Briefing Higher Commander", fix: "Schedule brief T-3, this is required not optional" },
+    { mistake: "Surprises for Incoming CO", fix: "Share information early, no hidden issues" },
+    { mistake: "Inaccurate Fiscal Data", fix: "Verify with Supply Officer, reconcile accounts" },
+    { mistake: "Omitting Ongoing Investigations", fix: "Inventory all open investigations with S-1/SJA" },
+    { mistake: "Not Documenting Command Climate Issues", fix: "Include DEOCS summary and action plan" },
+    { mistake: "Glossing Over Problems", fix: "Be honest about challenges facing the command" },
+  ],
+  references: [
+    { title: "CMC White Letter 3-17", url: "https://www.usmcu.edu/Portals/218/CMC%20White%20Letter%203-17%20-%20FINAL.PDF", isQuickLink: true },
+    { title: "MCO 4400.201 Vol 3 v2", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "MCO 3000.13B (Readiness Reporting)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+    { title: "MCO P5354.1E (PAC - DEOCS)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+  ] as TransitionReference[],
+};
+
+// ============================================================================
+// CERTIFICATE OF RELIEF (OUTGOING)
+// ============================================================================
+
+export const CERTIFICATE_OF_RELIEF_OUTGOING_DATA = {
+  title: "Certificate of Relief (Outgoing)",
+  subtitle: "Relinquishing Command Requirement",
+  keyPoints: [
+    { label: "Timeline", value: "Initiate joint inventories T-30, CoR signed day of CoC" },
+    { label: "Authority", value: "MCO 4400.201 Volume 3 v2, 010901, Para A" },
+    { label: "What It Covers", value: "CMR, GP, ammunition, COMSEC, fiscal, investigations" },
+    { label: "Joint Inventory", value: "Recommended with incoming CO (not required)" },
+    { label: "Acceptance Window", value: "Incoming CO has 60 days to review and report discrepancies" },
+  ] as KeyPoint[],
+  overview: "The Certificate of Relief is a letter of certification from the outgoing CO to the incoming CO documenting the status of supply operations within the command. It formally transfers accountability for the supply account and provides the incoming CO with a comprehensive picture of property and fiscal status.",
+  outgoingCOTimeline: [
+    { time: "T-30 Days", action: "Initiate Joint Inventories", details: "Coordinate with incoming CO, direct Supply Officer to prepare records, schedule inventories, ensure CMR reconciliations current" },
+    { time: "T-14 Days", action: "Ensure Property Records Current", details: "Complete pending CMR reconciliations, process outstanding adjustments, resolve known discrepancies, update GCSS-MC records" },
+    { time: "T-7 Days", action: "Resolve Discrepancies", details: "Process all pending RFIs, complete causative research, initiate investigations for unresolved losses, document all open items" },
+    { time: "Day of CoC", action: "Certify Accuracy and Sign", details: "Sign Certificate of Relief, provide to incoming CO, include all attachments, transfer supporting documentation" },
+  ],
+  jointInventoryProcess: {
+    highPriority: [
+      "Small arms (CRANE items)",
+      "COMSEC/CCI",
+      "High-value items",
+      "Sensitive items",
+      "Ammunition",
+    ],
+    mediumPriority: [
+      "Principal End Items (PEIs)",
+      "Communications equipment",
+      "Vehicles and heavy equipment",
+    ],
+    lowerPriority: [
+      "Consumables",
+      "Office equipment",
+      "General supplies",
+    ],
+    documentationRequirements: [
+      "Inventory worksheets (counts)",
+      "Reconciliation to CMR",
+      "Discrepancy list (if any)",
+      "Resolution status for discrepancies",
+      "Signatures of both COs (for joint inventories)",
+    ],
+  },
+  propertyCategories: [
+    { category: "CMR Items", include: "Current CMR totals by category, reconciliation status, known discrepancies, pending adjustments, SL-3 status" },
+    { category: "Garrison Property", include: "DPAS account status, items on hand from installation, pending turn-ins or receipts, discrepancies with base property" },
+    { category: "Ammunition (TAMIS)", include: "Current ammunition holdings, TAMIS reconciliation status, overages or shortages, pending turn-ins, AA&E inspection status" },
+    { category: "COMSEC", include: "EKMS account status, CCI items reconciliation, pending destructions, transfer documentation, COMSEC inspection status" },
+    { category: "Fuel/Credit Cards", include: "Government fuel card accounts, vehicle fleet card status, discrepancies or misuse concerns, pending audits" },
+    { category: "NAF Property", include: "NAF property inventory, NAF accounts, audit status, discrepancies" },
+    { category: "Historical/Trophy Weapons", include: "Items on loan from NMMC, base property historical weapons, sub-custody documentation" },
+    { category: "Temporary Loans", include: "Equipment loaned to unit, equipment loaned from unit, loan documentation status, expected return dates" },
+  ],
+  signatureRequirements: {
+    outgoingCO: "Certifies accuracy of information, acknowledges open discrepancies, dated day of relief",
+    supplyOfficer: "Endorses accuracy of supply records, certifies property account status, documents condition of supply operations",
+  },
+  discrepancyHandling: [
+    { method: "Statement of Charges", when: "Member admits liability, amount within ability to pay, member agrees", process: "Complete DD Form 362, member signs, process collection, adjust records" },
+    { method: "FLIPL", when: "Loss requires investigation, no member admits liability, value exceeds threshold", process: "Appoint investigating officer, complete investigation, make findings, route for approval" },
+  ],
+  corContent: [
+    { section: "Accountability", items: "CMR items, other unit-held accounts, historical weapons, temporary loans, COMSEC/CCI, ammunition status" },
+    { section: "Fiscal", items: "Status of funds report, budget execution summary, remaining fiscal year projection, ULOs, outstanding debts" },
+    { section: "Investigations", items: "Status of ongoing property investigations, pending RFIs, FLIPL status, expected resolution dates" },
+    { section: "Known Discrepancies", items: "List of unresolved discrepancies, research status, planned resolution" },
+  ],
+  commonInspectionFindings: [
+    "No Certificate of Relief on file",
+    "Certificate missing required elements",
+    "Discrepancies not documented",
+    "Investigation status not provided",
+    "Fiscal data inaccurate",
+    "No Supply Officer endorsement",
+    "COMSEC/ammunition not addressed",
+    "Incoming CO acceptance unclear",
+  ],
+  references: [
+    { title: "MCO 4400.201 Volume 3 v2", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "MCO 4400.150 (Consumer-Level Supply)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
+  ] as TransitionReference[],
+};
+
+// ============================================================================
+// DEOCS PRIOR TO RELINQUISHING COMMAND
+// ============================================================================
+
+export const RELINQUISH_DEOCS_DATA = {
+  title: "DEOCS Prior to Relinquishing Command",
+  subtitle: "90-Day Pre-Relinquishing Requirement",
+  keyPoints: [
+    { label: "Timeline", value: "Initiate 90 days prior to relinquishing command" },
+    { label: "Authority", value: "MARADMIN 291/19, MCO P5354.1E w/CH 1, Para 0103" },
+    { label: "Purpose", value: "Establishes baseline for incoming CO, documents your accountability" },
+    { label: "Note", value: "DIFFERENT from annual DEOCS requirement" },
+    { label: "Delivery", value: "Include results and action plan in turnover materials" },
+  ] as KeyPoint[],
+  overview: "This DEOCS requirement is tied specifically to RELINQUISHING command. It is different from the annual DEOCS requirement. This survey provides a final snapshot of your command climate at the end of your tour, creating accountability for your tenure and establishing a baseline for your relief.",
+  whyRequired: [
+    { reason: "Accountability", details: "Documents the command climate you established, shows results of your leadership, provides evidence of corrective actions taken" },
+    { reason: "Baseline for Incoming CO", details: "Incoming CO knows what climate they are inheriting, identifies issues requiring immediate attention, allows comparison to future surveys" },
+    { reason: "Continuity", details: "Ensures action plans transfer to new commander, prevents issues from being forgotten during transition, maintains focus on command climate" },
+  ],
+  timeline: [
+    { time: "90 Days Prior", action: "Initiate Survey", details: "Access DEOCS portal, register survey, add custom questions if desired, set survey window (2-4 weeks), notify command" },
+    { time: "75-60 Days Prior", action: "Survey Window", details: "Survey open for responses, monitor participation rates, send reminders, goal is high participation" },
+    { time: "60 Days Prior", action: "Close Window, Retrieve Results", details: "Close survey, download results, review with EOR, begin analysis" },
+    { time: "60-30 Days Prior", action: "Analyze and Develop Action Plan", details: "Identify key findings, categorize by priority, develop written action plan, begin implementing corrective actions, brief higher commander" },
+    { time: "30-0 Days Prior", action: "Finalize for Turnover", details: "Document all actions taken, update action plan with status, prepare comparison to previous surveys, include in turnover materials, brief incoming CO" },
+    { time: "At CoC", action: "Include in Turnover Materials", details: "Survey results, action plan, progress on actions, comparison data, recommendations" },
+  ],
+  turnoverMaterials: {
+    surveyResults: [
+      "Executive summary of findings",
+      "Full detailed results",
+      "Response rates",
+      "Demographic breakdowns (without identifying individuals)",
+      "Trend data if available",
+    ],
+    actionPlan: [
+      "Issues identified",
+      "Root cause analysis",
+      "Corrective actions planned",
+      "Responsible parties",
+      "Timelines",
+      "Success measures",
+    ],
+    progressReport: [
+      "Actions taken during remaining time",
+      "Results of those actions",
+      "Ongoing actions requiring continuation",
+      "Recommendations for incoming CO",
+    ],
+  },
+  briefingHHQ: {
+    when: "After results analysis (approximately T-45 to T-30)",
+    whatToInclude: [
+      "Key findings - major themes, areas of strength, areas of concern",
+      "Action plan - what you are doing, timeline, expected outcomes",
+      "Context - comparison to previous surveys, external factors",
+      "Recommendations - what incoming CO should continue, monitor, or resource",
+    ],
+    addressingNegativeFindings: {
+      doThis: [
+        "Be honest about challenges",
+        "Explain context where appropriate",
+        "Show what actions you have taken",
+        "Demonstrate commitment to improvement",
+      ],
+      avoidThis: [
+        "Dismiss or minimize concerns",
+        "Blame subordinates or external factors",
+        "Hide significant issues",
+        "Make excuses without action plans",
+      ],
+    },
+  },
+  coordinationWithIncomingCO: {
+    whatToShare: [
+      "Full survey results",
+      "Your analysis",
+      "Action plan with status",
+      "Recommendations",
+    ],
+    discussActionPlan: [
+      "Issues you identified",
+      "Actions taken during your time",
+      "Ongoing actions requiring continuation",
+      "Your recommendations",
+    ],
+    pendingIssues: [
+      "Open EO complaints",
+      "Ongoing investigations",
+      "Unresolved climate issues",
+      "Resource needs for improvement",
+    ],
+  },
+  commonInspectionFindings: [
+    "DEOCS not initiated 90 days prior to relinquishing",
+    "Results not included in turnover",
+    "No action plan developed",
+    "Higher commander not briefed",
+    "Incoming CO not aware of findings",
+    "No evidence of corrective actions",
+    "Comparison to previous surveys not provided",
+  ],
+  keyContacts: [
+    { name: "DEOMI Help Desk", info: "321-494-2747 / DSN 854-2747", url: "https://www.deomi.org" },
+    { name: "DEOCS Portal", info: "Survey administration", url: "https://www.defenseculture.mil/Assessment-to-Solutions/A2S-Home/" },
+  ],
+  references: [
+    { title: "DEOCS Portal", url: "https://www.defenseculture.mil/Assessment-to-Solutions/A2S-Home/", isQuickLink: true },
+    { title: "MCO P5354.1E w/CH 1 (PAC Policy)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "MARADMIN 291/19", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
+  ] as TransitionReference[],
+};

@@ -23,3 +23,7 @@ export { AnnualSafetySurveyContent } from "./AnnualSafetySurveyContent";
 export { AnnualTEReviewContent } from "./AnnualTEReviewContent";
 export { AnnualInventoryContent } from "./AnnualInventoryContent";
 export { AnnualMETLReviewContent } from "./AnnualMETLReviewContent";
+// Prior to Relinquishing Command
+export { StatusCommandLetterOutgoingContent } from "./StatusCommandLetterOutgoingContent";
+export { CertificateOfReliefOutgoingContent } from "./CertificateOfReliefOutgoingContent";
+export { RelinquishDEOCSContent } from "./RelinquishDEOCSContent";
