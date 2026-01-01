@@ -735,3 +735,473 @@ export const FAP_TRAINING_DATA = {
     { title: "National Domestic Violence Hotline", url: "https://www.thehotline.org/" },
   ] as TransitionReference[],
 };
+
+// ============================================================================
+// SAPR COMMAND POLICY STATEMENT (60-DAY)
+// ============================================================================
+
+export const SAPR_POLICY_DATA = {
+  title: "SAPR Command Policy Statement",
+  subtitle: "60-Day and 90-Day Post Change of Command Requirements",
+  keyPoints: [
+    { label: "60-Day Requirement", value: "Publish SAPR policy statement (MCO 1752.5C, Chap 3, Para 5.a)" },
+    { label: "90-Day Requirement", value: "Prominently post command policy statement" },
+    { label: "Primary Authority", value: "MCO 1752.5C (Sexual Assault Prevention and Response Program)" },
+    { label: "IG Inspection", value: "IGMC Functional Area Checklist (SAPR)" },
+  ] as KeyPoint[],
+  overview: "You have two SAPR policy requirements: Within 60 Days - Publish a policy statement on sexual assault prevention and response. Within 90 Days - Publish and prominently post a command policy statement that supports SAPR program objectives. These requirements overlap. You should develop one comprehensive SAPR policy that meets both requirements, publish within 60 days, and post prominently within 90 days.",
+  requiredElements: [
+    {
+      element: "Command Commitment to Prevention",
+      details: [
+        "State your personal commitment to preventing sexual assault",
+        "Sexual assault prevention is a command priority",
+        "Prevention is everyone's responsibility",
+      ],
+    },
+    {
+      element: "Zero Tolerance Statement",
+      details: [
+        "Sexual assault will not be tolerated",
+        "Applies to all personnel in your AOR",
+        "Offenders will be held accountable",
+      ],
+    },
+    {
+      element: "Reporting Options",
+      details: [
+        "Explain both Restricted and Unrestricted reporting",
+        "Identify where to report (SARC, SAPR VA, MCIO)",
+        "Provide 24/7 contact information",
+      ],
+    },
+    {
+      element: "Victim Support Commitment",
+      details: [
+        "Victims will be treated with dignity and respect",
+        "Victims will receive appropriate care and services",
+        "Protection from retaliation",
+      ],
+    },
+    {
+      element: "Retaliation Prohibition",
+      details: [
+        "Retaliation against victims, reporters, witnesses is prohibited",
+        "Applies to coercion, ostracism, discrimination",
+        "Command will investigate and address retaliation",
+      ],
+    },
+    {
+      element: "SAPR Personnel Identification",
+      details: [
+        "Identify your SARC (or command-level SARC)",
+        "Identify your SAPR VAs",
+        "Provide contact information",
+      ],
+    },
+    {
+      element: "Training Expectation",
+      details: [
+        "All personnel will complete annual SAPR training",
+        "Training will be conducted by credentialed SAPR VA or SARC",
+      ],
+    },
+    {
+      element: "Command Climate Statement",
+      details: [
+        "Foster environment encouraging prevention and reporting",
+        "No fear of retaliation, reprisal, ostracism, or maltreatment",
+      ],
+    },
+  ],
+  postingLocations: {
+    commonAreas: [
+      "Unit headquarters entrance",
+      "Break rooms",
+      "Duty huts",
+      "Gyms/fitness areas",
+    ],
+    highTrafficAreas: [
+      "Barracks common areas",
+      "Mess halls",
+      "Work centers",
+      "Training areas",
+    ],
+    digitalDistribution: [
+      "Unit SharePoint",
+      "Unit shared drives",
+      "Email distribution to all hands",
+    ],
+  },
+  distributionSteps: [
+    "Post hard copies in all required locations",
+    "Brief at all-hands formations",
+    "Include in new-join package",
+    "Brief during annual SAPR training",
+    "Post on unit electronic platforms",
+  ],
+  sarcCoordination: {
+    beforePublishing: [
+      "Review draft with SARC - ensures policy meets all requirements",
+      "Verify SARC and SAPR VA contact information is current",
+      "Request SARC input on local resources and procedures",
+    ],
+    afterPublishing: [
+      "Provide copy to SARC for compliance records",
+      "Coordinate posting - SARC may assist with locations",
+    ],
+  },
+  additionalRequirements: [
+    { requirement: "Appoint SAPR VAs", details: "Minimum 2 per battalion/squadron level, current D-SAACP certification" },
+    { requirement: "Publish SAPR SOP", details: "Standard Operating Procedure for SAPR functions in your AOR" },
+    { requirement: "Include SAPR VAs in Check-In/Out", details: "New-join brief includes SAPR VA introduction" },
+    { requirement: "Maintain SAPR Documentation", details: "Current appointment letters, training certifications, DD Form 2950" },
+    { requirement: "Ensure Annual Training Completion", details: "All personnel complete rank-appropriate training" },
+  ],
+  commonInspectionFindings: [
+    "Policy not published within timeline",
+    "Policy not posted in prominent locations",
+    "Policy missing required elements",
+    "Contact information outdated",
+    "Personnel unaware of policy",
+    "No evidence of SARC coordination",
+  ],
+  keyContacts: [
+    { name: "HQMC SAPR", info: "SMB.Manpower.SAPR@usmc.mil", url: "" },
+    { name: "DoD Safe Helpline", info: "1-877-995-5247", url: "https://safehelpline.org" },
+  ],
+  references: [
+    { title: "MCO 1752.5C (SAPR Program)", url: "https://www.marines.mil/portals/1/Publications/MCO%201752.5C.pdf", isQuickLink: true },
+    { title: "SAPR Gear Locker", url: "https://hqmcportal.hqi.usmc.mil/sites/family/mfb/SitePages/Home.aspx", isQuickLink: true },
+    { title: "DoD SAPR", url: "https://www.sapr.mil" },
+    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
+  ] as TransitionReference[],
+};
+
+// ============================================================================
+// UPFRP SOP (60-DAY)
+// ============================================================================
+
+export const UPFRP_SOP_DATA = {
+  title: "Unit, Personal and Family Readiness Program (UPFRP) SOP",
+  subtitle: "60-Day Post Change of Command Requirement",
+  keyPoints: [
+    { label: "Timeline", value: "Within 60 days of Change of Command" },
+    { label: "Authority", value: "MCO 1754.9B, Para 4.b" },
+    { label: "IG Inspection", value: "Functional Area Checklist 1754.9 (UPFRP)" },
+    { label: "Col-Level Note", value: "Must include DRC and URC roles and responsibilities" },
+  ] as KeyPoint[],
+  overview: "You must publish a Unit, Personal and Family Readiness Program (UPFRP) SOP within 60 days of assuming command. This SOP outlines roles and responsibilities specific to your unit for each UPFRP requirement.",
+  requiredElements: [
+    "Program Purpose and Scope",
+    "Command Team Responsibilities (CO, XO, SgtMaj, Chaplain)",
+    "Family Readiness Officer (FRO) Responsibilities",
+    "Unit Readiness Coordinator (URC) Role (if applicable)",
+    "Deployment Readiness Coordinator (DRC) Role (Col-level commands)",
+    "Single Marine Representative Responsibilities",
+    "Family Readiness Command Team Advisor (FRCTA) Role",
+    "Communication Plan (official channels, social media, crisis)",
+    "Deployment Cycle Support (pre-deployment, sustainment, reintegration)",
+    "Volunteer Management (recruitment, training, recognition)",
+    "Resource Referral Procedures",
+    "Privacy and Information Security",
+  ],
+  lCodes: [
+    { code: "FRO", title: "Family Readiness Officer", description: "Assigned to designated billet, responsible for UPFRP coordination" },
+    { code: "DRC", title: "Deployment Readiness Coordinator", description: "Col-level commands, communication link between commander and Marines/families" },
+    { code: "URC", title: "Unit Readiness Coordinator", description: "Battalion/Squadron level, coordinates unit family readiness activities" },
+  ],
+  drcAppointmentSteps: [
+    "Identify Candidate - select qualified individual (typically Maj/CWO3 and above)",
+    "Prepare Appointment Letter - formal appointment by commander",
+    "Provide Training - MCFTB training, UPFRP policy familiarization",
+    "Notify Subordinate Commands - establish communication protocols",
+    "Document in SOP - include DRC role with authorities and limitations",
+  ],
+  relatedRequirements: [
+    { timeline: "30 Days", requirement: "Attend Command Team Training with MCFTB" },
+    { timeline: "60 Days", requirement: "Publish UPFRP SOP" },
+    { timeline: "90 Days", requirement: "Request comprehensive MCCS brief on local services" },
+  ],
+  commonInspectionFindings: [
+    "UPFRP SOP not published within 60 days",
+    "SOP missing required elements",
+    "Roles and responsibilities not clearly defined",
+    "DRC/URC roles not addressed (Col-level)",
+    "Communication plan not established",
+    "Volunteer management procedures missing",
+    "SOP not updated after personnel changes",
+  ],
+  references: [
+    { title: "MCO 1754.9B (UPFRP)", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf", isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/", isQuickLink: true },
+    { title: "MCCS Family Programs", url: "https://www.usmc-mccs.org/" },
+    { title: "Military OneSource", url: "https://www.militaryonesource.mil/" },
+  ] as TransitionReference[],
+};
+
+// ============================================================================
+// COMMAND PHILOSOPHY (60-DAY OPTIONAL)
+// ============================================================================
+
+export const COMMAND_PHILOSOPHY_DATA = {
+  title: "Command Philosophy",
+  subtitle: "60-Day Post Change of Command (Optional)",
+  keyPoints: [
+    { label: "Timeline", value: "Within 60 days (optional but recommended)" },
+    { label: "Authority", value: "No specific MCO requirement - listed as optional in New CO Checklist" },
+    { label: "Length", value: "1-2 pages maximum" },
+    { label: "Purpose", value: "Sets tone, establishes expectations, guides decision-making" },
+  ] as KeyPoint[],
+  overview: "Publishing a command philosophy or command guidance is optional but strongly recommended. Your command philosophy communicates your expectations, priorities, and leadership approach to all personnel.",
+  purposes: [
+    { purpose: "Communicate Your Intent", details: "What you expect from your Marines, how you will lead, what success looks like" },
+    { purpose: "Establish Priorities", details: "What matters most to you, how to allocate time and resources" },
+    { purpose: "Set Standards", details: "Standards for conduct and professionalism, expectations for discipline" },
+    { purpose: "Guide Decision-Making", details: "Framework for subordinate decisions, when to act without asking" },
+    { purpose: "Build Culture", details: "Define command climate you want, reinforce core values" },
+  ],
+  recommendedTopics: {
+    coreLeadership: ["Mission Focus", "Taking Care of Marines", "Standards and Discipline", "Communication", "Decision-Making Authority"],
+    operational: ["Training", "Safety", "Maintenance and Readiness"],
+    leadershipDevelopment: ["Professional Development", "Mentorship"],
+    cultureAndClimate: ["Integrity and Ethics", "Respect and Dignity", "Accountability"],
+  },
+  distributionMethods: {
+    initial: [
+      "All-Hands Formation - read or brief key points personally",
+      "Written Distribution - printed copies to all hands, post in common areas",
+      "Electronic Distribution - post on SharePoint, email to all hands",
+      "Leadership Briefings - brief officers and SNCOs in detail",
+    ],
+    ongoing: [
+      "Reference in decision-making - cite philosophy when making decisions",
+      "New Personnel - brief to all new joins, include in check-in process",
+      "Periodic Review - reference at safety stand-downs, quarterly training",
+    ],
+  },
+  bestPractices: {
+    doThis: [
+      "Be authentic - write in your voice",
+      "Be specific - avoid generic statements",
+      "Be concise - 1-2 pages maximum",
+      "Be memorable - include key phrases Marines will remember",
+      "Connect to core values",
+      "Include your Commander's Intent for operations",
+    ],
+    avoidThis: [
+      "Copy another commander's philosophy verbatim",
+      "Make promises you cannot keep",
+      "Include so much detail it becomes unreadable",
+      "Contradict published policies",
+      "Change it frequently (undermines credibility)",
+    ],
+  },
+  commonMistakes: [
+    "Too Long - keep to 1-2 pages, Marines will not read a 10-page document",
+    "Too Generic - include specific expectations, not just 'be a good Marine'",
+    "Copied from Another Commander - write your own authentic philosophy",
+    "Inconsistent with Actions - only include things you will actually do",
+    "Never Referenced Again - use it in decision-making and communication",
+    "Contradicts Policies - review against published orders and regulations",
+  ],
+  references: [
+    { title: "Lejeune Leadership Institute Resources", url: "https://www.usmcu.edu/Academic-Programs/Lejeune-Leadership-Institute/Commandants-Combined-Commandership-Course/Resources/", isQuickLink: true },
+    { title: "MCDP 1 (Warfighting)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+    { title: "MCDP 6 (Command and Control)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+  ] as TransitionReference[],
+};
+
+// ============================================================================
+// PAC POLICY (90-DAY)
+// ============================================================================
+
+export const PAC_POLICY_DATA = {
+  title: "Prohibited Activities and Conduct (PAC) Policy",
+  subtitle: "90-Day Post Change of Command Requirement",
+  keyPoints: [
+    { label: "Timeline", value: "Within 90 days of Change of Command" },
+    { label: "Authority", value: "MCO P5354.1E w/CH 1, Para 020306" },
+    { label: "IG Inspection", value: "IGMC Functional Area Checklist (Equal Opportunity/PAC)" },
+    { label: "Requirement", value: "Publish AND prominently post" },
+  ] as KeyPoint[],
+  overview: "You must publish and prominently post a written command policy that implements MCO 5354.1E (Prohibited Activities and Conduct Prevention and Response Policy) within 90 days of assuming command. This policy addresses discrimination, harassment, hazing, bullying, and other prohibited conduct that undermines good order and discipline.",
+  requiredElements: [
+    "Commander's Commitment (zero tolerance, positive command climate)",
+    "Definition of Prohibited Conduct",
+    "Reporting Procedures (chain of command, IG, EEO channels)",
+    "Investigation Procedures",
+    "Protection from Retaliation",
+    "Accountability Measures",
+    "Training Requirements",
+    "Resources and Points of Contact",
+  ],
+  prohibitedActivities: [
+    { activity: "Discrimination", definition: "Treating someone unfavorably because of race, color, religion, sex (including pregnancy), national origin, age, disability, genetic information, sexual orientation, or gender identity." },
+    { activity: "Harassment", definition: "Unwelcome conduct based on protected characteristics that creates an intimidating, hostile, or offensive environment." },
+    { activity: "Sexual Harassment", definition: "Unwelcome sexual advances, requests for sexual favors, and deliberate or repeated offensive comments or gestures of a sexual nature that affect terms/conditions of employment or create a hostile environment." },
+    { activity: "Hazing", definition: "Any conduct whereby someone causes another to suffer or be exposed to any activity that is cruel, abusive, humiliating, oppressive, demeaning, or harmful. Consent does not negate hazing." },
+    { activity: "Bullying", definition: "An act of aggression with intent of harming a targeted service member, either physically or psychologically. Includes repeated verbal abuse, social isolation, threatening behavior, cyberbullying." },
+    { activity: "Stalking", definition: "Engaging in a course of conduct directed at a specific person that would cause a reasonable person to fear for safety or suffer substantial emotional distress." },
+    { activity: "Retaliation", definition: "Taking or threatening to take an adverse action against someone because they reported prohibited conduct or participated in an investigation." },
+  ],
+  postingRequirements: {
+    locations: ["Unit headquarters building", "Common areas (break rooms, duty huts)", "Barracks common areas", "Workspaces", "High traffic areas"],
+    standards: ["Eye level, easily readable", "Not hidden among other postings", "Clean, current copy (not faded or torn)", "Framed or protected"],
+  },
+  commonInspectionFindings: [
+    "PAC policy not published within 90 days",
+    "Policy not prominently posted",
+    "Policy missing required prohibited conduct categories",
+    "Outdated policy (previous commander)",
+    "Personnel unaware of reporting procedures",
+    "Retaliation protections not clearly stated",
+  ],
+  keyContacts: [
+    { name: "IGMC Hotline", info: "1-866-243-3887", url: "https://www.hqmc.marines.mil/igmc/" },
+  ],
+  references: [
+    { title: "MCO P5354.1E w/CH 1 (PAC Policy)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/", isQuickLink: true },
+    { title: "DEOCS", url: "https://www.defenseculture.mil/Assessment-to-Solutions/A2S-Home/" },
+  ] as TransitionReference[],
+};
+
+// ============================================================================
+// SAFETY CLIMATE SURVEY (90-DAY)
+// ============================================================================
+
+export const SAFETY_CLIMATE_SURVEY_DATA = {
+  title: "Safety Climate Survey (GCASS)",
+  subtitle: "90-Day Post Change of Command Requirement (O5/O6 Commands)",
+  keyPoints: [
+    { label: "Timeline", value: "Within 90 days of CoC, then annually (365 days after results)" },
+    { label: "Applies To", value: "O5 and O6-level commands" },
+    { label: "Authority", value: "MCO 5100.29C, Para 060402" },
+    { label: "IG Inspection", value: "FAC 5100.29, Question 0113" },
+  ] as KeyPoint[],
+  overview: "O5 and O6-level commanders must complete the appropriate safety climate survey within 90 days of assuming command to establish a baseline for the new commander. This survey is then required annually thereafter.",
+  surveyInfo: {
+    name: "Ground Climate Assessment Survey (GCASS)",
+    website: "https://www.semperfisurveys.org/",
+    managedBy: "CMC Safety Division",
+    whoTakes: "All military and civilian personnel assigned to command",
+    responseType: "Anonymous",
+  },
+  initiationSteps: [
+    "Contact your Safety Officer to initiate GCASS within first 30 days",
+    "Register on Semper Fi Surveys website",
+    "Set survey window (typically 2-4 weeks)",
+    "Notify all hands of survey purpose and dates",
+    "Monitor participation rates",
+    "Retrieve results after window closes",
+  ],
+  actionPlanRequirements: {
+    steps: [
+      "Review results with Safety Officer",
+      "Identify priority issues (High/Medium/Lower)",
+      "Develop action plan with root cause, corrective action, timeline",
+      "Communicate results and actions to command",
+      "Track progress monthly",
+    ],
+    priorityCategories: [
+      { priority: "High", description: "Safety hazards creating immediate risk - address immediately" },
+      { priority: "Medium", description: "Training deficiencies, communication gaps - address within 30-60 days" },
+      { priority: "Lower", description: "Culture changes, resource requests - long-term" },
+    ],
+  },
+  documentationRequirements: [
+    "Survey registration date and window",
+    "Participation data (total, responses, rate)",
+    "Survey results summary and detailed findings",
+    "Action plan with issues, actions, completion dates",
+    "Progress tracking and evidence of corrective actions",
+  ],
+  commonInspectionFindings: [
+    "Survey not completed within 90 days of CoC",
+    "Low participation rates",
+    "No documented action plan",
+    "Results not communicated to command",
+    "No evidence of corrective actions",
+    "Annual survey not completed",
+  ],
+  keyContacts: [
+    { name: "CMC Safety Division", info: "(703) 614-1895 / DSN 224-1895", url: "https://www.safety.marines.mil/" },
+    { name: "Semper Fi Surveys (GCASS)", info: "For technical issues", url: "https://www.semperfisurveys.org/" },
+  ],
+  references: [
+    { title: "MCO 5100.29C (Safety Program)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/", isQuickLink: true },
+    { title: "Semper Fi Surveys", url: "https://www.semperfisurveys.org/" },
+    { title: "Naval Safety Center", url: "https://safetycenter.navy.mil/" },
+  ] as TransitionReference[],
+};
+
+// ============================================================================
+// DEOCS (90-DAY PRIOR TO RELINQUISHING)
+// ============================================================================
+
+export const DEOCS_DATA = {
+  title: "Defense Equal Opportunity Climate Survey (DEOCS)",
+  subtitle: "90 Days Prior to Relinquishing Command / Annual Requirement",
+  keyPoints: [
+    { label: "Timeline", value: "90 days prior to relinquishing command, then annually" },
+    { label: "Authority", value: "MARADMIN 291/19, MCO P5354.1E w/CH 1, Para 0103" },
+    { label: "IG Inspection", value: "IGMC Functional Area Checklist (Equal Opportunity)" },
+    { label: "Note", value: "Tied to RELINQUISHING command, not assuming" },
+  ] as KeyPoint[],
+  overview: "You must initiate a Defense Equal Opportunity Climate Survey (DEOCS) 90 days prior to relinquishing command and annually thereafter. DEOCS assesses your command climate regarding equal opportunity, harassment, and organizational effectiveness.",
+  surveyInfo: {
+    website: "https://www.defenseculture.mil/Assessment-to-Solutions/A2S-Home/",
+    surveyWindow: "Minimum 2 weeks for small commands, 3-4 weeks for larger commands",
+    responseType: "Anonymous",
+    customization: "Limited customization allowed - can add unit-specific questions",
+  },
+  requestSteps: [
+    "Access DEOCS portal at defenseculture.mil",
+    "Register your command with unit name, UIC, commander info",
+    "Designate Survey Administrator (typically EO representative)",
+    "Select survey window dates",
+    "Customize survey with tailored questions (optional)",
+    "Submit request",
+  ],
+  timeline: {
+    relinquishing: [
+      { timing: "90 Days Prior", action: "Initiate DEOCS, open survey window" },
+      { timing: "60 Days Prior", action: "Close survey window, retrieve results" },
+      { timing: "30-60 Days Prior", action: "Analyze results, develop action plan, brief command" },
+      { timing: "At Change of Command", action: "Include DEOCS in turnover materials" },
+    ],
+    annual: "Complete DEOCS annually, compare results year-over-year, track improvement",
+  },
+  whatItMeasures: [
+    { dimension: "Organizational Climate", areas: "Unit cohesion, trust in leadership, communication, job satisfaction" },
+    { dimension: "Equal Opportunity Climate", areas: "Perceptions of discrimination, fair treatment, diversity and inclusion" },
+    { dimension: "Harassment Indicators", areas: "Sexual harassment climate, fear of retaliation, confidence in reporting" },
+    { dimension: "Leadership Effectiveness", areas: "Trust in supervisors and senior leadership, communication, accessibility" },
+    { dimension: "Organizational Effectiveness", areas: "Mission focus, teamwork, resources and support" },
+    { dimension: "Work-Life Balance", areas: "Workload management, family support, stress levels" },
+  ],
+  actionPlanSteps: [
+    "Review results - examine overall scores, areas of concern, specific issues",
+    "Brief key leaders (XO, SgtMaj, section heads, EO rep)",
+    "Develop action plan for each issue (root cause, corrective action, timeline)",
+    "Communicate to command - thank for participation, share themes, explain actions",
+    "Implement and track progress monthly",
+    "Document for turnover to incoming commander",
+  ],
+  commonInspectionFindings: [
+    "DEOCS not initiated 90 days prior to relinquishing command",
+    "Annual DEOCS not completed",
+    "Low participation rates",
+    "No documented action plan",
+    "Results not briefed to command",
+    "No evidence of corrective actions",
+    "DEOCS results not included in turnover",
+  ],
+  references: [
+    { title: "DEOCS Portal", url: "https://www.defenseculture.mil/Assessment-to-Solutions/A2S-Home/", isQuickLink: true },
+    { title: "MCO P5354.1E w/CH 1 (PAC Policy)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
+  ] as TransitionReference[],
+};
