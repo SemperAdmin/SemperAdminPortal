@@ -3516,6 +3516,8 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "adsep-overview",
     "legal-hold-investigations",
     "hazing-harassment-reporting",
+    "page11-vs-6105-decision-guide",
+    "counseling-refusal-procedures",
   ];
   const leadersAwardsSection = "leaders-awards-recognition";
   const leadersAwardsSlugs = [
