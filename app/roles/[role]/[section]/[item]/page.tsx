@@ -3273,9 +3273,9 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "annual-inventory": <AnnualInventoryContent />,
     "annual-metl-review": <AnnualMETLReviewContent />,
     // Prior to Relinquishing Command
-    "relinquish-status-letter": <StatusCommandLetterOutgoingContent />,
-    "relinquish-cor": <CertificateOfReliefOutgoingContent />,
-    "relinquish-deocs": <RelinquishDEOCSContent />,
+    "turnover-documentation": <StatusCommandLetterOutgoingContent />,
+    "cor-outgoing": <CertificateOfReliefOutgoingContent />,
+    "outgoing-deocs": <RelinquishDEOCSContent />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
