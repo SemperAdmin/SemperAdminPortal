@@ -1205,3 +1205,427 @@ export const DEOCS_DATA = {
     { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
   ] as TransitionReference[],
 };
+
+// ============================================================================
+// ANNUAL DEOCS
+// ============================================================================
+
+export const ANNUAL_DEOCS_DATA = {
+  title: "Annual DEOCS",
+  subtitle: "Annual Requirement - Command Climate Assessment",
+  keyPoints: [
+    { label: "Timeline", value: "Annually (within 365 days of previous survey closing)" },
+    { label: "Authority", value: "MCO P5354.1E w/CH 1, Para 0103" },
+    { label: "IG Inspection", value: "IGMC Functional Area Checklist (Equal Opportunity)" },
+    { label: "Applies To", value: "All commands with O5/O6 commanders" },
+  ] as KeyPoint[],
+  overview: "DEOCS is required annually to maintain awareness of command climate. Annual surveys allow year-over-year comparison to track improvement and identify emerging issues. The annual requirement runs from when your previous survey closes, not from when you assumed command.",
+  annualCycle: {
+    description: "The annual cycle begins when your survey window closes:",
+    steps: [
+      "Survey window closes (e.g., March 1)",
+      "Next survey must be initiated within 365 days (by following February 28)",
+      "Plan to initiate 30 days before deadline to allow for survey window",
+      "Recommend consistent annual timing (same time each year)",
+    ],
+  },
+  requestSteps: [
+    "Access DEOCS portal at defenseculture.mil",
+    "Log in with administrator credentials",
+    "Select 'Request New Survey'",
+    "Verify/update command information",
+    "Set survey window dates (minimum 2 weeks)",
+    "Add tailored questions if desired",
+    "Submit request (approval typically within 48 hours)",
+    "Receive confirmation with survey access codes",
+  ],
+  whatItMeasures: [
+    { dimension: "Organizational Climate", areas: "Unit cohesion, trust in leadership, communication, job satisfaction" },
+    { dimension: "Equal Opportunity Climate", areas: "Perceptions of discrimination, fair treatment, diversity and inclusion" },
+    { dimension: "Harassment Indicators", areas: "Sexual harassment climate, fear of retaliation, confidence in reporting" },
+    { dimension: "Leadership Effectiveness", areas: "Trust in supervisors and senior leadership, communication, accessibility" },
+    { dimension: "Organizational Effectiveness", areas: "Mission focus, teamwork, resources and support" },
+    { dimension: "Connectedness", areas: "Unit belonging, peer relationships, isolation indicators" },
+  ],
+  actionPlanRequirements: {
+    steps: [
+      "Review results with EO representative and key leaders",
+      "Compare to previous year - identify trends",
+      "Identify priority issues (scores below benchmark, declining scores)",
+      "Develop action plan with specific actions, owners, timelines",
+      "Communicate results and planned actions to command",
+      "Track progress quarterly",
+    ],
+    priorityCategories: [
+      { priority: "High", description: "Issues indicating harassment, discrimination, or significant morale problems - address immediately" },
+      { priority: "Medium", description: "Communication gaps, trust issues, leadership accessibility - address within 60 days" },
+      { priority: "Lower", description: "Minor culture improvements, suggestions - long-term" },
+    ],
+  },
+  yearOverYearComparison: [
+    "Review each dimension against previous year's score",
+    "Identify significant changes (positive or negative)",
+    "Investigate root causes for declining scores",
+    "Document what interventions worked for improving scores",
+    "Adjust action plan based on trends",
+  ],
+  igDocumentation: [
+    "Survey registration and window dates",
+    "Participation data (total eligible, responses, participation rate)",
+    "Survey results (summary and detailed reports)",
+    "Action plan with specific corrective actions",
+    "Evidence of command communication (meeting notes, emails)",
+    "Progress tracking (quarterly updates on action items)",
+    "Year-over-year comparison analysis",
+  ],
+  commonInspectionFindings: [
+    "Annual DEOCS not completed within 365 days",
+    "Low participation rates (below 50%)",
+    "No documented action plan",
+    "Results not communicated to command",
+    "No evidence of corrective actions implemented",
+    "No year-over-year comparison or trend analysis",
+    "Action items not tracked or updated",
+  ],
+  references: [
+    { title: "DEOCS Portal", url: "https://www.defenseculture.mil/Assessment-to-Solutions/A2S-Home/", isQuickLink: true },
+    { title: "MCO P5354.1E w/CH 1 (PAC Policy)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
+  ] as TransitionReference[],
+};
+
+// ============================================================================
+// ANNUAL SAFETY SURVEY
+// ============================================================================
+
+export const ANNUAL_SAFETY_SURVEY_DATA = {
+  title: "Annual Safety Climate Survey",
+  subtitle: "Annual Requirement - Safety Program Assessment",
+  keyPoints: [
+    { label: "Timeline", value: "Annually (within 365 days of previous survey results)" },
+    { label: "Ground Units", value: "Ground Climate Assessment Survey (GCASS)" },
+    { label: "Aviation Units", value: "CSA, MCAS, ASPA surveys" },
+    { label: "Authority", value: "MCO 5100.29C, Para 060402-060403" },
+  ] as KeyPoint[],
+  overview: "Safety climate surveys are required annually to maintain awareness of safety culture. Ground units use GCASS; aviation units use CSA, MCAS, and ASPA surveys. The annual requirement runs from the previous survey results, creating a continuous assessment cycle.",
+  groundUnitsSurvey: {
+    name: "Ground Climate Assessment Survey (GCASS)",
+    website: "https://www.semperfisurveys.org/",
+    whoTakes: "All military and civilian personnel",
+    annualCycle: [
+      "Survey results received (e.g., April 1)",
+      "Next survey must be initiated within 365 days",
+      "Recommend same time each year for consistency",
+      "Coordinate with Safety Officer to schedule",
+    ],
+  },
+  aviationUnitsSurveys: {
+    surveys: [
+      { name: "Command Safety Assessment (CSA)", whoTakes: "Aircrew (pilots, NFOs, aircrewmen)" },
+      { name: "Maintenance Climate Assessment Survey (MCAS)", whoTakes: "All maintenance personnel" },
+      { name: "Administrative Support Personnel Assessment (ASPA)", whoTakes: "S-shop and support personnel" },
+    ],
+    website: "https://www.safetyclimatesurveys.org/",
+    note: "All three surveys should be conducted during same window for comprehensive assessment",
+  },
+  initiationSteps: [
+    "Coordinate with Safety Officer/DOSS 30 days before deadline",
+    "Register on appropriate survey website (GCASS or aviation surveys)",
+    "Set survey window (typically 2-4 weeks)",
+    "Notify all hands of survey purpose and timeline",
+    "Monitor participation rates daily during window",
+    "Retrieve and analyze results after window closes",
+  ],
+  actionPlanRequirements: {
+    steps: [
+      "Review results with Safety Officer",
+      "Compare to previous year - identify trends",
+      "Prioritize issues by risk level",
+      "Develop action plan with specific actions, responsible parties, timelines",
+      "Brief commander on findings and plan",
+      "Communicate to command (what you learned, what you're doing)",
+      "Track progress monthly",
+    ],
+    priorityCategories: [
+      { priority: "High", description: "Safety hazards creating immediate risk - address immediately" },
+      { priority: "Medium", description: "Training gaps, procedural issues - address within 30-60 days" },
+      { priority: "Lower", description: "Culture changes, resource requests - long-term action" },
+    ],
+  },
+  igDocumentation: [
+    "Survey registration date and window",
+    "Participation data (total eligible, responses, rate)",
+    "Survey results (summary and detailed findings)",
+    "Year-over-year comparison analysis",
+    "Action plan with issues, actions, responsible parties, completion dates",
+    "Progress tracking (monthly updates)",
+    "Evidence of command communication (briefs, emails, formations)",
+    "Evidence of corrective actions implemented",
+  ],
+  commonInspectionFindings: [
+    "Annual survey not completed within 365 days",
+    "Low participation rates",
+    "No documented action plan",
+    "Results not compared to previous year",
+    "No evidence of corrective actions",
+    "Results not communicated to command",
+    "Action items not tracked or updated",
+  ],
+  keyContacts: [
+    { name: "CMC Safety Division", info: "(703) 614-1895 / DSN 224-1895", url: "https://www.safety.marines.mil/" },
+    { name: "Semper Fi Surveys (GCASS)", info: "For ground units", url: "https://www.semperfisurveys.org/" },
+    { name: "Aviation Safety Climate Surveys", info: "For aviation units", url: "https://www.safetyclimatesurveys.org/" },
+  ],
+  references: [
+    { title: "MCO 5100.29C (Safety Program)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "Semper Fi Surveys (GCASS)", url: "https://www.semperfisurveys.org/", isQuickLink: true },
+    { title: "Aviation Safety Climate Surveys", url: "https://www.safetyclimatesurveys.org/" },
+    { title: "Naval Safety Center", url: "https://safetycenter.navy.mil/" },
+  ] as TransitionReference[],
+};
+
+// ============================================================================
+// ANNUAL T/E REVIEW
+// ============================================================================
+
+export const ANNUAL_TE_REVIEW_DATA = {
+  title: "Annual Table of Equipment (T/E) Review",
+  subtitle: "Annual Requirement - Equipment Authorization Validation",
+  keyPoints: [
+    { label: "Timeline", value: "Annually" },
+    { label: "Authority", value: "MCO 4400.150 (Equipment Allowances)" },
+    { label: "System", value: "Table of Authorized Material and Control Number System (TAMCN) / TFSMS" },
+    { label: "Applies To", value: "All commands with assigned equipment" },
+  ] as KeyPoint[],
+  overview: "The annual T/E review ensures your unit's equipment authorizations match your mission requirements and that your on-hand equipment aligns with authorizations. This review identifies over-authorizations, under-authorizations, and equipment that should be redistributed.",
+  teTypes: [
+    { type: "Type I Allowance", description: "Minimum essential equipment required to accomplish mission. Automatically issued." },
+    { type: "Type II Allowance", description: "Equipment that enhances capability. Issued based on availability and priority." },
+    { type: "Type III Allowance", description: "Equipment for special missions or contingencies. Requires specific approval." },
+  ],
+  annualReviewProcess: [
+    "Obtain current T/E from TFSMS or G-4/S-4",
+    "Compare T/E authorizations to mission requirements",
+    "Validate on-hand equipment against T/E",
+    "Identify shortfalls and excesses",
+    "Submit change requests through appropriate channels",
+    "Document review for IG inspection",
+  ],
+  tfsmsValidation: {
+    description: "Total Force Structure Management System (TFSMS) is the system of record:",
+    steps: [
+      "Access TFSMS through appropriate portal",
+      "Review current T/E for your UIC",
+      "Validate each line item (authorized vs on-hand)",
+      "Identify discrepancies between T/E and CMR",
+      "Submit exception requests for mission-essential variances",
+      "Save/print documentation for records",
+    ],
+  },
+  commonIssues: [
+    { issue: "Over-authorization", action: "Unit has more authorization than needed - coordinate with HHQ for T/E adjustment" },
+    { issue: "Under-authorization", action: "Mission requires more than T/E allows - submit authorization increase request" },
+    { issue: "Excess equipment", action: "On-hand exceeds T/E - coordinate redistribution or turn-in" },
+    { issue: "Equipment shortfall", action: "On-hand less than T/E - submit requisition or coordinate with HHQ" },
+    { issue: "Mission change", action: "New mission requires different equipment - submit T/E modification request" },
+  ],
+  igDocumentation: [
+    "Current T/E printout or TFSMS extract",
+    "Annual review documentation (signed by commander)",
+    "Comparison of T/E to on-hand (CMR reconciliation)",
+    "Change requests submitted (with status)",
+    "Exception approvals for variances",
+    "Evidence of review completion date",
+  ],
+  commonInspectionFindings: [
+    "Annual T/E review not completed or documented",
+    "T/E does not match current mission",
+    "On-hand equipment not reconciled with T/E",
+    "Excess equipment not reported or redistributed",
+    "Shortfalls not requisitioned or documented",
+    "Change requests not submitted for known mismatches",
+  ],
+  references: [
+    { title: "MCO 4400.150 (Equipment Allowances)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "TFSMS", url: "https://tfsms.mccdc.usmc.mil/", isQuickLink: true },
+    { title: "MCO 4400.201 (Property Management)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+  ] as TransitionReference[],
+};
+
+// ============================================================================
+// ANNUAL INVENTORY
+// ============================================================================
+
+export const ANNUAL_INVENTORY_DATA = {
+  title: "Annual Wall-to-Wall Inventory",
+  subtitle: "Annual Requirement - Property Accountability",
+  keyPoints: [
+    { label: "Timeline", value: "Annually (within 12 months of previous inventory)" },
+    { label: "Authority", value: "MCO 4400.201 Volume 3, Chapter 5" },
+    { label: "Applies To", value: "All CMR items, GP items, ammunition, COMSEC" },
+    { label: "Critical Note", value: "Must be 100% hands-on inventory" },
+  ] as KeyPoint[],
+  overview: "The annual wall-to-wall inventory is a complete physical inventory of all property assigned to your command. This is not a sampling - it requires hands-on verification of every item on your CMR, Garrison Property account, and other accountable property.",
+  propertyToInventory: [
+    { category: "Consolidated Memorandum Receipt (CMR)", items: "All organic equipment: vehicles, weapons, radios, optics, etc." },
+    { category: "Garrison Property (GP)", items: "Base-owned equipment: furniture, computers, appliances" },
+    { category: "Ammunition", items: "All ammunition accounted in TAMIS" },
+    { category: "COMSEC", items: "Cryptographic material (separate regulated inventory procedures)" },
+    { category: "ICE", items: "Individual Clothing and Equipment in unit supply warehouse" },
+    { category: "Fuel/HAZMAT", items: "Fuel logs, HAZMAT inventory" },
+    { category: "Non-Appropriated Funds (NAF) Property", items: "Unit fund property" },
+  ],
+  inventoryProcedures: {
+    preparation: [
+      "Obtain current CMR/property records",
+      "Schedule inventory (allow adequate time for 100% coverage)",
+      "Assign inventory teams (recommend mixed teams)",
+      "Prepare inventory sheets (serial number, nomenclature, location)",
+      "Brief all Responsible Officers on their areas",
+    ],
+    execution: [
+      "Conduct hands-on count of every item",
+      "Verify serial numbers against records",
+      "Check condition and serviceability",
+      "Document discrepancies immediately",
+      "Photograph damaged or missing items",
+      "Complete all areas before declaring complete",
+    ],
+    postInventory: [
+      "Reconcile inventory results with property records",
+      "Initiate FLIPL for missing items",
+      "Update records for any discrepancies found",
+      "Submit completed inventory to Supply Officer",
+      "Commander signs inventory completion certification",
+    ],
+  },
+  cmrVerification: {
+    description: "The Consolidated Memorandum Receipt (CMR) requires special attention:",
+    requirements: [
+      "100% serial number verification",
+      "CRANE reconciliation (for serialized items in CRANE)",
+      "Verify all items in correct location",
+      "Confirm all items are serviceable or properly identified as NMC",
+      "Validate Responsible Officer assignments",
+    ],
+  },
+  discrepancyHandling: [
+    { type: "Missing Items", action: "Initiate Financial Liability Investigation of Property Loss (FLIPL)" },
+    { type: "Damaged Items", action: "Document condition, initiate repair or survey as appropriate" },
+    { type: "Found Items", action: "Document and add to property records, investigate source" },
+    { type: "Serial Number Mismatch", action: "Investigate and correct records, may require research" },
+    { type: "Location Discrepancy", action: "Update records to reflect actual location" },
+  ],
+  igDocumentation: [
+    "Inventory completion certification (signed by commander)",
+    "Inventory date and scope (what was inventoried)",
+    "Inventory results (complete, discrepancies found, corrective actions)",
+    "FLIPL documentation for any missing items",
+    "Reconciliation with CMR and other property records",
+    "Evidence of previous inventory date (to verify annual compliance)",
+  ],
+  commonInspectionFindings: [
+    "Annual inventory not completed within 12 months",
+    "Inventory not comprehensive (some areas/items missed)",
+    "Serial numbers not verified",
+    "Discrepancies not investigated or documented",
+    "Missing items not processed through FLIPL",
+    "Inventory not signed by commander",
+    "CMR not reconciled with inventory results",
+  ],
+  references: [
+    { title: "MCO 4400.201 Volume 3 (Property Management)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "NAVMC 4000.5 (Supply Officer's Internal Controls Handbook)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "IGMC Functional Area Checklists (Supply)", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
+  ] as TransitionReference[],
+};
+
+// ============================================================================
+// ANNUAL METL REVIEW
+// ============================================================================
+
+export const ANNUAL_METL_REVIEW_DATA = {
+  title: "Annual METL Review",
+  subtitle: "Annual Requirement - Mission Essential Task List Assessment",
+  keyPoints: [
+    { label: "Timeline", value: "Annually" },
+    { label: "Authority", value: "MCO 1553.3B, Para 4.b.(3)(a)" },
+    { label: "System", value: "MCTIMS (Marine Corps Training Information Management System)" },
+    { label: "Reporting", value: "Feeds into DRRS-MC readiness reporting" },
+  ] as KeyPoint[],
+  overview: "The annual METL review ensures your unit's Mission Essential Task List remains aligned with your core and assigned missions. This review validates task applicability, updates MET assessments, and feeds directly into readiness reporting through DRRS-MC.",
+  metlComponents: [
+    { component: "Core Mission Essential Tasks", description: "Tasks based on unit's designed capabilities (from T&R Manual). Generally stable, based on unit type." },
+    { component: "Assigned Mission Essential Tasks", description: "Tasks assigned by higher headquarters for specific mission. Can change based on operational requirements." },
+    { component: "Supporting Tasks", description: "Tasks that enable accomplishment of METs. Tracked in training but not assessed in DRRS." },
+  ],
+  annualReviewProcess: [
+    "Access MCTIMS and export current METL",
+    "Review T&R Manual for any updates to Core METs",
+    "Validate Core METs match current T&R guidance",
+    "Review Assigned METs with HHQ for continued applicability",
+    "Assess each MET (Y/Q/N) based on current training status",
+    "Update MCTIMS with any changes",
+    "Submit to HHQ for approval (if changes made)",
+    "Update DRRS-MC to reflect current assessments",
+  ],
+  metAssessments: [
+    { rating: "Y (Yes)", meaning: "Unit can accomplish task to established standards. High confidence. Pre-deployment certification complete." },
+    { rating: "Q (Qualified Yes)", meaning: "Can achieve output standards, meets most resource/training standards. Specific shortfalls exist and are documented." },
+    { rating: "N (No)", meaning: "Unable to accomplish task to prescribed standards at this time. Significant training or resource gaps exist." },
+  ],
+  mctimsProcedures: {
+    accessingMetl: [
+      "Log into MCTIMS with CAC credentials",
+      "Navigate to your unit's METL",
+      "Export current METL for offline review",
+    ],
+    updatingMetl: [
+      "Review each MET for continued applicability",
+      "Update assessment (Y/Q/N) based on training status",
+      "Add assessment remarks for Q or N ratings",
+      "Include forecast for returning to Y status",
+      "Submit changes for approval",
+    ],
+    validation: [
+      "Verify METs match T&R Manual requirements",
+      "Confirm all applicable METs are listed",
+      "Ensure assessments reflect actual training status",
+      "Cross-reference with DRRS-MC reporting",
+    ],
+  },
+  drrsConnection: {
+    description: "METL assessments directly feed DRRS-MC readiness reporting:",
+    requirements: [
+      "MET assessments must be current (updated within reporting period)",
+      "Training remarks explain current assessment",
+      "Assessment remarks required for Q or N ratings (explain shortfall)",
+      "Forecast required for Q or N ratings (when will return to Y)",
+      "DRRS-MC must reflect current MCTIMS data",
+    ],
+  },
+  igDocumentation: [
+    "Current METL printout or MCTIMS extract",
+    "Annual review documentation (signed by commander)",
+    "MET assessments with supporting rationale",
+    "Training remarks for each MET",
+    "Forecast for METs not at Y rating",
+    "Correlation to DRRS-MC reporting",
+    "HHQ approval for any METL changes",
+  ],
+  commonInspectionFindings: [
+    "Annual METL review not completed or documented",
+    "METL not aligned with current T&R Manual",
+    "MET assessments outdated or not realistic",
+    "No training remarks or assessment remarks for Q/N ratings",
+    "No forecast for returning to Y status",
+    "DRRS-MC not updated to reflect current assessments",
+    "MCTIMS data not matching commander's assessment",
+  ],
+  references: [
+    { title: "MCO 1553.3B (Unit Training Management)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "MCO 3500.110 (METL Policy)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "MCTIMS", url: "https://mctims.usmc.mil/" },
+    { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+  ] as TransitionReference[],
+};

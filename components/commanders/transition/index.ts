@@ -17,3 +17,9 @@ export { CommandPhilosophyContent } from "./CommandPhilosophyContent";
 export { PACPolicyContent } from "./PACPolicyContent";
 export { SafetyClimateSurveyContent } from "./SafetyClimateSurveyContent";
 export { DEOCSContent } from "./DEOCSContent";
+// Annual Requirements
+export { AnnualDEOCSContent } from "./AnnualDEOCSContent";
+export { AnnualSafetySurveyContent } from "./AnnualSafetySurveyContent";
+export { AnnualTEReviewContent } from "./AnnualTEReviewContent";
+export { AnnualInventoryContent } from "./AnnualInventoryContent";
+export { AnnualMETLReviewContent } from "./AnnualMETLReviewContent";
