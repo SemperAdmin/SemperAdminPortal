@@ -275,6 +275,14 @@ import {
   PACPolicyContent,
   SafetyClimateSurveyContent,
   DEOCSContent,
+  AnnualDEOCSContent,
+  AnnualSafetySurveyContent,
+  AnnualTEReviewContent,
+  AnnualInventoryContent,
+  AnnualMETLReviewContent,
+  StatusCommandLetterOutgoingContent,
+  CertificateOfReliefOutgoingContent,
+  RelinquishDEOCSContent,
 } from "../../../../../components/commanders/transition";
 
 type Params = { role: Role; section: string; item: string };
@@ -3258,6 +3266,16 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "90-day-pac": <PACPolicyContent />,
     "90-day-safety-survey": <SafetyClimateSurveyContent />,
     "90-day-deocs": <DEOCSContent />,
+    // Annual Requirements
+    "annual-deocs": <AnnualDEOCSContent />,
+    "annual-safety-survey": <AnnualSafetySurveyContent />,
+    "annual-te-review": <AnnualTEReviewContent />,
+    "annual-inventory": <AnnualInventoryContent />,
+    "annual-metl-review": <AnnualMETLReviewContent />,
+    // Prior to Relinquishing Command
+    "relinquish-status-letter": <StatusCommandLetterOutgoingContent />,
+    "relinquish-cor": <CertificateOfReliefOutgoingContent />,
+    "relinquish-deocs": <RelinquishDEOCSContent />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
