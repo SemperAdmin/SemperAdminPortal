@@ -3527,6 +3527,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "iaps-submission",
     "award-routing-approval",
     "award-timeline-management",
+    "award-troubleshooting",
   ];
   const leadersCareerSection = "leaders-career-development";
   const leadersCareerSlugs = [
@@ -3537,6 +3538,13 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "meritorious-promotion-packages",
     "cutting-score-guidance",
     "career-counseling",
+    "enlisted-commissioning-programs",
+    "lateral-move-guidance",
+    "meritorious-promotion-preparation",
+    "pme-tracking-completion",
+    "special-duty-assignment-screening",
+    "supporting-reenlistment-decisions",
+    "warrant-officer-program-support",
   ];
   const leadersCounselingSection = "leaders-counseling-documentation";
   const leadersCounselingSlugs = [
@@ -3547,6 +3555,12 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "mro-counseling",
     "rebuttal-rights-timelines",
     "common-documentation-errors",
+    "counseling-fundamentals",
+    "follow-on-counseling-sessions",
+    "initial-counseling-session",
+    "required-counseling-occasions",
+    "six-functional-areas",
+    "smart-goals",
   ];
   const leadersDeploymentSection = "leaders-deployment-readiness";
   const leadersDeploymentSlugs = [
@@ -3558,6 +3572,12 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "poa-guidance",
     "post-deployment-actions",
     "family-readiness-responsibilities",
+    "deployment-training-events",
+    "individual-readiness-requirements",
+    "obligated-service-deployment",
+    "physical-fitness-readiness",
+    "supporting-ias-and-tad",
+    "upfrp-overview",
   ];
   const leadersPerformanceSection = "leaders-performance-evaluation";
   const leadersPerformanceSlugs = [
@@ -3571,6 +3591,8 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "fitness-reports-leaders",
     "billet-accomplishments",
     "jepes-corrective-procedures",
+    "not-rec-appeal-process",
+    "performance-evaluation-appeals",
   ];
   const leadersPersonnelSection = "leaders-personnel-accountability";
   const leadersPersonnelSlugs = [
@@ -3581,6 +3603,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "tad-detachment-tracking",
     "muster-formation-procedures",
     "record-keeping-documentation",
+    "marine-leader-notebooks",
   ];
   const leadersSystemsSection = "leaders-administrative-systems";
   const leadersSystemsSlugs = [
@@ -3590,6 +3613,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "tfrs-overview",
     "unit-diary-reporting",
     "training-information-systems",
+    "mco-quick-reference",
   ];
 
   const params: { role: Role; section: string; item: string }[] = [];
