@@ -1,4 +1,4 @@
-# Content Needed: 107 Placeholder Items
+# Content Needed: 78 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 104 items |
+| **Commanders** | 75 items |
 | **Administrators** | 0 items |
 
 ---
@@ -80,70 +80,72 @@ All items now have content:
 ## Command Climate & Culture Programs
 **Section:** `commanders-climate-culture`
 
+**STATUS: SECTION COMPLETE (11/11 items)**
+
 Completed items:
 - ~~`deocs-requirements`~~ - COMPLETED
 - ~~`pac-program-overview`~~ - COMPLETED
 - ~~`pac-policy-statement`~~ - COMPLETED
 - ~~`upfrp-sop-requirement`~~ - COMPLETED
-
-Remaining items:
-| Slug | Title | Description |
-|------|-------|-------------|
-| `climate-surveys` | Command Climate Surveys | Aviation safety surveys (CSA, MCAS, ASPA) and safety climate surveys |
-| `command-team-training` | Command Team Training | Required training for command teams within 30 days |
-| `hazing-prevention` | Hazing Prevention | Definitions, indicators, and command response |
-| `harassment-response` | Harassment Response | Reporting, investigation, and corrective action |
-| `retaliation-prevention` | Retaliation Prevention | Protecting reporters and witnesses from retaliation |
-| `safety-policy-statement` | Safety Policy (30 Days) | Commander's safety policy statement requirement |
-| `sapr-policy-statement` | SAPR Policy (60/90 Days) | Sexual assault prevention and response policy |
+- ~~`climate-surveys`~~ - COMPLETED
+- ~~`command-team-training`~~ - COMPLETED
+- ~~`hazing-prevention`~~ - COMPLETED
+- ~~`harassment-response`~~ - COMPLETED
+- ~~`retaliation-prevention`~~ - COMPLETED
+- ~~`safety-policy-statement`~~ - COMPLETED
+- ~~`sapr-policy-statement`~~ - COMPLETED
 
 ## Equal Opportunity
 **Section:** `commanders-equal-opportunity`
+
+**STATUS: SECTION COMPLETE (6/6 items)**
 
 Completed items:
 - ~~`eo-policy`~~ - COMPLETED
 - ~~`eor-appointment`~~ - COMPLETED
 - ~~`eo-complaint-process`~~ - COMPLETED
 - ~~`eo-investigation`~~ - COMPLETED
-
-Remaining items:
-| Slug | Title | Description |
-|------|-------|-------------|
-| `eo-climate-assessment` | Climate Assessment | Monitoring unit climate through DEOCS and observation |
-| `eo-retaliation-prevention` | Retaliation Prevention | Protecting complainants from retaliation |
+- ~~`eo-climate-assessment`~~ - COMPLETED
+- ~~`eo-retaliation-prevention`~~ - COMPLETED
 
 ## Family Readiness & Casualty Affairs
 **Section:** `commanders-family-readiness`
 
+Completed items:
+- ~~`upfrp-command-roles`~~ - COMPLETED
+- ~~`drc-oversight`~~ - COMPLETED
+- ~~`limdu-coordinator`~~ - COMPLETED
+- ~~`caco-oversight`~~ - COMPLETED
+- ~~`ito-authority`~~ - COMPLETED
+- ~~`rcc-referral`~~ - COMPLETED
+- ~~`ww-benefits`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
 | `fap-overview` | FAP Overview | Family Advocacy Program and commander's role |
 | `domestic-abuse-response` | Domestic Abuse Response | MPO issuance and victim safety planning |
 | `child-abuse-response` | Child Abuse Response | Reporting requirements and protective actions |
 | `upfrp-sop` | UPFRP SOP Requirements | Developing and implementing the family readiness SOP |
-| `upfrp-command-roles` | Command Team Roles | Commander, XO, SgtMaj, and FRO responsibilities |
-| `drc-oversight` | Deployment Readiness Coordinator | DRC appointment and deployment support |
-| `limdu-coordinator` | LIMDU Coordinator | Designating and overseeing the LIMDU coordinator |
 | `nok-notification` | Next of Kin Notification | Notification procedures and restrictions |
 | `pcr-reporting` | Personnel Casualty Reports | PCR submission requirements and timelines |
-| `caco-oversight` | CACO Oversight | Casualty Assistance Calls Officer supervision |
-| `ito-authority` | Invitational Travel Orders | ITO approval for family of seriously ill/injured |
-| `rcc-referral` | Recovery Care Coordinator | Connecting Marines to Wounded Warrior resources |
-| `ww-benefits` | Benefits Coordination | TSGLI, PAC, and SCAADL coordination |
 
 ## Fiscal & Property Accountability
 **Section:** `commanders-fiscal-property`
 
+Completed items:
+- ~~`fund-control-training`~~ - COMPLETED
+- ~~`budget-execution`~~ - COMPLETED
+- ~~`status-of-funds`~~ - COMPLETED
+- ~~`ulo-validation`~~ - COMPLETED
+- ~~`supply-officer-appointment`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
 | `accountable-officer` | Accountable Officer Responsibilities | Commander's fiscal accountability and liability |
-| `fund-control-training` | Fund Control Training | Appropriations law and DON budget execution |
-| `budget-execution` | Budget Development & Execution | Annual training plan integration and quarterly budgets |
-| `status-of-funds` | Status of Funds Briefings | Regular financial status reviews |
 | `uac-prevention` | Unauthorized Commitment Prevention | Preventing and addressing unauthorized commitments |
-| `ulo-validation` | Unliquidated Orders Validation | ULO review and certification requirements |
 | `gtcc-oversight` | GTCC Program Oversight | Government Travel Charge Card program management |
-| `supply-officer-appointment` | Supply Officer Appointment | Appointing and supervising the supply officer |
 | `certificate-of-relief` | Certificate of Relief | Property accountability transfer at change of command |
 
 ## Inspector General & Inspections
@@ -196,31 +198,37 @@ Remaining items:
 ## Personnel Administration & Career Management
 **Section:** `commanders-personnel-career`
 
+Completed items:
+- ~~`fitrep-responsibilities`~~ - COMPLETED
+- ~~`jepes-commander`~~ - COMPLETED
+- ~~`6105-entries`~~ - COMPLETED
+- ~~`not-rec-authority`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
-| `fitrep-responsibilities` | Fitness Report Responsibilities | Reporting Senior and Reviewing Officer duties |
 | `adverse-fitreps` | Adverse Fitness Reports | Requirements for adverse comments and due process |
 | `procon-oversight` | Proficiency & Conduct Marks | Commander oversight and marking philosophy |
-| `jepes-commander` | JEPES Commander Role | Commander involvement in junior enlisted evaluations |
 | `meritorious-promotion-authority` | Meritorious Promotion | Commander's meritorious promotion authority |
-| `not-rec-authority` | NOT REC Authority | Authority to recommend against promotion |
 | `reenlistment-authority` | Reenlistment Authority | Approval, disapproval, and waiver authority |
 | `page-11-commander` | Page 11 Entries | When and how to document administrative remarks |
-| `6105-entries` | 6105 Counseling Entries | Counseling warning requirements and procedures |
 | `adverse-letters` | Letters of Caution/Admonition/Reprimand | Levels of adverse administrative letters |
 | `transition-oversight` | Transition Readiness Oversight | Commander responsibilities for separating Marines |
 
 ## Public Affairs & Media Relations
 **Section:** `commanders-public-affairs`
 
+Completed items:
+- ~~`media-engagement`~~ - COMPLETED
+- ~~`releasable-info`~~ - COMPLETED
+- ~~`casualty-info-release`~~ - COMPLETED
+- ~~`social-media-policy`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
-| `media-engagement` | Media Engagement | Interacting with news media and journalists |
 | `crisis-communication` | Crisis Communication | Managing communications during crises |
-| `social-media-policy` | Social Media Policy | Command social media guidelines and oversight |
 | `opsec-public-statements` | OPSEC in Public Statements | Protecting sensitive information |
-| `releasable-info` | Releasable Information | What can and cannot be released publicly |
-| `casualty-info-release` | Casualty Information Release | PNOK notification plus 24-hour rule |
 | `climate-messaging` | Command Climate Messaging | Internal and external command messaging |
 
 ## Safety & Risk Management

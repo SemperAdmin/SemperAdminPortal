@@ -327,16 +327,49 @@ import { EOPolicyStatementContent } from "../../../../../components/commanders/E
 import { EORepresentativeContent } from "../../../../../components/commanders/EORepresentativeContent";
 import { EOComplaintProcessContent } from "../../../../../components/commanders/EOComplaintProcessContent";
 import { EOInvestigationContent } from "../../../../../components/commanders/EOInvestigationContent";
+import { EOClimateAssessmentContent } from "../../../../../components/commanders/EOClimateAssessmentContent";
+import { EORetaliationPreventionContent } from "../../../../../components/commanders/EORetaliationPreventionContent";
+// Commanders - Family Readiness & Casualty Affairs
+import { UPFRPCommandRolesContent } from "../../../../../components/commanders/UPFRPCommandRolesContent";
+import { DRCOversightContent } from "../../../../../components/commanders/DRCOversightContent";
+import { LIMDUCoordinatorContent } from "../../../../../components/commanders/LIMDUCoordinatorContent";
+import { CACOOversightContent } from "../../../../../components/commanders/CACOOversightContent";
+import { ITOAuthorityContent } from "../../../../../components/commanders/ITOAuthorityContent";
+import { RCCReferralContent } from "../../../../../components/commanders/RCCReferralContent";
+import { WWBenefitsContent } from "../../../../../components/commanders/WWBenefitsContent";
+// Commanders - Fiscal & Property Accountability
+import { FundControlTrainingContent } from "../../../../../components/commanders/FundControlTrainingContent";
+import { BudgetExecutionContent } from "../../../../../components/commanders/BudgetExecutionContent";
+import { StatusOfFundsContent } from "../../../../../components/commanders/StatusOfFundsContent";
+import { ULOValidationContent } from "../../../../../components/commanders/ULOValidationContent";
+import { SupplyOfficerAppointmentContent } from "../../../../../components/commanders/SupplyOfficerAppointmentContent";
 // Commanders - Command Climate & Culture Programs
 import { DEOCSRequirementsContent } from "../../../../../components/commanders/DEOCSRequirementsContent";
 import { PACProgramOverviewContent } from "../../../../../components/commanders/PACProgramOverviewContent";
 import { PACPolicyClimateContent } from "../../../../../components/commanders/PACPolicyClimateContent";
 import { UPFRPSOPClimateContent } from "../../../../../components/commanders/UPFRPSOPClimateContent";
+import { ClimateSurveysContent } from "../../../../../components/commanders/ClimateSurveysContent";
+import { CommandTeamTrainingClimateContent } from "../../../../../components/commanders/CommandTeamTrainingClimateContent";
+import { HazingPreventionContent } from "../../../../../components/commanders/HazingPreventionContent";
+import { HarassmentResponseContent } from "../../../../../components/commanders/HarassmentResponseContent";
+import { RetaliationPreventionContent } from "../../../../../components/commanders/RetaliationPreventionContent";
+import { SafetyPolicyStatementContent } from "../../../../../components/commanders/SafetyPolicyStatementContent";
+import { SAPRPolicyStatementContent } from "../../../../../components/commanders/SAPRPolicyStatementContent";
 // Commanders - Inspector General & Inspections
 import { CIPOverviewContent } from "../../../../../components/commanders/CIPOverviewContent";
 import { CGIPPreparationContent } from "../../../../../components/commanders/CGIPPreparationContent";
 import { IGMCFunctionalAreasContent } from "../../../../../components/commanders/IGMCFunctionalAreasContent";
 import { POAMManagementContent } from "../../../../../components/commanders/POAMManagementContent";
+// Commanders - Personnel Administration & Career Management
+import { FitnessReportContent } from "../../../../../components/commanders/FitnessReportContent";
+import { JEPESCommanderRoleContent } from "../../../../../components/commanders/JEPESCommanderRoleContent";
+import { CounselingEntriesContent } from "../../../../../components/commanders/CounselingEntriesContent";
+import { NotRecAuthorityContent } from "../../../../../components/commanders/NotRecAuthorityContent";
+// Commanders - Public Affairs & Media Relations
+import { MediaEngagementContent } from "../../../../../components/commanders/MediaEngagementContent";
+import { ReleasableInformationContent } from "../../../../../components/commanders/ReleasableInformationContent";
+import { CasualtyInformationReleaseContent } from "../../../../../components/commanders/CasualtyInformationReleaseContent";
+import { SocialMediaPolicyContent } from "../../../../../components/commanders/SocialMediaPolicyContent";
 // Commanders - Transition of Command
 import {
   CornerstoneAttendanceContent,
@@ -3469,6 +3502,111 @@ const EO_INVESTIGATION_DATA = {
   ],
 };
 
+const EO_CLIMATE_ASSESSMENT_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Prevention)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5354.1", isQuickLink: true },
+    { title: "DoDI 1350.02 (DOD Military EO Program)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/135002p.pdf", isQuickLink: true },
+    { title: "DEOCS Portal", url: "https://www.deocs.net" },
+  ],
+};
+
+const EO_RETALIATION_PREVENTION_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Prevention)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5354.1", isQuickLink: true },
+    { title: "UCMJ Article 132 (Retaliation)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "UCMJ Article 93 (Cruelty and Maltreatment)", url: "https://www.marines.mil" },
+  ],
+};
+
+// Commanders - Family Readiness & Casualty Affairs Data
+const UPFRP_COMMAND_ROLES_DATA = {
+  references: [
+    { title: "MCO 1754.9A (UPFRP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1754.9", isQuickLink: true },
+  ],
+};
+
+const DRC_OVERSIGHT_DATA = {
+  references: [
+    { title: "MCO 1754.9A (UPFRP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1754.9", isQuickLink: true },
+    { title: "NAVMC 11654 (Appointment Letter Template)", url: "https://www.marines.mil" },
+  ],
+};
+
+const LIMDU_COORDINATOR_DATA = {
+  references: [
+    { title: "MCO 1900.16 (MARCORSEPMAN)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
+    { title: "SECNAVINST 1850.4F (Disability Evaluation System)", url: "https://www.secnav.navy.mil", isQuickLink: true },
+  ],
+};
+
+const CACO_OVERSIGHT_DATA = {
+  references: [
+    { title: "MCO 3040.4 (Casualty Assistance Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=3040.4", isQuickLink: true },
+    { title: "NAVMC 11717 (CACO Checklist)", url: "https://www.marines.mil" },
+  ],
+};
+
+const ITO_AUTHORITY_DATA = {
+  references: [
+    { title: "MCO 3040.4 (Casualty Assistance Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=3040.4", isQuickLink: true },
+    { title: "Joint Travel Regulations (JTR)", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: true },
+  ],
+};
+
+const RCC_REFERRAL_DATA = {
+  references: [
+    { title: "MCO 6310.1 (WWR Operations)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=6310.1", isQuickLink: true },
+    { title: "MCO 1754.11 (FAP/Clinical)", url: "https://www.marines.mil" },
+    { title: "Wounded Warrior Regiment", url: "https://www.woundedwarriorregiment.org" },
+  ],
+};
+
+const WW_BENEFITS_DATA = {
+  references: [
+    { title: "MCO 3040.4 (Casualty Assistance)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=3040.4", isQuickLink: true },
+    { title: "MCO 7220.52 (PAC)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=7220.52", isQuickLink: true },
+    { title: "SECNAVINST 1770.5 (SCAADL)", url: "https://www.secnav.navy.mil" },
+    { title: "TSGLI Information", url: "https://www.benefits.va.gov/insurance/tsgli.asp" },
+  ],
+};
+
+// Commanders - Fiscal & Property Accountability Data
+const FUND_CONTROL_TRAINING_DATA = {
+  references: [
+    { title: "MCO 7300.21B (Financial Management SOP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=7300.21", isQuickLink: true },
+    { title: "31 U.S. Code § 1341 (Anti-Deficiency Act)", url: "https://www.law.cornell.edu/uscode/text/31/1341", isQuickLink: true },
+  ],
+};
+
+const BUDGET_EXECUTION_DATA = {
+  references: [
+    { title: "MCO 7300.21B (Financial Management SOP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=7300.21", isQuickLink: true },
+    { title: "NAVMC 4400.150 (Consumer-Level Supply)", url: "https://www.marines.mil", isQuickLink: true },
+  ],
+};
+
+const STATUS_OF_FUNDS_DATA = {
+  references: [
+    { title: "MCO 7300.21B (Financial Management SOP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=7300.21", isQuickLink: true },
+    { title: "DoD FMR Volume 3", url: "https://comptroller.defense.gov/FMR/" },
+  ],
+};
+
+const ULO_VALIDATION_DATA = {
+  references: [
+    { title: "MCO 7300.21B (Financial Management SOP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=7300.21", isQuickLink: true },
+    { title: "DoD FMR Volume 3, Chapter 8", url: "https://comptroller.defense.gov/FMR/", isQuickLink: true },
+  ],
+};
+
+const SUPPLY_OFFICER_APPOINTMENT_DATA = {
+  references: [
+    { title: "MCO 4400.201 (MCSLSM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=4400.201", isQuickLink: true },
+    { title: "NAVMC 4400.150 (Consumer-Level Supply)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DD Form 577", url: "https://www.esd.whs.mil/Directives/forms/dd0500_0999/" },
+  ],
+};
+
 // Commanders - Command Climate & Culture Programs Data
 const DEOCS_REQUIREMENTS_DATA = {
   references: [
@@ -3506,6 +3644,62 @@ const UPFRP_SOP_REQUIREMENT_DATA = {
   ],
 };
 
+const CLIMATE_SURVEYS_DATA = {
+  references: [
+    { title: "MCO 5100.29C (Safety Management System)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5100.29", isQuickLink: true },
+    { title: "MCO 3750.6S (Aviation Safety)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=3750.6", isQuickLink: true },
+    { title: "DEOCS Portal", url: "https://www.deocs.net" },
+  ],
+};
+
+const COMMAND_TEAM_TRAINING_CLIMATE_DATA = {
+  references: [
+    { title: "MCO 1500.63 (Command Team Training)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1500.63", isQuickLink: true },
+    { title: "MCO 1754.9A (UPFRP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1754.9", isQuickLink: true },
+    { title: "L.I.N.K.S. Program", url: "https://www.usmc-mccs.org/services/family/links/" },
+  ],
+};
+
+const HAZING_PREVENTION_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Order)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5354.1", isQuickLink: true },
+    { title: "UCMJ Article 92", url: "https://www.law.cornell.edu/uscode/text/10/892", isQuickLink: true },
+    { title: "MARADMIN on Hazing Prevention", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+  ],
+};
+
+const HARASSMENT_RESPONSE_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Order)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5354.1", isQuickLink: true },
+    { title: "NAVMC 11512 (Complaint Form)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "EEO Complaint Portal", url: "https://www.esd.whs.mil/DD/EEO/" },
+  ],
+};
+
+const RETALIATION_PREVENTION_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Order)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5354.1", isQuickLink: true },
+    { title: "UCMJ Article 132 (Retaliation)", url: "https://www.law.cornell.edu/uscode/text/10/932", isQuickLink: true },
+    { title: "10 U.S.C. 1034 (Protected Communications)", url: "https://www.law.cornell.edu/uscode/text/10/1034" },
+  ],
+};
+
+const SAFETY_POLICY_STATEMENT_DATA = {
+  references: [
+    { title: "MCO 5100.29C (Safety Management System)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5100.29", isQuickLink: true },
+    { title: "MCO 3750.6S (Aviation Safety)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=3750.6" },
+    { title: "Naval Safety Command", url: "https://navalsafetycommand.navy.mil/" },
+  ],
+};
+
+const SAPR_POLICY_STATEMENT_DATA = {
+  references: [
+    { title: "MCO 1752.5C (SAPR Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1752.5", isQuickLink: true },
+    { title: "DOD Safe Helpline", url: "https://safehelpline.org/", isQuickLink: true },
+    { title: "DoDI 6495.02 (SAPR Program)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/649502p.pdf" },
+  ],
+};
+
 // Commanders - Inspector General & Inspections Data
 const CIP_OVERVIEW_DATA = {
   references: [
@@ -3536,6 +3730,72 @@ const POAM_MANAGEMENT_DATA = {
     { title: "MCO 5040.6H (Inspections Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.6", isQuickLink: true },
     { title: "NAVMC 11333 (POA&M Template)", url: "https://www.marines.mil", isQuickLink: true },
     { title: "MCO 5210.11F (Records Management)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5210.11" },
+  ],
+};
+
+// Commanders - Personnel Administration & Career Management Data
+const FITREP_RESPONSIBILITIES_DATA = {
+  references: [
+    { title: "MCO 1610.7B (PES)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1610.7", isQuickLink: true },
+    { title: "NAVMC 10835 (FITREP Form)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "PES Online (APES)", url: "https://www.manpower.usmc.mil/webcenter/portal/PESOnline" },
+  ],
+};
+
+const JEPES_COMMANDER_DATA = {
+  references: [
+    { title: "MCO 1616.1 (JEPES)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1616.1", isQuickLink: true },
+    { title: "MARADMIN 505/20 (JEPES Implementation)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "MOL JEPES Module", url: "https://mol.tfs.usmc.mil/" },
+  ],
+};
+
+const COUNSELING_ENTRIES_6105_DATA = {
+  references: [
+    { title: "MCO 1900.16 (MARCORSEPMAN)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1070.12", isQuickLink: true },
+    { title: "6105 Entry Template", url: "https://www.marines.mil" },
+  ],
+};
+
+const NOT_REC_AUTHORITY_DATA = {
+  references: [
+    { title: "MCO P1400.32D (Promotion Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1400.32", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1070.12", isQuickLink: true },
+    { title: "MOL Select Grade Module", url: "https://mol.tfs.usmc.mil/" },
+  ],
+};
+
+// Commanders - Public Affairs & Media Relations Data
+const MEDIA_ENGAGEMENT_DATA = {
+  references: [
+    { title: "MCO 5720.77 (Public Affairs)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5720.77", isQuickLink: true },
+    { title: "SECNAVINST 5720.44C (DON PA Policy)", url: "https://www.secnav.navy.mil/doni/Directives/05000%20General%20Management%20Security%20and%20Safety%20Services/05-700%20General%20External%20and%20Internal%20Relations%20Services/5720.44C.pdf", isQuickLink: true },
+    { title: "DoDI 5400.01 (Public Information Release)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/540001p.pdf" },
+  ],
+};
+
+const RELEASABLE_INFORMATION_DATA = {
+  references: [
+    { title: "MCO 5720.77 (Public Affairs)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5720.77", isQuickLink: true },
+    { title: "MCO 5211.2 (Privacy Act)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5211.2", isQuickLink: true },
+    { title: "DoDI 5400.01 (Public Information Release)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/540001p.pdf" },
+  ],
+};
+
+const CASUALTY_INFORMATION_RELEASE_DATA = {
+  references: [
+    { title: "MCO 3040.4 (Casualty Assistance)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=3040.4", isQuickLink: true },
+    { title: "MCO 5720.77 (Public Affairs)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5720.77", isQuickLink: true },
+    { title: "HQMC Office of Marine Corps Communication", url: "https://www.marines.mil" },
+  ],
+};
+
+const SOCIAL_MEDIA_POLICY_DATA = {
+  references: [
+    { title: "MCO 5239.2B (Cybersecurity Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5239.2", isQuickLink: true },
+    { title: "MARADMIN 181/17 (Social Media Guidance)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "DoDI 5400.01 (Public Information Release)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/540001p.pdf" },
   ],
 };
 
@@ -4075,16 +4335,49 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "eor-appointment": <EORepresentativeContent data={EO_REPRESENTATIVE_DATA} />,
     "eo-complaint-process": <EOComplaintProcessContent data={EO_COMPLAINT_PROCESS_DATA} />,
     "eo-investigation": <EOInvestigationContent data={EO_INVESTIGATION_DATA} />,
+    "eo-climate-assessment": <EOClimateAssessmentContent data={EO_CLIMATE_ASSESSMENT_DATA} />,
+    "eo-retaliation-prevention": <EORetaliationPreventionContent data={EO_RETALIATION_PREVENTION_DATA} />,
+    // Commanders - Family Readiness & Casualty Affairs
+    "upfrp-command-roles": <UPFRPCommandRolesContent data={UPFRP_COMMAND_ROLES_DATA} />,
+    "drc-oversight": <DRCOversightContent data={DRC_OVERSIGHT_DATA} />,
+    "limdu-coordinator": <LIMDUCoordinatorContent data={LIMDU_COORDINATOR_DATA} />,
+    "caco-oversight": <CACOOversightContent data={CACO_OVERSIGHT_DATA} />,
+    "ito-authority": <ITOAuthorityContent data={ITO_AUTHORITY_DATA} />,
+    "rcc-referral": <RCCReferralContent data={RCC_REFERRAL_DATA} />,
+    "ww-benefits": <WWBenefitsContent data={WW_BENEFITS_DATA} />,
+    // Commanders - Fiscal & Property Accountability
+    "fund-control-training": <FundControlTrainingContent data={FUND_CONTROL_TRAINING_DATA} />,
+    "budget-execution": <BudgetExecutionContent data={BUDGET_EXECUTION_DATA} />,
+    "status-of-funds": <StatusOfFundsContent data={STATUS_OF_FUNDS_DATA} />,
+    "ulo-validation": <ULOValidationContent data={ULO_VALIDATION_DATA} />,
+    "supply-officer-appointment": <SupplyOfficerAppointmentContent data={SUPPLY_OFFICER_APPOINTMENT_DATA} />,
     // Commanders - Command Climate & Culture Programs
     "deocs-requirements": <DEOCSRequirementsContent data={DEOCS_REQUIREMENTS_DATA} />,
     "pac-program-overview": <PACProgramOverviewContent data={PAC_PROGRAM_OVERVIEW_DATA} />,
     "pac-policy-statement": <PACPolicyClimateContent data={PAC_POLICY_STATEMENT_DATA} />,
     "upfrp-sop-requirement": <UPFRPSOPClimateContent data={UPFRP_SOP_REQUIREMENT_DATA} />,
+    "climate-surveys": <ClimateSurveysContent data={CLIMATE_SURVEYS_DATA} />,
+    "command-team-training": <CommandTeamTrainingClimateContent data={COMMAND_TEAM_TRAINING_CLIMATE_DATA} />,
+    "hazing-prevention": <HazingPreventionContent data={HAZING_PREVENTION_DATA} />,
+    "harassment-response": <HarassmentResponseContent data={HARASSMENT_RESPONSE_DATA} />,
+    "retaliation-prevention": <RetaliationPreventionContent data={RETALIATION_PREVENTION_DATA} />,
+    "safety-policy-statement": <SafetyPolicyStatementContent data={SAFETY_POLICY_STATEMENT_DATA} />,
+    "sapr-policy-statement": <SAPRPolicyStatementContent data={SAPR_POLICY_STATEMENT_DATA} />,
     // Commanders - Inspector General & Inspections
     "cip-overview": <CIPOverviewContent data={CIP_OVERVIEW_DATA} />,
     "cgip-preparation": <CGIPPreparationContent data={CGIP_PREPARATION_DATA} />,
     "igmc-functional-areas": <IGMCFunctionalAreasContent data={IGMC_FUNCTIONAL_AREAS_DATA} />,
     "poam-management": <POAMManagementContent data={POAM_MANAGEMENT_DATA} />,
+    // Commanders - Personnel Administration & Career Management
+    "fitrep-responsibilities": <FitnessReportContent data={FITREP_RESPONSIBILITIES_DATA} />,
+    "jepes-commander": <JEPESCommanderRoleContent data={JEPES_COMMANDER_DATA} />,
+    "6105-entries": <CounselingEntriesContent data={COUNSELING_ENTRIES_6105_DATA} />,
+    "not-rec-authority": <NotRecAuthorityContent data={NOT_REC_AUTHORITY_DATA} />,
+    // Commanders - Public Affairs & Media Relations
+    "media-engagement": <MediaEngagementContent data={MEDIA_ENGAGEMENT_DATA} />,
+    "releasable-info": <ReleasableInformationContent data={RELEASABLE_INFORMATION_DATA} />,
+    "casualty-info-release": <CasualtyInformationReleaseContent data={CASUALTY_INFORMATION_RELEASE_DATA} />,
+    "social-media-policy": <SocialMediaPolicyContent data={SOCIAL_MEDIA_POLICY_DATA} />,
     // Life Events
     "buying-a-home": <BuyingAHomeContent data={BUYING_A_HOME_DATA} />,
     "deploying": <DeployingContent data={DEPLOYING_DATA} />,
@@ -4553,16 +4846,12 @@ export function generateStaticParams(): { role: Role; section: string; item: str
 
   const commandersPersonnelSection = "commanders-personnel-career";
   const commandersPersonnelSlugs = [
-    "fitrep-responsibilities",
     "adverse-fitreps",
     "procon-oversight",
-    "jepes-commander",
-    "not-rec-authority",
     "meritorious-promotion-authority",
     "reenlistment-authority",
     "transition-oversight",
     "page-11-commander",
-    "6105-entries",
     "adverse-letters",
   ];
 
@@ -4760,12 +5049,8 @@ export function generateStaticParams(): { role: Role; section: string; item: str
 
   const commandersPublicAffairsSection = "commanders-public-affairs";
   const commandersPublicAffairsSlugs = [
-    "media-engagement",
     "crisis-communication",
     "opsec-public-statements",
-    "casualty-info-release",
-    "releasable-info",
-    "social-media-policy",
     "climate-messaging",
   ];
 
