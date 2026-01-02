@@ -1,4 +1,4 @@
-# Content Needed: 92 Placeholder Items
+# Content Needed: 90 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 89 items |
+| **Commanders** | 87 items |
 | **Administrators** | 0 items |
 
 ---
@@ -98,17 +98,15 @@ Completed items:
 ## Equal Opportunity
 **Section:** `commanders-equal-opportunity`
 
+**STATUS: SECTION COMPLETE (6/6 items)**
+
 Completed items:
 - ~~`eo-policy`~~ - COMPLETED
 - ~~`eor-appointment`~~ - COMPLETED
 - ~~`eo-complaint-process`~~ - COMPLETED
 - ~~`eo-investigation`~~ - COMPLETED
-
-Remaining items:
-| Slug | Title | Description |
-|------|-------|-------------|
-| `eo-climate-assessment` | Climate Assessment | Monitoring unit climate through DEOCS and observation |
-| `eo-retaliation-prevention` | Retaliation Prevention | Protecting complainants from retaliation |
+- ~~`eo-climate-assessment`~~ - COMPLETED
+- ~~`eo-retaliation-prevention`~~ - COMPLETED
 
 ## Family Readiness & Casualty Affairs
 **Section:** `commanders-family-readiness`

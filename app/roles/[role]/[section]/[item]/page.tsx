@@ -327,6 +327,8 @@ import { EOPolicyStatementContent } from "../../../../../components/commanders/E
 import { EORepresentativeContent } from "../../../../../components/commanders/EORepresentativeContent";
 import { EOComplaintProcessContent } from "../../../../../components/commanders/EOComplaintProcessContent";
 import { EOInvestigationContent } from "../../../../../components/commanders/EOInvestigationContent";
+import { EOClimateAssessmentContent } from "../../../../../components/commanders/EOClimateAssessmentContent";
+import { EORetaliationPreventionContent } from "../../../../../components/commanders/EORetaliationPreventionContent";
 // Commanders - Command Climate & Culture Programs
 import { DEOCSRequirementsContent } from "../../../../../components/commanders/DEOCSRequirementsContent";
 import { PACProgramOverviewContent } from "../../../../../components/commanders/PACProgramOverviewContent";
@@ -3486,6 +3488,22 @@ const EO_INVESTIGATION_DATA = {
   ],
 };
 
+const EO_CLIMATE_ASSESSMENT_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Prevention)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5354.1", isQuickLink: true },
+    { title: "DoDI 1350.02 (DOD Military EO Program)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/135002p.pdf", isQuickLink: true },
+    { title: "DEOCS Portal", url: "https://www.deocs.net" },
+  ],
+};
+
+const EO_RETALIATION_PREVENTION_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Prevention)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5354.1", isQuickLink: true },
+    { title: "UCMJ Article 132 (Retaliation)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "UCMJ Article 93 (Cruelty and Maltreatment)", url: "https://www.marines.mil" },
+  ],
+};
+
 // Commanders - Command Climate & Culture Programs Data
 const DEOCS_REQUIREMENTS_DATA = {
   references: [
@@ -4214,6 +4232,8 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "eor-appointment": <EORepresentativeContent data={EO_REPRESENTATIVE_DATA} />,
     "eo-complaint-process": <EOComplaintProcessContent data={EO_COMPLAINT_PROCESS_DATA} />,
     "eo-investigation": <EOInvestigationContent data={EO_INVESTIGATION_DATA} />,
+    "eo-climate-assessment": <EOClimateAssessmentContent data={EO_CLIMATE_ASSESSMENT_DATA} />,
+    "eo-retaliation-prevention": <EORetaliationPreventionContent data={EO_RETALIATION_PREVENTION_DATA} />,
     // Commanders - Command Climate & Culture Programs
     "deocs-requirements": <DEOCSRequirementsContent data={DEOCS_REQUIREMENTS_DATA} />,
     "pac-program-overview": <PACProgramOverviewContent data={PAC_PROGRAM_OVERVIEW_DATA} />,
