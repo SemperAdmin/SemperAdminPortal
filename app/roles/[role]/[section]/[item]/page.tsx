@@ -643,7 +643,7 @@ const SDAP_DATA = {
   references: [
     { title: "37 U.S.C. § 352", desc: "Statutory authority for Assignment Pay (SDAP)", url: "https://uscode.house.gov/", type: "Statute" },
     { title: "DoD FMR Vol 7A, Ch 8", desc: "Special Duty Assignment Pay (SDAP)", url: "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_08.pdf", type: "Policy" },
-    { title: "MCO 7220.12R", desc: "Marine Corps SDAP Program", url: "https://www.marines.mil/", type: "Order" },
+    { title: "MCO 7220.12R", desc: "Marine Corps SDAP Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899377/mco-722012r/", type: "Order" },
     { title: "Current FY MARADMIN (e.g., 231/24)", desc: "Authorized SDAP billets and BICs", url: "https://www.marines.mil/News/Messages/", type: "Announcement" },
     { title: "DFAS Pay Entitlements", desc: "Overview of special pays and entitlements.", url: "https://www.dfas.mil/militarymembers/payentitlements/", type: "Website" },
     { title: "Special & Incentive Pays", desc: "DoD overview of special pays including SDAP.", url: "https://militarypay.defense.gov/Pay/Special-and-Incentive-Pays/", type: "Website" },
@@ -1010,7 +1010,7 @@ const ACIP_DATA = {
   ],
   references: [
     { title: "DoD FMR Vol. 7A, Ch 22 §2.0 (AvIP)", desc: "Aviation Incentive Pay policy and gate framework.", url: "https://comptroller.defense.gov/FMR/Volume_7a.aspx", type: "Policy" },
-    { title: "MCO 7220.52F", desc: "Marine Corps Aviation Incentive Pay Program.", url: "https://www.marines.mil/", type: "Order" },
+    { title: "MCO 7220.52F", desc: "Marine Corps Aviation Incentive Pay Program.", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899378/mco-722052f/", type: "Order" },
     { title: "37 U.S.C. § 334", desc: "Statutory authority for aviation incentive pay structures.", url: "https://uscode.house.gov/", type: "Statute" },
     { title: "Special & Incentive Pays", desc: "Official overview and rates.", url: "https://militarypay.defense.gov/Pay/Special-and-Incentive-Pays/", type: "Website" },
     { title: "DFAS Pay Entitlements", desc: "Overview of entitlements and incentive pays.", url: "https://www.dfas.mil/militarymembers/payentitlements/", type: "Website" },
@@ -1078,7 +1078,7 @@ const FLPP_DATA = {
   references: [
     { title: "DoDI 1340.27", desc: "Military Foreign Language Skill Proficiency Bonuses.", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", type: "Policy" },
     { title: "DoD FMR Vol 7A, Ch 19", desc: "Foreign Language Proficiency Bonus policy and rates framework.", url: "https://comptroller.defense.gov/FMR/Volume_7a.aspx", type: "Policy" },
-    { title: "MCO 7220.52", desc: "Marine Corps Foreign Language Proficiency Bonus program.", url: "https://www.marines.mil/", type: "Order" },
+    { title: "MCO 7220.52", desc: "Marine Corps Foreign Language Proficiency Bonus program.", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899378/mco-722052f/", type: "Order" },
     { title: "37 U.S.C. § 353(b)", desc: "Statutory monthly and annual caps for FLPB.", url: "https://uscode.house.gov/", type: "Statute" },
     { title: "Special & Incentive Pays", desc: "DoD overview including language bonus and pay policies.", url: "https://militarypay.defense.gov/Pay/Special-and-Incentive-Pays/", type: "Website" },
     { title: "DFAS Pay Entitlements", desc: "DFAS overview of pay entitlements and language pay program.", url: "https://www.dfas.mil/militarymembers/payentitlements/", type: "Website" },
@@ -1530,7 +1530,7 @@ const FINAL_PAY_DATA = {
     { title: "DFAS Customer Service", url: "https://www.dfas.mil/CustomerService/", isQuickLink: true },
     { title: "JTR (Joint Travel Regulations)", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: false },
     { title: "DoD FMR 7000.14-R Volume 7A", url: "https://comptroller.defense.gov/FMR/", isQuickLink: false },
-    { title: "MCO 1000.6 (Assignment Systems)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO 1000.6 (Assignment Systems)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899526/mco-10006/", isQuickLink: false },
   ],
 };
 
@@ -1539,8 +1539,8 @@ const RECORDS_TRANSFER_DATA = {
     { title: "MOL OMPF Viewer", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "ORMA (Record Corrections)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "HQMC MMRP", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_pub", isQuickLink: true },
-    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/", isQuickLink: false },
-    { title: "MCO 1070.1 (Individual Records)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/", isQuickLink: false },
+    { title: "MCO 1070.1 (Individual Records)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899190/mco-10701/", isQuickLink: false },
     { title: "BUMEDINST 6150.29 (Medical Records)", url: "https://www.med.navy.mil/", isQuickLink: false },
   ],
 };
@@ -1550,7 +1550,7 @@ const LEAVE_SETTLEMENT_DATA = {
     { title: "MOL Leave Management", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "myPay (Leave Balance)", url: "https://mypay.dfas.mil/", isQuickLink: true },
     { title: "HQMC MMRP", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_pub", isQuickLink: true },
-    { title: "MCO 1050.3J (Leave Manual)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO 1050.3J (Leave Manual)", url: "https://www.marines.mil/portals/1/publications/mco%201050.3j.pdf", isQuickLink: false },
     { title: "JTR (Joint Travel Regulations)", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: false },
     { title: "DoD FMR 7000.14-R Volume 7A", url: "https://comptroller.defense.gov/FMR/", isQuickLink: false },
   ],
@@ -1561,7 +1561,7 @@ const OMPF_MANAGEMENT_DATA = {
     { title: "MOL OMPF Viewer", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "ORMA (Online Record Modular Application)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "HQMC MMRP", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_pub", isQuickLink: true },
-    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/", isQuickLink: false },
     { title: "MMRP (Military Manpower Records Program)", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
     { title: "NPRC (National Personnel Records Center)", url: "https://www.archives.gov/veterans", isQuickLink: false },
   ],
@@ -1572,7 +1572,7 @@ const SRB_CORRECTIONS_DATA = {
     { title: "MOL (BIR/BTR Access)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "ORMA", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "HQMC MMRP", url: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_pub", isQuickLink: true },
-    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/", isQuickLink: false },
     { title: "HQMC IPAC Contacts", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
     { title: "BCNR (Board for Correction of Naval Records)", url: "https://www.secnav.navy.mil/mra/bcnr/", isQuickLink: false },
   ],
@@ -1584,7 +1584,7 @@ const AWARDS_DECORATIONS_DATA = {
     { title: "Navy Department Awards", url: "https://www.secnav.navy.mil/mra/CORB/Pages/Awards.aspx", isQuickLink: true },
     { title: "HQMC MMMA", url: "https://www.manpower.usmc.mil/", isQuickLink: true },
     { title: "SECNAVINST 1650.1H (Navy/Marine Corps Awards Manual)", url: "https://www.secnav.navy.mil/", isQuickLink: false },
-    { title: "NAVMC 11533 (Personal Award Recommendation)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "NAVMC 11533 (Personal Award Recommendation)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
     { title: "MARADMIN Award Messages", url: "https://www.marines.mil/News/Messages/", isQuickLink: false },
   ],
 };
@@ -1594,7 +1594,7 @@ const TRAINING_RECORD_DATA = {
     { title: "MOL (BTR Access)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "MarineNet", url: "https://www.marinenet.usmc.mil/", isQuickLink: true },
     { title: "MCTIMS", url: "https://www.trngcmd.marines.mil/", isQuickLink: true },
-    { title: "MCO 1553.4B (Training and Readiness Manual)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO 1553.4B (Training and Readiness Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899348/mco-15534b/", isQuickLink: false },
     { title: "COOL (Credentialing Opportunities On-Line)", url: "https://www.cool.osd.mil/usmc/", isQuickLink: false },
     { title: "JST (Joint Services Transcript)", url: "https://jst.doded.mil/", isQuickLink: false },
   ],
@@ -1605,7 +1605,7 @@ const EDUCATION_RECORDS_DATA = {
     { title: "MOL (Education Record)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "JST Portal", url: "https://jst.doded.mil/", isQuickLink: true },
     { title: "MCCS Voluntary Education", url: "https://www.usmc-mccs.org/services/education/", isQuickLink: true },
-    { title: "MCO 1560.25 (Tuition Assistance)", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO 1560.25 (Tuition Assistance)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899353/mco-156025a/", isQuickLink: false },
     { title: "COOL Program", url: "https://www.cool.osd.mil/usmc/", isQuickLink: false },
     { title: "VA Education Benefits", url: "https://www.va.gov/education/", isQuickLink: false },
   ],
@@ -1729,7 +1729,7 @@ const PERB_DATA = {
   references: [
     { title: "DD Form 149 (Feb 2025)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd0149.pdf", isQuickLink: true },
     { title: "MCO 1610.7B - PES Manual", url: "https://www.marines.mil/Portals/1/Publications/MCO1610.7B", isQuickLink: true },
-    { title: "MCO 1610.11D - Performance Evaluation Appeals", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1610.11D - Performance Evaluation Appeals", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899294/mco-161011d/", isQuickLink: true },
     { title: "BCNR (Secondary Review)", url: "https://www.secnav.navy.mil/mra/bcnr/", isQuickLink: false },
     { title: "MMPB-21 FAQs", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
   ],
@@ -1801,7 +1801,7 @@ const DEPLOYMENT_ORDERS_DATA = {
     { title: "MARADMIN Deployment Guidance", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
     { title: "MOL Orders Module", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "Unit Admin (S-1)", url: "#", isQuickLink: true },
-    { title: "MCO 1320.11H (Deployment)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
+    { title: "MCO 1320.11H (Deployment)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899307/mco-132011h/", isQuickLink: false },
     { title: "IPAC", url: "#", isQuickLink: false },
   ],
 };
@@ -1811,7 +1811,7 @@ const MEDICAL_READINESS_DATA = {
     { title: "MRRS (Medical Readiness)", url: "https://mrrs.sscno.nmci.navy.mil/", isQuickLink: true },
     { title: "MOL Medical Module", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "Branch Medical Clinic", url: "#", isQuickLink: true },
-    { title: "MCO 6100.13 (Medical/Dental Readiness)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
+    { title: "MCO 6100.13 (Medical/Dental Readiness)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899201/mco-610013a/", isQuickLink: false },
     { title: "DoDI 6025.19 (Individual Medical Readiness)", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: false },
   ],
 };
@@ -1820,14 +1820,14 @@ const DENTAL_READINESS_DATA = {
   references: [
     { title: "MOL Dental Status", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
     { title: "Dental Clinic", url: "#", isQuickLink: true },
-    { title: "MCO 6100.13 (Medical/Dental Readiness)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
+    { title: "MCO 6100.13 (Medical/Dental Readiness)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899201/mco-610013a/", isQuickLink: false },
     { title: "BUMED Dental Readiness", url: "https://www.med.navy.mil/", isQuickLink: false },
   ],
 };
 
 const FAMILY_CARE_PLAN_VALIDATION_DATA = {
   references: [
-    { title: "MCO 1740.13C (Family Care)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "MCO 1740.13C (Family Care)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899529/mco-174013c/", isQuickLink: true },
     { title: "NAVMC 11800 (Family Care Plan)", url: "#", isQuickLink: true },
     { title: "Legal Assistance Office", url: "#", isQuickLink: true },
     { title: "Marine Corps Family Team Building", url: "https://usmc-mccs.org/services/family/", isQuickLink: false },
@@ -2050,7 +2050,7 @@ const VISION_COVERAGE_DATA = {
 // Education & Training - Military Education
 const PME_DATA = {
   references: [
-    { title: "MCO 1553.4B", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1553.4B", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899348/mco-15534b/", isQuickLink: true },
     { title: "MARADMIN 627/24 - SNCO Leadership School", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
     { title: "MARADMIN 630/24 - SNCO LS Implementation", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
     { title: "Marine Corps University", url: "https://www.usmcu.edu/", isQuickLink: true },
@@ -2062,7 +2062,7 @@ const RESIDENT_NON_RESIDENT_SCHOOLS_DATA = {
   references: [
     { title: "Marine Corps University", url: "https://www.usmcu.edu/", isQuickLink: true },
     { title: "MarineNet", url: "https://www.marinenet.usmc.mil/", isQuickLink: true },
-    { title: "MCO 1553.4B", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO 1553.4B", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899348/mco-15534b/", isQuickLink: false },
     { title: "Joint Chiefs of Staff PME Policy", url: "https://www.jcs.mil/", isQuickLink: false },
   ],
 };
@@ -2070,7 +2070,7 @@ const RESIDENT_NON_RESIDENT_SCHOOLS_DATA = {
 const COMMAND_STAFF_COLLEGE_DATA = {
   references: [
     { title: "Marine Corps Command and Staff College", url: "https://www.usmcu.edu/CSC/", isQuickLink: true },
-    { title: "MCO 1553.4B", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1553.4B", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899348/mco-15534b/", isQuickLink: true },
     { title: "Joint PME Phase II", url: "https://www.jcs.mil/Doctrine/Education/", isQuickLink: false },
     { title: "SNCO Commandant's Board Selection", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
   ],
@@ -2088,10 +2088,10 @@ const WAR_COLLEGE_DATA = {
 
 const MOS_SPECIFIC_TRAINING_DATA = {
   references: [
-    { title: "MCO 1510.118A", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1510.118A", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899349/mco-1510118a/", isQuickLink: true },
     { title: "TECOM Training Information", url: "https://www.trngcmd.marines.mil/", isQuickLink: true },
-    { title: "JEPES Marine Corps Order", url: "https://www.marines.mil/", isQuickLink: false },
-    { title: "MOS Manual", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: false },
+    { title: "MCO 1220.1 - MOS Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899473/mco-12201e/", isQuickLink: false },
   ],
 };
 
@@ -2100,8 +2100,8 @@ const TUITION_ASSISTANCE_DATA = {
   references: [
     { title: "DoD Tuition Assistance Policy", url: "https://www.dodmou.com/", isQuickLink: true },
     { title: "Marine Corps TA Request (via MOL)", url: "https://www.mol.usmc.mil/", isQuickLink: true },
-    { title: "MCO 1560.25A", url: "https://www.marines.mil/", isQuickLink: true },
-    { title: "JEPES Marine Corps Order", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO 1560.25A", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899353/mco-156025a/", isQuickLink: true },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: false },
   ],
 };
 
@@ -2180,8 +2180,8 @@ const TECHNICAL_CERTIFICATIONS_DATA = {
 // Separations & Transitions - Voluntary Separation
 const EAS_DATA = {
   references: [
-    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
-    { title: "MCO 1040.31 - Transition Readiness Program", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899560/mco-190016a/", isQuickLink: true },
+    { title: "MCO 1040.31 - Transition Readiness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/", isQuickLink: true },
     { title: "TAP Website", url: "https://www.tapevents.mil/", isQuickLink: true },
     { title: "DD-214 Information", url: "https://www.archives.gov/veterans/military-service-records", isQuickLink: false },
   ],
@@ -2189,14 +2189,14 @@ const EAS_DATA = {
 
 const VOLUNTARY_EARLY_RELEASE_DATA = {
   references: [
-    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899560/mco-190016a/", isQuickLink: true },
     { title: "MARADMIN Messages", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
   ],
 };
 
 const RESIGNATION_OFFICERS_DATA = {
   references: [
-    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899560/mco-190016a/", isQuickLink: true },
     { title: "10 U.S.C. Officer Separations", url: "https://uscode.house.gov/", isQuickLink: false },
     { title: "MMOA", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
   ],
@@ -2205,8 +2205,8 @@ const RESIGNATION_OFFICERS_DATA = {
 // Separations & Transitions - Involuntary Separation
 const ADMINISTRATIVE_SEPARATION_DATA = {
   references: [
-    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
-    { title: "Legal Assistance Office", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899560/mco-190016a/", isQuickLink: true },
+    { title: "Legal Assistance Office", url: "https://www.hqmc.marines.mil/sja/", isQuickLink: false },
   ],
 };
 
@@ -2220,15 +2220,15 @@ const MEDICAL_SEPARATION_DATA = {
 
 const FAILURE_TO_MEET_STANDARDS_DATA = {
   references: [
-    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
-    { title: "MCO 6110.3A - Physical Fitness", url: "https://www.marines.mil/", isQuickLink: true },
-    { title: "MCO 6110.3 - Body Composition Program", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899560/mco-190016a/", isQuickLink: true },
+    { title: "MCO 6100.13A - Physical Fitness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899201/mco-610013a/", isQuickLink: true },
+    { title: "MCO 6110.3 - Body Composition Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899200/mco-61103/", isQuickLink: false },
   ],
 };
 
 const ENTRY_LEVEL_SEPARATION_DATA = {
   references: [
-    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899560/mco-190016a/", isQuickLink: true },
   ],
 };
 
@@ -2236,7 +2236,7 @@ const ENTRY_LEVEL_SEPARATION_DATA = {
 const ACTIVE_DUTY_RETIREMENT_DATA = {
   references: [
     { title: "10 U.S.C. Chapter 71 - Retirement", url: "https://uscode.house.gov/", isQuickLink: true },
-    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899560/mco-190016a/", isQuickLink: true },
     { title: "DFAS Retired Pay", url: "https://www.dfas.mil/retiredmilitary/", isQuickLink: true },
   ],
 };
@@ -2244,7 +2244,7 @@ const ACTIVE_DUTY_RETIREMENT_DATA = {
 const RESERVE_RETIREMENT_DATA = {
   references: [
     { title: "10 U.S.C. Chapter 1223 - Reserve Retirement", url: "https://uscode.house.gov/", isQuickLink: true },
-    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO 1900.16 - Separation and Retirement Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899560/mco-190016a/", isQuickLink: false },
   ],
 };
 
@@ -2274,7 +2274,7 @@ const SBP_ELECTIONS_DATA = {
 // Separations & Transitions - Transition Programs
 const TAP_DATA = {
   references: [
-    { title: "MCO 1040.31 - Transition Readiness Program", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1040.31 - Transition Readiness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/", isQuickLink: true },
     { title: "TAP Website", url: "https://www.tapevents.mil/", isQuickLink: true },
   ],
 };
@@ -2305,7 +2305,7 @@ const EDUCATION_BENEFITS_TRANSFER_DATA = {
 
 const SKILLBRIDGE_DATA = {
   references: [
-    { title: "NAVMC 1700.2B - SkillBridge Employment Training", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "NAVMC 1700.2B - SkillBridge Employment Training", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
     { title: "MARADMIN 280/24 - SkillBridge Interim Guidance", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
     { title: "DOD SkillBridge", url: "https://skillbridge.osd.mil/", isQuickLink: true },
     { title: "DODI 1322.29", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: false },
@@ -2316,7 +2316,7 @@ const SKILLBRIDGE_DATA = {
 // Reserve & Mobilization - Reserve Administration
 const RESERVE_DUTY_STATUS_DATA = {
   references: [
-    { title: "MCO 1001R.1L W/CH 1 - MCRAMM", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1001R.1L W/CH 1 - MCRAMM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899174/mco-1001r1l-wch-1/", isQuickLink: true },
     { title: "10 U.S.C. Sections 10141-10154", url: "https://uscode.house.gov/", isQuickLink: true },
     { title: "Marine Forces Reserve", url: "https://www.marforres.marines.mil/", isQuickLink: false },
   ],
@@ -2324,7 +2324,7 @@ const RESERVE_DUTY_STATUS_DATA = {
 
 const IDT_PAY_DATA = {
   references: [
-    { title: "MCO 1001R.1L Chapter 3 - Reserve Duty and Training", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1001R.1L Chapter 3 - Reserve Duty and Training", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899174/mco-1001r1l-wch-1/", isQuickLink: true },
     { title: "MARADMIN 157/25 - IDT Travel Reimbursement", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
     { title: "MARADMIN 571/25 - Appropriate Duty Policy", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
     { title: "Joint Travel Regulations", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: false },
@@ -2333,7 +2333,7 @@ const IDT_PAY_DATA = {
 
 const ANNUAL_TRAINING_ORDERS_DATA = {
   references: [
-    { title: "MCO 1001R.1L Chapter 7 - Selected Reserve", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1001R.1L Chapter 7 - Selected Reserve", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899174/mco-1001r1l-wch-1/", isQuickLink: true },
     { title: "Joint Travel Regulations", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: true },
     { title: "MROWS", url: "https://mrows.usmc.mil/", isQuickLink: false },
   ],
@@ -2341,7 +2341,7 @@ const ANNUAL_TRAINING_ORDERS_DATA = {
 
 const RETIREMENT_POINTS_DATA = {
   references: [
-    { title: "MCO 1001R.1L Chapter 4 - Reserve Retirement", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1001R.1L Chapter 4 - Reserve Retirement", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899174/mco-1001r1l-wch-1/", isQuickLink: true },
     { title: "10 U.S.C. Chapter 1223 - Reserve Retirement", url: "https://uscode.house.gov/", isQuickLink: true },
     { title: "DoDI 1215.07 - Service Credit", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: false },
     { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil/", isQuickLink: false },
@@ -2350,9 +2350,9 @@ const RETIREMENT_POINTS_DATA = {
 
 const RESERVE_PROMOTION_SYSTEM_DATA = {
   references: [
-    { title: "MCO P1400.32D W/CH 2 - Promotion Manual Vol 2", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO P1400.32D W/CH 2 - Promotion Manual Vol 2", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899298/mco-140032d/", isQuickLink: true },
     { title: "MARADMIN 373/24 - FY25 SNCO Board Schedule", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
-    { title: "MCO 1001R.1L Chapter 4 - Reserve Promotions", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO 1001R.1L Chapter 4 - Reserve Promotions", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899174/mco-1001r1l-wch-1/", isQuickLink: false },
     { title: "MCIRSA", url: "https://www.marforres.marines.mil/Units/Force-Headquarters-Group/Marine-Corps-Individual-Reserve-Support-Activity/", isQuickLink: false },
   ],
 };
@@ -2360,15 +2360,15 @@ const RESERVE_PROMOTION_SYSTEM_DATA = {
 // Reserve & Mobilization - Mobilization/Activation
 const MOBILIZATION_ORDERS_DATA = {
   references: [
-    { title: "MCO 3061.1 - Total Force Mobilization Plan", url: "https://www.marines.mil/", isQuickLink: true },
-    { title: "MCO 3000.19B - MAID-P", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 3061.1 - Total Force Mobilization Plan", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899717/mco-30611/", isQuickLink: true },
+    { title: "MCO 3000.19B - MAID-P", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899713/mco-300019b/", isQuickLink: true },
     { title: "10 U.S.C. 12301, 12302, 12304, 12304b", url: "https://uscode.house.gov/", isQuickLink: false },
   ],
 };
 
 const ADOS_DATA = {
   references: [
-    { title: "MCO 1001R.1L Chapter 3 - Active Duty Types", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1001R.1L Chapter 3 - Active Duty Types", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899174/mco-1001r1l-wch-1/", isQuickLink: true },
     { title: "MARFORRES Definitions", url: "https://www.marforres.marines.mil/", isQuickLink: false },
     { title: "MROWS", url: "https://mrows.usmc.mil/", isQuickLink: false },
   ],
@@ -2376,25 +2376,25 @@ const ADOS_DATA = {
 
 const ADSW_DATA = {
   references: [
-    { title: "MCO 1000.8", url: "https://www.marines.mil/", isQuickLink: true },
-    { title: "MCO 1001R.1L Chapter 3", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1000.8", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899173/mco-10008/", isQuickLink: true },
+    { title: "MCO 1001R.1L Chapter 3", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899174/mco-1001r1l-wch-1/", isQuickLink: true },
     { title: "HQMC M&RA", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
   ],
 };
 
 const ADT_DATA = {
   references: [
-    { title: "MCO 1001R.1L Chapter 3 and Chapter 7", url: "https://www.marines.mil/", isQuickLink: true },
-    { title: "MCO 1510R.39B - Reserve Training", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 1001R.1L Chapter 3 and Chapter 7", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899174/mco-1001r1l-wch-1/", isQuickLink: true },
+    { title: "MCO 1510R.39B - Reserve Training", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899350/mco-1510r39b/", isQuickLink: true },
     { title: "MROWS", url: "https://mrows.usmc.mil/", isQuickLink: false },
   ],
 };
 
 const DEMOBILIZATION_PROCESSING_DATA = {
   references: [
-    { title: "MCO 3061.1 - TFMDP", url: "https://www.marines.mil/", isQuickLink: true },
-    { title: "MCO 3000.19B - MAID-P", url: "https://www.marines.mil/", isQuickLink: true },
-    { title: "MCO 1001R.1L Chapter 10 - Mobilization", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO 3061.1 - TFMDP", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899717/mco-30611/", isQuickLink: true },
+    { title: "MCO 3000.19B - MAID-P", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899713/mco-300019b/", isQuickLink: true },
+    { title: "MCO 1001R.1L Chapter 10 - Mobilization", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899174/mco-1001r1l-wch-1/", isQuickLink: false },
     { title: "VA Benefits", url: "https://www.va.gov/", isQuickLink: false },
   ],
 };
@@ -2402,26 +2402,26 @@ const DEMOBILIZATION_PROCESSING_DATA = {
 // Legal & Disciplinary - Administrative Actions
 const NJP_ARTICLE_15_DATA = {
   references: [
-    { title: "MCO 5800.16 Vol 14 - NJP", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 5800.16 Vol 14 - NJP", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/", isQuickLink: true },
     { title: "JAGINST 5800.7F - JAG Manual", url: "https://www.jag.navy.mil/", isQuickLink: true },
-    { title: "NAVMC 10132 - Unit Punishment Book", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "NAVMC 10132 - Unit Punishment Book", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
     { title: "Article 15 UCMJ", url: "https://www.law.cornell.edu/uscode/text/10/815", isQuickLink: false },
   ],
 };
 
 const PUNITIVE_LETTERS_REPRIMAND_DATA = {
   references: [
-    { title: "MCO 5800.16 Vol 14 - NJP", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 5800.16 Vol 14 - NJP", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/", isQuickLink: true },
     { title: "JAGINST 5800.7F - JAG Manual", url: "https://www.jag.navy.mil/", isQuickLink: true },
-    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/", isQuickLink: false },
   ],
 };
 
 const PAGE_11_COUNSELING_DATA = {
   references: [
-    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/", isQuickLink: true },
     { title: "Marine Online (MOL)", url: "https://mol.usmc.mil/", isQuickLink: true },
-    { title: "NAVMC 11035 - Admin Change Request", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "NAVMC 11035 - Admin Change Request", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
     { title: "BCNR", url: "https://www.secnav.navy.mil/mra/CORB/pages/home.aspx", isQuickLink: false },
   ],
 };
@@ -2429,7 +2429,7 @@ const PAGE_11_COUNSELING_DATA = {
 const ADMINISTRATIVE_INVESTIGATIONS_DATA = {
   references: [
     { title: "JAGINST 5800.7F - JAG Manual", url: "https://www.jag.navy.mil/", isQuickLink: true },
-    { title: "MCO 5830.1A - Command Investigations", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "MCO 5830.1A - Command Investigations", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899479/mco-58301a/", isQuickLink: true },
     { title: "SECNAVINST 5211.5E - Privacy Act", url: "https://www.secnav.navy.mil/", isQuickLink: false },
   ],
 };
@@ -2439,7 +2439,7 @@ const COURT_MARTIAL_SUPPORT_DATA = {
   references: [
     { title: "Manual for Courts-Martial (MCM)", url: "https://jsc.defense.gov/Portals/99/Documents/MCM.pdf", isQuickLink: true },
     { title: "JAGINST 5800.7F - JAG Manual", url: "https://www.jag.navy.mil/", isQuickLink: true },
-    { title: "MCO 5800.16 - LSAM", url: "https://www.marines.mil/", isQuickLink: false },
+    { title: "MCO 5800.16 - LSAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/", isQuickLink: false },
     { title: "JTR Chapter 7 - Witness Travel", url: "https://www.travel.dod.mil/", isQuickLink: false },
   ],
 };
