@@ -337,6 +337,12 @@ import { CACOOversightContent } from "../../../../../components/commanders/CACOO
 import { ITOAuthorityContent } from "../../../../../components/commanders/ITOAuthorityContent";
 import { RCCReferralContent } from "../../../../../components/commanders/RCCReferralContent";
 import { WWBenefitsContent } from "../../../../../components/commanders/WWBenefitsContent";
+import { FAPOverviewContent } from "../../../../../components/commanders/FAPOverviewContent";
+import { DomesticAbuseResponseContent } from "../../../../../components/commanders/DomesticAbuseResponseContent";
+import { ChildAbuseResponseContent } from "../../../../../components/commanders/ChildAbuseResponseContent";
+import { UPFRPSOPRequirementContent } from "../../../../../components/commanders/UPFRPSOPRequirementContent";
+import { NOKNotificationContent } from "../../../../../components/commanders/NOKNotificationContent";
+import { PCRReportingContent } from "../../../../../components/commanders/PCRReportingContent";
 // Commanders - Fiscal & Property Accountability
 import { FundControlTrainingContent } from "../../../../../components/commanders/FundControlTrainingContent";
 import { BudgetExecutionContent } from "../../../../../components/commanders/BudgetExecutionContent";
@@ -3570,6 +3576,46 @@ const WW_BENEFITS_DATA = {
   ],
 };
 
+const FAP_OVERVIEW_DATA = {
+  references: [
+    { title: "MCO 1754.11 (FAP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1754.11", isQuickLink: true },
+    { title: "SECNAVINST 1752.3B (FAP)", url: "https://www.secnav.navy.mil", isQuickLink: true },
+  ],
+};
+
+const DOMESTIC_ABUSE_RESPONSE_DATA = {
+  references: [
+    { title: "MCO 1754.11 (FAP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1754.11", isQuickLink: true },
+    { title: "DD Form 2873 (MPO)", url: "https://www.esd.whs.mil/Directives/forms/dd2500_2999/" },
+  ],
+};
+
+const CHILD_ABUSE_RESPONSE_DATA = {
+  references: [
+    { title: "MCO 1754.11 (FAP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1754.11", isQuickLink: true },
+    { title: "SECNAVINST 1752.3B (FAP)", url: "https://www.secnav.navy.mil", isQuickLink: true },
+  ],
+};
+
+const UPFRP_SOP_DATA = {
+  references: [
+    { title: "MCO 1754.9A (UPFRP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1754.9", isQuickLink: true },
+  ],
+};
+
+const NOK_NOTIFICATION_DATA = {
+  references: [
+    { title: "MCO 3040.4 (Casualty Assistance)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=3040.4", isQuickLink: true },
+  ],
+};
+
+const PCR_REPORTING_DATA = {
+  references: [
+    { title: "MCO 3040.4 (Casualty Assistance)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=3040.4", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil", isQuickLink: true },
+  ],
+};
+
 // Commanders - Fiscal & Property Accountability Data
 const FUND_CONTROL_TRAINING_DATA = {
   references: [
@@ -4345,6 +4391,12 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "ito-authority": <ITOAuthorityContent data={ITO_AUTHORITY_DATA} />,
     "rcc-referral": <RCCReferralContent data={RCC_REFERRAL_DATA} />,
     "ww-benefits": <WWBenefitsContent data={WW_BENEFITS_DATA} />,
+    "fap-overview": <FAPOverviewContent data={FAP_OVERVIEW_DATA} />,
+    "domestic-abuse-response": <DomesticAbuseResponseContent data={DOMESTIC_ABUSE_RESPONSE_DATA} />,
+    "child-abuse-response": <ChildAbuseResponseContent data={CHILD_ABUSE_RESPONSE_DATA} />,
+    "upfrp-sop": <UPFRPSOPRequirementContent data={UPFRP_SOP_DATA} />,
+    "nok-notification": <NOKNotificationContent data={NOK_NOTIFICATION_DATA} />,
+    "pcr-reporting": <PCRReportingContent data={PCR_REPORTING_DATA} />,
     // Commanders - Fiscal & Property Accountability
     "fund-control-training": <FundControlTrainingContent data={FUND_CONTROL_TRAINING_DATA} />,
     "budget-execution": <BudgetExecutionContent data={BUDGET_EXECUTION_DATA} />,

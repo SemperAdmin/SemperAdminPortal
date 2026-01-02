@@ -1,4 +1,4 @@
-# Content Needed: 78 Placeholder Items
+# Content Needed: 71 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 75 items |
+| **Commanders** | 68 items |
 | **Administrators** | 0 items |
 
 ---
@@ -111,6 +111,8 @@ Completed items:
 ## Family Readiness & Casualty Affairs
 **Section:** `commanders-family-readiness`
 
+**STATUS: SECTION COMPLETE (13/13 items)**
+
 Completed items:
 - ~~`upfrp-command-roles`~~ - COMPLETED
 - ~~`drc-oversight`~~ - COMPLETED
@@ -119,16 +121,12 @@ Completed items:
 - ~~`ito-authority`~~ - COMPLETED
 - ~~`rcc-referral`~~ - COMPLETED
 - ~~`ww-benefits`~~ - COMPLETED
-
-Remaining items:
-| Slug | Title | Description |
-|------|-------|-------------|
-| `fap-overview` | FAP Overview | Family Advocacy Program and commander's role |
-| `domestic-abuse-response` | Domestic Abuse Response | MPO issuance and victim safety planning |
-| `child-abuse-response` | Child Abuse Response | Reporting requirements and protective actions |
-| `upfrp-sop` | UPFRP SOP Requirements | Developing and implementing the family readiness SOP |
-| `nok-notification` | Next of Kin Notification | Notification procedures and restrictions |
-| `pcr-reporting` | Personnel Casualty Reports | PCR submission requirements and timelines |
+- ~~`fap-overview`~~ - COMPLETED
+- ~~`domestic-abuse-response`~~ - COMPLETED
+- ~~`child-abuse-response`~~ - COMPLETED
+- ~~`upfrp-sop`~~ - COMPLETED
+- ~~`nok-notification`~~ - COMPLETED
+- ~~`pcr-reporting`~~ - COMPLETED
 
 ## Fiscal & Property Accountability
 **Section:** `commanders-fiscal-property`
@@ -208,7 +206,6 @@ Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
 | `adverse-fitreps` | Adverse Fitness Reports | Requirements for adverse comments and due process |
-| `procon-oversight` | Proficiency & Conduct Marks | Commander oversight and marking philosophy |
 | `meritorious-promotion-authority` | Meritorious Promotion | Commander's meritorious promotion authority |
 | `reenlistment-authority` | Reenlistment Authority | Approval, disapproval, and waiver authority |
 | `page-11-commander` | Page 11 Entries | When and how to document administrative remarks |
