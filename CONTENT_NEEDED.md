@@ -1,4 +1,4 @@
-# Content Needed: 103 Placeholder Items
+# Content Needed: 99 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 100 items |
+| **Commanders** | 96 items |
 | **Administrators** | 0 items |
 
 ---
@@ -216,14 +216,17 @@ Remaining items:
 ## Public Affairs & Media Relations
 **Section:** `commanders-public-affairs`
 
+Completed items:
+- ~~`media-engagement`~~ - COMPLETED
+- ~~`releasable-info`~~ - COMPLETED
+- ~~`casualty-info-release`~~ - COMPLETED
+- ~~`social-media-policy`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
-| `media-engagement` | Media Engagement | Interacting with news media and journalists |
 | `crisis-communication` | Crisis Communication | Managing communications during crises |
-| `social-media-policy` | Social Media Policy | Command social media guidelines and oversight |
 | `opsec-public-statements` | OPSEC in Public Statements | Protecting sensitive information |
-| `releasable-info` | Releasable Information | What can and cannot be released publicly |
-| `casualty-info-release` | Casualty Information Release | PNOK notification plus 24-hour rule |
 | `climate-messaging` | Command Climate Messaging | Internal and external command messaging |
 
 ## Safety & Risk Management

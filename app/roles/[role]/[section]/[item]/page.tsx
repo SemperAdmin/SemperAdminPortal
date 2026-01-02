@@ -342,6 +342,11 @@ import { FitnessReportContent } from "../../../../../components/commanders/Fitne
 import { JEPESCommanderRoleContent } from "../../../../../components/commanders/JEPESCommanderRoleContent";
 import { CounselingEntriesContent } from "../../../../../components/commanders/CounselingEntriesContent";
 import { NotRecAuthorityContent } from "../../../../../components/commanders/NotRecAuthorityContent";
+// Commanders - Public Affairs & Media Relations
+import { MediaEngagementContent } from "../../../../../components/commanders/MediaEngagementContent";
+import { ReleasableInformationContent } from "../../../../../components/commanders/ReleasableInformationContent";
+import { CasualtyInformationReleaseContent } from "../../../../../components/commanders/CasualtyInformationReleaseContent";
+import { SocialMediaPolicyContent } from "../../../../../components/commanders/SocialMediaPolicyContent";
 // Commanders - Transition of Command
 import {
   CornerstoneAttendanceContent,
@@ -3577,6 +3582,39 @@ const NOT_REC_AUTHORITY_DATA = {
   ],
 };
 
+// Commanders - Public Affairs & Media Relations Data
+const MEDIA_ENGAGEMENT_DATA = {
+  references: [
+    { title: "MCO 5720.77 (Public Affairs)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5720.77", isQuickLink: true },
+    { title: "SECNAVINST 5720.44C (DON PA Policy)", url: "https://www.secnav.navy.mil/doni/Directives/05000%20General%20Management%20Security%20and%20Safety%20Services/05-700%20General%20External%20and%20Internal%20Relations%20Services/5720.44C.pdf", isQuickLink: true },
+    { title: "DoDI 5400.01 (Public Information Release)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/540001p.pdf" },
+  ],
+};
+
+const RELEASABLE_INFORMATION_DATA = {
+  references: [
+    { title: "MCO 5720.77 (Public Affairs)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5720.77", isQuickLink: true },
+    { title: "MCO 5211.2 (Privacy Act)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5211.2", isQuickLink: true },
+    { title: "DoDI 5400.01 (Public Information Release)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/540001p.pdf" },
+  ],
+};
+
+const CASUALTY_INFORMATION_RELEASE_DATA = {
+  references: [
+    { title: "MCO 3040.4 (Casualty Assistance)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=3040.4", isQuickLink: true },
+    { title: "MCO 5720.77 (Public Affairs)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5720.77", isQuickLink: true },
+    { title: "HQMC Office of Marine Corps Communication", url: "https://www.marines.mil" },
+  ],
+};
+
+const SOCIAL_MEDIA_POLICY_DATA = {
+  references: [
+    { title: "MCO 5239.2B (Cybersecurity Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5239.2", isQuickLink: true },
+    { title: "MARADMIN 181/17 (Social Media Guidance)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "DoDI 5400.01 (Public Information Release)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/540001p.pdf" },
+  ],
+};
+
 // Life Events Data
 const BUYING_A_HOME_DATA = {
   references: [
@@ -4128,6 +4166,11 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "jepes-commander": <JEPESCommanderRoleContent data={JEPES_COMMANDER_DATA} />,
     "6105-entries": <CounselingEntriesContent data={COUNSELING_ENTRIES_6105_DATA} />,
     "not-rec-authority": <NotRecAuthorityContent data={NOT_REC_AUTHORITY_DATA} />,
+    // Commanders - Public Affairs & Media Relations
+    "media-engagement": <MediaEngagementContent data={MEDIA_ENGAGEMENT_DATA} />,
+    "releasable-info": <ReleasableInformationContent data={RELEASABLE_INFORMATION_DATA} />,
+    "casualty-info-release": <CasualtyInformationReleaseContent data={CASUALTY_INFORMATION_RELEASE_DATA} />,
+    "social-media-policy": <SocialMediaPolicyContent data={SOCIAL_MEDIA_POLICY_DATA} />,
     // Life Events
     "buying-a-home": <BuyingAHomeContent data={BUYING_A_HOME_DATA} />,
     "deploying": <DeployingContent data={DEPLOYING_DATA} />,
@@ -4799,12 +4842,8 @@ export function generateStaticParams(): { role: Role; section: string; item: str
 
   const commandersPublicAffairsSection = "commanders-public-affairs";
   const commandersPublicAffairsSlugs = [
-    "media-engagement",
     "crisis-communication",
     "opsec-public-statements",
-    "casualty-info-release",
-    "releasable-info",
-    "social-media-policy",
     "climate-messaging",
   ];
 
