@@ -2,7 +2,7 @@
 
 import { TabbedContentLayout } from "../ui/TabbedContentLayout";
 import { InfoCard } from "../ui/InfoCard";
-import { FileText, AlertTriangle, Shield, Clock } from "lucide-react";
+import { FileText, AlertTriangle, Clock, Lock, Unlock } from "lucide-react";
 
 interface Reference {
   title: string;
@@ -25,68 +25,44 @@ const TABS = [
 ];
 
 const KEY_POINTS = [
-  { label: "Restricted Reporting", value: "Disclose to SARC, SAPR VA, or Healthcare Provider without triggering investigation or command notification" },
-  { label: "Unrestricted Reporting", value: "Triggers command notification, NCIS investigation, and full range of legal/administrative protections" },
-  { label: "Conversion", value: "Restricted can be converted to Unrestricted at any time; Unrestricted cannot be changed back" },
-  { label: "Victim Control", value: "System designed to empower victims with control over how their information is shared" },
+  { label: "Restricted Reporting", value: "Allows disclosure to SARC, SAPR VA, or healthcare provider without triggering investigation or command notification" },
+  { label: "Unrestricted Reporting", value: "Triggers command notification, NCIS investigation, and access to all legal/administrative protections" },
+  { label: "Conversion", value: "Restricted can convert to Unrestricted at any time; Unrestricted cannot revert to Restricted" },
+  { label: "Mandatory Reporting", value: "Marines in the chain of command are mandatory reporters—disclosure to NCO/Officer becomes Unrestricted" },
 ];
 
-const RESTRICTED_DETAILS = {
-  canTell: [
-    "Sexual Assault Response Coordinator (SARC)",
-    "SAPR Victim Advocate (VA)",
-    "Healthcare Provider",
-    "Chaplain (with limitations)",
-  ],
-  services: [
-    "Medical care and forensic examination",
-    "Counseling and mental health support",
-    "Special Victims' Counsel (SVC)",
-    "Safety planning",
-  ],
-  notTriggered: [
-    "Command notification",
-    "NCIS investigation",
-    "Chain of command involvement",
-  ],
-};
-
-const UNRESTRICTED_DETAILS = {
-  triggers: [
-    "Command notification within 24 hours",
-    "NCIS investigation initiated",
-    "8-Day report requirement",
-    "Full protective order options",
-  ],
-  additionalServices: [
-    "Military Protective Order (MPO)",
-    "Expedited Transfer eligibility",
-    "Victim/Witness Assistance Program (VWAP)",
-    "Court-martial participation rights",
-  ],
-};
+const REPORT_TYPES = [
+  {
+    type: "Restricted",
+    description: "Maximum privacy while accessing care",
+    investigation: "No",
+    commandNotified: "No",
+    services: "Medical, counseling, SARC/VA support"
+  },
+  {
+    type: "Unrestricted",
+    description: "Full investigation and command support",
+    investigation: "Yes (NCIS)",
+    commandNotified: "Yes",
+    services: "All services plus legal, MPO, expedited transfer"
+  },
+];
 
 const PROCESS_STEPS = [
-  "Initial Contact: Victim meets with a SARC or SAPR VA",
-  "Rights Advisement: SARC/VA explains both reporting options in detail",
-  "Selection: Victim signs DD Form 2910 to document their choice",
-  "Action: If Unrestricted, SARC notifies NCIS and Commander within 24 hours",
-  "Services: Victim connected with appropriate medical, legal, and support services",
+  "Initial Contact: The victim meets with a SARC or SAPR VA",
+  "Options Brief: The SARC/VA explains both reporting types in detail",
+  "Selection: The victim signs DD Form 2910 to document their choice",
+  "Action: If Unrestricted, the SARC notifies NCIS and the Commander within 24 hours",
+];
+
+const TIMELINE_REQUIREMENTS = [
+  { requirement: "24 Hours", action: "SARC notifies NCIS and Commander for Unrestricted reports" },
+  { requirement: "Anytime", action: "Victim may convert Restricted to Unrestricted" },
 ];
 
 const COMMON_ISSUES = [
-  {
-    issue: "Accidental disclosure",
-    solution: "If a victim tells their NCO or OIC, it automatically becomes Unrestricted—all Marines in the chain of command are mandatory reporters. Victims must go to a SARC/VA/Healthcare provider to maintain Restricted status. Train all hands on this distinction.",
-  },
-  {
-    issue: "Pressure to report Unrestricted",
-    solution: "Commanders or peers pressuring victims to file Unrestricted reports. The victim's choice must be respected. Only the victim can decide which option is right for them.",
-  },
-  {
-    issue: "Confusion about chaplain privilege",
-    solution: "Chaplains have privileged communication, but it's different from Restricted reporting. Clarify that only SARC, VA, or Healthcare providers can initiate a Restricted report.",
-  },
+  { issue: "Accidental Disclosure to Command", solution: "If a victim discloses to their NCO or Officer, it becomes Unrestricted. Train leaders on proper response: immediately connect victim with SARC." },
+  { issue: "Pressure to Convert", solution: "Victims should never be pressured to convert to Unrestricted. The choice is theirs alone. Commanders should support either decision." },
 ];
 
 export function SAPRReportingTypesContent({ data }: Props) {
@@ -94,16 +70,10 @@ export function SAPRReportingTypesContent({ data }: Props) {
     overview: (
       <div className="space-y-6">
         <InfoCard icon={FileText} title="SAPR Reporting Types" variant="info">
-          The Marine Corps offers two primary reporting options for sexual assault. This
-          dual-track system is designed to <strong>empower victims</strong> by giving them
-          control over how their information is shared and whether a criminal investigation
-          is initiated.
+          The Marine Corps provides two distinct avenues for reporting sexual assault. The primary goal is to empower victims by providing a choice between maximum privacy (Restricted) or an official investigation and command support (Unrestricted).
         </InfoCard>
-
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-            Key Points
-          </h2>
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Key Points</h2>
           <div className="mt-4 overflow-x-auto">
             <table className="min-w-full text-sm">
               <tbody>
@@ -117,165 +87,104 @@ export function SAPRReportingTypesContent({ data }: Props) {
             </table>
           </div>
         </section>
-
-        <InfoCard icon={Clock} title="No Time Limit" variant="default">
-          There is <strong>no time limit</strong> for a victim to file a Restricted or
-          Unrestricted report. Victims may report at any time, regardless of when the
-          assault occurred.
-        </InfoCard>
+        <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <h3 className="flex items-center gap-2 text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+            <Clock className="h-5 w-5" />Timeline Requirements
+          </h3>
+          <div className="mt-4 overflow-x-auto">
+            <table className="min-w-full text-sm">
+              <tbody>
+                {TIMELINE_REQUIREMENTS.map((item) => (
+                  <tr key={item.requirement} className="border-b border-zinc-100 dark:border-zinc-800">
+                    <td className="py-3 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{item.requirement}</td>
+                    <td className="py-3 text-zinc-600 dark:text-zinc-400">{item.action}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
       </div>
     ),
-
     types: (
       <div className="space-y-6">
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h2 className="text-xl font-semibold text-blue-700 dark:text-blue-400">
-            Restricted Reporting
-          </h2>
-          <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            Allows disclosure without triggering investigation or command notification.
-          </p>
-
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Reporting Types Comparison</h2>
           <div className="mt-4 space-y-4">
-            <div>
-              <h4 className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Can Disclose To:</h4>
-              <ul className="mt-2 space-y-1">
-                {RESTRICTED_DETAILS.canTell.map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400">
-                    <span className="h-2 w-2 rounded-full bg-blue-500" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Services Available:</h4>
-              <ul className="mt-2 space-y-1">
-                {RESTRICTED_DETAILS.services.map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400">
-                    <span className="h-2 w-2 rounded-full bg-green-500" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Not Triggered:</h4>
-              <ul className="mt-2 space-y-1">
-                {RESTRICTED_DETAILS.notTriggered.map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400">
-                    <span className="h-2 w-2 rounded-full bg-zinc-400" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {REPORT_TYPES.map((item) => (
+              <div key={item.type} className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-700">
+                <div className="flex items-center gap-3">
+                  {item.type === "Restricted" ? (
+                    <Lock className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                  ) : (
+                    <Unlock className="h-6 w-6 text-amber-600 dark:text-amber-400" />
+                  )}
+                  <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">{item.type} Reporting</h3>
+                </div>
+                <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">{item.description}</p>
+                <div className="mt-3 grid grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <span className="font-medium text-zinc-700 dark:text-zinc-300">Investigation:</span>
+                    <span className="ml-2 text-zinc-600 dark:text-zinc-400">{item.investigation}</span>
+                  </div>
+                  <div>
+                    <span className="font-medium text-zinc-700 dark:text-zinc-300">Command Notified:</span>
+                    <span className="ml-2 text-zinc-600 dark:text-zinc-400">{item.commandNotified}</span>
+                  </div>
+                </div>
+                <div className="mt-2 text-sm">
+                  <span className="font-medium text-zinc-700 dark:text-zinc-300">Services Available:</span>
+                  <span className="ml-2 text-zinc-600 dark:text-zinc-400">{item.services}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
-
-        <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h2 className="text-xl font-semibold text-amber-700 dark:text-amber-400">
-            Unrestricted Reporting
-          </h2>
-          <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            Triggers full investigation and command involvement.
-          </p>
-
-          <div className="mt-4 space-y-4">
-            <div>
-              <h4 className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Triggers:</h4>
-              <ul className="mt-2 space-y-1">
-                {UNRESTRICTED_DETAILS.triggers.map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400">
-                    <span className="h-2 w-2 rounded-full bg-amber-500" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Additional Services:</h4>
-              <ul className="mt-2 space-y-1">
-                {UNRESTRICTED_DETAILS.additionalServices.map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400">
-                    <span className="h-2 w-2 rounded-full bg-green-500" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <InfoCard icon={AlertTriangle} title="Conversion is One-Way" variant="warning">
-          A Restricted report can be converted to Unrestricted <strong>at any time</strong>.
-          However, once a report is Unrestricted, it <strong>cannot</strong> be changed back
-          to Restricted.
+        <InfoCard icon={Lock} title="Restricted Report Confidentiality" variant="default">
+          A Restricted report is kept <strong>completely confidential</strong> from the command. Only the SARC, VA, and healthcare providers have access to the information.
         </InfoCard>
       </div>
     ),
-
     process: (
       <div className="space-y-6">
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-            Reporting Process
-          </h2>
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Reporting Process</h2>
           <div className="mt-6 space-y-4">
             {PROCESS_STEPS.map((step, index) => (
               <div key={step} className="flex items-start gap-4">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">
-                  {index + 1}
-                </span>
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">{index + 1}</span>
                 <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{step}</p>
               </div>
             ))}
           </div>
         </section>
-
-        <InfoCard icon={Shield} title="DD Form 2910" variant="default">
-          The <strong>DD Form 2910</strong> (Victim Reporting Preference Statement) documents
-          the victim&apos;s choice of reporting option. This form is critical documentation
-          and must be completed with every report.
-        </InfoCard>
-
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-            24-Hour Notification (Unrestricted)
-          </h3>
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Key Forms</h3>
           <ul className="mt-3 space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
-            <li>&bull; SARC notifies Commander within 24 hours</li>
-            <li>&bull; NCIS investigation is initiated</li>
-            <li>&bull; 8-Day report clock begins</li>
-            <li>&bull; Safety planning initiated immediately</li>
+            <li>&bull; <strong>DD Form 2910:</strong> Victim Reporting Preference Statement</li>
+            <li>&bull; <strong>DD Form 2911:</strong> Sexual Assault Forensic Examination Report</li>
           </ul>
         </section>
       </div>
     ),
-
     issues: (
       <div className="space-y-6">
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-            Common Problems & Solutions
-          </h2>
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Common Problems &amp; Solutions</h2>
           <div className="mt-4 space-y-4">
             {COMMON_ISSUES.map((item) => (
               <div key={item.issue} className="rounded-lg border-l-4 border-amber-500 bg-amber-50 p-4 dark:bg-amber-900/20">
                 <h4 className="font-medium text-amber-800 dark:text-amber-200">Problem: {item.issue}</h4>
-                <p className="mt-2 text-sm text-amber-700 dark:text-amber-300">
-                  <strong>Solution:</strong> {item.solution}
-                </p>
+                <p className="mt-2 text-sm text-amber-700 dark:text-amber-300"><strong>Solution:</strong> {item.solution}</p>
               </div>
             ))}
           </div>
         </section>
+        <InfoCard icon={AlertTriangle} title="Mandatory Reporters" variant="warning">
+          All Marines in the chain of command are <strong>mandatory reporters</strong>. If a victim discloses to their NCO or Officer, it automatically becomes an Unrestricted report. Train your leaders on this requirement.
+        </InfoCard>
       </div>
     ),
   };
-
   return <TabbedContentLayout tabs={TABS} data={data} content={content} />;
 }
