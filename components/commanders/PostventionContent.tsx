@@ -2,7 +2,7 @@
 
 import { TabbedContentLayout } from "../ui/TabbedContentLayout";
 import { InfoCard } from "../ui/InfoCard";
-import { FileText, AlertTriangle, MapPin, Phone } from "lucide-react";
+import { Heart, AlertTriangle, Clock, Users } from "lucide-react";
 
 interface Reference {
   title: string;
@@ -18,75 +18,78 @@ interface Props {
 
 const TABS = [
   { id: "overview", label: "Overview" },
-  { id: "content", label: "Required Content" },
+  { id: "first48", label: "First 48 Hours" },
   { id: "process", label: "Process" },
   { id: "issues", label: "Common Issues" },
   { id: "references", label: "References", type: "references" as const },
 ];
 
 const KEY_POINTS = [
-  { label: "Required Content", value: "Commander's Policy Statement, SARC/VA contacts, DOD Safe Helpline number" },
-  { label: "Location Requirements", value: "High-traffic areas: barracks, workspaces, Command Boards" },
-  { label: "Annual Review", value: "Must be reviewed and re-signed upon change of command" },
-  { label: "Legal Requirement", value: "Required by law and Marine Corps Order" },
+  { label: "Contagion Prevention", value: "Avoid glamorizing the act; focus on mental health complexity and available resources" },
+  { label: "The 'First 48'", value: "Immediate response focuses on emotional safety of the unit" },
+  { label: "Investigation", value: "Separate from command response—formal Line of Duty/Command Investigation initiated" },
+  { label: "Survivor Support", value: "Support fellow Marines and family—they are the survivors" },
 ];
 
-const REQUIRED_CONTENT = [
-  "Commander's signed policy statement on sexual assault prevention",
-  "Local SARC name and 24/7 contact number",
-  "Victim Advocate (VA) contact information",
-  "DOD Safe Helpline number (1-877-995-5247)",
-  "Statement on both reporting options (Restricted and Unrestricted)",
-  "Retaliation prohibition statement",
+const FIRST_48_ACTIONS = [
+  "Notify HQMC and Chaplain/Medical team immediately",
+  "Implement social media blackout regarding the incident",
+  "CO and Chaplain meet with Marine's immediate peers and work section",
+  "Coordinate with COMMSTRAT for any public messaging (safe messaging guidelines)",
+  "Identify Marines who may be particularly affected",
+  "Increase Chaplain and MFLC availability",
+  "Conduct initial unit-wide meeting within 24 hours",
 ];
 
-const POSTING_LOCATIONS = [
-  { location: "Barracks", description: "Common areas, laundry rooms, duty huts" },
-  { location: "Workspaces", description: "Unit offices, shops, hangars, motor pools" },
-  { location: "Command Boards", description: "Official unit information boards" },
-  { location: "Heads/Restrooms", description: "Where Marines can read privately" },
-  { location: "Dining Facilities", description: "If unit has organic DFAC" },
+const SAFE_MESSAGING = [
+  { do: "Focus on resources and help available", dont: "Describe method or location in detail" },
+  { do: "Emphasize complexity of mental health", dont: "Simplify to a single cause" },
+  { do: "Express condolences to family/unit", dont: "Glamorize or romanticize the death" },
+  { do: "Encourage those struggling to seek help", dont: "Speculate on motive" },
+  { do: "Refer to as 'died by suicide'", dont: "Use 'committed' or 'successful'" },
 ];
 
 const PROCESS_STEPS = [
-  "Drafting: Use the template provided by the installation SAPR office",
-  "Coordination: Verify SARC and VA contact numbers are current and functional",
-  "Commander Signature: Commander signs and dates the policy statement",
-  "Posting: Physically post in all required locations",
-  "Inspection: Walk through locations to ensure documents are visible and not obscured",
-  "Maintenance: Regularly check condition and replace faded/damaged postings",
+  "Notification: Notify HQMC and Chaplain/Medical team immediately",
+  "Social Media: Implement social media blackout regarding the incident",
+  "Peer Outreach: Commander and Chaplain meet with Marine's immediate peers",
+  "Communication: Coordinate with COMMSTRAT for public messaging (safe messaging guidelines)",
+  "Unit Meeting: Conduct unit-wide meeting within 24 hours—led by CO and Chaplain",
+  "Resource Surge: Increase OSCAR team and MFLC presence for minimum 30 days",
+  "Investigation: Initiate Line of Duty/Command Investigation (separate process)",
+  "Long-term Support: Monitor unit for extended period; watch for delayed reactions",
 ];
 
 const TIMELINE_REQUIREMENTS = [
-  { requirement: "Within 90 Days", action: "Of assuming command, SAPR policy must be published and posted" },
-  { requirement: "Upon Change of Command", action: "New commander must review and re-sign" },
-  { requirement: "Quarterly", action: "Verify contact information is still current" },
+  { requirement: "Immediate", action: "4-hour PCR (Personnel Casualty Report) for a suicide" },
+  { requirement: "Within 24 Hours", action: "Initial unit-wide meeting led by Commander and Chaplain" },
+  { requirement: "30+ Days", action: "Increase OSCAR/MFLC presence within the unit" },
 ];
 
 const COMMON_ISSUES = [
   {
-    issue: "Outdated numbers",
-    solution: "Posting a policy with a SARC's phone number who has already executed PCS orders. Verify contact information quarterly and immediately update when personnel change.",
+    issue: "Speculation",
+    solution: "Commanders speculating on the 'motive' before an investigation is complete. Say: 'We don't know all the factors yet, and the investigation will help us understand.' Focus on supporting survivors.",
   },
   {
-    issue: "Torn/faded posters",
-    solution: "Failure to maintain the physical condition of the postings can imply a lack of command emphasis. Conduct regular inspections and replace damaged materials immediately.",
+    issue: "Silence",
+    solution: "Ignoring the event in hopes it will 'blow over.' This creates a vacuum of information that leads to rumors and increased stress. Address the unit directly with compassion and resources.",
   },
   {
-    issue: "Obscured postings",
-    solution: "Allowing other notices or materials to cover SAPR postings. Designate specific spaces for SAPR information that cannot be covered or removed.",
+    issue: "Memorial overemphasis",
+    solution: "Creating elaborate memorials or excessive tributes can inadvertently glamorize the death. Keep memorials appropriate and focus on celebrating the Marine's life and service.",
   },
 ];
 
-export function SAPRPolicyPostingContent({ data }: Props) {
+export function PostventionContent({ data }: Props) {
   const content: Record<string, React.ReactNode> = {
     overview: (
       <div className="space-y-6">
-        <InfoCard icon={FileText} title="SAPR Policy Posting" variant="info">
-          Commanders are required by <strong>law and order</strong> to post specific SAPR
-          information in prominent locations. This ensures that every Marine, regardless
-          of rank, knows how to contact a SARC or VA and understands the commander&apos;s
-          stance on sexual assault.
+        <InfoCard icon={Heart} title="Postvention Procedures" variant="info">
+          Postvention refers to the actions a command takes following a suicide or suicide
+          attempt. It is designed to <strong>support the survivors</strong> (fellow Marines
+          and family), <strong>reduce the risk of suicide contagion</strong>, and restore
+          the unit&apos;s readiness.
         </InfoCard>
 
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
@@ -131,24 +134,27 @@ export function SAPRPolicyPostingContent({ data }: Props) {
           </div>
         </section>
 
-        <InfoCard icon={Phone} title="DOD Safe Helpline" variant="default">
-          Always include the <strong>DOD Safe Helpline: 1-877-995-5247</strong>. This
-          provides 24/7 anonymous crisis support for service members worldwide.
+        <InfoCard icon={Clock} title="4-Hour PCR" variant="warning">
+          Submit the Personnel Casualty Report (PCR) within <strong>4 hours</strong>
+          for a suicide. This is the same timeline as any other casualty.
         </InfoCard>
       </div>
     ),
 
-    content: (
+    first48: (
       <div className="space-y-6">
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-            Required Policy Content
+            First 48 Hours
           </h2>
+          <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+            The immediate response focuses on the emotional safety of the unit:
+          </p>
           <ul className="mt-4 space-y-2">
-            {REQUIRED_CONTENT.map((item) => (
-              <li key={item} className="flex items-start gap-2 text-sm text-zinc-600 dark:text-zinc-400">
+            {FIRST_48_ACTIONS.map((action) => (
+              <li key={action} className="flex items-start gap-2 text-sm text-zinc-600 dark:text-zinc-400">
                 <span className="mt-1 h-2 w-2 rounded-full bg-[var(--sa-navy)]" />
-                {item}
+                {action}
               </li>
             ))}
           </ul>
@@ -156,21 +162,21 @@ export function SAPRPolicyPostingContent({ data }: Props) {
 
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-            Posting Locations
+            Safe Messaging Guidelines
           </h3>
           <div className="mt-4 overflow-x-auto">
             <table className="min-w-full text-sm">
               <thead>
                 <tr className="border-b border-zinc-200 dark:border-zinc-700">
-                  <th className="py-2 pr-4 text-left font-semibold text-zinc-900 dark:text-zinc-100">Location</th>
-                  <th className="py-2 text-left font-semibold text-zinc-900 dark:text-zinc-100">Specifics</th>
+                  <th className="py-2 pr-4 text-left font-semibold text-green-700 dark:text-green-400">Do</th>
+                  <th className="py-2 text-left font-semibold text-red-700 dark:text-red-400">Don&apos;t</th>
                 </tr>
               </thead>
               <tbody>
-                {POSTING_LOCATIONS.map((item) => (
-                  <tr key={item.location} className="border-b border-zinc-100 dark:border-zinc-800">
-                    <td className="py-3 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{item.location}</td>
-                    <td className="py-3 text-zinc-600 dark:text-zinc-400">{item.description}</td>
+                {SAFE_MESSAGING.map((item, index) => (
+                  <tr key={step} className="border-b border-zinc-100 dark:border-zinc-800">
+                    <td className="py-3 pr-4 text-zinc-600 dark:text-zinc-400">{item.do}</td>
+                    <td className="py-3 text-zinc-600 dark:text-zinc-400">{item.dont}</td>
                   </tr>
                 ))}
               </tbody>
@@ -178,10 +184,10 @@ export function SAPRPolicyPostingContent({ data }: Props) {
           </div>
         </section>
 
-        <InfoCard icon={MapPin} title="Visibility is Key" variant="warning">
-          Postings must be in <strong>high-traffic areas</strong> where Marines will
-          see them regularly. A posting hidden in a corner or covered by other materials
-          does not meet the requirement.
+        <InfoCard icon={Users} title="Identify Vulnerable Marines" variant="default">
+          Pay special attention to Marines who were close to the deceased, those with
+          similar stressors, and those who may feel guilt. These individuals are at
+          higher risk during the postvention period.
         </InfoCard>
       </div>
     ),
@@ -190,7 +196,7 @@ export function SAPRPolicyPostingContent({ data }: Props) {
       <div className="space-y-6">
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-            Policy Posting Process
+            Postvention Process
           </h2>
           <div className="mt-6 space-y-4">
             {PROCESS_STEPS.map((step, index) => (
@@ -206,20 +212,21 @@ export function SAPRPolicyPostingContent({ data }: Props) {
 
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-            Maintenance Checklist
+            Resource Surge
           </h3>
           <ul className="mt-3 space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
-            <li>&bull; Conduct weekly visual inspection of all posting locations</li>
-            <li>&bull; Verify SARC/VA contact numbers are current</li>
-            <li>&bull; Replace any faded, torn, or damaged materials</li>
-            <li>&bull; Ensure postings are not covered by other materials</li>
-            <li>&bull; Document inspections in unit SOP</li>
+            <li>&bull; Increase OSCAR team presence within the unit</li>
+            <li>&bull; Request additional MFLC support for minimum 30 days</li>
+            <li>&bull; Chaplain increases availability and visibility</li>
+            <li>&bull; Consider stand-down for immediate work section</li>
+            <li>&bull; Monitor unit morale and climate closely</li>
           </ul>
         </section>
 
-        <InfoCard icon={AlertTriangle} title="90-Day Deadline" variant="warning">
-          The SAPR policy must be published and posted within <strong>90 days</strong>
-          of assuming command. This is a CGIP inspection item.
+        <InfoCard icon={AlertTriangle} title="Investigation is Separate" variant="warning">
+          The Line of Duty/Command Investigation is a <strong>separate process</strong>
+          from the postvention response. Don&apos;t let investigation needs delay or
+          interfere with supporting the unit.
         </InfoCard>
       </div>
     ),
