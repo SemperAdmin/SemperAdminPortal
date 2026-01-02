@@ -269,6 +269,7 @@ import { StandardsOfProofIOContent } from "../../../../../components/leaders/Sta
 import { InvestigationReportFormatIOContent } from "../../../../../components/leaders/InvestigationReportFormatIOContent";
 import { LODMisconductDeterminationsContent } from "../../../../../components/leaders/LODMisconductDeterminationsContent";
 import { DeathCaseProceduresIOContent } from "../../../../../components/leaders/DeathCaseProceduresIOContent";
+import { CommonInvestigationMistakesContent } from "../../../../../components/leaders/CommonInvestigationMistakesContent";
 // Commanders - Admin Investigations
 import { PreliminaryInquiryContent } from "../../../../../components/commanders/investigations/PreliminaryInquiryContent";
 import { CommandInvestigationsContent } from "../../../../../components/commanders/investigations/CommandInvestigationsContent";
@@ -2986,6 +2987,14 @@ const DEATH_CASE_PROCEDURES_IO_DATA = {
   ],
 };
 
+const COMMON_INVESTIGATION_MISTAKES_DATA = {
+  references: [
+    { title: "JAGMAN Chapter II", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "Navy JAG Investigation Guide", url: "https://www.jag.navy.mil/legal_services/command_services.htm", isQuickLink: true },
+    { title: "MCO 5800.16 (Legal Administration)", url: "https://www.marines.mil" },
+  ],
+};
+
 // Commanders - Admin Investigations Data
 const PRELIMINARY_INQUIRY_CA_DATA = {
   references: [
@@ -3477,6 +3486,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "investigation-report-format-io": <InvestigationReportFormatIOContent data={INVESTIGATION_REPORT_FORMAT_IO_DATA} />,
     "lod-misconduct-determinations": <LODMisconductDeterminationsContent data={LOD_MISCONDUCT_DETERMINATIONS_DATA} />,
     "death-case-procedures-io": <DeathCaseProceduresIOContent data={DEATH_CASE_PROCEDURES_IO_DATA} />,
+    "common-investigation-mistakes": <CommonInvestigationMistakesContent data={COMMON_INVESTIGATION_MISTAKES_DATA} />,
     // Commanders - Transition of Command
     "cornerstone-attendance": <CornerstoneAttendanceContent />,
     "cor-incoming": <CertificateOfReliefContent />,
