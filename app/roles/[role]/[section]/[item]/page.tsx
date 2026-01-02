@@ -324,6 +324,11 @@ import { EOPolicyStatementContent } from "../../../../../components/commanders/E
 import { EORepresentativeContent } from "../../../../../components/commanders/EORepresentativeContent";
 import { EOComplaintProcessContent } from "../../../../../components/commanders/EOComplaintProcessContent";
 import { EOInvestigationContent } from "../../../../../components/commanders/EOInvestigationContent";
+// Commanders - Command Climate & Culture Programs
+import { DEOCSRequirementsContent } from "../../../../../components/commanders/DEOCSRequirementsContent";
+import { PACProgramOverviewContent } from "../../../../../components/commanders/PACProgramOverviewContent";
+import { PACPolicyClimateContent } from "../../../../../components/commanders/PACPolicyClimateContent";
+import { UPFRPSOPClimateContent } from "../../../../../components/commanders/UPFRPSOPClimateContent";
 // Commanders - Transition of Command
 import {
   CornerstoneAttendanceContent,
@@ -3432,6 +3437,43 @@ const EO_INVESTIGATION_DATA = {
   ],
 };
 
+// Commanders - Command Climate & Culture Programs Data
+const DEOCS_REQUIREMENTS_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Prevention)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DEOCS Portal", url: "https://www.deocs.net", isQuickLink: true },
+    { title: "DoDI 1350.02 (EO Program)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/135002p.pdf" },
+    { title: "DEOCS Action Plan Template", url: "https://www.marines.mil" },
+  ],
+};
+
+const PAC_PROGRAM_OVERVIEW_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Prevention)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "NAVMC 11512 (Complaint Form)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "Article 92 UCMJ", url: "https://www.ucmj.us/article-92" },
+    { title: "PAC Training Resources", url: "https://www.marines.mil" },
+  ],
+};
+
+const PAC_POLICY_STATEMENT_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Prevention)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "NAVMC 11432 (PAC Policy Template)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "IG Checklist - PAC Policy", url: "https://www.marines.mil" },
+    { title: "Command Board Requirements", url: "https://www.marines.mil" },
+  ],
+};
+
+const UPFRP_SOP_REQUIREMENT_DATA = {
+  references: [
+    { title: "MCO 1754.9A (UPFRP)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "MCO 5211.2 (Privacy Act)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "UPFRP SOP Template", url: "https://www.marines.mil" },
+    { title: "Mass Communication Tool (MCT)", url: "https://www.marines.mil" },
+  ],
+};
+
 // Life Events Data
 const BUYING_A_HOME_DATA = {
   references: [
@@ -3964,6 +4006,11 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "eor-appointment": <EORepresentativeContent data={EO_REPRESENTATIVE_DATA} />,
     "eo-complaint-process": <EOComplaintProcessContent data={EO_COMPLAINT_PROCESS_DATA} />,
     "eo-investigation": <EOInvestigationContent data={EO_INVESTIGATION_DATA} />,
+    // Commanders - Command Climate & Culture Programs
+    "deocs-requirements": <DEOCSRequirementsContent data={DEOCS_REQUIREMENTS_DATA} />,
+    "pac-program-overview": <PACProgramOverviewContent data={PAC_PROGRAM_OVERVIEW_DATA} />,
+    "pac-policy-statement": <PACPolicyClimateContent data={PAC_POLICY_STATEMENT_DATA} />,
+    "upfrp-sop-requirement": <UPFRPSOPClimateContent data={UPFRP_SOP_REQUIREMENT_DATA} />,
     // Life Events
     "buying-a-home": <BuyingAHomeContent data={BUYING_A_HOME_DATA} />,
     "deploying": <DeployingContent data={DEPLOYING_DATA} />,

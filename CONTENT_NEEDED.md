@@ -1,4 +1,4 @@
-# Content Needed: 119 Placeholder Items
+# Content Needed: 115 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 116 items |
+| **Commanders** | 112 items |
 | **Administrators** | 0 items |
 
 ---
@@ -84,19 +84,22 @@ Remaining:
 ## Command Climate & Culture Programs
 **Section:** `commanders-climate-culture`
 
+Completed items:
+- ~~`deocs-requirements`~~ - COMPLETED
+- ~~`pac-program-overview`~~ - COMPLETED
+- ~~`pac-policy-statement`~~ - COMPLETED
+- ~~`upfrp-sop-requirement`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
-| `deocs-requirements` | DEOCS Requirements | Timeline, administration, and using survey results |
 | `climate-surveys` | Command Climate Surveys | Aviation safety surveys (CSA, MCAS, ASPA) and safety climate surveys |
 | `command-team-training` | Command Team Training | Required training for command teams within 30 days |
-| `pac-program-overview` | PAC Program Overview | Discrimination, harassment, hazing, and retaliation prevention |
-| `pac-policy-statement` | PAC Policy (90 Days) | Prohibited Activities and Conduct policy statement |
 | `hazing-prevention` | Hazing Prevention | Definitions, indicators, and command response |
 | `harassment-response` | Harassment Response | Reporting, investigation, and corrective action |
 | `retaliation-prevention` | Retaliation Prevention | Protecting reporters and witnesses from retaliation |
 | `safety-policy-statement` | Safety Policy (30 Days) | Commander's safety policy statement requirement |
 | `sapr-policy-statement` | SAPR Policy (60/90 Days) | Sexual assault prevention and response policy |
-| `upfrp-sop-requirement` | UPFRP SOP (60 Days) | Unit Personal and Family Readiness Program SOP |
 
 ## Equal Opportunity
 **Section:** `commanders-equal-opportunity`
