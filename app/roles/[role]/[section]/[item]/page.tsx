@@ -269,6 +269,18 @@ import { StandardsOfProofIOContent } from "../../../../../components/leaders/Sta
 import { InvestigationReportFormatIOContent } from "../../../../../components/leaders/InvestigationReportFormatIOContent";
 import { LODMisconductDeterminationsContent } from "../../../../../components/leaders/LODMisconductDeterminationsContent";
 import { DeathCaseProceduresIOContent } from "../../../../../components/leaders/DeathCaseProceduresIOContent";
+// Commanders - Admin Investigations
+import { PreliminaryInquiryContent } from "../../../../../components/commanders/investigations/PreliminaryInquiryContent";
+import { CommandInvestigationsContent } from "../../../../../components/commanders/investigations/CommandInvestigationsContent";
+import { LitigationReportInvestigationsContent } from "../../../../../components/commanders/investigations/LitigationReportInvestigationsContent";
+import { CourtsBoardsInquiryContent } from "../../../../../components/commanders/investigations/CourtsBoardsInquiryContent";
+import { ConveningOrdersContent } from "../../../../../components/commanders/investigations/ConveningOrdersContent";
+import { StandardsOfProofContent } from "../../../../../components/commanders/investigations/StandardsOfProofContent";
+import { WitnessProceduresContent } from "../../../../../components/commanders/investigations/WitnessProceduresContent";
+import { InvestigationReportFormatContent } from "../../../../../components/commanders/investigations/InvestigationReportFormatContent";
+import { LineOfDutyContent } from "../../../../../components/commanders/investigations/LineOfDutyContent";
+import { DeathCaseProceduresContent } from "../../../../../components/commanders/investigations/DeathCaseProceduresContent";
+import { InvestigationCoordinationContent } from "../../../../../components/commanders/investigations/InvestigationCoordinationContent";
 // Commanders - Transition of Command
 import {
   CornerstoneAttendanceContent,
@@ -2974,6 +2986,97 @@ const DEATH_CASE_PROCEDURES_IO_DATA = {
   ],
 };
 
+// Commanders - Admin Investigations Data
+const PRELIMINARY_INQUIRY_CA_DATA = {
+  references: [
+    { title: "JAGMAN Section 0204", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "JAGMAN Chapter II", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf" },
+    { title: "MCO 5800.16 (Legal Administration)", url: "https://www.marines.mil" },
+  ],
+};
+
+const COMMAND_INVESTIGATIONS_CA_DATA = {
+  references: [
+    { title: "JAGMAN Section 0206-0208", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "Navy JAG Investigation Guide", url: "https://www.jag.navy.mil/legal_services/command_services.htm", isQuickLink: true },
+    { title: "MCO 5800.16 (Legal Administration)", url: "https://www.marines.mil" },
+  ],
+};
+
+const LITIGATION_REPORT_INVESTIGATIONS_CA_DATA = {
+  references: [
+    { title: "JAGMAN Section 0210", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "Federal Tort Claims Act", url: "https://www.law.cornell.edu/uscode/text/28/part-VI/chapter-171" },
+    { title: "Navy Office of General Counsel (Code 15)", url: "https://www.jag.navy.mil/" },
+  ],
+};
+
+const COURTS_BOARDS_INQUIRY_DATA = {
+  references: [
+    { title: "JAGMAN Section 0211-0216", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "10 U.S.C. 936 (Subpoena Power)", url: "https://www.law.cornell.edu/uscode/text/10/936" },
+    { title: "MCO 5800.16 (Legal Administration)", url: "https://www.marines.mil" },
+  ],
+};
+
+const CONVENING_ORDERS_CA_DATA = {
+  references: [
+    { title: "JAGMAN Section 0205", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "JAGMAN Appendix A-2 (Sample Formats)", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf" },
+    { title: "Navy JAG Investigation Resources", url: "https://www.jag.navy.mil/legal_services/command_services.htm" },
+  ],
+};
+
+const STANDARDS_OF_PROOF_CA_DATA = {
+  references: [
+    { title: "JAGMAN Section 0208", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "Military Rules of Evidence", url: "https://jsc.defense.gov/Military-Law/Current-Publications-and-Updates/" },
+    { title: "MCM (Manual for Courts-Martial)", url: "https://jsc.defense.gov/Military-Law/Current-Publications-and-Updates/" },
+  ],
+};
+
+const WITNESS_PROCEDURES_CA_DATA = {
+  references: [
+    { title: "JAGMAN Section 0207", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "UCMJ Article 31 (Rights Warning)", url: "https://www.law.cornell.edu/uscode/text/10/831", isQuickLink: true },
+    { title: "10 U.S.C. 1219 Warning", url: "https://www.law.cornell.edu/uscode/text/10/1219" },
+  ],
+};
+
+const INVESTIGATION_REPORT_FORMAT_CA_DATA = {
+  references: [
+    { title: "JAGMAN Section 0208", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "JAGMAN Appendix A-2 (Sample Formats)", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf" },
+    { title: "Navy Writer's Guide", url: "https://www.netc.navy.mil" },
+  ],
+};
+
+const LINE_OF_DUTY_CA_DATA = {
+  references: [
+    { title: "JAGMAN Section 0209", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "SECNAVINST 1770.4 (Line of Duty)", url: "https://www.secnav.navy.mil/doni/", isQuickLink: true },
+    { title: "DoD Instruction 1241.01 (Reserve LOD)", url: "https://www.esd.whs.mil/Directives/issuances/dodi/" },
+    { title: "MCO 5800.16 (Legal Administration)", url: "https://www.marines.mil" },
+  ],
+};
+
+const DEATH_CASE_PROCEDURES_CA_DATA = {
+  references: [
+    { title: "JAGMAN Section 0203", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "MCO 3040.4 (Casualty Assistance)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DoD Instruction 1300.18 (Casualty Notification)", url: "https://www.esd.whs.mil/Directives/issuances/dodi/" },
+    { title: "SECNAVINST 1770.4 (Line of Duty)", url: "https://www.secnav.navy.mil/doni/" },
+  ],
+};
+
+const INVESTIGATION_COORDINATION_DATA = {
+  references: [
+    { title: "JAGMAN Chapter II", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "NCIS Field Offices", url: "https://www.ncis.navy.mil/Contact-Us/", isQuickLink: true },
+    { title: "MCO 5580.2B (Law Enforcement Manual)", url: "https://www.marines.mil/Portals/1/MCO%205580.2B.pdf" },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -3403,6 +3506,18 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "turnover-documentation": <StatusCommandLetterOutgoingContent />,
     "cor-outgoing": <CertificateOfReliefOutgoingContent />,
     "outgoing-deocs": <RelinquishDEOCSContent />,
+    // Commanders - Admin Investigations
+    "preliminary-inquiry": <PreliminaryInquiryContent data={PRELIMINARY_INQUIRY_CA_DATA} />,
+    "command-investigations": <CommandInvestigationsContent data={COMMAND_INVESTIGATIONS_CA_DATA} />,
+    "litigation-report-investigations": <LitigationReportInvestigationsContent data={LITIGATION_REPORT_INVESTIGATIONS_CA_DATA} />,
+    "courts-boards-inquiry": <CourtsBoardsInquiryContent data={COURTS_BOARDS_INQUIRY_DATA} />,
+    "convening-orders": <ConveningOrdersContent data={CONVENING_ORDERS_CA_DATA} />,
+    "standards-of-proof": <StandardsOfProofContent data={STANDARDS_OF_PROOF_CA_DATA} />,
+    "witness-procedures": <WitnessProceduresContent data={WITNESS_PROCEDURES_CA_DATA} />,
+    "investigation-report-format": <InvestigationReportFormatContent data={INVESTIGATION_REPORT_FORMAT_CA_DATA} />,
+    "line-of-duty": <LineOfDutyContent data={LINE_OF_DUTY_CA_DATA} />,
+    "death-case-procedures": <DeathCaseProceduresContent data={DEATH_CASE_PROCEDURES_CA_DATA} />,
+    "investigation-coordination": <InvestigationCoordinationContent data={INVESTIGATION_COORDINATION_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
