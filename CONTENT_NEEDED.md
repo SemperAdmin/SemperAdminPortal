@@ -1,4 +1,4 @@
-# Content Needed: 26 Placeholder Items
+# Content Needed: 17 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 23 items |
+| **Commanders** | 14 items |
 | **Administrators** | 0 items |
 
 ---
@@ -261,17 +261,15 @@ Remaining items:
 ## Substance Abuse & Urinalysis
 **Section:** `commanders-substance-abuse`
 
+**STATUS: SECTION COMPLETE (6/6 items)**
+
 Completed items:
 - ~~`inspection-testing`~~ - COMPLETED
 - ~~`substance-admin-actions`~~ - COMPLETED
-
-Remaining items:
-| Slug | Title | Description |
-|------|-------|-------------|
-| `uuc-appointment` | Unit Urinalysis Coordinator | Appointing and training the UUC |
-| `testing-requirements` | Testing Requirements | Random, command-directed, and probable cause testing |
-| `positive-result-procedures` | Positive Result Procedures | Actions upon confirmed positive results |
-| `treatment-referral` | Treatment Referral | SACO and treatment program referrals |
+- ~~`uuc-appointment`~~ - COMPLETED
+- ~~`testing-requirements`~~ - COMPLETED
+- ~~`positive-result-procedures`~~ - COMPLETED
+- ~~`treatment-referral`~~ - COMPLETED
 
 ## Suicide Prevention & Force Preservation
 **Section:** `commanders-suicide-prevention`
@@ -290,21 +288,24 @@ All Suicide Prevention & Force Preservation items now have content:
 ## Training & Readiness
 **Section:** `commanders-training-readiness`
 
+**STATUS: 9/11 items complete**
+
 Completed items:
 - ~~`drrs-mc-overview`~~ - COMPLETED
 - ~~`metl-development`~~ - COMPLETED
 - ~~`c-level-assessment`~~ - COMPLETED
 - ~~`readiness-board`~~ - COMPLETED
+- ~~`t-level-reporting`~~ - COMPLETED
+- ~~`p-level-reporting`~~ - COMPLETED
+- ~~`s-level-reporting`~~ - COMPLETED
+- ~~`r-level-reporting`~~ - COMPLETED
+- ~~`metl-annual-review`~~ - COMPLETED
 
 Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
+| `commanders-override` | Commander's Override | Adjusting calculated readiness levels with justification |
 | `metl-assessment` | METL Assessment | Assessing task proficiency levels |
-| `metl-annual-review` | Annual METL Review | 30-day and annual review requirements |
-| `t-level-reporting` | T-Level (Training) | Training readiness assessment and reporting |
-| `p-level-reporting` | P-Level (Personnel) | Personnel readiness measurement and reporting |
-| `s-level-reporting` | S-Level (Supply/Equipment) | Equipment on-hand status reporting |
-| `r-level-reporting` | R-Level (Equipment Readiness) | Equipment operational status reporting |
 
 ## Environmental Compliance
 **Section:** `commanders-environmental`
@@ -319,7 +320,6 @@ All Environmental Compliance items now have content:
 - ~~`benchmark-ece`~~ - COMPLETED
 - ~~`internal-ece`~~ - COMPLETED
 - ~~`ore-oversight`~~ - COMPLETED
-- ~~`commanders-override`~~ - COMPLETED
 
 ---
 
@@ -372,4 +372,8 @@ COMMON ISSUES:
 
 3. **No Admin items needed** - Administrator section is fully built out.
 
-4. **Command Authority section** - 11 of 12 items now complete! Only `njp-punishment-limits` remaining.
+4. **Remaining sections with items:**
+   - Security Programs: 8 items
+   - SAPR: 6 items
+   - Training & Readiness: 2 items
+   - Records & Corrections (Marines): 3 items

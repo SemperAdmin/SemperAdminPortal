@@ -2,7 +2,7 @@
 
 import { TabbedContentLayout } from "../ui/TabbedContentLayout";
 import { InfoCard } from "../ui/InfoCard";
-import { ListChecks, AlertTriangle, Clock, Calendar } from "lucide-react";
+import { UserCheck, AlertTriangle, Clock, Shield } from "lucide-react";
 
 interface Reference {
   title: string;
@@ -18,52 +18,48 @@ interface Props {
 
 const TABS = [
   { id: "overview", label: "Overview" },
-  { id: "components", label: "Review Components" },
+  { id: "requirements", label: "Requirements" },
   { id: "process", label: "Process" },
   { id: "issues", label: "Common Issues" },
   { id: "references", label: "References", type: "references" as const },
 ];
 
 const KEY_POINTS = [
-  { label: "Annual Requirement", value: "METL must be formally reviewed and validated at least once per fiscal year" },
-  { label: "Mission Alignment", value: "Ensures METL still reflects current assigned missions and higher headquarters guidance" },
-  { label: "Training Focus", value: "The reviewed METL drives the next fiscal year's training plan and resource allocation" },
+  { label: "Appointment", value: "Must be appointed in writing by the CO" },
+  { label: "Rank Requirement", value: "Usually a Sergeant (E-5) or above. For smaller units, a Corporal (E-4) may be used with a waiver" },
+  { label: "Integrity", value: "The UUC cannot be a Marine who has a history of substance abuse or a drug-related conviction" },
 ];
 
-const REVIEW_COMPONENTS = [
-  { component: "Mission Analysis", description: "Review current and anticipated mission assignments", required: true },
-  { component: "Higher HQ Guidance", description: "Incorporate MEF/Division training guidance and priorities", required: true },
-  { component: "Task Validation", description: "Confirm METs are still relevant and properly scoped", required: true },
-  { component: "T&R Manual Updates", description: "Check for T&R Manual updates affecting METs", required: true },
-  { component: "Resource Assessment", description: "Identify training resources needed for MET proficiency", required: false },
+const UUC_REQUIREMENTS = [
+  { requirement: "Rank", description: "E-5 or above (E-4 with waiver for small units)", mandatory: true },
+  { requirement: "Clean Record", description: "No history of substance abuse or drug convictions", mandatory: true },
+  { requirement: "Training", description: "Completed installation UUC certification course", mandatory: true },
+  { requirement: "Attention to Detail", description: "Meticulous record-keeping ability", mandatory: true },
+  { requirement: "Alternate UUC", description: "Unit must have at least one alternate", mandatory: true },
 ];
 
 const PROCESS_STEPS = [
-  "Mission Analysis: Review current and anticipated mission assignments from higher headquarters",
-  "Higher HQ Guidance: Incorporate MEF/Division training guidance and commander priorities",
-  "METL Validation: Confirm each MET is still relevant, properly scoped, and aligned with T&R standards",
-  "Gap Analysis: Identify any new METs required or existing METs that should be removed",
-  "Resource Planning: Determine training resources needed to achieve MET proficiency",
-  "Commander Approval: CO signs the updated METL for the upcoming fiscal year",
+  "Selection: CO identifies a Marine with high attention to detail and zero disciplinary issues",
+  "Training: The Marine must complete the local installation's UUC certification course and obtain a certificate",
+  "Appointment: CO signs the formal Appointment Letter and ensures it is kept on file for Inspector General (IG) reviews",
+  "Oversight: The CO or SACO (Substance Abuse Control Officer) must regularly audit the UUC's ledger and supply levels",
 ];
 
 const TIMELINE_REQUIREMENTS = [
-  { requirement: "Annually", action: "Formal METL review and validation (typically aligned with training year)" },
-  { requirement: "As Needed", action: "Interim review when mission or unit type changes" },
+  { requirement: "Continuous", action: "A unit must have at least one primary and one alternate UUC at all times" },
 ];
 
 const COMMON_ISSUES = [
-  { issue: "Stale METL", solution: "METL not updated to reflect mission changes. Conduct annual review even if missions haven't changed to validate alignment." },
-  { issue: "Ignoring Higher HQ Guidance", solution: "Not incorporating MEF/Division training priorities. Check for updated training guidance before the annual review." },
-  { issue: "No Resource Linkage", solution: "METL not connected to training resource requests. Use the reviewed METL to justify range time, ammunition, and training allocations." },
+  { issue: "Lapsed Training", solution: "UUC certification expires and is not renewed. Track expiration dates and schedule recertification before lapse." },
+  { issue: "No Alternate", solution: "Unit has only one UUC who then goes on leave or PCS. Always maintain a trained alternate." },
 ];
 
-export function METLAnnualReviewContent({ data }: Props) {
+export function UUCAppointmentContent({ data }: Props) {
   const content: Record<string, React.ReactNode> = {
     overview: (
       <div className="space-y-6">
-        <InfoCard icon={ListChecks} title="METL Annual Review" variant="info">
-          The Mission Essential Task List (METL) must be formally reviewed and validated annually to ensure it accurately reflects the unit&apos;s assigned missions and aligns with higher headquarters training guidance. The reviewed METL drives the unit&apos;s training plan and resource requests for the upcoming fiscal year.
+        <InfoCard icon={UserCheck} title="Unit Urinalysis Coordinator (UUC)" variant="info">
+          The UUC is the commander&apos;s primary agent for ensuring the integrity of the Biochemical Test Program. Because drug testing involves the collection of forensic evidence, the UUC must be a Marine of impeccable integrity who is meticulously trained to avoid procedural errors that could invalidate positive results.
         </InfoCard>
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Key Points</h2>
@@ -99,18 +95,18 @@ export function METLAnnualReviewContent({ data }: Props) {
         </section>
       </div>
     ),
-    components: (
+    requirements: (
       <div className="space-y-6">
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Review Components</h2>
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">UUC Requirements</h2>
           <div className="mt-4 space-y-3">
-            {REVIEW_COMPONENTS.map((item) => (
-              <div key={item.component} className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-700">
+            {UUC_REQUIREMENTS.map((item) => (
+              <div key={item.requirement} className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-700">
                 <div className="flex items-center justify-between">
-                  <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">{item.component}</h3>
-                  {item.required && (
+                  <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">{item.requirement}</h3>
+                  {item.mandatory && (
                     <span className="rounded-full bg-red-100 px-2 py-1 text-xs font-medium text-red-800 dark:bg-red-900/30 dark:text-red-300">
-                      Required
+                      Mandatory
                     </span>
                   )}
                 </div>
@@ -119,15 +115,15 @@ export function METLAnnualReviewContent({ data }: Props) {
             ))}
           </div>
         </section>
-        <InfoCard icon={Calendar} title="Align with Training Year" variant="default">
-          Schedule the METL annual review to align with the fiscal year training planning cycle so the reviewed METL can inform resource requests.
+        <InfoCard icon={Shield} title="Forensic Evidence" variant="warning">
+          Drug testing involves forensic evidence. Any procedural error by the UUC can <strong>invalidate</strong> a positive result and prevent disciplinary action.
         </InfoCard>
       </div>
     ),
     process: (
       <div className="space-y-6">
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">METL Annual Review Process</h2>
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">UUC Appointment Process</h2>
           <div className="mt-6 space-y-4">
             {PROCESS_STEPS.map((step, index) => (
               <div key={step} className="flex items-start gap-4">
@@ -138,13 +134,12 @@ export function METLAnnualReviewContent({ data }: Props) {
           </div>
         </section>
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Documentation Required</h3>
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">CO/SACO Oversight Duties</h3>
           <ul className="mt-3 space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
-            <li>&bull; Updated METL with commander&apos;s signature</li>
-            <li>&bull; Mission analysis documentation</li>
-            <li>&bull; Higher HQ training guidance references</li>
-            <li>&bull; Gap analysis and mitigation plan</li>
-            <li>&bull; Training resource requirements list</li>
+            <li>&bull; Regularly audit the UUC ledger for accuracy</li>
+            <li>&bull; Verify adequate supply levels (bottles, seals, forms)</li>
+            <li>&bull; Ensure proper chain of custody procedures</li>
+            <li>&bull; Maintain appointment letters for IG review</li>
           </ul>
         </section>
       </div>
@@ -162,8 +157,8 @@ export function METLAnnualReviewContent({ data }: Props) {
             ))}
           </div>
         </section>
-        <InfoCard icon={AlertTriangle} title="METL Drives Resources" variant="warning">
-          A well-defined and current METL is essential for <strong>justifying training resources</strong>. Range time, ammunition, and funding requests should directly tie to MET proficiency requirements.
+        <InfoCard icon={AlertTriangle} title="Always Have an Alternate" variant="warning">
+          Never let your unit have only one trained UUC. If they PCS or go on leave, testing stops and you risk missing monthly requirements.
         </InfoCard>
       </div>
     ),
