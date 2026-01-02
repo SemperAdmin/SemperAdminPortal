@@ -12,7 +12,7 @@ export default function DislocationAllowanceContent({ data }: { data: { rates: D
       <div className="lg:col-span-2 space-y-6">
         <div className="flex items-center gap-2 overflow-x-auto [&>button]:whitespace-nowrap [&>button]:shrink-0">
           <button onClick={() => setTab("overview")} className={`rounded-md px-3 py-2 text-sm ${tab === "overview" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Overview</button>
-          <button onClick={() => setTab("rates")} className={`rounded-md px-3 py-2 text-sm ${tab === "rates" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>2025 Rates</button>
+          <button onClick={() => setTab("rates")} className={`rounded-md px-3 py-2 text-sm ${tab === "rates" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>2026 Rates</button>
           <button onClick={() => setTab("eligibility")} className={`rounded-md px-3 py-2 text-sm ${tab === "eligibility" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Eligibility</button>
           <button onClick={() => setTab("dualmil")} className={`rounded-md px-3 py-2 text-sm ${tab === "dualmil" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Dual Military</button>
           <button onClick={() => setTab("notauthorized")} className={`rounded-md px-3 py-2 text-sm ${tab === "notauthorized" ? "bg-[var(--sa-red)] text-[var(--sa-cream)]" : "bg-[var(--sa-cream)]/60 text-[var(--sa-navy)] dark:bg-white/10 dark:text-[var(--sa-cream)]"}`}>Not Authorized</button>
@@ -75,7 +75,7 @@ export default function DislocationAllowanceContent({ data }: { data: { rates: D
 
         {tab === "rates" && (
           <section className="w-full rounded-xl border border-black/5 bg-white p-4 sm:p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">2025 DLA Rates (Effective 1 January 2025)</h2>
+            <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">2026 DLA Rates (Effective 1 January 2026)</h2>
             <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">Your rate is based on your grade and dependency status on the PCS order&apos;s effective date.</p>
             <div className="mt-4 overflow-x-auto">
               <table className="w-full text-sm">
@@ -99,8 +99,8 @@ export default function DislocationAllowanceContent({ data }: { data: { rates: D
             </div>
             <div className="mt-4 grid gap-4 md:grid-cols-2">
               <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 dark:border-white/15 dark:bg-white/10">
-                <h3 className="font-bold text-amber-800 dark:text-[var(--sa-cream)]">Partial DLA (2025)</h3>
-                <div className="mt-2 text-2xl font-bold text-amber-700 dark:text-[var(--sa-cream)]">$966.00</div>
+                <h3 className="font-bold text-amber-800 dark:text-[var(--sa-cream)]">Partial DLA (2026)</h3>
+                <div className="mt-2 text-2xl font-bold text-amber-700 dark:text-[var(--sa-cream)]">$1,003.00</div>
                 <p className="mt-1 text-xs text-amber-700 dark:text-zinc-300">For local moves due to government convenience (privatization, renovation, etc.)</p>
               </div>
               <div className="rounded-xl border border-blue-200 bg-blue-50 p-4 dark:border-white/15 dark:bg-white/10">
@@ -368,8 +368,8 @@ export default function DislocationAllowanceContent({ data }: { data: { rates: D
               <div className="text-xs text-red-600 dark:text-zinc-300">SecNav finding required for 2nd DLA</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Partial DLA (2025)</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">$966 for local moves</div>
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Partial DLA (2026)</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">$1,003 for local moves</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
               <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Tax Status</div>
