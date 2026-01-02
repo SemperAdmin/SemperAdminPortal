@@ -83,6 +83,7 @@ import { JEPESContent } from "../../../../../components/JEPESContent";
 import { CuttingScoreVerificationContent } from "../../../../../components/CuttingScoreVerificationContent";
 import { PromotionWarrantsContent } from "../../../../../components/PromotionWarrantsContent";
 import { MeritoriousPromotionsContent } from "../../../../../components/MeritoriousPromotionsContent";
+import { EPMERequirementsContent } from "../../../../../components/EPMERequirementsContent";
 import { TIGCorrectionsContent } from "../../../../../components/TIGCorrectionsContent";
 import { MOSChangesContent } from "../../../../../components/MOSChangesContent";
 import { FitnessReportsContent } from "../../../../../components/FitnessReportsContent";
@@ -1628,6 +1629,18 @@ const MERITORIOUS_PROMOTIONS_DATA = {
     { title: "Unit S-1/Admin", url: "#", isQuickLink: true },
     { title: "MARADMIN (Meritorious Promotion Allocations)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: false },
     { title: "MCTFS", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
+  ],
+};
+
+const EPME_REQUIREMENTS_DATA = {
+  references: [
+    { title: "MARADMIN 630/24 - EPME Requirements (AD/AR)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "MARADMIN 631/24 - EPME Requirements (Reserve)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "USMCU CEME", url: "https://www.usmcu.edu/CEME/", isQuickLink: true },
+    { title: "MARADMIN 627/24 - SNCO Leadership School", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "MCO 1553.4B - Professional Military Education", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+    { title: "JKO Direct (EJPME)", url: "https://JKOdirect.jten.mil/" },
+    { title: "MarineNet", url: "https://www.marinenet.usmc.mil/" },
   ],
 };
 
@@ -3364,6 +3377,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "cutting-score-verification": <CuttingScoreVerificationContent data={CUTTING_SCORE_DATA} />,
     "promotion-warrants": <PromotionWarrantsContent data={PROMOTION_WARRANTS_DATA} />,
     "meritorious-promotions": <MeritoriousPromotionsContent data={MERITORIOUS_PROMOTIONS_DATA} />,
+    "epme-requirements": <EPMERequirementsContent data={EPME_REQUIREMENTS_DATA} />,
     "tig-corrections": <TIGCorrectionsContent data={TIG_CORRECTIONS_DATA} />,
     "mos-changes-lateral-moves": <MOSChangesContent data={MOS_CHANGES_DATA} />,
     "fitness-reports": <FitnessReportsContent data={FITNESS_REPORTS_DATA} />,

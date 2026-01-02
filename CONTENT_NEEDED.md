@@ -1,4 +1,4 @@
-# Content Needed: 151 Placeholder Items
+# Content Needed: 150 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -8,7 +8,7 @@ Items that currently show "Content coming soon" when users access them.
 
 | Role | Items Needing Content |
 |------|----------------------|
-| **Marines** (General) | 4 items |
+| **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
 | **Commanders** | 146 items |
 | **Administrators** | 0 items |
@@ -33,9 +33,7 @@ All 6 life events now have content:
 ## Promotions & Career Progression
 **Section:** `promotions-career-progression`
 
-| Slug | Title | Description |
-|------|-------|-------------|
-| `epme-requirements` | EPME Requirements | Know your required and recommended Professional Military Education by grade |
+- ~~`epme-requirements`~~ - COMPLETED
 
 ## Records & Corrections
 **Section:** `records-corrections`
