@@ -304,6 +304,9 @@ import { AdminSepAuthorityContent } from "../../../../../components/commanders/A
 import { CharacterizationOfServiceContent } from "../../../../../components/commanders/CharacterizationOfServiceContent";
 import { ReligiousAccommodationContent } from "../../../../../components/commanders/ReligiousAccommodationContent";
 import { RequestMastContent } from "../../../../../components/commanders/RequestMastContent";
+import { NJPProceduresContent } from "../../../../../components/commanders/NJPProceduresContent";
+import { SeparationBasesContent } from "../../../../../components/commanders/SeparationBasesContent";
+import { ADSEPDueProcessContent } from "../../../../../components/commanders/ADSEPDueProcessContent";
 // Commanders - Suicide Prevention & Force Preservation
 import { SPPOAppointmentContent } from "../../../../../components/commanders/SPPOAppointmentContent";
 import { ForcePreservationCouncilContent } from "../../../../../components/commanders/ForcePreservationCouncilContent";
@@ -329,6 +332,11 @@ import { DEOCSRequirementsContent } from "../../../../../components/commanders/D
 import { PACProgramOverviewContent } from "../../../../../components/commanders/PACProgramOverviewContent";
 import { PACPolicyClimateContent } from "../../../../../components/commanders/PACPolicyClimateContent";
 import { UPFRPSOPClimateContent } from "../../../../../components/commanders/UPFRPSOPClimateContent";
+// Commanders - Inspector General & Inspections
+import { CIPOverviewContent } from "../../../../../components/commanders/CIPOverviewContent";
+import { CGIPPreparationContent } from "../../../../../components/commanders/CGIPPreparationContent";
+import { IGMCFunctionalAreasContent } from "../../../../../components/commanders/IGMCFunctionalAreasContent";
+import { POAMManagementContent } from "../../../../../components/commanders/POAMManagementContent";
 // Commanders - Transition of Command
 import {
   CornerstoneAttendanceContent,
@@ -3282,6 +3290,30 @@ const REQUEST_MAST_CA_DATA = {
   ],
 };
 
+const NJP_PROCEDURES_DATA = {
+  references: [
+    { title: "MCO 5800.16A Vol 14 (Legal Admin Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5800.16", isQuickLink: true },
+    { title: "UCMJ Article 15", url: "https://www.law.cornell.edu/uscode/text/10/815", isQuickLink: true },
+    { title: "Manual for Courts-Martial Part V", url: "https://jsc.defense.gov/Military-Law/Current-Publications-and-Updates/" },
+  ],
+};
+
+const SEPARATION_BASES_DATA = {
+  references: [
+    { title: "MCO P1900.16F (Separation Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
+    { title: "SECNAVINST 1920.6D (ADSEP)", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1920.6D.pdf", isQuickLink: true },
+    { title: "MCO 5800.16A Vol 9 (Admin Separations)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5800.16" },
+  ],
+};
+
+const ADSEP_DUE_PROCESS_DATA = {
+  references: [
+    { title: "MCO P1900.16F (Separation Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
+    { title: "SECNAVINST 1920.6D (ADSEP)", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1920.6D.pdf", isQuickLink: true },
+    { title: "10 U.S.C. 1169 (Enlisted Separation)", url: "https://www.law.cornell.edu/uscode/text/10/1169" },
+  ],
+};
+
 // Commanders - Suicide Prevention & Force Preservation Data
 const SPPO_APPOINTMENT_DATA = {
   references: [
@@ -3471,6 +3503,39 @@ const UPFRP_SOP_REQUIREMENT_DATA = {
     { title: "MCO 5211.2 (Privacy Act)", url: "https://www.marines.mil", isQuickLink: true },
     { title: "UPFRP SOP Template", url: "https://www.marines.mil" },
     { title: "Mass Communication Tool (MCT)", url: "https://www.marines.mil" },
+  ],
+};
+
+// Commanders - Inspector General & Inspections Data
+const CIP_OVERVIEW_DATA = {
+  references: [
+    { title: "MCO 5040.6H (Inspections Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.6", isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/", isQuickLink: true },
+    { title: "NAVMC 5040.1 (IG Checklist User Guide)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.1" },
+  ],
+};
+
+const CGIP_PREPARATION_DATA = {
+  references: [
+    { title: "MCO 5040.6H (Inspections Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.6", isQuickLink: true },
+    { title: "IGMC Website", url: "https://www.hqmc.marines.mil/igmc/", isQuickLink: true },
+    { title: "Local MSC CGIP SOPs", url: "https://www.marines.mil" },
+  ],
+};
+
+const IGMC_FUNCTIONAL_AREAS_DATA = {
+  references: [
+    { title: "NAVMC 5040.1 (IG Checklist User Guide)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.1", isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/", isQuickLink: true },
+    { title: "MCO 5040.6H (Inspections Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.6" },
+  ],
+};
+
+const POAM_MANAGEMENT_DATA = {
+  references: [
+    { title: "MCO 5040.6H (Inspections Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.6", isQuickLink: true },
+    { title: "NAVMC 11333 (POA&M Template)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "MCO 5210.11F (Records Management)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5210.11" },
   ],
 };
 
@@ -3986,6 +4051,10 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "service-characterization": <CharacterizationOfServiceContent data={CHARACTERIZATION_OF_SERVICE_CA_DATA} />,
     "religious-accommodation": <ReligiousAccommodationContent data={RELIGIOUS_ACCOMMODATION_CA_DATA} />,
     "request-mast": <RequestMastContent data={REQUEST_MAST_CA_DATA} />,
+    "njp-procedures": <NJPProceduresContent data={NJP_PROCEDURES_DATA} />,
+    "njp-punishment-limits": <PunishmentLimitsContent data={PUNISHMENT_LIMITS_CA_DATA} />,
+    "separation-bases": <SeparationBasesContent data={SEPARATION_BASES_DATA} />,
+    "adsep-due-process": <ADSEPDueProcessContent data={ADSEP_DUE_PROCESS_DATA} />,
     // Commanders - Suicide Prevention & Force Preservation
     "sppo-appointment": <SPPOAppointmentContent data={SPPO_APPOINTMENT_DATA} />,
     "force-preservation-council": <ForcePreservationCouncilContent data={FORCE_PRESERVATION_COUNCIL_DATA} />,
@@ -4011,6 +4080,11 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "pac-program-overview": <PACProgramOverviewContent data={PAC_PROGRAM_OVERVIEW_DATA} />,
     "pac-policy-statement": <PACPolicyClimateContent data={PAC_POLICY_STATEMENT_DATA} />,
     "upfrp-sop-requirement": <UPFRPSOPClimateContent data={UPFRP_SOP_REQUIREMENT_DATA} />,
+    // Commanders - Inspector General & Inspections
+    "cip-overview": <CIPOverviewContent data={CIP_OVERVIEW_DATA} />,
+    "cgip-preparation": <CGIPPreparationContent data={CGIP_PREPARATION_DATA} />,
+    "igmc-functional-areas": <IGMCFunctionalAreasContent data={IGMC_FUNCTIONAL_AREAS_DATA} />,
+    "poam-management": <POAMManagementContent data={POAM_MANAGEMENT_DATA} />,
     // Life Events
     "buying-a-home": <BuyingAHomeContent data={BUYING_A_HOME_DATA} />,
     "deploying": <DeployingContent data={DEPLOYING_DATA} />,
@@ -4465,7 +4539,6 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   const commandersAuthoritySection = "commanders-authority-legal";
   const commandersAuthoritySlugs = [
     "njp-authority",
-    "njp-punishment-limits",
     "njp-process",
     "njp-appeals",
     "summary-court-martial",
@@ -4575,12 +4648,8 @@ export function generateStaticParams(): { role: Role; section: string; item: str
 
   const commandersLegalSection = "commanders-legal-discipline";
   const commandersLegalSlugs = [
-    "njp-procedures",
-    "punishment-limits",
     "appeal-rights",
     "adsep-commander-authority",
-    "separation-bases",
-    "adsep-due-process",
   ];
 
   const commandersAdminInvestigationsSection = "commanders-admin-investigations";
@@ -4658,13 +4727,9 @@ export function generateStaticParams(): { role: Role; section: string; item: str
 
   const commandersIGSection = "commanders-inspector-general";
   const commandersIGSlugs = [
-    "cip-overview",
-    "igmc-functional-areas",
     "internal-inspections",
     "fsmao-analysis",
-    "cgip-preparation",
     "smat-inspections",
-    "poam-management",
     "pre-inspection-prep",
     "corrective-action-tracking",
   ];
