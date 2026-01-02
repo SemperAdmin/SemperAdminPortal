@@ -389,6 +389,8 @@ import { SocialMediaPolicyContent } from "../../../../../components/commanders/S
 import { CrisisCommunicationContent } from "../../../../../components/commanders/CrisisCommunicationContent";
 import { OPSECPublicStatementsContent } from "../../../../../components/commanders/OPSECPublicStatementsContent";
 import { ClimateMessagingContent } from "../../../../../components/commanders/ClimateMessagingContent";
+import { AppealRightsContent } from "../../../../../components/commanders/AppealRightsContent";
+import { ADSEPAuthorityContent } from "../../../../../components/commanders/ADSEPAuthorityContent";
 // Commanders - Transition of Command
 import {
   CornerstoneAttendanceContent,
@@ -3366,6 +3368,22 @@ const ADSEP_DUE_PROCESS_DATA = {
   ],
 };
 
+const APPEAL_RIGHTS_DATA = {
+  references: [
+    { title: "MCO 1900.16F (Marine Corps Separation Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
+    { title: "MCM Part V (NJP Procedures)", url: "https://jsc.defense.gov/Military-Law/Current-Publications-702/", isQuickLink: true },
+    { title: "10 U.S.C. 815 (Article 15, UCMJ)", url: "https://www.law.cornell.edu/uscode/text/10/815" },
+  ],
+};
+
+const ADSEP_AUTHORITY_DATA = {
+  references: [
+    { title: "MCO P1900.16F (Separation Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
+    { title: "SECNAVINST 1920.6D (ADSEP)", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1920.6D.pdf", isQuickLink: true },
+    { title: "MCO 5800.16A Vol 9 (Admin Separations)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5800.16" },
+  ],
+};
+
 // Commanders - Suicide Prevention & Force Preservation Data
 const SPPO_APPOINTMENT_DATA = {
   references: [
@@ -4463,6 +4481,8 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "njp-punishment-limits": <PunishmentLimitsContent data={PUNISHMENT_LIMITS_CA_DATA} />,
     "separation-bases": <SeparationBasesContent data={SEPARATION_BASES_DATA} />,
     "adsep-due-process": <ADSEPDueProcessContent data={ADSEP_DUE_PROCESS_DATA} />,
+    "appeal-rights": <AppealRightsContent data={APPEAL_RIGHTS_DATA} />,
+    "adsep-commander-authority": <ADSEPAuthorityContent data={ADSEP_AUTHORITY_DATA} />,
     // Commanders - Suicide Prevention & Force Preservation
     "sppo-appointment": <SPPOAppointmentContent data={SPPO_APPOINTMENT_DATA} />,
     "force-preservation-council": <ForcePreservationCouncilContent data={FORCE_PRESERVATION_COUNCIL_DATA} />,
@@ -5103,10 +5123,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   ];
 
   const commandersLegalSection = "commanders-legal-discipline";
-  const commandersLegalSlugs = [
-    "appeal-rights",
-    "adsep-commander-authority",
-  ];
+  const commandersLegalSlugs: string[] = [];
 
   const commandersAdminInvestigationsSection = "commanders-admin-investigations";
   const commandersAdminInvestigationsSlugs = [

@@ -1,4 +1,4 @@
-# Content Needed: 58 Placeholder Items
+# Content Needed: 56 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 55 items |
+| **Commanders** | 53 items |
 | **Administrators** | 0 items |
 
 ---
@@ -165,16 +165,14 @@ Remaining items:
 ## Legal & Discipline
 **Section:** `commanders-legal-discipline`
 
+**STATUS: SECTION COMPLETE (5/5 items)**
+
 Completed items:
 - ~~`njp-procedures`~~ - COMPLETED
 - ~~`separation-bases`~~ - COMPLETED
 - ~~`adsep-due-process`~~ - COMPLETED
-
-Remaining items:
-| Slug | Title | Description |
-|------|-------|-------------|
-| `appeal-rights` | Appeal Rights | Marine's right to appeal NJP decisions |
-| `adsep-commander-authority` | ADSEP Authority | Separation authority and board requirements |
+- ~~`appeal-rights`~~ - COMPLETED
+- ~~`adsep-commander-authority`~~ - COMPLETED
 
 ## Maintenance & Logistics
 **Section:** `commanders-maintenance-logistics`
