@@ -185,6 +185,13 @@ import { LegalAssistanceContent } from "../../../../../components/LegalAssistanc
 import { VWAPContent } from "../../../../../components/VWAPContent";
 import { MilitaryProtectiveOrdersContent } from "../../../../../components/MilitaryProtectiveOrdersContent";
 import { IGComplaintsContent } from "../../../../../components/IGComplaintsContent";
+// Life Events
+import { BuyingAHomeContent } from "../../../../../components/BuyingAHomeContent";
+import { DeployingContent } from "../../../../../components/DeployingContent";
+import { GettingMarriedContent } from "../../../../../components/GettingMarriedContent";
+import { GettingOutEASContent } from "../../../../../components/GettingOutEASContent";
+import { HavingABabyContent } from "../../../../../components/HavingABabyContent";
+import { PCSMoveContent } from "../../../../../components/PCSMoveContent";
 // Leaders - Accountability & Discipline
 import { NJPAuthorityLevelsContent } from "../../../../../components/leaders/NJPAuthorityLevelsContent";
 import { NJPRecommendationContent } from "../../../../../components/leaders/NJPRecommendationContent";
@@ -195,6 +202,7 @@ import { Article31bRightsContent } from "../../../../../components/leaders/Artic
 import { ProgressiveDisciplineContent } from "../../../../../components/leaders/ProgressiveDisciplineContent";
 import { Page11vs6105DecisionGuideContent } from "../../../../../components/leaders/Page11vs6105DecisionGuideContent";
 import { CounselingRefusalProceduresContent } from "../../../../../components/leaders/CounselingRefusalProceduresContent";
+import { HazingHarassmentReportingContent } from "../../../../../components/leaders/HazingHarassmentReportingContent";
 // Leaders - Awards & Recognition
 import { WritingAwardRecommendationsContent } from "../../../../../components/leaders/WritingAwardRecommendationsContent";
 import { CitationFormatRequirementsContent } from "../../../../../components/leaders/CitationFormatRequirementsContent";
@@ -2495,6 +2503,16 @@ const COUNSELING_REFUSAL_PROCEDURES_DATA = {
   ],
 };
 
+const HAZING_HARASSMENT_REPORTING_DATA = {
+  references: [
+    { title: "MCO 5354.1G w/Admin CH-1 - PAC Prevention and Response", url: "https://www.marines.mil/Portals/1/Publications/MCO%205354.1G.pdf", isQuickLink: true },
+    { title: "PAC Toolkit", url: "https://www.manpower.marines.mil/Plans-and-Policies/Manpower-Plans-and-Policy/PAC-Toolkit/", isQuickLink: true },
+    { title: "NAVMC 11512 - PAC Complaint Form", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%2011512.pdf" },
+    { title: "DoDI 1020.03 w/CH-2 - Harassment Prevention", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/102003p.pdf" },
+    { title: "NCIS Tip Line", url: "https://www.ncis.navy.mil/Resources/NCIS-Tips/" },
+  ],
+};
+
 // Leaders - Awards & Recognition
 const WRITING_AWARD_RECOMMENDATIONS_DATA = {
   references: [
@@ -3086,6 +3104,61 @@ const INVESTIGATION_COORDINATION_DATA = {
   ],
 };
 
+// Life Events Data
+const BUYING_A_HOME_DATA = {
+  references: [
+    { title: "VA Home Loan Program", url: "https://www.va.gov/housing-assistance/home-loans/", isQuickLink: true },
+    { title: "eBenefits COE Request", url: "https://www.ebenefits.va.gov/", isQuickLink: true },
+    { title: "VA Form 26-1880", url: "https://www.va.gov/find-forms/about-form-26-1880/" },
+    { title: "VA Funding Fee Table", url: "https://www.va.gov/housing-assistance/home-loans/funding-fee-and-closing-costs/" },
+  ],
+};
+
+const DEPLOYING_DATA = {
+  references: [
+    { title: "SCRA Information", url: "https://www.militaryonesource.mil/legal/scra/", isQuickLink: true },
+    { title: "Legal Assistance Locator", url: "https://legalassistance.law.af.mil/", isQuickLink: true },
+    { title: "Family Care Plan (MCO 1740.13D)", url: "https://www.marines.mil/Portals/1/Publications/MCO%201740.13D.pdf" },
+    { title: "SGLI Overview", url: "https://www.va.gov/life-insurance/options-eligibility/sgli/" },
+  ],
+};
+
+const GETTING_MARRIED_DATA = {
+  references: [
+    { title: "DEERS Enrollment", url: "https://www.tricare.mil/Plans/Eligibility/DEERS", isQuickLink: true },
+    { title: "ID Card Office Locator", url: "https://idco.dmdc.osd.mil/idco/", isQuickLink: true },
+    { title: "TRICARE Plan Options", url: "https://www.tricare.mil/Plans" },
+    { title: "DD Form 93", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd0093.pdf" },
+  ],
+};
+
+const GETTING_OUT_EAS_DATA = {
+  references: [
+    { title: "Transition Assistance Program", url: "https://www.dol.gov/agencies/vets/programs/tap", isQuickLink: true },
+    { title: "VA Benefits", url: "https://www.va.gov/", isQuickLink: true },
+    { title: "eBenefits", url: "https://www.ebenefits.va.gov/" },
+    { title: "MCO 1900.16 (Separation Manual)", url: "https://www.marines.mil/Portals/1/Publications/MCO%201900.16.pdf" },
+  ],
+};
+
+const HAVING_A_BABY_DATA = {
+  references: [
+    { title: "DEERS Enrollment", url: "https://www.tricare.mil/Plans/Eligibility/DEERS", isQuickLink: true },
+    { title: "ID Card Office Locator", url: "https://idco.dmdc.osd.mil/idco/", isQuickLink: true },
+    { title: "TRICARE Newborn Coverage", url: "https://www.tricare.mil/LifeEvents/Baby" },
+    { title: "Paternity Leave Policy", url: "https://www.mynavyhr.navy.mil/References/Pay-Benefits/N130C/" },
+  ],
+};
+
+const PCS_MOVE_DATA = {
+  references: [
+    { title: "Move.mil", url: "https://www.move.mil/", isQuickLink: true },
+    { title: "DPS (Defense Personal Property System)", url: "https://www.move.mil/dps", isQuickLink: true },
+    { title: "DTMO Travel Allowances", url: "https://www.travel.dod.mil/" },
+    { title: "JTR (Joint Travel Regulations)", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/" },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -3412,6 +3485,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "progressive-discipline": <ProgressiveDisciplineContent data={PROGRESSIVE_DISCIPLINE_DATA} />,
     "page11-vs-6105-decision-guide": <Page11vs6105DecisionGuideContent data={PAGE11_VS_6105_DECISION_GUIDE_DATA} />,
     "counseling-refusal-procedures": <CounselingRefusalProceduresContent data={COUNSELING_REFUSAL_PROCEDURES_DATA} />,
+    "hazing-harassment-reporting": <HazingHarassmentReportingContent data={HAZING_HARASSMENT_REPORTING_DATA} />,
     // Leaders - Awards & Recognition
     "writing-award-recommendations": <WritingAwardRecommendationsContent data={WRITING_AWARD_RECOMMENDATIONS_DATA} />,
     "citation-format-requirements": <CitationFormatRequirementsContent data={CITATION_FORMAT_REQUIREMENTS_DATA} />,
@@ -3528,6 +3602,13 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "line-of-duty": <LineOfDutyContent data={LINE_OF_DUTY_CA_DATA} />,
     "death-case-procedures": <DeathCaseProceduresContent data={DEATH_CASE_PROCEDURES_CA_DATA} />,
     "investigation-coordination": <InvestigationCoordinationContent data={INVESTIGATION_COORDINATION_DATA} />,
+    // Life Events
+    "buying-a-home": <BuyingAHomeContent data={BUYING_A_HOME_DATA} />,
+    "deploying": <DeployingContent data={DEPLOYING_DATA} />,
+    "getting-married": <GettingMarriedContent data={GETTING_MARRIED_DATA} />,
+    "getting-out": <GettingOutEASContent data={GETTING_OUT_EAS_DATA} />,
+    "having-a-baby": <HavingABabyContent data={HAVING_A_BABY_DATA} />,
+    "pcs-move": <PCSMoveContent data={PCS_MOVE_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
