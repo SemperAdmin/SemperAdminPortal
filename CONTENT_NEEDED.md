@@ -1,4 +1,4 @@
-# Content Needed: 99 Placeholder Items
+# Content Needed: 92 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 96 items |
+| **Commanders** | 89 items |
 | **Administrators** | 0 items |
 
 ---
@@ -80,22 +80,20 @@ All items now have content:
 ## Command Climate & Culture Programs
 **Section:** `commanders-climate-culture`
 
+**STATUS: SECTION COMPLETE (11/11 items)**
+
 Completed items:
 - ~~`deocs-requirements`~~ - COMPLETED
 - ~~`pac-program-overview`~~ - COMPLETED
 - ~~`pac-policy-statement`~~ - COMPLETED
 - ~~`upfrp-sop-requirement`~~ - COMPLETED
-
-Remaining items:
-| Slug | Title | Description |
-|------|-------|-------------|
-| `climate-surveys` | Command Climate Surveys | Aviation safety surveys (CSA, MCAS, ASPA) and safety climate surveys |
-| `command-team-training` | Command Team Training | Required training for command teams within 30 days |
-| `hazing-prevention` | Hazing Prevention | Definitions, indicators, and command response |
-| `harassment-response` | Harassment Response | Reporting, investigation, and corrective action |
-| `retaliation-prevention` | Retaliation Prevention | Protecting reporters and witnesses from retaliation |
-| `safety-policy-statement` | Safety Policy (30 Days) | Commander's safety policy statement requirement |
-| `sapr-policy-statement` | SAPR Policy (60/90 Days) | Sexual assault prevention and response policy |
+- ~~`climate-surveys`~~ - COMPLETED
+- ~~`command-team-training`~~ - COMPLETED
+- ~~`hazing-prevention`~~ - COMPLETED
+- ~~`harassment-response`~~ - COMPLETED
+- ~~`retaliation-prevention`~~ - COMPLETED
+- ~~`safety-policy-statement`~~ - COMPLETED
+- ~~`sapr-policy-statement`~~ - COMPLETED
 
 ## Equal Opportunity
 **Section:** `commanders-equal-opportunity`

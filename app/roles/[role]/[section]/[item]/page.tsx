@@ -332,6 +332,13 @@ import { DEOCSRequirementsContent } from "../../../../../components/commanders/D
 import { PACProgramOverviewContent } from "../../../../../components/commanders/PACProgramOverviewContent";
 import { PACPolicyClimateContent } from "../../../../../components/commanders/PACPolicyClimateContent";
 import { UPFRPSOPClimateContent } from "../../../../../components/commanders/UPFRPSOPClimateContent";
+import { ClimateSurveysContent } from "../../../../../components/commanders/ClimateSurveysContent";
+import { CommandTeamTrainingClimateContent } from "../../../../../components/commanders/CommandTeamTrainingClimateContent";
+import { HazingPreventionContent } from "../../../../../components/commanders/HazingPreventionContent";
+import { HarassmentResponseContent } from "../../../../../components/commanders/HarassmentResponseContent";
+import { RetaliationPreventionContent } from "../../../../../components/commanders/RetaliationPreventionContent";
+import { SafetyPolicyStatementContent } from "../../../../../components/commanders/SafetyPolicyStatementContent";
+import { SAPRPolicyStatementContent } from "../../../../../components/commanders/SAPRPolicyStatementContent";
 // Commanders - Inspector General & Inspections
 import { CIPOverviewContent } from "../../../../../components/commanders/CIPOverviewContent";
 import { CGIPPreparationContent } from "../../../../../components/commanders/CGIPPreparationContent";
@@ -3516,6 +3523,62 @@ const UPFRP_SOP_REQUIREMENT_DATA = {
   ],
 };
 
+const CLIMATE_SURVEYS_DATA = {
+  references: [
+    { title: "MCO 5100.29C (Safety Management System)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5100.29", isQuickLink: true },
+    { title: "MCO 3750.6S (Aviation Safety)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=3750.6", isQuickLink: true },
+    { title: "DEOCS Portal", url: "https://www.deocs.net" },
+  ],
+};
+
+const COMMAND_TEAM_TRAINING_CLIMATE_DATA = {
+  references: [
+    { title: "MCO 1500.63 (Command Team Training)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1500.63", isQuickLink: true },
+    { title: "MCO 1754.9A (UPFRP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1754.9", isQuickLink: true },
+    { title: "L.I.N.K.S. Program", url: "https://www.usmc-mccs.org/services/family/links/" },
+  ],
+};
+
+const HAZING_PREVENTION_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Order)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5354.1", isQuickLink: true },
+    { title: "UCMJ Article 92", url: "https://www.law.cornell.edu/uscode/text/10/892", isQuickLink: true },
+    { title: "MARADMIN on Hazing Prevention", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+  ],
+};
+
+const HARASSMENT_RESPONSE_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Order)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5354.1", isQuickLink: true },
+    { title: "NAVMC 11512 (Complaint Form)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "EEO Complaint Portal", url: "https://www.esd.whs.mil/DD/EEO/" },
+  ],
+};
+
+const RETALIATION_PREVENTION_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Order)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5354.1", isQuickLink: true },
+    { title: "UCMJ Article 132 (Retaliation)", url: "https://www.law.cornell.edu/uscode/text/10/932", isQuickLink: true },
+    { title: "10 U.S.C. 1034 (Protected Communications)", url: "https://www.law.cornell.edu/uscode/text/10/1034" },
+  ],
+};
+
+const SAFETY_POLICY_STATEMENT_DATA = {
+  references: [
+    { title: "MCO 5100.29C (Safety Management System)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5100.29", isQuickLink: true },
+    { title: "MCO 3750.6S (Aviation Safety)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=3750.6" },
+    { title: "Naval Safety Command", url: "https://navalsafetycommand.navy.mil/" },
+  ],
+};
+
+const SAPR_POLICY_STATEMENT_DATA = {
+  references: [
+    { title: "MCO 1752.5C (SAPR Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1752.5", isQuickLink: true },
+    { title: "DOD Safe Helpline", url: "https://safehelpline.org/", isQuickLink: true },
+    { title: "DoDI 6495.02 (SAPR Program)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/649502p.pdf" },
+  ],
+};
+
 // Commanders - Inspector General & Inspections Data
 const CIP_OVERVIEW_DATA = {
   references: [
@@ -4156,6 +4219,13 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "pac-program-overview": <PACProgramOverviewContent data={PAC_PROGRAM_OVERVIEW_DATA} />,
     "pac-policy-statement": <PACPolicyClimateContent data={PAC_POLICY_STATEMENT_DATA} />,
     "upfrp-sop-requirement": <UPFRPSOPClimateContent data={UPFRP_SOP_REQUIREMENT_DATA} />,
+    "climate-surveys": <ClimateSurveysContent data={CLIMATE_SURVEYS_DATA} />,
+    "command-team-training": <CommandTeamTrainingClimateContent data={COMMAND_TEAM_TRAINING_CLIMATE_DATA} />,
+    "hazing-prevention": <HazingPreventionContent data={HAZING_PREVENTION_DATA} />,
+    "harassment-response": <HarassmentResponseContent data={HARASSMENT_RESPONSE_DATA} />,
+    "retaliation-prevention": <RetaliationPreventionContent data={RETALIATION_PREVENTION_DATA} />,
+    "safety-policy-statement": <SafetyPolicyStatementContent data={SAFETY_POLICY_STATEMENT_DATA} />,
+    "sapr-policy-statement": <SAPRPolicyStatementContent data={SAPR_POLICY_STATEMENT_DATA} />,
     // Commanders - Inspector General & Inspections
     "cip-overview": <CIPOverviewContent data={CIP_OVERVIEW_DATA} />,
     "cgip-preparation": <CGIPPreparationContent data={CGIP_PREPARATION_DATA} />,
