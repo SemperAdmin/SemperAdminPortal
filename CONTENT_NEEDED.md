@@ -1,4 +1,4 @@
-# Content Needed: 152 Placeholder Items
+# Content Needed: 151 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -9,7 +9,7 @@ Items that currently show "Content coming soon" when users access them.
 | Role | Items Needing Content |
 |------|----------------------|
 | **Marines** (General) | 4 items |
-| **Leaders** | 1 item |
+| **Leaders** | 0 items |
 | **Commanders** | 146 items |
 | **Administrators** | 0 items |
 
@@ -53,9 +53,8 @@ All 6 life events now have content:
 ## Accountability & Discipline
 **Section:** `leaders-accountability-discipline`
 
-| Slug | Title | Description |
-|------|-------|-------------|
-| `hazing-harassment-reporting` | Hazing and Harassment Reporting | Recognizing, reporting, and preventing hazing and harassment |
+All Leaders accountability items now have content:
+- ~~`hazing-harassment-reporting`~~ - COMPLETED
 
 ---
 

@@ -202,6 +202,7 @@ import { Article31bRightsContent } from "../../../../../components/leaders/Artic
 import { ProgressiveDisciplineContent } from "../../../../../components/leaders/ProgressiveDisciplineContent";
 import { Page11vs6105DecisionGuideContent } from "../../../../../components/leaders/Page11vs6105DecisionGuideContent";
 import { CounselingRefusalProceduresContent } from "../../../../../components/leaders/CounselingRefusalProceduresContent";
+import { HazingHarassmentReportingContent } from "../../../../../components/leaders/HazingHarassmentReportingContent";
 // Leaders - Awards & Recognition
 import { WritingAwardRecommendationsContent } from "../../../../../components/leaders/WritingAwardRecommendationsContent";
 import { CitationFormatRequirementsContent } from "../../../../../components/leaders/CitationFormatRequirementsContent";
@@ -2502,6 +2503,16 @@ const COUNSELING_REFUSAL_PROCEDURES_DATA = {
   ],
 };
 
+const HAZING_HARASSMENT_REPORTING_DATA = {
+  references: [
+    { title: "MCO 5354.1G w/Admin CH-1 - PAC Prevention and Response", url: "https://www.marines.mil/Portals/1/Publications/MCO%205354.1G.pdf", isQuickLink: true },
+    { title: "PAC Toolkit", url: "https://www.manpower.marines.mil/Plans-and-Policies/Manpower-Plans-and-Policy/PAC-Toolkit/", isQuickLink: true },
+    { title: "NAVMC 11512 - PAC Complaint Form", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%2011512.pdf" },
+    { title: "DoDI 1020.03 w/CH-2 - Harassment Prevention", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/102003p.pdf" },
+    { title: "NCIS Tip Line", url: "https://www.ncis.navy.mil/Resources/NCIS-Tips/" },
+  ],
+};
+
 // Leaders - Awards & Recognition
 const WRITING_AWARD_RECOMMENDATIONS_DATA = {
   references: [
@@ -3474,6 +3485,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "progressive-discipline": <ProgressiveDisciplineContent data={PROGRESSIVE_DISCIPLINE_DATA} />,
     "page11-vs-6105-decision-guide": <Page11vs6105DecisionGuideContent data={PAGE11_VS_6105_DECISION_GUIDE_DATA} />,
     "counseling-refusal-procedures": <CounselingRefusalProceduresContent data={COUNSELING_REFUSAL_PROCEDURES_DATA} />,
+    "hazing-harassment-reporting": <HazingHarassmentReportingContent data={HAZING_HARASSMENT_REPORTING_DATA} />,
     // Leaders - Awards & Recognition
     "writing-award-recommendations": <WritingAwardRecommendationsContent data={WRITING_AWARD_RECOMMENDATIONS_DATA} />,
     "citation-format-requirements": <CitationFormatRequirementsContent data={CITATION_FORMAT_REQUIREMENTS_DATA} />,
