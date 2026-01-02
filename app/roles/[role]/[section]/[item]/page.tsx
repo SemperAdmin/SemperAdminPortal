@@ -349,6 +349,10 @@ import { BudgetExecutionContent } from "../../../../../components/commanders/Bud
 import { StatusOfFundsContent } from "../../../../../components/commanders/StatusOfFundsContent";
 import { ULOValidationContent } from "../../../../../components/commanders/ULOValidationContent";
 import { SupplyOfficerAppointmentContent } from "../../../../../components/commanders/SupplyOfficerAppointmentContent";
+import { AccountableOfficerContent } from "../../../../../components/commanders/AccountableOfficerContent";
+import { UACPreventionContent } from "../../../../../components/commanders/UACPreventionContent";
+import { GTCCOversightContent } from "../../../../../components/commanders/GTCCOversightContent";
+import { CertificateOfReliefFiscalContent } from "../../../../../components/commanders/CertificateOfReliefFiscalContent";
 // Commanders - Command Climate & Culture Programs
 import { DEOCSRequirementsContent } from "../../../../../components/commanders/DEOCSRequirementsContent";
 import { PACProgramOverviewContent } from "../../../../../components/commanders/PACProgramOverviewContent";
@@ -3662,6 +3666,35 @@ const SUPPLY_OFFICER_APPOINTMENT_DATA = {
   ],
 };
 
+const ACCOUNTABLE_OFFICER_DATA = {
+  references: [
+    { title: "MCO 4400.201 (MCSLSM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=4400.201", isQuickLink: true },
+    { title: "DoD FMR Volume 14 (Administrative Control of Funds)", url: "https://comptroller.defense.gov/FMR/" },
+  ],
+};
+
+const UAC_PREVENTION_DATA = {
+  references: [
+    { title: "MCO 7300.21B (Financial Management SOP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=7300.21", isQuickLink: true },
+    { title: "FAR 1.602-3 (Ratification of UACs)", url: "https://www.acquisition.gov/far/1.602-3" },
+  ],
+};
+
+const GTCC_OVERSIGHT_DATA = {
+  references: [
+    { title: "MCO 4600.40B (GTCC Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=4600.40", isQuickLink: true },
+    { title: "DoD FMR Volume 9 (Travel Policy)", url: "https://comptroller.defense.gov/FMR/" },
+    { title: "Citi GTCC Portal", url: "https://home.cards.citidirect.com/" },
+  ],
+};
+
+const CERTIFICATE_OF_RELIEF_FISCAL_DATA = {
+  references: [
+    { title: "MCO 4400.201 (MCSLSM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=4400.201", isQuickLink: true },
+    { title: "NAVMC 4400.150 (Consumer-Level Supply)", url: "https://www.marines.mil" },
+  ],
+};
+
 // Commanders - Command Climate & Culture Programs Data
 const DEOCS_REQUIREMENTS_DATA = {
   references: [
@@ -4472,6 +4505,10 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "status-of-funds": <StatusOfFundsContent data={STATUS_OF_FUNDS_DATA} />,
     "ulo-validation": <ULOValidationContent data={ULO_VALIDATION_DATA} />,
     "supply-officer-appointment": <SupplyOfficerAppointmentContent data={SUPPLY_OFFICER_APPOINTMENT_DATA} />,
+    "accountable-officer": <AccountableOfficerContent data={ACCOUNTABLE_OFFICER_DATA} />,
+    "uac-prevention": <UACPreventionContent data={UAC_PREVENTION_DATA} />,
+    "gtcc-oversight": <GTCCOversightContent data={GTCC_OVERSIGHT_DATA} />,
+    "certificate-of-relief": <CertificateOfReliefFiscalContent data={CERTIFICATE_OF_RELIEF_FISCAL_DATA} />,
     // Commanders - Command Climate & Culture Programs
     "deocs-requirements": <DEOCSRequirementsContent data={DEOCS_REQUIREMENTS_DATA} />,
     "pac-program-overview": <PACProgramOverviewContent data={PAC_PROGRAM_OVERVIEW_DATA} />,

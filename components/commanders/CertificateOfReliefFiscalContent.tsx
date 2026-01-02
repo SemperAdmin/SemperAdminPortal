@@ -2,7 +2,7 @@
 
 import { TabbedContentLayout } from "../ui/TabbedContentLayout";
 import { InfoCard } from "../ui/InfoCard";
-import { FileCheck, AlertTriangle, Clock, Users } from "lucide-react";
+import { FileCheck, AlertTriangle, Clock, ClipboardList } from "lucide-react";
 
 interface Reference {
   title: string;
@@ -25,49 +25,28 @@ const TABS = [
 ];
 
 const KEY_POINTS = [
-  { label: "Purpose", value: "Transfers property accountability from outgoing to incoming CO" },
-  { label: "Legal Shield", value: "Protects outgoing CO from liability for issues after departure" },
-  { label: "Joint Responsibility", value: "Both commanders must participate in or review inventory" },
-  { label: "Discrepancies", value: "Missing gear must be documented and FLIPL initiated before relief" },
+  { label: "Joint Inventory", value: "Both the outgoing and incoming COs must satisfy themselves that the account is accurate" },
+  { label: "Disclosure", value: "Any known discrepancies, missing items, or ongoing FLIPLs must be documented in the certificate" },
+  { label: "Relief Letter", value: "A formal letter accompanying the inventory that states the account has been reviewed and accepted" },
 ];
 
-const INVENTORY_REQUIREMENTS = [
-  "100% physical count of all property on CMR",
-  "Reconciliation of physical count against CMR",
-  "Documentation of all discrepancies",
-  "FLIPL initiation for missing items",
-  "Both COs present or review results",
-  "Supply Officer coordinates and documents",
+const INVENTORY_ELEMENTS = [
+  { element: "High-Value Items", description: "Physical count of weapons, serialized items, and controlled assets" },
+  { element: "CMR Review", description: "Comparison of the Consolidated Memorandum Receipt against physical inventory" },
+  { element: "Discrepancy Log", description: "Documentation of any items missing or mismatched" },
+  { element: "FLIPL Status", description: "Status of any ongoing property loss investigations" },
 ];
 
 const PROCESS_STEPS = [
-  "Joint Inventory: Conduct within 30 days prior to Change of Command",
-  "Reconciliation: Supply Officer compares physical counts to CMR",
-  "Discrepancy Resolution: Document all missing/damaged items",
-  "FLIPL Initiation: Start investigation for any missing items",
-  "Draft Letter: Outgoing CO drafts Certificate of Relief",
-  "Signature: Both COs sign the document",
-  "Forward: Submit to next higher commander",
-];
-
-const CERTIFICATE_OPTIONS = [
-  { status: "Correct as Is", description: "All property accounted for with no discrepancies" },
-  { status: "With Discrepancies", description: "Lists specific deficiencies and status of FLIPLs" },
+  "Joint Review: Conduct a physical inventory of high-value items and a record review of the CMR",
+  "Discrepancy Reporting: Identify any items that are missing or mismatched between the CMR and the physical count",
+  "Certification: Both commanders sign the Certificate of Relief and the CMR",
+  "Filing: A copy is forwarded to the next higher headquarters and maintained in the supply files",
 ];
 
 const COMMON_ISSUES = [
-  {
-    issue: "Rushed inventories",
-    solution: "Attempting to inventory Battalion-sized CMR in 48 hours leads to significant errors that incoming CO 'inherits.' Start inventory 30 days out and don't compress timeline.",
-  },
-  {
-    issue: "Signing without completing FLIPL",
-    solution: "Outgoing CO should not be relieved until FLIPLs are initiated for all missing items. Document status of each investigation in the relief letter.",
-  },
-  {
-    issue: "Incomplete reconciliation",
-    solution: "CMR must match physical count before signing. Any discrepancies must be documented and explained. Don't sign if reconciliation is incomplete.",
-  },
+  { issue: "Signing without Verification", solution: "The incoming CO signing the certificate based solely on the Supply Officer's word without conducting a personal spot-check. Always physically verify critical items." },
+  { issue: "Unresolved Losses", solution: "Leaving missing gear for the 'next guy' to handle instead of initiating the FLIPL process prior to the relief. Initiate all FLIPLs before the transfer." },
 ];
 
 export function CertificateOfReliefFiscalContent({ data }: Props) {
@@ -75,15 +54,10 @@ export function CertificateOfReliefFiscalContent({ data }: Props) {
     overview: (
       <div className="space-y-6">
         <InfoCard icon={FileCheck} title="Certificate of Relief" variant="info">
-          The Certificate of Relief is the formal document that transfers property accountability
-          from the Outgoing Commander to the Incoming Commander. It is the <strong>legal shield</strong>
-          for the outgoing CO, ensuring they are not held liable for issues after departure.
+          The Certificate of Relief is the formal document that transfers accountability for government property from the outgoing Commander to the incoming Commander. It serves as the legal &quot;clean break,&quot; protecting both parties from liability for discrepancies occurring before or after the relief.
         </InfoCard>
-
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-            Key Points
-          </h2>
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Key Points</h2>
           <div className="mt-4 overflow-x-auto">
             <table className="min-w-full text-sm">
               <tbody>
@@ -97,109 +71,72 @@ export function CertificateOfReliefFiscalContent({ data }: Props) {
             </table>
           </div>
         </section>
-
+        <InfoCard icon={Clock} title="30-Day Requirement" variant="warning">
+          The joint inventory and relief process must be completed within <strong>30 days</strong> of the Change of Command.
+        </InfoCard>
+      </div>
+    ),
+    inventory: (
+      <div className="space-y-6">
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-            Certificate Status Options
-          </h3>
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Joint Inventory Elements</h2>
           <div className="mt-4 space-y-3">
-            {CERTIFICATE_OPTIONS.map((option) => (
-              <div key={option.status} className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-700">
-                <h4 className="font-semibold text-zinc-900 dark:text-zinc-100">{option.status}</h4>
-                <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{option.description}</p>
+            {INVENTORY_ELEMENTS.map((item) => (
+              <div key={item.element} className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-700">
+                <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">{item.element}</h3>
+                <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{item.description}</p>
               </div>
             ))}
           </div>
         </section>
-
-        <InfoCard icon={Clock} title="30-Day Requirement" variant="warning">
-          The joint inventory must be completed within <strong>30 days</strong> of the Change
-          of Command. Start early to avoid rushed, error-prone inventories.
+        <InfoCard icon={ClipboardList} title="Personal Verification" variant="default">
+          The incoming Commander should personally spot-check critical items (weapons, crypto, high-value equipment) rather than relying solely on staff reports.
         </InfoCard>
       </div>
     ),
-
-    inventory: (
-      <div className="space-y-6">
-        <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-            Joint Inventory Requirements
-          </h2>
-          <ul className="mt-4 space-y-3">
-            {INVENTORY_REQUIREMENTS.map((req) => (
-              <li key={req} className="flex items-start gap-2 text-sm text-zinc-600 dark:text-zinc-400">
-                <span className="mt-1 h-2 w-2 rounded-full bg-[var(--sa-navy)]" />
-                {req}
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <InfoCard icon={Users} title="Both COs Must Participate" variant="default">
-          Both the incoming and outgoing commanders must participate in the joint inventory
-          or, at minimum, review and acknowledge the inventory results before signing.
-        </InfoCard>
-
-        <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-            Discrepancy Handling
-          </h3>
-          <ul className="mt-3 space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
-            <li>&bull; Document all missing or damaged items</li>
-            <li>&bull; Initiate FLIPL before outgoing CO is relieved</li>
-            <li>&bull; Note status of each investigation in relief letter</li>
-            <li>&bull; Do not sign until discrepancies are properly documented</li>
-          </ul>
-        </section>
-      </div>
-    ),
-
     process: (
       <div className="space-y-6">
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-            Certificate of Relief Process
-          </h2>
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Relief Process</h2>
           <div className="mt-6 space-y-4">
             {PROCESS_STEPS.map((step, index) => (
               <div key={step} className="flex items-start gap-4">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">
-                  {index + 1}
-                </span>
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">{index + 1}</span>
                 <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{step}</p>
               </div>
             ))}
           </div>
         </section>
-
-        <InfoCard icon={AlertTriangle} title="FLIPL Before Relief" variant="warning">
-          Missing gear must be documented and <strong>FLIPL initiated before</strong> the
-          outgoing CO is relieved of responsibility. Don&apos;t let discrepancies become
-          the incoming CO&apos;s problem.
-        </InfoCard>
+        <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Certificate Contents</h3>
+          <ul className="mt-3 space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
+            <li>&bull; Statement that joint inventory was conducted</li>
+            <li>&bull; List of any known discrepancies</li>
+            <li>&bull; Status of ongoing FLIPLs</li>
+            <li>&bull; Both commanders&apos; signatures and dates</li>
+            <li>&bull; Witness signatures as required</li>
+          </ul>
+        </section>
       </div>
     ),
-
     issues: (
       <div className="space-y-6">
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-            Common Problems & Solutions
-          </h2>
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Common Problems & Solutions</h2>
           <div className="mt-4 space-y-4">
             {COMMON_ISSUES.map((item) => (
               <div key={item.issue} className="rounded-lg border-l-4 border-amber-500 bg-amber-50 p-4 dark:bg-amber-900/20">
                 <h4 className="font-medium text-amber-800 dark:text-amber-200">Problem: {item.issue}</h4>
-                <p className="mt-2 text-sm text-amber-700 dark:text-amber-300">
-                  <strong>Solution:</strong> {item.solution}
-                </p>
+                <p className="mt-2 text-sm text-amber-700 dark:text-amber-300"><strong>Solution:</strong> {item.solution}</p>
               </div>
             ))}
           </div>
         </section>
+        <InfoCard icon={AlertTriangle} title="Liability Transfer" variant="warning">
+          Once signed, the incoming Commander assumes full accountability for all property. Don&apos;t sign until you&apos;re confident in the account&apos;s accuracy.
+        </InfoCard>
       </div>
     ),
   };
-
   return <TabbedContentLayout tabs={TABS} data={data} content={content} />;
 }
