@@ -322,6 +322,11 @@ import { DRRSMCOverviewContent } from "../../../../../components/commanders/DRRS
 import { METLDevelopmentContent } from "../../../../../components/commanders/METLDevelopmentContent";
 import { CLevelAssessmentContent } from "../../../../../components/commanders/CLevelAssessmentContent";
 import { ReadinessBoardContent } from "../../../../../components/commanders/ReadinessBoardContent";
+import { TLevelReportingContent } from "../../../../../components/commanders/TLevelReportingContent";
+import { PLevelReportingContent } from "../../../../../components/commanders/PLevelReportingContent";
+import { SLevelReportingContent } from "../../../../../components/commanders/SLevelReportingContent";
+import { RLevelReportingContent } from "../../../../../components/commanders/RLevelReportingContent";
+import { METLAnnualReviewContent } from "../../../../../components/commanders/METLAnnualReviewContent";
 // Commanders - Equal Opportunity
 import { EOPolicyStatementContent } from "../../../../../components/commanders/EOPolicyStatementContent";
 import { EORepresentativeContent } from "../../../../../components/commanders/EORepresentativeContent";
@@ -379,6 +384,10 @@ import { DOSSRelationshipContent } from "../../../../../components/commanders/DO
 // Commanders - Substance Abuse & Urinalysis
 import { InspectionTestingContent } from "../../../../../components/commanders/InspectionTestingContent";
 import { SubstanceAdminActionsContent } from "../../../../../components/commanders/SubstanceAdminActionsContent";
+import { UUCAppointmentContent } from "../../../../../components/commanders/UUCAppointmentContent";
+import { TestingRequirementsContent } from "../../../../../components/commanders/TestingRequirementsContent";
+import { PositiveResultProceduresContent } from "../../../../../components/commanders/PositiveResultProceduresContent";
+import { TreatmentReferralContent } from "../../../../../components/commanders/TreatmentReferralContent";
 // Commanders - SAPR
 import { EightDayReportContent } from "../../../../../components/commanders/EightDayReportContent";
 import { ExpeditedTransferContent } from "../../../../../components/commanders/ExpeditedTransferContent";
@@ -3526,6 +3535,51 @@ const READINESS_BOARD_DATA = {
   ],
 };
 
+const T_LEVEL_REPORTING_DATA = {
+  references: [
+    { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "MCO 1553.3B (Unit Training)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "MCTIMS Portal", url: "https://www.marines.mil" },
+    { title: "T&R Manual", url: "https://www.marines.mil" },
+  ],
+};
+
+const P_LEVEL_REPORTING_DATA = {
+  references: [
+    { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "MCTFS User Guide", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "Unit T/O", url: "https://www.marines.mil" },
+    { title: "DRRS-MC Manual", url: "https://www.marines.mil" },
+  ],
+};
+
+const S_LEVEL_REPORTING_DATA = {
+  references: [
+    { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "GCSS-MC Portal", url: "https://gcss-mc.marines.mil", isQuickLink: true },
+    { title: "Unit T/E", url: "https://www.marines.mil" },
+    { title: "Supply Management Manual", url: "https://www.marines.mil" },
+  ],
+};
+
+const R_LEVEL_REPORTING_DATA = {
+  references: [
+    { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DRRS-MC User Manual", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "Chairman's Readiness System", url: "https://www.jcs.mil" },
+    { title: "Unit Readiness SOP", url: "https://www.marines.mil" },
+  ],
+};
+
+const METL_ANNUAL_REVIEW_DATA = {
+  references: [
+    { title: "MCO 3500.110 (METL Development)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "MCO 1553.3B (Unit Training)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "MCTIMS Portal", url: "https://www.marines.mil" },
+    { title: "Training Resource Model", url: "https://www.marines.mil" },
+  ],
+};
+
 // Commanders - Equal Opportunity Data
 const EO_POLICY_STATEMENT_DATA = {
   references: [
@@ -3925,6 +3979,38 @@ const SUBSTANCE_ADMIN_ACTIONS_DATA = {
     { title: "MCO 5300.17A (Substance Abuse)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5300.17", isQuickLink: true },
     { title: "MARCORSEPMAN", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
     { title: "MCM Article 112a", url: "https://jsc.defense.gov/Military-Law/Current-Publications-Executive-Orders/" },
+  ],
+};
+
+const UUC_APPOINTMENT_DATA = {
+  references: [
+    { title: "MCO 5300.17A (Substance Abuse)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5300.17", isQuickLink: true },
+    { title: "NAVMC 2795 (Drug Testing Program)", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "Drug Demand Reduction Program Manual", url: "https://www.marines.mil/" },
+  ],
+};
+
+const TESTING_REQUIREMENTS_DATA = {
+  references: [
+    { title: "MCO 5300.17A (Substance Abuse)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5300.17", isQuickLink: true },
+    { title: "DoDI 1010.01 (Military Drug Testing)", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: true },
+    { title: "MRE 313 (Inspections)", url: "https://jsc.defense.gov/Military-Law/Current-Publications-Executive-Orders/" },
+  ],
+};
+
+const POSITIVE_RESULT_PROCEDURES_DATA = {
+  references: [
+    { title: "MCO 5300.17A (Substance Abuse)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5300.17", isQuickLink: true },
+    { title: "MARCORSEPMAN", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
+    { title: "MCM Article 31b", url: "https://jsc.defense.gov/Military-Law/Current-Publications-Executive-Orders/" },
+  ],
+};
+
+const TREATMENT_REFERRAL_DATA = {
+  references: [
+    { title: "MCO 5300.17A (Substance Abuse)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5300.17", isQuickLink: true },
+    { title: "SACO Program Manual", url: "https://www.marines.mil/", isQuickLink: true },
+    { title: "BUMED Instruction 6320.87", url: "https://www.med.navy.mil/" },
   ],
 };
 
@@ -4693,6 +4779,11 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "metl-development": <METLDevelopmentContent data={METL_DEVELOPMENT_DATA} />,
     "c-level-assessment": <CLevelAssessmentContent data={C_LEVEL_ASSESSMENT_DATA} />,
     "readiness-board": <ReadinessBoardContent data={READINESS_BOARD_DATA} />,
+    "t-level-reporting": <TLevelReportingContent data={T_LEVEL_REPORTING_DATA} />,
+    "p-level-reporting": <PLevelReportingContent data={P_LEVEL_REPORTING_DATA} />,
+    "s-level-reporting": <SLevelReportingContent data={S_LEVEL_REPORTING_DATA} />,
+    "r-level-reporting": <RLevelReportingContent data={R_LEVEL_REPORTING_DATA} />,
+    "metl-annual-review": <METLAnnualReviewContent data={METL_ANNUAL_REVIEW_DATA} />,
     // Commanders - Equal Opportunity
     "eo-policy": <EOPolicyStatementContent data={EO_POLICY_STATEMENT_DATA} />,
     "eor-appointment": <EORepresentativeContent data={EO_REPRESENTATIVE_DATA} />,
@@ -4750,6 +4841,10 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     // Commanders - Substance Abuse & Urinalysis
     "inspection-testing": <InspectionTestingContent data={INSPECTION_TESTING_DATA} />,
     "substance-admin-actions": <SubstanceAdminActionsContent data={SUBSTANCE_ADMIN_ACTIONS_DATA} />,
+    "uuc-appointment": <UUCAppointmentContent data={UUC_APPOINTMENT_DATA} />,
+    "testing-requirements": <TestingRequirementsContent data={TESTING_REQUIREMENTS_DATA} />,
+    "positive-result-procedures": <PositiveResultProceduresContent data={POSITIVE_RESULT_PROCEDURES_DATA} />,
+    "treatment-referral": <TreatmentReferralContent data={TREATMENT_REFERRAL_DATA} />,
     // Commanders - SAPR
     "8-day-report": <EightDayReportContent data={EIGHT_DAY_REPORT_DATA} />,
     "expedited-transfer": <ExpeditedTransferContent data={EXPEDITED_TRANSFER_DATA} />,
@@ -5318,12 +5413,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   ];
 
   const commandersSubstanceSection = "commanders-substance-abuse";
-  const commandersSubstanceSlugs = [
-    "uuc-appointment",
-    "testing-requirements",
-    "positive-result-procedures",
-    "treatment-referral",
-  ];
+  const commandersSubstanceSlugs: string[] = [];
 
   const commandersEOSection = "commanders-equal-opportunity";
   const commandersEOSlugs = [
@@ -5356,17 +5446,8 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   // Group C: Readiness and Resources
   const commandersTrainingSection = "commanders-training-readiness";
   const commandersTrainingSlugs = [
-    "drrs-mc-overview",
-    "c-level-assessment",
     "commanders-override",
-    "readiness-board",
-    "p-level-reporting",
-    "s-level-reporting",
-    "r-level-reporting",
-    "t-level-reporting",
-    "metl-development",
     "metl-assessment",
-    "metl-annual-review",
   ];
 
   const commandersFiscalSection = "commanders-fiscal-property";

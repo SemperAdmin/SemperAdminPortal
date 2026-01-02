@@ -2,7 +2,7 @@
 
 import { TabbedContentLayout } from "../ui/TabbedContentLayout";
 import { InfoCard } from "../ui/InfoCard";
-import { Target, AlertTriangle, Clock, CheckCircle } from "lucide-react";
+import { Activity, AlertTriangle, Clock, Gauge } from "lucide-react";
 
 interface Reference {
   title: string;
@@ -18,47 +18,65 @@ interface Props {
 
 const TABS = [
   { id: "overview", label: "Overview" },
-  { id: "scale", label: "T-Rating Scale" },
+  { id: "calculation", label: "Calculation" },
   { id: "process", label: "Process" },
   { id: "issues", label: "Common Issues" },
   { id: "references", label: "References", type: "references" as const },
 ];
 
 const KEY_POINTS = [
-  { label: "MET-Based", value: "The T-level is a composite of individual MET assessments (Yes, Qualified Yes, No)" },
-  { label: "T-Rating Scale", value: "Ranges from T-1 (fully trained) to T-4 (untrained)" },
-  { label: "Pillar of Readiness", value: "Even if a unit has all its people (P-level) and gear (S-level), it can still be T-4 if it hasn't conducted the required collective training events" },
+  { label: "Composite Measure", value: "R-level is derived from P, S, and T levels—the overall 'deployability' of the unit" },
+  { label: "Lowest Level Rules", value: "The R-level is typically the lowest of the P, S, or T levels" },
+  { label: "Commander's Override", value: "Commanders can override the calculated R-level with justification" },
 ];
 
-const T_RATING_SCALE = [
-  { level: "T-1", description: "Fully trained - unit can perform all METs to standard", percentage: "85-100%" },
-  { level: "T-2", description: "Substantially trained - minor deficiencies in some METs", percentage: "70-84%" },
-  { level: "T-3", description: "Marginally trained - significant training gaps", percentage: "55-69%" },
-  { level: "T-4", description: "Untrained - unit cannot perform assigned METs", percentage: "Below 55%" },
+const R_RATING_SCALE = [
+  { level: "R-1", description: "Fully ready - can accomplish all assigned missions", color: "green" },
+  { level: "R-2", description: "Substantially ready - minor limitations", color: "yellow" },
+  { level: "R-3", description: "Marginally ready - significant limitations", color: "orange" },
+  { level: "R-4", description: "Not ready - cannot accomplish assigned missions", color: "red" },
+];
+
+const CALCULATION_FACTORS = [
+  { factor: "P-Level", description: "Personnel readiness (quantity, MOS fill, deployability)", weight: "Equal" },
+  { factor: "S-Level", description: "Supply/equipment readiness (T/E fill, MEE)", weight: "Equal" },
+  { factor: "T-Level", description: "Training readiness (MET proficiency)", weight: "Equal" },
+  { factor: "Commander Override", description: "Subjective assessment based on unique factors", weight: "Optional" },
 ];
 
 const PROCESS_STEPS = [
-  "MCTIMS Review: Pull the Unit Training Management (UTM) data from the Marine Corps Training Information Management System",
-  "Task Assessment: Evaluate each MET based on recent training exercises (e.g., 'Did we successfully execute a Live Fire Platoon Attack?')",
-  "T-Level Calculation: Determine the percentage of METs the unit is proficient in",
-  "Commander's Remark: Provide a narrative explaining the T-level and what training is planned to increase proficiency",
+  "Assess P-Level: Calculate personnel readiness based on T/O fill and deployability",
+  "Assess S-Level: Calculate equipment readiness based on T/E fill and MEE status",
+  "Assess T-Level: Calculate training readiness based on MET proficiency",
+  "Determine R-Level: The R-level is the lowest of P, S, or T (unless commander override applies)",
+  "Commander's Override: If the calculated R-level doesn't reflect true capability, apply override with justification",
 ];
 
 const TIMELINE_REQUIREMENTS = [
-  { requirement: "Monthly", action: "Updated as part of the DRRS-MC cycle" },
+  { requirement: "Monthly", action: "Updated as part of the DRRS-MC reporting cycle" },
 ];
 
 const COMMON_ISSUES = [
-  { issue: "Inflated Assessments", solution: "Rating METs as 'Yes' without conducting the actual training event. Be honest—the T-level drives training resource allocation." },
-  { issue: "No Narrative", solution: "Submitting the T-level without the Commander's Remark. The narrative explains the 'why' and the plan to improve." },
+  { issue: "Ignoring the Lowest Level", solution: "Reporting an R-level higher than the lowest P/S/T without commander override. The R-level should reflect the weakest pillar." },
+  { issue: "Unjustified Override", solution: "Using commander override without proper justification. Overrides should be documented with specific reasons." },
 ];
 
-export function TLevelReportingContent({ data }: Props) {
+export function RLevelReportingContent({ data }: Props) {
+  const getRatingColor = (color: string) => {
+    switch (color) {
+      case "green": return "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300";
+      case "yellow": return "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300";
+      case "orange": return "bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300";
+      case "red": return "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300";
+      default: return "bg-gray-100 text-gray-800 dark:bg-gray-900/30 dark:text-gray-300";
+    }
+  };
+
   const content: Record<string, React.ReactNode> = {
     overview: (
       <div className="space-y-6">
-        <InfoCard icon={Target} title="T-Level Reporting (Training)" variant="info">
-          The T-Level represents the Commander&apos;s subjective and objective assessment of the unit&apos;s ability to execute its Mission Essential Tasks (METs). It is a measure of how well the unit has trained against the standards established in the community-specific T&amp;R Manual.
+        <InfoCard icon={Activity} title="R-Level Reporting (Overall Readiness)" variant="info">
+          The R-Level is the composite measure of a unit&apos;s overall readiness to accomplish its assigned missions. It is derived from the P-Level (Personnel), S-Level (Supply), and T-Level (Training), and represents the commander&apos;s assessment of the unit&apos;s deployability.
         </InfoCard>
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Key Points</h2>
@@ -94,40 +112,67 @@ export function TLevelReportingContent({ data }: Props) {
         </section>
       </div>
     ),
-    scale: (
+    calculation: (
       <div className="space-y-6">
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">T-Rating Scale</h2>
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">R-Rating Scale</h2>
           <div className="mt-4 overflow-x-auto">
             <table className="min-w-full text-sm">
               <thead>
                 <tr className="border-b border-zinc-200 dark:border-zinc-700">
                   <th className="py-3 pr-4 text-left font-medium text-zinc-900 dark:text-zinc-100">Level</th>
                   <th className="py-3 pr-4 text-left font-medium text-zinc-900 dark:text-zinc-100">Description</th>
-                  <th className="py-3 text-left font-medium text-zinc-900 dark:text-zinc-100">MET Proficiency</th>
+                  <th className="py-3 text-left font-medium text-zinc-900 dark:text-zinc-100">Status</th>
                 </tr>
               </thead>
               <tbody>
-                {T_RATING_SCALE.map((item) => (
+                {R_RATING_SCALE.map((item) => (
                   <tr key={item.level} className="border-b border-zinc-100 dark:border-zinc-800">
                     <td className="py-3 pr-4 font-bold text-zinc-900 dark:text-zinc-100">{item.level}</td>
                     <td className="py-3 pr-4 text-zinc-600 dark:text-zinc-400">{item.description}</td>
-                    <td className="py-3 text-zinc-600 dark:text-zinc-400">{item.percentage}</td>
+                    <td className="py-3">
+                      <span className={"rounded-full px-2 py-1 text-xs font-medium " + getRatingColor(item.color)}>
+                        {item.level}
+                      </span>
+                    </td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
         </section>
-        <InfoCard icon={CheckCircle} title="MET Assessment Options" variant="default">
-          Each MET is assessed as: <strong>Yes</strong> (trained to standard), <strong>Qualified Yes</strong> (minor deficiencies), or <strong>No</strong> (not trained).
+        <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">R-Level Calculation Factors</h2>
+          <div className="mt-4 overflow-x-auto">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="border-b border-zinc-200 dark:border-zinc-700">
+                  <th className="py-3 pr-4 text-left font-medium text-zinc-900 dark:text-zinc-100">Factor</th>
+                  <th className="py-3 pr-4 text-left font-medium text-zinc-900 dark:text-zinc-100">Description</th>
+                  <th className="py-3 text-left font-medium text-zinc-900 dark:text-zinc-100">Weight</th>
+                </tr>
+              </thead>
+              <tbody>
+                {CALCULATION_FACTORS.map((item) => (
+                  <tr key={item.factor} className="border-b border-zinc-100 dark:border-zinc-800">
+                    <td className="py-3 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{item.factor}</td>
+                    <td className="py-3 pr-4 text-zinc-600 dark:text-zinc-400">{item.description}</td>
+                    <td className="py-3 text-zinc-600 dark:text-zinc-400">{item.weight}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <InfoCard icon={Gauge} title="Lowest Level Rules" variant="default">
+          The R-level is typically the <strong>lowest</strong> of P, S, or T. A unit with P-1, S-2, T-3 would normally be R-3.
         </InfoCard>
       </div>
     ),
     process: (
       <div className="space-y-6">
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">T-Level Assessment Process</h2>
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">R-Level Assessment Process</h2>
           <div className="mt-6 space-y-4">
             {PROCESS_STEPS.map((step, index) => (
               <div key={step} className="flex items-start gap-4">
@@ -138,12 +183,12 @@ export function TLevelReportingContent({ data }: Props) {
           </div>
         </section>
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Commander&apos;s Remark Should Include</h3>
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Commander Override Justifications</h3>
           <ul className="mt-3 space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
-            <li>&bull; Explanation of current T-level rating</li>
-            <li>&bull; Training events completed since last report</li>
-            <li>&bull; Planned training to address deficiencies</li>
-            <li>&bull; Resource or scheduling constraints affecting training</li>
+            <li>&bull; Unique mission-specific factors not captured in P/S/T</li>
+            <li>&bull; Cross-leveling or augmentation arrangements</li>
+            <li>&bull; Known shortfalls that won&apos;t impact specific assigned missions</li>
+            <li>&bull; Temporary conditions expected to improve shortly</li>
           </ul>
         </section>
       </div>
@@ -161,8 +206,8 @@ export function TLevelReportingContent({ data }: Props) {
             ))}
           </div>
         </section>
-        <InfoCard icon={AlertTriangle} title="Be Honest About Training Readiness" variant="warning">
-          An inflated T-level can lead to a unit being assigned missions it cannot execute. <strong>Accurate reporting</strong> drives proper resource allocation.
+        <InfoCard icon={AlertTriangle} title="Honest Reporting Matters" variant="warning">
+          An inflated R-level can lead to a unit being assigned missions it cannot execute. <strong>Accurate readiness reporting</strong> protects both the unit and the mission.
         </InfoCard>
       </div>
     ),
