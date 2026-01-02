@@ -1,6 +1,8 @@
-# Content Needed: 150 Placeholder Items
+# Content Needed: 146 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
+
+**Last Updated:** January 2, 2026
 
 ---
 
@@ -10,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 146 items |
+| **Commanders** | 143 items |
 | **Administrators** | 0 items |
 
 ---
@@ -61,20 +63,23 @@ All Leaders accountability items now have content:
 ## Command Authority & Legal Responsibilities
 **Section:** `commanders-authority-legal`
 
+All items now have content:
+- ~~`njp-authority`~~ - COMPLETED
+- ~~`njp-process`~~ - COMPLETED
+- ~~`njp-appeals`~~ - COMPLETED
+- ~~`summary-court-martial`~~ - COMPLETED
+- ~~`special-court-martial`~~ - COMPLETED
+- ~~`general-court-martial`~~ - COMPLETED
+- ~~`disposition-options`~~ - COMPLETED
+- ~~`adsep-authority`~~ - COMPLETED
+- ~~`service-characterization`~~ - COMPLETED
+- ~~`religious-accommodation`~~ - COMPLETED
+- ~~`request-mast`~~ - COMPLETED
+
+Remaining:
 | Slug | Title | Description |
 |------|-------|-------------|
-| `njp-authority` | NJP Authority (Article 15) | Who has NJP authority and delegation requirements |
 | `njp-punishment-limits` | Punishment Limits by Grade | Maximum punishments authorized by commander grade |
-| `njp-process` | NJP Process Requirements | Procedural steps from report to imposition |
-| `njp-appeals` | NJP Appeal Procedures | Marine right to appeal and commander's review authority |
-| `summary-court-martial` | Summary Court-Martial | Convening authority and procedural requirements |
-| `special-court-martial` | Special Court-Martial | SPCM convening and referral procedures |
-| `general-court-martial` | General Court-Martial | GCM process and commander role |
-| `disposition-options` | Disposition Options | Alternatives to court-martial and decision factors |
-| `adsep-authority` | Administrative Separation Authority | Separation authority levels and board requirements |
-| `service-characterization` | Characterization of Service | Honorable, General, OTH determination factors |
-| `religious-accommodation` | Religious Accommodation | Adjudication levels and compelling interest standard |
-| `request-mast` | Request Mast Procedures | Marine's right to request mast and commander response |
 
 ## Command Climate & Culture Programs
 **Section:** `commanders-climate-culture`
@@ -160,7 +165,6 @@ All Leaders accountability items now have content:
 | Slug | Title | Description |
 |------|-------|-------------|
 | `njp-procedures` | NJP Procedures | Article 15 processing requirements |
-| `punishment-limits` | Punishment Limits | Maximum authorized punishments by grade |
 | `appeal-rights` | Appeal Rights | Marine's right to appeal NJP decisions |
 | `adsep-commander-authority` | ADSEP Authority | Separation authority and board requirements |
 | `separation-bases` | Separation Bases | Grounds for administrative separation |
@@ -300,6 +304,22 @@ All Leaders accountability items now have content:
 | `c-level-assessment` | C-Level & A-Level Assessments | Overall and individual MET capability ratings |
 | `readiness-board` | Readiness Board Requirements | Conducting readiness reviews and briefings |
 
+## Environmental Compliance
+**Section:** `commanders-environmental`
+
+| Slug | Title | Description |
+|------|-------|-------------|
+| `ecc-appointment` | ECC Appointment | Environmental Compliance Coordinator designation |
+| `ems-overview` | EMS Overview | Environmental Management System requirements |
+| `hazmat-management` | Hazardous Material Management | HAZMAT handling, storage, and disposal |
+| `spill-reporting` | Spill Reporting | Spill response and reporting requirements |
+| `nepa-compliance` | NEPA Compliance | National Environmental Policy Act requirements |
+| `environmental-funding` | Environmental Funding | Budget considerations for environmental programs |
+| `benchmark-ece` | Benchmark ECE | Environmental compliance evaluation preparation |
+| `internal-ece` | Internal ECE | Conducting internal environmental assessments |
+| `ore-oversight` | ORE Oversight | Operational Range Environment oversight |
+| `commanders-override` | Commander's Override | Override authority for environmental requirements |
+
 ---
 
 # ADMINISTRATORS
@@ -350,3 +370,5 @@ COMMON ISSUES:
 2. **Commander sub-items** - Many are detailed breakdowns of parent pages. Consider whether they need full separate pages or should stay as sections within parent content.
 
 3. **No Admin items needed** - Administrator section is fully built out.
+
+4. **Command Authority section** - 11 of 12 items now complete! Only `njp-punishment-limits` remaining.
