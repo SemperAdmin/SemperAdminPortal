@@ -304,6 +304,9 @@ import { AdminSepAuthorityContent } from "../../../../../components/commanders/A
 import { CharacterizationOfServiceContent } from "../../../../../components/commanders/CharacterizationOfServiceContent";
 import { ReligiousAccommodationContent } from "../../../../../components/commanders/ReligiousAccommodationContent";
 import { RequestMastContent } from "../../../../../components/commanders/RequestMastContent";
+import { NJPProceduresContent } from "../../../../../components/commanders/NJPProceduresContent";
+import { SeparationBasesContent } from "../../../../../components/commanders/SeparationBasesContent";
+import { ADSEPDueProcessContent } from "../../../../../components/commanders/ADSEPDueProcessContent";
 // Commanders - Suicide Prevention & Force Preservation
 import { SPPOAppointmentContent } from "../../../../../components/commanders/SPPOAppointmentContent";
 import { ForcePreservationCouncilContent } from "../../../../../components/commanders/ForcePreservationCouncilContent";
@@ -3282,6 +3285,30 @@ const REQUEST_MAST_CA_DATA = {
   ],
 };
 
+const NJP_PROCEDURES_DATA = {
+  references: [
+    { title: "MCO 5800.16A Vol 14 (Legal Admin Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5800.16", isQuickLink: true },
+    { title: "UCMJ Article 15", url: "https://www.law.cornell.edu/uscode/text/10/815", isQuickLink: true },
+    { title: "Manual for Courts-Martial Part V", url: "https://jsc.defense.gov/Military-Law/Current-Publications-and-Updates/" },
+  ],
+};
+
+const SEPARATION_BASES_DATA = {
+  references: [
+    { title: "MCO P1900.16F (Separation Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
+    { title: "SECNAVINST 1920.6D (ADSEP)", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1920.6D.pdf", isQuickLink: true },
+    { title: "MCO 5800.16A Vol 9 (Admin Separations)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5800.16" },
+  ],
+};
+
+const ADSEP_DUE_PROCESS_DATA = {
+  references: [
+    { title: "MCO P1900.16F (Separation Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
+    { title: "SECNAVINST 1920.6D (ADSEP)", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1920.6D.pdf", isQuickLink: true },
+    { title: "10 U.S.C. 1169 (Enlisted Separation)", url: "https://www.law.cornell.edu/uscode/text/10/1169" },
+  ],
+};
+
 // Commanders - Suicide Prevention & Force Preservation Data
 const SPPO_APPOINTMENT_DATA = {
   references: [
@@ -3986,6 +4013,10 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "service-characterization": <CharacterizationOfServiceContent data={CHARACTERIZATION_OF_SERVICE_CA_DATA} />,
     "religious-accommodation": <ReligiousAccommodationContent data={RELIGIOUS_ACCOMMODATION_CA_DATA} />,
     "request-mast": <RequestMastContent data={REQUEST_MAST_CA_DATA} />,
+    "njp-procedures": <NJPProceduresContent data={NJP_PROCEDURES_DATA} />,
+    "njp-punishment-limits": <PunishmentLimitsContent data={PUNISHMENT_LIMITS_CA_DATA} />,
+    "separation-bases": <SeparationBasesContent data={SEPARATION_BASES_DATA} />,
+    "adsep-due-process": <ADSEPDueProcessContent data={ADSEP_DUE_PROCESS_DATA} />,
     // Commanders - Suicide Prevention & Force Preservation
     "sppo-appointment": <SPPOAppointmentContent data={SPPO_APPOINTMENT_DATA} />,
     "force-preservation-council": <ForcePreservationCouncilContent data={FORCE_PRESERVATION_COUNCIL_DATA} />,
@@ -4465,7 +4496,6 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   const commandersAuthoritySection = "commanders-authority-legal";
   const commandersAuthoritySlugs = [
     "njp-authority",
-    "njp-punishment-limits",
     "njp-process",
     "njp-appeals",
     "summary-court-martial",
@@ -4575,12 +4605,8 @@ export function generateStaticParams(): { role: Role; section: string; item: str
 
   const commandersLegalSection = "commanders-legal-discipline";
   const commandersLegalSlugs = [
-    "njp-procedures",
-    "punishment-limits",
     "appeal-rights",
     "adsep-commander-authority",
-    "separation-bases",
-    "adsep-due-process",
   ];
 
   const commandersAdminInvestigationsSection = "commanders-admin-investigations";

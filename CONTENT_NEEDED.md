@@ -1,4 +1,4 @@
-# Content Needed: 115 Placeholder Items
+# Content Needed: 111 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 112 items |
+| **Commanders** | 108 items |
 | **Administrators** | 0 items |
 
 ---
@@ -65,6 +65,7 @@ All Leaders accountability items now have content:
 
 All items now have content:
 - ~~`njp-authority`~~ - COMPLETED
+- ~~`njp-punishment-limits`~~ - COMPLETED
 - ~~`njp-process`~~ - COMPLETED
 - ~~`njp-appeals`~~ - COMPLETED
 - ~~`summary-court-martial`~~ - COMPLETED
@@ -75,11 +76,6 @@ All items now have content:
 - ~~`service-characterization`~~ - COMPLETED
 - ~~`religious-accommodation`~~ - COMPLETED
 - ~~`request-mast`~~ - COMPLETED
-
-Remaining:
-| Slug | Title | Description |
-|------|-------|-------------|
-| `njp-punishment-limits` | Punishment Limits by Grade | Maximum punishments authorized by commander grade |
 
 ## Command Climate & Culture Programs
 **Section:** `commanders-climate-culture`
@@ -168,13 +164,16 @@ Remaining items:
 ## Legal & Discipline
 **Section:** `commanders-legal-discipline`
 
+Completed items:
+- ~~`njp-procedures`~~ - COMPLETED
+- ~~`separation-bases`~~ - COMPLETED
+- ~~`adsep-due-process`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
-| `njp-procedures` | NJP Procedures | Article 15 processing requirements |
 | `appeal-rights` | Appeal Rights | Marine's right to appeal NJP decisions |
 | `adsep-commander-authority` | ADSEP Authority | Separation authority and board requirements |
-| `separation-bases` | Separation Bases | Grounds for administrative separation |
-| `adsep-due-process` | Due Process | Ensuring Marine's rights are protected |
 
 ## Maintenance & Logistics
 **Section:** `commanders-maintenance-logistics`
