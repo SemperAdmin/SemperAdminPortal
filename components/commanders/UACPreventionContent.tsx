@@ -135,7 +135,7 @@ export function UACPreventionContent({ data }: Props) {
           </h2>
           <div className="mt-6 space-y-4">
             {PREVENTION_STEPS.map((step, index) => (
-              <div key={index} className="flex items-start gap-4">
+              <div key={step} className="flex items-start gap-4">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-green-600 text-sm font-bold text-white">
                   {index + 1}
                 </span>
@@ -151,7 +151,7 @@ export function UACPreventionContent({ data }: Props) {
           </h3>
           <div className="mt-6 space-y-4">
             {RESPONSE_STEPS.map((step, index) => (
-              <div key={index} className="flex items-start gap-4">
+              <div key={step} className="flex items-start gap-4">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-red-600 text-sm font-bold text-white">
                   {index + 1}
                 </span>

@@ -189,7 +189,7 @@ export function ReadinessBoardContent({ data }: Props) {
           </h2>
           <div className="mt-6 space-y-4">
             {PROCESS_STEPS.map((step, index) => (
-              <div key={index} className="flex items-start gap-4">
+              <div key={step} className="flex items-start gap-4">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">
                   {index + 1}
                 </span>
@@ -205,7 +205,7 @@ export function ReadinessBoardContent({ data }: Props) {
           </h3>
           <ul className="mt-4 space-y-2">
             {AGENDA_ITEMS.map((item, index) => (
-              <li key={index} className="flex items-start gap-2 text-sm text-zinc-600 dark:text-zinc-400">
+              <li key={step} className="flex items-start gap-2 text-sm text-zinc-600 dark:text-zinc-400">
                 <span className="mt-1 h-2 w-2 rounded-full bg-[var(--sa-navy)]" />
                 {item}
               </li>

@@ -174,7 +174,7 @@ export function PostventionContent({ data }: Props) {
               </thead>
               <tbody>
                 {SAFE_MESSAGING.map((item, index) => (
-                  <tr key={index} className="border-b border-zinc-100 dark:border-zinc-800">
+                  <tr key={step} className="border-b border-zinc-100 dark:border-zinc-800">
                     <td className="py-3 pr-4 text-zinc-600 dark:text-zinc-400">{item.do}</td>
                     <td className="py-3 text-zinc-600 dark:text-zinc-400">{item.dont}</td>
                   </tr>
@@ -200,7 +200,7 @@ export function PostventionContent({ data }: Props) {
           </h2>
           <div className="mt-6 space-y-4">
             {PROCESS_STEPS.map((step, index) => (
-              <div key={index} className="flex items-start gap-4">
+              <div key={step} className="flex items-start gap-4">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">
                   {index + 1}
                 </span>
