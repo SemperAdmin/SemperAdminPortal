@@ -138,10 +138,12 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
       title: "Command Authority",
       color: "rose",
       icon: Gavel,
-      description: "Legal responsibilities, NJP, personnel management",
+      description: "Legal responsibilities, NJP, investigations, personnel management",
       categories: [
         { label: "Command Authority & Legal", slug: "commanders-authority-legal", desc: "NJP, court-martial, separation authority" },
         { label: "Personnel & Career Management", slug: "commanders-personnel-career", desc: "Fitness reports, promotions, admin actions" },
+        { label: "Legal & Discipline", slug: "commanders-legal-discipline", desc: "NJP procedures, ADSEP authority, due process" },
+        { label: "Administrative Investigations", slug: "commanders-admin-investigations", desc: "JAGMAN, convening orders, LOD determinations" },
       ],
     },
     {
@@ -149,12 +151,14 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
       title: "Command Climate & Welfare",
       color: "sky",
       icon: Users,
-      description: "Climate programs, SAPR, suicide prevention, family readiness",
+      description: "Climate programs, SAPR, suicide prevention, family readiness, EO",
       categories: [
         { label: "Command Climate & Culture", slug: "commanders-climate-culture", desc: "DEOCS, policy statements, PAC program" },
         { label: "Sexual Assault Prevention", slug: "commanders-sapr", desc: "SAPR VA, reporting, victim support" },
         { label: "Suicide Prevention", slug: "commanders-suicide-prevention", desc: "SPPO, CIRRAS, force preservation" },
         { label: "Family Readiness & Casualty", slug: "commanders-family-readiness", desc: "UPFRP, FAP, casualty affairs" },
+        { label: "Equal Opportunity", slug: "commanders-equal-opportunity", desc: "EO program, complaints, climate assessment" },
+        { label: "Substance Abuse & Urinalysis", slug: "commanders-substance-abuse", desc: "Drug testing, treatment, admin actions" },
       ],
     },
     {
@@ -164,10 +168,9 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
       icon: ClipboardCheck,
       description: "Readiness reporting, fiscal accountability, equipment, training",
       categories: [
-        { label: "Readiness Reporting", slug: "commanders-readiness-reporting", desc: "DRRS-MC, METL, resource levels" },
+        { label: "Training & Readiness", slug: "commanders-training-readiness", desc: "DRRS-MC, METL, resource levels" },
         { label: "Fiscal & Property", slug: "commanders-fiscal-property", desc: "Budget, fund control, accountability" },
-        { label: "Materiel & Equipment", slug: "commanders-materiel-equipment", desc: "T/E, maintenance, small arms" },
-        { label: "Training & Education", slug: "commanders-training-education", desc: "ATP, T&R, PME, schools" },
+        { label: "Maintenance & Logistics", slug: "commanders-maintenance-logistics", desc: "T/E, maintenance, small arms" },
       ],
     },
     {
@@ -177,8 +180,8 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
       icon: Shield,
       description: "Safety, inspections, environmental, security, public affairs",
       categories: [
-        { label: "Safety Program", slug: "commanders-safety", desc: "Ground/aviation safety, ORM, mishaps" },
-        { label: "Inspection Program", slug: "commanders-inspections", desc: "CIP, IGMC, FSMAO, POA&M" },
+        { label: "Safety & Risk Management", slug: "commanders-safety-risk", desc: "Ground/aviation safety, ORM, mishaps" },
+        { label: "Inspector General & Inspections", slug: "commanders-inspector-general", desc: "CIP, IGMC, FSMAO, POA&M" },
         { label: "Environmental Stewardship", slug: "commanders-environmental", desc: "EMS, spills, hazmat, NEPA" },
         { label: "Security Programs", slug: "commanders-security", desc: "Info/personnel/physical/cyber security" },
         { label: "Public Affairs", slug: "commanders-public-affairs", desc: "Media, crisis comms, social media" },
