@@ -382,6 +382,9 @@ import { MediaEngagementContent } from "../../../../../components/commanders/Med
 import { ReleasableInformationContent } from "../../../../../components/commanders/ReleasableInformationContent";
 import { CasualtyInformationReleaseContent } from "../../../../../components/commanders/CasualtyInformationReleaseContent";
 import { SocialMediaPolicyContent } from "../../../../../components/commanders/SocialMediaPolicyContent";
+import { CrisisCommunicationContent } from "../../../../../components/commanders/CrisisCommunicationContent";
+import { OPSECPublicStatementsContent } from "../../../../../components/commanders/OPSECPublicStatementsContent";
+import { ClimateMessagingContent } from "../../../../../components/commanders/ClimateMessagingContent";
 // Commanders - Transition of Command
 import {
   CornerstoneAttendanceContent,
@@ -3890,6 +3893,27 @@ const SOCIAL_MEDIA_POLICY_DATA = {
   ],
 };
 
+const CRISIS_COMMUNICATION_DATA = {
+  references: [
+    { title: "MCO 5720.77 (Public Affairs)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5720.77", isQuickLink: true },
+    { title: "JP 3-61 (Public Affairs)", url: "https://www.jcs.mil/Portals/36/Documents/Doctrine/pubs/jp3_61.pdf" },
+  ],
+};
+
+const OPSEC_PUBLIC_STATEMENTS_DATA = {
+  references: [
+    { title: "MCO 3070.2 (Operations Security)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=3070.2", isQuickLink: true },
+    { title: "MCO 5720.77 (Public Affairs)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5720.77" },
+  ],
+};
+
+const CLIMATE_MESSAGING_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Order)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5354.1", isQuickLink: true },
+    { title: "MCO 5720.77 (Public Affairs)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5720.77" },
+  ],
+};
+
 // Life Events Data
 const BUYING_A_HOME_DATA = {
   references: [
@@ -4481,6 +4505,9 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "releasable-info": <ReleasableInformationContent data={RELEASABLE_INFORMATION_DATA} />,
     "casualty-info-release": <CasualtyInformationReleaseContent data={CASUALTY_INFORMATION_RELEASE_DATA} />,
     "social-media-policy": <SocialMediaPolicyContent data={SOCIAL_MEDIA_POLICY_DATA} />,
+    "crisis-communication": <CrisisCommunicationContent data={CRISIS_COMMUNICATION_DATA} />,
+    "opsec-public-statements": <OPSECPublicStatementsContent data={OPSEC_PUBLIC_STATEMENTS_DATA} />,
+    "climate-messaging": <ClimateMessagingContent data={CLIMATE_MESSAGING_DATA} />,
     // Life Events
     "buying-a-home": <BuyingAHomeContent data={BUYING_A_HOME_DATA} />,
     "deploying": <DeployingContent data={DEPLOYING_DATA} />,
