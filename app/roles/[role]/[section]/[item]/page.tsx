@@ -3765,8 +3765,8 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "special-court-martial": <SpecialCourtMartialContent data={SPECIAL_COURT_MARTIAL_CA_DATA} />,
     "general-court-martial": <GeneralCourtMartialContent data={GENERAL_COURT_MARTIAL_CA_DATA} />,
     "disposition-options": <DispositionOptionsContent data={DISPOSITION_OPTIONS_CA_DATA} />,
-    "admin-sep-authority": <AdminSepAuthorityContent data={ADMIN_SEP_AUTHORITY_CA_DATA} />,
-    "characterization-of-service": <CharacterizationOfServiceContent data={CHARACTERIZATION_OF_SERVICE_CA_DATA} />,
+    "adsep-authority": <AdminSepAuthorityContent data={ADMIN_SEP_AUTHORITY_CA_DATA} />,
+    "service-characterization": <CharacterizationOfServiceContent data={CHARACTERIZATION_OF_SERVICE_CA_DATA} />,
     "religious-accommodation": <ReligiousAccommodationContent data={RELIGIOUS_ACCOMMODATION_CA_DATA} />,
     "request-mast": <RequestMastContent data={REQUEST_MAST_CA_DATA} />,
     // Life Events
