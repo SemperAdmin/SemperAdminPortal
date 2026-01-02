@@ -1,4 +1,4 @@
-# Content Needed: 107 Placeholder Items
+# Content Needed: 103 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 104 items |
+| **Commanders** | 100 items |
 | **Administrators** | 0 items |
 
 ---
@@ -196,17 +196,20 @@ Remaining items:
 ## Personnel Administration & Career Management
 **Section:** `commanders-personnel-career`
 
+Completed items:
+- ~~`fitrep-responsibilities`~~ - COMPLETED
+- ~~`jepes-commander`~~ - COMPLETED
+- ~~`6105-entries`~~ - COMPLETED
+- ~~`not-rec-authority`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
-| `fitrep-responsibilities` | Fitness Report Responsibilities | Reporting Senior and Reviewing Officer duties |
 | `adverse-fitreps` | Adverse Fitness Reports | Requirements for adverse comments and due process |
 | `procon-oversight` | Proficiency & Conduct Marks | Commander oversight and marking philosophy |
-| `jepes-commander` | JEPES Commander Role | Commander involvement in junior enlisted evaluations |
 | `meritorious-promotion-authority` | Meritorious Promotion | Commander's meritorious promotion authority |
-| `not-rec-authority` | NOT REC Authority | Authority to recommend against promotion |
 | `reenlistment-authority` | Reenlistment Authority | Approval, disapproval, and waiver authority |
 | `page-11-commander` | Page 11 Entries | When and how to document administrative remarks |
-| `6105-entries` | 6105 Counseling Entries | Counseling warning requirements and procedures |
 | `adverse-letters` | Letters of Caution/Admonition/Reprimand | Levels of adverse administrative letters |
 | `transition-oversight` | Transition Readiness Oversight | Commander responsibilities for separating Marines |
 

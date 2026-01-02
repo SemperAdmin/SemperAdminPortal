@@ -337,6 +337,11 @@ import { CIPOverviewContent } from "../../../../../components/commanders/CIPOver
 import { CGIPPreparationContent } from "../../../../../components/commanders/CGIPPreparationContent";
 import { IGMCFunctionalAreasContent } from "../../../../../components/commanders/IGMCFunctionalAreasContent";
 import { POAMManagementContent } from "../../../../../components/commanders/POAMManagementContent";
+// Commanders - Personnel Administration & Career Management
+import { FitnessReportContent } from "../../../../../components/commanders/FitnessReportContent";
+import { JEPESCommanderRoleContent } from "../../../../../components/commanders/JEPESCommanderRoleContent";
+import { CounselingEntriesContent } from "../../../../../components/commanders/CounselingEntriesContent";
+import { NotRecAuthorityContent } from "../../../../../components/commanders/NotRecAuthorityContent";
 // Commanders - Transition of Command
 import {
   CornerstoneAttendanceContent,
@@ -3539,6 +3544,39 @@ const POAM_MANAGEMENT_DATA = {
   ],
 };
 
+// Commanders - Personnel Administration & Career Management Data
+const FITREP_RESPONSIBILITIES_DATA = {
+  references: [
+    { title: "MCO 1610.7B (PES)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1610.7", isQuickLink: true },
+    { title: "NAVMC 10835 (FITREP Form)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "PES Online (APES)", url: "https://www.manpower.usmc.mil/webcenter/portal/PESOnline" },
+  ],
+};
+
+const JEPES_COMMANDER_DATA = {
+  references: [
+    { title: "MCO 1616.1 (JEPES)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1616.1", isQuickLink: true },
+    { title: "MARADMIN 505/20 (JEPES Implementation)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "MOL JEPES Module", url: "https://mol.tfs.usmc.mil/" },
+  ],
+};
+
+const COUNSELING_ENTRIES_6105_DATA = {
+  references: [
+    { title: "MCO 1900.16 (MARCORSEPMAN)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1070.12", isQuickLink: true },
+    { title: "6105 Entry Template", url: "https://www.marines.mil" },
+  ],
+};
+
+const NOT_REC_AUTHORITY_DATA = {
+  references: [
+    { title: "MCO P1400.32D (Promotion Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1400.32", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1070.12", isQuickLink: true },
+    { title: "MOL Select Grade Module", url: "https://mol.tfs.usmc.mil/" },
+  ],
+};
+
 // Life Events Data
 const BUYING_A_HOME_DATA = {
   references: [
@@ -4085,6 +4123,11 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "cgip-preparation": <CGIPPreparationContent data={CGIP_PREPARATION_DATA} />,
     "igmc-functional-areas": <IGMCFunctionalAreasContent data={IGMC_FUNCTIONAL_AREAS_DATA} />,
     "poam-management": <POAMManagementContent data={POAM_MANAGEMENT_DATA} />,
+    // Commanders - Personnel Administration & Career Management
+    "fitrep-responsibilities": <FitnessReportContent data={FITREP_RESPONSIBILITIES_DATA} />,
+    "jepes-commander": <JEPESCommanderRoleContent data={JEPES_COMMANDER_DATA} />,
+    "6105-entries": <CounselingEntriesContent data={COUNSELING_ENTRIES_6105_DATA} />,
+    "not-rec-authority": <NotRecAuthorityContent data={NOT_REC_AUTHORITY_DATA} />,
     // Life Events
     "buying-a-home": <BuyingAHomeContent data={BUYING_A_HOME_DATA} />,
     "deploying": <DeployingContent data={DEPLOYING_DATA} />,
@@ -4553,16 +4596,12 @@ export function generateStaticParams(): { role: Role; section: string; item: str
 
   const commandersPersonnelSection = "commanders-personnel-career";
   const commandersPersonnelSlugs = [
-    "fitrep-responsibilities",
     "adverse-fitreps",
     "procon-oversight",
-    "jepes-commander",
-    "not-rec-authority",
     "meritorious-promotion-authority",
     "reenlistment-authority",
     "transition-oversight",
     "page-11-commander",
-    "6105-entries",
     "adverse-letters",
   ];
 
