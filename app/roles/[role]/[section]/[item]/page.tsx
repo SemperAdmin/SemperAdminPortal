@@ -371,6 +371,12 @@ import { FitnessReportContent } from "../../../../../components/commanders/Fitne
 import { JEPESCommanderRoleContent } from "../../../../../components/commanders/JEPESCommanderRoleContent";
 import { CounselingEntriesContent } from "../../../../../components/commanders/CounselingEntriesContent";
 import { NotRecAuthorityContent } from "../../../../../components/commanders/NotRecAuthorityContent";
+import { AdverseFitrepsContent } from "../../../../../components/commanders/AdverseFitrepsContent";
+import { MeritoriousPromotionAuthorityContent } from "../../../../../components/commanders/MeritoriousPromotionAuthorityContent";
+import { ReenlistmentAuthorityContent } from "../../../../../components/commanders/ReenlistmentAuthorityContent";
+import { Page11CommanderContent } from "../../../../../components/commanders/Page11CommanderContent";
+import { AdverseLettersContent } from "../../../../../components/commanders/AdverseLettersContent";
+import { TransitionOversightContent } from "../../../../../components/commanders/TransitionOversightContent";
 // Commanders - Public Affairs & Media Relations
 import { MediaEngagementContent } from "../../../../../components/commanders/MediaEngagementContent";
 import { ReleasableInformationContent } from "../../../../../components/commanders/ReleasableInformationContent";
@@ -3812,6 +3818,45 @@ const NOT_REC_AUTHORITY_DATA = {
   ],
 };
 
+const ADVERSE_FITREPS_DATA = {
+  references: [
+    { title: "MCO 1610.7B (PES)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1610.7", isQuickLink: true },
+    { title: "NAVMC 10835 (Fitness Report)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=NAVMC%2010835" },
+  ],
+};
+
+const MERITORIOUS_PROMOTION_DATA = {
+  references: [
+    { title: "MCO P1400.32D (Promotion Manual Vol 2)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1400.32", isQuickLink: true },
+  ],
+};
+
+const REENLISTMENT_AUTHORITY_DATA = {
+  references: [
+    { title: "MCO 1040.31 (Enlisted Retention)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1040.31", isQuickLink: true },
+    { title: "TFRS (Total Force Retention System)", url: "https://tfrs.usmc.mil/" },
+  ],
+};
+
+const PAGE_11_COMMANDER_DATA = {
+  references: [
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1070.12", isQuickLink: true },
+  ],
+};
+
+const ADVERSE_LETTERS_DATA = {
+  references: [
+    { title: "MCO 5800.16 Vol 14 (Legal Support)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5800.16", isQuickLink: true },
+  ],
+};
+
+const TRANSITION_OVERSIGHT_DATA = {
+  references: [
+    { title: "MCO 1700.31 (Transition Readiness)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1700.31", isQuickLink: true },
+    { title: "DD Form 2648 (Pre-Separation Counseling)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd2648.pdf" },
+  ],
+};
+
 // Commanders - Public Affairs & Media Relations Data
 const MEDIA_ENGAGEMENT_DATA = {
   references: [
@@ -4425,6 +4470,12 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "jepes-commander": <JEPESCommanderRoleContent data={JEPES_COMMANDER_DATA} />,
     "6105-entries": <CounselingEntriesContent data={COUNSELING_ENTRIES_6105_DATA} />,
     "not-rec-authority": <NotRecAuthorityContent data={NOT_REC_AUTHORITY_DATA} />,
+    "adverse-fitreps": <AdverseFitrepsContent data={ADVERSE_FITREPS_DATA} />,
+    "meritorious-promotion-authority": <MeritoriousPromotionAuthorityContent data={MERITORIOUS_PROMOTION_DATA} />,
+    "reenlistment-authority": <ReenlistmentAuthorityContent data={REENLISTMENT_AUTHORITY_DATA} />,
+    "page-11-commander": <Page11CommanderContent data={PAGE_11_COMMANDER_DATA} />,
+    "adverse-letters": <AdverseLettersContent data={ADVERSE_LETTERS_DATA} />,
+    "transition-oversight": <TransitionOversightContent data={TRANSITION_OVERSIGHT_DATA} />,
     // Commanders - Public Affairs & Media Relations
     "media-engagement": <MediaEngagementContent data={MEDIA_ENGAGEMENT_DATA} />,
     "releasable-info": <ReleasableInformationContent data={RELEASABLE_INFORMATION_DATA} />,
