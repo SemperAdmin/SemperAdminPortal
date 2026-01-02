@@ -2485,22 +2485,22 @@ const IG_COMPLAINTS_DATA = {
 
 const NJP_AUTHORITY_LEVELS_DATA = {
   references: [
-    { title: "MCO 5800.16 Volume 14 - Legal Support and Administration Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/" },
-    { title: "Manual for Courts-Martial, Part V - NJP Procedures", url: "https://jsc.defense.gov/Military-Law/Current-Publications-702-HG/" },
+    { title: "MCO 5800.16 Volume 14 - Legal Support and Administration Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/", isQuickLink: true },
+    { title: "Manual for Courts-Martial, Part V - NJP Procedures", url: "https://jsc.defense.gov/Military-Law/Current-Publications-702-HG/", isQuickLink: true },
     { title: "JAGMAN 0111 - NJP Guidance", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf" },
   ],
 };
 
 const NJP_RECOMMENDATION_DATA = {
   references: [
-    { title: "MCO 5800.16 Volume 14 - Legal Support and Administration Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/" },
-    { title: "MCO P1070.12K - Individual Records Administration Manual (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899135/mco-p107012k/" },
+    { title: "MCO 5800.16 Volume 14 - Legal Support and Administration Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/", isQuickLink: true },
+    { title: "MCO P1070.12K - Individual Records Administration Manual (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899135/mco-p107012k/", isQuickLink: true },
   ],
 };
 
 const UA_DESERTION_REPORTING_DATA = {
   references: [
-    { title: "MCO 1620.3A - Absentee and Deserter Apprehension Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899304/mco-16203a/" },
+    { title: "MCO 1620.3A - Absentee and Deserter Apprehension Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899304/mco-16203a/", isQuickLink: true },
     { title: "MCO P5800.16A - Legal Administration Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/" },
     { title: "MCO 1610.7 - Performance Evaluation System (Chapter 3)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899293/mco-16107/" },
   ],
@@ -2508,23 +2508,23 @@ const UA_DESERTION_REPORTING_DATA = {
 
 const ADSEP_OVERVIEW_DATA = {
   references: [
-    { title: "MCO P1900.16 - MARCORSEPMAN (Paragraph 6105)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899390/mco-190016g/" },
+    { title: "MCO P1900.16 - MARCORSEPMAN (Paragraph 6105)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899390/mco-190016g/", isQuickLink: true },
     { title: "MCO P1070.12K - Individual Records Administration Manual (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899135/mco-p107012k/" },
-    { title: "DoDI 1332.14 - Enlisted Administrative Separations", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/133214p.pdf" },
+    { title: "DoDI 1332.14 - Enlisted Administrative Separations", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/133214p.pdf", isQuickLink: true },
   ],
 };
 
 const LEGAL_HOLD_INVESTIGATIONS_DATA = {
   references: [
-    { title: "MCO 5800.16 - Legal Support and Administration Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/" },
-    { title: "JAGMAN - Judge Advocate General Manual", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf" },
+    { title: "MCO 5800.16 - Legal Support and Administration Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/", isQuickLink: true },
+    { title: "JAGMAN - Judge Advocate General Manual", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
   ],
 };
 
 const ARTICLE_31B_RIGHTS_DATA = {
   references: [
-    { title: "10 U.S.C. 831 - Article 31, UCMJ", url: "https://www.law.cornell.edu/uscode/text/10/831" },
-    { title: "Military Rules of Evidence 305", url: "https://jsc.defense.gov/Military-Law/Current-Publications-702-HG/" },
+    { title: "10 U.S.C. 831 - Article 31, UCMJ", url: "https://www.law.cornell.edu/uscode/text/10/831", isQuickLink: true },
+    { title: "Military Rules of Evidence 305", url: "https://jsc.defense.gov/Military-Law/Current-Publications-702-HG/", isQuickLink: true },
     { title: "MCO 5800.16 - Legal Support and Administration Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/" },
     { title: "HQMC Practice Advisory 21-4 - Article 31 Rights Advisories", url: "https://www.hqmc.marines.mil/sja/" },
   ],
@@ -2532,8 +2532,8 @@ const ARTICLE_31B_RIGHTS_DATA = {
 
 const PROGRESSIVE_DISCIPLINE_DATA = {
   references: [
-    { title: "MCO P1070.12K - IRAM (Page 11 Entries)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899135/mco-p107012k/" },
-    { title: "MCO P1900.16 - MARCORSEPMAN (Paragraph 6105)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899390/mco-190016g/" },
+    { title: "MCO P1070.12K - IRAM (Page 11 Entries)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899135/mco-p107012k/", isQuickLink: true },
+    { title: "MCO P1900.16 - MARCORSEPMAN (Paragraph 6105)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899390/mco-190016g/", isQuickLink: true },
     { title: "JAGMAN Chapter I - EMI and Administrative Measures", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf" },
     { title: "MCO 5800.16 - Legal Support and Administration Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899474/mco-580016-vol-14/" },
   ],
@@ -2570,15 +2570,15 @@ const HAZING_HARASSMENT_REPORTING_DATA = {
 // Leaders - Awards & Recognition
 const WRITING_AWARD_RECOMMENDATIONS_DATA = {
   references: [
-    { title: "SECNAV M-1650.1 - Navy and Marine Corps Awards Manual", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf" },
+    { title: "SECNAV M-1650.1 - Navy and Marine Corps Awards Manual", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf", isQuickLink: true },
     { title: "SECNAVINST 1650.1J - Department of the Navy Military Awards Policy", url: "https://www.secnav.navy.mil/doni/Directives/01000%20Military%20Personnel%20Support/01-600%20Performance%20and%20Discipline%20Programs/1650.1J.pdf" },
-    { title: "MCO 1650.19J with CH1 - Administrative and Issue Procedures for Decorations, Medals, and Awards", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899334/mco-165019j-wch-1/" },
+    { title: "MCO 1650.19J with CH1 - Administrative and Issue Procedures for Decorations, Medals, and Awards", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899334/mco-165019j-wch-1/", isQuickLink: true },
   ],
 };
 
 const CITATION_FORMAT_REQUIREMENTS_DATA = {
   references: [
-    { title: "SECNAV M-1650.1, Chapter 2, Appendix B - Sample Citations", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf" },
+    { title: "SECNAV M-1650.1, Chapter 2, Appendix B - Sample Citations", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf", isQuickLink: true },
     { title: "SECNAV M-1650.1, Table 20 - PMD Combination Citation/Certificate Format", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf" },
     { title: "SECNAV M-1650.1, Table 21 - NC and NAM Standard Opening Sentences", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf" },
   ],
@@ -2586,247 +2586,247 @@ const CITATION_FORMAT_REQUIREMENTS_DATA = {
 
 const COMMON_AWARD_ERRORS_DATA = {
   references: [
-    { title: "SECNAV M-1650.1 - Navy and Marine Corps Awards Manual", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf" },
-    { title: "MARADMIN 077/25 - CMC Delegation of Awarding Authority", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4073209/commandant-of-the-marine-corps-delegation-of-awarding-authority-for-military-aw/" },
+    { title: "SECNAV M-1650.1 - Navy and Marine Corps Awards Manual", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf", isQuickLink: true },
+    { title: "MARADMIN 077/25 - CMC Delegation of Awarding Authority", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4073209/commandant-of-the-marine-corps-delegation-of-awarding-authority-for-military-aw/", isQuickLink: true },
     { title: "MARADMIN 093/25 - PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4078781/military-awards-guidance-for-permanent-change-of-station-season/" },
   ],
 };
 
 const IAPS_SUBMISSION_DATA = {
   references: [
-    { title: "MARADMIN 042/08 - Implementation of iAPS", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/893622/implementation-of-the-improved-awards-processing-system-iaps/" },
+    { title: "MARADMIN 042/08 - Implementation of iAPS", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/893622/implementation-of-the-improved-awards-processing-system-iaps/", isQuickLink: true },
     { title: "MARADMIN 099/18 - iAPS Updates", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/1438860/improved-awards-processing-system-iaps-updates/" },
-    { title: "MARADMIN 077/25 - CMC Delegation of Awarding Authority", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4073209/commandant-of-the-marine-corps-delegation-of-awarding-authority-for-military-aw/" },
+    { title: "MARADMIN 077/25 - CMC Delegation of Awarding Authority", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4073209/commandant-of-the-marine-corps-delegation-of-awarding-authority-for-military-aw/", isQuickLink: true },
   ],
 };
 
 const AWARD_ROUTING_APPROVAL_DATA = {
   references: [
-    { title: "MARADMIN 077/25 (21 Feb 2025) - CMC Delegation of Awarding Authority for Military Awards", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4073209/commandant-of-the-marine-corps-delegation-of-awarding-authority-for-military-aw/" },
+    { title: "MARADMIN 077/25 (21 Feb 2025) - CMC Delegation of Awarding Authority for Military Awards", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4073209/commandant-of-the-marine-corps-delegation-of-awarding-authority-for-military-aw/", isQuickLink: true },
     { title: "SECNAVINST 1650.1J - Department of the Navy Military Awards Policy", url: "https://www.secnav.navy.mil/doni/Directives/01000%20Military%20Personnel%20Support/01-600%20Performance%20and%20Discipline%20Programs/1650.1J.pdf" },
-    { title: "SECNAV M-1650.1 - Navy and Marine Corps Awards Manual", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf" },
+    { title: "SECNAV M-1650.1 - Navy and Marine Corps Awards Manual", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf", isQuickLink: true },
     { title: "MCO 1650.19J with CH1 - Administrative and Issue Procedures for Decorations, Medals, and Awards", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899334/mco-165019j-wch-1/" },
   ],
 };
 
 const AWARD_TIMELINE_MANAGEMENT_DATA = {
   references: [
-    { title: "MARADMIN 093/25 - PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4078781/military-awards-guidance-for-permanent-change-of-station-season/" },
-    { title: "MCO 1650.19J with CH1 - Administrative and Issue Procedures for Decorations, Medals, and Awards", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899334/mco-165019j-wch-1/" },
+    { title: "MARADMIN 093/25 - PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4078781/military-awards-guidance-for-permanent-change-of-station-season/", isQuickLink: true },
+    { title: "MCO 1650.19J with CH1 - Administrative and Issue Procedures for Decorations, Medals, and Awards", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899334/mco-165019j-wch-1/", isQuickLink: true },
   ],
 };
 
 const AWARD_TROUBLESHOOTING_DATA = {
   references: [
-    { title: "MCO 1650.19J with CH1 - Administrative and Issue Procedures for Decorations, Medals, and Awards", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899334/mco-165019j-wch-1/" },
-    { title: "MARADMIN 093/25 - PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4078781/military-awards-guidance-for-permanent-change-of-station-season/" },
+    { title: "MCO 1650.19J with CH1 - Administrative and Issue Procedures for Decorations, Medals, and Awards", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899334/mco-165019j-wch-1/", isQuickLink: true },
+    { title: "MARADMIN 093/25 - PCS Season Awards Guidance", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4078781/military-awards-guidance-for-permanent-change-of-station-season/", isQuickLink: true },
   ],
 };
 
 // Leaders - Career Development
 const SUPPORTING_REENLISTMENT_DECISIONS_DATA = {
   references: [
-    { title: "MCO 1616.1 - Junior Enlisted Performance Evaluation System (JEPES)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899293/mco-16107/" },
-    { title: "MCO P1040.31J - Enlisted Retention and Career Development Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899214/mco-p104031j/" },
+    { title: "MCO 1616.1 - Junior Enlisted Performance Evaluation System (JEPES)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899293/mco-16107/", isQuickLink: true },
+    { title: "MCO P1040.31J - Enlisted Retention and Career Development Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899214/mco-p104031j/", isQuickLink: true },
     { title: "MARADMIN 046/24 - Updates to JEPES MOS Qualifications Initiative", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/3662965/updates-to-the-implementation-of-military-occupational-specialty-qualifications/" },
   ],
 };
 
 const PME_TRACKING_COMPLETION_DATA = {
   references: [
-    { title: "MCO 1553.4B - Professional Military Education", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899348/mco-15534b/" },
+    { title: "MCO 1553.4B - Professional Military Education", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899348/mco-15534b/", isQuickLink: true },
     { title: "MCO P1400.32D - Enlisted Promotion Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899216/mco-p140032d/" },
-    { title: "MARADMIN 474/21 - Updated Enlisted PME Requirements by Grade", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/2763368/updated-enlisted-professional-military-education-requirements-by-grade/" },
+    { title: "MARADMIN 474/21 - Updated Enlisted PME Requirements by Grade", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/2763368/updated-enlisted-professional-military-education-requirements-by-grade/", isQuickLink: true },
   ],
 };
 
 const MERITORIOUS_PROMOTION_PREPARATION_DATA = {
   references: [
-    { title: "MCO P1400.32D - Enlisted Promotion Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899216/mco-p140032d/" },
-    { title: "MARADMIN 667/22 - Update to Meritorious Promotion Policy to Cpl and Sgt", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/3241497/update-to-meritorious-promotion-policy-to-corporal-and-sergeant/" },
+    { title: "MCO P1400.32D - Enlisted Promotion Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899216/mco-p140032d/", isQuickLink: true },
+    { title: "MARADMIN 667/22 - Update to Meritorious Promotion Policy to Cpl and Sgt", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/3241497/update-to-meritorious-promotion-policy-to-corporal-and-sergeant/", isQuickLink: true },
   ],
 };
 
 const SPECIAL_DUTY_ASSIGNMENT_SCREENING_DATA = {
   references: [
-    { title: "MCO 1326.6 - SCREENMAN (Special Duty Assignment Screening)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899313/mco-13266/" },
-    { title: "MARADMIN 706/19 - SDA and Screenable Billets Compliance Requirements", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/2046247/special-duty-assignment-and-screenable-billets-compliance-requirements/" },
+    { title: "MCO 1326.6 - SCREENMAN (Special Duty Assignment Screening)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899313/mco-13266/", isQuickLink: true },
+    { title: "MARADMIN 706/19 - SDA and Screenable Billets Compliance Requirements", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/2046247/special-duty-assignment-and-screenable-billets-compliance-requirements/", isQuickLink: true },
   ],
 };
 
 const LATERAL_MOVE_GUIDANCE_DATA = {
   references: [
-    { title: "MCO P1040.31J - Enlisted Retention and Career Development Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899214/mco-p104031j/" },
+    { title: "MCO P1040.31J - Enlisted Retention and Career Development Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899214/mco-p104031j/", isQuickLink: true },
   ],
 };
 
 const ENLISTED_COMMISSIONING_PROGRAMS_DATA = {
   references: [
-    { title: "MCO 1040.43B - Enlisted to Officer Commissioning Programs", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899211/mco-104043b/" },
-    { title: "MCO 1560.15L - Marine Enlisted Commissioning Education Program (MECEP)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899354/mco-156015l/" },
+    { title: "MCO 1040.43B - Enlisted to Officer Commissioning Programs", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899211/mco-104043b/", isQuickLink: true },
+    { title: "MCO 1560.15L - Marine Enlisted Commissioning Education Program (MECEP)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899354/mco-156015l/", isQuickLink: true },
   ],
 };
 
 const WARRANT_OFFICER_PROGRAM_SUPPORT_DATA = {
   references: [
-    { title: "MCO 1040.42A/B - Warrant Officer and LDO Accession Programs", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899210/mco-104042b/" },
-    { title: "SECNAVINST 1412.9B - Officer Accession Programs", url: "https://www.secnav.navy.mil/doni/Directives/01000%20Military%20Personnel%20Support/01-400%20Promotion%20and%20Advancement%20Programs/1412.9B.pdf" },
+    { title: "MCO 1040.42A/B - Warrant Officer and LDO Accession Programs", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899210/mco-104042b/", isQuickLink: true },
+    { title: "SECNAVINST 1412.9B - Officer Accession Programs", url: "https://www.secnav.navy.mil/doni/Directives/01000%20Military%20Personnel%20Support/01-400%20Promotion%20and%20Advancement%20Programs/1412.9B.pdf", isQuickLink: true },
   ],
 };
 
 // Leaders - Counseling & Documentation
 const SIX_FUNCTIONAL_AREAS_DATA = {
   references: [
-    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/" },
-    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf" },
+    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/", isQuickLink: true },
+    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf", isQuickLink: true },
   ],
 };
 
 const SMART_GOALS_DATA = {
   references: [
-    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/" },
-    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf" },
+    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/", isQuickLink: true },
+    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf", isQuickLink: true },
   ],
 };
 
 const COUNSELING_FUNDAMENTALS_DATA = {
   references: [
-    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/" },
-    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf" },
+    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/", isQuickLink: true },
+    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf", isQuickLink: true },
   ],
 };
 
 const REQUIRED_COUNSELING_OCCASIONS_DATA = {
   references: [
-    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/" },
-    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf" },
+    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/", isQuickLink: true },
+    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf", isQuickLink: true },
   ],
 };
 
 const INITIAL_COUNSELING_SESSION_DATA = {
   references: [
-    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/" },
-    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf" },
+    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/", isQuickLink: true },
+    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf", isQuickLink: true },
   ],
 };
 
 const FOLLOW_ON_COUNSELING_SESSIONS_DATA = {
   references: [
-    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/" },
-    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf" },
+    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/", isQuickLink: true },
+    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf", isQuickLink: true },
   ],
 };
 
 const MARINE_LEADER_NOTEBOOKS_DATA = {
   references: [
-    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/" },
-    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf" },
+    { title: "MCO 1500.61 - Marine Leader Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/900396/mco-150061/", isQuickLink: true },
+    { title: "NAVMC 2795 - User's Guide to Counseling", url: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf", isQuickLink: true },
   ],
 };
 
 // Leaders - Deployment & Readiness
 const UPFRP_OVERVIEW_DATA = {
   references: [
-    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677" },
+    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677", isQuickLink: true },
   ],
 };
 
 const DEPLOYMENT_TRAINING_EVENTS_DATA = {
   references: [
-    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677" },
+    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677", isQuickLink: true },
   ],
 };
 
 const INDIVIDUAL_READINESS_REQUIREMENTS_DATA = {
   references: [
-    { title: "MCO 6100.13A - Marine Corps Physical Fitness Program", url: "https://www.marines.mil/Portals/1/Publications/MCO%206100.13A.pdf" },
+    { title: "MCO 6100.13A - Marine Corps Physical Fitness Program", url: "https://www.marines.mil/Portals/1/Publications/MCO%206100.13A.pdf", isQuickLink: true },
     { title: "MCO 1040.31 - Enlisted Retention and Career Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-104031/" },
-    { title: "BUMEDINST 6230.15B - Immunizations and Chemoprophylaxis", url: "https://www.med.navy.mil/Portals/62/Documents/BUMED/Directives/6000s/6230_15B.pdf" },
+    { title: "BUMEDINST 6230.15B - Immunizations and Chemoprophylaxis", url: "https://www.med.navy.mil/Portals/62/Documents/BUMED/Directives/6000s/6230_15B.pdf", isQuickLink: true },
   ],
 };
 
 const FAMILY_CARE_PLAN_REQUIREMENTS_DATA = {
   references: [
-    { title: "MCO 1754.6 - Family Care Plan Policy", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899529/mco-17546/" },
+    { title: "MCO 1754.6 - Family Care Plan Policy", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899529/mco-17546/", isQuickLink: true },
     { title: "MCO 1040.31 - Enlisted Retention and Career Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-104031/" },
   ],
 };
 
 const OBLIGATED_SERVICE_DEPLOYMENT_DATA = {
   references: [
-    { title: "MCO 1040.31 - Enlisted Retention and Career Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-104031/" },
-    { title: "MCO 1300.8 - Marine Corps Personnel Assignment Policy", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899258/mco-13008/" },
+    { title: "MCO 1040.31 - Enlisted Retention and Career Development", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-104031/", isQuickLink: true },
+    { title: "MCO 1300.8 - Marine Corps Personnel Assignment Policy", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899258/mco-13008/", isQuickLink: true },
   ],
 };
 
 const PHYSICAL_FITNESS_READINESS_DATA = {
   references: [
-    { title: "MCO 6100.13A - Marine Corps Physical Fitness Program", url: "https://www.marines.mil/Portals/1/Publications/MCO%206100.13A.pdf" },
+    { title: "MCO 6100.13A - Marine Corps Physical Fitness Program", url: "https://www.marines.mil/Portals/1/Publications/MCO%206100.13A.pdf", isQuickLink: true },
   ],
 };
 
 const PRE_DEPLOYMENT_CHECKLIST_DATA = {
   references: [
-    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677" },
-    { title: "MCO 3000.11E - Marine Corps Deployment Planning", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899716/mco-300011e/" },
+    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677", isQuickLink: true },
+    { title: "MCO 3000.11E - Marine Corps Deployment Planning", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899716/mco-300011e/", isQuickLink: true },
   ],
 };
 
 const SUPPORTING_IAS_AND_TAD_DATA = {
   references: [
-    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677" },
+    { title: "MCO 1754.9B - Unit, Personal and Family Readiness Program", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677", isQuickLink: true },
   ],
 };
 
 // Leaders - Performance Evaluation
 const JEPES_OVERVIEW_LEADERS_DATA = {
   references: [
-    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
-    { title: "MCO P1400.32D - Enlisted Promotion Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899270/mco-p140032d/" },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: true },
+    { title: "MCO P1400.32D - Enlisted Promotion Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899270/mco-p140032d/", isQuickLink: true },
   ],
 };
 
 const JEPES_REPORTING_CHAIN_DATA = {
   references: [
-    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: true },
   ],
 };
 
 const JEPES_REPORTING_OCCASIONS_DATA = {
   references: [
-    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: true },
   ],
 };
 
 const JEPES_COMMAND_INPUT_METRICS_DATA = {
   references: [
-    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: true },
   ],
 };
 
 const NOT_REC_DATA = {
   references: [
-    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
-    { title: "MCO P1400.32D - Enlisted Promotion Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899270/mco-p140032d/" },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: true },
+    { title: "MCO P1400.32D - Enlisted Promotion Manual", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899270/mco-p140032d/", isQuickLink: true },
   ],
 };
 
 const JEPES_OBJECTIVE_SCORES_DATA = {
   references: [
-    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
-    { title: "MARADMIN 046/24 - Updates to JEPES MOS Qualifications", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: true },
+    { title: "MARADMIN 046/24 - Updates to JEPES MOS Qualifications", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
   ],
 };
 
 const JEPES_DEBRIEFING_DATA = {
   references: [
-    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: true },
   ],
 };
 
 const FITNESS_REPORTS_LEADERS_DATA = {
   references: [
-    { title: "MCO 1610.7 - Performance Evaluation System", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899225/mco-16107/" },
+    { title: "MCO 1610.7 - Performance Evaluation System", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899225/mco-16107/", isQuickLink: true },
   ],
 };
 
@@ -2841,64 +2841,64 @@ const NOT_REC_APPEAL_PROCESS_DATA = {
 
 const BILLET_ACCOMPLISHMENTS_DATA = {
   references: [
-    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: true },
   ],
 };
 
 const JEPES_CORRECTIVE_PROCEDURES_DATA = {
   references: [
-    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: true },
   ],
 };
 
 // Leaders - Personnel Accountability DATA
 const DAILY_ACCOUNTABILITY_FUNDAMENTALS_DATA = {
   references: [
-    { title: "MCO 1040.31 - Time Lost", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
-    { title: "MCO 1050.3 - Leave and Liberty", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899184/mco-10503k/" },
+    { title: "MCO 1040.31 - Time Lost", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/", isQuickLink: true },
+    { title: "MCO 1050.3 - Leave and Liberty", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899184/mco-10503k/", isQuickLink: true },
   ],
 };
 
 const GAINS_LOSSES_PROCESSING_DATA = {
   references: [
-    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/" },
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/", isQuickLink: true },
     { title: "MCO 1040.31 - Time Lost", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
   ],
 };
 
 const LEAVE_LIBERTY_MANAGEMENT_DATA = {
   references: [
-    { title: "MCO 1050.3 - Leave and Liberty", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899184/mco-10503k/" },
-    { title: "DoD FMR Vol 7A, Ch 34 - Leave", url: "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_34.pdf" },
+    { title: "MCO 1050.3 - Leave and Liberty", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899184/mco-10503k/", isQuickLink: true },
+    { title: "DoD FMR Vol 7A, Ch 34 - Leave", url: "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_34.pdf", isQuickLink: true },
   ],
 };
 
 const UA_PROCEDURES_DATA = {
   references: [
-    { title: "MCO 1040.31 - Time Lost", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
+    { title: "MCO 1040.31 - Time Lost", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/", isQuickLink: true },
     { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/" },
-    { title: "UCMJ Article 86 - Absence Without Leave", url: "https://www.law.cornell.edu/uscode/text/10/886" },
+    { title: "UCMJ Article 86 - Absence Without Leave", url: "https://www.law.cornell.edu/uscode/text/10/886", isQuickLink: true },
   ],
 };
 
 const TAD_DETACHMENT_TRACKING_DATA = {
   references: [
-    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/" },
-    { title: "JTR - Joint Travel Regulations", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/" },
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/", isQuickLink: true },
+    { title: "JTR - Joint Travel Regulations", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: true },
   ],
 };
 
 const MUSTER_FORMATION_PROCEDURES_DATA = {
   references: [
-    { title: "MCO 1040.31 - Time Lost", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
-    { title: "MCO P1050.3 - Leave and Liberty", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899184/mco-10503k/" },
+    { title: "MCO 1040.31 - Time Lost", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/", isQuickLink: true },
+    { title: "MCO P1050.3 - Leave and Liberty", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899184/mco-10503k/", isQuickLink: true },
   ],
 };
 
 const RECORD_KEEPING_DOCUMENTATION_DATA = {
   references: [
-    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/" },
-    { title: "MCTFS User Guide", url: "https://www.manpower.usmc.mil/webcenter/portal/MCTFS" },
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/", isQuickLink: true },
+    { title: "MCTFS User Guide", url: "https://www.manpower.usmc.mil/webcenter/portal/MCTFS", isQuickLink: true },
     { title: "MCO 5210.11 - Records Management", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899348/mco-521011f/" },
   ],
 };
@@ -2906,8 +2906,8 @@ const RECORD_KEEPING_DOCUMENTATION_DATA = {
 // Leaders - Administrative Systems DATA
 const MCTFS_OVERVIEW_DATA = {
   references: [
-    { title: "MCO 1754.9B - Unit, Personal and Family Readiness", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677" },
-    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "MCO 1754.9B - Unit, Personal and Family Readiness", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677", isQuickLink: true },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: true },
     { title: "MCO 1040.31 - Enlisted Retention", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
   ],
 };
@@ -2922,23 +2922,23 @@ const MOL_NAVIGATION_DATA = {
 
 const JEPES_SYSTEM_NAVIGATION_DATA = {
   references: [
-    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
+    { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: true },
     { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil", isQuickLink: true },
   ],
 };
 
 const TFRS_OVERVIEW_DATA = {
   references: [
-    { title: "MCO 1040.31 - Enlisted Retention", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/" },
-    { title: "NAVMC 11537 - Reenlistment Screening", url: "https://forms.documentservices.dla.mil/order/" },
+    { title: "MCO 1040.31 - Enlisted Retention", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899178/mco-104031/", isQuickLink: true },
+    { title: "NAVMC 11537 - Reenlistment Screening", url: "https://forms.documentservices.dla.mil/order/", isQuickLink: true },
   ],
 };
 
 const UNIT_DIARY_REPORTING_DATA = {
   references: [
-    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/" },
+    { title: "MCO P1070.12K - IRAM", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899193/mco-p107012k/", isQuickLink: true },
     { title: "MCO 6100.13A - Physical Fitness Program", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899201/mco-610013a/" },
-    { title: "MCTFS PRIUM", url: "https://www.manpower.usmc.mil/webcenter/portal/MCTFS" },
+    { title: "MCTFS PRIUM", url: "https://www.manpower.usmc.mil/webcenter/portal/MCTFS", isQuickLink: true },
   ],
 };
 
@@ -2953,8 +2953,8 @@ const TRAINING_INFORMATION_SYSTEMS_DATA = {
 
 const MCO_QUICK_REFERENCE_DATA = {
   references: [
-    { title: "Marines.mil Publications", url: "https://www.marines.mil/News/Publications/MCPEL/" },
-    { title: "Marine Corps Publications Electronic Library (MCPEL)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/" },
+    { title: "Marines.mil Publications", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "Marine Corps Publications Electronic Library (MCPEL)", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/", isQuickLink: true },
   ],
 };
 
