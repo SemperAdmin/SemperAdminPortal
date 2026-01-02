@@ -1,4 +1,4 @@
-# Content Needed: 146 Placeholder Items
+# Content Needed: 119 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 143 items |
+| **Commanders** | 116 items |
 | **Administrators** | 0 items |
 
 ---
@@ -101,13 +101,16 @@ Remaining:
 ## Equal Opportunity
 **Section:** `commanders-equal-opportunity`
 
+Completed items:
+- ~~`eo-policy`~~ - COMPLETED
+- ~~`eor-appointment`~~ - COMPLETED
+- ~~`eo-complaint-process`~~ - COMPLETED
+- ~~`eo-investigation`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
-| `eo-policy` | EO Policy Statement | Commander's equal opportunity policy |
-| `eor-appointment` | EO Representative Appointment | Selecting and training unit EO Representatives |
 | `eo-climate-assessment` | Climate Assessment | Monitoring unit climate through DEOCS and observation |
-| `eo-complaint-process` | EO Complaint Process | Formal and informal complaint resolution |
-| `eo-investigation` | Investigation Requirements | When investigations are required and procedures |
 | `eo-retaliation-prevention` | Retaliation Prevention | Protecting complainants from retaliation |
 
 ## Family Readiness & Casualty Affairs
@@ -276,49 +279,50 @@ Remaining:
 ## Suicide Prevention & Force Preservation
 **Section:** `commanders-suicide-prevention`
 
-| Slug | Title | Description |
-|------|-------|-------------|
-| `sppo-appointment` | SPPO Appointment | Suicide Prevention Program Officer selection and duties |
-| `force-preservation-council` | Force Preservation Council | Meeting frequency, attendees, and required actions |
-| `cirras-oversight` | CIRRAS Oversight | What gets entered, update requirements, PCS warm handoffs |
-| `critical-stressors` | Critical Stressors | First 90 days post-NJP, relationship distress, financial problems |
-| `lethal-means-safety` | Lethal Means Safety | Voluntary firearms storage and safety planning |
-| `postvention` | Postvention Procedures | Command response after a suicide or attempt |
-| `mflc-program` | MFLC Program | Military and Family Life Counselor availability |
-| `chaplain-support` | Chaplain Support | Privileged communication and spiritual support |
-| `cosc-oscar` | Combat Operational Stress Control | CCP and OSCAR team integration |
+All Suicide Prevention & Force Preservation items now have content:
+- ~~`sppo-appointment`~~ - COMPLETED
+- ~~`force-preservation-council`~~ - COMPLETED
+- ~~`cirras-oversight`~~ - COMPLETED
+- ~~`critical-stressors`~~ - COMPLETED
+- ~~`lethal-means-safety`~~ - COMPLETED
+- ~~`postvention`~~ - COMPLETED
+- ~~`mflc-program`~~ - COMPLETED
+- ~~`chaplain-support`~~ - COMPLETED
+- ~~`cosc-oscar`~~ - COMPLETED
 
 ## Training & Readiness
 **Section:** `commanders-training-readiness`
 
+Completed items:
+- ~~`drrs-mc-overview`~~ - COMPLETED
+- ~~`metl-development`~~ - COMPLETED
+- ~~`c-level-assessment`~~ - COMPLETED
+- ~~`readiness-board`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
-| `drrs-mc-overview` | DRRS-MC Overview | Defense Readiness Reporting System - Marine Corps |
-| `metl-development` | METL Development | Developing Mission Essential Task Lists |
 | `metl-assessment` | METL Assessment | Assessing task proficiency levels |
 | `metl-annual-review` | Annual METL Review | 30-day and annual review requirements |
 | `t-level-reporting` | T-Level (Training) | Training readiness assessment and reporting |
 | `p-level-reporting` | P-Level (Personnel) | Personnel readiness measurement and reporting |
 | `s-level-reporting` | S-Level (Supply/Equipment) | Equipment on-hand status reporting |
 | `r-level-reporting` | R-Level (Equipment Readiness) | Equipment operational status reporting |
-| `c-level-assessment` | C-Level & A-Level Assessments | Overall and individual MET capability ratings |
-| `readiness-board` | Readiness Board Requirements | Conducting readiness reviews and briefings |
 
 ## Environmental Compliance
 **Section:** `commanders-environmental`
 
-| Slug | Title | Description |
-|------|-------|-------------|
-| `ecc-appointment` | ECC Appointment | Environmental Compliance Coordinator designation |
-| `ems-overview` | EMS Overview | Environmental Management System requirements |
-| `hazmat-management` | Hazardous Material Management | HAZMAT handling, storage, and disposal |
-| `spill-reporting` | Spill Reporting | Spill response and reporting requirements |
-| `nepa-compliance` | NEPA Compliance | National Environmental Policy Act requirements |
-| `environmental-funding` | Environmental Funding | Budget considerations for environmental programs |
-| `benchmark-ece` | Benchmark ECE | Environmental compliance evaluation preparation |
-| `internal-ece` | Internal ECE | Conducting internal environmental assessments |
-| `ore-oversight` | ORE Oversight | Operational Range Environment oversight |
-| `commanders-override` | Commander's Override | Override authority for environmental requirements |
+All Environmental Compliance items now have content:
+- ~~`ecc-appointment`~~ - COMPLETED
+- ~~`ems-overview`~~ - COMPLETED
+- ~~`hazmat-management`~~ - COMPLETED
+- ~~`spill-reporting`~~ - COMPLETED
+- ~~`nepa-compliance`~~ - COMPLETED
+- ~~`environmental-funding`~~ - COMPLETED
+- ~~`benchmark-ece`~~ - COMPLETED
+- ~~`internal-ece`~~ - COMPLETED
+- ~~`ore-oversight`~~ - COMPLETED
+- ~~`commanders-override`~~ - COMPLETED
 
 ---
 
