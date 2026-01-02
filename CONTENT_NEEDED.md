@@ -1,4 +1,4 @@
-# Content Needed: 111 Placeholder Items
+# Content Needed: 107 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 108 items |
+| **Commanders** | 104 items |
 | **Administrators** | 0 items |
 
 ---
@@ -149,17 +149,20 @@ Remaining items:
 ## Inspector General & Inspections
 **Section:** `commanders-inspector-general`
 
+Completed items:
+- ~~`cip-overview`~~ - COMPLETED
+- ~~`cgip-preparation`~~ - COMPLETED
+- ~~`igmc-functional-areas`~~ - COMPLETED
+- ~~`poam-management`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
-| `cip-overview` | CIP Overview | Command Inspection Program structure and requirements |
-| `cgip-preparation` | CGIP Preparation | Commanding General's Inspection Program |
-| `igmc-functional-areas` | IGMC Functional Areas | CoRE and CoRE+ functional area checklists |
 | `internal-inspections` | Internal Inspections | MMIIP and supply inspection programs |
 | `smat-inspections` | SMAT Inspections | Supply Management Assistance Team visits |
 | `fsmao-analysis` | FSMAO Analysis | Fiscal and supply management analysis |
 | `pre-inspection-prep` | Pre-Inspection Preparation | Preparing the command for inspections |
 | `corrective-action-tracking` | Corrective Action Tracking | Tracking and closing inspection findings |
-| `poam-management` | POA&M Management | Plan of Action and Milestones tracking |
 
 ## Legal & Discipline
 **Section:** `commanders-legal-discipline`

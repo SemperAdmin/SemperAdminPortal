@@ -332,6 +332,11 @@ import { DEOCSRequirementsContent } from "../../../../../components/commanders/D
 import { PACProgramOverviewContent } from "../../../../../components/commanders/PACProgramOverviewContent";
 import { PACPolicyClimateContent } from "../../../../../components/commanders/PACPolicyClimateContent";
 import { UPFRPSOPClimateContent } from "../../../../../components/commanders/UPFRPSOPClimateContent";
+// Commanders - Inspector General & Inspections
+import { CIPOverviewContent } from "../../../../../components/commanders/CIPOverviewContent";
+import { CGIPPreparationContent } from "../../../../../components/commanders/CGIPPreparationContent";
+import { IGMCFunctionalAreasContent } from "../../../../../components/commanders/IGMCFunctionalAreasContent";
+import { POAMManagementContent } from "../../../../../components/commanders/POAMManagementContent";
 // Commanders - Transition of Command
 import {
   CornerstoneAttendanceContent,
@@ -3501,6 +3506,39 @@ const UPFRP_SOP_REQUIREMENT_DATA = {
   ],
 };
 
+// Commanders - Inspector General & Inspections Data
+const CIP_OVERVIEW_DATA = {
+  references: [
+    { title: "MCO 5040.6H (Inspections Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.6", isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/", isQuickLink: true },
+    { title: "NAVMC 5040.1 (IG Checklist User Guide)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.1" },
+  ],
+};
+
+const CGIP_PREPARATION_DATA = {
+  references: [
+    { title: "MCO 5040.6H (Inspections Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.6", isQuickLink: true },
+    { title: "IGMC Website", url: "https://www.hqmc.marines.mil/igmc/", isQuickLink: true },
+    { title: "Local MSC CGIP SOPs", url: "https://www.marines.mil" },
+  ],
+};
+
+const IGMC_FUNCTIONAL_AREAS_DATA = {
+  references: [
+    { title: "NAVMC 5040.1 (IG Checklist User Guide)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.1", isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/", isQuickLink: true },
+    { title: "MCO 5040.6H (Inspections Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.6" },
+  ],
+};
+
+const POAM_MANAGEMENT_DATA = {
+  references: [
+    { title: "MCO 5040.6H (Inspections Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.6", isQuickLink: true },
+    { title: "NAVMC 11333 (POA&M Template)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "MCO 5210.11F (Records Management)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5210.11" },
+  ],
+};
+
 // Life Events Data
 const BUYING_A_HOME_DATA = {
   references: [
@@ -4042,6 +4080,11 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "pac-program-overview": <PACProgramOverviewContent data={PAC_PROGRAM_OVERVIEW_DATA} />,
     "pac-policy-statement": <PACPolicyClimateContent data={PAC_POLICY_STATEMENT_DATA} />,
     "upfrp-sop-requirement": <UPFRPSOPClimateContent data={UPFRP_SOP_REQUIREMENT_DATA} />,
+    // Commanders - Inspector General & Inspections
+    "cip-overview": <CIPOverviewContent data={CIP_OVERVIEW_DATA} />,
+    "cgip-preparation": <CGIPPreparationContent data={CGIP_PREPARATION_DATA} />,
+    "igmc-functional-areas": <IGMCFunctionalAreasContent data={IGMC_FUNCTIONAL_AREAS_DATA} />,
+    "poam-management": <POAMManagementContent data={POAM_MANAGEMENT_DATA} />,
     // Life Events
     "buying-a-home": <BuyingAHomeContent data={BUYING_A_HOME_DATA} />,
     "deploying": <DeployingContent data={DEPLOYING_DATA} />,
@@ -4684,13 +4727,9 @@ export function generateStaticParams(): { role: Role; section: string; item: str
 
   const commandersIGSection = "commanders-inspector-general";
   const commandersIGSlugs = [
-    "cip-overview",
-    "igmc-functional-areas",
     "internal-inspections",
     "fsmao-analysis",
-    "cgip-preparation",
     "smat-inspections",
-    "poam-management",
     "pre-inspection-prep",
     "corrective-action-tracking",
   ];
