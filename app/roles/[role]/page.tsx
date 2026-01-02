@@ -97,6 +97,11 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
       slug: "leaders-personnel-accountability",
       description: "Daily accountability fundamentals, gains/losses processing, leave and liberty management, UA procedures, TAD tracking, muster and formation procedures, and record keeping.",
     },
+    {
+      label: "Conducting Investigations",
+      slug: "leaders-conducting-investigations",
+      description: "IO duties from convening order to report submission: preliminary inquiries, command investigations, evidence collection, witness interviews, standards of proof, and report format.",
+    },
   ];
   const visibleItems = isAdministrators ? adminOptions : isLeaders ? leaderCategories : categories;
   const posts = (await readPosts()).filter((p) => p.community === safeRole).sort((a, b) => b.votes * 2 + b.createdAt - (a.votes * 2 + a.createdAt)).slice(0, 5);
