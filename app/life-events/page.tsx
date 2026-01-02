@@ -3,10 +3,7 @@ import {
   Heart,
   Baby,
   Plane,
-  GraduationCap,
-  Home,
   FileText,
-  Shield,
   ArrowRight,
 } from "lucide-react";
 
@@ -38,36 +35,6 @@ const LIFE_EVENTS = [
     steps: 12,
     time: "60-90 days",
   },
-  {
-    slug: "deploying",
-    title: "Deploying",
-    description: "Verify readiness, update legal documents, and ensure family is prepared",
-    icon: Shield,
-    color: "emerald",
-    steps: 10,
-    time: "30-60 days",
-    comingSoon: true,
-  },
-  {
-    slug: "getting-out",
-    title: "Getting Out (EAS)",
-    description: "Complete TAPS, final checkout, and transition to civilian life",
-    icon: GraduationCap,
-    color: "purple",
-    steps: 15,
-    time: "12 months",
-    comingSoon: true,
-  },
-  {
-    slug: "buying-a-home",
-    title: "Buying a Home",
-    description: "Use VA loan benefits, navigate BAH considerations, and complete the purchase",
-    icon: Home,
-    color: "teal",
-    steps: 8,
-    time: "60-90 days",
-    comingSoon: true,
-  },
 ];
 
 const COLOR_CLASSES = {
@@ -88,24 +55,6 @@ const COLOR_CLASSES = {
     text: "text-amber-700 dark:text-amber-400",
     border: "border-amber-200 dark:border-amber-800",
     hover: "hover:border-amber-300 dark:hover:border-amber-700",
-  },
-  emerald: {
-    bg: "bg-emerald-100 dark:bg-emerald-900/30",
-    text: "text-emerald-700 dark:text-emerald-400",
-    border: "border-emerald-200 dark:border-emerald-800",
-    hover: "hover:border-emerald-300 dark:hover:border-emerald-700",
-  },
-  purple: {
-    bg: "bg-purple-100 dark:bg-purple-900/30",
-    text: "text-purple-700 dark:text-purple-400",
-    border: "border-purple-200 dark:border-purple-800",
-    hover: "hover:border-purple-300 dark:hover:border-purple-700",
-  },
-  teal: {
-    bg: "bg-teal-100 dark:bg-teal-900/30",
-    text: "text-teal-700 dark:text-teal-400",
-    border: "border-teal-200 dark:border-teal-800",
-    hover: "hover:border-teal-300 dark:hover:border-teal-700",
   },
 };
 
@@ -143,53 +92,34 @@ export default function LifeEventsPage() {
         {LIFE_EVENTS.map((event) => {
           const Icon = event.icon;
           const colors = COLOR_CLASSES[event.color as keyof typeof COLOR_CLASSES];
-          const isComingSoon = event.comingSoon;
 
-          const content = (
-            <div
-              className={`group relative rounded-xl border bg-white p-6 shadow-sm transition dark:bg-black/40 ${
-                colors.border
-              } ${isComingSoon ? "opacity-60" : colors.hover}`}
-            >
-              {isComingSoon && (
-                <span className="absolute right-3 top-3 rounded-full bg-zinc-200 px-2 py-0.5 text-xs font-medium text-zinc-600 dark:bg-zinc-700 dark:text-zinc-400">
-                  Coming Soon
-                </span>
-              )}
+          return (
+            <Link key={event.slug} href={`/life-events/${event.slug}`} prefetch={false}>
+              <div
+                className={`group relative rounded-xl border bg-white p-6 shadow-sm transition dark:bg-black/40 ${colors.border} ${colors.hover}`}
+              >
+                <div className={`inline-flex rounded-lg p-3 ${colors.bg}`}>
+                  <Icon className={`h-6 w-6 ${colors.text}`} />
+                </div>
 
-              <div className={`inline-flex rounded-lg p-3 ${colors.bg}`}>
-                <Icon className={`h-6 w-6 ${colors.text}`} />
-              </div>
+                <h2 className="mt-4 text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                  {event.title}
+                </h2>
 
-              <h2 className="mt-4 text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-                {event.title}
-              </h2>
+                <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                  {event.description}
+                </p>
 
-              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                {event.description}
-              </p>
+                <div className="mt-4 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-500">
+                  <span>{event.steps} steps</span>
+                  <span>~{event.time}</span>
+                </div>
 
-              <div className="mt-4 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-500">
-                <span>{event.steps} steps</span>
-                <span>~{event.time}</span>
-              </div>
-
-              {!isComingSoon && (
                 <div className="mt-4 flex items-center gap-1 text-sm font-medium text-[var(--sa-red)] group-hover:gap-2 transition-all">
                   <span>Start guide</span>
                   <ArrowRight className="h-4 w-4" />
                 </div>
-              )}
-            </div>
-          );
-
-          if (isComingSoon) {
-            return <div key={event.slug}>{content}</div>;
-          }
-
-          return (
-            <Link key={event.slug} href={`/life-events/${event.slug}`} prefetch={false}>
-              {content}
+              </div>
             </Link>
           );
         })}
