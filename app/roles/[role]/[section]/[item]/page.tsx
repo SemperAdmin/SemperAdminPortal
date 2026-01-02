@@ -393,6 +393,12 @@ import { EightDayReportContent } from "../../../../../components/commanders/Eigh
 import { ExpeditedTransferContent } from "../../../../../components/commanders/ExpeditedTransferContent";
 import { HRRTContent } from "../../../../../components/commanders/HRRTContent";
 import { SAPRPolicyPostingContent } from "../../../../../components/commanders/SAPRPolicyPostingContent";
+import { SAPRReportingTypesContent } from "../../../../../components/commanders/SAPRReportingTypesContent";
+import { SARCCoordinationContent } from "../../../../../components/commanders/SARCCoordinationContent";
+import { SAPRVAAppointmentContent } from "../../../../../components/commanders/SAPRVAAppointmentContent";
+import { CMGParticipationContent } from "../../../../../components/commanders/CMGParticipationContent";
+import { MPOSAPRContent } from "../../../../../components/commanders/MPOSAPRContent";
+import { SAPRRetaliationContent } from "../../../../../components/commanders/SAPRRetaliationContent";
 // Commanders - Inspector General & Inspections
 import { CIPOverviewContent } from "../../../../../components/commanders/CIPOverviewContent";
 import { CGIPPreparationContent } from "../../../../../components/commanders/CGIPPreparationContent";
@@ -4047,6 +4053,54 @@ const SAPR_POLICY_POSTING_DATA = {
   ],
 };
 
+const SAPR_REPORTING_TYPES_DATA = {
+  references: [
+    { title: "MCO 1752.5C (SAPR Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1752.5", isQuickLink: true },
+    { title: "DD Form 2910 (Victim Reporting)", url: "https://www.esd.whs.mil/Directives/forms/", isQuickLink: true },
+    { title: "DoDI 6495.02", url: "https://www.esd.whs.mil/Directives/issuances/dodi/" },
+  ],
+};
+
+const SARC_COORDINATION_DATA = {
+  references: [
+    { title: "MCO 1752.5C (SAPR Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1752.5", isQuickLink: true },
+    { title: "DoDI 6495.02", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: true },
+    { title: "DoD Safe Helpline", url: "https://safehelpline.org/" },
+  ],
+};
+
+const SAPR_VA_APPOINTMENT_DATA = {
+  references: [
+    { title: "MCO 1752.5C (SAPR Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1752.5", isQuickLink: true },
+    { title: "D-SAACP Certification Program", url: "https://www.dsaacp.org/", isQuickLink: true },
+    { title: "DoDI 6495.02", url: "https://www.esd.whs.mil/Directives/issuances/dodi/" },
+  ],
+};
+
+const CMG_PARTICIPATION_DATA = {
+  references: [
+    { title: "MCO 1752.5C (SAPR Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1752.5", isQuickLink: true },
+    { title: "DoDI 6495.02", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: true },
+    { title: "CMG Charter Template", url: "https://www.marines.mil" },
+  ],
+};
+
+const MPO_SAPR_DATA = {
+  references: [
+    { title: "MCO 1752.5C (SAPR Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1752.5", isQuickLink: true },
+    { title: "DD Form 2873 (MPO)", url: "https://www.esd.whs.mil/Directives/forms/", isQuickLink: true },
+    { title: "DoDI 6495.02", url: "https://www.esd.whs.mil/Directives/issuances/dodi/" },
+  ],
+};
+
+const SAPR_RETALIATION_DATA = {
+  references: [
+    { title: "MCO 1752.5C (SAPR Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1752.5", isQuickLink: true },
+    { title: "DoDI 6495.02", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: true },
+    { title: "Retaliation Prevention Guidance", url: "https://www.sapr.mil" },
+  ],
+};
+
 // Commanders - Inspector General & Inspections Data
 const CIP_OVERVIEW_DATA = {
   references: [
@@ -4850,6 +4904,12 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "expedited-transfer": <ExpeditedTransferContent data={EXPEDITED_TRANSFER_DATA} />,
     "hrrt": <HRRTContent data={HRRT_DATA} />,
     "sapr-policy-posting": <SAPRPolicyPostingContent data={SAPR_POLICY_POSTING_DATA} />,
+    "sapr-reporting-types": <SAPRReportingTypesContent data={SAPR_REPORTING_TYPES_DATA} />,
+    "sarc-coordination": <SARCCoordinationContent data={SARC_COORDINATION_DATA} />,
+    "sapr-va-appointment": <SAPRVAAppointmentContent data={SAPR_VA_APPOINTMENT_DATA} />,
+    "cmg-participation": <CMGParticipationContent data={CMG_PARTICIPATION_DATA} />,
+    "mpo-sapr": <MPOSAPRContent data={MPO_SAPR_DATA} />,
+    "sapr-retaliation": <SAPRRetaliationContent data={SAPR_RETALIATION_DATA} />,
     // Commanders - Inspector General & Inspections
     "cip-overview": <CIPOverviewContent data={CIP_OVERVIEW_DATA} />,
     "cgip-preparation": <CGIPPreparationContent data={CGIP_PREPARATION_DATA} />,
@@ -5373,14 +5433,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   ];
 
   const commandersSaprSection = "commanders-sapr";
-  const commandersSaprSlugs = [
-    "sapr-va-appointment",
-    "sarc-coordination",
-    "sapr-reporting-types",
-    "cmg-participation",
-    "mpo-sapr",
-    "sapr-retaliation",
-  ];
+  const commandersSaprSlugs: string[] = [];
 
   const commandersSuicideSection = "commanders-suicide-prevention";
   const commandersSuicideSlugs = [

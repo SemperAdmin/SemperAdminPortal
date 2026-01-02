@@ -1,4 +1,4 @@
-# Content Needed: 17 Placeholder Items
+# Content Needed: 11 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 14 items |
+| **Commanders** | 8 items |
 | **Administrators** | 0 items |
 
 ---
@@ -242,21 +242,19 @@ Completed items:
 ## Sexual Assault Prevention & Response
 **Section:** `commanders-sapr`
 
+**STATUS: SECTION COMPLETE (10/10 items)**
+
 Completed items:
 - ~~`8-day-report`~~ - COMPLETED
 - ~~`expedited-transfer`~~ - COMPLETED
 - ~~`hrrt`~~ - COMPLETED
 - ~~`sapr-policy-posting`~~ - COMPLETED
-
-Remaining items:
-| Slug | Title | Description |
-|------|-------|-------------|
-| `sapr-reporting-types` | Reporting Types | Restricted vs unrestricted reporting and conversion |
-| `sarc-coordination` | SARC Coordination | Working with the Sexual Assault Response Coordinator |
-| `sapr-va-appointment` | SAPR VA Appointment | Selection criteria, minimum requirements, and oversight |
-| `cmg-participation` | Case Management Group | Commander participation and CMG functions |
-| `mpo-sapr` | Military Protective Orders | Issuing MPOs in sexual assault cases |
-| `sapr-retaliation` | Retaliation Prevention | Monitoring and preventing victim retaliation |
+- ~~`sapr-reporting-types`~~ - COMPLETED
+- ~~`sarc-coordination`~~ - COMPLETED
+- ~~`sapr-va-appointment`~~ - COMPLETED
+- ~~`cmg-participation`~~ - COMPLETED
+- ~~`mpo-sapr`~~ - COMPLETED
+- ~~`sapr-retaliation`~~ - COMPLETED
 
 ## Substance Abuse & Urinalysis
 **Section:** `commanders-substance-abuse`
@@ -374,6 +372,5 @@ COMMON ISSUES:
 
 4. **Remaining sections with items:**
    - Security Programs: 8 items
-   - SAPR: 6 items
    - Training & Readiness: 2 items
    - Records & Corrections (Marines): 3 items
