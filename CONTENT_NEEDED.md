@@ -1,4 +1,4 @@
-# Content Needed: 158 Placeholder Items
+# Content Needed: 152 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -8,7 +8,7 @@ Items that currently show "Content coming soon" when users access them.
 
 | Role | Items Needing Content |
 |------|----------------------|
-| **Marines** (General) | 10 items |
+| **Marines** (General) | 4 items |
 | **Leaders** | 1 item |
 | **Commanders** | 146 items |
 | **Administrators** | 0 items |
@@ -22,14 +22,13 @@ These affect ALL users and should be highest priority.
 ## Life Events
 **Section:** `life-events`
 
-| Slug | Title | Description |
-|------|-------|-------------|
-| `buying-a-home` | Buying a Home | Use VA loan benefits, navigate BAH considerations, and complete the purchase |
-| `deploying` | Deploying | Verify readiness, update legal documents, and ensure family is prepared |
-| `getting-married` | Getting Married | Add your spouse to DEERS, update BAH, and complete all required documentation |
-| `getting-out` | Getting Out (EAS) | Complete TAPS, final checkout, and transition to civilian life |
-| `having-a-baby` | Having a Baby | Register your child, update DEERS and SGLI, and claim all entitled benefits |
-| `pcs-move` | PCS Move | Complete checkout, arrange household goods shipment, and check in at new duty station |
+All 6 life events now have content:
+- ~~`buying-a-home`~~ - COMPLETED
+- ~~`deploying`~~ - COMPLETED
+- ~~`getting-married`~~ - COMPLETED
+- ~~`getting-out`~~ - COMPLETED
+- ~~`having-a-baby`~~ - COMPLETED
+- ~~`pcs-move`~~ - COMPLETED
 
 ## Promotions & Career Progression
 **Section:** `promotions-career-progression`

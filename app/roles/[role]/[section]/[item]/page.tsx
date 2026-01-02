@@ -185,6 +185,13 @@ import { LegalAssistanceContent } from "../../../../../components/LegalAssistanc
 import { VWAPContent } from "../../../../../components/VWAPContent";
 import { MilitaryProtectiveOrdersContent } from "../../../../../components/MilitaryProtectiveOrdersContent";
 import { IGComplaintsContent } from "../../../../../components/IGComplaintsContent";
+// Life Events
+import { BuyingAHomeContent } from "../../../../../components/BuyingAHomeContent";
+import { DeployingContent } from "../../../../../components/DeployingContent";
+import { GettingMarriedContent } from "../../../../../components/GettingMarriedContent";
+import { GettingOutEASContent } from "../../../../../components/GettingOutEASContent";
+import { HavingABabyContent } from "../../../../../components/HavingABabyContent";
+import { PCSMoveContent } from "../../../../../components/PCSMoveContent";
 // Leaders - Accountability & Discipline
 import { NJPAuthorityLevelsContent } from "../../../../../components/leaders/NJPAuthorityLevelsContent";
 import { NJPRecommendationContent } from "../../../../../components/leaders/NJPRecommendationContent";
@@ -3086,6 +3093,61 @@ const INVESTIGATION_COORDINATION_DATA = {
   ],
 };
 
+// Life Events Data
+const BUYING_A_HOME_DATA = {
+  references: [
+    { title: "VA Home Loan Program", url: "https://www.va.gov/housing-assistance/home-loans/", isQuickLink: true },
+    { title: "eBenefits COE Request", url: "https://www.ebenefits.va.gov/", isQuickLink: true },
+    { title: "VA Form 26-1880", url: "https://www.va.gov/find-forms/about-form-26-1880/" },
+    { title: "VA Funding Fee Table", url: "https://www.va.gov/housing-assistance/home-loans/funding-fee-and-closing-costs/" },
+  ],
+};
+
+const DEPLOYING_DATA = {
+  references: [
+    { title: "SCRA Information", url: "https://www.militaryonesource.mil/legal/scra/", isQuickLink: true },
+    { title: "Legal Assistance Locator", url: "https://legalassistance.law.af.mil/", isQuickLink: true },
+    { title: "Family Care Plan (MCO 1740.13D)", url: "https://www.marines.mil/Portals/1/Publications/MCO%201740.13D.pdf" },
+    { title: "SGLI Overview", url: "https://www.va.gov/life-insurance/options-eligibility/sgli/" },
+  ],
+};
+
+const GETTING_MARRIED_DATA = {
+  references: [
+    { title: "DEERS Enrollment", url: "https://www.tricare.mil/Plans/Eligibility/DEERS", isQuickLink: true },
+    { title: "ID Card Office Locator", url: "https://idco.dmdc.osd.mil/idco/", isQuickLink: true },
+    { title: "TRICARE Plan Options", url: "https://www.tricare.mil/Plans" },
+    { title: "DD Form 93", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd0093.pdf" },
+  ],
+};
+
+const GETTING_OUT_EAS_DATA = {
+  references: [
+    { title: "Transition Assistance Program", url: "https://www.dol.gov/agencies/vets/programs/tap", isQuickLink: true },
+    { title: "VA Benefits", url: "https://www.va.gov/", isQuickLink: true },
+    { title: "eBenefits", url: "https://www.ebenefits.va.gov/" },
+    { title: "MCO 1900.16 (Separation Manual)", url: "https://www.marines.mil/Portals/1/Publications/MCO%201900.16.pdf" },
+  ],
+};
+
+const HAVING_A_BABY_DATA = {
+  references: [
+    { title: "DEERS Enrollment", url: "https://www.tricare.mil/Plans/Eligibility/DEERS", isQuickLink: true },
+    { title: "ID Card Office Locator", url: "https://idco.dmdc.osd.mil/idco/", isQuickLink: true },
+    { title: "TRICARE Newborn Coverage", url: "https://www.tricare.mil/LifeEvents/Baby" },
+    { title: "Paternity Leave Policy", url: "https://www.mynavyhr.navy.mil/References/Pay-Benefits/N130C/" },
+  ],
+};
+
+const PCS_MOVE_DATA = {
+  references: [
+    { title: "Move.mil", url: "https://www.move.mil/", isQuickLink: true },
+    { title: "DPS (Defense Personal Property System)", url: "https://www.move.mil/dps", isQuickLink: true },
+    { title: "DTMO Travel Allowances", url: "https://www.travel.dod.mil/" },
+    { title: "JTR (Joint Travel Regulations)", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/" },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -3528,6 +3590,13 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "line-of-duty": <LineOfDutyContent data={LINE_OF_DUTY_CA_DATA} />,
     "death-case-procedures": <DeathCaseProceduresContent data={DEATH_CASE_PROCEDURES_CA_DATA} />,
     "investigation-coordination": <InvestigationCoordinationContent data={INVESTIGATION_COORDINATION_DATA} />,
+    // Life Events
+    "buying-a-home": <BuyingAHomeContent data={BUYING_A_HOME_DATA} />,
+    "deploying": <DeployingContent data={DEPLOYING_DATA} />,
+    "getting-married": <GettingMarriedContent data={GETTING_MARRIED_DATA} />,
+    "getting-out": <GettingOutEASContent data={GETTING_OUT_EAS_DATA} />,
+    "having-a-baby": <HavingABabyContent data={HAVING_A_BABY_DATA} />,
+    "pcs-move": <PCSMoveContent data={PCS_MOVE_DATA} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
