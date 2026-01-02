@@ -1,4 +1,4 @@
-# Content Needed: 56 Placeholder Items
+# Content Needed: 51 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 53 items |
+| **Commanders** | 48 items |
 | **Administrators** | 0 items |
 
 ---
@@ -147,20 +147,18 @@ Completed items:
 ## Inspector General & Inspections
 **Section:** `commanders-inspector-general`
 
+**STATUS: SECTION COMPLETE (9/9 items)**
+
 Completed items:
 - ~~`cip-overview`~~ - COMPLETED
 - ~~`cgip-preparation`~~ - COMPLETED
 - ~~`igmc-functional-areas`~~ - COMPLETED
 - ~~`poam-management`~~ - COMPLETED
-
-Remaining items:
-| Slug | Title | Description |
-|------|-------|-------------|
-| `internal-inspections` | Internal Inspections | MMIIP and supply inspection programs |
-| `smat-inspections` | SMAT Inspections | Supply Management Assistance Team visits |
-| `fsmao-analysis` | FSMAO Analysis | Fiscal and supply management analysis |
-| `pre-inspection-prep` | Pre-Inspection Preparation | Preparing the command for inspections |
-| `corrective-action-tracking` | Corrective Action Tracking | Tracking and closing inspection findings |
+- ~~`internal-inspections`~~ - COMPLETED
+- ~~`smat-inspections`~~ - COMPLETED
+- ~~`fsmao-analysis`~~ - COMPLETED
+- ~~`pre-inspection-prep`~~ - COMPLETED
+- ~~`corrective-action-tracking`~~ - COMPLETED
 
 ## Legal & Discipline
 **Section:** `commanders-legal-discipline`

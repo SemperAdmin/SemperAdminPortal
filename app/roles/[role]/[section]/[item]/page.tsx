@@ -370,6 +370,11 @@ import { CIPOverviewContent } from "../../../../../components/commanders/CIPOver
 import { CGIPPreparationContent } from "../../../../../components/commanders/CGIPPreparationContent";
 import { IGMCFunctionalAreasContent } from "../../../../../components/commanders/IGMCFunctionalAreasContent";
 import { POAMManagementContent } from "../../../../../components/commanders/POAMManagementContent";
+import { InternalInspectionsContent } from "../../../../../components/commanders/InternalInspectionsContent";
+import { SMATInspectionsContent } from "../../../../../components/commanders/SMATInspectionsContent";
+import { FSMAOAnalysisContent } from "../../../../../components/commanders/FSMAOAnalysisContent";
+import { PreInspectionPrepContent } from "../../../../../components/commanders/PreInspectionPrepContent";
+import { CorrectiveActionTrackingContent } from "../../../../../components/commanders/CorrectiveActionTrackingContent";
 // Commanders - Personnel Administration & Career Management
 import { FitnessReportContent } from "../../../../../components/commanders/FitnessReportContent";
 import { JEPESCommanderRoleContent } from "../../../../../components/commanders/JEPESCommanderRoleContent";
@@ -3839,6 +3844,46 @@ const POAM_MANAGEMENT_DATA = {
   ],
 };
 
+const INTERNAL_INSPECTIONS_DATA = {
+  references: [
+    { title: "MCO 4790.2 (MIMMS Field Procedures)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=4790.2", isQuickLink: true },
+    { title: "MCO 4400.160 (FSMAO Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=4400.160", isQuickLink: true },
+    { title: "NAVMC 4400.150 (Consumer-Level Supply)", url: "https://www.marines.mil" },
+  ],
+};
+
+const SMAT_INSPECTIONS_DATA = {
+  references: [
+    { title: "MCO 4400.160 (FSMAO Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=4400.160", isQuickLink: true },
+    { title: "Unit/MSC SOP", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "NAVMC 4400.150 (Consumer-Level Supply)", url: "https://www.marines.mil" },
+  ],
+};
+
+const FSMAO_ANALYSIS_DATA = {
+  references: [
+    { title: "MCO 4400.160 (FSMAO Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=4400.160", isQuickLink: true },
+    { title: "MCO 4400.201 (Management of Property)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=4400.201", isQuickLink: true },
+    { title: "GCSS-MC Portal", url: "https://gcss-mc.marines.mil" },
+  ],
+};
+
+const PRE_INSPECTION_PREP_DATA = {
+  references: [
+    { title: "MCO 5040.6H (Inspections Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.6", isQuickLink: true },
+    { title: "NAVMC 5040.1 (IG Checklist User Guide)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: "https://www.marines.mil" },
+  ],
+};
+
+const CORRECTIVE_ACTION_TRACKING_DATA = {
+  references: [
+    { title: "MCO 5040.6H (Inspections Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.6", isQuickLink: true },
+    { title: "NAVMC 11333 (POA&M Template)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "Unit SOP for Corrective Actions", url: "https://www.marines.mil" },
+  ],
+};
+
 // Commanders - Personnel Administration & Career Management Data
 const FITREP_RESPONSIBILITIES_DATA = {
   references: [
@@ -4546,6 +4591,11 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "cgip-preparation": <CGIPPreparationContent data={CGIP_PREPARATION_DATA} />,
     "igmc-functional-areas": <IGMCFunctionalAreasContent data={IGMC_FUNCTIONAL_AREAS_DATA} />,
     "poam-management": <POAMManagementContent data={POAM_MANAGEMENT_DATA} />,
+    "internal-inspections": <InternalInspectionsContent data={INTERNAL_INSPECTIONS_DATA} />,
+    "smat-inspections": <SMATInspectionsContent data={SMAT_INSPECTIONS_DATA} />,
+    "fsmao-analysis": <FSMAOAnalysisContent data={FSMAO_ANALYSIS_DATA} />,
+    "pre-inspection-prep": <PreInspectionPrepContent data={PRE_INSPECTION_PREP_DATA} />,
+    "corrective-action-tracking": <CorrectiveActionTrackingContent data={CORRECTIVE_ACTION_TRACKING_DATA} />,
     // Commanders - Personnel Administration & Career Management
     "fitrep-responsibilities": <FitnessReportContent data={FITREP_RESPONSIBILITIES_DATA} />,
     "jepes-commander": <JEPESCommanderRoleContent data={JEPES_COMMANDER_DATA} />,
@@ -5199,13 +5249,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   ];
 
   const commandersIGSection = "commanders-inspector-general";
-  const commandersIGSlugs = [
-    "internal-inspections",
-    "fsmao-analysis",
-    "smat-inspections",
-    "pre-inspection-prep",
-    "corrective-action-tracking",
-  ];
+  const commandersIGSlugs: string[] = [];
 
   const commandersEnvironmentalSection = "commanders-environmental";
   const commandersEnvironmentalSlugs = [
