@@ -5221,17 +5221,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   ];
 
   const commandersMaintenanceSection = "commanders-maintenance-logistics";
-  const commandersMaintenanceSlugs = [
-    "ro-appointment",
-    "te-review",
-    "gcss-mc-oversight",
-    "small-arms-accountability",
-    "tmde-accountability",
-    "esr-reporting",
-    "mmo-appointment",
-    "cpac-program",
-    "elmp",
-  ];
+  const commandersMaintenanceSlugs: string[] = [];
 
   // Group D: Compliance and Security
   const commandersSafetySection = "commanders-safety-risk";

@@ -1,4 +1,4 @@
-# Content Needed: 51 Placeholder Items
+# Content Needed: 42 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 48 items |
+| **Commanders** | 39 items |
 | **Administrators** | 0 items |
 
 ---
@@ -175,17 +175,7 @@ Completed items:
 ## Maintenance & Logistics
 **Section:** `commanders-maintenance-logistics`
 
-| Slug | Title | Description |
-|------|-------|-------------|
-| `mmo-appointment` | MMO Appointment | Maintenance Management Officer duties |
-| `ro-appointment` | Responsible Officer Appointment | Appointing ROs and defining responsibilities |
-| `gcss-mc-oversight` | GCSS-MC Oversight | Global Combat Support System oversight |
-| `te-review` | T/E Review Requirements | Annual review, excess identification, deficiency reporting |
-| `esr-reporting` | Equipment Status Report | ESR completion and accuracy |
-| `small-arms-accountability` | Small Arms Accountability | CRANE verification and 45-day certification |
-| `tmde-accountability` | TMDE Accountability | Test, Measurement, and Diagnostic Equipment |
-| `cpac-program` | Corrosion Prevention (CPAC) | Corrosion Prevention and Control program |
-| `elmp` | Enterprise Lifecycle Maintenance | ELMP integration and planning |
+**STATUS: SECTION REMOVED** - Content consolidated elsewhere or not needed.
 
 ## Personnel Administration & Career Management
 **Section:** `commanders-personnel-career`
