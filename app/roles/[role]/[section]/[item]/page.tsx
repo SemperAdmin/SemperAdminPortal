@@ -256,6 +256,19 @@ import { TFRSOverviewContent } from "../../../../../components/leaders/TFRSOverv
 import { UnitDiaryReportingContent } from "../../../../../components/leaders/UnitDiaryReportingContent";
 import { TrainingInformationSystemsContent } from "../../../../../components/leaders/TrainingInformationSystemsContent";
 import { MCOQuickReferenceContent } from "../../../../../components/leaders/MCOQuickReferenceContent";
+// Leaders - Conducting Investigations
+import { ReviewConveningOrderContent } from "../../../../../components/leaders/ReviewConveningOrderContent";
+import { ContactJudgeAdvocateContent } from "../../../../../components/leaders/ContactJudgeAdvocateContent";
+import { CoordinateOtherInvestigationsContent } from "../../../../../components/leaders/CoordinateOtherInvestigationsContent";
+import { PreliminaryInquiryIOContent } from "../../../../../components/leaders/PreliminaryInquiryIOContent";
+import { CommandInvestigationIOContent } from "../../../../../components/leaders/CommandInvestigationIOContent";
+import { LitigationReportIOContent } from "../../../../../components/leaders/LitigationReportIOContent";
+import { CollectingEvidenceContent } from "../../../../../components/leaders/CollectingEvidenceContent";
+import { InterviewingWitnessesContent } from "../../../../../components/leaders/InterviewingWitnessesContent";
+import { StandardsOfProofIOContent } from "../../../../../components/leaders/StandardsOfProofIOContent";
+import { InvestigationReportFormatIOContent } from "../../../../../components/leaders/InvestigationReportFormatIOContent";
+import { LODMisconductDeterminationsContent } from "../../../../../components/leaders/LODMisconductDeterminationsContent";
+import { DeathCaseProceduresIOContent } from "../../../../../components/leaders/DeathCaseProceduresIOContent";
 // Commanders - Transition of Command
 import {
   CornerstoneAttendanceContent,
@@ -2860,6 +2873,107 @@ const MCO_QUICK_REFERENCE_DATA = {
   ],
 };
 
+// Leaders - Conducting Investigations Data
+const REVIEW_CONVENING_ORDER_DATA = {
+  references: [
+    { title: "JAGMAN Chapter II", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "JAGMAN Section 0205 - Convening Orders", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf" },
+    { title: "Navy JAG Investigation Resources", url: "https://www.jag.navy.mil/legal_services/command_services.htm" },
+  ],
+};
+
+const CONTACT_JUDGE_ADVOCATE_DATA = {
+  references: [
+    { title: "JAGMAN Chapter II", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "Navy JAG Legal Assistance", url: "https://www.jag.navy.mil/legal_services.htm" },
+    { title: "Marine Corps Legal Services", url: "https://www.hqmc.marines.mil/sja/" },
+  ],
+};
+
+const COORDINATE_OTHER_INVESTIGATIONS_DATA = {
+  references: [
+    { title: "JAGMAN Section 0204", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "NCIS Field Offices", url: "https://www.ncis.navy.mil/Contact-Us/", isQuickLink: true },
+    { title: "MCO 5580.2B (Law Enforcement Manual)", url: "https://www.marines.mil/Portals/1/MCO%205580.2B.pdf" },
+  ],
+};
+
+const PRELIMINARY_INQUIRY_IO_DATA = {
+  references: [
+    { title: "JAGMAN Section 0204", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "JAGMAN Appendix A-2-h (Sample Preliminary Inquiry)", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf" },
+    { title: "MCO 5800.16 (Marine Corps Manual for Legal Administration)", url: "https://www.marines.mil" },
+  ],
+};
+
+const COMMAND_INVESTIGATION_IO_DATA = {
+  references: [
+    { title: "JAGMAN Section 0206-0208", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "Navy JAG Investigation Guide", url: "https://www.jag.navy.mil/legal_services/command_services.htm", isQuickLink: true },
+    { title: "UCMJ Article 31", url: "https://www.law.cornell.edu/uscode/text/10/831" },
+    { title: "10 U.S.C. 1219", url: "https://www.law.cornell.edu/uscode/text/10/1219" },
+  ],
+};
+
+const LITIGATION_REPORT_IO_DATA = {
+  references: [
+    { title: "JAGMAN Section 0210", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "Federal Tort Claims Act", url: "https://www.law.cornell.edu/uscode/text/28/part-VI/chapter-171" },
+    { title: "Navy Office of General Counsel (Code 15)", url: "https://www.jag.navy.mil/" },
+  ],
+};
+
+const COLLECTING_EVIDENCE_DATA = {
+  references: [
+    { title: "JAGMAN Section 0207", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "Military Rules of Evidence", url: "https://jsc.defense.gov/Military-Law/Current-Publications-and-Updates/" },
+    { title: "MCO 5580.2B (Evidence Handling)", url: "https://www.marines.mil/Portals/1/MCO%205580.2B.pdf" },
+  ],
+};
+
+const INTERVIEWING_WITNESSES_DATA = {
+  references: [
+    { title: "JAGMAN Section 0207", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "UCMJ Article 31 (Rights Warning)", url: "https://www.law.cornell.edu/uscode/text/10/831", isQuickLink: true },
+    { title: "10 U.S.C. 1219 Warning", url: "https://www.law.cornell.edu/uscode/text/10/1219" },
+    { title: "NAVPERS 1070/891 (Rights Warning Form)", url: "https://www.mynavyhr.navy.mil/References/Forms/NAVPERS/" },
+  ],
+};
+
+const STANDARDS_OF_PROOF_IO_DATA = {
+  references: [
+    { title: "JAGMAN Section 0208", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "Military Rules of Evidence", url: "https://jsc.defense.gov/Military-Law/Current-Publications-and-Updates/" },
+    { title: "MCM (Manual for Courts-Martial)", url: "https://jsc.defense.gov/Military-Law/Current-Publications-and-Updates/" },
+  ],
+};
+
+const INVESTIGATION_REPORT_FORMAT_IO_DATA = {
+  references: [
+    { title: "JAGMAN Section 0208", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "JAGMAN Appendix A-2 (Sample Formats)", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf" },
+    { title: "Navy Writer's Guide", url: "https://www.netc.navy.mil" },
+  ],
+};
+
+const LOD_MISCONDUCT_DETERMINATIONS_DATA = {
+  references: [
+    { title: "JAGMAN Section 0209", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "SECNAVINST 1770.4 (Line of Duty)", url: "https://www.secnav.navy.mil/doni/Directives/01000%20Military%20Personnel%20Support/01-700%20Morale,%20Community%20Service,%20Religious%20Aboard%20Ships/1770.4.pdf" },
+    { title: "DoD Instruction 1241.01 (Reserve LOD)", url: "https://www.esd.whs.mil/Directives/issuances/dodi/" },
+    { title: "MCO 5800.16 (Legal Administration)", url: "https://www.marines.mil" },
+  ],
+};
+
+const DEATH_CASE_PROCEDURES_IO_DATA = {
+  references: [
+    { title: "JAGMAN Section 0203", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "MCO 3040.4 (Casualty Assistance)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DoD Instruction 1300.18 (Casualty Notification)", url: "https://www.esd.whs.mil/Directives/issuances/dodi/" },
+    { title: "SECNAVINST 1770.4 (Line of Duty)", url: "https://www.secnav.navy.mil/doni/" },
+  ],
+};
+
 function toTitle(slug: string) {
   const t = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return t
@@ -3247,6 +3361,19 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "unit-diary-reporting": <UnitDiaryReportingContent data={UNIT_DIARY_REPORTING_DATA} />,
     "training-information-systems": <TrainingInformationSystemsContent data={TRAINING_INFORMATION_SYSTEMS_DATA} />,
     "mco-quick-reference": <MCOQuickReferenceContent data={MCO_QUICK_REFERENCE_DATA} />,
+    // Leaders - Conducting Investigations
+    "review-convening-order": <ReviewConveningOrderContent data={REVIEW_CONVENING_ORDER_DATA} />,
+    "contact-judge-advocate": <ContactJudgeAdvocateContent data={CONTACT_JUDGE_ADVOCATE_DATA} />,
+    "coordinate-other-investigations": <CoordinateOtherInvestigationsContent data={COORDINATE_OTHER_INVESTIGATIONS_DATA} />,
+    "preliminary-inquiry-io": <PreliminaryInquiryIOContent data={PRELIMINARY_INQUIRY_IO_DATA} />,
+    "command-investigation-io": <CommandInvestigationIOContent data={COMMAND_INVESTIGATION_IO_DATA} />,
+    "litigation-report-io": <LitigationReportIOContent data={LITIGATION_REPORT_IO_DATA} />,
+    "collecting-evidence": <CollectingEvidenceContent data={COLLECTING_EVIDENCE_DATA} />,
+    "interviewing-witnesses": <InterviewingWitnessesContent data={INTERVIEWING_WITNESSES_DATA} />,
+    "standards-of-proof-io": <StandardsOfProofIOContent data={STANDARDS_OF_PROOF_IO_DATA} />,
+    "investigation-report-format-io": <InvestigationReportFormatIOContent data={INVESTIGATION_REPORT_FORMAT_IO_DATA} />,
+    "lod-misconduct-determinations": <LODMisconductDeterminationsContent data={LOD_MISCONDUCT_DETERMINATIONS_DATA} />,
+    "death-case-procedures-io": <DeathCaseProceduresIOContent data={DEATH_CASE_PROCEDURES_IO_DATA} />,
     // Commanders - Transition of Command
     "cornerstone-attendance": <CornerstoneAttendanceContent />,
     "cor-incoming": <CertificateOfReliefContent />,
