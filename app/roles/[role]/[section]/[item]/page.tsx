@@ -2905,7 +2905,7 @@ const CONTACT_JUDGE_ADVOCATE_DATA = {
 
 const COORDINATE_OTHER_INVESTIGATIONS_DATA = {
   references: [
-    { title: "JAGMAN Section 0204", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "JAGMAN Section 0201", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
     { title: "NCIS Field Offices", url: "https://www.ncis.navy.mil/Contact-Us/", isQuickLink: true },
     { title: "MCO 5580.2B (Law Enforcement Manual)", url: "https://www.marines.mil/Portals/1/MCO%205580.2B.pdf" },
   ],

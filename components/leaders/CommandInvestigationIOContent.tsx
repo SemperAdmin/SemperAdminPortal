@@ -28,7 +28,7 @@ export function CommandInvestigationIOContent({ data }: Props) {
         </div>
         <div className="rounded-lg bg-blue-50 p-4 dark:bg-blue-900/20">
           <p className="text-sm text-blue-800 dark:text-blue-200">
-            <strong>Authority:</strong> JAGMAN Section 0209
+            <strong>Authority:</strong> JAGMAN Sections 0206-0208
           </p>
         </div>
       </section>
