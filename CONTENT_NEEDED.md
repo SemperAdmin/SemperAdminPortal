@@ -1,4 +1,4 @@
-# Content Needed: 34 Placeholder Items
+# Content Needed: 32 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 31 items |
+| **Commanders** | 29 items |
 | **Administrators** | 0 items |
 
 ---
@@ -211,6 +211,8 @@ Completed items:
 ## Safety & Risk Management
 **Section:** `commanders-safety-risk`
 
+**STATUS: SECTION COMPLETE (10/10 items)**
+
 Completed items:
 - ~~`safety-policy`~~ - COMPLETED
 - ~~`ground-safety`~~ - COMPLETED
@@ -220,12 +222,8 @@ Completed items:
 - ~~`pre-mishap-drills`~~ - COMPLETED
 - ~~`safety-climate-survey`~~ - COMPLETED
 - ~~`flight-schedule-approval`~~ - COMPLETED
-
-Remaining items:
-| Slug | Title | Description |
-|------|-------|-------------|
-| `mishap-investigation` | Investigation Requirements | When investigations are required and commander's role |
-| `doss-relationship` | DOSS Relationship | Director of Safety and Standardization coordination |
+- ~~`mishap-investigation`~~ - COMPLETED
+- ~~`doss-relationship`~~ - COMPLETED
 
 ## Security Programs
 **Section:** `commanders-security`

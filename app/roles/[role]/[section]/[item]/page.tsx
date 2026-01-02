@@ -374,6 +374,8 @@ import { MishapReportingContent } from "../../../../../components/commanders/Mis
 import { PreMishapDrillsContent } from "../../../../../components/commanders/PreMishapDrillsContent";
 import { SafetyClimateSurveyDetailContent } from "../../../../../components/commanders/SafetyClimateSurveyDetailContent";
 import { FlightScheduleApprovalContent } from "../../../../../components/commanders/FlightScheduleApprovalContent";
+import { MishapInvestigationContent } from "../../../../../components/commanders/MishapInvestigationContent";
+import { DOSSRelationshipContent } from "../../../../../components/commanders/DOSSRelationshipContent";
 // Commanders - Inspector General & Inspections
 import { CIPOverviewContent } from "../../../../../components/commanders/CIPOverviewContent";
 import { CGIPPreparationContent } from "../../../../../components/commanders/CGIPPreparationContent";
@@ -3885,6 +3887,22 @@ const FLIGHT_SCHEDULE_APPROVAL_DATA = {
   ],
 };
 
+const MISHAP_INVESTIGATION_DATA = {
+  references: [
+    { title: "MCO 5100.29C (Safety Management)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5100.29", isQuickLink: true },
+    { title: "JAGINST 5800.7 (JAGMAN)", url: "https://www.jag.navy.mil/library/instructions.htm", isQuickLink: true },
+    { title: "OPNAVINST 3750.6S (Naval Aviation Safety)", url: "https://www.secnav.navy.mil/doni/" },
+  ],
+};
+
+const DOSS_RELATIONSHIP_DATA = {
+  references: [
+    { title: "OPNAVINST 3750.6S (Aviation Safety)", url: "https://www.secnav.navy.mil/doni/", isQuickLink: true },
+    { title: "CNAF M-3710.7 (NATOPS)", url: "https://www.cnaf.navy.mil/", isQuickLink: true },
+    { title: "Unit NATOPS SOP", url: "https://www.marines.mil" },
+  ],
+};
+
 // Commanders - Inspector General & Inspections Data
 const CIP_OVERVIEW_DATA = {
   references: [
@@ -4669,6 +4687,8 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "pre-mishap-drills": <PreMishapDrillsContent data={PRE_MISHAP_DRILLS_DATA} />,
     "safety-climate-survey": <SafetyClimateSurveyDetailContent data={SAFETY_CLIMATE_SURVEY_DATA} />,
     "flight-schedule-approval": <FlightScheduleApprovalContent data={FLIGHT_SCHEDULE_APPROVAL_DATA} />,
+    "mishap-investigation": <MishapInvestigationContent data={MISHAP_INVESTIGATION_DATA} />,
+    "doss-relationship": <DOSSRelationshipContent data={DOSS_RELATIONSHIP_DATA} />,
     // Commanders - Inspector General & Inspections
     "cip-overview": <CIPOverviewContent data={CIP_OVERVIEW_DATA} />,
     "cgip-preparation": <CGIPPreparationContent data={CGIP_PREPARATION_DATA} />,
@@ -5308,10 +5328,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
 
   // Group D: Compliance and Security
   const commandersSafetySection = "commanders-safety-risk";
-  const commandersSafetySlugs = [
-    "doss-relationship",
-    "mishap-investigation",
-  ];
+  const commandersSafetySlugs: string[] = [];
 
   const commandersIGSection = "commanders-inspector-general";
   const commandersIGSlugs: string[] = [];
