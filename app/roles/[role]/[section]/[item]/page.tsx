@@ -365,6 +365,15 @@ import { HarassmentResponseContent } from "../../../../../components/commanders/
 import { RetaliationPreventionContent } from "../../../../../components/commanders/RetaliationPreventionContent";
 import { SafetyPolicyStatementContent } from "../../../../../components/commanders/SafetyPolicyStatementContent";
 import { SAPRPolicyStatementContent } from "../../../../../components/commanders/SAPRPolicyStatementContent";
+// Commanders - Safety & Risk Management
+import { SafetyPolicyStatementDetailContent } from "../../../../../components/commanders/SafetyPolicyStatementDetailContent";
+import { GroundSafetyContent } from "../../../../../components/commanders/GroundSafetyContent";
+import { MotorVehicleSafetyContent } from "../../../../../components/commanders/MotorVehicleSafetyContent";
+import { ORMIntegrationContent } from "../../../../../components/commanders/ORMIntegrationContent";
+import { MishapReportingContent } from "../../../../../components/commanders/MishapReportingContent";
+import { PreMishapDrillsContent } from "../../../../../components/commanders/PreMishapDrillsContent";
+import { SafetyClimateSurveyDetailContent } from "../../../../../components/commanders/SafetyClimateSurveyDetailContent";
+import { FlightScheduleApprovalContent } from "../../../../../components/commanders/FlightScheduleApprovalContent";
 // Commanders - Inspector General & Inspections
 import { CIPOverviewContent } from "../../../../../components/commanders/CIPOverviewContent";
 import { CGIPPreparationContent } from "../../../../../components/commanders/CGIPPreparationContent";
@@ -3811,6 +3820,71 @@ const SAPR_POLICY_STATEMENT_DATA = {
   ],
 };
 
+// Commanders - Safety & Risk Management Data
+const SAFETY_POLICY_DETAIL_DATA = {
+  references: [
+    { title: "MCO 5100.29C (Safety Management)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5100.29", isQuickLink: true },
+    { title: "MCO 5100.19F (Occupational Safety)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5100.19", isQuickLink: true },
+    { title: "NAVMC 3500.27 (Safety & ORM)", url: "https://www.marines.mil" },
+  ],
+};
+
+const GROUND_SAFETY_DATA = {
+  references: [
+    { title: "MCO 5100.29C (Safety Management)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5100.29", isQuickLink: true },
+    { title: "MCO 5100.19F (Occupational Safety)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5100.19", isQuickLink: true },
+    { title: "NAVMC 11401 (Hazard Report)", url: "https://www.marines.mil" },
+  ],
+};
+
+const MOTOR_VEHICLE_SAFETY_DATA = {
+  references: [
+    { title: "MCO 5100.29C Vol 3 (PMV Safety)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5100.29", isQuickLink: true },
+    { title: "TRiPS (Travel Risk Planning)", url: "https://trips.safety.army.mil/", isQuickLink: true },
+    { title: "Motorcycle Safety Foundation", url: "https://www.msf-usa.org/" },
+  ],
+};
+
+const ORM_INTEGRATION_DATA = {
+  references: [
+    { title: "MCO 5100.29C Vol 2 (ORM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5100.29", isQuickLink: true },
+    { title: "NAVMC 3500.27 (Safety & ORM)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "Risk Assessment Worksheet", url: "https://www.marines.mil" },
+  ],
+};
+
+const MISHAP_REPORTING_DATA = {
+  references: [
+    { title: "MCO 5100.29C (Safety Management)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5100.29", isQuickLink: true },
+    { title: "OPNAVINST 3750.6S (Aviation Safety)", url: "https://www.secnav.navy.mil/doni/", isQuickLink: true },
+    { title: "RMI System", url: "https://www.marines.mil" },
+  ],
+};
+
+const PRE_MISHAP_DRILLS_DATA = {
+  references: [
+    { title: "MCO 5100.29C (Safety Management)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5100.29", isQuickLink: true },
+    { title: "MCO 3040.4 (Casualty Assistance)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=3040.4", isQuickLink: true },
+    { title: "Installation EOC SOP", url: "https://www.marines.mil" },
+  ],
+};
+
+const SAFETY_CLIMATE_SURVEY_DATA = {
+  references: [
+    { title: "MCO 5100.29C (Safety Management)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5100.29", isQuickLink: true },
+    { title: "MCAS Safety Survey", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "Ground Safety Survey Tool", url: "https://www.marines.mil" },
+  ],
+};
+
+const FLIGHT_SCHEDULE_APPROVAL_DATA = {
+  references: [
+    { title: "OPNAVINST 3750.6S (Aviation Safety)", url: "https://www.secnav.navy.mil/doni/", isQuickLink: true },
+    { title: "NAVAIR 00-80T-105 (Aviation Training)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "Squadron NATOPS SOP", url: "https://www.marines.mil" },
+  ],
+};
+
 // Commanders - Inspector General & Inspections Data
 const CIP_OVERVIEW_DATA = {
   references: [
@@ -4586,6 +4660,15 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "retaliation-prevention": <RetaliationPreventionContent data={RETALIATION_PREVENTION_DATA} />,
     "safety-policy-statement": <SafetyPolicyStatementContent data={SAFETY_POLICY_STATEMENT_DATA} />,
     "sapr-policy-statement": <SAPRPolicyStatementContent data={SAPR_POLICY_STATEMENT_DATA} />,
+    // Commanders - Safety & Risk Management
+    "safety-policy": <SafetyPolicyStatementDetailContent data={SAFETY_POLICY_DETAIL_DATA} />,
+    "ground-safety": <GroundSafetyContent data={GROUND_SAFETY_DATA} />,
+    "motor-vehicle-safety": <MotorVehicleSafetyContent data={MOTOR_VEHICLE_SAFETY_DATA} />,
+    "orm-integration": <ORMIntegrationContent data={ORM_INTEGRATION_DATA} />,
+    "mishap-reporting": <MishapReportingContent data={MISHAP_REPORTING_DATA} />,
+    "pre-mishap-drills": <PreMishapDrillsContent data={PRE_MISHAP_DRILLS_DATA} />,
+    "safety-climate-survey": <SafetyClimateSurveyDetailContent data={SAFETY_CLIMATE_SURVEY_DATA} />,
+    "flight-schedule-approval": <FlightScheduleApprovalContent data={FLIGHT_SCHEDULE_APPROVAL_DATA} />,
     // Commanders - Inspector General & Inspections
     "cip-overview": <CIPOverviewContent data={CIP_OVERVIEW_DATA} />,
     "cgip-preparation": <CGIPPreparationContent data={CGIP_PREPARATION_DATA} />,
@@ -5226,16 +5309,8 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   // Group D: Compliance and Security
   const commandersSafetySection = "commanders-safety-risk";
   const commandersSafetySlugs = [
-    "safety-policy",
-    "safety-climate-survey",
-    "ground-safety",
-    "orm-integration",
     "doss-relationship",
-    "flight-schedule-approval",
-    "pre-mishap-drills",
-    "mishap-reporting",
     "mishap-investigation",
-    "motor-vehicle-safety",
   ];
 
   const commandersIGSection = "commanders-inspector-general";

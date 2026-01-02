@@ -1,4 +1,4 @@
-# Content Needed: 42 Placeholder Items
+# Content Needed: 34 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 39 items |
+| **Commanders** | 31 items |
 | **Administrators** | 0 items |
 
 ---
@@ -211,18 +211,21 @@ Completed items:
 ## Safety & Risk Management
 **Section:** `commanders-safety-risk`
 
+Completed items:
+- ~~`safety-policy`~~ - COMPLETED
+- ~~`ground-safety`~~ - COMPLETED
+- ~~`motor-vehicle-safety`~~ - COMPLETED
+- ~~`orm-integration`~~ - COMPLETED
+- ~~`mishap-reporting`~~ - COMPLETED
+- ~~`pre-mishap-drills`~~ - COMPLETED
+- ~~`safety-climate-survey`~~ - COMPLETED
+- ~~`flight-schedule-approval`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
-| `safety-policy` | Safety Policy Statement | 30-day requirement for commander's safety policy |
-| `ground-safety` | Ground Safety Program | Ground safety program elements and oversight |
-| `motor-vehicle-safety` | Motor Vehicle Safety | POV and motorcycle safety programs |
-| `orm-integration` | ORM Integration | Integrating ORM into planning and operations |
-| `mishap-reporting` | Mishap Reporting | Class A, B, C definitions and reporting requirements |
 | `mishap-investigation` | Investigation Requirements | When investigations are required and commander's role |
-| `pre-mishap-drills` | Pre-Mishap Drills | Required drill frequency and elements |
-| `safety-climate-survey` | Safety Climate Survey | O-5/O-6 survey requirement within 90 days |
 | `doss-relationship` | DOSS Relationship | Director of Safety and Standardization coordination |
-| `flight-schedule-approval` | Flight Schedule Approval | Commander's role in flight operations |
 
 ## Security Programs
 **Section:** `commanders-security`
