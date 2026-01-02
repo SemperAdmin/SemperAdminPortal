@@ -304,6 +304,16 @@ import { AdminSepAuthorityContent } from "../../../../../components/commanders/A
 import { CharacterizationOfServiceContent } from "../../../../../components/commanders/CharacterizationOfServiceContent";
 import { ReligiousAccommodationContent } from "../../../../../components/commanders/ReligiousAccommodationContent";
 import { RequestMastContent } from "../../../../../components/commanders/RequestMastContent";
+// Commanders - Suicide Prevention & Force Preservation
+import { SPPOAppointmentContent } from "../../../../../components/commanders/SPPOAppointmentContent";
+import { ForcePreservationCouncilContent } from "../../../../../components/commanders/ForcePreservationCouncilContent";
+import { CIRRASOversightContent } from "../../../../../components/commanders/CIRRASOversightContent";
+import { CriticalStressorsContent } from "../../../../../components/commanders/CriticalStressorsContent";
+import { LethalMeansSafetyContent } from "../../../../../components/commanders/LethalMeansSafetyContent";
+import { PostventionContent } from "../../../../../components/commanders/PostventionContent";
+import { MFLCProgramContent } from "../../../../../components/commanders/MFLCProgramContent";
+import { ChaplainSupportContent } from "../../../../../components/commanders/ChaplainSupportContent";
+import { COSCOscarContent } from "../../../../../components/commanders/COSCOscarContent";
 // Commanders - Transition of Command
 import {
   CornerstoneAttendanceContent,
@@ -3257,6 +3267,87 @@ const REQUEST_MAST_CA_DATA = {
   ],
 };
 
+// Commanders - Suicide Prevention & Force Preservation Data
+const SPPO_APPOINTMENT_DATA = {
+  references: [
+    { title: "MCO 1720.2A (MCPPSB)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DoDI 6490.16 (DSPO)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/649016p.pdf" },
+    { title: "MARADMIN 289/21", url: "https://www.marines.mil" },
+  ],
+};
+
+const FORCE_PRESERVATION_COUNCIL_DATA = {
+  references: [
+    { title: "MCO 1720.2A (MCPPSB)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "MCTFSCODESMAN (FPC Procedures)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DoDI 6490.16 (DSPO)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/649016p.pdf" },
+    { title: "CIRRAS User Guide", url: "https://www.marines.mil" },
+  ],
+};
+
+const CIRRAS_OVERSIGHT_DATA = {
+  references: [
+    { title: "CIRRAS System", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "MCO 1720.2A (MCPPSB)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "FPC MCTFSCODESMAN", url: "https://www.marines.mil" },
+    { title: "PCS Warm Handoff SOP", url: "https://www.marines.mil" },
+  ],
+};
+
+const CRITICAL_STRESSORS_DATA = {
+  references: [
+    { title: "MCO 1720.2A (MCPPSB)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DoDSER (Annual Report)", url: "https://www.dspo.mil/", isQuickLink: true },
+    { title: "VA/DoD CPG for Suicide Risk", url: "https://www.healthquality.va.gov/guidelines/MH/srb/" },
+    { title: "Suicide Prevention Resource Center", url: "https://sprc.org/" },
+  ],
+};
+
+const LETHAL_MEANS_SAFETY_DATA = {
+  references: [
+    { title: "MCO 1720.2A (MCPPSB)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "Means Matter (Harvard)", url: "https://www.hsph.harvard.edu/means-matter/", isQuickLink: true },
+    { title: "DoDI 6490.16 (DSPO)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/649016p.pdf" },
+    { title: "AFSP Safe Messaging", url: "https://afsp.org/" },
+  ],
+};
+
+const POSTVENTION_DATA = {
+  references: [
+    { title: "MCO 1720.2A (MCPPSB)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DoDI 6490.16 (DSPO)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/649016p.pdf", isQuickLink: true },
+    { title: "AFSP After a Suicide Toolkit", url: "https://afsp.org/after-a-suicide-a-toolkit-for-schools" },
+    { title: "Casualty Assistance (MCO P1300.8)", url: "https://www.marines.mil" },
+  ],
+};
+
+const MFLC_PROGRAM_DATA = {
+  references: [
+    { title: "Military OneSource MFLC", url: "https://www.militaryonesource.mil/confidential-help/non-medical-counseling/military-and-family-life-counseling/", isQuickLink: true },
+    { title: "DoDI 6490.06 (MFLC)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/649006p.pdf", isQuickLink: true },
+    { title: "MCO 1754.14", url: "https://www.marines.mil" },
+    { title: "MFLC Program FAQs", url: "https://www.militaryonesource.mil" },
+  ],
+};
+
+const CHAPLAIN_SUPPORT_DATA = {
+  references: [
+    { title: "SECNAVINST 1730.7E (RMP)", url: "https://www.secnav.navy.mil/doni/Directives/01000%20Military%20Personnel%20Support/01-700%20Morale,%20Community%20and%20Religious%20Services/1730.7E.pdf", isQuickLink: true },
+    { title: "10 U.S.C. 1789 (Privileged Comms)", url: "https://www.law.cornell.edu/uscode/text/10/1789", isQuickLink: true },
+    { title: "MCO 1730.6F", url: "https://www.marines.mil" },
+    { title: "MRE 503 (Priest-Penitent Privilege)", url: "https://jsc.defense.gov/" },
+  ],
+};
+
+const COSC_OSCAR_DATA = {
+  references: [
+    { title: "MCO 5351.1 (COSC)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "OSCAR Program Guide", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "Combat Stress Control (ATP 4-02.8)", url: "https://armypubs.army.mil/ProductMaps/PubForm/Details.aspx?PUB_ID=1003585" },
+    { title: "Stress Continuum Model", url: "https://www.marines.mil" },
+  ],
+};
+
 // Life Events Data
 const BUYING_A_HOME_DATA = {
   references: [
@@ -3769,6 +3860,16 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "service-characterization": <CharacterizationOfServiceContent data={CHARACTERIZATION_OF_SERVICE_CA_DATA} />,
     "religious-accommodation": <ReligiousAccommodationContent data={RELIGIOUS_ACCOMMODATION_CA_DATA} />,
     "request-mast": <RequestMastContent data={REQUEST_MAST_CA_DATA} />,
+    // Commanders - Suicide Prevention & Force Preservation
+    "sppo-appointment": <SPPOAppointmentContent data={SPPO_APPOINTMENT_DATA} />,
+    "force-preservation-council": <ForcePreservationCouncilContent data={FORCE_PRESERVATION_COUNCIL_DATA} />,
+    "cirras-oversight": <CIRRASOversightContent data={CIRRAS_OVERSIGHT_DATA} />,
+    "critical-stressors": <CriticalStressorsContent data={CRITICAL_STRESSORS_DATA} />,
+    "lethal-means-safety": <LethalMeansSafetyContent data={LETHAL_MEANS_SAFETY_DATA} />,
+    "postvention": <PostventionContent data={POSTVENTION_DATA} />,
+    "mflc-program": <MFLCProgramContent data={MFLC_PROGRAM_DATA} />,
+    "chaplain-support": <ChaplainSupportContent data={CHAPLAIN_SUPPORT_DATA} />,
+    "cosc-oscar": <COSCOscarContent data={COSC_OSCAR_DATA} />,
     // Life Events
     "buying-a-home": <BuyingAHomeContent data={BUYING_A_HOME_DATA} />,
     "deploying": <DeployingContent data={DEPLOYING_DATA} />,

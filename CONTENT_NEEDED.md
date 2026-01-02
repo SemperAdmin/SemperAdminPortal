@@ -1,4 +1,4 @@
-# Content Needed: 136 Placeholder Items
+# Content Needed: 127 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 133 items |
+| **Commanders** | 124 items |
 | **Administrators** | 0 items |
 
 ---
@@ -276,17 +276,16 @@ Remaining:
 ## Suicide Prevention & Force Preservation
 **Section:** `commanders-suicide-prevention`
 
-| Slug | Title | Description |
-|------|-------|-------------|
-| `sppo-appointment` | SPPO Appointment | Suicide Prevention Program Officer selection and duties |
-| `force-preservation-council` | Force Preservation Council | Meeting frequency, attendees, and required actions |
-| `cirras-oversight` | CIRRAS Oversight | What gets entered, update requirements, PCS warm handoffs |
-| `critical-stressors` | Critical Stressors | First 90 days post-NJP, relationship distress, financial problems |
-| `lethal-means-safety` | Lethal Means Safety | Voluntary firearms storage and safety planning |
-| `postvention` | Postvention Procedures | Command response after a suicide or attempt |
-| `mflc-program` | MFLC Program | Military and Family Life Counselor availability |
-| `chaplain-support` | Chaplain Support | Privileged communication and spiritual support |
-| `cosc-oscar` | Combat Operational Stress Control | CCP and OSCAR team integration |
+All Suicide Prevention & Force Preservation items now have content:
+- ~~`sppo-appointment`~~ - COMPLETED
+- ~~`force-preservation-council`~~ - COMPLETED
+- ~~`cirras-oversight`~~ - COMPLETED
+- ~~`critical-stressors`~~ - COMPLETED
+- ~~`lethal-means-safety`~~ - COMPLETED
+- ~~`postvention`~~ - COMPLETED
+- ~~`mflc-program`~~ - COMPLETED
+- ~~`chaplain-support`~~ - COMPLETED
+- ~~`cosc-oscar`~~ - COMPLETED
 
 ## Training & Readiness
 **Section:** `commanders-training-readiness`
