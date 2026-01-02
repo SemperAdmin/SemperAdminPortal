@@ -1,4 +1,4 @@
-# Content Needed: 32 Placeholder Items
+# Content Needed: 30 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 29 items |
+| **Commanders** | 27 items |
 | **Administrators** | 0 items |
 
 ---
@@ -258,14 +258,17 @@ Completed items:
 ## Substance Abuse & Urinalysis
 **Section:** `commanders-substance-abuse`
 
+Completed items:
+- ~~`inspection-testing`~~ - COMPLETED
+- ~~`substance-admin-actions`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
 | `uuc-appointment` | Unit Urinalysis Coordinator | Appointing and training the UUC |
 | `testing-requirements` | Testing Requirements | Random, command-directed, and probable cause testing |
-| `inspection-testing` | Inspection Testing | Health and welfare inspection requirements |
 | `positive-result-procedures` | Positive Result Procedures | Actions upon confirmed positive results |
 | `treatment-referral` | Treatment Referral | SACO and treatment program referrals |
-| `substance-admin-actions` | Administrative Actions | NJP, ADSEP, and career implications |
 
 ## Suicide Prevention & Force Preservation
 **Section:** `commanders-suicide-prevention`
