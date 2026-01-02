@@ -370,6 +370,11 @@ import { CIPOverviewContent } from "../../../../../components/commanders/CIPOver
 import { CGIPPreparationContent } from "../../../../../components/commanders/CGIPPreparationContent";
 import { IGMCFunctionalAreasContent } from "../../../../../components/commanders/IGMCFunctionalAreasContent";
 import { POAMManagementContent } from "../../../../../components/commanders/POAMManagementContent";
+import { InternalInspectionsContent } from "../../../../../components/commanders/InternalInspectionsContent";
+import { SMATInspectionsContent } from "../../../../../components/commanders/SMATInspectionsContent";
+import { FSMAOAnalysisContent } from "../../../../../components/commanders/FSMAOAnalysisContent";
+import { PreInspectionPrepContent } from "../../../../../components/commanders/PreInspectionPrepContent";
+import { CorrectiveActionTrackingContent } from "../../../../../components/commanders/CorrectiveActionTrackingContent";
 // Commanders - Personnel Administration & Career Management
 import { FitnessReportContent } from "../../../../../components/commanders/FitnessReportContent";
 import { JEPESCommanderRoleContent } from "../../../../../components/commanders/JEPESCommanderRoleContent";
@@ -389,6 +394,8 @@ import { SocialMediaPolicyContent } from "../../../../../components/commanders/S
 import { CrisisCommunicationContent } from "../../../../../components/commanders/CrisisCommunicationContent";
 import { OPSECPublicStatementsContent } from "../../../../../components/commanders/OPSECPublicStatementsContent";
 import { ClimateMessagingContent } from "../../../../../components/commanders/ClimateMessagingContent";
+import { AppealRightsContent } from "../../../../../components/commanders/AppealRightsContent";
+import { ADSEPAuthorityContent } from "../../../../../components/commanders/ADSEPAuthorityContent";
 // Commanders - Transition of Command
 import {
   CornerstoneAttendanceContent,
@@ -3366,6 +3373,22 @@ const ADSEP_DUE_PROCESS_DATA = {
   ],
 };
 
+const APPEAL_RIGHTS_DATA = {
+  references: [
+    { title: "MCO 1900.16F (Marine Corps Separation Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
+    { title: "MCM Part V (NJP Procedures)", url: "https://jsc.defense.gov/Military-Law/Current-Publications-702/", isQuickLink: true },
+    { title: "10 U.S.C. 815 (Article 15, UCMJ)", url: "https://www.law.cornell.edu/uscode/text/10/815" },
+  ],
+};
+
+const ADSEP_AUTHORITY_DATA = {
+  references: [
+    { title: "MCO P1900.16F (Separation Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
+    { title: "SECNAVINST 1920.6D (ADSEP)", url: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1920.6D.pdf", isQuickLink: true },
+    { title: "MCO 5800.16A Vol 9 (Admin Separations)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5800.16" },
+  ],
+};
+
 // Commanders - Suicide Prevention & Force Preservation Data
 const SPPO_APPOINTMENT_DATA = {
   references: [
@@ -3818,6 +3841,46 @@ const POAM_MANAGEMENT_DATA = {
     { title: "MCO 5040.6H (Inspections Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.6", isQuickLink: true },
     { title: "NAVMC 11333 (POA&M Template)", url: "https://www.marines.mil", isQuickLink: true },
     { title: "MCO 5210.11F (Records Management)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5210.11" },
+  ],
+};
+
+const INTERNAL_INSPECTIONS_DATA = {
+  references: [
+    { title: "MCO 4790.2 (MIMMS Field Procedures)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=4790.2", isQuickLink: true },
+    { title: "MCO 4400.160 (FSMAO Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=4400.160", isQuickLink: true },
+    { title: "NAVMC 4400.150 (Consumer-Level Supply)", url: "https://www.marines.mil" },
+  ],
+};
+
+const SMAT_INSPECTIONS_DATA = {
+  references: [
+    { title: "MCO 4400.160 (FSMAO Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=4400.160", isQuickLink: true },
+    { title: "Unit/MSC SOP", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "NAVMC 4400.150 (Consumer-Level Supply)", url: "https://www.marines.mil" },
+  ],
+};
+
+const FSMAO_ANALYSIS_DATA = {
+  references: [
+    { title: "MCO 4400.160 (FSMAO Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=4400.160", isQuickLink: true },
+    { title: "MCO 4400.201 (Management of Property)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=4400.201", isQuickLink: true },
+    { title: "GCSS-MC Portal", url: "https://gcss-mc.marines.mil" },
+  ],
+};
+
+const PRE_INSPECTION_PREP_DATA = {
+  references: [
+    { title: "MCO 5040.6H (Inspections Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.6", isQuickLink: true },
+    { title: "NAVMC 5040.1 (IG Checklist User Guide)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: "https://www.marines.mil" },
+  ],
+};
+
+const CORRECTIVE_ACTION_TRACKING_DATA = {
+  references: [
+    { title: "MCO 5040.6H (Inspections Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5040.6", isQuickLink: true },
+    { title: "NAVMC 11333 (POA&M Template)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "Unit SOP for Corrective Actions", url: "https://www.marines.mil" },
   ],
 };
 
@@ -4463,6 +4526,8 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "njp-punishment-limits": <PunishmentLimitsContent data={PUNISHMENT_LIMITS_CA_DATA} />,
     "separation-bases": <SeparationBasesContent data={SEPARATION_BASES_DATA} />,
     "adsep-due-process": <ADSEPDueProcessContent data={ADSEP_DUE_PROCESS_DATA} />,
+    "appeal-rights": <AppealRightsContent data={APPEAL_RIGHTS_DATA} />,
+    "adsep-commander-authority": <ADSEPAuthorityContent data={ADSEP_AUTHORITY_DATA} />,
     // Commanders - Suicide Prevention & Force Preservation
     "sppo-appointment": <SPPOAppointmentContent data={SPPO_APPOINTMENT_DATA} />,
     "force-preservation-council": <ForcePreservationCouncilContent data={FORCE_PRESERVATION_COUNCIL_DATA} />,
@@ -4526,6 +4591,11 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "cgip-preparation": <CGIPPreparationContent data={CGIP_PREPARATION_DATA} />,
     "igmc-functional-areas": <IGMCFunctionalAreasContent data={IGMC_FUNCTIONAL_AREAS_DATA} />,
     "poam-management": <POAMManagementContent data={POAM_MANAGEMENT_DATA} />,
+    "internal-inspections": <InternalInspectionsContent data={INTERNAL_INSPECTIONS_DATA} />,
+    "smat-inspections": <SMATInspectionsContent data={SMAT_INSPECTIONS_DATA} />,
+    "fsmao-analysis": <FSMAOAnalysisContent data={FSMAO_ANALYSIS_DATA} />,
+    "pre-inspection-prep": <PreInspectionPrepContent data={PRE_INSPECTION_PREP_DATA} />,
+    "corrective-action-tracking": <CorrectiveActionTrackingContent data={CORRECTIVE_ACTION_TRACKING_DATA} />,
     // Commanders - Personnel Administration & Career Management
     "fitrep-responsibilities": <FitnessReportContent data={FITREP_RESPONSIBILITIES_DATA} />,
     "jepes-commander": <JEPESCommanderRoleContent data={JEPES_COMMANDER_DATA} />,
@@ -5103,10 +5173,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   ];
 
   const commandersLegalSection = "commanders-legal-discipline";
-  const commandersLegalSlugs = [
-    "appeal-rights",
-    "adsep-commander-authority",
-  ];
+  const commandersLegalSlugs: string[] = [];
 
   const commandersAdminInvestigationsSection = "commanders-admin-investigations";
   const commandersAdminInvestigationsSlugs = [
@@ -5182,13 +5249,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   ];
 
   const commandersIGSection = "commanders-inspector-general";
-  const commandersIGSlugs = [
-    "internal-inspections",
-    "fsmao-analysis",
-    "smat-inspections",
-    "pre-inspection-prep",
-    "corrective-action-tracking",
-  ];
+  const commandersIGSlugs: string[] = [];
 
   const commandersEnvironmentalSection = "commanders-environmental";
   const commandersEnvironmentalSlugs = [
