@@ -291,6 +291,19 @@ import { InvestigationReportFormatContent } from "../../../../../components/comm
 import { LineOfDutyContent } from "../../../../../components/commanders/investigations/LineOfDutyContent";
 import { DeathCaseProceduresContent } from "../../../../../components/commanders/investigations/DeathCaseProceduresContent";
 import { InvestigationCoordinationContent } from "../../../../../components/commanders/investigations/InvestigationCoordinationContent";
+// Commanders - Legal
+import { NJPAuthorityContent } from "../../../../../components/commanders/NJPAuthorityContent";
+import { PunishmentLimitsContent } from "../../../../../components/commanders/PunishmentLimitsContent";
+import { NJPProcessContent } from "../../../../../components/commanders/NJPProcessContent";
+import { NJPAppealsContent } from "../../../../../components/commanders/NJPAppealsContent";
+import { SummaryCourtMartialContent } from "../../../../../components/commanders/SummaryCourtMartialContent";
+import { SpecialCourtMartialContent } from "../../../../../components/commanders/SpecialCourtMartialContent";
+import { GeneralCourtMartialContent } from "../../../../../components/commanders/GeneralCourtMartialContent";
+import { DispositionOptionsContent } from "../../../../../components/commanders/DispositionOptionsContent";
+import { AdminSepAuthorityContent } from "../../../../../components/commanders/AdminSepAuthorityContent";
+import { CharacterizationOfServiceContent } from "../../../../../components/commanders/CharacterizationOfServiceContent";
+import { ReligiousAccommodationContent } from "../../../../../components/commanders/ReligiousAccommodationContent";
+import { RequestMastContent } from "../../../../../components/commanders/RequestMastContent";
 // Commanders - Transition of Command
 import {
   CornerstoneAttendanceContent,
@@ -3117,6 +3130,105 @@ const INVESTIGATION_COORDINATION_DATA = {
   ],
 };
 
+// Commanders - Legal Data
+const NJP_AUTHORITY_CA_DATA = {
+  references: [
+    { title: "MCO 5800.16 Vol 14", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "UCMJ Article 15", url: "https://www.law.cornell.edu/uscode/text/10/815", isQuickLink: true },
+    { title: "MCM Part V", url: "https://jsc.defense.gov/Military-Law/Current-Publications-and-Updates/" },
+  ],
+};
+
+const PUNISHMENT_LIMITS_CA_DATA = {
+  references: [
+    { title: "MCO 5800.16 Vol 14", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "UCMJ Article 15", url: "https://www.law.cornell.edu/uscode/text/10/815", isQuickLink: true },
+    { title: "MCM Part V (Max Punishments)", url: "https://jsc.defense.gov/Military-Law/Current-Publications-and-Updates/" },
+  ],
+};
+
+const NJP_PROCESS_CA_DATA = {
+  references: [
+    { title: "MCO 5800.16 Vol 14", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "NAVMC 10132", url: "https://www.marines.mil" },
+    { title: "MCM Part V", url: "https://jsc.defense.gov/Military-Law/Current-Publications-and-Updates/" },
+  ],
+};
+
+const NJP_APPEALS_CA_DATA = {
+  references: [
+    { title: "MCO 5800.16 Vol 14", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "UCMJ Article 15", url: "https://www.law.cornell.edu/uscode/text/10/815" },
+    { title: "MCM Part V (Appeals)", url: "https://jsc.defense.gov/Military-Law/Current-Publications-and-Updates/" },
+  ],
+};
+
+const SUMMARY_COURT_MARTIAL_CA_DATA = {
+  references: [
+    { title: "MCO 5800.16 Vol 16", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "UCMJ Article 20", url: "https://www.law.cornell.edu/uscode/text/10/820", isQuickLink: true },
+    { title: "MCM (Manual for Courts-Martial)", url: "https://jsc.defense.gov/Military-Law/Current-Publications-and-Updates/" },
+  ],
+};
+
+const SPECIAL_COURT_MARTIAL_CA_DATA = {
+  references: [
+    { title: "MCO 5800.16 Vol 16", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "UCMJ Article 19", url: "https://www.law.cornell.edu/uscode/text/10/819", isQuickLink: true },
+    { title: "MCM (Manual for Courts-Martial)", url: "https://jsc.defense.gov/Military-Law/Current-Publications-and-Updates/" },
+  ],
+};
+
+const GENERAL_COURT_MARTIAL_CA_DATA = {
+  references: [
+    { title: "MCO 5800.16 Vol 16", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "UCMJ Article 18", url: "https://www.law.cornell.edu/uscode/text/10/818", isQuickLink: true },
+    { title: "MCM (Manual for Courts-Martial)", url: "https://jsc.defense.gov/Military-Law/Current-Publications-and-Updates/" },
+    { title: "UCMJ Article 32", url: "https://www.law.cornell.edu/uscode/text/10/832" },
+  ],
+};
+
+const DISPOSITION_OPTIONS_CA_DATA = {
+  references: [
+    { title: "MCO 5800.16 Vol 14", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "JAGMAN (JAGINST 5800.7G)", url: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf", isQuickLink: true },
+    { title: "MCM (Manual for Courts-Martial)", url: "https://jsc.defense.gov/Military-Law/Current-Publications-and-Updates/" },
+  ],
+};
+
+const ADMIN_SEP_AUTHORITY_CA_DATA = {
+  references: [
+    { title: "MCO 1900.16 CH-3 (MARCORSEPMAN)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "MILPERSMAN 1910", url: "https://www.mynavyhr.navy.mil/References/MILPERSMAN/" },
+    { title: "UCMJ Article 15", url: "https://www.law.cornell.edu/uscode/text/10/815" },
+  ],
+};
+
+const CHARACTERIZATION_OF_SERVICE_CA_DATA = {
+  references: [
+    { title: "MCO 1900.16 CH-3 (MARCORSEPMAN)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DoDI 1332.14", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: true },
+    { title: "10 U.S.C. 1177", url: "https://www.law.cornell.edu/uscode/text/10/1177" },
+  ],
+};
+
+const RELIGIOUS_ACCOMMODATION_CA_DATA = {
+  references: [
+    { title: "MCO 1730.9", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DoDI 1300.17 (Religious Liberty)", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: true },
+    { title: "RFRA (42 U.S.C. 2000bb)", url: "https://www.law.cornell.edu/uscode/text/42/2000bb" },
+    { title: "NAVMC 10274 AA", url: "https://www.marines.mil" },
+  ],
+};
+
+const REQUEST_MAST_CA_DATA = {
+  references: [
+    { title: "MCO 1700.23G", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "NAVMC 11296", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "10 U.S.C. 1034 (Protected Communications)", url: "https://www.law.cornell.edu/uscode/text/10/1034" },
+  ],
+};
+
 // Life Events Data
 const BUYING_A_HOME_DATA = {
   references: [
@@ -3616,6 +3728,19 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "line-of-duty": <LineOfDutyContent data={LINE_OF_DUTY_CA_DATA} />,
     "death-case-procedures": <DeathCaseProceduresContent data={DEATH_CASE_PROCEDURES_CA_DATA} />,
     "investigation-coordination": <InvestigationCoordinationContent data={INVESTIGATION_COORDINATION_DATA} />,
+    // Commanders - Legal
+    "njp-authority": <NJPAuthorityContent data={NJP_AUTHORITY_CA_DATA} />,
+    "punishment-limits": <PunishmentLimitsContent data={PUNISHMENT_LIMITS_CA_DATA} />,
+    "njp-process": <NJPProcessContent data={NJP_PROCESS_CA_DATA} />,
+    "njp-appeals": <NJPAppealsContent data={NJP_APPEALS_CA_DATA} />,
+    "summary-court-martial": <SummaryCourtMartialContent data={SUMMARY_COURT_MARTIAL_CA_DATA} />,
+    "special-court-martial": <SpecialCourtMartialContent data={SPECIAL_COURT_MARTIAL_CA_DATA} />,
+    "general-court-martial": <GeneralCourtMartialContent data={GENERAL_COURT_MARTIAL_CA_DATA} />,
+    "disposition-options": <DispositionOptionsContent data={DISPOSITION_OPTIONS_CA_DATA} />,
+    "admin-sep-authority": <AdminSepAuthorityContent data={ADMIN_SEP_AUTHORITY_CA_DATA} />,
+    "characterization-of-service": <CharacterizationOfServiceContent data={CHARACTERIZATION_OF_SERVICE_CA_DATA} />,
+    "religious-accommodation": <ReligiousAccommodationContent data={RELIGIOUS_ACCOMMODATION_CA_DATA} />,
+    "request-mast": <RequestMastContent data={REQUEST_MAST_CA_DATA} />,
     // Life Events
     "buying-a-home": <BuyingAHomeContent data={BUYING_A_HOME_DATA} />,
     "deploying": <DeployingContent data={DEPLOYING_DATA} />,
