@@ -173,8 +173,8 @@ export function PostventionContent({ data }: Props) {
                 </tr>
               </thead>
               <tbody>
-                {SAFE_MESSAGING.map((item, index) => (
-                  <tr key={step} className="border-b border-zinc-100 dark:border-zinc-800">
+                {SAFE_MESSAGING.map((item) => (
+                  <tr key={item.do} className="border-b border-zinc-100 dark:border-zinc-800">
                     <td className="py-3 pr-4 text-zinc-600 dark:text-zinc-400">{item.do}</td>
                     <td className="py-3 text-zinc-600 dark:text-zinc-400">{item.dont}</td>
                   </tr>

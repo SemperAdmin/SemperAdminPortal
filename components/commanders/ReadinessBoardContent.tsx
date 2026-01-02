@@ -204,8 +204,8 @@ export function ReadinessBoardContent({ data }: Props) {
             Standard Agenda
           </h3>
           <ul className="mt-4 space-y-2">
-            {AGENDA_ITEMS.map((item, index) => (
-              <li key={step} className="flex items-start gap-2 text-sm text-zinc-600 dark:text-zinc-400">
+            {AGENDA_ITEMS.map((item) => (
+              <li key={item} className="flex items-start gap-2 text-sm text-zinc-600 dark:text-zinc-400">
                 <span className="mt-1 h-2 w-2 rounded-full bg-[var(--sa-navy)]" />
                 {item}
               </li>
