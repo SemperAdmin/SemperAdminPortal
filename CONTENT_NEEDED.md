@@ -1,4 +1,4 @@
-# Content Needed: 62 Placeholder Items
+# Content Needed: 58 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 59 items |
+| **Commanders** | 55 items |
 | **Administrators** | 0 items |
 
 ---
@@ -131,20 +131,18 @@ Completed items:
 ## Fiscal & Property Accountability
 **Section:** `commanders-fiscal-property`
 
+**STATUS: SECTION COMPLETE (9/9 items)**
+
 Completed items:
 - ~~`fund-control-training`~~ - COMPLETED
 - ~~`budget-execution`~~ - COMPLETED
 - ~~`status-of-funds`~~ - COMPLETED
 - ~~`ulo-validation`~~ - COMPLETED
 - ~~`supply-officer-appointment`~~ - COMPLETED
-
-Remaining items:
-| Slug | Title | Description |
-|------|-------|-------------|
-| `accountable-officer` | Accountable Officer Responsibilities | Commander's fiscal accountability and liability |
-| `uac-prevention` | Unauthorized Commitment Prevention | Preventing and addressing unauthorized commitments |
-| `gtcc-oversight` | GTCC Program Oversight | Government Travel Charge Card program management |
-| `certificate-of-relief` | Certificate of Relief | Property accountability transfer at change of command |
+- ~~`accountable-officer`~~ - COMPLETED
+- ~~`uac-prevention`~~ - COMPLETED
+- ~~`gtcc-oversight`~~ - COMPLETED
+- ~~`certificate-of-relief`~~ - COMPLETED
 
 ## Inspector General & Inspections
 **Section:** `commanders-inspector-general`
