@@ -319,6 +319,11 @@ import { DRRSMCOverviewContent } from "../../../../../components/commanders/DRRS
 import { METLDevelopmentContent } from "../../../../../components/commanders/METLDevelopmentContent";
 import { CLevelAssessmentContent } from "../../../../../components/commanders/CLevelAssessmentContent";
 import { ReadinessBoardContent } from "../../../../../components/commanders/ReadinessBoardContent";
+// Commanders - Equal Opportunity
+import { EOPolicyStatementContent } from "../../../../../components/commanders/EOPolicyStatementContent";
+import { EORepresentativeContent } from "../../../../../components/commanders/EORepresentativeContent";
+import { EOComplaintProcessContent } from "../../../../../components/commanders/EOComplaintProcessContent";
+import { EOInvestigationContent } from "../../../../../components/commanders/EOInvestigationContent";
 // Commanders - Transition of Command
 import {
   CornerstoneAttendanceContent,
@@ -3390,6 +3395,43 @@ const READINESS_BOARD_DATA = {
   ],
 };
 
+// Commanders - Equal Opportunity Data
+const EO_POLICY_STATEMENT_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Prevention)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DoDI 1350.02 (EO Program)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/135002p.pdf", isQuickLink: true },
+    { title: "EO Policy Template", url: "https://www.marines.mil" },
+    { title: "Command Climate Assessment Guide", url: "https://www.marines.mil" },
+  ],
+};
+
+const EO_REPRESENTATIVE_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Prevention)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "NAVMC 11432 (Appointment Template)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "EOR Training Handbook", url: "https://www.marines.mil" },
+    { title: "DoDI 1350.02 (EO Program)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/135002p.pdf" },
+  ],
+};
+
+const EO_COMPLAINT_PROCESS_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Prevention)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "NAVMC 11512 (Complaint Form)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DoDI 1350.02 (EO Program)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/135002p.pdf" },
+    { title: "Installation EOA Contact", url: "https://www.marines.mil" },
+  ],
+};
+
+const EO_INVESTIGATION_DATA = {
+  references: [
+    { title: "MCO 5354.1G (PAC Prevention)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "MCO 5800.16 (LSAM)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "NAVMC 11512 (Complaint Form)", url: "https://www.marines.mil" },
+    { title: "IO Appointment Template", url: "https://www.marines.mil" },
+  ],
+};
+
 // Life Events Data
 const BUYING_A_HOME_DATA = {
   references: [
@@ -3917,6 +3959,11 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "metl-development": <METLDevelopmentContent data={METL_DEVELOPMENT_DATA} />,
     "c-level-assessment": <CLevelAssessmentContent data={C_LEVEL_ASSESSMENT_DATA} />,
     "readiness-board": <ReadinessBoardContent data={READINESS_BOARD_DATA} />,
+    // Commanders - Equal Opportunity
+    "eo-policy": <EOPolicyStatementContent data={EO_POLICY_STATEMENT_DATA} />,
+    "eor-appointment": <EORepresentativeContent data={EO_REPRESENTATIVE_DATA} />,
+    "eo-complaint-process": <EOComplaintProcessContent data={EO_COMPLAINT_PROCESS_DATA} />,
+    "eo-investigation": <EOInvestigationContent data={EO_INVESTIGATION_DATA} />,
     // Life Events
     "buying-a-home": <BuyingAHomeContent data={BUYING_A_HOME_DATA} />,
     "deploying": <DeployingContent data={DEPLOYING_DATA} />,

@@ -1,4 +1,4 @@
-# Content Needed: 123 Placeholder Items
+# Content Needed: 119 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 120 items |
+| **Commanders** | 116 items |
 | **Administrators** | 0 items |
 
 ---
@@ -101,13 +101,16 @@ Remaining:
 ## Equal Opportunity
 **Section:** `commanders-equal-opportunity`
 
+Completed items:
+- ~~`eo-policy`~~ - COMPLETED
+- ~~`eor-appointment`~~ - COMPLETED
+- ~~`eo-complaint-process`~~ - COMPLETED
+- ~~`eo-investigation`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
-| `eo-policy` | EO Policy Statement | Commander's equal opportunity policy |
-| `eor-appointment` | EO Representative Appointment | Selecting and training unit EO Representatives |
 | `eo-climate-assessment` | Climate Assessment | Monitoring unit climate through DEOCS and observation |
-| `eo-complaint-process` | EO Complaint Process | Formal and informal complaint resolution |
-| `eo-investigation` | Investigation Requirements | When investigations are required and procedures |
 | `eo-retaliation-prevention` | Retaliation Prevention | Protecting complainants from retaliation |
 
 ## Family Readiness & Casualty Affairs
