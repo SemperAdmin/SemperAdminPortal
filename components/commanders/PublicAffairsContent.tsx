@@ -29,29 +29,13 @@ import {
   Building
 } from "lucide-react";
 import { Acronym } from "../ui/Acronym";
+import { InfoCard } from "../ui/InfoCard";
 
 interface InfoCardProps {
   children: React.ReactNode;
   variant?: "info" | "warning" | "success" | "tip" | "danger";
   className?: string;
 }
-
-function InfoCard({ children, variant = "info", className = "" }: InfoCardProps) {
-  const styles = {
-    info: "border-l-blue-500 bg-blue-50 dark:bg-blue-950/20",
-    warning: "border-l-amber-500 bg-amber-50 dark:bg-amber-950/20",
-    success: "border-l-emerald-500 bg-emerald-50 dark:bg-emerald-950/20",
-    tip: "border-l-purple-500 bg-purple-50 dark:bg-purple-950/20",
-    danger: "border-l-rose-500 bg-rose-50 dark:bg-rose-950/20",
-  };
-
-  return (
-    <div className={`rounded-lg border-l-4 p-4 ${styles[variant]} ${className}`}>
-      <div className="text-sm text-zinc-700 dark:text-zinc-300">{children}</div>
-    </div>
-  );
-}
-
 function CollapsibleSection({
   title,
   icon: Icon,

@@ -3,6 +3,7 @@
 import React from "react";
 import { Breadcrumb } from "../../ui/Breadcrumb";
 import { FAP_TRAINING_DATA } from "../../../data/transitionCommandData";
+import { InfoCard } from "../../ui/InfoCard";
 import {
   Heart,
   CheckCircle,
@@ -14,37 +15,6 @@ import {
   ExternalLink,
   Shield,
 } from "lucide-react";
-
-function InfoCard({
-  icon: Icon,
-  title,
-  children,
-  variant = "default",
-}: {
-  icon?: React.ElementType;
-  title?: string;
-  children: React.ReactNode;
-  variant?: "default" | "warning" | "success" | "info";
-}) {
-  const variants = {
-    default: "border-[var(--sa-navy)]/20 bg-[var(--sa-cream)]/30 dark:bg-[var(--sa-navy)]/20",
-    warning: "border-amber-500/40 bg-amber-500/10 dark:bg-amber-500/20",
-    success: "border-green-500/40 bg-green-500/10 dark:bg-green-500/20",
-    info: "border-blue-500/40 bg-blue-500/10 dark:bg-blue-500/20",
-  };
-  return (
-    <div className={`rounded-lg border p-4 ${variants[variant]}`}>
-      {(Icon || title) && (
-        <div className="mb-2 flex items-center gap-2 font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-          {Icon && <Icon className="h-5 w-5" />}
-          {title}
-        </div>
-      )}
-      <div className="text-sm text-zinc-700 dark:text-zinc-300">{children}</div>
-    </div>
-  );
-}
-
 export function FAPTrainingContent() {
   const data = FAP_TRAINING_DATA;
   const breadcrumbItems = [

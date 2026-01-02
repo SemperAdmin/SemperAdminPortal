@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Acronym } from "../ui/Acronym";
 import { PERSONNEL_URLS, MCO_URLS } from "../../data/references";
+import { InfoCard } from "../ui/InfoCard";
 import {
   ChevronDown,
   ChevronRight,
@@ -67,35 +68,6 @@ interface InfoCardProps {
   children: React.ReactNode;
   variant?: "info" | "warning" | "success" | "tip";
 }
-
-function InfoCard({ title, children, variant = "info" }: InfoCardProps) {
-  const styles = {
-    info: "border-l-blue-500 bg-blue-50 dark:bg-blue-950/20",
-    warning: "border-l-amber-500 bg-amber-50 dark:bg-amber-950/20",
-    success: "border-l-emerald-500 bg-emerald-50 dark:bg-emerald-950/20",
-    tip: "border-l-purple-500 bg-purple-50 dark:bg-purple-950/20",
-  };
-
-  const icons = {
-    info: <Info className="h-5 w-5 text-blue-600 dark:text-blue-400" />,
-    warning: <AlertTriangle className="h-5 w-5 text-amber-600 dark:text-amber-400" />,
-    success: <CheckCircle className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />,
-    tip: <Info className="h-5 w-5 text-purple-600 dark:text-purple-400" />,
-  };
-
-  return (
-    <div className={`rounded-lg border-l-4 p-4 ${styles[variant]}`}>
-      <div className="flex items-start gap-3">
-        {icons[variant]}
-        <div>
-          <div className="font-semibold text-zinc-900 dark:text-zinc-100">{title}</div>
-          <div className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">{children}</div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function JEPESPillarCard({
   pillar,
   percentage,
