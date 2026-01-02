@@ -1,4 +1,4 @@
-# Content Needed: 83 Placeholder Items
+# Content Needed: 78 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 80 items |
+| **Commanders** | 75 items |
 | **Administrators** | 0 items |
 
 ---
@@ -133,16 +133,19 @@ Remaining items:
 ## Fiscal & Property Accountability
 **Section:** `commanders-fiscal-property`
 
+Completed items:
+- ~~`fund-control-training`~~ - COMPLETED
+- ~~`budget-execution`~~ - COMPLETED
+- ~~`status-of-funds`~~ - COMPLETED
+- ~~`ulo-validation`~~ - COMPLETED
+- ~~`supply-officer-appointment`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
 | `accountable-officer` | Accountable Officer Responsibilities | Commander's fiscal accountability and liability |
-| `fund-control-training` | Fund Control Training | Appropriations law and DON budget execution |
-| `budget-execution` | Budget Development & Execution | Annual training plan integration and quarterly budgets |
-| `status-of-funds` | Status of Funds Briefings | Regular financial status reviews |
 | `uac-prevention` | Unauthorized Commitment Prevention | Preventing and addressing unauthorized commitments |
-| `ulo-validation` | Unliquidated Orders Validation | ULO review and certification requirements |
 | `gtcc-oversight` | GTCC Program Oversight | Government Travel Charge Card program management |
-| `supply-officer-appointment` | Supply Officer Appointment | Appointing and supervising the supply officer |
 | `certificate-of-relief` | Certificate of Relief | Property accountability transfer at change of command |
 
 ## Inspector General & Inspections

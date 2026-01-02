@@ -337,6 +337,12 @@ import { CACOOversightContent } from "../../../../../components/commanders/CACOO
 import { ITOAuthorityContent } from "../../../../../components/commanders/ITOAuthorityContent";
 import { RCCReferralContent } from "../../../../../components/commanders/RCCReferralContent";
 import { WWBenefitsContent } from "../../../../../components/commanders/WWBenefitsContent";
+// Commanders - Fiscal & Property Accountability
+import { FundControlTrainingContent } from "../../../../../components/commanders/FundControlTrainingContent";
+import { BudgetExecutionContent } from "../../../../../components/commanders/BudgetExecutionContent";
+import { StatusOfFundsContent } from "../../../../../components/commanders/StatusOfFundsContent";
+import { ULOValidationContent } from "../../../../../components/commanders/ULOValidationContent";
+import { SupplyOfficerAppointmentContent } from "../../../../../components/commanders/SupplyOfficerAppointmentContent";
 // Commanders - Command Climate & Culture Programs
 import { DEOCSRequirementsContent } from "../../../../../components/commanders/DEOCSRequirementsContent";
 import { PACProgramOverviewContent } from "../../../../../components/commanders/PACProgramOverviewContent";
@@ -3564,6 +3570,43 @@ const WW_BENEFITS_DATA = {
   ],
 };
 
+// Commanders - Fiscal & Property Accountability Data
+const FUND_CONTROL_TRAINING_DATA = {
+  references: [
+    { title: "MCO 7300.21B (Financial Management SOP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=7300.21", isQuickLink: true },
+    { title: "31 U.S. Code § 1341 (Anti-Deficiency Act)", url: "https://www.law.cornell.edu/uscode/text/31/1341", isQuickLink: true },
+  ],
+};
+
+const BUDGET_EXECUTION_DATA = {
+  references: [
+    { title: "MCO 7300.21B (Financial Management SOP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=7300.21", isQuickLink: true },
+    { title: "NAVMC 4400.150 (Consumer-Level Supply)", url: "https://www.marines.mil", isQuickLink: true },
+  ],
+};
+
+const STATUS_OF_FUNDS_DATA = {
+  references: [
+    { title: "MCO 7300.21B (Financial Management SOP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=7300.21", isQuickLink: true },
+    { title: "DoD FMR Volume 3", url: "https://comptroller.defense.gov/FMR/" },
+  ],
+};
+
+const ULO_VALIDATION_DATA = {
+  references: [
+    { title: "MCO 7300.21B (Financial Management SOP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=7300.21", isQuickLink: true },
+    { title: "DoD FMR Volume 3, Chapter 8", url: "https://comptroller.defense.gov/FMR/", isQuickLink: true },
+  ],
+};
+
+const SUPPLY_OFFICER_APPOINTMENT_DATA = {
+  references: [
+    { title: "MCO 4400.201 (MCSLSM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=4400.201", isQuickLink: true },
+    { title: "NAVMC 4400.150 (Consumer-Level Supply)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DD Form 577", url: "https://www.esd.whs.mil/Directives/forms/dd0500_0999/" },
+  ],
+};
+
 // Commanders - Command Climate & Culture Programs Data
 const DEOCS_REQUIREMENTS_DATA = {
   references: [
@@ -4302,6 +4345,12 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "ito-authority": <ITOAuthorityContent data={ITO_AUTHORITY_DATA} />,
     "rcc-referral": <RCCReferralContent data={RCC_REFERRAL_DATA} />,
     "ww-benefits": <WWBenefitsContent data={WW_BENEFITS_DATA} />,
+    // Commanders - Fiscal & Property Accountability
+    "fund-control-training": <FundControlTrainingContent data={FUND_CONTROL_TRAINING_DATA} />,
+    "budget-execution": <BudgetExecutionContent data={BUDGET_EXECUTION_DATA} />,
+    "status-of-funds": <StatusOfFundsContent data={STATUS_OF_FUNDS_DATA} />,
+    "ulo-validation": <ULOValidationContent data={ULO_VALIDATION_DATA} />,
+    "supply-officer-appointment": <SupplyOfficerAppointmentContent data={SUPPLY_OFFICER_APPOINTMENT_DATA} />,
     // Commanders - Command Climate & Culture Programs
     "deocs-requirements": <DEOCSRequirementsContent data={DEOCS_REQUIREMENTS_DATA} />,
     "pac-program-overview": <PACProgramOverviewContent data={PAC_PROGRAM_OVERVIEW_DATA} />,
