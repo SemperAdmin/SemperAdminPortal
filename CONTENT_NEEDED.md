@@ -1,4 +1,4 @@
-# Content Needed: 90 Placeholder Items
+# Content Needed: 83 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 87 items |
+| **Commanders** | 80 items |
 | **Administrators** | 0 items |
 
 ---
@@ -111,21 +111,24 @@ Completed items:
 ## Family Readiness & Casualty Affairs
 **Section:** `commanders-family-readiness`
 
+Completed items:
+- ~~`upfrp-command-roles`~~ - COMPLETED
+- ~~`drc-oversight`~~ - COMPLETED
+- ~~`limdu-coordinator`~~ - COMPLETED
+- ~~`caco-oversight`~~ - COMPLETED
+- ~~`ito-authority`~~ - COMPLETED
+- ~~`rcc-referral`~~ - COMPLETED
+- ~~`ww-benefits`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
 | `fap-overview` | FAP Overview | Family Advocacy Program and commander's role |
 | `domestic-abuse-response` | Domestic Abuse Response | MPO issuance and victim safety planning |
 | `child-abuse-response` | Child Abuse Response | Reporting requirements and protective actions |
 | `upfrp-sop` | UPFRP SOP Requirements | Developing and implementing the family readiness SOP |
-| `upfrp-command-roles` | Command Team Roles | Commander, XO, SgtMaj, and FRO responsibilities |
-| `drc-oversight` | Deployment Readiness Coordinator | DRC appointment and deployment support |
-| `limdu-coordinator` | LIMDU Coordinator | Designating and overseeing the LIMDU coordinator |
 | `nok-notification` | Next of Kin Notification | Notification procedures and restrictions |
 | `pcr-reporting` | Personnel Casualty Reports | PCR submission requirements and timelines |
-| `caco-oversight` | CACO Oversight | Casualty Assistance Calls Officer supervision |
-| `ito-authority` | Invitational Travel Orders | ITO approval for family of seriously ill/injured |
-| `rcc-referral` | Recovery Care Coordinator | Connecting Marines to Wounded Warrior resources |
-| `ww-benefits` | Benefits Coordination | TSGLI, PAC, and SCAADL coordination |
 
 ## Fiscal & Property Accountability
 **Section:** `commanders-fiscal-property`

@@ -329,6 +329,14 @@ import { EOComplaintProcessContent } from "../../../../../components/commanders/
 import { EOInvestigationContent } from "../../../../../components/commanders/EOInvestigationContent";
 import { EOClimateAssessmentContent } from "../../../../../components/commanders/EOClimateAssessmentContent";
 import { EORetaliationPreventionContent } from "../../../../../components/commanders/EORetaliationPreventionContent";
+// Commanders - Family Readiness & Casualty Affairs
+import { UPFRPCommandRolesContent } from "../../../../../components/commanders/UPFRPCommandRolesContent";
+import { DRCOversightContent } from "../../../../../components/commanders/DRCOversightContent";
+import { LIMDUCoordinatorContent } from "../../../../../components/commanders/LIMDUCoordinatorContent";
+import { CACOOversightContent } from "../../../../../components/commanders/CACOOversightContent";
+import { ITOAuthorityContent } from "../../../../../components/commanders/ITOAuthorityContent";
+import { RCCReferralContent } from "../../../../../components/commanders/RCCReferralContent";
+import { WWBenefitsContent } from "../../../../../components/commanders/WWBenefitsContent";
 // Commanders - Command Climate & Culture Programs
 import { DEOCSRequirementsContent } from "../../../../../components/commanders/DEOCSRequirementsContent";
 import { PACProgramOverviewContent } from "../../../../../components/commanders/PACProgramOverviewContent";
@@ -3504,6 +3512,58 @@ const EO_RETALIATION_PREVENTION_DATA = {
   ],
 };
 
+// Commanders - Family Readiness & Casualty Affairs Data
+const UPFRP_COMMAND_ROLES_DATA = {
+  references: [
+    { title: "MCO 1754.9A (UPFRP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1754.9", isQuickLink: true },
+  ],
+};
+
+const DRC_OVERSIGHT_DATA = {
+  references: [
+    { title: "MCO 1754.9A (UPFRP)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1754.9", isQuickLink: true },
+    { title: "NAVMC 11654 (Appointment Letter Template)", url: "https://www.marines.mil" },
+  ],
+};
+
+const LIMDU_COORDINATOR_DATA = {
+  references: [
+    { title: "MCO 1900.16 (MARCORSEPMAN)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
+    { title: "SECNAVINST 1850.4F (Disability Evaluation System)", url: "https://www.secnav.navy.mil", isQuickLink: true },
+  ],
+};
+
+const CACO_OVERSIGHT_DATA = {
+  references: [
+    { title: "MCO 3040.4 (Casualty Assistance Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=3040.4", isQuickLink: true },
+    { title: "NAVMC 11717 (CACO Checklist)", url: "https://www.marines.mil" },
+  ],
+};
+
+const ITO_AUTHORITY_DATA = {
+  references: [
+    { title: "MCO 3040.4 (Casualty Assistance Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=3040.4", isQuickLink: true },
+    { title: "Joint Travel Regulations (JTR)", url: "https://www.travel.dod.mil/Policy-Regulations/Joint-Travel-Regulations/", isQuickLink: true },
+  ],
+};
+
+const RCC_REFERRAL_DATA = {
+  references: [
+    { title: "MCO 6310.1 (WWR Operations)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=6310.1", isQuickLink: true },
+    { title: "MCO 1754.11 (FAP/Clinical)", url: "https://www.marines.mil" },
+    { title: "Wounded Warrior Regiment", url: "https://www.woundedwarriorregiment.org" },
+  ],
+};
+
+const WW_BENEFITS_DATA = {
+  references: [
+    { title: "MCO 3040.4 (Casualty Assistance)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=3040.4", isQuickLink: true },
+    { title: "MCO 7220.52 (PAC)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=7220.52", isQuickLink: true },
+    { title: "SECNAVINST 1770.5 (SCAADL)", url: "https://www.secnav.navy.mil" },
+    { title: "TSGLI Information", url: "https://www.benefits.va.gov/insurance/tsgli.asp" },
+  ],
+};
+
 // Commanders - Command Climate & Culture Programs Data
 const DEOCS_REQUIREMENTS_DATA = {
   references: [
@@ -4234,6 +4294,14 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "eo-investigation": <EOInvestigationContent data={EO_INVESTIGATION_DATA} />,
     "eo-climate-assessment": <EOClimateAssessmentContent data={EO_CLIMATE_ASSESSMENT_DATA} />,
     "eo-retaliation-prevention": <EORetaliationPreventionContent data={EO_RETALIATION_PREVENTION_DATA} />,
+    // Commanders - Family Readiness & Casualty Affairs
+    "upfrp-command-roles": <UPFRPCommandRolesContent data={UPFRP_COMMAND_ROLES_DATA} />,
+    "drc-oversight": <DRCOversightContent data={DRC_OVERSIGHT_DATA} />,
+    "limdu-coordinator": <LIMDUCoordinatorContent data={LIMDU_COORDINATOR_DATA} />,
+    "caco-oversight": <CACOOversightContent data={CACO_OVERSIGHT_DATA} />,
+    "ito-authority": <ITOAuthorityContent data={ITO_AUTHORITY_DATA} />,
+    "rcc-referral": <RCCReferralContent data={RCC_REFERRAL_DATA} />,
+    "ww-benefits": <WWBenefitsContent data={WW_BENEFITS_DATA} />,
     // Commanders - Command Climate & Culture Programs
     "deocs-requirements": <DEOCSRequirementsContent data={DEOCS_REQUIREMENTS_DATA} />,
     "pac-program-overview": <PACProgramOverviewContent data={PAC_PROGRAM_OVERVIEW_DATA} />,
