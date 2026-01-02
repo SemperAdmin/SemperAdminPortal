@@ -250,8 +250,9 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
               <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{g.title}</h2>
               <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {g.items.map((i) => {
-                  // Life events items link to /life-events/[slug] instead of nested under roles
-                  const href = key === "life-events" && i.slug
+                  // Only link to /life-events for items that have dedicated page files
+                  const lifeEventPages = ["getting-married", "having-a-baby", "pcs-move"];
+                  const href = key === "life-events" && i.slug && lifeEventPages.includes(i.slug)
                     ? `/life-events/${i.slug}`
                     : `/roles/${safeRole}/${key}/${i.slug}`;
                   return (
