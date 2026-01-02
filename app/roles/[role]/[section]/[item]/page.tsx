@@ -379,6 +379,11 @@ import { DOSSRelationshipContent } from "../../../../../components/commanders/DO
 // Commanders - Substance Abuse & Urinalysis
 import { InspectionTestingContent } from "../../../../../components/commanders/InspectionTestingContent";
 import { SubstanceAdminActionsContent } from "../../../../../components/commanders/SubstanceAdminActionsContent";
+// Commanders - SAPR
+import { EightDayReportContent } from "../../../../../components/commanders/EightDayReportContent";
+import { ExpeditedTransferContent } from "../../../../../components/commanders/ExpeditedTransferContent";
+import { HRRTContent } from "../../../../../components/commanders/HRRTContent";
+import { SAPRPolicyPostingContent } from "../../../../../components/commanders/SAPRPolicyPostingContent";
 // Commanders - Inspector General & Inspections
 import { CIPOverviewContent } from "../../../../../components/commanders/CIPOverviewContent";
 import { CGIPPreparationContent } from "../../../../../components/commanders/CGIPPreparationContent";
@@ -3923,6 +3928,39 @@ const SUBSTANCE_ADMIN_ACTIONS_DATA = {
   ],
 };
 
+// Commanders - SAPR Data
+const EIGHT_DAY_REPORT_DATA = {
+  references: [
+    { title: "MCO 1752.5C (SAPR Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1752.5", isQuickLink: true },
+    { title: "DoDI 6495.02", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: true },
+    { title: "DD Form 2910", url: "https://www.esd.whs.mil/Directives/forms/" },
+  ],
+};
+
+const EXPEDITED_TRANSFER_DATA = {
+  references: [
+    { title: "MCO 1752.5C (SAPR Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1752.5", isQuickLink: true },
+    { title: "MARADMIN 439/21", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "DoDI 6495.02", url: "https://www.esd.whs.mil/Directives/issuances/dodi/" },
+  ],
+};
+
+const HRRT_DATA = {
+  references: [
+    { title: "MCO 1752.5C (SAPR Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1752.5", isQuickLink: true },
+    { title: "High Risk Assessment Tool", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DoDI 6495.02", url: "https://www.esd.whs.mil/Directives/issuances/dodi/" },
+  ],
+};
+
+const SAPR_POLICY_POSTING_DATA = {
+  references: [
+    { title: "MCO 1752.5C (SAPR Program)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1752.5", isQuickLink: true },
+    { title: "DoDI 6495.02", url: "https://www.esd.whs.mil/Directives/issuances/dodi/", isQuickLink: true },
+    { title: "DoD Safe Helpline", url: "https://safehelpline.org/" },
+  ],
+};
+
 // Commanders - Inspector General & Inspections Data
 const CIP_OVERVIEW_DATA = {
   references: [
@@ -4712,6 +4750,11 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     // Commanders - Substance Abuse & Urinalysis
     "inspection-testing": <InspectionTestingContent data={INSPECTION_TESTING_DATA} />,
     "substance-admin-actions": <SubstanceAdminActionsContent data={SUBSTANCE_ADMIN_ACTIONS_DATA} />,
+    // Commanders - SAPR
+    "8-day-report": <EightDayReportContent data={EIGHT_DAY_REPORT_DATA} />,
+    "expedited-transfer": <ExpeditedTransferContent data={EXPEDITED_TRANSFER_DATA} />,
+    "hrrt": <HRRTContent data={HRRT_DATA} />,
+    "sapr-policy-posting": <SAPRPolicyPostingContent data={SAPR_POLICY_POSTING_DATA} />,
     // Commanders - Inspector General & Inspections
     "cip-overview": <CIPOverviewContent data={CIP_OVERVIEW_DATA} />,
     "cgip-preparation": <CGIPPreparationContent data={CGIP_PREPARATION_DATA} />,
@@ -5238,12 +5281,8 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   const commandersSaprSlugs = [
     "sapr-va-appointment",
     "sarc-coordination",
-    "sapr-policy-posting",
     "sapr-reporting-types",
-    "8-day-report",
     "cmg-participation",
-    "hrrt",
-    "expedited-transfer",
     "mpo-sapr",
     "sapr-retaliation",
   ];
