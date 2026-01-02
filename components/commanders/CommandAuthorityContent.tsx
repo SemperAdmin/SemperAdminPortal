@@ -6,6 +6,7 @@ import { Breadcrumb } from "../ui/Breadcrumb";
 import { LastUpdated } from "../ui/LastUpdated";
 import { Acronym } from "../ui/Acronym";
 import { MCO_URLS, NAVY_DOD_URLS } from "../../data/references";
+import { InfoCard } from "../ui/InfoCard";
 import {
   ChevronDown,
   ChevronRight,
@@ -55,22 +56,6 @@ function CollapsibleSection({ title, icon, children, defaultOpen = false }: Coll
     </div>
   );
 }
-
-function InfoCard({ title, children, variant = "default" }: { title: string; children: React.ReactNode; variant?: "default" | "warning" | "tip" }) {
-  const variants = {
-    default: "border-sky-200 bg-sky-50 dark:border-sky-800 dark:bg-sky-950/30",
-    warning: "border-amber-200 bg-amber-50 dark:border-amber-800 dark:bg-amber-950/30",
-    tip: "border-emerald-200 bg-emerald-50 dark:border-emerald-800 dark:bg-emerald-950/30",
-  };
-
-  return (
-    <div className={`rounded-lg border p-4 ${variants[variant]}`}>
-      <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{title}</div>
-      <div className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">{children}</div>
-    </div>
-  );
-}
-
 function PunishmentTable({ title, data }: { title: string; data: { punishment: string; limit: string }[] }) {
   return (
     <div className="overflow-hidden rounded-lg border border-black/10 dark:border-white/10">

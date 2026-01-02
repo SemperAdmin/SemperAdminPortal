@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { useState, useEffect, useMemo, Suspense } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { Search, Users, Shield, Briefcase, ArrowLeft, FileText, Loader2 } from "lucide-react";
 import { search, getSearchIndex, type SearchResult } from "../../lib/search";
@@ -24,22 +24,35 @@ const CATEGORY_COLORS = {
   admin: "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
 };
 
+const POPULAR_SEARCHES = ["BAH", "PCS", "JEPES", "Leave", "Awards", "Deployment", "Promotion", "TRICARE", "SGLI", "Retirement"];
+
+function SearchHeader() {
+  return (
+    <div className="mb-8">
+      <h1 className="text-2xl font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+        Search
+      </h1>
+      <p className="mt-1 text-zinc-600 dark:text-zinc-400">
+        Find topics, forms, and procedures across the portal
+      </p>
+    </div>
+  );
+}
+
 function SearchContent() {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const initialQuery = searchParams.get("q") || "";
   const [query, setQuery] = useState(initialQuery);
   const [results, setResults] = useState<SearchResult[]>([]);
   const [hasSearched, setHasSearched] = useState(false);
 
-  const searchIndex = getSearchIndex();
+  const searchIndex = useMemo(() => getSearchIndex(), []);
 
   // Update query from URL params
   useEffect(() => {
     const urlQuery = searchParams.get("q") || "";
     setQuery(urlQuery);
-    if (urlQuery.length >= 2) {
-      setHasSearched(true);
-    }
   }, [searchParams]);
 
   // Perform search when query changes
@@ -59,10 +72,13 @@ function SearchContent() {
   // Handle form submit
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Update URL with search query
-    const url = new URL(window.location.href);
-    url.searchParams.set("q", query);
-    window.history.pushState({}, "", url.toString());
+    // Update URL with search query using Next.js router
+    router.push(`/search?q=${encodeURIComponent(query)}`);
+  };
+
+  // Handle popular search tag click
+  const handleTagClick = (term: string) => {
+    router.push(`/search?q=${encodeURIComponent(term)}`);
   };
 
   // Group results by category
@@ -76,15 +92,7 @@ function SearchContent() {
 
   return (
     <>
-      {/* Search Header */}
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-          Search
-        </h1>
-        <p className="mt-1 text-zinc-600 dark:text-zinc-400">
-          Find topics, forms, and procedures across the portal
-        </p>
-      </div>
+      <SearchHeader />
 
       {/* Search Form */}
       <form onSubmit={handleSubmit} className="mb-8">
@@ -110,10 +118,10 @@ function SearchContent() {
         <div className="mb-8">
           <p className="mb-3 text-sm text-zinc-500 dark:text-zinc-400">Popular searches:</p>
           <div className="flex flex-wrap gap-2">
-            {["BAH", "PCS", "JEPES", "Leave", "Awards", "Deployment", "Promotion", "TRICARE", "SGLI", "Retirement"].map((term) => (
+            {POPULAR_SEARCHES.map((term) => (
               <button
                 key={term}
-                onClick={() => setQuery(term)}
+                onClick={() => handleTagClick(term)}
                 className="rounded-full bg-white px-4 py-2 text-sm text-zinc-700 shadow-sm transition hover:bg-[var(--sa-navy)] hover:text-white dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-[var(--sa-cream)] dark:hover:text-zinc-900"
               >
                 {term}
@@ -211,15 +219,7 @@ function SearchContent() {
 function SearchFallback() {
   return (
     <>
-      {/* Search Header */}
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-          Search
-        </h1>
-        <p className="mt-1 text-zinc-600 dark:text-zinc-400">
-          Find topics, forms, and procedures across the portal
-        </p>
-      </div>
+      <SearchHeader />
 
       {/* Loading State */}
       <div className="flex items-center justify-center py-12">

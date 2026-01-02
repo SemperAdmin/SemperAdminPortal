@@ -31,6 +31,7 @@ import {
   XCircle,
 } from "lucide-react";
 import Link from "next/link";
+import { InfoCard } from "../ui/InfoCard";
 
 /* ─────────────────────────────────────────────────────────── */
 /*  Local Helper Components                                    */
@@ -42,27 +43,6 @@ interface InfoCardProps {
   children: React.ReactNode;
   variant?: "info" | "warning" | "danger" | "success" | "tip";
 }
-
-function InfoCard({ icon: Icon, title, children, variant = "info" }: InfoCardProps) {
-  const styles = {
-    info: "border-l-blue-500 bg-blue-50 dark:bg-blue-950/30",
-    warning: "border-l-amber-500 bg-amber-50 dark:bg-amber-950/30",
-    danger: "border-l-red-500 bg-red-50 dark:bg-red-950/30",
-    success: "border-l-green-500 bg-green-50 dark:bg-green-950/30",
-    tip: "border-l-purple-500 bg-purple-50 dark:bg-purple-950/30",
-  };
-
-  return (
-    <div className={`rounded-lg border-l-4 p-4 ${styles[variant]}`}>
-      <div className="mb-2 flex items-center gap-2 font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-        <Icon className="h-5 w-5" />
-        {title}
-      </div>
-      <div className="text-sm text-zinc-700 dark:text-zinc-300">{children}</div>
-    </div>
-  );
-}
-
 interface CollapsibleSectionProps {
   icon: React.ElementType;
   title: string;
