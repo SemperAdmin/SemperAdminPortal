@@ -16,6 +16,7 @@ const TABS = [
   { id: "documents", label: "Documents" },
   { id: "efmp-screening", label: "EFMP Screening" },
   { id: "tour-requirements", label: "Tour Requirements" },
+  { id: "policy-updates", label: "Policy Updates" },
   { id: "denial", label: "Denial & Appeals" },
   { id: "special-situations", label: "Special Situations" },
   { id: "references", label: "References" },
@@ -717,6 +718,109 @@ export function CommandSponsorshipContent({ data }: Props) {
                   </ul>
                 </section>
               </div>
+            </>
+          )}
+
+          {/* Policy Updates Tab */}
+          {activeTab === "policy-updates" && (
+            <>
+              <section className="rounded-xl border-l-4 border-amber-500 bg-amber-50 p-4 dark:bg-amber-900/20">
+                <h4 className="font-semibold text-amber-800 dark:text-amber-200">MARADMIN 541/25 - MCO 1300.8 Updates</h4>
+                <p className="mt-1 text-sm text-amber-700 dark:text-amber-300">
+                  Recent changes to personnel assignment policy provide more flexibility for Consecutive
+                  Overseas Tours (COT) and voluntary overseas tour extensions.
+                </p>
+              </section>
+
+              <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+                <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                  Consecutive Overseas Tour (COT) Leave Changes
+                </h2>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+                  Per MARADMIN 541/25, the following restriction has been <strong>eliminated</strong>:
+                </p>
+                <div className="mt-4 rounded-lg bg-green-50 p-4 dark:bg-green-900/20">
+                  <h4 className="font-semibold text-green-800 dark:text-green-200">What Changed</h4>
+                  <p className="mt-2 text-sm text-green-700 dark:text-green-300">
+                    Marines no longer lose eligibility for COT leave if they take leave in CONUS during
+                    PCS travel. Previously, taking CONUS leave during PCS could disqualify Marines from
+                    COT leave benefits.
+                  </p>
+                </div>
+                <ul className="mt-4 space-y-2">
+                  <li className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    <span className="text-green-600 mt-0.5">✓</span>
+                    Marines may now take leave in CONUS during PCS travel without affecting COT eligibility
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    <span className="text-green-600 mt-0.5">✓</span>
+                    COT leave travel entitlements remain available regardless of CONUS leave taken
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    <span className="text-green-600 mt-0.5">✓</span>
+                    Simplifies leave planning for Marines executing consecutive overseas tours
+                  </li>
+                </ul>
+              </section>
+
+              <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+                <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                  Voluntary Overseas Extension Changes
+                </h2>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+                  The requirement for Commanding General endorsement of voluntary overseas extensions beyond
+                  six years has been <strong>removed</strong>.
+                </p>
+                <div className="mt-4 grid gap-4 md:grid-cols-2">
+                  <div className="rounded-lg bg-zinc-100 p-4 dark:bg-zinc-800/50">
+                    <h4 className="font-medium text-zinc-900 dark:text-zinc-100">Previous Requirement</h4>
+                    <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                      CG endorsement required for voluntary extensions that would result in more than
+                      6 years overseas
+                    </p>
+                  </div>
+                  <div className="rounded-lg bg-green-50 p-4 dark:bg-green-900/20">
+                    <h4 className="font-medium text-green-800 dark:text-green-200">New Policy</h4>
+                    <p className="mt-1 text-sm text-green-700 dark:text-green-300">
+                      CG endorsement no longer required - streamlined approval process for overseas
+                      tour extensions
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+                <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                  Impact on Command Sponsorship
+                </h3>
+                <ul className="mt-4 space-y-2">
+                  <li className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    <span className="text-[var(--sa-red)]">•</span>
+                    Tour extensions may affect command sponsorship eligibility (minimum time remaining)
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    <span className="text-[var(--sa-red)]">•</span>
+                    Coordinate with S-1 when planning tour extensions with family overseas
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    <span className="text-[var(--sa-red)]">•</span>
+                    EFMP screening may need to be updated for extended tours
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                    <span className="text-[var(--sa-red)]">•</span>
+                    Housing and school availability should be verified for extended periods
+                  </li>
+                </ul>
+              </section>
+
+              <section className="rounded-xl border-l-4 border-blue-500 bg-blue-50 p-4 dark:bg-blue-900/20">
+                <h4 className="font-semibold text-blue-800 dark:text-blue-200">Reference</h4>
+                <p className="mt-1 text-sm text-blue-700 dark:text-blue-300">
+                  These changes are per MARADMIN 541/25 and will be integrated into MCO 1300.8 and
+                  MCO 1000.6. Contact your S-1 or personnel office for specific guidance on applying
+                  these policy changes to your situation.
+                </p>
+              </section>
             </>
           )}
 

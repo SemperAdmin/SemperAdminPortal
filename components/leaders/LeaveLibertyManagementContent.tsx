@@ -9,6 +9,7 @@ const TABS = [
   { id: "overview", label: "Overview" },
   { id: "leave", label: "Leave" },
   { id: "liberty", label: "Liberty" },
+  { id: "policy-updates", label: "Policy Updates" },
   { id: "leader-role", label: "Leader Role" },
   { id: "references", label: "References", type: "references" as const },
 ];
@@ -126,6 +127,69 @@ export function LeaveLibertyManagementContent({ data }: Props) {
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" /><span>Leave balances not tracked leading to lost leave</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" /><span>Advance leave causing negative leave balances</span></li>
           </ul>
+        </div>
+      </section>
+    ),
+    "policy-updates": (
+      <section className="space-y-6">
+        <div className="rounded-lg bg-amber-50 p-4 dark:bg-amber-900/20">
+          <h4 className="font-semibold text-amber-800 dark:text-amber-200">MARADMIN 625/24 - MCO 1050.3J Updates</h4>
+          <p className="mt-2 text-sm text-amber-700 dark:text-amber-300">
+            Recent changes to leave regulations provide more flexibility for combining leave with liberty
+            and clarify parental leave during PCS moves.
+          </p>
+        </div>
+        <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Local Leave + Liberty Combination</h2>
+          <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+            Per MARADMIN 625/24, Marines may now take local leave in conjunction with liberty periods.
+            Marines are <strong>only charged leave for duty days</strong> when combining leave with liberty.
+          </p>
+          <ul className="mt-3 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Single or multiple leave periods may be combined with liberty periods</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Examples: liberty-leave-liberty, leave-liberty-leave, liberty-leave-liberty-leave</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>All leave must stay within local 24-hour liberty boundaries</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Must begin, execute, and end in vicinity of PDS or worksite</span></li>
+          </ul>
+        </div>
+        <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Military Parental Leave Program (MPLP) During PCS</h3>
+          <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+            Marines eligible for MPLP benefits may now be granted parental leave during PCS execution.
+          </p>
+          <ul className="mt-3 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Parental leave may be taken during Permanent Change of Station</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Do not exceed available parental leave entitlement during PCS</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-red)]" /><span>Additional leave taken as delay-en-route will be charged to annual leave balance</span></li>
+          </ul>
+        </div>
+        <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+          <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Exception to Policy Process</h3>
+          <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+            Requests for exception to leave policy now require additional routing:
+          </p>
+          <ol className="mt-4 space-y-3">
+            <li className="flex items-start gap-3">
+              <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">1</span>
+              <p className="text-sm text-zinc-700 dark:text-zinc-300">Commanding Officer thoroughly reviews the request</p>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">2</span>
+              <p className="text-sm text-zinc-700 dark:text-zinc-300">Request routed through first O-6 commander in admin chain</p>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white dark:bg-[var(--sa-cream)] dark:text-[var(--sa-navy)]">3</span>
+              <p className="text-sm text-zinc-700 dark:text-zinc-300">Submission to HQMC (MPO) for final determination</p>
+            </li>
+          </ol>
+        </div>
+        <div className="rounded-lg bg-blue-50 p-4 dark:bg-blue-900/20">
+          <h4 className="font-semibold text-blue-800 dark:text-blue-200">Purpose of Changes</h4>
+          <p className="mt-2 text-sm text-blue-700 dark:text-blue-300">
+            These changes aim to uphold the intended purpose of administrative absences and ensure more
+            uniform application across the force. The exception to policy process ensures requests
+            receive appropriate review before reaching HQMC.
+          </p>
         </div>
       </section>
     ),
