@@ -1,4 +1,4 @@
-# Content Needed: 71 Placeholder Items
+# Content Needed: 65 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 68 items |
+| **Commanders** | 62 items |
 | **Administrators** | 0 items |
 
 ---
@@ -196,21 +196,19 @@ Remaining items:
 ## Personnel Administration & Career Management
 **Section:** `commanders-personnel-career`
 
+**STATUS: SECTION COMPLETE (10/10 items)**
+
 Completed items:
 - ~~`fitrep-responsibilities`~~ - COMPLETED
 - ~~`jepes-commander`~~ - COMPLETED
 - ~~`6105-entries`~~ - COMPLETED
 - ~~`not-rec-authority`~~ - COMPLETED
-
-Remaining items:
-| Slug | Title | Description |
-|------|-------|-------------|
-| `adverse-fitreps` | Adverse Fitness Reports | Requirements for adverse comments and due process |
-| `meritorious-promotion-authority` | Meritorious Promotion | Commander's meritorious promotion authority |
-| `reenlistment-authority` | Reenlistment Authority | Approval, disapproval, and waiver authority |
-| `page-11-commander` | Page 11 Entries | When and how to document administrative remarks |
-| `adverse-letters` | Letters of Caution/Admonition/Reprimand | Levels of adverse administrative letters |
-| `transition-oversight` | Transition Readiness Oversight | Commander responsibilities for separating Marines |
+- ~~`adverse-fitreps`~~ - COMPLETED
+- ~~`meritorious-promotion-authority`~~ - COMPLETED
+- ~~`reenlistment-authority`~~ - COMPLETED
+- ~~`page-11-commander`~~ - COMPLETED
+- ~~`adverse-letters`~~ - COMPLETED
+- ~~`transition-oversight`~~ - COMPLETED
 
 ## Public Affairs & Media Relations
 **Section:** `commanders-public-affairs`
