@@ -314,6 +314,11 @@ import { PostventionContent } from "../../../../../components/commanders/Postven
 import { MFLCProgramContent } from "../../../../../components/commanders/MFLCProgramContent";
 import { ChaplainSupportContent } from "../../../../../components/commanders/ChaplainSupportContent";
 import { COSCOscarContent } from "../../../../../components/commanders/COSCOscarContent";
+// Commanders - Training & Readiness
+import { DRRSMCOverviewContent } from "../../../../../components/commanders/DRRSMCOverviewContent";
+import { METLDevelopmentContent } from "../../../../../components/commanders/METLDevelopmentContent";
+import { CLevelAssessmentContent } from "../../../../../components/commanders/CLevelAssessmentContent";
+import { ReadinessBoardContent } from "../../../../../components/commanders/ReadinessBoardContent";
 // Commanders - Transition of Command
 import {
   CornerstoneAttendanceContent,
@@ -3348,6 +3353,43 @@ const COSC_OSCAR_DATA = {
   ],
 };
 
+// Commanders - Training & Readiness Data
+const DRRS_MC_OVERVIEW_DATA = {
+  references: [
+    { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DRRS-MC User Manual", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "MCO 1553.3B (Unit Training)", url: "https://www.marines.mil" },
+    { title: "GCSS-MC Portal", url: "https://gcss-mc.marines.mil" },
+  ],
+};
+
+const METL_DEVELOPMENT_DATA = {
+  references: [
+    { title: "MCO 3500.110 (METL Development)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "MCO 1553.3B (Unit Training)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "NAVMC 3500.14D (T&R Manual Oversight)", url: "https://www.marines.mil" },
+    { title: "MCTIMS Portal", url: "https://www.marines.mil" },
+  ],
+};
+
+const C_LEVEL_ASSESSMENT_DATA = {
+  references: [
+    { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DRRS-MC User Manual", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "Joint Readiness Manual", url: "https://www.jcs.mil" },
+    { title: "Chairman's Readiness System", url: "https://www.jcs.mil" },
+  ],
+};
+
+const READINESS_BOARD_DATA = {
+  references: [
+    { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "Unit SOP Template", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "DRRS-MC User Manual", url: "https://www.marines.mil" },
+    { title: "Staff Officer Handbook", url: "https://www.marines.mil" },
+  ],
+};
+
 // Life Events Data
 const BUYING_A_HOME_DATA = {
   references: [
@@ -3870,6 +3912,11 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "mflc-program": <MFLCProgramContent data={MFLC_PROGRAM_DATA} />,
     "chaplain-support": <ChaplainSupportContent data={CHAPLAIN_SUPPORT_DATA} />,
     "cosc-oscar": <COSCOscarContent data={COSC_OSCAR_DATA} />,
+    // Commanders - Training & Readiness
+    "drrs-mc-overview": <DRRSMCOverviewContent data={DRRS_MC_OVERVIEW_DATA} />,
+    "metl-development": <METLDevelopmentContent data={METL_DEVELOPMENT_DATA} />,
+    "c-level-assessment": <CLevelAssessmentContent data={C_LEVEL_ASSESSMENT_DATA} />,
+    "readiness-board": <ReadinessBoardContent data={READINESS_BOARD_DATA} />,
     // Life Events
     "buying-a-home": <BuyingAHomeContent data={BUYING_A_HOME_DATA} />,
     "deploying": <DeployingContent data={DEPLOYING_DATA} />,

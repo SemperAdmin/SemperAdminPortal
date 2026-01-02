@@ -1,4 +1,4 @@
-# Content Needed: 127 Placeholder Items
+# Content Needed: 123 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 124 items |
+| **Commanders** | 120 items |
 | **Administrators** | 0 items |
 
 ---
@@ -290,18 +290,21 @@ All Suicide Prevention & Force Preservation items now have content:
 ## Training & Readiness
 **Section:** `commanders-training-readiness`
 
+Completed items:
+- ~~`drrs-mc-overview`~~ - COMPLETED
+- ~~`metl-development`~~ - COMPLETED
+- ~~`c-level-assessment`~~ - COMPLETED
+- ~~`readiness-board`~~ - COMPLETED
+
+Remaining items:
 | Slug | Title | Description |
 |------|-------|-------------|
-| `drrs-mc-overview` | DRRS-MC Overview | Defense Readiness Reporting System - Marine Corps |
-| `metl-development` | METL Development | Developing Mission Essential Task Lists |
 | `metl-assessment` | METL Assessment | Assessing task proficiency levels |
 | `metl-annual-review` | Annual METL Review | 30-day and annual review requirements |
 | `t-level-reporting` | T-Level (Training) | Training readiness assessment and reporting |
 | `p-level-reporting` | P-Level (Personnel) | Personnel readiness measurement and reporting |
 | `s-level-reporting` | S-Level (Supply/Equipment) | Equipment on-hand status reporting |
 | `r-level-reporting` | R-Level (Equipment Readiness) | Equipment operational status reporting |
-| `c-level-assessment` | C-Level & A-Level Assessments | Overall and individual MET capability ratings |
-| `readiness-board` | Readiness Board Requirements | Conducting readiness reviews and briefings |
 
 ## Environmental Compliance
 **Section:** `commanders-environmental`
