@@ -1,4 +1,4 @@
-# Content Needed: 146 Placeholder Items
+# Content Needed: 136 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -12,7 +12,7 @@ Items that currently show "Content coming soon" when users access them.
 |------|----------------------|
 | **Marines** (General) | 3 items |
 | **Leaders** | 0 items |
-| **Commanders** | 143 items |
+| **Commanders** | 133 items |
 | **Administrators** | 0 items |
 
 ---
@@ -307,18 +307,17 @@ Remaining:
 ## Environmental Compliance
 **Section:** `commanders-environmental`
 
-| Slug | Title | Description |
-|------|-------|-------------|
-| `ecc-appointment` | ECC Appointment | Environmental Compliance Coordinator designation |
-| `ems-overview` | EMS Overview | Environmental Management System requirements |
-| `hazmat-management` | Hazardous Material Management | HAZMAT handling, storage, and disposal |
-| `spill-reporting` | Spill Reporting | Spill response and reporting requirements |
-| `nepa-compliance` | NEPA Compliance | National Environmental Policy Act requirements |
-| `environmental-funding` | Environmental Funding | Budget considerations for environmental programs |
-| `benchmark-ece` | Benchmark ECE | Environmental compliance evaluation preparation |
-| `internal-ece` | Internal ECE | Conducting internal environmental assessments |
-| `ore-oversight` | ORE Oversight | Operational Range Environment oversight |
-| `commanders-override` | Commander's Override | Override authority for environmental requirements |
+All Environmental Compliance items now have content:
+- ~~`ecc-appointment`~~ - COMPLETED
+- ~~`ems-overview`~~ - COMPLETED
+- ~~`hazmat-management`~~ - COMPLETED
+- ~~`spill-reporting`~~ - COMPLETED
+- ~~`nepa-compliance`~~ - COMPLETED
+- ~~`environmental-funding`~~ - COMPLETED
+- ~~`benchmark-ece`~~ - COMPLETED
+- ~~`internal-ece`~~ - COMPLETED
+- ~~`ore-oversight`~~ - COMPLETED
+- ~~`commanders-override`~~ - COMPLETED
 
 ---
 
