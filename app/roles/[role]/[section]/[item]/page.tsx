@@ -376,6 +376,9 @@ import { SafetyClimateSurveyDetailContent } from "../../../../../components/comm
 import { FlightScheduleApprovalContent } from "../../../../../components/commanders/FlightScheduleApprovalContent";
 import { MishapInvestigationContent } from "../../../../../components/commanders/MishapInvestigationContent";
 import { DOSSRelationshipContent } from "../../../../../components/commanders/DOSSRelationshipContent";
+// Commanders - Substance Abuse & Urinalysis
+import { InspectionTestingContent } from "../../../../../components/commanders/InspectionTestingContent";
+import { SubstanceAdminActionsContent } from "../../../../../components/commanders/SubstanceAdminActionsContent";
 // Commanders - Inspector General & Inspections
 import { CIPOverviewContent } from "../../../../../components/commanders/CIPOverviewContent";
 import { CGIPPreparationContent } from "../../../../../components/commanders/CGIPPreparationContent";
@@ -3903,6 +3906,23 @@ const DOSS_RELATIONSHIP_DATA = {
   ],
 };
 
+// Commanders - Substance Abuse & Urinalysis Data
+const INSPECTION_TESTING_DATA = {
+  references: [
+    { title: "MCO 5300.17A (Substance Abuse)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5300.17", isQuickLink: true },
+    { title: "MILPERSMAN 1910-146", url: "https://www.mynavyhr.navy.mil/References/MILPERSMAN/", isQuickLink: true },
+    { title: "MRE 313 (Inspections)", url: "https://jsc.defense.gov/Military-Law/Current-Publications-Executive-Orders/" },
+  ],
+};
+
+const SUBSTANCE_ADMIN_ACTIONS_DATA = {
+  references: [
+    { title: "MCO 5300.17A (Substance Abuse)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=5300.17", isQuickLink: true },
+    { title: "MARCORSEPMAN", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
+    { title: "MCM Article 112a", url: "https://jsc.defense.gov/Military-Law/Current-Publications-Executive-Orders/" },
+  ],
+};
+
 // Commanders - Inspector General & Inspections Data
 const CIP_OVERVIEW_DATA = {
   references: [
@@ -4689,6 +4709,9 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "flight-schedule-approval": <FlightScheduleApprovalContent data={FLIGHT_SCHEDULE_APPROVAL_DATA} />,
     "mishap-investigation": <MishapInvestigationContent data={MISHAP_INVESTIGATION_DATA} />,
     "doss-relationship": <DOSSRelationshipContent data={DOSS_RELATIONSHIP_DATA} />,
+    // Commanders - Substance Abuse & Urinalysis
+    "inspection-testing": <InspectionTestingContent data={INSPECTION_TESTING_DATA} />,
+    "substance-admin-actions": <SubstanceAdminActionsContent data={SUBSTANCE_ADMIN_ACTIONS_DATA} />,
     // Commanders - Inspector General & Inspections
     "cip-overview": <CIPOverviewContent data={CIP_OVERVIEW_DATA} />,
     "cgip-preparation": <CGIPPreparationContent data={CGIP_PREPARATION_DATA} />,
@@ -5259,9 +5282,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   const commandersSubstanceSlugs = [
     "uuc-appointment",
     "testing-requirements",
-    "inspection-testing",
     "positive-result-procedures",
-    "substance-admin-actions",
     "treatment-referral",
   ];
 
