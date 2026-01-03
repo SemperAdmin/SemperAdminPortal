@@ -3552,6 +3552,7 @@ const DRRS_MC_OVERVIEW_DATA = {
   references: [
     { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil", isQuickLink: true },
     { title: "DRRS-MC User Manual", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "COPA (Commanders Personnel Analysis)", url: "https://www2.manpower.usmc.mil/copa/", isQuickLink: true },
     { title: "MCO 1553.3B (Unit Training)", url: "https://www.marines.mil" },
     { title: "GCSS-MC Portal", url: "https://gcss-mc.marines.mil" },
   ],
@@ -3578,7 +3579,8 @@ const C_LEVEL_ASSESSMENT_DATA = {
 const READINESS_BOARD_DATA = {
   references: [
     { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil", isQuickLink: true },
-    { title: "Unit SOP Template", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "COPA (Commanders Personnel Analysis)", url: "https://www2.manpower.usmc.mil/copa/", isQuickLink: true },
+    { title: "Unit SOP Template", url: "https://www.marines.mil" },
     { title: "DRRS-MC User Manual", url: "https://www.marines.mil" },
     { title: "Staff Officer Handbook", url: "https://www.marines.mil" },
   ],
@@ -3596,7 +3598,8 @@ const T_LEVEL_REPORTING_DATA = {
 const P_LEVEL_REPORTING_DATA = {
   references: [
     { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil", isQuickLink: true },
-    { title: "MCTFS User Guide", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "COPA (Commanders Personnel Analysis)", url: "https://www2.manpower.usmc.mil/copa/", isQuickLink: true },
+    { title: "MCTFS User Guide", url: "https://www.marines.mil" },
     { title: "Unit T/O", url: "https://www.marines.mil" },
     { title: "DRRS-MC Manual", url: "https://www.marines.mil" },
   ],
