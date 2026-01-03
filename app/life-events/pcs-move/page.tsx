@@ -77,21 +77,18 @@ const STEPS: Step[] = [
     tip: "OCONUS POV shipment can take 4-8 weeks. Plan accordingly.",
   },
   {
-    id: "dts-authorization",
-    title: "Create DTS Authorization",
-    description: "Get your travel authorized for reimbursement",
+    id: "outbound-interview",
+    title: "Complete Outbound Interview (OBI)",
+    description: "Process your PCS travel entitlements through IPAC",
     timeline: "30 days before PCS",
     details: [
-      "Log into DTS and create a new PCS authorization",
-      "Enter all travelers (you, dependents)",
-      "Include all estimated expenses (lodging, meals, mileage)",
-      "Route for approval through your chain",
+      "Schedule your Outbound Interview (OBI) with IPAC",
+      "Bring your PCS orders and dependent documentation",
+      "Verify all entitlements (DLA, mileage, per diem, TLE)",
+      "Receive your advance pay if requested",
     ],
-    documents: ["PCS Orders", "DTS Login"],
-    links: [
-      { title: "DTS", href: "https://www.defensetravel.osd.mil/" },
-    ],
-    warning: "Do NOT travel without an approved DTS authorization. You may not be reimbursed for unauthorized expenses.",
+    documents: ["PCS Orders", "Dependent documentation"],
+    warning: "Complete your OBI before departing. Failure to process may delay your travel entitlements.",
   },
   {
     id: "medical-dental",
@@ -147,12 +144,12 @@ const STEPS: Step[] = [
     description: "Get advance funds for PCS travel",
     timeline: "5-10 days before PCS",
     details: [
-      "Request DLA (Dislocation Allowance) advance if needed",
-      "Request travel advance pay through DTS",
+      "Request DLA (Dislocation Allowance) advance during your OBI if needed",
+      "Request travel advance pay through your disbursing office",
       "Ensure funds are deposited before departure",
       "Keep all receipts during travel for voucher submission",
     ],
-    tip: "DLA is automatic for most PCS moves. Advance pay must be specifically requested.",
+    tip: "DLA is automatic for most PCS moves. Advance pay must be specifically requested during your OBI.",
   },
   {
     id: "execute-move",
@@ -169,12 +166,13 @@ const STEPS: Step[] = [
   },
   {
     id: "checkin",
-    title: "Check In at New Command",
+    title: "Check In and Complete Inbound Interview (IBI)",
     description: "Report to your new duty station",
     timeline: "Report date on orders",
     details: [
       "Report to your new command on or before your report date",
-      "Complete check-in process with admin/S-1",
+      "Complete check-in process with admin/S-1/IPAC",
+      "Complete your Inbound Interview (IBI) to verify pay and entitlements",
       "Register in MCTFS at new unit",
       "In-process through required offices (medical, dental, security, etc.)",
     ],
@@ -198,20 +196,17 @@ const STEPS: Step[] = [
   },
   {
     id: "travel-voucher",
-    title: "Submit Travel Voucher",
+    title: "Complete Travel Voucher Interview (TVI)",
     description: "Get reimbursed for your PCS expenses",
     timeline: "Within 5 days of arrival",
     details: [
-      "Complete your travel voucher in DTS",
-      "Attach all receipts (lodging, fuel, tolls, etc.)",
-      "Include mileage and per diem claims",
-      "Route for approval and await payment",
+      "Schedule your Travel Voucher Interview (TVI) with IPAC at your new command",
+      "Bring all receipts (lodging, fuel, tolls, etc.)",
+      "Include mileage and per diem documentation",
+      "IPAC will process your claim for payment",
     ],
-    documents: ["All travel receipts", "Lodging receipts", "Fuel receipts"],
-    links: [
-      { title: "DTS Help", href: "https://www.defensetravel.dod.mil/site/training.cfm" },
-    ],
-    tip: "Submit your voucher promptly to avoid delays. Most vouchers are paid within 30 days of approval.",
+    documents: ["All travel receipts", "Lodging receipts", "Fuel receipts", "PCS Orders"],
+    tip: "Complete your TVI promptly to avoid delays. Most vouchers are paid within 30 days of processing.",
   },
 ];
 
@@ -302,7 +297,7 @@ export default function PCSMovePage() {
             <span className="font-medium">Key Systems</span>
           </div>
           <p className="mt-1 text-sm text-blue-600 dark:text-blue-300">
-            Move.mil for HHG, DTS for travel authorization and voucher
+            Move.mil for HHG, OBI/IBI/TVI through IPAC for travel processing
           </p>
         </div>
         <div className="rounded-lg border border-green-200 bg-green-50 p-4 dark:border-green-800 dark:bg-green-900/20">
