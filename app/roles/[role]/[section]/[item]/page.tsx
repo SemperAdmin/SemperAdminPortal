@@ -263,6 +263,7 @@ import { RecordKeepingDocumentationContent } from "../../../../../components/lea
 // Leaders - Administrative Systems
 import { MCTFSOverviewContent } from "../../../../../components/leaders/MCTFSOverviewContent";
 import { MOLNavigationContent } from "../../../../../components/leaders/MOLNavigationContent";
+import { MOLManagementContent } from "../../../../../components/MOLManagementContent";
 import { JEPESSystemNavigationContent } from "../../../../../components/leaders/JEPESSystemNavigationContent";
 import { TFRSOverviewContent } from "../../../../../components/leaders/TFRSOverviewContent";
 import { UnitDiaryReportingContent } from "../../../../../components/leaders/UnitDiaryReportingContent";
@@ -3078,6 +3079,14 @@ const MOL_NAVIGATION_DATA = {
   ],
 };
 
+const MOL_MANAGEMENT_DATA = {
+  references: [
+    { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil", isQuickLink: true },
+    { title: "MISSA/MISSO Portal", url: "https://missa.manpower.usmc.mil", isQuickLink: true },
+    { title: "MCO 5210.11F - Records Management", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899088/mco-521011f/" },
+  ],
+};
+
 const JEPES_SYSTEM_NAVIGATION_DATA = {
   references: [
     { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: true },
@@ -4699,7 +4708,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "military-protective-orders": <MilitaryProtectiveOrdersContent data={MILITARY_PROTECTIVE_ORDERS_DATA} />,
     "ig-complaints": <IGComplaintsContent data={IG_COMPLAINTS_DATA} />,
     // Systems Management - Personnel Systems
-    "mol": <GenericContent title="Marine Online (MOL)" />,
+    "mol": <MOLManagementContent data={MOL_MANAGEMENT_DATA} />,
     "mctfs": <GenericContent title="MCTFS (Total Force System)" />,
     "mcirsa": <GenericContent title="MCIRSA" />,
     // Systems Management - Travel Systems
