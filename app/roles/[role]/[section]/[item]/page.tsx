@@ -264,7 +264,6 @@ import { RecordKeepingDocumentationContent } from "../../../../../components/lea
 // Leaders - Administrative Systems
 import { MCTFSOverviewContent } from "../../../../../components/leaders/MCTFSOverviewContent";
 import { MOLNavigationContent } from "../../../../../components/leaders/MOLNavigationContent";
-import { MOLManagementContent } from "../../../../../components/MOLManagementContent";
 import { JEPESSystemNavigationContent } from "../../../../../components/leaders/JEPESSystemNavigationContent";
 import { TFRSOverviewContent } from "../../../../../components/leaders/TFRSOverviewContent";
 import { UnitDiaryReportingContent } from "../../../../../components/leaders/UnitDiaryReportingContent";
@@ -3087,14 +3086,6 @@ const MOL_NAVIGATION_DATA = {
     { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil", isQuickLink: true },
     { title: "MarineNet", url: "https://www.usmclearning.usmc.mil", isQuickLink: true },
     { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/" },
-  ],
-};
-
-const MOL_MANAGEMENT_DATA = {
-  references: [
-    { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil", isQuickLink: true },
-    { title: "MISSA/MISSO Portal", url: "https://missa.manpower.usmc.mil", isQuickLink: true },
-    { title: "MCO 5210.11F - Records Management", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899088/mco-521011f/" },
   ],
 };
 

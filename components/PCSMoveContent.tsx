@@ -237,10 +237,10 @@ export function PCSMoveContent({ data }: Props) {
             Standard PCS Process
           </h3>
           <div className="mt-4 space-y-3">
-            {PROCESS_STEPS.slice(0, 4).map((step) => (
-              <div key={step.step} className="flex items-start gap-4">
+            {PROCESS_STEPS.slice(0, 4).map((step, index) => (
+              <div key={index} className="flex items-start gap-4">
                 <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">
-                  {step.step}
+                  {index + 1}
                 </span>
                 <div>
                   <span className="font-medium text-zinc-900 dark:text-zinc-100">{step.title}</span>

@@ -22,7 +22,7 @@ import { TransitionOfCommandContent } from "../../../../components/commanders/Tr
 import { EnvironmentalContent } from "../../../../components/commanders/EnvironmentalContent";
 import { SecurityProgramsContent } from "../../../../components/commanders/SecurityProgramsContent";
 import { AdminInvestigationsContent } from "../../../../components/commanders/AdminInvestigationsContent";
-import { MOLManagementContent } from "../../../../components/MOLManagementContent";
+import { MOLManagementContent } from "../../../../components/commanders/MOLManagementContent";
 import { ConductingInvestigationsContent } from "../../../../components/leaders/ConductingInvestigationsContent";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
