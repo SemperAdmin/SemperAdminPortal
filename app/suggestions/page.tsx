@@ -10,7 +10,7 @@ export default function SuggestionsPage() {
           <li>Drive Innovation: Be part of the solution and help lead the way in administrative excellence.</li>
         </ul>
         <div className="mt-6">
-          <a href="https://semperadmin.github.io/Sentinel/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full border border-[var(--sa-navy)] px-6 py-3 text-[var(--sa-navy)] transition hover:bg-[var(--sa-cream)]/60 dark:border-[var(--sa-cream)] dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Open Sentinel</a>
+          <a href="https://semperadmin.github.io/Sentinel/#detail/semperadminportal/todo" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full border border-[var(--sa-navy)] px-6 py-3 text-[var(--sa-navy)] transition hover:bg-[var(--sa-cream)]/60 dark:border-[var(--sa-cream)] dark:text-[var(--sa-cream)] dark:hover:bg-white/10">Open Sentinel</a>
         </div>
         <p className="mt-6 text-zinc-700 dark:text-zinc-300">Let’s work together to strengthen our community and enhance the way we operate. Speak up. Share ideas. Make a difference.</p>
       </section>
