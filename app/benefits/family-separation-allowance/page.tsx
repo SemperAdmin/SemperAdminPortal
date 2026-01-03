@@ -39,7 +39,7 @@ export default function Page() {
           <li>FSA-R → generally referenced as FSA-Unaccompanied (FSA-U)</li>
           <li>FSA-S and FSA-T → grouped as FSA-Away from Homeport/PDS</li>
         </ul>
-        <p className="text-zinc-800 dark:text-zinc-200">CURRENT RATE: $250 per month (regardless of number of dependents)</p>
+        <p className="text-zinc-800 dark:text-zinc-200">CURRENT RATE: $300 per month (regardless of number of dependents)</p>
         <p className="text-zinc-800 dark:text-zinc-200">FSA is NOT taxable income.</p>
 
         <h4 className="text-lg font-semibold">IMPORTANT REQUIREMENTS:</h4>
@@ -127,10 +127,10 @@ export default function Page() {
       <section className="mt-10 space-y-6">
         <h2 className="text-2xl font-semibold">💵 HOW MUCH DO I GET?</h2>
         <h3 className="text-xl font-semibold">MONTHLY RATE:</h3>
-        <p className="text-zinc-800 dark:text-zinc-200">FAMILY SEPARATION ALLOWANCE: $250–$400 per month (statutory range; FY24 NDAA authorizes up to $400; Services may set current rate)</p>
+        <p className="text-zinc-800 dark:text-zinc-200">FAMILY SEPARATION ALLOWANCE: $300–$400 per month (statutory range; FY24 NDAA authorizes up to $400; Services may set current rate)</p>
         <h4 className="text-lg font-semibold">FLAT RATE FOR ALL DEPENDENTS:</h4>
         <ul className="list-disc pl-6 text-zinc-800 dark:text-zinc-200">
-          <li>Same $250/month whether you have one dependent or ten dependents</li>
+          <li>Same $300/month whether you have one dependent or ten dependents</li>
           <li>Not calculated per dependent</li>
           <li>Per service member, not per dependent</li>
         </ul>
@@ -171,7 +171,7 @@ export default function Page() {
         <ul className="list-disc pl-6 text-zinc-800 dark:text-zinc-200">
           <li>If qualify for only part of month, payment prorated</li>
           <li>Based on number of qualifying days in that month</li>
-          <li>Calculation: ($250 / 30) × number of qualifying days</li>
+          <li>Calculation: ($300 / 30) × number of qualifying days</li>
         </ul>
         <h3 className="text-xl font-semibold">PAYMENT DURATION:</h3>
         <h4 className="text-lg font-semibold">NO MAXIMUM DURATION:</h4>
@@ -195,7 +195,7 @@ export default function Page() {
           <li>Even if qualified for multiple types, receive only one</li>
         </ul>
         <h4 className="text-lg font-semibold">ANNUAL AMOUNT:</h4>
-        <p className="text-zinc-800 dark:text-zinc-200">$250/month × 12 months = $3,000/year (if receiving all year)</p>
+        <p className="text-zinc-800 dark:text-zinc-200">$300/month × 12 months = $3,600/year (if receiving all year)</p>
         <h4 className="text-lg font-semibold">TAX STATUS:</h4>
         <p className="text-zinc-800 dark:text-zinc-200">FSA is NOT taxable income • Not included in gross income for federal or state taxes • Not reported on W-2</p>
       </section>
@@ -660,7 +660,7 @@ export default function Page() {
         <ul className="list-disc pl-6 text-zinc-800 dark:text-zinc-200">
           <li>DD Form 1561 required</li>
           <li>Separation must be more than 30 days (31+)</li>
-          <li>Flat rate $250/month regardless of dependents</li>
+          <li>Flat rate $300/month regardless of dependents</li>
           <li>Enforced separation required by orders</li>
           <li>Only one FSA type per month</li>
           <li>FSA and BAH-WITH can be received simultaneously</li>
@@ -736,7 +736,7 @@ export default function Page() {
         <h2 className="text-2xl font-semibold">❓ COMMON PROBLEMS AND SOLUTIONS</h2>
         <div className="space-y-4 text-zinc-800 dark:text-zinc-200">
           <p>
-            Problem: My spouse is also active duty, we have no kids, and we are both deployed to different locations. Do we both get $250?
+            Problem: My spouse is also active duty, we have no kids, and we are both deployed to different locations. Do we both get $300?
             <br />
             Solution: No. If there are no other dependents, only one FSA is authorized for the couple. FSA offsets the cost of maintaining a single household while separated; duplicate payments may be recouped as debt.
           </p>
@@ -771,7 +771,7 @@ export default function Page() {
             Solution: FSA-R allows up to 3 months; FSA-S/T visits over 30 days stop FSA unless emergency.
           </p>
           <p>
-            Problem: I have 3 kids but only getting $250/month FSA
+            Problem: I have 3 kids but only getting $300/month FSA
             <br />
             Solution: Correct – FSA is a flat rate per member.
           </p>
