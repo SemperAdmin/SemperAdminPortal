@@ -15,33 +15,27 @@ const TABS = [
 
 const PROCESS_STEPS = [
   {
-    step: 1,
     title: "Log in to MOL",
     description: "Access the portal at https://mol.tfs.usmc.mil/",
   },
   {
-    step: 2,
     title: "Navigate to Management",
     description: "Click on the MOL Management menu item, then select Organization Structure.",
   },
   {
-    step: 3,
     title: "Assign Acting Manager (If Relinquishing)",
     description: "Find your unit and click ASSIGN under the Manager or Acting Manager column. Search for and select the Marine who will assume the authority.",
     note: "Acting Managers must be a Master Sergeant (E-8) or above, or a designated Civil Servant (CIV).",
   },
   {
-    step: 4,
     title: "Transfer the Template",
     description: "Go to MOL Management and click Manage Permissions. Select the Acting CO option from the left-hand navigation menu.",
   },
   {
-    step: 5,
     title: "Finalize the Action",
     description: "To Relinquish: Click the Relinquish Command button. To Take: Click the Take Command button.",
   },
   {
-    step: 6,
     title: "System Refresh",
     description: "The application will automatically log you out to refresh your permissions.",
   },
@@ -152,7 +146,7 @@ export function MOLManagementContent({ data }: Props) {
             {PROCESS_STEPS.map((step, index) => (
               <div key={index} className="flex gap-4 rounded-lg border border-zinc-100 bg-zinc-50 p-4 dark:border-zinc-800 dark:bg-zinc-900/50">
                 <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-[var(--sa-cream)]">
-                  {step.step}
+                  {index + 1}
                 </div>
                 <div className="flex-1">
                   <h4 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{step.title}</h4>

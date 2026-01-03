@@ -35,42 +35,34 @@ const TABS = [
 
 const PROCESS_STEPS = [
   {
-    step: 1,
     title: "Receive PCS orders",
     detail: "Orders specify report date, gaining command, and authorized entitlements.",
   },
   {
-    step: 2,
     title: "Schedule transportation counseling",
     detail: "Visit Personal Property Office or use move.mil to schedule HHG pickup. Decide between government move or PPM.",
   },
   {
-    step: 3,
     title: "Complete checkout procedures",
     detail: "Clear all required offices per installation checkout sheet. Obtain required signatures.",
   },
   {
-    step: 4,
     title: "Request advance DLA (optional)",
     detail: "Dislocation Allowance can be advanced before departure. Submit request through admin.",
   },
   {
-    step: 5,
     title: "Travel to new duty station",
     detail: "Per diem and mileage authorized for official travel days. Use Defense Table of Official Distances (DTOD) for mileage calculation.",
   },
   {
-    step: 6,
     title: "Check in at new command",
     detail: "Report to gaining command by date specified in orders. Complete check-in procedures.",
   },
   {
-    step: 7,
     title: "Receive HHG delivery",
     detail: "Inspect all items for damage. Annotate damages on inventory form before signing.",
   },
   {
-    step: 8,
     title: "File travel claim",
     detail: "Submit travel voucher within 5 days of completing travel. Include all receipts for lodging and expenses over $75.",
   },
@@ -186,10 +178,10 @@ export function PCSMoveContent({ data }: Props) {
             Step-by-Step Process
           </h2>
           <div className="mt-6 space-y-4">
-            {PROCESS_STEPS.map((step) => (
-              <div key={step.step} className="flex items-start gap-4">
+            {PROCESS_STEPS.map((step, index) => (
+              <div key={index} className="flex items-start gap-4">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">
-                  {step.step}
+                  {index + 1}
                 </span>
                 <div>
                   <h4 className="font-medium text-zinc-900 dark:text-zinc-100">{step.title}</h4>

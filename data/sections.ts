@@ -1246,6 +1246,11 @@ export const SECTIONS: Record<string, Section> = {
     ],
   },
 
+  "commanders-mol-management": {
+    title: "MOL Management",
+    intro: "As a Commander, managing your unit's administrative authority within Marine Online (MOL) is a non-delegable responsibility that ensures legal and administrative actions, such as Promotion Recommendations, are processed correctly.",
+  },
+
 
   // GROUP D: COMPLIANCE AND SECURITY
   "commanders-safety-risk": {
@@ -1496,6 +1501,7 @@ export const COMMANDER_SECTIONS = new Set([
   "commanders-training-readiness",
   "commanders-fiscal-property",
   "commanders-maintenance-logistics",
+  "commanders-mol-management",
   // Group D: Compliance and Security
   "commanders-safety-risk",
   "commanders-inspector-general",

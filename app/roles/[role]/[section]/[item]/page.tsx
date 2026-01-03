@@ -1764,7 +1764,7 @@ const MEDICAL_RECORDS_DATA = {
 
 const PAGE_11_ENTRIES_DATA = {
   references: [
-    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1070.12", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/Portals/1/Publications/MCO%20P1070.12K%20W%20CH%201.pdf", isQuickLink: true },
     { title: "NAVMC 118(11) Form", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
     { title: "Legal Assistance Office", url: "https://www.hqmc.marines.mil/sja/", isQuickLink: true },
     { title: "BCNR (Board for Correction)", url: "https://www.secnav.navy.mil/mra/bcnr/", isQuickLink: false },
@@ -4235,7 +4235,7 @@ const JEPES_COMMANDER_DATA = {
 const COUNSELING_ENTRIES_6105_DATA = {
   references: [
     { title: "MCO 1900.16 (MARCORSEPMAN)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
-    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1070.12", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/Portals/1/Publications/MCO%20P1070.12K%20W%20CH%201.pdf", isQuickLink: true },
     { title: "6105 Entry Template", url: "https://www.marines.mil" },
   ],
 };
@@ -4243,7 +4243,7 @@ const COUNSELING_ENTRIES_6105_DATA = {
 const NOT_REC_AUTHORITY_DATA = {
   references: [
     { title: "MCO P1400.32D (Promotion Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1400.32", isQuickLink: true },
-    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1070.12", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/Portals/1/Publications/MCO%20P1070.12K%20W%20CH%201.pdf", isQuickLink: true },
     { title: "MOL Select Grade Module", url: "https://mol.tfs.usmc.mil/" },
   ],
 };
@@ -4270,7 +4270,7 @@ const REENLISTMENT_AUTHORITY_DATA = {
 
 const PAGE_11_COMMANDER_DATA = {
   references: [
-    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1070.12", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/Portals/1/Publications/MCO%20P1070.12K%20W%20CH%201.pdf", isQuickLink: true },
   ],
 };
 
@@ -5280,6 +5280,9 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "deploying",
     "getting-out",
     "buying-a-home",
+    "getting-married",
+    "having-a-baby",
+    "pcs-move",
   ];
 
   // ============================================

@@ -172,7 +172,7 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
         { label: "Training & Readiness", slug: "commanders-training-readiness", desc: "DRRS-MC, METL, resource levels" },
         { label: "Fiscal & Property", slug: "commanders-fiscal-property", desc: "Budget, fund control, accountability" },
         { label: "Maintenance & Logistics", slug: "commanders-maintenance-logistics", desc: "T/E, maintenance, small arms" },
-        { label: "MOL Management", slug: "systems-management/mol", desc: "Marine Online navigation and permissions" },
+        { label: "MOL Management", slug: "commanders-mol-management", desc: "Marine Online navigation and permissions" },
       ],
     },
     {
