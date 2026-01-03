@@ -502,6 +502,34 @@ export const SECTIONS: Record<string, Section> = {
     ],
   },
 
+  "systems-management": {
+    title: "Systems & Tools",
+    intro: "Access and navigation guidance for Marine Corps administrative systems. These systems are your primary tools for managing personnel data, travel, training records, and readiness requirements.",
+    groups: [
+      {
+        title: "Personnel Systems",
+        items: [
+          { title: "Marine Online (MOL)", slug: "mol", desc: "Web portal for personnel records, leave, and admin actions" },
+          { title: "MCTFS", slug: "mctfs", desc: "Marine Corps Total Force System - authoritative personnel data" },
+          { title: "MCIRSA", slug: "mcirsa", desc: "Marine Corps Integrated Readiness System Architecture" },
+        ],
+      },
+      {
+        title: "Travel & Finance Systems",
+        items: [
+          { title: "Defense Travel System (DTS)", slug: "dts", desc: "Create and manage travel authorizations and vouchers" },
+          { title: "GTCC Portal", slug: "gtcc-portal", desc: "Government Travel Charge Card account management" },
+        ],
+      },
+      {
+        title: "Reserve Systems",
+        items: [
+          { title: "MROWS", slug: "mrows", desc: "Marine Reserve Order Writing System for reserve orders" },
+        ],
+      },
+    ],
+  },
+
   // ============================================
   // ADMIN-ONLY SECTIONS
   // ============================================
