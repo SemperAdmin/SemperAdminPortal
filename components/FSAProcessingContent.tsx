@@ -22,7 +22,7 @@ const TABS = [
 ];
 
 const KEY_POINTS = [
-  { element: "FSA Rate", description: "$250/month" },
+  { element: "FSA Rate", description: "$300/month" },
   { element: "Start Date", description: "31st day of separation" },
   { element: "Eligibility", description: "Marines with dependents on orders over 30 days" },
   { element: "Types", description: "FSA-R (Restricted), FSA-S (Ship), FSA-T (TDY)" },
@@ -68,7 +68,7 @@ const IF_NOT_AUTOMATIC = [
 const LES_CHECK = [
   "FSA entitlement listed",
   "Correct start date (31st day of separation)",
-  "Amount ($250/month)",
+  "Amount ($300/month)",
   "Correct type (FSA-R, FSA-S, or FSA-T)",
 ];
 
