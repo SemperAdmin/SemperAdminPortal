@@ -5481,7 +5481,6 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   const commandersPersonnelSection = "commanders-personnel-career";
   const commandersPersonnelSlugs = [
     "adverse-fitreps",
-    "procon-oversight",
     "meritorious-promotion-authority",
     "reenlistment-authority",
     "transition-oversight",
@@ -5597,8 +5596,6 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "annual-inventory",
   ];
 
-  const commandersMaintenanceSection = "commanders-maintenance-logistics";
-  const commandersMaintenanceSlugs: string[] = [];
 
   // Group D: Compliance and Security
   const commandersSafetySection = "commanders-safety-risk";
@@ -5617,30 +5614,6 @@ export function generateStaticParams(): { role: Role; section: string; item: str
 
   const commandersIGSection = "commanders-inspector-general";
   const commandersIGSlugs: string[] = [];
-
-  const commandersEnvironmentalSection = "commanders-environmental";
-  const commandersEnvironmentalSlugs = [
-    "ems-overview",
-    "ecc-appointment",
-    "environmental-funding",
-    "spill-reporting",
-    "hazmat-management",
-    "nepa-compliance",
-    "internal-ece",
-    "benchmark-ece",
-  ];
-
-  const commandersSecuritySection = "commanders-security";
-  const commandersSecuritySlugs = [
-    "infosec-program",
-    "classified-accountability",
-    "opsec-program",
-    "personnel-security",
-    "physical-security",
-    "insider-threat",
-    "cybersecurity-program",
-    "atfp-program",
-  ];
 
   const commandersPublicAffairsSection = "commanders-public-affairs";
   const commandersPublicAffairsSlugs = [
@@ -5692,11 +5665,8 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   for (const item of commandersAdminInvestigationsSlugs) params.push({ role: commanderRole, section: commandersAdminInvestigationsSection, item });
   for (const item of commandersTrainingSlugs) params.push({ role: commanderRole, section: commandersTrainingSection, item });
   for (const item of commandersFiscalSlugs) params.push({ role: commanderRole, section: commandersFiscalSection, item });
-  for (const item of commandersMaintenanceSlugs) params.push({ role: commanderRole, section: commandersMaintenanceSection, item });
   for (const item of commandersSafetySlugs) params.push({ role: commanderRole, section: commandersSafetySection, item });
   for (const item of commandersIGSlugs) params.push({ role: commanderRole, section: commandersIGSection, item });
-  for (const item of commandersEnvironmentalSlugs) params.push({ role: commanderRole, section: commandersEnvironmentalSection, item });
-  for (const item of commandersSecuritySlugs) params.push({ role: commanderRole, section: commandersSecuritySection, item });
   for (const item of commandersPublicAffairsSlugs) params.push({ role: commanderRole, section: commandersPublicAffairsSection, item });
   for (const item of commandersTransitionSlugs) params.push({ role: commanderRole, section: commandersTransitionSection, item });
 
