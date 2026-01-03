@@ -81,6 +81,7 @@ import { BCNRContent } from "../../../../../components/BCNRContent";
 import { MedicalRecordsContent } from "../../../../../components/MedicalRecordsContent";
 import { Page11EntriesContent } from "../../../../../components/Page11EntriesContent";
 import { TrainingJacketsContent } from "../../../../../components/TrainingJacketsContent";
+import { MOLContent } from "../../../../../components/MOLContent";
 import { PromotionDocumentationContent } from "../../../../../components/PromotionDocumentationContent";
 import { JEPESContent } from "../../../../../components/JEPESContent";
 import { CuttingScoreVerificationContent } from "../../../../../components/CuttingScoreVerificationContent";
@@ -462,6 +463,7 @@ import {
   CertificateOfReliefOutgoingContent,
   RelinquishDEOCSContent,
 } from "../../../../../components/commanders/transition";
+import { MOLManagementContent } from "../../../../../components/commanders/MOLManagementContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -2638,6 +2640,15 @@ const IG_COMPLAINTS_DATA = {
   ],
 };
 
+const MOL_DATA = {
+  references: [
+    { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "MOL Help & User Guide", url: "https://mol.tfs.usmc.mil/mol/help.html", isQuickLink: true },
+    { title: "MISSO Support", url: "https://www.manpower.usmc.mil/webcenter/portal/MCIRSA", isQuickLink: true },
+    { title: "LES Explained", url: "https://www.dfas.mil/militarymembers/payentitlements/aboutpay/", isQuickLink: false },
+  ],
+};
+
 // ============================================
 // LEADERS - ACCOUNTABILITY & DISCIPLINE
 // ============================================
@@ -3550,6 +3561,7 @@ const DRRS_MC_OVERVIEW_DATA = {
   references: [
     { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil", isQuickLink: true },
     { title: "DRRS-MC User Manual", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "COPA (Commanders Personnel Analysis)", url: "https://www2.manpower.usmc.mil/copa/", isQuickLink: true },
     { title: "MCO 1553.3B (Unit Training)", url: "https://www.marines.mil" },
     { title: "GCSS-MC Portal", url: "https://gcss-mc.marines.mil" },
   ],
@@ -3576,7 +3588,8 @@ const C_LEVEL_ASSESSMENT_DATA = {
 const READINESS_BOARD_DATA = {
   references: [
     { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil", isQuickLink: true },
-    { title: "Unit SOP Template", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "COPA (Commanders Personnel Analysis)", url: "https://www2.manpower.usmc.mil/copa/", isQuickLink: true },
+    { title: "Unit SOP Template", url: "https://www.marines.mil" },
     { title: "DRRS-MC User Manual", url: "https://www.marines.mil" },
     { title: "Staff Officer Handbook", url: "https://www.marines.mil" },
   ],
@@ -3594,7 +3607,8 @@ const T_LEVEL_REPORTING_DATA = {
 const P_LEVEL_REPORTING_DATA = {
   references: [
     { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil", isQuickLink: true },
-    { title: "MCTFS User Guide", url: "https://www.marines.mil", isQuickLink: true },
+    { title: "COPA (Commanders Personnel Analysis)", url: "https://www2.manpower.usmc.mil/copa/", isQuickLink: true },
+    { title: "MCTFS User Guide", url: "https://www.marines.mil" },
     { title: "Unit T/O", url: "https://www.marines.mil" },
     { title: "DRRS-MC Manual", url: "https://www.marines.mil" },
   ],
@@ -4287,6 +4301,15 @@ const TRANSITION_OVERSIGHT_DATA = {
   ],
 };
 
+const MOL_MANAGEMENT_DATA = {
+  references: [
+    { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "MISSO Support", url: "https://www.manpower.usmc.mil/webcenter/portal/MCIRSA", isQuickLink: true },
+    { title: "MOL User Guide", url: "https://mol.tfs.usmc.mil/mol/help.html", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1070.12" },
+  ],
+};
+
 // Commanders - Public Affairs & Media Relations Data
 const MEDIA_ENGAGEMENT_DATA = {
   references: [
@@ -4975,6 +4998,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "page-11-commander": <Page11CommanderContent data={PAGE_11_COMMANDER_DATA} />,
     "adverse-letters": <AdverseLettersContent data={ADVERSE_LETTERS_DATA} />,
     "transition-oversight": <TransitionOversightContent data={TRANSITION_OVERSIGHT_DATA} />,
+    "mol-management": <MOLManagementContent data={MOL_MANAGEMENT_DATA} />,
     // Commanders - Public Affairs & Media Relations
     "media-engagement": <MediaEngagementContent data={MEDIA_ENGAGEMENT_DATA} />,
     "releasable-info": <ReleasableInformationContent data={RELEASABLE_INFORMATION_DATA} />,
@@ -5638,6 +5662,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   const commandersTransitionSlugs = [
     "cornerstone-attendance",
     "cor-incoming",
+    "mol-management",
     "status-command-letter",
     "aviation-refresher",
     "30-day-safety",
