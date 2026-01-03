@@ -1,4 +1,4 @@
-# Content Needed: 11 Placeholder Items
+# Content Needed: 8 Placeholder Items
 
 Items that currently show "Content coming soon" when users access them.
 
@@ -10,7 +10,7 @@ Items that currently show "Content coming soon" when users access them.
 
 | Role | Items Needing Content |
 |------|----------------------|
-| **Marines** (General) | 3 items |
+| **Marines** (General) | 0 items |
 | **Leaders** | 0 items |
 | **Commanders** | 8 items |
 | **Administrators** | 0 items |
@@ -40,11 +40,12 @@ All 6 life events now have content:
 ## Records & Corrections
 **Section:** `records-corrections`
 
-| Slug | Title | Description |
-|------|-------|-------------|
-| `medical-records` | Medical Records | Maintaining and accessing medical documentation |
-| `page-11-entries` | Page 11 Entries (Administrative Remarks) | Administrative remarks and counseling documentation |
-| `training-jackets` | Training Jackets | Training records and professional military education documentation |
+**STATUS: SECTION COMPLETE**
+
+Completed items:
+- ~~`medical-records`~~ - COMPLETED
+- ~~`page-11-entries`~~ - COMPLETED
+- ~~`training-jackets`~~ - COMPLETED
 
 ---
 
@@ -373,4 +374,3 @@ COMMON ISSUES:
 4. **Remaining sections with items:**
    - Security Programs: 8 items
    - Training & Readiness: 2 items
-   - Records & Corrections (Marines): 3 items
