@@ -46,7 +46,7 @@ export default async function RolePage({ params }: { params: Promise<Params> }) 
     { label: "Records & Corrections", slug: "records-corrections" },
     { label: "Reserve & Mobilization", slug: "reserve-mobilization" },
     { label: "Separations & Transitions", slug: "separations-transitions" },
-    { label: "Systems & Tools", slug: "systems-management" },
+    { label: "Marine Online (MOL)", slug: "marine-online" },
     { label: "Travel & Transportation", slug: "travel-transportation" },
   ];
   const isAdministrators = safeRole === "administrators";

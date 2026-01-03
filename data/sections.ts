@@ -502,29 +502,40 @@ export const SECTIONS: Record<string, Section> = {
     ],
   },
 
-  "systems-management": {
-    title: "Systems & Tools",
-    intro: "Access and navigation guidance for Marine Corps administrative systems. These systems are your primary tools for managing personnel data, travel, training records, and readiness requirements.",
+  "marine-online": {
+    title: "Marine Online (MOL)",
+    intro: "Marine Online is the primary self-service web portal for all Marines. Access your personnel records, submit leave requests, view LES, update personal information, and manage administrative actions. MOL is your gateway to managing your Marine Corps career.",
     groups: [
       {
-        title: "Personnel Systems",
+        title: "Account Access",
         items: [
-          { title: "Marine Online (MOL)", slug: "mol", desc: "Web portal for personnel records, leave, and admin actions" },
-          { title: "MCTFS", slug: "mctfs", desc: "Marine Corps Total Force System - authoritative personnel data" },
-          { title: "MCIRSA", slug: "mcirsa", desc: "Marine Corps Integrated Readiness System Architecture" },
+          { title: "MOL Login & CAC Setup", slug: "mol-login-cac-setup", desc: "Access MOL using your CAC and troubleshoot login issues" },
+          { title: "MOL Mobile Access", slug: "mol-mobile-access", desc: "Access MOL from mobile devices and remote locations" },
+          { title: "Password & PIN Reset", slug: "mol-password-pin-reset", desc: "Reset your MOL password or CAC PIN" },
         ],
       },
       {
-        title: "Travel & Finance Systems",
+        title: "Personnel Records",
         items: [
-          { title: "Defense Travel System (DTS)", slug: "dts", desc: "Create and manage travel authorizations and vouchers" },
-          { title: "GTCC Portal", slug: "gtcc-portal", desc: "Government Travel Charge Card account management" },
+          { title: "View Your OMPF", slug: "mol-view-ompf", desc: "Access your Official Military Personnel File" },
+          { title: "Update Personal Information", slug: "mol-update-personal-info", desc: "Change address, phone, emergency contacts, and other personal data" },
+          { title: "View & Print LES", slug: "mol-view-les", desc: "Access your Leave and Earnings Statement" },
         ],
       },
       {
-        title: "Reserve Systems",
+        title: "Leave Management",
         items: [
-          { title: "MROWS", slug: "mrows", desc: "Marine Reserve Order Writing System for reserve orders" },
+          { title: "Submit Leave Request", slug: "mol-submit-leave", desc: "Request annual, emergency, or special leave through MOL" },
+          { title: "Check Leave Balance", slug: "mol-leave-balance", desc: "View your current leave balance and projected earnings" },
+          { title: "Cancel Leave Request", slug: "mol-cancel-leave", desc: "Cancel or modify a pending leave request" },
+        ],
+      },
+      {
+        title: "Administrative Actions",
+        items: [
+          { title: "SGLI Updates", slug: "mol-sgli-updates", desc: "Update your Servicemembers Group Life Insurance beneficiaries" },
+          { title: "Dependency Updates", slug: "mol-dependency-updates", desc: "Add, remove, or update dependent information" },
+          { title: "Address Changes", slug: "mol-address-changes", desc: "Update your home of record and mailing address" },
         ],
       },
     ],

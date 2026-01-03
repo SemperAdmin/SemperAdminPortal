@@ -5274,17 +5274,24 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "bcnr",
     "perb", // ref to promotions
   ];
-  const systemsManagementSection = "systems-management";
-  const systemsManagementSlugs = [
-    // Personnel Systems
-    "mol",
-    "mctfs",
-    "mcirsa",
-    // Travel Systems
-    "dts",
-    "gtcc-portal",
-    // Reserve Systems
-    "mrows",
+  const marineOnlineSection = "marine-online";
+  const marineOnlineSlugs = [
+    // Account Access
+    "mol-login-cac-setup",
+    "mol-mobile-access",
+    "mol-password-pin-reset",
+    // Personnel Records
+    "mol-view-ompf",
+    "mol-update-personal-info",
+    "mol-view-les",
+    // Leave Management
+    "mol-submit-leave",
+    "mol-leave-balance",
+    "mol-cancel-leave",
+    // Administrative Actions
+    "mol-sgli-updates",
+    "mol-dependency-updates",
+    "mol-address-changes",
   ];
 
   // ============================================
@@ -5443,7 +5450,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     for (const item of reserveMobilizationSlugs) params.push({ role, section: reserveMobilizationSection, item });
     for (const item of legalDisciplinarySlugs) params.push({ role, section: legalDisciplinarySection, item });
     for (const item of recordsCorrectionsSlugs) params.push({ role, section: recordsCorrectionsSection, item });
-    for (const item of systemsManagementSlugs) params.push({ role, section: systemsManagementSection, item });
+    for (const item of marineOnlineSlugs) params.push({ role, section: marineOnlineSection, item });
     for (const item of lifeEventsSlugs) params.push({ role, section: lifeEventsSection, item });
   }
 
