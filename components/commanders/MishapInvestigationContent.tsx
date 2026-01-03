@@ -138,7 +138,7 @@ export function MishapInvestigationContent({ data }: Props) {
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Investigation Process</h2>
           <div className="mt-6 space-y-4">
             {PROCESS_STEPS.map((step, index) => (
-              <div key={step} className="flex items-start gap-4">
+              <div key={index} className="flex items-start gap-4">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">{index + 1}</span>
                 <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{step}</p>
               </div>
@@ -147,11 +147,11 @@ export function MishapInvestigationContent({ data }: Props) {
         </section>
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Commander&apos;s Endorsement Includes</h3>
-          <ul className="mt-3 space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
-            <li>&bull; Concurrence or non-concurrence with findings</li>
-            <li>&bull; Actions taken or planned to prevent recurrence</li>
-            <li>&bull; Disciplinary or administrative actions contemplated</li>
-            <li>&bull; Line of duty determination (if applicable)</li>
+          <ul className="mt-3 list-disc list-inside space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
+            <li>Concurrence or non-concurrence with findings</li>
+            <li>Actions taken or planned to prevent recurrence</li>
+            <li>Disciplinary or administrative actions contemplated</li>
+            <li>Line of duty determination (if applicable)</li>
           </ul>
         </section>
       </div>

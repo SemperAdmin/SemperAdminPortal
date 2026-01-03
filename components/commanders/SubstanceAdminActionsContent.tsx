@@ -51,6 +51,12 @@ const COMMON_ISSUES = [
   { issue: "Retention Requests", solution: "Commanders attempting to 'keep' a high-performing Marine who popped positive. While a CO can recommend retention, the threshold for approval at the HQMC level is extremely high and rarely granted for drugs." },
 ];
 
+const likelihoodClasses: Record<string, string> = {
+  "Most Common": "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300",
+  "Uncommon": "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300",
+  "Rare": "bg-zinc-100 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-300",
+};
+
 export function SubstanceAdminActionsContent({ data }: Props) {
   const content: Record<string, React.ReactNode> = {
     overview: (
@@ -111,7 +117,7 @@ export function SubstanceAdminActionsContent({ data }: Props) {
                   <tr key={item.type} className="border-b border-zinc-100 dark:border-zinc-800">
                     <td className="py-3 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{item.type}</td>
                     <td className="py-3 pr-4">
-                      <span className={`rounded-full px-2 py-1 text-xs font-medium ${item.likelihood === "Most Common" ? "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300" : item.likelihood === "Uncommon" ? "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300" : "bg-zinc-100 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-300"}`}>
+                      <span className={`rounded-full px-2 py-1 text-xs font-medium ${likelihoodClasses[item.likelihood] || likelihoodClasses.Rare}`}>
                         {item.likelihood}
                       </span>
                     </td>
@@ -134,7 +140,7 @@ export function SubstanceAdminActionsContent({ data }: Props) {
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Administrative Action Process</h2>
           <div className="mt-6 space-y-4">
             {PROCESS_STEPS.map((step, index) => (
-              <div key={step} className="flex items-start gap-4">
+              <div key={index} className="flex items-start gap-4">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">{index + 1}</span>
                 <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{step}</p>
               </div>
@@ -143,11 +149,11 @@ export function SubstanceAdminActionsContent({ data }: Props) {
         </section>
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Board Entitlement</h3>
-          <ul className="mt-3 space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
-            <li>&bull; Marines with 6+ years of service are entitled to an ADSEP Board</li>
-            <li>&bull; Marines facing OTH characterization are entitled to a Board</li>
-            <li>&bull; The Board can recommend retention (rarely approved for drugs)</li>
-            <li>&bull; Final authority rests with the GCMCA</li>
+          <ul className="mt-3 list-disc list-inside space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
+            <li>Marines with 6+ years of service are entitled to an ADSEP Board</li>
+            <li>Marines facing OTH characterization are entitled to a Board</li>
+            <li>The Board can recommend retention (rarely approved for drugs)</li>
+            <li>Final authority rests with the GCMCA</li>
           </ul>
         </section>
       </div>

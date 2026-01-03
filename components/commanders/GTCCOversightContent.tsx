@@ -119,7 +119,7 @@ export function GTCCOversightContent({ data }: Props) {
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">GTCC Oversight Process</h2>
           <div className="mt-6 space-y-4">
             {PROCESS_STEPS.map((step, index) => (
-              <div key={step} className="flex items-start gap-4">
+              <div key={index} className="flex items-start gap-4">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">{index + 1}</span>
                 <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{step}</p>
               </div>
@@ -128,11 +128,11 @@ export function GTCCOversightContent({ data }: Props) {
         </section>
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">IBE Report Review</h3>
-          <ul className="mt-3 space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
-            <li>&bull; <strong>Delinquency Report:</strong> Identifies cardholders with past-due balances</li>
-            <li>&bull; <strong>Misuse Report:</strong> Flags potential unauthorized transactions</li>
-            <li>&bull; <strong>Transaction Detail:</strong> Shows specific purchases for investigation</li>
-            <li>&bull; <strong>Status Report:</strong> Tracks card activation/deactivation status</li>
+          <ul className="mt-3 list-disc list-inside space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
+            <li><strong>Delinquency Report:</strong> Identifies cardholders with past-due balances</li>
+            <li><strong>Misuse Report:</strong> Flags potential unauthorized transactions</li>
+            <li><strong>Transaction Detail:</strong> Shows specific purchases for investigation</li>
+            <li><strong>Status Report:</strong> Tracks card activation/deactivation status</li>
           </ul>
         </section>
       </div>

@@ -119,7 +119,7 @@ export function AccountableOfficerContent({ data }: Props) {
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Accountability Process</h2>
           <div className="mt-6 space-y-4">
             {PROCESS_STEPS.map((step, index) => (
-              <div key={step} className="flex items-start gap-4">
+              <div key={index} className="flex items-start gap-4">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">{index + 1}</span>
                 <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{step}</p>
               </div>
@@ -128,12 +128,12 @@ export function AccountableOfficerContent({ data }: Props) {
         </section>
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">FLIPL Process</h3>
-          <ul className="mt-3 space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
-            <li>&bull; Report loss immediately to the Supply Officer</li>
-            <li>&bull; Secure the scene and preserve evidence</li>
-            <li>&bull; Initiate investigation through VCE</li>
-            <li>&bull; Determine liability and corrective actions</li>
-            <li>&bull; Document findings and recommendations</li>
+          <ul className="mt-3 list-disc list-inside space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
+            <li>Report loss immediately to the Supply Officer</li>
+            <li>Secure the scene and preserve evidence</li>
+            <li>Initiate investigation through VCE</li>
+            <li>Determine liability and corrective actions</li>
+            <li>Document findings and recommendations</li>
           </ul>
         </section>
       </div>

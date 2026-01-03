@@ -5501,7 +5501,14 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   ];
 
   const commandersSubstanceSection = "commanders-substance-abuse";
-  const commandersSubstanceSlugs: string[] = [];
+  const commandersSubstanceSlugs = [
+    "uuc-appointment",
+    "testing-requirements",
+    "inspection-testing",
+    "positive-result-procedures",
+    "substance-admin-actions",
+    "treatment-referral",
+  ];
 
   const commandersEOSection = "commanders-equal-opportunity";
   const commandersEOSlugs = [
@@ -5557,7 +5564,18 @@ export function generateStaticParams(): { role: Role; section: string; item: str
 
   // Group D: Compliance and Security
   const commandersSafetySection = "commanders-safety-risk";
-  const commandersSafetySlugs: string[] = [];
+  const commandersSafetySlugs = [
+    "safety-policy",
+    "safety-climate-survey",
+    "ground-safety",
+    "orm-integration",
+    "doss-relationship",
+    "flight-schedule-approval",
+    "pre-mishap-drills",
+    "mishap-reporting",
+    "mishap-investigation",
+    "motor-vehicle-safety",
+  ];
 
   const commandersIGSection = "commanders-inspector-general";
   const commandersIGSlugs: string[] = [];

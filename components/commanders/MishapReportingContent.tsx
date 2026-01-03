@@ -55,6 +55,13 @@ const COMMON_ISSUES = [
   { issue: "Privilege Confusion", solution: "Commanders attempting to use safety investigation testimony for disciplinary purposes. Safety investigations are privileged and separate from command investigations." },
 ];
 
+const mishapColorClasses: Record<string, string> = {
+  red: "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300",
+  orange: "bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300",
+  yellow: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300",
+  green: "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300",
+};
+
 export function MishapReportingContent({ data }: Props) {
   const content: Record<string, React.ReactNode> = {
     overview: (
@@ -113,7 +120,7 @@ export function MishapReportingContent({ data }: Props) {
                 {MISHAP_CLASSES.map((item) => (
                   <tr key={item.class} className="border-b border-zinc-100 dark:border-zinc-800">
                     <td className="py-3 pr-4">
-                      <span className={`rounded-full px-3 py-1 text-sm font-bold ${item.color === "red" ? "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300" : item.color === "orange" ? "bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300" : item.color === "yellow" ? "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300" : "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300"}`}>
+                      <span className={`rounded-full px-3 py-1 text-sm font-bold ${mishapColorClasses[item.color] || mishapColorClasses.green}`}>
                         Class {item.class}
                       </span>
                     </td>
@@ -136,7 +143,7 @@ export function MishapReportingContent({ data }: Props) {
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Mishap Response Process</h2>
           <div className="mt-6 space-y-4">
             {PROCESS_STEPS.map((step, index) => (
-              <div key={step} className="flex items-start gap-4">
+              <div key={index} className="flex items-start gap-4">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">{index + 1}</span>
                 <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{step}</p>
               </div>
@@ -145,12 +152,12 @@ export function MishapReportingContent({ data }: Props) {
         </section>
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Notification Chain</h3>
-          <ul className="mt-3 space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
-            <li>&bull; Medical/Emergency Services</li>
-            <li>&bull; Provost Marshal Office (PMO)</li>
-            <li>&bull; Higher Headquarters</li>
-            <li>&bull; Safety Office</li>
-            <li>&bull; Staff Judge Advocate (if applicable)</li>
+          <ul className="mt-3 list-disc list-inside space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
+            <li>Medical/Emergency Services</li>
+            <li>Provost Marshal Office (PMO)</li>
+            <li>Higher Headquarters</li>
+            <li>Safety Office</li>
+            <li>Staff Judge Advocate (if applicable)</li>
           </ul>
         </section>
       </div>
