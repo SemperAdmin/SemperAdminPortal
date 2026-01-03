@@ -34,7 +34,7 @@ export default function FSAContent({ fsaData }: { fsaData: { references: Ref[] }
             <div className="mt-4 grid gap-4 sm:grid-cols-3">
               <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
                 <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Rate</div>
-                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">$250/mo (up to $400 authorized)</div>
+                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">$300/mo</div>
               </div>
               <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
                 <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Start</div>
@@ -50,7 +50,7 @@ export default function FSAContent({ fsaData }: { fsaData: { references: Ref[] }
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
                 BLUF
               </div>
-              <p className="mt-2 text-sm opacity-90">Flat $250/month per member (Services may set up to $400 under FY24 NDAA). Begins on Day 31 of continuous separation and pays retroactively to Day 1. Non‑taxable. Only one FSA type per month.</p>
+              <p className="mt-2 text-sm opacity-90">Flat $300/month per member. Begins on Day 31 of continuous separation and pays retroactively to Day 1. Non‑taxable. Only one FSA type per month.</p>
             </div>
             <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-5 text-left dark:border-white/15 dark:bg-white/10">
               <div className="flex items-center gap-2 text-amber-800">
@@ -236,7 +236,7 @@ export default function FSAContent({ fsaData }: { fsaData: { references: Ref[] }
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Key Points</h3>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-            <li>Flat $250/month; Services may authorize up to $400</li>
+            <li>Flat $300/month</li>
             <li>Starts on Day 31; retroactive to Day 1</li>
             <li>Non‑taxable; one FSA type per month</li>
             <li>Requires DD Form 1561 and DEERS enrollment</li>
