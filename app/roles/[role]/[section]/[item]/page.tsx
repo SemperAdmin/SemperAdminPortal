@@ -81,6 +81,7 @@ import { BCNRContent } from "../../../../../components/BCNRContent";
 import { MedicalRecordsContent } from "../../../../../components/MedicalRecordsContent";
 import { Page11EntriesContent } from "../../../../../components/Page11EntriesContent";
 import { TrainingJacketsContent } from "../../../../../components/TrainingJacketsContent";
+import { MOLContent } from "../../../../../components/MOLContent";
 import { PromotionDocumentationContent } from "../../../../../components/PromotionDocumentationContent";
 import { JEPESContent } from "../../../../../components/JEPESContent";
 import { CuttingScoreVerificationContent } from "../../../../../components/CuttingScoreVerificationContent";
@@ -2638,6 +2639,15 @@ const IG_COMPLAINTS_DATA = {
   ],
 };
 
+const MOL_DATA = {
+  references: [
+    { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "MOL Help & User Guide", url: "https://mol.tfs.usmc.mil/mol/help.html", isQuickLink: true },
+    { title: "MISSO Support", url: "https://www.manpower.usmc.mil/webcenter/portal/MCIRSA", isQuickLink: true },
+    { title: "LES Explained", url: "https://www.dfas.mil/militarymembers/payentitlements/aboutpay/", isQuickLink: false },
+  ],
+};
+
 // ============================================
 // LEADERS - ACCOUNTABILITY & DISCIPLINE
 // ============================================
@@ -4709,7 +4719,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "military-protective-orders": <MilitaryProtectiveOrdersContent data={MILITARY_PROTECTIVE_ORDERS_DATA} />,
     "ig-complaints": <IGComplaintsContent data={IG_COMPLAINTS_DATA} />,
     // Systems Management - Personnel Systems
-    "mol": <GenericContent title="Marine Online (MOL)" />,
+    "mol": <MOLContent data={MOL_DATA} />,
     "mctfs": <GenericContent title="MCTFS (Total Force System)" />,
     "mcirsa": <GenericContent title="MCIRSA" />,
     // Systems Management - Travel Systems
