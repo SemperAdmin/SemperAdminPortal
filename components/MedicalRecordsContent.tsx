@@ -66,6 +66,11 @@ const COMMON_ISSUES = [
   { issue: "Records Not Transferred", solution: "Allow 30-60 days for records transfer. Follow up with gaining command medical department if records don't arrive." },
 ];
 
+const importanceClasses: Record<string, string> = {
+  Critical: "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300",
+  High: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300",
+};
+
 export function MedicalRecordsContent({ data }: Props) {
   return (
     <TabbedContentLayout
@@ -99,7 +104,7 @@ export function MedicalRecordsContent({ data }: Props) {
                   <div key={item.component} className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-700">
                     <div className="flex items-center justify-between">
                       <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">{item.component}</h3>
-                      <span className={"rounded-full px-2 py-1 text-xs font-medium " + (item.importance === "Critical" ? "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300" : "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300")}>
+                      <span className={`rounded-full px-2 py-1 text-xs font-medium ${importanceClasses[item.importance] || importanceClasses.High}`}>
                         {item.importance}
                       </span>
                     </div>

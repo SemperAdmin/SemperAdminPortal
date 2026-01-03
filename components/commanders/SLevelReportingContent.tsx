@@ -60,6 +60,12 @@ const COMMON_ISSUES = [
   { issue: "Maintenance Status Not Included", solution: "Equipment on-hand but not operational should degrade the S-level. Track maintenance status alongside inventory." },
 ];
 
+const impactLevelClasses: Record<string, string> = {
+  High: "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300",
+  Medium: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300",
+  Low: "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300",
+};
+
 export function SLevelReportingContent({ data }: Props) {
   const content: Record<string, React.ReactNode> = {
     overview: (
@@ -143,7 +149,7 @@ export function SLevelReportingContent({ data }: Props) {
                     <td className="py-3 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{item.category}</td>
                     <td className="py-3 pr-4 text-zinc-600 dark:text-zinc-400">{item.description}</td>
                     <td className="py-3">
-                      <span className={"rounded-full px-2 py-1 text-xs font-medium " + (item.impact === "High" ? "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300" : item.impact === "Medium" ? "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300" : "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300")}>
+                      <span className={`rounded-full px-2 py-1 text-xs font-medium ${impactLevelClasses[item.impact] || impactLevelClasses.Medium}`}>
                         {item.impact}
                       </span>
                     </td>
@@ -164,7 +170,7 @@ export function SLevelReportingContent({ data }: Props) {
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">S-Level Assessment Process</h2>
           <div className="mt-6 space-y-4">
             {PROCESS_STEPS.map((step, index) => (
-              <div key={step} className="flex items-start gap-4">
+              <div key={index} className="flex items-start gap-4">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">{index + 1}</span>
                 <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{step}</p>
               </div>
@@ -173,11 +179,11 @@ export function SLevelReportingContent({ data }: Props) {
         </section>
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Commander&apos;s Remark Should Include</h3>
-          <ul className="mt-3 space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
-            <li>&bull; Specific equipment shortages affecting mission capability</li>
-            <li>&bull; Status of requisitions to fill shortages</li>
-            <li>&bull; Maintenance status of major end items</li>
-            <li>&bull; Mitigation measures for critical shortages</li>
+          <ul className="mt-3 list-disc list-inside space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
+            <li>Specific equipment shortages affecting mission capability</li>
+            <li>Status of requisitions to fill shortages</li>
+            <li>Maintenance status of major end items</li>
+            <li>Mitigation measures for critical shortages</li>
           </ul>
         </section>
       </div>

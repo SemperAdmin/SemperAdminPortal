@@ -57,6 +57,12 @@ const COMMON_ISSUES = [
   { issue: "Unrealistic Controls", solution: "Listing controls that cannot actually be implemented (e.g., 'maintain 100% accountability' with no plan). Controls must be specific and executable." },
 ];
 
+const riskLevelClasses: Record<string, string> = {
+  green: "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300",
+  yellow: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300",
+  red: "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300",
+};
+
 export function ORMIntegrationContent({ data }: Props) {
   const content: Record<string, React.ReactNode> = {
     overview: (
@@ -116,7 +122,7 @@ export function ORMIntegrationContent({ data }: Props) {
                 {RISK_LEVELS.map((item) => (
                   <tr key={item.level} className="border-b border-zinc-100 dark:border-zinc-800">
                     <td className="py-3 pr-4">
-                      <span className={`rounded-full px-2 py-1 text-xs font-medium ${item.color === "green" ? "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300" : item.color === "yellow" ? "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300" : "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300"}`}>
+                      <span className={`rounded-full px-2 py-1 text-xs font-medium ${riskLevelClasses[item.color] || riskLevelClasses.green}`}>
                         {item.level}
                       </span>
                     </td>
@@ -136,7 +142,7 @@ export function ORMIntegrationContent({ data }: Props) {
           <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">ORM Integration Process</h2>
           <div className="mt-6 space-y-4">
             {PROCESS_STEPS.map((step, index) => (
-              <div key={step} className="flex items-start gap-4">
+              <div key={index} className="flex items-start gap-4">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-sm font-bold text-white">{index + 1}</span>
                 <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{step}</p>
               </div>

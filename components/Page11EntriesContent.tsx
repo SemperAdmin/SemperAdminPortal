@@ -74,6 +74,12 @@ const COMMON_ISSUES = [
   { issue: "Retaliation Concerns", solution: "Document any perceived retaliation. Retaliatory Page 11s can be challenged through the IG or EO channels." },
 ];
 
+const impactClasses: Record<string, string> = {
+  Positive: "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300",
+  Neutral: "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300",
+  Negative: "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300",
+};
+
 export function Page11EntriesContent({ data }: Props) {
   return (
     <TabbedContentLayout
@@ -117,10 +123,7 @@ export function Page11EntriesContent({ data }: Props) {
                   <div key={item.type} className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-700">
                     <div className="flex items-center justify-between">
                       <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">{item.type}</h3>
-                      <span className={"rounded-full px-2 py-1 text-xs font-medium " +
-                        (item.impact === "Positive" ? "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300" :
-                         item.impact === "Neutral" ? "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300" :
-                         "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300")}>
+                      <span className={`rounded-full px-2 py-1 text-xs font-medium ${impactClasses[item.impact] || impactClasses.Negative}`}>
                         {item.impact}
                       </span>
                     </div>
