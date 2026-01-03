@@ -78,6 +78,9 @@ import { AwardsDecorationsContent } from "../../../../../components/AwardsDecora
 import { TrainingRecordUpdatesContent } from "../../../../../components/TrainingRecordUpdatesContent";
 import { EducationRecordsContent } from "../../../../../components/EducationRecordsContent";
 import { BCNRContent } from "../../../../../components/BCNRContent";
+import { MedicalRecordsContent } from "../../../../../components/MedicalRecordsContent";
+import { Page11EntriesContent } from "../../../../../components/Page11EntriesContent";
+import { TrainingJacketsContent } from "../../../../../components/TrainingJacketsContent";
 import { PromotionDocumentationContent } from "../../../../../components/PromotionDocumentationContent";
 import { JEPESContent } from "../../../../../components/JEPESContent";
 import { CuttingScoreVerificationContent } from "../../../../../components/CuttingScoreVerificationContent";
@@ -1745,6 +1748,35 @@ const BCNR_DATA = {
     { title: "10 U.S.C. § 1552 (Correction of Military Records)", url: "https://www.law.cornell.edu/uscode/text/10/1552", isQuickLink: false },
     { title: "NDRB (Naval Discharge Review Board)", url: "https://www.secnav.navy.mil/mra/CORB/Pages/NDRB/default.aspx", isQuickLink: false },
     { title: "Veterans Service Organizations", url: "https://www.va.gov/vso/", isQuickLink: false },
+  ],
+};
+
+const MEDICAL_RECORDS_DATA = {
+  references: [
+    { title: "MHS GENESIS Patient Portal", url: "https://patientportal.mhsgenesis.health.mil/", isQuickLink: true },
+    { title: "TRICARE Online", url: "https://www.tricareonline.com/", isQuickLink: true },
+    { title: "DD Form 2870 (Medical Disclosure)", url: "https://www.esd.whs.mil/Directives/forms/", isQuickLink: true },
+    { title: "VA Health Benefits", url: "https://www.va.gov/health-care/", isQuickLink: false },
+    { title: "MCO 6000.18 (Individual Medical Readiness)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
+  ],
+};
+
+const PAGE_11_ENTRIES_DATA = {
+  references: [
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1070.12", isQuickLink: true },
+    { title: "NAVMC 118(11) Form", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "Legal Assistance Office", url: "https://www.hqmc.marines.mil/sja/", isQuickLink: true },
+    { title: "BCNR (Board for Correction)", url: "https://www.secnav.navy.mil/mra/bcnr/", isQuickLink: false },
+  ],
+};
+
+const TRAINING_JACKETS_DATA = {
+  references: [
+    { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "MCTIMS", url: "https://www.trngcmd.marines.mil/", isQuickLink: true },
+    { title: "MarineNet", url: "https://www.marinenet.usmc.mil/", isQuickLink: true },
+    { title: "MCO 1500.60 (Training Management)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: false },
+    { title: "JEPES Manual", url: "https://www.manpower.usmc.mil/", isQuickLink: false },
   ],
 };
 
@@ -4554,6 +4586,9 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "training-record-updates": <TrainingRecordUpdatesContent data={TRAINING_RECORD_DATA} />,
     "education-records": <EducationRecordsContent data={EDUCATION_RECORDS_DATA} />,
     "bcnr": <BCNRContent data={BCNR_DATA} />,
+    "medical-records": <MedicalRecordsContent data={MEDICAL_RECORDS_DATA} />,
+    "page-11-entries": <Page11EntriesContent data={PAGE_11_ENTRIES_DATA} />,
+    "training-jackets": <TrainingJacketsContent data={TRAINING_JACKETS_DATA} />,
     // Promotions and Career Progression
     "promotion-documentation": <PromotionDocumentationContent data={PROMOTION_DOCUMENTATION_DATA} />,
     "jepes": <JEPESContent data={JEPES_DATA} />,
