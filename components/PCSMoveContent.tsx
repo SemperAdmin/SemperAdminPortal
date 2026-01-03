@@ -38,12 +38,13 @@ const TABS = [
 const PROCESS_STEPS = [
   { step: 1, title: "Receive PCS orders", detail: "Orders specify report date, gaining command, and authorized entitlements." },
   { step: 2, title: "Schedule transportation counseling", detail: "Visit Personal Property Office or use move.mil to schedule HHG pickup. Decide between government move or PPM." },
-  { step: 3, title: "Complete checkout procedures", detail: "Clear all required offices per installation checkout sheet. Obtain required signatures." },
-  { step: 4, title: "Request advance DLA (optional)", detail: "Dislocation Allowance can be advanced before departure. Submit request through admin." },
-  { step: 5, title: "Travel to new duty station", detail: "Per diem and mileage authorized for official travel days. Use Defense Table of Official Distances (DTOD) for mileage calculation." },
-  { step: 6, title: "Check in at new command", detail: "Report to gaining command by date specified in orders. Complete check-in procedures." },
-  { step: 7, title: "Receive HHG delivery", detail: "Inspect all items for damage. Annotate damages on inventory form before signing." },
-  { step: 8, title: "File travel claim", detail: "Submit travel voucher within 5 days of completing travel. Include all receipts for lodging and expenses over $75." },
+  { step: 3, title: "Complete Outbound Interview (OBI)", detail: "Complete OBI on MOL to initiate pay/entitlement transitions for your departure." },
+  { step: 4, title: "Complete checkout procedures", detail: "Clear all required offices per installation checkout sheet. Obtain required signatures." },
+  { step: 5, title: "Request advance DLA (optional)", detail: "Dislocation Allowance can be advanced before departure. Submit request through admin." },
+  { step: 6, title: "Travel to new duty station", detail: "Per diem and mileage authorized for official travel days. Use Defense Table of Official Distances (DTOD) for mileage calculation." },
+  { step: 7, title: "Check in at new command", detail: "Report to gaining command by date specified in orders. Complete Inbound Interview (IBI) on MOL." },
+  { step: 8, title: "Receive HHG delivery", detail: "Inspect all items for damage. Annotate damages on inventory form before signing." },
+  { step: 9, title: "File travel claim via TVI", detail: "Complete Travel Voucher Interview (TVI) on MOL within 5 days. Include all receipts for lodging and expenses over $75." },
 ];
 
 const ENTITLEMENTS = [
@@ -63,9 +64,13 @@ const CONUS_CHECKLIST = [
     "CIF/IIF: Complete 100% turn-in or 'Gear-to-Gear' transfer if orders allow",
     "CBRN: Return all gas masks and serialized gear to unit armory or warehouse",
   ]},
-  { category: "MOL & Admin", items: [
-    "Complete Outbound Interview (OBI) on MOL",
+  { category: "MOL Outbound (Before Departing)", items: [
+    "Complete Outbound Interview (OBI) on MOL to initiate pay/entitlement transitions",
     "Obtain Command Departure on MOL before leaving to ensure pay/entitlements transition correctly",
+  ]},
+  { category: "MOL Inbound (After Arriving)", items: [
+    "Complete Inbound Interview (IBI) on MOL to establish pay at new duty station",
+    "Complete Travel Voucher Interview (TVI) on MOL within 5 days to submit travel claim",
   ]},
 ];
 
@@ -79,6 +84,10 @@ const PPM_REQUIREMENTS = [
 ];
 
 const OCONUS_REQUIREMENTS = [
+  { category: "MOL Outbound (Before Departing CONUS)", items: [
+    "Complete Outbound Interview (OBI) on MOL before departing current duty station",
+    "Obtain Command Departure on MOL to trigger overseas entitlement transitions",
+  ]},
   { category: "Overseas Suitability Screening (OSS)", items: [
     "Start within 10 days of receiving Web Orders",
     "Every dependent must be cleared by a military physician",
@@ -99,9 +108,17 @@ const OCONUS_REQUIREMENTS = [
     "Ensure fuel level is at 1/4 tank or less at drop-off",
     "Schedule VPC appointment as early as possible",
   ]},
+  { category: "MOL Inbound (After Arriving Overseas)", items: [
+    "Complete Inbound Interview (IBI) on MOL to establish overseas pay/entitlements",
+    "Complete Travel Voucher Interview (TVI) on MOL within 5 days to submit travel claim",
+  ]},
 ];
 
 const RETURN_REQUIREMENTS = [
+  { category: "MOL Outbound (Before Departing Overseas)", items: [
+    "Complete Outbound Interview (OBI) on MOL before departing overseas station",
+    "Obtain Command Departure on MOL to trigger entitlement transitions (OHA/COLA stops)",
+  ]},
   { category: "Housing & Area Clearance", items: [
     "Schedule 'Pre-Inspection' for government quarters at least 30 days out",
     "Complete Area Clearance for all dependents verifying authorization to return to U.S.",
@@ -113,6 +130,10 @@ const RETURN_REQUIREMENTS = [
   { category: "Entitlement Changes", items: [
     "Overseas Housing Allowance (OHA) and COLA stop on day you depart overseas station",
     "Basic Allowance for Housing (BAH) restarts at 'Transit' rate until you check into new command",
+  ]},
+  { category: "MOL Inbound (After Arriving CONUS)", items: [
+    "Complete Inbound Interview (IBI) on MOL to establish CONUS pay/entitlements",
+    "Complete Travel Voucher Interview (TVI) on MOL within 5 days to submit travel claim",
   ]},
 ];
 
@@ -240,7 +261,7 @@ export function PCSMoveContent({ data }: Props) {
               <Clock className="h-5 w-5 shrink-0 text-[var(--sa-red)]" />
               <div>
                 <span className="font-medium text-zinc-900 dark:text-zinc-100">Within 5 days of arrival:</span>
-                <span className="ml-2 text-zinc-600 dark:text-zinc-400">File travel claim</span>
+                <span className="ml-2 text-zinc-600 dark:text-zinc-400">Complete Travel Voucher Interview (TVI) on MOL</span>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -253,8 +274,8 @@ export function PCSMoveContent({ data }: Props) {
           </div>
         </section>
 
-        <InfoCard icon={AlertTriangle} title="Command Departure Required" variant="warning">
-          <strong>Do not leave</strong> your current duty station without obtaining a Command Departure on MOL. Failure to do so can result in pay and entitlement issues at your gaining command.
+        <InfoCard icon={AlertTriangle} title="OBI & Command Departure Required" variant="warning">
+          <strong>Do not leave</strong> your current duty station without completing the Outbound Interview (OBI) and obtaining Command Departure on MOL. Failure to do so can result in pay and entitlement issues at your gaining command.
         </InfoCard>
       </div>
     ),
