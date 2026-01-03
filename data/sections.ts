@@ -251,7 +251,7 @@ export const SECTIONS: Record<string, Section> = {
       {
         title: "Deployment & Hardship Pay",
         items: [
-          { title: "Family Separation Allowance", slug: "family-separation-allowance", desc: "$250/month when separated from dependents 30+ days" },
+          { title: "Family Separation Allowance", slug: "family-separation-allowance", desc: "$300/month when separated from dependents 30+ days" },
           { title: "Hostile Fire Pay", slug: "hostile-fire-pay", desc: "$225/month for exposure to hostile fire or mine explosions" },
           { title: "Imminent Danger Pay", slug: "imminent-danger-pay", desc: "$7.50/day up to $225/month; designated danger areas" },
           { title: "Savings Deposit Program (SDP)", slug: "savings-deposit-program", desc: "Earn 10% interest on deployment savings up to $10,000" },
