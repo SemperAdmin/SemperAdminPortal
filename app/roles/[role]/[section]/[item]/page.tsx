@@ -264,6 +264,7 @@ import { RecordKeepingDocumentationContent } from "../../../../../components/lea
 // Leaders - Administrative Systems
 import { MCTFSOverviewContent } from "../../../../../components/leaders/MCTFSOverviewContent";
 import { MOLNavigationContent } from "../../../../../components/leaders/MOLNavigationContent";
+import { MOLManagementContent } from "../../../../../components/MOLManagementContent";
 import { JEPESSystemNavigationContent } from "../../../../../components/leaders/JEPESSystemNavigationContent";
 import { TFRSOverviewContent } from "../../../../../components/leaders/TFRSOverviewContent";
 import { UnitDiaryReportingContent } from "../../../../../components/leaders/UnitDiaryReportingContent";
@@ -1765,7 +1766,7 @@ const MEDICAL_RECORDS_DATA = {
 
 const PAGE_11_ENTRIES_DATA = {
   references: [
-    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1070.12", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/Portals/1/Publications/MCO%20P1070.12K%20W%20CH%201.pdf", isQuickLink: true },
     { title: "NAVMC 118(11) Form", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
     { title: "Legal Assistance Office", url: "https://www.hqmc.marines.mil/sja/", isQuickLink: true },
     { title: "BCNR (Board for Correction)", url: "https://www.secnav.navy.mil/mra/bcnr/", isQuickLink: false },
@@ -3089,6 +3090,14 @@ const MOL_NAVIGATION_DATA = {
   ],
 };
 
+const MOL_MANAGEMENT_DATA = {
+  references: [
+    { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil", isQuickLink: true },
+    { title: "MISSA/MISSO Portal", url: "https://missa.manpower.usmc.mil", isQuickLink: true },
+    { title: "MCO 5210.11F - Records Management", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899088/mco-521011f/" },
+  ],
+};
+
 const JEPES_SYSTEM_NAVIGATION_DATA = {
   references: [
     { title: "MCO 1616.1 - JEPES", url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899232/mco-16161/", isQuickLink: true },
@@ -4240,7 +4249,7 @@ const JEPES_COMMANDER_DATA = {
 const COUNSELING_ENTRIES_6105_DATA = {
   references: [
     { title: "MCO 1900.16 (MARCORSEPMAN)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1900.16", isQuickLink: true },
-    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1070.12", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/Portals/1/Publications/MCO%20P1070.12K%20W%20CH%201.pdf", isQuickLink: true },
     { title: "6105 Entry Template", url: "https://www.marines.mil" },
   ],
 };
@@ -4248,7 +4257,7 @@ const COUNSELING_ENTRIES_6105_DATA = {
 const NOT_REC_AUTHORITY_DATA = {
   references: [
     { title: "MCO P1400.32D (Promotion Manual)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1400.32", isQuickLink: true },
-    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1070.12", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/Portals/1/Publications/MCO%20P1070.12K%20W%20CH%201.pdf", isQuickLink: true },
     { title: "MOL Select Grade Module", url: "https://mol.tfs.usmc.mil/" },
   ],
 };
@@ -4275,7 +4284,7 @@ const REENLISTMENT_AUTHORITY_DATA = {
 
 const PAGE_11_COMMANDER_DATA = {
   references: [
-    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1070.12", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/Portals/1/Publications/MCO%20P1070.12K%20W%20CH%201.pdf", isQuickLink: true },
   ],
 };
 
@@ -4722,7 +4731,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "military-protective-orders": <MilitaryProtectiveOrdersContent data={MILITARY_PROTECTIVE_ORDERS_DATA} />,
     "ig-complaints": <IGComplaintsContent data={IG_COMPLAINTS_DATA} />,
     // Systems Management - Personnel Systems
-    "mol": <MOLContent data={MOL_DATA} />,
+    "mol": <MOLManagementContent data={MOL_MANAGEMENT_DATA} />,
     "mctfs": <GenericContent title="MCTFS (Total Force System)" />,
     "mcirsa": <GenericContent title="MCIRSA" />,
     // Systems Management - Travel Systems
@@ -5295,6 +5304,9 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "deploying",
     "getting-out",
     "buying-a-home",
+    "getting-married",
+    "having-a-baby",
+    "pcs-move",
   ];
 
   // ============================================

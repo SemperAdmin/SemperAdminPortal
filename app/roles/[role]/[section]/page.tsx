@@ -22,6 +22,7 @@ import { TransitionOfCommandContent } from "../../../../components/commanders/Tr
 import { EnvironmentalContent } from "../../../../components/commanders/EnvironmentalContent";
 import { SecurityProgramsContent } from "../../../../components/commanders/SecurityProgramsContent";
 import { AdminInvestigationsContent } from "../../../../components/commanders/AdminInvestigationsContent";
+import { MOLManagementContent } from "../../../../components/MOLManagementContent";
 import { ConductingInvestigationsContent } from "../../../../components/leaders/ConductingInvestigationsContent";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
@@ -95,6 +96,7 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     key === "commanders-environmental" ||
     key === "commanders-security" ||
     key === "commanders-admin-investigations" ||
+    key === "commanders-mol-management" ||
     key === "leaders-conducting-investigations";
 
   // Render comprehensive content components for specific commander/leader sections
@@ -155,6 +157,12 @@ export default async function RoleSectionPage({ params }: { params: Promise<Para
     }
     if (key === "commanders-admin-investigations") {
       return <AdminInvestigationsContent />;
+    }
+    if (key === "commanders-mol-management") {
+      return <MOLManagementContent data={{ references: [
+        { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil", isQuickLink: true },
+        { title: "MISSA/MISSO Portal", url: "https://missa.manpower.usmc.mil", isQuickLink: true },
+      ]}} />;
     }
     if (key === "leaders-conducting-investigations") {
       return <ConductingInvestigationsContent />;

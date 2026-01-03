@@ -36,15 +36,38 @@ const TABS = [
 ];
 
 const PROCESS_STEPS = [
-  { step: 1, title: "Receive PCS orders", detail: "Orders specify report date, gaining command, and authorized entitlements." },
-  { step: 2, title: "Schedule transportation counseling", detail: "Visit Personal Property Office or use move.mil to schedule HHG pickup. Decide between government move or PPM." },
-  { step: 3, title: "Complete Outbound Interview (OBI)", detail: "Complete OBI on MOL to initiate pay/entitlement transitions for your departure." },
-  { step: 4, title: "Complete checkout procedures", detail: "Clear all required offices per installation checkout sheet. Obtain required signatures." },
-  { step: 5, title: "Request advance DLA (optional)", detail: "Dislocation Allowance can be advanced before departure. Submit request through admin." },
-  { step: 6, title: "Travel to new duty station", detail: "Per diem and mileage authorized for official travel days. Use Defense Table of Official Distances (DTOD) for mileage calculation." },
-  { step: 7, title: "Check in at new command", detail: "Report to gaining command by date specified in orders. Complete Inbound Interview (IBI) on MOL." },
-  { step: 8, title: "Receive HHG delivery", detail: "Inspect all items for damage. Annotate damages on inventory form before signing." },
-  { step: 9, title: "File travel claim via TVI", detail: "Complete Travel Voucher Interview (TVI) on MOL within 5 days. Include all receipts for lodging and expenses over $75." },
+  {
+    title: "Receive PCS orders",
+    detail: "Orders specify report date, gaining command, and authorized entitlements.",
+  },
+  {
+    title: "Schedule transportation counseling",
+    detail: "Visit Personal Property Office or use move.mil to schedule HHG pickup. Decide between government move or PPM.",
+  },
+  {
+    title: "Complete checkout procedures",
+    detail: "Clear all required offices per installation checkout sheet. Obtain required signatures.",
+  },
+  {
+    title: "Request advance DLA (optional)",
+    detail: "Dislocation Allowance can be advanced before departure. Submit request through admin.",
+  },
+  {
+    title: "Travel to new duty station",
+    detail: "Per diem and mileage authorized for official travel days. Use Defense Table of Official Distances (DTOD) for mileage calculation.",
+  },
+  {
+    title: "Check in at new command",
+    detail: "Report to gaining command by date specified in orders. Complete check-in procedures.",
+  },
+  {
+    title: "Receive HHG delivery",
+    detail: "Inspect all items for damage. Annotate damages on inventory form before signing.",
+  },
+  {
+    title: "File travel claim",
+    detail: "Submit travel voucher within 5 days of completing travel. Include all receipts for lodging and expenses over $75.",
+  },
 ];
 
 const ENTITLEMENTS = [
