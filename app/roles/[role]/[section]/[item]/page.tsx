@@ -461,6 +461,7 @@ import {
   CertificateOfReliefOutgoingContent,
   RelinquishDEOCSContent,
 } from "../../../../../components/commanders/transition";
+import { MOLManagementContent } from "../../../../../components/commanders/MOLManagementContent";
 
 type Params = { role: Role; section: string; item: string };
 
@@ -4278,6 +4279,15 @@ const TRANSITION_OVERSIGHT_DATA = {
   ],
 };
 
+const MOL_MANAGEMENT_DATA = {
+  references: [
+    { title: "Marine Online (MOL)", url: "https://mol.tfs.usmc.mil/", isQuickLink: true },
+    { title: "MISSO Support", url: "https://www.manpower.usmc.mil/webcenter/portal/MCIRSA", isQuickLink: true },
+    { title: "MOL User Guide", url: "https://mol.tfs.usmc.mil/mol/help.html", isQuickLink: true },
+    { title: "MCO P1070.12K (IRAM)", url: "https://www.marines.mil/News/Publications/MCPEL/?Page=1&Title=1070.12" },
+  ],
+};
+
 // Commanders - Public Affairs & Media Relations Data
 const MEDIA_ENGAGEMENT_DATA = {
   references: [
@@ -4966,6 +4976,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "page-11-commander": <Page11CommanderContent data={PAGE_11_COMMANDER_DATA} />,
     "adverse-letters": <AdverseLettersContent data={ADVERSE_LETTERS_DATA} />,
     "transition-oversight": <TransitionOversightContent data={TRANSITION_OVERSIGHT_DATA} />,
+    "mol-management": <MOLManagementContent data={MOL_MANAGEMENT_DATA} />,
     // Commanders - Public Affairs & Media Relations
     "media-engagement": <MediaEngagementContent data={MEDIA_ENGAGEMENT_DATA} />,
     "releasable-info": <ReleasableInformationContent data={RELEASABLE_INFORMATION_DATA} />,
@@ -5615,6 +5626,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   const commandersTransitionSlugs = [
     "cornerstone-attendance",
     "cor-incoming",
+    "mol-management",
     "status-command-letter",
     "aviation-refresher",
     "30-day-safety",
