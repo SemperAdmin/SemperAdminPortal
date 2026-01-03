@@ -5274,17 +5274,24 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "bcnr",
     "perb", // ref to promotions
   ];
-  const systemsManagementSection = "systems-management";
-  const systemsManagementSlugs = [
-    // Personnel Systems
-    "mol",
-    "mctfs",
-    "mcirsa",
-    // Travel Systems
-    "dts",
-    "gtcc-portal",
-    // Reserve Systems
-    "mrows",
+  const marineOnlineSection = "marine-online";
+  const marineOnlineSlugs = [
+    // Account Access
+    "mol-login-cac-setup",
+    "mol-mobile-access",
+    "mol-password-pin-reset",
+    // Personnel Records
+    "mol-view-ompf",
+    "mol-update-personal-info",
+    "mol-view-les",
+    // Leave Management
+    "mol-submit-leave",
+    "mol-leave-balance",
+    "mol-cancel-leave",
+    // Administrative Actions
+    "mol-sgli-updates",
+    "mol-dependency-updates",
+    "mol-address-changes",
   ];
 
   // ============================================
@@ -5443,7 +5450,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     for (const item of reserveMobilizationSlugs) params.push({ role, section: reserveMobilizationSection, item });
     for (const item of legalDisciplinarySlugs) params.push({ role, section: legalDisciplinarySection, item });
     for (const item of recordsCorrectionsSlugs) params.push({ role, section: recordsCorrectionsSection, item });
-    for (const item of systemsManagementSlugs) params.push({ role, section: systemsManagementSection, item });
+    for (const item of marineOnlineSlugs) params.push({ role, section: marineOnlineSection, item });
     for (const item of lifeEventsSlugs) params.push({ role, section: lifeEventsSection, item });
   }
 
@@ -5481,7 +5488,6 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   const commandersPersonnelSection = "commanders-personnel-career";
   const commandersPersonnelSlugs = [
     "adverse-fitreps",
-    "procon-oversight",
     "meritorious-promotion-authority",
     "reenlistment-authority",
     "transition-oversight",
@@ -5597,8 +5603,6 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "annual-inventory",
   ];
 
-  const commandersMaintenanceSection = "commanders-maintenance-logistics";
-  const commandersMaintenanceSlugs: string[] = [];
 
   // Group D: Compliance and Security
   const commandersSafetySection = "commanders-safety-risk";
@@ -5617,30 +5621,6 @@ export function generateStaticParams(): { role: Role; section: string; item: str
 
   const commandersIGSection = "commanders-inspector-general";
   const commandersIGSlugs: string[] = [];
-
-  const commandersEnvironmentalSection = "commanders-environmental";
-  const commandersEnvironmentalSlugs = [
-    "ems-overview",
-    "ecc-appointment",
-    "environmental-funding",
-    "spill-reporting",
-    "hazmat-management",
-    "nepa-compliance",
-    "internal-ece",
-    "benchmark-ece",
-  ];
-
-  const commandersSecuritySection = "commanders-security";
-  const commandersSecuritySlugs = [
-    "infosec-program",
-    "classified-accountability",
-    "opsec-program",
-    "personnel-security",
-    "physical-security",
-    "insider-threat",
-    "cybersecurity-program",
-    "atfp-program",
-  ];
 
   const commandersPublicAffairsSection = "commanders-public-affairs";
   const commandersPublicAffairsSlugs = [
@@ -5692,11 +5672,8 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   for (const item of commandersAdminInvestigationsSlugs) params.push({ role: commanderRole, section: commandersAdminInvestigationsSection, item });
   for (const item of commandersTrainingSlugs) params.push({ role: commanderRole, section: commandersTrainingSection, item });
   for (const item of commandersFiscalSlugs) params.push({ role: commanderRole, section: commandersFiscalSection, item });
-  for (const item of commandersMaintenanceSlugs) params.push({ role: commanderRole, section: commandersMaintenanceSection, item });
   for (const item of commandersSafetySlugs) params.push({ role: commanderRole, section: commandersSafetySection, item });
   for (const item of commandersIGSlugs) params.push({ role: commanderRole, section: commandersIGSection, item });
-  for (const item of commandersEnvironmentalSlugs) params.push({ role: commanderRole, section: commandersEnvironmentalSection, item });
-  for (const item of commandersSecuritySlugs) params.push({ role: commanderRole, section: commandersSecuritySection, item });
   for (const item of commandersPublicAffairsSlugs) params.push({ role: commanderRole, section: commandersPublicAffairsSection, item });
   for (const item of commandersTransitionSlugs) params.push({ role: commanderRole, section: commandersTransitionSection, item });
 

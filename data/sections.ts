@@ -502,29 +502,40 @@ export const SECTIONS: Record<string, Section> = {
     ],
   },
 
-  "systems-management": {
-    title: "Systems & Tools",
-    intro: "Access and navigation guidance for Marine Corps administrative systems. These systems are your primary tools for managing personnel data, travel, training records, and readiness requirements.",
+  "marine-online": {
+    title: "Marine Online (MOL)",
+    intro: "Marine Online is the primary self-service web portal for all Marines. Access your personnel records, submit leave requests, view LES, update personal information, and manage administrative actions. MOL is your gateway to managing your Marine Corps career.",
     groups: [
       {
-        title: "Personnel Systems",
+        title: "Account Access",
         items: [
-          { title: "Marine Online (MOL)", slug: "mol", desc: "Web portal for personnel records, leave, and admin actions" },
-          { title: "MCTFS", slug: "mctfs", desc: "Marine Corps Total Force System - authoritative personnel data" },
-          { title: "MCIRSA", slug: "mcirsa", desc: "Marine Corps Integrated Readiness System Architecture" },
+          { title: "MOL Login & CAC Setup", slug: "mol-login-cac-setup", desc: "Access MOL using your CAC and troubleshoot login issues" },
+          { title: "MOL Mobile Access", slug: "mol-mobile-access", desc: "Access MOL from mobile devices and remote locations" },
+          { title: "Password & PIN Reset", slug: "mol-password-pin-reset", desc: "Reset your MOL password or CAC PIN" },
         ],
       },
       {
-        title: "Travel & Finance Systems",
+        title: "Personnel Records",
         items: [
-          { title: "Defense Travel System (DTS)", slug: "dts", desc: "Create and manage travel authorizations and vouchers" },
-          { title: "GTCC Portal", slug: "gtcc-portal", desc: "Government Travel Charge Card account management" },
+          { title: "View Your OMPF", slug: "mol-view-ompf", desc: "Access your Official Military Personnel File" },
+          { title: "Update Personal Information", slug: "mol-update-personal-info", desc: "Change address, phone, emergency contacts, and other personal data" },
+          { title: "View & Print LES", slug: "mol-view-les", desc: "Access your Leave and Earnings Statement" },
         ],
       },
       {
-        title: "Reserve Systems",
+        title: "Leave Management",
         items: [
-          { title: "MROWS", slug: "mrows", desc: "Marine Reserve Order Writing System for reserve orders" },
+          { title: "Submit Leave Request", slug: "mol-submit-leave", desc: "Request annual, emergency, or special leave through MOL" },
+          { title: "Check Leave Balance", slug: "mol-leave-balance", desc: "View your current leave balance and projected earnings" },
+          { title: "Cancel Leave Request", slug: "mol-cancel-leave", desc: "Cancel or modify a pending leave request" },
+        ],
+      },
+      {
+        title: "Administrative Actions",
+        items: [
+          { title: "SGLI Updates", slug: "mol-sgli-updates", desc: "Update your Servicemembers Group Life Insurance beneficiaries" },
+          { title: "Dependency Updates", slug: "mol-dependency-updates", desc: "Add, remove, or update dependent information" },
+          { title: "Address Changes", slug: "mol-address-changes", desc: "Update your home of record and mailing address" },
         ],
       },
     ],
@@ -886,7 +897,6 @@ export const SECTIONS: Record<string, Section> = {
         items: [
           { title: "Fitness Report Responsibilities", slug: "fitrep-responsibilities", desc: "Reporting Senior and Reviewing Officer duties" },
           { title: "Adverse Fitness Reports", slug: "adverse-fitreps", desc: "Requirements for adverse comments and due process" },
-          { title: "Proficiency & Conduct Marks", slug: "procon-oversight", desc: "Commander oversight and marking philosophy" },
           { title: "JEPES Commander Role", slug: "jepes-commander", desc: "Commander involvement in junior enlisted evaluations" },
         ],
       },
@@ -1215,37 +1225,6 @@ export const SECTIONS: Record<string, Section> = {
     ],
   },
 
-  "commanders-maintenance-logistics": {
-    title: "Maintenance & Logistics",
-    intro: "Equipment readiness directly impacts mission capability. Commanders ensure proper equipment accountability, maintenance, and reporting through appointed officers, regular inventories, and oversight of maintenance management systems. This section covers T/E management, small arms accountability, and maintenance programs.",
-    groups: [
-      {
-        title: "Equipment Management",
-        items: [
-          { title: "Responsible Officer Appointment", slug: "ro-appointment", desc: "Appointing ROs and defining responsibilities" },
-          { title: "T/E Review Requirements", slug: "te-review", desc: "Annual review, excess identification, deficiency reporting" },
-          { title: "GCSS-MC Oversight", slug: "gcss-mc-oversight", desc: "Global Combat Support System oversight" },
-        ],
-      },
-      {
-        title: "Accountability",
-        items: [
-          { title: "Small Arms Accountability", slug: "small-arms-accountability", desc: "CRANE verification and 45-day certification" },
-          { title: "TMDE Accountability", slug: "tmde-accountability", desc: "Test, Measurement, and Diagnostic Equipment" },
-          { title: "Equipment Status Report", slug: "esr-reporting", desc: "ESR completion and accuracy" },
-        ],
-      },
-      {
-        title: "Maintenance Programs",
-        items: [
-          { title: "MMO Appointment", slug: "mmo-appointment", desc: "Maintenance Management Officer duties" },
-          { title: "Corrosion Prevention (CPAC)", slug: "cpac-program", desc: "Corrosion Prevention and Control program" },
-          { title: "Enterprise Lifecycle Maintenance", slug: "elmp", desc: "ELMP integration and planning" },
-        ],
-      },
-    ],
-  },
-
   "commanders-mol-management": {
     title: "MOL Management",
     intro: "As a Commander, managing your unit's administrative authority within Marine Online (MOL) is a non-delegable responsibility that ensures legal and administrative actions, such as Promotion Recommendations, are processed correctly.",
@@ -1311,66 +1290,6 @@ export const SECTIONS: Record<string, Section> = {
           { title: "POA&M Management", slug: "poam-management", desc: "Plan of Action and Milestones tracking" },
           { title: "Pre-Inspection Preparation", slug: "pre-inspection-prep", desc: "Preparing the command for inspections" },
           { title: "Corrective Action Tracking", slug: "corrective-action-tracking", desc: "Tracking and closing inspection findings" },
-        ],
-      },
-    ],
-  },
-
-  "commanders-environmental": {
-    title: "Environmental Stewardship",
-    intro: "Environmental compliance is a command responsibility with significant legal and financial implications. Commanders appoint Environmental Compliance Coordinators, ensure proper spill reporting, manage hazardous materials, and comply with NEPA requirements. Non-compliance can result in fines and criminal liability.",
-    groups: [
-      {
-        title: "Program Management",
-        items: [
-          { title: "EMS Overview", slug: "ems-overview", desc: "Environmental Management System requirements" },
-          { title: "ECC Appointment", slug: "ecc-appointment", desc: "Environmental Compliance Coordinator designation" },
-          { title: "Environmental Funding", slug: "environmental-funding", desc: "FC and CMP funding sources" },
-        ],
-      },
-      {
-        title: "Compliance Requirements",
-        items: [
-          { title: "Spill Reporting", slug: "spill-reporting", desc: "30-minute voice report and AFFF requirements" },
-          { title: "Hazmat Management", slug: "hazmat-management", desc: "Hazardous material and waste management" },
-          { title: "NEPA Compliance", slug: "nepa-compliance", desc: "CATEX, EA, and EIS requirements" },
-        ],
-      },
-      {
-        title: "Assessments",
-        items: [
-          { title: "Internal ECE", slug: "internal-ece", desc: "Internal Environmental Compliance Evaluation" },
-          { title: "Benchmark ECE", slug: "benchmark-ece", desc: "External benchmark evaluations" },
-        ],
-      },
-    ],
-  },
-
-  "commanders-security": {
-    title: "Security Programs",
-    intro: "Commanders are responsible for protecting classified information, personnel, and facilities. Security programs include information security, personnel security, physical security, insider threat, OPSEC, and cybersecurity. Effective security requires continuous vigilance and command emphasis.",
-    groups: [
-      {
-        title: "Information Security",
-        items: [
-          { title: "Information Security Program", slug: "infosec-program", desc: "Classified information handling and protection" },
-          { title: "Classified Material Accountability", slug: "classified-accountability", desc: "Inventory and control procedures" },
-          { title: "OPSEC Program", slug: "opsec-program", desc: "Operations Security planning and implementation" },
-        ],
-      },
-      {
-        title: "Personnel & Physical Security",
-        items: [
-          { title: "Personnel Security", slug: "personnel-security", desc: "Clearance sponsorship and access determination" },
-          { title: "Physical Security", slug: "physical-security", desc: "Facility and asset protection" },
-          { title: "Insider Threat Program", slug: "insider-threat", desc: "Identifying and mitigating insider threats" },
-        ],
-      },
-      {
-        title: "Cyber & Force Protection",
-        items: [
-          { title: "Cybersecurity Program", slug: "cybersecurity-program", desc: "Network security and cyber hygiene" },
-          { title: "AT/FP Program", slug: "atfp-program", desc: "Antiterrorism and Force Protection" },
         ],
       },
     ],
@@ -1500,13 +1419,10 @@ export const COMMANDER_SECTIONS = new Set([
   // Group C: Readiness and Resources
   "commanders-training-readiness",
   "commanders-fiscal-property",
-  "commanders-maintenance-logistics",
   "commanders-mol-management",
   // Group D: Compliance and Security
   "commanders-safety-risk",
   "commanders-inspector-general",
-  "commanders-environmental",
-  "commanders-security",
   "commanders-public-affairs",
   "commanders-transition-command",
 ]);
