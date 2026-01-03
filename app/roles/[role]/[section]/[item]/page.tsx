@@ -5264,6 +5264,16 @@ export function generateStaticParams(): { role: Role; section: string; item: str
   ];
 
   // ============================================
+  // LIFE EVENTS SECTION
+  // ============================================
+  const lifeEventsSection = "life-events";
+  const lifeEventsSlugs = [
+    "deploying",
+    "getting-out",
+    "buying-a-home",
+  ];
+
+  // ============================================
   // LEADER-SPECIFIC SECTIONS
   // ============================================
   const leadersAccountabilitySection = "leaders-accountability-discipline";
@@ -5407,6 +5417,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     for (const item of legalDisciplinarySlugs) params.push({ role, section: legalDisciplinarySection, item });
     for (const item of recordsCorrectionsSlugs) params.push({ role, section: recordsCorrectionsSection, item });
     for (const item of systemsManagementSlugs) params.push({ role, section: systemsManagementSection, item });
+    for (const item of lifeEventsSlugs) params.push({ role, section: lifeEventsSection, item });
   }
 
   // Leaders-only sections
