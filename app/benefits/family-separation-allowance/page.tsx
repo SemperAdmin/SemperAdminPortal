@@ -127,7 +127,7 @@ export default function Page() {
       <section className="mt-10 space-y-6">
         <h2 className="text-2xl font-semibold">💵 HOW MUCH DO I GET?</h2>
         <h3 className="text-xl font-semibold">MONTHLY RATE:</h3>
-        <p className="text-zinc-800 dark:text-zinc-200">FAMILY SEPARATION ALLOWANCE: $300–$400 per month (statutory range; FY24 NDAA authorizes up to $400; Services may set current rate)</p>
+        <p className="text-zinc-800 dark:text-zinc-200">FAMILY SEPARATION ALLOWANCE: $300 per month</p>
         <h4 className="text-lg font-semibold">FLAT RATE FOR ALL DEPENDENTS:</h4>
         <ul className="list-disc pl-6 text-zinc-800 dark:text-zinc-200">
           <li>Same $300/month whether you have one dependent or ten dependents</li>
