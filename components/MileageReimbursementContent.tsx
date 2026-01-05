@@ -4,6 +4,15 @@ import { QuickLinks } from "./QuickLinks";
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
 
+// CY2026 POV Mileage Rates (effective January 1, 2026)
+const RATES_2026 = {
+  MALT: 0.205,        // PCS/MALT rate
+  TDY_FULL: 0.725,    // TDY when GOV not available
+  TDY_REDUCED: 0.205, // TDY when GOV available (same as MALT)
+  MOTORCYCLE: 0.705,  // Motorcycle TDY rate
+  AIRPLANE: 1.78,     // Privately owned aircraft
+};
+
 const TABS = [
   { id: "overview", label: "Overview" },
   { id: "rates", label: "2026 Rates" },
@@ -18,18 +27,18 @@ const TABS = [
 type TabId = (typeof TABS)[number]["id"];
 
 const CURRENT_RATES = [
-  { type: "MALT (PCS)", rate: "$0.205/mile", description: "Monetary Allowance in Lieu of Transportation for PCS moves" },
-  { type: "TDY/TAD (Full Rate)", rate: "$0.725/mile", description: "When GOV is NOT available or POC is advantageous to government" },
-  { type: "TDY/TAD (Reduced)", rate: "$0.205/mile", description: "When GOV IS available but member chooses POC" },
-  { type: "Motorcycle", rate: "$0.705/mile", description: "Motorcycle rate for TDY travel" },
-  { type: "Airplane (POV)", rate: "$1.78/mile", description: "When using privately owned aircraft" },
+  { type: "MALT (PCS)", rate: `$${RATES_2026.MALT}/mile`, description: "Monetary Allowance in Lieu of Transportation for PCS moves" },
+  { type: "TDY/TAD (Full Rate)", rate: `$${RATES_2026.TDY_FULL}/mile`, description: "When GOV is NOT available or POC is advantageous to government" },
+  { type: "TDY/TAD (Reduced)", rate: `$${RATES_2026.TDY_REDUCED}/mile`, description: "When GOV IS available but member chooses POC" },
+  { type: "Motorcycle", rate: `$${RATES_2026.MOTORCYCLE}/mile`, description: "Motorcycle rate for TDY travel" },
+  { type: "Airplane (POV)", rate: `$${RATES_2026.AIRPLANE}/mile`, description: "When using privately owned aircraft" },
 ];
 
 const MALT_INFO = {
   definition: "MALT (Monetary Allowance in Lieu of Transportation) is the mileage rate paid for PCS moves when you drive your POV instead of using government-arranged transportation.",
   calculation: [
     { step: "Determine official distance using DTOD (Defense Table of Official Distances)", details: "Example: Camp Pendleton, CA to Camp Lejeune, NC = 2,467 miles" },
-    { step: "Apply MALT rate", details: "$0.205 × 2,467 miles = $505.74" },
+    { step: "Apply MALT rate", details: `$${RATES_2026.MALT} × 2,467 miles = $${(RATES_2026.MALT * 2467).toFixed(2)}` },
     { step: "Add per diem for travel days", details: "Authorized 1 day per 350 miles (minimum 1 day)" },
     { step: "Calculate dependents (if applicable)", details: "Additional MALT for second POV if dependents included in orders" },
   ],
@@ -43,7 +52,7 @@ const MALT_INFO = {
 
 const TDY_RATES = {
   govNotAvailable: {
-    rate: "$0.725/mile",
+    rate: `$${RATES_2026.TDY_FULL}/mile`,
     conditions: [
       "No Government Owned Vehicle (GOV) available at duty station",
       "Mission requires POC use (equipment transport, multiple stops)",
@@ -52,7 +61,7 @@ const TDY_RATES = {
     ],
   },
   govAvailable: {
-    rate: "$0.205/mile",
+    rate: `$${RATES_2026.TDY_REDUCED}/mile`,
     conditions: [
       "GOV was available but you chose to use POC",
       "Driving for personal convenience",
@@ -79,12 +88,12 @@ const LOG_REQUIREMENTS = [
 ];
 
 const COMMON_SCENARIOS = [
-  { scenario: "PCS CONUS to CONUS", rate: "MALT ($0.205/mile)", notes: "Plus per diem for travel days. Second POV authorized if dependents included." },
-  { scenario: "TDY with no GOV available", rate: "$0.725/mile", notes: "Full rate. Document GOV non-availability in DTS remarks." },
-  { scenario: "TDY with GOV available, chose POC", rate: "$0.205/mile", notes: "Reduced rate. Must be pre-authorized." },
-  { scenario: "Reserve IDT travel", rate: "$0.205/mile", notes: "Per MARADMIN 070/21. One-way distance × 2 for round trip." },
-  { scenario: "Local official travel at TDY site", rate: "$0.725/mile", notes: "If authorized. Keep detailed mileage log." },
-  { scenario: "POC to airport for TDY", rate: "$0.725/mile", notes: "Round trip to departure airport. Parking reimbursed separately." },
+  { scenario: "PCS CONUS to CONUS", rate: `MALT ($${RATES_2026.MALT}/mile)`, notes: "Plus per diem for travel days. Second POV authorized if dependents included." },
+  { scenario: "TDY with no GOV available", rate: `$${RATES_2026.TDY_FULL}/mile`, notes: "Full rate. Document GOV non-availability in DTS remarks." },
+  { scenario: "TDY with GOV available, chose POC", rate: `$${RATES_2026.TDY_REDUCED}/mile`, notes: "Reduced rate. Must be pre-authorized." },
+  { scenario: "Reserve IDT travel", rate: `$${RATES_2026.MALT}/mile`, notes: "Per MARADMIN 070/21. One-way distance × 2 for round trip." },
+  { scenario: "Local official travel at TDY site", rate: `$${RATES_2026.TDY_FULL}/mile`, notes: "If authorized. Keep detailed mileage log." },
+  { scenario: "POC to airport for TDY", rate: `$${RATES_2026.TDY_FULL}/mile`, notes: "Round trip to departure airport. Parking reimbursed separately." },
 ];
 
 const DTS_ENTRY_STEPS = [
@@ -147,17 +156,17 @@ export default function MileageReimbursementContent({ data }: { data: { referenc
                 <tbody>
                   <tr className="border-b border-black/5 dark:border-white/10">
                     <td className="px-3 py-2 text-zinc-700 dark:text-zinc-300">MALT (PCS)</td>
-                    <td className="px-3 py-2 font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">$0.205/mile</td>
+                    <td className="px-3 py-2 font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">${RATES_2026.MALT}/mile</td>
                     <td className="px-3 py-2 text-zinc-700 dark:text-zinc-300">Permanent Change of Station moves</td>
                   </tr>
                   <tr className="border-b border-black/5 dark:border-white/10">
                     <td className="px-3 py-2 text-zinc-700 dark:text-zinc-300">TDY (No GOV)</td>
-                    <td className="px-3 py-2 font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">$0.725/mile</td>
+                    <td className="px-3 py-2 font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">${RATES_2026.TDY_FULL}/mile</td>
                     <td className="px-3 py-2 text-zinc-700 dark:text-zinc-300">GOV not available or POC advantageous</td>
                   </tr>
                   <tr className="border-b border-black/5 dark:border-white/10">
                     <td className="px-3 py-2 text-zinc-700 dark:text-zinc-300">TDY (GOV Available)</td>
-                    <td className="px-3 py-2 font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">$0.205/mile</td>
+                    <td className="px-3 py-2 font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">${RATES_2026.TDY_REDUCED}/mile</td>
                     <td className="px-3 py-2 text-zinc-700 dark:text-zinc-300">GOV available but member chose POC</td>
                   </tr>
                 </tbody>
@@ -237,7 +246,7 @@ export default function MileageReimbursementContent({ data }: { data: { referenc
 
             <div className="mt-6 rounded-xl border border-black/10 bg-[var(--sa-navy)] p-4 text-[var(--sa-cream)] dark:border-white/15">
               <h3 className="font-bold">Reserve Component IDT Travel</h3>
-              <p className="mt-2 text-sm opacity-90">Per MARADMIN 070/21, Reserve Marines may claim mileage reimbursement for IDT (drill weekend) travel at the $0.205/mile rate. Calculate round-trip distance using DTOD. This is separate from and in addition to any IDT travel pay entitlements.</p>
+              <p className="mt-2 text-sm opacity-90">Per MARADMIN 070/21, Reserve Marines may claim mileage reimbursement for IDT (drill weekend) travel at the ${RATES_2026.MALT}/mile rate. Calculate round-trip distance using DTOD. This is separate from and in addition to any IDT travel pay entitlements.</p>
             </div>
           </section>
         )}
@@ -399,7 +408,7 @@ export default function MileageReimbursementContent({ data }: { data: { referenc
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Mileage Troubleshooter</h2>
             <div className="mt-3 space-y-4">
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
-                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Getting $0.205 instead of $0.725?</h3>
+                <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Getting ${RATES_2026.TDY_REDUCED} instead of ${RATES_2026.TDY_FULL}?</h3>
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
                   <li>Check if GOV availability was marked correctly in DTS</li>
                   <li>Verify POC was authorized as &quot;advantageous to government&quot;</li>
@@ -476,12 +485,12 @@ export default function MileageReimbursementContent({ data }: { data: { referenc
           <ul className="mt-3 space-y-2 text-sm">
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
               <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">TDY Full Rate</div>
-              <div className="text-lg font-bold text-[var(--sa-red)]">$0.725/mile</div>
+              <div className="text-lg font-bold text-[var(--sa-red)]">${RATES_2026.TDY_FULL}/mile</div>
               <div className="text-xs text-zinc-700 dark:text-zinc-300">When GOV not available</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
               <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">MALT / Reduced Rate</div>
-              <div className="text-lg font-bold text-[var(--sa-red)]">$0.205/mile</div>
+              <div className="text-lg font-bold text-[var(--sa-red)]">${RATES_2026.MALT}/mile</div>
               <div className="text-xs text-zinc-700 dark:text-zinc-300">PCS or when GOV available</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">

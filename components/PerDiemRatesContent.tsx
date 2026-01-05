@@ -5,6 +5,12 @@ import { QuickLinks } from "./QuickLinks";
 type Ref = { title: string; desc: string; url: string; type: string; isQuickLink?: boolean };
 type Tab = "overview" | "rates" | "mie" | "longterm" | "important" | "troubleshooter" | "references";
 
+// CY2026 POV Mileage Rates (effective January 1, 2026)
+const POV_RATES_2026 = {
+  TDY: 0.725,   // TDY mileage rate when GOV not available
+  MALT: 0.205,  // PCS/MALT rate
+};
+
 const TABS: { key: Tab; label: string }[] = [
   { key: "overview", label: "Overview" },
   { key: "rates", label: "Rates" },
@@ -138,8 +144,8 @@ export default function PerDiemRatesContent({ data }: { data: { references: Ref[
             </div>
             <div className="mt-6 rounded-xl border border-green-200 bg-green-50 p-4 dark:border-white/15 dark:bg-white/10">
               <h3 className="font-bold text-green-800 dark:text-green-400">POV Mileage Rate (CY 2026)</h3>
-              <div className="mt-2 text-2xl font-bold text-green-800 dark:text-[var(--sa-cream)]">$0.725 <span className="text-sm font-normal">per mile</span></div>
-              <p className="mt-1 text-xs text-green-700 dark:text-zinc-300">TDY rate effective January 1, 2026. MALT rate: $0.205/mile.</p>
+              <div className="mt-2 text-2xl font-bold text-green-800 dark:text-[var(--sa-cream)]">${POV_RATES_2026.TDY} <span className="text-sm font-normal">per mile</span></div>
+              <p className="mt-1 text-xs text-green-700 dark:text-zinc-300">TDY rate effective January 1, 2026. MALT rate: ${POV_RATES_2026.MALT}/mile.</p>
             </div>
           </section>
         )}
@@ -357,7 +363,7 @@ export default function PerDiemRatesContent({ data }: { data: { references: Ref[
               <div className="text-xs text-amber-600 dark:text-zinc-300">Standard daily rate</div>
             </li>
             <li className="rounded-md border border-green-200 bg-green-50 p-3 dark:border-white/15 dark:bg-white/10">
-              <div className="font-medium text-green-700 dark:text-[var(--sa-cream)]">$0.725/mile</div>
+              <div className="font-medium text-green-700 dark:text-[var(--sa-cream)]">${POV_RATES_2026.TDY}/mile</div>
               <div className="text-xs text-green-600 dark:text-zinc-300">POV mileage rate (TDY)</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
