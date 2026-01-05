@@ -4,6 +4,9 @@ import { useState } from "react";
 type Ref = { title: string; desc: string; url: string; type: string };
 type DLARate = { rank: string; withDependents: number; withoutDependents: number };
 
+// CY2026 Partial DLA Rate (effective January 1, 2026)
+const PARTIAL_DLA_2026 = "1,002.71";
+
 export default function DislocationAllowanceContent({ data }: { data: { rates: DLARate[]; references: Ref[] } }) {
   const [tab, setTab] = useState<"overview" | "rates" | "eligibility" | "dualmil" | "notauthorized" | "troubleshooter" | "references">("overview");
 
@@ -37,7 +40,7 @@ export default function DislocationAllowanceContent({ data }: { data: { rates: D
               </div>
               <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
                 <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">Partial DLA</div>
-                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">$1,002.71</div>
+                <div className="mt-1 text-lg font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">${PARTIAL_DLA_2026}</div>
                 <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">Local moves (govt convenience)</p>
               </div>
             </div>
@@ -100,7 +103,7 @@ export default function DislocationAllowanceContent({ data }: { data: { rates: D
             <div className="mt-4 grid gap-4 md:grid-cols-2">
               <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 dark:border-white/15 dark:bg-white/10">
                 <h3 className="font-bold text-amber-800 dark:text-[var(--sa-cream)]">Partial DLA (2026)</h3>
-                <div className="mt-2 text-2xl font-bold text-amber-700 dark:text-[var(--sa-cream)]">$1,002.71</div>
+                <div className="mt-2 text-2xl font-bold text-amber-700 dark:text-[var(--sa-cream)]">${PARTIAL_DLA_2026}</div>
                 <p className="mt-1 text-xs text-amber-700 dark:text-zinc-300">For local moves due to government convenience (privatization, renovation, etc.)</p>
               </div>
               <div className="rounded-xl border border-blue-200 bg-blue-50 p-4 dark:border-white/15 dark:bg-white/10">
@@ -300,7 +303,7 @@ export default function DislocationAllowanceContent({ data }: { data: { rates: D
               <div className="rounded-xl border border-black/10 bg-white p-4 text-left shadow-sm dark:border-white/15 dark:bg-black/60">
                 <h3 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Received partial DLA when expecting full DLA</h3>
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>Partial DLA ($1,002.71) applies only to local moves for government convenience (not PCS)</li>
+                  <li>Partial DLA (${PARTIAL_DLA_2026}) applies only to local moves for government convenience (not PCS)</li>
                   <li>If you executed a PCS and received only partial DLA, contact your disbursing office to correct the payment</li>
                 </ul>
               </div>
@@ -369,7 +372,7 @@ export default function DislocationAllowanceContent({ data }: { data: { rates: D
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
               <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Partial DLA (2026)</div>
-              <div className="text-xs text-zinc-700 dark:text-zinc-300">$1,002.71 for local moves</div>
+              <div className="text-xs text-zinc-700 dark:text-zinc-300">${PARTIAL_DLA_2026} for local moves</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
               <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Tax Status</div>
