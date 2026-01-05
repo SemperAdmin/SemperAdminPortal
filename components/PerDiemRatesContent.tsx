@@ -137,9 +137,9 @@ export default function PerDiemRatesContent({ data }: { data: { references: Ref[
               <p className="mt-3 text-xs text-zinc-600 dark:text-zinc-400">For OCONUS locations, use the DTMO Per Diem Rate Lookup at www.travel.dod.mil</p>
             </div>
             <div className="mt-6 rounded-xl border border-green-200 bg-green-50 p-4 dark:border-white/15 dark:bg-white/10">
-              <h3 className="font-bold text-green-800 dark:text-green-400">POV Mileage Rate (FY 2025)</h3>
-              <div className="mt-2 text-2xl font-bold text-green-800 dark:text-[var(--sa-cream)]">$0.70 <span className="text-sm font-normal">per mile</span></div>
-              <p className="mt-1 text-xs text-green-700 dark:text-zinc-300">This rate applies to all official travel where POV is authorized.</p>
+              <h3 className="font-bold text-green-800 dark:text-green-400">POV Mileage Rate (CY 2026)</h3>
+              <div className="mt-2 text-2xl font-bold text-green-800 dark:text-[var(--sa-cream)]">$0.725 <span className="text-sm font-normal">per mile</span></div>
+              <p className="mt-1 text-xs text-green-700 dark:text-zinc-300">TDY rate effective January 1, 2026. MALT rate: $0.205/mile.</p>
             </div>
           </section>
         )}
@@ -357,8 +357,8 @@ export default function PerDiemRatesContent({ data }: { data: { references: Ref[
               <div className="text-xs text-amber-600 dark:text-zinc-300">Standard daily rate</div>
             </li>
             <li className="rounded-md border border-green-200 bg-green-50 p-3 dark:border-white/15 dark:bg-white/10">
-              <div className="font-medium text-green-700 dark:text-[var(--sa-cream)]">$0.70/mile</div>
-              <div className="text-xs text-green-600 dark:text-zinc-300">POV mileage rate</div>
+              <div className="font-medium text-green-700 dark:text-[var(--sa-cream)]">$0.725/mile</div>
+              <div className="text-xs text-green-600 dark:text-zinc-300">POV mileage rate (TDY)</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
               <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">75%</div>
