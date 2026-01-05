@@ -83,6 +83,7 @@ import { Page11EntriesContent } from "../../../../../components/Page11EntriesCon
 import { TrainingJacketsContent } from "../../../../../components/TrainingJacketsContent";
 import { MOLContent } from "../../../../../components/MOLContent";
 import MOLFunctionalModuleContent from "../../../../../components/MOLFunctionalModuleContent";
+import FunctionalModulesPage from "../../../../../components/FunctionalModulesPage";
 import BattalionPermissionsContent from "../../../../../components/BattalionPermissionsContent";
 import { PromotionDocumentationContent } from "../../../../../components/PromotionDocumentationContent";
 import { JEPESContent } from "../../../../../components/JEPESContent";
@@ -5736,31 +5737,8 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "getting-out": <GettingOutEASContent data={GETTING_OUT_EAS_DATA} />,
     "having-a-baby": <HavingABabyContent data={HAVING_A_BABY_DATA} />,
     "pcs-move": <PCSMoveContent data={PCS_MOVE_DATA} />,
-    // Marine Online - Functional Modules
-    "mol-awards-module": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-awards-module"]} references={MOL_DATA.references} />,
-    "mol-basic-orders-system": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-basic-orders-system"]} references={MOL_DATA.references} />,
-    "mol-bic-assignment": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-bic-assignment"]} references={MOL_DATA.references} />,
-    "mol-commanders-messaging": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-commanders-messaging"]} references={MOL_DATA.references} />,
-    "mol-epar": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-epar"]} references={MOL_DATA.references} />,
-    "mol-family-care-plan": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-family-care-plan"]} references={MOL_DATA.references} />,
-    "mol-family-readiness": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-family-readiness"]} references={MOL_DATA.references} />,
-    "mol-inbound-interview": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-inbound-interview"]} references={MOL_DATA.references} />,
-    "mol-jepes-module": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-jepes-module"]} references={MOL_DATA.references} />,
-    "mol-travel-voucher": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-travel-voucher"]} references={MOL_DATA.references} />,
-    "mol-leave-liberty-module": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-leave-liberty-module"]} references={MOL_DATA.references} />,
-    "mol-ompf-module": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-ompf-module"]} references={MOL_DATA.references} />,
-    "mol-organization-management": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-organization-management"]} references={MOL_DATA.references} />,
-    "mol-outbound-interview": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-outbound-interview"]} references={MOL_DATA.references} />,
-    "mol-permissions-management": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-permissions-management"]} references={MOL_DATA.references} />,
-    "mol-personal-information": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-personal-information"]} references={MOL_DATA.references} />,
-    "mol-personnel-accountability": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-personnel-accountability"]} references={MOL_DATA.references} />,
-    "mol-promotion-recs": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-promotion-recs"]} references={MOL_DATA.references} />,
-    "mol-trouble-ticket-system": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-trouble-ticket-system"]} references={MOL_DATA.references} />,
-    "mol-umsr": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-umsr"]} references={MOL_DATA.references} />,
-    "mol-unit-reports-cognos": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-unit-reports-cognos"]} references={MOL_DATA.references} />,
-    "mol-user-management": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-user-management"]} references={MOL_DATA.references} />,
-    "mol-view-reports": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-view-reports"]} references={MOL_DATA.references} />,
-    // Battalion Organization Permissions
+    // Marine Online - Administration & Reference
+    "mol-functional-modules": <FunctionalModulesPage data={{ modules: MOL_FUNCTIONAL_MODULES, references: MOL_DATA.references }} />,
     "mol-battalion-permissions": <BattalionPermissionsContent data={BATTALION_PERMISSIONS_DATA} references={BATTALION_PERMISSIONS_DATA.references} />,
   };
 
@@ -6049,31 +6027,8 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "mol-sgli-updates",
     "mol-dependency-updates",
     "mol-address-changes",
-    // Functional Modules
-    "mol-awards-module",
-    "mol-basic-orders-system",
-    "mol-bic-assignment",
-    "mol-commanders-messaging",
-    "mol-epar",
-    "mol-family-care-plan",
-    "mol-family-readiness",
-    "mol-inbound-interview",
-    "mol-jepes-module",
-    "mol-travel-voucher",
-    "mol-leave-liberty-module",
-    "mol-ompf-module",
-    "mol-organization-management",
-    "mol-outbound-interview",
-    "mol-permissions-management",
-    "mol-personal-information",
-    "mol-personnel-accountability",
-    "mol-promotion-recs",
-    "mol-trouble-ticket-system",
-    "mol-umsr",
-    "mol-unit-reports-cognos",
-    "mol-user-management",
-    "mol-view-reports",
-    // Battalion Organization Permissions
+    // Administration & Reference
+    "mol-functional-modules",
     "mol-battalion-permissions",
   ];
 
