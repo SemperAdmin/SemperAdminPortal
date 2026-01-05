@@ -245,8 +245,8 @@ export const reportGroups: CatalogGroup[] = [
   {
     name: "Enterprise Reports",
     items: [
-      { title: "Completing the Enterprise SAAR" },
-      { title: "Requesting Access Enterprise Package" },
+      { title: "Completing the Enterprise SAAR", href: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=617240A5ADC7" },
+      { title: "Requesting Access Enterprise Package", href: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=6496B4A45222" },
     ],
   },
   {
