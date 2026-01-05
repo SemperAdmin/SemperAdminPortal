@@ -566,6 +566,12 @@ export const SECTIONS: Record<string, Section> = {
           { title: "View Reports", slug: "mol-view-reports", desc: "View individual member personnel records from MCTFS" },
         ],
       },
+      {
+        title: "Administration Reference",
+        items: [
+          { title: "Battalion Organization Permissions", slug: "mol-battalion-permissions", desc: "Complete reference for battalion-level MOL permissions and system templates" },
+        ],
+      },
     ],
   },
 
