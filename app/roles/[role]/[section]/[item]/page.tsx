@@ -2682,6 +2682,50 @@ const MOL_FUNCTIONAL_MODULES = {
     description: "Provides individual members and authorized unit leaders the ability to submit and route administrative requests through the chain of command.",
     capabilities: ["Submit administrative requests", "Route requests through chain of command", "Track request status", "Approve/disapprove requests"],
     userTypes: ["Individual Members", "Unit Leaders"],
+    guide: [
+      {
+        title: "Initial Setup and Navigation",
+        steps: [
+          { step: "Log into your Marine Online account at https://mol.usmc.mil" },
+          { step: "Navigate to MyEPAR" },
+          { step: "Select \"Create Record\"" },
+        ],
+      },
+      {
+        title: "Drafting Your EPAR",
+        steps: [
+          { step: "Verify the shown unit information is correct" },
+          { step: "Select the \"Subject\" from the dropdown menu" },
+          { step: "Review the \"Instructions\" section for additional EPAR guidance" },
+          { step: "Type the request into the \"Notes\" section" },
+          {
+            step: "Click the \"Save and Attach Files (if applicable)\" button",
+            details: [
+              "Required only for EPAR subjects that require supporting documentation",
+              "If no attachments are required, you may skip uploading any",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Final Review and Submission",
+        steps: [
+          {
+            step: "Navigate to the \"My EPARs\" grid",
+            details: ["Here, you can view your \"History\" within the MOL System"],
+          },
+          { step: "Click \"Submit\" to send to your Chain of Command" },
+        ],
+      },
+      {
+        title: "What Happens After Submission",
+        steps: [
+          { step: "Your EPAR will route through your chain of command for review" },
+          { step: "Unit leaders can approve, disapprove, or return the request" },
+          { step: "You can track the status of your EPAR in the \"My EPARs\" grid" },
+        ],
+      },
+    ],
   },
   "mol-family-care-plan": {
     title: "Family Care Plan",
