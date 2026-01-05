@@ -82,6 +82,7 @@ import { MedicalRecordsContent } from "../../../../../components/MedicalRecordsC
 import { Page11EntriesContent } from "../../../../../components/Page11EntriesContent";
 import { TrainingJacketsContent } from "../../../../../components/TrainingJacketsContent";
 import { MOLContent } from "../../../../../components/MOLContent";
+import MOLFunctionalModuleContent from "../../../../../components/MOLFunctionalModuleContent";
 import { PromotionDocumentationContent } from "../../../../../components/PromotionDocumentationContent";
 import { JEPESContent } from "../../../../../components/JEPESContent";
 import { CuttingScoreVerificationContent } from "../../../../../components/CuttingScoreVerificationContent";
@@ -2648,6 +2649,150 @@ const MOL_DATA = {
   ],
 };
 
+// MOL Functional Module Descriptions (Battalion Organization Permissions V2.0 - May 2023)
+const MOL_FUNCTIONAL_MODULES = {
+  "mol-awards-module": {
+    title: "Awards Module",
+    description: "Provides authorized command representatives the ability to recommend or approve personnel for the Marine Corps Good Conduct Medal (MCGCM) and Selected Marine Corps Reserve Medal (SMCRM). Upon approval, the respective certificate is generated for hard-copy print as well as the corresponding transactions for reporting to the MCTFS.",
+    capabilities: ["Recommend personnel for MCGCM/SMCRM", "Approve award recommendations", "Generate award certificates for printing", "Report transactions to MCTFS"],
+    userTypes: ["Command Representatives", "Unit Leaders"],
+  },
+  "mol-basic-orders-system": {
+    title: "Basic Orders System (BOS)",
+    description: "Provides individual members and authorized unit leaders the ability to view Permanent Change of Assignment (PCA) and Permanent Change of Station (PCS) Basic Orders.",
+    capabilities: ["View PCA orders", "View PCS orders", "Access for individual members", "Access for unit leaders"],
+    userTypes: ["Individual Members", "Unit Leaders"],
+  },
+  "mol-bic-assignment": {
+    title: "BIC Assignment",
+    description: "Provides authorized command representatives the ability to manage Billet Identification Code (BIC) assignments for Active Duty (AD) and Fleet Assistance Program (FAP) personnel for reporting to the MCTFS. BIC assignments for Reserve Component (RC) personnel may be viewed but reporting has been delegated to an external system.",
+    capabilities: ["Manage BIC assignments for AD personnel", "Manage BIC assignments for FAP personnel", "View RC BIC assignments (reporting delegated externally)", "Report to MCTFS"],
+    userTypes: ["Command Representatives"],
+  },
+  "mol-commanders-messaging": {
+    title: "Commanders Messaging",
+    description: "Provides authorized command representatives the ability to disseminate messages to subordinate unit personnel. Messages are displayed on the MOL home page for 1-5 days at the author's discretion. This capability is available at the battalion unit level by default all the way up to CMC/HQMC level organizations.",
+    capabilities: ["Create command messages", "Disseminate to subordinate personnel", "Display on MOL home page for 1-5 days", "Available battalion level through CMC/HQMC"],
+    userTypes: ["Command Representatives", "Commanders"],
+  },
+  "mol-epar": {
+    title: "Electronic Personnel Administrative Request (EPAR)",
+    description: "Provides individual members and authorized unit leaders the ability to submit and route administrative requests through the chain of command.",
+    capabilities: ["Submit administrative requests", "Route requests through chain of command", "Track request status", "Approve/disapprove requests"],
+    userTypes: ["Individual Members", "Unit Leaders"],
+  },
+  "mol-family-care-plan": {
+    title: "Family Care Plan",
+    description: "Provides members and authorized unit leaders the ability to manage caregiver designations for member dependents. Members may create/update their caregiver designations and submit to a unit representative (Validating Official) for review. Upon acceptance by the Validating Official, changes to caregiver designations trigger transactional updates to the MCTFS. Unit leaders are provided dashboard functionality to see what is pending their action, what has been sent back to the member, and who will need an update within the next 30 days or is already delinquent.",
+    capabilities: ["Create/update caregiver designations", "Submit for validation", "Dashboard for pending actions", "Track 30-day update requirements", "Report to MCTFS"],
+    userTypes: ["Individual Members", "Unit Leaders", "Validating Officials"],
+  },
+  "mol-family-readiness": {
+    title: "Family Readiness",
+    description: "Provides members and authorized unit leaders the ability to manage contact information for the purposes of the unit Family Readiness program. Designated Family Readiness Officers (FRO) may generate email correspondence to member contacts directly through the application for the purpose of disseminating information on organizational news, events, or unit deployment updates.",
+    capabilities: ["Manage family contact information", "Generate email correspondence", "Disseminate organizational news", "Share event information", "Provide deployment updates"],
+    userTypes: ["Individual Members", "Unit Leaders", "Family Readiness Officers (FRO)"],
+  },
+  "mol-inbound-interview": {
+    title: "Inbound Interview (IBI)",
+    description: "Provides members and authorized unit leaders the ability to onboard incoming personnel. Through this workflow, transactional updates to the MCTFS are generated to include the join of the member to the command, Billet Identification Code (BIC), and Co/Plt/WS assignment.",
+    capabilities: ["Onboard incoming personnel", "Generate join transaction to command", "Assign BIC", "Assign Co/Plt/WS", "Report to MCTFS"],
+    userTypes: ["Individual Members", "Unit Leaders"],
+  },
+  "mol-jepes-module": {
+    title: "Junior Enlisted Performance Evaluation System (JEPES)",
+    description: "Provides members and authorized unit leaders the means by which Marines in the grades Private through Corporal are evaluated for promotion and retention. The Marine Reported On (MRO) is evaluated by their reporting chain through the assignment of Command Input Marks in the areas of Individual Character, MOS and/or Mission Accomplishment, and Leadership. Final Command Input Marks and changes to promotion recommendation status for each reporting occasion are recorded in the MCTFS upon approval by the Commanding Officer.",
+    capabilities: ["Evaluate Pvt-Cpl Marines", "Assign Command Input Marks", "Evaluate Individual Character", "Evaluate MOS/Mission Accomplishment", "Evaluate Leadership", "Update promotion recommendations", "Report to MCTFS"],
+    userTypes: ["Individual Members", "Unit Leaders", "Commanding Officers"],
+  },
+  "mol-travel-voucher": {
+    title: "Travel Voucher (TVI/FTV)",
+    description: "Provides individual members the ability to submit a travel claim directly to the disbursing office for settlement upon separation from service.",
+    capabilities: ["Submit travel claims", "Direct submission to disbursing", "Settlement upon separation"],
+    userTypes: ["Individual Members"],
+  },
+  "mol-leave-liberty-module": {
+    title: "Leave/Liberty Module",
+    description: "Provides authorized members and unit leaders the ability to route and execute absence requests generating transactional updates to the MCTFS. Check-out/in actions are immediately applied to the member's duty status within the Unit Management Status Report (UMSR). Marine members who have lost leave in the previous Fiscal Year may have all or a portion of their leave balance restored as Special Leave Accrual (SLA).",
+    capabilities: ["Route absence requests", "Execute leave/liberty requests", "Immediate UMSR duty status updates", "Special Leave Accrual (SLA) restoration", "Report to MCTFS"],
+    userTypes: ["Individual Members", "Unit Leaders"],
+  },
+  "mol-ompf-module": {
+    title: "Official Military Personnel File (OMPF)",
+    description: "Provides individual members access to view their own electronic Official Military Personnel File (OMPF), Master Brief Sheets (MBS), and RS/RO Profiles. Digital report content is managed by MMRP-20 and replicated locally to the MCEITS hosting facility. Authorized unit leaders may access OMPF report content on members assigned within their scope. Additionally, global viewer access permissions exist for administrative personnel.",
+    capabilities: ["View electronic OMPF", "View Master Brief Sheets (MBS)", "View RS/RO Profiles", "Unit leaders access subordinate records", "Global viewer access for admin personnel"],
+    userTypes: ["Individual Members", "Unit Leaders", "Administrative Personnel"],
+  },
+  "mol-organization-management": {
+    title: "Organization Management",
+    description: "Provides authorized functional managers and unit leaders the ability to manage organizations and hierarchical associations. Organizational information is the backbone of all permissions assignment, routing, and workflows throughout the suite of MOL services.",
+    capabilities: ["Manage organizations", "Manage hierarchical associations", "Support permissions assignment", "Support routing workflows"],
+    userTypes: ["Functional Managers", "Unit Leaders"],
+  },
+  "mol-outbound-interview": {
+    title: "Outbound Interview",
+    description: "Provides individual members and authorized unit leaders the ability to input Permanent Change of Assignment (PCA), Permanent Change of Station (PCS), and Separations (SEPS) related travel plans for authorization of travel entitlements and advances.",
+    capabilities: ["Input PCA travel plans", "Input PCS travel plans", "Input separation travel plans", "Authorize travel entitlements", "Process travel advances"],
+    userTypes: ["Individual Members", "Unit Leaders"],
+  },
+  "mol-permissions-management": {
+    title: "Permissions Management",
+    description: "Provides authorized unit leaders and functional managers the ability to manage application roles and permissions within the delegated organizational scope.",
+    capabilities: ["Manage application roles", "Assign permissions", "Scope to organizational hierarchy", "Delegate access"],
+    userTypes: ["Unit Leaders", "Functional Managers"],
+  },
+  "mol-personal-information": {
+    title: "Personal Information (PI)",
+    description: "Provides individual members access to view their own personnel records as recorded within the MCTFS or interfacing application. Self-Certified transactional reporting capabilities are provided to users for select data elements not requiring two-factor review. Reports are generated using a combination of local database queries (MED) and service calls directly to the MCTFS (SOA APIs).",
+    capabilities: ["View personnel records", "Self-certified transactions", "Access electronic records (ARCR, ACIP, BIR, BTR, etc.)", "Update contact information", "Manage emergency data", "View W2 statements"],
+    userTypes: ["Individual Members"],
+    electronicRecords: ["Annual Retirement Credit Report (ARCR)", "Aviation Career Incentive Pay (ACIP)", "Awards", "Basic Individual Record (BIR)", "Basic Training Record (BTR)", "BRS/TSP", "Civilian Employment Information (CEI)", "Chronological Record (CHRO)", "Education", "Family Care Plan (FCP)", "Individual Medical Readiness (IMR)", "Pay and Leave Summary", "Pers-Tempo", "Personal Statement of Military Compensation (PSMC)", "Record of Emergency Data (RED)", "Reserve Drill Summary", "Record of Service (ROS)", "W2 Tax Statements"],
+    selfCertifiedTransactions: ["Blended Retirement Opt-In/Out", "Acknowledgements", "Career Designation (Officer)", "Career Retirement Certification", "Civilian Employment Information", "Contact Information", "Foreign Travel", "Gas Mask and Helmet", "Race/Ethnic", "Religion", "Self-professed Language Skills", "RED Certification", "W2/W2C Electronic Delivery"],
+  },
+  "mol-personnel-accountability": {
+    title: "Personnel Accountability",
+    description: "Provides individual members the ability to self-report accountability status/location/contact information for themselves and family members. Additionally provides authorized unit leaders the ability to report on behalf-of command personnel and view summary status reports. Reporting activity is conducted in real-time with cyclic transactional updates to the MCTFS and DoD PARS.",
+    capabilities: ["Self-report accountability status", "Report location information", "Report contact information", "Report for family members", "Unit leaders report on behalf of personnel", "View summary status reports", "Real-time reporting to DoD PARS"],
+    userTypes: ["Individual Members", "Unit Leaders"],
+  },
+  "mol-promotion-recs": {
+    title: "Promotion Recs",
+    description: "Provides authorized unit leaders the ability to make monthly/quarterly promotion recommendations for Marines (Private - Corporal) within their organizational scope. Final Rec/Non-Rec recommendations generate transactional updates to the MCTFS upon approval by the Commanding Officer. If a Marine is selected for promotion through the automated MCTFS promotion selection process, the Commanding Officer may choose to remove the selection status from the MCTFS through this module. Additionally, unit administrative personnel may generate Promotion Warrants in PDF format for Marines selected for promotion.",
+    capabilities: ["Monthly/quarterly promotion recommendations", "Rec/Non-Rec submissions", "Remove promotion selection status", "Generate Promotion Warrants (PDF)", "Report to MCTFS"],
+    userTypes: ["Unit Leaders", "Commanding Officers", "Administrative Personnel"],
+  },
+  "mol-trouble-ticket-system": {
+    title: "Trouble Ticket System (TTS)",
+    description: "Provides individual members and authorized unit leaders the ability to submit system issues to their jurisdictional Manpower Information System Support Office (MISSO). Tickets can be initiated by the member or unit leader within MOL. Tickets can be initiated by Installation Personnel Admin Centers or stand-alone Reporting Units through the Unit Diary / Marine Integrated Personnel Service (UD/MIPS).",
+    capabilities: ["Submit system issues", "Route to jurisdictional MISSO", "Initiate from MOL", "Initiate from UD/MIPS", "Track ticket status"],
+    userTypes: ["Individual Members", "Unit Leaders", "IPACs", "Reporting Units"],
+  },
+  "mol-umsr": {
+    title: "Unit Management Status Report (UMSR)",
+    description: "Provides authorized unit leaders the ability to execute daily muster of personnel (morning report) including gains/losses, duty status changes, and discrepancy reports. Summary and Detail personnel reports are available at the battalion unit level as well as roll-up to higher-headquarter organizations. Organizational changes to the Company, Platoon, and/or Work Station assignment trigger transactional updates to the MCTFS. Drop (loss) actions on Non-Marines additionally generate transactional updates on the member resulting in the separation being recorded within the MCTFS. Business processes are implemented to ensure changes to a member's unit assignment are pushed to other applications that may be impacted such as Leave & Liberty, Permissions Management, and JEPES. Nightly reconciliation occurs to ensure that UMSR organizational associations are in sync with MCTFS external reporting activities.",
+    capabilities: ["Daily muster (morning report)", "Track gains/losses", "Duty status changes", "Discrepancy reports", "Summary and detail reports", "Roll-up to higher HQ", "Co/Plt/WS assignment changes", "Non-Marine separation processing", "Nightly MCTFS reconciliation"],
+    userTypes: ["Unit Leaders"],
+  },
+  "mol-unit-reports-cognos": {
+    title: "Unit Reports (Cognos)",
+    description: "Provides authorized users ad hoc and canned reporting capabilities on enterprise pay and personnel records, and application data.",
+    capabilities: ["Ad hoc reporting", "Canned reports", "Pay records reporting", "Personnel records reporting", "Application data reporting"],
+    userTypes: ["Authorized Users", "Unit Leaders", "Administrative Personnel"],
+  },
+  "mol-user-management": {
+    title: "User Management",
+    description: "Provides authorized command representatives the ability to manage user accounts within their organizational scope. Additionally, transaction reporting capability exists for establishing and maintaining Non-Marine records within the MCTFS.",
+    capabilities: ["Manage user accounts", "Scope to organization", "Establish Non-Marine records", "Maintain Non-Marine records", "Report to MCTFS"],
+    userTypes: ["Command Representatives"],
+  },
+  "mol-view-reports": {
+    title: "View Reports",
+    description: "Provides authorized command representatives the ability to view individual member personnel records as recorded within the MCTFS. (See Personal Information module for full details)",
+    capabilities: ["View member personnel records", "Access MCTFS data", "Scoped to organizational hierarchy"],
+    userTypes: ["Command Representatives"],
+  },
+};
+
 // ============================================
 // LEADERS - ACCOUNTABILITY & DISCIPLINE
 // ============================================
@@ -5005,6 +5150,30 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "getting-out": <GettingOutEASContent data={GETTING_OUT_EAS_DATA} />,
     "having-a-baby": <HavingABabyContent data={HAVING_A_BABY_DATA} />,
     "pcs-move": <PCSMoveContent data={PCS_MOVE_DATA} />,
+    // Marine Online - Functional Modules
+    "mol-awards-module": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-awards-module"]} references={MOL_DATA.references} />,
+    "mol-basic-orders-system": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-basic-orders-system"]} references={MOL_DATA.references} />,
+    "mol-bic-assignment": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-bic-assignment"]} references={MOL_DATA.references} />,
+    "mol-commanders-messaging": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-commanders-messaging"]} references={MOL_DATA.references} />,
+    "mol-epar": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-epar"]} references={MOL_DATA.references} />,
+    "mol-family-care-plan": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-family-care-plan"]} references={MOL_DATA.references} />,
+    "mol-family-readiness": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-family-readiness"]} references={MOL_DATA.references} />,
+    "mol-inbound-interview": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-inbound-interview"]} references={MOL_DATA.references} />,
+    "mol-jepes-module": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-jepes-module"]} references={MOL_DATA.references} />,
+    "mol-travel-voucher": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-travel-voucher"]} references={MOL_DATA.references} />,
+    "mol-leave-liberty-module": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-leave-liberty-module"]} references={MOL_DATA.references} />,
+    "mol-ompf-module": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-ompf-module"]} references={MOL_DATA.references} />,
+    "mol-organization-management": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-organization-management"]} references={MOL_DATA.references} />,
+    "mol-outbound-interview": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-outbound-interview"]} references={MOL_DATA.references} />,
+    "mol-permissions-management": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-permissions-management"]} references={MOL_DATA.references} />,
+    "mol-personal-information": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-personal-information"]} references={MOL_DATA.references} />,
+    "mol-personnel-accountability": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-personnel-accountability"]} references={MOL_DATA.references} />,
+    "mol-promotion-recs": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-promotion-recs"]} references={MOL_DATA.references} />,
+    "mol-trouble-ticket-system": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-trouble-ticket-system"]} references={MOL_DATA.references} />,
+    "mol-umsr": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-umsr"]} references={MOL_DATA.references} />,
+    "mol-unit-reports-cognos": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-unit-reports-cognos"]} references={MOL_DATA.references} />,
+    "mol-user-management": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-user-management"]} references={MOL_DATA.references} />,
+    "mol-view-reports": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-view-reports"]} references={MOL_DATA.references} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -5292,6 +5461,30 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "mol-sgli-updates",
     "mol-dependency-updates",
     "mol-address-changes",
+    // Functional Modules
+    "mol-awards-module",
+    "mol-basic-orders-system",
+    "mol-bic-assignment",
+    "mol-commanders-messaging",
+    "mol-epar",
+    "mol-family-care-plan",
+    "mol-family-readiness",
+    "mol-inbound-interview",
+    "mol-jepes-module",
+    "mol-travel-voucher",
+    "mol-leave-liberty-module",
+    "mol-ompf-module",
+    "mol-organization-management",
+    "mol-outbound-interview",
+    "mol-permissions-management",
+    "mol-personal-information",
+    "mol-personnel-accountability",
+    "mol-promotion-recs",
+    "mol-trouble-ticket-system",
+    "mol-umsr",
+    "mol-unit-reports-cognos",
+    "mol-user-management",
+    "mol-view-reports",
   ];
 
   // ============================================
