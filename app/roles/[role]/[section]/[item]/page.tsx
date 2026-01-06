@@ -3646,7 +3646,7 @@ const MOL_FUNCTIONAL_MODULES = {
         ],
       },
       {
-        title: "How to Update Your CEI",
+        title: "How to Update the Questionnaire",
         steps: [
           {
             step: "Step 1: Access the Page",
@@ -3656,32 +3656,53 @@ const MOL_FUNCTIONAL_MODULES = {
             ],
           },
           {
-            step: "Step 2: Enter Edit Mode",
+            step: "Step 2: Start the Update",
             details: [
-              "Click the 'Edit' button to open the questionnaire",
+              "Click the 'Edit' link to open the questionnaire, then click 'Continue'",
             ],
           },
           {
-            step: "Step 3: Fill in the Details",
+            step: "Step 3: Enter Employment Status",
             details: [
-              "Status: Select if you are Full-Time, Part-Time, a Student, or Unemployed",
-              "Employer Info: Enter the name and address of your company",
-              "Standard Occupational Classification (SOC): Use the search tool to find the job title that most closely matches what you do",
-              "First Responder: Check the box if you are a police officer, firefighter, or medical professional",
+              "Select your current status:",
+              "A: Full-Time",
+              "B: Part-Time",
+              "C: Voluntary Service",
+              "D: Student",
+              "E: Unemployed",
             ],
           },
           {
-            step: "Step 4: Save/Confirm",
+            step: "Step 4: Employer Details",
             details: [
-              "Click the 'Save' or 'Submit' button to record your changes",
+              "Enter the Name and Physical Address (not a PO Box)",
             ],
           },
           {
-            step: "Step 5: Print for Records",
+            step: "Step 5: Job Title & Date",
             details: [
-              "Click 'Printer-Friendly View' to get a clean printout",
-              "Many units require a physical printout to 'check out' for Annual Training (AT)",
-              "Click 'Close' to return to your Record of Service",
+              "Type your official position title and the date you started (Format: 01 JAN 2026)",
+            ],
+          },
+          {
+            step: "Step 6: Find Your SOC Code",
+            details: [
+              "Use the tree-view to find your Standard Occupational Classification (SOC)",
+              "Click the plus (+) signs to expand categories until you find the job that best matches your daily duties",
+            ],
+          },
+          {
+            step: "Step 7: Final Questions",
+            details: [
+              "Select Yes or No for: Self-employment status",
+              "First Responder status (Police, Fire, EMT)",
+              "Consent: Whether you allow Commanders to see this to help with billet/deployment selection",
+            ],
+          },
+          {
+            step: "Step 8: Submit",
+            details: [
+              "Click 'Submit', then click 'Confirm'",
             ],
           },
         ],
@@ -3690,31 +3711,38 @@ const MOL_FUNCTIONAL_MODULES = {
         title: "Common Pitfalls to Avoid",
         steps: [
           {
-            step: "Ignoring the Annual Requirement",
+            step: "The Orders Block",
             details: [
-              "Even if your job hasn't changed, you must log in and re-verify it every year during your anniversary month",
-              "Just because nothing changed doesn't mean you don't have to click 'Submit'",
-            ],
-          },
-          {
-            step: "Vague Job Titles",
-            details: [
-              "Don't just type 'Worker' or 'Employee'",
-              "Use the SOC search tool provided to find the official Department of Labor title for your role",
+              "If your CEI is expired, the MROWS system will physically block your S-1 from authenticating your orders for Annual Training (AT) or a mobilization",
+              "Don't wait until you need orders to update this",
             ],
           },
           {
             step: "Student Status",
             details: [
-              "If you are a full-time student, you still need to report this",
-              "List your university as your 'Employer'",
+              "If you are a full-time student, you are still required to report",
+              "Use your University as the employer and 'Student' as the position",
             ],
           },
           {
-            step: "Orders Blocked",
+            step: "Vague Titles",
             details: [
-              "If your CEI is red or expired, the MROWS system may prevent your S-1 from authenticating your orders for AT or drill",
-              "Don't wait until you need orders to update this",
+              "Avoid using generic titles like 'Staff' or 'Manager'",
+              "Use the SOC tree to find a specific match so your skills are searchable",
+            ],
+          },
+          {
+            step: "Address Errors",
+            details: [
+              "Ensure the Zip Code is the full 9 digits if possible",
+              "The system sends this data to the Defense Manpower Data Center (DMDC), and it must be accurate for mailing USERRA notices",
+            ],
+          },
+          {
+            step: "Annual Verification",
+            details: [
+              "You must update or verify this during your CRCR anniversary month",
+              "Even if nothing changed, you must still click Submit",
             ],
           },
         ],
@@ -3723,9 +3751,15 @@ const MOL_FUNCTIONAL_MODULES = {
         title: "What Happens After You Finish",
         steps: [
           {
-            step: "MCTFS Update",
+            step: "Data Transfer",
             details: [
-              "Your data is fed into the MCTFS database and shared with the Defense Manpower Data Center (DMDC)",
+              "Your info is sent to the DMDC archive, which catalogues the history of all personnel for healthcare and administrative needs",
+            ],
+          },
+          {
+            step: "CRCR Sync",
+            details: [
+              "Once submitted, your CEI status will show as 'Verified' on your Career Retirement Credit Report (CRCR)",
             ],
           },
           {
@@ -3735,10 +3769,9 @@ const MOL_FUNCTIONAL_MODULES = {
             ],
           },
           {
-            step: "Annual Audit",
+            step: "Annual Requirement",
             details: [
-              "Your command will likely verify this again during your Annual Administrative Screening",
-              "Keep your digital PDF copy handy to show your Platoon Sergeant if they ask for proof",
+              "Mark your calendar - you will need to 'Re-Certify' this information every year, even if your job hasn't changed",
             ],
           },
         ],
@@ -5356,131 +5389,409 @@ const MOL_FUNCTIONAL_MODULES = {
   },
   "mol-contact-info": {
     title: "Contact Information",
-    description: "The Contact Information transaction allows Marines to update their personal contact information including mailing address, phone numbers, and email addresses.",
-    capabilities: ["Update mailing address", "Update phone numbers", "Update email address", "Manage contact preferences"],
+    description: "Keeping your Personal Contact Information up to date is a mandatory part of being 'Green' in the Marine Corps. It is how your command finds you during a recall, how the system knows where to send your W-2, and how the Marine Corps accounts for you during a natural disaster or crisis.",
+    capabilities: ["Update mailing address", "Update phone numbers", "Update email address", "Manage contact preferences", "Update physical address", "Set APO/FPO/DPO address"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Contact Information",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Contact Information" },
-          { step: "Review your current contact information" },
-        ],
-      },
-      {
-        title: "Address Types",
+        title: "Why This Matters",
         steps: [
           {
-            step: "US Address Format",
+            step: "Safety & Accountability",
             details: [
-              "Street Address (up to 50 characters)",
-              "Apartment/Unit (optional)",
-              "City",
-              "State (two-letter abbreviation)",
-              "ZIP Code (5-digit or 9-digit)",
+              "If a hurricane, earthquake, or major incident hits, the Marine Corps uses your Physical Address to see who was in the affected area",
+              "If your address is old, the unit can't verify that you're safe",
             ],
           },
           {
-            step: "APO/FPO/DPO Format",
+            step: "Family Readiness",
             details: [
-              "Unit/Box Number",
-              "APO, FPO, or DPO designation",
-              "AA, AE, or AP region code",
-              "ZIP Code",
+              "Your unit's Family Readiness Officer (FRO) uses this data to keep your family in the loop",
             ],
           },
           {
-            step: "Foreign Address Format",
+            step: "Pay & Mail",
             details: [
-              "Address lines (multiple)",
-              "City",
-              "Country",
-              "Postal code (if applicable)",
+              "Your Mailing Address is where tax documents (W-2s) and other official correspondence are sent",
+              "If this is outdated, you could miss critical deadlines or have your PII sent to an old address",
             ],
           },
         ],
       },
       {
-        title: "Updating Phone Numbers",
+        title: "How to Update (U.S. Address)",
         steps: [
           {
-            step: "Phone Types",
+            step: "Step 1: Access the Page",
             details: [
-              "Primary Phone - Main contact number (required)",
-              "Secondary Phone - Backup contact number",
-              "Work Phone - Office or duty station number",
-              "Cell Phone - Mobile phone number",
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Personal Contact Information",
             ],
           },
-          { step: "Include area codes for all phone numbers" },
-          { step: "For overseas numbers, include country and city codes" },
+          {
+            step: "Step 2: Select U.S. Address Format",
+            details: [
+              "Click the 'U.S. Address' link if it isn't already the default",
+            ],
+          },
+          {
+            step: "Step 3: Update Mailing Address",
+            details: [
+              "Enter your street address",
+              "Type your five-digit Zip Code and click 'Lookup Zip' to auto-fill the City and State",
+            ],
+          },
+          {
+            step: "Step 4: Update Physical Address",
+            details: [
+              "Enter the street address of where you ACTUALLY live (Barracks, apartment, house)",
+              "Do NOT use a PO Box here",
+            ],
+          },
+          {
+            step: "Step 5: Phone & Email",
+            details: [
+              "Update your Home, Work, and Cell numbers",
+              "Ensure your Personal Email is one you check regularly (not just .mil)",
+            ],
+          },
+          {
+            step: "Step 6: Submit",
+            details: [
+              "Click 'Submit Changes', then click 'Apply Changes' to confirm",
+            ],
+          },
         ],
       },
       {
-        title: "Submitting Updates",
+        title: "How to Update (APO/FPO/DPO Address)",
         steps: [
-          { step: "Click 'Edit' to modify your contact information" },
-          { step: "Enter the effective date for the change" },
-          { step: "Complete all required fields" },
-          { step: "Click 'Submit Changes' to save" },
-          { step: "Updates are processed through MCTFS" },
+          {
+            step: "Step 1: Select Format",
+            details: [
+              "Click the 'APO/FPO/DPO address' link",
+            ],
+          },
+          {
+            step: "Step 2: Enter Mailing Details",
+            details: [
+              "In the PSC/Box or Unit/UIC box, enter your specific unit info",
+            ],
+          },
+          {
+            step: "Step 3: City/State",
+            details: [
+              "For City, select APO, FPO, or DPO",
+              "For State, select AA (Americas), AE (Europe/Africa), or AP (Pacific)",
+            ],
+          },
+          {
+            step: "Step 4: Physical Address",
+            details: [
+              "Even while deployed, enter your physical location (e.g., Camp Hansen, MCAS Iwakuni)",
+            ],
+          },
+          {
+            step: "Step 5: Submit",
+            details: [
+              "Click 'Submit Changes' and then 'Apply Changes'",
+            ],
+          },
+        ],
+      },
+      {
+        title: "How to Update (Foreign Address)",
+        steps: [
+          {
+            step: "Step 1: Select Format",
+            details: [
+              "Click the 'foreign address' link",
+            ],
+          },
+          {
+            step: "Step 2: Enter Details",
+            details: [
+              "Enter the Street, City, and Country",
+            ],
+          },
+          {
+            step: "Step 3: Phone Format",
+            details: [
+              "Click 'change format to a foreign phone number' to allow for international country codes",
+              "Use countrycallingcodes.com if you aren't sure of the code",
+            ],
+          },
+          {
+            step: "Step 4: Submit",
+            details: [
+              "Click 'Submit Changes' and then 'Apply Changes'",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Adding or Removing Info",
+        steps: [
+          {
+            step: "To Add/Edit",
+            details: [
+              "Click the 'Add' or 'Edit' link next to an address, email, or phone number",
+              "Enter the updated info - new info will appear in Bold type until MCTFS finishes processing",
+            ],
+          },
+          {
+            step: "To Remove Old Info",
+            details: [
+              "Click the 'Remove' link next to an old number or address",
+              "The item will turn Red with a strike-through",
+              "Click 'Apply Changes' to confirm (or 'Cancel Removal' if you change your mind)",
+            ],
+          },
+          {
+            step: "Check Pending Changes",
+            details: [
+              "If you see a 'Details' link at the top, click it to see what you submitted vs. what is currently in the master record",
+              "This is a great way to catch a typo before it sticks",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Physical vs. Mailing",
+            details: [
+              "Don't put your parent's house in the 'Physical Address' section if you live in the barracks",
+              "Your Physical Address must be where you actually sleep so you can be accounted for during a disaster",
+            ],
+          },
+          {
+            step: "BOLD Means PENDING",
+            details: [
+              "If you see bold text, don't keep editing it over and over",
+              "It just means the change hasn't hit the main database (MCTFS) yet - wait 24-48 hours",
+            ],
+          },
+          {
+            step: "The Email Requirement",
+            details: [
+              "Every Marine should have a valid personal email listed",
+              "If you only use your .mil account, you won't be able to access your records if you are on leave or if the network goes down",
+            ],
+          },
+          {
+            step: "PO Box Error",
+            details: [
+              "Never put a PO Box in the Physical Address field",
+              "The Marine Corps needs to know your actual location for emergency accountability",
+            ],
+          },
+          {
+            step: "Mailing vs. Home of Record",
+            details: [
+              "Updating your mailing address in MOL does NOT change your 'Home of Record' or 'State of Legal Residence' for taxes",
+              "Those must be changed via an EPAR or at your S-1",
+            ],
+          },
+          {
+            step: "Forgetting RED",
+            details: [
+              "Marines often update this page but forget to update their RED (Record of Emergency Data)",
+              "You must do BOTH to stay compliant",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What Happens After You Update",
+        steps: [
+          {
+            step: "MCTFS Processing",
+            details: [
+              "Your changes are sent to the Marine Corps Total Force System",
+              "It takes about 1 to 2 business days for the bold or red strike-through text to normalize",
+            ],
+          },
+          {
+            step: "Unit Recall Roster",
+            details: [
+              "Your new phone number will automatically feed into the unit's digital recall roster",
+            ],
+          },
+          {
+            step: "Verify on BIR",
+            details: [
+              "After 48 hours, check your Basic Individual Record (BIR) to ensure the changes are reflected",
+            ],
+          },
         ],
       },
     ],
   },
   "mol-foreign-travel": {
     title: "Foreign Travel",
-    description: "The Foreign Travel transaction allows Marines to record their personal foreign travel history. This information is used for security clearance purposes and personnel tracking.",
-    capabilities: ["Add foreign travel entries", "View travel history", "Edit travel records", "Support security clearance"],
+    description: "Your official log of time spent outside the United States. Whether you are going on a 96-hour liberty to Mexico or a 7-month deployment to Okinawa, this record must be accurate to ensure your security clearance and pay remain intact. Foreign travel is a 'reportable activity' under SEAD 3 for anyone with a security clearance.",
+    capabilities: ["Add foreign travel entries", "View travel history", "Edit travel records", "Support security clearance", "Track security compliance", "Document CZTE eligibility"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Foreign Travel",
+        title: "Why This Matters",
         steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Foreign Travel" },
-          { step: "View your recorded foreign travel history" },
-        ],
-      },
-      {
-        title: "Adding a Travel Entry",
-        steps: [
-          { step: "Click 'Add Foreign Travel' to create a new entry" },
           {
-            step: "Required Information",
+            step: "Security Clearance",
             details: [
-              "Country - Select from the dropdown list",
-              "Departure Date - When you left the US",
-              "Return Date - When you returned to the US",
-              "Purpose of Travel - Official duty, leave, emergency, personal, etc.",
+              "Gaps in your travel history can trigger a 'red flag' during your background reinvestigation",
+              "If you have a Secret or TS/SCI clearance, investigators WILL cross-reference your MOL travel history with your passport and flight records",
+              "Gaps or 'forgotten' trips can lead to your clearance being suspended",
             ],
           },
-          { step: "Add any additional notes or details if needed" },
-          { step: "Click 'Submit' to save the entry" },
-        ],
-      },
-      {
-        title: "Why Report Foreign Travel",
-        steps: [
           {
-            step: "Security Requirements",
+            step: "Medical Readiness",
             details: [
-              "Required for security clearance holders",
-              "Supports continuous evaluation programs",
-              "Documents travel for counterintelligence purposes",
-              "May be required before/after certain destinations",
+              "If you travel to an area with endemic diseases (like malaria), having this on your record helps Medical provide the right care if you get sick later",
+            ],
+          },
+          {
+            step: "Anti-Terrorism (AT)",
+            details: [
+              "The Marine Corps needs to know where you are to provide theater-specific threat briefings",
+              "Ensures you aren't traveling to restricted areas",
+            ],
+          },
+          {
+            step: "Pay & Benefits",
+            details: [
+              "This record cross-references with your PersTempo and Pay/Leave summaries",
+              "Ensures you receive the correct combat zone tax exclusions or family separation allowances",
+              "Serves as supporting evidence if you ever have to prove you were in a specific country for CZTE",
             ],
           },
         ],
       },
       {
-        title: "Travel Reporting Requirements",
+        title: "How to Add a New Entry",
         steps: [
-          { step: "Report all personal foreign travel" },
-          { step: "Official travel on orders may be reported separately" },
-          { step: "Some destinations require pre-travel approval" },
-          { step: "Contact your S-2/Security Manager for questions" },
+          {
+            step: "Step 1: Access the Page",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Foreign Travel",
+              "Click the 'Add Foreign Travel' link at the top",
+            ],
+          },
+          {
+            step: "Step 2: Select the Country",
+            details: [
+              "In the 'Country Visited' dropdown, select the destination",
+              "Note: If you visited multiple countries on one trip (like a cruise), enter each one as a separate entry",
+            ],
+          },
+          {
+            step: "Step 3: Choose the Purpose",
+            details: [
+              "Select the most accurate reason from the list (e.g., Annual Leave, Official Business/Orders, Liberty)",
+            ],
+          },
+          {
+            step: "Step 4: Enter the Dates",
+            details: [
+              "Click the Calendar button to select the Start Date (the day you left the U.S.)",
+              "Click the Calendar button to select the Stop Date (the day you returned to the U.S.)",
+              "Ensure your Stop Date is not before your Start Date",
+            ],
+          },
+          {
+            step: "Step 5: Submit and Confirm",
+            details: [
+              "Click 'Submit Changes'",
+              "A confirmation prompt will appear - click 'Apply Changes' to finalize",
+              "If you made a mistake, click 'Cancel' to start over",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "The Bold Delay",
+            details: [
+              "Don't panic if your new entry stays bold for a few days",
+              "It takes 24-48 hours for the system to finalize the entry",
+            ],
+          },
+          {
+            step: "Skipping the Brief",
+            details: [
+              "Simply adding travel to MOL does NOT count as 'reporting'",
+              "You still must receive a Terrorist Threat Brief from your S-2 and potentially submit an APACS (Aircraft and Personnel Automated Clearance System) request BEFORE you travel",
+            ],
+          },
+          {
+            step: "The One Entry Mistake",
+            details: [
+              "If you went on an 'Island Hopping' tour, don't just list one country",
+              "List every country you stepped foot in",
+            ],
+          },
+          {
+            step: "Cruise Ship Confusion",
+            details: [
+              "If you go on a cruise, you must list EVERY country where the ship docks, not just the departure port",
+            ],
+          },
+          {
+            step: "Ignoring Mexico/Canada",
+            details: [
+              "Many Marines think 'driving across the border' doesn't count - it does",
+              "Any time you leave the U.S., it must be in this report",
+            ],
+          },
+          {
+            step: "MOL vs. APACS",
+            details: [
+              "Adding travel to MOL after the fact is for your record",
+              "You are still required to submit an APACS or IATP request through your S-2 BEFORE you leave",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do After Submitting",
+        steps: [
+          {
+            step: "Verification",
+            details: [
+              "Check back in 48 hours - once the text is no longer bold, the entry has successfully posted to MCTFS",
+            ],
+          },
+          {
+            step: "S-2 Check-in",
+            details: [
+              "If this was high-threat travel or you have a high-level clearance, tell your S-2 it's in MOL so they can update your security file",
+            ],
+          },
+          {
+            step: "Post-Travel Debrief",
+            details: [
+              "In some cases, you may be required to complete a post-travel questionnaire in MOL or with your S-2",
+              "Report any 'suspicious foreign contacts' you encountered",
+            ],
+          },
+          {
+            step: "Passport Check",
+            details: [
+              "If you used your Official (No-Fee) Passport, ensure you returned it to the S-1/Logistics office now that your travel is complete",
+            ],
+          },
+          {
+            step: "Verify History",
+            details: [
+              "Review the existing list to ensure past deployments or vacations are correctly logged",
+              "If a country is missing, add it now",
+            ],
+          },
         ],
       },
     ],
