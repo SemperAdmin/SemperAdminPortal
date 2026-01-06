@@ -19,6 +19,7 @@ type ModuleData = {
   electronicRecords?: string[];
   selfCertifiedTransactions?: string[];
   guide?: GuideSection[];
+  useCases?: string[];
 };
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
@@ -249,6 +250,26 @@ export default function FunctionalModulesPage({
                           </ol>
                         </div>
                       ))}
+                    </div>
+                  )}
+
+                  {selectedModuleData.useCases && selectedModuleData.useCases.length > 0 && (
+                    <div>
+                      <h4 className="flex items-center gap-2 text-sm font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
+                          <path d="M9 11l3 3L22 4" />
+                          <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                        </svg>
+                        When to Use This Module
+                      </h4>
+                      <ul className="mt-2 space-y-1">
+                        {selectedModuleData.useCases.map((useCase, idx) => (
+                          <li key={idx} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                            <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-gold)]"></span>
+                            {useCase}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   )}
                 </div>

@@ -2726,6 +2726,12 @@ const MOL_FUNCTIONAL_MODULES = {
         ],
       },
     ],
+    useCases: [
+      "Personnel Actions: Submitting requests related to your personal career and record",
+      "Contract Changes: Re-enlistments, Extensions, or changes to your End of Current Contract (ECC) date",
+      "Pay and Benefits: Actions regarding Bonuses, Survivor Benefit Program (SBP), or Career Status Bonuses (CSB)",
+      "Record Corrections: Requesting updates or corrections to existing information in your personnel record",
+    ],
   },
   "mol-family-care-plan": {
     title: "Family Care Plan",
@@ -2870,6 +2876,12 @@ const MOL_FUNCTIONAL_MODULES = {
           { step: "Command personnel will determine the necessary action and route to MISSO if needed" },
         ],
       },
+    ],
+    useCases: [
+      "Technical Issues: Problems with specific MOL modules (Awards, Leave/Absence, EPAR, etc.)",
+      "System Errors: Application or system-level issues within MOL, COGNOS, or MCTFS",
+      "Access Requests: Requesting specific permissions or access levels through your chain of command",
+      "Administrative Appointments: Actions like Assumption of Command or new Commanding Officer appointments",
     ],
   },
   "mol-umsr": {
