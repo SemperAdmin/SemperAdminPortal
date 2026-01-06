@@ -1,5 +1,15 @@
 "use client";
 
+type GuideStep = {
+  step: string;
+  details?: string[];
+};
+
+type GuideSection = {
+  title: string;
+  steps: GuideStep[];
+};
+
 type ModuleData = {
   title: string;
   description: string;
@@ -7,6 +17,7 @@ type ModuleData = {
   userTypes: string[];
   electronicRecords?: string[];
   selfCertifiedTransactions?: string[];
+  guide?: GuideSection[];
 };
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
@@ -101,6 +112,35 @@ export default function MOLFunctionalModuleContent({ data, references }: { data:
             </div>
           </section>
         )}
+
+        {data.guide && data.guide.length > 0 && data.guide.map((section, sectionIdx) => (
+          <section key={sectionIdx} className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
+            <h3 className="flex items-center gap-2 text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+              </svg>
+              {section.title}
+            </h3>
+            <div className="mt-4 space-y-4">
+              {section.steps.map((step, stepIdx) => (
+                <div key={stepIdx} className="rounded-lg border border-black/5 bg-[var(--sa-cream)]/40 p-4 dark:border-white/10 dark:bg-white/5">
+                  <h4 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{step.step}</h4>
+                  {step.details && step.details.length > 0 && (
+                    <ul className="mt-2 space-y-1">
+                      {step.details.map((detail, detailIdx) => (
+                        <li key={detailIdx} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                          <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--sa-red)]" />
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+            </div>
+          </section>
+        ))}
       </div>
 
       <aside className="space-y-6 lg:mt-0">

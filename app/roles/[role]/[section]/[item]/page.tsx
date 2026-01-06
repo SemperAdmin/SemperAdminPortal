@@ -6198,6 +6198,133 @@ const MOL_FUNCTIONAL_MODULES = {
       },
     ],
   },
+  "mol-slate": {
+    title: "Slate Report",
+    description: "Your window into the future of your unit and your MOS. It allows you to see the 'movement' of your peers and helps you predict when you—or the person in the billet you want—might be rotating to a new duty station. Knowing your Estimated Rotation Date (ERD) is critical for life planning: weddings, buying a house, or timing your next school.",
+    capabilities: ["View ERD dates", "Research MOS rotations", "Plan career moves", "Check peer rotations", "Monitor billet openings", "Update duty preferences"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Why This Matters",
+        steps: [
+          {
+            step: "Life Planning",
+            details: [
+              "Whether you are planning a wedding, looking to buy a house, or trying to time your next school, the Slate Report tells you when the Marine Corps expects you to move",
+              "Your ERD is the starting point for all major life decisions",
+            ],
+          },
+          {
+            step: "Career Opportunities",
+            details: [
+              "It allows you to see the 'gaps' in your MOS",
+              "If you see that 50% of the Sergeants in your MOS are rotating out in June, you know there's a high chance for promotion or a prime billet opening up",
+            ],
+          },
+        ],
+      },
+      {
+        title: "How to View Rotation Dates",
+        steps: [
+          {
+            step: "Step 1: Access the Report",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Slate Report",
+            ],
+          },
+          {
+            step: "Step 2: Verify the Defaults",
+            details: [
+              "By default, the page displays your current Rank and MOS",
+            ],
+          },
+          {
+            step: "Step 3: Change the Criteria",
+            details: [
+              "To research a different MOS (perhaps for a LatMove) or a different Rank, type the four-digit MOS in the MOS box",
+              "Select a different Rank from the dropdown menu",
+              "Click the 'Go' button to refresh the list",
+            ],
+          },
+          {
+            step: "Step 4: Analyze the Data",
+            details: [
+              "Look for the ERD (Estimated Rotation Date) column - this is the 'best guess' date for when a Marine is scheduled to leave their current station",
+              "Sort the List: Click any column heading (like 'Name' or 'ERD') to sort. Click it again to reverse the order",
+              "This helps you see who is leaving the earliest",
+            ],
+          },
+          {
+            step: "Step 5: Print/Save",
+            details: [
+              "Click 'Printer-Friendly View'",
+              "Click 'Print' (Save as PDF)",
+              "Click 'Close' to return to the Slate Report page",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "The 'Estimated' Part",
+            details: [
+              "The 'E' in ERD stands for Estimated - it is not a guarantee",
+              "Orders can be extended or cut short based on the 'Needs of the Marine Corps'",
+            ],
+          },
+          {
+            step: "Confusing ERD with EAS",
+            details: [
+              "Your ERD is when you move to a new unit",
+              "Your EAS (End of Active Service) is when you leave the Marine Corps",
+              "These are often different dates",
+            ],
+          },
+          {
+            step: "MOL vs. Web Orders",
+            details: [
+              "Just because a date changes in the Slate Report doesn't mean you have orders yet",
+              "Official moves are only confirmed when you see Web Orders in the 'Orders' section of MOL",
+            ],
+          },
+          {
+            step: "Glossary Check",
+            details: [
+              "If you don't understand an abbreviation (like MCC or RUC), scroll to the Glossary at the bottom of the Slate Report page for definitions",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do After Review",
+        steps: [
+          {
+            step: "Monitor the Monitor",
+            details: [
+              "If your ERD is within the next 6-9 months, start checking your Web Orders daily",
+              "Talk to your Career Planner or Monitor about your preferences",
+            ],
+          },
+          {
+            step: "Update Your Preferences",
+            details: [
+              "Now that you know your rotation window, go to the Standard Letter section in MOL to update your 'Duty Station Preferences'",
+              "This ensures the Monitor knows where you want to go",
+            ],
+          },
+          {
+            step: "Plan Your Move",
+            details: [
+              "Use the ERD as a baseline to start researching your next potential duty station's housing and school options",
+            ],
+          },
+        ],
+      },
+    ],
+  },
   "mol-w2": {
     title: "W2 Tax Statements",
     description: "The official record of your earnings and the taxes withheld by the government, which you need to file your taxes every year. Your W-2 is the 'source of truth' for the IRS. If you don't download it, you can't file your taxes, which can lead to late fees or missed refunds.",
@@ -12024,6 +12151,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "mol-ros": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-ros"]} references={MOL_DATA.references} />,
     "mol-cultural-info": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-cultural-info"]} references={MOL_DATA.references} />,
     "mol-rank-mos": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-rank-mos"]} references={MOL_DATA.references} />,
+    "mol-slate": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-slate"]} references={MOL_DATA.references} />,
     "mol-w2": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-w2"]} references={MOL_DATA.references} />,
     // Marine Online - Personal Updates
     "mol-personal-information": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-personal-information"]} references={MOL_DATA.references} />,
