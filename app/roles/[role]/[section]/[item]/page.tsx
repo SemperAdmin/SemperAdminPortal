@@ -2793,6 +2793,1007 @@ const MOL_FUNCTIONAL_MODULES = {
     capabilities: ["Manage application roles", "Assign permissions", "Scope to organizational hierarchy", "Delegate access"],
     userTypes: ["Unit Leaders", "Functional Managers"],
   },
+  // ============================================
+  // MOL ELECTRONIC RECORDS - Individual Pages
+  // ============================================
+  "mol-arcr": {
+    title: "Annual Retirement Credit Report (ARCR)",
+    description: "The Annual Retirement Credit Report provides reserve Marines with a detailed summary of retirement credit points earned during each anniversary year. This report is essential for tracking progress toward reserve retirement eligibility.",
+    capabilities: ["View retirement points by anniversary year", "Track active duty and inactive duty points", "Monitor progress toward 20-year retirement", "Print report for records"],
+    userTypes: ["Reserve Marines", "Individual Reserve Component Members"],
+    guide: [
+      {
+        title: "Accessing Your ARCR",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Annual Retirement Credit Report" },
+          { step: "The report displays your retirement point summary by anniversary year" },
+        ],
+      },
+      {
+        title: "Understanding the Report",
+        steps: [
+          {
+            step: "Point Categories",
+            details: [
+              "Active Duty Points - Points earned during active duty periods",
+              "Inactive Duty Points - Points from drills, correspondence courses, and other inactive duty training",
+              "Membership Points - 15 points per year for maintaining satisfactory participation",
+              "Total Points - Sum of all categories for the anniversary year",
+            ],
+          },
+          {
+            step: "Anniversary Year",
+            details: [
+              "Your anniversary year runs from your PEBD (Pay Entry Base Date)",
+              "Each year requires minimum 50 points for a 'good year' toward retirement",
+              "20 qualifying years required for reserve retirement eligibility",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Printing Your ARCR",
+        steps: [
+          { step: "Click 'Printer Friendly View' to open a printable version" },
+          { step: "Use your browser's print function or click 'Print'" },
+          { step: "Keep printed copies for your personal records" },
+        ],
+      },
+    ],
+  },
+  "mol-acip": {
+    title: "Aviation Career Incentive Pay (ACIP)",
+    description: "The Aviation Career Incentive Pay report displays flight pay eligibility, aviation bonus status, and career aviation incentive pay information for qualified aviators.",
+    capabilities: ["View ACIP eligibility status", "Check aviation bonus information", "Monitor flight pay gates", "Track operational flying duty credit"],
+    userTypes: ["Naval Aviators", "Naval Flight Officers", "Aviation Personnel"],
+    guide: [
+      {
+        title: "Accessing ACIP Information",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Aviation Career Incentive Pay" },
+          { step: "Review your current ACIP status and eligibility" },
+        ],
+      },
+      {
+        title: "Understanding ACIP",
+        steps: [
+          {
+            step: "ACIP Gates",
+            details: [
+              "Gate 1: 2 years of aviation service",
+              "Gate 2: 6 years of aviation service",
+              "Gate 3: 10 years of aviation service",
+              "Gate 4: 14 years of aviation service",
+              "Gate 5: 22 years of aviation service",
+            ],
+          },
+          {
+            step: "Monthly Rates",
+            details: [
+              "Rates vary based on years of aviation service",
+              "Maximum rate achieved after 14 years",
+              "Continuous entitlement requires operational flying duty",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Aviation Bonus (AvB)",
+        steps: [
+          {
+            step: "Bonus Eligibility",
+            details: [
+              "Available to rated officers meeting specific criteria",
+              "Requires active duty service commitment",
+              "Contact your aviation personnel office for current bonus offerings",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-awards": {
+    title: "Awards",
+    description: "The Awards report displays all decorations, medals, campaign ribbons, and unit awards recorded in your personnel file. You can view summary or detailed lists of your awards.",
+    capabilities: ["View personal decorations", "View service medals", "View campaign ribbons", "View unit awards", "Print awards summary"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Your Awards",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Awards" },
+          { step: "Select 'Summary View' or 'Full List' to display your awards" },
+        ],
+      },
+      {
+        title: "Award Categories",
+        steps: [
+          {
+            step: "Personal Decorations",
+            details: [
+              "Medals awarded for individual achievement or heroism",
+              "Examples: Navy Cross, Bronze Star, Navy Achievement Medal",
+              "Listed in order of precedence",
+            ],
+          },
+          {
+            step: "Unit Awards",
+            details: [
+              "Awards earned by units you served with",
+              "Examples: Presidential Unit Citation, Navy Unit Commendation",
+              "Displayed with dates of eligibility",
+            ],
+          },
+          {
+            step: "Service and Campaign Medals",
+            details: [
+              "National Defense Service Medal",
+              "Campaign medals for specific operations",
+              "Sea Service Deployment Ribbons",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Correcting Award Errors",
+        steps: [
+          { step: "If awards are missing or incorrect, submit an EPAR through MOL" },
+          { step: "Provide supporting documentation (citations, orders, certificates)" },
+          { step: "Contact your S-1/Admin for assistance with award corrections" },
+        ],
+      },
+    ],
+  },
+  "mol-bir": {
+    title: "Basic Individual Record (BIR)",
+    description: "The Basic Individual Record provides a comprehensive snapshot of your personnel data including service information, contract data, dependent information, and administrative details.",
+    capabilities: ["View service data", "View contract information", "View dependent data", "View administrative information", "Print BIR for records"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Your BIR",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Basic Individual Record" },
+          { step: "Review your complete personnel snapshot" },
+        ],
+      },
+      {
+        title: "BIR Sections",
+        steps: [
+          {
+            step: "Service Data",
+            details: [
+              "Current rank and date of rank",
+              "MOS (Primary, Additional, Necessary)",
+              "Pay Entry Base Date (PEBD)",
+              "End of Active Service (EAS)",
+              "Total Active Federal Military Service (TAFMS)",
+            ],
+          },
+          {
+            step: "Personal Data",
+            details: [
+              "Name, SSN (masked), Date of Birth",
+              "Blood Type, Religion",
+              "Marital Status",
+              "Home of Record",
+            ],
+          },
+          {
+            step: "Contract Information",
+            details: [
+              "Current enlistment/extension contract",
+              "Contract start and end dates",
+              "Bonus entitlements if applicable",
+            ],
+          },
+          {
+            step: "Dependent Information",
+            details: [
+              "Spouse information",
+              "Child information",
+              "Dependency status for BAH purposes",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Updating BIR Information",
+        steps: [
+          { step: "Most BIR data requires official documentation to change" },
+          { step: "Submit an EPAR for corrections to administrative data" },
+          { step: "Update contact information through Personal Updates" },
+          { step: "Dependent changes require supporting documentation (marriage certificate, birth certificate)" },
+        ],
+      },
+    ],
+  },
+  "mol-btr": {
+    title: "Basic Training Record (BTR)",
+    description: "The Basic Training Record displays your complete training history including recruit training, MOS schools, professional military education, and additional skill identifiers.",
+    capabilities: ["View training history", "View education records", "View MOS qualifications", "View PME completion", "Print training record"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Your BTR",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Basic Training Record" },
+          { step: "Review your complete training and education history" },
+        ],
+      },
+      {
+        title: "BTR Sections",
+        steps: [
+          {
+            step: "Formal Schools",
+            details: [
+              "Recruit Training completion",
+              "MOS-producing schools",
+              "Advanced courses and schools",
+              "Joint and service schools",
+            ],
+          },
+          {
+            step: "Professional Military Education (PME)",
+            details: [
+              "Corporals Course",
+              "Sergeants Course",
+              "Career Course",
+              "Advanced Course",
+              "Resident and non-resident PME",
+            ],
+          },
+          {
+            step: "Additional Qualifications",
+            details: [
+              "Additional MOS (AMOS)",
+              "Necessary MOS (NMOS)",
+              "Special qualifications and licenses",
+              "Language proficiency scores",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Updating Training Records",
+        steps: [
+          { step: "Training updates are typically entered by your S-3/Training section" },
+          { step: "For missing schools, provide certificates or orders to your Admin" },
+          { step: "DLPT scores are updated through official testing channels" },
+        ],
+      },
+    ],
+  },
+  "mol-brs-tsp": {
+    title: "BRS/TSP Information",
+    description: "View your Blended Retirement System (BRS) election status and Thrift Savings Plan (TSP) contribution information. Manage TSP contributions and view BRS continuation pay eligibility.",
+    capabilities: ["View TSP contributions", "View BRS election status", "Decline TSP auto-enrollment", "View continuation pay info", "View lump sum election"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing BRS/TSP Information",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > BRS/TSP Information" },
+          { step: "Review your TSP contribution rates and BRS status" },
+        ],
+      },
+      {
+        title: "TSP Contribution Management",
+        steps: [
+          {
+            step: "Traditional TSP",
+            details: [
+              "Pre-tax contributions",
+              "View percentage withheld from Base Pay, Incentive Pay, Special Pay, and Bonus Pay",
+              "Tax-deferred growth until withdrawal",
+            ],
+          },
+          {
+            step: "Roth TSP",
+            details: [
+              "After-tax contributions",
+              "Tax-free qualified withdrawals",
+              "Can contribute to both Traditional and Roth",
+            ],
+          },
+          {
+            step: "Changing Contributions",
+            details: [
+              "Visit www.tsp.gov for account management",
+              "Use mypay.dfas.mil to change contribution percentages",
+              "Changes take effect the following pay period",
+            ],
+          },
+        ],
+      },
+      {
+        title: "BRS Features",
+        steps: [
+          {
+            step: "BRS Election",
+            details: [
+              "Complete required MarineNet training course before electing",
+              "Election is irrevocable once made",
+              "Grandfathered members under legacy retirement may opt-in",
+            ],
+          },
+          {
+            step: "Continuation Pay",
+            details: [
+              "One-time payment at 12 years of service",
+              "Requires additional service commitment",
+              "Amount varies by service and specialty",
+            ],
+          },
+          {
+            step: "Lump Sum Election",
+            details: [
+              "Must elect 90 days before retirement eligibility",
+              "Choose 25% or 50% of retired pay as lump sum",
+              "Reduced monthly retired pay until age 67",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Decline TSP Auto Re-enrollment",
+        steps: [
+          { step: "Click 'Decline TSP Re-Enrollment' button if you wish to opt out" },
+          { step: "Auto re-enrollment occurs if you stop contributions but don't decline by December" },
+          { step: "You can always restart contributions at any time" },
+        ],
+      },
+    ],
+  },
+  "mol-cei": {
+    title: "Civilian Employment Information (CEI)",
+    description: "The Civilian Employment Information record allows Reserve Component members to report and update their civilian employment data. This information may be used by DoD to contact employers in case of mobilization.",
+    capabilities: ["View civilian employment record", "Update employer information", "Complete employment questionnaire", "Report employment status changes"],
+    userTypes: ["Reserve Marines", "Individual Reserve Component Members"],
+    guide: [
+      {
+        title: "Accessing CEI",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Civilian Employment Information" },
+          { step: "View or update your current civilian employment data" },
+        ],
+      },
+      {
+        title: "Required Information",
+        steps: [
+          {
+            step: "Employer Details",
+            details: [
+              "Date: Effective date of the employment record",
+              "Employer Name: Name of your current civilian employer",
+              "Street Address: Employer's street address",
+              "City, State, and Zip Code: Employer's location",
+              "Phone Number: Employer's contact phone",
+              "Email Address: Employer's contact email",
+              "Occupation: Your job title or role",
+              "Full Time/Part Time: Employment status indicator",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Employment Status Questionnaire",
+        steps: [
+          {
+            step: "Complete the Following",
+            details: [
+              "Specify if you are a federal civil service employee",
+              "Indicate if the position is vital to national defense",
+              "Answer if you are a union member or self-employed",
+              "Note if you have pre-mobilization orders or permission to mobilize",
+              "Identify any employer restrictions on your availability",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Updating CEI",
+        steps: [
+          { step: "Click 'Edit' to modify existing employment information" },
+          { step: "Enter all required fields accurately" },
+          { step: "Click 'Submit Changes' to save your updates" },
+          { step: "Update whenever you change civilian employment" },
+        ],
+      },
+    ],
+  },
+  "mol-chro": {
+    title: "Chronological Record (CHRO)",
+    description: "The Chronological Record provides a sequential timeline of significant events and duties performed throughout your military career, including duty stations, deployments, and special assignments.",
+    capabilities: ["View career timeline", "View duty station history", "View deployment history", "View special assignments", "Print chronological record"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Your CHRO",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Chronological Record" },
+          { step: "Review your career timeline in sequential order" },
+        ],
+      },
+      {
+        title: "CHRO Contents",
+        steps: [
+          {
+            step: "Events Recorded",
+            details: [
+              "Enlistment/Commissioning date",
+              "Recruit training dates",
+              "MOS school attendance",
+              "Duty station assignments with dates",
+              "Deployments and operations",
+              "Promotions",
+              "Awards received",
+              "Special duty assignments",
+              "Extensions and reenlistments",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Using Your CHRO",
+        steps: [
+          { step: "Use for verifying service dates for applications and claims" },
+          { step: "Reference when completing VA disability claims" },
+          { step: "Helpful for preparing personal records for retirement" },
+          { step: "Click 'Printer Friendly View' to print a copy" },
+        ],
+      },
+    ],
+  },
+  "mol-education": {
+    title: "Education",
+    description: "The Education record displays your civilian and military education history including off-duty education, Marine Corps Institute (MCI) courses, and service schools attended.",
+    capabilities: ["View civilian education", "View military education", "View MCI course completions", "View professional certifications"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Education Records",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Education" },
+          { step: "Review your complete education history" },
+        ],
+      },
+      {
+        title: "Education Categories",
+        steps: [
+          {
+            step: "Civilian Education",
+            details: [
+              "High school diploma or GED",
+              "College credits and degrees",
+              "Technical certifications",
+              "Professional licenses",
+            ],
+          },
+          {
+            step: "Military Education",
+            details: [
+              "MCI/MarineNet courses completed",
+              "Service schools attended",
+              "Joint courses",
+              "PME completion",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Updating Education Records",
+        steps: [
+          { step: "Civilian education updates require official transcripts" },
+          { step: "Submit transcripts to your Education Center or S-1" },
+          { step: "MCI/MarineNet completions update automatically" },
+          { step: "School completions are entered by training sections" },
+        ],
+      },
+    ],
+  },
+  "mol-fcp": {
+    title: "Family Care Plan (FCP)",
+    description: "The Family Care Plan record shows your dependent care arrangements required for deployment readiness. Single parents and dual-military couples must maintain current FCPs.",
+    capabilities: ["View FCP status", "View care provider information", "Check FCP expiration", "Print FCP documentation"],
+    userTypes: ["All Marines", "Single Parents", "Dual-Military Couples"],
+    guide: [
+      {
+        title: "Accessing Your FCP",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Family Care Plan" },
+          { step: "Review your current FCP status and information" },
+        ],
+      },
+      {
+        title: "FCP Requirements",
+        steps: [
+          {
+            step: "Who Needs an FCP",
+            details: [
+              "Single parents with custody of minor children",
+              "Dual-military couples with minor children",
+              "Marines with adult dependents requiring care",
+              "Marines with special needs family members",
+            ],
+          },
+          {
+            step: "FCP Components",
+            details: [
+              "Short-term care provider (immediate deployment)",
+              "Long-term care provider (extended deployment)",
+              "Financial arrangements",
+              "Medical/legal powers of attorney",
+              "Transportation arrangements",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Maintaining Your FCP",
+        steps: [
+          { step: "FCPs must be reviewed and updated annually" },
+          { step: "Update whenever care providers change" },
+          { step: "Ensure care providers have signed consent forms" },
+          { step: "Verify all contact information is current" },
+          { step: "Submit updates through your unit's Family Readiness Officer" },
+        ],
+      },
+    ],
+  },
+  "mol-imr": {
+    title: "Individual Medical Readiness (IMR)",
+    description: "The Individual Medical Readiness report displays your current medical deployment eligibility status including immunizations, dental readiness, and periodic health assessments. This information is HIPAA protected.",
+    capabilities: ["View medical readiness status", "Check immunization status", "View dental readiness", "Check deployment eligibility"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Your IMR",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Individual Medical Readiness" },
+          { step: "Review your current medical readiness status" },
+          { step: "Note: IMR data is HIPAA protected and access is logged" },
+        ],
+      },
+      {
+        title: "IMR Categories",
+        steps: [
+          {
+            step: "Readiness Classifications",
+            details: [
+              "Fully Medically Ready (FMR) - Green status",
+              "Partially Medically Ready (PMR) - Yellow status",
+              "Not Medically Ready (NMR) - Red status",
+            ],
+          },
+          {
+            step: "Components Tracked",
+            details: [
+              "Periodic Health Assessment (PHA) currency",
+              "Dental Readiness Classification (1, 2, 3, or 4)",
+              "Immunization status",
+              "HIV testing currency",
+              "Deployment Limiting Conditions",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Improving Your IMR",
+        steps: [
+          { step: "Schedule overdue appointments through your medical/dental clinic" },
+          { step: "Complete your annual PHA" },
+          { step: "Maintain Dental Class 1 or 2 status" },
+          { step: "Keep immunizations current" },
+          { step: "Address any deployment limiting conditions with medical" },
+        ],
+      },
+    ],
+  },
+  "mol-pay-leave": {
+    title: "Pay and Leave Summary",
+    description: "The Pay and Leave Summary displays your current and prior pay period information including earnings, deductions, and leave balances.",
+    capabilities: ["View current pay", "View leave balances", "View earnings breakdown", "View deductions", "Track leave accrual"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Pay and Leave",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Pay and Leave Summary" },
+          { step: "Review your current and prior pay period information" },
+        ],
+      },
+      {
+        title: "Understanding Your Pay",
+        steps: [
+          {
+            step: "Earnings",
+            details: [
+              "Base Pay - Based on rank and years of service",
+              "BAH - Basic Allowance for Housing",
+              "BAS - Basic Allowance for Subsistence",
+              "Special pays and incentive pays",
+            ],
+          },
+          {
+            step: "Deductions",
+            details: [
+              "Federal and state taxes",
+              "SGLI premiums",
+              "TSP contributions",
+              "Allotments",
+              "Other deductions",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Leave Balances",
+        steps: [
+          {
+            step: "Leave Types",
+            details: [
+              "Current Balance - Available leave days",
+              "Projected Balance - End of fiscal year projection",
+              "Use/Lose - Leave that will be lost if not taken",
+              "Leave accrues at 2.5 days per month",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Detailed LES",
+        steps: [
+          { step: "For complete details, access myPay at https://mypay.dfas.mil" },
+          { step: "MOL provides a summary view of pay information" },
+        ],
+      },
+    ],
+  },
+  "mol-pers-tempo": {
+    title: "Pers-Tempo",
+    description: "The Personnel Tempo (Pers-Tempo) report tracks your deployment tempo and time away from home station. This information is used to manage deployment equity and quality of life.",
+    capabilities: ["View deployment history", "Track time deployed", "View Pers-Tempo points", "Monitor deployment tempo"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Pers-Tempo",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Pers-Tempo" },
+          { step: "Review your deployment tempo tracking" },
+        ],
+      },
+      {
+        title: "Understanding Pers-Tempo",
+        steps: [
+          {
+            step: "What is Tracked",
+            details: [
+              "Days deployed away from home station",
+              "TDY/TAD periods exceeding threshold",
+              "Deployment frequency",
+              "Cumulative days over rolling period",
+            ],
+          },
+          {
+            step: "Thresholds",
+            details: [
+              "High deployment tempo triggers command review",
+              "Affects deployment eligibility considerations",
+              "Used for assignment and deployment planning",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Pers-Tempo Corrections",
+        steps: [
+          { step: "If deployment dates are incorrect, contact your S-1" },
+          { step: "Provide orders or travel documents for verification" },
+          { step: "Corrections are made through official channels" },
+        ],
+      },
+    ],
+  },
+  "mol-psmc": {
+    title: "Personal Statement of Military Compensation (PSMC)",
+    description: "The Personal Statement of Military Compensation provides a comprehensive breakdown of your total compensation value, including pay, allowances, benefits, and tax advantages.",
+    capabilities: ["View total compensation", "View tax advantage calculations", "View benefits value", "Print compensation statement"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Your PSMC",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Personal Statement of Military Compensation" },
+          { step: "Review your total compensation breakdown" },
+        ],
+      },
+      {
+        title: "PSMC Components",
+        steps: [
+          {
+            step: "Cash Compensation",
+            details: [
+              "Base Pay",
+              "Basic Allowance for Housing (BAH)",
+              "Basic Allowance for Subsistence (BAS)",
+              "Special and incentive pays",
+            ],
+          },
+          {
+            step: "Tax Advantages",
+            details: [
+              "BAH and BAS are not taxed",
+              "Combat zone tax exclusion when applicable",
+              "Tax savings calculated and displayed",
+            ],
+          },
+          {
+            step: "Benefits Value",
+            details: [
+              "Healthcare (TRICARE)",
+              "Life insurance (SGLI)",
+              "Retirement contributions",
+              "Education benefits",
+              "Leave accrual",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Printing Your PSMC",
+        steps: [
+          { step: "Click 'Printer Friendly View' to generate printable version" },
+          { step: "Report includes a watermark for official use" },
+          { step: "In IE, enable 'Print Background Colors and Images' for watermark" },
+          { step: "Useful for financial planning and loan applications" },
+        ],
+      },
+    ],
+  },
+  "mol-red": {
+    title: "Record of Emergency Data (RED)",
+    description: "The Record of Emergency Data contains your emergency contact information, SGLI beneficiaries, and next of kin designations. Keeping your RED current is critical for casualty notification and survivor benefits.",
+    capabilities: ["View emergency contacts", "Update beneficiaries", "Certify RED", "Update next of kin", "Manage SGLI"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Your RED",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Record of Emergency Data" },
+          { step: "Review all sections for accuracy" },
+        ],
+      },
+      {
+        title: "RED Sections",
+        steps: [
+          {
+            step: "Family Information",
+            details: [
+              "Spouse and children addresses",
+              "Can set separate addresses for each family member",
+              "Spouse preferred language for notifications",
+            ],
+          },
+          {
+            step: "Parents",
+            details: [
+              "Parent contact information",
+              "Deceased status if applicable",
+              "Separate addresses for each parent",
+            ],
+          },
+          {
+            step: "Pay Arrears",
+            details: [
+              "Beneficiaries for unpaid pay and allowances",
+              "Percentage allocation (must total 100%)",
+              "Up to multiple beneficiaries allowed",
+            ],
+          },
+          {
+            step: "Next of Kin",
+            details: [
+              "Up to three NOK contacts",
+              "Relationship and phone numbers",
+              "Directions to primary NOK residence",
+            ],
+          },
+          {
+            step: "Death Gratuity",
+            details: [
+              "Primary: spouse and minor children (by law)",
+              "Additional beneficiaries for remaining amount",
+              "Up to 10 beneficiaries, must total 100%",
+            ],
+          },
+          {
+            step: "PADD (Person Authorized to Direct Disposition)",
+            details: [
+              "Person who makes funeral arrangements",
+              "Must be at least 18 years old",
+              "Your designation supersedes legal order of precedence",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Updating and Certifying",
+        steps: [
+          { step: "Click 'Edit' next to any section to make changes" },
+          { step: "Editing information automatically certifies that section" },
+          { step: "If no changes needed, click 'Certify' to confirm accuracy" },
+          { step: "Review RED at least annually or after major life events" },
+          { step: "A certified RED is required for deployment readiness" },
+        ],
+      },
+    ],
+  },
+  "mol-reserve-drill": {
+    title: "Reserve Drill Summary",
+    description: "The Reserve Drill Summary displays drill attendance records for reserve Marines including drills attended, missed, rescheduled, and makeup drills.",
+    capabilities: ["View drill attendance", "Track missed drills", "View rescheduled drills", "Monitor participation status"],
+    userTypes: ["Reserve Marines", "Individual Reserve Component Members"],
+    guide: [
+      {
+        title: "Accessing Drill Summary",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Reserve Drill Summary" },
+          { step: "Review your drill attendance history" },
+        ],
+      },
+      {
+        title: "Drill Information",
+        steps: [
+          {
+            step: "Attendance Categories",
+            details: [
+              "Attended - Drills completed as scheduled",
+              "Excused Absence - Approved absences",
+              "Unexcused Absence - Unapproved missed drills",
+              "Rescheduled - Drills moved to different dates",
+              "Makeup - Drills completed to make up for absences",
+            ],
+          },
+          {
+            step: "Participation Requirements",
+            details: [
+              "Satisfactory participation required for good year credit",
+              "Minimum attendance requirements per fiscal year",
+              "Excessive unexcused absences may result in administrative action",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Drill Issues",
+        steps: [
+          { step: "For drill pay issues, contact your unit administrator" },
+          { step: "For attendance corrections, provide documentation to your unit" },
+          { step: "Reschedule requests must be approved in advance" },
+        ],
+      },
+    ],
+  },
+  "mol-ros": {
+    title: "Record of Service (ROS)",
+    description: "The Record of Service displays your complete service record including proficiency and conduct marks, composite scores (for E1-E5), and fitness report information.",
+    capabilities: ["View proficiency marks", "View conduct marks", "View composite scores", "Track performance history"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Your ROS",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Record of Service" },
+          { step: "Review your complete service record" },
+        ],
+      },
+      {
+        title: "ROS Contents",
+        steps: [
+          {
+            step: "Proficiency and Conduct Marks",
+            details: [
+              "Proficiency marks (0.0 to 5.0 scale)",
+              "Conduct marks (0.0 to 5.0 scale)",
+              "Marking period dates",
+              "Average marks calculation",
+            ],
+          },
+          {
+            step: "Composite Scores (E1-E5)",
+            details: [
+              "Rifle score points",
+              "PFT/CFT score points",
+              "Self-education points",
+              "Commander's evaluation points",
+              "Time in grade/service points",
+              "Total composite score",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Using Your ROS",
+        steps: [
+          { step: "Track your promotion competitiveness" },
+          { step: "Identify areas for improvement" },
+          { step: "Verify marks are accurately recorded" },
+          { step: "For discrepancies, contact your S-1 with documentation" },
+        ],
+      },
+    ],
+  },
+  "mol-w2": {
+    title: "W2 Tax Statements",
+    description: "Access and download your W-2 tax statements in PDF format. You can view current and prior year W-2s and manage your electronic delivery preferences.",
+    capabilities: ["View W-2 statements", "Download W-2 PDFs", "Manage delivery preferences", "Access prior year W-2s"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing W-2 Statements",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > W2 Tax Statements" },
+          { step: "Select the tax year you need from the dropdown" },
+        ],
+      },
+      {
+        title: "Electronic Delivery Setup",
+        steps: [
+          {
+            step: "To Access Electronic W-2",
+            details: [
+              "If delivery method shows 'None' or 'Hard Copy', change to Electronic first",
+              "Click to change your delivery preference",
+              "Electronic delivery provides faster access",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Downloading Your W-2",
+        steps: [
+          { step: "Select the desired year from 'Available W2s' dropdown" },
+          { step: "Click Submit to generate the PDF" },
+          { step: "W-2 opens in PDF format - requires Adobe Reader" },
+          { step: "Save or print for your tax filing needs" },
+        ],
+      },
+      {
+        title: "Important Notes",
+        steps: [
+          {
+            step: "Availability",
+            details: [
+              "Available for Active Duty and Reserve Marines (not separated/retired)",
+              "Separated/Retired Marines: W-2 available for one year after separation",
+              "Separated members cannot change delivery method",
+            ],
+          },
+          { step: "Keep your home address current in Personal Contact Information for future paper W-2s" },
+          { step: "W-2s are typically available by late January each year" },
+        ],
+      },
+    ],
+  },
   "mol-personal-information": {
     title: "Personal Information (PI)",
     description: "Provides individual members access to view their own personnel records as recorded within the MCTFS or interfacing application. Self-Certified transactional reporting capabilities are provided to users for select data elements not requiring two-factor review. Reports are generated using a combination of local database queries (MED) and service calls directly to the MCTFS (SOA APIs).",
@@ -6860,7 +7861,26 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "mol-view-permissions": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-view-permissions"]} references={MOL_DATA.references} />,
     "mol-two-factor-auth": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-two-factor-auth"]} references={MOL_DATA.references} />,
     "mol-personnel-accountability": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-personnel-accountability"]} references={MOL_DATA.references} />,
-    // Marine Online - Personnel Records
+    // Marine Online - Personal Reports (Electronic Records)
+    "mol-arcr": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-arcr"]} references={MOL_DATA.references} />,
+    "mol-acip": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-acip"]} references={MOL_DATA.references} />,
+    "mol-awards": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-awards"]} references={MOL_DATA.references} />,
+    "mol-bir": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-bir"]} references={MOL_DATA.references} />,
+    "mol-btr": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-btr"]} references={MOL_DATA.references} />,
+    "mol-brs-tsp": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-brs-tsp"]} references={MOL_DATA.references} />,
+    "mol-cei": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-cei"]} references={MOL_DATA.references} />,
+    "mol-chro": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-chro"]} references={MOL_DATA.references} />,
+    "mol-education": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-education"]} references={MOL_DATA.references} />,
+    "mol-fcp": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-fcp"]} references={MOL_DATA.references} />,
+    "mol-imr": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-imr"]} references={MOL_DATA.references} />,
+    "mol-pay-leave": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-pay-leave"]} references={MOL_DATA.references} />,
+    "mol-pers-tempo": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-pers-tempo"]} references={MOL_DATA.references} />,
+    "mol-psmc": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-psmc"]} references={MOL_DATA.references} />,
+    "mol-red": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-red"]} references={MOL_DATA.references} />,
+    "mol-reserve-drill": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-reserve-drill"]} references={MOL_DATA.references} />,
+    "mol-ros": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-ros"]} references={MOL_DATA.references} />,
+    "mol-w2": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-w2"]} references={MOL_DATA.references} />,
+    // Marine Online - Personal Updates
     "mol-personal-information": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-personal-information"]} references={MOL_DATA.references} />,
   };
 
@@ -7140,10 +8160,26 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "mol-view-permissions",
     "mol-two-factor-auth",
     "mol-personnel-accountability",
-    // Personnel Records
-    "mol-view-ompf",
-    "mol-update-personal-info",
-    "mol-view-les",
+    // Personal Reports (Electronic Records)
+    "mol-arcr",
+    "mol-acip",
+    "mol-awards",
+    "mol-bir",
+    "mol-btr",
+    "mol-brs-tsp",
+    "mol-cei",
+    "mol-chro",
+    "mol-education",
+    "mol-fcp",
+    "mol-imr",
+    "mol-pay-leave",
+    "mol-pers-tempo",
+    "mol-psmc",
+    "mol-red",
+    "mol-reserve-drill",
+    "mol-ros",
+    "mol-w2",
+    // Personal Updates
     "mol-personal-information",
     // Leave Management
     "mol-submit-leave",
