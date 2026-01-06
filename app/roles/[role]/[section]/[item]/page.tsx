@@ -3090,6 +3090,112 @@ const MOL_FUNCTIONAL_MODULES = {
       },
     ],
   },
+  "mol-personnel-accountability": {
+    title: "Personnel Accountability (PA)",
+    description: "The Personnel Accountability (PA) module enables Marines to self-report their status during disaster declarations. All DoD-affiliated personnel working or residing in a declared disaster area must check-in physically, telephonically, or electronically at the first available opportunity.",
+    capabilities: ["Self-report disaster status", "Report dependent status", "Track subordinate accountability", "Generate unit accountability reports"],
+    userTypes: ["All Marines", "Leaders", "Administrators", "Commanders"],
+    guide: [
+      {
+        title: "Individual Marine Requirements",
+        steps: [
+          {
+            step: "Maintain Accurate Contact Information",
+            details: [
+              "Update your personal cell phone, work phone, and residential address in the Personal Info section of MOL",
+              "Maintain current contact information for your family members and dependents",
+              "Perform a 'self-audit' of your data whenever you change duty stations or work assignments",
+            ],
+          },
+          {
+            step: "Mandatory Check-In Procedures",
+            details: [
+              "When a disaster is declared, you must check-in at the first available opportunity",
+              "Methods: Physical (report to unit), Telephonic (call chain of command), or Electronic (via MOL)",
+              "Log into MOL at https://mol.tfs.usmc.mil/ and access the Personnel Accountability module",
+            ],
+          },
+          {
+            step: "Using the PA Module",
+            details: [
+              "Self-report your status (e.g., 'Accounted For', 'Injured', or 'Evacuated')",
+              "Report the status of your dependents within the same module",
+              "If unable to access MOL, use your backup communication plan to reach your leader",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Leader Responsibilities",
+        steps: [
+          {
+            step: "Preparation and Training",
+            details: [
+              "Verify all subordinates have an active MOL account with Email Password Reset configured",
+              "Direct Marines to conduct a 'self-audit' of their contact information",
+              "Maintain an offline roster with phone numbers and secondary emails",
+            ],
+          },
+          {
+            step: "Active Accountability Monitoring",
+            details: [
+              "Access the PA module to view real-time list of who has self-reported",
+              "Focus efforts on those who have not checked in electronically",
+              "Contact missing personnel via work phone, personal phone, email, or emergency contacts",
+            ],
+          },
+          {
+            step: "Reporting and Assistance",
+            details: [
+              "Update status in PA module for Marines you contact verbally or telephonically",
+              "Account for the status of Marines' family members",
+              "Escalate 'Unaccounted For' personnel to Command Admin or Commander",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Admin Responsibilities",
+        steps: [
+          {
+            step: "System Hierarchy Management",
+            details: [
+              "Ensure unit organizational hierarchy (Battalion > Company > Platoon > Work Section) is correctly mapped in MOL",
+              "Grant correct 'Execution' or 'Delegate' authorities to leaders for PA module access",
+            ],
+          },
+          {
+            step: "Data Consolidation and Reporting",
+            details: [
+              "Generate master reports showing percentage of command accounted for",
+              "Act as primary point of contact for reporting to Headquarters Marine Corps (HQMC)",
+              "Assist Marines with Trouble Tickets or EPARs for record corrections",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Commander Responsibilities",
+        steps: [
+          {
+            step: "Establishing Command Intent",
+            details: [
+              "Establish clear SOP for accountability (e.g., 'All Marines must check into MOL within 2 hours of a disaster declaration')",
+              "Conduct regular accountability drills to ensure unit readiness",
+            ],
+          },
+          {
+            step: "Decision Making and Verification",
+            details: [
+              "Review data from Admin and Leaders to assess unit readiness and disaster impact",
+              "Decide when to deploy Search and Recovery efforts for 'Unaccounted' personnel",
+              "Provide final verification to higher headquarters that accountability is complete",
+            ],
+          },
+        ],
+      },
+    ],
+  },
 };
 
 // ============================================
@@ -6045,6 +6151,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "mol-password-pin-reset": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-password-pin-reset"]} references={MOL_DATA.references} />,
     "mol-view-permissions": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-view-permissions"]} references={MOL_DATA.references} />,
     "mol-two-factor-auth": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-two-factor-auth"]} references={MOL_DATA.references} />,
+    "mol-personnel-accountability": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-personnel-accountability"]} references={MOL_DATA.references} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -6322,6 +6429,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "mol-password-pin-reset",
     "mol-view-permissions",
     "mol-two-factor-auth",
+    "mol-personnel-accountability",
     // Personnel Records
     "mol-view-ompf",
     "mol-update-personal-info",

@@ -513,6 +513,7 @@ export const SECTIONS: Record<string, Section> = {
           { title: "Password & PIN Reset", slug: "mol-password-pin-reset", desc: "Reset your MOL password or CAC PIN" },
           { title: "View Your Permissions", slug: "mol-view-permissions", desc: "View and manage your MOL permissions and authority levels" },
           { title: "Two Factor Authentication (2FA)", slug: "mol-two-factor-auth", desc: "Configure two-factor authentication for enhanced account security" },
+          { title: "Personnel Accountability (PA)", slug: "mol-personnel-accountability", desc: "Self-report your status and dependent status during disaster declarations" },
         ],
       },
       {
