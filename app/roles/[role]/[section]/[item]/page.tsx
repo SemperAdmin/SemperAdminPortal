@@ -3487,232 +3487,498 @@ const MOL_FUNCTIONAL_MODULES = {
   },
   "mol-brs-tsp": {
     title: "BRS/TSP Information",
-    description: "View your Blended Retirement System (BRS) election status and Thrift Savings Plan (TSP) contribution information. Manage TSP contributions and view BRS continuation pay eligibility.",
-    capabilities: ["View TSP contributions", "View BRS election status", "Decline TSP auto-enrollment", "View continuation pay info", "View lump sum election"],
+    description: "This is your command center for tracking your retirement savings and mid-career bonuses. The Marine Corps moved away from the 'all or nothing' legacy retirement. With BRS, even if you don't stay for 20 years, you walk away with a retirement account that the government has helped fund.",
+    capabilities: ["View TSP contributions", "View BRS election status", "Decline TSP auto-enrollment", "View continuation pay info", "View lump sum election", "Check government matching status", "Monitor contribution percentages"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing BRS/TSP Information",
+        title: "Why This Matters",
         steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > BRS/TSP Information" },
-          { step: "Review your TSP contribution rates and BRS status" },
+          {
+            step: "Your Retirement Money",
+            details: [
+              "BRS provides portable retirement savings even if you leave before 20 years",
+              "Government matches up to 5% of your base pay - that's FREE money",
+              "If you aren't contributing at least 5%, you are literally throwing away free money",
+              "This page helps you verify your elections and catch issues before they cost you",
+            ],
+          },
+          {
+            step: "Continuation Pay Bonus",
+            details: [
+              "If you have between 8 and 12 years of service, you may be eligible for BRS Continuation Pay",
+              "This is a one-time cash bonus in exchange for additional service commitment",
+              "You CANNOT request it after your 12th year anniversary - the bonus is gone forever if you miss the deadline",
+            ],
+          },
         ],
       },
       {
-        title: "TSP Contribution Management",
+        title: "How to Manage Your BRS/TSP",
         steps: [
           {
-            step: "Traditional TSP",
+            step: "Step 1: Access the Report",
             details: [
-              "Pre-tax contributions",
-              "View percentage withheld from Base Pay, Incentive Pay, Special Pay, and Bonus Pay",
-              "Tax-deferred growth until withdrawal",
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > BRS/TSP Information",
+              "Review your current TSP contribution rates and BRS status",
             ],
           },
           {
-            step: "Roth TSP",
+            step: "Step 2: Verify Your Elections",
             details: [
-              "After-tax contributions",
-              "Tax-free qualified withdrawals",
-              "Can contribute to both Traditional and Roth",
+              "Traditional vs. Roth: Traditional is pre-tax (pay taxes later); Roth is after-tax (withdraw tax-free later)",
+              "Check what percentage of your Base Pay, Incentive Pay, and Bonuses are being saved",
+              "Ensure you are contributing at least 5% to get the full government match",
             ],
           },
+          {
+            step: "Step 3: Check Continuation Pay Eligibility",
+            details: [
+              "If you have between 8 and 12 years of service, check the BRS-CP section",
+              "If eligible, you must submit a Statement of Understanding (SOU) via EPAR in MOL before your 12th year",
+              "The bonus usually hits your bank account within 30 days of your 12th year anniversary",
+            ],
+          },
+          {
+            step: "Step 4: Decline Auto Re-Enrollment (If Needed)",
+            details: [
+              "If you stopped contributions but don't want the system to restart them automatically on January 1st",
+              "Click the 'Decline TSP Re-Enrollment' button in MOL during the month of December",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "The December Reset",
+            details: [
+              "If you stop your TSP contributions during the year, the system will automatically restart them at 5% on January 1st",
+              "You must manually decline it in MOL during December to prevent this",
+            ],
+          },
+          {
+            step: "Missing the 5% Match",
+            details: [
+              "If you aren't contributing at least 5% of your own pay, you are losing free money",
+              "The government only matches up to 5% - contributing less means leaving money on the table",
+            ],
+          },
+          {
+            step: "The Continuation Pay Deadline",
+            details: [
+              "You CANNOT request Continuation Pay once you hit your 12-year anniversary (PEBD)",
+              "If you wait until 12 years and 1 day, the bonus is gone forever",
+              "Set a reminder to submit your SOU before your 12th year",
+            ],
+          },
+          {
+            step: "MOL vs. myPay Confusion",
+            details: [
+              "MOL is for VIEWING your status",
+              "myPay (https://mypay.dfas.mil) is for CHANGING your contribution percentage",
+              "You cannot change your contribution percentage inside MOL",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do After Checking",
+        steps: [
           {
             step: "Changing Contributions",
             details: [
-              "Visit www.tsp.gov for account management",
-              "Use mypay.dfas.mil to change contribution percentages",
-              "Changes take effect the following pay period",
-            ],
-          },
-        ],
-      },
-      {
-        title: "BRS Features",
-        steps: [
-          {
-            step: "BRS Election",
-            details: [
-              "Complete required MarineNet training course before electing",
-              "Election is irrevocable once made",
-              "Grandfathered members under legacy retirement may opt-in",
+              "Go to myPay, select 'Thrift Savings Plan,' and update your percentages",
+              "Changes usually take 1-2 pay cycles to reflect on your LES",
             ],
           },
           {
-            step: "Continuation Pay",
+            step: "Allocating Your Funds",
             details: [
-              "One-time payment at 12 years of service",
-              "Requires additional service commitment",
-              "Amount varies by service and specialty",
+              "Log in to TSP.gov to choose where your money is invested",
+              "Options include C-Fund (stocks), G-Fund (government bonds), and others",
+              "If you don't choose, it defaults to a Lifecycle (L) Fund based on your expected retirement year",
             ],
           },
           {
-            step: "Lump Sum Election",
+            step: "Print for Records",
             details: [
-              "Must elect 90 days before retirement eligibility",
-              "Choose 25% or 50% of retired pay as lump sum",
-              "Reduced monthly retired pay until age 67",
+              "Click 'Printer Friendly' at the top, then click 'Print' in the new window",
+              "Keep a copy for your personal records",
             ],
           },
-        ],
-      },
-      {
-        title: "Decline TSP Auto Re-enrollment",
-        steps: [
-          { step: "Click 'Decline TSP Re-Enrollment' button if you wish to opt out" },
-          { step: "Auto re-enrollment occurs if you stop contributions but don't decline by December" },
-          { step: "You can always restart contributions at any time" },
         ],
       },
     ],
   },
   "mol-cei": {
     title: "Civilian Employment Information (CEI)",
-    description: "The Civilian Employment Information record allows Reserve Component members to report and update their civilian employment data. This information may be used by DoD to contact employers in case of mobilization.",
-    capabilities: ["View civilian employment record", "Update employer information", "Complete employment questionnaire", "Report employment status changes"],
-    userTypes: ["Reserve Marines", "Individual Reserve Component Members"],
+    description: "This is a mandatory requirement for all Reservists (SMCR, IMA, and IRR) to ensure the Department of Defense understands your civilian career and skillsets. Reporting your CEI is required by federal law (Title 10 U.S.C.).",
+    capabilities: ["View civilian employment record", "Update employer information", "Complete employment questionnaire", "Report employment status changes", "Report first responder status", "Track critical skills"],
+    userTypes: ["Reserve Marines", "Individual Reserve Component Members", "IRR Marines"],
     guide: [
       {
-        title: "Accessing CEI",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Civilian Employment Information" },
-          { step: "View or update your current civilian employment data" },
-        ],
-      },
-      {
-        title: "Required Information",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Employer Details",
+            step: "National Safety",
             details: [
-              "Date: Effective date of the employment record",
-              "Employer Name: Name of your current civilian employer",
-              "Street Address: Employer's street address",
-              "City, State, and Zip Code: Employer's location",
-              "Phone Number: Employer's contact phone",
-              "Email Address: Employer's contact email",
-              "Occupation: Your job title or role",
-              "Full Time/Part Time: Employment status indicator",
+              "Ensures the military doesn't mobilize so many first responders from one city that it leaves the community unprotected",
+              "Helps DoD understand the civilian skill base of the reserve force",
+            ],
+          },
+          {
+            step: "Your Rights (USERRA)",
+            details: [
+              "Allows the DoD to inform your employer of their legal obligations to hold your job under USERRA if you are activated",
+              "Provides documentation of your civilian employment for legal protections",
+            ],
+          },
+          {
+            step: "Skill Tracking",
+            details: [
+              "If you are a cyber security expert or heavy equipment mechanic in the civilian world, the Marine Corps wants to know",
+              "Critical skills can be utilized during mobilization for specialized roles",
             ],
           },
         ],
       },
       {
-        title: "Employment Status Questionnaire",
+        title: "How to Update Your CEI",
         steps: [
           {
-            step: "Complete the Following",
+            step: "Step 1: Access the Page",
             details: [
-              "Specify if you are a federal civil service employee",
-              "Indicate if the position is vital to national defense",
-              "Answer if you are a union member or self-employed",
-              "Note if you have pre-mobilization orders or permission to mobilize",
-              "Identify any employer restrictions on your availability",
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Civilian Employment Information",
+            ],
+          },
+          {
+            step: "Step 2: Enter Edit Mode",
+            details: [
+              "Click the 'Edit' button to open the questionnaire",
+            ],
+          },
+          {
+            step: "Step 3: Fill in the Details",
+            details: [
+              "Status: Select if you are Full-Time, Part-Time, a Student, or Unemployed",
+              "Employer Info: Enter the name and address of your company",
+              "Standard Occupational Classification (SOC): Use the search tool to find the job title that most closely matches what you do",
+              "First Responder: Check the box if you are a police officer, firefighter, or medical professional",
+            ],
+          },
+          {
+            step: "Step 4: Save/Confirm",
+            details: [
+              "Click the 'Save' or 'Submit' button to record your changes",
+            ],
+          },
+          {
+            step: "Step 5: Print for Records",
+            details: [
+              "Click 'Printer-Friendly View' to get a clean printout",
+              "Many units require a physical printout to 'check out' for Annual Training (AT)",
+              "Click 'Close' to return to your Record of Service",
             ],
           },
         ],
       },
       {
-        title: "Updating CEI",
+        title: "Common Pitfalls to Avoid",
         steps: [
-          { step: "Click 'Edit' to modify existing employment information" },
-          { step: "Enter all required fields accurately" },
-          { step: "Click 'Submit Changes' to save your updates" },
-          { step: "Update whenever you change civilian employment" },
+          {
+            step: "Ignoring the Annual Requirement",
+            details: [
+              "Even if your job hasn't changed, you must log in and re-verify it every year during your anniversary month",
+              "Just because nothing changed doesn't mean you don't have to click 'Submit'",
+            ],
+          },
+          {
+            step: "Vague Job Titles",
+            details: [
+              "Don't just type 'Worker' or 'Employee'",
+              "Use the SOC search tool provided to find the official Department of Labor title for your role",
+            ],
+          },
+          {
+            step: "Student Status",
+            details: [
+              "If you are a full-time student, you still need to report this",
+              "List your university as your 'Employer'",
+            ],
+          },
+          {
+            step: "Orders Blocked",
+            details: [
+              "If your CEI is red or expired, the MROWS system may prevent your S-1 from authenticating your orders for AT or drill",
+              "Don't wait until you need orders to update this",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What Happens After You Finish",
+        steps: [
+          {
+            step: "MCTFS Update",
+            details: [
+              "Your data is fed into the MCTFS database and shared with the Defense Manpower Data Center (DMDC)",
+            ],
+          },
+          {
+            step: "Readiness Status",
+            details: [
+              "Your 'CEI Compliance' will flip to Green on your unit's readiness tracker",
+            ],
+          },
+          {
+            step: "Annual Audit",
+            details: [
+              "Your command will likely verify this again during your Annual Administrative Screening",
+              "Keep your digital PDF copy handy to show your Platoon Sergeant if they ask for proof",
+            ],
+          },
         ],
       },
     ],
   },
   "mol-chro": {
     title: "Chronological Record (CHRO)",
-    description: "The Chronological Record provides a sequential timeline of significant events and duties performed throughout your military career, including duty stations, deployments, and special assignments.",
-    capabilities: ["View career timeline", "View duty station history", "View deployment history", "View special assignments", "Print chronological record"],
+    description: "This is the modern, digital version of the old 'Page 3' from the paper Service Record Book (SRB). It documents every major event in your career in order—from when you joined a unit, to your deployments, and even specific duties you've performed. If there is a gap or a deployment isn't listed, it can look like unexplained 'missing time' to a promotion board.",
+    capabilities: ["View career timeline", "View duty station history", "View deployment history", "View special assignments", "Print chronological record", "Verify service dates", "Audit career sequence"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Your CHRO",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Chronological Record" },
-          { step: "Review your career timeline in sequential order" },
-        ],
-      },
-      {
-        title: "CHRO Contents",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Events Recorded",
+            step: "Your Official Timeline",
             details: [
-              "Enlistment/Commissioning date",
-              "Recruit training dates",
-              "MOS school attendance",
-              "Duty station assignments with dates",
-              "Deployments and operations",
-              "Promotions",
-              "Awards received",
-              "Special duty assignments",
-              "Extensions and reenlistments",
+              "The Chronological Record documents every major event in your career in sequential order",
+              "It is the primary way the Marine Corps verifies where you were and what you were doing at any given time",
+              "Promotion boards look for a continuous, logical flow of duty from the day you stepped on the yellow footprints to today",
+            ],
+          },
+          {
+            step: "Gaps Look Bad",
+            details: [
+              "If there is a gap in your timeline, it looks like you have unexplained 'missing time'",
+              "If a deployment isn't listed, you may not get credit for that time in combat or overseas",
+              "Incomplete records can affect VA claims, retirement, and promotion competitiveness",
             ],
           },
         ],
       },
       {
-        title: "Using Your CHRO",
+        title: "How to View Your Timeline",
         steps: [
-          { step: "Use for verifying service dates for applications and claims" },
-          { step: "Reference when completing VA disability claims" },
-          { step: "Helpful for preparing personal records for retirement" },
-          { step: "Click 'Printer Friendly View' to print a copy" },
+          {
+            step: "Step 1: Access the Record",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Chronological Record",
+            ],
+          },
+          {
+            step: "Step 2: Audit the Sequence",
+            details: [
+              "Look at the entries from top to bottom",
+              "Each line should have: Date (when the event happened), Event/Duty (a brief code or description like 'JOINED,' 'TAD,' 'PROMOTED'), and Unit/RUC (the unit where the event took place)",
+            ],
+          },
+          {
+            step: "Step 3: Cross-Reference",
+            details: [
+              "Compare this list to your BIR (Basic Individual Record)",
+              "If your BIR says you joined your current unit on the 10th, but your Chronological Record says the 15th, one of them is wrong",
+            ],
+          },
+          {
+            step: "Step 4: Print/Save",
+            details: [
+              "Click 'Printer-Friendly View' - a new window will open",
+              "Click 'Print' to save as a PDF for your records",
+              "Click 'File > Exit' or close the browser tab to return to MOL",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Missing TAD/Deployments",
+            details: [
+              "This is the most common error",
+              "If you went on a 7-month deployment but don't see an entry for it, your record is incomplete",
+            ],
+          },
+          {
+            step: "Overlapping Dates",
+            details: [
+              "Sometimes S-1 runs an entry that accidentally overlaps with a previous one",
+              "This creates a 'double-entry' for the same time period and can flag your record for an audit",
+            ],
+          },
+          {
+            step: "Code Confusion",
+            details: [
+              "You will see abbreviations like 'FR' (From) or 'TR' (To)",
+              "Don't ignore these—make sure the 'To' and 'From' units match your actual movements",
+            ],
+          },
+          {
+            step: "Assuming It's Done",
+            details: [
+              "Just because you have a set of orders doesn't mean the event hit your Chronological Record",
+              "Always check this page about a week after you check into a new unit",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do After You Review",
+        steps: [
+          {
+            step: "Fixing Errors",
+            details: [
+              "If you find a gap or mistake, take your Original Orders (with the 'Reporting/Detaching' endorsements) to your S-1",
+              "They are the only ones who can fix the 'Page 3' entries in MCTFS",
+            ],
+          },
+          {
+            step: "Board Readiness",
+            details: [
+              "If you are within a year of a promotion board, ensure this record is seamless",
+              "Boards look for a continuous, logical flow from day one to today",
+            ],
+          },
+          {
+            step: "Record Integrity",
+            details: [
+              "Once S-1 makes a correction, it typically takes 24-48 hours for the new entry to appear on this page in MOL",
+            ],
+          },
         ],
       },
     ],
   },
   "mol-education": {
     title: "Education",
-    description: "The Education record displays your civilian and military education history including off-duty education, Marine Corps Institute (MCI) courses, and service schools attended.",
-    capabilities: ["View civilian education", "View military education", "View MCI course completions", "View professional certifications"],
+    description: "This is the official list of every school, course, and degree you have completed since joining the Marine Corps. The Education report is the engine behind your JEPES Mental Agility score (for E-1 to E-4) and your Master Brief Sheet (for E-5 and above). If your off-duty college courses or MarineNet CEUs aren't listed here, you are leaving promotion points on the table.",
+    capabilities: ["View civilian education", "View military education", "View MCI course completions", "View professional certifications", "Check JEPES education points", "Verify degree status"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Education Records",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Education" },
-          { step: "Review your complete education history" },
-        ],
-      },
-      {
-        title: "Education Categories",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Civilian Education",
+            step: "Promotion Points",
             details: [
-              "High school diploma or GED",
-              "College credits and degrees",
-              "Technical certifications",
-              "Professional licenses",
+              "In 2026, the Marine Corps weights 'Self-Education' and 'Degrees' heavily",
+              "The Education report directly feeds your JEPES Mental Agility score",
+              "Missing courses or degrees means you are losing promotion points every single month",
             ],
           },
           {
-            step: "Military Education",
+            step: "Board Competitiveness",
             details: [
-              "MCI/MarineNet courses completed",
-              "Service schools attended",
-              "Joint courses",
-              "PME completion",
+              "For E-5 and above, education appears on your Master Brief Sheet",
+              "Boards see your civilian degrees and military education history",
+              "A complete education record shows you invest in your professional development",
             ],
           },
         ],
       },
       {
-        title: "Updating Education Records",
+        title: "How to Review Your Education",
         steps: [
-          { step: "Civilian education updates require official transcripts" },
-          { step: "Submit transcripts to your Education Center or S-1" },
-          { step: "MCI/MarineNet completions update automatically" },
-          { step: "School completions are entered by training sections" },
+          {
+            step: "Step 1: Access the Page",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Education",
+            ],
+          },
+          {
+            step: "Step 2: Review the Sections",
+            details: [
+              "Service Schools: MOS schools, PME (like Career School or Leading Marines), and formal military training",
+              "MarineNet/MCI: Every course you finish with a CEU value should appear here",
+              "Off-Duty Education: Civilian college credits and degrees (Associate, Bachelor, etc.)",
+              "Academic Tests: ASVAB scores and DLAB/DLPT (language) results",
+            ],
+          },
+          {
+            step: "Step 3: Print/Save",
+            details: [
+              "Click 'Printer Friendly' - a new window will open",
+              "Click 'Print' (Save as PDF) to keep a copy for your records",
+              "Click 'Close' to return to the main Education page",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "The MarineNet Lag",
+            details: [
+              "Just because you got a certificate on MarineNet doesn't mean it's in MOL",
+              "It can take 48-72 hours for the systems to sync",
+            ],
+          },
+          {
+            step: "Civilian Transcript Ghosting",
+            details: [
+              "Civilian degrees do NOT update automatically",
+              "You must have your college send an official transcript to your S-1 or the Joint Services Transcript (JST) operations center",
+            ],
+          },
+          {
+            step: "Duplicate Entries",
+            details: [
+              "Sometimes the same course will be listed twice with different dates",
+              "This can glitch your JEPES points - notify your S-1 if you see duplicates",
+            ],
+          },
+          {
+            step: "Proctor Codes",
+            details: [
+              "Many Marines finish a course but forget that it requires a proctored exam to actually 'count' for credit",
+              "Check that the course status says 'Completed' and not just 'Enrolled'",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do After Review",
+        steps: [
+          {
+            step: "Verify JEPES Points",
+            details: [
+              "Once a course appears on this page, check your JEPES dashboard",
+              "Under 'Mental Agility,' you should see your score increase based on new 'Self-Education' credits",
+            ],
+          },
+          {
+            step: "Updating Civilian Education",
+            details: [
+              "If your college degree is missing, request an official transcript",
+              "Most units require you to bring a sealed copy (or have an e-script sent) to the Education Center or S-1",
+            ],
+          },
+          {
+            step: "Quarterly Audit",
+            details: [
+              "Check this page every three months",
+              "As you complete more training, ensure the 'Service Schools' section stays updated so you are always board ready",
+            ],
+          },
         ],
       },
     ],
@@ -3769,443 +4035,1013 @@ const MOL_FUNCTIONAL_MODULES = {
   },
   "mol-imr": {
     title: "Individual Medical Readiness (IMR)",
-    description: "The Individual Medical Readiness report displays your current medical deployment eligibility status including immunizations, dental readiness, and periodic health assessments. This information is HIPAA protected.",
-    capabilities: ["View medical readiness status", "Check immunization status", "View dental readiness", "Check deployment eligibility"],
+    description: "Your 'medical scoreboard' that determines if you are deployable or if you'll be spending your morning at the BAS catching up on shots. Medical readiness is a go/no-go criteria for deployments, schools, and even leave in some units. This page helps you track your PHA, dental class, and immunizations so you can fix issues BEFORE your name shows up on the 'Hit List' at morning formation.",
+    capabilities: ["View medical readiness status", "Check immunization status", "View dental readiness", "Check deployment eligibility", "View PHA due date", "Track HIV testing currency"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Your IMR",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Individual Medical Readiness" },
-          { step: "Review your current medical readiness status" },
-          { step: "Note: IMR data is HIPAA protected and access is logged" },
-        ],
-      },
-      {
-        title: "IMR Categories",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Readiness Classifications",
+            step: "Deployability",
             details: [
-              "Fully Medically Ready (FMR) - Green status",
-              "Partially Medically Ready (PMR) - Yellow status",
-              "Not Medically Ready (NMR) - Red status",
+              "If you are 'Red' on your IMR, you are considered non-deployable",
+              "Your name will appear on the command's non-deployment list",
+              "You may be barred from schools, TAD, or certain opportunities until you are green",
             ],
           },
           {
-            step: "Components Tracked",
+            step: "HIPAA Protection",
             details: [
-              "Periodic Health Assessment (PHA) currency",
-              "Dental Readiness Classification (1, 2, 3, or 4)",
-              "Immunization status",
-              "HIV testing currency",
-              "Deployment Limiting Conditions",
+              "Your medical data is protected by HIPAA",
+              "Only you and authorized medical personnel can see the specifics of your record",
             ],
           },
         ],
       },
       {
-        title: "Improving Your IMR",
+        title: "How to Check Your Status",
         steps: [
-          { step: "Schedule overdue appointments through your medical/dental clinic" },
-          { step: "Complete your annual PHA" },
-          { step: "Maintain Dental Class 1 or 2 status" },
-          { step: "Keep immunizations current" },
-          { step: "Address any deployment limiting conditions with medical" },
+          {
+            step: "Step 1: Access the Page",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Individual Medical Readiness (IMR)",
+            ],
+          },
+          {
+            step: "Step 2: Check Your Overall Status",
+            details: [
+              "Fully Medically Ready (1FMR): You are green across the board",
+              "Partially Medically Ready (2PMR): You're missing something small, like a flu shot or booster",
+              "Not Medically Ready (3NMR): You have a condition (like Light/Limited Duty) that prevents deployment",
+              "Medical Readiness Indeterminate (4MRI): You are overdue for your big annual requirements (PHA or Dental)",
+            ],
+          },
+          {
+            step: "Step 3: Review the Details",
+            details: [
+              "PHA: Must be done every 365 days",
+              "Dental: You must be Class 1 or 2. Class 3 means you need urgent work; Class 4 means you're overdue for an exam",
+              "Immunizations: Check for 'Overdue' status on things like Tetanus or the annual Flu shot",
+              "Labs: Ensure your HIV draw (required every 2 years) and DNA are on file",
+            ],
+          },
+          {
+            step: "Step 4: Print/Save",
+            details: [
+              "Click 'Printer Friendly' - a new window will open",
+              "Click 'Print' to save as a PDF (keep this in your 'I Love Me' folder, especially before checking into a new unit)",
+              "Click 'Close' to return to MOL",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "The 3-Month Overdue Rule",
+            details: [
+              "A PHA or Dental exam is technically 'overdue' if not finished within 3 months of your due month",
+              "Don't wait until the last day",
+            ],
+          },
+          {
+            step: "MOL vs. Reality",
+            details: [
+              "If you just got a shot at a civilian pharmacy (like CVS) or a different base, it won't show up here automatically",
+              "You must bring the documentation to your BAS or Medical Clinic to have them manually update the MRRS system",
+            ],
+          },
+          {
+            step: "HIV Draw Delays",
+            details: [
+              "Results for HIV tests can take 1-2 weeks to reflect in the system",
+              "Don't wait until the day before a deployment to get your blood drawn",
+            ],
+          },
+          {
+            step: "Dental Class 3",
+            details: [
+              "If you are Dental Class 3, you are 'Red' even if you had your exam",
+              "You aren't 'Green' until the actual dental work (like a cavity fill) is completed and signed off",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do After Review",
+        steps: [
+          {
+            step: "Correcting Errors",
+            details: [
+              "If you see something 'Red' that you know you finished, take your yellow shot card or dental paperwork to Medical/Dental Admin",
+              "They update the MRRS database, which then 'talks' to MOL",
+            ],
+          },
+          {
+            step: "Scheduling the PHA",
+            details: [
+              "If your PHA is overdue, complete the online Periodic Health Assessment Questionnaire (PHAQ) before calling for an appointment",
+            ],
+          },
+          {
+            step: "24-72 Hour Sync",
+            details: [
+              "After Medical updates your record, it usually takes 1 to 3 days for the status to flip to 'Green' on your MOL homepage",
+            ],
+          },
         ],
       },
     ],
   },
   "mol-pay-leave": {
     title: "Pay and Leave Summary",
-    description: "The Pay and Leave Summary displays your current and prior pay period information including earnings, deductions, and leave balances.",
-    capabilities: ["View current pay", "View leave balances", "View earnings breakdown", "View deductions", "Track leave accrual"],
+    description: "Your personal dashboard for tracking your money and your 'days off' (leave). While the LES is your monthly receipt, this MOL report shows your career-long history and specific specialized leave balances. Leave is a right, but tracking it is your responsibility.",
+    capabilities: ["View current pay", "View leave balances", "View earnings breakdown", "View deductions", "Track leave accrual", "View combat leave balance", "Check respite leave"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Pay and Leave",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Pay and Leave Summary" },
-          { step: "Review your current and prior pay period information" },
-        ],
-      },
-      {
-        title: "Understanding Your Pay",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Earnings",
+            step: "Your Leave Balance",
             details: [
-              "Base Pay - Based on rank and years of service",
-              "BAH - Basic Allowance for Housing",
-              "BAS - Basic Allowance for Subsistence",
-              "Special pays and incentive pays",
+              "If the Marine Corps thinks you have 0 days of leave when you actually have 30, you won't be able to take that vacation you planned",
+              "Leave balances directly affect your ability to take time off",
             ],
           },
           {
-            step: "Deductions",
+            step: "Combat Leave Tax Benefits",
             details: [
-              "Federal and state taxes",
-              "SGLI premiums",
-              "TSP contributions",
-              "Allotments",
-              "Other deductions",
+              "If you've been in a combat zone, you earn Combat Leave which has massive tax benefits",
+              "When you use Combat Leave days, they are tax-exempt",
+              "If you don't ensure that leave is coded correctly, you could end up paying taxes on money that should be tax-free",
             ],
           },
         ],
       },
       {
-        title: "Leave Balances",
+        title: "How to Check Your Balances",
         steps: [
           {
-            step: "Leave Types",
+            step: "Step 1: Access the Report",
             details: [
-              "Current Balance - Available leave days",
-              "Projected Balance - End of fiscal year projection",
-              "Use/Lose - Leave that will be lost if not taken",
-              "Leave accrues at 2.5 days per month",
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Pay and Leave Summary Report",
+            ],
+          },
+          {
+            step: "Step 2: Audit Your Leave Types",
+            details: [
+              "Current Leave Balance: This is your 'Annual Leave.' Check your End Balance—this is what you have available to use right now",
+              "Combat Leave: If you deployed to a Combat Zone Tax Exclusion (CZTE) area, check this balance. When you use these days, they are tax-exempt",
+              "Respite Leave: If you've been deployed beyond normal rotation thresholds, check here for 'administrative absence' days (extra days off that don't count against your annual balance)",
+            ],
+          },
+          {
+            step: "Step 3: Review Leave Period History",
+            details: [
+              "Look at the From/To dates for every time you've been on leave",
+              "If you see a period where you stayed home but leave was deducted, or vice-versa, flag it",
+            ],
+          },
+          {
+            step: "Step 4: Print/Save",
+            details: [
+              "Click 'Printer-Friendly View'",
+              "Click 'Print' (or 'Save as PDF') - great document to bring to checkout if you are about to go on Terminal Leave",
+              "Click 'Close' to return to the main portal",
             ],
           },
         ],
       },
       {
-        title: "Detailed LES",
+        title: "Common Pitfalls to Avoid",
         steps: [
-          { step: "For complete details, access myPay at https://mypay.dfas.mil" },
-          { step: "MOL provides a summary view of pay information" },
+          {
+            step: "The Use/Lose Trap",
+            details: [
+              "You can only carry over 60 days of leave into the next fiscal year (October 1st)",
+              "Check this report in August—if you have 70 days, you need to take 10 days of leave or you will lose them",
+            ],
+          },
+          {
+            step: "Combat Leave vs. Annual Leave",
+            details: [
+              "When you submit a leave request, ensure you specify if you are using Combat Leave",
+              "If you don't, the system will pull from your regular Annual Leave first, and you'll miss the tax break",
+            ],
+          },
+          {
+            step: "Accrual Errors",
+            details: [
+              "You earn 2.5 days of leave per month",
+              "If your balance hasn't gone up in three months, your pay record is likely glitched in MCTFS",
+            ],
+          },
+          {
+            step: "Pending Requests",
+            details: [
+              "This report shows processed leave only",
+              "If you have a leave request currently sitting in your OIC's inbox, those days won't be deducted from your balance yet",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do After Review",
+        steps: [
+          {
+            step: "Correcting the Balance",
+            details: [
+              "If your leave balance is wrong (e.g., you were charged twice for the same trip), take a printout of this report and your Approved Leave Request from MOL to your S-1",
+            ],
+          },
+          {
+            step: "Selling Back Leave",
+            details: [
+              "If you are at the end of your enlistment and want to 'sell' your leave, this report tells you exactly how many days you can cash out (up to 60 days over a career)",
+            ],
+          },
+          {
+            step: "Submit a Request",
+            details: [
+              "Now that you know your balance, you can go to the Leave/Lib tab in MOL to actually request your next period of absence",
+            ],
+          },
         ],
       },
     ],
   },
   "mol-pers-tempo": {
     title: "Pers-Tempo",
-    description: "The Personnel Tempo (Pers-Tempo) report tracks your deployment tempo and time away from home station. This information is used to manage deployment equity and quality of life.",
-    capabilities: ["View deployment history", "Track time deployed", "View Pers-Tempo points", "Monitor deployment tempo"],
+    description: "Your official record of how much time you've spent away from your home station. In the Marine Corps, we track every day you aren't in your own bed, whether you're in a fighting hole in another country or just at a training exercise a few hours away. Congress mandates this tracking to prevent burnout and ensure Marines aren't deployed excessively without compensation.",
+    capabilities: ["View deployment history", "Track time deployed", "View Pers-Tempo points", "Monitor deployment tempo", "Check HDP-T eligibility", "Track dwell time"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Pers-Tempo",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Pers-Tempo" },
-          { step: "Review your deployment tempo tracking" },
-        ],
-      },
-      {
-        title: "Understanding Pers-Tempo",
+        title: "Why This Matters",
         steps: [
           {
-            step: "What is Tracked",
+            step: "Pay Eligibility",
             details: [
-              "Days deployed away from home station",
-              "TDY/TAD periods exceeding threshold",
-              "Deployment frequency",
-              "Cumulative days over rolling period",
+              "If your PersTempo exceeds certain thresholds (like being deployed for more than 220 consecutive days), you may become eligible for Hardship Duty Pay – Tempo (HDP-T)",
+              "As of 2026, HDP-T pays $495/month",
             ],
           },
           {
-            step: "Thresholds",
+            step: "Family Benefits",
             details: [
-              "High deployment tempo triggers command review",
-              "Affects deployment eligibility considerations",
-              "Used for assignment and deployment planning",
+              "These records are often used to verify eligibility for Family Separation Allowance (FSA)",
+            ],
+          },
+          {
+            step: "Dwell Time",
+            details: [
+              "It helps the Marine Corps calculate your 'Dwell Time'—the amount of time you should stay home before being sent out again",
+              "This affects future deployment decisions and assignment planning",
             ],
           },
         ],
       },
       {
-        title: "Pers-Tempo Corrections",
+        title: "How to View Your Pace",
         steps: [
-          { step: "If deployment dates are incorrect, contact your S-1" },
-          { step: "Provide orders or travel documents for verification" },
-          { step: "Corrections are made through official channels" },
+          {
+            step: "Step 1: Access the Report",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > PersTempo Report",
+            ],
+          },
+          {
+            step: "Step 2: Understand the Codes",
+            details: [
+              "Look for the Type Code (a 3-character identifier)",
+              "WAO: Forward Presence Operations (standard deployment)",
+              "WAA: Deployment (often triggers FSA)",
+              "WBJ: Joint or Combined Exercise",
+            ],
+          },
+          {
+            step: "Step 3: Audit Your Dates",
+            details: [
+              "Ensure the 'Start Date' and 'End Date' match your actual travel dates",
+              "Even a one-day error can affect your total count toward high-tempo pay",
+            ],
+          },
+          {
+            step: "Step 4: Print/Save",
+            details: [
+              "Click 'Printer-Friendly View'",
+              "Click 'Print' (Save as PDF) - vital proof if you ever need to claim back-pay for a deployment",
+              "Click 'Close' to return to the PersTempo page",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Open Events",
+            details: [
+              "If a deployment ended months ago but the report shows no 'End Date,' you are still 'clocking' PersTempo in the system",
+              "This can block you from being joined to new orders later",
+            ],
+          },
+          {
+            step: "Training vs. Deployment",
+            details: [
+              "Not all time away is a 'Deployment'",
+              "Exercises (like ITX or MWX) are tracked as Non-Deployment events",
+              "They still count toward your total PersTempo, but they don't count toward certain 'deployment-only' pays",
+            ],
+          },
+          {
+            step: "The 220-Day Mark",
+            details: [
+              "If you are approaching 220 days away, check this report daily",
+              "If it isn't accurate, your HDP-T pay won't trigger automatically",
+            ],
+          },
+          {
+            step: "Leave Within Deployment",
+            details: [
+              "If you take 'Rest and Recuperation' (R&R) leave for more than 30 days, your consecutive day counter might reset to zero",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do After Review",
+        steps: [
+          {
+            step: "Identify Gaps",
+            details: [
+              "If a major training exercise or deployment is missing, grab your TAD Orders or Voucher and go to your S-1",
+              "They must run a 'PersTempo Entry' in MCTFS",
+            ],
+          },
+          {
+            step: "Watch Your LES",
+            details: [
+              "If your PersTempo shows you've hit a high-threshold, keep an eye on your Leave and Earnings Statement for a new line item under 'Entitlements'",
+            ],
+          },
+          {
+            step: "Check Dwell Time",
+            details: [
+              "Use your total days away to talk to your Career Planner about your 'Dwell' status before you volunteer for another TAD or deployment",
+            ],
+          },
         ],
       },
     ],
   },
   "mol-psmc": {
     title: "Personal Statement of Military Compensation (PSMC)",
-    description: "The Personal Statement of Military Compensation provides a comprehensive breakdown of your total compensation value, including pay, allowances, benefits, and tax advantages.",
-    capabilities: ["View total compensation", "View tax advantage calculations", "View benefits value", "Print compensation statement"],
+    description: "One of the most eye-opening documents you can pull from MOL. While your LES shows what you take home, the PSMC shows the actual value of your service in 'civilian dollars.' Most Marines look at their base pay and think they aren't making much, but because a huge chunk of your pay (BAH and BAS) is tax-free, your actual purchasing power is much higher.",
+    capabilities: ["View total compensation", "View tax advantage calculations", "View benefits value", "Print compensation statement", "Calculate grossed-up income", "Compare to civilian salary"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Your PSMC",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Personal Statement of Military Compensation" },
-          { step: "Review your total compensation breakdown" },
-        ],
-      },
-      {
-        title: "PSMC Components",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Cash Compensation",
+            step: "Buying a House",
             details: [
-              "Base Pay",
-              "Basic Allowance for Housing (BAH)",
-              "Basic Allowance for Subsistence (BAS)",
-              "Special and incentive pays",
+              "When you apply for a mortgage, a bank might only look at your taxable income (W-2)",
+              "The PSMC proves your 'grossed-up' income, helping you qualify for a larger loan",
             ],
           },
           {
-            step: "Tax Advantages",
+            step: "Civilian Job Hunting",
             details: [
-              "BAH and BAS are not taxed",
-              "Combat zone tax exclusion when applicable",
-              "Tax savings calculated and displayed",
-            ],
-          },
-          {
-            step: "Benefits Value",
-            details: [
-              "Healthcare (TRICARE)",
-              "Life insurance (SGLI)",
-              "Retirement contributions",
-              "Education benefits",
-              "Leave accrual",
+              "If you are thinking about getting out, you shouldn't accept a civilian job that pays 'the same as your base pay'",
+              "You need to find a job that pays what your PSMC says, or you will actually be taking a pay cut",
             ],
           },
         ],
       },
       {
-        title: "Printing Your PSMC",
+        title: "How to View and Print Your PSMC",
         steps: [
-          { step: "Click 'Printer Friendly View' to generate printable version" },
-          { step: "Report includes a watermark for official use" },
-          { step: "In IE, enable 'Print Background Colors and Images' for watermark" },
-          { step: "Useful for financial planning and loan applications" },
+          {
+            step: "Step 1: Access the Report",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Personal Statement of Military Compensation",
+            ],
+          },
+          {
+            step: "Step 2: Summary View (Default)",
+            details: [
+              "This gives you the big-picture numbers: Basic Pay, Allowances, and the 'Tax Advantage'",
+              "The Tax Advantage shows how much money you saved by not paying taxes on BAH/BAS",
+            ],
+          },
+          {
+            step: "Step 3: Detailed View",
+            details: [
+              "Click the 'Detailed PSMC' link at the top",
+              "This breaks down 'Indirect Compensation' like the value of your medical/dental coverage (Tricare)",
+              "It also shows the estimated value of using the Commissary/Exchange",
+            ],
+          },
+          {
+            step: "Step 4: Print/Save",
+            details: [
+              "Click 'Printer Friendly' link",
+              "Click 'Print' - if the watermark or background colors don't show up, enable 'Print Background Colors and Images' in your browser settings",
+              "Choose 'Save as PDF' to keep this for your mortgage lender or transition binder",
+              "Click 'Close' to return to the main portal",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Assuming It's 100% Exact",
+            details: [
+              "The PSMC is an estimate",
+              "It doesn't always account for specific state tax laws or sudden changes in special pays (like Jump Pay or Dive Pay)",
+            ],
+          },
+          {
+            step: "The Tax Advantage Confusion",
+            details: [
+              "Marines often overlook the 'Federal Tax Advantage' line",
+              "This represents the amount of extra gross salary a civilian would have to earn to have the same 'take-home' pay as you",
+            ],
+          },
+          {
+            step: "Browser Issues",
+            details: [
+              "If you are using Chrome or Edge and the report looks weird or won't print, try enabling 'Background Graphics' in your browser's print menu",
+            ],
+          },
+          {
+            step: "Ignoring Indirect Benefits",
+            details: [
+              "Don't ignore the 'Medical/Dental' value",
+              "In the civilian world, a family health plan can cost $1,500+ a month",
+              "The PSMC adds this value so you can see your true worth",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do After Review",
+        steps: [
+          {
+            step: "Transition Planning",
+            details: [
+              "If you are within 18 months of EAS, bring this report to your TRS (Transition Readiness Seminar)",
+              "It will help you build a realistic budget for civilian life",
+            ],
+          },
+          {
+            step: "Loan Applications",
+            details: [
+              "If you are applying for a car or home loan, provide the PSMC alongside your LES",
+              "It gives the lender a more accurate picture of your ability to pay",
+            ],
+          },
+          {
+            step: "Financial Health Check",
+            details: [
+              "Compare your PSMC with your BRS/TSP Information page",
+              "If your 'Total Compensation' is high but your TSP contributions are low, it might be time to increase your savings",
+            ],
+          },
         ],
       },
     ],
   },
   "mol-red": {
     title: "Record of Emergency Data (RED)",
-    description: "The Record of Emergency Data contains your emergency contact information, SGLI beneficiaries, and next of kin designations. Keeping your RED current is critical for casualty notification and survivor benefits.",
-    capabilities: ["View emergency contacts", "Update beneficiaries", "Certify RED", "Update next of kin", "Manage SGLI"],
+    description: "The most important administrative document you will ever sign. Also known as the DD Form 93, this is the official 'In Case of Emergency' document the Marine Corps uses to notify your family if something happens to you. If you are injured or killed, the Marine Corps uses this exact page to find your next of kin.",
+    capabilities: ["View emergency contacts", "Update beneficiaries", "Certify RED", "Update next of kin", "Manage death gratuity", "Designate PADD"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Your RED",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Record of Emergency Data" },
-          { step: "Review all sections for accuracy" },
-        ],
-      },
-      {
-        title: "RED Sections",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Family Information",
+            step: "Notification",
             details: [
-              "Spouse and children addresses",
-              "Can set separate addresses for each family member",
-              "Spouse preferred language for notifications",
-            ],
-          },
-          {
-            step: "Parents",
-            details: [
-              "Parent contact information",
-              "Deceased status if applicable",
-              "Separate addresses for each parent",
-            ],
-          },
-          {
-            step: "Pay Arrears",
-            details: [
-              "Beneficiaries for unpaid pay and allowances",
-              "Percentage allocation (must total 100%)",
-              "Up to multiple beneficiaries allowed",
-            ],
-          },
-          {
-            step: "Next of Kin",
-            details: [
-              "Up to three NOK contacts",
-              "Relationship and phone numbers",
-              "Directions to primary NOK residence",
+              "Lists who the Casualty Assistance Program should contact first if you are injured or killed",
+              "Physical addresses are required - the Marine Corps sends a Casualty Assistance Calls Officer (CACO) in person",
             ],
           },
           {
             step: "Death Gratuity",
             details: [
-              "Primary: spouse and minor children (by law)",
-              "Additional beneficiaries for remaining amount",
-              "Up to 10 beneficiaries, must total 100%",
+              "Designates who receives the immediate $100,000 tax-free payment to cover funeral and travel costs",
+              "This is separate from your SGLI life insurance",
             ],
           },
           {
-            step: "PADD (Person Authorized to Direct Disposition)",
+            step: "Unpaid Pay",
             details: [
-              "Person who makes funeral arrangements",
-              "Must be at least 18 years old",
-              "Your designation supersedes legal order of precedence",
+              "Ensures your final paycheck and unused leave go to the person you choose",
+              "Without this designation, pay goes to the next person in line by law (which may not be who you want)",
             ],
           },
         ],
       },
       {
-        title: "Updating and Certifying",
+        title: "How to Update and Certify Your RED",
         steps: [
-          { step: "Click 'Edit' next to any section to make changes" },
-          { step: "Editing information automatically certifies that section" },
-          { step: "If no changes needed, click 'Certify' to confirm accuracy" },
-          { step: "Review RED at least annually or after major life events" },
-          { step: "A certified RED is required for deployment readiness" },
+          {
+            step: "Step 1: Access the Page",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Record of Emergency Data (RED)",
+            ],
+          },
+          {
+            step: "Step 2: Verify the Data",
+            details: [
+              "Check your spouse, children, and parents",
+              "Ensure addresses and phone numbers are current",
+              "Verify beneficiary designations are correct",
+            ],
+          },
+          {
+            step: "Step 3: To Update (Edit)",
+            details: [
+              "Click the 'Edit' link next to the section you need to change (e.g., 'Emergency Contact' or 'Beneficiary')",
+              "Enter the new information",
+              "Saving an edit automatically 'certifies' that section",
+            ],
+          },
+          {
+            step: "Step 4: To Certify (No Changes)",
+            details: [
+              "If everything is correct, click the 'Certify' button at the bottom",
+              "Click 'Confirm' on the pop-up",
+              "The 'Certification Date' will update once the system (MCTFS) processes it",
+            ],
+          },
+          {
+            step: "Step 5: Print/Save",
+            details: [
+              "Click 'Printer-Friendly View'",
+              "Click 'Print' (Save as PDF) - this is a required document for every pre-deployment 'shred' or 'audit'",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "The SGLI Trap",
+            details: [
+              "Updating your RED does NOT update your SGLI (Life Insurance)",
+              "You must go to milConnect (SOES) to change your life insurance beneficiaries",
+              "These are two separate systems - update BOTH",
+            ],
+          },
+          {
+            step: "PO Boxes",
+            details: [
+              "Do NOT use a PO Box for emergency notification addresses",
+              "The Marine Corps needs a physical address where a CACO can find your family",
+            ],
+          },
+          {
+            step: "The Ex-Spouse Error",
+            details: [
+              "If you get divorced and don't update this page, your $100,000 death gratuity will legally go to your ex-spouse",
+              "This is true regardless of what your will says",
+              "Update immediately after any change in marital status",
+            ],
+          },
+          {
+            step: "Pending Status",
+            details: [
+              "If you see data in bold red font, it means the change is 'Pending' and hasn't hit the master record yet",
+              "Don't assume it's 'done' until the red text turns black",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What Happens After You Finish",
+        steps: [
+          {
+            step: "MCTFS Processing",
+            details: [
+              "It usually takes 24-48 hours for your certification to post",
+              "Once it does, the red 'Out of Date' flag on your MOL homepage will disappear",
+            ],
+          },
+          {
+            step: "Audit Your SGLI",
+            details: [
+              "Since you just did your RED, your next step should be logging into milConnect to ensure your SGLV 8286 (SGLI) matches your new RED",
+            ],
+          },
+          {
+            step: "PADD Designation",
+            details: [
+              "Ensure you have designated a Person Authorized to Direct Disposition (PADD)",
+              "This is the person you trust to make your funeral arrangements",
+            ],
+          },
         ],
       },
     ],
   },
   "mol-reserve-drill": {
     title: "Reserve Drill Summary",
-    description: "The Reserve Drill Summary displays drill attendance records for reserve Marines including drills attended, missed, rescheduled, and makeup drills.",
-    capabilities: ["View drill attendance", "Track missed drills", "View rescheduled drills", "Monitor participation status"],
-    userTypes: ["Reserve Marines", "Individual Reserve Component Members"],
+    description: "Your official record of attendance for Inactive Duty Training (IDT). If you are an SMCR or IMA Marine, this page is where you verify that you are being credited—and paid—for your time. For a Reservist, your drill points are your 'currency.'",
+    capabilities: ["View drill attendance", "Track missed drills", "View rescheduled drills", "Monitor participation status", "Verify drill pay", "Check retirement points"],
+    userTypes: ["Reserve Marines", "Individual Reserve Component Members", "IMA Marines"],
     guide: [
       {
-        title: "Accessing Drill Summary",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Reserve Drill Summary" },
-          { step: "Review your drill attendance history" },
-        ],
-      },
-      {
-        title: "Drill Information",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Attendance Categories",
+            step: "Pay",
             details: [
-              "Attended - Drills completed as scheduled",
-              "Excused Absence - Approved absences",
-              "Unexcused Absence - Unapproved missed drills",
-              "Rescheduled - Drills moved to different dates",
-              "Makeup - Drills completed to make up for absences",
+              "Every drill period (4 hours) equals 1/30th of your monthly base pay",
+              "If a drill is missed or not recorded, your paycheck will be short",
             ],
           },
           {
-            step: "Participation Requirements",
+            step: "Retirement Points",
             details: [
-              "Satisfactory participation required for good year credit",
-              "Minimum attendance requirements per fiscal year",
-              "Excessive unexcused absences may result in administrative action",
+              "Each drill counts as one point toward retirement",
+              "You need 50 points in an anniversary year for a 'satisfactory year'",
+            ],
+          },
+          {
+            step: "Career Readiness",
+            details: [
+              "If you have too many 'Unexcused Absences' (UA), you can be processed for administrative separation",
+              "This report allows you to catch administrative errors before they affect your career",
             ],
           },
         ],
       },
       {
-        title: "Drill Issues",
+        title: "How to Navigate the Summary",
         steps: [
-          { step: "For drill pay issues, contact your unit administrator" },
-          { step: "For attendance corrections, provide documentation to your unit" },
-          { step: "Reschedule requests must be approved in advance" },
+          {
+            step: "Step 1: Access the Report",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Reserve Drill Summary",
+            ],
+          },
+          {
+            step: "Step 2: Review the Drill Status",
+            details: [
+              "Satisfactory (SAT): You attended and were mustered",
+              "Rescheduled (RS): You moved a drill to a different date with prior approval",
+              "Excused Absence (EA): You were cleared to miss the drill but won't be paid/receive points",
+              "Unexcused Absence (UA): You missed drill without approval - FIX THIS IMMEDIATELY",
+            ],
+          },
+          {
+            step: "Step 3: Identify Drill Types",
+            details: [
+              "Regular (Reg): Your standard 48 drills per year",
+              "ATP (Additional Training Period): Extra drills for specific training or prep",
+              "RMP (Readiness Management Period): Drills used for medical, admin, or unit prep",
+            ],
+          },
+          {
+            step: "Step 4: Print/Save",
+            details: [
+              "Click 'Printer Friendly View'",
+              "Click 'Print' (Save as PDF) - vital document if there is a pay discrepancy",
+              "Click 'Close' to return to the main page",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "The Muster Delay",
+            details: [
+              "It often takes 3-5 days after a drill weekend for the S-1 to finish the 'Muster' process",
+              "Don't panic if your Saturday drill isn't showing as 'SAT' on Sunday evening",
+            ],
+          },
+          {
+            step: "Double Drills",
+            details: [
+              "One calendar day can have a maximum of two drill periods",
+              "If you worked 12 hours but only see two drills, that is normal",
+            ],
+          },
+          {
+            step: "Fiscal Year vs. Anniversary Year",
+            details: [
+              "Your 48 paid drills are tied to the Fiscal Year (Oct-Sept)",
+              "But your retirement points are tied to your Anniversary Year",
+              "Make sure you are checking the right window",
+            ],
+          },
+          {
+            step: "Ghost Drills",
+            details: [
+              "If you see 'Scheduled' drills from months ago that were never updated to 'SAT' or 'EA', notify your Platoon Sergeant",
+              "These 'hanging' drills can prevent you from getting paid for future drills",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do After Review",
+        steps: [
+          {
+            step: "Fixing a UA",
+            details: [
+              "If you were present but are marked 'UA', provide your Muster Sheet (the paper you signed at drill) to your S-1 or I&I Staff",
+            ],
+          },
+          {
+            step: "Verify Pay",
+            details: [
+              "Once a drill shows as 'SAT', check your myPay account about a week later",
+              "You should see a 'Net Pay' entry for that specific drill period",
+            ],
+          },
+          {
+            step: "Update Your CRCR",
+            details: [
+              "Every 'SAT' drill on this summary should eventually migrate to your Career Retirement Credit Report (CRCR)",
+              "Check your CRCR once a month to ensure the totals match",
+            ],
+          },
         ],
       },
     ],
   },
   "mol-ros": {
     title: "Record of Service (ROS)",
-    description: "The Record of Service displays your complete service record including proficiency and conduct marks, composite scores (for E1-E5), and fitness report information.",
-    capabilities: ["View proficiency marks", "View conduct marks", "View composite scores", "Track performance history"],
+    description: "The primary report for enlisted Marines (Sergeant and below) to track their promotion metrics. It serves as the bridge between your past performance and your current standing in the Junior Enlisted Performance Evaluation System (JEPES). In the 2026 Marine Corps, your promotion is almost entirely data-driven, and the ROS is where you verify the 'Command Input' part of your score.",
+    capabilities: ["View proficiency marks", "View conduct marks", "View composite scores", "Track performance history", "View JEPES command input", "Check average in grade"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Your ROS",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Record of Service" },
-          { step: "Review your complete service record" },
-        ],
-      },
-      {
-        title: "ROS Contents",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Proficiency and Conduct Marks",
+            step: "Promotion Score",
             details: [
-              "Proficiency marks (0.0 to 5.0 scale)",
-              "Conduct marks (0.0 to 5.0 scale)",
-              "Marking period dates",
-              "Average marks calculation",
+              "The ROS is where you verify the 'Command Input' (the subjective part of your score)",
+              "This includes Character, MOS/Mission, and Leadership marks",
+              "If your command marks aren't being reported or are lower than expected, your JEPES score will stay stagnant",
             ],
           },
           {
-            step: "Composite Scores (E1-E5)",
+            step: "Historical Record",
             details: [
-              "Rifle score points",
-              "PFT/CFT score points",
-              "Self-education points",
-              "Commander's evaluation points",
-              "Time in grade/service points",
-              "Total composite score",
+              "Shows your historical Proficiency and Conduct marks",
+              "If you were in the Corps before 2021, old Pro/Con marks have been converted to the JEPES scale",
+              "Your total career 'average in grade' is calculated here",
             ],
           },
         ],
       },
       {
-        title: "Using Your ROS",
+        title: "How to Navigate Your ROS",
         steps: [
-          { step: "Track your promotion competitiveness" },
-          { step: "Identify areas for improvement" },
-          { step: "Verify marks are accurately recorded" },
-          { step: "For discrepancies, contact your S-1 with documentation" },
+          {
+            step: "Step 1: Access the Report",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Record of Service",
+            ],
+          },
+          {
+            step: "Step 2: Review Command Marks (JEPES)",
+            details: [
+              "Look for the three pillars: Individual Character, MOS/Mission Accomplishment, and Leadership",
+              "These are scored on a scale of 0.0 to 5.0",
+              "2.0-3.0 means you 'meet expectations'",
+              "3.0-4.0 means you are 'above average'",
+              "4.0-5.0 is reserved for exceptional 'Water Walkers'",
+            ],
+          },
+          {
+            step: "Step 3: Check Composite/JEPES Score",
+            details: [
+              "Verify your total points",
+              "This report shows how your marks contribute to the 250 points available in the 'Command Input' category of JEPES",
+            ],
+          },
+          {
+            step: "Step 4: Historical Pro/Con",
+            details: [
+              "If you were in the Corps before 2021, you will see your old Proficiency and Conduct marks",
+              "These have been converted into the JEPES scale",
+            ],
+          },
+          {
+            step: "Step 5: Print/Save",
+            details: [
+              "Click 'Printer-Friendly View'",
+              "Click 'Print' (Save as PDF) - keep this copy for remedial promotion requests",
+              "Click 'Close' to return to the main ROS page",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "The N/A Trap",
+            details: [
+              "If your ROS shows 'N/A' for recent marks, your command hasn't run an 'occasion' (like a Semi-Annual or Transfer) for you",
+              "Without these marks, your JEPES score is incomplete",
+            ],
+          },
+          {
+            step: "Comparing to the Old System",
+            details: [
+              "Don't confuse a 4.5 in the old system with a 4.5 now",
+              "A 4.5 in JEPES is extremely rare and requires high-level approval",
+              "It was common in the old Pro/Con system",
+            ],
+          },
+          {
+            step: "Cutoff Dates",
+            details: [
+              "The Marine Corps pulls data for promotions around the 20th of each month",
+              "If your ROS updates on the 25th, it won't affect your rank until the following month",
+            ],
+          },
+          {
+            step: "Missing Averages",
+            details: [
+              "Ensure your 'Average in Grade' is calculated",
+              "If the math looks wrong, it usually means a historical entry is missing a 'Date To' or 'Date From'",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do After Review",
+        steps: [
+          {
+            step: "Verify on JEPES Dashboard",
+            details: [
+              "Once you see new marks on your ROS, head over to the JEPES Marine Dashboard in MOL",
+              "You should see your 'Command Input' score update within 24 hours",
+            ],
+          },
+          {
+            step: "Address Low Marks",
+            details: [
+              "If your marks are below a 2.0, your command is required to provide you with counseling and documentation",
+              "Use this report as a talking point with your NCOs to find out how to improve",
+            ],
+          },
+          {
+            step: "Monitor Cutting Scores",
+            details: [
+              "Compare the score on your ROS to the monthly Cutting Scores posted on the Manpower & Reserve Affairs website",
+              "If you are above the score and PME complete, you're in the window for promotion",
+            ],
+          },
         ],
       },
     ],
   },
   "mol-w2": {
     title: "W2 Tax Statements",
-    description: "Access and download your W-2 tax statements in PDF format. You can view current and prior year W-2s and manage your electronic delivery preferences.",
-    capabilities: ["View W-2 statements", "Download W-2 PDFs", "Manage delivery preferences", "Access prior year W-2s"],
+    description: "The official record of your earnings and the taxes withheld by the government, which you need to file your taxes every year. Your W-2 is the 'source of truth' for the IRS. If you don't download it, you can't file your taxes, which can lead to late fees or missed refunds.",
+    capabilities: ["View W-2 statements", "Download W-2 PDFs", "Manage delivery preferences", "Access prior year W-2s", "View W-2C corrections", "Set electronic delivery"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing W-2 Statements",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > W2 Tax Statements" },
-          { step: "Select the tax year you need from the dropdown" },
-        ],
-      },
-      {
-        title: "Electronic Delivery Setup",
+        title: "Why This Matters",
         steps: [
           {
-            step: "To Access Electronic W-2",
+            step: "Tax Filing Requirement",
             details: [
-              "If delivery method shows 'None' or 'Hard Copy', change to Electronic first",
-              "Click to change your delivery preference",
-              "Electronic delivery provides faster access",
+              "Your W-2 is the source of truth for the IRS",
+              "You cannot file your taxes without it",
+              "Late filing can lead to penalties and missed refunds",
+            ],
+          },
+          {
+            step: "Delivery Method Security",
+            details: [
+              "Keeping your delivery method updated ensures your sensitive financial info isn't mailed to an old barracks room",
+              "Electronic delivery is faster and more secure",
             ],
           },
         ],
       },
       {
-        title: "Downloading Your W-2",
+        title: "How to Get Your W-2",
         steps: [
-          { step: "Select the desired year from 'Available W2s' dropdown" },
-          { step: "Click Submit to generate the PDF" },
-          { step: "W-2 opens in PDF format - requires Adobe Reader" },
-          { step: "Save or print for your tax filing needs" },
+          {
+            step: "Step 1: Access the Page",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Tax Statements (W-2)",
+            ],
+          },
+          {
+            step: "Step 2: Check Delivery Method",
+            details: [
+              "If you see 'Electronic Only', you are good to go",
+              "If it says 'Hard Copy' or 'None', click the link to change it to 'Electronic Only'",
+              "You must set electronic delivery BEFORE the year's W-2 will appear in the dropdown menu",
+            ],
+          },
+          {
+            step: "Step 3: Download the Form",
+            details: [
+              "Select the year you need from the 'Available W-2s' drop-down list",
+              "Click 'Submit'",
+              "The PDF will generate - save this file to a secure location (encrypted thumb drive or password-protected folder)",
+            ],
+          },
+          {
+            step: "Step 4: Verify Information",
+            details: [
+              "Look at the address on the W-2",
+              "If it is wrong, go to the Personal Contact Information page in MOL and update it immediately",
+              "This ensures next year's form is correct",
+            ],
+          },
         ],
       },
       {
-        title: "Important Notes",
+        title: "Common Pitfalls to Avoid",
         steps: [
           {
-            step: "Availability",
+            step: "The Restricted Message",
             details: [
-              "Available for Active Duty and Reserve Marines (not separated/retired)",
-              "Separated/Retired Marines: W-2 available for one year after separation",
-              "Separated members cannot change delivery method",
+              "If the screen says the option is restricted, it's because you haven't opted into electronic delivery yet",
+              "Click the 'Hard Copy' or 'None' link to flip it to 'Electronic Only'",
             ],
           },
-          { step: "Keep your home address current in Personal Contact Information for future paper W-2s" },
-          { step: "W-2s are typically available by late January each year" },
+          {
+            step: "Separated/Retired Status",
+            details: [
+              "If you have already left the Marine Corps, you only have ONE YEAR to grab your W-2 from MOL",
+              "After that, you'll have to deal with DFAS directly, which is a much slower process",
+            ],
+          },
+          {
+            step: "The W-2C",
+            details: [
+              "If you see a 'W-2C' in the list, that means your original W-2 was corrected",
+              "ALWAYS use the W-2C for your taxes as it contains the most accurate, updated info",
+            ],
+          },
+          {
+            step: "System Timeouts",
+            details: [
+              "If you get a 'Web service failed' message, don't panic",
+              "The servers are usually slammed in late January/early February",
+              "Close your browser and try again during off-peak hours (late at night or early morning)",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do After You Get It",
+        steps: [
+          {
+            step: "File Your Taxes",
+            details: [
+              "Use the data from your W-2 to file via MilTax (available through Military OneSource) or another tax service",
+            ],
+          },
+          {
+            step: "Check myPay",
+            details: [
+              "If MOL is giving you errors, you can always go directly to myPay (https://mypay.dfas.mil) to find your tax statements",
+              "They are usually posted there a few days before they hit MOL",
+            ],
+          },
+          {
+            step: "Audit Your Address",
+            details: [
+              "While you're in the tax mindset, double-check your State of Legal Residence on your LES",
+              "If you moved and didn't update your state, you might be paying taxes to a state you no longer live in",
+            ],
+          },
         ],
       },
     ],
