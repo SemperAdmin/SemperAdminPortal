@@ -5855,6 +5855,9 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     // Marine Online - Administration & Reference
     "mol-functional-modules": <FunctionalModulesPage data={{ modules: MOL_FUNCTIONAL_MODULES, references: MOL_DATA.references }} />,
     "mol-battalion-permissions": <BattalionPermissionsContent data={BATTALION_PERMISSIONS_DATA} references={BATTALION_PERMISSIONS_DATA.references} />,
+    // Marine Online - Administrative Actions
+    "mol-epar": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-epar"]} references={MOL_DATA.references} />,
+    "mol-trouble-ticket-system": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-trouble-ticket-system"]} references={MOL_DATA.references} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -6139,7 +6142,8 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "mol-leave-balance",
     "mol-cancel-leave",
     // Administrative Actions
-    "mol-sgli-updates",
+    "mol-epar",
+    "mol-trouble-ticket-system",
     "mol-dependency-updates",
     "mol-address-changes",
     // Administration & Reference

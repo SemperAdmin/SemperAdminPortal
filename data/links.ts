@@ -252,15 +252,15 @@ export const reportGroups: CatalogGroup[] = [
   {
     name: "Portals",
     items: [
-      { title: "DiaryMate", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/RFF-KCI/Dev%2BTeam/Archived/Temp%2BBAH%2BMHA%2BIncrease/Command%2BTemp%2BBAH/DiaryMate%2BV4&ui_appbar=false&ui_navbar=false&amp%3bui_appbar=false&amp%3bui_navbar=false" },
+      { title: "DiaryMate", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/RFF-KCI/Dev%2BTeam/Archived/Temp%2BBAH%2BMHA%2BIncrease/Command%2BTemp%2BBAH/DiaryMate%2BV4&ui_appbar=false&ui_navbar=false" },
       { title: "TTC Search Dashboard – Multi-Tab Lookup Tool", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/RFF-KCI/Dev%2BTeam/Archived/Temp%2BBAH%2BMHA%2BIncrease/Command%2BTemp%2BBAH/TTC%2BSearch%2BDashboard%2B%25E2%2580%2593%2BMulti-Tab%2BLookup%2BTool&ui_appbar=false&ui_navbar=false" },
     ],
   },
   {
     name: "Legal & Manpower Portals",
     items: [
-      { title: "Legal Command Center", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Portals/Legal%2BCommand%2BCenter/Legal%2BCommand%2BCenter%2BWelcome%2BPage&ui_appbar=false&ui_navbar=false&amp%3bui_appbar=false&amp%3bui_navbar=false" },
-      { title: "Manpower Management", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Portals/Manpower%2BManagement/Manpower%2BManagement&ui_appbar=false&ui_navbar=false&amp%3bui_appbar=false&amp%3bui_navbar=false" },
+      { title: "Legal Command Center", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Portals/Legal%2BCommand%2BCenter/Legal%2BCommand%2BCenter%2BWelcome%2BPage&ui_appbar=false&ui_navbar=false" },
+      { title: "Manpower Management", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Portals/Manpower%2BManagement/Manpower%2BManagement&ui_appbar=false&ui_navbar=false" },
     ],
   },
   {
@@ -359,8 +359,8 @@ export const unitUserReportGroups: CatalogGroup[] = [
   {
     name: "Portals",
     items: [
-      { title: "Legal Command Center", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Portals/Legal%2BCommand%2BCenter/Legal%2BCommand%2BCenter%2BWelcome%2BPage&ui_appbar=false&ui_navbar=false&amp%3bui_appbar=false&amp%3bui_navbar=false" },
-      { title: "Manpower Management", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Portals/Manpower%2BManagement/Manpower%2BManagement&ui_appbar=false&ui_navbar=false&amp%3bui_appbar=false&amp%3bui_navbar=false" },
+      { title: "Legal Command Center", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Portals/Legal%2BCommand%2BCenter/Legal%2BCommand%2BCenter%2BWelcome%2BPage&ui_appbar=false&ui_navbar=false" },
+      { title: "Manpower Management", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Portals/Manpower%2BManagement/Manpower%2BManagement&ui_appbar=false&ui_navbar=false" },
     ],
   },
   {
@@ -370,7 +370,7 @@ export const unitUserReportGroups: CatalogGroup[] = [
       { title: "Parental Leave Tracker", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Parental%2BLeave%2BTracker" },
       { title: "Report Builder", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Report%2BBuilder" },
       { title: "Transition Readiness (On Rolls)", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Transition%2BReadiness%2B%2528On%2BRolls%2B-%2BTFAS%2529%2B%2528SR%2B2-20%2529" },
-      { title: "TTC Error By Unit", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/MISSO%2B06/MISSO-06%2BReports%2Bfor%2BUnits/TTC%2BError%2BBy%2BUnit&amp%3bprompt=false" },
+      { title: "TTC Error By Unit", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/MISSO%2B06/MISSO-06%2BReports%2Bfor%2BUnits/TTC%2BError%2BBy%2BUnit&prompt=false" },
     ],
   },
   {

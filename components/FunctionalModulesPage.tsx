@@ -230,16 +230,16 @@ export default function FunctionalModulesPage({
                         Step-by-Step Guide
                       </h4>
                       {selectedModuleData.guide.map((section, sectionIdx) => (
-                        <div key={sectionIdx} className="rounded-lg border border-black/10 bg-[var(--sa-cream)]/20 p-3 dark:border-white/10 dark:bg-white/5">
+                        <div key={section.title} className="rounded-lg border border-black/10 bg-[var(--sa-cream)]/20 p-3 dark:border-white/10 dark:bg-white/5">
                           <h5 className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{section.title}</h5>
                           <ol className="mt-2 space-y-2 pl-4">
                             {section.steps.map((stepItem, stepIdx) => (
-                              <li key={stepIdx} className="text-sm text-zinc-700 dark:text-zinc-300">
+                              <li key={stepItem.step} className="text-sm text-zinc-700 dark:text-zinc-300">
                                 <span className="font-medium">{stepIdx + 1}. {stepItem.step}</span>
                                 {stepItem.details && stepItem.details.length > 0 && (
                                   <ul className="mt-1 ml-4 space-y-1">
-                                    {stepItem.details.map((detail, detailIdx) => (
-                                      <li key={detailIdx} className="text-xs text-zinc-600 dark:text-zinc-400 before:content-['•'] before:mr-2 before:text-zinc-400">
+                                    {stepItem.details.map((detail) => (
+                                      <li key={detail} className="text-xs text-zinc-600 dark:text-zinc-400 before:content-['•'] before:mr-2 before:text-zinc-400">
                                         {detail}
                                       </li>
                                     ))}
@@ -263,8 +263,8 @@ export default function FunctionalModulesPage({
                         When to Use This Module
                       </h4>
                       <ul className="mt-2 space-y-1">
-                        {selectedModuleData.useCases.map((useCase, idx) => (
-                          <li key={idx} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                        {selectedModuleData.useCases.map((useCase) => (
+                          <li key={useCase} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
                             <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-gold)]"></span>
                             {useCase}
                           </li>
