@@ -2800,12 +2800,720 @@ const MOL_FUNCTIONAL_MODULES = {
     userTypes: ["Individual Members"],
     electronicRecords: ["Annual Retirement Credit Report (ARCR)", "Aviation Career Incentive Pay (ACIP)", "Awards", "Basic Individual Record (BIR)", "Basic Training Record (BTR)", "BRS/TSP", "Civilian Employment Information (CEI)", "Chronological Record (CHRO)", "Education", "Family Care Plan (FCP)", "Individual Medical Readiness (IMR)", "Pay and Leave Summary", "Pers-Tempo", "Personal Statement of Military Compensation (PSMC)", "Record of Emergency Data (RED)", "Reserve Drill Summary", "Record of Service (ROS)", "W2 Tax Statements"],
     selfCertifiedTransactions: ["Blended Retirement Opt-In/Out", "Acknowledgements", "Career Designation (Officer)", "Career Retirement Certification", "Civilian Employment Information", "Contact Information", "Foreign Travel", "Gas Mask and Helmet", "Race/Ethnic", "Religion", "Self-professed Language Skills", "RED Certification", "W2/W2C Electronic Delivery"],
-  },
-  "mol-personnel-accountability": {
-    title: "Personnel Accountability",
-    description: "Provides individual members the ability to self-report accountability status/location/contact information for themselves and family members. Additionally provides authorized unit leaders the ability to report on behalf-of command personnel and view summary status reports. Reporting activity is conducted in real-time with cyclic transactional updates to the MCTFS and DoD PARS.",
-    capabilities: ["Self-report accountability status", "Report location information", "Report contact information", "Report for family members", "Unit leaders report on behalf of personnel", "View summary status reports", "Real-time reporting to DoD PARS"],
-    userTypes: ["Individual Members", "Unit Leaders"],
+    guide: [
+      {
+        title: "Accessing Personal Information",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to the \"Personal Info\" menu item on the main navigation bar" },
+          { step: "Select the desired report or update category from the available options" },
+        ],
+      },
+      {
+        title: "Personal Reports Overview",
+        steps: [
+          {
+            step: "Available Reports",
+            details: [
+              "Annual Retirement Credit Report (ARCR) - Retirement point summary for reserve Marines",
+              "Aviation Career Incentive Pay (ACIP) - Flight pay eligibility and status",
+              "Awards - View decorations, medals, and unit awards",
+              "Basic Individual Record (BIR) - Comprehensive personnel snapshot",
+              "Basic Training Record (BTR) - Training history and qualifications",
+              "BRS/TSP - Blended Retirement System and Thrift Savings Plan info",
+              "Chronological Record (CHRO) - Timeline of significant career events",
+              "Education - Civilian and military education records",
+              "Family Care Plan (FCP) - Dependent care arrangements",
+              "Individual Medical Readiness (IMR) - Medical readiness status",
+              "Pay and Leave Summary - Current pay and leave balances",
+              "Pers-Tempo - Personnel tempo tracking",
+              "Personal Statement of Military Compensation (PSMC) - Total compensation breakdown",
+              "Record of Emergency Data (RED) - Emergency contacts and beneficiaries",
+              "Reserve Drill Summary - Drill attendance for reservists",
+              "Record of Service (ROS) - Complete service record",
+              "W2 Tax Statements - Annual tax documents",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Civilian Employment Information (CEI)",
+        steps: [
+          {
+            step: "Overview",
+            details: [
+              "Required for Reserve Component members to track civilian employment",
+              "Information may be used by the DoD to contact employers in case of mobilization",
+            ],
+          },
+          {
+            step: "Required Information",
+            details: [
+              "Date: Effective date of the employment record",
+              "Employer Name: Name of your current civilian employer",
+              "Street Address: Employer's street address",
+              "City, State, and Zip Code: Employer's location",
+              "Phone Number: Employer's contact phone",
+              "Email Address: Employer's contact email",
+              "Occupation: Your job title or role",
+              "Full Time/Part Time: Employment status indicator",
+            ],
+          },
+          {
+            step: "Employment Status Questionnaire",
+            details: [
+              "Specify if you are a federal civil service employee",
+              "Indicate if the position is vital to national defense",
+              "Answer if you are a union member or self-employed",
+              "Note if you have pre-mobilization orders or permission to mobilize",
+              "Identify any employer restrictions on your availability",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Personal Contact Information",
+        steps: [
+          {
+            step: "Address Types",
+            details: [
+              "US Address: Standard domestic address format (Street, City, State, ZIP)",
+              "APO/FPO/DPO: Military postal address format for overseas locations",
+              "Foreign Address: International address with country code",
+            ],
+          },
+          {
+            step: "Update Process",
+            details: [
+              "Navigate to Personal Info > Contact Information",
+              "Select the appropriate address type (US, APO/FPO/DPO, or Foreign)",
+              "Enter all required address fields",
+              "Add phone numbers: Primary, Secondary, Work, and Cell",
+              "Enter email addresses for official correspondence",
+              "Review and submit the update",
+            ],
+          },
+          {
+            step: "US Address Fields",
+            details: [
+              "Effective Date: When the address change takes effect",
+              "Street Address: Street number and name (up to 50 characters)",
+              "Apartment/Unit: Optional additional address line",
+              "City: City or town name",
+              "State: Two-letter state abbreviation",
+              "ZIP Code: 5-digit or 9-digit ZIP code",
+            ],
+          },
+          {
+            step: "APO/FPO/DPO Address Fields",
+            details: [
+              "Unit/Box Number: Military unit or box designation",
+              "APO/FPO/DPO: Select the appropriate military post office type",
+              "ZIP Code: Military postal ZIP code",
+            ],
+          },
+          {
+            step: "Phone Number Fields",
+            details: [
+              "Primary Phone: Main contact number (required)",
+              "Secondary Phone: Backup contact number",
+              "Work Phone: Office or duty station number",
+              "Cell Phone: Mobile phone number",
+              "Include area codes for all phone numbers",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Foreign Travel",
+        steps: [
+          {
+            step: "Overview",
+            details: [
+              "Record foreign travel history for security and personnel tracking",
+              "Required for certain clearance levels and positions",
+            ],
+          },
+          {
+            step: "Adding a Foreign Travel Entry",
+            details: [
+              "Navigate to Personal Info > Foreign Travel",
+              "Click \"Add Foreign Travel\" to create a new entry",
+              "Enter the Country visited from the dropdown list",
+              "Provide Departure Date (when you left the US)",
+              "Provide Return Date (when you returned to the US)",
+              "Enter Purpose of Travel (official duty, leave, emergency, etc.)",
+              "Add any additional notes or details",
+              "Submit the entry for recording",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Gas Mask and Helmet Information",
+        steps: [
+          {
+            step: "Overview",
+            details: [
+              "Self-report protective equipment sizing for supply and readiness purposes",
+              "Ensures correct equipment is available during deployments",
+            ],
+          },
+          {
+            step: "Gas Mask Information",
+            details: [
+              "Navigate to Personal Info > Gas Mask and Helmet",
+              "Select your Gas Mask Size from available options (XS, S, M, L, XL)",
+              "Confirm the mask type if prompted",
+              "Submit to update your record",
+            ],
+          },
+          {
+            step: "Helmet Information",
+            details: [
+              "Select your Helmet Size from available options",
+              "Common sizes: Small, Medium, Large, X-Large",
+              "Verify the helmet type matches your issued equipment",
+              "Submit to update your record",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Personnel Accountability Information",
+        steps: [
+          {
+            step: "Overview",
+            details: [
+              "Self-report status during disaster declarations and emergencies",
+              "Report location, contact information, and dependent status",
+              "See the Personnel Accountability (PA) module for detailed disaster response procedures",
+            ],
+          },
+          {
+            step: "Reporting Your Status",
+            details: [
+              "Log into MOL when a disaster is declared",
+              "Navigate to Personal Info > Personnel Accountability",
+              "Select your current status: Accounted For, Injured, Evacuated, etc.",
+              "Update your current location if different from recorded address",
+              "Provide a contact phone number where you can be reached",
+              "Report the status of your dependents",
+              "Submit to notify your chain of command",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Race and Ethnic Information",
+        steps: [
+          {
+            step: "Overview",
+            details: [
+              "Self-certify race and ethnicity data for personnel records",
+              "Used for demographic reporting and equal opportunity compliance",
+            ],
+          },
+          {
+            step: "Updating Race/Ethnic Information",
+            details: [
+              "Navigate to Personal Info > Race/Ethnic",
+              "Select your Ethnicity: Hispanic or Latino, or Not Hispanic or Latino",
+              "Select one or more Race categories",
+              "Race options: American Indian/Alaska Native, Asian, Black/African American, Native Hawaiian/Pacific Islander, White",
+              "You may select multiple race categories if applicable",
+              "Submit to update your record",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Religion Information",
+        steps: [
+          {
+            step: "Overview",
+            details: [
+              "Self-certify religious preference for personnel records",
+              "Used for chaplain support, dietary considerations, and casualty notification",
+            ],
+          },
+          {
+            step: "Updating Religion Preference",
+            details: [
+              "Navigate to Personal Info > Religion",
+              "Select your religious preference from the available list",
+              "Options include major world religions and 'No Religious Preference'",
+              "Submit to update your record",
+              "Changes are reflected in your personnel file and RED",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Self-Professed Language Skills",
+        steps: [
+          {
+            step: "Overview",
+            details: [
+              "Report language skills beyond your primary language",
+              "May be used for assignment considerations and special duty selection",
+            ],
+          },
+          {
+            step: "Adding a Language",
+            details: [
+              "Navigate to Personal Info > Self-Professed Language Skills",
+              "Click \"Add Language\" to enter a new skill",
+              "Select the Language from the dropdown list",
+              "Rate your Reading proficiency (None, Low, Medium, High, Native)",
+              "Rate your Writing proficiency (None, Low, Medium, High, Native)",
+              "Rate your Speaking proficiency (None, Low, Medium, High, Native)",
+              "Rate your Listening proficiency (None, Low, Medium, High, Native)",
+              "Submit to add the language to your record",
+            ],
+          },
+          {
+            step: "DLPT Scores",
+            details: [
+              "If you have taken the Defense Language Proficiency Test (DLPT), official scores are recorded separately",
+              "Self-professed skills are for languages not formally tested",
+              "Contact your S-1/Admin for DLPT score discrepancies",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Record of Emergency Data (RED) Overview",
+        steps: [
+          {
+            step: "Overview",
+            details: [
+              "Update beneficiaries and emergency contacts",
+              "Critical for casualty notification and survivor benefits",
+              "Review RED at least annually or after major life events",
+              "RED is divided into sections: Family Information, Parents, Pay Arrears, Do Not Notify, Insurance, Next of Kin, MIA Notification, and PADD",
+            ],
+          },
+          {
+            step: "RED Certification",
+            details: [
+              "Navigate to Personal Info > RED",
+              "Review all current emergency contacts and beneficiaries",
+              "Verify addresses and phone numbers are current",
+              "Certify the RED to confirm accuracy",
+              "A certified RED is required for deployment readiness",
+            ],
+          },
+          {
+            step: "Display Indicators",
+            details: [
+              "Pending information displays in bold type",
+              "Records marked for removal display in red type or strike-through",
+              "A 'D' next to a parent's name indicates they are deceased",
+            ],
+          },
+        ],
+      },
+      {
+        title: "RED Family Information",
+        steps: [
+          {
+            step: "Managing Address Information",
+            details: [
+              "To change your mailing address, click the Edit Address link under the Mailing Address heading",
+              "To indicate a separate address for your spouse, click the Edit Address link next to their name",
+              "To indicate a separate address for a child, click the Edit Child link next to their name",
+              "To view transaction details, click the Details link next to a record",
+              "To remove an address, click Remove This Address and confirm",
+              "To use your spouse's address for a child, click Use Spouse Address",
+            ],
+          },
+          {
+            step: "Managing Spouse and Child Information",
+            details: [
+              "To edit a child's information, click the Edit Child link",
+              "To update spouse's preferred language, click Add/Edit Spouse Preferred Language",
+              "(Non-Marines only) Click Add Spouse or Add Additional Child to add records",
+              "(Non-Marines only) Click Remove Child or Remove Spouse to delete records",
+              "To cancel pending changes, click Cancel Pending Transaction",
+            ],
+          },
+          {
+            step: "Editing US Address Information",
+            details: [
+              "Click Reformat This Address if needed for US, APO/FPO, or Foreign format",
+              "(Non-Marines only) Enter the Name in the Name box",
+              "(Non-Marines adding child) Select Date of Birth month, date, and year",
+              "Enter street address in the Address box",
+              "Select State from dropdown, then City from populated dropdown",
+              "Select County if city spans multiple counties",
+              "Enter Zip code and click Submit Changes",
+            ],
+          },
+          {
+            step: "Editing Foreign Address Information",
+            details: [
+              "Click Reformat This Address for Foreign (Non-APO/FPO) format",
+              "Enter address information in the Address boxes",
+              "Select Country from dropdown, then City from populated dropdown",
+              "Click Submit Changes and confirm with Apply Changes",
+            ],
+          },
+        ],
+      },
+      {
+        title: "RED Parents Information",
+        steps: [
+          {
+            step: "Viewing and Editing Parent Records",
+            details: [
+              "To remove an address, click Remove This Address and confirm",
+              "To cancel a pending removal, click Cancel Removal",
+              "To edit a record, click the Edit link",
+              "A 'D' next to a parent's name indicates deceased status",
+            ],
+          },
+          {
+            step: "Indicating a Parent is Deceased",
+            details: [
+              "Check the Deceased checkbox next to the parent's name",
+              "You do not need to enter additional information",
+              "The address record is automatically removed when you click Submit Changes",
+            ],
+          },
+          {
+            step: "Changing US Address for Parents",
+            details: [
+              "Do not type any punctuation",
+              "Click Reformat This Address if format is incorrect",
+              "Enter street address in Address box",
+              "For PO Box or rural route, also add to Next of Kin Directions",
+              "Enter City, State (initials), and Zip code",
+              "Click Submit Changes and confirm with Apply Changes",
+            ],
+          },
+        ],
+      },
+      {
+        title: "RED Pay Arrears (Unpaid Pay/Allowances)",
+        steps: [
+          {
+            step: "Overview",
+            details: [
+              "Designate beneficiaries to receive compensation if you are missing or killed",
+              "Benefits can include unused leave, unpaid pay and allowances",
+              "Each beneficiary has a percentage of total benefits assigned",
+              "Total percentages cannot exceed 100%",
+            ],
+          },
+          {
+            step: "Adding a Beneficiary",
+            details: [
+              "Click Add New Pay Arrears Record",
+              "If existing beneficiaries total 100%, edit one to a smaller percentage first",
+              "Enter Name in the Name box",
+              "Select Relationship from the dropdown",
+              "Select Percentage of benefits for this person",
+              "Enter address information (US or Foreign format)",
+              "Click Submit Changes and confirm",
+            ],
+          },
+          {
+            step: "Managing Beneficiary Records",
+            details: [
+              "To edit a record, click the Edit link",
+              "To remove a beneficiary, click Remove and confirm",
+              "To remove just an address, click Remove This Address",
+              "To cancel a pending removal, click Cancel Removal",
+            ],
+          },
+        ],
+      },
+      {
+        title: "RED Do Not Notify",
+        steps: [
+          {
+            step: "Overview",
+            details: [
+              "List family members who should NOT be notified in case of emergency",
+              "Used for family members with ill health or other valid reasons",
+            ],
+          },
+          {
+            step: "Adding Do Not Notify Records",
+            details: [
+              "Click Reformat This Address if needed for US or Foreign format",
+              "Enter the Name in the Name box",
+              "Select Relationship from the dropdown",
+              "Enter address information (do not use punctuation)",
+              "Click Submit Changes and confirm with Apply Changes",
+            ],
+          },
+        ],
+      },
+      {
+        title: "RED Insurance Information",
+        steps: [
+          {
+            step: "Overview",
+            details: [
+              "Record insurance companies that handle claims on your behalf",
+              "Can display up to five insurance records",
+              "Information used to process claims in the event of death",
+            ],
+          },
+          {
+            step: "Managing Insurance Records",
+            details: [
+              "To add a record (if fewer than five exist), click Add New Insurance Record",
+              "To edit a record, click the adjacent Edit link",
+              "To remove a record, click Remove and confirm",
+              "To cancel a pending removal, click Cancel Removal",
+            ],
+          },
+          {
+            step: "Adding/Editing Insurance Information",
+            details: [
+              "Enter insurance company name and policy number (max 25 characters)",
+              "May need to abbreviate company name (e.g., StateFrm12356789123456789)",
+              "Click Submit Changes and confirm with Apply Changes",
+            ],
+          },
+        ],
+      },
+      {
+        title: "RED Next of Kin (NOK)",
+        steps: [
+          {
+            step: "Overview",
+            details: [
+              "List up to three Next of Kin contacts",
+              "Includes relationship, phone numbers, and directions to residence",
+            ],
+          },
+          {
+            step: "Managing NOK Records",
+            details: [
+              "To add a NOK record, click Add Next of Kin Record",
+              "To update an existing record, click the adjacent Edit link",
+              "To remove a record, click Remove and confirm",
+              "To cancel a pending removal, click Cancel Removal",
+            ],
+          },
+          {
+            step: "Managing Primary NOK Directions",
+            details: [
+              "To add directions, click Add New Directions Record under Primary Next of Kin Directions",
+              "To edit existing directions, click Edit beside Primary Next of Kin Directions",
+              "To remove directions, click Remove and confirm",
+            ],
+          },
+          {
+            step: "Updating NOK Contact Information",
+            details: [
+              "Select Relationship from the dropdown",
+              "Click reformat this phone for US or overseas phone format",
+              "For US: enter area code and telephone number (up to 10 digits)",
+              "For overseas: enter country code, city code, and number (up to 15 digits)",
+              "Find country codes at www.countrycallingcodes.com",
+              "Click Submit Changes and confirm",
+            ],
+          },
+          {
+            step: "Adding NOK Directions",
+            details: [
+              "Enter directions to locate Primary NOK (up to 35 characters per line, 5 lines available)",
+              "For overseas NOK, include phone numbers in directions",
+              "If using PO Box or rural route, include in directions",
+              "Do not use special characters when abbreviating (e.g., use 'and' not '&')",
+              "Click Submit Changes and confirm",
+            ],
+          },
+        ],
+      },
+      {
+        title: "RED MIA (Missing in Action) Notification",
+        steps: [
+          {
+            step: "Overview",
+            details: [
+              "Designate who to notify if you are listed as Missing in Action",
+              "Includes name, directions, phone numbers, and relationship",
+            ],
+          },
+          {
+            step: "Managing MIA Records",
+            details: [
+              "To add a record, click Add New MIA Notify Record",
+              "To edit a record, click the Edit link",
+              "To remove a record, click Remove and confirm",
+            ],
+          },
+          {
+            step: "Entering MIA Contact Information",
+            details: [
+              "Enter first name, middle initial, and last name in the Name boxes",
+              "Enter directions to locate residence (up to 5 lines)",
+              "For overseas contacts, include phone numbers in directions",
+              "If using PO Box or rural route, include in directions",
+              "Enter First Phone (area code and number)",
+              "Enter Second Phone (area code and number)",
+              "Select Relationship from the dropdown",
+              "Click Submit Changes and confirm",
+            ],
+          },
+        ],
+      },
+      {
+        title: "RED Death Gratuity",
+        steps: [
+          {
+            step: "Overview",
+            details: [
+              "Death gratuity is a monetary amount paid to help offset expenses if you die",
+              "Federal law states it is paid to your spouse or non-minor children",
+              "Additional beneficiaries receive the money if primary beneficiaries cannot",
+              "You cannot edit primary beneficiary information in MOL",
+              "You can edit information for Additional Beneficiaries",
+              "Maximum of 10 beneficiaries allowed",
+              "Total allocation must equal 100%",
+            ],
+          },
+          {
+            step: "Managing Death Gratuity Records",
+            details: [
+              "To add a record, click Add Additional Death Gratuity Record",
+              "To edit an existing record, click the adjacent Edit link",
+              "To remove a record, click Remove and confirm with Apply Changes",
+              "To cancel a pending removal, click Cancel Removal and confirm",
+            ],
+          },
+          {
+            step: "Adding/Editing Beneficiary Information",
+            details: [
+              "Click Reformat This Address for US or Foreign format",
+              "Enter Name in the Name box",
+              "Select Relationship from the dropdown",
+              "If married and selecting less than 100% for spouse, an advisory is generated to command",
+              "Select Percentage of total death gratuity for this person",
+              "Cumulative percentages cannot exceed 100%",
+            ],
+          },
+          {
+            step: "Entering US Address",
+            details: [
+              "Do not type any punctuation",
+              "Enter street address in Address box",
+              "Enter City, State (initials), and Zip code",
+              "Enter Phone in area code-prefix-suffix-extension format",
+              "Click Submit Changes and confirm",
+            ],
+          },
+          {
+            step: "Entering Foreign Address",
+            details: [
+              "Do not type any punctuation",
+              "Enter address in Address boxes",
+              "Enter Phone in country code-city code-phone number-extension format",
+              "Click Submit Changes and confirm",
+            ],
+          },
+        ],
+      },
+      {
+        title: "RED Person Authorized to Direct Disposition (PADD)",
+        steps: [
+          {
+            step: "Overview",
+            details: [
+              "PADD is the person who makes all arrangements in the event of your death",
+              "You may designate any person who is at least 18 years old",
+              "Your designation supersedes the order of precedence in DODI 1300.18",
+              "Date of Birth is required to verify the person is of legal age",
+            ],
+          },
+          {
+            step: "Order of Precedence (if no PADD designated)",
+            details: [
+              "Unremarried Surviving Spouse",
+              "Natural and adopted children of legal age (18+) in order of seniority",
+              "Parents in order of seniority (unless legal exclusive custody was granted to another)",
+              "Blood or adoptive relative who was granted legal custody",
+              "Brothers or sisters of legal age in order of seniority",
+              "Grandparents in order of seniority",
+              "Other relatives of legal age in order of relationship",
+              "Remarried surviving spouse, persons in loco parentis, or legal representative of the estate",
+            ],
+          },
+          {
+            step: "Editing PADD Information",
+            details: [
+              "Click Edit link to access the Update RED PADD page",
+              "Select address format: US Address, APO/FPO Address, or Foreign Address",
+              "Find country codes at www.countrycallingcodes.com",
+            ],
+          },
+          {
+            step: "US Address Entry",
+            details: [
+              "Do not type any punctuation",
+              "Enter Name in the Name box",
+              "Enter Date of Birth in DD MMM YYYY format (e.g., 01 Feb 1975)",
+              "Select Relationship from dropdown",
+              "Enter Address, City, State (initials), and Zip plus four",
+              "Enter Phone (Area Code, Phone Number, Extension if applicable)",
+              "Click Submit Changes and confirm",
+            ],
+          },
+          {
+            step: "APO/FPO Address Entry",
+            details: [
+              "Enter Name and Date of Birth (DD MMM YYYY format)",
+              "Select Relationship from dropdown",
+              "Enter PSC/Box or Unit/UIC",
+              "Select APO or FPO",
+              "Select AA, AE, or AP",
+              "Enter Zip plus four code",
+              "Enter Phone (Country Code, City Code, Phone Number, Extension)",
+              "Click Submit Changes and confirm",
+            ],
+          },
+          {
+            step: "Foreign Address Entry",
+            details: [
+              "Do not type any punctuation",
+              "Enter Name and Date of Birth (DD MMM YYYY format)",
+              "Select Relationship from dropdown",
+              "Enter address in Address boxes",
+              "Enter Phone (Country Code, City Code, Phone Number, Extension)",
+              "Click Submit Changes and confirm",
+            ],
+          },
+        ],
+      },
+      {
+        title: "W2/W2C Electronic Delivery",
+        steps: [
+          {
+            step: "Overview",
+            details: [
+              "Opt in to receive W2 tax statements electronically",
+              "Provides faster access to tax documents",
+            ],
+          },
+          {
+            step: "Enrollment",
+            details: [
+              "Navigate to Personal Info > W2 Electronic Delivery",
+              "Select \"Opt In\" to receive electronic W2 statements",
+              "Confirm your email address for notifications",
+              "W2 forms will be available in MOL when released each tax year",
+              "You can opt out at any time to return to paper delivery",
+            ],
+          },
+        ],
+      },
+    ],
   },
   "mol-promotion-recs": {
     title: "Promotion Recs",
@@ -3192,169 +3900,6 @@ const MOL_FUNCTIONAL_MODULES = {
               "Provide final verification to higher headquarters that accountability is complete",
             ],
           },
-        ],
-      },
-    ],
-  },
-  "mol-personal-information": {
-    title: "Personal Information Module",
-    description: "The Personal Information module provides access to view, edit, or print reports containing your personal data. Links vary depending upon your status and include Personal Reports, Personal Updates, and Record of Emergency Data (RED) Updates.",
-    capabilities: ["View personal reports", "Update contact information", "Certify RED data", "Print records", "View tax statements"],
-    userTypes: ["All Marines", "Reservists", "Unit Leaders"],
-    guide: [
-      {
-        title: "Personal Reports Overview",
-        steps: [
-          {
-            step: "Available Personal Reports",
-            details: [
-              "Acknowledgment Record - Pending and historical acknowledgments",
-              "Annual Retirement Credit Report (ARCR) - Retirement credit points",
-              "Aviation Incentive Pay-Aviation Bonus - AVIP and AVB information",
-              "Awards - Summary and Full List views of decorations",
-              "Basic Individual Record (BIR) - Service, contract, and dependent information",
-              "Basic Training Record (BTR) - Training, education, and testing information",
-              "BRS/TSP Information - Blended Retirement System elections",
-              "Career Retirement Credit Report (CRCR) - For eligible reservists",
-              "Chronological Record - Sequential events and duties performed",
-              "Civilian Employment Information Record - For reservists",
-              "Education - Off-duty education, MCI courses, service schools",
-              "Grade Report - Pay grade and promotion information",
-              "Individual Medical Record (IMR) - Medical deployment eligibility (HIPAA protected)",
-              "Operational Cultural Information Report - Language skills and foreign travel",
-              "Pay and Leave Summary - Current/prior pay and leave balances",
-              "Personal Statement of Military Compensation (PSMC) - Full compensation value",
-              "PersTempo Report - Deployment tempo tracking",
-              "Record of Emergency Data (RED) - Emergency contacts and SGLI",
-              "Rank/MOS Report - Members with same Rank and MOS",
-              "Record of Service - Proficiency, conduct, composite scores (E1-E5)",
-              "Reserve Drill Summary - Drills attended, missed, rescheduled",
-              "Slate Report - Estimated Rotation Dates by rank",
-              "Tax Statements (W-2) - Available tax statements in PDF format",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Acknowledgment Record",
-        steps: [
-          { step: "Navigate to Personal Information > Acknowledgment Record" },
-          {
-            step: "Pending Acknowledgments",
-            details: [
-              "View Code, Description, and Action columns",
-              "Click 'Acknowledge' link for items requiring your action",
-              "'(Pending)' indicates items not yet processed through MCTFS",
-            ],
-          },
-          { step: "Historical Acknowledgments show Code, Description, and Acknowledgment Date" },
-          { step: "Click 'Printer Friendly View' to print the report" },
-        ],
-      },
-      {
-        title: "BRS/TSP Information",
-        steps: [
-          {
-            step: "TSP Sections (Traditional and Roth)",
-            details: [
-              "View percentage withheld from Base Pay, Incentive Pay, Special Pay, and Bonus Pay",
-              "Visit www.TSP.gov for more information",
-              "Use mypay.dfas.mil to enroll or change contributions",
-            ],
-          },
-          {
-            step: "Decline Automatic TSP Re-enrollment",
-            details: [
-              "Click 'Decline TSP Re-Enrollment' button",
-              "Auto re-enrollment occurs if you stop contributions but don't decline in December",
-            ],
-          },
-          {
-            step: "BRS Sections",
-            details: [
-              "BRS Election - Complete required MarineNet training course first",
-              "BRS Continuation Pay - Payment and recoupment information",
-              "BRS Retired Pay Lump Sum Payment Election - Must elect 90 days before retirement eligibility",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Career Retirement Credit Report (CRCR)",
-        steps: [
-          { step: "For eligible reservists - view, print, and certify your CRCR" },
-          {
-            step: "Do NOT certify if",
-            details: [
-              "There are mistakes in the report",
-              "Current Anniversary Date expired or displays as zeroes",
-              "Current Year CRCR information is missing or more than a year old",
-              "Date Entered Armed Forces (DEAF) is later than AFABD",
-              "Current Year Member Points score is greater than 15",
-            ],
-          },
-          { step: "If correct, click 'Certify CRCR' link and confirm" },
-          { step: "If incorrect, click 'Users Manual' link for further processing information" },
-        ],
-      },
-      {
-        title: "Record of Emergency Data (RED)",
-        steps: [
-          { step: "Displays emergency contact and SGLI election coverage information" },
-          {
-            step: "Update Data",
-            details: [
-              "Click 'Edit' link adjacent to the section you want to change",
-              "Editing information automatically certifies it",
-            ],
-          },
-          { step: "Electronically Certify: Click 'Certify' button if no edits needed, then confirm" },
-          { step: "CMC Casualty view shows pending changes in red, bold font with date/time stamps" },
-        ],
-      },
-      {
-        title: "Tax Statements (W-2)",
-        steps: [
-          { step: "Available for Active Duty or Reserve Marines (not separated/retired)" },
-          { step: "Tax Statements are generated in PDF format - requires Adobe Reader" },
-          {
-            step: "To Get Your W-2",
-            details: [
-              "If delivery method is 'None' or 'Hard Copy', change to Electronic first",
-              "Select desired year from 'Available W2s' dropdown",
-              "Click Submit button",
-            ],
-          },
-          { step: "Separated/Retired Marines: W-2 available for one year after separation, cannot change delivery method" },
-          { step: "Keep your home address current in Personal Contact Information for future W-2s" },
-        ],
-      },
-      {
-        title: "Personal Updates",
-        steps: [
-          {
-            step: "Available Update Categories",
-            details: [
-              "Civilian Employment Information (CEI) - For reservists",
-              "Contact Info - Phone numbers, addresses",
-              "Family Readiness - Family member information",
-              "Foreign Travel - Travel periods and destinations",
-              "Gas Mask - Size information",
-              "Personnel Accountability Information - Disaster response data",
-              "Race/Ethnic - Demographic information",
-              "Religion - Religious preference",
-              "Self-Professed Language Skills - Language proficiency",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Printing Reports",
-        steps: [
-          { step: "Click 'Printer Friendly View' or 'Printer Friendly' link" },
-          { step: "Report opens in a new browser window" },
-          { step: "Click 'Print' to open the Print dialog, or 'Close' to return" },
-          { step: "For PSMC watermark: In IE, enable 'Print Background Colors and Images' under Tools > Internet Options > Advanced" },
         ],
       },
     ],
