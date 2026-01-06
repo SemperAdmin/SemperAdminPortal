@@ -2798,96 +2798,231 @@ const MOL_FUNCTIONAL_MODULES = {
   // ============================================
   "mol-arcr": {
     title: "Annual Retirement Credit Report (ARCR)",
-    description: "The Annual Retirement Credit Report provides reserve Marines with a detailed summary of retirement credit points earned during each anniversary year. This report is essential for tracking progress toward reserve retirement eligibility.",
-    capabilities: ["View retirement points by anniversary year", "Track active duty and inactive duty points", "Monitor progress toward 20-year retirement", "Print report for records"],
-    userTypes: ["Reserve Marines", "Individual Reserve Component Members"],
+    description: "The Annual Retirement Credit Report is your 'scoreboard' for reserve retirement. If you are a Reservist or Career Recruiter, this report tracks the points you have earned each anniversary year to show how close you are to qualifying for a reserve pension. It is crucial to verify this data regularly because errors can cost you years of credited service.",
+    capabilities: ["View retirement points by anniversary year", "Track active duty and inactive duty points", "Monitor progress toward 20-year retirement", "Print report for records", "Verify point accuracy", "Identify good years vs. bad years"],
+    userTypes: ["Reserve Marines", "Individual Reserve Component Members", "Career Recruiters"],
     guide: [
       {
-        title: "Accessing Your ARCR",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Annual Retirement Credit Report" },
-          { step: "The report displays your retirement point summary by anniversary year" },
-        ],
-      },
-      {
-        title: "Understanding the Report",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Point Categories",
+            step: "Your Financial Future",
             details: [
-              "Active Duty Points - Points earned during active duty periods",
-              "Inactive Duty Points - Points from drills, correspondence courses, and other inactive duty training",
-              "Membership Points - 15 points per year for maintaining satisfactory participation",
-              "Total Points - Sum of all categories for the anniversary year",
+              "Reserve retirement requires 20 'good years' of service, each with at least 50 points",
+              "A single bad year (less than 50 points) does not count toward your 20-year requirement",
+              "Errors in point recording can delay or reduce your retirement benefits",
+              "The ARCR is your proof of service for retirement eligibility disputes",
             ],
           },
           {
-            step: "Anniversary Year",
+            step: "What Counts as a Point",
             details: [
-              "Your anniversary year runs from your PEBD (Pay Entry Base Date)",
-              "Each year requires minimum 50 points for a 'good year' toward retirement",
-              "20 qualifying years required for reserve retirement eligibility",
+              "Active Duty Points: 1 point per day of active duty (AT, ADT, mobilization)",
+              "Inactive Duty Points: 1 point per drill period (typically 4 per weekend)",
+              "Membership Points: 15 free points per anniversary year just for being in the reserves",
+              "Education Points: Correspondence courses, online training (max 130 inactive points per year)",
             ],
           },
         ],
       },
       {
-        title: "Printing Your ARCR",
+        title: "How to View and Print Your ARCR",
         steps: [
-          { step: "Click 'Printer Friendly View' to open a printable version" },
-          { step: "Use your browser's print function or click 'Print'" },
-          { step: "Keep printed copies for your personal records" },
+          {
+            step: "Step 1: Access the Report",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Annual Retirement Credit Report",
+              "The report loads showing all your anniversary years",
+            ],
+          },
+          {
+            step: "Step 2: Review Each Anniversary Year",
+            details: [
+              "Look at each row - your anniversary year runs from your PEBD (Pay Entry Base Date)",
+              "Check the total points column for each year",
+              "Anything 50 or above is a 'good year' that counts toward retirement",
+              "Years with less than 50 points are 'bad years' and do not count",
+            ],
+          },
+          {
+            step: "Step 3: Print for Your Records",
+            details: [
+              "Click 'Printer Friendly View' to open a clean printable version",
+              "Print or save as PDF for your personal records",
+              "Keep copies in your personal service record file",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Not Checking Annually",
+            details: [
+              "Review your ARCR at least once per year, preferably after each AT period",
+              "Points from orders or drills may take 30-60 days to post",
+              "Catching errors early is easier than fixing them years later",
+            ],
+          },
+          {
+            step: "Assuming All Points Posted",
+            details: [
+              "Just because you did the drill does not mean it was recorded correctly",
+              "Always verify after returning from Active Duty for Training (ADT) or Annual Training (AT)",
+              "Correspondence course points may require manual submission of completion certificates",
+            ],
+          },
+          {
+            step: "Ignoring Bad Years",
+            details: [
+              "If you see a year with less than 50 points, investigate immediately",
+              "Sometimes points were earned but not posted - this is fixable",
+              "If legitimately a bad year, know that you'll need an extra year to reach 20",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do If Points Are Missing",
+        steps: [
+          {
+            step: "Gather Documentation",
+            details: [
+              "Collect copies of orders, drill schedules, or course completion certificates",
+              "Check your LES (Leave and Earnings Statement) for corresponding pay periods",
+              "Look for any paper records from that time period",
+            ],
+          },
+          {
+            step: "Submit a Correction Request",
+            details: [
+              "Contact your unit's Personnel Admin (S-1) with your documentation",
+              "For IRR Marines, contact Marine Forces Reserve (MARFORRES)",
+              "Submit an EPAR through MOL if appropriate",
+              "Be persistent - point corrections can take months but are worth fighting for",
+            ],
+          },
         ],
       },
     ],
   },
   "mol-acip": {
-    title: "Aviation Career Incentive Pay (ACIP)",
-    description: "The Aviation Career Incentive Pay report displays flight pay eligibility, aviation bonus status, and career aviation incentive pay information for qualified aviators.",
-    capabilities: ["View ACIP eligibility status", "Check aviation bonus information", "Monitor flight pay gates", "Track operational flying duty credit"],
-    userTypes: ["Naval Aviators", "Naval Flight Officers", "Aviation Personnel"],
+    title: "Aviation Career Incentive Pay (ACIP/AVIP)",
+    description: "Aviation Career Incentive Pay (ACIP) and Aviation Incentive Pay (AVIP) are monthly bonuses for pilots, naval flight officers, and enlisted aircrew who maintain flight status. This report shows your eligibility status, current pay gate, and flight hour requirements. Understanding this data protects your pay and helps you plan your aviation career.",
+    capabilities: ["View ACIP/AVIP eligibility status", "Check aviation bonus information", "Monitor flight pay gates", "Track operational flying duty credit", "Verify flight hour requirements", "Review aviation service dates"],
+    userTypes: ["Naval Aviators", "Naval Flight Officers", "Enlisted Aircrew", "Aviation Personnel"],
     guide: [
       {
-        title: "Accessing ACIP Information",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Aviation Career Incentive Pay" },
-          { step: "Review your current ACIP status and eligibility" },
-        ],
-      },
-      {
-        title: "Understanding ACIP",
+        title: "Why This Matters",
         steps: [
           {
-            step: "ACIP Gates",
+            step: "Significant Monthly Income",
             details: [
-              "Gate 1: 2 years of aviation service",
-              "Gate 2: 6 years of aviation service",
-              "Gate 3: 10 years of aviation service",
-              "Gate 4: 14 years of aviation service",
-              "Gate 5: 22 years of aviation service",
+              "ACIP/AVIP can add $150-$1,000+ per month to your pay depending on your gate",
+              "Losing flight status means losing this pay immediately",
+              "Understanding the gate system helps you maximize your aviation career earnings",
+              "Knowing your status prevents surprise pay losses",
             ],
           },
           {
-            step: "Monthly Rates",
+            step: "The Gate System Explained",
             details: [
-              "Rates vary based on years of aviation service",
-              "Maximum rate achieved after 14 years",
-              "Continuous entitlement requires operational flying duty",
+              "Gate 1: 2 years of aviation service - entry level flight pay",
+              "Gate 2: 6 years of aviation service - increased rate",
+              "Gate 3: 10 years of aviation service - further increase",
+              "Gate 4: 14 years of aviation service - maximum rate achieved",
+              "Gate 5: 22 years of aviation service - maintained at maximum",
+              "Each gate requires you to be on operational flying duty or have a valid waiver",
             ],
           },
         ],
       },
       {
-        title: "Aviation Bonus (AvB)",
+        title: "How to Check Your ACIP/AVIP Status",
         steps: [
           {
-            step: "Bonus Eligibility",
+            step: "Step 1: Access the Report",
             details: [
-              "Available to rated officers meeting specific criteria",
-              "Requires active duty service commitment",
-              "Contact your aviation personnel office for current bonus offerings",
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Aviation Career Incentive Pay",
+              "The report shows your current aviation pay status",
+            ],
+          },
+          {
+            step: "Step 2: Review Key Data Points",
+            details: [
+              "Aviation Service Entry Date (ASED) - when your aviation clock started",
+              "Current Gate - which pay tier you are in",
+              "Operational Flying Duty status - whether you are currently earning flight pay",
+              "Flight hours if tracked - some positions require minimum hours",
+            ],
+          },
+          {
+            step: "Step 3: Verify Accuracy",
+            details: [
+              "Cross-reference your ASED with your training records",
+              "Confirm your current duty assignment matches your flying status",
+              "Check that any operational flying duty waivers are properly recorded",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Not Tracking Your ASED",
+            details: [
+              "Your Aviation Service Entry Date determines your gate progression",
+              "If this date is wrong, your pay rate could be incorrect",
+              "Verify this date matches when you actually earned your wings or entered flight status",
+            ],
+          },
+          {
+            step: "Assuming Staff Tours Stop the Clock",
+            details: [
+              "Time in non-flying billets may or may not count depending on circumstances",
+              "Operational Flying Duty Credit (OFDC) rules are complex",
+              "Consult with your aviation personnel officer before accepting non-flying orders",
+            ],
+          },
+          {
+            step: "Ignoring Proficiency Requirements",
+            details: [
+              "Some aviation pay requires maintaining currency or minimum flight hours",
+              "Falling out of currency can affect your pay status",
+              "Track your flight hours and currency requirements separately",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do If Something Is Wrong",
+        steps: [
+          {
+            step: "Document the Discrepancy",
+            details: [
+              "Print your current ACIP report from MOL",
+              "Gather supporting documents: flight school completion, designation letters, orders",
+              "Note exactly what data is incorrect",
+            ],
+          },
+          {
+            step: "Contact Your Aviation Personnel Officer",
+            details: [
+              "Your squadron or group has an aviation admin who handles flight pay issues",
+              "They can submit corrections to MMOA (Manpower Management Officer Assignments)",
+              "Aviation pay corrections may also require coordination with DFAS",
+            ],
+          },
+          {
+            step: "Follow Up Regularly",
+            details: [
+              "Aviation pay corrections can take 60-90 days to process",
+              "Check your LES each pay period to verify changes took effect",
+              "If back pay is owed, ensure it is properly calculated and paid",
             ],
           },
         ],
@@ -2896,175 +3031,456 @@ const MOL_FUNCTIONAL_MODULES = {
   },
   "mol-awards": {
     title: "Awards",
-    description: "The Awards report displays all decorations, medals, campaign ribbons, and unit awards recorded in your personnel file. You can view summary or detailed lists of your awards.",
-    capabilities: ["View personal decorations", "View service medals", "View campaign ribbons", "View unit awards", "Print awards summary"],
+    description: "Your Awards record is your official history of recognition for service and achievement. This is not just about wearing the right ribbons - it is your documented proof of what you have done in your career. Missing or incorrect awards can affect promotion boards, reenlistment, and your legacy as a Marine.",
+    capabilities: ["View personal decorations", "View service medals", "View campaign ribbons", "View unit awards", "Print awards summary", "Verify award accuracy", "Check order of precedence"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Your Awards",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Awards" },
-          { step: "Select 'Summary View' or 'Full List' to display your awards" },
-        ],
-      },
-      {
-        title: "Award Categories",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Personal Decorations",
+            step: "Promotion Board Impact",
             details: [
-              "Medals awarded for individual achievement or heroism",
-              "Examples: Navy Cross, Bronze Star, Navy Achievement Medal",
-              "Listed in order of precedence",
+              "Boards review your awards as evidence of your performance and contributions",
+              "Missing personal decorations (NAMs, Comm Medals) can hurt your competitiveness",
+              "Accurate records show boards you pay attention to detail and take pride in your career",
             ],
           },
           {
-            step: "Unit Awards",
+            step: "Historical Record",
             details: [
-              "Awards earned by units you served with",
-              "Examples: Presidential Unit Citation, Navy Unit Commendation",
-              "Displayed with dates of eligibility",
+              "Your awards tell the story of where you have been and what you have done",
+              "Campaign medals prove your participation in operations",
+              "Unit awards document your service with distinguished commands",
+              "This record follows you into veteran status and is difficult to reconstruct later",
             ],
           },
           {
-            step: "Service and Campaign Medals",
+            step: "Uniform Accuracy",
             details: [
-              "National Defense Service Medal",
-              "Campaign medals for specific operations",
-              "Sea Service Deployment Ribbons",
+              "Wearing unauthorized awards is a serious offense",
+              "Not wearing earned awards can make you look unprepared",
+              "MOL is the source document for what you are authorized to wear",
             ],
           },
         ],
       },
       {
-        title: "Correcting Award Errors",
+        title: "How to Review Your Awards",
         steps: [
-          { step: "If awards are missing or incorrect, submit an EPAR through MOL" },
-          { step: "Provide supporting documentation (citations, orders, certificates)" },
-          { step: "Contact your S-1/Admin for assistance with award corrections" },
+          {
+            step: "Step 1: Access Your Record",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Awards",
+              "Select 'Full List' to see all awards with details",
+            ],
+          },
+          {
+            step: "Step 2: Check Each Category",
+            details: [
+              "Personal Decorations: NAMs, Comm Medals, Achievement Medals you earned individually",
+              "Unit Awards: Presidential Unit Citation, Navy Unit Commendation, Meritorious Unit Commendation",
+              "Campaign and Service Medals: GWOT, Iraq Campaign, Afghanistan Campaign, Sea Service Deployment",
+              "Good Conduct Medals: Should reflect your completed periods of good conduct",
+            ],
+          },
+          {
+            step: "Step 3: Verify Against Your Records",
+            details: [
+              "Cross-reference with award certificates in your possession",
+              "Check unit award eligibility against your duty station dates",
+              "Verify campaign medal eligibility against your deployment dates and orders",
+              "Count Good Conduct Medals against your time in service",
+            ],
+          },
+          {
+            step: "Step 4: Print for Reference",
+            details: [
+              "Use 'Printer Friendly View' to create a clean printout",
+              "Keep this with your personal copies of award certificates",
+              "Use this when building or updating your rack",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Assuming Deployment Equals Campaign Medal",
+            details: [
+              "Campaign medals have specific geographic and date requirements",
+              "Not every deployment qualifies for every medal",
+              "Check the specific criteria for each campaign medal you think you earned",
+            ],
+          },
+          {
+            step: "Missing Unit Awards",
+            details: [
+              "Unit awards are often not automatically added to your record",
+              "You must prove you were assigned to the unit during the award period",
+              "Check MARADMIN messages for unit award announcements",
+              "Your old unit's S-1 or the awarding message can provide documentation",
+            ],
+          },
+          {
+            step: "Duplicate or Wrong Order",
+            details: [
+              "Sometimes the same award appears twice or in wrong precedence order",
+              "This can cause confusion when building your rack",
+              "Duplicates should be corrected to prevent issues at uniform inspections",
+            ],
+          },
+          {
+            step: "Not Checking After Each Tour",
+            details: [
+              "Awards from your last command may not have posted before you transferred",
+              "Always verify your record 60-90 days after checking into a new command",
+              "End-of-tour awards are frequently delayed or missed",
+            ],
+          },
+        ],
+      },
+      {
+        title: "How to Fix Missing or Incorrect Awards",
+        steps: [
+          {
+            step: "Gather Documentation",
+            details: [
+              "Award certificates with citation numbers",
+              "Orders showing duty station dates for unit award eligibility",
+              "Deployment orders for campaign medal eligibility",
+              "MARADMINs announcing unit awards",
+            ],
+          },
+          {
+            step: "Submit an EPAR",
+            details: [
+              "Use the EPAR (Electronic Personnel Action Request) system in MOL",
+              "Select the appropriate award correction request type",
+              "Attach supporting documentation as PDFs",
+              "Provide clear explanation of what needs to be added or corrected",
+            ],
+          },
+          {
+            step: "Work with Your S-1",
+            details: [
+              "Your admin section can help navigate the correction process",
+              "They can verify unit award eligibility through official channels",
+              "Complex cases may require coordination with HQMC Awards Branch",
+            ],
+          },
         ],
       },
     ],
   },
   "mol-bir": {
     title: "Basic Individual Record (BIR)",
-    description: "The Basic Individual Record provides a comprehensive snapshot of your personnel data including service information, contract data, dependent information, and administrative details.",
-    capabilities: ["View service data", "View contract information", "View dependent data", "View administrative information", "Print BIR for records"],
+    description: "The Basic Individual Record is the 'snapshot' of who you are as a Marine. It combines your service dates, rank, MOS, contract status, and dependent information into one consolidated view. This is often the first document staff and boards look at when evaluating you, so accuracy is critical.",
+    capabilities: ["View service data", "View contract information", "View dependent data", "View administrative information", "Print BIR for records", "Verify key dates", "Check MOS assignments"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Your BIR",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Basic Individual Record" },
-          { step: "Review your complete personnel snapshot" },
-        ],
-      },
-      {
-        title: "BIR Sections",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Service Data",
+            step: "Your Official Identity",
             details: [
-              "Current rank and date of rank",
-              "MOS (Primary, Additional, Necessary)",
-              "Pay Entry Base Date (PEBD)",
-              "End of Active Service (EAS)",
-              "Total Active Federal Military Service (TAFMS)",
+              "The BIR is often the first document reviewed in any administrative action",
+              "Boards, career planners, and monitors use this to make decisions about you",
+              "Incorrect data here can affect assignments, pay, and eligibility for schools or billets",
             ],
           },
           {
-            step: "Personal Data",
+            step: "Critical Dates That Drive Your Career",
             details: [
-              "Name, SSN (masked), Date of Birth",
-              "Blood Type, Religion",
-              "Marital Status",
-              "Home of Record",
+              "PEBD (Pay Entry Base Date): Determines pay longevity and retirement eligibility",
+              "EAS (End of Active Service): Your contract end date - affects reenlistment windows",
+              "Date of Rank: Determines time-in-grade for promotion eligibility",
+              "TAFMS (Total Active Federal Military Service): Used for retirement calculations",
             ],
           },
           {
-            step: "Contract Information",
+            step: "Dependent Data Affects Pay",
             details: [
-              "Current enlistment/extension contract",
-              "Contract start and end dates",
-              "Bonus entitlements if applicable",
-            ],
-          },
-          {
-            step: "Dependent Information",
-            details: [
-              "Spouse information",
-              "Child information",
-              "Dependency status for BAH purposes",
+              "BAH (Basic Allowance for Housing) rate depends on dependency status",
+              "DEERS enrollment for dependents requires accurate BIR data",
+              "Incorrect dependent info can cause pay issues or loss of benefits",
             ],
           },
         ],
       },
       {
-        title: "Updating BIR Information",
+        title: "How to Review Your BIR",
         steps: [
-          { step: "Most BIR data requires official documentation to change" },
-          { step: "Submit an EPAR for corrections to administrative data" },
-          { step: "Update contact information through Personal Updates" },
-          { step: "Dependent changes require supporting documentation (marriage certificate, birth certificate)" },
+          {
+            step: "Step 1: Access the Record",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Basic Individual Record",
+              "The BIR loads as a single consolidated view",
+            ],
+          },
+          {
+            step: "Step 2: Verify Service Data",
+            details: [
+              "Check your current rank and date of rank are correct",
+              "Verify your PMOS (Primary MOS) is accurate",
+              "Confirm AMOS and NMOS if applicable",
+              "Check PEBD matches your original enlistment or commission date",
+              "Verify EAS reflects your current contract",
+            ],
+          },
+          {
+            step: "Step 3: Review Personal Data",
+            details: [
+              "Confirm name spelling matches your ID card exactly",
+              "Verify blood type is recorded correctly (important for emergencies)",
+              "Check marital status is current",
+              "Verify Home of Record if relevant for state tax purposes",
+            ],
+          },
+          {
+            step: "Step 4: Check Dependent Information",
+            details: [
+              "Verify all dependents are listed with correct names and dates of birth",
+              "Confirm dependency status (spouse, child, etc.) is correct",
+              "Ensure no former dependents are incorrectly still listed",
+            ],
+          },
+          {
+            step: "Step 5: Print for Reference",
+            details: [
+              "Print or save the BIR as a PDF",
+              "Keep a copy in your personal records",
+              "Bring a copy to career planning and reenlistment appointments",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Wrong PEBD",
+            details: [
+              "This affects your pay longevity steps and retirement date",
+              "If you had prior service (another branch, broken service), verify PEBD is adjusted correctly",
+              "Wrong PEBD can cost you money every paycheck",
+            ],
+          },
+          {
+            step: "Outdated Marital Status",
+            details: [
+              "Divorce or marriage not updated can cause BAH issues",
+              "You could be overpaid (and owe money back) or underpaid",
+              "Update within 30 days of any change with proper documentation",
+            ],
+          },
+          {
+            step: "Missing or Incorrect MOS",
+            details: [
+              "If you completed a lateral move or earned an AMOS, verify it shows on your BIR",
+              "Missing MOS qualifications can affect assignment eligibility",
+              "Check after completing any MOS-producing school",
+            ],
+          },
+          {
+            step: "Not Checking After Major Life Events",
+            details: [
+              "Always review your BIR after: marriage, divorce, birth of a child, reenlistment, promotion, PCS",
+              "Changes take time to process - give it 30-60 days then verify",
+            ],
+          },
+        ],
+      },
+      {
+        title: "How to Fix Errors",
+        steps: [
+          {
+            step: "Gather Supporting Documents",
+            details: [
+              "Marriage/divorce certificates for dependent changes",
+              "DD-214 or enlistment documents for PEBD issues",
+              "School completion certificates for MOS issues",
+              "Promotion warrant for date of rank issues",
+            ],
+          },
+          {
+            step: "Submit Corrections",
+            details: [
+              "Use EPAR for most administrative corrections",
+              "Work with your S-1/Admin shop for complex issues",
+              "Some changes (like PEBD corrections) may require HQMC action",
+              "Keep copies of everything you submit",
+            ],
+          },
         ],
       },
     ],
   },
   "mol-btr": {
     title: "Basic Training Record (BTR)",
-    description: "The Basic Training Record displays your complete training history including recruit training, MOS schools, professional military education, and additional skill identifiers.",
-    capabilities: ["View training history", "View education records", "View MOS qualifications", "View PME completion", "Print training record"],
+    description: "The Basic Training Record is your complete professional development history. It documents every school, course, and qualification you have earned from boot camp through your current rank. This record directly affects your competitiveness for promotion, special duty assignments, and reenlistment.",
+    capabilities: ["View training history", "View education records", "View MOS qualifications", "View PME completion", "Print training record", "Verify school completions", "Check language scores"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Your BTR",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Basic Training Record" },
-          { step: "Review your complete training and education history" },
-        ],
-      },
-      {
-        title: "BTR Sections",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Formal Schools",
+            step: "Promotion Board Review",
             details: [
-              "Recruit Training completion",
-              "MOS-producing schools",
-              "Advanced courses and schools",
-              "Joint and service schools",
+              "Boards look at your BTR to see your professional development",
+              "PME completion is often a prerequisite for promotion",
+              "Missing schools or qualifications make you less competitive",
+              "The BTR tells the story of how you have invested in your career",
             ],
           },
           {
-            step: "Professional Military Education (PME)",
+            step: "Assignment Eligibility",
             details: [
-              "Corporals Course",
-              "Sergeants Course",
-              "Career Course",
-              "Advanced Course",
-              "Resident and non-resident PME",
+              "Many billets require specific schools or qualifications",
+              "Career monitors check BTRs when matching Marines to assignments",
+              "Missing a required course can disqualify you from a desired billet",
+              "Special duty assignments (DI, Recruiter, MSG) require BTR verification",
             ],
           },
           {
-            step: "Additional Qualifications",
+            step: "Bonus and Incentive Eligibility",
             details: [
-              "Additional MOS (AMOS)",
-              "Necessary MOS (NMOS)",
-              "Special qualifications and licenses",
-              "Language proficiency scores",
+              "Some reenlistment bonuses require specific school completions",
+              "FLPB (Foreign Language Proficiency Bonus) requires DLPT scores on record",
+              "Certain incentive pays are tied to qualifications shown in your BTR",
             ],
           },
         ],
       },
       {
-        title: "Updating Training Records",
+        title: "How to Review Your BTR",
         steps: [
-          { step: "Training updates are typically entered by your S-3/Training section" },
-          { step: "For missing schools, provide certificates or orders to your Admin" },
-          { step: "DLPT scores are updated through official testing channels" },
+          {
+            step: "Step 1: Access the Record",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Basic Training Record",
+              "The BTR shows your complete training history chronologically",
+            ],
+          },
+          {
+            step: "Step 2: Verify Formal Schools",
+            details: [
+              "Confirm recruit training (boot camp, OCS, etc.) is recorded",
+              "Check that your MOS school is listed with correct completion date",
+              "Verify any advanced MOS schools or functional courses",
+              "Look for Joint courses, sister service schools, or civilian courses",
+            ],
+          },
+          {
+            step: "Step 3: Check PME Status",
+            details: [
+              "Verify your required PME is recorded: Corporals Course, Sergeants Course, etc.",
+              "Check resident vs. non-resident status is correct",
+              "Confirm completion dates are accurate",
+              "Look for any missing PME that you completed",
+            ],
+          },
+          {
+            step: "Step 4: Review Additional Qualifications",
+            details: [
+              "AMOS (Additional MOS) from lateral moves or schools",
+              "NMOS (Necessary MOS) from specialized training",
+              "Language proficiency (DLPT scores)",
+              "Special qualifications: Airborne, Combatant Diver, etc.",
+            ],
+          },
+          {
+            step: "Step 5: Print for Reference",
+            details: [
+              "Print or save as PDF for your personal records",
+              "Bring to career planning and reenlistment sessions",
+              "Use when applying for special duty assignments",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Missing PME",
+            details: [
+              "Just because you completed the course does not mean it was recorded",
+              "MarineNet courses may not automatically post to your BTR",
+              "Resident PME from schoolhouses should post within 30-60 days",
+              "If missing after 90 days, submit a correction request",
+            ],
+          },
+          {
+            step: "Outdated DLPT Scores",
+            details: [
+              "DLPT scores expire and must be retested periodically",
+              "Expired scores may drop from your record or show as outdated",
+              "If you receive FLPB, ensure your current scores are posted",
+            ],
+          },
+          {
+            step: "Not Checking After Each School",
+            details: [
+              "Always verify your BTR 60-90 days after completing any course",
+              "This includes unit-level schools, MTTs, and mobile training",
+              "Keep certificates as backup documentation",
+            ],
+          },
+          {
+            step: "Assuming S-3 Updated It",
+            details: [
+              "Training sections are busy and errors happen",
+              "You are ultimately responsible for your own record accuracy",
+              "Verify; do not assume",
+            ],
+          },
+        ],
+      },
+      {
+        title: "How to Fix Missing Training",
+        steps: [
+          {
+            step: "Gather Documentation",
+            details: [
+              "School completion certificates",
+              "Training orders or TAD orders to the school",
+              "MarineNet course completion screenshots",
+              "DLPT score sheets from testing center",
+            ],
+          },
+          {
+            step: "Contact the Right Section",
+            details: [
+              "For formal schools: Contact your S-3/Training with certificates",
+              "For PME: Contact the schoolhouse that ran the course",
+              "For DLPT: Contact the testing center or language program manager",
+              "For MOL-based courses: May need to work through MCTIMS",
+            ],
+          },
+          {
+            step: "Submit EPAR If Needed",
+            details: [
+              "Some training corrections require an EPAR",
+              "Attach all supporting documentation",
+              "Provide course name, location, and completion date",
+              "Be specific about what is missing or incorrect",
+            ],
+          },
+          {
+            step: "Follow Up",
+            details: [
+              "Training corrections can take 30-90 days to process",
+              "Check your BTR monthly until the correction appears",
+              "Escalate to your chain of command if stuck in the system",
+            ],
+          },
         ],
       },
     ],
@@ -3869,54 +4285,122 @@ const MOL_FUNCTIONAL_MODULES = {
   },
   "mol-acknowledgements": {
     title: "Acknowledgements",
-    description: "The Acknowledgements transaction allows Marines to electronically acknowledge receipt and understanding of important policies, directives, and administrative requirements.",
-    capabilities: ["View pending acknowledgements", "Complete required acknowledgements", "View acknowledgement history", "Print acknowledgement records"],
+    description: "The Acknowledgment Record is your digital paper trail. When you click 'Acknowledge,' you are legally stating that you have been informed of a specific requirement. Keeping this clear ensures your record stays 'Green' and prevents leadership from having to track you down for missing signatures.",
+    capabilities: ["View pending acknowledgements", "Complete required acknowledgements", "View acknowledgement history", "Print acknowledgement records", "Maintain record integrity"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Acknowledgements",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Acknowledgement Record" },
-          { step: "View pending and historical acknowledgements" },
-        ],
-      },
-      {
-        title: "Pending Acknowledgements",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Understanding the Display",
+            step: "Legal Documentation",
             details: [
-              "Code - Unique identifier for the acknowledgement type",
-              "Description - What you are acknowledging",
-              "Action - Click 'Acknowledge' to complete",
-              "'(Pending)' indicates items not yet processed through MCTFS",
+              "The Acknowledgment Record is your digital paper trail",
+              "When you click 'Acknowledge,' you are legally stating you have been informed of a specific requirement",
+              "Examples include new policies on Montgomery GI Bill benefits or changes in MOS status",
+              "Keeping this clear ensures your record stays 'Green'",
+              "Prevents your leadership from having to hunt you down for missing signatures",
             ],
           },
-          { step: "Click the 'Acknowledge' link for items requiring your action" },
-          { step: "Read any associated policy or directive before acknowledging" },
-          { step: "Confirm your acknowledgement when prompted" },
         ],
       },
       {
-        title: "Historical Acknowledgements",
-        steps: [
-          { step: "View completed acknowledgements with Code, Description, and Date" },
-          { step: "Click 'Printer Friendly View' to print for your records" },
-          { step: "Historical records serve as proof of completion" },
-        ],
-      },
-      {
-        title: "Common Acknowledgement Types",
+        title: "How to Clear Your Pending List",
         steps: [
           {
-            step: "Examples Include",
+            step: "Step 1: Access the Record",
             details: [
-              "Annual training requirements",
-              "Policy updates and changes",
-              "Safety briefings",
-              "Legal notifications",
-              "Benefits elections",
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Information section",
+              "Select Acknowledgment Record",
+            ],
+          },
+          {
+            step: "Step 2: Identify the Task",
+            details: [
+              "Look at the Pending Acknowledgments section",
+              "If you see a link that says 'Acknowledge' - that is your To-Do list",
+              "If you see '(Pending)' in parentheses - you've already done your part, it's waiting for MCTFS to finish processing",
+            ],
+          },
+          {
+            step: "Step 3: Read the Description",
+            details: [
+              "Before clicking, read the Description column",
+              "This tells you exactly what you are signing for",
+              "Make sure you understand the policy or requirement",
+            ],
+          },
+          {
+            step: "Step 4: The Digital Signature",
+            details: [
+              "Click the 'Acknowledge' link",
+              "A pop-up or new page will appear with the full text of the statement",
+              "Scroll to the bottom and confirm your acknowledgement",
+            ],
+          },
+          {
+            step: "Step 5: Verify History",
+            details: [
+              "Once processed, the item moves from 'Pending' to 'Historical Acknowledgments'",
+              "This is your proof that you completed it",
+              "You can reference this at any time in your career",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "The 'Printer-Friendly' Trap",
+            details: [
+              "Some Marines think they need to print and sign these - you don't",
+              "The digital click IS your signature",
+              "Only use 'Printer-Friendly View' if your S-1 specifically asks for a hard copy for a package",
+            ],
+          },
+          {
+            step: "Walking Away Too Early",
+            details: [
+              "If you click 'Acknowledge' but don't hit the final 'Confirm' or 'Submit,' the status won't change",
+              "Always refresh the page to make sure the link is gone",
+              "Verify the item moved to Historical Acknowledgments",
+            ],
+          },
+          {
+            step: "Ignoring the Dates",
+            details: [
+              "If an item stays in '(Pending)' for more than a week, it might have glitched in MCTFS",
+              "If it doesn't move to 'Historical' after a few days, let your NCO know",
+              "They can check your record in 3270/MCTFS to troubleshoot",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What Happens After You Click",
+        steps: [
+          {
+            step: "System Update",
+            details: [
+              "The change is sent to the Marine Corps Total Force System (MCTFS)",
+              "Processing typically takes a few minutes to a few days",
+            ],
+          },
+          {
+            step: "MOL Homepage Notification",
+            details: [
+              "Once the system fully processes the entry, you'll see a notification on your main MOL dashboard",
+              "This confirms the update was successful",
+            ],
+          },
+          {
+            step: "Record Integrity",
+            details: [
+              "The item is permanently stored in your Historical Acknowledgments",
+              "You can look back at this at any time in your career",
+              "Use this to prove you were briefed on a certain topic if ever questioned",
             ],
           },
         ],
