@@ -3869,54 +3869,122 @@ const MOL_FUNCTIONAL_MODULES = {
   },
   "mol-acknowledgements": {
     title: "Acknowledgements",
-    description: "The Acknowledgements transaction allows Marines to electronically acknowledge receipt and understanding of important policies, directives, and administrative requirements.",
-    capabilities: ["View pending acknowledgements", "Complete required acknowledgements", "View acknowledgement history", "Print acknowledgement records"],
+    description: "The Acknowledgment Record is your digital paper trail. When you click 'Acknowledge,' you are legally stating that you have been informed of a specific requirement. Keeping this clear ensures your record stays 'Green' and prevents leadership from having to track you down for missing signatures.",
+    capabilities: ["View pending acknowledgements", "Complete required acknowledgements", "View acknowledgement history", "Print acknowledgement records", "Maintain record integrity"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Acknowledgements",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Acknowledgement Record" },
-          { step: "View pending and historical acknowledgements" },
-        ],
-      },
-      {
-        title: "Pending Acknowledgements",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Understanding the Display",
+            step: "Legal Documentation",
             details: [
-              "Code - Unique identifier for the acknowledgement type",
-              "Description - What you are acknowledging",
-              "Action - Click 'Acknowledge' to complete",
-              "'(Pending)' indicates items not yet processed through MCTFS",
+              "The Acknowledgment Record is your digital paper trail",
+              "When you click 'Acknowledge,' you are legally stating you have been informed of a specific requirement",
+              "Examples include new policies on Montgomery GI Bill benefits or changes in MOS status",
+              "Keeping this clear ensures your record stays 'Green'",
+              "Prevents your leadership from having to hunt you down for missing signatures",
             ],
           },
-          { step: "Click the 'Acknowledge' link for items requiring your action" },
-          { step: "Read any associated policy or directive before acknowledging" },
-          { step: "Confirm your acknowledgement when prompted" },
         ],
       },
       {
-        title: "Historical Acknowledgements",
-        steps: [
-          { step: "View completed acknowledgements with Code, Description, and Date" },
-          { step: "Click 'Printer Friendly View' to print for your records" },
-          { step: "Historical records serve as proof of completion" },
-        ],
-      },
-      {
-        title: "Common Acknowledgement Types",
+        title: "How to Clear Your Pending List",
         steps: [
           {
-            step: "Examples Include",
+            step: "Step 1: Access the Record",
             details: [
-              "Annual training requirements",
-              "Policy updates and changes",
-              "Safety briefings",
-              "Legal notifications",
-              "Benefits elections",
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Information section",
+              "Select Acknowledgment Record",
+            ],
+          },
+          {
+            step: "Step 2: Identify the Task",
+            details: [
+              "Look at the Pending Acknowledgments section",
+              "If you see a link that says 'Acknowledge' - that is your To-Do list",
+              "If you see '(Pending)' in parentheses - you've already done your part, it's waiting for MCTFS to finish processing",
+            ],
+          },
+          {
+            step: "Step 3: Read the Description",
+            details: [
+              "Before clicking, read the Description column",
+              "This tells you exactly what you are signing for",
+              "Make sure you understand the policy or requirement",
+            ],
+          },
+          {
+            step: "Step 4: The Digital Signature",
+            details: [
+              "Click the 'Acknowledge' link",
+              "A pop-up or new page will appear with the full text of the statement",
+              "Scroll to the bottom and confirm your acknowledgement",
+            ],
+          },
+          {
+            step: "Step 5: Verify History",
+            details: [
+              "Once processed, the item moves from 'Pending' to 'Historical Acknowledgments'",
+              "This is your proof that you completed it",
+              "You can reference this at any time in your career",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "The 'Printer-Friendly' Trap",
+            details: [
+              "Some Marines think they need to print and sign these - you don't",
+              "The digital click IS your signature",
+              "Only use 'Printer-Friendly View' if your S-1 specifically asks for a hard copy for a package",
+            ],
+          },
+          {
+            step: "Walking Away Too Early",
+            details: [
+              "If you click 'Acknowledge' but don't hit the final 'Confirm' or 'Submit,' the status won't change",
+              "Always refresh the page to make sure the link is gone",
+              "Verify the item moved to Historical Acknowledgments",
+            ],
+          },
+          {
+            step: "Ignoring the Dates",
+            details: [
+              "If an item stays in '(Pending)' for more than a week, it might have glitched in MCTFS",
+              "If it doesn't move to 'Historical' after a few days, let your NCO know",
+              "They can check your record in 3270/MCTFS to troubleshoot",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What Happens After You Click",
+        steps: [
+          {
+            step: "System Update",
+            details: [
+              "The change is sent to the Marine Corps Total Force System (MCTFS)",
+              "Processing typically takes a few minutes to a few days",
+            ],
+          },
+          {
+            step: "MOL Homepage Notification",
+            details: [
+              "Once the system fully processes the entry, you'll see a notification on your main MOL dashboard",
+              "This confirms the update was successful",
+            ],
+          },
+          {
+            step: "Record Integrity",
+            details: [
+              "The item is permanently stored in your Historical Acknowledgments",
+              "You can look back at this at any time in your career",
+              "Use this to prove you were briefed on a certain topic if ever questioned",
             ],
           },
         ],
