@@ -4559,7 +4559,7 @@ const MOL_FUNCTIONAL_MODULES = {
   "mol-red": {
     title: "Record of Emergency Data (RED)",
     description: "The most important administrative document you will ever sign. Also known as the DD Form 93, this is the official 'In Case of Emergency' document the Marine Corps uses to notify your family if something happens to you. If you are injured or killed, the Marine Corps uses this exact page to find your next of kin.",
-    capabilities: ["View emergency contacts", "Update beneficiaries", "Certify RED", "Update next of kin", "Manage death gratuity", "Designate PADD", "Manage family addresses", "Update spouse preferred language", "Support NEO planning", "Manage parent information", "Designate pay arrears beneficiaries"],
+    capabilities: ["View emergency contacts", "Update beneficiaries", "Certify RED", "Update next of kin", "Manage death gratuity", "Designate PADD", "Manage family addresses", "Update spouse preferred language", "Support NEO planning", "Manage parent information", "Designate pay arrears beneficiaries", "Configure do not notify", "Track private insurance policies", "Provide NOK directions", "Set MIA notification contacts"],
     userTypes: ["All Marines"],
     guide: [
       {
@@ -5044,6 +5044,294 @@ const MOL_FUNCTIONAL_MODULES = {
               "Check Death Gratuity designation for the larger $100,000 sum",
               "Audit annually - check this page every time you have a life event (marriage, birth, divorce)",
               "Verify on your Basic Individual Record (BIR) in two days that changes are reflected",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Do Not Notify Information",
+        steps: [
+          {
+            step: "Why This Feature Exists",
+            details: [
+              "Protects vulnerable family members from the sudden shock of casualty notification",
+              "If a parent has severe heart condition, advanced dementia, or is hospitalized, a sudden CACO visit could cause a medical crisis",
+              "Allows you to tell the Marine Corps: 'Do not go to this person directly - go to this other person first so they can break the news gently'",
+              "This does not mean the person will never find out - it ensures they are told by a loved one rather than a stranger in uniform",
+            ],
+          },
+          {
+            step: "Adding a Do Not Notify Record",
+            details: [
+              "Click 'Add New Do Not Notify Record'",
+              "Provide the name of the person who should NOT be notified directly",
+              "Provide the reason (e.g., 'Heart condition', 'Advanced age/Dementia')",
+              "Provide the name and contact info of the person who SHOULD be contacted to handle the notification",
+            ],
+          },
+          {
+            step: "Managing Records",
+            details: [
+              "Click 'Details' to see the full context of a record",
+              "Click 'Edit' to update a phone number for the intermediary contact",
+              "Click 'Remove' if a family member's health improves - text turns red with strikethrough",
+              "Click 'Cancel Removal' if you accidentally clicked remove (within 24-48 hours)",
+            ],
+          },
+          {
+            step: "Address Formatting",
+            details: [
+              "Click 'Reformat This Address' to toggle between U.S. and Foreign address structures",
+              "Do not use periods, commas, or dashes - type '123 Main St Apt 4' not '123 Main St., Apt. #4'",
+              "Enter Street, City, State (initials only), and Zip Code for U.S. addresses",
+            ],
+          },
+          {
+            step: "Who Should Be on This List",
+            details: [
+              "Medical Frailty: Grandparent or parent with history of heart failure or stroke",
+              "Mental Health: Family member currently in psychiatric facility or severe mental health crisis",
+              "Dementia/Alzheimer's: Relative who would not understand and might become dangerously agitated",
+              "This is NOT primarily for people you are estranged from - it's for medical safety",
+            ],
+          },
+          {
+            step: "Do Not Notify Pitfalls",
+            details: [
+              "Simply putting someone on this list is only half the job - you must identify who SHOULD break the news in your NOK or PADD section",
+              "Even though you're requesting 'No Notification,' the Marine Corps still needs their address for complete family records",
+              "Clicking 'Remove This Address' only deletes the location, not the instruction - use 'Remove' to clear the whole instruction",
+              "Changes appear in bold for 24-48 hours while pending",
+            ],
+          },
+          {
+            step: "After Adding Do Not Notify",
+            details: [
+              "Inform the intermediary that they are listed on your RED and what their role would be",
+              "Check the 'Directions' section if the notify-instead person lives in a rural or hard-to-find area",
+              "Audit annually - if a parent recovers, remove them so they can receive direct notification with honor",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Insurance Information (Private Policies)",
+        steps: [
+          {
+            step: "Why Private Insurance Matters",
+            details: [
+              "When a CACO sits down with your family, they use this list to help identify which insurance companies to call",
+              "If a policy isn't listed here, your family might not know it exists - leaving thousands unclaimed",
+              "This consolidates USAA, Navy Federal, civilian employer policies, etc. into one official military record",
+              "Having policy numbers pre-loaded allows the CACO to help start claims within days",
+              "This is SEPARATE from SGLI - do NOT list your SGLI here (that's managed via milConnect SOES)",
+            ],
+          },
+          {
+            step: "Managing Insurance Records (Up to 5 Policies)",
+            details: [
+              "Click 'Add New Insurance Record'",
+              "Provide: Insurance Company Name, Policy Number, Company Address and Phone Number",
+              "Click 'Edit' to update if coverage amount changes or company merges/changes name",
+              "Click 'Remove' to delete an expired or cancelled policy",
+              "Click 'Cancel Removal' before the 24-48 hour sync window closes if you made a mistake",
+            ],
+          },
+          {
+            step: "The 25-Character Constraint",
+            details: [
+              "MOL limits this field to a maximum of 25 characters",
+              "Prioritize the Policy Number - company names are easy to guess, policy numbers are unique and vital",
+              "Abbreviate heavily: 'Northwestern Mutual 555-1234' becomes 'NW Mut5551234'",
+              "Example: 'State Farm Insurance 987654' becomes 'StateFrm987654'",
+              "Keep at least 4-5 letters of company name so it's recognizable",
+              "Avoid using #, -, or . as they take up valuable character spaces",
+            ],
+          },
+          {
+            step: "Insurance Pitfalls",
+            details: [
+              "Don't just write 'MetLife' - specify the branch or policy type if possible",
+              "If you renew a term-life policy and get a new number, you must update it here",
+              "An incorrect policy number can delay a claim for months",
+              "This information is viewable by S-1 and command leadership - include only what's necessary for claims",
+            ],
+          },
+          {
+            step: "After Updating Insurance",
+            details: [
+              "Check SGLI/SOES on milConnect to ensure military insurance beneficiaries are also current",
+              "Inform your beneficiaries where you keep original hard-copy documents - MOL is the 'pointer' but they'll need actual papers",
+              "Verify on BIR in 48 hours that carriers are listed in the Insurance section",
+              "Make sure your PADD knows these policies exist",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Next of Kin (NOK) Contact Information",
+        steps: [
+          {
+            step: "Why NOK Data Is Critical",
+            details: [
+              "The Marine Corps has a strict 8-hour goal to notify your family in person after a casualty",
+              "Primary Next of Kin (PNOK): First person contacted - spouse if married, parents if single",
+              "Secondary Next of Kin (SNOK): Other relatives or close friends who should be notified",
+              "For deaths, a uniformed CACO is sent to the address you provide - wrong address means delayed notification",
+              "Wrong addresses often lead to families hearing news through social media first - a situation the Marine Corps works to avoid",
+            ],
+          },
+          {
+            step: "Managing NOK Records (Up to 3)",
+            details: [
+              "Click 'Add Next of Kin Record' (up to three) or 'Edit' an existing one",
+              "Ensure your PNOK is listed first",
+              "Provide a valid physical address and 24-hour phone number",
+              "Click 'Remove' to delete someone (divorce, estrangement) - text turns red until processed",
+              "Click 'Apply Changes' to send update to MCTFS",
+            ],
+          },
+          {
+            step: "Phone Number Formatting",
+            details: [
+              "Click 'reformat this phone' to toggle between U.S. and Overseas formats",
+              "U.S. Format: 10 digits (Area Code + Number)",
+              "Overseas Format: Up to 15 digits (Country Code + City Code + Number)",
+              "Provide a 24-hour contact number",
+              "Include extension in the extension box only for office extensions (e.g., x102)",
+              "For foreign numbers, verify correct prefix at countrycallingcodes.com",
+            ],
+          },
+          {
+            step: "Relationship Hierarchy",
+            details: [
+              "The 'Relationship' you select defines the legal order of notification",
+              "Select accurately: Spouse, Mother, Father, Sibling, etc.",
+              "Spouse is Primary Next of Kin (PNOK) for married Marines",
+              "Parents are usually PNOK for single Marines",
+            ],
+          },
+          {
+            step: "NOK Pitfalls",
+            details: [
+              "Update this every time you move or your family moves - avoid the 'Social Media Risk'",
+              "Don't use periods or commas in addresses - use '123 Main St Apt 4' not '123 Main St., Apt. 4'",
+              "Don't put last four digits of phone in extension box - that's only for office extensions",
+              "Ensure phone here matches number in RED Family Information section",
+              "Bold text takes 24-48 hours to return to normal while syncing",
+            ],
+          },
+          {
+            step: "After Updating NOK",
+            details: [
+              "Audit your PADD to ensure correct person handles funeral honors",
+              "If NOK is a spouse who recently moved, update DEERS via local ID card office",
+              "Review 'Do Not Notify' list if any NOK has severe health issues",
+              "Check BTR in two days to verify relationship and phone migrated correctly",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Next of Kin Directions (The CACO Map)",
+        steps: [
+          {
+            step: "Why Directions Matter",
+            details: [
+              "A CACO's mission is to deliver news in person with dignity and speed - they don't want to be stuck at a locked gate",
+              "The Marine Corps cannot deliver notification to a PO Box - directions are the ONLY way they'll know which house is your family's",
+              "GPS often fails in rural 'back-country' areas - landmarks are more reliable than digital maps",
+              "A CACO may arrive at 02:00 in a city they don't know - your directions prevent wasted time when minutes count",
+            ],
+          },
+          {
+            step: "Writing Effective Directions (5 Boxes, 35 Characters Each)",
+            details: [
+              "Don't waste space with directions from the interstate - start from nearest major landmark or neighborhood entrance",
+              "Do not use special characters like &, #, or @ - MCTFS often crashes on these",
+              "Example: 'Gatcode 1234 Apt 2B back of bldg'",
+              "For PO Box/Rural: Describe physical house - 'White house with red door on Rt 9'",
+              "For Overseas: Include local phone number in direction boxes as backup",
+            ],
+          },
+          {
+            step: "Specific Scenarios",
+            details: [
+              "Gated Community: Provide gate code or call box instructions",
+              "Rural Area: Use landmarks - 'Turn left at the red barn, third house on right with gravel driveway'",
+              "Apartment Complex: 'Gate code is 1234, Apartment 4B is in back left corner of complex'",
+              "PO Box Users: MUST provide physical location description here",
+            ],
+          },
+          {
+            step: "Directions Pitfalls",
+            details: [
+              "Using symbols like & or % can cause MCTFS to reject - use 'and' or omit",
+              "'Third house on the left' is vague at night - use 'Third house on left, brown fence'",
+              "Don't think a phone number is enough - the goal is IN-PERSON notification",
+              "Bold text appears for 24-48 hours while syncing",
+            ],
+          },
+          {
+            step: "After Writing Directions",
+            details: [
+              "Test: Read your 175 characters to a friend - if they can't visualize it, rewrite for clarity",
+              "Verify on BTR in two days that NOK Directions section reflects your input",
+              "If the person is also your PADD, you've secured the most critical part of your emergency data",
+            ],
+          },
+        ],
+      },
+      {
+        title: "MIA Notification Information",
+        steps: [
+          {
+            step: "Why MIA Designation Is Different",
+            details: [
+              "Missing in Action status involves long-term uncertainty, legal shifts in pay status, and media interest",
+              "A dedicated CACO is assigned who specializes in long-term cases as official liaison between family and DoD",
+              "This designated person is authorized to receive sensitive updates regarding search and recovery efforts",
+              "Your pay continues to accrue during MIA status - this person handles administrative issues",
+            ],
+          },
+          {
+            step: "Managing MIA Records",
+            details: [
+              "Click 'Add New MIA Notify Record'",
+              "Provide full legal name, relationship, 24-hour phone number, and physical directions to residence",
+              "Click 'Edit' if your designated person moves or changes their number",
+              "Click 'Remove' to designate a different person",
+              "Changes appear in bold for 24-48 hours while pending",
+            ],
+          },
+          {
+            step: "Required Information",
+            details: [
+              "Name: Full legal name (First, Middle Initial, Last)",
+              "Directions: 5 lines of 35 characters each for physical location",
+              "If PO Box/Rural: Describe physical house (e.g., '3rd house past grain silo, green mailbox')",
+              "If Overseas: Include international phone number in direction boxes as backup",
+              "Phone Numbers: Provide TWO different numbers if possible (Cell + Work, or Cell + Home)",
+              "Include area code for all U.S. numbers",
+            ],
+          },
+          {
+            step: "MIA Pitfalls",
+            details: [
+              "Don't leave this blank assuming NOK section covers it - systems pull from this specific field for MIA cases",
+              "Don't type 'Same as Next of Kin' in directions - automated systems may not read that instruction",
+              "Avoid periods and commas - use 'Apt 4' not 'Apt. #4'",
+              "Don't leave second phone box blank if there's any other way to reach family",
+              "Ensure the person you list can handle potential media scrutiny - MIA cases attract public attention",
+            ],
+          },
+          {
+            step: "After Updating MIA",
+            details: [
+              "Inform the contact that they are your MIA Notify person and would receive official DoD updates",
+              "Coordinate with your PADD - often the same person for both roles",
+              "Review Pay Arrears section since pay continues during MIA status",
+              "Verify on BTR in two business days that MIA section is populated correctly",
             ],
           },
         ],
