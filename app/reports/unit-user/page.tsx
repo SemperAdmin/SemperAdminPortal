@@ -1,13 +1,9 @@
 import CatalogGrid from "../../../components/CatalogGrid";
-import { reportGroups, type CatalogGroup } from "../../../data/links";
+import { unitUserReportGroups, type CatalogGroup } from "../../../data/links";
 
 export default function ReportsUnitUserPage() {
-  const unitUserItem = reportGroups.find((g) => g.name === "Portals")?.items.find((i) => i.title === "Unit User Reports");
-  const unitUserGroup: CatalogGroup = {
-    name: "Unit User Reports",
-    items: unitUserItem ? [unitUserItem] : [],
-  };
-  const byName = (n: string) => reportGroups.find((g) => g.name === n) as CatalogGroup | undefined;
+  const unitUser = unitUserReportGroups.find((g) => g.name === "Unit User Reports") as CatalogGroup | undefined;
+  const byName = (n: string) => unitUserReportGroups.find((g) => g.name === n) as CatalogGroup | undefined;
   const common = [
     byName("Portals"),
     byName("Non Routine"),
@@ -18,7 +14,7 @@ export default function ReportsUnitUserPage() {
     byName("15th of the Month"),
     byName("U&E"),
   ].filter(Boolean) as CatalogGroup[];
-  const groups = ([unitUserGroup, ...common].filter(Boolean) as CatalogGroup[]);
+  const groups = ([unitUser, ...common].filter(Boolean) as CatalogGroup[]);
   return (
     <div className="space-y-6">
       <h1 className="text-3xl font-bold tracking-tight text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Unit User Reports</h1>
@@ -27,4 +23,3 @@ export default function ReportsUnitUserPage() {
     </div>
   );
 }
-
