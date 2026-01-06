@@ -2832,25 +2832,35 @@ const MOL_FUNCTIONAL_MODULES = {
             step: "Step 1: Access the Report",
             details: [
               "Log in to MOL at https://mol.tfs.usmc.mil/",
-              "Navigate to Personal Info > Annual Retirement Credit Report",
-              "The report loads showing all your anniversary years",
+              "Navigate to Personal Info > Annual Retirement Credit Report (ARCR)",
+              "The year currently displayed appears in parentheses in the heading - e.g., 'Annual Retirement Credit Record (2025)'",
             ],
           },
           {
-            step: "Step 2: Review Each Anniversary Year",
+            step: "Step 2: Switch Between Years",
             details: [
-              "Look at each row - your anniversary year runs from your PEBD (Pay Entry Base Date)",
+              "Look for the 'Actions' line under the heading",
+              "Click 'Prior Year ARCR' to see previous year's points",
+              "Click 'Current Year ARCR' to switch back to the current year",
+              "Use this to compare points across multiple anniversary years",
+            ],
+          },
+          {
+            step: "Step 3: Review Each Anniversary Year",
+            details: [
+              "Your anniversary year runs from your PEBD (Pay Entry Base Date), NOT January 1st",
               "Check the total points column for each year",
               "Anything 50 or above is a 'good year' that counts toward retirement",
-              "Years with less than 50 points are 'bad years' and do not count",
+              "Years with less than 50 points are 'bad years' and do not count toward your 20-year requirement",
             ],
           },
           {
-            step: "Step 3: Print for Your Records",
+            step: "Step 4: Print for Your Records",
             details: [
-              "Click 'Printer Friendly View' to open a clean printable version",
-              "Print or save as PDF for your personal records",
-              "Keep copies in your personal service record file",
+              "Click 'Printer-Friendly View' - a new window opens with a formatted report",
+              "Click 'Print' to send to a printer or 'Save as PDF'",
+              "Always save a digital copy before closing the window",
+              "Do NOT just press Ctrl+P on the main MOL page - it will look messy. Always use the Printer-Friendly View link",
             ],
           },
         ],
@@ -2859,27 +2869,35 @@ const MOL_FUNCTIONAL_MODULES = {
         title: "Common Pitfalls to Avoid",
         steps: [
           {
-            step: "Not Checking Annually",
+            step: "Confusing Anniversary Year with Calendar Year",
             details: [
-              "Review your ARCR at least once per year, preferably after each AT period",
-              "Points from orders or drills may take 30-60 days to post",
-              "Catching errors early is easier than fixing them years later",
+              "Your 'Anniversary Year' starts on the day you entered the Marine Corps (PEBD), not January 1st",
+              "Make sure you are looking at the correct window of time",
+              "A common mistake is thinking you have until December to earn 50 points when your anniversary is actually in March",
             ],
           },
           {
-            step: "Assuming All Points Posted",
+            step: "Missing Correspondence Courses",
             details: [
-              "Just because you did the drill does not mean it was recorded correctly",
-              "Always verify after returning from Active Duty for Training (ADT) or Annual Training (AT)",
-              "Correspondence course points may require manual submission of completion certificates",
+              "Points from MarineNet or other schools can take a while to reflect",
+              "If you finished a course and don't see the points, wait one full update cycle before calling IPAC",
+              "Keep completion certificates as proof in case manual entry is needed",
             ],
           },
           {
-            step: "Ignoring Bad Years",
+            step: "The 50-Point Rule",
             details: [
-              "If you see a year with less than 50 points, investigate immediately",
-              "Sometimes points were earned but not posted - this is fixable",
-              "If legitimately a bad year, know that you'll need an extra year to reach 20",
+              "You generally need 50 points in an anniversary year for it to be a 'satisfactory year' for retirement",
+              "If you see you're at 48 points, you need to get a drill in before your anniversary date hits",
+              "Points from orders or drills may take 30-60 days to post - plan ahead",
+            ],
+          },
+          {
+            step: "Printing the Screen vs. the Report",
+            details: [
+              "Don't just hit Ctrl+P on the main MOL page - it will look messy",
+              "Always use the 'Printer-Friendly View' link to get the formal document",
+              "This creates a properly formatted report suitable for official records",
             ],
           },
         ],
@@ -2946,25 +2964,33 @@ const MOL_FUNCTIONAL_MODULES = {
             step: "Step 1: Access the Report",
             details: [
               "Log in to MOL at https://mol.tfs.usmc.mil/",
-              "Navigate to Personal Info > Aviation Career Incentive Pay",
-              "The report shows your current aviation pay status",
+              "Navigate to Personal Info > Aviation Incentive Pay-Aviation Bonus",
+              "The report shows your current aviation pay status and bonus information",
             ],
           },
           {
-            step: "Step 2: Review Key Data Points",
+            step: "Step 2: Review Your AVIP",
             details: [
-              "Aviation Service Entry Date (ASED) - when your aviation clock started",
-              "Current Gate - which pay tier you are in",
-              "Operational Flying Duty status - whether you are currently earning flight pay",
-              "Flight hours if tracked - some positions require minimum hours",
+              "Look at the Monthly Rate - this is determined by your 'Years of Aviation Service' (YAS)",
+              "Check your Flight Gate status - 'Continuous' means you're actively flying, 'Conditional' means at risk",
+              "If you haven't met flight hour requirements, AVIP could transition from Continuous to Conditional",
+              "YAS starts when you begin flight training, NOT when you joined the Marine Corps",
             ],
           },
           {
-            step: "Step 3: Verify Accuracy",
+            step: "Step 3: Review Your AVB (Aviation Bonus)",
             details: [
-              "Cross-reference your ASED with your training records",
-              "Confirm your current duty assignment matches your flying status",
-              "Check that any operational flying duty waivers are properly recorded",
+              "If you signed a bonus contract (e.g., 48 or 72-month extension), scheduled payment dates and amounts are listed here",
+              "New bonus contracts take up to 8 weeks for MMOA-2 to process before showing as 'Scheduled'",
+              "The AVB amount shown is the GROSS amount - your deposit will be less after federal and state taxes",
+            ],
+          },
+          {
+            step: "Step 4: Print for Your Records",
+            details: [
+              "Click the 'Printer Friendly' link at the top - a new window opens",
+              "Click 'Print' to send to a printer or save as PDF",
+              "Click 'Close' to return to your main MOL portal",
             ],
           },
         ],
@@ -2973,27 +2999,35 @@ const MOL_FUNCTIONAL_MODULES = {
         title: "Common Pitfalls to Avoid",
         steps: [
           {
-            step: "Not Tracking Your ASED",
+            step: "YAS vs. PEBD Confusion",
             details: [
-              "Your Aviation Service Entry Date determines your gate progression",
-              "If this date is wrong, your pay rate could be incorrect",
-              "Verify this date matches when you actually earned your wings or entered flight status",
+              "Your 'Years of Aviation Service' (YAS) starts when you begin flight training, NOT when you joined the Marine Corps",
+              "Don't be surprised if your YAS is lower than your total time in service",
+              "YAS determines your pay rate, not your overall time in the Marine Corps",
             ],
           },
           {
-            step: "Assuming Staff Tours Stop the Clock",
+            step: "Medical Status Disconnect",
             details: [
-              "Time in non-flying billets may or may not count depending on circumstances",
-              "Operational Flying Duty Credit (OFDC) rules are complex",
-              "Consult with your aviation personnel officer before accepting non-flying orders",
+              "If your flight physical expires, your AVIP can be suspended",
+              "This report might show a 'Stop Pay' note if your medical data hasn't hit MCTFS",
+              "Keep your flight physical current - an expired up-chit means no flight pay",
             ],
           },
           {
-            step: "Ignoring Proficiency Requirements",
+            step: "The 8-Week Wait for Bonuses",
             details: [
-              "Some aviation pay requires maintaining currency or minimum flight hours",
-              "Falling out of currency can affect your pay status",
-              "Track your flight hours and currency requirements separately",
+              "Aviation Bonuses are manually processed by MMOA-2",
+              "It can take up to 8 weeks for a signed contract to show up as 'Scheduled' on this page",
+              "Don't panic if your new bonus doesn't appear immediately",
+            ],
+          },
+          {
+            step: "Taxes on AVB",
+            details: [
+              "Remember that the AVB amount shown is the GROSS amount",
+              "Your actual deposit will be significantly less after federal and state taxes are withheld",
+              "Plan your finances around the net amount, not the gross",
             ],
           },
         ],
@@ -3039,28 +3073,19 @@ const MOL_FUNCTIONAL_MODULES = {
         title: "Why This Matters",
         steps: [
           {
-            step: "Promotion Board Impact",
+            step: "JEPES Points Impact",
             details: [
-              "Boards review your awards as evidence of your performance and contributions",
-              "Missing personal decorations (NAMs, Comm Medals) can hurt your competitiveness",
-              "Accurate records show boards you pay attention to detail and take pride in your career",
+              "Awards aren't just for your 'stack' - they carry JEPES points for Sergeants and below",
+              "For Staff NCOs and Officers, awards look favorable on Promotion Boards",
+              "If a Sea Service Deployment Ribbon or NAM is missing, you are literally losing points toward your next rank",
             ],
           },
           {
-            step: "Historical Record",
+            step: "Official Documentation",
             details: [
-              "Your awards tell the story of where you have been and what you have done",
-              "Campaign medals prove your participation in operations",
-              "Unit awards document your service with distinguished commands",
+              "If it's not in MOL, it's not in your OMPF (Official Military Personnel File)",
+              "If it's not in your OMPF, you aren't authorized to wear it",
               "This record follows you into veteran status and is difficult to reconstruct later",
-            ],
-          },
-          {
-            step: "Uniform Accuracy",
-            details: [
-              "Wearing unauthorized awards is a serious offense",
-              "Not wearing earned awards can make you look unprepared",
-              "MOL is the source document for what you are authorized to wear",
             ],
           },
         ],
@@ -3072,34 +3097,40 @@ const MOL_FUNCTIONAL_MODULES = {
             step: "Step 1: Access Your Record",
             details: [
               "Log in to MOL at https://mol.tfs.usmc.mil/",
-              "Navigate to Personal Info > Awards",
-              "Select 'Full List' to see all awards with details",
+              "Navigate to Personal Info > Award Information",
+              "The page opens in Summary View by default",
             ],
           },
           {
-            step: "Step 2: Check Each Category",
+            step: "Step 2: Summary View (Default)",
             details: [
-              "Personal Decorations: NAMs, Comm Medals, Achievement Medals you earned individually",
-              "Unit Awards: Presidential Unit Citation, Navy Unit Commendation, Meritorious Unit Commendation",
-              "Campaign and Service Medals: GWOT, Iraq Campaign, Afghanistan Campaign, Sea Service Deployment",
-              "Good Conduct Medals: Should reflect your completed periods of good conduct",
+              "This is your 'Quick Look' showing award code, description, and Quantity",
+              "If you have a '2' next to National Defense Service Medal, the system thinks you've earned it twice",
+              "Summary View is good for a quick check but lacks details",
             ],
           },
           {
-            step: "Step 3: Verify Against Your Records",
+            step: "Step 3: Full List View",
             details: [
-              "Cross-reference with award certificates in your possession",
-              "Check unit award eligibility against your duty station dates",
-              "Verify campaign medal eligibility against your deployment dates and orders",
-              "Count Good Conduct Medals against your time in service",
+              "Click the 'Full List View' link at the top of the table",
+              "This shows the Effective Date (when the award was earned) and Device Description (Bronze Star, Oak Leaf Cluster, etc.)",
+              "Use this view to verify dates and devices are correct",
             ],
           },
           {
-            step: "Step 4: Print for Reference",
+            step: "Step 4: Check Award Precedence (Ribbon Rack Order)",
             details: [
-              "Use 'Printer Friendly View' to create a clean printout",
+              "While in Full List View, click the 'Award Precedence Display' link",
+              "A new window opens showing your ribbons in the exact order they should be worn on your uniform",
+              "Use this when going to the PX to get a new ribbon rack built",
+            ],
+          },
+          {
+            step: "Step 5: Print for Reference",
+            details: [
+              "Use the 'Print' button to generate a clean copy",
+              "Standard browser printing usually cuts off ribbon images - use the formatted Print link",
               "Keep this with your personal copies of award certificates",
-              "Use this when building or updating your rack",
             ],
           },
         ],
@@ -3108,36 +3139,33 @@ const MOL_FUNCTIONAL_MODULES = {
         title: "Common Pitfalls to Avoid",
         steps: [
           {
-            step: "Assuming Deployment Equals Campaign Medal",
+            step: "Missing Devices",
             details: [
-              "Campaign medals have specific geographic and date requirements",
-              "Not every deployment qualifies for every medal",
-              "Check the specific criteria for each campaign medal you think you earned",
+              "You might see the medal listed, but the 'Device' column is blank",
+              "If you've been on three deployments but your Sea Service ribbon shows quantity of '1' with no stars, you need to get that corrected",
+              "Devices (stars, oak leaf clusters) must be added separately",
             ],
           },
           {
-            step: "Missing Unit Awards",
+            step: "Effective Date Errors",
             details: [
-              "Unit awards are often not automatically added to your record",
-              "You must prove you were assigned to the unit during the award period",
-              "Check MARADMIN messages for unit award announcements",
-              "Your old unit's S-1 or the awarding message can provide documentation",
+              "If the date listed is years off, it can cause issues with your cutting score calculations",
+              "Verify dates against your actual award certificates",
             ],
           },
           {
-            step: "Duplicate or Wrong Order",
+            step: "The 'Unit Award' Lag",
             details: [
-              "Sometimes the same award appears twice or in wrong precedence order",
-              "This can cause confusion when building your rack",
-              "Duplicates should be corrected to prevent issues at uniform inspections",
+              "Ribbons like the Meritorious Unit Commendation (MUC) are often awarded to an entire unit",
+              "It can take months for these to trickle down to your individual MOL record",
+              "Check MARADMIN messages for unit award announcements to verify eligibility",
             ],
           },
           {
-            step: "Not Checking After Each Tour",
+            step: "Printing the Screen",
             details: [
-              "Awards from your last command may not have posted before you transferred",
-              "Always verify your record 60-90 days after checking into a new command",
-              "End-of-tour awards are frequently delayed or missed",
+              "Don't just use standard browser printing - it usually cuts off the images of the ribbons",
+              "Always use the formatted 'Print' link to get the proper document",
             ],
           },
         ],
@@ -3146,25 +3174,31 @@ const MOL_FUNCTIONAL_MODULES = {
         title: "How to Fix Missing or Incorrect Awards",
         steps: [
           {
-            step: "Gather Documentation",
+            step: "The Paper Trail Requirement",
             details: [
-              "Award certificates with citation numbers",
-              "Orders showing duty station dates for unit award eligibility",
-              "Deployment orders for campaign medal eligibility",
-              "MARADMINs announcing unit awards",
+              "If an award is missing, you cannot just tell your NCO - you need the Award Citation or the signed 1650 form",
+              "Without physical proof, S-1 cannot run the entry",
+              "Keep copies of all award certificates in a safe place",
             ],
           },
           {
-            step: "Submit an EPAR",
+            step: "S-1 / IPAC Run",
             details: [
-              "Use the EPAR (Electronic Personnel Action Request) system in MOL",
-              "Select the appropriate award correction request type",
-              "Attach supporting documentation as PDFs",
-              "Provide clear explanation of what needs to be added or corrected",
+              "Take your physical proof (the certificate or citation) to your S-1",
+              "They will run the entry in MCTFS",
+              "Once S-1 runs the entry, it usually takes 24-72 hours to show up in MOL",
             ],
           },
           {
-            step: "Work with Your S-1",
+            step: "Final Check",
+            details: [
+              "Check back in MOL after 24-72 hours to ensure the 'Quantity' or 'Device' updated correctly",
+              "Verify the Effective Date is accurate",
+              "If still incorrect, follow up with S-1",
+            ],
+          },
+          {
+            step: "Alternative: Submit an EPAR",
             details: [
               "Your admin section can help navigate the correction process",
               "They can verify unit award eligibility through official channels",
@@ -3177,7 +3211,7 @@ const MOL_FUNCTIONAL_MODULES = {
   },
   "mol-bir": {
     title: "Basic Individual Record (BIR)",
-    description: "The Basic Individual Record is the 'snapshot' of who you are as a Marine. It combines your service dates, rank, MOS, contract status, and dependent information into one consolidated view. This is often the first document staff and boards look at when evaluating you, so accuracy is critical.",
+    description: "The BIR is arguably the most important page in MOL—the 'Master Cheat Sheet' of your entire Marine Corps career. Think of it as your digital DNA. It pulls data directly from the Central Master File (CMF), combining your service dates, rank, MOS, contract status, and dependent information into one consolidated view. This is often the first document staff and boards look at when evaluating you, so accuracy is critical.",
     capabilities: ["View service data", "View contract information", "View dependent data", "View administrative information", "Print BIR for records", "Verify key dates", "Check MOS assignments"],
     userTypes: ["All Marines"],
     guide: [
@@ -3220,10 +3254,19 @@ const MOL_FUNCTIONAL_MODULES = {
               "Log in to MOL at https://mol.tfs.usmc.mil/",
               "Navigate to Personal Info > Basic Individual Record",
               "The BIR loads as a single consolidated view",
+              "Note: The 'Printer Friendly' view opens in a new window—ensure pop-ups are allowed in your browser",
             ],
           },
           {
-            step: "Step 2: Verify Service Data",
+            step: "Step 2: Review the Three Main Pillars",
+            details: [
+              "Service Information: Your rank, MOS, PEBD, EAS, and critical service dates",
+              "Contract Information: Your current enlistment/reenlistment details",
+              "Dependent Information: Spouse, children, and anyone else the Marine Corps recognizes as your dependent",
+            ],
+          },
+          {
+            step: "Step 3: Verify Service Data",
             details: [
               "Check your current rank and date of rank are correct",
               "Verify your PMOS (Primary MOS) is accurate",
@@ -3233,7 +3276,7 @@ const MOL_FUNCTIONAL_MODULES = {
             ],
           },
           {
-            step: "Step 3: Review Personal Data",
+            step: "Step 4: Review Personal Data",
             details: [
               "Confirm name spelling matches your ID card exactly",
               "Verify blood type is recorded correctly (important for emergencies)",
@@ -3242,7 +3285,7 @@ const MOL_FUNCTIONAL_MODULES = {
             ],
           },
           {
-            step: "Step 4: Check Dependent Information",
+            step: "Step 5: Check Dependent Information",
             details: [
               "Verify all dependents are listed with correct names and dates of birth",
               "Confirm dependency status (spouse, child, etc.) is correct",
@@ -3250,7 +3293,7 @@ const MOL_FUNCTIONAL_MODULES = {
             ],
           },
           {
-            step: "Step 5: Print for Reference",
+            step: "Step 6: Print for Reference",
             details: [
               "Print or save the BIR as a PDF",
               "Keep a copy in your personal records",
@@ -3271,11 +3314,27 @@ const MOL_FUNCTIONAL_MODULES = {
             ],
           },
           {
+            step: "The PEBD vs. AFADBD Confusion",
+            details: [
+              "Marines often confuse their PEBD (Pay Entry Base Date—when you signed the contract) with their AFADBD (Active Federal Active Duty Begin Date—the day you actually left for boot camp)",
+              "For most Marines, these are different dates",
+              "PEBD drives pay longevity; AFADBD is used in other calculations",
+            ],
+          },
+          {
             step: "Outdated Marital Status",
             details: [
               "Divorce or marriage not updated can cause BAH issues",
               "You could be overpaid (and owe money back) or underpaid",
               "Update within 30 days of any change with proper documentation",
+            ],
+          },
+          {
+            step: "Outdated Dependents",
+            details: [
+              "If you get divorced or have a child and don't update this record, your pay will be incorrect",
+              "This usually results in the Marine Corps taking money back from you later (a 'debt to the government')",
+              "Always update dependent information within 30 days of any life event",
             ],
           },
           {
@@ -3322,7 +3381,7 @@ const MOL_FUNCTIONAL_MODULES = {
   },
   "mol-btr": {
     title: "Basic Training Record (BTR)",
-    description: "The Basic Training Record is your complete professional development history. It documents every school, course, and qualification you have earned from boot camp through your current rank. This record directly affects your competitiveness for promotion, special duty assignments, and reenlistment.",
+    description: "The Basic Training Record is your complete professional development history and the engine behind your JEPES (Junior Enlisted Performance Evaluation System) Mental Agility score for E-1 to E-4. It documents every school, course, and qualification you have earned from boot camp through your current rank. This record directly affects your competitiveness for promotion, special duty assignments, and reenlistment.",
     capabilities: ["View training history", "View education records", "View MOS qualifications", "View PME completion", "Print training record", "Verify school completions", "Check language scores"],
     userTypes: ["All Marines"],
     guide: [
@@ -3415,6 +3474,30 @@ const MOL_FUNCTIONAL_MODULES = {
               "MarineNet courses may not automatically post to your BTR",
               "Resident PME from schoolhouses should post within 30-60 days",
               "If missing after 90 days, submit a correction request",
+            ],
+          },
+          {
+            step: "MCI/MarineNet Lag",
+            details: [
+              "MCIs (Marine Corps Institute courses) and MarineNet completions can take weeks to appear in your BTR",
+              "If you completed an online course and don't see it after 30 days, contact S-3 or the MarineNet help desk",
+              "Keep your course completion certificates as proof until the entry appears",
+            ],
+          },
+          {
+            step: "Duplicate Entries",
+            details: [
+              "Sometimes schools or courses appear twice on your BTR",
+              "This can happen when both the schoolhouse and your S-3 both enter the same course",
+              "Duplicate entries can confuse boards and auditors—report them to S-3 for correction",
+            ],
+          },
+          {
+            step: "Rifle Range 'Ghost Scores'",
+            details: [
+              "Occasionally, rifle qualification scores from the range don't transmit correctly to MCTFS",
+              "You may see an old score, no score, or the wrong qualification (Marksman vs. Expert)",
+              "If your range score is missing or wrong, bring your scorebook to S-3 for manual entry",
             ],
           },
           {
@@ -6115,16 +6198,65 @@ const MOL_FUNCTIONAL_MODULES = {
   },
   "mol-career-retirement-cert": {
     title: "Career Retirement Certification",
-    description: "The Career Retirement Certification allows eligible reserve Marines to certify their Career Retirement Credit Report (CRCR) for retirement point accounting purposes.",
+    description: "The Career Retirement Certification allows eligible reserve Marines to certify their Career Retirement Credit Report (CRCR) for retirement point accounting purposes. This is your official statement that your retirement points are accurate—certifying with errors can cause major problems when you actually try to retire.",
     capabilities: ["View CRCR", "Certify retirement credits", "Print certification", "Track retirement eligibility"],
     userTypes: ["Reserve Marines", "Individual Reserve Component Members"],
     guide: [
       {
-        title: "Accessing CRCR",
+        title: "Why This Matters",
         steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Career Retirement Credit Report" },
-          { step: "Review your retirement point summary" },
+          {
+            step: "Your Retirement Depends on It",
+            details: [
+              "You need 20 'good years' (50+ points each) to qualify for reserve retirement",
+              "Once you certify a year, you are attesting that the points are accurate",
+              "Errors discovered later are much harder to fix after certification",
+            ],
+          },
+          {
+            step: "The 50-Point Rule",
+            details: [
+              "Each anniversary year must have at least 50 points to count as a 'good year'",
+              "15 membership points are automatic just for being in the Selected Reserve",
+              "The remaining 35+ points must come from drills, AT, schools, or correspondence courses",
+            ],
+          },
+        ],
+      },
+      {
+        title: "How to Audit Before Certifying",
+        steps: [
+          {
+            step: "Step 1: Access the CRCR",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Career Retirement Credit Report",
+            ],
+          },
+          {
+            step: "Step 2: Review Each Anniversary Year",
+            details: [
+              "Your anniversary year runs from your AFABD (Active Federal Active Duty Begin Date), NOT the calendar year",
+              "Check that each year shows at least 50 points",
+              "Look for any years with 0 or very low points—these may indicate missing data",
+            ],
+          },
+          {
+            step: "Step 3: Cross-Reference with Drill Attendance",
+            details: [
+              "Compare your point totals to your actual drill attendance records",
+              "If you attended AT (Annual Training) that year, verify the points are credited",
+              "Check that any schools or correspondence courses show up",
+            ],
+          },
+          {
+            step: "Step 4: Verify Dates and Totals",
+            details: [
+              "Ensure the 'Current Anniversary Date' is correct (not zeros or expired)",
+              "Confirm the 'Date Entered Armed Forces' (DEAF) is NOT later than your AFABD",
+              "If 'Member Points' shows more than 15, there may be an error",
+            ],
+          },
         ],
       },
       {
@@ -6164,6 +6296,35 @@ const MOL_FUNCTIONAL_MODULES = {
               "Membership Points - 15 points per year for participation",
               "Minimum 50 points per year for a 'good year'",
               "20 good years required for reserve retirement",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Blind Certification",
+            details: [
+              "NEVER certify your CRCR without thoroughly reviewing it first",
+              "Once certified, you are stating that the data is accurate",
+              "If errors are found after certification, the correction process is much more difficult",
+            ],
+          },
+          {
+            step: "Missing a 'Good Year'",
+            details: [
+              "If a year shows fewer than 50 points, that year does NOT count toward your 20-year requirement",
+              "Before certifying, make sure any missing drills, AT, or schools are added",
+              "It is much easier to fix a 'bad year' before certification than after",
+            ],
+          },
+          {
+            step: "Confusing Anniversary Year with Calendar Year",
+            details: [
+              "Your anniversary year runs from your AFABD, not January 1st",
+              "Points earned in December might count toward a different anniversary year than you expect",
+              "Always check the date ranges for each year before certifying",
             ],
           },
         ],
