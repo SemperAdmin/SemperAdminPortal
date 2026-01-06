@@ -548,6 +548,23 @@ export const SECTIONS: Record<string, Section> = {
         title: "Personal Updates",
         items: [
           { title: "Personal Information Module", slug: "mol-personal-information", desc: "View and print personal reports, update data, certify RED, and access tax statements" },
+          { title: "Contact Information", slug: "mol-contact-info", desc: "Update mailing address, phone numbers, and email" },
+          { title: "Foreign Travel", slug: "mol-foreign-travel", desc: "Record personal foreign travel history" },
+          { title: "Gas Mask and Helmet", slug: "mol-gas-mask-helmet", desc: "Update protective equipment sizing" },
+          { title: "Race and Ethnic Information", slug: "mol-race-ethnic", desc: "Self-certify race and ethnicity data" },
+          { title: "Religion Information", slug: "mol-religion", desc: "Update religious preference" },
+          { title: "Self-Professed Language Skills", slug: "mol-language-skills", desc: "Report language abilities and proficiency" },
+        ],
+      },
+      {
+        title: "Self-Certified Transactions",
+        items: [
+          { title: "Blended Retirement Opt-In/Out", slug: "mol-brs-opt-in", desc: "Elect BRS enrollment or remain in legacy system" },
+          { title: "Acknowledgements", slug: "mol-acknowledgements", desc: "Complete required policy and training acknowledgements" },
+          { title: "Career Designation (Officer)", slug: "mol-career-designation", desc: "Submit career designation intent for officers" },
+          { title: "Career Retirement Certification", slug: "mol-career-retirement-cert", desc: "Certify Career Retirement Credit Report for reservists" },
+          { title: "RED Certification", slug: "mol-red-certification", desc: "Certify Record of Emergency Data accuracy" },
+          { title: "W2/W2C Electronic Delivery", slug: "mol-w2-electronic", desc: "Manage W-2 tax statement delivery preferences" },
         ],
       },
       {
