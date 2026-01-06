@@ -3833,8 +3833,7 @@ const MOL_FUNCTIONAL_MODULES = {
             step: "Step 4: Print/Save",
             details: [
               "Click 'Printer-Friendly View' - a new window will open",
-              "Click 'Print' to save as a PDF for your records",
-              "Click 'File > Exit' or close the browser tab to return to MOL",
+              "Click 'Print' to save as a PDF for your records, then close the new window or tab to return to MOL",
             ],
           },
         ],
@@ -4321,7 +4320,7 @@ const MOL_FUNCTIONAL_MODULES = {
             step: "Pay Eligibility",
             details: [
               "If your PersTempo exceeds certain thresholds (like being deployed for more than 220 consecutive days), you may become eligible for Hardship Duty Pay – Tempo (HDP-T)",
-              "As of 2026, HDP-T pays $495/month",
+              "HDP-T is paid at a monthly rate set by the DoD - check the latest official pay tables for the current amount",
             ],
           },
           {
@@ -6536,7 +6535,7 @@ const MOL_FUNCTIONAL_MODULES = {
             step: "MOL vs. APACS",
             details: [
               "Adding travel to MOL after the fact is for your record",
-              "You are still required to submit an APACS or IATP request through your S-2 BEFORE you leave",
+              "You are still required to submit an APACS or IATP (Individual Anti-Terrorism Plan) request through your S-2 BEFORE you leave",
             ],
           },
         ],
