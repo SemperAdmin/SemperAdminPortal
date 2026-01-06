@@ -3794,6 +3794,753 @@ const MOL_FUNCTIONAL_MODULES = {
       },
     ],
   },
+  // ============================================
+  // MOL SELF-CERTIFIED TRANSACTIONS
+  // ============================================
+  "mol-brs-opt-in": {
+    title: "Blended Retirement Opt-In/Out",
+    description: "The Blended Retirement System (BRS) Opt-In/Out transaction allows eligible service members to elect into the Blended Retirement System or decline enrollment. This is a one-time, irrevocable decision.",
+    capabilities: ["Elect BRS enrollment", "View BRS election status", "Complete required training", "Understand retirement options"],
+    userTypes: ["All Marines", "Eligible Service Members"],
+    guide: [
+      {
+        title: "Eligibility Requirements",
+        steps: [
+          {
+            step: "Who Can Opt-In",
+            details: [
+              "Members with a DIEMS (Date of Initial Entry to Military Service) before January 1, 2018",
+              "Must have less than 12 years of service as of December 31, 2017",
+              "Grandfathered members under the legacy (High-3) retirement system",
+            ],
+          },
+          {
+            step: "New Accessions",
+            details: [
+              "Members with DIEMS on or after January 1, 2018 are automatically enrolled in BRS",
+              "No opt-in decision required for new accessions",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Required Training",
+        steps: [
+          { step: "Complete the mandatory BRS Opt-In Course on MarineNet before making your election" },
+          { step: "Training covers retirement benefits comparison, TSP matching, and continuation pay" },
+          { step: "You cannot make an election until training is complete" },
+        ],
+      },
+      {
+        title: "Making Your Election",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > BRS/TSP Information" },
+          { step: "Click 'BRS Election' to access the election form" },
+          { step: "Review the terms and conditions carefully" },
+          { step: "Select 'Opt-In' to enroll in BRS or remain in legacy system" },
+          { step: "Confirm your election - THIS DECISION IS IRREVOCABLE" },
+        ],
+      },
+      {
+        title: "Important Considerations",
+        steps: [
+          {
+            step: "BRS Benefits",
+            details: [
+              "Government TSP matching up to 5% of base pay",
+              "Continuation pay at 12 years of service",
+              "Lump sum option at retirement",
+              "Reduced pension multiplier (2.0% vs 2.5%)",
+            ],
+          },
+          {
+            step: "Legacy System Benefits",
+            details: [
+              "Higher pension multiplier (2.5% per year)",
+              "No TSP matching contribution",
+              "No continuation pay",
+              "Full pension after 20 years",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-acknowledgements": {
+    title: "Acknowledgements",
+    description: "The Acknowledgements transaction allows Marines to electronically acknowledge receipt and understanding of important policies, directives, and administrative requirements.",
+    capabilities: ["View pending acknowledgements", "Complete required acknowledgements", "View acknowledgement history", "Print acknowledgement records"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Acknowledgements",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Acknowledgement Record" },
+          { step: "View pending and historical acknowledgements" },
+        ],
+      },
+      {
+        title: "Pending Acknowledgements",
+        steps: [
+          {
+            step: "Understanding the Display",
+            details: [
+              "Code - Unique identifier for the acknowledgement type",
+              "Description - What you are acknowledging",
+              "Action - Click 'Acknowledge' to complete",
+              "'(Pending)' indicates items not yet processed through MCTFS",
+            ],
+          },
+          { step: "Click the 'Acknowledge' link for items requiring your action" },
+          { step: "Read any associated policy or directive before acknowledging" },
+          { step: "Confirm your acknowledgement when prompted" },
+        ],
+      },
+      {
+        title: "Historical Acknowledgements",
+        steps: [
+          { step: "View completed acknowledgements with Code, Description, and Date" },
+          { step: "Click 'Printer Friendly View' to print for your records" },
+          { step: "Historical records serve as proof of completion" },
+        ],
+      },
+      {
+        title: "Common Acknowledgement Types",
+        steps: [
+          {
+            step: "Examples Include",
+            details: [
+              "Annual training requirements",
+              "Policy updates and changes",
+              "Safety briefings",
+              "Legal notifications",
+              "Benefits elections",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-career-designation": {
+    title: "Career Designation (Officer)",
+    description: "The Career Designation transaction allows eligible officers to indicate their intent to remain on active duty as a career officer. This is a significant career milestone for commissioned officers.",
+    capabilities: ["Submit career designation", "View designation status", "Understand career implications"],
+    userTypes: ["Commissioned Officers", "Warrant Officers"],
+    guide: [
+      {
+        title: "Career Designation Overview",
+        steps: [
+          {
+            step: "What is Career Designation",
+            details: [
+              "Formal declaration of intent to serve as a career officer",
+              "Typically occurs between 5-10 years of commissioned service",
+              "Demonstrates commitment to long-term military service",
+              "May affect assignment and promotion considerations",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Eligibility",
+        steps: [
+          {
+            step: "Requirements",
+            details: [
+              "Must be a commissioned or warrant officer",
+              "Must meet time-in-service requirements",
+              "Must be recommended by commanding officer",
+              "Must meet performance standards",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Submitting Career Designation",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Career Designation" },
+          { step: "Review your eligibility status" },
+          { step: "Complete the career designation form" },
+          { step: "Submit for command review and approval" },
+        ],
+      },
+      {
+        title: "After Designation",
+        steps: [
+          { step: "Career designation is recorded in your official record" },
+          { step: "May affect future assignment opportunities" },
+          { step: "Demonstrates commitment for promotion boards" },
+        ],
+      },
+    ],
+  },
+  "mol-career-retirement-cert": {
+    title: "Career Retirement Certification",
+    description: "The Career Retirement Certification allows eligible reserve Marines to certify their Career Retirement Credit Report (CRCR) for retirement point accounting purposes.",
+    capabilities: ["View CRCR", "Certify retirement credits", "Print certification", "Track retirement eligibility"],
+    userTypes: ["Reserve Marines", "Individual Reserve Component Members"],
+    guide: [
+      {
+        title: "Accessing CRCR",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Career Retirement Credit Report" },
+          { step: "Review your retirement point summary" },
+        ],
+      },
+      {
+        title: "When NOT to Certify",
+        steps: [
+          {
+            step: "Do NOT certify your CRCR if",
+            details: [
+              "There are mistakes in the report",
+              "Current Anniversary Date has expired or displays as zeroes",
+              "Current Year CRCR information is missing or more than a year old",
+              "Date Entered Armed Forces (DEAF) is later than AFABD",
+              "Current Year Member Points score is greater than 15",
+            ],
+          },
+          { step: "If errors exist, click 'Users Manual' link for correction procedures" },
+        ],
+      },
+      {
+        title: "Certifying Your CRCR",
+        steps: [
+          { step: "Review all retirement points for accuracy" },
+          { step: "Verify anniversary year dates are correct" },
+          { step: "Confirm total points per year are accurate" },
+          { step: "Click 'Certify CRCR' link" },
+          { step: "Confirm certification when prompted" },
+        ],
+      },
+      {
+        title: "Understanding Retirement Points",
+        steps: [
+          {
+            step: "Point Categories",
+            details: [
+              "Active Duty Points - From active duty periods",
+              "Inactive Duty Points - From drills and training",
+              "Membership Points - 15 points per year for participation",
+              "Minimum 50 points per year for a 'good year'",
+              "20 good years required for reserve retirement",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-contact-info": {
+    title: "Contact Information",
+    description: "The Contact Information transaction allows Marines to update their personal contact information including mailing address, phone numbers, and email addresses.",
+    capabilities: ["Update mailing address", "Update phone numbers", "Update email address", "Manage contact preferences"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Contact Information",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Contact Information" },
+          { step: "Review your current contact information" },
+        ],
+      },
+      {
+        title: "Address Types",
+        steps: [
+          {
+            step: "US Address Format",
+            details: [
+              "Street Address (up to 50 characters)",
+              "Apartment/Unit (optional)",
+              "City",
+              "State (two-letter abbreviation)",
+              "ZIP Code (5-digit or 9-digit)",
+            ],
+          },
+          {
+            step: "APO/FPO/DPO Format",
+            details: [
+              "Unit/Box Number",
+              "APO, FPO, or DPO designation",
+              "AA, AE, or AP region code",
+              "ZIP Code",
+            ],
+          },
+          {
+            step: "Foreign Address Format",
+            details: [
+              "Address lines (multiple)",
+              "City",
+              "Country",
+              "Postal code (if applicable)",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Updating Phone Numbers",
+        steps: [
+          {
+            step: "Phone Types",
+            details: [
+              "Primary Phone - Main contact number (required)",
+              "Secondary Phone - Backup contact number",
+              "Work Phone - Office or duty station number",
+              "Cell Phone - Mobile phone number",
+            ],
+          },
+          { step: "Include area codes for all phone numbers" },
+          { step: "For overseas numbers, include country and city codes" },
+        ],
+      },
+      {
+        title: "Submitting Updates",
+        steps: [
+          { step: "Click 'Edit' to modify your contact information" },
+          { step: "Enter the effective date for the change" },
+          { step: "Complete all required fields" },
+          { step: "Click 'Submit Changes' to save" },
+          { step: "Updates are processed through MCTFS" },
+        ],
+      },
+    ],
+  },
+  "mol-foreign-travel": {
+    title: "Foreign Travel",
+    description: "The Foreign Travel transaction allows Marines to record their personal foreign travel history. This information is used for security clearance purposes and personnel tracking.",
+    capabilities: ["Add foreign travel entries", "View travel history", "Edit travel records", "Support security clearance"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Foreign Travel",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Foreign Travel" },
+          { step: "View your recorded foreign travel history" },
+        ],
+      },
+      {
+        title: "Adding a Travel Entry",
+        steps: [
+          { step: "Click 'Add Foreign Travel' to create a new entry" },
+          {
+            step: "Required Information",
+            details: [
+              "Country - Select from the dropdown list",
+              "Departure Date - When you left the US",
+              "Return Date - When you returned to the US",
+              "Purpose of Travel - Official duty, leave, emergency, personal, etc.",
+            ],
+          },
+          { step: "Add any additional notes or details if needed" },
+          { step: "Click 'Submit' to save the entry" },
+        ],
+      },
+      {
+        title: "Why Report Foreign Travel",
+        steps: [
+          {
+            step: "Security Requirements",
+            details: [
+              "Required for security clearance holders",
+              "Supports continuous evaluation programs",
+              "Documents travel for counterintelligence purposes",
+              "May be required before/after certain destinations",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Travel Reporting Requirements",
+        steps: [
+          { step: "Report all personal foreign travel" },
+          { step: "Official travel on orders may be reported separately" },
+          { step: "Some destinations require pre-travel approval" },
+          { step: "Contact your S-2/Security Manager for questions" },
+        ],
+      },
+    ],
+  },
+  "mol-gas-mask-helmet": {
+    title: "Gas Mask and Helmet Information",
+    description: "The Gas Mask and Helmet transaction allows Marines to self-report their protective equipment sizing. This information ensures correct equipment is available during deployments and training.",
+    capabilities: ["Update gas mask size", "Update helmet size", "Support supply readiness", "Ensure proper equipment fit"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Equipment Information",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Gas Mask and Helmet" },
+          { step: "View your current recorded sizes" },
+        ],
+      },
+      {
+        title: "Gas Mask Information",
+        steps: [
+          {
+            step: "Updating Gas Mask Size",
+            details: [
+              "Select your Gas Mask Size from available options",
+              "Common sizes: Extra Small (XS), Small (S), Medium (M), Large (L), Extra Large (XL)",
+              "Size is determined during mask fitting at CIF or during training",
+              "Confirm the mask type if prompted",
+            ],
+          },
+          { step: "Click 'Submit' to update your record" },
+        ],
+      },
+      {
+        title: "Helmet Information",
+        steps: [
+          {
+            step: "Updating Helmet Size",
+            details: [
+              "Select your Helmet Size from available options",
+              "Common sizes: Small, Medium, Large, X-Large",
+              "Size is based on head circumference measurement",
+              "Verify the helmet type matches your issued equipment",
+            ],
+          },
+          { step: "Click 'Submit' to update your record" },
+        ],
+      },
+      {
+        title: "Why This Information Matters",
+        steps: [
+          {
+            step: "Readiness Impact",
+            details: [
+              "Ensures proper protective equipment is available for deployment",
+              "Supports supply planning and logistics",
+              "Prevents equipment shortages during operations",
+              "Required for individual readiness reporting",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-race-ethnic": {
+    title: "Race and Ethnic Information",
+    description: "The Race and Ethnic Information transaction allows Marines to self-certify their race and ethnicity data for personnel records. This information is used for demographic reporting and equal opportunity compliance.",
+    capabilities: ["Update race information", "Update ethnicity information", "Self-certify demographic data"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Race/Ethnic Information",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Race/Ethnic" },
+          { step: "View your current recorded information" },
+        ],
+      },
+      {
+        title: "Updating Ethnicity",
+        steps: [
+          {
+            step: "Ethnicity Options",
+            details: [
+              "Hispanic or Latino",
+              "Not Hispanic or Latino",
+            ],
+          },
+          { step: "Select the ethnicity that applies to you" },
+        ],
+      },
+      {
+        title: "Updating Race",
+        steps: [
+          {
+            step: "Race Options",
+            details: [
+              "American Indian or Alaska Native",
+              "Asian",
+              "Black or African American",
+              "Native Hawaiian or Other Pacific Islander",
+              "White",
+            ],
+          },
+          { step: "You may select one or more race categories" },
+          { step: "Select all categories that apply to you" },
+        ],
+      },
+      {
+        title: "Submitting Changes",
+        steps: [
+          { step: "Review your selections for accuracy" },
+          { step: "Click 'Submit' to update your record" },
+          { step: "Changes are self-certified and processed through MCTFS" },
+        ],
+      },
+      {
+        title: "Purpose of This Information",
+        steps: [
+          {
+            step: "Usage",
+            details: [
+              "Demographic reporting to DoD and Congress",
+              "Equal opportunity program compliance",
+              "Statistical analysis and workforce planning",
+              "Information is kept confidential",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-religion": {
+    title: "Religion Information",
+    description: "The Religion Information transaction allows Marines to self-certify their religious preference for personnel records. This information is used for chaplain support, dietary considerations, and casualty notification.",
+    capabilities: ["Update religious preference", "Self-certify religion data", "Support chaplain services"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Religion Information",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Religion" },
+          { step: "View your current recorded preference" },
+        ],
+      },
+      {
+        title: "Updating Religious Preference",
+        steps: [
+          { step: "Select your religious preference from the available list" },
+          {
+            step: "Options Include",
+            details: [
+              "Major world religions (Christianity, Islam, Judaism, Buddhism, Hinduism, etc.)",
+              "Various Christian denominations",
+              "Other faith traditions",
+              "'No Religious Preference' option available",
+            ],
+          },
+          { step: "Click 'Submit' to update your record" },
+        ],
+      },
+      {
+        title: "Why This Information Matters",
+        steps: [
+          {
+            step: "Usage",
+            details: [
+              "Chaplain support and religious accommodation",
+              "Dietary requirements (MRE selection, mess hall)",
+              "Casualty notification and burial preferences",
+              "Scheduling around religious observances",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Privacy",
+        steps: [
+          { step: "Religious preference is protected personal information" },
+          { step: "Only accessed by those with legitimate need (chaplains, casualty assistance)" },
+          { step: "Changes are reflected in your personnel file and RED" },
+        ],
+      },
+    ],
+  },
+  "mol-language-skills": {
+    title: "Self-Professed Language Skills",
+    description: "The Self-Professed Language Skills transaction allows Marines to report language abilities beyond their primary language. This information may be used for assignment considerations and special duty selection.",
+    capabilities: ["Add language skills", "Rate proficiency levels", "Support assignment planning", "Track language abilities"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing Language Skills",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Self-Professed Language Skills" },
+          { step: "View your recorded language abilities" },
+        ],
+      },
+      {
+        title: "Adding a Language",
+        steps: [
+          { step: "Click 'Add Language' to enter a new skill" },
+          { step: "Select the Language from the dropdown list" },
+          {
+            step: "Rate Your Proficiency",
+            details: [
+              "Reading - None, Low, Medium, High, Native",
+              "Writing - None, Low, Medium, High, Native",
+              "Speaking - None, Low, Medium, High, Native",
+              "Listening - None, Low, Medium, High, Native",
+            ],
+          },
+          { step: "Click 'Submit' to add the language to your record" },
+        ],
+      },
+      {
+        title: "Proficiency Levels",
+        steps: [
+          {
+            step: "Understanding Ratings",
+            details: [
+              "None - No ability in this skill",
+              "Low - Basic phrases and simple communication",
+              "Medium - Conversational ability, can handle routine tasks",
+              "High - Professional proficiency, can discuss complex topics",
+              "Native - Native or bilingual proficiency",
+            ],
+          },
+        ],
+      },
+      {
+        title: "DLPT Scores",
+        steps: [
+          { step: "Official Defense Language Proficiency Test (DLPT) scores are recorded separately" },
+          { step: "Self-professed skills are for languages not formally tested" },
+          { step: "DLPT scores take precedence for official language pay" },
+          { step: "Contact your S-1/Admin for DLPT score discrepancies" },
+        ],
+      },
+      {
+        title: "Why Report Language Skills",
+        steps: [
+          {
+            step: "Benefits",
+            details: [
+              "May qualify for special duty assignments",
+              "Considered for interpreter/translator duties",
+              "Supports regional expertise requirements",
+              "May affect assignment to certain billets",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-red-certification": {
+    title: "RED Certification",
+    description: "The RED Certification transaction allows Marines to electronically certify that their Record of Emergency Data (RED) is current and accurate. RED certification is required for deployment readiness.",
+    capabilities: ["Certify RED accuracy", "View RED status", "Support deployment readiness"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing RED Certification",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Record of Emergency Data" },
+          { step: "Review all RED sections for accuracy" },
+        ],
+      },
+      {
+        title: "Before Certifying",
+        steps: [
+          {
+            step: "Review All Sections",
+            details: [
+              "Family Information - Spouse and children addresses",
+              "Parents - Parent contact information",
+              "Pay Arrears - Beneficiaries for unpaid compensation",
+              "Next of Kin - Emergency contacts",
+              "Death Gratuity - Beneficiary designations",
+              "PADD - Person Authorized to Direct Disposition",
+              "Insurance - SGLI and other coverage",
+            ],
+          },
+          { step: "If any information is incorrect, edit that section first" },
+          { step: "Editing automatically certifies that section" },
+        ],
+      },
+      {
+        title: "Certifying Your RED",
+        steps: [
+          { step: "If all information is accurate, click 'Certify' button" },
+          { step: "Confirm certification when prompted" },
+          { step: "Certification date is recorded in your personnel file" },
+        ],
+      },
+      {
+        title: "When to Certify",
+        steps: [
+          {
+            step: "Required Certification Times",
+            details: [
+              "Annually at minimum",
+              "Before deployment",
+              "After major life events (marriage, divorce, birth of child)",
+              "After PCS moves",
+              "When directed by command",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Certification Requirements",
+        steps: [
+          { step: "A certified RED is required for deployment readiness" },
+          { step: "Uncertified RED may affect your deployability status" },
+          { step: "CMC Casualty view shows pending changes and certification status" },
+        ],
+      },
+    ],
+  },
+  "mol-w2-electronic": {
+    title: "W2/W2C Electronic Delivery",
+    description: "The W2/W2C Electronic Delivery transaction allows Marines to opt in or out of electronic delivery for W-2 tax statements. Electronic delivery provides faster access to tax documents.",
+    capabilities: ["Opt in to electronic W-2", "Opt out to paper delivery", "Manage delivery preferences"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Accessing W2 Delivery Settings",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > W2 Tax Statements" },
+          { step: "View your current delivery preference" },
+        ],
+      },
+      {
+        title: "Opting In to Electronic Delivery",
+        steps: [
+          { step: "Click to change your delivery preference" },
+          { step: "Select 'Electronic Delivery'" },
+          { step: "Confirm your email address for notifications" },
+          { step: "Submit your preference change" },
+        ],
+      },
+      {
+        title: "Benefits of Electronic Delivery",
+        steps: [
+          {
+            step: "Advantages",
+            details: [
+              "Faster access - available as soon as released",
+              "No lost mail - always accessible in MOL",
+              "Environmentally friendly",
+              "Can print multiple copies as needed",
+              "Access prior year W-2s easily",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Opting Out to Paper Delivery",
+        steps: [
+          { step: "Select 'Hard Copy' or paper delivery option" },
+          { step: "W-2 will be mailed to your address of record" },
+          { step: "Ensure your mailing address is current" },
+          { step: "Paper delivery takes longer to receive" },
+        ],
+      },
+      {
+        title: "Important Notes",
+        steps: [
+          { step: "Separated/Retired Marines cannot change delivery method" },
+          { step: "W-2s are typically available by late January" },
+          { step: "Keep your contact information current for delivery notifications" },
+        ],
+      },
+    ],
+  },
   "mol-personal-information": {
     title: "Personal Information (PI)",
     description: "Provides individual members access to view their own personnel records as recorded within the MCTFS or interfacing application. Self-Certified transactional reporting capabilities are provided to users for select data elements not requiring two-factor review. Reports are generated using a combination of local database queries (MED) and service calls directly to the MCTFS (SOA APIs).",
@@ -7882,6 +8629,19 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "mol-w2": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-w2"]} references={MOL_DATA.references} />,
     // Marine Online - Personal Updates
     "mol-personal-information": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-personal-information"]} references={MOL_DATA.references} />,
+    "mol-contact-info": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-contact-info"]} references={MOL_DATA.references} />,
+    "mol-foreign-travel": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-foreign-travel"]} references={MOL_DATA.references} />,
+    "mol-gas-mask-helmet": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-gas-mask-helmet"]} references={MOL_DATA.references} />,
+    "mol-race-ethnic": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-race-ethnic"]} references={MOL_DATA.references} />,
+    "mol-religion": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-religion"]} references={MOL_DATA.references} />,
+    "mol-language-skills": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-language-skills"]} references={MOL_DATA.references} />,
+    // Marine Online - Self-Certified Transactions
+    "mol-brs-opt-in": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-brs-opt-in"]} references={MOL_DATA.references} />,
+    "mol-acknowledgements": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-acknowledgements"]} references={MOL_DATA.references} />,
+    "mol-career-designation": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-career-designation"]} references={MOL_DATA.references} />,
+    "mol-career-retirement-cert": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-career-retirement-cert"]} references={MOL_DATA.references} />,
+    "mol-red-certification": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-red-certification"]} references={MOL_DATA.references} />,
+    "mol-w2-electronic": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-w2-electronic"]} references={MOL_DATA.references} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -8181,6 +8941,19 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "mol-w2",
     // Personal Updates
     "mol-personal-information",
+    "mol-contact-info",
+    "mol-foreign-travel",
+    "mol-gas-mask-helmet",
+    "mol-race-ethnic",
+    "mol-religion",
+    "mol-language-skills",
+    // Self-Certified Transactions
+    "mol-brs-opt-in",
+    "mol-acknowledgements",
+    "mol-career-designation",
+    "mol-career-retirement-cert",
+    "mol-red-certification",
+    "mol-w2-electronic",
     // Leave Management
     "mol-submit-leave",
     "mol-leave-balance",
