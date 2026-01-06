@@ -4148,6 +4148,134 @@ const MOL_FUNCTIONAL_MODULES = {
       },
     ],
   },
+  "mol-grade-report": {
+    title: "Grade Report",
+    description: "Your official 'promotion eligibility' sheet. While other pages show what you've done, this page shows where you stand in the eyes of the Marine Corps promotion system. It tracks Time in Grade (TIG), Time in Service (TIS), and whether you've completed your required PME. If this page has an error—like a 'Promotion Restriction' code that shouldn't be there—you will be passed over even if your JEPES score is high.",
+    capabilities: ["View promotion eligibility", "Check TIG/TIS status", "Verify PME completion", "View restriction codes", "Check selection status", "Print grade report"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Why This Matters",
+        steps: [
+          {
+            step: "The Final Word on Promotion",
+            details: [
+              "This report is the final word on whether or not you are eligible to pick up the next rank",
+              "Even if you are the best Marine in the shop, an error here can block your promotion",
+              "Boards and promotion systems pull data directly from this report",
+            ],
+          },
+          {
+            step: "What It Tracks",
+            details: [
+              "Time in Grade (TIG): How long you have been at your current rank",
+              "Time in Service (TIS): Your total time in the Marine Corps",
+              "PME Completion: Whether you have finished required Professional Military Education",
+              "Restriction Codes: Any administrative holds that block promotion",
+            ],
+          },
+        ],
+      },
+      {
+        title: "How to Navigate the Grade Report",
+        steps: [
+          {
+            step: "Step 1: Access the Report",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Grade Report",
+            ],
+          },
+          {
+            step: "Step 2: Verify Key Data Elements",
+            details: [
+              "Current Grade/Date of Rank: Ensure your actual rank and the day you pinned it on match the system",
+              "Promotion Eligibility: Look for your 'Eligibility Date' - the earliest date the system says you can move up",
+              "Selection Status: If you are E-5 or above, this will show if you have been 'Selected' by a board",
+              "Mandatory Requirements: Check the section for 'PME Completion' - it should say YES for your current grade",
+            ],
+          },
+          {
+            step: "Step 3: Check for Restrictions",
+            details: [
+              "Look for any 'Non-recommendation' or 'Restriction' codes",
+              "If you aren't on legal hold or under a weight control program, this section should be clear",
+              "Common restriction codes: Legal Hold, BCP (Body Composition Program), Medical Hold",
+            ],
+          },
+          {
+            step: "Step 4: Print/Save",
+            details: [
+              "Click 'Printer Friendly' - a new window opens with a clean, formatted document",
+              "Click 'Print' (or Save as PDF)",
+              "Click 'Close' to return to the standard Grade Report page",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "The PME Gap",
+            details: [
+              "You finished the course on MarineNet, but the Grade Report still says NO for requirement completion",
+              "This usually means the data hasn't migrated from the Education folder to the Grade folder",
+              "It can take 48-72 hours for systems to sync - check back after a few days",
+            ],
+          },
+          {
+            step: "Incorrect TIG/TIS",
+            details: [
+              "If you had a 'broken service' period (left and came back) or a reduction in rank, these dates can get scrambled",
+              "Always verify your PEBD and Date of Rank are accurate",
+            ],
+          },
+          {
+            step: "Ignoring Restriction Codes",
+            details: [
+              "Sometimes a 'Pro-Pay' or 'Legal' restriction code stays on your record long after the issue is resolved",
+              "If you see a code you don't recognize, ask your S-1 immediately",
+              "These codes can silently block your promotion without you realizing it",
+            ],
+          },
+          {
+            step: "The Selection Link",
+            details: [
+              "For those waiting on board results, don't just look at the MOL homepage",
+              "The Grade Report is often the first place the 'Selected' status appears officially",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do After Review",
+        steps: [
+          {
+            step: "Fixing Eligibility",
+            details: [
+              "If you meet the score and PME but the report says 'Ineligible,' take a printout of this report and your BTR to your Company Clerk or S-1",
+              "They can investigate and submit corrections to MCTFS",
+            ],
+          },
+          {
+            step: "Monthly JEPES Cycle",
+            details: [
+              "For Sergeants and below, ensure this report is 'Green' before the cutoff date (usually the 20th of the month)",
+              "This ensures you are in the running for the next month's promotion",
+            ],
+          },
+          {
+            step: "Board Preparation",
+            details: [
+              "If you are E-5 or above, this report must be 100% accurate before your Digital Photo and OMPF are sent to the promotion board",
+              "Errors here will be seen by every board member reviewing your record",
+            ],
+          },
+        ],
+      },
+    ],
+  },
   "mol-imr": {
     title: "Individual Medical Readiness (IMR)",
     description: "Your 'medical scoreboard' that determines if you are deployable or if you'll be spending your morning at the BAS catching up on shots. Medical readiness is a go/no-go criteria for deployments, schools, and even leave in some units. This page helps you track your PHA, dental class, and immunizations so you can fix issues BEFORE your name shows up on the 'Hit List' at morning formation.",
@@ -5816,6 +5944,254 @@ const MOL_FUNCTIONAL_MODULES = {
             details: [
               "Compare the score on your ROS to the monthly Cutting Scores posted on the Manpower & Reserve Affairs website",
               "If you are above the score and PME complete, you're in the window for promotion",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-cultural-info": {
+    title: "Operational Cultural Information Report",
+    description: "This page tracks your specific 'human intelligence' assets: the languages you speak and your experience in foreign countries. The Marine Corps is an expeditionary force, and when a unit is preparing for deployment to a specific region, the command needs to know who already understands the local language or culture. If you speak Arabic, Tagalog, or Mandarin—even from growing up in a bilingual home—you are a high-value asset.",
+    capabilities: ["View language skills", "Self-profess language abilities", "Track foreign travel history", "Verify DLPT scores", "Check FLPB eligibility", "Update cultural experience"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Why This Matters",
+        steps: [
+          {
+            step: "Mission Asset",
+            details: [
+              "When a unit is preparing for a deployment to a specific region, command needs to know who understands the local language or culture",
+              "Your language skills and cultural experience make you a candidate for unique missions or billets",
+              "This includes Foreign Area Officer (FAO) and Civil Affairs Marine opportunities",
+            ],
+          },
+          {
+            step: "Extra Pay (FLPB)",
+            details: [
+              "Keeping this report updated ensures you are eligible for Foreign Language Proficiency Bonus (FLPB)",
+              "FLPB provides extra pay for maintaining language skills in strategic languages",
+            ],
+          },
+        ],
+      },
+      {
+        title: "How to Manage Your Cultural Data",
+        steps: [
+          {
+            step: "Step 1: Access the Report",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Operational Cultural Information Report",
+            ],
+          },
+          {
+            step: "Step 2: Verify Formal Skills",
+            details: [
+              "Look at the 'Survival Level Language Training' section",
+              "This pulls from MarineNet or formal schoolhouses (like the Defense Language Institute)",
+            ],
+          },
+          {
+            step: "Step 3: Self-Profess Your Skills",
+            details: [
+              "If you are fluent in a language but haven't taken a test, ensure it's listed under 'Self-Professed Language Skills'",
+              "Go into the 'Self-Service' or 'Edit' portion of your profile to add a new language",
+            ],
+          },
+          {
+            step: "Step 4: Audit Foreign Travel",
+            details: [
+              "Look at the list of foreign travel periods",
+              "This should include both official deployments and personal leave taken out of the country",
+            ],
+          },
+          {
+            step: "Step 5: Print/Save",
+            details: [
+              "Click 'Printer Friendly View'",
+              "Click 'Print' (Save as PDF)",
+              "Click 'Close' to return to the main portal",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "The Self-Professed Cap",
+            details: [
+              "Just listing a language as 'Self-Professed' doesn't automatically trigger extra pay",
+              "You must take the DLPT (Defense Language Proficiency Test) and score at least 1+/1+ or 2/2 (depending on the language) to get FLPB",
+            ],
+          },
+          {
+            step: "Missing Leave Travel",
+            details: [
+              "Many Marines forget to report personal travel",
+              "If you took leave to visit family in Mexico or Japan, that counts as cultural experience and should be documented",
+            ],
+          },
+          {
+            step: "Perishable Skills",
+            details: [
+              "If you haven't spoken a language in five years, don't list yourself as 'Fluent'",
+              "Be honest about your actual proficiency level (Elementary, Intermediate, or Professional)",
+            ],
+          },
+          {
+            step: "Browser Blocks",
+            details: [
+              "This report often opens in a pop-up window",
+              "If nothing happens when you click 'Printer Friendly,' check your browser's address bar for a 'Pop-up Blocked' icon",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do After Review",
+        steps: [
+          {
+            step: "Schedule a DLPT",
+            details: [
+              "If you see a language on your report that you are good at, contact your Unit Training NCO or Education Center to schedule a proctored DLPT",
+            ],
+          },
+          {
+            step: "Verify Pay",
+            details: [
+              "Once you pass a DLPT, check your LES for the 'FLPB' entitlement",
+              "It may take 1-2 pay cycles to appear after your score posts",
+            ],
+          },
+          {
+            step: "Update Your S-1",
+            details: [
+              "If your travel history is missing a major deployment, take your orders to S-1 to ensure the dates in MCTFS match your actual time in country",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-rank-mos": {
+    title: "Rank/MOS Report",
+    description: "Your 'scouting report' that allows you to see exactly where you stand compared to every other Marine in your rank and MOS across the entire Marine Corps. Promotions are competitive—you aren't just trying to be 'good,' you are competing for a limited number of promotion slots. This report is vital for career planning.",
+    capabilities: ["View peer comparison", "Check TIG standings", "Analyze MOS strength", "Research lateral move options", "Sort by date of rank", "Filter by component"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Why This Matters",
+        steps: [
+          {
+            step: "For Sergeants and Below",
+            details: [
+              "It helps you understand if your MOS is 'fast-moving' or 'stagnant' by looking at the Time in Grade (TIG) of your peers",
+              "You can see how many Marines are ahead of or behind you in seniority",
+            ],
+          },
+          {
+            step: "For SNCOs and Officers",
+            details: [
+              "It allows you to see the lineal standing of your peers",
+              "This is critical when preparing for a promotion board",
+            ],
+          },
+        ],
+      },
+      {
+        title: "How to Research Your Peers",
+        steps: [
+          {
+            step: "Step 1: Access the Report",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Rank/MOS Report",
+            ],
+          },
+          {
+            step: "Step 2: Adjust the Criteria",
+            details: [
+              "By default, MOL shows Marines who match your exact Rank, MOS, and Component (Active/Reserve)",
+              "To look at a different field (for example, if you are considering a Lateral Move), select a new Rank, MOS, or Component from the dropdown menus",
+              "Click the 'Go' button to refresh the list",
+            ],
+          },
+          {
+            step: "Step 3: Analyze the Data",
+            details: [
+              "Sort the List: Click any column heading (like 'Date of Rank') to sort. Click it again to reverse the order",
+              "This helps you see who the 'senior' and 'junior' Marines are in your specific peer group",
+              "Use 'Next Page' or 'Previous Page' buttons, or type a page number and hit 'Go' to navigate large lists",
+            ],
+          },
+          {
+            step: "Step 4: Print/Save",
+            details: [
+              "Click 'Printer-Friendly View'",
+              "Click 'Print' (Save as PDF)",
+              "Click 'Close' to return to the main report page",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Comparing Apples to Oranges",
+            details: [
+              "Ensure you have the correct Component selected",
+              "Active duty promotion timelines are very different from the Reserves",
+            ],
+          },
+          {
+            step: "Outdated Data",
+            details: [
+              "This report is a snapshot",
+              "If a peer was promoted yesterday, it might take 24-48 hours to reflect their new rank on this list",
+            ],
+          },
+          {
+            step: "Privacy and PII",
+            details: [
+              "While you can see names and ranks, never share or post this report publicly",
+              "It is for your official career planning use only",
+            ],
+          },
+          {
+            step: "The Lateral Move Trap",
+            details: [
+              "Just because an MOS has very few people in it doesn't mean it's easy to promote into",
+              "It might be a 'closed' MOS",
+              "Always talk to a Career Planner before making decisions based on this report",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do After Review",
+        steps: [
+          {
+            step: "Identify Your Standing",
+            details: [
+              "See where you fall in the 'Lineal Rank'",
+              "If you are at the bottom of the list for TIG, you know you have time to focus on PME and extra qualifications",
+            ],
+          },
+          {
+            step: "Consult a Career Planner",
+            details: [
+              "If you notice that your MOS is extremely crowded (over-strength) or has very slow promotion timelines, take a copy of this report to your Career Planner",
+              "Discuss Lateral Move (LatMove) opportunities",
+            ],
+          },
+          {
+            step: "Board Preparation",
+            details: [
+              "If you are in-zone for promotion, use this list to ensure your record (PFT, CFT, Rifle) is statistically higher than the 'average' peer on this list",
             ],
           },
         ],
@@ -11638,6 +12014,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "mol-chro": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-chro"]} references={MOL_DATA.references} />,
     "mol-education": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-education"]} references={MOL_DATA.references} />,
     "mol-fcp": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-fcp"]} references={MOL_DATA.references} />,
+    "mol-grade-report": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-grade-report"]} references={MOL_DATA.references} />,
     "mol-imr": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-imr"]} references={MOL_DATA.references} />,
     "mol-pay-leave": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-pay-leave"]} references={MOL_DATA.references} />,
     "mol-pers-tempo": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-pers-tempo"]} references={MOL_DATA.references} />,
@@ -11645,6 +12022,8 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "mol-red": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-red"]} references={MOL_DATA.references} />,
     "mol-reserve-drill": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-reserve-drill"]} references={MOL_DATA.references} />,
     "mol-ros": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-ros"]} references={MOL_DATA.references} />,
+    "mol-cultural-info": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-cultural-info"]} references={MOL_DATA.references} />,
+    "mol-rank-mos": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-rank-mos"]} references={MOL_DATA.references} />,
     "mol-w2": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-w2"]} references={MOL_DATA.references} />,
     // Marine Online - Personal Updates
     "mol-personal-information": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-personal-information"]} references={MOL_DATA.references} />,
