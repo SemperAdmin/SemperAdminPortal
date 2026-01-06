@@ -511,6 +511,8 @@ export const SECTIONS: Record<string, Section> = {
         items: [
           { title: "MOL Login & CAC Setup", slug: "mol-login-cac-setup", desc: "Access MOL using your CAC and troubleshoot login issues" },
           { title: "Password & PIN Reset", slug: "mol-password-pin-reset", desc: "Reset your MOL password or CAC PIN" },
+          { title: "View Your Permissions", slug: "mol-view-permissions", desc: "View and manage your MOL permissions and authority levels" },
+          { title: "Two Factor Authentication (2FA)", slug: "mol-two-factor-auth", desc: "Configure two-factor authentication for enhanced account security" },
         ],
       },
       {

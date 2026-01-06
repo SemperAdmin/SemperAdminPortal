@@ -2908,6 +2908,188 @@ const MOL_FUNCTIONAL_MODULES = {
     capabilities: ["View member personnel records", "Access MCTFS data", "Scoped to organizational hierarchy"],
     userTypes: ["Command Representatives"],
   },
+  "mol-login-cac-setup": {
+    title: "MOL Login & CAC Setup",
+    description: "Uniformed Marines can gain access to Marine Online (MOL) through a self-registration process. This guide walks you through the complete registration process and CAC association.",
+    capabilities: ["Self-registration for MOL access", "CAC association", "Password creation", "Account setup"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Step 1: Access the Registration Page",
+        steps: [
+          { step: "Go to the MOL website at https://mol.tfs.usmc.mil/" },
+          { step: "Under the \"Need Help?\" section, click the link that says \"Don't have an account? Register here!\"" },
+        ],
+      },
+      {
+        title: "Step 2: Enter Personal Identification",
+        steps: [
+          { step: "Name: Enter your First Name and Last Name (include any suffixes in the last name field)" },
+          { step: "Social Security Number: Enter your 9-digit SSN without any dashes or spaces" },
+          { step: "Date of Birth: Enter your birth date using the format dd Mon yyyy (e.g., 01 Jan 2000)" },
+        ],
+      },
+      {
+        title: "Step 3: Enter Military and Contact Data",
+        steps: [
+          {
+            step: "PEBD: Enter your Pay Entry Base Date in the dd Mon yyyy format",
+            details: ["If you are unsure of this date, it can be found in section 8 of your Leave and Earnings Statement (LES)"],
+          },
+          {
+            step: "Primary MOS: Enter your four-digit Primary MOS",
+            details: [
+              "If you have finished recruit training but not MOS school, use 8011",
+              "If you have started MOS school, use your intended general field (e.g., 0300 for Infantry or 0100 for Admin)",
+            ],
+          },
+          { step: "Contact Phone: Enter your primary phone number, including the area code, DSN prefix, or country code" },
+        ],
+      },
+      {
+        title: "Step 4: Security and Account Creation",
+        steps: [
+          {
+            step: "Create Password: Enter and confirm a password that meets the following requirements",
+            details: [
+              "Between 15 and 50 characters",
+              "At least two uppercase and two lowercase letters",
+              "At least two numbers",
+              "At least two special characters (Valid: !@#$%&*?()+{}_|-=)",
+            ],
+          },
+          { step: "Submit: Click \"Submit\"" },
+        ],
+      },
+      {
+        title: "Step 5: Completion and Login",
+        steps: [
+          { step: "Record your Username: The system will display your new Login Name (e.g., JAMARINE123)" },
+          { step: "Initial Login: Click \"Login\" to return to the main page and enter your new credentials" },
+        ],
+      },
+      {
+        title: "What Happens Next",
+        steps: [
+          { step: "Once your account is active, you can associate your Common Access Card (CAC) by logging in while the card is inserted into a reader" },
+          { step: "CAC association is required to access certain applications like Cognos (Reports)" },
+        ],
+      },
+    ],
+  },
+  "mol-password-pin-reset": {
+    title: "Password & PIN Reset",
+    description: "Configuring an email password reset for your Single Sign-On (SSO) account allows you to regain access to Marine Online (MOL) without waiting for a Help Desk call back. You can associate up to two email addresses with your account.",
+    capabilities: ["Email recovery setup", "Password reset", "Account recovery", "Secondary email configuration"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Step 1: Navigate to Security Settings",
+        steps: [
+          { step: "Log in: Access MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Select My Account: Click the \"My Account\" menu item on the main navigation bar" },
+          { step: "Change Password: On the left side of the screen, click \"Change Password\"" },
+        ],
+      },
+      {
+        title: "Step 2: Add Recovery Email",
+        steps: [
+          { step: "Access Recovery Options: Under the \"Account Recovery options\" section, click \"Add\" next to Recovery Email" },
+          { step: "Enter Address: Type in your primary email address and click \"Add Email\"" },
+        ],
+      },
+      {
+        title: "Step 3: Verify the Email Address",
+        steps: [
+          {
+            step: "Wait for Code: Check your email for a Verification Code; it may take 3–5 minutes to arrive",
+            details: ["If using a commercial email address, check your junk or spam folders"],
+          },
+          {
+            step: "Input Code: Enter the 8-digit code from the email into the \"Verify Email\" screen on MOL",
+            details: ["The code expires 60 minutes after the email is sent"],
+          },
+          { step: "Complete: Click \"Verify\"" },
+        ],
+      },
+      {
+        title: "Step 4: Confirmation",
+        steps: [
+          { step: "Check Status: The application will return to the Account Security Information page, where your verified email will be displayed with a validation icon" },
+          { step: "Secondary Email (Optional): You can repeat this process to add a second recovery email address" },
+        ],
+      },
+      {
+        title: "What Happens Next",
+        steps: [
+          { step: "If you forget your password in the future, go to the MOL login page" },
+          { step: "Click \"Forgot your Password? Click here!\" and enter your verified email to receive a reset code" },
+        ],
+      },
+    ],
+  },
+  "mol-view-permissions": {
+    title: "View Your Permissions",
+    description: "The My Permissions feature in Marine Online (MOL) allows you to see all permissions currently assigned to you within the Marine Online Family of Services (FoS). This includes permissions assigned to you as an individual or via a template.",
+    capabilities: ["View assigned permissions", "Understand authority levels", "Self-revoke permissions", "Audit your access"],
+    userTypes: ["All Marines", "Administrators", "Unit Leaders"],
+    guide: [
+      {
+        title: "How to Access and View Permissions",
+        steps: [
+          { step: "Log in: Access MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate: Click the \"My Permissions\" menu item in the navigation bar" },
+          { step: "Understand the Layout: Permissions are organized by their unit scope (e.g., Battalion > Company > Platoon > Work Section)" },
+          { step: "View Template Details: To see specific permissions inside a template (like \"Commanding Officer\"), click the \"View\" link next to that template. When finished, click \"Return to My Permissions\"" },
+        ],
+      },
+      {
+        title: "Understanding Authority Levels",
+        steps: [
+          { step: "Execution: You can use/execute the permission for the specified unit scope" },
+          { step: "Delegate: You can grant this permission to other users at or below your unit scope" },
+          { step: "Grant Delegate: You can authorize another user to delegate the permission to others" },
+        ],
+      },
+      {
+        title: "Managing and Revoking Permissions",
+        steps: [
+          { step: "Self-Audit: It is recommended to perform an occasional \"self-audit\" of your permissions, particularly after a Permanent Change of Station (PCS) or change in work assignment" },
+          { step: "Rule of Thumb: If you have the same permission at both a higher and lower unit level, you should self-revoke the lower unit level permission" },
+          {
+            step: "How to Revoke",
+            details: [
+              "Individually: Check the box next to a specific permission or template and click \"Revoke Selected Permissions\"",
+              "Bulk: Check the \"Revoke All Permissions\" box for an entire unit scope to remove them at once",
+            ],
+          },
+          {
+            step: "Restrictions",
+            details: [
+              "Some templates (like \"Commanding Officer\" or \"Officer of the Day\") cannot be self-revoked and must be managed through specific application functions",
+              "Some external permissions (like UD/MIPS or CLA) are managed outside of this screen",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-two-factor-auth": {
+    title: "Two Factor Authentication (2FA)",
+    description: "Two Factor Authentication (2FA) adds an extra layer of security to your Marine Online account by requiring a second form of verification in addition to your password.",
+    capabilities: ["Enhanced account security", "Secondary verification", "Authentication app setup", "Recovery options"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Overview",
+        steps: [
+          { step: "Two Factor Authentication provides additional security for your MOL account" },
+          { step: "When enabled, you will need both your password and a verification code to log in" },
+          { step: "Contact your local MISSO for 2FA setup assistance and requirements" },
+        ],
+      },
+    ],
+  },
 };
 
 // ============================================
@@ -5858,6 +6040,11 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     // Marine Online - Administrative Actions
     "mol-epar": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-epar"]} references={MOL_DATA.references} />,
     "mol-trouble-ticket-system": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-trouble-ticket-system"]} references={MOL_DATA.references} />,
+    // Marine Online - Account Access
+    "mol-login-cac-setup": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-login-cac-setup"]} references={MOL_DATA.references} />,
+    "mol-password-pin-reset": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-password-pin-reset"]} references={MOL_DATA.references} />,
+    "mol-view-permissions": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-view-permissions"]} references={MOL_DATA.references} />,
+    "mol-two-factor-auth": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-two-factor-auth"]} references={MOL_DATA.references} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -6133,6 +6320,8 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "mol-login-cac-setup",
     "mol-mobile-access",
     "mol-password-pin-reset",
+    "mol-view-permissions",
+    "mol-two-factor-auth",
     // Personnel Records
     "mol-view-ompf",
     "mol-update-personal-info",
