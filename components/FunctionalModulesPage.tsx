@@ -1,6 +1,16 @@
 "use client";
 import { useState } from "react";
 
+type GuideStep = {
+  step: string;
+  details?: string[];
+};
+
+type GuideSection = {
+  title: string;
+  steps: GuideStep[];
+};
+
 type ModuleData = {
   title: string;
   description: string;
@@ -8,6 +18,8 @@ type ModuleData = {
   userTypes: string[];
   electronicRecords?: string[];
   selfCertifiedTransactions?: string[];
+  guide?: GuideSection[];
+  useCases?: string[];
 };
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
@@ -205,6 +217,59 @@ export default function FunctionalModulesPage({
                           </span>
                         ))}
                       </div>
+                    </div>
+                  )}
+
+                  {selectedModuleData.guide && selectedModuleData.guide.length > 0 && (
+                    <div className="space-y-4">
+                      <h4 className="flex items-center gap-2 text-sm font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
+                          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                        </svg>
+                        Step-by-Step Guide
+                      </h4>
+                      {selectedModuleData.guide.map((section, sectionIdx) => (
+                        <div key={sectionIdx} className="rounded-lg border border-black/10 bg-[var(--sa-cream)]/20 p-3 dark:border-white/10 dark:bg-white/5">
+                          <h5 className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{section.title}</h5>
+                          <ol className="mt-2 space-y-2 pl-4">
+                            {section.steps.map((stepItem, stepIdx) => (
+                              <li key={stepIdx} className="text-sm text-zinc-700 dark:text-zinc-300">
+                                <span className="font-medium">{stepIdx + 1}. {stepItem.step}</span>
+                                {stepItem.details && stepItem.details.length > 0 && (
+                                  <ul className="mt-1 ml-4 space-y-1">
+                                    {stepItem.details.map((detail, detailIdx) => (
+                                      <li key={detailIdx} className="text-xs text-zinc-600 dark:text-zinc-400 before:content-['•'] before:mr-2 before:text-zinc-400">
+                                        {detail}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </li>
+                            ))}
+                          </ol>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {selectedModuleData.useCases && selectedModuleData.useCases.length > 0 && (
+                    <div>
+                      <h4 className="flex items-center gap-2 text-sm font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
+                          <path d="M9 11l3 3L22 4" />
+                          <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                        </svg>
+                        When to Use This Module
+                      </h4>
+                      <ul className="mt-2 space-y-1">
+                        {selectedModuleData.useCases.map((useCase, idx) => (
+                          <li key={idx} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                            <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--sa-gold)]"></span>
+                            {useCase}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   )}
                 </div>

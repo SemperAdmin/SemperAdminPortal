@@ -2682,6 +2682,56 @@ const MOL_FUNCTIONAL_MODULES = {
     description: "Provides individual members and authorized unit leaders the ability to submit and route administrative requests through the chain of command.",
     capabilities: ["Submit administrative requests", "Route requests through chain of command", "Track request status", "Approve/disapprove requests"],
     userTypes: ["Individual Members", "Unit Leaders"],
+    guide: [
+      {
+        title: "Initial Setup and Navigation",
+        steps: [
+          { step: "Log into your Marine Online account at https://mol.usmc.mil" },
+          { step: "Navigate to MyEPAR" },
+          { step: "Select \"Create Record\"" },
+        ],
+      },
+      {
+        title: "Drafting Your EPAR",
+        steps: [
+          { step: "Verify the shown unit information is correct" },
+          { step: "Select the \"Subject\" from the dropdown menu" },
+          { step: "Review the \"Instructions\" section for additional EPAR guidance" },
+          { step: "Type the request into the \"Notes\" section" },
+          {
+            step: "Click the \"Save and Attach Files (if applicable)\" button",
+            details: [
+              "Required only for EPAR subjects that require supporting documentation",
+              "If no attachments are required, you may skip uploading any",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Final Review and Submission",
+        steps: [
+          {
+            step: "Navigate to the \"My EPARs\" grid",
+            details: ["Here, you can view your \"History\" within the MOL System"],
+          },
+          { step: "Click \"Submit\" to send to your Chain of Command" },
+        ],
+      },
+      {
+        title: "What Happens After Submission",
+        steps: [
+          { step: "Your EPAR will route through your chain of command for review" },
+          { step: "Unit leaders can approve, disapprove, or return the request" },
+          { step: "You can track the status of your EPAR in the \"My EPARs\" grid" },
+        ],
+      },
+    ],
+    useCases: [
+      "Personnel Actions: Submitting requests related to your personal career and record",
+      "Contract Changes: Re-enlistments, Extensions, or changes to your End of Current Contract (ECC) date",
+      "Pay and Benefits: Actions regarding Bonuses, Survivor Benefit Program (SBP), or Career Status Bonuses (CSB)",
+      "Record Corrections: Requesting updates or corrections to existing information in your personnel record",
+    ],
   },
   "mol-family-care-plan": {
     title: "Family Care Plan",
@@ -2768,6 +2818,71 @@ const MOL_FUNCTIONAL_MODULES = {
     description: "Provides individual members and authorized unit leaders the ability to submit system issues to their jurisdictional Manpower Information System Support Office (MISSO). Tickets can be initiated by the member or unit leader within MOL. Tickets can be initiated by Installation Personnel Admin Centers or stand-alone Reporting Units through the Unit Diary / Marine Integrated Personnel Service (UD/MIPS).",
     capabilities: ["Submit system issues", "Route to jurisdictional MISSO", "Initiate from MOL", "Initiate from UD/MIPS", "Track ticket status"],
     userTypes: ["Individual Members", "Unit Leaders", "IPACs", "Reporting Units"],
+    guide: [
+      {
+        title: "Access and Navigation",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Click the \"Trouble Tickets\" menu item on the main navigation bar" },
+          { step: "Select \"New Trouble Ticket\" at the top of the screen" },
+        ],
+      },
+      {
+        title: "Define the Issue",
+        steps: [
+          {
+            step: "Verify your information",
+            details: ["The page will prepopulate your basic details", "Ensure your Work Email and Work Phone are correct"],
+          },
+          {
+            step: "Select Application",
+            details: ["Click the \"Application\" dropdown menu", "Choose the relevant category (e.g., Marine Online, COGNOS, MCTFS)"],
+          },
+          { step: "Select Subject from the next dropdown menu after picking an application" },
+          {
+            step: "Check Instructions",
+            details: ["If applicable, an \"Instructions and Forms\" tab will appear", "Review any special requirements for your selected category"],
+          },
+        ],
+      },
+      {
+        title: "Add Details and Documentation",
+        steps: [
+          {
+            step: "Provide Notes",
+            details: ["Use the \"Notes\" tab to describe the requested action and any source documentation", "Click \"Add Note\" when finished"],
+          },
+          {
+            step: "Upload Files",
+            details: ["Use the \"Files\" tab to upload supporting documentation", "Add a description for each file if uploading more than one", "Click \"Add File\" when done"],
+          },
+          { step: "Review History - use the \"History\" tab to view all recorded actions on the ticket" },
+        ],
+      },
+      {
+        title: "Submission",
+        steps: [
+          { step: "Double-check your work and click \"Submit Ticket\"" },
+          {
+            step: "Draft option",
+            details: ["If you are not ready to submit, click \"Save Changes\" to return to the ticket later"],
+          },
+        ],
+      },
+      {
+        title: "What Happens After Submission",
+        steps: [
+          { step: "Your ticket will be reviewed by Command personnel in your unit" },
+          { step: "Command personnel will determine the necessary action and route to MISSO if needed" },
+        ],
+      },
+    ],
+    useCases: [
+      "Technical Issues: Problems with specific MOL modules (Awards, Leave/Absence, EPAR, etc.)",
+      "System Errors: Application or system-level issues within MOL, COGNOS, or MCTFS",
+      "Access Requests: Requesting specific permissions or access levels through your chain of command",
+      "Administrative Appointments: Actions like Assumption of Command or new Commanding Officer appointments",
+    ],
   },
   "mol-umsr": {
     title: "Unit Management Status Report (UMSR)",
