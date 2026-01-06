@@ -259,8 +259,8 @@ export const reportGroups: CatalogGroup[] = [
   {
     name: "Legal & Manpower Portals",
     items: [
-      { title: "Legal Command Center" },
-      { title: "Manpower Management" },
+      { title: "Legal Command Center", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Portals/Legal%2BCommand%2BCenter/Legal%2BCommand%2BCenter%2BWelcome%2BPage&ui_appbar=false&ui_navbar=false&amp%3bui_appbar=false&amp%3bui_navbar=false" },
+      { title: "Manpower Management", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Portals/Manpower%2BManagement/Manpower%2BManagement&ui_appbar=false&ui_navbar=false&amp%3bui_appbar=false&amp%3bui_navbar=false" },
     ],
   },
   {
@@ -278,25 +278,25 @@ export const reportGroups: CatalogGroup[] = [
   {
     name: "Promotions",
     items: [
-      { title: "JEPES Averages for Marine" },
-      { title: "JEPES Occasions" },
-      { title: "JEPES Occasions and Marks Average" },
-      { title: "Not Recommended Marines" },
-      { title: "Passed for Promotion" },
-      { title: "SNCO Select Grade" },
+      { title: "JEPES Averages for Marine", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/JEPES%2BAverages%2Bfor%2BMarine" },
+      { title: "JEPES Occasions", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/JEPES%2BOccasions" },
+      { title: "JEPES Occasions and Marks Average", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/JEPES%2BOCCASIONS%2BAND%2BMARKS%2BAVERAGE" },
+      { title: "Not Recommended Marines", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Not%2BRecommended%2BMarines" },
+      { title: "Passed for Promotion", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Passed%2Bfor%2BPromotion" },
+      { title: "SNCO Select Grade", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/SNCO%2BSELECT%2BGRADE" },
     ],
   },
   {
     name: "Training",
     items: [
-      { title: "CPTR Training" },
-      { title: "Enlisted PME Report" },
-      { title: "Pistol Exception" },
-      { title: "Pistol PETQUAL" },
-      { title: "Rifle Exception" },
-      { title: "Rifle PETQUAL" },
-      { title: "SSgt and Below with S/EJPME II" },
-      { title: "Training Failures" },
+      { title: "CPTR Training", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/CPTR%2BTraining" },
+      { title: "Enlisted PME Report", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Enlisted%2BPME%2BReport" },
+      { title: "Pistol Exception", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Pistol%2BException" },
+      { title: "Pistol PETQUAL", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Pistol%2BPETQUAL" },
+      { title: "Rifle Exception", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Rifle%2BException" },
+      { title: "Rifle PETQUAL", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Rifle%2BPETQUAL" },
+      { title: "SSgt and Below with S/EJPME II", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/SSGT%2BAND%2BBELOW%2BWITH%2BS%252FEJPME%2BII" },
+      { title: "Training Failures", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Training%2BFailures" },
     ],
   },
   {
@@ -312,7 +312,7 @@ export const reportGroups: CatalogGroup[] = [
   {
     name: "SBP",
     items: [
-      { title: "SBP Missing Report" },
+      { title: "SBP Missing Report", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/SBP%2BMissing%2BReport" },
     ],
   },
   {
@@ -345,6 +345,86 @@ export const reportGroups: CatalogGroup[] = [
     name: "U&E",
     items: [
       { title: "No Pay Due", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/NO%2BPAY%2BDUE" },
+    ],
+  },
+];
+
+export const unitUserReportGroups: CatalogGroup[] = [
+  {
+    name: "Unit User Reports",
+    items: [
+      { title: "Requesting Access TFAS Package", href: "https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?Id=64958FDF4ED6" },
+    ],
+  },
+  {
+    name: "Portals",
+    items: [
+      { title: "Legal Command Center", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Portals/Legal%2BCommand%2BCenter/Legal%2BCommand%2BCenter%2BWelcome%2BPage&ui_appbar=false&ui_navbar=false&amp%3bui_appbar=false&amp%3bui_navbar=false" },
+      { title: "Manpower Management", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Portals/Manpower%2BManagement/Manpower%2BManagement&ui_appbar=false&ui_navbar=false&amp%3bui_appbar=false&amp%3bui_navbar=false" },
+    ],
+  },
+  {
+    name: "Non Routine",
+    items: [
+      { title: "Additional Key MOS", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Additional%2BKey%2BMOS" },
+      { title: "Parental Leave Tracker", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Parental%2BLeave%2BTracker" },
+      { title: "Report Builder", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Report%2BBuilder" },
+      { title: "Transition Readiness (On Rolls)", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Transition%2BReadiness%2B%2528On%2BRolls%2B-%2BTFAS%2529%2B%2528SR%2B2-20%2529" },
+      { title: "TTC Error By Unit", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/MISSO%2B06/MISSO-06%2BReports%2Bfor%2BUnits/TTC%2BError%2BBy%2BUnit&amp%3bprompt=false" },
+    ],
+  },
+  {
+    name: "Promotions",
+    items: [
+      { title: "JEPES Averages for Marine", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/JEPES%2BAverages%2Bfor%2BMarine" },
+      { title: "JEPES Occasions", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/JEPES%2BOccasions" },
+      { title: "JEPES Occasions and Marks Average", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/JEPES%2BOCCASIONS%2BAND%2BMARKS%2BAVERAGE" },
+      { title: "Not Recommended Marines", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Not%2BRecommended%2BMarines" },
+      { title: "Passed for Promotion", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Passed%2Bfor%2BPromotion" },
+      { title: "SNCO Select Grade", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/SNCO%2BSELECT%2BGRADE" },
+    ],
+  },
+  {
+    name: "Training",
+    items: [
+      { title: "CPTR Training", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/CPTR%2BTraining" },
+      { title: "Enlisted PME Report", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Enlisted%2BPME%2BReport" },
+      { title: "Pistol Exception", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Pistol%2BException" },
+      { title: "Pistol PETQUAL", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Pistol%2BPETQUAL" },
+      { title: "Rifle Exception", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Rifle%2BException" },
+      { title: "Rifle PETQUAL", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Rifle%2BPETQUAL" },
+      { title: "SSgt and Below with S/EJPME II", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/SSGT%2BAND%2BBELOW%2BWITH%2BS%252FEJPME%2BII" },
+      { title: "Training Failures", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Training%2BFailures" },
+    ],
+  },
+  {
+    name: "Mondays",
+    items: [
+      { title: "Missing NDSM <= 20221231", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Missing%2BNDSM%2B%253C%253D%2B20221231" },
+      { title: "SGLI/SOES Status", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/SGLI%252FSOES%2BSTATUS" },
+      { title: "SBP Missing Report", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/SBP%2BMissing%2BReport" },
+    ],
+  },
+  {
+    name: "1st of the Month",
+    items: [
+      { title: "MGIB Status Missing", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/MGIB%2BSTATUS%2BMISSING" },
+      { title: "SSgt and Below with S/EJPME II", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/SSGT%2BAND%2BBELOW%2BWITH%2BS%252FEJPME%2BII" },
+      { title: "Unit Missing Training", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/UNIT%2BMISSING%2BTRAINING" },
+    ],
+  },
+  {
+    name: "15th of the Month",
+    items: [
+      { title: "BNA MOL Messages", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/BNA%2BMOL%2BMessages" },
+      { title: "Missing Annual Red Audit", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/MISSING%2BANNUAL%2BRED%2BAUDIT" },
+      { title: "Sergeant Without Dependents BAH Initiative", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/SERGEANT%2BWITHOUT%2BDEPENDENTS%2BBASIC%2BALLOWANCE%2BFOR%2BHOUSING%2B%2528BAH%2529%2BINITIATIVE" },
+    ],
+  },
+  {
+    name: "U&E",
+    items: [
+      { title: "No Pay Due", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Unit%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/NO%2BPAY%2BDUE" },
     ],
   },
 ];
