@@ -510,7 +510,6 @@ export const SECTIONS: Record<string, Section> = {
         title: "Account Access",
         items: [
           { title: "MOL Login & CAC Setup", slug: "mol-login-cac-setup", desc: "Access MOL using your CAC and troubleshoot login issues" },
-          { title: "MOL Mobile Access", slug: "mol-mobile-access", desc: "Access MOL from mobile devices and remote locations" },
           { title: "Password & PIN Reset", slug: "mol-password-pin-reset", desc: "Reset your MOL password or CAC PIN" },
         ],
       },
@@ -519,7 +518,6 @@ export const SECTIONS: Record<string, Section> = {
         items: [
           { title: "View Your OMPF", slug: "mol-view-ompf", desc: "Access your Official Military Personnel File" },
           { title: "Update Personal Information", slug: "mol-update-personal-info", desc: "Change address, phone, emergency contacts, and other personal data" },
-          { title: "View & Print LES", slug: "mol-view-les", desc: "Access your Leave and Earnings Statement" },
         ],
       },
       {
@@ -533,7 +531,6 @@ export const SECTIONS: Record<string, Section> = {
       {
         title: "Administrative Actions",
         items: [
-          { title: "SGLI Updates", slug: "mol-sgli-updates", desc: "Update your Servicemembers Group Life Insurance beneficiaries" },
           { title: "Dependency Updates", slug: "mol-dependency-updates", desc: "Add, remove, or update dependent information" },
           { title: "Address Changes", slug: "mol-address-changes", desc: "Update your home of record and mailing address" },
         ],
