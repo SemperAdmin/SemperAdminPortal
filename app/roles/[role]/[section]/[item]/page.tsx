@@ -4559,7 +4559,7 @@ const MOL_FUNCTIONAL_MODULES = {
   "mol-red": {
     title: "Record of Emergency Data (RED)",
     description: "The most important administrative document you will ever sign. Also known as the DD Form 93, this is the official 'In Case of Emergency' document the Marine Corps uses to notify your family if something happens to you. If you are injured or killed, the Marine Corps uses this exact page to find your next of kin.",
-    capabilities: ["View emergency contacts", "Update beneficiaries", "Certify RED", "Update next of kin", "Manage death gratuity", "Designate PADD"],
+    capabilities: ["View emergency contacts", "Update beneficiaries", "Certify RED", "Update next of kin", "Manage death gratuity", "Designate PADD", "Manage family addresses", "Update spouse preferred language", "Support NEO planning"],
     userTypes: ["All Marines"],
     guide: [
       {
@@ -4632,6 +4632,151 @@ const MOL_FUNCTIONAL_MODULES = {
         ],
       },
       {
+        title: "Family Information Section",
+        steps: [
+          {
+            step: "Why Family Data Matters",
+            details: [
+              "If you are deployed or in a training environment, your command must know exactly where your spouse and children are",
+              "In a worst-case scenario, the Marine Corps needs the current address of your family for casualty notification",
+              "For Marines stationed OCONUS (like Okinawa or Iwakuni), this data is used for Non-combatant Evacuation Operations (NEO)",
+              "The 'Spouse Preferred Language' field ensures translators are available if needed during emergency contact",
+            ],
+          },
+          {
+            step: "Understanding Status Indicators",
+            details: [
+              "Bold text means a change is pending and hasn't posted to MCTFS yet",
+              "Red text means a record is marked for removal",
+              "Normal text means the data is current and certified",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Managing Family Addresses",
+        steps: [
+          {
+            step: "Mailing Address",
+            details: [
+              "Click 'Edit Address' under Mailing Address to change where you receive mail",
+              "If the link is missing, go to the Personal Contact Information page in MOL",
+            ],
+          },
+          {
+            step: "Spouse/Child Address (Separate Locations)",
+            details: [
+              "If your family does not live with you (e.g., you are on a Geobachelor tour), click 'Edit Address' next to their name",
+              "Provide their specific physical location - not just 'same as mine'",
+              "This is critical for casualty notification and evacuation planning",
+            ],
+          },
+          {
+            step: "Syncing Addresses",
+            details: [
+              "If a child moves back in with your spouse, click 'Use Spouse Address' to quickly sync the child's record",
+              "This prevents having to re-enter the same address multiple times",
+            ],
+          },
+          {
+            step: "Transaction Details",
+            details: [
+              "If you see a bold entry and can't remember what you changed, click 'Details'",
+              "This shows a side-by-side comparison of old vs. new data",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Editing U.S. Addresses",
+        steps: [
+          {
+            step: "Step 1: Format Selection",
+            details: [
+              "Click 'Reformat This Address' if the boxes don't match a standard U.S. street address",
+            ],
+          },
+          {
+            step: "Step 2: Street Address",
+            details: [
+              "Type the physical street address - avoid PO Boxes for family physical locations",
+            ],
+          },
+          {
+            step: "Step 3: State/City/County Sequence (Critical)",
+            details: [
+              "Select the State first - this 'unlocks' the City list",
+              "Select the City from the dropdown",
+              "Once the city is selected, the County field will populate",
+              "If a city spans multiple counties (like Dallas, TX), you must select the correct one",
+              "County selection is important for local emergency services and legal jurisdiction",
+            ],
+          },
+          {
+            step: "Step 4: Zip Code",
+            details: [
+              "Enter the 5 or 9-digit Zip Code",
+              "Click 'Submit Changes', then 'Apply Changes'",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Editing Foreign Addresses",
+        steps: [
+          {
+            step: "Step 1: Select Foreign Format",
+            details: [
+              "Click the 'Foreign (Non-APO/FPO Address)' link",
+              "This is for family members living overseas not at a military installation",
+            ],
+          },
+          {
+            step: "Step 2: Location Selection",
+            details: [
+              "Select the Country first to populate the City list",
+              "Select the appropriate City from the dropdown",
+            ],
+          },
+          {
+            step: "Step 3: Address Details",
+            details: [
+              "Type the full foreign address in the boxes provided",
+              "Follow that country's local format for best results",
+              "Click 'Submit Changes', then 'Apply Changes'",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Spouse and Child Data",
+        steps: [
+          {
+            step: "Preferred Language",
+            details: [
+              "If your spouse speaks a language other than English as their primary language, click 'Add/Edit Spouse Preferred Language'",
+              "This is critical for casualty or emergency notifications",
+              "The Marine Corps can send a representative who speaks their language or provide a translator",
+            ],
+          },
+          {
+            step: "Removing Records",
+            details: [
+              "Click 'Remove Child' or 'Remove Spouse' only in the event of legal changes (divorce or loss of dependency)",
+              "For Marines, adding a spouse or child must be done through IPAC/S-1 with legal documentation (marriage/birth certificates)",
+              "Address updates can be done here by the individual Marine",
+            ],
+          },
+          {
+            step: "Canceling Changes",
+            details: [
+              "If you made a mistake, click 'Cancel Pending Transaction' before the change posts to MCTFS",
+              "If a record is marked in red for removal, click 'Cancel Removal' to stop the deletion",
+            ],
+          },
+        ],
+      },
+      {
         title: "Common Pitfalls to Avoid",
         steps: [
           {
@@ -4658,10 +4803,47 @@ const MOL_FUNCTIONAL_MODULES = {
             ],
           },
           {
-            step: "Pending Status",
+            step: "The Geobachelor Gap",
             details: [
-              "If you see data in bold red font, it means the change is 'Pending' and hasn't hit the master record yet",
-              "Don't assume it's 'done' until the red text turns black",
+              "Many Marines forget to update their family's address when they go on Unaccompanied orders",
+              "Ensure your spouse's actual physical location is listed, not just your current barracks",
+              "Do not assume your spouse's address is updated just because yours is",
+            ],
+          },
+          {
+            step: "Pending vs. Posted",
+            details: [
+              "Changes take 24-48 hours to process through MCTFS",
+              "Do not re-submit the same change if you see it in bold - it's already in the queue",
+              "Bold text returning to normal means the change has posted",
+            ],
+          },
+          {
+            step: "Remove vs. Edit",
+            details: [
+              "Do not 'Remove' a spouse because they moved - use 'Edit Address' instead",
+              "'Remove' should only be used if the person is no longer your legal dependent (divorce, age-out)",
+            ],
+          },
+          {
+            step: "The City First Mistake",
+            details: [
+              "You cannot type a city name and expect the state to appear",
+              "You must select the State first for the system to filter the correct cities",
+            ],
+          },
+          {
+            step: "County Confusion",
+            details: [
+              "Many Marines ignore the County field or leave the default",
+              "If your family lives in an area where the city is in two counties, choosing the wrong one can cause administrative delays during a crisis",
+            ],
+          },
+          {
+            step: "Browser Timeouts",
+            details: [
+              "If you take too long to find an address, MOL may time out",
+              "Have all your family's zip codes and county names ready before you start",
             ],
           },
         ],
@@ -4674,19 +4856,23 @@ const MOL_FUNCTIONAL_MODULES = {
             details: [
               "It usually takes 24-48 hours for your certification to post",
               "Once it does, the red 'Out of Date' flag on your MOL homepage will disappear",
+              "Check that bold text has returned to normal to confirm processing",
+            ],
+          },
+          {
+            step: "Verify the PADD",
+            details: [
+              "Navigate to the PADD (Person Authorized to Direct Disposition) section",
+              "Ensure the correct person is designated to handle final arrangements",
+              "This is the person you trust to make your funeral decisions",
             ],
           },
           {
             step: "Audit Your SGLI",
             details: [
-              "Since you just did your RED, your next step should be logging into milConnect to ensure your SGLV 8286 (SGLI) matches your new RED",
-            ],
-          },
-          {
-            step: "PADD Designation",
-            details: [
-              "Ensure you have designated a Person Authorized to Direct Disposition (PADD)",
-              "This is the person you trust to make your funeral arrangements",
+              "Go to milConnect and check your SGLI Online Enrollment System (SOES)",
+              "Ensure your life insurance beneficiaries match your current family status",
+              "Your SGLV 8286 should align with your RED designations",
             ],
           },
         ],
@@ -5798,58 +5984,132 @@ const MOL_FUNCTIONAL_MODULES = {
   },
   "mol-gas-mask-helmet": {
     title: "Gas Mask and Helmet Information",
-    description: "The Gas Mask and Helmet transaction allows Marines to self-report their protective equipment sizing. This information ensures correct equipment is available during deployments and training.",
-    capabilities: ["Update gas mask size", "Update helmet size", "Support supply readiness", "Ensure proper equipment fit"],
+    description: "A small task that has a huge impact on your gear issues and combat readiness. When you deploy or head to a large-scale exercise, the Logistics (S-4) and NBC (CBRN) sections pull reports from MOL to determine how many masks and helmets of each size they need to have in stock.",
+    capabilities: ["Update gas mask size", "Update helmet size", "Update mask type", "Support supply readiness", "Ensure proper equipment fit", "Support CIF/IIF preparation"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Equipment Information",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Gas Mask and Helmet" },
-          { step: "View your current recorded sizes" },
-        ],
-      },
-      {
-        title: "Gas Mask Information",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Updating Gas Mask Size",
+            step: "Safety",
             details: [
-              "Select your Gas Mask Size from available options",
-              "Common sizes: Extra Small (XS), Small (S), Medium (M), Large (L), Extra Large (XL)",
-              "Size is determined during mask fitting at CIF or during training",
-              "Confirm the mask type if prompted",
+              "If your record says 'Small' but you actually wear a 'Large,' you might be issued gear that doesn't provide a proper seal",
+              "This is a life-threatening issue in a CBRN environment",
             ],
           },
-          { step: "Click 'Submit' to update your record" },
-        ],
-      },
-      {
-        title: "Helmet Information",
-        steps: [
           {
-            step: "Updating Helmet Size",
+            step: "Supply Chain",
             details: [
-              "Select your Helmet Size from available options",
-              "Common sizes: Small, Medium, Large, X-Large",
-              "Size is based on head circumference measurement",
-              "Verify the helmet type matches your issued equipment",
+              "Keeping this updated ensures the right gear is waiting for you at the window",
+              "Prevents delays for your entire platoon during gear draws",
             ],
           },
-          { step: "Click 'Submit' to update your record" },
         ],
       },
       {
-        title: "Why This Information Matters",
+        title: "How to Update Your Gear Sizes",
         steps: [
           {
-            step: "Readiness Impact",
+            step: "Step 1: Check Your Actual Gear First",
             details: [
-              "Ensures proper protective equipment is available for deployment",
-              "Supports supply planning and logistics",
-              "Prevents equipment shortages during operations",
-              "Required for individual readiness reporting",
+              "Don't guess - go look at your gear first",
+              "Gas Mask size is stenciled on the inside of your mask's facepiece",
+              "Helmet size is stenciled on the inside of the helmet shell (usually under the padding)",
+            ],
+          },
+          {
+            step: "Step 2: Access the Page",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Gas Mask and Helmet Information",
+            ],
+          },
+          {
+            step: "Step 3: Update Gas Mask Info",
+            details: [
+              "Size: Select the size (Small, Medium, Large, etc.) stenciled on your mask",
+              "Type: Select the type (e.g., M50). If you aren't sure, check with your unit CBRN (NBC) NCO",
+            ],
+          },
+          {
+            step: "Step 4: Update Helmet Size",
+            details: [
+              "Look for the size stenciled on the inside of the helmet shell",
+              "Select the corresponding size in the dropdown",
+            ],
+          },
+          {
+            step: "Step 5: Submit Changes",
+            details: [
+              "Click 'Submit Changes'",
+              "When prompted, click 'Apply Changes' to finalize the update",
+            ],
+          },
+          {
+            step: "Step 6: View Pending",
+            details: [
+              "If you see a 'Details' link, click it to see your 'Pending' vs. 'Current' values",
+              "You can print this summary if your CBRN NCO needs a hard copy for your training folder",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Guessing the Fit",
+            details: [
+              "Just because you have a 'large' head doesn't mean you wear a 'large' mask",
+              "The mask size is determined by your face seal during a fit test (gas chamber)",
+              "Use the size that was verified during your last chamber hit",
+            ],
+          },
+          {
+            step: "Ignoring the Type",
+            details: [
+              "The Marine Corps transitioned to the M50 mask years ago, but some specialized units use different types",
+              "Ensure the Type matches exactly what is in your gear bag",
+            ],
+          },
+          {
+            step: "The Bold Status",
+            details: [
+              "After you click apply, the new size will appear in bold",
+              "This means it is 'Pending' in the system - it usually takes 24-48 hours to process",
+              "Don't submit it multiple times",
+            ],
+          },
+          {
+            step: "Incorrect Helmet Sizing",
+            details: [
+              "If you use an aftermarket suspension system or pads, ensure you are still reporting the size of the actual helmet shell, not the pad size",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What Happens After You Finish",
+        steps: [
+          {
+            step: "CBRN Verification",
+            details: [
+              "Your unit's CBRN NCO will see this update on their readiness roster",
+            ],
+          },
+          {
+            step: "IIF/CIF Prep",
+            details: [
+              "The next time you go to the Consolidated Issue Facility (CIF) for a swap or new issue, their system should reflect these sizes",
+              "This makes the process faster",
+            ],
+          },
+          {
+            step: "Check Your BTR",
+            details: [
+              "After 48 hours, verify that these sizes have migrated to your Basic Training Record (BTR)",
+              "This ensures your technical data is consistent across your entire file",
             ],
           },
         ],
@@ -5858,66 +6118,116 @@ const MOL_FUNCTIONAL_MODULES = {
   },
   "mol-race-ethnic": {
     title: "Race and Ethnic Information",
-    description: "The Race and Ethnic Information transaction allows Marines to self-certify their race and ethnicity data for personnel records. This information is used for demographic reporting and equal opportunity compliance.",
-    capabilities: ["Update race information", "Update ethnicity information", "Self-certify demographic data"],
+    description: "While this might seem like a simple administrative task, this data is used at the highest levels of the Marine Corps to track the health and diversity of the force. The Marine Corps uses this data to ensure that recruiting and promotion systems are fair and representative.",
+    capabilities: ["Update race aggregate code", "Update race code", "Update ethnic code", "Self-certify demographic data", "Support EO compliance"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Race/Ethnic Information",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Race/Ethnic" },
-          { step: "View your current recorded information" },
-        ],
-      },
-      {
-        title: "Updating Ethnicity",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Ethnicity Options",
+            step: "Force Health",
             details: [
-              "Hispanic or Latino",
-              "Not Hispanic or Latino",
+              "Allows Manpower and Reserve Affairs (M&RA) to see if certain groups are being promoted or retained at different rates",
+              "Can lead to policy changes to fix disparities",
             ],
           },
-          { step: "Select the ethnicity that applies to you" },
-        ],
-      },
-      {
-        title: "Updating Race",
-        steps: [
           {
-            step: "Race Options",
+            step: "Equal Opportunity",
             details: [
-              "American Indian or Alaska Native",
-              "Asian",
-              "Black or African American",
-              "Native Hawaiian or Other Pacific Islander",
-              "White",
+              "This data is vital for Equal Opportunity (EO) programs to monitor the 'Command Climate' of the Corps",
             ],
           },
-          { step: "You may select one or more race categories" },
-          { step: "Select all categories that apply to you" },
+          {
+            step: "Legal Requirements",
+            details: [
+              "The Department of Defense is required by federal law to report these demographics to Congress annually",
+            ],
+          },
         ],
       },
       {
-        title: "Submitting Changes",
-        steps: [
-          { step: "Review your selections for accuracy" },
-          { step: "Click 'Submit' to update your record" },
-          { step: "Changes are self-certified and processed through MCTFS" },
-        ],
-      },
-      {
-        title: "Purpose of This Information",
+        title: "How to Update Your Codes",
         steps: [
           {
-            step: "Usage",
+            step: "Step 1: Access the Page",
             details: [
-              "Demographic reporting to DoD and Congress",
-              "Equal opportunity program compliance",
-              "Statistical analysis and workforce planning",
-              "Information is kept confidential",
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Race and Ethnic Information",
+            ],
+          },
+          {
+            step: "Step 2: Race Aggregate Code",
+            details: [
+              "This allows you to select multiple boxes if you come from a multi-racial background",
+              "Note: For DoD military personnel, you CANNOT select 'Decline to make an Election' - a selection is required",
+            ],
+          },
+          {
+            step: "Step 3: Race Code",
+            details: [
+              "Select the primary single code that best represents your heritage",
+            ],
+          },
+          {
+            step: "Step 4: Ethnic Code",
+            details: [
+              "This is where you specify if you are of Hispanic or Latino origin",
+              "You can select a specific group (e.g., Mexican, Puerto Rican) or select 'Declined to Respond'",
+            ],
+          },
+          {
+            step: "Step 5: Submit and Confirm",
+            details: [
+              "Click 'Submit Changes'",
+              "Review the summary of your changes",
+              "Click 'Apply Changes' to finalize or 'Cancel' to go back",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Pending Status",
+            details: [
+              "After you click 'Apply Changes,' you won't see the update immediately",
+              "It will be 'Pending' in the system for 24-48 hours",
+              "Use the 'View Details' link to see what you submitted",
+            ],
+          },
+          {
+            step: "Multiple Races",
+            details: [
+              "If you are biracial, ensure you use the Aggregate section to check all boxes that apply",
+              "Don't feel forced to pick just one",
+            ],
+          },
+          {
+            step: "Declining to Respond",
+            details: [
+              "While the 'Ethnic' code allows you to decline, the military requires a 'Race' selection for your official file",
+              "This is required to comply with MCTFS reporting standards",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What Happens After You Finish",
+        steps: [
+          {
+            step: "Verify on BIR",
+            details: [
+              "Once the 'Pending' status clears, check your Basic Individual Record (BIR)",
+              "This is the document used by promotion boards, so ensure your race/ethnic codes are correctly displayed there",
+            ],
+          },
+          {
+            step: "Check Your OMPF",
+            details: [
+              "If you recently changed your information to reflect a heritage you hadn't declared before",
+              "Ensure your Official Military Personnel File (OMPF) reflects any language or cultural skills associated with that background",
             ],
           },
         ],
@@ -5926,123 +6236,311 @@ const MOL_FUNCTIONAL_MODULES = {
   },
   "mol-religion": {
     title: "Religion Information",
-    description: "The Religion Information transaction allows Marines to self-certify their religious preference for personnel records. This information is used for chaplain support, dietary considerations, and casualty notification.",
-    capabilities: ["Update religious preference", "Self-certify religion data", "Support chaplain services"],
+    description: "The religious preference you select on this page is pulled into several critical areas of your service—from your dog tags to chaplain support and even your final arrangements. Taking a few minutes to ensure this data is correct can have a lasting impact on how you are supported throughout your career.",
+    capabilities: ["Update religious preference", "Self-certify religion data", "Support chaplain services", "Inform dog tag embossing", "Support dietary accommodations", "Guide burial honors"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Religion Information",
+        title: "Why This Matters",
         steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Religion" },
-          { step: "View your current recorded preference" },
-        ],
-      },
-      {
-        title: "Updating Religious Preference",
-        steps: [
-          { step: "Select your religious preference from the available list" },
           {
-            step: "Options Include",
+            step: "Dog Tags",
             details: [
-              "Major world religions (Christianity, Islam, Judaism, Buddhism, Hinduism, etc.)",
-              "Various Christian denominations",
-              "Other faith traditions",
-              "'No Religious Preference' option available",
+              "Your religious preference is one of the five lines embossed on your ID tags",
+              "In a mass-casualty event, this is how medical and chaplain staff quickly identify how to support you",
             ],
           },
-          { step: "Click 'Submit' to update your record" },
-        ],
-      },
-      {
-        title: "Why This Information Matters",
-        steps: [
           {
-            step: "Usage",
+            step: "Chaplain Services",
             details: [
-              "Chaplain support and religious accommodation",
-              "Dietary requirements (MRE selection, mess hall)",
-              "Casualty notification and burial preferences",
-              "Scheduling around religious observances",
+              "When you seek counseling or spiritual support, the Chaplain Corps uses this data to assign you to a chaplain of a similar faith—or to find one if needed",
+              "This also informs the unit religious program fund, which buys items like prayer rugs, rosaries, or Buddhist meditation supplies",
+            ],
+          },
+          {
+            step: "Dietary Needs",
+            details: [
+              "In field operations, your religion data can trigger the provision of Halal or Kosher MREs if you need them",
+              "In garrison, the mess hall can accommodate religious dietary laws if you request it through your chain of command",
+            ],
+          },
+          {
+            step: "Burial Honors",
+            details: [
+              "In the event of your death, the Casualty Assistance Calls Officer (CACO) will use this data to ensure appropriate religious rites are observed at your funeral",
+              "This can include a specific clergy member, religious symbols on your headstone, or ceremonial burial customs",
             ],
           },
         ],
       },
       {
-        title: "Privacy",
+        title: "How to Update Your Religious Preference",
         steps: [
-          { step: "Religious preference is protected personal information" },
-          { step: "Only accessed by those with legitimate need (chaplains, casualty assistance)" },
-          { step: "Changes are reflected in your personnel file and RED" },
+          {
+            step: "Step 1: Access MOL",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Religion",
+            ],
+          },
+          {
+            step: "Step 2: View Current Data",
+            details: [
+              "Your current recorded preference will be displayed",
+              "If no preference is listed, this is what will appear on your dog tags and records",
+            ],
+          },
+          {
+            step: "Step 3: Update Your Preference",
+            details: [
+              "Select from the dropdown list of available religions",
+              "Major world religions are listed (Christianity, Islam, Judaism, Buddhism, Hinduism, Sikhism, etc.)",
+              "Various Christian denominations are available for more specific designation",
+              "'No Religious Preference' is a valid option",
+              "If your religion is not listed, contact your Chaplain for guidance on proper coding",
+            ],
+          },
+          {
+            step: "Step 4: Submit",
+            details: [
+              "Click 'Submit' to save your change",
+              "Changes typically process within 24-48 hours through MCTFS",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Assuming 'No Preference' Means Atheist",
+            details: [
+              "'No Religious Preference' is not the same as 'Atheist' or 'Agnostic'",
+              "If you actively identify as one of these, look for the specific option in the dropdown",
+              "'No Religious Preference' simply means you decline to specify",
+            ],
+          },
+          {
+            step: "Forgetting to Update After Conversion",
+            details: [
+              "If you convert to a new faith during your service, your old religion will remain on record until you change it",
+              "This affects everything from dog tags to burial rights",
+            ],
+          },
+          {
+            step: "Not Knowing the Dog Tag Impact",
+            details: [
+              "New dog tags are issued at supply—if your religion changed, you need to request new tags",
+              "MOL updates the master record, but you still need to physically obtain new tags from your unit supply",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What Happens After You Update",
+        steps: [
+          {
+            step: "MCTFS Processing",
+            details: [
+              "Your change will be 'Pending' (bold text) until MCTFS processes it within 24-48 hours",
+            ],
+          },
+          {
+            step: "Notify Your Chaplain",
+            details: [
+              "If you need immediate religious accommodations (dietary, holy day observance), speak with your unit Chaplain directly",
+              "They can advocate for accommodations while the system updates",
+            ],
+          },
+          {
+            step: "Request New Dog Tags",
+            details: [
+              "If your religion changed, visit your unit supply section to request new ID tags with the updated preference",
+            ],
+          },
+          {
+            step: "Review Your RED",
+            details: [
+              "Your religious preference is connected to your Record of Emergency Data",
+              "Ensure your PADD and beneficiaries align with any changes in your spiritual life",
+            ],
+          },
         ],
       },
     ],
   },
   "mol-language-skills": {
     title: "Self-Professed Language Skills",
-    description: "The Self-Professed Language Skills transaction allows Marines to report language abilities beyond their primary language. This information may be used for assignment considerations and special duty selection.",
-    capabilities: ["Add language skills", "Rate proficiency levels", "Support assignment planning", "Track language abilities"],
+    description: "This page allows you to self-report any language skills beyond English. While this data is 'self-professed' (not officially tested), it feeds into the Marine Corps manpower database and can directly influence your assignment and eligibility for special billets. If you speak a second language—whether learned at home or in school—this is where you let the Corps know.",
+    capabilities: ["Add language skills", "Rate proficiency levels", "Support assignment planning", "Track language abilities", "Identify interpreter candidates", "Support Foreign Language Proficiency Bonus eligibility"],
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing Language Skills",
+        title: "Why This Matters",
         steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Self-Professed Language Skills" },
-          { step: "View your recorded language abilities" },
-        ],
-      },
-      {
-        title: "Adding a Language",
-        steps: [
-          { step: "Click 'Add Language' to enter a new skill" },
-          { step: "Select the Language from the dropdown list" },
           {
-            step: "Rate Your Proficiency",
+            step: "Billet Identification",
             details: [
-              "Reading - None, Low, Medium, High, Native",
-              "Writing - None, Low, Medium, High, Native",
-              "Speaking - None, Low, Medium, High, Native",
-              "Listening - None, Low, Medium, High, Native",
+              "HQMC Manpower Management uses this data to identify Marines with language skills for special billets",
+              "This includes assignments to Foreign Area Officer (FAO) programs, Security Cooperation roles, and Embassies",
             ],
           },
-          { step: "Click 'Submit' to add the language to your record" },
-        ],
-      },
-      {
-        title: "Proficiency Levels",
-        steps: [
           {
-            step: "Understanding Ratings",
+            step: "Deployment Needs",
             details: [
-              "None - No ability in this skill",
-              "Low - Basic phrases and simple communication",
-              "Medium - Conversational ability, can handle routine tasks",
-              "High - Professional proficiency, can discuss complex topics",
-              "Native - Native or bilingual proficiency",
+              "Deploying units often need Marines who can communicate with local populations",
+              "Your self-reported skill could result in you being selected as a 'provisional interpreter' or cultural liaison",
+            ],
+          },
+          {
+            step: "Pathway to Pay",
+            details: [
+              "While self-professed skills don't qualify you for Foreign Language Proficiency Bonus (FLPB) directly, they can flag you as a candidate for official testing (DLPT)",
+              "If you test well on the DLPT, you can earn between $100-$500/month in extra pay depending on the language and your score",
             ],
           },
         ],
       },
       {
-        title: "DLPT Scores",
+        title: "Understanding Proficiency Levels (ILR Scale)",
         steps: [
-          { step: "Official Defense Language Proficiency Test (DLPT) scores are recorded separately" },
-          { step: "Self-professed skills are for languages not formally tested" },
-          { step: "DLPT scores take precedence for official language pay" },
-          { step: "Contact your S-1/Admin for DLPT score discrepancies" },
+          {
+            step: "Level Reference Guide",
+            details: [
+              "When selecting your level, use the Interagency Language Roundtable (ILR) scale as a mental guide:",
+              "0 (None): No practical ability in the language",
+              "0+ (Memorized): Can use memorized phrases (ordering food, basic greetings)",
+              "1 (Elementary): Can handle routine travel needs, ask/answer simple questions",
+              "1+ (Elementary+): Can handle limited work requirements with frequent errors",
+              "2 (Limited Working): Can handle routine social/work situations, discuss current events",
+              "2+ (Limited Working+): Can handle most complex situations with some difficulty",
+              "3 (General Professional): Can discuss abstract topics, provide counsel, and understand most speech",
+              "3+ (General Professional+): Occasional non-native error, broad vocabulary",
+              "4 (Advanced Professional): Near-native fluency, can interpret and translate",
+              "5 (Native/Bilingual): Native-level fluency in all contexts",
+            ],
+          },
+          {
+            step: "Honest Self-Assessment",
+            details: [
+              "Be honest - the Corps may test you to verify your claim",
+              "Overestimating can lead to being placed in a role you can't handle",
+              "Underestimating means you miss opportunities",
+            ],
+          },
         ],
       },
       {
-        title: "Why Report Language Skills",
+        title: "How to Add or Update Language Skills",
         steps: [
           {
-            step: "Benefits",
+            step: "Step 1: Access MOL",
             details: [
-              "May qualify for special duty assignments",
-              "Considered for interpreter/translator duties",
-              "Supports regional expertise requirements",
-              "May affect assignment to certain billets",
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Self-Professed Language Skills",
+            ],
+          },
+          {
+            step: "Step 2: Review Current Data",
+            details: [
+              "View any languages you have previously reported",
+              "Check if your proficiency levels are still accurate",
+            ],
+          },
+          {
+            step: "Step 3: Add a Language",
+            details: [
+              "Click 'Add Language'",
+              "Select the language from the dropdown list",
+              "Rate your proficiency in each skill area: Reading, Writing, Speaking, Listening",
+              "Click 'Submit'",
+            ],
+          },
+          {
+            step: "Step 4: Edit Existing Language",
+            details: [
+              "Click on an existing language entry to modify your proficiency rating",
+              "Update the skill levels as appropriate",
+              "Submit your changes",
+            ],
+          },
+        ],
+      },
+      {
+        title: "DLPT vs Self-Professed",
+        steps: [
+          {
+            step: "The Difference",
+            details: [
+              "Self-Professed: Your own estimate of your ability—not officially tested",
+              "DLPT (Defense Language Proficiency Test): The official DoD test that determines language pay",
+            ],
+          },
+          {
+            step: "Why Both Exist",
+            details: [
+              "Not every language has a DLPT available",
+              "Self-professed data helps the Corps identify 'hidden' language talent",
+              "If you score well on the DLPT, your self-professed entry becomes validated",
+            ],
+          },
+          {
+            step: "Foreign Language Proficiency Bonus (FLPB)",
+            details: [
+              "Only DLPT scores qualify you for FLPB pay",
+              "FLPB ranges from $100-$500/month depending on language and proficiency",
+              "Self-professed skills can get you noticed for testing opportunities",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Overestimating to Get a Billet",
+            details: [
+              "If you claim 'High' proficiency and are selected for an interpreter role you can't handle, you will be replaced and flagged",
+              "Be accurate—there will be opportunities to improve and test",
+            ],
+          },
+          {
+            step: "Forgetting Heritage Languages",
+            details: [
+              "Many Marines grew up speaking Spanish, Tagalog, Vietnamese, or other languages at home",
+              "Even if you never studied it formally, you may have 'Limited Working' proficiency worth reporting",
+            ],
+          },
+          {
+            step: "Not Knowing DLPT Availability",
+            details: [
+              "Before assuming you can't get tested, check with your Education Center or S-3",
+              "Many common languages (Arabic, Chinese, Korean, Spanish, Russian, etc.) have DLPTs available",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What Happens After You Update",
+        steps: [
+          {
+            step: "Data Flows to MCTFS",
+            details: [
+              "Your self-professed language skills are recorded in the Marine Corps Total Force System",
+              "This data is visible to manpower planners at HQMC",
+            ],
+          },
+          {
+            step: "Potential DLPT Scheduling",
+            details: [
+              "If you report a skill in a 'strategic' language, your unit may be notified that you should be scheduled for official testing",
+            ],
+          },
+          {
+            step: "Assignment Consideration",
+            details: [
+              "Future monitors and assignment officers can see your language skills when making billet decisions",
+              "This can influence PCS orders, deployment taskings, and special duty assignments",
             ],
           },
         ],
@@ -7179,35 +7677,102 @@ const MOL_FUNCTIONAL_MODULES = {
   },
   "mol-personnel-accountability": {
     title: "Personnel Accountability (PA)",
-    description: "The Personnel Accountability (PA) module enables Marines to self-report their status during disaster declarations. All DoD-affiliated personnel working or residing in a declared disaster area must check-in physically, telephonically, or electronically at the first available opportunity.",
-    capabilities: ["Self-report disaster status", "Report dependent status", "Track subordinate accountability", "Generate unit accountability reports"],
+    description: "When disaster strikes—hurricanes, earthquakes, wildfires, or other emergencies—the Marine Corps needs to know where you are and whether you and your family are safe. This page is how you 'check in' electronically and let your command know your status. For leaders, this is how you track your Marines and report to higher headquarters.",
+    capabilities: ["Self-report disaster status", "Report dependent status", "Track subordinate accountability", "Generate unit accountability reports", "Support HQMC disaster response", "Enable search and rescue prioritization"],
     userTypes: ["All Marines", "Leaders", "Administrators", "Commanders"],
     guide: [
       {
-        title: "Individual Marine Requirements",
+        title: "Why This Matters",
         steps: [
           {
-            step: "Maintain Accurate Contact Information",
+            step: "Life Safety",
             details: [
-              "Update your personal cell phone, work phone, and residential address in the Personal Info section of MOL",
-              "Maintain current contact information for your family members and dependents",
-              "Perform a 'self-audit' of your data whenever you change duty stations or work assignments",
+              "In a disaster, the Marine Corps needs to know if you are injured, missing, or safe",
+              "Your status directly affects search and rescue resource allocation",
+              "If you don't check in, you may be listed as 'Unaccounted' which triggers emergency response protocols",
             ],
           },
           {
-            step: "Mandatory Check-In Procedures",
+            step: "Family Accountability",
             details: [
-              "When a disaster is declared, you must check-in at the first available opportunity",
-              "Methods: Physical (report to unit), Telephonic (call chain of command), or Electronic (via MOL)",
-              "Log into MOL at https://mol.tfs.usmc.mil/ and access the Personnel Accountability module",
+              "The system also tracks your dependents—spouse and children",
+              "If you are deployed and your family is in a disaster area, your command needs to know their status",
+              "This helps the Marine Corps provide family assistance and coordinate evacuations",
             ],
           },
           {
-            step: "Using the PA Module",
+            step: "Mission Readiness",
             details: [
-              "Self-report your status (e.g., 'Accounted For', 'Injured', or 'Evacuated')",
-              "Report the status of your dependents within the same module",
-              "If unable to access MOL, use your backup communication plan to reach your leader",
+              "Commanders need accurate personnel counts to determine unit readiness",
+              "This affects recall operations and mobilization planning",
+              "Higher headquarters (HQMC) uses this data to coordinate DoD-wide response efforts",
+            ],
+          },
+        ],
+      },
+      {
+        title: "How to Check In (Individual Marines)",
+        steps: [
+          {
+            step: "Step 1: Access MOL",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personnel Accountability (PA) module",
+              "During active disaster declarations, you may see a prompt immediately upon login",
+            ],
+          },
+          {
+            step: "Step 2: Report Your Status",
+            details: [
+              "Select your current status from the available options:",
+              "• Accounted For - You are safe and uninjured",
+              "• Injured - You have sustained injuries (triggers additional follow-up)",
+              "• Evacuated - You have left the disaster area",
+              "• Sheltering in Place - You are safe but remaining in the area",
+            ],
+          },
+          {
+            step: "Step 3: Report Dependent Status",
+            details: [
+              "If you have dependents (spouse, children), report their status as well",
+              "Even if they are not with you, indicate their current situation",
+              "If you cannot reach them, report 'Unable to Contact'",
+            ],
+          },
+          {
+            step: "Step 4: Provide Contact Information",
+            details: [
+              "Confirm or update your current phone number where you can be reached",
+              "Provide your temporary location if you have evacuated",
+              "This helps your command contact you for follow-up",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Backup Methods (If MOL is Unavailable)",
+        steps: [
+          {
+            step: "Phone Tree",
+            details: [
+              "If you cannot access MOL, call your immediate supervisor",
+              "If they don't answer, proceed up the chain of command",
+              "Your command should have an offline recall roster with multiple contact methods",
+            ],
+          },
+          {
+            step: "HQMC Hotline",
+            details: [
+              "During major disasters, HQMC activates a toll-free accountability hotline",
+              "Listen for announcements via official Marine Corps channels",
+              "This is a backup if local communications are down",
+            ],
+          },
+          {
+            step: "Physical Muster",
+            details: [
+              "Report to your unit's designated rally point if possible",
+              "In-person accountability overrides electronic check-in",
             ],
           },
         ],
@@ -7216,26 +7781,28 @@ const MOL_FUNCTIONAL_MODULES = {
         title: "Leader Responsibilities",
         steps: [
           {
-            step: "Preparation and Training",
+            step: "Preparation Before Disasters",
             details: [
-              "Verify all subordinates have an active MOL account with Email Password Reset configured",
-              "Direct Marines to conduct a 'self-audit' of their contact information",
-              "Maintain an offline roster with phone numbers and secondary emails",
+              "Verify all subordinates have active MOL accounts with Email Password Reset configured",
+              "Direct Marines to conduct a 'self-audit' of their contact information quarterly",
+              "Maintain an offline roster with personal cell phones, home addresses, and emergency contacts",
+              "Conduct periodic accountability drills to test recall procedures",
             ],
           },
           {
             step: "Active Accountability Monitoring",
             details: [
               "Access the PA module to view real-time list of who has self-reported",
-              "Focus efforts on those who have not checked in electronically",
-              "Contact missing personnel via work phone, personal phone, email, or emergency contacts",
+              "Focus contact efforts on Marines who have not checked in electronically",
+              "Use work phone, personal phone, email, text message, and emergency contacts",
+              "Document all attempts to reach 'Unaccounted' personnel",
             ],
           },
           {
-            step: "Reporting and Assistance",
+            step: "Updating Status for Others",
             details: [
-              "Update status in PA module for Marines you contact verbally or telephonically",
-              "Account for the status of Marines' family members",
+              "If you contact a Marine by phone, you can update their status in the PA module",
+              "Include notes about their situation and location",
               "Escalate 'Unaccounted For' personnel to Command Admin or Commander",
             ],
           },
@@ -7245,18 +7812,19 @@ const MOL_FUNCTIONAL_MODULES = {
         title: "Admin Responsibilities",
         steps: [
           {
-            step: "System Hierarchy Management",
+            step: "System Configuration",
             details: [
               "Ensure unit organizational hierarchy (Battalion > Company > Platoon > Work Section) is correctly mapped in MOL",
               "Grant correct 'Execution' or 'Delegate' authorities to leaders for PA module access",
+              "Verify that all Marines are correctly assigned to the right organizational unit",
             ],
           },
           {
-            step: "Data Consolidation and Reporting",
+            step: "Reporting to Higher Headquarters",
             details: [
               "Generate master reports showing percentage of command accounted for",
-              "Act as primary point of contact for reporting to Headquarters Marine Corps (HQMC)",
-              "Assist Marines with Trouble Tickets or EPARs for record corrections",
+              "Act as primary point of contact for reporting to HQMC Personnel Accountability cell",
+              "Submit accountability reports on the required timeline (usually every 4-6 hours during active events)",
             ],
           },
         ],
@@ -7267,16 +7835,78 @@ const MOL_FUNCTIONAL_MODULES = {
           {
             step: "Establishing Command Intent",
             details: [
-              "Establish clear SOP for accountability (e.g., 'All Marines must check into MOL within 2 hours of a disaster declaration')",
-              "Conduct regular accountability drills to ensure unit readiness",
+              "Establish clear SOP for accountability (e.g., 'All Marines must check into MOL within 4 hours of a disaster declaration')",
+              "Define thresholds for escalating 'Unaccounted' status to higher headquarters",
+              "Ensure family readiness programs include disaster preparedness briefings",
             ],
           },
           {
-            step: "Decision Making and Verification",
+            step: "Decision Making",
             details: [
               "Review data from Admin and Leaders to assess unit readiness and disaster impact",
               "Decide when to deploy Search and Recovery efforts for 'Unaccounted' personnel",
+              "Coordinate with installation resources (PMO, Medical, Chaplain) for affected Marines",
               "Provide final verification to higher headquarters that accountability is complete",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Not Keeping MOL Contact Info Current",
+            details: [
+              "If your phone number or address is outdated, your command cannot reach you",
+              "Update your Personal Contact Information in MOL proactively, not during a disaster",
+            ],
+          },
+          {
+            step: "Assuming Someone Else Will Report for You",
+            details: [
+              "You are responsible for your own accountability",
+              "Don't assume your spouse, roommate, or friend will notify your command",
+            ],
+          },
+          {
+            step: "Forgetting Dependents",
+            details: [
+              "Your family members are part of the Marine Corps family",
+              "If they are in a disaster area, report their status even if you are not affected",
+            ],
+          },
+          {
+            step: "Waiting for Perfect Information",
+            details: [
+              "Report your status as soon as possible, even if incomplete",
+              "You can update your status as the situation evolves",
+              "'Something' is better than nothing—silence is interpreted as 'Unaccounted'",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What Happens After You Check In",
+        steps: [
+          {
+            step: "Your Status is Visible to Your Chain of Command",
+            details: [
+              "Your leader, Admin, and Commander can see that you have reported",
+              "This removes you from the 'Unaccounted' list and allows them to focus on others",
+            ],
+          },
+          {
+            step: "Follow-Up if Needed",
+            details: [
+              "If you reported 'Injured' or 'Evacuated,' expect a follow-up call from your command",
+              "They may provide assistance resources or coordinate support",
+            ],
+          },
+          {
+            step: "Update as Situation Changes",
+            details: [
+              "If your status changes (e.g., you evacuate after initially sheltering), update your report",
+              "Keep your command informed throughout the disaster event",
             ],
           },
         ],
