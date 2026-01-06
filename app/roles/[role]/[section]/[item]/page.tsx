@@ -3211,7 +3211,7 @@ const MOL_FUNCTIONAL_MODULES = {
   },
   "mol-bir": {
     title: "Basic Individual Record (BIR)",
-    description: "The Basic Individual Record is the 'snapshot' of who you are as a Marine. It combines your service dates, rank, MOS, contract status, and dependent information into one consolidated view. This is often the first document staff and boards look at when evaluating you, so accuracy is critical.",
+    description: "The BIR is arguably the most important page in MOL—the 'Master Cheat Sheet' of your entire Marine Corps career. Think of it as your digital DNA. It pulls data directly from the Central Master File (CMF), combining your service dates, rank, MOS, contract status, and dependent information into one consolidated view. This is often the first document staff and boards look at when evaluating you, so accuracy is critical.",
     capabilities: ["View service data", "View contract information", "View dependent data", "View administrative information", "Print BIR for records", "Verify key dates", "Check MOS assignments"],
     userTypes: ["All Marines"],
     guide: [
@@ -3254,10 +3254,19 @@ const MOL_FUNCTIONAL_MODULES = {
               "Log in to MOL at https://mol.tfs.usmc.mil/",
               "Navigate to Personal Info > Basic Individual Record",
               "The BIR loads as a single consolidated view",
+              "Note: The 'Printer Friendly' view opens in a new window—ensure pop-ups are allowed in your browser",
             ],
           },
           {
-            step: "Step 2: Verify Service Data",
+            step: "Step 2: Review the Three Main Pillars",
+            details: [
+              "Service Information: Your rank, MOS, PEBD, EAS, and critical service dates",
+              "Contract Information: Your current enlistment/reenlistment details",
+              "Dependent Information: Spouse, children, and anyone else the Marine Corps recognizes as your dependent",
+            ],
+          },
+          {
+            step: "Step 3: Verify Service Data",
             details: [
               "Check your current rank and date of rank are correct",
               "Verify your PMOS (Primary MOS) is accurate",
@@ -3267,7 +3276,7 @@ const MOL_FUNCTIONAL_MODULES = {
             ],
           },
           {
-            step: "Step 3: Review Personal Data",
+            step: "Step 4: Review Personal Data",
             details: [
               "Confirm name spelling matches your ID card exactly",
               "Verify blood type is recorded correctly (important for emergencies)",
@@ -3276,7 +3285,7 @@ const MOL_FUNCTIONAL_MODULES = {
             ],
           },
           {
-            step: "Step 4: Check Dependent Information",
+            step: "Step 5: Check Dependent Information",
             details: [
               "Verify all dependents are listed with correct names and dates of birth",
               "Confirm dependency status (spouse, child, etc.) is correct",
@@ -3284,7 +3293,7 @@ const MOL_FUNCTIONAL_MODULES = {
             ],
           },
           {
-            step: "Step 5: Print for Reference",
+            step: "Step 6: Print for Reference",
             details: [
               "Print or save the BIR as a PDF",
               "Keep a copy in your personal records",
@@ -3305,11 +3314,27 @@ const MOL_FUNCTIONAL_MODULES = {
             ],
           },
           {
+            step: "The PEBD vs. AFADBD Confusion",
+            details: [
+              "Marines often confuse their PEBD (Pay Entry Base Date—when you signed the contract) with their AFADBD (Active Federal Active Duty Begin Date—the day you actually left for boot camp)",
+              "For most Marines, these are different dates",
+              "PEBD drives pay longevity; AFADBD is used in other calculations",
+            ],
+          },
+          {
             step: "Outdated Marital Status",
             details: [
               "Divorce or marriage not updated can cause BAH issues",
               "You could be overpaid (and owe money back) or underpaid",
               "Update within 30 days of any change with proper documentation",
+            ],
+          },
+          {
+            step: "Outdated Dependents",
+            details: [
+              "If you get divorced or have a child and don't update this record, your pay will be incorrect",
+              "This usually results in the Marine Corps taking money back from you later (a 'debt to the government')",
+              "Always update dependent information within 30 days of any life event",
             ],
           },
           {
@@ -3356,7 +3381,7 @@ const MOL_FUNCTIONAL_MODULES = {
   },
   "mol-btr": {
     title: "Basic Training Record (BTR)",
-    description: "The Basic Training Record is your complete professional development history. It documents every school, course, and qualification you have earned from boot camp through your current rank. This record directly affects your competitiveness for promotion, special duty assignments, and reenlistment.",
+    description: "The Basic Training Record is your complete professional development history and the engine behind your JEPES (Junior Enlisted Performance Evaluation System) Mental Agility score for E-1 to E-4. It documents every school, course, and qualification you have earned from boot camp through your current rank. This record directly affects your competitiveness for promotion, special duty assignments, and reenlistment.",
     capabilities: ["View training history", "View education records", "View MOS qualifications", "View PME completion", "Print training record", "Verify school completions", "Check language scores"],
     userTypes: ["All Marines"],
     guide: [
@@ -3449,6 +3474,30 @@ const MOL_FUNCTIONAL_MODULES = {
               "MarineNet courses may not automatically post to your BTR",
               "Resident PME from schoolhouses should post within 30-60 days",
               "If missing after 90 days, submit a correction request",
+            ],
+          },
+          {
+            step: "MCI/MarineNet Lag",
+            details: [
+              "MCIs (Marine Corps Institute courses) and MarineNet completions can take weeks to appear in your BTR",
+              "If you completed an online course and don't see it after 30 days, contact S-3 or the MarineNet help desk",
+              "Keep your course completion certificates as proof until the entry appears",
+            ],
+          },
+          {
+            step: "Duplicate Entries",
+            details: [
+              "Sometimes schools or courses appear twice on your BTR",
+              "This can happen when both the schoolhouse and your S-3 both enter the same course",
+              "Duplicate entries can confuse boards and auditors—report them to S-3 for correction",
+            ],
+          },
+          {
+            step: "Rifle Range 'Ghost Scores'",
+            details: [
+              "Occasionally, rifle qualification scores from the range don't transmit correctly to MCTFS",
+              "You may see an old score, no score, or the wrong qualification (Marksman vs. Expert)",
+              "If your range score is missing or wrong, bring your scorebook to S-3 for manual entry",
             ],
           },
           {
@@ -6149,16 +6198,65 @@ const MOL_FUNCTIONAL_MODULES = {
   },
   "mol-career-retirement-cert": {
     title: "Career Retirement Certification",
-    description: "The Career Retirement Certification allows eligible reserve Marines to certify their Career Retirement Credit Report (CRCR) for retirement point accounting purposes.",
+    description: "The Career Retirement Certification allows eligible reserve Marines to certify their Career Retirement Credit Report (CRCR) for retirement point accounting purposes. This is your official statement that your retirement points are accurate—certifying with errors can cause major problems when you actually try to retire.",
     capabilities: ["View CRCR", "Certify retirement credits", "Print certification", "Track retirement eligibility"],
     userTypes: ["Reserve Marines", "Individual Reserve Component Members"],
     guide: [
       {
-        title: "Accessing CRCR",
+        title: "Why This Matters",
         steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Career Retirement Credit Report" },
-          { step: "Review your retirement point summary" },
+          {
+            step: "Your Retirement Depends on It",
+            details: [
+              "You need 20 'good years' (50+ points each) to qualify for reserve retirement",
+              "Once you certify a year, you are attesting that the points are accurate",
+              "Errors discovered later are much harder to fix after certification",
+            ],
+          },
+          {
+            step: "The 50-Point Rule",
+            details: [
+              "Each anniversary year must have at least 50 points to count as a 'good year'",
+              "15 membership points are automatic just for being in the Selected Reserve",
+              "The remaining 35+ points must come from drills, AT, schools, or correspondence courses",
+            ],
+          },
+        ],
+      },
+      {
+        title: "How to Audit Before Certifying",
+        steps: [
+          {
+            step: "Step 1: Access the CRCR",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Career Retirement Credit Report",
+            ],
+          },
+          {
+            step: "Step 2: Review Each Anniversary Year",
+            details: [
+              "Your anniversary year runs from your AFABD (Active Federal Active Duty Begin Date), NOT the calendar year",
+              "Check that each year shows at least 50 points",
+              "Look for any years with 0 or very low points—these may indicate missing data",
+            ],
+          },
+          {
+            step: "Step 3: Cross-Reference with Drill Attendance",
+            details: [
+              "Compare your point totals to your actual drill attendance records",
+              "If you attended AT (Annual Training) that year, verify the points are credited",
+              "Check that any schools or correspondence courses show up",
+            ],
+          },
+          {
+            step: "Step 4: Verify Dates and Totals",
+            details: [
+              "Ensure the 'Current Anniversary Date' is correct (not zeros or expired)",
+              "Confirm the 'Date Entered Armed Forces' (DEAF) is NOT later than your AFABD",
+              "If 'Member Points' shows more than 15, there may be an error",
+            ],
+          },
         ],
       },
       {
@@ -6198,6 +6296,35 @@ const MOL_FUNCTIONAL_MODULES = {
               "Membership Points - 15 points per year for participation",
               "Minimum 50 points per year for a 'good year'",
               "20 good years required for reserve retirement",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "Blind Certification",
+            details: [
+              "NEVER certify your CRCR without thoroughly reviewing it first",
+              "Once certified, you are stating that the data is accurate",
+              "If errors are found after certification, the correction process is much more difficult",
+            ],
+          },
+          {
+            step: "Missing a 'Good Year'",
+            details: [
+              "If a year shows fewer than 50 points, that year does NOT count toward your 20-year requirement",
+              "Before certifying, make sure any missing drills, AT, or schools are added",
+              "It is much easier to fix a 'bad year' before certification than after",
+            ],
+          },
+          {
+            step: "Confusing Anniversary Year with Calendar Year",
+            details: [
+              "Your anniversary year runs from your AFABD, not January 1st",
+              "Points earned in December might count toward a different anniversary year than you expect",
+              "Always check the date ranges for each year before certifying",
             ],
           },
         ],
