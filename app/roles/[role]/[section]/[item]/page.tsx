@@ -2812,6 +2812,65 @@ const MOL_FUNCTIONAL_MODULES = {
     description: "Provides individual members and authorized unit leaders the ability to submit system issues to their jurisdictional Manpower Information System Support Office (MISSO). Tickets can be initiated by the member or unit leader within MOL. Tickets can be initiated by Installation Personnel Admin Centers or stand-alone Reporting Units through the Unit Diary / Marine Integrated Personnel Service (UD/MIPS).",
     capabilities: ["Submit system issues", "Route to jurisdictional MISSO", "Initiate from MOL", "Initiate from UD/MIPS", "Track ticket status"],
     userTypes: ["Individual Members", "Unit Leaders", "IPACs", "Reporting Units"],
+    guide: [
+      {
+        title: "Access and Navigation",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Click the \"Trouble Tickets\" menu item on the main navigation bar" },
+          { step: "Select \"New Trouble Ticket\" at the top of the screen" },
+        ],
+      },
+      {
+        title: "Define the Issue",
+        steps: [
+          {
+            step: "Verify your information",
+            details: ["The page will prepopulate your basic details", "Ensure your Work Email and Work Phone are correct"],
+          },
+          {
+            step: "Select Application",
+            details: ["Click the \"Application\" dropdown menu", "Choose the relevant category (e.g., Marine Online, COGNOS, MCTFS)"],
+          },
+          { step: "Select Subject from the next dropdown menu after picking an application" },
+          {
+            step: "Check Instructions",
+            details: ["If applicable, an \"Instructions and Forms\" tab will appear", "Review any special requirements for your selected category"],
+          },
+        ],
+      },
+      {
+        title: "Add Details and Documentation",
+        steps: [
+          {
+            step: "Provide Notes",
+            details: ["Use the \"Notes\" tab to describe the requested action and any source documentation", "Click \"Add Note\" when finished"],
+          },
+          {
+            step: "Upload Files",
+            details: ["Use the \"Files\" tab to upload supporting documentation", "Add a description for each file if uploading more than one", "Click \"Add File\" when done"],
+          },
+          { step: "Review History - use the \"History\" tab to view all recorded actions on the ticket" },
+        ],
+      },
+      {
+        title: "Submission",
+        steps: [
+          { step: "Double-check your work and click \"Submit Ticket\"" },
+          {
+            step: "Draft option",
+            details: ["If you are not ready to submit, click \"Save Changes\" to return to the ticket later"],
+          },
+        ],
+      },
+      {
+        title: "What Happens After Submission",
+        steps: [
+          { step: "Your ticket will be reviewed by Command personnel in your unit" },
+          { step: "Command personnel will determine the necessary action and route to MISSO if needed" },
+        ],
+      },
+    ],
   },
   "mol-umsr": {
     title: "Unit Management Status Report (UMSR)",
