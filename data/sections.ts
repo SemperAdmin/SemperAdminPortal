@@ -528,11 +528,6 @@ export const SECTIONS: Record<string, Section> = {
           { title: "Civilian Employment Information (CEI)", slug: "mol-cei", desc: "View and update civilian employment data for reservists" },
           { title: "Chronological Record (CHRO)", slug: "mol-chro", desc: "View timeline of significant career events" },
           { title: "Education", slug: "mol-education", desc: "View civilian and military education records" },
-        ],
-      },
-      {
-        title: "Personal Reports (continued)",
-        items: [
           { title: "Family Care Plan (FCP)", slug: "mol-fcp", desc: "View dependent care arrangements" },
           { title: "Individual Medical Readiness (IMR)", slug: "mol-imr", desc: "View medical readiness status" },
           { title: "Pay and Leave Summary", slug: "mol-pay-leave", desc: "View current pay and leave balances" },
