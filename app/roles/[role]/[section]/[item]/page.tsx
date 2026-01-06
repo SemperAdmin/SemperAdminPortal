@@ -4559,7 +4559,7 @@ const MOL_FUNCTIONAL_MODULES = {
   "mol-red": {
     title: "Record of Emergency Data (RED)",
     description: "The most important administrative document you will ever sign. Also known as the DD Form 93, this is the official 'In Case of Emergency' document the Marine Corps uses to notify your family if something happens to you. If you are injured or killed, the Marine Corps uses this exact page to find your next of kin.",
-    capabilities: ["View emergency contacts", "Update beneficiaries", "Certify RED", "Update next of kin", "Manage death gratuity", "Designate PADD", "Manage family addresses", "Update spouse preferred language", "Support NEO planning"],
+    capabilities: ["View emergency contacts", "Update beneficiaries", "Certify RED", "Update next of kin", "Manage death gratuity", "Designate PADD", "Manage family addresses", "Update spouse preferred language", "Support NEO planning", "Manage parent information", "Designate pay arrears beneficiaries"],
     userTypes: ["All Marines"],
     guide: [
       {
@@ -4873,6 +4873,177 @@ const MOL_FUNCTIONAL_MODULES = {
               "Go to milConnect and check your SGLI Online Enrollment System (SOES)",
               "Ensure your life insurance beneficiaries match your current family status",
               "Your SGLV 8286 should align with your RED designations",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Spouse Preferred Language",
+        steps: [
+          {
+            step: "Why This Setting Matters",
+            details: [
+              "If a Casualty Assistance Calls Officer (CACO) is dispatched to your home, the Marine Corps uses this data to ensure they have a translator or can communicate in your spouse's primary language",
+              "During natural disasters or NEO evacuations, your command needs to provide instructions your spouse can understand immediately",
+              "This helps the Marine Corps honor your family's background by ensuring they aren't left in the dark due to a language barrier",
+            ],
+          },
+          {
+            step: "How to Set the Language",
+            details: [
+              "On the RED Family Information page, click 'Add Spouse Preferred Language' or 'Edit Spouse Preferred Language'",
+              "Select the correct language from the Preferred Language dropdown menu",
+              "Click 'Submit Changes'",
+              "Review the selection and click 'Apply Changes' to save",
+              "If you made a mistake, click 'Cancel' to return without saving",
+            ],
+          },
+          {
+            step: "Spouse Language Pitfalls",
+            details: [
+              "Many Marines leave this blank assuming English is 'fine' - if your spouse is more comfortable in their native tongue for complex or emotional matters, list that language",
+              "After applying changes, the language appears in bold (Pending) for 24-48 hours while MCTFS processes",
+              "This is for your spouse - your own language skills are tracked in Self-Professed Language Skills or Operational Cultural Information",
+            ],
+          },
+          {
+            step: "After Setting the Language",
+            details: [
+              "Once bold text turns normal, your spouse's preferred language is officially part of your certified RED",
+              "If your spouse's language is rare, mention this to your Unit's Family Readiness Officer (FRO)",
+              "Check if you have also listed that language in your Operational Cultural Information Report if you speak it",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Parents Information",
+        steps: [
+          {
+            step: "Why Parent Data Matters",
+            details: [
+              "While a spouse is typically the Primary Next of Kin (PNOK), parents are Secondary Next of Kin and still entitled to official notification",
+              "For deceased or missing Marines, a uniformed CACO is dispatched to the parents' address",
+              "If the address is outdated, the Marine Corps may be forced to search for them or deliver news telephonically - not the standard of care your family deserves",
+              "Even if married, your parents are often assigned their own CACO if they live in a different state",
+            ],
+          },
+          {
+            step: "Parent Status Indicators",
+            details: [
+              "Normal Text: Active record",
+              "Bold Text: Recent change (Pending)",
+              "'D' Indicator: Parent is officially listed as deceased in MCTFS",
+            ],
+          },
+          {
+            step: "Managing Parent Records",
+            details: [
+              "Click 'Edit' next to a parent's name to update their physical address or phone number",
+              "Click 'Remove This Address' if a parent has moved and you don't have their new location yet",
+              "Removing the address does not remove the parent from your record - it only clears the address field",
+              "Click 'Cancel Removal' if you accidentally marked an address for removal",
+            ],
+          },
+          {
+            step: "Updating a Deceased Parent",
+            details: [
+              "Check the 'Deceased' box next to the parent's name",
+              "Click 'Submit Changes' - the system automatically removes any existing address records",
+              "This prevents the Marine Corps from attempting to locate them during a crisis",
+            ],
+          },
+          {
+            step: "U.S. Parent Address",
+            details: [
+              "Click 'Reformat This Address' if the boxes don't match a standard U.S. address format",
+              "Type the street address - do not use any punctuation (commas, periods, or dashes)",
+              "If using a PO Box or Rural Route, you must also provide physical directions on the Next of Kin Directions page",
+              "Type the city, two-letter state initials, and 5 or 9-digit Zip Code",
+            ],
+          },
+          {
+            step: "International Parent Address",
+            details: [
+              "Click 'Reformat This Address' to configure boxes for foreign (non APO/FPO) listing",
+              "Type the full address as it appears in that country - no punctuation",
+            ],
+          },
+          {
+            step: "Parent Information Pitfalls",
+            details: [
+              "If you are estranged or don't know a parent's location, type 'Unknown' in the address field - do not leave it blank",
+              "Ensure you distinguish between Parent One, Parent Two, and Step-Parents - CACO prioritizes biological/adoptive parents unless you specify otherwise in the Remarks section",
+              "If a parent is in extremely poor health (dementia, heart condition), use the 'Do Not Notify' section to prevent stressful notification",
+              "MCTFS often rejects entries with punctuation - type '123 Main St Apt 4' not '123 Main St., Apt. #4'",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Pay Arrears (Unpaid Pay and Allowances)",
+        steps: [
+          {
+            step: "What Pay Arrears Includes",
+            details: [
+              "Unpaid Salary: Any base pay earned but not yet deposited",
+              "Unused Leave: Payment for accrued leave days (up to 60 days)",
+              "Allowances: Unpaid BAH, BAS, or specialized pays (Jump Pay, Sea Pay, etc.)",
+              "Travel Reimbursements: Any pending travel claims from PCS or TAD",
+              "This is NOT your life insurance (SGLI) - that is handled separately via milConnect",
+            ],
+          },
+          {
+            step: "The 100% Rule",
+            details: [
+              "The total of all beneficiaries must equal exactly 100%",
+              "If you have one person at 50% and no one else listed, the remaining 50% is distributed by law, not your preference",
+              "You cannot save a new beneficiary if your current list already totals 100%",
+              "You must first edit an existing person (e.g., change 100% to 50%) to free up percentage points",
+            ],
+          },
+          {
+            step: "Adding or Editing a Beneficiary",
+            details: [
+              "Locate the 'Beneficiary(ies) Unpaid Pay/Allowances' section on your RED",
+              "Click 'Add New Pay Arrears Record'",
+              "Enter the beneficiary's full legal name, relationship, address, and percentage",
+              "Click 'Submit' and then 'Apply Changes'",
+            ],
+          },
+          {
+            step: "Address Formatting (No Punctuation Rule)",
+            details: [
+              "Type '123 Main St Apt 4' instead of '123 Main St., Apt. #4'",
+              "Use two-letter state initials (CA, NC)",
+              "If using a PO Box, you must also provide physical directions on the Next of Kin Directions page",
+              "For foreign addresses, click 'Reformat This Address' and type without punctuation",
+            ],
+          },
+          {
+            step: "Removing or Canceling",
+            details: [
+              "Click 'Remove' next to a beneficiary - the name turns red with strikethrough",
+              "Click 'Cancel Removal' before the transaction processes to restore the record",
+              "Click 'Remove This Address' to clear an address while keeping the beneficiary valid",
+            ],
+          },
+          {
+            step: "Pay Arrears Pitfalls",
+            details: [
+              "If your beneficiary moves and you don't update, the check is mailed to the old address - significant delays for your family",
+              "Don't confuse Pay Arrears with Death Gratuity ($100,000) or SGLI (Life Insurance) - these are three separate systems",
+              "Bold text means pending (24-48 hours), red text means it's about to be deleted",
+              "If your Pay Arrears beneficiary is the same as your PADD, ensure addresses match exactly in both sections",
+            ],
+          },
+          {
+            step: "After Updating Pay Arrears",
+            details: [
+              "Verify your percentages add up to exactly 100% on the main RED page",
+              "Check Death Gratuity designation for the larger $100,000 sum",
+              "Audit annually - check this page every time you have a life event (marriage, birth, divorce)",
+              "Verify on your Basic Individual Record (BIR) in two days that changes are reflected",
             ],
           },
         ],
