@@ -29,22 +29,30 @@ function ItemCard({ item, icon, stack }: { item: CatalogItem; icon: ReactNode; s
               </svg>
             )}
           </span>
+          {item.description && (
+            <p className="text-xs text-zinc-600 dark:text-zinc-400">{item.description}</p>
+          )}
         </div>
       ) : (
-        <div className="flex items-center gap-2">
-          <span className="text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{icon}</span>
-          <span className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-            {item.title}
-            {item.href && item.href.toLowerCase().includes("sharepoint") && (
-              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" className="ml-1 inline align-middle opacity-80">
-                <rect x="3" y="5" width="18" height="14" rx="2"/>
-                <rect x="8" y="9" width="5" height="6" rx="1"/>
-                <path d="M4 9h3"/>
-                <path d="M4 12h3"/>
-                <path d="M4 15h3"/>
-              </svg>
-            )}
-          </span>
+        <div>
+          <div className="flex items-center gap-2">
+            <span className="text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{icon}</span>
+            <span className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+              {item.title}
+              {item.href && item.href.toLowerCase().includes("sharepoint") && (
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" className="ml-1 inline align-middle opacity-80">
+                  <rect x="3" y="5" width="18" height="14" rx="2"/>
+                  <rect x="8" y="9" width="5" height="6" rx="1"/>
+                  <path d="M4 9h3"/>
+                  <path d="M4 12h3"/>
+                  <path d="M4 15h3"/>
+                </svg>
+              )}
+            </span>
+          </div>
+          {item.description && (
+            <p className="mt-1 ml-6 text-xs text-zinc-600 dark:text-zinc-400">{item.description}</p>
+          )}
         </div>
       )}
       {item.roles && (
