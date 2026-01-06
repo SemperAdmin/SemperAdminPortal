@@ -4148,6 +4148,134 @@ const MOL_FUNCTIONAL_MODULES = {
       },
     ],
   },
+  "mol-grade-report": {
+    title: "Grade Report",
+    description: "Your official 'promotion eligibility' sheet. While other pages show what you've done, this page shows where you stand in the eyes of the Marine Corps promotion system. It tracks Time in Grade (TIG), Time in Service (TIS), and whether you've completed your required PME. If this page has an error—like a 'Promotion Restriction' code that shouldn't be there—you will be passed over even if your JEPES score is high.",
+    capabilities: ["View promotion eligibility", "Check TIG/TIS status", "Verify PME completion", "View restriction codes", "Check selection status", "Print grade report"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Why This Matters",
+        steps: [
+          {
+            step: "The Final Word on Promotion",
+            details: [
+              "This report is the final word on whether or not you are eligible to pick up the next rank",
+              "Even if you are the best Marine in the shop, an error here can block your promotion",
+              "Boards and promotion systems pull data directly from this report",
+            ],
+          },
+          {
+            step: "What It Tracks",
+            details: [
+              "Time in Grade (TIG): How long you have been at your current rank",
+              "Time in Service (TIS): Your total time in the Marine Corps",
+              "PME Completion: Whether you have finished required Professional Military Education",
+              "Restriction Codes: Any administrative holds that block promotion",
+            ],
+          },
+        ],
+      },
+      {
+        title: "How to Navigate the Grade Report",
+        steps: [
+          {
+            step: "Step 1: Access the Report",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Grade Report",
+            ],
+          },
+          {
+            step: "Step 2: Verify Key Data Elements",
+            details: [
+              "Current Grade/Date of Rank: Ensure your actual rank and the day you pinned it on match the system",
+              "Promotion Eligibility: Look for your 'Eligibility Date' - the earliest date the system says you can move up",
+              "Selection Status: If you are E-5 or above, this will show if you have been 'Selected' by a board",
+              "Mandatory Requirements: Check the section for 'PME Completion' - it should say YES for your current grade",
+            ],
+          },
+          {
+            step: "Step 3: Check for Restrictions",
+            details: [
+              "Look for any 'Non-recommendation' or 'Restriction' codes",
+              "If you aren't on legal hold or under a weight control program, this section should be clear",
+              "Common restriction codes: Legal Hold, BCP (Body Composition Program), Medical Hold",
+            ],
+          },
+          {
+            step: "Step 4: Print/Save",
+            details: [
+              "Click 'Printer Friendly' - a new window opens with a clean, formatted document",
+              "Click 'Print' (or Save as PDF)",
+              "Click 'Close' to return to the standard Grade Report page",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls to Avoid",
+        steps: [
+          {
+            step: "The PME Gap",
+            details: [
+              "You finished the course on MarineNet, but the Grade Report still says NO for requirement completion",
+              "This usually means the data hasn't migrated from the Education folder to the Grade folder",
+              "It can take 48-72 hours for systems to sync - check back after a few days",
+            ],
+          },
+          {
+            step: "Incorrect TIG/TIS",
+            details: [
+              "If you had a 'broken service' period (left and came back) or a reduction in rank, these dates can get scrambled",
+              "Always verify your PEBD and Date of Rank are accurate",
+            ],
+          },
+          {
+            step: "Ignoring Restriction Codes",
+            details: [
+              "Sometimes a 'Pro-Pay' or 'Legal' restriction code stays on your record long after the issue is resolved",
+              "If you see a code you don't recognize, ask your S-1 immediately",
+              "These codes can silently block your promotion without you realizing it",
+            ],
+          },
+          {
+            step: "The Selection Link",
+            details: [
+              "For those waiting on board results, don't just look at the MOL homepage",
+              "The Grade Report is often the first place the 'Selected' status appears officially",
+            ],
+          },
+        ],
+      },
+      {
+        title: "What to Do After Review",
+        steps: [
+          {
+            step: "Fixing Eligibility",
+            details: [
+              "If you meet the score and PME but the report says 'Ineligible,' take a printout of this report and your BTR to your Company Clerk or S-1",
+              "They can investigate and submit corrections to MCTFS",
+            ],
+          },
+          {
+            step: "Monthly JEPES Cycle",
+            details: [
+              "For Sergeants and below, ensure this report is 'Green' before the cutoff date (usually the 20th of the month)",
+              "This ensures you are in the running for the next month's promotion",
+            ],
+          },
+          {
+            step: "Board Preparation",
+            details: [
+              "If you are E-5 or above, this report must be 100% accurate before your Digital Photo and OMPF are sent to the promotion board",
+              "Errors here will be seen by every board member reviewing your record",
+            ],
+          },
+        ],
+      },
+    ],
+  },
   "mol-imr": {
     title: "Individual Medical Readiness (IMR)",
     description: "Your 'medical scoreboard' that determines if you are deployable or if you'll be spending your morning at the BAS catching up on shots. Medical readiness is a go/no-go criteria for deployments, schools, and even leave in some units. This page helps you track your PHA, dental class, and immunizations so you can fix issues BEFORE your name shows up on the 'Hit List' at morning formation.",
@@ -11638,6 +11766,7 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "mol-chro": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-chro"]} references={MOL_DATA.references} />,
     "mol-education": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-education"]} references={MOL_DATA.references} />,
     "mol-fcp": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-fcp"]} references={MOL_DATA.references} />,
+    "mol-grade-report": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-grade-report"]} references={MOL_DATA.references} />,
     "mol-imr": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-imr"]} references={MOL_DATA.references} />,
     "mol-pay-leave": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-pay-leave"]} references={MOL_DATA.references} />,
     "mol-pers-tempo": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-pers-tempo"]} references={MOL_DATA.references} />,
