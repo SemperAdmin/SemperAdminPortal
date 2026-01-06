@@ -531,6 +531,8 @@ export const SECTIONS: Record<string, Section> = {
       {
         title: "Administrative Actions",
         items: [
+          { title: "Submit an EPAR", slug: "mol-epar", desc: "Submit personnel and administrative requests through your chain of command" },
+          { title: "Submit a Trouble Ticket", slug: "mol-trouble-ticket-system", desc: "Report system issues or request access through the Trouble Ticket System" },
           { title: "Dependency Updates", slug: "mol-dependency-updates", desc: "Add, remove, or update dependent information" },
           { title: "Address Changes", slug: "mol-address-changes", desc: "Update your home of record and mailing address" },
         ],
