@@ -4559,7 +4559,7 @@ const MOL_FUNCTIONAL_MODULES = {
   "mol-red": {
     title: "Record of Emergency Data (RED)",
     description: "The most important administrative document you will ever sign. Also known as the DD Form 93, this is the official 'In Case of Emergency' document the Marine Corps uses to notify your family if something happens to you. If you are injured or killed, the Marine Corps uses this exact page to find your next of kin.",
-    capabilities: ["View emergency contacts", "Update beneficiaries", "Certify RED", "Update next of kin", "Manage death gratuity", "Designate PADD", "Manage family addresses", "Update spouse preferred language", "Support NEO planning", "Manage parent information", "Designate pay arrears beneficiaries", "Configure do not notify", "Track private insurance policies", "Provide NOK directions", "Set MIA notification contacts"],
+    capabilities: ["View emergency contacts", "Update beneficiaries", "Certify RED", "Update next of kin", "Manage death gratuity ($100K)", "Designate PADD", "Manage family addresses", "Update spouse preferred language", "Support NEO planning", "Manage parent information", "Designate pay arrears beneficiaries", "Configure do not notify", "Track private insurance policies", "Provide NOK directions", "Set MIA notification contacts", "Manage 100% rule distributions"],
     userTypes: ["All Marines"],
     guide: [
       {
@@ -5332,6 +5332,145 @@ const MOL_FUNCTIONAL_MODULES = {
               "Coordinate with your PADD - often the same person for both roles",
               "Review Pay Arrears section since pay continues during MIA status",
               "Verify on BTR in two business days that MIA section is populated correctly",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Death Gratuity Information ($100,000)",
+        steps: [
+          {
+            step: "Purpose of the Death Gratuity",
+            details: [
+              "A $100,000 tax-free payment made by DoD to your survivors within days of death",
+              "Unlike SGLI (which can take weeks), this is designed as immediate cash injection for your family",
+              "Covers travel for funeral, housing costs, and urgent expenses before other benefits kick in",
+              "By law, automatically directed to surviving spouse or children unless you designate Additional Beneficiaries",
+            ],
+          },
+          {
+            step: "Managing Death Gratuity Beneficiaries",
+            details: [
+              "Check the main RED page to see who is currently listed",
+              "You generally cannot edit a spouse's info here - that must be done via DEERS/IPAC",
+              "Click 'Add Additional Death Gratuity Record' to add beneficiaries",
+              "Provide full legal name, relationship, and specific percentage (e.g., 50% Mom, 50% Dad)",
+              "Click 'Edit' if an additional beneficiary has moved or changed phone number",
+              "Click 'Remove' to delete - turns red to show marked for deletion",
+              "Click 'Cancel Removal' if you made a mistake",
+            ],
+          },
+          {
+            step: "The 100% Rule and By-Law Distribution",
+            details: [
+              "Total percentages among additional beneficiaries must equal exactly 100%",
+              "If designations don't total 100%, system reverts remainder to 'By-Law' status",
+              "'By-Law' means government decides based on standard line of succession - not your choice",
+              "If you're married and designate anyone other than spouse, system triggers official notification to your command",
+              "Your CO will then be required to inform your spouse of your decision",
+              "You can list up to 10 additional beneficiaries",
+            ],
+          },
+          {
+            step: "Address and Phone Formatting",
+            details: [
+              "Use 'Reformat This Address' to switch between U.S. and Foreign layouts",
+              "Do not use periods or commas - type '123 Main St Apt 4' not '123 Main St., Apt. #4'",
+              "U.S.: Street, city, 2-letter state initials, Zip Code",
+              "Foreign: Type address as it appears locally, include Country Code and City Code for phone",
+              "Phone must be 24-hour contact - Area Code-Prefix-Suffix format for U.S.",
+            ],
+          },
+          {
+            step: "Death Gratuity Pitfalls",
+            details: [
+              "Don't confuse with SGLI - SGLI is up to $500,000 (you pay for it), Death Gratuity is flat $100,000 (government provides)",
+              "Updates appear in bold for 24-48 hours while MCTFS processes",
+              "If beneficiaries add up to 99%, the remaining 1% triggers By-Law distribution - complicates entire payout",
+              "For minor children, money may be held in trust or require legal guardian - delays 'immediate' nature",
+              "Outdated phone numbers mean money stays in government account instead of family's hands",
+              "MCTFS rejects entries with dashes in phone or periods in address",
+            ],
+          },
+          {
+            step: "After Updating Death Gratuity",
+            details: [
+              "Double-check that percentages equal exactly 100%",
+              "Review PADD section - person receiving $100,000 is often best person to handle funeral arrangements",
+              "Death Gratuity provides cash for funeral, so coordinate PADD and beneficiary designations",
+              "Verify on BIR in two days that Death Gratuity section reflects your designations",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Person Authorized to Direct Disposition (PADD)",
+        steps: [
+          {
+            step: "Why PADD Is Your Most Important Legal Designation",
+            details: [
+              "The PADD is the ONLY person legally authorized by DoD to make decisions regarding your remains",
+              "Without a designated PADD, funeral arrangements can be delayed by weeks if family members disagree",
+              "Your PADD decides: level of military honors, type of headstone, final resting place (private vs Arlington)",
+              "Marine Corps provides PADD with specific allowances and a CACO to navigate funeral logistics",
+            ],
+          },
+          {
+            step: "The Default Order of Precedence (If You Leave PADD Blank)",
+            details: [
+              "1. Unremarried Surviving Spouse",
+              "2. Children (in order of seniority)",
+              "3. Parents (in order of seniority)",
+              "4. Siblings (in order of seniority)",
+              "5. Grandparents / Other Relatives",
+              "By designating a PADD, you choose exactly who takes charge regardless of their position in this list",
+            ],
+          },
+          {
+            step: "Designating Your PADD",
+            details: [
+              "Locate the PADD section on your RED",
+              "Click the 'Edit' link to open the Update RED PADD page",
+              "Most Marines choose their Primary Next of Kin (Spouse or Parent), but you can designate any adult",
+              "The person must be legally competent and reachable",
+              "PADD must be at least 18 years old - enter their DOB in DD MMM YYYY format (e.g., 04 JUL 1990)",
+              "Ensure name, address, and 24-hour phone number are 100% accurate",
+              "Click 'Submit Changes' and then 'Apply Changes'",
+            ],
+          },
+          {
+            step: "Address Format Requirements",
+            details: [
+              "Use 'Reformat This Address' to switch between U.S., APO/FPO, and Foreign layouts",
+              "U.S. Address: Use 2-letter state initials and Zip+4 code (9 digits)",
+              "APO/FPO: Enter PSC/Box or Unit/UIC, select correct region (AA, AE, or AP)",
+              "Foreign: Provide full address as formatted in that country",
+              "No punctuation - type '123 Main St Apt 4' not '123 Main St., Apt. #4'",
+              "If you don't know Zip+4, look it up on USPS website - system often requires full 9 digits",
+            ],
+          },
+          {
+            step: "PADD Pitfalls",
+            details: [
+              "You can only name ONE PADD - you cannot name 'My Mom and Dad'",
+              "If you don't choose, law follows strict order of precedence which may not match your family dynamic",
+              "If PADD is same as Primary Next of Kin, ensure addresses match exactly in both sections",
+              "DOB format matters - type '02 JAN 1980' not '01/02/1980' or system may reject",
+              "After 'Apply Changes', system returns to MOL Home Page - this is normal",
+              "PADD appears in bold until certified (24-48 hours) - not legally valid until bold disappears",
+              "Click 'Details' link to verify exactly what was submitted",
+            ],
+          },
+          {
+            step: "After Designating PADD",
+            details: [
+              "Have 'The Talk' - ensure the person KNOWS they are PADD and discuss your burial vs cremation wishes",
+              "Discuss your preferred location for final honors",
+              "Coordinate finances - PADD handles funeral costs (Marine Corps reimburses later)",
+              "Ensure PADD is also listed in Death Gratuity or Pay Arrears for immediate funds",
+              "Confirm PADD is comfortable with responsibility and has valid ID to access military installations",
+              "Verify on BTR in two business days that PADD section is no longer 'Pending'",
+              "Final RED Review - once PADD is set, review entire RED for any other bold (pending) text",
             ],
           },
         ],
