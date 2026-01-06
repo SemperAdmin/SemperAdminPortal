@@ -521,6 +521,7 @@ export const SECTIONS: Record<string, Section> = {
         items: [
           { title: "View Your OMPF", slug: "mol-view-ompf", desc: "Access your Official Military Personnel File" },
           { title: "Update Personal Information", slug: "mol-update-personal-info", desc: "Change address, phone, emergency contacts, and other personal data" },
+          { title: "Personal Information Module", slug: "mol-personal-information", desc: "View and print personal reports, update data, certify RED, and access tax statements" },
         ],
       },
       {

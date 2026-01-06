@@ -3196,6 +3196,169 @@ const MOL_FUNCTIONAL_MODULES = {
       },
     ],
   },
+  "mol-personal-information": {
+    title: "Personal Information Module",
+    description: "The Personal Information module provides access to view, edit, or print reports containing your personal data. Links vary depending upon your status and include Personal Reports, Personal Updates, and Record of Emergency Data (RED) Updates.",
+    capabilities: ["View personal reports", "Update contact information", "Certify RED data", "Print records", "View tax statements"],
+    userTypes: ["All Marines", "Reservists", "Unit Leaders"],
+    guide: [
+      {
+        title: "Personal Reports Overview",
+        steps: [
+          {
+            step: "Available Personal Reports",
+            details: [
+              "Acknowledgment Record - Pending and historical acknowledgments",
+              "Annual Retirement Credit Report (ARCR) - Retirement credit points",
+              "Aviation Incentive Pay-Aviation Bonus - AVIP and AVB information",
+              "Awards - Summary and Full List views of decorations",
+              "Basic Individual Record (BIR) - Service, contract, and dependent information",
+              "Basic Training Record (BTR) - Training, education, and testing information",
+              "BRS/TSP Information - Blended Retirement System elections",
+              "Career Retirement Credit Report (CRCR) - For eligible reservists",
+              "Chronological Record - Sequential events and duties performed",
+              "Civilian Employment Information Record - For reservists",
+              "Education - Off-duty education, MCI courses, service schools",
+              "Grade Report - Pay grade and promotion information",
+              "Individual Medical Record (IMR) - Medical deployment eligibility (HIPAA protected)",
+              "Operational Cultural Information Report - Language skills and foreign travel",
+              "Pay and Leave Summary - Current/prior pay and leave balances",
+              "Personal Statement of Military Compensation (PSMC) - Full compensation value",
+              "PersTempo Report - Deployment tempo tracking",
+              "Record of Emergency Data (RED) - Emergency contacts and SGLI",
+              "Rank/MOS Report - Members with same Rank and MOS",
+              "Record of Service - Proficiency, conduct, composite scores (E1-E5)",
+              "Reserve Drill Summary - Drills attended, missed, rescheduled",
+              "Slate Report - Estimated Rotation Dates by rank",
+              "Tax Statements (W-2) - Available tax statements in PDF format",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Acknowledgment Record",
+        steps: [
+          { step: "Navigate to Personal Information > Acknowledgment Record" },
+          {
+            step: "Pending Acknowledgments",
+            details: [
+              "View Code, Description, and Action columns",
+              "Click 'Acknowledge' link for items requiring your action",
+              "'(Pending)' indicates items not yet processed through MCTFS",
+            ],
+          },
+          { step: "Historical Acknowledgments show Code, Description, and Acknowledgment Date" },
+          { step: "Click 'Printer Friendly View' to print the report" },
+        ],
+      },
+      {
+        title: "BRS/TSP Information",
+        steps: [
+          {
+            step: "TSP Sections (Traditional and Roth)",
+            details: [
+              "View percentage withheld from Base Pay, Incentive Pay, Special Pay, and Bonus Pay",
+              "Visit www.TSP.gov for more information",
+              "Use mypay.dfas.mil to enroll or change contributions",
+            ],
+          },
+          {
+            step: "Decline Automatic TSP Re-enrollment",
+            details: [
+              "Click 'Decline TSP Re-Enrollment' button",
+              "Auto re-enrollment occurs if you stop contributions but don't decline in December",
+            ],
+          },
+          {
+            step: "BRS Sections",
+            details: [
+              "BRS Election - Complete required MarineNet training course first",
+              "BRS Continuation Pay - Payment and recoupment information",
+              "BRS Retired Pay Lump Sum Payment Election - Must elect 90 days before retirement eligibility",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Career Retirement Credit Report (CRCR)",
+        steps: [
+          { step: "For eligible reservists - view, print, and certify your CRCR" },
+          {
+            step: "Do NOT certify if",
+            details: [
+              "There are mistakes in the report",
+              "Current Anniversary Date expired or displays as zeroes",
+              "Current Year CRCR information is missing or more than a year old",
+              "Date Entered Armed Forces (DEAF) is later than AFABD",
+              "Current Year Member Points score is greater than 15",
+            ],
+          },
+          { step: "If correct, click 'Certify CRCR' link and confirm" },
+          { step: "If incorrect, click 'Users Manual' link for further processing information" },
+        ],
+      },
+      {
+        title: "Record of Emergency Data (RED)",
+        steps: [
+          { step: "Displays emergency contact and SGLI election coverage information" },
+          {
+            step: "Update Data",
+            details: [
+              "Click 'Edit' link adjacent to the section you want to change",
+              "Editing information automatically certifies it",
+            ],
+          },
+          { step: "Electronically Certify: Click 'Certify' button if no edits needed, then confirm" },
+          { step: "CMC Casualty view shows pending changes in red, bold font with date/time stamps" },
+        ],
+      },
+      {
+        title: "Tax Statements (W-2)",
+        steps: [
+          { step: "Available for Active Duty or Reserve Marines (not separated/retired)" },
+          { step: "Tax Statements are generated in PDF format - requires Adobe Reader" },
+          {
+            step: "To Get Your W-2",
+            details: [
+              "If delivery method is 'None' or 'Hard Copy', change to Electronic first",
+              "Select desired year from 'Available W2s' dropdown",
+              "Click Submit button",
+            ],
+          },
+          { step: "Separated/Retired Marines: W-2 available for one year after separation, cannot change delivery method" },
+          { step: "Keep your home address current in Personal Contact Information for future W-2s" },
+        ],
+      },
+      {
+        title: "Personal Updates",
+        steps: [
+          {
+            step: "Available Update Categories",
+            details: [
+              "Civilian Employment Information (CEI) - For reservists",
+              "Contact Info - Phone numbers, addresses",
+              "Family Readiness - Family member information",
+              "Foreign Travel - Travel periods and destinations",
+              "Gas Mask - Size information",
+              "Personnel Accountability Information - Disaster response data",
+              "Race/Ethnic - Demographic information",
+              "Religion - Religious preference",
+              "Self-Professed Language Skills - Language proficiency",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Printing Reports",
+        steps: [
+          { step: "Click 'Printer Friendly View' or 'Printer Friendly' link" },
+          { step: "Report opens in a new browser window" },
+          { step: "Click 'Print' to open the Print dialog, or 'Close' to return" },
+          { step: "For PSMC watermark: In IE, enable 'Print Background Colors and Images' under Tools > Internet Options > Advanced" },
+        ],
+      },
+    ],
+  },
 };
 
 // ============================================
@@ -6152,6 +6315,8 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "mol-view-permissions": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-view-permissions"]} references={MOL_DATA.references} />,
     "mol-two-factor-auth": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-two-factor-auth"]} references={MOL_DATA.references} />,
     "mol-personnel-accountability": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-personnel-accountability"]} references={MOL_DATA.references} />,
+    // Marine Online - Personnel Records
+    "mol-personal-information": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-personal-information"]} references={MOL_DATA.references} />,
   };
 
   const displayTitle = itemSlug === "sdap" ? "Special Duty Assignment Pay (SDAP)" : itemTitle;
@@ -6434,6 +6599,7 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "mol-view-ompf",
     "mol-update-personal-info",
     "mol-view-les",
+    "mol-personal-information",
     // Leave Management
     "mol-submit-leave",
     "mol-leave-balance",
