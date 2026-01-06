@@ -252,10 +252,8 @@ export const reportGroups: CatalogGroup[] = [
   {
     name: "Portals",
     items: [
-      { title: "DiaryMate" },
-      { title: "TTC Search Dashboard – Multi-Tab Lookup Tool" },
-      { title: "Unit User Reports" },
-      { title: "Requesting Access TFAS Package" },
+      { title: "DiaryMate", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/RFF-KCI/Dev%2BTeam/Archived/Temp%2BBAH%2BMHA%2BIncrease/Command%2BTemp%2BBAH/DiaryMate%2BV4&ui_appbar=false&ui_navbar=false&amp%3bui_appbar=false&amp%3bui_navbar=false" },
+      { title: "TTC Search Dashboard – Multi-Tab Lookup Tool", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/RFF-KCI/Dev%2BTeam/Archived/Temp%2BBAH%2BMHA%2BIncrease/Command%2BTemp%2BBAH/TTC%2BSearch%2BDashboard%2B%25E2%2580%2593%2BMulti-Tab%2BLookup%2BTool&ui_appbar=false&ui_navbar=false" },
     ],
   },
   {
@@ -268,18 +266,13 @@ export const reportGroups: CatalogGroup[] = [
   {
     name: "Non Routine",
     items: [
-      { title: "Slate Report" },
-      { title: "Certifier Statistics" },
-      { title: "Marine Assignment Period Report" },
-      { title: "Passed for Promotion" },
-      { title: "PME Report" },
-      { title: "Report Builder" },
-      { title: "Reported TTC Search By Unit" },
-      { title: "TTC Error By Unit" },
-      { title: "Additional Key MOS" },
-      { title: "Parental Leave Tracker" },
-      { title: "Transition Readiness (On Rolls)" },
-      { title: "TTC Error By Unit (Search)" },
+      { title: "Slate Report", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Slate%2BReport" },
+      { title: "Certifier Statistics", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Certifier%2BStatistics" },
+      { title: "Marine Assignment Period Report", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Marine%2BAssignment%2BPeriod%2BReport" },
+      { title: "Passed for Promotion", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Passed%2Bfor%2BPromotion" },
+      { title: "PME Report", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/PME%2BReport" },
+      { title: "Report Builder", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Report%2BBuilder" },
+      { title: "Reported TTC Search By Unit", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Reported%2BTTC%2BSearch%2BBy%2BUnit" },
     ],
   },
   {
@@ -309,11 +302,11 @@ export const reportGroups: CatalogGroup[] = [
   {
     name: "Mondays",
     items: [
-      { title: "Missing NDSM <= 20221231" },
-      { title: "SGLI/SOES Status" },
-      { title: "UIC != TABLE 01" },
-      { title: "Missing UDMIPS files" },
-      { title: "Purex Advisories" },
+      { title: "Missing NDSM <= 20221231", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Missing%2BNDSM%2B%253C%253D%2B20221231" },
+      { title: "Missing UDMIPS files", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Missing%2BUDMIPS%2Bfiles" },
+      { title: "Purex Advisories", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/Purex%2BAdvisories" },
+      { title: "SGLI/SOES Status", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/SGLI%252FSOES%2BSTATUS" },
+      { title: "UIC != TABLE 01", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/UIC%2B%2521%253D%2BTABLE%2B01" },
     ],
   },
   {
@@ -324,14 +317,34 @@ export const reportGroups: CatalogGroup[] = [
   },
   {
     name: "1st of the Month",
-    items: [],
+    items: [
+      { title: "10922 Monthly Verification", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/10922%2BMONTHLY%2BVERIFICATION" },
+      { title: "COLA Monthly Verification", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/COLA%2BMONTHLY%2BVERIFICATION" },
+      { title: "DD FORM 214 Monthly Verification", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/DD%2BFORM%2B214%2BOMPF%2BVerification" },
+      { title: "DD FORM 216 Monthly Verification", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/DD%2BForm%2B216%2BMeritorious%2BPromotion" },
+      { title: "EXT ENL Monthly Verification", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/EXT%2BENL%2BMONTHLY%2BVERIFICATION" },
+      { title: "FSA Monthly Verification", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/FSA%2BMONTHLY%2BVERIFICATION" },
+      { title: "NJP Monthly Verification", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/NJP%2BMONTHLY%2BVERIFICATION" },
+      { title: "SSgt and Below with S/EJPME II", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/SSGT%2BAND%2BBELOW%2BWITH%2BS%252FEJPME%2BII" },
+      { title: "Unit Missing Training", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/UNIT%2BMISSING%2BTRAINING" },
+    ],
   },
   {
     name: "15th of the Month",
-    items: [],
+    items: [
+      { title: "BNA MOL Messages", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/BNA%2BMOL%2BMessages" },
+      { title: "BRS Continuation Pay Eligibility", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/BRS%2BContinuation%2BPay%2BEligibility" },
+      { title: "MBR 2 MBR DATA SHEET (Marine Spouse)", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/MBR%2B2%2BMBR%2BDATA%2BSHEET%2B%2528Marine%2BSpouse%2529" },
+      { title: "MBR 2 MBR DATA SHEET (Non-Marine Spouse)", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/MBR%2B2%2BMBR%2BDATA%2BSHEET%2B%2528Non-Marine%2BSpouse%2529" },
+      { title: "Missing Annual Red Audit", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/MISSING%2BANNUAL%2BRED%2BAUDIT" },
+      { title: "Sergeant Without Dependents BAH Initiative", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/SERGEANT%2BWITHOUT%2BDEPENDENTS%2BBASIC%2BALLOWANCE%2BFOR%2BHOUSING%2B%2528BAH%2529%2BINITIATIVE" },
+      { title: "Unit Completed Training/PME", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/UNIT%2BCOMPLETED%2BTRAINING%252FPME" },
+    ],
   },
   {
     name: "U&E",
-    items: [],
+    items: [
+      { title: "No Pay Due", href: "https://tfsbi.tfs.usmc.mil/bi/?pathRef=.public_folders/Enterprise%2BUser%2BReports/HQMC/Semper%2BAdmin/Semper%2BAdmin%2BReports%2Bfor%2BUsers/NO%2BPAY%2BDUE" },
+    ],
   },
 ];
