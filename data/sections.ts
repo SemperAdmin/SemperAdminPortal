@@ -579,6 +579,7 @@ export const SECTIONS: Record<string, Section> = {
       {
         title: "Administrative Actions",
         items: [
+          { title: "Trouble Ticket vs. EPAR", slug: "mol-tt-vs-epar", desc: "Quick guide to choosing the right request method for your situation" },
           { title: "Submit an EPAR", slug: "mol-epar", desc: "Submit personnel and administrative requests through your chain of command" },
           { title: "Submit a Trouble Ticket", slug: "mol-trouble-ticket-system", desc: "Report system issues or request access through the Trouble Ticket System" },
           { title: "Dependency Updates", slug: "mol-dependency-updates", desc: "Add, remove, or update dependent information" },
