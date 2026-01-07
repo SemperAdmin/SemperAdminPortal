@@ -8608,8 +8608,6 @@ const MOL_FUNCTIONAL_MODULES = {
     description: "Provides individual members access to view their own personnel records as recorded within the MCTFS or interfacing application. Self-Certified transactional reporting capabilities are provided to users for select data elements not requiring two-factor review. Reports are generated using a combination of local database queries (MED) and service calls directly to the MCTFS (SOA APIs).",
     capabilities: ["View personnel records", "Self-certified transactions", "Access electronic records (ARCR, ACIP, BIR, BTR, etc.)", "Update contact information", "Manage emergency data", "View W2 statements"],
     userTypes: ["Individual Members"],
-    electronicRecords: ["Annual Retirement Credit Report (ARCR)", "Aviation Career Incentive Pay (ACIP)", "Awards", "Basic Individual Record (BIR)", "Basic Training Record (BTR)", "BRS/TSP", "Civilian Employment Information (CEI)", "Chronological Record (CHRO)", "Education", "Family Care Plan (FCP)", "Individual Medical Readiness (IMR)", "Pay and Leave Summary", "Pers-Tempo", "Personal Statement of Military Compensation (PSMC)", "Record of Emergency Data (RED)", "Reserve Drill Summary", "Record of Service (ROS)", "W2 Tax Statements"],
-    selfCertifiedTransactions: ["Blended Retirement Opt-In/Out", "Acknowledgements", "Career Designation (Officer)", "Career Retirement Certification", "Civilian Employment Information", "Contact Information", "Foreign Travel", "Gas Mask and Helmet", "Race/Ethnic", "Religion", "Self-professed Language Skills", "RED Certification", "W2/W2C Electronic Delivery"],
     guide: [
       {
         title: "Accessing Personal Information",
