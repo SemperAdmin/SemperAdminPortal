@@ -174,8 +174,8 @@ export function PublicAffairsContent() {
             <ul className="text-sm text-[var(--sa-cream)]/80 space-y-1">
               <li>• Communication Directorate Media Training Guide</li>
               <li>• DoD Principles of Information</li>
-              <li>• SECNAVINST 5720.44C</li>
-              <li>• DoD 5400.7-R (<Acronym title="Freedom of Information Act">FOIA</Acronym>)</li>
+              <li>• <a href={PUBLIC_AFFAIRS_URLS.SECNAVINST_5720_44C} target="_blank" rel="noopener noreferrer" className="text-[var(--sa-gold)] hover:underline">SECNAVINST 5720.44C</a></li>
+              <li>• <a href={PUBLIC_AFFAIRS_URLS.DODM_5400_07_FOIA} target="_blank" rel="noopener noreferrer" className="text-[var(--sa-gold)] hover:underline">DoDM 5400.07 (<Acronym title="Freedom of Information Act">FOIA</Acronym>)</a></li>
             </ul>
           </div>
           <div className="bg-[var(--sa-navy)]/50 rounded p-4">
@@ -443,7 +443,7 @@ export function PublicAffairsContent() {
               <li>• Is the audience right? (Do not address partisan political groups or extremist organizations in uniform)</li>
               <li>• Do not accept invitation unless proud of association with the group</li>
               <li>• Active duty members should not engage in partisan political activities</li>
-              <li>• Political activity governed by DoDD 1344.10 and The Hatch Act of 1939</li>
+              <li>• Political activity governed by <a href={PUBLIC_AFFAIRS_URLS.DODD_1344_10_POLITICAL} target="_blank" rel="noopener noreferrer" className="text-[var(--sa-gold)] hover:underline">DoDD 1344.10</a> and The Hatch Act of 1939</li>
               <li>• When in doubt, seek advice from COMMSTRAT and Legal Counsel</li>
             </ul>
           </div>
@@ -857,12 +857,48 @@ export function PublicAffairsContent() {
 
           <div>
             <h3 className="font-semibold text-[var(--sa-cream)] mb-2">References</h3>
-            <ul className="text-sm text-[var(--sa-cream)]/70 space-y-1">
-              <li>• Communication Directorate Media Training Guide</li>
-              <li>• SECNAVINST 5720.44C</li>
-              <li>• DoD 5400.7-R (FOIA)</li>
-              <li>• DoD 5400.11-R (Privacy Program)</li>
-              <li>• DoDD 1344.10 (Political Activity)</li>
+            <ul className="text-sm space-y-1">
+              <li className="text-[var(--sa-cream)]/70">• Communication Directorate Media Training Guide</li>
+              <li>
+                <a
+                  href={PUBLIC_AFFAIRS_URLS.SECNAVINST_5720_44C}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--sa-gold)] hover:underline"
+                >
+                  • SECNAVINST 5720.44C
+                </a>
+              </li>
+              <li>
+                <a
+                  href={PUBLIC_AFFAIRS_URLS.DODM_5400_07_FOIA}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--sa-gold)] hover:underline"
+                >
+                  • DoDM 5400.07 (FOIA)
+                </a>
+              </li>
+              <li>
+                <a
+                  href={PUBLIC_AFFAIRS_URLS.DOD_5400_11R_PRIVACY}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--sa-gold)] hover:underline"
+                >
+                  • DoD 5400.11-R (Privacy Program)
+                </a>
+              </li>
+              <li>
+                <a
+                  href={PUBLIC_AFFAIRS_URLS.DODD_1344_10_POLITICAL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--sa-gold)] hover:underline"
+                >
+                  • DoDD 1344.10 (Political Activity)
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -879,9 +915,36 @@ export function PublicAffairsContent() {
                   USMC Social Media Handbook
                 </a>
               </li>
-              <li className="text-[var(--sa-cream)]/70">• Marine Corps Communication Playbook</li>
-              <li className="text-[var(--sa-cream)]/70">• DINFOS Consolidated Guidelines for Release</li>
-              <li className="text-[var(--sa-cream)]/70">• HHS Summary of HIPAA Privacy Rule</li>
+              <li>
+                <a
+                  href={PUBLIC_AFFAIRS_URLS.USMC_COMM_STRATEGY}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--sa-gold)] hover:underline"
+                >
+                  USMC Communication Strategy
+                </a>
+              </li>
+              <li>
+                <a
+                  href={PUBLIC_AFFAIRS_URLS.DINFOS_GUIDELINES}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--sa-gold)] hover:underline"
+                >
+                  DINFOS Consolidated Guidelines for Release
+                </a>
+              </li>
+              <li>
+                <a
+                  href={PUBLIC_AFFAIRS_URLS.HHS_HIPAA_SUMMARY}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--sa-gold)] hover:underline"
+                >
+                  HHS Summary of HIPAA Privacy Rule
+                </a>
+              </li>
             </ul>
           </div>
         </div>
