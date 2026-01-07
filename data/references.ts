@@ -325,6 +325,12 @@ export const FISCAL_URLS = {
 
   /** FM Online - Financial Management */
   FM_ONLINE: "https://fmonline.ousdc.osd.mil/Default.aspx",
+
+  /** TFS Business Intelligence Reports Portal */
+  TFS_BI_REPORTS: "https://tfsbi.tfs.usmc.mil/bi/",
+
+  /** DFAS Pay Entitlements */
+  DFAS_PAY_ENTITLEMENTS: "https://www.dfas.mil/militarymembers/payentitlements/",
 } as const;
 
 // ============================================================================
@@ -352,6 +358,68 @@ export const PUBLIC_AFFAIRS_URLS = {
 export const DOD_FMR_URLS = {
   /** DoD FMR Vol. 7A, Ch. 66 - Continuation Pay */
   VOL_7A_CH_66: "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_66.pdf",
+} as const;
+
+// ============================================================================
+// Training & Education Portals
+// ============================================================================
+export const TRAINING_URLS = {
+  /** MarineNet */
+  MARINENET: "https://www.marinenet.usmc.mil/",
+
+  /** Marine Corps University */
+  MCU: "https://www.usmcu.edu/",
+
+  /** MCTIMS - Training Information Management System */
+  MCTIMS: "https://www.trngcmd.marines.mil/",
+} as const;
+
+// ============================================================================
+// DoD Directives & Instructions
+// ============================================================================
+export const DOD_DIRECTIVE_URLS = {
+  /** DoD Instructions Base */
+  DODI_BASE: "https://www.esd.whs.mil/Directives/issuances/dodi/",
+
+  /** DoD Directives Base */
+  DODD_BASE: "https://www.esd.whs.mil/Directives/issuances/dodd/",
+
+  /** DoD Forms Base */
+  DOD_FORMS: "https://www.esd.whs.mil/Directives/forms/",
+} as const;
+
+// ============================================================================
+// Manpower & Personnel Systems
+// ============================================================================
+export const MANPOWER_URLS = {
+  /** Manpower Portal */
+  MANPOWER_PORTAL: "https://www.manpower.usmc.mil/",
+
+  /** MCTFS - Marine Corps Total Force System */
+  MCTFS: "https://www.manpower.usmc.mil/",
+
+  /** iAPS - Improved Awards Processing System */
+  IAPS: "https://www2.manpower.usmc.mil/iaps/",
+
+  /** MMEA - Enlisted Assignments */
+  MMEA: "https://www.manpower.usmc.mil/webcenter/portal/MMEA",
+
+  /** OMPF Guidelines */
+  OMPF: "https://www.manpower.usmc.mil/webcenter/portal/MMRP_PRS/pages_adminandsep/ompf",
+} as const;
+
+// ============================================================================
+// Message & Publication Hubs
+// ============================================================================
+export const HUB_URLS = {
+  /** MARADMIN Hub */
+  MARADMIN_HUB: "https://www.marines.mil/News/Messages/MARADMINS/",
+
+  /** ALNAV Hub */
+  ALNAV_HUB: "https://www.mynavyhr.navy.mil/References/Messages/ALNAV/",
+
+  /** MCPEL - Publications Electronic Library */
+  MCPEL: "https://www.marines.mil/News/Publications/MCPEL/",
 } as const;
 
 // ============================================================================
