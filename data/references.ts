@@ -93,6 +93,12 @@ export const MCO_URLS = {
 
   /** MCO 5090.2 - Environmental Compliance and Protection Program */
   ENVIRONMENTAL: "https://www.marines.mil/Portals/1/Publications/MCO%205090.2.pdf?ver=2018-06-18-114045-040",
+
+  /** MCO 1754.4C - Exceptional Family Member Program (EFMP) */
+  EFMP: "https://www.marines.mil/Portals/1/Publications/MCO%201754.4C.pdf?ver=4I7l0tdjMAtWmmgtUS19Sw%3d%3d",
+
+  /** MCO 1800.11A - Marine Corps Retirement Program */
+  RETIREMENT_PROGRAM: "https://www.marines.mil/Portals/1/Publications/MCO%201800.11A.pdf?ver=2020-03-31-081717-407",
 } as const;
 
 // ============================================================================
@@ -171,6 +177,12 @@ export const MARADMIN_URLS = {
 
   /** MARADMIN 099/18 - Improved Awards Processing System (iAPS) Updates */
   IAPS_UPDATES_099_18: "https://www.marines.mil/News/Messages/Messages-Display/Article/1438860/improved-awards-processing-system-iaps-updates/",
+
+  /** MARADMIN 229/24 - CY2025 Continuation Pay Program for BRS Participants */
+  CONTINUATION_PAY_229_24: "https://www.marines.mil/News/Messages/Messages-Display/Article/3783014/calendar-year-2025-continuation-pay-program-for-blended-retirement-system-parti/",
+
+  /** MARADMIN 388/25 - FY2026 Cornerstone Class Dates */
+  CORNERSTONE_388_25: "https://www.marines.mil/News/Messages/Messages-Display/Article/4279462/fiscal-year-2026-class-dates-for-cornerstone-the-commandants-combined-commander/",
 } as const;
 
 // ============================================================================
@@ -213,6 +225,9 @@ export const PERSONNEL_URLS = {
 
   /** Religious Accommodations */
   RELIGIOUS_ACCOMMODATIONS: "https://www.manpower.marines.mil/Divisions/Plans-and-Policies/Manpower-Plans-and-Policy/Manpower-Military-Policy-MPO/Religious-Accommodations/",
+
+  /** M&RA MPO Military Compensation (BRS/Continuation Pay) */
+  MPO_MILITARY_COMPENSATION: "https://www.manpower.usmc.mil/Divisions/Plans-and-Policies/Manpower-Plans-and-Policy/Manpower-Military-Policy-MPO/Military-Compensation/",
 } as const;
 
 // ============================================================================
@@ -233,6 +248,9 @@ export const SAPR_URLS = {
 
   /** National Sex Offender Public Website */
   NSOPW: "https://www.nsopw.gov/en/Search/Verification",
+
+  /** HQMC SAPR - MCCS Sexual Assault Prevention and Response */
+  HQMC_SAPR: "https://www.usmc-mccs.org/marine-family-support/prevention-and-counseling/sexual-assault-prevention-and-response",
 } as const;
 
 // ============================================================================
@@ -326,6 +344,38 @@ export const ENVIRONMENTAL_URLS = {
 export const PUBLIC_AFFAIRS_URLS = {
   /** USMC Social Media Handbook */
   SOCIAL_MEDIA_HANDBOOK: "https://media.defense.gov/2025/Nov/05/2003819006/-1/-1/0/251103-USMCSOCIALMEDIAHANDBOOK.PDF",
+} as const;
+
+// ============================================================================
+// DoD Financial Management Regulation (FMR)
+// ============================================================================
+export const DOD_FMR_URLS = {
+  /** DoD FMR Vol. 7A, Ch. 66 - Continuation Pay */
+  VOL_7A_CH_66: "https://comptroller.defense.gov/Portals/45/documents/fmr/current/07a/07a_66.pdf",
+} as const;
+
+// ============================================================================
+// Marine Corps Bulletins (MCBul)
+// ============================================================================
+export const MCBUL_URLS = {
+  /** MCBul 1800 - Retirement and Career Incentives */
+  MCBUL_1800: "https://www.marines.mil/Portals/1/Publications/MCBul%201800%20DTD%2015%20JUN%202021%20(SECURED).pdf?ver=fMvUu5zlLicXEajb_xVMUg%3d%3d",
+} as const;
+
+// ============================================================================
+// CMC White Letters
+// ============================================================================
+export const WHITE_LETTER_URLS = {
+  /** CMC White Letter 3-17 - Status of Command */
+  WL_3_17: "https://www.usmcu.edu/Portals/218/CMC%20White%20Letter%203-17%20-%20FINAL.PDF",
+} as const;
+
+// ============================================================================
+// Health Assessment Resources
+// ============================================================================
+export const HEALTH_URLS = {
+  /** Electronic Health Assessment (PDHA/PDHRA) */
+  EHA_PORTAL: "https://eha.health.mil/EHA/",
 } as const;
 
 // ============================================================================
