@@ -5687,6 +5687,678 @@ const MOL_FUNCTIONAL_MODULES = {
       },
     ],
   },
+  "mol-red-family": {
+    title: "RED Family Information",
+    description: "Update spouse and dependent information in your Record of Emergency Data. This section ensures the Marine Corps can locate and notify your family members in case of emergency, and properly manage benefits and evacuation planning.",
+    capabilities: ["Update spouse information", "Add/edit dependent children", "Manage family addresses", "Set spouse preferred language", "Update contact numbers", "Support NEO planning"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Why This Matters",
+        steps: [
+          {
+            step: "Emergency Notification",
+            details: [
+              "Your spouse is typically the Primary Next of Kin (PNOK) and will be contacted first in any emergency",
+              "Physical addresses are required - the Marine Corps sends a Casualty Assistance Calls Officer (CACO) in person",
+              "Outdated addresses delay critical notifications to your family",
+            ],
+          },
+          {
+            step: "NEO Planning",
+            details: [
+              "If stationed overseas, family address data supports Noncombatant Evacuation Operations (NEO)",
+              "Accurate dependent information ensures your family is accounted for during evacuations",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Updating Spouse Information",
+        steps: [
+          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
+          { step: "Navigate to Personal Info > Record of Emergency Data (RED) > Family Information" },
+          { step: "Click 'Edit' next to your spouse's name to update address or phone" },
+          { step: "Verify all contact information is current and accurate" },
+          { step: "Click 'Submit Changes', then 'Apply Changes'" },
+        ],
+      },
+      {
+        title: "Managing Children",
+        steps: [
+          {
+            step: "Adding Children",
+            details: [
+              "Click 'Add Child' to add a new dependent",
+              "Enter full legal name, date of birth, and relationship",
+              "Provide current physical address if different from yours",
+            ],
+          },
+          {
+            step: "Child Address Sync",
+            details: [
+              "If a child lives with your spouse, click 'Use Spouse Address' to sync",
+              "If a child lives elsewhere (college, with relatives), enter their specific address",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Spouse Preferred Language",
+        steps: [
+          {
+            step: "Why It Matters",
+            details: [
+              "If your spouse is more comfortable receiving critical news in their native language, set this preference",
+              "The CACO will attempt to arrange interpreter services for notification",
+            ],
+          },
+          { step: "Click 'Add Spouse Preferred Language' or 'Edit Spouse Preferred Language'" },
+          { step: "Select the correct language from the dropdown" },
+          { step: "Submit and apply changes" },
+        ],
+      },
+      {
+        title: "Common Pitfalls",
+        steps: [
+          {
+            step: "Outdated Addresses",
+            details: [
+              "Family members move frequently - verify addresses after every PCS",
+              "Use physical street addresses, not PO Boxes, for emergency notification",
+            ],
+          },
+          {
+            step: "Missing Phone Numbers",
+            details: [
+              "Include cell phone numbers - landlines are less reliable for urgent contact",
+              "Update numbers immediately when family members change phones",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-red-parents": {
+    title: "RED Parents Information",
+    description: "Update parent contact and beneficiary details in your Record of Emergency Data. Parents are Secondary Next of Kin and entitled to official notification even if you are married.",
+    capabilities: ["Update parent addresses", "Mark parent as deceased", "Edit contact information", "Manage step-parent records", "Update international addresses"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Why This Matters",
+        steps: [
+          {
+            step: "Notification Rights",
+            details: [
+              "Parents are Secondary Next of Kin and entitled to official notification",
+              "A uniformed CACO is dispatched to parents' addresses for deceased or missing Marines",
+              "Even if married, parents are often assigned their own CACO if they live in a different state",
+            ],
+          },
+          {
+            step: "Address Accuracy",
+            details: [
+              "If the address is outdated, the Marine Corps may have to search for parents or deliver news telephonically",
+              "This is not the standard of care your family deserves during a crisis",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Managing Parent Records",
+        steps: [
+          { step: "Log in to MOL and navigate to RED > Parents Information" },
+          { step: "Click 'Edit' next to a parent's name to update address or phone" },
+          { step: "Click 'Remove This Address' if parent has moved and you don't have new location" },
+          { step: "Click 'Cancel Removal' if you accidentally marked an address for removal" },
+        ],
+      },
+      {
+        title: "Recording a Deceased Parent",
+        steps: [
+          { step: "Check the 'Deceased' box next to the parent's name" },
+          { step: "Click 'Submit Changes' - the system automatically removes any existing address records" },
+          { step: "This prevents the Marine Corps from attempting to locate them during a crisis" },
+        ],
+      },
+      {
+        title: "Address Entry Tips",
+        steps: [
+          {
+            step: "U.S. Addresses",
+            details: [
+              "Do not use punctuation (commas, periods, or dashes)",
+              "If using PO Box or Rural Route, also provide physical directions on NOK Directions page",
+            ],
+          },
+          {
+            step: "International Addresses",
+            details: [
+              "Click 'Reformat This Address' to configure for foreign listing",
+              "Type the full address as it appears in that country - no punctuation",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls",
+        steps: [
+          {
+            step: "Unknown Parent Location",
+            details: [
+              "If estranged or don't know location, type 'Unknown' in address field - do not leave blank",
+            ],
+          },
+          {
+            step: "Step-Parents",
+            details: [
+              "Distinguish between biological/adoptive parents and step-parents",
+              "CACO prioritizes biological/adoptive parents unless specified otherwise in Remarks",
+            ],
+          },
+          {
+            step: "Health Concerns",
+            details: [
+              "If a parent has dementia or heart condition, use 'Do Not Notify' section to prevent stressful notification",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-red-nok": {
+    title: "RED Next of Kin (NOK)",
+    description: "Designate your emergency notification contacts and provide detailed directions to help Casualty Assistance officers locate your family members.",
+    capabilities: ["Set Primary NOK", "Set Secondary NOK", "Provide address directions", "Add special instructions", "Update contact preferences"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Why This Matters",
+        steps: [
+          {
+            step: "In-Person Notification",
+            details: [
+              "The Marine Corps delivers serious news in person through a Casualty Assistance Calls Officer (CACO)",
+              "Your NOK designations determine who gets contacted first and in what order",
+              "Directions help CACOs find rural, gated, or hard-to-locate addresses",
+            ],
+          },
+        ],
+      },
+      {
+        title: "NOK Hierarchy",
+        steps: [
+          {
+            step: "Primary Next of Kin (PNOK)",
+            details: [
+              "Typically your spouse if married",
+              "If unmarried, usually a parent or sibling",
+              "The PNOK is contacted first in any emergency",
+            ],
+          },
+          {
+            step: "Secondary Next of Kin (SNOK)",
+            details: [
+              "Typically parents if married",
+              "May be siblings or other close family",
+              "Contacted after PNOK has been notified",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Providing Directions",
+        steps: [
+          { step: "Navigate to RED > Next of Kin Directions" },
+          {
+            step: "When Directions Are Essential",
+            details: [
+              "Rural addresses without GPS coverage",
+              "Gated communities requiring access codes",
+              "Apartment complexes with multiple buildings",
+              "Properties at the end of unnamed roads",
+            ],
+          },
+          { step: "Provide clear, written directions from the nearest major intersection" },
+          { step: "Include gate codes, building numbers, and parking instructions" },
+        ],
+      },
+      {
+        title: "Special Instructions",
+        steps: [
+          {
+            step: "Contact Preferences",
+            details: [
+              "Note if NOK works night shifts and best times to reach them",
+              "Include work addresses if they spend significant time away from home",
+              "List alternative phone numbers in priority order",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-red-insurance": {
+    title: "RED Insurance Information",
+    description: "View and update SGLI and other insurance beneficiary designations. Track private insurance policies for your family's awareness.",
+    capabilities: ["View SGLI status", "Track FSGLI coverage", "Record private policies", "Update beneficiaries", "Review coverage amounts"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Why This Matters",
+        steps: [
+          {
+            step: "SGLI Coverage",
+            details: [
+              "Servicemembers' Group Life Insurance provides up to $500,000 in coverage",
+              "Beneficiaries must be designated - default rules may not match your wishes",
+              "SGLI is separate from Death Gratuity ($100K immediate payment)",
+            ],
+          },
+          {
+            step: "Private Policy Tracking",
+            details: [
+              "RED allows you to record private insurance policies for your family's reference",
+              "This ensures survivors know about all available benefits",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Viewing Insurance Status",
+        steps: [
+          { step: "Log in to MOL and navigate to RED > Insurance Information" },
+          { step: "Review your current SGLI coverage amount" },
+          { step: "Verify FSGLI (Family SGLI) coverage for spouse and children" },
+          { step: "Check that beneficiary designations are current" },
+        ],
+      },
+      {
+        title: "Recording Private Policies",
+        steps: [
+          { step: "Click 'Add Private Insurance Policy'" },
+          { step: "Enter insurance company name and policy number" },
+          { step: "Note coverage amount and beneficiaries" },
+          { step: "Include agent contact information if available" },
+        ],
+      },
+      {
+        title: "Common Pitfalls",
+        steps: [
+          {
+            step: "The SGLI Trap",
+            details: [
+              "SGLI beneficiaries are NOT automatically updated when you marry or have children",
+              "You must actively designate beneficiaries through SOES (SGLI Online Enrollment System)",
+              "Old beneficiaries (ex-spouses, former partners) remain valid until you change them",
+            ],
+          },
+          {
+            step: "Forgetting Private Policies",
+            details: [
+              "Many Marines have employer or private life insurance their families don't know about",
+              "Recording these in RED ensures survivors can claim all benefits",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-red-death-gratuity": {
+    title: "RED Death Gratuity",
+    description: "Designate who receives the immediate $100,000 tax-free death gratuity payment. This is separate from SGLI life insurance.",
+    capabilities: ["Designate beneficiaries", "Set percentage splits", "Update designations", "View current elections", "Understand the 100% rule"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Why This Matters",
+        steps: [
+          {
+            step: "Immediate Financial Support",
+            details: [
+              "The Death Gratuity is paid within 24-72 hours of notification",
+              "It provides immediate funds for funeral costs, travel, and living expenses",
+              "$100,000 tax-free payment - separate from SGLI",
+            ],
+          },
+          {
+            step: "Beneficiary Control",
+            details: [
+              "You decide who receives this payment and in what percentages",
+              "Without designation, payment follows statutory order (which may not be your preference)",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Designating Beneficiaries",
+        steps: [
+          { step: "Log in to MOL and navigate to RED > Death Gratuity" },
+          { step: "Click 'Edit' or 'Add Beneficiary'" },
+          { step: "Enter beneficiary name, relationship, and percentage" },
+          { step: "Ensure all percentages total exactly 100%" },
+          { step: "Submit and apply changes" },
+        ],
+      },
+      {
+        title: "The 100% Rule",
+        steps: [
+          {
+            step: "How It Works",
+            details: [
+              "All designations must total exactly 100%",
+              "You can split among multiple beneficiaries (e.g., spouse 60%, parents 40%)",
+              "If percentages don't equal 100%, the system rejects the submission",
+            ],
+          },
+          {
+            step: "Common Splits",
+            details: [
+              "100% to spouse (most common)",
+              "50% spouse, 25% each parent",
+              "33% each to three children",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls",
+        steps: [
+          {
+            step: "Outdated Beneficiaries",
+            details: [
+              "Ex-spouses or former partners remain beneficiaries until you change them",
+              "Review and update after any major life event (marriage, divorce, birth)",
+            ],
+          },
+          {
+            step: "Statutory Default",
+            details: [
+              "If you don't designate, payment goes in statutory order: spouse, children, parents, executor",
+              "This may not match your actual wishes",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-red-padd": {
+    title: "RED Person Authorized to Direct Disposition (PADD)",
+    description: "Designate the person authorized to make decisions about the disposition of your remains. This is one of the most personal decisions in your RED.",
+    capabilities: ["Designate PADD", "Set priority order", "Provide contact information", "Add special instructions", "Update designations"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Why This Matters",
+        steps: [
+          {
+            step: "Final Arrangements",
+            details: [
+              "The PADD decides burial location, cremation vs. burial, funeral arrangements",
+              "Without designation, decisions fall to next of kin by default",
+              "Family conflicts can arise if multiple people believe they have authority",
+            ],
+          },
+          {
+            step: "Your Wishes",
+            details: [
+              "Designating a specific PADD ensures someone who understands your wishes has legal authority",
+              "Consider designating someone who can handle difficult decisions under stress",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Designating Your PADD",
+        steps: [
+          { step: "Log in to MOL and navigate to RED > Person Authorized to Direct Disposition" },
+          { step: "Enter the name of your primary PADD" },
+          { step: "Provide complete contact information including phone and address" },
+          { step: "Consider designating an alternate PADD" },
+          { step: "Submit and apply changes" },
+        ],
+      },
+      {
+        title: "Who to Designate",
+        steps: [
+          {
+            step: "Common Choices",
+            details: [
+              "Spouse (most common)",
+              "Parent if unmarried",
+              "Adult child or sibling",
+              "Close friend who knows your wishes",
+            ],
+          },
+          {
+            step: "Consider",
+            details: [
+              "Who knows your preferences (burial vs. cremation, location)",
+              "Who can make difficult decisions under emotional stress",
+              "Who is likely to be reachable during a crisis",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Special Instructions",
+        steps: [
+          {
+            step: "Remarks Section",
+            details: [
+              "Use the Remarks section to document specific wishes",
+              "Note preferred burial location, religious considerations, or special requests",
+              "Keep instructions clear and concise",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-red-pay-arrears": {
+    title: "RED Pay Arrears (Unpaid Pay/Allowances)",
+    description: "Designate who receives any unpaid pay and allowances in the event of your death. This includes your final paycheck, unused leave, and outstanding allowances.",
+    capabilities: ["Designate beneficiary", "Set percentage splits", "View current designation", "Understand what's included", "Update elections"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Why This Matters",
+        steps: [
+          {
+            step: "What Pay Arrears Includes",
+            details: [
+              "Unpaid Salary: Any base pay earned but not yet deposited",
+              "Unused Leave: Cashed out at your daily rate (up to 60 days)",
+              "Unpaid Allowances: BAH, BAS, COLA, and other allowances due",
+              "Unpaid Bonuses: Any bonus installments not yet paid",
+              "Travel Claims: Outstanding travel reimbursements",
+            ],
+          },
+          {
+            step: "Why Designate",
+            details: [
+              "Without designation, pay goes to next of kin by statutory order",
+              "You can direct funds to someone other than your primary beneficiaries if desired",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Designating Your Beneficiary",
+        steps: [
+          { step: "Log in to MOL and navigate to RED > Pay Arrears" },
+          { step: "Click 'Edit' or 'Add Beneficiary'" },
+          { step: "Enter beneficiary name and relationship" },
+          { step: "Optionally set percentage splits among multiple beneficiaries" },
+          { step: "Submit and apply changes" },
+        ],
+      },
+      {
+        title: "The Leave Balance Factor",
+        steps: [
+          {
+            step: "Understanding Leave Cash-Out",
+            details: [
+              "Marines with significant leave balances may have substantial payouts",
+              "A Senior Marine with 60 days saved could have $15,000+ in leave value",
+              "Designate someone who can use these funds appropriately",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls",
+        steps: [
+          {
+            step: "Forgetting to Update",
+            details: [
+              "Review after marriage, divorce, or birth of children",
+              "Ensure designated person is still appropriate and reachable",
+            ],
+          },
+          {
+            step: "Assuming It Goes with Death Gratuity",
+            details: [
+              "Pay Arrears and Death Gratuity are separate designations",
+              "You can send them to different people if desired",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-red-do-not-notify": {
+    title: "RED Do Not Notify",
+    description: "Specify persons who should NOT be notified in case of emergency or death. Use this to protect family members who shouldn't receive traumatic news.",
+    capabilities: ["Add do not notify entries", "Provide reasoning", "Protect vulnerable family members", "Update list as needed"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Why This Matters",
+        steps: [
+          {
+            step: "Protecting Vulnerable Family",
+            details: [
+              "Some family members may have health conditions that make notification dangerous",
+              "Elderly parents with heart conditions or dementia may be at risk from sudden news",
+              "Estranged family members may not need or want notification",
+            ],
+          },
+          {
+            step: "Controlling the Process",
+            details: [
+              "You can specify who should NOT be contacted by official channels",
+              "This allows other family members to deliver news in an appropriate manner",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Adding Do Not Notify Entries",
+        steps: [
+          { step: "Log in to MOL and navigate to RED > Do Not Notify" },
+          { step: "Click 'Add Person'" },
+          { step: "Enter the person's name and relationship" },
+          { step: "Provide the reason for exclusion (health condition, estrangement, etc.)" },
+          { step: "Submit and apply changes" },
+        ],
+      },
+      {
+        title: "When to Use This",
+        steps: [
+          {
+            step: "Health Reasons",
+            details: [
+              "Parent with severe heart condition",
+              "Grandparent with dementia who won't understand",
+              "Family member with mental health concerns",
+            ],
+          },
+          {
+            step: "Relationship Reasons",
+            details: [
+              "Estranged parent or sibling",
+              "Ex-spouse who should not be contacted",
+              "Someone you haven't communicated with in years",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Important Notes",
+        steps: [
+          {
+            step: "Alternative Notification",
+            details: [
+              "Communicate with other family members about who will inform excluded persons",
+              "Ensure someone else can deliver news in an appropriate manner",
+              "The CACO will follow your instructions but won't manage family dynamics",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-red-mia": {
+    title: "RED MIA (Missing in Action) Notification",
+    description: "Designate who should be notified if you are declared Missing in Action. MIA notification has unique considerations separate from casualty notification.",
+    capabilities: ["Designate MIA notification contacts", "Set notification preferences", "Provide special instructions", "Update designations"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Why This Matters",
+        steps: [
+          {
+            step: "Different from Casualty Notification",
+            details: [
+              "MIA status means your location and condition are unknown",
+              "Notification is ongoing as information becomes available",
+              "Families may need to wait extended periods for updates",
+            ],
+          },
+          {
+            step: "Emotional Preparation",
+            details: [
+              "MIA notification is uniquely stressful due to uncertainty",
+              "Designate someone who can handle ongoing ambiguity",
+              "Consider who can be the family point of contact for updates",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Designating MIA Contacts",
+        steps: [
+          { step: "Log in to MOL and navigate to RED > MIA Notification" },
+          { step: "Review your current MIA notification designations" },
+          { step: "Ensure contacts are prepared for the unique nature of MIA notification" },
+          { step: "Update contact information to ensure reachability" },
+        ],
+      },
+      {
+        title: "What to Expect",
+        steps: [
+          {
+            step: "Initial Notification",
+            details: [
+              "CACO delivers initial MIA notification in person",
+              "Limited information may be available initially",
+              "Updates are provided as they become available",
+            ],
+          },
+          {
+            step: "Ongoing Communication",
+            details: [
+              "CACO remains assigned throughout MIA status",
+              "Regular updates (even if no new information)",
+              "Support services available for family",
+            ],
+          },
+        ],
+      },
+    ],
+  },
   "mol-reserve-drill": {
     title: "Reserve Drill Summary",
     description: "Your official record of attendance for Inactive Duty Training (IDT). If you are an SMCR or IMA Marine, this page is where you verify that you are being credited—and paid—for your time. For a Reservist, your drill points are your 'currency.'",
@@ -12147,6 +12819,16 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "mol-pers-tempo": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-pers-tempo"]} references={MOL_DATA.references} />,
     "mol-psmc": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-psmc"]} references={MOL_DATA.references} />,
     "mol-red": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-red"]} references={MOL_DATA.references} />,
+    "mol-red-family": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-red-family"]} references={MOL_DATA.references} />,
+    "mol-red-parents": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-red-parents"]} references={MOL_DATA.references} />,
+    "mol-red-nok": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-red-nok"]} references={MOL_DATA.references} />,
+    "mol-red-insurance": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-red-insurance"]} references={MOL_DATA.references} />,
+    "mol-red-death-gratuity": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-red-death-gratuity"]} references={MOL_DATA.references} />,
+    "mol-red-padd": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-red-padd"]} references={MOL_DATA.references} />,
+    "mol-red-pay-arrears": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-red-pay-arrears"]} references={MOL_DATA.references} />,
+    "mol-red-do-not-notify": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-red-do-not-notify"]} references={MOL_DATA.references} />,
+    "mol-red-mia": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-red-mia"]} references={MOL_DATA.references} />,
+    "mol-red-certification": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-red-certification"]} references={MOL_DATA.references} />,
     "mol-reserve-drill": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-reserve-drill"]} references={MOL_DATA.references} />,
     "mol-ros": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-ros"]} references={MOL_DATA.references} />,
     "mol-cultural-info": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-cultural-info"]} references={MOL_DATA.references} />,
@@ -12166,7 +12848,6 @@ export default async function RoleItemPage({ params }: { params: Promise<Params>
     "mol-acknowledgements": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-acknowledgements"]} references={MOL_DATA.references} />,
     "mol-career-designation": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-career-designation"]} references={MOL_DATA.references} />,
     "mol-career-retirement-cert": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-career-retirement-cert"]} references={MOL_DATA.references} />,
-    "mol-red-certification": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-red-certification"]} references={MOL_DATA.references} />,
     "mol-w2-electronic": <MOLFunctionalModuleContent data={MOL_FUNCTIONAL_MODULES["mol-w2-electronic"]} references={MOL_DATA.references} />,
   };
 
