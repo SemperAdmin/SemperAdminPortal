@@ -2186,7 +2186,7 @@ const EFMP_MEDICAL_SCREENING_DATA = {
     { title: "EFMP Website", url: "https://www.militaryonesource.mil/family-relationships/special-needs/", isQuickLink: true },
     { title: "DD Form 2792", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd2792.pdf", isQuickLink: true },
     { title: "DD Form 2792-1", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd2792-1.pdf", isQuickLink: true },
-    { title: "MCO 1754.4B (EFMP)", url: "#", isQuickLink: false },
+    { title: "MCO 1754.4C (EFMP)", url: "https://www.marines.mil/Portals/1/Publications/MCO%201754.4C.pdf?ver=4I7l0tdjMAtWmmgtUS19Sw%3d%3d", isQuickLink: false },
     { title: "DoDI 1315.19 (EFMP)", url: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/131519p.pdf", isQuickLink: false },
   ],
 };
