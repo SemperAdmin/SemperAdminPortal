@@ -725,7 +725,7 @@ export const FAP_TRAINING_DATA = {
     { name: "Installation Family Advocacy Program", info: "Contact through MCCS", url: "https://www.usmc-mccs.org/" },
     { name: "National Domestic Violence Hotline", info: "1-800-799-SAFE (7233)", url: "https://www.thehotline.org/" },
     { name: "Military OneSource", info: "1-800-342-9647", url: "https://www.militaryonesource.mil/" },
-    { name: "Safe Helpline (for sexual assault)", info: "1-877-995-5247 - Note: For domestic sexual abuse, coordinate with FAP", url: "" },
+    { name: "Safe Helpline (for sexual assault)", info: "1-877-995-5247 - Note: For domestic sexual abuse, coordinate with FAP", url: "https://safehelpline.org" },
   ],
   references: [
     { title: "MCO 1754.11A (FAP Program)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },

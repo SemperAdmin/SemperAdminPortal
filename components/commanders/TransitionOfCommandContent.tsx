@@ -718,7 +718,7 @@ export function TransitionOfCommandContent() {
             <h3 className="mb-3 font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Training</h3>
             <div className="space-y-2">
               {[
-                { name: "Cornerstone", desc: "See current MARADMIN", url: "" },
+                { name: "Cornerstone", desc: "MARADMIN 388/25", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4279462/fiscal-year-2026-class-dates-for-cornerstone-the-commandants-combined-commander/" },
                 { name: "Fund Control Training", desc: "DON fiscal training", url: "https://fmonline.ousdc.osd.mil/Default.aspx" },
                 { name: "DRRS-MC Training", desc: "Readiness reporting", url: "https://www.marinenet.usmc.mil/" },
                 { name: "Aviation Safety Surveys", desc: "CSA, MCAS, ASPA", url: "https://www.marineaviation.org" },
