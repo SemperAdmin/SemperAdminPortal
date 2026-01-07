@@ -2184,53 +2184,153 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
         ],
       },
       {
-        title: "How to Update and Certify Your RED",
+        title: "RED Sections Overview",
         steps: [
           {
-            step: "Step 1: Access the Page",
+            step: "Family Information",
             details: [
-              "Log in to MOL at https://mol.tfs.usmc.mil/",
-              "Navigate to Personal Info > Record of Emergency Data (RED)",
+              "Spouse and children addresses for emergency notification",
+              "Spouse preferred language for CACO communication",
+              "NEO planning data for OCONUS Marines",
             ],
           },
           {
-            step: "Step 2: Verify the Data",
+            step: "Parents Information",
             details: [
-              "Check your spouse, children, and parents",
-              "Ensure addresses and phone numbers are current",
-              "Verify beneficiary designations are correct",
+              "Secondary Next of Kin contact information",
+              "Parents are notified even if you are married",
             ],
           },
           {
-            step: "Step 3: To Update (Edit)",
+            step: "Next of Kin (NOK)",
             details: [
-              "Click the 'Edit' link next to the section you need to change (e.g., 'Emergency Contact' or 'Beneficiary')",
-              "Enter the new information",
-              "Saving an edit automatically 'certifies' that section",
+              "Primary and secondary emergency contacts",
+              "Directions to help CACOs locate addresses",
             ],
           },
           {
-            step: "Step 4: To Certify (No Changes)",
+            step: "Death Gratuity",
             details: [
-              "If everything is correct, click the 'Certify' button at the bottom",
-              "Click 'Confirm' on the pop-up",
-              "The 'Certification Date' will update once the system (MCTFS) processes it",
+              "$100,000 tax-free payment to designated beneficiaries",
+              "Percentages must total exactly 100%",
             ],
           },
           {
-            step: "Step 5: Print/Save",
+            step: "PADD",
             details: [
-              "Click 'Printer-Friendly View'",
-              "Click 'Print' (Save as PDF) - this is a required document for every pre-deployment 'shred' or 'audit'",
+              "Person Authorized to Direct Disposition of your remains",
+              "Decides burial location, cremation vs. burial, funeral arrangements",
+            ],
+          },
+          {
+            step: "Pay Arrears",
+            details: [
+              "Designates who receives unpaid pay, leave, and allowances",
+              "Separate from Death Gratuity and SGLI",
+            ],
+          },
+          {
+            step: "Insurance Information",
+            details: [
+              "Record private insurance policies for family reference",
+              "SGLI is managed separately via milConnect",
+            ],
+          },
+          {
+            step: "Do Not Notify",
+            details: [
+              "Protect vulnerable family members from direct notification",
+              "For those with health conditions that make sudden notification dangerous",
+            ],
+          },
+          {
+            step: "MIA Notification",
+            details: [
+              "Designate contacts for Missing in Action status",
+              "Different from standard casualty notification",
             ],
           },
         ],
       },
       {
-        title: "Family Information Section",
+        title: "Common Pitfalls to Avoid",
         steps: [
           {
-            step: "Why Family Data Matters",
+            step: "The SGLI Trap",
+            details: [
+              "Updating your RED does NOT update your SGLI (Life Insurance)",
+              "You must go to milConnect (SOES) to change your life insurance beneficiaries",
+              "These are two separate systems - update BOTH",
+            ],
+          },
+          {
+            step: "PO Boxes",
+            details: [
+              "Do NOT use a PO Box for emergency notification addresses",
+              "The Marine Corps needs a physical address where a CACO can find your family",
+            ],
+          },
+          {
+            step: "The Ex-Spouse Error",
+            details: [
+              "If you get divorced and don't update this page, your $100,000 death gratuity will legally go to your ex-spouse",
+              "This is true regardless of what your will says",
+              "Update immediately after any change in marital status",
+            ],
+          },
+          {
+            step: "Pending vs. Posted",
+            details: [
+              "Changes take 24-48 hours to process through MCTFS",
+              "Do not re-submit the same change if you see it in bold - it's already in the queue",
+              "Bold text returning to normal means the change has posted",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Annual Certification",
+        steps: [
+          {
+            step: "When to Certify",
+            details: [
+              "Annually at minimum",
+              "Before deployment",
+              "After major life events (marriage, divorce, birth of child)",
+              "After PCS moves",
+            ],
+          },
+          {
+            step: "Certification Process",
+            details: [
+              "Review all sections for accuracy",
+              "If everything is correct, click the 'Certify' button",
+              "Certification is required for deployment readiness",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  "mol-red-family": {
+    title: "RED Family Information",
+    description: "Update spouse and dependent information in your Record of Emergency Data. This section ensures the Marine Corps can locate and notify your family members in case of emergency, and properly manage benefits and evacuation planning.",
+    capabilities: ["Update spouse information", "Add/edit dependent children", "Manage family addresses", "Set spouse preferred language", "Update contact numbers", "Support NEO planning"],
+    userTypes: ["All Marines"],
+    guide: [
+      {
+        title: "Why Family Data Matters",
+        steps: [
+          {
+            step: "Emergency Notification",
+            details: [
+              "Your spouse is typically the Primary Next of Kin (PNOK) and will be contacted first in any emergency",
+              "Physical addresses are required - the Marine Corps sends a Casualty Assistance Calls Officer (CACO) in person",
+              "Outdated addresses delay critical notifications to your family",
+            ],
+          },
+          {
+            step: "Deployment and NEO Planning",
             details: [
               "If you are deployed or in a training environment, your command must know exactly where your spouse and children are",
               "In a worst-case scenario, the Marine Corps needs the current address of your family for casualty notification",
@@ -2372,29 +2472,52 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
         ],
       },
       {
-        title: "Common Pitfalls to Avoid",
+        title: "Spouse Preferred Language",
         steps: [
           {
-            step: "The SGLI Trap",
+            step: "Why This Setting Matters",
             details: [
-              "Updating your RED does NOT update your SGLI (Life Insurance)",
-              "You must go to milConnect (SOES) to change your life insurance beneficiaries",
-              "These are two separate systems - update BOTH",
+              "If a Casualty Assistance Calls Officer (CACO) is dispatched to your home, the Marine Corps uses this data to ensure they have a translator or can communicate in your spouse's primary language",
+              "During natural disasters or NEO evacuations, your command needs to provide instructions your spouse can understand immediately",
+              "This helps the Marine Corps honor your family's background by ensuring they aren't left in the dark due to a language barrier",
             ],
           },
+          {
+            step: "How to Set the Language",
+            details: [
+              "On the RED Family Information page, click 'Add Spouse Preferred Language' or 'Edit Spouse Preferred Language'",
+              "Select the correct language from the Preferred Language dropdown menu",
+              "Click 'Submit Changes'",
+              "Review the selection and click 'Apply Changes' to save",
+              "If you made a mistake, click 'Cancel' to return without saving",
+            ],
+          },
+          {
+            step: "Spouse Language Pitfalls",
+            details: [
+              "Many Marines leave this blank assuming English is 'fine' - if your spouse is more comfortable in their native tongue for complex or emotional matters, list that language",
+              "After applying changes, the language appears in bold (Pending) for 24-48 hours while MCTFS processes",
+              "This is for your spouse - your own language skills are tracked in Self-Professed Language Skills or Operational Cultural Information",
+            ],
+          },
+          {
+            step: "After Setting the Language",
+            details: [
+              "Once bold text turns normal, your spouse's preferred language is officially part of your certified RED",
+              "If your spouse's language is rare, mention this to your Unit's Family Readiness Officer (FRO)",
+              "Check if you have also listed that language in your Operational Cultural Information Report if you speak it",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls",
+        steps: [
           {
             step: "PO Boxes",
             details: [
               "Do NOT use a PO Box for emergency notification addresses",
               "The Marine Corps needs a physical address where a CACO can find your family",
-            ],
-          },
-          {
-            step: "The Ex-Spouse Error",
-            details: [
-              "If you get divorced and don't update this page, your $100,000 death gratuity will legally go to your ex-spouse",
-              "This is true regardless of what your will says",
-              "Update immediately after any change in marital status",
             ],
           },
           {
@@ -2443,79 +2566,19 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
           },
         ],
       },
+    ],
+  },
+  "mol-red-parents": {
+    title: "RED Parents Information",
+    description: "Update parent contact and beneficiary details in your Record of Emergency Data. Parents are Secondary Next of Kin and entitled to official notification even if you are married.",
+    capabilities: ["Update parent addresses", "Mark parent as deceased", "Edit contact information", "Manage step-parent records", "Update international addresses"],
+    userTypes: ["All Marines"],
+    guide: [
       {
-        title: "What Happens After You Finish",
+        title: "Why Parent Data Matters",
         steps: [
           {
-            step: "MCTFS Processing",
-            details: [
-              "It usually takes 24-48 hours for your certification to post",
-              "Once it does, the red 'Out of Date' flag on your MOL homepage will disappear",
-              "Check that bold text has returned to normal to confirm processing",
-            ],
-          },
-          {
-            step: "Verify the PADD",
-            details: [
-              "Navigate to the PADD (Person Authorized to Direct Disposition) section",
-              "Ensure the correct person is designated to handle final arrangements",
-              "This is the person you trust to make your funeral decisions",
-            ],
-          },
-          {
-            step: "Audit Your SGLI",
-            details: [
-              "Go to milConnect and check your SGLI Online Enrollment System (SOES)",
-              "Ensure your life insurance beneficiaries match your current family status",
-              "Your SGLV 8286 should align with your RED designations",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Spouse Preferred Language",
-        steps: [
-          {
-            step: "Why This Setting Matters",
-            details: [
-              "If a Casualty Assistance Calls Officer (CACO) is dispatched to your home, the Marine Corps uses this data to ensure they have a translator or can communicate in your spouse's primary language",
-              "During natural disasters or NEO evacuations, your command needs to provide instructions your spouse can understand immediately",
-              "This helps the Marine Corps honor your family's background by ensuring they aren't left in the dark due to a language barrier",
-            ],
-          },
-          {
-            step: "How to Set the Language",
-            details: [
-              "On the RED Family Information page, click 'Add Spouse Preferred Language' or 'Edit Spouse Preferred Language'",
-              "Select the correct language from the Preferred Language dropdown menu",
-              "Click 'Submit Changes'",
-              "Review the selection and click 'Apply Changes' to save",
-              "If you made a mistake, click 'Cancel' to return without saving",
-            ],
-          },
-          {
-            step: "Spouse Language Pitfalls",
-            details: [
-              "Many Marines leave this blank assuming English is 'fine' - if your spouse is more comfortable in their native tongue for complex or emotional matters, list that language",
-              "After applying changes, the language appears in bold (Pending) for 24-48 hours while MCTFS processes",
-              "This is for your spouse - your own language skills are tracked in Self-Professed Language Skills or Operational Cultural Information",
-            ],
-          },
-          {
-            step: "After Setting the Language",
-            details: [
-              "Once bold text turns normal, your spouse's preferred language is officially part of your certified RED",
-              "If your spouse's language is rare, mention this to your Unit's Family Readiness Officer (FRO)",
-              "Check if you have also listed that language in your Operational Cultural Information Report if you speak it",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Parents Information",
-        steps: [
-          {
-            step: "Why Parent Data Matters",
+            step: "Notification Rights",
             details: [
               "While a spouse is typically the Primary Next of Kin (PNOK), parents are Secondary Next of Kin and still entitled to official notification",
               "For deceased or missing Marines, a uniformed CACO is dispatched to the parents' address",
@@ -2531,243 +2594,109 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
               "'D' Indicator: Parent is officially listed as deceased in MCTFS",
             ],
           },
+        ],
+      },
+      {
+        title: "Managing Parent Records",
+        steps: [
+          { step: "Log in to MOL and navigate to RED > Parents Information" },
+          { step: "Click 'Edit' next to a parent's name to update their physical address or phone number" },
+          { step: "Click 'Remove This Address' if a parent has moved and you don't have their new location yet" },
           {
-            step: "Managing Parent Records",
+            step: "Understanding Remove vs. Cancel",
             details: [
-              "Click 'Edit' next to a parent's name to update their physical address or phone number",
-              "Click 'Remove This Address' if a parent has moved and you don't have their new location yet",
               "Removing the address does not remove the parent from your record - it only clears the address field",
               "Click 'Cancel Removal' if you accidentally marked an address for removal",
             ],
           },
+        ],
+      },
+      {
+        title: "Updating a Deceased Parent",
+        steps: [
+          { step: "Check the 'Deceased' box next to the parent's name" },
+          { step: "Click 'Submit Changes' - the system automatically removes any existing address records" },
+          { step: "This prevents the Marine Corps from attempting to locate them during a crisis" },
+        ],
+      },
+      {
+        title: "U.S. Parent Address",
+        steps: [
           {
-            step: "Updating a Deceased Parent",
+            step: "Format Selection",
             details: [
-              "Check the 'Deceased' box next to the parent's name",
-              "Click 'Submit Changes' - the system automatically removes any existing address records",
-              "This prevents the Marine Corps from attempting to locate them during a crisis",
+              "Click 'Reformat This Address' if the boxes don't match a standard U.S. address format",
             ],
           },
           {
-            step: "U.S. Parent Address",
+            step: "Street Address Entry",
             details: [
-              "Click 'Reformat This Address' if the boxes don't match a standard U.S. address format",
               "Type the street address - do not use any punctuation (commas, periods, or dashes)",
               "If using a PO Box or Rural Route, you must also provide physical directions on the Next of Kin Directions page",
+            ],
+          },
+          {
+            step: "City, State, and Zip",
+            details: [
               "Type the city, two-letter state initials, and 5 or 9-digit Zip Code",
             ],
           },
+        ],
+      },
+      {
+        title: "International Parent Address",
+        steps: [
           {
-            step: "International Parent Address",
+            step: "Foreign Address Setup",
             details: [
               "Click 'Reformat This Address' to configure boxes for foreign (non APO/FPO) listing",
               "Type the full address as it appears in that country - no punctuation",
             ],
           },
+        ],
+      },
+      {
+        title: "Common Pitfalls",
+        steps: [
           {
-            step: "Parent Information Pitfalls",
+            step: "Unknown Parent Location",
             details: [
               "If you are estranged or don't know a parent's location, type 'Unknown' in the address field - do not leave it blank",
+            ],
+          },
+          {
+            step: "Step-Parents",
+            details: [
               "Ensure you distinguish between Parent One, Parent Two, and Step-Parents - CACO prioritizes biological/adoptive parents unless you specify otherwise in the Remarks section",
+            ],
+          },
+          {
+            step: "Health Concerns",
+            details: [
               "If a parent is in extremely poor health (dementia, heart condition), use the 'Do Not Notify' section to prevent stressful notification",
+            ],
+          },
+          {
+            step: "Punctuation Errors",
+            details: [
               "MCTFS often rejects entries with punctuation - type '123 Main St Apt 4' not '123 Main St., Apt. #4'",
             ],
           },
         ],
       },
+    ],
+  },
+  "mol-red-nok": {
+    title: "RED Next of Kin (NOK)",
+    description: "Designate your emergency notification contacts and provide detailed directions to help Casualty Assistance officers locate your family members.",
+    capabilities: ["Set Primary NOK", "Set Secondary NOK", "Provide address directions", "Add special instructions", "Update contact preferences"],
+    userTypes: ["All Marines"],
+    guide: [
       {
-        title: "Pay Arrears (Unpaid Pay and Allowances)",
+        title: "Why NOK Data Is Critical",
         steps: [
           {
-            step: "What Pay Arrears Includes",
-            details: [
-              "Unpaid Salary: Any base pay earned but not yet deposited",
-              "Unused Leave: Payment for accrued leave days (up to 60 days)",
-              "Allowances: Unpaid BAH, BAS, or specialized pays (Jump Pay, Sea Pay, etc.)",
-              "Travel Reimbursements: Any pending travel claims from PCS or TAD",
-              "This is NOT your life insurance (SGLI) - that is handled separately via milConnect",
-            ],
-          },
-          {
-            step: "The 100% Rule",
-            details: [
-              "The total of all beneficiaries must equal exactly 100%",
-              "If you have one person at 50% and no one else listed, the remaining 50% is distributed by law, not your preference",
-              "You cannot save a new beneficiary if your current list already totals 100%",
-              "You must first edit an existing person (e.g., change 100% to 50%) to free up percentage points",
-            ],
-          },
-          {
-            step: "Adding or Editing a Beneficiary",
-            details: [
-              "Locate the 'Beneficiary(ies) Unpaid Pay/Allowances' section on your RED",
-              "Click 'Add New Pay Arrears Record'",
-              "Enter the beneficiary's full legal name, relationship, address, and percentage",
-              "Click 'Submit' and then 'Apply Changes'",
-            ],
-          },
-          {
-            step: "Address Formatting (No Punctuation Rule)",
-            details: [
-              "Type '123 Main St Apt 4' instead of '123 Main St., Apt. #4'",
-              "Use two-letter state initials (CA, NC)",
-              "If using a PO Box, you must also provide physical directions on the Next of Kin Directions page",
-              "For foreign addresses, click 'Reformat This Address' and type without punctuation",
-            ],
-          },
-          {
-            step: "Removing or Canceling",
-            details: [
-              "Click 'Remove' next to a beneficiary - the name turns red with strikethrough",
-              "Click 'Cancel Removal' before the transaction processes to restore the record",
-              "Click 'Remove This Address' to clear an address while keeping the beneficiary valid",
-            ],
-          },
-          {
-            step: "Pay Arrears Pitfalls",
-            details: [
-              "If your beneficiary moves and you don't update, the check is mailed to the old address - significant delays for your family",
-              "Don't confuse Pay Arrears with Death Gratuity ($100,000) or SGLI (Life Insurance) - these are three separate systems",
-              "Bold text means pending (24-48 hours), red text means it's about to be deleted",
-              "If your Pay Arrears beneficiary is the same as your PADD, ensure addresses match exactly in both sections",
-            ],
-          },
-          {
-            step: "After Updating Pay Arrears",
-            details: [
-              "Verify your percentages add up to exactly 100% on the main RED page",
-              "Check Death Gratuity designation for the larger $100,000 sum",
-              "Audit annually - check this page every time you have a life event (marriage, birth, divorce)",
-              "Verify on your Basic Individual Record (BIR) in two days that changes are reflected",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Do Not Notify Information",
-        steps: [
-          {
-            step: "Why This Feature Exists",
-            details: [
-              "Protects vulnerable family members from the sudden shock of casualty notification",
-              "If a parent has severe heart condition, advanced dementia, or is hospitalized, a sudden CACO visit could cause a medical crisis",
-              "Allows you to tell the Marine Corps: 'Do not go to this person directly - go to this other person first so they can break the news gently'",
-              "This does not mean the person will never find out - it ensures they are told by a loved one rather than a stranger in uniform",
-            ],
-          },
-          {
-            step: "Adding a Do Not Notify Record",
-            details: [
-              "Click 'Add New Do Not Notify Record'",
-              "Provide the name of the person who should NOT be notified directly",
-              "Provide the reason (e.g., 'Heart condition', 'Advanced age/Dementia')",
-              "Provide the name and contact info of the person who SHOULD be contacted to handle the notification",
-            ],
-          },
-          {
-            step: "Managing Records",
-            details: [
-              "Click 'Details' to see the full context of a record",
-              "Click 'Edit' to update a phone number for the intermediary contact",
-              "Click 'Remove' if a family member's health improves - text turns red with strikethrough",
-              "Click 'Cancel Removal' if you accidentally clicked remove (within 24-48 hours)",
-            ],
-          },
-          {
-            step: "Address Formatting",
-            details: [
-              "Click 'Reformat This Address' to toggle between U.S. and Foreign address structures",
-              "Do not use periods, commas, or dashes - type '123 Main St Apt 4' not '123 Main St., Apt. #4'",
-              "Enter Street, City, State (initials only), and Zip Code for U.S. addresses",
-            ],
-          },
-          {
-            step: "Who Should Be on This List",
-            details: [
-              "Medical Frailty: Grandparent or parent with history of heart failure or stroke",
-              "Mental Health: Family member currently in psychiatric facility or severe mental health crisis",
-              "Dementia/Alzheimer's: Relative who would not understand and might become dangerously agitated",
-              "This is NOT primarily for people you are estranged from - it's for medical safety",
-            ],
-          },
-          {
-            step: "Do Not Notify Pitfalls",
-            details: [
-              "Simply putting someone on this list is only half the job - you must identify who SHOULD break the news in your NOK or PADD section",
-              "Even though you're requesting 'No Notification,' the Marine Corps still needs their address for complete family records",
-              "Clicking 'Remove This Address' only deletes the location, not the instruction - use 'Remove' to clear the whole instruction",
-              "Changes appear in bold for 24-48 hours while pending",
-            ],
-          },
-          {
-            step: "After Adding Do Not Notify",
-            details: [
-              "Inform the intermediary that they are listed on your RED and what their role would be",
-              "Check the 'Directions' section if the notify-instead person lives in a rural or hard-to-find area",
-              "Audit annually - if a parent recovers, remove them so they can receive direct notification with honor",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Insurance Information (Private Policies)",
-        steps: [
-          {
-            step: "Why Private Insurance Matters",
-            details: [
-              "When a CACO sits down with your family, they use this list to help identify which insurance companies to call",
-              "If a policy isn't listed here, your family might not know it exists - leaving thousands unclaimed",
-              "This consolidates USAA, Navy Federal, civilian employer policies, etc. into one official military record",
-              "Having policy numbers pre-loaded allows the CACO to help start claims within days",
-              "This is SEPARATE from SGLI - do NOT list your SGLI here (that's managed via milConnect SOES)",
-            ],
-          },
-          {
-            step: "Managing Insurance Records (Up to 5 Policies)",
-            details: [
-              "Click 'Add New Insurance Record'",
-              "Provide: Insurance Company Name, Policy Number, Company Address and Phone Number",
-              "Click 'Edit' to update if coverage amount changes or company merges/changes name",
-              "Click 'Remove' to delete an expired or cancelled policy",
-              "Click 'Cancel Removal' before the 24-48 hour sync window closes if you made a mistake",
-            ],
-          },
-          {
-            step: "The 25-Character Constraint",
-            details: [
-              "MOL limits this field to a maximum of 25 characters",
-              "Prioritize the Policy Number - company names are easy to guess, policy numbers are unique and vital",
-              "Abbreviate heavily: 'Northwestern Mutual 555-1234' becomes 'NW Mut5551234'",
-              "Example: 'State Farm Insurance 987654' becomes 'StateFrm987654'",
-              "Keep at least 4-5 letters of company name so it's recognizable",
-              "Avoid using #, -, or . as they take up valuable character spaces",
-            ],
-          },
-          {
-            step: "Insurance Pitfalls",
-            details: [
-              "Don't just write 'MetLife' - specify the branch or policy type if possible",
-              "If you renew a term-life policy and get a new number, you must update it here",
-              "An incorrect policy number can delay a claim for months",
-              "This information is viewable by S-1 and command leadership - include only what's necessary for claims",
-            ],
-          },
-          {
-            step: "After Updating Insurance",
-            details: [
-              "Check SGLI/SOES on milConnect to ensure military insurance beneficiaries are also current",
-              "Inform your beneficiaries where you keep original hard-copy documents - MOL is the 'pointer' but they'll need actual papers",
-              "Verify on BIR in 48 hours that carriers are listed in the Insurance section",
-              "Make sure your PADD knows these policies exist",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Next of Kin (NOK) Contact Information",
-        steps: [
-          {
-            step: "Why NOK Data Is Critical",
+            step: "In-Person Notification",
             details: [
               "The Marine Corps has a strict 8-hour goal to notify your family in person after a casualty",
               "Primary Next of Kin (PNOK): First person contacted - spouse if married, parents if single",
@@ -2776,8 +2705,13 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
               "Wrong addresses often lead to families hearing news through social media first - a situation the Marine Corps works to avoid",
             ],
           },
+        ],
+      },
+      {
+        title: "Managing NOK Records",
+        steps: [
           {
-            step: "Managing NOK Records (Up to 3)",
+            step: "Adding or Editing NOK (Up to 3)",
             details: [
               "Click 'Add Next of Kin Record' (up to three) or 'Edit' an existing one",
               "Ensure your PNOK is listed first",
@@ -2786,43 +2720,39 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
               "Click 'Apply Changes' to send update to MCTFS",
             ],
           },
+        ],
+      },
+      {
+        title: "Phone Number Formatting",
+        steps: [
           {
-            step: "Phone Number Formatting",
+            step: "U.S. Phone Numbers",
             details: [
               "Click 'reformat this phone' to toggle between U.S. and Overseas formats",
               "U.S. Format: 10 digits (Area Code + Number)",
-              "Overseas Format: Up to 15 digits (Country Code + City Code + Number)",
               "Provide a 24-hour contact number",
               "Include extension in the extension box only for office extensions (e.g., x102)",
-              "For foreign numbers, verify correct prefix at countrycallingcodes.com",
             ],
           },
           {
-            step: "Relationship Hierarchy",
+            step: "Overseas Phone Numbers",
+            details: [
+              "Overseas Format: Up to 15 digits (Country Code + City Code + Number)",
+              "For foreign numbers, verify correct prefix at countrycallingcodes.com",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Relationship Hierarchy",
+        steps: [
+          {
+            step: "Selecting the Right Relationship",
             details: [
               "The 'Relationship' you select defines the legal order of notification",
               "Select accurately: Spouse, Mother, Father, Sibling, etc.",
               "Spouse is Primary Next of Kin (PNOK) for married Marines",
               "Parents are usually PNOK for single Marines",
-            ],
-          },
-          {
-            step: "NOK Pitfalls",
-            details: [
-              "Update this every time you move or your family moves - avoid the 'Social Media Risk'",
-              "Don't use periods or commas in addresses - use '123 Main St Apt 4' not '123 Main St., Apt. 4'",
-              "Don't put last four digits of phone in extension box - that's only for office extensions",
-              "Ensure phone here matches number in RED Family Information section",
-              "Bold text takes 24-48 hours to return to normal while syncing",
-            ],
-          },
-          {
-            step: "After Updating NOK",
-            details: [
-              "Audit your PADD to ensure correct person handles funeral honors",
-              "If NOK is a spouse who recently moved, update DEERS via local ID card office",
-              "Review 'Do Not Notify' list if any NOK has severe health issues",
-              "Check BTR in two days to verify relationship and phone migrated correctly",
             ],
           },
         ],
@@ -2858,8 +2788,22 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
               "PO Box Users: MUST provide physical location description here",
             ],
           },
+        ],
+      },
+      {
+        title: "Common Pitfalls",
+        steps: [
           {
-            step: "Directions Pitfalls",
+            step: "Address and Phone Errors",
+            details: [
+              "Update this every time you move or your family moves - avoid the 'Social Media Risk'",
+              "Don't use periods or commas in addresses - use '123 Main St Apt 4' not '123 Main St., Apt. 4'",
+              "Don't put last four digits of phone in extension box - that's only for office extensions",
+              "Ensure phone here matches number in RED Family Information section",
+            ],
+          },
+          {
+            step: "Direction Mistakes",
             details: [
               "Using symbols like & or % can cause MCTFS to reject - use 'and' or omit",
               "'Third house on the left' is vague at night - use 'Third house on left, brown fence'",
@@ -2867,457 +2811,26 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
               "Bold text appears for 24-48 hours while syncing",
             ],
           },
+        ],
+      },
+      {
+        title: "After Updating NOK",
+        steps: [
           {
-            step: "After Writing Directions",
+            step: "Verification Steps",
+            details: [
+              "Audit your PADD to ensure correct person handles funeral honors",
+              "If NOK is a spouse who recently moved, update DEERS via local ID card office",
+              "Review 'Do Not Notify' list if any NOK has severe health issues",
+              "Check BTR in two days to verify relationship and phone migrated correctly",
+            ],
+          },
+          {
+            step: "Direction Verification",
             details: [
               "Test: Read your 175 characters to a friend - if they can't visualize it, rewrite for clarity",
               "Verify on BTR in two days that NOK Directions section reflects your input",
               "If the person is also your PADD, you've secured the most critical part of your emergency data",
-            ],
-          },
-        ],
-      },
-      {
-        title: "MIA Notification Information",
-        steps: [
-          {
-            step: "Why MIA Designation Is Different",
-            details: [
-              "Missing in Action status involves long-term uncertainty, legal shifts in pay status, and media interest",
-              "A dedicated CACO is assigned who specializes in long-term cases as official liaison between family and DoD",
-              "This designated person is authorized to receive sensitive updates regarding search and recovery efforts",
-              "Your pay continues to accrue during MIA status - this person handles administrative issues",
-            ],
-          },
-          {
-            step: "Managing MIA Records",
-            details: [
-              "Click 'Add New MIA Notify Record'",
-              "Provide full legal name, relationship, 24-hour phone number, and physical directions to residence",
-              "Click 'Edit' if your designated person moves or changes their number",
-              "Click 'Remove' to designate a different person",
-              "Changes appear in bold for 24-48 hours while pending",
-            ],
-          },
-          {
-            step: "Required Information",
-            details: [
-              "Name: Full legal name (First, Middle Initial, Last)",
-              "Directions: 5 lines of 35 characters each for physical location",
-              "If PO Box/Rural: Describe physical house (e.g., '3rd house past grain silo, green mailbox')",
-              "If Overseas: Include international phone number in direction boxes as backup",
-              "Phone Numbers: Provide TWO different numbers if possible (Cell + Work, or Cell + Home)",
-              "Include area code for all U.S. numbers",
-            ],
-          },
-          {
-            step: "MIA Pitfalls",
-            details: [
-              "Don't leave this blank assuming NOK section covers it - systems pull from this specific field for MIA cases",
-              "Don't type 'Same as Next of Kin' in directions - automated systems may not read that instruction",
-              "Avoid periods and commas - use 'Apt 4' not 'Apt. #4'",
-              "Don't leave second phone box blank if there's any other way to reach family",
-              "Ensure the person you list can handle potential media scrutiny - MIA cases attract public attention",
-            ],
-          },
-          {
-            step: "After Updating MIA",
-            details: [
-              "Inform the contact that they are your MIA Notify person and would receive official DoD updates",
-              "Coordinate with your PADD - often the same person for both roles",
-              "Review Pay Arrears section since pay continues during MIA status",
-              "Verify on BTR in two business days that MIA section is populated correctly",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Death Gratuity Information ($100,000)",
-        steps: [
-          {
-            step: "Purpose of the Death Gratuity",
-            details: [
-              "A $100,000 tax-free payment made by DoD to your survivors within days of death",
-              "Unlike SGLI (which can take weeks), this is designed as immediate cash injection for your family",
-              "Covers travel for funeral, housing costs, and urgent expenses before other benefits kick in",
-              "By law, automatically directed to surviving spouse or children unless you designate Additional Beneficiaries",
-            ],
-          },
-          {
-            step: "Managing Death Gratuity Beneficiaries",
-            details: [
-              "Check the main RED page to see who is currently listed",
-              "You generally cannot edit a spouse's info here - that must be done via DEERS/IPAC",
-              "Click 'Add Additional Death Gratuity Record' to add beneficiaries",
-              "Provide full legal name, relationship, and specific percentage (e.g., 50% Mom, 50% Dad)",
-              "Click 'Edit' if an additional beneficiary has moved or changed phone number",
-              "Click 'Remove' to delete - turns red to show marked for deletion",
-              "Click 'Cancel Removal' if you made a mistake",
-            ],
-          },
-          {
-            step: "The 100% Rule and By-Law Distribution",
-            details: [
-              "Total percentages among additional beneficiaries must equal exactly 100%",
-              "If designations don't total 100%, system reverts remainder to 'By-Law' status",
-              "'By-Law' means government decides based on standard line of succession - not your choice",
-              "If you're married and designate anyone other than spouse, system triggers official notification to your command",
-              "Your CO will then be required to inform your spouse of your decision",
-              "You can list up to 10 additional beneficiaries",
-            ],
-          },
-          {
-            step: "Address and Phone Formatting",
-            details: [
-              "Use 'Reformat This Address' to switch between U.S. and Foreign layouts",
-              "Do not use periods or commas - type '123 Main St Apt 4' not '123 Main St., Apt. #4'",
-              "U.S.: Street, city, 2-letter state initials, Zip Code",
-              "Foreign: Type address as it appears locally, include Country Code and City Code for phone",
-              "Phone must be 24-hour contact - Area Code-Prefix-Suffix format for U.S.",
-            ],
-          },
-          {
-            step: "Death Gratuity Pitfalls",
-            details: [
-              "Don't confuse with SGLI - SGLI is up to $500,000 (you pay for it), Death Gratuity is flat $100,000 (government provides)",
-              "Updates appear in bold for 24-48 hours while MCTFS processes",
-              "If beneficiaries add up to 99%, the remaining 1% triggers By-Law distribution - complicates entire payout",
-              "For minor children, money may be held in trust or require legal guardian - delays 'immediate' nature",
-              "Outdated phone numbers mean money stays in government account instead of family's hands",
-              "MCTFS rejects entries with dashes in phone or periods in address",
-            ],
-          },
-          {
-            step: "After Updating Death Gratuity",
-            details: [
-              "Double-check that percentages equal exactly 100%",
-              "Review PADD section - person receiving $100,000 is often best person to handle funeral arrangements",
-              "Death Gratuity provides cash for funeral, so coordinate PADD and beneficiary designations",
-              "Verify on BIR in two days that Death Gratuity section reflects your designations",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Person Authorized to Direct Disposition (PADD)",
-        steps: [
-          {
-            step: "Why PADD Is Your Most Important Legal Designation",
-            details: [
-              "The PADD is the ONLY person legally authorized by DoD to make decisions regarding your remains",
-              "Without a designated PADD, funeral arrangements can be delayed by weeks if family members disagree",
-              "Your PADD decides: level of military honors, type of headstone, final resting place (private vs Arlington)",
-              "Marine Corps provides PADD with specific allowances and a CACO to navigate funeral logistics",
-            ],
-          },
-          {
-            step: "The Default Order of Precedence (If You Leave PADD Blank)",
-            details: [
-              "1. Unremarried Surviving Spouse",
-              "2. Children (in order of seniority)",
-              "3. Parents (in order of seniority)",
-              "4. Siblings (in order of seniority)",
-              "5. Grandparents / Other Relatives",
-              "By designating a PADD, you choose exactly who takes charge regardless of their position in this list",
-            ],
-          },
-          {
-            step: "Designating Your PADD",
-            details: [
-              "Locate the PADD section on your RED",
-              "Click the 'Edit' link to open the Update RED PADD page",
-              "Most Marines choose their Primary Next of Kin (Spouse or Parent), but you can designate any adult",
-              "The person must be legally competent and reachable",
-              "PADD must be at least 18 years old - enter their DOB in DD MMM YYYY format (e.g., 04 JUL 1990)",
-              "Ensure name, address, and 24-hour phone number are 100% accurate",
-              "Click 'Submit Changes' and then 'Apply Changes'",
-            ],
-          },
-          {
-            step: "Address Format Requirements",
-            details: [
-              "Use 'Reformat This Address' to switch between U.S., APO/FPO, and Foreign layouts",
-              "U.S. Address: Use 2-letter state initials and Zip+4 code (9 digits)",
-              "APO/FPO: Enter PSC/Box or Unit/UIC, select correct region (AA, AE, or AP)",
-              "Foreign: Provide full address as formatted in that country",
-              "No punctuation - type '123 Main St Apt 4' not '123 Main St., Apt. #4'",
-              "If you don't know Zip+4, look it up on USPS website - system often requires full 9 digits",
-            ],
-          },
-          {
-            step: "PADD Pitfalls",
-            details: [
-              "You can only name ONE PADD - you cannot name 'My Mom and Dad'",
-              "If you don't choose, law follows strict order of precedence which may not match your family dynamic",
-              "If PADD is same as Primary Next of Kin, ensure addresses match exactly in both sections",
-              "DOB format matters - type '02 JAN 1980' not '01/02/1980' or system may reject",
-              "After 'Apply Changes', system returns to MOL Home Page - this is normal",
-              "PADD appears in bold until certified (24-48 hours) - not legally valid until bold disappears",
-              "Click 'Details' link to verify exactly what was submitted",
-            ],
-          },
-          {
-            step: "After Designating PADD",
-            details: [
-              "Have 'The Talk' - ensure the person KNOWS they are PADD and discuss your burial vs cremation wishes",
-              "Discuss your preferred location for final honors",
-              "Coordinate finances - PADD handles funeral costs (Marine Corps reimburses later)",
-              "Ensure PADD is also listed in Death Gratuity or Pay Arrears for immediate funds",
-              "Confirm PADD is comfortable with responsibility and has valid ID to access military installations",
-              "Verify on BTR in two business days that PADD section is no longer 'Pending'",
-              "Final RED Review - once PADD is set, review entire RED for any other bold (pending) text",
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  "mol-red-family": {
-    title: "RED Family Information",
-    description: "Update spouse and dependent information in your Record of Emergency Data. This section ensures the Marine Corps can locate and notify your family members in case of emergency, and properly manage benefits and evacuation planning.",
-    capabilities: ["Update spouse information", "Add/edit dependent children", "Manage family addresses", "Set spouse preferred language", "Update contact numbers", "Support NEO planning"],
-    userTypes: ["All Marines"],
-    guide: [
-      {
-        title: "Why This Matters",
-        steps: [
-          {
-            step: "Emergency Notification",
-            details: [
-              "Your spouse is typically the Primary Next of Kin (PNOK) and will be contacted first in any emergency",
-              "Physical addresses are required - the Marine Corps sends a Casualty Assistance Calls Officer (CACO) in person",
-              "Outdated addresses delay critical notifications to your family",
-            ],
-          },
-          {
-            step: "NEO Planning",
-            details: [
-              "If stationed overseas, family address data supports Noncombatant Evacuation Operations (NEO)",
-              "Accurate dependent information ensures your family is accounted for during evacuations",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Updating Spouse Information",
-        steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Record of Emergency Data (RED) > Family Information" },
-          { step: "Click 'Edit' next to your spouse's name to update address or phone" },
-          { step: "Verify all contact information is current and accurate" },
-          { step: "Click 'Submit Changes', then 'Apply Changes'" },
-        ],
-      },
-      {
-        title: "Managing Children",
-        steps: [
-          {
-            step: "Adding Children",
-            details: [
-              "Click 'Add Child' to add a new dependent",
-              "Enter full legal name, date of birth, and relationship",
-              "Provide current physical address if different from yours",
-            ],
-          },
-          {
-            step: "Child Address Sync",
-            details: [
-              "If a child lives with your spouse, click 'Use Spouse Address' to sync",
-              "If a child lives elsewhere (college, with relatives), enter their specific address",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Spouse Preferred Language",
-        steps: [
-          {
-            step: "Why It Matters",
-            details: [
-              "If your spouse is more comfortable receiving critical news in their native language, set this preference",
-              "The CACO will attempt to arrange interpreter services for notification",
-            ],
-          },
-          { step: "Click 'Add Spouse Preferred Language' or 'Edit Spouse Preferred Language'" },
-          { step: "Select the correct language from the dropdown" },
-          { step: "Submit and apply changes" },
-        ],
-      },
-      {
-        title: "Common Pitfalls",
-        steps: [
-          {
-            step: "Outdated Addresses",
-            details: [
-              "Family members move frequently - verify addresses after every PCS",
-              "Use physical street addresses, not PO Boxes, for emergency notification",
-            ],
-          },
-          {
-            step: "Missing Phone Numbers",
-            details: [
-              "Include cell phone numbers - landlines are less reliable for urgent contact",
-              "Update numbers immediately when family members change phones",
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  "mol-red-parents": {
-    title: "RED Parents Information",
-    description: "Update parent contact and beneficiary details in your Record of Emergency Data. Parents are Secondary Next of Kin and entitled to official notification even if you are married.",
-    capabilities: ["Update parent addresses", "Mark parent as deceased", "Edit contact information", "Manage step-parent records", "Update international addresses"],
-    userTypes: ["All Marines"],
-    guide: [
-      {
-        title: "Why This Matters",
-        steps: [
-          {
-            step: "Notification Rights",
-            details: [
-              "Parents are Secondary Next of Kin and entitled to official notification",
-              "A uniformed CACO is dispatched to parents' addresses for deceased or missing Marines",
-              "Even if married, parents are often assigned their own CACO if they live in a different state",
-            ],
-          },
-          {
-            step: "Address Accuracy",
-            details: [
-              "If the address is outdated, the Marine Corps may have to search for parents or deliver news telephonically",
-              "This is not the standard of care your family deserves during a crisis",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Managing Parent Records",
-        steps: [
-          { step: "Log in to MOL and navigate to RED > Parents Information" },
-          { step: "Click 'Edit' next to a parent's name to update address or phone" },
-          { step: "Click 'Remove This Address' if parent has moved and you don't have new location" },
-          { step: "Click 'Cancel Removal' if you accidentally marked an address for removal" },
-        ],
-      },
-      {
-        title: "Recording a Deceased Parent",
-        steps: [
-          { step: "Check the 'Deceased' box next to the parent's name" },
-          { step: "Click 'Submit Changes' - the system automatically removes any existing address records" },
-          { step: "This prevents the Marine Corps from attempting to locate them during a crisis" },
-        ],
-      },
-      {
-        title: "Address Entry Tips",
-        steps: [
-          {
-            step: "U.S. Addresses",
-            details: [
-              "Do not use punctuation (commas, periods, or dashes)",
-              "If using PO Box or Rural Route, also provide physical directions on NOK Directions page",
-            ],
-          },
-          {
-            step: "International Addresses",
-            details: [
-              "Click 'Reformat This Address' to configure for foreign listing",
-              "Type the full address as it appears in that country - no punctuation",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Common Pitfalls",
-        steps: [
-          {
-            step: "Unknown Parent Location",
-            details: [
-              "If estranged or don't know location, type 'Unknown' in address field - do not leave blank",
-            ],
-          },
-          {
-            step: "Step-Parents",
-            details: [
-              "Distinguish between biological/adoptive parents and step-parents",
-              "CACO prioritizes biological/adoptive parents unless specified otherwise in Remarks",
-            ],
-          },
-          {
-            step: "Health Concerns",
-            details: [
-              "If a parent has dementia or heart condition, use 'Do Not Notify' section to prevent stressful notification",
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  "mol-red-nok": {
-    title: "RED Next of Kin (NOK)",
-    description: "Designate your emergency notification contacts and provide detailed directions to help Casualty Assistance officers locate your family members.",
-    capabilities: ["Set Primary NOK", "Set Secondary NOK", "Provide address directions", "Add special instructions", "Update contact preferences"],
-    userTypes: ["All Marines"],
-    guide: [
-      {
-        title: "Why This Matters",
-        steps: [
-          {
-            step: "In-Person Notification",
-            details: [
-              "The Marine Corps delivers serious news in person through a Casualty Assistance Calls Officer (CACO)",
-              "Your NOK designations determine who gets contacted first and in what order",
-              "Directions help CACOs find rural, gated, or hard-to-locate addresses",
-            ],
-          },
-        ],
-      },
-      {
-        title: "NOK Hierarchy",
-        steps: [
-          {
-            step: "Primary Next of Kin (PNOK)",
-            details: [
-              "Typically your spouse if married",
-              "If unmarried, usually a parent or sibling",
-              "The PNOK is contacted first in any emergency",
-            ],
-          },
-          {
-            step: "Secondary Next of Kin (SNOK)",
-            details: [
-              "Typically parents if married",
-              "May be siblings or other close family",
-              "Contacted after PNOK has been notified",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Providing Directions",
-        steps: [
-          { step: "Navigate to RED > Next of Kin Directions" },
-          {
-            step: "When Directions Are Essential",
-            details: [
-              "Rural addresses without GPS coverage",
-              "Gated communities requiring access codes",
-              "Apartment complexes with multiple buildings",
-              "Properties at the end of unnamed roads",
-            ],
-          },
-          { step: "Provide clear, written directions from the nearest major intersection" },
-          { step: "Include gate codes, building numbers, and parking instructions" },
-        ],
-      },
-      {
-        title: "Special Instructions",
-        steps: [
-          {
-            step: "Contact Preferences",
-            details: [
-              "Note if NOK works night shifts and best times to reach them",
-              "Include work addresses if they spend significant time away from home",
-              "List alternative phone numbers in priority order",
             ],
           },
         ],
@@ -3331,41 +2844,49 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Why This Matters",
+        title: "Why Private Insurance Matters",
         steps: [
           {
-            step: "SGLI Coverage",
+            step: "CACO Assistance",
             details: [
-              "Servicemembers' Group Life Insurance provides up to $500,000 in coverage",
-              "Beneficiaries must be designated - default rules may not match your wishes",
-              "SGLI is separate from Death Gratuity ($100K immediate payment)",
-            ],
-          },
-          {
-            step: "Private Policy Tracking",
-            details: [
-              "RED allows you to record private insurance policies for your family's reference",
-              "This ensures survivors know about all available benefits",
+              "When a CACO sits down with your family, they use this list to help identify which insurance companies to call",
+              "If a policy isn't listed here, your family might not know it exists - leaving thousands unclaimed",
+              "This consolidates USAA, Navy Federal, civilian employer policies, etc. into one official military record",
+              "Having policy numbers pre-loaded allows the CACO to help start claims within days",
+              "This is SEPARATE from SGLI - do NOT list your SGLI here (that's managed via milConnect SOES)",
             ],
           },
         ],
       },
       {
-        title: "Viewing Insurance Status",
+        title: "Managing Insurance Records",
         steps: [
-          { step: "Log in to MOL and navigate to RED > Insurance Information" },
-          { step: "Review your current SGLI coverage amount" },
-          { step: "Verify FSGLI (Family SGLI) coverage for spouse and children" },
-          { step: "Check that beneficiary designations are current" },
+          {
+            step: "Adding and Managing Policies (Up to 5)",
+            details: [
+              "Click 'Add New Insurance Record'",
+              "Provide: Insurance Company Name, Policy Number, Company Address and Phone Number",
+              "Click 'Edit' to update if coverage amount changes or company merges/changes name",
+              "Click 'Remove' to delete an expired or cancelled policy",
+              "Click 'Cancel Removal' before the 24-48 hour sync window closes if you made a mistake",
+            ],
+          },
         ],
       },
       {
-        title: "Recording Private Policies",
+        title: "The 25-Character Constraint",
         steps: [
-          { step: "Click 'Add Private Insurance Policy'" },
-          { step: "Enter insurance company name and policy number" },
-          { step: "Note coverage amount and beneficiaries" },
-          { step: "Include agent contact information if available" },
+          {
+            step: "Working Within the Limit",
+            details: [
+              "MOL limits this field to a maximum of 25 characters",
+              "Prioritize the Policy Number - company names are easy to guess, policy numbers are unique and vital",
+              "Abbreviate heavily: 'Northwestern Mutual 555-1234' becomes 'NW Mut5551234'",
+              "Example: 'State Farm Insurance 987654' becomes 'StateFrm987654'",
+              "Keep at least 4-5 letters of company name so it's recognizable",
+              "Avoid using #, -, or . as they take up valuable character spaces",
+            ],
+          },
         ],
       },
       {
@@ -3374,16 +2895,32 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
           {
             step: "The SGLI Trap",
             details: [
-              "SGLI beneficiaries are NOT automatically updated when you marry or have children",
-              "You must actively designate beneficiaries through SOES (SGLI Online Enrollment System)",
-              "Old beneficiaries (ex-spouses, former partners) remain valid until you change them",
+              "Updating your RED does NOT update your SGLI (Life Insurance)",
+              "You must go to milConnect (SOES) to change your life insurance beneficiaries",
+              "These are two separate systems - update BOTH",
             ],
           },
           {
-            step: "Forgetting Private Policies",
+            step: "Policy Details",
             details: [
-              "Many Marines have employer or private life insurance their families don't know about",
-              "Recording these in RED ensures survivors can claim all benefits",
+              "Don't just write 'MetLife' - specify the branch or policy type if possible",
+              "If you renew a term-life policy and get a new number, you must update it here",
+              "An incorrect policy number can delay a claim for months",
+              "This information is viewable by S-1 and command leadership - include only what's necessary for claims",
+            ],
+          },
+        ],
+      },
+      {
+        title: "After Updating Insurance",
+        steps: [
+          {
+            step: "Verification Steps",
+            details: [
+              "Check SGLI/SOES on milConnect to ensure military insurance beneficiaries are also current",
+              "Inform your beneficiaries where you keep original hard-copy documents - MOL is the 'pointer' but they'll need actual papers",
+              "Verify on BIR in 48 hours that carriers are listed in the Insurance section",
+              "Make sure your PADD knows these policies exist",
             ],
           },
         ],
@@ -3397,52 +2934,73 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Why This Matters",
+        title: "Purpose of the Death Gratuity",
         steps: [
           {
             step: "Immediate Financial Support",
             details: [
-              "The Death Gratuity is paid within 24-72 hours of notification",
-              "It provides immediate funds for funeral costs, travel, and living expenses",
-              "$100,000 tax-free payment - separate from SGLI",
-            ],
-          },
-          {
-            step: "Beneficiary Control",
-            details: [
-              "You decide who receives this payment and in what percentages",
-              "Without designation, payment follows statutory order (which may not be your preference)",
+              "A $100,000 tax-free payment made by DoD to your survivors within days of death",
+              "Unlike SGLI (which can take weeks), this is designed as immediate cash injection for your family",
+              "Covers travel for funeral, housing costs, and urgent expenses before other benefits kick in",
+              "By law, automatically directed to surviving spouse or children unless you designate Additional Beneficiaries",
             ],
           },
         ],
       },
       {
-        title: "Designating Beneficiaries",
+        title: "Managing Death Gratuity Beneficiaries",
         steps: [
-          { step: "Log in to MOL and navigate to RED > Death Gratuity" },
-          { step: "Click 'Edit' or 'Add Beneficiary'" },
-          { step: "Enter beneficiary name, relationship, and percentage" },
-          { step: "Ensure all percentages total exactly 100%" },
-          { step: "Submit and apply changes" },
+          {
+            step: "How to Update",
+            details: [
+              "Check the main RED page to see who is currently listed",
+              "You generally cannot edit a spouse's info here - that must be done via DEERS/IPAC",
+              "Click 'Add Additional Death Gratuity Record' to add beneficiaries",
+              "Provide full legal name, relationship, and specific percentage (e.g., 50% Mom, 50% Dad)",
+              "Click 'Edit' if an additional beneficiary has moved or changed phone number",
+              "Click 'Remove' to delete - turns red to show marked for deletion",
+              "Click 'Cancel Removal' if you made a mistake",
+            ],
+          },
         ],
       },
       {
-        title: "The 100% Rule",
+        title: "The 100% Rule and By-Law Distribution",
         steps: [
           {
-            step: "How It Works",
+            step: "Understanding the Rule",
             details: [
-              "All designations must total exactly 100%",
-              "You can split among multiple beneficiaries (e.g., spouse 60%, parents 40%)",
-              "If percentages don't equal 100%, the system rejects the submission",
+              "Total percentages among additional beneficiaries must equal exactly 100%",
+              "If designations don't total 100%, system reverts remainder to 'By-Law' status",
+              "'By-Law' means government decides based on standard line of succession - not your choice",
+              "You can list up to 10 additional beneficiaries",
             ],
           },
           {
-            step: "Common Splits",
+            step: "Spouse Notification Requirement",
             details: [
-              "100% to spouse (most common)",
-              "50% spouse, 25% each parent",
-              "33% each to three children",
+              "If you're married and designate anyone other than spouse, system triggers official notification to your command",
+              "Your CO will then be required to inform your spouse of your decision",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Address and Phone Formatting",
+        steps: [
+          {
+            step: "Address Entry",
+            details: [
+              "Use 'Reformat This Address' to switch between U.S. and Foreign layouts",
+              "Do not use periods or commas - type '123 Main St Apt 4' not '123 Main St., Apt. #4'",
+              "U.S.: Street, city, 2-letter state initials, Zip Code",
+              "Foreign: Type address as it appears locally, include Country Code and City Code for phone",
+            ],
+          },
+          {
+            step: "Phone Entry",
+            details: [
+              "Phone must be 24-hour contact - Area Code-Prefix-Suffix format for U.S.",
             ],
           },
         ],
@@ -3451,17 +3009,43 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
         title: "Common Pitfalls",
         steps: [
           {
-            step: "Outdated Beneficiaries",
+            step: "SGLI Confusion",
             details: [
-              "Ex-spouses or former partners remain beneficiaries until you change them",
-              "Review and update after any major life event (marriage, divorce, birth)",
+              "Don't confuse with SGLI - SGLI is up to $500,000 (you pay for it), Death Gratuity is flat $100,000 (government provides)",
             ],
           },
           {
-            step: "Statutory Default",
+            step: "Percentage Errors",
             details: [
-              "If you don't designate, payment goes in statutory order: spouse, children, parents, executor",
-              "This may not match your actual wishes",
+              "Updates appear in bold for 24-48 hours while MCTFS processes",
+              "If beneficiaries add up to 99%, the remaining 1% triggers By-Law distribution - complicates entire payout",
+            ],
+          },
+          {
+            step: "Minor Children",
+            details: [
+              "For minor children, money may be held in trust or require legal guardian - delays 'immediate' nature",
+            ],
+          },
+          {
+            step: "Outdated Information",
+            details: [
+              "Outdated phone numbers mean money stays in government account instead of family's hands",
+              "MCTFS rejects entries with dashes in phone or periods in address",
+            ],
+          },
+        ],
+      },
+      {
+        title: "After Updating Death Gratuity",
+        steps: [
+          {
+            step: "Verification Steps",
+            details: [
+              "Double-check that percentages equal exactly 100%",
+              "Review PADD section - person receiving $100,000 is often best person to handle funeral arrangements",
+              "Death Gratuity provides cash for funeral, so coordinate PADD and beneficiary designations",
+              "Verify on BIR in two days that Death Gratuity section reflects your designations",
             ],
           },
         ],
@@ -3475,21 +3059,31 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Why This Matters",
+        title: "Why PADD Is Your Most Important Legal Designation",
         steps: [
           {
-            step: "Final Arrangements",
+            step: "Legal Authority",
             details: [
-              "The PADD decides burial location, cremation vs. burial, funeral arrangements",
-              "Without designation, decisions fall to next of kin by default",
-              "Family conflicts can arise if multiple people believe they have authority",
+              "The PADD is the ONLY person legally authorized by DoD to make decisions regarding your remains",
+              "Without a designated PADD, funeral arrangements can be delayed by weeks if family members disagree",
+              "Your PADD decides: level of military honors, type of headstone, final resting place (private vs Arlington)",
+              "Marine Corps provides PADD with specific allowances and a CACO to navigate funeral logistics",
             ],
           },
+        ],
+      },
+      {
+        title: "The Default Order of Precedence",
+        steps: [
           {
-            step: "Your Wishes",
+            step: "If You Leave PADD Blank",
             details: [
-              "Designating a specific PADD ensures someone who understands your wishes has legal authority",
-              "Consider designating someone who can handle difficult decisions under stress",
+              "1. Unremarried Surviving Spouse",
+              "2. Children (in order of seniority)",
+              "3. Parents (in order of seniority)",
+              "4. Siblings (in order of seniority)",
+              "5. Grandparents / Other Relatives",
+              "By designating a PADD, you choose exactly who takes charge regardless of their position in this list",
             ],
           },
         ],
@@ -3497,44 +3091,101 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
       {
         title: "Designating Your PADD",
         steps: [
-          { step: "Log in to MOL and navigate to RED > Person Authorized to Direct Disposition" },
-          { step: "Enter the name of your primary PADD" },
-          { step: "Provide complete contact information including phone and address" },
-          { step: "Consider designating an alternate PADD" },
-          { step: "Submit and apply changes" },
-        ],
-      },
-      {
-        title: "Who to Designate",
-        steps: [
           {
-            step: "Common Choices",
+            step: "How to Update",
             details: [
-              "Spouse (most common)",
-              "Parent if unmarried",
-              "Adult child or sibling",
-              "Close friend who knows your wishes",
-            ],
-          },
-          {
-            step: "Consider",
-            details: [
-              "Who knows your preferences (burial vs. cremation, location)",
-              "Who can make difficult decisions under emotional stress",
-              "Who is likely to be reachable during a crisis",
+              "Locate the PADD section on your RED",
+              "Click the 'Edit' link to open the Update RED PADD page",
+              "Most Marines choose their Primary Next of Kin (Spouse or Parent), but you can designate any adult",
+              "The person must be legally competent and reachable",
+              "PADD must be at least 18 years old - enter their DOB in DD MMM YYYY format (e.g., 04 JUL 1990)",
+              "Ensure name, address, and 24-hour phone number are 100% accurate",
+              "Click 'Submit Changes' and then 'Apply Changes'",
             ],
           },
         ],
       },
       {
-        title: "Special Instructions",
+        title: "Address Format Requirements",
         steps: [
           {
-            step: "Remarks Section",
+            step: "U.S. Address",
             details: [
-              "Use the Remarks section to document specific wishes",
-              "Note preferred burial location, religious considerations, or special requests",
-              "Keep instructions clear and concise",
+              "Use 'Reformat This Address' to switch between U.S., APO/FPO, and Foreign layouts",
+              "Use 2-letter state initials and Zip+4 code (9 digits)",
+              "If you don't know Zip+4, look it up on USPS website - system often requires full 9 digits",
+              "No punctuation - type '123 Main St Apt 4' not '123 Main St., Apt. #4'",
+            ],
+          },
+          {
+            step: "APO/FPO Address",
+            details: [
+              "Enter PSC/Box or Unit/UIC, select correct region (AA, AE, or AP)",
+            ],
+          },
+          {
+            step: "Foreign Address",
+            details: [
+              "Provide full address as formatted in that country",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls",
+        steps: [
+          {
+            step: "Single PADD Only",
+            details: [
+              "You can only name ONE PADD - you cannot name 'My Mom and Dad'",
+              "If you don't choose, law follows strict order of precedence which may not match your family dynamic",
+            ],
+          },
+          {
+            step: "Address Matching",
+            details: [
+              "If PADD is same as Primary Next of Kin, ensure addresses match exactly in both sections",
+            ],
+          },
+          {
+            step: "DOB Format",
+            details: [
+              "DOB format matters - type '02 JAN 1980' not '01/02/1980' or system may reject",
+            ],
+          },
+          {
+            step: "System Behavior",
+            details: [
+              "After 'Apply Changes', system returns to MOL Home Page - this is normal",
+              "PADD appears in bold until certified (24-48 hours) - not legally valid until bold disappears",
+              "Click 'Details' link to verify exactly what was submitted",
+            ],
+          },
+        ],
+      },
+      {
+        title: "After Designating PADD",
+        steps: [
+          {
+            step: "Have 'The Talk'",
+            details: [
+              "Ensure the person KNOWS they are PADD and discuss your burial vs cremation wishes",
+              "Discuss your preferred location for final honors",
+            ],
+          },
+          {
+            step: "Financial Coordination",
+            details: [
+              "Coordinate finances - PADD handles funeral costs (Marine Corps reimburses later)",
+              "Ensure PADD is also listed in Death Gratuity or Pay Arrears for immediate funds",
+            ],
+          },
+          {
+            step: "Verification",
+            details: [
+              "Confirm PADD is comfortable with responsibility and has valid ID to access military installations",
+              "Verify on BTR in two business days that PADD section is no longer 'Pending'",
+              "Final RED Review - once PADD is set, review entire RED for any other bold (pending) text",
             ],
           },
         ],
@@ -3548,46 +3199,71 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Why This Matters",
+        title: "What Pay Arrears Includes",
         steps: [
           {
-            step: "What Pay Arrears Includes",
+            step: "Components of Pay Arrears",
             details: [
               "Unpaid Salary: Any base pay earned but not yet deposited",
-              "Unused Leave: Cashed out at your daily rate (up to 60 days)",
-              "Unpaid Allowances: BAH, BAS, COLA, and other allowances due",
-              "Unpaid Bonuses: Any bonus installments not yet paid",
-              "Travel Claims: Outstanding travel reimbursements",
-            ],
-          },
-          {
-            step: "Why Designate",
-            details: [
-              "Without designation, pay goes to next of kin by statutory order",
-              "You can direct funds to someone other than your primary beneficiaries if desired",
+              "Unused Leave: Payment for accrued leave days (up to 60 days)",
+              "Allowances: Unpaid BAH, BAS, or specialized pays (Jump Pay, Sea Pay, etc.)",
+              "Travel Reimbursements: Any pending travel claims from PCS or TAD",
+              "This is NOT your life insurance (SGLI) - that is handled separately via milConnect",
             ],
           },
         ],
       },
       {
-        title: "Designating Your Beneficiary",
+        title: "The 100% Rule",
         steps: [
-          { step: "Log in to MOL and navigate to RED > Pay Arrears" },
-          { step: "Click 'Edit' or 'Add Beneficiary'" },
-          { step: "Enter beneficiary name and relationship" },
-          { step: "Optionally set percentage splits among multiple beneficiaries" },
-          { step: "Submit and apply changes" },
+          {
+            step: "Understanding the Requirement",
+            details: [
+              "The total of all beneficiaries must equal exactly 100%",
+              "If you have one person at 50% and no one else listed, the remaining 50% is distributed by law, not your preference",
+              "You cannot save a new beneficiary if your current list already totals 100%",
+              "You must first edit an existing person (e.g., change 100% to 50%) to free up percentage points",
+            ],
+          },
         ],
       },
       {
-        title: "The Leave Balance Factor",
+        title: "Adding or Editing a Beneficiary",
         steps: [
           {
-            step: "Understanding Leave Cash-Out",
+            step: "How to Update",
             details: [
-              "Marines with significant leave balances may have substantial payouts",
-              "A Senior Marine with 60 days saved could have $15,000+ in leave value",
-              "Designate someone who can use these funds appropriately",
+              "Locate the 'Beneficiary(ies) Unpaid Pay/Allowances' section on your RED",
+              "Click 'Add New Pay Arrears Record'",
+              "Enter the beneficiary's full legal name, relationship, address, and percentage",
+              "Click 'Submit' and then 'Apply Changes'",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Address Formatting",
+        steps: [
+          {
+            step: "No Punctuation Rule",
+            details: [
+              "Type '123 Main St Apt 4' instead of '123 Main St., Apt. #4'",
+              "Use two-letter state initials (CA, NC)",
+              "If using a PO Box, you must also provide physical directions on the Next of Kin Directions page",
+              "For foreign addresses, click 'Reformat This Address' and type without punctuation",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Removing or Canceling",
+        steps: [
+          {
+            step: "How Removal Works",
+            details: [
+              "Click 'Remove' next to a beneficiary - the name turns red with strikethrough",
+              "Click 'Cancel Removal' before the transaction processes to restore the record",
+              "Click 'Remove This Address' to clear an address while keeping the beneficiary valid",
             ],
           },
         ],
@@ -3596,17 +3272,31 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
         title: "Common Pitfalls",
         steps: [
           {
-            step: "Forgetting to Update",
+            step: "Address Changes",
             details: [
-              "Review after marriage, divorce, or birth of children",
-              "Ensure designated person is still appropriate and reachable",
+              "If your beneficiary moves and you don't update, the check is mailed to the old address - significant delays for your family",
             ],
           },
           {
-            step: "Assuming It Goes with Death Gratuity",
+            step: "System Confusion",
             details: [
-              "Pay Arrears and Death Gratuity are separate designations",
-              "You can send them to different people if desired",
+              "Don't confuse Pay Arrears with Death Gratuity ($100,000) or SGLI (Life Insurance) - these are three separate systems",
+              "Bold text means pending (24-48 hours), red text means it's about to be deleted",
+              "If your Pay Arrears beneficiary is the same as your PADD, ensure addresses match exactly in both sections",
+            ],
+          },
+        ],
+      },
+      {
+        title: "After Updating Pay Arrears",
+        steps: [
+          {
+            step: "Verification Steps",
+            details: [
+              "Verify your percentages add up to exactly 100% on the main RED page",
+              "Check Death Gratuity designation for the larger $100,000 sum",
+              "Audit annually - check this page every time you have a life event (marriage, birth, divorce)",
+              "Verify on your Basic Individual Record (BIR) in two days that changes are reflected",
             ],
           },
         ],
@@ -3620,65 +3310,97 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Why This Matters",
+        title: "Why This Feature Exists",
         steps: [
           {
             step: "Protecting Vulnerable Family",
             details: [
-              "Some family members may have health conditions that make notification dangerous",
-              "Elderly parents with heart conditions or dementia may be at risk from sudden news",
-              "Estranged family members may not need or want notification",
-            ],
-          },
-          {
-            step: "Controlling the Process",
-            details: [
-              "You can specify who should NOT be contacted by official channels",
-              "This allows other family members to deliver news in an appropriate manner",
+              "Protects vulnerable family members from the sudden shock of casualty notification",
+              "If a parent has severe heart condition, advanced dementia, or is hospitalized, a sudden CACO visit could cause a medical crisis",
+              "Allows you to tell the Marine Corps: 'Do not go to this person directly - go to this other person first so they can break the news gently'",
+              "This does not mean the person will never find out - it ensures they are told by a loved one rather than a stranger in uniform",
             ],
           },
         ],
       },
       {
-        title: "Adding Do Not Notify Entries",
-        steps: [
-          { step: "Log in to MOL and navigate to RED > Do Not Notify" },
-          { step: "Click 'Add Person'" },
-          { step: "Enter the person's name and relationship" },
-          { step: "Provide the reason for exclusion (health condition, estrangement, etc.)" },
-          { step: "Submit and apply changes" },
-        ],
-      },
-      {
-        title: "When to Use This",
+        title: "Adding a Do Not Notify Record",
         steps: [
           {
-            step: "Health Reasons",
+            step: "How to Add",
             details: [
-              "Parent with severe heart condition",
-              "Grandparent with dementia who won't understand",
-              "Family member with mental health concerns",
-            ],
-          },
-          {
-            step: "Relationship Reasons",
-            details: [
-              "Estranged parent or sibling",
-              "Ex-spouse who should not be contacted",
-              "Someone you haven't communicated with in years",
+              "Click 'Add New Do Not Notify Record'",
+              "Provide the name of the person who should NOT be notified directly",
+              "Provide the reason (e.g., 'Heart condition', 'Advanced age/Dementia')",
+              "Provide the name and contact info of the person who SHOULD be contacted to handle the notification",
             ],
           },
         ],
       },
       {
-        title: "Important Notes",
+        title: "Managing Records",
         steps: [
           {
-            step: "Alternative Notification",
+            step: "Editing and Removing",
             details: [
-              "Communicate with other family members about who will inform excluded persons",
-              "Ensure someone else can deliver news in an appropriate manner",
-              "The CACO will follow your instructions but won't manage family dynamics",
+              "Click 'Details' to see the full context of a record",
+              "Click 'Edit' to update a phone number for the intermediary contact",
+              "Click 'Remove' if a family member's health improves - text turns red with strikethrough",
+              "Click 'Cancel Removal' if you accidentally clicked remove (within 24-48 hours)",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Address Formatting",
+        steps: [
+          {
+            step: "Entry Rules",
+            details: [
+              "Click 'Reformat This Address' to toggle between U.S. and Foreign address structures",
+              "Do not use periods, commas, or dashes - type '123 Main St Apt 4' not '123 Main St., Apt. #4'",
+              "Enter Street, City, State (initials only), and Zip Code for U.S. addresses",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Who Should Be on This List",
+        steps: [
+          {
+            step: "Appropriate Candidates",
+            details: [
+              "Medical Frailty: Grandparent or parent with history of heart failure or stroke",
+              "Mental Health: Family member currently in psychiatric facility or severe mental health crisis",
+              "Dementia/Alzheimer's: Relative who would not understand and might become dangerously agitated",
+              "This is NOT primarily for people you are estranged from - it's for medical safety",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls",
+        steps: [
+          {
+            step: "Incomplete Setup",
+            details: [
+              "Simply putting someone on this list is only half the job - you must identify who SHOULD break the news in your NOK or PADD section",
+              "Even though you're requesting 'No Notification,' the Marine Corps still needs their address for complete family records",
+              "Clicking 'Remove This Address' only deletes the location, not the instruction - use 'Remove' to clear the whole instruction",
+              "Changes appear in bold for 24-48 hours while pending",
+            ],
+          },
+        ],
+      },
+      {
+        title: "After Adding Do Not Notify",
+        steps: [
+          {
+            step: "Next Steps",
+            details: [
+              "Inform the intermediary that they are listed on your RED and what their role would be",
+              "Check the 'Directions' section if the notify-instead person lives in a rural or hard-to-find area",
+              "Audit annually - if a parent recovers, remove them so they can receive direct notification with honor",
             ],
           },
         ],
@@ -3692,52 +3414,90 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Why This Matters",
+        title: "Why MIA Designation Is Different",
         steps: [
           {
-            step: "Different from Casualty Notification",
+            step: "Unique Nature of MIA Status",
             details: [
-              "MIA status means your location and condition are unknown",
-              "Notification is ongoing as information becomes available",
-              "Families may need to wait extended periods for updates",
-            ],
-          },
-          {
-            step: "Emotional Preparation",
-            details: [
-              "MIA notification is uniquely stressful due to uncertainty",
-              "Designate someone who can handle ongoing ambiguity",
-              "Consider who can be the family point of contact for updates",
+              "Missing in Action status involves long-term uncertainty, legal shifts in pay status, and media interest",
+              "A dedicated CACO is assigned who specializes in long-term cases as official liaison between family and DoD",
+              "This designated person is authorized to receive sensitive updates regarding search and recovery efforts",
+              "Your pay continues to accrue during MIA status - this person handles administrative issues",
             ],
           },
         ],
       },
       {
-        title: "Designating MIA Contacts",
+        title: "Managing MIA Records",
         steps: [
-          { step: "Log in to MOL and navigate to RED > MIA Notification" },
-          { step: "Review your current MIA notification designations" },
-          { step: "Ensure contacts are prepared for the unique nature of MIA notification" },
-          { step: "Update contact information to ensure reachability" },
+          {
+            step: "How to Update",
+            details: [
+              "Click 'Add New MIA Notify Record'",
+              "Provide full legal name, relationship, 24-hour phone number, and physical directions to residence",
+              "Click 'Edit' if your designated person moves or changes their number",
+              "Click 'Remove' to designate a different person",
+              "Changes appear in bold for 24-48 hours while pending",
+            ],
+          },
         ],
       },
       {
-        title: "What to Expect",
+        title: "Required Information",
         steps: [
           {
-            step: "Initial Notification",
+            step: "Contact Details",
             details: [
-              "CACO delivers initial MIA notification in person",
-              "Limited information may be available initially",
-              "Updates are provided as they become available",
+              "Name: Full legal name (First, Middle Initial, Last)",
+              "Directions: 5 lines of 35 characters each for physical location",
+              "If PO Box/Rural: Describe physical house (e.g., '3rd house past grain silo, green mailbox')",
+              "If Overseas: Include international phone number in direction boxes as backup",
             ],
           },
           {
-            step: "Ongoing Communication",
+            step: "Phone Numbers",
             details: [
-              "CACO remains assigned throughout MIA status",
-              "Regular updates (even if no new information)",
-              "Support services available for family",
+              "Provide TWO different numbers if possible (Cell + Work, or Cell + Home)",
+              "Include area code for all U.S. numbers",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Pitfalls",
+        steps: [
+          {
+            step: "Incomplete Information",
+            details: [
+              "Don't leave this blank assuming NOK section covers it - systems pull from this specific field for MIA cases",
+              "Don't type 'Same as Next of Kin' in directions - automated systems may not read that instruction",
+            ],
+          },
+          {
+            step: "Format Errors",
+            details: [
+              "Avoid periods and commas - use 'Apt 4' not 'Apt. #4'",
+              "Don't leave second phone box blank if there's any other way to reach family",
+            ],
+          },
+          {
+            step: "Contact Selection",
+            details: [
+              "Ensure the person you list can handle potential media scrutiny - MIA cases attract public attention",
+            ],
+          },
+        ],
+      },
+      {
+        title: "After Updating MIA",
+        steps: [
+          {
+            step: "Verification Steps",
+            details: [
+              "Inform the contact that they are your MIA Notify person and would receive official DoD updates",
+              "Coordinate with your PADD - often the same person for both roles",
+              "Review Pay Arrears section since pay continues during MIA status",
+              "Verify on BTR in two business days that MIA section is populated correctly",
             ],
           },
         ],
@@ -5872,18 +5632,53 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
     userTypes: ["All Marines"],
     guide: [
       {
-        title: "Accessing RED Certification",
+        title: "How to Update and Certify Your RED",
         steps: [
-          { step: "Log in to MOL at https://mol.tfs.usmc.mil/" },
-          { step: "Navigate to Personal Info > Record of Emergency Data" },
-          { step: "Review all RED sections for accuracy" },
+          {
+            step: "Step 1: Access the Page",
+            details: [
+              "Log in to MOL at https://mol.tfs.usmc.mil/",
+              "Navigate to Personal Info > Record of Emergency Data (RED)",
+            ],
+          },
+          {
+            step: "Step 2: Verify the Data",
+            details: [
+              "Check your spouse, children, and parents",
+              "Ensure addresses and phone numbers are current",
+              "Verify beneficiary designations are correct",
+            ],
+          },
+          {
+            step: "Step 3: To Update (Edit)",
+            details: [
+              "Click the 'Edit' link next to the section you need to change (e.g., 'Emergency Contact' or 'Beneficiary')",
+              "Enter the new information",
+              "Saving an edit automatically 'certifies' that section",
+            ],
+          },
+          {
+            step: "Step 4: To Certify (No Changes)",
+            details: [
+              "If everything is correct, click the 'Certify' button at the bottom",
+              "Click 'Confirm' on the pop-up",
+              "The 'Certification Date' will update once the system (MCTFS) processes it",
+            ],
+          },
+          {
+            step: "Step 5: Print/Save",
+            details: [
+              "Click 'Printer-Friendly View'",
+              "Click 'Print' (Save as PDF) - this is a required document for every pre-deployment 'shred' or 'audit'",
+            ],
+          },
         ],
       },
       {
-        title: "Before Certifying",
+        title: "Sections to Review Before Certifying",
         steps: [
           {
-            step: "Review All Sections",
+            step: "Complete Review Checklist",
             details: [
               "Family Information - Spouse and children addresses",
               "Parents - Parent contact information",
@@ -5892,18 +5687,10 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
               "Death Gratuity - Beneficiary designations",
               "PADD - Person Authorized to Direct Disposition",
               "Insurance - SGLI and other coverage",
+              "Do Not Notify - Vulnerable family members",
+              "MIA Notification - Missing in Action contacts",
             ],
           },
-          { step: "If any information is incorrect, edit that section first" },
-          { step: "Editing automatically certifies that section" },
-        ],
-      },
-      {
-        title: "Certifying Your RED",
-        steps: [
-          { step: "If all information is accurate, click 'Certify' button" },
-          { step: "Confirm certification when prompted" },
-          { step: "Certification date is recorded in your personnel file" },
         ],
       },
       {
@@ -5922,11 +5709,45 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
         ],
       },
       {
-        title: "Certification Requirements",
+        title: "What Happens After You Finish",
         steps: [
-          { step: "A certified RED is required for deployment readiness" },
-          { step: "Uncertified RED may affect your deployability status" },
-          { step: "CMC Casualty view shows pending changes and certification status" },
+          {
+            step: "MCTFS Processing",
+            details: [
+              "It usually takes 24-48 hours for your certification to post",
+              "Once it does, the red 'Out of Date' flag on your MOL homepage will disappear",
+              "Check that bold text has returned to normal to confirm processing",
+            ],
+          },
+          {
+            step: "Verify the PADD",
+            details: [
+              "Navigate to the PADD (Person Authorized to Direct Disposition) section",
+              "Ensure the correct person is designated to handle final arrangements",
+              "This is the person you trust to make your funeral decisions",
+            ],
+          },
+          {
+            step: "Audit Your SGLI",
+            details: [
+              "Go to milConnect and check your SGLI Online Enrollment System (SOES)",
+              "Ensure your life insurance beneficiaries match your current family status",
+              "Your SGLV 8286 should align with your RED designations",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Deployment Readiness Requirements",
+        steps: [
+          {
+            step: "RED and Deployment",
+            details: [
+              "A certified RED is required for deployment readiness",
+              "Uncertified RED may affect your deployability status",
+              "CMC Casualty view shows pending changes and certification status",
+            ],
+          },
         ],
       },
     ],
