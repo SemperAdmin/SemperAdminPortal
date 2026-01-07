@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 type GuideStep = {
   step: string;
   details?: string[];
@@ -23,6 +25,8 @@ type ModuleData = {
 type Ref = { title: string; url: string; isQuickLink?: boolean };
 
 export default function MOLFunctionalModuleContent({ data, references }: { data: ModuleData; references: Ref[] }) {
+  const [activeTab, setActiveTab] = useState(0);
+
   return (
     <div className="grid gap-6 lg:grid-cols-3">
       <div className="lg:col-span-2 space-y-6">
@@ -113,34 +117,51 @@ export default function MOLFunctionalModuleContent({ data, references }: { data:
           </section>
         )}
 
-        {data.guide && data.guide.length > 0 && data.guide.map((section, sectionIdx) => (
-          <section key={sectionIdx} className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
-            <h3 className="flex items-center gap-2 text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5">
+        {data.guide && data.guide.length > 0 && (
+          <section className="rounded-xl border border-black/5 bg-white shadow-sm dark:border-white/15 dark:bg-black/40">
+            <div className="flex items-center gap-2 border-b border-black/5 px-6 pt-5 pb-0 dark:border-white/10">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5 text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
                 <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
                 <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
               </svg>
-              {section.title}
-            </h3>
-            <div className="mt-4 space-y-4">
-              {section.steps.map((step, stepIdx) => (
-                <div key={stepIdx} className="rounded-lg border border-black/5 bg-[var(--sa-cream)]/40 p-4 dark:border-white/10 dark:bg-white/5">
-                  <h4 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{step.step}</h4>
-                  {step.details && step.details.length > 0 && (
-                    <ul className="mt-2 space-y-1">
-                      {step.details.map((detail, detailIdx) => (
-                        <li key={detailIdx} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
-                          <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--sa-red)]" />
-                          {detail}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
+              <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Guide</h3>
+            </div>
+            <div className="flex flex-wrap gap-1 border-b border-black/5 px-4 dark:border-white/10">
+              {data.guide.map((section, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setActiveTab(idx)}
+                  className={`px-4 py-3 text-sm font-medium transition-colors ${
+                    activeTab === idx
+                      ? "border-b-2 border-[var(--sa-red)] text-[var(--sa-red)]"
+                      : "text-zinc-600 hover:text-[var(--sa-navy)] dark:text-zinc-400 dark:hover:text-[var(--sa-cream)]"
+                  }`}
+                >
+                  {section.title}
+                </button>
               ))}
             </div>
+            <div className="p-6">
+              <div className="space-y-4">
+                {data.guide[activeTab].steps.map((step, stepIdx) => (
+                  <div key={stepIdx} className="rounded-lg border border-black/5 bg-[var(--sa-cream)]/40 p-4 dark:border-white/10 dark:bg-white/5">
+                    <h4 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{step.step}</h4>
+                    {step.details && step.details.length > 0 && (
+                      <ul className="mt-2 space-y-1">
+                        {step.details.map((detail, detailIdx) => (
+                          <li key={detailIdx} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--sa-red)]" />
+                            {detail}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
           </section>
-        ))}
+        )}
       </div>
 
       <aside className="space-y-6 lg:mt-0">
