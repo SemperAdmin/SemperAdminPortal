@@ -731,38 +731,23 @@ export function TransitionOfCommandContent() {
                 { name: "DRRS-MC Training", desc: "Readiness reporting", url: TRAINING_URLS.MARINENET },
                 { name: "Aviation Safety Surveys", desc: "CSA, MCAS, ASPA", url: SAFETY_URLS.MARINE_AVIATION },
                 { name: "Safety Climate Survey", desc: "O-5/O-6 requirement", url: SAFETY_URLS.SAFETY_MARINES },
-              ].map((link) =>
-                link.url ? (
-                  <a
-                    key={link.name}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 rounded-lg border border-[var(--sa-navy)]/20 bg-[var(--sa-cream)]/30 p-3 transition hover:bg-[var(--sa-navy)]/10 dark:border-white/10 dark:bg-[var(--sa-navy)]/30 dark:hover:bg-white/10"
-                  >
-                    <ExternalLink className="h-4 w-4 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
-                    <div>
-                      <div className="text-sm font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-                        {link.name}
-                      </div>
-                      <div className="text-xs text-zinc-600 dark:text-zinc-400">{link.desc}</div>
+              ].map((link) => (
+                <a
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 rounded-lg border border-[var(--sa-navy)]/20 bg-[var(--sa-cream)]/30 p-3 transition hover:bg-[var(--sa-navy)]/10 dark:border-white/10 dark:bg-[var(--sa-navy)]/30 dark:hover:bg-white/10"
+                >
+                  <ExternalLink className="h-4 w-4 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
+                  <div>
+                    <div className="text-sm font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                      {link.name}
                     </div>
-                  </a>
-                ) : (
-                  <div
-                    key={link.name}
-                    className="flex items-center gap-2 rounded-lg border border-[var(--sa-navy)]/20 bg-[var(--sa-cream)]/30 p-3 dark:border-white/10 dark:bg-[var(--sa-navy)]/30"
-                  >
-                    <FileText className="h-4 w-4 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
-                    <div>
-                      <div className="text-sm font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-                        {link.name}
-                      </div>
-                      <div className="text-xs text-zinc-600 dark:text-zinc-400">{link.desc}</div>
-                    </div>
+                    <div className="text-xs text-zinc-600 dark:text-zinc-400">{link.desc}</div>
                   </div>
-                )
-              )}
+                </a>
+              ))}
             </div>
           </div>
           <div>
@@ -776,38 +761,23 @@ export function TransitionOfCommandContent() {
                 { name: "MCO 1754.9B", desc: "Unit, Personal and Family Readiness", url: MCO_URLS.FAMILY_READINESS },
                 { name: "MCO 5354.1G", desc: "Prohibited Activities and Conduct", url: MCO_URLS.PROHIBITED_ACTIVITIES },
                 { name: "MCO 3000.13B", desc: "Unit Readiness", url: MCO_URLS.READINESS_REPORTING },
-              ].map((link) =>
-                link.url ? (
-                  <a
-                    key={link.name}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 rounded-lg border border-[var(--sa-navy)]/20 bg-[var(--sa-cream)]/30 p-3 transition hover:bg-[var(--sa-navy)]/10 dark:border-white/10 dark:bg-[var(--sa-navy)]/30 dark:hover:bg-white/10"
-                  >
-                    <ExternalLink className="h-4 w-4 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
-                    <div>
-                      <div className="text-sm font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-                        {link.name}
-                      </div>
-                      <div className="text-xs text-zinc-600 dark:text-zinc-400">{link.desc}</div>
+              ].map((link) => (
+                <a
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 rounded-lg border border-[var(--sa-navy)]/20 bg-[var(--sa-cream)]/30 p-3 transition hover:bg-[var(--sa-navy)]/10 dark:border-white/10 dark:bg-[var(--sa-navy)]/30 dark:hover:bg-white/10"
+                >
+                  <ExternalLink className="h-4 w-4 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
+                  <div>
+                    <div className="text-sm font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+                      {link.name}
                     </div>
-                  </a>
-                ) : (
-                  <div
-                    key={link.name}
-                    className="flex items-center gap-2 rounded-lg border border-[var(--sa-navy)]/20 bg-[var(--sa-cream)]/30 p-3 dark:border-white/10 dark:bg-[var(--sa-navy)]/30"
-                  >
-                    <FileText className="h-4 w-4 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
-                    <div>
-                      <div className="text-sm font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
-                        {link.name}
-                      </div>
-                      <div className="text-xs text-zinc-600 dark:text-zinc-400">{link.desc}</div>
-                    </div>
+                    <div className="text-xs text-zinc-600 dark:text-zinc-400">{link.desc}</div>
                   </div>
-                )
-              )}
+                </a>
+              ))}
             </div>
           </div>
         </div>
