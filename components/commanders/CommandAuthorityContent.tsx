@@ -83,6 +83,7 @@ export function CommandAuthorityContent() {
   ];
 
   const keyReferences = [
+    { title: "U.S. Navy Regulations, 1990", desc: "Primary legal and regulatory authority", href: NAVY_DOD_URLS.US_NAVY_REGULATIONS },
     { title: "MCO 5800.16", desc: "Legal Support and Administration Manual", href: MCO_URLS.LEGADMINMAN },
     { title: "Manual for Courts-Martial", desc: "MCM - UCMJ procedures", href: NAVY_DOD_URLS.MCM },
     { title: "MCO 1900.16", desc: "Separation and Retirement Manual", href: MCO_URLS.MARCORSEPMAN_PDF },
@@ -169,8 +170,204 @@ export function CommandAuthorityContent() {
         </div>
       </section>
 
+      {/* Navy Regulations Foundation */}
+      <CollapsibleSection title="U.S. Navy Regulations Foundation" icon={<BookOpen className="h-5 w-5" />} defaultOpen>
+        <div className="space-y-6">
+          {/* Statutory Basis */}
+          <div>
+            <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Statutory Foundation of Authority</h3>
+            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+              The <a href={NAVY_DOD_URLS.US_NAVY_REGULATIONS} target="_blank" rel="noopener noreferrer" className="text-[var(--sa-gold)] hover:underline">United States Navy Regulations (1990)</a> is the principal regulatory document for the Department of the Navy (which includes the Marine Corps) and is <strong>endowed with the sanction of law</strong>.
+            </p>
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              <InfoCard title="Title 10, U.S. Code">
+                Your authority is derived from Title 10, United States Code. These regulations are issued by the Secretary of the Navy and establish your legal and professional guidebook as a commander.
+              </InfoCard>
+              <InfoCard title="Commandant of the Marine Corps">
+                As a Marine commander, you fall under the authority of the <Acronym title="Commandant of the Marine Corps">CMC</Acronym>, who is directly responsible to the Secretary of the Navy for the total performance of the Marine Corps, including its readiness and internal administration.
+              </InfoCard>
+            </div>
+          </div>
+
+          {/* Absolute Responsibility */}
+          <div>
+            <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">The Absolute Responsibility of Command</h3>
+            <div className="mt-4 rounded-lg border-2 border-rose-200 bg-rose-50 p-4 dark:border-rose-800 dark:bg-rose-950/30">
+              <div className="flex items-start gap-3">
+                <AlertTriangle className="mt-0.5 h-5 w-5 flex-shrink-0 text-rose-600 dark:text-rose-400" />
+                <div>
+                  <div className="font-semibold text-rose-700 dark:text-rose-400">Responsibility is Absolute</div>
+                  <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">
+                    Once you take command, your responsibility is <strong>absolute</strong>. While you can and should delegate authority to subordinates to execute details, this delegation <strong>does not relieve you</strong> of the continued responsibility for the safety, well-being, and efficiency of your entire command.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="mt-4 grid gap-4 md:grid-cols-3">
+              <div className="rounded-lg border border-black/10 p-4 dark:border-white/10">
+                <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Leadership by Example</div>
+                <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                  You are required to exercise leadership through personal example and moral responsibility.
+                </p>
+              </div>
+              <div className="rounded-lg border border-black/10 p-4 dark:border-white/10">
+                <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Economy & Resources</div>
+                <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                  You are personally responsible for the economical use of public money and materials within your command.
+                </p>
+              </div>
+              <div className="rounded-lg border border-black/10 p-4 dark:border-white/10">
+                <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Non-Delegable</div>
+                <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                  While authority can be delegated, the ultimate responsibility for your command&apos;s actions remains with you.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Personnel Welfare & Readiness */}
+          <div>
+            <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Personnel Welfare & Operational Readiness</h3>
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              <div className="rounded-lg border border-black/10 p-4 dark:border-white/10">
+                <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Morale & Welfare</div>
+                <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>Foster high morale and ensure moral and spiritual well-being</li>
+                  <li>Afford personnel the opportunity to make requests or statements directly to you</li>
+                  <li>Maintain discipline and ensure <Acronym title="Uniform Code of Military Justice">UCMJ</Acronym> is explained to all enlisted at specific intervals</li>
+                </ul>
+              </div>
+              <div className="rounded-lg border border-black/10 p-4 dark:border-white/10">
+                <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Readiness & Training</div>
+                <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li>Maintain command in a state of readiness to perform assigned mission</li>
+                  <li>Organize forces and assign duties to subordinates</li>
+                  <li>Ensure specialized and professional knowledge through frequent drills and instruction</li>
+                  <li>Ensure all personnel are instructed in and comply with safety precautions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* International Law & Use of Force */}
+          <div>
+            <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">International Law & Use of Force</h3>
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              <InfoCard title="International Law Obligations" variant="info">
+                <ul className="list-inside list-disc space-y-1">
+                  <li>Observe and require your command to observe principles of international law at all times</li>
+                  <li>Ensure personnel avoid offending local authorities when abroad</li>
+                  <li>Show deference to local laws and customs in foreign ports</li>
+                </ul>
+              </InfoCard>
+              <InfoCard title="Use of Force in Peacetime" variant="warning">
+                <ul className="list-inside list-disc space-y-1">
+                  <li>Use of force against another nation is illegal in peacetime except as <strong>self-defense</strong></li>
+                  <li>Self-defense includes defending your unit, yourself, and potentially U.S. citizens and property in the vicinity</li>
+                </ul>
+              </InfoCard>
+            </div>
+          </div>
+
+          {/* Succession to Command */}
+          <div>
+            <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Succession to Command</h3>
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              <div className="rounded-lg border border-black/10 p-4 dark:border-white/10">
+                <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Executive Officer (<Acronym title="Executive Officer">XO</Acronym>)</div>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+                  Normally, the XO is the officer next in rank and is your primary assistant. They succeed to command if you are incapacitated or absent.
+                </p>
+              </div>
+              <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 dark:border-amber-800 dark:bg-amber-950/30">
+                <div className="font-semibold text-amber-700 dark:text-amber-400">Temporary Succession Limitations</div>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+                  An officer who succeeds you temporarily is <strong>forbidden from making changes</strong> to the existing organization and must carry on the routine of the command as usual.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Signature Authority */}
+          <div>
+            <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Signature Authority Types</h3>
+            <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+              Understanding who has the power to sign documents—and what those signatures imply—is vital for maintaining the legal and administrative integrity of your unit.
+            </p>
+            <div className="mt-4 grid gap-4 md:grid-cols-3">
+              <div className="rounded-lg border border-black/10 p-4 dark:border-white/10">
+                <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">&quot;Acting&quot;</div>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+                  Used when you officially succeed to a command position temporarily because the permanent commander is absent, incapacitated, or the position is vacant.
+                </p>
+                <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-zinc-600 dark:text-zinc-400">
+                  <li>Same authority and responsibility as the officer you succeed</li>
+                  <li>&quot;Acting&quot; must appear below signature</li>
+                  <li>Forbidden from making organizational changes during temporary absence</li>
+                </ul>
+              </div>
+              <div className="rounded-lg border border-black/10 p-4 dark:border-white/10">
+                <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Delegation of Authority</div>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+                  Formal action by which you assign a portion of your authority to a subordinate to accomplish a specific task.
+                </p>
+                <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-zinc-600 dark:text-zinc-400">
+                  <li>Authority commensurate with task assigned</li>
+                  <li><strong>Does not</strong> relieve you of responsibility</li>
+                  <li>Extent of authority must be clearly stated</li>
+                </ul>
+              </div>
+              <div className="rounded-lg border border-black/10 p-4 dark:border-white/10">
+                <div className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">&quot;By Direction&quot;</div>
+                <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+                  Standard signature for staff officers who act for and in the name of the commander.
+                </p>
+                <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-zinc-600 dark:text-zinc-400">
+                  <li>Staff officers have no command authority of their own</li>
+                  <li>Executes your established policies or routine admin tasks</li>
+                  <li><strong>You</strong> remain responsible for their actions</li>
+                </ul>
+              </div>
+            </div>
+            {/* Signature Authority Comparison Table */}
+            <div className="mt-4 overflow-hidden rounded-lg border border-black/10 dark:border-white/10">
+              <table className="w-full text-sm">
+                <thead className="bg-[var(--sa-navy)] text-[var(--sa-cream)]">
+                  <tr>
+                    <th className="px-4 py-2 text-left">Term</th>
+                    <th className="px-4 py-2 text-left">Who Signs</th>
+                    <th className="px-4 py-2 text-left">Source of Power</th>
+                    <th className="px-4 py-2 text-left">Responsibility</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-white dark:bg-black/20">
+                    <td className="px-4 py-2 font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Acting</td>
+                    <td className="px-4 py-2 text-zinc-700 dark:text-zinc-300">Officer next in rank/seniority</td>
+                    <td className="px-4 py-2 text-zinc-700 dark:text-zinc-300">Succession to office itself</td>
+                    <td className="px-4 py-2 text-zinc-700 dark:text-zinc-300">&quot;Acting&quot; officer fully responsible</td>
+                  </tr>
+                  <tr className="bg-zinc-50 dark:bg-black/40">
+                    <td className="px-4 py-2 font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Delegation</td>
+                    <td className="px-4 py-2 text-zinc-700 dark:text-zinc-300">Designated subordinate</td>
+                    <td className="px-4 py-2 text-zinc-700 dark:text-zinc-300">Specific assigned task</td>
+                    <td className="px-4 py-2 text-zinc-700 dark:text-zinc-300"><strong>You</strong> retain ultimate responsibility</td>
+                  </tr>
+                  <tr className="bg-white dark:bg-black/20">
+                    <td className="px-4 py-2 font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">By Direction</td>
+                    <td className="px-4 py-2 text-zinc-700 dark:text-zinc-300">Authorized staff officer</td>
+                    <td className="px-4 py-2 text-zinc-700 dark:text-zinc-300">Acting in your name</td>
+                    <td className="px-4 py-2 text-zinc-700 dark:text-zinc-300"><strong>You</strong> remain responsible</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </CollapsibleSection>
+
       {/* NJP Authority Section */}
-      <CollapsibleSection title="NJP Authority (Article 15 UCMJ)" icon={<Gavel className="h-5 w-5" />} defaultOpen>
+      <CollapsibleSection title="NJP Authority (Article 15 UCMJ)" icon={<Gavel className="h-5 w-5" />}>
         <div className="space-y-6">
           {/* Who Has Authority */}
           <div>

@@ -6,6 +6,7 @@ import { Acronym } from "../ui/Acronym";
 import {
   MCO_URLS,
   MCO_4400_201_URLS,
+  NAVY_DOD_URLS,
   SAFETY_URLS,
   FISCAL_URLS,
   TRAINING_URLS,
@@ -200,6 +201,53 @@ export function TransitionOfCommandContent() {
         <p className="text-sm text-zinc-700 dark:text-zinc-300">
           <strong className="text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">As an incoming commander,</strong> you must complete required training, receive proper turnover documentation, and systematically assume accountability for personnel, equipment, and programs. <strong className="text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">As an outgoing commander,</strong> how you hand over the command reflects your leadership and puts the health and future of the organization above yourself.
         </p>
+      </div>
+
+      {/* Navy Regulations Relieving Procedures */}
+      <div className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-black/40">
+        <div className="flex items-center gap-3 mb-4">
+          <BookOpen className="h-6 w-6 text-[var(--sa-navy)] dark:text-[var(--sa-gold)]" />
+          <h2 className="text-xl font-bold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">
+            Formal Relieving Procedures (U.S. Navy Regulations)
+          </h2>
+        </div>
+        <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
+          Per the <a href={NAVY_DOD_URLS.US_NAVY_REGULATIONS} target="_blank" rel="noopener noreferrer" className="text-[var(--sa-gold)] hover:underline">United States Navy Regulations (1990)</a>, the process of transferring command is formal and strictly regulated to ensure no gap in responsibility.
+        </p>
+        <div className="grid gap-4 md:grid-cols-3">
+          <div className="rounded-lg border border-black/10 p-4 dark:border-white/10">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs text-[var(--sa-cream)]">1</span>
+              <span className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Inspection</span>
+            </div>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">
+              You must inspect the command in the company of the officer you are relieving, ensuring you understand the current state of all personnel, equipment, and operations.
+            </p>
+          </div>
+          <div className="rounded-lg border border-black/10 p-4 dark:border-white/10">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs text-[var(--sa-cream)]">2</span>
+              <span className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Turning Over Records</span>
+            </div>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">
+              The outgoing officer must deliver all unexecuted orders, regulations, official correspondence, and keys to you as the incoming commander.
+            </p>
+          </div>
+          <div className="rounded-lg border border-black/10 p-4 dark:border-white/10">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs text-[var(--sa-cream)]">3</span>
+              <span className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">The Ceremony</span>
+            </div>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">
+              Command is officially transferred when the officer being relieved reads their orders of detachment, and you read your orders of relief and assume command in front of assembled &quot;all hands.&quot;
+            </p>
+          </div>
+        </div>
+        <InfoCard title="Absolute Responsibility" variant="warning">
+          <p>
+            Once command is officially transferred, your responsibility is <strong>absolute</strong>. While you can delegate authority to subordinates, this delegation does not relieve you of the continued responsibility for the safety, well-being, and efficiency of your entire command.
+          </p>
+        </InfoCard>
       </div>
 
       {/* How It Works Sections */}

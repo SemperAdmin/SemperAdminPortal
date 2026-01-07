@@ -146,6 +146,9 @@ export const MCO_4400_201_URLS = {
 // Navy/DoD Publications
 // ============================================================================
 export const NAVY_DOD_URLS = {
+  /** United States Navy Regulations, 1990 */
+  US_NAVY_REGULATIONS: "https://www.marines.mil/portals/1/publications/united%20states%20navy%20regulations.pdf",
+
   /** SECNAV M-1650.1 - Navy and Marine Corps Awards Manual */
   AWARDS_MANUAL: "https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/1650.1.pdf",
 
