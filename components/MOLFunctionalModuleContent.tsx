@@ -42,8 +42,8 @@ export default function MOLFunctionalModuleContent({ data, references }: { data:
           <p className="mt-3 text-sm text-zinc-700 dark:text-zinc-300">{data.description}</p>
           <div className="mt-4 flex flex-wrap items-center gap-2">
             <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400">Authorized Users:</span>
-            {data.userTypes.map((userType, idx) => (
-              <span key={idx} className="rounded-full bg-[var(--sa-navy)] px-2.5 py-0.5 text-xs font-medium text-[var(--sa-cream)]">
+            {data.userTypes.map((userType) => (
+              <span key={userType} className="rounded-full bg-[var(--sa-navy)] px-2.5 py-0.5 text-xs font-medium text-[var(--sa-cream)]">
                 {userType}
               </span>
             ))}
@@ -56,7 +56,7 @@ export default function MOLFunctionalModuleContent({ data, references }: { data:
             <div className="flex flex-wrap gap-1 border-b border-black/5 px-4 dark:border-white/10">
               {tabs.map((tab, idx) => (
                 <button
-                  key={idx}
+                  key={tab.title}
                   onClick={() => setActiveTab(idx)}
                   className={`px-4 py-3 text-sm font-medium transition-colors ${
                     activeTab === idx
@@ -72,8 +72,8 @@ export default function MOLFunctionalModuleContent({ data, references }: { data:
               {/* Key Capabilities Tab */}
               {tabs[activeTab].type === "capabilities" && (
                 <ul className="space-y-2">
-                  {data.capabilities.map((capability, idx) => (
-                    <li key={idx} className="flex items-start gap-3 rounded-lg border border-black/5 bg-[var(--sa-cream)]/40 p-3 dark:border-white/10 dark:bg-white/5">
+                  {data.capabilities.map((capability) => (
+                    <li key={capability} className="flex items-start gap-3 rounded-lg border border-black/5 bg-[var(--sa-cream)]/40 p-3 dark:border-white/10 dark:bg-white/5">
                       <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="h-3 w-3">
                           <path d="M5 12l5 5L20 7" />
@@ -86,15 +86,15 @@ export default function MOLFunctionalModuleContent({ data, references }: { data:
               )}
 
               {/* Guide Section Tabs */}
-              {tabs[activeTab].type === "guide" && tabs[activeTab].content && (
+              {tabs[activeTab].type === "guide" && (
                 <div className="space-y-4">
-                  {tabs[activeTab].content.steps.map((step, stepIdx) => (
-                    <div key={stepIdx} className="rounded-lg border border-black/5 bg-[var(--sa-cream)]/40 p-4 dark:border-white/10 dark:bg-white/5">
+                  {tabs[activeTab].content.steps.map((step) => (
+                    <div key={step.step} className="rounded-lg border border-black/5 bg-[var(--sa-cream)]/40 p-4 dark:border-white/10 dark:bg-white/5">
                       <h4 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{step.step}</h4>
                       {step.details && step.details.length > 0 && (
                         <ul className="mt-2 space-y-1">
-                          {step.details.map((detail, detailIdx) => (
-                            <li key={detailIdx} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                          {step.details.map((detail) => (
+                            <li key={detail} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
                               <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--sa-red)]" />
                               {detail}
                             </li>
@@ -123,8 +123,8 @@ export default function MOLFunctionalModuleContent({ data, references }: { data:
               Electronic Records Available
             </h3>
             <div className="mt-3 grid gap-2 sm:grid-cols-2">
-              {data.electronicRecords.map((record, idx) => (
-                <div key={idx} className="rounded-lg border border-black/5 bg-[var(--sa-cream)]/40 px-3 py-2 text-sm text-zinc-700 dark:border-white/10 dark:bg-white/5 dark:text-zinc-300">
+              {data.electronicRecords.map((record) => (
+                <div key={record} className="rounded-lg border border-black/5 bg-[var(--sa-cream)]/40 px-3 py-2 text-sm text-zinc-700 dark:border-white/10 dark:bg-white/5 dark:text-zinc-300">
                   {record}
                 </div>
               ))}
@@ -143,8 +143,8 @@ export default function MOLFunctionalModuleContent({ data, references }: { data:
               Self-Certified Transactions
             </h3>
             <div className="mt-3 grid gap-2 sm:grid-cols-2">
-              {data.selfCertifiedTransactions.map((transaction, idx) => (
-                <div key={idx} className="rounded-lg border border-black/5 bg-[var(--sa-cream)]/40 px-3 py-2 text-sm text-zinc-700 dark:border-white/10 dark:bg-white/5 dark:text-zinc-300">
+              {data.selfCertifiedTransactions.map((transaction) => (
+                <div key={transaction} className="rounded-lg border border-black/5 bg-[var(--sa-cream)]/40 px-3 py-2 text-sm text-zinc-700 dark:border-white/10 dark:bg-white/5 dark:text-zinc-300">
                   {transaction}
                 </div>
               ))}
@@ -157,8 +157,8 @@ export default function MOLFunctionalModuleContent({ data, references }: { data:
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Quick Links</h3>
           <ul className="mt-3 space-y-2">
-            {references.filter(r => r.isQuickLink).map((ref, idx) => (
-              <li key={idx}>
+            {references.filter(r => r.isQuickLink).map((ref) => (
+              <li key={ref.url}>
                 <a href={ref.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-lg border border-black/10 bg-white p-3 text-sm font-medium text-[var(--sa-navy)] transition hover:border-[var(--sa-red)] hover:bg-[var(--sa-cream)]/60 dark:border-white/15 dark:bg-black/60 dark:text-[var(--sa-cream)] dark:hover:border-[var(--sa-red)]">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4 shrink-0">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
@@ -175,8 +175,8 @@ export default function MOLFunctionalModuleContent({ data, references }: { data:
         <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
           <h3 className="text-lg font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">References</h3>
           <ul className="mt-3 space-y-1 text-sm">
-            {references.filter(r => !r.isQuickLink).map((ref, idx) => (
-              <li key={idx}>
+            {references.filter(r => !r.isQuickLink).map((ref) => (
+              <li key={ref.url}>
                 <a href={ref.url} target="_blank" rel="noopener noreferrer" className="text-[var(--sa-red)] underline hover:no-underline">
                   {ref.title}
                 </a>
