@@ -1,6 +1,16 @@
 // Transition of Command Item Data
 // Used by individual item content components
 
+import {
+  MCO_URLS,
+  SAFETY_URLS,
+  SAPR_URLS,
+  FAMILY_URLS,
+  FISCAL_URLS,
+  HUB_URLS,
+  CLIMATE_URLS,
+} from "./references";
+
 export interface TransitionReference {
   title: string;
   url: string;
@@ -53,7 +63,7 @@ export const CORNERSTONE_DATA = {
     note: "If waiver granted, must attend very next available iteration",
   },
   references: [
-    { title: "MARADMIN 545/24 (Current FY)", url: "https://www.marines.mil/News/Messages/MARADMINS/", isQuickLink: true },
+    { title: "MARADMIN 545/24 (Current FY)", url: HUB_URLS.MARADMIN_HUB, isQuickLink: true },
     { title: "Lejeune Leadership Institute", url: "https://www.usmcu.edu/Academic-Programs/Lejeune-Leadership-Institute/", isQuickLink: true },
     { title: "Cornerstone Resources", url: "https://www.usmcu.edu/Academic-Programs/Lejeune-Leadership-Institute/Commandants-Combined-Commandership-Course/Resources/" },
   ] as TransitionReference[],
@@ -99,8 +109,8 @@ export const COR_INCOMING_DATA = {
     { time: "Day of CoC", action: "Certificate of Relief officially dated and final signatures applied" },
   ],
   references: [
-    { title: "MCO 4400.201 (Property Management)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "NAVMC 4000.5 (Supply Officer's Internal Controls Handbook)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+    { title: "MCO 4400.201 (Property Management)", url: HUB_URLS.MCPEL, isQuickLink: true },
+    { title: "NAVMC 4000.5 (Supply Officer's Internal Controls Handbook)", url: HUB_URLS.MCPEL },
   ] as TransitionReference[],
 };
 
@@ -216,8 +226,8 @@ export const STATUS_COMMAND_LETTER_DATA = {
   },
   references: [
     { title: "CMC White Letter 3-17", url: "https://www.usmcu.edu/Portals/218/CMC%20White%20Letter%203-17%20-%20FINAL.PDF", isQuickLink: true },
-    { title: "MCO 4400.201 Volume 3", url: "https://www.marines.mil/News/Publications/MCPEL/" },
-    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
+    { title: "MCO 4400.201 Volume 3", url: HUB_URLS.MCPEL },
+    { title: "IGMC Functional Area Checklists", url: CLIMATE_URLS.IGMC + "Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
   ] as TransitionReference[],
 };
 
@@ -270,7 +280,7 @@ export const AVIATION_REFRESHER_DATA = {
   ],
   references: [
     { title: "MARADMIN 270/05", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/894638/aviation-commanders-preparation-program/", isQuickLink: true },
-    { title: "MCO 5100.29C (Safety Program)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+    { title: "MCO 5100.29C (Safety Program)", url: HUB_URLS.MCPEL },
     { title: "MAWTS-1", url: "https://www.3rdmaw.marines.mil/Units/MAWTS-1/" },
     { title: "Naval Safety Center", url: "https://www.safety.navy.mil/" },
   ] as TransitionReference[],
@@ -317,9 +327,9 @@ export const SAFETY_POLICY_DATA = {
     reference: "MCO 5100.29C, Vol-1, Chap 6, Para 060403",
   },
   references: [
-    { title: "MCO 5100.29C (Safety Program)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "IGMC FAC 5100.29", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/", isQuickLink: true },
-    { title: "Marine Corps Safety Division", url: "https://www.safety.marines.mil/" },
+    { title: "MCO 5100.29C (Safety Program)", url: HUB_URLS.MCPEL, isQuickLink: true },
+    { title: "IGMC FAC 5100.29", url: CLIMATE_URLS.IGMC + "Units/Inspections-Division/Functional-Area-Checklists-FACs/", isQuickLink: true },
+    { title: "Marine Corps Safety Division", url: SAFETY_URLS.SAFETY_MARINES },
   ] as TransitionReference[],
 };
 
@@ -370,9 +380,9 @@ export const COMMAND_TEAM_TRAINING_DATA = {
     { timeline: "Within 90 Days", requirement: "Complete child abuse and domestic abuse training" },
   ],
   references: [
-    { title: "MCO 1754.9B (UPFRP)", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf", isQuickLink: true },
-    { title: "MCCS Family Programs", url: "https://www.usmc-mccs.org/", isQuickLink: true },
-    { title: "Military OneSource", url: "https://www.militaryonesource.mil/" },
+    { title: "MCO 1754.9B (UPFRP)", url: MCO_URLS.FAMILY_READINESS, isQuickLink: true },
+    { title: "MCCS Family Programs", url: FAMILY_URLS.MCCS, isQuickLink: true },
+    { title: "Military OneSource", url: FAMILY_URLS.MILITARY_ONESOURCE },
   ] as TransitionReference[],
 };
 
@@ -431,9 +441,9 @@ export const SARC_BRIEF_DATA = {
     { timeline: "8 Days", requirement: "Submit 8-Day Incident Report" },
   ],
   references: [
-    { title: "MCO 1752.5C (SAPR Program)", url: "https://www.marines.mil/portals/1/Publications/MCO%201752.5C.pdf", isQuickLink: true },
-    { title: "SAPR Gear Locker", url: "https://hqmcportal.hqi.usmc.mil/sites/family/mfb/SitePages/Home.aspx", isQuickLink: true },
-    { title: "DoD Safe Helpline", url: "https://safehelpline.org" },
+    { title: "MCO 1752.5C (SAPR Program)", url: MCO_URLS.SAPR, isQuickLink: true },
+    { title: "SAPR Gear Locker", url: SAPR_URLS.SAPR_WORKSPACE, isQuickLink: true },
+    { title: "DoD Safe Helpline", url: SAPR_URLS.SAFE_HELPLINE },
   ] as TransitionReference[],
 };
 
@@ -486,9 +496,9 @@ export const METL_REVIEW_DATA = {
     { name: "DRRS-MC", purpose: "Readiness reporting system", url: "Via GCSS-MC or DRRS portal" },
   ],
   references: [
-    { title: "MCO 1553.3B (Unit Training Management)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "MCO 3500.110 (METL Policy)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
-    { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+    { title: "MCO 1553.3B (Unit Training Management)", url: HUB_URLS.MCPEL, isQuickLink: true },
+    { title: "MCO 3500.110 (METL Policy)", url: HUB_URLS.MCPEL },
+    { title: "MCO 3000.13 (Readiness Reporting)", url: HUB_URLS.MCPEL },
   ] as TransitionReference[],
 };
 
@@ -523,8 +533,8 @@ export const FUND_CONTROL_DATA = {
     },
   ],
   trainingLocations: [
-    { name: "PBISweb", url: "https://fmbweb1.nmci.navy.mil/pbis/training/pbisweb_training.cfm", notes: "Primary - requires .mil access" },
-    { name: "DoD FM Online (FM myLearn)", url: "https://fmonline.ousdc.osd.mil/Default.aspx", notes: "Alternative option" },
+    { name: "PBISweb", url: FISCAL_URLS.PBIS_TRAINING, notes: "Primary - requires .mil access" },
+    { name: "DoD FM Online (FM myLearn)", url: FISCAL_URLS.FM_ONLINE, notes: "Alternative option" },
   ],
   threePartTest: {
     description: "Before spending funds, verify:",
@@ -550,7 +560,7 @@ export const FUND_CONTROL_DATA = {
   references: [
     { title: "SECNAVINST 7000.27D", url: "https://www.secnav.navy.mil/doni/", isQuickLink: true },
     { title: "DON Financial Management Policy Manual", url: "https://portal.secnav.navy.mil/orgs/FMC/FMC_KM_Library/CurrentFMPM.pdf" },
-    { title: "NAVMC 2664 (Financial Guidebook)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+    { title: "NAVMC 2664 (Financial Guidebook)", url: HUB_URLS.MCPEL },
   ] as TransitionReference[],
 };
 
@@ -604,7 +614,7 @@ export const AVIATION_SURVEYS_DATA = {
   ],
   surveyWebsite: "https://www.safetyclimatesurveys.org/",
   references: [
-    { title: "MCO 5100.29C (Safety Program)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "MCO 5100.29C (Safety Program)", url: HUB_URLS.MCPEL, isQuickLink: true },
     { title: "Aviation Safety Climate Surveys", url: "https://www.safetyclimatesurveys.org/", isQuickLink: true },
     { title: "Naval Safety Center", url: "https://safetycenter.navy.mil/" },
   ] as TransitionReference[],
@@ -722,15 +732,15 @@ export const FAP_TRAINING_DATA = {
     "FAP contact information not readily available",
   ],
   keyContacts: [
-    { name: "Installation Family Advocacy Program", info: "Contact through MCCS", url: "https://www.usmc-mccs.org/" },
+    { name: "Installation Family Advocacy Program", info: "Contact through MCCS", url: FAMILY_URLS.MCCS },
     { name: "National Domestic Violence Hotline", info: "1-800-799-SAFE (7233)", url: "https://www.thehotline.org/" },
-    { name: "Military OneSource", info: "1-800-342-9647", url: "https://www.militaryonesource.mil/" },
-    { name: "Safe Helpline (for sexual assault)", info: "1-877-995-5247 - Note: For domestic sexual abuse, coordinate with FAP", url: "https://safehelpline.org" },
+    { name: "Military OneSource", info: "1-800-342-9647", url: FAMILY_URLS.MILITARY_ONESOURCE },
+    { name: "Safe Helpline (for sexual assault)", info: "1-877-995-5247 - Note: For domestic sexual abuse, coordinate with FAP", url: SAPR_URLS.SAFE_HELPLINE },
   ],
   references: [
-    { title: "MCO 1754.11A (FAP Program)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/", isQuickLink: true },
-    { title: "MCCS (to find FAP)", url: "https://www.usmc-mccs.org/" },
+    { title: "MCO 1754.11A (FAP Program)", url: HUB_URLS.MCPEL, isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: CLIMATE_URLS.IGMC + "Units/Inspections-Division/Functional-Area-Checklists-FACs/", isQuickLink: true },
+    { title: "MCCS (to find FAP)", url: FAMILY_URLS.MCCS },
     { title: "Military OneSource Family Violence", url: "https://www.militaryonesource.mil/health-and-wellness/family-violence" },
     { title: "National Domestic Violence Hotline", url: "https://www.thehotline.org/" },
   ] as TransitionReference[],
@@ -868,13 +878,13 @@ export const SAPR_POLICY_DATA = {
   ],
   keyContacts: [
     { name: "HQMC SAPR", info: "SMB.Manpower.SAPR@usmc.mil", url: "https://www.usmc-mccs.org/marine-family-support/prevention-and-counseling/sexual-assault-prevention-and-response" },
-    { name: "DoD Safe Helpline", info: "1-877-995-5247", url: "https://safehelpline.org" },
+    { name: "DoD Safe Helpline", info: "1-877-995-5247", url: SAPR_URLS.SAFE_HELPLINE },
   ],
   references: [
-    { title: "MCO 1752.5C (SAPR Program)", url: "https://www.marines.mil/portals/1/Publications/MCO%201752.5C.pdf", isQuickLink: true },
-    { title: "SAPR Gear Locker", url: "https://hqmcportal.hqi.usmc.mil/sites/family/mfb/SitePages/Home.aspx", isQuickLink: true },
+    { title: "MCO 1752.5C (SAPR Program)", url: MCO_URLS.SAPR, isQuickLink: true },
+    { title: "SAPR Gear Locker", url: SAPR_URLS.SAPR_WORKSPACE, isQuickLink: true },
     { title: "DoD SAPR", url: "https://www.sapr.mil" },
-    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
+    { title: "IGMC Functional Area Checklists", url: CLIMATE_URLS.IGMC + "Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
   ] as TransitionReference[],
 };
 
@@ -933,10 +943,10 @@ export const UPFRP_SOP_DATA = {
     "SOP not updated after personnel changes",
   ],
   references: [
-    { title: "MCO 1754.9B (UPFRP)", url: "https://www.marines.mil/portals/1/Publications/MCO%201754.9B.pdf", isQuickLink: true },
-    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/", isQuickLink: true },
-    { title: "MCCS Family Programs", url: "https://www.usmc-mccs.org/" },
-    { title: "Military OneSource", url: "https://www.militaryonesource.mil/" },
+    { title: "MCO 1754.9B (UPFRP)", url: MCO_URLS.FAMILY_READINESS, isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: CLIMATE_URLS.IGMC + "Units/Inspections-Division/Functional-Area-Checklists-FACs/", isQuickLink: true },
+    { title: "MCCS Family Programs", url: FAMILY_URLS.MCCS },
+    { title: "Military OneSource", url: FAMILY_URLS.MILITARY_ONESOURCE },
   ] as TransitionReference[],
 };
 
@@ -1007,8 +1017,8 @@ export const COMMAND_PHILOSOPHY_DATA = {
   ],
   references: [
     { title: "Lejeune Leadership Institute Resources", url: "https://www.usmcu.edu/Academic-Programs/Lejeune-Leadership-Institute/Commandants-Combined-Commandership-Course/Resources/", isQuickLink: true },
-    { title: "MCDP 1 (Warfighting)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
-    { title: "MCDP 6 (Command and Control)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+    { title: "MCDP 1 (Warfighting)", url: HUB_URLS.MCPEL },
+    { title: "MCDP 6 (Command and Control)", url: HUB_URLS.MCPEL },
   ] as TransitionReference[],
 };
 
@@ -1061,8 +1071,8 @@ export const PAC_POLICY_DATA = {
     { name: "IGMC Hotline", info: "1-866-243-3887", url: "https://www.hqmc.marines.mil/igmc/" },
   ],
   references: [
-    { title: "MCO P5354.1E w/CH 1 (PAC Policy)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/", isQuickLink: true },
+    { title: "MCO P5354.1E w/CH 1 (PAC Policy)", url: HUB_URLS.MCPEL, isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: CLIMATE_URLS.IGMC + "Units/Inspections-Division/Functional-Area-Checklists-FACs/", isQuickLink: true },
     { title: "DEOCS", url: "https://www.defenseculture.mil/Assessment-to-Solutions/A2S-Home/" },
   ] as TransitionReference[],
 };
@@ -1126,12 +1136,12 @@ export const SAFETY_CLIMATE_SURVEY_DATA = {
     "Annual survey not completed",
   ],
   keyContacts: [
-    { name: "CMC Safety Division", info: "(703) 614-1895 / DSN 224-1895", url: "https://www.safety.marines.mil/" },
+    { name: "CMC Safety Division", info: "(703) 614-1895 / DSN 224-1895", url: SAFETY_URLS.SAFETY_MARINES },
     { name: "Semper Fi Surveys (GCASS)", info: "For technical issues", url: "https://www.semperfisurveys.org/" },
   ],
   references: [
-    { title: "MCO 5100.29C (Safety Program)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/", isQuickLink: true },
+    { title: "MCO 5100.29C (Safety Program)", url: HUB_URLS.MCPEL, isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: CLIMATE_URLS.IGMC + "Units/Inspections-Division/Functional-Area-Checklists-FACs/", isQuickLink: true },
     { title: "Semper Fi Surveys", url: "https://www.semperfisurveys.org/" },
     { title: "Naval Safety Center", url: "https://safetycenter.navy.mil/" },
   ] as TransitionReference[],
@@ -1201,8 +1211,8 @@ export const DEOCS_DATA = {
   ],
   references: [
     { title: "DEOCS Portal", url: "https://www.defenseculture.mil/Assessment-to-Solutions/A2S-Home/", isQuickLink: true },
-    { title: "MCO P5354.1E w/CH 1 (PAC Policy)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
+    { title: "MCO P5354.1E w/CH 1 (PAC Policy)", url: HUB_URLS.MCPEL, isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: CLIMATE_URLS.IGMC + "Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
   ] as TransitionReference[],
 };
 
@@ -1289,8 +1299,8 @@ export const ANNUAL_DEOCS_DATA = {
   ],
   references: [
     { title: "DEOCS Portal", url: "https://www.defenseculture.mil/Assessment-to-Solutions/A2S-Home/", isQuickLink: true },
-    { title: "MCO P5354.1E w/CH 1 (PAC Policy)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
+    { title: "MCO P5354.1E w/CH 1 (PAC Policy)", url: HUB_URLS.MCPEL, isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: CLIMATE_URLS.IGMC + "Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
   ] as TransitionReference[],
 };
 
@@ -1372,12 +1382,12 @@ export const ANNUAL_SAFETY_SURVEY_DATA = {
     "Action items not tracked or updated",
   ],
   keyContacts: [
-    { name: "CMC Safety Division", info: "(703) 614-1895 / DSN 224-1895", url: "https://www.safety.marines.mil/" },
+    { name: "CMC Safety Division", info: "(703) 614-1895 / DSN 224-1895", url: SAFETY_URLS.SAFETY_MARINES },
     { name: "Semper Fi Surveys (GCASS)", info: "For ground units", url: "https://www.semperfisurveys.org/" },
     { name: "Aviation Safety Climate Surveys", info: "For aviation units", url: "https://www.safetyclimatesurveys.org/" },
   ],
   references: [
-    { title: "MCO 5100.29C (Safety Program)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "MCO 5100.29C (Safety Program)", url: HUB_URLS.MCPEL, isQuickLink: true },
     { title: "Semper Fi Surveys (GCASS)", url: "https://www.semperfisurveys.org/", isQuickLink: true },
     { title: "Aviation Safety Climate Surveys", url: "https://www.safetyclimatesurveys.org/" },
     { title: "Naval Safety Center", url: "https://safetycenter.navy.mil/" },
@@ -1446,9 +1456,9 @@ export const ANNUAL_TE_REVIEW_DATA = {
     "Change requests not submitted for known mismatches",
   ],
   references: [
-    { title: "MCO 4400.150 (Equipment Allowances)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "MCO 4400.150 (Equipment Allowances)", url: HUB_URLS.MCPEL, isQuickLink: true },
     { title: "TFSMS", url: "https://tfsms.mccdc.usmc.mil/", isQuickLink: true },
-    { title: "MCO 4400.201 (Property Management)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+    { title: "MCO 4400.201 (Property Management)", url: HUB_URLS.MCPEL },
   ] as TransitionReference[],
 };
 
@@ -1534,9 +1544,9 @@ export const ANNUAL_INVENTORY_DATA = {
     "CMR not reconciled with inventory results",
   ],
   references: [
-    { title: "MCO 4400.201 Volume 3 (Property Management)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "NAVMC 4000.5 (Supply Officer's Internal Controls Handbook)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "IGMC Functional Area Checklists (Supply)", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
+    { title: "MCO 4400.201 Volume 3 (Property Management)", url: HUB_URLS.MCPEL, isQuickLink: true },
+    { title: "NAVMC 4000.5 (Supply Officer's Internal Controls Handbook)", url: HUB_URLS.MCPEL, isQuickLink: true },
+    { title: "IGMC Functional Area Checklists (Supply)", url: CLIMATE_URLS.IGMC + "Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
   ] as TransitionReference[],
 };
 
@@ -1623,10 +1633,10 @@ export const ANNUAL_METL_REVIEW_DATA = {
     "MCTIMS data not matching commander's assessment",
   ],
   references: [
-    { title: "MCO 1553.3B (Unit Training Management)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "MCO 3500.110 (METL Policy)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
+    { title: "MCO 1553.3B (Unit Training Management)", url: HUB_URLS.MCPEL, isQuickLink: true },
+    { title: "MCO 3500.110 (METL Policy)", url: HUB_URLS.MCPEL, isQuickLink: true },
     { title: "MCTIMS", url: "https://mctims.usmc.mil/" },
-    { title: "MCO 3000.13 (Readiness Reporting)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+    { title: "MCO 3000.13 (Readiness Reporting)", url: HUB_URLS.MCPEL },
   ] as TransitionReference[],
 };
 
@@ -1762,9 +1772,9 @@ export const STATUS_COMMAND_LETTER_OUTGOING_DATA = {
   ],
   references: [
     { title: "CMC White Letter 3-17", url: "https://www.usmcu.edu/Portals/218/CMC%20White%20Letter%203-17%20-%20FINAL.PDF", isQuickLink: true },
-    { title: "MCO 4400.201 Vol 3 v2", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "MCO 3000.13B (Readiness Reporting)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
-    { title: "MCO P5354.1E (PAC - DEOCS)", url: "https://www.marines.mil/News/Publications/MCPEL/" },
+    { title: "MCO 4400.201 Vol 3 v2", url: HUB_URLS.MCPEL, isQuickLink: true },
+    { title: "MCO 3000.13B (Readiness Reporting)", url: HUB_URLS.MCPEL },
+    { title: "MCO P5354.1E (PAC - DEOCS)", url: HUB_URLS.MCPEL },
   ] as TransitionReference[],
 };
 
@@ -1850,9 +1860,9 @@ export const CERTIFICATE_OF_RELIEF_OUTGOING_DATA = {
     "Incoming CO acceptance unclear",
   ],
   references: [
-    { title: "MCO 4400.201 Volume 3 v2", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "MCO 4400.150 (Consumer-Level Supply)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
+    { title: "MCO 4400.201 Volume 3 v2", url: HUB_URLS.MCPEL, isQuickLink: true },
+    { title: "MCO 4400.150 (Consumer-Level Supply)", url: HUB_URLS.MCPEL, isQuickLink: true },
+    { title: "IGMC Functional Area Checklists", url: CLIMATE_URLS.IGMC + "Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
   ] as TransitionReference[],
 };
 
@@ -1965,8 +1975,8 @@ export const RELINQUISH_DEOCS_DATA = {
   ],
   references: [
     { title: "DEOCS Portal", url: "https://www.defenseculture.mil/Assessment-to-Solutions/A2S-Home/", isQuickLink: true },
-    { title: "MCO P5354.1E w/CH 1 (PAC Policy)", url: "https://www.marines.mil/News/Publications/MCPEL/", isQuickLink: true },
-    { title: "MARADMIN 291/19", url: "https://www.marines.mil/News/Messages/MARADMINS/" },
-    { title: "IGMC Functional Area Checklists", url: "https://www.hqmc.marines.mil/igmc/Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
+    { title: "MCO P5354.1E w/CH 1 (PAC Policy)", url: HUB_URLS.MCPEL, isQuickLink: true },
+    { title: "MARADMIN 291/19", url: HUB_URLS.MARADMIN_HUB },
+    { title: "IGMC Functional Area Checklists", url: CLIMATE_URLS.IGMC + "Units/Inspections-Division/Functional-Area-Checklists-FACs/" },
   ] as TransitionReference[],
 };
