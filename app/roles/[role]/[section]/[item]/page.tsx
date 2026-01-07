@@ -2071,8 +2071,8 @@ const EMERGENCY_LEAVE_REQUESTS_DATA = {
 // Deployment Support - Post-Deployment
 const REINTEGRATION_PROCESSING_DATA = {
   references: [
-    { title: "PDHA (Post-Deployment Health Assessment)", url: "#", isQuickLink: true },
-    { title: "PDHRA (Reassessment)", url: "#", isQuickLink: true },
+    { title: "PDHA (Post-Deployment Health Assessment)", url: "https://eha.health.mil/EHA/", isQuickLink: true },
+    { title: "PDHRA (Reassessment)", url: "https://eha.health.mil/EHA/", isQuickLink: true },
     { title: "Marine Corps Family Team Building", url: "https://usmc-mccs.org/services/family/", isQuickLink: true },
     { title: "Military OneSource", url: "https://www.militaryonesource.mil/", isQuickLink: false },
     { title: "Combat Operational Stress Control", url: "#", isQuickLink: false },

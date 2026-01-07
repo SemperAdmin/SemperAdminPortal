@@ -867,7 +867,7 @@ export const SAPR_POLICY_DATA = {
     "No evidence of SARC coordination",
   ],
   keyContacts: [
-    { name: "HQMC SAPR", info: "SMB.Manpower.SAPR@usmc.mil", url: "" },
+    { name: "HQMC SAPR", info: "SMB.Manpower.SAPR@usmc.mil", url: "https://www.usmc-mccs.org/marine-family-support/prevention-and-counseling/sexual-assault-prevention-and-response" },
     { name: "DoD Safe Helpline", info: "1-877-995-5247", url: "https://safehelpline.org" },
   ],
   references: [
