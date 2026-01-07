@@ -3,7 +3,15 @@
 import React, { useState } from "react";
 import { Breadcrumb } from "../ui/Breadcrumb";
 import { Acronym } from "../ui/Acronym";
-import { MCO_URLS } from "../../data/references";
+import {
+  MCO_URLS,
+  MCO_4400_201_URLS,
+  SAFETY_URLS,
+  FISCAL_URLS,
+  TRAINING_URLS,
+  WHITE_LETTER_URLS,
+  MARADMIN_URLS,
+} from "../../data/references";
 import {
   ArrowRightLeft,
   Clock,
@@ -718,11 +726,11 @@ export function TransitionOfCommandContent() {
             <h3 className="mb-3 font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Training</h3>
             <div className="space-y-2">
               {[
-                { name: "Cornerstone", desc: "MARADMIN 388/25", url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4279462/fiscal-year-2026-class-dates-for-cornerstone-the-commandants-combined-commander/" },
-                { name: "Fund Control Training", desc: "DON fiscal training", url: "https://fmonline.ousdc.osd.mil/Default.aspx" },
-                { name: "DRRS-MC Training", desc: "Readiness reporting", url: "https://www.marinenet.usmc.mil/" },
-                { name: "Aviation Safety Surveys", desc: "CSA, MCAS, ASPA", url: "https://www.marineaviation.org" },
-                { name: "Safety Climate Survey", desc: "O-5/O-6 requirement", url: "https://www.safety.marines.mil/" },
+                { name: "Cornerstone", desc: "MARADMIN 388/25", url: MARADMIN_URLS.CORNERSTONE_388_25 },
+                { name: "Fund Control Training", desc: "DON fiscal training", url: FISCAL_URLS.FM_ONLINE },
+                { name: "DRRS-MC Training", desc: "Readiness reporting", url: TRAINING_URLS.MARINENET },
+                { name: "Aviation Safety Surveys", desc: "CSA, MCAS, ASPA", url: SAFETY_URLS.MARINE_AVIATION },
+                { name: "Safety Climate Survey", desc: "O-5/O-6 requirement", url: SAFETY_URLS.SAFETY_MARINES },
               ].map((link) =>
                 link.url ? (
                   <a
@@ -761,13 +769,13 @@ export function TransitionOfCommandContent() {
             <h3 className="mb-3 font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">References</h3>
             <div className="space-y-2">
               {[
-                { name: "CMC White Letter 3-17", desc: "Status of Command", url: "https://www.usmcu.edu/Portals/218/CMC%20White%20Letter%203-17%20-%20FINAL.PDF" },
-                { name: "MCO 4400.201 Vol 3", desc: "Management of Property", url: "https://www.marines.mil/Portals/1/Publications/MCO%204400.201%20Volume%203%20v2.pdf?ver=2018-07-26-135024-433" },
-                { name: "MCO 5100.29C", desc: "Safety Management System", url: "https://www.marines.mil/Portals/1/Publications/MCO%205100.29C%20with%20CH%201-2%20and%20Volumes%201-9.pdf?ver=xpHxSYo4uELfIUj-IhgLOA%3d%3d" },
-                { name: "MCO 1752.5C", desc: "SAPR Program", url: "https://www.marines.mil/Portals/1/Publications/MCO%201752.5C.pdf?ver=2019-06-10-115714-627" },
-                { name: "MCO 1754.9B", desc: "Unit, Personal and Family Readiness", url: "https://www.marines.mil/Portals/1/Publications/MCO%201754.9B.pdf?ver=2019-04-03-142738-677" },
-                { name: "MCO 5354.1G", desc: "Prohibited Activities and Conduct", url: "https://www.marines.mil/Portals/1/Publications/MCO%205354.1G%20Admin%20Ch%201%20v2.pdf?ver=Zx2KQaYufT6GZ4AhSHjBgg%3d%3d" },
-                { name: "MCO 3000.13B", desc: "Unit Readiness", url: "https://www.marines.mil/Portals/1/Publications/MCO%203000.13B.pdf?ver=2020-07-15-110758-503" },
+                { name: "CMC White Letter 3-17", desc: "Status of Command", url: WHITE_LETTER_URLS.WL_3_17 },
+                { name: "MCO 4400.201 Vol 3", desc: "Management of Property", url: MCO_4400_201_URLS.VOL_3 },
+                { name: "MCO 5100.29C", desc: "Safety Management System", url: MCO_URLS.SAFETY_MANAGEMENT },
+                { name: "MCO 1752.5C", desc: "SAPR Program", url: MCO_URLS.SAPR },
+                { name: "MCO 1754.9B", desc: "Unit, Personal and Family Readiness", url: MCO_URLS.FAMILY_READINESS },
+                { name: "MCO 5354.1G", desc: "Prohibited Activities and Conduct", url: MCO_URLS.PROHIBITED_ACTIVITIES },
+                { name: "MCO 3000.13B", desc: "Unit Readiness", url: MCO_URLS.READINESS_REPORTING },
               ].map((link) =>
                 link.url ? (
                   <a

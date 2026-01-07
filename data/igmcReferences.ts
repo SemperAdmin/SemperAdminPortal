@@ -277,14 +277,14 @@ export const referenceDocuments: Record<string, ReferenceDocument> = {
     id: "dod-fmr-vol5-ch1",
     title: "DoD FMR Vol 5, Ch 1",
     fullTitle: "DoD Financial Management Regulation Volume 5 Chapter 1",
-    url: "https://comptroller.war.gov/Portals/45/documents/fmr/current/05/05_01.pdf",
+    url: "https://comptroller.defense.gov/Portals/45/documents/fmr/current/05/05_01.pdf",
     category: "dodr",
   },
   "dod-fmr-vol5-ch5": {
     id: "dod-fmr-vol5-ch5",
     title: "DoD FMR Vol 5, Ch 5",
     fullTitle: "DoD Financial Management Regulation Volume 5 Chapter 5",
-    url: "https://comptroller.war.gov/Portals/45/documents/fmr/current/05/05_05.pdf",
+    url: "https://comptroller.defense.gov/Portals/45/documents/fmr/current/05/05_05.pdf",
     category: "dodr",
   },
   "dod-gtcc-regs": {
