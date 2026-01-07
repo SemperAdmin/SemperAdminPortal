@@ -8608,8 +8608,6 @@ const MOL_FUNCTIONAL_MODULES = {
     description: "Provides individual members access to view their own personnel records as recorded within the MCTFS or interfacing application. Self-Certified transactional reporting capabilities are provided to users for select data elements not requiring two-factor review. Reports are generated using a combination of local database queries (MED) and service calls directly to the MCTFS (SOA APIs).",
     capabilities: ["View personnel records", "Self-certified transactions", "Access electronic records (ARCR, ACIP, BIR, BTR, etc.)", "Update contact information", "Manage emergency data", "View W2 statements"],
     userTypes: ["Individual Members"],
-    electronicRecords: ["Annual Retirement Credit Report (ARCR)", "Aviation Career Incentive Pay (ACIP)", "Awards", "Basic Individual Record (BIR)", "Basic Training Record (BTR)", "BRS/TSP", "Civilian Employment Information (CEI)", "Chronological Record (CHRO)", "Education", "Family Care Plan (FCP)", "Individual Medical Readiness (IMR)", "Pay and Leave Summary", "Pers-Tempo", "Personal Statement of Military Compensation (PSMC)", "Record of Emergency Data (RED)", "Reserve Drill Summary", "Record of Service (ROS)", "W2 Tax Statements"],
-    selfCertifiedTransactions: ["Blended Retirement Opt-In/Out", "Acknowledgements", "Career Designation (Officer)", "Career Retirement Certification", "Civilian Employment Information", "Contact Information", "Foreign Travel", "Gas Mask and Helmet", "Race/Ethnic", "Religion", "Self-professed Language Skills", "RED Certification", "W2/W2C Electronic Delivery"],
     guide: [
       {
         title: "Accessing Personal Information",
@@ -12733,7 +12731,6 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "mol-pay-leave",
     "mol-pers-tempo",
     "mol-psmc",
-    "mol-red",
     "mol-reserve-drill",
     "mol-ros",
     "mol-w2",
@@ -12750,12 +12747,19 @@ export function generateStaticParams(): { role: Role; section: string; item: str
     "mol-acknowledgements",
     "mol-career-designation",
     "mol-career-retirement-cert",
-    "mol-red-certification",
     "mol-w2-electronic",
-    // Leave Management
-    "mol-submit-leave",
-    "mol-leave-balance",
-    "mol-cancel-leave",
+    // Record of Emergency Data (RED)
+    "mol-red",
+    "mol-red-certification",
+    "mol-red-family",
+    "mol-red-parents",
+    "mol-red-nok",
+    "mol-red-insurance",
+    "mol-red-death-gratuity",
+    "mol-red-padd",
+    "mol-red-pay-arrears",
+    "mol-red-do-not-notify",
+    "mol-red-mia",
     // Administrative Actions
     "mol-epar",
     "mol-trouble-ticket-system",
