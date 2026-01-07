@@ -350,6 +350,27 @@ export const ENVIRONMENTAL_URLS = {
 export const PUBLIC_AFFAIRS_URLS = {
   /** USMC Social Media Handbook */
   SOCIAL_MEDIA_HANDBOOK: "https://media.defense.gov/2025/Nov/05/2003819006/-1/-1/0/251103-USMCSOCIALMEDIAHANDBOOK.PDF",
+
+  /** SECNAVINST 5720.44C - Department of the Navy Public Affairs Policy and Regulations */
+  SECNAVINST_5720_44C: "https://www.secnav.navy.mil/doni/Directives/05000%20General%20Management%20Security%20and%20Safety%20Services/05-700%20General%20External%20and%20Internal%20Relations%20Services/5720.44C%20CH%202.pdf",
+
+  /** DoD Manual 5400.07 - FOIA Program (replaced DoD 5400.7-R) */
+  DODM_5400_07_FOIA: "https://open.defense.gov/Portals/23/Documents/FOIA/FOIA_Resources/DoDM%205400.07.pdf",
+
+  /** DoD 5400.11-R - Privacy Program */
+  DOD_5400_11R_PRIVACY: "https://dpcld.defense.gov/Portals/49/Documents/Privacy/540011p.pdf",
+
+  /** DoDD 1344.10 - Political Activities by Members of the Armed Forces */
+  DODD_1344_10_POLITICAL: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodd/134410p.pdf",
+
+  /** DINFOS Consolidated Guidelines for Release */
+  DINFOS_GUIDELINES: "https://www.dinfos.dma.mil/Portals/66/OPSEC/DINFOS%20Consolidated%20Guidelines%20for%20Release%20(2008).pdf",
+
+  /** HHS Summary of HIPAA Privacy Rule */
+  HHS_HIPAA_SUMMARY: "https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html",
+
+  /** USMC Communication Strategy */
+  USMC_COMM_STRATEGY: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/3389350/usmc-communication-strategy/",
 } as const;
 
 // ============================================================================
