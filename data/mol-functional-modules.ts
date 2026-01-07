@@ -62,6 +62,122 @@ export const MOL_FUNCTIONAL_MODULES: Record<string, MOLModuleData> = {
     capabilities: ["Create command messages", "Disseminate to subordinate personnel", "Display on MOL home page for 1-5 days", "Available battalion level through CMC/HQMC"],
     userTypes: ["Command Representatives", "Commanders"],
   },
+  "mol-tt-vs-epar": {
+    title: "Trouble Ticket vs. EPAR: Which One to Use?",
+    description: "While both tools are used to request actions on MOL, they serve very different purposes. Choosing the correct one ensures your request reaches the right office and is processed without delay.",
+    capabilities: ["Identify correct request method", "Route requests to proper office", "Avoid processing delays", "Understand system vs. personnel actions"],
+    userTypes: ["All Marines", "Unit Leaders"],
+    guide: [
+      {
+        title: "Use a Trouble Ticket (TT) For",
+        steps: [
+          {
+            step: "Technical Issues",
+            details: [
+              "Problems with specific MOL modules, such as Awards, Leave/Absence, or EPAR modules themselves",
+              "Application or system-level errors within MOL, COGNOS, or MCTFS",
+              "Features not working as expected or displaying errors",
+            ],
+          },
+          {
+            step: "Access Requests",
+            details: [
+              "Requesting specific permissions or access levels through your chain of command",
+              "Requesting elevated permissions for MOL modules",
+              "Unit template or role assignment issues",
+            ],
+          },
+          {
+            step: "Administrative Appointments",
+            details: [
+              "Submitting an Assumption of Command",
+              "New Commanding Officer appointment",
+              "Organizational structure changes that affect MOL access",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Use an EPAR For",
+        steps: [
+          {
+            step: "Personnel Actions",
+            details: [
+              "Submitting requests related to your personal career and record",
+              "Any action that changes your official personnel file",
+            ],
+          },
+          {
+            step: "Contract Changes",
+            details: [
+              "Re-enlistments",
+              "Extensions",
+              "Changes to your End of Current Contract (ECC) date",
+            ],
+          },
+          {
+            step: "Pay and Benefits",
+            details: [
+              "Actions regarding Bonuses",
+              "Survivor Benefit Program (SBP) elections",
+              "Career Status Bonuses (CSB)",
+            ],
+          },
+          {
+            step: "Record Corrections",
+            details: [
+              "Requesting updates or corrections to existing information in your personnel record",
+              "MOS changes, award corrections, or other administrative updates",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Quick Comparison",
+        steps: [
+          {
+            step: "Trouble Ticket (TT)",
+            details: [
+              "Primary Focus: System, Application, and Access issues",
+              "Common Examples: Software bugs, module errors, access requests",
+              "Supporting Office: Often MISSO/MISSA or Unit Leaders",
+              "Route: Technical support chain",
+            ],
+          },
+          {
+            step: "EPAR",
+            details: [
+              "Primary Focus: Personnel and Administrative actions",
+              "Common Examples: Re-enlistments, extensions, bonus requests",
+              "Supporting Office: Unit Admin or Personnel Admin Center (PAC)",
+              "Route: Chain of command",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Common Mistakes to Avoid",
+        steps: [
+          {
+            step: "Using EPAR for System Issues",
+            details: [
+              "If MOL is not working correctly, don't submit an EPAR",
+              "EPARs for system issues will be returned and delay resolution",
+              "System issues require a Trouble Ticket to reach the technical team",
+            ],
+          },
+          {
+            step: "Using Trouble Ticket for Career Actions",
+            details: [
+              "Re-enlistment requests submitted as Trouble Tickets will not be processed",
+              "Personnel actions must route through your chain of command via EPAR",
+              "Only your leadership can approve personnel actions, not technical support",
+            ],
+          },
+        ],
+      },
+    ],
+  },
   "mol-epar": {
     title: "Electronic Personnel Administrative Request (EPAR)",
     description: "Provides individual members and authorized unit leaders the ability to submit and route administrative requests through the chain of command.",
