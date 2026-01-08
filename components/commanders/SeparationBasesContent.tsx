@@ -3,6 +3,18 @@
 import { TabbedContentLayout } from "../ui/TabbedContentLayout";
 import { InfoCard } from "../ui/InfoCard";
 import { FileX, AlertTriangle, Scale, ClipboardList } from "lucide-react";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 interface Reference {
   title: string;
@@ -24,8 +36,8 @@ const TABS = [
   { id: "references", label: "References", type: "references" as const },
 ];
 
-const KEY_POINTS = [
-  { label: "Authority", value: "MCO 1900.16 governs enlisted administrative separations" },
+const KEY_POINTS: { label: string; value: string; url?: string }[] = [
+  { label: "Authority", value: "MCO 1900.16 governs enlisted administrative separations", url: MCO_URLS.MARCORSEPMAN_PDF },
   { label: "Characterization", value: "Honorable, General, or Other Than Honorable (OTH)" },
   { label: "Burden of Proof", value: "Preponderance of the evidence standard" },
   { label: "Due Process", value: "Rights increase with characterization severity and time in service" },
@@ -105,7 +117,9 @@ export function SeparationBasesContent({ data }: Props) {
                 {KEY_POINTS.map((point) => (
                   <tr key={point.label} className="border-b border-zinc-100 dark:border-zinc-800">
                     <td className="py-3 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{point.label}</td>
-                    <td className="py-3 text-zinc-600 dark:text-zinc-400">{point.value}</td>
+                    <td className="py-3 text-zinc-600 dark:text-zinc-400">
+                      {point.url ? <MCOLink mco={point.value} url={point.url} /> : point.value}
+                    </td>
                   </tr>
                 ))}
               </tbody>
