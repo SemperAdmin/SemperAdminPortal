@@ -2,8 +2,21 @@
 
 import { useState } from "react";
 import { QuickLinks } from "./QuickLinks";
+import { MCO_URLS } from "@/data/references";
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
+
+// Helper component for linked MCO references
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 type Props = {
   data: { references: Ref[] };
@@ -28,7 +41,7 @@ const KEY_REQUIREMENTS = [
   { element: "Submission Deadline", requirement: "Within 30 days of reporting to new command" },
   { element: "Update Requirement", requirement: "Annually or within 30 days of any change" },
   { element: "Approval Authority", requirement: "Commanding Officer" },
-  { element: "Authority", requirement: "MCO 1740.13D" },
+  { element: "Authority", requirement: "MCO 1740.13D", url: MCO_URLS.FAMILY_CARE },
 ];
 
 const MANDATORY_FCP_CATEGORIES = [
@@ -324,7 +337,13 @@ export function FamilyCarePlanContent({ data }: Props) {
                       {KEY_REQUIREMENTS.map((item) => (
                         <tr key={item.element}>
                           <td className="py-3 font-medium text-zinc-900 dark:text-zinc-100">{item.element}</td>
-                          <td className="py-3 text-zinc-700 dark:text-zinc-300">{item.requirement}</td>
+                          <td className="py-3 text-zinc-700 dark:text-zinc-300">
+                            {"url" in item && item.url ? (
+                              <MCOLink mco={item.requirement} url={item.url} />
+                            ) : (
+                              item.requirement
+                            )}
+                          </td>
                         </tr>
                       ))}
                     </tbody>
@@ -335,7 +354,7 @@ export function FamilyCarePlanContent({ data }: Props) {
               <div className="rounded-lg border-l-4 border-red-500 bg-red-50 p-4 dark:bg-red-900/20">
                 <h4 className="font-semibold text-red-800 dark:text-red-200">Mandatory Requirement</h4>
                 <p className="mt-1 text-sm text-red-800 dark:text-red-200">
-                  Per MCO 1740.13D, all service members with dependent family members are required to establish and
+                  Per <MCOLink mco="MCO 1740.13D" url={MCO_URLS.FAMILY_CARE} />, all service members with dependent family members are required to establish and
                   maintain an FCP, regardless of marital status or family situation. This includes married Marines
                   with a stay-at-home spouse.
                 </p>
@@ -843,7 +862,7 @@ export function FamilyCarePlanContent({ data }: Props) {
               </div>
               <div>
                 <dt className="font-medium text-zinc-900 dark:text-zinc-100">Governing Order</dt>
-                <dd className="text-zinc-600 dark:text-zinc-400">MCO 1740.13D</dd>
+                <dd className="text-zinc-600 dark:text-zinc-400"><MCOLink mco="MCO 1740.13D" url={MCO_URLS.FAMILY_CARE} /></dd>
               </div>
             </dl>
           </section>

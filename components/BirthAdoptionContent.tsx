@@ -3,8 +3,21 @@
 import { useState } from "react";
 import { QuickLinks } from "./QuickLinks";
 import { ListItem } from "./ui/ListItem";
+import { MCO_URLS } from "@/data/references";
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
+
+// Helper component for linked MCO references
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 type Props = {
   data: { references: Ref[] };
@@ -467,7 +480,7 @@ export function BirthAdoptionContent({ data }: Props) {
               <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
                 <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Support Requirements</h2>
                 <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
-                  Per MCO 1751.3, proof of dependent support is ordinarily not required for children residing with the member.
+                  Per <MCOLink mco="MCO 1751.3" url={MCO_URLS.DEPENDENCY_DETERMINATION} />, proof of dependent support is ordinarily not required for children residing with the member.
                   For children not in your physical custody:
                 </p>
                 <h4 className="mt-4 font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Acceptable Proof of Support:</h4>
@@ -785,7 +798,7 @@ export function BirthAdoptionContent({ data }: Props) {
                 <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Governing References</h2>
                 <ul className="mt-4 space-y-3">
                   <li className="rounded-lg border border-black/10 p-3 dark:border-white/10">
-                    <span className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">MCO 1751.3 CH-1</span>
+                    <MCOLink mco="MCO 1751.3 CH-1" url={MCO_URLS.DEPENDENCY_DETERMINATION} />
                     <p className="text-sm text-zinc-600 dark:text-zinc-400">Marine Corps Dependency Determination and Support Program</p>
                   </li>
                   <li className="rounded-lg border border-black/10 p-3 dark:border-white/10">
@@ -801,7 +814,7 @@ export function BirthAdoptionContent({ data }: Props) {
                     <p className="text-sm text-zinc-600 dark:text-zinc-400">Housing Allowances</p>
                   </li>
                   <li className="rounded-lg border border-black/10 p-3 dark:border-white/10">
-                    <span className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">MCO 1050.3J</span>
+                    <MCOLink mco="MCO 1050.3J" url={MCO_URLS.LEAVE_LIBERTY} />
                     <p className="text-sm text-zinc-600 dark:text-zinc-400">Regulations for Leave, Liberty, and Administrative Absence</p>
                   </li>
                 </ul>

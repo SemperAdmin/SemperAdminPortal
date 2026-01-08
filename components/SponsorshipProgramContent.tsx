@@ -2,8 +2,21 @@
 
 import { useState } from "react";
 import { QuickLinks } from "./QuickLinks";
+import { MCO_URLS } from "@/data/references";
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
+
+// Helper component for linked MCO references
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 type Props = {
   data: { references: Ref[] };
@@ -24,7 +37,7 @@ const KEY_REQUIREMENTS = [
   { element: "Sponsor Assignment", requirement: "Within 60 days before transfer" },
   { element: "Welcome Letter", requirement: "Within 10 working days of sponsor assignment" },
   { element: "Request Form", requirement: "NAVMC 11799 (Sponsorship Request Form)" },
-  { element: "Authority", requirement: "MCO 1320.11H" },
+  { element: "Authority", requirement: "MCO 1320.11H", url: MCO_URLS.SPONSORSHIP },
 ];
 
 const SPONSOR_REQUIRED_DUTIES = [
@@ -221,7 +234,13 @@ export function SponsorshipProgramContent({ data }: Props) {
                       {KEY_REQUIREMENTS.map((item) => (
                         <tr key={item.element} className="border-b border-zinc-100 dark:border-zinc-800">
                           <td className="py-2 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{item.element}</td>
-                          <td className="py-2 text-zinc-600 dark:text-zinc-400">{item.requirement}</td>
+                          <td className="py-2 text-zinc-600 dark:text-zinc-400">
+                            {"url" in item && item.url ? (
+                              <MCOLink mco={item.requirement} url={item.url} />
+                            ) : (
+                              item.requirement
+                            )}
+                          </td>
                         </tr>
                       ))}
                     </tbody>
@@ -234,7 +253,7 @@ export function SponsorshipProgramContent({ data }: Props) {
                   Who Receives a Sponsor
                 </h3>
                 <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
-                  Per MCO 1320.11H, sponsorship is mandatory for all personnel executing CONUS or OCONUS orders:
+                  Per <MCOLink mco="MCO 1320.11H" url={MCO_URLS.SPONSORSHIP} />, sponsorship is mandatory for all personnel executing CONUS or OCONUS orders:
                 </p>
                 <ul className="mt-3 space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
                   <li>• E-1 through E-9</li>
@@ -268,7 +287,7 @@ export function SponsorshipProgramContent({ data }: Props) {
                   Sponsor Responsibilities
                 </h2>
                 <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
-                  Per MCO 1320.11H, assigned sponsors have required and additional duties to support inbound Marines.
+                  Per <MCOLink mco="MCO 1320.11H" url={MCO_URLS.SPONSORSHIP} />, assigned sponsors have required and additional duties to support inbound Marines.
                 </p>
               </section>
 
@@ -305,7 +324,7 @@ export function SponsorshipProgramContent({ data }: Props) {
                   Sponsorship Coordinator Responsibilities
                 </h3>
                 <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                  Per MCO 1320.11H, Unit Sponsorship Coordinators must manage the program at the unit level.
+                  Per <MCOLink mco="MCO 1320.11H" url={MCO_URLS.SPONSORSHIP} />, Unit Sponsorship Coordinators must manage the program at the unit level.
                 </p>
                 <div className="mt-4 grid gap-4 md:grid-cols-2">
                   <div>
@@ -619,10 +638,10 @@ export function SponsorshipProgramContent({ data }: Props) {
                   Key References
                 </h3>
                 <ul className="mt-4 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>• MCO 1320.11H - Marine Corps Sponsorship Program</li>
+                  <li>• <MCOLink mco="MCO 1320.11H" url={MCO_URLS.SPONSORSHIP} /> - Marine Corps Sponsorship Program</li>
                   <li>• DoDI 1342.22 - Military Family Readiness</li>
                   <li>• SECNAVINST 1754.1B</li>
-                  <li>• MCO 1754.9B - Unit, Personal and Family Readiness Program</li>
+                  <li>• <MCOLink mco="MCO 1754.9B" url={MCO_URLS.FAMILY_READINESS} /> - Unit, Personal and Family Readiness Program</li>
                 </ul>
               </section>
 
