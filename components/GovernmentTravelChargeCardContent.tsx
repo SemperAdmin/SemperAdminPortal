@@ -1,18 +1,10 @@
 "use client";
+
+import { MCOLink } from "./ui/MCOLink";
 import { useState } from "react";
 import { QuickLinks } from "./QuickLinks";
 import { MCO_URLS } from "@/data/references";
 
-const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
-  <a
-    href={url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
-  >
-    {mco}
-  </a>
-);
 
 type Ref = { title: string; desc: string; url: string; type: string; isQuickLink?: boolean };
 type Tab = "overview" | "authorized" | "obtaining" | "payment" | "status" | "pcs" | "troubleshooter" | "references";

@@ -1,18 +1,9 @@
 "use client";
 
 import { TabbedContentLayout } from "./ui/TabbedContentLayout";
+import { MCOLink, KeyPoint } from "./ui/MCOLink";
 import { MCO_URLS } from "@/data/references";
 
-const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
-  <a
-    href={url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
-  >
-    {mco}
-  </a>
-);
 
 interface Reference {
   title: string;
@@ -26,7 +17,7 @@ interface Props {
   };
 }
 
-const KEY_POINTS: { label: string; value: string; url?: string }[] = [
+const KEY_POINTS: KeyPoint[] = [
   { label: "Definition", value: "Voluntary resignation from commissioned officer status" },
   { label: "Authority", value: "MCO 1900.16, 10 U.S.C. §§ 1181-1186", url: MCO_URLS.MARCORSEPMAN_PDF },
   { label: "Approval Authority", value: "Secretary of the Navy via CMC delegation" },

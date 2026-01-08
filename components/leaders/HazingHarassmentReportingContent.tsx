@@ -1,21 +1,12 @@
 "use client";
 
 import { TabbedContentLayout } from "../ui/TabbedContentLayout";
+import { MCOLink, KeyPoint } from "../ui/MCOLink";
 import { InfoCard } from "../ui/InfoCard";
 import { CollapsibleSection } from "../ui/CollapsibleSection";
 import { Shield, AlertTriangle, Users, FileText, Clock, Scale } from "lucide-react";
 import { MCO_URLS } from "@/data/references";
 
-const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
-  <a
-    href={url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
-  >
-    {mco}
-  </a>
-);
 
 interface Reference {
   title: string;
@@ -29,7 +20,7 @@ interface Props {
   };
 }
 
-const KEY_POINTS: { label: string; value: string; url?: string }[] = [
+const KEY_POINTS: KeyPoint[] = [
   { label: "Authority", value: "MCO 5354.1G - Punitive order under Article 92, UCMJ", url: MCO_URLS.PROHIBITED_ACTIVITIES },
   { label: "Scope", value: "Harassment, hazing, bullying, sexual harassment, prohibited discrimination" },
   { label: "Filing Deadline", value: "90 days from incident (120 days for Reserve)" },

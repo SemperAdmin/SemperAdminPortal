@@ -1,20 +1,11 @@
 "use client";
 
 import { TabbedContentLayout } from "../ui/TabbedContentLayout";
+import { MCOLink, KeyPoint } from "../ui/MCOLink";
 import { InfoCard } from "../ui/InfoCard";
 import { FileX, AlertTriangle, Scale, ClipboardList } from "lucide-react";
 import { MCO_URLS } from "@/data/references";
 
-const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
-  <a
-    href={url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
-  >
-    {mco}
-  </a>
-);
 
 interface Reference {
   title: string;
@@ -36,7 +27,7 @@ const TABS = [
   { id: "references", label: "References", type: "references" as const },
 ];
 
-const KEY_POINTS: { label: string; value: string; url?: string }[] = [
+const KEY_POINTS: KeyPoint[] = [
   { label: "Authority", value: "MCO 1900.16 governs enlisted administrative separations", url: MCO_URLS.MARCORSEPMAN_PDF },
   { label: "Characterization", value: "Honorable, General, or Other Than Honorable (OTH)" },
   { label: "Burden of Proof", value: "Preponderance of the evidence standard" },

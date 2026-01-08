@@ -1,23 +1,11 @@
 "use client";
 
+import { Fragment } from "react";
 import { TabbedContentLayout } from "./ui/TabbedContentLayout";
+import { MCOLink, KeyPointWithLinks, KeyPointLink } from "./ui/MCOLink";
 import { MCO_URLS } from "@/data/references";
 
-const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
-  <a
-    href={url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
-  >
-    {mco}
-  </a>
-);
 
-interface KeyPointLink {
-  text: string;
-  url: string;
-}
 
 interface Reference {
   title: string;
@@ -31,7 +19,7 @@ interface Props {
   };
 }
 
-const KEY_POINTS: { label: string; value: string; links?: KeyPointLink[] }[] = [
+const KEY_POINTS: KeyPointWithLinks[] = [
   {
     label: "Authority",
     value: "MCO 1900.16 (Separation), MCO 6110.3A (BCP/PFT/CFT)",
@@ -154,10 +142,10 @@ export function FailureToMeetStandardsContent({ data }: Props) {
                       {point.links ? (
                         <>
                           {point.links.map((link, index) => (
-                            <span key={link.text}>
+                            <Fragment key={link.url}>
                               {index > 0 && ", "}
                               <MCOLink mco={link.text} url={link.url} />
-                            </span>
+                            </Fragment>
                           ))}
                         </>
                       ) : (

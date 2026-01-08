@@ -1,18 +1,9 @@
 "use client";
 
 import { TabbedContentLayout } from "./ui/TabbedContentLayout";
+import { MCOLink, KeyPoint } from "./ui/MCOLink";
 import { MCO_URLS } from "@/data/references";
 
-const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
-  <a
-    href={url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
-  >
-    {mco}
-  </a>
-);
 
 interface Reference {
   title: string;
@@ -26,7 +17,7 @@ interface Props {
   };
 }
 
-const KEY_POINTS: { label: string; value: string; url?: string }[] = [
+const KEY_POINTS: KeyPoint[] = [
   { label: "Applies To", value: "Staff NCOs (E-6+) and Officers" },
   { label: "Authority", value: "MCO 1610.7A (Performance Evaluation System)", url: MCO_URLS.PES_PDF },
   { label: "System", value: "APES (Automated Performance Evaluation System)" },

@@ -1,18 +1,9 @@
 "use client";
 
 import { TabbedContentLayout } from "./ui/TabbedContentLayout";
+import { MCOLink } from "./ui/MCOLink";
 import { MCO_URLS } from "@/data/references";
 
-const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
-  <a
-    href={url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
-  >
-    {mco}
-  </a>
-);
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
 

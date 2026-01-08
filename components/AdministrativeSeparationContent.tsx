@@ -1,18 +1,9 @@
 "use client";
 
 import { TabbedContentLayout } from "./ui/TabbedContentLayout";
+import { MCOLink, KeyPoint } from "./ui/MCOLink";
 import { MCO_URLS } from "@/data/references";
 
-const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
-  <a
-    href={url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
-  >
-    {mco}
-  </a>
-);
 
 interface Reference {
   title: string;
@@ -26,7 +17,7 @@ interface Props {
   };
 }
 
-const KEY_POINTS: { label: string; value: string; url?: string }[] = [
+const KEY_POINTS: KeyPoint[] = [
   { label: "Authority", value: "MCO 1900.16 (Separation and Retirement Manual)", url: MCO_URLS.MARCORSEPMAN_PDF },
   { label: "Characterization Types", value: "Honorable, General (Under Honorable), Other Than Honorable" },
   { label: "Board Eligibility", value: "Required for 6+ years or OTH proposed" },

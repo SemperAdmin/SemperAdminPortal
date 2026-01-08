@@ -1,18 +1,9 @@
 "use client";
 
 import { TabbedContentLayout } from "./ui/TabbedContentLayout";
+import { MCOLink, KeyPoint } from "./ui/MCOLink";
 import { MCO_URLS } from "@/data/references";
 
-const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
-  <a
-    href={url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
-  >
-    {mco}
-  </a>
-);
 
 interface Reference {
   title: string;
@@ -26,7 +17,7 @@ interface Props {
   };
 }
 
-const KEY_POINTS: { label: string; value: string; url?: string }[] = [
+const KEY_POINTS: KeyPoint[] = [
   { label: "Definition", value: "Primary MOS (PMOS) - main occupational specialty for assignments" },
   { label: "Authority", value: "MCO 1220.1 (MOS Manual)", url: MCO_URLS.MOS_MANUAL },
   { label: "Change Methods", value: "Lateral move, reclassification, progression" },
