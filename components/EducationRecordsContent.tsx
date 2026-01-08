@@ -1,6 +1,18 @@
 "use client";
 
 import { TabbedContentLayout } from "./ui/TabbedContentLayout";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 interface Reference {
   title: string;
@@ -14,10 +26,10 @@ interface Props {
   };
 }
 
-const KEY_POINTS = [
+const KEY_POINTS: { label: string; value: string; url?: string }[] = [
   { label: "Tracking System", value: "MCTFS and Joint Services Transcript (JST)" },
   { label: "Benefits", value: "Tuition Assistance, GI Bill, Credentialing" },
-  { label: "TA Authority", value: "MCO 1560.25" },
+  { label: "TA Authority", value: "MCO 1560.25", url: MCO_URLS.TUITION_ASSISTANCE },
   { label: "Degree Verification", value: "Official transcripts required" },
   { label: "Access", value: "MOL and JST Portal" },
   { label: "Promotion Impact", value: "Education points for enlisted Marines" },
@@ -117,7 +129,9 @@ export function EducationRecordsContent({ data }: Props) {
                 {KEY_POINTS.map((point) => (
                   <tr key={point.label} className="border-b border-zinc-100 dark:border-zinc-800">
                     <td className="py-2 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{point.label}</td>
-                    <td className="py-2 text-zinc-600 dark:text-zinc-400">{point.value}</td>
+                    <td className="py-2 text-zinc-600 dark:text-zinc-400">
+                      {point.url ? <MCOLink mco={point.value} url={point.url} /> : point.value}
+                    </td>
                   </tr>
                 ))}
               </tbody>

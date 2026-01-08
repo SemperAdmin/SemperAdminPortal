@@ -2,6 +2,18 @@
 
 import { useState } from "react";
 import { QuickLinks } from "./QuickLinks";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
 
@@ -19,13 +31,13 @@ const TABS = [
   { id: "references", label: "References" },
 ];
 
-const KEY_POINTS = [
+const KEY_POINTS: { element: string; requirement: string; url?: string }[] = [
   { element: "Form Required", requirement: "NAVMC 10922 (Dependency Application)" },
   { element: "Notification Deadline", requirement: "Within 30 days of divorce" },
   { element: "Primary Document", requirement: "Final divorce decree" },
   { element: "DEERS Update", requirement: "Required within 30 days" },
   { element: "Spouse Status", requirement: "Terminated upon divorce" },
-  { element: "Authority", requirement: "MCO 1751.3 CH-1" },
+  { element: "Authority", requirement: "MCO 1751.3 CH-1", url: MCO_URLS.DEPENDENCY_DETERMINATION },
 ];
 
 const US_DIVORCE_DOCS = [
@@ -140,7 +152,9 @@ export function DivorceLegalSeparationContent({ data }: Props) {
                       {KEY_POINTS.map((point) => (
                         <tr key={point.element} className="border-b border-black/5 dark:border-white/5">
                           <td className="py-2 pr-4 font-medium text-zinc-900 dark:text-zinc-100">{point.element}</td>
-                          <td className="py-2 text-zinc-700 dark:text-zinc-300">{point.requirement}</td>
+                          <td className="py-2 text-zinc-700 dark:text-zinc-300">
+                            {point.url ? <MCOLink mco={point.requirement} url={point.url} /> : point.requirement}
+                          </td>
                         </tr>
                       ))}
                     </tbody>

@@ -1,6 +1,18 @@
 "use client";
 
 import { TabbedContentLayout } from "./ui/TabbedContentLayout";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 interface Reference {
   title: string;
@@ -20,12 +32,12 @@ const TABS = [
   { id: "references", label: "References", type: "references" as const },
 ];
 
-const KEY_POINTS = [
+const KEY_POINTS: { element: string; description: string; url?: string }[] = [
   { element: "Required Class", description: "Class 1 or Class 2" },
   { element: "Exam Frequency", description: "Annual minimum" },
   { element: "Tracking", description: "Dental Readiness System" },
   { element: "Timeline", description: "Complete 90+ days before deployment" },
-  { element: "Authority", description: "MCO 6100.13" },
+  { element: "Authority", description: "MCO 6100.13", url: MCO_URLS.PFT_CFT },
 ];
 
 const DENTAL_CLASSES = [
@@ -111,7 +123,9 @@ export function DentalReadinessContent({ data }: Props) {
                 {KEY_POINTS.map((item) => (
                   <tr key={item.element}>
                     <td className="py-3 font-medium text-zinc-900 dark:text-zinc-100">{item.element}</td>
-                    <td className="py-3 text-zinc-700 dark:text-zinc-300">{item.description}</td>
+                    <td className="py-3 text-zinc-700 dark:text-zinc-300">
+                      {item.url ? <MCOLink mco={item.description} url={item.url} /> : item.description}
+                    </td>
                   </tr>
                 ))}
               </tbody>
