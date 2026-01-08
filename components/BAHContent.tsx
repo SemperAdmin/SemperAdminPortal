@@ -1,5 +1,17 @@
 "use client";
 import { useState } from "react";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 type Ref = { title: string; desc: string; url: string; type: string };
 type Example = { zip: string; location: string; rates: Record<string, number> };
@@ -117,7 +129,7 @@ export default function BAHContent({ bahData }: { bahData: { examples: Example[]
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
                 <span className="font-semibold">The &quot;Certified&quot; Standard</span>
               </div>
-              <p className="mt-2 text-sm text-amber-800">Per MCO 1751.3, administrative personnel cannot accept photocopies of birth or marriage certificates. Present the original or a certified true copy with the state&#39;s raised seal.</p>
+              <p className="mt-2 text-sm text-amber-800">Per <MCOLink mco="MCO 1751.3" url={MCO_URLS.DEPENDENCY_DETERMINATION} />, administrative personnel cannot accept photocopies of birth or marriage certificates. Present the original or a certified true copy with the state&#39;s raised seal.</p>
             </div>
           </section>
         )}

@@ -1,6 +1,18 @@
 "use client";
 
 import { TabbedContentLayout } from "./ui/TabbedContentLayout";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
 
@@ -17,13 +29,16 @@ const TABS = [
   { id: "references", label: "References", type: "references" as const },
 ];
 
-const KEY_POINTS = [
+const KEY_POINTS: { element: string; requirement: string; urls?: { text: string; url: string }[] }[] = [
   { element: "Start Timeline", requirement: "30 days before departure" },
   { element: "Primary Document", requirement: "Unit Checkout Sheet" },
   { element: "Orders Endorsement", requirement: "Required before departure" },
   { element: "PCS Workshop", requirement: "60-90 days before transfer" },
   { element: "Sponsor Contact", requirement: "Coordinate with gaining command" },
-  { element: "Authority", requirement: "MCO 1320.11H, MCO 1000.6" },
+  { element: "Authority", requirement: "MCO 1320.11H, MCO 1000.6", urls: [
+    { text: "MCO 1320.11H", url: MCO_URLS.SPONSORSHIP },
+    { text: "MCO 1000.6", url: MCO_URLS.ACTS_MANUAL },
+  ]},
 ];
 
 const PCS_TIMELINE = [
@@ -199,7 +214,20 @@ export function CheckoutProceduresContent({ data }: Props) {
                 {KEY_POINTS.map((item) => (
                   <tr key={item.element} className="border-b border-zinc-100 dark:border-zinc-800">
                     <td className="py-2 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{item.element}</td>
-                    <td className="py-2 text-zinc-600 dark:text-zinc-400">{item.requirement}</td>
+                    <td className="py-2 text-zinc-600 dark:text-zinc-400">
+                      {item.urls ? (
+                        <>
+                          {item.urls.map((link, i) => (
+                            <span key={link.text}>
+                              <MCOLink mco={link.text} url={link.url} />
+                              {i < item.urls!.length - 1 && ", "}
+                            </span>
+                          ))}
+                        </>
+                      ) : (
+                        item.requirement
+                      )}
+                    </td>
                   </tr>
                 ))}
               </tbody>
