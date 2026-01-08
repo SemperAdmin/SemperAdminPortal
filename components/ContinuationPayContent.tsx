@@ -38,7 +38,7 @@ export default function ContinuationPayContent() {
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
                 BLUF
               </div>
-              <p className="mt-2 text-sm opacity-90">CY25: AC/AR 5.0× monthly basic pay (over 12), RC 1.0×. Must sign Statement of Understanding before reaching 12 YOS. Choose lump sum or 2–4 annual installments. 4-year obligation begins at 12 YOS. Taxable unless in a combat zone on election.</p>
+              <p className="mt-2 text-sm opacity-90">CY26: AC/AR 5.0× monthly basic pay (over 12), RC 1.0×. Must sign Statement of Understanding before reaching 12 YOS. Choose lump sum or 2–4 annual installments. 4-year obligation begins at 12 YOS. Taxable unless in a combat zone on election.</p>
             </div>
           </section>
         )}
@@ -84,7 +84,7 @@ export default function ContinuationPayContent() {
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Amount & Payment Options</h2>
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
               <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-black/60">
-                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">CY25 Multipliers</div>
+                <div className="text-xs font-bold uppercase text-zinc-600 dark:text-zinc-400">CY26 Multipliers</div>
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-zinc-700 dark:text-zinc-300">
                   <li>Active Component (AC): 5.0× monthly basic pay (over 12).</li>
                   <li>Active Reserve (AR): 5.0× monthly basic pay (over 12).</li>
@@ -369,13 +369,22 @@ export default function ContinuationPayContent() {
           <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">References</h2>
             <div className="mt-4 grid grid-cols-1 gap-4">
+              <a href="https://www.marines.mil/News/Messages/Messages-Display/Article/4371497/calendar-year-2026-continuation-pay-policy-for-blended-retirement-system-partic/" target="_blank" rel="noopener noreferrer" className="group flex items-start gap-4 rounded-xl border border-black/10 bg-white p-5 transition hover:border-[var(--sa-navy)] hover:shadow-md dark:border-white/15 dark:bg-black/60">
+                <div className="rounded-lg bg-zinc-100 p-3 transition group-hover:bg-[var(--sa-cream)]/60 group-hover:text-[var(--sa-red)] dark:bg-black/40">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-6 w-6"><path d="M4 19.5V6a2 2 0 0 1 2-2h9l5 5v10.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M13 3v6h6"/></svg>
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2"><h4 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">MARADMIN 003/26 (CY2026)</h4><span className="text-[10px] font-bold uppercase text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-black/40 rounded px-2 py-0.5">Policy</span></div>
+                  <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">CY2026 Continuation Pay multipliers (AC/AR 5.0×, RC 1.0×). References MARADMIN 229/24 for detailed guidance.</p>
+                </div>
+              </a>
               <a href="https://www.marines.mil/News/Messages/Messages-Display/Article/3783014/calendar-year-2025-continuation-pay-program-for-blended-retirement-system-parti/" target="_blank" rel="noopener noreferrer" className="group flex items-start gap-4 rounded-xl border border-black/10 bg-white p-5 transition hover:border-[var(--sa-navy)] hover:shadow-md dark:border-white/15 dark:bg-black/60">
                 <div className="rounded-lg bg-zinc-100 p-3 transition group-hover:bg-[var(--sa-cream)]/60 group-hover:text-[var(--sa-red)] dark:bg-black/40">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-6 w-6"><path d="M4 19.5V6a2 2 0 0 1 2-2h9l5 5v10.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M13 3v6h6"/></svg>
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-2"><h4 className="font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">MARADMIN 229/24 (CY2025)</h4><span className="text-[10px] font-bold uppercase text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-black/40 rounded px-2 py-0.5">Policy</span></div>
-                  <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Continuation Pay multipliers and guidance by component.</p>
+                  <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">Detailed guidance on CP execution, administration, eligibility, and procedures.</p>
                 </div>
               </a>
               <a href="https://www.marines.mil/Portals/1/Publications/MCBul%201800%20DTD%2015%20JUN%202021%20(SECURED).pdf?ver=fMvUu5zlLicXEajb_xVMUg%3d%3d" target="_blank" rel="noopener noreferrer" className="group flex items-start gap-4 rounded-xl border border-black/10 bg-white p-5 transition hover:border-[var(--sa-navy)] hover:shadow-md dark:border-white/15 dark:bg-black/60">
@@ -441,7 +450,7 @@ export default function ContinuationPayContent() {
               <div className="text-xs text-zinc-700 dark:text-zinc-300">4 years in the same component (AC/AR/Selected Reserve).</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
-              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">CY25 Rates</div>
+              <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">CY26 Rates</div>
               <div className="text-xs text-zinc-700 dark:text-zinc-300">AC/AR 5.0×; RC 1.0× of monthly basic pay (over 12).</div>
             </li>
             <li className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
