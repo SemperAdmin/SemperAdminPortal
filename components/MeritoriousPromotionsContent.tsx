@@ -1,6 +1,18 @@
 "use client";
 
 import { TabbedContentLayout } from "./ui/TabbedContentLayout";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 interface Reference {
   title: string;
@@ -14,9 +26,9 @@ interface Props {
   };
 }
 
-const KEY_POINTS = [
+const KEY_POINTS: { label: string; value: string; url?: string }[] = [
   { label: "Purpose", value: "Promote exceptional Marines ahead of peers" },
-  { label: "Authority", value: "MCO 1400.32 (Enlisted Promotions)" },
+  { label: "Authority", value: "MCO 1400.32 (Enlisted Promotions)", url: MCO_URLS.PROMOTION_MANUAL },
   { label: "Process", value: "Command nomination → Board → Selection" },
   { label: "Frequency", value: "Quarterly (typically)" },
   { label: "Eligibility", value: "Meet TIG/TIS minimums" },
@@ -108,7 +120,9 @@ export function MeritoriousPromotionsContent({ data }: Props) {
                 {KEY_POINTS.map((point) => (
                   <tr key={point.label} className="border-b border-zinc-100 dark:border-zinc-800">
                     <td className="py-2 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{point.label}</td>
-                    <td className="py-2 text-zinc-600 dark:text-zinc-400">{point.value}</td>
+                    <td className="py-2 text-zinc-600 dark:text-zinc-400">
+                      {point.url ? <MCOLink mco={point.value} url={point.url} /> : point.value}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -209,7 +223,7 @@ export function MeritoriousPromotionsContent({ data }: Props) {
             <div className="rounded-lg bg-zinc-50 p-4 dark:bg-zinc-800/50">
               <h4 className="font-medium text-zinc-900 dark:text-zinc-100">Higher Grades</h4>
               <ul className="mt-2 space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
-                <li>• Per MCO 1400.32</li>
+                <li>• Per <MCOLink mco="MCO 1400.32" url={MCO_URLS.PROMOTION_MANUAL} /></li>
                 <li>• Increasing TIG requirements</li>
               </ul>
             </div>

@@ -6,6 +6,18 @@ import { ListItem } from "./ui/ListItem";
 import { TimeRequired } from "./ui/TimeRequired";
 import { LastUpdated } from "./ui/LastUpdated";
 import { Acronym } from "./ui/Acronym";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
 
@@ -24,13 +36,13 @@ const TABS = [
   { id: "references", label: "References" },
 ];
 
-const KEY_POINTS = [
+const KEY_POINTS: { element: string; requirement: string; url?: string }[] = [
   { element: "Form", requirement: "NAVMC 10922 (Dependency Application)" },
   { element: "Submission Deadline", requirement: "Within 30 days of marriage" },
   { element: "Required Document", requirement: "Original marriage certificate (viewed by attesting officer)" },
   { element: "Approval Authority", requirement: "Commanding Officer (for U.S. ceremonial marriages)" },
   { element: "Doubtful Cases", requirement: "Forward to CMC (MFP-1) for determination" },
-  { element: "Authority", requirement: "MCO 1751.3 CH-1, 37 U.S.C. 403" },
+  { element: "Authority", requirement: "MCO 1751.3 CH-1, 37 U.S.C. 403", url: MCO_URLS.DEPENDENCY_DETERMINATION },
 ];
 
 const US_MARRIAGE_REQUIREMENTS = [
@@ -161,7 +173,9 @@ export function MarriageDocumentationContent({ data }: Props) {
                       {KEY_POINTS.map((point) => (
                         <tr key={point.element} className="border-b border-black/5 dark:border-white/5">
                           <td className="py-2 pr-4 font-medium text-zinc-900 dark:text-zinc-100">{point.element}</td>
-                          <td className="py-2 text-zinc-700 dark:text-zinc-300">{point.requirement}</td>
+                          <td className="py-2 text-zinc-700 dark:text-zinc-300">
+                            {point.url ? <MCOLink mco={point.requirement} url={point.url} /> : point.requirement}
+                          </td>
                         </tr>
                       ))}
                     </tbody>
