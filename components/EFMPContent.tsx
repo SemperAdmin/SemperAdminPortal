@@ -2,6 +2,18 @@
 
 import { useState } from "react";
 import { QuickLinks } from "./QuickLinks";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
 
@@ -21,13 +33,13 @@ const TABS = [
   { id: "references", label: "References" },
 ];
 
-const KEY_REQUIREMENTS = [
+const KEY_REQUIREMENTS: { element: string; requirement: string; url?: string }[] = [
   { element: "Program Type", requirement: "Mandatory DoD enrollment" },
   { element: "Enrollment Form", requirement: "DD Form 2792 (Exceptional Family Member Medical Summary)" },
   { element: "Educational Form", requirement: "DD Form 2792-1 (Special Education/Early Intervention Summary)" },
   { element: "Update Requirement", requirement: "Every 3 years or when condition changes" },
   { element: "Coordination", requirement: "EFMP staff coordinate with monitors during assignment process" },
-  { element: "Authority", requirement: "MCO 1754.4C" },
+  { element: "Authority", requirement: "MCO 1754.4C", url: MCO_URLS.EFMP },
 ];
 
 const MEDICAL_CONDITIONS = [
@@ -276,7 +288,13 @@ export function EFMPContent({ data }: Props) {
                       {KEY_REQUIREMENTS.map((item) => (
                         <tr key={item.element}>
                           <td className="py-3 font-medium text-zinc-900 dark:text-zinc-100">{item.element}</td>
-                          <td className="py-3 text-zinc-700 dark:text-zinc-300">{item.requirement}</td>
+                          <td className="py-3 text-zinc-700 dark:text-zinc-300">
+                            {item.url ? (
+                              <MCOLink mco={item.requirement} url={item.url} />
+                            ) : (
+                              item.requirement
+                            )}
+                          </td>
                         </tr>
                       ))}
                     </tbody>
@@ -761,7 +779,9 @@ export function EFMPContent({ data }: Props) {
             <dl className="mt-4 space-y-3 text-sm">
               <div>
                 <dt className="font-medium text-zinc-900 dark:text-zinc-100">Governing Order</dt>
-                <dd className="text-zinc-600 dark:text-zinc-400">MCO 1754.4C</dd>
+                <dd className="text-zinc-600 dark:text-zinc-400">
+                  <MCOLink mco="MCO 1754.4C" url={MCO_URLS.EFMP} />
+                </dd>
               </div>
               <div>
                 <dt className="font-medium text-zinc-900 dark:text-zinc-100">Primary Form</dt>
