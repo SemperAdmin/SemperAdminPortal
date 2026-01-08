@@ -2,6 +2,18 @@
 
 import { useState } from "react";
 import { QuickLinks } from "./QuickLinks";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
 
@@ -18,13 +30,13 @@ const TABS = [
   { id: "references", label: "References" },
 ];
 
-const KEY_REQUIREMENTS = [
+const KEY_REQUIREMENTS: { element: string; requirement: string; url?: string }[] = [
   { element: "Reporting Uniform", requirement: "Service Alphas (verify with gaining command)" },
   { element: "Timeframe", requirement: "Complete within 10 working days" },
   { element: "Initial Location", requirement: "S-1/Admin or designated reception point" },
   { element: "Key Documents", requirement: "Original orders, military ID, medical/dental records" },
   { element: "After Hours", requirement: "Report to Officer of the Day (OOD)" },
-  { element: "Authority", requirement: "MCO 1000.6, Unit SOPs" },
+  { element: "Authority", requirement: "MCO 1000.6, Unit SOPs", url: MCO_URLS.ACTS_MANUAL },
 ];
 
 const ORDERS_DOCS = [
@@ -233,12 +245,12 @@ const SPONSOR_DUTIES = [
   "Answering questions about the area",
 ];
 
-const QUICK_FACTS = [
+const QUICK_FACTS: { label: string; value: string; url?: string }[] = [
   { label: "Timeframe", value: "10 working days" },
   { label: "Uniform", value: "Service Alphas" },
   { label: "Start Point", value: "S-1 Admin" },
   { label: "Hours", value: "M-F, 0700-1600" },
-  { label: "Authority", value: "MCO 1000.6" },
+  { label: "Authority", value: "MCO 1000.6", url: MCO_URLS.ACTS_MANUAL },
 ];
 
 export function CheckInProceduresContent({ data }: Props) {
@@ -298,7 +310,13 @@ export function CheckInProceduresContent({ data }: Props) {
                       {KEY_REQUIREMENTS.map((item) => (
                         <tr key={item.element} className="border-b border-zinc-100 dark:border-zinc-800">
                           <td className="py-2 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{item.element}</td>
-                          <td className="py-2 text-zinc-600 dark:text-zinc-400">{item.requirement}</td>
+                          <td className="py-2 text-zinc-600 dark:text-zinc-400">
+                            {item.url ? (
+                              <><MCOLink mco="MCO 1000.6" url={item.url} />, Unit SOPs</>
+                            ) : (
+                              item.requirement
+                            )}
+                          </td>
                         </tr>
                       ))}
                     </tbody>
@@ -676,7 +694,7 @@ export function CheckInProceduresContent({ data }: Props) {
                   Key References
                 </h3>
                 <ul className="mt-4 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
-                  <li>• MCO 1000.6 - Assignment, Classification, and Travel Systems Manual</li>
+                  <li>• <MCOLink mco="MCO 1000.6" url={MCO_URLS.ACTS_MANUAL} /> - Assignment, Classification, and Travel Systems Manual</li>
                   <li>• Unit Standing Operating Procedures (SOP)</li>
                   <li>• Installation Newcomer&apos;s Guide</li>
                   <li>• MCTFS PRIUM - Personnel Reporting Instructions</li>
@@ -722,7 +740,13 @@ export function CheckInProceduresContent({ data }: Props) {
               {QUICK_FACTS.map((fact) => (
                 <div key={fact.label}>
                   <dt className="text-zinc-500 dark:text-zinc-400">{fact.label}</dt>
-                  <dd className="font-medium text-zinc-900 dark:text-zinc-100">{fact.value}</dd>
+                  <dd className="font-medium text-zinc-900 dark:text-zinc-100">
+                    {fact.url ? (
+                      <MCOLink mco={fact.value} url={fact.url} />
+                    ) : (
+                      fact.value
+                    )}
+                  </dd>
                 </div>
               ))}
             </dl>

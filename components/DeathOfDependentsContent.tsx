@@ -2,6 +2,18 @@
 
 import { useState } from "react";
 import { QuickLinks } from "./QuickLinks";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
 
@@ -18,13 +30,13 @@ const TABS = [
   { id: "references", label: "References" },
 ];
 
-const KEY_POINTS = [
+const KEY_POINTS: { element: string; requirement: string; url?: string }[] = [
   { element: "Form Required", requirement: "NAVMC 10922 (Dependency Application)" },
   { element: "Primary Document", requirement: "Death certificate" },
   { element: "Notification", requirement: "Notify command immediately" },
   { element: "MCTFS Update", requirement: "Upon receipt of death certificate" },
   { element: "SGLI Claim", requirement: "Submit within 1 year" },
-  { element: "Authority", requirement: "MCO 1751.3 CH-1" },
+  { element: "Authority", requirement: "MCO 1751.3 CH-1", url: MCO_URLS.DEPENDENCY_DETERMINATION },
 ];
 
 const REQUIRED_DOCUMENTS = [
@@ -102,7 +114,7 @@ export function DeathOfDependentsContent({ data }: Props) {
                 <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Death of Dependents Overview</h2>
                 <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
                   When a dependent passes away, administrative records must be updated to reflect the change.
-                  Per MCO 1751.3 CH-1, the command should be notified immediately, and MCTFS updated upon
+                  Per <MCOLink mco="MCO 1751.3 CH-1" url={MCO_URLS.DEPENDENCY_DETERMINATION} />, the command should be notified immediately, and MCTFS updated upon
                   receipt of the death certificate. This page provides guidance on documentation, benefits,
                   and available support resources.
                 </p>
@@ -127,7 +139,13 @@ export function DeathOfDependentsContent({ data }: Props) {
                       {KEY_POINTS.map((point) => (
                         <tr key={point.element} className="border-b border-black/5 dark:border-white/5">
                           <td className="py-2 pr-4 font-medium text-zinc-900 dark:text-zinc-100">{point.element}</td>
-                          <td className="py-2 text-zinc-700 dark:text-zinc-300">{point.requirement}</td>
+                          <td className="py-2 text-zinc-700 dark:text-zinc-300">
+                            {point.url ? (
+                              <MCOLink mco={point.requirement} url={point.url} />
+                            ) : (
+                              point.requirement
+                            )}
+                          </td>
                         </tr>
                       ))}
                     </tbody>
@@ -379,7 +397,7 @@ export function DeathOfDependentsContent({ data }: Props) {
                 <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">Governing References</h2>
                 <ul className="mt-4 space-y-3">
                   <li className="rounded-lg border border-black/10 p-3 dark:border-white/10">
-                    <span className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">MCO 1751.3 CH-1</span>
+                    <MCOLink mco="MCO 1751.3 CH-1" url={MCO_URLS.DEPENDENCY_DETERMINATION} />
                     <p className="text-sm text-zinc-600 dark:text-zinc-400">Marine Corps Dependency Determination and Support Program</p>
                   </li>
                   <li className="rounded-lg border border-black/10 p-3 dark:border-white/10">
@@ -387,7 +405,7 @@ export function DeathOfDependentsContent({ data }: Props) {
                     <p className="text-sm text-zinc-600 dark:text-zinc-400">Servicemembers' Group Life Insurance (SGLI)</p>
                   </li>
                   <li className="rounded-lg border border-black/10 p-3 dark:border-white/10">
-                    <span className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">MCO 1050.3J</span>
+                    <MCOLink mco="MCO 1050.3J" url={MCO_URLS.LEAVE_LIBERTY} />
                     <p className="text-sm text-zinc-600 dark:text-zinc-400">Regulations for Leave, Liberty, and Administrative Absence</p>
                   </li>
                 </ul>

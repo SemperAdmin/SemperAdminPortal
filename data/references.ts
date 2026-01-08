@@ -120,6 +120,39 @@ export const MCO_URLS = {
 
   /** NAVMC 2795 - Counseling Worksheet */
   COUNSELING_WORKSHEET: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf",
+
+  /** MCO 1751.3 - Dependency Determination */
+  DEPENDENCY_DETERMINATION: "https://www.marines.mil/Portals/1/Publications/MCO%201751.3%20CH%201.pdf",
+
+  /** MCO 1300.8 - Assignment, Classification, and Travel Manual */
+  ASSIGNMENT_TRAVEL: "https://www.marines.mil/Portals/1/Publications/MCO%201300.8.pdf",
+
+  /** MCO 1000.6 - Assignment, Classification, and Travel Systems Manual */
+  ACTS_MANUAL: "https://www.marines.mil/Portals/1/Publications/MCO%201000.6.pdf",
+
+  /** MCO 1320.11H - Marine Corps Sponsorship Program */
+  SPONSORSHIP: "https://www.marines.mil/Portals/1/Publications/MCO%201320.11H.pdf",
+
+  /** MCO 1220.1 - MOS Manual (MCPEL) */
+  MOS_MANUAL: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899244/mco-12201/",
+
+  /** MCO 1560.25 - Marine Corps Tuition Assistance Program */
+  TUITION_ASSISTANCE: "https://www.marines.mil/Portals/1/Publications/MCO%201560.25B.pdf",
+
+  /** MCO 1740.13D - Family Care Policy */
+  FAMILY_CARE: "https://www.marines.mil/Portals/1/Publications/MCO%201740.13D.pdf",
+
+  /** MCO 1430.2 - Frocking Policy */
+  FROCKING: "https://www.marines.mil/Portals/1/Publications/MCO%201430.2.pdf",
+
+  /** MCO 1070.1 - OMPF Guidelines */
+  OMPF: "https://www.marines.mil/Portals/1/Publications/MCO%201070.1.pdf",
+
+  /** MCO 4600.40B - Government Travel Charge Card Program */
+  GTCC: "https://www.marines.mil/Portals/1/Publications/MCO%204600.40B.pdf",
+
+  /** MCO 3000.13B - Marine Corps Readiness Reporting Program */
+  READINESS: "https://www.marines.mil/Portals/1/Publications/MCO%203000.13B.pdf",
 } as const;
 
 // ============================================================================

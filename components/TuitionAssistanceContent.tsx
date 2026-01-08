@@ -1,6 +1,18 @@
 "use client";
 
 import { TabbedContentLayout } from "./ui/TabbedContentLayout";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 interface Reference {
   title: string;
@@ -67,7 +79,7 @@ export function TuitionAssistanceContent({ data }: Props) {
                 </tr>
                 <tr>
                   <td className="py-2 pr-4 font-medium">Authority</td>
-                  <td className="py-2">MCO 1560.25B</td>
+                  <td className="py-2"><MCOLink mco="MCO 1560.25B" url={MCO_URLS.TUITION_ASSISTANCE} /></td>
                 </tr>
               </tbody>
             </table>
