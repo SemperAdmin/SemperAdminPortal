@@ -1,6 +1,18 @@
 "use client";
 
 import { TabbedContentLayout } from "./ui/TabbedContentLayout";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 interface Reference {
   title: string;
@@ -14,9 +26,9 @@ interface Props {
   };
 }
 
-const KEY_POINTS = [
+const KEY_POINTS: { label: string; value: string; url?: string }[] = [
   { label: "Definition", value: "Voluntary resignation from commissioned officer status" },
-  { label: "Authority", value: "MCO 1900.16, 10 U.S.C. §§ 1181-1186" },
+  { label: "Authority", value: "MCO 1900.16, 10 U.S.C. §§ 1181-1186", url: MCO_URLS.MARCORSEPMAN_PDF },
   { label: "Approval Authority", value: "Secretary of the Navy via CMC delegation" },
   { label: "MSO Requirement", value: "Must fulfill 8-year Military Service Obligation" },
   { label: "Typical Timeline", value: "Submit 6-12 months before desired separation date" },
@@ -132,7 +144,9 @@ export function ResignationOfficersContent({ data }: Props) {
                 {KEY_POINTS.map((point) => (
                   <tr key={point.label} className="border-b border-zinc-100 dark:border-zinc-800">
                     <td className="py-2 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{point.label}</td>
-                    <td className="py-2 text-zinc-600 dark:text-zinc-400">{point.value}</td>
+                    <td className="py-2 text-zinc-600 dark:text-zinc-400">
+                      {point.url ? <MCOLink mco={point.value} url={point.url} /> : point.value}
+                    </td>
                   </tr>
                 ))}
               </tbody>
