@@ -2,6 +2,18 @@
 
 import { useState } from "react";
 import { QuickLinks } from "./QuickLinks";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
 
@@ -22,13 +34,13 @@ const TABS = [
   { id: "references", label: "References" },
 ];
 
-const KEY_REQUIREMENTS = [
+const KEY_REQUIREMENTS: { element: string; requirement: string; url?: string }[] = [
   { element: "Application Timeline", requirement: "2-4 months before PCS execution" },
   { element: "Primary Form", requirement: "DD Form 2792 (EFMP Medical Summary)" },
   { element: "Screening Requirement", requirement: "EFMP screening for all dependents" },
   { element: "Tour Length", requirement: "Typically 12 months remaining after family arrival" },
   { element: "Approval Authority", requirement: "Gaining command overseas" },
-  { element: "Authority", requirement: "MCO 1300.8, DoDI 1315.19" },
+  { element: "Authority", requirement: "MCO 1300.8, DoDI 1315.19", url: MCO_URLS.ASSIGNMENT_TRAVEL },
 ];
 
 const TRAVEL_ENTITLEMENTS = [
@@ -297,7 +309,9 @@ export function CommandSponsorshipContent({ data }: Props) {
                       {KEY_REQUIREMENTS.map((item) => (
                         <tr key={item.element} className="border-b border-zinc-100 dark:border-zinc-800">
                           <td className="py-2 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{item.element}</td>
-                          <td className="py-2 text-zinc-600 dark:text-zinc-400">{item.requirement}</td>
+                          <td className="py-2 text-zinc-600 dark:text-zinc-400">
+                            {item.url ? <MCOLink mco={item.requirement} url={item.url} /> : item.requirement}
+                          </td>
                         </tr>
                       ))}
                     </tbody>
@@ -1079,7 +1093,9 @@ export function CommandSponsorshipContent({ data }: Props) {
               </div>
               <div>
                 <dt className="text-zinc-500 dark:text-zinc-400">Authority</dt>
-                <dd className="font-medium text-zinc-900 dark:text-zinc-100">MCO 1300.8</dd>
+                <dd className="font-medium text-zinc-900 dark:text-zinc-100">
+                  <MCOLink mco="MCO 1300.8" url={MCO_URLS.ASSIGNMENT_TRAVEL} />
+                </dd>
               </div>
             </dl>
           </section>

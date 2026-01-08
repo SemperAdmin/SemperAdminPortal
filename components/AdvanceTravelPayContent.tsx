@@ -1,6 +1,18 @@
 "use client";
 import { useState } from "react";
 import { QuickLinks } from "./QuickLinks";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 type Ref = { title: string; url: string; isQuickLink?: boolean };
 
@@ -448,7 +460,7 @@ export default function AdvanceTravelPayContent({ data }: { data: { references: 
 
             <div className="mt-6 rounded-xl border-2 border-red-500 bg-red-50 p-4 dark:border-red-400 dark:bg-red-900/20">
               <h3 className="font-bold text-red-800 dark:text-red-300">Collection for Late Voucher</h3>
-              <p className="mt-2 text-sm text-red-700 dark:text-red-300">Per MCO 1000.6, failure to submit your travel voucher within 5 working days results in the advance being deducted from your pay. Submit on time to avoid involuntary collection.</p>
+              <p className="mt-2 text-sm text-red-700 dark:text-red-300">Per <MCOLink mco="MCO 1000.6" url={MCO_URLS.ACTS_MANUAL} />, failure to submit your travel voucher within 5 working days results in the advance being deducted from your pay. Submit on time to avoid involuntary collection.</p>
             </div>
 
             <div className="mt-6">
