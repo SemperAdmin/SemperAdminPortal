@@ -4,6 +4,18 @@ import { TabbedContentLayout } from "../ui/TabbedContentLayout";
 import { InfoCard } from "../ui/InfoCard";
 import { CollapsibleSection } from "../ui/CollapsibleSection";
 import { Shield, AlertTriangle, Users, FileText, Clock, Scale } from "lucide-react";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 interface Reference {
   title: string;
@@ -17,8 +29,8 @@ interface Props {
   };
 }
 
-const KEY_POINTS = [
-  { label: "Authority", value: "MCO 5354.1G - Punitive order under Article 92, UCMJ" },
+const KEY_POINTS: { label: string; value: string; url?: string }[] = [
+  { label: "Authority", value: "MCO 5354.1G - Punitive order under Article 92, UCMJ", url: MCO_URLS.PROHIBITED_ACTIVITIES },
   { label: "Scope", value: "Harassment, hazing, bullying, sexual harassment, prohibited discrimination" },
   { label: "Filing Deadline", value: "90 days from incident (120 days for Reserve)" },
   { label: "Investigation Timeline", value: "30 days (14 days for sexual harassment)" },
@@ -134,7 +146,9 @@ export function HazingHarassmentReportingContent({ data }: Props) {
                 {KEY_POINTS.map((point) => (
                   <tr key={point.label} className="border-b border-zinc-100 dark:border-zinc-800">
                     <td className="py-3 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{point.label}</td>
-                    <td className="py-3 text-zinc-600 dark:text-zinc-400">{point.value}</td>
+                    <td className="py-3 text-zinc-600 dark:text-zinc-400">
+                      {point.url ? <MCOLink mco={point.value} url={point.url} /> : point.value}
+                    </td>
                   </tr>
                 ))}
               </tbody>
