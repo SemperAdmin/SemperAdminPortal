@@ -244,6 +244,9 @@ export const MARADMIN_URLS = {
   /** MARADMIN 229/24 - CY2025 Continuation Pay Program for BRS Participants */
   CONTINUATION_PAY_229_24: "https://www.marines.mil/News/Messages/Messages-Display/Article/3783014/calendar-year-2025-continuation-pay-program-for-blended-retirement-system-parti/",
 
+  /** MARADMIN 003/26 - CY2026 Continuation Pay Policy for BRS Participants */
+  CONTINUATION_PAY_003_26: "https://www.marines.mil/News/Messages/Messages-Display/Article/4371497/calendar-year-2026-continuation-pay-policy-for-blended-retirement-system-partic/",
+
   /** MARADMIN 388/25 - FY2026 Cornerstone Class Dates */
   CORNERSTONE_388_25: "https://www.marines.mil/News/Messages/Messages-Display/Article/4279462/fiscal-year-2026-class-dates-for-cornerstone-the-commandants-combined-commander/",
 } as const;
