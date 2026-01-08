@@ -109,6 +109,9 @@ export const MCO_URLS = {
   /** MCO 6100.13A - Marine Corps Physical Fitness and Combat Fitness Tests */
   PFT_CFT: "https://www.marines.mil/Portals/1/Publications/MCO%206100.13A%20W%20ADMIN%20CH-5%20(SECURED).pdf",
 
+  /** MCO 6110.3A - Marine Corps Body Composition and Military Appearance Program */
+  BCP: "https://www.marines.mil/Portals/1/Publications/MCO%206110.3A%20W%20ADMIN%20CH-3.pdf",
+
   /** MCO 1050.3J - Regulations for Leave, Liberty, and Administrative Absence */
   LEAVE_LIBERTY: "https://www.marines.mil/Portals/1/Publications/MCO%201050.3J.pdf",
 
