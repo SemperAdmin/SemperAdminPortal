@@ -1,6 +1,23 @@
 "use client";
 
 import { TabbedContentLayout } from "./ui/TabbedContentLayout";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
+
+interface KeyPointLink {
+  text: string;
+  url: string;
+}
 
 interface Reference {
   title: string;
@@ -14,8 +31,15 @@ interface Props {
   };
 }
 
-const KEY_POINTS = [
-  { label: "Authority", value: "MCO 1900.16 (Separation), MCO 6110.3A (PFT), MCO 6110.3 (BCP)" },
+const KEY_POINTS: { label: string; value: string; links?: KeyPointLink[] }[] = [
+  {
+    label: "Authority",
+    value: "MCO 1900.16 (Separation), MCO 6110.3A (BCP/PFT/CFT)",
+    links: [
+      { text: "MCO 1900.16 (Separation)", url: MCO_URLS.MARCORSEPMAN_PDF },
+      { text: "MCO 6110.3A (BCP/PFT/CFT)", url: MCO_URLS.BCP },
+    ],
+  },
   { label: "Standards", value: "Physical fitness, body composition, professional performance" },
   { label: "Approach", value: "Progressive counseling and opportunity to improve" },
   { label: "Characterization", value: "Typically Honorable or General (Under Honorable)" },
@@ -27,25 +51,29 @@ const PERFORMANCE_STANDARDS = [
     standard: "Physical Fitness Test (PFT)",
     requirement: "Minimum 3rd class (135 points)",
     consequence: "Failure may result in separation",
-    authority: "MCO 6110.3A"
+    authority: "MCO 6110.3A",
+    authorityUrl: MCO_URLS.BCP,
   },
   {
     standard: "Combat Fitness Test (CFT)",
     requirement: "Minimum 3rd class (150 points)",
     consequence: "Failure may result in separation",
-    authority: "MCO 6110.3A"
+    authority: "MCO 6110.3A",
+    authorityUrl: MCO_URLS.BCP,
   },
   {
     standard: "Body Composition Program (BCP)",
     requirement: "Meet height/weight or body fat standards",
     consequence: "Failure after 6 months may result in separation",
-    authority: "MCO 6110.3"
+    authority: "MCO 6110.3A",
+    authorityUrl: MCO_URLS.BCP,
   },
   {
     standard: "Professional Performance",
     requirement: "Satisfactory duty performance",
     consequence: "Continued substandard performance may result in separation",
-    authority: "MCO 1900.16"
+    authority: "MCO 1900.16",
+    authorityUrl: MCO_URLS.MARCORSEPMAN_PDF,
   },
 ];
 
@@ -122,7 +150,20 @@ export function FailureToMeetStandardsContent({ data }: Props) {
                 {KEY_POINTS.map((point) => (
                   <tr key={point.label} className="border-b border-zinc-100 dark:border-zinc-800">
                     <td className="py-2 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{point.label}</td>
-                    <td className="py-2 text-zinc-600 dark:text-zinc-400">{point.value}</td>
+                    <td className="py-2 text-zinc-600 dark:text-zinc-400">
+                      {point.links ? (
+                        <>
+                          {point.links.map((link, index) => (
+                            <span key={link.text}>
+                              {index > 0 && ", "}
+                              <MCOLink mco={link.text} url={link.url} />
+                            </span>
+                          ))}
+                        </>
+                      ) : (
+                        point.value
+                      )}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -215,7 +256,9 @@ export function FailureToMeetStandardsContent({ data }: Props) {
                     <td className="py-2 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{item.standard}</td>
                     <td className="py-2 pr-4 text-zinc-600 dark:text-zinc-400">{item.requirement}</td>
                     <td className="py-2 pr-4 text-zinc-600 dark:text-zinc-400">{item.consequence}</td>
-                    <td className="py-2 text-zinc-600 dark:text-zinc-400">{item.authority}</td>
+                    <td className="py-2 text-zinc-600 dark:text-zinc-400">
+                      <MCOLink mco={item.authority} url={item.authorityUrl} />
+                    </td>
                   </tr>
                 ))}
               </tbody>
