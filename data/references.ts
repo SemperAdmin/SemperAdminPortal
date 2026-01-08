@@ -99,6 +99,27 @@ export const MCO_URLS = {
 
   /** MCO 1800.11A - Marine Corps Retirement Program */
   RETIREMENT_PROGRAM: "https://www.marines.mil/Portals/1/Publications/MCO%201800.11A.pdf?ver=2020-03-31-081717-407",
+
+  /** MCO 1500.61 - Leader Development */
+  LEADER_DEVELOPMENT: "https://www.marines.mil/Portals/1/Publications/MCO%201500.61%20CANX%20MCO%201500.58.pdf",
+
+  /** MCO 1040.31 - Enlisted Retention and Reenlistment */
+  ENLISTED_RETENTION: "https://www.marines.mil/Portals/1/Publications/MCO%201040.31.pdf",
+
+  /** MCO 6100.13A - Marine Corps Physical Fitness and Combat Fitness Tests */
+  PFT_CFT: "https://www.marines.mil/Portals/1/Publications/MCO%206100.13A%20W%20ADMIN%20CH-5%20(SECURED).pdf",
+
+  /** MCO 1050.3J - Regulations for Leave, Liberty, and Administrative Absence */
+  LEAVE_LIBERTY: "https://www.marines.mil/Portals/1/Publications/MCO%201050.3J.pdf",
+
+  /** MCO 1553.4B - Professional Military Education */
+  PME: "https://www.marines.mil/Portals/1/MCO%201553.4B.pdf",
+
+  /** MCO P1326.6D - SDA Screening, Selection, and Designation */
+  SDA_SCREENING: "https://www.marines.mil/Portals/1/Publications/MCO%20P1326.6D%20W%20CH%201.pdf",
+
+  /** NAVMC 2795 - Counseling Worksheet */
+  COUNSELING_WORKSHEET: "https://www.marines.mil/Portals/1/Publications/NAVMC%202795.pdf",
 } as const;
 
 // ============================================================================
@@ -154,6 +175,9 @@ export const NAVY_DOD_URLS = {
 
   /** SECNAVINST 1650.1J - Department of the Navy Military Awards Policy */
   AWARDS_POLICY: "https://www.secnav.navy.mil/doni/Directives/01000%20Military%20Personnel%20Support/01-600%20Performance%20and%20Discipline%20Programs/1650.1J.pdf",
+
+  /** SECNAVINST 1650.1H - Department of the Navy Military Awards Policy (Historical) */
+  AWARDS_POLICY_1650_1H: "https://www.secnav.navy.mil/doni/Directives/01000%20Military%20Personnel%20Support/01-600%20Performance%20and%20Discipline%20Programs/1650.1H.pdf",
 
   /** JAGMAN - Judge Advocate General Manual */
   JAGMAN: "https://www.jag.navy.mil/library/instructions/JAGINST_5800.7G.pdf",

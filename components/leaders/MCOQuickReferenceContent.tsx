@@ -1,9 +1,22 @@
 "use client";
 
 import { TabbedContentLayout } from "../ui/TabbedContentLayout";
+import { MCO_URLS, NAVY_DOD_URLS, MARADMIN_URLS } from "@/data/references";
 
 type Reference = { title: string; url: string; isQuickLink?: boolean };
 type Props = { data: { references: Reference[] } };
+
+// Helper component for linked MCO references
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 const TABS = [
   { id: "overview", label: "Overview" },
@@ -67,13 +80,13 @@ export function MCOQuickReferenceContent({ data }: Props) {
               </thead>
               <tbody className="text-zinc-700 dark:text-zinc-300">
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
-                  <td className="py-2 font-medium">MCO 1610.7B</td>
+                  <td className="py-2"><MCOLink mco="MCO 1610.7B" url={MCO_URLS.PES_PDF} /></td>
                   <td className="py-2">Performance Evaluation System (PES)</td>
                   <td className="py-2">Fitness reports, adverse reports, reporting chain, RS/RO responsibilities</td>
                   <td className="py-2">Writing fitness reports, processing adverse reports, understanding MRO rights</td>
                 </tr>
                 <tr>
-                  <td className="py-2 font-medium">MCO 1616.1</td>
+                  <td className="py-2"><MCOLink mco="MCO 1616.1" url={MCO_URLS.RETENTION} /></td>
                   <td className="py-2">Junior Enlisted Performance Evaluation System (JEPES)</td>
                   <td className="py-2">Command input, four pillars, NOT REC procedures, reporting chain</td>
                   <td className="py-2">Evaluating E-1 through E-4, understanding composite scores, counseling requirements</td>
@@ -96,19 +109,19 @@ export function MCOQuickReferenceContent({ data }: Props) {
               </thead>
               <tbody className="text-zinc-700 dark:text-zinc-300">
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
-                  <td className="py-2 font-medium">MCO 1040.31</td>
+                  <td className="py-2"><MCOLink mco="MCO 1040.31" url={MCO_URLS.ENLISTED_RETENTION} /></td>
                   <td className="py-2">Enlisted Retention and Career Development Program</td>
                   <td className="py-2">Reenlistment prerequisites, RELM process, RE codes, separation pay</td>
                   <td className="py-2">Supporting reenlistment decisions, career planning interviews, prerequisite verification</td>
                 </tr>
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
-                  <td className="py-2 font-medium">MCO P1070.12K</td>
+                  <td className="py-2"><MCOLink mco="MCO P1070.12K" url={MCO_URLS.IRAM_PDF} /></td>
                   <td className="py-2">Individual Records Administration Manual (IRAM)</td>
                   <td className="py-2">Page 11 entries, service record documentation</td>
                   <td className="py-2">Documenting counseling, administrative remarks, record corrections</td>
                 </tr>
                 <tr>
-                  <td className="py-2 font-medium">MCO P1400.32D</td>
+                  <td className="py-2"><MCOLink mco="MCO P1400.32D" url={MCO_URLS.PROMOTION_MANUAL} /></td>
                   <td className="py-2">Marine Corps Promotion Manual</td>
                   <td className="py-2">Promotion prerequisites, board procedures, meritorious promotion</td>
                   <td className="py-2">Screening for promotion eligibility, understanding promotion restrictions</td>
@@ -135,13 +148,13 @@ export function MCOQuickReferenceContent({ data }: Props) {
               </thead>
               <tbody className="text-zinc-700 dark:text-zinc-300">
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
-                  <td className="py-2 font-medium">MCO P1900.16</td>
+                  <td className="py-2"><MCOLink mco="MCO P1900.16" url={MCO_URLS.MARCORSEPMAN_PDF} /></td>
                   <td className="py-2">Marine Corps Separation and Retirement Manual (MARCORSEPMAN)</td>
                   <td className="py-2">6105 counseling, administrative separation, discharge characterization</td>
                   <td className="py-2">Issuing 6105 entries, understanding separation authorities, ADSEP process</td>
                 </tr>
                 <tr>
-                  <td className="py-2 font-medium">MCO 5800.16</td>
+                  <td className="py-2"><MCOLink mco="MCO 5800.16" url={MCO_URLS.LEGADMINMAN} /></td>
                   <td className="py-2">Legal Support and Administration Manual</td>
                   <td className="py-2">NJP procedures, courts-martial, legal holds</td>
                   <td className="py-2">NJP recommendations, understanding punishment limits, legal documentation</td>
@@ -164,13 +177,13 @@ export function MCOQuickReferenceContent({ data }: Props) {
               </thead>
               <tbody className="text-zinc-700 dark:text-zinc-300">
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
-                  <td className="py-2 font-medium">MCO 6100.13A</td>
+                  <td className="py-2"><MCOLink mco="MCO 6100.13A" url={MCO_URLS.PFT_CFT} /></td>
                   <td className="py-2">Marine Corps Physical Fitness and Combat Fitness Tests</td>
                   <td className="py-2">PFT/CFT standards, BCP/MAP, scoring, exemptions</td>
                   <td className="py-2">Administering fitness tests, counseling on failures, BCP assignment</td>
                 </tr>
                 <tr>
-                  <td className="py-2 font-medium">MCO 1754.9B</td>
+                  <td className="py-2"><MCOLink mco="MCO 1754.9B" url={MCO_URLS.FAMILY_READINESS} /></td>
                   <td className="py-2">Unit, Personal and Family Readiness Program</td>
                   <td className="py-2">Family readiness, deployment support, emergency data</td>
                   <td className="py-2">Pre-deployment verification, family care plans, casualty assistance</td>
@@ -197,13 +210,13 @@ export function MCOQuickReferenceContent({ data }: Props) {
               </thead>
               <tbody className="text-zinc-700 dark:text-zinc-300">
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
-                  <td className="py-2 font-medium">MCO 1500.61</td>
+                  <td className="py-2"><MCOLink mco="MCO 1500.61" url={MCO_URLS.LEADER_DEVELOPMENT} /></td>
                   <td className="py-2">Marine Leader Development</td>
                   <td className="py-2">Six functional areas (5Fs plus Future), counseling philosophy</td>
                   <td className="py-2">Structuring counseling sessions, leader development planning</td>
                 </tr>
                 <tr>
-                  <td className="py-2 font-medium">NAVMC 2795</td>
+                  <td className="py-2"><MCOLink mco="NAVMC 2795" url={MCO_URLS.COUNSELING_WORKSHEET} /></td>
                   <td className="py-2">User's Guide to Counseling</td>
                   <td className="py-2">Counseling techniques, SMART goals, session structure</td>
                   <td className="py-2">Conducting effective counseling, documentation methods</td>
@@ -226,13 +239,13 @@ export function MCOQuickReferenceContent({ data }: Props) {
               </thead>
               <tbody className="text-zinc-700 dark:text-zinc-300">
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
-                  <td className="py-2 font-medium">MCO 1326.6</td>
+                  <td className="py-2"><MCOLink mco="MCO 1326.6" url={MCO_URLS.SDA_SCREENING} /></td>
                   <td className="py-2">Special Duty Assignment Screening</td>
                   <td className="py-2">SDA prerequisites, screening requirements, disqualifiers</td>
                   <td className="py-2">Screening Marines for SDA, understanding waiver criteria</td>
                 </tr>
                 <tr>
-                  <td className="py-2 font-medium">MCO 1553.4B</td>
+                  <td className="py-2"><MCOLink mco="MCO 1553.4B" url={MCO_URLS.PME} /></td>
                   <td className="py-2">Professional Military Education</td>
                   <td className="py-2">PME requirements by grade, enrollment procedures</td>
                   <td className="py-2">Tracking PME completion, course nominations</td>
@@ -255,13 +268,13 @@ export function MCOQuickReferenceContent({ data }: Props) {
               </thead>
               <tbody className="text-zinc-700 dark:text-zinc-300">
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
-                  <td className="py-2 font-medium">SECNAVINST 1650.1H</td>
+                  <td className="py-2"><MCOLink mco="SECNAVINST 1650.1H" url={NAVY_DOD_URLS.AWARDS_POLICY_1650_1H} /></td>
                   <td className="py-2">Navy and Marine Corps Awards Manual</td>
                   <td className="py-2">Award criteria, precedence, wear</td>
                   <td className="py-2">Award recommendations, citation writing</td>
                 </tr>
                 <tr>
-                  <td className="py-2 font-medium">MARADMIN 077/25</td>
+                  <td className="py-2"><MCOLink mco="MARADMIN 077/25" url={MARADMIN_URLS.DELEGATION_AUTHORITY_077_25} /></td>
                   <td className="py-2">Awards Processing</td>
                   <td className="py-2">iAPS procedures, approval authorities</td>
                   <td className="py-2">Submitting award packages, troubleshooting delays</td>
@@ -284,7 +297,7 @@ export function MCOQuickReferenceContent({ data }: Props) {
               </thead>
               <tbody className="text-zinc-700 dark:text-zinc-300">
                 <tr>
-                  <td className="py-2 font-medium">MCO 1050.3J</td>
+                  <td className="py-2"><MCOLink mco="MCO 1050.3J" url={MCO_URLS.LEAVE_LIBERTY} /></td>
                   <td className="py-2">Regulations for Leave, Liberty, and Administrative Absence</td>
                   <td className="py-2">Leave types, approval authorities, liberty limits</td>
                   <td className="py-2">Approving leave, setting liberty policies, UA procedures</td>
@@ -311,32 +324,32 @@ export function MCOQuickReferenceContent({ data }: Props) {
               <tbody className="text-zinc-700 dark:text-zinc-300">
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
                   <td className="py-2 font-medium">MCTFS</td>
-                  <td className="py-2">MCO 1616.1, MCO 1040.31</td>
+                  <td className="py-2"><MCOLink mco="MCO 1616.1" url={MCO_URLS.RETENTION} />, <MCOLink mco="MCO 1040.31" url={MCO_URLS.ENLISTED_RETENTION} /></td>
                   <td className="py-2">Personnel and pay data</td>
                 </tr>
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
                   <td className="py-2 font-medium">MOL</td>
-                  <td className="py-2">MCO 1616.1</td>
+                  <td className="py-2"><MCOLink mco="MCO 1616.1" url={MCO_URLS.RETENTION} /></td>
                   <td className="py-2">Self-service portal</td>
                 </tr>
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
                   <td className="py-2 font-medium">JEPES</td>
-                  <td className="py-2">MCO 1616.1</td>
+                  <td className="py-2"><MCOLink mco="MCO 1616.1" url={MCO_URLS.RETENTION} /></td>
                   <td className="py-2">Junior enlisted evaluations</td>
                 </tr>
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
                   <td className="py-2 font-medium">A-PES</td>
-                  <td className="py-2">MCO 1610.7B</td>
+                  <td className="py-2"><MCOLink mco="MCO 1610.7B" url={MCO_URLS.PES_PDF} /></td>
                   <td className="py-2">Fitness report submission</td>
                 </tr>
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
                   <td className="py-2 font-medium">iAPS</td>
-                  <td className="py-2">MCO 1610.7B Appendix H</td>
+                  <td className="py-2"><MCOLink mco="MCO 1610.7B" url={MCO_URLS.PES_PDF} /> Appendix H</td>
                   <td className="py-2">Awards processing</td>
                 </tr>
                 <tr className="border-b border-zinc-100 dark:border-zinc-800">
                   <td className="py-2 font-medium">TFRS</td>
-                  <td className="py-2">MCO 1040.31</td>
+                  <td className="py-2"><MCOLink mco="MCO 1040.31" url={MCO_URLS.ENLISTED_RETENTION} /></td>
                   <td className="py-2">Retention requests</td>
                 </tr>
                 <tr>
@@ -354,39 +367,39 @@ export function MCOQuickReferenceContent({ data }: Props) {
             <div className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-700">
               <h4 className="font-semibold text-zinc-900 dark:text-zinc-100">Need to document misconduct?</h4>
               <ul className="mt-2 space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
-                <li>• <strong>Minor:</strong> MCO P1070.12K (Page 11)</li>
-                <li>• <strong>Serious/separation potential:</strong> MCO P1900.16 Para 6105</li>
+                <li>• <strong>Minor:</strong> <MCOLink mco="MCO P1070.12K" url={MCO_URLS.IRAM_PDF} /> (Page 11)</li>
+                <li>• <strong>Serious/separation potential:</strong> <MCOLink mco="MCO P1900.16" url={MCO_URLS.MARCORSEPMAN_PDF} /> Para 6105</li>
               </ul>
             </div>
             <div className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-700">
               <h4 className="font-semibold text-zinc-900 dark:text-zinc-100">Need to evaluate a Marine?</h4>
               <ul className="mt-2 space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
-                <li>• <strong>E-1 through E-4:</strong> MCO 1616.1 (JEPES)</li>
-                <li>• <strong>E-5 and above:</strong> MCO 1610.7B (Fitness Reports)</li>
+                <li>• <strong>E-1 through E-4:</strong> <MCOLink mco="MCO 1616.1" url={MCO_URLS.RETENTION} /> (JEPES)</li>
+                <li>• <strong>E-5 and above:</strong> <MCOLink mco="MCO 1610.7B" url={MCO_URLS.PES_PDF} /> (Fitness Reports)</li>
               </ul>
             </div>
             <div className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-700">
               <h4 className="font-semibold text-zinc-900 dark:text-zinc-100">Need to process NJP?</h4>
               <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
-                MCO 5800.16, Manual for Courts-Martial Part V
+                <MCOLink mco="MCO 5800.16" url={MCO_URLS.LEGADMINMAN} />, <MCOLink mco="Manual for Courts-Martial" url={NAVY_DOD_URLS.MCM} /> Part V
               </p>
             </div>
             <div className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-700">
               <h4 className="font-semibold text-zinc-900 dark:text-zinc-100">Need to verify reenlistment eligibility?</h4>
               <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
-                MCO 1040.31 Chapter 4
+                <MCOLink mco="MCO 1040.31" url={MCO_URLS.ENLISTED_RETENTION} /> Chapter 4
               </p>
             </div>
             <div className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-700">
               <h4 className="font-semibold text-zinc-900 dark:text-zinc-100">Need to counsel on PFT/CFT failure?</h4>
               <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
-                MCO 6100.13A Chapter 1
+                <MCOLink mco="MCO 6100.13A" url={MCO_URLS.PFT_CFT} /> Chapter 1
               </p>
             </div>
             <div className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-700">
               <h4 className="font-semibold text-zinc-900 dark:text-zinc-100">Need to write an award?</h4>
               <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
-                SECNAVINST 1650.1H, MCO 1610.7B Appendix H
+                <MCOLink mco="SECNAVINST 1650.1H" url={NAVY_DOD_URLS.AWARDS_POLICY_1650_1H} />, <MCOLink mco="MCO 1610.7B" url={MCO_URLS.PES_PDF} /> Appendix H
               </p>
             </div>
           </div>
