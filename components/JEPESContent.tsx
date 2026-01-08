@@ -1,6 +1,18 @@
 "use client";
 
 import { TabbedContentLayout } from "./ui/TabbedContentLayout";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 interface Reference {
   title: string;
@@ -551,7 +563,7 @@ export function JEPESContent({ data }: Props) {
             <li className="flex items-start gap-3">
               <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--sa-navy)] text-xs font-bold text-white">4</span>
               <div className="text-sm text-zinc-700 dark:text-zinc-300">
-                <strong>Appeal if warranted:</strong> Formal performance evaluation appeals follow the process in MCO 1610.7A.
+                <strong>Appeal if warranted:</strong> Formal performance evaluation appeals follow the process in <MCOLink mco="MCO 1610.7A" url={MCO_URLS.PES_PDF} />.
               </div>
             </li>
           </ol>

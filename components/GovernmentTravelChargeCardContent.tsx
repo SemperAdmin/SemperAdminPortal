@@ -1,6 +1,18 @@
 "use client";
 import { useState } from "react";
 import { QuickLinks } from "./QuickLinks";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 type Ref = { title: string; desc: string; url: string; type: string; isQuickLink?: boolean };
 type Tab = "overview" | "authorized" | "obtaining" | "payment" | "status" | "pcs" | "troubleshooter" | "references";
@@ -109,11 +121,11 @@ const PCS_PAYMENT_TIMELINE = [
   "Use split disbursement to avoid delinquency",
 ];
 
-const QUICK_FACTS = [
+const QUICK_FACTS: { title: string; detail: string; url?: string }[] = [
   { title: "Citibank (CONUS)", detail: "1-800-790-7206" },
   { title: "Citibank (OCONUS)", detail: "1-904-954-7850 (collect)" },
   { title: "Payment Window", detail: "25-45 days (120 for PCS)" },
-  { title: "Authority", detail: "MCO 4600.40B" },
+  { title: "Authority", detail: "MCO 4600.40B", url: MCO_URLS.GTCC },
 ];
 
 export default function GovernmentTravelChargeCardContent({ data }: { data: { references: Ref[] } }) {
@@ -414,7 +426,13 @@ export default function GovernmentTravelChargeCardContent({ data }: { data: { re
             {QUICK_FACTS.map((fact) => (
               <li key={fact.title} className="rounded-md border border-black/10 bg-white p-3 shadow-sm dark:border-white/15 dark:bg-black/60">
                 <div className="font-medium text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">{fact.title}</div>
-                <div className="text-xs text-zinc-700 dark:text-zinc-300">{fact.detail}</div>
+                <div className="text-xs text-zinc-700 dark:text-zinc-300">
+                  {fact.url ? (
+                    <MCOLink mco={fact.detail} url={fact.url} />
+                  ) : (
+                    fact.detail
+                  )}
+                </div>
               </li>
             ))}
           </ul>

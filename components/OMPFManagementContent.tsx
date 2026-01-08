@@ -1,6 +1,18 @@
 "use client";
 
 import { TabbedContentLayout } from "./ui/TabbedContentLayout";
+import { MCO_URLS } from "@/data/references";
+
+const MCOLink = ({ mco, url }: { mco: string; url: string }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[var(--sa-navy)] underline decoration-1 underline-offset-2 hover:text-[var(--sa-gold)] dark:text-[var(--sa-cream)] dark:hover:text-[var(--sa-gold)]"
+  >
+    {mco}
+  </a>
+);
 
 interface Reference {
   title: string;
@@ -14,13 +26,16 @@ interface Props {
   };
 }
 
-const KEY_POINTS = [
+const KEY_POINTS: { label: string; value: string; urls?: { text: string; url: string }[] }[] = [
   { label: "Components", value: "MCTFS data and digital document copies" },
   { label: "Purpose (Active Duty)", value: "Promotion, selection, and assignment decisions" },
   { label: "Purpose (Post-Separation)", value: "Service verification for veterans and agencies" },
   { label: "Access", value: "MOL OMPF Viewer (view only), ORMA (view and update)" },
   { label: "Responsibility", value: "Individual Marine" },
-  { label: "Authority", value: "MCO 1070.1, MCO P1070.12K (IRAM)" },
+  { label: "Authority", value: "MCO 1070.1, MCO P1070.12K (IRAM)", urls: [
+    { text: "MCO 1070.1", url: MCO_URLS.OMPF },
+    { text: "MCO P1070.12K (IRAM)", url: MCO_URLS.IRAM_PDF },
+  ]},
 ];
 
 const TABS = [
@@ -110,7 +125,20 @@ export function OMPFManagementContent({ data }: Props) {
                 {KEY_POINTS.map((point) => (
                   <tr key={point.label} className="border-b border-zinc-100 dark:border-zinc-800">
                     <td className="py-2 pr-4 font-medium text-zinc-700 dark:text-zinc-300">{point.label}</td>
-                    <td className="py-2 text-zinc-600 dark:text-zinc-400">{point.value}</td>
+                    <td className="py-2 text-zinc-600 dark:text-zinc-400">
+                      {point.urls ? (
+                        <>
+                          {point.urls.map((link, i) => (
+                            <span key={link.text}>
+                              <MCOLink mco={link.text} url={link.url} />
+                              {i < point.urls!.length - 1 && ", "}
+                            </span>
+                          ))}
+                        </>
+                      ) : (
+                        point.value
+                      )}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -144,7 +172,7 @@ export function OMPFManagementContent({ data }: Props) {
                 <li>• Validate information in MCTFS</li>
                 <li>• Provide verification of service and entitlements</li>
                 <li>• Required for active duty and post-separation needs</li>
-                <li>• Authority for inclusion provided by MCO 1070.1</li>
+                <li>• Authority for inclusion provided by <MCOLink mco="MCO 1070.1" url={MCO_URLS.OMPF} /></li>
               </ul>
             </div>
           </div>
