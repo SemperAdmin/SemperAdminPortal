@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { MARADMIN_URLS } from "@/data/references";
 
 export default function ContinuationPayContent() {
   const [tab, setTab] = useState<
@@ -369,7 +370,7 @@ export default function ContinuationPayContent() {
           <section className="rounded-xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/15 dark:bg-black/40">
             <h2 className="text-xl font-semibold text-[var(--sa-navy)] dark:text-[var(--sa-cream)]">References</h2>
             <div className="mt-4 grid grid-cols-1 gap-4">
-              <a href="https://www.marines.mil/News/Messages/Messages-Display/Article/4371497/calendar-year-2026-continuation-pay-policy-for-blended-retirement-system-partic/" target="_blank" rel="noopener noreferrer" className="group flex items-start gap-4 rounded-xl border border-black/10 bg-white p-5 transition hover:border-[var(--sa-navy)] hover:shadow-md dark:border-white/15 dark:bg-black/60">
+              <a href={MARADMIN_URLS.CONTINUATION_PAY_003_26} target="_blank" rel="noopener noreferrer" className="group flex items-start gap-4 rounded-xl border border-black/10 bg-white p-5 transition hover:border-[var(--sa-navy)] hover:shadow-md dark:border-white/15 dark:bg-black/60">
                 <div className="rounded-lg bg-zinc-100 p-3 transition group-hover:bg-[var(--sa-cream)]/60 group-hover:text-[var(--sa-red)] dark:bg-black/40">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-6 w-6"><path d="M4 19.5V6a2 2 0 0 1 2-2h9l5 5v10.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M13 3v6h6"/></svg>
                 </div>
@@ -378,7 +379,7 @@ export default function ContinuationPayContent() {
                   <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">CY2026 Continuation Pay multipliers (AC/AR 5.0×, RC 1.0×). References MARADMIN 229/24 for detailed guidance.</p>
                 </div>
               </a>
-              <a href="https://www.marines.mil/News/Messages/Messages-Display/Article/3783014/calendar-year-2025-continuation-pay-program-for-blended-retirement-system-parti/" target="_blank" rel="noopener noreferrer" className="group flex items-start gap-4 rounded-xl border border-black/10 bg-white p-5 transition hover:border-[var(--sa-navy)] hover:shadow-md dark:border-white/15 dark:bg-black/60">
+              <a href={MARADMIN_URLS.CONTINUATION_PAY_229_24} target="_blank" rel="noopener noreferrer" className="group flex items-start gap-4 rounded-xl border border-black/10 bg-white p-5 transition hover:border-[var(--sa-navy)] hover:shadow-md dark:border-white/15 dark:bg-black/60">
                 <div className="rounded-lg bg-zinc-100 p-3 transition group-hover:bg-[var(--sa-cream)]/60 group-hover:text-[var(--sa-red)] dark:bg-black/40">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-6 w-6"><path d="M4 19.5V6a2 2 0 0 1 2-2h9l5 5v10.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M13 3v6h6"/></svg>
                 </div>
