@@ -1,0 +1,348 @@
+{
+  "track": "mcaat",
+  "programNumber": "finance",
+  "slug": "travel-processes",
+  "section": "Finance",
+  "categoryLabel": "Travel Processes",
+  "title": "Travel Processes",
+  "summary": "MCAAT Finance checklist - Travel Processes. 12 unique items across 3 audiences.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "applicabilityLevel": "DO, FO, and Outside Agency",
+  "lastVerified": "2026-05-10",
+  "source": {
+    "title": "MCAAT Finance Checklist - Travel Processes",
+    "publisher": "Marine Corps Manpower and Reserve Affairs"
+  },
+  "subsections": [
+    {
+      "id": "04.0",
+      "title": "DO",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Are travel advances paid accurately in accordance with the references (PCS/SEPS,TDY, DITY)?",
+          "references": [
+            "JTR, DODFMR Vol. 9 & 5 and FPM Vol 2 Ch.1 , Ch. 2, Ch. 3, Ch. 4"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Are travel advances paid within the required time frame (PCS/SEPS, TDY, DITY)?",
+          "references": [
+            "JTR, DoDFMR Vol. 9 and FPM Vol. 2 Ch.2, Ch. 3, and Ch. 4"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Is leave taken in conjunction with TDY charged against the Marines leave account and reported in accordance with the references?",
+          "references": [
+            "FPM Vol. 2 Ch. 2 & 4, MCO 1050.3J"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Have all the MCTIR files for travel payments been uploaded to MCTFS and posted within the required time frame in accordance with the reference?",
+          "references": [
+            "FPM Vol. 2 Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Is the DDS reject report processed in accordance with the references?",
+          "references": [
+            "FPM Vol. 2 Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Is the DO/FO properly processing all DDS Travel diaries within the required time frame and validating to ensure all checkages are reported in MCTFS in accordance with the reference?",
+          "references": [
+            "FPM Vol. 2 Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Is the Disbursing Summary Report (DSR) being certified by an authorized Certifying Official prior to processing the travel business in accordance with the reference? NOTE: Previously the Vouchers Awaiting Payment (VAP)",
+          "references": [
+            "FPM Vol. 3 Ch. 9"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Are classified payments processed correctly and in accordance with the reference? Note: Personnel must be appointed IAW the reference and ensure verification from the Security Manager is on file.",
+          "references": [
+            "FPM Vol. 2 Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Are non-DTS TDY Travel Claims paid accurately and in accordance with the references?",
+          "references": [
+            "JTR , DODFMR Vol. 9, FPM Vol 2 Ch. 4"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Are PCS travel claims paid accurately and in accordance with the references?",
+          "references": [
+            "JTR, DODFMR Vol. 9 & FPM Vol. 2 Ch. 2 & 3"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Are DTS Travel Claims paid accurately and in accordance with the references?",
+          "references": [
+            "JTR, DODFMR Vol. 9, MCO 4650.39A, FPM Vol. 2 Ch. 2 and DoDI 5154.31"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Are travel vouchers processed within the required time frame? (Non-DTS TDY, PCS, and DTS)",
+          "references": [
+            "FPM Vol. 2 Ch. 2 & 4"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "05.0",
+      "title": "FO",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Are travel advances paid accurately in accordance with the references (PCS/SEPS,TDY, DITY)?",
+          "references": [
+            "JTR, DODFMR Vol. 9 & 5 and FPM Vol 2 Ch.1 , Ch. 2, Ch. 3, Ch. 4"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Are travel advances paid within the required time frame (PCS/SEPS, TDY, DITY)?",
+          "references": [
+            "JTR, DoDFMR Vol. 9 and FPM Vol. 2 Ch.2, Ch. 3, and Ch. 4"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Is leave taken in conjunction with TDY charged against the Marines leave account and reported in accordance with the references?",
+          "references": [
+            "FPM Vol. 2 Ch. 2 & 4, MCO 1050.3J"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Have all the MCTIR files for travel payments been uploaded to MCTFS and posted within the required time frame in accordance with the reference?",
+          "references": [
+            "FPM Vol. 2 Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Is the DDS reject report processed in accordance with the references?",
+          "references": [
+            "FPM Vol. 2 Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Is the DO/FO properly processing all DDS Travel diaries within the required time frame and validating to ensure all checkages are reported in MCTFS in accordance with the reference?",
+          "references": [
+            "FPM Vol. 2 Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Is the Disbursing Summary Report (DSR) being certified by an authorized Certifying Official prior to processing the travel business in accordance with the reference? NOTE: Previously the Vouchers Awaiting Payment (VAP)",
+          "references": [
+            "FPM Vol. 3 Ch. 9"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Are classified payments processed correctly and in accordance with the reference? Note: Personnel must be appointed IAW the reference and ensure verification from the Security Manager is on file.",
+          "references": [
+            "FPM Vol. 2 Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Are non-DTS TDY Travel Claims paid accurately and in accordance with the references?",
+          "references": [
+            "JTR , DODFMR Vol. 9, FPM Vol 2 Ch. 4"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Are PCS travel claims paid accurately and in accordance with the references?",
+          "references": [
+            "JTR, DODFMR Vol. 9 & FPM Vol. 2 Ch. 2 & 3"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Are DTS Travel Claims paid accurately and in accordance with the references?",
+          "references": [
+            "JTR, DODFMR Vol. 9, MCO 4650.39A, FPM Vol. 2 Ch. 2 and DoDI 5154.31"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Are travel vouchers processed within the required time frame? (Non-DTS TDY, PCS, and DTS)",
+          "references": [
+            "FPM Vol. 2 Ch. 2 & 4"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "06.0",
+      "title": "Outside Agency",
+      "description": "",
+      "items": [
+        {
+          "code": "03",
+          "question": "Is leave taken in conjunction with TDY charged against the Marines leave account and reported in accordance with the references?",
+          "references": [
+            "FPM Vol. 2 Ch. 2 & 4, MCO 1050.3J"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Are DTS Travel Claims paid accurately and in accordance with the references?",
+          "references": [
+            "JTR, DODFMR Vol. 9, MCO 4650.39A, FPM Vol. 2 Ch. 2 and DoDI 5154.31"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Are travel vouchers processed within the required time frame? (Non-DTS TDY, PCS, and DTS)",
+          "references": [
+            "FPM Vol. 2 Ch. 2 & 4"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        }
+      ]
+    }
+  ]
+}

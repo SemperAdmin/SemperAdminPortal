@@ -1,0 +1,103 @@
+---
+title: "Deserter Declaration and DD Form 553 Processing"
+slug: "deserter-declaration-and-dd-553-processing"
+summary: "Cut the deserter declaration at day 30, route DD Form 553 Deserter or Absentee Wanted by the Armed Forces, coordinate NCIC entry, and notify the MCACC Deserter Information Point."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-12"
+unitType: "s1-g1"
+topic: "absentee-deserter-confinement"
+function: "GENA"
+skillLevel: 2000
+trEventCode: "0102-GENA-2108"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 1620.3A"
+billets: ["s-1-clerk", "s-1-chief", "g-1-officer", "adjutant"]
+gradesPerforming: ["Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 1620.3A Marine Corps Absentee and Deserter Apprehension Program"
+  - "MCO 5800.16 Legal Support and Administration Manual"
+  - "DODI 1325.02 Desertion and Unauthorized Absence or Absence Without Leave"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "UCMJ Article 85 Desertion"
+  - "UCMJ Article 86 Absence Without Leave"
+relatedRoles:
+  marine: "/marines/absentee-deserter-confinement/deserter-declaration-and-dd-553-processing"
+  leader: "/leader/absentee-deserter-confinement/deserter-declaration-and-dd-553-processing"
+  commander: "/commander/absentee-deserter-confinement/deserter-declaration-and-dd-553-processing"
+source:
+  title: "MCO 1620.3A Paragraph 4b Subordinate Element Missions and DODI 1325.02 Desertion and Unauthorized Absence or Absence Without Leave"
+  publisher: "Headquarters Marine Corps PP&O PSL"
+---
+
+## Role and responsibility
+
+S-1 admin specialists own deserter declaration timing and DD Form 553 routing. The S-1 clerk pulls the UA tickler on day 30 and builds the deserter package. The S-1 chief routes DD Form 553 through the unit security officer to civilian law enforcement and notifies the MCACC Deserter Information Point (DIP). The S-1 officer signs by direction on the deserter declaration and the DD Form 553 transmittal.
+
+Source documents flow from the UA tickler at day 30, the duty officer report, the muster verification, the chain of command notification, and the unit diary UA record. Outputs include the deserter declaration UD-MIPS transaction, the DD Form 553 package, the NCIC entry submission, the DIP notification, and Page 11 entries.
+
+Late deserter declarations leave the Marine in indefinite UA status, fail NCIC entry, and gap the MCACC caseload. The deserter declaration runs on a fixed time threshold, not on commander discretion or intent assessment.
+
+## Trigger events
+
+- UA reaches 30 days. The deserter declaration runs as a function of time per MCO 1620.3A<Citation source="MCO 1620.3A" /> Paragraph 4b.
+- Marine is reported missing during a deployment movement and intent is established. UCMJ Article 85 desertion charge attaches earlier than 30 days when the Marine misses movement with intent to remain absent.
+- MCACC requests deserter declaration as part of caseload reconciliation.
+- The unit receives evidence of intent to remain permanently absent (departure with all gear, family relocation, fraudulent discharge documents).
+
+## Processing workflow
+
+1. Pull the day 30 tickler. The S-1 clerk maintains a UA tickler at the day 30 threshold. On day 30, pull the case and verify the UA is unresolved.
+2. Verify the UA is unbroken. Cross-check MCTFS, MOL, and unit diary. The Marine has not returned, has not been apprehended, and has not transitioned to authorized absence.
+3. Build the deserter declaration package. Include the duty officer report, the muster verification, the chain of command notification, and the UA transaction history.
+4. Cut the deserter declaration UD-MIPS transaction. Submit through UD-MIPS per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> deserter declaration format. The transaction shifts the Marine record state from UA to deserter status.
+5. Build DD Form 553 Deserter or Absentee Wanted by the Armed Forces. Capture Marine biographics, photograph, fingerprints (where available), description, last known location, vehicle and family information, and a description of any judicial charges per MCO 1620.3A<Citation source="MCO 1620.3A" /> Paragraph 4b(1).
+6. Route DD Form 553 to the unit security officer. The unit security officer submits the form to the local civilian law enforcement liaison for NCIC entry.
+7. Notify the MCACC DIP. The DIP at HQMC is the 24-hour control center for deserter operations per MCO 1620.3A<Citation source="MCO 1620.3A" /> Paragraph 4b(1). Phone (703) 604-3667 or DSN 664-3667.
+8. Coordinate I&I civilian law enforcement liaison. For deserters with last known location in the United States, the geographic I&I staff in Enclosures 1 and 2 of MCO 1620.3A holds civilian law enforcement liaison responsibility per the zip code cross-reference.
+9. Process Page 11 entries. Document the deserter declaration date, the DD Form 553 routing, and the NCIC entry per MCO P1070.12K Chapter 6.
+10. File the certified deserter case packet. Place the deserter declaration, DD Form 553, the unit security officer routing record, and the DIP notification in the OMPF Field Folder under the legal tab.
+
+## Systems of record and forms
+
+### Systems
+
+- MCTFS. Holds the deserter status with associated pay implications.
+- UD-MIPS. Cuts the deserter declaration with the duty officer report and UA history as KSDs.
+- NCIC. National Crime Information Center receives DD Form 553 entries through civilian law enforcement.
+- MCACC Deserter Information Point (DIP). 24-hour control center at HQMC for deserter caseload tracking.
+
+### Forms
+
+- DD Form 553 Deserter or Absentee Wanted by the Armed Forces. The primary deserter routing form.
+- NAVMC 118 (11) Administrative Remarks. Page 11 documenting deserter declaration and DD Form 553 routing.
+- NAVMC 118 (3) Chronological Record. Page 3 noting deserter declaration date.
+- DD Form 458 Charge Sheet. UCMJ Article 85 desertion charge package when the case proceeds to court-martial.
+
+## Common pitfalls
+
+- Deserter declaration cut late. The Marine sits in UA status past day 30 and NCIC entry never lands. Calendar the day 30 declaration as a fixed tickler per MCO 1620.3A<Citation source="MCO 1620.3A" /> Paragraph 4b.
+- DD Form 553 missing photograph or biographics. Civilian law enforcement rejects the NCIC entry. Build the package with all DD Form 553 fields including photograph and fingerprints where available.
+- DIP notification skipped. The MCACC caseload runs without the deserter and apprehension support stalls. Notify the DIP at (703) 604-3667 within 24 hours of declaration.
+- Geographic I&I liaison skipped. The deserter sits in a Reserve unit area of responsibility without civilian law enforcement liaison engagement. Use Enclosure 1 and 2 zip code cross-reference of MCO 1620.3A to identify the correct I&I staff.
+- UCMJ Article 85 charge sheet skipped at return. The deserter returns and the case proceeds without judicial action. Coordinate with trial counsel at return for the charge sheet decision.
+
+## Decision points
+
+- Article 85 desertion versus Article 86 UA. Desertion under UCMJ Article 85 requires proof of intent to remain permanently absent. The deserter declaration in MCTFS is administrative and runs at day 30. Article 85 charge sheet is judicial and requires trial counsel review per JAGINST 5800.7G.
+- Missing movement under UCMJ Article 87. The Marine departs ahead of a deployment movement with intent. UCMJ Article 87 charge attaches before day 30 with documented intent.
+- Geographic area of responsibility. Deserter last known location near a Reserve I&I area routes through the staff identified in Enclosure 1 of MCO 1620.3A<Citation source="MCO 1620.3A" />. Active component bases hold liaison for their geographic areas.
+
+## Authority
+
+This sub-page maps to NAVMC 3500.3E T-R event 0102-GENA-2108 Process Absentee Wanted by the Armed Forces and 0111-GENA-2016 Process Deserter or Absentee Cases. The processing workflow sits under MCO 1620.3A<Citation source="MCO 1620.3A" /> Paragraph 4b Subordinate Element Missions, DODI 1325.02 Desertion and Unauthorized Absence or Absence Without Leave, MCO 5800.16<Citation source="MCO 5800.16" /> Volume 13 historical UA and deserter chapter content, and MCTFSPRIUM<Citation source="MCTFSPRIUM" /> deserter declaration transaction format. Statutory authority sits at UCMJ Articles 85 (Desertion), 86 (UA), and 87 (Missing Movement).
+
+## Related references
+
+- MCO 1620.3A Marine Corps Absentee and Deserter Apprehension Program. Primary order with DD Form 553 procedures and DIP contact data.
+- DODI 1325.02 Desertion and Unauthorized Absence or Absence Without Leave. Parent DoD framework.
+- MCO 5800.16 Legal Support and Administration Manual. UA and deserter processing rules.
+- UCMJ Article 85 Desertion. Statutory authority for desertion charge.
+- UCMJ Article 86 Absence Without Leave. Statutory authority for UA charge.
+- UCMJ Article 87 Missing Movement. Statutory authority for missing movement charge.
+- MCTFSPRIUM. Deserter declaration transaction format.

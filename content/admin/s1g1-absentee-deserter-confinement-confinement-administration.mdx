@@ -1,0 +1,109 @@
+---
+title: "Confinement Administration"
+slug: "confinement-administration"
+summary: "Process pretrial and post-trial confinement orders, coordinate with the brig, track confinee accountability, and reconcile administrative records on confinee return or transfer."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-12"
+unitType: "s1-g1"
+topic: "absentee-deserter-confinement"
+function: "GENA"
+skillLevel: 2000
+trEventCode: "0102-GENA-2110"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 1640.6"
+billets: ["s-1-clerk", "s-1-chief", "g-1-officer", "adjutant"]
+gradesPerforming: ["Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 1640.6 Marine Corps Confinement Manual"
+  - "DODI 1325.07 Administration of Military Correctional Facilities and Clemency and Parole Programs"
+  - "MCO 1620.3A Marine Corps Absentee and Deserter Apprehension Program"
+  - "MCO 5800.16 Legal Support and Administration Manual"
+  - "JAGINST 5800.7G Manual of the Judge Advocate General"
+  - "DODFMR Vol 7A Chapter 48 Court-Martial Sentences"
+  - "DODFMR Vol 7A Chapter 49 Non-Judicial Punishment"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+relatedRoles:
+  marine: "/marines/absentee-deserter-confinement/confinement-administration"
+  leader: "/leader/absentee-deserter-confinement/confinement-administration"
+  commander: "/commander/absentee-deserter-confinement/confinement-administration"
+source:
+  title: "MCO 1640.6 Marine Corps Confinement Manual and JAGINST 5800.7G Chapter 5 Pretrial Confinement"
+  publisher: "Headquarters Marine Corps PP&O PSL Corrections Section"
+---
+
+## Role and responsibility
+
+S-1 admin specialists process the confinement order package and coordinate with the brig. The S-1 clerk receives the pretrial confinement order from the convening authority or the trial counsel, builds the confinement order packet, and routes through the chain of command. The S-1 chief verifies the 48-hour magistrate review timeline, the 7-day initial review hearing, and the MCTFS confinement transaction. The S-1 officer signs by direction on the confinement order delivery to the brig and the prisoner control register entry.
+
+Source documents flow from the convening authority confinement order, the trial counsel pretrial confinement memorandum, the magistrate review record, and the court-martial sentence adjudication. Outputs include the confinement order package, the MCTFS confinement transaction, the brig prisoner control register entry, Page 11 entries, and the confined Marine pay reconciliation per DoDFMR Vol 7A Chapter 48.
+
+MCAAT and IGMC inspect the confinement order package for the 48-hour magistrate review, the 7-day initial review hearing, and the MCTFS transaction. Missing reviews trigger findings and confinee release risk.
+
+## Trigger events
+
+- Commander or military magistrate orders pretrial confinement post-apprehension or post-arrest.
+- Court-martial sentence includes confinement (general, special, or summary court-martial).
+- Special court-martial or general court-martial adjudges a punitive discharge with confinement.
+- Civilian apprehending agency releases the Marine to military custody pending charges.
+- The brig requests transfer of a confinee to a regional brig or the Naval Consolidated Brig.
+
+## Processing workflow
+
+1. Receive the confinement order. Pull the order from the convening authority, the military magistrate, or the court-martial convening order. Verify the basis (pretrial, court-martial sentence, civilian holdover).
+2. Build the confinement order packet. Include the confinement order, the Marine record summary, the medical screening, the property inventory, and the prisoner control register entry per MCO 1640.6<Citation source="MCO 1640.6" />.
+3. Coordinate with the brig. Notify the receiving brig of the pending confinement. The brig confirms bed space, medical screening requirements, and arrival window.
+4. Deliver the Marine. Escort the Marine to the brig with the confinement order packet. The brig receiving officer signs the chain of custody record.
+5. Cut the MCTFS confinement transaction. Submit through UD-MIPS per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> with the confinement order as the KSD. The transaction triggers pay implications per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 48 court-martial confinement or pretrial pay rules.
+6. Verify the 48-hour magistrate review. The initial review by a neutral and detached officer happens within 48 hours of pretrial confinement per JAGINST 5800.7G<Citation source="JAGINST 5800.7G" /> Chapter 5.
+7. Verify the 7-day initial review hearing. The Initial Review Officer (IRO) hearing happens within 7 days of pretrial confinement per JAGINST 5800.7G<Citation source="JAGINST 5800.7G" /> Chapter 5.
+8. Process Page 11 entries. Document the confinement order, the basis, the review dates, and the confinement facility per MCO P1070.12K Chapter 6.
+9. Track confinee status. The S-1 chief tracks confinement duration, sentence credit (Allen credit, RCM 305(k) credit), transfer to regional brig, and projected release date.
+10. Reconcile records on release or transfer. Cut the MCTFS release or transfer transaction. Restart pay or restore allowances per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 48 paragraph 480107 on release.
+
+## Systems of record and forms
+
+### Systems
+
+- MCTFS. Holds the confinement transaction and the pay state.
+- UD-MIPS. Cuts the confinement and release transactions.
+- Brig prisoner control register. Tracks confinee accountability at the brig.
+- Confinement Information Management System (CIMS). Marine Corps brig population tracking.
+- OMPF Field Folder. Holds the certified confinement order packet.
+
+### Forms
+
+- DD Form 2707 Confinement Order. The court-martial confinement order.
+- NAVMC 11000 Pretrial Confinement Order. The pretrial confinement order signed by the commander.
+- DD Form 2708 Receipt for Pretrial or Post-Trial Prisoner or Detained Person. Chain of custody record.
+- NAVMC 118 (11) Administrative Remarks. Page 11 documenting confinement.
+- DD Form 458 Charge Sheet. Establishes the charges driving pretrial confinement.
+
+## Common pitfalls
+
+- 48-hour magistrate review missed. The pretrial confinement is unlawful and the confinee must be released. Calendar the 48-hour review at the moment of pretrial confinement per JAGINST 5800.7G<Citation source="JAGINST 5800.7G" /> Chapter 5.
+- 7-day IRO hearing missed. The pretrial confinement loses legal basis. Calendar the 7-day hearing at the moment of pretrial confinement.
+- MCTFS confinement transaction cut late. Pay continues at full rate during confinement. Cut the transaction the day of confinement per MCTFSPRIUM<Citation source="MCTFSPRIUM" />.
+- Brig not notified of pending confinement. The confinee arrives without bed space and the brig refuses receipt. Notify the brig 24 hours ahead of delivery per MCO 1640.6<Citation source="MCO 1640.6" />.
+- Pay restart skipped on release. The released Marine restarts full pay only on the next pay cycle. Cut the release transaction the day of release.
+
+## Decision points
+
+- Pretrial confinement versus restriction. The Marine poses flight risk or further misconduct risk. The commander orders pretrial confinement and the magistrate validates the order within 48 hours per JAGINST 5800.7G<Citation source="JAGINST 5800.7G" /> Chapter 5.
+- Local brig versus regional brig versus Naval Consolidated Brig. The confinement length and the security level drive the facility decision. Short pretrial sits at the local brig. Long post-trial confinement transfers to the Naval Consolidated Brig at Chesapeake, Miramar, or Charleston per MCO 1640.6<Citation source="MCO 1640.6" />.
+- Allen credit and RCM 305(k) credit. The military judge awards day-for-day Allen credit for legal pretrial confinement. Additional day-for-day credit applies under RCM 305(k) for procedurally defective pretrial confinement. The S-1 chief tracks both for sentence reduction.
+
+## Authority
+
+This sub-page maps to NAVMC 3500.3E T-R event 0102-GENA-2110 Coordinate Confinement Process. The processing workflow sits under MCO 1640.6<Citation source="MCO 1640.6" /> Marine Corps Confinement Manual, DODI 1325.07<Citation source="DODI 1325.07" /> Administration of Military Correctional Facilities and Clemency and Parole Programs (parent DoD framework), JAGINST 5800.7G<Citation source="JAGINST 5800.7G" /> Chapter 5 pretrial confinement, RCM 305 pretrial confinement rules, and DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 48 court-martial sentences pay implications. MCO 1620.3A<Citation source="MCO 1620.3A" /> Paragraph 4b assigns DC PP&O PSL Corrections Section as the program sponsor.
+
+## Related references
+
+- MCO 1640.6 Marine Corps Confinement Manual. Brig operations and confinee administration.
+- DODI 1325.07 Administration of Military Correctional Facilities and Clemency and Parole Programs. Parent DoD framework, effective 21 November 2024 with CH-1 effective 6 June 2025.
+- MCO 1620.3A Marine Corps Absentee and Deserter Apprehension Program. PSL Corrections Section program sponsorship.
+- JAGINST 5800.7G Manual of the Judge Advocate General. Chapter 5 pretrial confinement procedures.
+- DoDFMR Vol 7A Chapter 48 Court-Martial Sentences. Confinement pay implications and forfeiture rules.
+- DoDFMR Vol 7A Chapter 49 Non-Judicial Punishment. Article 15 forfeiture pay rules.
+- MCTFSPRIUM. Confinement and release transaction format.
+- RCM 305 Pretrial Confinement. Rules for Courts-Martial procedural framework.

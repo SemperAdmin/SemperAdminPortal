@@ -1,0 +1,72 @@
+{
+  "track": "igmc",
+  "programNumber": "5215",
+  "slug": "directives-management",
+  "title": "Directives Management",
+  "summary": "ALL commands. Directives Management is the assurance that promulgation of policy maintains compliance with federal statutes and policy of higher authority, policy maintains currency, and ensures appropriate publication/accessibility by command personnel",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "sponsor": "AR (ARDB)",
+  "applicabilityLevel": "ALL commands. Directives Management is the assurance that promulgation of policy maintains compliance with federal statutes and policy of higher authority, policy maintains currency, and ensures appropriate publication/accessibility by command personnel",
+  "effectiveDate": "2026-02-20",
+  "lastVerified": "2026-02-20",
+  "source": {
+    "title": "IGMC Functional Area Checklist - Directives Management",
+    "publisher": "Inspector General of the Marine Corps"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "DIRECTIVES MANAGEMENT (applies to all commands)",
+      "description": "",
+      "items": [
+        {
+          "code": "0101",
+          "question": "Has the command appointed in writing a Directives Control Point (DCP) to manage and administer the command’s Directives (Policy) Program?",
+          "references": [
+            "MCO 5215.1K w/Admin CH-3, par 4b(2)(d)9, and Chap 1, par 8"
+          ]
+        },
+        {
+          "code": "0102",
+          "question": "Has the command established a Directives Management Program (i.e., policy directive or procedures outlining the staffing process and review cycle of directives)? Note: Template directive available on ARDB public website.",
+          "references": [
+            "MCO 5215.1K w/Admin CH-3, par 4a(1)(b)2, par 4a(2)(e), and par 4b(2)(d)9"
+          ]
+        },
+        {
+          "code": "0103",
+          "question": "Does the command have any directives that have reached their 9-year anniversary without reissuance (i.e., revision)? Note: A full revision of the order in its entirety is required every 9 years; a substantial change and/or administrative change does not restart the length of the lifecycle nor extend the lifecycle of the order. Directives reaching a 9-year anniversary without reissuance may be certified as current for an additional year by the signing authority.",
+          "references": [
+            "MCO 5215.1K w/Admin CH-3, par 4b(2)(d)2"
+          ]
+        },
+        {
+          "code": "0104",
+          "question": "Is the command using bulletins that are over 12 months old?",
+          "references": [
+            "MCO 5215.1K w/Admin CH-3, Chap 1, par 3c"
+          ]
+        },
+        {
+          "code": "0105",
+          "question": "Are command issued directives (orders and bulletins) published in the correct format using the command’s letterhead and correct paragraph elements (“SMEAC”)?",
+          "references": [
+            "MCO 5215.1K w/Admin CH-3, Chap 1, par 18a(2)(a), and Chap 2, par 3-7"
+          ]
+        },
+        {
+          "code": "0106",
+          "question": "Are command directives being reviewed annually via NAVMC 10974 form, “Directives Review”? Note: This review is to evaluate necessity, validate currency, track consistency with Marine Corps policy, and ensure laws and statutory authority are being followed.",
+          "references": [
+            "MCO 5215.1K w/Admin CH-3, par 4a(2)(f), par 4b(2)(d)1-10, Chap 1, par 14a-c"
+          ]
+        }
+      ]
+    }
+  ],
+  "category": "CoRE",
+  "faName": "Directives Management"
+}

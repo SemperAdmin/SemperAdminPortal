@@ -1,0 +1,103 @@
+---
+title: "Table of Organization and TOECR Submissions"
+slug: "table-of-organization-and-toecr-submissions"
+summary: "Pull the unit T-O from TFSMS, route Table of Organization and Equipment Change Requests (TOECR), and reconcile structure changes against MCTFS assigned strength."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-12"
+unitType: "s1-g1"
+topic: "strength-manpower-reporting"
+function: "MPMN"
+skillLevel: 2100
+trEventCode: "0102-MPMN-1002"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 5311.1E"
+billets: ["s-1-chief", "g-1-officer", "manpower-officer"]
+gradesPerforming: ["SSgt", "GySgt", "MGySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 5311.1E Total Force Structure Process"
+  - "MCO 1300.8 Marine Corps Personnel Assignment Policy"
+  - "MCTP 3-30G Marine Corps Manpower and Personnel Administration"
+  - "MCO 5000.14D Marine Corps Administrative Procedures"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+relatedRoles:
+  marine: "/marines/strength-manpower-reporting/table-of-organization-and-toecr-submissions"
+  leader: "/leader/strength-manpower-reporting/table-of-organization-and-toecr-submissions"
+  commander: "/commander/strength-manpower-reporting/table-of-organization-and-toecr-submissions"
+source:
+  title: "MCO 5311.1E Total Force Structure Process and TFSMS"
+  publisher: "Headquarters Marine Corps Deputy Commandant for Combat Development and Integration Total Force Structure Division"
+---
+
+## Role and responsibility
+
+The 0170 Manpower Officer owns TOECR submissions at the unit level. The G-1 manpower officer at MEF level coordinates structure-level TOECRs with HQMC Total Force Structure Division (TFSD). The S-1 chief pulls the current T-O from TFSMS, reconciles assigned strength, and drafts the TOECR package with the operations endorsement. The S-1 officer signs by direction on the TOECR routing.
+
+Source documents flow from the unit T-O pull in TFSMS, the MCTFS assigned-strength roster, the operations officer endorsement, the unit mission essential task list, the higher headquarters guidance, and the TOECR template. Outputs include the TOECR submission package, the structure change tracking log, the post-approval T-O refresh, the MCTFS BIC reconciliation, and the manpower posture brief reflecting the structure change.
+
+The TOECR cycle runs on annual and on-demand windows. The annual T-O refresh aligns with the POM cycle. On-demand TOECRs route through TFSD for emergent structure needs.
+
+## Trigger events
+
+- Annual T-O refresh window opens under the POM cycle.
+- Force Design 2030 implementation MARADMIN directs unit structure change.
+- New mission or unit task requires a BIC addition or deletion.
+- Equipment fielding changes the unit T-E requiring a TOECR.
+- Grade rebalancing in the unit T-O requires a structure adjustment.
+- MOS divestiture or new MOS creation requires a TOECR for BIC MOS change.
+
+## Processing workflow
+
+1. Pull the current T-O. The S-1 chief pulls the unit T-O from TFSMS with grade, MOS, BIC structure, and T-E. Verify against the higher headquarters T-O guidance.
+2. Reconcile against MCTFS. Cross-check assigned strength against T-O BICs. Flag BIC vacancies, grade or MOS mismatches, and over-strength positions.
+3. Identify the structure change. Capture the structural need (BIC addition, BIC deletion, grade change, MOS change, equipment change). Tie the change to the unit mission or the higher headquarters direction.
+4. Build the TOECR package. Include the current T-O, the proposed T-O, the structure change justification, the manpower impact assessment, the equipment impact assessment, the operational impact, and the resourcing assumptions per MCO 5311.1E<Citation source="MCO 5311.1E" />.
+5. Route through operations. The operations officer endorses the TOECR for unit mission alignment.
+6. Route through the chain of command. The TOECR routes up the chain to the MEF G-1 for MEF-level structure changes or to HQMC TFSD for HQMC-level changes.
+7. Track the TOECR adjudication. The G-1 manpower officer tracks TFSD adjudication. Approval triggers the T-O refresh in TFSMS. Denial triggers the rework or the alternate solution.
+8. Refresh the unit T-O. Post-approval, the S-1 chief pulls the refreshed T-O from TFSMS and re-runs the BIC reconciliation.
+9. Reconcile MCTFS BIC assignments. Cut the BIC reassignment transactions in MCTFS for Marines impacted by the structure change per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> BIC reassignment format.
+10. Brief the commander on the structure change. The S-1 officer briefs the commander on the structure change impact, the manpower gap closure, and the equipment impact.
+
+## Systems of record and forms
+
+### Systems
+
+- TFSMS. Total Force Structure Management System holding the T-O and the T-E.
+- MCTFS. Holds the BIC assignment record reconciled against TFSMS.
+- TOECR adjudication system. HQMC TFSD adjudication tracking.
+- UD-MIPS. Cuts the BIC reassignment transactions post-approval.
+
+### Forms
+
+- TOECR Package. Table of Organization and Equipment Change Request submission package.
+- Structure Change Justification. Internal justification tying the structure change to the unit mission.
+- Manpower Impact Assessment. Local assessment covering manpower implications.
+- Equipment Impact Assessment. Local assessment covering T-E implications.
+- Post-Approval T-O Refresh Worksheet. Local worksheet reconciling MCTFS BIC assignments against the refreshed T-O.
+
+## Common pitfalls
+
+- TOECR without operations endorsement. TFSD rejects the package. Route through operations before submission per MCO 5311.1E<Citation source="MCO 5311.1E" />.
+- Structure change justification thin. TFSD adjudication denies for lack of justification. Tie the change to the unit mission, the higher headquarters guidance, or the FD2030 implementation MARADMIN.
+- Equipment impact missing. TOECR routes without the T-E impact. Include the T-E impact assessment at submission.
+- Post-approval MCTFS reconciliation skipped. Marines remain on the old BIC structure. Cut the BIC reassignment transactions within 30 days of approval per MCTFSPRIUM<Citation source="MCTFSPRIUM" />.
+- Annual T-O refresh window missed. The unit T-O lags the higher headquarters guidance. Pull the T-O at the annual refresh window and reconcile against the POM guidance.
+
+## Decision points
+
+- Local BIC realignment versus HQMC TOECR. Minor BIC realignment within the existing T-O sits at the local level. T-O structure changes route through HQMC TFSD per MCO 5311.1E<Citation source="MCO 5311.1E" />.
+- Emergent TOECR versus annual cycle. Emergent structure needs route on the on-demand cycle. Routine structure changes ride the annual T-O refresh.
+- FD2030 implementation TOECR sequencing. Force Design 2030 unit deactivations and reactivations drive a coordinated TOECR sequence. The G-1 manpower officer coordinates with the FD2030 program manager and HQMC TFSD on sequencing.
+
+## Authority
+
+This sub-page maps to NAVMC 3500.3E T-R event 0102-MPMN-1002 Process Table of Organization and Equipment Change Request. The processing workflow sits under MCO 5311.1E<Citation source="MCO 5311.1E" /> Total Force Structure Process, MCO 1300.8<Citation source="MCO 1300.8" /> assignment policy for the BIC reassignment, MCTP 3-30G<Citation source="MCTP 3-30G" /> Chapter 2 Manpower Administration function, and MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP for S-1 responsibilities. HQMC Deputy Commandant for Combat Development and Integration Total Force Structure Division (TFSD) sponsors the TOECR program.
+
+## Related references
+
+- MCO 5311.1E Total Force Structure Process. Primary policy for TFSMS, T-O, and TOECR.
+- MCO 1300.8 Marine Corps Personnel Assignment Policy. BIC reassignment rules.
+- MCTP 3-30G Marine Corps Manpower and Personnel Administration. Chapter 2 manpower administration function.
+- MCO 5000.14D Marine Corps Administrative Procedures. S-1 manpower responsibilities.
+- MCTFSPRIUM. BIC reassignment transaction format.

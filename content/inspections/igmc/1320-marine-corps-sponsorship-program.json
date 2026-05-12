@@ -1,0 +1,62 @@
+{
+  "track": "igmc",
+  "programNumber": "1320",
+  "slug": "marine-corps-sponsorship-program",
+  "title": "Marine Corps Sponsorship Program",
+  "summary": "All levels and types of commands. 6 items across the program.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "sponsor": "HQMC (MF)",
+  "applicabilityLevel": "All levels and types of commands",
+  "effectiveDate": "2025-05-15",
+  "lastVerified": "2025-03-24",
+  "source": {
+    "title": "IGMC Functional Area Checklist - Marine Corps Sponsorship Program",
+    "publisher": "Inspector General of the Marine Corps"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "UNIT-SPECIFIC ITEMS (All commands)",
+      "description": "",
+      "items": [
+        {
+          "code": "0101",
+          "question": "Is a hard copy and an electronic copy of the Sponsorship turnover binder maintained, and does it include all required items per the MCO?",
+          "references": [
+            "MCO 1320.11H, Par 4b(7)(m)"
+          ]
+        },
+        {
+          "code": "0102",
+          "question": "Have all Sponsorship Coordinators (SC) and Sponsors within the Command completed the required training according to the respective timelines prescribed in the MCO? Reference MCO 1320.11H, Par 4b(7)(a) and Par 4b(7)d",
+          "references": []
+        },
+        {
+          "code": "0103",
+          "question": "Does the Command assign a Sponsor to all Service Members executing a PCS, using NAVMC 11799? Reference MCO 1320.11H, Par 4a(2)e; Par 4b(7)g",
+          "references": []
+        },
+        {
+          "code": "0104",
+          "question": "Is the SC contact information provided to the installation and supporting Information, Referral and Relocation (IR&R) Manager, and is this information updated when a new SC is assigned? Reference MCO 1320.11H, Par 4b(7)(b); Par 4b(7)(l)",
+          "references": []
+        },
+        {
+          "code": "0105",
+          "question": "Does the SC maintain sponsor assignment tracking documentation and program utilization metrics; provide this information to the installation and supporting IR&R Manager at the end of each quarter? Reference MCO 1320.11H, Par 4b(7)(i)",
+          "references": []
+        },
+        {
+          "code": "0106",
+          "question": "Does the Unit Commander review NAVMC 11791, Sponsorship Program Questionnaire, periodically to determine trends in order to enhance the Unit’s Sponsorship Program? Reference MCO 1320.11H, Par 4b(6)(j)",
+          "references": []
+        }
+      ]
+    }
+  ],
+  "category": "Non-CoRE",
+  "faName": "Marine Corps Sponsorship Program"
+}

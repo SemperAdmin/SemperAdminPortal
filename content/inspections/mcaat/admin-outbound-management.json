@@ -1,0 +1,398 @@
+{
+  "track": "mcaat",
+  "programNumber": "admin",
+  "slug": "outbound-management",
+  "section": "Admin",
+  "categoryLabel": "Outbound Management",
+  "title": "Outbound Management",
+  "summary": "MCAAT Admin checklist - Outbound Management. 33 unique items across 3 audiences.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "applicabilityLevel": "IPAC, Reporting Unit, and Supporting Unit",
+  "lastVerified": "2026-05-10",
+  "source": {
+    "title": "MCAAT Admin Checklist - Outbound Management",
+    "publisher": "Marine Corps Manpower and Reserve Affairs"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "IPAC",
+      "description": "",
+      "items": [
+        {
+          "code": "33",
+          "question": "Are NAVMC 11060s submitted to the DO/FO within 3 working days of the date the automated NAVMC 11060 has been created in DTMS or within 5 working days of the date TTC 378 has processed for manual 11060s? (This includes Reservists on Active Duty for 31-days or more)",
+          "references": [
+            "FPM, Vol. 1, par. 090101.d"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "18",
+          "question": "Are certified and signed DD 214's filed in the OMPF within 10 working days of the effective date?",
+          "references": [
+            "MARCORSEPMAN 1900.16; paragraph 2a, MCO 1070.1"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "22",
+          "question": "Is the OBI certified NLT 10 days prior to the Marine's requested departure date?",
+          "references": [
+            "Local procedures",
+            "MCTFSPRIUM Chap 1, par 10103, PRIUM Chap 1 Sec 1 Para 10111; Chap 12 Sec 1 Para 120101, Financial Policy Manual"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "23",
+          "question": "Does the Reporting unit ensure that all STR(s) are submitted to the Marine Corps STR Central Cell via the USPS with signature confirmation no earlier than the commencement of PTAD, PDMRA, or Separation/Terminal Leave, and no later than 5 working days past the Marine’s EAS?",
+          "references": [
+            "MARADMIN 559/14, 393/20",
+            "MCO 1900.16, Para 1101"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "24",
+          "question": "Are SkillBridge participation entries being reported IAW applicable regulations?",
+          "references": [
+            "NAVMC 1700.2"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "26",
+          "question": "Upon executing SkillBridge, are member's pay and entitlement's audited and updated as applicable IAW the reference? Note: is the unit ensuring termination to Special Duty Assignment Pay (SDAP)/Incentive Pay? Are housing and station allowances reported IAW applicable regulation?",
+          "references": [
+            "DoDFMR, Vol 7A, Chapter 26",
+            "DoDI 1322.29, NAVMC 1700.2"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "27",
+          "question": "Does the reporting unit validate dependents prior to certifying the outbound interview? Note: Validation only requires the unit to confirm a valid 10922 along with supporting documents are contained in the members OMPF. Additionally, if the member has a dependent child(ren) over the age of 21, the appropriate approval from MRP1 has been received or is in the OMPF",
+          "references": [
+            "MCO 1000.6, Chapter 4",
+            "MCTFSPRIUM 12-120101"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "28",
+          "question": "Does the reporting unit have effective procedures in place to certify the Outbound Interview in a timely manner? Note timely manner will be defined by local written procedures.",
+          "references": [
+            "Local procedures"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "29",
+          "question": "Is Lump Sum Leave (LSL) properly annotated on the DD 214?",
+          "references": [
+            "MCO 1900.16 CH 2, Appendix B"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "30",
+          "question": "Is Severance pay, Separation pay, and Contractual adjustments properly annotated on the DD 214?",
+          "references": [
+            "DoDI 1336.01",
+            "FPM Vol. 1, 090108",
+            "MCO 1900.16 Ch 2, Appendix B"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "31",
+          "question": "Is TTC 115 030 (LWAS) reported IAW applicable regulations when a Marine departs on terminal leave?",
+          "references": [
+            "MCTFSPRIUM, 7-70104"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "32",
+          "question": "Is TTC 115 030 (LWAS) reported within 5 days of the Marine departing on terminal leave?",
+          "references": [
+            "MCTFSPRIUM, 2-20103, 7-70104"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02.0",
+      "title": "Reporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Does the reporting unit validate dependents prior to certifying the outbound interview? Note: Validation only requires the unit to confirm a valid 10922 along with supporting documents are contained in the members OMPF. Additionally, if the member has a dependent child(ren) over the age of 21, the appropriate approval from MRP1 has been received or is in the OMPF",
+          "references": [
+            "MCO 1000.6, Chapter 4",
+            "MCTFSPRIUM 12-120101"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Is the unit ensuring Separation/Retirement incremental PTAD is properly managed?",
+          "references": [
+            "MCO 1050.3J, Chap 5"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Is Lump Sum Leave (LSL) properly annotated on the DD 214?",
+          "references": [
+            "MCO 1900.16 CH 2, Appendix B"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Is Severance pay, Separation pay, and Contractual adjustments properly annotated on the DD 214?",
+          "references": [
+            "DoDI 1336.01",
+            "FPM Vol 1, 090108",
+            "MCO 1900.16 CH 2, Appendix B"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Is TTC 115 030 (LWAS) reported IAW applicable regulations when a Marine departs on terminal leave?",
+          "references": [
+            "MCTFSPRIUM, 7-70104"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Is TTC 115 030 (LWAS) reported within 5 days of the Marine departing on terminal leave?",
+          "references": [
+            "MCTFSPRIUM, 2-20103, 7-70104"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Are separation orders maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, vol 1, Ch 9",
+            "SECNAV M-5210.1",
+            "MCO 1900.16"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Are separation orders completed IAW applicable regulations for separating Marines?",
+          "references": [
+            "MCO 1900.16 CH 2, Figure 1-2",
+            "MCTFSPRIUM, 7-70104"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Are NAVMC 11060s submitted to the DO/FO within 3 working days of the date the automated NAVMC 11060 has been created in DTMS or within 5 working days of the date TTC 378 has processed for manual 11060s? (This includes Reservists on Active Duty for 31-days or more)",
+          "references": [
+            "FPM, Vol 1, para 090101.d"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Is the unit ensuring SkillBridge PTAD is properly managed?",
+          "references": [
+            "DoDI 1322.29",
+            "MCO 1050.3J",
+            "MARADMIN 350/18",
+            "MARADMIN 280/24"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Are SkillBridge documents maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9",
+            "SECNAV M-5210.1",
+            "MARADMIN 601/24"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "13",
+          "question": "Upon executing SkillBridge, are member's pay and entitlement's audited and updated as applicable IAW the reference? Note: is the unit ensuring termination to Special Duty Assignment Pay (SDAP)/Incentive Pay? Are housing and station allowances reported IAW applicable regulation?",
+          "references": [
+            "DoDFMR, Vol 7A, Chapter 26",
+            "DoDI 1322.29"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "19",
+          "question": "Are certified and signed DD 214's filed in the OMPF within 10 working days of the effective date?",
+          "references": [
+            "MARCORSEPMAN 1900.16; paragraph 2a, MCO 1070.1"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "21",
+          "question": "Does the Reporting unit ensure that all STR(s) are submitted to the Marine Corps STR Central Cell via the USPS with signature confirmation no earlier than the commencement of PTAD, PDMRA, or Separation/Terminal Leave, and no later than 5 working days past the Marine’s EAS?",
+          "references": [
+            "MARADMIN 559/14, 393/20",
+            "MCO 1900.16, Para 1101"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Is the OBI certified NLT 10 days prior to the Marine's requested departure date?",
+          "references": [
+            "Local procedures",
+            "MCTFSPRIUM Chap 1, par 10103, PRIUM Chap 1 Sec 1 Para 10111; Chap 12 Sec 1 Para 120101, Financial Policy Manual"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.0",
+      "title": "Supporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "14",
+          "question": "Does the unit have procedures in place to submit the OBI to the reported unit NLT 15 days prior to the Marine's requested departure date?",
+          "references": [
+            "PRIUM Chap 1 Sec 1 Para 10111 & Chap 12 Sec 1 Para 120101, Financial Policy Manual"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "15",
+          "question": "Is the unit ensuring Separation/Retirement incremental PTAD is properly managed?",
+          "references": [
+            "MCO 1050.3J, Chap. 5"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "16",
+          "question": "Is the unit ensuring SkillBridge PTAD is properly managed?",
+          "references": [
+            "DoDI 1322.29",
+            "MCO 1050.3J",
+            "MARADMIN 350/18, NAVMC 1700.2",
+            "MARADMIN 280/24"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "17",
+          "question": "Are SkillBridge documents maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9",
+            "SECNAV M-5210.1",
+            "MARADMIN 601/24"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "20",
+          "question": "Does the unit validate dependents prior to approving the outbound interview? (MOL approved) Note: Validation only requires the unit to confirm a valid 10922 along with supporting documents are contained in the members OMPF. Additionally, if the member has a dependent child(ren) over the age of 21, the appropriate approval from MFP-1 has been received or is in the OMPF",
+          "references": [
+            "MCO 1000.6, Chapter 4",
+            "MCTFSPRIUM 12-120103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "25",
+          "question": "Is the unit validating member's pay and entitlements are audited and updated as applicable IAW the reference by the reporting unit upon a Marine starting a SkillBridge program? Note: is the unit ensuring termination to Special Duty Assignment Pay (SDAP)/Incentive Pay? Are housing and station allowances reported IAW applicable regulation?",
+          "references": [
+            "NAVMC 1700.2, MARADMIN 280/24"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        }
+      ]
+    }
+  ]
+}

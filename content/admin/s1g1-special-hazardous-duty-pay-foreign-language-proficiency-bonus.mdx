@@ -1,0 +1,116 @@
+---
+title: "Foreign Language Proficiency Bonus - S-1 Procedural Page"
+slug: "foreign-language-proficiency-bonus"
+summary: "Process Foreign Language Proficiency Bonus (FLPB) tied to DLPT proficiency level per DoDFMR Vol 7A Chapter 19, DODI 5160.70, and 37 U.S.C. 305a with strategic-language tier rates and annual re-testing."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-11"
+unitType: "s1-g1"
+topic: "special-hazardous-duty-pay"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0170-PERA-2006"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "DoDFMR Vol 7A"
+billets: ["s-1-officer", "s-1-chief", "ipac-pay-clerk"]
+gradesPerforming: ["Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "DoDFMR Vol 7A Chapter 19 (Foreign Language Proficiency Bonus)"
+  - "37 U.S.C. 305a Foreign Language Proficiency Bonus"
+  - "DODI 5160.70 Management of DoD Language and Regional Proficiency Capabilities"
+  - "Defense Language Proficiency Test (DLPT) DLPT5 scoring framework"
+  - "Marine Corps Language Strategic Plan"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+performanceSteps:
+  - "Receive DLPT score record"
+  - "Confirm the language is on the DoD strategic language list"
+  - "Determine FLPB tier per Chapter 19 and DLPT score combination"
+  - "Validate annual re-testing requirement"
+  - "Build the KSD packet with DLPT score and language tier"
+  - "Cut the FLPB pay start in UD-MIPS"
+  - "Verify LES on the next pay cut"
+  - "Track 12-month re-testing window"
+  - "Stop the pay on lapsed DLPT or non-strategic language reclassification"
+  - "Run the annual FLPB audit"
+relatedRoles:
+  marine: "/marines/special-hazardous-duty-pay/foreign-language-proficiency-bonus"
+  leader: "/leader/special-hazardous-duty-pay/foreign-language-proficiency-bonus"
+  commander: "/commander/special-hazardous-duty-pay/foreign-language-proficiency-bonus"
+source:
+  title: "Foreign Language Proficiency Bonus - DoDFMR Vol 7A Chapter 19"
+  publisher: "Office of the Under Secretary of Defense (Comptroller)"
+---
+
+## Role and responsibility
+
+The IPAC pay clerk cuts FLPB transactions per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 19 (Foreign Language Proficiency Bonus). The S-1 chief tracks DLPT scores and the 12-month re-testing window per Chapter 19 and Marine Corps language program guidance. The S-1 officer signs by direction on the FLPB transaction routing. The Defense Language Institute or the testing site issues the DLPT score record. The Marine Corps language program manager at HQMC sets the strategic-language tier rates per DODI 5160.70.
+
+Source documents flow from the DLPT score record, the strategic-language tier designation per the DoD strategic language list, the previous FLPB record, the 12-month re-testing schedule, and the Marine's language assignment. FLPB outputs include the MCTFS pay start at the appropriate tier, the documented KSD packet, the verified LES, the re-testing window tracking, the pay stop on lapsed DLPT or strategic-language change, and the annual audit.
+
+Per DoDFMR Vol 7A Chapter 19, FLPB applies to Marines holding DLPT proficiency in DoD strategic languages at qualifying proficiency levels (typically 2/2 Listening/Reading on DLPT5 or higher). Per 37 U.S.C. 305a, the bonus rewards strategic-language proficiency. Per DODI 5160.70, the DoD strategic-language list and tier structure govern. Annual re-testing maintains the pay.
+
+## Trigger events
+
+- Marine completes DLPT with qualifying score in a strategic language.
+- Marine retakes DLPT at the 12-month window.
+- DLPT score drops below qualifying level triggering pay reduction or stop.
+- DoD strategic-language list change reclassifies a language.
+- Marine deploys to a position requiring the strategic language.
+- Annual FLPB audit cycle.
+
+## Processing workflow
+
+1. Receive DLPT score record. The IPAC pay clerk receives the DLPT5 score record from the Defense Language Institute or the testing site.
+2. Confirm strategic-language status. Per DODI 5160.70 and the DoD strategic-language list, the language is on the strategic list. Non-strategic languages do not draw FLPB.
+3. Determine FLPB tier. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 19, the DLPT score (Listening, Reading, optional Speaking) combined with the strategic-language tier determines the monthly bonus.
+4. Validate annual re-testing requirement. Per Chapter 19, the Marine re-tests within 12 months to maintain the pay.
+5. Build the KSD packet. Stage the DLPT score record, the strategic-language tier reference, the previous FLPB record, and the language assignment when applicable.
+6. Cut the FLPB pay start in UD-MIPS. Per Appendix E and MCTFSPRIUM<Citation source="MCTFSPRIUM" />, submit the FLPB transaction at the tier code.
+7. Verify LES. The next LES carries FLPB at the correct rate.
+8. Track 12-month re-testing window. The S-1 chief tracks the re-testing schedule. The Marine schedules the DLPT before the 12-month gate.
+9. Stop the pay. On lapsed DLPT, score drop below qualifying level, or strategic-language reclassification, cut the pay stop.
+10. Run the annual FLPB audit. Per Chapter 19, the unit audits FLPB recipients annually against DLPT records.
+
+## Systems of record and forms
+
+### Systems
+
+- MCTFS. Holds FLPB pay records.
+- UD-MIPS. Cuts FLPB transactions per Appendix E.
+- DLPT Testing System. Holds DLPT5 score records.
+- DoD Strategic Language List. Per DODI 5160.70.
+- LES. Validates pay rate.
+
+### Forms
+
+- DLPT5 Score Record. Per Chapter 19.
+- Strategic-Language Tier Reference. Per DODI 5160.70.
+- Annual Re-Testing Schedule. Local format per Chapter 19.
+- KSD Packet. Local format documenting eligibility.
+
+## Common pitfalls
+
+- FLPB cut for a non-strategic language. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 19 and DODI 5160.70, only strategic languages draw FLPB.
+- Wrong tier rate applied. Per Chapter 19, the DLPT score and the language tier drive the rate.
+- 12-month re-testing window missed. Per Chapter 19, the Marine re-tests within 12 months.
+- Score drop below qualifying level not surfaced. The DLPT system reflects the new score. The S-1 cuts the pay reduction or stop.
+- Strategic-language reclassification not tracked. The DoD list updates periodically. The S-1 monitors changes.
+- Annual FLPB audit skipped. Per Chapter 19, the audit catches lapsed DLPT and reclassified languages.
+
+## Decision points
+
+- FLPB tier selection. The DLPT score and the strategic-language tier drive the rate per Chapter 19.
+- Multiple languages. A Marine holding qualifying DLPT in multiple strategic languages draws FLPB up to the cap per Chapter 19.
+- Re-testing timing. The 12-month window drives the schedule. Early re-testing supports continuity.
+- Pay stop versus reduction. Score drop below qualifying level triggers stop. Score change within tiers triggers reduction.
+
+## Authority
+
+This sub-page sits under DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 19 (Foreign Language Proficiency Bonus). 37 U.S.C. 305a sets statutory authority. DODI 5160.70 covers DoD Language and Regional Proficiency Capabilities. The Marine Corps Language Strategic Plan sets Marine Corps-specific guidance. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> covers MCTFS transactions.
+
+## Related references
+
+- DoDFMR Vol 7A Chapter 19. FLPB framework.
+- 37 U.S.C. 305a. Statutory authority.
+- DODI 5160.70. DoD language capabilities.
+- MCTFSPRIUM. MCTFS transactions.

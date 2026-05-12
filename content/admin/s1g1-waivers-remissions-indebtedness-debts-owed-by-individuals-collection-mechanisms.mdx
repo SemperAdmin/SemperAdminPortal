@@ -1,0 +1,110 @@
+---
+title: "Debts Owed by Individuals - Collection Mechanisms"
+slug: "debts-owed-by-individuals-collection-mechanisms"
+summary: "Process individual debt collection per DoDFMR Vol 16 Chapter 3 including current employee salary offset, separated member collection, retiree pay offset, and the cross-servicing referral chain."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-12"
+unitType: "s1-g1"
+topic: "waivers-remissions-indebtedness"
+function: "GENA"
+skillLevel: 2100
+trEventCode: "0111-GENA-2018"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "DoDFMR Vol 16 Chapter 3"
+billets: ["s-1-clerk", "s-1-chief", "g-1-officer", "ipac-pay-clerk"]
+gradesPerforming: ["Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "DoDFMR Vol 16 Chapter 3 Collection of Debts Owed by Individuals to the DoD"
+  - "DoDFMR Vol 16 Chapter 2 General Instructions for Collection of Debt"
+  - "5 USC 5514 Federal Salary Offset"
+  - "31 USC 3716 Administrative Offset"
+  - "DODFMR Vol 7A Chapter 50 Waivers and Remissions"
+  - "DODFMR Vol 7A Chapter 52 Priority of Pay Deductions and Collections"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+relatedRoles:
+  marine: "/marines/waivers-remissions-indebtedness/debts-owed-by-individuals-collection-mechanisms"
+  leader: "/leader/waivers-remissions-indebtedness/debts-owed-by-individuals-collection-mechanisms"
+  commander: "/commander/waivers-remissions-indebtedness/debts-owed-by-individuals-collection-mechanisms"
+source:
+  title: "DoDFMR Vol 16 Chapter 3 Collection of Debts Owed by Individuals to the DoD"
+  publisher: "Office of the Under Secretary of Defense (Comptroller)"
+---
+
+## Role and responsibility
+
+S-1 admin specialists and IPAC pay clerks distinguish among debt collection mechanisms based on Marine status (active duty, separated, retired). The S-1 chief routes the active-duty Marine debt through MCTFS salary offset. The IPAC pay clerk works the DFAS Cleveland retiree pay system for retiree offset. The S-1 chief routes the separated-Marine debt through DFAS to administrative wage garnishment or Treasury cross-servicing.
+
+Source documents flow from the DoDFMR Vol 16 Chapter 3 collection procedures, the MCTFS debt entry, the DFAS account, the demand letter and due process record from Chapter 2, the separated-Marine forwarding address record, and the Treasury referral file. Outputs include the active-duty salary offset transaction, the retiree pay offset transaction, the separated-Marine demand letter, the administrative wage garnishment order, and the Treasury cross-servicing package.
+
+DoDFMR Vol 16 Chapter 3 distinguishes between current DoD employee debt (salary offset under 5 USC 5514) and non-employee debt (administrative offset under 31 USC 3716, wage garnishment under 31 USC 3720D, Treasury cross-servicing under 31 USC 3711). Apply the right mechanism per the Marine status.
+
+## Trigger events
+
+- Active-duty Marine debt requires salary offset post-due-process.
+- Marine separates with an outstanding pay debt.
+- Retiree receives a debt notice on retired pay.
+- Separated Marine receives a debt notice with no forwarding address.
+- Debt sits delinquent past the 120-day Treasury cross-servicing threshold.
+- Marine reports as a federal civilian employee post-separation with the debt outstanding.
+
+## Processing workflow
+
+1. Identify the Marine status at the debt creation date. Active-duty, separated, retired, federal civilian post-separation, or unreachable.
+2. Apply salary offset for active-duty Marines. Per 5 USC 5514 and DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 3, the IPAC pay clerk loads the salary offset transaction in MCTFS at 15 percent of disposable pay cap.
+3. Apply retiree pay offset for retired Marines. The DFAS Cleveland retiree pay system offsets retired pay per 5 USC 5514 and DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 3 paragraph 030203.
+4. Apply administrative wage garnishment for separated Marines. Per 31 USC 3720D and DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 3, DFAS issues the 30-day wage garnishment notice to the separated Marine and routes the garnishment order to the private employer.
+5. Apply cross-servicing referral for unreachable debtors. Per 31 USC 3711 and DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 3, DFAS refers the debt to Treasury cross-servicing after 120 days delinquent.
+6. Coordinate cross-component salary offset. The separated Marine reports as a federal civilian employee. DFAS routes the salary offset to the new employing agency per 5 USC 5514 and DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 3.
+7. Apply tax refund offset. Per 31 USC 3720A and DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 3, the Treasury Offset Program (TOP) offsets the debtor federal tax refund.
+8. Apply benefit offset. Per 31 USC 3716 and DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 3, federal benefit payments to the debtor offset against the debt, subject to statutory exemptions.
+9. Track collection cycle. The S-1 chief monitors the collection mechanism execution and surfaces stalled cases to the IPAC pay clerk.
+10. Close the debt on full collection. DFAS posts the debt closeout and MCTFS reflects the cleared status. The S-1 chief cuts the Page 11 entry per MCO P1070.12K Chapter 6.
+
+## Systems of record and forms
+
+### Systems
+
+- MCTFS. Holds the active-duty Marine debt entry and salary offset transaction.
+- DFAS Indianapolis. Owns the active-duty debt account.
+- DFAS Cleveland Retiree Pay. Handles retiree pay offset.
+- DFAS Civilian Pay. Handles federal civilian employee salary offset post-separation.
+- Treasury Offset Program (TOP). Federal tax refund and benefit payment offset.
+- Treasury Cross-Servicing. Handles cross-servicing referral after 120 days delinquent.
+
+### Forms
+
+- Salary Offset Authorization. The MCTFS authorization for the active-duty offset.
+- Administrative Wage Garnishment Order. The separated-Marine wage garnishment per 31 USC 3720D.
+- Treasury Cross-Servicing Referral Package. The TOP referral file.
+- Retiree Pay Offset Authorization. The DFAS Cleveland authorization for retired pay offset.
+- Cross-Component Salary Offset Request. Inter-agency request for federal civilian employee offset.
+
+## Common pitfalls
+
+- Salary offset cap exceeded. The IPAC pay clerk loads above 15 percent of disposable pay. The Marine disputes and the offset rolls back. Apply the 15 percent cap per 5 USC 5514.
+- Separated-Marine demand letter delivered to a stale forwarding address. The 30-day due process window runs without notice and the wage garnishment order fails. Use the Marine separation forwarding address from MOL and the DD Form 214.
+- Retiree pay offset routed through DFAS Indianapolis instead of DFAS Cleveland. The offset fails. Route retiree offset to DFAS Cleveland Retiree Pay per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 3.
+- Cross-component salary offset coordination skipped. The separated Marine reports as a federal civilian employee and the debt continues. DFAS routes the cross-component offset per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 3.
+- Treasury cross-servicing referral missed at 120 days. The debt sits delinquent without Treasury Offset Program coverage. DFAS refers the debt at 120 days delinquent per 31 USC 3711.
+
+## Decision points
+
+- Salary offset versus voluntary repayment. The Marine arranges voluntary repayment within the 30-day window. The IPAC pay clerk loads the voluntary repayment plan instead of the offset.
+- Administrative wage garnishment versus Treasury cross-servicing. Separated Marines with verified employment route through wage garnishment. Unreachable debtors route through Treasury cross-servicing at 120 days.
+- Hardship reduction of salary offset rate. The Marine demonstrates financial hardship. DFAS reduces the offset rate below 15 percent per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 3 hardship rules.
+
+## Authority
+
+This sub-page maps to NAVMC 3500.3E T-R event 0111-GENA-2018 Process Waivers or Remissions of Indebtedness. The collection mechanisms sit under DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 3 Collection of Debts Owed by Individuals to the DoD, DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2 General Instructions, and DODFMR Vol 7A Chapters 50 and 52 for the Marine pay-specific deductions priority. Statutory authority sits at 5 USC 5514, 31 USC 3711, 3716, 3720A, 3720D.
+
+## Related references
+
+- DoDFMR Vol 16 Chapter 3 Collection of Debts Owed by Individuals to the DoD. Primary framework for individual debt collection.
+- DoDFMR Vol 16 Chapter 2 General Instructions for Collection of Debt. Due process and demand letter framework.
+- 5 USC 5514. Federal salary offset framework.
+- 31 USC 3711 Collection and Compromise. Treasury cross-servicing authority.
+- 31 USC 3716 Administrative Offset. Benefit payment offset authority.
+- 31 USC 3720A Tax Refund Offset. Federal tax refund offset authority.
+- 31 USC 3720D Administrative Wage Garnishment. Post-separation wage garnishment.
+- DODFMR Vol 7A Chapter 52 Priority of Pay Deductions and Collections. Marine pay deduction priority.

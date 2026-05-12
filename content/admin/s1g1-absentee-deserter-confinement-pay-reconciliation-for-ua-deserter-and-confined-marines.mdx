@@ -1,0 +1,111 @@
+---
+title: "Pay Reconciliation for UA, Deserter, and Confined Marines"
+slug: "pay-reconciliation-for-ua-deserter-and-confined-marines"
+summary: "Stop pay at UA hour 1, restart at RMC, apply court-martial forfeitures, apply NJP forfeitures, and process the desertion forfeiture disposition rules in DoDFMR Vol 7A Appendix B."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-12"
+unitType: "s1-g1"
+topic: "absentee-deserter-confinement"
+function: "GENA"
+skillLevel: 2100
+trEventCode: "0111-GENA-2017"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "DoDFMR Vol 7A"
+billets: ["s-1-clerk", "s-1-chief", "g-1-officer", "adjutant", "ipac-pay-clerk"]
+gradesPerforming: ["Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "DoDFMR Vol 7A Chapter 1 Basic Pay"
+  - "DoDFMR Vol 7A Chapter 34 Pay Entitlement of Members Missing or in a MIA Status"
+  - "DoDFMR Vol 7A Chapter 44 Withholding of Income Tax"
+  - "DoDFMR Vol 7A Chapter 48 Court-Martial Sentences"
+  - "DoDFMR Vol 7A Chapter 49 Non-Judicial Punishment"
+  - "DoDFMR Vol 7A Appendix B Disposition of Forfeitures and Fines"
+  - "MCO 1620.3A Marine Corps Absentee and Deserter Apprehension Program"
+  - "MCO 5800.16 Legal Support and Administration Manual"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+relatedRoles:
+  marine: "/marines/absentee-deserter-confinement/pay-reconciliation-for-ua-deserter-and-confined-marines"
+  leader: "/leader/absentee-deserter-confinement/pay-reconciliation-for-ua-deserter-and-confined-marines"
+  commander: "/commander/absentee-deserter-confinement/pay-reconciliation-for-ua-deserter-and-confined-marines"
+source:
+  title: "DoDFMR Vol 7A Chapters 48, 49, and Appendix B Forfeitures and Confinement Pay"
+  publisher: "Office of the Under Secretary of Defense Comptroller"
+---
+
+## Role and responsibility
+
+S-1 admin specialists and IPAC pay clerks reconcile pay state across the UA, deserter, return, and confinement lifecycle. The S-1 clerk cuts the UA pay stop at hour 1 of UA per the UD-MIPS UA transaction. The S-1 chief cuts the deserter declaration at day 30 with the associated pay state shift. The IPAC pay clerk reconciles forfeitures from court-martial sentences and non-judicial punishment per DoDFMR Vol 7A Chapters 48 and 49.
+
+Source documents flow from the UD-MIPS UA transaction, the deserter declaration, the DD Form 616 return, the DD Form 2329 NJP record (Page 11 NJP entry), the DD Form 2707 court-martial confinement order, and the court-martial promulgating order. Outputs include the pay stop, the pay restart, the forfeiture deductions, the income tax withholding adjustments, and the certified pay reconciliation in MCTFS.
+
+Pay reconciliation errors create overpayment debts routing through DoDFMR Vol 16 collection procedures. The waivers-remissions-indebtedness category covers the recovery path when reconciliation lapses.
+
+## Trigger events
+
+- UA declared at hour 24. Pay stops effective hour 1 of the UA period per UCMJ Article 86.
+- Deserter declared at day 30. The deserter pay state shifts and back pay collection rules apply per DoDFMR Vol 7A Appendix B.
+- Marine returns to military control. Pay restart calculation runs from the return date forward per DoDFMR Vol 7A Chapter 1.
+- Court-martial sentence includes forfeitures. Forfeiture deductions process per DoDFMR Vol 7A Chapter 48.
+- NJP includes forfeitures. Article 15 forfeitures process per DoDFMR Vol 7A Chapter 49.
+- Pretrial confinement begins. Pay continues at full rate until court-martial conviction per DoDFMR Vol 7A Chapter 48.
+- Post-trial confinement begins. Pay rules shift per the court-martial sentence and the convening authority action.
+
+## Processing workflow
+
+1. Cut the pay stop at UA. The UD-MIPS UA transaction triggers the pay stop effective hour 1 of UA per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> UA transaction rules. The Marine forfeits pay and allowances for the UA period.
+2. Verify the BAH and BAS state. Dependents-eligible BAH continues during UA if dependents reside in the family residence and the Marine had a valid BAH-with-dependents authorization before UA per DoDFMR Vol 7A Chapter 26.
+3. Cut the deserter declaration pay state. The deserter declaration shifts the pay record. Back pay for the UA period stays forfeited per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Appendix B.
+4. Process forfeitures on apprehension. On return to military control, court-martial action and NJP forfeitures process through MCTFS punishment transactions per DoDFMR Vol 7A Chapters 48 and 49.
+5. Restart pay at RMC. The Marine restarts entitled pay effective the return date per the UD-MIPS RMC transaction. The S-1 chief verifies the start date and the BAH rate.
+6. Process court-martial confinement pay rules. Pretrial confinement holds pay at full rate. Post-trial confinement triggers pay reduction or forfeiture per the adjudged and approved sentence per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 48.
+7. Process NJP forfeitures. Article 15 forfeitures apply per the maximum punishment limits in MCM Part V and per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 49 paragraph 490201.
+8. Apply Appendix B disposition rules. Forfeitures and fines from desertion, court-martial, and NJP route per the disposition rules in DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Appendix B. Treasury disposition rules apply to deserter forfeitures.
+9. Reconcile income tax withholding. The CZTE (Combat Zone Tax Exclusion) ends with UA per DoDFMR Vol 7A Chapter 44 paragraph 4402. Withholding state shifts back to the pre-deployment rate.
+10. Audit the pay reconciliation. The IPAC pay clerk audits the MCTFS pay history at return, confinement entry, confinement release, and case closure. Pay overpayments route to debt collection per DoDFMR Vol 16.
+
+## Systems of record and forms
+
+### Systems
+
+- MCTFS. Holds the pay state across the UA, deserter, return, and confinement lifecycle.
+- UD-MIPS. Cuts the UA, deserter, return, NJP, court-martial, and confinement transactions with associated pay state changes.
+- IPAC system. The IPAC pay clerk runs the day-to-day pay reconciliation.
+- Defense Joint Military Pay System (DJMS). The DoD pay system of record holding pay history.
+
+### Forms
+
+- DD Form 2329 Record of Trial by Summary Court-Martial. Documents Summary court-martial action.
+- DD Form 458 Charge Sheet. Documents the charges driving court-martial action.
+- NAVMC 10132 NJP Record. Documents Article 15 punishment including forfeitures.
+- DD Form 2707 Confinement Order. Triggers the MCTFS confinement transaction.
+- Court-Martial Promulgating Order. The convening authority approval action triggering pay reduction or forfeiture.
+
+## Common pitfalls
+
+- Pay stop cut from the UA reporting date instead of UA hour 1. Pay continues into the UA period. Cut the pay stop effective hour 1 of UA per MCTFSPRIUM<Citation source="MCTFSPRIUM" />.
+- BAH-with-dependents stopped on UA. The dependents lose housing without basis. BAH-with-dependents continues during UA when dependents reside in the family residence per DoDFMR Vol 7A Chapter 26.
+- Forfeitures applied without the promulgating order. The convening authority action drives forfeiture timing. Apply forfeitures only after the promulgating order is signed per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 48 paragraph 480107.
+- NJP forfeitures exceed the maximum. Article 15 forfeitures cap at the maximum punishment limits in MCM Part V. Verify the forfeiture amount against the grade and the punishing officer authority per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 49.
+- Pay restart at RMC missed. The Marine restarts pay only at the next pay cycle. Cut the UD-MIPS RMC transaction the day of return.
+
+## Decision points
+
+- BAH-with-dependents during UA. Dependents resident in the family residence keep the BAH-with-dependents rate during UA per DoDFMR Vol 7A Chapter 26. The S-1 chief verifies dependents residency before continuing or stopping BAH.
+- Pretrial versus post-trial confinement pay. Pretrial confinement holds full pay. Post-trial confinement applies the adjudged forfeitures and the reduction to E-1 if adjudged per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 48 paragraph 480105.
+- Allen credit and RCM 305(k) credit on forfeitures. Forfeiture timing runs from the date of the convening authority action, not from confinement entry. Allen credit and RCM 305(k) credit reduce confinement duration but do not shift forfeiture timing.
+
+## Authority
+
+This sub-page maps to NAVMC 3500.3E T-R event 0111-GENA-2017 Process Return of Absentee or Deserter to Military Control. The pay reconciliation workflow sits under DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 1 Basic Pay entitlement rules, Chapter 34 Pay Entitlement of Members Missing, Chapter 44 Withholding of Income Tax, Chapter 48 Court-Martial Sentences, Chapter 49 Non-Judicial Punishment, and Appendix B Disposition of Forfeitures. MCO 1620.3A<Citation source="MCO 1620.3A" /> drives the deserter caseload reporting. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> holds the transaction format.
+
+## Related references
+
+- DoDFMR Vol 7A Chapter 1 Basic Pay. Pay entitlement rules.
+- DoDFMR Vol 7A Chapter 34 Pay Entitlement of Members Missing or in a MIA Status.
+- DoDFMR Vol 7A Chapter 44 Withholding of Income Tax. CZTE rules at paragraph 4402.
+- DoDFMR Vol 7A Chapter 48 Court-Martial Sentences. Forfeitures and confinement pay.
+- DoDFMR Vol 7A Chapter 49 Non-Judicial Punishment. Article 15 forfeitures.
+- DoDFMR Vol 7A Appendix B Disposition of Forfeitures and Fines.
+- MCO 1620.3A Marine Corps Absentee and Deserter Apprehension Program.
+- MCTFSPRIUM. UA, deserter, return, NJP, court-martial, and confinement transaction formats.

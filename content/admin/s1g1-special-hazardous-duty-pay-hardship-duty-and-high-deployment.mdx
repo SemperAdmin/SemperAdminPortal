@@ -1,0 +1,123 @@
+---
+title: "Hardship Duty Pay and High-Deployment Allowance - S-1 Procedural Page"
+slug: "hardship-duty-and-high-deployment"
+summary: "Process Hardship Duty Pay (HDP) for designated hardship locations and missions per DoDFMR Vol 7A Chapter 17 plus High-Deployment Allowance (HDA) for Marines exceeding deployment thresholds per Chapter 65 and 37 U.S.C. 352 / 991."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-11"
+unitType: "s1-g1"
+topic: "special-hazardous-duty-pay"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0170-PERA-2006"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "DoDFMR Vol 7A"
+billets: ["s-1-officer", "s-1-chief", "ipac-pay-clerk"]
+gradesPerforming: ["Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "DoDFMR Vol 7A Chapter 17 (Hardship Duty Pay)"
+  - "DoDFMR Vol 7A Chapter 65 (High-Deployment Allowance)"
+  - "37 U.S.C. 352 Hardship Duty Pay"
+  - "37 U.S.C. 991 High-Deployment Allowance"
+  - "DoD Designated Hardship Duty Areas List"
+  - "DoD Designated Hardship Duty Missions List"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+performanceSteps:
+  - "Receive deployment or mission assignment notification"
+  - "Confirm the location appears on the DoD Hardship Duty Areas List"
+  - "Confirm the mission appears on the Hardship Duty Missions List"
+  - "Determine the HDP-Location, HDP-Mission, or HDP-Tempo category"
+  - "Track deployment threshold for HDA per Chapter 65"
+  - "Build the KSD packet"
+  - "Cut the HDP or HDA start in UD-MIPS"
+  - "Verify LES on the next pay cut"
+  - "Track deployment duration"
+  - "Stop the pay on redeployment or area decertification"
+relatedRoles:
+  marine: "/marines/special-hazardous-duty-pay/hardship-duty-and-high-deployment"
+  leader: "/leader/special-hazardous-duty-pay/hardship-duty-and-high-deployment"
+  commander: "/commander/special-hazardous-duty-pay/hardship-duty-and-high-deployment"
+source:
+  title: "Hardship Duty and High-Deployment Allowance - DoDFMR Vol 7A Chapters 17 and 65"
+  publisher: "Office of the Under Secretary of Defense (Comptroller)"
+---
+
+## Role and responsibility
+
+The IPAC pay clerk cuts Hardship Duty Pay (HDP) and High-Deployment Allowance (HDA) transactions per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 17 (HDP) and Chapter 65 (HDA). The S-1 chief tracks deployment locations against the DoD Hardship Duty Areas List, mission assignments against the Hardship Duty Missions List, and deployment thresholds against the HDA framework. The S-1 officer signs by direction on the routing. The unit commander or deployment cell certifies the deployment dates and the qualifying mission. The HQMC Manpower (M&RA) deployment-tracking system supports the HDA threshold computation.
+
+Source documents flow from the deployment orders, the DoD Hardship Duty Areas List, the DoD Hardship Duty Missions List, the deployment dates and the cumulative deployment threshold, the qualifying mission assignment, and the prior MCTFS pay history. HDP and HDA outputs include the MCTFS pay start at the appropriate code (HDP-Location, HDP-Mission, or HDA), the documented KSD packet, the verified LES, the deployment threshold accumulation tracking, the pay stop on redeployment or area decertification, and the audit trail.
+
+Per DoDFMR Vol 7A Chapter 17, HDP applies in three categories. HDP-Location for designated areas. HDP-Mission for designated missions. HDP-Tempo for high deployment exposure. Per Chapter 65, HDA applies when the Marine exceeds the DoD deployment threshold (typically a cumulative deployment time over a defined window). Per 37 U.S.C. 352, HDP carries the statutory base. Per 37 U.S.C. 991, HDA carries the statutory base.
+
+## Trigger events
+
+- Marine deploys to a DoD-designated hardship area.
+- Marine assigned to a DoD-designated hardship mission.
+- Marine exposed to high-deployment tempo qualifying for HDP-Tempo.
+- Marine exceeds deployment threshold triggering HDA.
+- Area or mission removed from the designated list triggering pay stop.
+- Annual special pay audit cycle.
+
+## Processing workflow
+
+1. Receive deployment or mission assignment notification. The IPAC pay clerk receives from the chain or the deployment cell.
+2. Confirm location. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 17 and the DoD Hardship Duty Areas List, the location appears on the list for HDP-Location eligibility.
+3. Confirm mission. Per Chapter 17 and the DoD Hardship Duty Missions List, the assignment qualifies for HDP-Mission eligibility.
+4. Determine the HDP category. Per Chapter 17:
+   - HDP-Location applies in designated areas at a fixed monthly rate.
+   - HDP-Mission applies to designated missions at a fixed monthly rate.
+   - HDP-Tempo applies to high deployment exposure at the rate per the chapter.
+5. Track deployment threshold for HDA. Per Chapter 65 and 37 U.S.C. 991, when the Marine's cumulative deployment time exceeds the DoD threshold, HDA applies. The HQMC deployment-tracking system supports the computation.
+6. Build the KSD packet. Stage the deployment orders, the designated area or mission confirmation, the cumulative deployment record, and the prior MCTFS history.
+7. Cut the HDP or HDA start in UD-MIPS. Per Appendix E and MCTFSPRIUM<Citation source="MCTFSPRIUM" />, submit the transaction at the appropriate code.
+8. Verify LES. The next LES carries HDP and HDA at the correct rates.
+9. Track deployment duration. The S-1 chief tracks against the unit deployment roster.
+10. Stop the pay. On redeployment, area decertification, or end of qualifying mission, cut the pay stop.
+
+## Systems of record and forms
+
+### Systems
+
+- MCTFS. Holds HDP and HDA pay records and cumulative deployment time.
+- UD-MIPS. Cuts HDP and HDA transactions per Appendix E.
+- DoD Hardship Duty Areas List. Per Chapter 17.
+- DoD Hardship Duty Missions List. Per Chapter 17.
+- HQMC Deployment Tracking System. Supports HDA threshold computation per Chapter 65.
+- LES. Validates pay rate.
+
+### Forms
+
+- Deployment Orders. Drives the location and the duration.
+- DoD Hardship Duty Areas List Confirmation. Per Chapter 17.
+- DoD Hardship Duty Missions List Confirmation. Per Chapter 17.
+- Cumulative Deployment Record. Per Chapter 65 for HDA.
+- KSD Packet. Local format documenting eligibility.
+
+## Common pitfalls
+
+- HDP cut for a non-designated location. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 17, only DoD-designated areas draw HDP-Location.
+- Wrong HDP category applied. Per Chapter 17, the three categories cover distinct situations. Location, Mission, and Tempo carry distinct rules.
+- HDA cut without meeting deployment threshold. Per Chapter 65 and 37 U.S.C. 991, the cumulative deployment threshold drives eligibility.
+- Cumulative deployment time not accurately tracked. The HQMC tracking system holds the record. The S-1 cross-checks against deployment orders.
+- Pay continued past redeployment. The unit cuts the pay stop on redeployment.
+- Wrong effective date applied. The deployment dates and the chapter rules drive the effective date.
+- Area or mission decertification not surfaced. Periodic DoD updates change the designated lists. The S-1 monitors.
+
+## Decision points
+
+- HDP-Location versus HDP-Mission. The deployment location and the assigned mission drive the category. Some Marines draw both when both criteria apply at the same time.
+- HDP versus HDA. HDP applies to specific hardship designations. HDA applies to cumulative deployment exposure. Both run concurrent when each criterion is met.
+- Effective date selection. The duty assumption date in the designated area drives HDP. The threshold-crossing date drives HDA.
+- Decertification timing. When DoD removes a location or mission from the designated list, the pay stop runs from the decertification effective date.
+
+## Authority
+
+This sub-page sits under DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 17 (Hardship Duty Pay) and Chapter 65 (High-Deployment Allowance). 37 U.S.C. 352 sets HDP statutory authority. 37 U.S.C. 991 sets HDA statutory authority. The DoD Hardship Duty Areas List and the DoD Hardship Duty Missions List publish per OSD policy. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> covers MCTFS transactions.
+
+## Related references
+
+- DoDFMR Vol 7A Chapters 17 and 65. HDP and HDA framework.
+- 37 U.S.C. 352 and 991. Statutory authority.
+- DoD Hardship Duty Areas and Missions Lists. Operational lists.
+- MCTFSPRIUM. MCTFS transactions.

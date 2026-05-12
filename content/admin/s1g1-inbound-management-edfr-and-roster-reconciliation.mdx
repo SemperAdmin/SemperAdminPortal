@@ -1,0 +1,113 @@
+---
+title: "EDFR and Roster Reconciliation - S-1 Procedural Page"
+slug: "edfr-and-roster-reconciliation"
+summary: "Pull Enlisted Distribution and Forecast Reports (EDFR) within 24-48 hours of inbound join, reconcile the alpha roster against MCTFS, and clear rejections within 5 working days per MCO 1300.8 and MCTFSPRIUM."
+roles: ["admin", "leader"]
+lastVerified: "2026-05-11"
+unitType: "s1-g1"
+topic: "inbound-management"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0170-PERA-2104"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 1300.8"
+billets: ["s-1-officer", "s-1-chief", "ipac-inbound-counselor"]
+gradesPerforming: ["Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 1300.8 Marine Corps Personnel Assignment Policy"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "MCO 5000.14D Marine Corps Administrative Procedures"
+performanceSteps:
+  - "Pull EDFR within 24-48 hours of MCTFS join"
+  - "Review EDFR for diary rejections and data errors"
+  - "Compare EDFR data to the unit alpha roster"
+  - "Identify discrepancies (dependency, BAH, COLA, EAS)"
+  - "Submit correcting KSD per MCTFSPRIUM"
+  - "Re-cut the diary transaction with the correction"
+  - "Clear rejections within 5 working days"
+  - "Update the alpha roster"
+  - "Brief the S-1 officer on aged rejections"
+  - "Retain EDFR copies per records schedule"
+relatedRoles:
+  marine: "/marines/inbound-management/edfr-and-roster-reconciliation"
+  leader: "/leader/inbound-management/edfr-and-roster-reconciliation"
+  commander: "/commander/inbound-management/edfr-and-roster-reconciliation"
+source:
+  title: "EDFR and Roster Reconciliation - MCO 1300.8 and MCTFSPRIUM"
+  publisher: "Headquarters Marine Corps Manpower and Reserve Affairs"
+---
+
+## Role and responsibility
+
+The IPAC inbound counselor pulls EDFR within 24-48 hours of the inbound MCTFS join per MCO 1300.8<Citation source="MCO 1300.8" />. The S-1 chief audits the EDFR against the unit alpha roster and identifies discrepancies. The S-1 officer signs by direction on rejection-clearing actions and briefs aged rejections to the commander. The IPAC counselor cuts correcting KSDs per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> codes to resolve EDFR rejections.
+
+Source documents flow from the EDFR system, the unit alpha roster, the inbound MCTFS join transaction, the dependency documents, and the prior LES. EDFR and roster outputs include the cleared EDFR within 5 working days of join, the updated alpha roster, the corrected MCTFS data, the retained EDFR copies per records schedule, the aged rejection brief, and the audit trail.
+
+Per MCO 1300.8 and MCTFSPRIUM, EDFR is the primary reconciliation report between MCTFS data and the unit roster. Rejections surface within 24-48 hours of a diary transaction and route through the IPAC for correction.
+
+## Trigger events
+
+- Inbound MCTFS join completes triggering EDFR pull.
+- Routine weekly EDFR cycle.
+- Diary correction cuts a new EDFR entry.
+- New unit standup triggers initial alpha roster reconciliation.
+- Dependency change triggers BAH reconciliation.
+- IGMC inspection covers EDFR posture.
+
+## Processing workflow
+
+1. Pull EDFR. Per MCO 1300.8<Citation source="MCO 1300.8" />, pull EDFR within 24-48 hours of the MCTFS join.
+2. Review EDFR. Identify diary rejections, data errors, dependency mismatches, BAH errors, and COLA errors.
+3. Compare to alpha roster. The unit alpha roster reflects assigned Marines. The EDFR reflects MCTFS data. Discrepancies surface where the two diverge.
+4. Identify discrepancies. Common discrepancies include BAH rate mismatch, dependency status, COLA initiation, EAS errors, and SGLI election.
+5. Submit correcting KSD. Per MCTFSPRIUM<Citation source="MCTFSPRIUM" />, the correcting KSD attaches to the corrected diary transaction.
+6. Re-cut the diary transaction. The corrected transaction submits through UD-MIPS.
+7. Clear rejections within 5 working days. Per MCO 1300.8, the 5-day window applies to every rejection.
+8. Update the alpha roster. The unit roster reflects the corrected MCTFS data.
+9. Brief aged rejections. Rejections approaching or exceeding 5 working days route to the S-1 officer and the commander.
+10. Retain EDFR copies. Per the records retention schedule, retain EDFR copies for the documented period.
+
+## Systems of record and forms
+
+### Systems
+
+- EDFR. Source of rejection and reconciliation data.
+- Marine Corps Total Force System (MCTFS). Master record.
+- UD-MIPS. Cuts correcting transactions.
+- Unit Alpha Roster. Local record of assigned Marines.
+- MOL. Surfaces Marine-level data.
+
+### Forms
+
+- EDFR Report. Pulled per MCO 1300.8 cycle.
+- Correcting KSD Packet. Per MCTFSPRIUM codes.
+- Alpha Roster Update Memorandum. Local format.
+- Aged Rejection Brief. Local format to the commander.
+
+## Common pitfalls
+
+- EDFR not pulled within 24-48 hours of join. Per MCO 1300.8<Citation source="MCO 1300.8" />, the EDFR cycle catches rejections early.
+- Rejections held past 5 working days. Per MCO 1300.8, the rejection cycle closes within 5 working days.
+- Correcting KSD missing required document type code. Per MCTFSPRIUM<Citation source="MCTFSPRIUM" />, the code matches the document.
+- Alpha roster diverges from MCTFS. The two records reconcile through the EDFR cycle.
+- Aged rejections not briefed to the commander. The commander needs visibility on pay-affecting open rejections.
+- Dependency mismatch not resolved. The dependency documents support BAH and FSA. Mismatch drives rate errors.
+- COLA initiation rejection delayed. OCONUS COLA pays from the duty assumption date.
+
+## Decision points
+
+- Rejection priority. Pay-affecting rejections (BAH, dependency, COLA, FSA) resolve first. Non-pay rejections (EAS, AFADBD) resolve next.
+- Correcting KSD versus diary correction. Some rejections clear through a new KSD attachment. Others require a new diary transaction.
+- Escalation to MARFOR. Persistent rejections route to MARFOR support for system-level resolution.
+- Aged rejection commander brief. Rejections at 3-4 working days route to the S-1 officer. Rejections at 5+ working days route to the commander.
+
+## Authority
+
+This sub-page sits under MCO 1300.8<Citation source="MCO 1300.8" /> Marine Corps Personnel Assignment Policy with MCTFSPRIUM<Citation source="MCTFSPRIUM" /> covering EDFR procedures. MCO 5000.14D<Citation source="MCO 5000.14D" /> covers S-1 EDFR responsibilities. The processing workflow maps to NAVMC 3500.3E T-R event 0170-PERA-2104.
+
+## Related references
+
+- MCO 1300.8 and MCTFSPRIUM. Personnel assignment and EDFR framework.
+- MCO 5000.14D. S-1 responsibilities.
+- NAVMC 3500.3E. T-R event 0170-PERA-2104.

@@ -1,0 +1,96 @@
+---
+title: "APES Administration"
+slug: "apes-administration"
+summary: "APES routes every FitRep and supports JEPES rendering. Account setup, MRO list discipline, draft hygiene, and submission tracking. Skip APES discipline and reports lag, marks lose, MROs hurt."
+roles: ["leader", "commander", "admin"]
+lastVerified: "2026-05-06"
+topic: "performance-evaluation"
+order: 8
+sourcePolicy: "MCO 1610.7"
+sourceChapter: "APES"
+performanceSteps:
+  - "Verify APES account access for every RS, RO, and MRO in the chain"
+  - "Maintain accurate MRO and supervisor lists"
+  - "Draft inside APES, do not draft offline and paste at the deadline"
+  - "Track submission status weekly against the calendar"
+  - "Coordinate with S-1 on system errors before they hit the deadline"
+references:
+  - "MCO 1610.7 Performance Evaluation System"
+  - "Performance Evaluation Reference Manual (PERMA)"
+relatedRoles:
+  marine: "/marines/apes-and-fitrep-administration"
+  admin: "/admin/s1-g1/oper"
+source:
+  title: "Performance Evaluation Reference Manual (PERMA)"
+  publisher: "HQMC"
+---
+
+## What APES Does
+
+APES, the Automated Performance Evaluation System, routes performance evaluations across the chain. It is the system of record for FitRep submission, RS and RO routing, MRO list management, and historical report retrieval. JEPES rendering uses APES tooling or follows a parallel system per the active MARADMIN.
+
+The Performance Evaluation Reference Manual (PERMA) lives inside APES and walks the system mechanics. <Citation source="PERMA" />
+
+## Account Setup
+
+Every RS, RO, and MRO in your chain has an APES account.
+
+- New check-in. Verify account access in the first 30 days.
+- Rank promotion. Permissions change with rank. Verify the account reflects current grade.
+- PCS. Account follows the Marine. Old MRO list at the prior unit transfers in APES, the new MRO list at the gaining unit builds.
+
+A SNCO who cannot access APES at the moment a report is due is a SNCO whose section just lost the cycle.
+
+## MRO List Discipline
+
+The RS owns the accuracy of the MRO list inside APES.
+
+- New MRO checks in. Add to the list within 30 days.
+- MRO PCSes out. Move to the historical list, do not delete.
+- MRO promotes. Update grade.
+- MRO changes billet within the section. Update billet description on the MRO record.
+
+A stale MRO list produces missed reports, late reports, and reports written against outdated billet descriptions.
+
+## Draft Hygiene
+
+Draft inside APES. Do not draft offline in a separate document and paste at the deadline.
+
+- Inside-APES drafts save automatically. Network outage will not lose work.
+- Inside-APES drafts let the RO see the draft state.
+- Pasted drafts often lose formatting and embedded references.
+- Pasted drafts at the deadline produce typos that survive into the final.
+
+## Submission Tracking
+
+Pull the section APES status weekly.
+
+| Status | Meaning | Action |
+|---|---|---|
+| Draft | RS still writing | RS confirms target submission date |
+| With RO | RO reviewing | RO confirms ETA |
+| Returned | RO non-concurred, with RS | RS revises |
+| Submitted | Routed past the chain | None |
+| Late | Past the policy window | Coordinate with S-1, document why |
+
+A weekly review catches problems while there is still room to fix them.
+
+## When APES Errors
+
+System errors happen. The fix path:
+
+1. Capture the error message and timestamp.
+2. Coordinate with S-1 immediately, do not wait until the deadline.
+3. Document the error in your leader notebook with the resolution.
+4. If the error blocks submission past the window, S-1 documents the system delay so the report does not count as a personal lateness.
+
+## Common APES Failures
+
+- Account access verified the day a report is due. The fix takes longer than the time available.
+- MRO list stale. Reports drafted against last year's billet description.
+- Drafts living in offline documents. Pastes at the deadline carry formatting errors.
+- Submitted without the pre-submission MRO sit-down. The MRO sees the report on APES download. Trust takes the hit.
+
+## Where the Marine View Sits
+
+The Marine view at `/marines/apes-and-fitrep-administration` covers what the MRO accesses inside APES, what the MRO can do with a report after submission, and how the MRO downloads historical reports. The Admin view at `/admin/s1-g1/oper` covers S-1 processing and routing.

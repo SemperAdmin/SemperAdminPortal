@@ -1,0 +1,110 @@
+---
+title: "MISSO Support Case Routing - S-1 Procedural Page"
+slug: "misso-support-case-routing"
+summary: "Submit MISSO trouble tickets for system errors, escalate to MISSA when MISSO defers, and track case resolution through closure."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-10"
+unitType: "s1-g1"
+topic: "admin-systems-management"
+function: "GENA"
+skillLevel: 2000
+trEventCode: "0102-GENA-1015"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 5000.14D"
+billets: ["s-1-clerk", "s-1-chief", "g-1-officer", "ipac-clerk"]
+gradesPerforming: ["LCpl", "Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 5000.14D Marine Corps Administrative Procedures"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "MCO 5239.2C Marine Corps Cybersecurity Program"
+  - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+performanceSteps:
+  - "Identify the error and capture transaction details"
+  - "Reproduce the error to confirm system-level cause"
+  - "Document with screenshots and error messages"
+  - "Submit the MISSO trouble ticket"
+  - "Capture the case number and assigned technician"
+  - "Track case status on a fixed cycle"
+  - "Escalate to MISSA at 5 working days without resolution"
+  - "Validate the fix on resolution"
+  - "File the case packet in the unit MISSO case register"
+  - "Document the resolution in the unit system log"
+relatedRoles:
+  marine: "/marines/admin-systems-management/misso-support-case-routing"
+  leader: "/leader/admin-systems-management/misso-support-case-routing"
+  commander: "/commander/admin-systems-management/misso-support-case-routing"
+source:
+  title: "MISSO Support Case Routing - MCAP Enclosure 6"
+  publisher: "Headquarters Marine Corps M&RA"
+---
+
+## Role and responsibility
+
+S-1 admin specialists own MISSO support case routing at the unit level. The S-1 clerk identifies system errors and submits the initial trouble ticket. The S-1 chief tracks open cases and escalates when MISSO defers to MISSA. The S-1 officer signs by direction on cases with downstream pay or readiness impact.
+
+Source documents flow from system error messages, EDFR rejection lists pointing to system defects, transaction reject codes, performance issues, and account lockouts. Tickets route to MISSO through the support portal. Escalations route from MISSO to MISSA per MCAP enclosure 6. Outputs include the case number, the resolution log, the system change request when filed, and the unit MISSO case register.
+
+MCAAT inspects the MISSO case register for documentation completeness, escalation timeliness, and resolution audit trail. Open cases past 30 days without escalation trigger findings. Escalate within 5 working days when MISSO does not resolve.
+
+## Trigger events
+
+- System error message blocks transaction submission.
+- EDFR rejection points at a system defect, not a data error.
+- Account lockout requires reset beyond local capability.
+- Performance issue causing slow response or intermittent failure.
+- New system feature does not function per the user manual.
+- Bulk transaction batch fails during processing.
+- Security event requires MISSO and MISSA coordination.
+
+## Processing workflow
+
+1. Identify the error. Capture the error message, transaction code, EDIPI, and time of occurrence. The S-1 clerk runs initial documentation.
+2. Reproduce the error. Repeat the action to confirm the error sits at system level, not at user level.
+3. Document with screenshots. Capture system messages, transaction state, and any related EDFR output per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> error reporting format.
+4. Submit the MISSO trouble ticket. Route through the MISSO support portal with all documentation attached per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
+5. Capture the case number. Log the case number, submission date, and assigned MISSO technician in the unit MISSO case register.
+6. Track the case. Pull case status updates on a fixed cycle (daily for active cases, weekly for deferred). The S-1 chief tracks.
+7. Escalate to MISSA. When MISSO defers the case beyond 5 working days without resolution, escalate to the Manpower Information Systems Support Activity per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
+8. Validate the fix. On case resolution, repeat the original action and confirm the system behaves correctly. The S-1 clerk validates.
+9. File the case packet. Place the trouble ticket, case number, escalation log, and resolution confirmation in the unit MISSO case register.
+10. Document the resolution. When the resolution involves a workaround or a process change, brief the chain and document in the unit system log per MCO 5239.2C<Citation source="MCO 5239.2C" />.
+
+## Systems of record and forms
+
+### Systems
+
+- MISSO support portal. Online ticket submission and tracking.
+- MCTFS, UD-MIPS, MOL, RAPIDS. Source systems generating the errors routed.
+- Unit MISSO case register. Local register tracking every open and closed case.
+
+### Forms
+
+- MISSO Trouble Ticket Form. Standard ticket submission template.
+- Unit MISSO Case Register. Local register of cases.
+- Resolution Validation Log. Local log of fix validations.
+
+## Common pitfalls
+
+- Trouble ticket submitted without screenshots. MISSO closes the case for insufficient documentation. Capture screenshots at every error.
+- No escalation past 5 working days. The case lingers. Escalate at the 5-day mark per MCO 5000.14D<Citation source="MCO 5000.14D" />.
+- Case resolution not validated. The user assumes a fix without retest. Validate the fix by repeating the original action.
+- Resolution not documented in the unit system log. Knowledge stays with one clerk. Document at every resolution.
+- Local fix attempted without ticket. The unit recreates the workaround monthly. Submit a ticket on first occurrence.
+
+## Decision points
+
+- User error versus system error. The transaction rejects. The clerk reproduces the action. If the error reproduces across users, route to MISSO. If the error is single-user, run a record audit and retraining.
+- Local fix versus MISSO ticket. Account lockout resolves locally through password reset. System error requires a ticket. The S-1 chief routes per error type.
+- MISSA escalation timing. MISSO defers but does not close the case. Escalate at 5 working days regardless of MISSO comment per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
+
+## Authority
+
+This sub-page sits under MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6, which defines MISSO and MISSA support roles for trouble call routing. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 covers MOL trouble routing as part of administrator duties. MCO 5239.2C<Citation source="MCO 5239.2C" /> Marine Corps Cybersecurity Program governs documentation of system change requests.
+
+## Related references
+
+- MCO 5000.14D Marine Corps Administrative Procedures. MISSO and MISSA support roles at enclosure 6.
+- MCTFSPRIUM. Error reporting format and corrective transaction routing.
+- MCO 5239.2C Marine Corps Cybersecurity Program. Change request documentation.
+- NAVMC 3500.3E Manpower and Administration T-R Manual. Event code 0102-GENA-1015 covering trouble routing.

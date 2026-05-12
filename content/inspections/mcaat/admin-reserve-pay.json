@@ -1,0 +1,172 @@
+{
+  "track": "mcaat",
+  "programNumber": "admin",
+  "slug": "reserve-pay",
+  "section": "Admin",
+  "categoryLabel": "Reserve Pay",
+  "title": "Reserve Pay",
+  "summary": "MCAAT Admin checklist - Reserve Pay. 13 unique items across 1 audiences.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "applicabilityLevel": "Reporting Unit",
+  "lastVerified": "2026-05-10",
+  "source": {
+    "title": "MCAAT Admin Checklist - Reserve Pay",
+    "publisher": "Marine Corps Manpower and Reserve Affairs"
+  },
+  "subsections": [
+    {
+      "id": "02.0",
+      "title": "Reporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Is SGLI for SMCR Marines terminated IAW MCO 1741.8 and are supporting documents for SGLI termination maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "MCO 1741.8, Chap 7, para 5",
+            "MCTFSPRIUM, 8-80501",
+            "MARADMIN 601/24"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Are Audits conducted no earlier than 90 days prior to the commencement of AT period and files maintained in accordance with retention policies?",
+          "references": [
+            "MCTFSPRIUM, 12-120103"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Is the unit ensuring the traveler is submitting a completed travel voucher within 5 working days, from the end date of the orders?",
+          "references": [
+            "MCTFSPRIUM, 2-20103, 11-110301.4",
+            "FPM Volume 2 - Travel Policies Chapter 3 August 2023 3-18 B"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Are all In Progress Payments reported IAW applicable regulations and within 5 days of receiving an MROWS produced REP/DET Endorsement, Completed 1351-2, or DTS Voucher for period of duty? (Note: for non-reporting orders, a copy of signed orders or completed 1351-2 will serve as supporting documentation for reporting applicable IPP's)",
+          "references": [
+            "MCTFSPRIUM, 2-20103, 11-110301.4",
+            "MCO 1001R.1L w/ Ch 1, Ch 5, para 7",
+            "FPM Volume 2 - Travel Policies Chapter 3 August 2023 3-18 B"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Does the organization maintain and retain supporting documents for Annual Training on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol 1, Ch 9",
+            "SECNAV M-5210.1",
+            "MARADMIN 601/24"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Is Personnel Tempo reported IAW applicable regulations for ADOS and AT periods?",
+          "references": [
+            "MCTFSPRIUM, 9-91001"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "13",
+          "question": "Is the unit's Muster Manager researching and taking the appropriate actions to reconcile failed validation checks within 5 working days after exporting transactions into Unit Diary?",
+          "references": [
+            "MCO 1001R.1L, CH 5 Par 2.e, DM User Manual"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Is the unit submitting the completed travel claim to disbursing within 4 days of receiving the completed travel claim? (Note: a completed travel claim is identified as a unit forwarding a completed travel package to DO/FO for payment).",
+          "references": [
+            "MCTFSPRIUM, 2-20103, 11-110301.4",
+            "MCO 1001R.1L w/ Ch 1, Ch 5, para 7",
+            "FPM Volume 2 - Travel Policies Chapter 3 August 2023 3-18 B"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Does the organization maintain and retain supporting documents for ADOS on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol 1, Ch 9",
+            "SECNAV M-5210.1",
+            "MARADMIN 601/24"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Are Mobilization Audits reported no earlier than 90 days prior to commencement of the mobilization orders and files maintained in accordance with retention policies?",
+          "references": [
+            "MCTFSPRIUM, 12-120103"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Are drills certified and exported within 5 days of the drill(s) occurrence?",
+          "references": [
+            "DM User Manual",
+            "MCTFSPRIUM 2-20103"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Are unit Commanders publishing Mandatory Participation policy letter outlining SMCR participation requirements and criteria for granting RIDTs and excused absences from IDT and AT periods.",
+          "references": [
+            "MCO 1001R.1L, CH 7 Par 12, DODI 1215.13"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Is DMR or field rations reported IAW applicable regulations for Essential Unit Messing, Field Duty and members traveling together with no or limited reimbursement for ADOS and AT periods?",
+          "references": [
+            "DoDFMR Vol 7A, Chap 25, para 2.4",
+            "MCO 10110.47A, Ch 1, para 5b",
+            "FPM Vol 1 para(s) 060102; MCFTSPRIUM, 8-80402, 8-80403"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        }
+      ]
+    }
+  ]
+}

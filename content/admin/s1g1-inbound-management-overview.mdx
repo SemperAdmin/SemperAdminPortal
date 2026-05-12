@@ -1,0 +1,146 @@
+---
+title: "Inbound Management - S-1 Procedural Overview"
+slug: "overview"
+summary: "Process inbound Marines from receipt of orders through unit check-in, sponsor handoff, MCTFS join with KSD upload, EDFR reconciliation, OMPF Field Folder receipt, pay starts, and allowance initiation per MCO 1300.8 and MCTFSPRIUM."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-11"
+unitType: "s1-g1"
+topic: "inbound-management"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0170-PERA-2104"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 1300.8"
+billets: ["s-1-officer", "s-1-chief", "g-1-officer", "ipac-inbound-counselor"]
+gradesPerforming: ["Cpl", "Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 1300.8 Marine Corps Personnel Assignment Policy"
+  - "MCO P1070.12K Individual Records Administration Manual (IRAM)"
+  - "MCO P1070.12K Chapter 3 (OMPF Field Folder)"
+  - "MCO P1070.12K Chapter 6 (Page 11 Documentation)"
+  - "MCO 1320.11H Marine Corps Sponsorship Program"
+  - "MCO 5000.14D Marine Corps Administrative Procedures"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "DoDFMR Vol 7A Chapter 26 (Housing Allowances)"
+  - "DoDFMR Vol 7A Chapter 27 (Family Separation Allowance)"
+  - "DoDFMR Vol 7A Chapter 32 (Advance Pay)"
+  - "DoDFMR Vol 7A Chapter 47 (Servicemembers Group Life Insurance)"
+  - "DoDFMR Vol 7A Chapter 67 (COLA CONUS)"
+  - "DoDFMR Vol 7A Chapter 68 (COLA OCONUS)"
+  - "DODI 1341.13 SGLI Program"
+  - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+performanceSteps:
+  - "Receive the assignment from MCTFS gain notification or hand-carried orders"
+  - "Coordinate sponsor handoff per MCO 1320.11H"
+  - "Run the unit check-in per MCO 1300.8"
+  - "Build the KSD packet using MCTFSPRIUM codes"
+  - "Cut the UD-MIPS join transaction"
+  - "Pull EDFR within 24-48 hours and clear rejections"
+  - "Receive the OMPF Field Folder per MCO P1070.12K Chapter 3"
+  - "Audit the rebuilt ESR for AFADBD, PEBD, EAS, BAH, BAS, dependency"
+  - "Initiate pay starts and allowances per DoDFMR Vol 7A"
+  - "Cut the Page 11 documenting the inbound action"
+relatedRoles:
+  marine: "/marines/inbound-management/overview"
+  leader: "/leader/inbound-management/overview"
+  commander: "/commander/inbound-management/overview"
+source:
+  title: "Inbound Management - MCO 1300.8 and MCTFSPRIUM"
+  publisher: "Headquarters Marine Corps Manpower and Reserve Affairs"
+---
+
+## Role and responsibility
+
+The IPAC inbound counselor receives the inbound Marine, runs the join transaction in MCTFS through UD-MIPS, uploads the KSD packet per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> codes, and reconciles EDFR per MCO 1300.8<Citation source="MCO 1300.8" />. The S-1 chief tracks the inbound roster against the gain notifications and the actual reports. The S-1 officer signs by direction on the inbound package routing. The unit Sponsorship Coordinator coordinates the sponsor handoff per MCO 1320.11H<Citation source="MCO 1320.11H" />. The Marine reports to the unit S-1 with the orders package, the records, and the personal documents. The disbursing technician initiates pay starts and allowances per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" />.
+
+Source documents flow from the MCTFS gain notification, the Marine's hand-carried orders, the OMPF Field Folder routed from the losing unit per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 3, the CAC and DEERS enrollment, the dependency documents (marriage certificate, birth certificates), the dependency allowance package (BAH and FSA when applicable), the prior MCTFS pay history, and the sponsor coordination record per MCO 1320.11H. Inbound outputs include the executed MCTFS join with KSD upload, the cleared EDFR within 24-48 hours of join, the rebuilt ESR audit, the OMPF Field Folder secured at the unit, the BAH/BAS/COLA pay starts, the SGLI status review, the Page 11 documenting the inbound action per MCO P1070.12K Chapter 6, the unit check-in sheet, and the audit trail.
+
+Per MCO 1300.8, inbound check-in runs through the unit S-1 and the IPAC. Per MCO P1070.12K Chapter 3, the OMPF Field Folder transfers from the losing unit and the gaining S-1 secures the folder. Per MCO 1320.11H, the sponsor program supports inbound transition. Per MCTFSPRIUM, the MCTFS join transaction follows the personnel reporting instructions.
+
+## Sub-pages in this category
+
+- EDFR and Roster Reconciliation. The Enlisted Distribution and Forecast Reports (EDFR) cycle, alpha roster validation, and accountability against the unit gain.
+- MCTFS Join and KSD Upload. The UD-MIPS join transaction, the KSD packet per MCTFSPRIUM codes, and the diary certification.
+- OMPF and SRB Receipt. The OMPF Field Folder routing per MCO P1070.12K Chapter 3 and the Service Record Book (SRB) verification.
+- Pay Starts and Allowance Initiation. BAH per Vol 7A Chapter 26, BAS, COLA per Chapters 67 and 68, SGLI per Chapter 47 and DODI 1341.13, FSA per Chapter 27, and Advance Pay per Chapter 32.
+- Sponsor Handoff and Welcome Aboard. The sponsor coordination per MCO 1320.11H, the unit welcome aboard letter, and the family handoff to MCCS and IR&R.
+- Unit Check-In Procedures. The unit check-in sheet, the staff section route, the Marine's individual gear and clothing, and the initial S-1 brief.
+
+## Trigger events
+
+- MCTFS gain notification arrives at the gaining unit.
+- Inbound Marine arrives with hand-carried orders.
+- Sponsor coordination opens 30-60 days prior to arrival per MCO 1320.11H.
+- OMPF Field Folder receives at the gaining unit per MCO P1070.12K Chapter 3.
+- Dependency change accompanying the inbound triggers BAH and dependent allowance review.
+- OCONUS arrival triggers COLA OCONUS per DoDFMR Vol 7A Chapter 68.
+- New unit standup triggers initial inbound cycle.
+
+## Processing workflow
+
+1. Receive the assignment notification. The IPAC inbound counselor receives the MCTFS gain notification or the Marine's hand-carried orders.
+2. Coordinate sponsor handoff. Per MCO 1320.11H<Citation source="MCO 1320.11H" />, the Sponsorship Coordinator confirms the sponsor designation 30-60 days before arrival.
+3. Run the unit check-in. Per MCO 1300.8<Citation source="MCO 1300.8" />, the Marine reports to the S-1 and the chain. The S-1 clerk routes the check-in sheet through staff sections.
+4. Build the KSD packet. Per MCTFSPRIUM<Citation source="MCTFSPRIUM" />, the KSD packet carries the orders, the dependency documents, the CAC verification, the prior LES, the OMPF Field Folder receipt, and supporting transactions.
+5. Cut the UD-MIPS join transaction. Per Appendix E and MCTFSPRIUM, submit the join transaction with the KSD attached. The diary line certifies.
+6. Pull EDFR. Per MCO 1300.8, pull EDFR within 24-48 hours of the join. Clear any rejections within 5 working days.
+7. Receive the OMPF Field Folder. Per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 3, the OMPF Field Folder routes from the losing unit. The gaining S-1 secures the folder.
+8. Audit the ESR. Per MCO 1300.8 and MCTFSPRIUM, audit the rebuilt Electronic Service Record (ESR) for AFADBD, PEBD, EAS, BAH dependency, BAS, COLA, and entitlement state.
+9. Initiate pay starts and allowances. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapters 26 (BAH), 27 (FSA), 32 (Advance Pay), 47 (SGLI), 67 (COLA CONUS), and 68 (COLA OCONUS), initiate or continue pay actions.
+10. Cut the Page 11. Per MCO P1070.12K Chapter 6, cut a Page 11 documenting the inbound assignment.
+
+## Systems of record and forms
+
+### Systems
+
+- Marine Corps Total Force System (MCTFS). Master record holding the gain transaction and the rebuilt ESR.
+- UD-MIPS. Cuts join transactions per Appendix E.
+- EDFR. Surfaces diary rejections and roster reconciliation.
+- OMPF Field Folder. Holds the records routed from the losing unit per MCO P1070.12K Chapter 3.
+- Sponsor Coordinator File. Tracks sponsor designation per MCO 1320.11H.
+- MOL (Marine Online). Surfaces orders, LES, and entitlement data.
+- DEERS via RAPIDS. ID and dependency verification.
+
+### Forms
+
+- Unit Check-In Sheet. Local format documenting routing through staff sections.
+- KSD Packet. Per MCTFSPRIUM codes.
+- OMPF Field Folder Receipt. Per MCO P1070.12K Chapter 3.
+- NAVMC 118 (11) Administrative Remarks. Page 11 documenting inbound action per MCO P1070.12K Chapter 6.
+- BAH Dependency Documentation. Per DoDFMR Vol 7A Chapter 26.
+- FSA Documentation. Per Chapter 27.
+- SGLI Election Form (SGLV 8286). Per Chapter 47 and DODI 1341.13.
+
+## Common pitfalls
+
+- MCTFS join cut without KSD upload. Per MCTFSPRIUM<Citation source="MCTFSPRIUM" />, every join carries the KSD packet.
+- EDFR not pulled within 24-48 hours of join. Per MCO 1300.8<Citation source="MCO 1300.8" />, the EDFR cycle catches rejections early.
+- OMPF Field Folder not received from losing unit. Per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 3, the folder routes between units. Missing folders trigger reconstruction.
+- BAH dependency status not validated. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 26, the dependent status drives the BAH rate.
+- SGLI election not reviewed. Per Chapter 47 and DODI 1341.13, SGLI elections review at every inbound.
+- Page 11 documenting the inbound omitted. Per MCO P1070.12K Chapter 6, every personnel action records.
+- Sponsor handoff skipped. Per MCO 1320.11H<Citation source="MCO 1320.11H" />, the sponsor coordination supports transition.
+- ESR audit skipped. Per MCO 1300.8 and MCTFSPRIUM, the rebuilt ESR audit catches data errors.
+- COLA pay action missing on OCONUS arrival. Per Chapter 68, OCONUS COLA initiates on arrival.
+
+## Decision points
+
+- Join effective date. Per MCO 1300.8 and the report date on the orders, the effective date drives MCTFS join and pay actions.
+- Advance Pay request. Per DoDFMR Vol 7A Chapter 32, the Marine requests advance pay. The S-1 supports the package.
+- BAH rate selection. Per Chapter 26, the dependent status, the duty location, and the grade drive the BAH rate.
+- OMPF Field Folder reconstruction. When the losing unit cannot transfer the folder, the gaining S-1 reconstructs per MCO P1070.12K Chapter 3.
+- SGLI election change. Per Chapter 47 and DODI 1341.13, the Marine adjusts SGLI elections during the inbound process.
+
+## Authority
+
+This category sits under MCO 1300.8<Citation source="MCO 1300.8" /> Marine Corps Personnel Assignment Policy with MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 3 (OMPF Field Folder) and Chapter 6 (Page 11). MCO 1320.11H<Citation source="MCO 1320.11H" /> covers Sponsorship. MCO 5000.14D<Citation source="MCO 5000.14D" /> covers S-1 inbound responsibilities. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> covers MCTFS join, KSD, and diary procedures. DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapters 26, 27, 32, 47, 67, and 68 cover pay and allowance initiation. DODI 1341.13 covers SGLI. The processing workflow maps to NAVMC 3500.3E T-R event 0170-PERA-2104.
+
+## Related references
+
+- MCO 1300.8 and MCTFSPRIUM. Personnel assignment and reporting framework.
+- MCO P1070.12K Chapters 3 and 6. OMPF Field Folder and Page 11.
+- MCO 1320.11H. Sponsorship.
+- DoDFMR Vol 7A Chapters 26, 27, 32, 47, 67, 68. Pay and allowance initiation.
+- DODI 1341.13. SGLI.
+- NAVMC 3500.3E. T-R event 0170-PERA-2104.

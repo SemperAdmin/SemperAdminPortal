@@ -1,0 +1,115 @@
+---
+title: "Direct Deposit Administration - S-1 Procedural Page"
+slug: "direct-deposit-administration"
+summary: "Establish, change, and verify Direct Deposit accounts through MOL self-service or MCTFS transactions, and reconcile against the UEC report."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-10"
+unitType: "s1-g1"
+topic: "military-pay-processing"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0111-PERA-1002"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "DODFMR Vol 7A"
+billets: ["s-1-clerk", "s-1-chief", "g-1-officer", "ipac-pay-clerk"]
+gradesPerforming: ["LCpl", "Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "DODFMR Vol 7A DoD Military Pay Policy"
+  - "DODFMR Vol 7A Military Pay Policy"
+  - "MCO 5000.14D Marine Corps Administrative Procedures"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "31 USC 3332 Required Direct Deposit"
+  - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+performanceSteps:
+  - "Receive the Direct Deposit setup or change request"
+  - "Verify the Marine identity"
+  - "Validate the routing and account numbers"
+  - "Process the change in MOL or UD-MIPS"
+  - "Submit the corresponding MCTFS transaction"
+  - "Pull the next UEC for Direct Deposit anomalies"
+  - "Audit the next LES for the corrected deposit"
+  - "Reconcile any rejected deposit with the IPAC pay clerk"
+  - "Document the change in the unit pay log"
+  - "Brief the Marine on payday timeline impact"
+relatedRoles:
+  marine: "/marines/military-pay-processing/direct-deposit-administration"
+  leader: "/leader/military-pay-processing/direct-deposit-administration"
+  commander: "/commander/military-pay-processing/direct-deposit-administration"
+source:
+  title: "Direct Deposit Administration - MCAP Enclosure 5 and DODFMR Vol 7A"
+  publisher: "Headquarters Marine Corps M&RA"
+---
+
+## Role and responsibility
+
+The S-1 clerk and the IPAC pay clerk own Direct Deposit setup and change processing. The S-1 chief tracks Direct Deposit anomalies through the UEC report per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 5 paragraph 3.b. The Marine carries individual responsibility for accurate routing and account information.
+
+Source documents flow from the Marine's voided check or bank verification letter, the MCTFS pay record, and MOL self-service. Direct Deposit transactions land in MCTFS as pay account changes. Outputs include the updated pay record, the MOL profile update, the next pay cut LES showing the new deposit, and the unit pay log entry.
+
+Per 31 USC 3332<Citation source="31 USC 3332" />, all federal payments require electronic funds transfer (Direct Deposit) absent a documented exception. DODFMR Vol 7A<Citation source="DODFMR Vol 7A" /> sets the Marine Corps implementation. Direct Deposit failure drops pay to a paper check delay or check holding pending resolution.
+
+## Trigger events
+
+- Inbound Marine without an established Direct Deposit account.
+- Marine changes financial institution.
+- Marine adds or modifies allotment splits.
+- Direct Deposit rejects on a payday cycle.
+- Bank account closed without notification triggers UEC anomaly.
+- Marine returns from deployment with new banking arrangement.
+- DFAS notification of a returned deposit.
+
+## Processing workflow
+
+1. Receive the request. The S-1 clerk pulls the Direct Deposit setup or change request from the Marine. Capture voided check or bank verification letter.
+2. Verify the Marine identity. Cross-check EDIPI and CAC against the request.
+3. Validate routing and account numbers. Verify routing number against the FDIC database. Validate account number format against the bank type.
+4. Process the change. The Marine processes a self-service change in MOL or the S-1 clerk submits through UD-MIPS.
+5. Submit the MCTFS transaction. Per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> Direct Deposit transaction format. The S-1 chief reviews and submits.
+6. Pull the next UEC. Watch for Direct Deposit anomalies per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 5 paragraph 3.b.
+7. Audit the next LES. Confirm the corrected deposit reflects on the next pay cut LES.
+8. Reconcile rejected deposits. Coordinate with the IPAC pay clerk on rejections per DODFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 32 (Direct Deposit and EFT noted at paragraph 3.0 for centrally paid advance PCS).
+9. Document the change. Capture in the unit pay log with effective date and verification reference.
+10. Brief the Marine on timeline. Direct Deposit changes typically post one pay cycle after submission. Inform the Marine.
+
+## Systems of record and forms
+
+### Systems
+
+- MCTFS. Master pay record holding Direct Deposit account.
+- MOL. Self-service Direct Deposit change interface.
+- UD-MIPS. S-1 clerk submission path for Direct Deposit transactions.
+- DFAS. Receives Direct Deposit transmissions and reports rejections.
+
+### Forms
+
+- Voided Check or Bank Verification Letter. Source document for routing and account.
+- SF 1199A Direct Deposit Sign-Up Form. Used for non-MOL setup.
+- Unit Pay Log Entry. Local register tracking Direct Deposit changes.
+
+## Common pitfalls
+
+- Direct Deposit set up with wrong routing number. Pay rejects. Verify routing against FDIC database before submission.
+- Account closed by the Marine without notification. The deposit rejects on payday. Pull UEC each cycle per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 5.
+- Inbound Marine arrives without Direct Deposit. The first paycheck delays or routes to paper check. Set up at the inbound brief.
+- Allotment split conflicts with primary deposit. The pay rejects. Validate splits against MCTFS allotment rules per DODFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 40 General Provisions Governing Allotments and Chapter 42 Discretionary Allotments.
+- Direct Deposit change posted in MOL but not reflected on next LES. The change did not propagate. Submit via UD-MIPS as backup per MCTFSPRIUM<Citation source="MCTFSPRIUM" />.
+
+## Decision points
+
+- Hardship exception to mandatory Direct Deposit. Per 31 USC 3332<Citation source="31 USC 3332" />, hardship exceptions exist but require documentation. The S-1 officer routes the exception per DODFMR Vol 7A<Citation source="DODFMR Vol 7A" />.
+- Joint account setup. The Marine sets up a joint account with a spouse. Validate the account allows the Marine as the primary holder.
+- Rejected deposit response. The deposit rejects three consecutive cycles. Per DODFMR Vol 7A<Citation source="DODFMR Vol 7A" />, the pay system reverts to paper check pending resolution. The S-1 officer coordinates with the IPAC pay clerk.
+
+## Authority
+
+This sub-page sits under DODFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Marine Corps Pay Instruction Chapter 4 (Direct Deposit) and DODFMR Vol 7A<Citation source="DODFMR Vol 7A" /> military pay policy. Statutory authority sits at 31 USC 3332<Citation source="31 USC 3332" /> requiring electronic funds transfer for federal payments. MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 5 paragraph 3.b establishes IPAC duty to monitor Direct Deposit through UEC. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> defines the transaction format. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0111-PERA-1002 covers Total Force pay determination.
+
+## Related references
+
+- DODFMR Vol 7A. Direct Deposit rules per applicable chapter.
+- DODFMR Vol 7A Military Pay Policy. DoD-level pay rules.
+- MCO 5000.14D Marine Corps Administrative Procedures. UEC monitoring at enclosure 5.
+- MCTFSPRIUM. Direct Deposit transaction format.
+- 31 USC 3332. Statutory mandate for electronic funds transfer.
+- NAVMC 3500.3E Manpower and Administration T-R Manual. Event 0111-PERA-1002 governs pay determination.

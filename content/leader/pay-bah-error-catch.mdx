@@ -1,0 +1,122 @@
+---
+title: "BAH Error Catch"
+slug: "bah-error-catch"
+summary: "BAH errors compound monthly. Wrong rate, wrong location, wrong dependent count. Section verifies LES against MCTFS quarterly. Catch the error early or the Marine carries months of underpayment."
+roles: ["leader", "commander", "admin"]
+lastVerified: "2026-05-06"
+topic: "pay"
+order: 2
+sourcePolicy: "DoD FMR Volume 7A"
+sourceChapter: "26"
+performanceSteps:
+  - "Pull each Marine's LES quarterly"
+  - "Cross-check BAH rate, location, and dependent driver"
+  - "Identify discrepancies"
+  - "Walk the Marine to S-1 for correction"
+  - "Verify on next LES"
+references:
+  - "DoD FMR Volume 7A Chapter 26 BAH"
+  - "MCO 7220.65 Pay and Allowances"
+relatedRoles:
+  marine: "/marines/bah"
+  admin: "/admin/pac/bah/bah-overview"
+source:
+  title: "DoD FMR Volume 7A Chapter 26"
+  publisher: "DoD"
+---
+
+## What Drives BAH
+
+Three fields drive the BAH rate.
+
+- Marine's grade.
+- Marine's BAH location code.
+- With-dependent or without-dependent flag.
+
+A wrong field anywhere produces a wrong rate. The error compounds every pay period until corrected.
+
+## Annual BAH Recertification
+
+Marines are required to recertify BAH on an annual cycle. <Citation source="MCO 7220 series" /> Failure to recertify produces benefit suspension and overpayment recovery exposure.
+
+For Marines with secondary dependents driving the BAH rate, the recertification cadence is annual per DFAS Secondary Dependency program rules. The submission window opens 90 days before the existing certification's expiration. <Citation source="DFAS Secondary Dependency program" /> The dedicated Secondary Dependency leaf in this branch covers the package mechanics.
+
+For Marines with primary dependents (spouse, unmarried child under 21), the BAH driver verifies through standard NAVMC 10922<Citation source="NAVMC 10922" /> dependency status. Annual recertification still applies in the unit's broader audit cadence.
+
+Track each Marine's BAH certification status and surface expirations into the section's quarterly LES audit.
+
+## What to Check on Each LES
+
+For each Marine, verify quarterly.
+
+- BAH rate matches expected for grade, location, and dependent status.
+- BAH location code matches duty station.
+- Dependent driver matches dependent count on MCTFS and DEERS.
+- Effective date matches the most recent change driver.
+
+A Marine PCSed three months ago with old BAH location is a Marine losing money every month.
+
+## Cross-Check Sources
+
+| Field | Source | LES |
+|---|---|---|
+| Grade | MCTFS | Verify rank pay matches |
+| Location | Duty station orders | Verify location code |
+| Dependent flag | DEERS, NAVMC 10922<Citation source="NAVMC 10922" /> | Verify dependent driver |
+
+A discrepancy at any source flags the package for correction.
+
+## Common Error Patterns
+
+- BAH location not updated post-PCS.
+- Dependent flag not set after marriage or first child.
+- Dependent flag stuck at with-dependent after divorce or dependent loss.
+- BAH location set to old housing area after a move within the same duty station.
+- Rate calculated at wrong grade after promotion or demotion.
+
+Each pattern surfaces with quarterly checks. Each costs the Marine in real dollars.
+
+## Walking the Correction
+
+When you identify the error.
+
+- Document the error with LES and source documentation.
+- Walk the Marine to S-1.
+- Submit the correction request.
+- Track to closure.
+- Verify on the next LES.
+
+Retroactive correction usually applies. The Marine receives the back pay in a single LES line item.
+
+## Briefing the Marine
+
+The Marine should self-verify LES every payday.
+
+- Review the BAH line.
+- Match against expected.
+- Report discrepancies same day.
+
+A Marine who reviews LES every payday catches errors faster than your quarterly check.
+
+## When the Error Is Old
+
+A Marine who has carried wrong BAH for 12 months.
+
+- The retroactive correction goes back to the start of the error.
+- The Marine receives back pay.
+- The chain documents the source of the error.
+- Section adjusts the audit cadence to catch it sooner next time.
+
+## Common BAH Catch Failures
+
+- Quarterly LES check skipped.
+- Marine never briefed on self-verification.
+- Correction submitted without source documentation.
+- Correction routed but section never verifies the next LES.
+- Pattern errors (multiple Marines, same fix path) not surfaced as systemic.
+
+## Where to Go Next
+
+- Allotment review for the parallel pay verification.
+- Pay problems escort for the broader pay error walk-through.
+- MCTFS review for the personnel side of the cross-check.

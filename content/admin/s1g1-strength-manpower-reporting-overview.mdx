@@ -1,0 +1,121 @@
+---
+title: "Strength and Manpower Reporting - S-1 Procedural Page"
+slug: "overview"
+summary: "Manage command staffing, T-O and T-E change requests, personnel readiness data, and the manning and staffing process."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-10"
+unitType: "s1-g1"
+topic: "strength-manpower-reporting"
+function: "MPMN"
+skillLevel: 2000
+trEventCode: "0102-MPMN-1001"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 1300.8"
+billets: ["s-1-chief", "g-1-officer", "manpower-officer"]
+gradesPerforming: ["Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 1300.8 Marine Corps Personnel Assignment Policy"
+  - "MCO 5311.1E Total Force Structure Process"
+  - "MCO 5000.14D Marine Corps Administrative Procedures"
+  - "MCO 3000.13 Marine Corps Unit Readiness Reporting"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+performanceSteps:
+  - "Pull the unit T-O from TFSMS"
+  - "Reconcile assigned strength against the T-O"
+  - "Submit Table of Organization and Equipment Change Request (TOECR) for structure changes"
+  - "Validate personnel readiness data each cycle"
+  - "Cut strength reports through UD-MIPS"
+  - "Manage internal assignments against BIC fill"
+  - "Coordinate with MMEA on manning gaps"
+  - "Brief the commander on manning posture"
+  - "Track grade and MOS gaps against the T-O"
+  - "Submit Strength Reduction or Augmentation requests"
+  - "Validate civilian personnel coverage where billet calls"
+  - "Close the cycle with a signed manning roster"
+relatedRoles:
+  marine: "/marines/strength-manpower-reporting/overview"
+  leader: "/leader/strength-manpower-reporting/overview"
+  commander: "/commander/strength-manpower-reporting/overview"
+source:
+  title: "Strength and Manpower Reporting - NAVMC 3500.3E T-R Events"
+  publisher: "Headquarters Marine Corps M&RA"
+---
+
+## Role and responsibility
+
+The 0170 Manpower Officer owns strength and manpower reporting at the unit and command level. The S-1 chief supervises strength accounting transactions and the manning roster. The S-1 officer signs the manning brief to the commander. The G-1 manpower officer at MEF level coordinates structure-level decisions with HQMC manpower.
+
+Source documents flow from the unit Table of Organization in TFSMS, MCTFS strength pulls, MMEA tasking, and unit-level personnel actions. Manpower transactions land in TFSMS for structure changes and in UD-MIPS for individual assignments. Outputs include the assigned strength roster, the T-O fill picture, the TOECR submissions, and the personnel readiness data feeding readiness reports.
+
+MCAAT inspects the manning roster against TFSMS, the BIC fill picture, the TOECR submission log, and the readiness report data. Stale T-O assignments, unfilled BICs without manning gap reports, and unsupported readiness data trigger findings. Reconcile manning to TFSMS at every reporting cycle.
+
+## Trigger events
+
+- Inbound or outbound transaction changing assigned strength.
+- Annual T-O refresh window opens.
+- Structure change requirement triggers TOECR.
+- Promotion or demotion shifting grade fill against the T-O.
+- Readiness reporting cycle requires personnel readiness data.
+- MMEA tasking arrives sourcing personnel from the unit.
+- BIC vacancy reaches the manning gap threshold.
+
+## Processing workflow
+
+1. Pull the unit T-O from TFSMS. Generate the current T-O with grade, MOS, and BIC structure. The S-1 chief pulls.
+2. Reconcile assigned strength. Cross-check assigned Marines against T-O BICs. Flag duplicates, vacancies, and grade-MOS mismatches per MCO 1300.8<Citation source="MCO 1300.8" /> Chapter 4.
+3. Submit TOECR for structure changes. Build the Table of Organization and Equipment Change Request through the manpower channel per MCO 5311.1E<Citation source="MCO 5311.1E" />.
+4. Validate personnel readiness data. Pull readiness data each cycle and validate against MCTFS strength and T-O fill per MCO 3000.13<Citation source="MCO 3000.13" />.
+5. Cut strength reports. Submit strength accounting transactions through UD-MIPS per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> strength reporting format.
+6. Manage internal assignments. Match Marines to BICs by grade, MOS, and date of rank. The S-1 chief routes the assignment through the operations officer.
+7. Coordinate with MMEA. Submit manning gap reports for unfilled critical BICs. Track MMEA replacement actions.
+8. Brief the commander. Present the manning posture on a fixed cycle. Cover assigned strength, T-O fill, gaps, and grade or MOS imbalances.
+9. Track grade and MOS gaps. Maintain a rolling gap report. Notify the chain on every change.
+10. Submit Strength Reduction or Augmentation requests. Route through the manpower channel when structure-level adjustment is required per MCO 5311.1E<Citation source="MCO 5311.1E" />.
+11. Validate civilian personnel coverage. For billets calling for GS or FWS civilians, verify the civilian fill picture and coordinate with the local HRO.
+12. Close the cycle. Sign the manning roster, the TOECR log, and the personnel readiness data submission. The S-1 officer signs.
+
+## Systems of record and forms
+
+### Systems
+
+- TFSMS. Master T-O and T-E system holding the structure baseline.
+- MCTFS. Master personnel record reconciled against TFSMS.
+- UD-MIPS. Cuts and certifies strength accounting transactions.
+- DRRS-MC. Defense Readiness Reporting System holding readiness reports.
+- MOL. Surfaces personnel data and assignments to the Marine.
+
+### Forms
+
+- TOECR. Table of Organization and Equipment Change Request.
+- Manning Gap Report. Local form documenting unfilled critical BICs.
+- Personnel Readiness Data Submission. Periodic submission feeding DRRS-MC.
+- Internal Assignment Order. Local form documenting BIC assignment within the unit.
+
+## Common pitfalls
+
+- T-O fill picture stale. The TFSMS picture diverges from MCTFS assignments. Reconcile each cycle by exception.
+- TOECR submitted without operations endorsement. The manpower channel rejects. Route every TOECR through operations before manpower.
+- Manning gap report skipped. MMEA does not source replacements because the gap is not on record. Submit gap reports on a fixed cycle.
+- Personnel readiness data unsupported by MCTFS pull. MCAAT writes a finding for unsupported readiness reporting. Tie every readiness data point to an MCTFS pull date.
+- Internal assignment outside grade or MOS rules. The Marine fills a billet outside the assignment policy. The 0170 officer authorizes only after a documented exception per MCO 1300.8<Citation source="MCO 1300.8" />.
+
+## Decision points
+
+- TOECR routing. Structure change is local (BIC realignment) or HQMC-level (T-O modification). The 0170 Manpower Officer routes through the right channel per MCO 5311.1E<Citation source="MCO 5311.1E" />.
+- Grade or MOS mismatch acceptance. The Marine assigned to the BIC is one grade lower or holds a feeder MOS. The S-1 officer accepts the fill on a documented exception or routes for replacement.
+- Manning gap escalation. The gap exceeds the readiness threshold. The S-1 officer escalates to the commander and to MMEA per MCO 3000.13<Citation source="MCO 3000.13" />.
+
+## Authority
+
+This category sits under MCO 1300.8<Citation source="MCO 1300.8" /> Marine Corps Personnel Assignment Policy and MCO 5311.1E<Citation source="MCO 5311.1E" /> Total Force Structure Process, with S-1 responsibilities defined at MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 4. Readiness reporting routes through MCO 3000.13<Citation source="MCO 3000.13" /> Marine Corps Unit Readiness Reporting. The processing workflow maps to NAVMC 3500.3E T-R events 0102-MPMN-1001 Supervise command staffing, 0102-MPMN-1002 Process Table of Organization and Equipment Change Request, 0102-MPMN-1003 Verify personnel readiness data, 0102-MPMN-1005 Analyze Manpower Systems Data, and 0102-MPMN-2202 Manage the manning and staffing process. No MCAAT track maps directly to this category. The T-R Manual sets the audit baseline.
+
+## Related references
+
+- MCO 1300.8 Marine Corps Personnel Assignment Policy. Sets assignment rules at the BIC and grade level.
+- MCO 5311.1E Total Force Structure Process. TFSMS, T-O, and TOECR rules.
+- MCO 3000.13 Marine Corps Unit Readiness Reporting. Readiness reporting cycle and personnel data.
+- MCO 5000.14D Marine Corps Administrative Procedures. Defines S-1 manpower responsibilities.
+- MCTFSPRIUM. Strength accounting transaction format.
+- NAVMC 3500.3E Manpower and Administration T-R Manual. Event codes 0102-MPMN-1001 through 1005 and 2202 governing strength and manpower reporting.

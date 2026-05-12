@@ -1,0 +1,115 @@
+---
+title: "Advance Pay and Emergency Payments - S-1 Procedural Page"
+slug: "advance-pay-and-emergency-payments"
+summary: "Process Advance Pay on PCS, partial payments, local payments, and emergency payments per DoDFMR Vol 7A Chapter 32 with repayment schedule, eligibility validation, and disbursing coordination."
+roles: ["admin", "leader"]
+lastVerified: "2026-05-11"
+unitType: "s1-g1"
+topic: "military-pay-processing"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0170-PERA-2004"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "DoDFMR Vol 7A"
+billets: ["s-1-officer", "s-1-chief", "ipac-pay-clerk", "disbursing-technician"]
+gradesPerforming: ["Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "DoDFMR Vol 7A Chapter 32 (Advance, Local, Partial, and Emergency Pay)"
+  - "DoDFMR Vol 5 Chapter 9 (Disbursements)"
+  - "MCO 7300.21B Marine Corps Financial Management SOP Manual"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+performanceSteps:
+  - "Receive the Advance Pay or emergency payment request"
+  - "Validate eligibility per DoDFMR Vol 7A Chapter 32"
+  - "Confirm the situation supports the payment type"
+  - "Build the KSD packet"
+  - "Cut the pay action in UD-MIPS"
+  - "Coordinate disbursement with disbursing technician per Vol 5 Chapter 9"
+  - "Set the repayment schedule per Chapter 32"
+  - "Verify LES reflects the payment and the repayment deduction"
+  - "Track repayment to completion"
+  - "Document the action on Page 11 when adverse or substantive"
+relatedRoles:
+  marine: "/marines/military-pay-processing/advance-pay-and-emergency-payments"
+  leader: "/leader/military-pay-processing/advance-pay-and-emergency-payments"
+  commander: "/commander/military-pay-processing/advance-pay-and-emergency-payments"
+source:
+  title: "Advance Pay and Emergency Payments - DoDFMR Vol 7A Chapter 32"
+  publisher: "Office of the Under Secretary of Defense (Comptroller)"
+---
+
+## Role and responsibility
+
+The Marine requests Advance Pay on PCS per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 32 (Advance, Local, Partial, and Emergency Pay). The IPAC pay clerk processes the request, validates eligibility, and cuts the pay action through UD-MIPS. The disbursing technician disburses per DoDFMR Vol 5 Chapter 9 and MCO 7300.21B<Citation source="MCO 7300.21B" />. The S-1 chief tracks repayment against the schedule. The unit commander signs on the Advance Pay request when required per command policy. The S-1 officer signs by direction on routine routing.
+
+Source documents flow from the Marine's Advance Pay request, the PCS orders for PCS advance, the financial hardship documentation for emergency payment, the prior MCTFS pay record, the repayment schedule per Chapter 32, and the disbursing approval per DoDFMR Vol 5 Chapter 9. Outputs include the disbursed Advance Pay or emergency payment, the documented KSD packet, the verified LES with the disbursement and the repayment schedule, the tracked repayment to completion, the Page 11 entry when applicable per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6 (substantive adverse outcomes only), and the audit trail.
+
+Per DoDFMR Vol 7A Chapter 32, Advance Pay supports PCS travel and household goods movement costs. Repayment runs through pay deductions over the agreed schedule (typically 12 months for PCS Advance Pay). Local, partial, and emergency payments cover immediate needs when the regular pay cut does not align with the Marine's situation.
+
+## Trigger events
+
+- PCS orders cut triggering Advance Pay request.
+- Marine experiences financial hardship triggering emergency payment request.
+- Mid-month pay shortfall triggering partial payment request.
+- Overseas pay cycle requires local payment per Chapter 32.
+- Repayment schedule on existing Advance Pay nears completion.
+- Failed repayment deduction triggers correction.
+
+## Processing workflow
+
+1. Receive the request. The Marine submits the Advance Pay or emergency payment request through the S-1.
+2. Validate eligibility. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 32, PCS Advance Pay applies to PCS travel. Emergency payment applies to demonstrated financial hardship. Partial pay applies to mid-month shortfall. Local payment applies to overseas locations or when regular pay does not reach the Marine.
+3. Confirm the situation supports the payment type. The orders or hardship documentation drives the type.
+4. Build the KSD packet. Per MCTFSPRIUM<Citation source="MCTFSPRIUM" />, the packet carries the request, supporting orders or hardship documentation, and the prior pay history.
+5. Cut the pay action in UD-MIPS. Per Appendix E, submit the transaction at the appropriate code.
+6. Coordinate disbursement. Per DoDFMR Vol 5 Chapter 9 and MCO 7300.21B<Citation source="MCO 7300.21B" />, the disbursing technician disburses through EFT or check.
+7. Set the repayment schedule. Per Chapter 32, the Marine elects the repayment schedule up to the maximum window (typically 12 months for PCS Advance Pay).
+8. Verify LES. The next LES reflects the disbursement and the repayment deduction.
+9. Track repayment. The S-1 chief tracks the repayment cycle against the schedule. Failed deductions route to correction.
+10. Document on Page 11 when applicable. Per MCO P1070.12K Chapter 6, adverse outcomes (debt arising from failed repayment) record on Page 11.
+
+## Systems of record and forms
+
+### Systems
+
+- Marine Corps Total Force System (MCTFS). Holds advance and repayment record.
+- UD-MIPS. Cuts pay transactions per Appendix E.
+- Disbursing System. Per DoDFMR Vol 5 Chapter 9 and MCO 7300.21B.
+- LES. Validates disbursement and repayment.
+- DFAS pay processing.
+
+### Forms
+
+- Advance Pay Request. Per DoDFMR Vol 7A Chapter 32.
+- Emergency Payment Request. Local format with hardship documentation.
+- Repayment Schedule. Per Chapter 32.
+- KSD Packet. Per MCTFSPRIUM.
+
+## Common pitfalls
+
+- Advance Pay requested without PCS orders. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 32, PCS Advance Pay ties to PCS orders.
+- Emergency payment processed without hardship documentation. Per Chapter 32, the request carries supporting evidence.
+- Repayment schedule not set at disbursement. Per Chapter 32, the schedule sets at the time of the advance.
+- Failed repayment deduction not surfaced. The S-1 chief tracks against the LES.
+- Repayment past the maximum window. Per Chapter 32, the window has a cap.
+- Multiple concurrent Advance Pays without cap review. Per Chapter 32, concurrent advances reach a cap.
+
+## Decision points
+
+- Advance Pay amount. Per Chapter 32, the Marine elects the amount up to the statutory cap based on the PCS travel requirements.
+- Repayment schedule. The Marine elects the schedule up to the maximum window.
+- Local versus partial pay. Local pay applies to overseas locations where regular pay does not reach. Partial pay applies to mid-month shortfall.
+- Emergency payment scope. Per Chapter 32, the hardship documentation drives the scope.
+
+## Authority
+
+This sub-page sits under DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 32 (Advance, Local, Partial, and Emergency Pay). DoDFMR Vol 5 Chapter 9 covers disbursements. MCO 7300.21B<Citation source="MCO 7300.21B" /> covers Marine Corps financial management procedures. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> covers MCTFS pay transactions. The processing workflow maps to NAVMC 3500.3E T-R event 0170-PERA-2004.
+
+## Related references
+
+- DoDFMR Vol 7A Chapter 32. Advance and emergency payment framework.
+- DoDFMR Vol 5 Chapter 9. Disbursements.
+- MCO 7300.21B. Marine Corps financial management SOP.
+- MCTFSPRIUM. MCTFS transactions.
+- NAVMC 3500.3E. T-R event 0170-PERA-2004.

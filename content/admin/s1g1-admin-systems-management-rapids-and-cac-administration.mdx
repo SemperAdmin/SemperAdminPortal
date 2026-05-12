@@ -1,0 +1,117 @@
+---
+title: "RAPIDS and CAC Administration - S-1 Procedural Page"
+slug: "rapids-and-cac-administration"
+summary: "Operate the RAPIDS workstation for CAC issuance, PIN reset, DEERS dependency update, and dependent enrollment."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-10"
+unitType: "s1-g1"
+topic: "admin-systems-management"
+function: "GENA"
+skillLevel: 2000
+trEventCode: "0102-GENA-1015"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 5000.14D"
+billets: ["rapids-operator", "s-1-clerk", "s-1-chief", "ipac-clerk"]
+gradesPerforming: ["LCpl", "Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 5000.14D Marine Corps Administrative Procedures"
+  - "MCO 5512.11D ID Cards for Members of the Uniformed Services"
+  - "DODI 1000.13 Identification Cards for Members of the Uniformed Services"
+  - "MCO 5239.2C Marine Corps Cybersecurity Program"
+  - "MCO P1070.12K Individual Records Administration Manual"
+  - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+performanceSteps:
+  - "Receive the CAC, PIN reset, or DEERS update request"
+  - "Verify identity through two forms of ID"
+  - "Pull current record state from DEERS"
+  - "Run the RAPIDS operation per request type"
+  - "Update DEERS for any dependency change"
+  - "Issue CAC or reset PIN per DODI 1000.13"
+  - "Log the transaction in the RAPIDS log"
+  - "Document the action in a Page 11 entry when required"
+  - "File supporting documents in the OMPF Field Folder"
+  - "Audit RAPIDS log monthly for completeness"
+relatedRoles:
+  marine: "/marines/admin-systems-management/rapids-and-cac-administration"
+  leader: "/leader/admin-systems-management/rapids-and-cac-administration"
+  commander: "/commander/admin-systems-management/rapids-and-cac-administration"
+source:
+  title: "RAPIDS and CAC Administration - DODI 1000.13 and MCO 5512.11D"
+  publisher: "Department of Defense"
+---
+
+## Role and responsibility
+
+The RAPIDS workstation operator (a certified clerk) owns RAPIDS and CAC operations at the unit or IPAC level. The S-1 chief supervises operator certification, transaction audit, and CAC accountability. The S-1 officer signs by direction on dependent enrollment exceptions. The unit security manager audits the RAPIDS log during the quarterly review.
+
+Source documents flow from CAC issuance requests, PIN reset requests, DEERS dependency change applications (NAVMC 10922), and dependent enrollment packets. RAPIDS actions touch DEERS for eligibility and PRIDE for CAC fabrication. Outputs include the issued CAC, the PIN reset confirmation, the updated DEERS record, and the RAPIDS log entry.
+
+MCAAT inspects the RAPIDS log for transaction completeness, identity verification documentation, and CAC accountability. Untrained operators, missing identity verification, and stale DEERS records trigger findings under DODI 1000.13<Citation source="DODI 1000.13" />. Verify identity at every transaction.
+
+## Trigger events
+
+- Inbound Marine needs initial CAC at join.
+- Existing CAC expires or is damaged.
+- Marine requests PIN reset following lockout.
+- New dependent (spouse, child) requires DEERS enrollment.
+- Dependent status change (divorce, death, age-out).
+- Marine separates and CAC requires return.
+- Reservist activates or deactivates triggering CAC status change.
+
+## Processing workflow
+
+1. Receive the request. Pull the CAC issuance request, PIN reset request, or DEERS update application. Cross-check EDIPI and request type. The RAPIDS operator runs receipt.
+2. Verify identity. Inspect two forms of ID per DODI 1000.13<Citation source="DODI 1000.13" /> Enclosure 3. One must be government-issued photo ID. The RAPIDS operator verifies.
+3. Pull current DEERS state. Run a DEERS query against EDIPI to confirm eligibility, dependency state, and benefit category per MCO 5512.11D<Citation source="MCO 5512.11D" />.
+4. Run the RAPIDS operation. Process the CAC issuance, PIN reset, or DEERS update through the RAPIDS workstation per the operator manual.
+5. Update DEERS. For dependency changes, post the update through RAPIDS. Confirm the update appears in DEERS within 24 hours.
+6. Issue CAC or reset PIN. Capture biometrics, photograph, and signature per DODI 1000.13<Citation source="DODI 1000.13" />. Issue the new CAC and capture the recovered CAC when applicable.
+7. Log the transaction. Record EDIPI, transaction type, date, time, and operator in the RAPIDS log.
+8. Document the action. Cut a Page 11 entry where a dependency change affects pay or benefits per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6.
+9. File supporting documents. Place the NAVMC 10922, marriage certificate, birth certificate, or other supporting documents in the OMPF Field Folder.
+10. Audit the RAPIDS log monthly. Reconcile transactions against supporting documents and DEERS state per MCO 5239.2C<Citation source="MCO 5239.2C" />. The S-1 chief signs.
+
+## Systems of record and forms
+
+### Systems
+
+- RAPIDS workstation. The issuing and DEERS update terminal.
+- DEERS. Eligibility and dependency database.
+- PRIDE. CAC fabrication backend.
+- MCTFS. Personnel record linked to DEERS dependency state.
+
+### Forms
+
+- DD Form 1172-2 Application for Identification Card. Required for CAC issuance.
+- NAVMC 10922 Dependency Application. Required for dependency add or change.
+- DD Form 2842 RAPIDS Workstation Form. Standard PIN reset and CAC operations.
+- Marriage Certificate, Birth Certificate, Divorce Decree. Supporting documents for dependency changes.
+- RAPIDS Log. Local log of every transaction.
+
+## Common pitfalls
+
+- Identity not verified with two forms of ID. The issuance violates DODI 1000.13<Citation source="DODI 1000.13" />. Capture two IDs at every operation.
+- Dependency change processed without supporting documents. DEERS update sits unsupported. Collect the certificate before processing per MCO 5512.11D<Citation source="MCO 5512.11D" />.
+- CAC recovered but not destroyed per protocol. Recovered CACs sit unsecured. Destroy per DODI 1000.13<Citation source="DODI 1000.13" /> recovery procedure.
+- Page 11 skipped on pay-affecting dependency change. The OMPF lands without record of the change. Cut the Page 11 at the moment of the RAPIDS update per MCO P1070.12K<Citation source="MCO P1070.12K" />.
+- RAPIDS log not audited monthly. Stale or duplicate transactions sit undetected. Audit at the monthly cycle.
+
+## Decision points
+
+- Dependent enrollment without primary documentation. The Marine arrives with a foreign marriage certificate not yet translated. The S-1 officer routes for translation before DEERS update per MCO 5512.11D<Citation source="MCO 5512.11D" />.
+- Damaged CAC versus lost CAC. A damaged CAC returns to the operator for replacement. A lost CAC requires a lost-CAC memorandum and a security manager review per DODI 1000.13<Citation source="DODI 1000.13" />.
+- Reservist CAC status. The reservist activates on Title 10 orders. The operator updates CAC duty status code at activation and again at deactivation per MCO 5512.11D<Citation source="MCO 5512.11D" />.
+
+## Authority
+
+This sub-page sits under DODI 1000.13<Citation source="DODI 1000.13" /> Identification Cards for Members of the Uniformed Services and MCO 5512.11D<Citation source="MCO 5512.11D" />. MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6 covers MISSO support for RAPIDS workstation issues. MCO 5239.2C<Citation source="MCO 5239.2C" /> Marine Corps Cybersecurity Program governs RAPIDS workstation operator access. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 covers RAPIDS administrator duties. MCO P1070.12K<Citation source="MCO P1070.12K" /> sets Page 11 documentation rules.
+
+## Related references
+
+- DODI 1000.13 Identification Cards for Members of the Uniformed Services. DoD-level rules for CAC issuance.
+- MCO 5512.11D ID Cards for Members of the Uniformed Services. Marine Corps implementation.
+- MCO 5000.14D Marine Corps Administrative Procedures. MISSO RAPIDS support.
+- MCO 5239.2C Marine Corps Cybersecurity Program. RAPIDS operator access.
+- MCO P1070.12K Individual Records Administration Manual. Page 11 documentation.
+- NAVMC 3500.3E Manpower and Administration T-R Manual. Event 0102-GENA-1015 RAPIDS rules.

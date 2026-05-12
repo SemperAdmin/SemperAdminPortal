@@ -1,0 +1,4 @@
+{
+  "$comment": "Manual overrides for the auto-imported reference manifest. Keys must be UPPERCASE with single spaces. Entries here win over the policy-index imports.",
+  "MARADMIN 015/20": "https://www.marines.mil/News/Messages/Messages-Display/Article/2055563/manpower-audit-advisory-1-20-requirement-for-using-the-official-military-person/"
+}

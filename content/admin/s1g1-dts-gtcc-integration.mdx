@@ -1,0 +1,133 @@
+---
+title: "DTS GTCC Integration - S-1 Procedural Page"
+slug: "gtcc-integration"
+summary: "Integrate the Government Travel Charge Card with DTS per MCO 4600.40C, DODI 5154.31 Volume 4, and DTS Regulations section 030604 covering IBA issuance, split disbursement, CBA reconciliation, and delinquency action."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-11"
+unitType: "s1-g1"
+topic: "dts"
+function: "OPER"
+skillLevel: 2000
+trEventCode: "0102-OPER-2002"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 4600.40C"
+billets: ["s-1-officer", "s-1-chief", "apc", "odta", "ao", "cba-s"]
+gradesPerforming: ["SSgt", "GySgt", "MSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 4600.40C Government Travel Charge Card Program (GTCCP) signed 12 Jan 2026"
+  - "MCO 4600.40C Enclosure 1 References"
+  - "MCO 4600.40C Enclosure 2 GTCCP Management Procedures, Appendices A through C"
+  - "DODI 5154.31 Volume 4 DoD Government Travel Charge Card (GTCC) Program"
+  - "DoD DTS Regulations section 030604 Payment by EFT and Split-Disbursement"
+  - "DoD DTS Regulations section 030602 Non-ATM Advances"
+  - "DoD DTS Regulations section 030603 Scheduled Partial Payments"
+  - "DoD DTS Regulations section 030402 Centrally Billed Account Specialist (CBA-S)"
+  - "MCO 4650.39A Chapter 1 paragraph 3 (ODTA)"
+  - "MCO 4650.39A Chapter 6 paragraph 5.a (Unsubmitted Voucher Report APC notification)"
+  - "Public Law 105-264 Travel and Transportation Reform Act of 1998"
+  - "5 U.S.C. 5701 Note"
+  - "10 U.S.C. 2784a Creditworthiness Evaluation"
+performanceSteps:
+  - "Coordinate IBA issuance for inbound travelers per DODI 5154.31 Vol 4"
+  - "Determine creditworthiness path or Restricted card per 10 USC 2784a"
+  - "Activate the GTCC before AO authorization approval per DTS Regs 030401.B.9"
+  - "Set split disbursement on the voucher per DTS Regs 030604"
+  - "Reconcile CBA invoices through the CBA-S per DTS Regs 030402"
+  - "Run delinquency review with the APC monthly"
+  - "Coordinate IBA delinquency notification with the AO and ODTA"
+  - "Document GTCC misuse through the chain of command"
+  - "Submit MCO 4600.40C required reports per Enclosure 2"
+  - "Process card cancellation on separation or removal"
+relatedRoles:
+  marine: "/marines/dts/gtcc-integration"
+  leader: "/leader/dts/gtcc-integration"
+  commander: "/commander/dts/gtcc-integration"
+source:
+  title: "DTS GTCC Integration - MCO 4600.40C and DODI 5154.31 Vol 4"
+  publisher: "Headquarters Marine Corps Programs and Resources (RFF)"
+---
+
+## Role and responsibility
+
+The Agency Program Coordinator (APC) runs the GTCC program at the unit per MCO 4600.40C<Citation source="MCO 4600.40C" /> Enclosure 2. The Centrally Billed Account Specialist (CBA-S) reconciles monthly CBA invoices against authorized expenses per DoD DTS Regulations section 030402. The Authorizing Official (AO) verifies the traveler's GTCC is activated before authorization approval per DTS Regs section 030401.B.9. The ODTA aligns DTS profiles with GTCC card status. The traveler holds personal responsibility for IBA use per MCO 4600.40C and pays undisputed charges by the due date. The unit commander enforces compliance, takes corrective action, and reports misuse, abuse, or fraud through the chain of command.
+
+Source documents flow from the GTCC application package, the creditworthiness evaluation per 10 U.S.C. 2784a, the IBA card issuance record, the DTS authorization with split disbursement set per section 030604, the voucher with the GTCC split lines, the CBA monthly invoice, the GTCC vendor delinquency report, the Unsubmitted Voucher Report per Chapter 6 paragraph 5.a, and the MCO 4600.40C required reports per Enclosure 2 Chapter 1. GTCC integration outputs include the issued IBA, the routed split disbursement on every voucher, the reconciled CBA invoice, the cleared delinquency, the misuse incident report through DISS, the cancelled card on separation, and the I through X reports required by MCO 4600.40C.
+
+Per DODI 5154.31 Vol 4<Citation source="DODI 5154.31" />, eligible members of the Military Services and DoD civilian employees receive an IBA pursuant to Public Law 105-264 and 5 U.S.C. 5701 Note. New IBA applicants undergo a creditworthiness evaluation per 10 U.S.C. 2784a. Applicants without an evaluation receive a Restricted card. The IBA covers official travel expenses. Personal credit cards are not authorized unless the traveler is exempt under the GTCC Regulation.
+
+## Trigger events
+
+- Inbound traveler arrives without an IBA.
+- TDY school or training selection triggers IBA review.
+- OCONUS PCS triggers IBA issuance per MARADMIN 478/24 for Entry Level Marines.
+- GTCC vendor delinquency notification arrives.
+- CBA monthly invoice arrives.
+- Unsubmitted Voucher Report cycle flags GTCC charges sitting without voucher.
+- Separation triggers card cancellation.
+- IGMC GTCC FA inspection or Defense Travel System FA inspection notice arrives.
+
+## Processing workflow
+
+1. Coordinate IBA issuance. Per DODI 5154.31 Vol 4<Citation source="DODI 5154.31" />, the APC processes the IBA application. Per 10 U.S.C. 2784a, new applicants receive a creditworthiness evaluation. Applicants without an evaluation receive a Restricted card.
+2. Activate the card. Per DoD DTS Regulations section 030401.B.9, the AO verifies the GTCC is activated before approval of travel. Per section 030408.A.6, the traveler verifies activation before authorization approval.
+3. Set split disbursement on the voucher. Per DTS Regs section 030604, the traveler with an IBA submits a voucher routing split disbursement to the GTCC vendor for expenses incurred during official travel. Remaining funds route to the traveler via EFT.
+4. Process Scheduled Partial Payments (SPP). Per DTS Regs section 030603, travel longer than 45 days supports an SPP request. After AO approval, DTS schedules a payment every 30 days to the IBA vendor to avoid account delinquency and suspension.
+5. Process Non-ATM Advances. Per DTS Regs section 030602, the traveler requests a non-ATM advance through the authorization. The AO approves at least 10 days before departure to support EFT to the traveler's financial institution.
+6. Reconcile CBA invoices. Per DTS Regs section 030402 and MCO 4600.40C<Citation source="MCO 4600.40C" /> Enclosure 2 Appendix C, the CBA-S reconciles the monthly CBA invoice against authorized expenses charged to CBAs. The CBA-S who certifies the invoice for payment carries Certifying Officer appointment.
+7. Run delinquency review. Per MCO 4600.40C<Citation source="MCO 4600.40C" /> Enclosure 2 Appendix B paragraph 4.b(1) and aging reports IV through IX, the APC pulls the IBA Listing Report monthly and the aging reports per the published cycle.
+8. Coordinate delinquency notification. Per Chapter 6 paragraph 5.a of MCO 4650.39A<Citation source="MCO 4650.39A" />, the ODTA notifies the AO and APC of outstanding travel vouchers. Voucher submission settles GTCC charges through split disbursement.
+9. Document misuse. Per MCO 4600.40C, the commander reports card misuse, abuse, or fraud through the chain of command. The unit uses the Department of Defense Information Systems for Security (DISS) for incident reporting and updates DISS with the final disciplinary action.
+10. Submit required reports. Per MCO 4600.40C<Citation source="MCO 4600.40C" /> Enclosure 1 Chapter 1 paragraph 1.b, paragraph 2, and Enclosure 2 Appendix B paragraph 4.b(1), submit Reports I (Program Review), II (Root Cause Analysis with PIP), III (IBA Listing Report), IV through IX (aging and delinquency), and X (CBA Aging Analysis Report).
+11. Cancel card on separation. The APC cancels the IBA on separation. The DMM clears the IBA-side delinquency before the cancellation where the balance permits.
+
+## Systems of record and forms
+
+### Systems
+
+- GTCC vendor portal. Citibank or successor.
+- Defense Travel System (DTS). Holds split disbursement framework per section 030604.
+- DoD Information Systems for Security (DISS). Incident reporting per MCO 4600.40C.
+- MCO 4600.40C report packages I through X. Submitted per Enclosure 2.
+- CBA invoice reconciliation tool. Driven by the CBA-S per DTS Regs section 030402.
+
+### Forms
+
+- IBA Application. Per DODI 5154.31 Vol 4.
+- IBA Activation Notification. Per DTS Regs section 030401.B.9.
+- Split Disbursement Authorization. Built into the DTS voucher per section 030604.
+- Non-ATM Advance Request. Built into the DTS authorization per section 030602.
+- Scheduled Partial Payments Request. Built into the DTS authorization per section 030603.
+- Misuse Incident Report. Routed through DISS per MCO 4600.40C.
+- CBA Monthly Reconciliation Worksheet. Local format driven by the CBA-S.
+
+## Common pitfalls
+
+- AO approves authorization before card activation. Per DTS Regs section 030401.B.9, the AO verifies activation before approval. Without activation, the traveler arrives unable to charge.
+- Split disbursement not set on voucher. Per DTS Regs section 030604, IBA-issued travelers submit split disbursement on the voucher. Without the split, the traveler receives the full payment and the IBA falls delinquent.
+- SPP not requested on travel longer than 45 days. Per section 030603, an SPP request on travel longer than 45 days holds the IBA out of delinquency.
+- Non-ATM advance approved fewer than 10 days before departure. Per section 030602, the AO approves at least 10 days ahead to support EFT timing. Late approval delays the advance.
+- CBA monthly invoice not reconciled. Per section 030402 and MCO 4600.40C<Citation source="MCO 4600.40C" /> Enclosure 2 Appendix C, the CBA-S reconciles monthly. A missed reconciliation breaks the audit trail.
+- IBA delinquency tracked outside DTS only. Coordinate with the ODTA on the Unsubmitted Voucher Report per Chapter 6 paragraph 5.a of MCO 4650.39A.
+- DISS reporting skipped on misuse. Per MCO 4600.40C, DISS holds the incident reporting record. Skipping DISS breaks the program audit.
+- Restricted card issued without justification. Per DODI 5154.31 Vol 4, the Restricted card applies when the applicant does not authorize the creditworthiness evaluation.
+
+## Decision points
+
+- Standard IBA versus Restricted card. Per 10 U.S.C. 2784a, the applicant's authorization for the creditworthiness evaluation drives the card type.
+- SPP versus single payment voucher. Per DTS Regs section 030603, travel longer than 45 days routes through SPP.
+- Non-ATM advance versus no advance. Per section 030602, the traveler requests the advance only when the IBA does not cover up-front expenses. Per DODI 5154.31 Vol 4, the IBA is the primary payment method.
+- IBA cancellation timing on separation. The APC times the cancellation against the final voucher submission and the delinquency clearance.
+
+## Authority
+
+This sub-page sits under MCO 4600.40C<Citation source="MCO 4600.40C" /> Government Travel Charge Card Program with Enclosures 1 and 2. DODI 5154.31 Vol 4<Citation source="DODI 5154.31" /> sets parent DoD GTCC policy. DoD DTS Regulations sections 030402 (CBA-S), 030602 (Non-ATM Advances), 030603 (SPP), and 030604 (Split-Disbursement) operationalize the GTCC inside DTS. MCO 4650.39A<Citation source="MCO 4650.39A" /> Chapter 1 paragraph 3 names the ODTA and Chapter 6 paragraph 5.a sets the APC notification rule. Public Law 105-264 and 5 U.S.C. 5701 Note set the statutory IBA requirement. 10 U.S.C. 2784a sets the creditworthiness evaluation rule.
+
+## Related references
+
+- MCO 4600.40C. Marine Corps GTCC program.
+- DODI 5154.31 Vol 4. Parent DoD GTCC policy.
+- DoD DTS Regulations sections 030402, 030602, 030603, 030604. GTCC integration inside DTS.
+- MCO 4650.39A Chapter 1 paragraph 3 and Chapter 6 paragraph 5.a. ODTA and APC notification.
+- Public Law 105-264 and 5 U.S.C. 5701 Note. IBA statutory base.
+- 10 U.S.C. 2784a. Creditworthiness evaluation.

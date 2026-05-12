@@ -1,0 +1,288 @@
+{
+  "track": "mcaat",
+  "programNumber": "finance",
+  "slug": "internal-audit-processes",
+  "section": "Finance",
+  "categoryLabel": "Internal Audit Processes",
+  "title": "Internal Audit Processes",
+  "summary": "MCAAT Finance checklist - Internal Audit Processes. 8 unique items across 3 audiences.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "applicabilityLevel": "DO, FO, and Outside Agency",
+  "lastVerified": "2026-05-10",
+  "source": {
+    "title": "MCAAT Finance Checklist - Internal Audit Processes",
+    "publisher": "Marine Corps Manpower and Reserve Affairs"
+  },
+  "subsections": [
+    {
+      "id": "04.0",
+      "title": "DO",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Does the office have a written training program that addresses fraud and/or deficiencies that are discovered and is the office implementing controls to mitigate those deficiencies while also conducting training in accordance with the training program and/or the references? Note: Documentation of training must be uploaded to the RFF SharePoint.",
+          "references": [
+            "OMB Circular A-123, NAVMC 3500.69 C, and FPM Vol. 1 Ch. 16"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Is alternate EFT account information for travelers that are not resident in MCTFS being input accurately and validated by those personnel who have been appointed in writing in accordance with the references?",
+          "references": [
+            "DODFMR Vol 5 Ch. 9, FPM Vol. 2 Ch.1 and Appendices E. & G., MARADMINs 465/13 and 257/21"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Are the ICM PRA transactions being accurately audited on a monthly basis by the DO/FO or designated representative to include the corrective action taken in accordance with the references?",
+          "references": [
+            "DODFMR Vol 5 Ch. 6 and 12, DODFMR Vol 4 Ch. 14, and FPM Vol 1 Ch. 16"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Have the monthly DTS PRA vouchers been properly reviewed and are they on file in accordance with the references? Note: Documentation of review must be uploaded to the RFF SharePoint.",
+          "references": [
+            "DODFMR Vol 5 Ch.12, DODFMR Vol 4 Ch. 14, and FPM Vol 1 Ch. 16"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Is the office conducting monthly audits effectively and ensuring appropriate corrective action has been taken in accordance with the references?",
+          "references": [
+            "OMB Circular A-123, FPM Vol. 1 Ch. 16, FPM Vol. 2 080202"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Is the office properly completing the DFAS Post Payment Review report and submitting it within the required time frame to include corrective action?",
+          "references": [
+            "DODFMR Vol 4 Ch. 14, FPM Vol. 2 Ch. 8"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Is the office properly conducting quarterly audits in accordance with the references?",
+          "references": [
+            "OMB Circular A-123, FPM Vol. 1 Ch. 16 and FPM Vol. 2 080202"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Has corrective action been properly completed in conjunction with the prior MCAAT analysis?",
+          "references": [
+            "FPM, JTR, DODFMR"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "05.0",
+      "title": "FO",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Does the office have a written training program that addresses fraud and/or deficiencies that are discovered and is the office implementing controls to mitigate those deficiencies while also conducting training in accordance with the training program and/or the references? Note: Documentation of training must be uploaded to the RFF SharePoint.",
+          "references": [
+            "OMB Circular A-123, NAVMC 3500.69 C, and FPM Vol. 1 Ch. 16"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Is alternate EFT account information for travelers that are not resident in MCTFS being input accurately and validated by those personnel who have been appointed in writing in accordance with the references?",
+          "references": [
+            "DODFMR Vol 5 Ch. 9, FPM Vol. 2 Ch.1 and Appendices E. & G., MARADMINs 465/13 and 257/21"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Are the ICM PRA transactions being accurately audited on a monthly basis by the DO/FO or designated representative to include the corrective action taken in accordance with the references?",
+          "references": [
+            "DODFMR Vol 5 Ch. 6 and 12, DODFMR Vol 4 Ch. 14, and FPM Vol 1 Ch. 16"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Have the monthly DTS PRA vouchers been properly reviewed and are they on file in accordance with the references? Note: Documentation of review must be uploaded to the RFF SharePoint.",
+          "references": [
+            "DODFMR Vol 5 Ch.12, DODFMR Vol 4 Ch. 14, and FPM Vol 1 Ch. 16"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Is the office conducting monthly audits effectively and ensuring appropriate corrective action has been taken in accordance with the references?",
+          "references": [
+            "OMB Circular A-123, FPM Vol. 1 Ch. 16, FPM Vol. 2 080202"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Is the office properly completing the DFAS Post Payment Review report and submitting it within the required time frame to include corrective action?",
+          "references": [
+            "DODFMR Vol 4 Ch. 14, FPM Vol. 2 Ch. 8"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Is the office properly conducting quarterly audits in accordance with the references?",
+          "references": [
+            "OMB Circular A-123, FPM Vol. 1 Ch. 16 and FPM Vol. 2 080202"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Has corrective action been properly completed in conjunction with the prior MCAAT analysis?",
+          "references": [
+            "FPM, JTR, DODFMR"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "06.0",
+      "title": "Outside Agency",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Does the office have a written training program that addresses fraud and/or deficiencies that are discovered and is the office implementing controls to mitigate those deficiencies while also conducting training in accordance with the training program and/or the references? Note: Documentation of training must be uploaded to the RFF SharePoint.",
+          "references": [
+            "OMB Circular A-123, NAVMC 3500.69 C, and FPM Vol. 1 Ch. 16"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Is the office conducting monthly audits effectively and ensuring appropriate corrective action has been taken in accordance with the references?",
+          "references": [
+            "OMB Circular A-123, FPM Vol. 1 Ch. 16, FPM Vol. 2 080202"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Is the office properly completing the DFAS Post Payment Review report and submitting it within the required time frame to include corrective action?",
+          "references": [
+            "DODFMR Vol 4 Ch. 14, FPM Vol. 2 Ch. 8"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Is the office properly conducting quarterly audits in accordance with the references?",
+          "references": [
+            "OMB Circular A-123, FPM Vol. 1 Ch. 16 and FPM Vol. 2 080202"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Has corrective action been properly completed in conjunction with the prior MCAAT analysis?",
+          "references": [
+            "FPM, JTR, DODFMR"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        }
+      ]
+    }
+  ]
+}

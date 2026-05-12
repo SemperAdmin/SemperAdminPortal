@@ -1,0 +1,122 @@
+{
+  "track": "mcaat",
+  "programNumber": "admin",
+  "slug": "defense-travel-system",
+  "section": "Admin",
+  "categoryLabel": "Defense Travel System",
+  "title": "Defense Travel System",
+  "summary": "MCAAT Admin checklist - Defense Travel System. 8 unique items across 2 audiences.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "applicabilityLevel": "Reporting Unit and Supporting Unit",
+  "lastVerified": "2026-05-10",
+  "source": {
+    "title": "MCAAT Admin Checklist - Defense Travel System",
+    "publisher": "Marine Corps Manpower and Reserve Affairs"
+  },
+  "subsections": [
+    {
+      "id": "02.0",
+      "title": "Reporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Is Personnel Tempo for Temporarily Additional Duty period(s) reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol 7A, Chap 65",
+            "MCO 4650.39A, para 4.b(7)",
+            "MCTFSPRIUM 2-20103, 9-91001"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Is the proper BAS/DMR entitlement for Temporarily Additional Duty period(s) reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol 7A, Chap 25, para 2.4.3.2",
+            "MCTFSPRIUM 2-20103, 8-80402, 8-80403"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Is the unit ensuring the traveler is submitting a completed travel vouchers within 5 working days? (Note: Submitted is identified as created and signed by the traveler within this time period).",
+          "references": [
+            "FPM Volume 2 - Travel Policies Chapter 2",
+            "MCO 4650.39A, encl 1, chap 1, par 5a(2)(d) and par 11d"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Is the unit ensuring submission of zero dollar vouchers once an unsubmitted voucher exceeds 30 days past the authorized trip end date?",
+          "references": [
+            "MARADMIN 359/25"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.0",
+      "title": "Supporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "08",
+          "question": "Is the unit validating that Marines are receiving the proper BAS/DMR entitlement when executing TAD?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 25, par. 2.4.3.2",
+            "MCTFSPRIUM 8-80402, 8-80403"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Is the unit ensuring the traveler is submitting a completed travel vouchers within 5 working days? (Note: Submitted is identified as created and signed by the traveler within this time period).",
+          "references": [
+            "FPM Volume 2 - Travel Policies Chapter 2",
+            "MCO 4650.39A, encl 1, chap 1, par 5a(2)(d) and par 11d"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Is the unit ensuring submission of zero dollar vouchers once an unsubmitted voucher exceeds 30 days past the authorized trip end date?",
+          "references": [
+            "MARADMIN 359/25"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Is the unit validating Personnel Tempo was reported correctly for Marines that have completed an applicable period?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 65",
+            "MCTFSPRIUM 9-91001"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        }
+      ]
+    }
+  ]
+}

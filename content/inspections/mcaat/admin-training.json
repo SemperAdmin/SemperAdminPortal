@@ -1,0 +1,247 @@
+{
+  "track": "mcaat",
+  "programNumber": "admin",
+  "slug": "training",
+  "section": "Admin",
+  "categoryLabel": "Training",
+  "title": "Training",
+  "summary": "MCAAT Admin checklist - Training. 18 unique items across 2 audiences.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "applicabilityLevel": "Reporting Unit and Supporting Unit",
+  "lastVerified": "2026-05-10",
+  "source": {
+    "title": "MCAAT Admin Checklist - Training",
+    "publisher": "Marine Corps Manpower and Reserve Affairs"
+  },
+  "subsections": [
+    {
+      "id": "02.0",
+      "title": "Reporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Is the unit ensuring training data (PFT, CFT, rifle, schools, MCMAP etc.) are reported accurately within 5 days of the effective date?",
+          "references": [
+            "MCO 6100.13A W/CH 4",
+            "MCO 1500.59A",
+            "MCO 3574.2M, MCTFSPRIUM, 2-20103, 5-51202, 5-51213, 5-51301, 5-51401"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Is the unit ensuring the NAVMC 11621 Body Composition Program (BCP) is properly completed IAW applicable regulations?",
+          "references": [
+            "MCO 6110.3A w/Ch-3, Encl (1), para 4, 7.a, Encl (2)",
+            "MCTFSPRIUM 4-40401"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Is the unit ensuring BCP is reported within 5 days of the effective date?",
+          "references": [
+            "MCO 6110.3A w/Ch-3, Encl (1) para 7.a",
+            "MCTFSPRIUM 2-20103"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Is the unit validating BCP dates are accurately reflected in the MCTFS for assignment, removal, or extensions that are processed by the unit?",
+          "references": [
+            "MCO 6110.3A w/Ch-3, Encl (1) para 7.b",
+            "MCTFSPRIUM 4-40401"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "For those BCP cases that have been recommended for administrative separation, has the unit initiated separation proceeding?",
+          "references": [
+            "MCO 6110.3A w/Ch-3",
+            "MCO 1900.16 W/CH 2",
+            "SECNAV 1920.6D"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "In those BCP cases where the command has determined the BCP assignment to be erroneous, has the command taken steps to clear the affected Marine's record?",
+          "references": [
+            "MCO 6110.3A w/Ch-3",
+            "MCO 1400.32D w/Ch 2",
+            "MCO 1616.1",
+            "MCTFSPRIUM 4-40401"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Is the command ensuring key supporting documents to validate BCP periods are maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol 1, Ch 9",
+            "SECNAV M-5210.1",
+            "MCO 6110.3A w/Ch-3"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Is the unit identifying Marines that are missing or have late training data (PFT, CFT, rifle, school completion, MCMAP) within the MCTFS?",
+          "references": [
+            "MCO 6100.13A w/Ch-5",
+            "MCO 3574.2M",
+            "MCO 1500.59A",
+            "MARADMINS: 474/21"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Is the unit ensuring key supporting documents to validate training data entered in the MCTFS for training events conducted by the unit are maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol 1, Ch 9",
+            "SECNAV M-5210.1"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.0",
+      "title": "Supporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "18",
+          "question": "Is the command ensuring key supporting documents to validate BCP periods are maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol 1, Ch 9",
+            "SECNAV M-5210.1",
+            "MCO 6110.3A w/Ch-3"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Is the unit identifying Marines that are missing or have late training data (PFT, CFT, rifle, school completion, MCMAP) within the MCTFS?",
+          "references": [
+            "MCO 6100.13A w/Ch-5",
+            "MCO 3574.2M",
+            "MCO 1500.59A",
+            "MARADMINS: 474/21"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Is the unit ensuring training data (PFT, CFT, rifle, schools, MCMAP etc.) are reported accurately within 5 days of the effective date?",
+          "references": [
+            "MCO 6100.13A w/Ch 4",
+            "MCO 1500.59A",
+            "MCO 3574.2M, MCTFSPRIUM, 1-10100.6, 2-20103, 5-51202, 5-51213, 5-51301, 5-51401"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Is the unit ensuring key supporting documents to validate training data entered in the MCTFS for training events conducted by the unit are maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9",
+            "SECNAV M-5210.1"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "13",
+          "question": "Is the unit ensuring the NAVMC 11621 Body Composition Program (BCP) is properly completed IAW applicable regulations?",
+          "references": [
+            "MCO 6110.3A w/Ch-3, Encl (1), para 4, 7.a, Encl (2)",
+            "MCTFSPRIUM 4-40401"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "14",
+          "question": "Is the unit ensuring BCP is reported within 5 days of the effective date?",
+          "references": [
+            "MCO 6110.3A w/Ch-3, Encl (1) para 7.a",
+            "MCTFSPRIUM 2-20103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "15",
+          "question": "Is the unit validating BCP dates are accurately reflected in the MCTFS for assignment, removal, or extensions that are processed by the unit?",
+          "references": [
+            "MCO 6110.3A w/Ch-3, Encl (1) para 7.b",
+            "MCTFSPRIUM 4-40401"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "16",
+          "question": "For those BCP cases that have been recommended for administrative separation, has the unit initiated separation proceeding?",
+          "references": [
+            "MCO 6110.3A w/Ch-3",
+            "MCO 1900.16 W/CH 2",
+            "SECNAV 1920.6D"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "17",
+          "question": "In those BCP cases where the command has determined the BCP assignment to be erroneous, has the command taken steps to clear the affected Marine's record?",
+          "references": [
+            "MCO 6110.3A w/Ch-3",
+            "MCO 1400.32D w/Ch 2",
+            "MCO 1616.1",
+            "MCTFSPRIUM 4-40401"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        }
+      ]
+    }
+  ]
+}

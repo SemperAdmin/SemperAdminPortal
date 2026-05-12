@@ -1,0 +1,880 @@
+{
+  "track": "mcaat",
+  "programNumber": "admin",
+  "slug": "milpay",
+  "section": "Admin",
+  "categoryLabel": "MilPay",
+  "title": "MilPay",
+  "summary": "MCAAT Admin checklist - MilPay. 72 unique items across 3 audiences.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "applicabilityLevel": "IPAC, Reporting Unit, and Supporting Unit",
+  "lastVerified": "2026-05-10",
+  "source": {
+    "title": "MCAAT Admin Checklist - MilPay",
+    "publisher": "Marine Corps Manpower and Reserve Affairs"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "IPAC",
+      "description": "",
+      "items": [
+        {
+          "code": "65",
+          "question": "Is Move in Housing Allowance (MIHA) (TTC 455) reported IAW applicable regulations and within 5 days after the effective date?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 26, par. 260605",
+            "MCTFSPRIUM 8-80205"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "66",
+          "question": "Is the Move-in Housing Allowance Claim (DD Form 2556) filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCO 1070.1",
+            "MARADMIN 015/20"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "67",
+          "question": "Is Cost of Living Allowance reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap(s). 67, 68",
+            "MCTFSPRIUM, 8-80100, 8-80101, 8-80102"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "68",
+          "question": "Is Cost of Living Allowance form (NAVMC 11106) properly completed and filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCO 1070.1",
+            "MARADMIN 015/20, MAA 1-20, para 4.b.(3)"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "69",
+          "question": "Is Family Separation Allowance - Restricted (FSA-R) reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 27",
+            "MCO P1070.12K w/Ch 1, par(s). 5005.2.c, 5006.2.c",
+            "MCTFSPRIUM, 9-90301"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "70",
+          "question": "Is the Statement to Substantiate Payment of Family Separation Allowance (FSA), DD Form 1561, properly completed and filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 27",
+            "MCO 1070.1",
+            "MARADMIN 015/20, MAA 1-20 para 4.b.(1)"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "71",
+          "question": "Are commuted rations reported IAW applicable regulations?",
+          "references": [
+            "MCO 10110.47A, Chap. 1, para.  5.a-l (NAVMC 10522, Commuted Rations Action)",
+            "MCO P1070.12K w/Ch 1, par. 5006.2.p",
+            "FPM Vol. 1 par(s). 060102, 170104.C(5)(c)",
+            "MCTFSPRIUM, 8-80402, 8-80403"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "72",
+          "question": "Is the Commuted Rations Action Form (NAVMC 10522) completed properly and filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCO 10110.47A, Chap. 1, par. 5. g-i, and l (NAVMC 10522, Commuted Rations Action)",
+            "MCO P1070.12K W/CH 1, par. 5006.2.p",
+            "MCO 1070.1",
+            "MARADMIN 015/20, MAA 1-20 para 4.b.(9)"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "38",
+          "question": "Are updates to pay entry base dates PEBD (TTC 063-000) reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR, Vol. 7, Chap 1; PAA 4-25"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "48",
+          "question": "Is Continuation Pay statement of understanding, NAVMC Form 11905 (Active) or 11908 (Reserve), filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCO 1070.1",
+            "MARADMIN 691/21, 084/22",
+            "MCTFSPRIUM 9-91800"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "49",
+          "question": "Is the Blended Retirement System (BRS) Continuation Pay (CP) (TTC 450) reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 66",
+            "MARADMIN 691/21, 084/22",
+            "MCTFSPRIUM 9-91800"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "50",
+          "question": "Are periods of leave and administrative absence (PTAD) properly reported via unit diary IAW applicable regulations?",
+          "references": [
+            "MCO 1050.3J",
+            "MCTFSPRIUM"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "51",
+          "question": "Are approved BNA packages, and recertifications reported within 5 days of receiving key supporting documents?",
+          "references": [
+            "DoDI 1341.15",
+            "MARADMIN 002/23; 369/25",
+            "MCTFSPRIUM, 8-81201"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "53",
+          "question": "Are contractual documents reported within 5 days of receiving key supporting documents?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 35, par. 2.1, Tables 35-3, 35-4",
+            "MCO P1070.12K w/Ch 1, par. 4003.3b(3)(a)",
+            "MCO 1040.31, Chap. 6, par. 4d(1)",
+            "FPM, Vol. 1, par. 090106",
+            "MARADMIN 015/20, MAA 1-20; TFRS Msg A66314-20210707085339",
+            "MCTFSPRIUM 2-20103, 3-30301, 3-30302, 3-30303, 7-70107, 7-70108"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "54",
+          "question": "Are contractual documents filed in OMPF within 10 working days from the date reported on unit diary? (i.e. DD Form 4, NAVMC 321A, and NAVMC 321M)?",
+          "references": [
+            "MCO 1070.1",
+            "MARADMIN 015/20, MAA 1-20"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "55",
+          "question": "Is approval obtained from MMIB prior to reporting BAH protection (TTC 393) or Continuation of Location (COL)?",
+          "references": [
+            "MCO 7220.56A",
+            "MCTFSPRIUM, 8-80201.21"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "56",
+          "question": "Is MMIB approval for BAH protection or Continuation of Location (COL) filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCO 7220.56A",
+            "MCO 1070.1",
+            "MARADMIN 015/20",
+            "MCTFSPRIUM, Chap. 13, Appendix C"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "57",
+          "question": "Is BAH without dependents approved by the appropriate command authority? Note: Appropriate command authority will be defined by the local BAH without policy.",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 26",
+            "MCO P11000.22 W CH 1-6, para(s) 2600.2 and 2600.3",
+            "MARADMIN(s) 429/11, 015/20",
+            "MCTFSPRIUM, Chap. 8, Sect. 2, Chap. 13, Appendix C"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "58",
+          "question": "Is the approval for BAH without dependents filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCO 1070.1",
+            "MCTFSPRIUM, Chap. 13, Appendix C"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "59",
+          "question": "Does the reporting unit obtain appropriate documentation prior to reporting BAH for a designated place other than the previous duty station for Marines assigned to an unaccompanied tour overseas?",
+          "references": [
+            "MCO 7220.56A",
+            "MARADMIN 150/22, 187/22"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "60",
+          "question": "Is the Basic Allowance for Housing/BAH-DIFF properly reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR, Vol 7A, Chapter 26",
+            "MCTFSPRIUM 8-80201"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "61",
+          "question": "Is Overseas Housing Allowance (OHA) properly reported IAW applicable regulations and within 5 days after the effective date?",
+          "references": [
+            "DoDFMR, Vol 7A, Chapter 26",
+            "MCTFSPRIUM 8-80207"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "62",
+          "question": "Is the Overseas Housing Allowance (OHA) (DD Form 2367) filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCO 1070.1",
+            "MARADMIN 015/20"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "63",
+          "question": "Is Family Separation Housing Allowance (FSH) properly reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR, Vol 7A, Chapter 26",
+            "MCTFSPRIUM -9-90301; DD form 2367"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "64",
+          "question": "Are the Family Separation Housing Allowance documents DD form 2367 filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCO 1070.1",
+            "MARADMIN 015/20"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02.0",
+      "title": "Reporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Is the Commuted Rations Action Form (NAVMC 10522) completed properly and filed in OMPF within 10 working days from the reporting date?",
+          "references": [
+            "MCO 10110.47A, Chap. 1, par. 5. g-i, and l (NAVMC 10522, Commuted Rations Action)",
+            "MCO P1070.12K W/CH 1, par. 5006.2.p",
+            "MCO 1070.1",
+            "MARADMIN 015/20, MAA 1-20 par. 4.b.9"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Are commuted rations reported IAW applicable regulations?",
+          "references": [
+            "MCO 10110.47A, Chap. 1, par. 5a and l (NAVMC 10522, Commuted Rations Action)",
+            "MCO P1070.12K W/CH 1, par. 5006.2.p",
+            "FPM Vol. 1 par(s). 060102, 170104.C(5)(c)",
+            "MCTFSPRIUM, 8-80402, 8-80403"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Is Cost of Living Allowance reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol 7A, Chap(s). 67, 68",
+            "MCTFSPRIUM, 8-80100, 8-80101, 8-80102"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Is Cost of Living Allowance form (NAVMC 11106) properly completed and filed in OMPF within 10 working days from the effective date?",
+          "references": [
+            "MCO 1070.1",
+            "MARADMIN 015/20, MAA 1-20, par. 4.b.3"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Is Family Separation Allowance - Restricted (FSA-R) reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 27",
+            "MCO P1070.12K par(s). 5005.2.c, 5006.2.c",
+            "MCTFSPRIUM, 9-90301"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Is the Statement To Substantiate Payment of Family Separation Allowance (FSA), DD Form 1561, properly completed and filed in OMPF within 10 working days from the effective date?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 27",
+            "MCO 1070.1",
+            "MARADMIN 015/20, MAA 1-20 par. 4.b.1"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Is Move in Housing Allowance (MIHA) (TTC 455) reported IAW applicable regulations and within 5 days after the effective date?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 26, par. 260605",
+            "MCTFSPRIUM 8-80205"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Is the Overseas Housing Allowance (OHA) (DD Form 2367) filed in OMPF within 10 working days from the effective date?",
+          "references": [
+            "MCO 1070.1",
+            "MARADMIN 015/20"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Is the Move-in Housing Allowance Claim (DD Form 2556) filed in OMPF within 10 working days from the effective date?",
+          "references": [
+            "MCO 1070.1",
+            "MARADMIN 015/20"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Are the Family Separation Housing Allowance documents (DD form 2367) filed in OMPF within 10 working days from the effective date?",
+          "references": [
+            "DODFMR, Vol 7A Chap 26",
+            "MCO 1070.1",
+            "MARADMIN 015/20"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Are pay entitlements reported IAW applicable regulations when attached under a humanitarian status?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 25, Chap 26",
+            "MCO 1000.6, Chap. 1, Sect. 3, par. 2.c",
+            "MCO 10110.47A, Chap. 1, par. 5a",
+            "MCTFSPRIUM, 8-80402"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "17",
+          "question": "Is the command recertifying a Marine’s eligibility to BNA after the occurrence of a routine event outlined in the reference?",
+          "references": [
+            "DoDI 1341.15",
+            "MARADMIN 002/23",
+            "MCTFSPRIUM, 8-81201"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "32",
+          "question": "Is the command ensuring BNA notifications, Pg 11s and applications are submitted to the Marine’s OMPF?",
+          "references": [
+            "DoDI 1341.15",
+            "MARADMIN 002/23",
+            "MCTFSPRIUM, 8-81201"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "33",
+          "question": "Are periods of leave, special liberty, and administrative absence (PTAD) properly reported via the Marine online Leave/Liberty module or unit diary as appropriate?",
+          "references": [
+            "MCO 1050.3J"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "34",
+          "question": "Are contractual documents filed in OMPF within 10 working days from the effective date? (i.e. DD Form 4, NAVMC 321A, and NAVMC 321M)?",
+          "references": [
+            "MARADMIN 015/20, MAA 1-20",
+            "MCO 1070.1"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "35",
+          "question": "Is the Blended Retirement System (BRS) Continuation Pay (CP) (TTC 450) reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 66",
+            "MARADMIN(s) 691/21, 084/22",
+            "MCTFSPRIUM 9-91800"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "36",
+          "question": "Is Continuation Pay statement of understanding, NAVMC Form 11905 (Active) or 11908 (Reserve), filed in OMPF within 10 working days from the effective date?",
+          "references": [
+            "MCO 1070.1",
+            "MARADMIN(s) 691/21, 084/22",
+            "MCTFSPRIUM 9-91800"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "37",
+          "question": "Are updates to pay entry base dates PEBD (TTC 063-000) reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR, Vol. 7, Chap 1; PAA 4-25"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "39",
+          "question": "Are contractual documents reported within 5 days of the effective date?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 35, par. 2.1, Table(s) 35-3, 35-4",
+            "MCO P1070.12K W/CH 1, par. 4003.3b (3)(a)",
+            "MCO 1040.31, Chap. 6, par. 4d(1)",
+            "FPM, Vol. 1, par. 090106",
+            "MARADMIN 015/20, MAA 1-20; TFRS Msg A66314-20210707085339",
+            "MCTFSPRIUM 2-20103, 3-30301, 3-30302, 3-30303, 7-70107, 7-70108"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "40",
+          "question": "Is approval obtained from MMIB prior to reporting BAH protection (TTC 393) or Continuation of Location (COL)?",
+          "references": [
+            "MCO 7220.56A",
+            "MCTFSPRIUM, 8-80201.21"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "41",
+          "question": "Is MMIB approval for BAH protection or Continuation of Location (COL) filed in OMPF within 10 working days from the effective date?",
+          "references": [
+            "MCO 7220.56A",
+            "MCO 1070.1",
+            "MARADMIN 015/20",
+            "MCTFSPRIUM, Chap. 13, Appendix C"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "42",
+          "question": "Is BAH without dependents approved by the appropriate command authority? Note: Appropriate command authority will be defined by the installation BAH without policy.",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 26",
+            "MCO P11000.22 W CH 1-6, par(s). 2600.2, 2600.3",
+            "MARADMIN(s) 429/11, 015/20",
+            "MCTFSPRIUM, Chap. 8, Sect. 2, Chap. 13, Appendix C"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "43",
+          "question": "Is the approval for BAH without dependents filed in OMPF within 10 working days from the effective date?",
+          "references": [
+            "MCO 1070.1",
+            "MCTFSPRIUM, Chap. 13, Appendix C"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "44",
+          "question": "Is the Basic Allowance for Housing/ BAH-DIFF properly reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR, Vol 7A, Chapter 26",
+            "MCTFSPRIUM 8-80201"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "45",
+          "question": "Is Overseas Housing Allowance (OHA) reported IAW applicable regulations and within 5 days after the effective date?",
+          "references": [
+            "DoDFMR, Vol 7A, Chapter 26",
+            "MCTFSPRIUM 8-80207"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "46",
+          "question": "Is Family Separation Housing Allowance (FSH) (DD form 2367) properly reported IAW applicable regulations and within 5 days after the effective date?",
+          "references": [
+            "DoDFMR, Vol 7A, Chapter 26",
+            "MARADMIN 115/24, MCTFSPRIUM -9-90301"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "47",
+          "question": "Is the unit ensuring its BAS policy is reviewed every 3 years?",
+          "references": [
+            "MCO 10110.47A, Chap. 1, par. 5.g"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "52",
+          "question": "Are approved BNA packages reported (TTC 694) within 5 days of receiving key supporting documents?",
+          "references": [
+            "DoDI 1341.15",
+            "MARADMIN 002/23",
+            "MCTFSPRIUM, 8-81201"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.0",
+      "title": "Supporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "12",
+          "question": "Are periods of leave, special liberty, and administrative absence (PTAD) authorized in accordance with regulations? This applies to all aspects of the Leave and Liberty Program.",
+          "references": [
+            "MCO 1050.3J"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "13",
+          "question": "Is the unit ensuring its BAS policy is reviewed every 3 years?",
+          "references": [
+            "MCO 10110.47A, Chap. 1, par. 5.g"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "14",
+          "question": "For Marines authorized commuted rations IAW the command's BAS policy, is the unit maintaining key supporting documents (i.e. Fleet Assistance Program orders, rifle or burial details, armory personnel, etc., or NAVMC 10522) on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9",
+            "SECNAV M-5210.1",
+            "MCO 10110.47A, Chap. 1, par. 5.g-h, I",
+            "MCO P1070.12K w/Ch 1, par. 5006.2.p",
+            "MCO 1070.1",
+            "MARADMIN 015/20, MAA 1-20 par. 4.b.(9)"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "15",
+          "question": "Is the unit ensuring key supporting documents authorizing Marines commuted rations are submitted to and received by the reporting unit within 5 days of authorization?",
+          "references": [
+            "MCO 10110.47A, Chap. 1, par. 5.l",
+            "MCTFSPRIUM, 1-10100.6,  2-20103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "16",
+          "question": "Is the unit validating that Commuted Rations are reported IAW applicable regulations by the reporting unit?",
+          "references": [
+            "MCTFSPRIUM, 1-10111, 8-80402"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "18",
+          "question": "Is the unit ensuring contractual documents NAVMC 321, Reenlistment DD Form 4, are submitted to and received by the reporting unit within 5 days of the sworn date or reenlistment date, respectively?",
+          "references": [
+            "MCTFSPRIUM, 1-10100.6,  2-20103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "19",
+          "question": "Is the unit validating contractual documents NAVMC 321, Reenlistment DD Form 4, are reported IAW regulations?",
+          "references": [
+            "FPM, Vol. 1, par. 090106; TFRS Msg A66314 20210707085339",
+            "MCTFSPRIUM 3-30301, 3-30302, 3-30303"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "20",
+          "question": "Is the unit ensuring key supporting documents that validate entitlement to basic pay (i.e., NAVMC 321 and Reenlistment DD Form 4) are in the OMPF within 10 working days from the effective date?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9",
+            "SECNAV M-5210.1",
+            "MCO 1070.1",
+            "MARADMIN 015/20"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "21",
+          "question": "Are periods of leave, special liberty, and administrative absence (PTAD) properly reported via the Marine on Line Leave/Liberty module or unit diary as appropriate?",
+          "references": [
+            "MCO 1050.3J"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "22",
+          "question": "Is the command notifying pre-screened Marines, no later than 30 days after receipt of the MOL pre-screen advisory, utilizing the NAVMC 118-11, administrative remarks?",
+          "references": [
+            "DoDI 1341.15",
+            "MARADMIN 002/23",
+            "MCTFSPRIUM, 8-81201"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "23",
+          "question": "Is the command ensuring requests for BNA are submitted via MOL EPAR?",
+          "references": [
+            "DoDI 1341.15",
+            "MARADMIN 002/23",
+            "MCTFSPRIUM, 8-81201"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "24",
+          "question": "Are requests for BNA adjudicated by the O5 Commanding Officer or SCMCA? (This authority cannot be delegated below the O5 Commanding Officer/SMCA level).",
+          "references": [
+            "DoDI 1341.15",
+            "MARADMIN 002/23",
+            "MCTFSPRIUM, 8-81201"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "25",
+          "question": "After adjudication, is the command notifying Marines of the results and does the notification provides justification of the decision?",
+          "references": [
+            "DoDI 1341.15",
+            "MARADMIN 002/23",
+            "MCTFSPRIUM, 8-81201"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "26",
+          "question": "Are eligible and certified requests to receive BNA properly computed?",
+          "references": [
+            "DoDI 1341.15",
+            "MARADMIN 002/23",
+            "MCTFSPRIUM, 8-81201"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "27",
+          "question": "Are eligible and certified requests submitted to and received by the reporting unit no later than 5 days after certification?",
+          "references": [
+            "DoDI 1341.15",
+            "MARADMIN 002/23",
+            "MCTFSPRIUM, 8-81201"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "28",
+          "question": "Is the command verifying and submitting to the reporting unit BNA credits for each month a Marine is entitled?",
+          "references": [
+            "DoDI 1341.15",
+            "MARADMIN 002/23",
+            "MCTFSPRIUM, 8-81201"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "29",
+          "question": "Is the command ensuring BNA notifications, Pg 11s and applications are submitted to the Marine’s OMPF?",
+          "references": [
+            "DoDI 1341.15",
+            "MARADMIN 002/23",
+            "MCTFSPRIUM, 8-81201"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "30",
+          "question": "Is the command recertifying a Marine’s eligibility to BNA after the occurrence of a routine event outlined in the reference?",
+          "references": [
+            "DoDI 1341.15",
+            "MARADMIN 002/23",
+            "MCTFSPRIUM, 8-81201"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "31",
+          "question": "Is the command maintaining BNA records in accordance with regulations?",
+          "references": [
+            "DoDI 1341.15",
+            "MARADMIN 002/23",
+            "MCTFSPRIUM, 8-81201"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        }
+      ]
+    }
+  ]
+}

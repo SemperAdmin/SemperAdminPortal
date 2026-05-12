@@ -1,0 +1,124 @@
+---
+title: "Allowances BAH BAS and Uniforms - S-1 Procedural Page"
+slug: "allowances-bah-bas-and-uniforms"
+summary: "Process Subsistence (BAS), Housing (BAH), Clothing Monetary Allowances, Officers Uniform and Equipment Allowances, and Personal Money Allowance per DoDFMR Vol 7A Chapters 25, 26, 29, 30, and 31."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-11"
+unitType: "s1-g1"
+topic: "military-pay-processing"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0170-PERA-2004"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "DoDFMR Vol 7A"
+billets: ["s-1-officer", "s-1-chief", "ipac-pay-clerk"]
+gradesPerforming: ["Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "DoDFMR Vol 7A Chapter 25 (Subsistence and Basic Needs Allowances)"
+  - "DoDFMR Vol 7A Chapter 26 (Housing Allowances - BAH)"
+  - "DoDFMR Vol 7A Chapter 27 (Family Separation Allowance - FSA)"
+  - "DoDFMR Vol 7A Chapter 29 (Clothing Monetary Allowances)"
+  - "DoDFMR Vol 7A Chapter 30 (Officers Uniform and Equipment Allowances)"
+  - "DoDFMR Vol 7A Chapter 31 (Personal Money Allowance)"
+  - "37 U.S.C. 402 (Basic Allowance for Subsistence)"
+  - "37 U.S.C. 403 (Basic Allowance for Housing)"
+  - "MCO 7300.21B Marine Corps Financial Management SOP Manual"
+performanceSteps:
+  - "Validate dependency status with marriage and birth certificates"
+  - "Set BAH per Chapter 26 at the duty location and dependent status"
+  - "Continue BAS per Chapter 25"
+  - "Process FSA per Chapter 27 when dependency separation applies"
+  - "Process clothing monetary allowance for enlisted Marines per Chapter 29"
+  - "Process officer uniform allowance per Chapter 30"
+  - "Process Personal Money Allowance per Chapter 31 for general officers"
+  - "Cut MCTFS allowance transactions"
+  - "Verify LES on the next pay cut"
+  - "Audit allowances monthly"
+relatedRoles:
+  marine: "/marines/military-pay-processing/allowances-bah-bas-and-uniforms"
+  leader: "/leader/military-pay-processing/allowances-bah-bas-and-uniforms"
+  commander: "/commander/military-pay-processing/allowances-bah-bas-and-uniforms"
+source:
+  title: "Allowances BAH BAS and Uniforms - DoDFMR Vol 7A Chapters 25, 26, 29, 30, 31"
+  publisher: "Office of the Under Secretary of Defense (Comptroller)"
+---
+
+## Role and responsibility
+
+The IPAC pay clerk processes BAH, BAS, FSA, Clothing Monetary Allowance, Officers Uniform and Equipment Allowance, and Personal Money Allowance per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapters 25, 26, 27, 29, 30, and 31. The S-1 chief validates dependency status against marriage and birth certificates. The S-1 officer signs by direction on routing. The disbursing technician coordinates per DoDFMR Vol 5 and MCO 7300.21B<Citation source="MCO 7300.21B" />. The Marine provides dependency documents and reports changes.
+
+Source documents flow from the dependency documents (marriage certificate, birth certificates, DEERS enrollment), the duty location for BAH rate per Chapter 26, the duty status (deployed, separated from dependents) for FSA per Chapter 27, the enlisted clothing replacement allowance schedule per Chapter 29, the officer uniform allowance scenario per Chapter 30, and the general officer Personal Money Allowance per Chapter 31. Allowances outputs include the set BAH at the correct rate, the continued BAS, the FSA when applicable, the clothing or uniform allowance, the Personal Money Allowance when applicable, the MCTFS allowance transactions, the verified LES, and the monthly audit record.
+
+Per DoDFMR Vol 7A Chapter 25 (Subsistence), BAS pays the Marine for subsistence. Per Chapter 26 (BAH), the housing allowance pays based on grade, dependent status, and duty location. Per Chapter 27 (FSA), the family separation allowance pays when the Marine separates from dependents by orders for more than 30 days. Per Chapter 29, enlisted clothing replacement allowance pays on an annual cycle. Per Chapter 30, officers receive uniform allowance at first appointment and at specified intervals. Per Chapter 31, general officers receive Personal Money Allowance.
+
+## Trigger events
+
+- Inbound Marine arrives triggering BAH start at the new duty location.
+- Dependency change (marriage, divorce, birth, death) triggers BAH and FSA review.
+- Deployment triggers FSA eligibility per Chapter 27.
+- Annual clothing replacement cycle for enlisted Marines.
+- Officer appointment or specified interval triggers uniform allowance per Chapter 30.
+- BAH rate change for the duty location.
+- General officer eligibility for Personal Money Allowance.
+
+## Processing workflow
+
+1. Validate dependency status. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 26, the marriage certificate, birth certificates, and DEERS enrollment drive BAH dependent rate.
+2. Set BAH. Per Chapter 26 and 37 U.S.C. 403, the duty location, grade, and dependent status drive the rate. Per DTMO BAH tables, the rate updates annually on 1 January.
+3. Continue BAS. Per Chapter 25 and 37 U.S.C. 402, BAS continues at the enlisted or officer rate.
+4. Process FSA. Per Chapter 27, FSA applies when separation from dependents exceeds 30 days. FSA-T (temporary), FSA-R (restricted), and FSA-S (ship) categories apply per the situation.
+5. Process clothing monetary allowance for enlisted. Per Chapter 29, the annual cycle drives the replacement allowance.
+6. Process officer uniform allowance. Per Chapter 30, the first appointment, the active duty period transition, and specified intervals drive the allowance.
+7. Process Personal Money Allowance. Per Chapter 31, eligible general officers receive the allowance.
+8. Cut MCTFS allowance transactions. Per Appendix E and MCTFSPRIUM<Citation source="MCTFSPRIUM" />, submit transactions through UD-MIPS.
+9. Verify LES. The next LES carries the allowances at the correct rates.
+10. Audit allowances monthly. The S-1 chief audits the unit allowance posture against the dependency and duty status records.
+
+## Systems of record and forms
+
+### Systems
+
+- Marine Corps Total Force System (MCTFS). Holds allowance records.
+- UD-MIPS. Cuts allowance transactions per Appendix E.
+- DEERS via RAPIDS. Dependency verification.
+- DTMO BAH Tables. Per Chapter 26.
+- LES. Validates allowance.
+
+### Forms
+
+- BAH Dependent Election Form. Per Chapter 26.
+- Dependency Documents. Marriage and birth certificates.
+- FSA Application. Per Chapter 27.
+- Clothing Replacement Allowance Record. Per Chapter 29.
+- Officers Uniform Allowance Authorization. Per Chapter 30.
+- Personal Money Allowance Authorization. Per Chapter 31.
+
+## Common pitfalls
+
+- BAH rate set without dependency validation. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 26, the dependency drives the rate.
+- BAH rate not updated at 1 January annual rate update. Per Chapter 26, DTMO publishes new rates annually.
+- FSA not processed on dependency separation. Per Chapter 27, FSA-T, FSA-R, or FSA-S applies based on the situation.
+- Clothing replacement allowance not processed annually for enlisted. Per Chapter 29, the cycle runs annually.
+- Officer uniform allowance missed at first appointment. Per Chapter 30, the first appointment triggers initial allowance.
+- Dependency change not actioned promptly. Per Chapter 26, late dependency action creates indebtedness on the prior rate or underpayment on the current rate.
+- BAS rate mismatch enlisted versus officer. Per Chapter 25, the rates differ.
+
+## Decision points
+
+- BAH-with-dependents versus BAH-without-dependents. Per Chapter 26, the dependent status drives the rate.
+- FSA category. Per Chapter 27, FSA-T (temporary duty), FSA-R (restricted duty), or FSA-S (ship duty) applies based on the situation.
+- Clothing allowance type. Per Chapter 29, enlisted Marines receive the cash clothing replacement allowance after the issuance period.
+- Officer uniform allowance event. Per Chapter 30, first appointment, active duty entry from reserve, and specified intervals trigger the allowance.
+
+## Authority
+
+This sub-page sits under DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapters 25 (BAS), 26 (BAH), 27 (FSA), 29 (Clothing Monetary), 30 (Officers Uniform), and 31 (Personal Money Allowance). 37 U.S.C. 402 (BAS) and 37 U.S.C. 403 (BAH) set statutory authority. MCO 7300.21B<Citation source="MCO 7300.21B" /> covers Marine Corps financial management procedures. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> covers MCTFS transactions. The processing workflow maps to NAVMC 3500.3E T-R event 0170-PERA-2004.
+
+## Related references
+
+- DoDFMR Vol 7A Chapters 25, 26, 27, 29, 30, 31. Allowances framework.
+- 37 U.S.C. 402 and 403. Statutory authority.
+- MCO 7300.21B. Marine Corps financial management SOP.
+- MCTFSPRIUM. MCTFS transactions.
+- NAVMC 3500.3E. T-R event 0170-PERA-2004.

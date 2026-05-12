@@ -1,0 +1,123 @@
+---
+title: "DTS Check-In / Check-Out and Profile Management - S-1 Procedural Page"
+slug: "check-in-checkout-and-profile-management"
+summary: "Open, transfer, and close DTS profiles on inbound, outbound, and separation per MCO 4650.39A Chapter 3 paragraph 3 and paragraph 4.b.(6)(d)."
+roles: ["admin", "leader"]
+lastVerified: "2026-05-11"
+unitType: "s1-g1"
+topic: "dts"
+function: "OPER"
+skillLevel: 2000
+trEventCode: "0102-OPER-2002"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 4650.39A"
+billets: ["s-1-officer", "s-1-chief", "odta"]
+gradesPerforming: ["Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 4650.39A Chapter 3 paragraph 3 (Check-In / Check-Out, Profile Management)"
+  - "MCO 4650.39A paragraph 4.b.(6)(d) Check-In / Check-Out procedures"
+  - "MCO 4650.39A Chapter 1 paragraph 3 (ODTA)"
+  - "MCO 4650.39A Chapter 6 paragraph 1-2 (Complete Traveler Information List)"
+  - "MCO 4650.39A Chapter 6 paragraph 3.d (Complete Traveler Information List reconciliation)"
+  - "MCO 4600.40C Government Travel Charge Card Program (GTCCP)"
+  - "MCO 5210.11F Marine Corps Records Management Program"
+  - "SECNAVINST 5211.5F DON Privacy Program"
+  - "5 USC 552a Privacy Act of 1974"
+performanceSteps:
+  - "Receive inbound, outbound, or separation notification"
+  - "Open or import the DTS profile per Chapter 3 paragraph 3"
+  - "Validate identity and unit assignment against MCTFS"
+  - "Verify GTCC profile alignment with the APC"
+  - "Confirm EFT data accuracy"
+  - "Check for outstanding travel advances, unsettled authorizations, or vouchers"
+  - "Check for outstanding DTS debt"
+  - "Run the routing list reassignment"
+  - "Close or transfer the profile"
+  - "Document the action in the unit check-in / check-out file"
+relatedRoles:
+  marine: "/marines/dts/check-in-checkout-and-profile-management"
+  leader: "/leader/dts/check-in-checkout-and-profile-management"
+  commander: "/commander/dts/check-in-checkout-and-profile-management"
+source:
+  title: "DTS Check-In / Check-Out and Profile Management - MCO 4650.39A Chapter 3"
+  publisher: "Headquarters Marine Corps Manpower Information Support Systems (MIF)"
+---
+
+## Role and responsibility
+
+The ODTA opens, transfers, and closes the DTS profile per MCO 4650.39A<Citation source="MCO 4650.39A" /> Chapter 3 paragraph 3 (Profile Management). The unit commander establishes check-in and check-out procedures per paragraph 4.b.(6)(d) so command personnel route through the ODTA on every inbound and outbound action. The LDTA reconciles the Complete Traveler Information List monthly per Chapter 6 paragraphs 1-2 to surface profile mismatches. The APC coordinates GTCC profile alignment per MCO 4600.40C<Citation source="MCO 4600.40C" />. The S-1 chief tracks the inbound and outbound roster against the DTS profile roster.
+
+Source documents flow from the unit alpha roster, the HR civilian roster, the morning report, the inbound roster, MCTFS check-in data, the GTCC card status, and the DTS profile. Profile management outputs include the opened profile in the correct organization, the transferred profile on PCS, the closed profile on separation, the cleared outstanding advance, the cleared unsettled authorization, the cleared voucher, the cleared debt, the routing-list update, and the documentation in the unit check-in / check-out file.
+
+Per Chapter 3 paragraph 3, the ODTA opens or receives the DTS profile into the designated organization. Per paragraph 4.b.(6)(d), the unit commander establishes the check-in / check-out procedure. Per Chapter 6 paragraph 3.d, the ODTA verifies profile information for accuracy (SSN, address, unit information, GTCC duplication, EFT data) during the monthly Complete Traveler Information List reconciliation.
+
+## Trigger events
+
+- Inbound PCS arrival triggers profile open or transfer.
+- New civilian hire triggers profile open.
+- Outbound PCS triggers profile transfer.
+- Separation triggers profile close after pre-separation reconciliation.
+- Retirement triggers profile close.
+- Detachment or attachment changes trigger profile reassignment.
+- Monthly Complete Traveler Information List review surfaces mismatches.
+- IGMC Defense Travel System FA inspection notice arrives.
+
+## Processing workflow
+
+1. Receive the inbound, outbound, or separation notification. The unit S-1 receives the check-in or check-out package from the section chief or the Marine.
+2. Open or import the DTS profile. Per MCO 4650.39A<Citation source="MCO 4650.39A" /> Chapter 3 paragraph 3, the ODTA opens a new profile or imports an existing profile into the designated organization.
+3. Validate identity and unit assignment. The ODTA cross-checks the alpha roster, the morning report, the inbound roster, and the MCTFS check-in record against the DTS profile.
+4. Verify GTCC profile alignment. Per MCO 4600.40C<Citation source="MCO 4600.40C" />, the APC and the ODTA confirm the GTCC card status, the activation, and the credit limit settings.
+5. Confirm EFT data. Per Chapter 6 paragraph 3.d, the ODTA verifies the EFT data on the profile against the traveler's MyPay account. Wrong EFT data fails the voucher payment.
+6. Check for outstanding travel actions. Per paragraph 4.b.(6)(d), the ODTA verifies no outstanding travel advance, no unsettled authorization, no unsubmitted voucher, and no DTS debt sits on the profile before transfer or separation.
+7. Run the routing list reassignment. Per Chapter 1 paragraph 3.d, on transfer the ODTA pulls the traveler from the gaining organization's routing list or inserts into the new routing list.
+8. Close or transfer the profile. The ODTA closes the profile on separation or moves the profile to the gaining unit on PCS.
+9. Document the action. The ODTA logs the action in the unit check-in / check-out file. The file holds the inbound or outbound roster annotation, the GTCC reconciliation note, the EFT verification, and the cleared outstanding actions list.
+10. Brief the LDTA. The ODTA briefs the LDTA on the inbound and outbound count during the monthly Complete Traveler Information List reconciliation.
+
+## Systems of record and forms
+
+### Systems
+
+- Defense Travel System (DTS). System of record for the traveler profile.
+- MCTFS. Source of the unit roster and the inbound and outbound notifications.
+- Marine Online (MOL). Surfaces orders and check-in status.
+- GTCC vendor portal. APC view into card status.
+- Unit Check-In / Check-Out File. Local file holding the action log.
+
+### Forms
+
+- Unit Check-In Sheet. Local format the inbound Marine signs.
+- Unit Check-Out Sheet. Local format the outbound Marine signs.
+- DTS Profile Audit Sheet. Local format documenting profile validation on inbound or outbound.
+- GTCC Card Status Note. Local format the APC signs.
+
+## Common pitfalls
+
+- Profile opened in the wrong organization. The ODTA reassigns the profile to the correct unit organization per Chapter 3 paragraph 3.
+- EFT data wrong on the profile. The voucher payment fails. Verify EFT during check-in per Chapter 6 paragraph 3.d.
+- GTCC card not active on inbound arrival. Coordinate with the APC ahead of arrival.
+- Outstanding voucher sits on the profile at check-out. Per paragraph 4.b.(6)(d), clear the voucher before check-out. A pending voucher at separation triggers out-of-service debt action.
+- Outstanding advance sits on the profile at separation. Per Chapter 9, the DMM clears the advance before separation. An uncollected advance becomes out-of-service debt.
+- Profile not closed on separation. Stale profiles inflate the unit roster. The Complete Traveler Information List flags the mismatch.
+- Routing list not updated on transfer. The traveler keeps a routing assignment in the losing unit. Authorizations route to the wrong AO.
+
+## Decision points
+
+- Profile transfer versus profile open. The ODTA imports the existing profile on PCS where the system supports the transfer. The ODTA opens a new profile when import fails.
+- Pre-separation versus post-separation debt clearance. Per Chapter 9, debt clears before separation where possible. Uncollectible debt moves to out-of-service debt at separation.
+- Civilian profile versus military profile. The ODTA opens the appropriate profile type. Civilian and military profiles carry distinct entitlement frameworks per the JTR<Citation source="JTR" />.
+
+## Authority
+
+This sub-page sits under MCO 4650.39A<Citation source="MCO 4650.39A" /> Chapter 3 paragraph 3 (Profile Management) and paragraph 4.b.(6)(d) (Check-In / Check-Out procedures). Chapter 1 paragraph 3 (ODTA) names the role owner. Chapter 6 paragraphs 1-2 and paragraph 3.d set the monthly reconciliation rule. MCO 4600.40C<Citation source="MCO 4600.40C" /> sets GTCC profile alignment. MCO 5210.11F<Citation source="MCO 5210.11F" /> covers records retention. SECNAVINST 5211.5F<Citation source="SECNAVINST 5211.5F" /> paragraph 7 and 5 USC 552a<Citation source="5 USC 552a" /> cover privacy for profile data.
+
+## Related references
+
+- MCO 4650.39A Chapter 3 paragraph 3. Profile management rule.
+- MCO 4650.39A paragraph 4.b.(6)(d). Check-In / Check-Out procedures.
+- MCO 4650.39A Chapter 6 paragraphs 1-2 and 3.d. Complete Traveler Information List reconciliation.
+- MCO 4600.40C. GTCC profile alignment.
+- MCO 5210.11F. Records retention.
+- SECNAVINST 5211.5F and 5 USC 552a. Privacy Act.

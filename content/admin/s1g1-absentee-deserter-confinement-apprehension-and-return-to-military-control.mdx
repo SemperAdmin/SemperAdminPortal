@@ -1,0 +1,103 @@
+---
+title: "Apprehension and Return to Military Control (RMC)"
+slug: "apprehension-and-return-to-military-control"
+summary: "Process apprehension, IHCA coordination, MCACU escort transport, DD Form 616 return processing, and the UD-MIPS return-to-duty transaction."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-12"
+unitType: "s1-g1"
+topic: "absentee-deserter-confinement"
+function: "GENA"
+skillLevel: 2000
+trEventCode: "0102-GENA-2109"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 1620.3A"
+billets: ["s-1-clerk", "s-1-chief", "g-1-officer", "adjutant"]
+gradesPerforming: ["Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 1620.3A Marine Corps Absentee and Deserter Apprehension Program"
+  - "MCO 5800.16 Legal Support and Administration Manual"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "JAGINST 5800.7G Manual of the Judge Advocate General"
+  - "MCO P1900.16F Marine Corps Separation and Retirement Manual"
+relatedRoles:
+  marine: "/marines/absentee-deserter-confinement/apprehension-and-return-to-military-control"
+  leader: "/leader/absentee-deserter-confinement/apprehension-and-return-to-military-control"
+  commander: "/commander/absentee-deserter-confinement/apprehension-and-return-to-military-control"
+source:
+  title: "MCO 1620.3A Paragraph 4b Subordinate Element Missions and MCO 5800.16 Return of Absentee or Deserter to Military Control"
+  publisher: "Headquarters Marine Corps PP&O PSL"
+---
+
+## Role and responsibility
+
+S-1 admin specialists process the apprehension and return packet. The S-1 clerk receives the return notification from the MCACU escort, the gaining brig, or civilian law enforcement. The S-1 chief builds the DD Form 616 Report of Return of Absentee, cuts the return-to-duty UD-MIPS transaction, and reconciles pay restart timing. The S-1 officer signs by direction on the return packet and routes administrative separation initiation per MCO P1900.16F when the case meets separation criteria.
+
+Source documents flow from the MCACC return-to-military-control (RMC) report, the apprehending agency notification, the MCACU escort transport records, and the local brig receiving documents. Outputs include the DD Form 616, the return-to-duty UD-MIPS transaction, the pay restart, Page 11 entries, and the certified return case packet in the OMPF Field Folder.
+
+Late RMC reporting causes pay restart errors, MCACC accountability gaps, and NCIC removal failures. Cut DD Form 616 the day the Marine returns to military control, not the day of in-processing at the gaining command.
+
+## Trigger events
+
+- MCACC reports the absentee or deserter located and apprehended.
+- Civilian law enforcement notifies the unit of an IHCA (in hands of civil authorities) Marine.
+- The absentee or deserter voluntarily surrenders to military control at any Marine Corps installation, Navy installation, or other Service unit.
+- MCACU escort transport completes and delivers the Marine to the receiving unit or brig.
+- The unit receives a hospitalized-absentee notification from a civilian or military medical facility.
+
+## Processing workflow
+
+1. Receive the RMC notification. MCACC, the apprehending agency, or the surrendering installation notifies the parent unit. Capture the apprehending agency, location, date and time of apprehension, and Marine status (escort, IHCA, hospitalized).
+2. Coordinate transport. When the Marine is IHCA or located outside the parent unit area, coordinate with MCACU Washington DC or MCACU San Diego for escort transport per MCO 1620.3A<Citation source="MCO 1620.3A" /> Paragraph 4b(2). MCACU escorts are armed and certified for absentee, deserter, and prisoner transport per FAA regulations.
+3. Receive the Marine. The receiving unit or brig signs for the Marine at the moment of delivery. The chain of custody record passes from the escort to the receiving authority.
+4. Cut DD Form 616. Build the Report of Return of Absentee per MCO 5800.16<Citation source="MCO 5800.16" />. Include the date, time, location of apprehension or surrender, apprehending agency, Marine condition on return, and any judicial action pending.
+5. Cut the return-to-duty UD-MIPS transaction. Submit through UD-MIPS at the moment of return per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> RMC transaction format. The transaction restarts pay effective the return date.
+6. Notify MCACC and DIP. The DIP at HQMC requires the RMC notification within 24 hours per MCO 1620.3A<Citation source="MCO 1620.3A" /> Paragraph 4b(1) to remove the DD Form 553 entry from NCIC and clear the deserter caseload.
+7. Coordinate confinement decision. The commander decides on pretrial confinement, restriction, or return to full duty per JAGINST 5800.7G<Citation source="JAGINST 5800.7G" /> Chapter 5 pretrial confinement rules.
+8. Process Page 11 entries. Document the absence period, the return circumstances, and any judicial action.
+9. Initiate administrative separation review. The commander decides on administrative separation per MCO P1900.16F<Citation source="MCO P1900.16F" /> for absences over 30 days or with aggravating circumstances.
+10. File the certified return packet. Place DD Form 616, the apprehending agency report, the MCACU escort records, the chain of custody record, the Page 11 entries, and any judicial action in the OMPF Field Folder under the legal tab.
+
+## Systems of record and forms
+
+### Systems
+
+- MCTFS. Holds the RMC transaction and restarts pay.
+- UD-MIPS. Cuts the return-to-duty transaction with DD Form 616 as the KSD.
+- NCIC. Receives the DD Form 553 removal request through MCACC.
+- MCACC Deserter Information Point. 24-hour control center for RMC reporting (DIP).
+- Brig accountability system. Tracks confined Marines when the case routes to pretrial confinement.
+
+### Forms
+
+- DD Form 616 Report of Return of Absentee. The primary return record.
+- DD Form 553 Deserter or Absentee Wanted by the Armed Forces. The retired entry the unit removes from NCIC.
+- NAVMC 118 (11) Administrative Remarks. Page 11 documenting absence period, return circumstances, and judicial action.
+- NAVMC 118 (3) Chronological Record. Page 3 noting the UA, deserter declaration, and RMC dates.
+- DD Form 458 Charge Sheet. Used when the case proceeds to court-martial.
+
+## Common pitfalls
+
+- DD Form 616 cut late. The return-to-duty UD-MIPS transaction stalls and pay restart fails. Cut DD Form 616 at the moment the Marine returns to military control.
+- MCACC notification skipped. The DIP holds an open caseload and NCIC retains the DD Form 553 entry. Notify DIP within 24 hours of return per MCO 1620.3A<Citation source="MCO 1620.3A" /> Paragraph 4b(1).
+- Pay restart timing wrong. Pay restarts the date of return, not the date of in-processing at the parent unit. Cut the UD-MIPS RMC transaction the same day as return.
+- Administrative separation review skipped. The Marine returns to full duty without command review of separation criteria per MCO P1900.16F<Citation source="MCO P1900.16F" />.
+- Page 11 entry skipped on return. The OMPF lands without absence documentation. Process the Page 11 within 5 working days of return per MCO P1070.12K Chapter 6.
+
+## Decision points
+
+- Pretrial confinement versus restriction. The returning Marine poses flight risk or threat to good order. The commander orders pretrial confinement per JAGINST 5800.7G<Citation source="JAGINST 5800.7G" /> Chapter 5 with the 7-day review hearing.
+- IHCA release versus MCACU escort. The Marine sits in civilian custody on military and civilian charges. The S-1 chief and MCACC coordinate release timing and escort transport.
+- Administrative separation versus retention. The commander reviews the absence record, judicial action, and rehabilitation potential per MCO P1900.16F<Citation source="MCO P1900.16F" />.
+
+## Authority
+
+This sub-page maps to NAVMC 3500.3E T-R event 0102-GENA-2109 Process Report of Return and 0111-GENA-2017 Process Return of Absentee or Deserter to Military Control. The processing workflow sits under MCO 1620.3A<Citation source="MCO 1620.3A" /> Paragraph 4b Subordinate Element Missions, MCO 5800.16<Citation source="MCO 5800.16" /> Return of Absentee or Deserter to Military Control rules, MCTFSPRIUM<Citation source="MCTFSPRIUM" /> RMC transaction format, and JAGINST 5800.7G<Citation source="JAGINST 5800.7G" /> Chapter 5 pretrial confinement procedures.
+
+## Related references
+
+- MCO 1620.3A Marine Corps Absentee and Deserter Apprehension Program. MCACC, DIP, MCACU mission and return reporting.
+- MCO 5800.16 Legal Support and Administration Manual. DD Form 616 processing rules.
+- MCTFSPRIUM. RMC transaction format.
+- JAGINST 5800.7G Manual of the Judge Advocate General. Chapter 5 pretrial confinement.
+- MCO P1900.16F Marine Corps Separation and Retirement Manual. Administrative separation criteria.

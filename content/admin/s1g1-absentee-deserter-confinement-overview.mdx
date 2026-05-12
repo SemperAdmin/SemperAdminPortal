@@ -1,0 +1,131 @@
+---
+title: "Absentee, Deserter, and Confinement Processing - S-1 Procedural Page"
+slug: "overview"
+summary: "Process Unauthorized Absence and Deserter cases, route Wanted by Armed Forces actions, and coordinate confinement."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-10"
+unitType: "s1-g1"
+topic: "absentee-deserter-confinement"
+function: "GENA"
+skillLevel: 2000
+trEventCode: "0102-GENA-2108"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 1620.3A"
+billets: ["s-1-clerk", "s-1-chief", "g-1-officer", "adjutant"]
+gradesPerforming: ["Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 1620.3A Marine Corps Absentee and Deserter Apprehension Program"
+  - "MCO 5800.16 Legal Support and Administration Manual"
+  - "MCO 1640.6 Marine Corps Confinement Manual"
+  - "DODI 1325.02 Desertion and Unauthorized Absence or Absence Without Leave"
+  - "DODFMR Vol 7A Chapter 34 Pay Entitlement of Members Missing or MIA"
+  - "DODFMR Vol 7A Chapter 44 Withholding of Income Tax (CZTE rules at paragraph 2.3)"
+  - "DODFMR Vol 7A Chapter 48 Court-Martial Sentences (forfeitures and confinement pay)"
+  - "DODFMR Vol 7A Chapter 49 Non-Judicial Punishment (forfeitures)"
+  - "DODFMR Vol 7A Appendix B Disposition of Forfeitures and Fines as a Result of Courts-Martial, Nonjudicial Punishment, and Desertion"
+  - "JAGINST 5800.7G Manual of the Judge Advocate General"
+  - "UCMJ Article 86 Absence Without Leave"
+  - "UCMJ Article 87 Missing Movement"
+  - "MCO P1900.16F Marine Corps Separation and Retirement Manual"
+  - "MCO P1070.12K Individual Records Administration Manual"
+  - "MCO 5000.14D Marine Corps Administrative Procedures"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+performanceSteps:
+  - "Receive UA notification from the chain of command"
+  - "Verify accountability through MOL and MCTFS"
+  - "Cut the UA transaction in UD-MIPS at hour 24"
+  - "Coordinate with the duty officer on muster verification"
+  - "Cut the Deserter transaction at day 30"
+  - "Process Absentee Wanted by the Armed Forces (DD Form 553)"
+  - "Coordinate confinement orders with the brig"
+  - "Process the Return of Absentee or Deserter (DD Form 616)"
+  - "Cut the return-to-duty UD-MIPS transaction"
+  - "Reconcile pay through MCTFS punishment transactions"
+  - "Process Page 11 entries documenting the absence"
+  - "File the certified case packet in the OMPF Field Folder"
+relatedRoles:
+  marine: "/marines/absentee-deserter-confinement/overview"
+  leader: "/leader/absentee-deserter-confinement/overview"
+  commander: "/commander/absentee-deserter-confinement/overview"
+source:
+  title: "Absentee, Deserter, and Confinement Processing - NAVMC 3500.3E T-R Events"
+  publisher: "Headquarters Marine Corps M&RA"
+---
+
+## Role and responsibility
+
+S-1 admin specialists own absentee, deserter, and confinement processing at the unit level. The S-1 clerk runs the daily accountability check and cuts the UA transaction at hour 24. The S-1 chief processes the deserter package at day 30 and routes the DD Form 553. The S-1 officer signs by direction on confinement orders and the return packet.
+
+Source documents flow from the duty officer report, the muster sheet, MOL accountability data, and law enforcement notifications. UA, deserter, and return transactions land in UD-MIPS with the duty officer report, DD Form 553, and DD Form 616 as KSDs. Outputs include the UA pay stop, the deserter declaration, the law enforcement record, and the OMPF Field Folder case packet.
+
+MCAAT inspects the case packet for UA timing, deserter declaration timing, DD Form 553 submission, and pay reconciliation on return. Late UA transactions, missing deserter declarations, and unreconciled pay on return trigger findings. Cut the UA at hour 24, not the next day.
+
+## Trigger events
+
+- Marine fails to report at scheduled muster or work call.
+- Duty officer reports the Marine missing on accountability check.
+- Marine departs without authorization or fails to return from leave.
+- 30-day UA threshold reached triggering deserter status.
+- Apprehension by civilian or military law enforcement.
+- Voluntary return of absentee or deserter to military control.
+- Confinement ordered by court-martial or pretrial confinement order.
+
+## Processing workflow
+
+1. Receive UA notification. Pull the duty officer report or chain of command notification. Cross-check EDIPI and time of last accountability. The S-1 clerk runs receipt.
+2. Verify accountability. Check MOL and MCTFS for any open leave, TAD, or hospitalization. Confirm the Marine is not on authorized absence.
+3. Cut the UA transaction at hour 24. Submit through UD-MIPS with the duty officer report as the KSD per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> UA reporting format. Stop pay effective hour 1 of the absence per UCMJ Article 86<Citation source="UCMJ Article 86" />.
+4. Coordinate muster verification. Run a 100 percent muster on the duty section to confirm the absence is not a clerical error. The duty officer countersigns.
+5. Cut the deserter transaction at day 30. Submit the deserter declaration through UD-MIPS per MCO 5800.16<Citation source="MCO 5800.16" />. Notify legal and the chain of command.
+6. Process DD Form 553. Build the Absentee Wanted by the Armed Forces packet and route through the unit security officer to law enforcement per JAGINST 5800.7G<Citation source="JAGINST 5800.7G" /> Chapter 4.
+7. Coordinate confinement. When the Marine returns or is apprehended, coordinate with the local brig on confinement orders. The S-1 officer signs by direction.
+8. Process the return. On apprehension or voluntary return, cut DD Form 616 Return of Absentee or Deserter to Military Control per MCO 5800.16<Citation source="MCO 5800.16" />.
+9. Cut the return-to-duty transaction. Submit through UD-MIPS at the moment of return. Restart pay effective the return date.
+10. Reconcile pay. Process forfeiture, restitution, and any court-martial punishment through MCTFS punishment transactions per DODFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 48 Court-Martial Sentences, Chapter 49 Non-Judicial Punishment, and Appendix B Disposition of Forfeitures and Fines.
+11. Process Page 11 entries. Document the UA period, the deserter declaration, the return circumstances, and any judicial action per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6.
+12. File the certified case packet. Place the duty officer report, DD Form 553, DD Form 616, Page 11 entries, and judicial action in the OMPF Field Folder under the legal tab.
+
+## Systems of record and forms
+
+### Systems
+
+- MCTFS. Holds the UA, deserter, and return state with pay implications.
+- UD-MIPS. Cuts UA, deserter, and return transactions with KSDs.
+- MOL. Surfaces accountability data including authorized absences.
+- NCIC. National Crime Information Center receives DD Form 553 entries.
+- Brig accountability system. Tracks confined Marines.
+- OMPF Field Folder. Holds the certified case packet.
+
+### Forms
+
+- DD Form 553 Absentee Wanted by the Armed Forces. Routed to law enforcement at deserter declaration.
+- DD Form 616 Report of Return of Absentee. Cut on return or apprehension.
+- DD Form 458 Charge Sheet. Used when the case proceeds to court-martial.
+- NAVMC 118 (11) Administrative Remarks. Page 11 documenting absence and judicial action.
+- NAVMC 118 (3) Chronological Record. Page 3 noting the UA, deserter, and return.
+
+## Common pitfalls
+
+- UA transaction cut late. Pay continues past hour 24 of absence. Refer the overpayment to recoupment per DODFMR Vol 7A<Citation source="DODFMR Vol 7A" /> applicable forfeiture chapter. UA status differs from Missing in Action status per Chapter 34.
+- Deserter declaration skipped at day 30. The Marine remains in UA status indefinitely. Cut the deserter declaration on a fixed tickler at day 30 per MCO 5800.16<Citation source="MCO 5800.16" />.
+- DD Form 553 not submitted. Law enforcement does not enter the absentee in NCIC. Submit DD Form 553 within 24 hours of deserter declaration.
+- DD Form 616 missing on return. The pay restart fails for lack of certified return documentation. Cut DD Form 616 at the moment of return.
+- Page 11 entry skipped on return. The OMPF lands without absence documentation. Process the Page 11 within 5 working days of return per MCO P1070.12K<Citation source="MCO P1070.12K" />.
+
+## Decision points
+
+- UA versus authorized absence. The Marine missed muster but is on hospitalization or emergency leave. The S-1 chief verifies authorization before cutting UA per MCTFSPRIUM<Citation source="MCTFSPRIUM" />.
+- Deserter versus prolonged UA. The Marine reaches 30 days of UA. The deserter declaration runs as a function of time, not intent per MCO 5800.16<Citation source="MCO 5800.16" />. The S-1 officer signs.
+- Pretrial confinement versus return to duty. The returning Marine poses flight risk or threat. The commander orders pretrial confinement and the S-1 officer routes the order per JAGINST 5800.7G<Citation source="JAGINST 5800.7G" /> Chapter 5.
+
+## Authority
+
+This category sits under MCO 1620.3A<Citation source="MCO 1620.3A" /> Marine Corps Absentee and Deserter Apprehension Program, MCO 5800.16<Citation source="MCO 5800.16" /> Legal Support and Administration Manual, and JAGINST 5800.7G<Citation source="JAGINST 5800.7G" /> Manual of the Judge Advocate General. Statutory authority sits at UCMJ Articles 86 and 87. The parent DoD framework is DODI 1325.02 Desertion and Unauthorized Absence or Absence Without Leave. Confinement administration sits at MCO 1640.6 Marine Corps Confinement Manual. S-1 responsibilities sit at MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 4. The processing workflow maps to NAVMC 3500.3E T-R events 0102-GENA-2108 Process Absentee Wanted by the Armed Forces, 0102-GENA-2109 Process Report of Return, 0102-GENA-2110 Coordinate confinement process, 0111-GENA-2016 Process Deserter or Absentee cases, and 0111-GENA-2017 Process Return of Absentee or Deserter to Military Control. No MCAAT track maps directly to this category. The Legal Administration FA checklist provides adjacent audit coverage.
+
+## Sub-pages
+
+- Unauthorized absence tracking and reporting. UA declaration at hour 24, daily muster, UD-MIPS UA transactions.
+- Deserter declaration and DD Form 553 processing. Day 30 deserter declaration, DD Form 553 routing, NCIC entry, MCACC notification.
+- Appreh

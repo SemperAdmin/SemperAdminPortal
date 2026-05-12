@@ -1,0 +1,114 @@
+---
+title: "Unit Readiness Reporting - Personnel Pillar (P-Rating)"
+slug: "unit-readiness-reporting-personnel-pillar"
+summary: "Build the personnel pillar input to unit readiness reporting in DRRS, calculate the P-rating, and validate personnel readiness data against MCTFS authoritative data source pulls."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-12"
+unitType: "s1-g1"
+topic: "strength-manpower-reporting"
+function: "OPER"
+skillLevel: 2100
+trEventCode: "0102-MPMN-1003"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 3000.13B"
+billets: ["s-1-chief", "g-1-officer", "manpower-officer", "adjutant"]
+gradesPerforming: ["SSgt", "GySgt", "MGySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 3000.13B Marine Corps Readiness Reporting"
+  - "CJCSI 3401.02B Force Readiness Reporting"
+  - "DoDD 7730.65 DoD Readiness Reporting System"
+  - "MARADMIN 518-21 DRRS-MC Consolidation to DRRS"
+  - "MCO 1300.8 Marine Corps Personnel Assignment Policy"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+relatedRoles:
+  marine: "/marines/strength-manpower-reporting/unit-readiness-reporting-personnel-pillar"
+  leader: "/leader/strength-manpower-reporting/unit-readiness-reporting-personnel-pillar"
+  commander: "/commander/strength-manpower-reporting/unit-readiness-reporting-personnel-pillar"
+source:
+  title: "MCO 3000.13B Marine Corps Readiness Reporting Paragraph 4 Execution and DRRS Personnel Readiness Inputs"
+  publisher: "Headquarters Marine Corps Plans, Policies, and Operations (POR)"
+---
+
+## Role and responsibility
+
+S-1 admin specialists own the personnel pillar input to unit readiness reporting. The S-1 chief pulls the MCTFS authoritative data source (ADS) for assigned strength, available strength, and critical MOS fill. The 0170 Manpower Officer calculates the P-rating per MCO 3000.13B. The adjutant builds the personnel input narrative for the commander assessment. The commander signs the readiness report with the personnel pillar narrative.
+
+Source documents flow from the MCTFS ADS pull, the unit T-O from TFSMS, the BIC vacancy report, the non-available roster (LIMDU, PCS, hospitalization, deployment), the MMEA monitor projection, and the commander assessment narrative. Outputs include the P-rating value (P-1 through P-4), the personnel input narrative, the supporting MCTFS pull record, and the certified DRRS submission.
+
+MCAAT and IGMC inspect the P-rating calculation against the MCTFS ADS pull, the BIC reconciliation, and the commander assessment. P-ratings unsupported by ADS data trigger findings.
+
+## Trigger events
+
+- Monthly DRRS readiness reporting cycle opens.
+- Triggered readiness report event (deployment, exercise, change of mission).
+- Significant manning change (gain or loss exceeding the report threshold).
+- Commander change-of-command transition triggers a baseline readiness report.
+- MEF or higher headquarters direct an out-of-cycle readiness assessment.
+
+## P-rating framework
+
+MCO 3000.13B defines the personnel readiness rating (P-rating) on a four-level scale tied to assigned strength against T-O strength, available strength against assigned strength, and critical MOS fill against critical MOS T-O.
+
+- P-1. The unit has the required strength to undertake the full wartime mission.
+- P-2. The unit has the required strength to undertake the majority of the wartime mission.
+- P-3. The unit has the required strength to undertake portions of the wartime mission.
+- P-4. The unit lacks the required strength to undertake the wartime mission.
+
+The P-rating uses the lowest score across the three substrate calculations (assigned strength percentage, available strength percentage, critical MOS fill percentage) per MCO 3000.13B<Citation source="MCO 3000.13B" /> Paragraph 4.
+
+## Processing workflow
+
+1. Pull the MCTFS ADS data. The S-1 chief pulls the authoritative data source for assigned strength, available strength, and critical MOS fill at the report cycle cutoff date.
+2. Pull the T-O from TFSMS. Cross-reference the T-O baseline against the assigned strength pull.
+3. Build the non-available roster. Identify Marines non-available for the wartime mission (LIMDU, hospitalization, PCS in transit, deployment in support of another unit, legal hold).
+4. Identify the critical MOS list. Pull the critical MOS list from the unit METL and the HQMC critical MOS designations per MCO 3000.13B<Citation source="MCO 3000.13B" /> Paragraph 4b(1)(l).
+5. Calculate the substrate percentages. Compute assigned strength percentage, available strength percentage, and critical MOS fill percentage against the T-O baseline.
+6. Apply the lowest-score rule. The P-rating takes the lowest of the three substrate scores per MCO 3000.13B<Citation source="MCO 3000.13B" /> Paragraph 4.
+7. Build the personnel input narrative. The adjutant drafts the narrative covering the manning posture, gap drivers, mitigation actions, and projected closure.
+8. Route for commander assessment. The commander reviews the P-rating, the substrate scores, the narrative, and signs the readiness report.
+9. Submit to DRRS. Submit through the DRRS reporting cycle per MARADMIN 518-21 DRRS-MC consolidation direction.
+10. File the supporting record. Place the MCTFS ADS pull, the substrate calculation, the narrative, and the commander signature in the readiness report file.
+
+## Systems of record and forms
+
+### Systems
+
+- DRRS. Defense Readiness Reporting System (consolidated from DRRS-MC per MARADMIN 518-21).
+- MCTFS. Master ADS for personnel readiness inputs per MCO 3000.13B<Citation source="MCO 3000.13B" /> Paragraph 4.
+- TFSMS. T-O baseline for the substrate calculation.
+- Commander Readiness Handbook. HQMC PP&O reference for commander narrative.
+
+### Forms
+
+- DRRS Personnel Pillar Input. The reported P-rating with supporting substrate values.
+- Personnel Input Narrative. The commander narrative covering the manning posture.
+- MCTFS ADS Pull Record. The audit record supporting the P-rating.
+- Critical MOS List. The unit critical MOS list tied to the METL.
+
+## Common pitfalls
+
+- P-rating unsupported by ADS pull. The reported P-rating runs without an MCTFS pull date. Tie every reported P-rating to a dated MCTFS pull per MCO 3000.13B<Citation source="MCO 3000.13B" /> Paragraph 4.
+- Non-available roster undercounted. The assigned strength reads high without the non-available adjustment. Build the non-available roster from the LIMDU log, the hospitalization log, the PCS log, and the deployment roster.
+- Critical MOS list stale. The unit critical MOS list lags the METL refresh. Refresh the critical MOS list at the annual METL review and the FD2030 MOS divestiture window.
+- Lowest-score rule not applied. The reported P-rating averages the substrates instead of taking the lowest. The P-rating takes the lowest substrate score per MCO 3000.13B<Citation source="MCO 3000.13B" /> Paragraph 4.
+- Commander narrative skipped. The DRRS submission routes without the commander narrative. The commander narrative is required at every reporting cycle per the Commanders Readiness Handbook.
+
+## Decision points
+
+- P-2 versus P-3 boundary. The assigned strength substrate sits near the P-2 to P-3 threshold. The S-1 chief verifies the calculation against MCO 3000.13B<Citation source="MCO 3000.13B" /> substrate thresholds and routes the threshold-sensitive cases through the 0170 officer.
+- Critical MOS reporting under FD2030 divestiture. Divested MOSs no longer count against critical MOS fill. The 0170 officer reconciles the critical MOS list at every FD2030 implementation MARADMIN.
+- Triggered report versus scheduled cycle. The commander directs a triggered report on significant manning change. The S-1 chief pulls the ADS data and runs the substrate calculation at the trigger event.
+
+## Authority
+
+This sub-page maps to NAVMC 3500.3E T-R event 0102-MPMN-1003 Verify Personnel Readiness Data. The processing workflow sits under MCO 3000.13B<Citation source="MCO 3000.13B" /> Marine Corps Readiness Reporting Paragraph 4 Execution, CJCSI 3401.02B Force Readiness Reporting, DoDD 7730.65 DoD Readiness Reporting System, MARADMIN 518-21 DRRS-MC Consolidation, MCO 1300.8<Citation source="MCO 1300.8" /> Personnel Assignment Policy for the strength baseline, and MCTFSPRIUM<Citation source="MCTFSPRIUM" /> ADS pull formats. HQMC PP&O (POR) sponsors the readiness reporting program. Cross-reference deployments-exercises-operations category for the operational readiness pillars (S, R, T) and the commander overall (C) rating.
+
+## Related references
+
+- MCO 3000.13B Marine Corps Readiness Reporting. Primary order for the P-rating framework.
+- CJCSI 3401.02B Force Readiness Reporting. Parent Joint Force readiness policy.
+- DoDD 7730.65 DoD Readiness Reporting System. Parent DoD readiness policy.
+- MARADMIN 518-21 DRRS-MC Consolidation to DRRS. Reporting architecture update.
+- MCO 1300.8 Marine Corps Personnel Assignment Policy. Strength baseline anchor.
+- MCTFSPRIUM. ADS pull formats for the substrate calculation.

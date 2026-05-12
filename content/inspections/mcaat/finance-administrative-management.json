@@ -1,0 +1,426 @@
+{
+  "track": "mcaat",
+  "programNumber": "finance",
+  "slug": "administrative-management",
+  "section": "Finance",
+  "categoryLabel": "Administrative Management",
+  "title": "Administrative Management",
+  "summary": "MCAAT Finance checklist - Administrative Management. 14 unique items across 3 audiences.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "applicabilityLevel": "DO, FO, and Outside Agency",
+  "lastVerified": "2026-05-10",
+  "source": {
+    "title": "MCAAT Finance Checklist - Administrative Management",
+    "publisher": "Marine Corps Manpower and Reserve Affairs"
+  },
+  "subsections": [
+    {
+      "id": "04.0",
+      "title": "DO",
+      "description": "",
+      "items": [
+        {
+          "code": "14",
+          "question": "Were all deputies, agents, cashiers, custodians, and certifying officers properly appointed and given written operating instructions regarding their duties and responsibilities in accordance with the references? NOTE: This includes adherence to Certifying Officer Legislation and all applicable waivers.",
+          "references": [
+            "DoDFMR Vol. 5 Ch. 2 & 5, FPM Vol 4 Ch.2, and MCO 4650.39A Ch. 2"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "01",
+          "question": "Were all deputies, agents, cashiers, custodians, and certifying officers properly appointed and given written operating instructions regarding their duties and responsibilities in accordance with the references? NOTE: This includes adherence to Certifying Officer Legislation and all applicable waivers.",
+          "references": [
+            "DODFMR Vol. 5 Ch. 2 & 5 and FPM Vol 3 Ch.2 & MCO 4650.39A Ch. 2"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Are revocations issued to deputies, agents, cashiers, custodians, or certifying officers when their job assignment has been terminated in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 2 & 5 and FPM Vol 3 Ch.2 & MCO 4650.39A Ch. 2"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Are TFS Forms 3023 (specimen signature card) submitted in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 2 & FPM Vol 3 Ch. 2"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Is the DO's request to hold cash at personal risk submitted semi-annually or as needed to the approving authority? NOTE: The total cash accountability of all appointed agents combined must not exceed the cash accountability of DO.",
+          "references": [
+            "DODFMR Vol. 5 Ch. 3"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Are the facility, safeguarding of public funds, security equipment (i.e. alarm system), and security procedures inspected in accordance with the reference?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 3 par 030302.B and MCO 5530.14A Ch. 3"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Are MCTFS ELSIGs properly maintained to include the MELSIG and are the ELSIG reports posted to the RFF-KCI SharePoint in accordance with the references?",
+          "references": [
+            "FPM Vol 1 Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Are online unit diaries processed and maintained in accordance with the reference?",
+          "references": [
+            "FPM Vol 1 Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Does the office maintain the required accesses and / or separation of duties for the Document Tracking and Management System (DTMS)?",
+          "references": [
+            "DoDFMR Vol 5 Ch.1, FPM Vol 1 Ch. 2 & 16"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Does the office maintain the required accesses and / or separation of duties for the Defense Travel System (DTS)?",
+          "references": [
+            "DoDFMR Vol 5 Ch. 1, MCO 4650.39A Ch. 2, FPM Vol 2 Ch. 8"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Does the office maintain the required accesses and / or separation of duties for the Integrated Automated Travel System (IATS)?",
+          "references": [
+            "DoDFMR Vol 5 Ch. 1, FPM Vol 2 Ch. 8 & Appendix G, FPM Vol 1 Ch. 16"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Does the office maintain the required accesses and / or separation of duties for the Deployable Disbursing System (DDS)?",
+          "references": [
+            "DoDFMR Vol 5 Ch. 1, FPM Vol 1 Ch. 16, FPM Vol 3 Ch. 18, DDS User Manual"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Does the office maintain the required accesses and/or separation of duties for the CAPS-W System?",
+          "references": [
+            "FPM Vol 1 Ch. 16, FPM Vol 3 Ch. 12, RFF Policy Letter 1-16"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "13",
+          "question": "Does the office maintain separation of duties for ITS.gov and OTC.net?",
+          "references": [
+            "DoDFMR Vol 5 Ch. 5 & 11, FPM Vol 1 Ch. 16, FPM Vol 3 Ch. 18"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "05.0",
+      "title": "FO",
+      "description": "",
+      "items": [
+        {
+          "code": "14",
+          "question": "Were all deputies, agents, cashiers, custodians, and certifying officers properly appointed and given written operating instructions regarding their duties and responsibilities in accordance with the references? NOTE: This includes adherence to Certifying Officer Legislation and all applicable waivers.",
+          "references": [
+            "DoDFMR Vol. 5 Ch. 2 & 5, FPM Vol 4 Ch.2, and MCO 4650.39A Ch. 2"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "01",
+          "question": "Were all deputies, agents, cashiers, custodians, and certifying officers properly appointed and given written operating instructions regarding their duties and responsibilities in accordance with the references? NOTE: This includes adherence to Certifying Officer Legislation and all applicable waivers.",
+          "references": [
+            "DODFMR Vol. 5 Ch. 2 & 5 and FPM Vol 3 Ch.2 & MCO 4650.39A Ch. 2"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Are revocations issued to deputies, agents, cashiers, custodians, or certifying officers when their job assignment has been terminated in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 2 & 5 and FPM Vol 3 Ch.2 & MCO 4650.39A Ch. 2"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Are the facility, safeguarding of public funds, security equipment (i.e. alarm system), and security procedures inspected in accordance with the reference?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 3 par 030302.B and MCO 5530.14A Ch. 3"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Are MCTFS ELSIGs properly maintained to include the MELSIG and are the ELSIG reports posted to the RFF-KCI SharePoint in accordance with the references?",
+          "references": [
+            "FPM Vol 1 Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Are online unit diaries processed and maintained in accordance with the reference?",
+          "references": [
+            "FPM Vol 1 Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Does the office maintain the required accesses and / or separation of duties for the Document Tracking and Management System (DTMS)?",
+          "references": [
+            "DoDFMR Vol 5 Ch.1, FPM Vol 1 Ch. 2 & 16"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Does the office maintain the required accesses and / or separation of duties for the Defense Travel System (DTS)?",
+          "references": [
+            "DoDFMR Vol 5 Ch. 1, MCO 4650.39A Ch. 2, FPM Vol 2 Ch. 8"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Does the office maintain the required accesses and / or separation of duties for the Integrated Automated Travel System (IATS)?",
+          "references": [
+            "DoDFMR Vol 5 Ch. 1, FPM Vol 2 Ch. 8 & Appendix G, FPM Vol 1 Ch. 16"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Does the office maintain the required accesses and / or separation of duties for the Deployable Disbursing System (DDS)?",
+          "references": [
+            "DoDFMR Vol 5 Ch. 1, FPM Vol 1 Ch. 16, FPM Vol 3 Ch. 18, DDS User Manual"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "13",
+          "question": "Does the office maintain separation of duties for ITS.gov and OTC.net?",
+          "references": [
+            "DoDFMR Vol 5 Ch. 5 & 11, FPM Vol 1 Ch. 16, FPM Vol 3 Ch. 18"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "06.0",
+      "title": "Outside Agency",
+      "description": "",
+      "items": [
+        {
+          "code": "14",
+          "question": "Were all deputies, agents, cashiers, custodians, and certifying officers properly appointed and given written operating instructions regarding their duties and responsibilities in accordance with the references? NOTE: This includes adherence to Certifying Officer Legislation and all applicable waivers.",
+          "references": [
+            "DoDFMR Vol. 5 Ch. 2 & 5, FPM Vol 4 Ch.2, and MCO 4650.39A Ch. 2"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "01",
+          "question": "Were all deputies, agents, cashiers, custodians, and certifying officers properly appointed and given written operating instructions regarding their duties and responsibilities in accordance with the references? NOTE: This includes adherence to Certifying Officer Legislation and all applicable waivers.",
+          "references": [
+            "DODFMR Vol. 5 Ch. 2 & 5 and FPM Vol 3 Ch.2 & MCO 4650.39A Ch. 2"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Are revocations issued to deputies, agents, cashiers, custodians, or certifying officers when their job assignment has been terminated in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 2 & 5 and FPM Vol 3 Ch.2 & MCO 4650.39A Ch. 2"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Are MCTFS ELSIGs properly maintained to include the MELSIG and are the ELSIG reports posted to the RFF-KCI SharePoint in accordance with the references?",
+          "references": [
+            "FPM Vol 1 Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Are online unit diaries processed and maintained in accordance with the reference?",
+          "references": [
+            "FPM Vol 1 Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Does the office maintain the required accesses and / or separation of duties for the Document Tracking and Management System (DTMS)?",
+          "references": [
+            "DoDFMR Vol 5 Ch.1, FPM Vol 1 Ch. 2 & 16"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Does the office maintain the required accesses and / or separation of duties for the Defense Travel System (DTS)?",
+          "references": [
+            "DoDFMR Vol 5 Ch. 1, MCO 4650.39A Ch. 2, FPM Vol 2 Ch. 8"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "13",
+          "question": "Does the office maintain separation of duties for ITS.gov and OTC.net?",
+          "references": [
+            "DoDFMR Vol 5 Ch. 5 & 11, FPM Vol 1 Ch. 16, FPM Vol 3 Ch. 18"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        }
+      ]
+    }
+  ]
+}

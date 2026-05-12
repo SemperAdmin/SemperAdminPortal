@@ -1,0 +1,124 @@
+---
+title: "Pay Starts and Allowance Initiation - S-1 Procedural Page"
+slug: "pay-starts-and-allowance-initiation"
+summary: "Initiate BAH, BAS, COLA, FSA, SGLI, and Advance Pay on inbound per DoDFMR Vol 7A Chapters 26, 27, 32, 47, 67, and 68 with dependency validation and SGLI election review."
+roles: ["admin", "leader"]
+lastVerified: "2026-05-11"
+unitType: "s1-g1"
+topic: "inbound-management"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0170-PERA-2104"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "DoDFMR Vol 7A"
+billets: ["s-1-officer", "s-1-chief", "ipac-pay-clerk", "disbursing-technician"]
+gradesPerforming: ["Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "DoDFMR Vol 7A Chapter 25 (Subsistence and Basic Needs Allowances)"
+  - "DoDFMR Vol 7A Chapter 26 (Housing Allowances - BAH)"
+  - "DoDFMR Vol 7A Chapter 27 (Family Separation Allowance - FSA)"
+  - "DoDFMR Vol 7A Chapter 32 (Advance Pay)"
+  - "DoDFMR Vol 7A Chapter 47 (Servicemembers Group Life Insurance - SGLI)"
+  - "DoDFMR Vol 7A Chapter 67 (Cost of Living Allowance - CONUS)"
+  - "DoDFMR Vol 7A Chapter 68 (Cost of Living Allowance - OCONUS)"
+  - "DODI 1341.13 SGLI Program"
+  - "MCO 1300.8 Marine Corps Personnel Assignment Policy"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+performanceSteps:
+  - "Validate dependency status with marriage and birth certificates"
+  - "Initiate BAH at the inbound duty location per Chapter 26"
+  - "Validate BAS state per Chapter 25"
+  - "Initiate COLA CONUS per Chapter 67 when applicable"
+  - "Initiate COLA OCONUS per Chapter 68 on OCONUS arrival"
+  - "Process FSA on dependency-separation cases per Chapter 27"
+  - "Review SGLI election per Chapter 47 and DODI 1341.13"
+  - "Process Advance Pay request per Chapter 32 when requested"
+  - "Cut MCTFS pay transactions"
+  - "Verify LES on the next pay cut"
+relatedRoles:
+  marine: "/marines/inbound-management/pay-starts-and-allowance-initiation"
+  leader: "/leader/inbound-management/pay-starts-and-allowance-initiation"
+  commander: "/commander/inbound-management/pay-starts-and-allowance-initiation"
+source:
+  title: "Pay Starts and Allowance Initiation - DoDFMR Vol 7A"
+  publisher: "Office of the Under Secretary of Defense (Comptroller)"
+---
+
+## Role and responsibility
+
+The IPAC pay clerk and disbursing technician initiate pay starts and allowances on inbound per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapters 25 (BAS), 26 (BAH), 27 (FSA), 32 (Advance Pay), 47 (SGLI), 67 (COLA CONUS), and 68 (COLA OCONUS). The S-1 chief validates dependency status against marriage and birth certificates. The S-1 officer signs by direction on pay transaction routing. The Marine provides dependency documents, the prior LES, the SGLI election preference, and the Advance Pay request when applicable. DODI 1341.13 sets the SGLI Program framework.
+
+Source documents flow from the dependency documents, the inbound duty location for BAH rate, the prior LES for pay continuity, the SGLI election form, the OCONUS COLA designation, the Advance Pay request package per Chapter 32, and the prior MCTFS pay record. Pay starts and allowances outputs include the initiated BAH at the correct rate, the continued BAS, the initiated COLA, the FSA when applicable, the SGLI review record, the Advance Pay package when requested, the MCTFS pay transactions, and the verified LES.
+
+Per MCO 1300.8<Citation source="MCO 1300.8" /> and MCTFSPRIUM<Citation source="MCTFSPRIUM" />, pay and allowance starts run during the inbound process. The duty assumption date drives the effective date for most pays and allowances.
+
+## Trigger events
+
+- Inbound Marine arrives with dependency status change.
+- Marine arrives OCONUS triggering COLA OCONUS initiation.
+- Marine arrives CONUS at a COLA-designated location.
+- Marine requests Advance Pay during inbound.
+- Dependency status change drives FSA eligibility.
+- SGLI election change during inbound.
+- BAH rate location change on PCS.
+
+## Processing workflow
+
+1. Validate dependency status. The marriage certificate, birth certificates, and DEERS enrollment drive BAH dependent rate and FSA eligibility.
+2. Initiate BAH. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 26, the inbound duty location, the grade, and the dependent status drive the BAH rate.
+3. Validate BAS. Per Chapter 25, BAS continues at the standard rate for enlisted Marines and the officer rate for officers.
+4. Initiate COLA CONUS. Per Chapter 67, COLA CONUS applies at designated high-cost areas. The duty location drives the rate.
+5. Initiate COLA OCONUS. Per Chapter 68, OCONUS COLA initiates on duty assumption at the OCONUS location.
+6. Process FSA. Per Chapter 27, FSA applies when the Marine is separated from dependents by orders for more than 30 days. The duty assumption date drives the start.
+7. Review SGLI election. Per Chapter 47 and DODI 1341.13, the Marine reviews and adjusts SGLI elections during inbound. The SGLV 8286 records the election.
+8. Process Advance Pay. Per Chapter 32, the Marine requests Advance Pay on PCS. The S-1 supports the package. The disbursing office processes.
+9. Cut MCTFS pay transactions. Per MCTFSPRIUM<Citation source="MCTFSPRIUM" />, submit the BAH start, the BAS continuation, the COLA start, the FSA start, the SGLI update, and the Advance Pay through UD-MIPS.
+10. Verify LES. The next LES carries the corrected pay and allowance state.
+
+## Systems of record and forms
+
+### Systems
+
+- Marine Corps Total Force System (MCTFS). Holds pay records.
+- UD-MIPS. Cuts pay transactions per Appendix E.
+- LES. Validates pay rate and allowance.
+- DEERS via RAPIDS. Dependency verification.
+- MOL. Surfaces LES and entitlement data.
+
+### Forms
+
+- Dependency Documents. Marriage and birth certificates.
+- BAH Dependent Election Form. Per Chapter 26.
+- FSA Application. Per Chapter 27.
+- SGLV 8286 Election Form. Per Chapter 47 and DODI 1341.13.
+- Advance Pay Request Package. Per Chapter 32.
+
+## Common pitfalls
+
+- BAH rate set without dependency validation. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 26, the dependent status drives the rate.
+- COLA OCONUS not initiated on arrival. Per Chapter 68, COLA OCONUS pays from duty assumption.
+- FSA not processed on dependency separation. Per Chapter 27, FSA applies on orders separating the Marine from dependents.
+- SGLI election review skipped. Per Chapter 47 and DODI 1341.13, the inbound process includes SGLI review.
+- Advance Pay not processed within window. Per Chapter 32, the request timing drives the disbursement.
+- BAH effective date wrong. The duty assumption date drives the effective date for most allowances.
+- Multiple concurrent allowances without cap check. Some allowances have caps under Vol 7A.
+
+## Decision points
+
+- BAH location and rate. Per Chapter 26, the duty location and the dependent status drive the rate.
+- COLA versus OHA. OCONUS Marines receive COLA, OHA, or both based on location and housing per Chapters 26 and 68.
+- FSA application. Per Chapter 27, FSA-T (temporary), FSA-R (restricted), and FSA-S (ship) categories apply per the situation.
+- Advance Pay amount. Per Chapter 32, the Marine elects the amount up to the cap. Repayment runs through pay deductions.
+
+## Authority
+
+This sub-page sits under DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapters 25, 26, 27, 32, 47, 67, and 68. DODI 1341.13 covers SGLI Program. MCO 1300.8<Citation source="MCO 1300.8" /> covers inbound check-in. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> covers MCTFS pay transactions. The processing workflow maps to NAVMC 3500.3E T-R event 0170-PERA-2104.
+
+## Related references
+
+- DoDFMR Vol 7A Chapters 25, 26, 27, 32, 47, 67, 68. Pay and allowance framework.
+- DODI 1341.13. SGLI.
+- MCO 1300.8. Inbound check-in.
+- MCTFSPRIUM. MCTFS transactions.
+- NAVMC 3500.3E. T-R event 0170-PERA-2104.

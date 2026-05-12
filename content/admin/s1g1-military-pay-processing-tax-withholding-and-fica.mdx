@@ -1,0 +1,123 @@
+---
+title: "Tax Withholding and FICA - S-1 Procedural Page"
+slug: "tax-withholding-and-fica"
+summary: "Process federal income tax withholding per DoDFMR Vol 7A Chapter 44, FICA (Social Security and Medicare) per Chapter 45, and Armed Forces Retirement Home deductions per Chapter 46 with state tax coordination and Combat Zone Tax Exclusion cross-reference."
+roles: ["admin", "leader"]
+lastVerified: "2026-05-11"
+unitType: "s1-g1"
+topic: "military-pay-processing"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0170-PERA-2004"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "DoDFMR Vol 7A"
+billets: ["s-1-officer", "s-1-chief", "ipac-pay-clerk"]
+gradesPerforming: ["Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "DoDFMR Vol 7A Chapter 44 (Withholding of Income Tax)"
+  - "DoDFMR Vol 7A Chapter 44 paragraph 2.3 (Combat Zone Tax Exclusion)"
+  - "DoDFMR Vol 7A Chapter 45 (Federal Insurance Contributions Act)"
+  - "DoDFMR Vol 7A Chapter 46 (Deductions for the Armed Forces Retirement Home)"
+  - "26 U.S.C. Internal Revenue Code"
+  - "26 U.S.C. 112 (Combat Zone Compensation Exclusion)"
+  - "26 U.S.C. 3121 (FICA Definitions)"
+  - "MCO 7300.21B Marine Corps Financial Management SOP Manual"
+performanceSteps:
+  - "Receive the W-4 federal tax withholding election"
+  - "Set federal income tax withholding per Chapter 44 and W-4"
+  - "Process state tax withholding per state-specific rules"
+  - "Apply Combat Zone Tax Exclusion per Chapter 44 paragraph 2.3"
+  - "Apply FICA deductions per Chapter 45"
+  - "Apply AFRH deductions per Chapter 46"
+  - "Cut MCTFS deduction transactions"
+  - "Verify LES reflects deductions"
+  - "Process annual W-2 issuance"
+  - "Coordinate annual tax filing support"
+relatedRoles:
+  marine: "/marines/military-pay-processing/tax-withholding-and-fica"
+  leader: "/leader/military-pay-processing/tax-withholding-and-fica"
+  commander: "/commander/military-pay-processing/tax-withholding-and-fica"
+source:
+  title: "Tax Withholding and FICA - DoDFMR Vol 7A Chapters 44, 45, 46"
+  publisher: "Office of the Under Secretary of Defense (Comptroller)"
+---
+
+## Role and responsibility
+
+The IPAC pay clerk processes tax withholding, FICA, and AFRH deductions per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapters 44, 45, and 46. The Marine submits W-4 elections for federal tax withholding and state-specific forms for state tax withholding. The disbursing technician processes deductions per DoDFMR Vol 5 and MCO 7300.21B<Citation source="MCO 7300.21B" />. The S-1 chief tracks deductions monthly. The S-1 officer signs by direction on routing. DFAS processes the deductions through pay cuts and routes to the IRS, Social Security Administration, and state tax authorities.
+
+Source documents flow from the W-4 election per Chapter 44, the state-specific tax form per state rules, the DD Form 2058 State of Legal Residence Certificate, the FICA withholding framework per Chapter 45, the AFRH deduction framework per Chapter 46, the prior MCTFS deduction record, and the Combat Zone Tax Exclusion designation per Chapter 44 paragraph 2.3. Outputs include the executed federal tax withholding, the state tax withholding, the FICA withholding (Social Security plus Medicare), the AFRH deduction, the CZTE application when applicable, the verified LES, the annual W-2 issuance through DFAS, and the audit trail.
+
+Per DoDFMR Vol 7A Chapter 44, federal income tax withholding follows IRS rules per 26 U.S.C. and the Marine's W-4 election. Per Chapter 44 paragraph 2.3, Combat Zone Tax Exclusion excludes pay from federal income tax when the Marine serves in a designated combat zone under 26 U.S.C. 112. Per Chapter 45, FICA covers Social Security and Medicare withholding per 26 U.S.C. 3121. Per Chapter 46, the Armed Forces Retirement Home deduction supports retirement home funding.
+
+## Trigger events
+
+- Marine submits W-4 federal tax withholding election.
+- Marine submits state tax withholding form.
+- Marine deploys to combat zone triggering CZTE per Chapter 44 paragraph 2.3.
+- Marine changes state of legal residence triggering DD Form 2058.
+- Annual W-2 issuance cycle.
+- IRS withholding table update.
+- Annual FICA wage base adjustment per 26 U.S.C. 3121.
+
+## Processing workflow
+
+1. Receive W-4 election. The Marine submits the W-4 to the S-1 or IPAC pay clerk.
+2. Set federal income tax withholding. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 44 and 26 U.S.C., the IPAC pay clerk applies the W-4 election to the MCTFS withholding code.
+3. Process state tax withholding. Per state-specific rules and the DD Form 2058, set the state withholding code.
+4. Apply Combat Zone Tax Exclusion. Per Chapter 44 paragraph 2.3 and 26 U.S.C. 112, when the Marine serves in a designated combat zone, federal income tax withholding suspends per the CZTE rules.
+5. Apply FICA deductions. Per Chapter 45 and 26 U.S.C. 3121, Social Security (6.2 percent up to the wage base) and Medicare (1.45 percent on all wages) deduct from each pay.
+6. Apply AFRH deductions. Per Chapter 46, the AFRH deduction applies to enlisted Marines and certain officers at the rate set by the AFRH Board.
+7. Cut MCTFS deduction transactions. Per Appendix E and MCTFSPRIUM<Citation source="MCTFSPRIUM" />, submit through UD-MIPS.
+8. Verify LES. The next LES reflects federal tax, state tax, FICA, and AFRH deductions.
+9. Process annual W-2 issuance. Per Chapter 44 and DFAS, the W-2 issues by 31 January annually.
+10. Coordinate annual tax filing support. Marines access prior-year W-2s through MyPay. Tax filing support runs through MILTAX (Military OneSource) and unit-level VITA programs when available.
+
+## Systems of record and forms
+
+### Systems
+
+- Marine Corps Total Force System (MCTFS). Holds tax withholding and deduction records.
+- UD-MIPS. Cuts deduction transactions per Appendix E.
+- DFAS Pay Processing. Routes deductions to IRS, SSA, state tax authorities, AFRH.
+- LES. Validates deductions.
+- MyPay. Marine accesses W-2 and tax withholding settings.
+- DTMO BAH Tables. Reference for taxable versus excluded pay.
+
+### Forms
+
+- W-4 Federal Tax Withholding Election. Per Chapter 44 and 26 U.S.C.
+- State Tax Withholding Form. Per state rules.
+- DD Form 2058 State of Legal Residence Certificate. Per Chapter 44.
+- W-2 Wage and Tax Statement. Annual issuance per Chapter 44 and IRS.
+- CZTE Application Record. Per Chapter 44 paragraph 2.3.
+
+## Common pitfalls
+
+- W-4 election not applied promptly. The MCTFS withholding lags the election.
+- DD Form 2058 stale on state-of-residence change. Per Chapter 44, the form drives state tax withholding.
+- CZTE not applied during combat zone deployment. Per Chapter 44 paragraph 2.3 and 26 U.S.C. 112, the deployment to a designated combat zone triggers automatic CZTE.
+- FICA wage base cap miscalculation. Per Chapter 45 and 26 U.S.C. 3121, Social Security caps at the annual wage base. Medicare has no cap.
+- AFRH deduction rate misaligned with current AFRH Board rate. Per Chapter 46, the rate publishes annually.
+- W-2 not issued by 31 January. Per IRS and DFAS, the deadline is statutory.
+- State tax withholding applied for non-state-of-residence state. Per the DD Form 2058 and the Servicemembers Civil Relief Act, the state of legal residence drives state tax.
+
+## Decision points
+
+- W-4 election scope. The Marine elects the withholding amount per the IRS W-4 worksheet. Single, married, head of household categories drive the withholding calculation.
+- State of legal residence. Per DD Form 2058, the Marine selects the state. The Servicemembers Civil Relief Act allows military personnel to retain their state of legal residence regardless of duty location.
+- CZTE timing. Per Chapter 44 paragraph 2.3 and 26 U.S.C. 112, the deployment month triggers CZTE.
+- AFRH deduction. Per Chapter 46, the deduction is mandatory for eligible enlisted Marines and officers.
+
+## Authority
+
+This sub-page sits under DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapters 44 (Withholding of Income Tax), 44 paragraph 2.3 (Combat Zone Tax Exclusion), 45 (Federal Insurance Contributions Act), and 46 (Deductions for the Armed Forces Retirement Home). 26 U.S.C. (Internal Revenue Code) sets the federal tax framework. 26 U.S.C. 112 sets the Combat Zone Compensation Exclusion. 26 U.S.C. 3121 sets the FICA definitions. MCO 7300.21B<Citation source="MCO 7300.21B" /> covers Marine Corps financial management procedures. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> covers MCTFS transactions.
+
+## Related references
+
+- DoDFMR Vol 7A Chapters 44, 45, 46. Tax and FICA framework.
+- 26 U.S.C. and 26 U.S.C. 112 and 3121. Statutory authority.
+- MCO 7300.21B. Marine Corps financial management SOP.
+- MCTFSPRIUM. MCTFS transactions.
+- NAVMC 3500.3E. T-R event 0170-PERA-2004.

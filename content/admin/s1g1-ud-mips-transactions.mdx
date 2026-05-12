@@ -1,0 +1,254 @@
+---
+title: "UD/MIPS Transactions Overview"
+slug: "ud-mips-transactions"
+summary: "Unit Diary entries via UD/MIPS are the primary mechanism for updating Marine personnel and pay information in MCTFS. S-1 admin clerks process transactions daily for promotions, transfers, awards, pay actions, and dependency changes."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-01"
+unitType: "s1-g1"
+topic: "records-management"
+function: "PERA"
+skillLevel: 1000
+trEventCode: "0111-PERA-1004"
+sourcePolicy: "MCTFSPRIUM"
+mosPerforming: ["0111", "0170"]
+billets: ["admin-clerk", "admin-chief", "personnel-officer"]
+gradesPerforming: ["PVT", "PFC", "LCPL", "CPL", "SGT"]
+sustainmentInterval: "12 months"
+references:
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "MCTFSCODESMAN Marine Corps Total Force System Codes Manual"
+  - "MCO P1070.12 Marine Corps Individual Records Administration Manual (IRAM)"
+  - "MARADMIN 604/24 UD/MIPS Document Storage"
+performanceSteps:
+  - "Receive source document for transaction"
+  - "Identify correct UD/MIPS transaction type"
+  - "Apply transaction codes per MCTFSCODESMAN"
+  - "Submit transaction batch"
+  - "Verify EDFR for processing confirmation"
+  - "Address any failed transactions"
+relatedRoles:
+  marine: "/marines/records/review-mctfs"
+  commander: "/commander/relationships/ipac-procedures"
+source:
+  title: "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  publisher: "HQMC"
+  url: "https://www.marines.mil/News/Publications/"
+---
+
+## What UD/MIPS Transactions Do
+
+The Unit Diary/Marine Integrated Personnel System (UD/MIPS) is the primary mechanism for updating Marine personnel and pay information in MCTFS. Per MCTFSPRIUM, every personnel action that affects MCTFS data flows through a UD/MIPS transaction.
+
+S-1 admin clerks process UD/MIPS transactions daily. The transactions update.
+
+- Promotions and reductions
+- Transfers and PCS actions
+- Awards and decorations
+- Pay status changes (BAH, BAS, special pays)
+- Dependency status changes
+- Training completions
+- Leave and liberty
+- Drill performance (Reserve)
+
+Without a successful UD/MIPS transaction, MCTFS does not update. Without MCTFS update, the Marine's record is wrong.
+
+## Transaction Categories
+
+Per MCTFSPRIUM, transactions organize into categories.
+
+### Personnel Actions
+
+- Promotions and warrants
+- Reductions
+- Transfers (PCS, TAD, deployment)
+- Joins (new arrivals at unit)
+- Detachments (departures from unit)
+- Separation processing
+
+### Performance Documentation
+
+- Proficiency and Conduct (Pro/Con) marks
+- Page 11 entries
+- Awards (personal, unit, foreign)
+- Special qualifications
+
+### Pay and Allowance Changes
+
+- BAH actions (start, stop, change rate)
+- BAS actions (start, stop, change category)
+- Special pay activations and deactivations
+- Forfeitures and reductions
+- Pay debt actions
+
+### Family and Dependency
+
+- Marriage and divorce processing
+- Birth and adoption processing
+- Dependent ID card actions
+- DEERS coordination
+- SGLI election changes
+
+### Training and Education
+
+- School completion
+- Annual training (Reserve)
+- Special qualification awards
+- Education credit posting
+
+### Reserve-Specific (I&I and SMCR)
+
+- Drill attendance
+- IDT pay processing
+- AT processing
+- Mobilization actions
+
+## Performance Steps
+
+### Step 1 - Receive Source Document
+
+Every transaction starts with a source document.
+
+- NJP results (UPB)
+- Promotion warrant
+- Award citation
+- NAVMC 10922<Citation source="NAVMC 10922" /> (dependency)
+- DD-1351 (travel)
+- Page 11 (counseling)
+- School certificate
+
+Verify the source document is complete before processing.
+
+### Step 2 - Identify Transaction Type
+
+Per MCTFSCODESMAN.
+
+- Identify the action type (promotion, BAH change, etc.)
+- Locate the transaction code in MCTFSCODESMAN
+- Verify any conditional codes apply
+- Identify supporting transactions if multiple needed
+
+### Step 3 - Open UD/MIPS
+
+Access the system.
+
+- Login with CAC
+- Select Unit Diary module
+- Open transaction entry interface
+- Identify the unit diary date
+
+### Step 4 - Enter Transaction
+
+Apply the transaction.
+
+- Enter member identification (SSN auto-validates against MCTFS)
+- Enter transaction code per MCTFSCODESMAN
+- Enter required parameters (effective date, amounts, references)
+- Verify source document reference attached
+
+### Step 5 - Submit Transaction Batch
+
+When all daily transactions ready.
+
+- Review the batch for completeness
+- Verify no duplicate transactions
+- Submit batch for processing
+- Note batch ID for follow-up
+
+### Step 6 - Verify EDFR
+
+Within 5 business days.
+
+- Pull Electronic Diary Feedback Report (EDFR)
+- Confirm each transaction processed successfully
+- Identify any failed transactions
+- Document failures for correction
+
+### Step 7 - Process Corrections
+
+For any failures.
+
+- Identify the failure reason
+- Correct the source data or transaction
+- Resubmit corrected transaction
+- Verify subsequent EDFR
+
+## Transaction Code Patterns
+
+MCTFSCODESMAN organizes codes systematically.
+
+| Pattern | Category | Example Use |
+|---------|----------|-------------|
+| 1XXX | Personnel | Promotions, transfers, separations |
+| 2XXX | Pay | BAH, BAS, special pays |
+| 3XXX | Awards | Personal, unit, foreign |
+| 4XXX | Training | Schools, qualifications |
+| 5XXX | Family | Dependency, DEERS |
+| 6XXX | Reserve | Drill, AT, mobilization |
+| 7XXX | Discipline | NJP, court-martial |
+
+Specific codes within each category drive the precise action.
+
+## Common UD/MIPS Errors
+
+These hit during S-1 daily processing.
+
+1. **Wrong transaction code applied.** Member action processed as different action type. Member's record updates incorrectly. Fix by reversing and resubmitting.
+2. **Effective date wrong.** Transaction dated submission date instead of action date. Causes pay errors and audit findings. Fix by reversing and resubmitting with correct date.
+3. **Transaction submitted twice.** Duplicate processing causes member's record to show double the action. Reverse the duplicate.
+4. **Transaction failed silently.** Submitted but did not process. Caught only by EDFR review. Resubmit after correction.
+5. **Transaction applied to wrong member.** SSN typo causes action to apply to different member. Reverse on both members (added to wrong, missing from right) and resubmit correctly.
+
+## EDFR Review Discipline
+
+The EDFR catches what UD/MIPS reports as failed. Without EDFR review.
+
+- Failed transactions remain unprocessed
+- Member records remain incorrect
+- Audit findings accumulate
+- Pay errors persist
+
+Daily EDFR review is the safety net for UD/MIPS transaction processing.
+
+## Coordination with PAC
+
+Some transactions S-1 originates but PAC processes.
+
+- Complex pay actions
+- Separation transactions
+- Joins from other commands
+- BAH disputes
+- Dependency validation cycles
+
+S-1 forwards source documents and tracks until PAC processes.
+
+## Coordination with Commander
+
+Some transactions require commander signature or approval before processing.
+
+- NJP results (UPB signed by imposing authority)
+- Promotion warrants (signed by approving authority)
+- Awards (signed approval)
+- Page 11 entries (counseling officer signature)
+- Will Not Promote entries (commander recommendation)
+
+S-1 holds these until commander acts, then processes.
+
+## Quality Control Before Submission
+
+For each transaction.
+
+- Verify source document complete
+- Verify transaction code correct
+- Verify effective date matches action date
+- Verify member SSN exact match to MCTFS
+- Verify any required cross-references included
+
+Pre-submission checks prevent EDFR failures.
+
+## Related Roles
+
+UD/MIPS transactions affect every Marine's record.
+
+- **Marines** see transaction outcomes in MOL within 5 business days.
+- **Leaders** at S-1 process transactions and verify EDFR.
+- **Commanders** sign source documents authorizing transactions.

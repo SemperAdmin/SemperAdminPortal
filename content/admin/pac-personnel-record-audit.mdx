@@ -1,0 +1,151 @@
+---
+title: "Audit Personnel Records (PAC)"
+slug: "personnel-record-audit"
+summary: "PAC procedure for auditing the ESR and OMPF against MCTFS to verify member data accuracy. T&R event 0111-PERA-1001, 1000-level core skill."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-01"
+unitType: "pac"
+topic: "audits"
+function: "PERA"
+skillLevel: 1000
+trEventCode: "0111-PERA-1001"
+mosPerforming: ["0111"]
+billets: ["pac-specialist", "section-snco", "branch-head"]
+gradesPerforming: ["PVT", "PFC", "LCPL", "CPL"]
+sustainmentInterval: "12 months"
+evaluationCoded: false
+readinessCoded: false
+references:
+  - "DOD FMR 7000.14-R Volume 7A Military Pay - Active Duty and Reserve Pay"
+  - "HQMC-P&R (RFF) 7220.31-R Marine Corps Total Force Systems Automated Pay Systems Manual (APSM)"
+  - "JTR Joint Travel Regulations Uniformed Service Members and DoD Civilian Employees"
+  - "MCO 1001R.1 Marine Corps Reserve Administrative Management Manual (MCRAMM)"
+  - "MCO 10110.47 Basic Allowance for Subsistence (BAS) and Meal Card Program"
+  - "MCO 1070.1 Official Military Personnel File (OMPF)"
+  - "MCO 1741.8 Marine Corps Government Life Insurance Manual"
+  - "MCO 1751.3 Marine Corps Dependency Determination and Support Program for BAH and Travel"
+  - "MCO 7220.12 Special Duty Assignment (SDA) Pay Program"
+  - "MCO P1070.12 Marine Corps Individual Records Administration Manual (IRAM)"
+  - "MCTFSCODESMAN Marine Corps Total Force System Codes Manual"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+performanceSteps:
+  - "Determine occasion for the audit"
+  - "Retrieve information from MCTFS"
+  - "Conduct audit with member, as required"
+  - "Determine required entries"
+  - "Take corrective action to update records, as required"
+  - "Forward for review"
+relatedRoles:
+  marine: "/situations/submit-navmc-11000"
+  leader: "/situations/promotion-board-prep"
+  commander: "/policy/mco-1900-16-separation"
+source:
+  title: "NAVMC 3500.3E Manpower and Administration T-R Manual"
+  publisher: "HQMC TECOM"
+  url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/2125404/navmc-35003e/"
+---
+
+## Purpose
+
+The personnel record audit confirms the Electronic Service Record matches what MCTFS reports for the member. PAC clerks own this work as the consolidated admin authority. You hit this event 12 months at a minimum, plus on-occasion triggers like PCS, promotion, and separation packages.
+
+## When You Run an Audit
+
+- New join arrives at the PAC.
+- Member transfers in or out (PCS).
+- Annual audit cycle.
+- Promotion board prep for the member.
+- Separation package processing.
+- Member identifies a discrepancy on their LES.
+- Command-directed review.
+- Inspector General Functional Area Checklist 5210 self-inspection.
+
+## Conditions and Standard
+
+Per T&R event 0111-PERA-1001, you perform this with a requirement, access to web-based or database systems, the ESR, and source documents on hand. The standard is to verify data is accurate and current.
+
+## Performance Steps
+
+1. **Determine occasion for the audit.** Identify the trigger (PCS, promotion, annual, separation). The trigger drives which records you weight more heavily. A PCS audit weights orders, BAH, dependency. A promotion audit weights conduct, training, awards.
+2. **Retrieve information from MCTFS.** Pull the Basic Individual Record, Basic Training Record, Record of Emergency Data, awards, Pro/Con marks, remarks summary, and pay history. MCTFS data is the system of record. Compare against the ESR.
+3. **Conduct audit with member, as required.** For full audits, sit with the member. They sign acknowledgment of accuracy. They are the source for dependency, address, and emergency contact data. They sign the audit completion form.
+4. **Determine required entries.** Build the list of corrective actions. Common gaps include missing NAVMC 10922<Citation source="NAVMC 10922" /> dependency updates, expired SGLI elections, unposted awards, missing Page 11 entries.
+5. **Take corrective action to update records, as required.** Generate UD/MIPS transactions for each correction. Coordinate with member for source documents (marriage cert, birth cert, divorce decree, school cert).
+6. **Forward for review.** Section SNCO or branch head signs off. The audit posts to the OMPF as a finding.
+
+## What You Audit
+
+The ESR and MCTFS contain these data elements you verify against source documents.
+
+| Data Element | Source Document | Common Errors |
+|---|---|---|
+| Pay Entry Base Date (PEBD) | Enlistment contract DD-4 | PEBD recomputation not posted |
+| Armed Forces Active Duty Base Date (AFADBD) | DD-4, prior service docs | Prior service breaks not credited |
+| Dependents | NAVMC 10922<Citation source="NAVMC 10922" /> + supporting docs | Birth not posted, divorce not stopped |
+| BAH rate / dependent status | NAVMC 10922<Citation source="NAVMC 10922" /> + zip code | BAH paying at wrong rate |
+| BAS election | Meal card program | Member on meal card still drawing BAS |
+| SGLI coverage | SGLV-8286 | Election expired or beneficiary outdated |
+| Awards | Award citations, Page 11s | Personal awards not posted to record |
+| Pro/Con marks | Counseling chits, MOL | Quarterly marks missed or wrong scale |
+| Conduct evaluations | Page 11s | Counseling not posted |
+| Special qualifications | School certs | Jump, dive, demo qual not posted |
+
+## Source Documents to Pull
+
+You work with these inputs during the audit. Have them ready before you sit with the member.
+
+- Current ESR printout
+- MCTFS Master Brief Sheet (MBS)
+- Last three LES statements
+- NAVMC 10922<Citation source="NAVMC 10922" /> on file
+- DEERS roster from RAPIDS
+- Awards on file
+- Page 11 entries
+- Service Record Book contents (paper holdings)
+
+## Common Findings
+
+PAC audits surface these issues most frequently.
+
+1. **BAH rate mismatch.** Member moved zip codes, dependency status changed, or rate table updated. The fix is a UD/MIPS transaction with current orders or NAVMC 10922<Citation source="NAVMC 10922" />.
+2. **Missing dependency.** Marriage or birth not processed within 10 working days of the event. The fix is a back-dated NAVMC 10922<Citation source="NAVMC 10922" /> with supporting documents.
+3. **Expired SGLI election.** Member did not refresh after a life event. The fix is a new SGLV-8286.
+4. **Pro/Con gap.** Quarterly marks missed during PCS or deployment. The fix is a manual UD entry with command concurrence.
+5. **PEBD discrepancy.** Prior service breaks not credited. The fix is a recomputation request through HQMC.
+
+## Coordination with the Member
+
+The member owns certain data per MCO 5000.14D<Citation source="MCO 5000.14D" /> Enclosure 2. Walk them through these during the audit so they know what to verify on their side.
+
+- Address, phone, religion (member updates via MOL).
+- Marriage, divorce, birth documents (member submits to PAC).
+- RED, SGLI, BTR, BIR accuracy (member verifies).
+- Special qualification certs (member submits jump records, school certs).
+- LES review monthly (member reports errors to command).
+- DEERS accuracy (member updates at RAPIDS).
+
+## Quality Control
+
+Branch head review catches what the auditor missed. Pre-submission QC checks.
+
+- All corrective UD/MIPS transactions drafted and ready.
+- Source documents attached or referenced in the audit packet.
+- Member signature captured where required.
+- Audit findings documented in the SRB or OMPF.
+- Follow-up timeline established for pending corrections.
+
+## Distance Learning
+
+MarineNet provides supporting courses for this event. Access them through your MOL Education tab.
+
+- ADMNAUDIT01 - Audit Personnel Records
+- ADMNESRAU01 - ESR Audit Procedures
+- MCIZ0131LZ - Correspondence Procedures (related GENA)
+
+## Related Roles
+
+This event reads differently depending on your role.
+
+- **Marines** review their own ESR and MCTFS data via MOL. They are the source for dependency, address, and emergency data.
+- **Leaders** verify their Marines' record accuracy and coach members through the audit. Section SNCOs catch errors before the audit reaches PAC.
+- **Commanders** sign audit findings, direct corrective Page 11 entries, and own the unit's audit posture.

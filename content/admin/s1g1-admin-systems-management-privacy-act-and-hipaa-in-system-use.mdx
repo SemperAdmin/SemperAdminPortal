@@ -1,0 +1,121 @@
+---
+title: "Privacy Act and HIPAA in System Use - S-1 Procedural Page"
+slug: "privacy-act-and-hipaa-in-system-use"
+summary: "Apply Privacy Act and HIPAA controls when accessing personnel and medical data through MCTFS, MOL, and OMPF."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-10"
+unitType: "s1-g1"
+topic: "admin-systems-management"
+function: "GENA"
+skillLevel: 2000
+trEventCode: "0102-GENA-1015"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "SECNAVINST 5211.5"
+billets: ["s-1-officer", "s-1-chief", "g-1-officer", "ipac-clerk"]
+gradesPerforming: ["LCpl", "Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "SECNAVINST 5211.5 Department of the Navy Privacy Act Program"
+  - "Public Law 104-191 Health Insurance Portability and Accountability Act of 1996"
+  - "DOD 5400.7-R DoD Freedom of Information Act Program"
+  - "MCO 5239.2C Marine Corps Cybersecurity Program"
+  - "MCO 5000.14D Marine Corps Administrative Procedures"
+  - "MCO P1070.12K Individual Records Administration Manual"
+  - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+performanceSteps:
+  - "Train the section on Privacy Act per SECNAVINST 5211.5"
+  - "Train the section on HIPAA where medical data lives in MCTFS"
+  - "Validate need-to-know before each PII access"
+  - "Log PII access in the unit access log"
+  - "Apply Privacy Act warnings on records released"
+  - "Route FOIA requests through legal for review"
+  - "Encrypt PII in transit and at rest"
+  - "Restrict OMPF access to records officer billets"
+  - "Audit PII handling during the quarterly review"
+  - "Brief any breach to the security manager within 24 hours"
+relatedRoles:
+  marine: "/marines/admin-systems-management/privacy-act-and-hipaa-in-system-use"
+  leader: "/leader/admin-systems-management/privacy-act-and-hipaa-in-system-use"
+  commander: "/commander/admin-systems-management/privacy-act-and-hipaa-in-system-use"
+source:
+  title: "Privacy Act and HIPAA in System Use - SECNAVINST 5211.5 and HIPAA"
+  publisher: "Department of the Navy"
+---
+
+## Role and responsibility
+
+The S-1 officer owns Privacy Act and HIPAA training and oversight at the unit level. The S-1 chief enforces need-to-know at every PII access. The unit security manager audits PII handling during the quarterly review. Each clerk holds individual responsibility for record handling under SECNAVINST 5211.5.
+
+Source documents flow from training certificates, PII access logs, FOIA requests, breach reports, and Privacy Act warnings on released records. PII flows through MCTFS, MOL, OMPF, RAPIDS, and DEERS. Outputs include the PII access log, the FOIA case packet routed through legal, the breach report when applicable, and the Page 11 entry documenting Privacy Act training.
+
+MCAAT inspects training certificates, PII access logs, OMPF access controls, and breach response records. Unrestricted OMPF access, missing Privacy Act warnings on released records, or unreported breaches trigger findings under SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" />. Brief breaches to the security manager within 24 hours, not at the next audit.
+
+## Trigger events
+
+- Inbound clerk requires Privacy Act and HIPAA training as part of inbound brief.
+- Annual Privacy Act training cycle opens.
+- FOIA request arrives requiring records release review.
+- Dependency record access through DEERS or RAPIDS.
+- Medical data appears in MCTFS records (LIMDU, PEB, MEB).
+- Suspected breach of PII detected.
+- OMPF read access request from outside the records billet.
+
+## Processing workflow
+
+1. Train the section on Privacy Act. Run annual Privacy Act training per SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" />. Capture the training certificate per clerk.
+2. Train on HIPAA. Where medical data lives in MCTFS (LIMDU, PEB, MEB, fitness for duty), train clerks on HIPAA controls per Public Law 104-191<Citation source="Public Law 104-191" />.
+3. Validate need-to-know. Before any PII access, confirm the access aligns with the duty per MCO 5239.2C<Citation source="MCO 5239.2C" /> Chapter 4.
+4. Log PII access. Maintain the unit PII access log with date, EDIPI accessed, accessing clerk, and purpose.
+5. Apply Privacy Act warnings. Place a Privacy Act statement on every record released outside the section per SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" />.
+6. Route FOIA requests through legal. Send every FOIA request to the legal advisor for redaction review per DOD 5400.7-R<Citation source="DOD 5400.7-R" />.
+7. Encrypt PII. Encrypt PII in transit (email, file transfer) and at rest (file shares, removable media) per MCO 5239.2C<Citation source="MCO 5239.2C" />.
+8. Restrict OMPF access. Limit OMPF read access to records billet holders per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 3.
+9. Audit PII handling. Run a PII handling audit during the quarterly account review. The unit security manager signs.
+10. Brief breaches. On suspected or confirmed breach, brief the unit security manager within 24 hours per SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" />.
+
+## Systems of record and forms
+
+### Systems
+
+- MCTFS. Master personnel record holding PII and limited medical data.
+- MOL. Self-service surface holding PII for the Marine and the chain.
+- OMPF. Personnel file system holding the most sensitive PII.
+- DEERS. Dependency and benefit eligibility holding family PII.
+- RAPIDS. CAC and DEERS workstation processing PII at issuance.
+
+### Forms
+
+- Privacy Act Statement. Required on every record released.
+- FOIA Request Form. Routed through legal for review.
+- PII Access Log. Local log of access events.
+- Breach Report. Local form for suspected or confirmed breaches.
+- NAVMC 118 (11) Administrative Remarks. Page 11 documenting Privacy Act training.
+
+## Common pitfalls
+
+- PII emailed unencrypted. The release violates SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" /> and exposes the section to breach reporting. Encrypt all PII in transit.
+- OMPF accessed by non-records billet clerk. The access falls outside need-to-know. Restrict OMPF access to records billet holders per MCO P1070.12K<Citation source="MCO P1070.12K" />.
+- FOIA request filled without legal review. The release contains protected information. Route every FOIA request through legal per DOD 5400.7-R<Citation source="DOD 5400.7-R" />.
+- Privacy Act statement omitted. The released record carries no notice. Add the statement at every release per SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" />.
+- Breach not briefed within 24 hours. The reporting window closes. Brief the security manager at the moment of detection.
+- Annual Privacy Act training lapsed. The clerk operates without current certification. Run training on a fixed annual cycle.
+
+## Decision points
+
+- Releasability under FOIA. The request asks for a Marine's records. The legal advisor determines releasability and required redaction per DOD 5400.7-R<Citation source="DOD 5400.7-R" />.
+- HIPAA scope in MCTFS. Limited duty entries and PEB results carry HIPAA implications. The S-1 officer routes through medical for any release outside the section per Public Law 104-191<Citation source="Public Law 104-191" />.
+- Breach scope determination. The S-1 officer assesses whether the event is a confirmed breach, a suspected breach, or a near-miss. Brief the security manager regardless and document per SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" />.
+
+## Authority
+
+This sub-page sits under SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" /> Department of the Navy Privacy Act Program and Public Law 104-191<Citation source="Public Law 104-191" /> HIPAA. FOIA review routes through DOD 5400.7-R<Citation source="DOD 5400.7-R" /> DoD Freedom of Information Act Program. MCO 5239.2C<Citation source="MCO 5239.2C" /> Marine Corps Cybersecurity Program governs encryption and need-to-know controls. MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 3 sets OMPF access restrictions. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 references SECNAVINST 5211.5 and Public Law 104-191 in the system administrator duties.
+
+## Related references
+
+- SECNAVINST 5211.5 Privacy Act Program. Authoritative source for PII handling in DON systems.
+- Public Law 104-191 HIPAA. Statutory authority for medical record privacy.
+- DOD 5400.7-R DoD FOIA Program. FOIA release rules and redaction.
+- MCO 5239.2C Marine Corps Cybersecurity Program. Encryption and need-to-know controls.
+- MCO 5000.14D Marine Corps Administrative Procedures. S-1 record handling responsibilities.
+- MCO P1070.12K Individual Records Administration Manual. OMPF access restrictions.
+- NAVMC 3500.3E Manpower and Administration T-R Manual. Event 0102-GENA-1015 references on Privacy Act and HIPAA.

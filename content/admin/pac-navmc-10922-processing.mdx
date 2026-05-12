@@ -1,0 +1,171 @@
+---
+title: "Process NAVMC 10922 Dependency Application (PAC)"
+slug: "navmc-10922-processing"
+summary: "PAC procedure for processing NAVMC 10922 Dependency Application packages for marriage, birth, divorce, and dependent status changes. Drives BAH, dependent ID cards, DEERS, and benefit eligibility."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-01"
+unitType: "pac"
+topic: "life-event-processing"
+function: "PERA"
+skillLevel: 1000
+trEventCode: "0111-PERA-1002"
+mosPerforming: ["0111"]
+billets: ["pac-specialist", "section-snco", "branch-head"]
+gradesPerforming: ["PVT", "PFC", "LCPL", "CPL"]
+sustainmentInterval: "12 months"
+evaluationCoded: false
+readinessCoded: false
+references:
+  - "MCO 1751.3 Marine Corps Dependency Determination and Support Program for BAH and Travel"
+  - "MCO P1070.12 Marine Corps Individual Records Administration Manual (IRAM)"
+  - "MARADMIN 015/20 OMPF Document Submission Requirements"
+  - "MARADMIN 661/19 Dependency Validation Cycle"
+  - "MARADMIN 604/24 UD/MIPS Document Storage"
+  - "DOD FMR 7000.14-R Volume 7A Military Pay - Active Duty and Reserve Pay"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+performanceSteps:
+  - "Receive NAVMC 10922 package from member or S-1"
+  - "Validate supporting documents (marriage cert, birth cert, divorce decree)"
+  - "Verify member signatures and dates"
+  - "Cross-check current MCTFS dependent data"
+  - "Process UD/MIPS dependency transaction"
+  - "Update BAH rate based on new dependent status"
+  - "Coordinate DEERS enrollment with member"
+  - "File completed package in OMPF and UD/MIPS per MARADMIN 604/24"
+relatedRoles:
+  marine: "/marines/life-events/family-docs"
+  leader: "/situations/promotion-board-prep"
+  commander: "/commander/personnel-decisions/admin-discharges"
+source:
+  title: "MCO 1751.3 Marine Corps Dependency Determination and Support Program"
+  publisher: "HQMC"
+  url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899564/mco-17513h/"
+---
+
+## Purpose
+
+The NAVMC 10922<Citation source="NAVMC 10922" /> is the controlling document for dependent status changes affecting BAH, BAS, family separation allowance, dependent ID cards, DEERS enrollment, and benefit eligibility. PAC clerks process these packages within 10 working days of receipt per MCO 1751.3<Citation source="MCO 1751.3" />.
+
+## When You Process a NAVMC 10922
+
+- Marriage (member submits within 10 working days of marriage date).
+- Birth or adoption of a child.
+- Divorce or annulment.
+- Death of a dependent.
+- Change in custody arrangements affecting a dependent.
+- Annual dependency revalidation per MARADMIN 661/19<Citation source="MARADMIN 661/19" />.
+- Member identifies a discrepancy in current dependent data.
+
+## Required Supporting Documents
+
+Each life event drives different supporting documents. Reject the package if any required document is missing.
+
+| Event | Required Documents |
+|-------|--------------------|
+| Marriage | Original or certified copy of marriage certificate, spouse SSN, spouse photo ID |
+| Birth | Original or certified copy of birth certificate, child SSN application receipt if SSN pending |
+| Divorce | Final divorce decree with custody orders, separation agreement if applicable |
+| Death | Certified death certificate, beneficiary update if dependent was on RED |
+| Adoption | Final adoption decree, child SSN application receipt |
+| Custody change | Court order or custody decree, prior custody documentation |
+
+## Performance Steps
+
+### Step 1 - Receive Package
+
+1. Log the package into the PAC tracking system with date and time stamp.
+2. Confirm member identity via ID check.
+3. Pull current MCTFS dependent data for comparison.
+4. Note prior NAVMC 10922<Citation source="NAVMC 10922" /> history in the OMPF.
+
+### Step 2 - Validate Supporting Documents
+
+1. Verify each supporting document is original or certified copy. Photocopies are not acceptable.
+2. Check issuing jurisdiction (state, county, country).
+3. Verify dates of issuance are recent enough to reflect current status.
+4. For foreign documents, verify English translation is attached and certified.
+5. Reject the package if any document fails validation. Document rejection reason.
+
+### Step 3 - Verify Member Signatures
+
+1. Member signature on NAVMC 10922<Citation source="NAVMC 10922" /> must be original (wet signature) or DOD CAC digital signature.
+2. Date next to signature must match or precede submission date.
+3. Spouse acknowledgment block must be signed for marriage and divorce events.
+4. Witness signature required for marriage events.
+
+### Step 4 - Cross-Check MCTFS Data
+
+1. Pull Master Brief Sheet (MBS) for current dependent listing.
+2. Compare claimed dependents on NAVMC 10922<Citation source="NAVMC 10922" /> against MBS.
+3. Identify discrepancies (missing dependent, extra dependent, wrong rank or relationship code).
+4. Plan corrective UD/MIPS transactions for each discrepancy.
+
+### Step 5 - Process UD/MIPS Transaction
+
+1. Open UD/MIPS and select the appropriate dependency transaction code.
+2. Enter dependent data per MCTFSCODESMAN.
+3. Set effective date based on the life event date (not the submission date).
+4. Submit for unit diary processing.
+5. Verify the EDFR returns clean.
+
+### Step 6 - Update BAH Rate
+
+1. Pull current BAH rate from MCTFS.
+2. Determine new BAH category (with dependents, without dependents, dependent not at duty station).
+3. Calculate retroactive BAH if life event preceded submission.
+4. Submit BAH rate change UD/MIPS transaction.
+5. Coordinate retroactive pay adjustment if applicable.
+
+### Step 7 - Coordinate DEERS
+
+1. Direct member to RAPIDS facility within 30 days for dependent enrollment.
+2. Provide member with DEERS enrollment checklist.
+3. Confirm DEERS enrollment by reviewing the dependent roster after 5 business days.
+4. Issue dependent ID cards as part of the RAPIDS visit.
+
+### Step 8 - File Package
+
+1. Prepare OMPF submission per MARADMIN 015/20<Citation source="MARADMIN 015/20" />.
+2. Upload to UD/MIPS document storage per MARADMIN 604/24<Citation source="MARADMIN 604/24" />.
+3. Verify document indexes correctly with searchable metadata.
+4. Provide member with copy of completed package and effective dates.
+
+## Common Errors
+
+PAC audits surface these errors most often on NAVMC 10922<Citation source="NAVMC 10922" /> processing.
+
+1. **Missing supporting document.** Marriage cert is photocopy, not certified. Fix by requesting certified copy and holding processing until received.
+2. **Wrong effective date.** UD/MIPS transaction dated submission date instead of marriage date. Fix by reversing transaction and resubmitting with correct date.
+3. **BAH rate not updated.** Dependent processed but BAH rate unchanged. Fix by submitting separate BAH rate change transaction.
+4. **DEERS not coordinated.** Dependent processed in MCTFS but member never visits RAPIDS. Fix by issuing DEERS reminder and tracking enrollment.
+5. **Document not uploaded to UD/MIPS.** Per MARADMIN 604/24<Citation source="MARADMIN 604/24" />, original documents must be in UD/MIPS storage. Fix by scanning and uploading immediately.
+
+## BAH Impact
+
+The dependency change drives BAH rate. Use this matrix.
+
+| Member Status Before | After Change | BAH Action |
+|---------------------|--------------|------------|
+| Single, BAH-Diff | Married | Change to BAH-With Dependents at duty station rate |
+| BAH-With | Divorced, no other dependents | Change to BAH-Without Dependents |
+| BAH-With | New child added | No rate change (already at with-dependents rate) |
+| BAH-With | Last dependent removed | Change to BAH-Without Dependents |
+| BAH-Without | Married, dependent at separate location | Change to BAH-With at member duty station rate |
+
+## Audit Risk
+
+NAVMC 10922<Citation source="NAVMC 10922" /> processing sits in the $63M dependency audit category. Common audit findings.
+
+- Marriage processed but divorce never processed when court order dated.
+- Dependent listed in MCTFS but not enrolled in DEERS.
+- BAH paid at with-dependents rate after dependent removed.
+- Original documents missing from OMPF and UD/MIPS storage.
+- Annual revalidation cycle (MARADMIN 661/19<Citation source="MARADMIN 661/19" />) not completed.
+
+## Related Roles
+
+This event reads differently depending on your role.
+
+- **Marines** submit the NAVMC 10922<Citation source="NAVMC 10922" /> within 10 working days of the life event with all supporting documents.
+- **Leaders** counsel Marines on filing requirements and verify the package is complete before forwarding to PAC.
+- **Commanders** sign endorsements where required and review dependency disputes per MARADMIN 661/19<Citation source="MARADMIN 661/19" />.

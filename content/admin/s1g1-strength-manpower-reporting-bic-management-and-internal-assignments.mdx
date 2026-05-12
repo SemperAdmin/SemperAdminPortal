@@ -1,0 +1,103 @@
+---
+title: "BIC Management and Internal Assignments"
+slug: "bic-management-and-internal-assignments"
+summary: "Match Marines to Billet Identification Codes by grade, MOS, and date of rank, route internal assignment orders, track BIC vacancies, and document exception-to-policy fills."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-12"
+unitType: "s1-g1"
+topic: "strength-manpower-reporting"
+function: "MPMN"
+skillLevel: 2000
+trEventCode: "0102-MPMN-2202"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 1300.8"
+billets: ["s-1-chief", "g-1-officer", "manpower-officer"]
+gradesPerforming: ["Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 1300.8 Marine Corps Personnel Assignment Policy"
+  - "MCO 5311.1E Total Force Structure Process"
+  - "MCTP 3-30G Marine Corps Manpower and Personnel Administration"
+  - "MCO 5000.14D Marine Corps Administrative Procedures"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+relatedRoles:
+  marine: "/marines/strength-manpower-reporting/bic-management-and-internal-assignments"
+  leader: "/leader/strength-manpower-reporting/bic-management-and-internal-assignments"
+  commander: "/commander/strength-manpower-reporting/bic-management-and-internal-assignments"
+source:
+  title: "MCO 1300.8 Marine Corps Personnel Assignment Policy Chapter 4 and MCTP 3-30G Chapter 2 Manpower Administration"
+  publisher: "Headquarters Marine Corps M&RA"
+---
+
+## Role and responsibility
+
+The 0170 Manpower Officer owns BIC management at the unit level. The S-1 chief maintains the BIC roster reconciled against TFSMS T-O and MCTFS assigned strength. The S-1 clerk processes the internal assignment order with the operations endorsement. The S-1 officer signs by direction on the internal assignment order routing.
+
+Source documents flow from the TFSMS T-O pull, the MCTFS assigned-strength roster, the operations officer assignment endorsement, the Marine record (grade, MOS, date of rank), and the MMEA monitor projection. Outputs include the internal assignment order, the BIC fill roster, the vacancy report, and the exception-to-policy authorization for grade or MOS mismatches.
+
+MCAAT inspects the BIC fill roster against TFSMS, the internal assignment order log, and the exception-to-policy authorizations. Misfilled BICs without exception authorization trigger findings.
+
+## Trigger events
+
+- Inbound Marine reports to the unit and requires a BIC assignment.
+- Outbound Marine departs and triggers a BIC vacancy.
+- Promotion or demotion shifts the Marine grade against the BIC grade requirement.
+- MOS lateral move shifts the Marine MOS against the BIC MOS requirement.
+- TOECR approval changes the BIC structure (grade, MOS, or position deletion).
+- Annual T-O refresh window opens and BIC reconciliation runs.
+
+## Processing workflow
+
+1. Pull the unit T-O from TFSMS. The S-1 chief pulls the BIC structure with grade, MOS, and position type per MCO 5311.1E<Citation source="MCO 5311.1E" />.
+2. Pull MCTFS assigned-strength roster. Cross-reference against the T-O BICs. The reconciliation runs at every inbound and outbound and at the monthly cycle.
+3. Match the Marine to the BIC. Verify grade, MOS, date of rank, and any special billet qualifications (additional MOS, NEC, security clearance) per MCO 1300.8<Citation source="MCO 1300.8" /> Chapter 4.
+4. Coordinate with operations. The operations officer endorses the internal assignment for unit mission alignment.
+5. Build the internal assignment order. The S-1 chief drafts the order with BIC number, Marine name and EDIPI, effective date, and assignment authority.
+6. Route for signature. The S-1 officer signs by direction. The commander or executive officer signs internal assignments for key billets (XO, S-3, Sergeant Major, etc.) per MCO 5000.14D<Citation source="MCO 5000.14D" />.
+7. Cut the BIC assignment transaction in MCTFS. Submit through UD-MIPS per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> BIC assignment format.
+8. Process exception-to-policy fills. For grade or MOS mismatches, document the exception authority and the gap closure plan per MCO 1300.8<Citation source="MCO 1300.8" /> Chapter 4 exception rules.
+9. Update the BIC fill roster. Refresh the unit roster with the new assignment. Surface vacancies to the commander.
+10. File the internal assignment order. Place the order, the operations endorsement, the exception authorization (if applicable), and the MCTFS transaction in the unit personnel administration files.
+
+## Systems of record and forms
+
+### Systems
+
+- TFSMS. Holds the unit T-O with BIC structure.
+- MCTFS. Holds the BIC assignment record.
+- UD-MIPS. Cuts the BIC assignment transaction.
+- MOL. Surfaces the BIC assignment to the Marine.
+- Unit BIC roster. Local roster reconciled against TFSMS and MCTFS.
+
+### Forms
+
+- Internal Assignment Order. Local order documenting the BIC assignment.
+- Operations Endorsement. Internal staff routing record.
+- Exception-to-Policy Authorization. Documented exception for grade or MOS mismatches.
+- BIC Vacancy Report. Local report surfacing unfilled BICs.
+
+## Common pitfalls
+
+- Marine assigned to a BIC outside grade rules. The exception-to-policy authorization is missing. The 0170 officer signs an exception only with documented authority per MCO 1300.8<Citation source="MCO 1300.8" /> Chapter 4.
+- MOS mismatch unflagged. The Marine sits in a BIC requiring a different MOS without exception. Flag at the BIC roster reconciliation each cycle.
+- Internal assignment skipped at inbound. The Marine reports without a BIC assignment and pay rules driven by BIC (e.g., HFP, IDP) fail. Cut the BIC assignment within 7 days of report-in.
+- BIC vacancy report stale. The commander runs without manning visibility. Refresh the vacancy report at every inbound and outbound and weekly at minimum.
+- Date-of-rank rule violated. Senior Marine assigned to a junior billet without exception. The S-1 chief sorts by DOR at the BIC reconciliation per MCO 1300.8<Citation source="MCO 1300.8" /> Chapter 4.
+
+## Decision points
+
+- Exception-to-policy authority. The exception sits at MCO 1300.8<Citation source="MCO 1300.8" /> Chapter 4 paragraph 4 exception rules. The unit commander or higher headquarters authorizes the exception. The S-1 chief routes the exception package.
+- Operational fill versus T-O alignment. Operations endorses a fill outside T-O. The 0170 officer documents the operational reason and the gap closure plan.
+- Special billet qualifications. Critical billets (key control officer, intelligence custodian, classified material custodian) require additional qualifications. The S-1 chief verifies before the assignment cuts.
+
+## Authority
+
+This sub-page maps to NAVMC 3500.3E T-R event 0102-MPMN-2202 Manage the Manning and Staffing Process. The processing workflow sits under MCO 1300.8<Citation source="MCO 1300.8" /> Marine Corps Personnel Assignment Policy Chapter 4 internal assignment rules, MCO 5311.1E<Citation source="MCO 5311.1E" /> Total Force Structure Process for BIC structure, MCTP 3-30G<Citation source="MCTP 3-30G" /> Chapter 2 Manpower Administration function, and MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP for S-1 responsibilities.
+
+## Related references
+
+- MCO 1300.8 Marine Corps Personnel Assignment Policy. Internal assignment rules at Chapter 4.
+- MCO 5311.1E Total Force Structure Process. TFSMS T-O and BIC structure.
+- MCTP 3-30G Marine Corps Manpower and Personnel Administration. Chapter 2 manpower administration function.
+- MCO 5000.14D Marine Corps Administrative Procedures. S-1 manpower responsibilities.
+- MCTFSPRIUM. BIC assignment transaction format.

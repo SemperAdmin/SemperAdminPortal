@@ -1,0 +1,330 @@
+{
+  "track": "mcaat",
+  "programNumber": "admin",
+  "slug": "promotions",
+  "section": "Admin",
+  "categoryLabel": "Promotions",
+  "title": "Promotions",
+  "summary": "MCAAT Admin checklist - Promotions. 26 unique items across 3 audiences.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "applicabilityLevel": "IPAC, Reporting Unit, and Supporting Unit",
+  "lastVerified": "2026-05-10",
+  "source": {
+    "title": "MCAAT Admin Checklist - Promotions",
+    "publisher": "Marine Corps Manpower and Reserve Affairs"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "IPAC",
+      "description": "",
+      "items": [
+        {
+          "code": "23",
+          "question": "Are Meritorious Promotions reported IAW applicable regulations?",
+          "references": [
+            "MCTFSPRIUM 7-70701"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "24",
+          "question": "Are Meritorious Promotion Warrants (DD Form 216 MC) filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCO 1070.1",
+            "MARADMIN 015/20, MAA 1-20, para 4.b.(8)"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "25",
+          "question": "Are CRB(s) reported IAW applicable regulations?",
+          "references": [
+            "MCO P1400.32D, para(s) 1200.3.b, 6001.1.d, 6001.2.e, 6001.5.d, 6001.5.e.(3).(a).1, 6004.1",
+            "MCTFSPRIUM 7-70507"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "26",
+          "question": "Are CRB documents filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCO 1070.1",
+            "MCTFSPRIUM Chap. 13, Appendix C"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02.0",
+      "title": "Reporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Are Meritorious Promotion Warrants (DD Form 216 MC) filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCO 1070.1",
+            "MARADMIN 015/20, MAA 1-20, para 4.b.8"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Are Meritorious Promotions reported IAW applicable regulations?",
+          "references": [
+            "MCTFSPRIUM 7-70701"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Is the unit ensuring CRB(s) are approved by the Commanding Officer who exercises promotion authority?",
+          "references": [
+            "MCO P1400.32D, para 1200.3.b, 6001.1.d, 6001.5"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Are CRB documents filed in OMPF within 10 working days from the effective date?",
+          "references": [
+            "MCO 1070.1",
+            "MCTFSPRIUM Ch 13, Appendix C"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Are CRB(s) reported IAW applicable regulations?",
+          "references": [
+            "MCO P1400.32D, para(s) 1200.3.b, 6001.1.d, 6001.2.e, 6001.5.d, 6001.5.e.3.a.1 and  6004.1",
+            "MCTFSPRIUM 7-70507"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Is the unit ensuring only the individual(s) with the appropriate promotion authority is certifying promotion recommendation entries?",
+          "references": [
+            "MCO P1400.32D, para 1200.3"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Is the unit ensuring JEPES occasions are approved by the individual with appropriate promotion authority?",
+          "references": [
+            "MCO P1400.32D, para 1200.3.b",
+            "MCO 1616.1, Ch 1, para 5.g; Ch 2, para 1.f"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Is the unit ensuring the JEPES occasions are approved no later than the last day of the JEPES occasion date?",
+          "references": [
+            "MCO 1616.1, Ch 1, para 3.c"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Is the unit reviewing the remedial tab within JEPES and ensuring the appropriate remedial promotion action(s) is completed after the JEPES / MCTFS record has been corrected?",
+          "references": [
+            "MCO 1616.1, Ch 2",
+            "MCO P1400.32D, para 2600",
+            "MARADMIN 153/21",
+            "MCTFSPRIUM 7-70702"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "22",
+          "question": "Has the unit established internal control measures to review Marines in a non-rec status IAW applicable regulations? (to include ensuring justification is provided for Marines left in a Not Recommended status for longer than 6 Months).",
+          "references": [
+            "MCO P1400.32D, para(s) 1200.4, 2201.4, 2500.4",
+            "MCO 1616.1, Appendix C",
+            "MARADMIN 185/25"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.0",
+      "title": "Supporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "10",
+          "question": "Is the unit ensuring Meritorious Promotion Warrant(s) are maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9",
+            "SECNAV M-5210.1",
+            "MCO P1400.32D Chap 4",
+            "MCO 1070.1",
+            "MARADMIN 015/20 MAA 1-20 par. 4.b.(8)"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Is the unit ensuring CRB(s) are approved by the Commanding Officer who exercises promotion authority?",
+          "references": [
+            "MCO P1400.32D, par(s). 1200.3.b, 6001.1.d, 6001.5"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Is the unit ensuring approved CRB(s) are submitted to and received by the reporting unit within 5 days of occurrence?",
+          "references": [
+            "MCO P1400.32D Chap. 6",
+            "MCTFSPRIUM, 1-10100.6, 2-20103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "13",
+          "question": "Is the unit validating the DOR and effective date of the admin reduction is reported IAW applicable regulations by the reporting unit?",
+          "references": [
+            "MCO P1400.32D, 6001.2.e, 6001.5, 6004.1",
+            "MCTFSPRIUM, 1-10111, 7-70507"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "14",
+          "question": "Is the unit ensuring required page 11 entries for Negative Promotion Recommendations and Marines recommended for promotion prior to the end of a not-recommended period are filed in OMPF within 10 working days from the effective date?",
+          "references": [
+            "MCO 1070.1",
+            "MCTFSPRIUM, Ch 13, Appendix C, MARADMIN 559/23"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "15",
+          "question": "Is the unit ensuring JEPES occasions are approved by the individual with appropriate promotion authority?",
+          "references": [
+            "MCO P1400.32D, par. 1200.3.b",
+            "MCO 1616.1, Chap. 1, par. 5.g; Chap. 2, par. 1.f"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "16",
+          "question": "Is the unit ensuring the JEPES occasions are approved no later than the last day of the JEPES occasion date?",
+          "references": [
+            "MCO 1616.1, Chap. 1, par. 3.c"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "17",
+          "question": "Is the unit reviewing the remedial tab within JEPES and ensuring the appropriate remedial promotion action(s) is completed after the JEPES / MCTFS record has been corrected?",
+          "references": [
+            "MCO 1616.1, Chap. 2",
+            "MCO P1400.32D, par. 2600",
+            "MARADMIN 153/21"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "18",
+          "question": "Is the unit ensuring required page 11 entries for Negative Promotion Recommendations are completed IAW applicable regulations?",
+          "references": [
+            "MCO P1400.32D, para 2101, 2500.4, 2500.5",
+            "MCO P1070.12K W/CH 1, para 4006.2.f",
+            "MARADMIN 150/16, 153/21, 559/23, MARADMIN 185/25"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "19",
+          "question": "Is the unit ensuring CRB(s) packages are maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9",
+            "SECNAV M-5210.1",
+            "MCO 1070.1"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "20",
+          "question": "Has the unit established internal control measures to review Marines in a non-rec status IAW applicable regulations? (to include ensuring justification is provided for Marines left in a Not Recommended status for longer than 6 Months).",
+          "references": [
+            "MCO P1400.32D, para(s) 1200.4, 2201.4, 2500.4",
+            "MCO 1616.1, Appendix C",
+            "MARADMIN 185/25"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "21",
+          "question": "Is the unit ensuring only the individual(s) with the appropriate promotion authority is certifying promotion recommendation entries?",
+          "references": [
+            "MCO P1400.32D, para 1200.3, MARADMIN 153/21"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "track": "mcaat",
+  "programNumber": "admin",
+  "slug": "special-and-hazardous-duty-pay",
+  "section": "Admin",
+  "categoryLabel": "Special And Hazardous Duty Pay",
+  "title": "Special And Hazardous Duty Pay",
+  "summary": "MCAAT Admin checklist - Special And Hazardous Duty Pay. 42 unique items across 3 audiences.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "applicabilityLevel": "IPAC, Reporting Unit, and Supporting Unit",
+  "lastVerified": "2026-05-10",
+  "source": {
+    "title": "MCAAT Admin Checklist - Special And Hazardous Duty Pay",
+    "publisher": "Marine Corps Manpower and Reserve Affairs"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "IPAC",
+      "description": "",
+      "items": [
+        {
+          "code": "42",
+          "question": "Is Demolition Duty Pay reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 24, par. 2405",
+            "MCO 3571.2H, Chap. 2, par. 7",
+            "MCO 1000.6, Chap. 1, Sect. 2, par. 7",
+            "MARADMIN 361/09",
+            "MCTFSPRIUM, 9-90101, Table 9-5"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "41",
+          "question": "Is Jump Pay reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol 7a, Chap. 24, par. 2402, 2403, Tables 24-1",
+            "MCO 3120.11A Chap. 5, Chap. 6",
+            "MCO 1000.6, Chap. 1, Sect. 2, par. 4, 5 ,6",
+            "MCTFSPRIUM 9-90101, Table 9-4"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "40",
+          "question": "Is Flight Pay reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 22, par. 2.0 (2202)",
+            "MCO 1326.2H par. 4",
+            "MCTFSPRIUM, 9-90101, Tables 9-1, 9-2"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "39",
+          "question": "Is Dive Pay reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 11",
+            "MCO 3150.4A Chap. 5, par. 5 and 6",
+            "MCO 1000.6 Chap. 1, Sect 2, par. 4, 5, 6",
+            "MCTFSPRIUM, 9-90501"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "38",
+          "question": "Is the unit ensuring required Page 11's entries for AIP/VSI payment elections are completed IAW applicable regulations and are they filed in OMPF within 10 working days of the date of certification on unit diary?",
+          "references": [
+            "MARADMIN 628/20 7.E"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "37",
+          "question": "Is Special Duty Allowance (SDA), Assignment Incentive Pay (AIP) and Voluntary Supplemental Incentives (VSI) reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 8, par. 080101",
+            "MCO 7220.12R, par. 4",
+            "MARADMIN 628/20; PAAN 6-16",
+            "MCTFSPRIUM, 9-90201, 9-90202, 9-91701",
+            "MARADMIN 349/23"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02.0",
+      "title": "Reporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "06",
+          "question": "Are VSI/AIP lump sum recoupment waivers signed by an O6 level commander? Are AIP lump sum recoupment waivers submitted to the reporting prior to the Marine's transfer?",
+          "references": [
+            "MARADMIN 628/20, 039/22",
+            "MCTFSPRIUM 1-10100.6"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Is the unit ensuring only those billets/personnel that are authorized to receive demolition pay are receiving it? Is the unit ensuring key supporting documents that substantiate payment of Demolition Pay are prepared IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol 7A, Ch 24, para 2405",
+            "MCO 3571.2H, Ch 2, para 7",
+            "MCO 1000.6, Ch 1, Sect 2, para 7",
+            "MCTFSPRIUM, 9-90101, Table 9-5",
+            "MARADMIN 361/09"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Is Demolition Duty Pay reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol 7A, Ch 24, para 2405",
+            "MCO 3571.2H, Ch 2, para 7",
+            "MCO 1000.6, Chap 1, Sect 2, para 7",
+            "MCTFSPRIUM, 9-90101, Table 9-5",
+            "MARADMIN 361/09"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Is the unit ensuring Marines that participate in diving duty are assigned by competent orders and maintained on file to substantiate payment of dive pay?",
+          "references": [
+            "DoDFMR Vol 7A, Ch 11",
+            "MCO 3150.4A Ch 5, para 5 and 6",
+            "MCO 1000.6 Chap 1, Sect 2, para 4, 5 and 6",
+            "MCTFSPRIUM, 1-10100.6",
+            "MARADMIN 601/24"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Is the unit ensuring key supporting documents that validates payment of Jump Pay are maintained on file for audit, and in accordance with retention policies? (assignment order, unit command endorsement, and unit jump logs).",
+          "references": [
+            "DoDFMR Vol 7a, Ch 24, para(s) 2402, 2403, Tables 24-1",
+            "MCO 3120.11A Chap 5, Chap 6",
+            "MCO 1000.6, Chap 1, Sect 2, para 4, 5 and 6",
+            "MARADMIN 601/24"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Is Jump Pay reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol 7a, Chap 24, para(s) 2402, 2403, Tables 24-1",
+            "MCO 3120.11A Chap 5, Chap 6",
+            "MCO 1000.6, Chap 1, Sect 2, para 4, 5 and 6",
+            "MCTFSPRIUM 90101, Table 9-4"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Is Special Duty Allowance (SDA), Assignment Incentive Pay (AIP) and Voluntary Supplemental Incentives (VSI) reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol 7A, Ch 8, para 080101",
+            "MCO 7220.12R, para 4",
+            "MCTFSPRIUM, 9-90201, 9-90202, 9-91701; PAAN 6-16",
+            "MARADMIN 628/20",
+            "MARADMIN 349/23"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "13",
+          "question": "Is the unit ensuring Marines performing special duty are recertified NLT 12 months from the last certification?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 8",
+            "MCO 7220.12R, par. 4.a.(2)",
+            "MARADMIN 628/20",
+            "MCTFSPRIUM, 1-10100.6, 2-20103"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "14",
+          "question": "Are Marines who terminate SDA early (relieved for cause) being checked VSI/AIP lump sum?",
+          "references": [
+            "MCO 7220.12R",
+            "MCO 1070.1",
+            "MARADMIN 628/20",
+            "MCTFSPRIUM, 9-90201, 9-90202, 9-91700, 9-91701"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "15",
+          "question": "Is the unit ensuring required Page 11's entries for AIP/VSI payment elections are completed IAW applicable regulations and are they filed in OMPF within 10 working days of the date of certification on unit diary?",
+          "references": [
+            "MARADMIN 628/20 7.E"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "16",
+          "question": "Is Dive Pay reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol 7A, Ch 11",
+            "MCO 3150.4A Ch 5, para 5 and 6",
+            "MCO 1000.6 Chap 1, Sect 2, para 4, 5 and 6",
+            "MCTFSPRIUM, 9-90501"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "17",
+          "question": "Is the unit ensuring monthly flight audit boards are conducted?",
+          "references": [
+            "MCO 1326.2H para 4.a.2.b.3"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "18",
+          "question": "Is the unit ensuring Flight Duty assignment orders are prepared IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol 7A, Ch 22, para 2202",
+            "MCO 1326.2H",
+            "MCTFSPRIUM, 9-90101, Tables 9-1 and 9-2"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "19",
+          "question": "Is Flight Pay reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol 7A, Ch 22, para 2.0 (2202)",
+            "MCO 1326.2H para 4",
+            "MCTFSPRIUM, 9-90101, Tables 9-1 and 9-2"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "20",
+          "question": "Are aeronautical orders submitted to and received by the reporting unit within 5 days of assignment? Note: Applies to the MATSGs",
+          "references": [
+            "DODFMR Vol 7a Ch 22",
+            "MCO 1001R.1L Ch 4, Sect 4, para 7",
+            "MCTFSPRIUM 2-20103,  9-90102"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.0",
+      "title": "Supporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Is the unit ensuring Assignment Incentive Pay/Voluntary Supplemental Incentives lump sum Page 11's are filed in OMPF within 10 working days of the effective date?",
+          "references": [
+            "MCO 1070.1",
+            "MARADMIN 628/20",
+            "MARADMIN 349/23"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Is the unit ensuring Marine performing special duty are recertified NLT the 12th month. Is the unit ensuring the SDA annual recertification(s) are submitted to the reporting unit no later than 5 days after the end of the month?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 8",
+            "MCO 7220.12R, par. 4.a.(2)",
+            "MARADMIN 628/20",
+            "MCTFSPRIUM, 1-10100.6, 2-20103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "36",
+          "question": "Are aeronautical orders submitted to and received by the reporting unit within 5 days of assignment?",
+          "references": [
+            "DoDFMR Vol. 7A Chap. 22",
+            "MCO 1001R.1L Chap. 4, Sect. 4, par. 7",
+            "MCTFSPRIUM, 1-10100.6, 2-20103,  9-90102"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "35",
+          "question": "Is the unit ensuring key supporting documents that substantiate payment of Special Duty Allowance (SDA), Assignment Incentive Pay (AIP) and Voluntary Supplemental Incentives (VSI) are submitted to the reporting unit within 5 days of the effective date?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 8, par. 080101",
+            "MCO 7220.12R, par. 4; PAAN 6-16",
+            "MARADMIN 628/20",
+            "MCTFSPRIUM, 1-10100.6, 2-20103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "34",
+          "question": "Is the unit validating Jump Pay is reported IAW applicable regulations by the reporting unit?",
+          "references": [
+            "MCTFSPRIUM, 1-10111, 9-90101, Table 9-4"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "33",
+          "question": "Is the unit ensuring key supporting documents that validates payment of Jump Pay are maintained on file for audit, and in accordance with retention policies? (assignment order, unit command endorsement, and unit jump logs).",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9",
+            "SECNAV M-5210.1",
+            "MCO 3120.11A"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "32",
+          "question": "Is the unit ensuring key supporting documents that substantiate payment of Jump Pay are submitted to and received by the reporting unit no later than 5 days after the end of the month?",
+          "references": [
+            "MCO 3120.11A, Chap. 6, par. 9.e",
+            "MCTFSPRIUM, 1-10100.6, 2-20103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "31",
+          "question": "Is the unit validating Flight Pay is reported IAW applicable regulations?",
+          "references": [
+            "MCTFSPRIUM, 1-10111, 9-90101, Table 9-1"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "30",
+          "question": "Is the unit ensuring key supporting document that validates payment of Flight Pay are maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9",
+            "SECNAV M-5210.1"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "29",
+          "question": "Is the unit ensuring key supporting documents that substantiates payment of Flight Pay are submitted to and received by the reporting unit no later than 5 days after the end of the month?",
+          "references": [
+            "MCO 1326.2H par. 4",
+            "MCTFSPRIUM, 1-10100.6, 2-20103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "28",
+          "question": "Is the unit ensuring monthly flight audit boards are conducted?",
+          "references": [
+            "MCO 1326.2H par. 4.a(2).(b).3"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "27",
+          "question": "Is the unit ensuring Flight Duty assignment orders are prepared IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 22, par. 2202",
+            "MCO 1326.2H",
+            "MCTFSPRIUM, 9-90101, Tables 9-1, 9-2"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "26",
+          "question": "Is the unit validating Dive Pay is reported IAW applicable regulations by the reporting unit?",
+          "references": [
+            "MCTFSPRIUM, 1-10111, 9-90501",
+            "DoDFMR Vol. 7A, Chap. 11",
+            "MCO 3150.4A"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "25",
+          "question": "Is the unit ensuring key supporting documents that validates payment of Dive Pay are maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 11, Chap. 9",
+            "SECNAV M-5210.1"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "24",
+          "question": "Is the unit ensuring Marines that are required to participate in diving duty are assigned by competent orders, and ensuring assignment orders that substantiate payment of dive pay are submitted to and received by the reporting unit, no later than 5 days after the annual re-certification?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 11",
+            "MCO 3150.4A Chap. 5, par(s). 5, 6",
+            "MCO 1000.6 Chap. 1, Sect. 2, par(s) 4, 5, 6",
+            "MCTFSPRIUM, 1-10100.6"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Are Marines who terminate SDA early (relieved for cause) being checked Assignment Incentive Pay/Voluntary Supplemental Incentives lump sum?",
+          "references": [
+            "MCO 7220.12R",
+            "MCO 1070.1",
+            "MARADMIN 628/20",
+            "MCTFSPRIUM, 9-90201, 9-90202, 9-91700, 9-91701"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Are Assignment Incentive Pay/Voluntary Supplemental Incentives lump sum recoupment waivers signed by an O6 level commander? Are AIP lump sum recoupment waivers submitted to the reporting prior to the Marine's transfer?",
+          "references": [
+            "MARADMIN 628/20, 039/22",
+            "MCTFSPRIUM 1-10100.6"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Is the unit ensuring key supporting documents to validate payment of Special Duty Allowance (SDA), Assignment Incentive Pay (AIP) and Voluntary Supplemental Incentives (VSI) are maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9",
+            "SECNAV M-5210.1",
+            "MCO 1070.1",
+            "MARADMIN 628/20"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "21",
+          "question": "Is the unit ensuring that key supporting documents that substantiate payment of Demolition Pay are submitted to and received by the reporting unit on a monthly basis, no later than 5 days after the end of the month?",
+          "references": [
+            "MCO 3571.2H, Chap. 2, par. 7",
+            "MCO 1000.6, Chap. 1, Sect. 2, par. 7",
+            "MARADMIN 361/09",
+            "MARADMIN 728/12, MCTFSPRIUM, 1-10100.6, 2-20103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "22",
+          "question": "Is the unit ensuring key supporting documents that validates payment of Demolition Pay are maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9",
+            "SECNAV M-5210.1"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "23",
+          "question": "Is the unit ensuring Demolition Pay is reported IAW applicable regulations by the reporting unit?",
+          "references": [
+            "MCTFSPRIUM, 1-10111, 9-90101, Table 9-5",
+            "MCO 3571.2H"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        }
+      ]
+    }
+  ]
+}

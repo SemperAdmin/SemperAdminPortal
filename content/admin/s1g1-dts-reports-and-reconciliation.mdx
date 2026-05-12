@@ -1,0 +1,127 @@
+---
+title: "DTS Reports and Reconciliation - S-1 Procedural Page"
+slug: "reports-and-reconciliation"
+summary: "Pull and reconcile Complete Traveler Information List monthly, Unsubmitted Voucher Report weekly, Approved Status Report bi-weekly, Debt Management Report weekly, and Route Status Report per MCO 4650.39A Chapter 6 and Chapter 1 paragraphs 2-5."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-11"
+unitType: "s1-g1"
+topic: "dts"
+function: "GENA"
+skillLevel: 2000
+trEventCode: "0102-GENA-2002"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 4650.39A"
+billets: ["s-1-officer", "s-1-chief", "ldta", "odta", "fdta", "dmm"]
+gradesPerforming: ["Sgt", "SSgt", "GySgt", "MSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 4650.39A Chapter 6 paragraph 1 (LDTA Reports)"
+  - "MCO 4650.39A Chapter 6 paragraph 2 (Retention)"
+  - "MCO 4650.39A Chapter 6 paragraph 3.a (Unsubmitted Voucher Report)"
+  - "MCO 4650.39A Chapter 6 paragraph 3.d (Complete Traveler Information List)"
+  - "MCO 4650.39A Chapter 6 paragraph 4.a (Approved Status Report)"
+  - "MCO 4650.39A Chapter 6 paragraph 5.a (APC notification on Unsubmitted Voucher Report)"
+  - "MCO 4650.39A Chapter 6 paragraph 6 (Debt Management Report)"
+  - "MCO 4650.39A Chapter 1 paragraph 2.f (LDTA reconciliation)"
+  - "MCO 4650.39A Chapter 1 paragraph 3.b and 3.f (ODTA reconciliation)"
+  - "MCO 4650.39A Chapter 1 paragraph 4.e (FDTA reconciliation)"
+  - "MCO 4650.39A Chapter 1 paragraph 5.b.2 (Route Status Report)"
+  - "MCO 4650.39A Chapter 2 paragraph 2 (Permissions alignment)"
+  - "MCO 5210.11F Marine Corps Records Management Program"
+performanceSteps:
+  - "Pull the Complete Traveler Information List monthly per Chapter 6 paragraphs 1-2"
+  - "Reconcile permissions and accesses against DD Form 577 appointments"
+  - "Verify SSN, address, unit, GTCC, and EFT data"
+  - "Pull the Unsubmitted Voucher Report weekly per Chapter 6 paragraph 3.a"
+  - "Notify traveler, AO, and APC of outstanding vouchers"
+  - "Pull the Approved Status Report bi-weekly per Chapter 6 paragraph 4.a"
+  - "Resolve Accounts Receivable rejects"
+  - "Pull the Debt Management Report weekly per Chapter 6 paragraph 6"
+  - "Use the Route Status Report to monitor routing past three business days"
+  - "Retain every report for current plus previous calendar year"
+relatedRoles:
+  marine: "/marines/dts/reports-and-reconciliation"
+  leader: "/leader/dts/reports-and-reconciliation"
+  commander: "/commander/dts/reports-and-reconciliation"
+source:
+  title: "DTS Reports and Reconciliation - MCO 4650.39A Chapter 6"
+  publisher: "Headquarters Marine Corps Manpower Information Support Systems (MIF)"
+---
+
+## Role and responsibility
+
+The LDTA owns the unit-level reports cycle per MCO 4650.39A<Citation source="MCO 4650.39A" /> Chapter 6 paragraphs 1-2 and pulls, reconciles, and retains the Complete Traveler Information List monthly per Chapter 1 paragraph 2.f. The ODTA pulls the unit-level Complete Traveler Information List monthly per Chapter 1 paragraph 3.b and 3.f and Chapter 6 paragraph 3.d. The ODTA pulls the Unsubmitted Voucher Report weekly per Chapter 6 paragraph 3.a. The FDTA pulls the Approved Status Report bi-weekly per Chapter 1 paragraph 4.e and Chapter 6 paragraph 4.a. The DMM pulls the Debt Management Report weekly per Chapter 6 paragraph 6. Every DTA uses the Route Status Report per Chapter 1 paragraph 5.b.2 to monitor documents pending action past three business days.
+
+Source documents flow from the DTS Reports module, the DD Form 577 appointment file, the MCTFS roster, the GTCC vendor delinquency data, the EFT verification screens, the voucher routing trail, and the Approved Status Report rejects. Reports outputs include the annotated Complete Traveler Information List with reconciliation notes, the Unsubmitted Voucher Report with traveler, AO, and APC notifications, the Approved Status Report with reject resolutions, the Debt Management Report with debt collection actions, the Route Status Report with routing escalations, and the retention file covering current plus previous calendar year.
+
+Per Chapter 6 paragraph 1, the report header data on every report stays unaltered. Per paragraph 2, the retention floor is current plus previous calendar year. The reconciliation annotation captures discrepancies and actions taken.
+
+## Trigger events
+
+- Monthly Complete Traveler Information List cycle opens.
+- Weekly Unsubmitted Voucher Report cycle opens.
+- Bi-weekly Approved Status Report cycle opens.
+- Weekly Debt Management Report cycle opens.
+- Voucher routing exceeds three business days, triggering Route Status Report escalation.
+- DD Form 577 appointment change triggers Complete Traveler Information List re-pull.
+- IGMC Defense Travel System FA inspection notice arrives.
+
+## Processing workflow
+
+1. Pull the Complete Traveler Information List monthly. Per MCO 4650.39A<Citation source="MCO 4650.39A" /> Chapter 6 paragraphs 1-2 and Chapter 1 paragraph 2.f (LDTA) and paragraph 3.b and 3.f (ODTA), the LDTA pulls the unit-level list and the ODTA pulls the org-level list each month. The header data stays unaltered.
+2. Reconcile permissions and accesses. Per Chapter 2 paragraph 2 and Chapter 6 paragraphs 1-2, the LDTA aligns DTS permissions and accesses with DD Form 577 appointments. Separation of duties holds. Duplicate or missing EFT data triggers correction.
+3. Verify profile data. Per Chapter 6 paragraph 3.d, the ODTA verifies SSN, address, unit information, GTCC duplication, and EFT data. Permission levels align with DD Form 577 appointments.
+4. Pull the Unsubmitted Voucher Report. Per Chapter 6 paragraph 3.a, the ODTA pulls the report weekly. Travelers submit vouchers within 5 business days of return to or arrival at the permanent duty station per Chapter 1 paragraph 5.a.(2)(d).
+5. Notify traveler, AO, and APC. Per Chapter 6 paragraph 5.a, the ODTA notifies the traveler, the AO, and the Agency Program Coordinator (APC) of outstanding vouchers. The notification supports timely settlement and GTCC delinquency prevention.
+6. Pull the Approved Status Report. Per Chapter 1 paragraph 4.e and Chapter 6 paragraph 4.a, the FDTA pulls the report every two weeks. The FDTA resolves rejects, annotates the resolution, and retains the notification records.
+7. Pull the Debt Management Report. Per Chapter 6 paragraph 6, the DMM pulls the report weekly. The DMM contacts the traveler, opens payroll collection, processes out-of-service debt, and routes waiver requests.
+8. Use the Route Status Report. Per Chapter 1 paragraph 5.b.2, the ODTA pulls the report to monitor documents pending action past three business days. Vouchers route to Disbursing or Finance within three business days after the traveler signs.
+9. Retain the reports. Per Chapter 6 paragraph 2 and MCO 5210.11F<Citation source="MCO 5210.11F" />, retain every report for current plus previous calendar year. The retention file holds the annotated copies, the notification records, and the resolution evidence.
+10. Brief the LDTA and the commander. The LDTA briefs the commander on DTS posture quarterly. The metrics surface inbound and outbound profile churn, voucher submission timeliness, reject volume, and debt collection status.
+
+## Systems of record and forms
+
+### Systems
+
+- DTS Reports module. Source of every report.
+- LDTA Reports File. Local file holding annotated reports.
+- ODTA Reports File. Local file at the org level.
+- FDTA Reports File. Local file at the disbursing level.
+- DMM Reports File. Local file at the debt management level.
+- Marine Corps Total Force System (MCTFS). Source of unit roster cross-check.
+
+### Forms
+
+- Complete Traveler Information List. Pulled monthly per Chapter 6 paragraphs 1-2.
+- Unsubmitted Voucher Report. Pulled weekly per Chapter 6 paragraph 3.a.
+- Approved Status Report. Pulled bi-weekly per Chapter 6 paragraph 4.a.
+- Debt Management Report. Pulled weekly per Chapter 6 paragraph 6.
+- Route Status Report. Pulled per routing escalation per Chapter 1 paragraph 5.b.2.
+
+## Common pitfalls
+
+- Report header data removed. Per Chapter 6 paragraphs 1, 3.a, 4.a, and 6, the system header data stays unaltered. Removed headers void retention.
+- Cadence mismatch. Per Chapter 6, the Complete Traveler Information List runs monthly. The Unsubmitted Voucher Report runs weekly. The Approved Status Report runs bi-weekly. The Debt Management Report runs weekly. Wrong cadence misaligns with the order.
+- Annotations missing. Per Chapter 6, the annotation captures discrepancies and actions taken. A clean unannotated report fails inspection.
+- Notification records absent. Per Chapter 6 paragraph 5.a, the ODTA notifies the traveler, the AO, and the APC. Without the notification record, the audit trail breaks.
+- Retention floor missed. Per Chapter 6 paragraph 2 and MCO 5210.11F<Citation source="MCO 5210.11F" />, retain current plus previous calendar year.
+- Permissions out of sync with appointments. Per Chapter 2 paragraph 2, the LDTA aligns permissions to DD Form 577 appointments at the monthly reconciliation. Stale permissions break separation of duties.
+
+## Decision points
+
+- Permission mismatch resolution. Per Chapter 2 paragraph 2, the LDTA pulls permissions out of sync with the current DD Form 577. The LDTA confirms the appointment status before action.
+- AO notification on outstanding voucher. Per Chapter 6 paragraph 5.a, the ODTA notifies the AO when the traveler does not respond. The AO holds approval authority over the voucher's path.
+- Reject resolution path on Approved Status Report. Per Chapter 6 paragraph 4.a, the FDTA verifies the reject reason. EFT errors route to profile correction. Funding errors route to BDTA reconciliation.
+- Debt routing decision. Per Chapter 6 paragraph 6 and Chapter 9, the DMM routes active-status debt to payroll collection and separated-status debt to out-of-service debt.
+
+## Authority
+
+This sub-page sits under MCO 4650.39A<Citation source="MCO 4650.39A" /> Chapter 6 paragraphs 1-6 (Reports and Reconciliation) and Chapter 1 paragraphs 2.f (LDTA), 3.b and 3.f (ODTA), 4.e (FDTA), and 5.b.2 (Route Status Report). Chapter 2 paragraph 2 (Permissions) covers the permission alignment rule. MCO 5210.11F<Citation source="MCO 5210.11F" /> covers report retention. The IGMC Defense Travel System FA checklist surfaces these reports in the unit audit.
+
+## Related references
+
+- MCO 4650.39A Chapter 6. Reports and reconciliation rules.
+- MCO 4650.39A Chapter 1 paragraphs 2-5. DTA report ownership.
+- MCO 4650.39A Chapter 2 paragraph 2. Permissions alignment.
+- MCO 5210.11F. Report retention.
+- IGMC Defense Travel System FA Checklist. Audit baseline.

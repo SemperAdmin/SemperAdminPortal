@@ -1,0 +1,277 @@
+---
+title: "EDFR Processing and Failure Resolution"
+slug: "edfr-processing"
+summary: "The Electronic Diary Feedback Report (EDFR) confirms which UD/MIPS transactions processed and which failed. Daily EDFR review catches failures before they become audit findings or pay errors."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-01"
+unitType: "s1-g1"
+topic: "records-management"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0111-PERA-2007"
+sourcePolicy: "MCTFSPRIUM"
+mosPerforming: ["0111", "0170"]
+billets: ["admin-clerk", "admin-chief", "personnel-officer"]
+gradesPerforming: ["SGT", "SSGT"]
+sustainmentInterval: "12 months"
+references:
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "MCTFSCODESMAN Marine Corps Total Force System Codes Manual"
+  - "MCO P1070.12 Marine Corps Individual Records Administration Manual (IRAM)"
+performanceSteps:
+  - "Pull EDFR daily from MCTFS"
+  - "Identify successful and failed transactions"
+  - "Investigate each failure"
+  - "Determine corrective action"
+  - "Resubmit corrected transaction"
+  - "Verify subsequent EDFR confirms processing"
+relatedRoles:
+  marine: "/marines/records/review-mctfs"
+  commander: "/commander/relationships/ipac-procedures"
+source:
+  title: "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  publisher: "HQMC"
+  url: "https://www.marines.mil/News/Publications/"
+---
+
+## What the EDFR Is
+
+The Electronic Diary Feedback Report (EDFR) is the daily MCTFS report showing which UD/MIPS transactions processed successfully and which failed. Per MCTFSPRIUM, S-1 admin reviews the EDFR daily to catch failures before they become persistent problems.
+
+The EDFR is the safety net. Without it, failed transactions go undetected. Failed transactions cause.
+
+- Pay errors that persist for months
+- Records that remain incorrect during audits
+- Promotion eligibility blocked by stale data
+- Member frustration when MCTFS does not reflect reality
+
+## How the EDFR Works
+
+After UD/MIPS transaction batch submission.
+
+1. MCTFS attempts to process each transaction
+2. Successful transactions update the system of record
+3. Failed transactions stay in pending status
+4. EDFR generates showing both outcomes
+5. S-1 reviews EDFR and addresses failures
+
+The cycle is: submit, process, EDFR, correct, resubmit, EDFR.
+
+## EDFR Contents
+
+The EDFR contains.
+
+### Transaction-Level Detail
+
+For each transaction submitted.
+
+- Transaction ID
+- Member SSN and name
+- Transaction code applied
+- Submission date and time
+- Processing outcome (success or failure)
+- Failure reason if failed
+
+### Failure Codes
+
+Each failure has a specific code per MCTFSCODESMAN.
+
+- Data validation failures (SSN mismatch, invalid code, etc.)
+- Business rule failures (eligibility not met, conflicts with existing data)
+- System failures (technical errors)
+- Source document failures (missing required attachments)
+
+### Summary Statistics
+
+Roll-up data for the batch.
+
+- Total transactions submitted
+- Successful transactions count
+- Failed transactions count
+- Failure types breakdown
+
+## Performance Steps
+
+### Step 1 - Pull EDFR Daily
+
+Build EDFR review into daily routine.
+
+- First action of the workday: pull yesterday's EDFR
+- Second action: review failures
+- Third action: address failures before processing new transactions
+
+### Step 2 - Identify Successful Transactions
+
+Confirm what processed.
+
+- Verify each expected transaction shows success
+- Note any expected transactions missing from EDFR
+- Document successful processing for tracking
+
+### Step 3 - Identify Failed Transactions
+
+Review each failure.
+
+- Note the failure code
+- Note the failure reason text
+- Note which member affected
+- Group similar failures for efficient correction
+
+### Step 4 - Investigate Each Failure
+
+For each failure, determine the cause.
+
+- Read the failure reason carefully
+- Pull the source document
+- Pull the original transaction details
+- Identify what needs correction
+
+### Step 5 - Determine Corrective Action
+
+Based on failure type.
+
+| Failure Type | Corrective Action |
+|--------------|-------------------|
+| SSN mismatch | Verify SSN in source document and MCTFS, correct typo |
+| Invalid transaction code | Look up correct code in MCTFSCODESMAN, resubmit |
+| Effective date wrong | Verify date in source document, resubmit with correct date |
+| Conflict with existing data | Review existing data, determine if reversal needed first |
+| Missing supporting transaction | Submit prerequisite transaction, then retry |
+| System failure | Contact MCTFS Help Desk, retry after resolution |
+
+### Step 6 - Resubmit Corrected Transaction
+
+Process the correction.
+
+- Apply the correction in UD/MIPS
+- Submit corrected transaction
+- Note batch ID for follow-up
+- Document the correction in tracking system
+
+### Step 7 - Verify Subsequent EDFR
+
+Within 5 business days.
+
+- Pull next EDFR
+- Verify corrected transaction processed
+- If still failed, escalate to MCTFS Help Desk or PAC
+- Continue until success
+
+## Common EDFR Failure Reasons
+
+These appear most often.
+
+### SSN Mismatch
+
+- Cause: SSN typo in transaction
+- Fix: Verify against MCTFS and correct
+- Prevention: SSN auto-validation in UD/MIPS
+
+### Invalid Transaction Code
+
+- Cause: Wrong code from MCTFSCODESMAN applied
+- Fix: Look up correct code, resubmit
+- Prevention: Use code lookup tools, double-check before submission
+
+### Eligibility Not Met
+
+- Cause: Transaction conflicts with member's current eligibility
+- Fix: Verify eligibility, may require prerequisite transaction
+- Prevention: Verify eligibility before submission
+
+### Effective Date Errors
+
+- Cause: Date before allowed range or after current date
+- Fix: Apply correct date from source document
+- Prevention: Always pull date from source document
+
+### Duplicate Transaction
+
+- Cause: Same transaction submitted twice
+- Fix: Reverse one, leave other
+- Prevention: Check tracking before resubmitting
+
+### Missing Prerequisite
+
+- Cause: Transaction depends on another not yet processed
+- Fix: Submit prerequisite first, then retry
+- Prevention: Sequence dependent transactions properly
+
+### System Errors
+
+- Cause: MCTFS technical issue
+- Fix: Wait for resolution and retry, contact Help Desk if persistent
+- Prevention: None directly, but minimize impact through prompt detection
+
+## EDFR Tracking
+
+Maintain a tracking log for EDFR review.
+
+- Date EDFR pulled
+- Total transactions reviewed
+- Failures identified
+- Corrections submitted
+- Re-verification dates
+
+The log supports audit response and trend analysis.
+
+## Failure Trends to Watch
+
+Track patterns over time.
+
+- Repeated SSN errors: Training issue or bad source data
+- Repeated wrong codes: Need code reference improvement
+- Repeated eligibility failures: Need pre-submission validation
+- System failure spikes: MCTFS issues to escalate
+
+Trends drive process improvements at the section level.
+
+## Cross-Coordination
+
+When EDFR failures span multiple commands.
+
+- PAC for complex eligibility cases
+- HQMC Help Desk for system failures
+- MCAAT for policy interpretation
+- Receiving units for transfer-related failures
+
+Document coordination for tracking.
+
+## Audit Implications
+
+EDFR review compliance is audit-relevant.
+
+- Auditors review EDFR processing logs
+- Unaddressed failures create findings
+- Patterns of failures suggest systemic issues
+- Documentation of corrective actions required
+
+Daily discipline on EDFR prevents audit findings.
+
+## Common EDFR Review Errors
+
+These hit at the section level.
+
+1. **EDFR not pulled daily.** Failures accumulate undetected. Catches happen during quarterly review or audit.
+2. **EDFR pulled but not reviewed.** Failures noted but not investigated. Same effect as not pulling.
+3. **Failures investigated but not corrected.** Investigation does not equal correction. Submit fix.
+4. **Corrections submitted without verification.** Resubmitted but next EDFR not checked. May still be failing.
+5. **Persistent failures not escalated.** Failure resists correction but admin keeps trying. Escalate to PAC or Help Desk.
+
+## Quality Control
+
+For section-level EDFR discipline.
+
+- EDFR review on a specific schedule (daily start of workday)
+- Failure investigation within same business day
+- Corrections submitted within 24 hours
+- Verification within 5 business days
+- Tracking log maintained current
+
+## Related Roles
+
+EDFR review affects every transaction processed.
+
+- **Marines** see correct MCTFS data when EDFR review catches failures.
+- **Leaders** at S-1 perform daily EDFR review.
+- **Commanders** depend on accurate MCTFS data for unit reporting and member actions.

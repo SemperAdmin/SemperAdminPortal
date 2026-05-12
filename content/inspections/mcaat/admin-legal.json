@@ -1,0 +1,692 @@
+{
+  "track": "mcaat",
+  "programNumber": "admin",
+  "slug": "legal",
+  "section": "Admin",
+  "categoryLabel": "Legal",
+  "title": "Legal",
+  "summary": "MCAAT Admin checklist - Legal. 60 unique items across 3 audiences.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "applicabilityLevel": "IPAC, Reporting Unit, and Supporting Unit",
+  "lastVerified": "2026-05-10",
+  "source": {
+    "title": "MCAAT Admin Checklist - Legal",
+    "publisher": "Marine Corps Manpower and Reserve Affairs"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "IPAC",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Is the unit ensuring the Good Conduct Medal/Selected Marine Corps Reserve Medal is reported IAW appropriate legal action?",
+          "references": [
+            "SECNAV M-1650.1, MCO 5800.16 VOL 14"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "60",
+          "question": "Are In Hands of Civilian Authorities / In Hands of Foreign Authorities entries reported IAW applicable regulations?",
+          "references": [
+            "MCTFSPRIUM, Table 6-2, 7-70303, 7-70304, 7-70305, 7-70306"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "36",
+          "question": "Are promotion restrictions reported according to the imposed articles and IAW the reference?",
+          "references": [
+            "MCO 1400.32D Par 1204.4"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "45",
+          "question": "Is TTC 263 000 (Entry of Judgement) reported IAW applicable regulations?",
+          "references": [
+            "PAA 01-24",
+            "MCTFSPRIUM, 7-70501"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "46",
+          "question": "Is TTC 212 (Courts-Martial and Nonjudicial Punishment Statistical Data) reported IAW applicable regulations?",
+          "references": [
+            "NDAA FY 2020, Sec 540I",
+            "MCTFSPRIUM, 7-70508"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "49",
+          "question": "Are punishments and vacations awarded on the NAVMC 10132(s) reported IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 49",
+            "MCO 5800.16, Vol 14, par(s). 0109, 0111",
+            "MCTFSPRIUM, 7-70502, 7-70503, 7-70507"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "50",
+          "question": "Are NAVMC 10132(s) reported within 5 days of receiving key supporting documents?",
+          "references": [
+            "MCTFSPRIUM 2-20103"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "51",
+          "question": "Are NAVMC 10132(s) filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCO 5800.16A, Vol. 14, par(s). 0109, 0111",
+            "DoDFMR Vol. 7A, Chap. 49, par. 4903",
+            "MCO 1070.1, Chapter 4",
+            "MCTFSPRIUM, 7-70502, 7-70503, 7-70507, Chap. 13, Appendix C"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "52",
+          "question": "Is TTC 257 000 (Automated Court-Martial) entry reported IAW applicable regulations for Courts-Martial (TTC 283-000 for all Reserve courts-martial)?",
+          "references": [
+            "MCTFSPRIUM, 7-70501, 7-70502"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "53",
+          "question": "Are Record of Trial / Results of Trial / Convening Authority's Action filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCTFSPRIUM,  Chap. 13, Appendix C",
+            "MCO 1070.1"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "54",
+          "question": "Is TTC 262 000 (CA Action Ordered Executed) reported IAW applicable regulations?",
+          "references": [
+            "MCO 5800.16 Vol. 12, par. 0105",
+            "MCTFSPRIUM, 7-70501"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "55",
+          "question": "Are Appellate Leave Orders reported IAW applicable regulations?",
+          "references": [
+            "MCO 1050.16A",
+            "MCTFSPRIUM, 7-70505"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "56",
+          "question": "Are Unauthorized Absence (UA) entries reported IAW applicable regulations?",
+          "references": [
+            "MCO 1620.3A; MCTFS PRIUM, 7-70301, 7-70302"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "57",
+          "question": "Are Drop Declared Deserter and Joins from Desertion entries reported IAW applicable regulations?",
+          "references": [
+            "MCTFSPRIUM, 7-70307, 6-60212"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "58",
+          "question": "Are documents for absentees (DD Form 553 / 616) filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCO 1620.3A",
+            "MCTFSPRIUM, Chap. 13, Appendix C",
+            "MCO 1070.1"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "59",
+          "question": "Are Confinement Orders reported IAW applicable regulations?",
+          "references": [
+            "MCTFSPRIUM 7-70506"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02.0",
+      "title": "Reporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "04",
+          "question": "Are NAVMC 10132(s) reported within 5 days of the effective date?",
+          "references": [
+            "MCTFSPRIUM 2-20103"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Are promotion restrictions reported according to the imposed articles and IAW the reference?",
+          "references": [
+            "MCO 1400.32D Par 1204.4"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "For Marines in the grades of E4 and below, are JEPES occasions approved by the individual with appropriate promotion authority on the effective date of the grade reduction or Declared Deserter?",
+          "references": [
+            "MCO P1400.32D, para 1200.3.b",
+            "MCO 1616.1, Ch 1, para 5.g; Ch 2, para 1.f"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Are NAVMC 10132(s) filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCO 5800.16A, Volume 14, para(s) 0109, 0111",
+            "DoDFMR Vol 7A, Chap 49, para 4903",
+            "MCTFSPRIUM, 7-70502, 7-70503, 7-70507, Chapter 13 Appendix C",
+            "MCO 1070.1"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Is the unit ensuring the NAVMC 10132(s) UPB is prepared IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol 7A, Chap 49",
+            "MCO 5800.16A, Volume 14, para(s) 0109, 0111"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "In the case of NJP punishments that have been vacated, is the unit ensuring the original NAVMC 10132 UPB is updated with the proper annotations IAW applicable references?",
+          "references": [
+            "DoDFMR Vol 7A, Chap 49",
+            "MCO 5800.16, Volume 14, para 0112, figure 14-1, 011105.P"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Are punishments and vacations awarded on the NAVMC 10132(s) reported IAW applicable regulations?",
+          "references": [
+            "MCO 5800.16 Ch 7, Volume 14, para(s) 0109, 0111",
+            "DoDFMR Vol 7A, Chap 49",
+            "MCTFSPRIUM, 7-70502, 7-70503, 7-70507"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Is TTC 257 000 (Automated Court-Martial) entry reported IAW applicable regulations for Courts-Martial (TTC 283-000 for all Reserve courts-martial)?",
+          "references": [
+            "MCTFSPRIUM, 7-70501, 7-70502"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "13",
+          "question": "Are Record of Trial / Results of Trial/Convening Authority's Action filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCTFSPRIUM, Chapter 13, Appendix C",
+            "MCO 1070.1"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "14",
+          "question": "Is TTC 262 000 (CA Action Ordered Executed) reported IAW applicable regulations?",
+          "references": [
+            "MCTFSPRIUM, 7-70501",
+            "MCO 5800.16 Vol 12, 0105"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "15",
+          "question": "Are Confinement Orders reported IAW applicable regulations?",
+          "references": [
+            "MCTFSPRIUM 7-70506"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "16",
+          "question": "Is to and from In Hands of Civilian Authorities (IHCA) / In Hands of Foreign Authorities (IHFA) reported IAW applicable regulations?",
+          "references": [
+            "MCTFSPRIUM, Table 6-2, 7-70303, 7-70304, 7-70305, 7-70306"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "37",
+          "question": "Are Unauthorized Absence (UA) reported IAW applicable regulations?",
+          "references": [
+            "MCO 1620.3A; MCTFS PRIUM, 7-70301, 7-70302"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "38",
+          "question": "Are Drop Declared Deserter and Join from Desertion reported IAW applicable regulations?",
+          "references": [
+            "MCTFS PRIUM, 7-70307, 6-60212"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "39",
+          "question": "Are documents for absentees (DD Form 553 / 616) filed in OMPF within 10 working days from the date reported on unit diary?",
+          "references": [
+            "MCTFSPRIUM, Chapter 13, Appendix C",
+            "MCO 1620.3A",
+            "MCO 1070.1"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "40",
+          "question": "Is the unit ensuring key supporting documents that validate periods of confinement, UA, or desertion are maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol 1, Ch 9",
+            "SECNAV M-5210.1",
+            "MCO 1620.3A",
+            "MARADMIN 601/24"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "41",
+          "question": "Are Appellate Leave Orders reported IAW applicable regulations?",
+          "references": [
+            "MCO 1050.16A",
+            "MCTFSPRIUM, 7-70505"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "42",
+          "question": "Is the unit ensuring Marines that are placed on Legal Hold beyond their Expiration of Active Service date are placed only in IAW applicable regulations? Is the unit tracking the status of Marines held beyond their EAS on legal hold?",
+          "references": [
+            "MCO 1900.16 CH 2",
+            "MCTFSPRIUM, 3-30306, 3-30307"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "44",
+          "question": "Is TTC 263 000 (Entry of Judgement) reported IAW applicable regulations?",
+          "references": [
+            "PAA 01-24",
+            "MCTFSPRIUM, 7-70501"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "47",
+          "question": "Is TTC 212 (Courts-Martial and Nonjudicial Punishment Statistical Data) reported IAW applicable regulations?",
+          "references": [
+            "NDAA FY 2020, Sec 540I",
+            "MCTFSPRIUM, 7-70508"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Is the unit ensuring the Good Conduct Medal/Selected Marine Corps Reserve Medal is reported IAW appropriate legal action?",
+          "references": [
+            "SECNAV M-1650.1, MCO 5800.16 VOL 14"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.0",
+      "title": "Supporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "03",
+          "question": "Is the unit ensuring the Good Conduct Medal/Selected Marine Corps Reserve Medal is reported IAW appropriate legal action?",
+          "references": [
+            "SECNAV M-1650.1, MCO 5800.16 VOL 14"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "For Marines in the grades of E4 and below, are JEPES occasions approved by the individual with appropriate promotion authority on the effective date of the grade reduction or Declared Deserter?",
+          "references": [
+            "MCO P1400.32D, para 1200.3.b",
+            "MCO 1616.1, Ch 1, para 5.g; Ch 2, para 1.f"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "17",
+          "question": "In the case of NJP punishments that have been vacated, is the unit ensuring the original NAVMC 10132 UPB is updated with the proper annotations IAW applicable references?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap. 49",
+            "MCO 5800.16, Vol. 14, par(s). 0112, 011105, Fig. 14-1"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "18",
+          "question": "Is the unit ensuring Appellate Leave Orders are submitted to and received by the reporting unit within 5 days of execution?",
+          "references": [
+            "MCO 1050.16A",
+            "MCTFSPRIUM, 1-10100.6"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "19",
+          "question": "Is the unit validating Appellate Leave is reported IAW applicable regulations by the reporting unit?",
+          "references": [
+            "MCO 1050.16A",
+            "MCTFSPRIUM, 1-10111, 7-70505"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "20",
+          "question": "Is the unit ensuring Marines that are placed on Legal Hold beyond their Expiration of Active Service date are placed only in IAW applicable regulations? Is the unit tracking the status of Marines held beyond their EAS on legal hold?",
+          "references": [
+            "MCO 1900.16 CH 2, para 1008",
+            "MCTFSPRIUM, 1-10111, 3-30306, 3-30307"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "21",
+          "question": "Is the unit ensuring key supporting documents to report or remove a Marine from In Hands of Civilian Authority / In Hands of Foreign Authority, in excess of 24 hours, are submitted to and received by the reporting unit within 5 days of occurrence?",
+          "references": [
+            "MCO 1620.3A",
+            "MCTFSPRIUM, 1-10100.6, 2-20103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "22",
+          "question": "Is the unit ensuring key supporting documents to report or remove a Marine from an Unauthorized Absent status, in excess of 24 hours, are submitted to and received by the reporting unit within 5 days of occurrence?",
+          "references": [
+            "MCO 1620.3A",
+            "MCTFSPRIUM, 1-10100.6, 2-20103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "23",
+          "question": "Is the unit ensuring key supporting documents (DD Form 553 or DD Form 616) for Marines declared or returned from desertion are submitted to and received by the reporting unit within 5 days of occurrence?",
+          "references": [
+            "MCO 1620.3A",
+            "MCTFSPRIUM 1-10100.6, 2-20103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "24",
+          "question": "Is the unit ensuring key supporting documents that validate periods of confinement, UA, or desertion are maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9",
+            "SECNAV M-5210.1",
+            "MCO 1620.3A"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "25",
+          "question": "Is the unit ensuring the NAVMC 10132(s) UPB is prepared IAW applicable regulations?",
+          "references": [
+            "DoDFMR Vol. 7A, Chap .49",
+            "MCO 5800.16A, Vol. 14, par(s). 0109, 0111"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "26",
+          "question": "Is the unit ensuring the NAVMC 10132(s) UPB is submitted to and received by the reporting unit within 5 days of occurrence?",
+          "references": [
+            "MCTFSPRIUM, 1-10100.6, 1-10111, 2-20103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "27",
+          "question": "Is the unit ensuring the NAVMC 10132(s) UPB is maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9",
+            "SECNAV M-5210.1",
+            "MCO 5800.16, Vol. 14, par. 011110"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "28",
+          "question": "Is the unit ensuring all NJP punishments are reported properly IAW applicable regulations by the reporting unit?",
+          "references": [
+            "MCO 5800.16 Vol. 14",
+            "MCO 1400.32D, par. 6004",
+            "MCTFSPRIUM,  1-10111, 7-70502, 7-70503, 7-70507"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "29",
+          "question": "Is the unit ensuring vacated NJP punishment(s) are reported properly by the reported unit IAW applicable regulations?",
+          "references": [
+            "MCTFSPRIUM, 1-10111, 7-70502, 7-70504, 7-70507"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "30",
+          "question": "Is the unit ensuring Confinement Orders are submitted to and received by the reporting unit within 5 days of the effective date?",
+          "references": [
+            "MCTFSPRIUM 1-10100.6, 2-20103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "31",
+          "question": "Is the unit ensuring Court Martial documents (results of trial, convening authority's action) are submitted to and received by the reporting unit within 5 days of occurrence?",
+          "references": [
+            "MCTFSPRIUM, 1-10100.6, 2-20103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "32",
+          "question": "Is the unit validating Court Martial (TTC 257) is reported IAW applicable regulations by the reporting unit?",
+          "references": [
+            "MCTFSPRIUM, 1-10111, 7-70501, 7-70502, 7-70503"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "33",
+          "question": "Is the unit validating the Convening Authority's Action (TTC 262) is reported IAW applicable regulations by the reporting unit?",
+          "references": [
+            "MCTFSPRIUM, 1-10111, 7-70501, 7-70502"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "34",
+          "question": "Is the unit ensuring Court Martial documents (results of trial and convening authority's action) are maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9",
+            "SECNAV M-5210.1",
+            "MCTFSPRIUM, Chap. 13, Appendix C"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "35",
+          "question": "Is the unit creating Appellate Leave Orders IAW applicable regulations?",
+          "references": [
+            "MCO 1050.16A"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "43",
+          "question": "Is the unit validating Entry of Judgement (TTC 263 000) is reported IAW applicable regulations?",
+          "references": [
+            "PAA 01-24",
+            "MCTFSPRIUM, 7-70501"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "48",
+          "question": "Is the unit validating Courts-Martial and Nonjudicial Punishment Statistical Data (TTC 212) is reported IAW applicable regulations by the reporting unit?",
+          "references": [
+            "NDAA FY 2020, Sec 540I",
+            "MCTFSPRIUM, 7-70508"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        }
+      ]
+    }
+  ]
+}

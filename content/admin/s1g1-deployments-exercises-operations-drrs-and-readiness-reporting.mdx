@@ -1,0 +1,127 @@
+---
+title: "DRRS and Readiness Reporting - S-1 Procedural Page"
+slug: "drrs-and-readiness-reporting"
+summary: "Submit Marine Corps readiness reports through the Defense Readiness Reporting System (DRRS) per MCO 3000.13B and MARADMIN 518-21 with personnel readiness (P), supply (S), equipment (R), training (T), and equipment-on-hand (C) ratings and commander narrative assessments."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-11"
+unitType: "s1-g1"
+topic: "deployments-exercises-operations"
+function: "OPER"
+skillLevel: 2000
+trEventCode: "0170-OPER-2003"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 3000.13B"
+billets: ["s-1-officer", "s-1-chief", "drrs-administrator"]
+gradesPerforming: ["GySgt", "MSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 3000.13B Marine Corps Readiness Reporting"
+  - "MARADMIN 518-21 DRRS-MC Consolidation to DRRS"
+  - "Commanders Readiness Handbook September 2020"
+  - "CJCSI 3401.02B Force Readiness Reporting"
+  - "CJCSM 3150.02B Global Status of Resources and Training System (GSORTS)"
+  - "DoDD 7730.65 Department of Defense Readiness Reporting System"
+  - "MCO P3500.72A Marine Corps Ground T&R Program"
+performanceSteps:
+  - "Receive the DRRS reporting cycle notification"
+  - "Pull personnel readiness data from MCTFS"
+  - "Pull equipment readiness data from S-4"
+  - "Pull T&R event completion data from S-3"
+  - "Compute P, S, R, T, C ratings per MCO 3000.13B"
+  - "Build the commander narrative per Commanders Readiness Handbook"
+  - "Commander signs the DRRS report"
+  - "Submit the DRRS report via DRRS architecture"
+  - "Update DRRS at rating change per MCO 3000.13B"
+  - "Retain DRRS reports per records schedule"
+relatedRoles:
+  marine: "/marines/deployments-exercises-operations/drrs-and-readiness-reporting"
+  leader: "/leader/deployments-exercises-operations/drrs-and-readiness-reporting"
+  commander: "/commander/deployments-exercises-operations/drrs-and-readiness-reporting"
+source:
+  title: "DRRS and Readiness Reporting - MCO 3000.13B and MARADMIN 518-21"
+  publisher: "Headquarters Marine Corps Plans, Policies, and Operations (PP&O)"
+---
+
+## Role and responsibility
+
+The DRRS administrator submits Marine Corps readiness reports per MCO 3000.13B<Citation source="MCO 3000.13B" /> and MARADMIN 518-21<Citation source="MARADMIN 518-21" />. The unit commander signs the DRRS report and supports the personnel-driven readiness rating. The S-1 chief pulls personnel readiness data from MCTFS. The S-3 operations officer pulls T&R event completion data. The S-4 logistics officer pulls equipment readiness data. The Commanders Readiness Handbook supports the commander narrative.
+
+Source documents flow from the MCTFS personnel readiness data, the T&R event status per MCO P3500.72A, the equipment readiness from S-4, the prior DRRS reports, the commander's narrative assessment, and the unit Mission Essential Task List (METL). DRRS outputs include the submitted DRRS report with P (Personnel), S (Supply), R (Equipment Condition), T (Training), and C (Equipment On-Hand) ratings, the commander narrative, the change report when ratings shift, the retained DRRS report per records schedule, and the audit trail.
+
+Per MCO 3000.13B, Marine Corps unit DRRS reporting follows the Joint DRRS architecture under DoDD 7730.65 and CJCSI 3401.02B. Per MARADMIN 518-21, DRRS-MC consolidates into DRRS. Per the Commanders Readiness Handbook, the rating definitions follow the Joint framework (P-1 highest readiness through P-4 lowest readiness, similar S, R, T, C scales).
+
+## Trigger events
+
+- DRRS reporting cycle opens.
+- Rating change at the unit (personnel, training, equipment).
+- METL change triggers reassessment.
+- New OPLAN tasking triggers readiness review.
+- DRRS-MC to DRRS transition milestone per MARADMIN 518-21.
+- Annual readiness baseline cycle.
+- Commander change triggers commander narrative refresh.
+
+## Processing workflow
+
+1. Receive the DRRS reporting cycle notification. Per MCO 3000.13B<Citation source="MCO 3000.13B" />, the cycle runs on the published cadence. Change reports run on rating shift.
+2. Pull personnel readiness data. From MCTFS, pull strength, MOS distribution, grade distribution, and qualification data.
+3. Pull equipment readiness data. From S-4 and the equipment readiness reports, pull equipment-on-hand and equipment condition.
+4. Pull T&R event completion data. Per MCO P3500.72A, pull T&R event completion against the METL.
+5. Compute P, S, R, T, C ratings. Per MCO 3000.13B and the Commanders Readiness Handbook:
+   - P (Personnel) rating per MCTFS strength and qualification.
+   - S (Supply) rating per supply on hand against authorized.
+   - R (Equipment Condition) rating per equipment maintenance readiness.
+   - T (Training) rating per T&R event completion against METL.
+   - C (Equipment On-Hand) rating per equipment quantity against authorized.
+6. Build the commander narrative. Per the Commanders Readiness Handbook, the narrative provides commander assessment of the unit's mission capability.
+7. Commander signs. Per MCO 3000.13B, the unit commander signs the DRRS report.
+8. Submit via DRRS. Per MARADMIN 518-21<Citation source="MARADMIN 518-21" />, the report submits through DRRS following the consolidation timeline.
+9. Update at rating change. Per MCO 3000.13B, rating changes trigger an updated report.
+10. Retain DRRS reports. Per the records retention schedule, retain DRRS reports per the SSIC disposition.
+
+## Systems of record and forms
+
+### Systems
+
+- Defense Readiness Reporting System (DRRS). Per MCO 3000.13B and MARADMIN 518-21.
+- Marine Corps Total Force System (MCTFS). Personnel readiness data feed.
+- MIRRORS, GCSS-MC, or equivalent equipment readiness systems. Per S-4.
+- T&R event tracking system. Per MCO P3500.72A.
+- Commanders Readiness Handbook. Per HQMC PP&O.
+
+### Forms
+
+- DRRS Report. Per MCO 3000.13B.
+- P/S/R/T/C Rating Worksheet. Per Commanders Readiness Handbook.
+- Commander Narrative. Per MCO 3000.13B.
+- DRRS Change Report. Per rating change.
+- METL. Per MCO P3500.72A.
+
+## Common pitfalls
+
+- DRRS rating reported without commander narrative. Per MCO 3000.13B<Citation source="MCO 3000.13B" />, the commander narrative supports the rating.
+- Personnel readiness data not reconciled with MCTFS. The S-1 reconciles MCTFS data with DRRS inputs.
+- T&R event completion data lagged. Per MCO P3500.72A, the T&R event status drives the T rating.
+- Equipment readiness data lagged. The S-4 pulls current readiness for the R and C ratings.
+- DRRS-MC reporting continued after consolidation deadline. Per MARADMIN 518-21<Citation source="MARADMIN 518-21" />, the consolidation timeline drives the transition.
+- Rating change report not submitted. Per MCO 3000.13B, rating changes trigger an update.
+- METL change not reflected in DRRS. The METL drives the T rating computation.
+- DRRS report not retained per records schedule. Per the SSIC disposition, retention runs per the published rules.
+
+## Decision points
+
+- Rating computation versus commander assessment. Per MCO 3000.13B, the data-driven rating combines with the commander narrative. The narrative addresses non-quantitative factors.
+- Change report timing. Per MCO 3000.13B, rating changes drive change reports. Standard cycles run on the published cadence.
+- DRRS versus DRRS-MC. Per MARADMIN 518-21, DRRS is the consolidated reporting platform.
+- METL update. Per the unit's mission and MCO P3500.72A, METL changes trigger DRRS reassessment.
+
+## Authority
+
+This sub-page sits under MCO 3000.13B<Citation source="MCO 3000.13B" /> Marine Corps Readiness Reporting. MARADMIN 518-21<Citation source="MARADMIN 518-21" /> directs DRRS-MC consolidation. DoDD 7730.65 sets DoD framework. CJCSI 3401.02B sets Joint framework. CJCSM 3150.02B sets GSORTS framework. The Commanders Readiness Handbook supports execution. MCO P3500.72A supports T&R event computation.
+
+## Related references
+
+- MCO 3000.13B and MARADMIN 518-21. Marine Corps readiness reporting framework.
+- Commanders Readiness Handbook. Reporting reference.
+- DoDD 7730.65, CJCSI 3401.02B, CJCSM 3150.02B. Joint and DoD frameworks.
+- MCO P3500.72A. T&R event computation.
+- NAVMC 3500.3E. T-R event 0170-OPER-2003.

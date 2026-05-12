@@ -1,0 +1,374 @@
+---
+title: "Pay Problems and Fixes"
+slug: "pay-problems-and-fixes"
+summary: "Plain-language walkthrough of pay problems and fixes from a Marine's perspective. Reading the LES line by line, the most common errors (BAH stops, BAS conflicts, missing special pays, FSA gaps, wrong tax state), the bonus recoupment framework per DoD 7000.14-R Volume 7A Chapter 2 with the conditions repayment will and will not be sought, debt waivers, the escalation path through S-1 to MMPB / DFAS / MCAAT, and the documentation to keep so a future audit confirms what you reported."
+roles: ["marine", "leader", "commander", "admin"]
+lastVerified: "2026-05-04"
+topic: "pay-problems-and-fixes"
+sourcePolicy: "DoD 7000.14-R"
+sourceChapter: "Volume 7A"
+sourceSection: "Chapter 2"
+references:
+  - "DoD 7000.14-R Volume 7A, Chapter 1 (Basic Pay) - May 2024"
+  - "DoD 7000.14-R Volume 7A, Chapter 2 (Repayment of Unearned Portion of Bonuses and Other Benefits) - February 2024"
+  - "Title 37 U.S.C. sections 303a(e) and 373 (bonus repayment statutes)"
+  - "Title 37 U.S.C. § 205 (Computation of Service Creditable)"
+  - "Title 10 U.S.C. section 1171 (early discharge within 12 months of EAS)"
+  - "Title 10 U.S.C. Chapter 61 (disability separation/retirement)"
+  - "Title 10 U.S.C. section 1413a(e) (combat-related disability definition)"
+  - "MCO 5000.14D MCAP Enclosure 2 (Individual Marine Responsibilities)"
+  - "MARADMIN 052/26 (MCTFS Advisory to Identify Required Corrections to Pay Entry Base Date) - 19 February 2026"
+  - "Personnel Admin Advisory (PAA) 04-25 (Proper Calculation of Creditable Service)"
+  - "DoDI 1304.29 Administration of Enlistment Bonuses, Accession Bonuses, and other Special Pays"
+  - "DoDI 1336.01 (Certificate of Release or Discharge from Active Duty, DD-214)"
+relatedRoles:
+  admin: "/admin/pac/audits/personnel-record-audit"
+  leader: "/leader/coaching-and-counseling/coaching-marines-on-pay"
+  commander: "/commander/pay-decisions/payroll-review"
+source:
+  title: "DoD 7000.14-R Volume 7A, Chapter 2 - Repayment of Unearned Portion of Bonuses and Other Benefits (February 2024)"
+  publisher: "Department of Defense, Office of the Under Secretary of Defense (Comptroller)"
+  url: "https://comptroller.defense.gov/Portals/45/documents/fmr/Volume_07a.pdf"
+---
+
+## Start Here If You Are New to Pay Problems and Fixes
+
+Pay errors are the most common administrative problem Marines deal with, and they hit hardest when ignored. A BAH stop after a PCS, a missing special pay after a qualification, a bonus the system thinks you owe back, all of these snowball if not addressed within the first few weeks of the error showing on the LES.
+
+This page walks you through pay problems and fixes from your seat as a General Marine. By the end you will know.
+
+- How to read your LES line by line and flag errors fast
+- The most common pay errors and the immediate fix for each
+- The bonus and pay recoupment framework, including the conditions under which repayment will and will not be sought
+- Debt waivers and the escalation path
+- The documentation you keep so a future audit confirms what you reported
+
+Every fact on this page comes from DoD 7000.14-R Volume 7A<Citation source="DoD 7000.14-R Volume 7A" /> Chapter 1 (Basic Pay, May 2024), Chapter 2 (Repayment of Unearned Portion of Bonuses and Other Benefits, February 2024), MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP Enclosure 2, Title 37 U.S.C.<Citation source="Title 37 U.S.C." />, and current DFAS Marine Corps Pay guidance.
+
+## Reading Your LES
+
+Per MCO 5000.14D<Citation source="MCO 5000.14D" /> Enclosure 2, you own the accuracy of your pay information. The Leave and Earnings Statement (LES) is the system of record for what you got paid. Errors that go unreported become harder to fix the longer they sit. Pull your LES every month from MyPay (https://mypay.dfas.mil) and review it before you spend the deposit.
+
+### Where to Get Your LES
+
+- MyPay. Primary source. Login with CAC or username and password.
+- MCTFS via MOL. Backup source. Shows the same data with different formatting.
+- Hard copy. S-1 prints on request. Last resort.
+
+### What to Check Each Month
+
+Five sections matter most.
+
+#### Top Block (Personal Data)
+
+Verify these match your record.
+
+- Name, SSN, rank, pay grade
+- Years of service
+- ETS or EAS date
+- Pay entry base date (PEBD)
+
+If any are wrong, your pay calculation is wrong. Report immediately.
+
+#### PEBD Risk MOL Advisory (MARADMIN 052/26)
+
+Per MARADMIN 052/26<Citation source="MARADMIN 052/26" /> (19 February 2026), MCTFS runs an automated PEBD Risk advisory each month through the 2nd File Purification Routine (PUREX). The criteria flag inconsistencies between your reported PEBD and the periods of creditable service in the MCTFS D188 remark.
+
+If you receive a PEBD Risk advisory in MOL.
+
+- Contact your servicing PAC or reporting unit through Electronic Personnel Admin Request (EPAR) per MARADMIN 052/26<Citation source="MARADMIN 052/26" /> paragraph 3.a.
+- Provide Key Supporting Documents (prior service DD-214s, Reserve component records, active duty orders for prior periods, ROTC or academy contracts).
+- The PAC validates against the OMPF and the D188 remark and updates the D188 if periods are missing.
+- Where the PEBD itself is incorrect, the PAC follows the PRIUM and routes the case to MMPB-21 at SMB_Pay_Entry_Base_Date_Correction@usmc.mil.
+
+The Basic Pay leaf covers the PEBD framework, the D188 remark, and the full action chain in detail.
+
+Per MARADMIN 052/26<Citation source="MARADMIN 052/26" /> paragraph 4, missing data, particularly regarding prior service, can cause PEBD calculation errors EVEN WHEN NO ADVISORY IS ISSUED. Audit your PEBD against your service history and provide Key Supporting Documents to your PAC for any gaps.
+
+#### Entitlements (What You Earned)
+
+Common lines you should see.
+
+| Line | What It Is | Common Issue |
+|------|-----------|--------------|
+| BASE PAY | Your monthly base pay by grade and years | Wrong rank or YOS posted |
+| BAH | Housing allowance | Wrong rate, dependent status, or zip code |
+| BAS | Food allowance | Should not draw if on meal card |
+| FSA | Family Separation Allowance ($300/month effective 18 December 2025) | Should pay during deployment over 30 days |
+| HFP/IDP | Hostile Fire / Imminent Danger Pay | Combat zone designation |
+| SDA | Special Duty Assignment Pay | Drill instructor, recruiter, etc. |
+
+#### Deductions (What Was Taken Out)
+
+| Line | What It Is | Watch For |
+|------|-----------|-----------|
+| FED TAXES | Federal income tax | Check your W-4 election |
+| FICA | Social Security and Medicare | Should be 7.65% of taxable pay |
+| STATE TAXES | State tax based on legal residence | Verify legal residence is correct |
+| SGLI | Service Group Life Insurance | Should match your election (max $500K) |
+| TSP | Thrift Savings Plan contribution | Should match your election |
+| AFRH | Armed Forces Retirement Home ($0.50) | Standard, not optional |
+
+#### Leave Block
+
+Your leave balance shows.
+
+- Beginning balance
+- Earned (2.5 days per month)
+- Used
+- Lost (over 60 days at end of FY, you lose it)
+- Ending balance
+
+Cap is 60 days at end of fiscal year. Special Leave Accrual lets you carry up to 120 days under specific conditions.
+
+#### Remarks Block
+
+Important entries appear here.
+
+- Pay debts and collection schedules
+- BAH or BAS audit notes
+- TSP catch-up contributions
+- Allotment changes
+
+## Common Pay Errors and Fixes
+
+These five hit most often. Each has a clear immediate fix.
+
+### 1. BAH Stopped After PCS or Move
+
+New zip code or dependent status not updated. Submit NAVMC 10922<Citation source="NAVMC 10922" /> if a dependent change drove the move. Update zip code via MOL or PCS orders. The BAH page on this site covers the rate-table look-up and dependent-status rules in detail.
+
+### 2. BAS Taken Away With Meal Card
+
+If you are on a meal card you do not draw BAS. If you turned in your meal card and BAS did not start, report to S-1 with proof of meal card return. The BAS page on this site covers the officer-versus-enlisted distinction.
+
+### 3. Special Pay Missing
+
+Jump pay, dive pay, or Special Duty Assignment pay missing after qualification or assignment. Submit jump records, school certificate, or assignment orders to S-1. The Special Pays page on this site covers the qualification documentation by special pay type.
+
+### 4. Family Separation Allowance Not Paid During Deployment
+
+Per Title 37 U.S.C. section 427<Citation source="Title 37 U.S.C. section 427" /> (as amended by Public Law 119-60, NDAA FY 2026), if you are deployed over 30 days you should draw $300 per month effective 18 December 2025 (was $250 before that date per MARADMIN 150/26<Citation source="MARADMIN 150/26" />). Submit DD 1561 through your reporting unit. The Family Separation Allowance page on this site covers the FSA flow.
+
+### 5. Wrong Tax State
+
+State of legal residence drives state tax. Update via DD 2058 if you changed legal residence. Common issue when a Marine PCSes to a state without state income tax (e.g., Florida, Texas) but the LES still shows the old residence.
+
+## Bonus and Pay Recoupment
+
+Per DoD 7000.14-R Volume 7A<Citation source="DoD 7000.14-R Volume 7A" /> Chapter 2 (February 2024), this is the controlling framework when a Marine fails to fulfill the conditions of a written agreement tied to a bonus, special pay, educational benefit, or stipend.
+
+### What "Recoupment" Means
+
+Per Chapter 2 paragraph 1.1, when a Marine signs a written agreement specifying service conditions for a bonus or other benefit, the Marine is entitled to the full amount only if the conditions are fulfilled. Failure to fulfill the conditions terminates the agreement and triggers repayment of the unearned portion.
+
+The chapter covers six categories of payments.
+
+- Enlistment bonuses (EB)
+- Selective Reenlistment Bonuses (SRB)
+- Other special or incentive pays tied to a written service agreement
+- Educational benefits (e.g., tuition assistance with continued service obligation)
+- Stipends (e.g., medical or dental school stipends with service obligation)
+- Similar payments under written agreement
+
+### What "Service" Means in the Chapter
+
+Per Chapter 2 paragraph 2.3, "service" in a written agreement means an obligation willingly undertaken to do one or more of the following.
+
+- Remain on active duty
+- Remain in an active status in a Reserve Component
+- Perform duty in a specified skill, with or without a specified qualification or credential
+- Perform duty at a specified location
+- Perform duty for a specified period of time
+
+### Conditions Under Which Repayment Will Be Sought
+
+Per Chapter 2 paragraph 3.1, repayment is required when the conditions of a written agreement are not fulfilled and the failure was within the Marine's control.
+
+Per paragraph 3.1.2, repayment will be sought (and any unpaid balance will not be paid) for Marines who incur a disability because of their misconduct.
+
+### Conditions Under Which Repayment Will NOT Be Sought
+
+Per Chapter 2 paragraph 3.3, repayment is generally not pursued when the inability to fulfill specified service conditions is due to circumstances reasonably beyond the Marine's control. The chapter and Table 2-1 enumerate the specific cases.
+
+#### Death (Without Misconduct)
+
+Per paragraph 3.3.1 and Table 2-1 Rule 1, if a Marine dies under a written agreement and the death was not from misconduct, repayment will not be sought. Any unpaid portion of the pay or benefit is paid as a lump sum in the settlement of the decedent's final pay entitlements.
+
+#### Combat-Zone or Combat-Related Disability
+
+Per paragraph 3.3.2 and Table 2-1 Rule 2, if a Marine is separated or retired for a disability incurred in the line of duty in a combat zone (designated by the President or SECDEF), or in a combat-related operation (designated by SECDEF), or for a combat-related disability per Title 10 U.S.C. section 1413<Citation source="Title 10 U.S.C. section 1413" />a(e), repayment will not be sought. Any unpaid portion will be paid to the Marine upon separation.
+
+#### Immediate Reenlistment in a Different MOS Without Bonus
+
+Per paragraph 3.3.3 and Table 2-1 Rule 5, an enlisted Marine paid a bonus or special pay for an enlistment, who is discharged for immediate reenlistment or appointment in a Military Department for which no bonus or special pay is paid, is allowed to be considered to have completed the full term of the former enlistment. The condition. The latter reenlistment or appointment must include the remaining period of service from the former enlistment. The Marine's bonus entitlements are addressed prior to discharge from the originating Military Department.
+
+#### Forced MOS or Assignment Change
+
+Per paragraph 3.3.4.1 through 3.3.4.3 and Table 2-1 Rules 6 and 7, repayment is not sought when.
+
+- The Marine's employment in another military specialty or assignment rotation is directed by the service.
+- The Marine's military specialty or assignment is phased out or eliminated.
+- The Marine's military specialty or assignment is otherwise affected by force structure or other mission essential requirements.
+
+#### Hardship Separation or Sole Survivor Discharge
+
+Per paragraph 3.3.4.4 and Table 2-1 Rule 8, repayment is not sought when the Marine is separated from service under a hardship separation or sole survivor discharge.
+
+#### Early Discharge Within 12 Months of EAS
+
+Per paragraph 3.3.5 and Title 10 U.S.C. section 1171<Citation source="Title 10 U.S.C. section 1171" />, an enlisted Marine discharged within 12 months before the expiration of an enlistment, reenlistment, or extension is considered to have completed the term for which the bonus was paid. Recoupment is not required for the unearned portion arising from the early discharge.
+
+The Marine Corps determines whether the early discharge falls under section 1171 and advises DFAS of the determination.
+
+### Conditions Under Review by the Secretary of the Military Department
+
+Per Chapter 2 paragraph 3.4, two categories sit in a discretionary zone where the Secretary of the Military Department concerned (or delegated authority not below O-6) makes a case-by-case determination.
+
+- Per paragraph 3.4.1, separation for medical reasons not falling under Title 10 U.S.C.<Citation source="Title 10 U.S.C." /> Chapter 61 or section 1413a(e), where the medical condition was not the result of the Marine's misconduct. The Secretary has discretion to require repayment or pay any unpaid balance.
+- Per paragraph 3.4.2, situations not specifically covered by the chapter's other paragraphs. The Secretary has discretion to grant an exception based on a case-by-case determination that requiring repayment (or refraining from paying any unpaid portion) would be contrary to a personnel policy or management objective, against equity and good conscience, or contrary to the best interest of the United States.
+
+### Approval Authority for Exceptions to Policy
+
+Per Chapter 2 paragraph 2.2, when the Secretary of a Military Department wishes to exercise delegated authority to change a pay action for the SPD code assigned to the Marine's DD-214, the Secretary submits the requested Exception to Policy (ETP) to the Director of Military Compensation in the Office of the Assistant Secretary of Defense for Manpower and Reserve Affairs (OASD M&RA) for approval. The approved ETP is submitted to DFAS for processing.
+
+### Bankruptcy and the 5-Year Rule
+
+Per Chapter 2 paragraph 2.4, an obligation to repay a bonus or benefit is a debt owed to the United States. A discharge in bankruptcy does not discharge the debt if the bankruptcy discharge order is entered less than 5 years after.
+
+- The date of termination of the agreement or contract on which the debt is based, OR
+- The date of termination of service on which the debt is based, in the absence of such agreement or contract.
+
+Translation. Filing for bankruptcy does not eliminate a recent bonus repayment debt. The 5-year clock starts on the agreement-or-service termination date, not on the date the debt was discovered.
+
+### Disposition Table Summary (Table 2-1)
+
+Per Chapter 2 Table 2-1, the disposition of unearned portions of bonuses, special pay, educational benefits, or stipends covers nine rules. The first eight rules are specific scenarios where repayment will not be sought (death, combat disability, medical separation, continued service in another capacity, immediate reenlistment without bonus, directed MOS change, MOS phaseout, hardship/sole survivor). Rule 9 is the catchall for any other circumstance where repayment will be sought unless the Secretary makes a case-by-case exception.
+
+The full table sits in the Chapter 2 source. For specific case applicability, work through your S-1 to confirm which rule applies to your situation.
+
+## Debt Waivers
+
+Per general DoD finance policy and the Joint Federal Travel Regulation framework (covered in detail when more chapters arrive), a Marine who incurred a pay debt through no fault of their own is allowed to request a waiver of the debt.
+
+### General Eligibility
+
+A debt waiver is generally available when.
+
+- The debt arose from an administrative or accounting error not attributable to the Marine.
+- Collection of the debt would be against equity and good conscience.
+- Collection would be contrary to the best interest of the United States.
+
+### Submission
+
+Waiver requests route through the Marine's reporting unit (I&I S-1 with direct UD/MIPS access, or a battalion S-1 routing through their PAC) to DFAS Marine Corps Pay. Specific submission requirements depend on the type of debt and the dollar amount.
+
+The DoD FMR chapters covering waivers in detail will populate this section as they are added to the source library.
+
+## Escalation Path for Pay Errors
+
+Follow this escalation path. Each step has a target time and a clear handoff.
+
+### Step 1. Your S-1 Admin Clerk
+
+Most errors fix at this level. The clerk pulls the source documentation, verifies the entry on the Unit Diary side (or routes the entry to the reporting unit if applicable), and submits the correction to DFAS Marine Corps Pay through standard channels.
+
+Target time. 5 to 10 business days for routine errors.
+
+### Step 2. Personnel Officer (0170)
+
+If the S-1 clerk cannot resolve, request a review by the unit's Personnel Officer (MOS 0170). The Personnel Officer adjudicates non-routine cases and signs off on more complex correction packages.
+
+Target time. 15 business days from escalation.
+
+### Step 3. IPAC
+
+If the unit S-1 cannot resolve through DFAS, the case routes to the Installation Personnel Administrative Center (IPAC). IPAC consolidates pay actions across the installation and has direct DFAS Marine Corps Pay channels.
+
+Target time. 30 business days from escalation.
+
+### Step 4. MCAAT (Marine Corps Awareness and Assistance Team)
+
+For policy disputes (not routine errors), email MCAAT at ask_mcaat@usmc.mil. MCAAT handles complex policy interpretation questions across pay, allowances, and personnel administration.
+
+Target time. Variable depending on complexity.
+
+### Step 5. IG Complaint or Congressional Inquiry
+
+For systemic issues unresolved through standard channels, the Inspector General complaint or congressional inquiry routes are available as a last resort. These are not for routine pay errors. Use only when standard channels have been exhausted and a substantive policy or system failure exists.
+
+## Documentation to Keep
+
+Keep digital copies of these for at least 7 years.
+
+- Every monthly LES
+- All NAVMC 10922<Citation source="NAVMC 10922" /> submissions and approvals
+- All special pay documentation (jump records, school certificates)
+- All travel orders and vouchers
+- All TSP and allotment changes
+- All bonus and reenlistment contracts (the original written agreement)
+- All correspondence with S-1 on pay corrections
+
+This is your personal ready book. If S-1 says they "do not have your documents," you have them. The 7-year retention covers the typical statute of limitations on pay-related debts plus a margin.
+
+## Common Questions Marines Ask
+
+I received an SRB at reenlistment but I was administratively separated 2 years into the contract. Do I have to repay the bonus?
+
+Per Volume 7A Chapter 2 paragraph 3.0 and Table 2-1, the answer depends on the reason for separation and whether the failure to complete the term was within your control. If the separation was for misconduct or another reason within your control, the unearned portion is recouped. If the separation was for combat-zone disability, hardship, sole survivor status, directed MOS change, or other Rule 1 through 8 circumstances, repayment is not sought. Work through your S-1 to identify the controlling rule.
+
+I am being medically separated for a condition incurred during my obligated service. Do I have to repay my bonus?
+
+Per Chapter 2 paragraph 3.3.2 and Table 2-1 Rule 2, if the disability was incurred in the line of duty in a combat zone (designated by the President or SECDEF) or is a combat-related disability per Title 10 U.S.C. section 1413<Citation source="Title 10 U.S.C. section 1413" />a(e), repayment is not sought and any unpaid portion is paid at separation. Per paragraph 3.4.1, for medical separations not falling under those criteria but not from misconduct, the Secretary of the Military Department has discretion. Work through your S-1 to surface the case for the Secretary's review.
+
+I separated 6 months before my EAS to take a job offer. Will I have to repay my reenlistment bonus?
+
+Per Chapter 2 paragraph 3.3.5 and Title 10 U.S.C. section 1171<Citation source="Title 10 U.S.C. section 1171" />, an enlisted Marine discharged within 12 months before EAS is considered to have completed the term for which the bonus was paid. Recoupment is not required. The Marine Corps determines whether the early discharge falls under section 1171 and advises DFAS. Verify the determination through your S-1 before separation.
+
+My bonus was paid in a lump sum at reenlistment. Why is the recoupment calculation different from what I expected?
+
+The bonus is "earned" over the obligated service period (typically months of service divided by total months obligated). If you separate at 24 months of a 48-month obligation, you have earned 50% of the bonus. The unearned 50% is the amount subject to recoupment. The exact computation method is in DoDI 1304.29<Citation source="DoDI 1304.29" /> and the Marine Corps implementing instructions. Confirm the calculation with DFAS Marine Corps Pay through your S-1.
+
+I am declaring bankruptcy. Will my bonus repayment debt be discharged?
+
+Per Chapter 2 paragraph 2.4, no, if the bankruptcy discharge order is entered less than 5 years after the agreement or service termination date. The bonus debt survives bankruptcy in that window. After 5 years, the debt is treated like other federal debts in bankruptcy proceedings.
+
+I am being moved out of my MOS by the Marine Corps to fill a needed billet. My bonus was tied to my old MOS. Do I owe the unearned portion?
+
+Per Chapter 2 paragraphs 3.3.4.1 through 3.3.4.3 and Table 2-1 Rules 6 and 7, no. When the Marine Corps directs the MOS or assignment change (versus the Marine requesting it), repayment is not sought. Document the directed nature of the change with orders or written direction in your file in case the case is questioned later.
+
+What is an SPD code and why does it matter for my recoupment?
+
+The Separation Designator (SPD) code on the DD-214 documents the reason for separation. SPD codes drive automated pay actions at separation, including recoupment. Per Chapter 2 paragraph 2.2, the Secretary of the Military Department has authority to change pay actions for SPD codes on a case-by-case basis through the OASD M&RA Exception to Policy process. If the SPD code on your DD-214 triggers an automated recoupment that you believe is incorrect, the ETP route is the path to challenge it.
+
+My LES shows a debt I do not recognize. What do I do?
+
+Pull the Remarks Block on the LES for any annotation. The debt should be cross-referenced against a specific pay action (overpayment, bonus recoupment, allotment failure, etc.). Coordinate with your S-1 to identify the source. If the debt is in error, route a correction. If the debt is real but you believe it should be waived (administrative error, equity grounds), submit a waiver request.
+
+## Where to Go for Help
+
+### Routing by Issue
+
+- Routine LES errors (BAH, BAS, special pays, FSA, tax state). Your S-1 admin clerk first, then Personnel Officer, then IPAC.
+- Bonus recoupment questions. Your S-1, with backup from DFAS Marine Corps Pay through Volume 7A Chapter 2 framework. For exceptions, the OASD M&RA Exception to Policy process via the Director of Military Compensation.
+- Debt waiver requests. Your reporting unit to DFAS Marine Corps Pay.
+- Policy disputes (not routine errors). MCAAT at ask_mcaat@usmc.mil.
+- Bankruptcy and federal debt status. Through legal assistance (JAG) and DFAS Marine Corps Pay.
+- DFAS Marine Corps Pay direct contact. Phone 1-888-332-7411 (DSN 312-571-9450 from overseas).
+- Combat-related disability determination for recoupment exception. The Marine's command and the Physical Evaluation Board (PEB) for the disability finding, then S-1 routing to DFAS.
+
+## Where to Go Next on This Site
+
+- Pay and Entitlements landing page lists the six pay topics including Basic Pay, BAH, BAS, deployment pays, and special pays.
+- Basic Pay covers the foundational pay grade and creditable service framework.
+- BAH (Housing Allowance) covers the housing allowance rate tables and dependent rules.
+- Hostile Fire Pay and Imminent Danger Pay covers HFP/IDP. Family Separation Allowance covers FSA. Combat Zone Tax Exclusion covers CZTE.
+- Special Pays covers jump, dive, flight, and other incentive pays plus bonus contracts.
+
+## Related Roles
+
+- Leaders verify Marines review LES monthly during command checks, identify pay errors during the first 30 days of any new assignment, and route corrections to the S-1 quickly.
+- Admin at S-1 builds the documentation packages for pay corrections, posts updates to the reporting unit for UD/MIPS entry, processes recoupment determinations and waiver requests, and coordinates with DFAS Marine Corps Pay on complex cases.
+- Commanders certify pay-action recommendations (including bonus recoupment exceptions where the Secretary's discretionary authority is invoked through the chain), review the command payroll monthly per MCO 5000.14D<Citation source="MCO 5000.14D" /> Enclosure 3, and report systemic pay discrepancies to IPAC.
+
+Pay errors compound when ignored. Read the LES every month, fix errors fast through S-1, and document everything. For bonus recoupment, the controlling framework is Volume 7A Chapter 2 with nine specific rules in Table 2-1. Work through your S-1 to identify which rule applies before assuming a debt is owed.

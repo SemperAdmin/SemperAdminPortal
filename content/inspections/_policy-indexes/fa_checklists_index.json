@@ -1,0 +1,775 @@
+{
+  "downloaded": {
+    "Aircraft Rescue and Fire Fighting (ARFF) (6500)": {
+      "title": "Aircraft Rescue and Fire Fighting (ARFF) (6500)",
+      "url": "https://media.defense.gov/2019/Jul/16/2002157557/-1/-1/0/6500 AIRCRAFT RESCUE AND FIRE FIGHTING (ARFF) 2025.DOCX",
+      "filename": "6500_Aircraft_Rescue_and_Fire_Fighting_(ARFF)_(6500).docx",
+      "category": "Non-CoRE",
+      "fa_number": "6500",
+      "sponsor": "DC A (EAF,EOS, APX)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:17:36.231218"
+    },
+    "Aircrew Training Program": {
+      "title": "Aircrew Training Program",
+      "url": "https://media.defense.gov/2022/Feb/11/2002938059/-1/-1/0/AIRCREW TRAINING PROGRAM (3500.14) 2025.DOCX",
+      "filename": "3500.14_Aircrew_Training_Program.docx",
+      "category": "CoRE+",
+      "fa_number": "3500.14",
+      "sponsor": "TECOM (ASB)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:17:38.365850"
+    },
+    "Antiterrorism": {
+      "title": "Antiterrorism",
+      "url": "https://media.defense.gov/2022/Nov/07/2003109800/-1/-1/0/3302 ANTITERRORISM_FAC.DOCX",
+      "filename": "3302_Antiterrorism.docx",
+      "category": "CoRE",
+      "fa_number": "3302",
+      "sponsor": "PP&O (PO)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:17:40.339190"
+    },
+    "Assistance and Hotline Program": {
+      "title": "Assistance and Hotline Program",
+      "url": "https://media.defense.gov/2021/Aug/06/2002824659/-1/-1/0/ASSISTANCE AND HOTLINE PROGRAM (5370) 2025.DOCX",
+      "filename": "5370_Assistance_and_Hotline_Program.docx",
+      "category": "CoRE+",
+      "fa_number": "5370",
+      "sponsor": "IGMC (IGA)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:17:42.481784"
+    },
+    "Aviation Command and Control Training": {
+      "title": "Aviation Command and Control Training",
+      "url": "https://media.defense.gov/2022/Nov/07/2003109817/-1/-1/0/AVIATION COMMAND AND CONTROL TRAINING (3500.10) 2025.DOCX",
+      "filename": "3500.10_Aviation_Command_and_Control_Training.docx",
+      "category": "Non-CoRE",
+      "fa_number": "3500.10",
+      "sponsor": "TECOM (ASB)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:17:44.711736"
+    },
+    "Aviation Facilities": {
+      "title": "Aviation Facilities",
+      "url": "https://media.defense.gov/2019/Jul/16/2002157546/-1/-1/0/AVIATION FACILITIES (11130).DOCX",
+      "filename": "11130_Aviation_Facilities.docx",
+      "category": "Non-CoRE",
+      "fa_number": "11130",
+      "sponsor": "DC A (ASL)",
+      "effective_date": "1/1/2020",
+      "downloaded_at": "2026-04-28T20:17:46.923063"
+    },
+    "Aviation Operations Administration": {
+      "title": "Aviation Operations Administration",
+      "url": "https://media.defense.gov/2023/Jan/26/2003150065/-1/-1/0/AVIATION OPERATIONS ADMINISTRATION (3700) 2025.DOCX",
+      "filename": "3700_Aviation_Operations_Administration.docx",
+      "category": "CoRE+",
+      "fa_number": "3700",
+      "sponsor": "TECOM (ASB, PSD)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:17:48.953151"
+    },
+    "Aviation Safety": {
+      "title": "Aviation Safety",
+      "url": "https://media.defense.gov/2022/Nov/28/2003121797/-1/-1/0/Aviation Safety.DOCX",
+      "filename": "3750.6_Aviation_Safety.docx",
+      "category": "CoRE+",
+      "fa_number": "3750.6",
+      "sponsor": "HQMC (SD)",
+      "effective_date": "4/3/2025",
+      "downloaded_at": "2026-04-28T20:17:50.937084"
+    },
+    "Body Composition and Military Appearance Program": {
+      "title": "Body Composition and Military Appearance Program",
+      "url": "https://media.defense.gov/2022/Nov/07/2003109821/-1/-1/0/6110 Body Composition and Military Appearance Program.DOCX",
+      "filename": "6110_Body_Composition_and_Military_Appearance_Program.docx",
+      "category": "CoRE",
+      "fa_number": "6110",
+      "sponsor": "TECOM (HPB)",
+      "effective_date": "4/16/2026",
+      "downloaded_at": "2026-04-28T20:17:53.076632"
+    },
+    "Career Planning Program": {
+      "title": "Career Planning Program",
+      "url": "https://media.defense.gov/2022/Jun/28/2003026116/-1/-1/0/Career Planning Program (1040).DOCX",
+      "filename": "1040_Career_Planning_Program.docx",
+      "category": "CoRE",
+      "fa_number": "1040",
+      "sponsor": "M&RA (MMEA)",
+      "effective_date": "3/7/2024",
+      "downloaded_at": "2026-04-28T20:17:55.117412"
+    },
+    "Casualty Affairs": {
+      "title": "Casualty Affairs",
+      "url": "https://media.defense.gov/2022/Nov/07/2003110092/-1/-1/0/CASUALTY AFFAIRS (3040) 2025.DOCX",
+      "filename": "3040_Casualty_Affairs.docx",
+      "category": "CoRE",
+      "fa_number": "3040",
+      "sponsor": "M&RA (MF)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:17:57.132425"
+    },
+    "CBRN Defense": {
+      "title": "CBRN Defense",
+      "url": "https://media.defense.gov/2019/Jul/16/2002157547/-1/-1/0/CHEMICAL BIOLOGICAL RADIATION NUCLEAR (CBRN) DEFENSE 3400.DOCX",
+      "filename": "3400_CBRN_Defense.docx",
+      "category": "Non-CoRE",
+      "fa_number": "3400",
+      "sponsor": "PP&O",
+      "effective_date": "1/1/2024",
+      "downloaded_at": "2026-04-28T20:17:59.147161"
+    },
+    "Command Inspection Program": {
+      "title": "Command Inspection Program",
+      "url": "https://media.defense.gov/2023/Jan/13/2003144532/-1/-1/0/Command Inspection Program (5040).DOCX",
+      "filename": "5040_Command_Inspection_Program.docx",
+      "category": "CoRE+",
+      "fa_number": "5040",
+      "sponsor": "IGMC (IGI)",
+      "effective_date": "1/13/2023",
+      "downloaded_at": "2026-04-28T20:18:03.257528"
+    },
+    "Consumer- Level Supply": {
+      "title": "Consumer- Level Supply",
+      "url": "https://media.defense.gov/2022/Sep/06/2003071053/-1/-1/0/Consumer Level Supply 2025.DOCX",
+      "filename": "4400.201_Consumer-_Level_Supply.docx",
+      "category": "CoRE",
+      "fa_number": "4400.201",
+      "sponsor": "I&L (LPS-1)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:18:05.413133"
+    },
+    "Criminal Justice Information Reporting Requirements": {
+      "title": "Criminal Justice Information Reporting Requirements",
+      "url": "https://media.defense.gov/2023/Apr/18/2003202076/-1/-1/0/CRIMINAL JUSTICE INFORMATION REPORTING REQUIREMENTS (5580.6).DOCX",
+      "filename": "5580.6_Criminal_Justice_Information_Reporting_Requirements.docx",
+      "category": "CoRE+",
+      "fa_number": "5580.6",
+      "sponsor": "I&L (LF)",
+      "effective_date": "6/3/2025",
+      "downloaded_at": "2026-04-28T20:18:07.413755"
+    },
+    "Critical Infrastructure Protection (CIP) Program": {
+      "title": "Critical Infrastructure Protection (CIP) Program",
+      "url": "https://media.defense.gov/2022/Nov/07/2003110149/-1/-1/0/Critical Infrastructure Protection Program (3501.36)_FY2024_update.DOCX",
+      "filename": "3501.36_Critical_Infrastructure_Protection_(CIP)_Program.docx",
+      "category": "CoRE+",
+      "fa_number": "3501.36",
+      "sponsor": "PP&O (POP/MA)",
+      "effective_date": "3/6/2024",
+      "downloaded_at": "2026-04-28T20:18:09.398954"
+    },
+    "Cyber Security Management": {
+      "title": "Cyber Security Management",
+      "url": "https://media.defense.gov/2023/Jan/12/2003144267/-1/-1/0/CYBER SECURITY MANAGEMENT (5239) 2025.DOCX",
+      "filename": "5239_Cyber_Security_Management.docx",
+      "category": "CoRE",
+      "fa_number": "5239",
+      "sponsor": "DCI (IC4)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:18:11.612955"
+    },
+    "Defense Travel System": {
+      "title": "Defense Travel System",
+      "url": "https://media.defense.gov/2022/Nov/28/2003121255/-1/-1/0/DEFENSE TRAVEL SYSTEM (DTS).DOCX",
+      "filename": "4650.39_Defense_Travel_System.docx",
+      "category": "CoRE",
+      "fa_number": "4650.39",
+      "sponsor": "P&R (RFF)",
+      "effective_date": "2/20/2026",
+      "downloaded_at": "2026-04-28T20:18:13.836607"
+    },
+    "Detention Facilities": {
+      "title": "Detention Facilities",
+      "url": "https://media.defense.gov/2022/Nov/07/2003110375/-1/-1/0/DETENTION FACILITIES (1630).DOCX",
+      "filename": "1630_Detention_Facilities.docx",
+      "category": "Non-CoRE",
+      "fa_number": "1630",
+      "sponsor": "I&L (LF)",
+      "effective_date": "6/3/2025",
+      "downloaded_at": "2026-04-28T20:18:15.963409"
+    },
+    "Directives Management": {
+      "title": "Directives Management",
+      "url": "https://media.defense.gov/2022/Nov/07/2003110390/-1/-1/0/DIRECTIVES MANAGEMENT (5215).DOCX",
+      "filename": "5215_Directives_Management.docx",
+      "category": "CoRE",
+      "fa_number": "5215",
+      "sponsor": "AR (ARDB)",
+      "effective_date": "2/20/2026",
+      "downloaded_at": "2026-04-28T20:18:17.920125"
+    },
+    "Environmental Program Management": {
+      "title": "Environmental Program Management",
+      "url": "https://media.defense.gov/2022/Nov/07/2003110464/-1/-1/0/ENVIRONMENTAL PROGRAM MANAGEMENT (5090) dtd 20250331.DOCX",
+      "filename": "5090_Environmental_Program_Management.docx",
+      "category": "Non-CoRE",
+      "fa_number": "5090",
+      "sponsor": "MCICOM (GF-EV)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:18:21.972139"
+    },
+    "Exceptional Family Member Program (EFMP)": {
+      "title": "Exceptional Family Member Program (EFMP)",
+      "url": "https://media.defense.gov/2022/Nov/08/2003111503/-1/-1/0/EXCEPTIONAL FAMILY MEMBER PROGRAM (EFMP) (1754.4).DOCX",
+      "filename": "1754.4_Exceptional_Family_Member_Program_(EFMP).docx",
+      "category": "Non-CoRE",
+      "fa_number": "1754.4",
+      "sponsor": "M&RA (MF)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:18:24.098558"
+    },
+    "Explosive Ordnance Disposal (EOD) Technical Evaluation": {
+      "title": "Explosive Ordnance Disposal (EOD) Technical Evaluation",
+      "url": "https://media.defense.gov/2022/Jul/20/2003038369/-1/-1/0/EXPLOSIVE ORDNANCE DISPOSAL (EOD) TECHNICAL EVALUATION (3571.2).DOCX",
+      "filename": "3571.2_Explosive_Ordnance_Disposal_(EOD)_Technical_Evaluation.docx",
+      "category": "Non-CoRE",
+      "fa_number": "3571.2",
+      "sponsor": "DC, I&L",
+      "effective_date": "3/1/2024",
+      "downloaded_at": "2026-04-28T20:18:26.068825"
+    },
+    "Family Housing": {
+      "title": "Family Housing",
+      "url": "https://media.defense.gov/2022/Jan/28/2002929173/-1/-1/0/FAMILY HOUSING (11000.22).DOCX",
+      "filename": "11000.22_Family_Housing.docx",
+      "category": "Non-CoRE",
+      "fa_number": "11000.22",
+      "sponsor": "MCICOM (GF)",
+      "effective_date": "3/19/2024",
+      "downloaded_at": "2026-04-28T20:18:28.244769"
+    },
+    "Force Preservation Council (FPC) Program": {
+      "title": "Force Preservation Council (FPC) Program",
+      "url": "https://media.defense.gov/2023/Jan/18/2003146285/-1/-1/0/1500.60 Force Preservation Council.DOCX",
+      "filename": "1500.60_Force_Preservation_Council_(FPC)_Program.docx",
+      "category": "CoRE",
+      "fa_number": "1500.60",
+      "sponsor": "HQMC (MF)",
+      "effective_date": "2/10/2025",
+      "downloaded_at": "2026-04-28T20:18:30.229416"
+    },
+    "Foreign Disclosure": {
+      "title": "Foreign Disclosure",
+      "url": "https://media.defense.gov/2021/Jul/09/2002759730/-1/-1/0/FOREIGN DISCLOSURE (5510.2).DOCX",
+      "filename": "5510.2_Foreign_Disclosure.docx",
+      "category": "Non-CoRE",
+      "fa_number": "5510.2",
+      "sponsor": "PP&O (PL)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:18:32.316883"
+    },
+    "Formal School Management": {
+      "title": "Formal School Management",
+      "url": "https://media.defense.gov/2020/Feb/18/2002251012/-1/-1/0/FORMAL SCHOOL MANAGEMENT (1553.2).DOCX",
+      "filename": "1553.2_Formal_School_Management.docx",
+      "category": "Non-CoRE",
+      "fa_number": "1553.2",
+      "sponsor": "TECOM",
+      "effective_date": "11/6/2024",
+      "downloaded_at": "2026-04-28T20:18:34.727979"
+    },
+    "Government Travel Charge Card Program": {
+      "title": "Government Travel Charge Card Program",
+      "url": "https://media.defense.gov/2022/Nov/08/2003111556/-1/-1/0/GOVERNMENT TRAVEL CHARGE CARD (GTCCP)(4600.40).DOCX",
+      "filename": "4600.40_Government_Travel_Charge_Card_Program.docx",
+      "category": "CoRE",
+      "fa_number": "4600.40",
+      "sponsor": "P&R (RFF)",
+      "effective_date": "3/25/2026",
+      "downloaded_at": "2026-04-28T20:18:36.746542"
+    },
+    "Health Service Support (HSS)": {
+      "title": "Health Service Support (HSS)",
+      "url": "https://media.defense.gov/2023/Jan/12/2003144261/-1/-1/0/6000 HEALTH SERVICE SUPPORT 2025.DOCX",
+      "filename": "6000_Health_Service_Support_(HSS).docx",
+      "category": "CoRE",
+      "fa_number": "6000",
+      "sponsor": "HQMC (HS)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:18:38.776094"
+    },
+    "Historical Program": {
+      "title": "Historical Program",
+      "url": "https://media.defense.gov/2019/Jul/16/2002157567/-1/-1/0/Historical Program (5750).DOCX",
+      "filename": "5750_Historical_Program.docx",
+      "category": "Non-CoRE",
+      "fa_number": "5750",
+      "sponsor": "HQMC (HD)",
+      "effective_date": "4/4/2024",
+      "downloaded_at": "2026-04-28T20:18:40.900340"
+    },
+    "Identification Cards": {
+      "title": "Identification Cards",
+      "url": "https://media.defense.gov/2022/Nov/08/2003111561/-1/-1/0/IDENTIFICATION CARDS (5512)_MF.DOCX",
+      "filename": "5512_Identification_Cards.docx",
+      "category": "Non-CoRE",
+      "fa_number": "5512",
+      "sponsor": "M&RA (MF)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:18:43.052703"
+    },
+    "Information and Personnel Security Program (IPSP)": {
+      "title": "Information and Personnel Security Program (IPSP)",
+      "url": "https://media.defense.gov/2022/Nov/08/2003111564/-1/-1/0/INFORMATION AND PERSONNEL SECURITY PROGRAM (5510.3) proposed 2024 12 11.DOCX",
+      "filename": "5510.3_Information_and_Personnel_Security_Program_(IPSP).docx",
+      "category": "CoRE",
+      "fa_number": "5510.3",
+      "sponsor": "DC,I (IID)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:18:45.148830"
+    },
+    "Intelligence": {
+      "title": "Intelligence",
+      "url": "https://media.defense.gov/2023/Jan/03/2003139141/-1/-1/0/Intelligence_(3800).DOCX",
+      "filename": "3800_Intelligence.docx",
+      "category": "CoRE",
+      "fa_number": "3800",
+      "sponsor": "DC,I (Intel)",
+      "effective_date": "3/7/2025",
+      "downloaded_at": "2026-04-28T20:18:47.132521"
+    },
+    "Law Enforcement Operations": {
+      "title": "Law Enforcement Operations",
+      "url": "https://media.defense.gov/2023/Apr/04/2003192952/-1/-1/0/5580 Law Enforcement Operations.DOCX",
+      "filename": "5580_Law_Enforcement_Operations.docx",
+      "category": "CoRE+",
+      "fa_number": "5580",
+      "sponsor": "I&L (LF)",
+      "effective_date": "4/21/2026",
+      "downloaded_at": "2026-04-28T20:18:49.144033"
+    },
+    "Leave, Liberty and Administrative Absence": {
+      "title": "Leave, Liberty and Administrative Absence",
+      "url": "https://media.defense.gov/2022/Nov/08/2003111570/-1/-1/0/LEAVE LIBERTY AND ADMINISTRATIVE ABSENCE (1050).DOCX",
+      "filename": "1050_Leave,_Liberty_and_Administrative_Absence.docx",
+      "category": "Non-CoRE",
+      "fa_number": "1050",
+      "sponsor": "M&RA (MPO)",
+      "effective_date": "9/3/2025",
+      "downloaded_at": "2026-04-28T20:18:51.117779"
+    },
+    "Marine Corps Combat Readiness Evaluation": {
+      "title": "Marine Corps Combat Readiness Evaluation",
+      "url": "https://media.defense.gov/2025/Aug/22/2003786454/-1/-1/0/3501.1 MCCRE.DOCX",
+      "filename": "3501.1_Marine_Corps_Combat_Readiness_Evaluation.docx",
+      "category": "CoRE+",
+      "fa_number": "3501.1",
+      "sponsor": "PP&O (POF)",
+      "effective_date": "8/22/2025",
+      "downloaded_at": "2026-04-28T20:18:55.404244"
+    },
+    "Marine Corps Fleet Bands": {
+      "title": "Marine Corps Fleet Bands",
+      "url": "https://media.defense.gov/2022/Nov/08/2003111588/-1/-1/0/5000.18 Marine Corps Fleet Bands.DOCX",
+      "filename": "5000.18_Marine_Corps_Fleet_Bands.docx",
+      "category": "CoRE+",
+      "fa_number": "5000.18",
+      "sponsor": "CD (Fleet Music)",
+      "effective_date": "9/23/2025",
+      "downloaded_at": "2026-04-28T20:18:57.547424"
+    },
+    "Marine Corps Martial Arts Program (MCMAP)": {
+      "title": "Marine Corps Martial Arts Program (MCMAP)",
+      "url": "https://media.defense.gov/2022/Nov/08/2003111589/-1/-1/0/MARINE CORPS MARTIAL ARTS PROGRAM 1500.59.DOCX",
+      "filename": "1500.59_Marine_Corps_Martial_Arts_Program_(MCMAP).docx",
+      "category": "CoRE",
+      "fa_number": "1500.59",
+      "sponsor": "TECOM (HPB)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:18:59.677496"
+    },
+    "Marine Corps Safety Management Systems": {
+      "title": "Marine Corps Safety Management Systems",
+      "url": "https://media.defense.gov/2022/Jan/12/2002921372/-1/-1/0/Marine Corps Safety Management Systems_5100.29.DOCX",
+      "filename": "5100.29_Marine_Corps_Safety_Management_Systems.docx",
+      "category": "CoRE",
+      "fa_number": "5100.29",
+      "sponsor": "HQMC (SD)",
+      "effective_date": "1/28/2026",
+      "downloaded_at": "2026-04-28T20:19:01.718588"
+    },
+    "Marine Corps Sponsorship Program": {
+      "title": "Marine Corps Sponsorship Program",
+      "url": "https://media.defense.gov/2022/Nov/28/2003121358/-1/-1/0/1320 Marine Corps Sponsorship Program.DOCX",
+      "filename": "1320_Marine_Corps_Sponsorship_Program.docx",
+      "category": "Non-CoRE",
+      "fa_number": "1320",
+      "sponsor": "HQMC (MF)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:19:03.668536"
+    },
+    "Marksmanship Program": {
+      "title": "Marksmanship Program",
+      "url": "https://media.defense.gov/2022/Sep/01/2003069379/-1/-1/0/MARKSMANSHIP PROGRAM (3574).DOCX",
+      "filename": "3574_Marksmanship_Program.docx",
+      "category": "Non-CoRE",
+      "fa_number": "3574",
+      "sponsor": "MPM (Weapons Training Bn)",
+      "effective_date": "2/29/2024",
+      "downloaded_at": "2026-04-28T20:19:05.815730"
+    },
+    "Military Awards": {
+      "title": "Military Awards",
+      "url": "https://media.defense.gov/2021/Jan/07/2002561076/-1/-1/0/MILITARY AWARDS (1650) revised 3 Jun 25 1.DOCX",
+      "filename": "1650_Military_Awards.docx",
+      "category": "CoRE",
+      "fa_number": "1650",
+      "sponsor": "M&RA (MMPB)",
+      "effective_date": "6/3/2025",
+      "downloaded_at": "2026-04-28T20:19:07.793555"
+    },
+    "Military Correctional Facilities": {
+      "title": "Military Correctional Facilities",
+      "url": "https://media.defense.gov/2022/Nov/08/2003111619/-1/-1/0/1640 Military Correctional Facilities.DOCX",
+      "filename": "1640_Military_Correctional_Facilities.docx",
+      "category": "CoRE+",
+      "fa_number": "1640",
+      "sponsor": "I&L (LF)",
+      "effective_date": "4/21/2026",
+      "downloaded_at": "2026-04-28T20:19:10.036430"
+    },
+    "Military Working Dog (MWD) Operations": {
+      "title": "Military Working Dog (MWD) Operations",
+      "url": "https://media.defense.gov/2023/Apr/04/2003192963/-1/-1/0/Military Working Dog (MWD) Operations (5585.5).DOCX",
+      "filename": "5585.5_Military_Working_Dog_(MWD)_Operations.docx",
+      "category": "CoRE+",
+      "fa_number": "5585.5",
+      "sponsor": "I&L (LF)",
+      "effective_date": "6/3/2025",
+      "downloaded_at": "2026-04-28T20:19:12.147218"
+    },
+    "Naval Air Training and Operating Procedures Standardization (NATOPS)": {
+      "title": "Naval Air Training and Operating Procedures Standardization (NATOPS)",
+      "url": "https://media.defense.gov/2022/Nov/28/2003121799/-1/-1/0/Naval Air Training and Operating Procedures Standardization (NATOPS) (3710.7) .DOCX",
+      "filename": "3710.7_Naval_Air_Training_and_Operating_Procedures_Standardization_(NATOPS).docx",
+      "category": "CoRE+",
+      "fa_number": "3710.7",
+      "sponsor": "HQMC (SD)",
+      "effective_date": "4/3/2025",
+      "downloaded_at": "2026-04-28T20:19:18.549594"
+    },
+    "Operations Security": {
+      "title": "Operations Security",
+      "url": "https://media.defense.gov/2019/Jul/15/2002157394/-1/-1/0/OPERATIONS SECURITY (3070) 2025.DOCX",
+      "filename": "3070_Operations_Security.docx",
+      "category": "CoRE",
+      "fa_number": "3070",
+      "sponsor": "PP&O (PLI)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:19:20.536689"
+    },
+    "Oversight-Intel/Non-Intel Sensitive Activities": {
+      "title": "Oversight-Intel/Non-Intel Sensitive Activities",
+      "url": "https://media.defense.gov/2023/Apr/06/2003195119/-1/-1/0/Oversight-Intel (Non-Intel Sensitive Activities) (3800.2).DOCX",
+      "filename": "3800.2_Oversight-IntelNon-Intel_Sensitive_Activities.docx",
+      "category": "CoRE",
+      "fa_number": "3800.2",
+      "sponsor": "IGMC (IGO)",
+      "effective_date": "4/5/2023",
+      "downloaded_at": "2026-04-28T20:19:22.518118"
+    },
+    "Performance Evaluation System (PES)": {
+      "title": "Performance Evaluation System (PES)",
+      "url": "https://media.defense.gov/2021/Dec/09/2002906685/-1/-1/0/1610 Performance Evaluation System.DOCX",
+      "filename": "1610_Performance_Evaluation_System_(PES).docx",
+      "category": "CoRE",
+      "fa_number": "1610",
+      "sponsor": "M&RA (MMPB)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:19:24.642655"
+    },
+    "Personal Financial Management Program": {
+      "title": "Personal Financial Management Program",
+      "url": "https://media.defense.gov/2022/Nov/08/2003111643/-1/-1/0/PERSONAL FINANCIAL MANAGEMENT PROGRAM (PFMP)(1700.37).DOCX",
+      "filename": "1700.37_Personal_Financial_Management_Program.docx",
+      "category": "CoRE",
+      "fa_number": "1700.37",
+      "sponsor": "M&RA (MF)",
+      "effective_date": "2/2/2026",
+      "downloaded_at": "2026-04-28T20:19:26.606904"
+    },
+    "Physical Fitness and Combat Fitness Program": {
+      "title": "Physical Fitness and Combat Fitness Program",
+      "url": "https://media.defense.gov/2022/Nov/08/2003111645/-1/-1/0/PHYSICAL FITNESS AND COMBAT FITNESS PROGRAM (6100.13).DOCX",
+      "filename": "6100.13_Physical_Fitness_and_Combat_Fitness_Program.docx",
+      "category": "CoRE",
+      "fa_number": "6100.13",
+      "sponsor": "TECOM (HPB)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:19:28.618996"
+    },
+    "Physical Fitness Program and Force Fitness Instructor Program": {
+      "title": "Physical Fitness Program and Force Fitness Instructor Program",
+      "url": "https://media.defense.gov/2022/Nov/08/2003111653/-1/-1/0/PHYSICAL FITNESS PROGRAM AND FORCE FITNESS INSTRUCTOR PROGRAM (6100.14).DOCX",
+      "filename": "1500.62_Physical_Fitness_Program_and_Force_Fitness_Instructor_Program.docx",
+      "category": "CoRE",
+      "fa_number": "1500.62",
+      "sponsor": "TECOM (HPB)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:19:30.640762"
+    },
+    "Physical Security": {
+      "title": "Physical Security",
+      "url": "https://media.defense.gov/2019/Jul/15/2002157398/-1/-1/0/5530 Physical Security Checklist - 2025 Update.DOCX",
+      "filename": "5530_Physical_Security.docx",
+      "category": "CoRE",
+      "fa_number": "5530",
+      "sponsor": "PP&O (PO)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:19:32.845129"
+    },
+    "Postal Affairs and Official Mail Program - Military Postal Activity": {
+      "title": "Postal Affairs and Official Mail Program - Military Postal Activity",
+      "url": "https://media.defense.gov/2022/Oct/26/2003103301/-1/-1/0/5110.1 POSTAL AFFAIRS AND OFFICIAL MAIL PROGRAM MILITARY POSTAL ACTIVITY.DOCX",
+      "filename": "5110.1_Postal_Affairs_and_Official_Mail_Program_-_Military_Postal_Activity.docx",
+      "category": "CoRE+",
+      "fa_number": "5110.1",
+      "sponsor": "M&RA (MF)",
+      "effective_date": "6/3/2025",
+      "downloaded_at": "2026-04-28T20:19:34.998322"
+    },
+    "Postal Affairs and Official Mail Program - Organization": {
+      "title": "Postal Affairs and Official Mail Program - Organization",
+      "url": "https://media.defense.gov/2023/Dec/01/2003349886/-1/-1/0/5110.2 POSTAL AFFAIRS AND OFFICIAL MAIL PROGRAM ORGNIZATION.DOCX",
+      "filename": "5110.2_Postal_Affairs_and_Official_Mail_Program_-_Organization.docx",
+      "category": "CoRE",
+      "fa_number": "5110.2",
+      "sponsor": "M&RA (MF)",
+      "effective_date": "6/3/2025",
+      "downloaded_at": "2026-04-28T20:19:37.210404"
+    },
+    "Prohibited Activities and Conduct Prevention and Response Program (PAC)": {
+      "title": "Prohibited Activities and Conduct Prevention and Response Program (PAC)",
+      "url": "https://media.defense.gov/2022/Nov/09/2003111834/-1/-1/0/5354.1G Prohibited Activities and Conduct Prevention and Response Program (PAC).DOCX",
+      "filename": "5354.1_Prohibited_Activities_and_Conduct_Prevention_and_Response_Program_(PAC).docx",
+      "category": "CoRE",
+      "fa_number": "5354.1",
+      "sponsor": "M&RA (MPE)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:19:39.517838"
+    },
+    "Range and Training Area Management": {
+      "title": "Range and Training Area Management",
+      "url": "https://media.defense.gov/2022/Apr/05/2002970767/-1/-1/0/RANGE AND TRAINING AREA MANAGEMENT (3550).DOCX",
+      "filename": "3550_Range_and_Training_Area_Management.docx",
+      "category": "Non-CoRE",
+      "fa_number": "3550",
+      "sponsor": "TECOM (RTAM)",
+      "effective_date": "11/3/2025",
+      "downloaded_at": "2026-04-28T20:19:41.746667"
+    },
+    "Records Management": {
+      "title": "Records Management",
+      "url": "https://media.defense.gov/2023/Jun/05/2003235760/-1/-1/0/5210.11 Records Management.DOCX",
+      "filename": "5210_Records_Management.docx",
+      "category": "CoRE",
+      "fa_number": "5210",
+      "sponsor": "AR (ARD)",
+      "effective_date": "9/23/2025",
+      "downloaded_at": "2026-04-28T20:19:44.085064"
+    },
+    "Religous Ministries": {
+      "title": "Religous Ministries",
+      "url": "https://media.defense.gov/2021/Jul/27/2002811499/-1/-1/0/RELIGIOUS MINISTRY (1730) 2025.DOCX",
+      "filename": "1730_Religous_Ministries.docx",
+      "category": "Non-CoRE",
+      "fa_number": "1730",
+      "sponsor": "HQMC (REL)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:19:46.180534"
+    },
+    "Reports Management": {
+      "title": "Reports Management",
+      "url": "https://media.defense.gov/2022/Mar/24/2002962404/-1/-1/0/REPORTS MANAGEMENT (5214).DOCX",
+      "filename": "5214_Reports_Management.docx",
+      "category": "Non-CoRE",
+      "fa_number": "5214",
+      "sponsor": "AR (ARDB)",
+      "effective_date": "4/29/2024",
+      "downloaded_at": "2026-04-28T20:19:48.369952"
+    },
+    "Request Mast Procedures": {
+      "title": "Request Mast Procedures",
+      "url": "https://media.defense.gov/2022/Apr/21/2002981747/-1/-1/0/Request Mast FAC (1700.23).DOCX",
+      "filename": "1700.23_Request_Mast_Procedures.docx",
+      "category": "CoRE",
+      "fa_number": "1700.23",
+      "sponsor": "IGMC",
+      "effective_date": "7/29/2024",
+      "downloaded_at": "2026-04-28T20:19:50.540004"
+    },
+    "Separation, Retirement and Limited Duty": {
+      "title": "Separation, Retirement and Limited Duty",
+      "url": "https://media.defense.gov/2022/Aug/22/2003061655/-1/-1/0/SEPARATION RETIREMENT AND LIMITED DUTY (1900.16).DOCX",
+      "filename": "1900.16_Separation,_Retirement_and_Limited_Duty.docx",
+      "category": "CoRE",
+      "fa_number": "1900.16",
+      "sponsor": "M&R (MMSR)",
+      "effective_date": "3/24/2025",
+      "downloaded_at": "2026-04-28T20:19:52.499964"
+    },
+    "Sexual Assault Prevention and Response (SAPR)": {
+      "title": "Sexual Assault Prevention and Response (SAPR)",
+      "url": "https://media.defense.gov/2022/Nov/09/2003111879/-1/-1/0/SEXUAL ASSAULT PREVENTION AND RESPONSE PROGRAM (SAPR) (1752.5).DOCX",
+      "filename": "1752.5_Sexual_Assault_Prevention_and_Response_(SAPR).docx",
+      "category": "CoRE",
+      "fa_number": "1752.5",
+      "sponsor": "M&RA (MF)",
+      "effective_date": "11/17/2025",
+      "downloaded_at": "2026-04-28T20:19:54.533752"
+    },
+    "Single Marine Program (SMP)": {
+      "title": "Single Marine Program (SMP)",
+      "url": "https://media.defense.gov/2022/Nov/09/2003111885/-1/-1/0/SINGLE MARINE PROGRAM (SMP) (1700.36) 2025.DOCX",
+      "filename": "1700.36_Single_Marine_Program_(SMP).docx",
+      "category": "Non-CoRE",
+      "fa_number": "1700.36",
+      "sponsor": "M&RA (MF)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:19:56.642170"
+    },
+    "Substance Assessment and Counseling Program": {
+      "title": "Substance Assessment and Counseling Program",
+      "url": "https://media.defense.gov/2022/Nov/09/2003111907/-1/-1/0/SUBSTANCE ASSESSMENT AND COUNSELING PROGRAM 5300.17_25 Jun 25.DOCX",
+      "filename": "5300.17_Substance_Assessment_and_Counseling_Program.docx",
+      "category": "CoRE",
+      "fa_number": "5300.17",
+      "sponsor": "M&RA (MF)",
+      "effective_date": "6/25/2025",
+      "downloaded_at": "2026-04-28T20:19:58.694226"
+    },
+    "Suicide Prevention Program": {
+      "title": "Suicide Prevention Program",
+      "url": "https://media.defense.gov/2022/Nov/09/2003111929/-1/-1/0/SUICIDE PREVENTION PROGRAM (1720) 2025.DOCX",
+      "filename": "1720.1_Suicide_Prevention_Program.docx",
+      "category": "CoRE",
+      "fa_number": "1720.1",
+      "sponsor": "M&RA (MF)",
+      "effective_date": "6/3/2025",
+      "downloaded_at": "2026-04-28T20:20:01.074732"
+    },
+    "Transition Readiness Program (TRP)": {
+      "title": "Transition Readiness Program (TRP)",
+      "url": "https://media.defense.gov/2022/Nov/09/2003111950/-1/-1/0/TRANSITION READINESS PROGRAM (TRP) (1700.31) 2025.DOCX",
+      "filename": "1700.31_Transition_Readiness_Program_(TRP).docx",
+      "category": "CoRE",
+      "fa_number": "1700.31",
+      "sponsor": "M&RA (MF)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:20:05.087104"
+    },
+    "Unaccompanied Housing": {
+      "title": "Unaccompanied Housing",
+      "url": "https://media.defense.gov/2019/Jul/16/2002157606/-1/-1/0/UNACCOMPANIED HOUSING (11000.1) (002).DOCX",
+      "filename": "11000.1_Unaccompanied_Housing.docx",
+      "category": "CoRE",
+      "fa_number": "11000.1",
+      "sponsor": "MCICOM (GF)",
+      "effective_date": "3/6/2024",
+      "downloaded_at": "2026-04-28T20:20:07.036061"
+    },
+    "Uniform Inspection": {
+      "title": "Uniform Inspection",
+      "url": "https://media.defense.gov/2019/Jul/16/2002157607/-1/-1/0/UNIFORM INSPECTION (1020).DOCX",
+      "filename": "1020_Uniform_Inspection.docx",
+      "category": "Non-CoRE",
+      "fa_number": "1020",
+      "sponsor": "HQMC (MCUB)",
+      "effective_date": "6/24/2019",
+      "downloaded_at": "2026-04-28T20:20:09.163843"
+    },
+    "Unit Readiness": {
+      "title": "Unit Readiness",
+      "url": "https://media.defense.gov/2022/Nov/09/2003111995/-1/-1/0/UNIT READINESS (3000).DOCX",
+      "filename": "3000.13_Unit_Readiness.docx",
+      "category": "CoRE",
+      "fa_number": "3000.13",
+      "sponsor": "PP&O (POR)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:20:11.482966"
+    },
+    "Unit Training Management (UTM)": {
+      "title": "Unit Training Management (UTM)",
+      "url": "https://media.defense.gov/2022/Nov/09/2003112050/-1/-1/0/1553.3 Unit Training Management.DOCX",
+      "filename": "1553.3_Unit_Training_Management_(UTM).docx",
+      "category": "CoRE",
+      "fa_number": "1553.3",
+      "sponsor": "TECOM (SD)",
+      "effective_date": "9/23/2025",
+      "downloaded_at": "2026-04-28T20:20:13.444300"
+    },
+    "Unit, Personal and Family Readiness Program (UPFRP)": {
+      "title": "Unit, Personal and Family Readiness Program (UPFRP)",
+      "url": "https://media.defense.gov/2022/Nov/09/2003111962/-1/-1/0/UNIT PERSONAL AND FAMILY READINESS PROGRAM (UPFRP)(1754.9) 2025.DOCX",
+      "filename": "1754.9_Unit,_Personal_and_Family_Readiness_Program_(UPFRP).docx",
+      "category": "CoRE",
+      "fa_number": "1754.9",
+      "sponsor": "M&RA (MF)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:20:15.456502"
+    },
+    "USMC Criminal Investigation Division (USMC CID) Operations": {
+      "title": "USMC Criminal Investigation Division (USMC CID) Operations",
+      "url": "https://media.defense.gov/2023/Apr/07/2003195720/-1/-1/0/CRIMINAL INVESTIGATION DIVISION  (CID) (5580.2).DOCX",
+      "filename": "5580.2_USMC_Criminal_Investigation_Division_(USMC_CID)_Operations.docx",
+      "category": "CoRE+",
+      "fa_number": "5580.2",
+      "sponsor": "I&L (LF)",
+      "effective_date": "6/3/2025",
+      "downloaded_at": "2026-04-28T20:20:17.577002"
+    },
+    "Voting Assistance Program": {
+      "title": "Voting Assistance Program",
+      "url": "https://media.defense.gov/2021/Dec/27/2002914947/-1/-1/0/1742.1 Voting Assistance Program.DOCX",
+      "filename": "1742.1_Voting_Assistance_Program.docx",
+      "category": "CoRE",
+      "fa_number": "1742.1",
+      "sponsor": "M&RA (MF)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:20:22.092879"
+    },
+    "Water Survival Training Program": {
+      "title": "Water Survival Training Program",
+      "url": "https://media.defense.gov/2022/Nov/09/2003112075/-1/-1/0/WATER SURVIVAL TRAINING PROGRAM (1500.52) 2025.DOCX",
+      "filename": "1500.52_Water_Survival_Training_Program.docx",
+      "category": "CoRE",
+      "fa_number": "1500.52",
+      "sponsor": "TECOM (HPB)",
+      "effective_date": "5/15/2025",
+      "downloaded_at": "2026-04-28T20:20:24.151915"
+    },
+    "Motor Transport Operations": {
+      "title": "Motor Transport Operations",
+      "url": "https://media.defense.gov/2019/Jul/16/2002157611/-1/-1/0/MOTOR TRANSPORT OPERATIONS (11240).DOCX",
+      "filename": "11240_Motor_Transport_Operations.docx",
+      "category": "Non-CoRE",
+      "fa_number": "11240",
+      "sponsor": "I&L (LPC-1)",
+      "effective_date": "3/3/2025",
+      "downloaded_at": "2026-05-08T08:30:40.756738"
+    },
+    "Sword Manual": {
+      "title": "Sword Manual",
+      "url": "https://media.defense.gov/2022/Nov/09/2003111948/-1/-1/0/SWORD MANUAL (5060.20) Final Edits.DOCX",
+      "filename": "5060.20_Sword_Manual.docx",
+      "category": "Non-CoRE",
+      "fa_number": "5060.20",
+      "sponsor": "TECOM",
+      "effective_date": "2/27/2024",
+      "downloaded_at": "2026-05-08T08:30:43.156079"
+    },
+    "Victim and Witness Assistance Program (VWAP)": {
+      "title": "Victim and Witness Assistance Program (VWAP)",
+      "url": "https://media.defense.gov/2021/Dec/21/2002913707/-1/-1/0/VICTIM AND WITNESS ASSISTANCE PROGRAM (VWAP) (5800.16).DOCX",
+      "filename": "5800.16_Victim_and_Witness_Assistance_Program_(VWAP).docx",
+      "category": "CoRE",
+      "fa_number": "5800.16",
+      "sponsor": "JAD",
+      "effective_date": "1/11/2024",
+      "downloaded_at": "2026-05-08T08:30:45.657488"
+    }
+  },
+  "last_check": "2026-05-08T08:30:45.665897"
+}

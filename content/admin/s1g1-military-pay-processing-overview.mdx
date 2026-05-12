@@ -1,0 +1,177 @@
+---
+title: "Military Pay Processing - S-1 Procedural Overview"
+slug: "overview"
+summary: "Process Marine Corps military pay, allowances, deductions, and special payments per DoDFMR Vol 7A Chapters 25-68, DoDFMR Vol 5 disbursing policy, and MCO 7300.21B with cross-reference to civilian pay coordination under DoDFMR Vol 8 and DODI 1400.25."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-11"
+unitType: "s1-g1"
+topic: "military-pay-processing"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0170-PERA-2004"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "DoDFMR Vol 7A"
+billets: ["s-1-officer", "s-1-chief", "ipac-pay-clerk", "disbursing-technician"]
+gradesPerforming: ["Cpl", "Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "DoDFMR Vol 7A Military Pay Policy"
+  - "DoDFMR Vol 7A Chapter 25 (Subsistence and Basic Needs Allowances)"
+  - "DoDFMR Vol 7A Chapter 26 (Housing Allowances - BAH)"
+  - "DoDFMR Vol 7A Chapter 27 (Family Separation Allowance - FSA)"
+  - "DoDFMR Vol 7A Chapter 29 (Clothing Monetary Allowances)"
+  - "DoDFMR Vol 7A Chapter 30 (Officers Uniform and Equipment Allowances)"
+  - "DoDFMR Vol 7A Chapter 31 (Personal Money Allowance)"
+  - "DoDFMR Vol 7A Chapter 32 (Advance, Local, Partial, Emergency Pay)"
+  - "DoDFMR Vol 7A Chapter 33 (Payments on Behalf of Mentally Incompetent Members)"
+  - "DoDFMR Vol 7A Chapter 34 (Pay Entitlement of Members Missing or Missing in Action)"
+  - "DoDFMR Vol 7A Chapter 35 (Separation Payments and Accrued Leave Pay)"
+  - "DoDFMR Vol 7A Chapter 36 (Payments on Behalf of Deceased Members)"
+  - "DoDFMR Vol 7A Chapter 37 (Captives)"
+  - "DoDFMR Vol 7A Chapter 40 (General Provisions Governing Allotments)"
+  - "DoDFMR Vol 7A Chapter 41 (Garnishments and Other Involuntary Allotments)"
+  - "DoDFMR Vol 7A Chapter 42 (Discretionary Allotments)"
+  - "DoDFMR Vol 7A Chapter 43 (Nondiscretionary Allotments)"
+  - "DoDFMR Vol 7A Chapter 44 (Withholding of Income Tax)"
+  - "DoDFMR Vol 7A Chapter 45 (Federal Insurance Contributions Act - FICA)"
+  - "DoDFMR Vol 7A Chapter 46 (Deductions for the Armed Forces Retirement Home - AFRH)"
+  - "DoDFMR Vol 7A Chapter 47 (Servicemembers Group Life Insurance - SGLI)"
+  - "DoDFMR Vol 7A Chapter 48 (Court-Martial Sentences)"
+  - "DoDFMR Vol 7A Chapter 49 (Non-Judicial Punishment)"
+  - "DoDFMR Vol 7A Chapter 50 (Bankruptcy)"
+  - "DoDFMR Vol 7A Chapter 51 (Savings Programs and Flexible Spending Accounts)"
+  - "DoDFMR Vol 7A Chapter 52 (Priority of Pay Deductions and Collections)"
+  - "DoDFMR Vol 7A Chapter 54 (TRICARE Dental Program)"
+  - "DoDFMR Vol 7A Chapter 66 (Continuation Pay)"
+  - "DoDFMR Vol 5 Disbursing Policy (Chapters 1-16)"
+  - "DoDFMR Vol 8 Civilian Pay Policy (cross-reference)"
+  - "MCO 7300.21B Marine Corps Financial Management SOP Manual"
+  - "DODI 1340.26 Assignment and Special Duty Pays"
+  - "DODI 1340.09 Hazard Pay Program"
+  - "DODI 1341.13 SGLI Program"
+  - "DODI 1400.25 DoD Civilian Personnel Management System (cross-reference)"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "MCO 5000.14D Marine Corps Administrative Procedures"
+  - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+performanceSteps:
+  - "Receive the pay action trigger event"
+  - "Identify the controlling DoDFMR Vol 7A chapter"
+  - "Validate eligibility against the chapter rules"
+  - "Build the KSD packet per MCTFSPRIUM"
+  - "Determine the MCTFS pay transaction code"
+  - "Cut the pay transaction in UD-MIPS"
+  - "Verify LES on the next pay cut"
+  - "Audit LES against expected pay state"
+  - "Coordinate with disbursing per DoDFMR Vol 5 and MCO 7300.21B"
+  - "Document the pay action on Page 11 when adverse or substantive"
+relatedRoles:
+  marine: "/marines/military-pay-processing/overview"
+  leader: "/leader/military-pay-processing/overview"
+  commander: "/commander/military-pay-processing/overview"
+source:
+  title: "Military Pay Processing - DoDFMR Vol 7A and MCO 7300.21B"
+  publisher: "Office of the Under Secretary of Defense (Comptroller) and Headquarters Marine Corps"
+---
+
+## Role and responsibility
+
+The IPAC pay clerk and the disbursing technician process Marine Corps military pay transactions per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> chapters governing the pay type. The S-1 chief audits pay transactions against source documents and tracks pay actions through MCTFS. The S-1 officer signs by direction on routine pay routing. The unit commander signs on substantive pay actions including separation pay characterization, court-martial pay forfeitures, NJP forfeiture certifications, and adverse pay actions affecting indebtedness. The disbursing officer operates per DoDFMR Vol 5 (Disbursing Policy) and MCO 7300.21B<Citation source="MCO 7300.21B" /> at the Marine Corps level. The Marine acknowledges pay actions on the LES.
+
+Source documents flow from the qualifying event (assignment order, dependency change, NJP imposition, court-martial sentence, separation order, retirement order, deployment notification, deceased member casualty report, etc.), the controlling DoDFMR Vol 7A chapter, the KSD packet per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> codes, and the prior MCTFS pay history. Pay processing outputs include the executed MCTFS pay transaction, the documented KSD packet, the verified LES, the disbursing coordination record per MCO 7300.21B, the Page 11 entry on adverse or substantive actions per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6, and the audit trail.
+
+Per DoDFMR Vol 7A, the chapter structure covers basic pay, allowances, special pays (covered in the special-hazardous-duty-pay category), allotments, deductions, special-circumstance pays, separation payments, and reserve component pay. Per DoDFMR Vol 5, disbursing policy covers the funds management, audit controls, and reporting supporting pay processing. Per MCO 7300.21B, the Marine Corps financial management SOP operationalizes both volumes at the Marine Corps level. Per DoDFMR Vol 8 and DODI 1400.25, civilian pay coordination supports civilian Marines through the civilian personnel office.
+
+## Sub-pages in this category
+
+- Advance Pay and Emergency Payments. Chapter 32 covering PCS Advance Pay, partial payments, local payments, and emergency payments.
+- Allotments and Payroll Deductions. Chapters 40, 41, 42, 43 and 52 covering general allotments, garnishments and involuntary allotments, discretionary allotments, nondiscretionary allotments, and the priority of pay deductions and collections.
+- Allowances BAH BAS and Uniforms. Chapters 25, 26, 29, 30, and 31 covering Subsistence (BAS), Housing (BAH), Clothing Monetary Allowances, Officers Uniform and Equipment Allowances, and Personal Money Allowance.
+- Casualty Deceased and Incompetent Pay. Chapters 33, 34, 36, and 37 covering pay on behalf of mentally incompetent members, members missing or missing in action, deceased members (death gratuity), and captives.
+- Civilian Pay Coordination. DoDFMR Vol 8 Chapters 1-11 and DODI 1400.25 covering DoD civilian pay administration support at the unit level.
+- Court-Martial NJP and Bankruptcy. Chapters 48, 49, and 50 covering court-martial pay forfeitures, NJP forfeitures, and bankruptcy-related pay deductions.
+- Direct Deposit Administration. Direct deposit setup, EFT routing, and pay distribution per DoDFMR Vol 7A and Vol 5 cross-reference.
+- Tax Withholding and FICA. Chapters 44, 45, and 46 covering federal income tax withholding, FICA, and Armed Forces Retirement Home deductions.
+- TRICARE Dental SGLI and Savings. Chapters 47, 51, 54, and 66 covering SGLI, savings programs and flexible spending accounts, TRICARE Dental Program, and Continuation Pay (CP).
+
+## Trigger events
+
+- Inbound Marine join triggers pay starts.
+- Outbound Marine detach triggers pay stops and final pay closeout.
+- Dependency change triggers BAH and FSA adjustment.
+- NJP imposition triggers Chapter 49 forfeiture processing.
+- Court-martial sentence triggers Chapter 48 forfeiture processing.
+- Separation triggers Chapter 35 separation payments.
+- Casualty triggers Chapter 33, 34, 36, or 37 special-circumstance processing.
+- Advance Pay request triggers Chapter 32 processing.
+- Annual tax withholding cycle.
+- SGLI election change triggers Chapter 47 processing.
+- TRICARE Dental enrollment triggers Chapter 54 deduction.
+- Retention bonus or continuation pay triggers Chapter 66 processing.
+
+## Processing workflow
+
+1. Receive the pay action trigger event. The IPAC pay clerk receives from the chain of command, the Marine, MCTFS gain or detach notifications, the legal advisor (NJP, court-martial), or the casualty assistance officer.
+2. Identify the controlling chapter. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" />, the pay type and the situation drive the chapter selection.
+3. Validate eligibility. Per the chapter rules and any Marine Corps-specific MCO, confirm the Marine qualifies.
+4. Build the KSD packet. Per MCTFSPRIUM<Citation source="MCTFSPRIUM" />, the packet carries the supporting source documents.
+5. Determine the MCTFS pay transaction code. The chapter and the action type drive the code per MCTFSPRIUM.
+6. Cut the pay transaction in UD-MIPS. Per Appendix E, submit the transaction with the KSD attached.
+7. Verify LES. The next LES reflects the action at the correct rate.
+8. Audit LES. The S-1 chief and the Marine audit the LES against the expected state.
+9. Coordinate with disbursing. Per DoDFMR Vol 5 and MCO 7300.21B<Citation source="MCO 7300.21B" />, the disbursing officer processes the disbursing-side actions.
+10. Document on Page 11. Per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6, adverse or substantive pay actions (court-martial forfeiture, NJP forfeiture, indebtedness, separation pay) record on Page 11.
+
+## Systems of record and forms
+
+### Systems
+
+- Marine Corps Total Force System (MCTFS). Master pay record.
+- UD-MIPS. Cuts pay transactions per Appendix E.
+- LES. Pay validation source.
+- DFAS. Disbursing-side pay processing.
+- Disbursing System (CMR / CFMS). Per DoDFMR Vol 5 and MCO 7300.21B.
+- MOL. Surfaces LES and pay data.
+
+### Forms
+
+- KSD Packet. Per MCTFSPRIUM codes.
+- Leave and Earnings Statement (LES). Validates pay state.
+- DD Form 2058 State of Legal Residence Certificate. Per Chapter 44 tax withholding.
+- W-4 / SF-1199A. Federal tax withholding and direct deposit.
+- SGLV 8286 SGLI Election Form. Per Chapter 47.
+- Pay Action Authorization. Various per pay type.
+- NAVMC 118 (11) Administrative Remarks. Page 11 per MCO P1070.12K Chapter 6.
+
+## Common pitfalls
+
+- Pay transaction cut without supporting KSD packet. Per MCTFSPRIUM<Citation source="MCTFSPRIUM" />, every action carries documentation.
+- Wrong chapter applied. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" />, each pay type carries distinct rules.
+- LES not audited against expected state. Routine audit catches pay errors before disbursing audit.
+- Court-martial forfeiture not processed at sentence finality. Per Chapter 48, the sentence triggers the action.
+- NJP forfeiture not applied per imposition. Per Chapter 49 and the UPB record, the forfeiture applies.
+- Separation pay characterization mismatch. Per Chapter 35 and MCO 1900.16 Chapter 1 paragraph 1004, characterization drives separation pay eligibility.
+- Adverse pay action without Page 11 entry. Per MCO P1070.12K Chapter 6, the entry records.
+- Civilian pay action processed at military S-1. Per DoDFMR Vol 8 and DODI 1400.25, civilian pay routes through the civilian personnel office.
+
+## Decision points
+
+- Chapter selection. The pay type and the trigger event drive the chapter.
+- Effective date. The chapter rules and the source document drive the effective date.
+- MCTFS code selection. Per MCTFSPRIUM, the code matches the action type.
+- Priority of deductions cap. Per Chapter 52, the priority order governs when multiple deductions apply against limited pay.
+- Civilian versus military routing. Military pay routes through MCTFS. Civilian pay routes through DFAS civilian pay through the civilian personnel office per DoDFMR Vol 8 and DODI 1400.25.
+
+## Authority
+
+This category sits under DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> with Chapters 25 through 68 covering basic pay, allowances, special pays, allotments, deductions, special-circumstance pays, separation payments, reserve component pay, and continuation pay. DoDFMR Vol 5 sets disbursing policy. MCO 7300.21B<Citation source="MCO 7300.21B" /> sets Marine Corps financial management SOP. DODI 1340.26 covers AIP and SDAP. DODI 1340.09 covers Hazard Pay. DODI 1341.13 covers SGLI. DoDFMR Vol 8 and DODI 1400.25 cover civilian pay (cross-reference). MCTFSPRIUM<Citation source="MCTFSPRIUM" /> covers MCTFS transactions. MCO 5000.14D<Citation source="MCO 5000.14D" /> covers S-1 pay responsibilities. The processing workflow maps to NAVMC 3500.3E T-R event 0170-PERA-2004.
+
+## Related references
+
+- DoDFMR Vol 7A Chapters 25-68. Military Pay Policy framework.
+- DoDFMR Vol 5. Disbursing Policy.
+- MCO 7300.21B. Marine Corps Financial Management SOP.
+- DODI 1340.26 and DODI 1340.09. AIP/SDAP and Hazard Pay.
+- DoDFMR Vol 8 and DODI 1400.25. Civilian pay cross-reference.
+- MCTFSPRIUM. MCTFS transactions.
+- MCO 5000.14D. S-1 pay responsibilities.
+- NAVMC 3500.3E. T-R event 0170-PERA-2004.

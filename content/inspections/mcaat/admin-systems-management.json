@@ -1,0 +1,272 @@
+{
+  "track": "mcaat",
+  "programNumber": "admin",
+  "slug": "systems-management",
+  "section": "Admin",
+  "categoryLabel": "Systems Management",
+  "title": "Systems Management",
+  "summary": "MCAAT Admin checklist - Systems Management. 20 unique items across 3 audiences.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "applicabilityLevel": "IPAC, Reporting Unit, and Supporting Unit",
+  "lastVerified": "2026-05-10",
+  "source": {
+    "title": "MCAAT Admin Checklist - Systems Management",
+    "publisher": "Marine Corps Manpower and Reserve Affairs"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "IPAC",
+      "description": "",
+      "items": [
+        {
+          "code": "19",
+          "question": "Are Certifying Officials for UDMIPS and DTMS and Approvers and Trusted in DMM appointed in writing using a DD Form 577 prior to certifying?",
+          "references": [
+            "DoDFMR, Vol. 5, Chap. 5",
+            "MCO 1001R.1L w/ Ch 1; PAAN 04-21",
+            "MARADMIN 015/20, MAA 1-20 par. 4.b.(11)",
+            "MCTFSPRIUM 2-20104, 2-20115"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "20",
+          "question": "For Certifying Officials for UDMIPS and DTMS, and Approvers and Trusted Agents in DMM, is the DD Form 577 properly completed and filed in OMPF within 10 working days of appointment?",
+          "references": [
+            "DoDFMR, Vol. 5, Chap. 5",
+            "MCO 1001R.1L w/ Ch 1; PAAN 04-21",
+            "MARADMIN 015/20, MAA 1-20 par. 4.b.(11)",
+            "MCTFSPRIUM 2-20104, 2-20115"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Does the unit have and maintain access to the OMPF-Records Management Application (O-RMA) to validate and update Marines official record?",
+          "references": [
+            "MCO 1070.1, MARADMIN 412/23"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "17",
+          "question": "Are the DFRs certified by the certifying officer within 10 calendar days?",
+          "references": [
+            "MCTFSPRIUM, 12-120303.1"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Are COL Training certificates maintained on file for audit, and in accordance with the references?",
+          "references": [
+            "DoDFMR, Vol 1, Ch 9 Figure 9-1 Civilian Pay/Military Pay",
+            "SECNAV M-5210.1",
+            "MCTFSPRIUM 2-20104"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Are UDMIPS and DTMS Certifying Officers and Approvers and Trusted Agents in DMM COL Training (COL Foundations and Military Pay) complete prior to Certifying documents?",
+          "references": [
+            "DoDFMR, Vol 5, Chap 5; PAAN 04-21",
+            "MCTFSPRIUM 2-20104"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "16",
+          "question": "Are rejected transactions contained in the DFR audited and annotated with the appropriate corrective action taken?",
+          "references": [
+            "MCTFSPRIUM, 12-120303.1b(2)"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "18",
+          "question": "Is the reporting unit maintaining unit diary source documents on file for an audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9, Figure 9-1 Civilian Pay/Military Pay",
+            "SECNAV M-5210.1",
+            "MARADMIN 601/24"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02.0",
+      "title": "Reporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "15",
+          "question": "Is the unit ensuring key supporting documents (i.e. letters authorizing to sign by direction, assumption of command, acting, and letters delegating authority) that authorizes individuals to sign and effect Milpay actions, are maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9",
+            "SECNAV M-5210.1",
+            "SECNAV M-5216.5",
+            "MCO 1070.1",
+            "MARADMIN 015/20"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Does the unit have and maintain access to the OMPF-Records Management Application (O-RMA) to validate and update Marines official record?",
+          "references": [
+            "MCO 1070.1, MARADMIN 412/23"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Are COL Training certificates maintained on file for audit, and in accordance with the references?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap 9 Figure 9-1 Civilian Pay/Military Pay",
+            "SECNAV M-5210.1",
+            "MCTFSPRIUM 2-20104"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Are the DFRs certified by the certifying officer within 10 calendar days?",
+          "references": [
+            "MCTFSPRIUM, 12-120303.1"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "01",
+          "question": "Are rejected transactions contained in the DFR audited and annotated with the appropriate corrective action taken?",
+          "references": [
+            "MCTFSPRIUM, 12-120303.1b(2)"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Are UDMIPS and DTMS Certifying Officers and Approvers and Trusted Agents in DMM COL Training (COL Foundations and Military Pay) complete prior to certifying documents?",
+          "references": [
+            "DoDFMR, Vol 5, Chap 5",
+            "MCTFSPRIUM 2-20104, FPM, VOL 4 Ch 2"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "For Certifying Officials for UDMIPS and DTMS and approvers and trusted agents in DMM, is the DD Form 577 properly completed and filed in OMPF within 10 working days of appointment?",
+          "references": [
+            "DoDFMR, Vol. 5, Chap. 5",
+            "MCO 1001R.1L w/ Ch 1; PAAN 04-21",
+            "MARADMIN 015/20, MAA 1-20 par. 4.b.(11)",
+            "MCTFSPRIUM 2-20104, 2-20115"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Are Certifying Officials for UDMIPS and DTMS and Approvers and Trusted in DMM appointed in writing using a DD Form 577 prior to certifying?",
+          "references": [
+            "DoDFMR, Vol. 5, Chap. 5",
+            "MCO 1001R.1L w/ Ch 1; PAAN 04-21",
+            "MARADMIN 015/20, MAA 1-20 par. 4.b.(11)",
+            "MCTFSPRIUM 2-20104, 2-20115"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Is the reporting unit maintaining unit diary source documents on file for an audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9, Figure 9-1 Civilian Pay/Military Pay",
+            "SECNAV M-5210.1",
+            "MARADMIN 601/24"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.0",
+      "title": "Supporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "10",
+          "question": "Is the unit ensuring key supporting documents (i.e. letters authorizing to sign by direction, assumption of command, acting, and letters delegating authority) that authorizes individuals to sign and effect Milpay actions, are maintained on file for audit, and in accordance with retention policies?",
+          "references": [
+            "DoDFMR, Vol. 1, Chap. 9 Figure 9-1 Civilian Pay/Military Pay",
+            "SECNAV M- 5210.1",
+            "SECNAV M-5216.5",
+            "MCO 1070.1",
+            "MARADMIN 015/20"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "14",
+          "question": "Does the unit have and maintain access to the OMPF-Records Management Application (O-RMA) to validate and update Marines official record?",
+          "references": [
+            "MCO 1070.1, MARADMIN 412/23"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "13",
+          "question": "Does the unit have and maintain access to the MCTFS (3270) to validate, research, and facilitate admin actions?",
+          "references": [
+            "MCTFS FoS Access Policy and Procedures"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        }
+      ]
+    }
+  ]
+}

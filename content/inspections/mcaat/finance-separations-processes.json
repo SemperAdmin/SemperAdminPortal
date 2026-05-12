@@ -1,0 +1,298 @@
+{
+  "track": "mcaat",
+  "programNumber": "finance",
+  "slug": "separations-processes",
+  "section": "Finance",
+  "categoryLabel": "Separations Processes",
+  "title": "Separations Processes",
+  "summary": "MCAAT Finance checklist - Separations Processes. 10 unique items across 3 audiences.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "applicabilityLevel": "DO, FO, and Outside Agency",
+  "lastVerified": "2026-05-10",
+  "source": {
+    "title": "MCAAT Finance Checklist - Separations Processes",
+    "publisher": "Marine Corps Manpower and Reserve Affairs"
+  },
+  "subsections": [
+    {
+      "id": "04.0",
+      "title": "DO",
+      "description": "",
+      "items": [
+        {
+          "code": "02",
+          "question": "Are the Monthly DSSN Audit Reports (MDARS) processed in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1 Ch. 3"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Are Out of Balance (OOB) reports/documents processed in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1 Ch. 9 & 21"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Are Out of Service Debts processed accurately and in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1 Ch. 9 & 21"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Are Out of Service Debts processed within the required time frame?",
+          "references": [
+            "FPM Vol. 1 Ch. 9 & 21"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Are NAVMC 11060 processed accurately in accordance with the references?",
+          "references": [
+            "FPM Vol. 1 Ch. 5, 6, 7, 9, 11, 12, & 17, DODFMR Vol 7a"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Are NAVMC 11060 processed within the required time frame?",
+          "references": [
+            "FPM Vol. 1 Ch. 2 & 9"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "05.0",
+      "title": "FO",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Has the FO established effective control measures to ensure MCCS returns unused prepaid services in a timely manner in order to prevent out of balance accounts in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1 Ch. 9"
+          ],
+          "audience": [
+            "FO"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Are the Monthly DSSN Audit Reports (MDARS) processed in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1 Ch. 3"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Are Out of Balance (OOB) reports/documents processed in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1 Ch. 9 & 21"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Are Out of Service Debts processed accurately and in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1 Ch. 9 & 21"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Are Out of Service Debts processed within the required time frame?",
+          "references": [
+            "FPM Vol. 1 Ch. 9 & 21"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Are NAVMC 11060 processed accurately in accordance with the references?",
+          "references": [
+            "FPM Vol. 1 Ch. 5, 6, 7, 9, 11, 12, & 17, DODFMR Vol 7a"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Are NAVMC 11060 processed within the required time frame?",
+          "references": [
+            "FPM Vol. 1 Ch. 2 & 9"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "06.0",
+      "title": "Outside Agency",
+      "description": "",
+      "items": [
+        {
+          "code": "02",
+          "question": "Are the Monthly DSSN Audit Reports (MDARS) processed in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1 Ch. 3"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Are Out of Balance (OOB) reports/documents processed in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1 Ch. 9 & 21"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Are Out of Service Debts processed accurately and in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1 Ch. 9 & 21"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Are Out of Service Debts processed within the required time frame?",
+          "references": [
+            "FPM Vol. 1 Ch. 9 & 21"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Are Restorations processed accurately and in accordance with the references?",
+          "references": [
+            "DODFMR Volume 7a Ch. 1 & 48"
+          ],
+          "audience": [
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Are the Reserve Positive Carried Forward amounts from the IMR's being processed accurately and in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1 Ch. 21"
+          ],
+          "audience": [
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Is the Reserve Positive Carried Forward IMR being completed within the required time frame and in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1 Ch. 21"
+          ],
+          "audience": [
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Are NAVMC 11060 processed accurately in accordance with the references?",
+          "references": [
+            "FPM Vol. 1 Ch. 5, 6, 7, 9, 11, 12, & 17, DODFMR Vol 7a"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Are NAVMC 11060 processed within the required time frame?",
+          "references": [
+            "FPM Vol. 1 Ch. 2 & 9"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        }
+      ]
+    }
+  ]
+}

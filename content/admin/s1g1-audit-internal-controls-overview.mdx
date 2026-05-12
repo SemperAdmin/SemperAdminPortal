@@ -1,0 +1,124 @@
+---
+title: "Audit and Internal Controls - S-1 Procedural Page"
+slug: "overview"
+summary: "Run member-to-member audits, EDFR reviews, monthly pay audits, and internal control reviews on every S-1 personnel and pay record."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-10"
+unitType: "s1-g1"
+topic: "audit-internal-controls"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0111-PERA-2002"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 5000.14D"
+billets: ["s-1-clerk", "s-1-chief", "g-1-officer", "ipac-clerk"]
+gradesPerforming: ["Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 5000.14D Marine Corps Administrative Procedures"
+  - "DODFMR Vol 7A DoD Military Pay Policy"
+  - "MCO P1070.12K Individual Records Administration Manual"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "DODFMR Vol 7A Military Pay Policy"
+  - "DODI 5010.40 Managers Internal Control Program"
+  - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+performanceSteps:
+  - "Schedule the monthly member-to-member audit"
+  - "Pull the unit roster from MCTFS"
+  - "Cross-check ESR against MCTFS for each Marine"
+  - "Review EDFR daily and clear rejections within 5 working days"
+  - "Audit dependency state in DEERS against MCTFS"
+  - "Audit special pay entitlements against KSDs"
+  - "Sign the audit roster on completion"
+  - "Process discrepancies through corrective UD-MIPS transactions"
+  - "Document audit results in the unit audit log"
+  - "Brief the commander on audit findings"
+  - "File the certified audit set in the OMPF Field Folder"
+  - "Stage the audit history for the next MCAAT visit"
+relatedRoles:
+  marine: "/marines/audit-internal-controls/overview"
+  leader: "/leader/audit-internal-controls/overview"
+  commander: "/commander/audit-internal-controls/overview"
+source:
+  title: "Audit and Internal Controls - MCAAT Admin Track"
+  publisher: "Marine Corps Audit Advisory Team"
+---
+
+## Role and responsibility
+
+S-1 admin specialists own personnel and pay audit at the unit level. The S-1 chief, an 0111 SSgt or higher, runs the monthly member-to-member audit and signs the certified roster. The S-1 officer, an 0102, briefs the commander on audit findings and routes corrective transactions for certification. The IPAC audit clerk runs parallel audit cycles for installation-tied accounts.
+
+Source documents flow from MCTFS pulls, ESR reviews, EDFR rejection lists, DEERS dependency reports, and special pay KSD packets. Audit transactions land in UD-MIPS as corrective entries with the audit finding as the KSD. Outputs include the signed audit roster, the EDFR clearance log, the corrective transaction record, and the commander's audit brief.
+
+MCAAT inspects audit cadence, signature trails, EDFR clearance times, and member-to-member audit completeness. A unit without a signed monthly audit triggers an immediate finding under MCO 5000.14D<Citation source="MCO 5000.14D" />. Run the audit on the calendar, not on the inspection notice.
+
+## Trigger events
+
+- Monthly member-to-member audit cycle opens.
+- EDFR rejection list runs daily.
+- Inbound or outbound transaction completes (audit closes the join or detach).
+- Pay change posts (LES audit on next cut).
+- Promotion warrant cuts (audit grade-pay alignment).
+- Dependency change in DEERS (audit BAH and BAS code).
+- MCAAT or higher inspection notice arrives.
+
+## Processing workflow
+
+1. Schedule the monthly audit. Set a fixed calendar day each month. Notify the chain so unit Marines stage their record copies. The S-1 chief schedules.
+2. Pull the unit roster from MCTFS. Generate the current strength roster with EDIPI, BIC, MOS, grade, dependency, BAH, and BAS state. The S-1 clerk pulls.
+3. Cross-check ESR against MCTFS. For each Marine, compare ESR fields against the MCTFS pull. Flag any divergence. The S-1 clerk runs the cross-check.
+4. Run member-to-member audit. Pair clerks across the section and audit each other's records to remove single-clerk bias per MCO 5000.14D<Citation source="MCO 5000.14D" />. The S-1 chief signs the audit roster.
+5. Review EDFR daily. Pull the EDFR rejection list each working day. Reconcile rejections to source documents and resubmit corrections within 5 working days per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> EDFR procedures.
+6. Audit dependency state. Cross-check DEERS against MCTFS dependency code. Submit RAPIDS or NAVMC 10922 corrections for any divergence per DODFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 26 Housing Allowances.
+7. Audit special pay entitlements. For each Marine drawing special pay, verify the qualification certificate is current and the KSD lives in UD-MIPS. Stop pay on lapsed qualifications.
+8. Process discrepancies. Cut UD-MIPS corrective transactions for any divergence found. Route through certification with the audit finding as the KSD.
+9. Document audit results. Record findings, corrective transactions, and Marines audited in the unit audit log. The S-1 chief signs.
+10. Brief the commander. Present audit results to the commander on a fixed cycle. Cover findings, corrective actions, and trends per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 3.
+11. File the certified audit set. Place audit roster, EDFR log, and corrective transaction list in the OMPF Field Folder under the audit tab per MCO P1070.12K<Citation source="MCO P1070.12K" />.
+12. Stage the audit history. Maintain rolling 12-month audit history for MCAAT inspection. Pull the history at any inspection notice.
+
+## Systems of record and forms
+
+### Systems
+
+- MCTFS. Master record audited against ESR, DEERS, and pay state.
+- MOL. Surfaces LES, ESR, and self-service to the Marine for personal review.
+- UD-MIPS. Cuts and certifies corrective transactions with audit KSDs.
+- EDFR feed. Daily rejection list driving corrective action.
+- DEERS. Dependency state cross-checked against MCTFS dependency code.
+- OMPF Field Folder. Holds the certified audit set under the audit tab.
+
+### Forms
+
+- NAVMC 118 (11) Administrative Remarks. Page 11 documenting audit findings affecting the Marine.
+- Member-to-Member Audit Roster. Local form documenting the audit pairing and findings.
+- EDFR Rejection Log. Daily log of EDFR rejections and resolutions.
+- Internal Control Annual Statement. Required under DODI 5010.40<Citation source="DODI 5010.40" />.
+
+## Common pitfalls
+
+- Audit signed without execution. The S-1 chief signs the roster without pairing clerks. MCAAT writes a finding for failed internal control. Pair clerks and document the pairing.
+- EDFR rejections sit past 5 working days. The corrective transaction window closes. The pay error compounds. Pull EDFR daily and clear within 5 working days per MCTFSPRIUM<Citation source="MCTFSPRIUM" />.
+- Special pay audit skipped. Lapsed qualifications continue to draw pay. The unit owes a refund. Audit special pay each month against the qualification certificate.
+- Dependency audit skipped. DEERS lags MCTFS or vice versa. BAH-with-dependents and BAS misalign. Cross-check each cycle per DODFMR Vol 7A<Citation source="DODFMR Vol 7A" />.
+- Audit history not staged for inspection. MCAAT arrives and the unit reconstructs the history under pressure. Maintain rolling 12-month history and pull on notice.
+
+## Decision points
+
+- Audit pairing rotation. The same two clerks audit each other's records every month. Bias creeps in. The S-1 chief rotates pairings each cycle to preserve independence.
+- Discrepancy escalation. The audit reveals a systemic error across multiple Marines. The S-1 officer escalates to the commander and to the IPAC chief per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 3.
+- Pay stop on lapsed qualification. The Marine drew flight pay past the qualification expiration. The S-1 chief stops the pay and refers the overpayment to remission per DODFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 50.
+
+## Authority
+
+This category sits under MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 3, Commanders' Responsibilities for Personnel Administration, and enclosure 4, Responsibilities of G-1s, S-1s, and Administrative Officers. DoD-level internal control policy at DODI 5010.40<Citation source="DODI 5010.40" /> requires an annual statement of assurance. The processing workflow maps to NAVMC 3500.3E T-R events 0111-PERA-2002 Review administrative audit processes and 0111-PERA-2007 Review Electronic Diary Feedback Report (EDFR). The MCAAT admin track admin-audit is the audit reference for this functional area.
+
+## Related references
+
+- MCO 5000.14D Marine Corps Administrative Procedures. Defines S-1 audit responsibilities and command-level audit duty.
+- DODFMR Vol 7A. Authoritative DoD pay rules by chapter audited each cycle.
+- MCO P1070.12K Individual Records Administration Manual. OMPF Field Folder audit tab content.
+- MCTFSPRIUM. EDFR procedures and corrective transaction formats.
+- DODFMR Vol 7A. Pay debt resolution at Chapter 50.
+- DODI 5010.40 Managers Internal Control Program. DoD-level internal control framework.
+- NAVMC 3500.3E Manpower and Administration T-R Manual. Event codes 0111-PERA-2002 and 0111-PERA-2007 governing audit processes.

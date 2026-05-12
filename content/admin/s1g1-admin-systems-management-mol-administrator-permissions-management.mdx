@@ -1,0 +1,113 @@
+---
+title: "MOL Administrator Permissions Management - S-1 Procedural Page"
+slug: "mol-administrator-permissions-management"
+summary: "Acquire MOL administrator permissions, assign module-level access per command guidance, and remove permissions at detach or role change."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-10"
+unitType: "s1-g1"
+topic: "admin-systems-management"
+function: "GENA"
+skillLevel: 2000
+trEventCode: "0102-GENA-1015"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "NAVMC 3500.3E"
+billets: ["s-1-officer", "s-1-chief", "g-1-officer", "ipac-clerk"]
+gradesPerforming: ["Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+  - "MCO 5000.14D Marine Corps Administrative Procedures"
+  - "MCO 5239.2C Marine Corps Cybersecurity Program"
+  - "MCO P1070.12K Individual Records Administration Manual"
+  - "MOL Users Manual"
+performanceSteps:
+  - "Publish command guidance on MOL access scope"
+  - "Acquire MOL administrator permissions through MISSO"
+  - "Identify required users by billet and module"
+  - "Assign module-level permissions"
+  - "Validate access in each assigned module"
+  - "Train users on assigned modules"
+  - "Document permission assignments in a Page 11 entry"
+  - "Audit permissions monthly against the billet roster"
+  - "Remove permissions on detach or role change"
+  - "Reconcile the permission roster against the billet roster"
+relatedRoles:
+  marine: "/marines/admin-systems-management/mol-administrator-permissions-management"
+  leader: "/leader/admin-systems-management/mol-administrator-permissions-management"
+  commander: "/commander/admin-systems-management/mol-administrator-permissions-management"
+source:
+  title: "MOL Administrator Permissions Management - NAVMC 3500.3E T-R Event 0102-GENA-1015"
+  publisher: "Headquarters Marine Corps M&RA"
+---
+
+## Role and responsibility
+
+The S-1 officer (0102) owns command guidance on MOL access scope. The S-1 chief (0111 SSgt or higher) holds MOL administrator permissions and assigns module-level access to clerks. The S-1 clerk operates within the assigned module set. The unit security manager audits MOL permissions during the quarterly account review.
+
+Source documents flow from command guidance memos, billet assignments, and SAAR-N submissions tied to MOL access. MOL administrator actions live inside the MOL administrator interface. Outputs include the permission roster, the Page 11 entries documenting access, and the OMPF Field Folder systems tab entry per Marine.
+
+MCAAT inspects the permission roster against the billet roster, the command guidance memo, and the monthly audit signature. Blanket permissions, stale permissions on departed Marines, and permissions assigned without command guidance trigger findings under MCO 5239.2C<Citation source="MCO 5239.2C" />.
+
+## Trigger events
+
+- New command guidance published changing MOL access scope.
+- Inbound clerk needs MOL access for assigned billet.
+- Billet change moves a clerk to a new module set.
+- New MOL module released requiring permission assignment.
+- Departing clerk needs permission removal at detach.
+- Quarterly review identifies stale permissions.
+- Misconduct event requires permission suspension.
+
+## Processing workflow
+
+1. Publish command guidance. The S-1 officer issues a command memo defining MOL access scope by billet, module, and grade per NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 performance step 1.
+2. Acquire MOL administrator permissions. The S-1 chief submits a SAAR-N for administrator access through MISSO per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
+3. Identify required users. Cross-check the billet roster against the command guidance to identify which users need which modules.
+4. Assign module-level permissions. Use the MOL administrator interface to assign permissions per user per module. Cover CLA, DTMS, MROWS, promotions, pro and con marks, APES, OMPF, personnel information, UMSR, BIC assignment, leave management, and permissions per the T-R event misc note.
+5. Validate access. Confirm the user navigates each assigned module per NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 performance step 4.
+6. Train users on assigned modules. Run module-specific training before the user submits live transactions. The S-1 chief trains.
+7. Document permission assignments. Cut a Page 11 entry recording each user's MOL access per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6.
+8. Audit permissions monthly. Pull the permission roster and reconcile against the billet roster. Flag stale or over-permissioned accounts.
+9. Remove permissions on detach. Remove all module-level permissions at certified detach per NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 performance step 5.
+10. Reconcile against the billet roster. Update the permission roster after every change. Reconcile at the next quarterly review.
+
+## Systems of record and forms
+
+### Systems
+
+- MOL Administrator Interface. Source of truth for assigned permissions per user per module.
+- MOL Modules. CLA, DTMS, MROWS, promotions, pro and con marks, APES, OMPF, personnel information, UMSR, BIC assignment, leave management, and permissions.
+- MISSO portal. Routes the administrator SAAR-N.
+
+### Forms
+
+- DD Form 2875 SAAR-N. Submission for administrator permissions.
+- Command Guidance Memo. Defines access scope.
+- MOL Permission Roster. Local register of assigned permissions.
+- NAVMC 118 (11) Administrative Remarks. Page 11 documenting MOL access.
+
+## Common pitfalls
+
+- Blanket permissions assigned. Every clerk gets every module. The principle of least privilege fails. Assign per command guidance, not by default per MCO 5239.2C<Citation source="MCO 5239.2C" />.
+- Permissions not removed at detach. The departing clerk retains MOL access. Refer to the Account Closure at Detach workflow within 24 hours per NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> performance step 5.
+- Command guidance memo not published. Permissions assigned without authority. Publish the memo before assigning per NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> performance step 1.
+- New module released, permissions not refreshed. Users miss access to new functionality. Refresh permissions on each MOL release per the MOL Users Manual<Citation source="MOL Users Manual" />.
+- Permission roster diverges from MOL administrator interface. The local roster is wrong. Pull the roster from the administrator interface, not the local copy.
+
+## Decision points
+
+- Module assignment by billet versus by individual. The command guidance assigns by billet. Individual exceptions route through the S-1 officer for written waiver per MCO 5239.2C<Citation source="MCO 5239.2C" />.
+- Permission suspension on misconduct. The clerk is under investigation affecting record integrity. The S-1 officer suspends MOL access pending resolution per MCO P1070.12K<Citation source="MCO P1070.12K" />.
+- Cross-unit permissions for IPAC support. The IPAC clerk needs MOL access to multiple unit RUCs. The S-1 chief coordinates with the IPAC and MISSO on the cross-unit permission scope.
+
+## Authority
+
+This sub-page sits under NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 Manage Marine Online (MOL) modules, which defines all five performance steps. MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6 establishes MISSO support for MOL administrator access. MCO 5239.2C<Citation source="MCO 5239.2C" /> Marine Corps Cybersecurity Program sets least-privilege and need-to-know rules. The MOL Users Manual<Citation source="MOL Users Manual" /> documents module functionality and release notes.
+
+## Related references
+
+- NAVMC 3500.3E Manpower and Administration T-R Manual. Event 0102-GENA-1015 governs MOL administrator permissions.
+- MCO 5000.14D Marine Corps Administrative Procedures. MISSO support for MOL administrator SAAR-N.
+- MCO 5239.2C Marine Corps Cybersecurity Program. Least-privilege framework.
+- MCO P1070.12K Individual Records Administration Manual. Page 11 entries documenting MOL access.
+- MOL Users Manual. Module functionality and release notes.

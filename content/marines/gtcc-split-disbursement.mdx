@@ -1,0 +1,266 @@
+---
+title: "GTCC Split Disbursement"
+slug: "gtcc-split-disbursement"
+summary: "Plain-language walkthrough of split disbursement. Mandatory DoD-wide for all GTCC cardholders. Pays the GTCC bill directly from the travel reimbursement before any remaining funds disburse to the cardholder's personal bank account. Configured in DTS during voucher submission. The cardholder verifies the split disbursement amount fully covers the GTCC charges. Manual adjustment is required if the split amount is short. Per DoDI 5154.31 Vol 4, MCO 4600.40C, and DTS standard configuration."
+roles: ["marine", "leader", "commander", "admin"]
+lastVerified: "2026-05-04"
+topic: "gtcc-split-disbursement"
+sourcePolicy: "DoDI 5154.31"
+sourceChapter: "Volume 4"
+sourceSection: "Mandatory Split Disbursement"
+references:
+  - "DoDI 5154.31 Volume 4 (DoD Government Travel Charge Card Regulation)"
+  - "MCO 4600.40C (Marine Corps Government Travel Charge Card Program)"
+  - "MARADMIN 478/24 (Issuance of GTCC to Entry Level Marines for OCONUS Travel) - 9 October 2024"
+  - "DTS Voucher and Split Disbursement Reference Library"
+relatedRoles:
+  admin: "/admin/s1-g1/tad"
+  leader: "/leader/coaching-and-counseling/coaching-marines-on-tad"
+  commander: "/commander/tad-decisions"
+source:
+  title: "DTMO Split Disbursement Reference"
+  publisher: "Department of Defense, Defense Travel Management Office (DTMO)"
+  url: "https://www.travel.dod.mil/Programs/Government-Travel-Charge-Card/"
+---
+
+## Start Here If You Are New to Split Disbursement
+
+Split disbursement automatically pays your GTCC bill directly from your travel reimbursement before any remaining funds reach your personal bank account. Mandatory DoD-wide for all GTCC cardholders. When you submit your voucher in DTS, the system calculates a split disbursement amount based on your GTCC charges and sends that amount to Citi. The remainder goes to your personal bank account. If the calculated split disbursement is short of your actual GTCC bill (for example, charges posted after your voucher submission), you manually adjust the amount in DTS or submit a separate payment to Citi. Per DoDI 5154.31<Citation source="DoDI 5154.31" /> Vol 4, MCO 4600.40C<Citation source="MCO 4600.40C" />, and DTS configuration.
+
+This page walks you through split disbursement from your seat as a General Marine. By the end you will know.
+
+- Split disbursement is mandatory DoD-wide
+- How DTS calculates the split amount
+- How to verify and adjust the amount before voucher submission
+- What to do if the amount is short of the GTCC bill
+- The flow of funds from DFAS to Citi to your bank
+- The relationship between split disbursement and on-time GTCC payment
+- The MARADMIN 478/24<Citation source="MARADMIN 478/24" /> split disbursement requirement for ELT cardholders
+
+Every fact on this page comes from DoDI 5154.31<Citation source="DoDI 5154.31" /> Vol 4, MCO 4600.40C<Citation source="MCO 4600.40C" />, MARADMIN 478/24<Citation source="MARADMIN 478/24" />, and the DTS Voucher and Split Disbursement Reference Library.
+
+## What Split Disbursement Is
+
+Split disbursement is the DoD-mandated mechanism for paying the GTCC bill directly from the travel reimbursement.
+
+### The Problem It Solves
+
+Without split disbursement, the entire travel reimbursement deposits into the cardholder's personal bank account. The cardholder is responsible for transferring the GTCC charges to Citi separately. Late or missed transfers result in delinquency, suspension, and potential UCMJ action.
+
+### The Solution
+
+DFAS splits the reimbursement at the source. The GTCC portion goes directly to Citi. The remainder (covering personal expenses like meals or POV gas paid in cash) goes to the cardholder's bank.
+
+### DoD-Wide Mandate
+
+Per DoDI 5154.31<Citation source="DoDI 5154.31" /> Vol 4 and MCO 4600.40C<Citation source="MCO 4600.40C" />, split disbursement is mandatory for ALL DoD personnel using a GTCC. This is not optional.
+
+### MARADMIN 478/24 Reinforcement
+
+Per MARADMIN 478/24<Citation source="MARADMIN 478/24" /> paragraph 3.E.2, ELT cardholders are explicitly directed that split disbursement of amounts charged to the GTCC is required and should be annotated on any documentation submitted for reimbursement.
+
+## How DTS Calculates the Split
+
+When you create the travel voucher in DTS, the system.
+
+1. Pulls the GTCC transactions from the Citi system that match the trip date range.
+2. Categorizes each transaction (lodging, transportation, meals, etc.).
+3. Calculates the total GTCC charges associated with the trip.
+4. Sets the default split disbursement amount equal to the total GTCC charges.
+5. Routes the remainder of the reimbursement to your personal bank account.
+
+### Where Split Disbursement Appears in DTS
+
+In the voucher, navigate to.
+
+- "Payment Totals" or "Reimbursable Allowances" section.
+- Find the line item showing the split between GTCC and EFT (electronic funds transfer to personal bank).
+
+### Default vs Manual
+
+DTS pre-populates the split based on the linked GTCC transactions. The cardholder reviews and confirms or manually adjusts.
+
+## Verifying the Split Disbursement Amount
+
+Before submitting the voucher, verify the split disbursement covers your full GTCC bill.
+
+### Step 1. Pull Your CitiManager Statement
+
+Log in to CitiManager. Identify the total balance for the trip period.
+
+### Step 2. Compare to DTS Split
+
+In DTS, view the Payment Totals section. Compare the split disbursement amount to the CitiManager balance.
+
+### Step 3. Manually Adjust if Short
+
+If the DTS split disbursement is LESS than your CitiManager balance.
+
+- Charges may have posted after the voucher was created (not yet linked).
+- Older charges from a prior trip may still be unpaid.
+- Adjustments may be needed for partial-month billing cycles.
+
+Manually increase the split disbursement amount in DTS to cover the full balance.
+
+### Step 4. Submit With Confidence
+
+After adjustment, submit the voucher. The AO routes the voucher for approval. DFAS processes the split disbursement and the remainder.
+
+## Funds Flow
+
+The funds flow as follows.
+
+1. Marine submits voucher in DTS.
+2. AO approves voucher.
+3. DTS routes voucher to DFAS for processing.
+4. DFAS issues the disbursement (typically 3-5 business days).
+5. DFAS sends the split disbursement amount directly to Citi.
+6. DFAS sends the remainder to the Marine's personal bank account via EFT.
+7. Citi posts the split disbursement payment to the GTCC account.
+8. Marine verifies the payment posted in CitiManager.
+
+### Posting Timeline
+
+- DFAS to Citi. 1-2 business days.
+- Citi posting to account. 1-2 business days after receipt.
+
+Total time from voucher approval to GTCC payment posting is approximately 5-9 business days.
+
+## What Happens if Split Disbursement Is Short
+
+If the split disbursement does not fully pay the GTCC bill.
+
+### Reason 1. Charges Posted After Voucher Submission
+
+Late-posting charges (e.g., a hotel folio that finalized after the trip end) are not included in the DTS calculation. The Marine pays the shortfall manually through CitiManager or by check.
+
+### Reason 2. Voucher Rejected or Reduced
+
+If the AO reduces the reimbursement amount (e.g., disallows a non-allowable expense), the split disbursement is reduced proportionally. The Marine pays the difference manually.
+
+### Reason 3. Multiple Trips With Overlapping Charges
+
+When multiple trips overlap, the system may not split charges optimally. The Marine reviews and consolidates payments.
+
+### How to Pay the Shortfall
+
+- Through CitiManager online payment from a linked bank account.
+- By mail to the Citi standard or overnight payment address with the remittance slip and account number on the check.
+
+The Manage Your GTCC Account leaf covers payment methods.
+
+## What Happens if Split Disbursement Exceeds the GTCC Bill
+
+If the split disbursement amount is HIGHER than the actual GTCC bill (rare).
+
+### Credit Balance
+
+Citi credits the difference to the GTCC account as a credit balance.
+
+### Refund or Apply
+
+The Marine can.
+
+- Leave the credit on the account to apply to future charges.
+- Request a refund check from Citi.
+
+Credit balances on a GTCC are uncommon and typically self-resolve within a billing cycle or two.
+
+## Annotating Split Disbursement on Reimbursement Documents
+
+Per MARADMIN 478/24<Citation source="MARADMIN 478/24" /> paragraph 3.E.2, ELT cardholders annotate split disbursement on any documentation submitted for reimbursement. The annotation.
+
+- Confirms the cardholder understands and is using split disbursement.
+- Provides a reference for the AO and DFAS during voucher review.
+- Supports audit trails for misuse investigations.
+
+For non-ELT Marines, the DTS system already records the split. No separate annotation is required unless the unit's local procedures direct otherwise.
+
+## Split Disbursement and On-Time GTCC Payment
+
+Split disbursement is the primary on-time payment mechanism for most cardholders. The framework.
+
+- Reduces the risk of missed payment due to oversight.
+- Removes the cash-flow gap between voucher reimbursement and GTCC bill payment.
+- Supports the 60-day delinquency suspension threshold by automating payment.
+
+### Cardholders Who Do Not Submit Timely Vouchers
+
+Marines who delay voucher submission risk delinquency on the GTCC bill before the split disbursement processes. The Travel Vouchers and Reimbursement page covers the 5-working-day voucher submission rule.
+
+### Cardholders With Recurring TDY
+
+Marines with rapidly cycling TDY may have GTCC charges from one trip posting after the voucher for that trip is approved. Manually adjust split disbursement on subsequent vouchers to capture lagging charges.
+
+## Verifying Split Disbursement After Voucher Approval
+
+After the voucher is approved.
+
+1. Wait 3-5 business days for DFAS to process.
+2. Log in to CitiManager.
+3. Verify the split disbursement payment posted (look for a payment matching the DTS amount).
+4. Check the LES on MyPay to confirm the EFT remainder posted to your personal bank account.
+5. Reconcile the total reimbursement (split + EFT) against the DTS-approved amount.
+
+If the split disbursement did not post within 9 business days, contact Citi customer service or DFAS Marine Corps Pay.
+
+## Common Questions Marines Ask
+
+Is split disbursement optional?
+
+No. Split disbursement is mandatory DoD-wide per DoDI 5154.31<Citation source="DoDI 5154.31" /> Vol 4 and MCO 4600.40C<Citation source="MCO 4600.40C" />. ELT cardholders have the requirement explicitly reinforced in MARADMIN 478/24<Citation source="MARADMIN 478/24" />.
+
+How does DTS calculate the split disbursement amount?
+
+DTS pulls GTCC transactions from Citi for the trip date range, sums them, and sets the split equal to the total. The cardholder verifies and manually adjusts if needed.
+
+What if my split disbursement does not cover my full GTCC bill?
+
+Pay the shortfall through CitiManager online payment or by mail to the Citi standard or overnight payment address. Always include the remittance slip and account number on the check.
+
+How long does it take for split disbursement to post?
+
+Approximately 5-9 business days from voucher approval. DFAS processes in 3-5 days. Citi posts within 1-2 days after receipt.
+
+What happens if my split disbursement is more than my GTCC bill?
+
+Citi credits the excess to your GTCC account as a credit balance. You can leave it on the account or request a refund.
+
+Where do I find the split disbursement amount in DTS?
+
+In the voucher, navigate to Payment Totals or Reimbursable Allowances. The split between GTCC and EFT displays.
+
+Can I turn off split disbursement?
+
+No. Split disbursement is mandatory. Disabling or circumventing it is grounds for misuse documentation.
+
+What if I forgot to adjust the split and the bill went unpaid?
+
+Pay the shortfall immediately through CitiManager. Late payment may already be reflected in the account. Contact your APC to flag the situation and avoid 60-day suspension thresholds.
+
+## Where to Go for Help
+
+### Routing by Issue
+
+- DTS split disbursement configuration. Through the unit Defense Travel Administrator (DTA) or via DTMO guides.
+- Verifying GTCC payment posting. CitiManager at https://home.cards.citidirect.com/.
+- Manual payment of shortfalls. CitiManager online payment or mail to the standard or overnight Citi address.
+- Voucher reduction by AO. Through the AO and the unit Comptroller.
+- DFAS processing delays. Phone DFAS Marine Corps Pay at 1-888-332-7411 (DSN 312-571-9450 from overseas).
+- Citi customer service. Phone 1-800-200-7056 (CONUS) or 1-757-852-9076 (OCONUS toll-free).
+
+## Where to Go Next on This Site
+
+- GTCC landing page lists all GTCC topics.
+- Manage Your GTCC Account covers CitiManager and payment methods.
+- Travel Vouchers and Reimbursement covers DTS voucher submission timing.
+- GTCC Misuse, Suspension, and Cancellation covers the consequences of unpaid balances.
+- Defense Travel System covers the DTS authorization and voucher framework.
+
+## Related Roles
+
+- Leaders coach Marines to verify split disbursement before voucher submission.
+- Admin at S-1 supports cardholders troubleshooting split disbursement issues with the DTA.
+- Commanders enforce the split disbursement mandate as part of routine GTCC oversight.
+
+Split disbursement is mandatory DoD-wide. Pays the GTCC bill directly from the travel reimbursement. Configured automatically in DTS based on linked GTCC charges. Cardholder verifies and manually adjusts before submission. DFAS routes the split to Citi (typically 5-9 business days from voucher approval). Shortfalls paid manually through CitiManager or by mail. Per DoDI 5154.31<Citation source="DoDI 5154.31" /> Vol 4, MCO 4600.40C<Citation source="MCO 4600.40C" />, and MARADMIN 478/24<Citation source="MARADMIN 478/24" />.

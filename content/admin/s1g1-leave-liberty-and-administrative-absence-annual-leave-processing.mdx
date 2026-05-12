@@ -1,0 +1,115 @@
+---
+title: "Annual Leave Processing - S-1 Procedural Page"
+slug: "annual-leave-processing"
+summary: "Process annual leave through MOL self-service, validate accrued balance, route through chain for approval, and reconcile against the standard 60-day ceiling."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-10"
+unitType: "s1-g1"
+topic: "leave-liberty-and-administrative-absence"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0111-GENA-2013"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 1050.3J"
+billets: ["s-1-clerk", "s-1-chief", "g-1-officer", "ipac-clerk"]
+gradesPerforming: ["LCpl", "Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 1050.3J Marine Corps Leave and Liberty Manual Chapter 2"
+  - "MCO 5000.14D Marine Corps Administrative Procedures"
+  - "MCO P1070.12K Individual Records Administration Manual"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+performanceSteps:
+  - "Receive the annual leave request through MOL"
+  - "Validate accrued leave balance against requested duration"
+  - "Confirm advance leave eligibility when requested"
+  - "Route through chain for leave approval"
+  - "Process leave check-out per MCO 1050.3J Chapter 4"
+  - "Cut MOL leave order with start and projected end dates"
+  - "Track leave usage against MCTFS balance"
+  - "Process leave check-in on return"
+  - "Reconcile leave balance against LES on next pay cut"
+  - "Document any leave anomaly through corrective transaction"
+relatedRoles:
+  marine: "/marines/leave-liberty-and-administrative-absence/annual-leave-processing"
+  leader: "/leader/leave-liberty-and-administrative-absence/annual-leave-processing"
+  commander: "/commander/leave-liberty-and-administrative-absence/annual-leave-processing"
+source:
+  title: "Annual Leave Processing - MCO 1050.3J Chapter 2 Sections 1-7"
+  publisher: "Headquarters Marine Corps M&RA"
+---
+
+## Role and responsibility
+
+S-1 admin specialists own annual leave processing at the unit level. The S-1 clerk pulls MOL leave requests, validates against MCTFS, and routes through chain. The S-1 chief supervises and audits leave balances on a fixed cycle. The S-1 officer signs by direction on leave orders when delegated by the commander.
+
+Source documents flow from the Marine's MOL leave request, the MCTFS accrued leave balance, the chain of command approval, and the leave check-out and check-in record. Leave transactions land in MOL and MCTFS through UD-MIPS. Outputs include the leave order, the MCTFS leave transaction, the chargeable leave count, and the OMPF Field Folder leave tab entry.
+
+Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 1, commanders shall ensure an aggressive leave program is in place. The standard accrual ceiling is 60 days at end of fiscal year per Marine Corps and DoD policy. Per paragraph 2.c, the temporary higher ceiling cited in some sections applies during specific circumstances.
+
+## Trigger events
+
+- Marine submits annual leave request through MOL.
+- Marine requests advance leave per paragraph 6 (Advance Leave).
+- Marine requests excess leave per paragraph 7 (Excess Leave).
+- Marine returns from leave requiring check-in.
+- Marine extends leave per paragraph 22 (Extensions of Leave and Special Liberty).
+- Fiscal year end approaches with Marine holding leave above 60-day ceiling.
+- Marine departs unit on PCS requiring leave in conjunction with PCS per paragraph 10.
+
+## Processing workflow
+
+1. Receive the request. Pull the MOL leave request with start date, projected end date, and chargeable leave count. The S-1 clerk runs receipt.
+2. Validate accrued leave balance. Pull current accrued leave from MCTFS. Confirm balance covers requested duration per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 5.
+3. Confirm advance leave eligibility. For requests exceeding accrued balance, validate against advance leave rules per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 6.
+4. Route through chain. The chain of command approves per unit policy and operational tempo. The leave granting authority signs.
+5. Process leave check-out. Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 4 Section 8, complete check-out procedures before the Marine departs.
+6. Cut MOL leave order. Confirm start date, projected end date, and chargeable leave count.
+7. Track leave usage. Maintain visibility on Marines currently on leave per the unit leave roster.
+8. Process leave check-in. Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 4 Section 8, complete check-in procedures on return.
+9. Reconcile leave balance. Audit the next LES against MCTFS leave balance per MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 5 paragraph 3.b UEC monitoring.
+10. Document anomalies. Process corrective leave transactions through UD-MIPS per MCTFSPRIUM<Citation source="MCTFSPRIUM" />.
+
+## Systems of record and forms
+
+### Systems
+
+- MCTFS. Master accrued leave balance and pay state.
+- MOL. Self-service leave module and leave order generation.
+- UD-MIPS. Cuts and certifies leave transactions.
+- OMPF Field Folder. Holds the leave tab with leave order copies.
+
+### Forms
+
+- NAVMC 10274 Application for Leave or Liberty. Standard leave request format.
+- MOL Leave Order. Generated electronically.
+- Leave Check-Out and Check-In Form. Per MCO 1050.3J Chapter 4 Section 8.
+- Liberty Pass. Per MCO 1050.3J Chapter 3 when special liberty applies.
+
+## Common pitfalls
+
+- Leave authorized exceeding accrued balance without advance leave validation. Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 6, advance leave requires the right circumstance.
+- Leave check-out skipped. Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 4 Section 8, check-out is mandatory before departure.
+- Leave check-in skipped. Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 4 Section 8, check-in is mandatory on return. Failure to check in within stated time triggers UA review.
+- MOL leave entry not reconciled to MCTFS. The pay record diverges. Reconcile each cycle per MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 5 paragraph 3.b.
+- Fiscal year end leave loss. Marines above the 60-day ceiling lose leave above 60 days. Brief affected Marines well before fiscal year end. Route SLA where qualifying duty applies.
+
+## Decision points
+
+- Advance leave authorization. The Marine requests leave exceeding accrued balance. Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 6, the commander authorizes advance leave per the right circumstance.
+- Leave in conjunction with PCS. The Marine takes leave between PCS detach and PCS join. Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 10, the rules apply for chargeable status and reporting.
+- Excess leave. Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 7, excess leave is authorized in specific circumstances with chargeable status implications.
+
+## Authority
+
+This sub-page sits under MCO 1050.3J<Citation source="MCO 1050.3J" /> Marine Corps Leave and Liberty Manual Chapter 2 (Leave Regulations). Paragraph 1 sets annual leave programs. Paragraph 5 covers annual leave. Paragraph 6 covers advance leave. Paragraph 7 covers excess leave. Chapter 4 Section 8 covers check-out and check-in procedures. S-1 responsibilities sit at MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 4. The processing workflow maps to NAVMC 3500.3E T-R event 0111-GENA-2013.
+
+## Related references
+
+- MCO 1050.3J Chapter 2. Authoritative leave regulations.
+- MCO 1050.3J Chapter 4 Section 8. Check-out and check-in procedures.
+- MCO 5000.14D Marine Corps Administrative Procedures. S-1 leave responsibilities.
+- MCO P1070.12K Individual Records Administration Manual. Leave documentation.
+- MCTFSPRIUM. Leave transaction format.
+- NAVMC 3500.3E Manpower and Administration T-R Manual. Event 0111-GENA-2013.

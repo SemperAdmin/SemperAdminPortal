@@ -1,0 +1,124 @@
+---
+title: "Allotments and Payroll Deductions - S-1 Procedural Page"
+slug: "allotments-and-payroll-deductions"
+summary: "Process allotments per DoDFMR Vol 7A Chapters 40 (General Provisions), 41 (Garnishments and Involuntary Allotments), 42 (Discretionary Allotments), and 43 (Nondiscretionary Allotments), applying the priority of deductions framework per Chapter 52."
+roles: ["admin", "leader"]
+lastVerified: "2026-05-11"
+unitType: "s1-g1"
+topic: "military-pay-processing"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0170-PERA-2004"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "DoDFMR Vol 7A"
+billets: ["s-1-officer", "s-1-chief", "ipac-pay-clerk"]
+gradesPerforming: ["Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "DoDFMR Vol 7A Chapter 40 (General Provisions Governing Allotments)"
+  - "DoDFMR Vol 7A Chapter 41 (Garnishments and Other Involuntary Allotments)"
+  - "DoDFMR Vol 7A Chapter 42 (Discretionary Allotments)"
+  - "DoDFMR Vol 7A Chapter 43 (Nondiscretionary Allotments)"
+  - "DoDFMR Vol 7A Chapter 52 (Priority of Pay Deductions and Collections)"
+  - "42 U.S.C. 659 (Child Support and Alimony Garnishment)"
+  - "5 CFR Part 581 (Garnishment of Federal Pay)"
+  - "MCO 7300.21B Marine Corps Financial Management SOP Manual"
+performanceSteps:
+  - "Receive the allotment authorization or garnishment order"
+  - "Identify the allotment type (discretionary, nondiscretionary, garnishment)"
+  - "Validate per DoDFMR Vol 7A Chapter 40, 41, 42, or 43"
+  - "Apply the priority of deductions per Chapter 52"
+  - "Cut the allotment transaction in UD-MIPS"
+  - "Coordinate with disbursing"
+  - "Verify LES reflects the allotment correctly"
+  - "Track active allotments against the unit roster"
+  - "Process changes and terminations"
+  - "Document garnishments on Page 11 when adverse"
+relatedRoles:
+  marine: "/marines/military-pay-processing/allotments-and-payroll-deductions"
+  leader: "/leader/military-pay-processing/allotments-and-payroll-deductions"
+  commander: "/commander/military-pay-processing/allotments-and-payroll-deductions"
+source:
+  title: "Allotments and Payroll Deductions - DoDFMR Vol 7A Chapters 40-43 and 52"
+  publisher: "Office of the Under Secretary of Defense (Comptroller)"
+---
+
+## Role and responsibility
+
+The IPAC pay clerk processes allotments through UD-MIPS per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapters 40, 41, 42, and 43. The S-1 chief tracks active allotments against the unit roster and audits priority of deductions per Chapter 52. The S-1 officer signs by direction on the routing. The disbursing technician coordinates per DoDFMR Vol 5 and MCO 7300.21B<Citation source="MCO 7300.21B" />. The Marine initiates discretionary allotments per Chapter 42. The court or agency directs involuntary allotments and garnishments per Chapter 41.
+
+Source documents flow from the Marine's allotment authorization for discretionary allotments, the court order for garnishment per 42 U.S.C. 659 and 5 CFR Part 581, the nondiscretionary allotment requirement per Chapter 43, the prior MCTFS allotment record, and the priority of deductions framework per Chapter 52. Allotments outputs include the executed UD-MIPS allotment transaction, the documented KSD packet, the verified LES reflecting the allotment, the tracked active allotments, the change and termination record, and the Page 11 entry when garnishment is adverse per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6.
+
+Per Chapter 40, allotments support automatic pay distribution to accounts or recipients. Per Chapter 41, garnishments cover child support, alimony, and other involuntary allotments under 42 U.S.C. 659 and 5 CFR Part 581. Per Chapter 42, discretionary allotments cover voluntary recipient assignments. Per Chapter 43, nondiscretionary allotments cover required allotments. Per Chapter 52, priority of deductions governs when multiple deductions apply against limited pay.
+
+## Trigger events
+
+- Marine initiates a discretionary allotment.
+- Court issues a garnishment order.
+- Family support order initiates involuntary allotment.
+- Nondiscretionary allotment requirement activates.
+- Existing allotment requires change.
+- Existing allotment requires termination.
+- Multiple deductions exceed cap triggering priority application.
+
+## Processing workflow
+
+1. Receive the allotment authorization or order. The IPAC pay clerk receives from the Marine (discretionary), the court (garnishment), or the agency (nondiscretionary).
+2. Identify the allotment type. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" />:
+   - Discretionary per Chapter 42.
+   - Nondiscretionary per Chapter 43.
+   - Garnishment or involuntary per Chapter 41.
+3. Validate per the controlling chapter. Each chapter sets eligibility, recipient rules, and rate caps.
+4. Apply priority of deductions. Per Chapter 52, when multiple deductions apply against limited pay, the priority order governs which deductions process first.
+5. Cut the allotment transaction in UD-MIPS. Per Appendix E and MCTFSPRIUM<Citation source="MCTFSPRIUM" />, submit the transaction.
+6. Coordinate with disbursing. Per DoDFMR Vol 5 and MCO 7300.21B, the disbursing technician executes the EFT to the allotment recipient.
+7. Verify LES. The next LES reflects the allotment.
+8. Track active allotments. The S-1 chief tracks the unit allotment posture.
+9. Process changes and terminations. Per Chapter 40, the Marine modifies discretionary allotments. The court modifies garnishments per Chapter 41.
+10. Document garnishments on Page 11 when adverse. Per MCO P1070.12K Chapter 6, court-ordered garnishments for nonpayment of family support record.
+
+## Systems of record and forms
+
+### Systems
+
+- Marine Corps Total Force System (MCTFS). Holds allotment records.
+- UD-MIPS. Cuts allotment transactions per Appendix E.
+- DFAS Allotment Processing System.
+- LES. Validates allotments.
+- Court Order Tracking. For garnishments.
+
+### Forms
+
+- Discretionary Allotment Authorization. Per Chapter 42.
+- Garnishment Order. Per Chapter 41 and 42 U.S.C. 659.
+- Allotment Change Form. Per Chapter 40.
+- Allotment Termination Form. Per Chapter 40.
+- Priority of Deductions Worksheet. Per Chapter 52.
+
+## Common pitfalls
+
+- Discretionary allotment processed past the maximum count cap. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 42, the discretionary allotment count has a cap.
+- Garnishment processed without court order. Per Chapter 41 and 42 U.S.C. 659, the court order drives the action.
+- Priority of deductions misapplied. Per Chapter 52, the priority order governs.
+- Allotment continued past the recipient termination. The S-1 cuts termination when the Marine or the court terminates.
+- LES discrepancy not surfaced. Routine LES review catches allotment errors.
+- Garnishment Page 11 omitted when adverse. Per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6, adverse garnishments record.
+
+## Decision points
+
+- Allotment type. Per Chapters 40-43, the source of the allotment drives the type.
+- Priority application. Per Chapter 52, the deduction priority order applies when multiple deductions compete.
+- Termination versus suspension. Per Chapter 40, termination ends the allotment. Suspension holds during a defined period.
+- Garnishment versus direct involuntary allotment. Court-issued garnishment routes through Chapter 41 court order processing.
+
+## Authority
+
+This sub-page sits under DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapters 40 (General Provisions Governing Allotments), 41 (Garnishments and Other Involuntary Allotments), 42 (Discretionary Allotments), 43 (Nondiscretionary Allotments), and 52 (Priority of Pay Deductions and Collections). 42 U.S.C. 659 sets the statutory framework for child support and alimony garnishment. 5 CFR Part 581 sets federal pay garnishment rules. MCO 7300.21B<Citation source="MCO 7300.21B" /> covers Marine Corps financial management procedures. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> covers MCTFS transactions. The processing workflow maps to NAVMC 3500.3E T-R event 0170-PERA-2004.
+
+## Related references
+
+- DoDFMR Vol 7A Chapters 40-43 and 52. Allotments and deductions framework.
+- 42 U.S.C. 659 and 5 CFR Part 581. Garnishment statutes.
+- MCO 7300.21B. Marine Corps financial management SOP.
+- MCTFSPRIUM. MCTFS transactions.
+- NAVMC 3500.3E. T-R event 0170-PERA-2004.

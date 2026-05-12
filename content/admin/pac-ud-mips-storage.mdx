@@ -1,0 +1,266 @@
+---
+title: "UD/MIPS Document Storage (MARADMIN 604/24)"
+slug: "ud-mips-storage"
+summary: "MARADMIN 604/24 moved official document storage to UD/MIPS. PAC processes uploads with required metadata, ensures retrievability, and supports the audit cycle. The new system replaces older paper and disconnected digital storage."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-01"
+unitType: "pac"
+topic: "records-management"
+function: "PERA"
+skillLevel: 1000
+trEventCode: "0111-PERA-2008"
+sourcePolicy: "MARADMIN 604/24"
+mosPerforming: ["0111", "0170"]
+billets: ["pac-specialist", "section-snco", "branch-head"]
+gradesPerforming: ["PVT", "PFC", "LCPL", "CPL", "SGT", "SSGT"]
+sustainmentInterval: "12 months"
+references:
+  - "MARADMIN 604/24 UD/MIPS Document Storage"
+  - "MARADMIN 015/20 OMPF Document Submission Requirements"
+  - "MCO P1070.12 Marine Corps Individual Records Administration Manual (IRAM)"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "MCTFSCODESMAN Marine Corps Total Force System Codes Manual"
+performanceSteps:
+  - "Identify document for UD/MIPS storage"
+  - "Apply required metadata per MARADMIN 604/24"
+  - "Upload via UD/MIPS document storage interface"
+  - "Verify upload completion and indexing"
+  - "Test retrieval to confirm searchability"
+  - "Document upload in tracking system"
+relatedRoles:
+  marine: "/marines/records/review-mctfs"
+  commander: "/commander/discipline-and-records/njp-routing"
+source:
+  title: "MARADMIN 604/24 UD/MIPS Document Storage"
+  publisher: "HQMC"
+  url: "https://www.marines.mil/News/Messages/"
+---
+
+## What Changed With MARADMIN 604/24
+
+MARADMIN 604/24<Citation source="MARADMIN 604/24" /> directed that personnel documents now store in UD/MIPS document storage rather than legacy systems. Key changes.
+
+- Single source of truth for stored personnel documents
+- Standardized metadata across all document types
+- Improved searchability for member, command, and audit access
+- Integration with MCTFS for personnel actions
+- Replacement of disconnected paper and digital storage
+
+This change affects daily PAC work. Every document touch now goes through UD/MIPS.
+
+## Why UD/MIPS Storage Matters
+
+The shift addresses problems with the prior system.
+
+- Lost documents during command transitions
+- Inconsistent indexing across PACs
+- Difficulty retrieving documents during audits
+- Multiple copies of documents in different systems
+- Incomplete audit trails for document access
+
+UD/MIPS document storage centralizes everything with consistent indexing.
+
+## Required Metadata Per MARADMIN 604/24
+
+Every document upload requires.
+
+### Member Identification
+
+- Full SSN (verified against MCTFS)
+- Name (LAST, FIRST MI exactly as in MCTFS)
+- Rank at document date
+- MOS at document date
+- Unit at document date
+
+### Document Identification
+
+- Document type code per MCTFSCODESMAN
+- Document subject (specific topic of document)
+- Document date (when signed, not uploaded)
+- Originating authority
+- Effective date if different from document date
+
+### Storage Metadata
+
+- Retention category per SECNAV M-5210.1<Citation source="SECNAV M-5210.1" />
+- Access classification (member-only, command, restricted)
+- Cross-reference IDs for related documents
+- Source location (where original is held if applicable)
+
+### Audit Trail
+
+- Uploader identification
+- Upload date and time
+- Validation by section NCOIC or branch head
+- Audit notes if applicable
+
+Missing metadata causes upload rejection.
+
+## Document Types Requiring UD/MIPS Storage
+
+Per MARADMIN 604/24<Citation source="MARADMIN 604/24" />, these document categories store in UD/MIPS.
+
+| Category | Examples |
+|----------|----------|
+| OMPF Documents | All performance, awards, education, service, discipline records |
+| Pay Documentation | NAVMC 10922<Citation source="NAVMC 10922" />, BAH change docs, special pay authorizations |
+| Travel Documentation | Travel orders, vouchers, receipts |
+| Medical Documentation (PII-Limited) | Specific items per IRAM |
+| Reserve Documentation | Drill records, AT records, mobilization orders |
+| Separation Documentation | DD-214, separation packages, transition records |
+
+Some categories remain in separate systems (full medical records, classified documents).
+
+## Performance Steps
+
+### Step 1 - Identify Document for Storage
+
+Before upload, confirm.
+
+- Document type appropriate for UD/MIPS storage
+- Document meets quality standards (legibility, completeness)
+- All required signatures present
+- Member identification verified
+
+### Step 2 - Prepare for Upload
+
+Ready the document.
+
+- Scan if hard copy (300 DPI minimum, color where source is color)
+- Verify file format compatibility (PDF preferred)
+- Check file size against system limits
+- Pull required metadata from MCTFS for accuracy
+
+### Step 3 - Open UD/MIPS Document Storage
+
+Navigate to the upload interface.
+
+- Login with CAC and credentials
+- Select Document Storage module
+- Choose Upload New Document option
+- Select document type from MCTFSCODESMAN list
+
+### Step 4 - Apply Metadata
+
+Fill in all required fields.
+
+- Member SSN (system validates against MCTFS)
+- Member name auto-populates from SSN
+- Document type from dropdown
+- Document date from document
+- Originating authority from document
+- Retention category from SECNAV M-5210.1<Citation source="SECNAV M-5210.1" />
+- Access classification
+
+### Step 5 - Upload Document File
+
+Submit the file.
+
+- Browse to document file
+- Upload completes
+- System assigns unique document ID
+- Initial indexing applied
+
+### Step 6 - Verify Upload
+
+Confirm successful processing.
+
+- Document appears in member's UD/MIPS view
+- Metadata correctly applied
+- Document retrievable via search
+- Document accessible to authorized viewers
+
+### Step 7 - Test Searchability
+
+Critical step for audit readiness.
+
+- Search by member SSN
+- Search by document type
+- Search by date range
+- Verify the document surfaces in expected searches
+
+### Step 8 - Document in Tracking System
+
+Update PAC tracking.
+
+- Note successful upload
+- Record upload date and uploader
+- File any working copies per local PAC policy
+- Notify submitter of completion
+
+## EDFR Verification
+
+After UD/MIPS document upload that triggers an MCTFS personnel action, verify the EDFR.
+
+- Pull Electronic Diary Feedback Report within 5 business days
+- Confirm related personnel transaction processed
+- Identify any failures requiring correction
+- Submit corrective transactions
+
+The document upload and the related MCTFS transaction are linked but separate. Both must succeed.
+
+## Common Upload Errors
+
+These hit during PAC processing.
+
+1. **SSN typo causes upload to wrong member.** Critical error. Verify SSN twice before upload. If wrong member uploaded, requires deletion and re-upload to correct member.
+2. **File too large.** PDF over system size limit. Reduce file size by reducing scan resolution or splitting document.
+3. **Missing required metadata.** System rejects upload without all required fields. Fill in missing items and re-upload.
+4. **Wrong document type code.** Document misindexed. Re-upload with correct type code or update metadata if system permits.
+5. **Document not searchable after upload.** Indexing failed silently. Check status and re-upload if necessary.
+6. **Upload appears successful but document missing from member view.** System glitch or partial failure. Verify status and resubmit if needed.
+
+## Audit Implications
+
+UD/MIPS storage drives audit readiness.
+
+- Auditors search UD/MIPS for documents supporting MCTFS data
+- Missing documents create audit findings
+- Misfiled documents create the same impact as missing
+- Documents in legacy systems no longer accessible to auditors
+
+PAC investments in proper UD/MIPS storage pay off during audit cycles.
+
+## Document Lifecycle in UD/MIPS
+
+Each document goes through this lifecycle.
+
+1. Document created and signed
+2. Document submitted to PAC
+3. PAC validates per MARADMIN 015/20<Citation source="MARADMIN 015/20" />
+4. PAC uploads per MARADMIN 604/24<Citation source="MARADMIN 604/24" />
+5. Document available to authorized viewers
+6. Document retained per SECNAV M-5210.1<Citation source="SECNAV M-5210.1" /> schedule
+7. Document archived after retention period
+8. Document accessible at NPRC after specified period
+
+## Member Access
+
+Members access their own documents via MOL.
+
+- Login to MOL with CAC
+- Navigate to OMPF or document view
+- Search for specific documents
+- Download or view documents
+
+Coordinate with members on access issues.
+
+## Quality Control Before Upload
+
+Before clicking upload.
+
+- Verify SSN matches MCTFS
+- Verify all metadata complete
+- Verify document quality acceptable
+- Verify document type code correct
+- Verify retention category appropriate
+
+Pre-upload checks prevent rework.
+
+## Related Roles
+
+UD/MIPS storage affects every role that accesses personnel documents.
+
+- **Marines** retrieve documents from UD/MIPS via MOL.
+- **Leaders** at S-1 prepare documents and verify upload completion.
+- **Commanders** approve document submissions and verify document retrieval during audits.

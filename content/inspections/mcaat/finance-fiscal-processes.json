@@ -1,0 +1,483 @@
+{
+  "track": "mcaat",
+  "programNumber": "finance",
+  "slug": "fiscal-processes",
+  "section": "Finance",
+  "categoryLabel": "Fiscal Processes",
+  "title": "Fiscal Processes",
+  "summary": "MCAAT Finance checklist - Fiscal Processes. 28 unique items across 2 audiences.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "applicabilityLevel": "DO and FO",
+  "lastVerified": "2026-05-10",
+  "source": {
+    "title": "MCAAT Finance Checklist - Fiscal Processes",
+    "publisher": "Marine Corps Manpower and Reserve Affairs"
+  },
+  "subsections": [
+    {
+      "id": "04.0",
+      "title": "DO",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Is the DD2657/DD2665 (statement of accountability) correctly balanced daily and in accordance with the references? Note: DDS generated DD 1081/2657 and 2665",
+          "references": [
+            "DODFMR Vol. 5 Ch. 15 and FPM Vol. 3 Ch. 15"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Are the CIR, PIR and OTCnet reports accurately reconciled daily and in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch.11 and FPM Vol. 3 Ch. 11"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "Is a blank check control log maintained for each series of checks used in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 7 and FPM Vol. 3 Ch. 7"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Are all U. S. Treasury checks issued reported via the PIR the day in which the check was produced in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 7 and FPM Vol. 3 Ch. 7"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Are spoiled and/or voided checks properly reported and accounted for in accordance with the references? NOTE: This includes properly canceling checks as well.",
+          "references": [
+            "DODFMR Vol. 5 Ch. 7 and FPM Vol. 3 Ch. 7"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Has the Disbursing office properly established, maintained and closed Limited Depository Checking Account's as applicable and in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 14 and FPM Vol. 3 Ch. 14"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Is the DO following the proper guidelines when exchanging for and disposing of foreign currency and accurately recording to either the DD2663 or DD2664 in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 13 and FPM Vol. 3 Ch. 13"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Has the DO/FO conducted proper Stored Value Card inventories monthly and in accordance with the references? NOTE: DO/FO must also ensure they keep records of all inventories and reports submitted to the Treasury/RFF-KCI. .",
+          "references": [
+            "DODFMR Vol. 5 Ch. 10 and FPM Vol 3 Ch. 10"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Has the DO/FO conducted proper Treasury check inventories at a minimum of every 90 days in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 7 and FPM Vol. 3 Ch. 7"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Have all cross disbursement payments been processed correctly and in accordance with the reference?",
+          "references": [
+            "FPM Vol. 3 Ch. 9"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Does the Fiscal section correctly process regular and special payroll transactions in accordance with the reference?",
+          "references": [
+            "FPM Vol. 3 Ch. 9"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Are irregularities being reported to include reporting overages, conducting investigations, and accounting for losses incurred in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 3, 6, 15 and FPM Vol. 3 Ch. 6, 15"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "13",
+          "question": "Does the Fiscal section correctly report negotiable instrument transactions in accordance with the references? NOTE: This includes a complete record of negotiable instruments mailed or presented to depositaries.",
+          "references": [
+            "DODFMR Vol. 5 Ch. 4, 11 and FPM Vol. 3 Ch. 4, 8, 11"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "14",
+          "question": "Are all entries related to collections and disbursements being reported in the applicable pay entitlement and accounting system within the same business day of being reported on the office's business in DDS (DD 2657/DD 2665)?",
+          "references": [
+            "DODFMR Vol. 4 Ch. 1 and FPM Vol. 3 Ch. 8"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "15",
+          "question": "Are returned checks/returned electronic fund payments processed correctly and in accordance with the references?",
+          "references": [
+            "DODFMR Volume 5 Ch. 9 and FPM Vol. 3 Ch. 9"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "16",
+          "question": "Are the Unmatched Transaction reports being researched, completed and posted to the RFF-KCI Portal in accordance with the reference?",
+          "references": [
+            "FPM Vol. 3 Ch. 19"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "17",
+          "question": "Has all corrective action on Unmatched Transaction reports been posted within the required time frame?",
+          "references": [
+            "FPM Vol. 3 Ch. 19"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "18",
+          "question": "Are Debit Vouchers (SF 5515) received from a servicing depositary immediately recorded on the Daily Statement of Accountability (DD2657) on the day received and reported on the Statement of Accountability (SF 1219) for the month in which received?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 4, 11 and FPM Vol. 3 Ch. 4, 11"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "19",
+          "question": "Are all Unit Paying Agents properly appointed, trained, and have been provided written operating instructions regarding their duties and responsibilities in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 2 and FPM Vol. 3 Ch. 17"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "20",
+          "question": "Have all Disbursing payment, adjustment, and report records, that are not required to be recorded to CEDMS or DTMS, been safeguarded to enable retrieval over the full 10 years in accordance with the references?",
+          "references": [
+            "SECNAVINST M-5210.1 and DODFMR Vol 1. CH. 9"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "21",
+          "question": "Have all fiscal vouchers properly posted in the Corporate Electronic Document Management System (CEDMS) within the required time frame?",
+          "references": [
+            "FPM Vol. 3 Ch. 18"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "22",
+          "question": "Are the appropriate CARS/PIR/CIR/TCIS accounts and accesses created for the Fiscal User in accordance with the references?",
+          "references": [
+            "FPM Vol. 3 Ch. 5"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "23",
+          "question": "Are PIR files loaded within the required time frame?",
+          "references": [
+            "FPM Vol. 3 Ch. 5"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "24",
+          "question": "Are all SF215's and/or SF5515's that post to Treasury Suspense (BCA F3500) reclassed within the appropriate accounting period and in accordance with the references?",
+          "references": [
+            "FPM Vol. 3 Ch. 5"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "25",
+          "question": "Have all CTA Bulk files been loaded in CARS in accordance with the references?",
+          "references": [
+            "FPM Vol. 3 Ch. 5"
+          ],
+          "audience": [
+            "DO"
+          ]
+        },
+        {
+          "code": "26",
+          "question": "Are Collection Vouchers properly reported in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 8 & 9, DODFMR Vol. 10 Ch. 7, and FPM Vol. 3 Ch. 8, 9, & 12, and RFF Policy Letters"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "27",
+          "question": "Are Public vouchers properly reported in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 8 & 9, DODFMR Vol. 10 Ch. 7, and FPM Vol. 3 Ch. 8, 9, & 12, and RFF Policy Letters"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "28",
+          "question": "Are Deposit Tickets properly reported in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 8 & 9, DODFMR Vol. 10 Ch. 7, and FPM Vol. 3 Ch. 8, 9, & 12, and RFF Policy Letters"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "05.0",
+      "title": "FO",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Is the DD2657/DD2665 (statement of accountability) correctly balanced daily and in accordance with the references? Note: DDS generated DD 1081/2657 and 2665",
+          "references": [
+            "DODFMR Vol. 5 Ch. 15 and FPM Vol. 3 Ch. 15"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Has the DO/FO conducted proper Stored Value Card inventories monthly and in accordance with the references? NOTE: DO/FO must also ensure they keep records of all inventories and reports submitted to the Treasury/RFF-KCI. .",
+          "references": [
+            "DODFMR Vol. 5 Ch. 10 and FPM Vol 3 Ch. 10"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Have all cross disbursement payments been processed correctly and in accordance with the reference?",
+          "references": [
+            "FPM Vol. 3 Ch. 9"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Does the Fiscal section correctly process regular and special payroll transactions in accordance with the reference?",
+          "references": [
+            "FPM Vol. 3 Ch. 9"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Are irregularities being reported to include reporting overages, conducting investigations, and accounting for losses incurred in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 3, 6, 15 and FPM Vol. 3 Ch. 6, 15"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "13",
+          "question": "Does the Fiscal section correctly report negotiable instrument transactions in accordance with the references? NOTE: This includes a complete record of negotiable instruments mailed or presented to depositaries.",
+          "references": [
+            "DODFMR Vol. 5 Ch. 4, 11 and FPM Vol. 3 Ch. 4, 8, 11"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "14",
+          "question": "Are all entries related to collections and disbursements being reported in the applicable pay entitlement and accounting system within the same business day of being reported on the office's business in DDS (DD 2657/DD 2665)?",
+          "references": [
+            "DODFMR Vol. 4 Ch. 1 and FPM Vol. 3 Ch. 8"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "16",
+          "question": "Are the Unmatched Transaction reports being researched, completed and posted to the RFF-KCI Portal in accordance with the reference?",
+          "references": [
+            "FPM Vol. 3 Ch. 19"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "17",
+          "question": "Has all corrective action on Unmatched Transaction reports been posted within the required time frame?",
+          "references": [
+            "FPM Vol. 3 Ch. 19"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "20",
+          "question": "Have all Disbursing payment, adjustment, and report records, that are not required to be recorded to CEDMS or DTMS, been safeguarded to enable retrieval over the full 10 years in accordance with the references?",
+          "references": [
+            "SECNAVINST M-5210.1 and DODFMR Vol 1. CH. 9"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "21",
+          "question": "Have all fiscal vouchers properly posted in the Corporate Electronic Document Management System (CEDMS) within the required time frame?",
+          "references": [
+            "FPM Vol. 3 Ch. 18"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "26",
+          "question": "Are Collection Vouchers properly reported in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 8 & 9, DODFMR Vol. 10 Ch. 7, and FPM Vol. 3 Ch. 8, 9, & 12, and RFF Policy Letters"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "27",
+          "question": "Are Public vouchers properly reported in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 8 & 9, DODFMR Vol. 10 Ch. 7, and FPM Vol. 3 Ch. 8, 9, & 12, and RFF Policy Letters"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "28",
+          "question": "Are Deposit Tickets properly reported in accordance with the references?",
+          "references": [
+            "DODFMR Vol. 5 Ch. 8 & 9, DODFMR Vol. 10 Ch. 7, and FPM Vol. 3 Ch. 8, 9, & 12, and RFF Policy Letters"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        }
+      ]
+    }
+  ]
+}

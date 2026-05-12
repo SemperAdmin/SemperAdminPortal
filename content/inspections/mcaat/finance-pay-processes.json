@@ -1,0 +1,380 @@
+{
+  "track": "mcaat",
+  "programNumber": "finance",
+  "slug": "pay-processes",
+  "section": "Finance",
+  "categoryLabel": "Pay Processes",
+  "title": "Pay Processes",
+  "summary": "MCAAT Finance checklist - Pay Processes. 12 unique items across 3 audiences.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "applicabilityLevel": "DO, FO, and Outside Agency",
+  "lastVerified": "2026-05-10",
+  "source": {
+    "title": "MCAAT Finance Checklist - Pay Processes",
+    "publisher": "Marine Corps Manpower and Reserve Affairs"
+  },
+  "subsections": [
+    {
+      "id": "04.0",
+      "title": "DO",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Are Final Join Audits accurately processed in accordance with the references? Note: Elapsed time entry and all necessary adjustments will be reviewed.",
+          "references": [
+            "FPM Vol. 1 Ch. 17, FPM Vol. 2 Ch. 3, JTR Ch. 5, DoDFMR Vol 7a"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Are Final Join Audits conducted within the required time frame?",
+          "references": [
+            "FPM Vol. 1 Ch. 17"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Are the Diary Feedback Module (DFM) reports processed accurately in accordance with the references?",
+          "references": [
+            "FPM Vol. 1 Ch. 1,  App F & G"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Are the Diary Feedback Module (DFM) reports processed within the required time frame?",
+          "references": [
+            "FPM Vol. 1 Ch. 1,  App F & G"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Are waivers/remissions of indebtedness processed accurately in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1, Ch. 13"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Are waivers/remissions of indebtedness processed within the required time frame?",
+          "references": [
+            "FPM Vol. 1, Ch. 13"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Are NAVMC 11116 reported and processed accurately in accordance with the references?",
+          "references": [
+            "FPM Vol. 1 Ch. 5, 6, 7, 8, 9, 11, 12, & 17, DoDFMR Vol 7a"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Are NAVMC 11116 processed within the required time frame?",
+          "references": [
+            "FPM Vol. 1 Ch. 2"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Does the office properly process unliquidated PCS/PPM advances in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1, Appendix G"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Are Miscellaneous Action Notices processed in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1, Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "05.0",
+      "title": "FO",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "Are Final Join Audits accurately processed in accordance with the references? Note: Elapsed time entry and all necessary adjustments will be reviewed.",
+          "references": [
+            "FPM Vol. 1 Ch. 17, FPM Vol. 2 Ch. 3, JTR Ch. 5, DoDFMR Vol 7a"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "Are Final Join Audits conducted within the required time frame?",
+          "references": [
+            "FPM Vol. 1 Ch. 17"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Are the Diary Feedback Module (DFM) reports processed accurately in accordance with the references?",
+          "references": [
+            "FPM Vol. 1 Ch. 1,  App F & G"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Are the Diary Feedback Module (DFM) reports processed within the required time frame?",
+          "references": [
+            "FPM Vol. 1 Ch. 1,  App F & G"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Are waivers/remissions of indebtedness processed accurately in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1, Ch. 13"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Are waivers/remissions of indebtedness processed within the required time frame?",
+          "references": [
+            "FPM Vol. 1, Ch. 13"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Are NAVMC 11116 reported and processed accurately in accordance with the references?",
+          "references": [
+            "FPM Vol. 1 Ch. 5, 6, 7, 8, 9, 11, 12, & 17, DoDFMR Vol 7a"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Are NAVMC 11116 processed within the required time frame?",
+          "references": [
+            "FPM Vol. 1 Ch. 2"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Does the office properly process unliquidated PCS/PPM advances in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1, Appendix G"
+          ],
+          "audience": [
+            "DO",
+            "FO"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Are Miscellaneous Action Notices processed in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1, Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "06.0",
+      "title": "Outside Agency",
+      "description": "",
+      "items": [
+        {
+          "code": "03",
+          "question": "Are Line of Duty Payments processed accurately in accordance with the references?",
+          "references": [
+            "FPM Vol. 1 Ch. 21, DoDFMR Vol 7a"
+          ],
+          "audience": [
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "Are Line of Duty Payments processed within the required time frame?",
+          "references": [
+            "FPM Vol. 1 Ch. 21, DoDFMR Vol 7a"
+          ],
+          "audience": [
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "Are the Diary Feedback Module (DFM) reports processed accurately in accordance with the references?",
+          "references": [
+            "FPM Vol. 1 Ch. 1,  App F & G"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Are the Diary Feedback Module (DFM) reports processed within the required time frame?",
+          "references": [
+            "FPM Vol. 1 Ch. 1,  App F & G"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Are waivers/remissions of indebtedness processed accurately in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1, Ch. 13"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Are waivers/remissions of indebtedness processed within the required time frame?",
+          "references": [
+            "FPM Vol. 1, Ch. 13"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "09",
+          "question": "Are NAVMC 11116 reported and processed accurately in accordance with the references?",
+          "references": [
+            "FPM Vol. 1 Ch. 5, 6, 7, 8, 9, 11, 12, & 17, DoDFMR Vol 7a"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Are NAVMC 11116 processed within the required time frame?",
+          "references": [
+            "FPM Vol. 1 Ch. 2"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Are Miscellaneous Action Notices processed in accordance with the reference?",
+          "references": [
+            "FPM Vol. 1, Ch. 1"
+          ],
+          "audience": [
+            "DO",
+            "FO",
+            "OUTSIDE_AGENCY"
+          ]
+        }
+      ]
+    }
+  ]
+}

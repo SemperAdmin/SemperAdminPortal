@@ -1,0 +1,125 @@
+---
+title: "DTS Authorizations and Orders Creation - S-1 Procedural Page"
+slug: "authorizations-and-orders-creation"
+summary: "Build the authorization, fund the line of accounting, set the routing list, and obligate funds in DTS per MCO 4650.39A Chapter 1 paragraph 3 (ODTA), paragraph 3.d (Routing Lists), and paragraph 5 (Travelers and AOs)."
+roles: ["admin", "leader"]
+lastVerified: "2026-05-11"
+unitType: "s1-g1"
+topic: "dts"
+function: "OPER"
+skillLevel: 2000
+trEventCode: "0102-OPER-2002"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 4650.39A"
+billets: ["s-1-officer", "s-1-chief", "odta", "ndea", "ao"]
+gradesPerforming: ["Cpl", "Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 4650.39A Chapter 1 paragraph 3 (ODTA)"
+  - "MCO 4650.39A Chapter 1 paragraph 3.d (Routing Lists)"
+  - "MCO 4650.39A Chapter 1 paragraph 5 (Travelers and AOs)"
+  - "MCO 4650.39A Chapter 1 paragraph 5.a (Authorization signing)"
+  - "MCO 4650.39A Chapter 2 paragraph 2 (Permissions and Accesses)"
+  - "Joint Travel Regulations (JTR)"
+  - "DoD 7000.14-R Volume 9 Travel Policy"
+  - "DoD 4500.9-R Defense Transportation Regulation"
+  - "MCO 4600.40C Government Travel Charge Card Program (GTCCP)"
+  - "DTMO Financial Field Procedures Guide"
+performanceSteps:
+  - "Receive the trip request and validate authority"
+  - "Open or import the DTS profile per Chapter 3"
+  - "Build the authorization line by line in DTS"
+  - "Apply per diem and entitlements per the JTR"
+  - "Attach the line of accounting and validate funding"
+  - "Set the routing list per Chapter 1 paragraph 3.d"
+  - "Apply GTCC split disbursement per MCO 4600.40C"
+  - "Submit for AO approval per Chapter 1 paragraph 5"
+  - "Issue ticketing and lodging confirmation"
+  - "Archive the obligated authorization in the DTS profile"
+relatedRoles:
+  marine: "/marines/dts/authorizations-and-orders-creation"
+  leader: "/leader/dts/authorizations-and-orders-creation"
+  commander: "/commander/dts/authorizations-and-orders-creation"
+source:
+  title: "DTS Authorizations and Orders Creation - MCO 4650.39A Chapter 1"
+  publisher: "Headquarters Marine Corps Manpower Information Support Systems (MIF)"
+---
+
+## Role and responsibility
+
+The traveler builds the authorization per MCO 4650.39A<Citation source="MCO 4650.39A" /> Chapter 1 paragraph 5 (Travelers and AOs) when the traveler holds DTS access. The Non-DTS Entry Agent (NDEA) builds the authorization on behalf of the traveler when the traveler lacks DTS access. The ODTA validates the routing list per Chapter 1 paragraph 3.d and inserts the AO and RO. The AO approves the authorization. The BDTA validates the line of accounting against the unit funding plan. The FDTA validates the disbursing-side rules. The S-1 chief tracks the authorization volume against the unit travel plan.
+
+Source documents flow from the trip request, the traveler DTS profile per Chapter 3, the unit travel plan, the line of accounting from the BDTA, the JTR<Citation source="JTR" /> entitlement rule set, the per diem schedule, the lodging and transportation request, the GTCC integration per MCO 4600.40C<Citation source="MCO 4600.40C" />, and the routing list. Authorization outputs include the obligated authorization, the issued tickets, the lodging confirmation, the orders document, the audit trail in the DTS history, and the routing record.
+
+Per Chapter 1 paragraph 3.d, the ODTA inserts the AO and RO into the appropriate authorization and voucher routing list. Per Chapter 1 paragraph 5.a, the traveler signs the authorization. The AO approves before fund obligation. Per the JTR, entitlements flow per the chapter governing the travel type (TDY, PCS, evacuation, local).
+
+## Trigger events
+
+- Trip request arrives at the unit S-1 from the section chief.
+- Inbound PCS orders trigger DTS authorization for PCS allowances when policy applies.
+- TDY training quota release triggers authorization build.
+- School order MARADMIN release triggers authorization build.
+- Conference attendance approval triggers authorization build.
+- Reserve duty order triggers authorization for IDT travel or ADT.
+- Routing list update required after AO change.
+
+## Processing workflow
+
+1. Receive the trip request. The section chief routes the trip request to the S-1 or ODTA with travel dates, location, purpose, and funding source.
+2. Validate authority. Per MCO 4650.39A<Citation source="MCO 4650.39A" /> Chapter 1 paragraph 5, the authority is the AO. Confirm the funding source and the AO scope.
+3. Open or import the DTS profile. Per Chapter 3 paragraph 3, the ODTA opens the profile for an inbound Marine or imports an existing profile.
+4. Build the authorization. The traveler or NDEA builds the authorization in DTS line by line, covering travel dates, mode of travel, lodging, and per diem.
+5. Apply per diem and entitlements. Per the JTR<Citation source="JTR" /> chapter governing the travel type, apply the entitlement set (TDY per JTR Chapter 3, PCS per JTR Chapter 5, evacuation per JTR Chapter 7).
+6. Attach the line of accounting. The BDTA confirms the line of accounting and the funding ceiling. The system validates fund availability.
+7. Set the routing list. Per Chapter 1 paragraph 3.d, the ODTA inserts the AO and RO. The routing list runs at the appropriate organization level.
+8. Apply GTCC split disbursement. Per MCO 4600.40C<Citation source="MCO 4600.40C" /> and DODI 5154.31 Vol 4<Citation source="DODI 5154.31" />, split disbursement directs GTCC charges to the GTCC vendor on the voucher. Set the authorization framework to support the split.
+9. Submit for AO approval. Per Chapter 1 paragraph 5.a, the traveler signs the authorization. The AO approves. The system obligates funds.
+10. Issue ticketing and lodging confirmation. Per DoD 4500.9-R Defense Transportation Regulation, the Commercial Travel Office (CTO) issues tickets after AO approval. Lodging confirmation flows through DTS to the traveler.
+11. Archive the authorization. The obligated authorization sits in the DTS profile. The traveler holds a printed or digital copy in hand.
+
+## Systems of record and forms
+
+### Systems
+
+- Defense Travel System (DTS). System of record for the authorization, the routing, and the obligation.
+- DTS Routing List module. Driven by Chapter 1 paragraph 3.d.
+- Commercial Travel Office (CTO). Per DoD 4500.9-R, issues tickets.
+- BDTA funding tool. Source of the line of accounting.
+- GTCC vendor system. Receives split disbursement on voucher.
+
+### Forms
+
+- DTS Authorization. The system-of-record digital authorization.
+- Orders document. Generated from the obligated authorization.
+- Trip Request. Local format from the section chief.
+- Constructed Travel Worksheet (CTW). Used when the traveler requests other-than-economy class or alternate routing.
+
+## Common pitfalls
+
+- AO missing from the routing list. Per Chapter 1 paragraph 3.d, the ODTA inserts the AO. Without the AO in the routing list, the authorization stalls.
+- Funding line wrong or stale. The BDTA validates the line. A wrong line drops the obligation.
+- Per diem applied from the wrong JTR chapter. TDY per diem rules differ from PCS per diem rules. Per JTR<Citation source="JTR" /> Chapter 2 and the chapter governing the travel type, apply the correct entitlement set.
+- GTCC split disbursement skipped. Per MCO 4600.40C<Citation source="MCO 4600.40C" /> and DODI 5154.31 Vol 4<Citation source="DODI 5154.31" />, split disbursement runs on every GTCC charge.
+- AO approves before fund obligation succeeds. Re-check funding availability before approval routing.
+- Authorization signed without orders being cut. The orders document flows from the obligated authorization. Pull the orders document after AO approval.
+- CTW omitted on premium-class request. The CTW supports the entitlement decision and the audit trail.
+
+## Decision points
+
+- Self-entry versus NDEA. The ODTA assigns NDEA when the traveler lacks DTS access. The traveler still signs the authorization at the AO routing step.
+- Routing list level. Per Chapter 1 paragraph 3.d, the routing list runs at the appropriate organization level. Larger commands run multi-tier routing. Smaller units run single-tier.
+- Constructed travel versus actual travel. Per the JTR<Citation source="JTR" /> rules, the traveler builds the authorization to match the planned travel. A request for non-economy class requires CTW evaluation.
+- Lodging type. Government quarters versus commercial lodging per JTR Chapter 2 and Chapter 9 rules. The unit travel posture drives the call.
+
+## Authority
+
+This sub-page sits under MCO 4650.39A<Citation source="MCO 4650.39A" /> Chapter 1 paragraph 3 (ODTA), paragraph 3.d (Routing Lists), paragraph 5 (Travelers and AOs), and paragraph 5.a (Authorization signing). DODFMR Vol 9<Citation source="DODFMR Vol 9" /> sets parent DoD travel policy. The JTR<Citation source="JTR" /> implements traveler-level entitlements per chapter. DoD 4500.9-R sets defense transportation rules. MCO 4600.40C<Citation source="MCO 4600.40C" /> and DODI 5154.31 Vol 4<Citation source="DODI 5154.31" /> set GTCC integration.
+
+## Related references
+
+- MCO 4650.39A Chapter 1 paragraphs 3, 3.d, 5, 5.a. Authorization rules.
+- DODFMR Vol 9. Parent DoD travel policy.
+- JTR. Entitlement framework by travel type.
+- DoD 4500.9-R. Defense transportation.
+- MCO 4600.40C and DODI 5154.31 Vol 4. GTCC integration.
+- DTMO Financial Field Procedures Guide. Field-level execution support.

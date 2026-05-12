@@ -1,0 +1,83 @@
+{
+  "track": "igmc",
+  "programNumber": "1050",
+  "slug": "leave-liberty-and-administrative-absence",
+  "title": "Leave, Liberty and Administrative Absence",
+  "summary": "All O-5 and O-6 Level Commands. 11 items across the program.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "sponsor": "M&RA (MPO)",
+  "applicabilityLevel": "All O-5 and O-6 Level Commands",
+  "effectiveDate": "2025-09-03",
+  "lastVerified": "2025-09-03",
+  "source": {
+    "title": "IGMC Functional Area Checklist - Leave, Liberty and Administrative Absence",
+    "publisher": "Inspector General of the Marine Corps"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "LEAVE AND LIBERTY",
+      "description": "",
+      "items": [
+        {
+          "code": "0101",
+          "question": "Has the command published a directive or established a program on leave and liberty?",
+          "references": [
+            "DoDI 1327.06 Sect 3.1",
+            "MCO 1050.3J, chap 4, par 1"
+          ]
+        },
+        {
+          "code": "0102",
+          "question": "Is lost leave restored as special leave accrual (SLA) when Marines were eligible and approved for SLA?",
+          "references": [
+            "DoDI 1327.06 Sect 3.8",
+            "MCO 1050.3J, chap 2, par 9"
+          ]
+        },
+        {
+          "code": "0103",
+          "question": "Have internal controls for check-out and check-in procedures been established to ensure requests, approvals, execution, and close out of all leave/PTAD is completed in MOL?",
+          "references": [
+            "MCO 1050.3J, chap 2, par 5; chap 3, par 1a and 1b; chap 4, par 8"
+          ]
+        },
+        {
+          "code": "0104",
+          "question": "Are Marines granted PTAD only for the purposes permitted in the reference?",
+          "references": [
+            "DoDI 1327.06 Sect 4.4"
+          ]
+        },
+        {
+          "code": "0105",
+          "question": "Are periods of absence over leave and absent without leave, when excused as unavoidable, charged as annual leave when appropriate?",
+          "references": [
+            "DoDI 1327.06 Sect 5.2",
+            "MCO 1050.3J, chap 2, par 20"
+          ]
+        },
+        {
+          "code": "0106",
+          "question": "Are chargeable leave periods being reported on MOL or UD? (check morning reports for individuals marked as on leave with no corresponding approved leave request in MOL and that check-out and check-in were completed)",
+          "references": [
+            "MCO 1050.3J, chap 4, par 7b",
+            "MCTFSPRIUM, par 70101"
+          ]
+        },
+        {
+          "code": "0107",
+          "question": "Does the command have procedures to ensure Marines are not being approved for Active-Duty Parental Leave for no more than 84 days?",
+          "references": [
+            "DoDI 1327.06 Sect 3.11.c, and MARADMIN 051/23"
+          ]
+        }
+      ]
+    }
+  ],
+  "category": "Non-CoRE",
+  "faName": "Leave, Liberty and Administrative Absence"
+}

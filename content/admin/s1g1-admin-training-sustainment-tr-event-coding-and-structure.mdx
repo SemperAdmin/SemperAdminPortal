@@ -1,0 +1,107 @@
+---
+title: "T-R Event Coding and Structure - S-1 Procedural Page"
+slug: "tr-event-coding-and-structure"
+summary: "Read T-R event codes (4-4-4 character set) and the 18 event components per MCO P3500.72A paragraph 4002.1."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-10"
+unitType: "s1-g1"
+topic: "admin-training-sustainment"
+function: "GENA"
+skillLevel: 2000
+trEventCode: "0170-OPER-2001"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO P3500.72A"
+billets: ["s-1-officer", "s-1-chief", "g-1-officer", "unit-training-manager"]
+gradesPerforming: ["Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO P3500.72A Marine Corps Ground Training and Readiness Program"
+  - "MCO 1553.3C Unit Training Management Program"
+  - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+performanceSteps:
+  - "Decode the 4-4-4 event code (MOS, functional area, level and sequence)"
+  - "Identify the event level (1000 through 8000)"
+  - "Pull the event title and description"
+  - "Identify the supported MET(s)"
+  - "Pull the sustainment interval"
+  - "Read the standard and condition"
+  - "Check evaluation-coded status"
+  - "Identify chained and prereq events"
+  - "Pull initial training setting (FS, MOJT, DL)"
+  - "Reference the support requirements"
+relatedRoles:
+  marine: "/marines/admin-training-sustainment/tr-event-coding-and-structure"
+  leader: "/leader/admin-training-sustainment/tr-event-coding-and-structure"
+  commander: "/commander/admin-training-sustainment/tr-event-coding-and-structure"
+source:
+  title: "T-R Event Coding and Structure - MCO P3500.72A Paragraphs 4002 through 4004"
+  publisher: "Headquarters Marine Corps TECOM"
+---
+
+## Role and responsibility
+
+The unit training manager and the S-1 chief read T-R event codes and component fields fluently. The S-1 officer briefs leaders on event structure as part of the training plan brief. The S-1 clerk pulls T-R events from the T-R Manual against the unit METL.
+
+Source documents flow from the T-R Manual per occupational field (NAVMC 3500.3E for 01XX MOSs). Outputs include the decoded event metadata used to schedule, conduct, and evaluate training. Every calendar event, evaluator brief, and AAR ties back to the T-R event structure.
+
+The 4-4-4 event code carries the MOS or community, the functional or duty area, and the level and sequence per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraph 4002.1.a. The 18 event components live in paragraph 4002.1.
+
+## Trigger events
+
+- New T-R Manual release introduces revised event structure.
+- Training plan development requires event-by-event sourcing.
+- Calendar event creation in MCTIMS requires T-R event association.
+- Evaluator brief requires standard and condition extraction.
+- AAR requires standard reference for findings.
+- Sustainment scheduling requires interval per event.
+- New clerk training requires event-structure familiarity.
+
+## Processing workflow
+
+1. Decode the 4-4-4 event code per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraph 4002.1.a. First 4 characters MOS or community (example 0321, 1812, 34xx). Second 4 characters functional or duty area (example DEF, FSPT, MVMT). Third 4 characters level and sequence (1000 through 8000).
+2. Identify the event level. 1000-level core skills (entry-level), 2000-level core plus (MOJT and follow-on), 3000-4000 lower-echelon collective, 5000-8000 higher-echelon collective per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraphs 4003 and 4004.
+3. Pull the event title and description per paragraph 4002.1.b and 4002.1.h.
+4. Identify the supported MET(s) per paragraph 4002.1.d.
+5. Pull the sustainment interval per paragraph 4002.1.e (months between evaluation or retraining).
+6. Read standard and condition per paragraph 4002.1.i and 4002.1.j.
+7. Check evaluation-coded status per paragraph 4002.1.c. E-coded events drive CRP per Chapter 5.
+8. Identify chained and prereq events per paragraphs 4002.1.l and 4002.1.m.
+9. Pull initial training setting per paragraph 4002.1.o (Formal School, MOJT, Distance Learning).
+10. Reference support requirements per paragraph 4002.1.r (range, ordnance, equipment, materials, other units or personnel).
+
+## Systems of record and forms
+
+### Systems
+
+- T-R Manual (per occupational field). Source of truth for events.
+- MCTIMS UTM Module. Calendar events link to T-R event codes.
+- NAVMC 3500.3E. T-R Manual for 0102, 0111, 0147, 0149, 0160, 0161, 0170, 0171.
+
+### Forms
+
+- T-R Event Reference Card. Local reference summarizing the 18 components.
+- Calendar Event Template. MCTIMS template referencing T-R event code.
+
+## Common pitfalls
+
+- Event level misread. Confusion between 2000 (core plus individual) and 3000 (lower-echelon collective). Per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraphs 4003 and 4004, individual ends at 2000, collective begins at 3000.
+- Sustainment interval not pulled. Scheduling runs without interval. Pull per paragraph 4002.1.e at every plan build.
+- E-coded status overlooked. Non-E-coded event awarded CRP credit. Per paragraph 4002.1.c, only E-coded events get CRP. Verify before crediting.
+- Chained events not credited. Upper-level event completion does not award credit to chained subordinate events. Per paragraph 4005.1, apply chaining credit on completion.
+- Support requirements not pulled. Resources not coordinated. Pull per paragraph 4002.1.r at plan build.
+
+## Decision points
+
+- Standard interpretation. The standard reads general for collective events, specific for individual events per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraph 4002.1.j. The unit training manager interprets per the level.
+- Condition modification. The commander modifies conditions to prepare Marines for the assigned mission per paragraph 4002.1.i (desert, mountain, etc.). The S-1 officer documents the modification.
+- Chained credit application. The unit completed a 5000-level event. Per paragraph 4005.1, completion provides sustainment credit for chained subordinate events. Apply credit by event-by-event review.
+
+## Authority
+
+This sub-page sits under MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraphs 4002.1 (event components), 4003 (individual events), 4004 (collective events), and 4005 (chaining and branching). MCO 1553.3C<Citation source="MCO 1553.3C" /> paragraph 4.c.(5)(c) requires T-R event association in MCTIMS calendar entries. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> is the T-R Manual for 01XX events.
+
+## Related references
+
+- MCO P3500.72A Marine Corps Ground Training and Readiness Program. Paragraphs 4002 through 4005 define event structure.
+- MCO 1553.3C Unit Training Management Program. Paragraph 4.c.(5)(c) requires T-R event association.
+- NAVMC 3500.3E Manpower and Administration T-R Manual. Source of 01XX T-R events.

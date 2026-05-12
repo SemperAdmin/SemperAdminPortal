@@ -1,0 +1,1670 @@
+{
+  "downloaded": {
+    "1000.10B": {
+      "subject": "DEPARTMENT OF THE NAVY POLICY ON PARENTHOOD AND PREGNANCY",
+      "effective_date": "1/16/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "17",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-01 General Military Personnel Records/1000.10B.pdf",
+      "filename": "SECNAVINST_1000.10B.pdf",
+      "parsed": {
+        "base": "1000.10",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:16.673258"
+    },
+    "1000.7G": {
+      "subject": "INTERSERVICE TRANSFER OF OFFICERS",
+      "effective_date": "1/23/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "23",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-01 General Military Personnel Records/1000.7G.pdf",
+      "filename": "SECNAVINST_1000.7G.pdf",
+      "parsed": {
+        "base": "1000.7",
+        "revision": "G",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:18.605407"
+    },
+    "1000.9B F": {
+      "subject": "CODE OF CONDUCT FOR MEMBERS OF THE ARMED FORCES OF THE UNITED STATES",
+      "effective_date": "4/12/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "5",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-01 General Military Personnel Records/1000.9B F.pdf",
+      "filename": "SECNAVINST_1000.9B_F.pdf",
+      "parsed": {
+        "base": "1000.9",
+        "revision": "F",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:20.512225"
+    },
+    "1001.32D": {
+      "subject": "MANAGEMENT AND MOBILIZATION OF THE STANDBY RESERVE",
+      "effective_date": "1/24/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "4",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-01 General Military Personnel Records/1001.32D.pdf",
+      "filename": "SECNAVINST_1001.32D.pdf",
+      "parsed": {
+        "base": "1001.32",
+        "revision": "D",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:22.255871"
+    },
+    "1001.38": {
+      "subject": "MILITARY RESERVE EXCHANGE PROGRAM",
+      "effective_date": "4/3/2025",
+      "status": "Active",
+      "sponsor": "ASN (M&RA) MMP",
+      "pages": "9",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-01 General Military Personnel Records/1001.38.pdf",
+      "filename": "SECNAVINST_1001.38.pdf",
+      "parsed": {
+        "base": "1001.38",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:24.150748"
+    },
+    "1080.4A": {
+      "subject": "DEPARTMENT OF THE NAVY END STRENGTH MANAGEMENT",
+      "effective_date": "5/1/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "6",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-01 General Military Personnel Records/1080.4A.pdf",
+      "filename": "SECNAVINST_1080.4A.pdf",
+      "parsed": {
+        "base": "1080.4",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:25.916767"
+    },
+    "11010.14B": {
+      "subject": "DEPARTMENT OF THE NAVY POLICY FOR CONSULTATION WITH FEDERALLY RECOGNIZED INDIAN TRIBES, ALASKA NATIVE TRIBAL ENTITIES, AND NATIVE HAWAIIAN ORGANIZATIONS",
+      "effective_date": "1/18/2019",
+      "status": "Active",
+      "sponsor": "ASN (EI&E)",
+      "pages": "10",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/11000 Facilities and Land Management Ashore/11-00 Facilities and Activities Ashore Support/11010.14B.pdf",
+      "filename": "SECNAVINST_11010.14B.pdf",
+      "parsed": {
+        "base": "11010.14",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:27.674644"
+    },
+    "11011.47D": {
+      "subject": "ACQUISITION, MANAGEMENT, AND DISPOSAL OF REAL PROPERTY AND REAL PROPERTY INTERESTS BY THE DEPARTMENT OF THE NAVY",
+      "effective_date": "6/26/2019",
+      "status": "Active",
+      "sponsor": "ASN (EI&E)",
+      "pages": "48",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/11000 Facilities and Land Management Ashore/11-00 Facilities and Activities Ashore Support/11011.47D.pdf",
+      "filename": "SECNAVINST_11011.47D.pdf",
+      "parsed": {
+        "base": "11011.47",
+        "revision": "D",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:29.818425"
+    },
+    "11100.8C": {
+      "subject": "VICE PRESIDENT'S RESIDENCE",
+      "effective_date": "2/26/2019",
+      "status": "Active",
+      "sponsor": "ASN (EI&E)",
+      "pages": "4",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/11000 Facilities and Land Management Ashore/11-100 Structures and Facilities Support/11100.8C.pdf",
+      "filename": "SECNAVINST_11100.8C.pdf",
+      "parsed": {
+        "base": "11100.8",
+        "revision": "C",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:31.857676"
+    },
+    "11101.73C": {
+      "subject": "GENERAL AND FLAG OFFICERS' QUARTERS",
+      "effective_date": "5/23/2019",
+      "status": "Active",
+      "sponsor": "ASN (EI&E)",
+      "pages": "13",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/11000 Facilities and Land Management Ashore/11-100 Structures and Facilities Support/11101.73C.pdf",
+      "filename": "SECNAVINST_11101.73C.pdf",
+      "parsed": {
+        "base": "11101.73",
+        "revision": "C",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:34.022908"
+    },
+    "1120.9B": {
+      "subject": "DESIGNATION OF OFFICERS OF THE REGULAR MARINE CORPS AND MARINE CORPS RESERVE AS MARINE CORPS JUDGE ADVOCATES",
+      "effective_date": "10/10/2018",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "12",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-100 General Recruiting Records/1120.9B.pdf",
+      "filename": "SECNAVINST_1120.9B.pdf",
+      "parsed": {
+        "base": "1120.9",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:37.329201"
+    },
+    "11240.20A": {
+      "subject": "NATIONAL CAPITAL REGION EXECUTIVE TRANSPORTATION AND BUS SERVICE",
+      "effective_date": "11/16/2018",
+      "status": "Active",
+      "sponsor": "DON/AA(FSSD)",
+      "pages": "13",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/11000 Facilities and Land Management Ashore/11-200 Transportation Facilities, Heavy Equipment/11240.20A.pdf",
+      "filename": "SECNAVINST_11240.20A.pdf",
+      "parsed": {
+        "base": "11240.20",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:39.250478"
+    },
+    "11260.2B": {
+      "subject": "DEPARTMENT OF THE NAVY WEIGHT HANDLING PROGRAM FOR SHORE ACTIVITIES",
+      "effective_date": "3/26/2019",
+      "status": "Active",
+      "sponsor": "ASN (EI&E)",
+      "pages": "7",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/11000 Facilities and Land Management Ashore/11-200 Transportation Facilities, Heavy Equipment/11260.2B.pdf",
+      "filename": "SECNAVINST_11260.2B.pdf",
+      "parsed": {
+        "base": "11260.2",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:41.993748"
+    },
+    "1211.1A": {
+      "subject": "IDENTIFICATION OF MAJOR PROGRAM MANAGER EQUIVALENT BILLETS",
+      "effective_date": "4/14/2023",
+      "status": "Active",
+      "sponsor": "ASN (RD&A)",
+      "pages": "5",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-200 Personnel Classification and Designation/1211.1A.pdf",
+      "filename": "SECNAVINST_1211.1A.pdf",
+      "parsed": {
+        "base": "1211.1",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:47.384169"
+    },
+    "12250.6B": {
+      "subject": "CIVILIAN HUMAN RESOURCES MANAGEMENT IN THE DEPARTMENT OF THE NAVY",
+      "effective_date": "1/4/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "22",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/12000 Civilian Personnel Services/12-200 Civilian Personnel Provisions Management/12250.6B.pdf",
+      "filename": "SECNAVINST_12250.6B.pdf",
+      "parsed": {
+        "base": "12250.6",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:49.449407"
+    },
+    "12271.1 - CH-1": {
+      "subject": "DEPARTMENT OF THE NAVY TELEWORK POLICY",
+      "effective_date": "2/11/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "27",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/12000 Civilian Personnel Services/12-200 Civilian Personnel Provisions Management/12271.1 - CH-1.pdf",
+      "filename": "SECNAVINST_12271.1_-_CH-1.pdf",
+      "parsed": {
+        "base": "12271.1",
+        "revision": "",
+        "change": "CH-1"
+      },
+      "downloaded_at": "2026-04-25T21:40:52.499704"
+    },
+    "12273.1B": {
+      "subject": "CIVILIAN HUMAN CAPITAL MANAGEMENT ASSESSMENT PROGRAM",
+      "effective_date": "2/22/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "8",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/12000 Civilian Personnel Services/12-200 Civilian Personnel Provisions Management/12273.1B.pdf",
+      "filename": "SECNAVINST_12273.1B.pdf",
+      "parsed": {
+        "base": "12273.1",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:54.525559"
+    },
+    "12300.9A CH-1": {
+      "subject": "MERIT STAFFING, PLACEMENT, AND EMPLOYMENT",
+      "effective_date": "12/21/2018",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "10",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/12000 Civilian Personnel Services/12-300 Civilian General Employment Management/12300.9A CH-1.pdf",
+      "filename": "SECNAVINST_12300.9A_CH-1.pdf",
+      "parsed": {
+        "base": "12300.9",
+        "revision": "A",
+        "change": "CH-1"
+      },
+      "downloaded_at": "2026-04-25T21:40:56.828316"
+    },
+    "12351.5G": {
+      "subject": "WORKFORCE SHAPING",
+      "effective_date": "1/5/2012",
+      "status": "Active",
+      "sponsor": "ASN(M&RA)/OCPM12",
+      "pages": "6",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/12000 Civilian Personnel Services/12-300 Civilian General Employment Management/12351.5G.pdf",
+      "filename": "SECNAVINST_12351.5G.pdf",
+      "parsed": {
+        "base": "12351.5",
+        "revision": "G",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:40:59.044083"
+    },
+    "12410.25B": {
+      "subject": "CIVILIAN EMPLOYEE TRAINING AND CAREER DEVELOPMENT",
+      "effective_date": "5/21/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "39",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/12000 Civilian Personnel Services/12-400 Civilian Employee Performance and Utilization Management/12410.25B.pdf",
+      "filename": "SECNAVINST_12410.25B.pdf",
+      "parsed": {
+        "base": "12410.25",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:01.999792"
+    },
+    "12511.1A": {
+      "subject": "CLASSIFICATION AND POSITION MANAGEMENT",
+      "effective_date": "12/20/2018",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "9",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/12000 Civilian Personnel Services/12-500 Civilian Personnel Position Classification, Pay and Allowances/12511.1A.pdf",
+      "filename": "SECNAVINST_12511.1A.pdf",
+      "parsed": {
+        "base": "12511.1",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:03.996303"
+    },
+    "12534.2": {
+      "subject": "CIVILIAN FACULTY PAY SCHEDULE FOR THE UNITED STATES NAVAL ACADEMY, THE NAVAL WAR COLLEGE, THE NAVAL POST-GRADUATE SCHOOL, THE MARINE CORPS UNIVERSITY, AND THE UNITED STATES NAVAL COMMUNITY COLLEGE",
+      "effective_date": "5/10/2023",
+      "status": "Active",
+      "sponsor": "ASN (M&RA) (OCHR)",
+      "pages": "6",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/12000 Civilian Personnel Services/12-500 Civilian Personnel Position Classification, Pay and Allowances/12534.2.pdf",
+      "filename": "SECNAVINST_12534.2.pdf",
+      "parsed": {
+        "base": "12534.2",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:06.169177"
+    },
+    "12550.1B": {
+      "subject": "PAY ADMINISTRATION (GENERAL)",
+      "effective_date": "12/7/2018",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "6",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/12000 Civilian Personnel Services/12-500 Civilian Personnel Position Classification, Pay and Allowances/12550.1B.pdf",
+      "filename": "SECNAVINST_12550.1B.pdf",
+      "parsed": {
+        "base": "12550.1",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:08.148204"
+    },
+    "12631.1": {
+      "subject": "CREDIT FOR PRIOR NON-FEDERAL WORK EXPERIENCE AND CERTAIN MILITARY SERVICE FOR DETERMINING LEAVE ACCRUAL RATE",
+      "effective_date": "6/19/2018",
+      "status": "Active",
+      "sponsor": "ASN (M&RA) / OCHR 011",
+      "pages": "10",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/12000 Civilian Personnel Services/12-600 Civilian Personnel Attendance and Leave Management/12631.1.pdf",
+      "filename": "SECNAVINST_12631.1.pdf",
+      "parsed": {
+        "base": "12631.1",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:10.132034"
+    },
+    "12711.2": {
+      "subject": "LABOR MANAGEMENT RELATIONS PROGRAM",
+      "effective_date": "1/24/2011",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)/OCPM 02A",
+      "pages": "6",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/12000 Civilian Personnel Services/12-700 Civilian Employee Relations and Services/12711.2.pdf",
+      "filename": "SECNAVINST_12711.2.pdf",
+      "parsed": {
+        "base": "12711.2",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:12.199336"
+    },
+    "12752.1A CH-1": {
+      "subject": "DISCIPLINARY ACTIONS",
+      "effective_date": "11/6/2017",
+      "status": "Active",
+      "sponsor": "ASN (M&RA) OCHR",
+      "pages": "46",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/12000 Civilian Personnel Services/12-700 Civilian Employee Relations and Services/12752.1A CH-1.pdf",
+      "filename": "SECNAVINST_12752.1A_CH-1.pdf",
+      "parsed": {
+        "base": "12752.1",
+        "revision": "A",
+        "change": "CH-1"
+      },
+      "downloaded_at": "2026-04-25T21:41:15.781113"
+    },
+    "12771.2": {
+      "subject": "DEPARTMENT OF THE NAVY ADMINISTRATIVE GRIEVANCE SYSTEM",
+      "effective_date": "7/30/2010",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "10",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/12000 Civilian Personnel Services/12-700 Civilian Employee Relations and Services/12771.2.pdf",
+      "filename": "SECNAVINST_12771.2.pdf",
+      "parsed": {
+        "base": "12771.2",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:17.903557"
+    },
+    "12810.2A": {
+      "subject": "FEDERAL EMPLOYEES' COMPENSATION ACT PROGRAM",
+      "effective_date": "1/24/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "3",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/12000 Civilian Personnel Services/12-800 Personnel Insurance and Annuity Programs/12810.2A.pdf",
+      "filename": "SECNAVINST_12810.2A.pdf",
+      "parsed": {
+        "base": "12810.2",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:19.850055"
+    },
+    "12900.2A CH-1": {
+      "subject": "DEFENSE CIVILIAN INTELLIGENCE PERSONNEL SYSTEM",
+      "effective_date": "12/11/2018",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "7",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/12000 Civilian Personnel Services/12-900 - General and Miscellaneous/12900.2A CH-1.pdf",
+      "filename": "SECNAVINST_12900.2A_CH-1.pdf",
+      "parsed": {
+        "base": "12900.2",
+        "revision": "A",
+        "change": "CH-1"
+      },
+      "downloaded_at": "2026-04-25T21:41:24.777995"
+    },
+    "12990.1B": {
+      "subject": "ACTIVE DUTY SERVICE DETERMINATION FOR CIVILIAN OR CONTRACTUAL GROUPS",
+      "effective_date": "8/22/2018",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "3",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/12000 Civilian Personnel Services/12-900 - General and Miscellaneous/12990.1B.pdf",
+      "filename": "SECNAVINST_12990.1B.pdf",
+      "parsed": {
+        "base": "12990.1",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:26.795051"
+    },
+    "1300.15A_": {
+      "subject": "NATIONAL SECURITY DECISION DIRECTIVE 38",
+      "effective_date": "2/6/2019",
+      "status": "Active",
+      "sponsor": "DUSN",
+      "pages": "6",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-300 Assignment and Distribution Services/1300.15A_.pdf",
+      "filename": "SECNAVINST_1300.15A_.pdf",
+      "parsed": {
+        "base": "1300.15A_",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:28.864211"
+    },
+    "1300.16A": {
+      "subject": "DEFENSE ATTACHE SERVICE",
+      "effective_date": "5/20/2019",
+      "status": "Active",
+      "sponsor": "DUSN",
+      "pages": "8",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-300 Assignment and Distribution Services/1300.16A.pdf",
+      "filename": "SECNAVINST_1300.16A.pdf",
+      "parsed": {
+        "base": "1300.16",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:30.801076"
+    },
+    "1301.4B": {
+      "subject": "STAFF CORPS OF THE NAVY",
+      "effective_date": "4/25/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "3",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-300 Assignment and Distribution Services/1301.4B.pdf",
+      "filename": "SECNAVINST_1301.4B.pdf",
+      "parsed": {
+        "base": "1301.4",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:32.838197"
+    },
+    "1301.7B": {
+      "subject": "DEPARTMENT OF THE NAVY FOREIGN AREA OFFICER PROGRAMS",
+      "effective_date": "4/6/2023",
+      "status": "Active",
+      "sponsor": "DUSN (P)",
+      "pages": "6",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-300 Assignment and Distribution Services/1301.7B.pdf",
+      "filename": "SECNAVINST_1301.7B.pdf",
+      "parsed": {
+        "base": "1301.7",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:35.088106"
+    },
+    "1306.2E": {
+      "subject": "USE OF ENLISTED AIDES ON PERSONAL STAFFS",
+      "effective_date": "9/11/2018",
+      "status": "Active",
+      "sponsor": "SECNAV (SAL)",
+      "pages": "6",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-300 Assignment and Distribution Services/1306.2E.pdf",
+      "filename": "SECNAVINST_1306.2E.pdf",
+      "parsed": {
+        "base": "1306.2",
+        "revision": "E",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:37.012068"
+    },
+    "1320.1A": {
+      "subject": "SECRETARY OF THE NAVY TOURS WITH INDUSTRY PROGRAM",
+      "effective_date": "5/15/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "12",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-300 Assignment and Distribution Services/1320.1A.pdf",
+      "filename": "SECNAVINST_1320.1A.pdf",
+      "parsed": {
+        "base": "1320.1",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:39.012516"
+    },
+    "1400.1D": {
+      "subject": "OFFICER COMPETITIVE CATEGORIES FOR THE ACTIVE-DUTY LIST OF THE NAVY AND MARINE CORPS",
+      "effective_date": "4/8/2025",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "13",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-400 Promotion and Advancement Programs/1400.1D.pdf",
+      "filename": "SECNAVINST_1400.1D.pdf",
+      "parsed": {
+        "base": "1400.1",
+        "revision": "D",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:41.070460"
+    },
+    "1401.4B": {
+      "subject": "CONSIDERATION OF ADVERSE INFORMATION BY GENERAL AND FLAG OFFICER PROMOTION SELECTION BOARDS",
+      "effective_date": "4/30/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "10",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-400 Promotion and Advancement Programs/1401.4B.pdf",
+      "filename": "SECNAVINST_1401.4B.pdf",
+      "parsed": {
+        "base": "1401.4",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:42.958643"
+    },
+    "1402.1": {
+      "subject": "SPECIAL SELECTION BOARDS, SUPPLEMENTAL ALL-FULLY-QUALIFIED-OFFICERS LISTS, AND SPECIAL BOARDS",
+      "effective_date": "4/29/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "25",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-400 Promotion and Advancement Programs/1402.1.pdf",
+      "filename": "SECNAVINST_1402.1.pdf",
+      "parsed": {
+        "base": "1402.1",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:45.014562"
+    },
+    "1412.10A": {
+      "subject": "FLEET MARINE FORCE WARFARE OFFICER PROGRAM",
+      "effective_date": "10/30/2018",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "10",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-400 Promotion and Advancement Programs/1412.10A.pdf",
+      "filename": "SECNAVINST_1412.10A.pdf",
+      "parsed": {
+        "base": "1412.10",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:47.464253"
+    },
+    "1412.11": {
+      "subject": "MARINE CORPS WARRANT OFFICER PROMOTION AND CONTINUATION AND LIMITED DUTY OFFICER CONTINUATION PROCEDURES",
+      "effective_date": "6/27/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "46",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-400 Promotion and Advancement Programs/1412.11.pdf",
+      "filename": "SECNAVINST_1412.11.pdf",
+      "parsed": {
+        "base": "1412.11",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:49.595919"
+    },
+    "1412.6M": {
+      "subject": "PROMOTION OF OFFICERS TO THE GRADE OF LIEUTENANT (JUNIOR GRADE) IN THE NAVY AND TO THE GRADE OF FIRST LIEUTENANT IN THE MARINE CORPS",
+      "effective_date": "4/15/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "20",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-400 Promotion and Advancement Programs/1412.6M.pdf",
+      "filename": "SECNAVINST_1412.6M.pdf",
+      "parsed": {
+        "base": "1412.6",
+        "revision": "M",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:51.727325"
+    },
+    "1412.8C": {
+      "subject": "REGULATIONS TO GOVERN THE PROMOTION AND CONTINUATION OF CHIEF WARRANT OFFICERS AND THE CONTINUATION OF LIMITED DUTY OFFICERS SERVING ON THE ACTIVE DUTY LIST AND RESERVE ACTIVE STATUS LIST IN THE U.S. NAVY",
+      "effective_date": "4/15/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "27",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-400 Promotion and Advancement Programs/1412.8C.pdf",
+      "filename": "SECNAVINST_1412.8C.pdf",
+      "parsed": {
+        "base": "1412.8",
+        "revision": "C",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:53.678594"
+    },
+    "1420.2B": {
+      "subject": "FROCKING OF COMMISSIONED OFFICERS",
+      "effective_date": "10/30/2018",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "12",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-400 Promotion and Advancement Programs/1420.2B.pdf",
+      "filename": "SECNAVINST_1420.2B.pdf",
+      "parsed": {
+        "base": "1420.2",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:55.838941"
+    },
+    "1421.3N": {
+      "subject": "TEMPORARY SPOT PROMOTION OF OFFICERS",
+      "effective_date": "3/13/2026",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "10",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-400 Promotion and Advancement Programs/1421.3N.pdf",
+      "filename": "SECNAVINST_1421.3N.pdf",
+      "parsed": {
+        "base": "1421.3",
+        "revision": "N",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:41:57.923297"
+    },
+    "1520.11C": {
+      "subject": "NAVY ACTIVE DUTY DELAY FOR SPECIALISTS PROGRAM",
+      "effective_date": "9/23/2021",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "9",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-500 Military Training and Education Services/1520.11C.pdf",
+      "filename": "SECNAVINST_1520.11C.pdf",
+      "parsed": {
+        "base": "1520.11",
+        "revision": "C",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:00.357358"
+    },
+    "1520.7G": {
+      "subject": "LAW EDUCATION PROGRAM",
+      "effective_date": "1/22/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "16",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-500 Military Training and Education Services/1520.7G.pdf",
+      "filename": "SECNAVINST_1520.7G.pdf",
+      "parsed": {
+        "base": "1520.7",
+        "revision": "G",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:02.411165"
+    },
+    "1524.2D": {
+      "subject": "POLICIES CONCERNING THE NAVAL POSTGRADUATE SCHOOL",
+      "effective_date": "4/29/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "13",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-500 Military Training and Education Services/1524.2D.pdf",
+      "filename": "SECNAVINST_1524.2D.pdf",
+      "parsed": {
+        "base": "1524.2",
+        "revision": "D",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:04.292961"
+    },
+    "1530.2A": {
+      "subject": "POLICY AND ASSIGNMENT OF RESPONSIBILITIES FOR MIDSHIPMEN SUMMER TRAINING",
+      "effective_date": "11/2/2018",
+      "status": "Active",
+      "sponsor": "ASN(M&RA)",
+      "pages": "3",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-500 Military Training and Education Services/1530.2A.pdf",
+      "filename": "SECNAVINST_1530.2A.pdf",
+      "parsed": {
+        "base": "1530.2",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:06.294833"
+    },
+    "1531.2D": {
+      "subject": "UNITED STATES NAVAL ACADEMY CURRICULUM AND ADMISSIONS POLICY",
+      "effective_date": "11/27/2018",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "4",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-500 Military Training and Education Services/1531.2D.pdf",
+      "filename": "SECNAVINST_1531.2D.pdf",
+      "parsed": {
+        "base": "1531.2",
+        "revision": "D",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:08.205530"
+    },
+    "1531.4B": {
+      "subject": "UNITED STATES NAVAL ACADEMY MIDSHIPMEN DISENROLLMENT",
+      "effective_date": "4/24/2025",
+      "status": "Active",
+      "sponsor": "ASN (M&RA) (MMP)",
+      "pages": "17",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-500 Military Training and Education Services/1531.4B.pdf",
+      "filename": "SECNAVINST_1531.4B.pdf",
+      "parsed": {
+        "base": "1531.4",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:10.393876"
+    },
+    "1532.1A": {
+      "subject": "U.S. NAVY AND MARINE CORPS AVIATION SELECTION TEST BATTERY",
+      "effective_date": "12/27/2018",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "23",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-500 Military Training and Education Services/1532.1A.pdf",
+      "filename": "SECNAVINST_1532.1A.pdf",
+      "parsed": {
+        "base": "1532.1",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:12.473257"
+    },
+    "1560.4B": {
+      "subject": "DEPARTMENT OF THE NAVY VOLUNTARY EDUCATION PROGRAM",
+      "effective_date": "10/18/2018",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "7",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-500 Military Training and Education Services/1560.4B.pdf",
+      "filename": "SECNAVINST_1560.4B.pdf",
+      "parsed": {
+        "base": "1560.4",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:14.498518"
+    },
+    "1640.9D": {
+      "subject": "DEPARTMENT OF THE NAVY CORRECTIONS PROGRAM",
+      "effective_date": "5/15/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "4",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-600 Performance and Discipline Programs/1640.9D.pdf",
+      "filename": "SECNAVINST_1640.9D.pdf",
+      "parsed": {
+        "base": "1640.9",
+        "revision": "D",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:16.378011"
+    },
+    "1700.12B": {
+      "subject": "OPERATION OF MORALE, WELFARE, AND RECREATION ACTIVITIES",
+      "effective_date": "3/26/2021",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "3",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-700 Morale, Community and Religious Services/1700.12B.pdf",
+      "filename": "SECNAVINST_1700.12B.pdf",
+      "parsed": {
+        "base": "1700.12",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:18.505118"
+    },
+    "1730.10B": {
+      "subject": "CHAPLAIN ADVISEMENT AND LIAISON",
+      "effective_date": "3/26/2026",
+      "status": "Active",
+      "sponsor": "ASN (M&RA) MMP",
+      "pages": "5",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-700 Morale, Community and Religious Services/1730.10B.pdf",
+      "filename": "SECNAVINST_1730.10B.pdf",
+      "parsed": {
+        "base": "1730.10",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:20.607288"
+    },
+    "1730.11": {
+      "subject": "CONFIDENTIAL COMMUNICATIONS TO CHAPLAINS",
+      "effective_date": "10/31/2022",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "11",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-700 Morale, Community and Religious Services/1730.11.pdf",
+      "filename": "SECNAVINST_1730.11.pdf",
+      "parsed": {
+        "base": "1730.11",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:22.716716"
+    },
+    "1730.7E": {
+      "subject": "RELIGIOUS MINISTRY WITHIN THE DEPARTMENT OF THE NAVY",
+      "effective_date": "3/11/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "28",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-700 Morale, Community and Religious Services/1730.7E.pdf",
+      "filename": "SECNAVINST_1730.7E.pdf",
+      "parsed": {
+        "base": "1730.7",
+        "revision": "E",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:24.671379"
+    },
+    "1730.8B CH-1": {
+      "subject": "ACCOMMODATION OF RELIGIOUS PRACTICES",
+      "effective_date": "10/2/2008",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)/N097",
+      "pages": "10",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-700 Morale, Community and Religious Services/1730.8B CH-1.pdf",
+      "filename": "SECNAVINST_1730.8B_CH-1.pdf",
+      "parsed": {
+        "base": "1730.8",
+        "revision": "B",
+        "change": "CH-1"
+      },
+      "downloaded_at": "2026-04-25T21:42:26.787538"
+    },
+    "1740.2F": {
+      "subject": "SOLICITATION AND CONDUCT OF PERSONAL COMMERCIAL AFFAIRS ON DEPARTMENT OF THE NAVY INSTALLATIONS",
+      "effective_date": "6/18/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "15",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-700 Morale, Community and Religious Services/1740.2F.pdf",
+      "filename": "SECNAVINST_1740.2F.pdf",
+      "parsed": {
+        "base": "1740.2",
+        "revision": "F",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:28.705384"
+    },
+    "1740.4A": {
+      "subject": "DEPARTMENT OF THE NAVY PERSONAL FINANCIAL MANAGEMENT (PFM) EDUCATION, TRAINING, AND COUNSELING PROGRAM",
+      "effective_date": "4/23/2019",
+      "status": "Active",
+      "sponsor": "ASN (MR&A)",
+      "pages": "20",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-700 Morale, Community and Religious Services/1740.4A.pdf",
+      "filename": "SECNAVINST_1740.4A.pdf",
+      "parsed": {
+        "base": "1740.4",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:30.830650"
+    },
+    "1740.5B": {
+      "subject": "DEPARTMENT OF THE NAVY RECOVERY COORDINATION PROGRAMS",
+      "effective_date": "6/26/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "5",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-700 Morale, Community and Religious Services/1740.5B.pdf",
+      "filename": "SECNAVINST_1740.5B.pdf",
+      "parsed": {
+        "base": "1740.5",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:32.761837"
+    },
+    "1752.3B": {
+      "subject": "FAMILY ADVOCACY PROGRAM (FAP)",
+      "effective_date": "11/10/2005",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "22",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-700 Morale, Community and Religious Services/1752.3B.pdf",
+      "filename": "SECNAVINST_1752.3B.pdf",
+      "parsed": {
+        "base": "1752.3",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:34.728998"
+    },
+    "1754.1B (SECNAV)": {
+      "subject": "DEPARTMENT OF THE NAVY FAMILY SUPPORT PROGRAMS",
+      "effective_date": "9/27/2005",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "21",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-700 Morale, Community and Religious Services/1754.1B (SECNAV).pdf",
+      "filename": "SECNAVINST_1754.1B_SECNAV.pdf",
+      "parsed": {
+        "base": "1754.1B (SECNAV)",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:36.658625"
+    },
+    "1770.4A": {
+      "subject": "SECRETARY OF THE NAVY TRAUMATIC INJURY SERVICE MEMBERS' GROUP LIFE INSURANCE IMPLEMENTATION GUIDANCE AND APPEALS PROCESS",
+      "effective_date": "2/11/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "9",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-700 Morale, Community and Religious Services/1770.4A.pdf",
+      "filename": "SECNAVINST_1770.4A.pdf",
+      "parsed": {
+        "base": "1770.4",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:38.551377"
+    },
+    "1800.2A": {
+      "subject": "POLICY AND PROCEDURES FOR RESERVE COMPONENT MEMBER SERVICE BEYOND 16 YEARS OF ACTIVE DUTY SERVICE",
+      "effective_date": "3/28/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "5",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-800 Millitary Retirement Services and Support/1800.2A.pdf",
+      "filename": "SECNAVINST_1800.2A.pdf",
+      "parsed": {
+        "base": "1800.2",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:40.419978"
+    },
+    "1800.3A": {
+      "subject": "RETIREMENT OF THE ASSISTANT JUDGE ADVOCATE GENERAL OF THE NAVY",
+      "effective_date": "10/5/2018",
+      "status": "Active",
+      "sponsor": "SAL",
+      "pages": "3",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-800 Millitary Retirement Services and Support/1800.3A.pdf",
+      "filename": "SECNAVINST_1800.3A.pdf",
+      "parsed": {
+        "base": "1800.3",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:42.492431"
+    },
+    "1850.4F": {
+      "subject": "DEPARTMENT OF THE NAVY DISABILITY EVALUATION SYSTEM",
+      "effective_date": "6/27/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "14",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-800 Millitary Retirement Services and Support/1850.4F.pdf",
+      "filename": "SECNAVINST_1850.4F.pdf",
+      "parsed": {
+        "base": "1850.4",
+        "revision": "F",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:44.475741"
+    },
+    "1920.7C": {
+      "subject": "CONTINUATION ON ACTIVE DUTY OF REGULAR COMMISSIONED OFFICERS AND RESERVE OFFICERS ON THE RESERVE ACTIVE STATUS LIST IN THE NAVY AND MARINE CORPS",
+      "effective_date": "1/22/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "13",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-900 Military Separation Services/1920.7C.pdf",
+      "filename": "SECNAVINST_1920.7C.pdf",
+      "parsed": {
+        "base": "1920.7",
+        "revision": "C",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:46.524486"
+    },
+    "1920.8": {
+      "subject": "SELECTIVE RETIREMENT, SELECTIVE EARLY RETIREMENT, SELECTIVE EARLY REMOVAL, AND SELECTIVE EARLY DISCHARGE OF NAVY AND MARINE CORPS COMMISSIONED OFFICERS",
+      "effective_date": "5/20/2019",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "20",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-900 Military Separation Services/1920.8.pdf",
+      "filename": "SECNAVINST_1920.8.pdf",
+      "parsed": {
+        "base": "1920.8",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:48.541444"
+    },
+    "2200.6": {
+      "subject": "COMMUNICATIONS SECURITY MONITORING",
+      "effective_date": "3/17/2023",
+      "status": "Active",
+      "sponsor": "DON CIO",
+      "pages": "10",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/02000 Telecommunications and Digital Systems Support/02-200 Communications Security Services/2200.6.pdf",
+      "filename": "SECNAVINST_2200.6.pdf",
+      "parsed": {
+        "base": "2200.6",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:50.725360"
+    },
+    "2201.1": {
+      "subject": "DEPARTMENT OF THE NAVY COMMUNICATIONS SECURITY MATERIAL PROGRAM IMPLEMENTATION",
+      "effective_date": "5/23/2016",
+      "status": "Active",
+      "sponsor": "DUSN (M) (DON CIO)",
+      "pages": "4",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/02000 Telecommunications and Digital Systems Support/02-200 Communications Security Services/2201.1.pdf",
+      "filename": "SECNAVINST_2201.1.pdf",
+      "parsed": {
+        "base": "2201.1",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:53.744681"
+    },
+    "2251.1": {
+      "subject": "NAVY CRYPTOGRAPHIC MODERNIZATION REPORTING",
+      "effective_date": "12/9/2013",
+      "status": "Active",
+      "sponsor": "N2/N6",
+      "pages": "4",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/02000 Telecommunications and Digital Systems Support/02-200 Communications Security Services/2251.1.pdf",
+      "filename": "SECNAVINST_2251.1.pdf",
+      "parsed": {
+        "base": "2251.1",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:57.559683"
+    },
+    "2400.1B": {
+      "subject": "ELECTROMAGNETIC SPECTRUM POLICY AND MANAGEMENT",
+      "effective_date": "5/20/2019",
+      "status": "Active",
+      "sponsor": "OCIO",
+      "pages": "22",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/02000 Telecommunications and Digital Systems Support/02-400 Visual Information Services/2400.1B.pdf",
+      "filename": "SECNAVINST_2400.1B.pdf",
+      "parsed": {
+        "base": "2400.1",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:42:59.672726"
+    },
+    "2400.2B": {
+      "subject": "ELECTROMAGNETIC ENVIRONMENTAL EFFECTS AND SPACE WEATHER EVENT PREPAREDNESS POLICY AND MANAGEMENT",
+      "effective_date": "9/9/2022",
+      "status": "Active",
+      "sponsor": "DON CIO",
+      "pages": "10",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/02000 Telecommunications and Digital Systems Support/02-400 Visual Information Services/2400.2B.pdf",
+      "filename": "SECNAVINST_2400.2B.pdf",
+      "parsed": {
+        "base": "2400.2",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:01.791789"
+    },
+    "2400.3": {
+      "subject": "ELECTROMAGNETIC BATTLE SPACE",
+      "effective_date": "10/5/2018",
+      "status": "Active",
+      "sponsor": "OCIO",
+      "pages": "9",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/02000 Telecommunications and Digital Systems Support/02-400 Visual Information Services/2400.3.pdf",
+      "filename": "SECNAVINST_2400.3.pdf",
+      "parsed": {
+        "base": "2400.3",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:03.904887"
+    },
+    "2400.4": {
+      "subject": "DEPARTMENT OF THE NAVY SPECTRUM RELOCATION FUND PROGRAM",
+      "effective_date": "3/15/2024",
+      "status": "Active",
+      "sponsor": "DON CIO",
+      "pages": "17",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/02000 Telecommunications and Digital Systems Support/02-400 Visual Information Services/2400.4.pdf",
+      "filename": "SECNAVINST_2400.4.pdf",
+      "parsed": {
+        "base": "2400.4",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:06.053125"
+    },
+    "2830.1A": {
+      "subject": "JOINT ELECTRONICS TYPE DESIGNATION AUTOMATED SYSTEM",
+      "effective_date": "10/3/2024",
+      "status": "Active",
+      "sponsor": "ASN (RD&A)",
+      "pages": "12",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/02000 Telecommunications and Digital Systems Support/02-800 Communications Plans, Program and Requirements/2830.1A.pdf",
+      "filename": "SECNAVINST_2830.1A.pdf",
+      "parsed": {
+        "base": "2830.1",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:08.196726"
+    },
+    "3030.4E": {
+      "subject": "DEPARTMENT OF THE NAVY POLICY FOR CONTINUITY OF OPERATIONS PROGRAMS",
+      "effective_date": "5/1/2019",
+      "status": "Active",
+      "sponsor": "DUSN",
+      "pages": "15",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-00 General Operations and Readiness Support/3030.4E.pdf",
+      "filename": "SECNAVINST_3030.4E.pdf",
+      "parsed": {
+        "base": "3030.4",
+        "revision": "E",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:10.228069"
+    },
+    "3052.2": {
+      "subject": "CYBERSPACE POLICY AND ADMINISTRATION WITHIN THE DEPARTMENT OF THE NAVY",
+      "effective_date": "3/6/2009",
+      "status": "Active",
+      "sponsor": "DUSN",
+      "pages": "11",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-00 General Operations and Readiness Support/3052.2.pdf",
+      "filename": "SECNAVINST_3052.2.pdf",
+      "parsed": {
+        "base": "3052.2",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:12.228387"
+    },
+    "3070.2A": {
+      "subject": "OPERATIONS SECURITY",
+      "effective_date": "5/9/2019",
+      "status": "Active",
+      "sponsor": "DUSN",
+      "pages": "28",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-00 General Operations and Readiness Support/3070.2A.pdf",
+      "filename": "SECNAVINST_3070.2A.pdf",
+      "parsed": {
+        "base": "3070.2",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:14.297503"
+    },
+    "3300.1D": {
+      "subject": "DEPARTMENT OF THE NAVY LAW OF WAR PROGRAM",
+      "effective_date": "5/19/2022",
+      "status": "Active",
+      "sponsor": "OJAG",
+      "pages": "16",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-300 Warfare Techniques/3300.1D.pdf",
+      "filename": "SECNAVINST_3300.1D.pdf",
+      "parsed": {
+        "base": "3300.1",
+        "revision": "D",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:16.483677"
+    },
+    "3300.2C": {
+      "subject": "DEPARTMENT OF THE NAVY ANTITERRORISM PROGRAM",
+      "effective_date": "8/13/2018",
+      "status": "Active",
+      "sponsor": "DUSN",
+      "pages": "12",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-300 Warfare Techniques/3300.2C.pdf",
+      "filename": "SECNAVINST_3300.2C.pdf",
+      "parsed": {
+        "base": "3300.2",
+        "revision": "C",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:18.522129"
+    },
+    "3501.2": {
+      "subject": "DEPARTMENT OF THE NAVY MISSION ASSURANCE PROGRAM",
+      "effective_date": "1/4/2021",
+      "status": "Active",
+      "sponsor": "DUSN",
+      "pages": "19",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-500 Training and Readiness Services/3501.2.pdf",
+      "filename": "SECNAVINST_3501.2.pdf",
+      "parsed": {
+        "base": "3501.2",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:20.545848"
+    },
+    "3590.5A": {
+      "subject": "AWARD OF MEDALS, TROPHIES, BADGES, AND SIMILAR HONORS IN RECOGNITION OF ACCOMPLISHMENTS",
+      "effective_date": "2/2/2018",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "3",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-500 Training and Readiness Services/3590.5A.pdf",
+      "filename": "SECNAVINST_3590.5A.pdf",
+      "parsed": {
+        "base": "3590.5",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:22.593253"
+    },
+    "3700.2": {
+      "subject": "GUIDANCE FOR THE DOMESTIC USE OF UNMANNED AIRCRAFT SYSTEMS IN UNITED STATES NATIONAL AIRSPACE",
+      "effective_date": "4/27/2021",
+      "status": "Active",
+      "sponsor": "DUSN",
+      "pages": "17",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-700 Flight and Air Space Support Services/3700.2.pdf",
+      "filename": "SECNAVINST_3700.2.pdf",
+      "parsed": {
+        "base": "3700.2",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:24.755768"
+    },
+    "3800.9B": {
+      "subject": "NATIONAL CENTER FOR MEDICAL INTELLIGENCE (NCMI)",
+      "effective_date": "12/21/2018",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "2",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-800 Intelligence Support/3800.9B.pdf",
+      "filename": "SECNAVINST_3800.9B.pdf",
+      "parsed": {
+        "base": "3800.9",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:26.843244"
+    },
+    "3820.3F": {
+      "subject": "INTELLIGENCE OVERSIGHT WITHIN THE DEPARTMENT OF THE NAVY",
+      "effective_date": "1/2/2020",
+      "status": "Active",
+      "sponsor": "DUSN",
+      "pages": "20",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-800 Intelligence Support/3820.3F.pdf",
+      "filename": "SECNAVINST_3820.3F.pdf",
+      "parsed": {
+        "base": "3820.3",
+        "revision": "F",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:28.924243"
+    },
+    "3820.4": {
+      "subject": "(U) OPEN SOURCE INTELLIGENCE",
+      "effective_date": "3/24/2022",
+      "status": "Active",
+      "sponsor": "DUSN (I&S)",
+      "pages": "1",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-800 Intelligence Support/3820.4.pdf",
+      "filename": "SECNAVINST_3820.4.pdf",
+      "parsed": {
+        "base": "3820.4",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:30.844061"
+    },
+    "3850.2E": {
+      "subject": "DEPARTMENT OF THE NAVY COUNTERINTELLIGENCE",
+      "effective_date": "1/3/2017",
+      "status": "Active",
+      "sponsor": "DUSN (P)",
+      "pages": "18",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-800 Intelligence Support/3850.2E.pdf",
+      "filename": "SECNAVINST_3850.2E.pdf",
+      "parsed": {
+        "base": "3850.2",
+        "revision": "E",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:33.962040"
+    },
+    "3850.4B": {
+      "subject": "TECHNICAL SURVEILLANCE COUNTERMEASURES PROGRAM",
+      "effective_date": "5/29/2019",
+      "status": "Active",
+      "sponsor": "DUSN",
+      "pages": "22",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-800 Intelligence Support/3850.4B.pdf",
+      "filename": "SECNAVINST_3850.4B.pdf",
+      "parsed": {
+        "base": "3850.4",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:35.899188"
+    },
+    "3900.29F": {
+      "subject": "STANDARD FORMAT REQUIREMENTS FOR SCIENTIFIC AND TECHNICAL REPORTS",
+      "effective_date": "5/29/2019",
+      "status": "Active",
+      "sponsor": "ONR",
+      "pages": "5",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-900 Research, Development, Test and Evaluation Services/3900.29F.pdf",
+      "filename": "SECNAVINST_3900.29F.pdf",
+      "parsed": {
+        "base": "3900.29",
+        "revision": "F",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:37.792839"
+    },
+    "3900.38C": {
+      "subject": "THE CARE AND USE OF LABORATORY ANIMALS IN DOD PROGRAMS",
+      "effective_date": "2/16/2005",
+      "status": "Active",
+      "sponsor": "JOINT",
+      "pages": "35",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-900 Research, Development, Test and Evaluation Services/3900.38C.pdf",
+      "filename": "SECNAVINST_3900.38C.pdf",
+      "parsed": {
+        "base": "3900.38",
+        "revision": "C",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:43.305959"
+    },
+    "3900.39E CH-1": {
+      "subject": "HUMAN RESEARCH PROTECTION PROGRAM",
+      "effective_date": "5/29/2018",
+      "status": "Active",
+      "sponsor": "ONR 343",
+      "pages": "51",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-900 Research, Development, Test and Evaluation Services/3900.39E CH-1.pdf",
+      "filename": "SECNAVINST_3900.39E_CH-1.pdf",
+      "parsed": {
+        "base": "3900.39",
+        "revision": "E",
+        "change": "CH-1"
+      },
+      "downloaded_at": "2026-04-25T21:43:45.807836"
+    },
+    "3900.41H": {
+      "subject": "ACQUISITION, TRANSPORT, CARE, AND TREATMENT OF NAVY MARINE MAMMALS",
+      "effective_date": "10/10/2018",
+      "status": "Active",
+      "sponsor": "ASN (RD&A)",
+      "pages": "4",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-900 Research, Development, Test and Evaluation Services/3900.41H.pdf",
+      "filename": "SECNAVINST_3900.41H.pdf",
+      "parsed": {
+        "base": "3900.41",
+        "revision": "H",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:48.165008"
+    },
+    "3900.45A": {
+      "subject": "NAVAL SCIENCE, TECHNOLOGY, ENGINEERING, AND MATHEMATICS POLICY AND COORDINATION",
+      "effective_date": "5/13/2019",
+      "status": "Active",
+      "sponsor": "CNR",
+      "pages": "6",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/03000 Naval Operations and Readiness/03-900 Research, Development, Test and Evaluation Services/3900.45A.pdf",
+      "filename": "SECNAVINST_3900.45A.pdf",
+      "parsed": {
+        "base": "3900.45",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:50.093868"
+    },
+    "4000.35B": {
+      "subject": "DEPARTMENT OF THE NAVY CULTURAL RESOURCES PROGRAM",
+      "effective_date": "4/16/2019",
+      "status": "Active",
+      "sponsor": "ASN (EI&E)",
+      "pages": "18",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/04000 Logistical Support and Services/04-00 General Logistical Support/4000.35B.pdf",
+      "filename": "SECNAVINST_4000.35B.pdf",
+      "parsed": {
+        "base": "4000.35",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:52.154681"
+    },
+    "4000.37C": {
+      "subject": "NAVAL LOGISTICS INTEGRATION",
+      "effective_date": "8/4/2022",
+      "status": "Active",
+      "sponsor": "ASN (RD&A)",
+      "pages": "5",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/04000 Logistical Support and Services/04-00 General Logistical Support/4000.37C.pdf",
+      "filename": "SECNAVINST_4000.37C.pdf",
+      "parsed": {
+        "base": "4000.37",
+        "revision": "C",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:43:54.247566"
+    },
+    "4001.2K": {
+      "subject": "ACCEPTANCE OF GIFTS",
+      "effective_date": "5/7/2018",
+      "status": "Active",
+      "sponsor": "OGC",
+      "pages": "22",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/04000 Logistical Support and Services/04-00 General Logistical Support/4001.2K.pdf",
+      "filename": "SECNAVINST_4001.2K.pdf",
+      "parsed": {
+        "base": "4001.2",
+        "revision": "K",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:44:14.668031"
+    },
+    "4101.2A": {
+      "subject": "SECRETARY OF THE NAVY ENERGY EXCELLENCE AWARDS PROGRAM",
+      "effective_date": "3/15/2019",
+      "status": "Active",
+      "sponsor": "ASN (EI&E)",
+      "pages": "5",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/04000 Logistical Support and Services/04-100 Material Resources Storage and Management/4101.2A.pdf",
+      "filename": "SECNAVINST_4101.2A.pdf",
+      "parsed": {
+        "base": "4101.2",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:44:17.012697"
+    },
+    "4101.3A": {
+      "subject": "DEPARTMENT OF THE NAVY ENERGY PROGRAM",
+      "effective_date": "1/19/2017",
+      "status": "Active",
+      "sponsor": "ASN (EI&E)",
+      "pages": "11",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/04000 Logistical Support and Services/04-100 Material Resources Storage and Management/4101.3A.pdf",
+      "filename": "SECNAVINST_4101.3A.pdf",
+      "parsed": {
+        "base": "4101.3",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:44:25.441342"
+    },
+    "4105.1D": {
+      "subject": "INDEPENDENT LOGISTICS ASSESSMENT AND CERTIFICATION REQUIREMENTS",
+      "effective_date": "3/12/2018",
+      "status": "Active",
+      "sponsor": "ASN (RD&A)",
+      "pages": "8",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/04000 Logistical Support and Services/04-100 Material Resources Storage and Management/4105.1D.pdf",
+      "filename": "SECNAVINST_4105.1D.pdf",
+      "parsed": {
+        "base": "4105.1",
+        "revision": "D",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:44:27.436603"
+    },
+    "4120.24A": {
+      "subject": "IMPLEMENTATION OF THE DEFENSE STANDARDIZATION PROGRAM IN THE DEPARTMENT OF THE NAVY",
+      "effective_date": "3/29/2019",
+      "status": "Active",
+      "sponsor": "ASN (RD&A)",
+      "pages": "5",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/04000 Logistical Support and Services/04-100 Material Resources Storage and Management/4120.24A.pdf",
+      "filename": "SECNAVINST_4120.24A.pdf",
+      "parsed": {
+        "base": "4120.24",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:44:29.434746"
+    },
+    "4140.2": {
+      "subject": "MANAGEMENT OF AVIATION CRITICAL SAFETY ITEMS (JOINT)",
+      "effective_date": "1/25/2006",
+      "status": "Active",
+      "sponsor": "DASN(L)",
+      "pages": "33",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/04000 Logistical Support and Services/04-100 Material Resources Storage and Management/4140.2.pdf",
+      "filename": "SECNAVINST_4140.2.pdf",
+      "parsed": {
+        "base": "4140.2",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:44:39.522614"
+    },
+    "4200.36B": {
+      "subject": "CONTRACTOR LABOR RELATIONS",
+      "effective_date": "6/10/2019",
+      "status": "Active",
+      "sponsor": "ASN (RD&A)",
+      "pages": "16",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/04000 Logistical Support and Services/04-200 Contracting Services/4200.36B.pdf",
+      "filename": "SECNAVINST_4200.36B.pdf",
+      "parsed": {
+        "base": "4200.36",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:44:41.658427"
+    },
+    "4200.37A": {
+      "subject": "ORGANIC DEPARTMENT OF THE NAVY PROCUREMENT SYSTEM OVERSIGHT AND MANAGEMENT",
+      "effective_date": "5/14/2019",
+      "status": "Active",
+      "sponsor": "DASN (AP)",
+      "pages": "7",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/04000 Logistical Support and Services/04-200 Contracting Services/4200.37A.pdf",
+      "filename": "SECNAVINST_4200.37A.pdf",
+      "parsed": {
+        "base": "4200.37",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:44:43.849890"
+    },
+    "4380.9A": {
+      "subject": "GOVERNANCE OF THE DEPARTMENT OF THE NAVY\u2019S OFFICE OF SMALL BUSINESS PROGRAMS, SMALL BUSINESS INNOVATION RESEARCH, AND SMALL BUSINESS TECHNOLOGY TRANSFER PROGRAMS",
+      "effective_date": "3/24/2021",
+      "status": "Active",
+      "sponsor": "OSBP",
+      "pages": "24",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/04000 Logistical Support and Services/04-300 Food Service and Support/4380.9A.pdf",
+      "filename": "SECNAVINST_4380.9A.pdf",
+      "parsed": {
+        "base": "4380.9",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:44:48.871617"
+    },
+    "4410.23A": {
+      "subject": "JOINT REGULATION GOVERNING THE USE AND APPLICATION OF UNIFORM SOURCE, MAINTENANCE, AND RECOVERABILITY CODES",
+      "effective_date": "8/29/2020",
+      "status": "Active",
+      "sponsor": "ASN (RD&A)",
+      "pages": "29",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/04000 Logistical Support and Services/04-400 Supply and Material Services/4410.23A.pdf",
+      "filename": "SECNAVINST_4410.23A.pdf",
+      "parsed": {
+        "base": "4410.23",
+        "revision": "A",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:44:52.754637"
+    },
+    "4440.34": {
+      "subject": "IMPLEMENTATION OF ITEM UNIQUE IDENTIFICATION WITHIN THE DEPARTMENT OF THE NAVY",
+      "effective_date": "12/22/2009",
+      "status": "Active",
+      "sponsor": "ASN (RD&A)",
+      "pages": "17",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/04000 Logistical Support and Services/04-400 Supply and Material Services/4440.34.pdf",
+      "filename": "SECNAVINST_4440.34.pdf",
+      "parsed": {
+        "base": "4440.34",
+        "revision": "",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:44:54.971936"
+    },
+    "4535.3B": {
+      "subject": "VENDING FACILITY PROGRAM FOR THE BLIND ON FEDERAL PROPERTY",
+      "effective_date": "3/26/2021",
+      "status": "Active",
+      "sponsor": "ASN (M&RA)",
+      "pages": "4",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/04000 Logistical Support and Services/04-500 Redistribution and Disposal of Property/4535.3B.pdf",
+      "filename": "SECNAVINST_4535.3B.pdf",
+      "parsed": {
+        "base": "4535.3",
+        "revision": "B",
+        "change": ""
+      },
+      "downloaded_at": "2026-04-25T21:44:57.542474"
+    },
+    "1401.3B CH-1": {
+      "subject": "SELECTION BOARD MEMBERSHIP",
+      "effective_date": "4/21/2026",
+      "status": "Active",
+      "sponsor": "ASN (M&RA) (MMP)",
+      "pages": "36",
+      "pdf_url": "https://www.secnav.navy.mil/doni/Directives/01000 Military Personnel Support/01-400 Promotion and Advancement Programs/1401.3B CH-1.pdf",
+      "filename": "SECNAVINST_1401.3B_CH-1.pdf",
+      "parsed": {
+        "base": "1401.3",
+        "revision": "B",
+        "change": "CH-1"
+      },
+      "downloaded_at": "2026-04-28T11:41:20.240208"
+    }
+  },
+  "last_check": "2026-05-08T07:49:07.215419"
+}

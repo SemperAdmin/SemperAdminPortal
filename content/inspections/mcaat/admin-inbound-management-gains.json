@@ -1,0 +1,234 @@
+{
+  "track": "mcaat",
+  "programNumber": "admin",
+  "slug": "inbound-management-gains",
+  "section": "Admin",
+  "categoryLabel": "Inbound Management/Gains",
+  "title": "Inbound Management/Gains",
+  "summary": "MCAAT Admin checklist - Inbound Management/Gains. 18 unique items across 3 audiences.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "applicabilityLevel": "IPAC, Reporting Unit, and Supporting Unit",
+  "lastVerified": "2026-05-10",
+  "source": {
+    "title": "MCAAT Admin Checklist - Inbound Management/Gains",
+    "publisher": "Marine Corps Manpower and Reserve Affairs"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "IPAC",
+      "description": "",
+      "items": [
+        {
+          "code": "18",
+          "question": "For Marines arriving to their first Permanent Duty Station (PDS), is a comprehensive review of Pay and Allowance received through the training pipeline completed within 60 days of join?",
+          "references": [
+            "MCTFSPRIUM, 12-120103"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "12",
+          "question": "Are active duty reporting units validating pay and entitlements for activated reservist attached to their administrative reporting unit code (ARUC)?",
+          "references": [
+            "DoDFMR VOL 7A, CHAP. 26 PAR 261005",
+            "MCTFSPRIUM 9-91800",
+            "MARADMIN 015/20"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "14",
+          "question": "For joins processed outside of IBI, is the join audit process completed IAW MCTFSPRIUM, 12-120103?",
+          "references": [
+            "MCTFSPRIUM, 12-120103, 12-120104"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "15",
+          "question": "For joins processed outside of IBI, does the organization maintain and retain supporting documents on file for audit, and in accordance with retention policies?",
+          "references": [
+            "MCTFSPRIUM, 12-120103",
+            "MARADMIN 601/24"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "16",
+          "question": "For joins processed outside of IBI, is the PCS travel claim submitted in accordance with current regulations?",
+          "references": [
+            "FPM, Vol 2, para 030501"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        },
+        {
+          "code": "17",
+          "question": "For joins processed outside of IBI or at DUINS station, is the unit ensuring all required documents are resident in the OMPF? (Contractual documents (i.e. DD Form 4, DD Form 1966), dependent documents (as applicable i.e. NAVMC 10922, Marriage Certificate), and as applicable, Meritorious Promotion Warrants (DD Form 216), Montgomery G.I Bill Form DD Form 2366, etc).",
+          "references": [
+            "MCO 1070.1",
+            "MCTFSPRIUM, 12-120103",
+            "MARADMIN 015/20"
+          ],
+          "audience": [
+            "IPAC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02.0",
+      "title": "Reporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "01",
+          "question": "For joins processed outside of IBI, is the join audit process completed IAW MCTFSPRIUM, 12-120103?",
+          "references": [
+            "MCTFSPRIUM, 12-120103,12-120104"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "03",
+          "question": "For joins processed outside of IBI, is the PCS travel claim submitted in accordance with current regulations?",
+          "references": [
+            "FPM, Vol 2, para 030501"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "04",
+          "question": "For joins processed outside of IBI or at DUINS station, is the unit ensuring all required documents are resident in the OMPF? (Contractual documents (i.e. DD Form 4, DD Form 1966), dependent documents (as applicable i.e. NAVMC 10922, Marriage Certificate), and as applicable, Meritorious Promotion Warrants (DD Form 216), Montgomery G.I Bill Form DD Form 2366, etc).",
+          "references": [
+            "MCO 1070.1",
+            "MCTFSPRIUM, 12-120103",
+            "MARADMIN 015/20"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "05",
+          "question": "For Marines arriving to their first Permanent Duty Station (PDS), is a comprehensive review of Pay and Allowance received through the training pipeline completed within 60 days of reporting?",
+          "references": [
+            "MCTFSPRIUM, 12-120103"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "06",
+          "question": "Is the Inbound Interview (IBI) set in a 'MOL-Submitted' status within 5 days of the report date?",
+          "references": [
+            "MCTFSPRIUM, 12-120103"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "07",
+          "question": "Is the Travel Interview (TVI) submitted within 5 working days of the report date?",
+          "references": [
+            "FPM Vol 2, para 030102 and 030505",
+            "MCTFSPRIUM, 12-120103"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "08",
+          "question": "Is the Inbound Interview (IBI) set in a 'MOL-Approved' status within 15 days of the report date?",
+          "references": [
+            "MCTFSPRIUM, 12-120103"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "13",
+          "question": "Are active duty reporting units validating pay and entitlements for activated reservist attached to their administrative reporting unit code (ARUC)?",
+          "references": [
+            "DoDFMR VOL 7A, CHAP. 26 PAR 261005",
+            "MCTFSPRIUM 9-91800",
+            "MARADMIN 015/20"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        },
+        {
+          "code": "02",
+          "question": "For joins processed outside of IBI, does the organization maintain and retain supporting documents on file for audit, and in accordance with retention policies?",
+          "references": [
+            "MCTFSPRIUM, 12-120103",
+            "MARADMIN 601/24"
+          ],
+          "audience": [
+            "REPORTING"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.0",
+      "title": "Supporting Unit",
+      "description": "",
+      "items": [
+        {
+          "code": "09",
+          "question": "Is the Inbound Interview (IBI) set in a 'MOL-Submitted' status within 5 days of the report date?",
+          "references": [
+            "MCTFSPRIUM, 12-120103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "10",
+          "question": "Is the Travel Interview (TVI) submitted within 5 working days of the report date?",
+          "references": [
+            "FPM Vol 2, para 030102 and 030505",
+            "MCTFSPRIUM, 12-120103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        },
+        {
+          "code": "11",
+          "question": "Is the Inbound Interview (IBI) set in a 'MOL-Approved' status within 15 days of the report date?",
+          "references": [
+            "MCTFSPRIUM, 12-120103"
+          ],
+          "audience": [
+            "SUPPORTING"
+          ]
+        }
+      ]
+    }
+  ]
+}

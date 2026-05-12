@@ -1,0 +1,110 @@
+---
+title: "Debt Collection Instructions and Due Process"
+slug: "debt-collection-instructions-and-due-process"
+summary: "Apply DoDFMR Vol 16 Chapter 2 demand letter procedures, due process notification, salary offset rules, administrative wage garnishment, IRS refund offset, credit reporting, and Treasury referral for individual DoD debt."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-12"
+unitType: "s1-g1"
+topic: "waivers-remissions-indebtedness"
+function: "GENA"
+skillLevel: 2100
+trEventCode: "0111-GENA-2018"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "DoDFMR Vol 16"
+billets: ["s-1-clerk", "s-1-chief", "g-1-officer", "ipac-pay-clerk"]
+gradesPerforming: ["Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "DoDFMR Vol 16 Chapter 2 General Instructions for Collection of Debt Owed to the DoD"
+  - "DoDFMR Vol 16 Chapter 7 Interest, Penalties, and Administrative Costs"
+  - "5 USC 5514 Federal Salary Offset"
+  - "31 USC 3711 Collection and Compromise"
+  - "31 USC 3716 Administrative Offset"
+  - "31 USC 3720D Administrative Wage Garnishment"
+  - "31 CFR Parts 900-904 Federal Claims Collection Standards"
+relatedRoles:
+  marine: "/marines/waivers-remissions-indebtedness/debt-collection-instructions-and-due-process"
+  leader: "/leader/waivers-remissions-indebtedness/debt-collection-instructions-and-due-process"
+  commander: "/commander/waivers-remissions-indebtedness/debt-collection-instructions-and-due-process"
+source:
+  title: "DoDFMR Vol 16 Chapter 2 General Instructions for Collection of Debt Owed to the DoD"
+  publisher: "Office of the Under Secretary of Defense (Comptroller)"
+---
+
+## Role and responsibility
+
+S-1 admin specialists and IPAC pay clerks deliver the due process notification on debts owed by Marines and route the salary offset start through DFAS. The S-1 chief verifies the debt validation against the source transaction before the demand letter goes out. The IPAC pay clerk loads the salary offset transaction in MCTFS per the demand letter timeline. The S-1 officer signs by direction on the demand letter delivery record and the due process certification.
+
+Source documents flow from the DFAS debt notice, the MCTFS debt entry, the demand letter, the due process notification, the Marine acknowledgment or dispute response, the salary offset start record, and the Treasury referral file. Outputs include the certified demand letter, the due process certification, the salary offset transaction, the administrative wage garnishment order (for separated Marines), and the Treasury referral package for delinquent debts.
+
+DoDFMR Vol 16 Chapter 2 is the framework for every DoD debt collection action. Marine pay debt routes through Vol 7A Chapter 50 for waivers and remissions, but the underlying due process and collection mechanics route through Vol 16 Chapter 2.
+
+## Trigger events
+
+- DFAS posts a debt to the Marine MCTFS record.
+- Audit identifies an overpayment requiring collection.
+- Court-martial adjudication produces forfeitures or fines.
+- Separation closeout identifies an outstanding pay debt.
+- Travel claim rejection generates a debt against the advance.
+- Bonus repayment requirement attaches on separation or reclassification.
+- Debt sits delinquent past the 120-day Treasury referral threshold.
+
+## Processing workflow
+
+1. Validate the debt. Trace the debt to the source transaction and the supporting KSD per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2. The debt is valid only with a documented source.
+2. Issue the initial demand letter. The demand letter notifies the Marine of the debt, the basis, the amount, the right to inspect records, the right to dispute, the right to a hearing, the right to apply for a waiver or remission, the right to repay voluntarily, and the consequences of nonpayment per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2.
+3. Track the due process timeline. The Marine has 30 days from the demand letter to dispute, request a hearing, apply for waiver remission, or arrange voluntary repayment per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2.
+4. Process the Marine response. The S-1 chief routes dispute requests to the hearing process at hearings-informal-disputes-and-waivers-remissions. The S-1 chief routes waiver remission applications under DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 4 and Vol 7A Chapter 50.
+5. Start salary offset. On expiration of the 30-day window without dispute or repayment arrangement, the IPAC pay clerk starts salary offset per 5 USC 5514 and DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2. Salary offset caps at 15 percent of disposable pay for routine debt.
+6. Process administrative offset. For tax refund offset, vendor payment offset, or other federal payment offset, the salary offset extends to administrative offset per 31 USC 3716.
+7. Process administrative wage garnishment for separated Marines. After separation, debt collection extends to private-sector wages per 31 USC 3720D and DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2 with a 30-day notice and hearing right.
+8. Add interest, penalties, and administrative costs. Per 31 USC 3717 and DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 7, interest accrues on delinquent debt, penalties apply after 90 days delinquent, and administrative costs route through DFAS.
+9. Refer delinquent debt to Treasury. After 120 days delinquent, DFAS refers the debt to Treasury Offset Program (TOP) per 31 USC 3716 and DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2.
+10. Report to credit bureaus. Per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2, DFAS reports delinquent debt to credit bureaus after the 30-day due process window and 60 days delinquent.
+
+## Systems of record and forms
+
+### Systems
+
+- MCTFS. Holds the debt entry and the salary offset transaction.
+- DFAS Indianapolis. Owns the demand letter issuance, due process tracking, and Treasury referral.
+- UD-MIPS. Cuts the salary offset transaction.
+- Treasury Offset Program (TOP). Receives the Treasury referral for delinquent debt.
+- Credit bureaus. Receive delinquent debt reports for separated Marines and for civilian employee debt.
+
+### Forms
+
+- Initial Demand Letter. The debtor due process notification per Vol 16 Ch 2.
+- Final Demand Letter. The second notification before Treasury referral.
+- Salary Offset Authorization. The internal authorization for the 15 percent salary offset.
+- Administrative Wage Garnishment Order. Post-separation wage garnishment per 31 USC 3720D.
+- Treasury Offset Referral Package. The TOP referral file for delinquent debt.
+
+## Common pitfalls
+
+- Demand letter missing due process language. The salary offset is procedurally defective. Include every Vol 16 Ch 2 required element in the demand letter.
+- 30-day window not tracked. Salary offset starts late and interest accrues. Calendar the 30-day window at the moment of demand letter delivery.
+- Salary offset exceeds 15 percent of disposable pay. The Marine disputes and the offset rolls back. Apply the 15 percent cap per 5 USC 5514 and DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2.
+- Administrative wage garnishment without notice. The garnishment is procedurally defective. Issue the 30-day notice per 31 USC 3720D before the garnishment routes to the employer.
+- Interest and penalty miscalculation. Per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 7, interest accrues from the date of the initial demand letter at the Treasury current value of funds rate. Penalty applies after 90 days delinquent at 6 percent per annum.
+
+## Decision points
+
+- Voluntary repayment versus salary offset. The Marine arranges voluntary repayment through DFAS within the 30-day window and avoids salary offset. The S-1 chief counsels the Marine on the voluntary repayment option.
+- Treasury referral timing. DFAS refers delinquent debt to Treasury at 120 days delinquent per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2. The Marine retains hearing and waiver remission rights through the referral.
+- Hardship compromise. The Marine demonstrates financial hardship. DFAS reduces the salary offset rate below 15 percent on documented hardship per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2.
+
+## Authority
+
+This sub-page maps to NAVMC 3500.3E T-R event 0111-GENA-2018 Process Waivers or Remissions of Indebtedness. The collection mechanics sit under DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2 General Instructions for Collection of Debt Owed to the DoD and Chapter 7 Interest, Penalties, and Administrative Costs. Statutory authority sits at 31 USC 3711, 3716, 3717, 3720D, 5 USC 5514, and 31 CFR Parts 900-904 Federal Claims Collection Standards. The Marine pay-specific waiver remission path routes through DoDFMR Vol 7A Chapter 50.
+
+## Related references
+
+- DoDFMR Vol 16 Chapter 2 General Instructions for Collection of Debt Owed to the DoD. Demand letter and due process framework.
+- DoDFMR Vol 16 Chapter 7 Interest, Penalties, and Administrative Costs.
+- 5 USC 5514. Federal salary offset framework.
+- 31 USC 3711 Collection and Compromise. Federal debt collection statutory authority.
+- 31 USC 3716 Administrative Offset. Treasury offset authority.
+- 31 USC 3717 Interest and Penalty on Claims. Interest and penalty framework.
+- 31 USC 3720D Administrative Wage Garnishment. Post-separation garnishment.
+- 31 CFR Parts 900-904 Federal Claims Collection Standards. Federal collection regulations.

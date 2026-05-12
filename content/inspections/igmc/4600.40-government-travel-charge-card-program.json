@@ -1,0 +1,274 @@
+{
+  "track": "igmc",
+  "programNumber": "4600.40",
+  "slug": "government-travel-charge-card-program",
+  "title": "Government Travel Charge Card Program",
+  "summary": "All levels and types of commands. 30 items across the program.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "sponsor": "P&R (RFF)",
+  "applicabilityLevel": "All levels and types of commands",
+  "effectiveDate": "2026-03-25",
+  "lastVerified": "2026-02-25",
+  "source": {
+    "title": "IGMC Functional Area Checklist - Government Travel Charge Card Program",
+    "publisher": "Inspector General of the Marine Corps"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "GTCCP INDIVIDUALLY BILLED ACCOUNT (IBA)",
+      "description": "",
+      "items": [
+        {
+          "code": "0101",
+          "question": "Has the command conducted a GTCC program review within the past two years in accordance with applicable regulations, documented and reported any significant weaknesses to the commander and CPM? Note: The current USMC IGMC checklist meets the requirement for the program review.",
+          "references": [
+            "41 USC 1909 (Public Law 112-194), DoD GTCC Regulations (April 2025), par. 041004",
+            "MCO 4600.40C, encl 2, ch 1, par. 2"
+          ]
+        },
+        {
+          "code": "0102",
+          "question": "Has the mandatory APC training, “Travel Card Program Management (APC Course),” been completed prior to appointment and retained on file for all appointed APCs? Has refresher training been completed every three years thereafter?",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 040801",
+            "MCO 4600.40C, par. 4b(2)(h)"
+          ]
+        },
+        {
+          "code": "0103",
+          "question": "Has the commander appointed a primary and alternate Agency Program Coordinator (APC) for the GTCC program in writing, using the required APC Appointment Letter template outlined in the DoD GTCC Regulations, and provided a copy to the next higher-level APC to grant access to CitiManager EAS? Note: Current APC appointment letters must be updated using this template no later than December 31, 2025, and renewed every three years thereafter or whenever there is a change in the appointing official. The APC must retain copies of the Delegation of Authority letters or “By Direction” documentation granting appointing authority from the commander.",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 040204C, Annex 10",
+            "MCO 4600.40C, par. 4b(2)(c)"
+          ]
+        },
+        {
+          "code": "0104",
+          "question": "Do the primary and alternate APCs have access to the card provider’s Electronic Access System (EAS) and the reporting module and are non-cardholder accounts (APC and ROA) deactivated upon transfer, separation, or reassignment of duties? Note: All APCs must demonstrate the ability to log in to and utilize the EAS and reporting module.",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 041101, par. 040204C",
+            "MCO 4600.40C, par. 4b(3((f)"
+          ]
+        },
+        {
+          "code": "0105",
+          "question": "Is the APC extracting, properly working, and retaining the required monthly DoD Travel IBA Aging Analysis Summary Report immediately following the monthly cycle and provide to the commander the program health and Dollars Delinquency metrics? Note: Report cycle-based subscription available (NA-06.)",
+          "references": [
+            "DoD GTCC Regulations (April 2025), Vol 4, par. 041003; par. 041004; par. 041402 E",
+            "MCO 4600.40C encl 2, appendix B, par. 4a(5); Chapter 2, par. 8a(4)"
+          ]
+        },
+        {
+          "code": "0106",
+          "question": "Is the APC extracting, properly working, and maintaining the required monthly Delinquency Report-Hierarchy and informing the commander? Note: APCs must demonstrate how they reconcile and forward this report for action. It must include annotations of actions taken to resolve delinquencies, including cardholder notifications and responses with dates, the status of any travel claims contributing to the delinquency, and the estimated resolution date. It is recommended that this report be updated weekly to track progress.",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 041402 D",
+            "MCO 4600.40C encl 2, appendix B, par. 4a; appendix B, par. 4a(3)"
+          ]
+        },
+        {
+          "code": "0107",
+          "question": "Does the APC complete and properly distribute all required delinquency notifications at 45, 61, 91, and 121 days past billing to the cardholder and the appropriate supervisor or commander based on the stage of delinquency, and ensure that the cardholder signs and returns the endorsement acknowledging receipt and understanding of the notification?",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 041301; par. 041302; par. 041303; par. 041304; par. 041103",
+            "MCO 4600.40C, encl 2, appendix B, par. 5"
+          ]
+        },
+        {
+          "code": "0108",
+          "question": "Is the APC extracting, annotating, and maintaining the required monthly Account Listing Report, ensuring proper accountability of cardholder accounts, accurate profile information, active account status, justification for credit and cash limit increases, notification of credit balances, and review of mission-critical status? Note: Personnel rosters assist in identifying cardholder accounts that need to be added to or removed from the hierarchy.",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 041103; par 041402 B; par. 041104; par 041306",
+            "MCO 4600.40C, encl 2, appendix B, par. 4a; appendix B, par. 4a(1)"
+          ]
+        },
+        {
+          "code": "0109",
+          "question": "Has the command implemented standardized check-in and check-out procedures to ensure that all personnel check in and out with the APC, and are Statements of Understanding (SOU, DD Form 3120) maintained for all cardholders? Note: APCs must demonstrate the check-in and check-out process by ensuring cardholder accounts are transferred immediately upon check-in, account status is verified during check-out, and cardholders are informed of proper card use while executing PCS. A properly completed DD Form 3120 SOU must include all blocks initialed or checked, the APC’s name and phone number, the applicant’s printed name and signature, the supervisor’s printed name and signature, and the date. Digital signatures may be used in place of manual signatures and dates",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 040802; par. 040901; par. 041104; par 041105",
+            "MCO 4600.40C, par. 4b(2)(d)1; encl 2, appendix B, par. 9a(1); par. 9a(2)"
+          ]
+        },
+        {
+          "code": "0110",
+          "question": "Has the APC closed travel card accounts upon a cardholder’s retirement, separation, termination, or death? Note: APCs must demonstrate that the cardholder’s supervisor was notified of any outstanding balance prior to final separation.",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 041106",
+            "MCO 4600.40C, encl 2, appendix B, par. 9b; par. 9a(2)(b)"
+          ]
+        },
+        {
+          "code": "0111",
+          "question": "Is the APC extracting, properly working, and maintaining the required monthly Account Activity Text Report, and filing it for the current month plus two years? Note: APCs must annotate the report to demonstrate how it is being reviewed. The unit commander or designated representative (APC) must review at least 10% of accounts with activity to verify that charges are made in conjunction with official travel.",
+          "references": [
+            "DoD GTCC Regulations 041402 A",
+            "MCO 4600.40C, encl 2, appendix B, par. 4a; appendix B, par. 4a(2)"
+          ]
+        },
+        {
+          "code": "0112",
+          "question": "Is the APC extracting, properly working, and maintaining the required monthly Declined Authorization Report? Note: APCs must annotate on the report corrective action taken to resolve the decline and follow action taken for attempted misuse, abuse, or fraud.",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 041402 C",
+            "MCO 4600.40C encl 2, appendix B, par. 4a; 4a(4)"
+          ]
+        },
+        {
+          "code": "0113",
+          "question": "Is the APC notifying the cardholder’s supervisor of potential misuse, abuse, or fraud discovered in the Account Activity and Declined Authorizations Reports, and informing the commander as required? Note: APCs must be able to provide the inspector with official documentation of these notifications.",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 041005; par. 040103a",
+            "MCO 4600.40C, par. 4a(1)(a)"
+          ]
+        },
+        {
+          "code": "0114",
+          "question": "Does the APC ensure that all cardholders, command leadership, and subordinate HL APCs are informed of policy and procedure changes to the GTCC Program? Note: The APC must provide proof to the inspector demonstrating how the information is being distributed.",
+          "references": [
+            "MCO 4600.40C, encl 2, ch 2, par. 8a(11); encl 2, appendix B, par. 13"
+          ]
+        },
+        {
+          "code": "0115",
+          "question": "Are GTCC program records, whether in hardcopy, secure electronic format, or an authorized document management system, maintained in a secure location that prevents unauthorized access, clearly marked and protected in accordance with the Privacy Act?",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 041103",
+            "MCO 4600.40C, par. 5b, encl 2, appendix B, par 1b; encl 2, appendix B, par. 4a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02.0",
+      "title": "CENTRALLY BILLED ACCOUNT (CBA)/UNIT TRAVEL CARD (UTC)",
+      "description": "",
+      "items": [
+        {
+          "code": "0201",
+          "question": "Has the commander appointed a primary and alternate Agency Program Coordinator (APC) for the GTCC program in writing, using the required APC Appointment Letter template outlined in the DoD GTCC Regulations, and provided a copy to the next higher-level APC to grant access to CitiManager EAS? Note: Current APC appointment letters must be updated using this template no later than December 31, 2025, and renewed every three years thereafter or whenever there is a change in the appointing official. The APC must retain copies of the Delegation of Authority letters or “By Direction” documentation granting appointing authority from the commander.",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 040205, Annex 11",
+            "MCO 4600.40C, par. 4b(2)(c)"
+          ]
+        },
+        {
+          "code": "0202",
+          "question": "Has the commander designated Unit Travel Cardholders (UTC) in writing, including the mailing address, telephone number, email address, Centrally Billed Account Number, hierarchy number, and hierarchy level?",
+          "references": [
+            "MCO 4600.40C, encl 2, ch 3, par. 1b(2)",
+            "MCO 4600.40C, encl 2, Appendix F"
+          ]
+        },
+        {
+          "code": "0203",
+          "question": "Has the mandatory APC training, “Travel Card Program Management (APC Course),” been completed prior to appointment and retained on file for all appointed APCs? Has refresher training been completed every three years thereafter?",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 040801",
+            "MCO 4600.40C, par. 4b(2)(h)"
+          ]
+        },
+        {
+          "code": "0204",
+          "question": "Does the APC notify the CPM immediately upon the transfer, separation, or reassignment of APCs or cardholders who are no longer assigned to the command? Note: The APC must be able to provide the inspector with proof of notification.",
+          "references": [
+            "MCO 4600.40B, encl 1, appendix C, par. 17"
+          ]
+        },
+        {
+          "code": "0205",
+          "question": "Are GTCC program records, whether in hardcopy, secure electronic format, or an authorized document management system, maintained in a secure location that prevents unauthorized access, clearly marked and protected in accordance with the Privacy Act? Note: Plastic cards must be stored in a limited access safe when not in use.",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 041103",
+            "MCO 4600.40C, par. 4b(2)(k)",
+            "MCO 4600.40C, encl 2, appendix C, par. 19b"
+          ]
+        },
+        {
+          "code": "0206",
+          "question": "Does the commander or appointed designee maintain proper separation of duties among CBA charge card program officials (AO/CO, APC, and cardholders)? Note: The APC and AO/CO cannot also serve as the cardholder.",
+          "references": [
+            "MCO 4600.40C, encl 2, appendix C, par. 4",
+            "MCO 4600.40C, encl 2, appendix C, par. 19a"
+          ]
+        },
+        {
+          "code": "0207",
+          "question": "Does the commander or appointed designee retain all required payment records and substantiating documents, including travel orders, itemized receipts, certified statements, contractor invoices, dispute documentation, and any audit-supporting materials, for a minimum of two years to support official travel and payment verification?",
+          "references": [
+            "MCO 4600.40C, encl 2, appendix C, par. 16",
+            "MCO 4600.40C, encl 2, appendix C, par. 7(a-c)"
+          ]
+        },
+        {
+          "code": "0208",
+          "question": "Does the commander or appointed designee ensure that all charges placed on a CBA are authorized and comply with DoD travel regulations? Note: The inspector will review a sample of the cardholder’s statements to verify that the charges align with DoD travel regulations.",
+          "references": [
+            "MCO 4600.40B, encl 1, appendix C, par. 7(a-c)"
+          ]
+        },
+        {
+          "code": "0209",
+          "question": "Is the APC extracting, properly working, and maintaining the required monthly Declined Authorization Report, pulled after the completion of all account billing cycles (cycle load complete on the 28th of each month), with annotated corrective actions for authorized transactions and documentation of any attempted misuse, abuse, or fraud, and retaining copies for the current year plus the previous two years?",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 041403 A",
+            "MCO 4600.40C, encl 2, appendix C, par. 21a"
+          ]
+        },
+        {
+          "code": "0210",
+          "question": "Is the APC extracting, properly working, and maintaining the required monthly CBA Delinquency Report, pulled after the completion of all account billing cycles (cycle load complete on the 28th of each month), with annotated reasons for each delinquency and documented steps taken to resolve them, and retaining copies for the current year plus the previous two years?",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 041403 B",
+            "MCO 4600.40C, encl 2, appendix C, par. 21b"
+          ]
+        },
+        {
+          "code": "0211",
+          "question": "Is the APC extracting, analyzing, and maintaining the required monthly DoD Travel CBA Aging Analysis Summary Report, pulled after the completion of all account billing cycles (cycle load complete on the 28th of each month), identifying summary-level delinquency data that contributes to Component performance metrics (GREEN: 0.00%–1.00%, YELLOW: 1.01%–2.00%, RED: >2.00%), and retaining copies for the current year plus the previous two years?",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 041403 C, par. 041003B",
+            "MCO 4600.40C, encl 2, appendix C, par. 21c"
+          ]
+        },
+        {
+          "code": "0212",
+          "question": "Has the command conducted a GTCC program review within the past two years in accordance with applicable regulations, documented and reported any significant weaknesses to the commander and CPM? Note: The current USMC IGMC checklist meets the requirement for the program review.",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 041403C, 041003B",
+            "MCO 4600.40C, encl 2, appendix B, par. 10b"
+          ]
+        },
+        {
+          "code": "0301",
+          "question": "Has the GTCC APC at HL3 and HL4 obtained access to Visa IntelliLink Compliance Management (VICM) and completed the “Programs & Policies – VICM” training in TraX, as required? Note: Refresher training is required every three years.",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 041502",
+            "MCO 4600.40C encl 2, appendix E, par. 2"
+          ]
+        },
+        {
+          "code": "0302",
+          "question": "Is the APC at HL3 and HL4 conducting monthly reviews in Visa IntelliLink Compliance Management (VICM) by using the Analytics Module to evaluate chart results and initiate cases for any flagged transactions that indicate potential misuse, abuse, or fraud; conducting monthly follow-up and closing all pending actions; and entering misuse or potential misuse reported by subordinate levels or identified outside of VICM? Note: Ensure the electronic questionnaire is completed",
+          "references": [
+            "DoD GTCC Regulations (April 2025), par. 041502A - D",
+            "MCO 4600.40C encl 2, appendix E, par. 4c"
+          ]
+        },
+        {
+          "code": "0303",
+          "question": "Is the APC notifying the cardholder’s supervisor of potential misuse, abuse, or fraud discovered in VICM, and informing the commander as required? Note: APCs must be able to provide the inspector with official documentation of these notifications.",
+          "references": [
+            "MCO 4600.40C encl 2, appendix E, par. 4d"
+          ]
+        }
+      ]
+    }
+  ],
+  "category": "CoRE",
+  "faName": "Government Travel Charge Card Program"
+}

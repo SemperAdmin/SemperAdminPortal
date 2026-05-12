@@ -1,0 +1,186 @@
+---
+title: "Reserve Utilization Categories and Duty Types"
+slug: "utilization-categories"
+summary: "MCRAMM defines reserve utilization categories that determine how a Marine drills, what they get paid, and what retirement points they earn. Knowing the categories drives correct admin processing."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-01"
+unitType: "i-and-i"
+topic: "reserve-fundamentals"
+function: "PERA"
+skillLevel: 1000
+sourcePolicy: "MCRAMM"
+sourceChapter: "3"
+sourceSection: "1"
+mosPerforming: ["0102", "0111", "0170"]
+billets: ["admin-chief-i-and-i", "i-and-i-admin-officer"]
+gradesPerforming: ["LCPL", "CPL", "SGT", "SSGT"]
+references:
+  - "MCO 1001R.1L MCRAMM Chapter 3 Section 1"
+  - "DOD FMR 7000.14-R Volume 7A"
+  - "MCO 1001.59 Active Duty for Operational Support"
+  - "MCTFSCODESMAN"
+relatedRoles:
+  marine: "/marines/pay/review-les"
+  commander: "/commander/relationships/ipac-procedures"
+source:
+  title: "MCO 1001R.1L MCRAMM Chapter 3"
+  publisher: "HQMC"
+  url: "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899564/mco-1001r1l/"
+---
+
+## Why This Matters
+
+Per MCRAMM Chapter 3, every reserve duty period falls into a specific utilization category that determines pay, points, and reporting. Get the category wrong and the Marine gets paid wrong. Worse, retirement point credit may not post correctly.
+
+I&I admin classifies duty periods correctly before any pay processing. This is not an afterthought.
+
+## Reserve Utilization Categories
+
+The MCRAMM organizes reserve utilization into broad categories.
+
+### Inactive Duty (ID)
+
+Duty performed by reservists not in active duty status. Includes.
+
+- Inactive Duty Training (IDT) - regular drill periods
+- Muster Duty (MD)
+- Funeral Honors Duty (FHD)
+- Equivalent Duty Periods (EDPs) - both paid and unpaid
+
+### Active Duty (AD)
+
+Duty in full active duty status. Includes.
+
+- Active Duty (AD) - typically mobilization or specific orders
+- Active Duty for Training (ADT) - extended training periods like Annual Training
+- Active Duty for Operational Support (ADOS) - specific operational missions
+- Muster Duty Active Duty Other Than for Training - specific short-duration active duty
+
+### Continuing Service Status
+
+Reserve members not currently performing duty but maintaining their reserve component status.
+
+## Types of Reserve Duty
+
+Five primary duty types appear in pay and personnel processing.
+
+| Duty Type | Status | Pay Type | Typical Use |
+|-----------|--------|----------|-------------|
+| Regular Drill (IDT) | Inactive | Drill pay | Monthly drill weekend, 4 periods per weekend |
+| Annual Training (AT) | Active | Active duty pay | Annual 12-14 day training period |
+| Active Duty for Training (ADT) | Active | Active duty pay | Extended training beyond AT |
+| Active Duty for Operational Support (ADOS) | Active | Active duty pay | Operational missions, special projects |
+| Mobilization Active Duty | Active | Active duty pay | Involuntary recall under 12302 or similar |
+
+## Reserve Pay Group Categories
+
+Pay groups appear as a single character in MCTFS and drive Drill Manager processing. Per MCRAMM and MCTFSCODESMAN.
+
+### Pay Group A
+
+Drilling SMCR member earning drill pay. Standard drilling reservist.
+
+- Earns drill pay for each IDT period
+- Earns retirement points for each period
+- Eligible for AT pay
+- Eligible for SDA pays where qualified
+
+### Pay Group B
+
+SMCR member with reduced participation. Limited drill participation.
+
+- Earns drill pay for periods performed
+- Limited annual periods
+- Eligible for partial year retirement credit
+- Subject to Unsatisfactory Participation review if performance falls below minimum
+
+### Pay Group F
+
+IMA in active drilling status. Individual Mobilization Augmentees.
+
+- Drills with their gaining active duty command, not a SMCR unit
+- Earns drill pay processed through the gaining command's IPAC
+- Earns retirement points at gaining command rates
+- Subject to gaining command's training requirements
+
+### Pay Group P
+
+IRR or Standby with no drill pay.
+
+- No drill pay
+- Earns membership points only (15 per anniversary year)
+- Annual readiness reporting required
+- Subject to involuntary recall under specific authorities
+
+### Pay Group R
+
+Retired Reserve.
+
+- No drill pay
+- No retirement point accumulation
+- Drawing retirement pay if age 60 or older
+- Awaiting pay if under age 60 with 20 qualifying years
+
+## Decision Tree for Pay Code Selection
+
+When processing a duty period, walk this decision tree.
+
+1. **Is the Marine in active duty status (orders signed)?**
+   - Yes: Active duty pay codes
+   - No: Continue
+2. **Is this a regular scheduled drill weekend?**
+   - Yes: IDT regular drill pay codes
+   - No: Continue
+3. **Is this an Equivalent Duty Period replacing missed regular drill?**
+   - Yes: EDP pay codes (paid or unpaid based on timing)
+4. **Is this Funeral Honors Duty?**
+   - Yes: FHD pay codes (4 hours minimum, special category)
+5. **Is this Muster Duty?**
+   - Yes: MD pay codes
+6. **Is this an Additional Training Period (ATP) or Readiness Management Period (RMP)?**
+   - Yes: ATP or RMP pay codes (separate from regular drill total)
+7. **Is this Associate Duty or Appropriate Duty?**
+   - Yes: Points only, no pay
+
+## MUTA Codes
+
+Drill periods use Multiple Unit Training Assembly (MUTA) codes to indicate how many periods were performed. Common codes.
+
+| MUTA | Periods | Hours | Typical Use |
+|------|---------|-------|-------------|
+| MUTA-1 | 1 | 4+ hours | Single period, partial drill day |
+| MUTA-2 | 2 | 8+ hours | One full day of drill |
+| MUTA-4 | 4 | 16+ hours | Standard drill weekend (Saturday and Sunday) |
+| MUTA-5 | 5 | 20+ hours | Extended drill weekend |
+| MUTA-6 | 6 | 24+ hours | Three-day drill weekend |
+
+Drill Manager applies MUTA codes when processing the drill batch.
+
+## Common Errors on Category Assignment
+
+These hit most often.
+
+1. **Regular drill processed as ATP.** Regular monthly drill is IDT regular drill, not ATP. ATP is supplemental beyond regular drill.
+2. **AT processed as IDT.** AT is active duty for training. Different pay rate and entitlement structure. Use AT pay codes.
+3. **Wrong pay group for IMA.** IMAs are Pay Group F, not A. Processing through the wrong category breaks pay.
+4. **EDP timing miscalculated.** Paid EDPs must be performed within 60 days of the missed drill and within the same fiscal year. Late EDPs become unpaid.
+5. **MUTA code mismatched to actual hours performed.** Member did 8 hours but MUTA-1 (single period) submitted. Fix by correcting MUTA code.
+
+## Quality Control on Category Selection
+
+Before submitting a drill batch, verify these.
+
+- All members listed have correct pay group in MCTFS
+- All duty types match what the unit actually performed
+- MUTA codes match actual hours per member
+- EDP dates fall within the 60-day window
+- ATP and RMP authorizations are documented
+- FHD missions are documented in the funeral honors record
+
+## Related Roles
+
+Category selection drives every downstream pay action.
+
+- **Marines** verify their pay matches what they performed by reviewing the LES.
+- **Leaders** confirm muster attendance and duty period type at the drill weekend.
+- **Commanders** approve ATP, RMP, and special duty period authorizations.

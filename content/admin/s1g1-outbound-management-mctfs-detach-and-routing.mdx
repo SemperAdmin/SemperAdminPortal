@@ -1,0 +1,113 @@
+---
+title: "MCTFS Detach and Routing - S-1 Procedural Page"
+slug: "mctfs-detach-and-routing"
+summary: "Cut the MCTFS detach transaction through UD-MIPS with the KSD packet uploaded per MCTFSPRIUM codes, certify the diary line, clear EDFR after detach, and route the personnel record to the gaining unit or to HQMC on separation per MCO 1300.8."
+roles: ["admin", "leader"]
+lastVerified: "2026-05-11"
+unitType: "s1-g1"
+topic: "outbound-management"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0170-PERA-2105"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 1300.8"
+billets: ["s-1-officer", "s-1-chief", "ipac-outbound-counselor"]
+gradesPerforming: ["Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 1300.8 Marine Corps Personnel Assignment Policy"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "MCO 1900.16 Marine Corps Separation and Retirement Manual"
+  - "MCO P1070.12K Individual Records Administration Manual"
+performanceSteps:
+  - "Receive outbound orders (PCS, separation, retirement)"
+  - "Validate the detach effective date"
+  - "Build the KSD packet per MCTFSPRIUM"
+  - "Cut the UD-MIPS detach transaction"
+  - "Attach the KSD packet"
+  - "Certify the diary line"
+  - "Pull EDFR within 24-48 hours of detach"
+  - "Clear rejections within 5 working days"
+  - "Verify the rebuilt MCTFS record reflects detach"
+  - "Coordinate gaining unit handoff for PCS"
+relatedRoles:
+  marine: "/marines/outbound-management/mctfs-detach-and-routing"
+  leader: "/leader/outbound-management/mctfs-detach-and-routing"
+  commander: "/commander/outbound-management/mctfs-detach-and-routing"
+source:
+  title: "MCTFS Detach and Routing - MCO 1300.8 and MCTFSPRIUM"
+  publisher: "Headquarters Marine Corps Manpower and Reserve Affairs"
+---
+
+## Role and responsibility
+
+The IPAC outbound counselor cuts the MCTFS detach transaction through UD-MIPS and uploads the KSD packet per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> codes. The S-1 chief audits the rebuilt MCTFS record after detach. The S-1 officer signs by direction on the detach routing. The Marine provides any outstanding documentation and acknowledges the detach effective date. The gaining unit S-1 receives the routed record on PCS. HQMC OMPF receives the record on separation per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 3.
+
+Source documents flow from the outbound orders, the prior MCTFS record, the dependency documents, the final LES, the OMPF Field Folder, and the supporting KSD records per MCTFSPRIUM. Detach outputs include the certified UD-MIPS detach transaction, the KSD packet on file, the diary line certification, the EDFR clearance within 5 working days, the rebuilt MCTFS record reflecting detach, the routed personnel record to the gaining unit on PCS, and the routing to HQMC on separation.
+
+Per MCO 1300.8<Citation source="MCO 1300.8" /> and MCTFSPRIUM, the MCTFS detach closes the personnel record at the losing unit. The detach effective date drives pay continuity and the gaining unit join.
+
+## Trigger events
+
+- PCS orders cut on outbound Marine.
+- Separation order cut per MCO 1900.16.
+- Retirement order cut per MCO 1900.16 Chapter 2 or 7.
+- Detach effective date approaches.
+- EDFR cycle catches detach rejection.
+
+## Processing workflow
+
+1. Receive outbound orders. The IPAC outbound counselor receives PCS orders, separation order, or retirement order.
+2. Validate the detach effective date. The detach date drives pay continuity. Per MCO 1300.8<Citation source="MCO 1300.8" />, the detach effective date supports the gaining unit join effective date for PCS.
+3. Build the KSD packet. Per MCTFSPRIUM<Citation source="MCTFSPRIUM" />, the KSD packet carries the outbound orders, the final pay closeout package, the dependency documents, and supporting records.
+4. Cut the UD-MIPS detach transaction. Per Appendix E and MCTFSPRIUM, submit the detach transaction.
+5. Attach the KSD packet. Per MCTFSPRIUM, the KSD attaches to the detach with the appropriate document type codes.
+6. Certify the diary line. The S-1 chief or designated certifier signs the diary line.
+7. Pull EDFR. Per MCO 1300.8, pull EDFR within 24-48 hours of the detach.
+8. Clear rejections. Per MCO 1300.8, clear EDFR rejections within 5 working days.
+9. Verify the rebuilt MCTFS record. The rebuilt record reflects the detach status, the final pay state, and the routing destination.
+10. Coordinate gaining unit handoff. For PCS, the losing unit notifies the gaining unit of the detach completion.
+
+## Systems of record and forms
+
+### Systems
+
+- Marine Corps Total Force System (MCTFS). Holds detach transaction.
+- UD-MIPS. Cuts detach transactions per Appendix E.
+- EDFR. Surfaces diary rejections.
+- Gaining Unit S-1. Receives the routed record on PCS.
+- HQMC OMPF. Receives the routed record on separation.
+
+### Forms
+
+- Outbound Orders. PCS, separation, or retirement orders.
+- KSD Packet. Per MCTFSPRIUM codes.
+- Final Pay Closeout Package. Per disbursing coordination.
+- EDFR Rejection Report. Per MCO 1300.8.
+
+## Common pitfalls
+
+- Detach cut without KSD upload. Per MCTFSPRIUM<Citation source="MCTFSPRIUM" />, every detach carries the KSD packet.
+- Detach effective date wrong. The orders detach date drives the effective date.
+- EDFR not pulled within 24-48 hours of detach. Per MCO 1300.8<Citation source="MCO 1300.8" />, the EDFR cycle catches rejections.
+- Rejections held past 5 working days. Per MCO 1300.8, the rejection cycle closes within 5 working days.
+- Personnel record not routed to gaining unit. Per MCO 1300.8 and MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 3, the record routes on PCS detach.
+- Final pay state not aligned with detach. The disbursing closeout aligns with the detach effective date.
+
+## Decision points
+
+- Detach effective date. The orders detach date drives pay continuity.
+- Routing destination. PCS routes to the gaining unit. Separation routes to HQMC OMPF.
+- Retroactive detach. Late detach triggers retroactive KSD upload with the correct effective date.
+- Pay stop versus pay continuation. The disbursing coordination aligns final pay with the detach.
+
+## Authority
+
+This sub-page sits under MCO 1300.8<Citation source="MCO 1300.8" /> Marine Corps Personnel Assignment Policy and MCTFSPRIUM<Citation source="MCTFSPRIUM" /> covering MCTFS detach. MCO 1900.16<Citation source="MCO 1900.16" /> covers separation and retirement detach. MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 3 covers personnel record routing. The processing workflow maps to NAVMC 3500.3E T-R event 0170-PERA-2105.
+
+## Related references
+
+- MCO 1300.8 and MCTFSPRIUM. Personnel assignment and MCTFS detach.
+- MCO 1900.16. Separation and retirement.
+- MCO P1070.12K Chapter 3. Record routing.
+- NAVMC 3500.3E. T-R event 0170-PERA-2105.

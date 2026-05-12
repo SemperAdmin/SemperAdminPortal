@@ -1,0 +1,106 @@
+---
+title: "Unauthorized Absence (UA) Tracking and Reporting"
+slug: "unauthorized-absence-tracking-and-reporting"
+summary: "Run daily muster, verify accountability against MOL and MCTFS, cut the UA UD-MIPS transaction at hour 24, and stop pay effective hour 1 of the absence."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-12"
+unitType: "s1-g1"
+topic: "absentee-deserter-confinement"
+function: "GENA"
+skillLevel: 2000
+trEventCode: "0111-GENA-2016"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 1620.3A"
+billets: ["s-1-clerk", "s-1-chief", "g-1-officer", "duty-officer"]
+gradesPerforming: ["Cpl", "Sgt", "SSgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 1620.3A Marine Corps Absentee and Deserter Apprehension Program"
+  - "MCO 5800.16 Legal Support and Administration Manual"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "UCMJ Article 86 Absence Without Leave"
+  - "DoDFMR Vol 7A Chapter 1 Basic Pay"
+  - "MCO P1070.12K Individual Records Administration Manual"
+relatedRoles:
+  marine: "/marines/absentee-deserter-confinement/unauthorized-absence-tracking-and-reporting"
+  leader: "/leader/absentee-deserter-confinement/unauthorized-absence-tracking-and-reporting"
+  commander: "/commander/absentee-deserter-confinement/unauthorized-absence-tracking-and-reporting"
+source:
+  title: "MCO 1620.3A Paragraph 4 Execution and MCO 5800.16 UA Reporting Rules"
+  publisher: "Headquarters Marine Corps PP&O PSL"
+---
+
+## Role and responsibility
+
+S-1 admin specialists own UA declaration and the day-1 to day-30 UA tracking window. The duty officer reports the missing Marine on the muster sheet. The S-1 clerk verifies accountability against MOL, the leave control log, the TAD roster, and MCTFS within the first 24 hours. The S-1 chief cuts the UA UD-MIPS transaction at hour 24 and stops pay effective hour 1 of the absence. The S-1 officer signs by direction on the UA package routing to legal.
+
+Source documents flow from the duty officer report, the muster sheet, the leave control log, the TAD roster, the hospitalization log, and MOL. Outputs include the UA UD-MIPS transaction, the pay stop, the legal notification, the day 30 deserter declaration tickler, and Page 11 entries on the unbroken absence period.
+
+Late UA declarations cause pay overpayment debts running into DoDFMR Vol 16 collection procedures. The UA declaration runs at hour 24, not the next duty day.
+
+## Trigger events
+
+- Marine fails to report at morning muster or scheduled work call.
+- Duty officer reports the Marine missing on accountability check.
+- Marine departs without authorization or fails to return from leave on the scheduled return date.
+- Marine fails to return from TAD on the scheduled return date.
+- Marine fails to report to a new duty station within the report-no-later-than (RNLT) date.
+- Marine returns from hospitalization but fails to report to the parent unit.
+
+## Processing workflow
+
+1. Receive the muster sheet from the duty officer. The duty officer reports the Marine missing on the morning accountability check or work call.
+2. Verify against MOL and the leave control log. Confirm the Marine is not on authorized leave, TAD, or hospitalization.
+3. Verify against MCTFS. Cross-check the Marine record for any open transaction holding the Marine in an authorized absence state.
+4. Run a 100 percent muster on the duty section. The duty officer countersigns the verification. The chain of command notifies the parent command within the same day.
+5. Cut the UA UD-MIPS transaction at hour 24. Submit through UD-MIPS per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> UA transaction format. Use the duty officer report and the muster verification as KSDs.
+6. Stop pay effective hour 1 of UA. The UA transaction triggers the pay stop per DoDFMR Vol 7A Chapter 1 and MCTFSPRIUM<Citation source="MCTFSPRIUM" /> UA pay rules.
+7. Notify the chain of command and legal. The S-1 officer routes the UA notification to the chain of command, the trial counsel, and the unit security officer. Trial counsel reviews for UCMJ Article 86 charge preparation.
+8. Open the day 30 deserter declaration tickler. The S-1 clerk sets a tickler at day 30 for the deserter declaration per MCO 1620.3A<Citation source="MCO 1620.3A" /> Paragraph 4b.
+9. Process Page 11 entries. Document the UA period, the duty officer report, and the muster verification per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6.
+10. File the UA package in the OMPF Field Folder. Place the duty officer report, the muster verification, the UA UD-MIPS transaction record, and the Page 11 entries under the legal tab.
+
+## Systems of record and forms
+
+### Systems
+
+- MCTFS. Holds the UA state with associated pay implications.
+- UD-MIPS. Cuts the UA transaction with the duty officer report as the KSD.
+- MOL. Surfaces authorized absences (leave, TAD, hospitalization).
+- Unit muster log. Daily accountability record.
+- Leave control log. Authorized leave window record.
+
+### Forms
+
+- Duty Officer Report. Initial missing Marine notification.
+- Unit Muster Sheet. The accountability record at morning muster or work call.
+- NAVMC 118 (11) Administrative Remarks. Page 11 documenting UA period.
+- NAVMC 118 (3) Chronological Record. Page 3 noting UA dates.
+- DD Form 458 Charge Sheet. UCMJ Article 86 charge package on return when judicial action proceeds.
+
+## Common pitfalls
+
+- UA transaction cut the next duty day instead of hour 24. Pay continues past the UA declaration window. Cut the UA at hour 24, not the next morning, per MCTFSPRIUM<Citation source="MCTFSPRIUM" />.
+- Accountability not cross-checked against MOL. The Marine sits on authorized leave or hospitalization and the UA is wrongful. Verify MOL and the leave control log before cutting UA.
+- Day 30 tickler skipped. The deserter declaration falls past day 30 and NCIC entry stalls. Set the tickler at the moment of UA declaration.
+- Page 11 entry skipped at UA. The OMPF lands without UA documentation. Process the Page 11 within 5 working days of UA per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6.
+- Pay stop missed. Pay continues during UA and overpayment routes to DoDFMR Vol 16 debt collection. The pay stop runs with the UA transaction in MCTFS.
+
+## Decision points
+
+- UA versus authorized absence. The Marine missed muster but is on emergency leave or hospitalization. The S-1 chief verifies authorization against MOL and the leave control log per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> before cutting UA.
+- UA versus straggler. The Marine reports late within 24 hours with a reasonable explanation. The S-1 chief and the commander assess straggler treatment per MCO 5800.16<Citation source="MCO 5800.16" /> versus UA charge.
+- UCMJ Article 86 charge preparation. Trial counsel reviews the UA package for the Article 86 charge timing. The charge sheet attaches when the case proceeds to NJP or court-martial per JAGINST 5800.7G.
+
+## Authority
+
+This sub-page maps to NAVMC 3500.3E T-R event 0111-GENA-2016 Process Deserter or Absentee Cases. The processing workflow sits under MCO 1620.3A<Citation source="MCO 1620.3A" /> Paragraph 4 Execution, MCO 5800.16<Citation source="MCO 5800.16" /> UA reporting rules, MCTFSPRIUM<Citation source="MCTFSPRIUM" /> UA transaction format, DoDFMR Vol 7A Chapter 1 pay entitlement rules, and UCMJ Article 86. Pay reconciliation continues at the pay-reconciliation-for-ua-deserter-and-confined-marines sub-page.
+
+## Related references
+
+- MCO 1620.3A Marine Corps Absentee and Deserter Apprehension Program. UA framework and day 30 deserter declaration tie-in.
+- MCO 5800.16 Legal Support and Administration Manual. UA reporting rules.
+- MCTFSPRIUM. UA transaction format.
+- UCMJ Article 86 Absence Without Leave. Statutory authority for UA.
+- DoDFMR Vol 7A Chapter 1 Basic Pay. UA pay entitlement rules.
+- MCO P1070.12K Individual Records Administration Manual. Page 11 documentation rules.

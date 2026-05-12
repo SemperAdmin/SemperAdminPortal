@@ -1,0 +1,113 @@
+---
+title: "Update and Extract Cycle Management - S-1 Procedural Page"
+slug: "update-and-extract-cycle-management"
+summary: "Monitor MCTFS Update and Extract Cycles for Inconsistent Conditions, Suspect Payments, and Direct Deposit issues and clear before payday."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-10"
+unitType: "s1-g1"
+topic: "audit-internal-controls"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0111-PERA-2002"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 5000.14D"
+billets: ["s-1-chief", "g-1-officer", "ipac-pay-clerk"]
+gradesPerforming: ["Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 5000.14D Marine Corps Administrative Procedures"
+  - "DODFMR Vol 7A DoD Military Pay Policy"
+  - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
+  - "DODFMR Vol 7A Military Pay Policy"
+  - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+performanceSteps:
+  - "Pull the current Update and Extract Cycle output from MCTFS"
+  - "Identify Inconsistent Conditions per the UEC report"
+  - "Identify Suspect Payments per the UEC report"
+  - "Identify Direct Deposit anomalies"
+  - "Trace each anomaly to source documents"
+  - "Cut corrective transactions in UD-MIPS"
+  - "Clear corrections before the upcoming payday"
+  - "Document UEC outcomes in the audit log"
+  - "Brief recurring patterns to the commander"
+  - "Reconcile UEC clearance against the LES"
+relatedRoles:
+  marine: "/marines/audit-internal-controls/update-and-extract-cycle-management"
+  leader: "/leader/audit-internal-controls/update-and-extract-cycle-management"
+  commander: "/commander/audit-internal-controls/update-and-extract-cycle-management"
+source:
+  title: "Update and Extract Cycle Management - MCAP Enclosure 5 Paragraph 3.b"
+  publisher: "Headquarters Marine Corps M&RA"
+---
+
+## Role and responsibility
+
+The IPAC pay clerk owns the Update and Extract Cycle (UEC) monitoring at the installation level. The S-1 chief partners with the IPAC pay clerk on transactions originating at the unit. The S-1 officer signs corrective transactions per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 5 paragraph 3.b.
+
+Source documents flow from the MCTFS UEC output, source pay documents, dependency records, and special pay qualification certificates. Corrections route through UD-MIPS as corrective transactions. Outputs include the cleared UEC report, the updated LES on the next pay cut, and the audit log entry per anomaly.
+
+Per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 5 paragraph 3.b, the IPAC monitors UECs for Inconsistent Conditions, Suspect Payments, and Direct Deposit participation, and ensures corrective action completes prior to the upcoming payday. Unresolved UEC items trigger MCAAT findings.
+
+## Trigger events
+
+- Update and Extract Cycle output posts.
+- Inconsistent Condition flagged on a Marine's record.
+- Suspect Payment identified during the cycle.
+- Direct Deposit anomaly identified.
+- Payday approaches with open UEC items.
+- LES audit identifies a divergence post-cycle.
+- New MCTFSPRIUM release changes UEC handling.
+
+## Processing workflow
+
+1. Pull the current UEC output. The IPAC pay clerk pulls the cycle output from MCTFS per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 5 paragraph 3.b.
+2. Identify Inconsistent Conditions. Per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 5, flag conditions where MCTFS data does not align across fields.
+3. Identify Suspect Payments. Per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 5, flag payments that the system cannot validate.
+4. Identify Direct Deposit anomalies. Per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 5, flag missing or rejected direct deposit transactions.
+5. Trace anomalies to source documents. Cross-check each flagged item against the source pay document.
+6. Cut corrective transactions in UD-MIPS. Submit corrections per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> format with source as KSD.
+7. Clear corrections before payday. Per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 5 paragraph 3.b, complete corrective action prior to upcoming payday.
+8. Document UEC outcomes. Capture flagged items, corrective transactions, and clearance dates in the unit audit log.
+9. Brief recurring patterns. The S-1 officer briefs the commander on patterns that indicate process gaps.
+10. Reconcile UEC clearance against the LES. Pull the next pay cut LES and confirm corrections reflect.
+
+## Systems of record and forms
+
+### Systems
+
+- MCTFS. Source of UEC output.
+- UD-MIPS. Cuts corrective transactions with KSDs.
+- MOL. Surfaces LES showing corrected pay state.
+- Unit audit log. Local register tracking UEC clearance.
+
+### Forms
+
+- UEC Output Report. Generated in MCTFS each cycle.
+- Corrective Transaction KSD Packet. Source documents per corrected transaction.
+- Audit Log Entry. Per anomaly with clearance date.
+
+## Common pitfalls
+
+- UEC output not pulled each cycle. Anomalies sit undetected past payday. Set a fixed tickler tied to the UEC cycle.
+- Inconsistent Conditions cleared without source trace. Corrections lack KSD audit trail. Trace to source at every clearance.
+- Suspect Payment cleared without IPAC pay clerk coordination. The correction creates a downstream error. Coordinate per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 5.
+- Direct Deposit anomaly past 30 days. Per DODFMR Vol 7A<Citation source="DODFMR Vol 7A" />, escalate stale direct deposit issues.
+- LES audit skipped post-clearance. The correction does not reflect. Audit the next LES after every cycle clearance.
+
+## Decision points
+
+- Correction at unit versus IPAC level. Transaction originated at unit. Unit S-1 cuts the correction. Transaction originated at IPAC. IPAC pay clerk cuts.
+- Back-dated correction. The anomaly reflects a missed earlier transaction. The S-1 officer authorizes a back-dated correction per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> back-dating rules.
+- Escalation to MISSO. The UEC anomaly appears system-generated, not data-driven. Route to MISSO per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
+
+## Authority
+
+This sub-page sits under MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 5 paragraph 3.b, which establishes IPAC duty to monitor UECs for Inconsistent Conditions, Suspect Payments, and Direct Deposit and to clear before payday. DODFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Marine Corps Pay Instruction sets pay rules underlying the UEC. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> defines corrective transaction formats. DODFMR Vol 7A<Citation source="DODFMR Vol 7A" /> sets DoD pay policy. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0111-PERA-2002 covers admin audit processes.
+
+## Related references
+
+- MCO 5000.14D Marine Corps Administrative Procedures. Enclosure 5 paragraph 3.b sets UEC IPAC duties.
+- DODFMR Vol 7A. Authoritative DoD pay rules underlying UEC.
+- MCTFSPRIUM. Corrective transaction formats.
+- DODFMR Vol 7A. DoD pay policy.
+- NAVMC 3500.3E Manpower and Administration T-R Manual. Event 0111-PERA-2002 admin audit.

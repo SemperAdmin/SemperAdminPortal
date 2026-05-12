@@ -1,0 +1,389 @@
+{
+  "track": "igmc",
+  "programNumber": "5800.16",
+  "slug": "legal-administration",
+  "title": "Legal Administration",
+  "summary": "Inspector General Functional Area Checklist.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "sponsor": "HQMC (JAD)",
+  "effectiveDate": "2025-09-23",
+  "lastVerified": "2025-09-17",
+  "source": {
+    "title": "IGMC Functional Area Checklist - Legal Administration",
+    "publisher": "Inspector General of the Marine Corps"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "NON-JUDICIAL PUNISHMENT (Note: Questions apply to all NJPs conducted during the last 24 months.)",
+      "description": "",
+      "items": [
+        {
+          "code": "0101",
+          "question": "Is the current version of the UPB (NAVMC 10132 (REV. 08-2023)) being utilized in each instance where NJP is imposed on Marine enlisted personnel with a separate binder or digital file folder for each calendar year?",
+          "references": [
+            "MCO 5800.16, V-14, par 011101 and 011110"
+          ]
+        },
+        {
+          "code": "0102",
+          "question": "Are UPBs maintained alphabetically for 3 full years in either a loose-leaf binder or an electronic file folder with disposal instructions?",
+          "references": [
+            "MCO 5800.16, V-14, par 011110.A and B and SECNAV M 5210.1 (2019), pg. III-1, par 2.b., electronic file – Schedules Cross Walked by Chapter"
+          ]
+        },
+        {
+          "code": "0103",
+          "question": "Does the UPB file consist of original (if hard copy) UPB including attached pages, appeals and summary transcript or digital file IAW the command’s file plan?",
+          "references": [
+            "MCO 5800.16, V-14, par 011110.A"
+          ]
+        },
+        {
+          "code": "0104",
+          "question": "Are original (if hard copy) letters of appeal and allied papers (e.g., statements, investigative reports, documents, records, photographs, etc.) filed with the UPB files of the unit that conducted the NJP?",
+          "references": [
+            "MCO 5800.16, V-14, par 011107"
+          ]
+        },
+        {
+          "code": "0105",
+          "question": "Is a copy of the UPB (NAVMC 10132) provided to IPAC/Admin Section and are all NJPs run on unit diary, with the exception of non-punitive measures, and are entries recorded on the UPB consistent with entries recorded on the unit diary?",
+          "references": [
+            "MCO 5800.16, V-14, par 011109"
+          ]
+        },
+        {
+          "code": "0106",
+          "question": "Are punishments imposed in compliance with allowable maximum punishments?",
+          "references": [
+            "Manual for Courts-Martial (2024), Part V, par 5, pg. V-4 to V-7",
+            "JAGINST 5800.7G w/CH 1, Chap 1, par 0111"
+          ]
+        },
+        {
+          "code": "0107",
+          "question": "Are appeals requesting stays of punishment involving restriction/extra duties acted on within five days? If not are punishments stayed?",
+          "references": [
+            "Manual for Courts-Martial (2024), Part  V, par 7d, pg. V-8"
+          ]
+        },
+        {
+          "code": "0108",
+          "question": "Are all the appropriate blocks of each UPB for the past 3 calendar years filled out in accordance with the reference? Item 1: Does this include article(s) of the UCMJ violated and a summary of each offense alleged to include date, time, and place of the alleged offense. Item 2: Requires advising the accused in accordance with Article 31, UCMJ. Did the accused indicate intentions by selecting from drop-down choices or by manually writing in their intentions? Did the accused date and sign? If accused refused to sign, is the “refused to sign” box checked and did the CO sign in this block instead? Item 3: Completed upon ensuring that the individual has been informed of rights enumerated in item 2. Did the immediate commanding officer date and sign item 3 prior to imposition of NJP. Item 4: Does this block contain current and previous UAs in excess of 24 hours and current and previous desertions recorded? Item 5: Is the correct drop down selected for each charge or written in for each charge? Item 6: Record complete and accurate punishment(s) imposed followed by date of imposition. Item 7: Record date of suspension followed by complete and accurate description of all or parts of punishment being suspended. If none, is the word \"NONE\" recorded? Item 8, 8A, and 8B: Is complete name, rank/grade, title, and EDIPI of the officer imposing punishment listed? (i) Item 9: Is this block signed by the officer imposing punishment? (j) Item 10: Does this block properly reflect the date of notification? (k) Item 11: Is this block signed and dated by the officer imposing punishment? (l) Item 12: Did the accused select a choice from the drop-down selections and signe? (m) Item 13: Is this block dated? If not appealed, is the “Not appealed” box checked? (n) Item 14: Has the officer who acted on the appeal completed this block or has it been left blank (no appeal). (o) Item 15: Is there a date of notification of appeal decision listed or has it been left blank (no appeal)? (p) Item 16: Has the officer responsible for required administrative action initialed? Must be complete; cannot be left blank. (q) Item 17: Correctly reflect complete unit. (r) Item 18: Correctly reflect last name, first name, middle initial. (s) Item 19: Correctly reflect rank/grade. (t) Item 20: Correctly reflect EDIPI. (u) Item 21: Correctly reflect amplifying remarks. (v) Item 22: Are victim demographic information entries made in cases with victims, “unknown” if victim declines to answer, or left blank if there are no victims?",
+          "references": [
+            "MCO 5800.16, V-14, par 011105"
+          ]
+        },
+        {
+          "code": "0109",
+          "question": "Can the unit confirm a copy of the UPB (NAVMC 10132) is provided to IPAC/Admin Section for Inclusion into Marine’s OMPF?",
+          "references": [
+            "MCO 5800.16, V-14, par 011103 and par 011109"
+          ]
+        },
+        {
+          "code": "0110",
+          "question": "Explain the processes in place to ensure the Marine is provided a copy of the UPB once proceedings are completed and filed.",
+          "references": [
+            "MCO 5800.16, V-14, par 011109"
+          ]
+        },
+        {
+          "code": "0111",
+          "question": "Are signatures on the UPB that of the Commander or as authorized by the references?",
+          "references": [
+            "MCO P1070.12K W/CH 1, par 4007.2a and MCO 5800.16, V-14, par 011105.Q"
+          ]
+        },
+        {
+          "code": "0112",
+          "question": "If a Commander intends for an oral reprimand to be non-punitive, is the UPB being retained or disposed?",
+          "references": [
+            "MCO P1070.12K w/CH 1, par 4007.2b(1)"
+          ]
+        },
+        {
+          "code": "0113",
+          "question": "If a hearing of NJP results in no punishment imposed, is the UPB being retained or disposed?",
+          "references": [
+            "MCO 5800.16, V-14, par 011110.C"
+          ]
+        },
+        {
+          "code": "0114",
+          "question": "When an officer receives NJP, is the UPB entry, acknowledgement of the opportunity to submit matters, and any response provided to the local personnel administration center for inclusion into the officer’s OMPF?",
+          "references": [
+            "MARADMIN 427/23"
+          ]
+        },
+        {
+          "code": "0115",
+          "question": "Are processes in place to ensure that victims are notified of any decision to dispose of an alleged offense at non-judicial punishment?",
+          "references": [
+            "MCO 5800.16-V16, para. 040401.Y"
+          ]
+        },
+        {
+          "code": "0116",
+          "question": "Are processes in place to ensure that victims are notified of the time and location of any NJP?",
+          "references": [
+            "MCO 5800.16-V16, para. 040401.Y"
+          ]
+        },
+        {
+          "code": "0117",
+          "question": "Are processes in place to ensure that victims are notified of the findings and sentence imposed at NJP?",
+          "references": [
+            "MCO 5800.16-V16, para. 040401.Y"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02.0",
+      "title": "COURTS-MARTIAL (Questions apply to all Summary, Special, and General-Courts martial conducted during the last 24 months.)",
+      "description": "",
+      "items": [
+        {
+          "code": "0201",
+          "question": "Does the unit forward all summary courts-martial to a Judge Advocate for the required post-trial review?",
+          "references": [
+            "Manual for Courts Martial (2024), Article 64, pg. A2-28 to A2-29"
+          ]
+        },
+        {
+          "code": "0202",
+          "question": "Does the unit maintain copies of all summary courts-martial cases, to include a copy of the record of trial and Judge Advocate Review, for 2 years?",
+          "references": [
+            "SECNAV M 5210.1 (2019), pg. III-1, par 2.b., electronic file – Schedules Cross Walked by Chapter"
+          ]
+        },
+        {
+          "code": "0203",
+          "question": "Does the unit maintain copies of all special/general courts-martial cases, to include a copy of the record of trial and Judge Advocate Review, for two years after completion of appellate review or are the case files maintained by the servicing Legal Services Support Section (if the command’s legal services is provided by another Service (e.g. Navy, Army, Air Force) then the command must retain copies of all courts-martial cases for two years after appellate review)?",
+          "references": [
+            "SECNAV M 5210.1 (2019), pg. III-1, par 2.b., electronic file – Schedules Cross Walked by Chapter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.0",
+      "title": "FILES (Question applies to all legal files accumulated by the command regarding all legal matters, to include but not limited to, Investigations, Administrative Separations, and Courts-Martial)",
+      "description": "",
+      "items": [
+        {
+          "code": "0301",
+          "question": "Is each legal file folder labeled with appropriate standard subject identification codes, open/close dates, and disposal instructions on the outside of the file folder?",
+          "references": [
+            "SECNAV M-5210.2, Part I, Chap 2, par 2-2(a)-(c)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "04.0",
+      "title": "ADMINISTRATIVE INVESTIGATIONS",
+      "description": "",
+      "items": [
+        {
+          "code": "0401",
+          "question": "Does the unit have complete file copies (to include all endorsements) of each Administrative Investigation processed during the past two years? [Must include endorsement from HHQ as appropriate]",
+          "references": [
+            "SECNAV M 5210.1 (2019), pg. III-1, par 2.b., electronic file – Schedules Cross Walked by Chapter",
+            "JAGINST 5800.7G w/Ch.1, Chap II, sect 0209f(3)"
+          ]
+        },
+        {
+          "code": "0402",
+          "question": "Do Administrative Investigations comply with time limitations set for completing, reviewing and forwarding? If not, has an explanation of the delay been provided in the Commanding Officer’s endorsement or in the IO’s preliminary statement, or have extensions been properly requested and approved?",
+          "references": [
+            "JAGINST 5800.7G w/CH 1, Chap II, sect 0203e, 0206c(9), 0209f, 0210c(7), 0210f(1) and 0225e"
+          ]
+        },
+        {
+          "code": "0403",
+          "question": "Do Command Investigation convening orders contain all relevant elements identified in the reference?",
+          "references": [
+            "JAGINST 5800.7G w/CH 1, Chap II, sect 0206c"
+          ]
+        },
+        {
+          "code": "0404",
+          "question": "When photographs or video recordings are included as part of the investigation are they marked properly?",
+          "references": [
+            "JAGINST 5800.7G w/CH 1, Chap II, sect 0207b(4)"
+          ]
+        },
+        {
+          "code": "0405",
+          "question": "Has the commander properly endorsed all Command Investigations to include investigations closed at the unit level to file?",
+          "references": [
+            "JAGINST 5800.7G w/CH 1, Chap II, sect 0204d"
+          ]
+        },
+        {
+          "code": "0406",
+          "question": "Has the commander forwarded all Command Investigations (except those Command Investigations that meet the criteria under section 0209(f)(1)) to the General Court-Martial Convening Authority for review?",
+          "references": [
+            "JAGINST 5800.7G w/CH 1, Chap II, sect 0209g(1)"
+          ]
+        },
+        {
+          "code": "0407",
+          "question": "Has the command convened or conducted any Litigation-Report Investigations over the past two years? (If not, proceed to 0410). Do Litigation-Report Investigation convening orders contain all relevant elements identified in the reference?",
+          "references": [
+            "JAGINST 5800.7G w/CH 1, Chap II, sect 0210c"
+          ]
+        },
+        {
+          "code": "0408",
+          "question": "Do Litigation-Report Investigations state specifically: “This investigation is being convened and your report is being prepared in contemplation of litigation and for the express purpose of assisting attorneys representing the interests of the United States in the matter”?",
+          "references": [
+            "JAGINST 5800.7G w/CH 1, Chap II, sect 0210c(3)"
+          ]
+        },
+        {
+          "code": "0409",
+          "question": "Are all Litigation-Report Investigation files kept in a file marked “FOR OFFICIAL USE ONLY: LITIGATION/ATTORNEY WORK PRODUCT”?",
+          "references": [
+            "JAGINST 5800.7G w/CH 1, Chap II, sect 0210f(2)"
+          ]
+        },
+        {
+          "code": "0410",
+          "question": "In the event of a service member’s death, did the commander initially order a Preliminary Inquiry into the circumstances surrounding the incident? At the conclusion of the Preliminary Inquiry, what option listed in section 0204 of the reference did the commander exercise?",
+          "references": [
+            "JAGINST 5800.7G w/CH 1, Chap II, sect 0226"
+          ]
+        },
+        {
+          "code": "0411",
+          "question": "Was a line of duty determination recommendation made in each case and forwarded to the first GCMCA in the chain of command with an assigned judge advocate.",
+          "references": [
+            "JAGINST 5800.7G w/CH 1, Chap II, sect 0229d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "05.0",
+      "title": "ENLISTED INVOLUNTARY ADMINISTRATIVE SEPARATIONS",
+      "description": "",
+      "items": [
+        {
+          "code": "0501",
+          "question": "Does the unit have a complete file copy (to include a copy of the separation authority’s endorsement) of each Enlisted Involuntary Administrative Discharge processed during the past 3 years?",
+          "references": [
+            "SECNAV M 5210.1 (2019), pg. III-1, par 2.b., electronic file – Schedules Cross Walked by Chapter"
+          ]
+        },
+        {
+          "code": "0502",
+          "question": "Are activity copies of Administrative Discharge Records destroyed when 3 years old?",
+          "references": [
+            "SECNAV M 5210.1 (2019), pg. III-1, par 2.b., electronic file – Schedules Cross Walked by Chapter"
+          ]
+        },
+        {
+          "code": "0503",
+          "question": "Are notification letters and command recommendations signed personally by the commanding officer, or during the commanding officer’s official absence, are these letters signed “Acting” by the officer temporarily succeeding to command?",
+          "references": [
+            "MCO 1900.16 w/CH 2, Chap 6, par 6302.3"
+          ]
+        },
+        {
+          "code": "0504",
+          "question": "If there is evidence of alcohol or drug abuse/dependence, is the respondent being screened at a SACC or an equivalent facility (i.e., military MTF, or other DOD counseling facility) and offered treatment before the case is referred to a board or forwarded to the separation authority?",
+          "references": [
+            "MCO 1900.16 w/CH 2, Chap 6, par 6303.3"
+          ]
+        },
+        {
+          "code": "0505",
+          "question": "Are all Enlisted Involuntary Administrative Separations processed for a Personality Disorder in compliance with the procedural requirements?",
+          "references": [
+            "MCO 1900.16 w/CH 2, Chap 6, 6203.2"
+          ]
+        },
+        {
+          "code": "0506",
+          "question": "Are all Enlisted Involuntary Administrative Separations processed for Sexual Misconduct procedurally compliant?",
+          "references": [
+            "MCO 1900.16 w/CH 2, Chap 6, sect 6210.4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "06.0",
+      "title": "CRIMINAL JUSTICE INFORMATION REPORTING",
+      "description": "",
+      "items": [
+        {
+          "code": "0601",
+          "question": "In any case where a member of the command is subject to a civilian court-issued restraining order or is convicted at SPCM, GCM, or in a civilian court of a crime of domestic violence, did the commanding officer provide supporting documentation to and direct the member to report to the servicing law enforcement agency, (NCIS, CID, PMO or other) within five working days of notification?",
+          "references": [
+            "MCBUL 5810 of 22 May 2024, encl (2)"
+          ]
+        },
+        {
+          "code": "0602",
+          "question": "In any case where a member of the command is determined, via a finding at an NJP, SCM, SPCM, or Admin Separation Proceedings to have wrongfully used any controlled substance in violation of Article 112a, UCMJ, did the commanding officer provide supporting documentation to and direct the member to report to the servicing law enforcement agency (NCIS, CID, PMO or other) within five working days of disposition?",
+          "references": [
+            "MCBUL 5810 of 22 May 2024, encl (2)"
+          ]
+        },
+        {
+          "code": "0603",
+          "question": "In any case where a member of the command is either: 1. Subject to charges referred to a GCM; 2. Is convicted by a GCM of any offense punishable by more than one year confinement, regardless of the amount of confinement actually awarded or imposed; 3. Is found guilty at trial by SPCM or GCM of any offense of domestic violence as defined in the reference regardless of the punishment awarded; 4. Is found incompetent to stand trial or found not guilty by reason of lack of mental responsibility at trial by SPCM or GCM; or 5. Enters an unauthorized absence or deserter status following preferral of charges; Did the commanding officer provide supporting documentation to and direct the member to report to the servicing law enforcement agency (NCIS, CID, PMO or other) within five working days of disposition?",
+          "references": [
+            "MCBUL 5810 of 22 May 2024, encl (2)"
+          ]
+        },
+        {
+          "code": "0604",
+          "question": "Did the commanding officer counsel in writing a “prohibited person” to abide by Federal law pertaining to restricted access to personally owned firearms and ammunition and to make arrangements to dispose of all such items?",
+          "references": [
+            "MCBUL 5810 of 22 May 2024, encl (2)"
+          ]
+        },
+        {
+          "code": "0605",
+          "question": "Does the command have a procedure in place to ensure a “prohibited person” is not permitted access to privately owned firearms stored in unit armories? If yes, what is the procedure?",
+          "references": [
+            "MCBUL 5810 of 22 May 2024, encl (2)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "07.0",
+      "title": "GENERAL",
+      "description": "",
+      "items": [
+        {
+          "code": "0701",
+          "question": "What system is in effect for placing an accused on legal hold for a court--martial?",
+          "references": [
+            "MCO 1900.16, par 1008.1(c)"
+          ]
+        },
+        {
+          "code": "0702",
+          "question": "What procedures are implemented to ensure a member is processed for appellate leave, if applicable? Describe briefly.",
+          "references": [
+            "SECNAVINST 1050.1A",
+            "MCO 1050.16A"
+          ]
+        }
+      ]
+    }
+  ],
+  "category": "CoRE",
+  "faName": "Legal Administration"
+}

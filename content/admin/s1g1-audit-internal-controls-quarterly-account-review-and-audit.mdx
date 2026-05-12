@@ -1,0 +1,114 @@
+---
+title: "Quarterly Account Review and Audit - S-1 Procedural Page"
+slug: "quarterly-account-review-and-audit"
+summary: "Run the quarterly review of S-1 system accounts against the billet roster and audit privileged certifier accounts each month."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-10"
+unitType: "s1-g1"
+topic: "audit-internal-controls"
+function: "PERA"
+skillLevel: 2000
+trEventCode: "0111-PERA-2002"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO 5239.2C"
+billets: ["s-1-chief", "g-1-officer", "ipac-clerk", "unit-security-manager"]
+gradesPerforming: ["Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO 5239.2C Marine Corps Cybersecurity Program"
+  - "MCO 5000.14D Marine Corps Administrative Procedures"
+  - "DOD 8500.01E Cybersecurity"
+  - "DODI 5010.40 Managers Internal Control Program"
+  - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+performanceSteps:
+  - "Pull the active account roster from MISSO"
+  - "Pull the unit billet roster from TFSMS"
+  - "Cross-check accounts against billets"
+  - "Flag stale accounts on detached or separated Marines"
+  - "Audit privileged certifier accounts against the diary log"
+  - "Validate cyber awareness training currency"
+  - "Document review findings"
+  - "Submit closure requests for stale accounts"
+  - "Brief findings to the commander"
+  - "File the certified review packet"
+relatedRoles:
+  marine: "/marines/audit-internal-controls/quarterly-account-review-and-audit"
+  leader: "/leader/audit-internal-controls/quarterly-account-review-and-audit"
+  commander: "/commander/audit-internal-controls/quarterly-account-review-and-audit"
+source:
+  title: "Quarterly Account Review - MCO 5239.2C and MCO 5000.14D"
+  publisher: "Headquarters Marine Corps M&RA"
+---
+
+## Role and responsibility
+
+The unit security manager and the S-1 chief co-own the quarterly account review. The S-1 chief audits privileged certifier accounts each month against the diary certification log. The S-1 officer signs the review roster. MISSO supports closure requests per MCO 5000.14D enclosure 6.
+
+Source documents flow from the MISSO active account roster, the TFSMS billet roster, the diary certification log, and cyber awareness training certificates. Review actions land as closure requests routed to MISSO and RAPIDS. Outputs include the signed quarterly review roster, the monthly certifier audit, the closure request log, and the commander's review brief.
+
+MCAAT inspects the review roster, the closure request log, and the privileged certifier audit signatures. Per MCO 5239.2C<Citation source="MCO 5239.2C" />, accounts not reviewed quarterly trigger a finding. A privileged certifier account without monthly audit signature triggers a finding.
+
+## Trigger events
+
+- Quarterly review cycle opens.
+- Monthly certifier audit cycle opens.
+- Detach event identifies an account requiring closure.
+- Annual MCAAT visit requires current review history.
+- Cyber awareness training certificate lapses.
+- Stale account discovered during interim audit.
+- Role change moves a clerk requiring permission review.
+
+## Processing workflow
+
+1. Pull the active account roster from MISSO. Generate the current roster of every S-1 account by system (MCTFS, UD-MIPS, MOL, RAPIDS, OMPF, TFSMS).
+2. Pull the unit billet roster from TFSMS. Generate the assigned billet list.
+3. Cross-check accounts against billets. Flag any account where the Marine is not on the current billet roster.
+4. Flag stale accounts. Detached or separated Marines retaining access trigger DOD 8500.01E<Citation source="DOD 8500.01E" /> findings.
+5. Audit privileged certifier accounts. Cross-check the diary certification log against the certifier roster. The S-1 chief signs per MCO 5239.2C<Citation source="MCO 5239.2C" />.
+6. Validate cyber awareness training currency. Per DOD 8500.01E<Citation source="DOD 8500.01E" />, annual cyber awareness training is required for system access.
+7. Document review findings. Capture flagged accounts, audit signatures, and corrective actions.
+8. Submit closure requests. Route to MISSO and RAPIDS for stale accounts.
+9. Brief findings to the commander. Present quarterly review results and trends.
+10. File the certified review packet. Stage in the unit cybersecurity folder for MCAAT inspection.
+
+## Systems of record and forms
+
+### Systems
+
+- MISSO portal. Source of active account roster.
+- TFSMS. Source of billet roster.
+- MCTFS, UD-MIPS, MOL, RAPIDS, OMPF. Audited systems.
+- Diary certification log. Source for privileged certifier audit.
+
+### Forms
+
+- Quarterly Review Roster. Local roster documenting the cross-check.
+- Monthly Certifier Audit Sheet. Local audit form per certifier.
+- Account Closure Request. Submitted to MISSO and RAPIDS.
+- Internal Control Annual Statement. Required under DODI 5010.40.
+
+## Common pitfalls
+
+- Quarterly review skipped. The roster diverges from the billet picture. Set a fixed quarter-end tickler.
+- Monthly certifier audit signed without execution. Pair clerks during the audit and document pairing.
+- Stale accounts left open past 24 hours. Refer to the Account Closure at Detach workflow per DOD 8500.01E<Citation source="DOD 8500.01E" />.
+- Cyber awareness training not validated. Marines retain access with expired training. Pull training certificates per Marine each quarter.
+- Review packet not filed for MCAAT. The audit history is reconstructed under pressure. File at every cycle.
+
+## Decision points
+
+- Closure of recently detached Marine returning within 90 days. Per MCO 5239.2C<Citation source="MCO 5239.2C" />, reactivation requires fresh SAAR-N. Close and require new request.
+- Certifier audit failure response. The certifier signed diary lines without the privileged access agreement on file. The S-1 officer suspends per MCO 5239.2C<Citation source="MCO 5239.2C" />.
+- Cyber training waiver. No waivers under DOD 8500.01E<Citation source="DOD 8500.01E" />. The Marine completes training before access continues.
+
+## Authority
+
+This sub-page sits under MCO 5239.2C<Citation source="MCO 5239.2C" /> Marine Corps Cybersecurity Program (quarterly review and monthly certifier audit) and DOD 8500.01E<Citation source="DOD 8500.01E" /> Cybersecurity (24-hour disablement, annual training). MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6 establishes MISSO support. DODI 5010.40<Citation source="DODI 5010.40" /> Managers Internal Control Program drives the annual statement of assurance. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0111-PERA-2002 covers admin audit processes.
+
+## Related references
+
+- MCO 5239.2C Marine Corps Cybersecurity Program. Quarterly review and certifier audit framework.
+- MCO 5000.14D Marine Corps Administrative Procedures. MISSO support at enclosure 6.
+- DOD 8500.01E Cybersecurity. 24-hour disablement and annual training requirements.
+- DODI 5010.40 Managers Internal Control Program. Annual statement of assurance.
+- NAVMC 3500.3E Manpower and Administration T-R Manual. Event 0111-PERA-2002 admin audit.

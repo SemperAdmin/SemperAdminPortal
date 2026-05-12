@@ -1,0 +1,112 @@
+---
+title: "Combat Readiness Percentage (CRP) Calculation and Reporting - S-1 Procedural Page"
+slug: "combat-readiness-percentage-crp-calculation-and-reporting"
+summary: "Calculate Unit CRP from E-coded T-R events supporting the approved METL and report results to DRRS-MC per the readiness cycle."
+roles: ["admin", "leader", "commander"]
+lastVerified: "2026-05-10"
+unitType: "s1-g1"
+topic: "admin-training-sustainment"
+function: "GENA"
+skillLevel: 2000
+trEventCode: "0170-OPER-2001"
+mosPerforming: ["0102", "0111", "0170"]
+sourcePolicy: "MCO P3500.72A"
+billets: ["s-1-officer", "s-1-chief", "g-1-officer", "unit-training-manager"]
+gradesPerforming: ["Sgt", "SSgt", "GySgt"]
+sustainmentInterval: "12 months"
+references:
+  - "MCO P3500.72A Marine Corps Ground Training and Readiness Program"
+  - "MCO 1553.3C Unit Training Management Program"
+  - "MCO 3000.13B Marine Corps Unit Readiness Reporting"
+  - "MCRP 7-20A.1 Mission Essential Task Development"
+  - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+performanceSteps:
+  - "Pull the published METL from MCTIMS"
+  - "Identify E-coded T-R events supporting each MET"
+  - "Pull current event completion and currency state"
+  - "Calculate per-MET CRP as a percentage of E-coded events trained"
+  - "Sum MET CRPs and divide by total METs for Unit CRP"
+  - "Validate sustainment interval status on every E-coded event"
+  - "Reconcile CRP against the MCTIMS calendar history"
+  - "Submit Unit CRP to DRRS-MC per the readiness cycle"
+  - "Brief CRP trends to the commander"
+  - "Action shortfalls into the next training plan"
+relatedRoles:
+  marine: "/marines/admin-training-sustainment/combat-readiness-percentage-crp-calculation-and-reporting"
+  leader: "/leader/admin-training-sustainment/combat-readiness-percentage-crp-calculation-and-reporting"
+  commander: "/commander/admin-training-sustainment/combat-readiness-percentage-crp-calculation-and-reporting"
+source:
+  title: "CRP Calculation and Reporting - MCO P3500.72A Chapter 5"
+  publisher: "Headquarters Marine Corps TECOM"
+---
+
+## Role and responsibility
+
+The unit training manager owns the CRP calculation cycle. The S-1 chief reconciles MCTIMS event completion against the CRP roll-up. The S-1 officer briefs CRP trends to the commander and routes the readiness submission to DRRS-MC. The G-1 manpower officer at MEF level rolls up subordinate CRPs into the parent readiness picture.
+
+Source documents flow from the published METL, the T-R Manual identifying E-coded events per MET, the MCTIMS calendar event history, and the sustainment interval status per event. CRP transactions land in MCTIMS and feed DRRS-MC per MCO 3000.13B. Outputs include the per-MET CRP, the Unit CRP, the readiness submission to DRRS-MC, and the commander's CRP brief.
+
+MCAAT and the IGMC UTM functional area inspectors check Unit CRP against the published METL, the MCTIMS calendar history, and the readiness submission. Unit CRP that does not reconcile to MCTIMS event history triggers a finding under MCO P3500.72A<Citation source="MCO P3500.72A" /> Chapter 5. CRP is a snapshot, not a checklist, but every snapshot reconciles to the source data.
+
+## Trigger events
+
+- Periodic readiness reporting cycle opens per MCO 3000.13B<Citation source="MCO 3000.13B" />.
+- E-coded T-R event completes raising MET CRP.
+- Sustainment interval lapses on an E-coded event lowering MET CRP.
+- METL update triggers CRP recalculation per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraph 5003.
+- Pre-deployment readiness validation requires current CRP.
+- Post-deployment readiness reset requires CRP recalculation.
+- Higher headquarters request for CRP roll-up.
+
+## Processing workflow
+
+1. Pull the published METL. Generate the current METL from MCTIMS per MCO 1553.3C<Citation source="MCO 1553.3C" /> paragraph 4.b.(6)(e). The unit training manager pulls.
+2. Identify E-coded T-R events. For each MET on the approved METL, list the E-coded events from the T-R Manual per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraph 4002.1.c.
+3. Pull current completion state. Generate the MCTIMS calendar history showing completed events with date and evaluator.
+4. Calculate per-MET CRP. Per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraph 5004, MET CRP equals (number of E-coded events current / total E-coded events for MET) times 100. For example, 3 of 4 E-coded events trained on a MET equals 75 percent MET CRP.
+5. Sum MET CRPs and divide. Per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraph 5004 and Figure 5-1, Unit CRP equals sum of MET CRPs divided by total number of METs. Example. MET 1 75, MET 2 100, MET 3 25, MET 4 50, MET 5 75 sums to 325. 325 divided by 5 equals 65 percent Unit CRP.
+6. Validate sustainment interval status. Confirm each E-coded event sits within the sustainment interval per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraph 4002.1.e. Lapsed events drop from CRP credit.
+7. Reconcile against MCTIMS calendar. Cross-check CRP credit against MCTIMS event history. Flag any CRP credit without supporting calendar entry.
+8. Submit Unit CRP to DRRS-MC. The S-1 officer routes the readiness submission per MCO 3000.13B<Citation source="MCO 3000.13B" />.
+9. Brief CRP trends. The unit training manager briefs the commander on CRP movement, MET-level shortfalls, and recovery options.
+10. Action shortfalls into the next training plan. Roll uncompleted E-coded events into the next cycle plan per MCO 1553.3C<Citation source="MCO 1553.3C" /> paragraph 4.c.(2).
+
+## Systems of record and forms
+
+### Systems
+
+- MCTIMS UTM Module. Holds CRP calculation, METL, and event history.
+- DRRS-MC. Receives the Unit CRP submission per MCO 3000.13B<Citation source="MCO 3000.13B" />.
+- T-R Manual (per occupational field). Identifies E-coded events per MET.
+
+### Forms
+
+- CRP Calculation Worksheet. Local worksheet documenting the per-MET math.
+- DRRS-MC Readiness Submission. Routine readiness reporting.
+- CRP Trend Brief Slides. Local brief format for the commander.
+
+## Common pitfalls
+
+- CRP awarded to non-E-coded events. Per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraph 5001.1, CRP is only assigned to E-coded events. Confirm the E-coded designation before awarding credit.
+- Lapsed sustainment interval still counted in CRP. The event sits past the interval and credit continues. Drop from CRP credit at the lapse per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraph 4002.1.e.
+- METL update without CRP recalculation. The CRP picture lags the METL. Trigger recalculation at every METL publication per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraph 5003.
+- Per-MET CRP averaged with weights. The math weighs METs differently than total count. Per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraph 5004, sum MET CRPs and divide by total METs evenly.
+- CRP submission to DRRS-MC without MCTIMS reconciliation. The submission cannot tie back to source data. Reconcile before submission.
+
+## Decision points
+
+- Deferred E-coded event impact on CRP. The event was deferred for logistics. Per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraph 4006.1, CRP credit is NOT awarded for deferred E-coded events.
+- Waived E-coded event impact on CRP. The commander waived the event based on prior experience. Per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraph 4006.2, the unit's CRP DOES reflect credit for the waived E-coded event.
+- Chained event credit. The unit completed a 5000-level E-coded event chained to a 4000-level E-coded event. Per MCO P3500.72A<Citation source="MCO P3500.72A" /> paragraph 4005.1, completion of the upper-level event awards CRP credit to the chained subordinate event.
+
+## Authority
+
+This sub-page sits under MCO P3500.72A<Citation source="MCO P3500.72A" /> Chapter 5, paragraphs 5000 through 5004 with Figure 5-1, which defines CRP, sets E-coded scope, and prescribes the calculation method. MCO 1553.3C<Citation source="MCO 1553.3C" /> paragraph 4.b.(6)(e) and (k) require METL maintenance and continuous internal assessment driving CRP. MCO 3000.13B<Citation source="MCO 3000.13B" /> governs the readiness reporting submission. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0170-OPER-2001 covers the 01XX training plan informed by CRP shortfalls.
+
+## Related references
+
+- MCO P3500.72A Chapter 5. CRP development, generation, calculation, and Figure 5-1 example.
+- MCO 1553.3C Unit Training Management Program. METL and continuous internal assessment.
+- MCO 3000.13B Marine Corps Unit Readiness Reporting. Readiness submission to DRRS-MC.
+- MCRP 7-20A.1 Mission Essential Task Development. Doctrinal MET and E-coded event scoping.
+- NAVMC 3500.3E Manpower and Administration T-R Manual. Event 0170-OPER-2001 informed by CRP.
