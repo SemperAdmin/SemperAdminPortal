@@ -3,7 +3,7 @@
 
 **Date:** 2026-05-12  
 **Status:** PRE-ATO - Do not deploy to production  
-**Classification:** CONTROLLED UNCLASSIFIED INFORMATION (CUI)
+**Classification:** Unclassified
 
 This checklist tracks every action required before the Semper Admin Portal receives an ATO from the Authorizing Official. Items marked **BLOCKING** must be complete before ATO submission.
 
@@ -167,4 +167,4 @@ The following documents must be complete and approved before ATO submission to t
 
 ---
 
-**CONTROLLED UNCLASSIFIED INFORMATION (CUI)**
+

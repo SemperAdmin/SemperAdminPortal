@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { AppShell } from "@/components/shell/app-shell";
-import { CuiBanner } from "@/components/shell/cui-banner";
+
 import "./globals.css";
 
 // Content Security Policy for static export (GitHub Pages cannot set HTTP headers).
@@ -73,7 +73,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <CuiBanner />
           <a
             href="#main"
             className="sr-only focus:not-sr-only focus:fixed focus:left-2 focus:top-2 focus:z-50 focus:rounded focus:bg-[var(--color-accent-yellow)] focus:px-3 focus:py-2 focus:text-[var(--color-neutral-950)]"

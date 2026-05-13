@@ -4,7 +4,7 @@
 **Document version:** 1.0  
 **Date:** 2026-05-12  
 **Status:** DRAFT - Not approved for production use  
-**Classification:** CONTROLLED UNCLASSIFIED INFORMATION (CUI)
+**Classification:** Unclassified
 
 ---
 
@@ -186,7 +186,7 @@ None. The application does not connect to other systems, APIs, or databases in i
 - CSP meta tag configured
 - Frame-buster implemented
 - npm audit in CI/CD pipeline
-- CUI markings on all pages
+- App marked as educational reference, not official DoD publication
 - Role tampering detection and audit logging
 
 ### Gaps (must resolve before ATO)
@@ -222,4 +222,4 @@ None. The application does not connect to other systems, APIs, or databases in i
 
 *This document is DRAFT. It requires review by an authorized ISSO and signature from the Authorizing Official before the system may operate in any production or operational environment.*
 
-**CONTROLLED UNCLASSIFIED INFORMATION (CUI)**
+
