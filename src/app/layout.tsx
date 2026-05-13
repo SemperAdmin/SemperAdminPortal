@@ -4,20 +4,6 @@ import { ThemeProvider } from "@/components/theme/theme-provider";
 import { AppShell } from "@/components/shell/app-shell";
 import "./globals.css";
 
-// Content Security Policy for static export (GitHub Pages cannot set HTTP headers).
-// frame-ancestors is not enforceable via meta tag; the JS frame-buster below handles it.
-const CSP = [
-  "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
-  "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: blob:",
-  "font-src 'self' data:",
-  "connect-src 'self'",
-  "worker-src blob:",
-  "object-src 'none'",
-  "base-uri 'self'",
-  "form-action 'self'",
-].join("; ");
 
 export const metadata: Metadata = {
   title: {
@@ -58,14 +44,8 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <meta httpEquiv="Content-Security-Policy" content={CSP} />
-        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-      </head>
       <body className="antialiased">
-        {/* beforeInteractive must live in body, not head — Next.js App Router requirement. */}
-        <Script src="/SemperAdminPortal/security/frame-buster.js" strategy="beforeInteractive" />
+        <Script src="/SemperAdminPortal/security/frame-buster.js" strategy="afterInteractive" />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
