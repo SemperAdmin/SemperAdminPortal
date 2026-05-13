@@ -38,6 +38,8 @@ export const snippetSchema = baseFrontmatter.extend({
 export const videoSchema = baseFrontmatter.extend({
   durationSeconds: z.number().int().nonnegative().default(0),
   videoUrl: z.string(),
+  youtubeUrl: z.string().url().optional(),
+  mceleUrl: z.string().url().optional(),
   posterUrl: z.string().optional(),
   transcript: z.string().optional(),
   chapters: z

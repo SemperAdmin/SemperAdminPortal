@@ -2,13 +2,17 @@
   "name": "semper-admin-portal",
   "version": "0.1.0",
   "private": true,
+  "pnpm": {
+    "onlyBuiltDependencies": ["sharp", "unrs-resolver"]
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "lint": "next lint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "pretype-check": "node scripts/sync-content.mjs",
+    "sync:thumbnails": "node scripts/sync-thumbnails.mjs",
+    "pretype-check": "node scripts/sync-content.mjs && node scripts/sync-thumbnails.mjs",
     "type-check": "tsc --noEmit",
     "prelint": "node scripts/sync-content.mjs",
     "content:sync": "node scripts/sync-content.mjs",
@@ -40,6 +44,7 @@
     "@radix-ui/react-tooltip": "^1.2.8",
     "@react-pdf/renderer": "^4.5.1",
     "@tailwindcss/postcss": "^4.2.4",
+    "@tanstack/react-virtual": "^3.13.24",
     "@types/file-saver": "^2.0.7",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
