@@ -7,6 +7,8 @@ import {
   getAdminContent
 } from "@/lib/content/loader";
 import { UNIT_TYPES, type UnitType } from "@/lib/content/schemas";
+import { PageHeader } from "@/components/domain/page-header";
+import { Pill } from "@/components/ui/pill";
 
 const UNIT_LABELS: Record<UnitType, string> = {
   "s1-g1": "S-1 / G-1",
@@ -92,17 +94,13 @@ export default async function TopicIndex({
 
   return (
     <div className="mx-auto max-w-5xl">
-            <header className="mb-6">
-        <h1
-          className="text-3xl font-bold tracking-tight"
-          style={{ fontFamily: "var(--font-display)" }}
-        >
-          {topicLabel}
-        </h1>
-        <p className="mt-1 text-sm text-[var(--color-muted-foreground)]">
-          {UNIT_LABELS[ut]} content tagged for {topicLabel}.
-        </p>
-      </header>
+      <PageHeader
+        eyebrow={UNIT_LABELS[ut]}
+        tags={<Pill variant="admin">{UNIT_LABELS[ut]}</Pill>}
+        title={topicLabel.toUpperCase()}
+        summary={`${sortedEntries.length} ${sortedEntries.length === 1 ? "page" : "pages"} of admin reference for ${topicLabel}.`}
+        compact
+      />
 
       <ul className="space-y-2">
         {sortedEntries.map((entry) => {
@@ -111,30 +109,32 @@ export default async function TopicIndex({
             <li key={fm.slug}>
               <Link
                 href={`/admin/${ut}/${topic}/${fm.slug}`}
-                className="group flex items-start justify-between gap-3 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-primary)] hover:bg-[var(--color-muted)]/40"
+                className="group flex items-start justify-between gap-4 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-5 transition-all duration-150 hover:-translate-y-0.5 hover:border-[var(--color-role-admin)] hover:shadow-[var(--shadow-md)]"
               >
-                <div className="min-w-0">
+                <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="rounded-sm bg-[var(--color-primary)]/10 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[var(--color-primary)]">
+                    <span className="rounded-[var(--radius-xs)] bg-[var(--color-role-admin)]/10 px-1.5 py-0.5 text-xs font-bold uppercase tracking-wider text-[var(--color-role-admin)]">
                       {fm.function}
                     </span>
-                    <span className="rounded-sm bg-[var(--color-muted)] px-1.5 py-0.5 text-[10px] font-semibold text-[var(--color-muted-foreground)]">
+                    <span className="rounded-[var(--radius-xs)] bg-[var(--color-surface-2)] px-1.5 py-0.5 text-xs font-semibold text-[var(--color-muted-foreground)]">
                       {fm.skillLevel}-level
                     </span>
-                    <span className="font-mono text-[10px] text-[var(--color-muted-foreground)]">
-                      {fm.trEventCode}
-                    </span>
-                    <span className="text-[10px] text-[var(--color-muted-foreground)]">
+                    {fm.trEventCode && (
+                      <span className="font-mono text-xs text-[var(--color-subtle-foreground)]">
+                        {fm.trEventCode}
+                      </span>
+                    )}
+                    <span className="text-xs text-[var(--color-subtle-foreground)]">
                       MOS {fm.mosPerforming.join(", ")}
                     </span>
                   </div>
-                  <p className="mt-1.5 font-semibold">{fm.title}</p>
-                  <p className="mt-1 text-sm text-[var(--color-muted-foreground)]">
+                  <p className="mt-2 text-base font-semibold leading-snug">{fm.title}</p>
+                  <p className="mt-1 text-sm leading-relaxed text-[var(--color-muted-foreground)]">
                     {fm.summary}
                   </p>
                 </div>
                 <ChevronRight
-                  className="mt-1 size-4 shrink-0 opacity-40 transition-opacity group-hover:opacity-100"
+                  className="mt-1 size-4 shrink-0 text-[var(--color-role-admin)] opacity-30 transition-all duration-150 group-hover:translate-x-0.5 group-hover:opacity-100"
                   aria-hidden="true"
                 />
               </Link>

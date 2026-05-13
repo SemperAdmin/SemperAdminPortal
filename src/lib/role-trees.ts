@@ -64,7 +64,7 @@ const STYLEGUIDE_SECTION: TreeSection = {
 // =================================================================
 const MARINE_TREE: TreeSection[] = [
   {
-    label: "Browse content",
+    label: "",
     items: [
       { label: "Overview", href: "/marines" },
       {
@@ -110,7 +110,7 @@ const MARINE_TREE: TreeSection[] = [
 // =================================================================
 const LEADER_TREE: TreeSection[] = [
   {
-    label: "Browse content",
+    label: "",
     items: [
       { label: "Overview", href: "/leader" },
       {
@@ -304,7 +304,7 @@ const LEADER_TREE: TreeSection[] = [
 // =================================================================
 const COMMANDER_TREE: TreeSection[] = [
   {
-    label: "Browse content",
+    label: "",
     items: [
       { label: "Overview", href: "/commander" },
       {
@@ -344,51 +344,9 @@ const COMMANDER_TREE: TreeSection[] = [
 // =================================================================
 const ADMIN_TREE: TreeSection[] = [
   {
-    label: "Browse content",
+    label: "",
     items: [
-      { label: "Overview", href: "/admin" },
-      {
-        label: "S-1 / G-1",
-        href: "/admin/s1-g1",
-        defaultOpen: true,
-        children: [
-          { label: "Casualty Affairs", href: "/admin/s1-g1/casualty-affairs/overview" },
-          { label: "Defense Travel System", href: "/admin/s1-g1/dts/overview" },
-          { label: "Directives Management", href: "/admin/s1-g1/directives-management/overview" },
-          { label: "Government Travel Charge Card", href: "/admin/s1-g1/gtccp/overview" },
-          { label: "Leave, Liberty, Admin Absence", href: "/admin/s1-g1/leave-liberty-and-administrative-absence/overview" },
-          { label: "Legal Administration", href: "/admin/s1-g1/legal-administration/overview" },
-          { label: "Marine Corps Sponsorship", href: "/admin/s1-g1/sponsorship-program/overview" },
-          { label: "Military Awards", href: "/admin/s1-g1/military-awards/overview" },
-          { label: "Performance Evaluation System", href: "/admin/s1-g1/pes/overview" },
-          { label: "Promotions", href: "/admin/s1-g1/promotions/overview" },
-          { label: "Postal Affairs", href: "/admin/s1-g1/postal-affairs/overview" },
-          { label: "Records Management", href: "/admin/s1-g1/records-management/overview" },
-          { label: "Reports Management", href: "/admin/s1-g1/reports-management/overview" },
-          { label: "Separation and Retirement", href: "/admin/s1-g1/separation-retirement/overview" },
-          { label: "Limited Duty", href: "/admin/s1-g1/limited-duty/overview" },
-          { label: "VWAP", href: "/admin/s1-g1/vwap/overview" },
-        ],
-      },
-      {
-        label: "I&I Staff",
-        href: "/admin/i-and-i",
-        children: [
-          { label: "Drill weekends", href: "/admin/i-and-i/drill-and-at" },
-          { label: "AT cycles", href: "/admin/i-and-i/at-cycles" },
-          { label: "IDT pay", href: "/admin/i-and-i/drill-and-at/process-idt-pay" },
-        ],
-      },
-      {
-        label: "PAC (IPAC)",
-        href: "/admin/pac",
-        children: [
-          { label: "Personnel record audits", href: "/admin/pac/audits/personnel-record-audit" },
-          { label: "BAH overview", href: "/admin/pac/bah/bah-overview" },
-          { label: "Joins", href: "/admin/pac/joins" },
-          { label: "Separations", href: "/admin/pac/separations" },
-        ],
-      },
+      { label: "Home", href: "/" },
     ],
   },
   REFERENCE_SECTION,

@@ -43,6 +43,14 @@ const FUNCTION_LABELS: Record<string, string> = {
   PERA: "Personnel Admin",
 };
 
+// Per-function color (from design token palette — no hardcoded hex)
+const FUNCTION_COLORS: Record<string, string> = {
+  PERA: "var(--color-role-admin)",       // admin green
+  GENA: "var(--color-status-info)",      // navy blue
+  OPER: "var(--color-status-aging)",     // amber
+  MPMN: "var(--color-brass)",            // brass
+};
+
 export async function generateStaticParams() {
   return UNIT_TYPES.map((unitType) => ({ unitType }));
 }
@@ -156,48 +164,72 @@ export default async function UnitTypeLanding({
           </p>
         </div>
       ) : (
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-[18px] sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {topicCards.map((card) => {
             const Icon = FUNCTION_ICON[card.functionCode] ?? FileText;
             const functionLabel =
               FUNCTION_LABELS[card.functionCode] ?? card.functionCode;
+            const fnColor = FUNCTION_COLORS[card.functionCode] ?? FUNCTION_COLORS.GENA;
             return (
               <Link
                 key={card.topic}
                 href={`/admin/${ut}/${card.topic}`}
-                className="group relative flex flex-col overflow-hidden rounded-[var(--radius-md)] border border-[color-mix(in_srgb,var(--color-role-admin)_30%,transparent)] bg-[var(--color-card)] p-4 transition-all hover:-translate-y-0.5 hover:border-[var(--color-role-admin)] hover:shadow-[var(--shadow-md)]"
+                className="group relative flex flex-col overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-5 transition-all duration-200 hover:-translate-y-1 hover:border-[var(--color-role-admin)] hover:shadow-[var(--shadow-md)]"
               >
-                <div className="mb-2 flex items-center justify-between">
-                  <div className="inline-flex size-9 items-center justify-center rounded-[var(--radius-sm)] bg-[color-mix(in_srgb,var(--color-role-admin)_14%,transparent)] text-[var(--color-role-admin)]">
+                {/* Per-card radial bloom on hover */}
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-0 rounded-[var(--radius-md)] opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                  style={{ background: `radial-gradient(ellipse at top left, color-mix(in srgb, var(--color-role-admin) 6%, transparent) 0%, transparent 70%)` }}
+                />
+                <div className="relative mb-3 flex items-center justify-between">
+                  <div
+                    className="inline-flex size-10 items-center justify-center rounded-[var(--radius-sm)] transition-colors duration-200"
+                    style={{
+                      background: `color-mix(in srgb, ${fnColor} 14%, transparent)`,
+                      color: fnColor,
+                      border: `1px solid color-mix(in srgb, ${fnColor} 25%, transparent)`,
+                    }}
+                  >
                     <Icon className="size-5" aria-hidden="true" />
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <Pill variant="admin" size="xs">
+                    <span
+                      className="rounded-[var(--radius-xs)] px-1.5 py-0.5 font-mono text-xs font-bold tracking-wide"
+                      style={{ background: `color-mix(in srgb, ${fnColor} 12%, transparent)`, color: fnColor }}
+                    >
                       {card.functionCode}
-                    </Pill>
+                    </span>
                     {card.count > 0 && (
-                      <span className="rounded-sm bg-[color-mix(in_srgb,var(--color-role-admin)_10%,transparent)] px-1.5 py-0.5 font-mono text-[10px] font-bold text-[var(--color-role-admin)]">
+                      <span className="rounded-[var(--radius-xs)] bg-[var(--color-surface-2)] px-1.5 py-0.5 font-mono text-xs font-bold text-[var(--color-muted-foreground)]">
                         {card.count}
                       </span>
                     )}
                   </div>
                 </div>
-                <h2 className="text-sm font-bold leading-tight">
+                <h2 className="relative text-base font-bold leading-snug tracking-tight">
                   {card.label}
                 </h2>
-                <p className="mt-1 line-clamp-3 text-xs leading-snug text-[var(--color-muted-foreground)]">
+                <p className="relative mt-1.5 line-clamp-3 text-sm leading-relaxed text-[var(--color-muted-foreground)]">
                   {card.summary}
                 </p>
-                <div className="mt-3 flex items-center justify-between border-t border-[var(--color-border)] pt-2 text-[10px] font-semibold uppercase tracking-[0.06em] text-[var(--color-subtle-foreground)]">
-                  <span>
+                <div className="relative mt-4 flex items-center justify-between border-t border-[var(--color-border)] pt-3">
+                  <span className="text-xs font-medium text-[var(--color-subtle-foreground)]">
                     {card.count} {card.count === 1 ? "page" : "pages"}
-                    <span className="ml-1.5 normal-case tracking-normal text-[var(--color-muted-foreground)]/70">
+                    <span className="ml-1.5 text-[var(--color-muted-foreground)]/60">
                       {functionLabel}
                     </span>
                   </span>
-                  <span className="inline-flex items-center gap-1 text-[var(--color-role-admin)]">
+                  <span
+                    className="inline-flex items-center gap-1 rounded-[var(--radius-sm)] border px-2 py-0.5 text-xs font-semibold transition-colors duration-150 group-hover:border-transparent"
+                    style={{
+                      borderColor: `color-mix(in srgb, ${fnColor} 35%, transparent)`,
+                      color: fnColor,
+                      background: `color-mix(in srgb, ${fnColor} 0%, transparent)`,
+                    }}
+                  >
                     Open
-                    <ArrowRight className="size-3" aria-hidden="true" />
+                    <ArrowRight className="size-3 transition-transform duration-150 group-hover:translate-x-0.5" aria-hidden="true" />
                   </span>
                 </div>
               </Link>

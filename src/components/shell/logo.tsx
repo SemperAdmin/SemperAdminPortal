@@ -27,7 +27,7 @@ export function Logo({ wordmark = true, size = "md", className }: LogoProps) {
       )}
     >
       <Image
-        src="/logo.jpg"
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/logo.jpg`}
         alt=""
         width={px}
         height={px}

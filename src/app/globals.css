@@ -25,6 +25,7 @@
   --color-marine-blue: #0F1F3D;
   --color-marine-blue-700: #0A1424;
   --color-marine-blue-300: #2A3D60;
+  --color-marine-blue-100: #6B9BD2;
 
   --color-parchment: #F2E5BE;
   --color-parchment-700: #D9C994;
@@ -156,6 +157,7 @@
     --color-card-foreground: var(--color-parchment);
     --color-popover: var(--color-ink-700);
     --color-popover-foreground: var(--color-parchment);
+    --color-role-commander: var(--color-marine-blue-100);
     --color-primary: var(--color-usmc-scarlet-300);
     --color-primary-foreground: var(--color-ink-900);
     --color-secondary: var(--color-marine-blue-300);

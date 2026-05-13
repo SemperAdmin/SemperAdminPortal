@@ -90,19 +90,19 @@ export default async function AdminDetail({
   return (
     <article className="mx-auto max-w-3xl">
             <div className="mb-3 flex flex-wrap items-center gap-2">
-        <span className="rounded-sm bg-[var(--color-primary)]/10 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-[var(--color-primary)]">
+        <span className="rounded-sm bg-[var(--color-primary)]/10 px-2 py-1 text-xs font-bold uppercase tracking-wider text-[var(--color-primary)]">
           {fm.function} - {FUNCTION_LABELS[fm.function] ?? fm.function}
         </span>
-        <span className="rounded-sm bg-[var(--color-muted)] px-2 py-1 text-[10px] font-semibold text-[var(--color-muted-foreground)]">
+        <span className="rounded-sm bg-[var(--color-muted)] px-2 py-1 text-xs font-semibold text-[var(--color-muted-foreground)]">
           {fm.skillLevel}-level
         </span>
         {fm.trEventCode && (
-          <span className="rounded-sm border border-[var(--color-border)] px-2 py-1 font-mono text-[10px] text-[var(--color-foreground)]">
+          <span className="rounded-sm border border-[var(--color-border)] px-2 py-1 font-mono text-xs text-[var(--color-foreground)]">
             {fm.trEventCode}
           </span>
         )}
         {fm.sourcePolicy && (
-          <span className="rounded-sm bg-[var(--color-muted)] px-2 py-1 text-[10px] font-semibold text-[var(--color-muted-foreground)]">
+          <span className="rounded-sm bg-[var(--color-muted)] px-2 py-1 text-xs font-semibold text-[var(--color-muted-foreground)]">
             <ReferenceLink text={fm.sourcePolicy} noIcon />
             {fm.sourceChapter && " Ch " + fm.sourceChapter}
             {fm.sourceSection && " Sec " + fm.sourceSection}
@@ -126,7 +126,7 @@ export default async function AdminDetail({
       </div>
 
       <section className="mt-6 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-4">
-        <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
+        <p className="text-xs font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
           {fm.trEventCode ? "T&R Event Details" : "Reference Information"}
         </p>
         <dl className="mt-2 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-2">
@@ -193,7 +193,7 @@ export default async function AdminDetail({
 
       {fm.performanceSteps.length > 0 && (
         <section className="mt-4 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-          <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
+          <p className="text-xs font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
             {fm.trEventCode ? "Performance Steps (T&R)" : "Key Steps"}
           </p>
           <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm">
@@ -210,7 +210,7 @@ export default async function AdminDetail({
 
       {fm.relatedRoles && (
         <section className="mt-8 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-4">
-          <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
+          <p className="text-xs font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
             How other roles see this topic
           </p>
           <ul className="mt-2 space-y-1.5 text-sm">
@@ -259,7 +259,7 @@ export default async function AdminDetail({
 
       {fm.references.length > 0 && (
         <section className="mt-4 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-          <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
+          <p className="text-xs font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
             References
           </p>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-sm">

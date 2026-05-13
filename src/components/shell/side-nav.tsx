@@ -101,13 +101,13 @@ export function SideNav({ open, onOpenChange }: SideNavProps) {
 
       {/* Mobile drawer */}
       <Sheet open={open} onOpenChange={onOpenChange}>
-        <SheetContent side="left" className="w-80 p-0">
-          <SheetHeader className="border-b border-[var(--color-border)] px-4 py-3">
+        <SheetContent side="left" className="flex w-80 flex-col p-0">
+          <SheetHeader className="shrink-0 border-b border-[var(--color-border)] px-4 py-3">
             <SheetTitle className="font-display text-lg tracking-wide">
               SEMPER ADMIN
             </SheetTitle>
           </SheetHeader>
-          <div className="overflow-y-auto px-3 pb-6 pt-3">
+          <div className="min-h-0 flex-1 overflow-y-auto px-3 pb-6 pt-3">
             {renderTree(() => onOpenChange(false))}
           </div>
         </SheetContent>

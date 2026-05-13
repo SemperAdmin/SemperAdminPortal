@@ -36,7 +36,7 @@ export function ContentCard({
   topRight,
 }: ContentCardProps) {
   return (
-    <Card className="flex h-full flex-col transition-shadow hover:shadow-[var(--shadow-card-strong)]">
+    <Card elevation="hover" className="flex h-full flex-col">
       <CardHeader>
         <div className="flex items-start justify-between gap-2">
           <div className="flex flex-wrap items-center gap-2">

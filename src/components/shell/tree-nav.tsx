@@ -66,9 +66,11 @@ function TreeSectionBlock({
 }) {
   return (
     <div>
-      <p className="px-3 pb-1.5 text-[10px] font-bold uppercase tracking-[0.1em] text-[var(--color-subtle-foreground)]">
-        {section.label}
-      </p>
+      {section.label && (
+        <p className="px-3 pb-1.5 text-[10px] font-bold uppercase tracking-[0.1em] text-[var(--color-subtle-foreground)]">
+          {section.label}
+        </p>
+      )}
       <ul className="flex flex-col gap-0.5">
         {section.items.map((item, i) => (
           <li key={(isBranch(item) ? item.label : item.href) + i}>

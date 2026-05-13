@@ -18,7 +18,7 @@ const cardVariants = cva(
       },
       elevation: {
         flat: "",
-        hover: "hover:shadow-[var(--shadow-md)] hover:-translate-y-px transition-all",
+        hover: "hover:shadow-[var(--shadow-md)] hover:-translate-y-1 transition-all duration-200",
       },
     },
     defaultVariants: {

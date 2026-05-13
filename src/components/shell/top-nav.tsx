@@ -6,9 +6,6 @@ import { Logo } from "./logo";
 import { SearchBox } from "./search-box";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { Button } from "@/components/ui/button";
-import { useRoleStore } from "@/lib/store/role-store";
-import { ROLES, ROLE_META, type Role } from "@/lib/roles";
-import { useMounted } from "@/hooks/use-mounted";
 import { cn } from "@/lib/utils";
 
 export interface TopNavProps {
@@ -56,8 +53,6 @@ export function TopNav({ onOpenPalette, onOpenSideNav }: TopNavProps) {
             <SearchBox onOpenPalette={onOpenPalette} className="w-56 md:w-72 lg:w-96" />
           </div>
 
-          <RoleSegmented />
-
           <Button
             variant="ghost"
             size="icon"
@@ -81,63 +76,6 @@ export function TopNav({ onOpenPalette, onOpenSideNav }: TopNavProps) {
           <ThemeToggle />
         </div>
       </header>
-    </div>
-  );
-}
-
-/**
- * RoleSegmented - v1.2.
- * The only role-switching surface. Visible at md+.
- * Active state: marine blue background with parchment text (matches logo banner).
- */
-function RoleSegmented() {
-  const role = useRoleStore((s) => s.role);
-  const setRole = useRoleStore((s) => s.setRole);
-  const mounted = useMounted();
-
-  if (!mounted) {
-    return (
-      <div
-        aria-hidden="true"
-        className="hidden h-8 w-[260px] rounded-[var(--radius-sm)] bg-[var(--color-surface-2)] md:block"
-      />
-    );
-  }
-
-  const ROLE_LABEL_SHORT: Record<Role, string> = {
-    marine: "Marine",
-    leader: "Leader",
-    commander: "CDR",
-    admin: "Admin",
-  };
-
-  return (
-    <div
-      role="group"
-      aria-label="Switch role"
-      className="hidden h-8 items-center overflow-hidden rounded-[var(--radius-sm)] border border-[var(--color-border-strong)] md:flex"
-    >
-      {ROLES.map((r) => {
-        const active = role === r;
-        const meta = ROLE_META[r];
-        return (
-          <button
-            key={r}
-            type="button"
-            onClick={() => setRole(r)}
-            aria-pressed={active}
-            aria-label={`Switch to ${meta.label} view`}
-            className={cn(
-              "h-full whitespace-nowrap border-r border-[var(--color-border-strong)] px-2.5 text-[11px] font-bold uppercase tracking-[0.06em] transition-colors last:border-r-0",
-              active
-                ? "bg-[var(--color-marine-blue)] text-[var(--color-parchment)]"
-                : "bg-transparent text-[var(--color-muted-foreground)] hover:bg-[var(--color-surface-2)] hover:text-[var(--color-foreground)]"
-            )}
-          >
-            {ROLE_LABEL_SHORT[r]}
-          </button>
-        );
-      })}
     </div>
   );
 }
