@@ -61,6 +61,26 @@ export const ADMIN_FUNCTIONS = ["GENA", "OPER", "MPMN", "PERA"] as const;
 export const SKILL_LEVELS = [1000, 2000, 2100] as const;
 export const ADMIN_MOS = ["0102", "0111", "0170"] as const;
 
+/**
+ * IPAC applicability marker. Tags admin content with the workflow venue
+ * split between unit S-1 and the Installation Personnel Administration
+ * Center. Orthogonal to unitType. unitType picks the surface venue
+ * (s1-g1, i-and-i, pac). ipacApplicability picks the routing pattern.
+ *
+ * primary: IPAC owns the workflow end to end.
+ * shared: unit S-1 initiates, IPAC processes.
+ * unit-only: unit S-1 owns the workflow, IPAC has no role.
+ * command-only: command-level surface, no IPAC and no unit S-1 desk.
+ *
+ * Default of unit-only keeps existing pages neutral on rollover.
+ */
+export const IPAC_APPLICABILITY = [
+  "primary",
+  "shared",
+  "unit-only",
+  "command-only",
+] as const;
+
 export const adminSchema = baseFrontmatter.extend({
   unitType: z.enum(UNIT_TYPES),
   topic: z.string().min(2),
@@ -74,6 +94,7 @@ export const adminSchema = baseFrontmatter.extend({
   sourceChapter: z.string().optional(),
   sourceSection: z.string().optional(),
   mosPerforming: z.array(z.enum(ADMIN_MOS)).min(1),
+  ipacApplicability: z.enum(IPAC_APPLICABILITY).default("unit-only"),
   billets: z.array(z.string()).default([]),
   gradesPerforming: z.array(z.string()).default([]),
   sustainmentInterval: z.string().default("12 months"),
@@ -215,6 +236,7 @@ export type UnitType = (typeof UNIT_TYPES)[number];
 export type AdminFunction = (typeof ADMIN_FUNCTIONS)[number];
 export type SkillLevel = (typeof SKILL_LEVELS)[number];
 export type AdminMos = (typeof ADMIN_MOS)[number];
+export type IpacApplicability = (typeof IPAC_APPLICABILITY)[number];
 
 export type Policy = z.infer<typeof policySchema>;
 export type Situation = z.infer<typeof situationSchema>;
