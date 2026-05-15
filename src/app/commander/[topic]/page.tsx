@@ -6,7 +6,9 @@ import {
   getCommanderContent,
   getRoleContentByTopic
 } from "@/lib/content/loader";
-
+import { PageHeader } from "@/components/domain/page-header";
+import { MetaRow } from "@/components/domain/meta-row";
+import { Pill } from "@/components/ui/pill";
 export async function generateStaticParams() {
   const seen = new Set<string>();
   const params: { topic: string }[] = [];
@@ -24,10 +26,11 @@ export async function generateMetadata({
   params: Promise<{ topic: string }>;
 }): Promise<Metadata> {
   const { topic } = await params;
+  const label = topic.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return {
-    title: `${topic.replace(/-/g, " ")} - Commander`,
-    description: `Commander content for ${topic}.`
-};
+    title: `${label} - Commander`,
+    description: `Commander reference for ${label}. Authority-anchored policy summaries, signing actions, and procedures.`
+  };
 }
 
 export default async function CommanderTopicIndex({
@@ -36,8 +39,6 @@ export default async function CommanderTopicIndex({
   params: Promise<{ topic: string }>;
 }) {
   const { topic } = await params;
-  // getRoleContentByTopic returns entries in canonical order:
-  // Overview first, then alphabetical by title.
   const sortedEntries = getRoleContentByTopic(getCommanderContent(), topic);
   if (sortedEntries.length === 0) notFound();
 
@@ -48,17 +49,17 @@ export default async function CommanderTopicIndex({
 
   return (
     <div className="mx-auto max-w-5xl">
-            <header className="mb-6">
-        <h1
-          className="text-3xl font-bold tracking-tight"
-          style={{ fontFamily: "var(--font-display)" }}
-        >
-          {topicLabel}
-        </h1>
-        <p className="mt-1 text-sm text-[var(--color-muted-foreground)]">
-          Commander content tagged for {topicLabel}.
-        </p>
-      </header>
+      <PageHeader
+        eyebrow="Commander"
+        tags={<Pill variant="commander">{topicLabel}</Pill>}
+        title={topicLabel.toUpperCase()}
+        summary={`${topicLabel} reference for battalion and squadron commanders. Authority-anchored policy summaries and signing actions.`}
+        compact
+      >
+        <MetaRow
+          items={[{ label: "Pages", value: sortedEntries.length }]}
+        />
+      </PageHeader>
 
       <ul className="space-y-2">
         {sortedEntries.map((entry) => {
@@ -67,16 +68,16 @@ export default async function CommanderTopicIndex({
             <li key={fm.slug}>
               <Link
                 href={`/commander/${topic}/${fm.slug}`}
-                className="group flex items-start justify-between gap-3 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-primary)] hover:bg-[var(--color-muted)]/40"
+                className="group flex items-start justify-between gap-3 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-all hover:-translate-y-0.5 hover:border-[var(--color-border-strong)] hover:shadow-[var(--shadow-md)]"
               >
                 <div className="min-w-0">
-                  <p className="font-semibold">{fm.title}</p>
-                  <p className="mt-1 text-sm text-[var(--color-muted-foreground)]">
+                  <p className="font-semibold tracking-tight">{fm.title}</p>
+                  <p className="mt-1 text-sm text-[var(--color-muted-foreground)] leading-snug">
                     {fm.summary}
                   </p>
                 </div>
                 <ChevronRight
-                  className="mt-1 size-4 shrink-0 opacity-40 transition-opacity group-hover:opacity-100"
+                  className="mt-1 size-4 shrink-0 text-[var(--color-subtle-foreground)] transition-colors group-hover:text-[var(--color-foreground)]"
                   aria-hidden="true"
                 />
               </Link>
