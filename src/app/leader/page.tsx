@@ -38,7 +38,7 @@ import { StatusPill } from "@/components/ui/status-pill";
 export const metadata: Metadata = {
   title: "Leader",
   description:
-    "NCO and SNCO content. How leaders coach Marines, verify records, run section readiness, counsel against MCO 1500.61 and NAVMC 2795, and bridge members to S-1 and PAC processes.",
+    "NCO, SNCO, and Officer content. How leaders coach Marines, verify records, run section readiness, counsel against MCO 1500.61 and NAVMC 2795, and bridge members to S-1 and PAC processes.",
 };
 
 const ICON_MAP: Record<string, LucideIcon> = {
@@ -88,7 +88,7 @@ export default function LeaderLanding() {
         eyebrow="Role view"
         tags={
           <>
-            <Pill variant="leader">NCO / SNCO</Pill>
+            <Pill variant="leader">NCO / SNCO / Officer</Pill>
             <StatusPill status="fresh" label="Updated April 2026" />
           </>
         }

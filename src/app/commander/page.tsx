@@ -52,7 +52,7 @@ export default function CommanderLanding() {
         eyebrow="Role view"
         tags={
           <>
-            <Pill variant="commander">Officer / OIC / CO</Pill>
+            <Pill variant="commander">XO / CoS / CO</Pill>
             <StatusPill status="fresh" label="Updated April 2026" />
           </>
         }

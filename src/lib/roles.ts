@@ -25,14 +25,14 @@ export const ROLE_META: Record<Role, RoleMeta> = {
   leader: {
     id: "leader",
     label: "Leader",
-    description: "NCO and SNCO. How-to guides and decision aids.",
+    description: "NCO, SNCO, and Officer. How-to guides and decision aids.",
     cssVar: "var(--color-role-leader)",
     iconName: "Star",
   },
   commander: {
     id: "commander",
     label: "Commander",
-    description: "Officer. Policy summaries, signing authorities, discipline.",
+    description: "XO / CoS / CO. Policy summaries, signing authorities, discipline.",
     cssVar: "var(--color-role-commander)",
     iconName: "Award",
   },
