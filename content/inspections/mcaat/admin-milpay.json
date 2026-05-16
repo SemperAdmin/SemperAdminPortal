@@ -31,7 +31,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "66",
@@ -42,7 +43,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "67",
@@ -53,7 +55,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "68",
@@ -64,7 +67,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "69",
@@ -76,7 +80,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "70",
@@ -88,7 +93,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "71",
@@ -101,7 +107,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "72",
@@ -114,7 +121,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "38",
@@ -124,7 +132,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "48",
@@ -136,7 +145,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "49",
@@ -148,7 +158,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "50",
@@ -159,7 +170,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "51",
@@ -171,7 +183,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "53",
@@ -186,7 +199,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "54",
@@ -197,7 +211,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "55",
@@ -208,7 +223,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "56",
@@ -221,7 +237,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "57",
@@ -234,7 +251,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "58",
@@ -245,7 +263,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "59",
@@ -256,7 +275,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "60",
@@ -267,7 +287,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "61",
@@ -278,7 +299,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "62",
@@ -289,7 +311,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "63",
@@ -300,7 +323,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "64",
@@ -311,7 +335,8 @@
           ],
           "audience": [
             "IPAC"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -331,7 +356,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "02",
@@ -344,7 +370,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "03",
@@ -355,7 +382,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "04",
@@ -366,7 +394,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "05",
@@ -378,7 +407,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "06",
@@ -390,7 +420,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "07",
@@ -401,7 +432,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "08",
@@ -412,7 +444,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "09",
@@ -423,7 +456,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "10",
@@ -435,7 +469,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "11",
@@ -448,7 +483,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "17",
@@ -460,7 +496,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "32",
@@ -472,7 +509,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "33",
@@ -482,7 +520,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "34",
@@ -493,7 +532,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "35",
@@ -505,7 +545,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "36",
@@ -517,7 +558,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "37",
@@ -527,7 +569,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "39",
@@ -542,7 +585,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "40",
@@ -553,7 +597,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "41",
@@ -566,7 +611,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "42",
@@ -579,7 +625,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "43",
@@ -590,7 +637,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "44",
@@ -601,7 +649,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "45",
@@ -612,7 +661,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "46",
@@ -623,7 +673,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "47",
@@ -633,7 +684,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "52",
@@ -645,7 +697,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -662,7 +715,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "13",
@@ -672,7 +726,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "14",
@@ -687,7 +742,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "15",
@@ -698,7 +754,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "16",
@@ -708,7 +765,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "18",
@@ -718,7 +776,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "19",
@@ -729,7 +788,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "20",
@@ -742,7 +802,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "21",
@@ -752,7 +813,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "22",
@@ -764,7 +826,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "23",
@@ -776,7 +839,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "24",
@@ -788,7 +852,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "25",
@@ -800,7 +865,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "26",
@@ -812,7 +878,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "27",
@@ -824,7 +891,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "28",
@@ -836,7 +904,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "29",
@@ -848,7 +917,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "30",
@@ -860,7 +930,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "31",
@@ -872,9 +943,16 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     }
-  ]
+  ],
+  "sponsor": "DCS M&RA",
+  "effectiveDate": "2026-05-10",
+  "_audit_notes": {
+    "sponsor_default": true,
+    "effectiveDate_from_lastVerified": true
+  }
 }

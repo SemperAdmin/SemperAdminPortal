@@ -148,6 +148,26 @@ export default function AwardsLanding() {
           in OMPF and MCTFS regularly via Marine Online (MOL).
         </p>
       </section>
+
+      <section className="mt-6 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-5">
+        <h2 className="text-lg font-bold">AI prompt reference</h2>
+        <p className="mt-2 text-sm">
+          The Semper Admin AI Field Manual Category 04 (Awards and Evaluations)
+          contains 10 prompts covering NAVCOMM citations, NAM citations,
+          Meritorious Mast (NAVMC 10935), FITREP Sections B/C/I drafting,
+          adverse FITREP narratives, FITREP Section I prohibited comments
+          scanner, CONDUS narratives, award package pre-submission review, MSM
+          citations, and promotion recommendation letters. See the{" "}
+          <Link
+            href="/marines/semper-admin-ai-field-manual"
+            className="text-[var(--color-primary)] underline"
+          >
+            Semper Admin AI Field Manual
+          </Link>{" "}
+          for the full library, the 20 Laws of LLM Prompts, the Trust but
+          Verify checklist, and the PDF download.
+        </p>
+      </section>
     </div>
   );
 }

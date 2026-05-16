@@ -3,7 +3,7 @@
 import * as React from "react";
 import { Play, Pause, Captions, RotateCcw } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Pill } from "@/components/ui/pill";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -105,7 +105,7 @@ export function VideoEmbed({
       <CardHeader>
         <div className="flex items-center justify-between gap-2">
           <CardTitle>{title}</CardTitle>
-          <Badge variant="muted">{fmt(durationSeconds)}</Badge>
+          <Pill variant="neutral">{fmt(durationSeconds)}</Pill>
         </div>
         {description && (
           <p className="text-sm text-[var(--color-muted-foreground)]">{description}</p>

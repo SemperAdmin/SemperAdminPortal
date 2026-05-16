@@ -3,7 +3,7 @@
 import * as React from "react";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Pill } from "@/components/ui/pill";
 import { FileDown, Loader2 } from "lucide-react";
 import { logAuditEvent } from "@/lib/security/audit-log";
 
@@ -120,7 +120,7 @@ export function PdfLetterBuilder() {
       <CardHeader>
         <div className="flex items-center justify-between gap-2">
           <CardTitle>PDF letter builder</CardTitle>
-          <Badge variant="muted">Lazy-loaded bundle</Badge>
+          <Pill variant="neutral">Lazy-loaded bundle</Pill>
         </div>
         <CardDescription>
           Pick a template, fill the fields, click Generate. The PDF lib loads on demand.

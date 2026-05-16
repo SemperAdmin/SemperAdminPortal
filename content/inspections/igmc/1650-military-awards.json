@@ -28,7 +28,8 @@
           "references": [
             "SECNAV M-1650.1, Ch. 1, Para. 1.1.b. (p 1-1)",
             "MCO 1650.1J, Encl. 1, Para 1.a.-1.c. (p 1)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0102",
@@ -36,28 +37,32 @@
           "references": [
             "SECNAVINST 1650.1J, Encl. 7, Para. 3.a",
             "DoD Instruction 1348.33, Para. 2.9.b. & 2.9.c"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0103",
           "question": "Are the command’s administrative personnel familiar with procedures for processing awards approved by Navy, Joint, and other U.S. Armed Forces (i.e. awards receive validation by MMPB-31 and entry into personnel records)? At a minimum, are personnel familiar with the following: (a) In what situation is a Marine eligible for another Service’s award? (b) In what situation is a Marine eligible to receive a Joint award? (c) What actions can a command take if one of their Marines was erroneously presented another service’s award or a Joint Award for which the Marine was not eligible?",
           "references": [
             "SECNAVINST 1650.1J, Encl. 4, Para. 1"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0104",
           "question": "Are administrative personnel and/or the awarding authority familiar with the requirements for the Military Outstanding Volunteer Service Medal (MOVSM)? Does a review of approved MOVSM’s reveal that they were only awarded when the following criteria were clearly met: (a) Three (3) years of sustained service (b) Service cannot have a connection/link to a military mission (i.e. Toys for Tots, military recruiting, etc.)",
           "references": [
             "SECNAV M-1650.1, Appendix 4A, TAB 18 MOVSM"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0105",
           "question": "Does the command ensure that only the awards which are authorized to have certificates as part of the award elements have them (i.e. NA, NC, MM, LM, etc) and that those awards which are not authorized to have certificates do not (i.e. CR, OV, HSM, AFSM, Recruiting Ribbon)?",
           "references": [
             "SECNAV M-1650.1, see Award Element for guidance per each Award Criteria"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -76,7 +81,8 @@
             "SECNAVINST 1650.1J, Encl. 5. Para. 2",
             "SECNAVINST 1650.1J, Encl. 5 Timeliness Standards",
             "SECNAV M-1650.1, Appendix 1A, Para. 1A.2.b.(1) Valor Time Limits (p 1-9)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0202",
@@ -87,21 +93,24 @@
             "MCO 1650.19J, Encl 1",
             "SECNAVINST 1650.1J, Encl 5",
             "MARADMIN 99/18"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0203",
           "question": "Are the command's administrative personnel processing all awards requiring approval by a Marine Corps awarding authority electronically via the Improved Awards Processing System (iAPS)?",
           "references": [
             "SECNAV M-1650.1, Ch3, Para. 3.2a.(1)(b) (p 3-4), MARADMIN 042/08"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0204",
           "question": "Is the command appropriately approving and delegating iAPS permissions IAW regulations in a timely manner by responding to “Pending” requests within 30 days and removing permissions from personnel who depart the command within 30 days?",
           "references": [
             "SECNAVINST 1650.1J Encl (4) 2.a.(3), MARADMIN 99/18"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0205",
@@ -109,7 +118,8 @@
           "references": [
             "SECNAVINST 1650.1J, Encl. 4, Para. 2.a.(3)",
             "SECNAV M-1650.1, Ch. 1, Para. 1.2.b.(1)"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -124,7 +134,8 @@
           "references": [
             "SECNAV M-1650.1, Para. 2.2.a.(4) (p 2-5)",
             "MCO 1650.19J, Encl. 2, Para. 8.d. (p 3)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0302",
@@ -135,14 +146,16 @@
             "SECNAV M-1650.1, Appendix 2D, Para. d (p 2-74)",
             "SECNAV M-5216.5, Ch. 2, Para. 1.a. (p 2-1)",
             "SECNAV M-1650.1, Appendix 2E How to Prepare a PMD; Citation/Certificate; Table 18, p 2-85/86 (Air Medal & Above) and Table 21, p 2-96 (NC & NAM)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0303",
           "question": "Does the command ensure all formal certificates and citations are correctly produced and that any changes made to the final citation are reflected in iAPS prior to presentation, filing, and forwarding to CMC (MMPB-31) for archiving? (a) Is the command attaching a PDF copy of the award certificate(s) to the Certificates tab in iAPS? (b) Is this confirmed by a review of all formal certificates from an iAPS report of the unit’s approved awards in iAPS?",
           "references": [
             "SECNAV M-1650.1, Ch. 2, Para. 2.2.e (p 2-8)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0304",
@@ -151,14 +164,16 @@
             "DoD Instruction 1348.33, Sect. 3, 3.1.a (p 12)",
             "SECNAVINST 1650.1J, Encl. 4, 1.b.3. (p 2) & 1.c.4. (p 3)",
             "SECNAV M-1650.1, Ch. 2, 2.1.c. (p 2-1) & Ch. 3, 3.1.d. (p 3-3)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0305",
           "question": "Does the command submit approved awards to MMPB-31 in iAPS within 10 working days after the summary of action end date or date of presentation (whichever is later)? Is this confirmed by a review of at least five command approved awards in the iAPS archives and all awards currently in processing?",
           "references": [
             "SECNAV M-5216.5, Ch. 2, Para. 2.2.8.a. (p 2-6)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0306",
@@ -167,21 +182,24 @@
             "DoD Instruction 1348.33, Sect 1, Para. 1.2.c. (p 5) & Sect 8 (p 27)",
             "SECNAVINST 1650.1J, Para. 5.k. (p 3)",
             "SECNAV M-1650.1, Ch. 2, Para. 2.1.h. (p 2-3)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0307",
           "question": "Does the command ensure that any casualty reports submitted as a result of hostile enemy action contain sufficient information for the Purple Heart Medal (PH) awarding authority to make a PH determination?",
           "references": [
             "SECNAV M-1650.1, Appendix 2B, Para. 2B.5.a. (p 2-59)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0308",
           "question": "Has the command ensured that any Bronze Star Medal awarded met the requirement that the recipient was in receipt of special pay(s) during the period of action?",
           "references": [
             "SECNAV M-1650.1, Appendix 2A, Tab 8, Para. c.(2)"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     }

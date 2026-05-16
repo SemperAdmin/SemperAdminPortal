@@ -143,6 +143,24 @@ export default function DtsLanding() {
           PMO at OMB_HQMC_PR_RFF_DTS_GTCC@USMC.MIL.
         </p>
       </section>
+
+      <section className="mt-6 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-5">
+        <h2 className="text-lg font-bold">AI prompt reference</h2>
+        <p className="mt-2 text-sm">
+          The Semper Admin AI Field Manual Category 08 (Financial
+          Administration) contains 10 prompts including travel voucher
+          preparation checklists and travel claim discrepancy letters that
+          directly support DTS workflow. See the{" "}
+          <Link
+            href="/marines/semper-admin-ai-field-manual"
+            className="text-[var(--color-primary)] underline"
+          >
+            Semper Admin AI Field Manual
+          </Link>{" "}
+          for the full library, the 20 Laws of LLM Prompts, the Trust but
+          Verify checklist, and the PDF download.
+        </p>
+      </section>
     </div>
   );
 }

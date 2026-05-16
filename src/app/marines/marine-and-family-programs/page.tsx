@@ -159,6 +159,27 @@ export default function MarineAndFamilyProgramsLanding() {
           hqmc.efmp@usmc.mil.
         </p>
       </section>
+
+      <section className="mt-6 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-5">
+        <h2 className="text-lg font-bold">AI prompt reference</h2>
+        <p className="mt-2 text-sm">
+          The Semper Admin AI Field Manual Category 10 (Leadership and
+          Decision Making) contains 10 prompts covering commander&apos;s
+          assessment frameworks, ethical decision-making, climate assessment
+          survey design, leader development plans, unit problem-solving
+          briefs, succession planning, AAR facilitation guides, command
+          philosophy development, difficult conversation preparation, and unit
+          standard setting frameworks. See the{" "}
+          <Link
+            href="/marines/semper-admin-ai-field-manual"
+            className="text-[var(--color-primary)] underline"
+          >
+            Semper Admin AI Field Manual
+          </Link>{" "}
+          for the full library, the 20 Laws of LLM Prompts, the Trust but
+          Verify checklist, and the PDF download.
+        </p>
+      </section>
     </div>
   );
 }

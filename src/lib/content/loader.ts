@@ -4,11 +4,7 @@ import path from "node:path";
 import matter from "gray-matter";
 import { z } from "zod";
 import {
-  policySchema,
-  situationSchema,
-  snippetSchema,
   videoSchema,
-  referenceSchema,
   toolSchema,
   adminSchema,
   legalSchema,
@@ -16,11 +12,7 @@ import {
   inspectionSchema,
   citationSchema,
   INSPECTION_TRACKS,
-  type Policy,
-  type Situation,
-  type Snippet,
   type Video,
-  type Reference,
   type Tool,
   type Legal,
   type AdminContent,
@@ -67,16 +59,8 @@ function loadDir<T>(
   return entries;
 }
 
-export const getPolicies = (): ContentEntry<Policy>[] =>
-  loadDir("policies", policySchema);
-export const getSituations = (): ContentEntry<Situation>[] =>
-  loadDir("situations", situationSchema);
-export const getSnippets = (): ContentEntry<Snippet>[] =>
-  loadDir("snippets", snippetSchema);
 export const getVideos = (): ContentEntry<Video>[] =>
   loadDir("videos", videoSchema);
-export const getReferences = (): ContentEntry<Reference>[] =>
-  loadDir("references", referenceSchema);
 export const getTools = (): ContentEntry<Tool>[] =>
   loadDir("tools", toolSchema);
 export const getLegal = (): ContentEntry<Legal>[] =>

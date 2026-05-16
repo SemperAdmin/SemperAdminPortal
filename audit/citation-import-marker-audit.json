@@ -1,0 +1,1246 @@
+{
+  "totalPublishedCitations": 308,
+  "markerCount": 175,
+  "breakdown": {
+    "hasUrlHasRefs": 172,
+    "hasUrlNoRefs": 3,
+    "noUrlHasRefs": 0,
+    "noUrlNoRefs": 0
+  },
+  "typeCounts": {
+    "DD-FORM": 10,
+    "DODFMR": 3,
+    "MARADMIN": 78,
+    "MCBUL": 2,
+    "MCO": 75,
+    "NAVMC": 6,
+    "SECNAVINST": 1
+  },
+  "entries": [
+    {
+      "cid": "mco-5210-11f",
+      "title": "MCO 5210.11F - Marine Corps Records Management Program",
+      "has_url": true,
+      "ref_count": 33,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5215-1k",
+      "title": "MCO 5215.1K - Marine Corps Directives Management Program",
+      "has_url": true,
+      "ref_count": 17,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1320-11h",
+      "title": "MCO 1320.11H - Marine Corps Sponsorship Program (Mcsp)",
+      "has_url": true,
+      "ref_count": 15,
+      "type": "MCO"
+    },
+    {
+      "cid": "maradmin-633-24",
+      "title": "UPDATE TO NOTIFICATION REQUIREMENTS FOR COVERED OFFENSES//",
+      "has_url": true,
+      "ref_count": 13,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "mco-1500-60a",
+      "title": "MCO 1500.60A - Force Preservation Council (Fpc)",
+      "has_url": true,
+      "ref_count": 12,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5100-29c",
+      "title": "MCO 5100.29C - Marine Corps Safety Management System (Mcsms)",
+      "has_url": true,
+      "ref_count": 12,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1752-5c",
+      "title": "MCO 1752.5C - Sexual Assault Prevention And Response (Sapr) Program",
+      "has_url": true,
+      "ref_count": 11,
+      "type": "MCO"
+    },
+    {
+      "cid": "maradmin-665-17",
+      "title": "ADDITIONAL MARINE CORPS GUIDANCE ON NEW DEVICES AUTHORIZED FOR WEAR ON CERTAIN MILITARY MEDALS AND RIBBONS//",
+      "has_url": true,
+      "ref_count": 10,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "mcbul-5210",
+      "title": "MCBUL 5210",
+      "has_url": true,
+      "ref_count": 9,
+      "type": "MCBUL"
+    },
+    {
+      "cid": "maradmin-398-10",
+      "title": "AWARDS UPDATE//",
+      "has_url": true,
+      "ref_count": 7,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-634-23",
+      "title": "CHANGE TO ANNUAL FITNESS REPORT SCHEDULE FOR ACTIVE COMPONENT CAPTAIN THROUGH LIEUTENANT COLONEL, SERGEANTS MAJOR, AND MASTER GUNNERY SERGEANTS//",
+      "has_url": true,
+      "ref_count": 7,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-308-23",
+      "title": "REVISION OF MCO 1610.7 PERFORMANCE EVALUATION SYSTEM (SHORT TITLE: PES)//",
+      "has_url": true,
+      "ref_count": 6,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-359-25",
+      "title": "UPDATED GUIDANCE FOR PROCESSING UNSUBMITTED DEFENSE TRAVEL",
+      "has_url": true,
+      "ref_count": 6,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-527-25",
+      "title": "CHANGE 1: FISCAL YEAR 2026 ENLISTED RETENTION CAMPAIGN//",
+      "has_url": true,
+      "ref_count": 6,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-661-19",
+      "title": "MANPOWER AUDIT ADVISORY 1-19: AUDIT COMPENSATING CONTROLS TO DEPENDENCY APPLICATION AND THE NAVMC 10922//",
+      "has_url": true,
+      "ref_count": 6,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "mco-1700-31",
+      "title": "MCO 1700.31 - Transition Readiness Program (Trp)",
+      "has_url": true,
+      "ref_count": 6,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1740-13",
+      "title": "MCO 1740.13 - Family Care Plans",
+      "has_url": true,
+      "ref_count": 6,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-4400-201",
+      "title": "MCO 4400.201 - Management Of Property In The Possession Of The Marine Corps",
+      "has_url": true,
+      "ref_count": 6,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5300-17",
+      "title": "MCO 5300.17 - Marine Corps Substance Abuse Program",
+      "has_url": true,
+      "ref_count": 6,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-6110-3a",
+      "title": "MCO 6110.3A - Marine Corps Body Composition And Military Appearance Program",
+      "has_url": true,
+      "ref_count": 6,
+      "type": "MCO"
+    },
+    {
+      "cid": "maradmin-066-26",
+      "title": "CHANGE 1 TO THE ADVANCE NOTIFICATION OF CHANGES TO THE MARINE",
+      "has_url": true,
+      "ref_count": 5,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-412-20",
+      "title": "IMPLEMENTATION OF OBSERVED ACADEMIC FITNESS REPORTS AT OFFICER RESIDENT PROFESSIONAL MILITARY EDUCATION COURSES//",
+      "has_url": true,
+      "ref_count": 5,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-468-23",
+      "title": "COMMAND CLIMATE ASSESSMENT POLICY UPDATES AND GUIDANCE TO THE FLEET//",
+      "has_url": true,
+      "ref_count": 5,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-573-24",
+      "title": "TAKING CARE OF PEOPLE (TCOP) PROGRAM INITIATIVES OVERVIEW//",
+      "has_url": true,
+      "ref_count": 5,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-575-24",
+      "title": "AMENDMENT 2 TO THE PERFORMANCE EVALUATION SYSTEM//",
+      "has_url": true,
+      "ref_count": 5,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-595-24",
+      "title": "AMENDMENT 3 TO THE PERFORMANCE EVALUATION SYSTEM//",
+      "has_url": true,
+      "ref_count": 5,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "mco-1050-16a",
+      "title": "MCO 1050.16A - Appellate Leave Awaiting Punitive Separation",
+      "has_url": true,
+      "ref_count": 5,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1500-60",
+      "title": "MCO 1500.60 - Force Preservation Council (Fpc)",
+      "has_url": true,
+      "ref_count": 5,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1754-9b",
+      "title": "MCO 1754.9B - Unit, Personal And Family Readiness Program (Upfrp)",
+      "has_url": true,
+      "ref_count": 5,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5800-16-vol-12",
+      "title": "MCO 5800.16 - Legal Support And Administration Manual (Short Title: Lsam)",
+      "has_url": true,
+      "ref_count": 5,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-7220-56",
+      "title": "MCO 7220.56 - Entitlement To Basic Allowance For Housing (Bah) At Locations Other Than...",
+      "has_url": true,
+      "ref_count": 5,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-p1400-32",
+      "title": "MCO P1400.32 - Marine Corps Promotion Manual, Volume 2, Enlisted Promotions",
+      "has_url": true,
+      "ref_count": 5,
+      "type": "MCO"
+    },
+    {
+      "cid": "maradmin-023-26",
+      "title": "FISCAL YEAR 2027 SELECTIVE RETENTION BONUS PROGRAM AND FISCAL",
+      "has_url": true,
+      "ref_count": 4,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-191-26",
+      "title": "CHANGES TO RESERVE COMPONENT MATERNITY LEAVE (RCML) AND RESERVE",
+      "has_url": true,
+      "ref_count": 4,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-199-26",
+      "title": "UPDATE TO MARINE CORPS COMMON MILITARY TRAINING REQUIREMENTS//",
+      "has_url": true,
+      "ref_count": 4,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-245-11",
+      "title": "PURPLE HEART MEDAL-REVISED CRITERIA FOR MILD TRAUMATIC BRAIN INJURY AND UPDATED COORDINATING INSTRUCTIONS//",
+      "has_url": true,
+      "ref_count": 4,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-291-12",
+      "title": "DEFENSE TRAVEL SYSTEM (DTS) VOUCHER APPROVAL PROCESS//",
+      "has_url": true,
+      "ref_count": 4,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-350-11",
+      "title": "FUND CONTROL PERSONNEL TRAINING REQUIREMENT//",
+      "has_url": true,
+      "ref_count": 4,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-692-20",
+      "title": "AWARDS UPDATE//",
+      "has_url": true,
+      "ref_count": 4,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "mco-1001-59",
+      "title": "MCO 1001.59 - Active Duty For Operational Suppport (Ados) In Support Of The Total Force...",
+      "has_url": true,
+      "ref_count": 4,
+      "type": "MCO"
+    },
+    {
+      "cid": "navmc-10132",
+      "title": "NAVMC 10132",
+      "has_url": true,
+      "ref_count": 4,
+      "type": "NAVMC"
+    },
+    {
+      "cid": "maradmin-052-26",
+      "title": "MARINE CORPS TOTAL FORCE SYSTEM ADVISORY TO IDENTIFY REQUIRED",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-111-23",
+      "title": "UPDATE TO PREGNANCY NOTIFICATION//",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-165-07",
+      "title": "PERMANENT REGULATIONS FOR CHANGE OF COMMAND NOTIFICATION//",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-181-26",
+      "title": "FISCAL YEAR 2028 (FY28) HEADQUARTERS MARINE CORPS SPECIAL DUTY",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-188-25",
+      "title": "ADVANCE NOTIFICATION OF CHANGES TO SPECIAL LEAVE ACCRUAL//",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-270-05",
+      "title": "AVIATION COMMANDERS PREPARATION PROGRAM//",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-302-17",
+      "title": "ADVANCE NOTIFICATION OF CHANGE TO MCO 7220.12R, SPECIAL DUTY ASSIGNMENT PAY (SDAP) PROGRAM//",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-365-25",
+      "title": "FISCAL YEAR 2026 ACTIVE COMPONENT ENLISTED MARINE LATERAL",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-379-22",
+      "title": "AWARDS UPDATE//",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-585-24",
+      "title": "FISCAL YEAR 2026 ENLISTED RETENTION CAMPAIGN//",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-612-19",
+      "title": "ANNOUNCEMENT OF AUTHORITY FOR EARLY REENLISTMENT, DELEGATION OF REENLISTMENT APPROVAL AUTHORITY, AND CHANGES TO PROMOTION REQUIREMENTS POLICY//",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "mco-10110-47",
+      "title": "MCO 10110.47 - Basic Allowance For Subsistence (Bas) And Meal Card Program",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-10110-47a",
+      "title": "MCO 10110.47A - Basic Allowance For Subsistence (Bas) And Meal Card Program",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1326-6",
+      "title": "MCO 1326.6 - Selecting, Screening, And Preparing Enlisted Marines For Screenable Billets...",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1400-31d",
+      "title": "MCO 1400.31D - Marine Corps Promotion Manual, Volume 1, Officer Promotions (Marcorpromman,...",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1500-55",
+      "title": "MCO 1500.55 - Military Thinking And Decision Making Exercises",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1500-63a",
+      "title": "MCO 1500.63A - Marine Corps Common Military Training Requirements",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1741-8",
+      "title": "MCO 1741.8 - Marine Corps Government Life Insurance Manual (Short Title Marcorglinsman)",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1754-6",
+      "title": "MCO 1754.6 - Marine Corps Family Team Building (Mcftb)",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1754-6c",
+      "title": "MCO 1754.6C - Marine Corps Family Team Building (Mcftb)",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1754-9",
+      "title": "MCO 1754.9 - Unit, Personal And Family Readiness Program (Upfrp)",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5800-16-vol-3",
+      "title": "MCO 5800.16 - Legal Support And Administration Manual (Short Title: Lsam)",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-6100-13a",
+      "title": "MCO 6100.13A - Marine Corps Physical Fitness And Combat Fitness Tests (Pft/Cft)",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-7220-24",
+      "title": "MCO 7220.24 - Selective Retention Bonus (Srb) And Broken Service Selective Retention...",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-7220-24p",
+      "title": "MCO 7220.24P - Selective Retention Bonus (Srb) And Broken Service Selective Retention...",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "MCO"
+    },
+    {
+      "cid": "navmc-11533",
+      "title": "NAVMC 11533",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "NAVMC"
+    },
+    {
+      "cid": "navmc-11537",
+      "title": "NAVMC 11537",
+      "has_url": true,
+      "ref_count": 3,
+      "type": "NAVMC"
+    },
+    {
+      "cid": "dd-form-137",
+      "title": "DD Form 137",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "DD-FORM"
+    },
+    {
+      "cid": "dd-form-214",
+      "title": "DD Form 214",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "DD-FORM"
+    },
+    {
+      "cid": "dd-form-2883",
+      "title": "DD Form 2883",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "DD-FORM"
+    },
+    {
+      "cid": "dd-form-577",
+      "title": "DD Form 577",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "DD-FORM"
+    },
+    {
+      "cid": "dodfmr-vol-14",
+      "title": "DOD Financial Management Regulation, Volume 14 - Administrative Control of Funds and Antideficiency Act Violations",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "DODFMR"
+    },
+    {
+      "cid": "dodfmr-vol-4",
+      "title": "DODFMR Vol 4",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "DODFMR"
+    },
+    {
+      "cid": "dodfmr-vol-7b",
+      "title": "DODFMR Vol 7B",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "DODFMR"
+    },
+    {
+      "cid": "maradmin-076-25",
+      "title": "ESTABLISHMENT OF THE MARINE CORPS ENLISTED",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-104-06",
+      "title": "AWARDS UPDATE//",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-157-25",
+      "title": "INACTIVE DUTY TRAINING (IDT) TRAVEL REIMBURSEMENT UPDATE//",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-326-23",
+      "title": "ENLISTED ACTIVE DUTY SERVICE LIMITS//",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-336-21",
+      "title": "AMPLIFYING GUIDANCE ON THE DEFENSE TRAVEL SYSTEM UNSUBMITTED TRAVEL VOUCHER MANAGEMENT MEMO IN ORDER TO REDUCE OUTSTANDING TRAVEL ORDERS//",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-349-23",
+      "title": "DISCONTINUE THE UTILIZATION OF THE DISCOUNTED LUMP SUM ASSIGNMENT INCENTIVE PAY OPTION//",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-474-21",
+      "title": "UPDATED ENLISTED PME REQUIREMENTS BY GRADE//",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-559-23",
+      "title": "ANNOUNCEMENT OF JUNIOR ENLISTED REMEDIAL PROMOTIONS AUTOMATION//",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-613-25",
+      "title": "ADVANCE NOTIFICATION OF CHANGES TO THE MARINE CORPS PHYSICAL",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "mcbul-6110",
+      "title": "MCBUL 6110",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MCBUL"
+    },
+    {
+      "cid": "mco-1001r-1",
+      "title": "MCO 1001R.1 - Marine Corps Reserve Administrative Management Manual (Short Title: Mcramm)",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1553-4",
+      "title": "MCO 1553.4 - Professional Military Education (Pme)",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1700-30",
+      "title": "MCO 1700.30 - Marine Corps Community Services Business Operations Manual",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1700-37",
+      "title": "MCO 1700.37 - Personal Financial Management Program (Pfmp)",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1730-6",
+      "title": "MCO 1730.6 - Religious Ministry In The Marine Corps",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-3070-2a",
+      "title": "MCO 3070.2A - The Marine Corps Operations Security (Opsec) Program",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-3574-2m",
+      "title": "MCO 3574.2M - Marine Corps Combat Marksmanship Programs",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5000-12f",
+      "title": "MCO 5000.12F - Marine Corps Policy Concerning Parenthood And Pregnancy",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5210-11",
+      "title": "MCO 5210.11 - Marine Corps Records Management Program",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5420-16d",
+      "title": "MCO 5420.16D - Enlisted Remedial Selection Board (Ersb)",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5530-14a",
+      "title": "MCO 5530.14A - Marine Corps Physical Security Program Manual",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5750-1h",
+      "title": "MCO 5750.1H - Manual For The Marine Corps Historical Program",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "MCO"
+    },
+    {
+      "cid": "secnavinst-1000-10b",
+      "title": "DEPARTMENT OF THE NAVY POLICY ON PARENTHOOD AND PREGNANCY",
+      "has_url": true,
+      "ref_count": 2,
+      "type": "SECNAVINST"
+    },
+    {
+      "cid": "dd-form-1299",
+      "title": "DD Form 1299",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "DD-FORM"
+    },
+    {
+      "cid": "dd-form-1561",
+      "title": "DD Form 1561",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "DD-FORM"
+    },
+    {
+      "cid": "dd-form-1797",
+      "title": "DD Form 1797",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "DD-FORM"
+    },
+    {
+      "cid": "dd-form-2792",
+      "title": "DD Form 2792",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "DD-FORM"
+    },
+    {
+      "cid": "dd-form-93",
+      "title": "DD Form 93",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "DD-FORM"
+    },
+    {
+      "cid": "maradmin-002-23",
+      "title": "CANCELLATION OF MARADMINS 754/20, 462/21, 533/21, 612/21, 733/21, 464/22//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-028-24",
+      "title": "CANCELLATION OF MARADMIN 602/24//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-037-23",
+      "title": "FY23 USMC CHIEF WARRANT OFFICER FIVE (CWO5) THROUGH CHIEF WARRANT OFFICER THREE (CWO3)\u00a0PROMOTIONS FOR DECEMBER 2022 AND JANUARY 2023//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-050-03",
+      "title": "BAS DEDUCTIONS AND PER DIEM FOR MARINES PARTICIPATING IN JOINT",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-051-23",
+      "title": "EXPANSION OF THE MARINE CORPS MILITARY PARENTAL LEAVE PROGRAM//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-076-22",
+      "title": "UPDATED REQUIREMENTS REGARDING IMPLEMENTATION OF SERVICEMEMBERS' GROUP LIFE INSURANCE (SGLI) ONLINE ENROLLMENT SYSTEM (SOES)//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-092-21",
+      "title": "UPDATE TO MARADMIN 414/20, FY21 HARDSHIP DUTY PAY \u2013 TEMPO PROGRAM DETAILS//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-103-25",
+      "title": "NONCOMPETITIVE ACTIVE DUTY CORPORAL TO SERGEANT RECRUITER",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-115-24",
+      "title": "PERMANENT CHANGE OF STATION ALLOWANCES WHEN ATTENDING PROFESSIONAL MILITARY EDUCATION OR TRAINING CLASS//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-129-23",
+      "title": "Clarification to MARADMIN 051/23//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-150-16",
+      "title": "QUARTERLY PAGE 11 COUNSELINGS FOR NOT RECOMMENDED FOR PROMOTION TO CORPORAL AND SERGEANT//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-150-22",
+      "title": "ADVANCE CHANGE TO MCO 7220.56A ENTITLEMENT TO BASIC ALLOWANCE FOR HOUSING AT LOCATIONS OTHER THAN PERMANENT DUTY STATION//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-150-26",
+      "title": "CHANGE TO FAMILY SEPARATION ALLOWANCE (FSA) RATE//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-153-21",
+      "title": "CLARIFICATION TO PROMOTION RECOMMENDATION PROCESS AND REMEDIAL PROMOTIONS UNDER THE JUNIOR ENLISTED PERFORMANCE EVALUATION SYSTEM (JEPES)//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-185-25",
+      "title": "CANCELLATION OF OBSOLETE PROMOTION MARADMINS AND UPCOMING",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-191-25",
+      "title": "FISCAL YEAR 2026 SELECTIVE RETENTION BONUS PROGRAM AND FISCAL",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-193-22",
+      "title": "INACTIVE DUTY TRAINING (IDT) TRAVEL REIMBURSEMENT UPDATE//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-225-23",
+      "title": "ESTABLISHMENT OF THE SMALL-UNIT LEADER INITIATIVE//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-229-25",
+      "title": "NONCOMPETITIVE CORPORAL TO SERGEANT RECRUITER PROMOTIONS",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-291-19",
+      "title": "COMMAND CLIMATE SURVEY COMPLIANCE//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-350-18",
+      "title": "MARINE CORPS SKILLBRIDGE EMPLOYMENT TRAINING PROGRAM//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-361-09",
+      "title": "HAZARDOUS DUTY INCENTIVE PAY (DEMOLITION DUTY)//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-457-16",
+      "title": "ACTIVE DUTY CAREER RETENTION AND EXPANDED PERMANENT LIMITED DUTY (EPLD) POLICY FOR COMBAT WOUNDED MARINES//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-469-24",
+      "title": "FISCAL YEAR 2025 INTENDED MILITARY OCCUPATIONAL SPECIALTY",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-500-10",
+      "title": "INVITATIONAL TRAVEL ORDERS TO UNIT MEMORIAL SERVICES//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-515-25",
+      "title": "NON-COMPETITIVE INTENDED MILITARY OCCUPATIONAL SPECIALTY",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-537-23",
+      "title": "REACTIVATION OF THE COMMAND AND MARINE PROFILE APPLICATION//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-559-14",
+      "title": "GUIDANCE FOR ARCHIVING HEALTH SERVICE TREATMENT RECORDS (STRS) FOR ALL UNITED STATES MARINE CORPS ACTIVE/SELECTED RESERVE SERVICE MEMBERS//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-574-24",
+      "title": "TRANSPORT OR SHIPMENT REIMBURSEMENT OF HUMAN BREAST MILK",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-619-14",
+      "title": "HARDSHIP DUTY PAY \u2013 TEMPO (HDP-T) PROGRAM DETAILS//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-630-24",
+      "title": "UPDATED ENLISTED PROFESSIONAL MILITARY EDUCATION (EPME)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-631-24",
+      "title": "UPDATED ENLISTED PROFESSIONAL MILITARY EDUCATION (EPME)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-637-22",
+      "title": "EXTENSION OF INHERENT RESOLVE CAMPAIGN MEDAL (IRCM) FOR SERVICE IN IRAQ, AND AUTHORIZATION TO AWARD THE GLOBAL WAR ON TERRORISM EXPEDITIONARY MEDAL//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-691-21",
+      "title": "CONTINUATION PAY PROGRAM FOR CALENDAR YEAR 2022 FOR BLENDED RETIREMENT SYSTEM PARTICIPANTS//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-728-12",
+      "title": "HAZARDOUS DUTY INCENTIVE PAY (DEMOLITION DUTY)//",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "mco-1020-34",
+      "title": "MCO 1020.34 - Marine Corps Uniform Regulations",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1326-2h",
+      "title": "MCO 1326.2H - Administration Of Temporary Flight Orders",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1400-32",
+      "title": "MCO 1400.32 - Marine Corps Promotion Manual, Volume 2, Enlisted Promotions",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1500-59",
+      "title": "MCO 1500.59 - Marine Corps Martial Arts Program (Mcmap)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1500-59a",
+      "title": "MCO 1500.59A - Marine Corps Martial Arts Program (Mcmap)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1553-1",
+      "title": "MCO 1553.1 - The Marine Corps Training And Education System",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1560-33",
+      "title": "MCO 1560.33 - Marine Corps Tuition Assistance Program (Mctap)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1700-32",
+      "title": "MCO 1700.32 - Leadership Scholar Program (Lsp)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1710-30",
+      "title": "MCO 1710.30 - Marine Corps Child And Youth Programs (Short Title: Cyp)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-1741-11d",
+      "title": "MCO 1741.11D - Survivor Annuity Program - Survivor Benefit Plans (Sbp)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-3120-11a",
+      "title": "MCO 3120.11A - Marine Corps Parachuting Policy And Program Administration",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-3150-4a",
+      "title": "MCO 3150.4A - Marine Corps Diving Policy And Program Administration",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-3571-2h",
+      "title": "MCO 3571.2H - Explosive Ordnance Disposal (Eod) Program",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5215-1",
+      "title": "MCO 5215.1 - Marine Corps Directives Management Program",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5800-16-vol-1",
+      "title": "MCO 5800.16 - Legal Support And Administration Manual (Short Title: Lsam)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5800-16-vol-10",
+      "title": "MCO 5800.16 - Legal Support And Administration Manual (Short Title: Lsam)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5800-16-vol-13",
+      "title": "MCO 5800.16 - Legal Support And Administration Manual (Short Title: Lsam)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5800-16-vol-14",
+      "title": "MCO 5800.16 - Legal Support And Administration Manual (Short Title: Lsam)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5800-16-vol-16",
+      "title": "MCO 5800.16 - Legal Support And Administration Manual (Short Title: Lsam)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5800-16-vol-2",
+      "title": "MCO 5800.16 - Legal Support And Administration Manual (Short Title: Lsam)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5800-16-vol-4",
+      "title": "MCO 5800.16 - Legal Support And Administration Manual (Short Title: Lsam)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5800-16-vol-5",
+      "title": "MCO 5800.16 - Legal Support And Administration Manual (Short Title: Lsam)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5800-16-vol-6",
+      "title": "MCO 5800.16 - Legal Support And Administration Manual (Short Title: Lsam)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5800-16-vol-7",
+      "title": "MCO 5800.16 - Legal Support And Administration Manual (Short Title: Lsam)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-5800-16-vol-8",
+      "title": "MCO 5800.16 - Legal Support And Administration Manual (Short Title: Lsam)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-6260-3",
+      "title": "MCO 6260.3 - Marine Corps Hearing Conservation Program",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-7220",
+      "title": "MCO 7220 - Foreign Language Proficiency Bonus Program (Flpb)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-7220-13",
+      "title": "MCO 7220.13 - Marine Corps Administrative Analysis Team (Mcaat)",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-7220-56a",
+      "title": "MCO 7220.56A - Entitlement To Basic Allowance For Housing (Bah) At Locations Other Than...",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-8023-3",
+      "title": "MCO 8023.3 - Personnel Qualification And Certification Program For Class V Ammunition...",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "mco-p3000-15b",
+      "title": "MCO P3000.15B - Manpower Unit Deployment Program Standing Operating Procedures (Short...",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "MCO"
+    },
+    {
+      "cid": "navmc-10274",
+      "title": "NAVMC 10274",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "NAVMC"
+    },
+    {
+      "cid": "navmc-11432",
+      "title": "NAVMC 11432",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "NAVMC"
+    },
+    {
+      "cid": "navmc-321m",
+      "title": "NAVMC 321M",
+      "has_url": true,
+      "ref_count": 1,
+      "type": "NAVMC"
+    },
+    {
+      "cid": "dd-form-2367",
+      "title": "DD Form 2367",
+      "has_url": true,
+      "ref_count": 0,
+      "type": "DD-FORM"
+    },
+    {
+      "cid": "maradmin-388-25",
+      "title": "FISCAL YEAR 2026 CLASS DATES FOR CORNERSTONE: THE COMMANDANT\u2019S",
+      "has_url": true,
+      "ref_count": 0,
+      "type": "MARADMIN"
+    },
+    {
+      "cid": "maradmin-412-23",
+      "title": "TRANSITION FROM OPTICAL DIGITAL IMAGING RECORDS MANAGEMENT SYSTEM (ODI-RMS) TO THE OFFICIAL MILITARY PROFESSIONAL FILE RECORDS MANAGEMENT APPLICATION (O-RMA) FOR STORAGE AND MAINTENANCE OF THE OFFICIAL MILITARY PERSONNEL FILE (OMPF)//",
+      "has_url": true,
+      "ref_count": 0,
+      "type": "MARADMIN"
+    }
+  ]
+}

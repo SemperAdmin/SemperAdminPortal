@@ -32,7 +32,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "02",
@@ -43,7 +44,8 @@
           "audience": [
             "DO",
             "FO"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "03",
@@ -54,7 +56,8 @@
           "audience": [
             "DO",
             "FO"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "04",
@@ -65,7 +68,8 @@
           "audience": [
             "DO",
             "FO"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "05",
@@ -77,7 +81,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "06",
@@ -89,7 +94,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "07",
@@ -101,7 +107,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "08",
@@ -113,7 +120,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -132,7 +140,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "02",
@@ -143,7 +152,8 @@
           "audience": [
             "DO",
             "FO"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "03",
@@ -154,7 +164,8 @@
           "audience": [
             "DO",
             "FO"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "04",
@@ -165,7 +176,8 @@
           "audience": [
             "DO",
             "FO"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "05",
@@ -177,7 +189,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "06",
@@ -189,7 +202,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "07",
@@ -201,7 +215,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "08",
@@ -213,7 +228,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -232,7 +248,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "05",
@@ -244,7 +261,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "06",
@@ -256,7 +274,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "07",
@@ -268,7 +287,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "08",
@@ -280,9 +300,16 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     }
-  ]
+  ],
+  "sponsor": "DCS M&RA",
+  "effectiveDate": "2026-05-10",
+  "_audit_notes": {
+    "sponsor_default": true,
+    "effectiveDate_from_lastVerified": true
+  }
 }

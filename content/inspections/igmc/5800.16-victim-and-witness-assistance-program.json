@@ -27,42 +27,48 @@
           "question": "Has the COMMCICOM, COMMARFORRES, and regional MCI CGs appointed in writing, by name, title, duty address, and telephone number, a Regional Victim Witness Liaison Officer (RVWLO)?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040902(A)(1)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0102",
           "question": "Did the installation commander appoint, in writing, by name, title, duty address, and telephone number, an officer or civilian member of the Installation Staff, as a Victim and Witness Liaison Officer (VWLO)?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040902(B)(2)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0103",
           "question": "Is the Installation Commander ensuring that VWAP representatives aboard the installation are provided the VWLO’s name and phone number?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040902(B)(3)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0104",
           "question": "Has the Installation Commander established a local Victim and Witness Assistance Council chaired by the installation VWLO?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040902(B)(4)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0105",
           "question": "When a Marine Corps confinement facility is located aboard the installation; has the Installation Commander appointed in writing, by name, title, duty address, and telephone number, a confinement facility representative to serve as the confinement facility Victim Witness Assistance Coordinator (VWAC) and representative to the local Victim and Witness Assistance Council?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040902(B)(3)(5)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0106",
           "question": "With the assistance of the local Marine and Family Programs Office; has the Installation constructed and maintained a directory of military and civilian programs, services, and crime victim compensation funds available to victims and witnesses, and ensured the directory is published on the installation’s public website?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040902(B)(3)(6)"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -76,49 +82,56 @@
           "question": "Is the RVWLO an officer or civilian member of the commander’s staff of appropriate experience, temperament, rank, and sourced from either the supporting LSSS or SJA office?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040903(A)(1)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0202",
           "question": "Does the RVWLO maintain a list of Installation VWLOs (IVWLOs) under the cognizance of their commanding general and ensure copies of this list are provided to the VWAP Director, JMJ?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040903(A)(3)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0203",
           "question": "Has the RVWLO ensured basic VWAP training is available to all new VWLOs and VWACs?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040903(A)(4)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0204",
           "question": "Has the RVWLO collected and maintained data on the number of victims and witnesses, in the region, who received DD Forms 2701-2703 and who elected notification via DD Form 2704?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040903(A)(5)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0205",
           "question": "Has the RVWLO compiled and maintained VWAP data and forwarded it the VWAP Director, JMJ on a quarterly basis?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040903(A)(5)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0206",
           "question": "Has the RVWLO chaired and conducted a semi-annual Regional VWLO meeting to discuss VWAP- related issues?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040903(A)(7)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0207",
           "question": "Does the RVWLO maintain a roster of all new VWLOs and VWACs who they have trained?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040903.(A)(4)"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -132,56 +145,64 @@
           "question": "Is the IVWLO an officer or civilian member of the commander’s staff of appropriate experience, temperament, rank, and sourced from the supporting LSSS or SJA office?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040903(B)(1)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0302",
           "question": "Does the VWLO maintain a list of VWACs, service providers, and SJAs aboard the installation? Are copies of this list provided to all VWACs and service providers?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040903(B)(3)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0303",
           "question": "Has the VWLO ensured that each organization (battalion/squadron level and above) assigned to the installation, including tenant commands, has appointed a VWAC in writing, by name, title, duty address, and telephone number?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040903(B)(4)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0304",
           "question": "Does the VWLO chair and conduct a quarterly installation-level Victim Witness Assistance Council meeting?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040903(B)(5)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0305",
           "question": "In conjunction with the installation Marine and Family Programs office and SAPR programs, does the VWLO maintain an installation website that includes, at a minimum, a current directory of installation VWAP personnel, military and civilian programs and services providing counseling, treatment, or other victim support services within the local geographic area?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040903(B)(6)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0306",
           "question": "Does the VWLO obtain and distribute relevant information and provide annual training to all VWACs aboard the installation?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040903(B)(7)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0307",
           "question": "Does the VWLO have a process in place to compile and maintain data, and forward data to the Installation Commander in accordance with reporting requirements?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040903(B)(10)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0308",
           "question": "Does the VWLO ensure that deploying units receive appropriate VWAP training and information prior to deployment?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040903(B)(11)"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -195,119 +216,136 @@
           "question": "Has the OIC, Legal Services Support Team (LSST) appointed a Legal Services VWAC in writing, by name, title, duty address, and telephone number?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(B)(1)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0402",
           "question": "Has the TSO ensured all VWAP data is entered into the electronic military justice case management system?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(E)(3)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0403",
           "question": "Does the TSO ensure that the total number of victims and witnesses provided DD Forms 2702 and 2703, and the total number of victims and witnesses electing to be notified of prisoner status change in DD Form 2704, are reported to the Installation VWLO quarterly?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(E)(4)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0404",
           "question": "Does the CTC, RTC, and STC of the LSST ensure that each LSST VWAC is assigned to the Victim and Witness Assistance Council located on installations to which the LSST provides direct support legal services?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(E)(5)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0405",
           "question": "After preferral of charges, do trial counsel or the LSST VWAC provide all victims and witnesses in a case with the DD Form 2702 (Court-Martial Information for Victims and Witnesses of Crime), and determine their elections as to those rights?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(F)(2)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0406",
           "question": "At the earliest possible opportunity, are trial counsels providing timely notification to the victim or witness of the required trial events and procedural milestones?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(F)(3)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0407",
           "question": "If the victim is represented by VLC, are the trial counsels providing the required notification through the VLC?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(F)(3)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0408",
           "question": "During court-martial proceedings, do detailed trial counsel ensure that victims, victim witness support personnel, and prosecution witnesses are provided, if desired, with a waiting area that is separate from, and out of the sight and hearing of, the accused and defense witnesses?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(F)(6)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0409",
           "question": "When trial counsel has possession of a victim’s or witness’s property, does trial counsel safeguard the property held as evidence and return it as soon as possible with due consideration of the possibility of appeals and other post-trial requirements?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(F)(9)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0410",
           "question": "At the conclusion of a court-martial resulting in a conviction, does the detailed trial counsel inform victims and witnesses of basic information about the post-trial process and provide each with a completed DD Form 2703 (Post-Trial Information for Victims and Witnesses)?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(F)(10)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0411",
           "question": "At the conclusion of every court-martial in which confinement is adjudged, does the trial counsel complete a DD Form 2704 and provide copies to the confinement facility, victim and witnesses entitled to a copy, and responsible VWACs?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(F)(11)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0412",
           "question": "Are LSST Trial Counsel or the LSST VWACs maintaining data on the number of victims and witnesses provided DD Forms 2702 and 2703, and the number of victims and witnesses, using DD form 2704, which elected to be notified of a prisoner’s status change? How is this data being maintained?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(F)(12)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0413",
           "question": "Is all VWAP data entered into the electronic case management system record for each victim and witness when required?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(F)(12)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0414",
           "question": "Are LSST VWAC or Trial counsel determining whether victims and witnesses elect to receive further information and updates regarding appeals?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(F)(13)(b)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0415",
           "question": "Is detailed trial counsel or LSST VWAC forwarding contact information of all victims electing to receive further information concerning on the DD Form 2704 to U.S. Navy OJAG (Code 46)?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(F)(13)(b)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0416",
           "question": "In cases remanded for rehearing on findings and/or sentence, has the LSST VWAC coordinated with U.S. Navy OJAG (Code 46) to re-assume the role as primary point of contact for victims and witnesses associated with the case?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(F)(13)(c)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0417",
           "question": "Do trial counsel notify victims of their right to seek assistance from a Victims Legal Counsel prior to conducting any interviews with the victim?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040904(F)(3)"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -321,28 +359,32 @@
           "question": "Has each law enforcement agency or office aboard the installation appointed a Law Enforcement VWAC to serve on the Victim Witness Assistance Council?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040905(A)(1)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0502",
           "question": "Are victims and witnesses being provided DD Form 2701s containing accurate contact information for that specific installation?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040905(A)(1)(b)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0503",
           "question": "Are DD Form 2701s being accurately tracked and reported to the installation VWLO?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040905(A)(1)(b)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0504",
           "question": "Are law enforcement agencies conducting annual training on the requirements of the VWAP and applicable orders regarding the treatment of victims and witnesses?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040905(A)(1)(c)"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -356,119 +398,136 @@
           "question": "Has the brig/PCF commanding officer (CO) or OIC appointed, in writing, a Confinement Facility VWAC and an alternate VWAC?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(1)(a)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0602",
           "question": "Are individual confinement records of prisoners included in the victim and witness program identified by placing a white label on the outside of the file with the letters “VW” written at least one (1) inch high in black?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(4)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0603",
           "question": "Does the confinement facility VWAC maintain a separate adjunct file by individual name of the prisoner, cross-referenced to the brig/PCF-specific number?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(5)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0604",
           "question": "Is the brig/PCF-specific number developed using the brig/PCF’s CORMIS unit identification code (UIC), the year and month the prisoner’s case was adjudged, and a sequential number of the file for that calendar year (e.g., 31001 10-11 001)?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(5)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0605",
           "question": "Is all contact with a victim or witness, including telephonic and unsuccessful contact attempts, properly documented in CORMIS?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(5)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0606",
           "question": "Is the DD Form 2705, Victim/Witness Notification of Inmate Status used to advise victims and witnesses of all release and release-related activities, transfers, and escapes?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(6)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0607",
           "question": "Are all DD Form 2705 notifications made at least 45 days prior to the relevant change in inmate status utilizing certified mail, return receipt?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(6)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0608",
           "question": "Does the confinement facility VWAC send an acknowledgement of request to participate in the program to victims and witnesses within ten working days of receipt of the DD Form 2704, and is a completed DD Form 2705 (section I; section II, block 3, 4, 5 and 6; section III, block 8.a and 8.b; and section V) included with the initial enrollment letter?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(6)(a)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0609",
           "question": "When a prisoner is to be released does the brig/PCF VWAC notify victims and witnesses through the use of a DD Form 2705, providing the date, reason for release, and destination (city and state)?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(6)(c)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0610",
           "question": "In the event of a prisoner escape, does the confinement facility VWAC notify victims and witnesses telephonically as soon as possible?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(6)(d)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0611",
           "question": "Does the confinement facility VWAC notify victims and witnesses of all planned transfers including the address of the receiving brig/PCF?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(6)(e)1"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0612",
           "question": "Do confinement facility VWACs ensure all VWAP information is entered in CORMIS within five days of the end of each quarter (i.e., by January 5, April 5, July 5, or October 5, as applicable)?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(10)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0613",
           "question": "Are all documents pertaining to victims and witnesses maintained in a secure and separate manner from the prisoner record for two years after the prisoner's full term release date?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(12)(b)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0614",
           "question": "Once records have been kept for the required two years after a prisoner’s release, are all victim and witness information destroyed in accordance with service regulations regarding PII?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(12)(b)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0615",
           "question": "Have Brig/PCF COs and OICs established internal controls to ensure all information held on victims and witnesses is kept strictly confidential and that no unauthorized person(s) or any prisoner(s) shall access the information?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(13)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0616",
           "question": "Is all victim and witness information placed in a separate envelope stamped on both sides “EXEMPT FROM RELEASE UNDER FREEDOM OF INFORMATION ACT ONLY CMC (ARSF) CAN AUTHORIZE RELEASE OF INFORMATION”? In addition, is a cover sheet placed inside the envelope on top of the material stamped “ALL VICTIM AND WITNESS INFORMATION IS EXEMPT FROM RELEASE UNDER THE FREEDOM OF INFORMATION ACT, ONLY CMC (ARSF) CAN AUTHORIZE RELEASE OF INFORMATION?”",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(13)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0617",
           "question": "Is the Victim and Witness Notification Program included in the brig/PCF standard operating procedures?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040906(A)(13)"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -482,21 +541,24 @@
           "question": "Do you have a process in place to inform crime victims and witnesses about VWAP rights, services, and assistance when they receive counseling, treatment, or advice, if such information has not already been provided?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040907(A)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0702",
           "question": "Does MF ensure that victims and witnesses in a case understand the rights afforded them under the law and are provided with a completed DD Form 2701 if one has not already been provided?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040907(B)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0703",
           "question": "Has MF appointed, by name and in writing, a representative to the local Victim and Witness Assistance Council?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040907(C)"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -510,21 +572,24 @@
           "question": "Has the Unit Commander appointed a VWAC in writing, by name, title, duty address, and telephone number?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040902(C)(1)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0802",
           "question": "In cases of summary courts-martial where confinement is adjudged and approved, did the unit commander coordinate with the Legal Services Support Team (LSST) supporting their command prior to completing the DD Form 2704?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040902(C)(3)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0803",
           "question": "Have Commanders ensured their appointed VWAC conducts unit training to ensure that unit personnel know the identity of the VWAC and understand victim and witness rights?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040902(C)(5)"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -538,49 +603,56 @@
           "question": "Is the VWAC an Officer, SNCO, or civilian member of the commander’s staff of appropriate experience, temperament, and rank?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040902(D)(1)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0902",
           "question": "Do you have a process in place to maintain data on the number of victims and witnesses who receive DD Forms 2701?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040902(D)(4)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0903",
           "question": "Are the total number of victims and witnesses provided DD Form 2701 being reported to the installation VWLO quarterly?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040902(D)(4)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0904",
           "question": "In pretrial confinement cases where the victim or witness has requested notification, did the VWAC notify the victim or witness of changes in the accused's pretrial confinement status?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040902(D)(7)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0905",
           "question": "Has the VWAC obtained and distributed VWAP materials and provide VWAP training to the members of the command on an annual basis?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040902(D)(8)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0906",
           "question": "Does the unit VWAC maintain a list of command personnel who attended the annual training?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040902(D)(8)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0907",
           "question": "Does the unit VWAC liaise with their servicing Marine and Family Programs office to ensure victims and witnesses receive information concerning the availability or resource, including information on compensation programs available to victims?",
           "references": [
             "MCO 5800.16, Chapter 4 par 040902(D)(5)"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     }

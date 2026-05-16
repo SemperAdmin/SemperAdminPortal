@@ -48,6 +48,94 @@ export interface MarinesCategory {
 
 export const MARINES_CATEGORIES: MarinesCategory[] = [
   {
+    slug: "ai-and-data-management-training",
+    label: "AI and Data Management Training",
+    shortLabel: "AI Training",
+    description: "Available training beyond the Basic AI Course. MarineNet Skillsoft and Percipio. Digital University (USAF). Joint Knowledge Online (JKO). GSA Centers of Excellence. II MEF Basic Data Literacy. US Navy Community College (USNCC). Naval Postgraduate School (NPS) AI for Military Use. Per MARADMIN 270/25.",
+    icon: "Star",
+    pageType: "leaf",
+  },
+  {
+    slug: "ai-ethical-use",
+    label: "AI Ethical Use",
+    shortLabel: "AI Ethics",
+    description: "Responsible AI principles per DoD Responsible AI Strategy. Six tenets of responsible AI. COMMSTRAT-specific guidance per MARADMIN 635/24 (supersedes 602/24). No photo-realistic imagery or video for public dissemination. Human oversight. AI annotation in caption and metadata. Per MCO 5231.4.",
+    icon: "Star",
+    pageType: "leaf",
+  },
+  {
+    slug: "ai-fellowship-programs",
+    label: "AI Fellowship Programs (NPS)",
+    shortLabel: "AI Fellowship",
+    description: "Naval Postgraduate School (NPS) AI Fellowship per MARADMIN 135/26. 5-month project-based fellowship. Eligibility O1-O5, E4-E8, CWO 1-5, GS-5 to GS-14. Approximately $5K TAD. Three TAD trips to Monterey. Capstone research paper requirement.",
+    icon: "Star",
+    pageType: "leaf",
+  },
+  {
+    slug: "ai-governance-and-approval",
+    label: "AI Governance and Approval",
+    shortLabel: "AI Governance",
+    description: "DC I (Deputy Commandant for Information) centralized governance authority. Marine Corps Service Data Officer (MC SDO) policy lead. Functional Data Working Group (FDWG) and Artificial Intelligence Working Group (AIWG). Approval required for new GenAI capabilities. Per MCO 5231.4.",
+    icon: "Star",
+    pageType: "leaf",
+  },
+  {
+    slug: "ai-overview",
+    label: "AI Overview and Authorities",
+    shortLabel: "AI Overview",
+    description: "The framework. MCO 5231.4 (Marine Corps Data and Artificial Intelligence). USMC AI Implementation Plan. NAVMC 3000.1. DC I as service lead. Service Data Office (SDO). MARADMIN ecosystem. VAULTIS standard. Responsible AI principles. Emerging and Disruptive Technologies (EDT).",
+    icon: "Star",
+    pageType: "leaf",
+  },
+  {
+    slug: "basic-ai-course",
+    label: "Basic AI Course (Mandatory)",
+    shortLabel: "Basic AI Course",
+    description: "Mandatory training per MARADMIN 214/26. All Active Duty and Reserve Marines (officer and enlisted) complete NLT 31 December 2026. Course code CDETBAIC01 on MCELE (formerly MarineNet). 45 minutes. One-time requirement. Tracked in MCTFS Basic Training Record (BTR) via MOL.",
+    icon: "Star",
+    pageType: "leaf",
+  },
+  {
+    slug: "camogpt-and-approved-ai-tools",
+    label: "CamoGPT and Other Approved AI Tools",
+    shortLabel: "CamoGPT",
+    description: "Authorized AI tools beyond GenAI.mil. CamoGPT and other GenAI systems meeting government system requirements. NIPRGPT sunsetting. Coordination with DC I for new tool approval. Per MARADMIN 018/26.",
+    icon: "Star",
+    pageType: "leaf",
+  },
+  {
+    slug: "data-and-ai-workforce-roles",
+    label: "Data and AI Workforce Roles",
+    shortLabel: "Workforce Roles",
+    description: "14 Data Workforce Roles (MC SDO, ADO, Data Steward, Data Custodian, CDAO, Data Producer, System Owner, Data Architect, Analytic Developer, Data Analytics Specialist, Data Engineer, Data Modeler, Data Scientist, Data Security Engineer). 7 AI Workforce Roles (AI Researcher, AI/ML Engineer, T&E Engineer, Deployment Engineer, AI Technician, Product Owner, UI/UX). Per MCO 5231.4 Enclosures 2 and 3.",
+    icon: "Star",
+    pageType: "leaf",
+  },
+  {
+    slug: "genai-mil-enterprise-platform",
+    label: "GenAI.mil Enterprise Platform",
+    shortLabel: "GenAI.mil",
+    description: "Marine Corps enterprise generative AI platform at genai.mil. Per MARADMIN 018/26 (supersedes MARADMIN 496/24). Authorized for CUI on government-furnished equipment. NOT approved for PII, PHI, or classified. Conversational chat, file upload (PDF/DOCX/TXT), RAG, secure web grounding, deep research. NIPRGPT sunsetting.",
+    icon: "Star",
+    pageType: "leaf",
+  },
+  {
+    slug: "practical-ai-use",
+    label: "Practical AI Use for Marines",
+    shortLabel: "Practical AI Use",
+    description: "Day-to-day AI use. Verifying AI outputs. User responsibility and accountability. Common use cases. CUI handling. Annotation requirements. Limitations of GenAI. When to use AI vs conventional methods. Risk-informed experimentation per MARADMIN 214/26.",
+    icon: "Star",
+    pageType: "leaf",
+  },
+  {
+    slug: "semper-admin-ai-field-manual",
+    label: "Semper Admin AI Field Manual",
+    shortLabel: "Field Manual",
+    description: "The Semper Admin AI Field Manual v3.0. 100 prompts across 10 categories. 53 pages. The operational AI prompt standard for USMC administration. Built by Marines for Marines. Five pillars: Accuracy, Verification, Accountability, Designed for the Fight, Open and Improving. CUI ceiling. Download PDF or visit github.com/semperadmin.",
+    icon: "Star",
+    pageType: "leaf",
+  },
+  {
     slug: "awards-overview",
     label: "Awards Overview and Authorities",
     shortLabel: "Awards Overview",
@@ -1687,6 +1775,28 @@ export interface MarinesParentGroup {
 }
 
 export const MARINES_PARENT_GROUPS: MarinesParentGroup[] = [
+  {
+    slug: "artificial-intelligence",
+    label: "Artificial Intelligence (AI)",
+    shortLabel: "AI",
+    description:
+      "Marine Corps data and AI framework. MCO 5231.4 governance. DC I as service lead. Service Data Office (SDO). Mandatory Basic AI Course. GenAI.mil platform. NPS AI Fellowship. Responsible AI principles. Per MCO 5231.4 and MARADMIN ecosystem (214/26, 635/24, 270/25, 018/26, 135/26).",
+    icon: "Star",
+    // Children listed in alphabetical order by label (case-insensitive).
+    children: [
+      "ai-and-data-management-training",
+      "ai-ethical-use",
+      "ai-fellowship-programs",
+      "ai-governance-and-approval",
+      "ai-overview",
+      "basic-ai-course",
+      "camogpt-and-approved-ai-tools",
+      "data-and-ai-workforce-roles",
+      "genai-mil-enterprise-platform",
+      "practical-ai-use",
+      "semper-admin-ai-field-manual",
+    ],
+  },
   {
     slug: "awards",
     label: "Awards",

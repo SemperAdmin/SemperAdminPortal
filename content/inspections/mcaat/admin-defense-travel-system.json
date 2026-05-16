@@ -32,7 +32,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "02",
@@ -43,7 +44,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "03",
@@ -54,7 +56,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "06",
@@ -64,7 +67,8 @@
           ],
           "audience": [
             "REPORTING"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -82,7 +86,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "04",
@@ -93,7 +98,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "05",
@@ -103,7 +109,8 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "07",
@@ -114,9 +121,16 @@
           ],
           "audience": [
             "SUPPORTING"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     }
-  ]
+  ],
+  "sponsor": "DCS M&RA",
+  "effectiveDate": "2026-05-10",
+  "_audit_notes": {
+    "sponsor_default": true,
+    "effectiveDate_from_lastVerified": true
+  }
 }

@@ -1,0 +1,3447 @@
+{
+  "dimension": "frontmatter-schema",
+  "generatedAt": "2026-05-15T23:46:44Z",
+  "repoCommit": "3c8cb069f83323c3d87e251808635930f7b1b4bd",
+  "summary": {
+    "counts": {
+      "blocker": 0,
+      "major": 484,
+      "minor": 2,
+      "nit": 2
+    },
+    "filesScanned": 1431,
+    "notes": "Static analysis only. No build or sync executed. Staleness math anchored to 2026-05-15. content/citations/_stubs/ skipped."
+  },
+  "findings": [
+    {
+      "id": "FS-0241",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1050-leave-liberty-and-administrative-absence.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0242",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1050-leave-liberty-and-administrative-absence.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0243",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1050-leave-liberty-and-administrative-absence.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0244",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1050-leave-liberty-and-administrative-absence.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0245",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1050-leave-liberty-and-administrative-absence.json",
+      "message": "subsection[0].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0246",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1050-leave-liberty-and-administrative-absence.json",
+      "message": "subsection[0].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0247",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1050-leave-liberty-and-administrative-absence.json",
+      "message": "subsection[0].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0248",
+      "severity": "major",
+      "rule": "lastVerified-stale-inspection",
+      "file": "content/inspections/igmc/1320-marine-corps-sponsorship-program.json",
+      "message": "lastVerified is 13.7 months old, exceeds 12-month inspection stale threshold",
+      "snippet": "lastVerified: 2025-03-24"
+    },
+    {
+      "id": "FS-0249",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1320-marine-corps-sponsorship-program.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0250",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1320-marine-corps-sponsorship-program.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0251",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1320-marine-corps-sponsorship-program.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0252",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1320-marine-corps-sponsorship-program.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0253",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1320-marine-corps-sponsorship-program.json",
+      "message": "subsection[0].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0254",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1320-marine-corps-sponsorship-program.json",
+      "message": "subsection[0].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0255",
+      "severity": "major",
+      "rule": "lastVerified-stale-inspection",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "lastVerified is 12.9 months old, exceeds 12-month inspection stale threshold",
+      "snippet": "lastVerified: 2025-04-18"
+    },
+    {
+      "id": "FS-0256",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0257",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0258",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0259",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0260",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[0].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0261",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[0].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0262",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[0].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0263",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[0].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0264",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[0].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0265",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[0].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0266",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[0].items[10] missing evidenceHint"
+    },
+    {
+      "id": "FS-0267",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[1].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0268",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[1].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0269",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[1].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0270",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[1].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0271",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[1].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0272",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[1].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0273",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[1].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0274",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1610-performance-evaluation-system.json",
+      "message": "subsection[1].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0276",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0277",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0278",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0279",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0280",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[0].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0281",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[1].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0282",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[1].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0283",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[1].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0284",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[1].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0285",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[1].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0286",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[2].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0287",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[2].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0288",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[2].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0289",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[2].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0290",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[2].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0291",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[2].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0292",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[2].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0293",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1650-military-awards.json",
+      "message": "subsection[2].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0294",
+      "severity": "major",
+      "rule": "lastVerified-stale-inspection",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "lastVerified is 13.7 months old, exceeds 12-month inspection stale threshold",
+      "snippet": "lastVerified: 2025-03-24"
+    },
+    {
+      "id": "FS-0295",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0296",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0297",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0298",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0299",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[0].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0300",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[0].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0301",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[1].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0302",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[1].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0303",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[1].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0304",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[2].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0305",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[2].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0306",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[2].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0307",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[2].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0308",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[2].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0309",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[2].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0310",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[2].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0311",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[2].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0312",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[2].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0313",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/1900.16-separation-retirement-and-limited-duty.json",
+      "message": "subsection[2].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0314",
+      "severity": "major",
+      "rule": "lastVerified-stale-inspection",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "lastVerified is 13.8 months old, exceeds 12-month inspection stale threshold",
+      "snippet": "lastVerified: 2025-03-21"
+    },
+    {
+      "id": "FS-0315",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0316",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0317",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0318",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0319",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0320",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0321",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0322",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0323",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0324",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0325",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[10] missing evidenceHint"
+    },
+    {
+      "id": "FS-0326",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[11] missing evidenceHint"
+    },
+    {
+      "id": "FS-0327",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[12] missing evidenceHint"
+    },
+    {
+      "id": "FS-0328",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[13] missing evidenceHint"
+    },
+    {
+      "id": "FS-0329",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[14] missing evidenceHint"
+    },
+    {
+      "id": "FS-0330",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[15] missing evidenceHint"
+    },
+    {
+      "id": "FS-0331",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[16] missing evidenceHint"
+    },
+    {
+      "id": "FS-0332",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[17] missing evidenceHint"
+    },
+    {
+      "id": "FS-0333",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[18] missing evidenceHint"
+    },
+    {
+      "id": "FS-0334",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[19] missing evidenceHint"
+    },
+    {
+      "id": "FS-0335",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[20] missing evidenceHint"
+    },
+    {
+      "id": "FS-0336",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[21] missing evidenceHint"
+    },
+    {
+      "id": "FS-0337",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[22] missing evidenceHint"
+    },
+    {
+      "id": "FS-0338",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[23] missing evidenceHint"
+    },
+    {
+      "id": "FS-0339",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/3040-casualty-affairs.json",
+      "message": "subsection[0].items[24] missing evidenceHint"
+    },
+    {
+      "id": "FS-0340",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0341",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0342",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0343",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0344",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[0].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0345",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[0].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0346",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[0].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0347",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[0].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0348",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[0].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0349",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[0].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0350",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[0].items[10] missing evidenceHint"
+    },
+    {
+      "id": "FS-0351",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[0].items[11] missing evidenceHint"
+    },
+    {
+      "id": "FS-0352",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[0].items[12] missing evidenceHint"
+    },
+    {
+      "id": "FS-0353",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[0].items[13] missing evidenceHint"
+    },
+    {
+      "id": "FS-0354",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[0].items[14] missing evidenceHint"
+    },
+    {
+      "id": "FS-0355",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[1].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0356",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[1].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0357",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[1].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0358",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[1].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0359",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[1].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0360",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[1].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0361",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[1].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0362",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[1].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0363",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[1].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0364",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[1].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0365",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[1].items[10] missing evidenceHint"
+    },
+    {
+      "id": "FS-0366",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[1].items[11] missing evidenceHint"
+    },
+    {
+      "id": "FS-0367",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[1].items[12] missing evidenceHint"
+    },
+    {
+      "id": "FS-0368",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[1].items[13] missing evidenceHint"
+    },
+    {
+      "id": "FS-0369",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4600.40-government-travel-charge-card-program.json",
+      "message": "subsection[1].items[14] missing evidenceHint"
+    },
+    {
+      "id": "FS-0370",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0371",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0372",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0373",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0374",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[0].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0375",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[0].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0376",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[0].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0377",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[0].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0378",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[0].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0379",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[0].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0380",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[1].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0381",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[1].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0382",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[1].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0383",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[1].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0384",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[1].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0385",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[1].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0386",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[1].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0387",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[1].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0388",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[1].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0389",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[1].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0390",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/4650.39-defense-travel-system.json",
+      "message": "subsection[1].items[10] missing evidenceHint"
+    },
+    {
+      "id": "FS-0391",
+      "severity": "major",
+      "rule": "inspection-missing-applicabilityLevel",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "inspection missing prompt-required field 'applicabilityLevel'"
+    },
+    {
+      "id": "FS-0392",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0393",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0394",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0395",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0396",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0397",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0398",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0399",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0400",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0401",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0402",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[10] missing evidenceHint"
+    },
+    {
+      "id": "FS-0403",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[11] missing evidenceHint"
+    },
+    {
+      "id": "FS-0404",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[12] missing evidenceHint"
+    },
+    {
+      "id": "FS-0405",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[13] missing evidenceHint"
+    },
+    {
+      "id": "FS-0406",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[14] missing evidenceHint"
+    },
+    {
+      "id": "FS-0407",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[15] missing evidenceHint"
+    },
+    {
+      "id": "FS-0408",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[16] missing evidenceHint"
+    },
+    {
+      "id": "FS-0409",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[17] missing evidenceHint"
+    },
+    {
+      "id": "FS-0410",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[18] missing evidenceHint"
+    },
+    {
+      "id": "FS-0411",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[19] missing evidenceHint"
+    },
+    {
+      "id": "FS-0412",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[20] missing evidenceHint"
+    },
+    {
+      "id": "FS-0413",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[21] missing evidenceHint"
+    },
+    {
+      "id": "FS-0414",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[22] missing evidenceHint"
+    },
+    {
+      "id": "FS-0415",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[23] missing evidenceHint"
+    },
+    {
+      "id": "FS-0416",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[24] missing evidenceHint"
+    },
+    {
+      "id": "FS-0417",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[25] missing evidenceHint"
+    },
+    {
+      "id": "FS-0418",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[26] missing evidenceHint"
+    },
+    {
+      "id": "FS-0419",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[27] missing evidenceHint"
+    },
+    {
+      "id": "FS-0420",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[28] missing evidenceHint"
+    },
+    {
+      "id": "FS-0421",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[29] missing evidenceHint"
+    },
+    {
+      "id": "FS-0422",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[30] missing evidenceHint"
+    },
+    {
+      "id": "FS-0423",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[31] missing evidenceHint"
+    },
+    {
+      "id": "FS-0424",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[32] missing evidenceHint"
+    },
+    {
+      "id": "FS-0425",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[33] missing evidenceHint"
+    },
+    {
+      "id": "FS-0426",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[34] missing evidenceHint"
+    },
+    {
+      "id": "FS-0427",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[35] missing evidenceHint"
+    },
+    {
+      "id": "FS-0428",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[36] missing evidenceHint"
+    },
+    {
+      "id": "FS-0429",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[37] missing evidenceHint"
+    },
+    {
+      "id": "FS-0430",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[38] missing evidenceHint"
+    },
+    {
+      "id": "FS-0431",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[39] missing evidenceHint"
+    },
+    {
+      "id": "FS-0432",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[40] missing evidenceHint"
+    },
+    {
+      "id": "FS-0433",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[41] missing evidenceHint"
+    },
+    {
+      "id": "FS-0434",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[42] missing evidenceHint"
+    },
+    {
+      "id": "FS-0435",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[43] missing evidenceHint"
+    },
+    {
+      "id": "FS-0436",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[44] missing evidenceHint"
+    },
+    {
+      "id": "FS-0437",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[45] missing evidenceHint"
+    },
+    {
+      "id": "FS-0438",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[46] missing evidenceHint"
+    },
+    {
+      "id": "FS-0439",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[47] missing evidenceHint"
+    },
+    {
+      "id": "FS-0440",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[48] missing evidenceHint"
+    },
+    {
+      "id": "FS-0441",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[49] missing evidenceHint"
+    },
+    {
+      "id": "FS-0442",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[50] missing evidenceHint"
+    },
+    {
+      "id": "FS-0443",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[51] missing evidenceHint"
+    },
+    {
+      "id": "FS-0444",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[52] missing evidenceHint"
+    },
+    {
+      "id": "FS-0445",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[53] missing evidenceHint"
+    },
+    {
+      "id": "FS-0446",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[54] missing evidenceHint"
+    },
+    {
+      "id": "FS-0447",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[0].items[55] missing evidenceHint"
+    },
+    {
+      "id": "FS-0448",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0449",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0450",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0451",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0452",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0453",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0454",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0455",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0456",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0457",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0458",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[10] missing evidenceHint"
+    },
+    {
+      "id": "FS-0459",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[11] missing evidenceHint"
+    },
+    {
+      "id": "FS-0460",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[12] missing evidenceHint"
+    },
+    {
+      "id": "FS-0461",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[13] missing evidenceHint"
+    },
+    {
+      "id": "FS-0462",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[14] missing evidenceHint"
+    },
+    {
+      "id": "FS-0463",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[15] missing evidenceHint"
+    },
+    {
+      "id": "FS-0464",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[16] missing evidenceHint"
+    },
+    {
+      "id": "FS-0465",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[17] missing evidenceHint"
+    },
+    {
+      "id": "FS-0466",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[1].items[18] missing evidenceHint"
+    },
+    {
+      "id": "FS-0467",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[2].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0468",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[2].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0469",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[2].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0470",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[2].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0471",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[2].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0472",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[2].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0473",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[2].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0474",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[2].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0475",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[2].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0476",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[2].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0477",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[2].items[10] missing evidenceHint"
+    },
+    {
+      "id": "FS-0478",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[2].items[11] missing evidenceHint"
+    },
+    {
+      "id": "FS-0479",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[2].items[12] missing evidenceHint"
+    },
+    {
+      "id": "FS-0480",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5110.2-postal-affairs-and-official-mail-program-organization.json",
+      "message": "subsection[2].items[13] missing evidenceHint"
+    },
+    {
+      "id": "FS-0482",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5210-records-management.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0483",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5210-records-management.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0484",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5210-records-management.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0485",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5210-records-management.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0486",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5210-records-management.json",
+      "message": "subsection[0].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0487",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5210-records-management.json",
+      "message": "subsection[0].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0488",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5210-records-management.json",
+      "message": "subsection[1].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0489",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5210-records-management.json",
+      "message": "subsection[1].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0490",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5210-records-management.json",
+      "message": "subsection[2].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0491",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5210-records-management.json",
+      "message": "subsection[2].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0492",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5210-records-management.json",
+      "message": "subsection[2].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0493",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5210-records-management.json",
+      "message": "subsection[3].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0494",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5210-records-management.json",
+      "message": "subsection[3].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0495",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5210-records-management.json",
+      "message": "subsection[3].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0496",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5210-records-management.json",
+      "message": "subsection[4].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0497",
+      "severity": "major",
+      "rule": "lastVerified-stale-inspection",
+      "file": "content/inspections/igmc/5214-reports-management.json",
+      "message": "lastVerified is 24.5 months old, exceeds 12-month inspection stale threshold",
+      "snippet": "lastVerified: 2024-04-29"
+    },
+    {
+      "id": "FS-0498",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5214-reports-management.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0499",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5214-reports-management.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0500",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5214-reports-management.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0501",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5214-reports-management.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0502",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5214-reports-management.json",
+      "message": "subsection[0].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0503",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5214-reports-management.json",
+      "message": "subsection[0].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0504",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5214-reports-management.json",
+      "message": "subsection[0].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0505",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5214-reports-management.json",
+      "message": "subsection[1].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0506",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5214-reports-management.json",
+      "message": "subsection[1].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0507",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5214-reports-management.json",
+      "message": "subsection[1].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0508",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5214-reports-management.json",
+      "message": "subsection[1].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0509",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5215-directives-management.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0510",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5215-directives-management.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0511",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5215-directives-management.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0512",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5215-directives-management.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0513",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5215-directives-management.json",
+      "message": "subsection[0].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0514",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5215-directives-management.json",
+      "message": "subsection[0].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0515",
+      "severity": "major",
+      "rule": "inspection-missing-applicabilityLevel",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "inspection missing prompt-required field 'applicabilityLevel'"
+    },
+    {
+      "id": "FS-0517",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0518",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0519",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0520",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0521",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0522",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0523",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0524",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0525",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0526",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0527",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[10] missing evidenceHint"
+    },
+    {
+      "id": "FS-0528",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[11] missing evidenceHint"
+    },
+    {
+      "id": "FS-0529",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[12] missing evidenceHint"
+    },
+    {
+      "id": "FS-0530",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[13] missing evidenceHint"
+    },
+    {
+      "id": "FS-0531",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[14] missing evidenceHint"
+    },
+    {
+      "id": "FS-0532",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[15] missing evidenceHint"
+    },
+    {
+      "id": "FS-0533",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[0].items[16] missing evidenceHint"
+    },
+    {
+      "id": "FS-0534",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[1].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0535",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[1].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0536",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[1].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0537",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[2].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0538",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[3].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0539",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[3].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0540",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[3].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0541",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[3].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0542",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[3].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0543",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[3].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0544",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[3].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0545",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[3].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0546",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[3].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0547",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[3].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0548",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[3].items[10] missing evidenceHint"
+    },
+    {
+      "id": "FS-0549",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[4].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0550",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[4].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0551",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[4].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0552",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[4].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0553",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[4].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0554",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[4].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0555",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[5].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0556",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[5].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0557",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[5].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0558",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[5].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0559",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[5].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0560",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[6].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0561",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-legal-administration.json",
+      "message": "subsection[6].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0562",
+      "severity": "major",
+      "rule": "lastVerified-stale-inspection",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "lastVerified is 28.1 months old, exceeds 12-month inspection stale threshold",
+      "snippet": "lastVerified: 2024-01-11"
+    },
+    {
+      "id": "FS-0563",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0564",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0565",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0566",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0567",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[0].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0568",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[0].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0569",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[1].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0570",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[1].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0571",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[1].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0572",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[1].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0573",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[1].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0574",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[1].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0575",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[1].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0576",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[2].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0577",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[2].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0578",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[2].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0579",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[2].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0580",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[2].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0581",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[2].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0582",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[2].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0583",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[2].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0584",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0585",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0586",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0587",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0588",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0589",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0590",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0591",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0592",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0593",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0594",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[10] missing evidenceHint"
+    },
+    {
+      "id": "FS-0595",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[11] missing evidenceHint"
+    },
+    {
+      "id": "FS-0596",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[12] missing evidenceHint"
+    },
+    {
+      "id": "FS-0597",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[13] missing evidenceHint"
+    },
+    {
+      "id": "FS-0598",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[14] missing evidenceHint"
+    },
+    {
+      "id": "FS-0599",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[15] missing evidenceHint"
+    },
+    {
+      "id": "FS-0600",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[3].items[16] missing evidenceHint"
+    },
+    {
+      "id": "FS-0601",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[4].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0602",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[4].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0603",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[4].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0604",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[4].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0605",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0606",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0607",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0608",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0609",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0610",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0611",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0612",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0613",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0614",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0615",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[10] missing evidenceHint"
+    },
+    {
+      "id": "FS-0616",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[11] missing evidenceHint"
+    },
+    {
+      "id": "FS-0617",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[12] missing evidenceHint"
+    },
+    {
+      "id": "FS-0618",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[13] missing evidenceHint"
+    },
+    {
+      "id": "FS-0619",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[14] missing evidenceHint"
+    },
+    {
+      "id": "FS-0620",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[15] missing evidenceHint"
+    },
+    {
+      "id": "FS-0621",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[5].items[16] missing evidenceHint"
+    },
+    {
+      "id": "FS-0622",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[6].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0623",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[6].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0624",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[6].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0625",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[7].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0626",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[7].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0627",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[7].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0628",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[8].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0629",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[8].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0630",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[8].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0631",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[8].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0632",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[8].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0633",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[8].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0634",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/igmc/5800.16-victim-and-witness-assistance-program.json",
+      "message": "subsection[8].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0635",
+      "severity": "major",
+      "rule": "inspection-missing-sponsor",
+      "file": "content/inspections/mcaat/admin-audit.json",
+      "message": "inspection missing prompt-required field 'sponsor'"
+    },
+    {
+      "id": "FS-0636",
+      "severity": "major",
+      "rule": "inspection-missing-effectiveDate",
+      "file": "content/inspections/mcaat/admin-audit.json",
+      "message": "inspection missing prompt-required field 'effectiveDate'"
+    },
+    {
+      "id": "FS-0637",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-audit.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0638",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-audit.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0639",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-audit.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0640",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-audit.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0641",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-audit.json",
+      "message": "subsection[0].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0642",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-audit.json",
+      "message": "subsection[0].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0643",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-audit.json",
+      "message": "subsection[0].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0644",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-audit.json",
+      "message": "subsection[1].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0645",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-audit.json",
+      "message": "subsection[1].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0646",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-audit.json",
+      "message": "subsection[1].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0647",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-audit.json",
+      "message": "subsection[1].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0648",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-audit.json",
+      "message": "subsection[1].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0649",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-audit.json",
+      "message": "subsection[1].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0650",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-audit.json",
+      "message": "subsection[1].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0651",
+      "severity": "major",
+      "rule": "inspection-missing-sponsor",
+      "file": "content/inspections/mcaat/admin-defense-travel-system.json",
+      "message": "inspection missing prompt-required field 'sponsor'"
+    },
+    {
+      "id": "FS-0652",
+      "severity": "major",
+      "rule": "inspection-missing-effectiveDate",
+      "file": "content/inspections/mcaat/admin-defense-travel-system.json",
+      "message": "inspection missing prompt-required field 'effectiveDate'"
+    },
+    {
+      "id": "FS-0653",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-defense-travel-system.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0654",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-defense-travel-system.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0655",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-defense-travel-system.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0656",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-defense-travel-system.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0657",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-defense-travel-system.json",
+      "message": "subsection[1].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0658",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-defense-travel-system.json",
+      "message": "subsection[1].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0659",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-defense-travel-system.json",
+      "message": "subsection[1].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0660",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-defense-travel-system.json",
+      "message": "subsection[1].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0661",
+      "severity": "major",
+      "rule": "inspection-missing-sponsor",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "inspection missing prompt-required field 'sponsor'"
+    },
+    {
+      "id": "FS-0662",
+      "severity": "major",
+      "rule": "inspection-missing-effectiveDate",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "inspection missing prompt-required field 'effectiveDate'"
+    },
+    {
+      "id": "FS-0663",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0664",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0665",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0666",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0667",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0668",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0669",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0670",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0671",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0672",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0673",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[10] missing evidenceHint"
+    },
+    {
+      "id": "FS-0674",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[11] missing evidenceHint"
+    },
+    {
+      "id": "FS-0675",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[12] missing evidenceHint"
+    },
+    {
+      "id": "FS-0676",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[13] missing evidenceHint"
+    },
+    {
+      "id": "FS-0677",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[14] missing evidenceHint"
+    },
+    {
+      "id": "FS-0678",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[15] missing evidenceHint"
+    },
+    {
+      "id": "FS-0679",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[16] missing evidenceHint"
+    },
+    {
+      "id": "FS-0680",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[17] missing evidenceHint"
+    },
+    {
+      "id": "FS-0681",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[18] missing evidenceHint"
+    },
+    {
+      "id": "FS-0682",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[0].items[19] missing evidenceHint"
+    },
+    {
+      "id": "FS-0683",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0684",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0685",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0686",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0687",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0688",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0689",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0690",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0691",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0692",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0693",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[10] missing evidenceHint"
+    },
+    {
+      "id": "FS-0694",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[11] missing evidenceHint"
+    },
+    {
+      "id": "FS-0695",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[12] missing evidenceHint"
+    },
+    {
+      "id": "FS-0696",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[13] missing evidenceHint"
+    },
+    {
+      "id": "FS-0697",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[14] missing evidenceHint"
+    },
+    {
+      "id": "FS-0698",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[15] missing evidenceHint"
+    },
+    {
+      "id": "FS-0699",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[16] missing evidenceHint"
+    },
+    {
+      "id": "FS-0700",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[17] missing evidenceHint"
+    },
+    {
+      "id": "FS-0701",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[18] missing evidenceHint"
+    },
+    {
+      "id": "FS-0702",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[19] missing evidenceHint"
+    },
+    {
+      "id": "FS-0703",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[20] missing evidenceHint"
+    },
+    {
+      "id": "FS-0704",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[21] missing evidenceHint"
+    },
+    {
+      "id": "FS-0705",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[1].items[22] missing evidenceHint"
+    },
+    {
+      "id": "FS-0706",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[2].items[0] missing evidenceHint"
+    },
+    {
+      "id": "FS-0707",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[2].items[1] missing evidenceHint"
+    },
+    {
+      "id": "FS-0708",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[2].items[2] missing evidenceHint"
+    },
+    {
+      "id": "FS-0709",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[2].items[3] missing evidenceHint"
+    },
+    {
+      "id": "FS-0710",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[2].items[4] missing evidenceHint"
+    },
+    {
+      "id": "FS-0711",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[2].items[5] missing evidenceHint"
+    },
+    {
+      "id": "FS-0712",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[2].items[6] missing evidenceHint"
+    },
+    {
+      "id": "FS-0713",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[2].items[7] missing evidenceHint"
+    },
+    {
+      "id": "FS-0714",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[2].items[8] missing evidenceHint"
+    },
+    {
+      "id": "FS-0715",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[2].items[9] missing evidenceHint"
+    },
+    {
+      "id": "FS-0716",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[2].items[10] missing evidenceHint"
+    },
+    {
+      "id": "FS-0717",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[2].items[11] missing evidenceHint"
+    },
+    {
+      "id": "FS-0718",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[2].items[12] missing evidenceHint"
+    },
+    {
+      "id": "FS-0719",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[2].items[13] missing evidenceHint"
+    },
+    {
+      "id": "FS-0720",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[2].items[14] missing evidenceHint"
+    },
+    {
+      "id": "FS-0721",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint",
+      "file": "content/inspections/mcaat/admin-deployments-exercises-operations.json",
+      "message": "subsection[2].items[15] missing evidenceHint"
+    },
+    {
+      "id": "FS-0722",
+      "severity": "major",
+      "rule": "inspection-missing-sponsor",
+      "file": "content/inspections/mcaat/admin-inbound-management-gains.json",
+      "message": "inspection missing prompt-required field 'sponsor'"
+    },
+    {
+      "id": "FS-0723",
+      "severity": "major",
+      "rule": "inspection-missing-effectiveDate",
+      "file": "content/inspections/mcaat/admin-inbound-management-gains.json",
+      "message": "inspection missing prompt-required field 'effectiveDate'"
+    },
+    {
+      "id": "FS-9000",
+      "severity": "major",
+      "rule": "inspection-item-missing-evidenceHint-rollup",
+      "file": "<rollup>",
+      "message": "476 additional findings of rule 'inspection-item-missing-evidenceHint' truncated. Examples shown in snippet.",
+      "snippet": "content/inspections/mcaat/admin-inbound-management-gains.json | content/inspections/mcaat/admin-legal.json | content/inspections/mcaat/admin-milpay.json | content/inspections/mcaat/admin-outbound-management.json | content/inspections/mcaat/admin-promotions.json"
+    },
+    {
+      "id": "FS-9001",
+      "severity": "major",
+      "rule": "inspection-missing-sponsor-rollup",
+      "file": "<rollup>",
+      "message": "14 additional findings of rule 'inspection-missing-sponsor' truncated. Examples shown in snippet.",
+      "snippet": "content/inspections/mcaat/admin-legal.json | content/inspections/mcaat/admin-milpay.json | content/inspections/mcaat/admin-outbound-management.json | content/inspections/mcaat/admin-promotions.json | content/inspections/mcaat/admin-reserve-pay.json"
+    },
+    {
+      "id": "FS-9002",
+      "severity": "major",
+      "rule": "inspection-missing-effectiveDate-rollup",
+      "file": "<rollup>",
+      "message": "14 additional findings of rule 'inspection-missing-effectiveDate' truncated. Examples shown in snippet.",
+      "snippet": "content/inspections/mcaat/admin-legal.json | content/inspections/mcaat/admin-milpay.json | content/inspections/mcaat/admin-outbound-management.json | content/inspections/mcaat/admin-promotions.json | content/inspections/mcaat/admin-reserve-pay.json"
+    },
+    {
+      "id": "FS-9003",
+      "severity": "major",
+      "rule": "lastVerified-stale-rollup",
+      "file": "<rollup>",
+      "message": "91 additional findings of rule 'lastVerified-stale' truncated. Examples shown in snippet.",
+      "snippet": "content/videos/a-comprehensive-guide-to-maximizing-maradmin-searchability.mdx | content/videos/accessing-training-guides.mdx | content/videos/accessions.mdx | content/videos/admin-dashboard-members-tab.mdx | content/videos/admin-dashboard-occasions-tab.mdx"
+    },
+    {
+      "id": "FS-9004",
+      "severity": "minor",
+      "rule": "lastVerified-aging-inspection-rollup",
+      "file": "<rollup>",
+      "message": "4 additional findings of rule 'lastVerified-aging-inspection' truncated. Examples shown in snippet.",
+      "snippet": "content/inspections/igmc/1050-leave-liberty-and-administrative-absence.json | content/inspections/igmc/1650-military-awards.json | content/inspections/igmc/5210-records-management.json | content/inspections/igmc/5800.16-legal-administration.json"
+    },
+    {
+      "id": "FS-9005",
+      "severity": "minor",
+      "rule": "lastVerified-aging-rollup",
+      "file": "<rollup>",
+      "message": "135 additional findings of rule 'lastVerified-aging' truncated. Examples shown in snippet.",
+      "snippet": "content/videos/a-business-model-for-the-ages.mdx | content/videos/admin-dashboard-archive-tab.mdx | content/videos/anatomy-of-a-citation.mdx | content/videos/and-and-or-functions.mdx | content/videos/approver-management.mdx"
+    },
+    {
+      "id": "FS-9006",
+      "severity": "nit",
+      "rule": "utf8-bom-present-rollup",
+      "file": "<rollup>",
+      "message": "13 additional findings of rule 'utf8-bom-present' truncated. Examples shown in snippet.",
+      "snippet": "content/leader/awards-choosing-the-award.mdx | content/leader/awards-citation-mechanics.mdx | content/leader/awards-combat-action-ribbon.mdx | content/leader/awards-drafting-narrative.mdx | content/leader/awards-end-of-tour-timing.mdx"
+    },
+    {
+      "id": "FS-9007",
+      "severity": "nit",
+      "rule": "missing-optional-collection-dir-rollup",
+      "file": "<rollup>",
+      "message": "6 additional findings of rule 'missing-optional-collection-dir' truncated. Examples shown in snippet.",
+      "snippet": "content/links/ | content/policies/ | content/references/ | content/reports/ | content/situations/"
+    }
+  ]
+}

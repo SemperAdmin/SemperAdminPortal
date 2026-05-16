@@ -1,0 +1,1546 @@
+{
+  "dimension": "ui-tokens-components",
+  "generatedAt": "2026-05-15T23:43:28Z",
+  "repoCommit": "3c8cb069f83323c3d87e251808635930f7b1b4bd",
+  "summary": {
+    "counts": {
+      "blocker": 0,
+      "major": 3,
+      "minor": 33,
+      "nit": 80
+    },
+    "filesScanned": 152,
+    "notes": "Static analysis only. No build, lint, or sync run. Hex sweep ignores src/app/globals.css, src/app/styleguide/page.tsx, src/__tests__, *.test.* and *.spec.*. Address-string false positives in src/lib/directives/units.ts (#102 etc.) excluded. Phase 6 carry-over for Badge migration is acknowledged (CLAUDE.md Section 9). PageHeader is missing on three of four per-role detail pages (marines, leader, admin) - commander is the only one wired correctly. Spacing-scale check uses Tailwind 4 numeric units; allowed set {1,2,3,4,6,8,12,16} corresponds to the 4/8/12/16/24/32/48/64 px scale."
+  },
+  "findings": [
+    {
+      "id": "UI-0001",
+      "severity": "major",
+      "rule": "missing-page-header",
+      "file": "src/app/admin/[unitType]/[topic]/[slug]/page.tsx",
+      "line": 114,
+      "snippet": "ad-hoc <h1 className=\"text-4xl font-bold tracking-tight\" style={{ fontFamily: \"var(--font-display)\" }}>",
+      "message": "Detail page does not import or render PageHeader from @/components/domain/page-header. Hand-rolled meta row plus h1 violates the locked four-line page header pattern.",
+      "fix": "Replace the hand-rolled meta-row plus h1 plus summary block with <PageHeader> wired to the same fields.",
+      "references": [
+        "CLAUDE.md Section 3.8 Page Header Pattern",
+        "redesign/Semper-Admin-Portal-Redesign-Spec.md"
+      ]
+    },
+    {
+      "id": "UI-0002",
+      "severity": "major",
+      "rule": "missing-page-header",
+      "file": "src/app/leader/[topic]/[slug]/page.tsx",
+      "line": 90,
+      "snippet": "ad-hoc <h1 className=\"text-4xl font-bold tracking-tight\" style={{ fontFamily: \"var(--font-display)\" }}>",
+      "message": "Detail page does not import or render PageHeader from @/components/domain/page-header. Hand-rolled meta row plus h1 violates the locked four-line page header pattern.",
+      "fix": "Replace the hand-rolled meta-row plus h1 plus summary block with <PageHeader> wired to the same fields.",
+      "references": [
+        "CLAUDE.md Section 3.8 Page Header Pattern",
+        "redesign/Semper-Admin-Portal-Redesign-Spec.md"
+      ]
+    },
+    {
+      "id": "UI-0003",
+      "severity": "major",
+      "rule": "missing-page-header",
+      "file": "src/app/marines/[topic]/[slug]/page.tsx",
+      "line": 109,
+      "snippet": "ad-hoc <h1 className=\"text-4xl font-bold tracking-tight\" style={{ fontFamily: \"var(--font-display)\" }}>",
+      "message": "Detail page does not import or render PageHeader from @/components/domain/page-header. Hand-rolled meta row plus h1 violates the locked four-line page header pattern.",
+      "fix": "Replace the hand-rolled meta-row plus h1 plus summary block with <PageHeader> wired to the same fields.",
+      "references": [
+        "CLAUDE.md Section 3.8 Page Header Pattern",
+        "redesign/Semper-Admin-Portal-Redesign-Spec.md"
+      ]
+    },
+    {
+      "id": "UI-0004",
+      "severity": "minor",
+      "rule": "bebas-neue-on-h2",
+      "file": "src/app/about/page.tsx",
+      "line": 29,
+      "snippet": "<h2 className=\"mt-8 text-2xl font-bold tracking-tight\" style={{ fontFamily: \"var(--font-display)\" }}>",
+      "message": "Bebas Neue (font-display / var(--font-display)) applied to h2 in body content. Per spec, Bebas Neue is reserved for hero h1, role card h3, and PageHeader h1. H2 takes Inter 22/700.",
+      "fix": "Drop the inline font-family override and the font-display class so the h2 renders as Inter 22/700.",
+      "references": [
+        "CLAUDE.md Section 3.3 Typography"
+      ]
+    },
+    {
+      "id": "UI-0005",
+      "severity": "minor",
+      "rule": "bebas-neue-on-h2",
+      "file": "src/app/about/page.tsx",
+      "line": 36,
+      "snippet": "<h2 className=\"mt-8 text-2xl font-bold tracking-tight\" style={{ fontFamily: \"var(--font-display)\" }}>",
+      "message": "Bebas Neue (font-display / var(--font-display)) applied to h2 in body content. Per spec, Bebas Neue is reserved for hero h1, role card h3, and PageHeader h1. H2 takes Inter 22/700.",
+      "fix": "Drop the inline font-family override and the font-display class so the h2 renders as Inter 22/700.",
+      "references": [
+        "CLAUDE.md Section 3.3 Typography"
+      ]
+    },
+    {
+      "id": "UI-0006",
+      "severity": "minor",
+      "rule": "bebas-neue-on-h2",
+      "file": "src/app/about/page.tsx",
+      "line": 53,
+      "snippet": "<h2 className=\"mt-8 text-2xl font-bold tracking-tight\" style={{ fontFamily: \"var(--font-display)\" }}>",
+      "message": "Bebas Neue (font-display / var(--font-display)) applied to h2 in body content. Per spec, Bebas Neue is reserved for hero h1, role card h3, and PageHeader h1. H2 takes Inter 22/700.",
+      "fix": "Drop the inline font-family override and the font-display class so the h2 renders as Inter 22/700.",
+      "references": [
+        "CLAUDE.md Section 3.3 Typography"
+      ]
+    },
+    {
+      "id": "UI-0007",
+      "severity": "minor",
+      "rule": "bebas-neue-on-h2",
+      "file": "src/app/about/page.tsx",
+      "line": 63,
+      "snippet": "<h2 className=\"mt-8 text-2xl font-bold tracking-tight\" style={{ fontFamily: \"var(--font-display)\" }}>",
+      "message": "Bebas Neue (font-display / var(--font-display)) applied to h2 in body content. Per spec, Bebas Neue is reserved for hero h1, role card h3, and PageHeader h1. H2 takes Inter 22/700.",
+      "fix": "Drop the inline font-family override and the font-display class so the h2 renders as Inter 22/700.",
+      "references": [
+        "CLAUDE.md Section 3.3 Typography"
+      ]
+    },
+    {
+      "id": "UI-0008",
+      "severity": "minor",
+      "rule": "bebas-neue-on-h2",
+      "file": "src/app/admin/page.tsx",
+      "line": 105,
+      "snippet": "<h2 className=\"mt-1 font-display text-2xl tracking-wide\" style={{ fontFamily: \"var(--font-display)\" }}>",
+      "message": "Bebas Neue (font-display / var(--font-display)) applied to h2 in body content. Per spec, Bebas Neue is reserved for hero h1, role card h3, and PageHeader h1. H2 takes Inter 22/700.",
+      "fix": "Drop the inline font-family override and the font-display class so the h2 renders as Inter 22/700.",
+      "references": [
+        "CLAUDE.md Section 3.3 Typography"
+      ]
+    },
+    {
+      "id": "UI-0009",
+      "severity": "minor",
+      "rule": "no-hardcoded-hex",
+      "file": "src/app/inspections/mcaat/[section]/page.tsx",
+      "line": 177,
+      "snippet": "<span className=\"inline-flex items-center gap-1 font-semibold text-[var(--color-marine-blue)] dark:text-[#B5C4DC]\">",
+      "message": "Hardcoded hex value #B5C4DC outside src/app/globals.css. Reference a token from globals.css.",
+      "fix": "Define a semantic token in globals.css and reference it via var(--token-name).",
+      "references": [
+        "CLAUDE.md Section 3.2",
+        "Section 5: Tokens in src/app/globals.css. No hardcoded hex outside tests."
+      ]
+    },
+    {
+      "id": "UI-0010",
+      "severity": "minor",
+      "rule": "bebas-neue-on-h2",
+      "file": "src/app/inspections/mcaat/page.tsx",
+      "line": 112,
+      "snippet": "<h2 className=\"mt-1 font-display text-2xl tracking-wide\" style={{ fontFamily: \"var(--font-display)\" }}>",
+      "message": "Bebas Neue (font-display / var(--font-display)) applied to h2 in body content. Per spec, Bebas Neue is reserved for hero h1, role card h3, and PageHeader h1. H2 takes Inter 22/700.",
+      "fix": "Drop the inline font-family override and the font-display class so the h2 renders as Inter 22/700.",
+      "references": [
+        "CLAUDE.md Section 3.3 Typography"
+      ]
+    },
+    {
+      "id": "UI-0011",
+      "severity": "minor",
+      "rule": "no-hardcoded-hex",
+      "file": "src/app/inspections/mcaat/page.tsx",
+      "line": 122,
+      "snippet": "<span className=\"inline-flex items-center gap-1 font-semibold text-[var(--color-marine-blue)] dark:text-[#B5C4DC]\">",
+      "message": "Hardcoded hex value #B5C4DC outside src/app/globals.css. Reference a token from globals.css.",
+      "fix": "Define a semantic token in globals.css and reference it via var(--token-name).",
+      "references": [
+        "CLAUDE.md Section 3.2",
+        "Section 5: Tokens in src/app/globals.css. No hardcoded hex outside tests."
+      ]
+    },
+    {
+      "id": "UI-0012",
+      "severity": "minor",
+      "rule": "bebas-neue-on-h2",
+      "file": "src/app/inspections/page.tsx",
+      "line": 176,
+      "snippet": "<h2 className=\"mt-1 font-display text-2xl tracking-wide\" style={{ fontFamily: \"var(--font-display)\" }}>",
+      "message": "Bebas Neue (font-display / var(--font-display)) applied to h2 in body content. Per spec, Bebas Neue is reserved for hero h1, role card h3, and PageHeader h1. H2 takes Inter 22/700.",
+      "fix": "Drop the inline font-family override and the font-display class so the h2 renders as Inter 22/700.",
+      "references": [
+        "CLAUDE.md Section 3.3 Typography"
+      ]
+    },
+    {
+      "id": "UI-0013",
+      "severity": "minor",
+      "rule": "no-hardcoded-hex",
+      "file": "src/app/layout.tsx",
+      "line": 37,
+      "snippet": "{ media: \"(prefers-color-scheme: light)\", color: \"#ffffff\" },",
+      "message": "Hardcoded hex value #ffffff outside src/app/globals.css. Reference a token from globals.css.",
+      "fix": "Define a semantic token in globals.css and reference it via var(--token-name).",
+      "references": [
+        "CLAUDE.md Section 3.2",
+        "Section 5: Tokens in src/app/globals.css. No hardcoded hex outside tests."
+      ]
+    },
+    {
+      "id": "UI-0014",
+      "severity": "minor",
+      "rule": "no-hardcoded-hex",
+      "file": "src/app/layout.tsx",
+      "line": 38,
+      "snippet": "{ media: \"(prefers-color-scheme: dark)\", color: \"#0a0f1c\" },",
+      "message": "Hardcoded hex value #0a0f1c outside src/app/globals.css. Reference a token from globals.css.",
+      "fix": "Define a semantic token in globals.css and reference it via var(--token-name).",
+      "references": [
+        "CLAUDE.md Section 3.2",
+        "Section 5: Tokens in src/app/globals.css. No hardcoded hex outside tests."
+      ]
+    },
+    {
+      "id": "UI-0015",
+      "severity": "minor",
+      "rule": "no-hardcoded-hex",
+      "file": "src/app/videos/page.tsx",
+      "line": 64,
+      "snippet": "border-[color-mix(in_srgb,#dc2626_35%,transparent)] bg-[color-mix(in_srgb,#dc2626_10%,transparent)] ... text-[#f87171] ... hover:bg-[#dc2626] ... hover:border-[#dc2626]",
+      "message": "Hardcoded hex value #dc2626 / #f87171 outside src/app/globals.css. Reference a token from globals.css.",
+      "fix": "Define a semantic token in globals.css and reference it via var(--token-name).",
+      "references": [
+        "CLAUDE.md Section 3.2",
+        "Section 5: Tokens in src/app/globals.css. No hardcoded hex outside tests."
+      ]
+    },
+    {
+      "id": "UI-0016",
+      "severity": "minor",
+      "rule": "no-hardcoded-hex",
+      "file": "src/app/videos/page.tsx",
+      "line": 111,
+      "snippet": "group-hover:bg-[color-mix(in_srgb,var(--color-usmc-scarlet)_85%,#000)]",
+      "message": "Hardcoded hex value #000 outside src/app/globals.css. Reference a token from globals.css.",
+      "fix": "Define a semantic token in globals.css and reference it via var(--token-name).",
+      "references": [
+        "CLAUDE.md Section 3.2",
+        "Section 5: Tokens in src/app/globals.css. No hardcoded hex outside tests."
+      ]
+    },
+    {
+      "id": "UI-0017",
+      "severity": "minor",
+      "rule": "deprecated-badge-import",
+      "file": "src/components/domain/docx-export-button.tsx",
+      "line": 6,
+      "snippet": "import { Badge } from \"@/components/ui/badge\";",
+      "message": "Badge is deprecated per CLAUDE.md Section 3.7. Migrate to Pill at src/components/ui/pill.tsx.",
+      "fix": "Replace `import { Badge }` with `import { Pill }` and update JSX accordingly. Phase 6 carry-over (CLAUDE.md Section 9) tracks this migration.",
+      "references": [
+        "CLAUDE.md Section 3.7",
+        "CLAUDE.md Section 9 Phase 6 Carry-Over"
+      ]
+    },
+    {
+      "id": "UI-0018",
+      "severity": "minor",
+      "rule": "deprecated-badge-import",
+      "file": "src/components/domain/docx-export-button.tsx",
+      "line": 75,
+      "snippet": "<Badge variant=\"muted\">Lazy-loaded bundle</Badge>",
+      "message": "Badge JSX in non-deprecated path. Migrate to Pill (src/components/ui/pill.tsx).",
+      "fix": "Replace `<Badge variant=...>` with `<Pill variant=...>`.",
+      "references": [
+        "CLAUDE.md Section 3.7"
+      ]
+    },
+    {
+      "id": "UI-0019",
+      "severity": "minor",
+      "rule": "prefer-callout",
+      "file": "src/components/domain/ipac-routing-callout.tsx",
+      "line": 85,
+      "snippet": "<aside role=\"note\" aria-label={`IPAC routing - ${cfg.label}`} className={cn(\"my-5 rounded-r-[var(--radius-sm)] border-l-4 px-4 py-3 text-sm\", className)}",
+      "message": "Standalone <aside> with hand-rolled border-l-4 callout styling outside src/components/domain/callout.tsx. Should compose Callout with a custom variant or eyebrow.",
+      "fix": "Refactor IPACRoutingCallout to wrap <Callout> and pass a domain-specific eyebrow plus icon, instead of duplicating callout markup.",
+      "references": [
+        "CLAUDE.md Section 3.7 Domain components"
+      ]
+    },
+    {
+      "id": "UI-0020",
+      "severity": "minor",
+      "rule": "deprecated-badge-import",
+      "file": "src/components/domain/naval-letter-builder.tsx",
+      "line": 22,
+      "snippet": "import { Badge } from \"@/components/ui/badge\";",
+      "message": "Badge is deprecated per CLAUDE.md Section 3.7. Migrate to Pill at src/components/ui/pill.tsx.",
+      "fix": "Replace `import { Badge }` with `import { Pill }` and update JSX accordingly. Phase 6 carry-over (CLAUDE.md Section 9) tracks this migration.",
+      "references": [
+        "CLAUDE.md Section 3.7",
+        "CLAUDE.md Section 9 Phase 6 Carry-Over"
+      ]
+    },
+    {
+      "id": "UI-0021",
+      "severity": "minor",
+      "rule": "deprecated-badge-import",
+      "file": "src/components/domain/naval-letter-builder.tsx",
+      "line": 505,
+      "snippet": "<Badge variant=\"muted\">({String.fromCharCode(97 + i)})</Badge>",
+      "message": "Badge JSX in non-deprecated path. Migrate to Pill (src/components/ui/pill.tsx).",
+      "fix": "Replace `<Badge variant=...>` with `<Pill variant=...>`.",
+      "references": [
+        "CLAUDE.md Section 3.7"
+      ]
+    },
+    {
+      "id": "UI-0022",
+      "severity": "minor",
+      "rule": "deprecated-badge-import",
+      "file": "src/components/domain/naval-letter-builder.tsx",
+      "line": 525,
+      "snippet": "<Badge variant=\"muted\">({i + 1})</Badge>",
+      "message": "Badge JSX in non-deprecated path. Migrate to Pill (src/components/ui/pill.tsx).",
+      "fix": "Replace `<Badge variant=...>` with `<Pill variant=...>`.",
+      "references": [
+        "CLAUDE.md Section 3.7"
+      ]
+    },
+    {
+      "id": "UI-0023",
+      "severity": "minor",
+      "rule": "deprecated-badge-import",
+      "file": "src/components/domain/naval-letter-builder.tsx",
+      "line": 564,
+      "snippet": "<Badge variant=\"secondary\">Level {b.level}</Badge>",
+      "message": "Badge JSX in non-deprecated path. Migrate to Pill (src/components/ui/pill.tsx).",
+      "fix": "Replace `<Badge variant=...>` with `<Pill variant=...>`.",
+      "references": [
+        "CLAUDE.md Section 3.7"
+      ]
+    },
+    {
+      "id": "UI-0024",
+      "severity": "minor",
+      "rule": "deprecated-badge-import",
+      "file": "src/components/domain/pdf-letter-builder.tsx",
+      "line": 6,
+      "snippet": "import { Badge } from \"@/components/ui/badge\";",
+      "message": "Badge is deprecated per CLAUDE.md Section 3.7. Migrate to Pill at src/components/ui/pill.tsx.",
+      "fix": "Replace `import { Badge }` with `import { Pill }` and update JSX accordingly. Phase 6 carry-over (CLAUDE.md Section 9) tracks this migration.",
+      "references": [
+        "CLAUDE.md Section 3.7",
+        "CLAUDE.md Section 9 Phase 6 Carry-Over"
+      ]
+    },
+    {
+      "id": "UI-0025",
+      "severity": "minor",
+      "rule": "no-hardcoded-hex",
+      "file": "src/components/domain/pdf-letter-builder.tsx",
+      "line": 84,
+      "snippet": "meta: { marginBottom: 14, color: \"#404350\" },",
+      "message": "Hardcoded hex value #404350 outside src/app/globals.css. Reference a token from globals.css.",
+      "fix": "Define a semantic token in globals.css and reference it via var(--token-name).",
+      "references": [
+        "CLAUDE.md Section 3.2",
+        "Section 5: Tokens in src/app/globals.css. No hardcoded hex outside tests."
+      ]
+    },
+    {
+      "id": "UI-0026",
+      "severity": "minor",
+      "rule": "no-hardcoded-hex",
+      "file": "src/components/domain/pdf-letter-builder.tsx",
+      "line": 87,
+      "snippet": "rule: { borderBottom: 1, borderColor: \"#C8102E\", marginVertical: 8 },",
+      "message": "Hardcoded hex value #C8102E outside src/app/globals.css. Reference a token from globals.css.",
+      "fix": "Define a semantic token in globals.css and reference it via var(--token-name).",
+      "references": [
+        "CLAUDE.md Section 3.2",
+        "Section 5: Tokens in src/app/globals.css. No hardcoded hex outside tests."
+      ]
+    },
+    {
+      "id": "UI-0027",
+      "severity": "minor",
+      "rule": "deprecated-badge-import",
+      "file": "src/components/domain/pdf-letter-builder.tsx",
+      "line": 123,
+      "snippet": "<Badge variant=\"muted\">Lazy-loaded bundle</Badge>",
+      "message": "Badge JSX in non-deprecated path. Migrate to Pill (src/components/ui/pill.tsx).",
+      "fix": "Replace `<Badge variant=...>` with `<Pill variant=...>`.",
+      "references": [
+        "CLAUDE.md Section 3.7"
+      ]
+    },
+    {
+      "id": "UI-0028",
+      "severity": "minor",
+      "rule": "deprecated-badge-import",
+      "file": "src/components/domain/video-embed.tsx",
+      "line": 6,
+      "snippet": "import { Badge } from \"@/components/ui/badge\";",
+      "message": "Badge is deprecated per CLAUDE.md Section 3.7. Migrate to Pill at src/components/ui/pill.tsx.",
+      "fix": "Replace `import { Badge }` with `import { Pill }` and update JSX accordingly. Phase 6 carry-over (CLAUDE.md Section 9) tracks this migration.",
+      "references": [
+        "CLAUDE.md Section 3.7",
+        "CLAUDE.md Section 9 Phase 6 Carry-Over"
+      ]
+    },
+    {
+      "id": "UI-0029",
+      "severity": "minor",
+      "rule": "deprecated-badge-import",
+      "file": "src/components/domain/video-embed.tsx",
+      "line": 108,
+      "snippet": "<Badge variant=\"muted\">{fmt(durationSeconds)}</Badge>",
+      "message": "Badge JSX in non-deprecated path. Migrate to Pill (src/components/ui/pill.tsx).",
+      "fix": "Replace `<Badge variant=...>` with `<Pill variant=...>`.",
+      "references": [
+        "CLAUDE.md Section 3.7"
+      ]
+    },
+    {
+      "id": "UI-0030",
+      "severity": "minor",
+      "rule": "deprecated-badge-import",
+      "file": "src/components/shell/phase-placeholder.tsx",
+      "line": 5,
+      "snippet": "import { Badge } from \"@/components/ui/badge\";",
+      "message": "Badge is deprecated per CLAUDE.md Section 3.7. Migrate to Pill at src/components/ui/pill.tsx.",
+      "fix": "Replace `import { Badge }` with `import { Pill }` and update JSX accordingly. Phase 6 carry-over (CLAUDE.md Section 9) tracks this migration.",
+      "references": [
+        "CLAUDE.md Section 3.7",
+        "CLAUDE.md Section 9 Phase 6 Carry-Over"
+      ]
+    },
+    {
+      "id": "UI-0031",
+      "severity": "minor",
+      "rule": "deprecated-badge-import",
+      "file": "src/components/shell/phase-placeholder.tsx",
+      "line": 23,
+      "snippet": "<Badge variant=\"muted\">Phase {phase}</Badge>",
+      "message": "Badge JSX in non-deprecated path. Migrate to Pill (src/components/ui/pill.tsx).",
+      "fix": "Replace `<Badge variant=...>` with `<Pill variant=...>`.",
+      "references": [
+        "CLAUDE.md Section 3.7"
+      ]
+    },
+    {
+      "id": "UI-0032",
+      "severity": "minor",
+      "rule": "no-hardcoded-hex",
+      "file": "src/components/ui/pill.tsx",
+      "line": 20,
+      "snippet": "text-[var(--color-marine-blue)] dark:text-[#B5C4DC]",
+      "message": "Hardcoded hex value #B5C4DC outside src/app/globals.css. Reference a token from globals.css.",
+      "fix": "Define a semantic token in globals.css and reference it via var(--token-name).",
+      "references": [
+        "CLAUDE.md Section 3.2",
+        "Section 5: Tokens in src/app/globals.css. No hardcoded hex outside tests."
+      ]
+    },
+    {
+      "id": "UI-0033",
+      "severity": "minor",
+      "rule": "no-hardcoded-hex",
+      "file": "src/components/ui/pill.tsx",
+      "line": 22,
+      "snippet": "text-[#1F6940] dark:text-[#8FD4A8]",
+      "message": "Hardcoded hex value #1F6940 / #8FD4A8 outside src/app/globals.css. Reference a token from globals.css.",
+      "fix": "Define a semantic token in globals.css and reference it via var(--token-name).",
+      "references": [
+        "CLAUDE.md Section 3.2",
+        "Section 5: Tokens in src/app/globals.css. No hardcoded hex outside tests."
+      ]
+    },
+    {
+      "id": "UI-0034",
+      "severity": "minor",
+      "rule": "no-hardcoded-hex",
+      "file": "src/components/ui/pill.tsx",
+      "line": 24,
+      "snippet": "text-[#1F6940] dark:text-[#8FD4A8]",
+      "message": "Hardcoded hex value #1F6940 / #8FD4A8 outside src/app/globals.css. Reference a token from globals.css.",
+      "fix": "Define a semantic token in globals.css and reference it via var(--token-name).",
+      "references": [
+        "CLAUDE.md Section 3.2",
+        "Section 5: Tokens in src/app/globals.css. No hardcoded hex outside tests."
+      ]
+    },
+    {
+      "id": "UI-0035",
+      "severity": "minor",
+      "rule": "no-hardcoded-hex",
+      "file": "src/components/ui/pill.tsx",
+      "line": 26,
+      "snippet": "text-[#8A4F12] dark:text-[var(--color-brass-300)]",
+      "message": "Hardcoded hex value #8A4F12 outside src/app/globals.css. Reference a token from globals.css.",
+      "fix": "Define a semantic token in globals.css and reference it via var(--token-name).",
+      "references": [
+        "CLAUDE.md Section 3.2",
+        "Section 5: Tokens in src/app/globals.css. No hardcoded hex outside tests."
+      ]
+    },
+    {
+      "id": "UI-0036",
+      "severity": "minor",
+      "rule": "no-hardcoded-hex",
+      "file": "src/components/ui/pill.tsx",
+      "line": 28,
+      "snippet": "text-[#8A2424] dark:text-[#E68A93]",
+      "message": "Hardcoded hex value #8A2424 / #E68A93 outside src/app/globals.css. Reference a token from globals.css.",
+      "fix": "Define a semantic token in globals.css and reference it via var(--token-name).",
+      "references": [
+        "CLAUDE.md Section 3.2",
+        "Section 5: Tokens in src/app/globals.css. No hardcoded hex outside tests."
+      ]
+    },
+    {
+      "id": "UI-0037",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/about/page.tsx",
+      "line": 56,
+      "snippet": "<ul className=\"mt-2 list-disc pl-5 text-sm\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0038",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/admin/[unitType]/[topic]/[slug]/page.tsx",
+      "line": 199,
+      "snippet": "<ol className=\"mt-2 list-decimal space-y-1 pl-5 text-sm\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0039",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/admin/[unitType]/[topic]/[slug]/page.tsx",
+      "line": 265,
+      "snippet": "<ul className=\"mt-2 list-disc space-y-1 pl-5 text-sm\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0040",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/admin/[unitType]/[topic]/page.tsx",
+      "line": 112,
+      "snippet": "className=\"group flex items-start justify-between gap-4 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-5 transition-all duration-150 hover:-translate-y-0.5 h",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0041",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/admin/[unitType]/page.tsx",
+      "line": 177,
+      "snippet": "className=\"group relative flex flex-col overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-5 transition-all duration-200 hover:-translate-y-1 hover",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0042",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/admin/[unitType]/page.tsx",
+      "line": 241,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface-2)] p-6\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0043",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/admin/page.tsx",
+      "line": 125,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface-2)] p-6\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0044",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/citations/[id]/page.tsx",
+      "line": 168,
+      "snippet": "<section className=\"mt-10\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0045",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/commander/[topic]/[slug]/page.tsx",
+      "line": 117,
+      "snippet": "<ol className=\"mt-2 list-decimal space-y-1 pl-5 text-sm\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0046",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/commander/[topic]/[slug]/page.tsx",
+      "line": 134,
+      "snippet": "<ul className=\"mt-2 list-disc space-y-1 pl-5 text-sm\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0047",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/inspections/igmc/[programNumber]/[slug]/page.tsx",
+      "line": 129,
+      "snippet": "<section className=\"mb-6 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface-2)] p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0048",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/inspections/igmc/[programNumber]/[slug]/page.tsx",
+      "line": 160,
+      "snippet": "<AccordionContent className=\"space-y-4 pb-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0049",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/inspections/igmc/page.tsx",
+      "line": 122,
+      "snippet": "<div className=\"mb-5 mt-6 flex flex-col gap-3\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0050",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/inspections/igmc/page.tsx",
+      "line": 134,
+      "snippet": "className=\"pl-9\"",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0051",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/inspections/igmc/page.tsx",
+      "line": 169,
+      "snippet": "\"group relative flex flex-col gap-3 overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-5 transition-all\",",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0052",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/inspections/mcaat/[section]/[category]/page.tsx",
+      "line": 155,
+      "snippet": "<section className=\"mb-6 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface-2)] p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0053",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/inspections/mcaat/[section]/[category]/page.tsx",
+      "line": 191,
+      "snippet": "<AccordionContent className=\"space-y-4 pb-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0054",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/inspections/mcaat/[section]/page.tsx",
+      "line": 142,
+      "snippet": "\"group relative flex flex-col gap-3 overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-5 transition-all\",",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0055",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/inspections/page.tsx",
+      "line": 117,
+      "snippet": "<section className=\"mb-10 grid gap-4 sm:grid-cols-3\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0056",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/inspections/page.tsx",
+      "line": 149,
+      "snippet": "<div className=\"mt-10 grid gap-4 md:grid-cols-2\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0057",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/leader/[topic]/[slug]/page.tsx",
+      "line": 108,
+      "snippet": "<ol className=\"mt-2 list-decimal space-y-1 pl-5 text-sm\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0058",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/leader/[topic]/[slug]/page.tsx",
+      "line": 174,
+      "snippet": "<ul className=\"mt-2 list-disc space-y-1 pl-5 text-sm\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0059",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/leader/page.tsx",
+      "line": 153,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface-2)] p-6\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0060",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/links/page.tsx",
+      "line": 86,
+      "snippet": "\"group relative flex flex-col gap-3 overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-5 transition-all\",",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0061",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/loading.tsx",
+      "line": 19,
+      "snippet": "className=\"rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-5\"",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0062",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/[topic]/[slug]/page.tsx",
+      "line": 128,
+      "snippet": "<ol className=\"mt-2 list-decimal space-y-1 pl-5 text-sm\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0063",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/[topic]/[slug]/page.tsx",
+      "line": 194,
+      "snippet": "<ul className=\"mt-2 list-disc space-y-1 pl-5 text-sm\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0064",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/[topic]/page.tsx",
+      "line": 251,
+      "snippet": "<ol className=\"mt-2 list-decimal space-y-1 pl-5 text-sm\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0065",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/[topic]/page.tsx",
+      "line": 317,
+      "snippet": "<ul className=\"mt-2 list-disc space-y-1 pl-5 text-sm\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0066",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/artificial-intelligence/page.tsx",
+      "line": 147,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0067",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/awards/page.tsx",
+      "line": 132,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0068",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/dts/page.tsx",
+      "line": 132,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0069",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/education/page.tsx",
+      "line": 132,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0070",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/gtcc/page.tsx",
+      "line": 132,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0071",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/leave-and-liberty/page.tsx",
+      "line": 133,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0072",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/legal-services/page.tsx",
+      "line": 132,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0073",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/life-events/page.tsx",
+      "line": 132,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0074",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/marine-and-family-programs/page.tsx",
+      "line": 132,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0075",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/page.tsx",
+      "line": 191,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface-2)] p-6\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0076",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/pay-and-entitlements/page.tsx",
+      "line": 133,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0077",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/pcs/page.tsx",
+      "line": 132,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0078",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/performance-evaluation/page.tsx",
+      "line": 132,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0079",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/promotions/page.tsx",
+      "line": 132,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0080",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/reenlistments-and-extensions/page.tsx",
+      "line": 132,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0081",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/separations-and-retirement/page.tsx",
+      "line": 132,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0082",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/marines/tad/page.tsx",
+      "line": 132,
+      "snippet": "<section className=\"mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0083",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/page.tsx",
+      "line": 130,
+      "snippet": "<section className=\"ambient-bloom mb-10 pb-2\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0084",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/page.tsx",
+      "line": 193,
+      "snippet": "<section className=\"mb-14\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0085",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/page.tsx",
+      "line": 194,
+      "snippet": "<div className=\"mb-5 flex items-baseline justify-between gap-3\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0086",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/page.tsx",
+      "line": 213,
+      "snippet": "<section className=\"mb-14\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0087",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/page.tsx",
+      "line": 214,
+      "snippet": "<div className=\"mb-5 flex items-baseline justify-between gap-3\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0088",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/page.tsx",
+      "line": 266,
+      "snippet": "<section className=\"mb-10 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface-2)] p-6\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0089",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/reports/page.tsx",
+      "line": 87,
+      "snippet": "\"group relative flex flex-col gap-3 overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-5 transition-all\",",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0090",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/styleguide/page.tsx",
+      "line": 307,
+      "snippet": "<ul className=\"list-disc space-y-1 pl-5 text-sm\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0091",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/tools/page.tsx",
+      "line": 141,
+      "snippet": "\"group relative flex flex-col gap-3 overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-5 transition-all\",",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0092",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/videos/[slug]/page.tsx",
+      "line": 49,
+      "snippet": "<div className=\"flex gap-10 xl:gap-14\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0093",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/videos/[slug]/page.tsx",
+      "line": 86,
+      "snippet": "<div className=\"mt-10 border-t border-[var(--color-border)] pt-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0094",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/app/videos/page.tsx",
+      "line": 256,
+      "snippet": "className=\"w-full rounded-[var(--radius-button)] border border-[var(--color-border)] bg-[var(--color-surface-1)] py-2.5 pl-9 pr-9 text-[14px] text-[var(--color-foreground)] placeholder:text-[var(--col",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0095",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/domain/callout.tsx",
+      "line": 70,
+      "snippet": "\"my-5 rounded-r-[var(--radius-sm)] border-l-4 px-4 py-3 text-sm\",",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0096",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/domain/citations-browser.tsx",
+      "line": 59,
+      "snippet": "<div className=\"space-y-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0097",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/domain/citations-browser.tsx",
+      "line": 72,
+      "snippet": "className=\"w-full rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-surface-2)] py-2 pl-9 pr-3 text-sm placeholder:text-[var(--color-muted-foreground)] focus:border-[var(-",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0098",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/domain/compliance-dashboard.tsx",
+      "line": 74,
+      "snippet": "<div className=\"space-y-10\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0099",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/domain/cross-role-strip.tsx",
+      "line": 40,
+      "snippet": "\"mt-10 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface-2)] p-5\",",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0100",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/domain/filter-bar.tsx",
+      "line": 44,
+      "snippet": "\"mb-5 flex flex-wrap items-center gap-2 border-b border-[var(--color-border)] pb-3\",",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0101",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/domain/ipac-routing-callout.tsx",
+      "line": 89,
+      "snippet": "\"my-5 rounded-r-[var(--radius-sm)] border-l-4 px-4 py-3 text-sm\",",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0102",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/domain/mdx-content.tsx",
+      "line": 55,
+      "snippet": "\"[&_h2]:mt-8 [&_h2]:mb-3 [&_h2]:font-bold [&_h2]:text-2xl [&_h2]:tracking-tight [&_h2]:scroll-mt-24 [&_h2]:border-b [&_h2]:border-[var(--color-border)] [&_h2]:pb-2\",",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0103",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/domain/mdx-content.tsx",
+      "line": 56,
+      "snippet": "\"[&_h3]:mt-6 [&_h3]:mb-2 [&_h3]:text-lg [&_h3]:font-semibold [&_h3]:tracking-tight [&_h3]:scroll-mt-24\",",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0104",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/domain/obligation-card.tsx",
+      "line": 86,
+      "snippet": "\"group relative flex flex-col gap-3 overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-5 transition-all\",",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0105",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/domain/page-header.tsx",
+      "line": 47,
+      "snippet": "compact ? \"mb-5 pb-4\" : \"mb-8 pb-6\",",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0106",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/domain/stat-tile.tsx",
+      "line": 25,
+      "snippet": "\"group relative overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] p-5 shadow-[var(--shadow-sm)] transition-all\",",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0107",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/shell/app-shell.tsx",
+      "line": 59,
+      "snippet": "className=\"min-w-0 flex-1 px-1 pb-20 pt-6 sm:px-2 lg:pb-10 lg:pt-8\"",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0108",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/shell/phase-placeholder.tsx",
+      "line": 44,
+      "snippet": "<ul className=\"list-disc space-y-1.5 pl-5 text-sm\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0109",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/shell/role-picker-dialog.tsx",
+      "line": 72,
+      "snippet": "\"group relative flex flex-col items-start gap-2 overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-5 text-left transition-all\",",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0110",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/shell/side-nav.tsx",
+      "line": 67,
+      "snippet": "<div className=\"mt-5\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0111",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/shell/tree-nav.tsx",
+      "line": 43,
+      "snippet": "className={cn(\"flex flex-col gap-5\", className)}",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0112",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/shell/tree-nav.tsx",
+      "line": 164,
+      "snippet": "<ul className=\"ml-7 mt-0.5 flex flex-col gap-0.5 border-l border-dashed border-[var(--color-border)] pl-3\">",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0113",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/ui/card.tsx",
+      "line": 7,
+      "snippet": "* Default padding 20px (p-5). Tight variant 16px (p-4) for dense lists.",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0114",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/ui/card.tsx",
+      "line": 52,
+      "snippet": "className={cn(\"flex flex-col gap-1.5 px-5 pt-5 pb-3\", className)}",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0115",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/ui/card.tsx",
+      "line": 89,
+      "snippet": "<div ref={ref} className={cn(\"px-5 pb-5\", className)} {...props} />",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    },
+    {
+      "id": "UI-0116",
+      "severity": "nit",
+      "rule": "off-scale-spacing",
+      "file": "src/components/ui/card.tsx",
+      "line": 99,
+      "snippet": "className={cn(\"flex items-center px-5 pb-5 pt-0\", className)}",
+      "message": "Tailwind spacing utility outside the locked 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 scale (allowed unit set {1,2,3,4,6,8,12,16}).",
+      "fix": "Round to the nearest allowed unit. Example, mt-10 becomes mt-8 or mt-12, p-5 becomes p-4 or p-6.",
+      "references": [
+        "CLAUDE.md Section 3.4 Spacing and Radii"
+      ]
+    }
+  ]
+}

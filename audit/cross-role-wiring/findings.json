@@ -1,0 +1,215 @@
+{
+  "dimension": "cross-role-wiring",
+  "generatedAt": "2026-05-15T23:43:52Z",
+  "repoCommit": "3c8cb069f83323c3d87e251808635930f7b1b4bd",
+  "summary": {
+    "counts": {
+      "blocker": 0,
+      "major": 3,
+      "minor": 18,
+      "nit": 1
+    },
+    "filesScanned": 741,
+    "perRoleCoverage": {
+      "marines": {
+        "totalMdx": 221,
+        "withRelatedRoles": 219
+      },
+      "leader": {
+        "totalMdx": 88,
+        "withRelatedRoles": 73
+      },
+      "commander": {
+        "totalMdx": 46,
+        "withRelatedRoles": 46
+      },
+      "admin": {
+        "totalMdx": 386,
+        "withRelatedRoles": 385
+      }
+    },
+    "minorPreCap": {
+      "missingRelatedRoles": 18,
+      "inlineCrossRoleLinks": 0
+    },
+    "rollupTruncated": 0
+  },
+  "findings": [
+    {
+      "id": "CR-0001",
+      "severity": "major",
+      "rule": "detail-page-missing-cross-role-strip",
+      "file": "src/app/admin/[unitType]/[topic]/[slug]/page.tsx",
+      "message": "Detail page for role 'admin' does not import CrossRoleStrip from @/components/domain/cross-role-strip nor render <CrossRoleStrip />. The page renders an inline relatedRoles list instead. 385 of 386 entries under content/admin/ carry relatedRoles in frontmatter.",
+      "fix": "Mirror the commander detail page. Import CrossRoleStrip, build CrossRoleLink[] from fm.relatedRoles, and render <CrossRoleStrip links={crossRoleLinks} /> below the article body. Drop the inline list."
+    },
+    {
+      "id": "CR-0002",
+      "severity": "major",
+      "rule": "detail-page-missing-cross-role-strip",
+      "file": "src/app/leader/[topic]/[slug]/page.tsx",
+      "message": "Detail page for role 'leader' does not import CrossRoleStrip from @/components/domain/cross-role-strip nor render <CrossRoleStrip />. The page renders an inline relatedRoles list instead. 73 of 88 entries under content/leader/ carry relatedRoles in frontmatter.",
+      "fix": "Mirror the commander detail page. Import CrossRoleStrip, build CrossRoleLink[] from fm.relatedRoles, and render <CrossRoleStrip links={crossRoleLinks} /> below the article body. Drop the inline list."
+    },
+    {
+      "id": "CR-0003",
+      "severity": "major",
+      "rule": "detail-page-missing-cross-role-strip",
+      "file": "src/app/marines/[topic]/[slug]/page.tsx",
+      "message": "Detail page for role 'marine' does not import CrossRoleStrip from @/components/domain/cross-role-strip nor render <CrossRoleStrip />. The page renders an inline relatedRoles list instead. 219 of 221 entries under content/marines/ carry relatedRoles in frontmatter.",
+      "fix": "Mirror the commander detail page. Import CrossRoleStrip, build CrossRoleLink[] from fm.relatedRoles, and render <CrossRoleStrip links={crossRoleLinks} /> below the article body. Drop the inline list."
+    },
+    {
+      "id": "CR-0004",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/admin/.deleted-s1g1-defense-travel-system-overview.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0005",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/leader/awards-choosing-the-award.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0006",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/leader/awards-citation-mechanics.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0007",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/leader/awards-combat-action-ribbon.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0008",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/leader/awards-drafting-narrative.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0009",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/leader/awards-end-of-tour-timing.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0010",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/leader/awards-ompf-verification.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0011",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/leader/awards-overview.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0012",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/leader/awards-routing-and-endorsements.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0013",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/leader/awards-unit-awards.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0014",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/leader/bridging-package-checklist.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0015",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/leader/counseling-avoiding-pitfalls.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0016",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/leader/counseling-styles.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0017",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/leader/life-events-bereavement.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0018",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/leader/readiness-red-s-currency.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0019",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/leader/records-awards-records-cleanup.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0020",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/marines/defense-travel-system.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0021",
+      "severity": "minor",
+      "rule": "missing-related-roles",
+      "file": "content/marines/government-travel-charge-card.mdx",
+      "message": "MDX entry has no relatedRoles in frontmatter and no cross-role-exempt comment in the first 10 body lines.",
+      "fix": "Add a relatedRoles object to frontmatter, or add a {/* cross-role-exempt: <reason> */} comment at the top of the body."
+    },
+    {
+      "id": "CR-0022",
+      "severity": "nit",
+      "rule": "phase-6-cross-role-pending",
+      "file": "src/lib/content/schemas.ts",
+      "message": "roleContentSchema (and adminSchema) defines relatedRoles as an object map of role to slug string. CLAUDE.md Section 9 lists `crossRole: CrossRoleLink[]` as the planned shape. The CrossRoleLink array form has not shipped on roleContentSchema.",
+      "fix": "Plan the migration from relatedRoles object to crossRole CrossRoleLink[] when ready. Author a codemod for existing frontmatter."
+    }
+  ]
+}

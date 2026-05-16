@@ -144,6 +144,26 @@ export default function PayAndEntitlementsLanding() {
           before action.
         </p>
       </section>
+
+      <section className="mt-6 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-5">
+        <h2 className="text-lg font-bold">AI prompt reference</h2>
+        <p className="mt-2 text-sm">
+          The Semper Admin AI Field Manual Category 08 (Financial
+          Administration) contains 10 prompts covering travel voucher
+          checklists, pay discrepancy resolution, budget justification, debt
+          waivers, special pay authorization, GTC audits, advance pay,
+          financial readiness counseling, BAH entitlement determinations, and
+          travel claim discrepancy letters. See the{" "}
+          <Link
+            href="/marines/semper-admin-ai-field-manual"
+            className="text-[var(--color-primary)] underline"
+          >
+            Semper Admin AI Field Manual
+          </Link>{" "}
+          for the full library, the 20 Laws of LLM Prompts, the Trust but
+          Verify checklist, and the PDF download.
+        </p>
+      </section>
     </div>
   );
 }

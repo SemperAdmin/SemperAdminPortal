@@ -147,7 +147,7 @@ const inspectionItemSchema = z.object({
   code: z.string().min(1),
   question: z.string().min(2),
   references: z.array(z.string()).default([]),
-  evidenceHint: z.string().nullable().optional(),
+  evidenceHint: z.string().nullable(),
   /**
    * Accepts a single audience or an array. Admin items historically tagged
    * one audience per row. Finance items tag multiple, so the field accepts
@@ -183,11 +183,11 @@ export const inspectionSchema = z.object({
   title: z.string().min(2),
   summary: z.string().min(10).max(280),
   roles: z.array(RoleEnum).min(1),
-  sponsor: z.string().min(2).optional(),
+  sponsor: z.string().min(2),
   category: z.enum(INSPECTION_CATEGORIES).optional(),
   faName: z.string().optional(),
-  applicabilityLevel: z.string().optional(),
-  effectiveDate: z.string().optional(),
+  applicabilityLevel: z.string().min(2),
+  effectiveDate: z.string().min(8),
   lastVerified: z.string(),
   section: z.string().optional(),
   categoryLabel: z.string().optional(),

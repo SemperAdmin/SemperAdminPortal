@@ -1,0 +1,90 @@
+{
+  "dimension": "role-separation",
+  "generatedAt": "2026-05-15T23:43:06Z",
+  "repoCommit": "3c8cb069f83323c3d87e251808635930f7b1b4bd",
+  "summary": {
+    "counts": {
+      "blocker": 1,
+      "major": 4,
+      "minor": 0,
+      "nit": 2
+    },
+    "filesScanned": 1496,
+    "notes": "Walked content/marines (221 mdx), content/leader (88 mdx), content/commander (46 mdx), content/admin (386 mdx), content/citations (310 mdx, _stubs excluded), content/tools (6 mdx), content/videos (347 mdx), content/inspections (42 program JSON), 30 per-role page.tsx and layout.tsx files, src/lib/role-trees.ts, src/lib/roles.ts, src/lib/content/loader.ts, src/components/shell (top-nav, side-nav, tree-nav, role-picker-dialog, command-palette, role-route-sync), src/lib/store/role-store.ts, src/components/domain/citations-browser.tsx, and the four src/generated role catalogs (marines, leader, commander, admin). The 10 inspection _policy-indexes JSON files lack roles arrays by design. Loader walks only INSPECTION_TRACKS dirs (igmc, mcaat), so support manifests are not flagged."
+  },
+  "findings": [
+    {
+      "id": "RS-0001",
+      "severity": "blocker",
+      "rule": "second-role-switcher",
+      "file": "src/components/shell/command-palette.tsx",
+      "line": 103,
+      "column": 1,
+      "snippet": "onSelect={() => run(() => setRole(r))}",
+      "message": "Command palette renders a 'Switch role' group that calls setRole on selection. Per CLAUDE.md Section 2.2 the canonical role-switching surfaces are top-nav.tsx (desktop) and role-picker-dialog.tsx (mobile only). A third interactive switcher in command-palette violates the single-switcher rule.",
+      "fix": "Remove the 'Switch role' Command.Group from command-palette and route role-change actions to the role-picker-dialog. The palette routes to roles, it does not set them.",
+      "references": ["CLAUDE.md Section 2.2"],
+      "relatedFiles": ["src/components/shell/top-nav.tsx", "src/components/shell/role-picker-dialog.tsx"]
+    },
+    {
+      "id": "RS-0002",
+      "severity": "major",
+      "rule": "trash-file-in-content",
+      "file": "content/marines/.trash-basic-pay-comparable-grades.mdx",
+      "message": "Soft-deleted .trash- file under content/marines. Loader skips dotfiles, but the file remains in the working tree and ships in the repo.",
+      "fix": "Delete the file from the repo.",
+      "references": ["CLAUDE.md Section 4.1"]
+    },
+    {
+      "id": "RS-0003",
+      "severity": "major",
+      "rule": "trash-file-in-content",
+      "file": "content/marines/.trash-deployment-pays.mdx",
+      "message": "Soft-deleted .trash- file under content/marines. Loader skips dotfiles, but the file remains in the working tree and ships in the repo.",
+      "fix": "Delete the file from the repo.",
+      "references": ["CLAUDE.md Section 4.1"]
+    },
+    {
+      "id": "RS-0004",
+      "severity": "major",
+      "rule": "trash-file-in-content",
+      "file": "content/marines/.trash-pay-review-les.mdx",
+      "message": "Soft-deleted .trash- file under content/marines. Loader skips dotfiles, but the file remains in the working tree and ships in the repo.",
+      "fix": "Delete the file from the repo.",
+      "references": ["CLAUDE.md Section 4.1"]
+    },
+    {
+      "id": "RS-0005",
+      "severity": "major",
+      "rule": "trash-file-in-content",
+      "file": "content/marines/.trash-special-pays.mdx",
+      "message": "Soft-deleted .trash- file under content/marines. Loader skips dotfiles, but the file remains in the working tree and ships in the repo.",
+      "fix": "Delete the file from the repo.",
+      "references": ["CLAUDE.md Section 4.1"]
+    },
+    {
+      "id": "RS-0006",
+      "severity": "nit",
+      "rule": "passive-role-setter",
+      "file": "src/components/shell/role-route-sync.tsx",
+      "line": 28,
+      "column": 5,
+      "snippet": "if (mapped) setRole(mapped);",
+      "message": "RoleRouteSync calls setRole from a pathname effect to keep the 'Viewing as' label in sync with the URL. This is route-driven, not interactive UI, so it is not a second user-facing switcher, but it does write to the role store from a third surface. Worth a documentation note in the role-store comment block.",
+      "fix": "Add a comment to role-store and to role-route-sync explaining the route-derived write path so the single-switcher rule is unambiguous.",
+      "references": ["CLAUDE.md Section 2.2"]
+    },
+    {
+      "id": "RS-0007",
+      "severity": "nit",
+      "rule": "stale-doc-comment",
+      "file": "src/components/shell/top-nav.tsx",
+      "line": 19,
+      "column": 1,
+      "snippet": "Search dominant at center. Segmented role switcher is the only role-switching surface.",
+      "message": "Top-nav doc comment claims a segmented role switcher lives in this component, but no role switcher renders here. The actual canonical switcher lives in role-picker-dialog (mobile drawer). Mismatch between Section 3.1 mockup expectations and current shipped UI.",
+      "fix": "Either restore the segmented role control in top-nav per Section 3.1 chrome spec, or update the comment to point at role-picker-dialog as the canonical switcher.",
+      "references": ["CLAUDE.md Section 3.1", "CLAUDE.md Section 2.2"]
+    }
+  ]
+}

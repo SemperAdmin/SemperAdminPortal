@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Construction, Sparkles } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Pill } from "@/components/ui/pill";
 
 export interface PhasePlaceholderProps {
   title: string;
@@ -20,7 +20,7 @@ export function PhasePlaceholder({
   return (
     <div className="mx-auto max-w-3xl">
       <div className="mb-6 flex items-center gap-3">
-        <Badge variant="muted">Phase {phase}</Badge>
+        <Pill variant="neutral">Phase {phase}</Pill>
         <span className="text-xs text-[var(--color-muted-foreground)]">
           Coming online as the phase ships.
         </span>

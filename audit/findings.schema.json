@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "semperadmin-audit-findings",
+  "title": "Semper Admin Portal Audit Findings",
+  "description": "Output shape produced by the six dimension subagents and merged by the orchestrator. One findings.json per dimension, then a merged findings.merged.json at the audit root.",
+  "type": "object",
+  "required": ["dimension", "generatedAt", "repoCommit", "summary", "findings"],
+  "properties": {
+    "dimension": {
+      "type": "string",
+      "enum": [
+        "role-separation",
+        "frontmatter-schema",
+        "ui-tokens-components",
+        "citations-links",
+        "cross-role-wiring",
+        "voice-writing-constraints",
+        "merged"
+      ]
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "repoCommit": {
+      "type": "string",
+      "description": "git rev-parse HEAD at audit time"
+    },
+    "summary": {
+      "type": "object",
+      "required": ["counts"],
+      "properties": {
+        "counts": {
+          "type": "object",
+          "properties": {
+            "blocker": { "type": "integer", "minimum": 0 },
+            "major": { "type": "integer", "minimum": 0 },
+            "minor": { "type": "integer", "minimum": 0 },
+            "nit": { "type": "integer", "minimum": 0 }
+          },
+          "required": ["blocker", "major", "minor", "nit"]
+        },
+        "filesScanned": { "type": "integer", "minimum": 0 },
+        "notes": { "type": "string" }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "severity", "rule", "file", "message"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Z]{2,4}-[0-9]{4}$",
+            "description": "Stable id, dimension prefix plus 4-digit serial. RS-0001, FS-0001, UI-0001, CL-0001, CR-0001, VW-0001."
+          },
+          "severity": {
+            "type": "string",
+            "enum": ["blocker", "major", "minor", "nit"]
+          },
+          "rule": {
+            "type": "string",
+            "description": "Short rule name, kebab-case. Example, no-hardcoded-hex."
+          },
+          "file": {
+            "type": "string",
+            "description": "Repo-relative path. Forward slashes only."
+          },
+          "line": { "type": "integer", "minimum": 1 },
+          "column": { "type": "integer", "minimum": 1 },
+          "snippet": {
+            "type": "string",
+            "description": "Up to 200 chars of context around the violation."
+          },
+          "message": {
+            "type": "string",
+            "description": "Human-readable description of the violation."
+          },
+          "fix": {
+            "type": "string",
+            "description": "Suggested remediation. One sentence."
+          },
+          "references": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Anchors in CLAUDE.md or the redesign spec."
+          },
+          "relatedFiles": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "severityRules": {
+      "description": "blocker = breaks build, breaks role separation, or violates a Section 6 writing constraint in shipped user-facing copy. major = schema violation, broken link, missing required component, missing CrossRoleStrip on detail page. minor = stylistic drift, hardcoded hex when a token exists, Badge usage in non-deprecated path. nit = readability or naming, no functional impact."
+    }
+  }
+}

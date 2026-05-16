@@ -28,7 +28,8 @@
           "references": [
             "41 USC 1909 (Public Law 112-194), DoD GTCC Regulations (April 2025), par. 041004",
             "MCO 4600.40C, encl 2, ch 1, par. 2"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0102",
@@ -36,7 +37,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 040801",
             "MCO 4600.40C, par. 4b(2)(h)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0103",
@@ -44,7 +46,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 040204C, Annex 10",
             "MCO 4600.40C, par. 4b(2)(c)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0104",
@@ -52,7 +55,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 041101, par. 040204C",
             "MCO 4600.40C, par. 4b(3((f)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0105",
@@ -60,7 +64,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), Vol 4, par. 041003; par. 041004; par. 041402 E",
             "MCO 4600.40C encl 2, appendix B, par. 4a(5); Chapter 2, par. 8a(4)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0106",
@@ -68,7 +73,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 041402 D",
             "MCO 4600.40C encl 2, appendix B, par. 4a; appendix B, par. 4a(3)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0107",
@@ -76,7 +82,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 041301; par. 041302; par. 041303; par. 041304; par. 041103",
             "MCO 4600.40C, encl 2, appendix B, par. 5"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0108",
@@ -84,7 +91,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 041103; par 041402 B; par. 041104; par 041306",
             "MCO 4600.40C, encl 2, appendix B, par. 4a; appendix B, par. 4a(1)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0109",
@@ -92,7 +100,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 040802; par. 040901; par. 041104; par 041105",
             "MCO 4600.40C, par. 4b(2)(d)1; encl 2, appendix B, par. 9a(1); par. 9a(2)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0110",
@@ -100,7 +109,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 041106",
             "MCO 4600.40C, encl 2, appendix B, par. 9b; par. 9a(2)(b)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0111",
@@ -108,7 +118,8 @@
           "references": [
             "DoD GTCC Regulations 041402 A",
             "MCO 4600.40C, encl 2, appendix B, par. 4a; appendix B, par. 4a(2)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0112",
@@ -116,7 +127,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 041402 C",
             "MCO 4600.40C encl 2, appendix B, par. 4a; 4a(4)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0113",
@@ -124,14 +136,16 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 041005; par. 040103a",
             "MCO 4600.40C, par. 4a(1)(a)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0114",
           "question": "Does the APC ensure that all cardholders, command leadership, and subordinate HL APCs are informed of policy and procedure changes to the GTCC Program? Note: The APC must provide proof to the inspector demonstrating how the information is being distributed.",
           "references": [
             "MCO 4600.40C, encl 2, ch 2, par. 8a(11); encl 2, appendix B, par. 13"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0115",
@@ -139,7 +153,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 041103",
             "MCO 4600.40C, par. 5b, encl 2, appendix B, par 1b; encl 2, appendix B, par. 4a"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -154,7 +169,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 040205, Annex 11",
             "MCO 4600.40C, par. 4b(2)(c)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0202",
@@ -162,7 +178,8 @@
           "references": [
             "MCO 4600.40C, encl 2, ch 3, par. 1b(2)",
             "MCO 4600.40C, encl 2, Appendix F"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0203",
@@ -170,14 +187,16 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 040801",
             "MCO 4600.40C, par. 4b(2)(h)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0204",
           "question": "Does the APC notify the CPM immediately upon the transfer, separation, or reassignment of APCs or cardholders who are no longer assigned to the command? Note: The APC must be able to provide the inspector with proof of notification.",
           "references": [
             "MCO 4600.40B, encl 1, appendix C, par. 17"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0205",
@@ -186,7 +205,8 @@
             "DoD GTCC Regulations (April 2025), par. 041103",
             "MCO 4600.40C, par. 4b(2)(k)",
             "MCO 4600.40C, encl 2, appendix C, par. 19b"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0206",
@@ -194,7 +214,8 @@
           "references": [
             "MCO 4600.40C, encl 2, appendix C, par. 4",
             "MCO 4600.40C, encl 2, appendix C, par. 19a"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0207",
@@ -202,14 +223,16 @@
           "references": [
             "MCO 4600.40C, encl 2, appendix C, par. 16",
             "MCO 4600.40C, encl 2, appendix C, par. 7(a-c)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0208",
           "question": "Does the commander or appointed designee ensure that all charges placed on a CBA are authorized and comply with DoD travel regulations? Note: The inspector will review a sample of the cardholder’s statements to verify that the charges align with DoD travel regulations.",
           "references": [
             "MCO 4600.40B, encl 1, appendix C, par. 7(a-c)"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0209",
@@ -217,7 +240,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 041403 A",
             "MCO 4600.40C, encl 2, appendix C, par. 21a"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0210",
@@ -225,7 +249,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 041403 B",
             "MCO 4600.40C, encl 2, appendix C, par. 21b"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0211",
@@ -233,7 +258,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 041403 C, par. 041003B",
             "MCO 4600.40C, encl 2, appendix C, par. 21c"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0212",
@@ -241,7 +267,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 041403C, 041003B",
             "MCO 4600.40C, encl 2, appendix B, par. 10b"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0301",
@@ -249,7 +276,8 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 041502",
             "MCO 4600.40C encl 2, appendix E, par. 2"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0302",
@@ -257,14 +285,16 @@
           "references": [
             "DoD GTCC Regulations (April 2025), par. 041502A - D",
             "MCO 4600.40C encl 2, appendix E, par. 4c"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "0303",
           "question": "Is the APC notifying the cardholder’s supervisor of potential misuse, abuse, or fraud discovered in VICM, and informing the commander as required? Note: APCs must be able to provide the inspector with official documentation of these notifications.",
           "references": [
             "MCO 4600.40C encl 2, appendix E, par. 4d"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     }

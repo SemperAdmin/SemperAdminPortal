@@ -6,6 +6,7 @@ import { PageHeader } from "@/components/domain/page-header";
 import { MetaRow } from "@/components/domain/meta-row";
 import { StatTile } from "@/components/domain/stat-tile";
 import { Pill } from "@/components/ui/pill";
+import { Callout } from "@/components/domain/callout";
 import { StatusPill } from "@/components/ui/status-pill";
 import { classifyInspectionStatus } from "@/lib/content/schemas";
 
@@ -134,7 +135,18 @@ export default function InspectionsHub() {
         />
       </section>
 
-      <div className="grid gap-4 md:grid-cols-2">
+      <Callout variant="info" title="Governing authority">
+        Every IGMC inspection on this surface derives from{' '}
+        <Link
+          href="/citations/mco-5040-6k"
+          className="font-semibold underline-offset-2 hover:underline"
+        >
+          MCO 5040.6K
+        </Link>
+        . The Order anchors the CoRE classification, the FAC repository, the grading rubric, and the FIR and CAR reporting cycle.
+      </Callout>
+
+      <div className="mt-10 grid gap-4 md:grid-cols-2">
         {cards.map((c) => {
           const Icon = c.Icon;
           return (

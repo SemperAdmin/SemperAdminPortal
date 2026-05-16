@@ -26,9 +26,11 @@ const citations = require("@/generated/citations.json") as {
   byId: Record<string, { type: string }>;
 };
 
+type RoleKey = "marine" | "leader" | "commander" | "admin";
+
 interface RoleCardSpec {
   href: string;
-  role: "marine" | "leader" | "commander" | "admin";
+  role: RoleKey;
   icon: typeof Shield;
   pillLabel: string;
   tag: string;
@@ -38,21 +40,61 @@ interface RoleCardSpec {
   accentVar: string;
 }
 
+interface RecentEntry {
+  href: string;
+  eyebrow: string;
+  title: string;
+  summary: string;
+  lastVerified: string;
+}
+
+const ROLE_LABEL: Record<RoleKey, string> = {
+  marine: "Marines",
+  leader: "Leader",
+  commander: "Commander",
+  admin: "Admin",
+};
+
+function humanizeSegment(segment: string): string {
+  return segment
+    .split("-")
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+}
+
+function formatVerified(date: string): string {
+  const d = new Date(date);
+  if (isNaN(d.getTime())) return date;
+  return d.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+}
+
 export default function HomePage() {
-  const adminCount = getAdminContent().length;
-  const marinesCount = getMarinesContent().length;
-  const commanderCount = getCommanderContent().length;
-  const leaderCount = getLeaderContent().length;
+  const adminContent = getAdminContent();
+  const marinesContent = getMarinesContent();
+  const commanderContent = getCommanderContent();
+  const leaderContent = getLeaderContent();
+
+  const adminCount = adminContent.length;
+  const marinesCount = marinesContent.length;
+  const commanderCount = commanderContent.length;
+  const leaderCount = leaderContent.length;
   const totalCount = adminCount + marinesCount + commanderCount + leaderCount;
   const toolsCount = getTools().length;
 
   // Citation breakdown from the registry
   const citationItems = Object.values(citations.byId);
   const citationsTotal = citationItems.length;
-  const citationByType = citationItems.reduce<Record<string, number>>((acc, c) => {
-    acc[c.type] = (acc[c.type] ?? 0) + 1;
-    return acc;
-  }, {});
+  const citationByType = citationItems.reduce<Record<string, number>>(
+    (acc, c) => {
+      acc[c.type] = (acc[c.type] ?? 0) + 1;
+      return acc;
+    },
+    {}
+  );
   const mcoCount = citationByType.MCO ?? 0;
   const maradminCount = citationByType.MARADMIN ?? 0;
   const navmcCount = citationByType.NAVMC ?? 0;
@@ -62,10 +104,10 @@ export default function HomePage() {
 
   // Verified-fresh percentage (last 12 months) across all role content
   const allRoleContent = [
-    ...getMarinesContent(),
-    ...getLeaderContent(),
-    ...getCommanderContent(),
-    ...getAdminContent(),
+    ...marinesContent,
+    ...leaderContent,
+    ...commanderContent,
+    ...adminContent,
   ];
   const now = Date.now();
   const TWELVE_MONTHS_MS = 1000 * 60 * 60 * 24 * 30 * 12;
@@ -76,6 +118,43 @@ export default function HomePage() {
     allRoleContent.length > 0
       ? Math.round((freshCount / allRoleContent.length) * 100)
       : 0;
+
+  // Latest updated: pull from every role catalog, sort by lastVerified, take top 6
+  const latestUpdated: RecentEntry[] = [
+    ...marinesContent.map((e) => ({
+      href: `/marines/${e.frontmatter.topic}/${e.frontmatter.slug}`,
+      eyebrow: `Marines / ${humanizeSegment(e.frontmatter.topic)}`,
+      title: e.frontmatter.title,
+      summary: e.frontmatter.summary,
+      lastVerified: e.frontmatter.lastVerified,
+    })),
+    ...leaderContent.map((e) => ({
+      href: `/leader/${e.frontmatter.topic}/${e.frontmatter.slug}`,
+      eyebrow: `Leader / ${humanizeSegment(e.frontmatter.topic)}`,
+      title: e.frontmatter.title,
+      summary: e.frontmatter.summary,
+      lastVerified: e.frontmatter.lastVerified,
+    })),
+    ...commanderContent.map((e) => ({
+      href: `/commander/${e.frontmatter.topic}/${e.frontmatter.slug}`,
+      eyebrow: `Commander / ${humanizeSegment(e.frontmatter.topic)}`,
+      title: e.frontmatter.title,
+      summary: e.frontmatter.summary,
+      lastVerified: e.frontmatter.lastVerified,
+    })),
+    ...adminContent.map((e) => ({
+      href: `/admin/${e.frontmatter.unitType}/${e.frontmatter.topic}/${e.frontmatter.slug}`,
+      eyebrow: `Admin / ${humanizeSegment(e.frontmatter.unitType)}`,
+      title: e.frontmatter.title,
+      summary: e.frontmatter.summary,
+      lastVerified: e.frontmatter.lastVerified,
+    })),
+  ]
+    .sort(
+      (a, b) =>
+        new Date(b.lastVerified).getTime() - new Date(a.lastVerified).getTime()
+    )
+    .slice(0, 6);
 
   const roleCards: RoleCardSpec[] = [
     {
@@ -129,7 +208,10 @@ export default function HomePage() {
       {/* HERO */}
       <section className="ambient-bloom mb-10 pb-2">
         <p className="mb-3 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--color-usmc-scarlet)]">
-          <span aria-hidden="true" className="h-0.5 w-5 bg-[var(--color-usmc-scarlet)]" />
+          <span
+            aria-hidden="true"
+            className="h-0.5 w-5 bg-[var(--color-usmc-scarlet)]"
+          />
           USMC Administrative Reference
         </p>
         <h1
@@ -209,58 +291,34 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* COMMON ENTRY POINTS */}
-      <section className="mb-14">
-        <div className="mb-5 flex items-baseline justify-between gap-3">
-          <h2
-            className="font-display text-3xl tracking-wide"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            COMMON ENTRY POINTS
-          </h2>
-          <span className="font-mono text-xs text-[var(--color-subtle-foreground)]">
-            6 entries
-          </span>
-        </div>
-        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-          <EntryCard
-            href="/marines/pay-and-entitlements/review-les"
-            eyebrow="Marines / Pay"
-            title="Reading your LES"
-            body="Monthly review responsibilities per MCAP."
-          />
-          <EntryCard
-            href="/marines/life-events/family-docs"
-            eyebrow="Marines / Life events"
-            title="NAVMC 10922 family docs"
-            body="10-day window for marriage, baby, divorce."
-          />
-          <EntryCard
-            href="/admin/pac/audits/personnel-record-audit"
-            eyebrow="Admin / PAC"
-            title="Audit personnel records"
-            body="T&R 0111-PERA-1001. PAC core skill."
-          />
-          <EntryCard
-            href="/admin/pac/bah/bah-overview"
-            eyebrow="Admin / Pay"
-            title="BAH overview"
-            body="Largest single audit category. MCO 7220.56."
-          />
-          <EntryCard
-            href="/admin/i-and-i/drill-and-at/process-idt-pay"
-            eyebrow="Admin / I&I"
-            title="Process IDT pay"
-            body="T&R 0111-PERA-2017. Reserve drill processing."
-          />
-          <EntryCard
-            href="/commander/discipline-and-records/njp-routing"
-            eyebrow="Commander / Discipline"
-            title="NJP routing and authority"
-            body="UCMJ Article 15. Pre-mast through Page 11."
-          />
-        </div>
-      </section>
+      {/* LATEST UPDATED */}
+      {latestUpdated.length > 0 && (
+        <section className="mb-14">
+          <div className="mb-5 flex items-baseline justify-between gap-3">
+            <h2
+              className="font-display text-3xl tracking-wide"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              LATEST UPDATED
+            </h2>
+            <span className="font-mono text-xs text-[var(--color-subtle-foreground)]">
+              {latestUpdated.length} of {allRoleContent.length}
+            </span>
+          </div>
+          <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+            {latestUpdated.map((entry) => (
+              <EntryCard
+                key={entry.href}
+                href={entry.href}
+                eyebrow={entry.eyebrow}
+                title={entry.title}
+                body={entry.summary}
+                lastVerified={entry.lastVerified}
+              />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* ORGANIZATION NOTE */}
       <section className="mb-10 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface-2)] p-6">
@@ -275,40 +333,6 @@ export default function HomePage() {
           Every page cites source policy with chapter and section. Search and
           Citations Index let you find content by policy reference.
         </p>
-      </section>
-
-      {/* QUICK LINKS */}
-      <section className="grid gap-3 md:grid-cols-2">
-        <Link
-          href="/search"
-          className="group flex items-center justify-between rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-usmc-scarlet)]"
-        >
-          <div>
-            <p className="font-semibold">Search</p>
-            <p className="text-xs text-[var(--color-muted-foreground)]">
-              Title, topic, T&R event code, source policy, references.
-            </p>
-          </div>
-          <ArrowRight
-            className="size-4 opacity-50 transition-opacity group-hover:opacity-100"
-            aria-hidden="true"
-          />
-        </Link>
-        <Link
-          href="/citations"
-          className="group flex items-center justify-between rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-usmc-scarlet)]"
-        >
-          <div>
-            <p className="font-semibold">Citations index</p>
-            <p className="text-xs text-[var(--color-muted-foreground)]">
-              Every MCO, MARADMIN, U.S. Code section referenced.
-            </p>
-          </div>
-          <ArrowRight
-            className="size-4 opacity-50 transition-opacity group-hover:opacity-100"
-            aria-hidden="true"
-          />
-        </Link>
       </section>
     </div>
   );
@@ -376,16 +400,18 @@ function EntryCard({
   eyebrow,
   title,
   body,
+  lastVerified,
 }: {
   href: string;
   eyebrow: string;
   title: string;
   body: string;
+  lastVerified?: string;
 }) {
   return (
     <Link
       href={href}
-      className="group rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-border-strong)] hover:bg-[var(--color-surface-2)]"
+      className="group flex h-full flex-col rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-border-strong)] hover:bg-[var(--color-surface-2)]"
     >
       <p className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.08em] text-[var(--color-subtle-foreground)]">
         <span
@@ -395,9 +421,14 @@ function EntryCard({
         {eyebrow}
       </p>
       <h4 className="mt-1 text-sm font-semibold tracking-tight">{title}</h4>
-      <p className="mt-1 text-xs text-[var(--color-muted-foreground)] leading-snug">
+      <p className="mt-1 flex-1 text-xs text-[var(--color-muted-foreground)] leading-snug">
         {body}
       </p>
+      {lastVerified && (
+        <p className="mt-2 font-mono text-[10px] text-[var(--color-subtle-foreground)]">
+          Updated {formatVerified(lastVerified)}
+        </p>
+      )}
     </Link>
   );
 }

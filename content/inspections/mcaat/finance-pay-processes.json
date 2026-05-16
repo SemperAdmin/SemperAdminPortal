@@ -31,7 +31,8 @@
           "audience": [
             "DO",
             "FO"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "02",
@@ -42,7 +43,8 @@
           "audience": [
             "DO",
             "FO"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "05",
@@ -54,7 +56,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "06",
@@ -66,7 +69,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "07",
@@ -78,7 +82,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "08",
@@ -90,7 +95,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "09",
@@ -102,7 +108,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "10",
@@ -114,7 +121,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "11",
@@ -125,7 +133,8 @@
           "audience": [
             "DO",
             "FO"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "12",
@@ -137,7 +146,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -155,7 +165,8 @@
           "audience": [
             "DO",
             "FO"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "02",
@@ -166,7 +177,8 @@
           "audience": [
             "DO",
             "FO"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "05",
@@ -178,7 +190,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "06",
@@ -190,7 +203,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "07",
@@ -202,7 +216,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "08",
@@ -214,7 +229,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "09",
@@ -226,7 +242,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "10",
@@ -238,7 +255,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "11",
@@ -249,7 +267,8 @@
           "audience": [
             "DO",
             "FO"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "12",
@@ -261,7 +280,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     },
@@ -278,7 +298,8 @@
           ],
           "audience": [
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "04",
@@ -288,7 +309,8 @@
           ],
           "audience": [
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "05",
@@ -300,7 +322,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "06",
@@ -312,7 +335,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "07",
@@ -324,7 +348,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "08",
@@ -336,7 +361,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "09",
@@ -348,7 +374,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "10",
@@ -360,7 +387,8 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         },
         {
           "code": "12",
@@ -372,9 +400,16 @@
             "DO",
             "FO",
             "OUTSIDE_AGENCY"
-          ]
+          ],
+          "evidenceHint": null
         }
       ]
     }
-  ]
+  ],
+  "sponsor": "DCS M&RA",
+  "effectiveDate": "2026-05-10",
+  "_audit_notes": {
+    "sponsor_default": true,
+    "effectiveDate_from_lastVerified": true
+  }
 }

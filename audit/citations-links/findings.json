@@ -1,0 +1,4442 @@
+{
+  "dimension": "citations-links",
+  "generatedAt": "2026-05-15T23:45:28Z",
+  "repoCommit": "3c8cb069f83323c3d87e251808635930f7b1b4bd",
+  "summary": {
+    "counts": {
+      "blocker": 0,
+      "major": 32,
+      "minor": 458,
+      "nit": 2
+    },
+    "filesScanned": 1091,
+    "notes": "Citations index byId=308, byAlias=918. Citation MDX files (excluding _stubs)=308. Stubs pending=221. Broken internal links=32. Orphan slug counts: marines=157, leader=82, commander=1, admin=354. Duplicate alias pairs=0."
+  },
+  "findings": [
+    {
+      "id": "CL-0005",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/career-services.mdx",
+      "message": "Internal link target /marines/transition-readiness does not resolve (marines-slug-missing).",
+      "snippet": "/marines/transition-readiness",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0006",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/career-services.mdx",
+      "message": "Internal link target /marines/transition-readiness does not resolve (marines-slug-missing).",
+      "snippet": "/marines/transition-readiness",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0007",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/career-services.mdx",
+      "message": "Internal link target /marines/transition-readiness does not resolve (marines-slug-missing).",
+      "snippet": "/marines/transition-readiness",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0008",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/casualty-investigation-tracking.mdx",
+      "message": "Internal link target /marines/reserve-retirement-and-sbp does not resolve (marines-slug-missing).",
+      "snippet": "/marines/reserve-retirement-and-sbp",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0009",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/child-custody-changes.mdx",
+      "message": "Internal link target /marines/legal-services does not resolve (marines-slug-missing).",
+      "snippet": "/marines/legal-services",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0010",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/child-custody-changes.mdx",
+      "message": "Internal link target /marines/legal-services does not resolve (marines-slug-missing).",
+      "snippet": "/marines/legal-services",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0011",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/education-at-transition.mdx",
+      "message": "Internal link target /marines/transition-readiness does not resolve (marines-slug-missing).",
+      "snippet": "/marines/transition-readiness",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0012",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/education-services-and-resilience.mdx",
+      "message": "Internal link target /marines/education does not resolve (marines-slug-missing).",
+      "snippet": "/marines/education",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0013",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/marine-and-family-programs-overview.mdx",
+      "message": "Internal link target /marines/pay-and-entitlements does not resolve (marines-slug-missing).",
+      "snippet": "/marines/pay-and-entitlements",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0014",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/personal-financial-management-program.mdx",
+      "message": "Internal link target /marines/legal-services does not resolve (marines-slug-missing).",
+      "snippet": "/marines/legal-services",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0015",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/personal-financial-management-program.mdx",
+      "message": "Internal link target /marines/legal-services does not resolve (marines-slug-missing).",
+      "snippet": "/marines/legal-services",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0016",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/personal-financial-management-program.mdx",
+      "message": "Internal link target /marines/transition-readiness does not resolve (marines-slug-missing).",
+      "snippet": "/marines/transition-readiness",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0017",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/practical-ai-use.mdx",
+      "message": "Internal link target /marines/semper-admin-ai-field-manual does not resolve (marines-slug-missing).",
+      "snippet": "/marines/semper-admin-ai-field-manual",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0018",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/practical-ai-use.mdx",
+      "message": "Internal link target /marines/semper-admin-ai-field-manual does not resolve (marines-slug-missing).",
+      "snippet": "/marines/semper-admin-ai-field-manual",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0019",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/separations-and-retirement does not resolve (marines-slug-missing).",
+      "snippet": "/marines/separations-and-retirement",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0020",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/awards does not resolve (marines-slug-missing).",
+      "snippet": "/marines/awards",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0021",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/performance-evaluation does not resolve (marines-slug-missing).",
+      "snippet": "/marines/performance-evaluation",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0022",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/legal-services does not resolve (marines-slug-missing).",
+      "snippet": "/marines/legal-services",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0023",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/pay-and-entitlements does not resolve (marines-slug-missing).",
+      "snippet": "/marines/pay-and-entitlements",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0024",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/dts does not resolve (marines-slug-missing).",
+      "snippet": "/marines/dts",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0025",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/gtcc does not resolve (marines-slug-missing).",
+      "snippet": "/marines/gtcc",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0026",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/life-events does not resolve (marines-slug-missing).",
+      "snippet": "/marines/life-events",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0027",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/reenlistments-and-extensions does not resolve (marines-slug-missing).",
+      "snippet": "/marines/reenlistments-and-extensions",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0028",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/separations-and-retirement does not resolve (marines-slug-missing).",
+      "snippet": "/marines/separations-and-retirement",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0029",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/education does not resolve (marines-slug-missing).",
+      "snippet": "/marines/education",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0030",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/awards does not resolve (marines-slug-missing).",
+      "snippet": "/marines/awards",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0031",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/performance-evaluation does not resolve (marines-slug-missing).",
+      "snippet": "/marines/performance-evaluation",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0032",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/legal-services does not resolve (marines-slug-missing).",
+      "snippet": "/marines/legal-services",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0033",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/pay-and-entitlements does not resolve (marines-slug-missing).",
+      "snippet": "/marines/pay-and-entitlements",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0034",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/dts does not resolve (marines-slug-missing).",
+      "snippet": "/marines/dts",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0035",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/gtcc does not resolve (marines-slug-missing).",
+      "snippet": "/marines/gtcc",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0036",
+      "severity": "major",
+      "rule": "broken-internal-link",
+      "file": "content/marines/semper-admin-ai-field-manual.mdx",
+      "message": "Internal link target /marines/marine-and-family-programs does not resolve (marines-slug-missing).",
+      "snippet": "/marines/marine-and-family-programs",
+      "fix": "Update link to a known slug or add the missing page to the catalog."
+    },
+    {
+      "id": "CL-0002",
+      "severity": "minor",
+      "rule": "citation-coverage-below-80",
+      "file": "content/commander/",
+      "message": "commander citation coverage 66.7% (374 of 561 references resolved). Top unresolved: MCO 5354.1F x7; 2025 USMC Warfighter Mental Readiness Playbook V3 x6; SECNAV M-5510.36 x5; MCO 3500.27C x4; USMC Command Suicide Prevention and Risk Mitigation Strategies x4",
+      "snippet": "MCO 5354.1F x7; 2025 USMC Warfighter Mental Readiness Playbook V3 x6; SECNAV M-5510.36 x5; MCO 3500.27C x4; USMC Command Suicide Prevention and Risk Mitigation Strategies x4",
+      "fix": "Author remaining parent docs in content/citations/. Run npm run citations:import."
+    },
+    {
+      "id": "CL-0003",
+      "severity": "minor",
+      "rule": "citation-coverage-below-80",
+      "file": "content/leader/",
+      "message": "leader citation coverage 77.2% (379 of 491 references resolved). Top unresolved: NAVMC 10922 x39; DoD FMR Volume 9 TDY Travel x5; MCO 7220.65 Pay and Allowances x4; NAVMC 118 x3; MCO 1754.9A x3",
+      "snippet": "NAVMC 10922 x39; DoD FMR Volume 9 TDY Travel x5; MCO 7220.65 Pay and Allowances x4; NAVMC 118 x3; MCO 1754.9A x3",
+      "fix": "Author remaining parent docs in content/citations/. Run npm run citations:import."
+    },
+    {
+      "id": "CL-0004",
+      "severity": "minor",
+      "rule": "citation-coverage-below-80",
+      "file": "content/marines/",
+      "message": "marines citation coverage 78.7% (3701 of 4702 references resolved). Top unresolved: NAVMC 10922 x78; ALNAV 055/17 x58; MARADMIN 222/26 x36; DD Form 1351-2 x34; MARADMIN 209/26 x33",
+      "snippet": "NAVMC 10922 x78; ALNAV 055/17 x58; MARADMIN 222/26 x36; DD Form 1351-2 x34; MARADMIN 209/26 x33",
+      "fix": "Author remaining parent docs in content/citations/. Run npm run citations:import."
+    },
+    {
+      "id": "CL-0277",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"adverse-report-procedures\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "adverse-report-procedures",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0278",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"pcr-processing\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pcr-processing",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0279",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"submission-requirements-and-occasion-codes\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "submission-requirements-and-occasion-codes",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0280",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"command-investigation-type-one\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "command-investigation-type-one",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0281",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"casualty-deceased-and-incompetent-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "casualty-deceased-and-incompetent-pay",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0282",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"selres-participation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "selres-participation",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0283",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"official-mail-management\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "official-mail-management",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0284",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"signing-authority-and-by-direction\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "signing-authority-and-by-direction",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0285",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"exercise-and-training-coordination\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "exercise-and-training-coordination",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0286",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"substantive-corrections-process\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "substantive-corrections-process",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0287",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"light-duty\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "light-duty",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0288",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"account-provisioning-and-saar-n-processing\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "account-provisioning-and-saar-n-processing",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0289",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"military-funeral-honors\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "military-funeral-honors",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0290",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"new-system-release-onboarding\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "new-system-release-onboarding",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0291",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"evidence-witnesses-and-warnings\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "evidence-witnesses-and-warnings",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0292",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"ready-reserve\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "ready-reserve",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0293",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"tdy-travel-and-advances\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "tdy-travel-and-advances",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0294",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"reports-inventory\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "reports-inventory",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0295",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"annual-training-specifics\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "annual-training-specifics",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0296",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"appellate-leave\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "appellate-leave",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0297",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"naval-letter\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "naval-letter",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0298",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"permanent-duty-travel-pcs\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "permanent-duty-travel-pcs",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0299",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"account-closure-at-detach\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "account-closure-at-detach",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0300",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"periodic-review-and-cancellation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "periodic-review-and-cancellation",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0301",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"sea-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "sea-pay",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0302",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"standby-categories\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "standby-categories",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0303",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"mol-fitrep-workflow-and-timeline\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "mol-fitrep-workflow-and-timeline",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0304",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"va-home-loan-and-benefits\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "va-home-loan-and-benefits",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0305",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"evacuation-allowances\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "evacuation-allowances",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0306",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"debts-owed-by-individuals-collection-mechanisms\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "debts-owed-by-individuals-collection-mechanisms",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0307",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"prepare-upb\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "prepare-upb",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0308",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"update-and-extract-cycle-management\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "update-and-extract-cycle-management",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0309",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"caco-assignment\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "caco-assignment",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0310",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"edfr-and-roster-reconciliation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "edfr-and-roster-reconciliation",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0311",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"officer-misconduct-and-discipline\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "officer-misconduct-and-discipline",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0312",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"change-transmittals-and-page-replacements\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "change-transmittals-and-page-replacements",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0313",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"separation-and-retirement-handoff\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "separation-and-retirement-handoff",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0314",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"pay-starts-and-allowance-initiation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pay-starts-and-allowance-initiation",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0315",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"enlisted-promotion-eligibility\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "enlisted-promotion-eligibility",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0316",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"hardship-duty-and-high-deployment\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "hardship-duty-and-high-deployment",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0317",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"allotments-and-payroll-deductions\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "allotments-and-payroll-deductions",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0318",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"selres-enlisted-specifics\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "selres-enlisted-specifics",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0319",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"courts-martial-administration\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "courts-martial-administration",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0320",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"naval-messages-and-genadmins\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "naval-messages-and-genadmins",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0321",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"metrics-and-accountability\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "metrics-and-accountability",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0322",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"medical-board-process\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "medical-board-process",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0323",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"quarterly-account-review-and-audit\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "quarterly-account-review-and-audit",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0324",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"ompf-and-srb-handover\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "ompf-and-srb-handover",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0325",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"reserve-obligation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "reserve-obligation",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0326",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"process-idt-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "process-idt-pay",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0327",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"reports-manager-and-command-directive\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "reports-manager-and-command-directive",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0328",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"ompf-overview\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "ompf-overview",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0329",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"tr-event-coding-and-structure\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "tr-event-coding-and-structure",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0330",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"business-and-multiple-address-letters\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "business-and-multiple-address-letters",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0331",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"hazardous-duty-incentive-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "hazardous-duty-incentive-pay",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0332",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"tax-withholding-and-fica\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "tax-withholding-and-fica",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0333",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"legal-community-and-trial-counsel\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "legal-community-and-trial-counsel",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0334",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"court-martial-njp-and-bankruptcy\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "court-martial-njp-and-bankruptcy",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0335",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"law-enforcement-coordination\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "law-enforcement-coordination",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0336",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"mortuary-affairs\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "mortuary-affairs",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0337",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"registered-and-certified-mail\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "registered-and-certified-mail",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0338",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"force-design-2030-and-talent-management-context\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "force-design-2030-and-talent-management-context",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0339",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"family-separation-allowance\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "family-separation-allowance",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0340",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"loan-repayment-programs\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "loan-repayment-programs",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0341",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"apprehension-and-return-to-military-control\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "apprehension-and-return-to-military-control",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0342",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"direct-deposit-administration\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "direct-deposit-administration",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0343",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"tricare-dental-sgli-and-savings\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "tricare-dental-sgli-and-savings",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0344",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"reimbursement-split-disbursement-and-cardholder-responsibilities\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "reimbursement-split-disbursement-and-cardholder-responsibilities",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0345",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"redundancy-review\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "redundancy-review",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0346",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"unit-check-out-procedures\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "unit-check-out-procedures",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0347",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"inspections-support-overview\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "inspections-support-overview",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0348",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"officer-retirement\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "officer-retirement",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0349",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"utm-roles-and-functions\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "utm-roles-and-functions",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0350",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"electronic-mail-and-classification\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "electronic-mail-and-classification",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0351",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"career-sea-pay-and-submarine-duty\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "career-sea-pay-and-submarine-duty",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0352",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"post-deployment-mobilization-respite-program\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "post-deployment-mobilization-respite-program",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0353",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"court-martial-for-reservists\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "court-martial-for-reservists",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0354",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"unit-check-in-procedures\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "unit-check-in-procedures",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0355",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"unit-readiness-reporting-personnel-pillar\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "unit-readiness-reporting-personnel-pillar",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0356",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"selres-career-counseling\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "selres-career-counseling",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0357",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"annual-fitness-report-schedule\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "annual-fitness-report-schedule",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0358",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"unsatisfactory-participation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "unsatisfactory-participation",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0359",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"muster-duty\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "muster-duty",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0360",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"mobilization-orders-processing\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "mobilization-orders-processing",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0361",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"awards-board-process\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "awards-board-process",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0362",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"hostile-fire-imminent-danger-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "hostile-fire-imminent-danger-pay",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0363",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"reports-and-program-review\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "reports-and-program-review",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0364",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"inspections-evidence-binder\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "inspections-evidence-binder",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0365",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"unit-awards-and-streamers\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "unit-awards-and-streamers",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0366",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"pre-mobilization-screening\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pre-mobilization-screening",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0367",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"high-risk-training-hrt-risk-assessment\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "high-risk-training-hrt-risk-assessment",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0368",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"court-of-inquiry-type-three\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "court-of-inquiry-type-three",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0369",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"esr-management\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "esr-management",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0370",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"lateral-move-mos\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "lateral-move-mos",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0371",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"ud-mips-storage\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "ud-mips-storage",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0372",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"mgib-sr\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "mgib-sr",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0373",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"unit-responsibilities-and-re-evaluation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "unit-responsibilities-and-re-evaluation",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0374",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"recruiting-and-reserve-sponsorship\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "recruiting-and-reserve-sponsorship",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0375",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"federal-and-state-benefits\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "federal-and-state-benefits",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0376",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"misuse-abuse-fraud-and-visa-intellilink\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "misuse-abuse-fraud-and-visa-intellilink",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0377",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"vouchers-and-post-payment-review\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "vouchers-and-post-payment-review",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0378",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"global-force-management\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "global-force-management",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0379",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"line-of-duty-and-misconduct-determinations\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "line-of-duty-and-misconduct-determinations",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0380",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"confinement-facility-notifications\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "confinement-facility-notifications",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0381",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"tricare-retired-reserve\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "tricare-retired-reserve",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0382",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"standby-administration\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "standby-administration",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0383",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"authorizations-and-orders-creation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "authorizations-and-orders-creation",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0384",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"expanded-permanent-limited-duty\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "expanded-permanent-limited-duty",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0385",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"remedial-promotion\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "remedial-promotion",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0386",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"advance-pay-and-emergency-payments\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "advance-pay-and-emergency-payments",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0387",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"ompf-and-srb-receipt\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "ompf-and-srb-receipt",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0388",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"installation-program-manager-and-irr-handoff\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "installation-program-manager-and-irr-handoff",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0389",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"ud-mips-transactions\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "ud-mips-transactions",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0390",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"irr-and-standby-participation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "irr-and-standby-participation",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0391",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"academic-fitness-reports\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "academic-fitness-reports",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0392",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"fitness-report-audit-program\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "fitness-report-audit-program",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0393",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"allowances-bah-bas-and-uniforms\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "allowances-bah-bas-and-uniforms",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0394",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"training-exceptions-defer-waive-delinquent\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "training-exceptions-defer-waive-delinquent",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0395",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"transportation-allowances-and-mileage\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "transportation-allowances-and-mileage",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0396",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"medical-hold-and-limdu\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "medical-hold-and-limdu",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0397",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"rocp-officer-accessions\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "rocp-officer-accessions",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0398",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"ipac-join-transaction\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "ipac-join-transaction",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0399",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"reserve-promotions\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "reserve-promotions",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0400",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"unit-commander-and-vwac\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "unit-commander-and-vwac",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0401",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"survivor-benefit-plan\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "survivor-benefit-plan",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0402",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"pre-mobilization-and-tamp\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pre-mobilization-and-tamp",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0403",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"marine-corps-orders\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "marine-corps-orders",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0404",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"overview\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "overview",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0405",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"special-leave-accrual\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "special-leave-accrual",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0406",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"medical-standards-overview\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "medical-standards-overview",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0407",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"local-reports-and-omb-approval\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "local-reports-and-omb-approval",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0408",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"bic-management-and-internal-assignments\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "bic-management-and-internal-assignments",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0409",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"tricare-for-life\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "tricare-for-life",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0410",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"ucmj-authority\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "ucmj-authority",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0411",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"deployment-planning-and-execution\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "deployment-planning-and-execution",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0412",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"debt-management-and-collection\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "debt-management-and-collection",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0413",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"postal-officer-appointment-and-training\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "postal-officer-appointment-and-training",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0414",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"table-of-organization-and-toecr-submissions\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "table-of-organization-and-toecr-submissions",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0415",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"selection-boards-for-snco-promotions\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "selection-boards-for-snco-promotions",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0416",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"active-duty-training\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "active-duty-training",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0417",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"njp-for-reservists\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "njp-for-reservists",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0418",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"mctp-3-30g-administrative-doctrine\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "mctp-3-30g-administrative-doctrine",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0419",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"mobilization-authorities\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "mobilization-authorities",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0420",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"administrative-actions-misconduct\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "administrative-actions-misconduct",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0421",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"reserve-id-cards\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "reserve-id-cards",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0422",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"inactive-duty-overview\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "inactive-duty-overview",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0423",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"dfas-routing-and-marine-corps-specific-procedures\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "dfas-routing-and-marine-corps-specific-procedures",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0424",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"check-in-checkout-and-profile-management\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "check-in-checkout-and-profile-management",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0425",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"award-nomination-preparation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "award-nomination-preparation",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0426",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"oprep-3-sir-serious-incident-reporting\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "oprep-3-sir-serious-incident-reporting",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0427",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"references-enclosures-and-reports\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "references-enclosures-and-reports",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0428",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"standby-eligibility-and-transfer\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "standby-eligibility-and-transfer",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0429",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"eaoc-and-welcome-aboard-letters\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "eaoc-and-welcome-aboard-letters",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0430",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"oconus-and-accompanied-tour-sponsorship\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "oconus-and-accompanied-tour-sponsorship",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0431",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"rc-medical-care-eligibility\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "rc-medical-care-eligibility",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0432",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"staffing-coordination-and-signature-authority\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "staffing-coordination-and-signature-authority",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0433",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"sponsor-responsibilities-and-completion\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "sponsor-responsibilities-and-completion",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0434",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"fitness-report-preparation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "fitness-report-preparation",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0435",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"apc-appointment-and-duties\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "apc-appointment-and-duties",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0436",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"training-and-certifying-officer-legislation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "training-and-certifying-officer-legislation",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0437",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"rapids-and-cac-administration\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "rapids-and-cac-administration",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0438",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"selres-officer-specifics\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "selres-officer-specifics",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0439",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"enlisted-administrative-separations\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "enlisted-administrative-separations",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0440",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"clemency-and-parole-administration\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "clemency-and-parole-administration",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0441",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"incentive-programs\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "incentive-programs",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0442",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"retirement-health-and-id\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "retirement-health-and-id",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0443",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"foia-release-on-inquiries\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "foia-release-on-inquiries",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0444",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"administrative-investigations\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "administrative-investigations",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0445",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"correspondence-register-and-filing\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "correspondence-register-and-filing",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0446",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"disability-severance-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "disability-severance-pay",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0447",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"administrative-separations-legal-review\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "administrative-separations-legal-review",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0448",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"installation-and-regional-liaison-officers\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "installation-and-regional-liaison-officers",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0449",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"irr-transition\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "irr-transition",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0450",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"victim-rights-and-notifications\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "victim-rights-and-notifications",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0451",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"presentation-initial-issue-and-display\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "presentation-initial-issue-and-display",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0452",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"sexual-assault-and-hazing-report-protocol\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "sexual-assault-and-hazing-report-protocol",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0453",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"final-pay-closeout-and-debt-clearance\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "final-pay-closeout-and-debt-clearance",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0454",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"benefits-and-entitlements\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "benefits-and-entitlements",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0455",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"evaluator-qualifications-and-conduct-of-evaluations\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "evaluator-qualifications-and-conduct-of-evaluations",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0456",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"ompf-submission\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "ompf-submission",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0457",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"long-term-assistance-program\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "long-term-assistance-program",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0458",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"bas-overview\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "bas-overview",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0459",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"statement-of-understanding\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "statement-of-understanding",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0460",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"limdu-board-and-policy\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "limdu-board-and-policy",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0461",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"pay-debts-and-waivers\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pay-debts-and-waivers",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0462",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"verification-of-awards\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "verification-of-awards",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0463",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"readiness-support-program\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "readiness-support-program",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0464",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"mmea-coordination-and-monitor-engagement\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "mmea-coordination-and-monitor-engagement",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0465",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"inspections-cgip-staff-support\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "inspections-cgip-staff-support",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0466",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"terminal-leave-processing\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "terminal-leave-processing",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0467",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"irr-mandatory-muster\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "irr-mandatory-muster",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0468",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"mcr-organization\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "mcr-organization",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0469",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"pfc-and-lcpl-promotion\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pfc-and-lcpl-promotion",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0470",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"hardship-duty-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "hardship-duty-pay",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0471",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"irr-participation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "irr-participation",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0472",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"medical-extension\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "medical-extension",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0473",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"nps-enlisted-accessions\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "nps-enlisted-accessions",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0474",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"rr-leave-programs\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "rr-leave-programs",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0475",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"leave-check-out-and-check-in\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "leave-check-out-and-check-in",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0476",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"line-of-duty-coverage\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "line-of-duty-coverage",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0477",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"utilization-categories\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "utilization-categories",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0478",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"selres-idt-period-limitations\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "selres-idt-period-limitations",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0479",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"commissary-exchange-and-qol\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "commissary-exchange-and-qol",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0480",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"flight-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "flight-pay",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0481",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"member-to-member-audit\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "member-to-member-audit",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0482",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"demobilization-processing\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "demobilization-processing",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0483",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"irr-recall-and-mobilization\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "irr-recall-and-mobilization",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0484",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"cardholder-eligibility-and-application\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "cardholder-eligibility-and-application",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0485",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"aviation-bonuses-and-incentive-pays\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "aviation-bonuses-and-incentive-pays",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0486",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"cost-of-living-allowance\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "cost-of-living-allowance",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0487",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"sponsor-handoff-and-welcome-aboard\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "sponsor-handoff-and-welcome-aboard",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0488",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"privacy-act-and-hipaa-in-system-use\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "privacy-act-and-hipaa-in-system-use",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0489",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"funeral-honors-duty\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "funeral-honors-duty",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0490",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/admin.json",
+      "message": "admin slug \"misso-support-case-routing\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "misso-support-case-routing",
+      "fix": "Add href to src/lib/role-trees.ts admin tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0276",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/commander.json",
+      "message": "commander slug \"ipac-procedures\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "ipac-procedures",
+      "fix": "Add href to src/lib/role-trees.ts commander tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0194",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"adverse-fitrep\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "adverse-fitrep",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0195",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"at-section-planning\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "at-section-planning",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0196",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"approving-officer-role\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "approving-officer-role",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0197",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"pcs-coaching\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pcs-coaching",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0198",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"reenlistment-conversation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "reenlistment-conversation",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0199",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"routing-resources\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "routing-resources",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0200",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"education-planning\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "education-planning",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0201",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"six-functional-areas\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "six-functional-areas",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0202",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"tad-coaching\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "tad-coaching",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0203",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"birth-adoption-walkthrough\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "birth-adoption-walkthrough",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0204",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"force-preservation-referral\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "force-preservation-referral",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0205",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"gtcc-delinquency\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "gtcc-delinquency",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0206",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"processing-timelines\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "processing-timelines",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0207",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"divorce-custody\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "divorce-custody",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0208",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"combat-action-ribbon\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "combat-action-ribbon",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0209",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"awards-records-cleanup\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "awards-records-cleanup",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0210",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"section-leader-orientation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "section-leader-orientation",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0211",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"end-of-tour-timing\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "end-of-tour-timing",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0212",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"routing-and-endorsements\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "routing-and-endorsements",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0213",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"new-marine-integration\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "new-marine-integration",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0214",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"red-s-currency\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "red-s-currency",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0215",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"mctfs-review\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "mctfs-review",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0216",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"package-checklist\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "package-checklist",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0217",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"fraternization-risk\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "fraternization-risk",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0218",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"special-pay-verification\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "special-pay-verification",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0219",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"witness-statements\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "witness-statements",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0220",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"smart-goals\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "smart-goals",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0221",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"coaching-marines-on-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "coaching-marines-on-pay",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0222",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"bah-error-catch\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "bah-error-catch",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0223",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"command-climate-flags\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "command-climate-flags",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0224",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"avoiding-pitfalls\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "avoiding-pitfalls",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0225",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"listening-and-feedback\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "listening-and-feedback",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0226",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"civilian-credential-matching\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "civilian-credential-matching",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0227",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"pre-deployment-section\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pre-deployment-section",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0228",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"transition-timeline\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "transition-timeline",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0229",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"sponsor-program\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "sponsor-program",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0230",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"unsat-participation-counseling\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "unsat-participation-counseling",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0231",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"fitrep-cycle\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "fitrep-cycle",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0232",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"promotion-board-prep\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "promotion-board-prep",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0233",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"ompf-verification\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "ompf-verification",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0234",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"initial-session\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "initial-session",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0235",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"apes-administration\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "apes-administration",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0236",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"bereavement\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "bereavement",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0237",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"follow-up-cadence\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "follow-up-cadence",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0238",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"page-11-counseling\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "page-11-counseling",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0239",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"escalation-paths\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "escalation-paths",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0240",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"article-31-advisory\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "article-31-advisory",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0241",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"overview\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "overview",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0242",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"training-requirements\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "training-requirements",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0243",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"voucher-audit\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "voucher-audit",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0244",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"ompf-audit-walkthrough\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "ompf-audit-walkthrough",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0245",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"gtcc-use\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "gtcc-use",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0246",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"cadence-and-events\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "cadence-and-events",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0247",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"cadence\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "cadence",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0248",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"pay-problems-escort\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pay-problems-escort",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0249",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"jepes-conducting\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "jepes-conducting",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0250",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"unit-awards\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "unit-awards",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0251",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"ro-mechanics\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "ro-mechanics",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0252",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"medical-dental\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "medical-dental",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0253",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"claim-disputes\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "claim-disputes",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0254",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"setting-targets\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "setting-targets",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0255",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"styles\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "styles",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0256",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"mental-health-risk\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "mental-health-risk",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0257",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"allotment-review\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "allotment-review",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0258",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"section-records-audit\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "section-records-audit",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0259",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"drafting-narrative\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "drafting-narrative",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0260",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"rs-mechanics\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "rs-mechanics",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0261",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"when-to-walk\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "when-to-walk",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0262",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"jepes\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "jepes",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0263",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"choosing-the-award\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "choosing-the-award",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0264",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"citation-mechanics\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "citation-mechanics",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0265",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"efmp-coordination\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "efmp-coordination",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0266",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"family-readiness\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "family-readiness",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0267",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"secondary-dependency\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "secondary-dependency",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0268",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"lateral-move-advising\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "lateral-move-advising",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0269",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"dts-oversight\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "dts-oversight",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0270",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"marriage-walkthrough\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "marriage-walkthrough",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0271",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"financial-distress\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "financial-distress",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0272",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"pre-njp-counseling\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pre-njp-counseling",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0273",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"family-docs-coaching\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "family-docs-coaching",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0274",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"mentorship-pairing\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "mentorship-pairing",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0275",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/leader.json",
+      "message": "leader slug \"post-njp-documentation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "post-njp-documentation",
+      "fix": "Add href to src/lib/role-trees.ts leader tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0037",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"leave-submission-and-administration\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "leave-submission-and-administration",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0038",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"gtcc-pcs-use\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "gtcc-pcs-use",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0039",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"performance-evaluation-overview\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "performance-evaluation-overview",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0040",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"movsm\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "movsm",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0041",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"gtcc-tdy-use\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "gtcc-tdy-use",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0042",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"priority-of-pay-deductions\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "priority-of-pay-deductions",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0043",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"reenlistments-and-extensions-overview\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "reenlistments-and-extensions-overview",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0044",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"foreign-awards\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "foreign-awards",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0045",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"childcare-provider-travel\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "childcare-provider-travel",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0046",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"junior-enlisted-promotions\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "junior-enlisted-promotions",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0047",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"temporary-lodging-expense\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "temporary-lodging-expense",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0048",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"fica-and-afrh-deductions\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "fica-and-afrh-deductions",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0049",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"fitrep-appeals-perb\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "fitrep-appeals-perb",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0050",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"enlisted-bonuses\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "enlisted-bonuses",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0051",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"tdy-lodging\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "tdy-lodging",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0052",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"miscellaneous-expense-allowance\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "miscellaneous-expense-allowance",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0053",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"annual-leave\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "annual-leave",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0054",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"separation-payments\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "separation-payments",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0055",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"reserve-component-survivor-benefit-plan\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "reserve-component-survivor-benefit-plan",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0056",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"emergency-leave\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "emergency-leave",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0057",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"foreign-leave\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "foreign-leave",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0058",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"purple-heart\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "purple-heart",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0059",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"personal-property-claims\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "personal-property-claims",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0060",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"dts-trip-cancellations\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "dts-trip-cancellations",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0061",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"idt-travel-reimbursement\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "idt-travel-reimbursement",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0062",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"officers-uniform-and-equipment-allowance\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "officers-uniform-and-equipment-allowance",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0063",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"combat-action-ribbon\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "combat-action-ribbon",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0064",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"allotments\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "allotments",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0065",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"conus-cola\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "conus-cola",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0066",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"dts-outstanding-travel-orders\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "dts-outstanding-travel-orders",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0067",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"servicemembers-civil-relief-act\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "servicemembers-civil-relief-act",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0068",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"special-duty-assignment-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "special-duty-assignment-pay",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0069",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"renewal-agreement-travel\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "renewal-agreement-travel",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0070",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"tdy-transportation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "tdy-transportation",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0071",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"foreign-jurisdiction-sofa\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "foreign-jurisdiction-sofa",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0072",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"appellate-leave\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "appellate-leave",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0073",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"pme-requirements-for-promotion\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pme-requirements-for-promotion",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0074",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"dts-overview\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "dts-overview",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0075",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"article-31-rights-and-investigations\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "article-31-rights-and-investigations",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0076",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"creating-dts-authorizations\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "creating-dts-authorizations",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0077",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"assignment-incentive-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "assignment-incentive-pay",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0078",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"flexible-spending-accounts\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "flexible-spending-accounts",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0079",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"pcs-with-tdy-en-route\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pcs-with-tdy-en-route",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0080",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"hardship-duty-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "hardship-duty-pay",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0081",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"travel-vouchers-and-reimbursement\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "travel-vouchers-and-reimbursement",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0082",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"joint-service-awards\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "joint-service-awards",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0083",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"pcs-per-diem\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pcs-per-diem",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0084",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"fitrep-reporting-cycle\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "fitrep-reporting-cycle",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0085",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"court-martial-and-njp-pay-impact\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "court-martial-and-njp-pay-impact",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0086",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"basic-needs-allowance\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "basic-needs-allowance",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0087",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"involuntary-separations\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "involuntary-separations",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0088",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"apply-for-gtcc\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "apply-for-gtcc",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0089",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"long-term-tdy\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "long-term-tdy",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0090",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"tdy-tad-overview\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "tdy-tad-overview",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0091",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"dislocation-allowance\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "dislocation-allowance",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0092",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"awards-overview\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "awards-overview",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0093",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"advance-and-excess-leave\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "advance-and-excess-leave",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0094",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"obligated-service-for-promotion\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "obligated-service-for-promotion",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0095",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"_deprecated_dts_single_page\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "_deprecated_dts_single_page",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0096",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"foreign-language-proficiency-bonus\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "foreign-language-proficiency-bonus",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0097",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"standard-vs-restricted-iba\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "standard-vs-restricted-iba",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0098",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"voluntary-separations\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "voluntary-separations",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0099",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"rr-and-srr-leave-programs\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "rr-and-srr-leave-programs",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0100",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"transition-requirements\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "transition-requirements",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0101",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"dts-voucher-approval-process\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "dts-voucher-approval-process",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0102",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"failure-of-selection\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "failure-of-selection",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0103",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"illness-or-injury-payments\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "illness-or-injury-payments",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0104",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"diving-duty-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "diving-duty-pay",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0105",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"bankruptcy-and-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "bankruptcy-and-pay",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0106",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"reserve-maternity-leave\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "reserve-maternity-leave",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0107",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"career-sea-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "career-sea-pay",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0108",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"article-138-and-ig-complaints\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "article-138-and-ig-complaints",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0109",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"aviation-incentive-pays\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "aviation-incentive-pays",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0110",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"njp-non-judicial-punishment\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "njp-non-judicial-punishment",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0111",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"gtcc-split-disbursement\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "gtcc-split-disbursement",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0112",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"sexual-assault-reporting-svc\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "sexual-assault-reporting-svc",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0113",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"_deprecated_gtcc_single_page\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "_deprecated_gtcc_single_page",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0114",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"aviation-bonus\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "aviation-bonus",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0115",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"oconus-tour-extension-incentive\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "oconus-tour-extension-incentive",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0116",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"remedial-selection\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "remedial-selection",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0117",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"non-competitive-cpl-to-sgt-promotions\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "non-competitive-cpl-to-sgt-promotions",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0118",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"marksmanship-badges\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "marksmanship-badges",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0119",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"reserve-retirement\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "reserve-retirement",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0120",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"family-law-for-marines\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "family-law-for-marines",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0121",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"special-leave-accrual\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "special-leave-accrual",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0122",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"submitting-dts-vouchers\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "submitting-dts-vouchers",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0123",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"continuation-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "continuation-pay",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0124",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"legal-services-overview\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "legal-services-overview",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0125",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"meritorious-promotions\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "meritorious-promotions",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0126",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"reserve-parental-leave\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "reserve-parental-leave",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0127",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"body-composition-reporting\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "body-composition-reporting",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0128",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"gtcc-overview\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "gtcc-overview",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0129",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"dts-profile-and-setup\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "dts-profile-and-setup",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0130",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"hazardous-duty-incentive-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "hazardous-duty-incentive-pay",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0131",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"advance-and-emergency-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "advance-and-emergency-pay",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0132",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"tdy-per-diem\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "tdy-per-diem",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0133",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"adverse-fitreps\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "adverse-fitreps",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0134",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"selection-board-preparation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "selection-board-preparation",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0135",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"officer-promotion-boards\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "officer-promotion-boards",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0136",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"comparable-grades\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "comparable-grades",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0137",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"leave-problems-and-fixes\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "leave-problems-and-fixes",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0138",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"verifying-your-awards\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "verifying-your-awards",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0139",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"pay-problems-and-fixes\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pay-problems-and-fixes",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0140",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"fitrep-sections-and-marking\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "fitrep-sections-and-marking",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0141",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"terminal-leave\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "terminal-leave",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0142",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"separation-retirement-accession-travel\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "separation-retirement-accession-travel",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0143",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"duty-station-incentive\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "duty-station-incentive",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0144",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"wearing-your-awards\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "wearing-your-awards",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0145",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"family-docs\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "family-docs",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0146",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"unit-awards\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "unit-awards",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0147",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"separations-and-retirement-overview\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "separations-and-retirement-overview",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0148",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"limited-duty\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "limited-duty",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0149",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"snco-selection-boards\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "snco-selection-boards",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0150",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"combat-zone-tax-exclusion\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "combat-zone-tax-exclusion",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0151",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"federal-tax-withholding\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "federal-tax-withholding",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0152",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"administrative-separation\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "administrative-separation",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0153",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"receiving-an-award\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "receiving-an-award",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0154",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"academic-fitreps\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "academic-fitreps",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0155",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"pcs-and-awards-timing\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pcs-and-awards-timing",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0156",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"personal-military-decorations\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "personal-military-decorations",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0157",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"member-and-dependent-travel\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "member-and-dependent-travel",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0158",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"high-deployment-allowance\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "high-deployment-allowance",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0159",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"master-brief-sheet\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "master-brief-sheet",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0160",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"powers-of-attorney-and-wills\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "powers-of-attorney-and-wills",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0161",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"officer-bonuses\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "officer-bonuses",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0162",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"reserve-pay-and-entitlements\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "reserve-pay-and-entitlements",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0163",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"basic-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "basic-pay",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0164",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"health-professions-officer-pays\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "health-professions-officer-pays",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0165",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"retirement-types-and-eligibility\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "retirement-types-and-eligibility",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0166",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"dts-roles-and-routing\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "dts-roles-and-routing",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0167",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"household-goods-and-ppm\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "household-goods-and-ppm",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0168",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"promotions-overview\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "promotions-overview",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0169",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"review-mctfs\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "review-mctfs",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0170",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"jepes-junior-enlisted\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "jepes-junior-enlisted",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0171",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"retirement-awards-and-dd214\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "retirement-awards-and-dd214",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0172",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"human-breast-milk-shipment\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "human-breast-milk-shipment",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0173",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"bas\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "bas",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0174",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"oconus-cola\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "oconus-cola",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0175",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"court-martial-process\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "court-martial-process",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0176",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"disability-evaluation-system\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "disability-evaluation-system",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0177",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"hostile-fire-and-imminent-danger-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "hostile-fire-and-imminent-danger-pay",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0178",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"pov-shipment-and-mileage\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pov-shipment-and-mileage",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0179",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"separation-pay-and-final-pay\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "separation-pay-and-final-pay",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0180",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"spd-and-re-codes\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "spd-and-re-codes",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0181",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"reporting-senior-and-reviewing-officer-roles\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "reporting-senior-and-reviewing-officer-roles",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0182",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"campaign-and-service-medals\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "campaign-and-service-medals",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0183",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"retired-pay-and-sbp\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "retired-pay-and-sbp",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0184",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"pet-transportation-allowance\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "pet-transportation-allowance",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0185",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"retirement-timeline\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "retirement-timeline",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0186",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"clothing-monetary-allowances\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "clothing-monetary-allowances",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0187",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"volunteer-supplemental-incentive\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "volunteer-supplemental-incentive",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0188",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"liberty-and-special-liberty\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "liberty-and-special-liberty",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0189",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"apes-and-fitrep-administration\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "apes-and-fitrep-administration",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0190",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"promotion-delays-and-revocations\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "promotion-delays-and-revocations",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0191",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"joining-a-unit\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "joining-a-unit",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0192",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"gtcc-account-management\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "gtcc-account-management",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0193",
+      "severity": "minor",
+      "rule": "orphan-slug",
+      "file": "src/generated/marines.json",
+      "message": "marines slug \"gtcc-misuse-and-suspension\" has no nav entry, no inbound link, and no relatedRoles inbound.",
+      "snippet": "gtcc-misuse-and-suspension",
+      "fix": "Add href to src/lib/role-trees.ts marines tree or wire an inbound link."
+    },
+    {
+      "id": "CL-0491",
+      "severity": "minor",
+      "rule": "orphan-slug-rollup",
+      "file": "src/generated/",
+      "message": "140 additional orphan slugs not enumerated. Cap reached.",
+      "fix": "Add nav entries or relatedRoles wiring for the long tail."
+    },
+    {
+      "id": "CL-0001",
+      "severity": "nit",
+      "rule": "citation-coverage-strong",
+      "file": "content/admin/",
+      "message": "admin citation coverage 90.0% (5578 of 6200 references resolved). Top unresolved: NAVMC 10922 x43; MCO 1400.31C x14; SECNAVINST 5730.5 x11; SECNAVINST 1400.1B x9; MOL Users Manual x8",
+      "snippet": "NAVMC 10922 x43; MCO 1400.31C x14; SECNAVINST 5730.5 x11; SECNAVINST 1400.1B x9; MOL Users Manual x8"
+    },
+    {
+      "id": "CL-0492",
+      "severity": "nit",
+      "rule": "citations-stubs-pending",
+      "file": "content/citations/_stubs/",
+      "message": "221 citation stubs pending review.",
+      "fix": "Review each stub. Move approved files into content/citations/."
+    }
+  ]
+}

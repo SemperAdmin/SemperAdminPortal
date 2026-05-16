@@ -148,6 +148,26 @@ export default function SeparationsAndRetirementLanding() {
           MMSR-6 (Retired Services).
         </p>
       </section>
+
+      <section className="mt-6 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-5">
+        <h2 className="text-lg font-bold">AI prompt reference</h2>
+        <p className="mt-2 text-sm">
+          The Semper Admin AI Field Manual Category 02 (Personnel
+          Administration) contains 10 prompts directly relevant to separation
+          and retirement actions, including the EAS Separation Package
+          Checklist, hardship discharge requests, and legal hold actions. The
+          EAS Separation Mission Pack (Cat 02 + 09 + 08) bundles these prompts
+          for end-to-end workflow. See the{" "}
+          <Link
+            href="/marines/semper-admin-ai-field-manual"
+            className="text-[var(--color-primary)] underline"
+          >
+            Semper Admin AI Field Manual
+          </Link>{" "}
+          for the full library, the 20 Laws of LLM Prompts, the Trust but
+          Verify checklist, and the PDF download.
+        </p>
+      </section>
     </div>
   );
 }

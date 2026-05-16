@@ -30,7 +30,8 @@ export function ChecklistTool({ title, items, className }: ChecklistToolProps) {
       else next.add(id);
       return next;
     });
-  const pct = items.length === 0 ? 0 : (checked.size / items.length) * 100;
+  const list: ChecklistItem[] = Array.isArray(items) ? items : [];
+  const pct = list.length === 0 ? 0 : (checked.size / list.length) * 100;
   return (
     <Card className={className}>
       <CardHeader>
@@ -51,7 +52,7 @@ export function ChecklistTool({ title, items, className }: ChecklistToolProps) {
       </CardHeader>
       <CardContent>
         <ul className="space-y-2">
-          {items.map((it) => {
+          {list.map((it) => {
             const isChecked = checked.has(it.id);
             return (
               <li key={it.id}>

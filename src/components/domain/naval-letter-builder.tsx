@@ -19,7 +19,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Badge } from "@/components/ui/badge";
+import { Pill } from "@/components/ui/pill";
 import { Plus, Trash2, FileDown, Loader2, Info } from "lucide-react";
 import { logAuditEvent } from "@/lib/security/audit-log";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
@@ -502,7 +502,7 @@ export function NavalLetterBuilder() {
         <CardContent className="space-y-2">
           {form.references.map((r, i) => (
             <div key={i} className="flex items-center gap-2">
-              <Badge variant="muted">({String.fromCharCode(97 + i)})</Badge>
+              <Pill variant="neutral">({String.fromCharCode(97 + i)})</Pill>
               <Input value={r} onChange={(e) => updateRef(i, e.target.value)} />
               <Button size="icon" variant="ghost" onClick={() => removeRef(i)} aria-label={`Remove reference ${i + 1}`}>
                 <Trash2 className="size-4" />
@@ -522,7 +522,7 @@ export function NavalLetterBuilder() {
         <CardContent className="space-y-2">
           {form.enclosures.map((r, i) => (
             <div key={i} className="flex items-center gap-2">
-              <Badge variant="muted">({i + 1})</Badge>
+              <Pill variant="neutral">({i + 1})</Pill>
               <Input value={r} onChange={(e) => updateEnc(i, e.target.value)} />
               <Button size="icon" variant="ghost" onClick={() => removeEnc(i)} aria-label={`Remove enclosure ${i + 1}`}>
                 <Trash2 className="size-4" />
@@ -561,7 +561,7 @@ export function NavalLetterBuilder() {
               style={{ paddingLeft: `${b.level * 12 + 12}px` }}
             >
               <div className="mb-2 flex items-center gap-2">
-                <Badge variant="secondary">Level {b.level}</Badge>
+                <Pill variant="neutral">Level {b.level}</Pill>
                 <Input
                   placeholder="Optional title (underlined)"
                   value={b.title ?? ""}

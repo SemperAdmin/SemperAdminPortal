@@ -4,6 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { ArrowRight, Search, ShieldCheck } from "lucide-react";
 import { Pill } from "@/components/ui/pill";
+import { Callout } from "@/components/domain/callout";
 import { StatusPill } from "@/components/ui/status-pill";
 import { PageHeader } from "@/components/domain/page-header";
 import { MetaRow } from "@/components/domain/meta-row";
@@ -107,7 +108,18 @@ export default function IgmcIndex() {
         />
       </PageHeader>
 
-      <div className="mb-5 flex flex-col gap-3">
+      <Callout variant="info" title="Governing authority">
+        These programs are issued under{' '}
+        <Link
+          href="/citations/mco-5040-6k"
+          className="font-semibold underline-offset-2 hover:underline"
+        >
+          MCO 5040.6K
+        </Link>
+        . Run each FAC against the grading rubric in Chapter 4 of the Order.
+      </Callout>
+
+      <div className="mb-5 mt-6 flex flex-col gap-3">
         <label className="relative block">
           <span className="sr-only">Search by program number or title</span>
           <Search

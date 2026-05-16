@@ -6,12 +6,13 @@ import { Callout } from "./callout";
 import { Citation } from "./citation";
 import { IPACRoutingCallout } from "./ipac-routing-callout";
 import { IPACvsUnitDecisionMatrix } from "./ipac-vs-unit-decision-matrix";
+import { ChecklistTool } from "./checklist-tool";
 
 /**
- * MdxContent - v1.3.
+ * MdxContent - v1.4.
  * Server Component MDX renderer.
- * Components map exposes Callout, Citation, IPACRoutingCallout, and
- * IPACvsUnitDecisionMatrix to MDX authors.
+ * Components map exposes Callout, Citation, IPACRoutingCallout,
+ * IPACvsUnitDecisionMatrix, and ChecklistTool to MDX authors.
  *
  * Usage in MDX:
  *   <Callout variant="warning">Verify against MCO before action.</Callout>
@@ -22,12 +23,20 @@ import { IPACvsUnitDecisionMatrix } from "./ipac-vs-unit-decision-matrix";
  *   <IPACvsUnitDecisionMatrix rows={[
  *     { unit: "Stage join package", ipac: "Run MCTFS join transaction" },
  *   ]} />
+ *   <ChecklistTool
+ *     title="90-second checklist"
+ *     items={[
+ *       { id: "1", label: "Verify Marine safety", description: "Never leave alone" },
+ *       { id: "2", label: "Activate emergency care if active attempt" },
+ *     ]}
+ *   />
  */
 const components = {
   Callout,
   Citation,
   IPACRoutingCallout,
   IPACvsUnitDecisionMatrix,
+  ChecklistTool,
 };
 
 export async function MdxContent({

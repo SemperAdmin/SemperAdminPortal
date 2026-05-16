@@ -10,11 +10,8 @@ import {
   Moon,
   Sun,
   Monitor,
-  Hash,
   CornerDownLeft,
 } from "lucide-react";
-import { useRoleStore } from "@/lib/store/role-store";
-import { ROLES, ROLE_META } from "@/lib/roles";
 import { NAV_ITEMS } from "@/lib/navigation";
 import { cn } from "@/lib/utils";
 
@@ -25,7 +22,6 @@ export interface CommandPaletteProps {
 
 export function CommandPalette({ open, onOpenChange }: CommandPaletteProps) {
   const router = useRouter();
-  const setRole = useRoleStore((s) => s.setRole);
   const { setTheme } = useTheme();
 
   const run = React.useCallback(
@@ -90,32 +86,7 @@ export function CommandPalette({ open, onOpenChange }: CommandPaletteProps) {
                 })}
               </Command.Group>
 
-              <Command.Group
-                heading="Switch role"
-                className="px-1 pb-2 pt-1 text-xs font-semibold uppercase tracking-wider text-[var(--color-muted-foreground)]"
-              >
-                {ROLES.map((r) => {
-                  const meta = ROLE_META[r];
-                  return (
-                    <Command.Item
-                      key={r}
-                      value={`role ${meta.label} ${meta.description}`}
-                      onSelect={() => run(() => setRole(r))}
-                      className="flex cursor-pointer items-center gap-2 rounded-[var(--radius-button)] px-2 py-1.5 text-sm aria-selected:bg-[var(--color-muted)]"
-                    >
-                      <Hash className="size-4 shrink-0 opacity-70" aria-hidden="true" />
-                      <span className="flex-1 truncate">
-                        Role: {meta.label}
-                      </span>
-                      <span className="truncate text-xs text-[var(--color-muted-foreground)]">
-                        {meta.description}
-                      </span>
-                    </Command.Item>
-                  );
-                })}
-              </Command.Group>
-
-              <Command.Group
+<Command.Group
                 heading="Theme"
                 className="px-1 pb-1 pt-1 text-xs font-semibold uppercase tracking-wider text-[var(--color-muted-foreground)]"
               >
