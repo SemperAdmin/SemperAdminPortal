@@ -48,13 +48,6 @@ interface RecentEntry {
   lastVerified: string;
 }
 
-const ROLE_LABEL: Record<RoleKey, string> = {
-  marine: "Marines",
-  leader: "Leader",
-  commander: "Commander",
-  admin: "Admin",
-};
-
 function humanizeSegment(segment: string): string {
   return segment
     .split("-")

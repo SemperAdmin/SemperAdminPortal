@@ -32,8 +32,8 @@ const mdxCollections = [
   "policies",
   "situations",
   "snippets",
-  "videos",
   "references",
+  "videos",
   "tools",
   "links",
   "reports",
@@ -263,14 +263,4 @@ if (citationIndex) {
         " of " +
         totalScanned +
         " references resolved. " +
-        scanUnresolved +
-        " unresolved. Run scripts/citations-audit.py for detail."
-    );
-  } else if (totalScanned > 0) {
-    console.log(
-      "[content-sync] citations coverage 100%. " +
-        totalScanned +
-        " references resolved."
-    );
-  }
-}
+  
