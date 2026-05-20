@@ -1,0 +1,4253 @@
+{
+  "faNumber": "5110.2",
+  "sourceDoc": "POSTAL AFFAIRS (5110.2) - INSPECTOR GUIDE - REBUILT.docx",
+  "lastVerified": "2026-05-20",
+  "verifiedAtSource": true,
+  "items": {
+    "0101": {
+      "title": "UNIT MAIL HANDLING ORDER",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 7",
+            "text": "Unit Mail Handling Order. All Marine Corps commands operating UMRs are responsible for publishing mail handling instructions by current command signature authority. The Unit Mail Handling Order shall include: a. The complete command and personnel mailing addresses. b. Serving MPO location and hours of operation. c. UMR location and hours of operation. d. USPS mail collection box location and hours of last pick up of outgoing mail. e. Mail call time. f. Custom regulations where applicable. g. Command Official Mail Program. h. Security of mail and postal effects. i. Official accountable mail e.g., registered, certified, etc., identification. j. MHPs for personnel temporarily absent from the command e.g., TAD, annual leave, etc. k. Mail delivery during exercises. l. Suspicious package procedures e.g., bombs, anthrax, etc. m. Current directory service application. n. Maintenance of the DFC system. o. Additional postal information deemed appropriate by the promulgating authority. p. Units without UMRs shall provide policy on the incoming and outgoing of official mail."
+          }
+        ],
+        "summary": "Each Marine Corps command operating a UMR must publish a Unit Mail Handling Order signed by current command signature authority and containing all sixteen required elements (a through p)."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The Order",
+          "actions": [
+            "Request current Unit Mail Handling Order from the Unit Mail Officer.",
+            "Confirm current command signature authority."
+          ],
+          "callout": "No Unit Mail Handling Order published",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Required Elements (a-p)",
+          "actions": [
+            "Confirm coverage of all sixteen lettered elements."
+          ],
+          "callout": "Order missing one or more required elements (a-p)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Distribution",
+          "actions": [
+            "Confirm copy on file in UMR.",
+            "Confirm UMR personnel have access."
+          ],
+          "callout": "Order signed by prior command authority and not refreshed",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No order published.",
+            "Missing elements.",
+            "Signed by prior command authority.",
+            "Not on file in UMR."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who signed the current order?",
+        "When was it last updated?",
+        "Where is it filed?"
+      ],
+      "verification": [
+        "Current order on file.",
+        "Signed under current command authority.",
+        "All sixteen elements present.",
+        "Accessible to UMR personnel."
+      ],
+      "verified": true
+    },
+    "0102": {
+      "title": "UNIT MAIL OFFICER AND ASSISTANT APPOINTMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 1, par 2j(1)",
+            "text": "Appoint in writing a primary Unit Mail Officer and Assistant Unit Mail Officer(s) to supervise the daily operation of the UMR."
+          },
+          {
+            "citation": "MPM, par 12.2.i",
+            "text": "Unit, organization, or agency personnel, assigned to and responsible for performing unit mail handling duties, will be appointed on a Designation Letter signed by the responsible commander."
+          },
+          {
+            "citation": "MPM, par 12.2.j",
+            "text": "Units/organizations will maintain a copy of the Designation Letter of Appointment documentation for unit personnel, provide and maintain a current copy at the MPA, and provide one to the individual(s)."
+          },
+          {
+            "citation": "MPM, par 2.18.a",
+            "text": "Designate in writing a Unit Postal Officer (UPO) or alternate to cover absences of the UPO that exceed more than four days."
+          }
+        ],
+        "summary": "The Commanding Officer must appoint, in writing, a primary Unit Mail Officer and Assistant Unit Mail Officer(s) on a signed Designation Letter. Copies must be maintained at the unit, provided to the MPA, and given to the appointees."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Appointment Letters",
+          "actions": [
+            "Request current UMO and Assistant UMO appointment letters."
+          ],
+          "callout": "No Unit Mail Officer or Assistant appointed in writing",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Signatures And Currency",
+          "actions": [
+            "Confirm letters signed by current CO.",
+            "Confirm letters not lapsed."
+          ],
+          "callout": "Appointment letter not current or signed by prior CO",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Distribution",
+          "actions": [
+            "Confirm copy on file at unit.",
+            "Confirm copy provided to MPA.",
+            "Confirm copy provided to appointee."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No assistant appointed.",
+            "Letter signed by prior CO.",
+            "MPA does not have a copy."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who is the current UMO and Assistant?",
+        "When were they appointed?",
+        "Where are copies filed?"
+      ],
+      "verification": [
+        "Current letters on file for primary and assistant.",
+        "Signed by current CO.",
+        "Copies at MPA and with appointees."
+      ],
+      "verified": true
+    },
+    "0103": {
+      "title": "MINIMUM TWO MAIL CLERKS OR ORDERLIES PER UNIT/SECTION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 3e",
+            "text": "Two Unit Mail Clerks/Orderlies shall be appointed at a minimum per each unit/section via DD Form 2260 and DD Form 285."
+          }
+        ],
+        "summary": "Each unit or section must appoint at a minimum two Unit Mail Clerks or Mail Orderlies, with appointment evidenced by DD Form 2260 and DD Form 285."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Appointment Records",
+          "actions": [
+            "Request DD Forms 2260 and 285 for each unit and section."
+          ]
+        },
+        {
+          "step": "Verify Minimum Two Per Section",
+          "actions": [
+            "Count appointed clerks/orderlies per section.",
+            "Identify any section with fewer than two."
+          ],
+          "callout": "Fewer than two Mail Clerks/Orderlies appointed per unit or section",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Only one appointee per section.",
+            "Missing DD Form 285 or 2260."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How many clerks or orderlies are appointed per section?",
+        "Where are DD Forms 285 and 2260 filed?"
+      ],
+      "verification": [
+        "At least two clerks/orderlies appointed per unit/section.",
+        "DD Forms 2260 and 285 on file."
+      ],
+      "verified": true
+    },
+    "0104": {
+      "title": "AUTHORIZATION TO RECEIVE AND OPEN OFFICIAL MAIL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20c",
+            "text": "Commanding Officers must designate in writing personnel e.g., Unit OMM, etc., authorized to receipt and open official mail, to include official accountable mail addressed to the Commanding Officer. Official mail/official accountable mail must not be opened in the UMR under any circumstance."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20d",
+            "text": "Unit Mail Clerks/Orderlies shall not be authorized agents on the designation letter to receipt and open official mail/official accountable mail."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20e",
+            "text": "The authorization letter must be signed by the current Commanding Officer. By Direction authority is not authorized. The authorization letter must contain a sample signature of all individuals authorized."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20f",
+            "text": "Separate letters may authorize more than one individual for each type of mail. However, any changes to an authorization letter shall void the authority and require a new authorization letter. Authorization letters must be maintained for two years after cancellation in the UMR files."
+          }
+        ],
+        "summary": "The current Commanding Officer must designate, in writing, personnel authorized to receive and open official and official accountable mail. Letters must be signed by the current CO (no By Direction authority), include sample signatures, exclude Unit Mail Clerks/Orderlies, and be retained two years after cancellation."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Authorization Letter",
+          "actions": [
+            "Request the current designation letter."
+          ],
+          "callout": "No Commanding Officer designation letter for receipt/opening of official mail",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Signature And Sample Signatures",
+          "actions": [
+            "Confirm signed by current CO (not By Direction).",
+            "Confirm sample signatures of each authorized individual."
+          ],
+          "callout": "Letter signed By Direction or by prior CO",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Personnel Eligibility",
+          "actions": [
+            "Confirm no Unit Mail Clerks or Orderlies are listed."
+          ],
+          "callout": "Mail Clerks/Orderlies listed as authorized agents (prohibited)",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Retention",
+          "actions": [
+            "Confirm cancelled letters retained two years."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Letter signed By Direction.",
+            "Mail Clerk/Orderly listed.",
+            "Sample signatures missing.",
+            "Cancelled letters not retained."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who is currently authorized to receive and open official mail?",
+        "How are changes processed?"
+      ],
+      "verification": [
+        "Letter signed by current CO.",
+        "Sample signatures present.",
+        "No clerks/orderlies designated.",
+        "Cancelled letters retained two years."
+      ],
+      "verified": true
+    },
+    "0105": {
+      "title": "DESIGNATION DOCUMENTS COMPLETION AND MAINTENANCE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 3i",
+            "text": "UMRs must file original appointment letter, DD Form 285, or PS Form 3801 and provide a copy to the appointee."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 3h",
+            "text": "The MPO must retain a copy of Unit Mail Clerk DD Form 285 or PS Form 3801."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 3f",
+            "text": "Annotate on assigned DD Form 285 the type of mail the appointee is authorized to handle, e.g., OFFICIAL ALL, OFFICIAL EXCEPT ACCOUNTABLE, or PERSONAL EXCEPT ACCOUNTBALE."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 4c",
+            "text": "Retain appointment, support, and revocation documents on file for two years, per reference (e)."
+          }
+        ],
+        "summary": "Original appointment letters, DD Forms 285, or PS Forms 3801 must be filed in the UMR with copies to the appointee and the MPO. Mail authorization type must be annotated on DD Form 285. Appointment, support, and revocation documents are retained for two years."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Designation File",
+          "actions": [
+            "Request the UMR's appointment file."
+          ]
+        },
+        {
+          "step": "Verify Required Items",
+          "actions": [
+            "Confirm original appointment letters present.",
+            "Confirm DD Form 285 or PS Form 3801 with mail authorization type annotated.",
+            "Confirm copies provided to appointee and MPO."
+          ],
+          "callout": "DD Form 285 mail authorization type not annotated",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Retention",
+          "actions": [
+            "Confirm revocation documents retained two years."
+          ],
+          "callout": "Revocation documents not retained two years",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "DD Form 285 mail type not annotated.",
+            "Original letter not on file.",
+            "MPO copy missing."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where do you file appointment documents?",
+        "How do you annotate authorized mail type?"
+      ],
+      "verification": [
+        "Original appointment letters on file.",
+        "DD Form 285 mail type annotated.",
+        "Copies at MPO and with appointee.",
+        "Revocation documents retained two years."
+      ],
+      "verified": true
+    },
+    "0106": {
+      "title": "MAIL HANDLING TRAINING WITHIN REQUIRED PERIOD",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 1, par 2l(1)",
+            "text": "Ensure Unit Mail Clerks complete the Mail Clerk Indoctrination Course within 30 days of assuming mail handling duties."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 1, par 2l(5)",
+            "text": "Ensure Mail Orderlies receive unit level training on MHPs prior to assuming mail handling duties."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 5b",
+            "text": "Unit Mail Officers/Unit Assistant Mail Officers must attend and complete the resident/distant Mail clerk Indoctrination Course within 90 days of appointment."
+          },
+          {
+            "citation": "MPM, par 2.19.a",
+            "text": "Attend required mail handling training within 30 days of designation."
+          }
+        ],
+        "summary": "Unit Mail Officers and Assistants must complete the Mail Clerk Indoctrination Course within 90 days of appointment. Unit Mail Clerks must complete it within 30 days of assuming duties. Mail Orderlies must receive unit-level MHP training prior to assuming duties."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Training Records",
+          "actions": [
+            "Request Mail Clerk Indoctrination Course certificates for UMO, Assistant, and clerks.",
+            "Request Mail Orderly training documentation."
+          ]
+        },
+        {
+          "step": "Verify Timing",
+          "actions": [
+            "Compute days from appointment to course completion.",
+            "Confirm UMO and Assistant completed within 90 days.",
+            "Confirm clerks completed within 30 days.",
+            "Confirm orderlies trained prior to assuming duties."
+          ],
+          "callout": "UMO/Assistant not trained within 90 days of appointment",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "UMO or Assistant not trained within 90 days.",
+            "Clerks not trained within 30 days.",
+            "Orderly training not documented."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When was each appointee trained?",
+        "How is Mail Orderly unit-level training documented?"
+      ],
+      "verification": [
+        "UMO/Assistant certified within 90 days.",
+        "Clerks certified within 30 days.",
+        "Mail Orderlies trained prior to assuming duties."
+      ],
+      "verified": true
+    },
+    "0107": {
+      "title": "UMR STRUCTURAL REQUIREMENTS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 9",
+            "text": "Unit Mailroom Structural Requirements. UMRs design/construction shall provide adequate space and security for mail, per references (b), DoD UFC (4-010-01), and DoD UFC (4-020-01). The following are minimum structural requirements for a UMR located in a permanent structure: a. All locks and door hinges must be mounted inside or in such a manner to prevent easy removal. Existing door hinges mounted on the outside of the UMR must be spot welded. b. All accessible windows i.e., windows on the first floor, ground level, reachable via catwalk, or adjoining rooftops shall be equipped with bars/heavy wire mesh to prevent intrusion. c. Walls and ceilings must be constructed to prevent forcible entry. d. Mail delivery receptacles must be installed to prevent access to/from other receptacles or a customer service window."
+          }
+        ],
+        "summary": "The UMR must meet four minimum structural requirements covering door hinge security, window protection, wall/ceiling integrity, and receptacle isolation."
+      },
+      "howToInspect": [
+        {
+          "step": "Walk The UMR",
+          "actions": [
+            "Inspect doors and locks.",
+            "Inspect accessible windows.",
+            "Inspect walls and ceilings.",
+            "Inspect receptacles."
+          ]
+        },
+        {
+          "step": "Verify Each Requirement",
+          "actions": [
+            "Confirm hinges mounted inside or spot welded.",
+            "Confirm accessible windows have bars or heavy wire mesh.",
+            "Confirm walls and ceilings prevent forcible entry.",
+            "Confirm receptacles prevent cross access."
+          ],
+          "callout": "UMR structural requirements not met (hinges, windows, walls, receptacles)",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Exterior hinges not spot welded.",
+            "Accessible window lacks bars or mesh.",
+            "Receptacle gap allows cross access."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When was the UMR last inspected for structural compliance?",
+        "What corrective work is pending?"
+      ],
+      "verification": [
+        "Hinges mounted inside or welded.",
+        "Accessible windows protected.",
+        "Walls/ceilings intact.",
+        "Receptacles isolated."
+      ],
+      "verified": true
+    },
+    "0108": {
+      "title": "SPACE AND EQUIPMENT FOR MAIL HANDLING AND SECURITY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 1, par 2j(6)",
+            "text": "Provide adequate space and equipment necessary for proper mail handling/security. Ensure Unit Mail Clerks and Orderlies have sufficient time to perform their duties."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 9",
+            "text": "Unit Mailroom Structural Requirements. UMRs design/construction shall provide adequate space and security for mail, per references (b), DoD UFC (4-010-01), and DoD UFC (4-020-01)."
+          }
+        ],
+        "summary": "The Commanding Officer must provide adequate space and equipment for mail handling and security and must ensure clerks and orderlies have sufficient time to perform their duties."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect Workspace And Equipment",
+          "actions": [
+            "Confirm sufficient workspace for sorting, distribution, and storage.",
+            "Confirm essential equipment present (scales, locks, file cabinets, sorting tables, computer)."
+          ]
+        },
+        {
+          "step": "Interview Clerks And Orderlies",
+          "actions": [
+            "Confirm sufficient duty time available."
+          ],
+          "callout": "Mail Clerks/Orderlies lack sufficient time to perform duties",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Workspace inadequate.",
+            "Equipment missing.",
+            "Insufficient duty time."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What equipment is in the UMR?",
+        "Do you have sufficient duty time?"
+      ],
+      "verification": [
+        "Adequate workspace.",
+        "Essential equipment present.",
+        "Sufficient duty time confirmed."
+      ],
+      "verified": true
+    },
+    "0109": {
+      "title": "RESTRICTED ACCESS TO UMR KEYS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 10a",
+            "text": "The Unit Mail Officer shall be the custodian of the UMR keys. A list of individuals issued a key must be maintained in a key control log. Strictly control and safeguard the keys at all times. The primary Unit Mail Clerk must annotate the date/time key is received and returned with signature. The key must be return to the Unit Mail Officer daily for proper storage. At no time shall the Unit Mail Clerk be authorized to keep the UMR key overnight."
+          }
+        ],
+        "summary": "The Unit Mail Officer is the key custodian. A key control log must list every individual issued a key. The primary Unit Mail Clerk must annotate date/time and signature for each receipt and return. Keys must be returned to the UMO daily and never kept overnight by a clerk."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect The Key Control Log",
+          "actions": [
+            "Pull the current log."
+          ],
+          "callout": "UMO not maintaining custody of UMR keys",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Entries",
+          "actions": [
+            "Confirm date, time, signature for each receipt and return.",
+            "Confirm daily returns to UMO."
+          ],
+          "callout": "UMR key retained overnight by Mail Clerk (prohibited)",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Overnight Restriction",
+          "actions": [
+            "Confirm no overnight retention by clerks."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Log incomplete.",
+            "Daily return not documented.",
+            "Overnight retention by clerk."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who is the key custodian?",
+        "How is daily return documented?"
+      ],
+      "verification": [
+        "UMO is key custodian.",
+        "Log shows date/time/signature entries.",
+        "Daily returns documented.",
+        "No overnight retention."
+      ],
+      "verified": true
+    },
+    "0110": {
+      "title": "DUPLICATE KEYS AND COMBINATIONS SECURED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 10c",
+            "text": "The duplicate key(s) or combination to the UMR shall be sealed in a plain envelope or a PS Form 3977, Duplicate Key Envelope (Figure 3-5). A PS Form 3977 can be obtained through the serving MPO. (1) Prior to sealing the duplicate key or combination in the envelope ensure they work properly. The Unit Mail Officer and designated Unit Mail Clerk must seal/sign across the back flap of the envelope. (2) The Unit Mail Officer and designated Unit Mail Clerk shall endorse the front of the envelope to show its contents and date sealed. PS Form 3977 must be kept in a safe that is controlled by the Unit Mail Officer or designated representative."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 10d",
+            "text": "A new PS Form 3977 shall be prepared when the duplicate key or combination is used. The Unit Mail Officer or designated representative holding the duplicate keys must sign the key log book to indicate the date received and returned."
+          }
+        ],
+        "summary": "Duplicate keys or combinations must be sealed in a PS Form 3977 (or plain envelope) signed by the UMO and designated Mail Clerk on both seal and front, stored in a UMO-controlled safe. A new envelope is required after each use, with key log entries on receipt and return. Inspector Note: USPS Handbook F-101 and USPS RE-05 are cited in the checklist. Inspector should verify the current PS Form 3977 procedures against those source documents on site, as wording may have updated since policy issuance."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect The Duplicate Key Envelope",
+          "actions": [
+            "Confirm PS Form 3977 or plain envelope present.",
+            "Confirm UMO and Mail Clerk signatures on seal and front.",
+            "Confirm contents and date sealed shown."
+          ],
+          "callout": "Duplicate keys/combinations not properly sealed and stored",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Safe Storage",
+          "actions": [
+            "Confirm storage in UMO-controlled safe."
+          ],
+          "callout": "PS Form 3977 not renewed after each use",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Use Tracking",
+          "actions": [
+            "Confirm a new PS Form 3977 was prepared after each use.",
+            "Confirm log entries on receipt and return."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Envelope not sealed properly.",
+            "No safe storage.",
+            "Old envelope still in use after withdrawal."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where is the duplicate key envelope stored?",
+        "When was it last opened?"
+      ],
+      "verification": [
+        "Envelope properly sealed and signed.",
+        "Stored in UMO safe.",
+        "New envelope after each use.",
+        "Log entries documented."
+      ],
+      "verified": true
+    },
+    "0111": {
+      "title": "DAILY KEY RETURN AND LOG ANNOTATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 10a",
+            "text": "The primary Unit Mail Clerk must annotate the date/time key is received and returned with signature. The key must be return to the Unit Mail Officer daily for proper storage. At no time shall the Unit Mail Clerk be authorized to keep the UMR key overnight."
+          }
+        ],
+        "summary": "The Unit Mail Clerk must return the UMR key to the UMO daily. Each receipt and return must be annotated in the key control log with date, time, and signature. Overnight retention by a clerk is prohibited. Inspector Note: USPS ASM par 273.434 is cited in the checklist. Inspector should verify the corresponding USPS ASM section on site since USPS publications update independently."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect The Key Control Log",
+          "actions": [
+            "Pull the current log."
+          ]
+        },
+        {
+          "step": "Verify Daily Returns",
+          "actions": [
+            "Confirm each entry shows date, time, signature on receipt and return.",
+            "Confirm returns occur each operating day."
+          ],
+          "callout": "Overnight retention by clerk",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missing return entries.",
+            "Overnight retention by clerk."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "At what time do you return the key each day?",
+        "Where is the key stored overnight?"
+      ],
+      "verification": [
+        "Key returned to UMO daily.",
+        "Log entries complete with date, time, signature.",
+        "No overnight retention by clerk."
+      ],
+      "verified": true
+    },
+    "0112": {
+      "title": "SEPARATE KEY CONTROL LOG FOR CLERK-TO-CLERK TRANSFER",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 10b",
+            "text": "Maintain a separate key control log to transfer the key to another designated Unit Mail Clerk. This key control log must be kept in the UMR."
+          }
+        ],
+        "summary": "The UMR must maintain a separate key control log for transferring the key from one designated Mail Clerk to another. This log must be kept in the UMR."
+      },
+      "howToInspect": [
+        {
+          "step": "Locate The Transfer Log",
+          "actions": [
+            "Confirm a separate log exists for clerk-to-clerk key transfers."
+          ],
+          "callout": "No separate clerk-to-clerk transfer log maintained",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify In-UMR Location",
+          "actions": [
+            "Confirm log is kept in the UMR."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No separate transfer log maintained.",
+            "Log not kept in UMR."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where is the clerk-to-clerk transfer log kept?"
+      ],
+      "verification": [
+        "Separate transfer log present.",
+        "Kept in UMR."
+      ],
+      "verified": true
+    },
+    "0113": {
+      "title": "DD FORM 1115 DISPLAYED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 8h",
+            "text": "All UMRs must prominently display DD Form 1115, Mailroom No Admittance Except to Authorized Personnel, on or near the entrance. DD Form 1115 shall provide an example of a personal/command mailing address and hours of operation (Figure 3-4)."
+          }
+        ],
+        "summary": "The UMR must prominently display DD Form 1115 on or near the entrance, with example personal/command mailing address and hours of operation."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect Entrance Posting",
+          "actions": [
+            "Confirm DD Form 1115 posted prominently on or near the entrance."
+          ],
+          "callout": "DD Form 1115 not displayed at UMR entrance",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Content",
+          "actions": [
+            "Confirm sample mailing address present.",
+            "Confirm hours of operation shown."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "DD Form 1115 not posted.",
+            "Hours of operation not shown.",
+            "Sample address missing."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where is DD Form 1115 posted?"
+      ],
+      "verification": [
+        "DD Form 1115 prominently displayed.",
+        "Sample address present.",
+        "Hours of operation shown."
+      ],
+      "verified": true
+    },
+    "0114": {
+      "title": "ENTRY LIMITED TO AUTHORIZED PERSONNEL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 1, par 2m(8)",
+            "text": "Ensure entry to the UMR is limited to authorized personnel."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 8g",
+            "text": "Limit access to the UMR to designated postal personnel conducting official business e.g., inspections, site visits, etc. Allow maintenance personnel and work details access only when escorted or under constant surveillance by a Unit Mail Clerk. The Unit Mail Clerk must verify identification and authorization of all personnel prior to allowing entry into the UMR."
+          }
+        ],
+        "summary": "UMR entry is limited to authorized postal personnel on official business. Maintenance personnel and work details may enter only when escorted or under constant surveillance. Mail Clerks must verify identification and authorization prior to allowing entry."
+      },
+      "howToInspect": [
+        {
+          "step": "Interview The Clerk On Entry Procedures",
+          "actions": [
+            "Confirm clerk verifies ID and authorization before entry."
+          ],
+          "callout": "Unauthorized personnel allowed entry to UMR",
+          "severity": "finding"
+        },
+        {
+          "step": "Inspect Maintenance/Work Detail Procedures",
+          "actions": [
+            "Confirm escort or constant surveillance during entry by non-postal personnel."
+          ],
+          "callout": "Maintenance personnel unescorted in UMR",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Unescorted entry by non-postal personnel.",
+            "No ID verification."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you verify entry authorization?",
+        "How do you handle maintenance personnel access?"
+      ],
+      "verification": [
+        "Entry limited to authorized personnel.",
+        "ID and authorization verified prior to entry.",
+        "Non-postal personnel escorted."
+      ],
+      "verified": true
+    },
+    "0115": {
+      "title": "UMR FREE OF ITEMS UNRELATED TO MAIL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 8a",
+            "text": "Only U.S. mail, postal records, and essential furniture shall be in the UMR. Personal briefcases, backpacks, paper sacks, or other containers are not authorized in the UMR. The UMR must not be used to store gear that is not related to the delivery or processing of U.S. mail."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 8b",
+            "text": "Items sent via guard mail and the direct delivery of Federal Express, United Parcel Service, or other private carriers to business addresses must not be processed/stored in the UMR. These types of items are not U.S. mail."
+          }
+        ],
+        "summary": "Only U.S. mail, postal records, and essential furniture are authorized in the UMR. Personal containers, non-mail gear, and items delivered by private carriers must not be present."
+      },
+      "howToInspect": [
+        {
+          "step": "Walk The UMR",
+          "actions": [
+            "Identify items present."
+          ],
+          "callout": "UMR contains items unrelated to U.S. mail or postal records",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Item Authorization",
+          "actions": [
+            "Confirm each item is U.S. mail, postal record, or essential furniture.",
+            "Identify personal containers or non-mail items.",
+            "Identify private carrier items."
+          ],
+          "callout": "Private carrier (FedEx, UPS) items stored in UMR (prohibited)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Personal backpacks or briefcases present.",
+            "FedEx/UPS items stored in UMR.",
+            "Non-mail gear stored."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What is in the UMR that is not U.S. mail or furniture?"
+      ],
+      "verification": [
+        "Only authorized items present.",
+        "No personal containers.",
+        "No private carrier items."
+      ],
+      "verified": true
+    },
+    "0116": {
+      "title": "WEEKLY UNANNOUNCED UMR INSPECTIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 14a",
+            "text": "The current IGMC FA Checklist, Postal Affairs (UMR) must be used to conduct the inspection requirement. The inspection checklist can be downloaded at the IGMC website. Inspections must not be routine to establish a trend."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 14b",
+            "text": "Unit Mail Officers or Assistant Unit Mail Officers shall supervise the UMR daily and ensure the mail is handled correctly/promptly. Random and unannounced weekly inspections shall be conducted as required."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 14c",
+            "text": "Weekly UMR inspection checklists may be destroyed after the unit has been inspected by a Marine Corps Postal Inspector. The quarterly UMR inspection checklist shall be kept on file in the UMR for two years."
+          }
+        ],
+        "summary": "The UMO or Assistant UMO must conduct random, unannounced weekly UMR inspections using the current IGMC FA Checklist, Postal Affairs. Weekly checklists may be destroyed after Postal Inspector inspection. Quarterly UMR checklists are retained in the UMR for two years."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Weekly Inspection Checklists",
+          "actions": [
+            "Request weekly inspection records for the prior quarter."
+          ],
+          "callout": "Random weekly UMR inspections not conducted",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Current IG Checklist Used",
+          "actions": [
+            "Confirm the most recent IGMC checklist version was used."
+          ]
+        },
+        {
+          "step": "Verify Cadence And Randomness",
+          "actions": [
+            "Confirm weekly cadence.",
+            "Confirm inspections not routine in timing."
+          ],
+          "callout": "Quarterly UMR inspection checklists not retained two years",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Quarterly Retention",
+          "actions": [
+            "Confirm quarterly checklists retained two years."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Outdated checklist version used.",
+            "Inspections conducted at predictable times.",
+            "Quarterly checklists not retained."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Which IG checklist version do you use?",
+        "How do you randomize inspection timing?"
+      ],
+      "verification": [
+        "Current IG checklist version used.",
+        "Weekly cadence with random timing.",
+        "Quarterly checklists retained two years."
+      ],
+      "verified": true
+    },
+    "0117": {
+      "title": "SUSTAINED COMPUTER ACCESS FOR DIRECTORY MAIL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 1, par 2j(7)",
+            "text": "Provide sustained and networked computer access in the UMR to process directory mail via the Directory Service Program."
+          }
+        ],
+        "summary": "The Commanding Officer must provide sustained and networked computer access in the UMR for processing directory mail via the Directory Service Program."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect The UMR Computer",
+          "actions": [
+            "Confirm computer present in UMR."
+          ],
+          "callout": "No sustained networked computer access in UMR",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Network Access",
+          "actions": [
+            "Confirm network connectivity.",
+            "Confirm Directory Service Program access."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No computer in UMR.",
+            "Computer present but not networked.",
+            "No DSP access."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When did you last process directory mail electronically?"
+      ],
+      "verification": [
+        "Sustained computer access in UMR.",
+        "Networked.",
+        "Directory Service Program accessible."
+      ],
+      "verified": true
+    },
+    "0118": {
+      "title": "CURRENT PUBLICATIONS AND DIRECTIVES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 6",
+            "text": "Publications. Each UMR is required to maintain copies of the listed current postal publications/directives. Electronic copies meet this requirement. a. DoD Postal Manual. b. MCO 5110.4B, Marine Corps Postal Affairs and Official Mail Program. c. Installation/Base Order for Postal Affairs. d. Unit Mail Handling Order."
+          }
+        ],
+        "summary": "Each UMR must maintain current copies of: DoD Postal Manual, MCO 5110.4B, Installation/Base Order for Postal Affairs, and Unit Mail Handling Order. Electronic copies satisfy this requirement."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect Publications",
+          "actions": [
+            "Confirm DoD Postal Manual present.",
+            "Confirm MCO 5110.4B present.",
+            "Confirm Installation/Base Order present.",
+            "Confirm Unit Mail Handling Order present."
+          ],
+          "callout": "Required publication(s) missing from UMR",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm each is the current edition."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missing publication.",
+            "Outdated edition."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where do you access each required publication?"
+      ],
+      "verification": [
+        "All four publications present (paper or electronic).",
+        "All current editions."
+      ],
+      "verified": true
+    },
+    "0119": {
+      "title": "DD FORM 285 IN POSSESSION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 1, par 2m(1)",
+            "text": "Physically retain one copy of DD Form 285 at all times when performing mail handling duties."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 1, par 2n(1)",
+            "text": "Physically retain one copy of DD Form 285 when performing mail handling duties and safeguard the mail at all times."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 8d",
+            "text": "Unit Mail Clerks/Orderlies must present their issued DD Form 285, DoD Common Access Card (CAC), or appropriate identification when performing mail handling duties. Appointment letter and identification shall be validated prior to the delivery of mail."
+          }
+        ],
+        "summary": "Mail Clerks and Orderlies must physically retain one copy of DD Form 285 at all times when performing mail handling duties and must present it (or CAC/appropriate ID) when receipting for mail."
+      },
+      "howToInspect": [
+        {
+          "step": "Spot-Check Clerks And Orderlies",
+          "actions": [
+            "Ask each on duty to produce DD Form 285."
+          ],
+          "callout": "Mail Clerk/Orderly not in possession of DD Form 285",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm form is current.",
+            "Confirm matches the appointment letter."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "DD Form 285 not in possession.",
+            "Expired form.",
+            "Form does not match appointment."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "May I see your DD Form 285?"
+      ],
+      "verification": [
+        "Each clerk/orderly produced DD Form 285.",
+        "Forms current and matching appointment."
+      ],
+      "verified": true
+    },
+    "0120": {
+      "title": "PROTECTION OF MAIL TO/FROM MPA",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 11a",
+            "text": "Use a closed-body government vehicle equipped with lockable doors to transport mail to and from the serving MPO. When other types of government vehicles are used, Unit Mail Clerks/Orderlies shall ride in the mail hold compartment and maintain visual contact with the mail. Always protect the mail from inclement weather."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 11b",
+            "text": "Privately owned vehicles (POVs) shall not be used to transport unit mail. Commanders can request a written temporary POV authorization to the MCPO/MPO Supervisor. The use of POVs to transport mail must not be a routine or permanent standing operating procedure. It is the command's responsibility to coordinate and obtain a government vehicle to meet the mail transportation requirement."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 11c",
+            "text": "Passengers not authorized to handle mail must not have access to the mail during vehicle transport."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 11d",
+            "text": "USPS equipment e.g., letter trays, flat bins, etc., shall only be used to transport mail. USPS equipment shall be returned to the serving MPO when not in use."
+          }
+        ],
+        "summary": "Mail to/from the MPA must move in a closed-body government vehicle with lockable doors, with the clerk or orderly maintaining visual contact and protecting mail from weather. POVs are not authorized except by written temporary authorization. Unauthorized passengers must not access the mail. USPS equipment is used only for mail transport."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect The Transport Procedure",
+          "actions": [
+            "Identify the vehicle in use.",
+            "Confirm closed-body with lockable doors."
+          ],
+          "callout": "POV used to transport mail without written authorization",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify POV Restriction",
+          "actions": [
+            "Confirm no routine POV use.",
+            "If POV used, pull written temporary authorization."
+          ],
+          "callout": "Unauthorized passengers had access to mail in transit",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Equipment Use",
+          "actions": [
+            "Confirm USPS equipment used only for mail."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "POV used without authorization.",
+            "Unauthorized passengers present.",
+            "Mail not protected from weather."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What vehicle is used to transport mail?",
+        "How do you protect mail in transit?"
+      ],
+      "verification": [
+        "Closed-body government vehicle used.",
+        "No routine POV use.",
+        "Unauthorized passengers excluded.",
+        "USPS equipment used only for mail."
+      ],
+      "verified": true
+    },
+    "0121": {
+      "title": "PRIVILEGED NATURE OF MAIL AND POSTAL RECORDS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 12a",
+            "text": "The privacy of mail and mail records must not be violated. Unit Mail Clerks/Orderlies shall not break the seal of any mail matter. Information about mail or mail records must not be released without authorization. Requests for information shall be referred to the Unit Mail Officer."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 12b",
+            "text": "Personal addresses are privileged information and shall not be divulged to anyone except in the course of official business."
+          }
+        ],
+        "summary": "Mail Clerks and Orderlies must not break mail seals or release information about mail or mail records without authorization. Personal addresses are privileged. Requests for information must be referred to the UMO."
+      },
+      "howToInspect": [
+        {
+          "step": "Interview Mail Clerks",
+          "actions": [
+            "Ask about handling of information requests.",
+            "Ask about personal address requests."
+          ],
+          "callout": "Mail Clerk released information about mail without authorization",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Knowledge",
+          "actions": [
+            "Confirm clerks know to refer requests to UMO.",
+            "Confirm clerks know not to break seals."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Clerk releases address without authorization.",
+            "Clerk breaks seal."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What do you do if asked for a service member's mailing address?",
+        "What if you find a mail piece unsealed?"
+      ],
+      "verification": [
+        "Clerks understand privacy duties.",
+        "Clerks refer information requests to UMO.",
+        "Clerks do not break seals."
+      ],
+      "verified": true
+    },
+    "0122": {
+      "title": "MAIL DATE STAMP ON REVERSE SIDE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 1, par 2m(4)",
+            "text": "Back stamp all mail received in the UMR to show date of receipt."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 15d",
+            "text": "Unit Mail Clerks are required to date stamp the reverse side of the mail articles received. The UMR must return daily or the next business day all rework/redirect mail to the serving MPO for proper disposition. Mail shall not be held for more than 24 hours, not including weekends and holidays, without proper supporting documentation."
+          }
+        ],
+        "summary": "Mail received in the UMR must be date stamped on the reverse side to show day of receipt. Rework or redirect mail must be returned to the MPO the next business day, with mail not held over 24 hours absent supporting documentation."
+      },
+      "howToInspect": [
+        {
+          "step": "Spot-Check Recently Received Mail",
+          "actions": [
+            "Pull a sample of mail received."
+          ],
+          "callout": "Mail not date-stamped on reverse side",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Back Stamping",
+          "actions": [
+            "Confirm reverse-side date stamp present.",
+            "Confirm date matches receipt."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Mail not back stamped.",
+            "Stamp on front instead of reverse.",
+            "Date inaccurate."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When do you back stamp incoming mail?"
+      ],
+      "verification": [
+        "Back stamp on reverse side.",
+        "Date matches receipt.",
+        "Rework returned next business day."
+      ],
+      "verified": true
+    },
+    "0123": {
+      "title": "MAIL ORDERLIES PICK UP MAIL AT DESIGNATED TIMES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 1, par 2n(2)",
+            "text": "Pick up mail daily and ensure personal mail is delivered only to the addressee. Subsequent delivery to addressee's Officer in Charge (OIC)/Non-commissioned Officer in Charge (NCOIC) is not authorized."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 15e",
+            "text": "The UMR must maintain a daily mail delivery receipt log for the Mail Orderlies. The mail delivery receipt log annotations must match assigned section, DD Form 285, and DD Form 2260. The mail receipt log sheet shall be kept for 1 year and then destroyed."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 15f",
+            "text": "Mail Orderlies must pick up mail at the designated time daily. Mail Orderlies shall return all undeliverable mail to the UMR daily. Supporting documentation e.g., TAD, annual leave, etc., shall be provided stating the reason for mail non-delivery. Mail Orderlies must not make endorsements on the mail."
+          }
+        ],
+        "summary": "Mail Orderlies must pick up mail at designated times daily, deliver personal mail only to the addressee, return undeliverable mail to the UMR each day with supporting documentation, and not endorse mail. The UMR maintains a daily delivery receipt log retained one year."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The Daily Delivery Log",
+          "actions": [
+            "Confirm pickup times annotated.",
+            "Confirm pickup occurs at designated times."
+          ]
+        },
+        {
+          "step": "Spot-Check Mail Orderlies",
+          "actions": [
+            "Ask about pickup schedule.",
+            "Confirm undeliverable mail returned same day with documentation."
+          ],
+          "callout": "Orderly endorsed mail (prohibited)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Pickup at irregular times.",
+            "Undeliverable mail not returned.",
+            "Orderlies endorse mail.",
+            "Delivery to NCOIC instead of addressee."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What times do you pick up mail?",
+        "What do you do with undeliverable mail?"
+      ],
+      "verification": [
+        "Pickup at designated times daily.",
+        "Daily delivery log present.",
+        "Undeliverable mail returned same day with documentation.",
+        "No orderly endorsements on mail."
+      ],
+      "verified": true
+    },
+    "0124": {
+      "title": "TIMELY MOBILE UNIT MAIL ROUTING INFORMATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 28a",
+            "text": "Unit Mail Officers shall submit a mail routing request (Figure 3-14) to the serving MPO 30 days prior to a unit deployment."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 28b",
+            "text": "The MPO must provide a deployed mailing address and MHP no earlier than 20 days from the estimated date of departure."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 28c",
+            "text": "Under no circumstance shall a unit utilized another unit's deploying or sister service address in order to circumvent the 20 day policy. Unauthorized actions cause mail delays and returns."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 28e",
+            "text": "The Unit Mail Officer is responsible to distribute the MHP to supporting units."
+          }
+        ],
+        "summary": "UMOs must submit a mail routing request to the serving MPO 30 days prior to deployment. The MPO provides the deployed address and MHP no earlier than 20 days before departure. UMOs must distribute the MHP to supporting units. Using another unit's deploying address is prohibited."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Recent Deployments",
+          "actions": [
+            "Request list of unit deployments in the last 12 months."
+          ]
+        },
+        {
+          "step": "Pull Routing Requests",
+          "actions": [
+            "Confirm routing request submitted at least 30 days prior."
+          ],
+          "callout": "Mail routing request not submitted 30 days prior to deployment",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify MHP Distribution",
+          "actions": [
+            "Confirm MHP distributed to supporting units."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Routing request submitted late.",
+            "MHP not distributed.",
+            "Use of another unit's address."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When did you submit the most recent routing request?",
+        "How do you distribute the MHP?"
+      ],
+      "verification": [
+        "Routing requests submitted 30 days prior to deployment.",
+        "MHP distributed to supporting units.",
+        "No use of another unit's deploying address."
+      ],
+      "verified": true
+    },
+    "0125": {
+      "title": "ABSENTEE BALLOTING MATERIAL HANDLING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 21",
+            "text": "Absentee Balloting Materials. All voting materials must be processed per the current voting action/support plan. The processing of absentee ballots shall be given special attention and must be handled in the most expeditious manner. UMRs must provide immediate directory service to voting and balloting material."
+          }
+        ],
+        "summary": "All voting and balloting material must be processed per the current voting action/support plan, handled with special attention and expedited, and provided immediate directory service. Inspector Note: MPM par 19.2.a(1) is cited in the checklist. Inspector should verify the corresponding MPM paragraph on site as MPM revisions occur on a defined update cycle."
+      },
+      "howToInspect": [
+        {
+          "step": "Interview Mail Clerks On Ballot Handling",
+          "actions": [
+            "Ask how ballot material is identified and prioritized.",
+            "Confirm clerks understand expedited handling."
+          ]
+        },
+        {
+          "step": "Pull Voting Action/Support Plan",
+          "actions": [
+            "Confirm plan is current and on file."
+          ],
+          "callout": "Ballot material not given expedited handling",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Ballot material handled as routine.",
+            "No voting plan on file.",
+            "No expedited directory service."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What do you do with absentee ballot material?",
+        "Where is the voting plan kept?"
+      ],
+      "verification": [
+        "Voting action/support plan on file.",
+        "Clerks understand expedited handling.",
+        "Immediate directory service provided."
+      ],
+      "verified": true
+    },
+    "0126": {
+      "title": "REFUSED MAIL HANDLING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 17",
+            "text": "Mail Refused. Addressees may refuse mail that they do not want to receive. The addressee must endorse the front of the envelope or wrapper, Refused, with signature and date. If the addressee declines to make the endorsement, the Unit Mail Clerk/Orderly shall endorse the mail Refused by addressee, sign, date, and return it to the serving MPO."
+          }
+        ],
+        "summary": "When an addressee refuses mail, the addressee must endorse the front Refused with signature and date. If the addressee declines, the clerk or orderly endorses Refused by addressee with signature and date and returns it to the serving MPO."
+      },
+      "howToInspect": [
+        {
+          "step": "Interview Mail Clerks",
+          "actions": [
+            "Ask procedure for refused mail.",
+            "Confirm understanding of both addressee endorsement and clerk endorsement options."
+          ],
+          "callout": "Refused mail not properly endorsed before return",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Spot-Check Refused Mail Recently Returned",
+          "actions": [
+            "Confirm proper endorsement before return."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Refused mail not endorsed.",
+            "No date or signature.",
+            "Clerk fails to return to MPO."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What do you do when an addressee refuses mail?"
+      ],
+      "verification": [
+        "Clerks understand refused mail procedure.",
+        "Proper endorsements present on returned mail."
+      ],
+      "verified": true
+    },
+    "0127": {
+      "title": "OPEN BY MISTAKE HANDLING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 18",
+            "text": "Mail Open by Mistake. Mail opened by mistake must be re-sealed, endorsed Opened by Mistake, dated, and signed by the person who opened the mail piece. Mail delivery shall be corrected or returned to the serving MPO."
+          }
+        ],
+        "summary": "Mail opened by mistake must be re-sealed and endorsed Opened by Mistake with date and signature of the person who opened it. Delivery is then corrected or the piece returned to the MPO."
+      },
+      "howToInspect": [
+        {
+          "step": "Interview Mail Clerks",
+          "actions": [
+            "Ask procedure for mail opened by mistake."
+          ],
+          "callout": "Open-by-mistake endorsement not applied",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Endorsement Practice",
+          "actions": [
+            "Confirm clerks know to reseal, endorse, sign, and date."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Endorsement not applied.",
+            "No signature or date.",
+            "Mail not corrected or returned."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What do you do if you open mail by mistake?"
+      ],
+      "verification": [
+        "Clerks understand re-seal and endorsement procedure.",
+        "Date and signature applied."
+      ],
+      "verified": true
+    },
+    "0128": {
+      "title": "MAIL RECEIVED OPEN, DAMAGED, OR MISSING CONTENTS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 15b",
+            "text": "Unit Mail Clerks must ensure any single/close bag damaged articles are properly rewrapped. Every effort shall be made to match articles found loose with their original envelopes or wrappers. Return unmatched articles to the serving MPO."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 15c",
+            "text": "Unit Mail Clerks must endorse damaged articles, Received in damaged condition. Annotate date of receipt, clerk's initials, and identify the unit repairing the article."
+          }
+        ],
+        "summary": "Damaged articles must be rewrapped and endorsed Received in damaged condition with date of receipt, clerk's initials, and identifying unit. Loose articles are matched to their wrappers when possible; unmatched articles are returned to the MPO."
+      },
+      "howToInspect": [
+        {
+          "step": "Interview Mail Clerks",
+          "actions": [
+            "Ask procedure for damaged or open mail."
+          ],
+          "callout": "Damaged article not endorsed Received in damaged condition",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Endorsement Practice",
+          "actions": [
+            "Confirm Received in damaged condition endorsement, with date, initials, and repair unit."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Damaged articles not endorsed.",
+            "Unmatched articles not returned to MPO."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What do you do with damaged mail or loose contents?"
+      ],
+      "verification": [
+        "Clerks understand damage procedure.",
+        "Endorsements include date, initials, and repair unit."
+      ],
+      "verified": true
+    },
+    "0129": {
+      "title": "PS FORM 3849 DELIVERY INSTRUCTIONS FOR PERSONAL ACCOUNTABLE MAIL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 19a",
+            "text": "Addressees are responsible for picking up their own accountable mail. Addressees can authorize a responsible agent to pick up their personal accountable mail. Authorization is provided on reverse side of PS Form 3849 with annotated agent name and signature."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 19b",
+            "text": "Unit Mail Clerks/Orderlies are not authorized to handle personal accountable mail. Unit Mail Clerks shall pick up a PS Form 3849, Deliver Notice/Reminder/Receipt, (Figure 3-6) from the serving MPO. Deliver PS Form 3849 to the responsible Mail Orderly or addressee."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 19c",
+            "text": "A written request for an exception to policy must be submitted to the serving MACOM for approval."
+          }
+        ],
+        "summary": "Addressees pick up their own personal accountable mail. PS Form 3849 reverse side may authorize a responsible agent. Clerks and Orderlies are not authorized to handle personal accountable mail; they only deliver the PS Form 3849 to the orderly or addressee. Exceptions require MACOM approval."
+      },
+      "howToInspect": [
+        {
+          "step": "Interview Mail Clerks And Orderlies",
+          "actions": [
+            "Ask procedure for personal accountable mail."
+          ],
+          "callout": "Clerks handling personal accountable mail (prohibited)",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Knowledge",
+          "actions": [
+            "Confirm clerks know they cannot handle the accountable mail itself.",
+            "Confirm understanding of PS Form 3849 reverse-side authorization."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Clerks handling personal accountable mail.",
+            "PS Form 3849 not used."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What do you do with PS Form 3849?"
+      ],
+      "verification": [
+        "Clerks and orderlies understand PS Form 3849 use.",
+        "No clerk handling of personal accountable mail."
+      ],
+      "verified": true
+    },
+    "0130": {
+      "title": "MAIL ADDRESSED TO MAIL CLERKS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 16e",
+            "text": "Unit Mail Clerk personal mail shall not be opened, read, or stored in the UMR. Designated Mail Orderlies from his/her section must sign for the Unit Mail Clerk's mail and deliver as appropriate."
+          }
+        ],
+        "summary": "Unit Mail Clerks' personal mail must not be opened, read, or stored in the UMR. A designated Mail Orderly from the clerk's section signs for and delivers it."
+      },
+      "howToInspect": [
+        {
+          "step": "Interview Mail Clerks And Orderlies",
+          "actions": [
+            "Confirm clerks do not store or read their own personal mail in UMR."
+          ],
+          "callout": "Mail Clerk personal mail opened/stored in UMR (prohibited)",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Section Orderly Receipt",
+          "actions": [
+            "Confirm section orderly signs for clerk's mail."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Clerks process their own mail.",
+            "Mail stored in UMR.",
+            "No orderly receipt."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who handles mail addressed to you personally?"
+      ],
+      "verification": [
+        "Clerks' personal mail not in UMR.",
+        "Section orderly signs for it."
+      ],
+      "verified": true
+    },
+    "0131": {
+      "title": "MAIL BOMB AND SUSPICIOUS MAIL DETECTION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 6, par 1d",
+            "text": "Immediately notify the MCPO/MPO Supervisor of any suspicious items. If the MCPO is unavailable contact the first responders."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 6, par 2",
+            "text": "Mail Bombs. Mail bombs may exhibit the following unique characteristics that can assist personnel in identifying a suspected letter or parcel: a. Have restricted endorsements such as Personal or Private. b. Have an inaccurate address, name, or title. c. Have distorted handwriting, homemade labels, or cut-and-paste lettering for the name and address. d. Have visible protruding wires, aluminum foil, oil stains, or emit a peculiar odor. e. Have an excessive amount of postage stamps affixed. f. Letters may have a rigid feel or an uneven/lopsided appearance. g. Parcels may have unprofessional wrapping with several combinations of tape used to secure the package. Items may be endorsed Fragile-Handle with Care or Rush-Do-Not-Delay. h. Parcels may have a buzzing, ticking, or sloshing noise."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 6, par 3",
+            "text": "Suspicious Mail. Suspicious mailings that are unable to be verified by the addressee/sender are handled as follows: a. Do not open the article. b. Isolate the article and evacuate the area. c. Do not put the article in water or a confined space i.e., desk drawer, filing cabinet, etc. d. Open windows in the immediate area to assist in venting potentially explosive gases. e. Do not take any chances or worry about possible embarrassment if the item turns out to be a false alarm. Contact the local military law enforcement agency if there is any reason to believe a letter or parcel is dangerous."
+          }
+        ],
+        "summary": "Mail clerks must recognize mail bomb indicators (per Ch. 6 par 2 a-h) and follow suspicious mail procedures (do not open, isolate, evacuate, do not place in water or confined space, open windows, contact law enforcement). The MCPO/MPO Supervisor must be notified immediately or first responders if unavailable. Inspector Note: MPM par 7.2.b and 8.2.j are cited in the checklist. Inspector should verify those paragraphs on site as MPM updates separately from MCO 5110.4B."
+      },
+      "howToInspect": [
+        {
+          "step": "Interview Mail Clerks",
+          "actions": [
+            "Ask the mail bomb indicators they look for.",
+            "Ask the suspicious mail response procedure."
+          ]
+        },
+        {
+          "step": "Verify USPS Poster 84 Display",
+          "actions": [
+            "Confirm Poster 84 displayed in mail handling locations."
+          ],
+          "callout": "Annual mail bomb/suspicious mail training not conducted",
+          "severity": "finding"
+        },
+        {
+          "step": "Confirm Annual Training",
+          "actions": [
+            "Confirm annual mail bomb/suspicious security training coordinated with law enforcement and documented."
+          ],
+          "callout": "USPS Poster 84 not displayed",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Clerks unfamiliar with indicators.",
+            "Poster 84 not posted.",
+            "No annual training."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What characteristics of suspicious mail do you watch for?",
+        "What do you do if you find a suspicious package?"
+      ],
+      "verification": [
+        "Clerks identify indicators correctly.",
+        "USPS Poster 84 displayed.",
+        "Annual training documented."
+      ],
+      "verified": true
+    },
+    "0132": {
+      "title": "MAIL DELIVERY RECEIPT LOG ANNOTATIONS MATCH SECTION, DD FORM 285, AND DD FORM 2260",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 15e",
+            "text": "The UMR must maintain a daily mail delivery receipt log for the Mail Orderlies. The mail delivery receipt log annotations must match assigned section, DD Form 285, and DD Form 2260. The mail receipt log sheet shall be kept for 1 year and then destroyed. The mail receipt log must contain the following information: (1) Section (2) Date and Time (3) Printed last and first name of Mail Orderly (4) Signature of Mail Orderly (5) Remark section for reasons of non-delivery e.g., no mail, no pick up, section day off, etc."
+          }
+        ],
+        "summary": "The daily mail delivery receipt log must contain section, date/time, printed name and signature of Mail Orderly, and a remark section. Annotations must match assigned section, DD Form 285, and DD Form 2260. Logs are retained one year then destroyed."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The Receipt Log And Forms",
+          "actions": [
+            "Pull current and prior month receipt log.",
+            "Pull DD Forms 285 and 2260."
+          ],
+          "callout": "Receipt log section/DD Form 285/2260 mismatch",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Cross-Match Section Annotations",
+          "actions": [
+            "For each orderly, confirm log section matches DD Form 285 and DD Form 2260."
+          ]
+        },
+        {
+          "step": "Verify Required Fields",
+          "actions": [
+            "Confirm section, date/time, printed name, signature, remarks present."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Section mismatch.",
+            "Missing fields.",
+            "Logs retained beyond one year."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you reconcile log entries with DD Form 285 and 2260?"
+      ],
+      "verification": [
+        "Log entries match section, DD Form 285, DD Form 2260.",
+        "All required fields present.",
+        "One-year retention enforced."
+      ],
+      "verified": true
+    },
+    "0133": {
+      "title": "MAIL ORDERLY RECEIPT LOGS PROPERLY COMPLETED AND MAINTAINED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 15e",
+            "text": "The UMR must maintain a daily mail delivery receipt log for the Mail Orderlies. The mail delivery receipt log annotations must match assigned section, DD Form 285, and DD Form 2260. The mail receipt log sheet shall be kept for 1 year and then destroyed. The mail receipt log must contain the following information: (1) Section (2) Date and Time (3) Printed last and first name of Mail Orderly (4) Signature of Mail Orderly (5) Remark section for reasons of non-delivery e.g., no mail, no pick up, section day off, etc."
+          }
+        ],
+        "summary": "Mail Orderly receipt logs must capture section, date/time, printed name, signature, and remarks daily. Logs are retained one year."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Receipt Logs",
+          "actions": [
+            "Pull current month and prior three months."
+          ]
+        },
+        {
+          "step": "Verify Each Entry Complete",
+          "actions": [
+            "Confirm all required fields populated.",
+            "Confirm remarks for non-delivery entries."
+          ],
+          "callout": "Receipt log missing required fields",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Retention",
+          "actions": [
+            "Confirm retention is one year."
+          ],
+          "callout": "Receipt logs retained beyond one year",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Logs incomplete.",
+            "Remarks blank for non-delivery.",
+            "Retention exceeds one year."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you complete the receipt log each day?"
+      ],
+      "verification": [
+        "Logs complete with all required fields.",
+        "Remarks populated.",
+        "One-year retention."
+      ],
+      "verified": true
+    },
+    "0134": {
+      "title": "MAIL DELIVERED TO AUTHORIZED SECTION MAIL ORDERLY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 15e",
+            "text": "The UMR must maintain a daily mail delivery receipt log for the Mail Orderlies. The mail delivery receipt log annotations must match assigned section, DD Form 285, and DD Form 2260."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 15f",
+            "text": "Mail Orderlies must pick up mail at the designated time daily. Mail Orderlies shall return all undeliverable mail to the UMR daily. Supporting documentation e.g., TAD, annual leave, etc., shall be provided stating the reason for mail non-delivery. Mail Orderlies must not make endorsements on the mail."
+          }
+        ],
+        "summary": "Mail is delivered only to authorized section Mail Orderlies, with delivery captured in the daily receipt log matched to DD Form 285 and DD Form 2260."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull DD Form 285/2260 And Receipt Logs",
+          "actions": [
+            "Confirm each delivery receipt aligns to an authorized orderly."
+          ],
+          "callout": "Mail delivered to non-authorized orderly",
+          "severity": "finding"
+        },
+        {
+          "step": "Spot-Check At The Window",
+          "actions": [
+            "Observe a delivery transaction.",
+            "Confirm orderly ID verified before mail handed over."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Delivery to non-authorized personnel.",
+            "Log entry without matching authorization."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you verify the orderly is authorized for the section?"
+      ],
+      "verification": [
+        "Delivery only to authorized orderlies.",
+        "Log entries align to DD Form 285/2260."
+      ],
+      "verified": true
+    },
+    "0135": {
+      "title": "CHAIN OF RECEIPTS FOR OFFICIAL ACCOUNTABLE MAIL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20g",
+            "text": "A chain of delivery receipts shall cover all accountable mail. The Unit Mail Clerk must be able to account for all accountable mail. Accountability shall be provided by physical possession of article, or by showing delivery of article to authorized agent."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20h",
+            "text": "The serving post office shall prepare a PS Form 3883, Firm Delivery Receipt for Accountable and Bulk Delivery Mail (Figure 3-8). The MPO or serving post office must retain the original copy. The Unit Mail Clerk shall receive a copy with the mail piece. The Unit Mail Clerk shall ensure the accountable mail pieces are listed on PS Form 3883 and are in good delivery condition. PS Forms 3883 must be retained in the UMR for two years."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20i",
+            "text": "The Unit Mail Clerk shall prepare for delivery accountable mail items on a new PS Form 3883 or logbook that similarly captures the delivery details of the accountable mail e.g., registered mail, article number, etc. The Unit Mail Clerk must annotate date delivered, delivered by, authorized agent's printed name, and signature."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20j",
+            "text": "Official accountable mail stored in the UMR overnight must have an approved security container that meets the SECRET requirements, per reference (p). UMRs that do not meet the requirement must return all undelivered official accountable mail on PS Form 3883 daily to the serving MPO."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20k",
+            "text": "The Unit Mail Officer must initial daily each PS Form 3883 for effective delivery verification. A transfer of accountable mail to subsequent Unit Mail Clerk must require delivery on PS Form 3883. A new PS Form 3883 shall be prepared to make effective delivery to an authorized agent."
+          }
+        ],
+        "summary": "All accountable mail must be covered by a chain of delivery receipts using PS Form 3883, with date delivered, delivered by, authorized agent's printed name and signature. Forms are retained two years in the UMR. Overnight storage requires SECRET container or daily return to MPO. UMO initials each PS Form 3883 daily."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull PS Form 3883 Files",
+          "actions": [
+            "Pull current and prior 12 months."
+          ]
+        },
+        {
+          "step": "Verify Chain Completeness",
+          "actions": [
+            "Confirm each accountable item traceable from MPO receipt to authorized agent."
+          ],
+          "callout": "UMO not initialing PS Form 3883 daily",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify UMO Daily Initials",
+          "actions": [
+            "Confirm UMO initials each form daily."
+          ]
+        },
+        {
+          "step": "Verify Retention",
+          "actions": [
+            "Confirm two-year retention."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Chain breaks.",
+            "Missing signatures.",
+            "UMO not initialing.",
+            "Forms not retained two years."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through the chain of receipts for one piece of accountable mail?",
+        "Where do you store accountable mail overnight?"
+      ],
+      "verification": [
+        "Chain of PS Form 3883 receipts complete.",
+        "Required annotations present.",
+        "UMO daily initials.",
+        "Two-year retention."
+      ],
+      "verified": true
+    },
+    "0136": {
+      "title": "RETURN OF UNDELIVERED OFFICIAL ACCOUNTABLE MAIL TO MPA",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20j",
+            "text": "Official accountable mail stored in the UMR overnight must have an approved security container that meets the SECRET requirements, per reference (p). UMRs that do not meet the requirement must return all undelivered official accountable mail on PS Form 3883 daily to the serving MPO."
+          }
+        ],
+        "summary": "Official accountable mail held overnight requires an approved SECRET-grade security container. UMRs without one must return all undelivered official accountable mail to the serving MPO daily on PS Form 3883."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect Overnight Storage",
+          "actions": [
+            "Confirm SECRET-grade container present, or"
+          ],
+          "callout": "Accountable mail stored overnight without SECRET container or daily MPO return",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Daily Return Practice",
+          "actions": [
+            "Confirm undelivered accountable mail returned daily on PS Form 3883."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Accountable mail stored overnight without SECRET container.",
+            "No daily return."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where do you store accountable mail that cannot be delivered same day?"
+      ],
+      "verification": [
+        "SECRET container or daily return practice in place.",
+        "PS Form 3883 documents returns."
+      ],
+      "verified": true
+    },
+    "0137": {
+      "title": "DAILY VERIFICATION OF ACCOUNTABLE MAIL DELIVERY RECORDS BY UMO",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20k",
+            "text": "The Unit Mail Officer must initial daily each PS Form 3883 for effective delivery verification. A transfer of accountable mail to subsequent Unit Mail Clerk must require delivery on PS Form 3883. A new PS Form 3883 shall be prepared to make effective delivery to an authorized agent."
+          }
+        ],
+        "summary": "The UMO must initial each PS Form 3883 daily for delivery verification. Clerk-to-clerk transfers and final delivery to authorized agents require a new PS Form 3883."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Daily PS Form 3883",
+          "actions": [
+            "Pull current month."
+          ],
+          "callout": "UMO not initialing PS Form 3883 daily",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify UMO Daily Initial",
+          "actions": [
+            "Confirm UMO initial on each daily form."
+          ]
+        },
+        {
+          "step": "Verify Transfer Practice",
+          "actions": [
+            "Confirm new PS Form 3883 used for clerk-to-clerk transfer and final delivery."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "UMO initials missing on some days.",
+            "Same PS Form 3883 used for transfer.",
+            "No final delivery PS Form 3883."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When do you initial PS Form 3883 each day?"
+      ],
+      "verification": [
+        "UMO daily initials present.",
+        "Separate PS Form 3883 for transfers and final delivery."
+      ],
+      "verified": true
+    },
+    "0138": {
+      "title": "CHECK IN/OUT OF UMR",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 23",
+            "text": "Directory Service. Directory service is provided to maintain the proper disposition of U.S. mail received by the command. An accurate and timely directory service is an important mail handling responsibility. The command must ensure all personnel check in/out of the UMR. Service members must provide current directory file information to the UMR when checking in/out."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 26b",
+            "text": "Transferred Personnel. All service members are required to check out with the UMR. Service members must provide a forwarding address or instructions on how to handle mail received after transfer. Failure to do so may result in the delay of forwarding or delivery of their mail."
+          }
+        ],
+        "summary": "The command must require all personnel to check in and out of the UMR. Service members provide current directory file information and, on departure, a forwarding address or mail-handling instructions."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Check-In/Out Records",
+          "actions": [
+            "Pull current period."
+          ],
+          "callout": "Forwarding addresses not captured at check-out",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Procedure",
+          "actions": [
+            "Confirm command requires UMR check in and check out for all personnel.",
+            "Confirm forwarding addresses captured at check out."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No check-in/out procedure.",
+            "Forwarding addresses not captured."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How are personnel routed through the UMR on check in and check out?"
+      ],
+      "verification": [
+        "UMR check in/out required.",
+        "Directory information captured.",
+        "Forwarding addresses captured at check out."
+      ],
+      "verified": true
+    },
+    "0139": {
+      "title": "RECEPTACLES ISSUED TO AUTHORIZED PATRONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 2a",
+            "text": "Receptacles are assigned to personnel where USPS does not provide mail delivery service. Do not issue receptacles to military retirees who are not authorized MPO privileges or reside in the U.S."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 2b",
+            "text": "Exceptions to policy may be granted via a written request to the MACOM. Request must contain duration and special circumstance that serves the best interest of the command. Receptacles are not authorized to be used for any private business venture."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 3a",
+            "text": "An advance receptacle may be reserved/issued under the Sponsorship Program. Do not assign the receptacle earlier than 90 days prior to the first day of the reporting month."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 6d",
+            "text": "Do not reissue a receptacle to a former member unless proof of MPO privilege status is established. Receptacles must only be reissued to a member twice for failure to claim mail. If the sponsor fails to claim mail from the receptacle, close the receptacle, and provide general delivery service."
+          }
+        ],
+        "summary": "Receptacles are issued to authorized patrons only where USPS does not provide service; not to retirees without MPO privileges or residing in the U.S.; not for private business. Exceptions require written MACOM approval. Advance assignment is allowed up to 90 days prior under the Sponsorship Program. Reissue limits apply."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull A Sample Of Active Receptacle Records",
+          "actions": [
+            "Pull DD Form 2262 records."
+          ]
+        },
+        {
+          "step": "Verify Patron Eligibility",
+          "actions": [
+            "Confirm patron is authorized.",
+            "Confirm no retiree without MPO privileges.",
+            "Confirm no private business use."
+          ],
+          "callout": "Receptacle issued to ineligible patron",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify MACOM Exceptions",
+          "actions": [
+            "For any exception, pull the approval letter."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Receptacle issued to ineligible patron.",
+            "Advance assignment beyond 90 days.",
+            "No MACOM approval for exception."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you verify patron eligibility?"
+      ],
+      "verification": [
+        "All sampled receptacles issued to eligible patrons.",
+        "Exceptions documented.",
+        "No private business use."
+      ],
+      "verified": true
+    },
+    "0140": {
+      "title": "RECEPTACLE ASSIGNMENT FORMS AND INFORMATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 2d",
+            "text": "Record the member's name, date of receptacle issue, receptacle combination, and the combination change date on a DD Form 2262, Receptacle Record (Figure 4-1). Transfer the last entry of completed receptacle record to subsequent DD Form 2262, as required. DD Form 2262 must be retained for two years after last recorded close date."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 2f",
+            "text": "Record the member's name, rank, EDIPI and receptacle assignment date on the DFC. List the sponsored dependent names in DROPPED block, and annotate receptacle number in UNIT ASSIGNED block. File the DFC per the DFC system requirements."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 2j",
+            "text": "Provide the combination or key to the member on DD Form 2263, Mailing Address/Combination Notice (Figure 4-2), or similar notice. Advise the sponsor to memorize the combination and to read the general instructions on the form. The combination must not be given to anyone other than the member."
+          }
+        ],
+        "summary": "Each receptacle assignment requires a DD Form 2262 (Receptacle Record), DFC update with name/rank/EDIPI/assignment date, and a DD Form 2263 (or similar notice) issued to the patron with combination or key. DD Form 2262 is retained two years after last close."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull DD Form 2262 And DFC Records",
+          "actions": [
+            "Pull current files."
+          ],
+          "callout": "DFC not updated with receptacle assignment",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Form Completeness",
+          "actions": [
+            "Confirm name, issue date, combination, change date on DD Form 2262.",
+            "Confirm DFC reflects receptacle assignment."
+          ]
+        },
+        {
+          "step": "Verify DD Form 2263 Issued",
+          "actions": [
+            "Confirm DD Form 2263 or equivalent provided to patron."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "DD Form 2262 incomplete.",
+            "DFC not updated.",
+            "DD Form 2263 not issued."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What forms accompany a receptacle assignment?"
+      ],
+      "verification": [
+        "DD Form 2262 complete.",
+        "DFC updated.",
+        "DD Form 2263 issued."
+      ],
+      "verified": true
+    },
+    "0141": {
+      "title": "RECEPTACLES CORRECTLY CLOSED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 9",
+            "text": "Receptacle Withdrawal. a. Remove all mail from the receptacle and provide directory service. b. Remove the name label and block the rear of the receptacle with PS Item 0-53A - Closures, Lockbox, Number 1 or other suitable device. c. Remove the DD Form 2262 from the active file and record the date receptacle closed. d. Record and change the key lock cylinder/combination."
+          }
+        ],
+        "summary": "Receptacle closure requires removing all mail with directory service, removing the name label and blocking the rear with PS Item 0-53A or suitable device, removing the DD Form 2262 from active file with close date recorded, and changing the key lock cylinder or combination."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull A Sample Of Closed Receptacles",
+          "actions": [
+            "Pull DD Form 2262 records with close dates."
+          ]
+        },
+        {
+          "step": "Verify Closure Steps",
+          "actions": [
+            "Confirm name label removed.",
+            "Confirm rear blocked.",
+            "Confirm DD Form 2262 in inactive file with close date.",
+            "Confirm key cylinder or combination changed."
+          ],
+          "callout": "Receptacle closure steps not completed (label, block, cylinder change)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Name label not removed.",
+            "Rear not blocked.",
+            "Combination not changed."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through your receptacle close-out procedure?"
+      ],
+      "verification": [
+        "Closure steps documented.",
+        "Rear blocked.",
+        "Combination/cylinder changed."
+      ],
+      "verified": true
+    },
+    "0142": {
+      "title": "RECEPTACLE KEY LOCK CYLINDER/COMBINATION PROCEDURES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 7",
+            "text": "Key/Combination Maintenance. a. Change the key lock cylinder or combination when believed to be compromised and when a receptacle is closed. b. Closed receptacles shall be changed within 5 working days. c. Record the member's name, receptacle issue date, and serial number of the key or the combination on the DD Form 2262. d. Ensure an adequate supply of key lock cylinders are retained. Cylinders locks may be rotated with other separate nests of receptacles. Rotate cylinder locks from each nest every 3 months. e. Receptacles must be maintained without charge to the customer. Retain at least two duplicate keys for each receptacle. The combination entered on the DD Form 2262 is the only combination retained. Keep duplicate keys and combinations in a safe place out of the customer's reach."
+          }
+        ],
+        "summary": "Cylinders or combinations must be changed on suspected compromise and on receptacle closure (within 5 working days). DD Form 2262 records member name, issue date, and key serial or combination. Cylinder locks are rotated every 3 months. At least two duplicate keys retained, stored out of customer reach."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect DD Form 2262 Entries",
+          "actions": [
+            "Confirm name, issue date, and serial or combination present."
+          ]
+        },
+        {
+          "step": "Verify Closure Timing",
+          "actions": [
+            "Confirm cylinder or combination changed within 5 working days of closure."
+          ],
+          "callout": "Duplicate keys accessible to customers",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Rotation Cadence",
+          "actions": [
+            "Confirm cylinder rotation occurs every 3 months."
+          ]
+        },
+        {
+          "step": "Verify Duplicate Storage",
+          "actions": [
+            "Confirm duplicates secured out of customer reach."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Late cylinder change.",
+            "No rotation log.",
+            "Duplicates accessible to customers."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you track rotation cadence?",
+        "Where are duplicate keys stored?"
+      ],
+      "verification": [
+        "DD Form 2262 complete.",
+        "Closure changes within 5 days.",
+        "3-month rotation documented.",
+        "Duplicates secured."
+      ],
+      "verified": true
+    },
+    "0143": {
+      "title": "RECEPTACLE MAINTENANCE AND RECORDS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 5",
+            "text": "Receptacle Maintenance and Records. a. Coordinate receptacle numbering scheme with postal activity to maintain USPS addressing standards and avoid number duplication. b. Do not make major repairs to receptacles. Facility Engineers are responsible for repairs. c. Lubricate combination or key lock wheels with a small amount of powdered or flaked graphite on the moving parts of the lock. d. Check the receptacle windows and doors frequently for damage. e. Receptacles that cannot be secured/repaired shall be closed, and a new receptacle must be issued to the service member. f. Maintain a separate DD Form 2262 for each receptacle. Keep separate files for active, unassigned, and inactive forms. (1) File forms for assigned receptacles numerically in active file. (2) File forms for unassigned receptacles pending final process numerically in a file marked, Do Not Issue. (3) Maintain an inactive file by the latest date closure for unassigned receptacles."
+          }
+        ],
+        "summary": "Receptacle numbering coordinated with postal activity. Major repairs by Facility Engineers. Lubrication with graphite. Frequent inspection. Unrepairable receptacles closed and replaced. DD Form 2262 maintained per receptacle in active, unassigned (Do Not Issue), and inactive files."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect The Three File Categories",
+          "actions": [
+            "Confirm active file numerically filed.",
+            "Confirm Do Not Issue file.",
+            "Confirm inactive file by latest date closure."
+          ],
+          "callout": "DD Form 2262 files not segregated (active, Do Not Issue, inactive)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Walk The Receptacle Bank",
+          "actions": [
+            "Inspect windows and doors for damage.",
+            "Confirm lubrication practice."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Files not segregated.",
+            "Damaged receptacles not closed."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How are DD Form 2262 files organized?"
+      ],
+      "verification": [
+        "Three file categories present and organized.",
+        "Damaged receptacles closed.",
+        "Lubrication practice in place."
+      ],
+      "verified": true
+    },
+    "0144": {
+      "title": "CORRECTLY ADDRESSED MAIL IN ASSIGNED RECEPTACLES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 8a",
+            "text": "Place matter authorized by USPS or MPS in mail delivery receptacles."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 8b",
+            "text": "Compare the name on the address with the name label on the receptacle before placing the mail in the receptacle. Validate mail piece delivery against the directory when address name and label do not match. (1) Mail addressed to the Commanding Officer of an individual must be delivered as official mail to the Commanding Officer. (2) Mail addressed to Commander of a receptacle number that does not contain an addressee name or unit designation, must be endorsed with INSUFFICIENT ADDRESS and returned to sender. (3) Do not deliver mail addressed as occupant or resident of a receptacle number. Endorse it with INSUFFICIENT ADDRESS and return to sender."
+          }
+        ],
+        "summary": "Only USPS or MPS authorized matter is placed in receptacles. Address name must match the receptacle name label. Mismatches are validated against the directory. INSUFFICIENT ADDRESS endorsement used for unidentified Commander or occupant addressing."
+      },
+      "howToInspect": [
+        {
+          "step": "Observe Casing",
+          "actions": [
+            "Watch clerk match name to label."
+          ]
+        },
+        {
+          "step": "Spot-Check Receptacles",
+          "actions": [
+            "Confirm contents addressed correctly."
+          ],
+          "callout": "Mismatched-address mail placed in receptacle",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Mismatched address placed in receptacle.",
+            "Occupant-addressed mail delivered."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What do you do when address name does not match the label?"
+      ],
+      "verification": [
+        "Address-to-label match observed.",
+        "Mismatches validated.",
+        "INSUFFICIENT ADDRESS endorsement used correctly."
+      ],
+      "verified": true
+    },
+    "0145": {
+      "title": "BI-WEEKLY RECEPTACLE CHECKS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 6a",
+            "text": "PSC operations are required to back stamp each piece of mail prior to placement in receptacle. Check each assigned receptacle bi-weekly for excessive mail accumulation, old mail, or non-use. Contact member or command/section via source document for mail delay or mail disposition."
+          }
+        ],
+        "summary": "Each assigned receptacle must be checked bi-weekly for excessive accumulation, old mail, or non-use, with member or command contacted on findings."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The Bi-Weekly Check Log",
+          "actions": [
+            "Confirm log exists and is current."
+          ],
+          "callout": "Bi-weekly receptacle checks not conducted",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Cadence",
+          "actions": [
+            "Confirm checks every two weeks.",
+            "Confirm follow-up action documented."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No check log.",
+            "Gaps in cadence.",
+            "No follow-up on findings."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When was your last bi-weekly receptacle check?"
+      ],
+      "verification": [
+        "Bi-weekly check log present.",
+        "Cadence maintained.",
+        "Findings followed up."
+      ],
+      "verified": true
+    },
+    "0146": {
+      "title": "PS FORM 3907 NOTIFICATION FOR LARGE OR EXCESS MAIL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 8c",
+            "text": "Use PS Form 3907, Post Office Box Mail Pickup Notice (Figure 4-5), to notify customers of large mail items or excess mail accumulation. Prepare the form the same day the articles are received with receptacle number, date, and last name of the addressee. These forms may be laminated to conserve use. Draw a line through previous entries before reusing the forms. Electronic notification e.g., database, email, etc., may be used to notify customers for timely delivery of mail."
+          }
+        ],
+        "summary": "PS Form 3907 must be used (or electronic notification) to alert customers of large mail items or excess accumulation, prepared the same day with receptacle number, date, and addressee last name."
+      },
+      "howToInspect": [
+        {
+          "step": "Spot-Check Recent Notifications",
+          "actions": [
+            "Pull PS Form 3907 samples or electronic notification records."
+          ],
+          "callout": "PS Form 3907 or electronic notification not used",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Same-Day Preparation",
+          "actions": [
+            "Confirm preparation date matches receipt date."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Notification delayed.",
+            "Required fields missing."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you notify customers of oversized or excess mail?"
+      ],
+      "verification": [
+        "PS Form 3907 or electronic notification in use.",
+        "Same-day preparation."
+      ],
+      "verified": true
+    },
+    "0147": {
+      "title": "DD FORM 2258 TEMPORARY MAIL DISPOSITION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 6b",
+            "text": "Prepare a DD Form 2258 when service member status is received from other than the member e.g., 1stSgt, section OIC, Unit Mail Clerk, unit diary, morning report, etc. Provide point of contact/telephone number in the special instructions block (Figure 4-4). Hold the mail until the member provides disposition instructions. Annotate the DFC and process the mail according to the information received."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 8d",
+            "text": "Use DD Form 2258 for marking receptacles of members who are absent temporarily. The member's signature authorizes appropriate mail disposition. Members may provide a written designation for other authorized member to receipt for their mail during a temporary absence. (1) DD Form 2258 is not authorized for more than 90 days from the effective date. An absence of more than 90 days shall require a receptacle closure. Customers must provide a forwarding address for a 90 day or more absence. Assign a new receptacle to customer on return. (2) There is no limit to the number of times a customer may use a DD Form 2258. However, using consecutive DD Forms 2258 for the purpose of holding mail in a receptacle for longer than 90 consecutive days is not authorized."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 8e",
+            "text": "Members in a confined, UA, or alleged deceased status shall be annotated on DD Form 2258. Update member status as required or until receptacle is closed."
+          }
+        ],
+        "summary": "DD Form 2258 captures temporary mail disposition instructions for absent members, signed by the member. Maximum effect is 90 days from date; longer absence requires closure. Consecutive use to extend hold past 90 days is prohibited. Confined, UA, and alleged deceased status also annotated on DD Form 2258."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull DD Form 2258 Samples",
+          "actions": [
+            "Pull current and prior period."
+          ]
+        },
+        {
+          "step": "Verify Timing",
+          "actions": [
+            "Confirm none exceeds 90 days.",
+            "Confirm no consecutive use beyond 90 days."
+          ],
+          "callout": "DD Form 2258 used beyond 90 days",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Status Annotations",
+          "actions": [
+            "Confirm confined, UA, alleged deceased annotations as applicable."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "DD Form 2258 used beyond 90 days.",
+            "Status annotations missing."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you track DD Form 2258 timing?"
+      ],
+      "verification": [
+        "DD Form 2258 within 90 days.",
+        "Status annotations present.",
+        "No consecutive use beyond 90 days."
+      ],
+      "verified": true
+    },
+    "0148": {
+      "title": "GENERAL DELIVERY SERVICE FOR DUE-IN MEMBERS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 26j",
+            "text": "Personnel Due to Arrive (1) Endorse the mail with the arrival date and hold mail for 15 days past the anticipated arrival date. (2) If there is no arrival date, but there is an official indication of arrival, hold the mail for 30 days. (3) Screen hold mail weekly against the directory and annotate appropriately."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 4, par 4",
+            "text": "General Delivery Service. a. Provide general delivery service for members not expected to reside in barracks or quarters until a permanent quarters address is established. b. General delivery service may not exceed 90 days after the residence is established. c. General delivery mail must be delivered within 15 days of MPO receipt. Undelivered mail must be provided directory service i.e., personnel due to arrive, etc."
+          }
+        ],
+        "summary": "General delivery service applies to members not expected to reside in barracks or quarters until permanent quarters established (max 90 days after residence established). General delivery mail must be delivered within 15 days of MPO receipt. Due-to-arrive mail is held 15 days past arrival date or 30 days when only an official arrival indication exists, with weekly directory screening."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Hold Mail Records",
+          "actions": [
+            "Pull due-to-arrive log."
+          ]
+        },
+        {
+          "step": "Verify Holding Period",
+          "actions": [
+            "Confirm 15-day hold past arrival date.",
+            "Confirm 30-day hold absent arrival date.",
+            "Confirm weekly screening."
+          ],
+          "callout": "General delivery service beyond 90 days",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Hold beyond limit.",
+            "No weekly screening.",
+            "General delivery beyond 90 days."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you track the holding period for due-to-arrive mail?"
+      ],
+      "verification": [
+        "Hold limits enforced.",
+        "Weekly screening logged.",
+        "General delivery limited to 90 days."
+      ],
+      "verified": true
+    },
+    "0149": {
+      "title": "NAVMC 10572 DIRECTORY FILE CARDS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 25a",
+            "text": "All personnel attached to the command must complete a NAVMC 10572, Directory File Card (DFC)."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 25b",
+            "text": "The DFC information can be extracted from Marine Corps Total Force Structure records to maintain an accurate DFC system. DFCs shall be utilized as follows: (1) When a service member checks in, enter the following information on the DFC; last name, first name, middle initial, grade, Electronic Data Interchange Personal Identifier (EDIPI), unit joined from address, date, and assigned unit/section (Figure 3-9). DFCs must be filed alphabetically."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 25c",
+            "text": "Retention Periods (1) UMRs must retain the DFC/COAs for 12 months after detachment of all permanently assigned service members. The discard date is the 13 month of departure. (2) DFCs for service members in a temporary status of six months or less shall be maintained for six months after the service member's departure. (3) The Unit Mail Clerk must purge the DFC/COA during the first week of each month. Destroy cards containing a discard date for that month."
+          }
+        ],
+        "summary": "All personnel must complete a NAVMC 10572 DFC. DFCs are filed alphabetically with name, grade, EDIPI, joined-from address, date, and assigned unit/section. Retention is 12 months after detachment of permanently assigned members and 6 months for temporary status (six months or less). Purge in first week of each month."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull DFC File",
+          "actions": [
+            "Confirm alphabetical filing.",
+            "Sample-check entries for completeness."
+          ],
+          "callout": "NAVMC 10572 DFC not maintained",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Retention And Purge Cadence",
+          "actions": [
+            "Confirm 12-month/6-month retention applied.",
+            "Confirm monthly purge documented."
+          ],
+          "callout": "DFC retention exceeds required period (purge skipped)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "DFC entries incomplete.",
+            "Retention beyond limit.",
+            "Purge skipped."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When did you last purge the DFC file?"
+      ],
+      "verification": [
+        "DFC entries complete.",
+        "Alphabetical filing.",
+        "Retention enforced.",
+        "Monthly purge documented."
+      ],
+      "verified": true
+    },
+    "0150": {
+      "title": "PROCESSING DIRECTORY MAIL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 26a",
+            "text": "Undeliverable-As-Addressed Mail. UMRs shall provide directory service to all UAA mail. Each piece of mail must be endorsed by the UMR with the reason (Figure 3-12). Absentee balloting materials must be tied or placed on top of letter bundles or in the front face of tray. Processed UAA must be returned to the MPO for further disposition."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 26b",
+            "text": "Transferred Personnel. All service members are required to check out with the UMR. Service members must provide a forwarding address or instructions on how to handle mail received after transfer. (1) Readdress mail for transferred personnel by drawing a diagonal line through the incorrect portion of the address, and place the correct address to the right of the original address. (2) Block barcode information on front/back of mail piece. (3) The Unit Mail Clerk shall place on the backside of the mail piece the endorsement FORWARDED or FWD along with the date, unit, and the Unit Mail Clerk's initials. (4) Example - FWD/DATE/UNIT/UNIT MAIL CLERK'S INITIALS"
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 26c",
+            "text": "No Record. Mail received with no record available must be returned to sender. (1) The Unit Mail Clerk shall draw a diagonal line through the incorrect portion of the address. (2) Block barcode information on front/back of mail piece. (3) The Unit Mail Clerk shall place on the backside of the mail piece the endorsement NO RECORD or NR along with the date, unit, and the Unit Mail Clerk's initials. (4) Example - NR/DATE/UNIT/UNIT MAIL CLERK'S INITIALS"
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 26d",
+            "text": "Missent Mail. Mail inadvertently received for another unit is considered missent mail. (1) The Unit Mail Clerk must not make any markings to the front of the mail. (2) The Unit Mail Clerk shall place on the backside of the mail piece the endorsement MISSENT or MS along with the date, unit, and the Unit Mail Clerk's initials. (3) Example - MS/DATE/UNIT/UNIT MAIL CLERK'S INITIALS"
+          }
+        ],
+        "summary": "Directory mail processing covers UAA (endorsed with reason and returned to MPO), Transferred (FWD endorsement), No Record (NR endorsement to sender), and Missent (MS endorsement). Each endorsement is on the back of the mail piece with date, unit, and Mail Clerk initials. Barcodes are blocked on transferred and No Record mail."
+      },
+      "howToInspect": [
+        {
+          "step": "Observe Directory Processing",
+          "actions": [
+            "Watch a clerk process UAA, transferred, no-record, missent mail."
+          ]
+        },
+        {
+          "step": "Spot-Check Recent Endorsements",
+          "actions": [
+            "Confirm correct endorsement code, date, unit, initials."
+          ],
+          "callout": "UAA/transferred/no-record/missent endorsement incorrect or missing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Wrong endorsement code.",
+            "Markings on front instead of back.",
+            "Date or initials missing."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through how you endorse transferred mail vs. no-record mail?"
+      ],
+      "verification": [
+        "Clerks process all four categories correctly.",
+        "Endorsements include code, date, unit, initials."
+      ],
+      "verified": true
+    },
+    "0151": {
+      "title": "DAILY MAIL PICKUP FROM MPA",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 1, par 2m(3)",
+            "text": "Pick up mail daily from the MPO and safeguard mail at all times."
+          }
+        ],
+        "summary": "Unit Mail Clerks must pick up mail daily from the MPO and safeguard mail at all times."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Pickup Records",
+          "actions": [
+            "Pull pickup log for the current month."
+          ],
+          "callout": "Mail Clerks not picking up mail daily from MPO",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Daily Cadence",
+          "actions": [
+            "Confirm pickup occurred each operating day.",
+            "Identify any missed days."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missed pickup days.",
+            "No pickup log."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What time do you pick up mail each day?"
+      ],
+      "verification": [
+        "Daily pickup log present.",
+        "Pickup occurred each operating day."
+      ],
+      "verified": true
+    },
+    "0201": {
+      "title": "OFFICIAL MAIL PROGRAM ESTABLISHED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 1, par 2j(10)",
+            "text": "Establish and maintain a Command OMC for monitoring the OMP."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 1a",
+            "text": "The OMP is supported by appropriated funds. The OMP provides effective policies/procedures in cost management, mail design, mail class, special services, address standards, etc. Activities and organizations supported by the OMP must comply with this Order."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 1b",
+            "text": "Official mail is used solely for the business of the U.S. Government. Misuse of official mail may result in criminal charges. Authorized entities are responsible to determine eligibility of matter for official mailing, per references (a) and (c)."
+          }
+        ],
+        "summary": "Each unit, organization, or activity handling command mail must establish and maintain an OMP and a Command OMC, with appropriated funds and compliance with MCO 5110.4B."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull OMP Documentation",
+          "actions": [
+            "Request the unit's OMP designation document or memorandum."
+          ],
+          "callout": "No Official Mail Program established",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Command OMC Established",
+          "actions": [
+            "Confirm OMC location and operating procedures documented."
+          ],
+          "callout": "No Command OMC established",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No formal OMP established.",
+            "No Command OMC."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where is the OMP documented?",
+        "Where is the Command OMC located?"
+      ],
+      "verification": [
+        "OMP documented.",
+        "Command OMC established."
+      ],
+      "verified": true
+    },
+    "0202": {
+      "title": "POLICY ON INCOMING AND OUTGOING OFFICIAL MAIL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 7p",
+            "text": "Units without UMRs shall provide policy on the incoming and outgoing of official mail."
+          }
+        ],
+        "summary": "Units without UMRs must publish policy on incoming and outgoing official mail."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The Policy Document",
+          "actions": [
+            "Request the unit's official mail policy."
+          ],
+          "callout": "No policy on incoming/outgoing official mail for non-UMR units",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Coverage",
+          "actions": [
+            "Confirm incoming and outgoing mail procedures covered."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No policy on file.",
+            "Policy covers incoming only or outgoing only."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where is the official mail policy documented?"
+      ],
+      "verification": [
+        "Policy on file.",
+        "Covers incoming and outgoing."
+      ],
+      "verified": true
+    },
+    "0203": {
+      "title": "COMMAND OFFICIAL MAIL CENTER ESTABLISHED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 10a",
+            "text": "Command OMCs are required for units that operate a UMR and tenant activities that process official mail."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 10b",
+            "text": "The UMR must not serve as the Command OMC. Unit Mail Officers and Mail Clerks may be assigned collateral official mail duties."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 10d",
+            "text": "Establish a Command OMC near the Commander, headquarters staff, or UMR. Commanders are responsible for the security of the Command OMC."
+          }
+        ],
+        "summary": "Command OMCs are required for units operating a UMR and tenant activities processing official mail. The UMR must not serve as the Command OMC. The OMC is established near the Commander, headquarters staff, or UMR, with Commander responsibility for security."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify OMC Location",
+          "actions": [
+            "Confirm OMC is established and distinct from the UMR."
+          ],
+          "callout": "UMR being used as Command OMC (prohibited)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Proximity And Security",
+          "actions": [
+            "Confirm OMC near Commander, headquarters, or UMR.",
+            "Confirm physical security in place."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "UMR used as OMC.",
+            "OMC not established."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where is the OMC located?",
+        "How is OMC security maintained?"
+      ],
+      "verification": [
+        "OMC established separately from UMR.",
+        "Located near command/headquarters/UMR.",
+        "Security in place."
+      ],
+      "verified": true
+    },
+    "0204": {
+      "title": "OMM AND ASSISTANT OMM APPOINTMENT AT E-6/GS-6 OR ABOVE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 3a",
+            "text": "Any activity/organization with an official mail function must appoint in writing an E6/GS-6 or above to serve as OMMs (Figure 5-1). Assistant OMMs must be appointed to perform the OMM duties when the OMM is absent. The appointments may be assigned as an additional duty."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 3b",
+            "text": "A written request may be sent to the MACOM for wavier to grade requirements. An approved exception to policy must be annotated on the appointment letter."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 3c",
+            "text": "Distribute appointment letters as follows: (1) Units and staff element OMMs send copies to Installation OMM. (2) Tenant unit OMMs send copies to host Installation OMM. (3) Installation OMMs send copies to HQMC MFP-3 OMM. (4) Remote OMCs that operate an official postage metering site or a web mailing platform shall send copies to HQMC MFP-3 OMM."
+          }
+        ],
+        "summary": "OMM and Assistant OMM must be appointed in writing at E-6/GS-6 or above. Grade waivers require written MACOM request with the exception annotated on the appointment letter. Copies must be distributed per Ch. 5 par 3c."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Appointment Letters",
+          "actions": [
+            "Request OMM and Assistant OMM letters."
+          ],
+          "callout": "OMM or Assistant OMM not appointed in writing",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Grade",
+          "actions": [
+            "Confirm appointee at E-6/GS-6 or above, or pull MACOM waiver."
+          ],
+          "callout": "Appointee below E-6/GS-6 without MACOM waiver",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Distribution",
+          "actions": [
+            "Confirm copies sent to Installation OMM (or HQMC MFP-3 OMM as applicable)."
+          ],
+          "callout": "Appointment letter copies not distributed per Ch. 5 par 3c",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Appointee below E-6/GS-6 without waiver.",
+            "No Assistant OMM.",
+            "Letters not distributed."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What is the grade of the current OMM and Assistant?",
+        "Where were appointment letter copies sent?"
+      ],
+      "verification": [
+        "OMM and Assistant at E-6/GS-6 or above (or with MACOM waiver).",
+        "Letters distributed correctly."
+      ],
+      "verified": true
+    },
+    "0205": {
+      "title": "OMM AND ASSISTANT OMM TRAINING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 4a",
+            "text": "OMMs must receive training from the Installation OMM within 90 days utilizing the HQMC MFP-3 Mail Clerk Indoctrination Course. Mail handling responsibilities and training objectives shall be reinforced by routine distribution. OMMs must receive annual updates from the Installation OMM."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 4c",
+            "text": "The Mail Clerk Indoctrination Course certificate must be filed at the MPO/unit for two years. Transferred personnel may present the certificate to meet subsequent official mail assignments at gaining command/unit."
+          }
+        ],
+        "summary": "OMMs and Assistant OMMs must complete the Mail Clerk Indoctrination Course training from the Installation OMM within 90 days of appointment, receive annual updates, and file the certificate at the unit for two years."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Training Certificates",
+          "actions": [
+            "Request Mail Clerk Indoctrination Course certificates."
+          ]
+        },
+        {
+          "step": "Verify Timing",
+          "actions": [
+            "Compute days from appointment to course completion.",
+            "Confirm within 90 days."
+          ],
+          "callout": "OMM Mail Clerk Indoctrination Course not completed within 90 days",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Annual Updates",
+          "actions": [
+            "Confirm annual updates documented."
+          ],
+          "callout": "No annual OMM training updates",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No certificate on file.",
+            "Training beyond 90 days.",
+            "No annual updates."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When did each OMM complete the Mail Clerk Indoctrination Course?"
+      ],
+      "verification": [
+        "Certificates on file.",
+        "Training within 90 days.",
+        "Annual updates documented."
+      ],
+      "verified": true
+    },
+    "0206": {
+      "title": "PS FORM 8139 SIGNED BY UNIT MAIL OFFICERS AND CLERKS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 1, par 2j(2)",
+            "text": "Ensure the Unit Mail Officer and Assistant Unit Mail Officer(s) sign the PS Form 8139 - Your Role in Protecting the Security of the United States Mail."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 3c",
+            "text": "Unit Mail Clerks must be informed and acknowledge their responsibilities in handling mail via a signed PS Form 8139 - Your Role in Protecting the Security of the United States Mail (Figure 3-2)."
+          }
+        ],
+        "summary": "Unit Mail Officers, Assistants, and Unit Mail Clerks must each sign PS Form 8139 acknowledging mail handling responsibilities."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull PS Form 8139 File",
+          "actions": [
+            "Confirm signed forms on file for UMO, Assistant, and each clerk."
+          ],
+          "callout": "PS Form 8139 not signed by UMO/Assistant/Clerks",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm dates current for each appointee."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missing PS Form 8139.",
+            "Unsigned form."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where are signed PS Form 8139 documents filed?"
+      ],
+      "verification": [
+        "PS Form 8139 signed by UMO, Assistant, and clerks.",
+        "Forms on file."
+      ],
+      "verified": true
+    },
+    "0207": {
+      "title": "UNIT MAIL CLERKS APPOINTED FOR UNITS WITHOUT UMR",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 10c",
+            "text": "Activities that do not maintain a UMR are required to appoint Unit Mail Clerks to deliver official mail to authorized agents."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 3a",
+            "text": "A Unit Mail Officer and Assistant Unit Mail Officer must be assigned to supervise the primary operation of each UMR. Additional Assistant Unit Mail Officers can be assigned to organic detachments, deployed elements, etc."
+          }
+        ],
+        "summary": "Activities without a UMR must appoint Unit Mail Clerks to deliver official mail to authorized agents. Inspector Note: MPM par 41.2.n is cited in the checklist. Inspector should verify the corresponding MPM paragraph on site, as MPM revisions occur independently of MCO 5110.4B."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Units Without UMR",
+          "actions": [
+            "Confirm any tenant unit, detachment, or activity lacking a UMR."
+          ],
+          "callout": "Non-UMR unit lacks Mail Clerks to deliver official mail",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Mail Clerk Appointments",
+          "actions": [
+            "Pull appointment documents for those units."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Unit without UMR has no Mail Clerk appointed."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Which units do not maintain a UMR?",
+        "Who delivers their official mail?"
+      ],
+      "verification": [
+        "Each non-UMR unit has Mail Clerk appointed."
+      ],
+      "verified": true
+    },
+    "0208": {
+      "title": "AUTHORIZATION TO RECEIVE AND OPEN OFFICIAL MAIL (REPEAT OF Q0104 FOR OMC SCOPE)",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20c",
+            "text": "Commanding Officers must designate in writing personnel e.g., Unit OMM, etc., authorized to receipt and open official mail, to include official accountable mail addressed to the Commanding Officer. Official mail/official accountable mail must not be opened in the UMR under any circumstance."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20d",
+            "text": "Unit Mail Clerks/Orderlies shall not be authorized agents on the designation letter to receipt and open official mail/official accountable mail."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20e",
+            "text": "The authorization letter must be signed by the current Commanding Officer. By Direction authority is not authorized. The authorization letter must contain a sample signature of all individuals authorized."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20f",
+            "text": "Separate letters may authorize more than one individual for each type of mail. However, any changes to an authorization letter shall void the authority and require a new authorization letter. Authorization letters must be maintained for two years after cancellation in the UMR files."
+          }
+        ],
+        "summary": "The current Commanding Officer must designate, in writing, personnel authorized to receive and open official and official accountable mail. Letters must be signed by the current CO (no By Direction authority), include sample signatures, exclude Unit Mail Clerks/Orderlies, and be retained two years after cancellation. This requirement applies in the OMC context as well. Inspector Note: Q0208 duplicates Q0104 with focus on the OMC. Confirm the same authorization letter covers both UMR receipt and OMC receipt or that a separate OMC letter exists."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The Authorization Letter For OMC Personnel",
+          "actions": [
+            "Confirm letter covers OMC receipt/opening of official accountable mail."
+          ],
+          "callout": "No CO designation letter for receipt/opening of OMC official accountable mail",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Signature And Sample Signatures",
+          "actions": [
+            "Confirm signed by current CO.",
+            "Confirm sample signatures present."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No OMC-scope authorization.",
+            "Letter signed By Direction.",
+            "Sample signatures missing."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Does your authorization letter cover OMC receipt?"
+      ],
+      "verification": [
+        "Authorization letter on file covering OMC scope.",
+        "Signed by current CO with sample signatures."
+      ],
+      "verified": true
+    },
+    "0209": {
+      "title": "CHAIN OF RECEIPTS FOR OFFICIAL ACCOUNTABLE MAIL (OMC SCOPE)",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20g",
+            "text": "A chain of delivery receipts shall cover all accountable mail. The Unit Mail Clerk must be able to account for all accountable mail. Accountability shall be provided by physical possession of article, or by showing delivery of article to authorized agent."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20h",
+            "text": "The serving post office shall prepare a PS Form 3883, Firm Delivery Receipt for Accountable and Bulk Delivery Mail (Figure 3-8). The MPO or serving post office must retain the original copy. The Unit Mail Clerk shall receive a copy with the mail piece. The Unit Mail Clerk shall ensure the accountable mail pieces are listed on PS Form 3883 and are in good delivery condition. PS Forms 3883 must be retained in the UMR for two years."
+          }
+        ],
+        "summary": "The same chain-of-receipts requirement applies in the OMC. PS Form 3883 covers all accountable mail with chain of receipts maintained two years."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull OMC PS Form 3883 File",
+          "actions": [
+            "Confirm chain of receipts on file."
+          ],
+          "callout": "Accountable mail chain of receipts broken at OMC",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Chain Completeness",
+          "actions": [
+            "Confirm complete trail from MPO to authorized agent."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Chain breaks.",
+            "Forms missing.",
+            "Receipts unsigned."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through chain of receipts in the OMC?"
+      ],
+      "verification": [
+        "Complete chain of receipts on file at OMC."
+      ],
+      "verified": true
+    },
+    "0210": {
+      "title": "OMM VERIFIES DELIVERY RECORDS PROPERLY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 3, par 20k",
+            "text": "The Unit Mail Officer must initial daily each PS Form 3883 for effective delivery verification. A transfer of accountable mail to subsequent Unit Mail Clerk must require delivery on PS Form 3883. A new PS Form 3883 shall be prepared to make effective delivery to an authorized agent."
+          }
+        ],
+        "summary": "The OMM (analogous to the UMO in the UMR context) must initial each PS Form 3883 daily for delivery verification."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull OMC PS Form 3883",
+          "actions": [
+            "Pull current month."
+          ],
+          "callout": "OMM not initialing PS Form 3883 daily",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify OMM Daily Initial",
+          "actions": [
+            "Confirm OMM initial on each daily form."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "OMM not initialing daily.",
+            "Forms incomplete."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When do you initial PS Form 3883 each day?"
+      ],
+      "verification": [
+        "OMM daily initials present on PS Form 3883."
+      ],
+      "verified": true
+    },
+    "0211": {
+      "title": "OFFICIAL MAIL ADDRESS VERIFICATION AND USE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 18",
+            "text": "Official Mail Addresses. HQMC MFP-3 maintains the current list of authorized Marine Corps official mail addresses. Official mail addresses are updated annually. Official mail addresses are available at the HQMC MFP-3 website."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 19",
+            "text": "Address Standards. To ensure efficient mail delivery a current/correct formatted address must be used. The following addressing standards are required on all official mail: a. Use complete official mailing address on both the return address and the delivery address (Figure 5-3). b. Addresses must be print/machine typed. Return/delivery addresses shall be in black ink using upper case letters. Address characters must not touch and equally spaced. The print size for address characters is 10 to 12 points. c. Use no punctuation except for the hyphen in the ZIP+4 code. d. Use the correct address format. Delivery/return official addresses are limited to five lines and formatted with uniform left margin. The attention line is optional and can be inserted within the second line of the address."
+          }
+        ],
+        "summary": "Official mail addresses must be verified against the current HQMC MFP-3 list and applied per Ch. 5 par 19 address standards (uppercase, black ink, no punctuation except ZIP+4 hyphen, five lines, uniform left margin, 10-12 pt)."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample Outgoing Official Mail",
+          "actions": [
+            "Pull a sample of outgoing pieces."
+          ]
+        },
+        {
+          "step": "Verify Address Standards",
+          "actions": [
+            "Confirm uppercase, black ink.",
+            "Confirm no extra punctuation.",
+            "Confirm five-line maximum.",
+            "Confirm 10-12 pt size."
+          ],
+          "callout": "Addresses not validated against HQMC MFP-3 list",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Against HQMC MFP-3 List",
+          "actions": [
+            "Confirm address matches current authorized list."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Mixed case used.",
+            "Punctuation present.",
+            "Address not current."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where do you verify current official mail addresses?"
+      ],
+      "verification": [
+        "Addresses meet Ch. 5 par 19 standards.",
+        "Addresses validated against HQMC MFP-3 list."
+      ],
+      "verified": true
+    },
+    "0212": {
+      "title": "CURRENT OMC PUBLICATIONS AND DIRECTIVES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 8",
+            "text": "Publications. The following is a listing of required publications for cost effective use of the OMP. Hard copies of these publications are required only when access to electronic copies are not available. The publications can be obtained via the Installation OMM. These publications are required at all OMC locations. Command OMCs without a postage meter are only required to maintain the below (i) and (j) publications: a. Domestic Mail Manual. b. International Mail Manual. c. Current Postal Bulletin. d. USPS Notice 123, Price List. e. Publication 25, Designing Letter and Reply Mail. f. Notice 67, Automation Letters Template. g. Publication 28, Postal Addressing Standards. h. Publication 542, Understanding the Private Express Statutes. i. DoDI 4525.09, Military Postal Service. j. MCO 5110.4B, Marine Corps Postal Affairs and Official Mail Program."
+          }
+        ],
+        "summary": "OMCs must maintain current publications a-j. OMCs without a postage meter are only required to maintain (i) DoDI 4525.09 and (j) MCO 5110.4B. Electronic copies satisfy the requirement when available."
+      },
+      "howToInspect": [
+        {
+          "step": "Determine Meter Status",
+          "actions": [
+            "Confirm whether the OMC operates a postage meter."
+          ]
+        },
+        {
+          "step": "Inspect Publications",
+          "actions": [
+            "For meter OMCs, confirm a-j present.",
+            "For non-meter OMCs, confirm i and j present."
+          ],
+          "callout": "Required OMC publication missing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm current editions."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missing publication.",
+            "Outdated edition."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Which publications do you maintain at the OMC?",
+        "Do you operate a postage meter?"
+      ],
+      "verification": [
+        "Required publications present (per meter status).",
+        "Current editions."
+      ],
+      "verified": true
+    },
+    "0213": {
+      "title": "COMMAND OMC AS CONTROL POINT FOR OUTGOING OFFICIAL MATTER",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 10e",
+            "text": "Command OMCs must serve as a control point for outgoing official matter. Command OMCs shall collect, screen, consolidate, and approve matter for official mailing."
+          }
+        ],
+        "summary": "The Command OMC must serve as the control point for outgoing official matter, collecting, screening, consolidating, and approving items for official mailing."
+      },
+      "howToInspect": [
+        {
+          "step": "Observe Outgoing Mail Flow",
+          "actions": [
+            "Confirm outgoing matter routes through OMC."
+          ],
+          "callout": "Outgoing official mail bypasses OMC control point",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Screening And Consolidation",
+          "actions": [
+            "Confirm OMM screens and consolidates."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Outgoing mail bypasses OMC.",
+            "No consolidation."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How does outgoing official mail reach you?"
+      ],
+      "verification": [
+        "OMC serves as control point.",
+        "Screening and consolidation performed."
+      ],
+      "verified": true
+    },
+    "0214": {
+      "title": "EXTRA SERVICES PROVISIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 17",
+            "text": "Extra Services. The use of extra services is limited to law, DoD Instructions, or Marine Corps directives. Additional fees are charged for extra services. Extra services are authorized for Marine Corps use as follows: a. Priority Mail Express. Priority Mail Express is expedited mail service. Careful consideration should be taken to ensure expedited service is an essential requirement to mission accomplishment and not a matter of convenience. b. Registered Mail. Registered mail provides added mail security and evidence of mailing/delivery. Registered items must be sent as first-class or priority mail. c. Certified Mail. Certified mail provides evidence of mailing and a record of delivery. It may be used only for first-class or priority mail having no intrinsic value. e. Insured Mail. Insured mail may be used for proof of delivery of valuable administrative/logistical equipment, supplies, and printed matter."
+          }
+        ],
+        "summary": "Extra services use is limited to law, DoDI, or Marine Corps directives. OMMs must understand authorized uses for Priority Mail Express, Registered Mail, Certified Mail, and Insured Mail per Ch. 5 par 17 a-e. Inspector Note: MPM par 41.1.c is cited in the checklist. Inspector should verify the corresponding MPM paragraph on site as MPM updates separately."
+      },
+      "howToInspect": [
+        {
+          "step": "Interview The OMM",
+          "actions": [
+            "Ask the OMM to describe authorized uses of each extra service."
+          ]
+        },
+        {
+          "step": "Pull Recent Extra Service Use",
+          "actions": [
+            "Pull a sample of mailings with extra services applied."
+          ],
+          "callout": "Registered Mail used for non-priority mail (prohibited)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Compliance",
+          "actions": [
+            "Confirm extra service use matches authorized categories."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Extra service used for convenience.",
+            "Registered used for non-priority mail."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When do you use Priority Mail Express vs. Certified?"
+      ],
+      "verification": [
+        "OMM understands authorized uses.",
+        "Recent use compliant."
+      ],
+      "verified": true
+    },
+    "0215": {
+      "title": "MAXIMUM CONSOLIDATION OF CORRESPONDENCE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 22b(1)",
+            "text": "OMMs must ensure that official mailings are consolidated to reduce costs. Routine correspondence or documents shall be delivered to the OMC for consolidation prior to mailing."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 22b(2)",
+            "text": "Use the smallest possible envelope for a single consolidated mailing. Minimum mailing standards must be strictly followed to avoid surcharges."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 22b(3)",
+            "text": "Consolidated mailings must be addressed to the Commanding General/Officer of that activity. A bold mailing endorsement, CONTAINS CONSOLIDATED CORRESPONDENCE, shall be placed on address side and lower left quadrant of the consolidated container."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 22b(4)",
+            "text": "OMCs receiving mail endorsed CONTAINS CONSOLIDATED CORRESPONDENCE are authorized to open this mail and make appropriate distribution."
+          }
+        ],
+        "summary": "OMMs must consolidate routine correspondence at the OMC prior to mailing, use the smallest possible envelope, address to CG/CO of the receiving activity, and apply the CONTAINS CONSOLIDATED CORRESPONDENCE endorsement on address side and lower left quadrant."
+      },
+      "howToInspect": [
+        {
+          "step": "Observe Consolidation Practice",
+          "actions": [
+            "Confirm routine correspondence consolidated at OMC."
+          ]
+        },
+        {
+          "step": "Verify Endorsement And Addressing",
+          "actions": [
+            "Confirm endorsement on address side and lower left quadrant.",
+            "Confirm CG/CO addressing."
+          ],
+          "callout": "Consolidated mail addressed to individual instead of CG/CO",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Consolidation not practiced.",
+            "Endorsement missing.",
+            "Addressed to individual instead of CG/CO."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you consolidate routine correspondence?"
+      ],
+      "verification": [
+        "Consolidation practiced.",
+        "Endorsement and CG/CO addressing applied."
+      ],
+      "verified": true
+    },
+    "0216": {
+      "title": "QUARTERLY OMP INSPECTIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 1, par 2k(2)",
+            "text": "Ensure OMP inspections are completed quarterly."
+          }
+        ],
+        "summary": "OMMs must complete OMP inspections quarterly."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Quarterly OMP Inspection Reports",
+          "actions": [
+            "Pull last four quarters."
+          ],
+          "callout": "Quarterly OMP inspections not conducted",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Cadence",
+          "actions": [
+            "Confirm one inspection each quarter.",
+            "Identify any missed quarter."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missed quarter.",
+            "No inspection reports on file."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When did you last conduct an OMP inspection?"
+      ],
+      "verification": [
+        "Quarterly inspection reports on file.",
+        "Cadence maintained."
+      ],
+      "verified": true
+    },
+    "0301": {
+      "title": "POSTAGE METERS AND STAMPS SECURED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 28a",
+            "text": "Access and operation of postage metering equipment is limited to authorized personnel. Remove the meter and place it in a locked safe/file cabinet or locked room when not in use."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 28b",
+            "text": "Meters requiring a code or password for operation are not required to be removed during temporary operator absences."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 28c",
+            "text": "Meters that lock in place on mailing machines are not required to be removed at night, as long as the mailing machine is in a secure area."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 30b",
+            "text": "OMMs are responsible for preventing the theft, misuse, waste/loss of postage stamps, stamped envelopes, and postal cards. The postage stamp inventory shall be centralized and closely controlled by the activity OMM. Inventory must be secured in a locked room or locked container e.g., safe, file cabinet, desk drawer, etc."
+          }
+        ],
+        "summary": "Postage meters must be limited to authorized personnel and stored in a locked safe, cabinet, or locked room when not in use (unless password-protected or locked in place in a secure area). Postage stamp inventory must be centralized and secured in a locked container."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect Meter Storage",
+          "actions": [
+            "Confirm meter in locked container or password-protected and in secure area."
+          ],
+          "callout": "Postage meter or stamps not properly secured",
+          "severity": "finding"
+        },
+        {
+          "step": "Inspect Stamp Inventory Storage",
+          "actions": [
+            "Confirm centralized location in locked container."
+          ]
+        },
+        {
+          "step": "Verify Access Control",
+          "actions": [
+            "Confirm access limited to authorized personnel."
+          ],
+          "callout": "Unauthorized access to postage inventory",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Meter left unsecured.",
+            "Stamp inventory decentralized.",
+            "Unauthorized access."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where is the meter stored after hours?",
+        "Who has access to the stamp inventory?"
+      ],
+      "verification": [
+        "Meter secured.",
+        "Stamp inventory secured and centralized.",
+        "Access limited to authorized personnel."
+      ],
+      "verified": true
+    },
+    "0302": {
+      "title": "POSTAGE METER KEYS AND COMBINATIONS SECURED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 28d",
+            "text": "Keep extra keys and current meter combinations in a secure envelope. The meter operator and the OMM shall sign on the seal of the envelope to validate the security of the keys/combinations. The envelopes must be stored in a locked receptacle."
+          }
+        ],
+        "summary": "Extra meter keys and current combinations must be kept in a secure envelope signed on the seal by the meter operator and OMM and stored in a locked receptacle."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect The Secure Envelope",
+          "actions": [
+            "Confirm envelope sealed with operator and OMM signatures."
+          ],
+          "callout": "Extra meter keys/combinations not in secure signed envelope",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Storage",
+          "actions": [
+            "Confirm stored in a locked receptacle."
+          ],
+          "callout": "Envelope not stored in locked receptacle",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Envelope unsealed or unsigned.",
+            "Stored unsecured."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where do you store extra meter keys?"
+      ],
+      "verification": [
+        "Envelope sealed and signed.",
+        "Stored in locked receptacle."
+      ],
+      "verified": true
+    },
+    "0303": {
+      "title": "POSTAGE STAMP INVENTORY MAINTAINED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 30a",
+            "text": "A postage stamp inventory is intended for small volume mailers. Small volume mailer inventories shall not exceed a 90-day supply. Activities without a backup metering application may maintain no more than a 10-day emergency supply of postage stamps. Deployable units may maintain a 60-day supply of postage stamps for locations without meters."
+          }
+        ],
+        "summary": "Postage stamp inventory limits are 90-day supply for small volume mailers, 10-day emergency supply for activities without backup metering, and 60-day supply for deployable units at locations without meters."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The Inventory Record",
+          "actions": [
+            "Confirm inventory log present."
+          ],
+          "callout": "Postage stamp inventory exceeds applicable category limit (90/10/60 days)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Inventory Limit",
+          "actions": [
+            "Determine activity category (small volume, backup, deployable).",
+            "Confirm inventory within applicable limit."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Inventory exceeds applicable limit.",
+            "No category determination."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What is your stamp inventory category and limit?"
+      ],
+      "verification": [
+        "Inventory log on file.",
+        "Inventory within applicable limit."
+      ],
+      "verified": true
+    },
+    "0304": {
+      "title": "POSTAGE STAMP STOCK AUDITS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 30c",
+            "text": "Monthly audits are required for active postage stamp inventories. Quarterly audits are required for reserve postage stamp inventories."
+          }
+        ],
+        "summary": "Monthly audits are required for active postage stamp inventories. Quarterly audits are required for reserve postage stamp inventories. Inspector Note: DODI 4525.09 par 3.11.c is cited in the checklist. Inspector should verify the corresponding paragraph on site as DODI text may have updated since policy issuance."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Audit Records",
+          "actions": [
+            "Pull last 12 months of audit logs."
+          ]
+        },
+        {
+          "step": "Verify Cadence",
+          "actions": [
+            "Confirm monthly audit for active inventory.",
+            "Confirm quarterly audit for reserve inventory."
+          ],
+          "callout": "Quarterly audit of reserve inventory not conducted",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missed monthly or quarterly audits.",
+            "No audit log."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When was your last active inventory audit? Reserve inventory audit?"
+      ],
+      "verification": [
+        "Monthly active audits documented.",
+        "Quarterly reserve audits documented."
+      ],
+      "verified": true
+    },
+    "0305": {
+      "title": "DAILY RECORD OF METER REGISTER",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 26a",
+            "text": "Daily Record of Meter Register is made for each postage meter placed into service. The postage meter accounts for total postage available and expended."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 26b",
+            "text": "The supervisor shall record the date, ascending/descending register, and serial number. A daily record/register print out can be used for records accountability."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 26c",
+            "text": "At the end of each business day, the meter operator must verify the ascending/descending register and total."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 26d",
+            "text": "Supervisor verification of the register is required prior to the setting of additional funds. Funds added to meter machine must be accounted/verified via logbook or computer printout. Registry discrepancies after vendor setting shall be reported to vendor for corrective action."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 26e",
+            "text": "Your official mail control site shall report these amounts when required. Logbook or computer printout must be retained on file for 2 years from date of final entry."
+          }
+        ],
+        "summary": "Each postage meter must have a daily register record showing date, ascending/descending register, and serial number, verified by operator end-of-day and by supervisor prior to fund setting. Records are retained two years. Inspector Note: MPM Appendix 25A, Table 5, Steps 1-2 is cited in the checklist. Inspector should verify the corresponding MPM appendix on site."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The Daily Register Log",
+          "actions": [
+            "Pull current month and prior 12 months."
+          ]
+        },
+        {
+          "step": "Verify Required Fields",
+          "actions": [
+            "Confirm date, ascending/descending register, and serial number captured."
+          ],
+          "callout": "Daily meter register record missing required fields",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Daily And Supervisor Verification",
+          "actions": [
+            "Confirm operator end-of-day verification.",
+            "Confirm supervisor verification prior to fund setting."
+          ],
+          "callout": "Records not retained two years",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Retention",
+          "actions": [
+            "Confirm two-year retention."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missing fields.",
+            "No supervisor verification.",
+            "Records not retained two years."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through end-of-day meter verification?"
+      ],
+      "verification": [
+        "Daily register log complete.",
+        "End-of-day verification documented.",
+        "Supervisor verification prior to fund setting.",
+        "Two-year retention enforced."
+      ],
+      "verified": true
+    },
+    "0306": {
+      "title": "PS FORM 3533 PROCESSING FOR REFUND OF POSTAGE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 27a",
+            "text": "Per reference (q), credit the postage meter account for incorrect postage or spoiled tapes as follows: (1) Complete/submit a PS Form 3533, Application for Voucher for Refund of Postage and Fees, to the local USPS representative. (2) Attach voucher and unused meter stamps/tapes, ensuring that: (a) Stamps/tapes are complete and legible. (b) Stamps/tapes are affixed on envelope/wrapper bearing the name and address of the addressee. Attach the entire envelope as necessary. (c) Loose stamps/tapes are submitted separately. (3) The USPS representative shall complete the PS Form 3533. A copy of PS Form 3533 must be provided. Cash or checks must not be accepted from the USPS representative for the refund. A credit for amount shall be applied to meter account and invoice."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 27b",
+            "text": "Spoiled meter tapes/stamps adjustments must be annotated in the postage expenditure report."
+          }
+        ],
+        "summary": "Incorrect postage or spoiled tapes require a PS Form 3533 submitted to USPS with the unused stamps/tapes. Credit is applied to the meter account; cash or check refunds are not authorized. Spoiled adjustments are annotated in the postage expenditure report. Inspector Note: USPS DMM 604 par 9.3 is cited in the checklist. Inspector should verify the corresponding USPS DMM section on site as USPS publications update independently."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull PS Form 3533 Records",
+          "actions": [
+            "Pull recent refund applications."
+          ]
+        },
+        {
+          "step": "Verify Submission Process",
+          "actions": [
+            "Confirm completed PS Form 3533 with attached stamps/tapes."
+          ],
+          "callout": "PS Form 3533 incomplete",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Annotation In Expenditure Report",
+          "actions": [
+            "Confirm spoiled adjustments annotated."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Cash or check refund accepted.",
+            "PS Form 3533 incomplete.",
+            "No annotation in expenditure report."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When did you last submit a PS Form 3533?"
+      ],
+      "verification": [
+        "PS Form 3533 submitted correctly.",
+        "No cash/check refunds.",
+        "Adjustments annotated."
+      ],
+      "verified": true
+    },
+    "0307": {
+      "title": "WEEKLY ANALYSIS OF POSTAGE EXPENDED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 31a",
+            "text": "A postage management record can provide standard or custom data e.g., postage expense, date, mail class, unit/section mail volume, etc., as required. Locations that do not have electronic accountability must manually record standard postage management information."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 31b",
+            "text": "The record of postage expended shall be analyzed by the OMM weekly. Analysis shall be used to identify large volume mailers and routine mail class/special services used. Mailers shall be encouraged to use other economical means to improve the OMP."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 31c",
+            "text": "The record is used for the annual Postage Expenditure Report."
+          }
+        ],
+        "summary": "The OMM must analyze the record of postage expended weekly to identify large-volume mailers and routine mail classes/special services and recommend economical alternatives. The record feeds the annual Postage Expenditure Report."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Weekly Analysis Records",
+          "actions": [
+            "Pull current period and prior 8 weeks."
+          ],
+          "callout": "Weekly OMM postage analysis not conducted",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Weekly Cadence",
+          "actions": [
+            "Confirm one analysis per week."
+          ]
+        },
+        {
+          "step": "Verify Output",
+          "actions": [
+            "Confirm analysis identifies large-volume mailers and routine services."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missed weeks.",
+            "No analysis output.",
+            "No follow-up with mailers."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When was your last weekly analysis?",
+        "What recommendations did you make?"
+      ],
+      "verification": [
+        "Weekly analysis on file.",
+        "Large-volume mailers identified.",
+        "Recommendations issued."
+      ],
+      "verified": true
+    },
+    "0308": {
+      "title": "COST SAVING MEASURES APPLIED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 20",
+            "text": "Cost Management. OMMs shall use the following OMP cost saving measures. a. Monitor mail practices and ensure mail is sent by the most economical means. b. Provide training to personnel who originate or prepare mailings. c. Use standard letter-size envelopes whenever possible. Large envelopes shall be used only when material may be damaged by folding. d. Use eligible presorted or marketing mail discounts. e. Ensure items can be mailed and not subject to surcharges. f. Reduce mailing frequency and volume. g. Review necessary mailings. h. Update mailing lists annually or as changes become known. i. Consider other alternatives for mailing publications. j. Require adequate printing lead time for economical mail service. k. Reduce publication weight by printing on both sides of the paper and selecting the lightest paper weight. l. Ensure that contracts for printing and distribution contain DoD specifications. m. Promote electronic formats that make maximum use of available print space to reduce the weight of mailings. n. Consider alternatives to hard copy mailings, such as: (1) Telephone, email, or fax (2) Courier or Guard mail (3) Distribution Management Office (4) Commercial Carriers e.g., FEDEX, UPS, or DHL (5) Naval Message."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 22b(1)",
+            "text": "OMMs must ensure that official mailings are consolidated to reduce costs. Routine correspondence or documents shall be delivered to the OMC for consolidation prior to mailing."
+          }
+        ],
+        "summary": "OMMs must apply Ch. 5 par 20 cost-saving measures (a through n) and ensure consolidation per par 22b."
+      },
+      "howToInspect": [
+        {
+          "step": "Interview The OMM",
+          "actions": [
+            "Confirm OMM applies the cost-saving measures."
+          ],
+          "callout": "No cost-saving measures evidenced",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Pull Cost Management Records",
+          "actions": [
+            "Confirm mailing-list updates, training, consolidation practice."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Letter-size envelopes not used as default.",
+            "No training to originators.",
+            "Mailing lists not updated annually."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Which cost-saving measures do you actively apply?"
+      ],
+      "verification": [
+        "Cost-saving measures applied.",
+        "Records demonstrate practice."
+      ],
+      "verified": true
+    },
+    "0309": {
+      "title": "PRIORITY MAIL EXPRESS PROVISIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 17a",
+            "text": "Priority Mail Express. Priority Mail Express is expedited mail service. Careful consideration should be taken to ensure expedited service is an essential requirement to mission accomplishment and not a matter of convenience. (1) CONUS Priority Mail Express service provides a 1-day or 2-day delivery guarantee. OCONUS Priority Mail Express service is only available to the International Service Center gateways. (2) The following questions should be answered prior to using Priority Mail Express: (a) What mission failure would result if document is not received the following day? (b) What valid circumstance prevents the item from being ready in time for normal mail transit? (c) Is a recipient available to accept document? (d) Have other less expensive or alternatives been considered?"
+          }
+        ],
+        "summary": "Priority Mail Express is limited to essential mission requirements (not convenience). The four pre-use questions must be answered before use. CONUS provides 1-2 day guarantee; OCONUS limited to International Service Center gateways. Inspector Note: MPM par 41.1.c, e, g is cited in the checklist. Inspector should verify the corresponding MPM paragraphs on site."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Recent Priority Mail Express Use",
+          "actions": [
+            "Pull mailings in last 12 months."
+          ]
+        },
+        {
+          "step": "Verify Pre-Use Questions Documented",
+          "actions": [
+            "Confirm justification on file."
+          ],
+          "callout": "Priority Mail Express used without documented justification",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Used for convenience.",
+            "No justification on file."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When did you last use Priority Mail Express?",
+        "What was the justification?"
+      ],
+      "verification": [
+        "Use limited to mission-essential.",
+        "Pre-use justification on file."
+      ],
+      "verified": true
+    },
+    "0310": {
+      "title": "CLASSIFICATION OF OFFICIAL ITEMS CORRECTLY ENDORSED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 15",
+            "text": "Selecting Mail Class. The USPS divides mail by classification. Each class of mail has different features, service levels, postage prices, and presort requirements. The classification of official mail is determined by the type of item being sent, the weight of the item, and extra service requirements. a. First Class Mail. First-Class mail are items weighing less than 13 ounces. b. Priority Mail. (1) Priority mail are items weighing 13 ounces to 70 pound max weight. Maximum combined length and girth is 108 inches. Priority mail is mailed at the First Class rate. Endorse each mail piece, Priority Mail. c. Periodicals. d. Marketing Mail. e. Retail Ground. Retail Ground are items not required to be mailed as First-Class Mail. Maximum weight is 70 pounds and may not exceed 130 inches length and girth. Pieces must be endorsed, Retail Ground. f. Package Services. (1) Bound Printed Matter (BPM). (2) Media Mail. Mailings must be endorsed, Media Mail. (3) Library Mail."
+          }
+        ],
+        "summary": "Mail class is determined by type, weight, and extra service requirements. Priority Mail, Retail Ground, and Media Mail each require a specific endorsement on the piece."
+      },
+      "howToInspect": [
+        {
+          "step": "Spot-Check Outgoing Official Mail",
+          "actions": [
+            "Pull samples by class."
+          ],
+          "callout": "Priority Mail/Retail Ground/Media Mail endorsement missing or wrong class",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Endorsements",
+          "actions": [
+            "Confirm Priority Mail, Retail Ground, Media Mail endorsements where applicable."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missing endorsement.",
+            "Wrong class selected for weight or content."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you select mail class?"
+      ],
+      "verification": [
+        "Endorsements present for Priority Mail, Retail Ground, Media Mail.",
+        "Class selection matches weight and content."
+      ],
+      "verified": true
+    },
+    "0311": {
+      "title": "APPROPRIATED FUNDS FOR POSTAGE PROPERLY USED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 1a",
+            "text": "The OMP is supported by appropriated funds. The OMP provides effective policies/procedures in cost management, mail design, mail class, special services, address standards, etc. Activities and organizations supported by the OMP must comply with this Order."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 1b",
+            "text": "Official mail is used solely for the business of the U.S. Government. Misuse of official mail may result in criminal charges. Authorized entities are responsible to determine eligibility of matter for official mailing, per references (a) and (c)."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 12c",
+            "text": "Official mail shall not be used for the following: (1) For private use e.g., holiday/birthday cards, unofficial retirement announcements, job resumes, any social function, etc. (2) Non-appropriated Fund Instrumentalities (NAFI) or their functions. (3) By retired service members, unless acting in an official capacity."
+          }
+        ],
+        "summary": "OMP appropriated funds are limited solely to U.S. Government business. Misuse may result in criminal charges. Prohibited uses include private correspondence, NAFI functions, retired service members not acting officially, and other unauthorized categories per Ch. 5 par 12c. Inspector Note: MPM par 41.1.a-b and 41.2.ff is cited in the checklist. Inspector should verify the corresponding MPM paragraphs on site."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample Outgoing Mail",
+          "actions": [
+            "Pull samples and assess legitimacy of official use."
+          ],
+          "callout": "Official postage used for private/NAFI/retired-member purpose (prohibited)",
+          "severity": "finding"
+        },
+        {
+          "step": "Interview OMM On Misuse Reporting",
+          "actions": [
+            "Confirm OMM reports misuse to Installation OMM."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Private correspondence sent on official postage.",
+            "No misuse reporting procedure."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What is your process when you suspect official mail misuse?"
+      ],
+      "verification": [
+        "Sample outgoing mail demonstrates official use.",
+        "Misuse reporting procedure in place."
+      ],
+      "verified": true
+    },
+    "0312": {
+      "title": "POSTAGE EXPENDITURE REPORTS SUBMITTED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 32a",
+            "text": "Per reference (r), HQMC MFP-3 must submit an annual OMM/GSA mail management report to the DoD OMM utilizing SMART via AMPS (Figure 5-4)."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 32b",
+            "text": "Installations and activities authorized to use web mailing platforms/meters or prepaid postage e.g., permit, BRM, etc., must submit expenditure reports as follows: (1) Access to AMPS is authorized via the HQMC (MRP-3) OMM. (2) Reports are submitted each fiscal year. (3) The deadline to submit reports is no later than 7 days after the reporting period ends."
+          },
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 32c",
+            "text": "Each location shall report the following data, as applicable: (1) USPS Single Piece Mailing by type of mail class with expenditures and number of pieces. (2) USPS Permit Imprint by type of service with expenditures and number of pieces. (3) Contract fees, vendor fees, etc. (4) Comments section: This report covers the FY__."
+          }
+        ],
+        "summary": "Authorized activities must submit annual postage expenditure reports via SMART in AMPS no later than 7 days after the reporting period ends, with USPS Single Piece, Permit Imprint, contract/vendor fees, and FY comments captured. Inspector Note: DODI 4525.09 par 2.2.c is cited in the checklist. Inspector should verify the corresponding DODI paragraph on site."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Submitted Reports",
+          "actions": [
+            "Pull last two fiscal year reports."
+          ]
+        },
+        {
+          "step": "Verify Timing",
+          "actions": [
+            "Confirm submission within 7 days after reporting period ends."
+          ],
+          "callout": "Required data fields missing from report",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Required Data",
+          "actions": [
+            "Confirm Single Piece, Permit Imprint, fees, and FY comments captured."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Late submission.",
+            "Required data missing."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When did you submit the last fiscal year report?"
+      ],
+      "verification": [
+        "Annual report submitted within 7 days.",
+        "All required data captured."
+      ],
+      "verified": true
+    },
+    "0313": {
+      "title": "REGIONAL OMP INSPECTIONS EACH FISCAL YEAR",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5110.4B, Ch. 5, par 6",
+            "text": "Official Mail Program Inspections. Installation or equivalent OMMs must inspect staff activities, subordinate activities, and tenant activities each fiscal year, per references (c) and (r). These inspection reports must be filed for two years and made available for review."
+          }
+        ],
+        "summary": "Installation or equivalent OMMs must inspect staff, subordinate, and tenant activities each fiscal year. Reports are filed two years and made available for review. Inspector Note: MPM par 25.1.c and 41.2.e is cited in the checklist. Inspector should verify the corresponding MPM paragraphs on site."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Last Two Fiscal Years Of Inspection Reports",
+          "actions": [
+            "Confirm reports for each staff, subordinate, and tenant activity."
+          ],
+          "callout": "Reports not retained two years",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Cadence",
+          "actions": [
+            "Confirm one inspection cycle per fiscal year for each activity."
+          ]
+        },
+        {
+          "step": "Verify Retention",
+          "actions": [
+            "Confirm two-year file retention."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missed activities.",
+            "No reports on file.",
+            "Retention less than two years."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Which activities did you inspect this fiscal year?"
+      ],
+      "verification": [
+        "Fiscal-year inspections completed for all required activities.",
+        "Reports retained two years."
+      ],
+      "verified": true
+    }
+  }
+}

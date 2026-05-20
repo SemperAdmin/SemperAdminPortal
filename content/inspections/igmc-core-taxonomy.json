@@ -1,0 +1,100 @@
+{
+  "lastUpdated": "2026-02-02",
+  "buckets": [
+    {
+      "id": "core",
+      "label": "CoRE",
+      "description": "Forty functional areas designated Critical or Required Evaluation. Inspected during Independent Command Inspections and Comprehensive Command Inspections.",
+      "items": [
+        "Antiterrorism",
+        "Body Composition and Military Appearance",
+        "Career Planning",
+        "Casualty Affairs",
+        "Consumer Level Supply",
+        "Cyber Security Management",
+        "Defense Travel System",
+        "Directives Management",
+        "Force Preservation Council",
+        {
+          "label": "Government Travel Charge Card",
+          "programKey": "4600.40-government-travel-charge-card-program"
+        },
+        "Health Services",
+        "Information and Personnel Security",
+        "Intelligence",
+        "Legal Administration",
+        "Marine Corps Martial Arts",
+        "Marine Corps Safety Management Systems",
+        "Military Awards",
+        "Operations Security",
+        "Oversight-Intel/Non-Intel Sensitive Activities",
+        {
+          "label": "Performance Evaluation System",
+          "programKey": "1610-performance-evaluation-system"
+        },
+        "Personal Financial Management",
+        "Physical Fitness and Combat Fitness",
+        "Physical Fitness and Force Fitness Instructor",
+        "Physical Security",
+        {
+          "label": "Postal Affairs and Military Postal - Organization",
+          "programKey": "5110.2-postal-affairs-and-official-mail-program-organization"
+        },
+        "Prohibited Activities and Conduct Prevention and Response Program",
+        "Records Management",
+        "Request Mast Procedures",
+        "Separation, Retirement, and Limited Duty",
+        "Sexual Assault Prevention and Response",
+        "Substance Assessment and Counseling",
+        "Suicide Prevention",
+        "Transition Readiness",
+        "Unaccompanied Housing",
+        "Unit, Personal, and Family Readiness",
+        "Unit Readiness",
+        "Unit Training Management",
+        {
+          "label": "Victim and Witness Assistance",
+          "programKey": "5800.16-victim-and-witness-assistance-program"
+        },
+        "Voting Assistance",
+        "Water Survival Training"
+      ]
+    },
+    {
+      "id": "aviation",
+      "label": "Aviation CoRE+",
+      "description": "Applied to aviation commands in addition to CoRE.",
+      "items": [
+        "Aircrew Training",
+        "Aviation Operations Administration",
+        "Aviation Safety",
+        "Naval Aviation Training Operating Procedures Standardization"
+      ]
+    },
+    {
+      "id": "law-enforcement",
+      "label": "Law Enforcement CoRE+",
+      "description": "Applied to law-enforcement commands in addition to CoRE.",
+      "items": [
+        "Criminal Investigation Division",
+        "Criminal Justice Information Reporting Requirements",
+        "Law Enforcement Operations",
+        "Military Confinement Facilities",
+        "Military Working Dog Operations"
+      ]
+    },
+    {
+      "id": "as-applicable",
+      "label": "CoRE+ (As Applicable)",
+      "description": "Applied when the command holds the listed mission.",
+      "items": [
+        "Assistance and Hotline",
+        "Command Inspection",
+        "Critical Infrastructure",
+        "Marine Corps Combat Readiness Evaluation",
+        "Marine Corps Fleet Band",
+        "Postal Affairs and Official Mail - Military Postal Activity"
+      ]
+    }
+  ]
+}

@@ -95,6 +95,76 @@ if (fs.existsSync(REF_LINKS_SRC)) {
   );
 }
 
+
+// Inspector guide sidecars. One JSON per FA (or per FA+slug when one FA serves
+// multiple inspection programs) under content/inspections/igmc-guides/.
+// The catalog is keyed by filename stem so the detail page can disambiguate
+// between programs that share a faNumber. Example: 5800.16-legal-administration
+// and 5800.16-victim-and-witness-assistance-program both ride FA 5800.16 but
+// carry different items. The detail page looks up by ${fa}-${slug} first and
+// falls back to ${fa} so existing single-program FAs keep working.
+const GUIDES_DIR = path.join(CONTENT, "inspections", "igmc-guides");
+const guidesByFa = {};
+if (fs.existsSync(GUIDES_DIR)) {
+  for (const file of fs.readdirSync(GUIDES_DIR)) {
+    if (!file.endsWith(".json") || file.startsWith(".") || file.startsWith("_")) continue;
+    const raw = fs.readFileSync(path.join(GUIDES_DIR, file), "utf8");
+    const data = JSON.parse(raw);
+    const stem = file.replace(/\.json$/, "");
+    guidesByFa[stem] = data;
+  }
+}
+fs.writeFileSync(
+  path.join(OUT, "inspector-guides.json"),
+  JSON.stringify(guidesByFa, null, 2)
+);
+console.log(
+  "[content-sync] inspector-guides: " +
+    Object.keys(guidesByFa).length +
+    " FAs"
+);
+
+// IGMC news payload. Single sidecar at content/inspections/igmc-news.json with
+// MARADMIN list and FY25 Trends report URL. Emitted as-is to src/generated/
+// so the IGMC index can render the Latest from IGMC strip without an MDX load.
+const IGMC_NEWS_SRC = path.join(CONTENT, "inspections", "igmc-news.json");
+if (fs.existsSync(IGMC_NEWS_SRC)) {
+  const data = JSON.parse(fs.readFileSync(IGMC_NEWS_SRC, "utf8"));
+  fs.writeFileSync(
+    path.join(OUT, "igmc-news.json"),
+    JSON.stringify(data, null, 2)
+  );
+  console.log(
+    "[content-sync] igmc-news: " +
+      (data.maradmins ? data.maradmins.length : 0) +
+      " MARADMINs"
+  );
+}
+
+// IGMC CoRE / CoRE+ taxonomy. Single sidecar with four buckets. The index
+// renders this in an accordion. Items in each bucket are matched against the
+// inspection catalog by title at runtime so present-in-catalog items link to
+// detail pages and not-yet-shipped items render as plain text.
+const IGMC_CORE_SRC = path.join(CONTENT, "inspections", "igmc-core-taxonomy.json");
+if (fs.existsSync(IGMC_CORE_SRC)) {
+  const data = JSON.parse(fs.readFileSync(IGMC_CORE_SRC, "utf8"));
+  fs.writeFileSync(
+    path.join(OUT, "igmc-core-taxonomy.json"),
+    JSON.stringify(data, null, 2)
+  );
+  const totalItems = (data.buckets || []).reduce(
+    (n, b) => n + (b.items ? b.items.length : 0),
+    0
+  );
+  console.log(
+    "[content-sync] igmc-core-taxonomy: " +
+      (data.buckets ? data.buckets.length : 0) +
+      " buckets, " +
+      totalItems +
+      " FAs"
+  );
+}
+
 // Citations collection. Each MDX file under content/citations/ is one parent
 // policy or authority document. Frontmatter validated against citationSchema.
 // Alias uniqueness enforced across the collection. Emits a byId and byAlias

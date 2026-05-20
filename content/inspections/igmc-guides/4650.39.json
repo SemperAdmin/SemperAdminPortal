@@ -1,0 +1,2468 @@
+{
+  "faNumber": "4650.39",
+  "sourceDoc": "DTS (4650.39A) - INSPECTOR GUIDE - REBUILT.docx",
+  "lastVerified": "2026-05-20",
+  "verifiedAtSource": true,
+  "items": {
+    "0101": {
+      "title": "COMPLETE TRAVELER INFORMATION LIST REPORT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Ch. 1, par 2.f",
+            "text": "Retrieve and reconcile reports, listed as LDTA required in Chapter 6, from the DTS website and ensure they are maintained for the current plus the previous year."
+          },
+          {
+            "citation": "MCO 4650.39A, Ch. 6, par 2",
+            "text": "LDTA Report. Complete Traveler Information List Report. This Report shall be retrieved monthly by the LDTA to verify appropriate permission levels and separation of duties."
+          }
+        ],
+        "summary": "The LDTA must retrieve the Complete Traveler Information List Report monthly from DTS, reconcile permission levels and separation of duties, and retain the report for the current plus previous calendar year."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Last 12+ Months Of CTIL Reports",
+          "actions": [
+            "Pull monthly reports for the inspection period.",
+            "Confirm reports are dated for each month with no gaps."
+          ]
+        },
+        {
+          "step": "Verify Reconciliation Against DD Form 577",
+          "actions": [
+            "Cross-check permission levels in the report against DD Form 577 appointments.",
+            "Identify any permission level not supported by a current DD Form 577."
+          ]
+        },
+        {
+          "step": "Verify Separation Of Duties",
+          "actions": [
+            "Confirm no individual holds incompatible role combinations per Ch. 2 Table 2-1."
+          ]
+        },
+        {
+          "step": "Verify Retention Period",
+          "actions": [
+            "Confirm reports retained for current plus previous calendar year."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Reports not extracted monthly.",
+            "No reconciliation annotation on report.",
+            "Retention period not met."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When did you last pull the Complete Traveler Information List Report?",
+        "How do you reconcile permissions against DD Form 577?",
+        "Where are the previous year's reports retained?"
+      ],
+      "verification": [
+        "CTIL Report retrieved monthly for the inspection period.",
+        "Reconciliation against DD Form 577 documented.",
+        "Separation of duties verified per Ch. 2 Table 2-1.",
+        "Reports retained for current plus previous calendar year."
+      ],
+      "verified": true
+    },
+    "0102": {
+      "title": "ALL REQUIRED ROLES APPOINTED VIA DD FORM 577",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Ch. 1, par 2.a",
+            "text": "Ensure Organizational Defense Travel Administrators (ODTAs) are properly appointed by commanders or their designated representatives, within the geographic area, using DD Form 577."
+          },
+          {
+            "citation": "MCO 4650.39A, Ch. 1, par 2.b",
+            "text": "Retain (electronically or hardcopy) copies of all DD Form 577s for appointed positions within the geographic area in the LDTA office, with the exception of Disbursing Office/Finance Office (DO/FO) appointments or outside the LDTAs geographic area of responsibility."
+          }
+        ],
+        "summary": "All DTS roles (LDTAs, ODTAs, FDTAs, BDTAs, AOs, NDEAs, ROs, DMMs) must be appointed via DD Form 577. The LDTA retains copies of DD Form 577 for all appointed positions within the geographic area in the LDTA office."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify All Required Roles",
+          "actions": [
+            "Request the complete DTS role roster from the LDTA office.",
+            "Cross-check against the command's DTS organization tree."
+          ]
+        },
+        {
+          "step": "Pull DD Form 577 For Each Role",
+          "actions": [
+            "Request the file of DD Form 577 appointments retained by the LDTA."
+          ]
+        },
+        {
+          "step": "Verify Each Appointment Is Current",
+          "actions": [
+            "Confirm each DD Form 577 is signed by the commander or designated representative.",
+            "Confirm forms are not expired (10-year retention from appointment)."
+          ]
+        },
+        {
+          "step": "Verify AO DD Form 577 Submission To DFAS",
+          "actions": [
+            "Confirm AO appointment letters were forwarded to DFAS Indianapolis (JFD) at dfas-incddd577@dfas.mil."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Role active in DTS without DD Form 577 on file.",
+            "DD Form 577 expired.",
+            "AO appointments not forwarded to DFAS."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where do you retain DD Form 577 appointments?",
+        "How do you confirm AO appointments were received by DFAS?",
+        "When did you last reconcile the DTS role roster against DD Form 577 file?"
+      ],
+      "verification": [
+        "DD Form 577 on file for every appointed DTS role.",
+        "AO appointments forwarded to DFAS Indianapolis.",
+        "Forms not expired and signed by appropriate appointing authority.",
+        "Role roster reconciles to DD Form 577 file."
+      ],
+      "verified": true
+    },
+    "0103": {
+      "title": "AO DD FORM 577 SUBMITTED TO DFAS VIA E-MAIL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Ch. 1, par 2.c",
+            "text": "Collect and submit all Authorizing Official (certifying officials) appointment letters to the central electronic repository at the DFAS Indianapolis Disbursing Operations Directorate (JFD), 8899 East 56th Street, Indianapolis, IN 46249 (secure e-mail dfas-incddd577@dfas.mil). The original of the DD Form 577 requiring a wet signature must be mailed to the above address. However, digitally signed DD Form 577s may be submitted electronically. DD Form 577s may be viewed on the Electronic Document Access (EDA) website."
+          }
+        ],
+        "summary": "The LDTA must submit all AO (certifying officials) DD Form 577 appointment letters to the DFAS Indianapolis Disbursing Operations Directorate (JFD) via secure e-mail dfas-incddd577@dfas.mil. Wet-signed originals must be mailed to JFD. Digitally signed forms may be submitted electronically."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify AO Appointments In The Inspection Period",
+          "actions": [
+            "Pull list of AOs appointed in the past 24 months."
+          ]
+        },
+        {
+          "step": "Verify DFAS Submission For Each AO",
+          "actions": [
+            "Request the LDTA's submission record to dfas-incddd577@dfas.mil.",
+            "Confirm each AO's DD Form 577 was submitted."
+          ]
+        },
+        {
+          "step": "Verify Method (Mail Wet Sig / E-mail Digital Sig)",
+          "actions": [
+            "For wet-signed originals, confirm mailed to JFD Indianapolis address.",
+            "For digital signatures, confirm electronic submission."
+          ]
+        },
+        {
+          "step": "Spot-Check EDA",
+          "actions": [
+            "Confirm AO DD Form 577s appear in EDA where access is established."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "AO DD Form 577 not submitted to DFAS.",
+            "Wet-signed form submitted only electronically without mailing original.",
+            "No submission record retained."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you submit AO DD Form 577s to DFAS?",
+        "Show me the submission record for AOs appointed in the last 24 months?"
+      ],
+      "verification": [
+        "Submission record to DFAS dfas-incddd577@dfas.mil on file.",
+        "Wet-signed originals mailed to JFD Indianapolis when applicable.",
+        "Digitally signed forms submitted electronically when applicable.",
+        "AO appointments confirmed via EDA access where available."
+      ],
+      "verified": true
+    },
+    "0104": {
+      "title": "STANDARD NAVAL CORRESPONDENCE WAIVER APPROVAL LETTERS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, par 4.c",
+            "text": "Waivers. Waivers to specific grade or duty assignment requirements established in this Order shall be submitted via standard naval correspondence and approved by the first O-6 or GS-15 in the supervisory chain. Only the following may be waived: (1) AOs in a grade below those listed in this Order; (2) LDTAs/ODTAs serving in routing lists. Waivers shall be on a by-name basis."
+          }
+        ],
+        "summary": "Waivers to grade or duty requirements (AO below required grade; LDTA/ODTA in routing lists) require by-name standard naval correspondence approval by the first O-6 or GS-15 in the supervisory chain. No other waivers are authorized."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Personnel Requiring Waivers",
+          "actions": [
+            "Review AO appointments for grade compliance.",
+            "Review routing lists for LDTA/ODTA assignments."
+          ]
+        },
+        {
+          "step": "Pull Waiver Letters",
+          "actions": [
+            "Request standard naval correspondence waiver letters for each identified case."
+          ]
+        },
+        {
+          "step": "Verify Approving Authority",
+          "actions": [
+            "Confirm letters signed by the first O-6 or GS-15 in the supervisory chain.",
+            "Reject any waiver signed below the required level."
+          ]
+        },
+        {
+          "step": "Verify By-Name Compliance",
+          "actions": [
+            "Confirm each waiver is by-name for a specific individual."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No waiver for AO below required grade.",
+            "Waiver signed below O-6/GS-15 level.",
+            "Generic (not by-name) waiver."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Which AOs in your command are below the required grade?",
+        "Are any LDTAs or ODTAs included in routing lists?",
+        "Show me the by-name waiver letters?"
+      ],
+      "verification": [
+        "Waiver letters on file for each below-grade AO.",
+        "Waiver letters on file for each LDTA/ODTA in routing lists.",
+        "Letters signed by first O-6 or GS-15 in supervisory chain.",
+        "Each waiver is by-name and on standard naval correspondence."
+      ],
+      "verified": true
+    },
+    "0105": {
+      "title": "LDTA AND AO CERTIFYING OFFICER LEGISLATION (COL) TRAINING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Ch. 1, par 2.d",
+            "text": "Ensure personnel requiring Certifying Officer Legislation (COL) certification have completed the training as listed in Chapter 5."
+          },
+          {
+            "citation": "DoD FMR Vol 5, Ch. 5, par 3.4.1.2",
+            "text": "Certifying Officer Legislation training must be completed prior to appointment and annually thereafter for personnel performing AO duties involving certification of payment."
+          }
+        ],
+        "summary": "The LDTA must ensure each AO has completed COL initial training prior to appointment and the COL refresher annually thereafter. LDTAs must also complete COL training if they perform certifying duties."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull AO And LDTA Training Records",
+          "actions": [
+            "Request COL initial and refresher training certificates for each AO and LDTA."
+          ]
+        },
+        {
+          "step": "Verify Initial COL Predates Appointment",
+          "actions": [
+            "For each AO, confirm initial COL certificate date predates the DD Form 577 appointment date."
+          ]
+        },
+        {
+          "step": "Verify Annual Refresher Currency",
+          "actions": [
+            "Confirm refresher completed within 12 months of the most recent prior certificate.",
+            "Identify any AO with refresher overdue."
+          ]
+        },
+        {
+          "step": "Verify Certificate Retention",
+          "actions": [
+            "Confirm certificates retained for current plus previous calendar year."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "AO appointed without prior COL training.",
+            "Refresher training overdue.",
+            "Certificate not on file."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the COL certificates for each AO?",
+        "How do you track refresher training due dates?"
+      ],
+      "verification": [
+        "Initial COL certificate predates each AO appointment.",
+        "Annual refresher completed within 12 months for each AO.",
+        "Certificates on file for current plus previous calendar year.",
+        "LDTA COL training completed where performing certifying duties."
+      ],
+      "verified": true
+    },
+    "0106": {
+      "title": "APPOINTEE TRAINING WITHIN TWO WEEKS OF APPOINTMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Ch. 1, par 2.e",
+            "text": "Conduct ODTA, FDTA, AO, NDEA, SAO, RO, DMM, and Traveler initial and annual refresher training as listed in Chapter 5. Maintain a copy of attendance rosters for the current plus the previous year."
+          },
+          {
+            "citation": "MCO 4650.39A, Ch. 1, par 2.g",
+            "text": "Assign, manage, and monitor permission levels to ensure appropriate separation of duties in accordance with Chapter 2. Appropriate training shall be completed before DTS permissions are assigned (see Chapter 5 for training requirements). DTS permissions shall be revoked immediately should a lapse in training occur."
+          }
+        ],
+        "summary": "The LDTA must conduct initial training and ensure appointees complete required training within two weeks of appointment. DTS permissions must not be assigned until training is complete. Permissions must be revoked immediately on training lapse. Attendance rosters retained for current plus previous calendar year."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify All Appointees In Inspection Period",
+          "actions": [
+            "Pull list of appointments via DD Form 577 in past 24 months."
+          ]
+        },
+        {
+          "step": "Verify Training Within Two Weeks",
+          "actions": [
+            "For each appointee, compute days from appointment to training completion.",
+            "Confirm within two weeks."
+          ]
+        },
+        {
+          "step": "Verify Permissions Not Assigned Before Training",
+          "actions": [
+            "Spot-check CTIL Report timing against training completion."
+          ]
+        },
+        {
+          "step": "Verify Permissions Revoked On Lapse",
+          "actions": [
+            "Identify any appointee with training lapse.",
+            "Confirm permissions revoked immediately."
+          ]
+        },
+        {
+          "step": "Verify Attendance Roster Retention",
+          "actions": [
+            "Confirm rosters retained for current plus previous calendar year."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Training completed beyond two-week window.",
+            "Permissions assigned before training complete.",
+            "Training lapsed but permissions not revoked."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you track training completion against the two-week window?",
+        "What is your process when training lapses?"
+      ],
+      "verification": [
+        "Training within two weeks for each appointee in the inspection period.",
+        "Permissions not assigned before training complete.",
+        "Permissions revoked immediately on training lapse.",
+        "Attendance rosters retained for current plus previous calendar year."
+      ],
+      "verified": true
+    },
+    "0107": {
+      "title": "DMO REVIEWERS INSERTED INTO AUTHORIZATION ROUTING LISTS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Ch. 1, par 2.j",
+            "text": "Insert the Distribution Management Office (DMO) into all authorization routing lists when the organization is serviced by a Marine Corps DMO. This does not include routing lists for vouchers. When adding the DMO Reviewer to the routing list ensure the bypass Passenger Name Record (PNR) process name is selected."
+          }
+        ],
+        "summary": "The LDTA must insert the DMO into all authorization routing lists when serviced by a Marine Corps DMO (excluding voucher routing lists). The DMO Reviewer must be added with the bypass PNR process name selected."
+      },
+      "howToInspect": [
+        {
+          "step": "Determine If Command Is Serviced By A Marine Corps DMO",
+          "actions": [
+            "Confirm DMO servicing relationship."
+          ]
+        },
+        {
+          "step": "Pull Current Authorization Routing Lists",
+          "actions": [
+            "Request routing lists for all authorizations."
+          ]
+        },
+        {
+          "step": "Verify DMO Insertion",
+          "actions": [
+            "Confirm DMO Reviewer present in each authorization routing list."
+          ]
+        },
+        {
+          "step": "Verify Bypass PNR Selected",
+          "actions": [
+            "Confirm bypass PNR process name applied to DMO Reviewer entry."
+          ]
+        },
+        {
+          "step": "Verify DMO Not In Voucher Routing",
+          "actions": [
+            "Confirm DMO not present in voucher routing lists."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "DMO missing from authorization routing.",
+            "Bypass PNR not selected.",
+            "DMO incorrectly placed in voucher routing."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Is your command serviced by a Marine Corps DMO?",
+        "Show me an authorization routing list and the DMO entry?"
+      ],
+      "verification": [
+        "DMO Reviewer present in all authorization routing lists.",
+        "Bypass PNR process selected on each DMO entry.",
+        "DMO not present in voucher routing lists."
+      ],
+      "verified": true
+    },
+    "0108": {
+      "title": "READ ONLY ACCESS (ROA) REQUESTS AND REVALIDATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Ch. 1, par 2.l",
+            "text": "Facilitate Read Only Access (ROA) requests for individuals in their geographic area. ROA requests shall be submitted to the Marine Corps DTS Help Desk at USMCDTSHELPDESK@URS.COM for approval."
+          }
+        ],
+        "summary": "The LDTA must facilitate ROA requests for individuals in their geographic area, submit to the Marine Corps DTS Help Desk for approval, and revalidate access once the form expires."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Active ROA Holders",
+          "actions": [
+            "Request the list of current ROA users in the LDTA's geographic area."
+          ]
+        },
+        {
+          "step": "Pull ROA Request Forms",
+          "actions": [
+            "Pull the submission record for each ROA request."
+          ]
+        },
+        {
+          "step": "Verify Submission To Marine Corps DTS Help Desk",
+          "actions": [
+            "Confirm requests submitted to USMCDTSHELPDESK@URS.COM."
+          ]
+        },
+        {
+          "step": "Verify Revalidation On Expiration",
+          "actions": [
+            "Identify any expired ROA form.",
+            "Confirm revalidation submitted before access continued."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No record of ROA submission.",
+            "Expired ROA still active.",
+            "No revalidation process."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you track ROA expirations?",
+        "Show me the most recent ROA revalidation?"
+      ],
+      "verification": [
+        "ROA request records on file for each active holder.",
+        "Submissions to USMCDTSHELPDESK@URS.COM documented.",
+        "Expired ROA forms revalidated or access removed."
+      ],
+      "verified": true
+    },
+    "0109": {
+      "title": "DMM REPORTS - DEBT MANAGEMENT AND APPROVED STATUS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Ch. 6, par 6.a (DMM Report)",
+            "text": "DMM Report. This report shall be used to identify DTS travel debts that require action by the DMM. Refer to DMM procedures in Chapter 9 of this Order and the DTS Document Guide to Managing Travel Incurred Debt located in the DTS Reference Library. Commanders shall certify (sign) the weekly report reflecting collection actions taken for debts older than 30 days."
+          },
+          {
+            "citation": "MCO 4650.39A, Ch. 6, par 6.b (Approved Status Report)",
+            "text": "Approved Status Report. This report shall be reviewed for vouchers in an AR REJECT status. The DMM shall contact AOs with instructions on how to correct the rejected documents."
+          }
+        ],
+        "summary": "The DMM must reconcile the Debt Management Report weekly to identify DTS travel debts requiring action, with the commander certifying the weekly report reflecting collection actions for debts older than 30 days. The DMM must also review the Approved Status Report weekly for vouchers in AR REJECT status and contact AOs with correction instructions. Both reports retained for current plus previous calendar year."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Weekly Debt Management Reports",
+          "actions": [
+            "Request DMM Reports for past 12 months."
+          ]
+        },
+        {
+          "step": "Verify Commander Certification For Debts Over 30 Days",
+          "actions": [
+            "Identify debts aged over 30 days.",
+            "Confirm commander signature on the weekly report reflecting collection actions."
+          ]
+        },
+        {
+          "step": "Pull Approved Status Reports With AR REJECT",
+          "actions": [
+            "Pull reports showing AR REJECT status."
+          ]
+        },
+        {
+          "step": "Verify AO Notifications For AR REJECT",
+          "actions": [
+            "Confirm DMM contacted AOs with correction instructions."
+          ]
+        },
+        {
+          "step": "Verify Retention",
+          "actions": [
+            "Confirm reports retained current plus previous calendar year."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "DMM Report not reviewed weekly.",
+            "Commander not certifying for 30+ day debts.",
+            "AOs not contacted on AR REJECT.",
+            "Reports not retained."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the DMM Report and Approved Status Report from this past week?",
+        "Show me the commander certification for debts older than 30 days?"
+      ],
+      "verification": [
+        "Weekly DMM Reports retained for current plus previous calendar year.",
+        "Commander signature on report for debts aged over 30 days.",
+        "Weekly Approved Status Reports retained.",
+        "AO contact documented for AR REJECT vouchers."
+      ],
+      "verified": true
+    },
+    "0110": {
+      "title": "FDTA APPROVED STATUS REPORT BI-WEEKLY RECONCILIATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Ch. 6, par 4.a",
+            "text": "Approved Status Report. The FDTA shall retrieve and reconcile this report every two weeks (bi-weekly/bi-monthly). Reports shall be maintained for the current plus the previous year."
+          }
+        ],
+        "summary": "The FDTA must retrieve and reconcile the Approved Status Report every two weeks (bi-weekly/bi-monthly) and retain the reports for the current plus previous calendar year."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify FDTA",
+          "actions": [
+            "Confirm the FDTA appointment via DD Form 577."
+          ]
+        },
+        {
+          "step": "Pull Approved Status Reports",
+          "actions": [
+            "Request reports for past 12 months."
+          ]
+        },
+        {
+          "step": "Verify Bi-Weekly Reconciliation",
+          "actions": [
+            "Confirm cadence is every two weeks.",
+            "Identify gaps in extraction."
+          ]
+        },
+        {
+          "step": "Verify Reconciliation Annotations",
+          "actions": [
+            "Confirm each report shows action taken on AR REJECT vouchers."
+          ]
+        },
+        {
+          "step": "Verify Retention",
+          "actions": [
+            "Confirm reports retained current plus previous calendar year."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Bi-weekly cadence not met.",
+            "Reports not annotated with action.",
+            "Retention not met."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the last six FDTA Approved Status Reports?",
+        "How do you act on AR REJECT vouchers?"
+      ],
+      "verification": [
+        "FDTA appointment via DD Form 577 on file.",
+        "Approved Status Reports retrieved bi-weekly.",
+        "Reconciliation annotations present on each report.",
+        "Reports retained current plus previous calendar year."
+      ],
+      "verified": true
+    },
+    "0201": {
+      "title": "COMPLETE TRAVELER INFORMATION LIST REPORT",
+      "regulatory": {
+        "quotes": [],
+        "summary": "ODTAs must extract the Complete Traveler Information List report monthly, conduct thorough reconciliation including verification of profile accuracy and DD Form 577 alignment, annotate all discrepancies and actions taken, and retain reports for the current plus previous calendar year. Header information must remain unaltered. Inspector Note: Reconciliation includes verifying and annotating the following: 1) information for accuracy. Profile information, SSN, address, unit information, GTCC duplication, EFT data, etc. 2) Ensuring permission levels are consistent with DD Form 577 appointments and that appropriate separation of duties are maintained."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Last 12+ Months of Reports",
+          "actions": [
+            "Ask: \"Show me your Complete Traveler Information List reports for the current year and previous year.\"",
+            "Should have: Current year (all months) + previous full year",
+            "Example: If the current month is the inspection month, calculate back 24 months (15 months minimum retention)"
+          ]
+        },
+        {
+          "step": "Verify Monthly Extraction",
+          "actions": [
+            "Check: Report dated for each month",
+            "Gap analysis: Any missing months?"
+          ],
+          "callout": "CTIL not extracted monthly",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Header Information Integrity",
+          "actions": [
+            "CRITICAL: System header must be unaltered",
+            "Verify: Report title, date, system-generated info intact",
+            "Look for: Deleted rows, modified headers, reformatted data"
+          ],
+          "callout": "If header altered",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Reconciliation Annotations",
+          "actions": [
+            "Reports MUST be annotated to show work performed",
+            "Look for: Handwritten notes, highlights, electronic comments",
+            "If no annotations: DISCREPANCY (not being reconciled)"
+          ],
+          "callout": "No reconciliation annotation on report",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Profile Information Accuracy Review",
+          "actions": [
+            "For each report, verify annotations show:",
+            "SSN verified/corrected",
+            "Address accuracy checked",
+            "Unit information current",
+            "GTCC duplication identified (same person, multiple GTCC entries)",
+            "Contact information validated",
+            "Rank/grade current"
+          ],
+          "callout": "Profile inaccuracy identified but not corrected",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify EFT Data Review",
+          "actions": [
+            "Annotations should show:",
+            "Missing EFT information flagged",
+            "Duplicate EFT entries identified",
+            "Incorrect EFT routing numbers noted",
+            "Action taken to correct EFT issues"
+          ],
+          "callout": "EFT data outdated and not validated",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check DD Form 577 Alignment",
+          "actions": [
+            "Critical requirement: Permission levels must match DD 577 appointments",
+            "Annotations should show:",
+            "Permissions verified against DD 577s",
+            "Unauthorized permissions identified",
+            "Mismatched roles flagged",
+            "Corrective action documented"
+          ],
+          "callout": "DD Form 577 alignment mismatch (permission without appointment)",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Separation of Duties",
+          "actions": [
+            "Check annotations for:",
+            "AO cannot also be traveler on own vouchers",
+            "ODTA cannot be AO in own organization",
+            "RO cannot be traveler on documents they route",
+            "Conflicts identified and resolved"
+          ],
+          "callout": "Separation of duties violation identified (incompatible role combination)",
+          "severity": "finding"
+        },
+        {
+          "step": "Review Discrepancy Documentation",
+          "actions": [
+            "For each discrepancy found:",
+            "Discrepancy clearly identified",
+            "Action taken documented",
+            "Resolution achieved or in progress",
+            "Timeline for correction noted"
+          ]
+        },
+        {
+          "step": "Test Sample Entries",
+          "actions": [
+            "Select 5-10 travelers from most recent report",
+            "Ask ODTA: \"Show me the DD 577 for this person.\"",
+            "Verify: Permissions in DTS match DD 577",
+            "Spot check: Profile information accurate?"
+          ]
+        },
+        {
+          "step": "Verify Retention Period",
+          "actions": [
+            "Calculate: Current year + previous year",
+            "Check: All required reports present"
+          ],
+          "callout": "If reports missing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Reconciliation Process",
+          "actions": [
+            "Ask: \"Walk me through how you reconcile this report each month.\"",
+            "Should explain: Systematic review process",
+            "Should have: Checklist or procedure"
+          ],
+          "callout": "Retention period not met for prior year reports",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missing monthly reports",
+            "No annotations (not reconciled)",
+            "Header information altered",
+            "GTCC duplications not identified",
+            "Missing EFT data not flagged",
+            "Permissions don't match DD 577s",
+            "Separation of duties violations not caught",
+            "Discrepancies identified but no action taken",
+            "Reports not retained for required period"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me how you reconcile this report each month?",
+        "How do you verify permissions match DD Form 577 appointments?",
+        "Have you found any GTCC duplications? How did you resolve them?",
+        "Show me examples of discrepancies you've identified and corrected?",
+        "Do you have reports for the entire current and previous calendar year?"
+      ],
+      "verification": [
+        "Report Date verified.",
+        "Annotated verified.",
+        "Header Intact verified.",
+        "DD577 Verified verified.",
+        "EFT Checked verified.",
+        "On File verified.",
+        "Jan verified.",
+        "Feb verified."
+      ],
+      "verified": true
+    },
+    "0202": {
+      "title": "DD FORM 577 APPOINTMENTS",
+      "regulatory": {
+        "quotes": [],
+        "summary": "All DTS roles must be formally appointed using the current electronic DD Form 577 with digital signatures from both the appointing official and appointee. Appointments must be maintained for 10 years. No pen changes allowed. Delegation authority and Assumption of Command documentation must be on file. Inspector Note: Appointments must be completed using the most current DD577 form version at the time of appointment. Pen changes are not authorized. DD Form 577s must be digitally signed by commander or designated representative and the appointee. Personnel with group or organization access outside their designated organization must provide justification. DD Form 577s must be retained for 10 years. Assumption of Command letters and Delegation of Authority documents must be retained on file."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Complete DD Form 577 File",
+          "actions": [
+            "Ask: \"Show me all current DD Form 577s for DTS roles.\"",
+            "Should have appointments for ALL roles present in organization"
+          ],
+          "callout": "DD Form 577 file incomplete - role active without appointment",
+          "severity": "finding"
+        },
+        {
+          "step": "Identify All Required Roles",
+          "actions": [
+            "Create roster of who should have DD 577:",
+            "ODTA (primary and alternate)",
+            "FDTA (if applicable)",
+            "BDTA (if applicable)",
+            "AOs (all)",
+            "NDEAs (all)",
+            "ROs (all)",
+            "DMMs (if applicable)"
+          ]
+        },
+        {
+          "step": "Verify Current Form Version",
+          "actions": [
+            "Check: Form version number on each DD 577",
+            "Compare: Appointment date to form version effective date",
+            "Must use: Current version at time of appointment"
+          ],
+          "callout": "DD Form 577 form version outdated",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check for Pen Changes",
+          "actions": [
+            "CRITICAL: Pen changes NOT authorized",
+            "Look for: Handwritten modifications, strikethroughs, added text",
+            "If pen changes present: DISCREPANCY (form must be redone)"
+          ],
+          "callout": "Pen-change correction on DD Form 577 without re-signature",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Digital Signatures",
+          "actions": [
+            "For EACH DD Form 577:",
+            "Commander/designee digital signature present",
+            "Appointee digital signature present",
+            "Signatures are electronic (not scanned handwritten)",
+            "Date of signatures recorded"
+          ],
+          "callout": "Digital signature invalid or unverifiable",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Appointing Official Authority",
+          "actions": [
+            "Who signed the DD 577?",
+            "If commander: No further verification needed",
+            "If designee: Request Delegation of Authority letter",
+            "Verify: Unbroken delegation chain from commander to signatory"
+          ],
+          "callout": "Appointing official below required authority level",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Assumption of Command Documentation",
+          "actions": [
+            "Request: Current commander's Assumption of Command letter",
+            "Check: Date commander assumed command",
+            "Compare: DD 577 dates to commander tenure"
+          ],
+          "callout": "Assumption of command documentation missing for new appointing authority",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Outside Organization Access",
+          "actions": [
+            "Review each DD 577: What organizations does person have access to?",
+            "Standard: Access only to person's assigned organization",
+            "If access to outside organization:",
+            "Justification documented?",
+            "Justification valid (billet requirement, matrixed support)?",
+            "Approved by appropriate authority?"
+          ],
+          "callout": "Outside-organization access without documented approval",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify 10-Year Retention",
+          "actions": [
+            "Ask: \"Do you have DD Form 577s from personnel who left in the past 10 years?\"",
+            "Should retain: All DD 577s for 10 years from date of separation/transfer",
+            "Check filing system: Organized for easy retrieval?"
+          ],
+          "callout": "DD Form 577 not retained 10 years",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Test Sample DD Form 577",
+          "actions": [
+            "Select 3-5 DD Form 577s and verify:",
+            "Current form version used",
+            "No pen changes",
+            "Both signatures present (digital)",
+            "Appropriate role appointed",
+            "Access appropriate for position",
+            "Commander or properly delegated official signed",
+            "Delegation on file (if applicable)"
+          ]
+        },
+        {
+          "step": "Cross-Reference with DTS System",
+          "actions": [
+            "Log into DTS with ODTA",
+            "Pull up user list",
+            "Compare: DTS permissions to DD Form 577 appointments",
+            "Any discrepancies?"
+          ],
+          "callout": "Sampled DD Form 577 does not match DTS system permission",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missing DD Form 577 for current personnel",
+            "Old form version used",
+            "Pen changes present",
+            "Missing digital signatures",
+            "Scanned handwritten signatures (not digital)",
+            "No Delegation of Authority on file",
+            "No Assumption of Command letter on file",
+            "Outside organization access without justification",
+            "DD Form 577s not retained for 10 years",
+            "Permissions in DTS don't match DD 577"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the DD Form 577s for all your current AOs?",
+        "Who signed these DD 577s - commander or designee?",
+        "If designee, show me the Delegation of Authority letter?",
+        "Show me your current commander's Assumption of Command letter?",
+        "Do you have any personnel with access outside your organization? Show me the justification?"
+      ],
+      "verification": [
+        "Current form version",
+        "No pen changes",
+        "Commander/designee digital signature",
+        "Appointee digital signature",
+        "Delegation on file (if applicable)",
+        "Access matches organization",
+        "Justification (if outside org access)",
+        "Retained in 10-year file"
+      ],
+      "verified": true
+    },
+    "0203": {
+      "title": "ROUTING LIST MAINTENANCE",
+      "regulatory": {
+        "quotes": [],
+        "summary": "ODTAs must ensure all AOs and ROs are properly inserted into authorization and voucher routing lists appropriate for their designated roles. Routing lists must be maintained monthly in conjunction with the Complete Traveler Information List review. Inspector Note: Conduct routing list maintenance during the monthly Complete Traveler Information List review."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Current Routing Lists",
+          "actions": [
+            "Ask: \"Show me your authorization and voucher routing lists in DTS.\"",
+            "Should have: Routing lists for each organizational unit"
+          ],
+          "callout": "Current routing list not on file",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Identify All AOs and ROs",
+          "actions": [
+            "From DD Form 577 file: List all appointed AOs and ROs",
+            "Create roster:",
+            "AO Name: __________ Org: __________",
+            "RO Name: __________ Org: __________"
+          ]
+        },
+        {
+          "step": "Verify AOs in Routing Lists",
+          "actions": [
+            "Log into DTS",
+            "Navigate to routing list configuration",
+            "For EACH AO:",
+            "Present in authorization routing list?",
+            "Present in voucher routing list?",
+            "Assigned to correct organization?",
+            "Routing order appropriate?"
+          ],
+          "callout": "AO missing from authorization routing list",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify ROs in Routing Lists",
+          "actions": [
+            "For EACH RO:",
+            "Present in authorization routing list?",
+            "Present in voucher routing list?",
+            "Assigned to correct organization?",
+            "Routing order appropriate?"
+          ],
+          "callout": "RO missing from voucher routing list",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Routing List Structure",
+          "actions": [
+            "Typical routing order:",
+            "Traveler \u2192 RO (if applicable) \u2192 AO \u2192 Finance",
+            "Verify: Logical flow",
+            "Check: No routing loops or dead ends"
+          ],
+          "callout": "Routing list structure does not match required template",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Test Sample Authorization",
+          "actions": [
+            "Ask ODTA: \"Create a sample authorization.\"",
+            "Observe: Who appears in routing list?",
+            "Verify: Correct AO and RO present"
+          ]
+        },
+        {
+          "step": "Test Sample Voucher",
+          "actions": [
+            "Ask ODTA: \"Show me routing for a recent voucher.\"",
+            "Check: Correct AO and RO in routing?",
+            "Verify: No missing or unauthorized personnel"
+          ]
+        },
+        {
+          "step": "Verify Monthly Maintenance",
+          "actions": [
+            "Ask: \"When did you last update routing lists?\"",
+            "Should be: Monthly (during Complete Traveler Info List review)",
+            "Request proof: Notes on Complete Traveler Info List report",
+            "Check: Annotations showing routing list maintenance"
+          ],
+          "callout": "Monthly routing list maintenance not documented",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check for New Appointments",
+          "actions": [
+            "Review DD Form 577 dates",
+            "Any AOs or ROs appointed in last 30 days?",
+            "If yes: Verify immediately added to routing lists"
+          ],
+          "callout": "New AO/RO not added to routing within required window",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check for Separated Personnel",
+          "actions": [
+            "Ask: \"Has anyone left your command in the past 3 months?\"",
+            "If AO or RO separated: Verify removed from routing lists",
+            "If still in routing lists: FINDING (security/financial risk)"
+          ],
+          "callout": "Separated personnel still in routing list",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Waiver Compliance",
+          "actions": [
+            "If LDTA or ODTA in routing list: Must have waiver (see Q0204)",
+            "Check: Waiver on file?"
+          ],
+          "callout": "Waiver required but not on file (LDTA/ODTA in routing)",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "AOs not in routing lists",
+            "ROs not in routing lists",
+            "Routing lists not updated monthly",
+            "Separated personnel still in routing lists",
+            "Newly appointed personnel not added",
+            "Incorrect routing order",
+            "LDTA/ODTA in routing list without waiver",
+            "Routing lists don't match DD Form 577 appointments"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your authorization and voucher routing lists?",
+        "Walk me through the routing flow for a typical TDY authorization?",
+        "When did you last update your routing lists?",
+        "Have you had any AO or RO changes recently? Are they in the routing lists?"
+      ],
+      "verification": [
+        "DD Form 577 on file",
+        "In authorization routing list",
+        "In voucher routing list",
+        "Correct organization",
+        "Appropriate routing position",
+        "Added within 30 days of appointment"
+      ],
+      "verified": true
+    },
+    "0204": {
+      "title": "WAIVER LETTERS",
+      "regulatory": {
+        "quotes": [],
+        "summary": "Two specific situations require formal waiver letters signed by the first O-6 or GS-15 in the supervisory chain: (1) Appointment of AOs in grades below SNCO or GS-7, and (2) Placement of LDTAs or ODTAs in routing lists. Waivers must be by-name, standard naval correspondence format, and retained on file. Inspector Note: Waiver(s) must be retained and available for review."
+      },
+      "howToInspect": [
+        {
+          "step": "Determine if Waivers Are Required",
+          "actions": [],
+          "callout": "Waiver required but no by-name letter on file",
+          "severity": "finding"
+        },
+        {
+          "step": "Waiver Type 1 - Ao Grade",
+          "actions": [
+            "Review all AO DD Form 577s",
+            "Check rank/grade of each AO",
+            "Standard: SNCO (E-7) or above, or GS-7 or above",
+            "If any AO below this grade: Waiver required"
+          ],
+          "callout": "Waiver letter signed below O-6 or GS-15 supervisory chain",
+          "severity": "finding"
+        },
+        {
+          "step": "Waiver Type 2 - Ldta/Odta In Routing List",
+          "actions": [
+            "Review routing lists",
+            "Check: Is LDTA or ODTA in authorization/voucher routing?",
+            "Standard: Should NOT be in routing lists",
+            "If LDTA/ODTA in routing: Waiver required"
+          ]
+        },
+        {
+          "step": "Request Waiver Letters",
+          "actions": [
+            "Ask: \"Do you have any personnel requiring waivers?\"",
+            "If yes: \"Show me the waiver letters.\"",
+            "Should have: One waiver per person per waivable item"
+          ]
+        },
+        {
+          "step": "Verify Waiver Letter Format",
+          "actions": [
+            "Must be: Standard naval correspondence",
+            "Check for:",
+            "Letterhead",
+            "From: First O-6 or GS-15 in chain",
+            "To: (as appropriate)",
+            "Subj: Waiver Request/Approval",
+            "By-name identification of individual",
+            "Specific waivable item addressed",
+            "Justification for waiver",
+            "Approval signature"
+          ]
+        },
+        {
+          "step": "Check Approving Official Authority",
+          "actions": [
+            "Who signed waiver?",
+            "Must be: First O-6 or GS-15 in supervisory chain",
+            "If O-5 or below: DISCREPANCY (insufficient authority)",
+            "If GS-14 or below: DISCREPANCY (insufficient authority)"
+          ]
+        },
+        {
+          "step": "Verify Waiver Content - AO Grade",
+          "actions": [
+            "For each AO below SNCO/GS-7:",
+            "Individual identified by name and rank/grade",
+            "Current grade stated",
+            "Position/billet requiring AO designation",
+            "Justification (experience, training, necessity)",
+            "Approval explicitly stated",
+            "Date of approval"
+          ]
+        },
+        {
+          "step": "Verify Waiver Content - LDTA/ODTA in Routing",
+          "actions": [
+            "For each LDTA/ODTA in routing list:",
+            "Individual identified by name and position",
+            "Reason LDTA/ODTA must be in routing list",
+            "Justification (operational necessity, manning)",
+            "Approval explicitly stated",
+            "Date of approval"
+          ]
+        },
+        {
+          "step": "Check Waiver Currency",
+          "actions": [
+            "Review waiver date",
+            "Check: Has individual's status changed?",
+            "Examples requiring new waiver:",
+            "AO promoted (may no longer need waiver)",
+            "New LDTA/ODTA appointed",
+            "Individual transferred/reassigned",
+            "If status changed: Verify waiver still valid or new waiver obtained"
+          ]
+        },
+        {
+          "step": "Verify Waiver Retention",
+          "actions": [
+            "Waivers must be retained on file",
+            "Should be: Filed with DD Form 577 or in separate waiver file",
+            "Easily retrievable for inspection"
+          ]
+        },
+        {
+          "step": "Cross-Check Against Actual Positions",
+          "actions": [
+            "For AO grade waivers:",
+            "Verify individual is actually serving as AO",
+            "Check: DD Form 577 matches waiver",
+            "For LDTA/ODTA routing waivers:",
+            "Verify individual actually in routing list",
+            "If not in routing list: Waiver may not be needed"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No waiver when required",
+            "Waiver signed by insufficient authority (below O-6/GS-15)",
+            "Waiver not by-name (blanket or generic waiver)",
+            "Waiver not in standard naval correspondence format",
+            "Insufficient justification",
+            "Waiver not retained on file",
+            "Individual's status changed, waiver no longer valid",
+            "Waiver references wrong individual or wrong waivable item"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Do you have any AOs in a grade below SNCO or GS-7?",
+        "Are any LDTAs or ODTAs in your routing lists?",
+        "Show me the waiver letters for these personnel?",
+        "Who approved the waivers - what is their rank/grade?"
+      ],
+      "verification": [
+        "Waivable Item: \u25a1 AO Grade \u25a1 LDTA/ODTA in Routing",
+        "Waiver letter on file",
+        "Standard naval correspondence format",
+        "By-name identification",
+        "Signed by O-6/GS-15 or above",
+        "Proper justification",
+        "Current/valid",
+        "Matches actual appointment/position"
+      ],
+      "verified": true
+    },
+    "0205": {
+      "title": "AO COL TRAINING",
+      "regulatory": {
+        "quotes": [],
+        "summary": "All Authorizing Officials (AOs) must complete Certifying Officers Legislation (COL) training BEFORE appointment. Annual COL refresher training must be completed by 31 December each year. Training certificates must be retained for review. Inspector Note: Annual refresher training must be completed by the end of the calendar year. Certificates must be provided for review."
+      },
+      "howToInspect": [
+        {
+          "step": "Request AO Roster",
+          "actions": [
+            "Identify all current AOs from DD Form 577 file",
+            "Create list: AO names, appointment dates",
+            "Total AOs: __________"
+          ],
+          "callout": "No AO roster maintained",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Request Training Certificates",
+          "actions": [
+            "Ask: \"Show me COL training certificates for all AOs.\"",
+            "Should have: Initial COL + annual refreshers for each AO"
+          ],
+          "callout": "AO COL certificate missing from file",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Initial COL Training",
+          "actions": [
+            "For EACH AO:",
+            "Check: Initial COL training certificate",
+            "Compare: Training date to DD Form 577 appointment date",
+            "Training must be: BEFORE or same day as appointment"
+          ],
+          "callout": "AO appointed without initial COL training",
+          "severity": "finding"
+        },
+        {
+          "step": "Calculate Refresher Training Due Dates",
+          "actions": [
+            "For each AO:",
+            "Initial training date: __________",
+            "First refresher due: 31 December of same year (if appointed before December)",
+            "OR: 31 December of next year (if appointed in December)",
+            "Subsequent refreshers: Every 31 December"
+          ]
+        },
+        {
+          "step": "Verify Annual Refresher Training",
+          "actions": [
+            "For EACH AO:",
+            "How many full calendar years since initial training?",
+            "Count required refreshers: __________",
+            "Count completed refreshers: __________",
+            "All refreshers completed? \u25a1 Yes \u25a1 No"
+          ],
+          "callout": "AO refresher training overdue",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Current Year Refresher",
+          "actions": [
+            "Current year: __________",
+            "For each AO: Has current year refresher been completed?",
+            "Deadline: 31 December of current year"
+          ],
+          "callout": "If past 31 December and no refresher",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Certificate Details",
+          "actions": [
+            "For each certificate:",
+            "AO name on certificate",
+            "Course title: \"Certifying Officers Legislation\" or \"COL Training\"",
+            "Training type: Initial or Refresher",
+            "Completion date",
+            "Issuing authority (DTS training system)"
+          ],
+          "callout": "Certificate details (date, completing official, course version) incomplete",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check for New AOs",
+          "actions": [
+            "Any AOs appointed in last 6 months?",
+            "For each: Initial COL completed before appointment?",
+            "If no: FINDING (cannot serve without initial COL)"
+          ],
+          "callout": "New AO without training within required window",
+          "severity": "finding"
+        },
+        {
+          "step": "Check for Expired Training",
+          "actions": [
+            "Any AOs past 31 December without current year refresher?",
+            "Status: Training expired",
+            "Action: AO should not certify vouchers until refresher complete"
+          ],
+          "callout": "AO with expired training still active in DTS",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Certificate Retention",
+          "actions": [
+            "All certificates on file?",
+            "Filed with DD Form 577 or in training file?",
+            "Easily retrievable?"
+          ],
+          "callout": "Certificates not retained for current plus previous calendar year",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Test AO Knowledge",
+          "actions": [
+            "Ask random AO: \"When did you complete your last COL training?\"",
+            "Ask: \"When is your next refresher due?\"",
+            "AO should know: Training status and requirements"
+          ],
+          "callout": "AO unable to demonstrate working knowledge of certifying responsibilities",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Initial COL completed AFTER appointment",
+            "Missing initial COL certificate",
+            "Annual refresher not completed by 31 December",
+            "Missing refresher certificates",
+            "AO doesn't know training status",
+            "Certificates not retained on file",
+            "Wrong training course (not COL)"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me COL training certificates for all your AOs?",
+        "When were your AOs appointed, and when did they complete initial COL?",
+        "Have all AOs completed this year's refresher training?",
+        "When is the deadline for annual refresher?"
+      ],
+      "verification": [
+        "Current Status: \u25a1 Current \u25a1 Expired",
+        "AO roster current and on file.",
+        "COL certificate on file for each AO.",
+        "Initial COL certificate predates each AO appointment date.",
+        "Annual refresher certificate within 12 months for each AO.",
+        "AO with expired training has had DTS permissions revoked.",
+        "Certificates retained for current plus previous calendar year.",
+        "AOs can demonstrate working knowledge of certifying officer responsibilities."
+      ],
+      "verified": true
+    },
+    "0206": {
+      "title": "APPOINTEE TRAINING",
+      "regulatory": {
+        "quotes": [],
+        "summary": "ODTAs must receive and retain all required training certificates within two weeks of personnel appointment. Defense Administration Office (DAO) roles require annual refresher by 31 December. Travelers and NDEAs require training every three years. Non-compliant personnel must have permissions removed by LDTA. Inspector Note: DAO annual refresher training must be completed by the end of the calendar year. Notify LDTA to remove permission/accesses for non-compliant personnel. Traveler and NDEA training must be completed every three years. Training certificates must be available for review. This question does not encompass AO initial and refresher COL training."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify All Appointees Requiring Training",
+          "actions": [
+            "DAO ROLES (Annual Refresher):",
+            "ODTAs",
+            "FDTAs",
+            "BDTAs",
+            "ROs",
+            "DMMs"
+          ],
+          "callout": "Appointee training requirement not tracked",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Three-Year Training",
+          "actions": [
+            "Travelers",
+            "NDEAs"
+          ]
+        },
+        {
+          "step": "Request Training Certificate Files",
+          "actions": [
+            "Ask: \"Show me training certificates for all appointed personnel.\"",
+            "Should be organized: By person, by role, or by date"
+          ]
+        },
+        {
+          "step": "Verify Two-Week Receipt Requirement",
+          "actions": [
+            "For each appointee in past year:",
+            "Appointment date (from DD Form 577): __________",
+            "Training completion date: __________",
+            "Certificate received by ODTA: __________",
+            "Days from appointment to receipt: __________"
+          ],
+          "callout": "If more than 14 days",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check DAO Annual Refresher Training",
+          "actions": [
+            "For each DAO role (ODTA, FDTA, BDTA, RO, DMM):",
+            "Initial training date: __________",
+            "Annual refresher required: Every 31 December",
+            "Check: Current year refresher completed?"
+          ],
+          "callout": "If past 31 December without refresher",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Traveler Training (Three-Year)",
+          "actions": [
+            "Random sample of travelers (10-15):",
+            "For each:",
+            "Initial traveler training date: __________",
+            "Add three years: __________",
+            "Refresher due: __________",
+            "Refresher completed: __________"
+          ],
+          "callout": "If expired",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check NDEA Training (Three-Year)",
+          "actions": [
+            "For each NDEA:",
+            "Initial NDEA training date: __________",
+            "Add three years: __________",
+            "Refresher due: __________",
+            "Refresher completed: __________"
+          ],
+          "callout": "If expired",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Non-Compliance Actions",
+          "actions": [
+            "Ask: \"Have you had any personnel with expired training?\"",
+            "If yes: \"What action did you take?\"",
+            "Should have: Notified LDTA to remove permissions",
+            "Request proof: Email to LDTA, removal documentation"
+          ],
+          "callout": "If no action taken",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check LDTA Notification Process",
+          "actions": [
+            "Ask: \"What is your process when training expires?\"",
+            "Should have: Immediate notification to LDTA",
+            "Should document: Notification date, removal date",
+            "Verify: Process is followed"
+          ]
+        },
+        {
+          "step": "Verify Certificate Details",
+          "actions": [
+            "For each certificate:",
+            "Appointee name matches DD Form 577",
+            "Correct course for role",
+            "Completion date",
+            "Training type (initial or refresher)",
+            "Valid certificate (not expired)"
+          ]
+        },
+        {
+          "step": "Test Current Compliance",
+          "actions": [
+            "Current date: __________",
+            "DAO roles: All current year refreshers complete?",
+            "Three-year training: Any expiring in next 30 days?",
+            "If expirations pending: How is ODTA tracking?"
+          ]
+        },
+        {
+          "step": "Verify Training Tracking System",
+          "actions": [
+            "Ask: \"How do you track when training is due?\"",
+            "Should have: Spreadsheet, calendar, automated system",
+            "Test: \"When is [name]'s training due?\"",
+            "ODTA should know immediately"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Training certificates not received within two weeks",
+            "Missing training certificates",
+            "DAO annual refresher not completed by 31 December",
+            "Traveler/NDEA training expired (past three years)",
+            "No notification to LDTA for non-compliant personnel",
+            "Permissions not removed for expired training",
+            "No tracking system for training due dates",
+            "Certificates not retained on file"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your training tracking system?",
+        "Have all DAO personnel completed this year's refresher?",
+        "When did you last notify LDTA about expired training?",
+        "How do you ensure you receive certificates within two weeks?"
+      ],
+      "verification": [
+        "Current Training Status: \u25a1 Current \u25a1 Expired",
+        "List of all appointees requiring training on file.",
+        "Appointee training documented within two weeks of appointment.",
+        "Three-year refresher training tracked with due dates.",
+        "Training rosters retained for current plus previous calendar year.",
+        "DTS permissions not assigned before training complete.",
+        "DTS permissions revoked immediately on training lapse."
+      ],
+      "verified": true
+    },
+    "0207": {
+      "title": "CHECK-IN/CHECK-OUT PROCEDURES",
+      "regulatory": {
+        "quotes": [],
+        "summary": "Commands must have written check-in/check-out procedures ensuring all personnel check in and out with ODTA. Check-in requires creation or receipt of DTS profiles into proper organization. Check-out requires verification of no outstanding advances, unsettled documents, or debt. ODTAs must reconcile personnel rosters against DTS profiles monthly and annotate discrepancies. Inspector Note: The ODTA must create or receive DTS profiles into the designated organization(s). Verify command personnel rosters such as alpha rosters, HR civilian rosters, morning reports, inbound rosters, etc. against the DTS profiles. Annotate the differences and any corrective action required. The ODTA must verify there are no outstanding travel advances, unsettled authorizations, vouchers, or debt in DTS prior to transfer/separation."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Written Procedures",
+          "actions": [
+            "Ask: \"Show me your DTS check-in/check-out procedures.\"",
+            "Must be: Written (SOP, checklist, or command policy)"
+          ],
+          "callout": "No written check-in/check-out procedures",
+          "severity": "finding"
+        },
+        {
+          "step": "Review Check-In Procedures",
+          "actions": [
+            "Must include:",
+            "Personnel reports to ODTA during check-in",
+            "ODTA creates new DTS profile OR receives profile from losing command",
+            "Profile assigned to correct organization",
+            "Profile information verified (name, SSN, rank, contact)",
+            "EFT information entered/verified",
+            "Training requirements identified",
+            "DD Form 577 appointment (if applicable)"
+          ]
+        },
+        {
+          "step": "Review Check-Out Procedures",
+          "actions": [
+            "Must include:",
+            "Personnel reports to ODTA during check-out",
+            "ODTA checks for outstanding travel advances",
+            "ODTA checks for unsettled authorizations",
+            "ODTA checks for unsettled vouchers",
+            "ODTA checks for outstanding travel debt",
+            "All outstanding items resolved before departure",
+            "Profile transferred to gaining command OR inactivated"
+          ]
+        },
+        {
+          "step": "Test Recent Check-Ins",
+          "actions": [
+            "Request: List of personnel who checked in within last 90 days",
+            "Select sample: 5-10 recent check-ins",
+            "For each:",
+            "DTS profile created/received?",
+            "Profile in correct organization?",
+            "Profile information complete?",
+            "Check-in documented?"
+          ],
+          "callout": "Sampled check-in did not complete DTS profile",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Test Recent Check-Outs",
+          "actions": [
+            "Request: List of personnel who checked out/separated within last 90 days",
+            "Select sample: 5-10 recent check-outs",
+            "For each:",
+            "Check-out documented?",
+            "Outstanding advances cleared?",
+            "Authorizations settled?",
+            "Vouchers settled?",
+            "Debt resolved?",
+            "Profile transferred/inactivated?"
+          ],
+          "callout": "Sampled check-out did not complete required DTS steps",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Personnel Roster Reconciliation",
+          "actions": [
+            "Request: Current personnel roster (alpha roster, morning report, etc.)",
+            "Request: Current DTS profile listing from system",
+            "Compare: Personnel roster to DTS profiles",
+            "Should be annotated: Differences identified, corrective action noted"
+          ],
+          "callout": "Personnel roster does not reconcile to DTS",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check for Discrepancies in Rosters",
+          "actions": [
+            "Common discrepancies:",
+            "Personnel on roster but no DTS profile (didn't check in)",
+            "DTS profile but not on roster (didn't check out/profile not transferred)",
+            "Profile information doesn't match roster (name change, rank change)",
+            "Wrong organization assignment"
+          ],
+          "callout": "Roster discrepancies not addressed",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Monthly Reconciliation",
+          "actions": [
+            "Ask: \"When did you last reconcile rosters against DTS?\"",
+            "Should be: Monthly",
+            "Request proof: Annotated roster or comparison document"
+          ],
+          "callout": "Monthly reconciliation not documented",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check for Outstanding Items at Separation",
+          "actions": [
+            "Ask: \"Have you had anyone separate with outstanding travel issues?\"",
+            "If yes: \"What was the outcome?\"",
+            "Should have: Resolution before departure OR debt notification to finance"
+          ],
+          "callout": "Outstanding items at separation not addressed",
+          "severity": "finding"
+        },
+        {
+          "step": "Test Outstanding Items Check",
+          "actions": [
+            "Log into DTS",
+            "Ask ODTA: \"Show me how you check for outstanding advances.\"",
+            "Observe: Can ODTA navigate to appropriate reports?",
+            "Verify: ODTA knows how to identify outstanding items"
+          ]
+        },
+        {
+          "step": "Verify Integration with Command Check-In",
+          "actions": [
+            "Ask: \"Is DTS check-in part of your command's overall check-in process?\"",
+            "Should be: Integrated into admin check-in checklist",
+            "Check: S-1/admin knows to send personnel to ODTA"
+          ],
+          "callout": "Check-in/check-out not integrated with command process",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No written procedures",
+            "Personnel not checking in with ODTA (profiles not created)",
+            "Personnel not checking out with ODTA",
+            "Outstanding advances/vouchers/debt not cleared before departure",
+            "Personnel roster not reconciled against DTS profiles",
+            "Discrepancies identified but not corrected",
+            "Check-in/out not integrated into command process"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your written check-in/check-out procedures?",
+        "Walk me through what happens when someone checks into your command?",
+        "What do you do if someone is checking out with an outstanding voucher?",
+        "When did you last reconcile your personnel roster against DTS profiles?"
+      ],
+      "verification": [
+        "Written procedures exist",
+        "Profile created/received",
+        "Assigned to correct org",
+        "Profile information complete",
+        "Process documented",
+        "Outstanding advances cleared",
+        "Authorizations settled",
+        "Vouchers settled",
+        "Debt resolved",
+        "Profile transferred/inactivated"
+      ],
+      "verified": true
+    },
+    "0208": {
+      "title": "UNSUBMITTED VOUCHER REPORT",
+      "regulatory": {
+        "quotes": [],
+        "summary": "ODTAs must extract and reconcile the Unsubmitted Voucher Report weekly, notify travelers, AOs, and APCs of unsubmitted vouchers beyond the five-business-day requirement, and retain reports for current plus previous calendar year. Inspector Note: The ODTA must provide evidence of notifying the AO and APC of outstanding travel vouchers to assist with timely settlement."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Unsubmitted Voucher Reports",
+          "actions": [
+            "Ask: \"Show me your Unsubmitted Voucher Reports.\"",
+            "Should have: Weekly reports for current year + all of previous year",
+            "Minimum reports: 52 weeks per year 104+ reports"
+          ],
+          "callout": "No Unsubmitted Voucher Reports on file",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Weekly Extraction",
+          "actions": [
+            "Check: Reports dated weekly",
+            "Look for: Consistent day of week (e.g., every Monday)",
+            "Gaps: Any missing weeks?"
+          ],
+          "callout": "Reports not extracted weekly",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Retention Period",
+          "actions": [
+            "Current year: All weeks present?",
+            "Previous year: All weeks present?",
+            "Calculate: Current date minus 2 years",
+            "Example: From the current inspection month, calculate back 24 months"
+          ],
+          "callout": "Reports not retained current plus previous calendar year",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Reconciliation",
+          "actions": [
+            "Reports must be reconciled (not just extracted)",
+            "Look for: Annotations, notes, action taken",
+            "Should show:",
+            "Vouchers identified as overdue (5+ business days)",
+            "Traveler contacted",
+            "AO notified",
+            "APC notified",
+            "Action taken documented"
+          ]
+        },
+        {
+          "step": "Check Five-Business-Day Rule",
+          "actions": [
+            "Travelers must submit vouchers within 5 business days of return",
+            "Review report: Identify vouchers overdue",
+            "Calculate: Return date to current date",
+            "If 5+ business days: Notification required"
+          ],
+          "callout": "Vouchers exceeding 5 business days not identified",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Traveler Notifications",
+          "actions": [
+            "For overdue vouchers:",
+            "Check: Was traveler notified?",
+            "Evidence: Email, DTS message, phone log",
+            "Timing: How quickly after 5-day deadline?"
+          ],
+          "callout": "Traveler notification not documented for overdue voucher",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify AO Notifications",
+          "actions": [
+            "For overdue vouchers:",
+            "Check: Was AO notified?",
+            "Purpose: AO can direct traveler to submit",
+            "Evidence: Email, memo, notification log"
+          ],
+          "callout": "AO notification not documented for overdue voucher",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify APC Notifications",
+          "actions": [
+            "For overdue vouchers:",
+            "Check: Was APC (GTCC) notified?",
+            "Purpose: Coordinate GTCC payment with voucher settlement",
+            "Evidence: Email, coordination record"
+          ],
+          "callout": "APC notification not documented for overdue voucher",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Review Sample Overdue Vouchers",
+          "actions": [
+            "Select 3-5 overdue vouchers from recent report",
+            "For each:",
+            "Return date: __________",
+            "Days overdue: __________",
+            "Traveler notified? Date: __________",
+            "AO notified? Date: __________",
+            "APC notified? Date: __________",
+            "Voucher subsequently submitted? Date: __________"
+          ]
+        },
+        {
+          "step": "Check Notification Documentation",
+          "actions": [
+            "Ask: \"Show me proof of notifications.\"",
+            "Should have:",
+            "Email folder with notifications sent",
+            "Notification log or tracking sheet",
+            "Copies of correspondence"
+          ],
+          "callout": "Notification documentation incomplete",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Follow-Up Process",
+          "actions": [
+            "Ask: \"What do you do if traveler doesn't submit after notification?\"",
+            "Should have: Escalation process",
+            "May include: Supervisor involvement, command discipline",
+            "Check: Process is documented and followed"
+          ],
+          "callout": "No documented follow-up process",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Test ODTA Knowledge",
+          "actions": [
+            "Point to unsubmitted voucher: \"When did this person return?\"",
+            "Ask: \"Is this voucher overdue?\"",
+            "Ask: \"Who have you notified?\"",
+            "ODTA should know status immediately"
+          ],
+          "callout": "ODTA unable to demonstrate working knowledge of unsubmitted voucher procedure",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Reports not extracted weekly",
+            "Missing weeks in retention file",
+            "Reports not reconciled (no annotations)",
+            "Overdue vouchers not identified",
+            "Travelers not notified",
+            "AOs not notified",
+            "APCs not notified",
+            "No documentation of notifications",
+            "Reports not retained for required period"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your Unsubmitted Voucher Reports for the past year?",
+        "How often do you pull this report?",
+        "Show me examples of notifications you sent for overdue vouchers?",
+        "Who do you notify when vouchers aren't submitted on time?"
+      ],
+      "verification": [
+        "Report Retained: \u25a1 Yes",
+        "Status: \u25a1 On Time \u25a1 Overdue (5+ days)"
+      ],
+      "verified": true
+    },
+    "0209": {
+      "title": "APPROVED STATUS REPORT (FDTA)",
+      "regulatory": {
+        "quotes": [],
+        "summary": "FDTAs must extract the Approved Status Report every two weeks, reconcile all rejected vouchers with documented actions taken, retain system header data unaltered, maintain correspondence and notification records, and retain reports for current plus previous calendar year. Inspector Note: Reconciliation includes verifying all rejects, report annotations, actions taken to resolve rejects, correspondence, and notification records. Do not remove system header data from the report. The FDTA must demonstrate the validation process."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify FDTA",
+          "actions": [
+            "Ask: \"Who is your FDTA?\"",
+            "Verify: FDTA appointed via DD Form 577",
+            "Note: This inspection conducted with FDTA, not ODTA"
+          ],
+          "callout": "No FDTA identified or appointed",
+          "severity": "finding"
+        },
+        {
+          "step": "Request Approved Status Reports",
+          "actions": [
+            "Ask FDTA: \"Show me your Approved Status Reports.\"",
+            "Should have: Bi-weekly (every two weeks) for current + previous year",
+            "Minimum reports: 26 per year 52+ reports"
+          ],
+          "callout": "Approved Status Reports not on file",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Bi-Weekly Extraction",
+          "actions": [
+            "Check: Reports dated every two weeks",
+            "Count days between reports: Should be approximately 14 days",
+            "Look for: Consistent schedule"
+          ],
+          "callout": "Bi-weekly extraction cadence not met",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Retention Period",
+          "actions": [
+            "Current year: All bi-weekly reports present?",
+            "Previous year: All bi-weekly reports present?"
+          ],
+          "callout": "Retention period not met",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify System Header Integrity",
+          "actions": [
+            "CRITICAL: System header must NOT be altered",
+            "Check: Report title, date, system info intact",
+            "Look for: Deleted columns, modified data, reformatted"
+          ],
+          "callout": "Report header integrity not validated",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check for Rejected Vouchers",
+          "actions": [
+            "Review reports: Are there any rejects?",
+            "Rejects vouchers rejected by DFAS",
+            "Common reject reasons:",
+            "Missing EFT information",
+            "Incorrect accounting data",
+            "Duplicate voucher",
+            "System errors"
+          ],
+          "callout": "AR REJECT vouchers not identified",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Reconciliation of Rejects",
+          "actions": [
+            "For EACH rejected voucher:",
+            "Reject identified and highlighted",
+            "Reject reason documented",
+            "Action taken annotated",
+            "Resolution achieved or in progress",
+            "Traveler/ODTA notified"
+          ],
+          "callout": "Rejects not reconciled or addressed",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Report Annotations",
+          "actions": [
+            "Reports MUST be annotated",
+            "Look for: Handwritten notes, highlights, comments",
+            "Annotations should show:",
+            "Review conducted",
+            "Rejects identified",
+            "Actions taken",
+            "Follow-up completed"
+          ],
+          "callout": "Report annotations incomplete",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Actions Taken to Resolve Rejects",
+          "actions": [
+            "For sample rejected vouchers:",
+            "Reject reason: __________",
+            "Action taken: __________",
+            "Who was notified: __________",
+            "Date notified: __________",
+            "Resolution: __________",
+            "Voucher resubmitted/corrected?"
+          ],
+          "callout": "No documented action to resolve rejects",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Correspondence Records",
+          "actions": [
+            "For rejects: Should have correspondence file",
+            "Should contain:",
+            "Notifications to ODTA",
+            "Notifications to traveler",
+            "Emails with DFAS",
+            "Documentation of corrections"
+          ],
+          "callout": "Correspondence records missing for AO contact",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Notification Records",
+          "actions": [
+            "FDTA must notify ODTA of rejects",
+            "Check: Notification log or email proof",
+            "Timing: How quickly after reject identified?",
+            "Should be: Immediate (same day or next business day)"
+          ],
+          "callout": "Notification records missing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Request Validation Process Demonstration",
+          "actions": [
+            "Ask FDTA: \"Walk me through how you reconcile this report.\"",
+            "Should demonstrate:",
+            "How rejects are identified",
+            "How actions are determined",
+            "How notifications are sent",
+            "How resolution is tracked",
+            "Should have: Systematic process"
+          ],
+          "callout": "Validation process not demonstrable",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Test Recent Rejects",
+          "actions": [
+            "Select 2-3 recent rejected vouchers",
+            "Trace from identification to resolution",
+            "Verify: Complete documentation trail",
+            "Check: Timely resolution"
+          ],
+          "callout": "Sampled recent rejects not properly resolved",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Reports not extracted bi-weekly",
+            "Missing bi-weekly reports",
+            "System header altered",
+            "Reports not reconciled (no annotations)",
+            "Rejects not identified",
+            "No actions documented for rejects",
+            "No correspondence records",
+            "No notification records",
+            "Long-term unresolved rejects",
+            "Validation process not systematic"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your Approved Status Reports for the past year?",
+        "How often do you extract this report?",
+        "Walk me through how you reconcile rejected vouchers?",
+        "Show me correspondence and notifications for recent rejects?"
+      ],
+      "verification": [
+        "System Header Intact: \u25a1 Yes \u25a1 No",
+        "Annotations Present: \u25a1 Yes \u25a1 No",
+        "Report Retained: \u25a1 Yes"
+      ],
+      "verified": true
+    },
+    "0210": {
+      "title": "TRAVELER VOUCHER SUBMISSION",
+      "regulatory": {
+        "quotes": [],
+        "summary": "Travelers must create and sign their travel vouchers within five business days of returning from travel. Submission is complete when the traveler signs the voucher, not when it is approved or paid. Inspector Note: The voucher must be created and signed within the specified period."
+      },
+      "howToInspect": [
+        {
+          "step": "Select Sample of Recent Completed Travel",
+          "actions": [
+            "Timeframe: Travel completed within last 90 days",
+            "Sample size:",
+            "10 travelers minimum for small commands (less than 50 travelers)",
+            "20 travelers minimum for medium commands (51-200 travelers)",
+            "30 travelers minimum for large commands (200+ travelers)",
+            "Selection method: Random or systematic"
+          ]
+        },
+        {
+          "step": "For Each Sampled Trip",
+          "actions": [
+            "Identify: Travel end date",
+            "Find: Voucher submission date (traveler signature date)",
+            "Calculate: Business days elapsed",
+            "Compare: To 5-business-day requirement"
+          ]
+        },
+        {
+          "step": "Determine Travel End Date",
+          "actions": [
+            "Check voucher: Return date",
+            "Check authorization: End date of travel",
+            "Use whichever is actual return date",
+            "Important: Count business days only (exclude weekends and holidays)"
+          ]
+        },
+        {
+          "step": "Determine Voucher Submission Date",
+          "actions": [
+            "Voucher submission date traveler SIGNED voucher",
+            "NOT date AO approved",
+            "NOT date finance paid",
+            "Check: Date stamp on traveler signature block"
+          ]
+        },
+        {
+          "step": "Calculate Business Days",
+          "actions": [
+            "Start: Day after return from travel",
+            "End: Day voucher signed",
+            "Count only: Monday through Friday",
+            "Exclude: Weekends (Saturday, Sunday)",
+            "Exclude: Federal holidays",
+            "Business Day Calculation Example:",
+            "Return date: Monday, 1 March",
+            "Day 1: Tuesday, 2 March",
+            "Day 2: Wednesday, 3 March",
+            "Day 3: Thursday, 4 March",
+            "Day 4: Friday, 5 March",
+            "Day 5: Monday, 8 March (skips weekend)",
+            "Due: By end of business Monday, 8 March"
+          ],
+          "callout": "Traveler voucher submitted more than 5 business days after return",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Determine Compliance",
+          "actions": [
+            "6+ business days: NON-COMPLIANT (DISCREPANCY)"
+          ],
+          "callout": "0-5 business days",
+          "severity": "compliant"
+        },
+        {
+          "step": "Track Results",
+          "actions": [
+            "Create compliance tally:",
+            "Total vouchers sampled: _____",
+            "Submitted on time (0-5 days): _____",
+            "Late submission (6+ days): _____",
+            "Compliance rate: _____%"
+          ]
+        },
+        {
+          "step": "Calculate Acceptable Error Rate",
+          "actions": [
+            "Acceptable: 90% compliance or higher",
+            "If compliance below 75%: FINDING (systemic problem)"
+          ],
+          "callout": "Acceptable error rate exceeded across sample",
+          "severity": "finding"
+        },
+        {
+          "step": "Review Late Submissions",
+          "actions": [
+            "For vouchers submitted late:",
+            "How many days late: _____",
+            "Reason for delay (if documented): _____",
+            "Was traveler counseled?",
+            "Was notification sent?",
+            "Pattern of same travelers late?"
+          ],
+          "callout": "No corrective action on late submissions",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check for Command Emphasis",
+          "actions": [
+            "Ask: \"How do you ensure travelers submit vouchers on time?\"",
+            "Should have:",
+            "Policy guidance distributed",
+            "Training provided",
+            "Reminders sent",
+            "Monitoring through Unsubmitted Voucher Report",
+            "Counseling for chronic late submissions"
+          ],
+          "callout": "No command emphasis on voucher submission timeliness",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Review Voucher Creation Process",
+          "actions": [
+            "Ask traveler: \"Do you know the 5-day requirement?\"",
+            "Ask: \"What prevents timely submission?\"",
+            "Common issues:",
+            "Don't know requirement",
+            "Waiting for receipts",
+            "System access problems",
+            "No time/too busy",
+            "Supervisor delays review"
+          ],
+          "callout": "Voucher creation process not aligned with traveler responsibilities",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check for Systemic Issues",
+          "actions": [
+            "Pattern of late submissions?",
+            "Same travelers repeatedly late?",
+            "Specific types of travel delayed?",
+            "Suggests: Training need, policy emphasis, or process improvement"
+          ],
+          "callout": "Systemic late submission issues identified but unresolved",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Vouchers submitted 6+ business days after return",
+            "Travelers unaware of 5-day requirement",
+            "No monitoring of submission timeliness",
+            "Chronic late submitters not counseled",
+            "Systemic late submissions (below 90% compliance)",
+            "No command emphasis on timely submission"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Do your travelers know they have 5 business days to submit vouchers?",
+        "How do you monitor voucher submission timeliness?",
+        "Show me recent travel and the voucher submission dates?",
+        "What do you do when travelers consistently submit late?"
+      ],
+      "verification": [
+        "Status: \u25a1 On Time (0-5 days) \u25a1 Late (6+ days)",
+        "Assessment: \u25a1 \u226590% (Compliant) \u25a1 <90% (Discrepancy) \u25a1 <75% (Finding)"
+      ],
+      "verified": true
+    },
+    "0211": {
+      "title": "VOUCHER ROUTING TIMELINE",
+      "regulatory": {
+        "quotes": [],
+        "summary": "After a traveler signs a voucher, it must be routed through AO/RO approval to the servicing finance office within three business days. Exception: FSTS Office vouchers exempt. Route Status Report should be used to monitor compliance. Inspector Note: The only exceptions are those vouchers routed to Formal School Training Support (FSTS) Office. Commands should use the Route Status Report as a tool to monitor routing and documents pending action over three business days."
+      },
+      "howToInspect": [
+        {
+          "step": "Select Sample of Recently Signed Vouchers",
+          "actions": [
+            "Timeframe: Vouchers signed within last 60 days",
+            "Sample size: Same as Question 0210",
+            "10 minimum (small commands)",
+            "20 minimum (medium commands)",
+            "30 minimum (large commands)",
+            "Include: Vouchers at various routing stages"
+          ]
+        },
+        {
+          "step": "For Each Sampled Voucher",
+          "actions": [
+            "Identify: Date traveler signed voucher",
+            "Identify: Date voucher arrived at finance office",
+            "Calculate: Business days elapsed",
+            "Compare: To 3-business-day requirement"
+          ]
+        },
+        {
+          "step": "Determine Traveler Signature Date",
+          "actions": [
+            "Check voucher: Date stamp on traveler signature",
+            "This is: Start of 3-day clock",
+            "Day 1 starts: Next business day after signature"
+          ]
+        },
+        {
+          "step": "Determine Finance Office Arrival Date",
+          "actions": [
+            "Check voucher routing history",
+            "Finance arrival date finance received for approval",
+            "May appear as: \"FDTA received\" or \"Finance pending\"",
+            "This is: End of 3-day clock"
+          ]
+        },
+        {
+          "step": "Calculate Business Days",
+          "actions": [
+            "Start: Day after traveler signs",
+            "End: Day finance receives",
+            "Count only: Monday through Friday",
+            "Exclude: Weekends and federal holidays",
+            "Example:",
+            "Traveler signs: Monday, 1 March",
+            "Day 1: Tuesday, 2 March",
+            "Day 2: Wednesday, 3 March",
+            "Day 3: Thursday, 4 March",
+            "Due at finance: By end of business Thursday, 4 March"
+          ],
+          "callout": "Voucher to finance office exceeds 3 business days",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check for FSTS Exception",
+          "actions": [
+            "Ask: \"Is this voucher for school training?\"",
+            "If routed to FSTS Office: Exempt from 3-day rule",
+            "If NOT FSTS: 3-day rule applies",
+            "Verify: FSTS vouchers appropriately exempted"
+          ]
+        },
+        {
+          "step": "Determine Compliance",
+          "actions": [
+            "4+ business days: NON-COMPLIANT (DISCREPANCY)",
+            "FSTS vouchers: Mark as EXEMPT (not counted)"
+          ],
+          "callout": "0-3 business days",
+          "severity": "compliant"
+        },
+        {
+          "step": "Track Results",
+          "actions": [
+            "Total vouchers sampled: _____",
+            "FSTS exemptions: _____",
+            "Applicable vouchers: _____ (total minus FSTS)",
+            "Routed on time (0-3 days): _____",
+            "Late routing (4+ days): _____",
+            "Compliance rate: _____%"
+          ],
+          "callout": "Acceptable error rate exceeded across sample",
+          "severity": "finding"
+        },
+        {
+          "step": "Calculate Acceptable Error Rate",
+          "actions": [
+            "Acceptable: 90% compliance or higher"
+          ],
+          "callout": "No corrective action on late routing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Review Route Status Report",
+          "actions": [
+            "Ask: \"Show me your Route Status Report.\"",
+            "Report shows: Documents pending at each routing stage",
+            "Look for: Vouchers pending over 3 days",
+            "Ask: \"How often do you pull this report?\"",
+            "Should be: Weekly minimum"
+          ],
+          "callout": "Route Status Report not reviewed",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Identify Routing Delays",
+          "actions": [
+            "For late-routed vouchers:",
+            "Where did delay occur?",
+            "Traveler signature to first RO",
+            "RO to AO",
+            "AO to finance",
+            "Who caused delay?",
+            "Was action taken to resolve?"
+          ],
+          "callout": "Routing delays identified but unaddressed",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Routing List Configuration",
+          "actions": [
+            "Ask: \"Show me a typical voucher routing list.\"",
+            "Should be: Traveler \u2192 RO (if applicable) \u2192 AO \u2192 Finance",
+            "Check: No unnecessary routing stops",
+            "Verify: Logical, efficient flow"
+          ],
+          "callout": "Routing list configuration issues unresolved",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Review Routing Bottlenecks",
+          "actions": [
+            "Ask: \"Do you have routing bottlenecks?\"",
+            "Common issues:",
+            "AO on leave with no alternate",
+            "RO delaying review",
+            "Incorrect routing lists",
+            "Documents routed to wrong person",
+            "System errors"
+          ],
+          "callout": "Routing bottlenecks not identified or addressed",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Command Monitoring",
+          "actions": [
+            "Ask: \"How do you monitor the 3-day requirement?\"",
+            "Should use: Route Status Report",
+            "Should have: Process to follow up on delays",
+            "Should track: Routing performance"
+          ],
+          "callout": "No command monitoring of voucher routing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Vouchers taking 4+ business days to reach finance",
+            "Route Status Report not used",
+            "Routing delays not monitored",
+            "Bottlenecks not addressed",
+            "AOs/ROs holding documents too long",
+            "Incorrect routing lists causing delays",
+            "Systemic late routing (below 90% compliance)"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the Route Status Report?",
+        "How do you monitor the 3-day routing requirement?",
+        "What causes routing delays in your command?",
+        "Show me the routing history for this voucher?"
+      ],
+      "verification": [
+        "FSTS Exception: \u25a1 Yes (exempt) \u25a1 No (must comply)",
+        "Status: \u25a1 On Time (0-3 days) \u25a1 Late (4+ days) \u25a1 Exempt (FSTS)",
+        "Traveler to RO: _____ days",
+        "RO to AO: _____ days",
+        "AO to Finance: _____ days",
+        "Assessment: \u25a1 \u226590% (Compliant) \u25a1 <90% (Discrepancy) \u25a1 <75% (Finding)"
+      ],
+      "verified": true
+    }
+  }
+}

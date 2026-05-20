@@ -1,0 +1,2072 @@
+{
+  "faNumber": "3040",
+  "sourceDoc": "CASUALTY ASSISTANCE (3040) - INSPECTOR GUIDE - REBUILT.docx",
+  "lastVerified": "2026-05-20",
+  "verifiedAtSource": true,
+  "items": {
+    "0101": {
+      "title": "CACR APPOINTED IN WRITING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 1, Par 2g",
+            "text": "Casualty Assistance Command Representative (CACR). SNCO or above, down to the Battalion/Squadron/I&I level, responsible for ensuring the unit is adhering to the policies of the Casualty Assistance Program and remains up to date on all significant changes to the program stemming from congressional legislation, benefit enhancements, or revised HQMC policies."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 2, Par 3",
+            "text": "Casualty Assistance Command Representative (CACR). As tasked in this Order, every unit, down to the Battalion/Squadron/I&I level will have a Casualty Assistance Command Representative assigned in writing. The mission of this individual will be to ensure that the unit is adhering to the policies of the Casualty Assistance Program and remains up to date on all significant changes to the program stemming from congressional legislation, benefit enhancements, or revised HQMC policies."
+          }
+        ],
+        "summary": "Every unit down to the Battalion, Squadron, and I&I level is required to have a SNCO or above designated as CACR through a written appointment. The CACR is responsible for ensuring command compliance with the Casualty Assistance Program and awareness of all policy changes."
+      },
+      "howToInspect": [
+        {
+          "step": "Request the Written Appointment",
+          "actions": [
+            "Ask the command to produce the written CACR appointment letter, order, or memorandum"
+          ],
+          "callout": "Verbal designation only",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Appointment Contents",
+          "actions": [
+            "Name and rank of the appointed CACR",
+            "Appointment is in writing (letter, order, or memorandum format)",
+            "Commanding Officer's signature on the appointment document"
+          ]
+        },
+        {
+          "step": "Verify Grade Requirement",
+          "actions": [
+            "Confirm the appointee holds the rank of SNCO (E-6 and above) or Officer"
+          ],
+          "callout": "Below SNCO appointed",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Appointee is Current",
+          "actions": [
+            "Cross-reference the appointee against current unit roster"
+          ],
+          "callout": "Appointee has transferred or separated without replacement",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Level of Appointment",
+          "actions": [
+            "Confirm the appointment exists at the Battalion, Squadron, or I&I level specifically"
+          ],
+          "callout": "Appointment exists only at a higher echelon without coverage at required level",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No written appointment document exists - verbal designation only",
+            "Appointment names a Marine who has transferred or retired without a replacement",
+            "Appointment exists only at a higher echelon",
+            "Appointment document is unsigned or otherwise incomplete"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your written CACR appointment document?",
+        "Who is your current CACR and when were they appointed?",
+        "Is this Marine still assigned to the unit and currently serving in this role?",
+        "Does the CACR know they hold this appointment and understand their responsibilities?"
+      ],
+      "verification": [
+        "Written appointment document for CACR is on file at the unit.",
+        "Appointed CACR holds the grade of SNCO (E-6 or above) or Officer.",
+        "Appointment document bears the Commanding Officer's signature.",
+        "Appointed Marine is currently assigned to the unit.",
+        "Appointment exists at the Battalion, Squadron, or I&I level as required."
+      ],
+      "verified": true
+    },
+    "0102": {
+      "title": "CACR TRAINING STATUS ROSTERS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 2, Par 3a(5)",
+            "text": "Maintain a roster of the annual training status of all SNCO(s) and Officers in the unit to which assigned. Provide copies of this roster to the next higher headquarters and MFPC."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 2, Par 3a(6)",
+            "text": "Maintain a roster of all personnel trained on casualty reporting procedures, on current personnel casualty reporting software programs and on investigative reporting policies in unit to which assigned. Provide copies of these rosters to the next higher headquarters and MFPC."
+          }
+        ],
+        "summary": "The CACR is required to maintain two distinct rosters. The first tracks the annual CACO training status of all SNCOs and Officers eligible for CACO assignment. The second tracks all personnel trained on casualty reporting procedures, current PCR software, and investigative reporting policies. Both rosters require distribution to the next higher headquarters and MFPC."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Both Rosters from the CACR",
+          "actions": [],
+          "callout": "No rosters exist",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify the CACO Annual Training Status Roster (Par 3a(5))",
+          "actions": [
+            "Roster lists all SNCOs (E-6 and above) and Officers in the unit",
+            "Roster reflects current training status (trained or untrained) for each eligible Marine",
+            "Training dates are annotated and within the annual requirement window",
+            "Copies provided to next higher headquarters",
+            "Copies provided to MFPC"
+          ]
+        },
+        {
+          "step": "Verify the Casualty Reporting Personnel Roster (Par 3a(6))",
+          "actions": [
+            "Roster identifies all personnel trained on casualty reporting procedures",
+            "Roster reflects training on current PCR software programs (DCIPS-Forward)",
+            "Roster reflects training on investigative reporting policies",
+            "Copies provided to next higher headquarters",
+            "Copies provided to MFPC"
+          ]
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Compare both rosters against current unit alpha roster for accuracy"
+          ],
+          "callout": "Rosters not updated for gains and losses",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Distribution",
+          "actions": [
+            "Request proof of distribution (email or correspondence records)"
+          ],
+          "callout": "No distribution documentation",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Only one roster exists - CACR unaware of the second requirement",
+            "Rosters not updated to reflect current unit personnel",
+            "Rosters never distributed to higher headquarters or MFPC",
+            "Training dates expired"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your CACO annual training status roster for SNCOs and Officers?",
+        "Show me your roster of personnel trained on casualty reporting procedures and current PCR software?",
+        "When were these rosters last updated?",
+        "When did you last provide copies to your higher headquarters and to MFPC?",
+        "How do you track when individual Marines complete or expire their annual training requirement?"
+      ],
+      "verification": [
+        "CACO annual training status roster for all SNCOs and Officers is on file and current.",
+        "Casualty reporting personnel training roster is on file and current.",
+        "Both rosters reflect current unit personnel (gains and losses captured).",
+        "Annual training dates are within the required window for all rostered personnel.",
+        "Copies of both rosters have been distributed to next higher headquarters.",
+        "Copies of both rosters have been distributed to MFPC."
+      ],
+      "verified": true
+    },
+    "0103": {
+      "title": "SOES SGLI BENEFICIARY ELECTION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MARADMIN 076/22, Par 2",
+            "text": "Commanders shall ensure ALL Marines who have not made an election in SOES make an election and 'Confirm and Certify' before exiting SOES, to ensure SGLI beneficiary designations are stored in the system. Commanders shall ensure their Marines make an election in SOES upon the following occasions: a. Joining the unit, b. Review/update of the Record of Emergency Data (RED), c. Reenlistment, d. At the request of the Marine, e. Upon request for accelerated benefits, f. Prior to deployment, g. Upon activation/mobilization or permanent change of station and prior to appellate leave or separation."
+          },
+          {
+            "citation": "MARADMIN 076/22, Par 6",
+            "text": "Commands are directed to establish procedures to ensure maximum compliance is attained and maintained at all times. This requirement shall be inspected during inspections utilizing the Casualty 3040 Functional Area Checklist. New join audits do not meet the criteria for updating SOES, as only the Record of Emergency Data (RED) is updated."
+          }
+        ],
+        "summary": "Commands are required to establish and maintain a formal process ensuring every Marine makes a confirmed election in SOES at each of the seven required triggering events. Compliance must be tracked and maintained at all times. A new join RED audit alone does not satisfy SOES requirements."
+      },
+      "howToInspect": [
+        {
+          "step": "Request the Command's SOES Process Documentation",
+          "actions": [
+            "Ask the CACR to describe and produce documentation of the command's SOES compliance process"
+          ],
+          "callout": "No documented process",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Coverage of All Seven Triggering Events",
+          "actions": [
+            "Joining the unit",
+            "Review/update of the RED",
+            "Reenlistment",
+            "At the request of the Marine",
+            "Upon request for accelerated benefits",
+            "Prior to deployment",
+            "Activation/mobilization, PCS, or pre-separation"
+          ]
+        },
+        {
+          "step": "Pull the Current SOES Compliance Report",
+          "actions": [
+            "Method 1: Command Profile > Administration > SOES Certification Status - verify VA Certification Date is after 1 May 2018 and TRF APPL column reads \"SOES\"",
+            "Method 2: Marine OnLine Analytics Tool > Team Content > ODSE User Reports > MISSO 09 > SOES Status Report - verify Last Certified Date Time is after 1 May 2018"
+          ]
+        },
+        {
+          "step": "Cross-Reference Report Against Alpha Roster",
+          "actions": [
+            "Identify Marines with no valid election or certification date prior to 1 May 2018"
+          ],
+          "callout": "Widespread non-compliance",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No documented process exists",
+            "SOES report shows Marines with certification dates prior to 1 May 2018",
+            "Command conflates RED audit with SOES election",
+            "Marines unable to complete SOES due to DEERS discrepancy with no corrective action taken"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What is your command's process for ensuring Marines complete SOES elections?",
+        "Show me your current SOES compliance report and walk me through how you generate it?",
+        "How does the command track and ensure a Marine completes SOES at each required triggering event?",
+        "Do you have any Marines currently unable to complete SOES? If so, what action is being taken?",
+        "What is the difference between a new join RED audit and a SOES election?"
+      ],
+      "verification": [
+        "Command has a documented process for ensuring SOES compliance at all seven required triggering events.",
+        "SOES compliance report is current and accessible.",
+        "All Marines in the unit have a valid election with a VA Certification Date after 1 May 2018.",
+        "TRF APPL column on the SOES report reads \"SOES\" for all Marines.",
+        "Command correctly distinguishes SOES election from new join RED audit.",
+        "Known DEERS discrepancies for dual military couples are being actively corrected."
+      ],
+      "verified": true
+    },
+    "0104": {
+      "title": "DD FORM 93 / RECORD OF EMERGENCY DATA UPDATE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Par 4.c(8)(b)",
+            "text": "Ensure that an administrative audit of the Record of Emergency Data (RED) (DD Form 93) and Servicemembers' Group Life Insurance Election and Certificate (SGLV 8286) is conducted by every Marine under your charge: 1. Upon checking in to the unit. 2. When ordered to periods of temporary duty in excess of 30 days. 3. Prior to deployments, regardless of length. 4. Prior to approval of departure on permanent change of station orders. 5. Triennially."
+          }
+        ],
+        "summary": "Commanding Officers are required to ensure every Marine audits and updates the RED and SGLV 8286 at five specific points: unit check-in, TDY orders exceeding 30 days, pre-deployment, pre-PCS, and every three years. Updates made via Marine Online (MOL) supersede a previously signed RED."
+      },
+      "howToInspect": [
+        {
+          "step": "Request the Command's RED Audit Process Documentation",
+          "actions": [
+            "Ask the CACR to describe and produce documentation of the RED audit process"
+          ],
+          "callout": "No documented process",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Coverage of All Five Triggering Events",
+          "actions": [
+            "Upon checking in to the unit",
+            "When ordered to TDY in excess of 30 days",
+            "Prior to all deployments, regardless of length",
+            "Prior to approval of departure on PCS orders",
+            "Triennially (every three years)"
+          ]
+        },
+        {
+          "step": "Verify Pre-Deployment Audit Execution",
+          "actions": [
+            "Request pre-deployment admin checklist for the most recent deployment cycle",
+            "Confirm RED audit is captured as a required action"
+          ]
+        },
+        {
+          "step": "Verify Triennial Review Process",
+          "actions": [
+            "Ask how the command tracks Marines not otherwise audited within three years"
+          ],
+          "callout": "No triennial review mechanism",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify MOL Update Understanding",
+          "actions": [
+            "Confirm the CACR understands MOL RED updates supersede a previously signed paper RED",
+            "Also confirm a MCTFS review is required to capture other RED changes"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "RED audits conducted only at check-in - unaware of TDY, PCS, and triennial requirements",
+            "No tracking mechanism for triennial reviews",
+            "Command conflates SGLV 8286 update with RED update"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through your process for ensuring Marines complete RED audits at each required event?",
+        "How do you track which Marines need a triennial RED review?",
+        "Show me your pre-deployment admin checklist and confirm the RED audit is captured?",
+        "If a Marine updates their RED on Marine Online, how do you document and verify that?",
+        "Show me documentation from your last check-in audit showing the RED was reviewed?"
+      ],
+      "verification": [
+        "Command has a documented process for RED audits at all five required triggering events.",
+        "RED audits are completed upon every Marine's check-in to the unit.",
+        "RED audits are completed for TDY orders exceeding 30 days.",
+        "RED audits are completed prior to all deployments regardless of length.",
+        "RED audits are completed prior to PCS order approval.",
+        "Triennial review process exists and captures all Marines not otherwise audited within three years.",
+        "Command tracks both RED and SGLV 8286 as separate required actions in the audit."
+      ],
+      "verified": true
+    },
+    "0105": {
+      "title": "TELEPHONIC CONTACT AND PCR SUBMISSION TIMELINE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 3, Par 1",
+            "text": "When a reportable casualty occurs, it is the responsibility of the casualty's command to notify MFPC and the MCOC, and to submit a Personnel Casualty Report (PCR). In the case of a reportable casualty, the command will notify MFPC and the MCOC telephonically prior to release of the PCR."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 3, Par 1b",
+            "text": "Timeliness. Report as soon as possible but no later than one (1) hour after learning of the incident."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 3, Par 4a",
+            "text": "Voice Report. Commands will contact the MCOC at 1-866-476-2669 and MFPC at 1-800-847-1597 immediately upon learning a reportable casualty has occurred providing, at a minimum, the casualty's name, social security number and basic circumstances surrounding the casualty incident."
+          }
+        ],
+        "summary": "Upon learning of a reportable casualty, the command must immediately make a voice report to both MCOC and MFPC. Telephonic contact with MFPC must occur before the PCR is released. The PCR must be submitted no later than one hour after learning of the incident."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify CACR Knowledge of Contact Numbers and Sequence",
+          "actions": [
+            "MCOC: 1-866-476-2669",
+            "MFPC: 1-800-847-1597",
+            "Telephonic notification to both MCOC and MFPC must occur before PCR release",
+            "PCR must be submitted no later than one hour after learning of the incident"
+          ]
+        },
+        {
+          "step": "Review Documentation for Any Casualties During the Inspection Period",
+          "actions": [
+            "Request the casualty notification log or after-action record",
+            "Timestamp of voice notification to MCOC and MFPC",
+            "Timestamp of PCR submission",
+            "Confirm PCR was not released prior to telephonic notification"
+          ],
+          "callout": "PCR released before telephonic notification",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACR unfamiliar with MCOC contact number",
+            "PCR submitted before telephonic notification to MFPC was completed",
+            "No documentation of telephonic contact maintained",
+            "CACR believes the one-hour clock starts after the voice report rather than from time of incident knowledge",
+            "Inspector Note: MCO 3040.4 contains two different MCOC numbers internally. The general USMC-NOW line in the base order is 1-866-876-2669. The casualty-specific line used throughout Chapters 2 and 3 is 1-866-476-2669. This guide uses 1-866-476-2669, which governs casualty reporting procedures. Accept either number from units. the operationally correct line for casualty reporting is 1-866-476-2669."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through the steps you take from the moment you learn of a reportable casualty?",
+        "What are the contact numbers for MCOC and MFPC?",
+        "Do you maintain a log of telephonic contacts made to MFPC prior to PCR release?",
+        "What is the timeliness standard for submitting a PCR after learning of an incident?",
+        "Has your unit had a reportable casualty in the past year? If so, show me the documentation of that notification?"
+      ],
+      "verification": [
+        "CACR knows MFPC contact number: 1-800-847-1597.",
+        "CACR knows MCOC contact number: 1-866-476-2669.",
+        "CACR correctly states telephonic notification must occur before PCR release.",
+        "CACR correctly states PCR must be submitted no later than one hour after learning of the incident.",
+        "Documentation of telephonic contacts is maintained for any reportable casualties during the inspection period.",
+        "PCR submission timestamps confirm compliance with the one-hour standard."
+      ],
+      "verified": true
+    },
+    "0106": {
+      "title": "PCR TYPES, STATUSES, AND CATEGORIES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 3, Sect 2, Figure 3-1",
+            "text": "Casualty Type - As appropriate: Hostile. Non-hostile. Pending (Determination Pending). Casualty Status - As appropriate: D-Deceased. M-Missing (will not be used unless an official declaration has been made by SECNAV or his designee, DC, M&RA). N-Not Wounded in Action. P-Duty Status Whereabouts Unknown (DUSTWUN). V-Very Seriously Ill or Injured. S-Seriously Ill or Injured. I-Ill or Injured but Not Seriously. H-Wounded in Action. Casualty Category - As appropriate: A-Accident. B-Besieged. C-Captured. D-Detained. H-Homicide. I-Illness. G-Missing in Action. K-Killed in Action. L-Beleaguered. M-Self-inflicted. N-Interned. P-Pending. R-Returned to Military Control. T-Terrorist Activity. V-Hostile Death. W-Wounded in Action."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 3, Sect 2, Figure 3-2",
+            "text": "Multiple Casualty Incident PCR preparation - instructions governing PCR preparation when multiple casualties result from a single incident, requiring use of the Multiple Casualty Incident Data module in DCIPS-Forward."
+          }
+        ],
+        "summary": "The CACR must correctly select the applicable Casualty Type, Status, and Category for every PCR submission. Mass casualty incidents require use of the Multiple Casualty Incident module in DCIPS-Forward. Deceased dependents are reportable per Table 3-2 and require a PCR with Personnel Affiliation of \"P-Dependent: Family Member.\""
+      },
+      "howToInspect": [
+        {
+          "step": "Test Knowledge of Casualty Type, Status, and Category",
+          "actions": [
+            "Ask the CACR to explain the difference between Casualty Type, Casualty Status, and Casualty Category",
+            "Verify the CACR can correctly identify all eight casualty status codes and their meanings"
+          ]
+        },
+        {
+          "step": "Verify DUSTWUN vs. Missing Status Knowledge",
+          "actions": [
+            "DUSTWUN uses status code W",
+            "Missing status (M) requires official declaration by SECNAV or DC M&RA - not applied by the unit"
+          ],
+          "callout": "CACR believes the unit applies Missing status",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Mass Casualty Procedures",
+          "actions": [
+            "Ask how the CACR would handle a single incident with five simultaneous casualties",
+            "Verify CACR knows to use the Multiple Casualty Incident Data module in DCIPS-Forward"
+          ]
+        },
+        {
+          "step": "Verify Deceased Dependent Reporting",
+          "actions": [
+            "Ask whether deceased dependents are reportable",
+            "Verify CACR knows deceased dependents are reportable per Table 3-2"
+          ]
+        },
+        {
+          "step": "Review Submitted PCRs if Applicable",
+          "actions": [
+            "Pull a sample of PCRs submitted during the inspection period",
+            "Verify correct Type, Status, and Category selection on each"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACR conflates Casualty Status and Casualty Category",
+            "CACR unaware of the Missing status restriction requiring SECNAV or DC M&RA declaration",
+            "CACR unaware that deceased dependents are reportable",
+            "CACR unaware of the Multiple Casualty Incident module in DCIPS-Forward"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Explain the difference between Casualty Type, Casualty Status, and Casualty Category?",
+        "What status code is used when a Marine disappears and whereabouts are unknown?",
+        "Under what authority is the Missing status code (M) applied?",
+        "If your unit had five simultaneous casualties in one incident, how would you prepare that PCR?",
+        "Are deceased dependents reportable? Under what circumstances?",
+        "What is the only authorized program for generating and submitting PCRs?"
+      ],
+      "verification": [
+        "CACR correctly identifies all eight casualty statuses and their DCIPS-Forward codes.",
+        "CACR correctly identifies all three Casualty Types: Hostile, Non-hostile, Pending.",
+        "CACR correctly explains DUSTWUN (W) versus Missing (M) distinction and the authority required for Missing.",
+        "CACR knows to use the Multiple Casualty Incident module for mass casualty events.",
+        "CACR correctly identifies deceased dependents as reportable under Table 3-2.",
+        "CACR confirms DCIPS-Forward as the only authorized PCR submission method."
+      ],
+      "verified": true
+    },
+    "0107": {
+      "title": "DUSTWUN PCR PROCEDURES AND TIMELINES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 8, Sect 1, Par 2a",
+            "text": "Any Marine suspected to be a casualty, who is not present or appears to be missing (i.e., whereabouts are unknown, the disappearance appears to be involuntary, and the Marine is not known to be UA), and whose status initially is so uncertain that the commander must gather the facts to make a proper status determination, must be reported as DUSTWUN, per chapter 3. Additionally, Marines thought to be UA/Deserter in an Official Combat Zone or Operation should be reported as DUSTWUN. Make no SRB or unit diary entries at this time."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 8, Sect 1, Par 5a",
+            "text": "Once reported as DUSTWUN, the commander with special courts-martial convening authority, having jurisdiction over the Marine will convene a fact-finding body to investigate the circumstances surrounding the disappearance. The maximum time a Marine may remain in a nonhostile DUSTWUN status is 10 days from the date of disappearance."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 8, Sect 1, Par 5b",
+            "text": "Subsequent to submission of the Personnel Casualty Report (PCR) placing the Marine in a DUSTWUN status, the commander will submit a daily supplemental PCR to MFPC that includes the extent of the search, any progress noted, and other pertinent information. Daily supplemental PCRs are required, unless not feasible for security reasons, and will continue until the search has been discontinued."
+          }
+        ],
+        "summary": "A DUSTWUN declaration is required when a Marine's disappearance appears involuntary and facts are insufficient for a definitive status determination. An initial PCR must be submitted immediately. Daily supplemental PCRs follow until resolution. A nonhostile DUSTWUN status has a maximum duration of 10 days. Missing status requires a formal declaration by SECNAV or DC M&RA."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify Knowledge of DUSTWUN Triggering Conditions",
+          "actions": [
+            "Whereabouts are unknown",
+            "Disappearance appears involuntary",
+            "Marine is not known to be UA",
+            "Marines in an official combat zone who are thought to be UA/Deserter are also reported as DUSTWUN"
+          ]
+        },
+        {
+          "step": "Verify Immediate PCR Actions",
+          "actions": [
+            "Initial PCR submitted immediately upon DUSTWUN determination",
+            "No SRB or unit diary entries made at the time of DUSTWUN reporting"
+          ]
+        },
+        {
+          "step": "Verify Daily Supplemental PCR Requirement",
+          "actions": [
+            "Daily supplemental PCRs required while Marine remains in DUSTWUN status",
+            "Reports include extent of search, progress, and other pertinent information"
+          ],
+          "callout": "CACR unaware of the daily supplemental requirement",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Timeline Knowledge",
+          "actions": [
+            "Maximum nonhostile DUSTWUN duration: 10 days from date of disappearance",
+            "Missing status (M) requires official declaration by SECNAV or DC M&RA - not applied by the unit"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACR unaware of the 10-day maximum nonhostile DUSTWUN timeline",
+            "CACR believes the unit applies the Missing status designation",
+            "CACR unaware of the daily supplemental PCR requirement",
+            "CACR believes SRB and unit diary entries are made at the time of DUSTWUN reporting"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Under what circumstances would you declare a Marine DUSTWUN rather than UA?",
+        "Once a Marine is declared DUSTWUN, what are the immediate PCR requirements?",
+        "How frequently are supplemental PCRs required during a DUSTWUN status?",
+        "What is the maximum number of days a Marine may remain in a nonhostile DUSTWUN status?",
+        "Who has the authority to place a Marine in Missing status?",
+        "What SRB or unit diary entries are made when a DUSTWUN PCR is submitted?"
+      ],
+      "verification": [
+        "CACR correctly identifies conditions triggering a DUSTWUN declaration.",
+        "CACR correctly distinguishes DUSTWUN from UA/Deserter status.",
+        "CACR correctly states an initial PCR must be submitted immediately upon DUSTWUN determination.",
+        "CACR correctly states daily supplemental PCRs are required during DUSTWUN status.",
+        "CACR correctly states the 10-day maximum for nonhostile DUSTWUN status.",
+        "CACR correctly states Missing status requires official declaration by SECNAV or DC M&RA - not applied by the unit.",
+        "CACR correctly states no SRB or unit diary entries are made at the time of DUSTWUN reporting."
+      ],
+      "verified": true
+    },
+    "0108": {
+      "title": "PROGRESS REPORTS FOR HOSPITALIZED MARINES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 3, Sect 2, Par 2e(3)",
+            "text": "Injured/Ill Cases. A supplemental/progress PCR will be submitted at reasonable intervals, depending upon prognosis, but at least every week until the individual's category has been downgraded below seriously ill/injured (SI), is sent on convalescent leave, or is returned to duty. 'Returned to duty' means that the Marine is no longer required to attend any physical therapy or outpatient care, as stated by the attending physician, for the injury described in the Initial PCR. Supplemental PCRs will be generated by the parent command except in the following circumstances: 1. If the Marine is located in a theatre of operations, Supplemental PCRs will be generated by the Forward Command Element. 2. For Marines medevaced out of theatre of operations, Supplemental PCRs will be generated by Patient Affairs Teams (PATs) until the Marine has been returned to the parent command or administratively attached to another unit."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 3, Sect 2, Par 2e(4)",
+            "text": "Incident Investigations. Generate supplemental PCRs at least every 30 days from the date of initial report to provide a status of the investigation until completed."
+          }
+        ],
+        "summary": "For SI and VSI hospitalized Marines, progress/supplemental PCRs are required at least weekly until the casualty is downgraded below SI, placed on convalescent leave, or returned to duty. Updates to a casualty's medical condition or location are reported via Progress Report (PROG) type in DCIPS-Forward, not a Supplemental Report (SUPP)."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Any SI or VSI Cases During the Inspection Period",
+          "actions": [
+            "Ask the CACR whether the unit has had any SI or VSI hospitalized Marines during the inspection period"
+          ]
+        },
+        {
+          "step": "If Applicable, Review Progress PCR Records",
+          "actions": [
+            "Progress reports submitted at least weekly while the Marine remained SI or VSI",
+            "Reports submitted via DCIPS-Forward using the PROG report type",
+            "Reports contain current hospital location and medical status",
+            "Reports continued until correct discontinuation criteria were met"
+          ],
+          "callout": "SUPP type used instead of PROG type",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify PAT Coordination if Medevac Occurred",
+          "actions": [
+            "Confirm the CACR coordinated with the Patient Affairs Team (PAT) during medevac phase"
+          ],
+          "callout": "CACR unaware of the PAT's reporting responsibility",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Progress reports submitted monthly instead of weekly",
+            "CACR uses SUPP report type for medical condition updates instead of PROG",
+            "Progress reports discontinued before the Marine was formally returned to duty",
+            "CACR unaware of the PAT's reporting responsibility during medevac phase"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Has your unit had a Marine in SI or VSI status during the past year? Walk me through the progress report process?",
+        "What is the reporting frequency requirement for a Marine who remains in SI status?",
+        "What DCIPS-Forward report type do you use to update a Marine's medical condition or location?",
+        "When can progress reports be discontinued for an ill or injured Marine?",
+        "If a Marine is medevaced, who is responsible for submitting progress reports?"
+      ],
+      "verification": [
+        "CACR correctly states weekly minimum reporting frequency for SI/VSI Marines.",
+        "CACR correctly identifies the PROG (Progress Report) type for medical condition/location updates.",
+        "For any SI/VSI cases during the inspection period, progress PCR records confirm weekly submission.",
+        "Progress reports were maintained until correct discontinuation criteria were met.",
+        "CACR understands PAT reporting responsibility during medevac phase."
+      ],
+      "verified": true
+    },
+    "0109": {
+      "title": "SPECIAL PATIENT (SPECPAT) CASES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 1, Par 2iii",
+            "text": "Special Patient (SpecPat). The category of a casualty applicable when the casualty's illness or injury is not otherwise reportable but involves: (1) incurable or terminal diseases (Acquired Immune Deficiency Syndrome (AIDS) is not classified as a terminal disease); (2) diagnosed psychotic conditions requiring hospitalization; (3) injuries such as loss of sight or limb, paralysis, or permanent and unsightly disfigurement of a portion of the body exposed to public view; or (4) attempted suicide, verified by medical authority."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 4, Sect 2, Par 2a(2)(b)",
+            "text": "SpecPat. When a Marine makes a suicide attempt, as verified by medical authority, notification will be made as follows: 1. the Marine notifies the PNOK; requests notification not be made; or 2. if the Marine does not indicate a clear intent, or is not capable of making notification, MFPC will make telephonic notification to the PNOK."
+          }
+        ],
+        "summary": "Special Patient is a distinct casualty category triggered by four specific conditions not otherwise reportable. A PCR must be submitted when a SpecPat condition is identified. AIDS is explicitly excluded from the terminal disease classification. SpecPat suicide attempt cases have a unique notification protocol where the Marine is given the opportunity to notify the PNOK first."
+      },
+      "howToInspect": [
+        {
+          "step": "Test Knowledge of the Four SpecPat Triggering Conditions",
+          "actions": [
+            "Incurable or terminal diseases (AIDS is not classified as a terminal disease)",
+            "Diagnosed psychotic conditions requiring hospitalization",
+            "Injuries such as loss of sight or limb, paralysis, or permanent and unsightly disfigurement",
+            "Attempted suicide, verified by medical authority"
+          ]
+        },
+        {
+          "step": "Verify PCR Requirement",
+          "actions": [
+            "Confirm the CACR knows a PCR is required when a SpecPat condition is identified"
+          ],
+          "callout": "CACR unaware a PCR is required",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify the Suicide Attempt Notification Protocol",
+          "actions": [
+            "The Marine is given the opportunity to notify the PNOK first",
+            "If the Marine does not indicate a clear intent or is not capable of making notification, MFPC makes telephonic notification to the PNOK"
+          ]
+        },
+        {
+          "step": "Review Any SpecPat Cases During the Inspection Period",
+          "actions": [
+            "Pull the PCR and verify correct SpecPat classification and timely submission"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACR can only identify one or two of the four SpecPat conditions",
+            "CACR believes AIDS qualifies as a terminal disease under SpecPat",
+            "CACR unaware of the unique notification protocol for suicide attempt cases",
+            "CACR unclear on whether a PCR is required for SpecPat cases"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Define the Special Patient category and tell me the four conditions that trigger it?",
+        "Is AIDS classified as a terminal disease for Special Patient purposes?",
+        "When a Marine is classified as SpecPat, is a PCR required?",
+        "Walk me through the notification protocol when a Marine attempts suicide?",
+        "How does the command identify and track when a Marine meets SpecPat criteria?"
+      ],
+      "verification": [
+        "CACR correctly defines Special Patient (SpecPat) category.",
+        "CACR correctly identifies all four SpecPat triggering conditions.",
+        "CACR correctly states AIDS is not classified as a terminal disease under SpecPat.",
+        "CACR correctly states a PCR is required for SpecPat cases.",
+        "CACR correctly describes the suicide attempt notification protocol - Marine given opportunity to notify PNOK first.",
+        "For any SpecPat cases during the inspection period, PCR records confirm correct classification and timely submission."
+      ],
+      "verified": true
+    },
+    "0110": {
+      "title": "ACCELERATED BENEFIT OPTION (ABO)",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 7, Sect 2, Par 9",
+            "text": "SGLI Accelerated Benefits Option (ABO). The ABO permits terminally ill Marines or spouses, insured under the SGLI or FSGLI program, access to the death benefits of the policy before death. The Marine or spouse must have a valid written prognosis from a physician of nine months or less to live. Only the insured Marine may apply and receive proceeds from the ABO on behalf of him/herself or their spouse. The Marine may receive up to 50 percent, or a lesser amount in increments of $5,000, of the face value of insurance coverage in a lump-sum payment."
+          },
+          {
+            "citation": "MCO 1741.8, Chap 5, Par 1",
+            "text": "The ABO permits Marines and spouses insured under Servicemembers' Group Life Insurance (SGLI) and Marines insured under Veterans' Group Life Insurance (VGLI) access to death benefits of the policy before death. a. A Marine is eligible to receive accelerated benefits only after a physician has diagnosed the insured, in writing, with a prognosis of 9 months or less to live. b. The amount of the accelerated benefit available to the Marine is up to 50 percent of the face value of the Marine's or spouse's insurance coverage. If the Marine elects less than the maximum, the amount requested must be in increments of $5,000. c. The portion of the face value of insurance which is not paid in a lump sum as accelerated benefits remains payable to the designated beneficiary upon death of the insured."
+          },
+          {
+            "citation": "MCO 1741.8, Chap 5, Par 2a",
+            "text": "The insured Marine is the only individual that may apply for accelerated benefits. No other individual may apply on the Marine's behalf."
+          },
+          {
+            "citation": "MCO 1741.8, Chap 5, Par 3",
+            "text": "Effective Date. The election to receive the accelerated benefits becomes effective at the time the Marine cashes or deposits the accelerated benefits check."
+          }
+        ],
+        "summary": "The ABO allows terminally ill Marines or spouses insured under SGLI or FSGLI to access up to 50% of their policy's face value before death. Eligibility requires a written physician prognosis of nine months or less to live. Only the insured Marine may apply. The election becomes effective when the Marine cashes or deposits the payment."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify Eligibility Knowledge",
+          "actions": [
+            "Terminally ill Marines or spouses insured under SGLI or FSGLI",
+            "Requires a written physician prognosis of nine months or less to live"
+          ]
+        },
+        {
+          "step": "Verify Benefit Amount Knowledge",
+          "actions": [
+            "Maximum benefit: up to 50% of the face value of coverage",
+            "If electing less than the maximum, amount must be in increments of $5,000"
+          ]
+        },
+        {
+          "step": "Verify Application Authority",
+          "actions": [
+            "Only the insured Marine may apply - no one else may apply on their behalf"
+          ],
+          "callout": "CACR states family members may apply",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Effective Date Knowledge",
+          "actions": [
+            "Election becomes effective when the Marine cashes or deposits the accelerated benefits check"
+          ]
+        },
+        {
+          "step": "Verify Form Knowledge",
+          "actions": [
+            "SGLV 8284 for SGLI. SGLV 8284A for FSGLI spouse"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACR states family members may apply for ABO",
+            "CACR unaware of the nine-month written physician prognosis requirement",
+            "CACR does not know the $5,000 increment requirement",
+            "CACR unaware the ABO becomes effective only when the check is cashed or deposited"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Explain the Accelerated Benefit Option to me. Who is eligible and what does it provide?",
+        "What medical documentation is required for a Marine to qualify for the ABO?",
+        "What is the maximum amount a Marine can receive under the ABO?",
+        "Can a family member or the CACR apply for the ABO on a Marine's behalf?",
+        "When does the ABO election become effective?",
+        "What happens to the remaining portion of the SGLI coverage after the ABO is paid?",
+        "What form does the Marine complete to apply for the ABO?"
+      ],
+      "verification": [
+        "CACR correctly explains ABO as allowing terminally ill Marines to access SGLI/FSGLI benefits before death.",
+        "CACR correctly states the eligibility criterion: written physician prognosis of nine months or less to live.",
+        "CACR correctly states the maximum benefit: up to 50% of the face value of coverage.",
+        "CACR correctly states partial elections must be in increments of $5,000.",
+        "CACR correctly states only the insured Marine may apply.",
+        "CACR correctly states the election becomes effective when the check is cashed or deposited.",
+        "CACR correctly states the remaining coverage remains payable to the designated beneficiary upon death.",
+        "CACR correctly identifies SGLV 8284 as the application form."
+      ],
+      "verified": true
+    },
+    "0111": {
+      "title": "NOK NOTIFICATION FOR ILL/INJURED MARINES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 4, Sect 2, Par 2",
+            "text": "Manner of Notification. Notification will be made on reportable casualties as outlined in subparagraphs (a) through (e). a. Active Duty (1) Deceased, Duty Status Whereabouts Unknown (DUSTWUN), and Missing. The primary NOK (PNOK) and secondary NOK (SNOK), as defined in Chapter 1, will be notified in person. (2) Ill or Injured (a) Hostile Not Seriously Injured (NSI) - Wounded in Action, Seriously Ill or Injured (SI), and Very Seriously Ill or Injured (VSI). The PNOK and SNOK will be notified telephonically by MFPC. Following telephonic notification, a Casualty Assistance Calls Officer (CACO) may be assigned at the request of the commander or as directed by MFPC. (b) SpecPat. When a Marine makes a suicide attempt, as verified by medical authority: 1. the Marine notifies the PNOK; requests notification not be made; or 2. if the Marine does not indicate a clear intent, or is not capable of making notification, MFPC will make telephonic notification to the PNOK."
+          }
+        ],
+        "summary": "For active duty ill or injured Marines, the notification method varies by casualty status. Deceased, DUSTWUN, and Missing require in-person notification. SI, VSI, and hostile NSI require telephonic notification by MFPC to both PNOK and SNOK. SpecPat (suicide attempt) notification begins with the Marine - MFPC makes telephonic notification only if the Marine cannot or does not clearly indicate a preference."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify In-Person vs. Telephonic Notification Knowledge",
+          "actions": [
+            "Deceased, DUSTWUN, and Missing: PNOK and SNOK notified in person",
+            "Hostile NSI, SI, and VSI: PNOK and SNOK notified telephonically by MFPC"
+          ],
+          "callout": "CACR believes the unit makes telephonic notification for SI/VSI cases",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify PNOK and SNOK Dual Notification Requirement",
+          "actions": [
+            "Both PNOK and SNOK must receive notification for all ill/injured cases"
+          ],
+          "callout": "CACR unaware SNOK also receives notification",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify SpecPat Notification Protocol",
+          "actions": [
+            "Marine is given the opportunity to notify the PNOK first",
+            "MFPC makes telephonic notification only if Marine cannot or does not indicate a clear preference"
+          ]
+        },
+        {
+          "step": "Verify CACO Assignment Process",
+          "actions": [
+            "CACO may be assigned following telephonic notification at the commander's request or by MFPC direction"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACR believes the unit commander or CACR makes telephonic notification for ill/injured cases rather than MFPC",
+            "CACR unaware that both PNOK and SNOK must receive notification",
+            "CACR unable to distinguish between NSI hostile (requires notification) and NSI non-hostile",
+            "CACR unfamiliar with the SpecPat notification protocol"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "For a Marine who is VSI, who makes notification to the NOK and how is it done?",
+        "Who are the required NOK recipients for ill/injured notifications?",
+        "What is the notification requirement for a Marine who is NSI and wounded in action?",
+        "Who makes initial telephonic notification for SI and VSI cases - the unit or MFPC?",
+        "Walk me through the notification process when a Marine attempts suicide?"
+      ],
+      "verification": [
+        "CACR correctly states Deceased, DUSTWUN, and Missing require in-person notification.",
+        "CACR correctly states SI, VSI, and hostile NSI require telephonic notification by MFPC.",
+        "CACR correctly states both PNOK and SNOK must be notified for ill/injured cases.",
+        "CACR correctly states MFPC - not the unit - makes initial telephonic NOK notification.",
+        "CACR correctly describes the SpecPat (suicide attempt) notification protocol.",
+        "CACR correctly states a CACO may be assigned following telephonic notification at the commander's request or by MFPC direction."
+      ],
+      "verified": true
+    },
+    "0112": {
+      "title": "INVITATIONAL TRAVEL AUTHORIZATIONS - BEDSIDE AND BURIAL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 7, Sect 2, Par 28",
+            "text": "Invitational Travel Orders (ITO) to Bedside. Per reference (q), ITO(s) may be issued to not more than three family members for round-trip transportation and per diem to visit an active duty Marine who is seriously ill or injured or in a situation of imminent death, whether or not electrical brain activity exists or brain death is declared, and who is hospitalized in a medical facility anywhere in the world. a. Classifications Eligible. Active Duty. b. Beneficiary Determination. Family members are the Marine's spouse, children (including step, adopted, and illegitimate children), siblings, and parents. c. Claim Procedures. Request for ITO to bedside should be submitted to MFPC. ITO(s) will be approved, funded, and issued by MFPC. Commanders are not authorized to utilize command funds to issue an ITO."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 7, Sect 2, Par 6",
+            "text": "Invitational Travel Orders (ITO) to Burial. Travel to and from the burial site and 2 days per diem are authorized. A Government Transportation Request (GTR) should be utilized whenever possible. a. Death Classification Eligible. ITO(s) are authorized for eligible family members of active duty and retired Marines placed on the T/PDRL who die within 120 days of separation while retained in a medical treatment facility as a result of service connected disability. b. Beneficiary Determination. Per reference (q), ITOs may be issued to the spouse, spouse's parents, children, parents, siblings, and Person Authorized to Direct Disposition (PADD) to attend the burial or memorial service. c. Claim Procedure. All ITOs will be approved and/or produced by MFPC."
+          }
+        ],
+        "summary": "ITAs to bedside are limited to no more than three family members for active duty Marines who are SI, VSI, or in imminent death status. ITAs to burial are authorized for a broader group including the PADD. In both cases, all ITOs are approved, funded, and issued by MFPC. Commanders are not authorized to use command funds for ITOs. Burial ITOs are limited to travel plus two days per diem."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify Bedside ITO Knowledge",
+          "actions": [
+            "Limited to no more than three family members",
+            "Eligible for active duty Marines who are SI, VSI, or in imminent death status",
+            "Eligible travelers: spouse, children (step, adopted, illegitimate), siblings, and parents",
+            "All bedside ITOs are approved, funded, and issued by MFPC",
+            "Commanders are not authorized to use command funds to issue an ITO"
+          ],
+          "callout": "CACR believes unit issues or funds ITOs",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Burial ITO Knowledge",
+          "actions": [
+            "Eligible travelers: spouse, spouse's parents, children, parents, siblings, and PADD",
+            "Reimbursement limited to travel to and from burial site plus two days per diem",
+            "GTR should be utilized whenever possible",
+            "All ITOs approved and produced by MFPC"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACR unaware of the three-person limit for bedside ITOs",
+            "CACR believes the unit issues or funds ITOs",
+            "CACR unable to identify all eligible travelers for burial ITOs including the PADD",
+            "CACR does not know the two-day per diem limitation for burial travel"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through the process for getting an ITO issued to a Marine's family members to travel to the bedside?",
+        "How many family members are authorized to travel to the bedside under an ITO?",
+        "Who approves and issues ITOs?",
+        "Can the command use its own funds to issue an ITO to a Marine's family?",
+        "Who is eligible to receive an ITO to attend the burial of a deceased Marine?",
+        "What are the reimbursement limitations for burial ITOs?"
+      ],
+      "verification": [
+        "CACR correctly identifies eligibility for bedside ITOs: active duty Marines who are SI, VSI, or in imminent death status.",
+        "CACR correctly states the bedside ITO limit: no more than three family members.",
+        "CACR correctly identifies eligible bedside ITO travelers: spouse, children, siblings, and parents.",
+        "CACR correctly states all ITOs are approved, funded, and issued by MFPC.",
+        "CACR correctly states commanders are not authorized to use command funds for ITOs.",
+        "CACR correctly identifies burial ITO eligible travelers: spouse, spouse's parents, children, parents, siblings, and PADD.",
+        "CACR correctly states burial ITO reimbursement: travel to and from burial site plus two days per diem."
+      ],
+      "verified": true
+    },
+    "0113": {
+      "title": "ITAs TO UNIT MEMORIAL SERVICES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 7, Sect 2, Par 6b",
+            "text": "Beneficiary Determination. Per reference (q), ITOs may be issued to the spouse, spouse's parents, children, parents, siblings, and Person Authorized to Direct Disposition (PADD) to attend the burial or memorial service (if remains are not recovered)."
+          },
+          {
+            "citation": "MARADMIN 500/10, Par 2",
+            "text": "Department of Defense policy now allows for travel of eligible family members to attend a unit memorial service held in memory of their deceased Marine. Travel and transportation allowances include travel to and from the unit memorial service plus two days of per diem at the memorial site."
+          },
+          {
+            "citation": "MARADMIN 500/10, Par 3",
+            "text": "Only one unit memorial service is recognized for government-funded transportation and allowances. Travel and transportation allowances are limited to a two year period following the loss of the Marine. Memorial locations are limited to the Continental United States, Alaska, Hawaii and U.S. Territories. The location can also be the last permanent duty station of the Marine. Family members are not authorized travel to memorial services conducted in a theater of combat operations."
+          },
+          {
+            "citation": "MARADMIN 500/10, Par 4",
+            "text": "Travel is limited to the following individuals: Spouse, Children, Parents, Marine's Siblings, Spouse's Parents and the Person Authorized to Direct Disposition of Human Remains (PADD)."
+          },
+          {
+            "citation": "MARADMIN 500/10, Par 6",
+            "text": "The command hosting the memorial will generate Invitational Travel Orders for eligible family members."
+          }
+        ],
+        "summary": "Eligible family members may travel at government expense to attend one unit memorial service within two years of the Marine's death. The hosting command generates the ITOs. Travel to memorials in a theater of combat operations is not authorized. Reimbursement covers travel plus two days per diem."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify Unit Memorial Service ITA Authority",
+          "actions": [
+            "Confirm the CACR knows this entitlement exists under MARADMIN 500/10"
+          ],
+          "callout": "CACR believes unit memorial service travel is prohibited based solely on older MCO text",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Limitations",
+          "actions": [
+            "Only one unit memorial service authorized for government-funded travel",
+            "Two-year limitation period from the date of the Marine's death",
+            "Memorial locations limited to CONUS, Alaska, Hawaii, U.S. Territories, or the Marine's last permanent duty station",
+            "Travel to memorial services in a theater of combat operations is NOT authorized"
+          ]
+        },
+        {
+          "step": "Verify Eligible Travelers",
+          "actions": [
+            "Spouse, Children, Parents, Marine's Siblings, Spouse's Parents, and PADD"
+          ]
+        },
+        {
+          "step": "Verify ITO Generation Responsibility",
+          "actions": [
+            "The hosting command generates the ITOs - not MFPC"
+          ],
+          "callout": "CACR believes MFPC generates ITOs for unit memorial services",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACR unaware that unit memorial service travel is authorized - cites older MCO restriction",
+            "CACR believes MFPC generates ITOs for unit memorial services",
+            "CACR unaware of the two-year limitation period",
+            "CACR unaware that travel to combat theater memorials is not authorized"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Are family members authorized to travel at government expense to attend a unit memorial service?",
+        "How many unit memorial services are authorized for government-funded travel per loss?",
+        "Who generates the Invitational Travel Orders for unit memorial services?",
+        "What is the time limit for using this travel benefit after the Marine's death?",
+        "Who are the eligible travelers for unit memorial services?",
+        "Is travel authorized to a memorial service held in a combat zone?"
+      ],
+      "verification": [
+        "CACR correctly states DoD policy authorizes family travel to one unit memorial service.",
+        "CACR correctly states the two-year limitation from date of death.",
+        "CACR correctly identifies all eligible travelers including PADD.",
+        "CACR correctly states geographic limitations: CONUS, Alaska, Hawaii, U.S. Territories, or last permanent duty station.",
+        "CACR correctly states combat theater memorials are not authorized.",
+        "CACR correctly states the hosting command generates the ITOs.",
+        "CACR correctly states reimbursement includes travel plus two days per diem."
+      ],
+      "verified": true
+    },
+    "0114": {
+      "title": "REQUIRED DOCUMENTS EMAILED TO MFPC IN DEATH CASES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 2, Par 5e",
+            "text": "Acquire copies of the following: last signed RED; last signed SGLV 8286; page one of the Record of Military Processing (DD Form 1966/1), page one of the Military Enlistment/Reenlistment Form (DD Form 4/1) for enlisted; Appointment Acceptance and Record (NAVMC 763) for officers; page three (chronological record) from the Service Record Book (SRB)/Officer Qualification Record (OQR) and email, or fax, copies to MFPC. Updates to the RED via Marine Online (MOL) will supersede a previous signed RED. Additionally, a review of MCTFS is required to determine other changes to the RED."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 8, Sect 3, Par 1",
+            "text": "Other Required Documents. In addition to the initial voice report and preparation/submission of the PCR, the following applicable documents from the Marine's SRB/OQR must be faxed to MFPC immediately upon learning of a Marine's death: a. A copy of the Marine's latest signed Record of Emergency Data (RED). As this is the only document used by MFPC to determine the appropriate beneficiary of certain death benefits, e.g., death gratuity and pay arrears, it is vital that the signed RED be provided. b. A copy of the Marine's latest signed SGLV 8286 and SGLV 8285, if applicable. c. A copy of the Marine's DD Form 1966/1 (1st page). d. A copy of the Marine's DD Form 4/1. e. A copy of the Marine's NAVMC 00003 (leave papers), PCSO, or TADO in all cases involving Marines who die while in a leave, PCS, or TAD status. f. A copy of the Marine's most recent NAVMC 118(3), Chronological Record page. g. A copy of orders in cases involving Reserve Marines who die during or en route to or from an AT, ADT, IDT or ADSW period. h. In cases involving the death of an individual in the DEP, a copy of all enlistment documents."
+          }
+        ],
+        "summary": "Upon learning of a Marine's death, the unit must immediately fax or email a specific set of documents to MFPC. The signed RED is the most critical document as it determines beneficiaries for death gratuity and pay arrears. Additional case-specific documents are required based on the circumstances of death."
+      },
+      "howToInspect": [
+        {
+          "step": "Test Core Document Knowledge",
+          "actions": [
+            "Latest signed RED (most critical - used to determine death gratuity and AP beneficiaries)",
+            "Latest signed SGLV 8286 and SGLV 8285 (if applicable)",
+            "DD Form 1966/1 (1st page)",
+            "DD Form 4/1",
+            "NAVMC 118(3) Chronological Record page"
+          ]
+        },
+        {
+          "step": "Verify MOL RED Update Understanding",
+          "actions": [
+            "Updates to the RED via MOL will supersede a previously signed RED",
+            "A review of MCTFS is also required to determine other RED changes"
+          ]
+        },
+        {
+          "step": "Verify Circumstantial Document Knowledge",
+          "actions": [
+            "Leave papers (NAVMC 00003), PCSO, or TADO if Marine died on leave, PCS, or TAD",
+            "Copy of orders if Reserve Marine died during or en route to AT, ADT, IDT, or ADSW",
+            "All enlistment documents if DEP individual"
+          ],
+          "callout": "CACR unaware of circumstantial documents",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "If Death Occurred During Inspection Period",
+          "actions": [
+            "Request documentation confirming required documents were submitted to MFPC"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACR can only identify RED and SGLV 8286 - unaware of the full document list",
+            "CACR unaware of additional documents required when Marine dies on leave, PCS, or TAD",
+            "CACR does not know MOL updates supersede a previously signed RED"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "List all documents required to be submitted to MFPC when a Marine dies?",
+        "Why is the signed RED the most critical document submitted in a death case?",
+        "If a Marine updated their RED on Marine Online but never signed a paper RED, which version does MFPC use?",
+        "What additional documents are required if a Marine dies while on leave?",
+        "What additional documents are required when a Reserve Marine dies during a training period?"
+      ],
+      "verification": [
+        "CACR correctly identifies the signed RED as required and its role in determining death benefit beneficiaries.",
+        "CACR correctly identifies SGLV 8286 and SGLV 8285 (if applicable) as required.",
+        "CACR correctly identifies DD Form 1966/1 and DD Form 4/1 as required.",
+        "CACR correctly identifies NAVMC 118(3) Chronological Record page as required.",
+        "CACR correctly states MOL RED updates supersede a previously signed RED.",
+        "CACR correctly states a MCTFS review is required to capture other RED changes.",
+        "CACR correctly identifies circumstantial documents: leave papers, PCS/TAD orders, Reserve training orders, DEP enlistment documents."
+      ],
+      "verified": true
+    },
+    "0115": {
+      "title": "MEDICAL AND DENTAL RECORDS TO DOVER PORT MORTUARY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 2, Par 5j",
+            "text": "Express Mail SRB/OQR, medical, and dental records to MFPC. During combat operations, express mail medical and dental records to Marine Corps Mortuary Affairs Officer at Dover Port Mortuary."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 8, Sect 3, Par 3b",
+            "text": "If positive identification of the remains is pending, when necessary, provide the health and dental records to the appropriate medical authority to assist in the identification process. For deaths occurring in a contingency operation, send the dental/health records to Dover Port Mortuary, 116 26th Street, Dover AFB, DE 19902-5121. After positive identification has been completed, ensure the health and dental records are recovered and forwarded to MFPC."
+          }
+        ],
+        "summary": "In all death cases, the SRB/OQR, medical, and dental records are express mailed to MFPC. For deaths occurring during combat or contingency operations, medical and dental records are additionally sent to Dover Port Mortuary to assist with positive identification. After positive identification is completed, those records must be recovered and forwarded to MFPC."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify Standard Routing Knowledge",
+          "actions": [
+            "SRB/OQR, medical, and dental records go to MFPC for all deaths via express mail"
+          ]
+        },
+        {
+          "step": "Verify Combat Operations Exception",
+          "actions": [
+            "During combat operations: medical and dental records also go to Marine Corps Mortuary Affairs Officer at Dover Port Mortuary",
+            "Dover Port Mortuary address: 116 26th Street, Dover AFB, DE 19902-5121",
+            "Purpose: to assist with positive identification of remains"
+          ],
+          "callout": "CACR unaware of the Dover Port Mortuary requirement",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Post-Identification Recovery Requirement",
+          "actions": [
+            "After positive identification is completed, health and dental records must be recovered from Dover and forwarded to MFPC"
+          ],
+          "callout": "CACR unaware of the recovery requirement",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "If Combat Death Occurred During Inspection Period",
+          "actions": [
+            "Request documentation confirming records were forwarded correctly"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACR unaware of the Dover Port Mortuary requirement - believes all records go to MFPC",
+            "CACR unaware of the requirement to recover records from Dover after identification",
+            "CACR sends only dental records to Dover, unaware that medical records are also required"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When a Marine dies, where are the medical and dental records sent?",
+        "Is the routing different when a Marine dies during combat operations?",
+        "What is the address for Dover Port Mortuary?",
+        "After positive identification is completed at Dover, what happens to the health and dental records?",
+        "Why are medical and dental records sent to Dover Port Mortuary specifically?"
+      ],
+      "verification": [
+        "CACR correctly states medical and dental records go to MFPC for all deaths via express mail.",
+        "CACR correctly states medical and dental records also go to Dover Port Mortuary for combat/contingency operation deaths.",
+        "CACR correctly identifies the purpose: to assist with positive identification of remains.",
+        "CACR correctly states records must be recovered from Dover after positive identification and forwarded to MFPC.",
+        "CACR can identify how to contact the Marine Corps Mortuary Affairs Officer at Dover."
+      ],
+      "verified": true
+    },
+    "0116": {
+      "title": "DROP FROM ROLLS OF DECEASED MARINES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO P1070.12K w/ CH 1 (IRAM), Table 4-2, Rule 42",
+            "text": "If the Marine dies or is killed in action: enter under the Primary Duty column - close-out number of months in primary duty, using date prior to date of death to compute number of months; enter under the Remarks column - (1) DROP DECEASED [or] (1) DROP KIA; the source document for the entry is - Casualty message or death notification."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 2, Par 5i",
+            "text": "Coordinate with Personnel Administrative Center (PAC) to run deceased transactions in MCTFS. Provide the servicing IPAC a copy of the PCR."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 8, Sect 3, Par 3a",
+            "text": "Commanders are required to close and forward the SRB/OQR, health, and dental records of deceased Marines as outlined in chapter 2 of reference(s). Do not retain the SRB/OQR, health, or dental records for investigation or any other purpose. Instead, make certified copies of the relevant documents and forward the records, as required. Contact IPAC as well to ensure distribution of the documents in the service record are made."
+          }
+        ],
+        "summary": "When a Marine dies, the unit must coordinate with the servicing IPAC to execute the drop from rolls transaction in MCTFS. The chronological record entry requires \"DROP DECEASED\" or \"DROP KIA\" with the date of death as the operative date. A copy of the PCR is provided to IPAC to support this transaction. Original SRB/OQR is forwarded to MFPC - not retained by the unit."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify Process Knowledge",
+          "actions": [
+            "IPAC must be notified and provided a copy of the PCR to execute the transaction"
+          ],
+          "callout": "CACR unaware of the IPAC coordination requirement",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Correct SRB Entry Knowledge",
+          "actions": [
+            "Entry under Remarks column: \"DROP DECEASED\" or \"DROP KIA\"",
+            "Date used: date prior to date of death for computing months in primary duty",
+            "Source document: Casualty message or death notification"
+          ]
+        },
+        {
+          "step": "Verify SRB/OQR Disposition",
+          "actions": [
+            "Original SRB/OQR is closed and forwarded - not retained by the unit",
+            "Certified copies may be made for investigation purposes if needed"
+          ],
+          "callout": "Unit retaining original SRB/OQR records",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "If Death Occurred During Inspection Period",
+          "actions": [
+            "Request documentation confirming IPAC coordination occurred",
+            "Request confirmation that MCTFS transaction was completed"
+          ],
+          "callout": "No documentation of IPAC coordination",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACR unaware of the requirement to coordinate with IPAC",
+            "No documentation exists showing IPAC coordination or MCTFS transaction",
+            "Unit retained original SRB/OQR records rather than forwarding them",
+            "CACR cannot explain the correct chronological record entry"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through the process for dropping a deceased Marine from the rolls?",
+        "What documentation do you provide to IPAC to initiate the drop from rolls transaction?",
+        "What is the correct SRB chronological record entry for a Marine who dies?",
+        "Show me documentation confirming the drop from rolls was completed for any deaths during the inspection period?",
+        "What happens to the original SRB/OQR after a Marine's death?"
+      ],
+      "verification": [
+        "CACR correctly explains the drop from rolls process and IPAC's role.",
+        "CACR correctly identifies the PCR as the document provided to IPAC to initiate the transaction.",
+        "CACR correctly identifies the SRB entry: \"DROP DECEASED\" or \"DROP KIA\" with date of death.",
+        "For any deaths during the inspection period, documentation confirms IPAC coordination occurred.",
+        "For any deaths during the inspection period, documentation confirms MCTFS transaction was completed.",
+        "CACR correctly states original SRB/OQR is forwarded - not retained by the unit."
+      ],
+      "verified": true
+    },
+    "0117": {
+      "title": "PERSONAL EFFECTS - INVENTORY AND SHIPPING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 8, Sect 2, Par 5a",
+            "text": "Immediately, upon initial declaration of DUSTWUN, inventory the Marine's personal effects."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 8, Sect 3, Par 4a",
+            "text": "Personal Effects. a. The immediate commander will conduct a prompt and careful inventory of the personal effects of a deceased Marine."
+          }
+        ],
+        "summary": "Note: ote: MCO 4400.201 Volume 13, Chapters 15-17 govern the detailed procedures for storage, inventory, and shipment of personal effects. MCO 3040.4 provides the triggering requirement and MCO 4400.201 Vol 13 provides the execution procedures. Upon a Marine's death, the immediate commander is required to conduct a prompt and careful inventory of all personal effects. In DUSTWUN cases, the inventory is triggered immediately upon DUSTWUN declaration. The unit must have documented procedures covering inventory, maintenance (safeguarding), and shipping per MCO 4400.201 Vol 13."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Written Procedures for Personal Effects",
+          "actions": [
+            "Ask the CACR to produce the unit's written procedures for handling personal effects"
+          ],
+          "callout": "No written procedures exist",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Procedures Address Three Requirements",
+          "actions": [
+            "Inventory: conducted by the immediate commander promptly upon death",
+            "Maintenance/safeguarding: procedures for securing effects pending disposition",
+            "Shipping: procedures for disposition and shipment to authorized recipient"
+          ]
+        },
+        {
+          "step": "Verify DUSTWUN Trigger Knowledge",
+          "actions": [
+            "Inventory must be conducted immediately upon initial declaration of DUSTWUN"
+          ],
+          "callout": "CACR unaware of the DUSTWUN trigger",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Reference Knowledge",
+          "actions": [
+            "MCO 4400.201 Volume 13 governs detailed procedures for property accountability and shipment"
+          ]
+        },
+        {
+          "step": "If Death Occurred During Inspection Period",
+          "actions": [
+            "Request inventory documentation"
+          ],
+          "callout": "No inventory conducted for a known death",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No written procedures exist",
+            "CACR unaware of the DUSTWUN trigger for inventory",
+            "Personal effects inventory not conducted promptly - delayed pending investigation",
+            "Unit retained personal effects rather than shipping them",
+            "CACR unaware of MCO 4400.201 Vol 13 as the governing reference"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Does the unit have written procedures for handling personal effects of a deceased Marine?",
+        "Who is responsible for conducting the personal effects inventory?",
+        "What triggers a personal effects inventory in a DUSTWUN case?",
+        "How are personal effects safeguarded while awaiting disposition?",
+        "Show me documentation of the personal effects inventory for any death cases during the inspection period?",
+        "What reference governs the detailed procedures for inventory, storage, and shipment of personal effects?"
+      ],
+      "verification": [
+        "Unit has written procedures for personal effects inventory, maintenance, and shipping.",
+        "Procedures correctly identify the immediate commander as responsible for the inventory.",
+        "Procedures address the DUSTWUN trigger: inventory conducted immediately upon DUSTWUN declaration.",
+        "Procedures address safeguarding of personal effects pending disposition.",
+        "Procedures reference MCO 4400.201 Vol 13 for detailed property accountability and shipment guidance.",
+        "For any death cases during the inspection period, inventory documentation is on file."
+      ],
+      "verified": true
+    },
+    "0118": {
+      "title": "DEATH BENEFITS FOR SURVIVORS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 7, Sect 2, Par 2",
+            "text": "Death Gratuity (DG). DG is a lump-sum payment intended to help assist eligible beneficiary(ies) with immediate living expenses. Death Classification Eligible: Active Duty, T/PDRL who die within 120 days of separation and death is Service connected. Beneficiary Determination: Marines can designate a beneficiary to receive up to 100% of the DG in increments of 10%. If no designation, DG is paid in order: (1) surviving spouse, (2) children, (3) surviving parents, (4) executor or administrator, (5) other next of kin. Claim Procedure: CACO provides DG beneficiary's SSN to MFPC. A pre-populated DD Form 397 and EFT will then be faxed or emailed to the CACO."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 7, Sect 2, Par 11",
+            "text": "Arrears of Pay (AP). All pay and allowances terminate on the date of death. AP is the final settlement of a Marine's pay account. AP includes any unpaid compensation, unused leave, and reenlistment bonuses (if applicable). Beneficiary Determination: AP is paid to the surviving beneficiary designated on the Marine's most recently signed RED. Claim Procedure: The beneficiary must complete and submit the SF 1174, Claim for Unpaid Compensation of Deceased Member of the Uniformed Services."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 7, Sect 2, Par 1",
+            "text": "General. Figure 7-1, grouped by classification, is provided as a quick reference tool for the most common benefits and entitlements."
+          }
+        ],
+        "summary": "The CACR must explain four core death benefits. Death Gratuity is designated on the RED in 10% increments. Arrears of Pay beneficiary is determined by the RED. SGLI beneficiary is determined by the SGLV 8286. Figure 7-1 serves as the at-a-glance reference covering all benefits by casualty classification."
+      },
+      "howToInspect": [
+        {
+          "step": "Test Death Gratuity Knowledge",
+          "actions": [
+            "Lump-sum payment to assist with immediate living expenses",
+            "Marines designate DG beneficiary on the RED in increments of 10%",
+            "By-law order if no designation: spouse, children, parents, executor, other NOK",
+            "DD Form 397 is the claim form, pre-populated by MFPC"
+          ],
+          "callout": "CACR unaware of DD Form 397 as DG claim form",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Test Arrears of Pay Knowledge",
+          "actions": [
+            "All pay terminates on the date of death",
+            "AP includes unpaid compensation, unused leave, and reenlistment bonuses",
+            "Beneficiary is designated on the Marine's most recently signed RED",
+            "SF 1174 is the claim form"
+          ],
+          "callout": "CACR cannot identify SF 1174 as AP claim form",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Test SGLI Knowledge",
+          "actions": [
+            "MFPC certifies coverage and submits to OSGLI",
+            "SGLV 8283 is the claim form",
+            "Beneficiary is designated on the SGLV 8286 (not the RED)"
+          ],
+          "callout": "CACR cannot identify SGLV 8283 as SGLI claim form",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Figure 7-1 Availability",
+          "actions": [
+            "Ask the CACR to produce Figure 7-1 as a quick reference tool"
+          ],
+          "callout": "CACR does not have or cannot produce Figure 7-1 quick reference",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACR conflates DG beneficiary (RED) with SGLI beneficiary (SGLV 8286)",
+            "CACR unaware of the 10% increment requirement for DG designations",
+            "CACR does not have or use Figure 7-1"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Explain the Death Gratuity to me - what is it, who receives it, and how is it claimed?",
+        "What document determines who receives the Arrears of Pay?",
+        "What document determines who receives SGLI proceeds?",
+        "What form does the Death Gratuity beneficiary complete to receive payment?",
+        "What form does the SGLI beneficiary complete to claim proceeds?",
+        "Do you have Figure 7-1 available as a reference tool?"
+      ],
+      "verification": [
+        "CACR correctly defines Death Gratuity as a lump-sum payment to assist with immediate living expenses.",
+        "CACR correctly identifies DG beneficiary as designated on the RED in 10% increments.",
+        "CACR correctly states by-law DG order of precedence: spouse, children, parents, executor, NOK.",
+        "CACR correctly states all pay terminates on date of death and AP covers unpaid compensation, unused leave, and bonuses.",
+        "CACR correctly identifies the RED as determining the AP beneficiary.",
+        "CACR correctly identifies the SGLV 8286 as determining the SGLI beneficiary.",
+        "CACR correctly states MFPC certifies SGLI coverage and submits to OSGLI.",
+        "CACR has Figure 7-1 available and uses it as a reference tool."
+      ],
+      "verified": true
+    },
+    "0119": {
+      "title": "BENEFITS FOR T/PDRL AND 120-DAY MARINES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 7, Sect 1, Par 5",
+            "text": "Retired. For casualty reporting purposes, retired Marines are separated into the following classifications: Marines on the Temporary/Permanent Disability Retired List (T/PDRL) that die within 120 days after separation and all other retired Marines."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 7, Sect 1, Par 5a",
+            "text": "Retired Marines placed on the T/PDRL that die within 120 days due to their Service connected disability, are eligible to receive many of the same benefits and entitlements as active duty Marines with the following exception: (1) Burial allowances (Marine must be retired/retained). (2) Basic Allowance for Housing (BAH) (retired Marines are not entitled)."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 7, Sect 2, Par 2a",
+            "text": "Death Classification Eligible. Active Duty, T/PDRL who die within 120 days of separation and death is Service connected."
+          }
+        ],
+        "summary": "Figure 4-1 is described as the Guide to Casualty Assistance Phases, provided as a quick reference guide for notification and condolence, mortuary affairs, funeral honors, and benefits and entitlements. Marines on the T/PDRL who die within 120 days of separation due to service-connected disability are eligible for most active duty death benefits, with two exceptions: burial allowances (only if retired/retained in a medical facility) and BAH (not available to retired Marines). T/PDRL deaths within 120 days are reportable and require a PCR."
+      },
+      "howToInspect": [
+        {
+          "step": "Test T/PDRL Classification Knowledge",
+          "actions": [
+            "T/PDRL Marines who die within 120 days due to service-connected disability receive most active duty benefits",
+            "Death must be service-connected to qualify",
+            "Two exceptions: burial allowances and BAH"
+          ]
+        },
+        {
+          "step": "Verify Burial Allowance Exception",
+          "actions": [
+            "Burial allowances are available only if the Marine was retired/retained in a medical treatment facility"
+          ]
+        },
+        {
+          "step": "Verify BAH Exception",
+          "actions": [
+            "Retired Marines are not entitled to BAH"
+          ]
+        },
+        {
+          "step": "Verify PCR Reporting Knowledge",
+          "actions": [
+            "T/PDRL deaths within 120 days are reportable and require a PCR"
+          ],
+          "callout": "CACR unaware T/PDRL deaths within 120 days are reportable",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Figure 4-1 Knowledge",
+          "actions": [
+            "Figure 4-1 is the Casualty Assistance phase quick reference guide"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACR unaware of the T/PDRL classification",
+            "CACR unaware that T/PDRL deaths within 120 days require a PCR",
+            "CACR cannot identify both exceptions to the active duty benefit equivalency",
+            "CACR unaware the death must be service-connected to qualify"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What is the T/PDRL and why does it matter for death benefits?",
+        "If a Marine on the T/PDRL dies 60 days after separation, are they eligible for active duty death benefits?",
+        "What are the two benefit exceptions for T/PDRL Marines that differ from active duty?",
+        "Does a T/PDRL Marine who dies within 120 days require a PCR?",
+        "What is Figure 4-1 and how is it used?"
+      ],
+      "verification": [
+        "CACR correctly defines T/PDRL and its relevance to death benefits.",
+        "CACR correctly states T/PDRL Marines who die within 120 days due to service-connected disability are eligible for most active duty benefits.",
+        "CACR correctly identifies the two exceptions: burial allowances and BAH.",
+        "CACR correctly states T/PDRL deaths within 120 days are reportable and require a PCR.",
+        "CACR correctly states the death must be service-connected to qualify.",
+        "CACR correctly identifies Figure 4-1 as the Casualty Assistance phase quick reference."
+      ],
+      "verified": true
+    },
+    "0120": {
+      "title": "UNIT-LEVEL COMMANDER CONDOLENCE LETTERS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 8, Sect 4, Par 1a",
+            "text": "When and By Whom. (1) Active Duty Marines. A condolence letter will be written to the appropriate next of kin (NOK) according to the Marine's dependency status; if the Marine is married, to both the spouse and parents (if the parents are separated or divorced, letters will be sent to both parents); if the Marine is divorced or single with children, a condolence letter will be written to the children (in care of the guardian) and the parents. (a) The Marine's immediate commander will prepare a letter within 5 working days (combat committed organizations, within 10 days) of the Marine's death or notification of death. (b) When a Marine dies away from his/her parent command either in TAD or PCS status, the commander of the unit from which the Marine had just been detached is responsible to write the letter of condolence."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 8, Sect 4, Par 1b(6)",
+            "text": "All condolence letters will be carefully reviewed at the highest level of command prior to release for mailing."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 8, Sect 4, Par 1b(7)",
+            "text": "A copy of each letter sent to the family of a deceased Marine will be attached to the closed service records."
+          }
+        ],
+        "summary": "The immediate commander is required to prepare condolence letters within 5 working days (10 for combat-committed commands) of death or notification. Letters are addressed based on the Marine's dependency status. All letters must be reviewed at the highest command level before release, and copies are retained with the closed service records."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify Timeframe Knowledge",
+          "actions": [
+            "Standard organizations: within 5 working days of death or notification",
+            "Combat committed organizations: within 10 days"
+          ]
+        },
+        {
+          "step": "Verify Addressee Requirements",
+          "actions": [
+            "Married Marine: letter to both spouse and parents (both parents if separated or divorced)",
+            "Divorced or single with children: letter to children (care of guardian) and parents"
+          ]
+        },
+        {
+          "step": "Verify TAD/PCS Death Responsibility",
+          "actions": [
+            "When a Marine dies while on TAD or PCS, the detaching command writes the condolence letter"
+          ],
+          "callout": "CACR believes the gaining command is responsible",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Command Review Requirement",
+          "actions": [
+            "All condolence letters reviewed at the highest level of command prior to release"
+          ],
+          "callout": "Letters released without highest-level command review",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Records Retention",
+          "actions": [
+            "Copy of each letter attached to the closed service records"
+          ]
+        },
+        {
+          "step": "If Deaths Occurred During Inspection Period",
+          "actions": [
+            "Request copies of condolence letters on file"
+          ],
+          "callout": "No condolence letter prepared for a known death",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Letters sent only to the spouse, not to parents as required",
+            "Letter prepared beyond the 5-working-day window with no documented justification",
+            "Letters released without highest-level command review",
+            "No copies of letters retained with the closed service records"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What is the timeframe for preparing and sending a condolence letter after a Marine's death?",
+        "If a married Marine dies, who receives condolence letters?",
+        "If a Marine dies while on TAD to another unit, which command writes the condolence letter?",
+        "Who reviews condolence letters before they are mailed?",
+        "Where are copies of condolence letters retained?",
+        "Show me condolence letter documentation for any deaths during the inspection period?"
+      ],
+      "verification": [
+        "CACR correctly states the 5-working-day standard (10 days for combat-committed commands).",
+        "CACR correctly identifies all required addressees based on dependency status.",
+        "CACR correctly states the detaching command is responsible when a Marine dies on TAD or PCS.",
+        "CACR correctly states all letters require highest-level command review before release.",
+        "CACR correctly states copies are retained with the closed service records.",
+        "For any deaths during the inspection period, condolence letter copies are on file and timely."
+      ],
+      "verified": true
+    },
+    "0121": {
+      "title": "PCS TRAVEL ORDERS FOR FAMILY MEMBERS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "JTR, Chap 5, Sect 051104, Par B",
+            "text": "Eligibility. The following dependents may be eligible for travel allowances: 1. A dependent of a Service member who dies while entitled to basic pay (37 U.S.C. 481). 2. A dependent, without regard to command-sponsorship, who receives an official notice that the Service member on active duty is officially reported as: a. Dead. b. Injured or ill and the anticipated period of hospitalization or treatment is expected to be prolonged. c. Absent for a period of 30 or more days in a missing status (37 U.S.C. 484)."
+          },
+          {
+            "citation": "JTR, Chap 5, Sect 051104, Par C1b",
+            "text": "When a Service member who is entitled to basic pay dies on or after January 6, 2006, dependent PCS travel and transportation allowances are authorized. The dependent has 3 years, beginning on the Service member's date of death to choose an HOS. An extension to this time period, not to exceed a total of 6 years, may be authorized or approved through the Secretarial Process. Per diem is authorized for a dependent traveling under this subparagraph."
+          },
+          {
+            "citation": "JTR, Chap 5, Sect 051104, Par D",
+            "text": "Escort. An escort to accompany an eligible dependent for travel under this paragraph may be authorized when the AO or commanding officer determines that dependent travel is necessary and the dependent is incapable of traveling alone due to age, mental or physical incapacity, or other extraordinary circumstances. 1. An escort may be authorized for the Service member's dependent for travel performed no later than 1 year after the Service member dies. Escort travel is not authorized after the 1-year limit is reached, and the time limit cannot be extended, regardless of the circumstances."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 7, Sect 2, Par 24",
+            "text": "Survivor/Family Member Travel. Per the JFTR, approved family members, residing with the Marine, are authorized transportation at Government expense to the Marine's home of record, or any other location within the CONUS. Death Classifications Eligible: Active Duty, T/PDRL who die within 120 days of separation due to service connected disability. Claim Procedures: Travel orders should be issued citing the same appropriation data used in travel for separating Marines. Method of Settlement: Transportation includes shipment of household goods covered under the Marine's allowance."
+          }
+        ],
+        "summary": "Family members of deceased active duty Marines are authorized PCS travel at government expense to the Marine's home of record or another CONUS location. The dependent has three years from the date of death to initiate travel, extendable up to six years through the Secretarial Process. Household goods shipment is included. Escort authorization expires one year after the date of death with no exceptions."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify PCS Travel Entitlement Knowledge",
+          "actions": [
+            "Approved family members residing with the Marine are authorized PCS travel to home of record or any CONUS location",
+            "Eligible for Active Duty and T/PDRL Marines who die within 120 days due to service-connected disability"
+          ]
+        },
+        {
+          "step": "Verify Timeline Knowledge",
+          "actions": [
+            "Dependent has 3 years from date of death to choose a home of selection",
+            "Extension up to a total of 6 years may be authorized through the Secretarial Process",
+            "Per diem is authorized during this travel"
+          ]
+        },
+        {
+          "step": "Verify Household Goods Knowledge",
+          "actions": [
+            "Household goods shipment is included under the Marine's allowance"
+          ],
+          "callout": "CACR unaware household goods shipment is included",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Travel Order Generation",
+          "actions": [
+            "Travel orders issued citing the same appropriation data used for separating Marines"
+          ]
+        },
+        {
+          "step": "Verify Escort Limitation",
+          "actions": [
+            "Escort authorized for dependents incapable of traveling alone",
+            "Escort authorization expires 1 year from date of death - no extensions regardless of circumstances"
+          ],
+          "callout": "CACR unaware of the one-year hard limit on escort",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "If Deaths Occurred During Inspection Period",
+          "actions": [
+            "Request documentation confirming travel orders were generated for family members"
+          ],
+          "callout": "Travel orders not generated for a known applicable case",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACR unaware of the three-year window - believes family must move immediately",
+            "CACR unaware that household goods shipment is included",
+            "CACR unaware of the escort one-year hard limit",
+            "Unit failed to generate travel orders for family members of a deceased Marine"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When a Marine dies, what travel entitlement do the family members have for relocating?",
+        "How much time does a family member have to initiate PCS travel after the Marine's death?",
+        "Does the PCS travel entitlement include shipment of household goods?",
+        "How are the travel orders generated for family members?",
+        "If a dependent cannot travel alone, is an escort authorized? For how long?"
+      ],
+      "verification": [
+        "CACR correctly identifies the entitlement: PCS travel to home of record or other CONUS location.",
+        "CACR correctly states the three-year window from date of death, extendable to six years through the Secretarial Process.",
+        "CACR correctly states per diem is authorized.",
+        "CACR correctly states household goods shipment is included.",
+        "CACR correctly states travel orders use the same appropriation data as separating Marines.",
+        "CACR correctly states escort authorization expires one year from date of death with no extension.",
+        "For any deaths during the inspection period, documentation confirms travel orders were generated."
+      ],
+      "verified": true
+    },
+    "0122": {
+      "title": "PRELIMINARY INQUIRIES AND COMMAND INVESTIGATIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 2, Par 4g",
+            "text": "Conduct preliminary inquiries into the injury/illness of a Marine in accordance with reference (i). When warranted, command investigations will be conducted."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 2, Par 5l",
+            "text": "Conduct preliminary inquiries into the deaths of Marines, regardless of the circumstances, and including hostile deaths, in accordance with reference (i). When warranted, command investigations will be conducted."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 3, Sect 2, Par 2b",
+            "text": "Incident Investigations. Preliminary inquiries will be conducted into the deaths/injuries/illnesses of Marines in accordance with reference (i). When warranted, command investigations will be conducted. An initial PCR will include detailed information pertinent to the investigative process. Supplemental PCRs will be generated every 30 days to provide MFPC and the next of kin with a status of investigations until completed."
+          },
+          {
+            "citation": "JAGINST 5800.7G CH-1, Par 0203a",
+            "text": "Purpose. A preliminary inquiry serves as an analytical tool to help a commander determine whether an investigation is warranted and, if so, how it should be conducted. A preliminary inquiry is not intended to develop extensive findings of fact."
+          },
+          {
+            "citation": "JAGINST 5800.7G CH-1, Par 0203b(1)",
+            "text": "Generally, a commander is responsible for initiating preliminary inquiries into incidents occurring within, or involving personnel of, the command. The reporting command of a member who is injured or dies during permanent-change-of-station transfer shall ensure that appropriate inquiries are conducted."
+          },
+          {
+            "citation": "JAGINST 5800.7G CH-1, Par 0203e",
+            "text": "Time limitations. Generally, the preliminary inquiry should be completed within three calendar days of the commander learning of the incident in question. The commander may grant extensions as necessary on a case-by-case basis."
+          }
+        ],
+        "summary": "Preliminary inquiries are mandatory for all deaths, injuries, and illnesses of Marines regardless of circumstances, including hostile deaths. The commanding officer initiates within three calendar days. Supplemental PCRs are required every 30 days until a command investigation is completed."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify Preliminary Inquiry Requirement",
+          "actions": [
+            "Required for all deaths, injuries, and illnesses - including hostile deaths"
+          ],
+          "callout": "CACR unaware hostile deaths require a preliminary inquiry",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Timeline",
+          "actions": [
+            "Generally completed within three calendar days of the commander learning of the incident",
+            "Commander may grant extensions on a case-by-case basis"
+          ]
+        },
+        {
+          "step": "Verify Command Investigation Trigger",
+          "actions": [
+            "Preliminary inquiry findings determine whether a command investigation is warranted",
+            "Commanders should discuss findings with a judge advocate to determine the appropriate option"
+          ]
+        },
+        {
+          "step": "Verify 30-Day Supplemental PCR Requirement",
+          "actions": [
+            "Upon initiation of a command investigation, supplemental PCRs generated every 30 days",
+            "Supplemental PCRs continue until the investigation is completed"
+          ],
+          "callout": "CACR unaware of the 30-day supplemental PCR requirement",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "If Applicable Cases Occurred During Inspection Period",
+          "actions": [
+            "Request preliminary inquiry documentation",
+            "Verify initiated within three calendar days of the incident",
+            "If command investigation followed, verify 30-day supplemental PCRs are on file and continuous"
+          ],
+          "callout": "30-day supplemental PCRs missing or lapsed for an open investigation",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACR unaware that hostile deaths require a preliminary inquiry",
+            "Preliminary inquiries not initiated within three calendar days",
+            "No written documentation of preliminary inquiry - verbal only",
+            "Command investigation initiated but 30-day supplemental PCRs not submitted or lapsed"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Is a preliminary inquiry required when a Marine dies in combat?",
+        "What is the timeframe for completing a preliminary inquiry?",
+        "What triggers a command investigation following a preliminary inquiry?",
+        "Once a command investigation is initiated, what are the supplemental PCR requirements?",
+        "Show me documentation of preliminary inquiries for any Marine deaths, injuries, or illnesses during the inspection period?",
+        "Show me the 30-day supplemental PCRs for any open or recently completed command investigations?"
+      ],
+      "verification": [
+        "CACR correctly states preliminary inquiries are required for all deaths, injuries, and illnesses including hostile deaths.",
+        "CACR correctly states the three-calendar-day standard for preliminary inquiry completion.",
+        "CACR correctly states command investigations are conducted when the preliminary inquiry warrants one.",
+        "CACR correctly states supplemental PCRs are required every 30 days during a command investigation.",
+        "For any applicable cases during the inspection period, preliminary inquiry documentation is on file and timely.",
+        "For any active or recently completed command investigations, 30-day supplemental PCRs are on file and continuous."
+      ],
+      "verified": true
+    },
+    "0123": {
+      "title": "FINAL SUPPLEMENTAL PCRs AND ENDORSEMENTS AFTER INVESTIGATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 3, Sect 2, Par 2e(4)",
+            "text": "Incident Investigations. Generate supplemental PCRs at least every 30 days from the date of initial report to provide a status of the investigation until completed. Within 24 hours following the completion of an investigation, generate a supplemental PCR providing the completion date, findings and date of delivery to the next of kin. For Friendly Fire incidents, units will update the 'inflicting Force' block as appropriate."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 8, Sect 3, Par 7b",
+            "text": "MFPC is the single activity responsible for tracking and archiving all injury and death investigations, limited to executive summaries. Completed command investigations will be forwarded to the General Court-Martial Convening Authority (GCMCA), Attn: Staff Judge Advocate (SJA)."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 8, Sect 3, Par 7d",
+            "text": "Delivery to NOK. Prior to the release of the investigative findings to the NOK, the investigating unit will notify MFPC of its completion in order to arrange for proper coordination for delivery. Graphic photographs are to be separately wrapped and labeled. Similar procedures should be placed upon autopsy reports and other materials containing graphic details of injury, wounds, and mutilation. The releasing authority will coordinate with the Casualty's commander to ensure that both a PCR and a voice report are given to MFPC to alert them and document the release of the investigation. Normally, the CACO will make delivery, but there may be reasons (technical subject matter or personal friendships) for another individual to be assigned the task."
+          }
+        ],
+        "summary": "Upon completion of a command investigation, the unit must generate a final supplemental PCR within 24 hours providing the completion date, findings, and date of delivery to the NOK. The unit must notify MFPC before releasing the investigation to the NOK. Both a PCR and a voice report to MFPC are required to document the release. Graphic materials must be separately wrapped and labeled."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify Final Supplemental PCR Knowledge",
+          "actions": [
+            "Final supplemental PCR generated within 24 hours following the completion of the investigation",
+            "PCR must include: completion date, findings, and date of delivery to NOK"
+          ],
+          "callout": "Final supplemental PCR submitted more than 24 hours after completion",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Pre-Release Notification to MFPC",
+          "actions": [
+            "Prior to releasing the investigation to the NOK, the unit notifies MFPC of completion",
+            "MFPC coordinates proper delivery"
+          ],
+          "callout": "Investigation released to NOK without prior notification to MFPC",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Documentation of Release",
+          "actions": [
+            "Both a PCR and a voice report to MFPC are required to document the release"
+          ],
+          "callout": "CACR unaware that a voice report to MFPC is also required",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Graphic Materials Handling",
+          "actions": [
+            "Graphic photographs, autopsy reports, and materials with graphic detail must be separately wrapped and labeled"
+          ]
+        },
+        {
+          "step": "Verify GCMCA SJA Distribution",
+          "actions": [
+            "Completed command investigations forwarded to the GCMCA, Attn: Staff Judge Advocate",
+            "Copy of executive summary provided to MFPC"
+          ]
+        },
+        {
+          "step": "If Completed Investigations Occurred During Inspection Period",
+          "actions": [
+            "Request the final supplemental PCR and confirm submission within 24 hours",
+            "Request documentation of MFPC notification prior to NOK release"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Final supplemental PCR submitted more than 24 hours after investigation completion",
+            "Investigation released to NOK without prior notification to MFPC",
+            "Graphic materials included in the main package without being separately wrapped",
+            "CACR unaware that a voice report to MFPC is also required when the investigation is released"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What supplemental PCR actions are required within 24 hours of completing a command investigation?",
+        "What does the final supplemental PCR after a completed investigation need to contain?",
+        "What steps must occur before you release the investigation findings to the NOK?",
+        "Does MFPC need to be notified before or after the investigation is released to the NOK?",
+        "How are graphic photographs and autopsy materials handled when delivering the investigation to the NOK?",
+        "Show me the final supplemental PCR and MFPC notification documentation for any completed command investigations during the inspection period?"
+      ],
+      "verification": [
+        "CACR correctly states a final supplemental PCR is required within 24 hours of investigation completion.",
+        "CACR correctly states the final PCR must include completion date, findings, and date of delivery to NOK.",
+        "CACR correctly states MFPC must be notified before investigation release to coordinate delivery.",
+        "CACR correctly states both a PCR and a voice report to MFPC are required to document the release.",
+        "CACR correctly states graphic photographs and autopsy materials must be separately wrapped and labeled.",
+        "For any completed command investigations during the inspection period, final supplemental PCR is on file within the 24-hour standard.",
+        "For any completed investigations, documentation confirms MFPC was notified prior to NOK release."
+      ],
+      "verified": true
+    },
+    "0124": {
+      "title": "ARCHIVING PCRs FOR SIX YEARS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 3, Sect 2, Par 1",
+            "text": "PCR Requirements. The PCR is used to report casualty information and is used by the CACO to inform the casualty's next of kin of the details surrounding the incident. The report is administrative rather than operational; it should be sent immediately, in an unclassified manner, to the DC M&RA (MF) directly from the activity submitting the report. The report must be accurate and contain only verified information. PCRs will be maintained by reporting commands for six years in accordance with Freedom of Information Act (FOIA) requirements."
+          },
+          {
+            "citation": "MCO 3040.4, Par 4.c(8)(e)",
+            "text": "Maintain Personnel Casualty Reports (PCRs) for six years in accordance with the requirements of the Freedom of Information Act (FOIA), reference (d)."
+          }
+        ],
+        "summary": "All PCRs - initial, supplemental, progress, and final - must be maintained by the reporting command for a minimum of six years. This is a Commanding Officer-level responsibility established under FOIA. All PCR types submitted through DCIPS-Forward are subject to this retention requirement."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify Retention Requirement Knowledge",
+          "actions": [
+            "PCRs maintained for six years",
+            "Governing authority: Freedom of Information Act (FOIA)"
+          ],
+          "callout": "CACR unaware of the six-year requirement",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Scope of Retention",
+          "actions": [
+            "All PCR types are subject to retention: initial, supplemental, progress, and final"
+          ],
+          "callout": "Unit retains only initial PCRs and not supplemental, progress, or final reports",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Archive Method",
+          "actions": [
+            "Ask the CACR how PCRs are archived at the unit level (local copies, digital files, or DCIPS-Forward)"
+          ],
+          "callout": "PCR records exist only in DCIPS-Forward with no local archive",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Records Accessibility",
+          "actions": [
+            "Request PCRs for any casualty cases within the past six years"
+          ],
+          "callout": "Records cannot be produced during the inspection",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Responsibility Level",
+          "actions": [
+            "This is a Commanding Officer-level responsibility - not solely the CACR's"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACR unaware of the six-year retention requirement",
+            "Unit retains only initial PCRs - supplemental, progress, and final reports not maintained",
+            "PCR records exist only in DCIPS-Forward with no accessible local backup",
+            "CACR unaware of the FOIA authority behind the retention requirement"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How long are you required to maintain PCRs and under what authority?",
+        "Show me how you archive PCRs at the unit level?",
+        "Are supplemental and progress PCRs also subject to the six-year retention requirement?",
+        "Can you produce PCRs for any casualty cases within the past six years?",
+        "Is PCR retention a CACR responsibility or a Commanding Officer responsibility?"
+      ],
+      "verification": [
+        "CACR correctly states the six-year PCR retention requirement.",
+        "CACR correctly identifies FOIA as the authority for the retention requirement.",
+        "CACR correctly states all PCR types - initial, supplemental, progress, and final - are subject to retention.",
+        "Unit has an accessible archive method for PCRs (local copies, digital files, or confirmed DCIPS-Forward access).",
+        "PCRs for any casualty cases within the past six years are producible during the inspection."
+      ],
+      "verified": true
+    },
+    "0125": {
+      "title": "ONLINE CACO REPORT SUBMISSION AND WEEKLY COMMANDER BRIEFING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 3040.4, Chap 4, Sect 1, Par 3d",
+            "text": "Initiate the On-Line Casualty Assistance Calls Report (1770) within 72 hours of assignment. Use of on-line report is mandatory."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 4, Sect 1, Par 3p",
+            "text": "Brief Commander on a weekly basis utilizing the Casualty Assistance Call Report (1770) as to the status of the casualty assistance provided to the next of kin."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 4, Sect 1, Par 3q",
+            "text": "Complete and submit to MFPC, an Initial Casualty Assistance Call Report (1770) (via the Manpower Portal) within 30 days of assignment. This report is extremely valuable in documenting assistance provided to the NOK, addressing problem areas and recommendations concerning the Casualty Assistance Calls Program. The online report should be updated daily to report actions completed. The CACO Report will be completed, in its entirety, and submitted to MFPC for filing in the Casualty's case file."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 4, Sect 1, Par b(9)",
+            "text": "An interim report is due to MFPC thirty (30) days from the date of assignment as CACO."
+          },
+          {
+            "citation": "MCO 3040.4, Chap 4, Sect 1, Par b(10)",
+            "text": "The final report is due sixty (60) days from the date of assignment as CACO. If extenuating circumstances exist that preclude the completion of the report within the established time frame, contact MFPC to request an extension."
+          }
+        ],
+        "summary": "Upon CACO assignment, the officer must INITIATE the Online CACO Report within 72 hours via the Manpower Portal (https://www2.manpower.usmc.mil/cacov3/). The completed initial report must be SUBMITTED to MFPC within 30 days. A final report is due within 60 days. The report is updated daily as actions are completed. The CACR briefs the unit commander weekly on CACO assistance status. The 72-hour initiation and 30-day submission are two separate, sequential requirements."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Any CACO Assignments During the Inspection Period",
+          "actions": [
+            "Ask the CACR whether any Marines have been assigned as CACOs during the inspection period"
+          ]
+        },
+        {
+          "step": "If CACOs Were Assigned, Verify Report Submissions",
+          "actions": [
+            "CACO INITIATES the Online CACO Report within 72 hours of assignment (Par 3d) - DISCREPANCY if not done within 72 hours",
+            "CACO SUBMITS the completed initial report to MFPC within 30 days of assignment (Par 3q)",
+            "Final report submitted within 60 days of assignment",
+            "If extenuating circumstances exist, extension requested from MFPC"
+          ],
+          "callout": "Initial report submitted after the 30-day deadline with no extension",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Daily Update Requirement",
+          "actions": [
+            "Report updated daily as actions are completed"
+          ],
+          "callout": "Report only updated near submission deadline",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Online Application Access",
+          "actions": [
+            "CACO must have a valid Manpower Portal account",
+            "Application URL: https://www2.manpower.usmc.mil/cacov3/"
+          ],
+          "callout": "CACR unaware of the online application",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Weekly Commander Briefing",
+          "actions": [
+            "CACR briefs the unit commander weekly using the Casualty Assistance Call Report (1770)",
+            "Request documentation of weekly commander briefings (meeting logs, emails, staff duty records)"
+          ],
+          "callout": "No documentation of weekly commander briefings",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "If No CACOs Were Assigned",
+          "actions": [
+            "Ask the CACR to explain the process as a knowledge check"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CACO Report not INITIATED within 72 hours of assignment (Par 3d)",
+            "Initial CACO Report submitted after the 30-day deadline with no extension requested",
+            "CACO Report not updated daily - only updated near submission deadline",
+            "No documentation of weekly commander briefings using the report",
+            "CACR unaware of the online application or Manpower Portal account requirement",
+            "CACR confuses the interim 30-day report with the final 60-day submission"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Have any Marines been assigned as CACOs during the inspection period? If so, show me the Online CACO Report for each assignment?",
+        "When was the Online CACO Report first INITIATED after assignment? (Required within 72 hours per Par 3d - distinct from the 30-day SUBMISSION requirement)?",
+        "What is the deadline for submitting the initial Online CACO Report after CACO assignment?",
+        "When is the final CACO Report due?",
+        "How frequently should the CACO update the online report?",
+        "How do you brief the commander on the status of CACO assistance, and how often?",
+        "What is the web address for the Online CACO Application?"
+      ],
+      "verification": [
+        "CACO INITIATED the Online CACO Report within 72 hours of assignment (MCO 3040.4, Chap 4, Sect 1, Par 3d).",
+        "CACR correctly states the initial Online CACO Report must be SUBMITTED to MFPC within 30 days of assignment.",
+        "CACR correctly states the final report is due within 60 days of assignment.",
+        "CACR correctly states the report must be updated daily as actions are completed.",
+        "CACR correctly states the unit commander is briefed weekly using the CACO Report.",
+        "For any CACO assignments during the inspection period, initial reports are on file and within the 30-day standard.",
+        "For any CACO assignments during the inspection period, final reports are on file and within the 60-day standard.",
+        "Documentation of weekly commander briefings exists for any active CACO cases.",
+        "CACR can demonstrate or describe access to the Online CACO Application via Manpower Portal."
+      ],
+      "verified": true
+    }
+  }
+}

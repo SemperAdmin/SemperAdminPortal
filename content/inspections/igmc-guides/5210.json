@@ -1,0 +1,1203 @@
+{
+  "faNumber": "5210",
+  "sourceDoc": "RECORDS MANAGEMENT (5210) - INSPECTOR GUIDE - REBUILT.docx",
+  "lastVerified": "2026-05-20",
+  "verifiedAtSource": true,
+  "items": {
+    "0101": {
+      "title": "CDRM APPOINTMENT IN CROSS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5210.11F, par 4b(5)(a) (HQMC Staff Agency Heads and Marine Corps Commanders)",
+            "text": "Designate and appoint, in writing, Command Designated Records Managers (CDRMs). At HQMC, CDRMs will be appointed at the Department, Division, and separate agency levels. Marine Corps commands will appoint CDRMs at the Regiment/Group levels and above. CDRMs will be a company/field grade officer, staff noncommissioned officer (SNCO), or civilian equivalent. CDRMs at the Regiment/Group level and above will provide ARDB copies of all CDRM appointment letters within 90 days of appointment. CDRMs below the Regiment/Group level will be managed by the higher level CDRMs."
+          },
+          {
+            "citation": "MCO 5210.11F, par 4c(2)(c) (CDRMs)",
+            "text": "Appoint and designate in writing CDRMs throughout the command as appropriate (below the Regiment/Group level). CDRMs will be a company/field grade officer, staff noncommissioned officer (SNCO), or civilian equivalent."
+          },
+          {
+            "citation": "MCBul 5210 dtd 29 Aug 25, par 3b(1)(a)1 (Commanders and Civilian Leaders)",
+            "text": "Appoint a CDRM in the rank of E-6/GS-9 or higher."
+          }
+        ],
+        "summary": "Inspector Note: MCO 5210.11F defines minimum CDRM grade as 'company/field grade officer, SNCO, or civilian equivalent.' MCBul 5210 dtd 29 Aug 25 supersedes this with a specific minimum of E-6/GS-9 or higher. Apply the MCBul standard during inspection. A CDRM below E-6/GS-9 is a discrepancy regardless of MCO language. The command is required to appoint a CDRM in writing at the rank/grade of E-6/GS-9 or higher and record that appointment in CROSS. Failure to appoint, failure to meet grade requirements, or failure to record the appointment in CROSS constitutes non-compliance."
+      },
+      "howToInspect": [
+        {
+          "step": "Access CROSS and Navigate to the Command Page",
+          "actions": [
+            "Access CROSS at https://usmc.sharepoint-mil.us/sites/USMC_CROSS",
+            "Navigate to the command's CROSS page"
+          ]
+        },
+        {
+          "step": "Verify Active CDRM Appointment",
+          "actions": [
+            "Confirm the CDRM name, rank/grade, and appointment date are visible in CROSS",
+            "Confirm the appointed CDRM meets the E-6/GS-9 or higher grade requirement per MCBul 5210 dtd 29 Aug 25"
+          ],
+          "callout": "No active CDRM appointment in CROSS",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Appointment Method",
+          "actions": [
+            "If the appointment was generated in CROSS - verify it is current and active",
+            "If appointment is via hardcopy letter, request the letter",
+            "Confirm the letter is signed by the commanding officer",
+            "Confirm the hardcopy letter is scanned and uploaded to the 'Documents' and 'Miscellaneous' tabs in CROSS"
+          ],
+          "callout": "Appointment method does not meet MCBul 5210/MCO 5210.11F requirement",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Currency of Appointment",
+          "actions": [
+            "Confirm the appointed individual is still assigned to the command",
+            "No PCS gap in CDRM coverage without a replacement designated"
+          ],
+          "callout": "Appointment lapsed beyond required currency window",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CDRM has PCS'd or separated with no replacement designated",
+            "Appointed CDRM is below E-6/GS-9 - MCBul standard not applied",
+            "Appointment letter exists in hardcopy but is not uploaded to CROSS",
+            "No CDRM appointment exists at all"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who is your designated CDRM and what is their current rank/grade?",
+        "When was the CDRM appointed and was that through CROSS or a hardcopy letter?",
+        "If hardcopy, has the letter been scanned and uploaded to the 'Documents' and 'Miscellaneous' tabs in CROSS?",
+        "Has the CDRM changed since the last appointment? If so, has a new appointment been processed?",
+        "Is the current CDRM still assigned to this command?"
+      ],
+      "verification": [
+        "Command has an active CDRM appointment recorded in CROSS",
+        "Appointed CDRM meets minimum rank/grade of E-6/GS-9 or higher per MCBul 5210 dtd 29 Aug 25, par 3b(1)(a)1",
+        "Appointment is in writing - generated in CROSS or signed hardcopy letter on file",
+        "If hardcopy, appointment letter is uploaded to 'Documents' and 'Miscellaneous' tabs in CROSS",
+        "Appointed CDRM is currently assigned to the command",
+        "No gap in CDRM coverage due to PCS, separation, or rotation without replacement"
+      ],
+      "verified": true
+    },
+    "0102": {
+      "title": "COMMANDER'S RECORDS MANAGEMENT ACKNOWLEDGEMENT AGREEMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCBul 5210 dtd 29 Aug 25, par 3b(1)(a), NOTE 1 (Commanders and Civilian Leaders)",
+            "text": "Organizational leaders must complete and sign the NAVMC 10030, 'Commander's Records Management Acknowledgement Agreement,' within 90 days of assuming command, or within 90 days of publication of this Bulletin if already in command. Provide the completed form to the CDRM to be uploaded onto CROSS."
+          },
+          {
+            "citation": "MCBul 5210 dtd 29 Aug 25, par 3b(2)(c) (CDRM Responsibilities)",
+            "text": "Upon receipt of the completed NAVMC 10030, 'Commander's Records Management Acknowledgement Agreement', upload to CROSS within 90 days of release of this Bulletin. Place the form into the command's/organization's CROSS page (located in the 'Documents' tab, 'Miscellaneous' folder)."
+          }
+        ],
+        "summary": "The commanding officer must sign the NAVMC 10030 within 90 days of assuming command. The signed form is provided to the CDRM and uploaded to CROSS under the 'Documents' tab, 'Miscellaneous' folder. Failure to sign within the 90-day window or failure to upload to CROSS constitutes non-compliance."
+      },
+      "howToInspect": [
+        {
+          "step": "Request the Signed NAVMC 10030",
+          "actions": [
+            "Ask to see the signed NAVMC 10030, 'Commander's Records Management Acknowledgement Agreement'",
+            "Verify the form is signed by the current commanding officer, not a predecessor"
+          ],
+          "callout": "NAVMC 10030 not signed by commander",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify the 90-Day Requirement",
+          "actions": [
+            "Determine the date the current commanding officer assumed command",
+            "Confirm the signing date on the NAVMC 10030 falls within 90 days of assumption of command"
+          ],
+          "callout": "NAVMC 10030 not signed within 90 days of assumption of command",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify CROSS Upload",
+          "actions": [
+            "Navigate to the command's CROSS page",
+            "Confirm the signed NAVMC 10030 is uploaded in the 'Documents' tab under the 'Miscellaneous' folder"
+          ],
+          "callout": "NAVMC 10030 not uploaded to CROSS",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "NAVMC 10030 is unsigned",
+            "Form is signed by a previous commanding officer with no updated form for the current CO",
+            "Form is signed but not uploaded to CROSS",
+            "Signing date falls outside the 90-day window"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When did the current commanding officer assume command?",
+        "Has the NAVMC 10030 been signed by the current commanding officer?",
+        "What date was the form signed?",
+        "Has the signed form been uploaded to CROSS under the 'Documents' tab, 'Miscellaneous' folder?"
+      ],
+      "verification": [
+        "NAVMC 10030 is signed by the current commanding officer",
+        "Signing date is within 90 days of the current commanding officer assuming command",
+        "Signed NAVMC 10030 is uploaded to the command's CROSS page under the 'Documents' tab, 'Miscellaneous' folder",
+        "Form reflects the current commanding officer - not a predecessor"
+      ],
+      "verified": true
+    },
+    "0103": {
+      "title": "ANNUAL RM TRAINING MONITORING AND CERTIFICATE UPLOAD",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "NARA Bulletin 2017-01, par 3A (Agency Records Management Training Requirements)",
+            "text": "All agency personnel with email accounts or IT network resource access must complete records management training within 60 days of employment and must complete annual refresher training. Agencies must provide records management training to all agency personnel that create, receive, access, or use Federal records on behalf of the agency, regardless of whether those individuals have email accounts or IT network access."
+          },
+          {
+            "citation": "SECNAVINST 5210.8F, par 5.l (Policy)",
+            "text": "Train all DON personnel on records management, including annual refresher training, to comply with references (b) through (i). The training must, at a minimum, include the topics listed in NARA Bulletin 2017-01 (https://www.archives.gov/records-mgmt/bulletins) and \u00a71220.34(f) of reference (c);"
+          },
+          {
+            "citation": "MCO 5210.11F, chap 8, par 5 (Annual Records Management Training)",
+            "text": "This training is a requirement for ALL Marines in all organizations and commands - active duty and reserve Marines, civilians, and contractors."
+          },
+          {
+            "citation": "MCBul 5210 dtd 29 Aug 25, par 3b(2)(e) (CDRM Responsibilities)",
+            "text": "Monitor unit's annual records management training compliance and upload training roster to CROSS."
+          }
+        ],
+        "summary": "The CDRM must monitor annual RM training for the entire command. Individual CDRM and SSRM training certificates must be uploaded separately in CROSS under 'Documents,' 'Training Documents.' Command-wide proof of training - organizational training rosters or MCTIMS occasions - is uploaded separately. Failure to monitor, failure to upload certificates, or failure to upload command-wide proof constitutes non-compliance."
+      },
+      "howToInspect": [
+        {
+          "step": "Navigate to the CROSS Training Documents Tab",
+          "actions": [
+            "Navigate to the command's CROSS page",
+            "Select the 'Documents' tab and locate the 'Training Documents' sub-tab"
+          ]
+        },
+        {
+          "step": "Verify Individual CDRM and SSRM Certificates",
+          "actions": [
+            "Verify individual RM training certificates are uploaded separately for the CDRM and each SSRM",
+            "Confirm certificates reflect the current training cycle"
+          ],
+          "callout": "CDRM or SSRM annual training certificate missing in CROSS",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Command-Wide Training Proof",
+          "actions": [
+            "Verify a signed organizational training roster or MCTIMS occasion is uploaded in CROSS",
+            "Acceptable approved training sources:",
+            "Waypoints at https://don.csod.com - Course: 'Records Management in the DON: Everyone's Responsibility'",
+            "CROSS RM training tile",
+            "HQMC ARD RM SharePoint at https://usmc.sharepoint-mil.us/sites/AR_RecordsManagement"
+          ],
+          "callout": "No command-wide training proof on file",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Assess CDRM Monitoring System",
+          "actions": [
+            "Ask the CDRM how they track annual training compliance across the command",
+            "Verify a system exists - tracking sheet, MCTIMS pull, or similar method"
+          ],
+          "callout": "No documented CDRM monitoring system",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Training certificates for the CDRM or SSRMs are absent or outdated",
+            "Command-wide training roster not uploaded to CROSS",
+            "No monitoring system in place - CDRM unaware of command-wide training status",
+            "Training completed but not through an approved source"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How does the CDRM track annual RM training compliance across the command?",
+        "Are CDRM and SSRM individual training certificates uploaded in CROSS under 'Documents' and 'Training Documents'?",
+        "Is a signed command training roster or MCTIMS occasion uploaded in CROSS as proof of command-wide completion?",
+        "What training source was used - Waypoints, CROSS tile, or HQMC ARD SharePoint?",
+        "When were the most recent training certificates completed?"
+      ],
+      "verification": [
+        "CDRM individual RM training certificate is uploaded in CROSS under 'Documents' and 'Training Documents'",
+        "Each SSRM individual RM training certificate is uploaded separately in CROSS",
+        "Command-wide proof of training - signed organizational roster or MCTIMS occasion - is uploaded in CROSS",
+        "All certificates and rosters reflect the current training cycle",
+        "Training was completed using an approved source - Waypoints, CROSS, or HQMC ARD RM SharePoint"
+      ],
+      "verified": true
+    },
+    "0104": {
+      "title": "SSRM APPOINTMENT IN CROSS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5210.11F, par 4b(5)(a) (HQMC Staff Agency Heads and Marine Corps Commanders)",
+            "text": "Designate and appoint, in writing, Command Designated Records Managers (CDRMs). At HQMC, CDRMs will be appointed at the Department, Division, and separate agency levels."
+          },
+          {
+            "citation": "MCO 5210.11F, par 4c(2)(c) (CDRMs)",
+            "text": "Appoint and designate in writing CDRMs throughout the command as appropriate (below the Regiment/Group level). CDRMs will be a company/field grade officer, staff noncommissioned officer (SNCO), or civilian equivalent."
+          },
+          {
+            "citation": "MCO 5210.11F, par 4c(3)(b) (Administrative Officers)",
+            "text": "Advise the commander in the appointment of unit personnel in the mission and functions of the organization staff sections to oversee records management activities."
+          }
+        ],
+        "summary": "Inspector Note: SSRMs manage records created and collected separately from the HQ component - records within sections, directorates, and major programs outside of the traditional G1/S1 shops. Each SSRM must upload their individual annual RM training certificate in CROSS. Inspect CROSS directly for SSRM appointments. The command must appoint SSRMs in CROSS for each section, directorate, or program that manages records outside the HQ component. Each SSRM must have an individual RM training certificate uploaded in CROSS. Failure to appoint, or failure to upload training certificates, constitutes non-compliance."
+      },
+      "howToInspect": [
+        {
+          "step": "Navigate to SSRM Appointments in CROSS",
+          "actions": [
+            "Navigate to the command's CROSS page and locate the SSRM appointment section"
+          ]
+        },
+        {
+          "step": "Identify Required SSRM Sections",
+          "actions": [
+            "Identify how many sections, directorates, and programs the command operates outside the traditional G1/S1 structure",
+            "Verify an SSRM is appointed in CROSS for each identified section or program"
+          ],
+          "callout": "Required SSRM appointment missing for staff section",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Currency of Appointments",
+          "actions": [
+            "Confirm all appointed SSRMs are still assigned to the command",
+            "No PCS gaps without replacement appointments"
+          ],
+          "callout": "SSRM appointment lapsed",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify SSRM Training Certificates",
+          "actions": [
+            "Navigate to the 'Documents' tab and 'Training Documents' sub-tab",
+            "Confirm each SSRM has an individual annual RM training certificate uploaded"
+          ],
+          "callout": "SSRM training certificate missing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No SSRMs appointed at all",
+            "SSRMs appointed but have PCS'd with no replacement",
+            "SSRM training certificates missing or outdated",
+            "Sections holding records without an SSRM appointment"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How many sections and programs at this command hold records outside the G1/S1 structure?",
+        "Has the command appointed an SSRM in CROSS for each of those sections?",
+        "Are all appointed SSRMs currently assigned to this command?",
+        "Do all SSRMs have individual annual RM training certificates uploaded in CROSS?"
+      ],
+      "verification": [
+        "SSRMs are appointed in CROSS for each section, directorate, or program holding records outside the HQ component",
+        "All appointed SSRMs are currently assigned to the command",
+        "Each SSRM has an individual annual RM training certificate uploaded in CROSS under 'Documents' and 'Training Documents'",
+        "SSRM appointments are in writing and recorded in CROSS"
+      ],
+      "verified": true
+    },
+    "0105": {
+      "title": "FILE PLAN IN CROSS AND SPO RECORDS LIBRARY ALIGNMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5210.11F, chap 3, par 3 (Paper File Plans and Outlines)",
+            "text": "A file plan is the standard for organizing and controlling files. It is a method of grouping files or documents together based on their relationships to a particular subject or function. A file outline maintains workflow continuity and provides an at-a-glance view of all files located within office file drawers and cabinets."
+          },
+          {
+            "citation": "MCO 5210.11F, chap 3, par 1 (Managing Records)",
+            "text": "All paper/electronic file folders are labeled in accordance with annual file outlines and retention dates listed in reference (g). All electronic records must be labeled with the equivalent information. All paper and electronic records are maintained in accordance with guidelines in this Order and reference (g). All permanent and temporary records are managed in separate folders."
+          }
+        ],
+        "summary": "Inspector Note: The checklist includes a critical UPDATE: It is now the responsibility of the CDRM to account for all command records within one file plan versus multiple command file plans. All separate file plans will 'roll into' a master command file plan within CROSS. Commands are required to use the new disposition schedule metadata or the available labeling options within Microsoft SPO. The command must have an active master file plan in CROSS. Record schedules in CROSS must correspond to records maintained in the command's SharePoint Online Records Library. The CDRM holds responsibility for maintaining this alignment across all command sections."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify Master File Plan in CROSS",
+          "actions": [
+            "Navigate to the command's CROSS page and locate the command file plan",
+            "Confirm a master command file plan exists - not fragmented across multiple sub-plans"
+          ],
+          "callout": "No Master File Plan in CROSS",
+          "severity": "finding"
+        },
+        {
+          "step": "Review Record Schedules",
+          "actions": [
+            "Review the SSIC categories and retention schedules listed in the file plan",
+            "Note whether disposition schedule metadata or SPO labeling options are applied"
+          ],
+          "callout": "Record schedules outdated or missing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Spot-Check SPO Records Library Alignment",
+          "actions": [
+            "Ask to view the command's SharePoint Online Records Library",
+            "Randomly select a minimum of 3 record categories",
+            "Verify the records in SPO correspond to the categories and schedules listed in the CROSS file plan"
+          ],
+          "callout": "SPO records library not aligned with CROSS file plan",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Paper Records Annotation (if applicable)",
+          "actions": [
+            "If the command holds approved paper records, confirm those are identified on the file plan in CROSS",
+            "Confirm physical locations are annotated in the Excel version of the file plan"
+          ],
+          "callout": "Paper records not annotated per requirement",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No file plan exists in CROSS",
+            "Multiple disconnected file plans not consolidated into a master",
+            "SPO records do not correspond to CROSS file plan categories",
+            "Paper records not annotated on the file plan with physical locations"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where is the command's master file plan in CROSS?",
+        "Has the command consolidated all section file plans into one master command file plan?",
+        "Do the record categories in CROSS correspond to what is maintained in SharePoint Online?",
+        "If the command holds paper records, are those locations annotated in the Excel version of the file plan?",
+        "How often does the CDRM review and update the file plan?"
+      ],
+      "verification": [
+        "A master command file plan is identified in CROSS",
+        "All section file plans are consolidated into the master command file plan",
+        "Record schedules in CROSS correspond to records maintained in the command's SharePoint Online Records Library",
+        "Disposition schedule metadata or SPO labeling options are applied to records in SharePoint Online",
+        "If paper records are held under an approved waiver, they are identified on the file plan with physical locations annotated in the Excel version"
+      ],
+      "verified": true
+    },
+    "0106": {
+      "title": "RECORDS MANAGEMENT SOP",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5210.11F, par 4b(5)(b) (HQMC Staff Agency Heads and Marine Corps Commanders)",
+            "text": "Oversee and implement respective records management programs to include vital records programs."
+          },
+          {
+            "citation": "MCO 5210.11F, par 4b(5)(c) (HQMC Staff Agency Heads and Marine Corps Commanders)",
+            "text": "Implement policy to ensure protection of organizational records in compliance with legal and statutory requirements."
+          },
+          {
+            "citation": "MCO 5210.11F, par 4c(3)(a) (Administrative Officers)",
+            "text": "Develop and maintain Standard Operating Procedures in creating and maintaining command files regardless of location or format per Chapter 3 of reference (a)."
+          },
+          {
+            "citation": "MCO 5210.11F, par 4c(2)(q) (CDRMs)",
+            "text": "Ensure commands identify Vital Records, institute a Vital Records program, and incorporate the Vital Records program into the command's Continuity of Operations Plan (COOP), Safety, and/or Emergency Evaluation Plan per reference (e)."
+          }
+        ],
+        "summary": "Inspector Note: A local order, bulletin, or SOP satisfies this requirement. The SOP must be uploaded to CROSS under the 'Documents' and 'SOP/COOP' tabs. Inspect both the CROSS upload AND the content of the SOP to verify it governs current ERM practices. The command must have a current SOP governing the creation and maintenance of command records in accordance with ERM practices. The SOP must be uploaded to CROSS and must reflect current CROSS and SharePoint Online requirements."
+      },
+      "howToInspect": [
+        {
+          "step": "Check CROSS for SOP Upload",
+          "actions": [
+            "Navigate to the command's CROSS page",
+            "Select the 'Documents' tab and locate the 'SOP/COOP' sub-tab",
+            "Confirm an RM SOP, local order, or bulletin is uploaded"
+          ],
+          "callout": "No Records Management SOP uploaded to CROSS",
+          "severity": "finding"
+        },
+        {
+          "step": "Review the SOP for Currency and Substance",
+          "actions": [
+            "Request the CDRM provide the RM SOP for review",
+            "Check the date of last revision - must reflect current CROSS and SPO ERM practices"
+          ],
+          "callout": "SOP outdated or lacks substantive content",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify SOP Content Coverage",
+          "actions": [
+            "Confirm the SOP addresses the following:",
+            "CDRM and SSRM roles and responsibilities",
+            "File plan management in CROSS",
+            "Record lifecycle management in SharePoint Online",
+            "Training requirements",
+            "Essential/vital records identification"
+          ],
+          "callout": "SOP content does not address required coverage areas",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Signature Authority",
+          "actions": [
+            "Confirm the SOP is signed by command authority"
+          ],
+          "callout": "SOP not signed by proper authority",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No RM SOP exists",
+            "SOP exists in hardcopy but is not uploaded to CROSS",
+            "SOP is outdated and does not address CROSS and SharePoint Online ERM practices",
+            "SOP lacks substance - covers paper records management only"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Does the command have an RM SOP, local order, or bulletin governing records management?",
+        "Is the SOP uploaded in CROSS under the 'Documents' and 'SOP/COOP' tabs?",
+        "When was the SOP last updated?",
+        "Does the SOP address current CROSS and SharePoint Online ERM practices?"
+      ],
+      "verification": [
+        "An RM SOP, local order, or bulletin exists and is signed by command authority",
+        "The SOP is uploaded to CROSS under the 'Documents' and 'SOP/COOP' tabs",
+        "The SOP is current and addresses CROSS and SharePoint Online ERM practices",
+        "The SOP addresses CDRM and SSRM roles, file plan management, record lifecycle, training, and essential records",
+        "SUBSECTION 2 - PAPER RECORDS MANAGEMENT"
+      ],
+      "verified": true
+    },
+    "0201": {
+      "title": "PAPER RECORDS WAIVER (NAVMC 10030/1)",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5210.11F, chap 3, par 1f (Managing Records)",
+            "text": "Maximize the use of electronic filing versus paper filing per reference (i)."
+          },
+          {
+            "citation": "MCO 5210.11F, chap 3, par 1f(1) (Managing Records)",
+            "text": "Annual assessment of record retentions for all records and files will be conducted. Administrative officers, CDRMs and administrative clerks/specialists will assist commands with the process to transfer records to NARA or to one of several Federal Records Centers (FRC) located throughout the United States, depending on records dispositions. For all paper and electronic records, the SF-135, Records Transmittal and Receipt, will be used as outlined in Chapter 4 of this Order."
+          },
+          {
+            "citation": "MCO 5210.11F, chap 3, par 3 (Paper File Plans and Outlines)",
+            "text": "A file plan is the standard for organizing and controlling files. It is a method of grouping files or documents together based on their relationships to a particular subject or function."
+          }
+        ],
+        "summary": "Inspector Note: All NAVMC 10030/1s have unique expiration dates determined by the Records Officer of the Marine Corps. Commands with an approved NAVMC 10030/1 have until the form's expiration date to transition paper records to electronic format. Only under extremely rare circumstances will a NAVMC 10030/1 be approved or renewed. If the command has NO paper records on premise, skip this question and proceed to Q0202. If the command maintains paper records on premise, a current and approved NAVMC 10030/1 is required. Records identified in the waiver must be annotated on the command file plan with physical locations."
+      },
+      "howToInspect": [
+        {
+          "step": "Determine Paper Records Status",
+          "actions": [
+            "Ask: does the command maintain any paper records on premise?",
+            "If no - annotate 'N/A - No paper records on premise' and skip to Q0202"
+          ]
+        },
+        {
+          "step": "Request the NAVMC 10030/1",
+          "actions": [
+            "If the command holds paper records, request the NAVMC 10030/1, 'Records Management Paper Waiver Request'",
+            "Verify the NAVMC 10030/1 is approved by ARD"
+          ],
+          "callout": "Paper records maintained without current NAVMC 10030/1 waiver",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Expiration Date",
+          "actions": [
+            "Check the expiration date on the NAVMC 10030/1",
+            "Confirm it has not expired"
+          ],
+          "callout": "Waiver expired and not renewed",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify File Plan Annotation",
+          "actions": [
+            "Navigate to the command's CROSS file plan - specifically the Excel version",
+            "Confirm paper records identified in the waiver are annotated with physical locations (building, room, cabinet)"
+          ],
+          "callout": "File plan not annotated to reflect paper waiver",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Command holds paper records with no NAVMC 10030/1",
+            "NAVMC 10030/1 has expired",
+            "Paper records are not annotated on the file plan with physical locations",
+            "Records held do not match what is listed on the waiver"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Does the command maintain any paper records on premise?",
+        "Does the command have an approved NAVMC 10030/1?",
+        "What is the expiration date on the NAVMC 10030/1?",
+        "Are the paper records identified in the waiver annotated on the CROSS file plan with physical locations?",
+        "What is the command's plan to transition paper records to electronic format before the waiver expires?"
+      ],
+      "verification": [
+        "Command has no paper records on premise (N/A - skip to Q0202), OR",
+        "An approved and current NAVMC 10030/1 is on file and has not expired",
+        "Paper records are annotated on the command File Plan (Excel version) with specific physical locations",
+        "Records held correspond to what is listed on the approved NAVMC 10030/1"
+      ],
+      "verified": true
+    },
+    "0202": {
+      "title": "LEGACY PAPER RECORDS AND ARCIS ACCOUNT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5210.11F, chap 3, par 1f(1) (Managing Records)",
+            "text": "Annual assessment of record retentions for all records and files will be conducted. Administrative officers, CDRMs and administrative clerks/specialists will assist commands with the process to transfer records to NARA or to one of several Federal Records Centers (FRC) located throughout the United States, depending on records dispositions. For all paper and electronic records, the SF-135, Records Transmittal and Receipt, will be used as outlined in Chapter 4 of this Order. Offices must maintain copies of SF135s until final dispositions for each records transfer has been reached."
+          }
+        ],
+        "summary": "Inspector Note: ARCIS is no longer used to transfer records to FRCs. ARCIS accounts are only provided to primary CDRMs to retrieve records if required for events such as legal records holds, discovery, and FOIA requests. Command records residing in approved ERM systems such as iAPS, DTS, or other enterprise or government-wide systems of record shall remain resident in their respective systems - no transfer needed. Annotate types and locations of records residing in ERM systems within the command CROSS file plan. If the command has legacy paper records stored at a Federal Records Center, the primary CDRM must have an ARCIS account for retrieval. ARCIS is not used for new transfers - only retrieval. If the command has no legacy records at an FRC, annotate N/A."
+      },
+      "howToInspect": [
+        {
+          "step": "Determine Legacy FRC Records Status",
+          "actions": [
+            "Ask the CDRM: does the command have any legacy paper records stored at a Federal Records Center?",
+            "If no - annotate 'N/A - No legacy FRC records' and note for record"
+          ]
+        },
+        {
+          "step": "Verify ARCIS Account (if FRC records exist)",
+          "actions": [
+            "Verify the primary CDRM has an ARCIS account",
+            "Ask the CDRM to demonstrate ARCIS access or provide account confirmation"
+          ],
+          "callout": "FRC legacy records held without ARCIS account",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify CROSS File Plan Annotation",
+          "actions": [
+            "Verify the types and locations of FRC-stored records are annotated on the command's CROSS file plan",
+            "Confirm records in approved ERM systems (iAPS, DTS) are annotated in CROSS rather than transferred"
+          ],
+          "callout": "CROSS file plan not annotated for FRC records",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Command has FRC records but CDRM has no ARCIS account",
+            "FRC records not annotated on CROSS file plan",
+            "Command incorrectly attempting to use ARCIS for new record transfers"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Does the command have any legacy paper records stored at a Federal Records Center?",
+        "Does the CDRM have an active ARCIS account?",
+        "Are FRC-stored record types and locations annotated on the command's CROSS file plan?",
+        "Does the command have records residing in approved ERM systems like iAPS or DTS? Are those annotated in CROSS?"
+      ],
+      "verification": [
+        "Command has no legacy FRC records (N/A), OR",
+        "Primary CDRM has an active ARCIS account for retrieval requests",
+        "Types and locations of FRC-stored records are annotated in the command's CROSS file plan",
+        "Command understands ARCIS is for retrieval only - not new record transfers",
+        "Records in approved ERM systems (iAPS, DTS) are annotated in CROSS rather than transferred",
+        "SUBSECTION 3 - ESSENTIAL RECORDS"
+      ],
+      "verified": true
+    },
+    "0301": {
+      "title": "ESSENTIAL RECORDS PLAN",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5210.11F, chap 7, par 1 (General)",
+            "text": "Vital records are agency records that are needed to meet operational responsibility under national security emergencies or other emergency or disaster conditions (emergency operating records) and/or to protect the legal and financial rights of the Government and those affected by Government activities (legal and financial rights records). Vital records assist the organization to restore and/or sustain near normal operations during and after a natural disaster, emergency or attack."
+          },
+          {
+            "citation": "MCO 5210.11F, par 4c(2)(q) (CDRMs)",
+            "text": "Ensure commands identify Vital Records, institute a Vital Records program, and incorporate the Vital Records program into the command's Continuity of Operations Plan (COOP), Safety, and/or Emergency Evaluation Plan per reference (e)."
+          },
+          {
+            "citation": "MCO 5210.11F, chap 7, par 5b(3) (Heads of HQMC Staff Agencies/Commanding Officers)",
+            "text": "Develop a vital records plan to include current vital records inventory."
+          },
+          {
+            "citation": "MCO 5210.11F, chap 7, par 5b(4) (Heads of HQMC Staff Agencies/Commanding Officers)",
+            "text": "Implement vital records programs within areas of responsibility."
+          }
+        ],
+        "summary": "Inspector Note: The checklist uses 'Essential Records' which supersedes the older 'Vital Records' terminology from MCO 5210.11F. The regulatory requirement and inspection standard remain the same. All command sections, directorates, and programs must contribute their essential records to the master inventory, which must be uploaded to CROSS. The command must have a current Essential Records plan. The plan may be part of the command RM SOP, integrated into the COOP, or stand alone. The Essential Records inventory must be uploaded to CROSS."
+      },
+      "howToInspect": [
+        {
+          "step": "Request the Essential Records Plan",
+          "actions": [
+            "Ask the CDRM to provide the command's Essential Records plan",
+            "Determine whether the plan is integrated into the RM SOP, incorporated into the COOP, or stands alone",
+            "Note which format on the inspection record - all three formats are acceptable"
+          ],
+          "callout": "No Essential Records Plan on file",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Plan Content",
+          "actions": [
+            "Verify the plan addresses both categories per MCO 5210.11F, chap 7, par 2:",
+            "Emergency Operating Records",
+            "Legal and Financial Rights Records"
+          ],
+          "callout": "Plan content does not meet required elements",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify All Sections Contributed",
+          "actions": [
+            "Verify the plan includes contributions from all command sections, directorates, and programs",
+            "Not just the HQ element - every section holding records must be represented"
+          ],
+          "callout": "Not all sections contributed to the plan",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify CROSS Upload",
+          "actions": [
+            "Navigate to CROSS and confirm the Essential Records inventory is uploaded"
+          ],
+          "callout": "Plan not uploaded to CROSS",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No Essential Records plan exists",
+            "Plan exists but is not uploaded to CROSS",
+            "Plan only covers HQ section - subordinate sections not included",
+            "Inventory is outdated and does not reflect current records"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Does the command have an Essential Records plan?",
+        "Is the plan part of the RM SOP, integrated into the COOP, or a standalone document?",
+        "Have all command sections contributed their essential records to the master inventory?",
+        "Is the Essential Records inventory uploaded to CROSS?",
+        "When was the plan last reviewed and updated?"
+      ],
+      "verification": [
+        "An Essential Records plan exists and is documented",
+        "The plan addresses both Emergency Operating Records and Legal and Financial Rights Records",
+        "All command sections, directorates, and programs have contributed to the master inventory",
+        "The Essential Records inventory is uploaded to CROSS",
+        "The plan is either part of the RM SOP, integrated into the COOP, or stands alone - all formats are acceptable"
+      ],
+      "verified": true
+    },
+    "0302": {
+      "title": "ANNUAL ESSENTIAL RECORDS INVENTORY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5210.11F, chap 7, par 5b(1) (Heads of HQMC Staff Agencies/Commanding Officers)",
+            "text": "Inventory of vital records is conducted on an annual basis."
+          },
+          {
+            "citation": "MCO 5210.11F, chap 7, par 5b(2) (Heads of HQMC Staff Agencies/Commanding Officers)",
+            "text": "Determine which records are required to ensure the continuity of operations during non-normal conditions such as disaster, emergency or crisis."
+          },
+          {
+            "citation": "MCO 5210.11F, chap 7, par 5c(3) (CDRMs)",
+            "text": "Collaborate with your organization/command staff sections to ensure vital records are identified, inventoried, protected, stored, current, and easily accessible during time of crisis and emergency."
+          }
+        ],
+        "summary": "Inspector Note: The command must provide textual and/or electronic evidence that an annual inventory was conducted. A signed inventory list, memo, or CROSS upload serves as evidence. Verbal assertion alone does not satisfy this requirement. The command must conduct and document an annual inventory of all essential records. Evidence of inventory must be uploaded to CROSS."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Evidence of Annual Inventory",
+          "actions": [
+            "Request evidence of the most recent annual essential records inventory",
+            "Acceptable forms of evidence: signed inventory list, memo documenting inventory completion, or CROSS upload"
+          ],
+          "callout": "No documented annual essential records inventory",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify CROSS Upload",
+          "actions": [
+            "Navigate to CROSS and confirm the inventory documentation is uploaded"
+          ],
+          "callout": "Inventory not uploaded to CROSS",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm the inventory date - must be within the last 12 months"
+          ],
+          "callout": "Inventory outside the annual currency window",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Scope",
+          "actions": [
+            "Confirm the inventory reflects input from all command sections - not just HQ"
+          ],
+          "callout": "Inventory scope incomplete",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No inventory has been conducted",
+            "Inventory was conducted but not documented or uploaded to CROSS",
+            "Inventory is more than 12 months old",
+            "Inventory only covers HQ records, not all sections"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When was the most recent annual essential records inventory conducted?",
+        "What documentation was produced as evidence of the inventory?",
+        "Is the inventory uploaded to CROSS?",
+        "Were all command sections included in the inventory process?"
+      ],
+      "verification": [
+        "Annual essential records inventory has been conducted within the last 12 months",
+        "Textual or electronic evidence of the inventory exists - signed list, memo, or similar documentation",
+        "Inventory documentation is uploaded to CROSS",
+        "Inventory reflects input from all command sections, not just the HQ element"
+      ],
+      "verified": true
+    },
+    "0303": {
+      "title": "ESSENTIAL RECORDS CURRENT AND PROPERLY MANAGED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5210.11F, chap 7, par 5b(5) (Heads of HQMC Staff Agencies/Commanding Officers)",
+            "text": "Take appropriate steps to ensure copies of vital records are properly managed throughout their entire lifecycle. This includes providing the most up-to-date information regarding records storage, accessibility and disposition, as required."
+          },
+          {
+            "citation": "MCO 5210.11F, chap 7, par 5b(6) (Heads of HQMC Staff Agencies/Commanding Officers)",
+            "text": "Manage and store original vital records in accordance with DoD and DON regulations, NARA-approved dispositions, and references (e), (m) and (n). Because vital records are generally copies of original records, the copies may be destroyed when they are superseded or no longer required. The vital record plans themselves are original and are considered 'unscheduled' records. Per NARA regulations, all unscheduled records are treated and maintained as permanent records."
+          },
+          {
+            "citation": "MCO 5210.11F, chap 7, par 5c(4) (CDRMs)",
+            "text": "Integrate vital records management requirements into the lifecycle of records management practices in accordance with references (e), (m), (n) and this Order to ensure the records are managed, protected, accessible, retrievable, stored, that appropriate dispositions are conducted, and that they meet Federal mandates."
+          }
+        ],
+        "summary": "Inspector Note: The inspector will take a random sampling of no more than five (5) essential records currently being managed. This sampling is to ensure records are managed according to correct Records Schedules and dispositions. Prepare to spot-check records in CROSS and/or SharePoint Online against their corresponding NARA-approved schedules. Essential records must be current, accessible, and managed according to correct Records Schedules and dispositions. The inspector takes a random sample of up to five records and verifies lifecycle management compliance."
+      },
+      "howToInspect": [
+        {
+          "step": "Access Essential Records in CROSS or SPO",
+          "actions": [
+            "Request access to the command's essential records in CROSS and/or SharePoint Online"
+          ]
+        },
+        {
+          "step": "Conduct Random Sampling",
+          "actions": [
+            "Randomly select up to five (5) essential records from the inventory"
+          ]
+        },
+        {
+          "step": "Verify Each Sampled Record",
+          "actions": [
+            "For each selected record, verify:",
+            "The record is current and reflects the most recent version",
+            "The correct SSIC and disposition schedule is applied",
+            "The record is stored in the appropriate location - CROSS, SPO, or designated share",
+            "The record is accessible during normal and emergency conditions"
+          ],
+          "callout": "Essential records sampled are out of date or missing required elements",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Cycling Procedures",
+          "actions": [
+            "Confirm vital record copies are being cycled/updated on a recurring basis"
+          ],
+          "callout": "No documented cycling procedures",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Essential records are outdated - superseded by newer versions",
+            "Incorrect disposition schedule applied",
+            "Records not stored in an accessible location",
+            "Records not updated since the original plan was created"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How does the command ensure essential records remain current?",
+        "Where are the essential records stored - CROSS, SharePoint Online, or other location?",
+        "How often are essential records reviewed and updated?",
+        "Are the records accessible during emergency or disaster conditions?",
+        "What disposition schedules apply to the sampled essential records?"
+      ],
+      "verification": [
+        "Random sample of up to five (5) essential records reviewed",
+        "Each sampled record is current and reflects the most recent version",
+        "Correct Records Schedule and disposition is applied to each sampled record",
+        "Records are stored in an accessible location appropriate to emergency retrieval",
+        "Lifecycle management procedures are in place to cycle and update essential records on a recurring basis",
+        "SUBSECTION 4 - CAPSTONE (Applies to commands with billets identified in General Records Schedule 6.1 at https://www.archives.gov/records-mgmt/grs.html)"
+      ],
+      "verified": true
+    },
+    "0401": {
+      "title": "CAPSTONE OFFICIAL IDENTIFICATION AND FILE PLAN",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAV M-5210.1, Part 1, par 16.b.(e) (DON Senior Officials Email)",
+            "text": "Permanently retain email of DON senior officials that are designated as Capstone officials. Capstone officials include, at a minimum: Secretary of the Navy (SECNAV), Under Secretary of the Navy, CNO, Vice CNO, CMC, and Assistant CMC. In addition, the Services and Secretariat may designate other positions for this category if approval is gained by DON/AA DRMD, or HQMC ARDB for the Marine Corps."
+          },
+          {
+            "citation": "MCBul 5210 dtd 29 Aug 25, par 3b(1)(a)3 (Commanders and Civilian Leaders)",
+            "text": "Commands/organizations with a billet identified on the Form NA-1005, 'Verification for the Use of General Records Schedule (GRS) 6.1, Email and other Electronic Messages Managed Under a Capstone Approach,' are required to inform ARD Records of any Capstone official changes by submitting an ETMS2 task to 'USMC HQMC AR ARD RECORDS' with the following information:"
+          },
+          {
+            "citation": "MCBul 5210 dtd 29 Aug 25, par 3b(1)(a)3.a.",
+            "text": "Capstone official rank, name, billet title."
+          }
+        ],
+        "summary": "Inspector Note: Capstone applies only to commands with billets identified on Form NA-1005. If the command has no Capstone billet, note this and skip to Q0501 - annotate 'N/A - No Capstone billet.' Commands with a billet on the NA-1005 must identify their Capstone official in CROSS, include GRS 6.1 in their command file plan, and notify ARD Records of changes via ETMS2."
+      },
+      "howToInspect": [
+        {
+          "step": "Determine Capstone Applicability",
+          "actions": [
+            "Determine whether the command has a billet identified on Form NA-1005",
+            "If no - annotate N/A and skip to Q0501"
+          ]
+        },
+        {
+          "step": "Verify Capstone Tab in CROSS",
+          "actions": [
+            "Navigate to the command's CROSS page and locate the 'Capstone' tab",
+            "Verify the current Capstone official's rank, name, and billet title are accurately reflected in CROSS",
+            "Verify the information in CROSS matches the current occupant of the Capstone billet"
+          ],
+          "callout": "Capstone tab not present in CROSS for applicable command",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify GRS 6.1 in File Plan",
+          "actions": [
+            "Request the command file plan and confirm General Records Schedule 6.1 is included"
+          ],
+          "callout": "GRS 6.1 not reflected in file plan",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No Capstone official identified despite having a qualifying billet",
+            "CROSS Capstone tab is blank or contains outdated information",
+            "GRS 6.1 not included in the command file plan"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Does this command have a billet listed on Form NA-1005?",
+        "Who is the current Capstone official at this command?",
+        "Is the Capstone official's information accurately entered in the CROSS Capstone tab?",
+        "Is General Records Schedule 6.1 included in the command file plan in CROSS?"
+      ],
+      "verification": [
+        "Command has no qualifying Capstone billet (N/A - skip to Q0501), OR",
+        "Capstone official is identified and CROSS Capstone tab reflects current rank, name, and billet title",
+        "Capstone official information in CROSS matches the current billet occupant",
+        "General Records Schedule 6.1 is part of the command file plan in CROSS"
+      ],
+      "verified": true
+    },
+    "0402": {
+      "title": "QUARTERLY CAPSTONE RECONCILIATION VIA ETMS2",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAVINST 5210.8F, encl(4), par 6.g (Echelon II Commanders)",
+            "text": "Ensure that the Capstone Officials list for their command reflects accurately against the list published on the DON/AA DRMD website: (https://portal.secnav.navy.mil/orgs/DUSNM/DONAA/DRM/SitePages/Home.aspx). If a Capstone Official changes, notification will be sent to DON/AA DRMD to include incoming Capstone Official's information;"
+          },
+          {
+            "citation": "SECNAV M-5210.1, Part 1, par 16.b.(e) (Capstone Email Management)",
+            "text": "Records Managers will provide DON/AA DRMD and HQMC ARDB with an accurate and up-to-date listing of Capstone Officials in their command quarterly and anytime a change occurs. DON/AA DRMD will compile the information and maintain the master list on their website. HQMC ARDB will maintain the master list for the Marine Corps;"
+          },
+          {
+            "citation": "MCBul 5210 dtd 29 Aug 25, par 3b(2)(d) (CDRM Responsibilities)",
+            "text": "Ensure Capstone SIPR email accounts are captured by submitting an update to ARD Records upon receipt of the regularly scheduled quarterly ETMS2 tasker. ARD Records will notify CDRMs via email upon each quarterly tasker release."
+          }
+        ],
+        "summary": "Inspector Note: The command task manager must notify the CDRM upon receipt of the quarterly ETMS2 tasker. This is an OMB requirement to maintain updates of Capstone information. The CDRM submits the response via ETMS2 to 'USMC HQMC AR ARD RECORDS.' Verify ETMS2 task completion records for the last four quarters. Commands with Capstone officials must respond to quarterly ETMS2 taskers from ARD Records to confirm and update Capstone official information. Failure to respond to one or more quarterly taskers constitutes non-compliance."
+      },
+      "howToInspect": [
+        {
+          "step": "Access ETMS2 Tasker History",
+          "actions": [
+            "Ask the CDRM to access ETMS2 and locate the quarterly Capstone reconciliation taskers"
+          ]
+        },
+        {
+          "step": "Verify Responses for the Last Four Quarters",
+          "actions": [
+            "Verify the command has responded to the last four quarterly taskers",
+            "Confirm the task manager has been notifying the CDRM upon receipt of each quarterly tasker"
+          ],
+          "callout": "Quarterly responses missing for one or more of the last four quarters",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Content of Responses",
+          "actions": [
+            "Verify both NIPR and SIPR Capstone email accounts are captured in the quarterly response",
+            "Confirm the response reflects the current Capstone official - not a predecessor"
+          ],
+          "callout": "Response content incomplete or does not address reconciliation",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CDRM is unaware of the quarterly ETMS2 requirement",
+            "Taskers received but not responded to",
+            "Task manager not notifying CDRM upon receipt",
+            "Responses submitted but reflect outdated Capstone official information"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Has the command received and responded to the last four quarterly Capstone ETMS2 taskers?",
+        "Does the task manager notify the CDRM upon receipt of each quarterly tasker?",
+        "Are both NIPR and SIPR Capstone email accounts captured in the quarterly responses?",
+        "Who submitted the most recent quarterly response?"
+      ],
+      "verification": [
+        "Command has responded to the last four quarterly Capstone ETMS2 taskers",
+        "Task manager has notified the CDRM upon receipt of each quarterly tasker",
+        "Quarterly responses reflect the current Capstone official - not a predecessor",
+        "Both NIPR and SIPR Capstone email accounts are captured in the quarterly responses"
+      ],
+      "verified": true
+    },
+    "0403": {
+      "title": "CAPSTONE OFFICIAL CHANGE NOTIFICATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAVINST 5210.8F, encl(4), par 6.g (Echelon II Commanders)",
+            "text": "Ensure that the Capstone Officials list for their command reflects accurately against the list published on the DON/AA DRMD website. If a Capstone Official changes, notification will be sent to DON/AA DRMD to include incoming Capstone Official's information;"
+          },
+          {
+            "citation": "SECNAV M-5210.1, Part 1, par 16.b.(e) (Capstone Email Management)",
+            "text": "Records Managers will provide DON/AA DRMD and HQMC ARDB with an accurate and up-to-date listing of Capstone Officials in their command quarterly and anytime a change occurs."
+          },
+          {
+            "citation": "MCBul 5210 dtd 29 Aug 25, par 3b(1)(a), NOTE 1 (Commanders and Civilian Leaders)",
+            "text": "Organizational leaders must complete and sign the NAVMC 10030, 'Commander's Records Management Acknowledgement Agreement,' within 90 days of assuming command, or within 90 days of publication of this Bulletin if already in command. Provide the completed form to the CDRM to be uploaded onto CROSS."
+          },
+          {
+            "citation": "MCBul 5210 dtd 29 Aug 25, par 3b(1)(a)3 (Commanders and Civilian Leaders)",
+            "text": "Commands/organizations with a billet identified on the Form NA-1005 are required to inform ARD Records of any Capstone official changes by submitting an ETMS2 task to 'USMC HQMC AR ARD RECORDS.'"
+          }
+        ],
+        "summary": "Inspector Note: If a change of command has occurred, the CDRM must initiate the NAVMC 10030 within 90 days of the new commanding officer assuming command and upload the signed form to CROSS. The CROSS Capstone tab must also be revised to reflect the new official. Notification to ARD Records via ETMS2 is required anytime a change occurs. Any time a Capstone official changes, the CDRM must update the CROSS Capstone tab and notify ARD Records via ETMS2. If a change of command occurred, the NAVMC 10030 must be initiated within 90 days."
+      },
+      "howToInspect": [
+        {
+          "step": "Determine Whether a Change Has Occurred",
+          "actions": [
+            "Ask: has there been a change in Capstone official since the last inspection or within the last 12 months?",
+            "If no change has occurred, verify CROSS Capstone tab reflects the current occupant and annotate accordingly"
+          ]
+        },
+        {
+          "step": "Verify CROSS Update (if change occurred)",
+          "actions": [
+            "Verify the CDRM updated the CROSS Capstone tab with the new official's rank, name, and billet title"
+          ],
+          "callout": "CROSS not updated when Capstone official changed",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify ETMS2 Notification",
+          "actions": [
+            "Verify an ETMS2 task was submitted to 'USMC HQMC AR ARD RECORDS' notifying of the change"
+          ],
+          "callout": "ETMS2 notification not submitted",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify NAVMC 10030 for Change of Command",
+          "actions": [
+            "If the change involved a change of command, verify the NAVMC 10030 was initiated within 90 days",
+            "Confirm the signed form is uploaded to CROSS"
+          ],
+          "callout": "NAVMC 10030 not refreshed for change of command",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CROSS Capstone tab still reflects a departed official",
+            "ETMS2 notification was not submitted after a change",
+            "NAVMC 10030 not initiated within 90 days of change of command"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Has there been a change in the Capstone official since the last inspection?",
+        "If yes, was the CROSS Capstone tab updated to reflect the new official?",
+        "Was an ETMS2 task submitted to ARD Records notifying of the change?",
+        "If a change of command occurred, was the NAVMC 10030 initiated within 90 days?",
+        "Is the signed NAVMC 10030 uploaded to CROSS for the current commanding officer?"
+      ],
+      "verification": [
+        "CROSS Capstone tab reflects the current Capstone official - no departed personnel listed",
+        "If a change occurred, ETMS2 notification was submitted to 'USMC HQMC AR ARD RECORDS'",
+        "If a change of command occurred, NAVMC 10030 was initiated within 90 days and signed form is uploaded to CROSS",
+        "New Capstone official's rank, name, and billet title are accurately reflected in CROSS",
+        "SUBSECTION 5 - COMMAND CHRONOLOGY RECORDS AND ANNUAL REPORTING STATUS"
+      ],
+      "verified": true
+    },
+    "0501": {
+      "title": "COMMAND CHRONOLOGY SUBMISSION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5750.1H, encl(1), chap 5, par 4a (Command Chronology - Objective)",
+            "text": "The command chronology is a documented report to the Commandant of the Marine Corps covering the significant events of designated Marine Corps organizations. It is retained on behalf of the Commandant of the Marine Corps in the Archives and Special Collections Branch, Library of the Marine Corps. Command chronologies are permanent records and, as such, will eventually be retired to the National Archives and Records Administration (paper or digital copies are to be retained by the Archives and Special Collections Branch, Library of the Marine Corps)."
+          },
+          {
+            "citation": "MCO 5750.1H, encl(1), chap 5, par 4a (Signing Requirement)",
+            "text": "Command chronologies not signed by commanding officers will be considered incomplete until the commander or acting commander has signed."
+          },
+          {
+            "citation": "MARADMIN 200/25, par 3a (Actions)",
+            "text": "Per Appendix A of reference (a), all Fleet Marine Force units down to the battalion/squadron level shall submit command chronologies on a semi-annual basis. All other commands, including all Marine Corps Reserve units, shall submit command chronologies on an annual basis."
+          },
+          {
+            "citation": "MARADMIN 200/25, par 3a.2",
+            "text": "Annual submissions covering the period from 1 October to 30 September are due no later than (NLT) 31 December each year."
+          },
+          {
+            "citation": "MARADMIN 200/25, par 3a.3",
+            "text": "Semi-annual submissions covering the period from 1 October to 31 March are due 30 June, and submissions covering the period from 1 April to 30 September are due NLT 31 December."
+          },
+          {
+            "citation": "MARADMIN 200/25, par 3a.5",
+            "text": "Units shall submit their command chronologies as OCR PDF documents directly to HD by email to History.Division@usmcu.edu. These reports must contain the signature of the commanding officer. By Direction and Acting signatures are not permitted. Digital signatures are not permitted and will not be accepted."
+          },
+          {
+            "citation": "MARADMIN 200/25, par 3b",
+            "text": "Unit commanders shall ensure a staff member is designated in writing to perform the additional duty of Staff Historian IAW reference (a)."
+          }
+        ],
+        "summary": "Inspector Note: Command chronologies are due NLT 90 days after the end of the reporting period. For semiannual submissions: due 30 June and 31 December. For annual submissions: due NLT 31 December. Digital signatures are not permitted and will not be accepted by the History Division. Commands must submit command chronologies on time with the commanding officer's original signature in OCR PDF format. A staff historian must be designated in writing. The command must maintain a complete historical summary file."
+      },
+      "howToInspect": [
+        {
+          "step": "Determine Submission Schedule",
+          "actions": [
+            "Determine whether this command submits semiannually (FMF units at battalion/squadron level) or annually (all others)"
+          ]
+        },
+        {
+          "step": "Verify Timely Submission",
+          "actions": [
+            "Request email confirmation receipts from the History Division acknowledging submission",
+            "Verify the most recent submission was received on time:",
+            "Semiannual commands: by 30 June (Oct-Mar period) or 31 December (Apr-Sep period)",
+            "Annual commands: by 31 December"
+          ],
+          "callout": "Command Chronology not submitted on schedule",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Commanding Officer Signature",
+          "actions": [
+            "Confirm the submitted chronology was signed by the commanding officer",
+            "Not 'By Direction' and not a digital signature - both are prohibited per MARADMIN 200/25"
+          ],
+          "callout": "Chronology not signed by commanding officer",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Staff Historian Designation",
+          "actions": [
+            "Request the designation letter for the Staff Historian additional duty",
+            "Confirm it is in writing and current"
+          ],
+          "callout": "No staff historian designation",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Historical Summary File",
+          "actions": [
+            "Request the command historical summary file and verify it contains all required elements:",
+            "Copies of lineage and honors certificates",
+            "Copy of streamer entitlement",
+            "Copies of past 5 years of command chronologies",
+            "Master copy of command/unit insignia with documentation/correspondence",
+            "List of all property, facilities, and commemorative sites"
+          ],
+          "callout": "No historical summary file maintained",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Submission was late",
+            "Most recent chronology not signed by the current commanding officer",
+            "Digital or By Direction signature used",
+            "Staff Historian not designated in writing",
+            "Historical summary file is incomplete or missing required elements"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Is this command on a semiannual or annual submission schedule?",
+        "When was the most recent command chronology submitted to the History Division?",
+        "Do you have the email receipt from the Archives Branch confirming submission?",
+        "Was the chronology signed by the commanding officer with an original signature - not By Direction or digital?",
+        "Who is the designated Staff Historian and is that designation in writing?",
+        "Does the command maintain a complete historical summary file with all required elements?"
+      ],
+      "verification": [
+        "Command's submission schedule determined - semiannual or annual",
+        "Most recent command chronology was submitted on time and History Division receipt is on file",
+        "Submitted chronology bears the commanding officer's original signature - no By Direction, no digital signature",
+        "Staff Historian is designated in writing",
+        "Historical summary file contains all required elements: lineage/honors certificates, streamer entitlement, past 5 years of chronologies, unit insignia documentation, and list of property/facilities/commemorative sites"
+      ],
+      "verified": true
+    }
+  }
+}

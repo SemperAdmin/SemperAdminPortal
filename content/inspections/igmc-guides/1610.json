@@ -1,0 +1,2148 @@
+{
+  "faNumber": "1610",
+  "sourceDoc": "PES (1610) - INSPECTOR GUIDE - REBUILT.docx",
+  "lastVerified": "2026-05-20",
+  "verifiedAtSource": true,
+  "items": {
+    "0101": {
+      "title": "ANNUAL MRO EDUCATION ON PES PROVISIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1610.7B, Paragraph 4.b. (Subordinate Element Missions)",
+            "text": "Commanders and Officers-In-Charge (OICs) must ensure that all reporting officials and Marines (sergeants and above) under their charge are well versed in the spirit and intent of this Order."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 8, paragraph 4 (Education)",
+            "text": "The key to preserving and improving the quality of performance evaluations is knowledge and understanding of PES policy and Marine Corps values. This is achieved through the education of all reporting officials. Effective training considers the audience, timing of the training in relation to the evaluation or promotion board cycles, and the appropriate topic."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 8, paragraph 4.a. (Performance Evaluation System (PES) Policy)",
+            "text": "Commanders shall ensure that RSs, ROs, and SEAs have access to, and understand, all current PES directives."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 8, paragraph 4.c. (Unit Training)",
+            "text": "Commanders shall ensure that all MROs and reporting officials are knowledgeable of applicable provisions of the PES and will conduct appropriate training annually. Commanders shall consider the audience, timing, topic relationship."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 9, paragraph 5.d.(1) (Commanding Officers (COs))",
+            "text": "Annually educate individual Marines and reporting officials on the contents of this Order, and reinforce the concept that every Marine has a duty and a responsibility to periodically review their MBS and OMPF."
+          }
+        ],
+        "summary": "The command must conduct annual PES training for all MROs covering chapters 2, 3, and 4 of MCO 1610.7B, with focus on MROW submission and MBS audits."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Training Documentation",
+          "actions": [
+            "Ask for the unit's annual PES training records",
+            "Verify training occurred within the previous 12 months",
+            "Coverage required for all MROs (sergeants and above)"
+          ],
+          "callout": "No annual MRO PES training documentation",
+          "severity": "finding"
+        },
+        {
+          "step": "Review Training Content",
+          "actions": [
+            "Chapter 2 (Reporting Chain Roles and Responsibilities)",
+            "Chapter 3 (Submission Requirements)",
+            "Chapter 4 (Report Preparation)",
+            "Section A data verification",
+            "MROW submission procedures",
+            "MBS audit procedures"
+          ],
+          "callout": "Section A data not addressed in training",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Training Records Format",
+          "actions": [
+            "Sign-in rosters with names, ranks, and dates",
+            "Training agenda or lesson plan",
+            "Training materials used (slides, handouts, references)",
+            "Instructor identification"
+          ],
+          "callout": "Training rosters incomplete or missing instructor/lesson plan",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Cross-Check Attendance",
+          "actions": [
+            "Pull unit roster of E-5 and above",
+            "Compare against training rosters",
+            "Identify Marines missed during training",
+            "Verify makeup training conducted for absentees"
+          ],
+          "callout": "MROs missed without documented makeup training",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Test MRO Knowledge",
+          "actions": [
+            "Interview 3 to 5 MROs from various sections",
+            "Ask basic PES knowledge questions:",
+            "How do you submit an MROW?",
+            "What is in section A of your fitness report?",
+            "How often do you conduct an MBS audit?",
+            "What chapters of the PES apply to you as an MRO?"
+          ],
+          "callout": "MROs unable to demonstrate basic PES knowledge",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Reference Access",
+          "actions": [
+            "Confirm MROs have access to MCO 1610.7B",
+            "Check whether references are electronic or hard copy",
+            "Ask MROs to demonstrate where they go for PES guidance"
+          ],
+          "callout": "MROs lack access to MCO 1610.7B",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Review Training Frequency",
+          "actions": [
+            "Annual requirement at minimum",
+            "Verify date of last training"
+          ],
+          "callout": "No training documented",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Consideration of Audience and Timing",
+          "actions": [
+            "Training tailored to MRO grade and experience",
+            "Timing aligned with evaluation cycles or promotion boards",
+            "Appropriate topics for the audience"
+          ],
+          "callout": "Training not tailored to MRO grade and timing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No annual training conducted within previous 12 months",
+            "Training rosters incomplete or missing",
+            "MROs unable to demonstrate basic PES knowledge",
+            "Training did not cover required chapters",
+            "Section A data not addressed in training"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me documentation of your last annual MRO PES training.",
+        "Who attended the training and how do you track who missed it?",
+        "What chapters of MCO 1610.7B did the training cover?",
+        "How do you verify MROs know how to submit an MROW?",
+        "When was the last time you trained MROs on Section A data?"
+      ],
+      "verification": [
+        "Annual PES training conducted within previous 12 months",
+        "Training covered Chapter 2 of MCO 1610.7B",
+        "Training covered Chapter 3 of MCO 1610.7B",
+        "Training covered Chapter 4 of MCO 1610.7B",
+        "Special attention given to Section A data",
+        "MROW submission procedures included",
+        "MBS audit procedures included",
+        "Training roster documents all attendees",
+        "Makeup training conducted for absentees",
+        "MROs demonstrate basic PES knowledge during interviews"
+      ],
+      "verified": true
+    },
+    "0102": {
+      "title": "ANNUAL RS EDUCATION ON PES PROVISIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1610.7B, Paragraph 4.b. (Subordinate Element Missions)",
+            "text": "Commanders and Officers-In-Charge (OICs) must ensure that all reporting officials and Marines (sergeants and above) under their charge are well versed in the spirit and intent of this Order."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 8, paragraph 4.a. (Performance Evaluation System (PES) Policy)",
+            "text": "Commanders shall ensure that RSs, ROs, and SEAs have access to, and understand, all current PES directives."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 8, paragraph 4.c. (Unit Training)",
+            "text": "Commanders shall ensure that all MROs and reporting officials are knowledgeable of applicable provisions of the PES and will conduct appropriate training annually. Commanders shall consider the audience, timing, topic relationship."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 9, paragraph 5.d.(1) (Commanding Officers (COs))",
+            "text": "Annually educate individual Marines and reporting officials on the contents of this Order, and reinforce the concept that every Marine has a duty and a responsibility to periodically review their MBS and OMPF."
+          }
+        ],
+        "summary": "The command must conduct annual PES training for all RSs covering chapters 1, 2, 3, 4, and 8 of MCO 1610.7B, with focus on Section A, B, C verification, high mark and adverse justifications, and the Performance Anchored Rating Scale (PARS) marking philosophy."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Training Documentation",
+          "actions": [
+            "Ask for the unit's annual RS PES training records",
+            "Verify training occurred within the previous 12 months",
+            "Coverage required for all RSs in the command"
+          ],
+          "callout": "No annual RS PES training documentation",
+          "severity": "finding"
+        },
+        {
+          "step": "Review Training Content",
+          "actions": [
+            "Chapter 1 (Concepts and Overview)",
+            "Chapter 2 (Reporting Chain and Responsibilities)",
+            "Chapter 3 (Submission Requirements)",
+            "Chapter 4 (Fitness Report Preparation)",
+            "Chapter 8 (HQMC Functions)",
+            "Section A, B, C verification procedures",
+            "High mark justification requirements (A, F, G marks)",
+            "Adverse justification requirements",
+            "Performance Anchored Rating Scale (PARS)",
+            "Marking philosophy"
+          ],
+          "callout": "Training did not cover RS responsibilities",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Training Records Format",
+          "actions": [
+            "Sign-in rosters with names, ranks, and dates",
+            "Training agenda or lesson plan",
+            "Training materials used",
+            "Instructor identification"
+          ],
+          "callout": "RS training rosters incomplete",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Cross-Check Attendance",
+          "actions": [
+            "Pull list of all RSs in the command",
+            "Compare against training rosters",
+            "Verify makeup training conducted for absentees"
+          ],
+          "callout": "RSs missed without documented makeup",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Test RS Knowledge",
+          "actions": [
+            "Interview 3 to 5 RSs from various sections",
+            "Ask basic RS knowledge questions:",
+            "What are the requirements for justifying an F or G mark?",
+            "Walk me through how you verify Section A data.",
+            "Explain the PARS marking philosophy.",
+            "When is a mark considered adverse and what is required?"
+          ],
+          "callout": "RSs unable to demonstrate basic PES knowledge",
+          "severity": "finding"
+        },
+        {
+          "step": "Review Recent Reports for Compliance",
+          "actions": [
+            "Pull 3 to 5 recent fitness reports submitted by trained RSs",
+            "Verify Section A data accuracy",
+            "Check Section B and C compliance with format requirements",
+            "Verify high mark justifications meet the verifiable, substantive, quantifiable test"
+          ],
+          "callout": "Recent reports show RS noncompliance with PES policy",
+          "severity": "finding"
+        },
+        {
+          "step": "Review Training Frequency",
+          "actions": [
+            "Annual requirement at minimum",
+            "Verify date of last training"
+          ],
+          "callout": "No training documented",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No annual training conducted within previous 12 months",
+            "Training did not address PARS or marking philosophy",
+            "RSs unable to articulate high mark justification requirements",
+            "Section A, B, C verification procedures not covered",
+            "RSs producing reports with deficient justifications"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me documentation of your last annual RS training.",
+        "What chapters of MCO 1610.7B were covered?",
+        "How was PARS and marking philosophy addressed?",
+        "Pull a recent FITREP from one of your trained RSs and walk me through their justifications."
+      ],
+      "verification": [
+        "Annual RS training conducted within previous 12 months",
+        "Training covered Chapters 1, 2, 3, 4, and 8",
+        "Section A, B, C verification addressed",
+        "High mark justification requirements addressed",
+        "Adverse justification requirements addressed",
+        "PARS marking philosophy addressed",
+        "Training roster documents all attendees",
+        "Makeup training conducted for absentees",
+        "RSs demonstrate knowledge during interviews",
+        "Sample fitness reports show compliance with training content"
+      ],
+      "verified": true
+    },
+    "0103": {
+      "title": "ANNUAL RO EDUCATION ON PES PROVISIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1610.7B, Paragraph 4.b. (Subordinate Element Missions)",
+            "text": "Commanders and Officers-In-Charge (OICs) must ensure that all reporting officials and Marines (sergeants and above) under their charge are well versed in the spirit and intent of this Order."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 8, paragraph 4.a. (Performance Evaluation System (PES) Policy)",
+            "text": "Commanders shall ensure that RSs, ROs, and SEAs have access to, and understand, all current PES directives."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 8, paragraph 4.c. (Unit Training)",
+            "text": "Commanders shall ensure that all MROs and reporting officials are knowledgeable of applicable provisions of the PES and will conduct appropriate training annually."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 2, paragraph 4.b. (RO Role)",
+            "text": "As the critical link in the reporting chain and the key to the viability of the PES, ROs must provide the experienced leadership, supervision, and detached point of view necessary to ensure consistent, accurate, and unbiased evaluations. ROs ensure adherence to policy and, as the last officer/supervisor in the normal reporting chain, are responsible for all subordinate performance evaluation activities."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 9, paragraph 5.d.(1) (Commanding Officers (COs))",
+            "text": "Annually educate individual Marines and reporting officials on the contents of this Order, and reinforce the concept that every Marine has a duty and a responsibility to periodically review their MBS and OMPF."
+          }
+        ],
+        "summary": "The command must conduct annual PES training for all ROs covering chapters 1, 2, 3, 4, and 8, with focus on Section A through C supervision, Section D through H review of RS markings, high mark and adverse justification requirements, Section I review, and RO profile review."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Training Documentation",
+          "actions": [
+            "Ask for the unit's annual RO PES training records",
+            "Verify training occurred within the previous 12 months",
+            "Coverage required for all ROs in the command"
+          ],
+          "callout": "No annual RO PES training documentation",
+          "severity": "finding"
+        },
+        {
+          "step": "Review Training Content",
+          "actions": [
+            "Chapter 1 (Concepts and Overview)",
+            "Chapter 2 (Reporting Chain and Responsibilities)",
+            "Chapter 3 (Submission Requirements)",
+            "Chapter 4 (Fitness Report Preparation)",
+            "Chapter 8 (HQMC Functions)",
+            "Supervision of Section A through C verification",
+            "Review of RS markings in Sections D through H",
+            "High mark and adverse justification requirements",
+            "Section I review procedures",
+            "RO profile review"
+          ],
+          "callout": "Training did not cover RO-specific responsibilities",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Training Records Format",
+          "actions": [
+            "Sign-in rosters with names, ranks, and dates",
+            "Training agenda or lesson plan",
+            "Training materials used",
+            "Instructor identification"
+          ],
+          "callout": "RO training rosters incomplete",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Cross-Check Attendance",
+          "actions": [
+            "Pull list of all ROs in the command",
+            "Compare against training rosters",
+            "Verify makeup training conducted for absentees"
+          ],
+          "callout": "ROs missed without documented makeup",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Test RO Knowledge",
+          "actions": [
+            "Interview ROs from various sections",
+            "Ask RO knowledge questions:",
+            "What is your responsibility for reviewing Section A through C?",
+            "How do you scrutinize RS markings in Sections D through H?",
+            "When would you return a report to the RS?",
+            "How often do you review your RO profile?"
+          ],
+          "callout": "ROs unable to demonstrate basic PES knowledge",
+          "severity": "finding"
+        },
+        {
+          "step": "Review Recent Reports",
+          "actions": [
+            "Pull 3 to 5 recent reports reviewed by trained ROs",
+            "Verify RO certification accuracy",
+            "Check Section K comments for completeness",
+            "Identify any reports returned for correction"
+          ],
+          "callout": "Recent reports show RO noncompliance with PES policy",
+          "severity": "finding"
+        },
+        {
+          "step": "Review Training Frequency",
+          "actions": [
+            "Annual requirement at minimum"
+          ],
+          "callout": "No training documented",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No annual training conducted within previous 12 months",
+            "Training did not cover RO profile review",
+            "ROs unable to explain when to return a report",
+            "Section I review procedures not addressed",
+            "ROs not actively scrutinizing RS markings"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me documentation of your last annual RO training.",
+        "How do your ROs review their own profile?",
+        "Walk me through what an RO checks before signing Section K.",
+        "When was the last time an RO returned a report to an RS in your command?"
+      ],
+      "verification": [
+        "Annual RO training conducted within previous 12 months",
+        "Training covered Chapters 1, 2, 3, 4, and 8",
+        "Section A through C supervision addressed",
+        "Section D through H review procedures addressed",
+        "High mark and adverse justification requirements addressed",
+        "Section I review addressed",
+        "RO profile review addressed",
+        "Training roster documents all attendees",
+        "Makeup training conducted for absentees",
+        "ROs demonstrate knowledge during interviews"
+      ],
+      "verified": true
+    },
+    "0104": {
+      "title": "ANNUAL ADVERSE REPORT PROCEDURES TRAINING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1610.7B, Paragraph 4.b. (Subordinate Element Missions)",
+            "text": "Commanders and Officers-In-Charge (OICs) must ensure that all reporting officials and Marines (sergeants and above) under their charge are well versed in the spirit and intent of this Order."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 5, paragraph 1.a. (Adverse Reports)",
+            "text": "Reporting officials must accurately document substandard performance or adjudicated misconduct via adverse fitness reports to ensure that future selection boards only select the most qualified Marines. Reporting officials must demonstrate courage, resolve, and attention to detail in order to timely and accurately complete adverse reports. Most reporting officials write very few adverse fitness reports. It is crucial that all reporting officials, but especially those who have little or no experience writing adverse fitness reports, review this chapter in its entirety to ensure the accurate completion of adverse reports. Prior to preparing an adverse report, the RS, RO and 3OS should review this chapter to ensure that they understand the definitions, responsibilities, and process contained herein."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 8, paragraph 4.c. (Unit Training)",
+            "text": "Commanders shall ensure that all MROs and reporting officials are knowledgeable of applicable provisions of the PES and will conduct appropriate training annually."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 9, paragraph 5.d.(1) (Commanding Officers (COs))",
+            "text": "Annually educate individual Marines and reporting officials on the contents of this Order."
+          }
+        ],
+        "summary": "The command must conduct annual training for all reporting officials covering Chapter 5 of MCO 1610.7B in its entirety."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Training Documentation",
+          "actions": [
+            "Ask for the unit's annual adverse report training records",
+            "Verify training occurred within the previous 12 months",
+            "Coverage required for all reporting officials (RSs, ROs, 3OSs)"
+          ],
+          "callout": "No annual adverse report procedures training documentation",
+          "severity": "finding"
+        },
+        {
+          "step": "Review Training Content",
+          "actions": [
+            "Adverse Reports definition and overview",
+            "Governing Regulations",
+            "Definitions of adversity, derogatory material, disciplinary action",
+            "Adverse Report Process",
+            "Timing of Reporting Adversity",
+            "RS Responsibilities and Instructions",
+            "RO Responsibilities and Instructions",
+            "3OS Responsibilities and Instructions",
+            "MRO Responsibilities and Instructions",
+            "Adverse Specific Directed Comments"
+          ],
+          "callout": "Training did not cover Chapter 5 adverse report procedures",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Training Records Format",
+          "actions": [
+            "Sign-in rosters with names, ranks, and dates",
+            "Training agenda or lesson plan",
+            "Training materials used",
+            "Instructor identification"
+          ],
+          "callout": "Training records incomplete",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Cross-Check Attendance",
+          "actions": [
+            "Pull list of all RSs, ROs, and 3OSs in the command",
+            "Compare against training rosters",
+            "Verify makeup training conducted for absentees"
+          ],
+          "callout": "Reporting officials missed without makeup",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Test Reporting Official Knowledge",
+          "actions": [
+            "Interview reporting officials",
+            "Ask adverse report knowledge questions:",
+            "What is the definition of adversity?",
+            "What are the differences between derogatory material and disciplinary action?",
+            "What is the timing requirement for an adverse report?",
+            "What is the role of the 3OS in an adverse report?",
+            "What are the directed comment requirements for adverse markings?"
+          ],
+          "callout": "Reporting officials unable to articulate adverse report procedures",
+          "severity": "finding"
+        },
+        {
+          "step": "Review Recent Adverse Reports",
+          "actions": [
+            "If any adverse reports were processed, review them",
+            "Verify compliance with Chapter 5 procedures",
+            "Check for required directed comments",
+            "Verify routing chain followed"
+          ],
+          "callout": "Recent adverse reports show procedural failures",
+          "severity": "finding"
+        },
+        {
+          "step": "Review Training Frequency",
+          "actions": [
+            "Annual requirement at minimum"
+          ],
+          "callout": "No training documented",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No annual adverse report training conducted within previous 12 months",
+            "Training did not cover Chapter 5 in its entirety",
+            "Reporting officials unable to define adversity",
+            "Inexperienced reporting officials not given priority training",
+            "Directed comment requirements not addressed"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me documentation of your last annual adverse report training.",
+        "How do you ensure inexperienced reporting officials understand Chapter 5?",
+        "What is the difference between derogatory material and disciplinary action?",
+        "Walk me through the routing process for an adverse report."
+      ],
+      "verification": [
+        "Annual adverse report training conducted within previous 12 months",
+        "Training covered all of Chapter 5",
+        "Definitions of adversity, derogatory material, and disciplinary action addressed",
+        "RS, RO, 3OS, and MRO responsibilities addressed",
+        "Adverse Specific Directed Comments addressed",
+        "Training roster documents all reporting officials",
+        "Makeup training conducted for absentees",
+        "Reporting officials demonstrate knowledge during interviews"
+      ],
+      "verified": true
+    },
+    "0105": {
+      "title": "DC AND GC REPORTS FOR NJP AND COURT-MARTIAL ACTIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1610.7B, Chapter 3, paragraph 4.a. (Grade Change (GC))",
+            "text": "Submit a GC report when a Marine is promoted, frocked, reverted to enlisted grade, or reduced. (1) The ending date of the report is the actual day the action occurs, not the date of rank recorded for pay and lineal purposes. (2) Submit a GC report for grade reductions resulting from Non-Judicial Punishment (NJP). The ending date of the report is the date the NJP occurred. However, reporting officials will not submit the report in APES until the appeal process is complete. (3) Submit a report for grade reductions resulting from summary, special, or general court-martial action when the Convening Authority (CA) approves the sentence or when automatic reduction provisions set forth in reference (h) are effected."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 3, paragraph 4.b. (Directed by the Commandant of the Marine Corps (DC))",
+            "text": "Submit a DC report when significant administrative, commendatory, or adverse action by the MRO occurs that requires immediate reporting to CMC. Additionally, HQMC will use DC reports for administrative fillers to remove date gaps from a Marine's records. (1) The report must cover the period from the end date of the MRO's last report to the date the action occurred. (2) The RS must consider the entire evaluation period when preparing the report, not just the action that caused the report."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 5, paragraph 3.e.(4) (Disciplinary Action)",
+            "text": "Report all disciplinary action via a GC or DC report per the provisions of chapter 3, paragraph 4b and this chapter."
+          }
+        ],
+        "summary": "The command must submit a GC or DC report for every Marine subject to NJP, court-martial, or other significant adverse action requiring immediate reporting to CMC."
+      },
+      "howToInspect": [
+        {
+          "step": "Request NJP and Court-Martial Files",
+          "actions": [
+            "Obtain the command's NJP records for the previous 12 months",
+            "Obtain the command's court-martial records for the previous 12 months",
+            "Request a letter from the SJA if no records exist"
+          ],
+          "callout": "NJP or court-martial files not provided for cross-check",
+          "severity": "finding"
+        },
+        {
+          "step": "Pull the Fitness Report Inventory",
+          "actions": [
+            "Access MOL under Resources, APES, MMRP",
+            "Pull the Fitness Report Inventory for the command",
+            "Ensure inventory covers the same 12-month period"
+          ]
+        },
+        {
+          "step": "Compare Records Against Fitness Reports",
+          "actions": [
+            "For each Marine with NJP: verify a GC or DC report was submitted",
+            "For each Marine with court-martial action: verify a GC or DC report was submitted",
+            "Ending date of report must match the date of the NJP or CA approval",
+            "Confirm reports were not submitted until appeal process complete"
+          ],
+          "callout": "DC or GC report not on file for NJP or court-martial action",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Report Type Accuracy",
+          "actions": [
+            "Report submitted as GC",
+            "Ending date matches NJP date",
+            "Submission delayed until appeal process complete",
+            "For NJP without grade reduction: Report submitted as DC, ending date matches NJP date",
+            "For court-martial with grade reduction: Report submitted as GC, submitted after CA approval or automatic reduction effected",
+            "For other significant adverse action: Report submitted as DC, period covers from end of last report to date of action"
+          ],
+          "callout": "Report type incorrect (DC vs GC mismatch)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Review Section I Comments",
+          "actions": [
+            "DC reports must begin Section I with reason for submission",
+            "Verify directed comments are present per Chapter 5"
+          ],
+          "callout": "Section I comments inadequate for adverse basis",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Identify Missing Reports",
+          "actions": [
+            "List any Marines with NJP or court-martial action but no corresponding GC or DC report",
+            "This is a FINDING"
+          ],
+          "callout": "Missing reports identified but not addressed",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missing DC or GC reports for Marines with NJP",
+            "Missing GC reports for grade reductions",
+            "Reports submitted with incorrect ending dates",
+            "Reports submitted before appeal process complete",
+            "DC reports missing reason for submission in Section I",
+            "No SJA letter when no NJP or court-martial records exist"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your NJP and court-martial records for the past 12 months.",
+        "If you have no records, where is the SJA letter confirming none exist?",
+        "Pull the Fitness Report Inventory and walk me through how you reconcile NJP records against submitted reports.",
+        "For this Marine who received NJP, show me the GC or DC report submitted."
+      ],
+      "verification": [
+        "NJP records reviewed for previous 12 months",
+        "Court-martial records reviewed for previous 12 months",
+        "SJA letter on file if no records exist",
+        "Fitness Report Inventory pulled and compared",
+        "All NJP grade reductions have corresponding GC reports",
+        "All court-martial grade reductions have corresponding GC reports",
+        "All other adverse actions have corresponding DC reports",
+        "Report ending dates match action dates",
+        "Reports submitted only after appeal process complete",
+        "Section I comments include reason for DC submission"
+      ],
+      "verified": true
+    },
+    "0106": {
+      "title": "QUARTERLY CTR MAINTENANCE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1610.7B, Chapter 9, paragraph 5.f.(1) (Commander's Timeliness Report (CTR))",
+            "text": "This report provides commanders with specific information on the status of all fitness reports within their unit, sorted by reporting official. Note: If the MRO forwards a completed MROW to the RS, the fitness report will not display on this report until the RS starts the fitness report. Commands shall request the CTR at least quarterly, and shall maintain the reports on file for a minimum of 12 months. The CTR can be requested from the CMC (MMRP-31) by email at smb.manpower.mmrp-31@usmc.mil."
+          }
+        ],
+        "summary": "The command must request the CTR at least quarterly and maintain copies on file for a minimum of 12 months."
+      },
+      "howToInspect": [
+        {
+          "step": "Request CTR Files",
+          "actions": [
+            "Ask the command to produce CTRs for the previous 12 months",
+            "Accept either digital or hard copy"
+          ],
+          "callout": "No quarterly CTR maintenance documented",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Quarterly Frequency",
+          "actions": [
+            "Verify a minimum of 4 CTRs are on file (one per quarter)",
+            "Check the request dates on each CTR",
+            "Quarters should be approximately evenly spaced"
+          ],
+          "callout": "Quarterly frequency not maintained (gaps exceeding 90 days)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Coverage Period",
+          "actions": [
+            "12 months of coverage required",
+            "All four quarters represented"
+          ],
+          "callout": "CTR coverage period incomplete",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Source Authentication",
+          "actions": [
+            "CTRs must come from CMC (MMRP-31) via the organizational email",
+            "Verify the email address: smb.manpower.mmrp-31@usmc.mil"
+          ],
+          "callout": "CTR source not authentic (not from MOL)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Storage and Accessibility",
+          "actions": [
+            "CTRs must be readily accessible",
+            "Filed in a logical organization",
+            "Personnel know where to locate them"
+          ],
+          "callout": "CTR files not stored or accessible",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Fewer than 4 CTRs on file for the past 12 months",
+            "CTRs missing for one or more quarters",
+            "CTRs not requested via the proper organizational email",
+            "CTRs unavailable or unable to be produced upon request",
+            "Gaps in CTR coverage exceeding 90 days"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your CTRs for the past 12 months.",
+        "When was the last CTR requested and from whom?",
+        "Who in the command is responsible for requesting the CTR each quarter?",
+        "How are CTRs filed and accessed?"
+      ],
+      "verification": [
+        "Minimum of 4 CTRs on file covering previous 12 months",
+        "CTRs requested at least quarterly",
+        "CTRs requested from CMC (MMRP-31)",
+        "Email address used: smb.manpower.mmrp-31@usmc.mil",
+        "CTRs include RUC and MCC of the command",
+        "CTRs maintained in digital or hard copy format",
+        "CTRs readily accessible for review"
+      ],
+      "verified": true
+    },
+    "0107": {
+      "title": "CTR USAGE TO REDUCE LATE AND OUTSTANDING REPORTS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1610.7B, Chapter 1, paragraph 3.c. (Timely Receipt)",
+            "text": "Timely receipt of fitness reports by HQMC ensures complete and accurate updates of Marines' OMPFs. Fitness reports are due within 30 days of the end of the reporting period for normal reports or 60 days for adverse reports. As a leadership responsibility, reporting officials and commanders must ensure timely submission of fitness reports. For late reports, see chapter 8, paragraph 12."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 9, paragraph 5.d.(7) (Commanding Officers)",
+            "text": "Notify non-complaint subordinate reporting officials of their delinquency and enforce compliance with this order. Notification in and of itself does not absolve the commander of the responsibility to ensure that non-complaint reporting officials gain compliance. Commanders shall take action to reduce the number of delinquent fitness reports and record discrepancies of Marines within their command."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 9, paragraph 5.f.(1) (Commander's Timeliness Report (CTR))",
+            "text": "This report provides commanders with specific information on the status of all fitness reports within their unit, sorted by reporting official."
+          }
+        ],
+        "summary": "The commander must use the CTR to identify delinquent reporting officials, enforce compliance, and reduce the number of late and outstanding fitness reports."
+      },
+      "howToInspect": [
+        {
+          "step": "Review Recent CTRs",
+          "actions": [
+            "Pull the most recent CTR",
+            "Identify reporting officials with late or outstanding reports",
+            "Note the trend across the previous 4 quarters"
+          ]
+        },
+        {
+          "step": "Request Documentation of Action",
+          "actions": [
+            "Ask for evidence of commander action on delinquent reports",
+            "Look for written notifications, emails, counseling records",
+            "Check for tracking documents"
+          ],
+          "callout": "No documented action taken on CTR findings",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Trend Analysis",
+          "actions": [
+            "Compare CTRs across the previous 12 months",
+            "Late report counts stable or trending up: DISCREPANCY potential"
+          ],
+          "callout": "No trend analysis across CTRs",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Identify Delinquent Reporting Officials",
+          "actions": [
+            "List any reporting officials with chronic late submissions",
+            "Verify commander has notified and counseled these officials"
+          ],
+          "callout": "Delinquent reporting officials not addressed",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Submission Standards",
+          "actions": [
+            "Normal reports: due within 30 days of end of reporting period",
+            "Adverse reports: due within 60 days of end of reporting period",
+            "Identify any submitted outside these windows"
+          ],
+          "callout": "Submission standards not enforced",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Review Commander Engagement",
+          "actions": [
+            "Has the commander reviewed each CTR personally?",
+            "Is there a tracking system for outstanding reports?",
+            "Are corrective actions documented?"
+          ],
+          "callout": "Commander not engaged in CTR review",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CTRs received but no documented action taken",
+            "Chronic late reporting officials not counseled or corrected",
+            "Late report numbers stable or increasing",
+            "No tracking system for outstanding reports",
+            "Commander not personally reviewing CTRs"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the trend of late reports over the past 4 quarters.",
+        "When was the last time the commander reviewed a CTR?",
+        "Show me documentation of action taken against a delinquent reporting official.",
+        "How do you track outstanding reports between CTR pulls?"
+      ],
+      "verification": [
+        "Commander reviews each CTR",
+        "Late and outstanding reports identified from CTR",
+        "Delinquent reporting officials notified",
+        "Documented corrective action taken",
+        "Tracking system in place for outstanding reports",
+        "Late report trend stable or decreasing",
+        "Normal reports submitted within 30 days",
+        "Adverse reports submitted within 60 days"
+      ],
+      "verified": true
+    },
+    "0108": {
+      "title": "QUARTERLY MISSING LAST ANNUAL REPORT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1610.7B, Chapter 9, paragraph 5.f.(3) (Missing Last Annual)",
+            "text": "This report displays all Marines who have not received a fitness report more than 89 days before an annual fitness is due for their grade. This report is generated either for an entire RUC or for an individual Marine. Commands shall pull the Missing Last Annual report at least quarterly, and shall maintain the reports on file for a minimum of 12 months."
+          }
+        ],
+        "summary": "The command must pull the Missing Last Annual report at least quarterly and maintain copies on file for a minimum of 12 months."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Missing Last Annual Files",
+          "actions": [
+            "Ask the command to produce Missing Last Annual reports for the previous 12 months",
+            "Accept digital or hard copy"
+          ],
+          "callout": "No quarterly Missing Last Annual Report maintenance",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Quarterly Frequency",
+          "actions": [
+            "Minimum 4 reports on file (one per quarter)",
+            "Check pull dates on each report",
+            "Quarters should be approximately evenly spaced"
+          ],
+          "callout": "Quarterly frequency not maintained",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Coverage",
+          "actions": [
+            "Pulled by RUC/MCC",
+            "Pulled by grade for all E-5 through O-6",
+            "12 months of coverage represented"
+          ],
+          "callout": "Coverage incomplete",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Source",
+          "actions": [
+            "Reports must come from MOL under Resources, APES, MMRP web tool",
+            "Verify reports identify Marines more than 89 days before annual due date"
+          ],
+          "callout": "Source not authentic",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Storage and Accessibility",
+          "actions": [
+            "Reports filed in logical organization",
+            "Readily accessible",
+            "Personnel know where to locate them"
+          ],
+          "callout": "Files not stored or accessible",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Fewer than 4 reports on file for the past 12 months",
+            "Reports missing for one or more quarters",
+            "Reports not pulled by all required grades (E-5 through O-6)",
+            "Reports unavailable upon request",
+            "Reports pulled less frequently than quarterly"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your Missing Last Annual reports for the past 12 months.",
+        "Were these pulled by RUC/MCC for all grades E-5 through O-6?",
+        "Who is responsible for pulling these each quarter?",
+        "How are these filed and accessed?"
+      ],
+      "verification": [
+        "Minimum of 4 Missing Last Annual reports on file",
+        "Reports cover previous 12 months",
+        "Reports pulled at least quarterly",
+        "Reports pulled by RUC/MCC",
+        "Reports cover all grades E-5 through O-6",
+        "Reports sourced from MOL APES MMRP web tool",
+        "Reports maintained in digital or hard copy format",
+        "Reports readily accessible for review"
+      ],
+      "verified": true
+    },
+    "0109": {
+      "title": "QUARTERLY DATE GAP QUERY REPORT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1610.7B, Chapter 9, paragraph 5.f.(4) (Date Gap Query)",
+            "text": "This report shows any Marine within a given RUC who has a date gap of more than 30 days. Commands shall pull the Date Gap Query report at least quarterly, and shall maintain the reports on file for a minimum of 12 months."
+          }
+        ],
+        "summary": "The command must pull the Date Gap Query report at least quarterly and maintain copies on file for a minimum of 12 months."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Date Gap Query Files",
+          "actions": [
+            "Ask the command to produce Date Gap Query reports for the previous 12 months",
+            "Accept digital or hard copy"
+          ],
+          "callout": "No quarterly Date Gap Query Report maintenance",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Quarterly Frequency",
+          "actions": [
+            "Minimum 4 reports on file (one per quarter)",
+            "Check pull dates",
+            "Quarters approximately evenly spaced"
+          ],
+          "callout": "Quarterly frequency not maintained",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Coverage",
+          "actions": [
+            "Reports pulled by RUC",
+            "12 months of coverage represented"
+          ],
+          "callout": "Coverage incomplete",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Source",
+          "actions": [
+            "Reports must come from MOL under Resources, APES, MMRP web tool",
+            "Reports identify Marines with date gaps more than 30 days"
+          ],
+          "callout": "Source not authentic",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Storage and Accessibility",
+          "actions": [
+            "Reports filed in logical organization",
+            "Readily accessible"
+          ],
+          "callout": "Files not stored or accessible",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Fewer than 4 reports on file",
+            "Reports missing for one or more quarters",
+            "Reports not pulled by RUC",
+            "Reports unavailable upon request",
+            "Reports pulled less frequently than quarterly"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your Date Gap Query reports for the past 12 months.",
+        "Who is responsible for pulling these each quarter?",
+        "What do you do when you find a date gap?"
+      ],
+      "verification": [
+        "Minimum of 4 Date Gap Query reports on file",
+        "Reports cover previous 12 months",
+        "Reports pulled at least quarterly",
+        "Reports pulled by RUC",
+        "Reports sourced from MOL APES MMRP web tool",
+        "Reports maintained in digital or hard copy format",
+        "Reports readily accessible for review"
+      ],
+      "verified": true
+    },
+    "0110": {
+      "title": "PROACTIVE EFFORTS ON RECORD DISCREPANCIES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1610.7B, Chapter 9, paragraph 5.a.(1)",
+            "text": "The parent command for Active Component and SMCR Marines will assist these individuals in auditing and correcting their performance records."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 9, paragraph 5.d.(1) (Commanding Officers (COs))",
+            "text": "Annually educate individual Marines and reporting officials on the contents of this Order, and reinforce the concept that every Marine has a duty and a responsibility to periodically review their MBS and OMPF."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 9, paragraph 5.d.(2)",
+            "text": "Assist the MRO's efforts to locate his or her reporting officials to seek missing fitness reports and for administrative corrections. Request assistance from the CMC (MMRP-31) if reporting officials do not respond within 30 days."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 9, paragraph 5.d.(3)",
+            "text": "Correct header data on the MBS as required."
+          },
+          {
+            "citation": "MCO 1610.7B, Chapter 9, paragraph 5.d.(7)",
+            "text": "Notify non-complaint subordinate reporting officials of their delinquency and enforce compliance with this order. Notification in and of itself does not absolve the commander of the responsibility to ensure that non-complaint reporting officials gain compliance. Commanders shall take action to reduce the number of delinquent fitness reports and record discrepancies of Marines within their command."
+          }
+        ],
+        "summary": "The command must take proactive action on identified record discrepancies, including notifying affected Marines, assisting with locating reporting officials, and processing administrative corrections."
+      },
+      "howToInspect": [
+        {
+          "step": "Review Missing Last Annual and Date Gap Reports",
+          "actions": [
+            "Pull the previous 4 quarters of reports",
+            "Identify Marines with discrepancies on each report"
+          ]
+        },
+        {
+          "step": "Track Discrepancy Resolution",
+          "actions": [
+            "Compare discrepancies across consecutive quarterly reports",
+            "Identify Marines whose discrepancies were resolved",
+            "Identify Marines whose discrepancies persist"
+          ],
+          "callout": "Identified record discrepancies not tracked to resolution",
+          "severity": "finding"
+        },
+        {
+          "step": "Request Documentation of Action",
+          "actions": [
+            "Ask for evidence of notification to affected Marines",
+            "Look for emails, counseling records, correction request letters",
+            "Check for endorsements per Chapter 8, paragraph 10a"
+          ],
+          "callout": "No documentation of corrective action",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Specific Corrective Actions",
+          "actions": [
+            "Date gap corrections submitted to MMRP-31",
+            "Overlap corrections submitted to MMRP-31",
+            "Occasion code corrections submitted to MMRP-31",
+            "Missing fitness report retrieval efforts documented"
+          ],
+          "callout": "Corrective actions not specific or not implemented",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Test for Proactive vs Reactive Response",
+          "actions": [
+            "Are discrepancies addressed within the same quarter identified?",
+            "Or do they linger across multiple quarters?"
+          ],
+          "callout": "Reactive (not proactive) response pattern observed",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Review Marine Notification Process",
+          "actions": [
+            "Verify Marines are informed of their discrepancies",
+            "Check whether the command provides instructions for self-correction",
+            "Verify the command actively assists rather than placing burden solely on Marine"
+          ],
+          "callout": "No Marine notification process documented",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Identified record discrepancies persist across multiple quarters",
+            "No documentation of notification to affected Marines",
+            "No documentation of corrective action initiated",
+            "Marines unaware of their record discrepancies",
+            "Command treats discrepancies as Marine's sole responsibility"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Pull the date gap report from 2 quarters ago and show me which discrepancies were resolved.",
+        "For this Marine identified with a date gap, show me what action was taken.",
+        "How do you notify Marines of their record discrepancies?",
+        "Walk me through your process for correcting an occasion code error."
+      ],
+      "verification": [
+        "Quarterly reviews of Missing Last Annual and Date Gap reports conducted",
+        "Documentation of notification to affected Marines",
+        "Documentation of corrective action initiated",
+        "Date gap corrections processed",
+        "Overlap corrections processed",
+        "Occasion code corrections processed",
+        "Discrepancy trends show improvement quarter over quarter",
+        "Command actively assists Marines rather than passing responsibility"
+      ],
+      "verified": true
+    },
+    "0111": {
+      "title": "FITNESS REPORT INVENTORY RECORD LOG",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1610.7B, Chapter 9, paragraph 5.f.(2) (Fitness Report Inventory (Check Your Fitness Report Status))",
+            "text": "This report displays all fitness reports received by an individual Marine and highlights any date gaps and overlapping reporting periods. Commands shall pull the individual fitness report inventory for every E-5 through O-5 during the PCS/PCA check-in process. Commands must maintain a record log annotating which Marine the report was pulled for, and the date it was pulled. Additionally, the record log shall be maintained for a minimum of 12 months. In lieu of a separate tracking database, commands may use check-in sheets as the record log, provided that the check-in sheet has a designated spot for, 'Fitness Report Inventory.'"
+          }
+        ],
+        "summary": "The command must pull the individual Fitness Report Inventory for every E-5 through O-5 during PCS/PCA check-in and maintain a record log for a minimum of 12 months."
+      },
+      "howToInspect": [
+        {
+          "step": "Request the Record Log",
+          "actions": [
+            "Ask for the Fitness Report Inventory record log",
+            "Accept formats: Excel spreadsheet, logbook, check-in sheet with designated spot, or other tracking database"
+          ],
+          "callout": "No fitness report inventory record log",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Required Fields",
+          "actions": [
+            "Marine name",
+            "Date the inventory was pulled",
+            "Identification of who conducted the pull"
+          ],
+          "callout": "Required log fields missing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Cross-Check Against Check-In Roster",
+          "actions": [
+            "Pull the command's check-in roster for the previous 12 months",
+            "Filter for E-5 through O-5",
+            "Verify each Marine on the check-in roster appears in the record log"
+          ],
+          "callout": "Log not reconciled with check-in roster",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Coverage Period",
+          "actions": [
+            "12 months of coverage required",
+            "All Marines who checked in within the previous 12 months represented"
+          ],
+          "callout": "Coverage period incomplete",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Inventory Was Actually Pulled",
+          "actions": [
+            "Spot check 5 to 10 entries",
+            "Ask to see the actual Fitness Report Inventory for those Marines",
+            "Verify the inventory matches the record log entry"
+          ],
+          "callout": "Inventory not actually pulled (placeholder entries)",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Check-In Sheet Format Option",
+          "actions": [
+            "If using check-in sheets, verify a designated 'Fitness Report Inventory' spot exists",
+            "Verify the spot is being filled in for every E-5 through O-5 check-in"
+          ]
+        },
+        {
+          "step": "Identify Missing Entries",
+          "actions": [
+            "List any E-5 through O-5 who checked in within the past 12 months but is missing from the record log",
+            "Each missing entry is a DISCREPANCY"
+          ],
+          "callout": "Missing entries identified but not addressed",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Record log incomplete or missing entries",
+            "Record log does not cover the full 12 months",
+            "E-5 through O-5 check-ins not consistently logged",
+            "Check-in sheets used but no designated 'Fitness Report Inventory' spot",
+            "Record log entries exist but actual inventories cannot be produced",
+            "No tracking system in place"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your Fitness Report Inventory record log.",
+        "Pull your check-in roster for the past 12 months and let me cross-reference.",
+        "Who is responsible for pulling the inventory at check-in?",
+        "Show me the actual Fitness Report Inventory pulled for this Marine on this date."
+      ],
+      "verification": [
+        "Record log exists in acceptable format",
+        "Log covers previous 12 months",
+        "Log includes Marine name",
+        "Log includes date inventory was pulled",
+        "All E-5 through O-5 check-ins documented",
+        "Check-in sheets (if used) have designated Fitness Report Inventory spot",
+        "Spot checks confirm actual inventories were pulled",
+        "Log maintained and readily accessible"
+      ],
+      "verified": true
+    },
+    "0201": {
+      "title": "REPORTING CHAIN ESTABLISHMENT WITHIN 30 DAYS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1616.1, Chapter 1, paragraph 6.a (Marine Reported On (MRO) Checks in to Unit)",
+            "text": "The evaluation cycle begins when the MRO checks into a new unit. The MRO is assigned a reporting chain appropriate to the unit type via permissions management by the battalion and company administrative chiefs. This reporting chain must include an Approver and one other reporting chain role at a minimum."
+          },
+          {
+            "citation": "MCO 1616.1, Chapter 1, paragraph 6.b (MRO's First Line Supervisor Conducts Initial Counseling)",
+            "text": "Once the MRO has an established reporting chain, the FLS or first leader in the MRO's reporting chain will conduct an initial written counseling within 30 days with the MRO and establish billet expectations."
+          },
+          {
+            "citation": "MCO 1616.1, Chapter 2, paragraph 1.b.(1) (First Line Supervisor (FLS))",
+            "text": "Provide the MRO an initial written counseling within 30 days of the relationship being established, defining the MRO's billet description, role in the unit, responsibilities, and performance expectations."
+          }
+        ],
+        "summary": "The reporting chain must be established at check-in with a minimum of an Approver plus one other reporting chain role, and the initial counseling must occur within 30 days of the relationship being established."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull the Unit Check-In Roster",
+          "actions": [
+            "Request a roster of all E-1 through E-4 Marines who checked in within the previous 12 months",
+            "Note the check-in date for each Marine"
+          ]
+        },
+        {
+          "step": "Pull JEPES Reporting Chain Data",
+          "actions": [
+            "Access JEPES through MOL",
+            "Pull reporting chain status for each E-1 through E-4 Marine",
+            "Verify each Marine has a reporting chain assigned"
+          ],
+          "callout": "JEPES reporting chain not established within 30 days for sampled Marine",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Minimum Reporting Chain Composition",
+          "actions": [
+            "Each MRO must have at least an Approver",
+            "Each MRO must have at least one other reporting chain role (FLS, Evaluator, Reviewer)"
+          ],
+          "callout": "Minimum reporting chain composition not met",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify 30-Day Counseling Compliance",
+          "actions": [
+            "For each Marine, identify date reporting chain was established",
+            "Verify documented written counseling occurred within 30 days",
+            "Spot check 5 to 10 Marines for written counseling records"
+          ],
+          "callout": "30-day counseling compliance not met",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Inspect JEPES System Labeling",
+          "actions": [
+            "Identify any reporting chain roles showing as 'unassigned' in JEPES",
+            "Verify intentionally omitted roles are marked 'N/A' rather than 'unassigned'",
+            "This is a system administration check, not a regulatory citation",
+            "Discuss with command admin chief and MOL manager"
+          ],
+          "callout": "JEPES system labeling shows omitted roles as unassigned (should be N/A)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Cross-Reference MOL Manager Action",
+          "actions": [
+            "Verify battalion and company administrative chiefs have made permissions assignments",
+            "Check timeliness of assignments after check-in"
+          ],
+          "callout": "MOL Manager action not documented",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Marines without complete reporting chains",
+            "Reporting chains lacking Approver",
+            "Reporting chains with only an Approver and no other role",
+            "Initial counseling not documented within 30 days",
+            "Roles left as 'unassigned' in JEPES instead of marked 'N/A'"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your check-in roster for the past 12 months.",
+        "Pull JEPES and walk me through this Marine's reporting chain.",
+        "Where is the documented initial counseling for this Marine?",
+        "Show me how omitted roles are labeled in JEPES for this Marine.",
+        "Who is your MOL manager and how do they assign reporting chains?"
+      ],
+      "verification": [
+        "All E-1 through E-4 check-ins identified for previous 12 months",
+        "Reporting chain assigned for every E-1 through E-4",
+        "Each reporting chain includes an Approver",
+        "Each reporting chain includes at least one other role",
+        "Initial counseling conducted within 30 days",
+        "Initial counseling documented in writing",
+        "MOL manager assignments documented",
+        "Omitted roles marked 'N/A' in JEPES, not left as 'unassigned'"
+      ],
+      "verified": true
+    },
+    "0202": {
+      "title": "JEPES OCCASION TYPES AND EFFECTIVE DATES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1616.1, Chapter 2, paragraph 2.a (Reporting Occasions)",
+            "text": "All Marines fall under the JEPES for performance evaluation from the time they enter Recruit Training until they attain the rank of sergeant. Understanding and adherence to the JEPES reporting occasions ensures that there are no gaps in a Marine's record. JEPES facilitates this by auto-preparing Semi-Annual and Annual JEPES worksheets and notifying the reporting chain of upcoming occasions and due dates. However, timely completion of reports is ultimately the responsibility of the O-5 level commander."
+          },
+          {
+            "citation": "MCO 1616.1, Chapter 2, paragraph 2.b",
+            "text": "Below are the JEPES reporting occasions, their associated 'TO' dates, and other pertinent information. Unless noted otherwise, the 'FROM' date will always be the day following the last day of the previous occasion. In the event that two or more occasions occur at the same time, the higher occasion on the list will be utilized."
+          }
+        ],
+        "summary": "PR (Promotion): Complete an evaluation when the MRO is promoted to the rank of Corporal or Sergeant. TO DATE: The day prior to the MRO's new date of rank. Promotion to PFC and LCpl do not qualify as a reporting occasion. TR (Transfer): Complete an evaluation when an MRO is transferred externally to another RUC/MCC or temporary RUC/MCC. TO DATE: The MRO's date of transfer. CD (Change of Primary Duty): Complete when MRO has a significant change of duty. TO DATE: Date prior to the date of change of duty. TD (To TAD): Complete when MRO is going TAD for more than 30 days. TO DATE: The MRO's date of departure to TAD. TC (TAD Complete): Complete when MRO returns from TAD of more than 30 Days. TO DATE: The MRO's date of departure from TAD site. AN (Annual): For Reserve Component Marines. FROM DATE: 1 January. TO DATE: 31 December. SA (Semi-Annual): Every six months. FROM DATE: 1 February/1 August. TO DATE: 31 July/31 January. AT (Completion of Annual Training): For Reserve Component. FROM DATE: First day of annual training. TO DATE: Last day of annual training. DC (Discharge): TO DATE: Day before discharge. RD (Reduction): TO DATE: Last day at previous rank. DD (Declared Deserter): TO DATE: First day Marine in Deserter Status. RT (Active Duty Operational Support): FROM DATE: First day of ADOS. END DATE: Last day of ADOS. The unit must use the correct occasion code for each reporting event and apply the correct FROM and TO dates per Chapter 2, paragraph 2."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Recent JEPES Worksheets",
+          "actions": [
+            "Access JEPES through MOL",
+            "Pull a sample of 10 to 15 completed worksheets from the previous 6 months",
+            "Include a mix of occasion types"
+          ]
+        },
+        {
+          "step": "Verify Occasion Code Accuracy",
+          "actions": [
+            "PR for promotions to Corporal or Sergeant only",
+            "TR for transfers to another RUC/MCC",
+            "CD for significant change of primary duty",
+            "TD for TAD over 30 days",
+            "TC for return from TAD over 30 days",
+            "AN for Reserve Component annual",
+            "SA for active duty semi-annual",
+            "AT for Reserve Component annual training completion",
+            "DC for discharges",
+            "RD for reductions in rank",
+            "DD for declared deserter",
+            "RT for ADOS completion"
+          ],
+          "callout": "Wrong JEPES occasion code used",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify TO Date Accuracy",
+          "actions": [
+            "PR: day prior to new date of rank",
+            "TR: date of transfer",
+            "CD: date prior to change of duty",
+            "TD: date of departure to TAD",
+            "TC: date of departure from TAD site",
+            "AN: 31 December",
+            "SA: 31 July or 31 January",
+            "DC: day before discharge",
+            "RD: last day at previous rank"
+          ],
+          "callout": "TO date inaccurate on sampled worksheet",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify FROM Date Logic",
+          "actions": [
+            "FROM date is day following last day of previous occasion (unless specified otherwise)",
+            "AN: 1 January",
+            "SA: 1 February or 1 August",
+            "Verify no date gaps between consecutive occasions"
+          ],
+          "callout": "FROM date logic incorrect",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Identify Higher Occasion Conflicts",
+          "actions": [
+            "When two occasions overlap, the higher on the list takes precedence",
+            "Verify command applied this rule correctly"
+          ],
+          "callout": "Higher occasion conflict not resolved",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Identify Improper Use of PR Occasion",
+          "actions": [
+            "PR is only for promotion to Corporal or Sergeant",
+            "Promotions to PFC or LCpl are NOT reporting occasions",
+            "Flag any PR occasions for PFC or LCpl"
+          ],
+          "callout": "PR occasion used improperly",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Wrong occasion code selected",
+            "TO date does not match the rule for that occasion",
+            "FROM date creates a gap with previous occasion",
+            "PR occasion used for PFC or LCpl promotion",
+            "Lower occasion used when higher occasion was applicable"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Pull the last 10 completed JEPES worksheets and walk me through the occasion codes.",
+        "Show me how you determine the correct TO date for each occasion.",
+        "How do you handle two occasions occurring at the same time?",
+        "When is a PR occasion required and when is it not?"
+      ],
+      "verification": [
+        "Sample of 10 to 15 JEPES worksheets reviewed",
+        "Occasion codes verified for accuracy",
+        "TO dates verified per Chapter 2 paragraph 2.b",
+        "FROM dates verified for proper sequencing",
+        "No date gaps between consecutive occasions",
+        "Higher occasion rule applied when overlap exists",
+        "PR occasion used only for Corporal and Sergeant promotions"
+      ],
+      "verified": true
+    },
+    "0203": {
+      "title": "JEPES PERMISSIONS AND ORGANIZATIONAL SCOPE MANAGEMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1616.1, Chapter 1, paragraph 5.h (MOL Manager)",
+            "text": "Marines fulfilling the role of a MOL manager at the battalion/squadron and company level have administrative permissions to assign Marines roles and permissions, establish reporting chains, and assist their commanders in the management of the JEPES in order to ensure that all Marines are properly evaluated."
+          },
+          {
+            "citation": "MCO 1616.1, Chapter 1, paragraph 5.d (Senior Enlisted Reviewer (SER))",
+            "text": "The SER is an enlisted leader (E6 or above) who reviews JEPES Worksheets and command marks for accuracy at the platoon and company levels. The SER provides the FLS, Evaluator, and Reviewer comments and recommendations, however does not have the ability to submit draft marks, return reports, or stop the flow of the evaluation through the reporting chain. An SER could be the platoon sergeant, first sergeant, or any SNCO in the unit."
+          },
+          {
+            "citation": "MCO 1616.1, Chapter 1, paragraph 5.f (Command Reviewer)",
+            "text": "The Command Reviewer is an enlisted leader appointed by the Approver (O-5 level commander or OIC equivalent) who reviews JEPES Worksheets and command marks for accuracy at the battalion/squadron level. The Command Reviewer provides the Reviewer and Approver comments and recommendations, however does not have the ability to submit draft marks, return reports, or stop the flow of the evaluation through the reporting chain. The Command Reviewer could be the command sergeant major or any SNCO in the unit."
+          }
+        ],
+        "summary": "The unit must manage JEPES permissions through MOL managers at the appropriate organizational levels and ensure SERs and Command Reviewers are properly designated within their organizational scopes."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify MOL Managers",
+          "actions": [
+            "Ask the command to identify their MOL managers",
+            "Verify managers exist at both battalion/squadron and company levels",
+            "Confirm appointments documented"
+          ]
+        },
+        {
+          "step": "Verify SER Designations",
+          "actions": [
+            "SER must be E-6 or above",
+            "Operating at platoon and company levels",
+            "Identify each SER in the command"
+          ],
+          "callout": "No SER designation",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Command Reviewer Designation",
+          "actions": [
+            "Command Reviewer is appointed by the O-5 Approver",
+            "Operating at battalion/squadron level",
+            "Verify appointment letter exists"
+          ],
+          "callout": "No Command Reviewer designation",
+          "severity": "finding"
+        },
+        {
+          "step": "Test Permissions",
+          "actions": [
+            "Spot check JEPES permissions for selected Marines",
+            "Verify permissions match designated roles",
+            "Identify any orphan or improper permissions"
+          ],
+          "callout": "Permissions test reveals improper access",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Organizational Scope Alignment",
+          "actions": [
+            "Permissions must align with unit organizational structure",
+            "Battalion/squadron level managers not assigning permissions outside their scope",
+            "Company level managers not assigning permissions outside their scope"
+          ],
+          "callout": "Organizational scope misaligned",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Review Training and Knowledge",
+          "actions": [
+            "MOL managers should know how to use JEPES permissions tools",
+            "Interview MOL managers to test knowledge"
+          ],
+          "callout": "Training and knowledge gap on JEPES permissions",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No MOL manager designated at battalion or company level",
+            "SER not E-6 or above",
+            "Command Reviewer not appointed by Approver in writing",
+            "Permissions assigned outside organizational scope",
+            "MOL managers unable to demonstrate JEPES permission management"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who are your MOL managers at battalion and company levels?",
+        "Show me the appointment letter for your Command Reviewer.",
+        "Pull JEPES and show me how permissions are managed.",
+        "What is the rank requirement for an SER?"
+      ],
+      "verification": [
+        "MOL managers designated at battalion/squadron level",
+        "MOL managers designated at company level",
+        "SERs designated and meet E-6 minimum rank",
+        "Command Reviewer appointed by Approver",
+        "Command Reviewer appointment in writing",
+        "Permissions aligned with organizational scope",
+        "MOL managers demonstrate JEPES knowledge"
+      ],
+      "verified": true
+    },
+    "0204": {
+      "title": "INITIAL COUNSELING WITHIN 30 DAYS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1616.1, Chapter 1, paragraph 6.b (MRO's First Line Supervisor Conducts Initial Counseling)",
+            "text": "Once the MRO has an established reporting chain, the FLS or first leader in the MRO's reporting chain will conduct an initial written counseling within 30 days with the MRO and establish billet expectations. At this point the MRO and FLS will validate objective scores and initiate any corrective action."
+          },
+          {
+            "citation": "MCO 1616.1, Chapter 2, paragraph 1.b (First Line Supervisor (FLS))",
+            "text": "The FLS, as defined in Chapter 1, has direct supervision over the MRO and is the first person in the reporting chain to provide recommended command input marks. The FLS shall: (1) Provide the MRO an initial written counseling within 30 days of the relationship being established, defining the MRO's billet description, role in the unit, responsibilities, and performance expectations. (2) Review the MRO's objective scores in order to ensure accuracy. This includes ensuring that the appropriate waiver is reported in MCTFS for Marines who rate exemptions (Medical, Combat, Unit Waiver) for Rifle, PFT, and CFT, bringing forward a previous score for calculation. (3) Provide recommended subjective command marks and comments/justifications as required in JEPES."
+          }
+        ],
+        "summary": "The First Line Supervisor must provide an initial written counseling within 30 days of the reporting relationship being established. The counseling must address billet description, role, responsibilities, and performance expectations."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify Counseling Process Exists",
+          "actions": [
+            "Ask the command for documentation of their counseling process",
+            "Review the counseling template or form used",
+            "Verify alignment with the requirements in Chapter 2 paragraph 1.b.(1)"
+          ],
+          "callout": "No initial counseling process documented",
+          "severity": "finding"
+        },
+        {
+          "step": "Pull Recent Check-Ins",
+          "actions": [
+            "Identify Marines who checked in within the previous 90 days",
+            "Pull check-in dates and FLS assignments"
+          ]
+        },
+        {
+          "step": "Verify Counseling Documentation",
+          "actions": [
+            "For each Marine, request the documented initial counseling",
+            "Verify counseling was within 30 days of relationship being established",
+            "Counseling must be in writing"
+          ],
+          "callout": "Counseling documentation missing for sampled Marine",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Counseling Content",
+          "actions": [
+            "Billet description",
+            "Role in the unit",
+            "Responsibilities",
+            "Performance expectations",
+            "Validation of objective scores"
+          ],
+          "callout": "Counseling content inadequate (lacks PES expectations)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Test for Process Compliance",
+          "actions": [
+            "Interview 3 to 5 newly checked-in Marines",
+            "Ask if they received initial counseling",
+            "Ask what was covered"
+          ],
+          "callout": "Process compliance test failures identified",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Track Late Counselings",
+          "actions": [
+            "Identify any counselings conducted past the 30-day window",
+            "Identify any Marines with no documented counseling"
+          ],
+          "callout": "Late counselings tracked but not corrected",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No documented counseling process",
+            "Counselings conducted but not documented in writing",
+            "Counselings conducted past the 30-day window",
+            "Counseling content does not address all required elements",
+            "Marines unaware they received initial counseling"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your initial counseling process documentation.",
+        "Pull a recent check-in and show me the documented counseling.",
+        "What does the counseling cover?",
+        "How do you track that counselings happen within 30 days?"
+      ],
+      "verification": [
+        "Counseling process documented",
+        "Counseling template addresses all required elements",
+        "Recent check-ins have documented counselings",
+        "Counselings conducted within 30 days",
+        "Counselings include billet description",
+        "Counselings include role and responsibilities",
+        "Counselings include performance expectations",
+        "Counselings include objective score validation",
+        "FLS demonstrates knowledge of counseling requirements"
+      ],
+      "verified": true
+    },
+    "0205": {
+      "title": "JEPES OCCASION APPROVAL TIMELINESS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1616.1, Chapter 1, paragraph 3.c (Timely Completion)",
+            "text": "JEPES reporting occasions must be completed and approved by the end of the reporting period in order to ensure timely and accurate evaluations. The reporting chain may begin forwarding recommended command input marks 45 days prior to the end of the reporting period. Occasions not approved by the end of the reporting period are considered delinquent and will be captured in command reporting."
+          },
+          {
+            "citation": "MCO 1616.1, Chapter 2, paragraph 2.e (Completion Due Dates)",
+            "text": "Commanders have until January 31st and July 31st to complete their SA evaluations respectively, and until December 31st to complete AN evaluations."
+          },
+          {
+            "citation": "MCO 1616.1, Chapter 2, paragraph 2.e.(1)",
+            "text": "For occasions outside of AN and SA which are unknown until relatively shortly before they occur, for example an unexpected TR or PR occasion, the command shall make every effort to complete the evaluation by the end date. Commands are still required to complete transfer occasions even after the Marine physically leaves the unit and falls under the gaining command's accountability."
+          },
+          {
+            "citation": "MCO 1616.1, Chapter 2, paragraph 2.e.(2)",
+            "text": "Timeliness of evaluations are tracked in the JEPES both by the command and Headquarters Marine Corps. Delinquent JEPES worksheets will be reported within a RUC/MCC every 15 days and externally every 30 days."
+          }
+        ],
+        "summary": "For periodic occasions (AN and SA), evaluations must be completed by the published deadlines. For non-periodic occasions that are unknown until shortly before they occur, including NJP-triggered RD occasions, unexpected TR or PR occasions, and DC occasions, the command must make every effort to complete the evaluation by the end date."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull JEPES Delinquency Reports",
+          "actions": [
+            "Access JEPES delinquency tracking",
+            "Pull reports for the previous 12 months",
+            "Note the count of delinquent worksheets per cycle"
+          ],
+          "callout": "JEPES delinquency reports not maintained",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Identify Non-Periodic Occasions",
+          "actions": [
+            "Pull a sample of the following occasion types from the previous 12 months:",
+            "RD (Reduction in rank, including NJP-triggered)",
+            "PR (Promotion when unexpected)",
+            "TR (Transfer when unexpected)",
+            "DC (Discharge)",
+            "DD (Declared Deserter)",
+            "These occasions are typically not known proactively"
+          ]
+        },
+        {
+          "step": "Calculate Approval Timeliness",
+          "actions": [
+            "Identify the TO DATE",
+            "Identify the date the Approver finalized the worksheet",
+            "Calculate days between TO DATE and approval",
+            "Flag any approvals exceeding 30 days from TO DATE"
+          ],
+          "callout": "JEPES occasion approved beyond 30 days from TO date",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify NJP-Triggered Reductions",
+          "actions": [
+            "For any RD occasions resulting from NJP, identify the NJP date",
+            "Verify the occasion was processed promptly after appeal period",
+            "Verify approval occurred within 30 days of TO DATE"
+          ],
+          "callout": "NJP-triggered reduction not reflected in JEPES timely",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Periodic Occasion Completion",
+          "actions": [
+            "AN evaluations must be complete by 31 December",
+            "SA evaluations must be complete by 31 January and 31 July",
+            "These are tracked separately from non-periodic timeliness"
+          ],
+          "callout": "Periodic occasion incomplete",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Track Delinquency Trends",
+          "actions": [
+            "Compare delinquency counts across the previous 12 months",
+            "Trending down: positive",
+            "Trending up or stable: DISCREPANCY potential"
+          ],
+          "callout": "Delinquency trends not tracked",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Forwarding Window Usage",
+          "actions": [
+            "For known periodic occasions, reporting chain may forward marks 45 days prior to end of reporting period",
+            "Verify command uses this window appropriately for AN and SA cycles"
+          ],
+          "callout": "Forwarding window misused",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Non-periodic occasions approved more than 30 days after TO DATE",
+            "NJP-triggered RD occasions delayed beyond 30 days",
+            "Unexpected transfer occasions left incomplete",
+            "Periodic AN or SA evaluations completed past deadline",
+            "Delinquency trends stable or increasing"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your JEPES delinquency report from the past 12 months.",
+        "Pull all RD occasions from the past year and show me the gap between TO DATE and approval date.",
+        "Walk me through how you handle an unexpected occasion like an NJP-triggered reduction.",
+        "How do you track non-periodic occasions to ensure timely approval?"
+      ],
+      "verification": [
+        "Delinquency reports reviewed for previous 12 months",
+        "Non-periodic occasions sampled and approval timing calculated",
+        "NJP-triggered RD occasions approved within 30 days of TO DATE",
+        "Unexpected TR and PR occasions approved within 30 days of TO DATE",
+        "DC and DD occasions approved within 30 days of TO DATE",
+        "AN evaluations completed by 31 December",
+        "SA evaluations completed by 31 January and 31 July",
+        "Transfer occasions completed even after departure",
+        "Delinquency trends stable or decreasing",
+        "Process documented for tracking unexpected occasions"
+      ],
+      "verified": true
+    },
+    "0206": {
+      "title": "APPROVAL AUTHORITY AND ACTING LETTER",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1616.1, Chapter 1, paragraph 5.g (Approver)",
+            "text": "The Approver is the O-5 level commander or OIC equivalent in the MRO's chain of command who is responsible for setting and approving final command input marks, thereby certifying the JEPES worksheet for inclusion in the promotion process. As a commander and representative of the CMC, the Approver must ensure reporting officials uphold JEPES policy and protect against inflation. The Approver should only delegate approval authority to one trusted leader in special cases when not able to perform duties. This delegation of approval authority must be documented via an official appointment letter."
+          },
+          {
+            "citation": "MCO 1616.1, Chapter 2, paragraph 1.f (Approver)",
+            "text": "The Approver, as defined in Chapter 1, is the O-5 level commander or OIC equivalent who has final approval authority for JEPES worksheets. The Approver is ultimately responsible for the accuracy of JEPES worksheets and the integrity of the system. The Approver may, if unable to perform duties, delegate permissions to perform the below tasks to one trusted leader via appointment letter. However, the Approver always holds ultimate responsibility. The Approver shall: (1) Ensure an MRO's command input marks are accurate and made in accordance with this Order. (2) Input 'not recommended for promotion' as required with every reporting occasion. (3) Meet the timelines set forth in this Order for approving JEPES worksheets. (4) Ensure all Marines have a reporting chain and are receiving performance evaluations. (5) Ensure all reporting chain members are fulfilling their responsibilities in accordance with this Order."
+          }
+        ],
+        "summary": "The Approver must be the O-5 level commander or OIC equivalent. Delegation of approval authority is allowed only in special cases when the Approver is unable to perform duties, and must be documented via an official appointment letter."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify the Approver",
+          "actions": [
+            "Confirm the unit's O-5 level commander or OIC equivalent",
+            "Verify this individual is the JEPES Approver",
+            "Pull JEPES configuration to confirm"
+          ]
+        },
+        {
+          "step": "Verify Approver Rank and Position",
+          "actions": [
+            "Approver must be O-5 level commander or OIC equivalent",
+            "If not, verify a delegation appointment letter exists"
+          ],
+          "callout": "Approver does not meet rank/position requirement",
+          "severity": "finding"
+        },
+        {
+          "step": "Request Acting/Delegation Letter",
+          "actions": [
+            "If approval was delegated at any point, request the appointment letter",
+            "Verify letter is signed by the Approver",
+            "Verify letter specifies the delegation circumstances"
+          ],
+          "callout": "No Acting Letter on file when required",
+          "severity": "finding"
+        },
+        {
+          "step": "Sample Recent Approvals",
+          "actions": [
+            "Pull 10 to 15 recent JEPES approvals",
+            "Verify each was approved by the designated Approver",
+            "For any approved by a delegate, verify the appointment letter was in effect"
+          ],
+          "callout": "Sampled approval lacks documented authority",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Special Case Justification",
+          "actions": [
+            "Delegation should only occur in special cases when Approver unable to perform duties",
+            "Letter should justify the need for delegation"
+          ],
+          "callout": "Special case approval not justified in writing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Single Trusted Leader",
+          "actions": [
+            "Delegation should be to one trusted leader, not multiple",
+            "Verify only one person held delegated authority at any given time"
+          ],
+          "callout": "Single trusted leader principle violated",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Approvals made by individuals other than the O-5 commander without appointment letter",
+            "Appointment letters missing or undated",
+            "Routine delegation rather than special case",
+            "Multiple persons holding delegated authority simultaneously",
+            "Delegate not properly documented"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who is your designated JEPES Approver?",
+        "Has approval authority been delegated at any time in the past 12 months?",
+        "If yes, show me the appointment letter.",
+        "What were the special circumstances requiring delegation?"
+      ],
+      "verification": [
+        "Approver identified as O-5 commander or OIC equivalent",
+        "JEPES configuration matches the designated Approver",
+        "Appointment letter on file if delegation occurred",
+        "Appointment letter signed by Approver",
+        "Delegation justified by special circumstances",
+        "Only one trusted leader holds delegated authority at any given time",
+        "Sample approvals match designated Approver or documented delegate"
+      ],
+      "verified": true
+    },
+    "0207": {
+      "title": "COMMAND CORRECTIONS PROCESS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1616.1, Chapter 2, paragraph 4 (Corrective Procedures)",
+            "text": "Corrective procedures for JEPES worksheets fall into three situations: those in which late-run objective scores or command input marks could result in an automatic remedial promotion, those in which previously approved command input marks must be corrected, or administrative changes to a JEPES worksheet that do not impact the MRO's PES Score."
+          },
+          {
+            "citation": "MCO 1616.1, Chapter 2, paragraph 4.a",
+            "text": "The MRO's PES score will automatically recalculate when objective scores and command input marks are reported late in MCTFS. If that new PES score meets or exceeds the cutting score applicable to the month of the late score's effective date, the command will be notified in JEPES that the Marine rates a remedial promotion in accordance with MCO P1400.32D, reference (g)."
+          },
+          {
+            "citation": "MCO 1616.1, Chapter 2, paragraph 4.b",
+            "text": "Previously approved command input marks may need to be changed due to either human error on the part of the reporting chain or unexpected circumstances. (1) If the Approver is still in the MRO's reporting chain, the Approver may directly correct the command input markings of the occasion or return to a member of the reporting chain to re-evaluate. If returned to a member of the reporting chain, the occasion is delinquent until final marks are approved by the Approver. (2) If the Approver for the occasion requiring correction is not still in the MRO's reporting chain, the MRO's current Approver may delete the command input marks as erroneous and remove them from the MRO's average in grade. With supporting documentation, appropriate command input marks may be replaced."
+          },
+          {
+            "citation": "MCO 1616.1, Chapter 2, paragraph 4.c",
+            "text": "Administrative changes to JEPES worksheets that do not impact an MRO's PES score. For example, a change to the occasion type or 'to date,' are conducted at the battalion/squadron level and are routed to the Approver."
+          }
+        ],
+        "summary": "The unit must be able to process three categories of corrections: late objective score recalculations resulting in remedial promotion, command input mark corrections, and administrative changes to occasion type or TO date."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Documented Correction Examples",
+          "actions": [
+            "Ask the command for examples of corrections processed in the previous 12 months",
+            "Sort examples into the three categories"
+          ],
+          "callout": "No documented correction examples",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Late Score Processing",
+          "actions": [
+            "Pull any cases where objective scores were reported late",
+            "Verify PES score recalculation occurred",
+            "If recalculation triggered remedial promotion, verify command processed it per MCO P1400.32D"
+          ],
+          "callout": "Late score processing not followed",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Command Input Correction Process",
+          "actions": [
+            "Pull cases where command input marks required correction",
+            "For corrections by current Approver: verify worksheet returned to reporting chain or directly corrected",
+            "For corrections by new Approver: verify supporting documentation exists for replacement marks"
+          ],
+          "callout": "Command input correction process not followed",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Administrative Changes",
+          "actions": [
+            "Pull cases where occasion type or TO date was changed",
+            "Verify changes were processed at battalion/squadron level",
+            "Verify changes were routed to Approver"
+          ],
+          "callout": "Administrative changes not properly logged",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Test Process Knowledge",
+          "actions": [
+            "Interview the MOL manager or command reviewer",
+            "Ask them to walk through each category of correction",
+            "Verify they can demonstrate the process even without recent examples"
+          ],
+          "callout": "Process knowledge test failures",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Supporting Documentation",
+          "actions": [
+            "Each correction should have supporting documentation",
+            "Documentation must justify the correction",
+            "Documentation should be retrievable"
+          ],
+          "callout": "Supporting documentation absent",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Unit cannot demonstrate correction process",
+            "No documented correction examples available",
+            "Corrections processed without supporting documentation",
+            "Late objective scores not triggering recalculation review",
+            "Administrative changes not routed through proper level"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me an example of a JEPES correction you processed in the past 12 months.",
+        "Walk me through how you would correct a command input mark error.",
+        "How do you handle a late objective score that triggers remedial promotion?",
+        "What is the process for changing an occasion type after approval?"
+      ],
+      "verification": [
+        "Documented correction examples available OR process can be demonstrated without recent examples",
+        "Late score recalculation process understood",
+        "Command input correction process understood",
+        "Administrative change process understood",
+        "Supporting documentation maintained for corrections",
+        "Corrections routed through proper organizational level",
+        "Remedial promotion process per MCO P1400.32D understood"
+      ],
+      "verified": true
+    },
+    "0208": {
+      "title": "HIGH AND LOW COMMAND INPUT MARK JUSTIFICATIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1616.1, Chapter 2, paragraph 3.a.(1) (5.0 - 4.1 Exceptional)",
+            "text": "Only those Marines who have displayed the highest levels of Individual Character, MOS and/or Missions accomplishment, and Leadership should be marked 'Exceptional' between 4.1 and 5.0. High marks in any category require a justification comment from the drop-down list of directed comments in JEPES, supported by formal commendatory material visible in JEPES under the Adversity/Commendatory display. Marking a Marine in the 'Exceptional' range should be a rarity and may apply only to a select handful of Marines throughout an annual or semi-annual reporting period."
+          },
+          {
+            "citation": "MCO 1616.1, Chapter 2, paragraph 3.a.(5) (0.9 - 0.1 Below Expectations)",
+            "text": "Marines in the category of 'Below Expectations' fall between 0.1 and 0.9 when the MRO struggles in any of the three categories as evidenced by counseling, documented or informal, that occurred during the reporting period. Marking an MRO in this category requires a justification comment from the drop-down list of directed comments in JEPES, however is not adverse and does not by itself 'NOT REC' the MRO for promotion."
+          },
+          {
+            "citation": "MCO 1616.1, Chapter 2, paragraph 3 (Command Input Instructions)",
+            "text": "The purpose of the Command Input is to complete the whole picture of the MRO's performance. As the fourth pillar of JEPES equally weighted with Warfighting, Physical Toughness, and Mental Agility, it is the Commander's voice to break out those Marines most or least deserving of promotion."
+          }
+        ],
+        "summary": "High marks (4.1 to 5.0) require a justification comment from the JEPES drop-down list AND supporting formal commendatory material visible in JEPES. Low marks (0.1 to 0.9) require a justification comment from the JEPES drop-down list and must be supported by counseling that occurred during the reporting period."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull JEPES Worksheets with High Marks",
+          "actions": [
+            "Filter recent JEPES worksheets for command input marks of 4.1 or higher",
+            "Pull a sample of 5 to 10 worksheets"
+          ]
+        },
+        {
+          "step": "Verify High Mark Justifications",
+          "actions": [
+            "Justification comment selected from JEPES drop-down",
+            "Formal commendatory material visible in JEPES Adversity/Commendatory display",
+            "Comment supports the elevated mark",
+            "Mark applied to Individual Character, MOS/Mission Accomplishment, or Leadership"
+          ],
+          "callout": "High mark justification missing or inadequate",
+          "severity": "finding"
+        },
+        {
+          "step": "Test for Rarity",
+          "actions": [
+            "High marks should be a rarity",
+            "Verify only a select handful of Marines per reporting period received Exceptional marks",
+            "Excessive use of high marks: DISCREPANCY potential"
+          ],
+          "callout": "High marks not rare (overuse pattern)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Pull JEPES Worksheets with Low Marks",
+          "actions": [
+            "Filter recent JEPES worksheets for command input marks of 0.9 or lower",
+            "Pull all available worksheets in this range"
+          ]
+        },
+        {
+          "step": "Verify Low Mark Justifications",
+          "actions": [
+            "Justification comment selected from JEPES drop-down",
+            "Counseling occurred during the reporting period (documented or informal)",
+            "Counseling supports the low mark",
+            "Mark not used as adverse action",
+            "NOT REC not automatically applied unless separately justified"
+          ],
+          "callout": "Low mark justification missing or inadequate",
+          "severity": "finding"
+        },
+        {
+          "step": "Spot Check Mid-Range Marks",
+          "actions": [
+            "Pull a few worksheets with marks in the 2.0 to 4.0 range",
+            "Verify these Marines were not improperly elevated to 4.1+ without supporting material",
+            "Verify these Marines were not improperly suppressed to 0.9 or below without counseling"
+          ],
+          "callout": "Mid-range marks lack appropriate justification",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Review Approver Oversight",
+          "actions": [
+            "Verify the Approver reviewed and approved each worksheet with justifications",
+            "Approver is responsible for protecting against inflation"
+          ],
+          "callout": "No approver oversight on high/low marks",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "High marks without JEPES drop-down justification comment",
+            "High marks without formal commendatory material in JEPES",
+            "High marks used too frequently across the unit",
+            "Low marks without JEPES drop-down justification comment",
+            "Low marks without supporting counseling during the reporting period",
+            "Approver approving marks without proper justification"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Pull a recent JEPES worksheet with marks above 4.1 and show me the justification.",
+        "Where is the supporting commendatory material in JEPES for this Marine?",
+        "Pull a recent worksheet with marks below 1.0 and show me the supporting counseling.",
+        "How many Marines in your unit received Exceptional marks last reporting period?"
+      ],
+      "verification": [
+        "Sample of high-mark worksheets reviewed",
+        "All high marks have JEPES drop-down justification",
+        "All high marks supported by formal commendatory material",
+        "High marks are a rarity, not common",
+        "Sample of low-mark worksheets reviewed",
+        "All low marks have JEPES drop-down justification",
+        "All low marks supported by counseling during reporting period",
+        "Approver oversight verified",
+        "Mid-range marks reviewed for inflation or suppression"
+      ],
+      "verified": true
+    }
+  }
+}

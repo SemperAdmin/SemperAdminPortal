@@ -1,0 +1,1406 @@
+{
+  "faNumber": "1650",
+  "sourceDoc": "MILITARY AWARDS (1650) - INSPECTOR GUIDE - REBUILT.docx",
+  "lastVerified": "2026-05-20",
+  "verifiedAtSource": true,
+  "items": {
+    "0101": {
+      "title": "REQUIRED REFERENCES AND ADMIN FAMILIARITY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAV M-1650.1, Ch. 1, Para. 1.1.b",
+            "text": "This manual is intended to provide award originators, administrators, reviewers, and approving officials with sufficient guidance to properly and expeditiously originate, process, present, and record any of the military medals and ribbons currently authorized within the Department of the Navy (DON)."
+          }
+        ],
+        "summary": "Commands must maintain access (electronic or hardcopy) to all six required references and administrative personnel must demonstrate familiarity with current awards directives."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Reference Materials",
+          "actions": [
+            "Ask the awards clerk or admin chief to produce all six required references.",
+            "Confirm version letter designations: MCO 1650.19J (with CH 1), SECNAVINST 1650.1J, current SECNAV M-1650.1."
+          ],
+          "callout": "No access to required references in command",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Access Method",
+          "actions": [
+            "Electronic access acceptable: bookmarked websites, saved PDFs, SharePoint folders.",
+            "Hardcopy access acceptable: binders, printed copies.",
+            "Either or both acceptable. Reject any required reference unavailable in either format."
+          ]
+        },
+        {
+          "step": "Test Administrative Personnel Knowledge",
+          "actions": [
+            "Interview 2 to 3 admin personnel who process awards.",
+            "Ask: Where do you find guidance on the Purple Heart Medal?",
+            "Ask: What manual covers iAPS procedures?",
+            "Ask: What are the time limits for PMD submissions?",
+            "Ask: What references govern joint awards?"
+          ],
+          "callout": "Admin personnel unfamiliar with award processing references",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Version Currency",
+          "actions": [
+            "Confirm MCO 1650.19J version letter matches the current series.",
+            "Confirm SECNAVINST 1650.1J is current J revision.",
+            "Reject any superseded version in active use."
+          ],
+          "callout": "References in use are superseded editions",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "One or more required references missing.",
+            "Outdated version of an order in active use.",
+            "Admin personnel unable to locate guidance for routine award types.",
+            "Electronic links broken or accessing superseded versions.",
+            "No designated awards clerk or admin chief identified."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your military awards references?",
+        "Walk me through where you access each reference?",
+        "Where do you find guidance on the Purple Heart Medal?",
+        "What manual covers iAPS procedures?",
+        "What are the time limits for PMD submissions?"
+      ],
+      "verification": [
+        "MCO 1650.19J accessible in current version.",
+        "SECNAVINST 1650.1J accessible in current version.",
+        "SECNAV M-1650.1 accessible.",
+        "SECNAV M-5216.5 accessible.",
+        "DoD Instruction 1348.33 accessible.",
+        "DoD Manual 1348.33 Vol 1 through Vol 4 accessible.",
+        "Admin personnel demonstrated familiarity with award processing guidance."
+      ],
+      "verified": true
+    },
+    "0102": {
+      "title": "LOCAL AWARDS INSTRUCTIONS COMPLIANCE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAVINST 1650.1J, Encl. 7, Para. 3.a",
+            "text": "Subordinate commands may publish local awards instructions to implement these awards policies within their command. Local instructions must not conflict with or be less restrictive than this instruction, SECNAV M-1650.1, or applicable DoD policy."
+          }
+        ],
+        "summary": "Local awards instructions are authorized but must align with higher-level directives. Local guidance cannot be less restrictive than parent policy. Inspector Note: If the command has not published a local awards instruction, mark this question N/A."
+      },
+      "howToInspect": [
+        {
+          "step": "Determine If Local Instruction Exists",
+          "actions": [
+            "Ask the awards clerk: Has your command published a local awards instruction or order?",
+            "If yes, request the document.",
+            "If no, mark N/A and move to Q0103."
+          ],
+          "callout": "No local awards instruction published",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Compare Against Higher-Level Policy",
+          "actions": [
+            "Compare local instruction text to SECNAVINST 1650.1J, SECNAV M-1650.1, MCO 1650.19J.",
+            "Flag any local provision that is less restrictive than parent policy.",
+            "Flag any provision that contradicts parent policy."
+          ],
+          "callout": "Local instruction conflicts with higher-level policy",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm local instruction is the current version.",
+            "Confirm local instruction references current parent orders, not superseded versions."
+          ],
+          "callout": "Local instruction outdated and not reflecting current policy",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Promulgation",
+          "actions": [
+            "Confirm local instruction is signed by the commander.",
+            "Confirm distribution to personnel who process awards."
+          ],
+          "callout": "Local instruction not promulgated to subordinate units",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Local instruction less restrictive than parent policy.",
+            "Local instruction cites superseded parent orders.",
+            "Local instruction not signed by the commander.",
+            "Local instruction not distributed to awards processors.",
+            "Local instruction predates current SECNAVINST 1650.1J."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Has your command published a local awards instruction?",
+        "When was the local instruction last updated?",
+        "Walk me through how your local instruction differs from SECNAVINST 1650.1J?",
+        "Who is the local instruction distributed to?"
+      ],
+      "verification": [
+        "Local instruction status (published or not published) confirmed.",
+        "If published, instruction does not conflict with parent policy.",
+        "If published, instruction is not less restrictive than parent policy.",
+        "Local instruction cites current parent orders.",
+        "Local instruction signed by the commander."
+      ],
+      "verified": true
+    },
+    "0103": {
+      "title": "PROCESSING OF NAVY, JOINT, AND OTHER SERVICE AWARDS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAV M-1650.1, Ch. 1",
+            "text": "Approved awards must be entered into the Improved Awards Processing System (IAPS). Approved awards must also be entered into the awardee's Official Military Personnel File (OMPF)."
+          }
+        ],
+        "summary": "Awards from another Service or Joint command require MMPB-31 validation and entry into the Marine's personnel records. Admin personnel must know when a Marine is eligible and how to process such awards."
+      },
+      "howToInspect": [
+        {
+          "step": "Interview Admin Personnel On Other-Service Award Eligibility",
+          "actions": [
+            "Ask: In what situation is a Marine eligible for another Service's award?",
+            "Expected answer references attachment, joint duty, or specific other-Service criteria."
+          ],
+          "callout": "Admin personnel unable to articulate eligibility for other-service awards",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Interview On Joint Award Eligibility",
+          "actions": [
+            "Ask: In what situation is a Marine eligible to receive a Joint award?",
+            "Expected answer references service to a Joint command or task force."
+          ],
+          "callout": "Admin personnel unable to articulate joint award eligibility",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Interview On Erroneous Presentation Correction",
+          "actions": [
+            "Ask: What actions can a command take if one of its Marines was erroneously presented another Service's award or a Joint award for which the Marine was not eligible?",
+            "Expected answer references MMPB-31 contact for validation and record correction."
+          ],
+          "callout": "Erroneous presentation not corrected when identified",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Documented Validation Records",
+          "actions": [
+            "Pull a sample of other-Service or Joint awards in MCTFS or OMPF in the past 24 months.",
+            "Confirm MMPB-31 validation correspondence on file."
+          ],
+          "callout": "No documented validation records for cross-service awards",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Admin personnel unaware of MMPB-31 validation requirement.",
+            "Other-Service award entered in OMPF without MMPB-31 validation.",
+            "Joint award processed without confirming Marine's joint assignment authorization.",
+            "No procedure to correct an erroneously presented award."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "In what situation is a Marine eligible for another Service's award?",
+        "In what situation is a Marine eligible to receive a Joint award?",
+        "How do you process a Marine's other-Service or Joint award through MMPB-31?",
+        "What do you do if a Marine was erroneously presented an award for which they were not eligible?"
+      ],
+      "verification": [
+        "Admin personnel can articulate other-Service award eligibility criteria.",
+        "Admin personnel can articulate Joint award eligibility criteria.",
+        "Admin personnel can describe MMPB-31 validation process.",
+        "Sample of other-Service or Joint awards in past 24 months has MMPB-31 validation on file.",
+        "Procedure exists for correcting erroneously presented awards."
+      ],
+      "verified": true
+    },
+    "0104": {
+      "title": "MOVSM ELIGIBILITY CRITERIA",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAV M-1650.1, Appendix 4A, TAB 18",
+            "text": "The Military Outstanding Volunteer Service Medal (MOVSM) is awarded to members of the Armed Forces who have performed outstanding volunteer community service of a sustained, direct, and consequential nature over a period of at least three years. The service must be performed during off-duty time and may not be connected with the member's military duties or a military mission."
+          }
+        ],
+        "summary": "MOVSM requires at least three years of sustained volunteer service performed off-duty and unconnected to any military mission. Awards for Toys for Tots, recruiting, or other mission-connected activities do not qualify. Inspector Note: Common error: commands award MOVSM for unit-organized volunteer programs (such as Toys for Tots) that count as military missions. These do not qualify."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull All MOVSM Awards In Past 24 Months",
+          "actions": [
+            "Request the iAPS report of approved MOVSMs at the command.",
+            "Include both nominations originated and nominations approved."
+          ]
+        },
+        {
+          "step": "Verify Three-Year Sustained Service",
+          "actions": [
+            "For each award, examine the Summary of Action.",
+            "Confirm the service period spans at least three years.",
+            "Reject any MOVSM with less than three years documented service."
+          ],
+          "callout": "MOVSM awarded without three-year sustained service",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify No Military Mission Connection",
+          "actions": [
+            "For each award, examine the activity described.",
+            "Reject any award for Toys for Tots, recruiting, military fundraising, or unit-organized volunteer program.",
+            "Reject any activity that supported a military mission objective."
+          ],
+          "callout": "MOVSM awarded for action with military mission connection",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Off-Duty Performance",
+          "actions": [
+            "Confirm the service was performed during off-duty time.",
+            "Reject any service performed during duty hours or under TAD orders."
+          ],
+          "callout": "MOVSM awarded for on-duty performance",
+          "severity": "finding"
+        },
+        {
+          "step": "Interview Admin Personnel On Criteria",
+          "actions": [
+            "Ask: What are the MOVSM eligibility criteria?",
+            "Confirm they can articulate the three-year, off-duty, no-mission-connection requirements."
+          ],
+          "callout": "Admin personnel unfamiliar with MOVSM criteria",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "MOVSM awarded for less than three years of service.",
+            "MOVSM awarded for Toys for Tots or recruiting volunteer support.",
+            "MOVSM awarded for service performed during duty hours.",
+            "Admin personnel cannot articulate the three eligibility criteria.",
+            "Summary of Action does not clearly establish off-duty volunteer status."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What are the MOVSM eligibility criteria?",
+        "Show me your approved MOVSMs for the past 24 months?",
+        "For each, walk me through how the three-year, off-duty, no-mission criteria were met?",
+        "How do you screen out unit-organized volunteer programs?"
+      ],
+      "verification": [
+        "MOVSM awards for past 24 months reviewed.",
+        "Each approved MOVSM has documented three years of sustained service.",
+        "Each approved MOVSM is unconnected to any military mission.",
+        "Each approved MOVSM is for off-duty volunteer service.",
+        "Admin personnel can articulate MOVSM eligibility criteria."
+      ],
+      "verified": true
+    },
+    "0105": {
+      "title": "AWARD CERTIFICATE AUTHORIZATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAV M-1650.1",
+            "text": "The award elements for each medal and ribbon specify the items presented at the time of award. Certificates are an award element for personal military decorations and certain specific awards. Other awards including the Combat Action Ribbon, Overseas Service Ribbon, Humanitarian Service Medal, Armed Forces Service Medal, and the Marine Corps Recruiting Ribbon do not have certificates as authorized award elements."
+          }
+        ],
+        "summary": "Certificates are authorized for some awards (NA, NC, MM, LM, PMDs) and not for others (CR, OV, HSM, AFSM, Recruiting Ribbon). Commands must check the Award Element section in SECNAV M-1650.1 for each award before producing a certificate. Inspector Note: Reference the Award Element section of SECNAV M-1650.1 for the specific award. The Award Element list dictates what is presented."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull A Sample Of Recently Presented Awards",
+          "actions": [
+            "Select 10 to 15 awards presented in the past 12 months.",
+            "Include a mix of PMDs and lesser awards."
+          ]
+        },
+        {
+          "step": "Cross-Reference Award Element Authorization",
+          "actions": [
+            "For each award, consult SECNAV M-1650.1 Award Element section.",
+            "Confirm whether a certificate is an authorized element."
+          ],
+          "callout": "Award element presented not authorized for the award",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Presentation Compliance",
+          "actions": [
+            "For awards authorized to have certificates, confirm a certificate was presented and filed.",
+            "For awards not authorized to have certificates, confirm no certificate was produced."
+          ],
+          "callout": "Presentation includes unauthorized device, ribbon, or attachment",
+          "severity": "finding"
+        },
+        {
+          "step": "Spot-Check For Common Errors",
+          "actions": [
+            "Pull any Combat Action Ribbon, Overseas Service Ribbon, or Recruiting Ribbon awards.",
+            "Verify no certificate exists."
+          ],
+          "callout": "Common citation or certificate errors found in sample",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Combat Action Ribbon presented with an unauthorized certificate.",
+            "Overseas Service Ribbon presented with an unauthorized certificate.",
+            "Humanitarian Service Medal presented with an unauthorized certificate.",
+            "PMD presented without the required certificate.",
+            "Certificate produced but not filed or scanned to iAPS Certificates tab."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through which awards have certificates and which do not?",
+        "Show me the sample I name and tell me whether a certificate was authorized?",
+        "What is your process for determining certificate authorization before presentation?"
+      ],
+      "verification": [
+        "Sample of 10 to 15 awards reviewed.",
+        "Certificate-authorized awards have a certificate on file.",
+        "Non-certificate-authorized awards have no certificate produced.",
+        "Admin personnel can identify which awards authorize certificates."
+      ],
+      "verified": true
+    },
+    "0201": {
+      "title": "ORIGINATOR TIMELINESS - SUBMISSION WITHIN TIME LIMITS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAV M-1650.1, Ch. 1, Para. 1.2.b.(5)",
+            "text": "PMDs and unit decorations must be originated as soon as practicable after the distinguishing act or period of service to be recognized. The specific time limits that apply to these awards are found in Appendix 1A. The PH, CAR, and most CE&S awards do not have a strict time limit."
+          },
+          {
+            "citation": "SECNAV M-1650.1, Appendix 1A",
+            "text": "PMDs and unit decorations must be officially originated and entered into official channels within three years of the distinguishing act or end of the period of meritorious service. Final action must be taken by the award approval authority within two years of origination. In no case may an award be approved under delegated authority more than five years after the distinguishing act or end of the period of service."
+          }
+        ],
+        "summary": "PMD nominations must be originated within three years and acted upon within five years total. Retirement and transfer awards must reach the final awarding authority 60 days before presentation (90 days for SECNAV-level or summer-window awards)."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull All Pending And Approved Awards In Past 12 Months",
+          "actions": [
+            "Request the iAPS report of award nominations.",
+            "Include nominations pending at the command and at higher level."
+          ]
+        },
+        {
+          "step": "Verify Origination Within Three Years",
+          "actions": [
+            "For each PMD or unit decoration, confirm origination date is within three years of the end of the period of service.",
+            "Reject any PMD originated past the three-year mark without time-limit waiver documentation."
+          ],
+          "callout": "Award originated more than three years after the act",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Retirement And Transfer Timing",
+          "actions": [
+            "For each retirement or transfer award, calculate days between submission to final awarding authority and presentation date.",
+            "Confirm at least 60 days lead time.",
+            "Confirm at least 90 days lead time for summer-window or SECNAV-level awards."
+          ],
+          "callout": "Retirement/transfer award not originated within the required window",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Five-Year Hard Limit",
+          "actions": [
+            "For any award approved within the past 12 months, confirm approval is within five years of the distinguishing act.",
+            "Reject any approval past the five-year hard limit."
+          ],
+          "callout": "Award originated past the five-year hard limit without statutory exception",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Explanatory Comments For Late Submissions",
+          "actions": [
+            "For any submission outside SECNAV timelines, confirm an explanatory comment is in iAPS."
+          ],
+          "callout": "No explanatory comments for late submissions",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "PMD originated past three-year mark without waiver.",
+            "Retirement award submitted less than 60 days before presentation.",
+            "Summer-window or SECNAV-level award submitted less than 90 days before presentation.",
+            "Award approved past five-year hard limit.",
+            "Late submission without explanatory comment in iAPS."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your pending awards list?",
+        "For each, walk me through the timeline against the SECNAV standard?",
+        "How do you handle a retirement award where the timeline is tight?",
+        "Show me how you document explanatory comments for late submissions?"
+      ],
+      "verification": [
+        "Pending and approved awards list pulled from iAPS.",
+        "All PMDs originated within three years of end of service period.",
+        "All retirement and transfer awards meet 60 or 90 day lead time.",
+        "No award approved past the five-year hard limit.",
+        "Explanatory comments documented for any late submission."
+      ],
+      "verified": true
+    },
+    "0202": {
+      "title": "COMMANDER TIMELINESS - ACTING ON RECOMMENDATIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAVINST 1650.1J",
+            "text": "Commanders must process all valor award recommendations, to either approve the award or forward via the chain of command to the appropriate awarding authority, within 20 days of receipt. Non-valor award recommendations should be processed or forwarded within 30 days of receipt."
+          }
+        ],
+        "summary": "Commands must act on valor award recommendations within 20 days of receipt and non-valor recommendations within 30 days. Submissions outside these limits require explanatory comments in iAPS."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull All Awards Currently Pending At Command",
+          "actions": [
+            "Request the iAPS pending queue.",
+            "Identify date of receipt for each award."
+          ]
+        },
+        {
+          "step": "Calculate Days At Command Level",
+          "actions": [
+            "For each pending valor award, calculate days since receipt.",
+            "Reject any valor award pending more than 20 days without action.",
+            "For each pending non-valor award, calculate days since receipt.",
+            "Flag any non-valor award pending more than 30 days."
+          ],
+          "callout": "Award held at command level beyond authorized days without explanation",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Pull Awards Forwarded To Higher Level In Past 12 Months",
+          "actions": [
+            "Identify date of receipt and date forwarded.",
+            "Calculate processing time."
+          ]
+        },
+        {
+          "step": "Verify Explanatory Comments For Late Action",
+          "actions": [
+            "For any award processed outside time limits, confirm explanatory comment in iAPS."
+          ],
+          "callout": "No explanatory comments for late action documented",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Tracking System",
+          "actions": [
+            "Ask the awards clerk how pending awards are tracked.",
+            "Confirm a documented tracking system exists."
+          ],
+          "callout": "No tracking system in place for pending awards",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Valor award pending more than 20 days at command.",
+            "Non-valor award pending more than 30 days at command.",
+            "Late action without explanatory comment.",
+            "No tracking system for pending awards.",
+            "Awards lost or untracked between receipt and forwarding."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your current pending awards queue in iAPS?",
+        "For each, when was it received and what is its current status?",
+        "How do you track time at command level?",
+        "Show me an explanatory comment for a late submission?"
+      ],
+      "verification": [
+        "Pending awards queue reviewed.",
+        "No valor award pending more than 20 days at command without justification.",
+        "Non-valor awards processed or forwarded within 30 days.",
+        "Explanatory comments documented for any late processing.",
+        "Awards tracking system in place and demonstrated."
+      ],
+      "verified": true
+    },
+    "0203": {
+      "title": "iAPS USE FOR AWARDS PROCESSING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAV M-1650.1, Ch. 3, Para. 3.2.a.(1)(b)",
+            "text": "Approved awards must be entered into the Improved Awards Processing System (IAPS). Approved awards must also be entered into the awardee's Official Military Personnel File (OMPF)."
+          },
+          {
+            "citation": "MARADMIN 042/08",
+            "text": "All Marine Corps award nominations requiring approval by a Marine Corps awarding authority will be processed electronically via the Improved Awards Processing System (iAPS)."
+          }
+        ],
+        "summary": "All Marine Corps award nominations must be processed in iAPS. Paper-only submissions are not authorized."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull All Awards In Past 24 Months",
+          "actions": [
+            "Request iAPS report of approved and pending awards.",
+            "Cross-check against any paper award files at the command."
+          ]
+        },
+        {
+          "step": "Verify iAPS Entry For Each Award",
+          "actions": [
+            "Confirm every award processed at the command is in iAPS.",
+            "Flag any paper-only or email-only award nomination."
+          ],
+          "callout": "Award processed outside iAPS in violation of mandatory use",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Admin Personnel iAPS Access",
+          "actions": [
+            "Confirm the awards clerk has active iAPS access.",
+            "Confirm at least one alternate has access."
+          ],
+          "callout": "Admin personnel without required iAPS access",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Spot-Check iAPS Workflow Knowledge",
+          "actions": [
+            "Ask the awards clerk to walk through nomination origination in iAPS.",
+            "Ask them to demonstrate routing for endorsement."
+          ],
+          "callout": "Admin personnel unable to demonstrate iAPS workflow",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Award processed on paper without iAPS entry.",
+            "Awards clerk lacks active iAPS access.",
+            "No alternate iAPS user designated.",
+            "iAPS used for some awards but not others.",
+            "Backlog of paper submissions waiting for iAPS entry."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me how you originate an award in iAPS?",
+        "Are any awards processed outside of iAPS?",
+        "Who is your primary and alternate iAPS user?",
+        "How do you handle a paper nomination received from a subordinate command?"
+      ],
+      "verification": [
+        "All awards in past 24 months are in iAPS.",
+        "No paper-only or email-only nominations identified.",
+        "Awards clerk has active iAPS access.",
+        "Alternate iAPS user designated and has access.",
+        "Awards clerk can demonstrate iAPS workflow."
+      ],
+      "verified": true
+    },
+    "0204": {
+      "title": "iAPS PERMISSIONS MANAGEMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAVINST 1650.1J, Encl. 4, Para. 2.a.(3)",
+            "text": "Commands will manage iAPS permissions to ensure that only currently assigned personnel hold active access. Pending permission requests must be acted upon within 30 days. Permissions for personnel who depart the command must be removed within 30 days of departure."
+          },
+          {
+            "citation": "MARADMIN 99/18",
+            "text": "iAPS permissions audits will be conducted at least quarterly. Commanders are responsible for ensuring departed personnel do not retain active iAPS permissions in the command's hierarchy."
+          }
+        ],
+        "summary": "Pending iAPS permission requests must be actioned within 30 days. Departed personnel permissions must be removed within 30 days of departure. Quarterly audits are required."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Current iAPS Permissions Roster",
+          "actions": [
+            "Ask the awards clerk for the iAPS permissions list for the command hierarchy.",
+            "Identify all personnel with active permissions."
+          ]
+        },
+        {
+          "step": "Cross-Check Against Current Command Roster",
+          "actions": [
+            "Compare iAPS permissions list to current unit roster.",
+            "Flag any active permission for a departed person."
+          ],
+          "callout": "Departed personnel retain active iAPS permissions",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Departure Removal Within 30 Days",
+          "actions": [
+            "For each departure in the past 12 months, calculate days between departure and iAPS permission removal.",
+            "Reject any permission active more than 30 days post-departure."
+          ],
+          "callout": "iAPS permissions not removed within 30 days of departure",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Pending Request Action Within 30 Days",
+          "actions": [
+            "Pull pending permission requests.",
+            "Calculate days since each request submitted.",
+            "Reject any pending request older than 30 days without action."
+          ],
+          "callout": "Pending iAPS requests not actioned within 30 days",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Quarterly Audit",
+          "actions": [
+            "Request documentation of the most recent quarterly iAPS permissions audit.",
+            "Confirm audit was within the past 90 days."
+          ],
+          "callout": "No documented quarterly iAPS permissions audit",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Departed personnel still have active iAPS permissions.",
+            "Pending requests older than 30 days without action.",
+            "No quarterly audit documentation.",
+            "Audit conducted but not documented.",
+            "No procedure to remove permissions at check-out."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your current iAPS permissions roster?",
+        "Cross-check this against your current unit roster - are all permission holders still here?",
+        "How quickly do you remove permissions when someone departs?",
+        "Show me your most recent quarterly permissions audit?"
+      ],
+      "verification": [
+        "Current iAPS permissions roster pulled.",
+        "Cross-check against unit roster complete.",
+        "No active permissions for departed personnel.",
+        "No pending permission requests older than 30 days.",
+        "Most recent quarterly audit conducted within 90 days and documented."
+      ],
+      "verified": true
+    },
+    "0205": {
+      "title": "AUTHORIZED ORIGINATORS AND ENDORSERS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAV M-1650.1, Ch. 1, Para. 1.2.b.(1)",
+            "text": "Award originators must be senior to the nominee by billet or rank and must have been in the same chain of command as the nominee during the time of the action or service being recognized. Award endorsements and approvals must be made by commanders or officers-in-charge within the nominee's chain of command."
+          }
+        ],
+        "summary": "Originators must be senior to the nominee by billet or rank AND in the same chain of command at the time of the action. Endorsers and approvers must be commanders or OICs in the chain of command."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull A Sample Of Awards From Past 12 Months",
+          "actions": [
+            "Select 10 to 15 approved awards."
+          ]
+        },
+        {
+          "step": "Verify Originator Authority",
+          "actions": [
+            "For each award, identify the originator.",
+            "Confirm originator was senior to the nominee by billet or rank at the time of the action.",
+            "Confirm originator was in the same chain of command at the time of the action.",
+            "Reject any award originated by a peer or by someone outside the chain."
+          ],
+          "callout": "Award originated by unauthorized originator",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Endorser Authority",
+          "actions": [
+            "Identify each endorser in the routing chain.",
+            "Confirm each is a commander or OIC.",
+            "Confirm each is in the chain of command."
+          ],
+          "callout": "Award endorsed by unauthorized endorser",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Approver Authority",
+          "actions": [
+            "Identify the approving authority.",
+            "Confirm the approver holds the appropriate delegation for the award level."
+          ],
+          "callout": "Award approved by unauthorized approver",
+          "severity": "finding"
+        },
+        {
+          "step": "Spot-Check iAPS Permissions Delegation",
+          "actions": [
+            "Pull the iAPS permissions delegation matrix.",
+            "Confirm delegations align with billet authority."
+          ],
+          "callout": "iAPS permissions delegated outside authorized chain",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Award originated by peer (same rank, same billet).",
+            "Award originated by junior to the nominee.",
+            "Originator not in chain of command at time of action.",
+            "Endorser not a commander or OIC.",
+            "Approver lacks delegation for the award level."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me a sample of 10 awards from the past 12 months?",
+        "For each, who was the originator and what was their relationship to the nominee?",
+        "How do you verify the originator was in the chain of command at the time of action?",
+        "Show me your current iAPS permissions delegation matrix?"
+      ],
+      "verification": [
+        "Sample of 10 to 15 awards pulled.",
+        "Each originator was senior to the nominee by billet or rank.",
+        "Each originator was in the chain of command at time of action.",
+        "Each endorser was a commander or OIC in the chain of command.",
+        "Each approver held appropriate delegation for the award level.",
+        "iAPS permissions delegation matrix reviewed."
+      ],
+      "verified": true
+    },
+    "0301": {
+      "title": "ROUTING TO PROPER AWARDING AUTHORITY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAV M-1650.1, Para. 2.2.a.(4)",
+            "text": "The official with award approval authority must be in the awardee's chain of command at the time of the distinguishing act or the end of the meritorious service. Award recommendations must be routed to the awarding authority who had jurisdiction over the nominee at the time of the action or service."
+          }
+        ],
+        "summary": "Awards must be routed to the authority who had jurisdiction at the time of the action, not at the time of submission. The approving authority must have delegation appropriate to the PMD level recommended."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull A Sample Of Awards Approved In Past 12 Months",
+          "actions": [
+            "Select 10 to 15 awards."
+          ]
+        },
+        {
+          "step": "Verify Time-Of-Action Chain Of Command",
+          "actions": [
+            "For each award, determine the period of action or service.",
+            "Identify who was the appropriate awarding authority during that period.",
+            "Confirm the approval signature matches that authority."
+          ],
+          "callout": "Award not routed through proper time-of-action chain of command",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Approval Authority Matches PMD Level",
+          "actions": [
+            "For each award, confirm the approver has delegation for that PMD level.",
+            "Reject any approval where the approver lacked appropriate delegation."
+          ],
+          "callout": "Approval authority below required PMD level for award type",
+          "severity": "finding"
+        },
+        {
+          "step": "Spot-Check Misrouted Awards",
+          "actions": [
+            "For any award where the awardee transferred between origination and approval, verify the award was routed to the original CoC authority."
+          ],
+          "callout": "Misrouted awards identified in sample",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Award approved by current CoC authority rather than the time-of-action authority.",
+            "Approver lacks delegation for the recommended PMD level.",
+            "Award routed to a peer command rather than the proper chain.",
+            "Award routed to higher level when current command had approval authority."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through how you determine the correct awarding authority for each nomination?",
+        "Show me an award where the nominee transferred between origination and approval?",
+        "How do you handle a nomination originated after the nominee's transfer?",
+        "Show me your awarding authority delegation matrix?"
+      ],
+      "verification": [
+        "Sample of awards pulled.",
+        "Each approval traced to the time-of-action chain of command.",
+        "Each approver holds delegation appropriate to the PMD level.",
+        "Transfer cases routed to the original chain of command authority.",
+        "Delegation matrix on file and current."
+      ],
+      "verified": true
+    },
+    "0302": {
+      "title": "CITATION AND SUMMARY OF ACTION QUALITY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAV M-1650.1, Ch. 2, Para. 2.2",
+            "text": "The Summary of Action (SOA) is the basis on which the award is approved. The SOA must be a full, detailed description of the act or service being recognized. The SOA shall not exceed two pages. Valor award nominations must include the Standard Valor Award Key Information in the SOA. The award citation must be properly formatted, free of grammar and spelling errors, and accurately describe the act or service."
+          }
+        ],
+        "summary": "Awards must have a complete two-page-maximum SOA, properly formatted citation, and accurate NAVMC 11533 administrative data. Valor awards require the Standard Valor Award Key Information format. Inspector Note: Open and closing sentences of the citation are standardized. Inspector should compare against SECNAV M-1650.1 templates."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull A Sample Of Approved Awards",
+          "actions": [
+            "Select 10 to 15 awards from past 12 months.",
+            "Include at least one valor award if available."
+          ]
+        },
+        {
+          "step": "Verify Summary Of Action Completeness",
+          "actions": [
+            "Confirm SOA fully describes the act or service.",
+            "Confirm SOA does not exceed two pages.",
+            "Reject any SOA that is incomplete or exceeds the page limit."
+          ],
+          "callout": "Summary of action incomplete on submitted award",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Valor Award Format",
+          "actions": [
+            "For each valor award, confirm the Standard Valor Award Key Information is included."
+          ],
+          "callout": "Valor award format does not meet required standard",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify NAVMC 11533 Administrative Data",
+          "actions": [
+            "Confirm detachment types and dates.",
+            "Confirm endorsements complete.",
+            "Confirm geographic location accurate.",
+            "Confirm awarding authority address correct."
+          ],
+          "callout": "NAVMC 11533 administrative data incomplete",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Citation Quality",
+          "actions": [
+            "Confirm citation matches the SECNAV M-1650.1 template format.",
+            "Confirm opening and closing sentences are standardized.",
+            "Reject any citation with grammar or spelling errors."
+          ],
+          "callout": "Citation quality below standard for award level",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "SOA exceeds two-page limit.",
+            "SOA incomplete or generic.",
+            "Valor award missing Standard Valor Award Key Information.",
+            "NAVMC 11533 data fields blank or inaccurate.",
+            "Citation contains grammar or spelling errors.",
+            "Non-standard opening or closing sentences in the citation."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the SOA for the awards I name?",
+        "Walk me through how you verify SOA quality before endorsement?",
+        "For valor awards, show me the Standard Valor Key Information section?",
+        "What is your quality-check process for citations before submission?"
+      ],
+      "verification": [
+        "Sample of awards reviewed.",
+        "Each SOA within two-page limit.",
+        "Each SOA fully describes the act or service.",
+        "Valor awards include the Standard Valor Award Key Information.",
+        "NAVMC 11533 data complete and accurate for each.",
+        "Citations match SECNAV M-1650.1 format.",
+        "No grammar or spelling errors in sampled citations."
+      ],
+      "verified": true
+    },
+    "0303": {
+      "title": "FORMAL CERTIFICATE AND CITATION FIDELITY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAV M-1650.1, Ch. 2, Para. 2.2.e",
+            "text": "The final award certificate and citation must match the version approved in iAPS. Any changes made to the citation after iAPS approval must be entered into iAPS to update the official record prior to presentation, filing, and forwarding for archiving. A PDF copy of the final certificate must be attached to the Certificates tab in iAPS."
+          }
+        ],
+        "summary": "The certificate and citation presented to the awardee must match what is recorded in iAPS. Any post-approval changes must be entered into iAPS before presentation. PDF copies of certificates must be attached to the Certificates tab."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull A Sample Of Awards With Certificates In Past 12 Months",
+          "actions": [
+            "Select 10 awards that are authorized to have certificates."
+          ]
+        },
+        {
+          "step": "Compare Certificate To iAPS Citation Of Record",
+          "actions": [
+            "For each award, pull the printed certificate.",
+            "Compare line by line to the citation in iAPS.",
+            "Flag any discrepancy in wording, dates, names, or unit identifiers."
+          ],
+          "callout": "Certificate text differs from iAPS citation of record",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Post-Approval Changes Are In iAPS",
+          "actions": [
+            "Identify any awards where the citation was edited after approval.",
+            "Confirm the edited citation was entered into iAPS."
+          ],
+          "callout": "Post-approval changes not entered in iAPS",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify PDF Certificate On Certificates Tab",
+          "actions": [
+            "For each sampled award, confirm a PDF of the certificate is attached to the iAPS Certificates tab."
+          ],
+          "callout": "PDF certificate missing from Certificates tab",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Certificate text differs from iAPS citation of record.",
+            "Post-approval citation change not entered into iAPS.",
+            "PDF of certificate not attached to Certificates tab.",
+            "Certificate produced but never scanned to iAPS.",
+            "Multiple versions of citation in different files."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Pull the certificate and the iAPS citation for the award I name. Compare them?",
+        "How do you handle a last-minute citation change?",
+        "Show me the Certificates tab for that award in iAPS?",
+        "What is your process for archiving certificates after presentation?"
+      ],
+      "verification": [
+        "Sample of certificate-bearing awards pulled.",
+        "Each certificate matches iAPS citation of record.",
+        "Post-approval changes reflected in iAPS.",
+        "PDF of certificate attached to iAPS Certificates tab for each award.",
+        "No version mismatches identified."
+      ],
+      "verified": true
+    },
+    "0304": {
+      "title": "DUPLICATION OF AWARDS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoD Instruction 1348.33, Sect. 3, 3.1.c",
+            "text": "Only one PMD is authorized for the same act, achievement, or period of service. A PMD for valor within a longer period of meritorious service is not considered duplication, provided the citation or the accompanying documentation justifying an award for the longer period of meritorious service does not cite any of the actions for which the valor decoration was awarded."
+          }
+        ],
+        "summary": "Only one PMD is authorized for the same act, achievement, or period of meritorious service. Commands must review MCTFS, OMPF, and iAPS before submitting a new nomination to confirm no duplication. Inspector Note: A valor award within a longer period of meritorious service is not duplication, provided the longer-period citation does not reference the valor actions."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull All Awards Submitted In Past 12 Months",
+          "actions": [
+            "Request the iAPS report of submissions originating from the command."
+          ]
+        },
+        {
+          "step": "Verify Pre-Submission Records Check",
+          "actions": [
+            "Ask the awards clerk to demonstrate the pre-submission check workflow.",
+            "Confirm MCTFS review documented.",
+            "Confirm OMPF review documented.",
+            "Confirm iAPS history review documented."
+          ],
+          "callout": "No pre-submission records check documented",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Sample Recent Submissions For Duplication",
+          "actions": [
+            "For 5 to 10 recent submissions, pull the nominee's MCTFS awards history.",
+            "Compare the period of service in the new nomination to existing awards.",
+            "Flag any overlap that could constitute duplication."
+          ],
+          "callout": "Duplicate award submitted for same act/period",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Valor-Within-Longer-Period Exception",
+          "actions": [
+            "For any award that overlaps a prior valor award period, confirm the citation does not reference the valor actions."
+          ],
+          "callout": "Valor-within-longer-period exception applied without documentation",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No documented pre-submission records check.",
+            "New award duplicates a prior award's period of service.",
+            "Longer-period award citation references actions from a prior valor award.",
+            "Multiple awards for the same achievement identified in MCTFS.",
+            "Admin personnel unable to articulate the duplication rule."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through your pre-submission records check?",
+        "How do you screen new nominations against existing awards in MCTFS and OMPF?",
+        "Show me an example of how you handled a potential duplication?",
+        "What is the rule for a valor award within a longer period of meritorious service?"
+      ],
+      "verification": [
+        "Pre-submission records check workflow documented.",
+        "MCTFS review documented for each new submission.",
+        "OMPF review documented for each new submission.",
+        "iAPS history review documented for each new submission.",
+        "Sampled submissions have no duplication of prior awards.",
+        "Valor-within-longer-period exception correctly applied where relevant."
+      ],
+      "verified": true
+    },
+    "0305": {
+      "title": "TIMELY SUBMISSION TO MMPB-31",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAV M-5216.5, Ch. 2, Para. 2.2.8.a",
+            "text": "Approved awards shall be submitted to MMPB-31 via iAPS within 10 working days after the summary of action end date or date of presentation, whichever is later. Failure to submit within this timeline delays entry into the awardee's permanent personnel record."
+          }
+        ],
+        "summary": "Approved awards must be submitted to MMPB-31 in iAPS within 10 working days of the later of the SOA end date or the presentation date."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull At Least Five Command-Approved Awards From iAPS Archives",
+          "actions": [
+            "Select awards from the past 12 months."
+          ]
+        },
+        {
+          "step": "Identify Trigger Date For Each",
+          "actions": [
+            "Identify SOA end date.",
+            "Identify presentation date.",
+            "Trigger date is the later of the two."
+          ]
+        },
+        {
+          "step": "Calculate Working Days To MMPB-31 Submission",
+          "actions": [
+            "For each award, count working days between trigger date and MMPB-31 submission.",
+            "Working days exclude weekends and federal holidays.",
+            "Reject any award submitted more than 10 working days after trigger date."
+          ],
+          "callout": "Submission to MMPB-31 beyond required working day window",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Currently-Processing Awards",
+          "actions": [
+            "Pull awards currently in processing.",
+            "For each approved award not yet at MMPB-31, calculate working days since trigger date.",
+            "Flag any approaching or exceeding 10 working days."
+          ],
+          "callout": "Currently-processing awards exceed established working day timeline",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Approved award not submitted to MMPB-31 within 10 working days.",
+            "Trigger date misidentified (using approval date instead of presentation date).",
+            "Working days miscalculated (calendar days used instead).",
+            "Approved awards lingering in command queue without forward action.",
+            "No tracking of post-approval submission timeline."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me five command-approved awards in iAPS archives?",
+        "Walk me through how you identify the trigger date?",
+        "Show me how you track post-approval timeline?",
+        "What is the working-day count for the awards I name?"
+      ],
+      "verification": [
+        "At least five archived awards reviewed.",
+        "Trigger date correctly identified for each.",
+        "Each submitted to MMPB-31 within 10 working days of trigger date.",
+        "Currently-processing awards on track for 10-working-day standard.",
+        "Tracking system in place for post-approval submission timeline."
+      ],
+      "verified": true
+    },
+    "0306": {
+      "title": "AWARDS NOT GIVEN FOR LESS-THAN-HONORABLE ACTIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "10 USC \u00a7 1136",
+            "text": "No military decoration may be awarded or presented to a member of the Armed Forces whose service after the act or achievement justifying the award has not been honorable."
+          },
+          {
+            "citation": "DoD Instruction 1348.33, Sect. 1, Para. 1.2.c",
+            "text": "A military decoration shall not be awarded or presented to a Service member whose service after the act or achievement justifying the award has not been honorable. Commanders must screen all award nominations against the nominee's disciplinary and administrative record before recommending or approving the award."
+          }
+        ],
+        "summary": "10 USC 1136 prohibits awards to Service members whose service after the qualifying act has not been honorable. Commands must screen nominees against Quarterly Criminal Activity Reports, legal records, and the Command Legal Action Module before approval."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Recently Approved Awards",
+          "actions": [
+            "Pull awards approved in the past 12 months, including Good Conduct Medals."
+          ]
+        },
+        {
+          "step": "Cross-Check Against Quarterly Criminal Activity Report",
+          "actions": [
+            "Request the QCAR covering the relevant period.",
+            "For each awardee, check for entries.",
+            "Flag any award where the nominee appears on the QCAR."
+          ],
+          "callout": "Award approved for Marine listed on quarterly criminal activity report",
+          "severity": "finding"
+        },
+        {
+          "step": "Cross-Check Against Legal Report And CLAM",
+          "actions": [
+            "Request the Command Legal Action Module entries.",
+            "Cross-check each awardee.",
+            "Flag any NJP, courts-martial, or administrative action since the qualifying act."
+          ],
+          "callout": "Award approved for Marine with pending legal or CLAM action",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Screening Procedure Documented",
+          "actions": [
+            "Ask the awards clerk: How do you screen nominees against disciplinary records before recommending approval?",
+            "Confirm a documented screening process exists."
+          ],
+          "callout": "No documented screening procedure",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Good Conduct Medal Eligibility",
+          "actions": [
+            "Pull recently approved Good Conduct Medals.",
+            "Confirm three years of qualifying service with no disqualifying conduct."
+          ],
+          "callout": "Good Conduct Medal awarded to ineligible Marine",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Award approved despite NJP or court-martial since qualifying act.",
+            "No screening of nominees against QCAR or legal records.",
+            "Good Conduct Medal approved despite disqualifying conduct.",
+            "Awards clerk unable to articulate the screening process.",
+            "No documented evidence of legal record review."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your last QCAR?",
+        "Walk me through how you screen award nominees against disciplinary records?",
+        "Show me the screening documentation for the awards I name?",
+        "How do you verify Good Conduct Medal eligibility?"
+      ],
+      "verification": [
+        "Recently approved awards cross-checked against QCAR.",
+        "Recently approved awards cross-checked against CLAM and Legal Report.",
+        "Documented screening procedure in place.",
+        "Good Conduct Medals verified against three-year qualifying service requirement.",
+        "No awards identified for individuals with disqualifying conduct since the qualifying act."
+      ],
+      "verified": true
+    },
+    "0307": {
+      "title": "PURPLE HEART CASUALTY REPORT CONTENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAV M-1650.1, Appendix 2B, Para. 2B.5.a",
+            "text": "Casualty reports submitted as a result of hostile enemy action must contain sufficient information to allow the Purple Heart awarding authority to make a determination. Required information includes the date and location of the action, a description of the hostile enemy action, the nature of the wound or injury, the medical treatment received, and the medical determination linking the wound or injury to hostile enemy action."
+          }
+        ],
+        "summary": "Casualty reports from hostile action must include date, location, description of hostile action, nature of wound, medical treatment, and medical determination linking the injury to hostile action. Insufficient information delays or prevents PH determination. Inspector Note: If the command has not submitted casualty reports for hostile enemy action in the inspection period, mark N/A."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Casualty Reports From Hostile Action In Past 24 Months",
+          "actions": [
+            "Request casualty reports submitted by the command.",
+            "Identify any related to hostile enemy action.",
+            "If none, mark N/A."
+          ]
+        },
+        {
+          "step": "Verify Required Elements In Each Report",
+          "actions": [
+            "Date of action documented.",
+            "Location of action documented.",
+            "Description of hostile enemy action documented.",
+            "Nature of wound or injury documented.",
+            "Medical treatment documented.",
+            "Medical determination linking injury to hostile action documented."
+          ],
+          "callout": "Casualty report missing required Purple Heart elements",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify PH Determination Status",
+          "actions": [
+            "For each report, identify the corresponding PH determination outcome.",
+            "Flag any case where insufficient information delayed the determination."
+          ],
+          "callout": "PH determination not made or not documented",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Coordination With Casualty Section",
+          "actions": [
+            "Confirm the awards clerk coordinates with the casualty section on PH-eligible cases."
+          ],
+          "callout": "No coordination with Casualty Section",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Casualty report missing date or location of action.",
+            "Description of hostile enemy action inadequate.",
+            "Medical determination not linking injury to hostile action.",
+            "PH determination delayed by insufficient report content.",
+            "No coordination between awards section and casualty section."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Have you submitted any casualty reports for hostile enemy action in the past 24 months?",
+        "Show me a sample casualty report?",
+        "Walk me through the required information for PH determination?",
+        "How do you coordinate with the casualty section?"
+      ],
+      "verification": [
+        "Casualty reports for hostile action in past 24 months identified.",
+        "Each report includes date, location, action description, wound nature, treatment, and medical determination.",
+        "PH determinations were not delayed by insufficient information.",
+        "Coordination process with casualty section documented."
+      ],
+      "verified": true
+    },
+    "0308": {
+      "title": "BRONZE STAR MEDAL SPECIAL PAY REQUIREMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "SECNAV M-1650.1, Appendix 2A, Tab 8, Para. c.(2)",
+            "text": "The Bronze Star Medal may be awarded only to a Service member who, while serving in a position of responsibility, distinguished himself or herself by heroic or meritorious achievement or service while engaged in an action against an enemy of the United States, while engaged in military operations involving conflict with an opposing foreign force, or while serving with friendly foreign forces engaged in armed conflict. The recipient must have been in receipt of imminent danger pay, hostile fire pay, or other special pay for the period of action."
+          }
+        ],
+        "summary": "Bronze Star Medal recipients must have been in receipt of imminent danger pay, hostile fire pay, or other special pay for the period of action being recognized. Inspector Note: Verify special pay receipt against MCTFS pay records or unit pay clerk records for the period of action."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull All Bronze Star Medal Awards In Past 24 Months",
+          "actions": [
+            "Request the iAPS report of Bronze Star Medals approved by or through the command.",
+            "If none, mark N/A."
+          ]
+        },
+        {
+          "step": "Verify Period Of Action For Each",
+          "actions": [
+            "Identify the period of action covered by each BSM citation."
+          ],
+          "callout": "Period of action not documented for BSM",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Cross-Check Special Pay Records",
+          "actions": [
+            "For each recipient, verify special pay (imminent danger, hostile fire, or equivalent) was received during the period of action.",
+            "Acceptable verification: MCTFS pay records, LES, or signed unit pay clerk certification.",
+            "Reject any BSM where special pay receipt cannot be verified."
+          ],
+          "callout": "BSM awarded without verifying special pay eligibility/exclusion",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Documentation On File",
+          "actions": [
+            "Confirm the verification of special pay is retained with the award package."
+          ],
+          "callout": "Special pay documentation not on file",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "BSM approved without verification of special pay receipt.",
+            "Special pay not received during the documented period of action.",
+            "No documentation in the award file confirming pay status.",
+            "BSM submitted where the period of action did not involve hostile pay environments."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me all Bronze Star Medals approved in the past 24 months?",
+        "For each, show me the special pay verification?",
+        "How do you verify the recipient was in receipt of imminent danger or hostile fire pay?",
+        "Where is the pay verification documented in the award file?"
+      ],
+      "verification": [
+        "All Bronze Star Medals in past 24 months identified.",
+        "Period of action documented for each.",
+        "Special pay receipt verified against MCTFS or pay clerk records.",
+        "Verification documentation retained in the award file.",
+        "No BSM approved without confirmed special pay receipt."
+      ],
+      "verified": true
+    }
+  }
+}

@@ -1,0 +1,2379 @@
+{
+  "faNumber": "4600.40",
+  "sourceDoc": "GTCC (4600.40C) - INSPECTOR GUIDE - REBUILT.docx",
+  "lastVerified": "2026-05-20",
+  "verifiedAtSource": true,
+  "items": {
+    "0101": {
+      "title": "GTCC PROGRAM REVIEW",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "41 USC 1909",
+            "text": "Each executive agency that issues and uses purchase cards and convenience checks shall establish and maintain safeguards and internal controls to ensure the following: (1) That there is a record in each executive agency of each holder of a purchase card issued by the agency for official use. (2) That each holder of such purchase card and each official with authority to authorize expenditures charged to the purchase card are responsible for reconciling charges appearing on each statement of account with receipts and other supporting documentation. (3) That appropriate adjustments are made to the statements of account in a timely manner."
+          },
+          {
+            "citation": "DoD GTCC Regulations (April 2025), par. 041004",
+            "text": "Components are required to conduct a self-audit of their GTCC programs at least once every two years. The self-audit must be documented and any significant weaknesses must be reported to the responsible commander and Component Program Manager."
+          }
+        ],
+        "summary": "Commands must conduct a documented GTCC program review at least every two years and report any significant weaknesses to the commander and CPM. The current USMC IGMC checklist satisfies the program review requirement. Inspector Note: The current USMC IGMC checklist meets the program review requirement. Verify the review was conducted within the past 24 months and findings were forwarded to the commander and HQMC RFF CPM."
+      },
+      "howToInspect": [
+        {
+          "step": "Request the Most Recent Program Review",
+          "actions": [
+            "Ask for the documented self-audit or IGMC checklist completed within the past 24 months.",
+            "Verify the completion date.",
+            "Reject any review older than two years."
+          ],
+          "callout": "No program review completed within the past 24 months",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Documentation Of Findings",
+          "actions": [
+            "Confirm any identified weaknesses are documented in writing.",
+            "Confirm corrective action plans or status notes are recorded."
+          ],
+          "callout": "Review conducted but not documented in writing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Reporting To Commander And CPM",
+          "actions": [
+            "Confirm the commander received the review results in writing.",
+            "Confirm the HQMC RFF CPM received a copy.",
+            "Request proof of transmittal (email, routing slip, endorsement)."
+          ],
+          "callout": "Findings not reported to HQMC RFF CPM",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Corrective Actions",
+          "actions": [
+            "For each weakness identified, confirm a corrective action was initiated.",
+            "Confirm closure or current status of each corrective action."
+          ],
+          "callout": "Corrective actions identified but not tracked to closure",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No program review conducted within the past two years.",
+            "Review conducted but not documented.",
+            "Findings not reported to the commander.",
+            "Findings not reported to the HQMC RFF CPM.",
+            "Corrective actions identified but not tracked to closure.",
+            "Outdated USMC IGMC checklist used (not the current version)."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When was your last GTCC program review conducted?",
+        "Show me the documented results of the review?",
+        "Show me proof the results were provided to the commander?",
+        "Show me proof the results were provided to the HQMC RFF CPM?",
+        "What corrective actions are open and what is their status?"
+      ],
+      "verification": [
+        "Program review conducted within the past 24 months.",
+        "Review is documented in writing.",
+        "Findings forwarded to the commander.",
+        "Findings forwarded to the HQMC RFF CPM.",
+        "Corrective actions tracked for each identified weakness.",
+        "Current USMC IGMC checklist used for the review."
+      ],
+      "verified": true
+    },
+    "0102": {
+      "title": "MANDATORY APC TRAINING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoD GTCC Regulations (April 2025), par. 040801",
+            "text": "When an individual is appointed as a new APC, it is mandatory that the appointee complete the Programs and Policies - Travel Card Program Management (APC and CPM Course) [Mandatory]. APCs will ensure a copy of the certification of completion is retained or can be found in TraX. Refresher training is required every three years and may be obtained from other sources, as approved by the CPM."
+          },
+          {
+            "citation": "MCO 4600.40C, par. 4b(2)(h)",
+            "text": "Ensure that APC training is completed and annotated in the appointment letter prior to assuming APC duties. The required training is Travel Card Program Management (APC Course). The course can be found at the Defense Travel Management Office (DTMO) TraX website."
+          }
+        ],
+        "summary": "All appointed APCs must complete the mandatory APC Course in TraX prior to assuming duties. Refresher training is required every three years and the certificate of completion must be on file."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify All Appointed APCs",
+          "actions": [
+            "Request the current primary and alternate APC appointment letters.",
+            "Identify date of appointment for each APC."
+          ]
+        },
+        {
+          "step": "Verify Initial Training Completed Prior To Appointment",
+          "actions": [
+            "Request the certificate of completion for the APC Course from TraX.",
+            "Confirm the certificate date predates the APC appointment date.",
+            "Confirm the course title reads Travel Card Program Management (APC and CPM Course)."
+          ],
+          "callout": "APC assumed duties without completing the Travel Card Program Management (APC Course)",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Refresher Training Currency",
+          "actions": [
+            "Calculate years since most recent training certificate.",
+            "Reject any APC with a certificate older than three years.",
+            "Confirm refresher training source approved by the CPM if not the standard TraX course."
+          ],
+          "callout": "Refresher training not completed within the three-year window",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Training Annotation On Appointment Letter",
+          "actions": [
+            "Confirm the appointment letter annotates the date of training completion.",
+            "Confirm the annotation matches the certificate date."
+          ],
+          "callout": "Training not annotated on the appointment letter",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "APC assumed duties before completing the APC Course.",
+            "Certificate of completion not on file.",
+            "Refresher training overdue (more than three years since last training).",
+            "Training annotation missing from the appointment letter.",
+            "Non-standard refresher training source used without documented CPM approval."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the certificate of completion for each appointed APC?",
+        "When did each APC complete the initial APC Course?",
+        "When did each APC last complete refresher training?",
+        "Where is the training annotated on the appointment letter?",
+        "If refresher training was obtained outside TraX, where is the CPM approval?"
+      ],
+      "verification": [
+        "Certificate of completion on file for each appointed APC.",
+        "Each certificate predates the corresponding appointment date.",
+        "No certificate older than three years.",
+        "Training completion annotated on each appointment letter.",
+        "CPM approval documented for any non-standard refresher training source."
+      ],
+      "verified": true
+    },
+    "0103": {
+      "title": "APC APPOINTMENT LETTER",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, par. 4b(2)(c)",
+            "text": "Designate a primary and alternate APC in writing and provide appropriate training and guidance. Considerations for appointment include: analytical, communication and computer skills, rank and grade, and access to the chain of command. Where possible, use of civilian personnel should be considered to ensure continuity. APC appointment letters found in reference (c) must include mailing addresses, e-mail addresses, telephone numbers and GTCC hierarchy numbers. The APC appointment letter must be renewed every three years after the initial appointment or when there is a change in the appointing official."
+          }
+        ],
+        "summary": "Commanders must appoint a primary and alternate APC in writing using the standardized template from DoD GTCC Regulations Annex 10. Appointment letters must include the required identifying information and must be renewed every three years or whenever the appointing official changes. Inspector Note: Current APC appointment letters must be updated using the DoD GTCC Regulations Annex 10 template no later than 31 December 2025. Appointments predating that template must be reissued."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Current APC Appointment Letter",
+          "actions": [
+            "Ask the APC for the current primary and alternate appointment letter.",
+            "Verify the document is signed and dated."
+          ],
+          "callout": "No appointment letter on file for an active APC",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Signatory Authority",
+          "actions": [
+            "Confirm the signature is the commander's.",
+            "If signed by direction, request the delegation authority documentation.",
+            "Verify the delegation chain is complete and current."
+          ],
+          "callout": "Appointment letter signed below required signatory level",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Template Compliance",
+          "actions": [
+            "Compare the letter format to Annex 10 of the DoD GTCC Regulations.",
+            "If the letter is dated after 31 December 2025, the Annex 10 format is mandatory."
+          ],
+          "callout": "Appointment letter does not follow MCO 4600.40C template",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Required Information",
+          "actions": [
+            "Confirm primary APC entries: full name, mailing address, telephone, email, hierarchy number, hierarchy level.",
+            "Confirm alternate APC entries match the same fields."
+          ],
+          "callout": "Required information (name, grade, position, training date) missing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Copy Provided To Higher APC",
+          "actions": [
+            "Ask: Did you provide a copy to your next higher-level APC?",
+            "Request proof of transmittal: email, routing slip, hand receipt.",
+            "Confirm the stated purpose is to grant access to CitiManager EAS."
+          ],
+          "callout": "Copy not provided to higher-level APC",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Three-Year Renewal",
+          "actions": [
+            "Calculate years since appointment date.",
+            "Reject any appointment past the three-year mark without renewal.",
+            "Flag any appointment within 90 days of expiration."
+          ],
+          "callout": "Appointment letter older than three years not renewed",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Currency Of Appointing Official",
+          "actions": [
+            "Confirm the commander who signed is still the appointing official.",
+            "If commander has changed, reject any non-reissued appointment."
+          ],
+          "callout": "Appointment letter still references a prior commander or signatory",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Appointment letter not on the Annex 10 template after 31 December 2025.",
+            "Required identifying fields missing or incomplete.",
+            "No copy provided to higher-level APC.",
+            "Appointment expired (over three years old without renewal).",
+            "Appointment not reissued after change of commander.",
+            "By-direction signature without documented delegation authority."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your current APC appointment letter?",
+        "Is this letter on the Annex 10 template?",
+        "Show me proof you provided a copy to the next higher-level APC?",
+        "When was the appointment last renewed?",
+        "Has the appointing commander changed since this appointment?"
+      ],
+      "verification": [
+        "Primary and alternate APC appointed in writing.",
+        "Letter uses the Annex 10 template (mandatory after 31 December 2025).",
+        "All required fields present (name, address, phone, email, hierarchy number, hierarchy level).",
+        "Letter signed by the commander or authorized delegate with delegation documentation.",
+        "Copy provided to the next higher-level APC for CitiManager EAS access.",
+        "Appointment within three-year renewal window.",
+        "Appointment current to the appointing commander."
+      ],
+      "verified": true
+    },
+    "0104": {
+      "title": "EAS ACCESS AND ACCOUNT DEACTIVATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoD GTCC Regulations (April 2025), par. 041101",
+            "text": "APCs must have access to the card provider's Electronic Access System (EAS) and the reporting module to manage the cardholder accounts within their assigned hierarchy and to extract required reports."
+          },
+          {
+            "citation": "MCO 4600.40C, par. 4b(3)(f)",
+            "text": "Ensure APC and read-only access (ROA) non-cardholder accounts are deactivated upon the appointee's transfer, separation, or reassignment of duties to prevent unauthorized access to the EAS."
+          }
+        ],
+        "summary": "Primary and alternate APCs must demonstrate active access to the EAS and reporting module. Non-cardholder APC and ROA accounts must be deactivated promptly when the appointee transfers, separates, or is reassigned."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify APC Login Capability",
+          "actions": [
+            "Ask the primary and alternate APCs to log in to the EAS during the inspection.",
+            "Confirm successful access to the reporting module.",
+            "Reject any APC unable to demonstrate access."
+          ],
+          "callout": "APC unable to log in to EAS",
+          "severity": "finding"
+        },
+        {
+          "step": "Request Non-Cardholder Account Inventory",
+          "actions": [
+            "Ask the APC for the current list of APC and ROA accounts within the hierarchy.",
+            "Cross-check against current unit roster."
+          ],
+          "callout": "No documented inventory of non-cardholder accounts",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Identify Departed Personnel",
+          "actions": [
+            "Identify all personnel who transferred, separated, or were reassigned in the past 12 months.",
+            "For each departed person, confirm whether they held an APC or ROA non-cardholder account."
+          ],
+          "callout": "Departed personnel not identified in account inventory",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Deactivation Timeline",
+          "actions": [
+            "For each departed APC or ROA holder, confirm the account was deactivated.",
+            "Request the deactivation date.",
+            "Reject any active account for a departed person."
+          ],
+          "callout": "Account deactivation past required timeline",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "APC unable to demonstrate EAS login.",
+            "APC has no access to the reporting module.",
+            "Departed APC accounts still active.",
+            "Departed ROA accounts still active.",
+            "No procedure to track non-cardholder account closures."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me how you log in to the EAS?",
+        "Show me how you access the reporting module?",
+        "Show me the current list of APC and ROA accounts in your hierarchy?",
+        "How do you track departures to ensure deactivation?",
+        "When was the last APC or ROA account deactivation?"
+      ],
+      "verification": [
+        "Primary APC demonstrated active EAS access.",
+        "Alternate APC demonstrated active EAS access.",
+        "Reporting module accessible.",
+        "All APC and ROA accounts cross-checked against current roster.",
+        "No active non-cardholder accounts for departed personnel.",
+        "Procedure documented for tracking and closing non-cardholder accounts upon departure."
+      ],
+      "verified": true
+    },
+    "0105": {
+      "title": "DoD TRAVEL IBA AGING ANALYSIS SUMMARY REPORT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix B, par. 4a(5)",
+            "text": "Extract, work, and retain the monthly DoD Travel IBA Aging Analysis Summary Report immediately following the monthly cycle. The APC will provide the commander with both program health and Dollars Delinquency metrics derived from this report."
+          }
+        ],
+        "summary": "APCs must extract the DoD Travel IBA Aging Analysis Summary Report monthly immediately following the billing cycle, work the report by reconciling and annotating findings, retain it for the current month plus two years, and brief the commander on program health and Dollars Delinquency metrics. Inspector Note: Cycle-based subscription is available (NA-06). APC should demonstrate either pull or subscription receipt of the report."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Past 24 Months Of Reports",
+          "actions": [
+            "Ask for the current month plus the prior 24 months of IBA Aging Analysis Summary Reports.",
+            "Expect one report per billing cycle."
+          ],
+          "callout": "Reports for the past 24 months not on file",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Monthly Extraction",
+          "actions": [
+            "Check each report is dated within days of the billing cycle close.",
+            "Identify any missing months.",
+            "Reject any gap in the monthly sequence."
+          ],
+          "callout": "Reports not extracted monthly per the billing cycle",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Working Of The Report",
+          "actions": [
+            "Confirm reports are annotated with reconciliation notes.",
+            "Confirm corrective actions are documented for any flagged accounts.",
+            "Reject any unannotated report."
+          ],
+          "callout": "Report not worked (no annotation, no action)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Commander Briefing",
+          "actions": [
+            "Ask the APC for evidence of monthly commander briefings on program health and Dollars Delinquency metrics.",
+            "Request email, briefing slides, or signed routing slip."
+          ],
+          "callout": "Commander not briefed on the report",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Retention",
+          "actions": [
+            "Confirm reports retained for the current month plus the previous two years.",
+            "Reject any premature destruction."
+          ],
+          "callout": "Reports not retained per the required retention period",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Reports missing for one or more billing cycles.",
+            "Reports retained but not annotated or worked.",
+            "No documented commander briefing on report metrics.",
+            "Retention period not met (less than current plus two years).",
+            "Subscription enabled but reports not retained locally."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your IBA Aging Analysis Summary Reports for the past 24 months?",
+        "Walk me through how you reconcile and annotate the report?",
+        "How do you brief the commander on program health and Dollars Delinquency metrics?",
+        "Are you using the cycle-based subscription (NA-06) or manual extraction?",
+        "Show me your retention practice for these reports?"
+      ],
+      "verification": [
+        "Reports on hand for current month plus prior 24 months.",
+        "No missing months.",
+        "Reports annotated with reconciliation notes and corrective actions.",
+        "Documented commander briefing on program health and Dollars Delinquency.",
+        "Retention period (current plus two years) met."
+      ],
+      "verified": true
+    },
+    "0106": {
+      "title": "DELINQUENCY REPORT-HIERARCHY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix B, par. 4b(3)",
+            "text": "The APC will extract, work, and retain the monthly Delinquency Report-Hierarchy. The report must include annotations of actions taken to resolve delinquencies, including cardholder notifications and responses with dates, the status of any travel claims contributing to the delinquency, and the estimated resolution date. The report shall be updated weekly. Reports will be retained for the current year plus the previous two years."
+          }
+        ],
+        "summary": "APCs must extract the monthly Delinquency Report-Hierarchy, annotate corrective actions and resolution status weekly, brief the commander, and retain the report for the current year plus prior two years. Inspector Note: APCs should demonstrate weekly updates of the report to reflect cardholder responses and resolution progress."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Last 12 Months Of Delinquency Reports",
+          "actions": [
+            "Ask for the monthly Delinquency Report-Hierarchy for each of the past 12 cycles.",
+            "Verify a report for each cycle."
+          ],
+          "callout": "Delinquency reports for the past 12 months missing",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Annotations On Each Report",
+          "actions": [
+            "Confirm each delinquent account has annotations covering: notifications sent, cardholder response, travel claim status, estimated resolution date.",
+            "Reject any unannotated report."
+          ],
+          "callout": "Reports not annotated with cardholder status and action",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Weekly Updates",
+          "actions": [
+            "Inspect annotation date stamps.",
+            "Confirm annotations were updated weekly during the active delinquency period."
+          ],
+          "callout": "Reports not updated weekly",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Commander Notification",
+          "actions": [
+            "Request evidence of monthly commander briefing on the report.",
+            "Email, signed routing slip, or briefing documentation acceptable."
+          ],
+          "callout": "Commander not notified of delinquent accounts",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Retention",
+          "actions": [
+            "Confirm reports retained for current year plus previous two years."
+          ],
+          "callout": "Reports not retained for the required period",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Reports missing for one or more cycles.",
+            "Reports without annotations.",
+            "Annotations not updated weekly.",
+            "No documented commander briefing.",
+            "Retention period not met.",
+            "Travel claim status not tracked alongside the delinquency."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your last 12 months of Delinquency Report-Hierarchy outputs?",
+        "Show me how you annotate each delinquent account?",
+        "How often do you update the annotations?",
+        "How do you brief the commander on delinquencies?",
+        "How do you track travel claim status against delinquencies?"
+      ],
+      "verification": [
+        "Reports on hand for the last 12 months.",
+        "All delinquent accounts annotated with required elements.",
+        "Annotations updated weekly during active delinquency.",
+        "Commander briefed monthly with documented proof.",
+        "Retention period (current year plus prior two years) met."
+      ],
+      "verified": true
+    },
+    "0107": {
+      "title": "DELINQUENCY NOTIFICATIONS AT 45, 61, 91, 121 DAYS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix B, par. 5",
+            "text": "APCs must complete and distribute delinquency notifications to the cardholder and appropriate supervisor at the 45-day, 61-day, 91-day, and 121-day past-billing milestones. Each notification must include a signed endorsement from the cardholder acknowledging receipt and understanding. The HQMC RFF CPM will issue notifications at 61, 91, and 121 days to the commander or director."
+          }
+        ],
+        "summary": "APCs must issue delinquency notifications at 45, 61, 91, and 121 days past billing to the cardholder and the appropriate supervisor or commander, and obtain signed cardholder endorsement at each stage."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify All Delinquent Accounts In Past 12 Months",
+          "actions": [
+            "Pull from the Delinquency Report-Hierarchy and Aging Analysis Summary.",
+            "Categorize by stage of delinquency reached."
+          ]
+        },
+        {
+          "step": "Verify 45-Day Notifications",
+          "actions": [
+            "For each account reaching 45 days, confirm the cardholder notification was issued.",
+            "Confirm the cardholder signed and returned the endorsement."
+          ],
+          "callout": "45-day notification not sent to cardholder",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify 61-Day Notifications",
+          "actions": [
+            "For each account reaching 61 days, confirm the supervisor or commander was notified.",
+            "Confirm the HQMC RFF CPM 61-day notification was acknowledged and returned within five business days."
+          ],
+          "callout": "61-day notification not sent to cardholder and supervisor",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify 91-Day Notifications",
+          "actions": [
+            "Confirm the 91-day notification was issued and acknowledged.",
+            "Confirm any account suspension status was communicated to the commander."
+          ],
+          "callout": "91-day notification not sent to commander",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify 121-Day Notifications",
+          "actions": [
+            "Confirm the 121-day notification was issued and acknowledged.",
+            "Confirm cancelled-status accounts have a reinstatement request letter if returned to use."
+          ],
+          "callout": "121-day notification not sent prior to salary offset / account suspension",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Documentation Retention",
+          "actions": [
+            "Confirm signed endorsements are filed for each cardholder.",
+            "Confirm five-business-day acknowledgment to HQMC RFF CPM is documented."
+          ],
+          "callout": "Notification documentation not retained",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Notification milestone missed (any of 45, 61, 91, 121 days).",
+            "Cardholder endorsement not obtained or not on file.",
+            "Five-business-day acknowledgment to HQMC RFF CPM not documented.",
+            "Supervisor or commander not notified at the appropriate stage.",
+            "Reinstatement letter missing for accounts returned from cancelled status."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me all delinquent accounts from the past 12 months?",
+        "For each, show me the 45, 61, 91, and 121-day notifications?",
+        "Show me the signed cardholder endorsements?",
+        "How do you ensure the five-business-day return to HQMC RFF CPM is met?",
+        "Show me any reinstatement letters for cancelled accounts?"
+      ],
+      "verification": [
+        "All delinquent accounts identified and stage tracked.",
+        "45-day cardholder notification issued and endorsed for each qualifying account.",
+        "61-day notification issued to supervisor or commander and acknowledged.",
+        "91-day notification issued and acknowledged.",
+        "121-day notification issued and acknowledged.",
+        "Five-business-day HQMC RFF CPM acknowledgment documented.",
+        "Reinstatement letters on file for accounts returned from cancelled status."
+      ],
+      "verified": true
+    },
+    "0108": {
+      "title": "ACCOUNT LISTING REPORT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix B, par. 4a",
+            "text": "The APC will extract, annotate, and maintain the monthly Account Listing Report. The report shall be used to verify proper accountability of cardholder accounts, accurate profile information including SSN/address/contact data, active account status, written justification for any credit or cash limit increases above the standard, identification of credit balances, and review of mission-critical status designations."
+          }
+        ],
+        "summary": "APCs must extract the Account Listing Report monthly and annotate it to verify accountability, profile accuracy, active status, limit-increase justifications, credit balances, and mission-critical designations. Inspector Note: Personnel rosters help identify accounts that need to be added to or removed from the hierarchy. Cross-check the Account Listing Report against the unit roster."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Past 12 Months Of Reports",
+          "actions": [
+            "Ask for the monthly Account Listing Report.",
+            "Verify a report for each cycle."
+          ],
+          "callout": "Account listing reports for past 12 months missing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Profile Accuracy",
+          "actions": [
+            "Sample 5 to 10 cardholders.",
+            "Cross-check SSN, address, telephone, email against current unit records.",
+            "Flag any stale or incorrect profile data."
+          ],
+          "callout": "Cardholder profile data inaccurate or outdated",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Account Status",
+          "actions": [
+            "Confirm no separated or transferred personnel have active accounts.",
+            "Cross-check against unit roster."
+          ],
+          "callout": "Active accounts found for personnel who departed the command",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Credit And Cash Limit Justifications",
+          "actions": [
+            "For each account above standard limits, confirm written justification on file.",
+            "Confirm the justification was approved by the appropriate authority."
+          ],
+          "callout": "Credit or cash limit increase without documented justification",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Credit Balance Handling",
+          "actions": [
+            "Identify any accounts with credit balances.",
+            "Confirm cardholder was notified.",
+            "Confirm credit balance refund or application is tracked."
+          ],
+          "callout": "Credit balance on account not refunded or applied",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Mission-Critical Status Review",
+          "actions": [
+            "Identify all mission-critical designated accounts.",
+            "Confirm the designation is current and justified."
+          ],
+          "callout": "Mission-critical status assigned without review or justification",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Stale profile data (SSN, address, contact).",
+            "Departed personnel still active.",
+            "Credit or cash limit increases without written justification.",
+            "Credit balances not addressed.",
+            "Mission-critical designations not reviewed.",
+            "Reports not annotated."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your Account Listing Report for the past 12 months?",
+        "How do you cross-check profile data against the unit roster?",
+        "Show me the written justification for any account above standard limits?",
+        "How do you handle credit balances on cardholder accounts?",
+        "Show me your mission-critical account list and review log?"
+      ],
+      "verification": [
+        "Reports on hand for the past 12 months.",
+        "Sample cardholders cross-checked for profile accuracy.",
+        "No active accounts for departed personnel.",
+        "Written justification on file for each above-standard limit.",
+        "Credit balances addressed and tracked.",
+        "Mission-critical designations reviewed and justified.",
+        "Each report annotated by the APC."
+      ],
+      "verified": true
+    },
+    "0109": {
+      "title": "CHECK-IN AND CHECK-OUT PROCEDURES AND STATEMENT OF UNDERSTANDING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix B, par. 6",
+            "text": "Commands shall implement standardized check-in and check-out procedures requiring all personnel to coordinate with the APC. The APC will ensure that cardholder accounts are transferred immediately upon check-in, that account status is verified during check-out, and that cardholders are informed of proper card use while executing PCS. A properly completed Statement of Understanding (SOU), DD Form 3120, must be on file for every cardholder."
+          }
+        ],
+        "summary": "Commands must require all personnel to check in and out with the APC. The APC transfers accounts on check-in, verifies status on check-out, and maintains a completed DD Form 3120 SOU for every cardholder."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Command Check-In And Check-Out Procedure",
+          "actions": [
+            "Ask for the written standard operating procedure.",
+            "Confirm the procedure requires APC coordination."
+          ],
+          "callout": "No documented command check-in/check-out procedure",
+          "severity": "finding"
+        },
+        {
+          "step": "Sample Recent Check-Ins And Check-Outs",
+          "actions": [
+            "Pull 5 to 10 personnel who checked in or out in the past 90 days.",
+            "Confirm each coordinated with the APC.",
+            "For check-ins, confirm account transfer was executed.",
+            "For check-outs, confirm account status was verified."
+          ],
+          "callout": "Sampled records show check-in or check-out steps skipped",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Statement Of Understanding On File",
+          "actions": [
+            "Sample 10 current cardholders.",
+            "Request each cardholder's DD Form 3120.",
+            "Confirm form is complete and signed by the cardholder."
+          ],
+          "callout": "Statement of Understanding not on file for cardholder",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify PCS Briefing Content",
+          "actions": [
+            "Ask the APC how cardholders are briefed on proper card use during PCS.",
+            "Request the briefing materials or talking points."
+          ],
+          "callout": "PCS briefing content does not address GTCC closure or transfer",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No written check-in or check-out procedure.",
+            "Personnel checking in or out without APC coordination.",
+            "Account transfer not executed on check-in.",
+            "Account status not verified on check-out.",
+            "DD Form 3120 missing for one or more cardholders.",
+            "PCS card-use briefing not documented."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your check-in and check-out standard operating procedure?",
+        "Walk me through how a cardholder checks in?",
+        "Walk me through how a cardholder checks out?",
+        "Show me the DD Form 3120 for the cardholders I name?",
+        "How do you brief cardholders about card use during PCS?"
+      ],
+      "verification": [
+        "Written check-in and check-out procedure on file.",
+        "Procedure requires APC coordination.",
+        "Sampled check-ins confirm APC coordination and account transfer.",
+        "Sampled check-outs confirm APC coordination and account status verification.",
+        "DD Form 3120 on file for every sampled cardholder.",
+        "PCS card-use briefing process documented."
+      ],
+      "verified": true
+    },
+    "0110": {
+      "title": "ACCOUNT CLOSURE UPON RETIREMENT, SEPARATION, TERMINATION, OR DEATH",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoD GTCC Regulations (April 2025), par. 041106",
+            "text": "APCs must close travel card accounts immediately upon a cardholder's retirement, separation, termination, or death. The cardholder's supervisor must be notified of any outstanding balance prior to final separation."
+          },
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix B, par. 9b",
+            "text": "Upon notification of a cardholder's separation, retirement, transfer, or death, the APC will deactivate or close the account in coordination with the GTCC vendor. The APC will notify the cardholder's supervisor of any outstanding balance and document the notification."
+          }
+        ],
+        "summary": "APCs must close accounts immediately upon retirement, separation, termination, or death. Supervisors must be notified in writing of any outstanding balance before final separation."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify All Separations In Past 12 Months",
+          "actions": [
+            "Pull a list of personnel who retired, separated, terminated, or died.",
+            "Cross-check against the cardholder roster."
+          ]
+        },
+        {
+          "step": "Verify Account Closure",
+          "actions": [
+            "For each departed cardholder, confirm the account was closed.",
+            "Confirm the closure date matches or precedes the separation date.",
+            "Reject any account still active after the separation date."
+          ],
+          "callout": "Account not closed within 60 days of separation",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Supervisor Notification For Outstanding Balances",
+          "actions": [
+            "For accounts with outstanding balance at separation, confirm the supervisor was notified.",
+            "Request a copy of the notification.",
+            "Confirm the notification was documented."
+          ],
+          "callout": "Outstanding balance not communicated to supervisor",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Death-Triggered Closures",
+          "actions": [
+            "For any deceased cardholder, confirm coordination with HQMC Casualty Branch and the GTCC vendor.",
+            "Confirm account was moved to the closed-deceased hierarchy."
+          ],
+          "callout": "Death-triggered closure not processed within required timeline",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Departed cardholder's account still active.",
+            "Account closure date later than separation date.",
+            "Supervisor not notified of outstanding balance.",
+            "No documented notification on file.",
+            "Deceased cardholder not coordinated with Casualty Branch."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your separation list for the past 12 months?",
+        "For each departed cardholder, show me the closure record?",
+        "How do you notify supervisors of outstanding balances?",
+        "Walk me through how you close an account upon notification of death?"
+      ],
+      "verification": [
+        "Separation list cross-checked against cardholder roster.",
+        "Each departed cardholder's account closed on or before separation date.",
+        "Supervisor notification documented for any outstanding balance.",
+        "Deceased cardholder accounts coordinated with HQMC Casualty Branch and vendor."
+      ],
+      "verified": true
+    },
+    "0111": {
+      "title": "ACCOUNT ACTIVITY TEXT REPORT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix B, par. 4a",
+            "text": "The APC will extract, work, and retain the monthly Account Activity Text Report. The unit commander or designated representative will review at least 10 percent of accounts with activity to verify that charges align with official travel. The APC will annotate the report to document the review and any corrective actions. Reports will be retained for the current month plus the previous two years."
+          }
+        ],
+        "summary": "APCs must extract the Account Activity Text Report monthly, annotate the review, retain it for the current month plus two years, and ensure the commander or designated representative reviews at least 10 percent of accounts with activity each cycle."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Past 12 Months Of Reports",
+          "actions": [
+            "Ask for monthly Account Activity Text Reports.",
+            "Confirm one report per cycle."
+          ],
+          "callout": "Reports for past 12 months not on file",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Annotation Of Review",
+          "actions": [
+            "Confirm each report is annotated to demonstrate review.",
+            "Reject any unannotated report."
+          ],
+          "callout": "No annotation of monthly review",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify 10 Percent Sample Review",
+          "actions": [
+            "Count the number of accounts with activity per cycle.",
+            "Confirm at least 10 percent were reviewed.",
+            "Request the reviewing official's notation or signature."
+          ],
+          "callout": "10 percent sample review not conducted",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Travel Authorization Alignment",
+          "actions": [
+            "Sample 5 reviewed accounts.",
+            "Cross-check charges against travel orders.",
+            "Confirm charges align with official travel."
+          ],
+          "callout": "Transactions not validated against travel authorizations",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Retention",
+          "actions": [
+            "Confirm reports retained for current month plus two years."
+          ],
+          "callout": "Reports not retained per the required period",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Reports missing for one or more cycles.",
+            "Reports not annotated.",
+            "Less than 10 percent of accounts reviewed.",
+            "Reviewing official not identified on the report.",
+            "Charges identified that do not align with travel orders.",
+            "Retention period not met."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your Account Activity Text Reports for the past 12 months?",
+        "Show me how you annotate the review?",
+        "How do you select the 10 percent sample for review?",
+        "Show me a sample of reviewed accounts and their corresponding travel orders?",
+        "How long do you retain these reports?"
+      ],
+      "verification": [
+        "Reports on hand for the past 12 months.",
+        "Each report annotated by reviewing official.",
+        "At least 10 percent of accounts with activity reviewed per cycle.",
+        "Sampled charges align with official travel orders.",
+        "Retention period (current month plus two years) met."
+      ],
+      "verified": true
+    },
+    "0112": {
+      "title": "DECLINED AUTHORIZATION REPORT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix B, par. 4a(4)",
+            "text": "The APC will extract, work, and retain the monthly Declined Authorization Report. The APC will annotate corrective actions taken to resolve each decline and document any follow-up action for attempted misuse, abuse, or fraud."
+          }
+        ],
+        "summary": "APCs must extract the Declined Authorization Report monthly, annotate corrective actions taken to resolve each decline, and document follow-up for any attempted misuse, abuse, or fraud."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Past 12 Months Of Reports",
+          "actions": [
+            "Ask for monthly Declined Authorization Reports."
+          ],
+          "callout": "Reports for past 12 months not on file",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Annotation Of Each Decline",
+          "actions": [
+            "For each decline, confirm corrective action is annotated.",
+            "Categorize declines: legitimate (limit reached, geographic block, etc.) versus suspicious."
+          ],
+          "callout": "Declines not annotated with cardholder and corrective action",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Misuse-Abuse-Fraud Follow-Up",
+          "actions": [
+            "For any decline flagged as suspicious, confirm a follow-up action is documented.",
+            "Confirm supervisor and commander notification where required."
+          ],
+          "callout": "Misuse/abuse/fraud identified by declined authorizations not followed up",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Retention",
+          "actions": [
+            "Confirm reports retained per command retention policy."
+          ],
+          "callout": "Reports not retained per the required period",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Reports missing for one or more cycles.",
+            "Declines not annotated with corrective action.",
+            "Suspicious declines not flagged or followed up.",
+            "No documentation of misuse-abuse-fraud follow-up actions."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your Declined Authorization Reports for the past 12 months?",
+        "Walk me through how you annotate a decline?",
+        "Show me an example of a decline flagged as suspicious and the follow-up action?",
+        "How do you escalate suspicious declines to the supervisor and commander?"
+      ],
+      "verification": [
+        "Reports on hand for the past 12 months.",
+        "Each decline annotated with corrective action.",
+        "Suspicious declines categorized and followed up.",
+        "Misuse-abuse-fraud follow-up actions documented.",
+        "Retention period met."
+      ],
+      "verified": true
+    },
+    "0113": {
+      "title": "SUPERVISOR NOTIFICATION OF MISUSE, ABUSE, OR FRAUD",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, par. 4a(1)(a)",
+            "text": "Upon discovery of potential misuse, abuse, or fraud, the APC will immediately notify the cardholder's supervisor in writing and inform the commander. The APC will keep a record of the supervisor's notification and related correspondence in the cardholder's GTCC file."
+          }
+        ],
+        "summary": "APCs must notify the cardholder's supervisor in writing of any potential misuse, abuse, or fraud and inform the commander. The APC retains documentation of the notification."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Potential Misuse Cases In Past 24 Months",
+          "actions": [
+            "Pull from Account Activity Text Reports and Declined Authorization Reports.",
+            "Identify any flagged transaction or pattern."
+          ]
+        },
+        {
+          "step": "Verify Supervisor Notification",
+          "actions": [
+            "For each case, confirm the supervisor was notified in writing.",
+            "Request a copy of the notification."
+          ],
+          "callout": "Supervisor not notified of identified misuse",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Commander Informed",
+          "actions": [
+            "Confirm the commander received the notification or summary.",
+            "Request proof of transmittal."
+          ],
+          "callout": "Commander not informed of misuse/abuse/fraud",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Documentation In Cardholder File",
+          "actions": [
+            "Confirm the notification and correspondence are retained in the cardholder's GTCC file."
+          ],
+          "callout": "Documentation of misuse not filed in cardholder record",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Misuse identified but supervisor not notified.",
+            "Verbal notification without written documentation.",
+            "Commander not informed.",
+            "Notification correspondence not retained in cardholder file."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me all potential misuse cases from the past 24 months?",
+        "Show me the written supervisor notification for each case?",
+        "Show me proof the commander was informed?",
+        "Show me where this correspondence is filed in the cardholder's record?"
+      ],
+      "verification": [
+        "All potential misuse cases identified.",
+        "Written supervisor notification on file for each.",
+        "Commander informed for each.",
+        "Correspondence retained in cardholder GTCC file."
+      ],
+      "verified": true
+    },
+    "0114": {
+      "title": "POLICY CHANGES DISTRIBUTION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix B, par. 13",
+            "text": "The APC will ensure that all cardholders, command leadership, and subordinate hierarchy-level APCs are informed of policy and procedure changes to the GTCC Program. Distribution must be documented and the APC must retain proof of distribution."
+          }
+        ],
+        "summary": "APCs must distribute GTCC policy and procedure changes to cardholders, command leadership, and subordinate HL APCs, and retain documented proof of distribution."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Policy Changes Issued In Past 24 Months",
+          "actions": [
+            "Request a list of GTCC policy updates, MARADMINs, or DoD GTCC Regulation revisions issued."
+          ]
+        },
+        {
+          "step": "Verify Distribution To Cardholders",
+          "actions": [
+            "For each change, request proof of distribution to cardholders.",
+            "Acceptable proof: email distribution list, signed acknowledgment roster, training roster."
+          ],
+          "callout": "Policy changes not distributed to cardholders",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Distribution To Command Leadership",
+          "actions": [
+            "Request proof of distribution to command leadership."
+          ],
+          "callout": "Policy changes not distributed to command leadership",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Distribution To Subordinate HL APCs",
+          "actions": [
+            "Identify subordinate hierarchy-level APCs.",
+            "Request proof of distribution to each."
+          ],
+          "callout": "Policy changes not distributed to subordinate HL APCs",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Policy changes not distributed.",
+            "Distribution not documented.",
+            "Subordinate HL APCs not on the distribution list.",
+            "No procedure for tracking new policy publications."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What GTCC policy changes have been issued in the past 24 months?",
+        "How do you distribute each change to cardholders?",
+        "Show me your distribution log or email records?",
+        "How do you ensure subordinate HL APCs receive the changes?"
+      ],
+      "verification": [
+        "Policy changes identified for the past 24 months.",
+        "Distribution to cardholders documented for each.",
+        "Distribution to command leadership documented for each.",
+        "Distribution to subordinate HL APCs documented for each.",
+        "Procedure in place for tracking new policy publications."
+      ],
+      "verified": true
+    },
+    "0115": {
+      "title": "PRIVACY ACT COMPLIANCE AND RECORD STORAGE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoD GTCC Regulations (April 2025), par. 041103",
+            "text": "Charge card information is sensitive and, in some instances, is considered personally identifiable information. Therefore, it must be protected based on the Privacy Act of 1974. APCs maintaining these records must ensure they are marked and protected in accordance with the provisions of the Privacy Act. Records may be retained in hardcopy, in a secure electronic format, or an authorized document management system."
+          }
+        ],
+        "summary": "GTCC records contain personally identifiable information and must be stored in a secure location, clearly marked as Privacy Act protected, and accessible only to authorized personnel."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect Physical Storage Location",
+          "actions": [
+            "Walk through the APC's record storage area.",
+            "Confirm hardcopy records are in locked cabinets or restricted-access spaces."
+          ],
+          "callout": "Physical storage not lockable or unsecured",
+          "severity": "finding"
+        },
+        {
+          "step": "Inspect Electronic Storage",
+          "actions": [
+            "Verify electronic records are on an approved system (SharePoint with access controls, encrypted drive, etc.).",
+            "Confirm access is limited to APC personnel and required personnel."
+          ],
+          "callout": "Electronic storage not access-controlled per Privacy Act",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Privacy Act Markings",
+          "actions": [
+            "Confirm records are clearly marked as Privacy Act protected.",
+            "Confirm folders, drives, or document headers carry the appropriate notice."
+          ],
+          "callout": "Required Privacy Act markings not applied",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Access Controls",
+          "actions": [
+            "Identify who has access to GTCC records.",
+            "Confirm access list is current and limited to need-to-know."
+          ],
+          "callout": "Access not limited to authorized personnel",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Hardcopy records in an unlocked cabinet or open area.",
+            "Electronic records on unrestricted drive or shared folder.",
+            "Records not marked as Privacy Act protected.",
+            "Access not limited to need-to-know.",
+            "No access log or review process."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me where you store your hardcopy GTCC records?",
+        "Show me where electronic records are stored and who has access?",
+        "How are records marked as Privacy Act protected?",
+        "Who has access to these records?",
+        "When was the access list last reviewed?"
+      ],
+      "verification": [
+        "Hardcopy records stored in locked cabinet or restricted space.",
+        "Electronic records on approved access-controlled system.",
+        "Records clearly marked as Privacy Act protected.",
+        "Access limited to need-to-know personnel.",
+        "Access list documented and current."
+      ],
+      "verified": true
+    },
+    "0201": {
+      "title": "CBA APC APPOINTMENT LETTER",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix C, par. 5",
+            "text": "The commander shall designate a primary and alternate APC for the Centrally Billed Account in writing, using the appointment letter template in the DoD GTCC Regulations. The appointment letter must include mailing addresses, e-mail addresses, telephone numbers, hierarchy numbers and hierarchy levels for both primary and alternate APCs. A copy of the appointment letter must be provided to the next higher-level APC to enable access to CitiManager EAS. APC appointment letters must be renewed every three years after the initial appointment or when there is a change in the appointing official."
+          }
+        ],
+        "summary": "Commanders must appoint a primary and alternate CBA APC in writing using the Annex 10 template, provide a copy to the next higher-level APC for EAS access, and renew the appointment every three years or whenever the appointing official changes. Inspector Note: Current CBA APC appointment letters must be updated using the DoD GTCC Regulations Annex 10 template no later than 31 December 2025."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Current CBA APC Appointment Letter",
+          "actions": [
+            "Ask for the primary and alternate CBA APC appointment letter.",
+            "Verify signed and dated."
+          ],
+          "callout": "No CBA APC appointment letter on file for active account",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Signatory Authority",
+          "actions": [
+            "Confirm signature is the commander's.",
+            "If by direction, request delegation documentation."
+          ],
+          "callout": "Signed below required signatory level",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Template Compliance",
+          "actions": [
+            "Compare against Annex 10 template.",
+            "Reject any post-31 December 2025 letter not on the template."
+          ],
+          "callout": "Template non-compliant",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Required Information",
+          "actions": [
+            "Confirm primary and alternate entries: full name, mailing address, telephone, email, hierarchy number, hierarchy level."
+          ],
+          "callout": "Required data elements missing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Higher APC Copy",
+          "actions": [
+            "Request proof of transmittal to next higher-level APC.",
+            "Confirm purpose stated: CitiManager EAS access."
+          ],
+          "callout": "Copy not provided to higher APC",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Three-Year Renewal And Currency Of Appointing Official",
+          "actions": [
+            "Confirm appointment within three-year window.",
+            "Confirm appointing commander still in command."
+          ],
+          "callout": "Older than three years not renewed, or signed by prior commander",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Appointment not on Annex 10 template after 31 December 2025.",
+            "Required fields missing.",
+            "No copy provided to higher-level APC.",
+            "Appointment expired.",
+            "Appointment not reissued after change of commander."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your current CBA APC appointment letter?",
+        "Show me proof you provided a copy to the next higher-level APC?",
+        "When was this appointment last renewed?",
+        "Has the appointing commander changed since this appointment?"
+      ],
+      "verification": [
+        "Primary and alternate CBA APC appointed in writing.",
+        "Annex 10 template used.",
+        "All required fields present.",
+        "Copy provided to higher-level APC for EAS access.",
+        "Appointment within three-year renewal window.",
+        "Appointment current to the appointing commander."
+      ],
+      "verified": true
+    },
+    "0202": {
+      "title": "UNIT TRAVEL CARDHOLDER DESIGNATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, ch 3, par. 1b(2)",
+            "text": "The commander shall designate Unit Travel Cardholders (UTC) in writing. The designation letter must include the UTC mailing address, telephone number, email address, Centrally Billed Account Number, hierarchy number, and hierarchy level."
+          }
+        ],
+        "summary": "Commanders must designate UTCs in writing with all six required data elements: mailing address, telephone, email, CBA number, hierarchy number, and hierarchy level. Inspector Note: The designation letter template is provided in MCO 4600.40C, encl 2, Appendix F."
+      },
+      "howToInspect": [
+        {
+          "step": "Request All UTC Designation Letters",
+          "actions": [
+            "Ask for the current designation letter for each UTC.",
+            "Verify each is signed by the commander."
+          ],
+          "callout": "No UTC designation letters on file",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Required Data Elements",
+          "actions": [
+            "For each letter, confirm mailing address present.",
+            "Confirm telephone number present.",
+            "Confirm email address present.",
+            "Confirm CBA Number present.",
+            "Confirm hierarchy number present.",
+            "Confirm hierarchy level present."
+          ],
+          "callout": "Required data elements missing from designation",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Cross-Check UTC Roster Against CBA Records",
+          "actions": [
+            "Compare designated UTCs against the active CBA cardholder list in EAS.",
+            "Flag any UTC active in EAS without a written designation.",
+            "Flag any designated UTC inactive in EAS."
+          ],
+          "callout": "UTC roster does not match CBA records",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "UTC active in EAS without written designation.",
+            "Designation letter missing one or more required data elements.",
+            "Designation letter not signed by commander.",
+            "Stale designation: UTC departed but designation not rescinded."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the designation letter for each current UTC?",
+        "Walk me through the six required data elements for each?",
+        "Are there any UTCs active in EAS without a designation letter?",
+        "How do you rescind a UTC designation when someone departs?"
+      ],
+      "verification": [
+        "Designation letter on file for every active UTC.",
+        "Each letter includes all six required data elements.",
+        "Each letter signed by the commander.",
+        "UTC roster cross-checked against EAS active list.",
+        "No undesignated UTC active in EAS."
+      ],
+      "verified": true
+    },
+    "0203": {
+      "title": "CBA APC TRAINING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoD GTCC Regulations (April 2025), par. 040801",
+            "text": "When an individual is appointed as a new APC, it is mandatory that the appointee complete the Programs and Policies - Travel Card Program Management (APC and CPM Course) [Mandatory]. APCs will ensure a copy of the certification of completion is retained or can be found in TraX. Refresher training is required every three years and may be obtained from other sources, as approved by the CPM."
+          }
+        ],
+        "summary": "CBA APCs must complete the mandatory APC Course prior to appointment, retain the certificate, and refresh training every three years. Inspector Note: The training requirement is identical for IBA and CBA APCs. A single APC certificate covers both functions if the individual serves in both roles."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify All Appointed CBA APCs",
+          "actions": [
+            "Pull the current primary and alternate CBA APC appointment letters.",
+            "Identify appointment dates."
+          ]
+        },
+        {
+          "step": "Verify Initial Training Predates Appointment",
+          "actions": [
+            "Request the APC Course certificate of completion from TraX.",
+            "Confirm certificate date predates the appointment date."
+          ],
+          "callout": "APC appointed without prior CBA training",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Refresher Training Currency",
+          "actions": [
+            "Confirm no certificate older than three years.",
+            "If refresher training was obtained outside TraX, confirm CPM approval."
+          ],
+          "callout": "Refresher training overdue",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Training Annotation On Appointment Letter",
+          "actions": [
+            "Confirm the appointment letter annotates the training completion date."
+          ],
+          "callout": "Training not annotated on the appointment letter",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CBA APC assumed duties before completing the APC Course.",
+            "Certificate of completion not on file.",
+            "Refresher training overdue.",
+            "Training annotation missing from appointment letter."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the APC Course certificate for each CBA APC?",
+        "When did each APC complete refresher training?",
+        "Where is the training date annotated on the appointment letter?"
+      ],
+      "verification": [
+        "Certificate on file for each CBA APC.",
+        "Certificate date predates appointment date.",
+        "No certificate older than three years.",
+        "Training date annotated on each appointment letter."
+      ],
+      "verified": true
+    },
+    "0204": {
+      "title": "CPM NOTIFICATION UPON DEPARTURE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix C, par. 17",
+            "text": "When an APC/Account Manager and/or cardholder separates from their organization, retires, or becomes deceased, their account must be closed. The CBA APC must notify the HQMC CPM who will update CBA records and notify the card vendor to close the account."
+          }
+        ],
+        "summary": "CBA APCs must notify the HQMC CPM immediately upon the transfer, separation, reassignment, retirement, or death of any APC or cardholder so the CPM can close the account and notify the vendor. Inspector Note: Checklist cites MCO 4600.40B, encl 1, appendix C, par. 17. That reference was superseded by MCO 4600.40C, encl 2, appendix C, par. 17 (Closing/Canceling Unit Travel Card (UTC) Accounts) effective 12 January 2026. The substantive requirement is unchanged. Apply the 4600.40C citation."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify All Departures In Past 12 Months",
+          "actions": [
+            "Pull a list of CBA APCs and UTCs who transferred, separated, retired, were reassigned, or died."
+          ]
+        },
+        {
+          "step": "Verify CPM Notification For Each Departure",
+          "actions": [
+            "For each, confirm the HQMC CPM was notified.",
+            "Request proof of notification (email, official correspondence)."
+          ],
+          "callout": "CPM not notified of APC departure",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Timeliness",
+          "actions": [
+            "Confirm notification occurred immediately upon the APC learning of the departure.",
+            "Flag any notification delayed more than 30 days."
+          ],
+          "callout": "Notification untimely (past required window)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Account Closure Confirmation",
+          "actions": [
+            "Confirm the CPM acknowledged the notification.",
+            "Confirm the vendor closed the account."
+          ],
+          "callout": "Account closure not confirmed by the CPM",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Departure not reported to HQMC CPM.",
+            "Notification delayed.",
+            "No proof of notification on file.",
+            "Account still active after departure."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your departure list for the past 12 months?",
+        "Show me the CPM notification for each departure?",
+        "How quickly do you notify the CPM after learning of a departure?",
+        "How do you confirm the account was closed?"
+      ],
+      "verification": [
+        "Departure list cross-checked against CBA APC and UTC rosters.",
+        "CPM notification documented for each departure.",
+        "Notifications timely.",
+        "Account closure confirmed for each departure."
+      ],
+      "verified": true
+    },
+    "0205": {
+      "title": "CBA RECORD STORAGE AND PRIVACY ACT COMPLIANCE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix C, par. 19b",
+            "text": "Unit card plastics will be treated as a controlled item and stored in a limited access safe when not in use. CBA program records, whether hardcopy, secure electronic, or in an authorized document management system, must be maintained in a secure location that prevents unauthorized access, clearly marked, and protected in accordance with the Privacy Act."
+          }
+        ],
+        "summary": "CBA records and plastic UTCs must be stored in a secure, limited-access location. Records must be clearly marked Privacy Act protected. Inspector Note: Plastic UTCs must be stored in a limited-access safe when not in use. This is more restrictive than the IBA record storage standard."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect Plastic UTC Storage",
+          "actions": [
+            "Confirm UTCs are stored in a limited-access safe.",
+            "Verify the safe is locked when not in active use.",
+            "Identify who holds the combination or key."
+          ],
+          "callout": "Plastic UTC stored unsecured or accessible to non-authorized personnel",
+          "severity": "finding"
+        },
+        {
+          "step": "Inspect Hardcopy Record Storage",
+          "actions": [
+            "Confirm hardcopy CBA records in locked cabinet or restricted space."
+          ],
+          "callout": "Hardcopy records not in lockable storage",
+          "severity": "finding"
+        },
+        {
+          "step": "Inspect Electronic Record Storage",
+          "actions": [
+            "Verify electronic records on approved access-controlled system."
+          ],
+          "callout": "Electronic records not access-controlled",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Privacy Act Markings",
+          "actions": [
+            "Confirm records are marked Privacy Act protected."
+          ],
+          "callout": "Privacy Act markings missing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Limited Access",
+          "actions": [
+            "Identify who has access to UTCs and CBA records.",
+            "Confirm access limited to need-to-know."
+          ],
+          "callout": "Access not limited to authorized personnel",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Plastic UTCs not in a limited-access safe.",
+            "Safe combination known to unauthorized personnel.",
+            "Records not marked Privacy Act protected.",
+            "Access not limited."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me where you store the plastic UTCs?",
+        "Who has access to the safe?",
+        "Show me where CBA hardcopy and electronic records are stored?",
+        "How are records marked as Privacy Act protected?"
+      ],
+      "verification": [
+        "Plastic UTCs stored in a limited-access safe.",
+        "Safe access limited to authorized personnel.",
+        "Hardcopy records in locked cabinet or restricted space.",
+        "Electronic records on approved access-controlled system.",
+        "Records marked Privacy Act protected.",
+        "Access list current and need-to-know only."
+      ],
+      "verified": true
+    },
+    "0206": {
+      "title": "SEPARATION OF DUTIES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix C, par. 19a",
+            "text": "Management of CBAs must include appropriate separation of duties between CBA charge card officials. AOs/COs will not be cardholders within the same billing account, supply officers or equivalents will not be cardholders with authority to purchase accountable items, and resource or budget managers will not be cardholders or AOs with responsibility for executing their own funds."
+          }
+        ],
+        "summary": "AO/CO, APC, and cardholder roles must remain separated. AOs/COs cannot be cardholders within the same billing account. APCs cannot also serve as cardholders within their own program. Inspector Note: The APC and AO/CO cannot also serve as the cardholder within the same billing account."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Current AO/CO, APC, And Cardholder Roster",
+          "actions": [
+            "Pull each role by name from the appointment letters and EAS records."
+          ]
+        },
+        {
+          "step": "Cross-Check For Role Overlap",
+          "actions": [
+            "Confirm no individual holds AO/CO and cardholder roles within the same billing account.",
+            "Confirm no individual holds APC and cardholder roles within the same program.",
+            "Identify supply officers and confirm they do not hold cardholder authority for accountable items.",
+            "Identify resource and budget managers and confirm they do not hold cardholder or AO roles over their own funds."
+          ],
+          "callout": "Single individual holds AO/CO, APC, and cardholder roles concurrently",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Documentation Of Separation",
+          "actions": [
+            "Request the command's written separation-of-duties policy or appointment matrix."
+          ],
+          "callout": "No written documentation of separation of duties",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "AO/CO also serving as cardholder in the same billing account.",
+            "APC also serving as cardholder.",
+            "Supply officer holding cardholder authority for accountable items.",
+            "Resource manager serving as AO over own funds.",
+            "No written separation-of-duties policy."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your current roster of AO/CO, APC, and cardholders?",
+        "Are any of these roles held by the same person within the same billing account?",
+        "Show me your written separation-of-duties policy?",
+        "How do you verify role compliance when assigning new appointments?"
+      ],
+      "verification": [
+        "Current AO/CO, APC, and cardholder roster on hand.",
+        "No AO/CO also a cardholder in the same billing account.",
+        "No APC also a cardholder.",
+        "Supply officers do not hold cardholder authority for accountable items.",
+        "Resource managers do not hold conflicting AO or cardholder roles.",
+        "Written separation-of-duties policy on file."
+      ],
+      "verified": true
+    },
+    "0207": {
+      "title": "PAYMENT RECORDS RETENTION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix C, par. 16",
+            "text": "The commander or appointed designee shall retain all payment records and substantiating documents for a minimum of two years to support official travel and payment verification. Records include travel orders, itemized receipts, certified statements, contractor invoices, dispute documentation, and any additional documentation necessary to validate a proper, legal, and accurate payment."
+          },
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix C, par. 7(a)",
+            "text": "Purchases made on CBAs must be supported by a request from the appropriate authority. Appropriate authority is deemed to be a travel order issued in accordance with references (b) and (g) and applicable service regulations/directives."
+          }
+        ],
+        "summary": "Commands must retain all CBA payment records and substantiating documents for a minimum of two years."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Two-Year Retention Inventory",
+          "actions": [
+            "Ask for the CBA records covering the current year plus the prior two years."
+          ],
+          "callout": "Payment records not retained for the required two-year period",
+          "severity": "finding"
+        },
+        {
+          "step": "Sample CBA Charges",
+          "actions": [
+            "Pull 10 CBA charges from across the retention window.",
+            "For each, confirm: travel order on file, itemized receipt, certified statement, vendor invoice."
+          ],
+          "callout": "CBA charges sampled lack supporting documentation",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Dispute Documentation",
+          "actions": [
+            "Identify any disputed charges in the retention period.",
+            "Confirm dispute documentation is on file."
+          ],
+          "callout": "Disputes not documented or unresolved",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Storage And Retrievability",
+          "actions": [
+            "Confirm records can be retrieved within reasonable time for audit."
+          ],
+          "callout": "Storage not access-controlled or records not retrievable",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Retention period not met.",
+            "Travel order missing for a CBA charge.",
+            "Itemized receipt missing.",
+            "Dispute documentation incomplete.",
+            "Records present but unable to retrieve in audit-ready format."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your CBA records covering the past two years?",
+        "For the charges I name, show me the travel order, receipt, certified statement, and invoice?",
+        "Show me any dispute documentation from the past two years?",
+        "How quickly can you produce records for an external audit?"
+      ],
+      "verification": [
+        "Records on hand for the current year plus the prior two years.",
+        "Sample charges have complete supporting documentation.",
+        "Dispute documentation complete for any disputed charges.",
+        "Records retrievable in audit-ready format."
+      ],
+      "verified": true
+    },
+    "0208": {
+      "title": "CBA CHARGES AUTHORIZED AND COMPLIANT WITH DoD TRAVEL REGULATIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix C, par. 7(a)",
+            "text": "Purchases made on CBAs must be supported by a request from the appropriate authority. Appropriate authority is deemed to be a travel order issued in accordance with references (b) and (g) and applicable service regulations/directives."
+          },
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix C, par. 7(b)",
+            "text": "When other authority is used to support unit card purchases, such authority must contain the same elements as a competent travel order."
+          },
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix C, par. 7(c)(1)",
+            "text": "Authorized travel expenses are identified in reference (b). Expenses that are not covered by reference (b) but are deemed necessary shall be submitted to the CPM for review and approval. The CPM will coordinate the request with the applicable contracting officer, Defense Travel Management Office, and general counsel as appropriate."
+          },
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix C, par. 7(c)(2)",
+            "text": "Charges on the CBA transportation accounts shall be limited to air, bus, and rail charges, as well as Travel Management Company fees, unless otherwise authorized by the CPM. Unit card charges shall support group travel. Charges may be made on the CBA unit cards, consistent with charges made on the IBA and must likewise be supported by competent travel authorization documents secured in advance of the charges. When the CBA unit card is used for other than group travel, special written authorization must be granted in the authorization letter by the CPM."
+          }
+        ],
+        "summary": "All CBA charges must be supported by a travel order or equivalent authority, must align with authorized travel expenses identified in the JTR, and must be secured in advance of the charge. Exceptions require CPM approval. Inspector Note: Checklist cites MCO 4600.40B, encl 1, appendix C, par. 7(a-c). That reference was superseded by MCO 4600.40C, encl 2, appendix C, par. 7 (Authority for Travel) effective 12 January 2026. The substantive requirement is unchanged. Apply the 4600.40C citation."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull A Sample Of CBA Statements",
+          "actions": [
+            "Select 10 CBA transactions from the past 12 months.",
+            "Pull the statement for each."
+          ]
+        },
+        {
+          "step": "Verify Travel Order Authorization",
+          "actions": [
+            "For each charge, confirm a travel order or equivalent authority exists.",
+            "Confirm the authority was issued before the charge date."
+          ],
+          "callout": "CBA charge without an authorized travel order",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Compliance With Authorized Expenses",
+          "actions": [
+            "Cross-check each charge against allowed travel expenses in the JTR.",
+            "Flag any charge not in an authorized category."
+          ],
+          "callout": "CBA charge for non-authorized expense category",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Transportation Account Charges",
+          "actions": [
+            "For transportation CBA charges, confirm only air, bus, rail, and TMC fees unless otherwise CPM-authorized."
+          ],
+          "callout": "Transportation account misused",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Non-Group-Travel Authorization",
+          "actions": [
+            "For any UTC charge for non-group travel, confirm written CPM authorization on file."
+          ],
+          "callout": "Non-group-travel charge without authorization",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CBA charge without supporting travel order.",
+            "Travel order issued after the charge date.",
+            "Charge in an unauthorized expense category.",
+            "Transportation account charge outside air, bus, rail, TMC fees without CPM authorization.",
+            "Non-group-travel UTC charge without CPM authorization letter."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me 10 CBA statements from the past 12 months?",
+        "For each charge, show me the corresponding travel order?",
+        "How do you verify each charge is authorized before approving payment?",
+        "Show me any CPM authorization letters for non-standard charges?"
+      ],
+      "verification": [
+        "Sample charges traced to supporting travel orders.",
+        "Travel order dates precede charge dates.",
+        "All sampled charges in authorized expense categories.",
+        "Transportation account charges within allowed categories or CPM-authorized.",
+        "UTC non-group-travel charges have CPM authorization letters on file."
+      ],
+      "verified": true
+    },
+    "0209": {
+      "title": "CBA DECLINED AUTHORIZATION REPORT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix C, par. 21a",
+            "text": "The CBA APC will extract the monthly Declined Authorization Report after the completion of all account billing cycles (cycle load complete on the 28th of each month). The APC will annotate corrective actions for authorized transactions and document any attempted misuse, abuse, or fraud. Reports will be retained for the current year plus the previous two years."
+          }
+        ],
+        "summary": "CBA APCs must extract the Declined Authorization Report after the 28th of each month, annotate corrective actions and any misuse follow-up, and retain reports for the current year plus prior two years."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Past 24 Months Of Declined Authorization Reports",
+          "actions": [
+            "Ask for monthly reports.",
+            "Confirm each report dated after the 28th of its respective cycle."
+          ],
+          "callout": "Reports for past 24 months missing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Annotation Of Corrective Actions",
+          "actions": [
+            "For each declined transaction, confirm corrective action is annotated."
+          ],
+          "callout": "Declines not annotated with corrective action",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Misuse/Abuse/Fraud Documentation",
+          "actions": [
+            "For any decline flagged as attempted misuse, confirm follow-up documentation.",
+            "Confirm supervisor and commander notifications."
+          ],
+          "callout": "Misuse/abuse/fraud findings from declines not documented",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Retention",
+          "actions": [
+            "Confirm reports retained for current year plus prior two years."
+          ],
+          "callout": "Reports not retained per the required period",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Reports pulled before cycle close (before the 28th).",
+            "Declines not annotated.",
+            "Attempted misuse not documented.",
+            "Retention period not met."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your CBA Declined Authorization Reports for the past 24 months?",
+        "How do you ensure each report is pulled after the 28th cycle-load completion?",
+        "Show me an example of an annotated decline and a misuse follow-up?",
+        "How long do you retain these reports?"
+      ],
+      "verification": [
+        "Reports on hand for the past 24 months.",
+        "Each report dated after the 28th of its cycle.",
+        "All declines annotated with corrective action.",
+        "Attempted misuse documented and followed up.",
+        "Retention period met."
+      ],
+      "verified": true
+    },
+    "0210": {
+      "title": "CBA DELINQUENCY REPORT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix C, par. 21b",
+            "text": "The CBA APC will extract the monthly CBA Delinquency Report after the completion of all account billing cycles (cycle load complete on the 28th of each month). The report shall be annotated with the reason for each delinquency and the documented steps taken to resolve it. Reports will be retained for the current year plus the previous two years."
+          }
+        ],
+        "summary": "CBA APCs must extract and annotate the CBA Delinquency Report monthly after the 28th of the cycle, document reasons and resolution steps, and retain reports for the current year plus prior two years."
+      },
+      "howToInspect": [
+        {
+          "step": "Request 24 Months Of CBA Delinquency Reports",
+          "actions": [
+            "Ask for each monthly report."
+          ],
+          "callout": "CBA delinquency reports for past 24 months missing",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Annotation Of Each Delinquency",
+          "actions": [
+            "For each delinquent account, confirm reason for delinquency annotated.",
+            "Confirm documented resolution steps."
+          ],
+          "callout": "Delinquencies not annotated with cause and action",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Commander Notification",
+          "actions": [
+            "Confirm commander received report or summary monthly."
+          ],
+          "callout": "Commander not notified of CBA delinquency",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Retention",
+          "actions": [
+            "Confirm retention for current year plus prior two years."
+          ],
+          "callout": "Reports not retained",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Reports pulled before the 28th.",
+            "Delinquency reason not annotated.",
+            "Resolution steps not documented.",
+            "Commander not briefed.",
+            "Retention period not met."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your CBA Delinquency Reports for the past 24 months?",
+        "Walk me through how you annotate a delinquent account?",
+        "How do you brief the commander monthly?",
+        "How long do you retain these reports?"
+      ],
+      "verification": [
+        "24 months of reports on hand.",
+        "Each report dated after the 28th of its cycle.",
+        "Reason for delinquency annotated for each account.",
+        "Resolution steps documented.",
+        "Commander briefed monthly.",
+        "Retention period met."
+      ],
+      "verified": true
+    },
+    "0211": {
+      "title": "CBA AGING ANALYSIS SUMMARY REPORT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix C, par. 21c",
+            "text": "The CBA APC will extract the monthly DoD Travel CBA Aging Analysis Summary Report after the completion of all account billing cycles. The APC will analyze the summary-level delinquency data that contributes to Component performance metrics. Performance indicators are: Green (fully successful) 0.00 to 1.00 percent, Yellow (minimally successful) 1.01 to 2.00 percent, Red (unsuccessful) greater than 2.00 percent. Reports will be retained for the current year plus the previous two years."
+          }
+        ],
+        "summary": "CBA APCs must extract and analyze the CBA Aging Analysis Summary Report monthly after cycle load, classify the unit against Component performance thresholds, and retain reports for the current year plus prior two years. Inspector Note: Performance metric tiers: Green 0.00-1.00 percent, Yellow 1.01-2.00 percent, Red greater than 2.00 percent. The metric divides total DoD outstanding delinquent dollars by the Factored Net Charge Volume (FNCV)."
+      },
+      "howToInspect": [
+        {
+          "step": "Request 24 Months Of Aging Analysis Reports",
+          "actions": [
+            "Ask for each monthly report."
+          ],
+          "callout": "Reports for past 24 months missing",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Cycle Timing",
+          "actions": [
+            "Confirm each report pulled after the cycle-load completion."
+          ],
+          "callout": "Reports not timed to billing cycle",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Analysis Performed",
+          "actions": [
+            "Confirm APC annotated the unit's performance metric (Green, Yellow, or Red).",
+            "Confirm trend analysis is documented if multi-month patterns exist."
+          ],
+          "callout": "No analysis performed on reports",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Commander Briefing",
+          "actions": [
+            "Confirm commander briefed on monthly performance metric."
+          ],
+          "callout": "Commander not briefed",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Retention",
+          "actions": [
+            "Confirm retention for current year plus prior two years."
+          ],
+          "callout": "Reports not retained",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Reports missing for one or more cycles.",
+            "Performance metric not classified.",
+            "No trend analysis when patterns present.",
+            "Commander not briefed.",
+            "Retention period not met."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your CBA Aging Analysis Summary Reports for the past 24 months?",
+        "What was your unit's performance tier each month?",
+        "How do you brief the commander on Red or Yellow months?",
+        "Show me the analysis you perform on each report?"
+      ],
+      "verification": [
+        "24 months of reports on hand.",
+        "Each report pulled after cycle-load completion.",
+        "Performance metric classified for each month.",
+        "Trend analysis documented when applicable.",
+        "Commander briefed monthly.",
+        "Retention period met."
+      ],
+      "verified": true
+    },
+    "0212": {
+      "title": "CBA PROGRAM REVIEW",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix B, par. 10b",
+            "text": "Components must conduct a documented self-audit of their CBA program at least once every two years in accordance with applicable regulations. Significant weaknesses must be reported to the responsible commander and the Component Program Manager."
+          }
+        ],
+        "summary": "Commands must conduct a documented CBA program review at least every two years and report significant weaknesses to the commander and HQMC RFF CPM. Inspector Note: The current USMC IGMC checklist for the CBA section meets the program review requirement."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Most Recent CBA Program Review",
+          "actions": [
+            "Ask for the documented self-audit or IGMC checklist covering CBA.",
+            "Verify completion within the past 24 months."
+          ],
+          "callout": "No CBA program review within past 24 months",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Documentation Of Findings",
+          "actions": [
+            "Confirm weaknesses documented in writing.",
+            "Confirm corrective action plans recorded."
+          ],
+          "callout": "Findings not documented in writing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Reporting",
+          "actions": [
+            "Confirm commander received results.",
+            "Confirm HQMC RFF CPM received a copy."
+          ],
+          "callout": "Findings not reported to commander or CPM",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Corrective Actions Tracked",
+          "actions": [
+            "Confirm closure or current status of each corrective action."
+          ],
+          "callout": "Corrective actions not tracked",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No CBA program review within the past two years.",
+            "Review conducted but not documented.",
+            "Findings not reported to the commander.",
+            "Findings not reported to the HQMC RFF CPM.",
+            "Corrective actions not tracked to closure."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When was your last CBA program review?",
+        "Show me the documented results?",
+        "Show me proof the commander and HQMC RFF CPM received the results?",
+        "What corrective actions are open?"
+      ],
+      "verification": [
+        "CBA program review conducted within the past 24 months.",
+        "Review documented in writing.",
+        "Findings forwarded to the commander.",
+        "Findings forwarded to the HQMC RFF CPM.",
+        "Corrective actions tracked."
+      ],
+      "verified": true
+    },
+    "0301": {
+      "title": "VICM ACCESS AND TRAINING AT HL3 AND HL4",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoD GTCC Regulations (April 2025), par. 041502",
+            "text": "APCs at hierarchy levels 3 and 4 must obtain access to Visa IntelliLink Compliance Management (VICM) and complete the Programs and Policies - VICM training in TraX prior to assuming VICM duties. Refresher training is required every three years."
+          },
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix E, par. 2",
+            "text": "All HL3 and HL4 APCs are required to register for VICM access and complete the Programs and Policies - VICM training course in TraX. A certificate of completion must be retained on file."
+          }
+        ],
+        "summary": "HL3 and HL4 APCs must hold active VICM access and a current VICM training certificate. Refresher training is required every three years. Inspector Note: Apply this question only to commands with HL3 or HL4 hierarchy assignments. Lower-level HL5 and below APCs do not have VICM access requirements."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify HL3 And HL4 APCs At The Command",
+          "actions": [
+            "Pull APC appointment letters and verify hierarchy level.",
+            "If no HL3 or HL4 APC exists, mark N/A."
+          ]
+        },
+        {
+          "step": "Verify VICM Access",
+          "actions": [
+            "Ask each HL3 or HL4 APC to log in to VICM.",
+            "Confirm successful access."
+          ],
+          "callout": "HL3 or HL4 APC has no VICM access",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify VICM Training Certificate",
+          "actions": [
+            "Request the Programs and Policies - VICM training certificate from TraX.",
+            "Confirm certificate predates the assumption of VICM duties."
+          ],
+          "callout": "VICM training certificate not on file",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Refresher Currency",
+          "actions": [
+            "Confirm no certificate older than three years."
+          ],
+          "callout": "VICM training refresher overdue",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "HL3 or HL4 APC without VICM access.",
+            "APC unable to log in to VICM.",
+            "Training certificate not on file.",
+            "Refresher training overdue."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What hierarchy level is your APC?",
+        "Show me your VICM access by logging in?",
+        "Show me your Programs and Policies - VICM training certificate?",
+        "When did you last complete refresher training?"
+      ],
+      "verification": [
+        "HL3 and HL4 APCs identified at the command.",
+        "Each demonstrated VICM login.",
+        "Training certificate on file for each.",
+        "No certificate older than three years."
+      ],
+      "verified": true
+    },
+    "0302": {
+      "title": "MONTHLY VICM REVIEWS AND CASE MANAGEMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoD GTCC Regulations (April 2025), par. 041503",
+            "text": "On a monthly basis, APCs at HL3 and HL4 will log in to VICM, review the Analytics Module, evaluate chart results, flag questionable transactions, and create cases for instances of potential misuse, abuse, or fraud. APCs will conduct monthly follow-up on all open cases and close pending actions. APCs must also enter into VICM any misuse or potential misuse reported by subordinate hierarchy levels or identified outside of VICM."
+          }
+        ],
+        "summary": "HL3 and HL4 APCs must conduct monthly VICM reviews, create cases for flagged transactions, follow up monthly on open cases, and enter misuse identified outside VICM into the system. Inspector Note: The electronic questionnaire must be completed each cycle as part of the monthly review."
+      },
+      "howToInspect": [
+        {
+          "step": "Request VICM Login And Case History",
+          "actions": [
+            "Ask the APC to log in and show case history for the past 12 months."
+          ],
+          "callout": "No VICM case history for past 12 months",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Monthly Review Cadence",
+          "actions": [
+            "Confirm each month shows a documented review.",
+            "Confirm the electronic questionnaire was completed each cycle."
+          ],
+          "callout": "Monthly review cadence not met",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Cases Initiated For Flagged Transactions",
+          "actions": [
+            "Sample three months. For each, identify Analytics Module flags.",
+            "Confirm a case was initiated for each flag (or documented rationale for no case)."
+          ],
+          "callout": "Flagged transactions not opened as cases",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Monthly Follow-Up On Open Cases",
+          "actions": [
+            "Identify all open cases at month start.",
+            "Confirm each was followed up within the month.",
+            "Confirm closed cases have closure documentation."
+          ],
+          "callout": "Open cases not followed up monthly",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Entry Of Externally-Identified Misuse",
+          "actions": [
+            "Ask the APC if any misuse was reported by subordinate APCs or identified outside VICM.",
+            "For each, confirm a VICM case was created."
+          ],
+          "callout": "Externally identified misuse not entered into VICM",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Monthly review missing for one or more cycles.",
+            "Electronic questionnaire not completed.",
+            "Flagged transaction not actioned with a case.",
+            "Open cases not followed up monthly.",
+            "Externally-identified misuse not entered into VICM."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your VICM case history for the past 12 months?",
+        "Walk me through one month's Analytics Module review?",
+        "Show me the electronic questionnaire for each cycle?",
+        "Show me an example of a flagged transaction and the case you opened?",
+        "How do you enter misuse identified outside VICM?"
+      ],
+      "verification": [
+        "Monthly VICM review documented for each cycle.",
+        "Electronic questionnaire completed each cycle.",
+        "Cases initiated for flagged transactions.",
+        "Open cases followed up monthly.",
+        "Closed cases have closure documentation.",
+        "Externally-identified misuse entered into VICM."
+      ],
+      "verified": true
+    },
+    "0303": {
+      "title": "VICM SUPERVISOR AND COMMANDER NOTIFICATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 4600.40C, encl 2, appendix E, par. 4d",
+            "text": "When potential misuse, abuse, or fraud is discovered in VICM, the APC will notify the cardholder's supervisor in writing and inform the commander. The APC will retain official documentation of these notifications in the cardholder's GTCC file."
+          }
+        ],
+        "summary": "When VICM identifies potential misuse, abuse, or fraud, the APC must notify the supervisor in writing, inform the commander, and retain documented proof."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify All VICM Cases Flagged As Potential Misuse In Past 12 Months",
+          "actions": [
+            "Pull from VICM case history.",
+            "Filter to cases flagged as misuse, abuse, or fraud."
+          ]
+        },
+        {
+          "step": "Verify Supervisor Notification",
+          "actions": [
+            "For each, confirm written supervisor notification.",
+            "Request a copy."
+          ],
+          "callout": "Supervisor not notified of flagged misuse case",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Commander Informed",
+          "actions": [
+            "Confirm commander received notification or summary."
+          ],
+          "callout": "Commander not informed of flagged misuse case",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Documentation Filed",
+          "actions": [
+            "Confirm notification and correspondence are retained in the cardholder's GTCC file."
+          ],
+          "callout": "Documentation not filed in cardholder record",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "VICM misuse case without supervisor notification.",
+            "Verbal notification without written documentation.",
+            "Commander not informed.",
+            "Notification correspondence not filed."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me all VICM cases flagged as misuse in the past 12 months?",
+        "For each, show me the written supervisor notification?",
+        "Show me proof the commander was informed?",
+        "Show me where this correspondence is filed?"
+      ],
+      "verification": [
+        "All VICM misuse cases identified for the past 12 months.",
+        "Written supervisor notification on file for each.",
+        "Commander informed for each.",
+        "Correspondence retained in cardholder GTCC file."
+      ],
+      "verified": true
+    }
+  }
+}

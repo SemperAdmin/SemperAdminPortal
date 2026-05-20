@@ -1,0 +1,1090 @@
+{
+  "faNumber": "1900.16",
+  "sourceDoc": "SEPARATION RETIREMENT LIMITED DUTY (1900.16) - INSPECTOR GUIDE - REBUILT.docx",
+  "lastVerified": "2026-05-20",
+  "verifiedAtSource": true,
+  "items": {
+    "0101": {
+      "title": "SEPARATION DOCUMENTS MAINTAINED AND FORWARDED TO CMC (MMRP)",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 1101.1.b(2)",
+            "text": "The pre-separation interview shall consist of an explanation of the transition requirements for separating/retiring Marines (see Appendix C of this Manual); timeframes for attendance and information about mandatory transition training; procedures for obtaining a copy of the Verification of Military Education and Training (VMET) document (DD Form 2586); completion of DD Form 2648, Section II, one through six; and a brief description of the Pre-separation Counseling Checklist (DD Form 2648) to include where a Marine may obtain additional information or resources, services and encouraging spouse attendance."
+          },
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 1101.1.c(3)",
+            "text": "The completed DD Form 2648/2648-1, signed by the separating or retiring Marine and a designated transition official, shall be forwarded to MMRP-20 for inclusion in the Marine's OMPF."
+          },
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 6105.3.e",
+            "text": "Make the following entry as appropriate on page 11 of the service record upon completion of counseling. The Marine will acknowledge by signing the entry. The Marine's signature acknowledges that counseling has occurred, not that the Marine concurs with the content of the entry. These entries, once properly made, may not be removed by subsequent commanding officers based upon the passage of time or subsequent good performance. The date of the page 11 entry is the date that the Marine was counseled by the commanding officer. Forward a photocopy of the completed page 11 entry and written rebuttal statement, if any, to the CMC (MMRP-20) within 30 days."
+          }
+        ],
+        "summary": "Commands must maintain separation documents in the command file and forward required documents to CMC (MMRP-20) for OMPF inclusion. This includes Appendix J (pre-application checklist), NAVMC 118(11) Page 11 entries (6105 counseling, within 30 days of counseling), and DD Form 2648/2648-1 pre-separation counseling forms (forwarded by transition official). Inspector Note: Checklist cites MCO 1900.16 w/ch 2. Current edition is w/ch 3; Change 3 incorporates Change 2 per Hard Rule 7. Inspector should verify paragraph numbering on site."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample Recent Separations",
+          "actions": [
+            "Pull a sample of separations in the last 12 months covering discharge, release from active duty, and retirement."
+          ]
+        },
+        {
+          "step": "Verify Command File Retention",
+          "actions": [
+            "Confirm Appendix J or AA form (NAVMC 10274) on file.",
+            "Confirm Page 11 entries (NAVMC 118(11)) on file.",
+            "Confirm DD Form 2648 or 2648-1 (or eForm) on file."
+          ],
+          "callout": "Separation document missing from command file (Appendix J, Page 11, DD Form 2648)",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Submission To CMC (MMRP)",
+          "actions": [
+            "Confirm Page 11 forwarded to MMRP-20 within 30 days of counseling.",
+            "Confirm DD Form 2648 forwarded to MMRP-20 for OMPF inclusion."
+          ],
+          "callout": "DD Form 2648 not forwarded to MMRP-20 for OMPF inclusion",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Appendix J missing.",
+            "Page 11 entries not forwarded within 30 days.",
+            "DD Form 2648 not forwarded to MMRP-20."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who forwards Page 11 entries to MMRP-20?",
+        "How do you confirm receipt at MMRP-20?"
+      ],
+      "verification": [
+        "Appendix J and AA form on file in command record.",
+        "Page 11 entries on file and forwarded within 30 days.",
+        "DD Form 2648 series on file and forwarded to MMRP-20."
+      ],
+      "verified": true
+    },
+    "0102": {
+      "title": "ADMINISTRATIVE SEPARATION DOCUMENTS FORWARDED FOR OMPF INCLUSION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 6311.5",
+            "text": "Final action of the separation authority must be recorded. After final action in cases where a Marine receives an approved unsuspended separation, all papers shall be forwarded to CMC (MMRP-20) for inclusion in their OMPF. In cases where an approved separation is suspended, forward all papers to CMC (MMRP) for inclusion in the OMPF if the suspension is later vacated."
+          }
+        ],
+        "summary": "After final action on administrative separation, all separation papers must be forwarded to CMC (MMRP-20) for OMPF inclusion. CLA-resident documents are filed automatically by MMRP. Documents not in CLA must be manually forwarded by the command and confirmed in the OMPF."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample Administrative Separations",
+          "actions": [
+            "Pull a sample of administrative separations in the last 12 months."
+          ]
+        },
+        {
+          "step": "Verify CLA Residency Or Manual Forward",
+          "actions": [
+            "Confirm documents resident in CLA, or pull evidence of manual forward to MMRP-20."
+          ],
+          "callout": "Documents not in CLA and not manually forwarded to MMRP",
+          "severity": "finding"
+        },
+        {
+          "step": "Validate OMPF Inclusion",
+          "actions": [
+            "Spot-check OMPF for sampled Marines to confirm documents posted."
+          ],
+          "callout": "No OMPF validation after submission",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Documents not in CLA and not manually forwarded.",
+            "No OMPF validation after submission."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you verify documents reached the OMPF?",
+        "What is your process for documents not in CLA?"
+      ],
+      "verification": [
+        "Sample administrative separations show documents in CLA or manually forwarded.",
+        "OMPF inclusion validated."
+      ],
+      "verified": true
+    },
+    "0103": {
+      "title": "CONDITION NOT A DISABILITY - MEB CONVENING AUTHORITY ENDORSEMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 6203.2.b",
+            "text": "Certain conditions and defects of a developmental nature designated by the reference SECNAVINST 1850.4E do not constitute a physical disability and are not ratable in the absence of an underlying ratable causative disorder as determined by appropriate medical providers."
+          }
+        ],
+        "summary": "Administrative separation under condition not a disability requires the separation letter to be endorsed by an MEB Convening Authority, certifying the condition is not ratable by the PEB."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample Cases",
+          "actions": [
+            "Pull administrative separation cases in the last 12 months with basis of condition not a disability."
+          ]
+        },
+        {
+          "step": "Verify MEB Convening Authority Endorsement",
+          "actions": [
+            "Confirm separation letter endorsed by MEB Convening Authority."
+          ],
+          "callout": "Separation letter missing MEB Convening Authority endorsement",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Non-Ratability Documentation",
+          "actions": [
+            "Confirm medical documentation certifies the condition is not ratable by the PEB."
+          ],
+          "callout": "Non-ratability documentation missing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No MEB Convening Authority endorsement.",
+            "Non-ratability not documented."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who endorsed the condition not a disability separations?",
+        "Where is the non-ratability documentation filed?"
+      ],
+      "verification": [
+        "MEB Convening Authority endorsement on separation letter.",
+        "Non-ratability documentation on file."
+      ],
+      "verified": true
+    },
+    "0104": {
+      "title": "CONDITION NOT A DISABILITY - PROCEDURE AND DOCUMENTATION COMPLIANCE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 6203.2.f",
+            "text": "Condition Not a Disability. This basis now includes personality and other mental disorders. See reference SECNAVINST 1850.4E. Whenever a Marine's performance deteriorates or has an adverse effect on others in the unit, commanding officers and subordinate leaders will try to determine the cause. When the command suspects a physical or mental condition interferes with the Marine's effective performance of duty, the Marine should be referred to the appropriate medical authority. Commanders must comply with reference SECNAVINST 6320.24A reference DoDI 6490.04 when referring a Marine for a mental health evaluation. If examination by a medical officer confirms that the Marine is suffering from a physical or mental condition apparently beyond the individual's control and indicates that the condition is not a disability, initiate separation proceedings per paragraph 6303 or 6304 as appropriate. Condition(s) must be certified by an appropriately privileged medical provider as not ratable by the PEB."
+          }
+        ],
+        "summary": "Condition not a disability separations require medical referral and examination, certification by an appropriately privileged medical provider that the condition is not ratable by the PEB, and separation proceedings under par 6303 or 6304 as appropriate. Mental health referrals require compliance with the controlling SECNAVINST for command-directed mental health evaluations and DoDI 6490.04. Inspector Note: The verbatim source paragraph (MCO 1900.16 par 6203.2.f) cites both SECNAVINST 6320.24A and DoDI 6490.04. DoDI 6490.04 (4 March 2013 incorporating Change 1 effective 22 April 2020) is confirmed current. SECNAVINST 6320.24A is no longer published per the current BUMED/SECNAV 6320 series listing (6320.38D, 6320.79B, 6320.82B, 6320.83C, 6320.85A w/CH-1, 6320.92A, 6320.94, 6320.97A, 6320.100, 6320.101, 6320.104). No direct successor for command-directed mental health evaluations was identified in that series. Inspector should verify the current controlling SECNAVINST on site via BUMED or HQMC (HS) before classifying a discrepancy on the mental health referral element."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Case File",
+          "actions": [
+            "For each sampled case, pull the complete administrative separation package."
+          ]
+        },
+        {
+          "step": "Verify Medical Referral",
+          "actions": [
+            "Confirm Marine was referred to appropriate medical authority.",
+            "Confirm DoDI 6490.04 compliance for mental health referrals.",
+            "Confirm compliance with the current controlling SECNAVINST for command-directed mental health evaluations (verify currency on site since SECNAVINST 6320.24A is no longer published)."
+          ],
+          "callout": "No documented medical referral",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Medical Certification",
+          "actions": [
+            "Confirm appropriately privileged medical provider certified condition not ratable."
+          ],
+          "callout": "Medical certification missing from case file",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Separation Proceedings",
+          "actions": [
+            "Confirm proceedings initiated per par 6303 or 6304."
+          ],
+          "callout": "Separation proceedings not under par 6303 or 6304",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No medical referral documented.",
+            "Medical certification missing.",
+            "Wrong procedural section used."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you document medical referral for condition not a disability cases?"
+      ],
+      "verification": [
+        "Medical referral documented.",
+        "Medical certification on file.",
+        "Separation proceedings per par 6303 or 6304."
+      ],
+      "verified": true
+    },
+    "0105": {
+      "title": "MANDATORY PROCESSING FOR SEXUAL HARASSMENT OR WRONGFUL DISTRIBUTION OF INTIMATE IMAGE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 4103.2.c",
+            "text": "Processing for administrative separation is mandatory following the first substantiated incident of sexual harassment or wrongful distribution or broadcasting of an intimate image involving any of the following circumstances: (1) Threats or attempts to influence another's career or job for sexual favors; (2) Rewards in exchange for sexual favors; or, (3) Physical contact of a sexual nature which, if charged as a violation of the UCMJ, could result in a punitive discharge. (4) Violation of Article 1168 of reference United States Navy Regulations 1990 W/CH 1, including, but not limited to, the distribution or broadcasting of an intimate image, without consent, if done for personal gain; or with the intent to humiliate, harm, harass, intimidate, threaten, or coerce the depicted person; or with reckless disregard as to whether the depicted person would be humiliated, harmed, intimidated, threatened, or coerced."
+          },
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 6210.8.c",
+            "text": "See reference MCO P1400.32D W/CH 1-2, regarding non-punitive reductions relating to professional incompetence and competency review boards."
+          }
+        ],
+        "summary": "Administrative separation processing is mandatory after the first substantiated incident of sexual harassment or wrongful distribution/broadcasting of an intimate image meeting the four enumerated circumstances. An incident is substantiated by court-martial conviction, nonjudicial punishment, or a preponderance-of-the-evidence determination."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Substantiated Incidents",
+          "actions": [
+            "Pull SAPR and command discipline records for substantiated sexual harassment or intimate image incidents."
+          ]
+        },
+        {
+          "step": "Verify Mandatory Processing",
+          "actions": [
+            "Confirm administrative separation processing initiated after first substantiated incident."
+          ],
+          "callout": "First substantiated incident did not trigger administrative separation processing",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Substantiation Standard",
+          "actions": [
+            "Confirm substantiation by court-martial, NJP, or preponderance determination."
+          ],
+          "callout": "Substantiation standard not met (no court-martial, NJP, or preponderance determination)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "First substantiated incident did not trigger processing.",
+            "Substantiation standard not met."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you track substantiated sexual harassment and intimate image incidents?"
+      ],
+      "verification": [
+        "First substantiated incident triggered processing.",
+        "Substantiation standard met."
+      ],
+      "verified": true
+    },
+    "0106": {
+      "title": "MANDATORY PROCESSING FOR CHILD, INTIMATE PARTNER, OR DOMESTIC ABUSE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 1004.4.f (per Change 2 summary)",
+            "text": "Paragraph 1004.4f. Processing for involuntary administrative separation is mandatory for Service members determined to have committed an offense of child abuse or domestic or intimate partner abuse as defined in paragraph 1002 of this Manual."
+          },
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 1004 (domestic abuse repeat offenders)",
+            "text": "Domestic Abuse Repeat Offenders. Separation authorities shall initiate administrative separation proceedings for Marines determined to have committed a Substantiated second domestic abuse offense as defined and required by reference MCO 1754.11. When initiating an administrative separation as a result of domestic abuse involvement, the separation authority must include domestic abuse as part of the reason for separation so the spouse and family may initiate the application process for financial compensation and retention of ID card benefits and privileges through the Transitional Compensation for Abused Family Members program."
+          },
+          {
+            "citation": "MCO 1754.11A (8 Apr 2021), par 2.b(11) (Commanding Officer responsibilities)",
+            "text": "Document that the Marine engaged in conduct that is a dependent-abuse offense when referring for court martial and when initiating action to administratively separate the Marine from active duty so that the family members may apply for TCAD benefits in accordance with reference (a)."
+          },
+          {
+            "citation": "MCO 1754.11A (8 Apr 2021), par 4.a (TCAD)",
+            "text": "TCAD is a congressionally-mandated program that provides up to 36 months of nontaxable monetary payments and benefits to eligible dependents of Marines who are separated from the military due to dependent-abuse offenses, as per reference (i). The program helps ease the unexpected transition from military to civilian life for eligible dependents."
+          },
+          {
+            "citation": "MCO 1754.11A (8 Apr 2021), par 4.d (TCAD eligibility)",
+            "text": "The Marine must be convicted of a dependent abuse offense and separated from active duty under a court-martial sentence; forfeiture of all pay and allowances under a court-martial sentence; or administratively separated from active duty under applicable Military Service regulations as a result of a dependent abuse offense."
+          }
+        ],
+        "summary": "Involuntary administrative separation processing is mandatory for Marines determined to have committed child abuse, domestic abuse, or intimate partner abuse as defined in MCO 1900.16 par 1002. Domestic abuse must be cited in the reason for separation to support Transitional Compensation for Abused Dependents (TCAD) eligibility under MCO 1754.11A par 4. The CO must document the dependent-abuse offense when initiating administrative separation per MCO 1754.11A par 2.b(11). Inspector Note: The MCO 1900.16 par 1004 verbatim quote references \"MCO 1754.11\" (no letter suffix). MCO 1754.11A (8 April 2021) supersedes MCO 1754.11 per Hard Rule 7. The Transitional Compensation program is referred to as TCAD (Transitional Compensation for Abused Dependents) in MCO 1754.11A."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Substantiated Offenses",
+          "actions": [
+            "Pull FAP records and command discipline records for substantiated child, domestic, or intimate partner abuse."
+          ]
+        },
+        {
+          "step": "Verify Separation Processing Initiated",
+          "actions": [
+            "Confirm processing initiated for each substantiated offense."
+          ],
+          "callout": "Administrative separation processing not initiated for substantiated abuse offense",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Separation Letter Content",
+          "actions": [
+            "Confirm domestic abuse cited in the reason for separation."
+          ],
+          "callout": "Domestic abuse not cited in separation reason (precludes TCAD eligibility)",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Processing not initiated.",
+            "Domestic abuse not cited in separation reason."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you coordinate with FAP on substantiated abuse cases?"
+      ],
+      "verification": [
+        "Processing initiated for substantiated offenses.",
+        "Domestic abuse cited in separation reason where applicable."
+      ],
+      "verified": true
+    },
+    "0201": {
+      "title": "SBP TRAINING AND COUNSELING CODE POSTED IN MCTFS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1741.11D, par 4.a(2)",
+            "text": "Concept of Operations. MARINENET SBP training is required for all Marines prior to retirement."
+          },
+          {
+            "citation": "MCO 1741.11D, par 4.b(1)(a)",
+            "text": "Ensure all retiring Marines, regardless of marital status, receive SBP training. Active duty and disability retirement eligible Marines will complete SBP training via MARINENET prior to retirement. MARINENET will automatically report completion of this training using the existing training event code for table 32. During FY-12 Marines will receive a MOL notification at 18 years of service to complete MARINENET training and again when they request retirement."
+          },
+          {
+            "citation": "MCO 1741.11D, par 4.b(1)(c)",
+            "text": "Marines who do not have access to MARINENET must complete the tutorial in paragraph 5. After completion, prepare a page 11 entry per paragraph 4006.3V of the IRAM, and report via MOL/UDMIPS the training event code SP on those Marines."
+          }
+        ],
+        "summary": "All retiring Marines regardless of marital status must complete SBP training via MARINENET prior to retirement. MARINENET automatically reports completion. Marines without MARINENET access complete a tutorial and a page 11 entry, with training event code SP reported via MOL/UDMIPS."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Retirement-Eligible Marines",
+          "actions": [
+            "Pull list of Marines within 24 months of retirement."
+          ]
+        },
+        {
+          "step": "Verify MARINENET SBP Training Completion",
+          "actions": [
+            "Pull MARINENET completion records.",
+            "Confirm completion prior to retirement date."
+          ],
+          "callout": "MARINENET SBP training not completed prior to retirement",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify MCTFS Code SP Posted",
+          "actions": [
+            "Pull MCTFS records for each retiring Marine.",
+            "Confirm SBP counseling code SP posted (via auto-report from MARINENET or via MOL/UDMIPS for non-MARINENET cases)."
+          ],
+          "callout": "MCTFS code SP not posted",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Page 11 For Non-MARINENET Cases",
+          "actions": [
+            "For Marines lacking MARINENET access, confirm page 11 entry per IRAM par 4006.3V."
+          ],
+          "callout": "Non-MARINENET case missing page 11 entry",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "SBP training not completed prior to retirement.",
+            "Code SP not posted in MCTFS.",
+            "Non-MARINENET case missing page 11 entry."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you track SBP training completion?",
+        "Who posts code SP in MCTFS for non-MARINENET cases?"
+      ],
+      "verification": [
+        "MARINENET SBP training completion on file for each retiring Marine.",
+        "MCTFS code SP posted.",
+        "Page 11 entry on file for non-MARINENET cases."
+      ],
+      "verified": true
+    },
+    "0202": {
+      "title": "SPOUSAL CONCURRENCE NOTARIZED ON DD FORM 2656",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DODI 1332.42, par 4.2.a",
+            "text": "Written Spousal Concurrence. Written spousal concurrence is required when the member elects less than the maximum coverage, as described in Paragraphs 3.1.c. or 3.1.d. (1) For regular retirees, the signature of the spouse must be notarized on the DD Form 2656 on a date that is on or after the date the Service member signed the form but before the date of retirement. (2) For non-regular retirees, the signature of the spouse must be notarized on the DD Form 2656-5 on a date that is on or after the date the Service member signed the form and before the end of the 90-day period that begins on the day the member received NOE. (3) If a spouse is not geographically co-located with the member, the spouse may sign a separate spouse concurrence statement, approved for use by the Secretary concerned, containing the same information as has been recorded on the official DD Form 2656 or DD Form 2656-5. In such cases, a separate statement must be signed by the spouse on a date that is on or after the date the Service member made the election and the spouse's signature on the separate form must be notarized. (4) A notarized concurrence signature on the DD Form 2656, DD Form 2656-5, or spouse concurrence statement on a date that is on or after the date the member signed the form constitutes an acknowledgement by the signing spouse that the spouse freely and voluntarily concurred with the SBP election made by the member."
+          },
+          {
+            "citation": "MCO 1741.11D, par 4.b(1)(b)",
+            "text": "A spouse's notarized written concurrence is required when a Marine declines coverage, elects less than maximum spouse coverage, or elects child-only coverage in lieu of spouse coverage. The spouse's written concurrence must be obtained concurrently or shortly after the Marine makes a valid SBP election. If geographically separated, the notarization requirement may be accomplished by mail. If the retiring Marine declines SBP coverage, the Marine is barred from any future open enrollment period."
+          }
+        ],
+        "summary": "Married Marines electing other than maximum spouse coverage must obtain notarized spousal concurrence on DD Form 2656 (regular retirees) or DD Form 2656-5 (non-regular retirees). For regular retirees the notarization date must be on or after the member signature date and before retirement date. Geographically separated spouses may use a separate notarized concurrence statement. Declining SBP coverage bars future open enrollment."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Recent Retirements With Non-Default Elections",
+          "actions": [
+            "Identify retirements in last 12 months where election was less than maximum spouse coverage."
+          ]
+        },
+        {
+          "step": "Verify Notarized Spousal Concurrence",
+          "actions": [
+            "Confirm DD Form 2656 or 2656-5 has notarized spousal signature.",
+            "Confirm notarization date is on or after member signature date and before retirement date."
+          ],
+          "callout": "Spousal concurrence not notarized on DD Form 2656",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Geographically Separated Cases",
+          "actions": [
+            "For geographically separated spouses, confirm separate notarized concurrence statement on file."
+          ],
+          "callout": "Geographically separated spouse without separate notarized statement",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No notarization.",
+            "Notarization date before member signature date or after retirement date.",
+            "Geographic separation case lacks separate notarized statement."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What is your process for ensuring spousal concurrence is notarized?",
+        "How do you handle geographically separated spouses?"
+      ],
+      "verification": [
+        "Notarized spousal concurrence on DD Form 2656/2656-5 for all non-default elections.",
+        "Notarization dates within required window.",
+        "Separate notarized statements on file for geographically separated cases."
+      ],
+      "verified": true
+    },
+    "0203": {
+      "title": "DD FORM 2656 SUBMITTED TO DFAS 30 DAYS PRIOR TO RETIREMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 1406.1",
+            "text": "Commanding officers or directors of Marine Corps activities effecting separations (IPAC/Administration RUC) are responsible for ensuring that Marines are counseled on SBP prior to their retirement date. A completed election form (DD Form 2656) must be faxed with included Privacy Act form and mailed to DFAS at least 30 days prior to retirement or transfer to FMCR: Defense Finance and Accounting Service, U.S. Military Retired Pay, 8899 E 56th Street, Indianapolis, IN 46249-1200. Customer Service 1-800-321-1080. Fax # RAPIDS 1-800-469-6559."
+          },
+          {
+            "citation": "MCO 1900.16 w/ch 3, Appendix E, par E007.4",
+            "text": "Forward the DD Form 2656 to DFAS, US Military Retired Pay, 8899 E 56th Street, Indianapolis, IN 46249-1200 not later than 30 days prior to the retirement date. Forwarding of this form is no longer the responsibility of the individual Marine; the commanding officer is responsible for forwarding the form to the DFAS. Without the DD Form 2656, the DFAS will maximize deductions for tax purposes and for the Survivor Benefit Plan (SBP) coverage."
+          },
+          {
+            "citation": "MCO 1741.11D, par 5.b",
+            "text": "DD Form 2656 is available electronically at: https://www.manpower.usmc.mil/portal/page/portal/M_RA_HOME/MM/SR/RET_ACT/SBP Fax DD Form 2656 to: DFAS, London, KY at 1-800-469-6559. Mail completed DD Form 2656 to: DFAS, US Military Retirement Pay, P.O. Box 7130, London, KY 40742-7130."
+          }
+        ],
+        "summary": "Commands must submit completed DD Form 2656 to DFAS at least 30 days prior to a Marine's retirement, transfer to FMCR, TDRL, or PDRL. The commanding officer (not the Marine) is responsible for forwarding the form. MCTFS training code ZW must be posted reflecting submission. Inspector Note: MCO 1900.16 par 1406.1 and Appendix E007.4 list the DFAS address as Indianapolis, IN 46249-1200. MCO 1741.11D par 5.b lists DFAS, London, KY 40742-7130. Inspector should confirm the current DFAS mailing address with DFAS or HQMC (MMSR-6) at the time of inspection, as the address has been updated between policy issuances. The current DFAS fax number is consistent across both sources (1-800-469-6559)."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Retiring Marines List",
+          "actions": [
+            "Identify Marines transferring to retirement, FMCR, TDRL, or PDRL in last 12 months."
+          ]
+        },
+        {
+          "step": "Verify DFAS Submission Timing",
+          "actions": [
+            "Pull DD Form 2656 submission records.",
+            "Compute days between submission and retirement date.",
+            "Confirm at least 30 days."
+          ],
+          "callout": "DD Form 2656 submitted inside the 30-day window",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Commanding Officer Responsibility",
+          "actions": [
+            "Confirm commanding officer (not the Marine) forwarded the form."
+          ],
+          "callout": "Marine forwarded the form instead of the commanding officer",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify MCTFS Code ZW Posted",
+          "actions": [
+            "Pull MCTFS records.",
+            "Confirm TTC code ZW posted."
+          ],
+          "callout": "MCTFS code ZW not posted",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Submission inside the 30 day window.",
+            "Marine forwarded the form instead of commanding officer.",
+            "MCTFS code ZW not posted."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who submits DD Form 2656 to DFAS?",
+        "How do you confirm DFAS receipt?"
+      ],
+      "verification": [
+        "DD Form 2656 submitted at least 30 days prior.",
+        "Commanding officer responsible for forwarding.",
+        "MCTFS code ZW posted."
+      ],
+      "verified": true
+    },
+    "0301": {
+      "title": "UNIT LIMITED DUTY COORDINATOR APPOINTED IN WRITING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 8110.1.b",
+            "text": "Appoint a Limited Duty Coordinator (SNCO or above) in writing to: (1) Assist the commanding officer with all responsibilities pertaining to the limited duty and the DES/IDES process; (2) Identify, track and ensure proper administrative reporting of all personnel on light duty, TLD, PLD or who are processing through the DES/IDES."
+          }
+        ],
+        "summary": "Each unit must appoint, in writing, a Limited Duty Coordinator at SNCO or above to assist the commanding officer with limited duty and DES/IDES responsibilities and to identify, track, and report personnel in light duty, TLD, PLD, or DES/IDES status."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Appointment Letter",
+          "actions": [
+            "Request current Unit Limited Duty Coordinator appointment letter."
+          ],
+          "callout": "No written Limited Duty Coordinator appointment",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Grade",
+          "actions": [
+            "Confirm appointee is SNCO (E-6) or above."
+          ],
+          "callout": "Appointee below SNCO grade",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm letter is current and signed by the commanding officer."
+          ],
+          "callout": "Letter signed by prior commanding officer",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No written appointment.",
+            "Appointee below SNCO grade.",
+            "Letter signed by prior CO."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who is the current Limited Duty Coordinator and when were they appointed?"
+      ],
+      "verification": [
+        "Current appointment letter on file.",
+        "Appointee is SNCO or above.",
+        "Signed by current CO."
+      ],
+      "verified": true
+    },
+    "0302": {
+      "title": "MOL, MCTFS, AND SMART STATUS RECONCILIATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 8110.1.b",
+            "text": "Appoint a Limited Duty Coordinator (SNCO or above) in writing to: (1) Assist the commanding officer with all responsibilities pertaining to the limited duty and the DES/IDES process; (2) Identify, track and ensure proper administrative reporting of all personnel on light duty, TLD, PLD or who are processing through the DES/IDES. An advisory will be generated and sent to the Marine's command via electronic diary feedback report(s) (EDFR) and a Marine-On-Line (MOL) notification to the Marine and the unit's MOL manager when a Marine's TLD status is scheduled to expire within 60 days and will direct medical reevaluation; (3) Monitor and reconcile duty limitation code X on a monthly basis. This code will be system generated to signify that a Marine's six month period of TLD has expired."
+          }
+        ],
+        "summary": "The Limited Duty Coordinator must ensure MOL, MCTFS, and SMART uniformly reflect medically non-deployable, light duty, TLD, PLD, and DES status. EDFR advisories trigger at 60 days prior to TLD expiration. Duty limitation code X is reconciled monthly."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull A Sample Of LIMDU Cases",
+          "actions": [
+            "Identify Marines on light duty, TLD, PLD, or in DES in last 12 months."
+          ]
+        },
+        {
+          "step": "Cross-Reference MOL, MCTFS, SMART",
+          "actions": [
+            "For each sampled Marine, compare status in MOL, MCTFS, and SMART.",
+            "Identify mismatches."
+          ],
+          "callout": "Status mismatch across MOL, MCTFS, and SMART for sampled Marine",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Code X Reconciliation Cadence",
+          "actions": [
+            "Confirm monthly reconciliation log."
+          ],
+          "callout": "No documented monthly code X reconciliation",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Status mismatch across systems.",
+            "No monthly code X reconciliation."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you reconcile MOL, MCTFS, and SMART?",
+        "When was the last code X reconciliation?"
+      ],
+      "verification": [
+        "Status uniform across MOL, MCTFS, SMART.",
+        "Monthly code X reconciliation documented."
+      ],
+      "verified": true
+    },
+    "0303": {
+      "title": "NON-DEPLOYABLE 12 CONSECUTIVE MONTHS INTERNAL CONTROL PROCEDURES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 1601.3",
+            "text": "Commanders will evaluate, track and minimize the number of Marines that are in a non-deployable status, deployable with limitations, and deployable, but have individual medical readiness (IMR) deficiencies per reference DoDI 6025.19."
+          },
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 1602.1",
+            "text": "Marines who have been non-deployable for more than 12 consecutive months shall be evaluated for retention and one of three below actions taken. a. Recommended for retention on a case by case basis if determined to be in the best interest of the Marine Corps and forwarded to the Deputy Commandant, Manpower and Reserve Affairs (DC M&RA) for decision per paragraph 1603. b. Referred into the Disability Evaluation System (DES) in accordance to this Manual and reference DoDI 1332.18; or c. Processed for administrative separation in accordance with this Manual and references DoDI 1332.14, DoDI 1332.30, and SECNAVINST 1920.6C W/CH 5."
+          }
+        ],
+        "summary": "Marines non-deployable for more than 12 consecutive months must be evaluated for retention with one of three actions: retention waiver to HQMC (MMSR-2/DC M&RA), DES referral, or administrative separation. Commands must establish internal controls to identify, track, and initiate these actions."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Non-Deployable Tracker",
+          "actions": [
+            "Request the unit's non-deployable Marine tracker."
+          ],
+          "callout": "No internal control procedure for non-deployable Marines documented",
+          "severity": "finding"
+        },
+        {
+          "step": "Identify Marines At 12+ Months Non-Deployable",
+          "actions": [
+            "Compute days non-deployable for each Marine on the tracker."
+          ]
+        },
+        {
+          "step": "Verify Action Taken For Each 12+ Month Case",
+          "actions": [
+            "Confirm retention waiver submitted, DES referral, or administrative separation initiated."
+          ],
+          "callout": "12+ month non-deployable case with no action taken (no waiver, DES, or separation)",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "12+ month case with no action.",
+            "No written internal control procedure."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you track months in non-deployable status?",
+        "How do you trigger action at 12 months?"
+      ],
+      "verification": [
+        "Internal control procedure documented.",
+        "All 12+ month cases have an action taken or in progress."
+      ],
+      "verified": true
+    },
+    "0304": {
+      "title": "UNFIT MARINES SEPARATED OR RETIRED AS DIRECTED BY CMC (MMSR-4)",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 8402.2",
+            "text": "Specific. To retire a Marine for permanent physical disability, commanding officers will comply with the following: a. Commence separation processing immediately. (1) If transfer to a VA hospital is authorized and the effective date of transfer is before the date of retirement, immediately notify the CMC (MMSR-4) and WRR. (2) If transfer to a VA hospital is authorized and the effective date of transfer is after the date of retirement, immediately advise the CMC (MMSR-4) of the effective date of transfer to the VA hospital. b. Counsel the Marine and spouse regarding the Survivor Benefit Plan (SBP). See paragraph 1406. c. Ensure proper desgination of the SBP election in DD Form 2656. Upon completion of separation processing, but not later than the date of retirement, forward the Marine's completed DD Form 2656, Retired Pay Data Form to: Defense Finance Accounting Service, U.S. Military Retired Pay, 8899 E 56th Street, Indianapolis, IN 46249-1200. Note: Ensure that an appropriate unit diary drop entry is made reflecting the retirement."
+          }
+        ],
+        "summary": "Marines found unfit by the PEB must be separated or retired per CMC (MMSR-4) direction with separation processing commenced immediately, SBP counseling, DD Form 2656 forwarded to DFAS, and unit diary drop entry."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Recent PEB Unfit Determinations",
+          "actions": [
+            "Request list of Marines found unfit by PEB in last 12 months."
+          ]
+        },
+        {
+          "step": "Verify Processing Steps",
+          "actions": [
+            "Confirm separation processing commenced immediately.",
+            "Confirm SBP counseling occurred.",
+            "Confirm DD Form 2656 forwarded to DFAS.",
+            "Confirm unit diary drop entry made."
+          ],
+          "callout": "DD Form 2656 not forwarded to DFAS",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Delayed separation processing.",
+            "No SBP counseling.",
+            "DD Form 2656 not forwarded.",
+            "No unit diary entry."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What is your timeline for processing unfit determinations?"
+      ],
+      "verification": [
+        "Immediate processing initiated.",
+        "SBP counseling documented.",
+        "DD Form 2656 forwarded.",
+        "Unit diary entry made."
+      ],
+      "verified": true
+    },
+    "0305": {
+      "title": "TLD REEVALUATION 60 DAYS PRIOR TO EXPIRATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 8104.4",
+            "text": "Reevaluation. Re-evaluation must be scheduled 60 days before the termination of TLD at which time the MTF may: a. Return the Marine to full duty; b. Determine that an additional period of TLD is required to return the Marine to full duty. Forward a complete MEB to the CMC (MMSR-4) for departmental review as required. c. Forward the MEB(R) to the PEB if assigned overseas, for a determination of fitness for continued naval service. d. Refer the Marine into the IDES for disability determination."
+          },
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 8110.1.b(2)",
+            "text": "An advisory will be generated and sent to the Marine's command via electronic diary feedback report(s) (EDFR) and a Marine-On-Line (MOL) notification to the Marine and the unit's MOL manager when a Marine's TLD status is scheduled to expire within 60 days and will direct medical reevaluation."
+          }
+        ],
+        "summary": "Reevaluation must be scheduled 60 days before TLD termination. EDFR advisories trigger at the 60-day mark directing medical reevaluation. The MTF may return to full duty, recommend additional TLD, forward to PEB (overseas), or refer to IDES."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull TLD Roster",
+          "actions": [
+            "Request current TLD roster with expiration dates."
+          ]
+        },
+        {
+          "step": "Identify TLD Within 60 Days",
+          "actions": [
+            "Identify Marines with TLD expiring within 60 days."
+          ]
+        },
+        {
+          "step": "Verify Reevaluation Scheduled",
+          "actions": [
+            "Confirm medical reevaluation scheduled prior to expiration."
+          ],
+          "callout": "TLD expiration approaching without scheduled reevaluation",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "TLD expiration approaching without scheduled reevaluation.",
+            "EDFR advisory not actioned."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you track upcoming TLD expirations?"
+      ],
+      "verification": [
+        "TLD expirations tracked.",
+        "Reevaluations scheduled before expiration."
+      ],
+      "verified": true
+    },
+    "0306": {
+      "title": "TLD EXCEEDING 12 MONTHS - CMC (MMSR-4) APPROVAL WITH LDNMA",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 8003.24.a",
+            "text": "TLD for enlisted Marines may be approved at the local MTF for up to two initial periods of six months 12 months over the span of a career. Any additional periods past 12 months requires departmental review and approval from the CMC (MMSR-4) via submission of an AMEB(R) NAVMED 6100/5, which clearly indicates medical conditions, limitations, prognosis for recovery and expectation to return to full duty, continued active service and includes the commander's LDNMA."
+          },
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 8110.2.c",
+            "text": "For enlisted periods of TLD greater than 12 months, forward a copy of the AMEB(R) NAVMED 6100/5 to the CMC (MMSR-4), which clearly indicates medical conditions, limitations, prognosis for recovery and continued active duty, and includes the Commander's LDNMA."
+          }
+        ],
+        "summary": "TLD exceeding 12 months over the span of a career requires CMC (MMSR-4) approval via submission of AMEB(R) NAVMED 6100/5 with commander's LDNMA (Limited Duty Non-Medical Assessment)."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull TLD Career-Length Records",
+          "actions": [
+            "Request cumulative TLD totals for each Marine on TLD."
+          ]
+        },
+        {
+          "step": "Identify Marines Exceeding 12 Months Cumulative",
+          "actions": [
+            "Compute total TLD over career.",
+            "Identify Marines exceeding 12 months."
+          ]
+        },
+        {
+          "step": "Verify AMEB(R) Submission With LDNMA",
+          "actions": [
+            "Confirm AMEB(R) NAVMED 6100/5 forwarded to CMC (MMSR-4).",
+            "Confirm LDNMA included."
+          ],
+          "callout": "AMEB(R) submitted without LDNMA",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "TLD past 12 months without CMC (MMSR-4) approval.",
+            "AMEB(R) submitted without LDNMA."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you track cumulative TLD across a career?"
+      ],
+      "verification": [
+        "TLD over 12 months has CMC (MMSR-4) approval.",
+        "AMEB(R) submitted with LDNMA."
+      ],
+      "verified": true
+    },
+    "0307": {
+      "title": "VOLUNTARY EXTENSION FOR TLD OR DES BEYOND EAS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 8111.1",
+            "text": "Voluntary Medical Extension. Regular Component Marines. Commanding officers of Regular component Marines who do not have a previously approved or mandatory separation or retirement date are authorized to approve the first extension on current contract for short term health assessment or medical treatment, a period of TLD, or upon referral into the DES. Extensions shall be submitted for processing as soon as it is determined that an extension is needed to cover a period of health assessment, medical treatment, TLD, or referral into the DES that will exceed the Marine's current contractual obligation. (1) In cases when a Marine voluntarily consents to remain on active duty, a medical extension NAVMC 321M form is required."
+          }
+        ],
+        "summary": "Marines whose EAS expires during TLD or DES must be offered voluntary extension via NAVMC 321M. Regular component COs may approve the first such extension when no prior approved or mandatory separation date exists."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull TLD/DES Roster With EAS Dates",
+          "actions": [
+            "Identify Marines with EAS within the TLD or DES period."
+          ]
+        },
+        {
+          "step": "Verify Voluntary Extension Offered",
+          "actions": [
+            "Confirm NAVMC 321M completed for each case."
+          ],
+          "callout": "NAVMC 321M voluntary extension not offered before EAS during TLD or DES",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No NAVMC 321M on file.",
+            "Voluntary extension not offered before EAS."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What is your process for EAS approaching during TLD or DES?"
+      ],
+      "verification": [
+        "NAVMC 321M on file for Marines whose EAS expires during TLD or DES."
+      ],
+      "verified": true
+    },
+    "0308": {
+      "title": "CONVENIENCE OF THE GOVERNMENT MEDICAL HOLD CRITERIA",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 8003.16",
+            "text": "Medical Hold (CofGM). Involuntary retention on active duty at the Convenience of the Government (CofG) is to be used only in cases of mental incompetence, physical incapacity, serious contagious disease, or if the Marine poses a hazard to self or others. Marines meeting any of these criteria may be retained on active duty (CofGM) for a maximum of 60 days to evaluate and document a Marine's condition or determine if a Marine should be retained on limited duty for possible future processing through the DES. Marines held 60 or more days beyond EAS in a Convenience of the Government Medical hold status (CofGM) not in a valid TLD status in MCTFS will have an EAS established by the CMC (MMSR-4)."
+          }
+        ],
+        "summary": "Involuntary CofGM is permitted only for mental incompetence, physical incapacity, serious contagious disease, or hazard to self or others. Maximum 60 days for evaluation or LIMDU determination. Beyond 60 days without valid TLD requires CMC (MMSR-4) EAS adjustment."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull CofGM Roster",
+          "actions": [
+            "Request list of Marines in CofGM status in last 12 months."
+          ]
+        },
+        {
+          "step": "Verify Eligibility Criteria",
+          "actions": [
+            "Confirm each case meets one of the four authorized criteria."
+          ],
+          "callout": "CofGM applied outside the four authorized criteria",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Duration",
+          "actions": [
+            "Confirm no case exceeds 60 days CofGM without TLD or CMC (MMSR-4) EAS."
+          ],
+          "callout": "CofGM exceeds 60 days without TLD or CMC (MMSR-4) EAS",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "CofGM applied outside authorized criteria.",
+            "Beyond 60 days without TLD or CMC (MMSR-4) EAS."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What criteria do you apply to authorize CofGM?"
+      ],
+      "verification": [
+        "All CofGM cases meet authorized criteria.",
+        "Duration within 60 days or supported by TLD/CMC (MMSR-4) EAS."
+      ],
+      "verified": true
+    },
+    "0309": {
+      "title": "LIGHT DUTY REFERRAL TO MTF BEFORE 90 DAYS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 8103",
+            "text": "Light duty is a medical recommendation to the Marine's command. Marines may be placed on light duty for a maximum of 90 days when competent medical authority determines that a medical condition exists and interferes with the performance of duty, and is documented on the SF 600 in the Marine's medical record and on a NAVMED 6310/1. A physician may recommend up to two periods of 30 days of light duty when the Marine is expected to be returned to full duty within those 60 days. A Marine who is not returned to full duty after 60 days must have a MEB and report completed within the following 30 days to evaluate and document the condition. Under no circumstances will light duty exceed 90 days. A Marine placed on light duty for the same condition two consecutive times, or repeatedly over a period of time, will have their case referred to the local MTF for dictation of a MEB, if warranted."
+          }
+        ],
+        "summary": "Light duty is limited to 90 days maximum. Marines not returned to full duty after 60 days require an MEB completed within the following 30 days. Repeated light duty for the same condition requires MTF referral for MEB dictation."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Light Duty Roster",
+          "actions": [
+            "Request current light duty roster with start dates."
+          ]
+        },
+        {
+          "step": "Verify Duration Tracking",
+          "actions": [
+            "Confirm no Marine on light duty more than 90 days.",
+            "Confirm Marines at 60 days have MEB scheduled."
+          ],
+          "callout": "No MEB scheduled by 60 days",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Repeat Light Duty Referral",
+          "actions": [
+            "Confirm Marines with repeated light duty for same condition are referred to MTF."
+          ],
+          "callout": "Repeat light duty without MTF referral",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Light duty exceeding 90 days.",
+            "No MEB scheduled by 60 days.",
+            "Repeated light duty without MTF referral."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you track light duty days?"
+      ],
+      "verification": [
+        "Light duty within 90 day limit.",
+        "MEB scheduled at 60 days.",
+        "Repeat cases referred to MTF."
+      ],
+      "verified": true
+    },
+    "0310": {
+      "title": "CMC (MMSR-4) APPROVAL FOR HOME AWAITING ORDERS DURING DES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 8304.1",
+            "text": "Only the CMC (MMSR-4) may authorize sending Marines home awaiting orders for final disability determination. As this practice frequently creates problems with pay, leave and delivery of VA benefits, only cases of unusual hardship should be forwarded to the CMC (MMSR-4) for consideration."
+          },
+          {
+            "citation": "MCO 1900.16 w/ch 3, par 8304.2",
+            "text": "The CMC (MMSR-4) may delegate via memorandum the authority to send recruits pending PEB disposition home awaiting orders to the commanding generals of recruit depots are authorized to send recruits home awaiting orders who have unconditionally accepted their PEB findings. This authority may be further subdelegated at the Commanding General's discretion to the Commanding Officer, Recruit Training Regiment."
+          }
+        ],
+        "summary": "Only CMC (MMSR-4) may authorize sending Marines home awaiting orders for final disability determination, and only in cases of unusual hardship. Limited delegation to recruit depot CGs exists for recruits who have unconditionally accepted PEB findings."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Home Awaiting Orders Cases",
+          "actions": [
+            "Request list of Marines released home awaiting orders during DES in last 12 months."
+          ]
+        },
+        {
+          "step": "Verify CMC (MMSR-4) Approval",
+          "actions": [
+            "For each case, pull the CMC (MMSR-4) authorization memorandum."
+          ],
+          "callout": "Home awaiting orders without CMC (MMSR-4) approval",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Unusual Hardship Documentation",
+          "actions": [
+            "Confirm the hardship justification on file."
+          ],
+          "callout": "No hardship documentation on file",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Home awaiting orders without CMC (MMSR-4) approval.",
+            "No hardship documentation."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What was the hardship basis for the most recent home awaiting orders case?"
+      ],
+      "verification": [
+        "Each home awaiting orders case has CMC (MMSR-4) approval.",
+        "Hardship documentation on file."
+      ],
+      "verified": true
+    }
+  }
+}

@@ -1,0 +1,665 @@
+{
+  "faNumber": "5215",
+  "sourceDoc": "DIRECTIVES MANAGEMENT (5215) - INSPECTOR GUIDE - REBUILT.docx",
+  "lastVerified": "2026-05-20",
+  "verifiedAtSource": true,
+  "items": {
+    "0101": {
+      "title": "DCP APPOINTED IN WRITING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5215.1K w/Admin CH-3, paragraph 4.b.(2)(d)9",
+            "text": "Establish a Directives Control Point (DCP) to manage and administer the command directives management program. CMC (ARDB) will serve as the DCP for Headquarters directives. Field commands are required to designate a DCP in writing."
+          },
+          {
+            "citation": "MCO 5215.1K w/Admin CH-3, Chapter 1, paragraph 8 (Directives Control Point (DCP))",
+            "text": "HQMC staff agencies and field commanders shall establish a DCP to comply with the responsibilities and procedures detailed for processing directives. Field commands are required to designate a DCP in writing. CMC (ARDB) is the DCP for HQMC directives."
+          }
+        ],
+        "summary": "The command must designate a DCP in writing to manage and administer the command directives management program."
+      },
+      "howToInspect": [
+        {
+          "step": "Request the DCP Appointment Letter",
+          "actions": [
+            "Ask the command to produce the written appointment of the DCP",
+            "The appointment must be in writing, not verbal"
+          ],
+          "callout": "Verbal designation",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Letter Contents",
+          "actions": [
+            "Letter signed by the commanding officer or principal official",
+            "Identifies the appointee by name and rank or grade",
+            "Identifies the appointee by billet or position",
+            "States the DCP responsibilities",
+            "Dated within the current command tenure"
+          ]
+        },
+        {
+          "step": "Verify Appointee is Current",
+          "actions": [
+            "Cross-check appointee against current command roster"
+          ],
+          "callout": "If new appointee not yet designated after departure",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify DCP Knowledge of Duties",
+          "actions": [
+            "Interview the appointed DCP",
+            "Ask the DCP to describe their responsibilities",
+            "Ask the DCP to demonstrate their understanding of directives management procedures",
+            "Ask the DCP to identify location of master directive file"
+          ]
+        },
+        {
+          "step": "Verify Letter Filing",
+          "actions": [
+            "Letter maintained in the directives management program file",
+            "Letter readily accessible upon request",
+            "Copy provided to the DCP appointee"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No written appointment letter on file",
+            "Verbal designation only",
+            "Letter signed by appointee instead of commanding officer",
+            "Appointee no longer assigned to the command",
+            "DCP appointee unaware of duties",
+            "Letter undated or missing key elements"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your written appointment letter for the Directives Control Point?",
+        "Who is your current DCP and when were they appointed?",
+        "What are the DCP responsibilities under MCO 5215.1K?",
+        "Walk me through how you manage the command directives management program?",
+        "Where is the master directive file maintained?"
+      ],
+      "verification": [
+        "Written appointment letter on file",
+        "Letter signed by commanding officer or principal official",
+        "Appointee identified by name and billet",
+        "DCP responsibilities stated in the letter",
+        "Letter dated within current command tenure",
+        "Appointee currently assigned to the command",
+        "DCP demonstrates knowledge of duties",
+        "Letter filed in directives management program file",
+        "Letter readily accessible for review"
+      ],
+      "verified": true
+    },
+    "0102": {
+      "title": "DIRECTIVES MANAGEMENT PROGRAM ESTABLISHED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5215.1K w/Admin CH-3, paragraph 4.a.(1)(b)2 (Designation of Directives)",
+            "text": "Field commands shall issue local directives in the name of the Commander using the designation line of the command issuing the directive; e.g., I Marine Expeditionary Force (MEF) Order (IMEFO) or I Marine Expeditionary Force (MEF) Bulletin (IMEFBul)."
+          },
+          {
+            "citation": "MCO 5215.1K w/Admin CH-3, paragraph 4.a.(2)(e)",
+            "text": "Sponsors will ensure directives under their purview comply with this Order."
+          },
+          {
+            "citation": "MCO 5215.1K w/Admin CH-3, paragraph 4.b.(2)(d)9",
+            "text": "Establish a Directives Control Point (DCP) to manage and administer the command directives management program. CMC (ARDB) will serve as the DCP for Headquarters directives. Field commands are required to designate a DCP in writing."
+          }
+        ],
+        "summary": "The command must establish a Directives Management Program through a local policy directive or written procedures that outline the staffing process and review cycle of directives, ensuring local directives comply with MCO 5215.1K and are issued in the name of the Commander."
+      },
+      "howToInspect": [
+        {
+          "step": "Request the Directives Management Program Documentation",
+          "actions": [
+            "Ask the command to produce the local policy directive establishing the program",
+            "Or written procedures outlining the staffing and review process"
+          ],
+          "callout": "No documentation",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Program Components",
+          "actions": [
+            "The program documentation must address:",
+            "Staffing process for new directives",
+            "Review cycle for existing directives",
+            "Roles and responsibilities of the DCP",
+            "Format requirements per MCO 5215.1K",
+            "Approval and signature authority",
+            "Filing and retention procedures"
+          ]
+        },
+        {
+          "step": "Compare to Template",
+          "actions": [
+            "Reference the template directive on the ARDB public website",
+            "URL: https://www.ar.marines.mil/Branches/Publishing-and-Logistics-Management/Records-Reports-Directives-and-Forms/",
+            "Verify command program addresses the same key elements"
+          ]
+        },
+        {
+          "step": "Verify Local Directives Are in Commander's Name",
+          "actions": [
+            "Pull a sample of 5 to 10 local directives",
+            "Verify each is issued in the name of the Commander",
+            "Verify designation line uses command identifier (e.g., BnO, RegtO, MEFO)"
+          ]
+        },
+        {
+          "step": "Verify Compliance with MCO 5215.1K",
+          "actions": [
+            "Sponsors must ensure directives under their purview comply with MCO 5215.1K",
+            "Spot check directives for format compliance",
+            "Verify the program includes a compliance check before signature"
+          ]
+        },
+        {
+          "step": "Test Program Knowledge",
+          "actions": [
+            "Interview the DCP and any directive sponsors",
+            "Ask them to describe the staffing process",
+            "Ask them to describe the review cycle",
+            "Verify they reference the local program documentation"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No local policy directive or written procedures established",
+            "Program documentation does not address staffing process",
+            "Program documentation does not address review cycle",
+            "Local directives not issued in name of the Commander",
+            "Sponsors unaware of MCO 5215.1K compliance requirements",
+            "Program exists in practice but not documented"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your local policy directive establishing the Directives Management Program?",
+        "Walk me through your staffing process for a new directive?",
+        "What is your review cycle for existing directives?",
+        "Pull a recent local directive and show me how it complies with MCO 5215.1K?",
+        "Who is responsible for ensuring directives comply with the parent order?"
+      ],
+      "verification": [
+        "Local policy directive or written procedures established",
+        "Staffing process documented",
+        "Review cycle documented",
+        "DCP roles and responsibilities defined",
+        "Local directives issued in name of Commander",
+        "Designation line uses correct command identifier",
+        "Sponsors demonstrate compliance knowledge",
+        "Program documentation readily accessible"
+      ],
+      "verified": true
+    },
+    "0103": {
+      "title": "DIRECTIVES OVER 9 YEARS WITHOUT REISSUANCE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5215.1K w/Admin CH-3, paragraph 4.b.(2)(d)2 (Conduct a Directives Review)",
+            "text": "Revise an order when it is 9 years old; do not republish just for that reason."
+          },
+          {
+            "citation": "MCO 5215.1K w/Admin CH-3, paragraph 4.b.(2)(d)4",
+            "text": "Justify and document your records when a directive cannot be updated or cancelled; monitor target dates for completion or cancellation."
+          }
+        ],
+        "summary": "The command must revise any order reaching its 9-year anniversary. Substantial or administrative changes do not restart or extend the 9-year lifecycle. Orders that cannot be revised by the 9-year mark may be certified as current for one additional year by the signing authority, with the justification documented."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull the Master Directive Listing",
+          "actions": [
+            "Request the command's complete listing of active directives",
+            "Listing must include original signature date for each directive",
+            "Include all orders (not bulletins, those are covered in Q0104)"
+          ]
+        },
+        {
+          "step": "Calculate Directive Age",
+          "actions": [
+            "For each directive, calculate years since original signature date",
+            "Substantial changes do NOT reset the clock",
+            "Administrative changes do NOT reset the clock",
+            "Only a full revision resets the 9-year lifecycle",
+            "Identify all directives at or past the 9-year mark"
+          ]
+        },
+        {
+          "step": "Identify Aged Directives",
+          "actions": [
+            "List all directives 9 years old or older",
+            "For each, determine status: revised, certified current, or expired"
+          ],
+          "callout": "Aged directive without action",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Certification of Currency",
+          "actions": [
+            "If a directive is certified current beyond 9 years, request the certification documentation",
+            "Certification must be by the signing authority",
+            "Certification valid only for 1 additional year"
+          ],
+          "callout": "No certification documented",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Justification Documentation",
+          "actions": [
+            "If a directive cannot be revised or cancelled, justification must be documented",
+            "Records must monitor target dates for completion or cancellation"
+          ],
+          "callout": "Missing justification",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Cross-Check NAVMC 10974",
+          "actions": [
+            "Pull the annual review records (NAVMC 10974) for aged directives",
+            "Verify the annual review identified the 9-year status",
+            "Verify the review documented the planned action"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Directives past 9 years with no revision and no certification",
+            "Certifications of currency exceeding 1 additional year",
+            "Substantial changes treated as resetting the 9-year clock",
+            "No justification documented for directives that cannot be revised",
+            "Annual review failed to flag aged directives"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your master directive listing with original signature dates?",
+        "Which of your directives are 9 years old or older?",
+        "For this aged directive, show me the revision, certification of currency, or justification?",
+        "Walk me through how you track directive age each year?",
+        "How do you document a certification of currency by the signing authority?"
+      ],
+      "verification": [
+        "Master directive listing with original signature dates available",
+        "All directives evaluated for 9-year anniversary",
+        "No aged directives without documented action",
+        "Certifications of currency limited to 1 additional year",
+        "Certifications signed by the signing authority",
+        "Justification documented when revision not feasible",
+        "Annual review process identifies aged directives",
+        "Substantial changes not used to reset lifecycle"
+      ],
+      "verified": true
+    },
+    "0104": {
+      "title": "BULLETINS OVER 12 MONTHS OLD",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5215.1K w/Admin CH-3, Chapter 1, paragraph 3.c (Bulletin)",
+            "text": "A bulletin is a directive of a one-time or brief term, has the same force and effect as an order, may require a one-time report, and must have a self-canceling provision. It normally remains in effect up to 12 months, but no longer. Action required by a bulletin; e.g., submission of reports, use of forms, maintaining and disposing of records, or following a specific procedure, is cancelled when the bulletin cancels, unless the requirement is incorporated in another directive. If a bulletin with a given cancellation date has cancelled and the material is still required, reissue the material in another directive. Bulletins shall be written in the format prescribed in Chapter 3 of this Order."
+          }
+        ],
+        "summary": "Bulletins normally remain in effect up to 12 months, but no longer. Bulletins must have a self-canceling provision. If material from a cancelled bulletin is still required, it must be reissued in another directive."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull the Bulletin Listing",
+          "actions": [
+            "Request the command's complete listing of active bulletins",
+            "Listing must include the issue date and self-cancellation date for each bulletin"
+          ]
+        },
+        {
+          "step": "Verify Self-Cancellation Provision",
+          "actions": [
+            "Each bulletin must have a self-canceling provision",
+            "Cancellation date must be visible on the bulletin"
+          ],
+          "callout": "Bulletin without self-cancellation",
+          "severity": "finding"
+        },
+        {
+          "step": "Calculate Bulletin Age",
+          "actions": [
+            "For each bulletin, calculate months since issue date",
+            "Identify any bulletin in effect more than 12 months"
+          ],
+          "callout": "Any bulletin past 12 months",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Cancelled Bulletin Material",
+          "actions": [
+            "For bulletins that have cancelled, verify if action was still required",
+            "If material was still required, verify it was reissued in another directive"
+          ],
+          "callout": "Cancelled bulletin material still in use without reissuance",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Bulletin Format",
+          "actions": [
+            "Bulletins must be written in format prescribed in Chapter 3 of MCO 5215.1K",
+            "Spot check format compliance"
+          ]
+        },
+        {
+          "step": "Cross-Check Against Practice",
+          "actions": [
+            "Ask staff sections if any bulletins are still being followed",
+            "Verify those bulletins are within the 12-month window",
+            "Identify any expired bulletins still in active use"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Bulletins in effect more than 12 months",
+            "Bulletins without self-canceling provisions",
+            "Cancelled bulletin material still being followed without reissuance",
+            "Bulletins not in Chapter 3 format",
+            "No tracking system for bulletin expiration"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your active bulletin listing with issue dates and cancellation dates?",
+        "Which bulletins are currently in effect?",
+        "For this bulletin, show me the self-cancellation provision?",
+        "When this bulletin cancelled, where was the required material reissued?",
+        "How do you track when bulletins are about to expire?"
+      ],
+      "verification": [
+        "Active bulletin listing with dates available",
+        "Each bulletin has a self-canceling provision",
+        "No bulletins in effect more than 12 months",
+        "Cancelled bulletin material reissued in other directives if still required",
+        "Bulletins formatted per Chapter 3 of MCO 5215.1K",
+        "Tracking system in place for bulletin expiration"
+      ],
+      "verified": true
+    },
+    "0105": {
+      "title": "CORRECT FORMAT, LETTERHEAD, AND SMEAC PARAGRAPHS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5215.1K w/Admin CH-3, Chapter 1, paragraph 18.a.(2)(a) (Field Commands Stationery)",
+            "text": "Use the official command or unit letterhead stationery for the first page. If none is available, type the unit's letterhead in all upper case letters beginning 5/8 of an inch from the top edge of the paper and center all lines."
+          },
+          {
+            "citation": "Chapter 2, paragraph 3.a (Situation)",
+            "text": "This paragraph describes the purpose, and must be the first paragraph of the directive."
+          },
+          {
+            "citation": "Chapter 2, paragraph 3.b (Cancellation)",
+            "text": "This is always the second paragraph, if needed. Show the directives being canceled; show the SSIC of a bulletin and include the date of the 'basic' bulletin. Only cancel directives you sponsor."
+          },
+          {
+            "citation": "Chapter 2, paragraph 3.c (Mission)",
+            "text": "This paragraph describes the task to be accomplished; clear, concise statements of tasks. When cancellation of an MCO is required, a 'Cancellation.' paragraph will be paragraph '2', and the 'Mission.' paragraph will be paragraph '3'. A cancellation paragraph is required when canceling other directives. When the 'Cancellation' and 'Mission' paragraphs are both used, the directive will have 6 paragraphs."
+          },
+          {
+            "citation": "Chapter 2, paragraph 3.d (Execution)",
+            "text": "This paragraph contains clear and concise statements of the commander's intent to implement the directive to accomplish the mission. Amplifies paragraph 2, 'Mission.' The paragraph breakdowns into the following subparagraphs: (1) Commander's Intent and Concept of Operations (a) Commander's Intent (b) Concept of Operations (2) Subordinate Element Missions. This paragraph describes the main effort, supporting efforts, and Reserve. (3) Coordinating Instructions. This paragraph identifies and discusses instructions that are common to two or more elements, coordinating details."
+          },
+          {
+            "citation": "Chapter 2, paragraph 4 (Administration and Logistics)",
+            "text": "This paragraph describes logistics, specific responsibilities, and support."
+          },
+          {
+            "citation": "Chapter 2, paragraph 5 (Command and Signal)",
+            "text": "This paragraph breaks down into the following subparagraphs: a. Command. This paragraph provides the applicability statement; e.g., 'This Order is applicable to the Marine Corps Total Force' or 'This Order is applicable to the Marine Corps Reserve.' b. Signal. This Order is effective the date signed."
+          }
+        ],
+        "summary": "Per Chapter 2, paragraph 6 (Signature Block) and paragraph 7 (DISTRIBUTION and Copy to Sections) prescribe the closing format requirements. Command directives must use official command letterhead and follow the SMEAC five-paragraph format: Situation, Mission, Execution, Administration and Logistics, and Command and Signal. When a Cancellation paragraph is needed, it becomes paragraph 2 and the directive has six paragraphs."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull a Sample of Local Directives",
+          "actions": [
+            "Request 5 to 10 recent local orders and bulletins",
+            "Include a mix of directive types and sponsors"
+          ]
+        },
+        {
+          "step": "Verify Letterhead",
+          "actions": [
+            "For each directive, check the letterhead:",
+            "Official command or unit letterhead used",
+            "If no official letterhead available, unit letterhead typed in all upper case",
+            "Letterhead begins 5/8 inch from top edge of paper",
+            "All lines centered"
+          ],
+          "callout": "Directive not on official letterhead or improperly typed",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify SMEAC Paragraph Structure",
+          "actions": [
+            "For each directive, verify the five mandatory paragraphs:",
+            "Paragraph 1: Situation (describes purpose, always first)",
+            "Paragraph 2: Mission (or Cancellation if needed)",
+            "Paragraph 3: Execution (or Mission if Cancellation is paragraph 2)",
+            "Paragraph 4: Administration and Logistics",
+            "Paragraph 5: Command and Signal",
+            "Six paragraphs total when Cancellation paragraph is used"
+          ],
+          "callout": "SMEAC paragraphs out of correct order",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Execution Subparagraphs",
+          "actions": [
+            "Execution paragraph must contain:",
+            "(1) Commander's Intent and Concept of Operations",
+            "(a) Commander's Intent",
+            "(b) Concept of Operations",
+            "(2) Subordinate Element Missions",
+            "(3) Coordinating Instructions"
+          ],
+          "callout": "Execution paragraph missing required subparagraphs",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Command and Signal Subparagraphs",
+          "actions": [
+            "a. Command - applicability statement present",
+            "b. Signal - effective date statement present"
+          ],
+          "callout": "Command and Signal missing applicability or effective date",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Cancellation Paragraph Usage",
+          "actions": [
+            "If used, must be paragraph 2",
+            "Shows directives being cancelled",
+            "Shows SSIC and date of basic bulletins being cancelled",
+            "Only cancels directives the sponsor owns"
+          ],
+          "callout": "Cancellation cancels directives outside sponsor's ownership",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Signature Block and Distribution",
+          "actions": [
+            "Signature block per Chapter 2 paragraph 6",
+            "DISTRIBUTION and Copy to sections per Chapter 2 paragraph 7"
+          ],
+          "callout": "Signature block or distribution sections do not follow Chapter 2 par 6/7",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Directives missing one or more SMEAC paragraphs",
+            "Paragraphs out of correct order",
+            "Cancellation paragraph not in position 2 when used",
+            "Execution paragraph missing subparagraphs",
+            "Command and Signal missing applicability or effective date",
+            "Letterhead not on official stationery and not properly typed",
+            "Sponsor cancelling directives not under their authority"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Pull a recent local order and walk me through the SMEAC paragraphs?",
+        "Show me where the Commander's Intent appears in this directive?",
+        "Why is this paragraph numbered as paragraph 3 instead of 2?",
+        "What letterhead does your command use for directives?",
+        "Show me the Command and Signal paragraph for this directive?"
+      ],
+      "verification": [
+        "Sample of 5 to 10 local directives reviewed",
+        "Official command letterhead used or properly typed",
+        "All five SMEAC paragraphs present",
+        "Paragraph order correct",
+        "Cancellation paragraph in position 2 when used",
+        "Execution paragraph contains all subparagraphs",
+        "Command and Signal contains applicability and effective date",
+        "Signature block formatted per Chapter 2 paragraph 6",
+        "DISTRIBUTION and Copy to sections per Chapter 2 paragraph 7"
+      ],
+      "verified": true
+    },
+    "0106": {
+      "title": "ANNUAL REVIEW VIA NAVMC 10974",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5215.1K w/Admin CH-3, paragraph 4.a.(2)(f) (Internal Reviews)",
+            "text": "Sponsors shall review their directives annually to ensure they are necessary, current, and consistent with statutory authority. The results of the review shall be documented per the enclosure and retained according to reference (d)."
+          },
+          {
+            "citation": "Chapter 1, paragraph 14.a",
+            "text": "Directives shall be reviewed annually to ensure that they are necessary; current; and consistent with Marine Corps policy, existing law, and statutory authority."
+          },
+          {
+            "citation": "Chapter 1, paragraph 14.b",
+            "text": "Upon completion of the review, the sponsors shall certify whether the directives shall be continued, revised, or cancelled."
+          },
+          {
+            "citation": "Chapter 1, paragraph 14.c",
+            "text": "Record the results of the review of your directives on NAVMC 10974 (Rev. 11/06), Directives Review card, including those that supplement a higher authority directive. NAVMC 10974 may be obtained on the Marine Corps Electronic Forms web site at http://www.hqmc.usmc.mil/ar/mcefs.nsf. Use the card until the last edition is canceled. Pencil in a new revision letter or change number and the new date. When the order cancels, move the card to a canceled file; check this file to avoid reassigning the consecutive point number. Commands may use an automated database file containing the same information as an option to recording the results of the review on a NAVMC 10974."
+          }
+        ],
+        "summary": "The command must conduct an annual review of all directives, document the results on NAVMC 10974 or an automated tracking system, and certify whether each directive is to be continued, revised, or cancelled."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Annual Review Records",
+          "actions": [
+            "Ask the command to produce NAVMC 10974 forms or the automated tracking system records",
+            "Records required for every active directive"
+          ],
+          "callout": "No records",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Annual Frequency",
+          "actions": [
+            "Reviews must be conducted annually",
+            "Check the date of the most recent review for each directive"
+          ],
+          "callout": "Reviews exceeding 12 months",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Review Coverage",
+          "actions": [
+            "Each review must evaluate whether the directive is:",
+            "Necessary",
+            "Current",
+            "Consistent with Marine Corps policy",
+            "Consistent with existing law",
+            "Consistent with statutory authority"
+          ]
+        },
+        {
+          "step": "Verify Sponsor Certification",
+          "actions": [
+            "Upon completion of the review, the sponsor must certify the directive as:",
+            "Continued, OR",
+            "Revised, OR",
+            "Cancelled"
+          ],
+          "callout": "Missing certification",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify NAVMC 10974 or Automated System",
+          "actions": [
+            "NAVMC 10974 (Rev. 11/06) is the standard form",
+            "Automated database file containing the same information is acceptable",
+            "Verify the format meets one of these two options"
+          ]
+        },
+        {
+          "step": "Cross-Check Against Master Directive Listing",
+          "actions": [
+            "Pull the master directive listing",
+            "Verify every active directive has a corresponding NAVMC 10974 or tracking entry",
+            "Identify any directives missing from the review records"
+          ]
+        },
+        {
+          "step": "Verify Treatment of Aged Directives",
+          "actions": [
+            "Review records must flag directives at or near the 9-year mark",
+            "Records must monitor target dates for completion or cancellation",
+            "Cross-reference with Q0103 findings"
+          ]
+        },
+        {
+          "step": "Verify Bulletin Cancellation Contingency Tracking",
+          "actions": [
+            "If any bulletins have Cancellation Contingency paragraphs, verify a NAVMC 10974 was prepared",
+            "Bulletin card attached to current order card until incorporated"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No NAVMC 10974 or automated tracking system in use",
+            "Reviews not conducted annually",
+            "Review records missing for some active directives",
+            "Sponsor certification missing from review records",
+            "Review does not address necessity, currency, or statutory consistency",
+            "Aged directives not flagged in annual review",
+            "Cancellation Contingency bulletins without NAVMC 10974"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your NAVMC 10974 forms or automated tracking records for the past year?",
+        "Pull the master directive listing and let me cross-reference annual reviews?",
+        "For this directive, show me the most recent review and certification?",
+        "Who certifies whether a directive is continued, revised, or cancelled?",
+        "How do you track which directives are due for review each year?"
+      ],
+      "verification": [
+        "NAVMC 10974 forms or automated tracking system in use",
+        "Annual reviews conducted within previous 12 months",
+        "Every active directive has a review record",
+        "Reviews evaluate necessity, currency, and statutory consistency",
+        "Sponsor certification (continue, revise, or cancel) documented",
+        "Aged directives flagged for action",
+        "Cancellation Contingency bulletins tracked via NAVMC 10974",
+        "Records readily accessible for review"
+      ],
+      "verified": true
+    }
+  }
+}

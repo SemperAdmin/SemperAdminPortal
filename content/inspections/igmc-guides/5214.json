@@ -1,0 +1,765 @@
+{
+  "faNumber": "5214",
+  "sourceDoc": "REPORTS MANAGEMENT (5214) - INSPECTOR GUIDE - REBUILT.docx",
+  "lastVerified": "2026-05-20",
+  "verifiedAtSource": true,
+  "items": {
+    "0101": {
+      "title": "COMMAND REPORTS MANAGER APPOINTED IN WRITING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5214.2G, par 4b(4)(b)",
+            "text": "Designate and appoint, in writing, a Command Reports Manager at the Marine Corps Force (MARFOR), Marine Expeditionary Force (MEF), Marine Corps Installation levels and subordinate bases and station level to include Regiment/Group and battalion/squadron levels. Reports Managers below the Regiment/Group level will be managed by the higher level Reports Managers."
+          }
+        ],
+        "summary": "Each command at MARFOR, MEF, MCI, base/station, regiment/group, and battalion/squadron level must designate and appoint a Command Reports Manager in writing. The appointment letter is the inspection artifact for compliance."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Reports Manager Appointment Letter",
+          "actions": [
+            "Ask the S-1 or admin chief for the current Reports Manager appointment letter.",
+            "Confirm the letter is signed by the commander.",
+            "Confirm the appointment date."
+          ],
+          "callout": "No Command Reports Manager appointment letter on file",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Currency Of Appointment",
+          "actions": [
+            "Confirm the appointed Reports Manager is still assigned to the command.",
+            "Reject any case where the Reports Manager has departed without a replacement designation."
+          ],
+          "callout": "Appointed Reports Manager departed without replacement designation",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Form Of Designation",
+          "actions": [
+            "The appointment must be in writing.",
+            "Email or verbal designation alone is insufficient."
+          ],
+          "callout": "Reports Manager designated by email or verbal only (not in writing)",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No Command Reports Manager appointed.",
+            "Appointment is not in writing.",
+            "Appointment letter not signed by the commander.",
+            "Designated Reports Manager has departed with no replacement.",
+            "Appointment letter cannot be produced upon request."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who is your appointed Command Reports Manager?",
+        "Show me the appointment letter?",
+        "When was the current Reports Manager appointed?",
+        "Has the Reports Manager changed in the past 12 months?"
+      ],
+      "verification": [
+        "Command Reports Manager appointment letter on file.",
+        "Appointment letter signed by the commander.",
+        "Appointed Reports Manager currently assigned to the command.",
+        "No gap in Reports Manager coverage."
+      ],
+      "verified": true
+    },
+    "0102": {
+      "title": "COMMAND REPORTS MANAGEMENT POLICY PROMULGATED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5214.2G, par 4b(4)(a)",
+            "text": "Promulgate command policy (i.e., order or bulletin) for the command's Reports Management Program to ensure organizational reporting requirements are documented, tracked, and in compliance with legal and statutory requirements."
+          }
+        ],
+        "summary": "Commands must publish a command policy (order or bulletin) for the Reports Management Program that ensures organizational reporting requirements are documented, tracked, and in compliance with legal and statutory requirements. Commands must publish a local order or bulletin establishing the Reports Management Program. The policy must address documentation, tracking, and compliance with legal and statutory reporting requirements (5 CFR Part 1320, SSN Reduction Act, etc.)."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Local Reports Management Directive",
+          "actions": [
+            "Ask for the command order or bulletin establishing the Reports Management Program."
+          ],
+          "callout": "No command Reports Management directive published",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Content Coverage",
+          "actions": [
+            "Confirm policy addresses documentation of reporting requirements.",
+            "Confirm policy addresses tracking of reporting requirements.",
+            "Confirm policy addresses compliance with 5 CFR Part 1320 and SSN Reduction Act."
+          ],
+          "callout": "Directive does not address all required coverage areas",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Promulgation",
+          "actions": [
+            "Confirm directive is signed by the commander.",
+            "Confirm directive is current and not superseded.",
+            "Confirm directive references current parent orders (MCO 5214.2G, SECNAVINST 5210.16)."
+          ],
+          "callout": "Directive not signed by promulgating authority",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Distribution",
+          "actions": [
+            "Confirm staff agencies have access to the local directive.",
+            "Confirm the directive is posted on a unit SharePoint or shared drive."
+          ],
+          "callout": "Directive not distributed to subordinate units or staff sections",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No local Reports Management order or bulletin published.",
+            "Directive issued but missing required content elements.",
+            "Directive cites superseded parent orders.",
+            "Directive not signed by the commander.",
+            "Directive not distributed to staff agencies."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your local Reports Management order or bulletin?",
+        "Walk me through the policy elements covering documentation, tracking, and compliance?",
+        "How was the policy distributed to staff agencies?",
+        "When was the policy last reviewed for currency?"
+      ],
+      "verification": [
+        "Local Reports Management directive published as order or bulletin.",
+        "Directive signed by the commander.",
+        "Directive addresses documentation of reporting requirements.",
+        "Directive addresses tracking of reporting requirements.",
+        "Directive addresses federal compliance (5 CFR Part 1320, SSN Reduction Act).",
+        "Directive cites current parent orders.",
+        "Directive distributed to staff agencies."
+      ],
+      "verified": true
+    },
+    "0103": {
+      "title": "CONTINUITY BINDER FOR REPORTS MANAGEMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5214.2G, par 4b(4)(c)",
+            "text": "Oversee, publish, and implement local directive(s) and continuity binder(s) respective to reports management."
+          }
+        ],
+        "summary": "The Command Reports Manager must oversee, publish, and implement local directives and continuity binders respective to reports management. Commands must maintain a continuity binder containing POCs for each section, MCO 5214.2G, SECNAVINST 5210.16, the reports inventory, and documentation of the 3-year review."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Reports Management Continuity Binder",
+          "actions": [
+            "Ask the Reports Manager to produce the continuity binder.",
+            "Accept hard copy or electronic version."
+          ],
+          "callout": "No Reports Management continuity binder maintained",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Required Contents",
+          "actions": [
+            "Confirm POCs for each section are documented.",
+            "Confirm MCO 5214.2G is included.",
+            "Confirm SECNAVINST 5210.16 is included.",
+            "Confirm the Reports Inventory is included.",
+            "Confirm 3-year review documentation is included."
+          ],
+          "callout": "Continuity binder missing required contents (appointment letter, directive, inventory, case files)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm POC information is current.",
+            "Confirm directives are current versions, not superseded.",
+            "Confirm Reports Inventory has been updated recently."
+          ],
+          "callout": "Binder content not current",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No continuity binder maintained.",
+            "Binder missing one or more required items.",
+            "Stale POC information.",
+            "Superseded directives in binder.",
+            "Reports Inventory missing or outdated.",
+            "No 3-year review documentation."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your Reports Management continuity binder?",
+        "Walk me through each section?",
+        "When was the binder last updated?",
+        "Show me the 3-year review documentation?"
+      ],
+      "verification": [
+        "Continuity binder on hand.",
+        "POCs for each section documented and current.",
+        "MCO 5214.2G included (current version).",
+        "SECNAVINST 5210.16 included (current version).",
+        "Reports Inventory included and current.",
+        "3-year review documentation present."
+      ],
+      "verified": true
+    },
+    "0104": {
+      "title": "REPORTS INVENTORY PUBLISHED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5214.2G, Ch 1, par 2.a",
+            "text": "Reports Inventory. This function identifies and compiles a record of existing reports maintained at the HQMC ARDB SharePoint Portal located at https://ehqmc.usmc.mil/org/ar/ard/ardb/default.aspx."
+          },
+          {
+            "citation": "MCO 5214.2G, Ch 1, par 3.a (Program Development)",
+            "text": "Publication of a local directive (i.e., order or bulletin) and designation of a reports program manager are the first steps in implementing the program. The directive should make provisions for: (1) Information Collection needed to establish a reports inventory."
+          }
+        ],
+        "summary": "The Reports Manager must establish a reports inventory documenting existing reports the command maintains, leveraging the HQMC ARDB SharePoint Portal where applicable. Commands must publish a Reports Inventory listing all valid and cancelled recurring reporting requirements. The inventory eliminates duplication, tracks licensed reports, and serves as a resource for staff sections."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Published Reports Inventory",
+          "actions": [
+            "Ask the Reports Manager for the current Reports Inventory.",
+            "Confirm the inventory is published (formally promulgated, not draft)."
+          ],
+          "callout": "No published reports inventory",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Inventory Scope",
+          "actions": [
+            "Confirm inventory lists all valid recurring reporting requirements at the command.",
+            "Confirm inventory lists cancelled recurring reporting requirements.",
+            "Confirm Report Control Symbols are documented."
+          ],
+          "callout": "Inventory scope incomplete (missing reports the command originates)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Inventory Currency",
+          "actions": [
+            "Confirm the inventory was last updated within the past 12 months.",
+            "Confirm any cancelled reports identified within the past 12 months are reflected."
+          ],
+          "callout": "Inventory not current within annual review window",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Cross-Check With Staff Sections",
+          "actions": [
+            "Sample 2 to 3 staff sections.",
+            "Ask each section about active reports they generate.",
+            "Confirm those reports appear in the inventory."
+          ],
+          "callout": "Staff section cross-check reveals unlisted reporting requirements",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No published Reports Inventory.",
+            "Inventory does not include cancelled reports.",
+            "Inventory missing Report Control Symbols.",
+            "Stale inventory not updated within 12 months.",
+            "Active reports at command level not listed in inventory."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your published Reports Inventory?",
+        "When was it last updated?",
+        "Walk me through how cancelled reports are tracked?",
+        "Sample a staff section and show me their reports in the inventory?"
+      ],
+      "verification": [
+        "Published Reports Inventory on hand.",
+        "Inventory lists all valid recurring reporting requirements.",
+        "Inventory lists cancelled recurring reporting requirements.",
+        "Report Control Symbols documented for each entry.",
+        "Inventory updated within the past 12 months.",
+        "Sampled staff section reports appear in inventory."
+      ],
+      "verified": true
+    },
+    "0105": {
+      "title": "INFORMATION COLLECTION NON-DUPLICATION CHECK",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5214.2G, Ch 1, par 3.a (Program Development)",
+            "text": "Publication of a local directive (i.e., order or bulletin) and designation of a reports program manager are the first steps in implementing the program. The directive should make provisions for: (1) Information Collection needed to establish a reports inventory. (2) Reviewing new information requirements. (3) Assignment of RCSs per reference (e). (4) Three-year review of information requirements and three-year review of public information requirements."
+          }
+        ],
+        "summary": "Before originating any local information collection, the Reports Manager must screen against existing higher-authority collections and document the non-duplication determination. Local forms shall not be used when a higher level form (NAVMC, DD, SF, etc.) already exists for the information being collected. The Reports Manager screens proposed local collections against higher authority inventories."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Screening Procedure",
+          "actions": [
+            "Ask the Reports Manager how proposed local forms or collections are screened.",
+            "Confirm a documented screening procedure exists."
+          ],
+          "callout": "No documented non-duplication screening procedure",
+          "severity": "finding"
+        },
+        {
+          "step": "Sample Recent Local Forms Or Collections",
+          "actions": [
+            "Pull 3 to 5 local forms or recurring collections approved in the past 24 months.",
+            "For each, ask: Did you check for an existing NAVMC, DD, or SF form covering this requirement?",
+            "Request documentation of the screening."
+          ],
+          "callout": "Local form duplicates higher-authority OMB-approved collection",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Outcome When Higher-Authority Form Exists",
+          "actions": [
+            "If a sampled local form duplicates a NAVMC, DD, or SF form, confirm justification on file.",
+            "Reject any local form that duplicates without justified rationale."
+          ],
+          "callout": "Screening outcome not documented when higher-authority form exists",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No screening procedure for proposed local collections.",
+            "Local form in use where a NAVMC, DD, or SF form covers the requirement.",
+            "Screening conducted but not documented.",
+            "Reports Manager unable to articulate the screening process."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through how you screen a proposed local form or data collection?",
+        "Show me 3 recent local forms and the screening documentation?",
+        "Show me any local form that duplicates a higher-level form and the justification?"
+      ],
+      "verification": [
+        "Documented screening procedure for proposed local collections.",
+        "Sampled local forms have documented screening.",
+        "No unjustified duplication of NAVMC, DD, or SF forms."
+      ],
+      "verified": true
+    },
+    "0106": {
+      "title": "THREE-YEAR REVIEW OF EXISTING REPORTS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5214.2G, Ch 1, par 2.a(3) (Reports Validation)",
+            "text": "Reports Validation. This function involves the three-year review of information reporting requirements to reduce the administrative burden by eliminating, reducing the frequency of, or consolidating reporting requirements when practicable."
+          },
+          {
+            "citation": "MCO 5214.2G, Ch 1, par 3.b(2)",
+            "text": "Conduct a three-year review upon initiation from HQMC (ARDB)'s three-year review."
+          }
+        ],
+        "summary": "The Reports Manager must conduct a three-year review of all existing reports to validate continued necessity, with outcomes documented (retain, modify, eliminate, or consolidate). Reports program managers must review all existing reports every three years. The review confirms continued relevance, identifies cancellation candidates, and validates each report against current requirements."
+      },
+      "howToInspect": [
+        {
+          "step": "Request 3-Year Review Documentation",
+          "actions": [
+            "Ask the Reports Manager for documentation of the most recent 3-year review.",
+            "Confirm review was conducted within the past 3 years."
+          ],
+          "callout": "No three-year review of existing reports documented",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Review Scope",
+          "actions": [
+            "Confirm review covered all existing reports.",
+            "Confirm each report was assessed for continued relevance.",
+            "Confirm cancellation candidates were identified."
+          ],
+          "callout": "Review scope incomplete (not all reports reviewed)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Outcomes Documented",
+          "actions": [
+            "Confirm review findings are documented in writing.",
+            "Confirm any cancellations identified were promulgated.",
+            "Confirm any modifications identified were implemented."
+          ],
+          "callout": "Review outcomes not documented (retain/modify/cancel/consolidate)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No 3-year review documentation.",
+            "Review conducted but undocumented.",
+            "Last review more than 3 years ago.",
+            "Review scope incomplete (some reports not assessed).",
+            "Identified cancellations or modifications not implemented."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When was your last 3-year review of existing reports?",
+        "Show me the documented review?",
+        "What reports were cancelled or modified as a result of the review?",
+        "How do you ensure all reports are included in the review?"
+      ],
+      "verification": [
+        "3-year review documentation on hand.",
+        "Most recent review within the past 3 years.",
+        "Review covers all existing reports.",
+        "Findings documented in writing.",
+        "Identified cancellations and modifications implemented."
+      ],
+      "verified": true
+    },
+    "0107": {
+      "title": "COMMAND ORIGINATES NEW INFORMATION REQUIREMENTS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5214.2G, par 4b(4)(d)",
+            "text": "Assign a local RCS for reporting requirements not covered by higher authority and not deemed EXEMPT."
+          },
+          {
+            "citation": "MCO 5214.2G, par 4b(4)(e)",
+            "text": "Maintain a case file for all local reporting requirements not covered by higher authority."
+          },
+          {
+            "citation": "MCO 5214.2G, par 4b(4)(f)",
+            "text": "Ensure all local reporting requirements are written within a command directive (i.e., order or bulletin)."
+          }
+        ],
+        "summary": "If the command originates any local information requirement not covered by higher authority, it must assign a local RCS, maintain a case file, and document the requirement in a command directive. Additional Section 2 inspection items apply. This is a gateway question. If the command originates its own information collection requirements (new forms, duplicate forms, additional fields, requests, data calls, or systems), Section 2 (Q0201 through Q0204) applies. If not, the inspection ends here."
+      },
+      "howToInspect": [
+        {
+          "step": "Determine If The Command Originates Any Information Requirements",
+          "actions": [
+            "Ask the Reports Manager: Does this command originate any of its own information collection requirements?",
+            "Examples: new forms, modified existing forms, data calls, surveys, local systems."
+          ]
+        },
+        {
+          "step": "If No - Document And End Inspection",
+          "actions": [
+            "Confirm the answer is documented.",
+            "Note that Q0201 through Q0204 are N/A.",
+            "End the Reports Management inspection."
+          ]
+        },
+        {
+          "step": "If Yes - Proceed To Section 2",
+          "actions": [
+            "Identify each originated information requirement.",
+            "List as: type (form, data call, system), purpose, frequency.",
+            "Proceed to Q0201 for each requirement."
+          ],
+          "callout": "Command originates information requirements without applying Section 2 controls",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Reports Manager unaware of locally-originated collections.",
+            "Local data calls or surveys conducted without formal recognition as Reports Management items.",
+            "Section 2 not completed despite locally-originated collections existing."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Does this command originate any information collection requirements?",
+        "What forms, data calls, surveys, or systems are locally originated?",
+        "How do you identify when a new information collection requires Reports Management processing?"
+      ],
+      "verification": [
+        "Determination made (Yes or No) regarding locally-originated collections.",
+        "If Yes, locally-originated collections enumerated.",
+        "If Yes, Section 2 applied to each requirement.",
+        "If No, finding documented and inspection ended."
+      ],
+      "verified": true
+    },
+    "0201": {
+      "title": "LOCAL REPORTING REQUIREMENTS PUBLISHED IN DIRECTIVE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5214.2G, par 4b(4)(f)",
+            "text": "Ensure all local reporting requirements are written within a command directive (i.e., order or bulletin)."
+          }
+        ],
+        "summary": "Every locally-originated reporting requirement must be published in a command directive (order or bulletin). The directive is the inspection artifact. Local reporting requirements must be promulgated in a command order or bulletin. Informal data calls without directive promulgation are not authorized."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify All Locally-Originated Reporting Requirements",
+          "actions": [
+            "Pull the list from Q0107."
+          ]
+        },
+        {
+          "step": "Verify Each Has A Promulgating Directive",
+          "actions": [
+            "For each requirement, request the order or bulletin that promulgates it.",
+            "Reject any requirement without directive backing."
+          ],
+          "callout": "Locally-originated reporting requirement without promulgating directive",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Directive Currency",
+          "actions": [
+            "Confirm each directive is current and not superseded."
+          ],
+          "callout": "Directive outdated or signed by prior authority",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Local reporting requirement in active use without a promulgating directive.",
+            "Directive promulgated but superseded.",
+            "Informal data call masquerading as a recurring requirement."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "For each locally-originated reporting requirement, show me the promulgating directive?",
+        "Are any of these requirements informal data calls without a directive?",
+        "When was each promulgating directive last reviewed?"
+      ],
+      "verification": [
+        "Each locally-originated requirement has a promulgating order or bulletin.",
+        "Promulgating directives are current.",
+        "No informal recurring data calls in use without directive backing."
+      ],
+      "verified": true
+    },
+    "0202": {
+      "title": "OMB APPROVAL FOR PUBLIC INFORMATION COLLECTIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5214.2G, Ch 2, par 2.a(4)(a)",
+            "text": "Public Reports. Public reports require approval by the Office of Management and Budget (OMB) and are licensed for three years."
+          },
+          {
+            "citation": "MCO 5214.2G, Ch 2, par 2.b (Coverage)",
+            "text": "Per reference (i), enclosure 3, paragraph 7: OMB approval is needed to collect information from members of the public."
+          }
+        ],
+        "summary": "Information collections from members of the public require OMB approval; licenses are issued for three years. Commands must verify OMB approval (or use of a higher-level OMB-approved form) for any public information collection. Any local form or survey collecting information from 10 or more members of the public (spouses, dependents, contractors, civilians) requires OMB approval under the Paperwork Reduction Act. Local forms cannot bypass this requirement."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Information Collections From The Public",
+          "actions": [
+            "Ask: Does the command collect information from members of the public?",
+            "Quantify respondents per collection.",
+            "If 10 or more members of the public per collection: OMB approval required."
+          ]
+        },
+        {
+          "step": "Verify OMB Approval",
+          "actions": [
+            "For each qualifying collection, request OMB control number.",
+            "Reject any collection from 10+ members of the public without OMB approval."
+          ],
+          "callout": "Public information collection without OMB approval",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Use Of Higher-Level OMB-Approved Forms",
+          "actions": [
+            "Where a higher-level OMB-approved form exists for the data being collected, confirm the higher-level form is in use.",
+            "Reject local forms duplicating an OMB-approved higher-level form."
+          ],
+          "callout": "OMB approval expired and not renewed",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Local form collecting from 10+ public members without OMB approval.",
+            "Local survey of spouses or contractors lacking OMB control number.",
+            "Local form duplicates an existing OMB-approved higher-level form.",
+            "Reports Manager unaware of OMB approval requirement."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Does the command collect information from members of the public?",
+        "Show me any local form or survey used with spouses, contractors, or civilians?",
+        "What is the OMB control number for that collection?",
+        "How do you verify whether OMB approval is required?"
+      ],
+      "verification": [
+        "All public information collections identified.",
+        "Each collection from 10+ members of the public has OMB approval.",
+        "OMB control numbers documented.",
+        "No local form duplicates an OMB-approved higher-level form."
+      ],
+      "verified": true
+    },
+    "0203": {
+      "title": "CASE FILE FOR LOCAL REPORTING REQUIREMENTS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5214.2G, par 4b(4)(e)",
+            "text": "Maintain a case file for all local reporting requirements not covered by higher authority."
+          }
+        ],
+        "summary": "Each locally-originated reporting requirement must have a case file maintained by the Reports Manager containing the standard documentation set. The case file validates the purpose for the information collection and shows the life of the report including the directive requiring it, the date required, a sample of the report or database snapshot, and the assigned Report Control Symbol."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The List Of Locally-Originated Reporting Requirements",
+          "actions": [
+            "From Q0107."
+          ]
+        },
+        {
+          "step": "Verify Case File Exists For Each",
+          "actions": [
+            "Request the case file for each requirement.",
+            "Confirm hard copy or electronic file is on hand."
+          ],
+          "callout": "No case file for a locally-originated reporting requirement",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Required Case File Contents",
+          "actions": [
+            "Confirm the originating directive is identified.",
+            "Confirm the date the requirement was implemented.",
+            "Confirm a sample of the report or database snapshot is included.",
+            "Confirm the assigned Report Control Symbol is documented.",
+            "Confirm the purpose for the collection is documented."
+          ],
+          "callout": "Case file missing required contents",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Currency Of Case Files",
+          "actions": [
+            "Confirm samples reflect the current report format.",
+            "Confirm changes in directives are reflected."
+          ],
+          "callout": "Case file not current",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No case file for one or more locally-originated requirements.",
+            "Case file missing the originating directive reference.",
+            "Case file missing a sample of the report.",
+            "Report Control Symbol not assigned or not documented.",
+            "Stale case file not reflecting current report format."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the case file for each locally-originated reporting requirement?",
+        "Walk me through the required contents of each case file?",
+        "Show me the Report Control Symbol assigned to each?",
+        "When were the case files last updated?"
+      ],
+      "verification": [
+        "Case file on hand for every locally-originated reporting requirement.",
+        "Each case file documents the originating directive.",
+        "Each case file includes a sample of the report.",
+        "Each case file documents the Report Control Symbol.",
+        "Each case file documents the purpose for the collection.",
+        "Case files reflect current report format."
+      ],
+      "verified": true
+    },
+    "0204": {
+      "title": "ELECTRONIC REPORTS SYSTEM REGISTERED IN DITPR-DON",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5214.2G, par 5.b(2)",
+            "text": "Reports Systems. When an electronic reports system is stood-up, the reports system shall be registered in Department of Defense Information Technology Portfolio Repository - Department of the Navy to ensure all records within are managed in accordance with reference (d)."
+          },
+          {
+            "citation": "SECNAVINST 5214.1 (DON Reports Management Program)",
+            "text": "Sponsors of electronic reporting systems shall register such systems in the Department of the Navy Information Technology Portfolio Repository (DITPR-DON) and shall comply with records management requirements for the data and outputs of those systems."
+          }
+        ],
+        "summary": "Electronic reports systems sponsored by the command must be registered in DITPR-DON and managed per applicable records management requirements. Any electronic reports system sponsored or owned by the command must be registered in DITPR-DON. Registration ensures records management compliance per SECNAV Note 5210 and SECNAV M-5210.1."
+      },
+      "howToInspect": [
+        {
+          "step": "Determine If Command Sponsors An Electronic Reports System",
+          "actions": [
+            "Ask the Reports Manager: Does the command sponsor or own any electronic reports system?",
+            "If no, mark N/A."
+          ]
+        },
+        {
+          "step": "Verify DITPR-DON Registration",
+          "actions": [
+            "For each system, request the DITPR-DON registration record.",
+            "Confirm the system is registered with current status."
+          ],
+          "callout": "Sponsored electronic reports system not registered in DITPR-DON",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Records Management Compliance",
+          "actions": [
+            "Confirm records within the system are managed per SECNAV Note 5210.",
+            "Confirm records within the system are managed per SECNAV M-5210.1.",
+            "Confirm records retention schedules are applied."
+          ],
+          "callout": "Records management compliance not documented for sponsored systems",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Electronic reports system in use without DITPR-DON registration.",
+            "DITPR-DON registration expired or inactive.",
+            "Records within system not managed per SECNAV records management standards.",
+            "No retention schedule applied to system records."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Does the command sponsor or own any electronic reports system?",
+        "Show me the DITPR-DON registration for each?",
+        "How are records within the system managed for retention and disposition?"
+      ],
+      "verification": [
+        "Electronic reports system inventory complete.",
+        "Each command-sponsored system registered in DITPR-DON.",
+        "DITPR-DON registrations current and active.",
+        "Records within systems managed per SECNAV Note 5210 and SECNAV M-5210.1.",
+        "Retention schedules applied to system records."
+      ],
+      "verified": true
+    }
+  }
+}

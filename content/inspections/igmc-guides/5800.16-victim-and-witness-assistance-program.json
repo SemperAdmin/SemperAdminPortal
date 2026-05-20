@@ -1,0 +1,4130 @@
+{
+  "faNumber": "5800.16",
+  "sourceDoc": "VWAP - INSPECTOR GUIDE - REBUILT.docx",
+  "lastVerified": "2026-05-20",
+  "verifiedAtSource": true,
+  "items": {
+    "0101": {
+      "title": "REGIONAL VICTIM WITNESS LIAISON OFFICER APPOINTMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040902A",
+            "text": "COMMCICOM, COMMARFORRES, and Regional MCI Commanding Generals (CGs). Regional MCI CGs are responsible for ensuring that VWAP is properly implemented at each installation within their region. COMMCICOM is responsible for the VWAP in the National Capital Region. COMMARFORRES is responsible for the VWAP in the Marine Reserve. COMMCICOM, COMMARFORRES, and regional MCI CGs shall each appoint in writing a Regional Victim Witness Liaison Officer (RVWLO), by name, title, duty address, and telephone number."
+          },
+          {
+            "citation": "MCO 5800.16 V-16, par 040902A(2)",
+            "text": "The RVWLO shall be an officer or civilian employee of appropriate grade, experience, and maturity sourced from the supporting LSSS."
+          }
+        ],
+        "summary": "COMMCICOM, COMMARFORRES, and each regional MCI CG must appoint a Regional VWLO in writing including name, title, duty address, and telephone number. The RVWLO is sourced from the supporting LSSS. Inspector Note: Apply this question only at the regional MCI CG, COMMCICOM, or COMMARFORRES level. Mark N/A for inspections below regional level."
+      },
+      "howToInspect": [
+        {
+          "step": "Determine If Inspection Is At The Required Level",
+          "actions": [
+            "Confirm the inspected command is COMMCICOM, COMMARFORRES, or a regional MCI command.",
+            "If not, mark N/A and move to Q0102."
+          ],
+          "callout": "No RVWLO appointed in writing by name/title/duty address/phone",
+          "severity": "finding"
+        },
+        {
+          "step": "Request The RVWLO Appointment Letter",
+          "actions": [
+            "Ask for the current RVWLO appointment letter signed by the CG.",
+            "Verify the letter is in writing and signed."
+          ]
+        },
+        {
+          "step": "Verify Required Identifying Fields",
+          "actions": [
+            "Name of the appointed RVWLO documented.",
+            "Title documented.",
+            "Duty address documented.",
+            "Telephone number documented."
+          ]
+        },
+        {
+          "step": "Verify Source And Eligibility",
+          "actions": [
+            "Confirm the RVWLO is an officer or civilian employee.",
+            "Confirm appropriate grade, experience, and maturity.",
+            "Confirm the RVWLO is sourced from the supporting LSSS."
+          ]
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm the appointed RVWLO is still assigned.",
+            "If the RVWLO has departed, confirm a successor has been appointed in writing."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No written RVWLO appointment on file.",
+            "Appointment letter missing one or more identifying fields.",
+            "RVWLO no longer assigned with no successor designated.",
+            "RVWLO not sourced from the supporting LSSS.",
+            "Appointment letter not signed by the CG."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your current RVWLO appointment letter?",
+        "When was the RVWLO last appointed or reappointed?",
+        "Is the RVWLO sourced from your supporting LSSS?",
+        "How do you ensure timely reappointment when an RVWLO departs?"
+      ],
+      "verification": [
+        "Written RVWLO appointment letter on file.",
+        "Letter signed by the regional CG, COMMCICOM, or COMMARFORRES.",
+        "Name, title, duty address, and telephone number all documented.",
+        "RVWLO is an officer or civilian employee of appropriate grade.",
+        "RVWLO is sourced from the supporting LSSS.",
+        "Appointed RVWLO is currently assigned."
+      ],
+      "verified": true
+    },
+    "0102": {
+      "title": "INSTALLATION VICTIM WITNESS LIAISON OFFICER APPOINTMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040902B(2)",
+            "text": "Appoint in writing an installation VWLO, by name, title, duty address, and telephone number. The VWLO shall be an officer or civilian employee of appropriate grade, experience, and maturity. The VWLO shall not serve as a trial counsel, defense counsel, VLC, staff judge advocate, or legal assistance attorney."
+          }
+        ],
+        "summary": "Installation commanders must appoint an installation VWLO in writing with name, title, duty address, and telephone number. The VWLO must be an officer or civilian of appropriate grade, experience, and maturity, and may not serve concurrently as trial counsel, defense counsel, VLC, SJA, or legal assistance attorney."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Installation VWLO Appointment Letter",
+          "actions": [
+            "Ask the installation SJA or VWLO for the current appointment letter.",
+            "Verify the letter is signed by the installation commander."
+          ],
+          "callout": "No IVWLO appointed in writing by name/title/duty address/phone",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Required Identifying Fields",
+          "actions": [
+            "Name, title, duty address, and telephone number all documented."
+          ]
+        },
+        {
+          "step": "Verify Eligibility",
+          "actions": [
+            "Confirm the VWLO is an officer or civilian employee.",
+            "Confirm appropriate grade, experience, and maturity."
+          ]
+        },
+        {
+          "step": "Verify Prohibited Concurrent Roles",
+          "actions": [
+            "Confirm the VWLO does not serve as trial counsel.",
+            "Confirm the VWLO does not serve as defense counsel.",
+            "Confirm the VWLO does not serve as VLC.",
+            "Confirm the VWLO does not serve as SJA.",
+            "Confirm the VWLO does not serve as legal assistance attorney."
+          ]
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm the appointed VWLO is currently assigned to the installation.",
+            "If the VWLO has departed, confirm a successor is appointed in writing."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No written installation VWLO appointment letter.",
+            "Appointment missing one or more identifying fields.",
+            "VWLO concurrently serves in a prohibited role.",
+            "VWLO departed without successor designated.",
+            "Appointment not signed by the installation commander."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your current installation VWLO appointment letter?",
+        "Who is your VWLO and what is their primary billet?",
+        "Does the VWLO serve in any of the prohibited concurrent roles?",
+        "When was the VWLO last appointed or reappointed?"
+      ],
+      "verification": [
+        "Written installation VWLO appointment letter on file.",
+        "Letter signed by the installation commander.",
+        "Name, title, duty address, and telephone number all documented.",
+        "VWLO is an officer or civilian of appropriate grade.",
+        "VWLO does not serve concurrently as trial counsel, defense counsel, VLC, SJA, or legal assistance attorney.",
+        "Appointed VWLO is currently assigned."
+      ],
+      "verified": true
+    },
+    "0103": {
+      "title": "DISTRIBUTION OF VWLO CONTACT INFORMATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040902B(3)",
+            "text": "Ensure all VWAP personnel aboard the installation are provided the VWLO's name and phone number."
+          }
+        ],
+        "summary": "Installation commanders must ensure all VWAP personnel aboard the installation receive the VWLO's name and phone number. This is a distribution and awareness requirement."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify All VWAP Personnel On The Installation",
+          "actions": [
+            "Compile a list of unit VWACs, LSST VWACs, confinement facility VWACs, and law enforcement VWACs aboard the installation."
+          ],
+          "callout": "VWLO contact information not distributed to VWAP personnel",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Distribution Of VWLO Contact Information",
+          "actions": [
+            "Ask the VWLO how contact information was distributed.",
+            "Request email distribution lists, posted notices, or official correspondence showing the VWLO's name and phone number were communicated."
+          ]
+        },
+        {
+          "step": "Sample VWAP Personnel",
+          "actions": [
+            "Interview 2 to 3 VWACs on the installation.",
+            "Ask each: Who is the installation VWLO and what is their phone number?",
+            "Confirm awareness."
+          ]
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm distribution is current and reflects the present VWLO.",
+            "If the VWLO changed, confirm redistribution occurred."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No documented distribution of VWLO contact information.",
+            "Sampled VWAP personnel do not know the VWLO's name or phone number.",
+            "Distribution outdated, still naming a prior VWLO.",
+            "No procedure to redistribute when the VWLO changes."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How is the VWLO's contact information distributed to VWAP personnel on the installation?",
+        "Show me the most recent distribution?",
+        "Sample VWAC: who is your installation VWLO and what is their phone number?",
+        "When the VWLO changes, how do you ensure all VWAP personnel are notified?"
+      ],
+      "verification": [
+        "Documented distribution of VWLO contact information on file.",
+        "Sampled VWAP personnel can identify the current VWLO by name and phone number.",
+        "Distribution reflects the current VWLO.",
+        "Procedure in place for redistribution upon change of VWLO."
+      ],
+      "verified": true
+    },
+    "0104": {
+      "title": "LOCAL VICTIM AND WITNESS ASSISTANCE COUNCIL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040902B(4)",
+            "text": "Establish a local Victim and Witness Assistance Council, chaired by the installation VWLO, to coordinate a comprehensive assistance program and ensure compliance with VWAP notification and reporting requirements."
+          }
+        ],
+        "summary": "Installation commanders must establish a local Victim and Witness Assistance Council chaired by the installation VWLO. The Council coordinates the comprehensive VWAP program and ensures compliance with notification and reporting requirements. Inspector Note: Per definitions in MCO 5800.16 V-16, par 0411, the Council should include the Installation VWLO, tenant unit VWACs, and representatives from SAPR, FAP, NCIS, CID, PMO, the installation SJA Office, legal assistance office, chaplaincy, the confinement facility/brig, and other offices deemed appropriate. The Council meets quarterly."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Documentation Of Council Establishment",
+          "actions": [
+            "Ask for the order, instruction, or memorandum establishing the local Council.",
+            "Confirm establishment is documented in writing."
+          ],
+          "callout": "No local Victim and Witness Assistance Council established",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify VWLO Chairs The Council",
+          "actions": [
+            "Confirm the installation VWLO is the designated chair."
+          ]
+        },
+        {
+          "step": "Verify Membership",
+          "actions": [
+            "Confirm Council membership includes representatives from SAPR, FAP, NCIS, CID, PMO, installation SJA, legal assistance, chaplaincy, confinement facility, and tenant unit VWACs."
+          ]
+        },
+        {
+          "step": "Verify Meeting Frequency",
+          "actions": [
+            "Confirm the Council meets quarterly per par 040903A(7).",
+            "Request meeting minutes from the past four quarters."
+          ]
+        },
+        {
+          "step": "Verify Functional Output",
+          "actions": [
+            "Confirm the Council coordinates VWAP program activities.",
+            "Confirm the Council reviews compliance with notification and reporting requirements."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No documented establishment of the Council.",
+            "Council exists but is not chaired by the VWLO.",
+            "Council has incomplete membership.",
+            "Council meets less than quarterly.",
+            "No meeting minutes on file.",
+            "Council exists in name only with no documented functional output."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the document establishing your local Victim and Witness Assistance Council?",
+        "Who chairs the Council and who are the members?",
+        "How often does the Council meet?",
+        "Show me minutes from the past four quarterly meetings?",
+        "What program improvements or compliance actions has the Council coordinated?"
+      ],
+      "verification": [
+        "Local Victim and Witness Assistance Council established in writing.",
+        "Installation VWLO chairs the Council.",
+        "Council membership includes SAPR, FAP, NCIS, CID, PMO, SJA, legal assistance, chaplaincy, confinement facility, and tenant unit VWACs.",
+        "Council meets at least quarterly.",
+        "Meeting minutes on file for the past four quarters.",
+        "Documented coordination of VWAP activities and compliance reviews."
+      ],
+      "verified": true
+    },
+    "0105": {
+      "title": "CONFINEMENT FACILITY VWAC APPOINTMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040902B(5)",
+            "text": "When a Marine Corps confinement facility is located aboard the installation, appoint, in writing, by name, title, duty address, and telephone number, a confinement facility representative to serve as the confinement facility VWAC and representative to the local Victim and Witness Assistance Council."
+          }
+        ],
+        "summary": "When a Marine Corps confinement facility is on the installation, the commander must appoint a confinement facility VWAC in writing with name, title, duty address, and telephone number. This person also serves on the local Victim and Witness Assistance Council. Inspector Note: If no Marine Corps confinement facility is located aboard the installation, mark N/A."
+      },
+      "howToInspect": [
+        {
+          "step": "Determine If A Marine Corps Confinement Facility Is On The Installation",
+          "actions": [
+            "Confirm presence or absence of an MC confinement facility.",
+            "If none, mark N/A."
+          ],
+          "callout": "No Confinement Facility VWAC appointed",
+          "severity": "finding"
+        },
+        {
+          "step": "Request The Confinement Facility VWAC Appointment Letter",
+          "actions": [
+            "Ask the installation VWLO for the appointment letter.",
+            "Verify signed by the installation commander."
+          ]
+        },
+        {
+          "step": "Verify Required Identifying Fields",
+          "actions": [
+            "Name, title, duty address, and telephone number all documented."
+          ]
+        },
+        {
+          "step": "Verify Council Membership",
+          "actions": [
+            "Confirm the confinement facility VWAC is a member of the local Victim and Witness Assistance Council.",
+            "Cross-check against Council membership roster."
+          ]
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm appointed person is still assigned."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Confinement facility on installation but no VWAC appointment letter.",
+            "Appointment missing identifying fields.",
+            "Confinement facility VWAC not on the Council membership roster.",
+            "Appointed person no longer assigned with no successor."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Do you have a Marine Corps confinement facility on this installation?",
+        "Show me the confinement facility VWAC appointment letter?",
+        "Is this person a member of your local Victim and Witness Assistance Council?",
+        "When was the confinement facility VWAC last appointed?"
+      ],
+      "verification": [
+        "Presence or absence of MC confinement facility confirmed.",
+        "If present, written confinement facility VWAC appointment letter on file.",
+        "Letter signed by the installation commander.",
+        "All four identifying fields documented.",
+        "Confinement facility VWAC is a member of the local Council.",
+        "Appointed person currently assigned."
+      ],
+      "verified": true
+    },
+    "0106": {
+      "title": "INSTALLATION DIRECTORY OF VICTIM SUPPORT PROGRAMS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040902B(6)",
+            "text": "Construct and maintain, with the assistance of the local Marine and Family Programs office, a directory of military and civilian programs, services, and crime victim compensation funds available to victims and witnesses, and ensure the directory is published on the installation's public website. When appropriate, and after consultation with the cognizant Staff Judge Advocate, enter into Memoranda of Agreement (MOA) with civilian agencies to ensure victims and witnesses are provided required services."
+          }
+        ],
+        "summary": "Installations must construct and maintain a directory of military and civilian victim support programs, services, and crime victim compensation funds, developed with Marine and Family Programs. The directory must be published on the installation's public website. Inspector Note: MOAs with civilian agencies are not mandatory but should be entered into where appropriate after SJA consultation."
+      },
+      "howToInspect": [
+        {
+          "step": "Locate The Installation Directory",
+          "actions": [
+            "Browse to the installation's public website.",
+            "Locate the victim and witness support directory.",
+            "If not online, request the document from the VWLO."
+          ],
+          "callout": "No installation directory of victim support programs",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Required Content",
+          "actions": [
+            "Confirm directory includes military victim support programs.",
+            "Confirm directory includes civilian victim support programs.",
+            "Confirm directory includes services available to victims and witnesses.",
+            "Confirm directory includes crime victim compensation funds."
+          ]
+        },
+        {
+          "step": "Verify Marine And Family Programs Involvement",
+          "actions": [
+            "Confirm the local Marine and Family Programs Office assisted in constructing the directory.",
+            "Request evidence of coordination."
+          ]
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm directory updated within the past 12 months.",
+            "Spot-check 3 to 5 entries to confirm phone numbers and links are active."
+          ]
+        },
+        {
+          "step": "Verify Public Posting",
+          "actions": [
+            "Confirm the directory is on the installation's public website.",
+            "Reject any directory only available on internal SharePoint or shared drives."
+          ]
+        },
+        {
+          "step": "Verify MOAs Where Appropriate",
+          "actions": [
+            "Ask the VWLO about MOAs with civilian agencies.",
+            "If MOAs exist, confirm SJA consultation occurred."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No directory constructed.",
+            "Directory missing one or more required content areas.",
+            "Marine and Family Programs not involved in construction.",
+            "Directory outdated with stale phone numbers or links.",
+            "Directory only on internal sites, not publicly published.",
+            "MOAs with civilian agencies entered into without SJA consultation."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your installation directory of victim support programs?",
+        "Where is the directory published online?",
+        "How was Marine and Family Programs involved in constructing the directory?",
+        "When was the directory last updated?",
+        "Do you have any MOAs with civilian agencies? If so, show me the SJA consultation record?"
+      ],
+      "verification": [
+        "Directory of military and civilian victim support programs on file.",
+        "Directory includes services and crime victim compensation funds.",
+        "Marine and Family Programs Office assisted in construction.",
+        "Directory updated within the past 12 months.",
+        "Sampled phone numbers and links verified active.",
+        "Directory published on the installation's public website.",
+        "Any civilian agency MOAs reviewed by SJA before execution."
+      ],
+      "verified": true
+    },
+    "0201": {
+      "title": "RVWLO ELIGIBILITY AND SOURCING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040903A(1)",
+            "text": "The RVWLO shall be an officer or civilian of appropriate experience, temperament, and rank. The RVWLO shall be sourced from the supporting LSSS but shall not serve as a trial counsel, defense counsel, VLC, staff judge advocate, or legal assistance attorney."
+          }
+        ],
+        "summary": "The RVWLO must be an officer or civilian of appropriate experience and temperament, sourced from the supporting LSSS. The RVWLO may not concurrently serve as trial counsel, defense counsel, VLC, SJA, or legal assistance attorney."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify The Current RVWLO",
+          "actions": [
+            "Pull the appointment letter from Q0101."
+          ]
+        },
+        {
+          "step": "Verify Eligibility",
+          "actions": [
+            "Confirm the RVWLO is an officer or civilian employee.",
+            "Confirm appropriate experience, temperament, and rank."
+          ],
+          "callout": "RVWLO serving as trial counsel, defense counsel, VLC, SJA, or legal assistance attorney (prohibited)",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Sourcing",
+          "actions": [
+            "Confirm the RVWLO is sourced from the supporting LSSS."
+          ]
+        },
+        {
+          "step": "Verify No Prohibited Concurrent Roles",
+          "actions": [
+            "Confirm not serving as trial counsel.",
+            "Confirm not serving as defense counsel.",
+            "Confirm not serving as VLC.",
+            "Confirm not serving as SJA.",
+            "Confirm not serving as legal assistance attorney."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "RVWLO not sourced from supporting LSSS.",
+            "RVWLO concurrently serves in a prohibited role.",
+            "RVWLO grade or experience inappropriate for the billet."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who is the current RVWLO and what is their primary billet?",
+        "Is the RVWLO sourced from your supporting LSSS?",
+        "Does the RVWLO serve in any of the prohibited concurrent roles?"
+      ],
+      "verification": [
+        "RVWLO is an officer or civilian of appropriate grade.",
+        "RVWLO is sourced from the supporting LSSS.",
+        "RVWLO does not serve concurrently as TC, DC, VLC, SJA, or legal assistance attorney."
+      ],
+      "verified": true
+    },
+    "0202": {
+      "title": "RVWLO LIST OF INSTALLATION VWLOs",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040903A(3)",
+            "text": "Maintain a list of VWLOs from each installation under the cognizance of their commanding general and ensure copies of this list are provided to all cognizant VWLOs and the VWAP Director, JMJ."
+          }
+        ],
+        "summary": "The RVWLO must maintain a current list of all Installation VWLOs in the region and distribute the list to all cognizant VWLOs and the VWAP Director at JMJ."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Current Installation VWLO List",
+          "actions": [
+            "Ask the RVWLO for the current list of IVWLOs in the region."
+          ],
+          "callout": "No current list of Installation VWLOs maintained by RVWLO",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Required Content",
+          "actions": [
+            "Each IVWLO listed by name, installation, and contact information."
+          ]
+        },
+        {
+          "step": "Verify Distribution To VWLOs",
+          "actions": [
+            "Confirm the list is distributed to all cognizant VWLOs.",
+            "Request distribution evidence (email, SharePoint posting)."
+          ]
+        },
+        {
+          "step": "Verify Distribution To VWAP Director, JMJ",
+          "actions": [
+            "Confirm the list is forwarded to the VWAP Director, JMJ.",
+            "Request proof of submission."
+          ]
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm list updated within the past 90 days."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No IVWLO list maintained.",
+            "List exists but not distributed to all cognizant VWLOs.",
+            "List not forwarded to VWAP Director, JMJ.",
+            "List outdated."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your current list of Installation VWLOs?",
+        "Show me proof of distribution to all VWLOs and the VWAP Director, JMJ?",
+        "When was the list last updated?"
+      ],
+      "verification": [
+        "Current IVWLO list on file.",
+        "List includes each IVWLO's name, installation, and contact information.",
+        "List distributed to all cognizant VWLOs.",
+        "List forwarded to the VWAP Director, JMJ.",
+        "List updated within the past 90 days."
+      ],
+      "verified": true
+    },
+    "0203": {
+      "title": "RVWLO ENSURES BASIC VWAP TRAINING FOR NEW VWLOs AND VWACs",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040903A(4)",
+            "text": "Ensure basic VWAP training is provided to all new VWLOs and VWACs within the RVWLO's region."
+          }
+        ],
+        "summary": "The RVWLO must ensure all new VWLOs and VWACs in the region receive basic VWAP training upon appointment."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Training Program Documentation",
+          "actions": [
+            "Ask the RVWLO for the basic VWAP training curriculum or materials."
+          ],
+          "callout": "RVWLO not ensuring basic VWAP training for new VWLOs/VWACs",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Training Available For New VWLOs",
+          "actions": [
+            "Identify all new VWLOs in the region appointed in the past 12 months.",
+            "Confirm each completed basic VWAP training."
+          ]
+        },
+        {
+          "step": "Verify Training Available For New VWACs",
+          "actions": [
+            "Identify all new VWACs in the region appointed in the past 12 months.",
+            "Confirm each completed basic VWAP training."
+          ]
+        },
+        {
+          "step": "Verify Training Records",
+          "actions": [
+            "Request training rosters or completion certificates."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No basic VWAP training program available.",
+            "Training program exists but new VWLOs or VWACs did not complete it.",
+            "No training completion records."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your basic VWAP training program?",
+        "Show me the training records for new VWLOs and VWACs from the past 12 months?",
+        "How do you ensure new appointees complete training in a timely manner?"
+      ],
+      "verification": [
+        "Basic VWAP training program documented.",
+        "All new VWLOs in past 12 months completed training.",
+        "All new VWACs in past 12 months completed training.",
+        "Training completion records on file."
+      ],
+      "verified": true
+    },
+    "0204": {
+      "title": "RVWLO COLLECTS REGIONAL DD FORM DATA",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040903A(5)",
+            "text": "Collect and maintain data on the number of victims and witnesses, in the region, who receive DD Forms 2701-2703 and who elect notification via DD Form 2704. Report this data to the VWAP Director, JMJ on a quarterly basis."
+          }
+        ],
+        "summary": "The RVWLO must collect and maintain regional data on DD Forms 2701-2703 issuance and DD Form 2704 notification elections."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Regional Data Compilation",
+          "actions": [
+            "Ask the RVWLO for current data tracking spreadsheet, log, or database."
+          ],
+          "callout": "RVWLO not collecting regional DD Form data",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Required Data Elements",
+          "actions": [
+            "DD Form 2701 (Initial Information) issuance count documented.",
+            "DD Form 2702 (Court-Martial Information) issuance count documented.",
+            "DD Form 2703 (Post-Trial Information) issuance count documented.",
+            "DD Form 2704 (Notification Election) count documented."
+          ]
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm data is current through the most recent completed quarter."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No data collection.",
+            "Data missing one or more required DD Form types.",
+            "Data not current through the most recent quarter."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your DD Form data compilation for the region?",
+        "Walk me through how data is collected from installations?",
+        "When was the data last updated?"
+      ],
+      "verification": [
+        "Regional DD Form data compilation maintained.",
+        "DD Forms 2701, 2702, 2703 issuance counts documented.",
+        "DD Form 2704 notification elections documented.",
+        "Data current through most recent completed quarter."
+      ],
+      "verified": true
+    },
+    "0205": {
+      "title": "RVWLO QUARTERLY REPORT TO VWAP DIRECTOR JMJ",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040903A(5)",
+            "text": "Report this data to the VWAP Director, JMJ on a quarterly basis."
+          }
+        ],
+        "summary": "The RVWLO must forward compiled VWAP data to the VWAP Director at JMJ each quarter."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Quarterly Submission Records",
+          "actions": [
+            "Ask the RVWLO for the past four quarterly submissions to VWAP Director, JMJ."
+          ],
+          "callout": "RVWLO quarterly report to VWAP Director, JMJ not submitted",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Timeliness",
+          "actions": [
+            "Confirm each submission was made within a reasonable time after quarter end.",
+            "Flag any missing quarterly submission."
+          ]
+        },
+        {
+          "step": "Verify Content Quality",
+          "actions": [
+            "Confirm submissions include the data points from Q0204."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missing quarterly submissions.",
+            "Submissions delayed beyond reasonable timeline.",
+            "Submission content incomplete."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your quarterly submissions to the VWAP Director, JMJ for the past year?",
+        "How do you ensure timely submission each quarter?"
+      ],
+      "verification": [
+        "Four quarterly submissions on file for the past year.",
+        "Submissions timely.",
+        "Submission content includes all required DD Form data."
+      ],
+      "verified": true
+    },
+    "0206": {
+      "title": "RVWLO SEMI-ANNUAL REGIONAL VWLO MEETING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040903A(7)",
+            "text": "Chair and conduct semi-annual VWAP symposiums to discuss VWAP-related issues."
+          }
+        ],
+        "summary": "The RVWLO must chair and conduct semi-annual VWAP symposiums or meetings with Regional VWLOs to discuss program issues."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Meeting Documentation",
+          "actions": [
+            "Ask for minutes or agendas from the past two semi-annual meetings."
+          ],
+          "callout": "RVWLO semi-annual VWLO meeting not conducted",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Meeting Frequency",
+          "actions": [
+            "Confirm at least two meetings in the past 12 months."
+          ]
+        },
+        {
+          "step": "Verify Chair",
+          "actions": [
+            "Confirm the RVWLO chaired the meetings."
+          ]
+        },
+        {
+          "step": "Verify Content",
+          "actions": [
+            "Confirm VWAP-related issues were discussed.",
+            "Identify any program improvements that resulted."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Fewer than two meetings in past 12 months.",
+            "Meetings not chaired by the RVWLO.",
+            "No minutes or agendas documented.",
+            "Meetings held but no program improvements identified."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When were your last two semi-annual VWAP symposiums?",
+        "Show me the minutes or agendas?",
+        "What program improvements resulted from these meetings?"
+      ],
+      "verification": [
+        "At least two semi-annual meetings in the past 12 months.",
+        "Meetings chaired by the RVWLO.",
+        "Minutes or agendas on file.",
+        "VWAP-related issues discussed at each meeting."
+      ],
+      "verified": true
+    },
+    "0207": {
+      "title": "RVWLO ROSTER OF TRAINED VWLOs AND VWACs",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040903A(4)",
+            "text": "Ensure basic VWAP training is provided to all new VWLOs and VWACs within the RVWLO's region."
+          }
+        ],
+        "summary": "The RVWLO must maintain a roster identifying all VWLOs and VWACs who received basic VWAP training. This question complements Q0203 by focusing on the recordkeeping aspect. Inspector Note: Q0203 audits whether training occurred. Q0207 audits whether the RVWLO maintains the historical roster of trained personnel."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Training Roster",
+          "actions": [
+            "Ask for the consolidated roster of trained VWLOs and VWACs."
+          ],
+          "callout": "No RVWLO roster of trained VWLOs and VWACs",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Required Data",
+          "actions": [
+            "Each entry includes name, billet, installation, training date."
+          ]
+        },
+        {
+          "step": "Cross-Check Against Q0203 Records",
+          "actions": [
+            "Confirm everyone identified as trained in Q0203 appears on the roster."
+          ]
+        },
+        {
+          "step": "Verify Retention",
+          "actions": [
+            "Confirm roster retained for the duration of the appointee's billet."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No training roster maintained.",
+            "Roster incomplete or missing required data elements.",
+            "Personnel trained but not added to roster."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the roster of trained VWLOs and VWACs?",
+        "How is the roster updated when new personnel are trained?"
+      ],
+      "verification": [
+        "Training roster maintained.",
+        "Each entry includes name, billet, installation, and training date.",
+        "Roster cross-checks against actual training events."
+      ],
+      "verified": true
+    },
+    "0301": {
+      "title": "INSTALLATION VWLO ELIGIBILITY AND SOURCING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040903B(1)",
+            "text": "The VWLO shall be an officer or civilian of appropriate experience, temperament, and rank. The VWLO shall be sourced from the supporting LSST or Staff Judge Advocate Office but shall not serve as a trial counsel, defense counsel, VLC, staff judge advocate, or legal assistance attorney."
+          }
+        ],
+        "summary": "The Installation VWLO must be an officer or civilian of appropriate grade, sourced from the supporting LSST or SJA Office. The VWLO may not concurrently serve as TC, DC, VLC, SJA, or legal assistance attorney."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify The Current Installation VWLO",
+          "actions": [
+            "Pull the appointment letter from Q0102."
+          ]
+        },
+        {
+          "step": "Verify Eligibility",
+          "actions": [
+            "Confirm officer or civilian employee.",
+            "Confirm appropriate experience, temperament, rank."
+          ],
+          "callout": "IVWLO serving in prohibited concurrent role (TC/DC/VLC/SJA/legal asst)",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Sourcing",
+          "actions": [
+            "Confirm sourced from supporting LSST or SJA Office."
+          ]
+        },
+        {
+          "step": "Verify No Prohibited Concurrent Roles",
+          "actions": [
+            "Confirm not TC, DC, VLC, SJA, or legal assistance attorney."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "VWLO not sourced from LSST or SJA Office.",
+            "VWLO concurrently serves in a prohibited role.",
+            "Grade or experience inappropriate."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who is the installation VWLO and what is their primary billet?",
+        "Is the VWLO sourced from the LSST or SJA Office?",
+        "Does the VWLO serve in any prohibited concurrent roles?"
+      ],
+      "verification": [
+        "VWLO is an officer or civilian of appropriate grade.",
+        "VWLO is sourced from the LSST or SJA Office.",
+        "VWLO does not serve concurrently in any prohibited role."
+      ],
+      "verified": true
+    },
+    "0302": {
+      "title": "VWLO LIST OF VWACs, SERVICE PROVIDERS, AND SJAs",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040903B(3)",
+            "text": "Maintain a list of VLCs, VWACs, service providers, and SJAs aboard the installation. Ensure copies of this list are provided to all VWACs and service providers."
+          }
+        ],
+        "summary": "The VWLO must maintain a current list of installation VLCs, VWACs, service providers, and SJAs, and distribute the list to all VWACs and service providers. Inspector Note: The MCO 5800.16 source also requires VLCs to be on the list. Some checklist versions may omit VLCs."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Current List",
+          "actions": [
+            "Ask the VWLO for the installation contact list."
+          ],
+          "callout": "VWLO not maintaining list of VLCs/VWACs/service providers/SJAs",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Required Categories",
+          "actions": [
+            "Confirm list includes VLCs.",
+            "Confirm list includes all unit VWACs.",
+            "Confirm list includes service providers (SAPR, FAP, chaplaincy, etc.).",
+            "Confirm list includes SJAs."
+          ]
+        },
+        {
+          "step": "Verify Distribution",
+          "actions": [
+            "Request proof of distribution to VWACs and service providers."
+          ]
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm list updated within the past 90 days."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No list maintained.",
+            "List missing one or more required categories.",
+            "List not distributed to VWACs or service providers.",
+            "List outdated."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your installation contact list of VLCs, VWACs, service providers, and SJAs?",
+        "Show me proof of distribution to VWACs and service providers?",
+        "When was the list last updated?"
+      ],
+      "verification": [
+        "Installation list on file covering VLCs, VWACs, service providers, and SJAs.",
+        "List distributed to all VWACs and service providers.",
+        "List updated within the past 90 days."
+      ],
+      "verified": true
+    },
+    "0303": {
+      "title": "VWLO ENSURES UNIT VWAC APPOINTMENTS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040903B(4)",
+            "text": "Ensure each command (battalion/squadron level and above) assigned to the installation, including tenant commands, appoints a VWAC in writing, by name, title, duty address, and telephone number."
+          }
+        ],
+        "summary": "The VWLO must ensure every battalion/squadron-level command on the installation (including tenants) has a written VWAC appointment with name, title, duty address, and telephone number."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The Installation Unit Roster",
+          "actions": [
+            "Identify all battalion/squadron-level and higher commands on the installation, including tenant commands."
+          ],
+          "callout": "VWLO not ensuring all unit VWAC appointments are in place",
+          "severity": "finding"
+        },
+        {
+          "step": "Cross-Check Against VWAC Appointments",
+          "actions": [
+            "For each command, confirm a VWAC appointment letter on file.",
+            "Flag any command without a VWAC."
+          ]
+        },
+        {
+          "step": "Verify Required Identifying Fields",
+          "actions": [
+            "Each appointment includes name, title, duty address, telephone number."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "One or more commands without VWAC appointment.",
+            "Appointment letters missing required fields.",
+            "Tenant commands not tracked."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your roster of unit VWACs covering all battalion/squadron level commands on the installation?",
+        "How do you ensure tenant commands appoint VWACs?",
+        "Are any commands missing VWAC appointments?"
+      ],
+      "verification": [
+        "Roster of all battalion/squadron-level commands on installation compiled.",
+        "Each command has a written VWAC appointment with all four required fields.",
+        "Tenant commands included."
+      ],
+      "verified": true
+    },
+    "0304": {
+      "title": "VWLO CHAIRS QUARTERLY INSTALLATION COUNCIL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040903B(5)",
+            "text": "Chair and conduct a quarterly installation Victim Witness Assistance Council meeting."
+          }
+        ],
+        "summary": "The VWLO must chair and conduct the local Victim and Witness Assistance Council meeting on a quarterly basis. Inspector Note: This question audits the operational cadence of the Council established in Q0104."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Past Four Quarterly Meeting Minutes",
+          "actions": [
+            "Ask the VWLO for minutes from the past four quarters."
+          ],
+          "callout": "Quarterly installation council not chaired by VWLO",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Chair",
+          "actions": [
+            "Confirm the VWLO chaired each meeting."
+          ]
+        },
+        {
+          "step": "Verify Frequency",
+          "actions": [
+            "Confirm at least four meetings in the past 12 months.",
+            "Flag any quarter without a meeting."
+          ]
+        },
+        {
+          "step": "Verify Substantive Content",
+          "actions": [
+            "Each meeting addressed VWAP issues, training, or program improvements."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Fewer than four meetings in past 12 months.",
+            "Meetings not chaired by VWLO.",
+            "No minutes on file.",
+            "Meeting minutes show no substantive program coordination."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me minutes from your past four quarterly Council meetings?",
+        "Who chaired each meeting?",
+        "What program issues or improvements resulted from the past year of meetings?"
+      ],
+      "verification": [
+        "Four quarterly Council meetings held in past 12 months.",
+        "Each meeting chaired by the VWLO.",
+        "Minutes on file for each.",
+        "Substantive VWAP program coordination documented."
+      ],
+      "verified": true
+    },
+    "0305": {
+      "title": "INSTALLATION VWAP WEBSITE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040903B(6)",
+            "text": "In conjunction with the installation Marine and Family Programs office and SAPR program, maintain an installation website including, at a minimum, a current directory of installation VWAP personnel, military and civilian programs and services providing counseling, treatment, or other victim support services within the local geographic area."
+          }
+        ],
+        "summary": "The VWLO must maintain an installation VWAP website in conjunction with Marine and Family Programs and SAPR. The website must include a current directory of VWAP personnel and victim support services in the local area."
+      },
+      "howToInspect": [
+        {
+          "step": "Locate The Installation VWAP Website",
+          "actions": [
+            "Browse to the installation's public website.",
+            "Confirm a dedicated VWAP page or section exists."
+          ],
+          "callout": "No installation VWAP website maintained",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Required Content",
+          "actions": [
+            "Current directory of installation VWAP personnel.",
+            "Military counseling, treatment, and support services listed.",
+            "Civilian counseling, treatment, and support services listed.",
+            "Services scoped to the local geographic area."
+          ]
+        },
+        {
+          "step": "Verify Coordination With M&FP and SAPR",
+          "actions": [
+            "Confirm Marine and Family Programs office assisted in website development.",
+            "Confirm SAPR program assisted."
+          ]
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm website updated within past 12 months.",
+            "Spot-check contact information for active links and phone numbers."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No installation VWAP website.",
+            "Website missing required content areas.",
+            "Marine and Family Programs not involved.",
+            "Website outdated."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the installation VWAP website?",
+        "Walk me through the personnel directory and services listings?",
+        "How are Marine and Family Programs and SAPR involved in maintaining the website?",
+        "When was the website last updated?"
+      ],
+      "verification": [
+        "Installation VWAP website on public platform.",
+        "Current VWAP personnel directory.",
+        "Military and civilian victim support services listed for the local area.",
+        "Coordination with M&FP and SAPR documented.",
+        "Website updated within past 12 months."
+      ],
+      "verified": true
+    },
+    "0306": {
+      "title": "VWLO OBTAINS AND DISTRIBUTES INFORMATION, PROVIDES ANNUAL TRAINING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040903B(7)",
+            "text": "Obtain and distribute VWAP information and ensure basic training is provided to all VWACs appointed to units aboard the installation."
+          }
+        ],
+        "summary": "The VWLO must obtain VWAP information from higher headquarters, distribute it across the installation, and ensure all VWACs receive basic training."
+      },
+      "howToInspect": [
+        {
+          "step": "Request VWAP Information Distribution Records",
+          "actions": [
+            "Ask for records of policy updates, MARADMINs, and reference materials distributed to VWACs in past 12 months."
+          ],
+          "callout": "VWLO not distributing materials or conducting annual training",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Annual Training Conducted",
+          "actions": [
+            "Confirm all VWACs received basic VWAP training within the past 12 months.",
+            "Request training rosters or certificates."
+          ]
+        },
+        {
+          "step": "Verify Coverage",
+          "actions": [
+            "Cross-check trained VWACs against the installation roster from Q0303.",
+            "Identify any untrained VWACs."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No information distribution records.",
+            "No annual training conducted.",
+            "One or more VWACs without training.",
+            "Training conducted but rosters incomplete."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your records of VWAP information distributed in the past 12 months?",
+        "Show me training rosters or certificates for all installation VWACs?",
+        "How do you ensure new VWACs are trained promptly after appointment?"
+      ],
+      "verification": [
+        "Records of VWAP information distribution on file.",
+        "Annual training conducted for all installation VWACs.",
+        "Training rosters cross-check against the installation VWAC roster.",
+        "All current VWACs have received basic training."
+      ],
+      "verified": true
+    },
+    "0307": {
+      "title": "VWLO DATA COMPILATION AND REPORTING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040903B(10)",
+            "text": "Compile and maintain data concerning the number of victims and witness provided DD Form 2701-2703 and who elected notification on DD Form 2704 and report that data to the Installation Commander and RVWLO on a quarterly basis."
+          }
+        ],
+        "summary": "The VWLO must compile data on DD Form 2701-2703 issuance and DD Form 2704 elections, and report quarterly to the Installation Commander and the RVWLO."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Data Compilation",
+          "actions": [
+            "Ask the VWLO for the current data tracking record."
+          ],
+          "callout": "VWLO data compilation or reporting not conducted",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Required Data Elements",
+          "actions": [
+            "DD Form 2701, 2702, 2703 counts.",
+            "DD Form 2704 election counts."
+          ]
+        },
+        {
+          "step": "Request Quarterly Reports",
+          "actions": [
+            "Past four quarterly reports to Installation Commander.",
+            "Past four quarterly reports to RVWLO."
+          ]
+        },
+        {
+          "step": "Verify Process Documentation",
+          "actions": [
+            "Confirm the compilation and reporting process is written down."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No data compilation.",
+            "Missing one or more quarterly reports.",
+            "Reports to Installation Commander but not to RVWLO.",
+            "No documented process."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your VWAP data compilation?",
+        "Show me your last four quarterly reports to the Installation Commander and the RVWLO?",
+        "Walk me through your data collection process?"
+      ],
+      "verification": [
+        "Data compilation on file with all required DD Form counts.",
+        "Past four quarterly reports to Installation Commander on file.",
+        "Past four quarterly reports to RVWLO on file.",
+        "Compilation and reporting process documented."
+      ],
+      "verified": true
+    },
+    "0308": {
+      "title": "VWLO ENSURES DEPLOYING UNITS RECEIVE VWAP TRAINING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040903B(11)",
+            "text": "Ensure that deploying units receive VWAP training and information prior to deployment."
+          }
+        ],
+        "summary": "The VWLO must ensure deploying units receive VWAP training and information before they deploy. Inspector Note: If no units have deployed from the installation in the past 24 months, mark N/A and document."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Recently Deployed Units",
+          "actions": [
+            "Request a list of units that deployed from the installation in the past 24 months.",
+            "If none, mark N/A."
+          ],
+          "callout": "Deploying units not receiving VWAP training",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Pre-Deployment Training",
+          "actions": [
+            "For each deployed unit, confirm pre-deployment VWAP training occurred.",
+            "Request training rosters, briefing slides, or attendance records."
+          ]
+        },
+        {
+          "step": "Verify Information Provided",
+          "actions": [
+            "Confirm units received reference materials and POC information for VWAP during deployment."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Deploying unit did not receive pre-deployment VWAP training.",
+            "Training occurred but not documented.",
+            "No reference materials provided."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Which units deployed from this installation in the past 24 months?",
+        "Show me the pre-deployment VWAP training records for each?",
+        "What VWAP materials were provided to deploying units?"
+      ],
+      "verification": [
+        "Deploying units in past 24 months identified.",
+        "Each unit received pre-deployment VWAP training.",
+        "Training documented with rosters or attendance records.",
+        "Reference materials provided to deploying units."
+      ],
+      "verified": true
+    },
+    "0401": {
+      "title": "LSST VWAC APPOINTMENT IN WRITING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040904B(1)",
+            "text": "Hire and appoint an LSST VWAC in writing, by name, title, duty address, and telephone number in order to enable VWAP compliance and aid trial counsel efforts to notify victims. The LSST VWAC will be a civilian of sufficient experience and temperament. The LSST OIC will ensure the LSST VWAC is properly trained concerning SVIP requirements. LSST Yuma and LSST Iwakuni do not require an independent VWAC. Once hired, the VWAC will fall within the TSO supervisory chain."
+          }
+        ],
+        "summary": "The LSST OIC must appoint an LSST VWAC in writing with name, title, duty address, and telephone number. The VWAC is a civilian, trained on SVIP requirements, and falls within the TSO supervisory chain. LSST Yuma and Iwakuni are exempt. Inspector Note: LSST Yuma and LSST Iwakuni do not require an independent VWAC. Mark N/A for these locations."
+      },
+      "howToInspect": [
+        {
+          "step": "Determine If Exemption Applies",
+          "actions": [
+            "LSST Yuma or LSST Iwakuni - mark N/A."
+          ],
+          "callout": "No LSST VWAC appointed in writing",
+          "severity": "finding"
+        },
+        {
+          "step": "Request The LSST VWAC Appointment Letter",
+          "actions": [
+            "Signed by the LSST OIC."
+          ]
+        },
+        {
+          "step": "Verify Required Fields",
+          "actions": [
+            "Name, title, duty address, telephone number documented."
+          ]
+        },
+        {
+          "step": "Verify Eligibility",
+          "actions": [
+            "VWAC is a civilian.",
+            "Appropriate experience and temperament.",
+            "SVIP training completed."
+          ]
+        },
+        {
+          "step": "Verify Supervisory Chain",
+          "actions": [
+            "VWAC falls within TSO supervisory chain."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No written appointment letter.",
+            "Required fields missing.",
+            "VWAC is military rather than civilian.",
+            "SVIP training not completed."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your LSST VWAC appointment letter?",
+        "Is the VWAC a civilian or military member?",
+        "Has the VWAC completed SVIP training?"
+      ],
+      "verification": [
+        "Written LSST VWAC appointment letter on file (unless Yuma/Iwakuni).",
+        "Letter signed by LSST OIC with all four required fields.",
+        "VWAC is a civilian of appropriate experience.",
+        "SVIP training completed.",
+        "VWAC is in TSO supervisory chain."
+      ],
+      "verified": true
+    },
+    "0402": {
+      "title": "TSO VWAP DATA IN ELECTRONIC CASE MANAGEMENT SYSTEM",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040904E(3)",
+            "text": "Ensure TSO personnel input the information of each victim and witnesses into the electronic case management system and the following data is collected: the number of victims and witnesses who receive DD Form 2702, DD Form 2703, elect to exercise their rights via DD Form 2704."
+          }
+        ],
+        "summary": "The TSO must ensure all VWAP data, including DD Form 2702, 2703, and 2704 elections, is entered into the electronic case management system for every victim and witness."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample 10 Recent Cases",
+          "actions": [
+            "Pull cases from past 12 months."
+          ],
+          "callout": "TSO VWAP data not maintained in electronic case management system",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Victim and Witness Records",
+          "actions": [
+            "Each victim and witness has an entry in the electronic case management system."
+          ]
+        },
+        {
+          "step": "Verify Required Data Points",
+          "actions": [
+            "DD Form 2702 issuance recorded.",
+            "DD Form 2703 issuance recorded.",
+            "DD Form 2704 election recorded."
+          ]
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Entries updated through current case status."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Victims or witnesses not entered in CMS.",
+            "DD Form data missing from CMS entries.",
+            "Entries outdated."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Pull 10 random recent cases from CMS and show me the VWAP data fields?",
+        "Walk me through your process for entering VWAP data?"
+      ],
+      "verification": [
+        "Sample 10 cases all have victim and witness CMS entries.",
+        "DD Form 2702, 2703 issuance documented per entry.",
+        "DD Form 2704 elections documented per entry.",
+        "Entries current."
+      ],
+      "verified": true
+    },
+    "0403": {
+      "title": "TSO QUARTERLY DD FORM REPORTING TO IVWLO",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040904E(4)",
+            "text": "Ensure the total number of victims and witnesses provided DD Forms 2702, DD Form 2703, and electing to be notified of confinee status change on DD Form 2704, are reported to the installation VWLO on a quarterly basis."
+          }
+        ],
+        "summary": "The TSO must report quarterly DD Form 2702, 2703, and 2704 totals to the Installation VWLO."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Past Four Quarterly Reports",
+          "actions": [
+            "Each quarter's submission to the IVWLO."
+          ],
+          "callout": "TSO not submitting quarterly DD Form report to IVWLO",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Content",
+          "actions": [
+            "DD Form 2702, 2703 totals; DD Form 2704 election totals."
+          ]
+        },
+        {
+          "step": "Verify Timeliness",
+          "actions": [
+            "Submitted within reasonable time after quarter end."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missing quarterly reports.",
+            "Reports lack required totals.",
+            "Late submissions."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your last four quarterly DD Form reports to the IVWLO?",
+        "How are the totals compiled from CMS?"
+      ],
+      "verification": [
+        "Four quarterly reports to IVWLO on file.",
+        "Each report includes DD Form 2702, 2703, and 2704 totals.",
+        "Reports timely."
+      ],
+      "verified": true
+    },
+    "0404": {
+      "title": "LSST VWAC ASSIGNED TO LOCAL COUNCIL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040904E(5)",
+            "text": "Ensure each LSST VWAC is appointed to the installation Victim and Witness Assistance Council and provide a copy of the LSST VWAC appointment letter to the respective VWLOs."
+          }
+        ],
+        "summary": "Each LSST VWAC must be appointed to the installation Victim and Witness Assistance Council. The LSST OIC must provide a copy of the appointment letter to the VWLO."
+      },
+      "howToInspect": [
+        {
+          "step": "Cross-Check LSST VWAC Against Council Roster",
+          "actions": [
+            "Pull Council membership roster from Q0104/Q0304.",
+            "Confirm the LSST VWAC is listed as a member."
+          ],
+          "callout": "LSST VWAC not assigned to local council",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Appointment Letter Provided To VWLO",
+          "actions": [
+            "Request proof of transmittal to the cognizant VWLO."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "LSST VWAC not on Council roster.",
+            "Appointment letter not provided to VWLO."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Is the LSST VWAC a member of the installation Council?",
+        "Show me proof that the LSST VWAC's appointment letter was provided to the VWLO?"
+      ],
+      "verification": [
+        "LSST VWAC appointed to local Council.",
+        "Appointment letter delivered to cognizant VWLO."
+      ],
+      "verified": true
+    },
+    "0405": {
+      "title": "DD FORM 2702 PROVIDED AFTER PREFERRAL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040904F(2)",
+            "text": "After preferral of charges, provide all victims and witnesses with DD Form 2702 Court-Martial Information for Victims and Witnesses of Crime and determine their elections. Ensure that victims and witnesses are notified of their rights and provided information concerning the criminal justice process. Notify the applicable VWACs to ensure the VWACs are aware of victims or witnesses under their cognizance."
+          }
+        ],
+        "summary": "Trial counsel or the LSST VWAC must provide DD Form 2702 to all victims and witnesses after preferral of charges, determine their election of rights, and notify the applicable command VWACs."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample 10 Recent Preferred Cases",
+          "actions": [],
+          "callout": "DD Form 2702 not provided after preferral",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify DD Form 2702 Issued To Each Victim And Witness",
+          "actions": [
+            "Confirm a signed DD Form 2702 is on file for each."
+          ]
+        },
+        {
+          "step": "Verify Elections Documented",
+          "actions": [
+            "Confirm each form captures the victim or witness election of rights."
+          ]
+        },
+        {
+          "step": "Verify Command VWAC Notification",
+          "actions": [
+            "Confirm cognizant unit VWACs were notified."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "DD Form 2702 not issued to some victims or witnesses.",
+            "Elections not documented on form.",
+            "Command VWAC not notified."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me DD Form 2702 records for 10 random recent cases?",
+        "How do you ensure command VWACs are notified after preferral?"
+      ],
+      "verification": [
+        "DD Form 2702 issued to every victim and witness in sample cases.",
+        "Elections documented on each form.",
+        "Command VWAC notification documented."
+      ],
+      "verified": true
+    },
+    "0406": {
+      "title": "TIMELY TRIAL EVENT NOTIFICATIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040904F(4)",
+            "text": "Personally, or through the LSST VWAC, trial counsel shall provide victims and witnesses with all applicable documents, information, notifications, and records described in paragraph 040401-02, 040502-06, and 0406 this chapter. Ensure all notifications and documents are provided as early as possible."
+          }
+        ],
+        "summary": "Trial counsel must provide timely notifications to victims and witnesses of all required trial events and procedural milestones, as early as possible."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample 5 Active Or Recently Completed Cases",
+          "actions": [],
+          "callout": "Victim/witness not notified timely of trial events",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Notifications Of Trial Events",
+          "actions": [
+            "Article 32 hearings, court-martial dates, motions hearings, post-trial hearings."
+          ]
+        },
+        {
+          "step": "Verify Timing",
+          "actions": [
+            "Notifications provided at earliest possible opportunity.",
+            "Reject any case where notification was provided after the event."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Notifications late.",
+            "Notifications missing for certain events.",
+            "No documentation of notification."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through how you ensure timely victim and witness notifications?",
+        "Show me notification records for the cases I name?"
+      ],
+      "verification": [
+        "Notification records on file for sampled cases.",
+        "Notifications cover all required trial events.",
+        "Notifications timely."
+      ],
+      "verified": true
+    },
+    "0407": {
+      "title": "NOTIFICATIONS ROUTED THROUGH VLC WHEN APPLICABLE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040904F(3)",
+            "text": "At the earliest possible opportunity, trial counsel shall determine whether VLC represents any victims in their case. When a victim is represented by VLC, the trial counsel shall provide all required case notifications through the VLC."
+          }
+        ],
+        "summary": "When a victim is represented by VLC, trial counsel must route all required notifications through the VLC."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify VLC-Represented Victims In Past 12 Months",
+          "actions": [],
+          "callout": "Notifications not routed through VLC when applicable",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Notifications Routed Through VLC",
+          "actions": [
+            "Confirm trial counsel correspondence is addressed to VLC."
+          ]
+        },
+        {
+          "step": "Verify Determination Of VLC Representation",
+          "actions": [
+            "Confirm trial counsel checked for VLC representation early in the case."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Notifications sent directly to victim despite VLC representation.",
+            "No determination of VLC status early in the case."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you determine if a victim is represented by VLC?",
+        "Show me notification correspondence for VLC-represented victims?"
+      ],
+      "verification": [
+        "All VLC-represented victims identified.",
+        "Notifications routed through VLC.",
+        "Determination of VLC representation made early."
+      ],
+      "verified": true
+    },
+    "0408": {
+      "title": "SEPARATE WAITING AREA FOR VICTIMS AND WITNESSES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040904F(6)",
+            "text": "Separate Waiting Room. Trial counsel shall ensure victims, victim witness support personnel, and prosecution witnesses are aware of the availability of separate waiting area out of the sight and hearing of the accused and defense witnesses."
+          }
+        ],
+        "summary": "Trial counsel must ensure separate waiting areas are available and victims, support personnel, and prosecution witnesses are made aware of them."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect The Courtroom Facility",
+          "actions": [
+            "Confirm a separate waiting area exists out of sight and hearing of the accused."
+          ],
+          "callout": "No separate waiting area for victims and witnesses",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Notification To Victims And Witnesses",
+          "actions": [
+            "Confirm trial counsel informs victims and prosecution witnesses of the available area."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No separate waiting area available.",
+            "Available but victims and witnesses not informed."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the separate waiting area available to victims and witnesses?",
+        "How do you notify victims and witnesses of the area?"
+      ],
+      "verification": [
+        "Separate waiting area exists out of sight and hearing of accused.",
+        "Victims and witnesses notified of availability."
+      ],
+      "verified": true
+    },
+    "0409": {
+      "title": "SAFEGUARDING AND RETURN OF VICTIM PROPERTY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040904F(9)",
+            "text": "Victim and Witness Property. When trial counsel has possession of a victim's or witness's property, trial counsel shall safeguard the property held as evidence and shall return it as soon as possible with due consideration of the possibility of appeals and other post-trial requirements."
+          }
+        ],
+        "summary": "Trial counsel must safeguard victim and witness property held as evidence and return it as soon as possible considering post-trial and appellate needs."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample Cases With Victim Property",
+          "actions": [
+            "Identify cases where victim property was held as evidence in past 24 months."
+          ]
+        },
+        {
+          "step": "Verify Safeguarding",
+          "actions": [
+            "Confirm property was stored securely (evidence locker, chain of custody)."
+          ],
+          "callout": "Victim property not safeguarded or returned",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Return",
+          "actions": [
+            "Confirm property returned post-trial.",
+            "Receipt of return documented."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Property held longer than necessary.",
+            "No documented return.",
+            "Chain of custody gaps."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me cases where victim property was held as evidence?",
+        "Show me the return documentation?"
+      ],
+      "verification": [
+        "Property storage compliant with chain of custody.",
+        "Property returned post-trial.",
+        "Return documented with receipt."
+      ],
+      "verified": true
+    },
+    "0410": {
+      "title": "DD FORM 2703 PROVIDED POST-TRIAL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040904F(10)",
+            "text": "Post-Trial Information. At the conclusion of a court-martial resulting in a conviction, trial counsel shall inform victims and witnesses of basic information about the post-trial process and provide each with a completed DD Form 2703 Post-Trial Information for Victims and Witnesses."
+          }
+        ],
+        "summary": "After a conviction, trial counsel must inform victims and witnesses of the post-trial process and provide each with a completed DD Form 2703."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample Convictions From Past 12 Months",
+          "actions": [],
+          "callout": "DD Form 2703 not provided post-trial",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify DD Form 2703 Issued",
+          "actions": [
+            "Each victim and witness in convicted cases has a signed DD Form 2703."
+          ]
+        },
+        {
+          "step": "Verify Post-Trial Briefing",
+          "actions": [
+            "Confirm trial counsel briefed each on the post-trial process."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "DD Form 2703 missing for some victims or witnesses.",
+            "No documented briefing.",
+            "Forms incomplete."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me DD Form 2703 records for convictions in the past 12 months?",
+        "How do you brief victims on the post-trial process?"
+      ],
+      "verification": [
+        "DD Form 2703 issued to every victim and witness in conviction cases.",
+        "Post-trial briefing documented.",
+        "Forms complete."
+      ],
+      "verified": true
+    },
+    "0411": {
+      "title": "DD FORM 2704 DISTRIBUTION POST-CONFINEMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040904F(11)",
+            "text": "Post-Trial Confinement Status of Accused. At the conclusion of every court-martial in which confinement is adjudged, trial counsel shall confer with each victim and witness to determine whether they desire to receive information about the confinement status of the accused. Trial counsel shall complete a DD Form 2704 and shall ensure redacted copies are provided to: (a) The confinement facility. (b) Victims and witnesses entitled to receive such information. (c) The responsible unit VWAC."
+          }
+        ],
+        "summary": "When confinement is adjudged, trial counsel must complete DD Form 2704 and distribute redacted copies to the confinement facility, entitled victims and witnesses, and the responsible unit VWAC. Inspector Note: Copies provided to victims and witnesses must be redacted to protect PII of others."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample Confinement-Adjudged Cases",
+          "actions": [],
+          "callout": "DD Form 2704 not distributed post-confinement",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify DD Form 2704 Completed",
+          "actions": []
+        },
+        {
+          "step": "Verify Distribution",
+          "actions": [
+            "Confinement facility copy on file.",
+            "Victim and witness copies provided.",
+            "Unit VWAC copy provided."
+          ]
+        },
+        {
+          "step": "Verify Redaction",
+          "actions": [
+            "Copies to victims and witnesses redacted to protect others' PII."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "DD Form 2704 not completed.",
+            "Distribution incomplete.",
+            "Unredacted copies provided to victims or witnesses."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me DD Form 2704 records for confinement-adjudged cases?",
+        "Show me the distribution chain for each?"
+      ],
+      "verification": [
+        "DD Form 2704 completed for all confinement-adjudged cases.",
+        "Copies to confinement facility, victims, witnesses, and unit VWAC.",
+        "Redactions applied where required."
+      ],
+      "verified": true
+    },
+    "0412": {
+      "title": "LSST TC AND VWAC MAINTAIN DD FORM DATA",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040904F(12)",
+            "text": "Data. Ensure all VWAP related information is recorded accurately in the individual case file and the electronic case management system. The LSST VWAC shall assist the trial counsel as directed by the RTC."
+          }
+        ],
+        "summary": "LSST Trial Counsel and the LSST VWAC must maintain accurate VWAP data on DD Form 2702, 2703, and 2704 metrics in both the case file and the electronic case management system."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Current Data Compilation",
+          "actions": [],
+          "callout": "LSST TC/VWAC not maintaining DD Form data",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Required Metrics",
+          "actions": [
+            "DD Form 2702, 2703 counts.",
+            "DD Form 2704 election counts."
+          ]
+        },
+        {
+          "step": "Cross-Check Case Files Against CMS",
+          "actions": [
+            "Sample 5 cases. Confirm DD Form data in both case file and CMS."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Data not maintained.",
+            "Inconsistencies between case file and CMS."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your current DD Form data compilation?",
+        "Walk me through how case file and CMS data are kept in sync?"
+      ],
+      "verification": [
+        "DD Form 2702, 2703, 2704 data maintained.",
+        "Case file and CMS entries consistent."
+      ],
+      "verified": true
+    },
+    "0413": {
+      "title": "VWAP DATA IN CMS FOR EACH VICTIM AND WITNESS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040904F(12)",
+            "text": "Ensure all VWAP related information is recorded accurately in the individual case file and the electronic case management system."
+          }
+        ],
+        "summary": "All VWAP data for each victim and witness must be entered into the electronic case management system when required by the case stage. Inspector Note: This question is similar to Q0402 but focuses on per-victim/per-witness completeness rather than aggregate TSO assurance."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample 10 Recent Cases",
+          "actions": [],
+          "callout": "VWAP data not in CMS for each victim and witness",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Per-Victim And Per-Witness Records",
+          "actions": [
+            "Each individual has a CMS entry with VWAP data."
+          ]
+        },
+        {
+          "step": "Verify Required Data Points",
+          "actions": [
+            "Notifications issued, elections recorded, distribution documented."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Individuals missing from CMS.",
+            "Required data points blank."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Pull 10 random cases. Show me the CMS entry for each individual victim and witness?"
+      ],
+      "verification": [
+        "Each victim and witness has an individual CMS entry.",
+        "All required VWAP data points populated."
+      ],
+      "verified": true
+    },
+    "0414": {
+      "title": "APPELLATE ELECTION DETERMINATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040904F(13)(b)",
+            "text": "Trial counsel shall determine whether victims and witnesses elect to receive further information and updates during the appellate process. Trial counsel or LSST VWAC shall forward the contact information of each victim and witness seeking updates to OJAG, Code 46 along with a copy of each DD Form 2704."
+          }
+        ],
+        "summary": "Trial counsel or the LSST VWAC must determine whether victims and witnesses want to receive appellate updates and document the election."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample Convicted Cases In Past 12 Months",
+          "actions": [],
+          "callout": "Appellate election determination not documented",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Appellate Election Documented",
+          "actions": [
+            "For each victim and witness, confirm appellate update election is documented."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No documented determination.",
+            "Election unclear."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the appellate election records for victims and witnesses in convicted cases?"
+      ],
+      "verification": [
+        "Appellate election documented for all victims and witnesses in convicted cases."
+      ],
+      "verified": true
+    },
+    "0415": {
+      "title": "CONTACT INFO FORWARDED TO OJAG CODE 46",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040904F(13)(b)",
+            "text": "Trial counsel or LSST VWAC shall forward the contact information of each victim and witness seeking updates to OJAG, Code 46 along with a copy of each DD Form 2704. The information shall be transmitted directly to Code 46 via encrypted email or letter and shall not be appended to the Record of Trial."
+          }
+        ],
+        "summary": "When a victim or witness elects appellate updates, the trial counsel or LSST VWAC must forward their contact information and a copy of DD Form 2704 to OJAG Code 46 via encrypted email or letter. The information is not appended to the Record of Trial. Inspector Note: Contact information must be transmitted via encrypted means, not via the Record of Trial."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Cases With Appellate Elections",
+          "actions": [],
+          "callout": "Contact info not forwarded to OJAG Code 46",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Transmittal To Code 46",
+          "actions": [
+            "Request encrypted email or letter records showing transmission to Code 46."
+          ]
+        },
+        {
+          "step": "Verify Information Not Appended To ROT",
+          "actions": [
+            "Confirm contact information is excluded from the Record of Trial."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Contact information not forwarded to Code 46.",
+            "Information transmitted via insecure means.",
+            "Contact info appended to ROT."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me transmittal records to OJAG Code 46 for the past 12 months?",
+        "How is contact information transmitted?"
+      ],
+      "verification": [
+        "Code 46 transmittals on file for all appellate elections.",
+        "Encrypted email or letter used.",
+        "Contact information not in ROT."
+      ],
+      "verified": true
+    },
+    "0416": {
+      "title": "REASSUMING ROLE AFTER REMAND",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040904F(13)(c)",
+            "text": "In cases remanded for rehearing, coordinate with Code 46 to re-assume the role as primary point of contact for victims and witnesses associated with the case."
+          }
+        ],
+        "summary": "When a case is remanded, the LSST VWAC must coordinate with OJAG Code 46 to take over as the primary VWAP point of contact for the case. Inspector Note: If no remanded cases exist in the inspection period, mark N/A."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Remanded Cases",
+          "actions": [
+            "Request list of remanded cases handled by the LSST in past 24 months.",
+            "If none, mark N/A."
+          ],
+          "callout": "Role not reassumed after remand",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Coordination With Code 46",
+          "actions": [
+            "Confirm written coordination took place upon remand.",
+            "Confirm LSST VWAC assumed primary POC role."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No coordination with Code 46.",
+            "LSST VWAC did not assume POC role."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Have you had any remanded cases in the past 24 months?",
+        "For each, show me the Code 46 coordination record?"
+      ],
+      "verification": [
+        "Remanded cases identified.",
+        "Code 46 coordination documented for each.",
+        "LSST VWAC assumed primary POC role."
+      ],
+      "verified": true
+    },
+    "0417": {
+      "title": "VLC RIGHT NOTIFICATION BEFORE VICTIM INTERVIEW",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040303",
+            "text": "Absent exigent circumstances, notification to the victim must occur before a trial counsel, or representative of the trial counsel, interviews or requests a statement from the victim. The trial counsel or the trial counsel's representative must document the notification to the victim in the case file or the exigent circumstances that supported an immediate interview of the victim."
+          }
+        ],
+        "summary": "Trial counsel must notify victims of their right to consult a VLC before conducting any interview, unless exigent circumstances exist. Notification must be documented. Inspector Note: Exigent circumstances require documentation explaining why immediate interview occurred."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample 5 Recent Cases With Victim Interviews",
+          "actions": [],
+          "callout": "VLC right notification not given before victim interview",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify VLC Notification Pre-Interview",
+          "actions": [
+            "Confirm written notification documented before interview."
+          ]
+        },
+        {
+          "step": "Verify Exigent Circumstances Documented",
+          "actions": [
+            "For any pre-notification interview, confirm exigent circumstances are documented."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Victim interviewed without prior VLC notification.",
+            "No documentation of notification.",
+            "Exigent circumstances not explained."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through how you notify victims of their VLC right before interviews?",
+        "Show me notification records for the cases I name?"
+      ],
+      "verification": [
+        "VLC notification documented before victim interview in sampled cases.",
+        "Exigent circumstances documented where applicable."
+      ],
+      "verified": true
+    },
+    "0501": {
+      "title": "LAW ENFORCEMENT VWAC APPOINTMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040905A(1)",
+            "text": "Each law enforcement agency or office shall appoint a Law Enforcement VWAC. The Law Enforcement VWAC shall: (a) Sit on the Victim and Witness Assistance Council."
+          }
+        ],
+        "summary": "Each installation law enforcement agency or office must appoint a Law Enforcement VWAC, and the appointed VWAC must sit on the Victim and Witness Assistance Council."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Installation Law Enforcement Agencies",
+          "actions": [
+            "List PMO, CID, NCIS, and any DoD police element aboard the installation."
+          ],
+          "callout": "No Law Enforcement VWAC appointed",
+          "severity": "finding"
+        },
+        {
+          "step": "Request Appointment Letters",
+          "actions": [
+            "Pull the Law Enforcement VWAC appointment letter from each agency.",
+            "Confirm letter is current and signed by the agency head."
+          ]
+        },
+        {
+          "step": "Verify Council Participation",
+          "actions": [
+            "Pull the Victim and Witness Assistance Council attendance roster.",
+            "Confirm each Law Enforcement VWAC is reflected as a council member."
+          ],
+          "callout": "LE VWAC not reflected on Council roster",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No Law Enforcement VWAC appointed.",
+            "Appointment letter not signed by the agency head.",
+            "Law Enforcement VWAC not reflected on council roster."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Which law enforcement agencies operate aboard this installation?",
+        "Has each agency appointed a Law Enforcement VWAC in writing?",
+        "Is each Law Enforcement VWAC participating on the Victim and Witness Assistance Council?"
+      ],
+      "verification": [
+        "Current appointment letter on file for each law enforcement agency aboard the installation.",
+        "Each Law Enforcement VWAC reflected on the council roster.",
+        "Council attendance records show Law Enforcement VWAC participation."
+      ],
+      "verified": true
+    },
+    "0502": {
+      "title": "DD FORM 2701 ACCURACY OF INSTALLATION CONTACT INFORMATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040905A(1)(b)",
+            "text": "Ensure DD Form 2701s are provided to victims and witnesses and contain accurate contact information."
+          }
+        ],
+        "summary": "Installation law enforcement personnel must provide DD Form 2701s to victims and witnesses with accurate contact information for that specific installation."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Sample DD Form 2701s",
+          "actions": [
+            "Pull a representative sample of DD Form 2701s issued in the last 12 months from each law enforcement agency."
+          ]
+        },
+        {
+          "step": "Verify Contact Information Accuracy",
+          "actions": [
+            "Confirm investigator name and telephone number are present.",
+            "Confirm VWLO name and telephone number are correct for this installation.",
+            "Confirm cognizant command VWAC name and telephone number are correct.",
+            "Confirm victim advocate information is correct when appropriate."
+          ],
+          "callout": "DD Form 2701 contact info inaccurate for installation",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Cross-Check Against Installation Directory",
+          "actions": [
+            "Compare DD Form 2701 entries to the current installation contact roster.",
+            "Note any outdated, missing, or off-installation contact data."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "DD Form 2701 not provided to victim or witness.",
+            "Form contains outdated or incorrect contact data.",
+            "VWLO contact data missing or off-installation."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What process do you use to verify DD Form 2701 contact information before issuance?",
+        "When was the contact information last updated?",
+        "Who verifies the form data matches the current installation directory?"
+      ],
+      "verification": [
+        "Sample DD Form 2701s reviewed across each law enforcement agency.",
+        "Contact information matches current installation directory.",
+        "VWLO, VWAC, and investigator contact entries verified."
+      ],
+      "verified": true
+    },
+    "0503": {
+      "title": "DD FORM 2701 TRACKING AND REPORTING TO VWLO",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040905A(1)(b)",
+            "text": "The number of DD Form 2701s provided victims and witnesses will be tracked and reported to installation VWLO."
+          }
+        ],
+        "summary": "Each law enforcement agency must track the number of DD Form 2701s issued to victims and witnesses and report those numbers to the installation VWLO."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Tracking Log",
+          "actions": [
+            "Pull each law enforcement agency's DD Form 2701 issuance log.",
+            "Confirm log captures form number, date issued, recipient role (victim or witness), and case identifier."
+          ],
+          "callout": "No DD Form 2701 reporting to VWLO",
+          "severity": "finding"
+        },
+        {
+          "step": "Request VWLO Reporting Records",
+          "actions": [
+            "Pull VWLO records of DD Form 2701 counts received from each law enforcement agency.",
+            "Confirm reporting cadence is consistent."
+          ]
+        },
+        {
+          "step": "Reconcile Counts",
+          "actions": [
+            "Compare the agency tracking log to the VWLO record.",
+            "Identify gaps, missing months, or unreported issuances."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No tracking log maintained.",
+            "Counts reported to VWLO are inconsistent with the issuance log.",
+            "VWLO has no record of receiving counts from one or more agencies."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you track DD Form 2701 issuances?",
+        "How often do you report counts to the VWLO?",
+        "Who reconciles the count to the VWLO record?"
+      ],
+      "verification": [
+        "Tracking log present at each law enforcement agency.",
+        "VWLO records of DD Form 2701 counts present and current.",
+        "Counts reconciled between agency log and VWLO record."
+      ],
+      "verified": true
+    },
+    "0504": {
+      "title": "LAW ENFORCEMENT ANNUAL VWAP TRAINING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040905A(1)(c)",
+            "text": "Conduct annual training of law enforcement personnel on VWAP requirements and applicable orders covering the treatment of victims and witnesses."
+          }
+        ],
+        "summary": "Each installation law enforcement agency must conduct annual VWAP training for its personnel covering VWAP requirements and applicable orders on the treatment of victims and witnesses."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Annual Training Records",
+          "actions": [
+            "Pull last 12 months of training rosters from each law enforcement agency.",
+            "Confirm training was VWAP-specific, not general law enforcement training."
+          ],
+          "callout": "No annual VWAP training conducted by law enforcement",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Training Content",
+          "actions": [
+            "Pull lesson plan or instructor guide for the most recent VWAP training session.",
+            "Confirm content covers VWAP requirements.",
+            "Confirm content covers applicable orders on victim and witness treatment."
+          ]
+        },
+        {
+          "step": "Verify Personnel Coverage",
+          "actions": [
+            "Compare training attendance roster to the agency personnel roster.",
+            "Identify any personnel not trained in the last 12 months."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No annual VWAP training conducted.",
+            "Training conducted but content does not cover VWAP requirements.",
+            "Personnel not trained within the 12 month window."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When was your last VWAP-specific training session?",
+        "What references and lesson plans were used?",
+        "What percentage of agency personnel completed the training in the last 12 months?"
+      ],
+      "verification": [
+        "Annual VWAP training conducted within the last 12 months at each law enforcement agency.",
+        "Training content addresses VWAP requirements and applicable orders.",
+        "Attendance roster shows full personnel coverage."
+      ],
+      "verified": true
+    },
+    "0601": {
+      "title": "CONFINEMENT FACILITY VWAC AND ALTERNATE APPOINTMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(1)(a)",
+            "text": "The brig/PCF commanding officer (CO) or OIC shall appoint, in writing, a Confinement Facility VWAC and alternate VWAC. Both the Confinement Facility VWAC and alternate VWAC must be a mature individuals who possess a clear understanding of the importance of VWAP and the need to ensure the confidence and confidentiality of victims and witnesses."
+          }
+        ],
+        "summary": "The brig or PCF CO or OIC must appoint, in writing, both a Confinement Facility VWAC and an alternate VWAC. Both appointees must be mature individuals with a clear understanding of VWAP and the requirement for confidentiality."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The Appointment Letters",
+          "actions": [
+            "Request the current Confinement Facility VWAC appointment letter.",
+            "Request the current alternate VWAC appointment letter."
+          ],
+          "callout": "No primary or alternate Confinement Facility VWAC appointed",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify The Signatures",
+          "actions": [
+            "Confirm both letters are signed by the brig/PCF CO or OIC.",
+            "Confirm letters are current and not lapsed."
+          ]
+        },
+        {
+          "step": "Verify Appointee Qualifications",
+          "actions": [
+            "Confirm appointees are reflected on the brig/PCF roster.",
+            "Confirm initial brief on VWAP responsibilities is documented per par 040906(A)(1)(b)."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No alternate VWAC appointed.",
+            "Letters signed by an official below CO/OIC level.",
+            "Initial responsibilities brief not documented."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who is the current Confinement Facility VWAC and alternate?",
+        "When were the appointment letters signed?",
+        "Was the responsibilities brief documented before assumption of duties?"
+      ],
+      "verification": [
+        "Current appointment letters for primary and alternate VWAC on file.",
+        "Both letters signed by the brig/PCF CO or OIC.",
+        "Initial responsibilities brief documented."
+      ],
+      "verified": true
+    },
+    "0602": {
+      "title": "VW LABELING OF INDIVIDUAL CONFINEMENT RECORDS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(4)",
+            "text": "The individual confinement record of each confinee included in the victim and witness notification program will be identified with a white label placed on the outside of the file with the letters \"VW\" written in at least one (1) inch high in black. A brig/PCF-specific number will be assigned to the case and placed on the white label."
+          }
+        ],
+        "summary": "Each confinement record for a confinee included in the VWAP must display a white exterior label with the letters \"VW\" written at least one inch high in black, plus the brig/PCF-specific number."
+      },
+      "howToInspect": [
+        {
+          "step": "Request A Sample Of VWAP-Enrolled Confinement Records",
+          "actions": [
+            "Pull a representative sample of confinement records flagged in CORMIS as VWAP-enrolled."
+          ]
+        },
+        {
+          "step": "Verify Label Specification",
+          "actions": [
+            "Confirm the exterior label is white.",
+            "Confirm letters \"VW\" are written in black.",
+            "Confirm letters are at least one inch high.",
+            "Confirm the brig/PCF-specific number is shown on the label."
+          ],
+          "callout": "VW label missing or below 1-inch height on VWAP-enrolled record",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Spot-Check Non-Enrolled Records",
+          "actions": [
+            "Confirm non-VWAP records are not labeled, to identify mis-labels."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Label missing on VWAP-enrolled record.",
+            "Letters below one inch high or in wrong color.",
+            "Brig/PCF-specific number missing from label."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you identify VWAP-enrolled records during record handling?",
+        "Who applies the labels and when?"
+      ],
+      "verification": [
+        "Sample of VWAP-enrolled records labeled per spec.",
+        "Brig/PCF-specific number present on label.",
+        "No mis-labels on non-enrolled records."
+      ],
+      "verified": true
+    },
+    "0603": {
+      "title": "SEPARATE ADJUNCT FILE BY PRISONER NAME",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(5)",
+            "text": "The Confinement Facility VWAC will create a Victim and Witness Notification Record associated to the brig/PCF-specific number on the confinee's record. This record will contain documentation of each contact with relevant victims or witnesses, including telephonic and unsuccessful attempts to contact. Each contact or attempt will also be recorded in CORMIS, showing the date, time, type of contact, phone number/address used, staff name, reasons for the contact, and outcome of contact."
+          }
+        ],
+        "summary": "The Confinement Facility VWAC must maintain a Victim and Witness Notification Record cross-referenced to the brig/PCF-specific number, documenting each contact and attempted contact."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Adjunct Files",
+          "actions": [
+            "Pull a sample of Victim and Witness Notification Records."
+          ],
+          "callout": "No adjunct file by prisoner name with brig/PCF number cross-reference",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Indexing",
+          "actions": [
+            "Confirm each file is indexed by confinee name.",
+            "Confirm cross-reference to the brig/PCF-specific number."
+          ]
+        },
+        {
+          "step": "Verify Contact Documentation",
+          "actions": [
+            "Confirm each contact entry shows date, time, type, phone or address, staff name, reason, outcome.",
+            "Confirm unsuccessful attempts are recorded."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Adjunct file not maintained by confinee name.",
+            "Cross-reference to brig/PCF number missing.",
+            "Unsuccessful attempts not documented."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where do you maintain the adjunct files?",
+        "How do you cross-reference the file to the brig/PCF number?"
+      ],
+      "verification": [
+        "Adjunct files indexed by confinee name.",
+        "Cross-referenced to brig/PCF-specific number.",
+        "Contact entries complete with all required data fields."
+      ],
+      "verified": true
+    },
+    "0604": {
+      "title": "BRIG/PCF-SPECIFIC NUMBER FORMAT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(4)",
+            "text": "The brig/PCF-specific number will be developed using the brig/PCF's CORMIS unit identification code (UIC), the year and month the confinee's case was adjudged, and a sequential number of the file for that calendar year (e.g., 31001 10-11 001)."
+          }
+        ],
+        "summary": "Brig/PCF-specific numbers must be formatted as CORMIS UIC, the year and month the case was adjudged, and a calendar-year sequential file number."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull A Sample Of Brig/PCF Numbers",
+          "actions": [
+            "Select a representative sample of VWAP-enrolled records."
+          ]
+        },
+        {
+          "step": "Verify Format",
+          "actions": [
+            "Confirm UIC matches the brig/PCF CORMIS UIC.",
+            "Confirm year and month reflect the case adjudgement date.",
+            "Confirm a calendar-year sequential number is present."
+          ],
+          "callout": "Brig/PCF-specific number format wrong (UIC/year-month/sequential)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Sequential Integrity",
+          "actions": [
+            "Confirm the sequential number resets each calendar year.",
+            "Confirm there are no gaps or duplicates in sequence."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Wrong UIC used.",
+            "Adjudication month not reflected.",
+            "Sequential number does not reset annually."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who assigns brig/PCF-specific numbers?",
+        "How is the sequential number tracked?"
+      ],
+      "verification": [
+        "Sample numbers match required format.",
+        "Sequential numbers reset by calendar year.",
+        "No duplicate or skipped numbers in sequence."
+      ],
+      "verified": true
+    },
+    "0605": {
+      "title": "CORMIS CONTACT DOCUMENTATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(5)",
+            "text": "Each contact or attempt will also be recorded in CORMIS, showing the date, time, type of contact, phone number/address used, staff name, reasons for the contact, and outcome of contact."
+          }
+        ],
+        "summary": "All victim and witness contacts, including telephonic contacts and unsuccessful attempts, must be entered in CORMIS with the date, time, type, phone or address, staff name, reason, and outcome."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull CORMIS Contact Logs",
+          "actions": [
+            "Select a sample of VWAP-enrolled cases.",
+            "Pull the CORMIS contact log for each."
+          ]
+        },
+        {
+          "step": "Verify Required Data Fields",
+          "actions": [
+            "Confirm date and time captured.",
+            "Confirm type of contact captured.",
+            "Confirm phone number or address used.",
+            "Confirm staff name and reason captured.",
+            "Confirm outcome captured."
+          ],
+          "callout": "Unsuccessful attempts only logged on paper (not in CORMIS)",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Unsuccessful Attempt Capture",
+          "actions": [
+            "Confirm unsuccessful attempts appear in CORMIS, not only in paper file."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Unsuccessful attempts logged only in paper file.",
+            "Outcome field blank.",
+            "Staff name missing."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who enters CORMIS contact records?",
+        "How are unsuccessful attempts captured?"
+      ],
+      "verification": [
+        "CORMIS contact log present for sampled cases.",
+        "All required fields populated.",
+        "Unsuccessful attempts recorded in CORMIS."
+      ],
+      "verified": true
+    },
+    "0606": {
+      "title": "DD FORM 2705 USE FOR INMATE STATUS NOTIFICATIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(6)",
+            "text": "DD Form 2705 \"Victim/Witness Notification of Inmate Status\" is used to advise victims and witnesses of all release and release-related activities, transfers, and escapes."
+          }
+        ],
+        "summary": "The Confinement Facility VWAC must use DD Form 2705 to advise victims and witnesses of all release, release-related, transfer, and escape events."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Notification Records",
+          "actions": [
+            "Pull a sample of release, transfer, and escape events from the last 12 months."
+          ],
+          "callout": "DD Form 2705 not used for required release/transfer/escape events",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify DD Form 2705 Use",
+          "actions": [
+            "Confirm a DD Form 2705 was issued for each event.",
+            "Confirm copies are filed in the Victim and Witness Notification Record."
+          ]
+        },
+        {
+          "step": "Confirm Coverage",
+          "actions": [
+            "Confirm coverage extends to clemency or parole hearings, release, escape, transfer, emergency leave, and death."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Event documented in CORMIS but no DD Form 2705 on file.",
+            "DD Form 2705 not used for transfers."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What status changes trigger a DD Form 2705?",
+        "Who issues the form and how is it filed?"
+      ],
+      "verification": [
+        "DD Form 2705 used for sampled events.",
+        "Copies on file in the Victim and Witness Notification Record.",
+        "Coverage extends across all required event types."
+      ],
+      "verified": true
+    },
+    "0607": {
+      "title": "DD FORM 2705 TIMING AND CERTIFIED MAIL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(6)",
+            "text": "Except as prescribed below, all notification will be made at least 45 days prior to the action. All correspondence shall be sent certified mail, return receipt requested. The receipt shall be filed in the Victim and Witness Notification Record. The Confinement Facility VWAC shall attempt telephonic contact if any mailed notification is returned without receipt."
+          }
+        ],
+        "summary": "Notifications must be issued at least 45 days before the inmate status change via certified mail, return receipt requested, with receipts filed in the Notification Record. The VWAC must attempt telephonic contact if mail is returned without receipt."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Notification Records",
+          "actions": [
+            "Select a sample of issued DD Form 2705s."
+          ]
+        },
+        {
+          "step": "Verify Timing",
+          "actions": [
+            "Compute days between mailing and status change date.",
+            "Confirm at least 45 days lead time, or document the prescribed exception (escape, unscheduled release, emergency leave, death)."
+          ],
+          "callout": "No telephonic follow-up after returned mail",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Certified Mail",
+          "actions": [
+            "Confirm certified mail receipts are filed in the Notification Record.",
+            "Confirm telephonic follow-up was attempted when mail returned without receipt."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Notification issued inside the 45 day window without prescribed exception.",
+            "No certified mail receipt on file.",
+            "No telephonic follow-up after returned mail."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How is the 45 day lead time tracked?",
+        "Where do you file return receipts?",
+        "What is your process when mail is returned without receipt?"
+      ],
+      "verification": [
+        "Notifications meet 45 day lead time or fall under prescribed exception.",
+        "Certified mail receipts on file.",
+        "Telephonic follow-up documented after returned mail."
+      ],
+      "verified": true
+    },
+    "0608": {
+      "title": "INITIAL ENROLLMENT ACKNOWLEDGEMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(6)(a)",
+            "text": "Initial Contact. The Confinement Facility VWAC shall send acknowledgements to any victims and witnesses electing to receive notifications within ten working days of receiving a DD Form 2704. A completed DD Form 2705 shall be included with the initial enrollment letter."
+          }
+        ],
+        "summary": "The Confinement Facility VWAC must send an acknowledgement within ten working days of DD Form 2704 receipt and must include a completed DD Form 2705 with the initial enrollment letter."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Initial Acknowledgement Letters",
+          "actions": [
+            "Select a sample of confinees from the last 12 months with elected notifications on DD Form 2704."
+          ]
+        },
+        {
+          "step": "Verify Timing",
+          "actions": [
+            "Compute working days between DD Form 2704 receipt date and acknowledgement mailing date.",
+            "Confirm within ten working days."
+          ],
+          "callout": "DD Form 2705 enclosure incomplete or missing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Enclosed DD Form 2705",
+          "actions": [
+            "Confirm the completed DD Form 2705 is enclosed.",
+            "Confirm required sections are completed."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Acknowledgement sent outside the ten working day window.",
+            "DD Form 2705 not enclosed or incomplete."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What triggers the ten working day clock?",
+        "Who fills in the DD Form 2705 sections?"
+      ],
+      "verification": [
+        "Acknowledgement sent within ten working days.",
+        "DD Form 2705 enclosed with required sections completed."
+      ],
+      "verified": true
+    },
+    "0609": {
+      "title": "RELEASE NOTIFICATION CONTENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(6)(c)",
+            "text": "Release. When a confinee is scheduled to be released the Confinement Facility VWAC shall notify victims and witnesses using a DD Form 2705 that contains the date of release, reason for release, and anticipated destination of accused (city and state). In parole cases, include location, phone number, and name of the parole officer. Notification should occur as soon as the release is scheduled. Telephone contact shall be made if confinee is released unexpectedly and victim or witness would not receive the DD Form 2705 prior to the confinee's release."
+          }
+        ],
+        "summary": "Release notifications via DD Form 2705 must include date of release, reason for release, and destination city and state. Parole cases require parole officer name, phone, and location. Telephonic notification is required if release is unexpected."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Release Notification Records",
+          "actions": [
+            "Select a sample of releases from the last 12 months."
+          ]
+        },
+        {
+          "step": "Verify Required Content",
+          "actions": [
+            "Confirm date of release present.",
+            "Confirm reason for release present.",
+            "Confirm city and state of destination present.",
+            "For parole cases, confirm parole officer name, location, and phone."
+          ],
+          "callout": "Parole case missing parole officer information",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Unexpected Release Telephonic Notification",
+          "actions": [
+            "Confirm telephonic contact documented for unexpected releases."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Destination city or state missing.",
+            "Parole officer data missing in parole cases.",
+            "No telephonic follow-up on unexpected releases."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you flag a release as unexpected?",
+        "Who captures the parole officer information for parole cases?"
+      ],
+      "verification": [
+        "Release notifications contain date, reason, destination.",
+        "Parole cases include officer name, phone, and location.",
+        "Telephonic notification documented for unexpected releases."
+      ],
+      "verified": true
+    },
+    "0610": {
+      "title": "ESCAPE TELEPHONIC NOTIFICATION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(6)(d)",
+            "text": "Escape. The Confinement Facility VWAC shall notify victims and witnesses telephonically as soon as possible after an escape is discovered. Telephonic notification of victims and witnesses will occur again as soon as possible after the confinee's apprehension and return to confinement. After making telephonic notification Confinement Facility VWAC will follow-up in writing."
+          }
+        ],
+        "summary": "In the event of escape, the Confinement Facility VWAC must telephonically notify victims and witnesses as soon as possible after discovery, again upon apprehension, and follow up in writing."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Escape Events",
+          "actions": [
+            "Request a list of escape events in the last 24 months."
+          ]
+        },
+        {
+          "step": "Verify Initial Telephonic Notification",
+          "actions": [
+            "Confirm telephonic contact documented as soon as possible after escape discovery."
+          ],
+          "callout": "No telephonic notification documented at escape discovery",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Apprehension Notification And Written Follow-Up",
+          "actions": [
+            "Confirm second telephonic notification upon apprehension.",
+            "Confirm written follow-up sent to victims and witnesses."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No telephonic notification documented.",
+            "Written follow-up absent.",
+            "No notification at apprehension."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What is your escape notification SOP?",
+        "Who is on the call roster outside normal hours?"
+      ],
+      "verification": [
+        "Telephonic notification documented upon escape discovery.",
+        "Telephonic notification documented at apprehension.",
+        "Written follow-up on file."
+      ],
+      "verified": true
+    },
+    "0611": {
+      "title": "TRANSFER NOTIFICATION WITH RECEIVING ADDRESS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(6)(e)1",
+            "text": "The Confinement Facility VWAC shall notify victims and witnesses of all planned transfers of confinee and include the receiving brig/PCF's address. The Confinement Facility VWAC will provide the receiving brig/PCF with victim and witness information by either hand delivery or certified mail sent to the CO or OIC."
+          }
+        ],
+        "summary": "Confinement Facility VWACs must notify victims and witnesses of all planned transfers and include the receiving brig/PCF address. Victim and witness information must be hand-delivered or certified-mailed to the receiving CO or OIC."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Transfer Notification Records",
+          "actions": [
+            "Identify confinee transfers in the last 12 months."
+          ]
+        },
+        {
+          "step": "Verify Transfer Notification Content",
+          "actions": [
+            "Confirm DD Form 2705 issued.",
+            "Confirm receiving brig/PCF address listed."
+          ],
+          "callout": "VW packet not transmitted to receiving CO/OIC",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Onward Transmission Of VW Information",
+          "actions": [
+            "Confirm hand-delivery or certified mail receipt to receiving CO or OIC."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Receiving address missing from DD Form 2705.",
+            "VW packet not transmitted to receiving brig/PCF.",
+            "Receipt not documented."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who coordinates transfers with the receiving brig?",
+        "Where do you file the certified mail receipt to the receiving CO?"
+      ],
+      "verification": [
+        "Transfer notifications include receiving address.",
+        "VW information transmitted to receiving CO or OIC.",
+        "Hand-delivery or certified mail receipts on file."
+      ],
+      "verified": true
+    },
+    "0612": {
+      "title": "CORMIS QUARTERLY DATA ENTRY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(10)",
+            "text": "Repository Reports. Confinement facility VWACs shall ensure all VWAP information is entered in CORMIS within five days of the end of each quarter of the Calendar Year (i.e., 5 January, 5 April, 5 July, and 5 October). CMC (PSL-CORR) will compile the information and submit a consolidated report to the VWAP Director, JMJ, for inclusion in the annual report to the Under Secretary of Defense (Personnel and Readiness) (USD(P&R))."
+          }
+        ],
+        "summary": "Confinement facility VWACs must enter all VWAP information into CORMIS within five days of the end of each calendar quarter, no later than 5 January, 5 April, 5 July, and 5 October."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull CORMIS Entry Timestamps",
+          "actions": [
+            "Request CORMIS audit log for the last four quarters."
+          ],
+          "callout": "CORMIS quarterly entry not made by 5th of month following quarter",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Timing",
+          "actions": [
+            "Confirm entries for each quarter completed by the fifth calendar day of the month following the quarter end."
+          ]
+        },
+        {
+          "step": "Verify Completeness",
+          "actions": [
+            "Cross-check entries against the local notification log to confirm no events were omitted."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Entries posted after the 5th of the month.",
+            "Local events absent from CORMIS quarterly entry."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who is responsible for quarterly CORMIS entry?",
+        "How do you reconcile local logs to CORMIS each quarter?"
+      ],
+      "verification": [
+        "CORMIS entries posted by the 5th of the month after quarter end.",
+        "Local notification events reflected in CORMIS quarterly entry."
+      ],
+      "verified": true
+    },
+    "0613": {
+      "title": "VW RECORDS SECURE RETENTION FOR TWO YEARS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(12)(b)",
+            "text": "Released Confinees. All documents containing victim or witness information shall be maintained securely and separately from the confinee's record for two years after confinee's full term release date pursuant to records schedule 1000-41. Once eligible for destruction, the records will be destroyed in accordance with service regulations on PII. Victim and witness documents will not be forwarded to the archives for storage."
+          }
+        ],
+        "summary": "All victim and witness documents must be retained securely and separately from the confinee record for two years after full term release date per records schedule 1000-41. Records may not be sent to archives."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Released Confinee Records",
+          "actions": [
+            "Select a sample of confinees released in the prior 24 months."
+          ],
+          "callout": "Retention beyond two years without destruction",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Separate Retention",
+          "actions": [
+            "Confirm victim and witness documents are filed separately from the confinee record."
+          ]
+        },
+        {
+          "step": "Verify Retention Period",
+          "actions": [
+            "Compute days since full term release date.",
+            "Confirm retention is within two years."
+          ]
+        },
+        {
+          "step": "Verify No Archival Transfer",
+          "actions": [
+            "Confirm no victim or witness documents were transferred to archives."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "VW documents filed inside the confinee record.",
+            "Records retained beyond two years without destruction.",
+            "VW documents forwarded to archives."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where are VW documents stored after release?",
+        "Who tracks the two year retention clock?"
+      ],
+      "verification": [
+        "Released-confinee VW documents stored separately.",
+        "Retention is within two years from full term release.",
+        "No VW documents in archives."
+      ],
+      "verified": true
+    },
+    "0614": {
+      "title": "PII-COMPLIANT DESTRUCTION AT TWO YEARS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(12)(b)",
+            "text": "Once eligible for destruction, the records will be destroyed in accordance with service regulations on PII. Victim and witness documents will not be forwarded to the archives for storage."
+          }
+        ],
+        "summary": "After two years from the prisoner's full term release date, victim and witness information must be destroyed in accordance with service regulations on PII."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Destruction Logs",
+          "actions": [
+            "Request the destruction log covering the prior 24 months."
+          ]
+        },
+        {
+          "step": "Verify Destruction Method",
+          "actions": [
+            "Confirm method complies with service PII regulations (shredding, burning, or approved electronic destruction)."
+          ],
+          "callout": "Destruction method not PII-compliant",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Destruction Timing",
+          "actions": [
+            "Confirm destruction occurred at the two-year mark, not earlier and not significantly later."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Records destroyed early.",
+            "Destruction method not PII-compliant.",
+            "No destruction log maintained."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you destroy VW records?",
+        "Who witnesses or certifies destruction?"
+      ],
+      "verification": [
+        "Destruction log present.",
+        "Destruction method PII-compliant.",
+        "Destruction occurred at two year mark."
+      ],
+      "verified": true
+    },
+    "0615": {
+      "title": "INTERNAL CONTROLS FOR CONFIDENTIALITY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(13)",
+            "text": "Internal Controls. Brig/PCF COs and OICs are responsible for establishing internal controls ensuring information on victims and witnesses is kept strictly confidential and that no unauthorized person accesses the information."
+          }
+        ],
+        "summary": "Brig/PCF COs and OICs must establish internal controls ensuring victim and witness information remains confidential and inaccessible to unauthorized personnel or any prisoner."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Internal Control Documentation",
+          "actions": [
+            "Pull written internal control procedures.",
+            "Confirm CO or OIC signature."
+          ],
+          "callout": "No written internal controls for VW information confidentiality",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Access Controls",
+          "actions": [
+            "Confirm storage location is locked or otherwise access-controlled.",
+            "Confirm access roster identifies only authorized personnel."
+          ]
+        },
+        {
+          "step": "Verify Prisoner Exclusion",
+          "actions": [
+            "Confirm prisoners have no path to VW information through any work detail or process."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No written internal control procedures.",
+            "VW information stored where prisoner work details access.",
+            "Access roster outdated."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where is VW information physically stored?",
+        "Who has access and when was the roster last reviewed?"
+      ],
+      "verification": [
+        "Written internal controls signed by CO or OIC.",
+        "Storage access controlled with current authorized roster.",
+        "Prisoner work details have no path to VW information."
+      ],
+      "verified": true
+    },
+    "0616": {
+      "title": "FOIA EXEMPTION MARKING AND COVER SHEET",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(13)",
+            "text": "Victim and witness information will be marked as follows: \"EXEMPT FROM RELEASE UNDER FREEDOM OF INFORMATION ACT. ONLY CMC (ARSF) CAN AUTHORIZE RELEASE OF INFORMATION.\" When shipping or hand delivering victim and witness information, the information will have a cover sheet stamped: \"ALL VICTIM AND WITNESS INFORMATION IS EXEMPT FROM RELEASE UNDER THE FREEDOM OF INFORMATION ACT. ONLY CMC (ARSF) CAN AUTHORIZE RELEASE OF INFORMATION.\""
+          }
+        ],
+        "summary": "Victim and witness information must be marked with the prescribed FOIA exemption stamp. When shipped or hand delivered, the material must include a cover sheet bearing the prescribed FOIA exemption text."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect Storage Envelopes And Folders",
+          "actions": [
+            "Confirm exterior bears the FOIA exemption stamp."
+          ]
+        },
+        {
+          "step": "Pull Recent Shipping Or Hand Delivery Records",
+          "actions": [
+            "Confirm cover sheet present with prescribed FOIA exemption text."
+          ],
+          "callout": "FOIA exemption stamp missing from envelope or cover sheet",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Stamp Text Accuracy",
+          "actions": [
+            "Confirm stamp text matches the prescribed wording exactly."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Envelope unmarked.",
+            "Cover sheet missing on shipped material.",
+            "Stamp wording does not match the prescribed text."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who applies the FOIA exemption stamp?",
+        "Where do you store the cover sheets?"
+      ],
+      "verification": [
+        "Envelopes display the prescribed FOIA stamp.",
+        "Shipping or hand-delivery packets include the cover sheet.",
+        "Stamp text matches the prescribed wording."
+      ],
+      "verified": true
+    },
+    "0617": {
+      "title": "VWAP INCLUDED IN BRIG/PCF SOP",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040906A(13)",
+            "text": "Brig/PCF standing operating procedures shall include provisions related to the Victim and Witness Notification Program and VWAP compliance will be part of the brig/PCF's functional adequacy inspection conducted by CMC (PSL-CORR) and the Commanding General's Inspection Program."
+          }
+        ],
+        "summary": "The brig/PCF SOP must include provisions for the Victim and Witness Notification Program. VWAP compliance is part of the functional adequacy inspection by CMC (PSL-CORR) and the Commanding General's Inspection Program."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The Current SOP",
+          "actions": [
+            "Request the controlling brig/PCF SOP.",
+            "Confirm version date is current."
+          ],
+          "callout": "VWAP not included in brig/PCF SOP",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify VWAP Provisions",
+          "actions": [
+            "Locate VWAP chapter or section.",
+            "Confirm coverage of appointment, notification, recordkeeping, retention, FOIA marking, internal controls."
+          ]
+        },
+        {
+          "step": "Verify Prior Inspection Findings",
+          "actions": [
+            "Request prior CMC (PSL-CORR) functional adequacy inspection results.",
+            "Request prior CGIP findings on VWAP."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "SOP makes no mention of VWAP.",
+            "SOP cites a superseded version of MCO 5800.16.",
+            "Prior inspection findings not corrected."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When was the SOP last reviewed?",
+        "Which SOP paragraphs cover VWAP?",
+        "Have prior CMC and CGIP findings been corrected?"
+      ],
+      "verification": [
+        "Current SOP includes VWAP provisions.",
+        "Provisions cover appointment, notification, recordkeeping, retention, FOIA marking, and internal controls.",
+        "Prior inspection findings corrected."
+      ],
+      "verified": true
+    },
+    "0701": {
+      "title": "INFORMING CRIME VICTIMS AND WITNESSES OF VWAP RIGHTS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040907A",
+            "text": "Inform crime victims and witnesses concerning their VWAP rights, available services, and eligibility for assistance when they receive counseling, treatment, or advocacy services."
+          }
+        ],
+        "summary": "SAPR and FAP personnel must have a process to inform crime victims and witnesses of VWAP rights, available services, and eligibility for assistance when those personnel deliver counseling, treatment, or advocacy."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Written SAPR/FAP VWAP Notification Process",
+          "actions": [
+            "Pull written SOP or desk-side procedure for VWAP notification at SAPR and FAP touchpoints."
+          ],
+          "callout": "No process to inform crime victims and witnesses of VWAP rights at SAPR/FAP intake",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Trigger Points",
+          "actions": [
+            "Confirm process triggers at intake for counseling, treatment, and advocacy services.",
+            "Confirm process checks whether VWAP rights were already provided."
+          ]
+        },
+        {
+          "step": "Verify Documentation Of Notification",
+          "actions": [
+            "Pull a sample of intake records.",
+            "Confirm VWAP rights notification is documented or referenced."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No written notification process.",
+            "Notification not documented in intake records.",
+            "Process does not check for prior provision."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who informs victims and witnesses of VWAP rights at intake?",
+        "How do you confirm whether VWAP rights were already provided?",
+        "Where is the notification recorded?"
+      ],
+      "verification": [
+        "Written notification process on file.",
+        "Process triggers at counseling, treatment, advocacy intake.",
+        "Documentation of notification present in sampled intake records."
+      ],
+      "verified": true
+    },
+    "0702": {
+      "title": "DD FORM 2701 PROVISION BY MF",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040907B",
+            "text": "Ensure victims and witnesses understand the rights afforded to them under the law and this chapter, and coordinate with law enforcement, command VWACs, and legal personnel to ensure each victim is provided a DD Form 2701."
+          }
+        ],
+        "summary": "Marine and Family Programs (MF) personnel, including SAPR and FAP, must ensure each victim and witness understands their statutory rights and receives a completed DD Form 2701 if one has not already been provided, through coordination with law enforcement, command VWACs, and legal personnel."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Coordination Records",
+          "actions": [
+            "Pull records of coordination between SAPR/FAP and law enforcement, command VWACs, and legal personnel."
+          ],
+          "callout": "MF not providing DD Form 2701 when one had not been previously issued",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify DD Form 2701 Provision",
+          "actions": [
+            "Pull a sample of victims and witnesses served in the last 12 months.",
+            "Confirm each received a DD Form 2701.",
+            "Confirm the form is signed and dated."
+          ]
+        },
+        {
+          "step": "Verify Rights Explanation",
+          "actions": [
+            "Confirm intake notes reflect that statutory rights were explained."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No coordination records with law enforcement, command VWACs, or legal personnel.",
+            "DD Form 2701 not provided when one had not yet been issued.",
+            "Rights explanation not documented."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you coordinate with law enforcement and command VWACs?",
+        "How do you confirm a DD Form 2701 was already provided?",
+        "Where do you document rights explanation?"
+      ],
+      "verification": [
+        "Coordination records on file.",
+        "DD Form 2701 provided to each sampled victim or witness.",
+        "Rights explanation documented in intake notes."
+      ],
+      "verified": true
+    },
+    "0703": {
+      "title": "MF REPRESENTATIVE TO VICTIM AND WITNESS ASSISTANCE COUNCIL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040907C",
+            "text": "Appoint, in writing, a representative to the local Victim and Witness Assistance Council. Ensure the representative remains familiar with relevant points of contact for VWAP aboard the installation."
+          }
+        ],
+        "summary": "MF must appoint, in writing, a representative to the local Victim and Witness Assistance Council and must ensure the representative stays current with installation VWAP points of contact."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Appointment Letter",
+          "actions": [
+            "Pull the MF representative appointment letter.",
+            "Confirm signed by the appropriate MF director or equivalent.",
+            "Confirm letter is current."
+          ],
+          "callout": "MF not appointing representative to local Council",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Council Participation",
+          "actions": [
+            "Pull the Victim and Witness Assistance Council attendance roster.",
+            "Confirm MF representative attendance."
+          ]
+        },
+        {
+          "step": "Verify Currency Of POC Awareness",
+          "actions": [
+            "Ask the MF representative to identify the current installation VWLO and law enforcement VWACs."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No appointment letter.",
+            "Letter not by name.",
+            "MF representative absent from council attendance."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who is the current MF representative to the council?",
+        "When did they last attend the council?",
+        "How do you keep them current on installation POCs?"
+      ],
+      "verification": [
+        "Written appointment letter by name on file.",
+        "MF representative attendance documented on council roster.",
+        "MF representative current on installation VWAP POCs."
+      ],
+      "verified": true
+    },
+    "0801": {
+      "title": "UNIT COMMANDER WRITTEN APPOINTMENT OF VWAC",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040902C(1)",
+            "text": "Appoint a unit VWAC, in writing, by name, title, duty address, and telephone number. The VWAC shall be an Officer, Staff Non-Commissioned Officer, or civilian employee of appropriate experience, temperament, and rank. The appointment shall indicate any geographically separate detachment or sub-unit supported the VWAC must support. A copy of the appointment will be provided to the installation VWLO and the detachment or sub-unit. The VWAC shall not serve as a Uniformed Victim Advocate."
+          }
+        ],
+        "summary": "Each battalion or squadron-level unit commander (and above) must appoint a unit VWAC in writing by name, title, duty address, and telephone number. The VWAC must be an Officer, Staff NCO, or civilian of appropriate grade, must not serve as a Uniformed Victim Advocate, and the appointment letter must identify any supported detachment or sub-unit. A copy goes to the installation VWLO."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Current Appointment Letter",
+          "actions": [
+            "Pull the unit VWAC appointment letter from the unit S-1 or executive officer."
+          ],
+          "callout": "No Unit VWAC appointed in writing by name/title/duty address/phone",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Required Letter Content",
+          "actions": [
+            "Confirm letter identifies appointee by name.",
+            "Confirm title is listed.",
+            "Confirm duty address is listed.",
+            "Confirm telephone number is listed.",
+            "Confirm any supported detachment or sub-unit is identified."
+          ],
+          "callout": "VWAC concurrently serving as Uniformed Victim Advocate (prohibited)",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Distribution",
+          "actions": [
+            "Confirm a copy was provided to the installation VWLO.",
+            "Confirm a copy was provided to any supported detachment or sub-unit."
+          ]
+        },
+        {
+          "step": "Verify Appointee Eligibility",
+          "actions": [
+            "Confirm appointee is Officer, Staff NCO, or civilian of appropriate grade.",
+            "Confirm appointee does not serve as a Uniformed Victim Advocate."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Appointment not in writing.",
+            "Letter missing title, duty address, or phone.",
+            "Detachment or sub-unit support not identified.",
+            "Copy not provided to VWLO.",
+            "Appointee concurrently serving as Uniformed Victim Advocate."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who is the current unit VWAC and when were they appointed?",
+        "Does this VWAC support a geographically separate detachment or sub-unit?",
+        "Was a copy provided to the installation VWLO?"
+      ],
+      "verification": [
+        "Current appointment letter on file.",
+        "Letter includes name, title, duty address, telephone, supported detachment data.",
+        "Copies on file with VWLO and supported detachment.",
+        "Appointee eligible and not serving as Uniformed Victim Advocate."
+      ],
+      "verified": true
+    },
+    "0802": {
+      "title": "SUMMARY COURTS-MARTIAL LSST COORDINATION FOR DD FORM 2704",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040902C(3)",
+            "text": "In cases of summary courts-martial, where confinement is adjudged and approved, coordinate with the supporting Legal Services Support Team (LSST) prior to completing the DD Form 2704."
+          }
+        ],
+        "summary": "When confinement is adjudged and approved at a summary court-martial, the unit commander must coordinate with the supporting LSST before completing the DD Form 2704."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Summary Courts-Martial With Adjudged Confinement",
+          "actions": [
+            "Request a list of summary courts-martial in the last 12 months where confinement was adjudged and approved."
+          ],
+          "callout": "Summary court-martial with confinement processed without LSST coordination before DD Form 2704",
+          "severity": "finding"
+        },
+        {
+          "step": "Pull Coordination Records",
+          "actions": [
+            "Pull email, memorandum, or LSST log entries showing pre-DD Form 2704 coordination."
+          ]
+        },
+        {
+          "step": "Verify Timing",
+          "actions": [
+            "Confirm coordination occurred before DD Form 2704 completion date."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "DD Form 2704 completed without LSST coordination.",
+            "No documented coordination record.",
+            "Coordination occurred after DD Form 2704 completion."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who in the unit completes the DD Form 2704 for summary cases with confinement?",
+        "Who at the LSST do you coordinate with?",
+        "Where do you document that coordination?"
+      ],
+      "verification": [
+        "List of summary cases with adjudged confinement obtained.",
+        "Coordination record exists for each.",
+        "Coordination predates DD Form 2704 completion."
+      ],
+      "verified": true
+    },
+    "0803": {
+      "title": "ANNUAL UNIT VWAP TRAINING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040902C(5)",
+            "text": "Ensure all unit personnel are provided annual VWAP training that ensures unit personnel know the identity of the VWAC and understand victim and witness rights."
+          }
+        ],
+        "summary": "Commanders must ensure unit personnel receive annual VWAP training covering the identity of the unit VWAC and victim and witness rights."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Training Records",
+          "actions": [
+            "Pull unit training rosters from the last 12 months."
+          ],
+          "callout": "Annual unit VWAP training not conducted",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Annual Cadence",
+          "actions": [
+            "Confirm at least one VWAP training session occurred in the last 12 months."
+          ]
+        },
+        {
+          "step": "Verify Training Content",
+          "actions": [
+            "Pull the most recent lesson plan or training brief.",
+            "Confirm content identifies the current unit VWAC.",
+            "Confirm content covers victim and witness rights."
+          ]
+        },
+        {
+          "step": "Verify Personnel Coverage",
+          "actions": [
+            "Compare attendance roster to unit personnel roster.",
+            "Identify personnel not trained."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No annual VWAP training in the last 12 months.",
+            "Training does not identify the VWAC.",
+            "Training does not cover victim and witness rights.",
+            "Significant share of unit personnel not trained."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When was the last unit-wide VWAP training?",
+        "What references and slides were used?",
+        "Does the training identify the current VWAC by name?"
+      ],
+      "verification": [
+        "VWAP training conducted within last 12 months.",
+        "Training content identifies the unit VWAC and covers rights.",
+        "Attendance roster shows broad personnel coverage."
+      ],
+      "verified": true
+    },
+    "0901": {
+      "title": "UNIT VWAC ELIGIBILITY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040902D(1)",
+            "text": "The unit VWAC shall be an Officer, Staff Non-Commissioned Officer, or civilian of appropriate experience, temperament, and rank. The unit VWAC shall not serve as a victim advocate, trial counsel, defense counsel, VLC, or legal assistance attorney."
+          }
+        ],
+        "summary": "The unit VWAC must be an Officer, Staff NCO, or civilian of appropriate grade and must not serve concurrently as a victim advocate, trial counsel, defense counsel, VLC, or legal assistance attorney."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify The Current Unit VWAC",
+          "actions": [
+            "Pull the appointment letter from Q0801."
+          ]
+        },
+        {
+          "step": "Verify Grade And Status",
+          "actions": [
+            "Confirm appointee is Officer, Staff NCO, or civilian.",
+            "Confirm grade is appropriate for the unit."
+          ],
+          "callout": "VWAC concurrently serving in prohibited role (VA/TC/DC/VLC/legal asst)",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify No Prohibited Concurrent Roles",
+          "actions": [
+            "Confirm not serving as victim advocate (uniformed or otherwise).",
+            "Confirm not serving as trial counsel.",
+            "Confirm not serving as defense counsel.",
+            "Confirm not serving as VLC.",
+            "Confirm not serving as legal assistance attorney."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Junior NCO appointed (E-5 or below) rather than SNCO.",
+            "VWAC concurrently serving in a prohibited role."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "What is the VWAC's primary billet?",
+        "Do they hold any additional duties on the legal side?"
+      ],
+      "verification": [
+        "VWAC is Officer, SNCO, or civilian.",
+        "VWAC holds no prohibited concurrent role."
+      ],
+      "verified": true
+    },
+    "0902": {
+      "title": "PROCESS TO TRACK DD FORM 2701 ISSUANCE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040902D(4)",
+            "text": "Ensure processes are in place to maintain data on the number of victims and witnesses who receive DD Forms 2701. Ensure that the total number of victims and witnesses provided a DD Form 2701 is reported to the Installation VWLO on a quarterly basis."
+          }
+        ],
+        "summary": "Each unit VWAC must maintain a process to capture and store data on the number of victims and witnesses provided DD Form 2701."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Written Process Or SOP",
+          "actions": [
+            "Pull the unit-level SOP or desktop procedure for DD Form 2701 tracking."
+          ],
+          "callout": "No process to track DD Form 2701 issuance",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Data Fields Captured",
+          "actions": [
+            "Confirm date of issuance.",
+            "Confirm recipient category (victim or witness).",
+            "Confirm case identifier or reference number."
+          ]
+        },
+        {
+          "step": "Verify Process Is Followed",
+          "actions": [
+            "Pull the current tracking log.",
+            "Cross-check against unit case activity."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No written process.",
+            "Tracking log missing required data fields.",
+            "Process not consistently followed."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you track DD Form 2701 issuance?",
+        "Where is the log maintained?"
+      ],
+      "verification": [
+        "Written process in place.",
+        "Tracking log captures required fields.",
+        "Process being followed in practice."
+      ],
+      "verified": true
+    },
+    "0903": {
+      "title": "QUARTERLY DD FORM 2701 REPORTING TO INSTALLATION VWLO",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040902D(4)",
+            "text": "Ensure that the total number of victims and witnesses provided a DD Form 2701 is reported to the Installation VWLO on a quarterly basis."
+          }
+        ],
+        "summary": "The unit VWAC must report the total number of DD Form 2701s issued to victims and witnesses to the installation VWLO each quarter."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Last Four Quarterly Reports",
+          "actions": [
+            "Pull the unit submissions to the installation VWLO for each of the last four quarters."
+          ],
+          "callout": "Quarterly DD Form 2701 reporting to VWLO missed",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Cadence",
+          "actions": [
+            "Confirm submissions made each quarter.",
+            "Identify any missed quarters."
+          ]
+        },
+        {
+          "step": "Reconcile Reported Figures",
+          "actions": [
+            "Compare quarterly report totals to the unit tracking log totals.",
+            "Identify any discrepancies in reported counts."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Missed quarters.",
+            "Reported figures inconsistent with unit log.",
+            "VWLO has no record of receiving the report."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who submits the quarterly report and to whom?",
+        "How do you reconcile the reported figures with your log?"
+      ],
+      "verification": [
+        "Last four quarterly reports submitted.",
+        "VWLO acknowledgement on file.",
+        "Reported figures reconcile to unit tracking log."
+      ],
+      "verified": true
+    },
+    "0904": {
+      "title": "PRETRIAL CONFINEMENT STATUS NOTIFICATIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040902D(7)",
+            "text": "Where a victim or witness has requested notifications concerning accused in pretrial confinement, the VWAC shall coordinate with LSST VWAC, confinement facility, and trial counsel to effectuate pretrial confinement status notifications."
+          }
+        ],
+        "summary": "Where a victim or witness has elected notification, the unit VWAC must coordinate with the LSST VWAC, confinement facility, and trial counsel to deliver pretrial confinement status notifications."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Pretrial Confinement Cases With Elected Notification",
+          "actions": [
+            "Request the list of accused in pretrial confinement from supporting LSST.",
+            "Identify cases where a victim or witness elected notification on DD Form 2704."
+          ],
+          "callout": "Pretrial confinement status changes not notified to victim/witness with elected notification",
+          "severity": "finding"
+        },
+        {
+          "step": "Pull Notification Records",
+          "actions": [
+            "Pull notification records from the unit VWAC log.",
+            "Pull coordination records with LSST VWAC, confinement facility, and trial counsel."
+          ]
+        },
+        {
+          "step": "Verify Status Changes Notified",
+          "actions": [
+            "Confirm notifications captured release, transfer, escape, or other status changes."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No coordination records with confinement facility.",
+            "Status changes not notified.",
+            "Notification log incomplete."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How are you alerted to pretrial confinement status changes?",
+        "Who else coordinates with you on those notifications?"
+      ],
+      "verification": [
+        "Pretrial confinement cases with elected notification identified.",
+        "Coordination records with LSST, confinement facility, trial counsel on file.",
+        "Status changes notified to victims and witnesses."
+      ],
+      "verified": true
+    },
+    "0905": {
+      "title": "ANNUAL UNIT VWAP TRAINING DELIVERY BY VWAC",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040902D(8)",
+            "text": "The VWAC shall obtain and distribute VWAP materials and provide annual VWAP training to the members of the command."
+          }
+        ],
+        "summary": "The unit VWAC must obtain VWAP materials, distribute them, and conduct annual VWAP training for members of the command."
+      },
+      "howToInspect": [
+        {
+          "step": "Request VWAP Material Receipts",
+          "actions": [
+            "Pull records of VWAP materials obtained in the last 12 months."
+          ],
+          "callout": "Annual unit VWAP training not conducted by VWAC",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Distribution",
+          "actions": [
+            "Confirm materials were distributed to members of the command (e.g., S-1, all-hands brief)."
+          ]
+        },
+        {
+          "step": "Verify Annual Training Was Conducted",
+          "actions": [
+            "Pull lesson plan or instructor materials.",
+            "Confirm training within the last 12 months."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Materials obtained but not distributed.",
+            "No annual training conducted.",
+            "Training does not match current VWAP material set."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where do you source VWAP materials?",
+        "How do you distribute them across the command?",
+        "When was your last annual VWAP training?"
+      ],
+      "verification": [
+        "Materials obtained within the last 12 months.",
+        "Distribution to command members documented.",
+        "Annual training delivered within the last 12 months."
+      ],
+      "verified": true
+    },
+    "0906": {
+      "title": "ANNUAL TRAINING ATTENDANCE LIST",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040902D(8)",
+            "text": "The VWAC shall obtain and distribute VWAP materials and provide annual VWAP training to the members of the command."
+          }
+        ],
+        "summary": "The unit VWAC must maintain an attendance list for the annual VWAP training to substantiate the requirement that members of the command received training. Inspector Note: MCO 5800.16 V-16 par 040902(D)(8) requires annual VWAP training to be provided to the command but does not specify the form of attendance documentation. The checklist treats a unit attendance roster as the verifying artifact."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Attendance Roster",
+          "actions": [
+            "Pull the attendance roster for the most recent annual VWAP training session."
+          ],
+          "callout": "No attendance roster for annual training",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Required Data",
+          "actions": [
+            "Confirm name, grade, and unit captured for each attendee.",
+            "Confirm date of training captured."
+          ]
+        },
+        {
+          "step": "Verify Coverage",
+          "actions": [
+            "Compare attendance count to the unit personnel roster.",
+            "Identify personnel not trained."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No attendance roster maintained.",
+            "Roster missing date or attendee identifiers.",
+            "Significant share of unit not on roster."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you capture attendance?",
+        "How do you cover personnel who missed the session?"
+      ],
+      "verification": [
+        "Attendance roster on file.",
+        "Roster captures name, grade, unit, date.",
+        "Coverage reflects unit personnel roster."
+      ],
+      "verified": true
+    },
+    "0907": {
+      "title": "LIAISON WITH MARINE AND FAMILY PROGRAMS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 5800.16 V-16, par 040902D(5)(b)",
+            "text": "Coordinate with the Marine and Family Programs to ensure the victim or witness receives, when appropriate, information concerning the availability of resources, including information on compensation programs available to victims of intra-familial abuse offenses when the offender is a Service member."
+          }
+        ],
+        "summary": "When the victim or witness is a member of the unit, the unit VWAC must coordinate with Marine and Family Programs to ensure delivery of resource and compensation program information, including compensation for intra-familial abuse offenses where the offender is a Service member."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Liaison Records",
+          "actions": [
+            "Pull email, log entries, or memoranda evidencing VWAC-MF coordination."
+          ],
+          "callout": "No liaison with Marine and Family Programs documented",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Resource Information Delivered",
+          "actions": [
+            "Confirm victims and witnesses received the MF resource brief or referral.",
+            "Confirm compensation program information was provided when applicable."
+          ]
+        },
+        {
+          "step": "Verify Intra-Familial Abuse Coverage",
+          "actions": [
+            "Confirm cases involving intra-familial abuse received compensation program information."
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No documented liaison with MF.",
+            "Compensation information not provided in qualifying cases.",
+            "MF resource brief not delivered."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who is your MF point of contact?",
+        "How do you trigger the MF referral for intra-familial cases?"
+      ],
+      "verification": [
+        "Liaison records with MF on file.",
+        "Resource and compensation information delivered.",
+        "Intra-familial abuse cases reflect compensation program referral."
+      ],
+      "verified": true
+    }
+  }
+}

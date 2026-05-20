@@ -14,6 +14,10 @@ import { StatusPill } from "@/components/ui/status-pill";
 import { RoleChip } from "@/components/domain/role-chip";
 import { SourceCitation } from "@/components/domain/source-citation";
 import { ReferencePill } from "@/components/domain/reference-pill";
+import { InspectorGuide } from "@/components/domain/inspector-guide";
+import type { InspectorGuide as InspectorGuideData } from "@/lib/content/schemas";
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const INSPECTOR_GUIDES = require("@/generated/inspector-guides.json") as Record<string, InspectorGuideData>;
 import {
   Accordion,
   AccordionContent,
@@ -58,6 +62,12 @@ export default async function InspectionDetail({
   const { programNumber, slug } = await params;
   const program = findInspection("igmc", programNumber, slug);
   if (!program) notFound();
+  // Look up by ${fa}-${slug} first so FAs that serve multiple programs (5800.16
+  // covers both Legal Admin and VWAP) resolve to the correct guide. Fall back
+  // to ${fa} for single-program FAs whose guide file is named after the FA only.
+  const faGuide =
+    INSPECTOR_GUIDES[`${program.programNumber}-${program.slug}`] ??
+    INSPECTOR_GUIDES[program.programNumber];
 
   const status = classifyInspectionStatus(program.lastVerified);
   const totalItems = program.subsections.reduce(
@@ -197,6 +207,11 @@ export default async function InspectionDetail({
                             </p>
                           </div>
                         )}
+                        <InspectorGuide
+                          guide={faGuide?.items?.[item.code]}
+                          faNumber={program.programNumber}
+                          itemCode={item.code}
+                        />
                       </div>
                     </div>
                   </li>

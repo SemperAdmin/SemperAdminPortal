@@ -1,0 +1,1149 @@
+{
+  "faNumber": "1050",
+  "sourceDoc": "LEAVE LIBERTY ADMIN ABSENCE (1050) - INSPECTOR GUIDE - REBUILT.docx",
+  "lastVerified": "2026-05-20",
+  "verifiedAtSource": true,
+  "items": {
+    "0101": {
+      "title": "COMMAND LEAVE AND LIBERTY DIRECTIVE OR PROGRAM",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoDI 1327.06, Sect 3.1",
+            "text": "All unit commanders will establish annual leave programs to provide Service members opportunities to take leave within the constraints of operational requirements."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 4, Par 1",
+            "text": "Local Leave and Liberty Regulations. Reference (r) requires that leave and liberty orders be published for each command. In addition to such other information and instructions as may be dictated by the local situation, commanders shall include the following in local leave and liberty regulations."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 4, Par 1a(3) states the local directive must include",
+            "text": "Internal controls for local check-out/check-in procedures for leave."
+          }
+        ],
+        "summary": "MCO 1050.3J, Chap 4, Par 1c establishes that local directives must also address Information Applicable to Regular and Special Liberty, including definitions, amplifying information, set liberty hours, and set liberty limits to include normal commuting range. The command is required to publish a local leave and liberty directive or order. At a minimum, the directive must address leave and liberty definitions and responsibilities, internal controls for check-out and check-in procedures, emergency medical and dental care provisions, and local liberty limits."
+      },
+      "howToInspect": [
+        {
+          "step": "Request the Command's Leave and Liberty Directive",
+          "actions": [
+            "Ask the command to produce the published leave and liberty directive, order, or regulation"
+          ],
+          "callout": "No published directive or program",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify the Directive Addresses All Required Components of MCO 1050.3J, Chap 4, Par 1",
+          "actions": [
+            "Internal controls for local check-out and check-in procedures for leave",
+            "Emergency medical/dental care definitions and procedures",
+            "Liberty hours and liberty limits established for the local area",
+            "Any amplifying information or local requirements"
+          ]
+        },
+        {
+          "step": "Verify Currency and Applicability",
+          "actions": [
+            "Directive must reflect current policy including updates from MARADMIN 625/24 (combining leave and liberty in the local area)",
+            "Directive signed by the current commanding officer or principal official"
+          ],
+          "callout": "Directive signed by a previous commanding officer with no update since change of command",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Accessibility",
+          "actions": [
+            "Marines should be able to produce or access the directive upon request"
+          ],
+          "callout": "Directive exists but Marines are unaware of it or cannot locate it",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No published directive exists - leave and liberty managed informally",
+            "Directive exists but is outdated and does not reflect current policy",
+            "Directive does not address internal controls for check-out and check-in procedures",
+            "Directive does not establish liberty limits for the local area",
+            "Directive not updated to reflect policies in MARADMIN 625/24"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your command's published leave and liberty directive or regulation?",
+        "When was this directive last updated?",
+        "Does your directive address internal controls for leave check-out and check-in procedures?",
+        "What liberty limits does your directive establish for the local area?",
+        "Are all Marines in your command aware of and have access to this directive?"
+      ],
+      "verification": [
+        "Command has a published leave and liberty directive, order, or regulation on file.",
+        "Directive is signed by the current commanding officer or principal official.",
+        "Directive addresses internal controls for leave check-out and check-in procedures.",
+        "Directive establishes local liberty hours and liberty limits.",
+        "Directive addresses emergency medical and dental care provisions.",
+        "Directive reflects current policy requirements including applicable MARADMINs.",
+        "Directive is accessible to Marines in the command."
+      ],
+      "verified": true
+    },
+    "0102": {
+      "title": "SPECIAL LEAVE ACCRUAL (SLA) FOR ELIGIBLE MARINES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoDI 1327.06, Sect 3.8",
+            "text": "Pursuant to Section 701(e) of Title 10, U.S.C., Service members assigned to one or more of the conditions listed in Paragraphs 3.8.b. and 3.8.c. of this issuance may carry accrued leave exceeding the 60-day limit forward into the next fiscal year if they receive written approval from the first officer in the grade above O-6 in their chain of command. The accrued leave exceeding 60 days that is approved to be carried forward will be SLA leave. The number of days of SLA leave that Service members may carry forward from one fiscal year to the next is capped at 30 days."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.8e",
+            "text": "SLA will not be used to authorize leave exceeding 60 days that is a result of Service members' failure to properly manage their accrued leave balances."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 2, Par 9b states that commanders are responsible for",
+            "text": "Ensuring Marines under their command are informed of this entitlement. Ensuring an appropriate MCTFS entry is made for unit deployment dates of departure and arrival for qualifying assignments. Verifying Marines eligibility. In the absence of adequate documentation, an individual's signed sworn statement based on the eligibility criteria in paragraph 9a is acceptable."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 2, Par 9c(4)",
+            "text": "SLA shall not be used to authorize accumulation of leave in excess of 60 days, aside from paragraph 2c, for Marines who do not manage their leave properly."
+          }
+        ],
+        "summary": "The command must ensure that Marines who meet qualifying SLA criteria and lose leave at the end of a fiscal year have that leave restored through the SLA process. SLA requires written approval from the first officer in the grade above O-6 in the chain of command. SLA is not a tool to offset poor individual leave management."
+      },
+      "howToInspect": [
+        {
+          "step": "Determine Whether Any Marines Lost Leave at the End of a Fiscal Year During the Inspection Period",
+          "actions": [
+            "If leave was lost: request documentation showing whether SLA eligibility was evaluated"
+          ]
+        },
+        {
+          "step": "Verify Eligibility Evaluation Against the Four Qualifying Criteria in Par 9a",
+          "actions": [
+            "Where eligibility existed, verify SLA was requested and written approval obtained from the first O-6+ commander in the chain"
+          ],
+          "callout": "SLA granted without written approval",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify SLA Was Not Misapplied",
+          "actions": [
+            "SLA may not be used to restore leave lost solely due to a Marine's failure to properly manage leave",
+            "Confirm no SLA was granted where the sole cause of lost leave was poor leave management"
+          ]
+        },
+        {
+          "step": "Verify Command Awareness and MCTFS Entries",
+          "actions": [
+            "Commanding officers are required to inform Marines of the SLA entitlement",
+            "MCTFS entries must be made for unit deployment dates of departure and arrival for qualifying assignments"
+          ],
+          "callout": "MCTFS entries for qualifying deployment dates not made",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Marines who met qualifying SLA criteria lost leave with no command evaluation of SLA eligibility",
+            "SLA approved without written documentation from the required approving authority",
+            "Command unaware of the SLA entitlement or required approval authority (first O-6+ in chain)",
+            "MCTFS entries for unit deployment dates of departure and arrival not made as required"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Did any Marines in your command lose leave at the end of a fiscal year during the inspection period?",
+        "What process does the command use to evaluate SLA eligibility before the end of each fiscal year?",
+        "Show me documentation of SLA approvals for any Marines who lost leave during the inspection period?",
+        "Who is the required approval authority for SLA?",
+        "How do you inform Marines of their SLA entitlement?",
+        "Are MCTFS entries being made for qualifying unit deployment dates?"
+      ],
+      "verification": [
+        "Command has a process to evaluate SLA eligibility before the end of each fiscal year.",
+        "Marines who met qualifying SLA criteria during the inspection period had SLA evaluated and requested.",
+        "Written SLA approval was obtained from the first officer in the grade above O-6 in the chain of command for all approved SLA.",
+        "MCTFS entries reflect unit deployment dates of departure and arrival for qualifying assignments.",
+        "No SLA was approved solely to offset a Marine's failure to manage their leave balance.",
+        "Marines in the command are informed of the SLA entitlement."
+      ],
+      "verified": true
+    },
+    "0103": {
+      "title": "INTERNAL CONTROLS FOR LEAVE/PTAD CHECK-OUT AND CHECK-IN IN MOL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1050.3J, Chap 4, Par 8a",
+            "text": "Authorization. Commanders shall establish internal leave check-out and check-in procedures for Marines in their command. Commanders may authorize Marines, departing on and returning from leave, to complete check-out and check-in procedures by MOL, except for those Marines in receipt of the meal card."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 4, Par 8b states that each Marine authorized to use MOL for check-out and check-in should be",
+            "text": "(3) Instructed to enter the time and date of commencement and termination of leave in MOL. (4) Instructed to execute the Leave Conduct Pledge before commencing on leave."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 4, Par 7b(1)(f) states that commanding officers are required to",
+            "text": "Establish a unit leave management program for Marines in their command (i.e. ensure Marines, approved for leave, check-out and check-in from leave via MOL promptly for leave accountability)."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 2, Par 5b(1)",
+            "text": "Leave begins and terminates in the local area. Leave will be charged for all calendar days, duty days as well as non-duty days. A duty day is defined as a day in which a Marine is expected to be at their place of work for approximately eight hours."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 2, Par 5b(3)",
+            "text": "Marines may not check-in from leave on Friday only to start leave on the following Monday. Once leave starts, all calendar days (duty-days, non-duty days, holidays, etc.) are charged as leave. Leave approving authorities shall ensure there are no abuses of the leave program."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 3, Par 1a",
+            "text": "Regular Liberty. Regular liberty should normally be granted from the end of normal working hours on one day to the commencement of working hours on the next working day. Regular liberty periods shall not exceed 3 days."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 3, Par 1b",
+            "text": "Special Liberty. Special liberty shall not be combined with regular liberty or holiday periods when the combined periods of continuous absence will exceed four days."
+          },
+          {
+            "citation": "MARADMIN 625/24, Par 3",
+            "text": "Marines are authorized to take local leave in conjunction with liberty and will only be charged leave for those days that are duty days.\" Par 3c states: \"Geographical Limitation: All leave must begin, be executed, and end in the vicinity of the Marine's PDS or worksite, as defined by the 24-hour liberty boundaries established by the local Commander's leave and liberty policy."
+          }
+        ],
+        "summary": "The command is required to establish formal internal controls ensuring all leave and PTAD requests are initiated, approved, executed, and closed out through MOL. These controls must account for proper check-out and check-in timing, the Leave Conduct Pledge, and accurate MCTFS reporting of chargeable leave days."
+      },
+      "howToInspect": [
+        {
+          "step": "Request the Command's Written Internal Controls for Leave and PTAD Check-Out and Check-In",
+          "actions": [],
+          "callout": "No written internal controls exist",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify the Internal Controls Address the Full Lifecycle in MOL",
+          "actions": [
+            "Request submission in MOL",
+            "Approval workflow in MOL",
+            "Check-out (commencement date/time entered in MOL)",
+            "Execution (Leave Conduct Pledge completed)",
+            "Check-in (termination date/time entered in MOL)",
+            "Leave closeout in MCTFS"
+          ]
+        },
+        {
+          "step": "Verify MOL as Primary Means for All Leave and PTAD",
+          "actions": [
+            "Pull a sample of recent leave requests and verify they were submitted, approved, and closed out in MOL"
+          ],
+          "callout": "Leave managed via paper NAVMC 3 without MOL entry as backup",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Spot-Check Morning Reports Against MOL",
+          "actions": [
+            "Identify individuals marked as on leave in morning reports",
+            "Cross-reference against MOL to confirm a corresponding approved leave request exists"
+          ],
+          "callout": "Leave reflected in morning report with no MOL request",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify PTAD is Being Processed Through MOL",
+          "actions": [
+            "Confirm PTAD requests are submitted under the correct PTAD subcategory in MOL"
+          ],
+          "callout": "PTAD executed without MOL documentation",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Local Area Leave and Liberty Policy Reflects MARADMIN 625/24",
+          "actions": [
+            "Command must charge leave only for duty days when leave is taken in conjunction with liberty in the local area",
+            "Command must define the 24-hour liberty boundaries in their local policy"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No written internal controls for leave/PTAD check-out and check-in",
+            "Leave managed informally with no MOL check-in or check-out entries",
+            "Morning reports reflect Marines on leave with no corresponding MOL request",
+            "Leave Conduct Pledge not being executed in MOL",
+            "PTAD not tracked through MOL or tracked under incorrect subcategory",
+            "Local policy does not reflect the MARADMIN 625/24 provision on combining local leave and liberty"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your written internal controls for leave and PTAD check-out and check-in procedures?",
+        "Walk me through the process from the time a Marine submits a leave request through check-in upon return?",
+        "How do you ensure Marines complete the Leave Conduct Pledge in MOL before commencing leave?",
+        "How are PTAD requests submitted and tracked in MOL?",
+        "Show me your morning report and a sample of recent leave requests - let's cross-reference them?",
+        "How does your command handle leave combined with liberty in the local area per MARADMIN 625/24?"
+      ],
+      "verification": [
+        "Command has written internal controls for leave and PTAD check-out and check-in procedures.",
+        "MOL is the primary means for all leave and PTAD requests, approvals, and closeouts.",
+        "Sample review confirms all recent leave is reflected in MOL with corresponding approved requests.",
+        "Marines are completing the Leave Conduct Pledge in MOL before commencing leave.",
+        "Check-out (commencement) and check-in (termination) dates and times are entered in MOL.",
+        "PTAD is being processed through MOL under the correct subcategory.",
+        "Morning report cross-check confirms no Marines on leave without a corresponding MOL request.",
+        "Local leave and liberty policy reflects the MARADMIN 625/24 provision on combining local area leave with liberty."
+      ],
+      "verified": true
+    },
+    "0104": {
+      "title": "PTAD AUTHORIZED PURPOSES ONLY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoDI 1327.06, Sect 4.4a",
+            "text": "Administrative absences are authorized for specific circumstances as explained in Paragraph 4.4.b. Administrative absences that exceed 30 days will be controlled at the Military Service headquarters level."
+          },
+          {
+            "citation": "MARADMIN 625/24, Par 5a",
+            "text": "House Hunting PTAD is intended to facilitate tasks related to setting up a household in preparation for an ordered PCS."
+          },
+          {
+            "citation": "MARADMIN 625/24, Par 5b",
+            "text": "Marines executing a PCS have the option, if approved, to use House Hunting PTAD in increments rather than a single continuous period. Regardless of increments used, the total number of eligible PTAD days remains unchanged at a maximum of 10 days."
+          },
+          {
+            "citation": "MARADMIN 625/24, Par 5d",
+            "text": "Per reference (g), parental leave may not be taken consecutively or in conjunction with terminal leave or transition PTAD. With the exceptions of authorized transition PTAD or Skillbridge PTAD, no other nonchargeable leave or administrative absence may be combined with terminal leave without a duty day separating the absences."
+          },
+          {
+            "citation": "MARADMIN 625/24, Par 5f",
+            "text": "Commanders and leave approvers are reminded that PTAD may only be granted for the specified purposes in reference (a) or this MARADMIN. This ensures the program is not misused to accumulate, rather than expend, accrued leave."
+          }
+        ],
+        "summary": "MCO 1050.3J, Chap 5, Par 1a warns that \"care must be taken to ensure that the planned absence clearly falls within the criteria provided. If it does not, the absence shall be handled under normal leave or liberty procedures.\" Commands are expressly prohibited from using PTAD to accumulate rather than expend accrued leave."
+      },
+      "howToInspect": [
+        {
+          "step": "Request a Sample of PTAD Requests Approved During the Inspection Period (Minimum 10 if Available)",
+          "actions": []
+        },
+        {
+          "step": "For Each PTAD Request, Verify the Stated Purpose Matches an Authorized Purpose in DoDI 1327.06, Sect 4.4b",
+          "actions": [],
+          "callout": "PTAD granted to accumulate rather than expend accrued leave",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Day Limits Are Not Exceeded by Purpose",
+          "actions": [
+            "House hunting PTAD: does not exceed 10 days total even when used incrementally",
+            "Retirement presiding official: does not exceed 3 days, only one official per ceremony",
+            "Transition Assistance (TAP): only granted when separation or retirement is within 365 days",
+            "SkillBridge: does not exceed 180 days",
+            "Recruiting Assistance: does not exceed 14 days",
+            "Non-covered ART: does not exceed 21 days per request"
+          ]
+        },
+        {
+          "step": "Verify PTAD Is Properly Documented in MOL Under the Correct Subcategory",
+          "actions": [
+            "MARADMIN 625/24 Par 5c establishes a SkillBridge subcategory in MOL - verify SkillBridge PTAD is tracked there"
+          ],
+          "callout": "PTAD entered under incorrect subcategory or left uncategorized",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify House Hunting PTAD Incremental Use per MARADMIN 625/24",
+          "actions": [
+            "Marines may split house hunting PTAD between the old and new PDS in increments if approved",
+            "Total still cannot exceed 10 days regardless of how split",
+            "Confirm command is tracking cumulative days when approving incremental use"
+          ]
+        },
+        {
+          "step": "Verify PTAD Is Not Being Combined Improperly with Terminal Leave",
+          "actions": [
+            "Non-chargeable leave or administrative absence other than authorized transition or SkillBridge PTAD may not be combined with terminal leave without a duty day separating the absences"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "PTAD granted for informal purposes not listed in DoDI 1327.06 Sect 4.4b",
+            "House hunting PTAD exceeds 10 days in aggregate when increments are added together",
+            "PTAD used as a substitute for leave to allow Marines to preserve leave balances",
+            "SkillBridge PTAD not tracked under the correct MOL subcategory",
+            "PTAD not documented in MOL - approved verbally or by email only"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me a sample of PTAD requests approved during the inspection period?",
+        "Walk me through how you determine whether a PTAD request is for an authorized purpose?",
+        "How does your command ensure house hunting PTAD does not exceed 10 days when used incrementally?",
+        "How is SkillBridge PTAD tracked and documented in MOL?",
+        "Has PTAD ever been approved for a purpose not on the authorized list? How would you handle that request?",
+        "How do you prevent PTAD from being used to accumulate rather than expend accrued leave?"
+      ],
+      "verification": [
+        "Sample review confirms all approved PTAD requests cite an authorized purpose per DoDI 1327.06, Sect 4.4b.",
+        "No PTAD was approved for purposes not on the authorized list.",
+        "House hunting PTAD does not exceed 10 days total, even when used incrementally across old and new PDS.",
+        "SkillBridge PTAD is tracked in MOL under the correct SkillBridge subcategory.",
+        "PTAD is not being used to allow Marines to accumulate rather than expend accrued leave.",
+        "All PTAD is properly documented in MOL.",
+        "No unauthorized combinations of PTAD with terminal leave without an intervening duty day."
+      ],
+      "verified": true
+    },
+    "0105": {
+      "title": "ABSENCE OVER LEAVE/AWOL CHARGED AS ANNUAL LEAVE WHEN EXCUSED AS UNAVOIDABLE",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoDI 1327.06, Sect 5.2a",
+            "text": "Service members absent from their places of duty without permission or absent beyond their authorized leave periods may be classified to be 'absent without leave,' 'absent over leave,' or 'absent with leave,' whichever applies. (1) If the unit commander decides such absence was avoidable, the absence will be classified as 'absent without leave' or 'absent over leave,' the Service member's leave account will not be charged, and the Service member forfeits pay and allowances during the part of the Service member's absence that is more than the number of days' of leave authorized. (2) If the unit commander decides such absence was unavoidable, the absence will be classified as 'absent with leave,' the period of the absence will be charged to the Service member's leave account, and the Service member is entitled to full pay and allowances for the period of that absence except when the period of leave is excess leave."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 5.2b",
+            "text": "Service members absent from their places of duty for a period that is longer than the liberty authorized, may be classified to be 'absent without leave,' 'absent with leave,' or 'liberty,' whichever applies. (1) If the unit commander decides the absence was avoidable, the absence will be classified as 'absent without leave,' the Service member's leave account will not be charged, and the Service member forfeits pay and allowances during the part of their absence that is more than the number of days' liberty authorized. (2) If the unit commander decides the absence was unavoidable, the absence will be classified as 'absent with leave,' when the liberty authorized plus the unavoidable absence exceeds 3 days. In such case, the Service member's leave account will be charged for the duration of the unavoidable absence. However, when the entire period is fewer than 4 days, the unavoidable absence will be classified as 'liberty.' In either case, the Service member is entitled to full pay and allowances for the entire period."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 2, Par 20a",
+            "text": "Absence Over Leave. Absence over authorized leave, if determined to be unavoidable, shall be charged to the Marine's leave account; otherwise, it will be considered as absent without leave."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 2, Par 20b",
+            "text": "(2) Absence over regular liberty, if determined to be unavoidable and the entire period of authorized and excused unauthorized absence is: (a) Three days or less, the entire period shall be considered liberty. (b) In excess of 3 days, the excused unauthorized absence portions shall be considered as leave and charged to the member's leave account. (3) Absence over special liberty, if determined to be unavoidable, will be charged to the leave account to include both the authorized special liberty portion and the excused unauthorized portion. (4) Periods of absence over liberty determined to be chargeable against a Marine's leave account shall be charged at the rate of one full day for each day of absence. A leave authorization (NAVMC 3), using MOL, will be prepared for documentation."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 2, Par 20c",
+            "text": "Exceptions. Absences over leave or liberty caused by mental incapacity, or early departure of a unit due to operational commitments, whether determined to be avoidable or excused as unavoidable, shall not be charged as leave, regardless of the duration."
+          }
+        ],
+        "summary": "The key distinction is the commander's determination of avoidability. When the absence is excused as unavoidable, it must be properly charged to annual leave (with exceptions for short over-liberty periods) and documented via NAVMC 3 in MOL. When avoidable, no leave charge applies but pay and allowances are forfeited."
+      },
+      "howToInspect": [
+        {
+          "step": "Determine Whether the Command Has Had Any Absence Over Leave or Liberty Cases During the Inspection Period",
+          "actions": []
+        },
+        {
+          "step": "For Any Cases, Verify a Formal Commander's Determination Was Made",
+          "actions": [],
+          "callout": "Absence treated as AWOL but commander never made a formal determination",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Correct Application of the 3-Day Rule for Absence Over Regular Liberty",
+          "actions": [
+            "If excused as unavoidable and the entire absence (liberty + over-liberty) is 3 days or less: no leave charge, treated as liberty",
+            "If excused as unavoidable and the entire absence exceeds 3 days: the over-liberty portion is charged as leave"
+          ]
+        },
+        {
+          "step": "Verify Documentation in MOL",
+          "actions": [
+            "When leave is charged for an absence over liberty, a leave authorization (NAVMC 3) must be prepared in MOL"
+          ],
+          "callout": "Leave charge made but no corresponding NAVMC 3 in MOL",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Exceptions Are Correctly Applied",
+          "actions": [
+            "Absences caused by mental incapacity are not charged as leave",
+            "Early departure of a unit due to operational commitments does not result in a leave charge"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Commander excused an absence as unavoidable but leave account was never charged",
+            "NAVMC 3 not prepared in MOL for chargeable over-liberty absences",
+            "No written record of the commander's avoidable/unavoidable determination",
+            "The 3-day rule for absence over regular liberty misapplied - leave charged when total period was under 4 days"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Has your command had any absence over leave or absence over liberty cases during the inspection period?",
+        "Walk me through how you make the avoidable versus unavoidable determination?",
+        "When a Marine's over-leave or over-liberty absence is excused as unavoidable, how is the leave charge documented in MOL?",
+        "Show me documentation of any absence over leave/liberty determinations made during the inspection period?",
+        "What happens to a Marine's pay and allowances when an over-leave absence is determined to be avoidable?"
+      ],
+      "verification": [
+        "Command has a process for commanders to formally determine whether absences over leave or liberty are avoidable or unavoidable.",
+        "For any cases during the inspection period, written commander determinations are on file.",
+        "All absences excused as unavoidable resulted in the appropriate leave charge to the Marine's leave account.",
+        "NAVMC 3 prepared in MOL for all over-liberty periods charged as leave.",
+        "The 3-day rule for over-regular-liberty absences was correctly applied.",
+        "Exceptions (mental incapacity, early unit departure) correctly result in no leave charge."
+      ],
+      "verified": true
+    },
+    "0106": {
+      "title": "CHARGEABLE LEAVE REPORTED IN MOL OR UNIT DIARY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1050.3J, Chap 4, Par 7b(1)(a)",
+            "text": "The commanding officer has the ultimate responsibility for reporting information into the MCTFS and ensuring that all authorized annual leave, to include leave in conjunction with TAD, is promptly and properly reported into MCTFS."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 4, Par 7b(1)(f)",
+            "text": "Establish a unit leave management program for Marines in their command (i.e. ensure Marines, approved for leave, check-out and check-in from leave via MOL promptly for leave accountability)."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 4, Par 7b(1)(b)",
+            "text": "The commanding officer is also responsible for ensuring all orders authorizing delay en route, which is charged as annual leave, are submitted within 3 working days, following completion of travel, to the disbursing officer for liquidation and entry of delay en route into MCTFS."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 4, Par 7c(1)",
+            "text": "Except for those orders identified in paragraph 3, MOL should normally be used for granting, reporting, and liquidating all annual leave periods."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 4, Par 7c(2)",
+            "text": "Senior staff officers will ensure Marines submit leave requests using MOL to ensure leave is promptly and properly entered into the MCTFS."
+          }
+        ],
+        "summary": "Note: Note: MCTFSPRIUM, Par 70101 governs the specific MCTFS reporting procedures for chargeable leave in the unit diary. This document was not available for this guide. Inspectors requiring specific MCTFS entry procedures should reference MCTFSPRIUM, Par 70101 directly or contact the servicing IPAC for procedural guidance. The commanding officer bears ultimate responsibility for ensuring all chargeable leave is promptly and properly reported in MCTFS. MOL is the primary tool. Morning report cross-checks are the primary verification method to identify Marines showing as on leave without a corresponding approved MOL leave request."
+      },
+      "howToInspect": [
+        {
+          "step": "Request Access to the Command's Morning Reports for a Sample Period (Minimum 2-4 Weeks)",
+          "actions": []
+        },
+        {
+          "step": "Cross-Reference Morning Reports Against MOL",
+          "actions": [
+            "Identify every Marine listed as on leave in the morning report",
+            "Verify each has a corresponding approved leave request in MOL",
+            "Verify check-out was completed in MOL on the correct start date"
+          ],
+          "callout": "Pattern of Marines marked on leave in morning report without MOL requests",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Check-In Closeouts in MOL",
+          "actions": [
+            "For Marines who returned from leave during the inspection period, verify check-in was completed in MOL"
+          ],
+          "callout": "Leave request shows no check-in termination date entered",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Leave in Conjunction with TAD Is Captured",
+          "actions": [
+            "Request any TAD orders issued during the inspection period that included an associated leave period",
+            "Verify the leave portion was entered into MCTFS via MOL in addition to the TAD orders"
+          ],
+          "callout": "Leave combined with TAD present in DTS orders but no MOL entry",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Delay En Route Leave Is Reported",
+          "actions": [
+            "For any PCS orders issued during the inspection period, verify delay en route was submitted to the disbursing officer within 3 working days following completion of travel",
+            "Delay en route not appearing on LES within 45 days of join posting warrants follow-up with the disbursing officer"
+          ]
+        },
+        {
+          "step": "Verify All Marines Possess MOL Accounts",
+          "actions": [
+            "Commanding officers are required to ensure all Marines have MOL accounts"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Marines shown on leave in morning reports with no corresponding MOL request",
+            "MOL leave requests exist but check-out and check-in are not being completed",
+            "Leave in conjunction with TAD reflected in DTS but not entered into MCTFS via MOL",
+            "Delay en route not entered into MCTFS within required timeframe",
+            "Marines without MOL accounts - leave managed by paper NAVMC 3 without backup MOL entry"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your morning reports for the past two weeks and walk me through how you cross-reference them against MOL?",
+        "How do you verify that every Marine listed as on leave in the morning report has a corresponding approved MOL request?",
+        "Show me a sample of recently closed leave requests in MOL - confirm check-out and check-in dates are entered?",
+        "How do you ensure leave combined with TAD is entered into MCTFS via MOL?",
+        "Do all Marines in your command have active MOL accounts?",
+        "Show me your process for capturing and reporting delay en route leave?"
+      ],
+      "verification": [
+        "Morning reports are being cross-referenced against MOL leave requests regularly.",
+        "Every Marine listed as on leave in morning reports during the sample period has a corresponding approved MOL request.",
+        "Check-out (commencement) dates are entered in MOL for all approved leave.",
+        "Check-in (termination) dates are entered in MOL for all completed leave - no open/unclosed requests.",
+        "Leave combined with TAD is entered into MCTFS via MOL in addition to DTS orders.",
+        "Delay en route leave is entered into MCTFS within 3 working days following completion of travel.",
+        "All Marines in the command possess active MOL accounts."
+      ],
+      "verified": true
+    },
+    "0107": {
+      "title": "ACTIVE-DUTY PARENTAL LEAVE NOT TO EXCEED 84 DAYS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.c(3)(a)",
+            "text": "For the birth parent, 12 weeks of ADPL is authorized following a period of convalescence from childbirth. Twelve weeks of ADPL is authorized during the 1-year period beginning after the child's date of birth."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.c(3)(b)",
+            "text": "For the non-birth parent, 12 weeks of ADPL is authorized during the 1-year period beginning after the child's date of birth."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.c(6)(b) states regarding multiple qualifying events within 72 hours",
+            "text": "Multiple qualifying events occurring within the same 72-hour period will be treated as a single event for the allocation of ADPL...The Service member is authorized a total of 12 weeks (i.e., 84 days) of ADPL because the two [events] are treated as a single [event]."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.c(12)(a)",
+            "text": "A Service member who places their child for adoption or has their parental rights terminated by consent or court order, including children surrendered governed by a surrogacy agreement, is not eligible for ADPL."
+          },
+          {
+            "citation": "MARADMIN 051/23, Par 7a(1)",
+            "text": "For the birth parent, 12 weeks (84 days) of parental leave during the 1-year period beginning on the date of birth of the child is authorized following a period of convalescence from childbirth."
+          },
+          {
+            "citation": "MARADMIN 051/23, Par 11c",
+            "text": "Commands are responsible for locally tracking and maintaining records of a Marine's eligibility and execution of parental leave in accordance with this MARADMIN."
+          },
+          {
+            "citation": "MARADMIN 051/23, Par 11d",
+            "text": "Commands and Marines are responsible for ensuring the Marine authorized this leave does not use over 84 days of parental leave, except in circumstance identified in paragraph 8b(2)."
+          }
+        ],
+        "summary": "Note: ote: The exception in Par 8b(2) covers multiple qualifying events occurring more than 72 hours apart, where new ADPL runs concurrently with unused prior ADPL. In that case, the cumulative authorized leave may exceed 84 days total but the entitlement for each individual event remains capped at 84 days. The 12-week (84-day) maximum is a hard cap per qualifying event. Commands bear direct responsibility for tracking each Marine's ADPL usage to prevent overuse. Until MOL is updated with a permanent parental leave tracking module, commands must maintain local records."
+      },
+      "howToInspect": [
+        {
+          "step": "Request the Command's Local ADPL Tracking System as Required by MARADMIN 051/23, Par 11c",
+          "actions": [],
+          "callout": "No local tracking system or records exist",
+          "severity": "finding"
+        },
+        {
+          "step": "For Any ADPL Executed During the Inspection Period, Verify",
+          "actions": [
+            "Total ADPL approved and used does not exceed 84 days per qualifying event",
+            "Request the MOL records (submitted under \"PTAD, Parental Leave\") and the command's local tracking log",
+            "Cross-reference MOL records against local tracking for accuracy"
+          ],
+          "callout": "ADPL approved in excess of 84 days for a single qualifying event",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Correct Handling of the 1-Year Period",
+          "actions": [
+            "ADPL must be used within 1 year of the qualifying event (birth, adoption placement, or foster care placement)"
+          ],
+          "callout": "ADPL used after the 1-year period without a qualifying extension",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Correct Handling of Multiple Qualifying Events",
+          "actions": [
+            "Events within 72 hours of each other: treated as a single event - only 84 days total authorized",
+            "Events more than 72 hours apart: treated as separate events - new ADPL runs concurrently with any unused prior ADPL",
+            "Confirm the command correctly calculates the remaining balance when a second event occurs"
+          ]
+        },
+        {
+          "step": "Verify Dependent Addition in MCTFS Within 30 Days",
+          "actions": [
+            "Per MARADMIN 051/23, Par 7d: Marines must add their dependent child in MCTFS within 30 days or ADPL will be converted to annual leave",
+            "Confirm command has a process to track and enforce this requirement"
+          ]
+        },
+        {
+          "step": "Verify ADPL Is Not Being Taken Concurrently with Terminal Leave",
+          "actions": [
+            "Per MARADMIN 625/24, Par 5d: parental leave may not be taken consecutively or in conjunction with terminal leave"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No local ADPL tracking records maintained at the command level",
+            "ADPL approved without confirming the Marine has not previously used days toward the 84-day cap",
+            "Commands not cross-referencing MOL records against local logs to ensure accuracy",
+            "Dependent not added to MCTFS within 30 days with no corrective action to convert leave",
+            "ADPL incorrectly granted in conjunction with terminal leave"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your command's local tracking records for ADPL usage during the inspection period?",
+        "How do you ensure a Marine does not exceed 84 days of ADPL for a single qualifying event?",
+        "When a Marine has two separate qualifying events, how do you calculate the available ADPL balance?",
+        "What is your process for verifying a Marine added their dependent child to MCTFS within 30 days of the qualifying event?",
+        "How do you track Marines who used ADPL in increments to ensure the running total stays within 84 days?"
+      ],
+      "verification": [
+        "Command maintains local ADPL tracking records per MARADMIN 051/23, Par 11c.",
+        "Local tracking records are cross-referenced against MOL entries for accuracy.",
+        "No Marine has been approved for more than 84 days of ADPL for a single qualifying event.",
+        "ADPL is being used within the 1-year period from the qualifying event or an authorized extension applies.",
+        "Command correctly handles multiple qualifying events - events within 72 hours treated as a single event.",
+        "Command has a process to ensure Marines add dependent children to MCTFS within 30 days.",
+        "ADPL is not being granted in conjunction with or consecutive to terminal leave."
+      ],
+      "verified": true
+    },
+    "0108": {
+      "title": "ACTIVE-DUTY PARENTAL LEAVE IN INCREMENTS NOT LESS THAN 7 DAYS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.c(7)",
+            "text": "Service members may take ADPL in one continuous period or in increments. ADPL may be taken together with annual leave. Increments of ADPL will be taken consistent with operational requirements."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.c(7)(a)",
+            "text": "Service members choosing to take ADPL in multiple increments must request such proposed leave in blocks of at least 7 days each for a maximum of 12 increments and must submit such requests within the timelines established by normal Service procedures and the unit commander. If the commander disapproves the request, the Service member may appeal the decision through their normal Service procedures."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.c(7)(b)",
+            "text": "Commanders are encouraged to approve requests for incremental periods of ADPL. If the unit commander does not approve taking incremental ADPL, they must allow the Service member to take the full 12 weeks of ADPL in one continuous period."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.c(8)",
+            "text": "Service members may take annual leave (i.e., chargeable leave) in between increments of ADPL or consecutively with ADPL. No particular order or sequence of such leave is required."
+          },
+          {
+            "citation": "MARADMIN 051/23, Par 8a(1)(b)",
+            "text": "Parental leave used in more than one increment must be in periods of at least 7 days for a maximum of 12 increments."
+          },
+          {
+            "citation": "MARADMIN 051/23, Par 8a(1)(a)",
+            "text": "In instances where the commander has carefully evaluated the operational requirements of the unit, and incremental periods of leave for the Marine are not feasible or have an immediate detriment to the unit's mission accomplishment over the 1-year period, commanders shall approve the Marine to execute the total authorized leave in one continuous increment."
+          },
+          {
+            "citation": "MARADMIN 129/23, Par 4",
+            "text": "SLA specifically due to a Marine executing parental leave is not authorized. Marines must still meet the eligibility criteria in reference (c) to be eligible for SLA."
+          }
+        ],
+        "summary": "The 7-day minimum increment is a firm floor. A Marine who wishes to take ADPL in multiple increments may never take an increment of fewer than 7 days. The maximum number of increments is 12. If a commander declines to approve incremental ADPL, the commander must grant the full 84 days in one continuous period."
+      },
+      "howToInspect": [
+        {
+          "step": "For Any ADPL Executed in Increments During the Inspection Period, Pull the MOL Records and Command Local Tracking Logs",
+          "actions": []
+        },
+        {
+          "step": "Verify Each Increment Is Not Less Than 7 Days",
+          "actions": [
+            "Note: a single continuous period of 84 days does not require the 7-day minimum - only incremental use triggers this requirement"
+          ],
+          "callout": "Any increment less than 7 days",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify the Number of Increments Does Not Exceed 12",
+          "actions": [],
+          "callout": "More than 12 increments for a single qualifying event",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify the Command's Handling When Incremental ADPL Was Denied",
+          "actions": [
+            "If a commander denied incremental ADPL, verify the Marine was approved for and able to take the full 84 days in one continuous period"
+          ],
+          "callout": "Commander denied incremental ADPL but did not grant continuous period alternative",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Convalescent Leave and ADPL Are Not Conflated for Birth Parents",
+          "actions": [
+            "MARADMIN 129/23 clarifies: parental leave is not a substitute for convalescent leave for a birth parent",
+            "Confirm that for birth parent Marines, convalescent leave was properly separated from and precedes ADPL"
+          ]
+        },
+        {
+          "step": "Verify SLA Is Not Being Incorrectly Granted for ADPL",
+          "actions": [
+            "Per MARADMIN 129/23, Par 4: SLA specifically due to executing parental leave is not authorized",
+            "Confirm no SLA was granted where the primary or sole cause of leave loss was execution of ADPL"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "ADPL increments approved that are fewer than 7 days",
+            "Command approved more than 12 increments for a single qualifying event",
+            "Commander denied incremental ADPL but did not ensure the Marine received the continuous alternative",
+            "SLA incorrectly approved for leave lost due to ADPL execution",
+            "Convalescent leave and parental leave incorrectly conflated or run simultaneously for birth parents"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the MOL records for any Marines who took ADPL in increments during the inspection period?",
+        "How does your command verify that each increment of ADPL is at least 7 days?",
+        "What is the maximum number of increments a Marine may take ADPL in?",
+        "If you deny a Marine's request to take ADPL in increments, what are you required to do?",
+        "Has your command ever approved SLA for a Marine who lost leave because they were on ADPL?"
+      ],
+      "verification": [
+        "All ADPL increments during the inspection period were at least 7 days in duration.",
+        "No Marine used more than 12 increments of ADPL for a single qualifying event.",
+        "Where incremental ADPL was denied, the full 84-day continuous period alternative was granted.",
+        "Convalescent leave and ADPL are treated as separate and distinct periods for birth parent Marines.",
+        "No SLA was approved where the primary cause of leave loss was execution of ADPL.",
+        "Annual leave interspersed between ADPL increments is properly charged as annual leave in MOL."
+      ],
+      "verified": true
+    },
+    "0109": {
+      "title": "LEAVE NOT CHARGED WHEN CHECKING OUT ON A NON-DUTY DAY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoDI 1327.06, Sect 5.1.b",
+            "text": "The day a Service member departs on, and returns from, leave must not be charged as leave if they are at their place of work (e.g., 'on board,' 'for duty') for the majority of the normal working hours of a workday. Otherwise, it must be charged as leave."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 5.1.b.(1)",
+            "text": "For leave starting on a non-workday, the day of departure will be charged as a day of leave."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 5.1.b.(2)",
+            "text": "For leave ending on a non-workday, the day of return will not be charged as a day of leave."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 2, Par 5b",
+            "text": "The day of departure from the duty station, normally at the end of the Marine's normal working hours on a day of duty, is a day of duty and not chargeable as leave. However, when such departure is prior to half a duty day, then the day of departure is chargeable as leave. The day of return from authorized leave shall be counted as a day of leave; however, when such return is prior to the Marine's normal work hours on a scheduled day of duty or prior to 0800 on a Saturday, Sunday or holiday, the day of return shall be counted as a day of duty."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 2, Par 5b(1)",
+            "text": "Leave will be charged for all calendar days, duty days as well as non-duty days. A duty day is defined as a day in which a Marine is expected to be at their place of work for approximately eight hours."
+          },
+          {
+            "citation": "MCO 1050.3J, Chap 2, Par 5b(3)",
+            "text": "Marines may not check-in from leave on Friday only to start leave on the following Monday. Once leave starts, all calendar days (duty-days, non-duty days, holidays, etc.) are charged as leave. Leave approving authorities shall ensure there are no abuses of the leave program."
+          }
+        ],
+        "summary": "The question targets a common abuse pattern: when leave is requested beginning on a Saturday, Sunday, or holiday, that non-workday departure date must be charged as a day of leave. Approving authorities must ensure the leave start date in MOL reflects the actual first chargeable day."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull a Sample of MOL Leave Requests Approved During the Inspection Period (Minimum 10-15 if Available)",
+          "actions": []
+        },
+        {
+          "step": "For Each Approved Leave Request, Examine the Check-Out Date Entered in MOL",
+          "actions": [
+            "Identify any leave requests where the check-out date is a Saturday, Sunday, or federal holiday",
+            "Verify that the non-duty day is correctly charged as a day of leave in the approved request"
+          ],
+          "callout": "Leave authorized starting on a Saturday but Saturday is not counted as a chargeable day",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Leave Is Not Being Manipulated to Avoid Charging Non-Duty Days",
+          "actions": [
+            "Look for patterns where leave consistently starts on Mondays immediately following a weekend or holiday",
+            "Look for leave requests that begin and end on duty days only, skipping embedded weekends or holidays",
+            "Once leave begins, all calendar days including weekends and holidays must be charged"
+          ],
+          "callout": "Leave interrupted mid-period only to restart after a weekend without a formal check-in",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify the Friday Check-In / Monday Check-Out Abuse Pattern Is Not Occurring",
+          "actions": [
+            "Per MCO 1050.3J, Par 5b(3): Marines may not check in from leave on Friday only to start leave again on Monday to skip weekend days",
+            "Review any leave requests where a Marine checked in on Friday and immediately submitted another leave request beginning the following Monday"
+          ]
+        },
+        {
+          "step": "Verify the Return-from-Leave Charging Rule",
+          "actions": [
+            "If a Marine returns prior to normal work hours on a duty day or before 0800 on Saturday, Sunday, or holiday: that day is not charged as leave",
+            "If the return is after those thresholds: the return day is charged as a day of leave"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Non-duty day check-outs not being charged as leave in MOL",
+            "Leave requests starting on a Monday when the Marine actually checked out on the preceding Friday or weekend",
+            "Pattern of leave requests that consistently exclude embedded weekend and holiday days from the charge period",
+            "Friday check-in followed by Monday check-out with no leave charged for the intervening weekend"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through how you determine the first chargeable day when a Marine checks out on a non-duty day?",
+        "If a Marine checks out on a Saturday to begin leave, is Saturday charged as a leave day?",
+        "Show me a leave request where the Marine checked out on a Friday afternoon - how many days were charged?",
+        "What prevents a Marine from checking in on Friday and then starting leave again on Monday?",
+        "Once leave begins, are all calendar days including weekends and holidays being charged?"
+      ],
+      "verification": [
+        "Sample review confirms non-duty day departures (Saturdays, Sundays, holidays) are charged as days of leave.",
+        "No pattern of leave requests exists where embedded weekends or holidays are excluded from chargeable days.",
+        "Returns prior to normal work hours on a duty day or before 0800 on weekends or holidays are correctly not charged as leave days.",
+        "No instances of Friday check-in followed by Monday check-out to avoid charging weekend days.",
+        "Leave approving authorities demonstrate knowledge of the non-workday departure charging rule."
+      ],
+      "verified": true
+    },
+    "0110": {
+      "title": "CONVALESCENT LEAVE FOLLOWING CHILDBIRTH OR PERINATAL LOSS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.a",
+            "text": "A Service member's unit commander or the director of a military medical treatment facility (MMTF) may grant convalescent leave to a Service member, during active service, who is diagnosed with a medical condition and is determined not yet fit for duty as a result of that condition. The Service member's medical or behavioral health care provider determines such member's fitness for duty and may recommend convalescent leave to provide for the Service member's recovery."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.a(1)(b)",
+            "text": "Convalescent leave may be authorized as part of the treatment of pregnant Service members experiencing complications or illnesses to ensure maternal-fetal health and for the recovery of a Service member from giving birth if the health care provider recommends such leave, in writing, to address a diagnosed medical condition (e.g., recovery from the physical and psychological effects of childbirth) and the unit commander approves the leave. 1. A health care provider's recommendation for convalescent leave must be based upon the Service member's individual health circumstances and medical diagnosis. 3. The period of convalescent leave immediately following childbirth will be taken in one increment. Convalescent leave will begin on the first full day after the birth of the child or the date of release of the Service member from the hospital or similar facility where the birth took place, whichever is later."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.c(13)",
+            "text": "Leave Following a Stillbirth or Miscarriage. If a Service member experiences a stillbirth or miscarriage, the health care provider may recommend convalescent leave in accordance with medical practice standards as described in Paragraph 3.11.a. In such cases, neither the Service member nor their spouse (if a Service member) is eligible for ADPL. However, either may be authorized emergency leave as described in Paragraph 3.10.c."
+          },
+          {
+            "citation": "MARADMIN 129/23, Par 3",
+            "text": "The period of convalescent leave, under the new policy, is intended to allow the Marine who gave birth, and is not yet fit for duty, time to recover from a medical condition related to the birth event. It is separate and distinct from parental leave. Convalescent leave is flexible in that it allows a Marine to receive the proper number of days/weeks needed to properly recover from a birth event, as recommended by their health care provider based on their individual medical circumstances. Parental leave is not a substitute for convalescent leave for a birth parent. The approval authority for convalescent leave remains with the commander in accordance with reference (c); however, commanders should not deny convalescent leave for a birth parent Marine based solely on their eligibility for parental leave."
+          },
+          {
+            "citation": "MARADMIN 051/23, Par 7a(1)(b)",
+            "text": "Commanders may grant convalescent leave only to the birth parent for recovery from a birth event, if such leave is specifically recommended in writing, by the health care provider of the birth parent. Commanders are authorized to approve convalescent leave in excess of 30 days in this instance without prior coordination with the CMC (MMEA/MMOA, or RA, as applicable)."
+          }
+        ],
+        "summary": "The key procedural requirements are: convalescent leave for a birth parent requires a written health care provider recommendation and commander approval. it is separate and distinct from ADPL. commanders may not deny it solely because the Marine is eligible for parental leave. and for stillbirth or miscarriage, convalescent leave may be recommended but ADPL is not authorized."
+      },
+      "howToInspect": [
+        {
+          "step": "Request the Command's Written Procedures for Convalescent Leave Following Childbirth or Perinatal Loss",
+          "actions": [],
+          "callout": "No written procedures exist",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Procedures Correctly Distinguish Convalescent Leave from ADPL",
+          "actions": [
+            "Procedures must reflect that convalescent leave and ADPL are separate entitlements",
+            "Procedures must reflect that ADPL begins after, not during, convalescent leave",
+            "MARADMIN 129/23 is explicit: parental leave is not a substitute for convalescent leave"
+          ]
+        },
+        {
+          "step": "Verify the Written Health Care Provider Recommendation Requirement",
+          "actions": [
+            "Convalescent leave for birth parents requires a written recommendation from the health care provider",
+            "Confirm the command requires and retains documentation of the written recommendation"
+          ],
+          "callout": "Convalescent leave granted without a written health care provider recommendation",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Commander Approval Procedures",
+          "actions": [
+            "Commander is the approval authority for convalescent leave",
+            "Confirm commanders are not denying convalescent leave solely because the Marine is eligible for ADPL",
+            "Commanders are authorized to approve birth parent convalescent leave in excess of 30 days without prior CMC coordination"
+          ]
+        },
+        {
+          "step": "Verify Correct Start Date for Convalescent Leave",
+          "actions": [
+            "Begins on the first full day after the birth or the date of release from the hospital, whichever is later",
+            "Convalescent leave taken in one continuous increment - not split"
+          ]
+        },
+        {
+          "step": "Verify Procedures Address Perinatal Loss (Stillbirth or Miscarriage)",
+          "actions": [
+            "Convalescent leave may be recommended by a health care provider after stillbirth or miscarriage",
+            "Neither the Marine nor their spouse (if also a Marine) is eligible for ADPL in these cases",
+            "Either may be authorized emergency leave"
+          ]
+        },
+        {
+          "step": "If Any Birth Parent Marines or Cases of Perinatal Loss Occurred During the Inspection Period",
+          "actions": [
+            "Confirm convalescent leave was properly separated from ADPL",
+            "Confirm written health care provider recommendation is on file",
+            "Confirm correct start date was applied"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No written procedures exist for convalescent leave following childbirth",
+            "Command is treating ADPL as a substitute for convalescent leave for birth parents",
+            "Convalescent leave and ADPL running simultaneously or overlapping",
+            "No written health care provider recommendation on file for approved convalescent leave",
+            "Commanders denying convalescent leave solely because the Marine was eligible for parental leave",
+            "Command unaware that ADPL is not authorized following stillbirth or miscarriage"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your written procedures for convalescent leave following childbirth?",
+        "Walk me through the difference between convalescent leave and Active-Duty Parental Leave for a birth parent Marine?",
+        "What documentation is required before a commander approves convalescent leave for a birth parent?",
+        "When does convalescent leave begin following childbirth?",
+        "What leave types are available to a Marine who experiences a stillbirth or miscarriage?",
+        "Can a commander deny convalescent leave for a birth parent Marine because she is eligible for parental leave?"
+      ],
+      "verification": [
+        "Command has written procedures for convalescent leave following childbirth and perinatal loss.",
+        "Procedures correctly reflect that convalescent leave and ADPL are separate and distinct entitlements.",
+        "Procedures require a written health care provider recommendation before convalescent leave is approved.",
+        "Procedures correctly establish the start date: first full day after birth or date of hospital release, whichever is later.",
+        "Procedures address perinatal loss (stillbirth or miscarriage) - convalescent leave available, ADPL not authorized.",
+        "For any applicable cases during the inspection period, written health care provider recommendations are on file.",
+        "No instances of convalescent leave and ADPL running simultaneously for birth parent Marines.",
+        "No instances of convalescent leave denied solely because the Marine was eligible for ADPL."
+      ],
+      "verified": true
+    },
+    "0111": {
+      "title": "BEREAVEMENT LEAVE PROCEDURES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.j(1)",
+            "text": "In accordance with Section 701(l) of Title 10, U.S.C., a Service member whose spouse or child dies will be allowed up to 14 days of leave to be used in connection with such death."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.j(4)",
+            "text": "Eligibility. (a) A Service member whose spouse or child dies and who has fewer than 30 days of accrued leave on the date of such death is eligible for bereavement leave. (b) A Service member whose spouse or child dies and who has 30 or more days of accrued leave on the date of such death is eligible for bereavement leave once their accrued leave balance is fewer than 30 days."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.j(5)",
+            "text": "Allocation of Bereavement Leave. A Service member may be authorized up to 14 consecutive days of bereavement leave, based on their request, to be used in connection with the death of a spouse or child."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.j(6)",
+            "text": "Period of Bereavement. The period of bereavement begins on the date of death of a Service member's spouse or child and ends no later than 14 consecutive days after the deceased person's funeral, burial, or memorial service, whichever occurs last."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.j(7)(b)",
+            "text": "Eligible Service members may be authorized up to 14 days of bereavement leave, to be taken in one increment of consecutive calendar days, during the period of bereavement. A Service member who initially requests and is authorized less than 14 consecutive days of bereavement leave may be authorized to extend the period of bereavement leave up to 14 consecutive days, so long as all the bereavement leave is taken in one increment."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.j(7)(c)",
+            "text": "When multiple types of leave are authorized, bereavement leave does not need to be taken before using other types of leave, but, unlike other types of leave, bereavement leave must be used during the period of bereavement."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.j(8)(c)",
+            "text": "A Service member is not authorized bereavement leave in connection with a stillbirth or miscarriage, but may be authorized other forms of leave, as appropriate."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.j(8)(d)",
+            "text": "A Service member whose misconduct resulted in the death of their spouse or child is not authorized bereavement leave."
+          },
+          {
+            "citation": "DoDI 1327.06, Sect 3.11.j(9)",
+            "text": "Unit commanders may consider a Service member's self-certification of the death of their spouse or child to approve a request for bereavement leave. Unit commanders will require the Service member to provide administratively acceptable documentation within 30 calendar days after returning to duty. If the Service member fails to provide the required documentation, the unit commander will direct that their accrued leave account be reduced by the number of days of bereavement leave taken."
+          },
+          {
+            "citation": "MARADMIN 220/23, Par 5b",
+            "text": "If a Marine has 30 or more days of accrued annual leave, they may be authorized chargeable leave (e.g., emergency leave and annual leave) until such point that their leave balance is below 30 days. Then the Marine may be approved for bereavement leave."
+          }
+        ],
+        "summary": "MARADMIN 220/23, Par 8 establishes that bereavement leave is retroactive to 25 June 2022, and Marines who used chargeable leave between that date and the MARADMIN's publication who would have been eligible may request restoration of those days. The command must have established procedures addressing: eligibility verification (leave balance below 30 days), the period of bereavement, the 14-day consecutive cap, self-certification and 30-day documentation requirement, consequences of failing to provide documentation, and applicable limitations."
+      },
+      "howToInspect": [
+        {
+          "step": "Request the Command's Written Procedures for Bereavement Leave",
+          "actions": [],
+          "callout": "No written procedures exist",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Procedures Correctly Reflect the Eligibility Threshold",
+          "actions": [
+            "Marine must have fewer than 30 days of accrued annual leave on the date bereavement leave begins",
+            "If the Marine has 30 or more days, they must first use chargeable leave to bring their balance below 30 days"
+          ],
+          "callout": "Bereavement leave granted without verifying the accrued leave balance",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Procedures Define and Apply the Period of Bereavement Correctly",
+          "actions": [
+            "Period begins on the date of death",
+            "Period ends no later than 14 consecutive days after the funeral, burial, or memorial service, whichever is last"
+          ],
+          "callout": "Bereavement leave taken outside the period of bereavement without a commander exception",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify the 14-Day Consecutive Requirement Is Understood",
+          "actions": [
+            "Bereavement leave is taken in one continuous increment of up to 14 consecutive calendar days",
+            "A Marine who initially takes fewer than 14 days may be authorized an extension up to the 14-day cap, so long as all leave is in one increment"
+          ]
+        },
+        {
+          "step": "Verify the Self-Certification and Documentation Process",
+          "actions": [
+            "Commanders may approve using Marine's self-certification",
+            "Documentation (death certificate, Red Cross message, etc.) must be provided within 30 days of returning to duty",
+            "If documentation is not provided within 30 days: the commander must direct the leave account be reduced by the days of bereavement leave taken",
+            "Confirm command has a tracking process for the 30-day documentation follow-up"
+          ]
+        },
+        {
+          "step": "Verify Limitations Are Correctly Applied",
+          "actions": [
+            "Only authorized for death of a spouse or child as defined",
+            "Not authorized for death of a parent, sibling, or other family member (unless meets child definition)",
+            "Not authorized in connection with a stillbirth or miscarriage",
+            "Not authorized if the Marine's misconduct resulted in the death"
+          ]
+        },
+        {
+          "step": "If Any Bereavement Leave Was Granted During the Inspection Period",
+          "actions": [
+            "Confirm the Marine's leave balance was below 30 days at time of approval",
+            "Confirm the leave was taken within the period of bereavement",
+            "Confirm the 30-day documentation follow-up was completed or action taken"
+          ]
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No written procedures for bereavement leave",
+            "Bereavement leave granted without verifying the Marine had fewer than 30 days of accrued leave",
+            "Command unaware that Marines with 30 or more days of accrued leave must first draw down their balance",
+            "Bereavement leave approved for the death of a parent or other family member not authorized under the policy",
+            "No 30-day documentation tracking process - documentation never collected after approval",
+            "Command unaware that failure to provide documentation requires a leave account deduction",
+            "Command unaware of the retroactive period to 25 June 2022"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your written procedures for bereavement leave?",
+        "If a Marine has 35 days of accrued leave when their spouse dies, are they immediately eligible for bereavement leave?",
+        "Walk me through the period of bereavement - when does it begin and when does it end?",
+        "Can bereavement leave be split into multiple non-consecutive periods?",
+        "What documentation is required after a commander approves bereavement leave, and when must it be provided?",
+        "What happens if a Marine fails to provide the required documentation within 30 days?",
+        "Is bereavement leave authorized for the death of a parent or sibling?",
+        "Show me records for any bereavement leave approved during the inspection period?"
+      ],
+      "verification": [
+        "Command has written procedures for bereavement leave including eligibility, period of bereavement, and documentation requirements.",
+        "Procedures correctly reflect the 30-day accrued leave eligibility threshold.",
+        "Procedures correctly define the period of bereavement: date of death through no later than 14 consecutive days after funeral, burial, or memorial service.",
+        "Procedures correctly reflect the 14-consecutive-day cap taken in one increment.",
+        "Procedures address the self-certification option and the 30-day documentation requirement.",
+        "Procedures reflect the consequence of failing to provide documentation: leave account deduction.",
+        "Procedures correctly identify eligible qualifying events: death of spouse or child only.",
+        "Procedures reflect that bereavement leave is not authorized in connection with a stillbirth or miscarriage.",
+        "For any bereavement leave granted during the inspection period, documentation follow-up is complete or action taken.",
+        "Command is aware of the retroactive period to 25 June 2022 and can address prior eligible requests upon Marine submission."
+      ],
+      "verified": true
+    }
+  }
+}

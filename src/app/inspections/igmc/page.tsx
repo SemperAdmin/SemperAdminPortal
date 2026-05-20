@@ -11,8 +11,16 @@ import { MetaRow } from "@/components/domain/meta-row";
 import { FilterBar, type FilterChip } from "@/components/domain/filter-bar";
 import { EmptyState } from "@/components/domain/empty-state";
 import { Input } from "@/components/ui/input";
+import { IgmcGradingRubric } from "@/components/domain/igmc-grading-rubric";
+import { CoreTaxonomyExplainer } from "@/components/domain/core-taxonomy-explainer";
+import { IgmcNewsStrip } from "@/components/domain/igmc-news-strip";
 import { classifyInspectionStatus, type Inspection } from "@/lib/content/schemas";
 import { cn } from "@/lib/utils";
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const NEWS = require("@/generated/igmc-news.json") as {
+  fy26Schedule: { number: string; title: string; url: string };
+  checklistsLanding: { title: string; url: string };
+};
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const RAW = require("@/generated/inspections.json") as Inspection[];
@@ -103,21 +111,40 @@ export default function IgmcIndex() {
           items={[
             { label: "Programs", value: data.length },
             { label: "Sponsors", value: sponsors.length },
+            { label: "FY26 schedule", value: NEWS.fy26Schedule.number, mono: true },
             { label: "Cadence", value: "6 / 12 mo", mono: false },
           ]}
         />
       </PageHeader>
 
       <Callout variant="info" title="Governing authority">
-        These programs are issued under{' '}
-        <Link
-          href="/citations/mco-5040-6k"
-          className="font-semibold underline-offset-2 hover:underline"
-        >
-          MCO 5040.6K
-        </Link>
-        . Run each FAC against the grading rubric in Chapter 4 of the Order.
+        <p>
+          These programs are issued under{' '}
+          <Link
+            href="/citations/mco-5040-6k"
+            className="font-semibold underline-offset-2 hover:underline"
+          >
+            MCO 5040.6K
+          </Link>
+          . Run each FAC against the grading rubric in Chapter 4 of the Order.
+        </p>
+        <p className="mt-2 text-[12px]">
+          Source list at{' '}
+          <a
+            href={NEWS.checklistsLanding.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold underline-offset-2 hover:underline"
+          >
+            {NEWS.checklistsLanding.title}
+          </a>
+          .
+        </p>
       </Callout>
+
+      <IgmcGradingRubric />
+
+      <CoreTaxonomyExplainer inspections={data} />
 
       <div className="mb-5 mt-6 flex flex-col gap-3">
         <label className="relative block">
@@ -225,6 +252,8 @@ export default function IgmcIndex() {
           })}
         </div>
       )}
+
+      <IgmcNewsStrip />
     </div>
   );
 }

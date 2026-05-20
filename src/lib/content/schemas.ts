@@ -143,6 +143,58 @@ export const INSPECTION_AUDIENCES = [
 ] as const;
 export type InspectionAudience = (typeof INSPECTION_AUDIENCES)[number];
 
+/**
+ * Inspector guide per-item enrichment. Sidecar JSON per FA at
+ * content/inspections/igmc-guides/<faNumber>.json. Sync joins by item code
+ * into src/generated/inspector-guides.json. Schema defaults keep partial
+ * guides legal so authors can ship sections as they verify.
+ */
+export const inspectorGuideQuoteSchema = z.object({
+  citation: z.string().min(1),
+  text: z.string().min(1),
+});
+
+export const INSPECTOR_GUIDE_SEVERITIES = [
+  "compliant",
+  "discrepancy",
+  "finding",
+] as const;
+export const inspectorGuideSeveritySchema = z.enum(INSPECTOR_GUIDE_SEVERITIES);
+
+export const inspectorGuideStepSchema = z.object({
+  step: z.string().min(1),
+  actions: z.array(z.string()).default([]),
+  callout: z.string().optional(),
+  severity: inspectorGuideSeveritySchema.optional(),
+});
+
+export const inspectorGuideItemSchema = z.object({
+  title: z.string().optional(),
+  regulatory: z
+    .object({
+      quotes: z.array(inspectorGuideQuoteSchema).default([]),
+      summary: z.string().default(""),
+    })
+    .default({ quotes: [], summary: "" }),
+  howToInspect: z.array(inspectorGuideStepSchema).default([]),
+  questionsToAsk: z.array(z.string()).default([]),
+  verification: z.array(z.string()).default([]),
+  verified: z.boolean().default(false),
+});
+
+export const inspectorGuideSchema = z.object({
+  faNumber: z.string().min(1),
+  sourceDoc: z.string().optional(),
+  lastVerified: z.string(),
+  verifiedAtSource: z.boolean().default(false),
+  items: z.record(z.string(), inspectorGuideItemSchema),
+});
+
+export type InspectorGuideQuote = z.infer<typeof inspectorGuideQuoteSchema>;
+export type InspectorGuideStep = z.infer<typeof inspectorGuideStepSchema>;
+export type InspectorGuideItem = z.infer<typeof inspectorGuideItemSchema>;
+export type InspectorGuide = z.infer<typeof inspectorGuideSchema>;
+
 const inspectionItemSchema = z.object({
   code: z.string().min(1),
   question: z.string().min(2),

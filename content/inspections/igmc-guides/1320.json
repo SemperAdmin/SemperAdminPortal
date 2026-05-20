@@ -1,0 +1,487 @@
+{
+  "faNumber": "1320",
+  "sourceDoc": "MARINE CORPS SPONSORSHIP PROGRAM (1320) - INSPECTOR GUIDE - REBUILT.docx",
+  "lastVerified": "2026-05-20",
+  "verifiedAtSource": true,
+  "items": {
+    "0101": {
+      "title": "SPONSORSHIP TURNOVER BINDER MAINTAINED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1320.11H, Par 4b(7)(m)",
+            "text": "Maintain a turnover binder. Both a hard copy and an electronic copy posted on the unit SharePoint site or unit share drive shall be maintained. The binder shall include: 1. Copy of this Order. 2. Sponsorship metrics form. 3. Master copies of NAVMC 11799 Sponsor Request Form and NAVMC 11791 Sponsorship Program Questionnaires. 4. Copy of the Functional Area Checklist. 5. Links to MarineNet Sponsor and Sponsorship Coordinator Training and contact information for the in-person IR&R workshop training for those on an installation. 6. Contact information for the installation IR&R Manager, or for remotely stationed Marines, contact information for the HQMC Program Manager."
+          }
+        ],
+        "summary": "Commands must maintain both a hard copy and an electronic copy of the Sponsorship turnover binder. The binder must include the MCO, metrics form, master forms (NAVMC 11799 and 11791), the Functional Area Checklist, training links, and IR&R Manager or HQMC contact information."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Hard Copy Binder",
+          "actions": [
+            "Ask the Sponsorship Coordinator (SC) to produce the hard copy turnover binder.",
+            "Reject any command unable to produce the hard copy."
+          ],
+          "callout": "No hard copy turnover binder maintained",
+          "severity": "finding"
+        },
+        {
+          "step": "Request The Electronic Copy",
+          "actions": [
+            "Ask the SC to navigate to the unit SharePoint site or shared drive location.",
+            "Confirm the electronic copy is current and matches the hard copy."
+          ],
+          "callout": "No electronic copy of turnover binder maintained",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Required Contents",
+          "actions": [
+            "Confirm Copy of MCO 1320.11H is present.",
+            "Confirm Sponsorship metrics form is present.",
+            "Confirm master copies of NAVMC 11799 and NAVMC 11791 are present.",
+            "Confirm Functional Area Checklist is present.",
+            "Confirm links to MarineNet Sponsor and SC Training are documented.",
+            "Confirm IR&R workshop contact information is present (for units on an installation).",
+            "Confirm IR&R Manager or HQMC Program Manager contact information is present."
+          ],
+          "callout": "Required contents missing from turnover binder",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Currency",
+          "actions": [
+            "Confirm the MCO copy is the current 1320.11H version.",
+            "Confirm contact information is current and not stale."
+          ],
+          "callout": "Binder content outdated relative to current command",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Hard copy binder missing or incomplete.",
+            "Electronic copy not posted on SharePoint or shared drive.",
+            "MCO copy is outdated.",
+            "Master forms (NAVMC 11799 or 11791) missing.",
+            "Functional Area Checklist missing.",
+            "Training links or workshop contact information missing.",
+            "IR&R Manager or HQMC contact information missing or stale."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your hard copy Sponsorship turnover binder?",
+        "Show me the electronic copy on SharePoint or your shared drive?",
+        "Walk me through each required item in the binder?",
+        "When was the binder last updated?"
+      ],
+      "verification": [
+        "Hard copy turnover binder on hand.",
+        "Electronic copy posted on SharePoint or shared drive.",
+        "Current MCO 1320.11H included.",
+        "Sponsorship metrics form included.",
+        "Master copies of NAVMC 11799 and NAVMC 11791 included.",
+        "Functional Area Checklist included.",
+        "MarineNet training links documented.",
+        "IR&R Manager or HQMC Program Manager contact information current."
+      ],
+      "verified": true
+    },
+    "0102": {
+      "title": "SC AND SPONSOR TRAINING COMPLETED PER TIMELINES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1320.11H, Par 4b(7)(a)",
+            "text": "Complete Sponsorship Coordinator Training with the installation and supporting IR&R Manager prior to executing the assigned responsibilities and no later than 60 days after appointment. Sponsorship Coordinator Training is available in workshops provided by the IR&R Program, and on MarineNet under the title USMC Sponsorship Coordinator Training, with a training code provided by the IR&R Manager."
+          },
+          {
+            "citation": "MCO 1320.11H, Par 4b(7)(d)",
+            "text": "Ensure Sponsors have completed Sponsorship Training and received a training completion certificate prior to performing sponsorship duties. Sponsorship Training is available in workshops provided by the IR&R Program, and on MarineNet under the title USMC Sponsorship Training."
+          }
+        ],
+        "summary": "Sponsorship Coordinators must complete SC Training no later than 60 days after appointment. Sponsors must complete Sponsorship Training and receive a completion certificate before performing sponsorship duties."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify The Current Sponsorship Coordinator",
+          "actions": [
+            "Request the SC appointment letter.",
+            "Identify the appointment date."
+          ]
+        },
+        {
+          "step": "Verify SC Training Completion Within 60 Days Of Appointment",
+          "actions": [
+            "Request the SC's USMC Sponsorship Coordinator Training certificate.",
+            "Calculate days between appointment date and training completion date.",
+            "Reject any SC who exceeded 60 days without training.",
+            "Reject any SC executing responsibilities without training completed."
+          ],
+          "callout": "SC training not completed within 60 days of appointment",
+          "severity": "finding"
+        },
+        {
+          "step": "Identify All Sponsors Assigned In Past 12 Months",
+          "actions": [
+            "Pull the Sponsor assignment roster.",
+            "List each Sponsor by name."
+          ]
+        },
+        {
+          "step": "Verify Each Sponsor Trained Before Duties",
+          "actions": [
+            "For each Sponsor, request the USMC Sponsorship Training certificate.",
+            "Confirm certificate date predates the assignment date.",
+            "Reject any Sponsor who performed duties without prior training certification."
+          ],
+          "callout": "Sponsor assumed sponsor duties without completing required training",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Training Documented In MCTIMS",
+          "actions": [
+            "Confirm Sponsor and SC training is documented in MCTIMS under training event code US.",
+            "Spot-check 2 to 3 Sponsors against MCTIMS records."
+          ],
+          "callout": "Training completion not documented in MCTIMS",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "SC executing duties without completed training.",
+            "SC training completed more than 60 days after appointment.",
+            "Sponsor performing duties without completed training certificate.",
+            "Training certificates not on file.",
+            "Training not documented in MCTIMS.",
+            "Certificate dates do not match MCTIMS entries."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who is your current Sponsorship Coordinator?",
+        "Show me the SC appointment letter and training certificate?",
+        "Show me your current Sponsor roster?",
+        "Show me the training certificate for each Sponsor?",
+        "How do you document Sponsor training in MCTIMS?"
+      ],
+      "verification": [
+        "Current SC appointment letter on file.",
+        "SC training certificate on file dated within 60 days of appointment.",
+        "SC training completed prior to executing duties.",
+        "All current Sponsors have a Sponsorship Training certificate on file.",
+        "Each Sponsor's certificate predates their assignment date.",
+        "Training documented in MCTIMS under event code US for all Sponsors and SC."
+      ],
+      "verified": true
+    },
+    "0103": {
+      "title": "SPONSOR ASSIGNED FOR ALL PCS PERSONNEL VIA NAVMC 11799",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1320.11H, Par 4a(2)(e)",
+            "text": "Sponsorship is mandatory for all personnel in the grades of E-1 through E-9, WO-1 through CWO-5, and O-1 through O-6 executing Continental United States (CONUS) or Outside the Continental United States (OCONUS) orders."
+          },
+          {
+            "citation": "MCO 1320.11H, Par 4b(7)(g)",
+            "text": "Assist the transferring Marine in requesting a Sponsor from the gaining command using NAVMC 11799. Sponsorship requests are also available during PCS workshops provided by the IR&R Program."
+          }
+        ],
+        "summary": "Sponsorship is mandatory for all personnel in the grades E-1 through O-6 executing CONUS or OCONUS PCS orders. NAVMC 11799 is the form used to request a Sponsor from the gaining command."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify All PCS Personnel In Past 12 Months",
+          "actions": [
+            "Pull the unit PCS roster covering inbound and outbound Marines in the past 12 months.",
+            "Filter to grades E-1 through O-6 (mandatory sponsorship pool)."
+          ]
+        },
+        {
+          "step": "Verify NAVMC 11799 Used For Each",
+          "actions": [
+            "For each PCS Marine, request the NAVMC 11799 Sponsor Request Form.",
+            "Confirm form is on file or in the records system.",
+            "Flag any PCS Marine without a corresponding NAVMC 11799."
+          ],
+          "callout": "NAVMC 11799 not used to document sponsor assignment",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Sponsor Assignment Completed",
+          "actions": [
+            "For each NAVMC 11799, identify the assigned Sponsor.",
+            "Confirm a Sponsorship Assignment Letter was issued.",
+            "Reject any case where the request was received but no Sponsor was assigned."
+          ],
+          "callout": "PCS personnel arrived without assigned sponsor",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Timeliness Of Assignment",
+          "actions": [
+            "Sponsor should be assigned no later than 60 days before transfer per par 4b(6)(g).",
+            "For OCONUS units, Sponsor must be assigned as soon as basic web orders are received."
+          ],
+          "callout": "Sponsor assignment late relative to required timeline",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "PCS Marine without a NAVMC 11799 on file.",
+            "NAVMC 11799 received but no Sponsor assigned.",
+            "Sponsorship Assignment Letter not issued.",
+            "Sponsor assigned later than 60 days before transfer (CONUS).",
+            "OCONUS Sponsor not assigned upon receipt of basic orders."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your PCS roster for the past 12 months?",
+        "For each PCS Marine, show me the NAVMC 11799 and Sponsorship Assignment Letter?",
+        "How do you ensure the 60-day standard is met?",
+        "How do you handle OCONUS assignments?"
+      ],
+      "verification": [
+        "PCS roster pulled for the past 12 months.",
+        "NAVMC 11799 on file for every PCS Marine in grades E-1 through O-6.",
+        "Sponsorship Assignment Letter issued for each NAVMC 11799 received.",
+        "Sponsors assigned no later than 60 days before transfer for CONUS moves.",
+        "OCONUS Sponsors assigned upon receipt of basic web orders."
+      ],
+      "verified": true
+    },
+    "0104": {
+      "title": "SC CONTACT INFORMATION PROVIDED TO IR&R MANAGER",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1320.11H, Par 4b(7)(b)",
+            "text": "Provide updated contact information, including Reporting Unit Code, email address, and phone number to the installation and supporting IR&R Manager to ensure accurate and current information is on all PCS orders for Marines transferring to the gaining Command."
+          },
+          {
+            "citation": "MCO 1320.11H, Par 4b(7)(l)",
+            "text": "Inform the IR&R Manager if they PCS or move on from their role as SC to ensure the IR&R Manager has the correct SC contact information on file."
+          }
+        ],
+        "summary": "The SC must provide the IR&R Manager with current contact information including Reporting Unit Code, email, and phone. When the SC departs or transfers, the IR&R Manager must be notified so contact information is updated."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Current SC Contact Submission Record",
+          "actions": [
+            "Ask the SC to show evidence that current contact information has been provided to the IR&R Manager.",
+            "Acceptable evidence: email correspondence, IR&R confirmation, copy of the submitted information."
+          ],
+          "callout": "No record of SC contact submission to IR&R Manager",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Required Data Elements",
+          "actions": [
+            "Confirm Reporting Unit Code (RUC) is included.",
+            "Confirm email address is included.",
+            "Confirm phone number is included."
+          ],
+          "callout": "Required data elements missing from SC contact submission",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Update Procedures For SC Changes",
+          "actions": [
+            "If the SC changed in the past 12 months, confirm IR&R Manager was notified.",
+            "Request proof of notification."
+          ],
+          "callout": "No update procedure for SC changes",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Cross-Check IR&R Records If Possible",
+          "actions": [
+            "Contact the installation IR&R Manager or supporting IR&R Manager.",
+            "Confirm the IR&R holds current SC contact information matching what the unit has on file."
+          ],
+          "callout": "SC contact in IR&R records is outdated",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "SC contact information never provided to IR&R Manager.",
+            "Contact information incomplete (missing RUC, email, or phone).",
+            "New SC appointed but IR&R Manager not notified.",
+            "IR&R Manager holds outdated SC contact information."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me proof you have provided your contact information to the IR&R Manager?",
+        "What three data elements did you provide?",
+        "If the SC has changed in the past year, show me the update notification?",
+        "Have you confirmed with the IR&R Manager that they have your current information?"
+      ],
+      "verification": [
+        "Current SC contact submission on file (email or written record).",
+        "Reporting Unit Code provided.",
+        "Email address provided.",
+        "Phone number provided.",
+        "IR&R Manager notified of any SC change in the past 12 months.",
+        "IR&R Manager confirms current SC contact information."
+      ],
+      "verified": true
+    },
+    "0105": {
+      "title": "SPONSOR ASSIGNMENT TRACKING AND QUARTERLY METRICS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1320.11H, Par 4b(7)(i)",
+            "text": "Establish and maintain Sponsor assignment rosters for tracking purposes and provide program utilization metrics to the installation or supporting IR&R Manager at the end of each quarter to enable assessment of program usage. Program utilization metrics shall be provided by the end of the first month in the following quarter. Program metrics shall include: 1. Inbound Sponsorship metrics: from CONUS or OCONUS, number of Marines assigned, rank, and married or single status. 2. Outbound Sponsorship metrics: CONUS or OCONUS assignment, number of Marines assigned sponsors, rank, and married or single status."
+          }
+        ],
+        "summary": "The SC must maintain Sponsor assignment rosters and quarterly utilization metrics covering inbound and outbound CONUS and OCONUS sponsorships, broken down by number, rank, and marital status. Metrics must be delivered to the IR&R Manager by the end of the first month of the following quarter."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Sponsor Assignment Roster",
+          "actions": [
+            "Ask the SC for the current Sponsor assignment tracking roster.",
+            "Confirm the roster captures inbound and outbound assignments."
+          ],
+          "callout": "No sponsor assignment roster maintained",
+          "severity": "finding"
+        },
+        {
+          "step": "Request The Last Four Quarters Of Utilization Metrics",
+          "actions": [
+            "Ask for the quarterly metrics submissions from the past year.",
+            "Confirm one submission per quarter."
+          ],
+          "callout": "Quarterly utilization metrics missing for one or more of the last four quarters",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Required Metric Elements",
+          "actions": [
+            "For each quarterly submission, confirm inbound metrics include: CONUS/OCONUS origin, number of Marines assigned, rank, and marital status.",
+            "Confirm outbound metrics include: CONUS/OCONUS assignment, number of Marines assigned Sponsors, rank, and marital status."
+          ],
+          "callout": "Required metric elements missing from submitted metrics",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Submission Timeline",
+          "actions": [
+            "Confirm each quarterly metrics submission was delivered to the IR&R Manager by the end of the first month of the following quarter (for example, Q1 metrics due by 30 April).",
+            "Flag any submission delivered late."
+          ],
+          "callout": "Metric submission late relative to required timeline",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "No Sponsor assignment roster maintained.",
+            "Roster does not capture all required data elements.",
+            "Quarterly metrics submission missing for one or more quarters.",
+            "Metrics submission missing required breakdowns (rank, marital status, CONUS/OCONUS).",
+            "Submission delivered late or after the next quarter began."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your current Sponsor assignment tracking roster?",
+        "Show me your quarterly utilization metrics submissions for the past year?",
+        "Walk me through the required elements for each submission?",
+        "How do you ensure submission by the end of the first month of the following quarter?"
+      ],
+      "verification": [
+        "Sponsor assignment tracking roster on hand and current.",
+        "Four quarterly metrics submissions on file for the past year.",
+        "Each submission includes inbound CONUS/OCONUS, count, rank, marital status.",
+        "Each submission includes outbound CONUS/OCONUS, count, rank, marital status.",
+        "Each submission delivered to IR&R Manager by end of first month of following quarter."
+      ],
+      "verified": true
+    },
+    "0106": {
+      "title": "UNIT COMMANDER REVIEW OF NAVMC 11791 QUESTIONNAIRES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1320.11H, Par 4b(6)(j)",
+            "text": "Ensure NAVMC 11791, Sponsorship Program Questionnaire, is provided to the Marine, and maintain the completed document for two years in the command files and directives system. Periodically review questionnaires to determine trends with the execution of Sponsors' duties, and when appropriate, discuss with the SC in order to enhance the unit's Sponsorship Program."
+          }
+        ],
+        "summary": "The Unit Commander must ensure NAVMC 11791 is provided to each inbound Marine, retain completed questionnaires for two years, and periodically review them to identify trends and discuss findings with the SC to improve the program. Inspector Note: Completion of NAVMC 11791 by Marines is optional but encouraged per par 4b(7)(k). The Command obligation to provide the questionnaire and review returned responses is mandatory."
+      },
+      "howToInspect": [
+        {
+          "step": "Verify NAVMC 11791 Provision Procedure",
+          "actions": [
+            "Ask the SC how NAVMC 11791 is provided to newly arrived Marines.",
+            "Request the procedure or instructions used."
+          ],
+          "callout": "No documented procedure for providing NAVMC 11791 to new arrivals",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Request Completed Questionnaires",
+          "actions": [
+            "Ask for the file of completed NAVMC 11791 questionnaires.",
+            "Confirm retention covers the past two years."
+          ],
+          "callout": "No completed NAVMC 11791 questionnaires on file",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Commander Review Documented",
+          "actions": [
+            "Ask for evidence of periodic Commander review (review log, signed cover sheet, meeting minutes, or email discussion with SC).",
+            "Confirm review occurred within the past 12 months."
+          ],
+          "callout": "No documented commander review of questionnaires",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify Trend Analysis And Discussion With SC",
+          "actions": [
+            "Ask how trends were identified.",
+            "Ask what corrective actions or program enhancements resulted from trend analysis.",
+            "Confirm SC was engaged in the discussion."
+          ],
+          "callout": "No documented trend analysis or discussion with SC",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "NAVMC 11791 not provided to inbound Marines.",
+            "Completed questionnaires not retained for two years.",
+            "No documented Commander review.",
+            "Review conducted but no trend analysis or SC engagement.",
+            "No corrective actions or program enhancements result from review."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How is NAVMC 11791 provided to newly arrived Marines?",
+        "Show me your completed questionnaires from the past two years?",
+        "Show me documentation of the Commander's review?",
+        "What trends have you identified and how have they enhanced the program?"
+      ],
+      "verification": [
+        "NAVMC 11791 provision procedure documented.",
+        "Completed questionnaires retained for two years.",
+        "Commander review documented within the past 12 months.",
+        "Trend analysis conducted and discussed with SC.",
+        "Program enhancements or corrective actions tied to trend analysis on record."
+      ],
+      "verified": true
+    }
+  }
+}
