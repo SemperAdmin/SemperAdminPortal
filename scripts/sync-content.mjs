@@ -145,6 +145,18 @@ if (fs.existsSync(IGMC_NEWS_SRC)) {
 // renders this in an accordion. Items in each bucket are matched against the
 // inspection catalog by title at runtime so present-in-catalog items link to
 // detail pages and not-yet-shipped items render as plain text.
+const MCAAT_RES_SRC = path.join(CONTENT, "inspections", "mcaat-resources.json");
+if (fs.existsSync(MCAAT_RES_SRC)) {
+  const data = JSON.parse(fs.readFileSync(MCAAT_RES_SRC, "utf8"));
+  fs.writeFileSync(
+    path.join(OUT, "mcaat-resources.json"),
+    JSON.stringify(data, null, 2)
+  );
+  const sectionCount = data.sections ? Object.keys(data.sections).length : 0;
+  console.log(
+    "[content-sync] mcaat-resources: " + sectionCount + " sections"
+  );
+}
 const IGMC_CORE_SRC = path.join(CONTENT, "inspections", "igmc-core-taxonomy.json");
 if (fs.existsSync(IGMC_CORE_SRC)) {
   const data = JSON.parse(fs.readFileSync(IGMC_CORE_SRC, "utf8"));
