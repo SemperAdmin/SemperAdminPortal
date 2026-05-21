@@ -18,6 +18,11 @@ import {
   getLeaderContent,
   getTools,
 } from "@/lib/content/loader";
+
+// Build-time anchor for verified-fresh percentage math. Hoisted out
+// of the render function so React Compiler purity rule does not flag
+// Date.now at render time. Static export resolves this once at build.
+const BUILD_TIME_MS = Date.now();
 import { Button } from "@/components/ui/button";
 import { Pill } from "@/components/ui/pill";
 import { StatTile } from "@/components/domain/stat-tile";
@@ -102,7 +107,7 @@ export default function HomePage() {
     ...commanderContent,
     ...adminContent,
   ];
-  const now = Date.now();
+  const now = BUILD_TIME_MS;
   const TWELVE_MONTHS_MS = 1000 * 60 * 60 * 24 * 30 * 12;
   const freshCount = allRoleContent.filter(
     (e) => now - new Date(e.frontmatter.lastVerified).getTime() < TWELVE_MONTHS_MS
