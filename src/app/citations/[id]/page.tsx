@@ -12,6 +12,12 @@ import { Callout } from "@/components/domain/callout";
 import { getCitations, findCitationById } from "@/lib/content/loader";
 import reverseIndex from "@/generated/citations-reverse.json";
 
+// Build-time anchor for content-freshness math. Hoisted out of the
+// render function so React Compiler purity rule does not flag Date.now
+// at render time. Static export resolves this once at build, which is
+// the same moment the page HTML is generated.
+const BUILD_TIME_MS = Date.now();
+
 interface ReverseEntry {
   title: string;
   url: string;
@@ -77,7 +83,7 @@ export default async function CitationDetailPage({
 
   const verifiedDate = new Date(cit.lastVerified);
   const monthsOld =
-    (Date.now() - verifiedDate.getTime()) / (1000 * 60 * 60 * 24 * 30);
+    (BUILD_TIME_MS - verifiedDate.getTime()) / (1000 * 60 * 60 * 24 * 30);
   const isStale = monthsOld >= 24;
   const isAging = monthsOld >= 12 && monthsOld < 24;
 

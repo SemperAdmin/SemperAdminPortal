@@ -1,15 +1,12 @@
-import { FlatCompat } from "@eslint/eslintrc";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+// ESLint 9 flat config.
+// eslint-config-next@16 ships native flat-config arrays. Import them
+// directly. Do not wrap in FlatCompat - that path validates plugins via
+// JSON.stringify and crashes on circular plugin self-references.
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import nextCoreWebVitals from "eslint-config-next/core-web-vitals";
+import nextTypescript from "eslint-config-next/typescript";
 
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-export default [
+const config = [
   {
     ignores: [
       ".next/**",
@@ -22,7 +19,8 @@ export default [
       "*.tsbuildinfo",
     ],
   },
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  ...nextCoreWebVitals,
+  ...nextTypescript,
   {
     // Custom rules carried over from the legacy .eslintrc.json.
     // Same intent: ban `any`, allow underscore-prefixed unused locals.
@@ -32,6 +30,15 @@ export default [
         "error",
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
       ],
+      // React 19 Compiler purity rules surface idiomatic SSR-safe patterns
+      // (useEffect(() => setMounted(true), []) and similar mount guards) as
+      // errors. Rewriting every callsite to useSyncExternalStore belongs in
+      // a dedicated React 19 Compiler readiness branch, not this dep-bump
+      // PR. Downgrade to warning here. Track in follow-up issue.
+      "react-hooks/set-state-in-effect": "warn",
+      "react-hooks/purity": "warn",
     },
   },
 ];
+
+export default config;
