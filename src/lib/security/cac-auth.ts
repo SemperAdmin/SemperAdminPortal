@@ -6,12 +6,12 @@
  *
  * Current state: stub only. The application runs as a static site without a
  * backend. Full CAC implementation requires:
- *   1. A server (Node.js, Go, etc.) that can parse TLS client certificates.
+ *   1. A server (Node.js, Go, etc.) capable of parsing TLS client certificates.
  *   2. Integration with DISA ICAM (Identity, Credential and Access Management).
  *   3. SAML 2.0 or OpenID Connect middleware wired to the DoD PKI root CAs.
  *
  * Implementation path:
- *   1. Deploy to a server that supports TLS mutual auth (not GitHub Pages).
+ *   1. Deploy to a server supporting TLS mutual auth (not GitHub Pages).
  *   2. Configure Nginx/Apache to request client cert, forward via header:
  *        ssl_client_cert /etc/ssl/dod-root-cas.pem;
  *        proxy_set_header X-Client-Cert $ssl_client_escaped_cert;
@@ -45,7 +45,7 @@ export interface AuthResult {
 }
 
 /**
- * RBAC mapping: DoD affiliation + rank/grade patterns to portal roles.
+ * RBAC mapping: DoD affiliation plus rank/grade patterns to portal roles.
  * Extend with unit-level permissions once backend is in place.
  */
 export const AFFILIATION_ROLE_MAP: Record<string, string[]> = {
@@ -74,4 +74,26 @@ export function parseCACCert(_certHeader: string): AuthResult {
 export function isCertValid(identity: CACIdentity): boolean {
   const buffer = 24 * 60 * 60 * 1000;
   return Date.now() < identity.certExpiry - buffer;
+}
+
+/**
+ * Build-time gate. This module is a stub. Importing it from a UI surface
+ * implying enforced auth is misleading, so the load-time warning here fires
+ * loudly for reviewers and developers before the build ships.
+ *
+ * The check runs once on module load. Remove it only after parseCACCert
+ * carries a real X.509 implementation and the backend TLS mutual-auth path
+ * is wired.
+ */
+if (typeof window !== "undefined") {
+  if (process.env.NODE_ENV === "production") {
+    console.warn(
+      "[cac-auth] stub loaded in production. CAC authentication is NOT enforced. " +
+        "See src/lib/security/cac-auth.ts for the implementation path."
+    );
+  } else if (process.env.NODE_ENV === "development") {
+    console.debug(
+      "[cac-auth] stub loaded. parseCACCert returns unauthenticated by design."
+    );
+  }
 }

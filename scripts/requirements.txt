@@ -1,0 +1,17 @@
+# Python dependencies for repo-local helper scripts.
+#
+# All scripts in this directory currently use only the Python standard
+# library (argparse, json, os, re, sqlite3, sys, pathlib, etc.). No
+# third-party imports today.
+#
+# This file exists so Dependabot has a manifest to scan against, and so
+# any future third-party additions land here with explicit pins.
+#
+# To run the scripts:
+#   python -m venv .venv
+#   .venv/Scripts/activate         (PowerShell: .\.venv\Scripts\Activate.ps1)
+#   pip install -r scripts/requirements.txt
+#
+# When adding a new dep, pin to a specific version and re-run:
+#   pip install pip-audit
+#   pip-audit -r scripts/requirements.txt

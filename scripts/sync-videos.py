@@ -1,12 +1,15 @@
 """
-sync-videos.py  --  Vanguard DB → content/videos/ MDX
+sync-videos.py  --  Vanguard DB -> content/videos/ MDX
 
-Reads E:\\Videos\\Video Database\\Video Database\\data\\vanguard.db
-Writes one MDX per asset that has a MarineNet URL.
-Existing files are updated in place. Files not in the DB are left alone.
+Reads a Vanguard SQLite database and writes one MDX per asset that has a
+MarineNet URL. Existing files are updated in place. Files not in the DB are
+left alone.
+
+The DB path is resolved from VANGUARD_DB or the --db argument. No hardcoded
+local default. Run fails fast with a clear message when neither is set.
 
 Usage:
-    python scripts/sync-videos.py
+    VANGUARD_DB=/path/to/vanguard.db python scripts/sync-videos.py
     python scripts/sync-videos.py --dry-run
     python scripts/sync-videos.py --db "C:\\path\\to\\vanguard.db"
 """
@@ -23,10 +26,11 @@ from pathlib import Path
 # Config
 # ---------------------------------------------------------------------------
 
-# Resolve DB path from env var first, then fall back to the developer default.
-# Set VANGUARD_DB=/path/to/vanguard.db in CI/CD or shell profile.
+# Resolve DB path from env var. CLI --db overrides at parse time below.
+# No hardcoded local fallback. Local paths leak developer environment info
+# into a public repo and break reproducibility for other contributors.
 _env_db = os.environ.get("VANGUARD_DB")
-DEFAULT_DB = Path(_env_db) if _env_db else Path(r"E:\Videos\Video Database\Video Database\data\vanguard.db")
+DEFAULT_DB = Path(_env_db) if _env_db else None
 VIDEOS_DIR = Path(__file__).parent.parent / "content" / "videos"
 
 AUDIENCE_TO_ROLES: dict[str | None, list[str]] = {
@@ -105,10 +109,21 @@ def build_mdx(row: dict) -> str:
 # ---------------------------------------------------------------------------
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Sync Vanguard DB → content/videos/")
-    parser.add_argument("--db", default=str(DEFAULT_DB), help="Path to vanguard.db")
+    parser = argparse.ArgumentParser(description="Sync Vanguard DB -> content/videos/")
+    parser.add_argument(
+        "--db",
+        default=str(DEFAULT_DB) if DEFAULT_DB else None,
+        help="Path to vanguard.db. Falls back to VANGUARD_DB env var.",
+    )
     parser.add_argument("--dry-run", action="store_true", help="Print actions without writing")
     args = parser.parse_args()
+
+    if not args.db:
+        print(
+            "ERROR: no DB path supplied. Set VANGUARD_DB env var or pass --db /path/to/vanguard.db.",
+            file=sys.stderr,
+        )
+        sys.exit(2)
 
     db_path = Path(args.db)
     if not db_path.exists():

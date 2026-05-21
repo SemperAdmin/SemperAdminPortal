@@ -22,7 +22,8 @@ yarn-error.log*
 .pnpm-debug.log*
 dev-server.log
 
-# pnpm (project uses npm for CI)
+# pnpm lockfiles are not used. Project standardizes on npm. If you run pnpm
+# install locally by mistake, remove these before committing.
 pnpm-lock.yaml
 pnpm-workspace.yaml
 

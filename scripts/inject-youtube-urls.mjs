@@ -1,9 +1,13 @@
 /**
  * inject-youtube-urls.mjs
  *
- * Reads E:\Videos\Video Database\Video Database\data\youtube_urls.csv,
- * matches each row to a video MDX file by title, injects youtubeUrl into
- * the frontmatter, and reports unmatched rows.
+ * Reads a YouTube URL CSV, matches each row to a video MDX file by title,
+ * injects youtubeUrl into the frontmatter, and reports unmatched rows.
+ *
+ * CSV path is resolved from the YOUTUBE_URLS_CSV environment variable.
+ * Set it in your shell profile or CI secret store.
+ *   PowerShell: $env:YOUTUBE_URLS_CSV = "X:\path\to\youtube_urls.csv"
+ *   bash:       export YOUTUBE_URLS_CSV="/path/to/youtube_urls.csv"
  *
  * Run: node scripts/inject-youtube-urls.mjs
  * Dry run: node scripts/inject-youtube-urls.mjs --dry-run
@@ -12,7 +16,13 @@
 import fs from "fs";
 import path from "path";
 
-const CSV_PATH = "E:\\Videos\\Video Database\\Video Database\\data\\youtube_urls.csv";
+const CSV_PATH = process.env.YOUTUBE_URLS_CSV;
+if (!CSV_PATH) {
+  console.error(
+    "[youtube] YOUTUBE_URLS_CSV env var is required. Refusing to fall back to a hardcoded local path."
+  );
+  process.exit(2);
+}
 const VIDEOS_DIR = path.resolve("content/videos");
 const VIDEOS_JSON = path.resolve("src/generated/videos.json");
 const DRY_RUN = process.argv.includes("--dry-run");

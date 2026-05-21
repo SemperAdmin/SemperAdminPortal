@@ -39,6 +39,27 @@ const SESSION_ID_KEY = "sap.audit.sessionId";
 const EVENTS_KEY = "sap.audit.events";
 const MAX_EVENTS = 500;
 
+/**
+ * Route prefixes whose audit events MUST NOT carry a `detail` payload while
+ * the application runs without a backend. The event itself is still recorded
+ * (action, resource path, timestamp, sessionId) so the rolling window keeps
+ * its forensic value, but the detail blob is stripped to limit what a
+ * browser-extension or in-page XSS lift exfiltrates from sessionStorage.
+ *
+ * Remove a prefix here only after a backend audit sink lands and the
+ * SENSITIVE classification for the route has been re-evaluated.
+ */
+const SENSITIVE_PREFIXES: readonly string[] = ["/admin", "/commander"];
+
+function sanitizeDetail(
+  resource: string,
+  detail?: AuditEvent["detail"]
+): AuditEvent["detail"] | undefined {
+  if (!detail) return undefined;
+  if (SENSITIVE_PREFIXES.some((p) => resource.startsWith(p))) return undefined;
+  return detail;
+}
+
 function getOrCreateSessionId(): string {
   let id = sessionStorage.getItem(SESSION_ID_KEY);
   if (!id) {
@@ -82,7 +103,7 @@ export function logAuditEvent(
     timestamp: new Date().toISOString(),
     action,
     resource,
-    detail,
+    detail: sanitizeDetail(resource, detail),
     userId,
     sessionId: getOrCreateSessionId(),
   };
@@ -111,8 +132,29 @@ function flushToBackend(event: AuditEvent): void {
   }
 }
 
-/** Returns a copy of all audit events in the current session. */
-export function getSessionAuditLog(): AuditEvent[] {
+/**
+ * Returns a copy of all audit events in the current session.
+ *
+ * Export surface is gated. In production builds the helper refuses to return
+ * events unless the caller passes the explicit consent token. This blocks
+ * casual page-context exfiltration while leaving the helper usable from a
+ * developer console for debugging.
+ *
+ * In a backend-enabled build, replace the consent check with a real
+ * authorization gate tied to CAC identity (see cac-auth.ts).
+ */
+const EXPORT_CONSENT_TOKEN = "I_ACCEPT_LOCAL_AUDIT_EXPORT" as const;
+export type AuditExportConsent = typeof EXPORT_CONSENT_TOKEN;
+
+export function getSessionAuditLog(consent?: AuditExportConsent): AuditEvent[] {
+  if (process.env.NODE_ENV === "production" && consent !== EXPORT_CONSENT_TOKEN) {
+    if (typeof console !== "undefined") {
+      console.warn(
+        "[audit-log] getSessionAuditLog blocked in production without explicit consent token"
+      );
+    }
+    return [];
+  }
   return readEvents();
 }
 

@@ -1,9 +1,15 @@
 /**
  * sync-thumbnails.mjs
  *
- * Copies thumbnails from E:\Videos\Photos\Thumbnails into public/thumbnails/,
+ * Copies thumbnails from a local source root into public/thumbnails/,
  * matches each video in src/generated/videos.json to its thumbnail,
  * and writes src/generated/thumbnails.json as { [slug]: "/thumbnails/..." }.
+ *
+ * Source root is resolved from the THUMBNAILS_SRC environment variable.
+ * When unset, the script writes an empty thumbnails.json and exits 0 so
+ * CI builds without the local thumbnail drive still succeed.
+ *   PowerShell: $env:THUMBNAILS_SRC = "X:\path\to\Thumbnails"
+ *   bash:       export THUMBNAILS_SRC="/path/to/Thumbnails"
  *
  * Run: node scripts/sync-thumbnails.mjs
  */
@@ -11,7 +17,7 @@
 import fs from "fs";
 import path from "path";
 
-const SRC_ROOT = "E:\\Videos\\Photos\\Thumbnails";
+const SRC_ROOT = process.env.THUMBNAILS_SRC || "";
 const DEST_ROOT = path.resolve("public/thumbnails");
 const VIDEOS_JSON = path.resolve("src/generated/videos.json");
 const OUT_JSON = path.resolve("src/generated/thumbnails.json");
