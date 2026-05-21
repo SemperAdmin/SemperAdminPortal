@@ -35,7 +35,13 @@ jobs:
         uses: actions/configure-pages@v6
 
       - name: Install dependencies
-        run: npm ci
+        # npm ci alone hits npm issue 4828: a package-lock.json generated on
+        # Windows omits Linux-only optional native binaries (lightningcss,
+        # sharp). The follow-up install forces those binaries onto the
+        # ubuntu-latest runner without touching the lockfile.
+        run: |
+          npm ci --include=optional
+          npm install --no-save --include=optional --force lightningcss-linux-x64-gnu @img/sharp-linux-x64
 
       - name: Security audit (production, blocking)
         run: npm audit --audit-level=moderate --omit=dev
