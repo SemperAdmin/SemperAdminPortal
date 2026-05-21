@@ -41,7 +41,7 @@ jobs:
         # ubuntu-latest runner without touching the lockfile.
         run: |
           npm ci --include=optional
-          npm install --no-save --include=optional --force lightningcss-linux-x64-gnu @img/sharp-linux-x64
+          npm install --no-save --include=optional --force lightningcss-linux-x64-gnu @img/sharp-linux-x64 @tailwindcss/oxide-linux-x64-gnu @tailwindcss/oxide-linux-x64-musl
 
       - name: Security audit (production, blocking)
         run: npm audit --audit-level=moderate --omit=dev
