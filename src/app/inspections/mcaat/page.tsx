@@ -7,6 +7,7 @@ import { MetaRow } from "@/components/domain/meta-row";
 import { Pill } from "@/components/ui/pill";
 import { StatusPill } from "@/components/ui/status-pill";
 import { EmptyState } from "@/components/domain/empty-state";
+import { McaatHubResources } from "@/components/domain/mcaat-hub-resources";
 
 export const metadata: Metadata = {
   title: "MCAAT",
@@ -77,6 +78,8 @@ export default function McaatHub() {
           ]}
         />
       </PageHeader>
+
+      <McaatHubResources />
 
       {sections.length === 0 ? (
         <EmptyState

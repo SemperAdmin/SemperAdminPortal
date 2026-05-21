@@ -1,0 +1,45 @@
+{
+  "lastUpdated": "2026-05-20",
+  "mra": {
+    "title": "MCAAT M&RA site",
+    "url": "https://www.manpower.marines.mil/Divisions/Plans-and-Policies/Manpower-Strategy/MCAAT/"
+  },
+  "policy": {
+    "number": "MCO 7220.13H",
+    "title": "Marine Corps Administrative Analysis Team",
+    "url": "https://www.marines.mil/portals/1/MCO%207220.13H.PDF"
+  },
+  "email": "SMB_ASK_MCAAT@USMC.MIL",
+  "sharepoint": {
+    "title": "FMF MCAAT SharePoint",
+    "url": "https://usmc.sharepoint-mil.us/sites/DCMRA_MCAAT/SitePages/Marine-Corps-Administrative-Analyst-Team.aspx?promotedState=0",
+    "requiresCac": true
+  },
+  "training": {
+    "title": "MCAAT Admin Training Classes",
+    "url": "https://usmc.sharepoint-mil.us/sites/DCMRA_MCAAT/SHARE%20DRIVE/Forms/AllItems.aspx?id=%2Fsites%2FDCMRA%5FMCAAT%2FSHARE%20DRIVE%2F10%2E%20FMF%20ShareDrive%2F2%2E%20Admin%20Training%20Classes&newTargetListUrl=%2Fsites%2FDCMRA%5FMCAAT%2FSHARE%20DRIVE&viewpath=%2Fsites%2FDCMRA%5FMCAAT%2FSHARE%20DRIVE%2FForms%2FAllItems%2Easpx",
+    "requiresCac": true
+  },
+  "sections": {
+    "admin": {
+      "checklist": {
+        "title": "MCAAT Admin Checklist",
+        "url": "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=885"
+      },
+      "schedule": {
+        "title": "MCAAT Admin Schedule",
+        "url": "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=890"
+      }
+    },
+    "finance": {
+      "checklist": {
+        "title": "MCAAT Finance Checklist (MFAC)",
+        "url": "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=904"
+      },
+      "schedule": {
+        "title": "MCAAT Finance Schedule",
+        "url": "https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=966"
+      }
+    }
+  }
+}

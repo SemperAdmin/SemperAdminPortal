@@ -8,6 +8,7 @@ import { MetaRow } from "@/components/domain/meta-row";
 import { Pill } from "@/components/ui/pill";
 import { StatusPill } from "@/components/ui/status-pill";
 import { cn } from "@/lib/utils";
+import { McaatSectionResources } from "@/components/domain/mcaat-section-resources";
 
 const SUBSECTION_TO_AUDIENCE: Record<string, string> = {
   "01.0": "IPAC",
@@ -123,6 +124,8 @@ export default async function McaatSection({
           ]}
         />
       </PageHeader>
+
+      <McaatSectionResources sectionKey={section} />
 
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {sorted.map((p) => {
