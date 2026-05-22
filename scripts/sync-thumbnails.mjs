@@ -123,22 +123,60 @@ function copyFile(srcPath, destFolder, fileName) {
 
 // ── Main ───────────────────────────────────────────────────────────────────
 
-// In CI the local thumbnail drive won't exist - write empty map and exit.
-// Use the write-exclusive flag (wx) so we atomically write the empty map
-// only when the file is absent. Catching EEXIST avoids the TOCTOU race
-// CodeQL flags between existsSync() and writeFileSync().
-if (!fs.existsSync(SRC_ROOT)) {
-  fs.mkdirSync(path.dirname(OUT_JSON), { recursive: true });
-  try {
-    fs.writeFileSync(OUT_JSON, "{}\n", { flag: "wx" });
-    console.log("[thumbnails] source not found - wrote empty thumbnails.json");
-  } catch (err) {
-    if (err.code === "EEXIST") {
-      console.log("[thumbnails] source not found - keeping existing thumbnails.json");
-    } else {
-      throw err;
-    }
+// Build the slug-to-path index of every image already in public/thumbnails.
+// Shared between the absent-source CI branch below and the main copy branch.
+function indexPublicThumbnails(publicRoot) {
+  const index = {};
+  if (!fs.existsSync(publicRoot)) return index;
+  const entries = fs.readdirSync(publicRoot, { withFileTypes: true });
+  for (const entry of entries) {
+    if (!entry.isDirectory()) continue;
+    const folderPath = path.join(publicRoot, entry.name);
+    index[entry.name] = fs
+      .readdirSync(folderPath, { withFileTypes: true })
+      .filter((f) => f.isFile() && IMAGE_EXTS.has(path.extname(f.name)))
+      .map((f) => ({
+        base: path.basename(f.name, path.extname(f.name)),
+        file: f.name,
+      }));
   }
+  return index;
+}
+
+// When THUMBNAILS_SRC is missing (CI, fresh clones, contributors without the
+// local drive), do not give up. The 335 thumbnail files already live under
+// public/thumbnails and are tracked in git. Rebuild the slug-to-path map from
+// those committed files so the live site renders posters without depending
+// on the original source drive.
+if (!fs.existsSync(SRC_ROOT)) {
+  const publicIndex = indexPublicThumbnails(DEST_ROOT);
+  const videos = JSON.parse(fs.readFileSync(VIDEOS_JSON, "utf8"));
+  const fallbackMap = {};
+  let fallbackMatched = 0;
+  let fallbackUnmatched = 0;
+
+  for (const video of videos) {
+    const sourceTitle = video.source?.title || "";
+    const folderName = resolveFolder(sourceTitle, publicIndex);
+    if (!folderName) {
+      fallbackUnmatched++;
+      continue;
+    }
+    const fileEntry = resolveFile(video.title, publicIndex[folderName]);
+    if (!fileEntry) {
+      fallbackUnmatched++;
+      continue;
+    }
+    fallbackMap[video.slug] =
+      `/thumbnails/${encodeURIComponent(folderName)}/${encodeURIComponent(fileEntry.file)}`;
+    fallbackMatched++;
+  }
+
+  fs.mkdirSync(path.dirname(OUT_JSON), { recursive: true });
+  fs.writeFileSync(OUT_JSON, JSON.stringify(fallbackMap, null, 2));
+  console.log(
+    `[thumbnails] source not found - rebuilt from public/thumbnails: matched ${fallbackMatched}, unmatched ${fallbackUnmatched}, total ${videos.length}`
+  );
   process.exit(0);
 }
 
