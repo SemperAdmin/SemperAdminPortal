@@ -3,7 +3,7 @@ title: "DTS Authorizations and Orders Creation - S-1 Procedural Page"
 slug: "authorizations-and-orders-creation"
 summary: "Build the authorization, fund the line of accounting, set the routing list, and obligate funds in DTS per MCO 4650.39A Chapter 1 paragraph 3 (ODTA), paragraph 3.d (Routing Lists), and paragraph 5 (Travelers and AOs)."
 roles: ["admin", "leader"]
-lastVerified: "2026-05-11"
+lastVerified: "2026-05-22"
 unitType: "s1-g1"
 topic: "dts"
 function: "OPER"
@@ -25,6 +25,8 @@ references:
   - "DoD 4500.9-R Defense Transportation Regulation"
   - "MCO 4600.40C Government Travel Charge Card Program (GTCCP)"
   - "DTMO Financial Field Procedures Guide"
+  - "MARADMIN 234/26 - Marine Corps Official Lodging Facilities in the Defense Travel System"
+  - "DODI 1015.11 - DoD Lodging Policy"
 performanceSteps:
   - "Receive the trip request and validate authority"
   - "Open or import the DTS profile per Chapter 3"
@@ -34,6 +36,7 @@ performanceSteps:
   - "Set the routing list per Chapter 1 paragraph 3.d"
   - "Apply GTCC split disbursement per MCO 4600.40C"
   - "Submit for AO approval per Chapter 1 paragraph 5"
+  - "Set TDY destination as the installation when applicable, select Marine Corps official lodging per MARADMIN 234/26"
   - "Issue ticketing and lodging confirmation"
   - "Archive the obligated authorization in the DTS profile"
 relatedRoles:
@@ -68,7 +71,7 @@ Per Chapter 1 paragraph 3.d, the ODTA inserts the AO and RO into the appropriate
 1. Receive the trip request. The section chief routes the trip request to the S-1 or ODTA with travel dates, location, purpose, and funding source.
 2. Validate authority. Per MCO 4650.39A<Citation source="MCO 4650.39A" /> Chapter 1 paragraph 5, the authority is the AO. Confirm the funding source and the AO scope.
 3. Open or import the DTS profile. Per Chapter 3 paragraph 3, the ODTA opens the profile for an inbound Marine or imports an existing profile.
-4. Build the authorization. The traveler or NDEA builds the authorization in DTS line by line, covering travel dates, mode of travel, lodging, and per diem.
+4. Build the authorization. The traveler or NDEA builds the authorization in DTS line by line, covering travel dates, mode of travel, lodging, and per diem. Per MARADMIN 234/26<Citation source="MARADMIN 234/26" />, set the TDY destination as the installation when the destination is a military installation, not the surrounding city or town. Select Marine Corps official lodging (Marine Lodges or Inns of the Corps) when the destination is a Marine Corps installation. Use is mandatory under the Integrated Lodging Program. The AO issues a certificate of non-availability only when accommodations are unavailable.
 5. Apply per diem and entitlements. Per the JTR<Citation source="JTR" /> chapter governing the travel type, apply the entitlement set (TDY per JTR Chapter 3, PCS per JTR Chapter 5, evacuation per JTR Chapter 7).
 6. Attach the line of accounting. The BDTA confirms the line of accounting and the funding ceiling. The system validates fund availability.
 7. Set the routing list. Per Chapter 1 paragraph 3.d, the ODTA inserts the AO and RO. The routing list runs at the appropriate organization level.
@@ -103,13 +106,15 @@ Per Chapter 1 paragraph 3.d, the ODTA inserts the AO and RO into the appropriate
 - AO approves before fund obligation succeeds. Re-check funding availability before approval routing.
 - Authorization signed without orders being cut. The orders document flows from the obligated authorization. Pull the orders document after AO approval.
 - CTW omitted on premium-class request. The CTW supports the entitlement decision and the audit trail.
+- TDY destination set as the city instead of the installation. Per MARADMIN 234/26<Citation source="MARADMIN 234/26" />, the AO ensures the destination is the installation when applicable. A city-level destination misroutes DTS lodging search away from Marine Corps official lodging.
+- Off-base lodging selected at a Marine Corps installation with no certificate of non-availability. The voucher reimburses lodging only at the official lodging rate. The traveler eats the delta.
 
 ## Decision points
 
 - Self-entry versus NDEA. The ODTA assigns NDEA when the traveler lacks DTS access. The traveler still signs the authorization at the AO routing step.
 - Routing list level. Per Chapter 1 paragraph 3.d, the routing list runs at the appropriate organization level. Larger commands run multi-tier routing. Smaller units run single-tier.
 - Constructed travel versus actual travel. Per the JTR<Citation source="JTR" /> rules, the traveler builds the authorization to match the planned travel. A request for non-economy class requires CTW evaluation.
-- Lodging type. Government quarters versus commercial lodging per JTR Chapter 2 and Chapter 9 rules. The unit travel posture drives the call.
+- Lodging type. Government quarters versus commercial lodging per JTR Chapter 2 and Chapter 9 rules. Per MARADMIN 234/26<Citation source="MARADMIN 234/26" /> effective 25 May 2026, Marine Corps official lodging (Marine Lodges and Inns of the Corps) on Marine Corps installations is mandatory under the Integrated Lodging Program. The unit travel posture and the destination drive the call.
 
 ## Authority
 

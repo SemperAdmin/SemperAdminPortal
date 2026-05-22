@@ -428,6 +428,7 @@ export type RoleContent = z.infer<typeof roleContentSchema>;
 export const CITATION_TYPES = [
   "MCO",
   "MARADMIN",
+  "PAA",
   "ALMAR",
   "ALNAV",
   "NAVMC",

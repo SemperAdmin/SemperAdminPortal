@@ -5,6 +5,7 @@
 // schema drives compile-time types for application code. The TS resolver
 // powers runtime lookups. This JS module runs at content-sync time without
 // a TS toolchain. Update all three on any field change.
+// PAA added to CITATION_TYPES 2026-05-22.
 
 import { z } from "zod";
 
@@ -14,6 +15,7 @@ const ROLE_ENUM = z.enum(ROLES);
 const CITATION_TYPES = [
   "MCO",
   "MARADMIN",
+  "PAA",
   "ALMAR",
   "ALNAV",
   "NAVMC",

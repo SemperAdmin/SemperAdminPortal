@@ -3,7 +3,7 @@ title: "DTS Oversight"
 slug: "dts-oversight"
 summary: "DTS profile setup, group routing, authorization defaults, voucher discipline. The leader's section view of the system most Marines learn through trial and error. Catch errors at the unit, not at DFAS."
 roles: ["leader", "commander", "admin"]
-lastVerified: "2026-05-07"
+lastVerified: "2026-05-22"
 topic: "travel"
 order: 4
 sourcePolicy: "DoD FMR"
@@ -18,6 +18,7 @@ references:
   - "DoD FMR Volume 9 TDY Travel"
   - "DTS Documentation"
   - "DoD JTR"
+  - "MARADMIN 234/26 - Marine Corps Official Lodging Facilities in the Defense Travel System"
 relatedRoles:
   marine: "/marines/dts-overview"
   admin: "/admin/s1-g1/oper"
@@ -68,7 +69,7 @@ Verify each Marine sits in the correct routing list. A wrong list means the auth
 Common authorization defaults to verify on every Marine's profile.
 
 - Default per diem. Set to standard CONUS or location-specific OCONUS.
-- Default lodging. POC lodging if applicable. Otherwise commercial.
+- Default lodging. Marine Corps official lodging (Marine Lodges or Inns of the Corps) when the TAD destination is a Marine Corps installation, per MARADMIN 234/26<Citation source="MARADMIN 234/26" /> effective 25 May 2026. POC lodging if applicable. Otherwise commercial within the locality cap.
 - Default transportation. POV mileage versus commercial air based on trip pattern.
 - Default meal entitlement. Standard or proportional.
 
@@ -81,6 +82,8 @@ The AO returns authorizations and vouchers for specific reasons. Walk the sectio
 | Rejection | Cause | Fix |
 |---|---|---|
 | Lodging over per diem cap | No actual lodging cost justification | Add justification or reduce to ceiling |
+| Off-base lodging at Marine Corps installation | No certificate of non-availability attached | Attach the certificate per MARADMIN 234/26, or rebook on-base |
+| TDY destination set to the city | Destination should be the installation | Reset the destination to the installation in DTS |
 | Wrong AO selected | Routing list mismatch | Coordinate with DTA on routing assignment |
 | Trip dates do not match orders | Authorization built against wrong orders | Pull correct orders, redraft |
 | Missing receipts | Expense over receipt threshold without receipt | Pull receipt, attach to voucher |
