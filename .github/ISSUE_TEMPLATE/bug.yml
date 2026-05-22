@@ -1,0 +1,52 @@
+name: Bug report
+description: Something on the portal does not work as expected.
+title: "[bug] "
+labels: ["bug", "triage"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: One or two sentences on the observed behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: One sentence on the expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: Numbered steps. Include the route, role, and any inputs.
+      placeholder: |
+        1. Switch role to admin.
+        2. Open /admin/iandi/iandi-reserve-id-cards.
+        3. Click Export DOCX.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and OS
+      placeholder: "Chrome 130 on Windows 11"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Affected URL
+      placeholder: "https://semperadmin.github.io/SemperAdminPortal/admin/..."
+    validations:
+      required: false
+  - type: checkboxes
+    id: security
+    attributes:
+      label: Security
+      description: Security-sensitive reports go through GitHub Private Vulnerability Reporting, not here.
+      options:
+        - label: This is NOT a security vulnerability. Security issues go through PVR.
+          required: true

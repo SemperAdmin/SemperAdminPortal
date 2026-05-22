@@ -1,5 +1,7 @@
 # Security Policy
 
+> **Status: Proof of Concept.** This repository is a personal subject-matter-expert project, not an official Marine Corps product. The content is not authoritative for pay, records, leave, separation, or any other administrative decision. Every claim is sourced from public MCO and MARADMIN material via citation chips, and contributors are individual SMEs acting in their personal capacity, not as government employees in official capacity. Verify against the underlying source before relying on anything here.
+
 ## Reporting a Vulnerability
 
 Report suspected vulnerabilities through GitHub Private Vulnerability Reporting (PVR).

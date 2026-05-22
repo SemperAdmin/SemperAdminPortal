@@ -1,0 +1,42 @@
+name: Content correction
+description: A policy claim, citation, or procedure on the portal is wrong or out of date.
+title: "[content] "
+labels: ["content", "triage"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Affected page
+      description: URL or slug of the page that needs correction.
+      placeholder: "/admin/iandi/iandi-reserve-id-cards or s1g1-pes-overview"
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: The claim that is wrong
+      description: Quote the exact sentence or bullet that is incorrect.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: The correct version
+      description: What the page should say.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source backing the correction
+      description: MCO, MARADMIN, NAVMC, DoDI number and chapter or paragraph. Link if public.
+      placeholder: "MCO 1900.16 Ch 5 Sec 5005, https://media.defense.gov/..."
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: Reader role
+      description: Which role surface was this seen from? (marine, leader, commander, admin)
+    validations:
+      required: false

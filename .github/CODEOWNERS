@@ -1,0 +1,26 @@
+# CODEOWNERS for SemperAdminPortal
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# Rules below assign default review to the repo owner. Add more rules above
+# this catch-all as the contributor base grows. Patterns are read top to
+# bottom and the LAST matching pattern wins, so put narrower rules above.
+
+# Build, deploy, and security gates
+/.github/                @furby203824
+/.github/workflows/      @furby203824
+SECURITY.md              @furby203824
+LICENSE                  @furby203824
+
+# Build tooling and lockfiles
+package.json             @furby203824
+package-lock.json        @furby203824
+next.config.mjs          @furby203824
+eslint.config.mjs        @furby203824
+postcss.config.mjs       @furby203824
+
+# Content schemas and citations registry
+/src/lib/content/        @furby203824
+/content/citations/      @furby203824
+
+# Catch-all
+*                        @furby203824

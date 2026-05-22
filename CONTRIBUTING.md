@@ -60,3 +60,44 @@ Components land under `src/components/ui/` and wire through the cn helper at `sr
 ## Verification policy
 
 A page flips to `aging` after 12 months past `lastVerified` and `stale` after 24 months. Refresh `lastVerified` only after a real source check. The `LastVerified` component renders the badge on every entry.
+
+## Refreshing the lockfile on Windows (WSL trick)
+
+`npm install` on Windows hits npm CLI issue 4828: the resulting `package-lock.json` omits Linux-only platform-specific optional binaries (lightningcss, sharp, @tailwindcss/oxide, @next/swc). CI on `ubuntu-latest` then cannot install them, and the build fails on a `Cannot find native binding` error.
+
+Two options, ranked by preference.
+
+Option A. Regenerate inside WSL's native filesystem, then copy the artifact back.
+
+```bash
+# Inside a WSL Ubuntu prompt
+mkdir -p ~/sap-lockfile-regen
+cd ~/sap-lockfile-regen
+cp /mnt/d/Coding/SemperAdminPortal/package.json .
+rm -rf node_modules package-lock.json
+npm install --include=optional --no-audit --no-fund
+cp package-lock.json /mnt/d/Coding/SemperAdminPortal/package-lock.json
+```
+
+Why home directory and not `/mnt/d` directly: WSL on `/mnt/*` cannot `chmod` on NTFS files, and `npm install` aborts mid-extract with EPERM. Running the install on ext4 inside `~` sidesteps that.
+
+After copying back, return to PowerShell, delete Windows-side `node_modules`, and reinstall so Windows sees fresh state:
+
+```powershell
+Remove-Item -Recurse -Force node_modules
+npm install
+```
+
+Then commit just `package-lock.json`. Do not commit anything from `~/sap-lockfile-regen`.
+
+Option B. If you do not have WSL, run the same flow inside Docker:
+
+```powershell
+docker run --rm -v "${PWD}:/app" -w /app node:22 sh -c "rm -rf node_modules package-lock.json && npm install --include=optional"
+```
+
+This produces a Linux-aware lockfile in place. Slower than Option A by 30-60 seconds for the container pull.
+
+When to regenerate. Whenever a major dep bump introduces new platform-specific optional packages (e.g. a Next.js major upgrade, a Tailwind major upgrade, a new image processor). The CI workaround in `.github/workflows/deploy.yml` (the `npm install --no-save --include=optional --force ...` line) papers over the gap, but the durable fix is a proper Linux-generated lockfile.
+
+If CI starts failing on `Cannot find module ../<package>.linux-x64-gnu.node` for a new family, either add that family to the CI force-install list or regenerate the lockfile via the steps above.

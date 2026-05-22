@@ -1,0 +1,72 @@
+Semper Admin Portal
+Copyright (c) 2026 Stephen (furby203824)
+
+This product includes software developed by third parties under the
+licenses listed below. The code authored in this repository is released
+under the MIT License (see LICENSE).
+
+================================================================================
+THIRD-PARTY LICENSE NOTICES
+================================================================================
+
+Sharp / libvips bindings  (LGPL-3.0-or-later)
+  Packages: @img/sharp-libvips-* (all platform variants), version 1.2.4
+  Source:   https://github.com/lovell/sharp, https://github.com/libvips/libvips
+  Use:      Dynamic linking only, via the sharp npm package at runtime.
+            No modifications to libvips source. Dynamic linking under
+            LGPL-3.0 is permitted by the license and aligns with the
+            DoD CIO Open Source Software Memorandum (Oct 2009) and SECNAV
+            M-5239.4 (acceptable use of LGPL libraries).
+  Notice:   You may obtain the source for libvips at the URL above.
+
+Lightning CSS  (MPL-2.0)
+  Packages: lightningcss, lightningcss-* (all platform variants), version 1.32.0
+  Source:   https://github.com/parcel-bundler/lightningcss
+  Use:      Build-time CSS transformer invoked by Tailwind v4.
+  Notice:   MPL-2.0 obligations apply only to modifications of lightningcss
+            source files. This repository makes no such modifications.
+
+axe-core  (MPL-2.0)
+  Source:   https://github.com/dequelabs/axe-core
+  Use:      Brought in via Next.js development tooling.
+  Notice:   Same MPL-2.0 obligations as above. No modifications.
+
+next-mdx-remote  (MPL-2.0)
+  Source:   https://github.com/hashicorp/next-mdx-remote
+  Use:      Runtime MDX rendering on the static export.
+  Notice:   MPL-2.0 obligations apply only to modifications of the upstream
+            source. This repository makes no such modifications.
+
+caniuse-lite  (CC-BY-4.0)
+  Source:   https://github.com/browserslist/caniuse-lite
+  Use:      Browser support data consumed by browserslist during build.
+  Notice:   Attribution preserved here per CC-BY-4.0 Section 3.
+
+argparse  (Python-2.0)
+  Source:   https://github.com/nodeca/argparse
+  Use:      Transitive dependency of build tooling.
+  Notice:   Python Software Foundation License 2.0. No copyleft.
+
+================================================================================
+CONTENT LICENSING
+================================================================================
+
+The textual content under /content/ summarizes and indexes public Marine
+Corps Orders (MCO), MARADMIN messages, NAVMC publications, and DoD
+Instructions. Those source documents remain the property of the United
+States Government and are works of the U.S. Government as defined at 17 USC
+Section 105. They are not subject to copyright protection in the United
+States and are not licensed under MIT.
+
+The Semper Admin Portal repository contributes editorial structure, role
+tagging, citation chips, and cross-references over that public-domain
+source material. The editorial layer falls under the MIT license alongside
+the code.
+
+================================================================================
+REFRESH CADENCE
+================================================================================
+
+This file is regenerated whenever a major dependency bump introduces a new
+non-MIT transitive dependency. The license audit script under
+scripts/citations-audit.py is the trigger to verify coverage.
