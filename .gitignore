@@ -41,3 +41,7 @@ next-env.d.ts
 
 # Generated catalogs from content sync
 /src/generated/
+
+# Working-copy backups
+*.wip-bak
+*.wip.bak

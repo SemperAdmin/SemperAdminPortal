@@ -111,22 +111,33 @@ function resolveFile(title, files) {
 function copyFile(srcPath, destFolder, fileName) {
   fs.mkdirSync(destFolder, { recursive: true });
   const dest = path.join(destFolder, fileName);
-  if (!fs.existsSync(dest)) {
-    fs.copyFileSync(srcPath, dest);
+  // COPYFILE_EXCL makes the copy fail with EEXIST when dest already exists,
+  // collapsing the existsSync-then-copy race CodeQL flags into one syscall.
+  try {
+    fs.copyFileSync(srcPath, dest, fs.constants.COPYFILE_EXCL);
+  } catch (err) {
+    if (err.code !== "EEXIST") throw err;
   }
   return dest;
 }
 
 // ── Main ───────────────────────────────────────────────────────────────────
 
-// In CI the local thumbnail drive won't exist — write empty map and exit.
+// In CI the local thumbnail drive won't exist - write empty map and exit.
+// Use the write-exclusive flag (wx) so we atomically write the empty map
+// only when the file is absent. Catching EEXIST avoids the TOCTOU race
+// CodeQL flags between existsSync() and writeFileSync().
 if (!fs.existsSync(SRC_ROOT)) {
   fs.mkdirSync(path.dirname(OUT_JSON), { recursive: true });
-  if (!fs.existsSync(OUT_JSON)) {
-    fs.writeFileSync(OUT_JSON, "{}\n");
-    console.log("[thumbnails] source not found — wrote empty thumbnails.json");
-  } else {
-    console.log("[thumbnails] source not found — keeping existing thumbnails.json");
+  try {
+    fs.writeFileSync(OUT_JSON, "{}\n", { flag: "wx" });
+    console.log("[thumbnails] source not found - wrote empty thumbnails.json");
+  } catch (err) {
+    if (err.code === "EEXIST") {
+      console.log("[thumbnails] source not found - keeping existing thumbnails.json");
+    } else {
+      throw err;
+    }
   }
   process.exit(0);
 }
@@ -169,11 +180,4 @@ for (const video of videos) {
 
 fs.writeFileSync(OUT_JSON, JSON.stringify(thumbnailMap, null, 2));
 
-console.log(`[thumbnails] matched: ${matched}  unmatched: ${unmatched}  total: ${videos.length}`);
-if (unmatchedList.length > 0) {
-  console.log("[thumbnails] unmatched list:");
-  for (const u of unmatchedList) {
-    console.log(`  ${u.slug} — ${u.reason} (series: "${u.sourceTitle}"${u.folder ? `, folder: "${u.folder}"` : ""})`);
-  }
-}
-console.log(`[thumbnails] map written to src/generated/thumbnails.json`);
+console.log(`[thumbnails] matched: ${matched}  unmatched: ${unmatched}  total: ${videos

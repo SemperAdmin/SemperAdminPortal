@@ -60,10 +60,27 @@ function sanitizeDetail(
   return detail;
 }
 
+function generateSessionId(): string {
+  // Use cryptographically strong primitives. Math.random is a non-starter
+  // in a security-adjacent path. Modern browsers (Chrome 92+, Safari 15.4+,
+  // Firefox 95+) ship crypto.randomUUID; older browsers still get strong
+  // randomness via crypto.getRandomValues. The non-crypto branch is a
+  // last-resort marker so reviewers see the degraded state in DevTools.
+  if (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function") {
+    return crypto.randomUUID();
+  }
+  if (typeof crypto !== "undefined" && typeof crypto.getRandomValues === "function") {
+    const arr = new Uint32Array(2);
+    crypto.getRandomValues(arr);
+    return `${arr[0].toString(36)}-${arr[1].toString(36)}`;
+  }
+  return `nonsecure-${Date.now().toString(36)}`;
+}
+
 function getOrCreateSessionId(): string {
   let id = sessionStorage.getItem(SESSION_ID_KEY);
   if (!id) {
-    id = `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 9)}`;
+    id = generateSessionId();
     sessionStorage.setItem(SESSION_ID_KEY, id);
   }
   return id;

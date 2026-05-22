@@ -77,7 +77,15 @@ function buildVideoIndex() {
 }
 
 function injectYoutubeUrl(mdxPath, youtubeUrl) {
-  const content = fs.readFileSync(mdxPath, "utf8");
+  // Read directly, catch ENOENT here. Collapses the existsSync-then-readFile
+  // TOCTOU race CodeQL flags into a single syscall.
+  let content;
+  try {
+    content = fs.readFileSync(mdxPath, "utf8");
+  } catch (err) {
+    if (err.code === "ENOENT") return "mdx-not-found";
+    throw err;
+  }
 
   // Already has youtubeUrl — skip
   if (/youtubeUrl\s*:/.test(content)) {
@@ -143,25 +151,14 @@ for (const row of rows) {
     continue;
   }
 
-  if (!fs.existsSync(entry.mdxPath)) {
+  const result = injectYoutubeUrl(entry.mdxPath, row.url);
+  if (result === "injected") injected++;
+  else if (result === "already-set") alreadySet++;
+  else if (result === "mdx-not-found") {
     unmatched++;
     unmatchedList.push({ csvTitle: row.title, reason: `MDX not found: ${entry.mdxPath}` });
     continue;
   }
-
-  const result = injectYoutubeUrl(entry.mdxPath, row.url);
-  if (result === "injected") injected++;
-  else if (result === "already-set") alreadySet++;
   else {
     unmatched++;
-    unmatchedList.push({ csvTitle: row.title, reason: "inject-failed" });
-  }
-}
-
-console.log(`[youtube] injected: ${injected}  already-set: ${alreadySet}  unmatched: ${unmatched}  total: ${rows.length}`);
-if (unmatchedList.length > 0) {
-  console.log("\n[youtube] unmatched:");
-  for (const u of unmatchedList) {
-    console.log(`  "${u.csvTitle}"${u.reason ? ` — ${u.reason}` : ""}`);
-  }
-}
+    unmatchedList.push({ csvTitle: row.title, reaso

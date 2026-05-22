@@ -3,7 +3,7 @@
 // Serves the contents of `out/` at http://localhost:4173/SemperAdminPortal/
 // Uses only Node built-ins, no extra deps.
 import { createServer } from "node:http";
-import { stat, readFile } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -34,18 +34,22 @@ const MIME = {
 };
 
 async function tryRead(filePath) {
+  // Direct readFile sidesteps the TOCTOU window between stat() and readFile()
+  // that CodeQL flags. EISDIR means the path resolved to a directory, which
+  // we handle by falling through to index.html. ENOENT and EISDIR are the
+  // only expected error codes here. Anything else propagates.
   try {
-    const s = await stat(filePath);
-    if (s.isFile()) return readFile(filePath);
-    if (s.isDirectory()) {
-      const idx = path.join(filePath, "index.html");
-      const sIdx = await stat(idx);
-      if (sIdx.isFile()) return readFile(idx);
-    }
-  } catch {
-    return null;
+    return await readFile(filePath);
+  } catch (err) {
+    if (err.code === "ENOENT") return null;
+    if (err.code !== "EISDIR") throw err;
   }
-  return null;
+  try {
+    return await readFile(path.join(filePath, "index.html"));
+  } catch (err) {
+    if (err.code === "ENOENT" || err.code === "EISDIR") return null;
+    throw err;
+  }
 }
 
 const server = createServer(async (req, res) => {
