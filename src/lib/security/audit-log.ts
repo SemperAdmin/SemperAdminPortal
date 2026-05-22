@@ -72,7 +72,10 @@ function generateSessionId(): string {
   if (typeof crypto !== "undefined" && typeof crypto.getRandomValues === "function") {
     const arr = new Uint32Array(2);
     crypto.getRandomValues(arr);
-    return `${arr[0].toString(36)}-${arr[1].toString(36)}`;
+    // arr is a fixed-size Uint32Array(2) just populated by getRandomValues, so
+    // indices 0 and 1 are guaranteed. Non-null assertions keep the security
+    // intent honest. A nullish fallback to 0 would silently degrade the ID.
+    return `${arr[0]!.toString(36)}-${arr[1]!.toString(36)}`;
   }
   return `nonsecure-${Date.now().toString(36)}`;
 }

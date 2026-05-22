@@ -180,4 +180,4 @@ for (const video of videos) {
 
 fs.writeFileSync(OUT_JSON, JSON.stringify(thumbnailMap, null, 2));
 
-console.log(`[thumbnails] matched: ${matched}  unmatched: ${unmatched}  total: ${videos
+console.log(`[thumbnails] matched: ${matched}  unmatched: ${unmatched}  total: ${videos.length}`);
