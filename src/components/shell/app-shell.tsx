@@ -12,6 +12,7 @@ import { Breadcrumbs } from "./breadcrumbs";
 import { RecentsTracker } from "./recents-tracker";
 import { RoleRouteSync } from "./role-route-sync";
 import { TermsModal } from "./terms-modal";
+import { DisclaimerBanner } from "./disclaimer-banner";
 
 /**
  * AppShell - v1.2.
@@ -45,6 +46,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex min-h-dvh flex-col">
+      <DisclaimerBanner />
       <TopNav
         onOpenPalette={() => setPaletteOpen(true)}
         onOpenSideNav={() => setSideNavOpen(true)}
