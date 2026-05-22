@@ -58,13 +58,115 @@ export const toolSchema = baseFrontmatter.extend({
   routeSlug: z.string(),
 });
 
+export const LINK_CATEGORIES = [
+  "semper-admin",
+  "educational",
+  "reference",
+  "system",
+  "ai",
+  "teams-channels",
+  "sharepoints",
+  "more-great-links",
+] as const;
+export type LinkCategory = (typeof LINK_CATEGORIES)[number];
+
+export const LINK_ACCESS = [
+  "public",
+  "cac",
+  "sharepoint",
+  "teams",
+  "intranet",
+  "unknown",
+] as const;
+export type LinkAccess = (typeof LINK_ACCESS)[number];
+
 export const linkSchema = baseFrontmatter.extend({
   url: z.string().url(),
-  category: z.string(),
+  category: z.enum(LINK_CATEGORIES),
+  additionalCategories: z.array(z.enum(LINK_CATEGORIES)).default([]),
+  audience: RoleEnum.optional(),
+  access: z.enum(LINK_ACCESS),
+  needsAccessReview: z.boolean().default(false),
+  provider: z.string().optional(),
+  requiresCac: z.boolean().default(false),
+  aliases: z.array(z.string()).default([]),
 });
 
+/**
+ * Reports collection. Function-based grouping with cadence and audience
+ * as filterable tags rather than section headers. Each entry collapses
+ * Enterprise and Unit duplicates to a single canonical record. The
+ * entryType discriminator splits standard reports from portals and videos,
+ * both of which share the same collection.
+ *
+ * category drives the eight section headers on /reports.
+ * cadence drives the run-schedule filter.
+ * audience tags who has access at the source system level.
+ * entryType drives the render shape on the index page.
+ */
+export const REPORT_CATEGORIES = [
+  "manpower",
+  "promotions",
+  "training",
+  "ompf-verification",
+  "entitlements",
+  "records-audits",
+  "ttc",
+  "tools",
+] as const;
+export type ReportCategory = (typeof REPORT_CATEGORIES)[number];
+
+export const REPORT_CADENCES = [
+  "non-routine",
+  "mondays",
+  "1st-of-month",
+  "15th-of-month",
+  "u-and-e",
+] as const;
+export type ReportCadence = (typeof REPORT_CADENCES)[number];
+
+export const REPORT_AUDIENCES = ["enterprise", "unit", "both"] as const;
+export type ReportAudience = (typeof REPORT_AUDIENCES)[number];
+
+export const REPORT_ENTRY_TYPES = ["report", "portal", "video"] as const;
+export type ReportEntryType = (typeof REPORT_ENTRY_TYPES)[number];
+
+export const REPORT_DEV_STATUSES = [
+  "live",
+  "in-development",
+  "deprecated",
+] as const;
+export type ReportDevStatus = (typeof REPORT_DEV_STATUSES)[number];
+
 export const reportSchema = baseFrontmatter.extend({
-  reportType: z.string(),
+  entryType: z.enum(REPORT_ENTRY_TYPES).default("report"),
+  category: z.enum(REPORT_CATEGORIES),
+  cadence: z.enum(REPORT_CADENCES).default("non-routine"),
+  audience: z.enum(REPORT_AUDIENCES).default("both"),
+  devStatus: z.enum(REPORT_DEV_STATUSES).default("live"),
+  /**
+   * Target URL for the underlying report, portal, or video. Optional so
+   * draft entries parse cleanly before the source URL gets confirmed.
+   */
+  externalUrl: z.string().url().optional(),
+  /**
+   * Video-only fields. Optional everywhere else. The page reads them only
+   * when entryType is "video".
+   */
+  durationSeconds: z.number().int().nonnegative().optional(),
+  videoUrl: z.string().optional(),
+  mceleUrl: z.string().url().optional(),
+  /**
+   * Cross-reference list of sibling report slugs. Resolves the canonical
+   * collapse decided in the design phase. Each slug points at another
+   * entry in this collection.
+   */
+  relatedReports: z.array(z.string()).default([]),
+  /**
+   * Legacy field. The original thin schema carried reportType and url.
+   * Keep both optional so any pre-existing entries parse without rewrite.
+   */
+  reportType: z.string().optional(),
   url: z.string().url().optional(),
 });
 

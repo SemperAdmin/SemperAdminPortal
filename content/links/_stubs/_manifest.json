@@ -1,0 +1,73 @@
+{
+  "generated": "2026-05-22",
+  "rows_parsed": 131,
+  "entries_written": 124,
+  "needs_access_review": 7,
+  "url_fixes": [
+    {
+      "rule": "mos-roadmaps-dedupe-nested",
+      "original": "https://mctims.usmc.mil/MOS/Pages/Roadmaps/ViewRoadmap.aspx?mosManualId=%7b659ab0c3-7b2a-4d47-8f4a-f2e2f05b7609%7d&category=Enlisted%20%3chttps://mctims.usmc.mil/MOS/Pages/Roadmaps/ViewRoadmap.aspx?mosManualId=%7b659ab0c3-7b2a-4d47-8f4a-f2e2f05b7609%7d&category=Enlisted%3e",
+      "cleaned": "https://mctims.usmc.mil/MOS/Pages/Roadmaps/ViewRoadmap.aspx?mosManualId=%7b659ab0c3-7b2a-4d47-8f4a-f2e2f05b7609%7d&category=Enlisted"
+    },
+    {
+      "rule": "cla-landing-xhtml",
+      "original": "https://mol.tfs.usmc.mil/cla/landing/landing.x%20html",
+      "cleaned": "https://mol.tfs.usmc.mil/cla/landing/landing.xhtml"
+    },
+    {
+      "rule": "command-profile-canonical",
+      "original": "https://www2.manpower.usmc.mil/ncp/notify%2c%20%27_blank%27%29",
+      "cleaned": "https://www2.manpower.usmc.mil/ncp/"
+    },
+    {
+      "rule": "site-relative-prefix",
+      "original": "/sites/mcen?OR=Teams-HL&CT=1727716769266&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDA4MTcwMDQyNiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D%22",
+      "cleaned": "https://usmc.sharepoint-mil.us/sites/mcen?OR=Teams-HL&CT=1727716769266&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDA4MTcwMDQyNiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D%22"
+    },
+    {
+      "rule": "strip-trailing-quote",
+      "original": "https://usmc.sharepoint-mil.us/sites/mcen?OR=Teams-HL&CT=1727716769266&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDA4MTcwMDQyNiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D%22",
+      "cleaned": "https://usmc.sharepoint-mil.us/sites/mcen?OR=Teams-HL&CT=1727716769266&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDA4MTcwMDQyNiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
+    },
+    {
+      "rule": "strip-trailing-quote",
+      "original": "https://safe.menlosecurity.com/https://chatgpt.com/%22",
+      "cleaned": "https://safe.menlosecurity.com/https://chatgpt.com/"
+    },
+    {
+      "rule": "strip-trailing-quote",
+      "original": "https://safe.menlosecurity.com/https://claude.ai/%22",
+      "cleaned": "https://safe.menlosecurity.com/https://claude.ai/"
+    },
+    {
+      "rule": "site-relative-prefix",
+      "original": "/sites/DCPR_RFF_External/GTCC",
+      "cleaned": "https://usmc.sharepoint-mil.us/sites/DCPR_RFF_External/GTCC"
+    },
+    {
+      "rule": "site-relative-prefix",
+      "original": "/sites/AR_DirectivesManagement/SitePages/ProjectHome.aspx?OR=Teams-HL&CT=1699463876594&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA5MjkxMTIwNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ==",
+      "cleaned": "https://usmc.sharepoint-mil.us/sites/AR_DirectivesManagement/SitePages/ProjectHome.aspx?OR=Teams-HL&CT=1699463876594&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA5MjkxMTIwNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ=="
+    },
+    {
+      "rule": "site-relative-prefix",
+      "original": "/sites/AR_DirectivesManagement/SitePages/RESOURCES.aspx",
+      "cleaned": "https://usmc.sharepoint-mil.us/sites/AR_DirectivesManagement/SitePages/RESOURCES.aspx"
+    },
+    {
+      "rule": "site-relative-prefix",
+      "original": "/sites/SJA_JET/SitePages/Home.aspx",
+      "cleaned": "https://usmc.sharepoint-mil.us/sites/SJA_JET/SitePages/Home.aspx"
+    }
+  ],
+  "by_category": {
+    "ai": 7,
+    "educational": 18,
+    "more-great-links": 31,
+    "reference": 18,
+    "semper-admin": 4,
+    "sharepoints": 10,
+    "system": 23,
+    "teams-channels": 13
+  }
+}
