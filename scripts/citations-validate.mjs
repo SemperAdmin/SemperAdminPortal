@@ -16,6 +16,7 @@ const CITATION_TYPES = [
   "MCO",
   "MARADMIN",
   "PAA",
+  "PAAN",
   "ALMAR",
   "ALNAV",
   "NAVMC",
