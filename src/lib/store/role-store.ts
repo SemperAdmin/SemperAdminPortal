@@ -31,7 +31,7 @@ interface RoleState {
   clearRecents: () => void;
 }
 
-const RECENTS_LIMIT = 5;
+const RECENTS_LIMIT = 12;
 /** Routes that should not appear in recents. */
 const RECENTS_EXCLUDE = new Set(["/", "/search", "/styleguide", "/recent"]);
 

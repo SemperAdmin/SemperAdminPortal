@@ -56,9 +56,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <SideNav open={sideNavOpen} onOpenChange={setSideNavOpen} />
 
         <main
+          key={pathname}
           id="main"
           tabIndex={-1}
-          className="min-w-0 flex-1 px-1 pb-20 pt-6 sm:px-2 lg:pb-10 lg:pt-8"
+          className="min-w-0 flex-1 animate-in fade-in-0 px-1 pb-20 pt-6 duration-[240ms] ease-out motion-reduce:animate-none sm:px-2 lg:pb-10 lg:pt-8"
         >
           {showBreadcrumbs && (
             <Breadcrumbs className="mb-4" />

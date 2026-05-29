@@ -12,6 +12,7 @@ import {
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
+import { Skeleton } from "@/components/ui/skeleton";
 import { useMounted } from "@/hooks/use-mounted";
 
 export interface SideNavProps {
@@ -36,32 +37,46 @@ export function SideNav({ open, onOpenChange }: SideNavProps) {
 
   const renderTree = (onItemClick?: () => void) => (
     <>
-      {meta ? (
-        <div className="mb-3 flex items-center gap-2.5 border-b border-[var(--color-border)] pb-3">
-          <span
-            aria-hidden="true"
-            className="size-2 rounded-full bg-[var(--color-usmc-scarlet)]"
-          />
-          <div>
-            <div className="text-[10px] font-bold uppercase tracking-[0.1em] text-[var(--color-subtle-foreground)]">
-              Viewing as
-            </div>
-            <div
-              className="font-display text-base tracking-wide"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              {meta.label.toUpperCase()}
-            </div>
-          </div>
+      {!mounted ? (
+        <div className="flex flex-col gap-2 pb-2" aria-hidden="true">
+          <Skeleton className="h-3 w-20 rounded" />
+          <Skeleton className="h-7 w-full rounded" />
+          <Skeleton className="ml-4 h-6 w-3/4 rounded" />
+          <Skeleton className="ml-4 h-6 w-2/3 rounded" />
+          <Skeleton className="ml-4 h-6 w-3/4 rounded" />
+          <Skeleton className="h-6 w-full rounded" />
+          <Skeleton className="ml-4 h-6 w-1/2 rounded" />
         </div>
       ) : (
-        <div className="mb-3 border-b border-[var(--color-border)] pb-3">
-          <div className="text-[10px] font-bold uppercase tracking-[0.1em] text-[var(--color-subtle-foreground)]">
-            Pick a role to filter
-          </div>
-        </div>
+        <>
+          {meta ? (
+            <div className="mb-3 flex items-center gap-2.5 border-b border-[var(--color-border)] pb-3">
+              <span
+                aria-hidden="true"
+                className="size-2 rounded-full bg-[var(--color-usmc-scarlet)]"
+              />
+              <div>
+                <div className="text-[10px] font-bold uppercase tracking-[0.1em] text-[var(--color-subtle-foreground)]">
+                  Viewing as
+                </div>
+                <div
+                  className="font-display text-base tracking-wide"
+                  style={{ fontFamily: "var(--font-display)" }}
+                >
+                  {meta.label.toUpperCase()}
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className="mb-3 border-b border-[var(--color-border)] pb-3">
+              <div className="text-[10px] font-bold uppercase tracking-[0.1em] text-[var(--color-subtle-foreground)]">
+                Pick a role to filter
+              </div>
+            </div>
+          )}
+          <TreeNav role={activeRole} onItemClick={onItemClick} />
+        </>
       )}
-      <TreeNav role={activeRole} onItemClick={onItemClick} />
 
       {mounted && recents.length > 0 && (
         <div className="mt-5">

@@ -18,6 +18,7 @@ import {
   getLeaderContent,
   getTools,
 } from "@/lib/content/loader";
+import { humanizeSegment, formatVerified, roleAccentVar, roleAccentStyle } from "@/lib/utils";
 
 // Build-time anchor for verified-fresh percentage math. Hoisted out
 // of the render function so React Compiler purity rule does not flag
@@ -26,10 +27,7 @@ const BUILD_TIME_MS = Date.now();
 import { Button } from "@/components/ui/button";
 import { Pill } from "@/components/ui/pill";
 import { StatTile } from "@/components/domain/stat-tile";
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const citations = require("@/generated/citations.json") as {
-  byId: Record<string, { type: string }>;
-};
+import citations from "@/generated/citations.json";
 
 type RoleKey = "marine" | "leader" | "commander" | "admin";
 
@@ -42,7 +40,6 @@ interface RoleCardSpec {
   title: string;
   body: string;
   count: number;
-  accentVar: string;
 }
 
 interface RecentEntry {
@@ -53,22 +50,6 @@ interface RecentEntry {
   lastVerified: string;
 }
 
-function humanizeSegment(segment: string): string {
-  return segment
-    .split("-")
-    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
-    .join(" ");
-}
-
-function formatVerified(date: string): string {
-  const d = new Date(date);
-  if (isNaN(d.getTime())) return date;
-  return d.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  });
-}
 
 export default function HomePage() {
   const adminContent = getAdminContent();
@@ -84,7 +65,9 @@ export default function HomePage() {
   const toolsCount = getTools().length;
 
   // Citation breakdown from the registry
-  const citationItems = Object.values(citations.byId);
+  const citationItems = Object.values(
+    (citations as { byId: Record<string, { type: string }> }).byId
+  );
   const citationsTotal = citationItems.length;
   const citationByType = citationItems.reduce<Record<string, number>>(
     (acc, c) => {
@@ -164,7 +147,6 @@ export default function HomePage() {
       title: "MARINES",
       body: "Pay, records, life events. Per MCO 5000.14D you own 13 specific responsibilities for record accuracy.",
       count: marinesCount,
-      accentVar: "var(--color-role-marine)",
     },
     {
       href: "/leader",
@@ -175,7 +157,6 @@ export default function HomePage() {
       title: "LEADER",
       body: "Coach Marines, verify records, run section readiness, bridge members to S-1 and PAC processes.",
       count: leaderCount,
-      accentVar: "var(--color-role-leader)",
     },
     {
       href: "/commander",
@@ -186,7 +167,6 @@ export default function HomePage() {
       title: "COMMANDER",
       body: "Personnel decisions, discipline, IPAC relationships. Per MCO 5000.14D Encl 3 you own 19 responsibilities.",
       count: commanderCount,
-      accentVar: "var(--color-role-commander)",
     },
     {
       href: "/admin",
@@ -197,7 +177,6 @@ export default function HomePage() {
       title: "ADMIN",
       body: "Content for S-1/G-1, I&I, and PAC admin work. Tagged by unit type, MCAP function, MOS, and grade.",
       count: adminCount,
-      accentVar: "var(--color-role-admin)",
     },
   ];
 
@@ -338,6 +317,7 @@ export default function HomePage() {
 
 function RoleCard({ card }: { card: RoleCardSpec }) {
   const Icon = card.icon;
+  const accent = roleAccentVar(card.role);
   return (
     <Link
       href={card.href}
@@ -346,15 +326,15 @@ function RoleCard({ card }: { card: RoleCardSpec }) {
       {/* Edge accent */}
       <span
         aria-hidden="true"
-        className="absolute left-0 top-0 h-full w-1 opacity-0 transition-opacity group-hover:opacity-100"
-        style={{ backgroundColor: card.accentVar }}
+        className="absolute left-0 top-0 h-full w-1 opacity-30 transition-opacity group-hover:opacity-100"
+        style={{ backgroundColor: accent }}
       />
       <div className="mb-3 flex items-center justify-between gap-2">
         <span
           className="grid size-10 place-items-center rounded-[var(--radius-sm)]"
           style={{
-            backgroundColor: `color-mix(in srgb, ${card.accentVar} 14%, transparent)`,
-            color: card.accentVar,
+            backgroundColor: `color-mix(in srgb, ${accent} 14%, transparent)`,
+            color: accent,
           }}
           aria-hidden="true"
         >
@@ -364,7 +344,7 @@ function RoleCard({ card }: { card: RoleCardSpec }) {
       </div>
       <p
         className="text-[10px] font-bold uppercase tracking-[0.1em]"
-        style={{ color: card.accentVar }}
+        style={roleAccentStyle(card.role)}
       >
         {card.tag}
       </p>
@@ -383,7 +363,7 @@ function RoleCard({ card }: { card: RoleCardSpec }) {
         </span>
         <span
           className="inline-flex items-center gap-1 text-xs font-semibold"
-          style={{ color: card.accentVar }}
+          style={roleAccentStyle(card.role)}
         >
           Open
           <ArrowRight className="size-3" aria-hidden="true" />
@@ -409,13 +389,9 @@ function EntryCard({
   return (
     <Link
       href={href}
-      className="group flex h-full flex-col rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-border-strong)] hover:bg-[var(--color-surface-2)]"
+      className="group flex h-full flex-col rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-all hover:border-[var(--color-border-strong)] hover:bg-[var(--color-surface-2)] hover:shadow-[var(--shadow-md)]"
     >
-      <p className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.08em] text-[var(--color-subtle-foreground)]">
-        <span
-          aria-hidden="true"
-          className="size-1 rounded-full bg-[var(--color-usmc-scarlet)]"
-        />
+      <p className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-[0.08em] text-[var(--color-subtle-foreground)]">
         {eyebrow}
       </p>
       <h4 className="mt-1 text-sm font-semibold tracking-tight">{title}</h4>
