@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ExternalLink, Mail, ShieldCheck } from "lucide-react";
+import { Mail, ShieldCheck } from "lucide-react";
 
 const BUILD_DATE = new Date().toISOString().slice(0, 10);
 const BUILD_VERSION = "v1.2.0";
@@ -83,17 +83,6 @@ export function Footer() {
               Contact
             </p>
             <ul className="mt-2 space-y-1.5 text-sm">
-              <li>
-                <Link
-                  href="https://github.com/SemperAdmin/SemperAdminPortal"
-                  className="inline-flex items-center gap-1.5 hover:underline underline-offset-2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <ExternalLink className="size-3.5" aria-hidden="true" />
-                  GitHub repo
-                </Link>
-              </li>
               <li>
                 <Link
                   href="/about#contact"

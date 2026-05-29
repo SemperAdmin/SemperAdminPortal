@@ -33,7 +33,7 @@ interface RoleState {
 
 const RECENTS_LIMIT = 5;
 /** Routes that should not appear in recents. */
-const RECENTS_EXCLUDE = new Set(["/", "/search", "/styleguide"]);
+const RECENTS_EXCLUDE = new Set(["/", "/search", "/styleguide", "/recent"]);
 
 /**
  * Persisted role store. Adds a recents slice for the sidebar Last viewed surface.
