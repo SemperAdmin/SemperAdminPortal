@@ -72,11 +72,6 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/styleguide" className="hover:underline underline-offset-2">
-                  Style guide
-                </Link>
-              </li>
-              <li>
                 <Link href="/legal/disclaimer" className="hover:underline underline-offset-2">
                   Legal
                 </Link>

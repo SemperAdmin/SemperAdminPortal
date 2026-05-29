@@ -54,11 +54,6 @@ const REFERENCE_SECTION: TreeSection = {
   ],
 };
 
-const STYLEGUIDE_SECTION: TreeSection = {
-  label: "System",
-  items: [{ label: "Style guide", href: "/styleguide" }],
-};
-
 // =================================================================
 // MARINE
 // =================================================================
@@ -70,7 +65,6 @@ const MARINE_TREE: TreeSection[] = [
     ],
   },
   REFERENCE_SECTION,
-  STYLEGUIDE_SECTION,
 ];
 
 // =================================================================
@@ -84,7 +78,6 @@ const LEADER_TREE: TreeSection[] = [
     ],
   },
   REFERENCE_SECTION,
-  STYLEGUIDE_SECTION,
 ];
 
 // =================================================================
@@ -201,7 +194,6 @@ const COMMANDER_TREE: TreeSection[] = [
     ],
   },
   REFERENCE_SECTION,
-  STYLEGUIDE_SECTION,
 ];
 
 // =================================================================
@@ -215,7 +207,6 @@ const ADMIN_TREE: TreeSection[] = [
     ],
   },
   REFERENCE_SECTION,
-  STYLEGUIDE_SECTION,
 ];
 
 const TREE_BY_ROLE: Record<Role, TreeSection[]> = {
@@ -225,7 +216,7 @@ const TREE_BY_ROLE: Record<Role, TreeSection[]> = {
   admin: ADMIN_TREE,
 };
 
-const DEFAULT_TREE: TreeSection[] = [REFERENCE_SECTION, STYLEGUIDE_SECTION];
+const DEFAULT_TREE: TreeSection[] = [REFERENCE_SECTION];
 
 export function getTreeForRole(role: Role | null): TreeSection[] {
   if (!role) return DEFAULT_TREE;

@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useMemo, useRef, useCallback } from "react";
+import { useState, useMemo, useCallback } from "react";
 import { Play, Clock, Search, X } from "lucide-react";
-import { useVirtualizer } from "@tanstack/react-virtual";
 import { Pill } from "@/components/ui/pill";
 import { RoleChip } from "@/components/domain/role-chip";
 import { LastVerified } from "@/components/domain/last-verified";
@@ -157,54 +156,12 @@ function VideoCard({ v }: { v: VideoData }) {
   );
 }
 
-// 3-column virtual grid — renders only visible rows
-const COLS = 3; // matches xl:grid-cols-3
-
-function VirtualVideoGrid({ items }: { items: VideoData[] }) {
-  const parentRef = useRef<HTMLDivElement>(null);
-
-  // chunk items into rows of COLS
-  const rows = useMemo(() => {
-    const result: VideoData[][] = [];
-    for (let i = 0; i < items.length; i += COLS) {
-      result.push(items.slice(i, i + COLS));
-    }
-    return result;
-  }, [items]);
-
-  const virtualizer = useVirtualizer({
-    count: rows.length,
-    getScrollElement: () => parentRef.current,
-    estimateSize: () => 320, // approx card height + gap
-    overscan: 3,
-  });
-
+function VideoGrid({ items }: { items: VideoData[] }) {
   return (
-    <div
-      ref={parentRef}
-      style={{ height: "calc(100vh - 180px)", overflowY: "auto" }}
-      className="pr-1"
-    >
-      <div style={{ height: virtualizer.getTotalSize(), position: "relative" }}>
-        {virtualizer.getVirtualItems().map((vRow) => (
-          <div
-            key={vRow.key}
-            style={{
-              position: "absolute",
-              top: vRow.start,
-              left: 0,
-              right: 0,
-              height: vRow.size,
-            }}
-          >
-            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3 pb-4">
-              {(rows[vRow.index] ?? []).map((v) => (
-                <VideoCard key={v.slug} v={v} />
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
+    <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+      {items.map((v) => (
+        <VideoCard key={v.slug} v={v} />
+      ))}
     </div>
   );
 }
@@ -231,7 +188,7 @@ export default function VideosIndex() {
   const clearQuery = useCallback(() => setQuery(""), []);
 
   return (
-    <div className="flex flex-col gap-0" style={{ height: "calc(100vh - 64px)" }}>
+    <div className="flex flex-col gap-0">
       <header className="mb-4 shrink-0">
         <h1 className="text-4xl font-bold tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
           Videos
@@ -281,7 +238,7 @@ export default function VideosIndex() {
           </button>
         </div>
       ) : (
-        <VirtualVideoGrid items={filtered} />
+        <VideoGrid items={filtered} />
       )}
     </div>
   );

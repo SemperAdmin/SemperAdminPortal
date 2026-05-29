@@ -67,23 +67,25 @@ export default function ToolsIndex() {
 
   const [typeFilter, setTypeFilter] = React.useState<string>("all");
 
+  const roleFiltered = React.useMemo(() => {
+    if (!mounted || !role) return data;
+    return data.filter((t) => t.roles.includes(role));
+  }, [data, mounted, role]);
+
   const visible = React.useMemo(() => {
-    let list = data;
-    if (mounted && role) {
-      list = list.filter((t) => t.roles.includes(role));
-    }
+    let list = roleFiltered;
     if (typeFilter !== "all") {
       list = list.filter((t) => t.outputType === typeFilter);
     }
     return list;
-  }, [data, mounted, role, typeFilter]);
+  }, [roleFiltered, typeFilter]);
 
   const counts: Record<string, number> = {
-    all: data.length,
-    calculator: data.filter((t) => t.outputType === "calculator").length,
-    pdf: data.filter((t) => t.outputType === "pdf").length,
-    docx: data.filter((t) => t.outputType === "docx").length,
-    checklist: data.filter((t) => t.outputType === "checklist").length,
+    all: roleFiltered.length,
+    calculator: roleFiltered.filter((t) => t.outputType === "calculator").length,
+    pdf: roleFiltered.filter((t) => t.outputType === "pdf").length,
+    docx: roleFiltered.filter((t) => t.outputType === "docx").length,
+    checklist: roleFiltered.filter((t) => t.outputType === "checklist").length,
   };
 
   const chips: FilterChip[] = [
@@ -98,13 +100,13 @@ export default function ToolsIndex() {
     <div className="mx-auto max-w-6xl">
       <PageHeader
         eyebrow="Interactive"
-        tags={<StatusPill status="fresh" label={`${data.length} tools available`} />}
+        tags={<StatusPill status="fresh" label={`${counts.all} tools available`} />}
         title="TOOLS"
         summary="Calculators, PDF builders, DOCX exporters, and checklists. All run client-side. No data leaves your browser."
       >
         <MetaRow
           items={[
-            { label: "Tools", value: data.length },
+            { label: "Tools", value: counts.all },
             {
               label: "Output types",
               value: "PDF, DOCX, Calc, Checklist",
