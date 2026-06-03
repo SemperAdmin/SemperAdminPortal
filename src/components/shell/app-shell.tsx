@@ -68,7 +68,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         </main>
       </div>
 
-      <Footer className="hidden lg:block" />
+      <Footer className="pb-20 lg:pb-0" />
       <BottomTabs onBrowse={() => setSideNavOpen(true)} />
       <CommandPalette open={paletteOpen} onOpenChange={setPaletteOpen} />
       <RolePickerDialog />
