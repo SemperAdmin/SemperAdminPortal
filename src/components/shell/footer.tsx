@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Mail, ShieldCheck } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const BUILD_DATE = new Date().toISOString().slice(0, 10);
 const BUILD_VERSION = "v1.2.0";
@@ -9,11 +10,11 @@ const BUILD_VERSION = "v1.2.0";
  * Three-column layout: brand and disclaimer, build/verification stats, links and contact.
  * Build date and version rendered in mono. Scarlet rule above content for accent.
  */
-export function Footer() {
+export function Footer({ className }: { className?: string }) {
   return (
     <footer
       role="contentinfo"
-      className="mt-12 border-t border-[var(--color-border)] bg-[var(--color-bg-elev)]"
+      className={cn("mt-12 border-t border-[var(--color-border)] bg-[var(--color-bg-elev)]", className)}
     >
       {/* Scarlet accent rule */}
       <div className="h-0.5 w-20 bg-[var(--color-usmc-scarlet)]" aria-hidden="true" />
