@@ -1,0 +1,224 @@
+---
+title: Cookies and Browser Storage
+slug: cookies-and-storage
+summary: Technical reference for all data Semper Admin Portal stores in your browser. localStorage keys, purposes, retention, and how to inspect or delete.
+type: terms
+roles: [marine, leader, commander, admin]
+lastVerified: "2026-06-02"
+source:
+  title: Web Storage API, MDN Web Docs
+  publisher: Mozilla Foundation
+---
+
+## Overview
+
+This site uses the Web Storage API to store data locally in your browser. No cookies are set by this application. GitHub Pages (the hosting provider) may set cookies as part of standard web platform practices.
+
+All storage is under your control. You may inspect, delete, or disable it at any time.
+
+## Browser Storage Keys
+
+### Role and Viewing History
+
+**Key:** `semper-admin.role.v2`  
+**Type:** localStorage (persists across browser sessions)  
+**Purpose:** Stores your selected role and recently viewed pages  
+**Data Structure:**
+
+```json
+{
+  "state": {
+    "role": "marine",
+    "recents": [
+      {
+        "href": "/marines/policies/separation",
+        "title": "Separation Procedures",
+        "viewedAt": 1717331820000
+      },
+      {
+        "href": "/marines/knowledge/leave",
+        "title": "Leave Entitlement",
+        "viewedAt": 1717331715000
+      }
+    ]
+  },
+  "version": 0
+}
+```
+
+**Retention:** Persists indefinitely until you clear browser data or explicitly delete it.  
+**Size:** Typically 1-5 KB.  
+**Shared With:** Only your local browser. Not transmitted to servers.
+
+### Terms Acceptance Flag
+
+**Key:** `semper-admin-terms-agreed`  
+**Type:** localStorage (persists across browser sessions)  
+**Purpose:** Tracks that you have reviewed and accepted the terms on first visit  
+**Data:** String value `"true"` when set, absent when not set  
+**Retention:** Persists indefinitely until you clear browser data.  
+**Size:** Bytes.  
+**Effect:** If this key is set, the terms modal will not appear on subsequent visits.
+
+### Disclaimer Dismissal Flag
+
+**Key:** `sap.disclaimer.dismissed`  
+**Type:** sessionStorage (cleared when you close the browser tab)  
+**Purpose:** Allows you to dismiss the proof-of-concept banner at the top of the page without re-dismissing it every navigation  
+**Data:** String value `"1"` when set, absent when not set  
+**Retention:** Clears when you close the browser tab or window.  
+**Size:** Bytes.  
+**Effect:** Once dismissed, the banner remains hidden for the duration of your tab session.
+
+## How to Inspect Your Storage
+
+### Chrome, Edge, or Brave
+
+1. Press `F12` to open Developer Tools.
+2. Click the **Application** tab.
+3. In the left sidebar, expand **Local Storage** and select this site (semperadmin.github.io).
+4. You will see all keys and values as a table.
+5. Click on any key to view its full value in the panel below.
+
+### Firefox
+
+1. Press `F12` to open Developer Tools.
+2. Click the **Storage** tab.
+3. In the left sidebar, expand **Local Storage** and click this site's URL.
+4. You will see all keys and values as a table.
+
+### Safari
+
+1. Press `Cmd+Option+I` to open Developer Tools.
+2. Click the **Storage** tab.
+3. In the left sidebar, click **Local Storage** and select this site.
+4. You will see all keys and values.
+
+## How to Delete Your Storage
+
+### Clear All Data at Once
+
+**Chrome, Edge, Brave:**
+1. Press `Ctrl+Shift+Delete` (Windows/Linux) or `Cmd+Shift+Delete` (Mac).
+2. Select **All time** or your desired time range.
+3. Check **Cookies and other site data**.
+4. Click **Clear data**.
+
+**Firefox:**
+1. Press `Ctrl+Shift+Delete` (Windows/Linux) or `Cmd+Shift+Delete` (Mac).
+2. Select **Everything** or your desired time range.
+3. Click **Clear Now**.
+
+**Safari:**
+1. Click **Safari** menu.
+2. Select **Clear History...**.
+3. Set **Remove all history items from** to your desired time range.
+4. Click **Clear History**.
+
+### Delete a Specific Site's Data
+
+**Chrome, Edge, Brave:**
+1. Press `F12` to open Developer Tools.
+2. Click **Application**.
+3. Expand **Local Storage**.
+4. Right-click on this site's URL and select **Clear** or **Delete**.
+
+**Firefox:**
+1. Press `F12` to open Developer Tools.
+2. Click **Storage**.
+3. Expand **Local Storage**.
+4. Right-click on this site's URL and select **Delete**.
+
+### Delete a Single Key (Advanced)
+
+1. Open Developer Tools as above.
+2. Find the key you want to delete in the Local Storage table.
+3. Right-click the key and select **Delete** (Chrome/Edge) or click the key and press Delete (Firefox).
+
+## Data Retention Policies
+
+### Your Browser's Storage
+
+You control how long data persists in your browser. localStorage items remain until you:
+
+- Manually delete them via Developer Tools.
+- Clear your browser's cookies and site data (most browsers have a shortcut: `Ctrl+Shift+Delete`).
+- Clear your browser's cache and browsing data via Settings/Preferences.
+- Uninstall your browser.
+
+sessionStorage items automatically clear when you close the browser tab.
+
+### GitHub Pages Server Logs
+
+GitHub Pages may retain HTTP access logs (IP address, timestamp, user-agent, referrer) for up to 90 days. These logs are beyond your control. You cannot request deletion of GitHub's server logs directly through this site.
+
+To understand GitHub's data practices, review the GitHub Privacy Statement at https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement.
+
+## Third-Party Cookies
+
+This application does not set cookies. However, GitHub Pages may set cookies related to:
+
+- GitHub's content delivery network (CDN) caching.
+- GitHub's analytics or security services.
+- Browser security features like Secure, HttpOnly, or SameSite flags.
+
+You do not have control over GitHub's cookies through this site's interface. Manage GitHub's cookies via your browser's global cookie settings.
+
+## Disabling Storage
+
+### Disable localStorage
+
+**Chrome, Edge, Brave:**
+1. Press `Ctrl+Comma` to open Settings.
+2. Click **Privacy and security**.
+3. Click **Site settings** or **Cookies and site permissions**.
+4. Click **Cookies and data stored**.
+5. Toggle off **Allow sites to save and read cookie data** or configure sites to block.
+
+**Firefox:**
+1. Press `Ctrl+Comma` to open Settings.
+2. Click **Privacy & Security**.
+3. Under **Cookies and Site Data**, select **Block all cookies**.
+
+**Safari:**
+1. Click **Safari** menu.
+2. Select **Settings...** or **Preferences...**.
+3. Click **Privacy**.
+4. Uncheck **Allow from websites I visit** under **Cookies and website data**.
+
+If you disable localStorage, this site will still work, but your role selection will not persist across sessions. You will need to re-select your role every time you visit.
+
+## Technical Details
+
+### Web Storage API
+
+localStorage and sessionStorage are part of the HTML5 Web Storage API. They allow sites to store up to 5-10 MB of data per site per browser (exact limits vary by browser).
+
+Storage is scoped by origin (protocol, domain, port). Data stored by `https://semperadmin.github.io` is completely separate from data stored by other sites.
+
+### No Encryption
+
+localStorage data is stored in plain text in your browser's profile directory. It is not encrypted by default. If someone gains access to your computer or browser profile, they can read your stored data.
+
+For sensitive work, use a private or incognito browser window. Private mode does not store localStorage data persistently.
+
+### No Expiration
+
+Unlike cookies, localStorage items do not have automatic expiration dates. Items persist until explicitly deleted or until you clear your browser data.
+
+## Data Minimization
+
+This site applies data minimization principles:
+
+- We store only what is necessary for core functionality (your role selection and recently viewed pages).
+- We do not store personal information, account credentials, or identifiable data.
+- We do not track your behavior across sites.
+- We do not build a profile about you.
+
+Your data serves only to improve your experience on this site. It is never analyzed, mined, or sold.
+
+---
+
+For more technical details on Web Storage, see the MDN Web Docs article on localStorage and sessionStorage.
+
+For questions about storage or privacy, contact the maintainers via the About page.

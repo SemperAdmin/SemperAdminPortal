@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Semper Admin Portal
 
 > **Status: Proof of Concept.** This repository is a personal subject-matter-expert project, not an official Marine Corps product. The content is not authoritative for pay, records, leave, separation, or any other administrative decision. Every claim is sourced from public MCO and MARADMIN material via citation chips, and contributors are individual SMEs acting in their personal capacity, not as government employees in official capacity. Verify against the underlying source before relying on anything here.
@@ -87,3 +88,6 @@ See CONTRIBUTING.md for the full role-tagged content workflow, frontmatter schem
 ## Reference folder
 
 `D:\Coding\SemperAdminPortal-OldReference` was specified for content mining. Not yet mounted in this build session, mount it to extend content collections.
+=======
+# SemperAdminPortal
+>>>>>>> 798ba01be2f7ff168543dd88994426e8875d80a1

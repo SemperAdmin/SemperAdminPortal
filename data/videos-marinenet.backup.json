@@ -1,0 +1,5470 @@
+[
+  {
+    "slug": "creating-a-autosaar-account",
+    "title": "Creating a AutoSAAR Account",
+    "summary": "Creating a AutoSAAR Account.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/autosaar/creating-a-autosaar-account",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "AutoSAAR",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/autosaar"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "manage-users-ia",
+    "title": "Manage users IA",
+    "summary": "Manage users IA.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/autosaar/manage-users-ia",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "AutoSAAR",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/autosaar"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "anatomy-of-a-citation",
+    "title": "Anatomy of a Citation",
+    "summary": "Anatomy of a Citation.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/awards/anatomy-of-a-citation",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Awards",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/awards"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "awards-by-the-numbers-quotas-precedence-and-frequency",
+    "title": "Awards 'By the Numbers' - Quotas, Precedence and Frequency",
+    "summary": "Awards 'By the Numbers' - Quotas, Precedence and Frequency.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/awards/awards-by-the-numbers-quotas-precedence-and-frequency",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Awards",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/awards"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "awards-writing-101",
+    "title": "Awards Writing 101",
+    "summary": "Awards Writing 101.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/awards/awards-writing-101",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Awards",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/awards"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "decorating-departing-marines-awards-and-pcs-orders",
+    "title": "Decorating Departing Marines - Awards and PCS Orders",
+    "summary": "Decorating Departing Marines - Awards and PCS Orders.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/awards/decorating-departing-marines-awards-and-pcs-orders",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Awards",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/awards"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "creating-poa-ms-and-training-schedules",
+    "title": "Creating POA&Ms and Training Schedules",
+    "summary": "Creating POA&Ms and Training Schedules.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/creating-poa-ms-and-training-schedules",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "drafting-professional-emails-in-seconds",
+    "title": "Drafting Professional Emails in Seconds",
+    "summary": "Drafting Professional Emails in Seconds.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/drafting-professional-emails-in-seconds",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "explaining-complex-regulations-in-plain-language",
+    "title": "Explaining Complex Regulations in Plain Language",
+    "summary": "Explaining Complex Regulations in Plain Language.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/explaining-complex-regulations-in-plain-language",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "preparing-briefing-outlines-and-talking-points",
+    "title": "Preparing Briefing Outlines and Talking Points",
+    "summary": "Preparing Briefing Outlines and Talking Points.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/preparing-briefing-outlines-and-talking-points",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "processing-maradmin-action-items",
+    "title": "Processing MARADMIN Action Items",
+    "summary": "Processing MARADMIN Action Items.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/processing-maradmin-action-items",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "summarizing-long-policy-documents",
+    "title": "Summarizing Long Policy Documents",
+    "summary": "Summarizing Long Policy Documents.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/summarizing-long-policy-documents",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "writing-strong-award-summaries",
+    "title": "Writing Strong Award Summaries",
+    "summary": "Writing Strong Award Summaries.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/awards/writing-strong-award-summaries",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Awards",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/awards"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "writing-counseling-statements-and-page-11-entries",
+    "title": "Writing Counseling Statements and Page 11 Entries",
+    "summary": "Writing Counseling Statements and Page 11 Entries.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/writing-counseling-statements-and-page-11-entries",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "how-to-build-a-battle-rhythm",
+    "title": "How to build a Battle Rhythm",
+    "summary": "build a Battle Rhythm.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/battle-rhythms/how-to-build-a-battle-rhythm",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Battle Rhythms",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/battle-rhythms"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "pac-battle-rhythm",
+    "title": "PAC Battle Rhythm",
+    "summary": "PAC Battle Rhythm.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/battle-rhythms/pac-battle-rhythm",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Battle Rhythms",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/battle-rhythms"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "s-1-battle-rhythm",
+    "title": "S-1 Battle Rhythm",
+    "summary": "S-1 Battle Rhythm.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/battle-rhythms/s-1-battle-rhythm",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Battle Rhythms",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/battle-rhythms"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "how-to-update-sgli-on-milconnect",
+    "title": "How to Update SGLI on milConnect",
+    "summary": "Update SGLI on milConnect.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/casualty-affairs/how-to-update-sgli-on-milconnect",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Casualty Affairs",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/casualty-affairs"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "advanced-conditional-formatting",
+    "title": "Advanced Conditional Formatting",
+    "summary": "Advanced Conditional Formatting.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/advanced-conditional-formatting",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "applying-styles-to-fonts-and-backgrounds",
+    "title": "Applying styles to fonts and backgrounds",
+    "summary": "Applying styles to fonts and backgrounds.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/applying-styles-to-fonts-and-backgrounds",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "promotion-folder-part-1-missing-training-and-jepes-occasions",
+    "title": "Promotion Folder Part 1 - Missing Training and JEPES Occasions",
+    "summary": "Promotion Folder Part 1 - Missing Training and JEPES Occasions.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/promotion-folder-part-1-missing-training-and-jepes-occasions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "building-a-basic-report-running-options-and-saving",
+    "title": "Building a basic report, Running options, and Saving",
+    "summary": "Building a basic report, Running options, and Saving.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/building-a-basic-report-running-options-and-saving",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "promotion-folder-part-2-recommendation-rosters",
+    "title": "Promotion Folder Part 2 - Recommendation Rosters",
+    "summary": "Promotion Folder Part 2 - Recommendation Rosters.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/promotion-folder-part-2-recommendation-rosters",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "promotion-folder-part-3-promotion-authority",
+    "title": "Promotion Folder Part 3 - Promotion Authority",
+    "summary": "Promotion Folder Part 3 - Promotion Authority.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/promotion-folder-part-3-promotion-authority",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "common-functions-and-expressions",
+    "title": "Common Functions and Expressions",
+    "summary": "Common Functions and Expressions.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/common-functions-and-expressions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "promotion-folder-part-4-select-grade-documentation",
+    "title": "Promotion Folder Part 4 - Select Grade Documentation",
+    "summary": "Promotion Folder Part 4 - Select Grade Documentation.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/promotion-folder-part-4-select-grade-documentation",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "constants-functions-and-expressions",
+    "title": "Constants Functions and Expressions",
+    "summary": "Constants Functions and Expressions.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/constants-functions-and-expressions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "constructs-if-then-else-functions-and-expressions",
+    "title": "Constructs IF, THEN, ELSE Functions and Expressions",
+    "summary": "Constructs IF, THEN, ELSE Functions and Expressions.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/constructs-if-then-else-functions-and-expressions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "constructs-in-range-functions-and-expressions",
+    "title": "Constructs IN RANGE Functions and Expressions",
+    "summary": "Constructs IN RANGE Functions and Expressions.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/constructs-in-range-functions-and-expressions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "constructs-search-case-functions-and-expressions",
+    "title": "Constructs SEARCH CASE Functions and Expressions",
+    "summary": "Constructs SEARCH CASE Functions and Expressions.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/constructs-search-case-functions-and-expressions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "constructs-simple-case-functions-and-expressions",
+    "title": "Constructs SIMPLE CASE Functions and Expressions",
+    "summary": "Constructs SIMPLE CASE Functions and Expressions.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/constructs-simple-case-functions-and-expressions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "creating-a-new-report-and-understanding-queries",
+    "title": "Creating a new report and understanding Queries",
+    "summary": "Creating a new report and understanding Queries.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/creating-a-new-report-and-understanding-queries",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "promotion-folder-part-5-not-recommended-after-select-grade",
+    "title": "Promotion Folder Part 5 - Not Recommended After Select Grade",
+    "summary": "Promotion Folder Part 5 - Not Recommended After Select Grade.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/promotion-folder-part-5-not-recommended-after-select-grade",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "promotion-folder-part-6-miscellaneous",
+    "title": "Promotion Folder Part 6 - Miscellaneous",
+    "summary": "Promotion Folder Part 6 - Miscellaneous.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/promotion-folder-part-6-miscellaneous",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "detailed-filters-for-missing-or-null",
+    "title": "Detailed Filters for missing or null",
+    "summary": "Detailed Filters for missing or null.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/detailed-filters-for-missing-or-null",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "detailed-filters-multiple-filters",
+    "title": "Detailed Filters Multiple Filters",
+    "summary": "Detailed Filters Multiple Filters.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/detailed-filters-multiple-filters",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "understanding-the-promotion-folder",
+    "title": "Understanding the Promotion Folder",
+    "summary": "the Promotion Folder.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/understanding-the-promotion-folder",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "dimensional-functions-and-expressions",
+    "title": "Dimensional Functions and Expressions",
+    "summary": "Dimensional Functions and Expressions.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/dimensional-functions-and-expressions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "filters-copy-cut-paste-and-delete-data",
+    "title": "Filters, Copy, Cut, Paste, and Delete data",
+    "summary": "Filters, Copy, Cut, Paste, and Delete data.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/filters-copy-cut-paste-and-delete-data",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "for-operator-examples",
+    "title": "For operator examples",
+    "summary": "For operator examples.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/for-operator-examples",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "groups-and-sections",
+    "title": "Groups and Sections",
+    "summary": "Groups and Sections.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/groups-and-sections",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "headers-footers-and-adding-text",
+    "title": "Headers, Footers and adding text",
+    "summary": "Headers, Footers and adding text.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/headers-footers-and-adding-text",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "insert-calculations",
+    "title": "Insert Calculations",
+    "summary": "Insert Calculations.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/insert-calculations",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "labels",
+    "title": "Labels",
+    "summary": "Labels.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/labels",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "master-detail-relationship",
+    "title": "Master Detail Relationship",
+    "summary": "Master Detail Relationship.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/master-detail-relationship",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "more-filters-numbers-and-dates",
+    "title": "MORE Filters (Numbers and Dates)",
+    "summary": "MORE Filters (Numbers and Dates).",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/more-filters-numbers-and-dates",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "operators-functions-and-expressions",
+    "title": "Operators Functions and Expressions",
+    "summary": "Operators Functions and Expressions.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/operators-functions-and-expressions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "prompts-and-prompt-pages",
+    "title": "Prompts and Prompt pages",
+    "summary": "Prompts and Prompt pages.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/prompts-and-prompt-pages",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "removing-duplicates-with-filters",
+    "title": "Removing duplicates with Filters",
+    "summary": "Removing duplicates with Filters.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/removing-duplicates-with-filters",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "repeaters-and-repeater-tables",
+    "title": "Repeaters and Repeater Tables",
+    "summary": "Repeaters and Repeater Tables.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/repeaters-and-repeater-tables",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "documentation-legal-ceremony-planning-4-2-months",
+    "title": "Documentation, Legal & Ceremony Planning (4-2 Months)",
+    "summary": "Documentation, Legal & Ceremony Planning (4-2 Months).",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/documentation-legal-ceremony-planning-4-2-months",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "final-phase-month-of-retirement",
+    "title": "Final Phase (Month of Retirement)",
+    "summary": "Final Phase (Month of Retirement).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/final-phase-month-of-retirement",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "final-preparations-outprocessing-2-0-months",
+    "title": "Final Preparations & Outprocessing (2-0 Months)",
+    "summary": "Final Preparations & Outprocessing (2-0 Months).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/final-preparations-outprocessing-2-0-months",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "simple-conditional-formatting",
+    "title": "Simple Conditional Formatting",
+    "summary": "Simple Conditional Formatting.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/simple-conditional-formatting",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "summaries-functions-and-expressions",
+    "title": "Summaries Functions and Expressions",
+    "summary": "Summaries Functions and Expressions.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/summaries-functions-and-expressions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "summarize",
+    "title": "Summarize",
+    "summary": "Summarize.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/summarize",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "vendor-specific-functions-and-expressions",
+    "title": "Vendor Specific Functions and Expressions",
+    "summary": "Vendor Specific Functions and Expressions.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/vendor-specific-functions-and-expressions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "what-is-it-and-how-to-access-via-mol",
+    "title": "What is it and how to access via MOL",
+    "summary": "What is it and how to access via MOL.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/what-is-it-and-how-to-access-via-mol",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "administrative-separation-process-preparer",
+    "title": "Administrative Separation Process (Preparer)",
+    "summary": "Administrative Separation Process (Preparer).",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/command-legal-action/administrative-separation-process-preparer",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Command Legal Action",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/command-legal-action"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "application-introduction",
+    "title": "Application Introduction",
+    "summary": "Application Introduction.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/command-legal-action/application-introduction",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Command Legal Action",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/command-legal-action"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "financial-family-terminal-leave-planning-months-8-6",
+    "title": "Financial, Family & Terminal Leave Planning (Months 8-6)",
+    "summary": "Financial, Family & Terminal Leave Planning (Months 8-6).",
+    "roles": [
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/financial-family-terminal-leave-planning-months-8-6",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "job-search-medical-readiness-6-4-months",
+    "title": "Job Search & Medical Readiness (6-4 Months)",
+    "summary": "Job Search & Medical Readiness (6-4 Months).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/job-search-medical-readiness-6-4-months",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "post-retirement-0-12-months",
+    "title": "Post-Retirement (0-12 Months)",
+    "summary": "Post-Retirement (0-12 Months).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/post-retirement-0-12-months",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "from-to-and-via-lines",
+    "title": "From, To, and Via lines",
+    "summary": "From, To, and Via lines.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/creating-correspondence/from-to-and-via-lines",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Creating Correspondence",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/creating-correspondence"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "margins-and-header",
+    "title": "Margins and Header",
+    "summary": "Margins and Header.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/creating-correspondence/margins-and-header",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Creating Correspondence",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/creating-correspondence"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "skill-development-professional-growth-months-10-8",
+    "title": "Skill Development & Professional Growth (Months 10-8)",
+    "summary": "Skill Development & Professional Growth (Months 10-8).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/skill-development-professional-growth-months-10-8",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "point-paper",
+    "title": "Point Paper",
+    "summary": "Point Paper.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/creating-correspondence/point-paper",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Creating Correspondence",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/creating-correspondence"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "position-decision-paper",
+    "title": "Position/Decision Paper",
+    "summary": "Position/Decision Paper.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/creating-correspondence/position-decision-paper",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Creating Correspondence",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/creating-correspondence"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "career-preparation-financial-foundation-24-18-months",
+    "title": "Career Preparation & Financial Foundation (24-18 Months)",
+    "summary": "Career Preparation & Financial Foundation (24-18 Months).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/career-preparation-financial-foundation-24-18-months",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "career-education-financial-planning-18-12-months",
+    "title": "Career, Education & Financial Planning (18-12 Months)",
+    "summary": "Career, Education & Financial Planning (18-12 Months).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/career-education-financial-planning-18-12-months",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "earliest-phase-36-24-months",
+    "title": "Earliest Phase (36-24 Months)",
+    "summary": "Earliest Phase (36-24 Months).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/earliest-phase-36-24-months",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "sender-s-symbol",
+    "title": "Sender\u2019s Symbol",
+    "summary": "Sender\u2019s Symbol.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/creating-correspondence/sender-s-symbol",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Creating Correspondence",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/creating-correspondence"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "signature-and-copy-to-lines-with-page-numbering",
+    "title": "Signature and Copy To Lines with Page Numbering",
+    "summary": "Signature and Copy To Lines with Page Numbering.",
+    "roles": [
+      "commander"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/creating-correspondence/signature-and-copy-to-lines-with-page-numbering",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Creating Correspondence",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/creating-correspondence"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "subject-reference-and-enclosure-lines",
+    "title": "Subject, Reference, and Enclosure lines",
+    "summary": "Subject, Reference, and Enclosure lines.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/creating-correspondence/subject-reference-and-enclosure-lines",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Creating Correspondence",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/creating-correspondence"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "text-and-paragraphs",
+    "title": "Text and Paragraphs",
+    "summary": "Text and Paragraphs.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/creating-correspondence/text-and-paragraphs",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Creating Correspondence",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/creating-correspondence"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "family-relocation-administrative-prep-24-18-months",
+    "title": "Family, Relocation & Administrative Prep (24-18 Months)",
+    "summary": "Family, Relocation & Administrative Prep (24-18 Months).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/family-relocation-administrative-prep-24-18-months",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "foundation-building-retirement-request-career-foundation-12-10-months",
+    "title": "Foundation Building - Retirement Request & Career Foundation (12-10 Months)",
+    "summary": "Foundation Building - Retirement Request & Career Foundation (12-10 Months).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/foundation-building-retirement-request-career-foundation-12-10-months",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "request-access-to-amps",
+    "title": "Request Access to AMPS",
+    "summary": "Request Access to AMPS.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/dependents/request-access-to-amps",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Dependents",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/dependents"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "a-comprehensive-guide-to-maximizing-maradmin-searchability",
+    "title": "A Comprehensive Guide to Maximizing MARADMIN Searchability",
+    "summary": "A Comprehensive Guide to Maximizing MARADMIN Searchability.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/directives/a-comprehensive-guide-to-maximizing-maradmin-searchability",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Directives",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/directives"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "medical-awareness-documentation-24-18-months",
+    "title": "Medical Awareness & Documentation (24-18 Months)",
+    "summary": "Medical Awareness & Documentation (24-18 Months).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/medical-awareness-documentation-24-18-months",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "medical-family-administrative-preparation-18-12-months",
+    "title": "Medical, Family & Administrative Preparation (18-12 Months)",
+    "summary": "Medical, Family & Administrative Preparation (18-12 Months).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/medical-family-administrative-preparation-18-12-months",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "mmsr-resources-guide",
+    "title": "MMSR Resources Guide",
+    "summary": "MMSR Resources Guide.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/mmsr-resources-guide",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "correct-promotion-authority-references",
+    "title": "Correct Promotion Authority References",
+    "summary": "Correct Promotion Authority References.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/correct-promotion-authority-references",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "delete-as-erroneous-process-for-promotion",
+    "title": "Delete as Erroneous Process for Promotion",
+    "summary": "Delete as Erroneous Process for Promotion.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/delete-as-erroneous-process-for-promotion",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "signature-requirements-for-non-rec-page-11s",
+    "title": "Signature Requirements for Non Rec Page 11s",
+    "summary": "Signature Requirements for Non Rec Page 11s.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/signature-requirements-for-non-rec-page-11s",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "the-snowball-effect-of-missing-not-recs",
+    "title": "The Snowball Effect of Missing Not Recs",
+    "summary": "The Snowball Effect of Missing Not Recs.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/the-snowball-effect-of-missing-not-recs",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "understanding-not-rec-vs-promotion-restriction",
+    "title": "Understanding Not Rec vs Promotion Restriction",
+    "summary": "Not Rec vs Promotion Restriction.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/understanding-not-rec-vs-promotion-restriction",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "how-to-read-an-les-msg-focused",
+    "title": "How to read an LES (MSG Focused)",
+    "summary": "read an LES (MSG Focused).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/education/how-to-read-an-les-msg-focused",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Education",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/education"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "understanding-permanent-not-recs",
+    "title": "Understanding Permanent Not Recs",
+    "summary": "Permanent Not Recs.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/understanding-permanent-not-recs",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "why-marines-get-erroneously-promoted",
+    "title": "Why Marines Get Erroneously Promoted",
+    "summary": "Why Marines Get Erroneously Promoted.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/why-marines-get-erroneously-promoted",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "imos-dor-examples",
+    "title": "IMOS DOR Examples",
+    "summary": "IMOS DOR Examples.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/imos-dor-examples",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "imos-failures-and-reductions",
+    "title": "IMOS Failures and Reductions",
+    "summary": "IMOS Failures and Reductions.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/imos-failures-and-reductions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "imos-for-corporal-promotion",
+    "title": "IMOS for Corporal Promotion",
+    "summary": "IMOS for Corporal Promotion.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/imos-for-corporal-promotion",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "usmap-enrollment",
+    "title": "USMAP Enrollment",
+    "summary": "USMAP Enrollment.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/education/usmap-enrollment",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Education",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/education"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "imos-for-sergeant-promotion",
+    "title": "IMOS for Sergeant Promotion",
+    "summary": "IMOS for Sergeant Promotion.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/imos-for-sergeant-promotion",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "processing-imos-promotions",
+    "title": "Processing IMOS Promotions",
+    "summary": "Processing IMOS Promotions.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/processing-imos-promotions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "autosum-and-autofill",
+    "title": "AutoSum and AutoFill",
+    "summary": "AutoSum and AutoFill.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/autosum-and-autofill",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "average-function",
+    "title": "AVERAGE Function",
+    "summary": "AVERAGE Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/average-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "basic-charts-column-bar-pie",
+    "title": "Basic Charts (Column, Bar, Pie)",
+    "summary": "Basic Charts (Column, Bar, Pie).",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/basic-charts-column-bar-pie",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "basic-pivot-tables",
+    "title": "Basic Pivot Tables",
+    "summary": "Basic Pivot Tables.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/basic-pivot-tables",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "concatenate-function",
+    "title": "CONCATENATE Function",
+    "summary": "CONCATENATE Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/concatenate-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "count-function",
+    "title": "COUNT Function",
+    "summary": "COUNT Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/count-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "counta-function",
+    "title": "COUNTA Function",
+    "summary": "COUNTA Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/counta-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "countif-function",
+    "title": "COUNTIF Function",
+    "summary": "COUNTIF Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/countif-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "formatting-cells-and-worksheets",
+    "title": "Formatting Cells and Worksheets",
+    "summary": "Formatting Cells and Worksheets.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/formatting-cells-and-worksheets",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "freeze-panes-and-split-screens",
+    "title": "Freeze Panes and Split Screens",
+    "summary": "Freeze Panes and Split Screens.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/freeze-panes-and-split-screens",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "if-function",
+    "title": "IF Function",
+    "summary": "IF Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/if-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "intro-to-excel-and-basic-navigation",
+    "title": "Intro to Excel and Basic Navigation",
+    "summary": "Excel and Basic Navigation.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/intro-to-excel-and-basic-navigation",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "max-function",
+    "title": "MAX Function",
+    "summary": "MAX Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/max-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "min-function",
+    "title": "MIN Function",
+    "summary": "MIN Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/min-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "printing-and-page-setup",
+    "title": "Printing and Page Setup",
+    "summary": "Printing and Page Setup.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/printing-and-page-setup",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "protecting-worksheets-and-workbooks",
+    "title": "Protecting Worksheets and Workbooks",
+    "summary": "Protecting Worksheets and Workbooks.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/protecting-worksheets-and-workbooks",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "relative-and-absolute-cell-referencing",
+    "title": "Relative and Absolute Cell Referencing",
+    "summary": "Relative and Absolute Cell Referencing.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/relative-and-absolute-cell-referencing",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "sorting-and-filtering-data",
+    "title": "Sorting and Filtering Data",
+    "summary": "Sorting and Filtering Data.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/sorting-and-filtering-data",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "sum-function",
+    "title": "SUM Function",
+    "summary": "SUM Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/sum-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "vlookup-function",
+    "title": "VLOOKUP Function",
+    "summary": "VLOOKUP Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-beginner/vlookup-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Beginner",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-beginner"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "processing-suli-promotions",
+    "title": "Processing SULI Promotions",
+    "summary": "Processing SULI Promotions.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/processing-suli-promotions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "suli-effective-dates-and-timing",
+    "title": "SULI Effective Dates and Timing",
+    "summary": "SULI Effective Dates and Timing.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/suli-effective-dates-and-timing",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "and-and-or-functions",
+    "title": "AND and OR Functions",
+    "summary": "AND and OR Functions.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/and-and-or-functions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "averageif-function",
+    "title": "AVERAGEIF Function",
+    "summary": "AVERAGEIF Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/averageif-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "averageifs-function",
+    "title": "AVERAGEIFS Function",
+    "summary": "AVERAGEIFS Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/averageifs-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "choose-function",
+    "title": "CHOOSE Function",
+    "summary": "CHOOSE Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/choose-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "choosecols-function",
+    "title": "CHOOSECOLS Function",
+    "summary": "CHOOSECOLS Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/choosecols-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "countifs-function",
+    "title": "COUNTIFS Function",
+    "summary": "COUNTIFS Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/countifs-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "understanding-intended-mos-promotions",
+    "title": "Understanding Intended MOS Promotions",
+    "summary": "Intended MOS Promotions.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/understanding-intended-mos-promotions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "index-match-function",
+    "title": "INDEX & MATCH Function",
+    "summary": "INDEX & MATCH Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/index-match-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "index-function",
+    "title": "INDEX Function",
+    "summary": "INDEX Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/index-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "after-approval-managing-and-modifying-benefits",
+    "title": "After Approval - Managing and Modifying Benefits",
+    "summary": "After Approval - Managing and Modifying Benefits.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/education/after-approval-managing-and-modifying-benefits",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Education",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/education"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "am-i-eligible-understanding-teb-requirements",
+    "title": "Am I Eligible? Understanding TEB Requirements",
+    "summary": "Am I Eligible? Understanding TEB Requirements.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/education/am-i-eligible-understanding-teb-requirements",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Education",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/education"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "match-function",
+    "title": "MATCH Function",
+    "summary": "MATCH Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/match-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "common-mistakes-that-cost-marines-their-teb-benefits",
+    "title": "Common Mistakes That Cost Marines Their TEB Benefits",
+    "summary": "Common Mistakes That Cost Marines Their TEB Benefits.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/education/common-mistakes-that-cost-marines-their-teb-benefits",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Education",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/education"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "offset-function",
+    "title": "OFFSET Function",
+    "summary": "OFFSET Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/offset-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "special-situations-purple-heart-colmery-act-and-more",
+    "title": "Special Situations - Purple Heart, Colmery Act, and More",
+    "summary": "Special Situations - Purple Heart, Colmery Act, and More.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/education/special-situations-purple-heart-colmery-act-and-more",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Education",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/education"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "sumif-function",
+    "title": "SUMIF Function",
+    "summary": "SUMIF Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/sumif-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "teb-overview-what-you-need-to-know-now",
+    "title": "TEB Overview - What You Need to Know NOW",
+    "summary": "TEB Overview - What You Need to Know NOW.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/education/teb-overview-what-you-need-to-know-now",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Education",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/education"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "who-can-receive-your-benefits-dependent-eligibility",
+    "title": "Who Can Receive Your Benefits? Dependent Eligibility",
+    "summary": "Who Can Receive Your Benefits? Dependent Eligibility.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/education/who-can-receive-your-benefits-dependent-eligibility",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Education",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/education"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "your-service-obligation-the-48-month-commitment",
+    "title": "Your Service Obligation - The 48-Month Commitment",
+    "summary": "Your Service Obligation - The 48-Month Commitment.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/education/your-service-obligation-the-48-month-commitment",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Education",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/education"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "requirements-for-corporal",
+    "title": "Requirements for Corporal",
+    "summary": "Requirements for Corporal.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/requirements-for-corporal",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "requirements-for-pfc-and-lcpl",
+    "title": "Requirements for PFC and LCpl",
+    "summary": "Requirements for PFC and LCpl.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/requirements-for-pfc-and-lcpl",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "requirements-for-sergeant",
+    "title": "Requirements for Sergeant",
+    "summary": "Requirements for Sergeant.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/requirements-for-sergeant",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "understanding-jepes-what-it-is",
+    "title": "Understanding JEPES - What It Is",
+    "summary": "JEPES - What It Is.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/understanding-jepes-what-it-is",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "authorized-expenses",
+    "title": "Authorized Expenses",
+    "summary": "Authorized Expenses.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/gtccp/authorized-expenses",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "GTCCP",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/gtccp"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "cba-covered-expenses",
+    "title": "CBA Covered Expenses",
+    "summary": "CBA Covered Expenses.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/gtccp/cba-covered-expenses",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "GTCCP",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/gtccp"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "clearing-delinquencies-apcs",
+    "title": "Clearing Delinquencies - APCs",
+    "summary": "Clearing Delinquencies - APCs.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/gtccp/clearing-delinquencies-apcs",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "GTCCP",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/gtccp"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "clearing-delinquencies-approving-official",
+    "title": "Clearing Delinquencies - Approving Official",
+    "summary": "Clearing Delinquencies - Approving Official.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/gtccp/clearing-delinquencies-approving-official",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "GTCCP",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/gtccp"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "clearing-delinquencies-supervisor",
+    "title": "Clearing Delinquencies - Supervisor",
+    "summary": "Clearing Delinquencies - Supervisor.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/gtccp/clearing-delinquencies-supervisor",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "GTCCP",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/gtccp"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "exemptions",
+    "title": "Exemptions",
+    "summary": "Exemptions.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/gtccp/exemptions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "GTCCP",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/gtccp"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "non-mandatory-use-of-the-travel-card",
+    "title": "Non-Mandatory use of the Travel Card",
+    "summary": "Non-Mandatory use of the Travel Card.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/gtccp/non-mandatory-use-of-the-travel-card",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "GTCCP",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/gtccp"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "responsibilities-by-role",
+    "title": "Responsibilities by Role",
+    "summary": "Responsibilities by Role.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/gtccp/responsibilities-by-role",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "GTCCP",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/gtccp"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "use-of-the-travel-card",
+    "title": "Use of the Travel Card",
+    "summary": "Use of the Travel Card.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/gtccp/use-of-the-travel-card",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "GTCCP",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/gtccp"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "understanding-the-pes-score-components",
+    "title": "Understanding the PES Score Components",
+    "summary": "the PES Score Components.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/understanding-the-pes-score-components",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "understanding-tig-and-tis-requirements-and-eligibility-dates",
+    "title": "Understanding TIG and TIS Requirements and Eligibility Dates",
+    "summary": "TIG and TIS Requirements and Eligibility Dates.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/understanding-tig-and-tis-requirements-and-eligibility-dates",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "understanding-training-cutoff-dates",
+    "title": "Understanding Training Cutoff Dates",
+    "summary": "Training Cutoff Dates.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/understanding-training-cutoff-dates",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "advance-pay-incident-to-a-pcs-understanding-the-basics",
+    "title": "Advance Pay Incident to a PCS - Understanding the Basics",
+    "summary": "Advance Pay Incident to a PCS - Understanding the Basics.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/pay-and-entitlements/advance-pay-incident-to-a-pcs-understanding-the-basics",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/pay-and-entitlements"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "bah-rate-protection-maintaining-higher-rates",
+    "title": "BAH Rate Protection - Maintaining Higher Rates",
+    "summary": "BAH Rate Protection - Maintaining Higher Rates.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/pay-and-entitlements/bah-rate-protection-maintaining-higher-rates",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/pay-and-entitlements"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "bah-waivers-criteria-and-authorization-process",
+    "title": "BAH Waivers - Criteria and Authorization Process",
+    "summary": "BAH Waivers - Criteria and Authorization Process.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/pay-and-entitlements/bah-waivers-criteria-and-authorization-process",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/pay-and-entitlements"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "manage-users",
+    "title": "Manage Users",
+    "summary": "Manage Users.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/improved-awards-processing-system/manage-users",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Improved Awards Processing System",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/improved-awards-processing-system"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "navigating-the-awards-approval-process",
+    "title": "Navigating the Awards Approval Process",
+    "summary": "Navigating the Awards Approval Process.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/improved-awards-processing-system/navigating-the-awards-approval-process",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Improved Awards Processing System",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/improved-awards-processing-system"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "originating-an-award-in-iaps",
+    "title": "Originating an Award in iAPS",
+    "summary": "Originating an Award in iAPS.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/improved-awards-processing-system/originating-an-award-in-iaps",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Improved Awards Processing System",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/improved-awards-processing-system"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "requesting-permissions-to-iaps",
+    "title": "Requesting Permissions to iAPS",
+    "summary": "Requesting Permissions to iAPS.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/improved-awards-processing-system/requesting-permissions-to-iaps",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Improved Awards Processing System",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/improved-awards-processing-system"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "advance-bah-application-process-and-documentation-requirements",
+    "title": "Advance BAH - Application Process and Documentation Requirements",
+    "summary": "Advance BAH - Application Process and Documentation Requirements.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/pay-and-entitlements/advance-bah-application-process-and-documentation-requirements",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/pay-and-entitlements"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "advance-bah-eligibility-and-authorized-uses",
+    "title": "Advance BAH - Eligibility and Authorized Uses",
+    "summary": "Advance BAH - Eligibility and Authorized Uses.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/pay-and-entitlements/advance-bah-eligibility-and-authorized-uses",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/pay-and-entitlements"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "advance-bah-repayment-and-liquidation-procedures",
+    "title": "Advance BAH - Repayment and Liquidation Procedures",
+    "summary": "Advance BAH - Repayment and Liquidation Procedures.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/pay-and-entitlements/advance-bah-repayment-and-liquidation-procedures",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/pay-and-entitlements"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "admin-dashboard-archive-tab",
+    "title": "Admin Dashboard (Archive tab)",
+    "summary": "Admin Dashboard (Archive tab).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/jepes/admin-dashboard-archive-tab",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "JEPES",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/jepes"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "admin-dashboard-members-tab",
+    "title": "Admin Dashboard (Members tab)",
+    "summary": "Admin Dashboard (Members tab).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/jepes/admin-dashboard-members-tab",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "JEPES",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/jepes"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "admin-dashboard-occasions-tab",
+    "title": "Admin Dashboard (Occasions tab)",
+    "summary": "Admin Dashboard (Occasions tab).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/jepes/admin-dashboard-occasions-tab",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "JEPES",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/jepes"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "admin-dashboard-promotion-tab",
+    "title": "Admin Dashboard (Promotion tab)",
+    "summary": "Admin Dashboard (Promotion tab).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/jepes/admin-dashboard-promotion-tab",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "JEPES",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/jepes"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "admin-dashboard-reporting-chain-tab",
+    "title": "Admin Dashboard (Reporting Chain tab)",
+    "summary": "Admin Dashboard (Reporting Chain tab).",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/jepes/admin-dashboard-reporting-chain-tab",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "JEPES",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/jepes"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "jepes-score-vs-cutting-score",
+    "title": "JEPES Score VS Cutting Score",
+    "summary": "JEPES Score VS Cutting Score.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/jepes/jepes-score-vs-cutting-score",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "JEPES",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/jepes"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "overview-of-the-module",
+    "title": "Overview of the Module",
+    "summary": "Overview of the Module.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/jepes/overview-of-the-module",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "JEPES",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/jepes"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "rank-function",
+    "title": "RANK Function",
+    "summary": "RANK Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/rank-function",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "basic-travel-rules",
+    "title": "Basic Travel Rules",
+    "summary": "Basic Travel Rules.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/joint-travel-regulations/basic-travel-rules",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Joint Travel Regulations",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/joint-travel-regulations"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "round-roundup-rounddown-functions",
+    "title": "ROUND, ROUNDUP,  ROUNDDOWN Functions",
+    "summary": "ROUND, ROUNDUP,  ROUNDDOWN Functions.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/round-roundup-rounddown-functions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "intro-to-standard-travel-and-transportation-allowances",
+    "title": "Intro to Standard Travel and Transportation Allowances",
+    "summary": "Standard Travel and Transportation Allowances.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/joint-travel-regulations/intro-to-standard-travel-and-transportation-allowances",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Joint Travel Regulations",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/joint-travel-regulations"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "basic-needs-allowance-bna-application-submission-process",
+    "title": "Basic Needs Allowance (BNA) - Application Submission Process",
+    "summary": "Basic Needs Allowance (BNA) - Application Submission Process.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/pay-and-entitlements/basic-needs-allowance-bna-application-submission-process",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/pay-and-entitlements"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "basic-needs-allowance-bna-eligibility-determination",
+    "title": "Basic Needs Allowance (BNA) - Eligibility Determination",
+    "summary": "Basic Needs Allowance (BNA) - Eligibility Determination.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/pay-and-entitlements/basic-needs-allowance-bna-eligibility-determination",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/pay-and-entitlements"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "naval-letter-format-generator",
+    "title": "Naval Letter Format Generator",
+    "summary": "Naval Letter Format Generator.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/creating-correspondence/naval-letter-format-generator",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Creating Correspondence",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/creating-correspondence"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "understanding-selection-numbers",
+    "title": "Understanding Selection Numbers",
+    "summary": "Selection Numbers.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/understanding-selection-numbers",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "nipr-gpt-create-an-account",
+    "title": "NIPR GPT - Create an account",
+    "summary": "NIPR GPT - Create an account.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/nipr-gpt-create-an-account",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "creating-a-tfsms-account",
+    "title": "Creating a TFSMS Account",
+    "summary": "Creating a TFSMS Account.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/manpower/creating-a-tfsms-account",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/manpower"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "misso-vs-aau-vs-mcaat-vs-igmc-what-s-the-difference",
+    "title": "MISSO vs AAU vs MCAAT vs IGMC - What's the Difference?",
+    "summary": "MISSO vs AAU vs MCAAT vs IGMC - What's the Difference?",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/semper-admin/misso-vs-aau-vs-mcaat-vs-igmc-what-s-the-difference",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Semper Admin",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/semper-admin"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "understanding-promotion-zones",
+    "title": "Understanding Promotion Zones",
+    "summary": "Promotion Zones.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/understanding-promotion-zones",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "board-member-understanding-your-role-and-responsibilities",
+    "title": "Board Member - Understanding Your Role and Responsibilities",
+    "summary": "Board Member - Understanding Your Role and Responsibilities.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/improved-awards-processing-system/board-member-understanding-your-role-and-responsibilities",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Improved Awards Processing System",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/improved-awards-processing-system"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "requesting-ipcot-travel",
+    "title": "Requesting IPCOT Travel",
+    "summary": "Requesting IPCOT Travel.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/pay-and-entitlements/requesting-ipcot-travel",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/pay-and-entitlements"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "staying-current-with-rapid-technology-changes",
+    "title": "Staying Current with Rapid Technology Changes",
+    "summary": "Staying Current with Rapid Technology Changes.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/tech-tips/staying-current-with-rapid-technology-changes",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Tech Tips",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/tech-tips"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "windows-v",
+    "title": "Windows + V",
+    "summary": "Windows + V.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/tech-tips/windows-v",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Tech Tips",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/tech-tips"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "bamcis-framework-for-prompts",
+    "title": "BAMCIS Framework for Prompts",
+    "summary": "BAMCIS Framework for Prompts.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/bamcis-framework-for-prompts",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "prompt-components-and-structure",
+    "title": "Prompt Components and Structure",
+    "summary": "Prompt Components and Structure.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/prompt-components-and-structure",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "prompt-types-zero-shot-vs-chain-vs-mega",
+    "title": "Prompt Types - Zero-Shot vs Chain vs Mega",
+    "summary": "Prompt Types - Zero-Shot vs Chain vs Mega.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/prompt-types-zero-shot-vs-chain-vs-mega",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "tracking-personnel-movement",
+    "title": "Tracking Personnel Movement",
+    "summary": "Tracking Personnel Movement.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-challenge/tracking-personnel-movement",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Challenge",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-challenge"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "different-types-of-leave-know-your-options",
+    "title": "Different Types of Leave - Know Your Options",
+    "summary": "Different Types of Leave - Know Your Options.",
+    "roles": [
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/leave-and-liberty/different-types-of-leave-know-your-options",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Leave and Liberty",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/leave-and-liberty"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "camogpt-interface-tour",
+    "title": "CamoGPT - Interface Tour",
+    "summary": "CamoGPT - Interface Tour.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/camogpt-interface-tour",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "leave-and-liberty-module-overview",
+    "title": "Leave and Liberty Module Overview",
+    "summary": "Leave and Liberty Module Overview.",
+    "roles": [
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/leave-and-liberty/leave-and-liberty-module-overview",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Leave and Liberty",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/leave-and-liberty"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "taking-foreign-leave-what-you-need-to-know",
+    "title": "Taking Foreign Leave - What You Need to Know",
+    "summary": "Taking Foreign Leave - What You Need to Know.",
+    "roles": [
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/leave-and-liberty/taking-foreign-leave-what-you-need-to-know",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Leave and Liberty",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/leave-and-liberty"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "understanding-leave-and-liberty",
+    "title": "Understanding Leave and Liberty",
+    "summary": "Leave and Liberty.",
+    "roles": [
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/leave-and-liberty/understanding-leave-and-liberty",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Leave and Liberty",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/leave-and-liberty"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "understanding-ptad-permissive-temporary-additional-duty-explained",
+    "title": "Understanding PTAD - Permissive Temporary Additional Duty Explained",
+    "summary": "PTAD - Permissive Temporary Additional Duty Explained.",
+    "roles": [
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/leave-and-liberty/understanding-ptad-permissive-temporary-additional-duty-explained",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Leave and Liberty",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/leave-and-liberty"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "camogpt-tools-and-organization",
+    "title": "CamoGPT - Tools and Organization",
+    "summary": "CamoGPT - Tools and Organization.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/camogpt-tools-and-organization",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "discussion-on-data-integration-and-privacy",
+    "title": "Discussion on Data Integration and Privacy",
+    "summary": "Discussion on Data Integration and Privacy.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/discussion-on-data-integration-and-privacy",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "game-changer-the-government-policy-repository",
+    "title": "Game Changer - The Government Policy Repository",
+    "summary": "Game Changer - The Government Policy Repository.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/game-changer-the-government-policy-repository",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "how-to-access-tfsms",
+    "title": "How to access TFSMS",
+    "summary": "access TFSMS.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/manpower/how-to-access-tfsms",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/manpower"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "how-to-assign-a-bic",
+    "title": "How to assign a BIC",
+    "summary": "assign a BIC.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/manpower/how-to-assign-a-bic",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/manpower"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "a-business-model-for-the-ages",
+    "title": "A Business Model for the Ages",
+    "summary": "A Business Model for the Ages.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/marine-corps-total-force-system/a-business-model-for-the-ages",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Marine Corps Total Force System",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/marine-corps-total-force-system"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "how-humans-differ-from-llms",
+    "title": "How Humans Differ from LLMs",
+    "summary": "How Humans Differ from LLMs.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/how-humans-differ-from-llms",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "llm-training-data-sources-and-implications",
+    "title": "LLM Training Data - Sources and Implications",
+    "summary": "LLM Training Data - Sources and Implications.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/llm-training-data-sources-and-implications",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "difference-between-3270-and-mctfs",
+    "title": "Difference between 3270 and MCTFS",
+    "summary": "Difference between 3270 and MCTFS.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/marine-corps-total-force-system/difference-between-3270-and-mctfs",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Marine Corps Total Force System",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/marine-corps-total-force-system"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "history-of-3270",
+    "title": "History of 3270",
+    "summary": "History of 3270.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/marine-corps-total-force-system/history-of-3270",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Marine Corps Total Force System",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/marine-corps-total-force-system"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "open-vs-closed-source-models",
+    "title": "Open vs Closed Source Models",
+    "summary": "Open vs Closed Source Models.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/open-vs-closed-source-models",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "prompt-engineering-fundamentals",
+    "title": "Prompt Engineering Fundamentals",
+    "summary": "Prompt Engineering Fundamentals.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/prompt-engineering-fundamentals",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "password-resets",
+    "title": "Password Resets",
+    "summary": "Password Resets.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/marine-online-management/password-resets",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Marine Online Management",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/marine-online-management"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "self-register-for-an-account-on-marine-online",
+    "title": "Self Register for an Account on Marine Online",
+    "summary": "Self Register for an Account on Marine Online.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/marine-online-management/self-register-for-an-account-on-marine-online",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Marine Online Management",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/marine-online-management"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "what-is-a-large-language-model",
+    "title": "What is a Large Language Model?",
+    "summary": "What is a Large Language Model?",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/what-is-a-large-language-model",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "generating-awards-with-llm",
+    "title": "Generating Awards with LLM",
+    "summary": "Generating Awards with LLM.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/awards/generating-awards-with-llm",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Awards",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/awards"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "enrolling-in-marinenet-courses",
+    "title": "Enrolling in MarineNet Courses",
+    "summary": "Enrolling in MarineNet Courses.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/marinenet/enrolling-in-marinenet-courses",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "MarineNet",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/marinenet"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "introduction-to-marinenet",
+    "title": "Introduction to MarineNet",
+    "summary": "Introduction to MarineNet.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/marinenet/introduction-to-marinenet",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "MarineNet",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/marinenet"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "navigating-my-learning",
+    "title": "Navigating My Learning",
+    "summary": "Navigating My Learning.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/marinenet/navigating-my-learning",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "MarineNet",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/marinenet"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "accessing-training-guides",
+    "title": "Accessing training guides",
+    "summary": "Accessing training guides.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/missa-misso/accessing-training-guides",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "MISSA/MISSO",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/missa-misso"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "connecting-mctfs-fos-events-to-outlook",
+    "title": "Connecting MCTFS FoS Events to outlook",
+    "summary": "Connecting MCTFS FoS Events to outlook.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/missa-misso/connecting-mctfs-fos-events-to-outlook",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "MISSA/MISSO",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/missa-misso"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "new-site-overview",
+    "title": "New site overview",
+    "summary": "New site overview.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/missa-misso/new-site-overview",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "MISSA/MISSO",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/missa-misso"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "policy-and-software-updates",
+    "title": "Policy and Software Updates",
+    "summary": "Policy and Software Updates.",
+    "roles": [
+      "commander"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/missa-misso/policy-and-software-updates",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "MISSA/MISSO",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/missa-misso"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "policy-and-software-updates-new-site",
+    "title": "Policy and Software Updates (New Site)",
+    "summary": "Policy and Software Updates (New Site).",
+    "roles": [
+      "commander"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/missa-misso/policy-and-software-updates-new-site",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "MISSA/MISSO",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/missa-misso"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "register-for-training",
+    "title": "Register for training",
+    "summary": "Register for training.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/missa-misso/register-for-training",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "MISSA/MISSO",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/missa-misso"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "requesting-access",
+    "title": "Requesting Access",
+    "summary": "Requesting Access.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/missa-misso/requesting-access",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "MISSA/MISSO",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/missa-misso"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "overview-of-o-rma",
+    "title": "Overview of O-RMA",
+    "summary": "Overview of O-RMA.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/o-rma/overview-of-o-rma",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "O-RMA",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/o-rma"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "request-access-to-o-rma-ompf-viewer",
+    "title": "Request access to O-RMA - OMPF Viewer",
+    "summary": "Request access to O-RMA - OMPF Viewer.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/o-rma/request-access-to-o-rma-ompf-viewer",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "O-RMA",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/o-rma"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "updating-your-own-ompf",
+    "title": "Updating your own OMPF",
+    "summary": "Updating your own OMPF.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/o-rma/updating-your-own-ompf",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "O-RMA",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/o-rma"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "various-location-tracking",
+    "title": "Various Location Tracking",
+    "summary": "Various Location Tracking.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-challenge/various-location-tracking",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Challenge",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-challenge"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "what-is-llm-and-gpt",
+    "title": "What is LLM and GPT",
+    "summary": "What is LLM and GPT.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/large-language-models/what-is-llm-and-gpt",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/large-language-models"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "early-return-of-dependents-erd-vs-advance-return-of-dependents-ard",
+    "title": "Early Return of Dependents (ERD) vs Advance Return of Dependents (ARD)",
+    "summary": "Early Return of Dependents (ERD) vs Advance Return of Dependents (ARD).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/dependents/early-return-of-dependents-erd-vs-advance-return-of-dependents-ard",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Dependents",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/dependents"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "skillbridge-program-policy-update-navmc-1700-2b",
+    "title": "SkillBridge Program Policy Update (NAVMC 1700.2B)",
+    "summary": "SkillBridge Program Policy Update (NAVMC 1700.2B).",
+    "roles": [
+      "commander"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/education/skillbridge-program-policy-update-navmc-1700-2b",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Education",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/education"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "modal-verbs",
+    "title": "Modal Verbs",
+    "summary": "Modal Verbs.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/directives/modal-verbs",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Directives",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/directives"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "transitional-assistance-management-program",
+    "title": "Transitional Assistance Management Program",
+    "summary": "Transitional Assistance Management Program.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/transitional-assistance-management-program",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "relative-value-rv",
+    "title": "Relative Value (RV)",
+    "summary": "Relative Value (RV).",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/fitreps/relative-value-rv",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "FITREPS",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/fitreps"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "grouping-areas-of-responsibility",
+    "title": "Grouping Areas of Responsibility",
+    "summary": "Grouping Areas of Responsibility.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/battle-rhythms/grouping-areas-of-responsibility",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Battle Rhythms",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/battle-rhythms"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "reimbursement-of-qualifying-spouse-relicensing-recertification-costs-and-business-costs",
+    "title": "Reimbursement of Qualifying Spouse Relicensing/Recertification Costs and Business Costs",
+    "summary": "Reimbursement of Qualifying Spouse Relicensing/Recertification Costs and Business Costs.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/pay-and-entitlements/reimbursement-of-qualifying-spouse-relicensing-recertification-costs-and-business-costs",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/pay-and-entitlements"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "understanding-promotion-recommendations",
+    "title": "Understanding Promotion Recommendations",
+    "summary": "Promotion Recommendations.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/understanding-promotion-recommendations",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "forthcoming-changes-to-leave-liberty-and-administrative-absence",
+    "title": "Forthcoming Changes To Leave, Liberty, And Administrative Absence",
+    "summary": "Forthcoming Changes To Leave, Liberty, And Administrative Absence.",
+    "roles": [
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/leave-and-liberty/forthcoming-changes-to-leave-liberty-and-administrative-absence",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Leave and Liberty",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/leave-and-liberty"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "dislocation-allowance-dla-fiscal-year-limitations",
+    "title": "Dislocation Allowance (DLA) - Fiscal-Year Limitations",
+    "summary": "Dislocation Allowance (DLA) - Fiscal-Year Limitations.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/pay-and-entitlements/dislocation-allowance-dla-fiscal-year-limitations",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/pay-and-entitlements"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "dislocation-allowance-dla-service-member-with-a-dependent",
+    "title": "Dislocation Allowance (DLA) - Service Member with a Dependent",
+    "summary": "Dislocation Allowance (DLA) - Service Member with a Dependent.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/pay-and-entitlements/dislocation-allowance-dla-service-member-with-a-dependent",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/pay-and-entitlements"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "dislocation-allowance-dla-service-member-with-or-without-a-dependent",
+    "title": "Dislocation Allowance (DLA) - Service Member with or without a Dependent",
+    "summary": "Dislocation Allowance (DLA) - Service Member with or without a Dependent.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/pay-and-entitlements/dislocation-allowance-dla-service-member-with-or-without-a-dependent",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/pay-and-entitlements"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "dislocation-allowance-dla",
+    "title": "Dislocation Allowance (DLA)",
+    "summary": "Dislocation Allowance (DLA).",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/pay-and-entitlements/dislocation-allowance-dla",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/pay-and-entitlements"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "temporary-lodging-allowance-tla",
+    "title": "Temporary Lodging Allowance (TLA)",
+    "summary": "Temporary Lodging Allowance (TLA).",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/pay-and-entitlements/temporary-lodging-allowance-tla",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/pay-and-entitlements"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "temporary-lodging-expense-tle",
+    "title": "Temporary Lodging Expense (TLE)",
+    "summary": "Temporary Lodging Expense (TLE).",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/pay-and-entitlements/temporary-lodging-expense-tle",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/pay-and-entitlements"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "nested-if-functions",
+    "title": "Nested IF Functions",
+    "summary": "Nested IF Functions.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/nested-if-functions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "brainstorming-reports",
+    "title": "Brainstorming reports",
+    "summary": "Brainstorming reports.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/brainstorming-reports",
+    "mceleUrl": "https://mcele.usmc.mil/cognos-analytics/brainstorming-reports",
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "tuition-assistance-navmc-1560-25-updates",
+    "title": "Tuition Assistance NAVMC 1560.25 Updates",
+    "summary": "Tuition Assistance NAVMC 1560.25 Updates.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/education/tuition-assistance-navmc-1560-25-updates",
+    "mceleUrl": "https://mcele.usmc.mil/education/tuition-assistance-navmc-1560-25-updates",
+    "posterUrl": null,
+    "source": {
+      "title": "Education",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/education"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "left-right-and-mid-functions",
+    "title": "LEFT, RIGHT, and MID Functions",
+    "summary": "LEFT, RIGHT, and MID Functions.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/left-right-and-mid-functions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "planned-promotions-for-sncos",
+    "title": "Planned Promotions for SNCOS",
+    "summary": "Planned Promotions for SNCOS.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/planned-promotions-for-sncos",
+    "mceleUrl": "https://mcele.usmc.mil/promotions/planned-promotions-for-sncos",
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "new-dd-form-137-secondary-dependency-application",
+    "title": "New DD Form 137 - Secondary Dependency Application",
+    "summary": "New DD Form 137 - Secondary Dependency Application.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/dependents/new-dd-form-137-secondary-dependency-application",
+    "mceleUrl": "https://mcele.usmc.mil/dependents/new-dd-form-137-secondary-dependency-application",
+    "posterUrl": null,
+    "source": {
+      "title": "Dependents",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/dependents"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "new-site-updates-mp-mf-mi",
+    "title": "New Site Updates MP, MF, & MI",
+    "summary": "New Site Updates MP, MF, & MI.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/manpower-reserve-affairs/new-site-updates-mp-mf-mi",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/manpower-reserve-affairs"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "overview-of-new-site",
+    "title": "Overview of new site",
+    "summary": "Overview of new site.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/manpower-reserve-affairs/overview-of-new-site",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/manpower-reserve-affairs"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "readdressing",
+    "title": "Readdressing",
+    "summary": "Readdressing.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/creating-correspondence/readdressing",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Creating Correspondence",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/creating-correspondence"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "creating-a-miap-account",
+    "title": "Creating a MIAP Account",
+    "summary": "Creating a MIAP Account.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/marine-corps-total-force-system/creating-a-miap-account",
+    "mceleUrl": "https://mcele.usmc.mil/marine-corps-total-force-system/creating-a-miap-account",
+    "posterUrl": null,
+    "source": {
+      "title": "Marine Corps Total Force System",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/marine-corps-total-force-system"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "why-do-we-non-rec",
+    "title": "Why do we non rec",
+    "summary": "Why do we non rec.",
+    "roles": [
+      "admin",
+      "leader",
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/promotions/why-do-we-non-rec",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/promotions"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "data-validation",
+    "title": "Data Validation",
+    "summary": "Data Validation.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/data-validation",
+    "mceleUrl": "https://mcele.usmc.mil/excel-intermediate/data-validation",
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "hlookup-function",
+    "title": "HLOOKUP Function",
+    "summary": "HLOOKUP Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/hlookup-function",
+    "mceleUrl": "https://mcele.usmc.mil/excel-intermediate/hlookup-function",
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "iferror-function",
+    "title": "IFERROR Function",
+    "summary": "IFERROR Function.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/iferror-function",
+    "mceleUrl": "https://mcele.usmc.mil/excel-intermediate/iferror-function",
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "maradmins-what-are-they",
+    "title": "MARADMINS - What are they",
+    "summary": "MARADMINS - What are they.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/directives/maradmins-what-are-they",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Directives",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/directives"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "marking-philosophy",
+    "title": "Marking Philosophy",
+    "summary": "Marking Philosophy.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/fitreps/marking-philosophy",
+    "mceleUrl": "https://mcele.usmc.mil/fitreps/marking-philosophy",
+    "posterUrl": null,
+    "source": {
+      "title": "FITREPS",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/fitreps"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "scoring-and-performance-anchored-rating-scales-pars",
+    "title": "Scoring and Performance Anchored Rating Scales (PARS)",
+    "summary": "Scoring and Performance Anchored Rating Scales (PARS).",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/fitreps/scoring-and-performance-anchored-rating-scales-pars",
+    "mceleUrl": "https://mcele.usmc.mil/fitreps/scoring-and-performance-anchored-rating-scales-pars",
+    "posterUrl": null,
+    "source": {
+      "title": "FITREPS",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/fitreps"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "endorsements",
+    "title": "Endorsements",
+    "summary": "Endorsements.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/creating-correspondence/endorsements",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Creating Correspondence",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/creating-correspondence"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "same-page-endorsements",
+    "title": "Same Page Endorsements",
+    "summary": "Same Page Endorsements.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/creating-correspondence/same-page-endorsements",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Creating Correspondence",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/creating-correspondence"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "hqmc-ardb-directives-monthly-training-20240731",
+    "title": "HQMC ARDB Directives Monthly Training - 20240731",
+    "summary": "HQMC ARDB Directives Monthly Training - 20240731.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/directives/hqmc-ardb-directives-monthly-training-20240731",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Directives",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/directives"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "mail-merge",
+    "title": "Mail Merge",
+    "summary": "Mail Merge.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/excel-intermediate/mail-merge",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/excel-intermediate"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "understanding-the-fitrep-audience",
+    "title": "Understanding the FITREP Audience",
+    "summary": "the FITREP Audience.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/fitreps/understanding-the-fitrep-audience",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "FITREPS",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/fitreps"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "how-to-request-the-military-outstanding-volunteer-service-medal",
+    "title": "How to Request the Military Outstanding Volunteer Service Medal",
+    "summary": "Request the Military Outstanding Volunteer Service Medal.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/awards/how-to-request-the-military-outstanding-volunteer-service-medal",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Awards",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/awards"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "key-players-in-the-fitrep-process",
+    "title": "Key Players in the FITREP Process",
+    "summary": "Key Players in the FITREP Process.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/fitreps/key-players-in-the-fitrep-process",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "FITREPS",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/fitreps"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "top-mistakes-to-avoid-in-award-recommendations",
+    "title": "Top Mistakes to Avoid in Award Recommendations",
+    "summary": "Top Mistakes to Avoid in Award Recommendations.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/awards/top-mistakes-to-avoid-in-award-recommendations",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Awards",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/awards"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "sea-dashboard-processing-a-self-initiated-review",
+    "title": "SEA Dashboard (Processing a Self Initiated Review)",
+    "summary": "SEA Dashboard (Processing a Self Initiated Review).",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/jepes/sea-dashboard-processing-a-self-initiated-review",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "JEPES",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/jepes"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "understanding-joint-and-other-service-awards-for-marines",
+    "title": "Understanding Joint and Other Service Awards for Marines",
+    "summary": "Joint and Other Service Awards for Marines.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/awards/understanding-joint-and-other-service-awards-for-marines",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Awards",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/awards"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "introduction-to-fitness-reports",
+    "title": "Introduction to Fitness Reports",
+    "summary": "Introduction to Fitness Reports.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/fitreps/introduction-to-fitness-reports",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "FITREPS",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/fitreps"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "completing-marinenet-courses",
+    "title": "Completing MarineNet Courses",
+    "summary": "Completing MarineNet Courses.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/marinenet/completing-marinenet-courses",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "MarineNet",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/marinenet"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "miscellaneous-reimbursable-expenses",
+    "title": "Miscellaneous Reimbursable Expenses",
+    "summary": "Miscellaneous Reimbursable Expenses.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/joint-travel-regulations/miscellaneous-reimbursable-expenses",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Joint Travel Regulations",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/joint-travel-regulations"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "the-lifecycle-of-a-marine-corps-award",
+    "title": "The Lifecycle of a Marine Corps Award",
+    "summary": "The Lifecycle of a Marine Corps Award.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/awards/the-lifecycle-of-a-marine-corps-award",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Awards",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/awards"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "requesting-replacement-award-certificates",
+    "title": "Requesting Replacement Award Certificates",
+    "summary": "Requesting Replacement Award Certificates.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/awards/requesting-replacement-award-certificates",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Awards",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/awards"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "financial-rules",
+    "title": "Financial Rules",
+    "summary": "Financial Rules.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/joint-travel-regulations/financial-rules",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Joint Travel Regulations",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/joint-travel-regulations"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "foreign-awards-what-marines-need-to-know",
+    "title": "Foreign Awards - What Marines Need to Know",
+    "summary": "Foreign Awards - What Marines Need to Know.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/awards/foreign-awards-what-marines-need-to-know",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Awards",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/awards"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "submitting-a-mio-system-change-request",
+    "title": "Submitting a MIO System Change Request",
+    "summary": "Submitting a MIO System Change Request.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/missa-misso/submitting-a-mio-system-change-request",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "MISSA/MISSO",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/missa-misso"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "combat-awards-timeliness-is-key",
+    "title": "Combat Awards - Timeliness is Key",
+    "summary": "Combat Awards - Timeliness is Key.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/awards/combat-awards-timeliness-is-key",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Awards",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/awards"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "avoiding-common-pitfalls-in-awards-processing",
+    "title": "Avoiding Common Pitfalls in Awards Processing",
+    "summary": "Avoiding Common Pitfalls in Awards Processing.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/improved-awards-processing-system/avoiding-common-pitfalls-in-awards-processing",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Improved Awards Processing System",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/improved-awards-processing-system"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "retirement-timeline-and-checklist",
+    "title": "Retirement Timeline and Checklist",
+    "summary": "Retirement Timeline and Checklist.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/separations-and-retirement/retirement-timeline-and-checklist",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Separations and Retirement",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/separations-and-retirement"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "how-to-submit-personal-awards-for-your-marines",
+    "title": "How to Submit Personal Awards for Your Marines",
+    "summary": "Submit Personal Awards for Your Marines.",
+    "roles": [
+      "admin",
+      "commander",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/improved-awards-processing-system/how-to-submit-personal-awards-for-your-marines",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Improved Awards Processing System",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/improved-awards-processing-system"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "proofreading",
+    "title": "Proofreading",
+    "summary": "Proofreading.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/creating-correspondence/proofreading",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Creating Correspondence",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/creating-correspondence"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "creating-aa-forms",
+    "title": "Creating AA Forms",
+    "summary": "Creating AA Forms.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/creating-correspondence/creating-aa-forms",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Creating Correspondence",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/creating-correspondence"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "directives-management-0106",
+    "title": "Directives Management - 0106",
+    "summary": "Directives Management - 0106.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/functional-area-checklists/directives-management-0106",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Functional Area Checklists",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/functional-area-checklists"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "continuing-education-units-reserve-points-courses",
+    "title": "Continuing Education Units & Reserve Points Courses",
+    "summary": "Continuing Education Units & Reserve Points Courses.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/marinenet/continuing-education-units-reserve-points-courses",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "MarineNet",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/marinenet"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "detailed-filters-dates",
+    "title": "Detailed Filters Dates",
+    "summary": "Detailed Filters Dates.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/detailed-filters-dates",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "detailed-filters-numbers",
+    "title": "Detailed Filters Numbers",
+    "summary": "Detailed Filters Numbers.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/detailed-filters-numbers",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "detailed-filters-strings-text",
+    "title": "Detailed Filters Strings (Text)",
+    "summary": "Detailed Filters Strings (Text).",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/detailed-filters-strings-text",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "accessions",
+    "title": "Accessions",
+    "summary": "Accessions.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/travel-claim/accessions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Travel Claim",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/travel-claim"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "excess-baggage",
+    "title": "Excess Baggage",
+    "summary": "Excess Baggage.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/travel-claim/excess-baggage",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Travel Claim",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/travel-claim"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "post-to-post-no-leave",
+    "title": "Post to Post No Leave",
+    "summary": "Post to Post No Leave.",
+    "roles": [
+      "marine"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/travel-claim/post-to-post-no-leave",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Travel Claim",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/travel-claim"
+    },
+    "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "business-date-time-functions-and-expressions",
+    "title": "Business Date/Time Functions and Expressions",
+    "summary": "Business Date/Time Functions and Expressions.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": null,
+    "videoUrl": "https://marinenet.marines.mil/cognos-analytics/business-date-time-functions-and-expressions",
+    "mceleUrl": null,
+    "posterUrl": null,
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": "https://marinenet.marines.mil/cognos-analytics"
+    },
+    "lastVerified": "2026-06-02"
+  }
+]
