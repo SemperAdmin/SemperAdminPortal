@@ -49,7 +49,7 @@ export function BottomTabs({ onBrowse }: BottomTabsProps) {
     <nav
       aria-label="Primary mobile navigation"
       className={cn(
-        "fixed inset-x-0 bottom-0 z-30 grid grid-cols-5 border-t border-[var(--color-border)]",
+        "fixed inset-x-0 bottom-0 z-40 grid grid-cols-5 border-t border-[var(--color-border)]",
         "bg-[color-mix(in_srgb,var(--color-bg-elev)_94%,transparent)] backdrop-blur-md",
         "pb-[env(safe-area-inset-bottom,0)] lg:hidden"
       )}
