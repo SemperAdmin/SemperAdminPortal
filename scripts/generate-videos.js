@@ -20,6 +20,10 @@ async function generateVideos() {
     let created = 0;
     let skipped = 0;
 
+    const escapeYaml = (str) => {
+      return str.replace(/\\/g, "\\\\").replace(/"/g, '\\"');
+    };
+
     for (const video of videos) {
       if (!video.slug || !video.title) {
         console.warn(`Skipping video: ${video.slug}`);
@@ -38,12 +42,12 @@ async function generateVideos() {
       const source = video.source || {};
 
       const yamlLines = [
-        `title: "${video.title.replace(/"/g, '\\"')}"`,
+        `title: "${escapeYaml(video.title)}"`,
         `slug: "${video.slug}"`,
-        `summary: "${summary.replace(/"/g, '\\"')}"`,
+        `summary: "${escapeYaml(summary)}"`,
         `roles: [${(video.roles || ["leader"]).map((r) => `"${r}"`).join(", ")}]`,
         `durationSeconds: ${video.durationSeconds || 0}`,
-        `videoUrl: "${video.videoUrl}"`,
+        `videoUrl: "${escapeYaml(video.videoUrl)}"`,
       ];
 
       if (video.mceleUrl) {
@@ -52,11 +56,15 @@ async function generateVideos() {
 
       yamlLines.push(
         "source:",
-        `  title: "${(source.title || "MCeLE Training").replace(/"/g, '\\"')}"`,
-        '  publisher: "MCeLE"',
-        `  url: "${(source.url || "").replace(/"/g, '\\"')}"`,
-        `lastVerified: "2026-06-02"`
+        `  title: "${escapeYaml(source.title || "MCeLE Training")}"`,
+        '  publisher: "MCeLE"'
       );
+
+      if (source.url) {
+        yamlLines.push(`  url: "${escapeYaml(source.url)}"`);
+      }
+
+      yamlLines.push(`lastVerified: "2026-06-02"`);
 
       const yaml = yamlLines.join("\n");
 
