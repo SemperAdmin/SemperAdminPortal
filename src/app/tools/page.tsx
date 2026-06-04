@@ -75,9 +75,13 @@ const TOOL_LABEL: Record<ToolType, string> = {
   generator: "Generator",
 };
 
+// Accents must hold visible contrast against both dark-navy and parchment
+// card surfaces. Avoid raw --color-marine-blue here. It matches the dark
+// card surface and renders the icon, type pill, and Open link invisible
+// in dark mode.
 const OUTPUT_ACCENT: Record<OutputType, string> = {
   pdf: "var(--color-usmc-scarlet)",
-  docx: "var(--color-marine-blue)",
+  docx: "var(--color-marine-blue-100)",
   calculator: "var(--color-status-info)",
   checklist: "var(--color-role-admin)",
 };
@@ -86,7 +90,7 @@ const TOOL_ACCENT: Record<ToolType, string> = {
   calculator: "var(--color-status-info)",
   monitor: "var(--color-usmc-scarlet)",
   aggregator: "var(--color-leader-brass)",
-  generator: "var(--color-marine-blue)",
+  generator: "var(--color-marine-blue-100)",
 };
 
 function getIcon(tool: ToolData): LucideIcon {
