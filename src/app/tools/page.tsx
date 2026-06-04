@@ -17,9 +17,7 @@ import { PageHeader } from "@/components/domain/page-header";
 import { MetaRow } from "@/components/domain/meta-row";
 import { FilterBar, type FilterChip } from "@/components/domain/filter-bar";
 import { StatusPill } from "@/components/ui/status-pill";
-import { useRoleStore } from "@/lib/store/role-store";
-import { useMounted } from "@/hooks/use-mounted";
-import type { Role } from "@/lib/roles";
+import { ROLES, ROLE_LABEL, type Role } from "@/lib/roles";
 import { cn } from "@/lib/utils";
 
 type OutputType = "pdf" | "docx" | "calculator" | "checklist";
@@ -112,8 +110,6 @@ function classify(date: string): "fresh" | "aging" | "stale" {
 }
 
 export default function ToolsIndex() {
-  const role = useRoleStore((s) => s.role);
-  const mounted = useMounted();
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   const internalTools = (require("@/generated/tools.json") as InternalTool[]).map((t) => ({ ...t, isExternal: false as const }));
   // eslint-disable-next-line @typescript-eslint/no-require-imports
@@ -121,11 +117,13 @@ export default function ToolsIndex() {
   const data: ToolData[] = [...internalTools, ...externalTools];
 
   const [typeFilter, setTypeFilter] = React.useState<string>("all");
+  const [roleFilter, setRoleFilter] = React.useState<string>("all");
 
+  // Role filter is opt-in. Default "all" shows every tool regardless of role.
   const roleFiltered = React.useMemo(() => {
-    if (!mounted || !role) return data;
-    return data.filter((t) => t.roles.includes(role));
-  }, [data, mounted, role]);
+    if (roleFilter === "all") return data;
+    return data.filter((t) => t.roles.includes(roleFilter as Role));
+  }, [data, roleFilter]);
 
   const visible = React.useMemo(() => {
     let list = roleFiltered;
@@ -152,6 +150,13 @@ export default function ToolsIndex() {
     generator: roleFiltered.filter((t) => t.isExternal && t.toolType === "generator").length,
   };
 
+  const roleCounts: Record<string, number> = {
+    all: data.length,
+    ...Object.fromEntries(
+      ROLES.map((r) => [r, data.filter((t) => t.roles.includes(r)).length])
+    ),
+  };
+
   const chips: FilterChip[] = [
     { id: "all", label: "All", count: counts.all },
     { id: "calculator", label: "Calculator", count: counts.calculator },
@@ -161,6 +166,11 @@ export default function ToolsIndex() {
     { id: "pdf", label: "PDF", count: counts.pdf },
     { id: "docx", label: "DOCX", count: counts.docx },
     { id: "checklist", label: "Checklist", count: counts.checklist },
+  ];
+
+  const roleChips: FilterChip[] = [
+    { id: "all", label: "All roles", count: roleCounts.all },
+    ...ROLES.map((r) => ({ id: r, label: ROLE_LABEL[r], count: roleCounts[r] })),
   ];
 
   return (
@@ -188,6 +198,13 @@ export default function ToolsIndex() {
         chips={chips}
         activeId={typeFilter}
         onChange={setTypeFilter}
+      />
+
+      <FilterBar
+        label="Role"
+        chips={roleChips}
+        activeId={roleFilter}
+        onChange={setRoleFilter}
       />
 
       {visible.length === 0 ? (
