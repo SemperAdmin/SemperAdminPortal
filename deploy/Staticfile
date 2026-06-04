@@ -1,0 +1,4 @@
+# Cloud.gov staticfile buildpack config.
+# Copied into out/ at deploy time. The export uses trailingSlash, so every
+# route is a folder with index.html and the buildpack serves it directly.
+# Directory index listing stays off by default.

@@ -17,12 +17,15 @@ for (const file of REQUIRED_GENERATED) {
 }
 
 /** @type {import('next').NextConfig} */
-const BASE_PATH = "/SemperAdminPortal";
+// Deploy target switch.
+// Default build targets GitHub Pages and serves under /SemperAdminPortal.
+// Setting DEPLOY_TARGET=cloudgov serves at the host root for Cloud.gov.
+const IS_CLOUD_GOV = process.env.DEPLOY_TARGET === "cloudgov";
+const BASE_PATH = IS_CLOUD_GOV ? "" : "/SemperAdminPortal";
 
 const nextConfig = {
   output: "export",
-  basePath: BASE_PATH,
-  assetPrefix: BASE_PATH,
+  ...(BASE_PATH ? { basePath: BASE_PATH, assetPrefix: BASE_PATH } : {}),
   env: {
     NEXT_PUBLIC_BASE_PATH: BASE_PATH,
   },

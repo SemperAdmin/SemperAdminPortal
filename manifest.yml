@@ -1,0 +1,15 @@
+# Cloud.gov deployment manifest.
+# Serves the static export in out/ through the staticfile buildpack.
+# Build first with DEPLOY_TARGET=cloudgov so assets resolve at the host root,
+# then copy deploy/Staticfile into out/ before cf push.
+---
+applications:
+  - name: semper-admin-portal
+    memory: 64M
+    disk_quota: 512M
+    instances: 1
+    path: out
+    buildpacks:
+      - staticfile_buildpack
+    # No routes block. cf assigns semper-admin-portal.app.cloud.gov by default.
+    # Confirm the hostname is free, or set an explicit route here.
