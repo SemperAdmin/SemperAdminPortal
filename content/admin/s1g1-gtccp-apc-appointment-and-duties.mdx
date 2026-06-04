@@ -32,6 +32,7 @@ references:
   - "DoD GTCC Regulations Annex 9 Required Template for CPM Appointment Letter"
   - "DoD GTCC Regulations Annex 10 Required Template for APC Appointment Letter"
   - "DoD GTCC Regulations Annex 12 Required Template for Read Only Access (ROA)"
+  - "CitiManager Permanent Account Closure Confirmation effective 13 Jun 2026"
 performanceSteps:
   - "Identify the CPM and APC candidates"
   - "Verify grade and tour length"
@@ -82,10 +83,14 @@ Per DoD GTCC Regulations Section 040801 (APC Training), the APC completes the re
 6. Run CPM training. Per Section 040803, the CPM completes the parallel training.
 7. Establish the unit hierarchy. Per Section 041104 (Hierarchy Structure), the APC sets the unit hierarchy inside the EAS. HQMC owns HL1 and HL2. Major commands sit at HL3. Units sit at HL4.
 8. Process cardholder transfers. Per Section 041105 (Transferring Cardholders Between Hierarchies), on a cardholder PCS the losing APC transfers the IBA to the gaining APC inside EAS.
-9. Close accounts on separation. Per Section 041106 (Closure of Accounts Upon Separation), the APC closes the IBA on separation. Coordinate with the DTS DMM per MCO 4650.39A<Citation source="MCO 4650.39A" /> Chapter 9 to clear DTS-side debt before closure.
+9. Close accounts on separation. Per Section 041106 (Closure of Accounts Upon Separation), the APC closes the IBA on separation. Coordinate with the DTS DMM per MCO 4650.39A<Citation source="MCO 4650.39A" /> Chapter 9 to clear DTS-side debt before closure. Effective 13 June 2026, CitiManager requires a three-checkbox Permanent Account Closure confirmation before the closure executes.<Citation source="CitiManager Permanent Account Closure" />
 10. Identify inactive accounts. Per Section 041107 (Review Reports to Identify Inactive Accounts for Closure), pull the inactive accounts report monthly. Close accounts not used in the prescribed window.
 11. Run delinquency monitoring. Per Section 041108 (Monitoring and Reporting Delinquencies), the APC monitors the IBA and CBA delinquency reports per Section 0413 timelines.
 12. Maintain the APC Travel Card Guide. Per Section 041102 (APC Travel Card Guides), the APC retains the current DTMO APC Travel Card Guide as the desk reference.
+
+<Callout variant="warning" title="CitiManager closure status, effective 13 Jun 2026">
+  Closed - Temporary Block is the only closure status the APC can reverse. Every other Closed dropdown option in CitiManager Individual Online Maintenance and Bulk UI triggers permanent closure and forces the cardholder to reapply for a new card. A new Permanent Account Closure pop-up requires three checkbox acknowledgements before the Permanently Close Account button activates. Verify the intended status before clicking. When in doubt, select Closed - Temporary Block so the account stays reversible.<Citation source="CitiManager Permanent Account Closure" />
+</Callout>
 
 ## Systems of record and forms
 
@@ -110,6 +115,7 @@ Per DoD GTCC Regulations Section 040801 (APC Training), the APC completes the re
 - Hierarchy structure misaligned. Per Section 041104, the HL3 and HL4 structure aligns with the major command and unit relationships.
 - Cardholder transfer skipped on PCS. Per Section 041105, the losing APC transfers the IBA. Without the transfer, the cardholder loses access on PCS.
 - Accounts not closed on separation. Per Section 041106, the APC closes the IBA on separation. Stale accounts stay exposed to misuse and reflect in the inactive accounts report per Section 041107.
+- Wrong CitiManager closure status selected. Effective 13 June 2026, only Closed - Temporary Block stays reversible. Selecting any other Closed option permanently closes the account and forces the cardholder to reapply, which costs the unit a 60 to 90 day reapproval cycle and creates an audit finding on the next IGMC GTCCP FA inspection.<Citation source="CitiManager Permanent Account Closure" />
 - ROA template outside Annex 12 format. Per Annex 12, the ROA template is required. Outside-format requests fail.
 - APC Travel Card Guide out of date. Per Section 041102, the APC retains the current DTMO APC Travel Card Guide. Stale guides misalign the desk reference.
 

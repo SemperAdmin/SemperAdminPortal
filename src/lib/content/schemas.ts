@@ -58,6 +58,11 @@ export const toolSchema = baseFrontmatter.extend({
   routeSlug: z.string(),
 });
 
+export const externalToolSchema = baseFrontmatter.extend({
+  toolType: z.enum(["calculator", "monitor", "aggregator", "generator"]),
+  externalUrl: z.string().url(),
+});
+
 export const LINK_CATEGORIES = [
   "semper-admin",
   "educational",
