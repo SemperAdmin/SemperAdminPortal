@@ -14,6 +14,8 @@ import type { Role } from "@/lib/roles";
 export interface TreeLeaf {
   label: string;
   href: string;
+  /** Opens in a new tab. Use for external URLs. */
+  external?: boolean;
 }
 
 export interface TreeBranch {
@@ -49,6 +51,11 @@ const REFERENCE_SECTION: TreeSection = {
         { label: "IGMC", href: "/inspections/igmc" },
         { label: "MCAAT", href: "/inspections/mcaat" },
       ],
+    },
+    {
+      label: "TemplateToolBox",
+      href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCMRA_mra_SemperAdmin/SitePages/TemplateToolBox.aspx",
+      external: true,
     },
     { label: "About", href: "/about" },
   ],

@@ -184,19 +184,33 @@ function LeafLink({
   onItemClick?: () => void;
   nested?: boolean;
 }) {
-  const active = isLeafActive(pathname, leaf.href) || isActive(pathname, leaf.href);
+  const active = !leaf.external && (isLeafActive(pathname, leaf.href) || isActive(pathname, leaf.href));
+  const sharedClass = cn(
+    "relative flex items-center rounded-[var(--radius-sm)] px-2.5 py-1.5 text-[13px] transition-colors",
+    nested ? "font-medium" : "ml-8 font-medium",
+    active
+      ? "bg-[var(--color-surface-2)] text-[var(--color-foreground)] font-semibold"
+      : "text-[var(--color-muted-foreground)] hover:bg-[var(--color-surface-2)] hover:text-[var(--color-foreground)]"
+  );
+  if (leaf.external) {
+    return (
+      <a
+        href={leaf.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={onItemClick}
+        className={sharedClass}
+      >
+        <span className="truncate">{leaf.label}</span>
+      </a>
+    );
+  }
   return (
     <Link
       href={leaf.href}
       onClick={onItemClick}
       aria-current={active ? "page" : undefined}
-      className={cn(
-        "relative flex items-center rounded-[var(--radius-sm)] px-2.5 py-1.5 text-[13px] transition-colors",
-        nested ? "font-medium" : "ml-8 font-medium",
-        active
-          ? "bg-[var(--color-surface-2)] text-[var(--color-foreground)] font-semibold"
-          : "text-[var(--color-muted-foreground)] hover:bg-[var(--color-surface-2)] hover:text-[var(--color-foreground)]"
-      )}
+      className={sharedClass}
     >
       {active && (
         <span

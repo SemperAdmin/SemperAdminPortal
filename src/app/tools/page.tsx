@@ -113,12 +113,15 @@ function classify(date: string): "fresh" | "aging" | "stale" {
   return "fresh";
 }
 
+/* eslint-disable @typescript-eslint/no-require-imports */
+const TOOLS_DATA: ToolData[] = [
+  ...(require("@/generated/tools.json") as InternalTool[]).map((t) => ({ ...t, isExternal: false as const })),
+  ...(require("@/generated/external-tools.json") as ExternalTool[]).map((t) => ({ ...t, isExternal: true as const })),
+];
+/* eslint-enable @typescript-eslint/no-require-imports */
+
 export default function ToolsIndex() {
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const internalTools = (require("@/generated/tools.json") as InternalTool[]).map((t) => ({ ...t, isExternal: false as const }));
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const externalTools = (require("@/generated/external-tools.json") as ExternalTool[]).map((t) => ({ ...t, isExternal: true as const }));
-  const data: ToolData[] = [...internalTools, ...externalTools];
+  const data = TOOLS_DATA;
 
   const [typeFilter, setTypeFilter] = React.useState<string>("all");
   const [roleFilter, setRoleFilter] = React.useState<string>("all");
