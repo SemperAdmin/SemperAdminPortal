@@ -15,7 +15,7 @@ export const Skeleton = React.forwardRef<HTMLDivElement, SkeletonProps>(
         ref={ref}
         className={cn(
           "relative overflow-hidden rounded-[var(--radius-sm)] bg-[var(--color-surface-2)]",
-          "after:absolute after:inset-0 after:-translate-x-full after:animate-[shimmer_1.6s_infinite]",
+          "after:absolute after:inset-0 after:-translate-x-full motion-safe:after:animate-[shimmer_1.6s_infinite]",
           "after:bg-gradient-to-r after:from-transparent after:via-[color-mix(in_srgb,var(--color-foreground)_5%,transparent)] after:to-transparent",
           className
         )}
