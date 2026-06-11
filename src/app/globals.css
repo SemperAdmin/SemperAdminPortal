@@ -47,6 +47,9 @@
   --color-neutral-300: #C9BD96;
   --color-neutral-400: #A89A72;
   --color-neutral-500: #8A7E63;
+  /* 550 exists for subtle text. 500 fails WCAG AA on light surfaces
+     (3.6:1 on bg, 3.9:1 on card). 550 clears 5:1 on both. */
+  --color-neutral-550: #6E6450;
   --color-neutral-600: #5C5340;
   --color-neutral-700: #3A3328;
   --color-neutral-800: #26221A;
@@ -143,7 +146,7 @@
   --color-secondary-foreground: var(--color-parchment);
   --color-muted: var(--color-neutral-100);
   --color-muted-foreground: var(--color-neutral-600);
-  --color-subtle-foreground: var(--color-neutral-500);
+  --color-subtle-foreground: var(--color-neutral-550);
   --color-accent: var(--color-brass);
   --color-accent-foreground: #1A1610;
   --color-destructive: var(--color-status-stale);

@@ -25,13 +25,19 @@ export interface TreeNavProps {
   onItemClick?: () => void;
 }
 
+/** Strips the trailing slash the static export adds to every path. */
+function normalizePath(p: string): string {
+  return p.length > 1 && p.endsWith("/") ? p.slice(0, -1) : p;
+}
+
 function isActive(pathname: string, href: string): boolean {
-  if (href === "/") return pathname === "/";
-  return pathname === href || pathname.startsWith(href + "/");
+  const path = normalizePath(pathname);
+  if (href === "/") return path === "/";
+  return path === href || path.startsWith(href + "/");
 }
 
 function isLeafActive(pathname: string, href: string): boolean {
-  return pathname === href;
+  return normalizePath(pathname) === normalizePath(href);
 }
 
 export function TreeNav({ role, className, onItemClick }: TreeNavProps) {
@@ -139,7 +145,7 @@ function BranchNode({
           <Link
             href={branch.href}
             onClick={onItemClick}
-            aria-current={branchActive ? "page" : undefined}
+            aria-current={isLeafActive(pathname, branch.href) ? "page" : undefined}
             className={cn(
               "flex-1 truncate rounded-[var(--radius-sm)] px-2 py-1.5 text-sm font-semibold transition-colors",
               branchActive
@@ -150,14 +156,17 @@ function BranchNode({
             {branch.label}
           </Link>
         ) : (
-          <span
+          <button
+            type="button"
             onClick={() => setOpen((o) => !o)}
-            role="button"
-            tabIndex={-1}
-            className="flex-1 cursor-pointer truncate rounded-[var(--radius-sm)] px-2 py-1.5 text-sm font-semibold text-[var(--color-foreground)]"
+            aria-expanded={open}
+            className={cn(
+              "flex-1 cursor-pointer truncate rounded-[var(--radius-sm)] px-2 py-1.5 text-left text-sm font-semibold text-[var(--color-foreground)] hover:bg-[var(--color-surface-2)]",
+              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-ring)]"
+            )}
           >
             {branch.label}
-          </span>
+          </button>
         )}
       </div>
       {open && (
@@ -184,7 +193,9 @@ function LeafLink({
   onItemClick?: () => void;
   nested?: boolean;
 }) {
-  const active = !leaf.external && (isLeafActive(pathname, leaf.href) || isActive(pathname, leaf.href));
+  // Exact match only. Prefix matching marked parent leaves like /commander
+  // as current on every child route.
+  const active = !leaf.external && isLeafActive(pathname, leaf.href);
   const sharedClass = cn(
     "relative flex items-center rounded-[var(--radius-sm)] px-2.5 py-1.5 text-[13px] transition-colors",
     nested ? "font-medium" : "ml-8 font-medium",

@@ -24,9 +24,10 @@ const LABEL: Record<Status, string> = {
 };
 
 /**
- * LastVerified - v1.2.
+ * LastVerified - v1.3.
  * Wraps StatusPill with verification freshness classification.
- * Refactored from inline tinted box. Logic preserved.
+ * No live region: the date is static at render, and aria-live on static
+ * content announces noise on every page load.
  */
 export function LastVerified({
   date,
@@ -47,8 +48,6 @@ export function LastVerified({
       label={`${LABEL[status]} ${formatted}`}
       size="sm"
       className={className}
-      role="status"
-      aria-live="polite"
     />
   );
 }

@@ -37,7 +37,10 @@ function Redirecting() {
       <noscript>
         <meta httpEquiv="refresh" content={`0; url=${PORTAL_ROOT}`} />
       </noscript>
-      <main className="mx-auto flex min-h-[60dvh] max-w-md flex-col items-center justify-center px-4 text-center">
+      <main
+        id="main"
+        className="mx-auto flex min-h-[60dvh] max-w-md flex-col items-center justify-center px-4 text-center"
+      >
         <p
           className="font-display text-3xl tracking-wide"
           style={{ fontFamily: "var(--font-display)" }}
@@ -64,7 +67,10 @@ function Redirecting() {
 
 function FourOhFour() {
   return (
-    <main className="mx-auto flex min-h-[60dvh] max-w-2xl flex-col items-center justify-center px-4 text-center">
+    <main
+      id="main"
+      className="mx-auto flex min-h-[60dvh] max-w-2xl flex-col items-center justify-center px-4 text-center"
+    >
       <p className="mb-3 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--color-usmc-scarlet)]">
         <span
           aria-hidden="true"

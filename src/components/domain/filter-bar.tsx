@@ -38,6 +38,7 @@ export function FilterBar({
   onViewChange,
   className,
 }: FilterBarProps) {
+  const labelId = React.useId();
   return (
     <div
       className={cn(
@@ -46,11 +47,19 @@ export function FilterBar({
       )}
     >
       {label && (
-        <span className="mr-1 text-[10px] font-bold uppercase tracking-[0.1em] text-[var(--color-subtle-foreground)]">
+        <span
+          id={labelId}
+          className="mr-1 text-[10px] font-bold uppercase tracking-[0.1em] text-[var(--color-subtle-foreground)]"
+        >
           {label}
         </span>
       )}
-      <div className="flex flex-wrap items-center gap-1.5">
+      <div
+        role="group"
+        aria-labelledby={label ? labelId : undefined}
+        aria-label={label ? undefined : "Filters"}
+        className="flex flex-wrap items-center gap-1.5"
+      >
         {chips.map((chip) => {
           const active = chip.id === activeId;
           return (

@@ -89,7 +89,6 @@ export function Breadcrumbs({
 
   // Always render Home as first crumb. Last item is non-link "current".
   const crumbs = [{ label: "Home", href: "/" }, ...trail];
-  const last = crumbs.length - 1;
 
   // Truncate middle if exceeds maxSegments + 1 (Home + N).
   let visible: typeof crumbs;
@@ -114,10 +113,10 @@ export function Breadcrumbs({
     >
       <ol className="flex flex-wrap items-center gap-1.5">
         {visible.map((crumb, idx) => {
-          const _isLast = idx === visible.length - 1 && crumbs.length === visible.length;
-          const isLastFromCrumbs =
-            !truncated && idx === visible.length - 1 && idx === last;
-          const isCurrent = isLastFromCrumbs;
+          // Truncation only removes middle crumbs, so the final visible crumb
+          // is always the current page. Gating on !truncated rendered the
+          // current page as a self-link whenever the trail truncated.
+          const isCurrent = idx === visible.length - 1;
           return (
             <React.Fragment key={crumb.href + idx}>
               {idx > 0 && (

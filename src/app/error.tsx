@@ -22,7 +22,10 @@ export default function GlobalError({
   }, [error]);
 
   return (
-    <main className="mx-auto flex min-h-[60dvh] max-w-2xl flex-col items-center justify-center px-4 text-center">
+    <main
+      id="main"
+      className="mx-auto flex min-h-[60dvh] max-w-2xl flex-col items-center justify-center px-4 text-center"
+    >
       <div
         className="mb-4 grid size-14 place-items-center rounded-full bg-[color-mix(in_srgb,var(--color-status-stale)_14%,transparent)] text-[var(--color-status-stale)]"
         aria-hidden="true"
