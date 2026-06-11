@@ -45,11 +45,11 @@ function VideoCard({ v }: { v: VideoData }) {
       href={mceleUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative flex flex-col overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-surface)] transition-[transform,box-shadow,border-color] duration-[120ms] ease-out motion-safe:hover:-translate-y-0.5 hover:shadow-lg hover:border-[var(--color-usmc-scarlet)]/40 hover:[border-left-color:var(--color-usmc-scarlet)] [border-left:3px_solid_transparent]"
+      className="group relative flex flex-col overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface)] transition-[transform,box-shadow,border-color] duration-[120ms] ease-out motion-safe:hover:-translate-y-0.5 hover:shadow-lg hover:border-[var(--color-usmc-scarlet)]/40 hover:[border-left-color:var(--color-usmc-scarlet)] [border-left:3px_solid_transparent]"
     >
 
       {/* Ambient bloom on hover */}
-      <div className="pointer-events-none absolute inset-0 rounded-[var(--radius-card)] opacity-0 transition-opacity duration-[180ms] group-hover:opacity-100 bg-[radial-gradient(ellipse_at_50%_0%,color-mix(in_srgb,var(--color-usmc-scarlet)_8%,transparent)_0%,transparent_70%)]" />
+      <div className="pointer-events-none absolute inset-0 rounded-[var(--radius-md)] opacity-0 transition-opacity duration-[180ms] group-hover:opacity-100 bg-[radial-gradient(ellipse_at_50%_0%,color-mix(in_srgb,var(--color-usmc-scarlet)_8%,transparent)_0%,transparent_70%)]" />
 
       {/* Thumbnail zone */}
       <div className="relative flex h-24 shrink-0 items-center justify-center bg-[var(--color-bg-sunken)] overflow-hidden">

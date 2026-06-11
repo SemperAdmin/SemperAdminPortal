@@ -16,6 +16,8 @@ import { cn } from "@/lib/utils";
 export interface BottomTabsProps {
   /** Triggered when the Browse tab is tapped. */
   onBrowse?: () => void;
+  /** True while the browse drawer is open. Drives the Browse active state. */
+  browseOpen?: boolean;
 }
 
 interface TabSpec {
@@ -35,11 +37,11 @@ const TABS: TabSpec[] = [
   { id: "recent", label: "Recent", icon: Clock, href: "/recent" },
 ];
 
-export function BottomTabs({ onBrowse }: BottomTabsProps) {
+export function BottomTabs({ onBrowse, browseOpen = false }: BottomTabsProps) {
   const pathname = usePathname() ?? "/";
 
   const isActive = (tab: TabSpec): boolean => {
-    if (tab.action === "browse") return false;
+    if (tab.action === "browse") return browseOpen;
     if (!tab.href) return false;
     if (tab.href === "/") return pathname === "/";
     return pathname === tab.href || pathname.startsWith(tab.href + "/");
@@ -58,7 +60,8 @@ export function BottomTabs({ onBrowse }: BottomTabsProps) {
         const Icon = tab.icon;
         const active = isActive(tab);
         const className = cn(
-          "flex flex-col items-center justify-center gap-0.5 py-2 text-[10px] font-bold uppercase tracking-[0.04em] transition-colors",
+          // min-h 48px keeps the tap target above the 44px floor.
+          "flex min-h-12 flex-col items-center justify-center gap-0.5 py-2 text-[10px] font-bold uppercase tracking-[0.04em] transition-colors",
           active
             ? "text-[var(--color-usmc-scarlet)]"
             : "text-[var(--color-subtle-foreground)] hover:text-[var(--color-foreground)]"
@@ -71,6 +74,7 @@ export function BottomTabs({ onBrowse }: BottomTabsProps) {
               type="button"
               onClick={onBrowse}
               aria-label="Open browse drawer"
+              aria-expanded={browseOpen}
               className={className}
             >
               <Icon className="size-5" aria-hidden="true" />

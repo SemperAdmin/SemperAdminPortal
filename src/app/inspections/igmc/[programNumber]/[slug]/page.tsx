@@ -74,7 +74,13 @@ export default async function InspectionDetail({
     (n, s) => n + s.items.length,
     0
   );
-  const defaultOpen = program.subsections.map((s) => s.id);
+  // Short programs open fully. Long programs (Postal runs 89 items) open the
+  // first subsection only, so the collapsed headers double as a section index.
+  const LONG_PROGRAM_ITEMS = 30;
+  const defaultOpen =
+    totalItems > LONG_PROGRAM_ITEMS && program.subsections.length > 1
+      ? [program.subsections[0]!.id]
+      : program.subsections.map((s) => s.id);
 
   return (
     <article className="mx-auto max-w-4xl">

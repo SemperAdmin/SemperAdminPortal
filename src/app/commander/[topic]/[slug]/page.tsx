@@ -110,7 +110,7 @@ export default async function CommanderDetail({
       />
 
       {(fm.performanceSteps?.length ?? 0) > 0 && (
-        <section className="mb-6 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+        <section className="mb-6 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
           <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
             Command Actions
           </p>
@@ -127,7 +127,7 @@ export default async function CommanderDetail({
       <CrossRoleStrip links={crossRoleLinks} />
 
       {(fm.references?.length ?? 0) > 0 && (
-        <section className="mt-4 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+        <section className="mt-4 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
           <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
             References
           </p>

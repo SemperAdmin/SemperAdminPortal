@@ -109,7 +109,7 @@ export default function LeaveAndLibertyLanding() {
             <Link
               key={cat.slug}
               href={`/marines/${cat.slug}`}
-              className="group flex flex-col rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-primary)] hover:bg-[var(--color-muted)]/40"
+              className="group flex flex-col rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-primary)] hover:bg-[var(--color-muted)]/40"
             >
               <div className="mb-2 flex items-center justify-between">
                 <div className="inline-flex size-9 items-center justify-center rounded-[var(--radius-button)] bg-[var(--color-primary)]/10 text-[var(--color-primary)]">
@@ -130,7 +130,7 @@ export default function LeaveAndLibertyLanding() {
         })}
       </div>
 
-      <section className="mt-10 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5">
+      <section className="mt-10 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5">
         <h2 className="text-lg font-bold">Source authority</h2>
         <p className="mt-2 text-sm">
           Leave and liberty content sources from MCO 1050.3J (Regulations for

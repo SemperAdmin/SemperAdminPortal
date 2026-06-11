@@ -122,7 +122,7 @@ export default async function MarinesTopicIndex({
       </header>
 
       {sortedEntries.length === 0 ? (
-        <div className="rounded-[var(--radius-card)] border border-dashed border-[var(--color-border)] bg-[var(--color-muted)]/40 p-8 text-center">
+        <div className="rounded-[var(--radius-md)] border border-dashed border-[var(--color-border)] bg-[var(--color-muted)]/40 p-8 text-center">
           <FileText
             className="mx-auto size-8 opacity-40"
             aria-hidden="true"
@@ -149,7 +149,7 @@ export default async function MarinesTopicIndex({
               <li key={fm.slug}>
                 <Link
                   href={`/marines/${topic}/${fm.slug}`}
-                  className="group flex items-start justify-between gap-3 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-primary)] hover:bg-[var(--color-muted)]/40"
+                  className="group flex items-start justify-between gap-3 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-primary)] hover:bg-[var(--color-muted)]/40"
                 >
                   <div className="min-w-0">
                     <p className="font-semibold">{fm.title}</p>
@@ -206,7 +206,7 @@ function MarinesGroupFallback({
             <Link
               key={child.slug}
               href={`/marines/${child.slug}`}
-              className="group flex flex-col rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-primary)] hover:bg-[var(--color-muted)]/40"
+              className="group flex flex-col rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-primary)] hover:bg-[var(--color-muted)]/40"
             >
               <div className="mb-2 flex items-center justify-between">
                 <div className="inline-flex size-9 items-center justify-center rounded-[var(--radius-button)] bg-[var(--color-primary)]/10 text-[var(--color-primary)]">
@@ -228,7 +228,7 @@ function MarinesGroupFallback({
       </div>
 
       {categories.length === 0 && (
-        <div className="rounded-[var(--radius-card)] border border-dashed border-[var(--color-border)] bg-[var(--color-muted)]/40 p-8 text-center">
+        <div className="rounded-[var(--radius-md)] border border-dashed border-[var(--color-border)] bg-[var(--color-muted)]/40 p-8 text-center">
           <FileText className="mx-auto size-8 opacity-40" aria-hidden="true" />
           <p className="mt-3 text-sm font-semibold">No categories yet</p>
           <Link
@@ -270,7 +270,7 @@ function LeafTopicPage({ topic }: { topic: string }) {
           </p>
         </header>
 
-        <div className="rounded-[var(--radius-card)] border border-dashed border-[var(--color-border)] bg-[var(--color-muted)]/40 p-8 text-center">
+        <div className="rounded-[var(--radius-md)] border border-dashed border-[var(--color-border)] bg-[var(--color-muted)]/40 p-8 text-center">
           <FileText
             className="mx-auto size-8 opacity-40"
             aria-hidden="true"
@@ -346,7 +346,7 @@ function LeafTopicPage({ topic }: { topic: string }) {
       </div>
 
       {fm.performanceSteps.length > 0 && (
-        <section className="mt-6 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+        <section className="mt-6 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
           <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
             Quick Steps
           </p>
@@ -363,7 +363,7 @@ function LeafTopicPage({ topic }: { topic: string }) {
       <MdxContent source={entry.body} />
 
       {fm.relatedRoles && (
-        <section className="mt-8 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-4">
+        <section className="mt-8 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-4">
           <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
             How other roles handle this
           </p>
@@ -412,7 +412,7 @@ function LeafTopicPage({ topic }: { topic: string }) {
       )}
 
       {fm.references.length > 0 && (
-        <section className="mt-4 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+        <section className="mt-4 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
           <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
             References
           </p>

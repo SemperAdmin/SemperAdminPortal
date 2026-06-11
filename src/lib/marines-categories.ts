@@ -1751,6 +1751,14 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     icon: "Users",
     pageType: "leaf",
   },
+  {
+    slug: "records-and-personal-data",
+    label: "Records and Personal Data",
+    shortLabel: "Records",
+    description: "Your OMPF, MCTFS record, and Marine Online review responsibilities. Catching record errors before they cost you at a promotion or selection board.",
+    icon: "FileText",
+    pageType: "container",
+  },
 ];
 
 export function findMarinesCategory(slug: string): MarinesCategory | undefined {

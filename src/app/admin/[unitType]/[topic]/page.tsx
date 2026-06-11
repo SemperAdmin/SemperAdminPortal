@@ -7,6 +7,7 @@ import {
   getAdminContent
 } from "@/lib/content/loader";
 import { UNIT_TYPES, type UnitType } from "@/lib/content/schemas";
+import { toTopicLabel } from "@/lib/admin-topics";
 import { PageHeader } from "@/components/domain/page-header";
 import { Pill } from "@/components/ui/pill";
 
@@ -70,27 +71,7 @@ export default async function TopicIndex({
     return aFm.title.localeCompare(bFm.title);
   });
 
-  const TOPIC_LABEL_OVERRIDES: Record<string, string> = {
-    dts: "Defense Travel System",
-    gtccp: "Government Travel Charge Card Program",
-    gtcc: "Government Travel Charge Card",
-    pes: "Performance Evaluation System",
-    iram: "Individual Records Administration Manual",
-    jagman: "JAGMAN",
-    pcs: "Permanent Change of Station",
-    tad: "TAD and TDY Travel",
-    les: "Leave and Earnings Statement",
-    bah: "Basic Allowance for Housing",
-    bas: "Basic Allowance for Subsistence",
-    "separation-retirement": "Separation and Retirement",
-    "limited-duty": "Limited Duty",
-  };
-  const topicLabel =
-    TOPIC_LABEL_OVERRIDES[topic.toLowerCase()] ??
-    topic
-      .split("-")
-      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-      .join(" ");
+  const topicLabel = toTopicLabel(topic);
 
   return (
     <div className="mx-auto max-w-5xl">
@@ -109,7 +90,7 @@ export default async function TopicIndex({
             <li key={fm.slug}>
               <Link
                 href={`/admin/${ut}/${topic}/${fm.slug}`}
-                className="group flex items-start justify-between gap-4 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-5 transition-all duration-150 hover:-translate-y-0.5 hover:border-[var(--color-role-admin)] hover:shadow-[var(--shadow-md)]"
+                className="group flex items-start justify-between gap-4 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-5 transition-all duration-150 hover:-translate-y-0.5 hover:border-[var(--color-role-admin)] hover:shadow-[var(--shadow-md)]"
               >
                 <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-center gap-2">

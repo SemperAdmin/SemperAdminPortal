@@ -200,7 +200,7 @@ export default async function LeaderTopicIndex({
               <li key={fm.slug}>
                 <Link
                   href={`/leader/${topic}/${fm.slug}`}
-                  className="group flex items-start justify-between gap-3 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-brass)] hover:bg-[var(--color-muted)]/40"
+                  className="group flex items-start justify-between gap-3 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-brass)] hover:bg-[var(--color-muted)]/40"
                 >
                   <div className="min-w-0">
                     <p className="font-semibold">{fm.title}</p>

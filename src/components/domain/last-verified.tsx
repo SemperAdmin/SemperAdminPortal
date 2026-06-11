@@ -1,5 +1,6 @@
 import * as React from "react";
 import { StatusPill } from "@/components/ui/status-pill";
+import { classifyFreshness, type FreshnessStatus } from "@/lib/verification";
 
 export interface LastVerifiedProps {
   date: Date | string;
@@ -8,16 +9,7 @@ export interface LastVerifiedProps {
   className?: string;
 }
 
-type Status = "fresh" | "aging" | "stale";
-
-function classify(date: Date, ref: Date): Status {
-  const months = (ref.getTime() - date.getTime()) / (1000 * 60 * 60 * 24 * 30);
-  if (months >= 24) return "stale";
-  if (months >= 12) return "aging";
-  return "fresh";
-}
-
-const LABEL: Record<Status, string> = {
+const LABEL: Record<FreshnessStatus, string> = {
   fresh: "Verified",
   aging: "Aging",
   stale: "Stale",
@@ -35,8 +27,7 @@ export function LastVerified({
   className,
 }: LastVerifiedProps) {
   const d = typeof date === "string" ? new Date(date) : date;
-  const ref = referenceDate ?? new Date();
-  const status = classify(d, ref);
+  const status = classifyFreshness(d, referenceDate);
   const formatted = d.toLocaleDateString("en-US", {
     year: "numeric",
     month: "short",

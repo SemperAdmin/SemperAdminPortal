@@ -209,7 +209,7 @@ export function RelatedPages({
   if (top.length === 0) return null;
 
   return (
-    <section className="mt-8 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+    <section className="mt-8 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
       <p className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
         <Link2 className="size-3" aria-hidden="true" />
         Related Pages

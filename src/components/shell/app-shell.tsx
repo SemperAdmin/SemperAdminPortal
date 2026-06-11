@@ -69,7 +69,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       </div>
 
       <Footer className="pb-20 lg:pb-0" />
-      <BottomTabs onBrowse={() => setSideNavOpen(true)} />
+      <BottomTabs onBrowse={() => setSideNavOpen(true)} browseOpen={sideNavOpen} />
       <CommandPalette open={paletteOpen} onOpenChange={setPaletteOpen} />
       <RolePickerDialog />
       <RecentsTracker />

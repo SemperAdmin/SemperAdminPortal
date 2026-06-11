@@ -6,6 +6,7 @@ import {
   getAdminByUnitAndTopic
 } from "@/lib/content/loader";
 import { UNIT_TYPES, type UnitType } from "@/lib/content/schemas";
+import { toTopicLabel } from "@/lib/admin-topics";
 import { PageHeader } from "@/components/domain/page-header";
 import { MdxContent } from "@/components/domain/mdx-content";
 import { LastVerified } from "@/components/domain/last-verified";
@@ -65,10 +66,7 @@ export default async function AdminDetail({
   if (fm.unitType !== unitType || fm.topic !== topic) notFound();
 
   const ut = unitType as UnitType;
-  const topicLabel = topic
-    .split("-")
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(" ");
+  const topicLabel = toTopicLabel(topic);
 
   // Compute prev/next within topic
   const topicEntries = getAdminByUnitAndTopic(ut, topic);
@@ -133,7 +131,7 @@ export default async function AdminDetail({
         compact
       />
 
-      <section className="mb-6 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-4">
+      <section className="mb-6 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-4">
         <p className="text-xs font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
           {fm.trEventCode ? "T&R Event Details" : "Reference Information"}
         </p>
@@ -200,7 +198,7 @@ export default async function AdminDetail({
       </section>
 
       {fm.performanceSteps.length > 0 && (
-        <section className="mt-4 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+        <section className="mt-4 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
           <p className="text-xs font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
             {fm.trEventCode ? "Performance Steps (T&R)" : "Key Steps"}
           </p>
@@ -219,7 +217,7 @@ export default async function AdminDetail({
       <CrossRoleStrip links={crossRoleLinks} />
 
       {fm.references.length > 0 && (
-        <section className="mt-4 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+        <section className="mt-4 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
           <p className="text-xs font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
             References
           </p>

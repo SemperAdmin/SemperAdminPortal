@@ -68,7 +68,7 @@ export default async function CommanderTopicIndex({
             <li key={fm.slug}>
               <Link
                 href={`/commander/${topic}/${fm.slug}`}
-                className="group flex items-start justify-between gap-3 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-all hover:-translate-y-0.5 hover:border-[var(--color-border-strong)] hover:shadow-[var(--shadow-md)]"
+                className="group flex items-start justify-between gap-3 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-all hover:-translate-y-0.5 hover:border-[var(--color-border-strong)] hover:shadow-[var(--shadow-md)]"
               >
                 <div className="min-w-0">
                   <p className="font-semibold tracking-tight">{fm.title}</p>

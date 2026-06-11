@@ -1,14 +1,23 @@
 import type { Role } from "@/lib/roles";
+import roleNav from "@/generated/role-nav.json";
 
 /**
- * Role-aware navigation trees - v1.2.
+ * Role-aware navigation trees - v1.3.
  *
  * Single source of truth for the desktop sidebar TreeNav and the mobile drawer.
  * Each role surfaces its own topic tree. Reference items (search, citations,
  * tools, videos) appear under every role.
  *
- * Phase 4 will swap the hand-curated trees for a generator that consumes
- * src/generated/*.json catalogs at build time.
+ * Marine, Leader, and Admin trees are generated at content-sync time by
+ * scripts/sync-content.mjs into src/generated/role-nav.json, driven by the
+ * label registries (marines-categories.ts, leader-categories.ts,
+ * admin-topics.ts) and the content catalogs. New content appears in the
+ * sidebar on the next `npm run content:sync` with zero edits here.
+ *
+ * The Commander tree stays hand-curated: its labels and grouping carry
+ * editorial judgment the catalog does not. The sync script warns when
+ * generated trees drift from content. Keep the Commander tree honest by
+ * hand when commander content changes.
  */
 
 export interface TreeLeaf {
@@ -61,34 +70,22 @@ const REFERENCE_SECTION: TreeSection = {
   ],
 };
 
-// =================================================================
-// MARINE
-// =================================================================
-const MARINE_TREE: TreeSection[] = [
-  {
-    label: "",
-    items: [
-      { label: "Home", href: "/" },
-    ],
-  },
-  REFERENCE_SECTION,
-];
+// Generated browse items per role. Shape is enforced by the generator.
+const GENERATED_NAV = roleNav as Record<
+  "marine" | "leader" | "admin",
+  (TreeBranch | TreeLeaf)[]
+>;
+
+function browseTree(items: (TreeBranch | TreeLeaf)[]): TreeSection[] {
+  return [{ label: "Browse content", items }, REFERENCE_SECTION];
+}
+
+const MARINE_TREE: TreeSection[] = browseTree(GENERATED_NAV.marine);
+const LEADER_TREE: TreeSection[] = browseTree(GENERATED_NAV.leader);
+const ADMIN_TREE: TreeSection[] = browseTree(GENERATED_NAV.admin);
 
 // =================================================================
-// LEADER
-// =================================================================
-const LEADER_TREE: TreeSection[] = [
-  {
-    label: "",
-    items: [
-      { label: "Home", href: "/" },
-    ],
-  },
-  REFERENCE_SECTION,
-];
-
-// =================================================================
-// COMMANDER
+// COMMANDER - hand-curated
 // =================================================================
 const COMMANDER_TREE: TreeSection[] = [
   {
@@ -188,7 +185,13 @@ const COMMANDER_TREE: TreeSection[] = [
           { label: "Records retention", href: "/commander/inspections-lifecycle/records-retention" },
         ],
       },
-      { label: "IPAC relationships", href: "/commander/relationships" },
+      {
+        label: "IPAC relationships",
+        href: "/commander/relationships",
+        children: [
+          { label: "IPAC connectivity and working relationships", href: "/commander/relationships/ipac-procedures" },
+        ],
+      },
       {
         label: "Audit posture",
         href: "/commander/audit-posture",
@@ -198,19 +201,6 @@ const COMMANDER_TREE: TreeSection[] = [
           { label: "CoRE vs CoRE+", href: "/commander/audit-posture/core-vs-core-plus" },
         ],
       },
-    ],
-  },
-  REFERENCE_SECTION,
-];
-
-// =================================================================
-// ADMIN
-// =================================================================
-const ADMIN_TREE: TreeSection[] = [
-  {
-    label: "",
-    items: [
-      { label: "Home", href: "/" },
     ],
   },
   REFERENCE_SECTION,

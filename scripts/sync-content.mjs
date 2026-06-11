@@ -82,6 +82,23 @@ fs.writeFileSync(
 );
 console.log("[content-sync] inspections: " + inspections.length + " entries");
 
+// These collections carry schemas and sync output but no route renders them.
+// Authoring content here without building the route ships dead links. The
+// search index and citations reverse index would emit URLs with no pages.
+const ROUTELESS_COLLECTIONS = ["policies", "situations", "snippets", "references"];
+for (const c of ROUTELESS_COLLECTIONS) {
+  if (loaded[c].length > 0) {
+    console.warn(
+      "[content-sync] WARN " +
+        c +
+        " has " +
+        loaded[c].length +
+        " entries but no route renders this collection. Build the route " +
+        "before publishing this content."
+    );
+  }
+}
+
 // Reference link manifest for inspection citations.
 const REF_LINKS_SRC = path.join(CONTENT, "inspections", "_reference-links.json");
 if (fs.existsSync(REF_LINKS_SRC)) {
@@ -255,6 +272,11 @@ if (citationIndex) {
     return "/admin/" + fm.unitType + "/" + fm.topic + "/" + fm.slug;
   }
   function urlForRole(role, fm) {
+    // Marine leaf topics carry topic equal to slug. Collapse to the
+    // single-segment canonical URL instead of the stuttered /x/x form.
+    if (role === "marines" && (!fm.topic || fm.topic === fm.slug)) {
+      return "/marines/" + fm.slug;
+    }
     return "/" + role + "/" + fm.topic + "/" + fm.slug;
   }
   function urlForPolicy(fm) {

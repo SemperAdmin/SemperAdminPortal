@@ -23,7 +23,7 @@ export function PrevNextNav({ prev, next, topicLabel }: PrevNextNavProps) {
       {prev ? (
         <Link
           href={prev.url}
-          className="group flex items-start gap-3 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-primary)] hover:bg-[var(--color-muted)]/40"
+          className="group flex items-start gap-3 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-primary)] hover:bg-[var(--color-muted)]/40"
         >
           <ChevronLeft
             className="mt-1 size-4 shrink-0 opacity-60 transition-opacity group-hover:opacity-100"
@@ -43,7 +43,7 @@ export function PrevNextNav({ prev, next, topicLabel }: PrevNextNavProps) {
       {next ? (
         <Link
           href={next.url}
-          className="group flex items-start justify-end gap-3 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 text-right transition-colors hover:border-[var(--color-primary)] hover:bg-[var(--color-muted)]/40"
+          className="group flex items-start justify-end gap-3 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 text-right transition-colors hover:border-[var(--color-primary)] hover:bg-[var(--color-muted)]/40"
         >
           <div className="min-w-0">
             <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">

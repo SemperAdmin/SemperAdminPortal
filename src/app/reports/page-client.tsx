@@ -32,6 +32,7 @@ import {
   type ReportDevStatus,
 } from "@/lib/content/schemas";
 import { cn } from "@/lib/utils";
+import { classifyFreshness } from "@/lib/verification";
 
 interface ReportData {
   slug: string;
@@ -54,13 +55,6 @@ interface ReportData {
   url?: string;
 }
 
-function classify(date: string): "fresh" | "aging" | "stale" {
-  const months =
-    (Date.now() - new Date(date).getTime()) / (1000 * 60 * 60 * 24 * 30);
-  if (months >= 24) return "stale";
-  if (months >= 12) return "aging";
-  return "fresh";
-}
 
 const CATEGORY_META: Record<
   ReportCategory,
@@ -158,7 +152,7 @@ function Pill({
 function ReportCard({ r }: { r: ReportData }) {
   const url = getResolvedUrl(r);
   const external = isExternal(url);
-  const status = classify(r.lastVerified);
+  const status = classifyFreshness(r.lastVerified);
   const inDev = r.devStatus === "in-development";
 
   return (

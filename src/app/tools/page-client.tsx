@@ -19,6 +19,7 @@ import { FilterBar, type FilterChip } from "@/components/domain/filter-bar";
 import { StatusPill } from "@/components/ui/status-pill";
 import { ROLES, ROLE_LABEL, type Role } from "@/lib/roles";
 import { cn } from "@/lib/utils";
+import { classifyFreshness } from "@/lib/verification";
 
 type OutputType = "pdf" | "docx" | "calculator" | "checklist";
 type ToolType = "calculator" | "monitor" | "aggregator" | "generator";
@@ -105,13 +106,6 @@ function getAccent(tool: ToolData): string {
   return tool.isExternal ? TOOL_ACCENT[tool.toolType] : OUTPUT_ACCENT[tool.outputType];
 }
 
-function classify(date: string): "fresh" | "aging" | "stale" {
-  const months =
-    (Date.now() - new Date(date).getTime()) / (1000 * 60 * 60 * 24 * 30);
-  if (months >= 24) return "stale";
-  if (months >= 12) return "aging";
-  return "fresh";
-}
 
 /* eslint-disable @typescript-eslint/no-require-imports */
 const TOOLS_DATA: ToolData[] = [
@@ -226,7 +220,7 @@ export default function ToolsIndex() {
             const Icon = getIcon(t);
             const label = getLabel(t);
             const accent = getAccent(t);
-            const status = classify(t.lastVerified);
+            const status = classifyFreshness(t.lastVerified);
             const commonClasses = cn(
               "group relative flex flex-col gap-3 overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-5 transition-all",
               "hover:-translate-y-0.5 hover:border-[var(--color-border-strong)] hover:shadow-[var(--shadow-md)]"

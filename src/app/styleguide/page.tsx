@@ -11,7 +11,6 @@ import { Button } from "@/components/ui/button";
 import { Pill } from "@/components/ui/pill";
 import { StatusPill } from "@/components/ui/status-pill";
 import { Skeleton, SkeletonText } from "@/components/ui/skeleton";
-import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import { RoleChip } from "@/components/domain/role-chip";
@@ -408,19 +407,6 @@ export default function StyleguidePage() {
               Use for blocking errors, never for stylistic emphasis.
             </AlertDescription>
           </Alert>
-        </div>
-      </Section>
-
-      <Section title="Legacy Badge (deprecated)" id="badges-legacy">
-        <p className="mb-3 text-sm text-[var(--color-muted-foreground)]">
-          Badge is deprecated in v1.2. Migrate consumers to Pill. Kept rendered here for visual diff during migration.
-        </p>
-        <div className="flex flex-wrap gap-2">
-          <Badge>Default</Badge>
-          <Badge variant="secondary">Secondary</Badge>
-          <Badge variant="outline">Outline</Badge>
-          <Badge variant="muted">Muted</Badge>
-          <Badge variant="accent">Accent</Badge>
         </div>
       </Section>
 

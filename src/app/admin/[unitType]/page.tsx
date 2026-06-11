@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { getAdminByUnit } from "@/lib/content/loader";
 import { UNIT_TYPES, type UnitType } from "@/lib/content/schemas";
+import { toTopicLabel } from "@/lib/admin-topics";
 import { PageHeader } from "@/components/domain/page-header";
 import { MetaRow } from "@/components/domain/meta-row";
 import { Pill } from "@/components/ui/pill";
@@ -68,31 +69,6 @@ export async function generateMetadata({
     title: UNIT_LABELS[unitType as UnitType],
     description: UNIT_DESCRIPTIONS[unitType as UnitType],
   };
-}
-
-const TOPIC_LABEL_OVERRIDES: Record<string, string> = {
-  dts: "Defense Travel System",
-  gtccp: "Government Travel Charge Card Program",
-  gtcc: "Government Travel Charge Card",
-  pes: "Performance Evaluation System",
-  iram: "Individual Records Administration Manual",
-  jagman: "JAGMAN",
-  pcs: "Permanent Change of Station",
-  tad: "TAD and TDY Travel",
-  les: "Leave and Earnings Statement",
-  bah: "Basic Allowance for Housing",
-  bas: "Basic Allowance for Subsistence",
-  "separation-retirement": "Separation and Retirement",
-  "limited-duty": "Limited Duty",
-};
-
-function toTopicLabel(topic: string): string {
-  const override = TOPIC_LABEL_OVERRIDES[topic.toLowerCase()];
-  if (override) return override;
-  return topic
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
 }
 
 export default async function UnitTypeLanding({
@@ -157,7 +133,7 @@ export default async function UnitTypeLanding({
       </PageHeader>
 
       {topicCards.length === 0 ? (
-        <div className="rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-6">
+        <div className="rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-6">
           <p className="text-sm">
             No content has been written for this unit type yet. Check back as
             content rolls out.

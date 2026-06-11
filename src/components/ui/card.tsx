@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
  * Roomy variant 24px (p-6) for hero/feature cards.
  */
 const cardVariants = cva(
-  "rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] text-[var(--color-card-foreground)] shadow-[var(--shadow-card)] transition-shadow",
+  "rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] text-[var(--color-card-foreground)] shadow-[var(--shadow-sm)] transition-shadow",
   {
     variants: {
       padding: {

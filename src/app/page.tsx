@@ -19,6 +19,10 @@ import {
   getTools,
 } from "@/lib/content/loader";
 import externalToolsData from "@/generated/external-tools.json";
+import {
+  findMarinesCategory,
+  findParentGroupForCategory,
+} from "@/lib/marines-categories";
 import { humanizeSegment, formatVerified, roleAccentVar, roleAccentStyle } from "@/lib/utils";
 
 // Build-time anchor for verified-fresh percentage math. Hoisted out
@@ -106,13 +110,24 @@ export default function HomePage() {
 
   // Latest updated: pull from every role catalog, sort by lastVerified, take top 6
   const latestUpdated: RecentEntry[] = [
-    ...marinesContent.map((e) => ({
-      href: `/marines/${e.frontmatter.topic}/${e.frontmatter.slug}`,
-      eyebrow: `Marines / ${humanizeSegment(e.frontmatter.topic)}`,
-      title: e.frontmatter.title,
-      summary: e.frontmatter.summary,
-      lastVerified: e.frontmatter.lastVerified,
-    })),
+    ...marinesContent.map((e) => {
+      const { topic, slug } = e.frontmatter;
+      // Leaf topics carry topic equal to slug. The single-segment route
+      // renders them, so collapse the stuttered /marines/x/x form and
+      // label the eyebrow with the registry group instead of the raw slug.
+      const leaf = !topic || topic === slug;
+      const groupLabel =
+        findParentGroupForCategory(topic)?.shortLabel ??
+        findMarinesCategory(topic)?.shortLabel ??
+        humanizeSegment(topic);
+      return {
+        href: leaf ? `/marines/${slug}` : `/marines/${topic}/${slug}`,
+        eyebrow: `Marines / ${groupLabel}`,
+        title: e.frontmatter.title,
+        summary: e.frontmatter.summary,
+        lastVerified: e.frontmatter.lastVerified,
+      };
+    }),
     ...leaderContent.map((e) => ({
       href: `/leader/${e.frontmatter.topic}/${e.frontmatter.slug}`,
       eyebrow: `Leader / ${humanizeSegment(e.frontmatter.topic)}`,

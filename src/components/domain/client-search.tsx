@@ -156,7 +156,7 @@ export function ClientSearch() {
           <li key={`${r.url}-${i}`}>
             <Link
               href={r.url}
-              className="group flex items-start justify-between gap-3 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-primary)] hover:bg-[var(--color-muted)]/40"
+              className="group flex items-start justify-between gap-3 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors hover:border-[var(--color-primary)] hover:bg-[var(--color-muted)]/40"
             >
               <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-1.5">
@@ -190,7 +190,7 @@ export function ClientSearch() {
       </ul>
 
       {!query && (
-        <section className="mt-8 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-4">
+        <section className="mt-8 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-4">
           <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
             Try these searches
           </p>

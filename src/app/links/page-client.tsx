@@ -11,6 +11,7 @@ import { EmptyState } from "@/components/domain/empty-state";
 import { FilterBar, type FilterChip } from "@/components/domain/filter-bar";
 import type { Role } from "@/lib/roles";
 import { cn } from "@/lib/utils";
+import { classifyFreshness } from "@/lib/verification";
 
 type LinkCategory =
   | "semper-admin"
@@ -98,13 +99,6 @@ const ACCESS_PILL_VARIANT: Record<
   unknown: "outline",
 };
 
-function classify(date: string): "fresh" | "aging" | "stale" {
-  const months =
-    (Date.now() - new Date(date).getTime()) / (1000 * 60 * 60 * 24 * 30);
-  if (months >= 24) return "stale";
-  if (months >= 12) return "aging";
-  return "fresh";
-}
 
 function matchQuery(link: LinkData, q: string): boolean {
   if (!q) return true;
@@ -322,7 +316,7 @@ export default function LinksIndex() {
 
 function LinkCard({ link }: { link: LinkData }) {
   const access = link.access ?? "unknown";
-  const status = classify(link.lastVerified);
+  const status = classifyFreshness(link.lastVerified);
   return (
     <a
       href={link.url}
