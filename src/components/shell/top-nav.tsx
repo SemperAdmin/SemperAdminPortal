@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
 import { Menu, Command as CommandIcon, HelpCircle } from "lucide-react";
 import { Logo } from "./logo";
 import { SearchBox } from "./search-box";
@@ -71,10 +72,12 @@ export function TopNav({ onOpenPalette, onOpenSideNav }: TopNavProps) {
           <Button
             variant="ghost"
             size="icon"
-            aria-label="Help"
+            asChild
             className="hidden md:inline-flex"
           >
-            <HelpCircle className="size-4" />
+            <Link href="/about" aria-label="About this site" title="About this site">
+              <HelpCircle className="size-4" />
+            </Link>
           </Button>
 
           <ThemeToggle />

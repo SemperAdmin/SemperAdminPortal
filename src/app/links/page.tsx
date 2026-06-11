@@ -238,7 +238,7 @@ export default function LinksIndex() {
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search title, summary, alias, or URL"
           aria-label="Search links"
-          className="w-full rounded-[var(--radius-button)] border border-[var(--color-border)] bg-[var(--color-surface-1)] py-2.5 pl-9 pr-9 text-[14px] text-[var(--color-foreground)] placeholder:text-[var(--color-muted-foreground)] focus:border-[var(--color-usmc-scarlet)] focus:outline-none focus:ring-1 focus:ring-[var(--color-usmc-scarlet)]"
+          className="w-full rounded-[var(--radius-button)] border border-[var(--color-border)] bg-[var(--color-surface)] py-2.5 pl-9 pr-9 text-[14px] text-[var(--color-foreground)] placeholder:text-[var(--color-muted-foreground)] focus:border-[var(--color-usmc-scarlet)] focus:outline-none focus:ring-1 focus:ring-[var(--color-usmc-scarlet)]"
         />
         {query && (
           <button

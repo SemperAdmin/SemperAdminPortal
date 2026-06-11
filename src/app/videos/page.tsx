@@ -45,14 +45,14 @@ function VideoCard({ v }: { v: VideoData }) {
       href={mceleUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative flex flex-col overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-surface-1)] transition-[transform,box-shadow,border-color] duration-[120ms] ease-out motion-safe:hover:-translate-y-0.5 hover:shadow-lg hover:border-[var(--color-usmc-scarlet)]/40 hover:[border-left-color:var(--color-usmc-scarlet)] [border-left:3px_solid_transparent]"
+      className="group relative flex flex-col overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-surface)] transition-[transform,box-shadow,border-color] duration-[120ms] ease-out motion-safe:hover:-translate-y-0.5 hover:shadow-lg hover:border-[var(--color-usmc-scarlet)]/40 hover:[border-left-color:var(--color-usmc-scarlet)] [border-left:3px_solid_transparent]"
     >
 
       {/* Ambient bloom on hover */}
       <div className="pointer-events-none absolute inset-0 rounded-[var(--radius-card)] opacity-0 transition-opacity duration-[180ms] group-hover:opacity-100 bg-[radial-gradient(ellipse_at_50%_0%,color-mix(in_srgb,var(--color-usmc-scarlet)_8%,transparent)_0%,transparent_70%)]" />
 
       {/* Thumbnail zone */}
-      <div className="relative flex h-24 shrink-0 items-center justify-center bg-[var(--color-surface-sunken)] overflow-hidden">
+      <div className="relative flex h-24 shrink-0 items-center justify-center bg-[var(--color-bg-sunken)] overflow-hidden">
         {v.posterUrl && (
           // eslint-disable-next-line @next/next/no-img-element
           <img
@@ -69,7 +69,7 @@ function VideoCard({ v }: { v: VideoData }) {
           <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(var(--color-foreground)_1px,transparent_1px),linear-gradient(90deg,var(--color-foreground)_1px,transparent_1px)] [background-size:24px_24px]" />
         )}
 
-        <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-surface-sunken)]/80 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-bg-sunken)]/80 via-transparent to-transparent" />
 
         {/* Play button */}
         <div className="relative z-10 flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-usmc-scarlet)] shadow-[0_2px_12px_color-mix(in_srgb,var(--color-usmc-scarlet)_45%,transparent)] transition-[transform,background] duration-[120ms] ease-out motion-safe:group-hover:scale-110 group-hover:bg-[color-mix(in_srgb,var(--color-usmc-scarlet)_85%,#000)]">
@@ -174,7 +174,7 @@ export default function VideosIndex() {
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search videos…"
           aria-label="Search videos by title or series"
-          className="w-full rounded-[var(--radius-button)] border border-[var(--color-border)] bg-[var(--color-surface-1)] py-2.5 pl-9 pr-9 text-[14px] text-[var(--color-foreground)] placeholder:text-[var(--color-muted-foreground)] focus:border-[var(--color-usmc-scarlet)] focus:outline-none focus:ring-1 focus:ring-[var(--color-usmc-scarlet)]"
+          className="w-full rounded-[var(--radius-button)] border border-[var(--color-border)] bg-[var(--color-surface)] py-2.5 pl-9 pr-9 text-[14px] text-[var(--color-foreground)] placeholder:text-[var(--color-muted-foreground)] focus:border-[var(--color-usmc-scarlet)] focus:outline-none focus:ring-1 focus:ring-[var(--color-usmc-scarlet)]"
         />
         {query && (
           <button

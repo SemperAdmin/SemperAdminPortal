@@ -12,7 +12,9 @@ export const metadata: Metadata = {
   },
   description:
     "Sourced, role-tagged USMC administrative reference and tools for Marines, leaders, commanders, and admin specialists.",
-  metadataBase: new URL("https://semperadmin.github.io/SemperAdminPortal"),
+  // Origin only. Next prepends basePath to metadata file-convention routes
+  // (opengraph-image), so a path here doubles to /SemperAdminPortal/SemperAdminPortal/.
+  metadataBase: new URL("https://semperadmin.github.io"),
   openGraph: {
     title: "Semper Admin Portal",
     description:

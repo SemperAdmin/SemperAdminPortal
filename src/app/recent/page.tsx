@@ -67,7 +67,7 @@ export default function RecentPage() {
             <li key={entry.href}>
               <Link
                 href={entry.href}
-                className="group flex items-center justify-between gap-3 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface-1)] px-4 py-3.5 transition-[border-color,box-shadow] hover:border-[var(--color-usmc-scarlet)]/40 hover:shadow-sm"
+                className="group flex items-center justify-between gap-3 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-3.5 transition-[border-color,box-shadow] hover:border-[var(--color-usmc-scarlet)]/40 hover:shadow-sm"
               >
                 <div className="flex min-w-0 items-center gap-3">
                   <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-[var(--color-surface-2)] font-mono text-[10px] font-bold text-[var(--color-muted-foreground)]">

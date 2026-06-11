@@ -18,6 +18,7 @@ import {
   getLeaderContent,
   getTools,
 } from "@/lib/content/loader";
+import externalToolsData from "@/generated/external-tools.json";
 import { humanizeSegment, formatVerified, roleAccentVar, roleAccentStyle } from "@/lib/utils";
 
 // Build-time anchor for verified-fresh percentage math. Hoisted out
@@ -62,7 +63,10 @@ export default function HomePage() {
   const commanderCount = commanderContent.length;
   const leaderCount = leaderContent.length;
   const totalCount = adminCount + marinesCount + commanderCount + leaderCount;
-  const toolsCount = getTools().length;
+  // Internal route tools plus external cloud.gov apps. Counting only the
+  // internal registry rendered 0 on the live stat strip while four external
+  // tools were live on /tools.
+  const toolsCount = getTools().length + (externalToolsData as unknown[]).length;
 
   // Citation breakdown from the registry
   const citationItems = Object.values(
