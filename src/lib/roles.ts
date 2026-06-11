@@ -1,14 +1,28 @@
 /**
  * Canonical role registry for content tagging and filtering.
- * Phase 5 hooks the persisted role state through Zustand.
+ * Persisted role state lives in src/lib/store/role-store.ts.
  */
 export const ROLES = ["marine", "leader", "commander", "admin"] as const;
 
 export type Role = (typeof ROLES)[number];
 
+/**
+ * Role id to route prefix. The marine role uses the plural /marines prefix.
+ * This map is the single bridge between role ids and URLs. Do not invert it
+ * by string manipulation.
+ */
+export const ROLE_HOME: Record<Role, string> = {
+  marine: "/marines",
+  leader: "/leader",
+  commander: "/commander",
+  admin: "/admin",
+};
+
 export interface RoleMeta {
   id: Role;
   label: string;
+  /** Compact label for dense chrome like the topbar segmented control. */
+  shortLabel: string;
   description: string;
   cssVar: string;
   iconName: "Shield" | "Star" | "Award" | "ClipboardList";
@@ -18,6 +32,7 @@ export const ROLE_META: Record<Role, RoleMeta> = {
   marine: {
     id: "marine",
     label: "Marine",
+    shortLabel: "Marine",
     description: "Junior enlisted. Quick policy, pay, leave, admin facts.",
     cssVar: "var(--color-role-marine)",
     iconName: "Shield",
@@ -25,6 +40,7 @@ export const ROLE_META: Record<Role, RoleMeta> = {
   leader: {
     id: "leader",
     label: "Leader",
+    shortLabel: "Leader",
     description: "NCO, SNCO, and Officer. How-to guides and decision aids.",
     cssVar: "var(--color-role-leader)",
     iconName: "Star",
@@ -32,6 +48,7 @@ export const ROLE_META: Record<Role, RoleMeta> = {
   commander: {
     id: "commander",
     label: "Commander",
+    shortLabel: "Commander",
     description: "XO / CoS / CO. Policy summaries, signing authorities, discipline.",
     cssVar: "var(--color-role-commander)",
     iconName: "Award",
@@ -39,6 +56,7 @@ export const ROLE_META: Record<Role, RoleMeta> = {
   admin: {
     id: "admin",
     label: "Administrator",
+    shortLabel: "Admin",
     description: "S-1 and admin specialist. Forms, systems, process flows.",
     cssVar: "var(--color-role-admin)",
     iconName: "ClipboardList",

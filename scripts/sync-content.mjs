@@ -1,7 +1,8 @@
 // Build-time content snapshot for client components.
-// Reads MDX frontmatter and emits a JSON catalog under src/generated/.
+// Reads MDX frontmatter and emits JSON catalogs plus role-nav under src/generated/.
 import fs from "node:fs";
 import path from "node:path";
+import { spawnSync } from "node:child_process";
 import matter from "gray-matter";
 import {
   citationSchema,
@@ -355,5 +356,34 @@ if (citationIndex) {
         totalScanned +
         " references resolved."
     );
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Role navigation trees. Delegates to scripts/generate-role-nav.mjs, which
+// imports the TS label registries via Node type stripping. On Node 22.18+
+// the direct import works. On Node 22.6 through 22.17 the .ts import fails,
+// so the generator re-runs as a child process under
+// --experimental-strip-types. Below Node 22.6 both paths fail loudly.
+// ---------------------------------------------------------------------------
+try {
+  await import("./generate-role-nav.mjs");
+} catch (err) {
+  const generator = path.join(ROOT, "scripts", "generate-role-nav.mjs");
+  const result = spawnSync(
+    process.execPath,
+    ["--experimental-strip-types", generator],
+    { stdio: "inherit" }
+  );
+  if (result.status !== 0) {
+    console.error(
+      "[content-sync] FATAL role-nav generation failed twice. Direct import " +
+        "error: " +
+        (err && err.message ? err.message : String(err)) +
+        ". Fallback under --experimental-strip-types also failed. Node 22.6 " +
+        "or newer is required. Current version: " +
+        process.version
+    );
+    process.exit(1);
   }
 }

@@ -4,6 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { Clock } from "lucide-react";
 import { TreeNav } from "./tree-nav";
+import { RoleSwitcher } from "./role-switcher";
 import { useRoleStore, useRecents } from "@/lib/store/role-store";
 import { ROLE_META } from "@/lib/roles";
 import {
@@ -21,12 +22,13 @@ export interface SideNavProps {
 }
 
 /**
- * SideNav - v1.2.
+ * SideNav - v1.3.
  * Desktop: persistent sticky left sidebar (272px). Mintlify deep tree.
  * Mobile: drawer (handled by AppShell, BottomTabs handles primary nav).
  *
- * Top of sidebar shows "Viewing as ROLE" context label. Role switching
- * lives in TopNav (not here). Last viewed section reads from role-store recents.
+ * Desktop sidebar shows the read-only "Viewing as ROLE" context label.
+ * Role switching lives in the TopNav segmented control on desktop and at
+ * the top of this drawer on mobile. Last viewed reads from role-store recents.
  */
 export function SideNav({ open, onOpenChange }: SideNavProps) {
   const role = useRoleStore((s) => s.role);
@@ -35,7 +37,7 @@ export function SideNav({ open, onOpenChange }: SideNavProps) {
   const activeRole = mounted ? role : null;
   const meta = activeRole ? ROLE_META[activeRole] : null;
 
-  const renderTree = (onItemClick?: () => void) => (
+  const renderTree = (onItemClick?: () => void, hideRoleContext = false) => (
     <>
       {!mounted ? (
         <div className="flex flex-col gap-2 pb-2" aria-hidden="true">
@@ -49,7 +51,7 @@ export function SideNav({ open, onOpenChange }: SideNavProps) {
         </div>
       ) : (
         <>
-          {meta ? (
+          {hideRoleContext ? null : meta ? (
             <div className="mb-3 flex items-center gap-2.5 border-b border-[var(--color-border)] pb-3">
               <span
                 aria-hidden="true"
@@ -122,8 +124,14 @@ export function SideNav({ open, onOpenChange }: SideNavProps) {
               SEMPER ADMIN
             </SheetTitle>
           </SheetHeader>
+          <div className="shrink-0 border-b border-[var(--color-border)] px-3 py-3">
+            <RoleSwitcher
+              className="w-full justify-between"
+              onSwitched={() => onOpenChange(false)}
+            />
+          </div>
           <div className="min-h-0 flex-1 overflow-y-auto px-3 pb-6 pt-3">
-            {renderTree(() => onOpenChange(false))}
+            {renderTree(() => onOpenChange(false), true)}
           </div>
         </SheetContent>
       </Sheet>

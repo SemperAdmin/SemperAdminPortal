@@ -4,6 +4,7 @@ import * as React from "react";
 import { Menu, Command as CommandIcon, HelpCircle } from "lucide-react";
 import { Logo } from "./logo";
 import { SearchBox } from "./search-box";
+import { RoleSwitcher } from "./role-switcher";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -14,9 +15,10 @@ export interface TopNavProps {
 }
 
 /**
- * TopNav - v1.2.
+ * TopNav - v1.3.
  * 56px floating pill chrome. Backdrop blur. Scarlet underline accent.
- * Search dominant at center. Segmented role switcher is the only role-switching surface.
+ * Search dominant at right. Segmented role switcher after the logo on
+ * desktop. Below lg the switcher lives at the top of the drawer instead.
  */
 export function TopNav({ onOpenPalette, onOpenSideNav }: TopNavProps) {
   return (
@@ -47,6 +49,8 @@ export function TopNav({ onOpenPalette, onOpenSideNav }: TopNavProps) {
         </Button>
 
         <Logo />
+
+        <RoleSwitcher className="hidden lg:flex" />
 
         <div className="ml-auto flex items-center gap-2">
           <div className="hidden sm:block">
