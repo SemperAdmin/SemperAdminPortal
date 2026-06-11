@@ -177,7 +177,7 @@ export default async function McaatSection({
                   {p.subsections.length}{" "}
                   {p.subsections.length === 1 ? "audience" : "audiences"}
                 </span>
-                <span className="inline-flex items-center gap-1 font-semibold text-[var(--color-marine-blue)] dark:text-[#B5C4DC]">
+                <span className="inline-flex items-center gap-1 font-semibold text-[var(--color-marine-blue)] dark:text-[var(--color-marine-blue-50)]">
                   Open
                   <ArrowRight className="size-3" aria-hidden="true" />
                 </span>

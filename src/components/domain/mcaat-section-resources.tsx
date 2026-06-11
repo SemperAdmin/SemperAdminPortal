@@ -33,7 +33,7 @@ export function McaatSectionResources({ sectionKey }: { sectionKey: string }) {
     >
       <header className="mb-4 flex items-center gap-2">
         <CalendarClock
-          className="size-4 text-[var(--color-marine-blue)] dark:text-[#B5C4DC]"
+          className="size-4 text-[var(--color-marine-blue)] dark:text-[var(--color-marine-blue-50)]"
           aria-hidden="true"
         />
         <h2 className="text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--color-foreground)]">
@@ -82,14 +82,14 @@ function SourceLink({
       className="group flex items-start gap-2 rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-3 transition-colors hover:border-[var(--color-marine-blue)]"
     >
       <Icon
-        className="mt-0.5 size-4 shrink-0 text-[var(--color-marine-blue)] dark:text-[#B5C4DC]"
+        className="mt-0.5 size-4 shrink-0 text-[var(--color-marine-blue)] dark:text-[var(--color-marine-blue-50)]"
         aria-hidden="true"
       />
       <div className="min-w-0 flex-1">
         <p className="text-[10px] font-bold uppercase tracking-[0.08em] text-[var(--color-subtle-foreground)]">
           {eyebrow}
         </p>
-        <p className="mt-0.5 text-[13px] font-semibold leading-snug text-[var(--color-foreground)] group-hover:text-[var(--color-marine-blue)] dark:group-hover:text-[#B5C4DC]">
+        <p className="mt-0.5 text-[13px] font-semibold leading-snug text-[var(--color-foreground)] group-hover:text-[var(--color-marine-blue)] dark:group-hover:text-[var(--color-marine-blue-50)]">
           {title}
         </p>
       </div>

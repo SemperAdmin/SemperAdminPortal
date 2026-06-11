@@ -45,7 +45,7 @@ export function McaatHubResources() {
       <header className="mb-4 flex items-center justify-between gap-2">
         <div className="flex items-center gap-2">
           <Network
-            className="size-4 text-[var(--color-marine-blue)] dark:text-[#B5C4DC]"
+            className="size-4 text-[var(--color-marine-blue)] dark:text-[var(--color-marine-blue-50)]"
             aria-hidden="true"
           />
           <h2 className="text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--color-foreground)]">
@@ -74,7 +74,7 @@ export function McaatHubResources() {
           href={`mailto:${RES.email}`}
           className="group flex items-start gap-2 rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-3 transition-colors hover:border-[var(--color-marine-blue)]"
         >
-          <Mail className="mt-0.5 size-4 shrink-0 text-[var(--color-marine-blue)] dark:text-[#B5C4DC]" aria-hidden="true" />
+          <Mail className="mt-0.5 size-4 shrink-0 text-[var(--color-marine-blue)] dark:text-[var(--color-marine-blue-50)]" aria-hidden="true" />
           <div className="min-w-0 flex-1">
             <p className="text-[10px] font-bold uppercase tracking-[0.08em] text-[var(--color-subtle-foreground)]">
               Contact
@@ -119,18 +119,18 @@ function ResourceLink({ icon: Icon, eyebrow, title, url, requiresCac }: Resource
   const External = url.startsWith("http");
   const inner = (
     <>
-      <Icon className="mt-0.5 size-4 shrink-0 text-[var(--color-marine-blue)] dark:text-[#B5C4DC]" aria-hidden="true" />
+      <Icon className="mt-0.5 size-4 shrink-0 text-[var(--color-marine-blue)] dark:text-[var(--color-marine-blue-50)]" aria-hidden="true" />
       <div className="min-w-0 flex-1">
         <p className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.08em] text-[var(--color-subtle-foreground)]">
           {eyebrow}
           {requiresCac && (
-            <span className="inline-flex items-center gap-0.5 rounded-[var(--radius-xs)] border border-[color-mix(in_srgb,var(--color-status-aging)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-aging)_10%,transparent)] px-1 py-0.5 text-[9px] font-bold uppercase tracking-[0.08em] text-[#8A4F12] dark:text-[var(--color-brass-300)]">
+            <span className="inline-flex items-center gap-0.5 rounded-[var(--radius-xs)] border border-[color-mix(in_srgb,var(--color-status-aging)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-aging)_10%,transparent)] px-1 py-0.5 text-[9px] font-bold uppercase tracking-[0.08em] text-[var(--color-status-aging-700)] dark:text-[var(--color-brass-300)]">
               <Lock className="size-2.5" aria-hidden="true" />
               CAC
             </span>
           )}
         </p>
-        <p className="mt-0.5 text-[13px] font-semibold leading-snug text-[var(--color-foreground)] group-hover:text-[var(--color-marine-blue)] dark:group-hover:text-[#B5C4DC]">
+        <p className="mt-0.5 text-[13px] font-semibold leading-snug text-[var(--color-foreground)] group-hover:text-[var(--color-marine-blue)] dark:group-hover:text-[var(--color-marine-blue-50)]">
           {title}
         </p>
       </div>

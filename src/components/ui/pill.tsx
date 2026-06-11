@@ -3,9 +3,10 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 /**
- * Pill primitive - v1.2.
+ * Pill primitive - v1.3.
  * Replaces Badge. Variants for role accents, status, and neutral tags.
- * Tints use color-mix for theme parity. No hex tints.
+ * Tints use color-mix for theme parity. Text tints reference the status
+ * ramp tokens in globals.css. No hex anywhere in this file.
  */
 const pillVariants = cva(
   "inline-flex items-center gap-1 whitespace-nowrap rounded-[var(--radius-chip)] border font-semibold uppercase tracking-wider transition-colors",
@@ -17,15 +18,15 @@ const pillVariants = cva(
         leader:
           "border-[color-mix(in_srgb,var(--color-role-leader)_35%,transparent)] bg-[color-mix(in_srgb,var(--color-role-leader)_14%,transparent)] text-[var(--color-brass-700)] dark:text-[var(--color-brass-300)]",
         commander:
-          "border-[color-mix(in_srgb,var(--color-role-commander)_28%,transparent)] bg-[color-mix(in_srgb,var(--color-role-commander)_10%,transparent)] text-[var(--color-marine-blue)] dark:text-[#B5C4DC]",
+          "border-[color-mix(in_srgb,var(--color-role-commander)_28%,transparent)] bg-[color-mix(in_srgb,var(--color-role-commander)_10%,transparent)] text-[var(--color-marine-blue)] dark:text-[var(--color-marine-blue-50)]",
         admin:
-          "border-[color-mix(in_srgb,var(--color-role-admin)_28%,transparent)] bg-[color-mix(in_srgb,var(--color-role-admin)_10%,transparent)] text-[#1F6940] dark:text-[#8FD4A8]",
+          "border-[color-mix(in_srgb,var(--color-role-admin)_28%,transparent)] bg-[color-mix(in_srgb,var(--color-role-admin)_10%,transparent)] text-[var(--color-status-fresh-700)] dark:text-[var(--color-status-fresh-300)]",
         success:
-          "border-[color-mix(in_srgb,var(--color-status-fresh)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-fresh)_10%,transparent)] text-[#1F6940] dark:text-[#8FD4A8]",
+          "border-[color-mix(in_srgb,var(--color-status-fresh)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-fresh)_10%,transparent)] text-[var(--color-status-fresh-700)] dark:text-[var(--color-status-fresh-300)]",
         warning:
-          "border-[color-mix(in_srgb,var(--color-status-aging)_32%,transparent)] bg-[color-mix(in_srgb,var(--color-status-aging)_12%,transparent)] text-[#8A4F12] dark:text-[var(--color-brass-300)]",
+          "border-[color-mix(in_srgb,var(--color-status-aging)_32%,transparent)] bg-[color-mix(in_srgb,var(--color-status-aging)_12%,transparent)] text-[var(--color-status-aging-700)] dark:text-[var(--color-brass-300)]",
         danger:
-          "border-[color-mix(in_srgb,var(--color-status-stale)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-stale)_10%,transparent)] text-[#8A2424] dark:text-[#E68A93]",
+          "border-[color-mix(in_srgb,var(--color-status-stale)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-stale)_10%,transparent)] text-[var(--color-status-stale-700)] dark:text-[var(--color-status-stale-300)]",
         info:
           "border-[color-mix(in_srgb,var(--color-status-info)_28%,transparent)] bg-[color-mix(in_srgb,var(--color-status-info)_10%,transparent)] text-[var(--color-status-info)]",
         neutral:

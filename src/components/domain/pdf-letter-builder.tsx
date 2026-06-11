@@ -78,13 +78,15 @@ export function PdfLetterBuilder() {
     logAuditEvent("EXPORT_PDF", "/tools/pdf-letter-builder", { template: form.template });
     try {
       const { Document, Page, Text, View, StyleSheet, pdf } = await import("@react-pdf/renderer");
+      // PDF styles take literal values only. These mirror globals.css tokens:
+      // #5C5340 = --color-neutral-600, #B82230 = --color-usmc-scarlet.
       const styles = StyleSheet.create({
         page: { padding: 56, fontFamily: "Helvetica", fontSize: 11 },
         header: { fontSize: 14, fontWeight: 700, marginBottom: 6 },
-        meta: { marginBottom: 14, color: "#404350" },
+        meta: { marginBottom: 14, color: "#5C5340" },
         body: { lineHeight: 1.5, marginBottom: 14 },
         sig: { marginTop: 36 },
-        rule: { borderBottom: 1, borderColor: "#C8102E", marginVertical: 8 },
+        rule: { borderBottom: 1, borderColor: "#B82230", marginVertical: 8 },
       });
       const Doc = (
         <Document>

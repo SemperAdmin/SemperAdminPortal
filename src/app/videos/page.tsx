@@ -72,7 +72,7 @@ function VideoCard({ v }: { v: VideoData }) {
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-bg-sunken)]/80 via-transparent to-transparent" />
 
         {/* Play button */}
-        <div className="relative z-10 flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-usmc-scarlet)] shadow-[0_2px_12px_color-mix(in_srgb,var(--color-usmc-scarlet)_45%,transparent)] transition-[transform,background] duration-[120ms] ease-out motion-safe:group-hover:scale-110 group-hover:bg-[color-mix(in_srgb,var(--color-usmc-scarlet)_85%,#000)]">
+        <div className="relative z-10 flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-usmc-scarlet)] shadow-[0_2px_12px_color-mix(in_srgb,var(--color-usmc-scarlet)_45%,transparent)] transition-[transform,background] duration-[120ms] ease-out motion-safe:group-hover:scale-110 group-hover:bg-[var(--color-usmc-scarlet-700)]">
           <Play className="size-4 fill-white text-white ml-0.5" />
         </div>
 

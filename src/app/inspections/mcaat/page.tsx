@@ -122,7 +122,7 @@ export default function McaatHub() {
                 <span className="text-[var(--color-muted-foreground)]">
                   {s.categoryCount} {s.categoryCount === 1 ? "category" : "categories"} loaded
                 </span>
-                <span className="inline-flex items-center gap-1 font-semibold text-[var(--color-marine-blue)] dark:text-[#B5C4DC]">
+                <span className="inline-flex items-center gap-1 font-semibold text-[var(--color-marine-blue)] dark:text-[var(--color-marine-blue-50)]">
                   Open
                   <ArrowRight className="size-3" aria-hidden="true" />
                 </span>

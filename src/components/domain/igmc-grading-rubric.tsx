@@ -163,10 +163,10 @@ function RubricBadge({
       : ShieldAlert;
   const cls =
     tone === "fresh"
-      ? "border-[color-mix(in_srgb,var(--color-status-fresh)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-fresh)_10%,transparent)] text-[#1F5A34] dark:text-[#7BC9A0]"
+      ? "border-[color-mix(in_srgb,var(--color-status-fresh)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-fresh)_10%,transparent)] text-[var(--color-status-fresh-700)] dark:text-[var(--color-status-fresh-300)]"
       : tone === "aging"
-      ? "border-[color-mix(in_srgb,var(--color-status-aging)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-aging)_10%,transparent)] text-[#8A4F12] dark:text-[var(--color-brass-300)]"
-      : "border-[color-mix(in_srgb,var(--color-status-stale)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-stale)_10%,transparent)] text-[#8A2424] dark:text-[#E68A93]";
+      ? "border-[color-mix(in_srgb,var(--color-status-aging)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-aging)_10%,transparent)] text-[var(--color-status-aging-700)] dark:text-[var(--color-brass-300)]"
+      : "border-[color-mix(in_srgb,var(--color-status-stale)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-stale)_10%,transparent)] text-[var(--color-status-stale-700)] dark:text-[var(--color-status-stale-300)]";
   return (
     <span
       className={`inline-flex shrink-0 items-center gap-1 rounded-[var(--radius-xs)] border px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-[0.08em] ${cls}`}

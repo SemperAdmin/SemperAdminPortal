@@ -92,7 +92,7 @@ export function InspectorGuide({ guide, faNumber, itemCode }: InspectorGuideProp
         })}
 
         {!guide.verified && (
-          <span className="inline-flex items-center gap-1.5 rounded-[var(--radius-xs)] border border-[color-mix(in_srgb,var(--color-status-aging)_32%,transparent)] bg-[color-mix(in_srgb,var(--color-status-aging)_10%,transparent)] px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[#8A4F12] dark:text-[var(--color-brass-300)]">
+          <span className="inline-flex items-center gap-1.5 rounded-[var(--radius-xs)] border border-[color-mix(in_srgb,var(--color-status-aging)_32%,transparent)] bg-[color-mix(in_srgb,var(--color-status-aging)_10%,transparent)] px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-[var(--color-status-aging-700)] dark:text-[var(--color-brass-300)]">
             <AlertTriangle className="size-3" aria-hidden="true" />
             LLM-assisted, pending source-text walk
           </span>
@@ -333,10 +333,10 @@ function CalloutChip({
   const sev = severity ?? "discrepancy";
   const tone =
     sev === "finding"
-      ? "border-[color-mix(in_srgb,var(--color-status-stale)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-stale)_10%,transparent)] text-[#8A2424] dark:text-[#E68A93]"
+      ? "border-[color-mix(in_srgb,var(--color-status-stale)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-stale)_10%,transparent)] text-[var(--color-status-stale-700)] dark:text-[var(--color-status-stale-300)]"
       : sev === "compliant"
-      ? "border-[color-mix(in_srgb,var(--color-status-fresh)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-fresh)_10%,transparent)] text-[#1F5A34] dark:text-[#7BC9A0]"
-      : "border-[color-mix(in_srgb,var(--color-status-aging)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-aging)_10%,transparent)] text-[#8A4F12] dark:text-[var(--color-brass-300)]";
+      ? "border-[color-mix(in_srgb,var(--color-status-fresh)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-fresh)_10%,transparent)] text-[var(--color-status-fresh-700)] dark:text-[var(--color-status-fresh-300)]"
+      : "border-[color-mix(in_srgb,var(--color-status-aging)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-aging)_10%,transparent)] text-[var(--color-status-aging-700)] dark:text-[var(--color-brass-300)]";
   const label = sev === "finding" ? "FINDING" : sev === "compliant" ? "COMPLIANT" : "DISCREPANCY";
   return (
     <p

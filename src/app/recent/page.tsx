@@ -55,7 +55,7 @@ export default function RecentPage() {
           </p>
           <Link
             href="/"
-            className="mt-2 inline-flex items-center gap-1.5 rounded-[var(--radius-sm)] bg-[var(--color-usmc-scarlet)] px-4 py-2 text-[13px] font-bold text-white transition-colors hover:bg-[color-mix(in_srgb,var(--color-usmc-scarlet)_85%,#000)]"
+            className="mt-2 inline-flex items-center gap-1.5 rounded-[var(--radius-sm)] bg-[var(--color-usmc-scarlet)] px-4 py-2 text-[13px] font-bold text-white transition-colors hover:bg-[var(--color-usmc-scarlet-700)]"
           >
             Go to Home
             <ArrowRight className="size-3.5" aria-hidden="true" />
