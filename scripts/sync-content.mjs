@@ -360,6 +360,83 @@ if (citationIndex) {
 }
 
 // ---------------------------------------------------------------------------
+// Client search index. Slim records only, so the full catalogs stay out of
+// the client bundle. Consumed by src/components/domain/client-search.tsx.
+// One record per page across the four role collections.
+// ---------------------------------------------------------------------------
+{
+  // Lowercase, tokenize, and dedupe. Citations repeat the same order numbers
+  // across references, so unique tokens cut the index size with no loss for
+  // per-term substring matching.
+  const joinLower = (arr) =>
+    Array.isArray(arr)
+      ? [...new Set(arr.join(" ").toLowerCase().split(/\s+/))].join(" ")
+      : "";
+  const searchIndex = [];
+  for (const e of loaded.admin) {
+    const badges = [];
+    if (e.unitType) badges.push(String(e.unitType).toUpperCase());
+    if (e.function) badges.push(e.function);
+    if (e.skillLevel) badges.push("L" + e.skillLevel);
+    if (e.trEventCode) badges.push(e.trEventCode);
+    searchIndex.push({
+      title: e.title,
+      url: "/admin/" + e.unitType + "/" + e.topic + "/" + e.slug,
+      summary: e.summary ?? "",
+      category: "Admin",
+      badges,
+      roles: e.roles ?? [],
+      slug: e.slug,
+      topic: e.topic ?? "",
+      tr: e.trEventCode ?? "",
+      policy: e.sourcePolicy ?? "",
+      refs: joinLower(e.references),
+      mos: joinLower(e.mosPerforming),
+    });
+  }
+  const roleEntry = (e, category, url) => ({
+    title: e.title,
+    url,
+    summary: e.summary ?? "",
+    category,
+    badges: e.topic ? [e.topic] : [],
+    roles: e.roles ?? [],
+    slug: e.slug,
+    topic: e.topic ?? "",
+    tr: "",
+    policy: e.sourcePolicy ?? "",
+    refs: joinLower(e.references),
+    mos: "",
+  });
+  for (const e of loaded.marines) {
+    // Leaves under parent groups carry topic equal to slug. The
+    // single-segment route /marines/[slug] handles them.
+    const url =
+      !e.topic || e.topic === e.slug
+        ? "/marines/" + e.slug
+        : "/marines/" + e.topic + "/" + e.slug;
+    searchIndex.push(roleEntry(e, "Marines", url));
+  }
+  for (const e of loaded.leader) {
+    searchIndex.push(
+      roleEntry(e, "Leader", "/leader/" + e.topic + "/" + e.slug)
+    );
+  }
+  for (const e of loaded.commander) {
+    searchIndex.push(
+      roleEntry(e, "Commander", "/commander/" + e.topic + "/" + e.slug)
+    );
+  }
+  fs.writeFileSync(
+    path.join(OUT, "search-index.json"),
+    JSON.stringify(searchIndex)
+  );
+  console.log(
+    "[content-sync] search-index: " + searchIndex.length + " entries"
+  );
+}
+
+// ---------------------------------------------------------------------------
 // Role navigation trees. Delegates to scripts/generate-role-nav.mjs, which
 // imports the TS label registries via Node type stripping. On Node 22.18+
 // the direct import works. On Node 22.6 through 22.17 the .ts import fails,

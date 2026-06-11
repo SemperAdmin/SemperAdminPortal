@@ -14,9 +14,9 @@ export default function SearchPage() {
     <div className="mx-auto max-w-5xl">
       <PageHeader
         eyebrow="Reference"
-        tags={<StatusPill status="info" label="Pagefind static index" />}
+        tags={<StatusPill status="info" label="Static index" />}
         title="SEARCH"
-        summary="Find content by title, topic, T&R event code, source policy, or reference. Results are filtered by your active role when one is selected."
+        summary="Find content by title, topic, T&R event code, source policy, or reference. Pages matching your active role rank first."
       />
       <ClientSearch />
     </div>

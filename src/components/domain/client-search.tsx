@@ -3,25 +3,28 @@
 import * as React from "react";
 import Link from "next/link";
 import { Search, ChevronRight } from "lucide-react";
-import adminData from "@/generated/admin.json";
-import marinesData from "@/generated/marines.json";
-import commanderData from "@/generated/commander.json";
-import policiesData from "@/generated/policies.json";
-import situationsData from "@/generated/situations.json";
+import searchIndexData from "@/generated/search-index.json";
+import { useRoleStore } from "@/lib/store/role-store";
+import { useMounted } from "@/hooks/use-mounted";
 
-interface BaseEntry {
+/**
+ * Slim search record emitted by scripts/sync-content.mjs. One per page
+ * across the marine, leader, commander, and admin collections. Full
+ * catalogs stay out of the client bundle.
+ */
+interface IndexEntry {
   title: string;
-  slug: string;
+  url: string;
   summary: string;
-  topic?: string;
-  unitType?: string;
-  function?: string;
-  trEventCode?: string;
-  sourcePolicy?: string;
-  references?: string[];
-  mosPerforming?: string[];
-  skillLevel?: number;
-  roles?: string[];
+  category: string;
+  badges: string[];
+  roles: string[];
+  slug: string;
+  topic: string;
+  tr: string;
+  policy: string;
+  refs: string;
+  mos: string;
 }
 
 interface SearchResult {
@@ -33,44 +36,23 @@ interface SearchResult {
   score: number;
 }
 
-const ADMIN: BaseEntry[] = adminData as BaseEntry[];
-const MARINES: BaseEntry[] = marinesData as BaseEntry[];
-const COMMANDER: BaseEntry[] = commanderData as BaseEntry[];
-const POLICIES: BaseEntry[] = policiesData as BaseEntry[];
-const SITUATIONS: BaseEntry[] = situationsData as BaseEntry[];
+const INDEX: IndexEntry[] = searchIndexData as IndexEntry[];
 
-function buildAdminUrl(entry: BaseEntry): string {
-  return `/admin/${entry.unitType}/${entry.topic}/${entry.slug}`;
-}
+/** Score boost for pages tagged with the user's active role. */
+const ACTIVE_ROLE_BOOST = 25;
 
-function buildMarinesUrl(entry: BaseEntry): string {
-  // Leaves under parent groups have topic equal to slug. The single-segment
-  // route /marines/[slug] handles them. Avoid generating duplicate-segment
-  // URLs like /marines/birth-and-adoption/birth-and-adoption.
-  if (!entry.topic || entry.topic === entry.slug) {
-    return `/marines/${entry.slug}`;
-  }
-  return `/marines/${entry.topic}/${entry.slug}`;
-}
-
-function buildCommanderUrl(entry: BaseEntry): string {
-  return `/commander/${entry.topic}/${entry.slug}`;
-}
-
-function scoreEntry(entry: BaseEntry, q: string): number {
+function scoreEntry(entry: IndexEntry, q: string, activeRole: string | null): number {
   const query = q.toLowerCase().trim();
   if (!query) return 0;
   const terms = query.split(/\s+/).filter(Boolean);
 
   let score = 0;
-  const title = (entry.title || "").toLowerCase();
-  const summary = (entry.summary || "").toLowerCase();
-  const slug = (entry.slug || "").toLowerCase();
-  const topic = (entry.topic || "").toLowerCase();
-  const tr = (entry.trEventCode || "").toLowerCase();
-  const policy = (entry.sourcePolicy || "").toLowerCase();
-  const refs = (entry.references || []).join(" ").toLowerCase();
-  const mos = (entry.mosPerforming || []).join(" ").toLowerCase();
+  const title = entry.title.toLowerCase();
+  const summary = entry.summary.toLowerCase();
+  const slug = entry.slug.toLowerCase();
+  const topic = entry.topic.toLowerCase();
+  const tr = entry.tr.toLowerCase();
+  const policy = entry.policy.toLowerCase();
 
   for (const term of terms) {
     if (title.includes(term)) score += 100;
@@ -79,117 +61,54 @@ function scoreEntry(entry: BaseEntry, q: string): number {
     if (summary.includes(term)) score += 40;
     if (tr.includes(term)) score += 60;
     if (policy.includes(term)) score += 50;
-    if (refs.includes(term)) score += 30;
-    if (mos.includes(term)) score += 30;
+    if (entry.refs.includes(term)) score += 30;
+    if (entry.mos.includes(term)) score += 30;
   }
+  if (score === 0) return 0;
 
-  // Boost exact title matches
+  // Boost exact matches
   if (title === query) score += 200;
   if (slug === query) score += 200;
+
+  // Active-role pages rank ahead of cross-role matches at equal relevance.
+  if (activeRole && entry.roles.includes(activeRole)) score += ACTIVE_ROLE_BOOST;
 
   return score;
 }
 
-function searchAll(query: string): SearchResult[] {
+function searchAll(query: string, activeRole: string | null): SearchResult[] {
   if (!query || query.trim().length < 2) return [];
 
   const results: SearchResult[] = [];
-
-  for (const entry of ADMIN) {
-    const score = scoreEntry(entry, query);
-    if (score === 0) continue;
-    const badges: string[] = [];
-    if (entry.unitType) badges.push(entry.unitType.toUpperCase());
-    if (entry.function) badges.push(entry.function);
-    if (entry.skillLevel) badges.push(`L${entry.skillLevel}`);
-    if (entry.trEventCode) badges.push(entry.trEventCode);
-    results.push({
-      title: entry.title,
-      url: buildAdminUrl(entry),
-      summary: entry.summary,
-      category: "Admin",
-      badges,
-      score,
-    });
-  }
-
-  for (const entry of MARINES) {
-    const score = scoreEntry(entry, query);
+  for (const entry of INDEX) {
+    const score = scoreEntry(entry, query, activeRole);
     if (score === 0) continue;
     results.push({
       title: entry.title,
-      url: buildMarinesUrl(entry),
+      url: entry.url,
       summary: entry.summary,
-      category: "Marines",
-      badges: entry.topic ? [entry.topic] : [],
+      category: entry.category,
+      badges: entry.badges,
       score,
     });
   }
-
-  for (const entry of COMMANDER) {
-    const score = scoreEntry(entry, query);
-    if (score === 0) continue;
-    results.push({
-      title: entry.title,
-      url: buildCommanderUrl(entry),
-      summary: entry.summary,
-      category: "Commander",
-      badges: entry.topic ? [entry.topic] : [],
-      score,
-    });
-  }
-
-  for (const entry of POLICIES) {
-    const score = scoreEntry(entry, query);
-    if (score === 0) continue;
-    results.push({
-      title: entry.title,
-      url: `/policy/${entry.slug}`,
-      summary: entry.summary,
-      category: "Policy",
-      badges: [],
-      score,
-    });
-  }
-
-  for (const entry of SITUATIONS) {
-    const score = scoreEntry(entry, query);
-    if (score === 0) continue;
-    results.push({
-      title: entry.title,
-      url: `/situations/${entry.slug}`,
-      summary: entry.summary,
-      category: "Situation",
-      badges: [],
-      score,
-    });
-  }
-
   results.sort((a, b) => b.score - a.score);
   return results.slice(0, 50);
 }
 
 export function ClientSearch() {
   const [query, setQuery] = React.useState("");
-  const results = React.useMemo(() => searchAll(query), [query]);
-
-  const totalContent =
-    ADMIN.length + MARINES.length + COMMANDER.length + POLICIES.length + SITUATIONS.length;
+  const mounted = useMounted();
+  const role = useRoleStore((s) => s.role);
+  const activeRole = mounted ? role : null;
+  const results = React.useMemo(
+    () => searchAll(query, activeRole),
+    [query, activeRole]
+  );
 
   return (
     <div className="mx-auto max-w-3xl">
-      <h1
-        className="text-4xl font-bold tracking-tight"
-        style={{ fontFamily: "var(--font-display)" }}
-      >
-        Search
-      </h1>
-      <p className="mt-1 text-[var(--color-muted-foreground)]">
-        Searches across {totalContent} content pages by title, topic, T&R event
-        code, source policy, and references.
-      </p>
-
-      <div className="mt-6 flex h-12 items-center gap-3 rounded-[var(--radius-button)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 px-3">
+      <div className="flex h-12 items-center gap-3 rounded-[var(--radius-button)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 px-3">
         <Search className="size-4 opacity-70" aria-hidden="true" />
         <input
           autoFocus
@@ -210,25 +129,27 @@ export function ClientSearch() {
         )}
       </div>
 
-      {query.trim().length > 0 && query.trim().length < 2 && (
-        <p className="mt-4 text-sm text-[var(--color-muted-foreground)]">
-          Type at least 2 characters to search.
-        </p>
-      )}
+      <div aria-live="polite" role="status">
+        {query.trim().length > 0 && query.trim().length < 2 && (
+          <p className="mt-4 text-sm text-[var(--color-muted-foreground)]">
+            Type at least 2 characters to search.
+          </p>
+        )}
 
-      {query.trim().length >= 2 && results.length === 0 && (
-        <p className="mt-4 text-sm text-[var(--color-muted-foreground)]">
-          No results found for &quot;{query}&quot;. Try different keywords or
-          check spelling.
-        </p>
-      )}
+        {query.trim().length >= 2 && results.length === 0 && (
+          <p className="mt-4 text-sm text-[var(--color-muted-foreground)]">
+            No results found for &quot;{query}&quot;. Try different keywords or
+            check spelling.
+          </p>
+        )}
 
-      {results.length > 0 && (
-        <p className="mt-4 text-sm text-[var(--color-muted-foreground)]">
-          {results.length} {results.length === 1 ? "result" : "results"} for
-          &quot;{query}&quot;
-        </p>
-      )}
+        {results.length > 0 && (
+          <p className="mt-4 text-sm text-[var(--color-muted-foreground)]">
+            {results.length} {results.length === 1 ? "result" : "results"} for
+            &quot;{query}&quot;
+          </p>
+        )}
+      </div>
 
       <ul className="mt-4 space-y-3">
         {results.map((r, i) => (
