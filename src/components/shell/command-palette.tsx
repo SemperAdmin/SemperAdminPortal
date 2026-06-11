@@ -23,6 +23,12 @@ export interface CommandPaletteProps {
 export function CommandPalette({ open, onOpenChange }: CommandPaletteProps) {
   const router = useRouter();
   const { setTheme } = useTheme();
+  // Hydration-safe platform read for the shortcut hint.
+  const modKey = React.useSyncExternalStore(
+    () => () => {},
+    () => (/mac|iphone|ipad|ipod/i.test(navigator.userAgent) ? "⌘" : "Ctrl"),
+    () => "Ctrl"
+  );
 
   const run = React.useCallback(
     (action: () => void) => {
@@ -44,7 +50,8 @@ export function CommandPalette({ open, onOpenChange }: CommandPaletteProps) {
             Command palette
           </DialogPrimitive.Title>
           <DialogPrimitive.Description className="sr-only">
-            Type to search routes, change role, or toggle theme.
+            Type to search routes or toggle theme. Role switching lives in the
+            topbar segmented control.
           </DialogPrimitive.Description>
           <Command label="Command palette" className="flex flex-col">
             <div className="flex items-center gap-2 border-b border-[var(--color-border)] px-3">
@@ -124,7 +131,7 @@ export function CommandPalette({ open, onOpenChange }: CommandPaletteProps) {
               <span>Esc to close</span>
               <span>
                 <kbd className="rounded border border-[var(--color-border)] px-1 font-mono">
-                  Ctrl K
+                  {modKey} K
                 </kbd>{" "}
                 to toggle
               </span>
