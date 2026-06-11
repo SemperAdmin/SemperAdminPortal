@@ -1,0 +1,145 @@
+---
+id: "mctfsprium-80403"
+aliases:
+  - "MCTFSPRIUM 8-80403"
+title: "MCTFSPRIUM 8-80403 - Basic Allowance for Subsistence (BAS)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 8-80403"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 80403, Chapter 8 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 80403_Basic_Allowance_For_Subsistence_BAS.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 80403
+
+**Basic Allowance for Subsistence (BAS)** (TTC 371/372/375/476/898)
+
+### Section 1
+
+Conditions of entitlement to Subsistence are found in the DOD 7000.14-R Financial Management Regulation, Volume 7A, Chapter 25.  The entitlement to Monthly BAS is automatically commenced when a Marine completes Boot Camp or initial officer training (officer candidate school, officer training school) who have no continuous prior service (active or reserve).  The entitlement to Monthly BAS is automatically terminated with the report of separation from Active Duty.  Paragraph 80303.7 describes the procedures for field rations.
+
+### Section 2
+
+Enlisted members temporarily assigned to duty away from their permanent duty station or to duty under field duty conditions at the permanent duty station are entitled to BAS at a rate not less than which they held at their permanent duty station.  PRIUM Tables 8-1 through 8-6 describe the unit diary entries for the commencement, termination, or change of entitlement to subsistence for enlisted personnel.  Further instructions concerning the automated processing of entitlement to BAS during periods of elapsed time are contained in Paragraphs 80303.13 and 80303.14.
+
+### Section 3
+
+Any rations furnished to officers engaged in maneuvers, field exercises, or combat are considered Field Rations.  The procedures for the issue of field rations are prescribed in MCO 10110.47.  Officers entitled to basic pay are entitled to BAS at all times.  When subsisting in a Government mess or with an organization drawing field rations, officers will pay for their meals at the prescribed rates either by cash or collection from pay per instructions in the DOD 7000.14-R Financial Management Regulation, Volume 7A, (TTC 371 or 375). a.  Enlisted members permanently assigned to single government quarters ashore, who are being subsisted-in-kind (issued a meal card), are entitled to the monthly BAS rate, but will be in an Essential Station Messing (ESM) status.  This includes enlisted members attending accession pipeline military training.  Enlisted members assigned to ESM will be automatically charged for all meals made available (whether eaten or not) at the daily DMR per day for the entire month, and will net the member the difference between the Monthly BAS Rate and a monthly DMR. (1) Enlisted members assigned to ESM when on leave, PCS, hospitalized, or Temporary Additional Duty/TDY (not sea duty, field duty, essential unit messing (EUM) or group travel), will have the DMR stopped or credited when the these changes are reported. (2) Members assigned to ESM who are Temporary Additional Duty/TDY to Sea Duty, field duty, EUM or Group Travel, WILL CONTINUE to have the DMR automatically deducted from their pay.  The 25-percent rule for the first and last day of such assignment WILL NOT APPLY. (3) Enlisted members assigned Temporary Additional Duty/TDY to Sea Duty, field duty, EUM, or Group Travel, they will pay for meals by payroll deductions at the DMR.  The 25-percent rule for the first and last day of such assignment WILL APPLY. b.  Enlisted members when deployed away from their PDS in a temporary field, EUM, group travel and temporary afloat status will be charged a discounted meal rate, as published each year, for available meals on a full day basis.  For the day entering and the day departing such status, members will be charged 25 percent of the DMR. c.  Enlisted members under orders for temporary field assignment are charged the DMR for full days for available meals.  Members are charged 25 percent of the DMR for the first and last day of their temporary duty.  Unless the member is in the field for an overnight stay, it is not considered a temporary field assignment and there will not be a checkage of field rations.  If the member does not stay in the field overnight it is considered a change of appointed place of duty and the member will be charged the Standard Meal Rate for each meal.  When members are to pay the Standard Meal Rate for field rations, a NAVMC 11116 along with an attached listing is to be provided to your servicing finance office for checkage action.  The listing must contain the Marines name, SSN, individual meals, for each breakfast meal provided, and the same for lunch and dinner. d.  Any change among subsistence types caused by a status change which extends beyond a single days, shall be credited on a full day basis without being prorated. e.  Use the following statement to report start field rations checkage for officers and enlisted.  A member will be checked 25 percent of the DMR for the first day.
+
+```
+TTC 371 000 [A] STRT FLD RATS ED [B] |
+- [A] DOA (Date of Action)
+- [B] ED (Effective Date)
+```
+f.  Use the following statement to report termination of field rations checkage for officers and enlisted.  A member will be checked 25 percent of the DMR for the last day.
+
+```
+TTC 372 000 [A] STOP FLD RATS ED [B] |
+- [A] DOA (Date of Action)
+- [B] ED (Effective Date)
+```
+g.  Use the following statement to report one-time checkage of field rations for officers and enlisted.  A member will be checked 25 percent of the DMR for the first and last day.
+
+```
+TTC 375 000 [A] CHECK FLD RATS [B] TO [C] |
+- [A] DOA (Date of Action)
+- [B] FROM DATE (From Date)
+- [C] TO DATE (To Date)
+```
+h.  The system does not credit a member 75% of the DMR/Field Rats rate for connecting dates of back to back consecutive periods.  To credit those Marines who are entitled to DMR or field rations at 75 percent for the connecting dates report the following.
+
+```
+TTC 375 002 [A] CRED FLD RATS RATE 75% [B] |
+- [A] DOA (Date of Action)
+- [B] ED Effective Date
+TTC 475 004 [A] CRED DISC MEAL RATS RATE 75% [B] |
+- [A] DOA (Date of Action)
+- [B] ED (Effective Date)
+```
+i.  When a Marine is being checked field rations and departs for a short period; for example, of Temporary Additional Duty, the member must be credited field rations for the period gone. To report a one-time credit of field rations for officers and enlisted members, report a CRED DISC MEAL RATE (TTC 475 Sequence 002) for the field ration period requiring adjustment.
+
+```
+TTC 475 002 CRED DISC MEAL RATE (A) TO (B)
+- [A] FROM DATE (From Date)
+- [B] TO DATE (To Date)
+```
+j. Use the following statement/transaction to start the deduction for officer's BAS when meals are provided at no cost by a foreign government.
+
+```
+TTC 371 001 [A] STRT GOVT MESS RATS ED [B] |
+- [A] DOA (Date of Action)
+- [B] ED (Effective Date)
+```
+k.  Use the following statement/transaction to stop/terminate the deduction for Officer's BAS when meals are no longer provided at no cost by a foreign government
+
+```
+TTC 372 001 [A] STOP GOVT MESS RATS ED [B] |
+- [A] DOA (Date of Action)
+- [B] ED (Effective Date)
+```
+l.  When an Officer is being checked GOVT MESS rations and departs for a short period the member must be credited rations for the period gone.  To report a one-time credit of rations for officers and enlisted members, report as follows.
+
+```
+TTC 374 001 [A] CRED GOVT MESS RATS [B] TO [C] |
+- [A] DOA (Date of Action)
+- [B] FROM DATE (From Date)
+- [C] TO DATE (To Date)
+```
+### Section 4
+
+Inactive Reserve.  Entitlement to BAS is automatically positioned in MCTFS when a Reserve Officer joins a Selected Marine Corps Reserve unit, a Mobilization Training Unit, or accepts an appointment.  Likewise, a BAS credit is automatically generated when a completed Active Duty statement is reported for a Selected Marine Corps Reserve, a Mobilization Training Unit, or an Individual Ready Reserve Officer. a.  Field Rations.  Rations furnished to a Reservist engaged in maneuvers or training exercises are considered as field rations.  MCO P10110.14M and MCO 10110R.1 provides guidance for the sale of field rations to Reserve officers.  When on field duty, officers will pay for their meals at the prescribed rates either by cash or collection from pay. b.  Field ration checkages for Reserve Marines must be reported once the final Active Duty training is complete and the COMPL ACDUTRA transaction has posted to MCTFS.  The field ration checkage will only post if the Marine has a corresponding D916 Remark for the period being checked. c.  For reserve officer and enlisted members, use the following statement to report a one-time checkage of field rations for periods of field duty.  Reserve members receiving subsistence are subject to the same DMR as Active Duty Members.
+
+```
+TTC 375 000 [A] CHEK FLD RATS [B] TO [C] |
+- [A] DOA (Date of Action)
+- [B] FROM DATE (From Date)
+- [C] TO DATE (To Date)
+```
+d. Officer checkage for meals provided but not paid for during IDT.  When a Reserve Officer is provided meal(s) during an IDT period, all meals are to be paid for in cash or the officer's Reserve Pay account will be checked (TTC 898 003 CHEK DISC MEAL RATE [A] TO [B]) for the period the meals were provided.
+
+### Section 5
+
+Reserve Enlisted Personnel.  A Reserve enlisted Marine may be entitled to BAS for the performance of Active Duty for 30 days or less.  The unit diary entries required for the credit of BAS for Reserve enlisted Marines are shown in PRIUM Tables 8-1 through 8-6.  The entitlement to BAS is based on whether the Marine is in a travel status and the availability of messing facilities at the duty station.  The rate of BAS due, if any, will be based on the following. a.  When no per diem is payable, the Marine is entitled to a subsistence allowance based on the Commanding Officer's determination.  The rules for the Commanding Officer to use in determining BAS entitlement are in the DOD 7000.14-R Financial Management Regulation, Volume 7A. b.  When per diem is payable, the Marine is in a travel status, and entitled to Basic Allowance for Subsistence (DOD 7000.14-R Financial Management Regulation, Volume 7A).  Entitlement is dependent on. (1) Being in a travel status, (2) in receipt of the subsistence portion of per diem, (3) Not being in a status that requires subsistence in kind when available (field duty, sea duty, group travel, annual training). c.  When a mileage allowance is payable for travel performed to or from the Active Duty location, the member is in a travel status and entitled to Basic Allowance for Subsistence (DOD 7000.14-R Financial Management Regulation, Volume 7A, and Joint Travel Regulations).
+
+### Section 6
+
+Active Duty Site Within Commuting Distance of the Reserve Marine's Home.  When the Active Duty site is within commuting distance of the Marine's residence, the Commanding Officer of the installation will determine the rate, if any, of BAS the member will receive.  and a BAS credit is automatically generated when a completed Active Duty statement is reported for all ranks.
+
+### Section 7
+
+Reserve Enlisted Marine.  A Reserve enlisted Marine is entitled to BAS for the performance of any Active Duty period.  BAS-Monthly will be automatically credited when TTC 801 (COMPL ACDU) processes.
+
+### Section 8
+
+When rations at the no mess available rate (Government messing not available), report as follows.  EDA of Less Than 31 Days.  A unit diary entry reporting subsistence entitlement will not be reported.  Reporting of elapsed time by the FO/DO at the new duty station will automatically generate the appropriate subsistence entitlements.
+
+```
+TTC 898 000 [A] CRED BAS [B] TO [C] |
+- [A] DOA (Date of Action)
+- [B] FROM DATE (From Date)
+- [C] TO DATE (To Date)
+```
+### Section 9
+
+BAS for Reserve personnel while on Active Duty.  Enlisted Marines are entitled to subsistence allowance at the BAS-Monthly (BAS-M) rate for any period of Active Duty. a.  Enlisted Marines in the training pipeline (accession travel) are entitled to Monthly BAS. (1) When actually performing travel under orders. (2) When performing temporary duty (TDY) as a recruiter assistant where rations are not available. (3) When orders are received designating a permanent duty station, to include any TDY in route.
+
+### Section 10
+
+If Reserve Enlisted Marines Are Placed in A Status Where Messing Is Provided (Same Status As Active Duty Marines Who Are Issued A Meal Card), The DMR Will Be Checked for The Period Which Is Applicable.  To Check The DMR Report.
+
+```
+TTC 898 003 [A] CHEK DISC MEAL RATE [B] TO [C] |
+- [A] DOA (Date of Action)
+- [B] FROM DATE (From Date)
+- [C] TO DATE (To Date)
+```
+### Section 11
+
+Reserve Officer Checkage for Meals Provided But Not Paid for During Inactive Duty for Training (IDT).  When A Reserve Officer Is Provided Meal (S) During IDT Period, All Meals Are to Be Paid for in Cash, or The Member's Reserve Pay Account Will Be Checked (TTC 898 003) for The Period The Meals Were Provided. 12. Reserve Enlisted Marines Performing IDT (Drills) At Their HTC or Individual Mobilization Augment Assigned Location.  For An IDT Period That Totals At Least 8 Hours in A Calendar Day, Reserve Enlisted Marines Are to Be Provided Government or Contracted Meals At No Cost to The Marine. In cases where a member is not afforded an opportunity to a provided Government or Contracted Meal, a MRE should be provided.

@@ -1,0 +1,83 @@
+---
+id: "mctfsprium-30307"
+aliases:
+  - "MCTFSPRIUM 3-30307"
+title: "MCTFSPRIUM 3-30307 - EXPIRATION OF CURRENT CONTRACT (ECC) (TTC 122/081)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 3-30307"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 30307, Chapter 3 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 30307_EXPIRATION_OF_CURRENT_CONTRACT_ECC_TTC_122081.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 30307
+
+EXPIRATION OF CURRENT CONTRACT (ECC) (TTC 122/081)
+
+### Section 1
+
+The ECC is the date the current contract terminates as shown on the Marine's current DD Form 4.  Periods of Time Lost will automatically extend the ECC by the number of days reported as lost.  An expired ECC will suspend computation of pay and allowances and terminate payment of allotments.  Refer to PRIUM Table 3-2.  Report as follows:
+
+```
+
+```
+TTC 122 000 [A] ECC [B] |
+```
+- [A] DATE OF ACTION (DOA) - [B] END OF CURRENT ``` CONTRACT (ECC) DATE
+
+-or-
+
+```
+
+```
+TTC 122 002 [A] RESERVE ECC [B] |
+```
+- [A] DATE OF ACTION (DOA) - [B] RESERVE END OF ``` CURRENT CONTRACT (ECC) DATE
+
+-or-
+
+```
+
+```
+TTC 081 001 [A] RESERVE ECC COFG [B] |
+```
+- [A] DATE OF ACTION (DOA) - [B] CONVENIENCE OF THE GOVERNMENT (COFG) CODE ``` a.  Regular Enlisted.  Voluntary extensions of enlistment will adjust the ECC only after the extension goes in effect.  The acceptance of a UD statement reporting the execution of an agreement to extend will automatically flag the master record and systematically generate the extension effective transaction upon ECC.  Regular officers will not have an ECC until request for resignation or retirement is approved.
+
+b.  Reserve Enlisted.  If AD orders, the EAS/ECC will be equal to the orders termination date unless the member is on the AR program and has been career designated.  Upon receipt of orders extending the EAS report the following statements (Except when an extension is pending on career designated AR Marines):
+
+```
+
+```
+TTC 077 000 [A] EAS [B] |
+```
+- [A] DATE OF ACTION (DOA) - [B] END OF ACTIVE SERVICE ``` (EAS) DATE
+
+-and-
+
+```
+
+```
+TTC 122 000 [A] ECC [B] |
+```
+- [A] DATE OF ACTION (DOA) - [B] END OF CURRENT ``` CONTRACT (ECC) DATE
+
+Note:  If a unit reports TTC 077 or 081 on a member who has an approved Planned-Reenl-Ext-Retire-Date (PRR Date) within the MCTFS, the transaction will fail and the unit will be required to contact HQMC (MMSR) for guidance.
+
+c.  While on AD, RESERVE ECC will be reported by the AD reporting units.  The RESERVE ECC will reflect the ending date of the DD Form 4 for enlisted Marines, and '00000000' for officers.
+
+d.  The ECC will not be changed for personnel involuntarily extended on AD for an indefinite (COFGI) period.
+
+e.  For inductees, ECC is the date of expiration of period of AD.
+
+f.  For retired and FMCR personnel on AD, ECC is the date of expiration of period of AD.
+
+g.  If a mobilized Member has an EAS/ECC flag (1), the member has an AD Extension pending that should go in effect when PUREX executes (unless an attempt to update ECC has been reported and failed).  If the Member does not have an EAS/ECC flag (1), but still has an active extension pending, the extension will not go in effect.  The extension should be cancelled and EAS/ECC updated accordingly.  If a Reservist is not to be dropped from AD, action must be taken to update the EAS/ECCs to keep the Pay Status open (D601 = 00000) and POE code Direct Deposit (D603 = 12011).  If not, after U&E executes the Pay Status will go to 90000 and Direct Deposit to accrue all central 00001 and Member will not receive a payment.
+
+h.   Before reporting TTC 077 000 or 122 000, units should ensure that the period of active duty exists in MROWS and that all data elements in the matching MCTFS 861-RMK are correct.

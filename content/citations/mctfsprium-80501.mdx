@@ -1,0 +1,153 @@
+---
+id: "mctfsprium-80501"
+aliases:
+  - "MCTFSPRIUM 8-80501"
+title: "MCTFSPRIUM 8-80501 - Service Member's Group Life Insurance (TTC 804, 309)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 8-80501"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 80501, Chapter 8 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 80501_Service_Members_Group_Life_Insurance_TTC_804_309.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 80501
+
+Service Member's Group Life Insurance (TTC 804, 309)
+
+Normally, a Marine will access the VA web site and SOES-DJMS and make any changes to their SGLI/FSGLI election. Updating their record via SOES-DJMS will create a TTC 309 that is sent to MCTFS.  TTC 309 is also ADMIN reportable.
+
+### Section 1
+
+All Marines are eligible for Service Member's Group Life Insurance coverage.  The current maximum coverage is $500,000 (the premium amounts can be viewed in MCTFS Table HD) The amount of insurance coverage elected may be increased or decreased in $50,000 increments from an election of 'NONE' to a maximum of $500,000.  This election is not automatic.  Marines who initially elect for less than the maximum Service Member's Group Life Insurance coverage may later apply for increased coverage of up to the maximum but must furnish proof of good health and complete a Service Member's Group Life Insurance SGLV 8286 form.  Marines who do not want the full coverage may elect reduced coverage in $50,000 increments, down to $50,000, or elect no coverage.  Each individual Marine must make such an election in writing. These elections can be made via The VA web site and SOES-DJMS.
+
+### Section 2
+
+Unless Service Member's Group Life Insurance is terminated due to unauthorized absence or confinement, an increase or reinstatement of coverage can be granted when a written application from the Marine has been received and then approved by the Office of Service Member's Group Life Insurance (SGLV 29-8285 will be used).  The date of receipt of application with evidence of good health by physical examination or the Commanding Officer's statement of the Marine's health is considered the date of receipt by the Office of Service Member's Group Life Insurance.
+
+### Section 3
+
+The Service Member's Group Life Insurance election must be recorded on the Marine's RED.
+
+### Section 4
+
+When the Marine is accessed into MCTFS, the maximum coverage is automatically entered into the record. Note that when a Marine is dropped from one Component and re-accessed into another component, the JOIN transaction will start SGLI at the maximum amount regardless of any prior election.
+
+a.  When a Marine elects to increase their Service Member's Group Life Insurance coverage, the Effective Date reported will be the 1st day of the month in which the coverage was elected.  For example, if a Marine elects to change coverage from $100,000 to $350,000 on 24 October 2005, the Service Member's Group Life Insurance will be reported with an Effective Date of
+
+### Section 20051001
+
+If the change is being reported retroactively (more than 6 months), a manual adjustment by RFFKCI will be required. Submit a JIRA ticket via the servicing MISSO.
+
+b.  When a Marine elects to decrease (or decline) their Service Member's Group Life Insurance coverage, the Effective Date reported will be the 1st day of the following month in which coverage was elected.  For example, if the Marine elects to decrease their Service Member's Group Life Insurance coverage from $200,000 to $50,000 on 24 October 2005, the Service Member's Group Life Insurance would be reported on 20051101 with an Effective Date 20051101.  If the change is being reported retroactively, (more than 6 months), a manual adjustment by RFFKCI will be required. Submit a JIRA ticket via the servicing MISSO.
+
+```
+TTC 309 000 SGLI (A) ED (B) |
+TTC 309 002 SGLI (A) ED (B) |
+```
+Note: Seq 000 is applicable for effective dates prior to 1 March 2023.
+
+Seq 002 is applicable to effective dates on or after 1 March 2023.
+
+(A) Indicated increments amounts:  7-byte (Example: $50,000 report as 0050000)
+
+(B) Effective Date:  8-byte (YYYYMMDD)
+
+Note:  This transaction is not used to change Effective Date, only to change coverage amount.
+
+*The current *Premium Rates can be viewed in MCTFS Table HD.
+
+When a Marine has SGLI coverage greater than $0.00 Monthly TSGLI coverage is automatic with a $1.00 premium.
+
+### Section 5
+
+The Service Member's Group Life Insurance coverage of Active-Duty Marines terminates at the end of the 31st day of a continuous period of:
+
+a.  Unauthorized absence.
+
+b.  Confinement by civil authorities under a sentence adjudged by a civilian court.
+
+c.  Confinement as a result of the sentence of a court-martial, that also adjudged total forfeiture of pay and allowances.
+
+### Section 6
+
+The Service Member's Group Life Insurance coverage that was in existence at the time coverage ceased is automatically reinstated as of the date the Marine returns to duty in a pay status.  No unit diary entry is required to reinstate this coverage.
+
+### Section 7
+
+The following Reserve personnel are eligible for full-time Service Member's Group Life Insurance:
+
+a.  Members of the Selected Marine Corps Reserve.
+
+b.  Delayed entry Reservists prior to reporting to Initial Active Duty for Training (Category P's only).
+
+c.  Marine Reservists on Active Duty in excess of 30 days.
+
+d.  Members of the Individual Ready Reserve who are joined to a Mobilization Training Unit.  Premium deduction is not automatic but is based on prepayment of premiums.
+
+e.  Members of the Individual Ready Reserve on associate duty or in an appropriate duty status.  Premium deduction is not automatic but is based on prepayment of premiums.
+
+f.  When a Reserve Marine has elected a Service Member's Group Life Insurance amount other than the current maximum* *and enters Active Duty for a period in excess of 30 days or has been released from a period of Active Duty in excess of 30 days, the reporting unit must manually verify the Service Member's Group Life Insurance election in MCTFS after the join has posted and re-report the correct coverage amount if necessary.
+
+### Section 8
+
+Full-time Service Member's Group Life Insurance coverage and automatic premium deductions for the Selected Marine Corps Reserve terminates when the Reservist is discharged or when transferred to the Individual Ready Reserve, the Standby Reserve or the Retired Reserve.
+
+### Section 9
+
+Individual Ready Reserve and Standby Reserve members are eligible for part-time Service Member's Group Life Insurance coverage incident to an assignment to Active Duty for 30 days or less.  Coverage at the full level of Service Member's Group Life Insurance is automatic with the unit diary reporting the period of Active Duty.  If the member elects in writing a reduced part-time Service Member's Group Life Insurance coverage, then report the Service Member's Group Life Insurance election by unit diary when the TO ACDUTRA or COMPL ACDUTRA transaction is reported.  The current premiums are viewable in MCTFS Table HD. Repeated Active Duty in the same fiscal year will not cause premium deduction for Service Member's Group Life Insurance provided a prior deduction was made for the fiscal year.
+
+a.  Part-time Service Member's Group Life Insurance election is reported with the following statement:
+
+```
+TTC 804 000 PARTL SGLI (A) ED (B) |
+```
+(A) Option abbreviation (For example, NONE, TWO, FIVE, EIGHT, OR THIRTEEN)
+
+(B) Effective Date (First day of month in which Active Duty occurs):  8-byte (YYYYMMDD)
+
+b.  Once the election is established in a fiscal year, it may not be reduced within the same fiscal year.
+
+### Section 10
+
+Traumatic Injury Protection Under Traumatic Service Member's Group Life Insurance Provides Traumatic Injury Coverage for members of the uniformed services who are covered under Service Member's Group Life Insurance.  Traumatic Service Member's Group Life Insurance pays a Predetermined Monetary Benefit for Losses that are incurred by the member as a result of a traumatic injury, such as a loss of a leg or an arm.  The benefit is paid to the member or the members' Service Member's Group Life Insurance Beneficiary, If the member Is deceased.  Traumatic Service Member's Group Life Insurance Coverage was added to Service Member's Group Life Insurance Policies effective December 1, 2005.  All members of the uniformed services who have full-time or part-time Service Member's Group Life Insurance are automatically covered by Traumatic Service Member's Group Life Insurance while the member is in service.  Traumatic Service Member's Group Life Insurance Coverage automatically terminates upon the members' separation or discharge from service.  Spouses and children covered under Family Service Member's Group Life Insurance are not covered by Traumatic Service Member's Group Life Insurance.  A member may not elect to pay for Traumatic Service Member's Group Life Insurance while enrolled in Service Member's Group Life Insurance.  However, if the member declines Service Member's Group Life Insurance Coverage, then Traumatic Service Member's Group Life Insurance Is declined as well.  In general, members are covered under Traumatic Service Member's Group Life Insurance for the same periods they are covered under Service Member's Group Life Insurance.  The only exception is that Traumatic Service Member's Group Life Insurance coverage ends on the date the member separates from service, while Service Member's Group Life Insurance Coverage continues for a minimum of 120 Days after the member separates from service.  There are two situations that govern the Traumatic Service Member's Group Life Insurance coverage period.
+
+a.  Member is covered under full-time Service Member's Group Life Insurance.  When a member is covered under full-time Service Member's Group Life Insurance, the member's Traumatic Service Member's Group Life Insurance coverage is full-time as well.  This means the member is covered under Traumatic Service Member's Group Life Insurance 365 days a year, both on and off duty.  A service member is covered under full-time Service Member's Group Life Insurance and therefore full-time Traumatic Service Member's Group Life Insurance if the member meets one of the following conditions:
+
+(1) The member performs Active Duty or Active Duty for training under a call or orders that specifies 31 days or more.
+
+(2) The member is a Ready Reservist who is assigned to a unit in which the member is scheduled to drill at least 12 times during the year.  This includes members who are drilling for pay and members who are drilling for retirement points.
+
+b.  Member is Covered Under Part-time Service Member's Group Life Insurance.  When a member is covered under part-time Service Member's Group Life Insurance, the member's Traumatic Service Member's Group Life Insurance coverage is part-time as well.  Part-time Traumatic Service Member's Group Life Insurance only covers the member during the actual days of duty and while proceeding directly to and returning directly from their scheduled duty.  A member is covered under part-time Service Member's Group Life Insurance and therefore part-time Traumatic Service Member's Group Life Insurance if the member meets one of the following conditions
+
+(1) The member is a Ready Reservist who is under a call or order that specifies less than 31 days.
+
+(2) The member is a Ready Reservist who is not scheduled to drill at least 12 times during the year.
+
+### Section 11
+
+Traumatic Service Member's Group Life Insurance Benefit Payments.  Per The National Defense Authorization Act (NDAA) of FY 2006, Traumatic Service Member's Group Life Insurance benefits will be provided to severely injured service members.  This change allows for tracking of Traumatic Service Member's Group Life Insurance Benefit Payments to Service Members (Regular and Reserve) and claims that have been denied.  Report Traumatic Service Member's Group Life Insurance benefit and Traumatic Service Member's Group Life Insurance benefit denied as follows:
+
+```
+TTC 035 000 TSGLI BENEFIT DATE OF
+```
+INJURY (A) DATE OF PAYMENT (B) | (Headquarters Marine Corps ONLY)
+
+(A) Date of injury:  8-byte (YYYYMMDD)
+
+(B) Date benefits were issued:  8-byte (YYYYMMDD)
+
+```
+TTC 035 001 TSGLI DENIED DATE OF
+```
+INJURY (A) DENIED DATE (B) | (Headquarters Marine Corps ONLY)
+
+(A) Date of injury:  8-byte (YYYYMMDD)
+
+(B) Date claim was denied:  8-byte (YYYYMMDD)

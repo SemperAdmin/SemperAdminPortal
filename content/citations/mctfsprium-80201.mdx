@@ -1,0 +1,412 @@
+---
+id: "mctfsprium-80201"
+aliases:
+  - "MCTFSPRIUM 8-80201"
+  - "MCTFSPRIUM 8-80201.21"
+title: "MCTFSPRIUM 8-80201 - BASIC ALLOWANCE FOR HOUSING (BAH) (TTC 186, 187, 388, 389, 896)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 8-80201"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 80201, Chapter 8 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 80201_BASIC_ALLOWANCE_FOR_HOUSING_BAH_TTC_186_187_388_389_896.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+1. The conditions of entitlement to BAH are described in the Department of Defense Financial Management Regulation (DoD FMR), Volume 7A, Chapter 26. Reserve Component-specific BAH entitlements are outlined in DoD FMR Volume 7A, Chapter 26, Section 2603. Procedural instructions for claiming entitlement to BAH with dependents are contained in MCO 1751.3 and Child Custody Information in MCO P5800.16. Entitlement to the various types of BAH is based upon pay or duty status, primary dependent status, Government quarter's status, pay grade, and location. See DoD FMR Volume 7A, Chapter 26 for Reserve Component BAH policies.
+
+### Section 2
+
+Every Marine is entitled to a type of BAH to pay a portion of their housing cost. The entitlement may be BAH Partial, BAH (formally BAQ and VHA) with or without dependents at the Military Housing area (MHA) locality rate, BAH RC/T (formally BAQ Own Right), BAH DIFF, and Overseas Housing Allowance (OHA). BAH Partial is automatically credited to the MMPA during the recruit accession process.  MCTFS BAH Rate tables have been expanded to allow unlimited retroactive reporting and processing to 1 November 1998.
+
+Note: Reserves not on Active Duty and those on Active Duty for periods of duty for 30 days or less, are entitled to BAH RC/T unless ordered to Active Duty in connection with a contingency operation.
+
+### Section 3
+
+According to DoD FMR Volume 7A, Chapter 26, BAH is generally payable based on the member’s Permanent Duty Station (PDS). The Marine Corps defines a PDS as the MCC to which permanently assigned. Movement between MCC locations shall be conducted via PCS/PCA/LCM orders. RU's must pay particular attention to all personnel who are administratively joined, to ensure that the ZIP Code reported matches the location that the Marine was ordered to. The exceptions to this policy are for:
+
+a. MCC 1UG (MMSL)
+
+b. MCC M6A (MCLE)
+
+c. MCC 077 (Intel)
+
+d. MCRC RSS (Recruiting Sub-Stations)
+
+e. RC members and Special Cases approved by HQMC (See Below)
+
+- **Note 1: For further clarification on BAH at locations other than the permanent duty station, refer to MARADMIN 239/05.**
+### Section 4
+
+BAH Difference (BAH-DIFF). A Marine assigned to single-type quarters who is authorized BAH solely by reason of the Marine's payment of adequate child support, the member is entitled to BAH-DIFF. For additional information concerning BAH-DIFF, refer to DoD FMR Volume 7A, Chapter 26, Section 260202.
+
+a. Public Laws 105-85 and 106-398 terminated the concurrent payment of BAH-Without Dependents and BAH-DIFF. Effective December 31, 2005, a member who is not assigned to Government Quarters and who is entitled to BAH-DIFF is entitled to BAH at the With Dependent Rate. BAH-DIFF will continue to be paid to members assigned to single type Government Quarters, who are entitled to BAH-DIFF based solely on the payment of child support.
+
+b. For members living off base and receiving BAH-DIFF and BAH-Without, report Stop BAH Diff (TTC 186 001).  Then report CHAN BAH (TTC 388 001) at the With-Dependent Rate and the Locality ZIP Code that they are entitled.
+
+c. Members not assigned to single type quarters, and receiving BAH-DIFF, are entitled to BAH at the With Dependent Rate. This BAH rate change was effective December 31, 2005.  As a result of this change, the BAH-RENT-OWN-CODE field in the 901 Remark is now the BAH-DIFF FIELD.  For the purposes of privatized housing (PAW) in the 901 Remark, the unused field BAH-OFFSET-DEDUCTION-AM will be used to display the BAH WITHOUT RATE.
+
+### Section 5
+
+BAH and BAH RC/T. When BAH is erroneously stopped, corrective action to restart BAH will be accomplished by reporting TTC 388 001. The Effective Date is the day following the date the Marine's BAH was erroneously stopped. Use the following statements to report change and stop all of BAH entitlements for Active Duty Members:
+
+```
+TTC 388 001 CHAN BAH [A] [B] [C] [D] [E] [F] $[G] $[H] ED [I] |
+- [A] ZIP Code of location to where Ordered to (For BAH RC/T entitlement, Report '99999', (Note 1)
+- [B] ZIP Code designator (M = Marine, D = Dependent) (Notes 2, 3 & 4)
+- [C] Utility Code (“N” in all cases)
+- [D] BAH Rate Code (W = with dependent; O (alpha) = without dependent)
+```
+** **   [E] BAH-DIFF (O (ALPHA) = normal BAH; D = for BAH-DIFF) ** **   [F] Disaster codes (N = normal; Y = disaster) (Note 6) ** **   [G] Actual monthly rent/mortgage for BAH Disaster. Otherwise enter $7777.77 in all other cases. ** **   [H] Additional monthly rent/mortgage (enter $0000.00 in all cases) ** **   [I] ED (Effective Date; See Note 5)
+
+- **Note 1: Report ZIP Code of '99999' for Marines who are entitled to BAH RC/T. The BAH RC/T amount is keyed off of this ZIP Code in MCTFS.**
+- **Note 2: The ZIP Code of the Marine's PDS and the designator 'M' will be used to base entitlement on the MHA located of the Marine who is assigned to a PDS in the United States.**
+- **Note 3: The ZIP Code of the Marine's dependents location and the designator 'D' will be used to base entitlement on the location where the Marine's dependents reside.**
+- **Note 4: When changing the ZIP Code Designator report TTC 389 (STOP BAH) first, and then TTC 388 (CHAN BAH). Reporting TTC 388 (CHAN BAH) alone will FAIL.**
+- **Note 5: TTC 389 DEL/ADD reporting transaction will fail if DEL Effective Date is less than 19981101.**
+- **Note 6: When an area has been designated as entitled to BAH disaster rate, notification will be provided by Marine Corps Pay Requirements Directorate (MCPRD).**
+- **Note 7: BAH Partial cannot be corrected by reporting TTC 388.**
+```
+TTC 389 001 [A] STOP BAH [B] ED [C] |
+```
+** **   [A] DOA (Date of Action; never 00000000) ** **   [B] BAH RATE CODE (See Note below) ** **   [C] ED (Effective date; never 00000000)
+
+Note: The BAH Rate Code is W (With dependents) or O (without dependents).
+
+```
+TTC 187 041 [A] CHAN BAH DIFF ED [B] |
+```
+** **   [A] DOA (Date of Action; never 00000000) ** **   [B] ED (Effective Date/Start Date; never 00000000)
+
+```
+TTC 186 001 [A] STOP BAH DIFF ED [B] |
+```
+** **   [A] DOA (Date of Action; never 00000000) ** **   [B] ED (Effective Date/Stop Date; never 00000000)
+
+Note: BAH-DIFF can only be started and stopped. The CHAN BAH and CRED BAH transactions are not applicable for BAH DIFF.
+
+### Section 6
+
+To report a start, change or stop to partial BAH use one of the following statements:
+
+```
+TTC 187 034 [A] STRT BAH PARTL ED [B] |
+```
+** **   [A] DOA (Date of Action; never 00000000) ** **   [B] ED (Effective Date/Start Date; never 00000000)
+
+Note: Del/Err is not authorized for Active Duty Units with TTC 187 034.
+
+```
+TTC 187 015 [A] CHAN BAH PARTL ED [B] |
+```
+** **   [A] DOA (Date of Action; never 00000000) ** **   [B] ED (Effective Date/Stop Date; never 00000000)
+
+```
+TTC 186 002 [A] STOP BAH PARTIAL [B] ED [C] |
+```
+** **   [A] DOA (Date of Action; never 00000000) ** **   [B] STOP CODE (The BAH Stop Code is zero “0”) ** **   [C] ED (Effective Date; never 00000000)
+
+Note: The Effective Date must be equal to or greater than 19981031.
+
+Note: The Effective Date for TTC 186 (all sequences) must be greater than or equal to 19981031. This transaction is not valid for reporting by reserve Reporting Unit Codes.
+
+### Section 7
+
+BAH Rates During PCS Elapsed Time Period
+
+**    **a. Marines with dependents receiving a BAH locality rate prior to detachment on PCS orders will continue to receive that rate during the elapsed time period. For those Marines that were occupying government quarters upon reporting TTC 186 STOP QTRS, MCTFS will automatically start BAH-RC/T.
+
+b. When a member vacates Government quarters, the transferring command should report the BAH locality rate (old PDS) for that member. It is noted that close coordination between the Commanding Officer and Housing is essential. The joining command must review the member's record to determine if the member received the BAH locality rate for his old PDS. MCTFS will generate a BAH RC/T entitlement with the reporting of the STOP QTRS entry, however, the correct entitlement for the member is the BAH locality rate for the old PDS.  Determine if the rate in the member's record is BAH RC/T or BAH locality by accessing the website https://secureapp2.hqda.pentagon.mil/perdiem/bah.html using the ZIP Code for the old PDS, and entering the member's rank. Refer to PAAN 13-01 for additional information.
+
+c. MCTFS will automatically stop BAH RC/T Without Dependent or Partial for Marines who were in receipt of BAH RC/T Without Dependent on the day prior to date of detachment.
+
+d. BAH Entitlement-PCS when old and new PDS are inside CONUS. Marines are entitled to BAH at the old PDS locality rate beginning on the date of detachment through the day prior to reporting to the new PDS (without regard to a temporary duty assignment).  The only exception to this is if the member commutes daily to a temporary duty site from a permanent residence that will be occupied at the new PDS.  BAH for the PDS locality will begin the day after per diem has been stopped at the temporary duty site. This only applies when temporary duty is performed in the vicinity of a new PDS incident to a PCS when both old and new PDS are in the United States.
+
+e. BAH Entitlement-PCS to or from outside CONUS. The following apply:
+
+(1) A Marine ordered to an unaccompanied tour overseas is entitled to BAH based on either:
+
+(a) The old PDS locality rate, provided the member was in receipt of BAH, through the day prior to arrival at the new PDS.
+
+(b) A location designated by the member and approved by MMIA provided the dependents have a pre-existing tie to that location.
+
+(c) on the dependent's location, not to exceed the BAH rate of the PDS immediately prior to the new PDS. If the member does not elect a designated location but moves dependents at no cost to the government, the housing allowance payable reflects the actual location of the dependents.
+
+(2) A Marine accompanied by dependents to overseas area is entitled to BAH at the old PDS locality rate through the day prior to arrival at the new PDS.
+
+(3) A Marine returning to CONUS from accompanied tour overseas is entitled to BAH-RC/T from the date of detachment overseas through the day prior to date of arrival at the new PDS. Upon arrival at the new PDS Marine is entitled to BAH at the new PDS locality rate. If the Marine has Temporary Additional Duty in route during the execution of the PCS orders the following applies:
+
+(a) If the member performs Temporary Additional Duty in route at the new PDS, BAH for the new PDS begins the day of arrival in a 'Temporary Additional Duty' status at the new PDS.
+
+(b) If the member performs Temporary Additional Duty in route at a location near, but outside the limits of, the new PDS and per diem stops, BAH for the new PDS begins the day the per diem stops.
+
+### Section 8
+
+Temp Visits. When a Marine is assigned to a permanent duty station outside the United States, and the member is authorized BAH for dependents residing separately from the member in the United States, and if the dependents visit at or near the member's PDS for more than 90 consecutive days, then the member is no longer entitled to BAH at the dependent locality rate.  Start BAH RC/T beginning on the 91st day.
+
+### Section 9
+
+Marines who are in the accession pipeline (date of entry through the day prior to reporting to first PDS) and are married prior to or during this period are entitled to BAH with dependent at the dependent Military Housing Area (MHA) locality rate.  If the Marine's dependents reside overseas, the BAH should be based on the Marine's duty station location. This entitlement will continue to change from duty location to duty location until the member arrives at his initial PDS.
+
+### Section 10
+
+A Marine in A Leave Status Awaiting Final Separation From The PDS Is Entitled to The Bah Locality Rate of The PDS.
+
+### Section 11
+
+BAH-RC Reserve BAH. If The Last PDS Was Outside The United States and The Marine Was on An Accompanied Tour The Marine Is Entitled to BAH-RC/T From The Date of Detachment From The Overseas PDS Through The Day Prior to The Arrival At The Processing Station.  After Arrival At The Processing Station The Marine Is Entitled to The Bah Locality Rate for That Processing Station. If The Marine Was on An Unaccompanied Tour Overseas Then They Would Receive Bah At The Dependents Location Through The Date of Discharge.
+
+a.  A reserve member called or ordered to Active Duty for 30 days or less and not assigned to government quarters at the PDS (as defined by the DOD 7000.14-R Financial Management Regulation, Chapter 57) is entitled to BAH-RC/T.
+
+b.  A reserve member called or ordered to Active Duty for more than 30 days (with no PCS authorized) and not assigned to government quarters at the PDS (as defined by the DOD 7000.14-R Financial Management Regulation, Chapter 57) is entitled to BAH-I at the Place Entered Active Duty (PLEAD) locality rate.
+
+c.  A reserve member called or ordered to Active Duty for more than 180 days (PCS authorized) is authorized BAH/OHA for the PDS effective the day the member reports at that location. A reserve member called or ordered to Active Duty for more than 180 days when HHG transportation is not authorized is authorized BAH/OHA based upon the principal residency.
+
+d.   A reserve member initially called or ordered to Active Duty for a period of more than 30 days, and orders are subsequently modified resulting in the performance of less than 30 days, the entitlement to BAH will continue through the date of release from Active Duty.
+
+e. If a reserve member is initially ordered to Active Duty for a period of 180 days or more, and the orders are modified during the period of Active Duty, and the period of additional Active Duty, when coupled with the time remaining to be served, is 181 days or more, then the entitlement to BAH exists from the date of the modified orders. If a reserve member is initially ordered to Active Duty for a period of less than 20 weeks, and the orders are modified during the period of Active Duty, and the period of additional duty when coupled with the time remaining to be served is less than 20 weeks, then the member would remain entitled to BAH-RC/T.
+
+f.  A reserve member called or ordered to Active Duty in connection with a contingency operation (regardless of the duration) is entitled to BAH. This entitlement only applies if the member maintains financial responsibility for the primary residence.
+
+g.  To report a credit for a Marine's entitlement to BAH DIFF (Court ordered support for children) the reporting unit must contact the FO. The reporting unit cannot report a credit for BAH DIFF.
+
+h.  To check BAH RC/T that was previously reported by CRED BAH, report the DEL AS ERR transaction for TTC 896 sequence 002.
+
+- **Note 1: The period of BAH-RC/T entitlement being reported must equal or include dates within a previously or concurrently reported Active Duty period.**
+i. Entitlement to partial BAH is automatic for Reservists not entitled to BAH with dependents, or in their own right, except under certain conditions. Specific conditions of entitlement are contained in the DOD 7000.14-R Financial Management Regulation, Volume 7A.
+
+(1) A Reservist's entitlement to partial BAH will be automatically established in MCTFS upon processing the proper join transaction reported by a Selected Marine Corps Reserve, Individual Mobilization Augment or Mobilization Training Unit. Partial BAH will be automatically credited to the account of an Individual Ready Reserve, not a member of a Mobilization Training Unit, when Active Duty is reported per Chapter 7 of this manual.
+
+(2) The applicable increase or decrease of the partial BAH rate occurring from promotion or reduction of pay grade is accomplished via computerized processes.
+
+(3) Entitlement to partial BAH is automatically terminated upon processing of the entry reporting commencement of BAH on behalf of dependents and reestablished when BAH in behalf of dependents is terminated. Entitlement to partial BAH is automatically suspended upon processing a credit of BAH own right in conjunction with an Active Duty period.
+
+j. When a Reserve Marine is mobilized or ordered to Active Duty for 31 days or more, the member's BAH entitlement data resident in MCTFS reserve record will automatically transfer to the member's MCTFS active record.
+
+### Section 12
+
+Basic Allowance For Housing Reserve Component (BAH RC)
+
+a. The BAH Effective Date for Reservists retained on Active Duty under incapacitation pay is the date following the last day of the original orders and will apply to the period of Active Duty that extends beyond the original Active Duty orders. Use the appropriate statement to start, credit or check BAH-RC/T entitlement for reserve members:
+
+```
+TTC 187 019 [A] STRT BAH II WITH DEPN ED [B] |
+```
+** **   [A] DOA (Date of Action; never 00000000) ** **   [B] ED (Effective Date/Start Date; never 00000000)
+
+```
+TTC 896 002 [A] CRED BAH II WITHOUT DEPN [B] TO [C] |
+```
+** **   [A] DOA (Date of Action; never 00000000) ** **   [B] FROM DATE (Never 00000000) ** **   [C] TO DATE (Never 00000000)
+
+Note: The From and To dates are inclusive.
+
+To report BAH II Without Dependents for Reserve Marines called or ordered to Active Duty for less than 30 days use TTC 187 021:
+
+```
+TTC 187 021 [A] STRT BAH II WITHOUT DEPN ED [B] |
+```
+** **   [A] DOA (Date of Action; never 00000000) ** **   [B] ED (Effective Date; never 00000000)
+
+Note: The Effective Date must be equal to or greater than 20060106.
+
+### Section 13
+
+Reserve Bah Partial. Use The Following Statement to Report Start and Stop Bah Partial Entitlement for Reserve Members:
+
+```
+TTC 187 034 STRT BAH PARTL ED [A] |
+```
+** **   [A] STRT ED (Effective Date)
+
+```
+TTC 186 002 STOP BAH PARTIAL [A] ED [B] |
+```
+** **   [A] BAH STOP CODE (0; numeric) ** **   [B] ED (Effective Date; See Note below)
+
+Note: Reported Effective Date for TTC 186 (all sequences) must be greater than or equal to 19981031.
+
+### Section 14
+
+The Marine Who Was Entitled to Bah At The With Dependents Rate Who Has Been UA for More Than 29 Consecutive Days, may be credited BAH under the authority of DoD FMR Volume 7A, Chapter 26, as determined by Headquarters Marine Corps, Headquarters Marine Corps-P&R (RFF) MCTFS FPM, and MCO P7220.31.  Prepare and Forward to The FO A NAVMC Form 11116: Miscellaneous Military Pay Order Authorizing The Entitlement, or When The FO Is Geographically Remote From The Area of The Reporting Unit, A Message Containing The Required Information.
+
+### Section 15
+
+Marines Without Dependents Are Not Entitled to Bah Partial When Assigned to Government Single-Type Quarters (Including Government-Leased Quarters), Which Substantially Exceed The Minimum Standards of Single Quarters for The Marine's Pay Grade. When Such A Determination Has Been Made, Stop Bah Partial (See Paragraph 80201.14).
+
+### Section 16
+
+Government Quarters
+
+a. Upon receipt of notification from the housing officer assigning or terminating the assignment of the Marine or dependents to Government quarters, appropriate unit diary statements must be reported to start or stop quarters checkage for a specific period.  The commanding officer will authenticate and endorse the notification with the unit diary number and date, the original will be retained and filed in the command files and the duplicate returned to the housing officer.  Use the following statements to start and stop adequate or inadequate checkage when a Marine and/or dependents are assigned to quarters. This includes Marines married to members of the United States Armed Forces who are on Active Duty and are receiving BAH at the with or without dependent rate.
+
+b. Assignment to Adequate Government Quarters. Use the following statement to report assignment to government quarters:
+
+```
+TTC 187 037 STRT QTRS ([A]) [B] ED [C] |
+```
+** **   [A] Service Code cognizant military service (A=Army, F=Air Force, N=Navy, M=Marine Corps, X=Other) ** **   [B] Housing Office (UIC or AAAN) ** **   [C] ED (Effective Date of assignment)
+
+- **Note 1: When dependents are prevented from occupying assigned quarters because of orders of competent authority, reporting of the STRT QTRS entry may be delayed until transportation is arranged for household goods and is available for the dependents, plus the normal travel time for the dependents to the Marine's duty station.  This is contingent upon prompt application by the Marine for shipment of household goods and transportation of dependents.**
+- **Note 2: Marine Corps housing officers who have been assigned a RUC are authorized to report quarters information.**
+- **Note 3: An existing BAH Entitlement (901 Remark With or Without Dependents) must exist.  TTC 388 (CHAN BAH) must be reported to establish a BAH entitlement prior to reporting members to Quarters.  The 901 Remark will determine the member's entitlement (with or without Dependents) for Quarters.  Also, members assigned to Inadequate Government Quarters will have a 901 Remark (BAH RC/T) entitlement established to offset the reported quarters deduction.**
+c. Termination of Government Quarters. Use the following statement to report termination of government quarters:
+
+```
+TTC 186 003 STOP QTRS ED [A] |
+```
+** **   [A] ED (Effective Date of termination)
+
+- **Note 1: Computer logic will stop quarters as of 2359 the day PRIOR to the Effective Date entered. When the Marine is occupying quarters and there quarters are determined to be inadequate, a stop quarters and appropriate start inadequate quarters unit diary statement must be reported.**
+- **Note 2: A system utility is being executed as often as possible to establish a BAH II entitlement for members in quarters have been terminated. This utility will continue to be executed this utility until implementation of a future system change to automatically start BAH II upon reporting TTC 186 STOP QTRS.**
+d. Use the following statement to start inadequate quarters checkage when the Marine and/or dependents are assigned to inadequate quarters when the amount of checkage is to be reported as a percentage of the BAH RC/T vice a dollar amount. Do not use the statement for reporting inadequate-quarters assignment for Marines married to members of the United States Armed Forces who are on Active Duty.
+
+```
+TTC 187 039 STRT INAD QTRS [A] PERCENT ([B]) [C] ED [D] |
+```
+** **   [A] Percent (i.e., 050, 065, or 075; See Note below) ** **   [B] Service Code to denote cognizant military service (A=Army, F=Air Force, N=Navy, M=Marine Corps, X=Other) ** **   [C] Housing Office (UIC or AAAN)
+
+- [D] ED (Effective Date of assignment)
+Note: Effective 1 October 1982, percentage rate may not exceed 75 percent.  Also, when the Marine is occupying inadequate quarters and the quarters are determined to be adequate, or when the Marine moves from inadequate quarters to adequate quarters, a stop and start quarters statement must be reported; for example, STOP QTRS ED 19980115, STRT QTRS Effective Date 19980115.
+
+e.   Member Married to Member. Start inadequate quarters checkage when the Marine and spouse are members of the United States Armed Forces on Active Duty and are receiving BAH at the with or without dependents rate, or when the amount of checkage is to be reported as a dollar amount vice the percentage of BAH RC/T.  When the Marine and spouse jointly occupy inadequate quarters on a rental basis, a rental charge for the quarters will be the fair rental value of such rental quarters, not to exceed 75 percent of the with dependent rate of BAH RC/T that would be payable to a Marine of the same pay grade and rank as the Marine under whose eligibility the quarters are assigned.  The rental charge will be collected solely from the Marine to whom the quarters are assigned, even though the rental charge may exceed the monthly rate of BAH RC/T.  Report as follows:
+
+```
+TTC 187 038 STRT INAD QTRS $[A] ([B]) [C] ED [D] |
+```
+** **   [A] Dollar Amount (show the amounts as $55.10 or $100.00) ** **   [B] Service Code of cognizant military service (A=Army, F=Air Force, N=Navy, M=Marine Corps, X=Other) ** **   [C] Housing Office (UIC or AAAN) ** **   [D] ED (Effective Date of assignment)
+
+f.  Percentage or rate change.  Use the following applicable statement to change inadequate quarter's checkage when either the percentage or dollar value is changed:
+
+```
+TTC 187 017 CHAN INAD QTRS [A] PERCENT ED [B] |
+```
+** **   [A] Percent (i.e., 050, 075) ** **   [B] ED (Effective Date of change)
+
+```
+TTC 187 016 CHAN INAD QTRS $[A] ED [B] |
+```
+** **   [A] Dollar Amount (i.e., $55.10, $100.00) ** **   [B] ED (Effective Date of change)
+
+g.  Erroneous UIC or AAAN.  Use the following statement to correct an erroneous UIC or AAAN:
+
+```
+TTC 184 000 CHAN HOUS OFF UIC/AAAN ([A]) [B] ED [C] |
+- [A] Service Code of cognizant military service (A=Army, F=Air Force, N=Navy, M=Marine Corps, X=Other)
+- [B] Housing Office (UIC or AAAN)
+- [C] ED (Effective Date of assignment (NAVMC Form 11051)
+```
+### Section 17
+
+Housing Office UIC/AAAN numbers and Reporting Unit Codes are shown below:
+
+UIC/AAAN HOUSING OFFICE ACTIVITY NUMBER RUC
+
+AAAN | RUC | HOUSING OFFICE
+
+000146 | 59024 | MCAS, Cherry Point, NC
+
+000243 | 59035 | MCRD, San Diego, CA
+
+000263 | 59022 | MCRD, Parris Island, SC
+
+000264 | 59001 | MCCDC, Quantico, VA
+
+000318 | 59040 | MCAS, Kaneohe Bay, HI
+
+000681 | 59030 | MCB, Camp Pendleton, CA
+
+003026 | 03026 | Maguire-Dix-Lakehurst, NJ
+
+060169 | 59021 | MCAS, Beaufort, SC
+
+062204 | 59034 | MCLB, Barstow, CA
+
+062613 | 59050 | MCAS, Iwakuni, JA, FPO Seattle, WA
+
+062974 | 59033 | MCAS, Yuma, AZ
+
+067001 | 59020 | MCB, Camp Lejeune, NC
+
+067004 | 59023 | MCLB, Albany, GA
+
+067399 | 59031 | MCAGCC, Twenty-Nine Palms, CA
+
+067400 | 59051 | MCB, Camp Smedley D. Butler, Okinawa Ja, FPO Seattle, WA
+
+067443 | 59010 | MCSA, Kansas City, MO
+
+000000 | Quarters under management of another branch of the United States Armed Forces (use when no UIC/AAAN is listed above for the member's Marine Corps Permanent Duty Station)
+
+### Section 18
+
+Refer to DoD FMR Volume 7A, Chapter 26 to determine the proper entitlement to BAH when a Marine and spouse are members of the United States Armed Forces on AD.
+
+### Section 19
+
+Personnel at home awaiting Physical Evaluation Board (PEB) proceedings.  A Marine ordered home to await the results of a PEB is entitled to the same BAH as if ordered to a new PDS (That is, place to which ordered is treated as the new PDS) based on no government quarters available for assignment at the place to which ordered.
+
+### Section 20
+
+Bah Rate Protection.  Member's BAH is rate protected to the locality rate in effect the date they reported to a new PDS.  This BAH rate is protected until the member's status changes as follows:
+
+a.  Member performs a PCS to a new MHA.
+
+b.  Member is reduced in pay grade.
+
+c.  Member has a change of dependency status from with dependent to without dependent or from without dependent to with dependent.
+
+### Section 21
+
+BAH Waiver Rate Protection.  MCTFS DEPN screen identifies a member's Headquarters Marine Corps (MMIA) approved BAH rate protection waiver information.  The BAH-Protect-Waiver-Dt is the date BAH rate protection began and the BAH-Protect-Waiver-Zip-Cd represents the zip code for which the rate the member is being paid.
+
+a. Report the below entry when an approved BAH Rate Protection Waiver is received:
+
+```
+TTC 393 000 BAH-PROTECT-WAIVER-DT [A] BAH-PROTECT-WAIVER-ZIP-CD [B] |
+- [A] ED (Effective Date)
+- [B] ZIP Code (identifies which BAH Location member is being paid)
+```
+b. MCTFS will automatically zero out the BAH Rate Protection Waiver Date and ZIP Code with processing of a subsequent TTC 020 (Join). For all other reasons to zero out the BAH Rate Protection Waiver Date and ZIP Code report the following entry:
+
+```
+TTC 393 000 BAH-PROTECT-WAIVER-DT [A] BAH-PROTECT-WAIVER-ZIP-CD [B] |
+- [A] ED (Effective Date; all zeros)
+- [B] ZIP Code (all zeros)
+```
+### Section 22
+
+Member Married to Member. Effective 1 July 1999, When Two Service Members Married to Each Other Are Assigned to The Same or Adjacent Base, Only One Member Is Entitled to Receive Bah At The With Dependent Rate. The Other Member Is Entitled to Bah At The Without Dependent Rate. This Applies to Members Married to Members Residing in The Same Household or Stationed in The Same Vicinity. Service Members Married to Other Service Members Who Meet The Conditions Below, Must Contact Their Personnel Office Concerning A Change in Entitlement. The Members Must Decide Which Member Can Claim The Dependent(S) in Order to Receive Bah At The With Dependent Rate. If Members Cannot Decide, The Higher-Ranking Member Is to Claim With Dependents. If The Entitlement to BAH Was Reported by The Commandant of The Marine Corps (MMRP), The Personnel Office Must Coordinate With Headquarters Marine Corps Regarding The Stopping or Starting A Member's Entitlement (Refer to The DOD 7000.14-R Financial Management Regulation, Volume 7A, Chapter 26). These Are The Conditions That Will Require An Entitlement Change:
+
+a. Both members receiving BAH with dependents, one is claiming a dependent child (children) and/or an approved parent. If the spouses are co-located (same or adjacent duty stations) the Marine receiving BAH without dependent in addition to BAH-DIFF must have BAH-DIFF terminated.
+
+b. One member is receiving BAH with dependents and the other member is receiving BAH without dependents and BAH difference (for child support).
+
+c. Members who have a dependency status change from the with dependent rate to the without dependent rate or from without dependent rate to with dependent rate lose the rate protection. Therefore, if member married to member decide to flip-flop their dependents, both will lose the BAH rate protection.
+
+### Section 23
+
+Confinement. The Below Paragraphs Indicate Entitlement to or Not to Receive Bah While Member Is Confined.
+
+a. Members with dependents who are entitled to basic pay and in receipt of BAH with dependents at PDS locality rate prior to entering a confined status, to include those members in pre-trial confinement (that is, confined awaiting higher authority, or confinement ATLSCM, confinement ATLSPCM, and confinement ATLGCM). These members are entitled to BAH at the with dependent rate while in confinement, unless forfeiture of all pay and allowances was awarded in the court martial sentencing. If total forfeiture of pay and allowances is awarded, the member is not entitled to any BAH.
+
+b. Members without dependents are not entitled to BAH without dependents while confined (to include the categories of Pretrial confinement stated above). These members are entitled to BAH-partial while in confinement unless forfeiture of allowances was directed.
+
+c. Members listed in paragraphs a and b above can retain their BAH for the period of confinement if they are acquitted, the charges withdrawn, or the sentence set aside or disapproved. This is provided the member's sentence did not include total forfeiture of all pay and allowances.
+
+d. Those members that are living in the barracks and receiving BAH-Partial prior to entering a confined status will continue to receive BAH-Partial while in confinement unless forfeiture of allowances was directed (DoDFMR Volume 7A, Chapter 26 and PAAN 14-03 applies).
+
+### Section 24
+
+The Bah Entitlements Will Be Automatically Adjusted or Terminated When The Following Are Reported:
+
+a. Change of pay grade (promotions/reduction or, changes between officer and enlisted).
+
+b. When STRT QTRS is reported, BAH entitlement will automatically be stopped, effective the date of assignment to quarters.
+
+c. When TTC 020 is reported and the Marine's MCTFS record contains an active BAH entitlement at the with dependents rate, BAH is automatically stopped at the old duty station rate on the join Effective Date minus 2 days, and the BAH will be automatically started at the new duty station rate on the join Effective Date minus 1 day.

@@ -1,0 +1,79 @@
+---
+id: "mctfsprium-90201"
+aliases:
+  - "MCTFSPRIUM 9-90201"
+  - "MCTFSPRIUM 9-90201 9-90202 9-91700 9-91701"
+  - "MCTFSPRIUM 9-90201 9-90202 9-91701"
+  - "MCTFSPRIUM 9-90201 9-90202 9-91701; PAAN 6-16"
+title: "MCTFSPRIUM 9-90201 - Special Duty Assignment Pay"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 9-90201"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 90201, Chapter 9 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 90201_Special_Duty_Assignment_Pay.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 90201
+
+**Special Duty Assignment Pay** (TTC 233/235)
+
+### Section 1
+
+A unit diary entry is required when SDA pay is awarded or terminated.  The unit diary entry to terminate SDA pay should be used only if the Marine is no longer entitled to SDA pay in any amount.
+
+### Section 2
+
+SDA is required to be certified by Commanders (pay grade O-5 and above) annually during the anniversary month.  If a positive re-certification is not conducted, the unit should terminate the SDA Pay.  Further information may be found in DOD 7000.14-R Financial Management Regulation, Volume 7, Chapter 8, MCO 7220.12R, MARADMIN 380/14, MARADMIN 302/17, and HQMC-P&R (RFF) MCFTS FPM.
+
+### Section 3
+
+First Sergeants and Sergeants Major assigned to the following reporting units, and who are qualified and performing the duties of a production recruiter (Billet MOS 8411) or drill instructor (Billet MOS 0911), will qualify for SDA pay:
+
+a.  Recruit training company/battalion.
+
+b.  MARFORRES, prior service recruiting division.
+
+c.  Recruiting stations/districts.
+
+d.  Sergeants Major and Sergeants Major (selectees) serving in a Billet MOS of 8999 on recruiting duty or those assigned to Recruit Training Regiments at MCRD-PI or MCRD-SD.
+
+### Section 4
+
+SDA pay may be awarded to an eligible enlisted Marine in pay grade E-3 or higher serving in an authorized Table of Organization (T/O) Billet Identification Code (BIC) designated as eligible for SDA pay. Effective 1 Oct 2017, pay levels for the SDAP billets listed below shall begin as described below.  (Marines currently serving in the SDAP billets listed below, with a join date prior to 1 October 2014, are grandfathered and shall continue to receive the pre 1 October 2014 pay level for the duration of their current assignment to those billets.) a. Marines assigned to the following SDAP billets shall receive SDAP level-6: (1)  Sergeant Major of the Marine Corps b.  Marines assigned to the following SDAP billets shall receive SDAP level-5: (1)  Recruiter (includes musician recruiters) (2)  Career Recruiter (3)  Critical Skills Operator c.  Marines assigned to the following SDAP billets shall receive SDAP level-4: (1)  Drill Instructor (DI) (2)  Helicopter Rescue Swimmer d.  Marines assigned to the following SDAP billets shall receive SDAP level-3: (1)  DI Duty, 1stSgt (Recruit Company) (2)  DI Duty, 1stSgt (DI School) (3)  DI Duty, 1stSgt (Officer Candidate School (OCS) Letter Company) (4)  Senior Enlisted Advisor- (General/Lieutenant General level billets, to include joint Command Senior Enlisted Leader (CSEL)) (5)  Recruiting Duty, SgtMaj (Recruiting Station) e.  Marines assigned to the following SDAP billets shall receive SDAP level-2: (1)  Marine Combat Instructor (School of Infantry) (2)  MARSOC - Special Operations Capability Specialist (3)  DI Duty, SgtMaj (Recruit Battalion) (4)  DI Duty, SgtMaj (Recruit Training Regiment) (5)  Marine Combat Instructor, 1stSgt (Infantry Training Battalion (ITB)) (6)  Marine Combat Instructor, 1stSgt (Advanced Infantry Training (AIT)) (7)  Marine Combat Instructor, 1stSgt (Marine Combat Training (MCT)) (8)  Recruiting Duty, SgtMaj (Recruiting District) (9)  Senior Enlisted Advisor (Major General/Brigadier General/SES level billets, to include joint CSEL) f.  Marines assigned to the following SDAP billets shall receive SDAP level-1: (1)  Career Planner (2)  Marine Corps Security Forces (3)  Marine Corps Embassy Security Guards (4)  Marine Corps Embassy Security Guard, SgtMaj (5)  Marine Corps Embassy Security Guard, 1stSgt (6)  DI Duty, SgtMaj (OCS) (7)  Marine Combat Instructor, 1stSgt (HS battalion) (8)  Marine Combat Instructor, SgtMaj (MCT) (9)  Marine Combat Instructor, SgtMaj (ITB) (10)  Marine Combat Instructor, SgtMaj (AIT) (11)  School of Infantry, SgtMaj (12)  Recruiting Duty, SgtMaj (Recruiters School)
+
+### Section 5
+
+Erroneous SDA pay information can be corrected by terminating the erroneous entitlement as of the date the original entitlement was reported by using a 'DEL AS ERR' statement.  The correct entitlement will then be reported, if appropriate.
+
+### Section 6
+
+Report SDA pay for members as follows:
+
+```
+TTC 233 013 [A] STRT SDA PAY BILMOS [B] SDAP LEVEL [C] ED [D] |
+- [A] DOA (Date of Action)
+- [B] BILMOS (Billet Military Occupational Specialty Code)
+- [C] SDAPLVL (Special Duty Assignment Pay Level Code)
+- [D] ED (see note 1)
+```
+- **Note 1: The Join Date for those Marines executing Permanent Changes of Station orders to an SDA billet if the Marine meets all of the specific eligibility criteria described in paragraph 4.a(2)(c) of**
+MCO 7220.12R.
+
+- **Note 2:  Processing of the unit diary statement reporting transfer will terminate SDA pay.  In accordance HQMC-P&R (RFF) MCFTS FPM, "those Marines executing Permanent Change of Assignment (PCA) or Permanent Change of Station (PCS), the entitlement of SDA Pay will be reported continuously without a lapse in entitlement".**
+- **Note 3: See MARADMIN 302/17 for clarity on the grandfathering policy for Marines currently serving in SDAP billets that joined SDAP billets prior to 1 Oct 2014 and are still in a grandfathered status as of 1 Oct 2017.**
+### Section 7
+
+Report the following TTC to terminate SDA pay when a member is no longer entitled to SDA pay in any amount:
+
+```
+TTC 235 000 [A] PROPAY SDA TERM ED [B] |
+- [A] DOA (Date of Action)
+- [B] ED (Effective Date)
+```

@@ -1,0 +1,139 @@
+---
+id: "mctfsprium-60212"
+aliases:
+  - "MCTFSPRIUM 6-60212"
+title: "MCTFSPRIUM 6-60212 - JOIN FROM DESERTION RUC 54321 MCC 910 WHILE DES IHCA |"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 6-60212"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 60212, Chapter 6 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 61024_JOIN_FROM_DESERTION_RUC_54321_MCC_910_WHILE_DES_IHCA_.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+1. Entries to join personnel who are returning from a desertion status will be reported based on the current status of the Marine as shown below.  In the case of personnel who entered into a desertion status while attached to another unit and are being returned to either the parent reporting unit or the attached unit, only the parent unit can report the join from desertion.  A join from desertion entry will automatically terminate a Marine's Temporary Additional Duty and/or FAP status.
+
+a.  Deserters who are being joined while still UA and are IHFA or IHCA.
+
+b.  All other deserters will be joined.
+
+c.  Pay and allowances do not accrue to an enlisted member while subject to military control after the expiration of his/her enlistment unless the member is acquitted and is therefore considered to have been held for the convenience of the government.
+
+2. Deserters who are IHFA/IHCA will be joined as of the date they commenced the period of IHFA/IHCA.  Although the Join statement will enable the reporting unit to report information on the Marine into MCTFS, MCTFS record will show the Marine in an IHFA/IHCA status.
+
+a.  Report as follows:
+
+```
+TTC 020 311 [A] JOIN FROM DESERTION
+```
+RUC [B] MCC [C] WHILE DES IHFA |
+
+- [A] DOA (Date of Action/Join Date)
+- [B] RUC (Reporting Unit Code)
+- [C] MCC (Monitored Command Code)
+```
+TTC 020 310 [A] JOIN FROM DESERTION
+```
+RUC [B] MCC [C] WHILE DES IHCA |
+
+- [A] DOA (Date of Action/Join Date)
+- [B] RUC (Reporting Unit Code)
+- [C] MCC (Monitored Command Code)
+b.  Report a HIST: statement to reflect the following for IHCA/IHFA Desertion:
+
+(1) Information concerning the apprehension, surrender or delivery of the Marine.
+
+(2) Information concerning the IHCA/IHFA status of the Marine and any pending civil charges.
+
+(3) Information concerning the authority for joining the Marine while IHCA/IHFA.
+
+(4) The name of the unit from which the Marine is absent if the join is being reported by a command other than the Marines parent command.
+
+c.  Report other information necessary to update MCTFS record on the member, for example, Billet MOS, strength category, duty status code, individual location or time lost.  Report the correct statement from Figure 6-2 to join the Marine and terminate the period of UA/desertion.
+
+3. If the Marine is joined from desertion while not IHCA/IHFA, report one of the following, as applicable:
+
+```
+TTC 020 300 [A] JOIN FROM DESERTION
+```
+RUC [B] MCC [C] TIME [D] FOR DUTY |
+
+```
+TTC 020 302 [A] JOIN FROM DESERTION
+```
+RUC [B] MCC [C] TIME [D] FOR CNFT ATLGCM |
+
+```
+TTC 020 303 [A] JOIN FROM DESERTION
+```
+RUC [B] MCC [C] TIME [D] FOR HOSP BC |
+
+```
+TTC 020 304 [A] JOIN FROM DESERTION
+```
+RUC [B] MCC [C] TIME [D] FOR HOSP FR CBT UNIT |
+
+```
+TTC 020 305 [A] JOIN FROM DESERTION
+```
+RUC [B] MCC [C] TIME [D] FOR HOSP OTHER MCC |
+
+```
+TTC 020 306 [A] JOIN FROM DESERTION
+```
+RUC [B] MCC [C] TIME [D] FOR OTHER |
+
+```
+TTC 020 307 [A] JOIN FROM DESERTION
+```
+RUC [B] MCC [C] TIME [D] FOR RECRUIT |
+
+```
+TTC 020 308 [A] JOIN FROM DESERTION
+```
+RUC [B] MCC [C] TIME [D] FOR TEM ADMIN DISP |
+
+```
+TTC 020 309 [A] JOIN FROM DESERTION
+```
+RUC [B] MCC [C] TIME [D] FOR AWTG TRANS OTHER MCC |
+
+```
+TTC 020 320 [A] JOIN FROM DESERTION
+```
+RUC [B] MCC [C] TIME [D] FOR SCHOOL [E] |
+
+- [A] DOA (Date of Action/Join Date)
+- [B] RUC (Reporting Unit Code)
+- [C] MCC (Monitored Command Code)
+- [D] TIME (HHMM)
+- [E] SCHOOL (From MCTFS Table 02)
+4. If the Marine was issued orders to return to the command or to carry out transfer orders and fails to comply with stragglers orders, report the information concerning the failure to report in a HIST: statement and the following must be provided:
+
+a.  Billet MOS.  See Chapter 5, Section 9.
+
+b.  Duty status code.  See Chapter 4, Section 5.
+
+c.  Strength category code.  See Section 6, this chapter.
+
+d.  Time lost.  See Chapter 7, Section 4.
+
+e.  If the Marine is married or was previously authorized BAH on behalf of his approved dependents, revalidate the Marines entitlement to previously approved entitlements and report the information per Chapters 4 and 8 of this Manual.
+
+5. Report the termination of IHCA or IHFA and results of any civil charges that were resolved during the period of IHCA or IHFA.  Reporting instructions on personnel who are to be reattached following a return from desertion are contained in Section 3, of this chapter.
+
+6. Example entries:
+
+LAST NAME INITIALS EDIPI REMARKS
+
+GRIFFIN JR E  9876543210 20061024 JOIN FROM DESERTION RUC 54321 MCC 910 WHILE DES IHCA |
+
+HIST: APRND BY CA AT 0807 on 20061024 IN NEW ORLEANS GRAND THEFT AUTO AUTH CMC MSG 210804Z Oct 06 |
+
+WAGNER  A 0011112011 20061024 JOIN FROM DESERTION RUC 12345 MCC 011 TIME 0840 FOR DUTY |

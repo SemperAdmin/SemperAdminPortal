@@ -1,0 +1,480 @@
+---
+id: "mctfsprium-90102"
+aliases:
+  - "MCTFSPRIUM 9-90102"
+title: "MCTFSPRIUM 9-90102 - AVIATION DATA ELEMENTS"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 9-90102"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 90102, Chapter 9 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 90102_AVIATION_DATA_ELEMENTS.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 1
+
+AVIATION INCENTIVE PAY (AvIP).  This is career incentive pay for aeronautically designated officers and enlisted who engage in aviation service on a career basis.  Entitlement provisions are set forth in the DOD 7000.14-R Financial Management Regulation, Volume 7A.  An explanation of AvIP, terminology, and assignment criteria are contained in MCO 1000.6_ Assignment, Classification, and Travel System Manual (ACTSMAN) (MCO P1001R.1 for reserve members).  Refer to SECNAVINST 7220.88 for UAS-AVIP and BUPERSINST 1329.4F for Enlisted UAS-CSIP entitlement. Effective 17 October 1998, only an officer's Aviation Service Entry Date (ASED) is used as a factor in calculating AvIP entitlement.  For Officers, there are two types of Aviation Incentive Pay (AVIP) as follows: AVIP – Manned Aircraft – Aviation Incentive Pay (MCTFS 946 RMK) UAS-AVIP – Unmanned Aerial Systems – Aviation Incentive Pay (MCTFS 905 RMK) Note:  Aviation Incentive Pay (AvIP) is formerly known as Aviation Career Incentive Pay (ACIP). Officers piloting manned aircraft in receipt of AVIP will be reflected on the AVIATION-CAR-INCEN-PAY-946-RMK.  Officers operating Unmanned Aerial Systems in receipt of UAS-AVIP will be reflected on the UAS-AVIATION-INCEN-905-RMK (UAS-AVIP).  Enlisted operators of Unmanned Aerial Systems with PMOS equal 7314 and ADMOS equal 8022 in receipt of UAS-CSIP will be reflected on the UAS-CRITITCAL-INCEN-906-RMK. The UAS-AVIP and UAS-CSIP entitlements are for Active Component and Active Reserve (AR) only.  There is no entitlement to UAS-AVIP and UAS-CSIP for the Reserve Component.
+
+### Section 2
+
+Permanent flight orders issued by the Commandant of the Marine Corps (MMOA-2) assign aeronautically designated Marines.  Officers and Enlisted Marines holding Primary MOS equal 7301, 7318 (UAS-AVIP), 7314 (UAS-CSIP), and 7380, 7500-7599, 8042 or 8059 (AVIP) are designated to flying status.  Effective November 1st, 2023 (01-Nov-2023), aeronautically designated officers with PMOS equal* *7301 or 7318 are entitled to UAS-AVIP (905 RMK).  Aeronautically designated Enlisted Marines with PMOS equal 7314 and ADMOS equal 8022 are entitled to UAS-CSIP (906 RMK).  Thereafter, PCS orders for these members will specify a duty assignment of either Duty Involving Flight Operations (DIFOP), Duty Involving Flight Denied (DIFDEN), or Duty Involving Flight Denied-2 (DIFDEN-2).
+
+### Section 3
+
+AvIP is a continuous entitlement for the first 12 years of a member's aviation service, regardless of duty assignment.  For Officers, Operational flying gates have been established at the end of the 12th and 18th years of aviation service.  For Enlisted Marines, operational flying gates have been established at the end of the 10th and 16th years of aviation service.  Marines whose requirement to pass these gates has not been waived, and who subsequently fails to pass a gate, will no longer be eligible to receive continuous AVIP/UAS-AVIP/UAS-CSIP.  However, if the Marine is assigned to an operational flying billet under DIFOP orders, he/she shall be eligible to receive monthly AVIP/UAS-AVIP/UAS-CSIP, paid at the same rate as continuous AVIP/UAS-AVIP/UAS-CSIP.  An Officer or an Enlisted Marine assigned to a DIFDEN-2 billet is only entitled to receive AVIP/UAS-AVIP/UAS-CSIP for 48 months while in the DIFDEN-2 status.  When he/she transfers to a DIFOP or DIFDEN billet the AVIP/UAS-AVIP/UAS-CSIP pay entitlement will resume. The MCTFS DIFDEN-2 Lapse Date will be reset from the previously captured lapse date equal YYYYMMDD to 00000000.  Additionally, the MCTFS DIFDEN-2 status (counter) will reset to zero months. Note #1:  HQMC(Aviation Plans) can grant a waiver to the DIFDEN-2 Lapse Date, and reset the Lapse Date to 00000000, by reporting a TTC 0340/000 DESIGCAT ‘4’.
+
+```
+TTC 340 000 DESIGCAT X
+```
+[1] DUTY IN A FLIGHT STATUS, FLIGHT ACTIVITY DENIED-2 (DIFDEN-2)
+
+[2] DUTY IN A FLYING STATUS INVOLVING OPERATIONAL FLIGHTS (DIFOP)
+
+[3] DUTY IN A FLIGHT STATUS, FLIGHT ACTIVITY DENIED (DIFDEN)
+
+- [4] DUTY IN A FLIGHT
+STATUS, FLIGHT ACTIVITY DENIED WAIVED (DIFDEN/DIFDEN-2 WAIVED)
+
+- [5] CATEGORY B
+- [6] TERMINAL DUTY
+Note #2:  For DIFOP and the UAS systems, Officers must have a PMOS of 7301 or 7318 and the Enlisted Marines** **must have the ADMOS and BMOS of 8022.  For the UAS systems, when a TTC 176 or 177 (MOS, BMOS etc..) is reported, if the MBR has a 905-RMK or 906-RMK, MCTFS may generate a system update to the RMK if required. (I.E. Update the flight status from DIFOP to DIFDEN).
+
+### Section 4
+
+When a 946 RMK (AVIP), 905 RMK (UAS-AVIP) or 906 RMK (UAS-CSIP) is built or updated, (I.E. Upon JOIN, or when a change for MOS, BMOS, or MCC is reported), MCTFS will interrogate the BMOS, MCC, and the Program Element Number (PEN Code) to determine DIFDEN or DIFDEN-2 status.  When a Marine enters a DIFDEN-2 status a MCTFS advisory will be generated and sent to MOL that states that AVIP, UAS-AVIP, or UAS-CSIP will only continue for 48 months. A) AvIP Pay Codes for DIFOP are Active Duty (11109), Active Reserve (AR) (31109), and Reserve (55112).  AvIP Pay Codes for DIFDEN are Active Component (11110), Active Reserve (AR) (31110), and Reserve (55113).  AvIP Pay Codes for DIFDEN-2 are Active Duty (10307), Active Reserve (AR) (30307), and Reserve Component (55167). B) UAS-AVIP Pay Codes DIFOP are Active Component (11111) and Active Reserve (AR) (30309).  UAS-AVIP Pay Codes for DIFDEN are Active Component (11112) and Active Reserve (30310).  UAS-AVIP Pay Codes for DIFDEN-2 are Active Component (11113) and Active Reserve (AR) (30311). C) UAS-CSIP Pay Codes for DIFOP are Active Component (21111) and Active Reserve (AR) (30312).  UAS-AVIP Pay Codes for DIFDEN-2 are Active Component (11113) and Active Reserve (AR) (31303).
+
+### Section 5
+
+For Enlisted UAS-CSIP, the JOIN Transaction (TTC 0020/002 (JOIN – DIFOP) or TTC 0020/003 (JOIN – DIFDEN) will start UAS-CSIP.  The entitlement for UAS-CSIP can also be reported by distinct DIFOP/DIFDEN TTC 464 (Duty Involving Flying Operational – DIFOP) or
+
+```
+TTC 465 (Duty Involving Flying Denied (DIFDEN).  When an Active Component
+```
+aeronautically designated officer entitled to AVIP or UAS-AVIP reports to a unit or to join an aeronautically designated Reserve officer to Active Duty, the clerk must use the officer's orders as the source document to report the join, using the correct Flight Status documented on the orders (DIFOP, DIFDEN or DIFDEN-2).  The reporting of any of the below join statements will place the member in the correct Flight Status, will calculate the officer's entitlement to AVIP/UAS-AVIP based on the amount of the member's operational flying time and whether or not the member has passed the required gates, and will auto-generate the entitlement to AVIP/UAS-AVIP in the next cycle with the correct pay code.  Additionally, MCTFS will then either start or stop the member's operational flying clock as necessary.  When a JOIN for DIFDEN is reported, MCTFS will interrogate the BMOS, MCC and PEN Code to determine if DIFDEN or DIFDEN-2 applies and assign the appropriate flight status. Report as follows:
+
+```
+TTC 020 002 [A] ACTIVE DUTY JOIN RUC
+- [B] MCC [C] FOR DIFOP |
+```
+[A] DOA (Date of Action/Join Date)
+
+[B] RUC (Reporting Unit Code) (MCTFS Table 01)
+
+[C] MCC (Monitored Command Code) (MCTFS Table 01)
+
+```
+TTC 020 003 [A] ACTIVE DUTY JOIN RUC
+- [B] MCC [C] FOR DIFDEN |
+```
+[A] DOA (Date of Action/Join Date)
+
+[B] RUC (Reporting Unit Code) (MCTFS Table 01)
+
+[C] MCC (Monitored Command Code) (MCTFS Table 01) Should a unit attempt to report *JOIN/TTC 020* with any other sequence other than SEQ 002, and 003 on an Aeronautically designated Marine whose Primary MOS is 7301, 7318 (UAS-AVIP), 7314 (UAS-CSIP), 7380, 7500-7599, 8042 or 8059 (AVIP), the transaction will fail.  If any of the new join sequences listed above are reported on an officer whose MOS is not equal to 7380, 7500-7599, 8042, or 8059, the transaction will process, but the unit will receive an advisory, stating, 'SEQUENCE INTENDED FOR AERONAUTICALLY DESIGNATED PERSONNEL ONLY.  MBR JD FOR DU.' NOTE:  When TTC 176 is reported assigning MOS of 8003 (General Officer) on a General Aviation Officer, the Flight Status will be changed to ‘blank’ and the Flight Status date will be set to ‘00000000’.
+
+### Section 6
+
+To join aeronautically designated personnel to a Reserve unit, the appropriate Reserve join entry must be reported, followed by one of the below entries.  Additionally, one of the below entries must be reported on ANY officer, Active Component, Active Reserve (AR), Reserve Component, or an Enlisted Marine entitled to UAS-CSIP, whose flight status changes during an assignment. Report Flight Status as follows: (NOTE:  For UAS-AVIP and UAS-CSIP the reporting of TTC 464 (DUTY INVOLVING FLYING OPERATIONAL – DIFOP) or TTC 465 (DUTY INVOLVING FLYING DENIED – DIFDEN) will result in MCTFS interrogating the Marines PMOS, BMOS, MCC, and Program Element Number Code (PEN Code) to determine DIFOP, DIFDEN, or DIFDEN-2 status.  For UAS-AVIP all three statuses of DIFOP, DIFDEN, or DIFDEN-2 are applicable.  For UAS-CSIP, and for an Enlisted Marine, only DIFOP or DIFDEN-2 are applicable.  When a TTC 465 is reported for an Officer in receipt of AVIP (the 946 RMK), MCTFS will perform similar edits of the Marines PMOS, BMOS, MCC, and Program Element Number Code (PEN Code) to determine if DIFDEN or DIFDEN-2 applies).
+
+```
+TTC 464 000 [A] DIFOP ED [B]
+```
+| [A] DOA (Date of Action)
+
+[B] ED (Duty Involving Flight Operations Effective Date)
+
+```
+TTC 465 000 [A] DIFDEN ED [B] |
+```
+[A] DOA (Date of Action)
+
+[B] ED (Duty Involving Flight Operations Effective Date) Note:  Reporting either of the above transactions will change the Marines flight status, calculate the entitlement to AVIP, UAS-AVIP, or UAS-CSIP based upon system edits of the Marines PMOS, BMOS, MCC, and Program Element Number Code (PEN Code) and the member's operational flying time and whether he/she has passed the required gates, auto-generate the AVIP, UAS-AVIP, or UAS-CSIP entitlement in the next cycle with the correct pay code as necessary, and start or stop the member's operational flying clock.
+
+### Section 7
+
+OPERATIONAL FLYING GATES.  The passage, failure, or waiver of operational flying gates may only be reported by the Commandant of the Marine Corps (548XX) (see section below for reporting instructions).  IN MOST CASES, MCTFS[[FCPJ1]](file:///C:/Users/rebekah.hasbrouck/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/5EK9CVK5/PRIUM%2090102.docx#_msocom_1)  will calculate and populate this information. [[FCPJ2]](file:///C:/Users/rebekah.hasbrouck/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/5EK9CVK5/PRIUM%2090102.docx#_msocom_2)  In certain situations, MCTFS will be unable to determine the month and year in which a gate may have been passed.  When this situation is encountered, MCTFS will generate an advisory to the unit and to MMOA, stating, 'MR INDICATES MBR HAS SUFFICIENT OPFLY TIME TO PASS GATE ___.  UNABLE TO DETERMINE DATE.  RESEARCH AND CONTACT MMOA FOR ADJ.  ' Gate Information is displayed on the AvIP User View Screen in both MCTFS and Marine Online and on the member's LES.  It is important to remember that operational flying time ONLY accrues when a member is assigned DIFOP orders. Gate passage requirements are as follows: a.  All aeronautically designated officers are entitled to continuous AvIP for the first 12 years of aviation service, counted from the Aviation Service Entry Date, regardless of duty assignment (DIFOP or DIFDEN) during the intervening years, so long as that officer's Primary MOS is 7380 or 7500-7599. b.  Aeronautically designated officers must obtain 8 years of operational flying time within the first 12 years of aviation service, counted from the officer's Aviation Service Entry Date, to pass Gate One and be entitled to continuous AvIP to the 18th year of aviation service, regardless of duty assignment during the intervening years.  An officer who has obtained six years of operational flying time within the first 12 years of aviation service may apply to Headquarters Marine Corps (MMOA-2) for a waiver to the eight-year requirement. c.  Aeronautically designated officers who obtain 10 years of operational flying time within the first 18 years of aviation service are considered to have passed Gate Two 'Low,' and are entitled to continuous AvIP to the 22d year of aviation service, regardless of duty assignment during the intervening years. d.  Aeronautically designated officers who obtain 12 years of operational flying time within the first 18 years of aviation service are considered to have passed Gate Two 'High,' and are entitled to continuous AvIP to the 25th year of aviation service, regardless of duty assignment during the intervening years. e.  An officer who has passed Gate One may apply for a waiver to the Gate Two requirement. f.  Entitlement to continuous AvIP ceases for an aeronautically designated officer, colonel and below, upon reaching the 25th year of aviation service.  If the officer is issued DIFOP orders past the 25th year of aviation service, however, he/she will be entitled to monthly AvIP for the duration of those orders. g.  Aeronautically designated warrant officers (those holding a Primary MOS of 7380) are not required to pass gates and are entitled to receive AvIP at the over 14 years of aviation service rate, without reduction.  Gate passage/failure will, in most cases, be populated by routines in PUREX.  In those cases, in which PUREX cannot determine the month/year in which the gate was passed or failed, the Commandant of the Marine Corps (MMOA) must report the passage or failure.  Waivers to gate passage requirements cannot be populated by PUREX and can only be reported by the Commandant of the Marine Corps (MMOA).  Report as follows: h.  Aeronautically designated Enlisted Marines (those holding a Primary MOS of 7314) have distinct flight gases as follows: 1) FLIGHT GATE #1: 6 years DIFOP in the first 10 years of Aviation Service rates continues UAS-CSIP until 17 years of Aviation Service. 2) FLIGHT GATE #2 (LOW): 9 years DIFOP in the first 16 years of Aviation Service rates continuous UAS-CSIP until 22 years of Aviation Service. 3) FLIGHT GATE #2 (HIGH): 11 years DIFOP in first 16 years of Aviation Service rates continuous UAS-CSIP until 25 years of Aviation Service. FLIGHT GATE reporting is as follows:
+
+```
+TTC 457 000 [A] OPFLY GATE ONE PASS ED
+- [B] |
+```
+[A] DOA (Date of Action)
+
+[B] ED (Effective Date)
+
+```
+TTC 457 001 [A] OPFLY GATE ONE FAIL ED
+- [B] |
+```
+[A] DOA (Date of Action)
+
+[B] ED (Effective Date)
+
+```
+TTC 457 002 [A] OPFLY GATE TWO LOW
+```
+PASS ED [B] | [A] DOA (Date of Action)
+
+[B] ED (Effective Date)
+
+```
+TTC 457 003 [A] OPFLY GATE TWO HIGH
+```
+PASS ED [B] | [A] DOA (Date of Action)
+
+[B] ED (Effective Date)
+
+```
+TTC 457 004 [A] OPFLY GATE TWO LOW
+```
+FAIL ED [B] | [A] DOA (Date of Action)
+
+[B] ED (Effective Date)
+
+```
+TTC 457 005 [A] OPFLY GATE ONE WAIVED
+```
+ED [B] | [A] DOA (Date of Action)
+
+[B] ED (Effective Date)
+
+```
+TTC 457 006 [A] OPFLY GATE TWO LOW
+```
+WAIVED ED [B] | [A] DOA (Date of Action)
+
+[B] ED (Effective Date)
+
+```
+TTC 457 007 [A] OPFLY GATE TWO HIGH
+```
+WAIVED ED [B] | [A] DOA (Date of Action)
+
+[B] ED (Effective Date)
+
+```
+TTC 457 008 [A] OPFLY GATE TWO HIGH
+```
+FAIL ED [B] | [A] DOA (Date of Action)
+
+[B] ED (Effective Date) Note:  It is important to remember that if a Marines Aviation Service Entry Date is adjusted, any existing gate information may need to be deleted, and the member's Operational Flying Time Total may need to be adjusted.  The Commandant of the Marine Corps (MMOA) may report Delete/Erroneous on all gate information, even if the gate information was populated automatically.  As long as the information being deleted matches the information on the master file, the entry will process successfully.
+
+### Section 8
+
+AVIATION DATA ELEMENTS.  The correctness of an aeronautically designated Marines aviation data elements within MCTFS is critical to the proper calculation and payment of AVIP, UAS-AVIP, or UAS-CSIP.  These include Operational Flying Base Date, Aviation Service Entry Date, Date Designated Military Pilot, accumulated Operational Flying Time, DIFDEN-2 Lapse Date and Operational Flying Gate information.  With certain exceptions, as noted below, only the Commandant of the Marine Corps (MMOA) has the authority to report, or make corrections to, aviation-related data elements.  It is the responsibility of each aeronautically designated Marine to ensure the correctness of his/her record.  Aviation data elements, therefore, are displayed on both the member's LES and the Marine Online AVIP/AVB User View, and, within MCTFS, on the AvIP User View.  Aeronautically designated Marines who need discrepancies corrected within their records must initiate corrective action themselves by completing an Administrative Action (AA) form and forwarding it to the Commandant of the Marine Corps (MMOA). a.  Aviation Service Entry Date.  This is the date upon which a Marine is first ordered to an aviation unit having aircraft in which the Marine will receive flight training leading directly to the award of an aeronautical designation.  The ASED will be adjusted to exclude broken aviation service.  The ASED is the ONLY date upon which AvIP is calculated and paid.  The unit diary statement for reporting or correcting the ASED is below.  This entry can only be reported by the Commandant of the Marine Corps (548XX), MATSG Pensacola, MATSG Corpus Christi, and MATSG Meridian.  Report as follows:
+
+```
+TTC 295 001 [A] ACDU AVNSERV BASE DATE
+- [B] |
+```
+[A] DOA (Date of Action)
+
+[B] DATE AVN (Aviation Service Entry Date) b.  Operational Flying Base Date.  This date will be the same as the Aviation Service Entry Date, except for those officers who began flight training before being commissioned.  The OPFLY base date will be adjusted to exclude broken aviation service.  The following unit diary statement will be used to report or correct the OPFLY base date and can only be reported by the Commandant of the Marine Corps (548XX).  Report as follows:
+
+```
+TTC 456 000 [A] OPFLY BASE DATE [B]
+```
+YYYYMMDD | [A] DOA (Date of Action) [B] ED (Duty Involving Flight Operations Effective Date) c.  Operational Flying Time Adjustments.  When the Operational Flying Time Total within a member's record is less than the total time the member should be credited, the following statement must be reported by the Commandant of the Marine Corps (548XX).  Report as follows:
+
+```
+TTC 466 000 [A] DIFOP ADD
+- [B] YRS [C] MO |
+```
+[A] DOA (Date of Action)
+
+[B] YRS (Number of Duty Involving Flight Operations Years)
+
+[C] MOS (Number of Duty Involving Flight Operations Months) To subtract Operational Flying Time from the cumulative total when the total time shown is more than the total time the Marine should be credited, the following statement should be entered into MCTFS by the Commandant of the Marine Corps (548XX).  Report as follows:
+
+```
+TTC 466 001 [A] DIFOP SUB
+- [B] YRS [C] MO |
+```
+[A] DOA (Date of Action)
+
+[B] YRS (Number of Duty Involving Flight Operations Years)
+
+[C] MOS (Number of Duty Involving Flight Operations Months)
+
+### Section 9
+
+DELETION OF AVIATION SERVICE DATA ELEMENTS.  When a Marines assignment to duty in any flying status is terminated, aviation-related data elements within the member's record must be deleted.  The following unit diary entry will delete ALL AVIATION data elements.  This entry may only be reported by the Commandant of the Marine Corps (MMOA), MATSG Pensacola, MATSG Meridian, and MATSG Corpus Christi.  MCTFS will calculate the entitlement to AvIP and pay the member through the correct date.  Report as follows:
+
+```
+TTC 467 000 [A] TERM AVN STAT ED [B]
+```
+| [A] DOA (Date of Action)
+
+[B] ED (Effective Date) a.  To stop the AvIP entitlement of an Active Duty or Active Reserve (AR), report as follows:
+
+```
+TTC 131 001 [A] STOP FLY DU ED [B]
+```
+| [A] DOA (Date of Action)
+
+[B] ED (Effective Date) b.  To check the AvIP of a member on Active Duty, or who is a Reservist on Active Duty, and who rates monthly AvIP but fails to meet the prescribed flight hour minimums or other criteria specified in DOD 7000.14-R Financial Management Regulation, Volume 7A, report as follows:
+
+```
+TTC 129 001 [A] CHEK FLY DU [B] TO [C]
+```
+| [A] DOA (Date of Action)
+
+[B] FR DATE (From Date)
+
+[C] TO DATE (To Date)
+
+### Section 10
+
+STARTING/STOPPING/CHECKING/CREDITING RESERVE AvIP. a.  AvIP entitlement will now be established by reporting TTC 464 or 465, as appropriate, which will auto-generate the AvIP entitlement in the next cycle following determination.  Once AvIP entitlement has been established, unit diary entries are required to stop, check, or credit entitlement.  After the AvIP entitlement has been established, MCTFS will generate AvIP for any paid IDT periods or Active Duty reported.  If AvIP entitlement is terminated, a unit diary entry reporting termination must be reported immediately.  If AvIP was received, but not authorized, a checkage will be reported.  Report as follows:
+
+```
+TTC 129 013 [A]
+```
+CHEK AvIP OPER [B] TO [C] | [A] DOA (Date of Action)
+
+[B] FR DATE (From Date)
+
+[C] TO DATE (To Date)
+
+```
+TTC 130 013 [A]
+```
+STRT AvIP RESCREWMBR ED [B] | [A] DOA (Date of Action)
+
+[B] ED (Effective Date)
+
+```
+TTC 130 014 [A]
+```
+STOP AvIP RESCREWMBR ED [B] | [A] DOA (Date of Action)
+
+[B] ED (Effective Date) Note:  There must be a matching paid IDT or Active Duty period in MCTFS for this transaction to process successfully. To credit AvIP entitlement, which was authorized and not paid, report as follows:
+
+```
+TTC 127 012 [A]
+```
+CRED AvIP RESCREWMBR [B] TO [C] | [A] DOA (Date of Action)
+
+[B] FROM-DATE (From Date)
+
+[C] TO-DATE (To Date) Note:  The period of entitlement being reported must equal or include dates within a previously reported IDT or Active Duty period and must be concurrent with an existing AvIP 946 Remark on MCTFS.
+
+b.  Previous AvIP Entitlements.  If entitlement for AvIP was rated but not paid for during Active Duty or IDT periods that are no longer displaying in MCTFS, manual credit and payment will be required.  Submit requests via a JIRA ticket for credit and payment, with all substantiating documents, to the MISSO who will update the record and submit to RFFKCI for payment. 11. STARTING/STOPPING/CHECKING/CREDITING UAS-AVIP & UAS-CSIP a) TTC 0138 UNMANNED AERIAL SYSTEM (UAS)/UNMANNED VEHICLE OPERATOR PAY (UVOP) has been established to process the functions currently used to update AVIP by TTC’s 127, 129, 130 and 131.  TTC 0138/000 can also be system generated from TTC 020, 0464 & 0465.
+
+```
+TTC 0138 000 [A] STRT UVOP
+```
+TYPE [B] X [C] DUTY X [D] ED YYYYMMDD| (Normal & DEL/ERR)
+
+- [A] DOA (date of Action)
+- [B] TYPE
+= ‘A’ (UAS); ‘C’ (CSIP) [C] DUTY = ‘O’ (DIFOP); ‘D’ (DIFDEN/DIFDEN-2) [D] ED (Effective Date) b) TTC 0138 001 [A] STOP UVOP TYPE [B] X [C] DUTY X [D] ED YYYYMMDD| (Normal)
+
+- [A] DOA (date of Action)
+- [B] TYPE
+= ‘A’ (UAS); ‘C’ (CSIP) [C] DUTY = ‘O’ (DIFOP); ‘D’ (DIFDEN/DIFDEN-2) [D] ED (Effective Date) c) TTC 0138 002 [A] CRED UVOP TYPE [B] X [C] DUTY X [D] YYYYMMDD TO YYYYMMDD| (Normal)
+
+- [A] DOA (date of Action)
+- [B] TYPE
+= ‘A’ (UAS); ‘C’ (CSIP) [C] DUTY = ‘O’ (DIFOP); ‘D’ (DIFDEN/DIFDEN-2) [D] PERIOD (Date to Date) d) TTC 0138 003 [A] CHEK UVOP TYPE [B] X [C] DUTY X [D] YYYYMMDD TO YYYYMMDD| (Normal)
+
+- [A] DOA (date of Action)
+- [B] TYPE
+= ‘A’ (UAS); ‘C’ (CSIP) [C] DUTY = ‘O’ (DIFOP); ‘D’ (DIFDEN/DIFDEN-2) [D] PERIOD (Date to Date)
+
+### Section 12
+
+CREDITING, STOPPING, & CHECKING/DEBITING AVB The AVB is reflected under the AVIATION OFFICER BONUS PAY 942 RMK.  The following four TTC’s are used to process the Aviation BONUS (AVB):
+
+```
+TTC 477 START
+TTC 478 STOP
+TTC 479 SUSPEND/UNSUSPEND RESERVE AVB
+TTC 548 CHEK AVB
+```
+- If a new AVB is being reported and the Marine has an existing AVB, report the TTC 478 STOP on a cycle prior to reporting a TTC 477. Do not report the STOP and START on the same cycle. - The START cannot process if the existing 942 RMK does not have a TERMINATION DATE. - The STOP will terminate the AVB, but it will not recoup (Check) any of the unearned amount. - The SUSPEND / UNSUSPEND is specific to the Reserves. - The CHEK AVB will also terminate the AVB if it has not already been stopped.
+
+### Section 13
+
+TTC 477 will allow the Commandant of the Marine Corps (MMOA) to credit (or START) the AVB (Not to exceed the current AVB Award Level authority).  SEQ 003 award level is $300,000 and builds unequal anniversary installments, with the first installment equal $100,000, and the anniversary installments equal $40,000.  SEQ 000 builds equal AVB installment amounts.  To credit AVB, report as follows:
+
+Active Component equal installments.
+
+```
+TTC 477 000 [A] CRED AC-AVB $ [B] AGR MNTHS [C] INST AMT $
+- [D] MOS [E] ED [F] |
+```
+[A] DOA (Date of Action)
+
+- [B] AMOUNT (Dollar
+Amount) (Value cannot exceed $320,000.00)
+
+- [C] MONTHS (Number
+of Months)
+
+- [D] ANN-AMT
+(Annual Dollar Amount)
+
+- [E] BONUS-MOS
+(Bonus Military Occupational Specialty Code)
+
+- [F] ED (Effective
+Date)
+
+Selective Reserve Aviation Retention Bonus (AVB)
+
+```
+TTC 477 001 [A] CRED RESERVE AVB $ [B] AGR MNTHS [C] INST
+```
+AMT $ [D] MOS [E] ED [F] | [A] DOA (Date of Action)
+
+- [B] AMOUNT (Dollar
+Amount) (Value cannot exceed $75,000.00)
+
+- [C] MONTHS (Number
+of Months; 12, 24, or 36)
+
+- [D] ANN-AMT
+(Annual Dollar Amount)
+
+- [E] BONUS-MOS
+(Bonus Military Occupational Specialty Code)
+
+- [F] ED (Effective
+Date)
+
+Active Reserve - Aviation Retention Bonus (AR-AVB) The transactions below will allow Headquarters Marine Corps/RA RUC 54847 to report the Active Reserve AVB.
+
+```
+TTC 477 002 [A] CRED ACTIVE RESERVE AR-AVB $ [B] AGR MNTHS
+- [C] INST AMT $ [D] MOS [E] ED [F] |
+```
+[A] DOA (Date of Action)
+
+- [B] AMOUNT (Dollar
+Amount - I.E. $75,000.00, $100,000.00, $150,000.00)
+
+- [C] MONTHS (Number
+of Months - I.E. 60)
+
+- [D] ANN-AMT
+(Annual Dollar Amount – I.E. $15,000.00, $20,000.00, $25,000.00)
+
+- [E] BONUS-MOS
+(Bonus Military Occupational Specialty Code)
+
+- [F] ED (Effective
+Date) D. Active Component unequal installments.
+
+```
+TTC 477 003
+```
+CRED AC-AVB $XXXXXX.XX AGR MNTHS XX INIT INST AMT $XXXXXX.XX INST AMT $XXXXXX.XX MOS XXXX ED YYYYMMDD| (1) (2)
+
+(3)              (4)      (5)    (6) (1) AMOUNT (CANNOT EXCEED $999,999.99) (2) NUMBER OF MONTHS (3) INITIAL INSTALL AMOUNT (UPFRONT FIRST INSTALLMENT AMOUNT) (4) ANNUAL AMOUNT (ANNIVERSARY INSTALLMENT AMOUNT) (5) BONUS MOS (6) EFFECTIVE DATE NOTE: If MCTFS contains an existing 942-RMK that is open and running and has installment payments or remaining AVB obligated service that has not been completed, a new AVB (TTC 477) cannot be reported without first reporting TTC 478 to establish a TERMINATION DATE.  Additionally, TTC 478 must first be reported with an effective date PRIOR to the effective date of the new AVB for the new
+
+```
+TTC 477 to properly post to MCTFS.
+```
+### Section 14
+
+TTC 478 000 (STOP AVB) will terminate the AVB but it will NOT issue an AVB recoupment. If a Marine is currently in receipt of an AVB and has been approved for a new Award Level, report the TTC 478 for the Anniversary Date.  This will terminate the current AVB and allow a new TTC 477 to be reported. Report as follows:
+
+Active Component AVB.
+
+```
+TTC 478 000 [A] STOP AVB ED [B] |
+```
+[A] DOA (Date of Action)
+
+- [B] ED (Effective
+Date)
+
+Selective Reserve AVB.
+
+```
+TTC 478 001 [A] STOP RESERVE AVB ED [B] |
+```
+[A] DOA (Date of Action)
+
+- [B] ED (Effective
+Date)
+
+Active Reserve AVB.
+
+```
+TTC 478 002 [A] STOP ACTIVE RESERVE AR-AVB ED [B] |
+```
+[A] DOA (Date of Action)
+
+- [B] ED (Effective
+Date)
+
+### Section 15
+
+TTC 479 Suspend/Unsuspend SMCR AVB. (NOTE: Discretion lies with HQMC (Reserve Affairs – RAM/RAP) if an SMCR AVB D942 RMK is to be Suspended or Unsuspended). A. Suspend.
+
+```
+TTC 479 000 [A] SUSPEND RESERVE AVB ED [B] |
+```
+[A] DOA (Date of Action)
+
+- [B] ED (Effective
+Date) B. Unsuspend.
+
+```
+TTC 479 001 [A] UNSUSPEND RESERVE AVB ED [B] |
+```
+[A] DOA (Date of Action)
+
+- [B] ED (Effective
+Date)
+
+### Section 16
+
+TTC 548 CHEK AVB. The effective date of the TTC 548 recoupment will also be the TERMINATION DATE if the AVB has not yet been terminated.  TTC 548 only needs to be reported if the Marine has lost the entitlement to the AVB.  Or, if the Marine is in receipt of a new AVB and an installment for the old AVB has been paid and processed by End of Month U&E. To determine if a TTC 548 is required: 1) Research and review the Marine’s 942-RMK that is being stopped. 2) To the left of the anniversary date is a column labeled [PD] for “paid”.  If it is a [N] for “No”, then End of Month U&E has not generated the actual payment. If the installment was paid with the Mid-month payday, or has been paid as a Special Payment, a TTC 548 does not need to be reported if a TTC 478 STOP is reported prior to EoM U&E.  Instead, End of Month U&E will debit and back out the installment payment. 3) If the “paid” column reflects a “Y” for “yes” then a TTC 548 needs to be reported for the anniversary date and amount.
+
+```
+TTC 548 000 (CHEK AVB) has been modified to allow the Commandant of the
+```
+Marine Corps (MMOA) the ability to check and stop AVB.  This TTC was only reportable by Disbursing/Finance Offices via DTMS and MCTFS prior to this modification.  To check AVB, report as follows:
+
+Active Component.
+
+```
+TTC 548 000 (CHEK AVB)  [A]
+```
+RECOUPMENT AMT $ [B] ED
+
+- [A] RECOUPMENT AMT
+- [B] ED (Effective
+Date)
+
+SMCR.
+
+```
+TTC 548 001 CHEK RESERVE ARB [A] RECOUPMENT AMT $ [B] ED
+- [A] RECOUP
+```
+AMT (Recoupment Amount)
+
+- [B] ED (Effective
+Date)
+
+Active Reserve
+
+```
+TTC 548 002 CHEK ACTIVE RESERVE AR-AVB | [A] RECOUPMENT AMT
+```
+$ [B] ED
+
+[A] RECOUP AMT (Recoupment Amount)
+
+- [B] ED (Effective
+Date)

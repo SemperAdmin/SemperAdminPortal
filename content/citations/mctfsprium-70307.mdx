@@ -1,0 +1,61 @@
+---
+id: "mctfsprium-70307"
+aliases:
+  - "MCTFS PRIUM 7-70307 6-60212"
+  - "MCTFSPRIUM 7-70307"
+  - "MCTFSPRIUM 7-70307 6-60212"
+title: "MCTFSPRIUM 7-70307 - Desertion (TTC 381)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 7-70307"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 70307, Chapter 7 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 70307_Desertion_TTC_381.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 1
+
+A Marine who is declared a deserter must be dropped from the unit's rolls. A Marine is dropped to desertion AS OF THE DATE AND TIME THAT THE UA COMMENCED. The date and time the UA commenced must be included as part of the action statement reporting the declaration of desertion. The date the Marine is actually declared a deserter is referred to as the date of declaration; for example, Date of Action (DOA) and unit diary Date. Refer to MCO P5800.16 W/CH 1-7/W/Vol 1-17 to determine the correct date of declaration. Reporting instructions are as follows:
+
+a.  Report personal characteristics immediately 1 day prior to the DROP DCLDES entry (See Chapter 4, Paragraph 40108).
+
+b.  Report Command Marks, as applicable, as the first statement prior to the DROP DCLDES entry. Refer to MCO 1616.1 Junior Enlisted Performance Evaluation System for further instructions.
+
+c.  When the Marine has entered into an extension that has not become effective, report a unit diary statement to adjust the EAS to the ECC date and notify the FO immediately per Headquarters Marine Corps-P&R (RFF) MCTFS FPM. This must be reported on the unit diary dated prior to the date of the DROP DCLDES entry. Report as follows:
+
+```
+TTC 381 000 DROP DCLDES AS OF (A) ED (B) HIST: (C)
+```
+(A) DOA (Date of Action) (8-bytes, Word Type A)
+
+(B) TIME (Deserter To Time) (4-bytes, Word Type 4)
+
+(C) ED (Deserter To Date) (8-bytes, Word Type A)
+
+Hist: Add info: example, PROCEED DEL TVL WITH NON-COMPLIANCE PCSO. (dates of proceed, delay, and travel)
+
+Note: Report TTC 391 prior to dropping Marine to desertion.
+
+d. All pay and allowance entitlements and allotments in effect at the time a DROP DCLDES status is posted will be automatically stopped. The posting of the JOIN FROM DESERTION status will automatically start the Marine's basic pay and clothing allowance*. All other entitlements and allotments must be reinstated. Refer to DOD 7000.14-R Financial Management Regulation and JOINS in Chapter 6 of this manual.
+
+Note: If a Marine exceeds their contract while in a desertion status, and then that Marine returns to military control (after their contract), then they are not entitled to pay and allowances. However, if the member is acquitted, then they are entitled to their pay and allowances. This is because they are considered to have been held for the convenience of the government.
+
+e. When a Reservist has been on Active Duty greater than 31 days and whose Component Code equals 'B1' through 'B4', 'CA' through 'CF', 'C4' through 'C7', 'K1' through 'K3', 'K6', 'KB' or 'KM' and is reported to desertion, the Reserve reporting unit and Reserve MCC will be moved to the Former Reserve RUC and the Former Reserve MCC. The Reserve RUC will be '88822' (Headquarters Marine Corps Desertion Holding RUC) and the Reserve MCC will be 'HAB'.
+
+### Section 2
+
+Reserve Desertion. A Reserve mandatory participant who is declared a deserter by competent authority and not on Active Duty for 31 days or more, must be transferred from the Reserve unit and joined/dropped to desertion by the gaining Active Duty command.
+
+a.  A Marine is declared a deserter as of the date and the time that the UA commenced. The Active Duty Unit must report the DROP DCLDES and the reserve record status for the Reservist will be changed to a 'D'.
+
+b.  Once in a reserve record status 'D', the Marine may not be joined on the Reserve unit diary until the Marine is first joined from desertion on an Active Duty Unit diary. A join entry must be reported that corresponds to the type of duty the Marine was on when declared a deserter. When joined FROM DESERTION in MCTFS. The record status will be changed to 'B'.
+
+c.  Contact Manpower Information System Support Office 17 (Manpower Information System Support Office 17) any time a Reservist is joined from desertion.
+
+d.  Service Records will be processed per MCO P1070.12_ Marine Corps Individual Records Administration Manual (IRAM).

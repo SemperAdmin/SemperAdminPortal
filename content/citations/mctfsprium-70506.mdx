@@ -1,0 +1,209 @@
+---
+id: "mctfsprium-70506"
+aliases:
+  - "MCTFSPRIUM 7-70506"
+title: "MCTFSPRIUM 7-70506 - Confinement (TTC 310/313)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 7-70506"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 70506, Chapter 7 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 70506_Confinement_TTC_310313.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 1
+
+Commencement/termination of confinement, and changes of confinement status must be reported. Once the Marine is reported TO CNFT and remains confined do not report another TO CNFT.  When action by higher authority results is received, report the appropriate DU STATUS per Chapter 4 Section 5 and STR CAT per Chapter 6 Section 6.  Also refer to PRIUM Table 6-10.  When the Marine is confined serving sentence of a general court-martial, also review record and report a strength category of R or S, as appropriate.
+
+### Section 2
+
+The Marine is normally confined for any one of the reasons listed below:
+
+a.  Awaiting Action of Higher Authority (AAHA). This is physical restraint imposed by either oral or written orders of competent authority, pending the disposition of charges.   It includes "safekeeping" except when one of the reasons shown below more clearly defines the confinement status.  See below for Pretrial Confinement.
+
+b.  Confined by military authority at the request of domestic civilian authority (CIV AUTH) (To be used to the very limited extent of maintaining custody of the Marine awaiting arrival of civilian authorities).
+
+c.  Confined by military authority at the request of foreign civilian authority (FOREIGN CIV AUTH).
+
+d.  The date of confinement must be the correct Action Date for this statement.  Any period of confinement included in a sentence of a court-martial begins from the date the sentence is adjudged. The adjudged date will be effective date of confinement (Action Date) (the adjudged date can be found on block 5(b) of the confinement order).  This will be the date the member is confined unless the confinement is deferred.  For pre-trial confinement the action date (effective date) will be the date the member is received for confinement (this can be found on block 11(a) of the confinement order). Report as follows: Report the History Statement as the title of civilian authority.
+
+```
+TTC 310 000 [A] TO CNFT [B] AAHA | (Active, Reserve, and Headquarters Marine
+```
+Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] TIME (Time) (4-bytes time 0001-2359)
+```
+TTC 310 004 [A] TO CNFT [B] CIV AUTH | (Active, Reserve, and Headquarters
+```
+Marine Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] TIME (Time) (4-bytes time 0001-2359)
+```
+TTC 310 005 [A] TO CNFT [B] FOREIGN CIV AUTH | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] TIME (Time) (4-bytes time 0001-2359)
+```
+TTC 310 006 [A] TO CNFT [B] GCM | (Active, Reserve, and Headquarters Marine
+```
+Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] TIME (Time) (4-bytes time 0001-2359)
+```
+TTC 310 007 [A] TO CNFT [B] NJP | (Active, Reserve, and Headquarters Marine
+```
+Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] TIME (Time) (4-bytes time 0001-2359)
+```
+TTC 310 008 [A] TO CNFT [B] SCM | (Active, Reserve, and Headquarters Marine
+```
+Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] TIME (Time) (4-bytes time 0001-2359)
+```
+TTC 310 009 [A] TO CNFT [B] SPCM | (Active, Reserve, and Headquarters Marine
+```
+Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] TIME (Time) (4-bytes time 0001-2359)
+### Section 3
+
+Pre-trial Confinement. The Marine is confined ATLGCM, also a strength category of B must be reported.
+
+```
+TTC 310 001 [A] TO CNFT [B] ATLGCM | (Active, Reserve, and Headquarters Marine
+```
+Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] TIME (Time) (4-bytes time 0001-2359)
+```
+TTC 310 002 [A] TO CNFT [B] ATLSCM | (Active, Reserve, and Headquarters Marine
+```
+Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] TIME (Time) (4-bytes time 0001-2359)
+```
+TTC 310 003 [A] TO CNFT [B] ATLSPCM | (Active, Reserve, and Headquarters Marine
+```
+Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] TIME (Time) (4-bytes time 0001-2359)
+Note: Effective January 1, 2006, Members with dependents in confinement or pretrial confinement are entitled to BAH with Dependents while in confinement.  This also applies to members with dependents drawing OHA that are confined (See PAAN 33-06 and PAAN 36-06 for further guidance).
+
+### Section 4
+
+When confinement status changes, such as from Awaiting Action by Higher Authority (AAHA) to the following known as "Pre-trial" confinement, Awaiting Trial by Special Court Martial (ATLSPCM) or Awaiting Trial by General Court Martial (ATLGCM) to General Court Martial (GCM), the Marine's duty status code must be reported.  See paragraph 4-40502.3 for expired ECC.  Report Time Lost only when Marine is returned to a full duty status to make up lost time.  If the status change involves a change of strength category, the new strength category code must be reported.  For example, if the Marine confined ATLSPCM is subsequently convicted and sentenced to 31 days or more confinement, the strength category code changes to 3.  Report the new duty status and the new strength category code.
+
+### Section 5
+
+The policy for entitlement to BAS for service members who are confined (Pretrial Confinement, Awaiting Action Higher Authority and waiting Trial by Special Court Martial) and their ECC has not expired and are entitled to basic pay, is listed below.
+
+a.  Enlisted members are not entitled to BAS when serving a court-martial sentence that includes confinement and total forfeiture of pay and allowances.  BAS will be stopped on the date the sentence is adjudged and the member is confined, or when total forfeitures become effective.  In such cases the member will be subsisted in kind.
+
+b.  Service members who are in confinement and "NOT" serving a court-martial sentence that includes a total forfeiture of pay and allowances and who is entitled to basic pay (ECC has not expired), are entitled to monthly BAS while in a confinement status.  While in confinement, enlisted members are to pay for meals provided at the discounted meal rate (DMR).
+
+c.  Officers in confinement are entitled to Officers BAS while confined.  While in confinement, officers are to pay for meals provided at the discounted meal rate (DMR).
+
+### Section 6
+
+Termination of Confinement.  Except as indicated below, the entry reporting termination of confinement shall include an action statement to report Time Lost.  It is not necessary to report new EAS, EOS, or PEBD; for example, as all dates affected by time lost will be adjusted automatically in MCTFS.  The computed dates will be printed on the DFR after the time lost statement is processed.  This is provided to the RU to correct service records and other records as required.  If the Marine is confined during trial and is acquitted or the charges are dropped, there is no Time Lost. Report as follows:
+
+```
+TTC 313 001 [A] FR CNFT [B] ACQUITTED | (Active, Reserve, and Headquarters
+```
+Marine Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] TIME (Time) (4-bytes time 0001-2359)
+```
+TTC 313 002 [A] FR CNFT [B] CHG DROPPED | (Active, Reserve, and Headquarters
+```
+Marine Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] TIME (Time) (4-bytes time 0001-2359)
+### Section 7
+
+Expiration of Sentence.  When the Marine is released from confinement upon expiration of sentence or upon early release for clemency; for example, time lost must be reported when the release from confinement is reported per Section 4 of this chapter.  Upon release from confinement, the Marine's duty status always changes to full duty.  Therefore, when reporting FR CNFT, the RU must report duty status if it is other than full duty. If Marine is past his ECC, report extension of enlistment, etc. per Chapter 3 before reporting TTC 313.  Report FR CNFT and Time Lost, and if required, report DU STATUS per Chapter 4, Section 5 and strength category per Chapter 6, Section 6.
+
+```
+TTC 313 000 [A] FR CNFT [B] | (Active, Reserve, and Headquarters Marine Corps
+```
+components; delete/Erroneous capability only)
+
+- [A] DOA (Date of Action; 8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] TIME (Time; 4-bytes time 0001-2359)
+### Section 8
+
+If the Marine is reported to confinement or from confinement erroneously, entries must be reported to correct the record status.
+
+a.  Erroneously reported to confinement:
+
+(1) If the Marine is confined and the TO CNFT statement was accepted, but the statement reported date and/or time for confinement, report a DELETE AS ERR and input correct information.
+
+(2) If at a later date, the unit realizes that a mistake was made since the Marine actually was sentenced by a SPCM rather than by a SCM, report a DELETE ADD statement. Note that the original date of confinement must be included in the statement.
+
+(3) If TO CNFT is reported for the wrong reason, report a DELETE AS ERR statement.
+
+b.  Erroneously reported from confinement:
+
+(1) If the Marine was released from confinement but the FR CNFT statement failed in the DFR, report the correct FR CNFT statement.
+
+(2) If the Marine is still confined and the FR CNFT statement was accepted, report a DELETE AS ERR statement.
+
+### Section 9
+
+Correctional Custody Index. Will be reported with a history statement only.  Report a duty status of M and correct Action Date for those Marines that are confined and have exceeded their ECC in order to properly terminate pay and allowances. Report as follows.  Report the Freeform Text as NJP AWD (Date) CORRECTIONAL CUSTODY (Number of days) DAS.
+
+TTC HIS 000 [A] HIST:[B] | (Active, Reserve, and Headquarters Marine Corps components) (No delete capability)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD, never 00000000)
+- [B] FREEFORM (Freeform Text)
+### Section 10
+
+Reductions effected as a result of a court-martial will be reported as shown below.  The DOR and ED of reduction will be the date the reduction is ordered executed by the court-martial convening authority.

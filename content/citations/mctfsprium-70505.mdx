@@ -1,0 +1,114 @@
+---
+id: "mctfsprium-70505"
+aliases:
+  - "MCTFSPRIUM 7-70505"
+title: "MCTFSPRIUM 7-70505 - APPELLATE LEAVE (TTC 061/062)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 7-70505"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 70505, Chapter 7 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 70505_APPELLATE_LEAVE_TTC_061062.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 1
+
+All reportable data concerning the Marine must be reported on Unit Diary (UD) prior to reporting the Marine to appellate leave, (i.e., TO/FROM CONFINEMENT, TIME LOST, SENTENCE AWARDED, REDUCTION, etc.).  Refer to the current edition of [MCO 1050.16, Appellate Leave Awaiting Punitive Separation](http://www.marines.mil/News/Publications/ELECTRONIC-LIBRARY/Electronic-Library-Display/Article/898713/mco-105016a/), for additional information.
+
+### Section 2
+
+The following definitions are provided for clarification:
+
+a.  Voluntary Appellate Leave.  A Marine who has been sentenced by court-martial to a dismissal or punitive discharge, may submit a written request for voluntary leave awaiting appellate review once all adjudged confinement has been served, remitted, suspended, or deferred, and all documentation for clemency review, or a waiver of such review, has been submitted, and approval is in the best interest of the Marine Corps.
+
+b.  Involuntary Leave Awaiting Appellate Review. A commander will direct involuntary leave, awaiting appellate review of a Marine sentenced by court-martial to a dismissal or punitive discharge, when the Convening Authority has approved the sentence for dismissal or punitive discharge without suspension, all adjudged confinement has been served, remitted, suspended or deferred, and all documentation for clemency review or a waiver of such review has been submitted and approval is in the best interest of the Marine Corps.
+
+### Section 3
+
+Upon commencement of authorized (voluntary) or directed (involuntary) leave awaiting appellate review of a court-martial sentence, report the appellate leave statement shown below.  A TTC 061 transaction is reported upon commencement of authorized (voluntary) or directed (involuntary) leave awaiting appellate review of a court-martial sentence.  The type of leave to place the member in must be included as part of the entry.  The number of days of leave will be systematically determined.  When TTC 061 is reported and the encoded data is equal to ADSEP or APPLV, MCTFS will systematically determine the members leave balance and put the member in the reported status for the correct number of days.  When TTC 061 is reported and the encoded data is equal to LSL, MCTFS will systematically determine the members leave balance and generate a credit of Lump Sum Leave for the correct number of days.  This transaction will also process for Marines with a pay status listed as 'sick' or 'hospitalized'.
+
+```
+TTC 061 000 [A] TO ADMIN SEP/APPL LV/LSL ELECTION [B] RUC [C]|
+- [A] DOA (Date of Action)
+- [B] LEAVE OPT (Leave Option Elected) See Note 1
+- [B] RUC (Reporting Unit Code)
+```
+- **Note 1:  “ADSEP” (Administration Separation), “APPLV” (Appellate Leave),**
+or “LSL” (Lump Sum Leave)
+
+- **Note 2:  The number of APPLV (Leave Type Code 170) days**
+will be systematically determined and the Marine will remain in a good pay status (00000) for the number of APPLV process days.  If the member has a leave balance of a half day (0.5) the system will accommodate the half day.  The Marine's pay status does not change to 01500 until the expiration of accrued leave.
+
+- **Note 3: The Commanding Officer is responsible for reporting TTCs**
+061 and 062, which will report the member to and from appellate leave.
+
+```
+TTC 061 will automatically pay the appellee either pay and allowances or
+```
+LSL.  Submission of a NAVMC 11116, manual computation and payment are no longer required.
+
+- **Note 4:  Per a BAH determination from DFAS Legal, BAH is**
+payable at the member’s Appellate Leave location vice the PDS in connection with the “TO APPELLATE LV” transaction.  Specifically, “BAH is payable at the rate for the locale actually occupied by the member during the period of appellate leave.  Thus, we believe that the BAH should be paid at the rate appropriate for the locale of the member's leave address.”
+
+a.  Computer processing of the “TO APLLV” entry will automatically generate strength category 'G', DSSN '6102', duty status 'L', EAS of '99999999', and suspend pay and allowances upon the expiration of accrued leave.  When the Marine is in an advanced leave status, pay and allowances will be suspended effective the first day of leave.
+
+b.  Appellate Leave Payments per the MCTFS FPM:
+
+(1) The reporting of a member to appellate leave will suspend pay and allowances upon the expiration of the accrued leave period.  The member's pay status does not change to appellate leave until the expiration of accrued leave.  Monthly Basic Allowance for Subsistence (BAS) is generated automatically for enlisted members with a positive leave balance, who are authorized leave and entitled to pay and allowances.
+
+(2) To receive payments while on appellate leave, members must have a positive leave balance and be accruing money.  Commanding Officers are reminded that per Title 37, Chapter 9, the number of days leave for which payment is made cannot exceed 60 days, less the number of days for which payment has been previously made".
+
+c.  Processing of the “TO APLLV” entry will automatically generate leave rations when the number of accrued days are greater than 00.
+
+d.  After the “TO APLLV” entry is processed, the only entry that may be reported is changing the Marine's status from voluntary to involuntary appellate leave.
+
+e.  Upon change of status from voluntary to involuntary appellate leave the command will accomplish the following:
+
+(1) Notify the service member in writing of the status change from voluntary to involuntary appellate leave.
+
+(2) Ensure all administrative action is completed.  The Navy and Marine Corps Appellate Leave Activity (NAMALA) has been established to administer personnel in an involuntary appellate leave status in recognition of the significant burden this population represents reporting units.  This unit is a holding RUC for personnel in an involuntary appellate leave status only.  The RUC/MCC assigned to this unit are 54920/W91 respectively.
+
+(3) File a copy of the Convening Authority's court-martial action, court-martial order, voluntary and/or involuntary leave orders in the OMPF prior to transfer.
+
+(4) Upon notification of the transfer, the CO, NAMALA will join the service member to RUC 54920, MCC W91, effective the day following the last day of authorized accrued leave.  The accrued leave period is displayed in the MCTFS Remark Summary (Category P) as PAY STATUS "00000 YYYYMMDD to YYYYMMDD”.  "The correct join date to be used by NAMALA is displayed in the MCTFS Remark Summary (Category P) as PAY STATUS "APPELLATE LEAVE YYYYMMDD."
+
+(5) Upon join to MCC W91, the losing command may receive a system generated error on the UD feedback report indicating a member of the unit has been joined without a corresponding transfer entry.  The unit will annotate this error message stating the individual was transferred to CO, NAMALA, Washington D.C.  The error message annotation will also include the date the Service Records were forwarded to the NAMALA.  No further action will be required of the losing command.
+
+(6) All supplemental court-martial action/orders should be completed to the fullest extent possible prior to transfer to NAMALA.
+
+f.  A Reporting Unit (RU) joining a Marine who is in a voluntary appellate leave status must report the join with the statement JOIN MCC ___ APL LV.  Normally, this will occur only when accountability changes while the Marine is on appellate leave.  Computer processing of the JOIN MCC ___ APL LV entry will automatically generate a change of RUC and MCC for the Marine concerned.  The RU that is transferring the Marine must not report a transfer entry via unit diary, as the transfer entry will not process.
+
+g.  The statement “FR ADMIN SEP/APL LV” will be reported to terminate a Marine's appellate leave.  Normally, this would occur only when a rehearing is ordered or the punitive discharge is set aside or suspended, and the Marine is required to return to duty.  The Action Date to be used is the date of return to duty.  Report the following:
+
+```
+TTC 062 000 FR ADMIN SEP/APL LV RUC [A]|
+- [A] DOA (Date of Action)
+- [B] RUC (Reporting Unit Code)
+```
+Note:  Once reported, a JOIN entry must follow and a NAVMC 11116 will be submitted to the DO/FO in order to reestablish the leave balance.
+
+### Section 4
+
+Lump Sum Leave.  A military member eligible for an unused accrued leave settlement is authorized an election with regard to payment or carryover of the leave.  The member may elect to receive payment for a portion of the unused leave, not to exceed a career total of 60 days, and to have the remaining accrued leave carried forward to a new or extended enlistment.  The total of paid and carried forward leave may exceed 60 days.
+
+a.  Upon placing the member in appellate leave and if the Marine has selected LSL during this period, report as outlined above.
+
+b.  The statement “FR ADMIN SEP/APL LV” will be reported to terminate a Marine's appellate leave.  Normally, this would occur only when a rehearing is ordered or the punitive discharge is set aside or suspended, and the Marine is required to return to duty.  The Action Date to be used is the date of return to duty.  When a member’s court martial sentence is overturned and the member is returned to duty, a NAVMC 11116 will be submitted to RFF-KCI.  A member who is required to take appellate leave and whose punitive discharge is set aside or disapproved by an appellate court is entitled to pay and allowances, including BAH, if appropriate, for each day of appellate
+
+leave that is charged as excess leave.  See 10 U.S.C. § 707.
+
+Report as follows:
+
+```
+TTC 062 000 FR ADMIN SEP/APL LV RUC [A]|
+- [A] DOA (Date of
+```
+Action)
+
+- [B] RUC (Reporting Unit Code)

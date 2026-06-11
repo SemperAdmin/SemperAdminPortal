@@ -1,0 +1,79 @@
+---
+id: "mctfsprium-90801"
+aliases:
+  - "MCTFSPRIUM 9-90801"
+  - "MCTFSPRIUM 9-90801 9-90802 9-90803 TABLE 9-8"
+title: "MCTFSPRIUM 9-90801 - Hardship Duty Pay-Location (TTC 125, 136, 175)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 9-90801"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 90801, Chapter 9 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 90801_Hardship_Duty_Pay-location_TTC_125_136_175.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 90801
+
+Hardship Duty Pay-Location (TTC 125, 136, 175)
+
+### Section 1
+
+Hardship Duty Pay-Location (HDP-L), which is payable to all Marines, reserve and Active Duty, both officer and enlisted, at a rate of $50, $100, or $150 per month depending upon geographic location.   Refer to PRIUM Table 9-8.  The Assistant Secretary of Defense for Force Manpower Policy designates the locations that qualify for HDP-L under Title 37, United States Code. Geographic tables and rates within MCTFS for HDP-L are updated by the Marine Corps Pay Requirements Directorate (MCPRD) as needed.
+
+### Section 2
+
+TTC 136 001 should be reported on all new arrivals even if the HDP-L amount is $0.00 at that time, refer to Table EH for such location codes.   The Marine's HDP-L amount if increased or decreased, at a later date since reported will automatically be adjusted.   A Marine on permanent reassignment to an area that is eligible for HDP-L is established at the rate for that location from the day of arrival at the new permanent duty station.   A Marine performing temporary duty in a designated area is NOT eligible for HDP-L during the first thirty days of consecutive service at a designated location. Effective May 21, 2014, for Marines on temporary duty, report TTC 136 001 on the day of arrival and MCTFS will retroactively process for payment after the 30th day at the location. Members on duty in a designated area who leave the area for a temporary period of more than 30 consecutive days (regardless of reason) will have HDP-L terminated on the 31st day.   HDP-L should subsequently be restarted when the member is again assigned and performing duty in that same or another designated area (payable on the same basis as upon initial assignment in the area on a permanent or temporary basis).   Entitlement to HDP-L upon permanent reassignment from the designated location will terminate the day the member departs the station (specific entitlement stop dates are specified in the DOD 7000.14-R Financial Management Regulation, Volume 7A, Chapter 17).
+
+### Section 3
+
+Termination of HDP-L is reported as part of the unit diary statement; for example, reporting transfer, Temporary Additional Duty, or appellate leave.   It will require a TO and FROM entry when the Marine who is entitled to hardship duty pay location enters into a status where entitlement temporarily ceases; for example, confinement or Temporary Additional Duty.   With the exception of appellate and administrative leave, TO and FROM entries will not be reported when the Marine who is entitled to HDP-L enters into a leave status.  Any required checkage will be automatically generated when the ON LV statement is reported and processed.   Furthermore, if a Marine is assigned to permanent duty in a location designated hardship duty area and leaves the designated area permanently then HDP-L for the designated area continues through day of departure. a.  To start Hardship Duty Pay-Location (HDP-L), report as follows:
+
+```
+TTC 136 001 [A] STRT HDP-L [B] LOCATION CODE [C] ED [D] |
+- [A] DOA (Date of Action)
+- [B] TYPE DUTY (Type Duty Code) (Value T (Temporary) or P (Permanent))
+- [C] LOCATION (Location Code)
+- [D] ED (Effective Date)
+```
+- **Note 1: The LOCATION codes are listed in Operational Data Storage Enterprise look up tables under LK_HARDSHIP_DUTY_CODES_EH)**
+- **Note 2: A member permanently assigned (P) is entitled to HDP-L on the day of arrival at the designated location. A member assigned temporary/deployed (T) attached duty over 30 days duration at a specific HDP-L area is entitled upon the 31st day retroactive to the date of arrival.**
+- **Note 3: When for security reasons the actual location of the HDP-L cannot be entered into MCTFS, (the location is classified) the first two bytes of the encoded location must be 'ZZ', with the remainder bytes (3 through 9) should be equal to the location rate at which the actual duty is performed as follows:**
+ZZ0005000 $50.00 ZZ0000000 $100.00 ZZ0015000 $150.00
+
+b. To stop HDP-L:
+
+```
+TTC 175 001 [A] STOP HDP-L [B] ED [C] |
+- [A] DOA (Date of Action)
+- [B] TYPE DUTY (Type Duty Code) (Value T (Temporary) or P (Permanent))
+- [C] ED (Effective Date)
+```
+Note: TTC 135 (Individual Location) will automatically stop Hardship Duty Pay (HDP) if the MBR is no longer in a country that is entitled HDP or not sick in the hospital/hospitalized.  When TTC 135 terminates the HDP Remark (D913), the reporting of TTC 175 (STOP HARDSHIP DUTY PAY) is not required.
+
+### Section 4
+
+Credits and checkages for HDP-L must be dated greater than 1 January 2001, or they will not process.  Report the entries as follows: a.  To credit HDP-L:
+
+```
+TTC 125 003 [A] CRED HDP-L [B] [C] TO [D] LOC [E] |
+- [A] DOA (Date of Action)
+- [B] TYPE DUTY (Type Duty Code) (Value T (Temporary) or P (Permanent))
+- [C] FROM DATE (From Date)
+- [D] TO DATE (To Date)
+- [E] LOCATION (Location)
+```
+Note: The LOCATION codes are listed in Operational Data Storage Enterprise look up tables under LK_HARDSHIP_DUTY_CODES_EH) b.  To check HDP-L:
+
+```
+TTC 125 002 [A] CHEK HDP-L [B] TO [C] |
+- [A] DOA (Date of Action)
+- [B] FROM DATE (From Date)
+- [C] TO DATE (To Date)
+```
+c.  In those instances where it is necessary to go back prior to 1 January 2001 contact your local Disbursing Officer/Finance Officer.

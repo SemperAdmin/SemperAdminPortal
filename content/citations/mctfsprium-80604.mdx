@@ -1,0 +1,80 @@
+---
+id: "mctfsprium-80604"
+aliases:
+  - "MCTFSPRIUM 8-80604"
+title: "MCTFSPRIUM 8-80604 - Combat Zone Tax Exclusion (CZTE) (TTC 432/433/434/437)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 8-80604"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 80604, Chapter 8 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 80604_Combat_Zone_Tax_Exclusion_CZTE_TTC_432433434437.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 80604
+
+Combat Zone Tax Exclusion (CZTE) (TTC 432/433/434/437)
+
+### Section 1
+
+Marines may be entitled to Combat Zone Tax Exclusion (CZTE) authorized under, [DOD 7000.14-R Financial Management Regulation, Volume 7A, Chapter 44](http://comptroller.defense.gov/Portals/45/documents/fmr/Volume_07a.pdf) for periods of service in a combat zone or qualified hazardous duty area.  The commencement and termination of the exclusion must be reported using an individual entry, a group entry, or if the tax exclusion is to apply to all or most of the Marines of the reporting unit, a record of events entry may be used.
+
+### Section 2
+
+A Marine's period of combat service, and the country where the Marine served, can be viewed on the member's MCTFS Combat History Expedition 142 Remark or Combat Tax History 977 Remark.  The Marine's combat zone country code is also established in the member's MCTFS Federal Tax Plan 604 Remark. a.  For enlisted members and Warrant Officers (W-1 through W-5), all monthly wages earned while in a designated combat zone are excluded from taxable income.  Federal and state taxes are not withheld during periods of service in a designated combat zone.  An exception to this rule is payments of bonus installments for which the reenlistment occurred in a month or location where the Combat Zone Tax Exclusion did not apply.  All future bonus installments are taxable whether or not the Marine is serving in a combat zone when an annual installment is due.  If the Marine was serving in a combat zone when the reenlistment occurs, the initial installment is not taxable and all future installments are not taxable whether or not the Marine is serving in a combat zone.  The unit diary entries reporting Combat Zone Tax Exclusion must be reported during the month the Marine arrives in the designated combat zone to ensure that Combat Zone Tax Exclusion is applied in the month of arrival in the combat zone. b.  Effective 1 April 1996, the amount excluded from the gross taxable income per month for Commissioned Officers (Pay grade O-1 and above), is the amount equal to the highest rate of basic pay for any enlisted member (Sergeant Major of the Marine Corps = E9S) plus the amount of Hostile Fire/Imminent danger pay, if entitled.  For example, the highest rate of basic pay for an enlisted member (E9S) in 2012 was $7,609.50.  If the officer is entitled to a monthly amount of imminent danger pay of $225.00, a total of $7,834.50 is excluded from the gross taxable income per month ($7,609.50 plus $225.00).  Federal and state income taxes will be automatically withheld from an officer's taxable income that exceeds the combat zone excluded amount.  When an officer has additional federal and/or state taxes withheld prior to entering a combat zone, the additional taxes will be withheld along with the taxes withheld on taxable income exceeding the Combat Zone Tax Exclusion amount.  When an officer desires to reduce or have additional federal and/or state taxes withheld, refer to Paragraph 80603 for the unit diary reporting. c.  When a Marine is hospitalized (inpatient care) as a result of combat action the Marine will remain entitled to Combat Zone Tax Exclusion until released from inpatient care.  If the Marine returns to the combat zone, upon their departure from the Combat Zone Tax Exclusion area, the entitlement is to be stopped.  Should the Marine be re-hospitalized (released from the hospital, but later returns for inpatient care) as a result of wounds, disease, or injury, which were received while serving in a combat zone, they are entitled to received Combat Zone Tax Exclusion until released from inpatient care.  However, the Marine is not entitled to Combat Zone Tax Exclusion if the date of re-hospitalization (inpatient care) occurs 2 or more years after the date of the termination of activities in the combat zone or qualified hazardous duty area, [DOD 7000.14-R Financial Management Regulation, Volume 7A, Chapter 44](http://comptroller.defense.gov/Portals/45/documents/fmr/Volume_07a.pdf) d.  Members may move in and out of a Combat Zone Tax Exclusion location multiple times during a given month.  In the past, units then had to report TTC 432 001 (START) and TTC 433 000 (STOP) Tax Exclusion repetitively.  Unfortunately, this caused incorrect 'From' and 'To' dates within MCTFS for members' Federal Tax Withheld (604 Remark), Combat Tax History (977 Remark), and Combat Leave (988 Remark).  TTC 432 001 allows units the capability to start country/Combat Zone Tax Exclusion location codes, while TTC 432 002 allows units to change country/Combat Zone Tax Exclusion location codes as often as needed.  Multiple transactions of TTC 432 001 with different country/Combat Zone Tax Exclusion location codes should not be reported.  If you need to update a member's country or Combat Zone Tax Exclusion location, report TTC 432 002.  TTC 432 001 will be used to report the start of continuous Combat Zone Tax Exclusion.  This transaction only allows for starts.  Report the start period and location using the actual date the member arrived in a specific Combat Zone Tax Exclusion location.  TTC 432 002 allows for the changing of location codes for prior periods and/or current periods.  Report a 'TO DATE' of zeros (00000000) if MCTFS current status reflects Combat Zone Tax Exclusion status.  This transaction will not build a new individual location code; units must ensure match.  If the new location is not entitled to PDMRA and the member has an open 138 Remark, units will have to manually report TTC 828 001 (STOP PDMRA DEPLOY/MOB) until changes are implemented to automate this process.  However, if the new location is entitled to PDMRA and there is no open 138 Remark, the system will build an open 138 Remark.  Report as follows:
+
+```
+TTC 432 001 [A] STRT TAX EXCL [B] LOC [C] |
+- [A] DOA (Date of Action)
+- [B] EFF DATE (Effective Date)
+- [C] CNTRY CODE (Country Code) (Table SI)
+```
+Note:  Reporting of START TAX EXCLUSION will interrogate the member's record and when necessary, establish a 138 Remark.
+
+```
+TTC 432 002 [A] CHG TAX EXCL LOC [B] TO [C] LOC [D] |
+- [A] DOA (Date of Action)
+- [B] FR DATE (From Date)
+- [C] TO DATE (To Date)
+- [D] CNTRY CODE (Country Code) (Table SI)
+```
+e.  When this transaction processes after an end of month U&E cycle with an Effective Date equal to the current month, the new country/Combat Zone Tax Exclusion location code will post on the first day of the current month.  The member's country/Combat Zone Tax Exclusion location code can only be updated on a current basis.  If the unit reports a retroactive country/Combat Zone Tax Exclusion location code, the member's country/Combat Zone Tax Exclusion location will be updated to the current month, and an advisory will be generated.  The unit will have to correct the member's Combat Leave Balance information and coordinate with the DO/FO for correction of Tax Year-to-Date information.  For example, the unit reports TTC 432 001 (STRT TAX EXCL 20030221 LOC ZZ) on unit diary dated 20030410.  The member's country/Combat Zone Tax Exclusion location code would be updated to reflect code 'ZZ' with a date of 20030401. f.  Use the following statement to report the termination of a period of an exclusion from tax:
+
+```
+TTC 433 000 [A] STOP TAX EXCL [B] |
+- [A] DOA (Date of Action)
+- [B] EFF DATE (Effective Date)
+```
+- **Note 1:  A retro stop Combat Zone Tax Exclusion transaction will cause a checkage of taxes (possibly causing a Marine to go no pay due for several pay periods.  All taxable pay entitlement remarks, that contain a '9' tax code (tax exempt) will be changed to the appropriate tax code for the period reported, resulting in a checkage of taxes.  Report the termination using the actual date the member departed the specific Combat Zone Tax Exclusion location.**
+- **Note 2:  Retro reporting of a start or stop Combat Zone Tax Exclusion will process for previous four calendar years.  For retroactive reporting beyond the previous four years, sometimes referred to as current plus three, coordination must be made between DFAS (DSSN 0003) and MCDOSS per PAAN 36-10.**
+- **Note 3:  Reporting a STOP TAX EXCLUSION will interrogate the member's record and close the member's 138 Remark.**
+g.  Report entitlement to a tax exclusion for period of ONLY a month as follows:
+
+```
+TTC 434 000 [A] TAX EXCL [B] TO [C] LOC [D] |
+- [A] DOA (Date of Action)
+- [B] FR DATE (From Date)
+- [C] TO DATE (To Date)
+- [D] CNTRY CODE (Country Code) (Table SI)
+```
+- **Note 1:  Exclusions from tax are based on a monthly basis.  Entries ran outside the Effective Date month will require DO/FO action to adjust taxable wages to date, see Headquarters Marine Corps-P&R (RFF) MCTFS FMR.  If adjustments are after issuance of W-2's for previous tax year, reporting units may need to request a W-2C.**
+- **Note 2:  The Effective Date (Date of Action) should be the actual date of arrival in a Combat Zone Tax Exclusion area, the system will adjust taxable income from the 1st day of the effective month.  The Effective Date for stopping Combat Zone Tax Exclusion should be the date member departs zone, the system will continue tax exclusion until the last day of Effective Date month.**
+Example 1:  Master Sergeant Barber arrives in Bahrain, a defined Combat Zone Tax Exclusion area, on 7 February 2006 and departs 26 February 2006.  Unit diary action:  (TTC 434 000) 20030226 TAX EXCL 20030201 LOC BA.  System will adjust members taxes for the month of February 2006. Example 2:  Staff Sergeant Miller arrives in Bahrain, a defined Combat Zone Tax Exclusion area, on 8 February 2006 with no estimated date of return.  Unit diary action:  TTC 432 000 STRT TAX 20060208 LOC BA.  System starts tax exclusion effective 1 February.  Staff Sergeant Miller depart Combat Zone Tax Exclusion area on 15 June 2006.  Unit diary action:  (TTC 433 000) MCTFS will adjust members taxes for the months of February through June, and resume normal withholdings effective 1 July 2006. Example 3:  Sergeant Pierce arrives in Bahrain, a defined Combat Zone Tax Exclusion area, on 21 December 2005 and departs 28 December 2005.  Marine does not notify the supporting administrative office until 8 February 2006.  U&E cycle completed on 6 February 2006.  Unit diary action:  (TTC 434 000) 20060208 TAX EXCL 20051201 LOC BA.  MCTFS will generate an error advisory to send a Quad to DO/FO to adjust member's taxes for the month of December 2005 and January 2006.  Also, due to the time of the year and the W-2's being produced with information processed from the mainframe on 5 January 2006, a W-2C would be needed from the DO/FO for calendar year 2005.  In addition to the need for issuance of a W-2C, the member's combat leave balance will need to be adjusted for the same months MCTFS is not able to adjust (in this case, December 2005 and January 2006).  (See Chapter 7 for leave adjustment information). h.  To back-out an entire period of Combat Zone Tax Exclusion report the following:
+
+```
+TTC 437 000 [A] CHANGE TAX EXCL [B] TO [C] |
+- [A] DOA (Date of Action)
+- [B] FR DATE (From Date)
+- [C] TO DATE (To Date)
+```
+- **Note 1:  When reporting TTC 437 000, the members of whom you are reporting on D604, D977, and D988 Remarks will be adjusted based on the reported back-out period.**
+- **Note 2:  Combat Zone Tax Exclusion is allowed to be backed out for any period for previous 3 calendar years.**
+### Section 3
+
+Entries that may be associated with running Combat Zone Tax Exclusion are provided for information, view listed chapter for further instruction on reporting requirements:  HFP/IDP, Chapter 9; BAS, Chapter 8; PersTempo, Chapter 9; Crisis Code, Chapter 4; HDP-L, Chapter 9; Combat History, Chapter 4, Strength Category, Chapter 6, Duty Status, Chapter 4.

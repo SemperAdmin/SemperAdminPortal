@@ -1,0 +1,67 @@
+---
+id: "mctfsprium-30303"
+aliases:
+  - "MCTFSPRIUM 3-30303"
+title: "MCTFSPRIUM 3-30303 - DO to ensure that the Marine is charged for the day of leave."
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 3-30303"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 30303, Chapter 3 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 11116_DO_To_Ensure_That_The_Marine_Is_Charged_For_The_Day_Of_Leave.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 1
+
+The date of execution of extension of enlistment is the date the agreement is subscribed and sworn to.  The entry must report the date of execution, the number of months for which the enlistment is extended, and the number of the extension.
+
+a.  When determining the extension number, do not count any prior agreements that were executed, but canceled, before taking effect.  The first extension is reported as 01, the second as 02, and so forth.  Refer to MCO 1040.31 Enlisted Retention and Career Develpoment Program, MCO 1040R.31, Marine Corps Reserve Enlisted Retention and Career Development Program, and other applicable references to determine allowable extension length (in months).
+
+b.  Refer to the references to determine allowable length (number of months) of extension.  The length of the extension is always expressed in months in the UD statement.  The length of the extension is converted to months for reporting purposes.  For example:  3 months is expressed as 03; a 1-year extension is expressed as 12.  The Marine's EAS/ECC (Reserve ECC for SMCR, IRR personnel) will be automatically adjusted in the MCTFS. The ECC will automatically update once the extension goes into effect and will appear on the RU's DFR.  Do not report a new EAS/ECC or Reserve ECC with a separate UD statement.  Report as follows:
+
+```
+
+```
+TTC 116 000 [A] EXTENL [B] MO [C] EXT |
+```
+- [A] DATE OF ACTION (DOA) (8-BYTE YYYYMMDD) - [B] NUMBER OF MONTHS (2-BYTE NUMERIC) - [C] NUMBER OF EXTENSIONS (2-BYTE NUMERIC) ``` - **Note 1:  A single** extension cannot be for more than 23 months for both AD and Reserve.  Although MCTFS logic will process an extension greater than 23 months (max 48 months for AD and 72 months for Res), under current policy, regulations prescribes the normal term of extension of a member not to exceed 23 months.
+
+- **Note 2:  The reporting** and posting of the agreement to extend an enlistment will also allow for a 30 to 60-day grace period after expiration of ECC (Report 01, 02, 03, etc. for number of extensions).
+
+### Section 2
+
+Extension of Enlistment Agreement Becomes Effective or is Cancelled.
+
+a.  Unless cancelled, an extension of enlistment agreement becomes effective the day after the date of expiration of the current enlistment and/or extension.  Time lost on the current enlistment or extension must be made good before a new extension becomes effective.
+
+b.  Only report an AR Marine's Reserve ECC when an extension is not executed.
+
+c.  When the first extension of an enlistment becomes effective, leave settlement information will be reported and periods of leave that bridge the enlistment and the extension will be reported as two periods.  Reporting a type of on-leave statement terminates the first leave period on the last day of the enlistment being extended.  These types of on-leave statements must never be reported after the statement effecting the extension.  The second leave period will begin on the 1st day of the first extension and be reported when the leave expires.  Since the first day of the second leave period will be considered by the system as a day of duty and not chargeable as leave, the reporting unit must submit a NAVMC 11116 to the local DO to ensure that the Marine is charged for the day of leave.  Reporting requirements for leave settlement information are shown in Chapter 7, PRIUM Table 7-1.  Leave settlement information will not be reported when a second or subsequent extension of enlistment becomes effective as no entitlement exists for compensation for unused leave.  The Marine's leave account continues without interruption when a second or subsequent extension becomes effective.
+
+d.  If an agreement is cancelled prior to becoming effective, report the cancellation.  Refer to the references for reasons where an agreement can be cancelled.  Report as follows:
+
+```
+
+```
+TTC 118 001 [A] EXTENL CANC [B] EXT |
+```
+- [A] DATE OF ACTION (DOA) (8-BYTE YYYYMMDD) - [B] EXTENSION NUMBER (2-BYTE NUMERIC) ``` Note:  The latest extension must be cancelled PRIOR to any previous extensions being cancelled; that is, EXT 3 must be cancelled before EXT 2.
+
+e. For extensions in affect after original ECC date, contact the servicing MISSO for cancellation.
+
+### Section 3
+
+The following statement is used to report an extension of enlistment to qualify for the MGIB-R:
+
+```
+
+```
+TTC 116 001 [A] MGIB-R EXTENL [B] MO [C] EXT |
+```
+- [A] DATE OF ACTION (DOA) (8-BYTE YYYYMMDD) - [B] NUMBER OF MONTHS (2-BYTE NUMERIC) - [C] NUMBER OF EXTENSIONS (2-BYTE NUMERIC) ```

@@ -1,0 +1,131 @@
+---
+id: "mctfsprium-80207"
+aliases:
+  - "MCTFSPRIUM 8-80207"
+title: "MCTFSPRIUM 8-80207 - Overseas Housing Allowance (TTC 496/497/498/458)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 8-80207"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 80207, Chapter 8 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 80207_Overseas_Housing_Allowance_TTC_496497498458.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 80207
+
+Overseas Housing Allowance (TTC 496/497/498/458)
+
+### Section 1
+
+OHA is a monthly allowance for housing costs and is authorized for Marines with and without dependents assigned OCOUNS.  The maximum amount of monthly rent that is considered in computing the amount of OHA payable is contained in the Joint Travel Regulations, Volume 1, and Appendix K of the JTR, as is the OHA computation. a.  The ceiling for unaccompanied Marines is determined by prescribing an amount equal to a percentage of the prescribed accompanied ceiling for each area, as indicated in the Joint Travel Regulations, Volume 1, Appendix K.  This percentage factor applies to unaccompanied Marines with a rental/lease Effective Date on or after 1 October 1984 (Marines without dependents who were paid under the housing allowance index system and converted to OHA after 30 September 1984 were entitled to the members-without-dependents ceiling). b.  The OHA tables contain the geographical location climate codes, the ceiling allowances, the unaccompanied percentages by officer and enlisted, the average utility/recurring maintenance allowance (UT), rate of exchange (EX) of foreign currency, and the Effective Date for each location. c.  As the rates change, the current rate plus three prior utility and unaccompanied percentages and ceiling allowances, and the current plus 12 prior rates for EX reflected on the OHA tables and retained in the automated OHA system.  These tables are updated as rates change. d.  The system retains current retroactive capability for computation for the current plus all prior BAH rate changes reported in a 12-month period.
+
+### Section 2
+
+Overseas Housing Allowance Report.  A Marine is required to submit an Overseas Housing Allowance Report when requesting OHA with dependents or without dependents.  Complete the DD Form 2367 (original and one copy) as follows for OHA with dependents or without dependents: a.  Complete part A (self-explanatory) and part B. b.  Block 10 requires the member's signature and date of signature.  Include a statement in this block when all of the Marine's non-command sponsored dependents reside in the vicinity of the PDS. c.  Block 11 must be completed by the housing officer or appropriate official.  A signature and date of signature is required. d.  After reviewing the information on the OHA Report, the commanding officer or designated representative will approve the application by completing block 12. e.  After approval file the original approved report in the unit's correspondence files per SECNAV M-5210.1.  Only the most current form will be retained and return the duplicate copy to the Marine. f.  Anytime information contained on the current report changes, a new report must be completed.
+
+### Section 3
+
+To report the start of OHA, use the following statement:
+
+```
+TTC 496 000 [A] STRT OHA [B] [C] [D] [E] | [F] | [G] [H] ED [I] |
+- [A] DOA (Date of Action)
+- [B] JTR-CY-H/R (8-byte JTR; See Note 1)
+- [C] OC STAT CD (Occupance Status Code; See Note 2)
+- [D] SHARES CD (1-byte sharer code (DO NOT ENTER ZERO OR LEAVE BLANK; See Note 3)
+- [E] EL/H/AC CD (3-byte electricity heating and air conditioning code; See Note 4)
+- [F] WT/SW/T (Water, Sewer, Trash Code; See Note 5)
+- [G] MIHA CODE (Move-In Housing Allowance Code; See Note 6)
+- [H] FRGN RENT (Foreign Rent Amount; 10-byte; See Note 7)
+- [I] ED (Effective Date of entitlement; See Note 8)
+```
+### Section 4
+
+Example of an OHA entry:  JP027JPR 1 1 NNN NN N 0000002000 20120512 a.  The first two characters are alpha and denote the country code.  The remaining three characters are numeric and denote city, area, states, etc.  within a country. b.  2-character alpha country code.  Example:  JP = Japan or KR = Korea c.  3-character numeric geographical locality code.  Example using Japan:  027 = Okinawa or 019 = Iwakuni) d.  2-character alpha currency code.  Use the 2 byte Alpha Country Code for the Currency Code, for those countries using the EURO, use 'XZ' for the Currency Code.  Example:  JP =Japan (yen), KR = Korea (won), or XZ = Germany (EURO) e.  1-character alpha code:  'R' if renter, 'H' if homeowner.  Examples of 8-byte JTR:  JP027JPR DE317XZR.  Example:  JP = Japan, 027 = Okinawa, JP = Japan (Yen), R = Renter.
+
+### Section 5
+
+The Geographical Location Codes can be found at DTMO website:  [http://www.defensetravel.dod.mil/site/locCodeCalc.cfm](http://www.defensetravel.dod.mil/site/locCodeCalc.cfm)
+
+### Section 6
+
+One-byte occupancy code:  Do not enter a zero or leave blank. OCCUPANCY CODES CODE | DESCRIPTION 1 | With dependents. 2 | Without dependents. 3 | Member married to member without dependents.  Exception, if accompanied by one or more dependents, use number 5. 4 | Marine without dependents sharing dwelling expenses (Exception, if accompanied by one or more dependents, use number 5), or Member married to member, with dependents, when unaccompanied by command-sponsored dependents. 5 | Marine with dependents sharing dwelling expenses. 9 | Non-command sponsored tour, dependents residing in the vicinity of the PDS. A | OHA non-command sponsored tour, dependents residing in the vicinity of PDS.  Sharer code must be equal to 1. B | OHA non-command sponsored tour, sharing dwelling expenses.  Dependents residing in the vicinity of PDS.  Sharer code must be equal to 2 or more sharers. C | OHA with dependents, entitlement based solely on payment of court child support.  Sharer code must be equal to 1. D | OHA with dependents, sharing dwelling expenses.  Entitlement solely based on payment of child support.  Sharer code must be equal to 2 or more sharers.
+
+### Section 7
+
+One-digit sharer Do not enter a zero or leave blank.  The number of residence occupants, including the code:  Marines who are: a.  Members of the uniformed service entitled to a housing allowance, and/or b.  Federal civilian employees, including dependents, entitled to a living quarters allowance, and/or c.  Individuals, excluding dependents of the Marine, who contributed money toward the payment of rent, mortgage, and/or utilities.
+
+### Section 8
+
+Three-digit electricity, heating and air conditioning code.  Each byte either 'Y' (YES) or 'N' (NO).  1st byte for electricity, 2nd byte for heating, 3rd byte for air conditioning.  Example:  YNY = Yes for electricity, no for heating, yes for air conditioning.
+
+### Section 9
+
+Two-digit water/sewer and trash.  YY = yes for both utilities.  YN = yes for water/sewer, no for trash.  NN = No for both utilities.  NY = No for water/sewer, yes for trash.  Enter a response for each utility/service surveyed.  If the Marine is a homeowner, each utility survey response code must reflect an 'N' (NO) response.  If some of the utilities are provided by the landlord, the appropriate utility survey response code must reflect a 'Y' (YES) response.
+
+### Section 10
+
+Move-In Housing Allowance Code 'Y'= Member Entitled to OHA on or After 1 September 1990 and Is Eligible for Move-In Housing Allowance.
+
+### Section 11
+
+Ten-Digit Monetary Amount:  Report The Total Monthly Amount of Rent or The Total Purchase Price (For Homeowners) in The Actual Currency The Rental or Mortgage Payments Are Made.  If Sharing, Report The Total, Not The Marine's Individual Share.  (Do Not Use A Decimal Point, But Do Round Up to The Next Whole Monetary Unit.  Example:  Indicate 450.25 United States Dollars As '0000000451' and 90,800.65 Yen As '0000090801').
+
+### Section 12
+
+Eight-Digit Effective Date of Entitlement (YYYYMMDD).  Date Marine Becomes Entitled to OHA.
+
+### Section 13
+
+To Report The Stop of OHA, Report As Follows:
+
+```
+TTC 497 000 [A] STOP OHA [B] |
+- [A] DOA (Date of Action; YYYYMMDD)
+- [B] ED (Effective Date; YYYYMMDD)
+```
+### Section 14
+
+Corrections Required Will Be Made by The FO Using Cred (TTC 694) or Chek (TTC 693) or by The Commanding Officer Using The Credit OHA(TTC 498) or OHA Checkage (TTC 458) Entries:
+
+```
+TTC 498 000 [A] CREDIT OHA [B] [C] [D] [E] [F] [G] [H] FR [I] TO [J] |
+- [A] DOA (Date of Action
+- [B] JTR-CY-H/R (8-byte JTR; See Note 1 above)
+- [C] OC STAT CD (Occupancy Status Code, See Note 2 above)
+- [D] SHARES CDD (Sharer Code (DO NOT ENTER A ZERO OR LEAVE BLANK); See Note 3 above)
+- [E] EL/H/AC CD (Electricity, Heating and Air Conditioning Code; See Note 4 above)
+- [F] WT/SW/T (Water/Sewer and Trash Code; See Note 5 above)
+- [G] MIHA (Move-In Housing Allowance Code; See Note 6 above)
+- [H] FRGN RENT (Foreign Rent Amount)
+- [I] FROM DATE (Effective Date (YYYYMMDD) adjustment period begins)
+- [J] TO DATE (Effective Date (YYYYMMDD) adjustment period ends)
+TTC 458 000 [A] OHA CHECKAGE [B] [C] [D] FR [E] TO [F] |
+- [A] DOA (Date of Action)
+- [B] JTR LOC CD (Joint Travel Regulation Location Code)
+- [C] OC STAT CODE (Occupance Code)
+- [D] H/R (Homeowner or Renter Code; 'R' renter or 'H' homeowner)
+- [E] FROM DATE (YYYYMMDD)
+- [F] TO DATE (YYYYMMDD)
+```
+### Section 15
+
+A Start OHA Terminates An Existing OHA Entitlement and Computes The New Entitlement As of The Effective Date of The New Start.  When Reporting A Marine's Entitlement to OHA who Is Serving An Unaccompanied Tour Overseas Who Does Not Occupy Single-Type Government Quarters Report and Occupancy Code of 2 or 4 As Applicable (See Note 2 on The Previous Page). a.  When a Marine previously entitled to OHA joins a new overseas command, the Unit Commanding Officer must verify that OHA has been terminated in the MMPA before reporting a new STRT OHA.  A retroactive STOP OHA deletes ALL OHA entitlements after the ED.  The new commanding officer can report the STOP OHA if it was not reported by the old command.  The STOP OHA must be reported before reporting a new STRT OHA.  If, however, the new STRT OHA was reported by the new command when the Marine had an open OHA entitlement, report a STOP OHA with the correct ED.  Example, if Marine entitled to OHA is transferred on PCS orders effective 20 October, the Marine is joined to the new PDS on 30 November, at which time the Marine again became entitled to OHA.  If the old OHA entitlement was not terminated at the old or new PDS before reporting the new entitlement effective 30 November, a STOP OHA, reported 5 December with an Effective Date of 20 October, would delete any entitlement after the Effective Date of the stop and generate a checkage. b.  OHA is automatically updated in the MMPA whenever the following conditions occur: (1) BAH change or pay grade change. (2) Change to OHA tables. c.  At the time the BAH entitlement change is reported, a research message is generated instructing the Unit Commanding Officer to verify the Marine's entitlement to OHA.  The OHA entitlement will be adjusted during the next monthly OHA update process. d.  OHA is automatically terminated when a Marine is reassigned to a different MCC based on the transfer or join unit diary entry.  When the allowance is terminated based on a join entry, the commanding officer of the gaining command will be advised on the online advisory report to review the Marine's account for required adjustments (Transfers and joins within the same MCC do not automatically affect OHA). e.  Start, stop, credit, checkage and delete entries can be used to report OHA transactions.  The delete entry can be used for the STRT OHA reported in error.  However, it cannot be used for STOP, CREDIT or CHECKAGE OHA entries reported in error.  The correction entry cannot be used for any OHA entries.  The Effective Date reported in the stop entry must be the date on which the entitlement actually ceased.  Example, a STRT OHA was reported for a Marine on 15 April 2000 when it should have been 5 April 2000.  The commanding officer only needs to report a new STRT OHA with an Effective Date of 5 April 2000.  A STOP OHA does not have to be reported--the second STRT OHA re-computes the correct entitlement.  Example, a STRT OHA was reported for a Marine on 15 April 2000 when it should have been 18 April 2000.  The commanding officer needs to report a delete entry with an Effective Date of 15 April 2000 and a new STRT OHA with an Effective Date of 18 April 2000.  The system generates a checkage. f.  When a Marine enters a non-pay status, system processing is as follows: (1) in all cases, except declaration of desertion, the OHA entitlement is placed in a suspense status.  Upon return to a pay status, the system terminates the suspense status and restarts the Marine's entitlement.  Any entitlement adjustments that may have occurred during the suspense period are updated by the system. (2) When a non-pay status is caused by declaration of desertion, the entitlement is terminated by the system.  Once the Marine returns to a pay status, STRT OHA (TTC 496) must be reported to restart the entitlement.  If the Marine exceeded their contract as a deserter, and then later returns, then they are not entitled to pay and allowances (unless their charges were acquitted). (3) A retroactive STRT OHA does not post with an Effective Date during or before any non-pay status period.  If a Marine's OHA entitlement requires adjustment before any non-pay status period, report CRED (TTC 498) or CHEK (TTC 458), as applicable.  If manual computation is required, forward the NAVMC 11116 to the FO. g.  The rent paid, stated in foreign currency amounts on the STRT OHA, is automatically converted to United States dollar amounts for the proper computation of the OHA entitlement.
+
+### Section 16
+
+Marines (Corporals 4 Years of Service and Below) With Dependents in A Non-Pay Status.  Credit Oha to Marines in The Rank of Corporal or Below (With Four Years of Service or Less) in A Non-Pay Status Pursuant to The Joint Travel Regulations, Paragraph U9100-D7 and The Dod 7000.14-R Financial Management Regulation, Volume 7A, Paragraph 30251.  When The Marine Is Entitled to Oha Due to A Non-Pay Status Other Than Excess Leave, The Unit Commanding Officer Will Submit A Navmc 11116 With Remarks As Shown: OTHER:  Credit BAH from 1 June 2000 to 31 July 2000 entered non-pay status Effective Date 1 June 2000.  Primary dependent's name Susan B. Anthony.  Mailing address HQ SQDN 17 MWSG MCAS IWAKUNI, FPO SEATTLE 98764-5001.  The FO will report the entitlement and prepare and mail a check in the amount of the payment to the primary dependent.
+
+### Section 17
+
+In No Case Will A Spouse, Who Is Also A Member on Active Duty, Be Considered A Dependent for OHA Entitlement Purposes and Will Only Be Entitled to Bah-Diff While Residing in Single-Type Quarters.
+
+### Section 18
+
+A Reserve Component Member Called/Ordered to Active Duty From An OCOUNS Location for A 30 or Fewer Day Period, Is Not Authorized Oha Unless The Call/Order to Active Duty Is in Support of A Contingency Operation.  When The Reserve Component Member Is Authorized OHA, It Is to Be Paid At The Rate Prescribed for The Member's Principal Residence Location At The Time Called/Ordered to Active Duty.

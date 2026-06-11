@@ -1,0 +1,78 @@
+---
+id: "mctfsprium-70702"
+aliases:
+  - "MCTFSPRIUM 7-70702"
+title: "MCTFSPRIUM 7-70702 - Enlisted Restricted Promotions and Ineligibility for Promotion (TTC 053)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 7-70702"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 70702, Chapter 7 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 70702_Enlisted_Restricted_Promotions_And_Ineligibility_For_Promotion_TTC_053.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 1
+
+To restrict enlisted promotions for a reason other than punitive action or weight control assignment (i.e., confirmed drug involvement, awaiting administrative separation, etc.).  To correct an erroneous promotion restriction, a promotion restriction termination entry will be reported.  Refer to MCO P1400.32_ Marine Corps Promotion Manual, Volume 2, Enlisted Promotions.
+
+a.  When restricting enlisted promotions, report as follows:
+
+```
+TTC 053 000 [A] PROM RESTR 3 MOS | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (No delete capability)
+
+- [A] DOA (Date of Action; never 00000000)
+```
+TTC 053 001 [A] PROM RESTR 6 MOS | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (No delete capability)
+
+- [A] DOA (Date of Action; never 00000000)
+```
+TTC 053 002 [A] PROM RESTR 12 MOS | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (No delete capability)
+
+- [A] DOA (Date of Action; never 00000000)
+```
+TTC 053 005 [A] PROM RESTR 18 MOS | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (No delete capability)
+
+- [A] DOA (Date of Action; never 00000000)
+b.  To restrict promotions for 12 months when a Marine is being placed in a promotion restriction status due to being recommended for an administrative separation, report as follows:
+
+```
+TTC 053 004 [A] PROM RESTR ADMIN SEP PEND 12 MOS | (Active,
+```
+Reserve, and Headquarters Marine Corps components) (No delete capability)
+
+- [A] DOA (Date of Action; never 00000000)
+- **Note 1: As of 1 May 2018, when TTC 053 004 is reported, the**
+member's POE code will no longer change to '00001' (accrue all central). Once the commanding officer is made aware of the SA approval for discharge, it is imperative to update the EAS/ECC to prevent overpayment.  Per MCO P1400.32_ Marine Corps Promotion Manual, Volume 2, Enlisted Promotions, Paragraph 1204.4(v), the Date of Action for TTC 053-004 is the date that the Notification of Separation Proceedings is signed by the Commanding Officer and presented to the Marine notifying the member of the Commanding Officer's intent to recommend to the general court-martial authority that the Marine be involuntarily separated from the United States Marine Corps. Commanding Officers must ensure a copy of the signed notification and signed acknowledgment of rights are forwarded to the respective Personnel Administration Center as a source document to properly report the promotion restriction.
+
+- **Note 2:  If the member is currently in a weight control**
+Promotion Restricted Status Code, this entry will process and post a '5' (12 months (Awaiting Administrative Separation)) to the Promotion Restricted Status Code.
+
+c.  To terminate enlisted promotion restrictions, report TTC 053 as follows:
+
+```
+TTC 053 003 [A] PROM RESTR TERM | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (No delete capability)
+
+- [A] DOA (Date of Action; never 00000000)
+### Section 2
+
+An advisory will be generated for members within the final month of a restricted promotion status period to remind Commanding Officers that the restricted promotion period will expire within 30 days. The new promotion restriction status codes will prevent the select pay grade advisory for the ranks of Private through Corporal for the restricted period.  If warranted, TTC 053 003 (PROM-RESTR-TERM) will be reported to terminate promotion restriction and reinstate eligibility for promotion prior to the system generated termination date.  This transaction will restore the promotion restriction code to a non-restricted status, and when the member is eligible, a select pay grade will be generated.
+
+### Section 3
+
+If a member is already in a restricted status, and has another administrative/punitive action during this time, and the restriction termination date for the second action is less than the first restriction termination date, the first restriction period and code will remain valid.  For example, reporting a SCM AWD 20010401 establishes a restriction status code of '2' and a termination date of 20010930.  The member then receives non-judicial punishment and the transaction NJP AWD 20010501 is reported.  Since the non-judicial punishment restriction period does not exceed the summary court-martial restriction, MCTFS will keep the restriction code and period for the summary court-martial.  Consequently, if the NJP AWD is 20010901, a restriction code of '1' (3 months) will be established with a termination date of 20011130 since it exceeds the summary court-martial restriction period.

@@ -1,0 +1,84 @@
+---
+id: "mctfsprium-30301"
+aliases:
+  - "MCTFSPRIUM 3-30301"
+  - "MCTFSPRIUM 3-30301 3-30302 3-30303"
+title: "MCTFSPRIUM 3-30301 - Reenlistment Into the Active Duty Component (TTC 004) 1. Report all necessary inf"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 3-30301"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 30301, Chapter 3 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 30301_Reenlistment_Into_The_Active_Duty_Component_TTC_004_1_Report_All_Necessary_Inf.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+*Converted: 2026-06-01* *Method: Method 3 (last resort)*
+
+### Section 30301
+
+**Reenlistment Into the Active Duty Component** (TTC 004)
+
+### Section 1
+
+Report all necessary information in addition to the appropriate reenlistment statement (see PRIUM Table 3-1).
+
+### Section 2
+
+This paragraph pertains to AD reenlistments. It also applies to Marines on the Active Reserve (AR) program or the Extended Active Duty (EAD) program (component codes B1, B2, B3, B4 or CD), who are approved reenlistment into the Regular Marine Corps (Component Code 11).
+
+### Section 3
+
+When TTC 004 000 is reported, and the Marines component code is equal to B1-B4, C7, CF, CE, C4, CC, K1-K3, KB, or KM and the RUC reporting the transaction is not a 548XX, the transaction will fail with the following error message REENLISTMENT NOT PROCESSED.  IF MBR AUGMENTING, CONTACT your jurisdiction's MISSO FOR ASSISTANCE.
+
+### Section 4
+
+Report the following statement for reenlistment into an AD component.  Per MARADMIN 436-00, reenlistments are reportable in both years and months for the Selective Reenlistment Bonus Program (SRBP).  Reportable number of years will be one through eight, and number of months will be 00 through 11.  The number of months reenlisted will not be valid for Reserve Marines and reporting the number of months equal to 00s will be required.  Marines not authorized reenlistment for the SRB in additional months, report number of months as 00S.  If an AD Marine reenlists for 8 years, reported number of months must equal 00s, or transactions will fail.  The first 3 bytes of the SPD Code must be KHC.  See Figure 3-2 for the Enlistment Number.  The Elected Lump Sum Leave Days is split into two fields in UD/MIPS and OLDS.  In UD/MIPS, first field will consist of a dropdown list containing whole numbers from 0 to 60.  The second field will only list a 0 or 5, reflecting a whole day or half day, respectively.  Both fields will initialize with a 0.  Up front edits will not allow a selection greater than 60 days.  In OLDS the number of days entered to be sold back (Elected Lump Sum Leave) will be in the 4-byte format, for example 000.0, 034.0, or 060.5. A fractional day is a 1-byte format, for example 0 or 5 only.  Report the SPD as KHC1 or KHC2.  Report the Effective Date as the Date of Reenlistment as from the DD form 4/1, Block 5.
+
+```
+
+```
+TTC 004 000 [A] REENL [B] YRS [C] MO [D] ENL [E] ELECTED LSL [F]
+```
+``` ED [G] | (Active and Headquarters Marine Corps components only) (No delete capability)
+
+- [A] DOA (Date of Action; never 00000000) - [B] SEP CODE (Separation Program Designator Code) - [C] YEARS (Number of Years) - [D] MONTHS (Number of Months) - [E] ENLISTMENT (Enlistment Number; see Figure 3-2 below) - [F] ELECT LSL (Elected Lump Sum Leave Days) - [G] ED (Effective Date; never 00000000) ### Section 5
+
+Once the reenlistment posts, verify End of Current Contract (ECC) and Expiration of Active Service (EAS) are correctly reflected in MCTFS.
+
+### Section 6
+
+If the reenlistment is reported with the correct date but incorrect years/months, the unit or MISSO can report the necessary corrections. The Length of Active Service (ASL), Length of Enlistment years, and Length of Enlistment months must be updated using TTC 158 (ASL). Additionally, use TTC 077/122 to ensure the EAS/ECC reflects the correct information.
+
+### Section 7
+
+If the reenlistment is reported with an incorrect date, the system cannot be “tricked” into allowing a fix. In this case, the MISSO must submit the necessary TTS to MISSA to correct the remarks due to the incorrect reenlistment date. **Figure 3-2.  Reenlistment Number Abbreviations**
+
+### Section 1
+
+If the Marine is reenlisting in the same component and the number of previous enlistments in the same component (Active Duty or reserve) is listed in the first column, then report the abbreviation listed in the second column.
+
+2nd | one previous enlistment (see Note 2)
+
+3rd | two previous enlistments
+
+4th | three previous enlistments
+
+5th | four previous enlistments
+
+6th | five previous enlistments
+
+7th | six previous enlistments
+
+8th | seven previous enlistments
+
+9th | eight previous enlistment's (see Note 1)
+
+- **Note 1:  When a Marine has** eight or more previous enlistments, always report 9TH as the number of enlistment.
+
+- **Note 2:  When a Reservist** enlists in the MARINE CORPS for the first time, report 2nd as the number enlistment.  When an Active Duty Marine enlists in the Marine Corps Reserve for the first time report 2nd as the number of enlistment.

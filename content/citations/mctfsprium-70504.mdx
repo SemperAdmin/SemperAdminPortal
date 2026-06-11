@@ -1,0 +1,98 @@
+---
+id: "mctfsprium-70504"
+aliases:
+  - "MCTFSPRIUM 7-70504"
+title: "MCTFSPRIUM 7-70504 - Pay Grade Corrections and Non-Judicial Punishment (TTC 320)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 7-70504"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 70504, Chapter 7 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 70504_Pay_Grade_Corrections_And_Non-judicial_Punishment_TTC_320.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 1
+
+All non-judicial punishments awarded under Article 15, UCMJ, will be reported on the unit diary. Refer to MCO P5800.16_ and manual for court martial for items not affected.
+
+### Section 2
+
+Dollar amounts will be reported by showing the actual dollar amount followed by a decimal point and two zeros.
+
+Note: JEPES marks must be reported on the reductions of Corporals and below per Section 4 of this chapter.
+
+### Section 3
+
+Use the following history statement if the reduction is suspended:
+
+TTC HIS 000 HIST: NJP AWD (A) REDUCED TO (B) SUSP FOR (C) MO |
+
+(A) 8-byte Effective Date (YYYYMMDD) non-judicial punishment date
+
+(B) 3-byte Pay grade which reduced
+
+(C) 3-byte number of months for which reduction is suspended
+
+### Section 4
+
+If a previously suspended reduction is vacated, report reduction with the following HIST statement:
+
+TTC HIS 000 HIST: VACATION OF SUSP REDUCED NJP AWD (A) |
+
+(A) 8-byte Effective Date (YYYYMMDD) suspension vacated
+
+### Section 5
+
+If a previously reported reduction is suspended, mitigated, set aside, or restored to pay grade, report the appropriate statement:
+
+```
+TTC 320 000 RESTORE GRADE TO (A) MERIT DOR (B) ED (C) | HIST: RED (D) NJP AWD
+```
+(E) |
+
+```
+TTC 320 001 RESTORE GRADE TO (A) PERM DOR (B) ED (C) | HIST: RED (D) NJP AWD
+```
+(E) |
+
+```
+TTC 320 003 RESTORE GRADE TO (A) TEMP DOR (B) ED (C) | HIST: RED (D) |
+TTC 320 004 RESTORE GRADE TO (A) MERIT CBT DOR (B) ED (C) | HIST: RED (D) NJP
+```
+AWD (E) |
+
+(A) 2-byte pay grade to which restored (that is, E-3, E-4, E-5)
+
+(B) 8-byte DOR (YYYYMMDD) (see Note below)
+
+(C) 8-byte Effective Date (YYYYMMDD) (see Note below)
+
+(D) Circumstance (that is, suspended, mitigated, set aside)
+
+(E) 8-byte Effective Date non-judicial punishment date (YYYYMMDD)
+
+### Section 6
+
+To report restoration of pay grade, use appropriate statement:
+
+```
+TTC 320 000 RESTORE GRADE TO (A) MERIT DOR (B) ED (C) | HIST: RED (D) |
+TTC 320 001 RESTORE GRADE TO (A) PERM DOR (B) ED (C) | HIST: RED (D) |
+TTC 320 002 RESTORE GRADE TO (A) PROB DOR (B) ED (C) | HIST: RED (D) |
+TTC 320 004 RESTORE GRADE TO (A) MERIT CBT DOR (B) ED (C) | HIST: RED (D) |
+```
+(A) 2-byte abbreviation for pay grade to which restored
+
+(B) 8-byte DOR (YYYYMMDD) (see Note below)
+
+(C) 8-byte Effective Date (YYYYMMDD) (see Note below)
+
+(D) Circumstance (that is, suspended, mitigated, set aside) and the 8-byte Effective Date (YYYYMMDD) of the summary, special, or general court-martial)
+
+Note: In any case when an executed reduction is suspended or mitigated the DOR and the Effective Date will be the date of the mitigation or suspension unless the authority authorized to take final action directs that the date of rank be the Marine's original date of rank. In any case, when the reduction is set aside, the DOR will be the original DOR and the Effective Date will be the date of reduction.

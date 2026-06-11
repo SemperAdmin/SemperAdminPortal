@@ -1,0 +1,188 @@
+---
+id: "mctfsprium-70701"
+aliases:
+  - "MCTFSPRIUM 7-70701"
+title: "MCTFSPRIUM 7-70701 - Promotion (Enlisted Only) (TTC 052)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 7-70701"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 70701, Chapter 7 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 70701_Promotion_enlisted_Only_TTC_052.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 1
+
+A member's pay grade may be changed through promotion or reduction for various reasons. The MCO P1400.32_ Marine Corps Promotion Manual, Volume 2, Enlisted Promotions is the primary authority for all enlisted promotions. The following guidelines are provided:
+
+a.  The Effective Date of promotion will always be equal to the DOR, except for Marines who are meritoriously promoted upon completion of a formal school. The Effective Date of promotion for those Marines will be equal to the school graduation date.
+
+b.  Promotions on newly joined Marines will be reported on the unit diary following the processing of the Join unit diary. Promotions on Marines in receipt of PCS/Separation orders will be reported one unit diary prior to the unit diary that reports the transfer or separation.
+
+c.  If a Marine's promotion date was prior to the start of ADOS (formally ADSW) but not reported on the unit diary, the Reserve reporting unit may report the promotion while the Marine is on Active Duty as long as the RESERVE-RECORD-STATUS-CODE is equal to 5, 6, 7, F, G, M or 0 (zero). This entry must be reported prior to or during the ADOS (formally ADSW) period. It may not be reported once the Marine returns from ADOS (formally ADSW).
+
+d.  When a Marine is promoted above the pay grade ceiling for the Primary MOS held and his/her MOS has not been automatically changed, Commanding Officers should change the Marine's Primary MOS to the career progression MOS unless NAVMC 1200. (Military Occupational Specialties Manual) specifically requires completion of career progression training prior to assigning that MOS. The Marine is technically dropped from the MOS monitor of the invalid MOS and not picked up by the appropriate MOS monitor until the MOS is changed (that is, 0369 | 3529, or meritorious, etc.).
+
+e.  Promotions will be reported with the following appropriate statement. Report the Rank as the abbreviated rank Lance Corporal (LCPL), Corporal (CPL), or Sergeant (SGT) from MCTFS Table 72 (GRADE FULL RANK TABLE). Report the History Statement as the authority for all meritorious promotions and promotions to the ranks of Corporal and Sergeant. TTC 052 005 is not currently used.
+
+```
+TTC 052 000 [A] PROM [B] PERM DOR [C] ED [D] | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes
+YYYYMMDD, never 00000000)
+
+- [B] RANK (Rank) (6-bytes alphanumeric, trailing blanks
+allowed)
+
+- [C] DOR (Date of Rank) (8-bytes YYYYMMDD, never 00000000)
+- [D] ED (Effective Date) (8-bytes YYYYMMDD, never 00000000)
+```
+TTC 052 001 [A] PROM [B] TEMP DOR [C] ED [D] | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] GRADE (Pay Grade Code) (6-bytes alphanumeric, trailing
+blanks allowed)
+
+- [C] DOR (Date of Rank) (8-bytes YYYYMMDD, never 00000000)
+- [D] ED (Effective Date) (8-bytes YYYYMMDD, never 00000000)
+```
+TTC 052 002 [A] PROM [B] MERIT CBT DOR [C] ED [D] | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] GRADE (Pay Grade Code) (6-bytes alphanumeric, trailing
+blanks allowed)
+
+- [C] DOR (Date of Rank) (8-bytes YYYYMMDD, never 00000000)
+- [D] ED (Effective Date) (8-bytes YYYYMMDD, never
+00000000)
+
+```
+TTC 052 003 [A] PROM [B] MERIT DOR [C] ED [D] | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] GRADE (Pay Grade Code) (6-bytes alphanumeric, trailing
+blanks allowed)
+
+- [C] DOR (Date of Rank) (8-bytes YYYYMMDD, never 00000000)
+- [D] ED (Effective Date) (8-bytes YYYYMMDD, never 00000000)
+```
+TTC 052 004 [A] PROM [B] PROB DOR [C] ED [D] | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] GRADE (Pay Grade Code) (6-bytes alphanumeric, trailing
+blanks allowed)
+
+- [C] DOR (Date of Rank) (8-bytes YYYYMMDD, never 00000000)
+- [D] ED (Effective Date) (8-bytes YYYYMMDD, never 00000000)
+```
+TTC 052 005 [A] PROM [B] REENL DOR [C] ED [D] | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] GRADE (Pay Grade Code) (6-bytes alphanumeric, trailing
+blanks allowed)
+
+- [C] DOR (Date of Rank) (8-bytes YYYYMMDD, never 00000000)
+- [D] ED (Effective Date) (8-bytes YYYYMMDD, never 00000000)
+### Section 2
+
+SEL GRADE input is required by the Commandant of the Marine Corps (MMPB-11) for permanent promotion to Corporal or Sergeant per Paragraph 70804.
+
+### Section 3
+
+All promotions to pay grade E-6 and above will be entered into MCTFS by the Commandant of the Marine Corps (MMPB-11). The entry 'PROM (GRADE) PERM DOR (YYYYMMDD) PREC (00000000) (YYYYMMDD)' will appear on the unit's DFR once processed.
+
+**    **a.** **Enlisted members promoted to E7-E9, who elect to participate in the Enlisted Career Designated Program (ECDP), will have their Retention Control Point Date, Expiration of Active Service (EAS), and Expiration of Current Contract (ECC) updated in MCTFS based on the member’s new rank service limitation.
+
+**   ** b. If a member exceeds 58 years of age prior to the end of the service limitation, an advisory will be generated to HQMC (MMPB-11) for appropriate action as needed.
+
+### Section 4
+
+Marines promoted with an incorrect DOR or Effective Date require submission of a remedial promotion request to the Commandant of the Marine Corps (MMPB-11). If approved, the DOR will be reported by the Commandant of the Marine Corps (MMPB-11) and will include a HIST: statement directing the reporting unit to submit a NAVMC 11116 to the DO/FO to adjust pay and allowances. This is unit's authority.
+
+### Section 5
+
+Private First Class and Lance Corporal
+
+a.  The unit will affect the promotion with DOR and Effective Date of the 1st day of the month. This applies for Marines who are in a transit or leave status or who were not promoted because of administrative oversight.
+
+b.  The unit diary entry will input the DOR and Effective Date of regular promotions as of the 1st day of the month.
+
+c.  Privates First Class promoted late with an incorrect DOR or Effective Date will have the DOR administratively corrected by the unit. The unit will input the correct DOR and ED. For all promotions to pay grade E-2, there is no requirement to request remedial consideration or to petition the BCNR.
+
+### Section 6
+
+Corporal and Sergeant
+
+a.  When a select pay grade flag shows in MCTFS, the reporting unit will affect the promotion with DOR and Effective Date of the 1st day of the month. This applies for Marines who are in a transit or leave status or who were not promoted because of administrative oversight.
+
+b.  The reporting unit will report the DOR and Effective Date of regular promotions as of the 1st day of the month.
+
+c.  Where a select pay grade flag exists, there is therefore no requirement to request remedial consideration or to petition the BCNR for a late promotion. Commands must still request promotion authority from the Commandant of the Marine Corps (MMPB-11) if for any reason the select pay grade flag does not appear.
+
+### Section 7
+
+Meritorious Promotions.
+
+a.  Command meritorious promotions will be effective with DOR and Effective Date of the 2nd day of the month.
+
+b.  Meritorious promotions as a result of completion of a formal school will be effected with DOR of the 2nd of the month and Effective Date of the date of graduation.
+
+c.  Members that have a PROM-RESTRICTED-STATUS-CD that is greater than ‘zero’ will not be considered for any type of promotion (permanent; temporary; meritorious; etc.). Members that have a weight control suspended due to combat assignment will not be considered for a Meritorious Combat Promotion.
+
+### Section 8
+
+Effecting Promotions
+
+a.  For pay grade E-2 through E-5, receipt of a DFR message authorizing remedial promotion and a backdate of rank will constitute authority to prepare a certificate of appointment using the corrected DOR and ED. Cite the appropriate Marine Corps Bulletin or MCO P1400.32_ Marine Corps Promotion Manual, Volume 2, Enlisted Promotions. Do not cite the DFR.
+
+b.  Approved remedial Staff Noncommissioned Officer promotions and approved backdate of the DOR for Staff Noncommissioned Officer promotions will be reported by the Commandant of the Marine Corps (MMPB-11) with the DOR that would have been issued had the Marine been selected by the regularly scheduled board. The Commandant of the Marine Corps (MMPB-11) will forward, via separate correspondence, the authority to prepare the certificate of appointment.
+
+### Section 9
+
+MCTFS will automatically screen junior enlisted records to determine if the Marine had late training data, PME, or other transactions reported that affect the JEPES score. If their new JEPES score exceeds the cutoff from a previous month and meets the promotion eligibility requirements, Marines will be automatically promoted in MCTFS. To ensure commands are fully informed, MMPB-11 will email monthly rosters to each command when a Marine is automatically promoted in MCTFS so the command can prepare the appropriate promotion warrant.
+
+Unit actions. Due to these programming changes, units are encouraged to screen all Marines monthly and ensure NOT RECOMMENDED entries are reported or removed. Units should continue to avoid running late training data to minimize remedial promotions and to ensure JEPES scores are accurate. If a unit believes they have a Marine who should be considered for promotion under the previous process and prior to 1 November 2023, they should contact MMPB-11.
+
+MMPB-11 actions will occur as follows:
+
+a. Though these system changes will significantly automate junior enlisted promotions, some exceptions may still require actioning by MMPB-11 as listed below. In these cases, a formal request via naval correspondence from the CO with promotion authority to MMPB-11 detailing the circumstances and including a specific date of rank (DOR) recommendation is required.
+
+b. Requests to correct entry level grades associated with a contracted private first class.
+
+c. Requests for non-competitive military occupational specialties promotions.
+
+d. Requests associated with Marine Corps Embassy Security Group PME waivers.
+
+e. Requests associated with the Musician Enlistment Option Program.
+
+f. Request for reservists who changed components after their requested remedial promotion date.
+
+g. Requests to correct a previous DOR for a Marine that has already been promoted.

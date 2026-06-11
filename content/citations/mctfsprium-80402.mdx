@@ -1,0 +1,78 @@
+---
+id: "mctfsprium-80402"
+aliases:
+  - "MCTFSPRIUM 8-80402"
+  - "MCTFSPRIUM 8-80402 8-80403"
+title: "MCTFSPRIUM 8-80402 - Discount Meal Rate"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 8-80402"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 80402, Chapter 8 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 80402_Discount_Meal_Rate.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 80402
+
+**Discount Meal Rate** (TTC 475)
+
+### Section 1
+
+Enlisted members assigned to Essential Station Messing (ESM) will see their Basic Allowance for Subsistence (BAS) deducted for the current DMR daily rate.  Refer to PRIUM Table 8-1.  Report DMR as follows:
+
+```
+TTC 475 000 [A] STRT DISC MEAL RATE [B] |
+- [A] DOA (Date of Action; never 00000000)
+- [B] ED (Effective Date; never 00000000)
+```
+or
+
+```
+TTC 475 001 [A] STOP DISC MEAL RATE [B] |
+- [A] DOA (Date of Action; never 00000000)
+- [B] ED (Effective Date; never 00000000)
+```
+Note:  When reporting TO LWAS (TTC 115 030) on a member with a DMR deduction, the system will offset DMR deduction with a credit for the period of leave (TTC 115 030 will not generate a 75% DMR credit).  Therefore, TTC 475 001 STOP DMR MUST NOT be reported. EXCEPTION:  When there is Permissive Temporary Additional Duty in conjunction with LWAS and the member is not returning to the PDS.  Example:  Member departs on 10 days Permissive Temporary Additional Duty in conjunction with LWAS at 0800, 12 February 2015; TTC 475 001 STOP DMR will be reported effective 20150212 and the system will credit the 75% DMR for 20150212.
+
+### Section 2
+
+'BAS DISC MEAL RATE' is a deduction when the Marine is assigned to ESM.  If there is a period that the commanding officer determines the Marine should be credited the money deducted by 'BAS DISC MEAL RATE', report as follows:
+
+```
+TTC 475 002 [A] CRED DISC MEAL RATE [B] TO [C] |
+- [A] DOA (Date of Action; never 00000000)
+- [B] FROM DATE (From Date; never 00000000)
+- [C] TO DATE (To Date; never 00000000)
+```
+### Section 3
+
+If there is a period that the commanding officer determines the Marine should be checked 'BAS DISC MEAL RATE', report as follows:
+
+```
+TTC 475 003 [A] CHEK DISC MEAL RATE [B] TO [C] |
+- [A] DOA (Date of Action; never 00000000)
+- [B] FROM DATE (From Date; never 00000000)
+- [C] TO DATE (To Date; never 00000000)
+```
+### Section 4
+
+To check a Marine's DMR or Field Rats at 75 percent that was previously reported, report:
+
+```
+TTC 475 005 [A] CHEK DISC MEAL RATE 75% [B] |
+- [A] DOA (Date of Action; never 00000000)
+- [B] ED (Effective Date; never 00000000)
+```
+or
+
+```
+TTC 375 003 [A] CHEK FLD RATS RATE 75% [B] |
+- [A] DOA (Date of Action; never 00000000)
+- [B] ED (Effective Date; never 00000000)
+```

@@ -1,0 +1,136 @@
+---
+id: "mctfsprium-70101"
+aliases:
+  - "MCTFSPRIUM 7-70101"
+  - "MCTFSPRIUM PAR 70101"
+title: "MCTFSPRIUM 7-70101 - Leave (TTC 115)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 7-70101"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 70101, Chapter 7 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 70101_Leave_TTC_115.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 1
+
+Leave is reported for updating the automated leave record. Refer to PRIUM Tables 7-1 and 7-2.  The following guidelines apply.
+
+### Section 2
+
+Delay in route and leave taken while in route to and from or between Temporary Additional Duty sites will be reported by the Finance Officer (FO) at the time PCS/Temporary Additional Duty orders are processed for payment. Commanding Officers are responsible for reporting unauthorized absences in conjunction with PCS/Temporary Additional Duty movements (See Chapter 6). Where such absences have been excused, the FO will report an extended period of delay on the basis of a memorandum endorsement to PCS orders issued by the CO, as required by the MCTIM and MCO 1000.6_ Assignment, Classification, and Travel System Manual (ACTSMAN). Additional information concerning leave is contained in MCO 1050.3_. Information concerning the computation and reporting of elapsed time is contained in the MCTIM and MCO 1000.6_ Assignment, Classification, and Travel System Manual (ACTSMAN).
+
+### Section 3
+
+If a Marine begins leave after 1201 on a given day, the Marine will not be charged leave for that day. MCTFS will start the inclusive charge date at 0001 the following day. However, if the Marine begins leave prior to 1201 on a given day, MCTFS will charge the Marine for a full day of leave on the given date. A logic change to the return date has modified the 0900 return time to
+
+### Section 1200
+
+If a Marine returns from leave at or prior to 1200 on any given day, the Marine is not charged for the return date. If a Marine returns on or after 1201, on a given date, the Marine is charged for a full day of leave. Once leave has commenced, all calendar days (duty days, non-duty days, holidays, etc.) are charged as leave. Holidays and non-duty days will not count as leave if the leave is taken within the local liberty geographical boundaries. Example: If a Marine begins leave on Saturday, at 0930 on 4 December 2006 and returns at 1030 on Wednesday, 8 December 2006 the Marine is charged four days (Saturday, Sunday, Monday, and Tuesday). The Marine is charged for Saturday because the Marine departed prior to 1201 and the Marine is not charged for Wednesday because the Marine returned prior to 1200.
+
+### Section 4
+
+If leave is interrupted by hospitalization, terminate the Marine's leave as of 2359 hours on the date prior to the first day of hospitalization. Report leave taken subsequent to the Marine's hospitalization status as a separate period, ensuring that the commencement time of the subsequent leave period is 1 minute past the ending time of the Marine's hospitalization status.  For example, a Marine schedules leave from 1600 20060814 through 0600 20060830. During the leave period, the Marine is hospitalized from 1400 20060820 through 1000 20060822. The initial leave period would be reported as 1600 20060814 through 2359 20060819, and the period of leave taken subsequent to hospitalization would be reported as 1001 20060822 through 0600 20060830.
+
+### Section 5
+
+When the Marine dies while on leave, terminate leave at 2359 on the day prior to the date of death.  (See MCO 1050.3_).
+
+### Section 6
+
+When the Marine fails to report upon termination of an authorized period of leave, the entry to report termination of leave will be reported on the next unit diary, the Marine will be reported to the status; for example, Unauthorized Absence (UA), in Hands of Civil Authorities (IHCA), or in Hands of Foreign Authorities (IHFA), as directed by the applicable paragraphs of this chapter.
+
+### Section 7
+
+To ensure leave is properly charged upon checking out a Marine for a period of leave, report the time and date the Marine actually departs and the time and date the Marine is projected to return from leave. MCTFS will generate a 611 with zeros as the TO TIME and TO DATE, this is known as an open 611. Once the Marine returns from leave report the time and date the Marine actually departed (must match the open 611) and the time and date the Marine returned from leave (not required to match the projected to time or date), this will close the open 611 Remark and post the days used to applicable remarks. On a check out, action date must equal FROM date.  On a check in, action date must equal TO date.  Do not report a retro check out if the TO date has passed, only report the check in.  If the departure time or date changes after the checkout is ran creating the open 611 a DEL must be ran to adjust out the open 611 before the new leave period can be reported. Report as follows:
+
+```
+TTC 115 020 [A] ON ANN LV [B] [C] TO [D] [E] |
+- [A] DOA (Date of Action)
+- [B] FROM TIME (From Time)
+- [C] DATE (From Date)
+- [D] TO TIME (To Time)
+- [E] DATE (To Date)
+TTC 115 021 [A] ON EMERG LV [B] [C] TO [D] [E] |
+- [A] DOA (Date of Action)
+- [B] FROM TIME (From Time)
+- [C] DATE (From Date)
+- [D] TO TIME (To Time)
+- [E] DATE (To Date)
+TTC 115 022 [A] ON SK LV [B] [C] TO [D] [E] |
+- [A] DOA (Date of Action)
+- [B] FROM TIME (From Time)
+- [C] DATE (From Date)
+- [D] TO TIME (To Time)
+- [E] DATE (To Date)
+TTC 115 023 [A] ON SPL LV [B] [C] TO [D] [E] |
+- [A] DOA (Date of Action)
+- [B] FROM TIME (From Time)
+- [C] DATE (From Date)
+- [D] TO TIME (To Time)
+- [E] DATE (To Date)
+TTC 115 024 [A] ON NCR&R LV [B] [C] TO [D] [E] |
+- [A] DOA (Date of Action)
+- [B] FROM TIME (From Time)
+- [C] DATE (From Date)
+- [D] TO TIME (To Time)
+- [E] DATE (To Date)
+TTC 115 025 [A] ON ANN LV OS AREA [B] [C] TO [D] [E] |
+- [A] DOA (Date of Action)
+- [B] FROM TIME (From Time)
+- [C] DATE (From Date)
+- [D] TO TIME (To Time)
+- [E] DATE (To Date)
+TTC 115 026 [A] ON EMERG LV OS AREA [B] [C] TO [D] [E] |
+- [A] DOA (Date of Action)
+- [B] FROM TIME (From Time)
+- [C] DATE (From Date)
+- [D] TO TIME (To Time)
+- [E] DATE (To Date)
+TTC 115 027 [A] ON SK LV OS AREA [B] [C] TO [D] [E] |
+- [A] DOA (Date of Action)
+- [B] FROM TIME (From Time)
+- [C] DATE (From Date)
+- [D] TO TIME (To Time)
+- [E] DATE (To Date)
+TTC 115 028 [A] ON SPL LV OS AREA [B] [C] TO [D] [E] |
+- [A] DOA (Date of Action)
+- [B] FROM TIME (From Time)
+- [C] DATE (From Date)
+- [D] TO TIME (To Time)
+- [E] DATE (To Date)
+TTC 115 028 [A] ON PARENTAL LEAVE OS AREA [B] [C] TO [D] [E] |
+TTC 115 029 [A] ON PARENTAL LEAVE (PL, PLOS) [B] [C]
+- [D] [E] [F] |
+```
+(A)     DOA (Date of Action) Must equal either ‘D’ or ‘F’ (B)     ON PARENTAL LEAVE (PL, PLOS) (C)     FROM TIME (From Time) (D)     DATE (From Date) (E)     TIME (To Time) (F)     DATE (To Date) NOTE 1: (PL) Parental Leave or (PLOS) Parental Leave Overseas entry will allow Marines up to 12 weeks (84 days) Non-Chargeable (Leave Type code 410) with-in 365/366 days of the eligibility date. Parental Leave is for parents following childbirth, a qualifying adoption of a minor child, or the placement of a minor child for adoption or long-term foster care. Chargeable or Non-Chargeable Parental Leave is determined based on the MPLP-PARENTAL-LEAVE-ELIG-DT. The MPLP-PARENTAL-LEAVE-ELIG-DT will be populated with the dependent add transaction using the Dependent Information 150 remark with the following Relationship Codes: AD ADOPTED DAUGHTER AS ADOPTED SON DD DEPENDENT DAUGHTER DS DEPENDENT SON LD LEGITIMATE DAUGHTER LS LEGITIMATE SON PD PRE-ADOPTIVE DAUGHTER PS PRE-ADOPTIVE SON NOTE 2: MARADMIN 051/23 directed the implementation of the new Military Parental Leave Program (MPLP). The new program Expands authorized parental leave to 12 weeks for parents following childbirth, a qualifying adoption of a minor child, or the placement of a minor child for adoption or long-term foster care. NOTE 3: When a check-in parental leave is reported (action date equal to the TO-Date) and the MPLP-PARENTAL-LEAVE-ELIG-DT has not been updated or equals zeros chargeable parental leave will post to the 611 remarks. Once the eligibility date is updated by either TTC 088 (Dependent add) or TTC 092 any chargeable leave will systemically be updated as required. NOTE 4: Anytime the reported From Date is less than the MPLP-PARENTAL-LEAVE-ELIG-DT a Chargeable (Leave Type Code 142) for the dates not covered by the MPLP-PARENTAL-LEAVE-ELIG-DT will be created. NOTE 5: Any period above the authorized 84 days, within a 365-day period (366 for leap years), will be Chargeable Parental Leave, (Leave Type Code 142). Parental Leave must be taken in 7-day increments and do not have to be linking over the 365-day period (366 for leap years) period beginning on the MPLP-PARENTAL-LEAVE-ELIG-DT. NOTE 6: When a member adds a dependent with authorized Relationship Code (TTC 088) the MPLP-PARENTAL-LEAVE-ELIG-DT will be populated. If a dependent addition is retro reported the system will interrogate Leave Period 611 remarks for chargeable and/or non-chargeable Parental Leave within the 365/366-day timeframe and reprocess to Chargeable Parental Leave or Non-Chargeable as applicable. NOTE 7: With SR 2024.10.01, parental leave may be taken in one or more increments. A Marine must add their dependent child in the Marine Corps Total Force System (MCTFS) within 30 days. If the Marine fails to add their dependent in MCTFS, parental leave executed will be converted and charged as annual leave to the Marine’s annual leave account. NOTE 8: When PLOS Parental Leave Overseas is entered this ensures members are not checked the overseas entitlements for leave periods that exceed 30 days. If that member leaves the overseas location after PLOS is reported action must be taken to check any required entitlements. NOTE 9: With this change Leave Type Code 410 will no longer be reportable by TTC 115 Sequence 033.
+
+```
+TTC 115 030 TO SEPARATIONS ABSENCE [A] [B] [C] [D] [E] [F]
+- [A] DEPARTURE TIME (Actual time departed command)
+- [B] DEPARTURE DATE (Actual date departed command)
+- [C] NUMBER OF DAYS EASCP (COMREL)
+- [D] SEPARATIONS PTAD NUMBER OF DAYS XXX (days command approved)
+- [E] SEPARATIONS PDMRA NUMBER OF DAYS XXX (days command approved)
+- [F] LEAVE WHILE AWAITING SEPARATIONS NUMBER OF DAYS XXX (days approved)
+TTC 115 033 [A] [B] PTAD LV TYPE CODE [C] [D] TO [E] [F]|
+- [A] DOA (Date of Action)
+- [B] PTAD LV TYPE CODE (Numeric)
+- [C] FROM TIME (Time of Departure)
+- [D] FROM DATE (Date of Departure)
+- [E] TO TIME (Time of Return)
+- [F] TO DATE (Date of Return)
+```
+### Section 8
+
+A period of leave that extends over the date of reenlistment, or the date the first extension of enlistment becomes effective must be reported as two leave periods.  The first period of leave must terminate on the date the old term of service expires and must be reported prior to or with the reenlistment or extension statement; otherwise, the leave taken prior to the reenlistment or extension date will not post and update the leave account. The second period of leave must begin on the first day of the new enlistment or first extension. No period of leave may be reported on prior service that has been closed out by a reenlistment or first extension. Prepare a NAVMC 11116 to the local FO to account for these periods.
+
+### Section 9
+
+If the leave period includes both earned and excess leave, refer to Paragraph 70101.6 below for reporting instructions.  If the Marine is assigned to an overseas location and is returning from a period of leave in CONUS, the Marine's itinerary must be shown as a HIST: statement.

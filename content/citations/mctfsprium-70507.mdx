@@ -1,0 +1,76 @@
+---
+id: "mctfsprium-70507"
+aliases:
+  - "MCTFSPRIUM 7-70507"
+title: "MCTFSPRIUM 7-70507 - Reduction, Punitive and Non-Punitive (TTC 056)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 7-70507"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 70507, Chapter 7 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 70507_Reduction_Punitive_And_Non-punitive_TTC_056.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 1
+
+All reductions in pay grade must be reported and JEPES marks must be reported on the reductions of Corporals and below per Section 4 of this chapter. Ensure that all affected items are reported as required refer to MCO P5800.16_, MCO P1070.12_ Marine Corps Individual Records Administration Manual (IRAM), and DOD 7000.14-R Financial Management Regulation. The two types of reductions are discussed below:
+
+### Section 2
+
+Non-Punitive. An administrative (ADMIN) reduction effected by the Commandant of the Marine Corps or a Commanding Officer who has been delegated such authority per MCO P1400.32_ Marine Corps Promotion Manual, Volume 2, Enlisted Promotions:
+
+a.  Reduce personnel by pay grade.
+
+b.  Reduce personnel for incompetence or substandard performance of duty.
+
+```
+TTC 056 001 [A] REDUCED ADMIN [B] DOR [C] ED [D] | HIST: [E]
+```
+|
+
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD,
+never 00000000)
+
+- [B] 6-byte abbreviation for pay grade to which reduced
+- [C] 8-byte Effective Date (YYYYMMDD) DOR for that pay
+grade
+
+- [E] 8-byte Effective Date (YYYYMMDD) of reduction
+- [E] HIST: Input Authority CO's letter info
+### Section 3
+
+To correct an erroneous promotion for pay grade E-5 and below report as follows:
+
+```
+TTC 056 002 [A] REDUCED ADMERR [B] DOR [C] ED [D] |
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD, never
+```
+00000000)
+
+- [B] 6-byte abbreviation for pay grade to which reduced
+- [C] 8-byte Effective Date (YYYYMMDD) DOR for that pay
+grade
+
+- [E] 8-byte Effective Date (YYYYMMDD) of reduction
+### Section 4
+
+Punitive. A reduction effected as a result of the sentence of a court-martial is reported using TTC 257 or TTC 262. Utilize the below transaction for a reduction as a result of punishment awarded as non-judicial punishment. When the reduction is suspended, report the occurrence as a historical statement per Paragraph 70504, as applicable. Report as follows:
+
+```
+TTC 056 000 [A] REDUCED [B] DOR [C] ED [D] | HIST: [E] |
+- [A] DOA (Date of Action) (8-bytes YYYYMMDD, never
+```
+00000000)
+
+- [B] 6-byte abbreviation for pay grade to which reduced
+- [C] 8-byte Effective Date (YYYYMMDD) DOR for that pay
+grade
+
+- [E] 8-byte Effective Date (YYYYMMDD) of reduction
+- [E] HIST: Input Authority CO's letter info

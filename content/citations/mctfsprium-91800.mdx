@@ -1,0 +1,280 @@
+---
+id: "mctfsprium-91800"
+aliases:
+  - "MCTFSPRIUM 9-91800"
+title: "MCTFSPRIUM 9-91800 - BLENDED RETIREMENT SYSTEM – CONTINUATION PAY (BRS-CP) (TTC 450/451/452/551) (ACTIVE COMPONENT (AC),"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 9-91800"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 91800, Chapter 9 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 91800_BLENDED_RETIREMENT_SYSTEM_CONTINUATION_PAY_BRS-CP_TTC_450451452551_ACTIVE_COMPONENT_AC.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+91800.  BLENDED RETIREMENT SYSTEM – CONTINUATION PAY
+(BRS-CP) (TTC 450/451/452/551) (ACTIVE COMPONENT (AC), ACTIVE RESERVE (AR),
+& RESERVE COMPONENT (RC)
+
+1. BRS-CP is
+explained in MCBUL 1800 and MARADMIN(S) 543/17, 575/17, and 662/17.  Additionally, an annual Calendar Year
+BRS-Continuation Pay (BRS-CP) MARADMIN is released each year with guidance and
+specific updates for the given Calendar Year. 
+DO/FO (Disbursing) related information is contained with the Financial
+Management Policy (FPM).  Authorization
+for BRS-CP payment is contained in the DODFMR, Vol 7A. Chapter 66.  Included within the MCBUL is the eligibility
+criterion for opting into the Blended Retirement System, as well as defining
+which population group of Marines are auto enrolled into the Blended Retirement
+System.  Once a Marine has elected to
+receive BRS-CP, and payment processing has occurred, this election is
+considered to be irrevocable.  Marines
+are subject to BRS-CP recoupment processing in the event four years of
+obligated service are not completed/served in the appropriate component
+(AC-Active Component, AR-Active Reserve, or RC-Reserve Component).  (I.E. If a Marine receives BRS-CP while
+serving in the Active Component (AC) they are expected to complete four years
+of obligated service in the AC.  If a
+Marine receives BRS-CP while serving in the Active Reserve (AR) they are
+expected to complete four years of obligated service in the AR.  Likewise, if a Marine receives BRS-CP while
+serving in the Reserve Component (IMA or SMCR) they are expected to complete
+four years of obligated service in the RC. 
+(Note: IRR Marines are not eligible for BRS-CP.  Service in the IRR does not satisfy the obligated
+service requirement for BRS-CP).  Failure
+to complete the appropriate BRS-CP obligated service requirement (AC, AR, or
+RC) will result in pro-rated recoupment processing unless being discharged for
+reasons of Hardship, Medical Disability, or Death. 
+
+2. The BRS-CP TTC’s
+identified within are effective October 2018 with Software Release SR
+2-18.   
+
+3. The MCTFS 405 RMK
+identifies BRS-CP election status as well as when BRS-CP credits/debits have been
+expensed and/or liquidated.  Contained
+within the MCTFS 405 RMK is the Bonus Award Level (Flat Rate Bonus Amount),
+BRS-CP effective date (12 year Pay Entry Base Date Anniversary or PEBD plus 12
+years), lump sum or installment payment indicator, BRS-CP Obligation Expiration
+Date (last day of required obligated service to satisfy four year BRS-CP
+agreement), BRS-CP Tax Code, installment payment amounts and anniversary
+payment dates.  The following TTC’s
+pertain to BRS-CP payment and recoupment processing:
+
+4. TTC 450 SEQ 000
+(CREDIT BRS-CP – MCTFS 405 Remark):
+
+450 000 (A) NUMBER
+OF YEARS (B) INTALL PLAN (C) COMPONENT (D) ED (E)
+
+    [A] DOA (Date of Action; YYYYMMDD)
+
+    [B] 1-byte numeric BRS-CP Term of
+Enlistment (I.E. Valid value is 4 for four year
+
+        BRS-CP Obligated Service requirement) 
+
+    [C] 1-byte numeric indicator which denotes
+lump sum or installment payment election
+
+        (I.E. 1 for Lump Sum, 2 for Two
+Installments, 3 for Three Installments, 4 for
+
+        Four Installments)
+
+    [D] 2-byte alpha to denote BRS-CP Component
+(I.E. Agreement to serve four years in
+
+        the AC – Active Component, AR – Active
+Reserve, or RC – Reserve Component
+
+        (Valid RC BRS-CP assignment to the IMA
+or SMCR.  IRR Marines are not authorized
+
+        BRS-CP)
+
+    [E] 8-byte BRS-CP Effective Date (Must
+equal BRS-CP Statement of Understanding
+
+        Election Date - Date Marine elects to
+receive BRS-CP and agrees to serve four
+
+        years of BRS-CP Obligated
+Service).  Note: By law, BRS-CP elections
+must occur
+
+        before the 12 year Pay Entry Base Date
+anniversary (PEBD + 12 years).
+
+5. TTC 450 SEQ 001
+(DECLINE BRS-CP – MCTFS 405 Remark):
+
+450 001 (A) DECLINE
+BRS-CP REASON CODE (B) ED (C)
+
+ 
+
+    [A] DOA (Date of Action; YYYYMMDD)
+
+    [B] 1-byte alpha (I.E. Valid value ‘D’ for
+Declined (Voluntarily declined BRS-CP)
+
+        or ‘S’ for System Generated Declined
+BRS-CP.  (I.E. A system generated Decline
+
+        BRS-CP transaction will occur in the
+event that a BRS-CP election is not made
+
+        and received by MCTFS prior to a Marine
+reaching their 12 year PEBD anniversary)
+
+    [C] 8-byte BRS-CP Decline Effective Date
+(Date Marine elects to decline acceptance
+
+        to receive BRS-CP in the case of Reason
+Code equal ‘D’.  Or, 12 year PEBD
+
+        anniversary in the case of Reason Code
+equal ‘S’)
+
+(NOTE:  BRS-CP SYSTEM GENERATED DECLINE ELECTION GUIDANCE
+- In the event a BRS-CP TTC 450 SEQ 000 (CREDIT BRS-CP) or SEQ 001 (DECLINE
+BRS-CP) is not reported to MCTFS, prior to the Marines 12 year PEBD anniversary
+date, then MCTFS will issue a System Generated TTC 450 SEQ 001 (DECLINE BRS-CP)
+transaction.  The System Generated TTC
+450 SEQ 001 DECLINE BRS-CP transaction will in turn establish a D405 RMK with
+D-APPROVE CODE equal ‘S’.  HQMC(MPO) is
+the only Unit/RUC authorized to report DEL AS ERR TTC 450 SEQ 001 for a System
+Generated BRS-CP Decline election (405 RMK D-APPROVE CODE equal ‘S’).  In the event an ADMIN RUC or IPAC attempts to
+report DEL AS ERR TTC 450 SEQ 001 for a MCTFS System Generated Decline election
+(D405 RMK D-APPROVE CODE equal ‘S’) the transaction will fail with the
+following DFR/ERROR: “MR/D405 RMK REFLECTS SYSGEN BRS-CP DECLINE ELECTION.
+CONTACT HQMC(MPO) FOR BRS-CP POLICY & TTC RPTING GUIDANCE”.  Marines are afforded one full year to make a
+BRS-CP election.  If the Marine fails to
+make a BRS-CP election, during this one year window of opportunity, and prior
+to their 12 year PEBD Anniversary, then the Marine is not eligible to receive
+BRS-CP.  Any questions regarding this
+policy should be directed to HQMC(MPO) via email at MPO@USMC.MIL.) 
+
+6. TTC 450 SEQ 002
+(DENY BRS-CP – MCTFS 405 Remark): (Note: HQMC reportable TTC to denote Marine
+is being denied BRS-CP).
+
+450 002 (A) DENY
+BRS-CP REASON CODE (B) ED (C)
+
+    [A] DOA (Date of Action; YYYYMMDD)
+
+    [B] 1-byte alpha (I.E. Valid value ‘A’ for
+Paygrade Statutory Limitations,
+
+        ‘B’ for Medically/Physically
+Disqualified, ‘C’ for ADSEP/Legal Disqualification)
+
+    [C] 8-byte BRS-CP Denial Effective Date
+(Effective Date that HQMC issues
+
+        BRS-CP denial/disapproval)
+
+7. TTC 451 SEQ 000
+(TERMINATE RC-CP – MCTFS 405 Remark): (Note: Transaction valid only for Reserve
+Component BRS-CP recipients that are unable to complete the BRS-CP four year Obligated
+Service Requirement in the Selected Marine Corps Reserve (SMCR) or in the
+Individual Mobilization Augmentee (IMA) program.  (Note: BRS-CP RECOUPMENT WAIVERS CAN BE
+GRANTED BY HQMC(RAM-1).  Normally
+speaking, waivers can be granted for six months to allow reaffiliation into the
+SMCR/IMA.  Contact RAM-1 to obtain a
+BRS-CP Recoupment Waiver prior to reporting TTC 451 SEQ 000).
+
+451 000 (A)
+TERMINATE RC BRS-CP ED (B)
+
+    [A] DOA (Date of Action; YYYYMMDD)
+
+    [B] 8-byte Reserve Component BRS-CP Recoupment
+Effective Date (Valid value is the
+
+        last day of SMCR or IMA pay status)
+
+8. TTC 452 SEQ 000
+(BRS-CP RECOUPMENT WAIVED – MCTFS 405 Remark): (Note: HQMC reportable TTC to
+denote Marine is being waived for BRS-CP recoupment).
+
+452 000 (A) BRS-CP
+RECOUPMENT WAIVED ED (B)
+
+    [A] DOA (Date of Action; YYYYMMDD)
+
+    [B] 8-byte Effective Date (Valid value is
+date of HQMC approved BRS-CP
+
+        Recoupment waiver).
+
+9. TTC 551 SEQ 000
+(CHEK BRS-CP - MCTFS 405 Remark): (Note: Transaction valid only for Active
+Component (AC) and Active Reserve (AR). 
+SEQ 000 to be utilized by the DO/FO in the event the BRS-CP Recoupment
+Module has not been called. (I.E. DROP SPD is reported that does not require
+recoupment.  Subsequently, TTC 877 is
+reported and changes the SPD Code to one that does require recoupment.  The DO/FO would utilize SEQ 000 CHECK BRS-CP
+reporting in this scenario).
+
+551 000 (A)
+$XXXXXX.XX (B) $XXXXXX.XX (C) ED (D)
+
+    [A] DOA (Date of Action; YYYYMMDD)
+
+    [B] 6.2-byte Required Recoupment Amount
+(Pro-rated Required Recoupment Amount
+
+        for time not served for BRS-CP four
+year obligated service requirement)
+
+    [C] 6.2-byte Recouped Amount (Amount of
+disposable income that can be applied
+
+        towards the Required Recoupment Amount)
+
+    [D] 8-byte BRS-CP Recoupment Effective Date
+(Valid value is the Drop effective date)
+
+551 001 (A) CHANGE
+BRS-CP RECOUPED AMT FROM $XXXXXX.XX (B) TO $XXXXXX.XX (C) FOR REQUIRE RECOUP
+AMT $XXXXXX.XX (D) ED (E)
+
+(Note: SEQ 001 to be
+utilized by the DO/FO in the event the BRS-CP Recoupment Module has been
+called, the D405 RMK RECOUP SCREEN contains a Required Recoupment Amount, and
+disposable income is available that can be applied to the BRS-CP debt (BRS-CP
+Required Recoupment Amount).  (I.E. DROP
+SPD is reported that requires BRS-CP recoupment.  The BRS-CP Recoupment Module establishes a
+D405 RMK Required Recoupment Amount.  The
+DO/FO will utilize SEQ 001 to change the Recouped Amount from $0.00 to an
+amount that can be applied towards the total Required Recoupment Amount debt).
+
+    [A] DOA (Date of Action; YYYYMMDD)
+
+    [B] 6.2-byte Recouped Amount (Valid value –
+BRS-CP D405 RMK Recouped Amount)
+
+    [C] 6.2-byte Recouped Amount (Valid value –
+Any dollar amount less than or
+
+        equal to BRS-CP D405 RMK Required
+Recoupment Amount.  This amount represents
+
+        the amount that can be applied towards
+the BRS-CP Required Recoupment Amount/debt)
+
+    [D] 6.2-byte Required Recoupment Amount
+(Valid value – BRS-CP D405 RMK Required
+
+        Recoupment Amount)
+
+    [E] 8-byte Recovered Date (Valid value –
+BRS-CP D405 RMK Recouped Date)
+
+10. Additional
+Guidanc

@@ -1,0 +1,202 @@
+---
+id: "mctfsprium-70501"
+aliases:
+  - "MCTFSPRIUM 7-70501"
+  - "MCTFSPRIUM 7-70501 7-70502"
+title: "MCTFSPRIUM 7-70501 - AUTOMATED COURT-MARTIAL (TTC 257) (Active Duty and Reserve) 1. Reporting Court-Ma"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 7-70501"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 70501, Chapter 7 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 70501_AUTOMATED_COURT-MARTIAL_TTC_257_active_Duty_And_Reserve_1_Reporting_Court-ma.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+*Converted: 2026-06-01* *Method: Method 3 (last resort)*
+
+**  ****AUTOMATED COURT-MARTIAL (TTC 257) (Active Duty and Reserve)**
+
+### Section 1
+
+Reporting Court-Martial Sentence.  The current edition of the Manual For Courts-Martial is available through the [Marine Corps Publications Electronic Library (MCPEL)](http://www.marines.mil/News/Publications/MCPEL/) website.  Only a court-martial that results in a punishment imposed by a court-martial is to be reported under this section.  Report TTC 257-000 for ALL Active Duty courts-martial (Report TTC 283-000 for all Reserve courts-martial).  See Paragraph 70502 for court-martial convictions resulting in no punishment.  For a general or special court-martial, use the sentence recorded on the Report of Results of Trial (RROT).  For a summary court-martial, use the sentence on the Record of Trial by Summary Court-Martial (DD 2329).  If there is a Pretrial Agreement (PTA), do not modify any part of the adjudged sentence based on provisions in the Pretrial Agreement.  Entries run under TTC 257 0000 determine whether automatic forfeiture or automatic reduction applies (see Paragraph 2 and 3, below).  Report the Forfeiture Amount as $9999.00, if the adjudged forfeiture is a total forfeiture of pay and allowances or total forfeiture of basic pay.  Report the Number of Months Confinement as three bytes or 000, if no confinement was awarded or  confinement was deferred (If deferred, refer to Paragraph 70506 to report actual confinement and Paragraph 80701 to report stop of Clothing Allowance).  Report the Reduced to Pay Grade Code as NA, if no reduction in Pay Grade was awarded.  Report the Effective Date as the date of sentencing (must be less than or equal the unit diary date).  Report as follows:
+
+```
+TTC 257 000 [A] FORF $[B] MO [C] TYPE [D] CNFT [E] DISCH [F] RED [G] ED [H] |
+- [A] DOA
+```
+(Date of Action; never 00000000)
+
+- [B] FORF (Forfeiture Amount)
+- [C] MO (Number of Months Forfeiture)
+- [D] TYPE (Type of Court-Martial) (Trailing blanks allowed) (See Note: 1)
+- [E] CNFT (Number of Months Confinement)
+- [F] DISCH (Discharge Code) (Blank allowed) (See Note: 2)
+- [G] RED (Reduced to Pay Grade Code) (Trailing blanks allowed)
+- [H] ED (Effective Date; never 00000000)
+- **Note 1: COURT-MARTIAL TYPE CODES**
+CODE | DESCRIPTION
+
+GCM | General Court-Martial with adjudged forfeiture other than $9999.00
+
+GCMA | General Court-Martial with adjudged forfeiture of total pay and allowances
+
+GCMP | General Court-Martial with adjudged forfeiture of Basic Pay only
+
+SPCM | Special Court-Martial SCM | Summary Court-Martial
+
+- **Note 2: COURT-MARTIAL DISCHARGE CODES**
+CODE | DESCRIPTION D | Bad Conduct F | Dishonorable/Dismissal 8 | Death N | None
+
+### Section 2
+
+Automatic and Adjudged Forfeitures.  Per Article 58(b), Uniformed Code of Military Justice (UCMJ), unless waived by the Convening Authority (CA), certain punishments imposed by a court-martial will trigger automatic forfeiture of a Marine's pay and allowances even if the court-martial did not specifically award forfeitures.  This transaction is not an automatic forfeiture.  Automatic forfeiture is triggered by any sentence of confinement for more than 6 months or death or confinement for less than 6 months and a dishonorable or bad conduct discharge or dismissal.  Both automatic and adjudged forfeitures begin 14 days after the date of the sentence adjudged at trial (day 15 counting the date the sentence is adjudged as day 1) or in the instance of summary courts-martial, on the date the CA action is returned, whichever is earlier.  When awarded at Special Court-Martial (SPCM), two-thirds (rounded down to the next whole dollar amount), of pay will be automatically forfeited.  When awarded at General Court-Martial (GCM) all pay and allowances will be automatically forfeited for any period of confinement or parole.  If automatic and adjudged forfeitures are both in effect at the same time (un-deferred and un-waived), adjudged forfeitures are taken first followed by automatic forfeitures for any period of confinement or parole.  See paragraph 7 for waiver of automatic forfeiture and paragraph 12 for payments to dependent(s).
+
+### Section 3
+
+Adjudged Reduction.  When awarded at court-martial, adjudged reductions become effective on the date the sentence is approved by the convening authority, or on the 14th day after the sentence is adjudged, whichever is earlier.  Automatic reductions are effective on the date of the convening authority’s action.  Officers are not affected by automatic reduction. When awarded at a special or general court-martial, adjudged reductions occur on the 14th day after the sentence is adjudged without regard to the sentence being approved by the convening authority. Officers are not affected by automatic reduction.
+
+### Section 4
+
+Confinement Sentence.  A member must be in a pay status code of 03200 (Confined-serving sentence), 03210 (Confined-GCM-total forfeiture pay and allowances), 03211 (Confined-GCM-total forfeiture of basic pay) or 03220 (Confined beyond ECC), if there will be confinement greater than 000 months reported, before TTC 257 will process.  If the Marine was already in confinement in a 03100 or 03110 pay status, ensure the correct duty status is reported with an effective date equal to the 03100 or 03110 pay status if the Marine was given credit for time served (this will ensure the time lost is automatically updated when from confinement is reported).  When information contained within this transaction is reported correctly, reduction and/or the placement of a Marine in a total pay and allowance or total basic pay forfeiture status will occur automatically.
+
+### Section 5
+
+Deferments.  Deferment of a sentence to confinement, forfeitures, or reduction in grade is a postponement of the running of the sentence (See R.C.M.  1101).  Run TTC 258 000 to report the portion of the sentence that is deferred.  TTC 258 000 has delete as erroneous (DEL AS ERR) capability.  Do not report transactions 257 or 258 in the same cycle.  Ensure the MCTFS 990 Remark is updated with TTC 257 information before reporting TTC 258.  If confinement is deferred (such as when a pre-trial agreement says all confinement adjudged will be suspended or disapproved), refer to subsection 1d of this paragraph and paragraph 70506, Confinement (TTC 310/311) to report actual confinement time and date.  When an adjudged sentence of forfeiture and/or reduction is deferred or when an automatic forfeiture and/or reduction is deferred, report the following.  Report the Court-Martial Date as the Court-Martial Date contained in the 990 Remark.  Report the Effective Date as the automatic forfeiture date (14th day) or later (It should never be before the automatic forfeiture date).
+
+```
+TTC 258 000 [A] DEFER CODE [B] CM DT [C] ED [D] |
+- [A] DOA
+```
+(Date of Action; never 00000000)
+
+- [B] DEFER
+CODE (Deferment Code) (See Note 1)
+
+- [C] CM DT
+(Court-Martial Date; never 00000000)
+
+- [D] ED
+(Effective Date; never 00000000)
+
+- **Note 1:  COURT-MARTIAL**
+DEFERMENT CODES CODE | DESCRIPTION A | Deferment of Adjudged Forfeiture and Reductions (Automatic forfeitures will start on the auto/adjudged forfeiture date of current grade). B | Deferment of Automatic Forfeitures (Adjudged forfeitures and/or adjudged reductions will start on the automatic/adjudged forfeiture date at the current grade or reduced grade, as applicable). C | Deferment of Automatic Adjudged Forfeitures and Reductions (Nothing will happen on the automatic/adjudged forfeiture date) (If the CA defers the reduction along with the adjudged and automatic forfeitures, report code deferment code C.  Then report a delete as erroneous using TTC 056 to back out and the auto generated TTC 056 to reset the reduction). D | Deferment of Adjudged Forfeiture (Only) (automatic forfeitures will start on automatic/adjudged forfeiture date at the current grade or reduced grade, as applicable). E | Deferment of Adjudged Reduction (Only) (Automatic forfeitures will start on the automatic/adjudged forfeiture date at the current grade).
+
+### Section 6
+
+Convening Authority Action Returned, Deferment Rescinded.  Report the following statement.  Statement does not have DEL/ADD or DEL AS ERR capability.  If TTC 258/001 is reported erroneously, report TTC 258/000 again using the correct effective date and deferment code to correct the entry.  Do not report transactions 257 or 258 in the same cycle.  Ensure the 990 Remark is updated with TTC 257 information before reporting TTC 258.  Report the Court-Martial Date as the Court-Martial Date contained in the 990 Remark.  Report the Effective Date as the date the deferment is rescinded.
+
+```
+TTC 258 001 [A] CM DT [B] DEFER RESCD ED [C] |
+- [A] DOA
+```
+(Date of Action; never 00000000)
+
+- [B] CM DT
+(Court-Martial Date; never 00000000)
+
+- [C] ED
+(Effective Date; never 00000000)
+
+### Section 7
+
+Waiver.  Per R.C.M.  1101, the convening authority may waive, for a period not to exceed six months, all or part of the automatic forfeitures for the purpose of providing support to the accused’s dependent(s).  Report the following statement when the CA waives the Automatic Forfeiture.  TTC 257/000, TTC 262/000 and TTC 263/000 must be reported and processed before TTC 259/000 is reported.  See paragraph 13 for guidance on payment to dependents of the amount that would have been automatically forfeited, per Article 58b, UCMJ.  Report the Number of Months Forfeiture as 01-06.  Report the Court-Martial Date as the date of the Court-Martial Date contained in the 990 Remark.  Report the Effective Date as the date of the waiver (must be less than or equal the unit diary date).
+
+```
+TTC 259 000 [A] WAIVER AUTO FORF [B] MO CM DT [C] ED [D] |
+- [A] DOA
+```
+(Date of Action; never 00000000)
+
+- [B] MONTHS
+(Number of Months Forfeiture)
+
+- [C] CM DATE
+(Court-Martial Date; never 00000000)
+
+- [D] ED
+(Effective Date; never 00000000)
+
+### Section 8
+
+Entry of Judgement.  When approved by the convening authority, the start of a forfeiture may be deferred any time after the adjournment of the court-martial but prior to the judge entering the judgement into the record.  A deferment ends upon the judge entering the judgement into the record.  This is referred to as the Entry of Judgement.  When approved by the convening authority, a waiver commences on the date in which the judge enters the judgement into the record.
+
+```
+TTC 263 000 [A] CM DATE [B] EOJ DATE [C]
+- [A] Action
+```
+Date
+
+- [B] CM
+DATE (Date of court-martial resident on the 990 remark)
+
+- [C] EOJ
+DATE (Date judge entered judgement into the record)
+
+### Section 9
+
+Convening Authority Action Ordered Executed.  Report the following statement when the CA action is returned and ordered executed whether or not there is a deferment in effect. Forfeitures will be calculated to two thirds (2/3) of basic pay, rounded down to the next whole dollar, for a special courts-martial or full pay and allowances for a general courts-martial.  Report as follows.  Report the Court-Martial Date as the date of the Court-Martial Date contained in the 990 Remark.
+
+```
+TTC 262 000 [A] CM DT [B] CA ACTN RET ORD EXEC ED [C] |
+- [A] DOA
+```
+(Date of Action; never 00000000)
+
+- [B] CM DATE
+(Court-Martial Date; never 00000000)
+
+- [C] ED
+(Effective Date; never 00000000)
+
+### Section 10
+
+Convening Authority's Action Returned, Confinement is Reduced.  Report the following statement when the Convening Authority's Action is returned and the member's confinement is reduced.  If the member's original sentence was to confinement in excess of 6 months without any accompanying award of punitive discharge, and the Convening Authority's Action reduces the confinement sentence to 6 months or less, then any automatic forfeitures that were deducted must be reimbursed.  If the confinement is reduced but still exceeds 6 months or the original sentence contained a punitive discharge, automatic forfeitures will still apply.  See paragraph 70506 when all or part of the confinement sentence is disapproved or suspended.  Report the Court-Martial Date as the date of the Court-Martial Date contained in the 990 Remark.
+
+```
+TTC 262 001 [A] CM DT [B] CA ACTN RET CNFT RED [C] MO ED [D]
+```
+|
+
+- [A] DOA
+(Date of Action; never 00000000)
+
+- [B] CM DATE
+(Court-Martial Date; never 00000000)
+
+- [C] MONTHS
+(Number of Months Confinement)
+
+- [D] ED
+(Convening Authority's Action Date; never 00000000)
+
+### Section 11
+
+Convening Authority's Action Returned, Discharge Disapproved.  Use the following statement to report when the Convening Authority's Action is returned and the member's discharge is disapproved.  Report the Court-Martial Date as the date of the Court-Martial Date contained in the 990 Remark.
+
+```
+TTC 262 002 [A] CM DT [B] CA ACTN RET DISCH DISAPP ED [C]
+```
+|
+
+- [A] DOA
+(Date of Action; never 00000000)
+
+- [B] CM DATE
+(Court-Martial Date; never 00000000)
+
+- [C] ED
+(Convening Authority's Action Date; never 00000000)
+
+### Section 12
+
+Termination of Confinement with Automatic Forfeiture.  When a member's confinement is terminated (refer to paragraph 70506 FR CNFT) and there is an Automated courts-martial in effect, the automatic forfeiture is terminated on the effective date from confinement.  The forfeiture of two-thirds pay for a special court-martial and full pay and allowances for a general court-martial is terminated.  The adjudged forfeiture (Automated Courts-Martial Forfeitures Deduction 990 Remark) installment amount will continue until the adjudged forfeiture is collected.
+
+### Section 13
+
+Payments to Dependents.  This applies to a special and general court-martial and is a result of a pretrial agreement and/or the Convening Authority's Action.  The Convening Authority or a person acting under 10 U.S.C 860 may defer or defer and waive any or all forfeitures automatically imposed for a period not to exceed 6 months and authorize payments to a member’s dependents.  These payments are considered normal military pay and allowances otherwise due the member and are treated as payments made to the member for tax withholding and reporting purposes.  Payment(s) are to be made by a "Q" allotment.  When the Convening Authority authorizes such payments, the following is to be accomplished. a.  Report the required unit diary entries.  When processed, verify the Marine's pay status (601 Remark) and the court-martial deduction remark (990 remark) to ensure the correct deferment code was reported.  If a waiver was reported, verify the Marine's 990 Remark effective date to ensure it is in agreement with the convening authority's action date. b.  Obtain a DD Form 2558, Authorization to Start, Stop, Change an Allotment, signed by the Marine specifying the financial institution where the ‘Q’ Allotment is to be deposited banking information for dependent/guardian who the allotment is for. The account cannot be the same as the Marine's 937 Remark. c.  Forward documentation to your servicing disbursing/finance officer.  Documentation includes the results of trial; pretrial agreement part one and two (if applicable), completed DD 2558 Form, and the Convening Authority's action when completed. d.  The servicing disbursing/finance Office is to establish a “Q” allotment for payment.  For additional information refer to the HQMC-P&R (RFF) FINANCIAL POLICY MANUAL (FPM).

@@ -1,0 +1,50 @@
+---
+id: "mctfsprium-70107"
+aliases:
+  - "MCTFSPRIUM 7-70107"
+title: "MCTFSPRIUM 7-70107 - LUMP SUM LEAVE (LSL) (TTC 400) (RES)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 7-70107"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 70107, Chapter 7 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 70107_LUMP_SUM_LEAVE_LSL_TTC_400_RES.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 1
+
+A Reserve Marine ordered to active duty (AD) for a continuous period of 31 days or longer is transferred to an Active Duty (AD) Reporting Unit Code (RUC) within MCTFS.  LSL settlement is reported and paid through MCTFS by their AD servicing Disbursing Office (DO)/Finance Office (FO).  For periods of active duty 31-365 days, a Reserve Marine is authorized to be paid more than 60 days LSL settlement.  Effective 1 October 2011, for periods of active duty 31 days or more, a Reserve Marine is not required to have less than one day break in service to carry over leave into another set of orders.  Accrued leave not elected to be used or carried over to the member's next period of active duty (31 days or more) will automatically be paid (LSL).  Successive periods of accrued leave may be combined.  For additional information see DODFMR Volume 7A, Chapter 35, paragraph 2.1.1.4.2.
+
+### Section 2
+
+For Reserve Marines who are issued AD orders of "30 days or less", any leave accumulated will be paid (LSL) upon completion of their final tour of active duty, provided they have not already been paid the maximum of 60 days LSL during their career.  To qualify for leave accrual and LSL settlement, the AD period may be a single continuous period or may consist of multiple consecutive AD periods that equal or exceed 30 days.  Any leave accumulated and used by a Reserve Marine in this status will be displayed on the 611 remark as leave type 511 (LSL), 593 (MAX LSL days in excess of 60.0 days) or 510 (Days Used).
+
+### Section 3
+
+The Reporting Unit (RU) must compute the number of days of leave earned but not used.  The RU will process the below entry.  Refer to of the DODFMR, Volume 7A, Chapter 35; DoDFMR Table 35-1 (PAYMENT OF ACCRUED LEAVE – OFFICERS AND ENLISTED MEMBERS – SEPARATION WITHOUT IMMEDIATE REENTRY ON ACTIVE DUTY) to determine the reservist's entitlement to LSL.  Report as follows:
+
+```
+TTC 400 001 [A] PD [B].[C] DAS LSL [D].[E] USED |
+- [A] DOA (Date of Action) AD completed
+- [B] DAYS (Number of days LSL paid
+```
+in whole days)
+
+- [C] HALF DAYS (Number of days LSL
+paid in half days)
+
+- [D] DAYS (Number of days USED in
+whole days)
+
+- [E] HALF DAYS (Number of days
+USED in half days)
+
+### Section 4
+
+Reservists receiving pay and allowances while in a disability pay status do not accrue leave and are not entitled to LSL beyond the ending date of the AD orders.

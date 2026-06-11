@@ -1,0 +1,164 @@
+---
+id: "mctfsprium-90701"
+aliases:
+  - "MCTFSPRIUM 9-90701"
+title: "MCTFSPRIUM 9-90701 - Imminent Danger Pay (TTC 236/293/294/297/899)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 9-90701"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 90701, Chapter 9 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 90701_Imminent_Danger_Pay_TTC_236293294297899.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 90701
+
+Imminent Danger Pay (TTC 236/293/294/297/899)
+
+### Section 1
+
+Effective December 31, 2011, the 2012 National Defense Authorization Act (NDAA) changed the entitlement to IDP from a monthly non-prorated entitlement to a monthly prorated entitlement.  For each day served in a designated IDP area, a Marine is entitled to 1/30th of the maximum monthly amount ($225).  Prior to December 31, 2011, IDP was a monthly special pay of $225.  It was payable in the full amount without being prorated for each month during any part for which a Marine was assigned to a designated IDP area.  Active and Reserve Component members who qualify, at any time during a month were entitled to the full amount of IDP regardless of the actual period served on Active Duty or Inactive Duty for training.  Refer to the DOD 7000.14-R Financial Management Regulation, Volume 7A, Chapter 10, Figure 10-1, for the designated IDP areas.
+
+### Section 2
+
+IDP is now based on days spent, based on 30 days per month, in a designated IDP area per the DOD 7000.14-R Financial Management Regulation, Volume 7A, Chapter 10, Paragraph 100101.B and Figure 10-1.  The 31st of a month, whether the first day in the IDP area or at any other point during the duty, is considered a day of non-entitlement. February is treated as a 30 day month. a.  Effective 1 January 2012, a Marine is not entitled to IDP for the number of days while on leave, Temporary Additional Duty or rest and recuperation (R&R) from a designated IDP area.  Effective with software Release (SR) 1-2013 (April 2013), MCTFS will systematically deduct IDP during periods of non-entitlement. b.  A Marine receiving IDP who is wounded or injured as a result of hostile action is entitled to Hostile Fire Pay (HFP), see Paragraph 90702. c.  A Marine who is injured or suffers an illness (not from hostile action) that results in hospitalization for the injury or illness is entitled to IDP for each month member is hospitalized and receiving treatment for the injury or illness.
+
+### Section 3
+
+The DOD 7000.14-R Financial Management Regulation, Volume 7A, Chapter 10, at: http://comptroller.defense.gov/Portals/45/documents/fmr/Volume_07a.pdf contains complete instructions relative to the regulatory conditions of Active Duty entitlement to IDP.  The unit diary is used to report all conditions of accrual or non-accrual of IDP.
+
+### Section 4
+
+The data element 'Country code' is a two-character alphanumeric code for the countries of the world.  A list of valid IDP and HFP location codes can be found on the Manpower Codes Lookup at https://www2.manpower.usmc.mil/lookups, Imminent / Hostile Fire Pay (IDP / HFP).  In MCTFS, SELECT CICS, SELECT TDM TABLES VIEW AND SELECT OPTION 2 (MCTFS ALPHA TABLE RECORDS (AA-ZZ), TABLE ID:  SR (IDP HFP LOCATIONS).  Unit Commanding Officer's will report the country code for the country where the Marine earned the IDP entitlement.  A country code of 'ZZ' will be used to designate a classified location (when the actual country code cannot be revealed for security reasons).
+
+### Section 5
+
+To report a checkage of Imminent Danger Pay (IDP), report:
+
+```
+TTC 236 001 [A] CHECK IDP [B] TO [C] |
+- [A] DOA (Date of Action)
+- [B] FROM DATE (From
+```
+Date)
+
+- [C] TO DATE (To Date)
+- **Note 1:  The FROM DATE is**
+the first day the member is not entitled to IDP, for dates starting on 20120101 to present; or the first day of the month the member is not entitled to IDP, for dates prior to 20120101.
+
+- **Note 2:  The TO DATE is the**
+last day the member is not entitled to IDP, for dates starting on 20120101 to present; or the last day of the month the member is not entitled to IDP, for dates prior to 20120101.
+
+### Section 6
+
+To report a start of Imminent Danger Pay (IDP), report:
+
+```
+TTC 293 001 [A] STRT IDP [B] EFF [C] |
+- [A] DOA (Date of Action)
+- [B] CNTRY CODE (Country
+```
+Code) (Table SI)
+
+- [C] EFF DATE (Effective
+Date) Note:  The EFF DATE is the date the member arrived in the Imminent Danger Pay (IDP) area.  Effective date of 20111231 and prior, MCTFS processing automatically converts this date to the first day of the month.  DEL/ADD not authorized.  Report a DEL AS ERR and a new TTC 293 with the correct Effective Date.
+
+### Section 7
+
+To report a stop of Imminent Danger Pay (IDP), report:
+
+```
+TTC 294 001 [A] STOP IDP EFF [B] |
+- [A] DOA (Date of Action)
+- [B] EFF DATE (Effective
+```
+Date) Note:  The EFF DATE is the date the member departed the Imminent Danger Pay (IDP) area.  For the Effective Date, report the actual date the member departed the IDP area. Effective dates of 20111231 and prior, MCTFS processing automatically converts this date to the last day of the month.  Failure to report the proper date will cause 113 weight control remarks to build incorrectly on members that were in a waived status while in a combat zone.
+
+### Section 8
+
+To report a credit of Imminent Danger Pay (IDP), report:
+
+```
+TTC 297 001 [A] CR IDP [B] [C] TO [D] |
+- [A] DOA (Date of Action)
+- [B] CNTRY CODE (Country
+```
+Code)
+
+- [C] FR DATE (From Date)
+- [D] TO DATE (To Date)
+- **Note 1:  The FR DATE is the**
+date the member arrived in the Imminent Danger Pay (IDP) area.  If the Effective Date is before 20111231, MCTFS processing will automatically convert this date to the first day of the month.
+
+- **Note 2:  The TO DATE is the**
+date the member departed the Imminent Danger Pay (IDP) area.  If the Effective Date is before 20120101, MCTFS processing will automatically convert this date to the last day of the month.
+
+### Section 9
+
+Reservists performing Annual Training (AT)/Inactive Duty Training (IDT) for 30 days or less in a designated IDP area are entitled to special pay for such duty, to include the 31st of a given month, if that given month includes 31 days.  (I.E. If the Reserve Component IDP entitlement is for the period YYYY-MM-25, to YYYY-MM-31, then the RC IDP entitlement should be reported with FROM DATE equal YYYYMM25 and TO DATE equal YYYYMM31.  In this scenario the RC Marine will receive day for day RC IDP entitlement for 7 days to include the 31st of the month. a.  If/when an RC Marine has subsequently transferred from the Reserve Component, to Active Duty for Operational Support (ADOS), to the Active Component (AC), or to the Active Reserve (AR), and the RC Admin RUC can no longer report RC transactions (TTC’s), then the RC Admin RUC should prepare a NAVMC 11116, Miscellaneous Military Pay Order, and forward it to the Reserve Pay, Finance Office, D0006, for crediting of RC IDP. b.  The NAVMC 11116 should reflect the period the member is to be credited or checked IDP. The period reported must equal or include dates within a previous Active Duty (AT/IDT) period.  Report the dates of actual entitlement per the DOD 7000.14-R Financial Management Regulation, Volume 7A, Chapter 10, Figure 10-1.
+
+### Section 10
+
+Reserve members that perform a period (s) of Inactive Duty for Training (IDT) in a designated IDP area may have the entitlement credited by using TTC 899 000, the entitlement will reside in the 998 Remark.  Report the creditable time as follows:
+
+```
+TTC 899 000 [A] CRED IDP [B] [C] [D] [E] [F] |
+- [A] DOA (Date of Action)
+- [B] FROM DATE (From
+```
+Date)
+
+- [C] TO DATE (To Date)
+- [D] ST/COUNTRY (State or
+Country Code)
+
+- [E] COUNTY (County Code)
+(Table SI)
+
+- [F] CITY (City Code)
+(Table SI)
+
+- **Note 1:  The ST/COUNTRY is**
+the country code, if the member is located in a foreign country; or the state code, if the member is located in the United States.
+
+- **Note 2:  The COUNTY is**
+zeros, if the member is located in a foreign country; or the county code, if the member is located in the United States.
+
+- **Note 3:  The CITY is zeros,**
+if the member is located in a foreign country; or the city code, if the member is located in the United States.
+
+### Section 11
+
+To Report A Checkage for IDP on A Reserve Member Use TTC 899 001.
+
+```
+TTC 899 001 [A] CHEK IDP [B] [C] [D] [E] [F] |
+- [A] DOA (Date of Action)
+- [B] FROM DATE (From
+```
+Date)
+
+- [C] TO DATE (To Date)
+- [D] ST/COUNTRY (State or
+Country Code)
+
+- [E] COUNTY (County Code)
+(Table SI)
+
+- [F] CITY (City Code)
+(Table SI)
+
+- **Note 1:  The ST/COUNTRY is**
+the country code, if the member is located in a foreign country; or the state code, if the member is located in the United States.
+
+- **Note 2:  The COUNTY is**
+zeros, if the member is located in a foreign country; or the county code, if the member is located in the United States.
+
+- **Note 3:  The CITY is zeros,**
+if the member is located in a foreign country; or the city code, if the member is located in the United States.

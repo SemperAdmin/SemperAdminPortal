@@ -1,0 +1,68 @@
+---
+id: "mctfsprium-80205"
+aliases:
+  - "MCTFSPRIUM 8-80205"
+title: "MCTFSPRIUM 8-80205 - Move-In Housing Allowance ("
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 8-80205"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 80205, Chapter 8 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 80205_Move-in_Housing_Allowance_.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 80205
+
+Move-In Housing Allowance (MIHA) (TTC 455)
+
+### Section 1
+
+MIHA exists to defray the move-in costs associated with occupying private-sector housing covered under the OHA program, whether leased or owned. MIHA is not payable to a Service member occupying Government or Government-leased housing. MIHA does not cover move-out costs. In most cases, a Service member authorized OHA is authorized MIHA.
+
+### Section 2
+
+MIHA Claim DD Form 2556 must accompany MIHA/Rent, MIHA/Security, or MIHA/Infectious Disease-related expenses. See DoD 7000.14-R Financial Management Regulation Volume 7A, Chapter 26 for how to complete that form.
+
+### Section 3
+
+To report a Marine's entitlement to Move-In Housing Allowance rental, security, or infectious disease, report as follows:
+
+```
+TTC 455 000
+```
+CRED MIHA - [A]/[B]/$[C] ED [D] |
+
+- [A] 1-byte Move-In Housing Allowance code (R=rental; S=security; D=Infectious
+Disease)
+
+- [B] 5-byte geographical locality code
+- [C] Dollar amount (refer to https://www.oanda.com/currency-converter/en/?from=USD&to=CAD&amount=1
+to calculate currency conversions)
+
+- [D] 8-byte Effective Date (YYYYMMDD)
+**Note**: Geographical location codes can be found at DTMO website: https://www.travel.dod.mil/Allowances/Station-Allowance-Changes/
+
+### Section 4
+
+When reporting a Marine's entitlement to Move-In Housing Allowance miscellaneous, the amount of entitlement is a fixed rate, lump-sum payment.
+
+```
+TTC 455 001 CRED MIHA-M/ [A] ED [B] |
+- [A] 5-byte geographical
+```
+locality code
+
+- [B] 8-byte Effective Date
+(YYYYMMDD)
+
+**Note**: When a credit Move-In Housing Allowance (TTC 455) is reported by the CO, and the Marine is enrolled in DD/EFT, a payment will be made to the Marine's financial institution within approximately 48 hours. If the Marine does not have an established DD/EFT financial institution in MCTFS, the amount due will be reflected in the Marine's next scheduled payday.
+
+### Section 5
+
+Submit a NAVMC 11116 to the Disbursing/Finance Office requesting credit of the applicable entitlement and a special payment if: There are no means to report the transaction via UDMIPS or if the member is in a hardship and requires a cash payment (I.E.no EFT account). Ensure to include attempted transactional reporting by admin and the source documentation within the NAVMC 11116 request.

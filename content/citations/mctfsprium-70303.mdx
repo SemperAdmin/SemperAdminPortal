@@ -1,0 +1,95 @@
+---
+id: "mctfsprium-70303"
+aliases:
+  - "MCTFSPRIUM 7-70303"
+  - "MCTFSPRIUM TABLE 6-2 7-70303 7-70304 7-70305 7-70306"
+title: "MCTFSPRIUM 7-70303 - In the Hands of Civil Authority (TTC 281, 282)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 7-70303"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 70303, Chapter 7 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 70303_In_The_Hands_Of_Civil_Authority_TTC_281_282.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 1
+
+A Marine held under arrest by civil authorities while on authorized leave or liberty is entitled to pay and allowances until the expiration of such authorized absence. Therefore, 1 minute after the time and date that a Marine's authorized leave or liberty expires will be reported as the time and date of entry into an IHCA status. A Marine delivered to civil authorities (CA) will be reported into an IHCA status as of the time and date of delivery to civil authorities. Do not report a period of IHCA or IHFA of less than 24 hours. The unit Commanding Officer must make a determination to excuse or not excuse the period of IHCA when a Marine is returned to military control from IHCA. A Marine who is charged with a civil offense, and confined by civil authorities or held in confinement under military jurisdiction at the request of civil authorities until such time as custody is requested by civil authorities, is absent, or constructively absent from duty, except for any part of the period of confinement covered by authorized leave. After the results of the trial are known and the unit Commanding Officer excuses the absence (period confined by civil authorities or held in unavoidable), payment of pay and allowances may be made to the Marine. Payment for the period of absence (unless excused as unavoidable) may not be made, regardless of the outcome of the civil proceedings. The following circumstances constitute sufficient basis for excusing the absence as unavoidable when it is clearly established that the arrest and detention was not caused by the misconduct of the Marine:
+
+a.  When a Marine is tried and acquitted.
+
+b.  When a Marine is admitted to bail and the trial is postponed indefinitely and it is apparent that the authorities do not intend to prosecute the case.
+
+c.  When the charges are dismissed or the Marine is released (or dies) without trial. This does not apply in cases where the Marine is released upon agreement to make reparation for the offense.
+
+d.  When the case is not processed.
+
+e.  When reporting a Marine IHCA, report a change of individual location, per Chapter 5, Section 4. Refer to MCO P5800.16 W/CH 1-7/Vol 1-17, Marine Corps Manual for Legal Administration (LEGADMINMAN) for additional reporting requirements.
+
+f.  Report as follows:
+
+```
+TTC 281 000 IHCA SINCE (A) ED (B) | HIST: (C) |
+```
+(A) DOA (Date of Action) (8-bytes, Word Type A)
+
+(B) TIME (To Custody Time) (4-bytes, Word Type 4)
+
+(C) ED (To Custody Date) (8-bytes, Word Type A)
+
+Note: Report the following information concerning delivery/apprehension: If delivered to CA, report DEL CA and authority for delivery. If apprehended by CA, report APRND CA. Show designation, location of CA and charges.
+
+### Section 2
+
+Marines who are joined into a different monitored command while IHCA (for record purpose join) are joined as not chargeable. Strength category 'C' is automatically assigned when the join entry is processed. A Marine in an unauthorized absence status at the time of arrest by civil authorities will be reported into an IHCA status as of the time and date of arrest. Report as follows:
+
+```
+TTC 281 001 IHCA SINCE (A) ED (B) WHILE UA | HIST: (C) |
+```
+(A) DOA (Date of Action) (8-bytes, Word Type A)
+
+(B) TIME (To Custody Time) (4-bytes, Word Type 4)
+
+(C) ED (To Custody Date) (8-bytes, Word Type A)
+
+### Section 3
+
+A chargeable Marine delivered to or apprehended by civil authorities who remains in the same monitored command will remain chargeable and retain the same strength category code for 30 days. on the 31st day of IHCA, the strength category code will be changed to 'C' per Chapter 6 Section 6.
+
+### Section 4
+
+If the Marine is brought to trial by civil authorities, the results of the trial will be reported with a history statement.
+
+a.  To report the return from IHCA, absence is excused as unavoidable:
+
+```
+TTC 282 001 RET FR IHCA (A) ED (B) ABS EXCUSED | HIST: (C) |
+```
+(A) DOA (Date of Action) (8-bytes, Word Type A)
+
+(B) TIME (To Custody Time) (4-bytes, Word Type 4)
+
+(C) ED (To Custody Date) (8-bytes, Word Type A)
+
+Note: This statement will credit pay and allowances during the period of absence. The BAS is automatically withheld during period of IHCA.
+
+b.  Use the following statement to report the return from IHCA, absence is not excused as unavoidable:
+
+```
+TTC 282 002 RET FR IHCA (A) ED (B) ABS NOT EXCUSED | HIST: (C) |
+```
+(A) DOA (Date of Action) (8-bytes, Word Type A)
+
+(B) TIME (To Custody Time) (4-bytes, Word Type 4)
+
+(C) ED (To Custody Date) (8-bytes, Word Type A)
+
+### Section 5
+
+If prior to completion of the IHCA, the Marine is discharged due to an administrative separation, do not report a RET FR IHCA. A member's administrative separation can be reported without the record being RET FR IHCA status. The Time Lost statement will not be reported when the RET FR IHCA is not reported due to administrative separation. Account adjustment will be conducted by MCPRD, via Trouble Ticket to local Manpower Information System Support Office to address updating member's leave balance and to account for Time Lost.

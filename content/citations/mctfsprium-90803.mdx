@@ -1,0 +1,62 @@
+---
+id: "mctfsprium-90803"
+aliases:
+  - "MCTFSPRIUM 9-90803"
+title: "MCTFSPRIUM 9-90803 - Hardship Duty Pay-Tempo (TTC 125, 136, 175)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 9-90803"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 90803, Chapter 9 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 90803_Hardship_Duty_Pay-tempo_TTC_125_136_175.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 90803
+
+Hardship Duty Pay-Tempo (TTC 125, 136, 175)
+
+### Section 1
+
+Marines who are operationally deployed for more than 220 consecutive days become eligible for HDP-T on the 221st consecutive deployed day. Refer to MARADMIN 619/14 for specific rules and exceptions governing this pay. Hardship Duty Pay-Tempo (HDP-T) is payable at a rate of $495.00 per month.
+
+### Section 2
+
+HDP-T transactions will post to the Hardship Duty Pay 913 Remark with a type code of 'T'. MCTFS allows for HDP-T to run concurrently with HDP-L and/or HDP-M. Starting and Stopping HDP-T must be dated greater than 20140917, or they will not process. Report Hardship Duty Pay-Tempo (HDP-T) as follows:
+
+a.  To start HDP-T:
+
+136 003 START HDP-T ED (A) |
+
+(A) 8-byte Effective Date (YYYYMMDD)
+
+Note 1. The HDP-T ED is the 221st day of deployment, not the 1st day of deployment.
+
+b. To stop HDP-T:
+
+175 003 STOP HDP-T ED (A) |
+
+(A) 8-byte Effective Date (YYYYMMDD)
+
+### Section 3
+
+Credits and checkages for HDP-T must be dated greater than 20140917, or they will not process. Report the entries as follows:
+
+a. To credit HDP-T:
+
+125 004 CRED HDP-T (A) TO (B) |
+
+(A) 8-byte from date (YYYYMMDD)
+
+(B) 8-byte to date (YYYYMMDD)
+
+b.  To check HDP-T:
+
+125 001 CHEK HDP-T (A) TO (B) |
+
+(A) 8-byte from date (YYYYMMDD) (B) 8-byte to date (YYYYMMDD)

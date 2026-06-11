@@ -1,0 +1,108 @@
+---
+id: "mctfsprium-40401"
+aliases:
+  - "MCTFSPRIUM 4-40401"
+title: "MCTFSPRIUM 4-40401 - BODY COMPOSITION PROGRAM/MILITARY APPEARANCE PROGRAM"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 4-40401"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 40401, Chapter 4 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 40401_BODY_COMPOSITION_PROGRAMMILITARY_APPEARANCE_PROGRAM.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 40401
+
+**BODY COMPOSITION PROGRAM/MILITARY APPEARANCE PROGRAM** (BCP/MAP) (TTC 337/338/339)
+
+### Section 1
+
+Weight control and military appearance information is used by the unit commander, training officer, higher echelons, CMC, the medical department, or the Department of Defense in monitoring Marines found to be physically unqualified as a result of obesity, an overweight condition, or unsatisfactory personal appearance.
+
+### Section 2
+
+Female Marines who become pregnant while assigned to weight control will remain on weight control in an 'inactive' status.  No Unit Diary entry is required when a Marine on weight control becomes pregnant other than reporting Duty Limitation 'N'.  When a Marine is subsequently reported to a non-medical duty limitation, it will reinstate the Marines active status on the Weight Control Program.  Female Marines will not be eligible for promotion while assigned to weight control.  See the reference for guidance concerning female Marines returning to full duty after childbirth/prematurely terminated pregnancy and the requirement to conform to weight or body fat standards.
+
+### Section 3
+
+After initial assignment to the BCP/MAP, it is possible for the Marine to be removed from this program for satisfactory progress.  Conditions requiring or permitting assignment, extension, or removal from the various categories of the BCP/MAP are contained in MCO 6110.3A W/CH-1.  To report assignment to, extension of assignment, and removal from weight control (WTCNTL) and military appearance (MILAP).  The Effective Date is the effective date to/from assignment.  The Promotion Restriction Period and Restriction Status Codes for TTC 337 are listed in Chapter 7, Section 7 for reporting TTC 053 PROM RESTR.  When reporting TTC 339 000 FROM WT CNTL, per the Enlisted Promotion Manual (MCO P1400.32D W/CH-1-2), review Marines service record to determine if he/she should be in a promotion restriction status other than weight control, and report the appropriate restriction per Chapter 7, Section 7.  If a Marine was reported to WTCNTL/MILAP due to administrative error, (i.e., reported TO WTCNTL using the incorrect SSN), use a DEL AS ERR statement to correct the error.  In this case, there is no requirement to submit for BCNR.  To delete a sequence from the WEIGHT-CONTROL-113-RMK, report TTC 029/000 (DELETE REMARK BY SEQUENCE NUMBER).
+
+```
+
+```
+TTC 337 000 [A] TO WT CNTL EFF DATE [B]|
+TTC 337 001 [A] EXTEND WT CNTL EFF DATE [B]|
+TTC 338 000 [A] TO MILAP|
+TTC 339 000 [A] FROM WT CNTL EFF DATE [B]|
+TTC 339 002 [A] FROM MILAP EFF DATE [B]|
+```
+- [A] DOA (Date of Action, never 00000000) - [B] EFF DATE (Effective date; date a member is assigned, reassigned, extended or removed [to/from weight control]). ``` ### Section 4
+
+Report a duty limitation of pregnancy for Marines who become pregnant while assigned to BCP/MAP.
+
+a.  When TTC 157 000 DU LIMIT PREGNANCY is reported on Marines that are currently assigned to the BCP, it will suspend their status in the program and generate the following advisory message:  "MARINE PLACED IN INACTIVE WT CNTL STATUS".
+
+b.  Marines will not be promoted while in a Duty Limitation of 'N' (Pregnancy) and whose record also contain a Weight Control Status Code of '5'.  When the select grade routine is reported, it will automatically exempt these Marines from consideration.
+
+c.  When a Marine is reinstated to a non-medical duty limitation, it will again reinstate the Marines active status on the Weight Control Program and generate the following advisory:  "MARINE RETURNED TO ACTIVE WT CNTL STATUS FOR SIX MONTHS".
+
+### Section 5
+
+Commanders may request a BCP assignment waiver per MCO 6110.3A W/CH-1 when deployment to a combat zone prevents effective BCP management and participation.  Affected units will submit BCP and MAP management waiver requests to the component commander responsible for the area of combat operations (e.g., MARFORSOUTH, MARCENT).  To illustrate, a unit from MARFORPAC deploying to Afghanistan would submit the waiver request to the MARCENT Commander for decision.  MARSOC units will submit waiver requests to the MARSOC Commander for decision, regardless of zone or area of deployment.  This authority is not to be delegated.  Commands receiving a BCP assignment waiver will report TTC 339, SEQ 003, ‘START WT CNTL INACTIVE CBT EFF DATE YYYYMMDD’, with the eight-byte effective date (YYYYMMDD) for all affected Marines.  When reported, the Marine must be in receipt of Hostile Fire Pay and the Marines eligibility for automated promotion will be restricted for the period of time they are in combat.  This will post a new WEIGHT CONTROL status code of "6, INACT - CBT" until Hostile Fire Pay is terminated.  An advisory message will be generated on the unit's diary feedback report (DFR) as follows:  "MBR ASSIGNMENT TO WT CNTL INACTIVE FOR DURATION OF COMBAT SVC.  "When TTC 294 (stop HFP) is reported, the Marine will be returned to an active WEIGHT CONTROL status and the 6 month period starts again.
+
+```
+
+```
+TTC 339 003 [A] START WT CNTL INACTIVE CBT EFF DATE [B]|
+```
+- [A] DOA (Date of Action, never 00000000) - [B] EFF DATE (Effective Date; date weight control is placed in an ``` Inactive Status due to member being assigned in a combat area) NOTE: Members removed from an Inactive Status will restart the Weight Control period based on the last reported Weight Control Status Code [1-assign, 2-extend or 4-reassign].
+
+### Section 6
+
+Members that have an Underlying Medical Condition that prevents them from actively participating within the BCP or the medical condition is the main reason for the weight gain can report a temporary suspension. Member’s eligibility for automated promotion will be restricted for the period of time they remain in an Inactive Status. This will post a new WEIGHT CONTROL status code of "7, INACT - MED" and an advisory message will be generated stating:  “WT CNTL PLACED IN AN INACTIVE STATUS DUE TO AN UNDERLYING MED CONDITION.” Commands will report:
+
+```
+
+```
+TTC 339 004 [A] START WT CNTL INACTIVE UNDERLYING CONDITION EFF DATE [B]|
+```
+- [A] DOA (Date of Action, never 00000000) - [B] EFF DATE (Effective Date; date weight Control status placed in an ``` Inactive status due to an underlying medical condition) Note:  Member’s Weight Control Status Code must be: 1-assign, 2-extend or 4-reassign
+
+### Section 7
+
+Once the Underlying Medical Condition has been resolved, to remove a member from the temporary suspension and restart the Weight Control on the last reported Weight Control Status Code, commands will report:
+
+```
+
+```
+TTC 337 002 [A] STOP WT CNTL INACTIVE CONDITION EFF DATE [B]|
+```
+- [A] DOA (Date of Action, never 00000000) - [B] EFF DATE (Effective Date; date inactive underlying medical condition ``` was stopped) Note.  Member’s Weight Control will restart on last reported status code of:  1-assign, 2-extend or 4-reassign.
+
+### Section 8
+
+MCTFS will automatically screen junior enlisted records to determine if the Marine had late training data, PME, or other transactions reported that affect the JEPES score. If their new JEPES score exceeds the cutoff from a previous month and meets the promotion eligibility requirements, Marines will be automatically promoted in MCTFS. To ensure commands are fully informed, MMPB-11 will email monthly rosters to each command when a Marine is automatically promoted in MCTFS so the command can prepare the appropriate promotion warrant.
+
+Unit actions. Due to these programming changes, units are encouraged to screen all Marines monthly and ensure NOT RECOMMENDED entries are reported or removed. Units should continue to avoid running late training data to minimize remedial promotions and to ensure JEPES scores are accurate. If a unit believes they have a Marine who should be considered for promotion under the previous process and prior to 1 November 2023, they should contact MMPB-11.
+
+MMPB-11 actions will occur as follows:
+
+a. Though these system changes will significantly automate junior enlisted promotions, some exceptions may still require actioning by MMPB-11 as listed below. In these cases, a formal request via naval correspondence from the CO with promotion authority to MMPB-11 detailing the circumstances and including a specific date of rank (DOR) recommendation is required.
+
+b. Requests to correct entry level grades associated with a contracted private first class.
+
+c. Requests for non-competitive military occupational specialties promotions.
+
+d. Requests associated with Marine Corps Embassy Security Group PME waivers.
+
+e. Requests associated with the Musician Enlistment Option (MEOP) Program.
+
+f. Request for reservists who changed components after their requested remedial promotion date.
+
+g. Requests to correct a previous DOR for a Marine that has already been promoted.

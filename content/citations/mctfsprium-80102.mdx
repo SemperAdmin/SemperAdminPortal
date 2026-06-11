@@ -1,0 +1,213 @@
+---
+id: "mctfsprium-80102"
+aliases:
+  - "MCTFSPRIUM 8-80102"
+title: "MCTFSPRIUM 8-80102 - Cost-of-Living Allowances Outside of the Continental United States (Cola/Barracks Cola) (TTC 013, 01"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 8-80102"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 80102, Chapter 8 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 80102_Cost-of-living_Allowances_Outside_Of_The_Continental_United_States_colabarracks_Cola_TTC_013_01.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 80102
+
+Cost-of-Living Allowances Outside of the Continental United States (Cola/Barracks Cola) (TTC 013, 014, 015, 026)
+
+### Section 1
+
+COLA is authorized to be paid in overseas areas (including Hawaii and Alaska) to offset a Marines and/or family's living costs. This is accomplished by maintaining the Marines purchasing power overseas so that it is equal to that of their counterparts in the CONUS. Entitlement to COLA is based on a Marines geographic location, pay grade, years of service and, if applicable, the number and geographic location of a Marines dependents. COLA is computed on a daily rate basis. The conditions of entitlement to COLA and the method of computation are described in the DoDFMR, Volume 7A, Chapter 68.
+
+### Section 2
+
+An application is required when COLA with dependents, or without dependents, is requested. Substantiating documents are not required for barracks COLA.
+
+### Section 3
+
+Barracks COLA is reported on the commanders UD without a Cola application. A Marine is required to submit an application when requesting COLA with dependents or without dependents.
+
+a.  Complete the NAVMC 11106 (original and one copy) as follows for COLA with dependents or without dependents:
+
+(1) Complete part A.
+
+(a) Check For Member Only if payable at the without dependent rate.
+
+(b) Check For Member and Dependents if payable at the with dependent rate.
+
+(c) Check For Members Dependents Only if payable at the with dependent rate only, as applicable.
+
+(2) Complete part B (self-explanatory).
+
+(3) Part C - Complete the appropriate information for the primary dependents for which the COLA rates apply. Signature and date of signature are required.
+
+b.  After reviewing the information on the COLA application, the Unit Commander will approve the application by completing part D.
+
+c.  After approval, the original approved application will be filed in the units correspondence files per SECNAV M-5210.1 (only the most current form will be retained) and the duplicate copy returned to the Marine.
+
+### Section 4
+
+To report the START COLA and STOP COLA:
+
+```
+TTC 014 000 STRT COLA [A] [B] ED [C] |
+- [A] 5-byte geographic location code (see Note 1 below)
+- [B] 1-byte entitlement code (B, O, or 0-5)
+- [C] 8-byte ED (YYYYMMDD)
+TTC 013 000 STOP COLA [A] ED [B] |
+- [A] 1-byte entitlement code (B, O, or 0-5)
+- [B] 8-byte ED (YYYYMMDD)
+```
+- **Note 1: Concurrent (Dual) COLA: When a member is authorized concurrent payment of two OCONUS COLAs (that is, member is assigned unaccompanied overseas tour and the members dependent is residing at the old OCONUS PDS or a designated location OCONUS) the total number of dependents shall be “reduced by one” for purposes of determining the OCONUS COLA payment for the dependents location (1-byte numeric, 0 through 5) displayed on the COST OF LIVING ALLOWANCE 921 Remark.**
+The OCONUS COLA payment for the members PDS shall reflect a member with no dependents (1-byte alpha, B or O) (B=Barracks, O=Without Dependents/Own right) displayed on the COLA BARRACKS & NO DEPENDENTS 933 Remark. COLA zero (1-byte numeric, 0) should be reported for the dependent(s) while the member is in a non-pay status, regardless of how many dependents.
+
+Example: Member unaccompanied tour (Okinawa, Japan) and one dependent at old PDS (Berlin, Germany) reduced by one will be reported as follows:
+
+Members PDS Dependent(s) Location (old PDS)
+
+JP027 (Okinawa, Japan) DE201 (Berlin, Germany)
+
+1-byte entitlement code = B or O (alpha) 1-byte entitlement code = 0 (num.) Example: Member unaccompanied tour (Seoul, Korea) and two dependents at old PDS (Sydney, Australia) reduced by one will be reported as follows:
+
+Members PDS Dependent(s) Location (old PDS)
+
+KR155 (Seoul, South Korea) AU019 (Sydney, Australia)
+
+1-byte entitlement code = B or O (alpha) 1-byte entitlement code = 1 (num.)
+
+- **Note 2: When reporting the one byte entitlement code with a numeric value of 0, both COST-OF-LIVING-ALLOW-921-RMK and COLA-BARRACKS-NO-DEPN-933-RMK must be open. The encoded GEO-LOCN for both dependent and member cannot equal the same. The numeric entitlement code 0 is solely associated with the dependent (displayed on 921 Remark), therefore, an alpha entitlement code of B or O on behalf of the member must exist (displayed on 933 Remark). In the absence of the members COLA entitlement, the member must be in a non-pay/confinement status or the entry will fail.**
+### Section 5
+
+Corrections will be made by the FO using CRED COLA (TTC 522) and CHEK COLA (TTC 523) or by the Unit commander using the COLA ADJUST (TTC 015) or one-time CHEK (TTC 026) entries as required. Report a one-time COLA credit or a one-time COLA checkage as follows:
+
+```
+TTC 015 000 COLA ADJUST [A] [B] [C] [D] |
+- [A] 5-byte geographic location code (see Note 1 below)
+- [B] 1-byte entitlement code (B, O, or 0-5)
+- [C] 8-byte FROM ED (YYYYMMDD)
+- [D] 8-byte TO ED (YYYYMMDD)
+TTC 026 000 COLA CHECKAGE [A] [B] [C] [D] |
+- [A] 5-byte geographic location code (see Note 1 below)
+- [B] 1-byte entitlement code (B, O, or 0-5)
+- [C] 8-byte FROM ED (YYYYMMDD)
+- [D] 8-byte TO ED (YYYYMMDD)
+```
+- **Note 1: The first two characters are alpha and denote the country code. The remaining three characters are numeric and denote city, area, states, etc. within a country. Two-character alpha country code. Example: JP = Japan or KR = Korea. 3-character numeric geographical locality code Example using Japan: 027 = Okinawa or 019 = Iwakuni. Geographical location codes can be found at DTMO website, http://www.defensetravel.dod.mil/site/locCodeCalc.cfm. Example 5-Byte: Okinawa Japan = JP027 or Seoul Korea = KR140.**
+- **Note 2: Entitlement Code. When a Marines entitlement to COLA changes from barracks or without dependents to with dependents, report a STOP COLA entry using code B or O, as appropriate. Then, report a STRT COLA entry using a code from 0 through 5. Follow the same STOP/STRT sequence, substituting the appropriate entitlement codes, if entitlement changes from with dependents to barracks or without dependents. The entitlement codes are alpha or numeric, as follows:**
+ENTITLEMENT CODES:
+
+CODE | DESCRIPTION
+
+O | Without dependents (ALPHA) (933 Remark Screen)
+
+0-5 | Number of dependents (NUMERIC) (921 Remark Screen)
+
+B | Barracks COLA (933 Remark Screen)
+
+- **Note 3: The ED is the date of the initial entitlement or the date of the change of entitlement.**
+- **Note 4: TTC 015 will only process on a closed remark. If the open remark is in error, report TTC 014 with the correct information and then on the following cycle report TTC 015 to adjust the closed remark.**
+- **Note 5: TTC 026 will only process if the checkage period has a compute flag (CMP CDE) equal to 4 on the appropriate MCTFS remark screen (D921, D933).**
+- **Note 6: Using category code S921 or S933 will enable a user to view a Marines entire COLA record on a single screen.**
+### Section 6
+
+The MCTFS system will:
+
+a.  Compute the daily COLA rate based on the following data elements: pay grade, years of service, COLA Annual Compensation-Table I, number of dependents, COLA Average Annual Spendable Income-Table II, duty station geographical location and COLA index.
+
+b.  Automatically start COLA Barracks when members are joined to DSSN 5755, 6096, 6160, or 6795 if it was not already started by an in route TDY or the new permanent duty location. The system will also assign the appropriate geographical location for entitlement based on the joining DSSN.
+
+### Section 7
+
+A STRT COLA entry terminates an existing COLA entitlement (within the same type, with or without dependents) and computes the new entitlement as of the ED of the new start. The MCTFS only retains COLA rates at the current plus one prior change amount. To adjust COLA before the last change, report the adjustment using transactions 015 or 026, as appropriate.
+
+### Section 8
+
+A STRT COLA entry generates a systems edit for duplicate and/or overlapping periods of entitlement. If the new start date is later than the prior entitlements stop date, the system creates a credit or checkage, as appropriate. For example, the MMPA of a Marine reflects COLA paid for the period 15 November 1997 through 31 March 1998. A change in entitlement occurs, and a new STRT transaction is reported with a start date of 28 March 1998. The system will automatically credit or check the Marines MMPA, as appropriate, for the overlapping period of 28 through 31 March 1998.
+
+### Section 9
+
+COLA is updated in the MMPA, without reporting a STOP/STRT COLA entry, when there is a:
+
+a.  Change to the COLA Annual Compensation Table, the COLA Spendable Income Table, or the COLA indexes.
+
+b.  Change of pay grade (promotion or reduction).
+
+c.  Change in longevity (years of service).
+
+### Section 10
+
+COLA is automatically terminated when a Marine is re-assigned to a different MCC based on the transfer or join UD entry. When COLA is terminated based on a join entry, the Unit Commander of the gaining command will be advised on the online advisory report to review the Marines account for required adjustments.
+
+a.  A new STRT COLA entry is required to update the MMPA when a Marines dependent status changes or when the COLA status changes from COLA to barracks COLA or vice versa.
+
+b.  COLA is suspended based on diary entry reporting for CONUS leave. Suspension is affected on the 31st day.
+
+c.  COLA barracks and COLA without dependents are automatically terminated the day prior to the day a Marine is reported to confinement and duty status F, G, or H. For those Marines receiving COLA with dependents, the commanding officer will be advised by online advisory report to reduce the command-sponsored dependents by one.
+
+d.  COLA entitlement will continue when members who are transferring for temporary duty within the same jurisdiction.
+
+### Section 11
+
+Whenever a reported COLA entitlement or a rate table/COLA index change occurs, resulting in a zero monetary entitlement for a Marine, one of the following messages will appear in Section F of the Marines LES, as applicable.
+
+a.  MBR CURRENTLY ENTITLED TO COLA. COMPUTED AMT IS $0.00.
+
+b.  MBR CURRENTLY ENTITLED TO COLA. COMPUTED AMT IS $0.00 FROM (DATE).
+
+c.  COLA COMPUTED AMT IS $0.00 THRU (DATE).
+
+Note: If the Marine becomes entitled to a monetary amount of COLA, the system will automatically re-compute the entitlement and credit the MMPA with the amount due. Whenever a Marine who is currently entitled to a zero monetary amount loses COLA entitlement altogether, the stop COLA transaction must be reported by the Unit Commander.
+
+### Section 12
+
+The following Computer Generated Messages are possible:
+
+a.  NO MATCH ON TABLE FOR ENC PERIOD, CONTACT FINANCE OFFICER. TO MAKE ADJUSTMENT appears when the FROM DATE is not reflected on COLA Table.
+
+b.  MR INDICATES MEMBER IS IN A NON-PAY STATUS appears if a STRT COLA entry was reported for a Marine in one of the following pay statuses:
+
+(1) Appellate leave.
+
+(2) Administrative leave.
+
+(3) Deserter.
+
+(4) Returned to military control from UA, DES, or IHCA after ECC.
+
+(5) Confined - General court-martial - total forfeiture of pay and allowances.
+
+(6) Confined beyond ECC.
+
+(7) Killed in action.
+
+(8) Non-combat death.
+
+(9) Reserve record.
+
+(10) PLC back to college.
+
+(11) Inactive record SSN change.
+
+(12) Separated.
+
+c.  MR DOESNT REFLECT COLA ENTITLEMENT appears when a COLA remark does not exist and a COLA ADJUST transaction was reported.
+
+d.  MR REFLECTS DUPLICATE ENTITLEMENT appears when a COLA ADJUST transaction is reported that was previously reported with the same location and dependency code for the same period.
+
+e.  MEMBER DOESNT RATE COLA WITH AND WITHOUT DEPENDENTS FOR THE SAME GEOGRAPHICAL LOCATION appears when the system reflects an existing with dependent remark for the same location and a STRT COLA without dependents transaction is reported.
+
+f.  ENC DEPENDENT CODE INVALID. MUST BE B, O, OR ZERO THRU FIVE appears if a STRT COLA entry is reported using a dependent code other than O, B, or 0 through 5.
+
+g.  ENCODED DEPENDENT CODE INVALID. MUST BE A, B, OR O OR ZERO THRU FIVE appears if a STOP COLA entry is reported using a dependent code other than O, B, A, or 0 through 5.
+
+h.  ENC ED INVALID. MUST BE YYYMMDD FORMAT. CANNOT BE FUTURE DATEED appears if a STRT COLA entry is reported and the ED is formatted incorrectly, future dated or no date was input.
+
+i.  ENCODED EFFECTIVE DATE INVALID. MUST BE IN YYYYMMDD FORMAT, AND CANNOT BE FUTURE DATED appears if a STOP COLA entry is reported and the ED is formatted incorrectly, future dated or no date was input.
+
+j.  ENCODED GEO LOCN NOT VALID ON COST-OF-LIVING-ALLOWANCE-TABLE appears when a STRT COLA entry contains a geographic location that is not in the COLA country index table. This message is generated when an entry has failed to process when a valid geographic location was reported, but the central table had not been updated. If the above message is generated upon reporting an erroneous geographic location code, resubmit the transaction with the proper code.

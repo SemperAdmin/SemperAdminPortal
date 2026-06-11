@@ -1,0 +1,402 @@
+---
+id: "mctfsprium-70502"
+aliases:
+  - "MCTFSPRIUM 7-70502"
+  - "MCTFSPRIUM 7-70502 7-70503 7-70507"
+  - "MCTFSPRIUM 7-70502 7-70503 7-70507 CHAP 13 APPENDIX C"
+  - "MCTFSPRIUM 7-70502 7-70503 7-70507 CHAPTER 13 APPENDIX C"
+title: "MCTFSPRIUM 7-70502 - Forfeitures and Fines (TTC 268, 275, 283, 284, 315, 318, 329)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 7-70502"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 70502, Chapter 7 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 70502_Forfeitures_And_Fines_TTC_268_275_283_284_315_318_329.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 1
+
+Dollar amounts shall be reported by showing the actual dollar figures followed by a decimal point and two zeros; for example, 00018.00 to indicate 18 dollars. There must be leading zeros in the dollar amount. Court-martial forfeitures will be reported immediately after the CA's action has been taken, except when the court-martial sentence also includes a punitive discharge. When the court-martial sentence includes a bad conduct or dishonorable discharge, report the forfeiture as shown in PRIUM Table 7-6.
+
+a.  This transaction may not be used to report courts-martial for Marines on Active Duty. Forfeitures (for Reserve Marines), other than a total forfeiture of pay and allowances or total forfeiture of pay only, will be reported with the following statement:
+
+```
+TTC 283 000 [A] FORF $[B].00 FOR [C] MO SPCM TOTAL $[D].00 ED [E] | (Reserve
+```
+and Headquarters Marine Corps components only) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action) (Never 00000000)
+- [B] FORF AMT (Forfeiture Amount, no decimal place)
+- [C] MONTHS (Number of months, no decimal place)
+- [D] TOTAL AMT (Total Amount, no decimal place)
+- [E] ED (Effective Date; never 00000000)
+```
+TTC 283 001 [A] FORF $[B].00 FOR [C] MO SCM TOTAL $[D].00 ED [E] | (Reserve and
+```
+Headquarters Marine Corps components only) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action; never 00000000)
+- [B] FORF AMT (Forfeiture Amount, no decimal place)
+- [C] MONTHS (Number of months, no decimal place)
+- [D] TOTAL AMT (Total Amount, no decimal place)
+- [E] ED (Effective Date; never 00000000)
+```
+TTC 283 002 [A] FORF $[B].00 FOR [C] MO GCM TOTAL $[D].00 ED [E] | (Reserve and
+```
+Headquarters Marine Corps components only) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action; never 00000000)
+- [B] FORF AMT (Forfeiture Amount, no decimal place)
+- [C] MONTHS (Number of months, no decimal place)
+- [D] TOTAL AMT (Total Amount, no decimal place)
+- [E] ED (Effective Date; never 00000000)
+```
+TTC 283 003 [A] FORF $[B].00 FOR [C] MO NJP TOTAL $[D].00 ED [E] | (Active,
+```
+Reserve, and Headquarters Marine Corps components) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action; never 00000000)
+- [B] FORF AMT (Forfeiture Amount, no decimal place)
+- [C] MONTHS (Number of months, no decimal place)
+- [D] TOTAL AMT (Total Amount, no decimal place)
+- [E] ED (Effective Date; never 00000000)
+(1) When a forfeiture related to a summary court-martial is apportioned over more than 1 month and the amount of the forfeiture is evenly divisible by the number of months, report the statement shown above.
+
+(2) When a forfeiture related to a summary court-martial is apportioned over more than 1 month and the amount of the forfeiture is not evenly divisible by the number of months, the statement shown above will be reported. However, the amount of the monthly forfeiture will be determined by dividing the total amount of the forfeiture by the number of months and rounding that monthly figure to the next higher whole dollar. For example, a total forfeiture of a $50.00 apportioned over a period of 3 months would be reported as follows: FORF 00017.00 FOR 03 MO SCM TOTAL 00050.00 ED
+
+### Section 19981101
+
+In this case, $17.00 would be deducted the first and second months and $16.00 the third month. In all cases where apportioned summary court-martial forfeitures are not evenly divisible, the larger amount(s) will be deducted in the first or earlier months, as appropriate.
+
+b.  Reporting total forfeiture of pay and allowances is restricted for use by Headquarters Marine Corps (RUC 548XX). Report as follows:
+
+```
+TTC 284 000 [A] FORF TLPALW ED [B] | (Reserve and Headquarters Marine Corps
+```
+components only) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] ED (Effective Date, never 00000000)
+c.  Reporting a total forfeiture of basic pay only is restricted for use by Headquarters Marine Corps (RUC 548XX). Report as follows. Ensure TTC 310 TO CNFT has been reported and a duty status B, E, F, G, or H has posted prior to reporting this entry. transactions 284 and 310 cannot be processed in the same cycle.
+
+```
+TTC 284 001 [A] FORF BP ED [B] | (Reserve and Headquarters Marine Corps
+```
+components only) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] ED (Effective Date, never 00000000)
+d.  Use the appropriate statement to report mitigation (decrease) or remission of forfeiture of pay by reviewing authority. When reporting these statements, the computer will automatically re-compute the total amount to be forfeited by the Marine. If more than this amount already has been deducted from the Marine's pay, the account will be credited with the appropriate amount.
+
+```
+TTC 318 000 [A] FORF RED TO $[B].00 FOR [C] MO GCM TOTAL $[D].00 ED [E] |
+```
+(Reserve and Headquarters Marine Corps components only) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] DOLLAR AMT (Dollar Amount, no decimal place)
+- [C] NO MONTHS (Number of months, no decimal place)
+- [D] DOLLAR AMT (Dollar Amount, no decimal place)
+- [E] ED (Effective Date, never 00000000)
+```
+TTC 318 001 [A] FORF RED TO $[B].00 FOR [C] MO NJP TOTAL $[D].00 ED [E] |
+```
+(Active, Reserve, and Headquarters Marine Corps components) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] DOLLAR AMT (Dollar Amount, no decimal place)
+- [C] NO MONTHS (Number of months, no decimal place)
+- [D] DOLLAR AMT (Dollar Amount, no decimal place)
+- [E] ED (Effective Date, never 00000000)
+```
+TTC 318 002 [A] FORF RED TO $[B].00 FOR [C] MO SCM TOTAL $[D].00 ED [E] |
+```
+(Reserve and Headquarters Marine Corps components only) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] DOLLAR AMT (Dollar Amount, no decimal place)
+- [C] NO MONTHS (Number of months, no decimal place)
+- [D] DOLLAR AMT (Dollar Amount, no decimal place)
+- [E] ED (Effective Date, never 00000000)
+```
+TTC 318 003 [A] FORF RED TO $[B].00 FOR [C] MO SPCM TOTAL $[D].00 ED [E] |
+```
+(Reserve and Headquarters Marine Corps components only) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] DOLLAR AMT (Dollar Amount, no decimal place)
+- [C] NO MONTHS (Number of months, no decimal place)
+- [D] DOLLAR AMT (Dollar Amount, no decimal place)
+- [E] ED (Effective Date, never 00000000)
+e.  Use the appropriate statement to report mitigation (decrease) or remission of forfeiture of pay to NONE by a reviewing authority:
+
+```
+TTC 315 000 [A] FORF RED TO NONE GCM ED [B] | (Reserve and Headquarters Marine
+```
+Corps components only) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] ED (Effective Date, never 00000000)
+```
+TTC 315 001 [A] FORF RED TO NONE NJP ED [B] | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] ED (Effective Date, never 00000000)
+```
+TTC 315 002 [A] FORF RED TO NONE SCM ED [B] | (Reserve and Headquarters Marine
+```
+Corps components only) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] ED (Effective Date, never 00000000)
+```
+TTC 315 003 [A] FORF RED TO NONE SPCM ED [B] | (Reserve and Headquarters Marine
+```
+Corps components only) (Delete/Erroneous capability only)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] ED (Effective Date, never 00000000)
+f.  If the forfeiture is suspended, it may be reported with a historical statement only. If it is partially suspended, report the unsuspended portion with the normal statement shown in Paragraph 70502 and the suspended portion may be reported with a historical statement with the Freeform Text as the Non-Judicial Punishment date, amount of monthly forfeiture, number of months, amount suspended, and number of months suspended for.
+
+TTC HIS 000 [A] HIST:[B] | (Active, Reserve, and Headquarters Marine Corps components) (No delete capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] FREEFORM (Freeform Text)
+g.  Use the following statement if a previously suspended forfeiture is vacated:
+
+```
+TTC 283 004 [A] VACATE FORF $[B].00 FOR [C] MO NJP TOTAL $[D].00 ED [E] |
+```
+(Active, Reserve, and Headquarters Marine Corps components) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] FORF AMT (Forfeiture Amount, no decimal place)
+- [C] MONTHS (Number of months, no decimal place)
+- [D] TOTAL AMT (Total Amount, no decimal place)
+- [E] ED (Effective Date, never 00000000) Note 1
+- **Note 1: Effective Date is the date the forfeiture was vacated.**
+h.  A sentence of court-martial may adjudge a fine in addition to adjudging other punishment. Fines will be collected involuntarily from the current pay of all members of the Marine Corps. Fines cannot be reported unless a 990 Remark has been created (TTC 257) and the Convening Authority's Action has been ordered executed (TTC 262), both criteria's must be met. Per DOD 7000.14-R Financial Management Regulation, Volume 7A, collection of fines will begin on the date the Convening Authority orders execution of the sentence.
+
+(1) Use the appropriate statement from below to report a fine when collection is to be a lump sum. Report the Effective Date of checkage equal to the court-martial date (not the Convening Authority's Date of Action).
+
+```
+TTC 275 006 [A] FINE $[B].00 GCM ED [C] | (Active, Reserve, and Headquarters
+```
+Marine Corps components) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] FINE AMT (Fine Amount, no decimal place)
+- [C] ED (Effective Date, never 00000000)
+```
+TTC 275 007 [A] FINE $[B].00 SCM ED [C] | (Active, Reserve, and Headquarters
+```
+Marine Corps components) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] FINE AMT (Fine Amount, no decimal place)
+- [C] ED (Effective Date, never 00000000)
+```
+TTC 275 008 [A] FINE $[B].00 SPCM ED [C] | (Active, Reserve, and Headquarters
+```
+Marine Corps components) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] FINE AMT (Fine Amount, no decimal place)
+- [C] ED (Effective Date, never 00000000)
+(2) Use the appropriate statement from below to report a fine when collection is to be liquidated by monthly installments.
+
+i.  For Active Duty Marines and Reserve Marines on Active Duty, report one of the following statements as appropriate:
+
+```
+TTC 278 000 [A] FINE $[B].00 FOR [C] MO GCM $[D].00 INIT TOTAL $[E].00 ED [F] |
+```
+(Reserve and Headquarters Marine Corps components only) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] RATE AMT (Rate Amount, no decimal place)
+- [C] NO MONTHS (Number of months)
+- [D] INIT AMT (Initial Amount, no decimal place)
+- [E] TOTAL AMT (Total Amount, no decimal place)
+- [F] ED (Effective Date, never 00000000)
+```
+TTC 278 001 [A] FINE $[B].00 FOR [C] MO SCM $[D].00 INIT TOTAL $[E].00 ED [F] |
+```
+(Reserve and Headquarters Marine Corps components only) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] RATE AMT (Rate Amount, no decimal place)
+- [C] NO MONTHS (Number of months)
+- [D] INIT AMT (Initial Amount, no decimal place)
+- [E] TOTAL AMT (Total Amount, no decimal place)
+- [F] ED (Effective Date, never 00000000)
+```
+TTC 278 002 [A] FINE $[B].00 FOR [C] MO SPCM $[D].00 INIT TOTAL $[E].00 ED [F]
+```
+| (Reserve and Headquarters Marine Corps components only) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] RATE AMT (Rate Amount, no decimal place)
+- [C] NO MONTHS (Number of Months)
+- [D] INIT AMT (Initial Amount, no decimal place)
+- [E] TOTAL AMT (Total Amount, no decimal place)
+- [F] ED (Effective Date, never 00000000)
+j.  Reserve Marines are not considered to have a monthly rate of pay to which a monthly deduction can be applied. Therefore, the Commanding Officer must determine the amount (daily installment) to be collected by pay deduction based on anticipated daily earnings received for IDT and for periods of Active Duty (30 days or less). For Reserve Marines report one of the following statements as appropriate:
+
+```
+TTC 278 003 [A] FINE $[B].00 GCM $[C].00 INIT TOTAL $[D].00 ED [E] | (Reserve and
+```
+Headquarters Marine Corps components only) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] RATE AMT (Rate Amount, no decimal place)
+- [C] INIT AMT (Initial Amount, no decimal place)
+- [D] TOTAL AMT (Total Amount, no decimal place)
+- [E] ED (Effective Date, never 00000000)
+```
+TTC 278 004 [A] FINE $[B].00 SCM $[C].00 INIT TOTAL $[D].00 ED [E] | (Reserve
+```
+and Headquarters Marine Corps components only) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] RATE AMT (Rate Amount, no decimal place)
+- [C] INIT AMT (Initial Amount, no decimal place)
+- [D] TOTAL AMT (Total Amount, no decimal place)
+- [E] ED (Effective Date, never 00000000)
+```
+TTC 278 005 [A] FINE $[B].00 SPCM $[C].00 INIT TOTAL $[D].00 ED [E] | (Reserve
+```
+and Headquarters Marine Corps components only) (Delete/Add and Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] RATE AMT (Rate Amount, no decimal place)
+- [C] INIT AMT (Initial Amount, no decimal place)
+- [D] TOTAL AMT (Total Amount, no decimal place)
+- [E] ED (Effective Date, never 00000000)
+Note: Because the transaction will allow the reporting of an initial installment (prepaid amount not collected via MCTFS), it is important to ensure that the initial installment field is reported as zeros if no monies are collected upfront. If a value is reported in this field by mistake and a remark is built, a DEL AS ERR/DEL ADD transaction will cause the system to credit back money that was never collected.
+
+### Section 2
+
+Report any subsequent events/actions affecting a previously reported sentence by submitting results of the action, date, and authority effecting the change.
+
+a.  To report remission and/or suspension of a sentence or a portion of a sentence. Report the Freeform Text as UNEXECD PORTION OF SENT IS (REMITTED or SUSPENDED) AUTH: (Authority)
+
+TTC HIS 000 [A] HIST:[B] | (Active, Reserve, and Headquarters Marine Corps components) (No delete capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] FREEFORM (Freeform Text)
+b.  The vacation of suspension has the same effect as a sentence being ordered executed.  Therefore, upon vacation of a suspended sentence, the portion that affects pay and allowances and/or causes a change to the information maintained in the Marine's Central Master File shall be reported with action statements.  The remaining portion may be reported with a history statement.  Report as follows.  Report the Freeform Text as VACATE SUSPENSION OF EXECN OF SENT (Portion of sentence that affects pay and allowances and/or MCTFS record Report portion of sentence that does not affect pay and allowances and/or Central Master File).
+
+TTC HIS 000 [A] HIST:[B] | (Active, Reserve, and Headquarters Marine Corps components) (No delete capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] FREEFORM (Freeform Text)
+c.  Use the following statement to report setting aside of findings of a court-martial. Report the Freeform Text as FINDINGS OF (Type of court-martial, either summary, special, or general court-martial) APPR (Effective Date (YYYYMMDD) approved) SET ASIDE (Authority that sets aside the findings).
+
+TTC HIS 000 [A] HIST:[B] | (Active, Reserve, and Headquarters Marine Corps components) (No delete capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] FREEFORM (Freeform Text)
+### Section 3
+
+Computer records for Marines in a parole status will be transferred to a Headquarters control RUC/MCC (54982/W93) either by transfer entry or, by reporting a drop/discharge entry if the Marine has been awarded a bad conduct discharge or dishonorable discharge. The discharge entry will contain SDN JJB3 when reported from a field reporting unit (When the discharge is reported by the Commandant of the Marine Corps (MHC), the SDN to report will be JJC3) This will change the record status code in the Central Master File to 'F'. Once the Marine has been released from parole and there is no longer a requirement to monitor the Central Master File from the Commandant of the Marine Corps, the record will be updated by the Commandant of the Marine Corps (MHC), to change the record status code to 'E' to reflect a separated record.  Records transferred to the Commandant of the Marine Corps control RUC or discharged with SDN JJB3 must be in a status of confinement as a result of general court-martial in order for transfer or discharge entry to successfully process.  Use the following logic to determine reporting requirements in MCTFS.  Refer to PRIUM Table 7-5 for assistance in determining which action must be taken.
+
+4. Maintaining court-martial Information. In addition to reporting the sentence of a Marine convicted by a court-martial, the unit also must report court-martial statistical information. The Effective Date is the date the court-martial is adjudged. After processing, this information will be posted to the Marine's Central Master File where it will be permanently retained in MCTFS.
+
+a.  Use the following statement to report summary court-martial information:
+
+```
+TTC 268 001 [A] SCM AWD ED [B] | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (Delete/Erroneous capability)
+
+- [A] DOA
+(Date of Action, never 00000000)
+
+- [B] ED (Effective Date, never
+00000000)
+
+b.  Use the following statement to report special court-martial information:
+
+```
+TTC 268 002 [A] SPCM AWD ED [B] | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (Delete/Erroneous capability)
+
+- [A] DOA
+(Date of Action, never 00000000)
+
+- [B] ED (Effective Date, never
+00000000)
+
+c.  Use the following statement to report general court-martial information:
+
+```
+TTC 268 003 [A] GENERAL COURT MARTIAL AWD ED [B] | (Active,
+```
+Reserve, and Headquarters Marine Corps components) (Delete/Erroneous capability)
+
+- [A] DOA
+(Date of Action, never 00000000)
+
+- [B] ED (Effective Date, never
+00000000)
+
+- **Note 1: When review of higher authority results in setting aside**
+the findings on all charges and specifications, report DEL AS ERRON, and refer to MCO P1070.12_ Marine Corps Individual Records Administration Manual (IRAM) for instructions on removal of court-martial documentation from the Service Record.
+
+- **Note 2: Forfeitures are applied (withheld) on and**
+after the date the convening authority approves the sentence. Refer to Paragraph 70501 for forfeiture information/reporting.
+
+TTTC 268 000 [A] NJP AWD VESSEL OPT [B] LAWYER OPT [C] ED [D] | (Active, Reserve, and Headquarters Marine Corps components) (Delete/Erroneous capability)
+
+- [A] DOA
+(Date of Action, never 00000000)
+
+- [B] VESSEL OPT
+- [C] LAWYER
+OPT
+
+- [D] ED (Effective Date, never 00000000)
+**VESSEL OPTION CODES**
+
+A – I do not demand trial and will accept non-judicial punishment, subject to my right of appeal.
+
+B – I demand trial and refuse non-judicial punishment.
+
+C – I cannot demand trial because I am attached to or embarked upon a vessel.
+
+**LAWYER OPTION CODES**
+
+A – I “have” been given the opportunity to consult with a Military Lawyer.
+
+B – I “have not” been given the opportunity to consult with a Military Lawyer
+
+```
+TTC 268 001 [A] SCM AWD ED [B] | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (Delete/Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] ED (Effective Date, never 00000000)
+```
+TTC 268 002 [A] SPCM AWD ED [B] | (Active, Reserve, and
+```
+Headquarters Marine Corps components) (Delete/Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] ED (Effective Date, never 00000000)
+```
+TTC 268 003 [A] GENERAL COURT MARTIAL AWD ED [B] | (Active,
+```
+Reserve, and Headquarters Marine Corps components) (Delete/Erroneous capability)
+
+- [A] DOA (Date of Action, never 00000000)
+- [B] ED (Effective Date, never 00000000)

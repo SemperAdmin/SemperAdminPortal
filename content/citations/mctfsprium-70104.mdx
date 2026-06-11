@@ -1,0 +1,56 @@
+---
+id: "mctfsprium-70104"
+aliases:
+  - "MCTFSPRIUM 7-70104"
+title: "MCTFSPRIUM 7-70104 - To Separations Absence (TTC 115 030) 1. Reported when Separations absence has bee"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 7-70104"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 70104, Chapter 7 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 70104_To_Separations_Absence_TTC_115_030_1_Reported_When_Separations_Absence_Has_Bee.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+*Converted: 2026-06-01* *Method: Method 3 (last resort)*
+
+ **To Separations Absence** **(TTC 115 030)**
+
+### Section 1
+
+Reported when Separations absence has been granted by the Commanding Officer per MCO 1050.3J Regulations for Leave, Liberty, and Administrative Absence. The day of detachment is always considered a chargeable day of absence regardless of time of departure (not a day of duty).  Report the following:
+
+```
+TTC 115 030 TO SEPARATIONS ABSENCE [A] [B] [C] [D] [E] [F] [G]
+- [A] DOA (Date of Action)
+- [B] FROM TIME (From Time)
+- [C] FROM DATE (From Date)
+- [D] EASCP DAYS (Separation Date)
+- [E] PTAD DAYS
+- [F] PDMRA DAYS
+- [G] LWAS DAYS
+```
+### Section 2
+
+The order of precedence for this transaction will be End of Active Service Community Relations Program (EASCP), Permissive Temporary Additional Duty (PTAD), Post Deployment Mobilization Respite Absence (PDMRA), and Leave While Awaiting Separation (LWAS).
+
+- **Note 1:  Absence accounting will begin with the**
+detachment date through the Expiration of Current Contract (ECC) in order of precedence.  Great care must be taken to accurately identify a Marine’s leave balance and/or their possible entitlement to PTAD EAS COMREL, PTAD SEPS, PDMRA SEPS and/or LWAS before determining the detachment date.  Failure to do so may put the Marine into an excess leave status, thereby stopping all pay and allowances.
+
+- **Note 2:  When reporting TTC 115 030 on a member with a**
+Discounted Meal Rate deduction, the system will automatically terminate the Discounted Meal Rate deduction.  Therefore, TTC 475 001 STOP DMR DOES NOT need to be reported.
+
+- **Note 3:  A member who resides in single type**
+government quarters and vacates such quarters while on Separations Absence is entitled to Basic Allowance for Housing-Without Dependents Rate at the location of the Permanent Duty Station while not occupying such quarters. System logic will automatically stop the Basic Allowance for Housing-Partial Rate and start Basic Allowance for Housing-Without Dependents Rate based on the Permanent Duty Station location (ZIP Code that corresponds to the RUC and MCC) to the end of enlistment. The Basic Allowance for Housing Rate will never be based on the location of the member while on Leave While Awaiting Separation. Basic Allowance for Housing must not start prior to the members scheduled departure date per separation orders. Reference: Joint Travel Regulations.
+
+- **Note 4: When reporting a member TO SEPARATIONS ABSENCE, a**
+member's Family Separation Allowance and Special Duty Assignment/Proficiency Pay will be stopped once they have been placed in a Duty Status code of '5' (Awaiting Separation).
+
+### Section 3
+
+When a DEL AS ERR TTC 115 030 is reported, any 611 remarks built by the original TTC 115 030 will be adjusted from the record. The new delete logic will look for linking leave periods with Leave Type Codes, 425 (Separations PTAD), 427 (Separations PDMRA) and 125 (LWAS) from the ECC backward to the reported Departure Date or Departure Date plus 1. Keeping in mind there could be Leave Type 190 (Excess Leave) linking to the ECC when a record is in an excess leave status. If at any point when DEL AS ERR TTC 115 030 is reported and there is no longer a linking absence period on the 611 remark, using Leave Types 424 PTAD EAS COMREL, 425 PTAD SEPS, 427 PDMRA SEPS and/or 125 LWAS, between Departure date or departure date plus 1 and the ECC, the transaction will fail.

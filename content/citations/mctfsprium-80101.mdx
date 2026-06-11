@@ -1,0 +1,160 @@
+---
+id: "mctfsprium-80101"
+aliases:
+  - "MCTFSPRIUM 8-80101"
+title: "MCTFSPRIUM 8-80101 - Continental United States Cost-of-Living Allowance (TTC 276/277)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 8-80101"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 80101, Chapter 8 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 80101_Continental_United_States_Cost-of-living_Allowance_TTC_276277.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 80101
+
+Continental United States Cost-of-Living Allowance (TTC 276/277)
+
+### Section 1
+
+The Continental United States Cost-of-Living Allowance (CONUS COLA) has been authorized for the purpose of assisting Marines in defraying non-housing costs in high cost areas in CONUS. These include costs of transportation, goods and services such as food, clothing, medical and personal care, and recreation. CONUS COLA rates are established for ZIP Codes throughout the CONUS. The CONUS COLA rate that applies to the Marine is normally based on the ZIP Code of the permanent duty station (PDS). Entitlement to CONUS COLA at the rate prescribed for a particular PDS begins the day the member reports to a PDS where there is a CONUS COLA rate prescribed. CONUS COLA is a monthly entitlement based on a 30 day month and is subject to federal and state tax withholding, but not FICA deductions. The Joint Travel Regulations establishes circumstances and rates of CONUS COLA entitlement. All members assigned to an area entitled to CONUS COLA are entitled to the CONUS COLA regardless of whether or not they are in receipt of BAS. You must have detailed knowledge of the references to determine and properly report individual entitlements to CONUS COLA.
+
+### Section 2
+
+A NAVMC 11106 (Application for Cost-of-Living Allowance) is required when CONUS COLA is requested and approved, if applicable, for dependent(s) whose location is other than the member's PDS. No application is required for the member to receive CONUS COLA at the PDS location ZIP Code.
+
+### Section 3
+
+When the CONUS COLA entitlement is based on the member's PDS, the CONUS COLA is started automatically by MCTFS when TTC 020 022 (JOIN) is reported with the exception of those reporting units listed in Paragraph 7 below. However, a Marine is required to submit an application when the CONUS COLA is for payment at a location other than the PDS for the member and/or dependents. Refer to the Joint Travel Regulations for situations when a member could be entitled to CONUS COLA for a location other than the PDS when the PDS is in CONUS. All applications in these situations will be submitted to the Commandant of the Marine Corps (MM) for secretarial determination. Secretarial determinations for CONUS COLA and BAH should be requested at the same time.
+
+a.  When a CONUS COLA entitlement exists at a location other than the member's PDS, complete the NAVMC 11106 (original and one copy) as follows:
+
+(1) Complete part A
+
+(a) Check 'For Members Only' if payable at the without dependent rate.
+
+(b) Check 'For Member and Dependents' if payable at the with dependent rate.
+
+(c) Check 'For Member's Dependents Only' if payable at the with dependent rate and the member's PDS is outside CONUS.
+
+(2) Complete part B (self-explanatory).
+
+(3) Part C - Complete the appropriate information for the primary dependent for which the CONUS COLA rate applies. A signature and date of signature are required.
+
+(4) Part D - Completion of this part is not required.
+
+(5) Remarks Section - Indicate the application is for CONUS COLA by entering 'CONUS COLA'. Additionally, enter the ZIP Code of the primary dependent for whom the CONUS COLA rate applies.
+
+(6) If a secretarial determination was obtained under the provisions of the Joint Travel Regulations, file it in the member's SERVICE RECORD and it must be retained until the member reports to a new PDS.
+
+b.  After reviewing the information on the CONUS COLA application and/or Secretarial determination, as applicable, the Unit Commanding Officer or designated representative will approve the application by completing part F.
+
+c. After approval, the Unit Commanding Officer will:
+
+(1) File the original approved application in the Marine's SERVICE RECORD. Only the most current form will be retained.
+
+(2) Return the duplicate copy to the Marine.
+
+### Section 4
+
+MCTFS will automatically start and stop CONUS COLA entitlement based on the reporting of a member's new PDS (TTC 020 022, JOIN), within CONUS. However, the commanding officer must report:
+
+a.  Starts, for members in the reporting units listed in Paragraph 7 below, are based on location of the member's actual PDS, not the location to which administratively joined.
+
+b.  To start CONUS COLA for members who are required to submit an application:
+
+```
+TTC 276 000 [A] CHAN CONUS COLA [B] ([C]) ED [D] |
+- [A] Date of Action
+- [B] 5-byte numeric ZIP Code
+- [C] 1-byte alpha dependent Code (W for with dependents or O (alpha) for without dependents)
+- [D] 8-byte Effective Date (YYYYMMDD)
+```
+Note: for the purpose of COLA, a 'Primary dependent' is defined by the Joint Travel Regulations. The following dependent codes are not eligible for code 'W' if they are the sole or primary dependent:
+
+FF, FL, FM, F0, G0, LF, LG, LM, ML, M0, SF, SM, A0, B0, GD, GF, GM, GS, S0, U0, OT, SB, OR and ST.
+
+c.  Use the following statement to report STOP CONUS COLA:
+
+```
+TTC 277 000 STOP CONUS COLA ([A]) EFF [B] |
+- [A] 1-byte alpha dependent Code (W for with dependents or O (alpha) for without dependents)
+- [B] 8-byte Effective Date (YYYYMMDD)
+```
+### Section 5
+
+The Unit Commanding Officer, or FO, using DEL/ERR, Miscellaneous Credit (TTC 694), or Checkage (TTC 693) entries as required will make corrections.
+
+### Section 6
+
+CONUS COLA will continue during the transient period between PDS's when the Marine is executing PCS orders. The FO at the new PDS is required to deduct CONUS COLA for the number of travel days allowed for direct travel between PDS's in the same manner as is currently required of BAH entitlements. CONUS COLA will be computed and deducted as required by the Joint Travel Regulations.
+
+### Section 7
+
+If a location of PDS is different from that of the reporting unit, ensure that the ZIP Code reported matches the location to which the Marine was ordered. The following units are comprised of personnel whose PDS's are located at a place other than the RU: 02403, 54003, 54008, 54026, 54042, 54800 through 54848, 54861, 54863, 80001, 81001, 83001, 84001, 85001, and 87001. This listing of reporting units is not all-inclusive, as many other reporting units in the Marine Corps may have personnel administratively joined. Marines participating in the Excess Leave Program (LAW) ELP (L) do not come under this exception.
+
+### Section 8
+
+When both spouses are members, each is entitled to a CONUS COLA. This service spouse entitlement exists whether the spouses maintain a joint residence or separate residences. In no case will a spouse who is also a member on Active Duty be considered as a dependent for entitlement purposes. When a member-married-to-member couple maintains a joint residence and dependents are involved, CONUS COLA will be paid, one spouse at the with dependent rate, and the other spouse at the without dependent rate.
+
+### Section 9
+
+A member with dependents, who is authorized BAH at the 'With dependent' rate (grandfathered members who were assigned government quarters and receiving BAH at the 'With dependent' rate based solely on the payment of child support on December 4, 1991) or BAH-DIFF (BAH Difference) solely because the member is paying child support, is entitled to CONUS COLA at the 'Without dependent' rate. This includes members in receipt of BAH DIFF for child support purposes, who have no other dependents, are not entitled to CONUS COLA for themselves, if entitled at their PDS location. A member who comes under these provisions, whose PDS is outside of CONUS, is not entitled to CONUS COLA.
+
+### Section 10
+
+Newly Inducted, Enlisted or Reenlisted Members, Officers, or Officer Candidates Are Entitled to CONUS COLA At The Rate Prescribed:
+
+a.  For members without dependents, the rate will change on the day the member arrives at each newly assigned duty location until the member arrives at the designated initial PDS; or
+
+b.  For members with dependents, the rate will be based on the location of the primary dependent until the day before the day the member arrives at the member's initial PDS. Members with dependent(s) must submit an application for CONUS COLA to be paid for the location of the primary dependent upon reporting for Active Duty.
+
+### Section 11
+
+Entitlement to CONUS COLA for A Reservist Assigned to Active Duty Is Dependent Upon The Length of Active Duty Being Performed. When A Reservist Is Entitled to CONUS Cola, The Fo As Required by The Joint Travel Regulations and MCO P7220.31 Must Make A Deduction for Pcs Travel Time. The Following Guidelines Are Provided for Further Clarification:
+
+a.  Reservists ordered to Active Duty for periods of less than 20 weeks are not entitled to CONUS COLA.
+
+b.  When the Reservist is called or ordered to Active Duty for a period of 20 weeks or more, CONUS COLA entitlement is based on the location from which ordered to Active Duty, with an Effective Date of the date assigned to Active Duty. The rate then changes to the rate in effect at the Active Duty location with an Effective Date of the date of reporting to that location.
+
+c.  When the Marine Reservist is initially called or ordered to Active Duty for a period of 20 weeks or more, at any one location, and orders are subsequently modified resulting in the performance of a period of Active Duty of less than 20 weeks, entitlement to CONUS COLA that commenced under Paragraph 11.b above, will continue through the date of release from Active Duty.
+
+d.  If orders are modified during the Active Duty period and the period of additional Active Duty when coupled with the time remaining to be served for the original Active Duty period is 20 weeks or more, then entitlement to CONUS COLA exists at the location where Active Duty is being performed with an Effective Date of the date of the modification of orders.
+
+Example: A Marine Reservist is called or ordered to Active Duty for a period of 16 weeks. At the end of the 4th week, the orders are modified to extend the Active Duty by 10 weeks. The time remaining for the original period (12 weeks) when coupled with the additional period (10 weeks) exceeds 20 weeks; therefore, the CONUS COLA entitlement would commence at the geographic location where the Active Duty is being performed with an Effective Date of the date of modification. If, however, under like circumstances, the orders were modified at the end of the 10th week for an additional 10 weeks of Active Duty, the CONUS COLA entitlement would not exist because the time remaining for the original period (6 weeks) when coupled with the additional period (10 weeks) is less than 20 weeks.
+
+e.  A Marine Reservist called or ordered to Active Duty in support of a contingency operation will be entitled to CONUS COLA at the rate prescribed for the location of his or her principal place of residence at the time called or ordered to Active Duty.
+
+### Section 12
+
+For CONUS Cola, MCTFS System Will:
+
+a.  Compute the CONUS COLA rate based on the following data elements: Pay Grade, Years of Service, With or Without Dependent(s), and ZIP Code of the member's PDS.
+
+b.  Automatically terminate CONUS COLA for a Marine reported to confinement or a non-pay status on the day prior to the Effective Date of the confinement or non-pay status.
+
+c.  Retain the current plus 4 prior CONUS COLA rates and Effective Dates.
+
+d.  Terminate CONUS COLA entitlement at the old PDS on the day prior to the date of reporting.
+
+e.  Not terminate CONUS COLA entitlement when a transfer for record purposes occurs between MCCs.
+
+f.  Generate Advisory and Error messages pertaining to CONUS COLA to the reporting unit's DFR.
+
+### Section 13
+
+Reporting of TTC 020 022 (Join) will allow the CONUS COLA at the with dependent entitlement rate to continue when a member is joined to a new PDS outside of CONUS.
+
+### Section 14
+
+The Start CONUS COLA at the with dependents rate entry will fail when a member is in receipt of BAH-Diff for child support purposes and has no other dependents.
+
+### Section 15
+
+BAH and CONUS COLA Allowances are both based on Geo-graphic Duty Location, Pay Grade and Dependency Status. Chan BAH (TTC 388) transactions also update the CONUS COLA 934 Remark and therefore, no CONUS COLA transactions are required when reporting BAH changes. Reporting of CONUS COLA is not necessary unless the member's ZIP Code is other than the PDS.

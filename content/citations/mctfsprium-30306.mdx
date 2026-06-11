@@ -1,0 +1,111 @@
+---
+id: "mctfsprium-30306"
+aliases:
+  - "MCTFSPRIUM 3-30306"
+  - "MCTFSPRIUM 3-30306 3-30307"
+title: "MCTFSPRIUM 3-30306 - EXPIRATION OF ACTIVE SERVICE (EAS) (TTC 077/081)"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 3-30306"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 30306, Chapter 3 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 30306_EXPIRATION_OF_ACTIVE_SERVICE_EAS_TTC_077081.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+### Section 1
+
+The EAS date is the date active service terminates.  An expired EAS date is never valid for Marines in a full duty pay status, except as shown below, and must be immediately updated.
+
+### Section 2
+
+EAS - Voluntary
+
+a.  For Regular enlisted personnel, the EAS date is the date of expiration of current enlistment, voluntary extension of enlistment, Convenience of the Government-Legal Hold, or Convenience of the Government-Medical Hold for Marines voluntarily retained on Active Duty.  Regular officers have no EAS date.  An EAS date of Convenience of the Government-Legal Hold will be reported for Marines voluntarily retained beyond their EAS Date due to legal proceedings.  It does not apply to Marines awaiting trial by court-martial when their EAS date expires.  In those instances, report an EAS date, Convenience of the Government-Involuntary Retention (involuntary retention).
+
+b.  Only the CMC (548XX) can report an EAS date Convenience of the Government on members who have requested retirement or resignation.
+
+c.  For Reserve officers and enlisted, the EAS date is the date of expiration of the AD tour.
+
+d.  For inductees, the EAS Date is the expiration of period of AD service.
+
+e.  For retired personnel on AD, the EAS Date is the expiration of AD.
+
+### Section 3
+
+EAS - Involuntary for AD Marines.  For personnel involuntarily extended/retained on AD, if the involuntary extension is in the event of war or a declared national emergency a message from the Commandant of the Marine Corps will direct the reporting of Involuntary Extension.
+
+### Section 4
+
+EAS - Involuntary for mobilized Marines.  For mobilized Reservists, upon receipt of approval authority for an extension of original activation orders, units must report EAS date (TTC 077 000) and ECC (TTC 122 000).  Note: Before reporting TTC 077 000 or 122 000, units should ensure that the period of active duty exists in the Marine Resource Order Writing Service (MROWS), and that all data elements in the matching MCTFS 861-RMK are correct.
+
+### Section 5
+
+The EAS/ECC for Reserve officers on AD is controlled and reported at the HQMC level, with one exception:  Reserve officers who are on AD for Operational Support (ADOS) (formally, Active Duty Special Work (ADSW).  Refer to Paragraph 30309 for reporting.  EAS's normally fall on the 1st or 15th of the month.  All other reporting of the EAS/ECC for AR officers will be completed by the CMC (RAM).
+
+a.  The EAS/ECC being reported cannot be greater than the end of the current fiscal year.
+
+b.  The CMC (548XX) will report the EAS/ECC for those Marines assigned component code 11 when they initially report for AD to attend TBS.  If a component code 11 Marine requires the reestablishment, change, or correction of an EAS/ECC, the new EAS/ECC will be reported by the CMC (548XX).
+
+### Section 6
+
+PRIUM Table 3-4, contains instructions for the establishment and change of the EAS Date.
+
+### Section 7
+
+Do not report an EAS date COFG when a Marine is in a non-pay status and is retained beyond EAS Date.  Example:  UA, IHCA, SICK-MISCONDUCT, confined serving sentence or awaiting trial by courts-martial.  If and when a Marine is returned to a full duty status, the EAS date will automatically be updated when a new ECC is reported.  If the Marine is being retained beyond EAS Date in a non-pay status and the duty status code resident in MCTFS is not compatible with the appropriate non-pay status, you must research and report the appropriate Duty Status, refer to Chapter 4, Section 5.  Report as follows:
+
+```
+
+```
+TTC 077 000 [A] EAS [B] |
+```
+``` (Active and Headquarters Marine Corps components only) (No delete capability)
+
+- [A] DOA (Date of Action, never 00000000)
+
+- [B] EAS (Expiration of Active Service, may equal 00000000)
+
+- **Note 1:  If a unit** reports TTC 077 on a member who has an unexecuted extension of enlistment within MCTFS, the transaction will fail and the unit will be required to research and report a cancellation of the extension (TTC 118), if applicable.
+
+- **Note 2:  Code must** equal I (involuntary), L (legal), M (medical).
+
+```
+
+```
+TTC 081
+```
+``` 000 [A] EAS COFG [B] | (RUC Type Flag 3 (Reserves) or 5 (HQMC), Delete/Add Flag 0)
+
+- [A] DOA (Date of Action) (8-bytes, Word Type A) - [B] COFG CODE (Convenience of the Government Code) (1-byte, Word Type 1) Note:  If a unit reports TTC 077 or 081 on a member who has an approved Planned-Reenl-Ext-Retire-Date (PRR-Date) within MCTFS, the transaction will fail and the unit will be required to contact Headquarters Marine Corps (MMSR) for guidance.
+
+### Section 8
+
+An EAS Date COFG cannot be changed to a subsequent EAS Date COFG.  If the Marine's status changes (for example from involuntary to medical), the following must be done:
+
+a.  Report an EAS date 60 days from today's date.
+
+b.  After the new EAS date processes, report a new Alpha EAS date.
+
+### Section 9
+
+DO NOT report an EAS date COFG earlier than 90 days prior to the current ECC.  An EAS date COFG may be reported on an AD officer with an ECC other than zeroes.  When this entry is reported, the officer's EAS date in MCTFS will be reflected as '9'S.
+
+### Section 10
+
+When Time Lost is reported, the new EAS will be automatically adjusted by MCTFS and there is no need to report.  The EAS date as adjusted for Time Lost will appear on the EDFR.  This constitutes authority for correction of service records.
+
+### Section 11
+
+When the Marine returns to a Full Duty status from a period of absence determined to be Time Lost and the EAS has expired, a new EAS will not be reported when the unit Commanding Officer returns the Marine to a Full Duty status.  The new EAS will be computer generated from the reported ECC date.
+
+a.  Armed Forces Active Duty Base Date (AFADBD) and Expiration of Obligated Service (EOS) must be updated.
+
+b.  Computer processing of the return to Full Duty statement will automatically delete a duty status of '9' and generate duty status '1'.
+
+c.  Time Lost will be adjusted.  DO NOT report the time lost in conjunction with a return to Full Duty statement.  This will result in a duplicate adjustment of the Pay Entry Base Date (PEBD) and Expiration of Active Service Date.

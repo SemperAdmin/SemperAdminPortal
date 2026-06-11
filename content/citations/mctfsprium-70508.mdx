@@ -1,0 +1,101 @@
+---
+id: "mctfsprium-70508"
+aliases:
+  - "MCTFSPRIUM 7-70508"
+title: "MCTFSPRIUM 7-70508 - COURTS-MARTIAL/NONJUDICIAL PUNISHMENT STATISTICAL DATA"
+type: "MCTFSPRIUM"
+number: "MCTFSPRIUM 7-70508"
+publisher: "Headquarters Marine Corps M&RA"
+lastVerified: "2026-06-01"
+roles: ["admin"]
+---
+
+Paragraph 70508, Chapter 7 of the [MCTFSPRIUM](/citations/mctfsprium).
+Reproduced from the 2026-06-01 manual snapshot (source file 70508_COURTS-MARTIALNONJUDICIAL_PUNISHMENT_STATISTICAL_DATA.md).
+The live manual sits behind MOL authentication. Verify against the current
+release before reporting a transaction.
+
+## Source text
+
+*Converted: 2026-06-01*
+
+**70508 – COURTS-MARTIAL/NONJUDICIAL PUNISHMENT STATISTICAL DATA (TTC 212) **
+
+1. Maintaining Courts-martial and Nonjudicial Punishment statistical data. In addition to reporting the sentence of a Marine convicted by a Courts-martial or when a Marine is awarded Nonjudicial Punishment under Article 15, UCMJ, the unit also must report Courts-martial/Nonjudicial Punishment statistical information. The Date of Action is the date the Courts-martial or Nonjudicial Punishment is adjudged. After processing, this information will be posted to the Marine's CM-NJP-STAT-212-REMARK where it will be retained in MCTFS.
+
+```
+TTC 212 000 [A] CM-NJP CD [B] CA-CO EDIPI [C] ART1 [D] ART2 [E]
+```
+ART3 [F] PUN1 [G] PUN2 [H] PUN3 [I] PUN4 [J]|
+
+- [A] DOA (Date of Action, never
+00000000)
+
+- [B] COURTS-MARTIAL/NJP CODE (‘C’
+or ‘N’)
+
+- [C] CA-CO
+EDIPI (See Note: 1)
+
+- [D] FIRST PUNITIVE ARTICLE (See
+Note: 2)
+
+- [E] SECOND
+PUNITIVE ARTICLE CODE (See Note: 2)
+
+- [F] THIRD PUNITIVE ARTICLE CODE
+(See Note: 2)
+
+- [G] FIRST
+PUNISHMENT CODE (See Notes: 3 and 4)
+
+- [H] SECOND PUNISHMENT (See Notes:
+3 and 4)
+
+- [I] THIRD
+PUNISHMENT CODE (See Notes: 3 and 4)
+
+- [J] FOURTH PUNISHMENT CODE (See
+Notes: 3 and 4)
+
+NOTE 1:  When reporting the Convening Authority or Commanding Officer EDIPI, do not leave blank nor report zeros.  The CA-CO EDIPI must be on the MCTFS MASTER FILE.
+
+NOTE 2:  When reporting the punitive articles refer to MCTFS Table 18 (PUNITIVE ARTICLES TABLE), a minimum of one article must be reported.  When reporting multiple articles, do not skip any prompts for example ART1 86, ART2 (blank), ART3 111.
+
+NOTE 3:  When reporting the permissible punishments refer to MCTFS Table 19 (PERMISSIBLE PUNISHMENT TABLE), a minimum of one punishment must be reported.  When reporting multiple punishments, do not skip any prompts for example PUN1 (blank), PUN2 (blank), PUN3 N01, PUN4 N07.
+
+NOTE 4: When reporting the punishment code, bytes 1-3 refer to MCTFS Table 19. Byte-1 of the punishment code indicates if the punishment is associated with a 'C' Courts-martial or 'N' Non Judicial Punishment. For byte 4, enter ‘Y’ (yes) if the member was punished or ‘N’ (no) to indicate the punishment was suspended. For example: ‘C04N’ = REDUCTION IN PAY GRADE WAS SUSPENDED (PUNISHMENT ON HOLD), ‘C04Y’ = REDUCTION IN PAY GRADE NOT SUSPENDED (PUNISHMENT STARTED/ENACTED).
+
+NOTE 5:  In order to facilitate the deletion of this sequence report Type Transaction Code 029.  DEL AS ERR/DEL ADD not capable.
+
+```
+TTC 212 001 [A] CM-NJP VICTIM SEQ [B] NUM [C] SEX [D] RACE [E]
+```
+ETHNICITY [F]|
+
+- [A] DOA (Date of Action, never
+00000000)
+
+- [B] SEQUENCE NUMBER (See Note:
+1)
+
+- [C] VICTIM NUMBER (See Note: 2)
+- [D] VICTIM
+SEX CODE (‘M’, ‘F’, or ‘U’)
+
+- [E] VICTIM RACE CODE (See Note:
+3)
+
+- [F] VICTIM
+ETHNICITY CODE (See Note: 4)
+
+NOTE 1:  Sequence number, cannot be blank or zeros and must match corresponding sequence on the member’s recently reported CM-NJP-STAT-212-RMK.
+
+NOTE 2:  Victim number, cannot be blank or zeros and must be ‘01’ through ‘10’.
+
+NOTE 3:  When reporting the victim race code, refer to MCTFS Table 71 Group 20 Item 80.  If the victim’s race is unknown, report ‘U’ for unknown.
+
+- **Note 4:  When reporting the victim ethnicity code, refer to**
+MCTFS Table 71 Group 20 Item 20.  If the victim’s ethnicity is unknown, report ‘U’ for unknown.
+
+NOTE 5:  This sequence has DEL ADD capability.
