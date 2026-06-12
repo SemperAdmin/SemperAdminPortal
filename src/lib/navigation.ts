@@ -161,3 +161,31 @@ export function navItemsForRole(role: Role | null): NavItem[] {
   if (!role) return NAV_ITEMS.filter((i) => i.roles.length === 4);
   return NAV_ITEMS.filter((i) => i.roles.includes(role));
 }
+
+
+/** External SharePoint home for unit templates. */
+const TEMPLATE_TOOLBOX_URL =
+  "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCMRA_mra_SemperAdmin/SitePages/TemplateToolBox.aspx";
+
+export interface ReferenceLink {
+  label: string;
+  href: string;
+  /** Opens in a new tab. */
+  external?: boolean;
+}
+
+/**
+ * Role-agnostic reference surfaces. Rendered by the topbar ReferenceMenu
+ * dropdown on every breakpoint. The sidebar trees carry role content only.
+ */
+export const REFERENCE_LINKS: ReferenceLink[] = [
+  { label: "Search", href: "/search" },
+  { label: "Citations Index", href: "/citations" },
+  { label: "Tools", href: "/tools" },
+  { label: "Videos", href: "/videos" },
+  { label: "Links", href: "/links" },
+  { label: "Reports", href: "/reports" },
+  { label: "Inspections", href: "/inspections" },
+  { label: "TemplateToolBox", href: TEMPLATE_TOOLBOX_URL, external: true },
+  { label: "About", href: "/about" },
+];

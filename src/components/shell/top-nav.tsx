@@ -1,11 +1,11 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
-import { Menu, Command as CommandIcon, HelpCircle } from "lucide-react";
+import { Menu, Command as CommandIcon } from "lucide-react";
 import { Logo } from "./logo";
 import { SearchBox } from "./search-box";
 import { RoleSwitcher } from "./role-switcher";
+import { ReferenceMenu } from "./reference-menu";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -19,7 +19,8 @@ export interface TopNavProps {
  * TopNav - v1.3.
  * 56px floating pill chrome. Backdrop blur. Scarlet underline accent.
  * Search dominant at right. Segmented role switcher after the logo on
- * desktop. Below lg the switcher lives at the top of the drawer instead.
+ * desktop, drawer-top below lg. Reference dropdown on every breakpoint,
+ * About included, replacing the old sidebar Reference section.
  */
 export function TopNav({ onOpenPalette, onOpenSideNav }: TopNavProps) {
   return (
@@ -53,6 +54,8 @@ export function TopNav({ onOpenPalette, onOpenSideNav }: TopNavProps) {
 
         <RoleSwitcher className="hidden lg:flex" />
 
+        <ReferenceMenu />
+
         <div className="ml-auto flex items-center gap-2">
           <div className="hidden sm:block">
             <SearchBox onOpenPalette={onOpenPalette} className="w-56 md:w-72 lg:w-96" />
@@ -67,17 +70,6 @@ export function TopNav({ onOpenPalette, onOpenSideNav }: TopNavProps) {
             className="hidden md:inline-flex"
           >
             <CommandIcon className="size-4" />
-          </Button>
-
-          <Button
-            variant="ghost"
-            size="icon"
-            asChild
-            className="hidden md:inline-flex"
-          >
-            <Link href="/about" aria-label="About this site" title="About this site">
-              <HelpCircle className="size-4" />
-            </Link>
           </Button>
 
           <ThemeToggle />

@@ -5,8 +5,8 @@ import roleNav from "@/generated/role-nav.json";
  * Role-aware navigation trees - v1.3.
  *
  * Single source of truth for the desktop sidebar TreeNav and the mobile drawer.
- * Each role surfaces its own topic tree. Reference items (search, citations,
- * tools, videos) appear under every role.
+ * Each role surfaces its own topic tree. Reference surfaces moved to the
+ * topbar ReferenceMenu, driven by REFERENCE_LINKS in src/lib/navigation.ts.
  *
  * Marine, Leader, and Admin trees are generated at content-sync time by
  * scripts/sync-content.mjs into src/generated/role-nav.json, driven by the
@@ -44,32 +44,6 @@ export function isBranch(item: TreeBranch | TreeLeaf): item is TreeBranch {
   return "children" in item && Array.isArray((item as TreeBranch).children);
 }
 
-const REFERENCE_SECTION: TreeSection = {
-  label: "Reference",
-  items: [
-    { label: "Search", href: "/search" },
-    { label: "Citations Index", href: "/citations" },
-    { label: "Tools", href: "/tools" },
-    { label: "Videos", href: "/videos" },
-    { label: "Links", href: "/links" },
-    { label: "Reports", href: "/reports" },
-    {
-      label: "Inspections",
-      href: "/inspections",
-      children: [
-        { label: "IGMC", href: "/inspections/igmc" },
-        { label: "MCAAT", href: "/inspections/mcaat" },
-      ],
-    },
-    {
-      label: "TemplateToolBox",
-      href: "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCMRA_mra_SemperAdmin/SitePages/TemplateToolBox.aspx",
-      external: true,
-    },
-    { label: "About", href: "/about" },
-  ],
-};
-
 // Generated browse items per role. Shape is enforced by the generator.
 const GENERATED_NAV = roleNav as Record<
   "marine" | "leader" | "admin",
@@ -77,7 +51,7 @@ const GENERATED_NAV = roleNav as Record<
 >;
 
 function browseTree(items: (TreeBranch | TreeLeaf)[]): TreeSection[] {
-  return [{ label: "Browse content", items }, REFERENCE_SECTION];
+  return [{ label: "Browse content", items }];
 }
 
 const MARINE_TREE: TreeSection[] = browseTree(GENERATED_NAV.marine);
@@ -203,7 +177,6 @@ const COMMANDER_TREE: TreeSection[] = [
       },
     ],
   },
-  REFERENCE_SECTION,
 ];
 
 const TREE_BY_ROLE: Record<Role, TreeSection[]> = {
@@ -213,7 +186,7 @@ const TREE_BY_ROLE: Record<Role, TreeSection[]> = {
   admin: ADMIN_TREE,
 };
 
-const DEFAULT_TREE: TreeSection[] = [REFERENCE_SECTION];
+const DEFAULT_TREE: TreeSection[] = [];
 
 export function getTreeForRole(role: Role | null): TreeSection[] {
   if (!role) return DEFAULT_TREE;
