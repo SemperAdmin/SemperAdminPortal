@@ -1,4 +1,5 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
+import Link from "next/link";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 import { cn } from "@/lib/utils";
@@ -31,7 +32,40 @@ import { ChecklistTool } from "./checklist-tool";
  *     ]}
  *   />
  */
+/**
+ * Markdown anchors render as raw <a> tags with no basePath handling, so
+ * absolute internal links like /citations/mctfsprium 404ed on the GitHub
+ * Pages subpath. Internal hrefs route through next/link, which prefixes
+ * the configured basePath. External hrefs open in a new tab per the
+ * portal convention.
+ */
+function MdxAnchor({
+  href = "",
+  children,
+  ...rest
+}: React.AnchorHTMLAttributes<HTMLAnchorElement>) {
+  if (href.startsWith("/")) {
+    return (
+      <Link href={href} {...rest}>
+        {children}
+      </Link>
+    );
+  }
+  const external = /^https?:/i.test(href);
+  return (
+    <a
+      href={href}
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
+      {...rest}
+    >
+      {children}
+    </a>
+  );
+}
+
 const components = {
+  a: MdxAnchor,
   Callout,
   Citation,
   IPACRoutingCallout,
