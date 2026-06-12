@@ -42,7 +42,7 @@ d. MCRC RSS (Recruiting Sub-Stations)
 
 e. RC members and Special Cases approved by HQMC (See Below)
 
-- **Note 1: For further clarification on BAH at locations other than the permanent duty station, refer to MARADMIN 239/05.**
+- Note 1: For further clarification on BAH at locations other than the permanent duty station, refer to MARADMIN 239/05.
 ### Section 4
 
 BAH Difference (BAH-DIFF). A Marine assigned to single-type quarters who is authorized BAH solely by reason of the Marine's payment of adequate child support, the member is entitled to BAH-DIFF. For additional information concerning BAH-DIFF, refer to DoD FMR Volume 7A, Chapter 26, Section 260202.
@@ -64,31 +64,31 @@ TTC 388 001 CHAN BAH [A] [B] [C] [D] [E] [F] $[G] $[H] ED [I] |
 - [C] Utility Code (“N” in all cases)
 - [D] BAH Rate Code (W = with dependent; O (alpha) = without dependent)
 ```
-** **   [E] BAH-DIFF (O (ALPHA) = normal BAH; D = for BAH-DIFF) ** **   [F] Disaster codes (N = normal; Y = disaster) (Note 6) ** **   [G] Actual monthly rent/mortgage for BAH Disaster. Otherwise enter $7777.77 in all other cases. ** **   [H] Additional monthly rent/mortgage (enter $0000.00 in all cases) ** **   [I] ED (Effective Date; See Note 5)
+    [E] BAH-DIFF (O (ALPHA) = normal BAH; D = for BAH-DIFF)     [F] Disaster codes (N = normal; Y = disaster) (Note 6)     [G] Actual monthly rent/mortgage for BAH Disaster. Otherwise enter $7777.77 in all other cases.     [H] Additional monthly rent/mortgage (enter $0000.00 in all cases)     [I] ED (Effective Date; See Note 5)
 
-- **Note 1: Report ZIP Code of '99999' for Marines who are entitled to BAH RC/T. The BAH RC/T amount is keyed off of this ZIP Code in MCTFS.**
-- **Note 2: The ZIP Code of the Marine's PDS and the designator 'M' will be used to base entitlement on the MHA located of the Marine who is assigned to a PDS in the United States.**
-- **Note 3: The ZIP Code of the Marine's dependents location and the designator 'D' will be used to base entitlement on the location where the Marine's dependents reside.**
-- **Note 4: When changing the ZIP Code Designator report TTC 389 (STOP BAH) first, and then TTC 388 (CHAN BAH). Reporting TTC 388 (CHAN BAH) alone will FAIL.**
-- **Note 5: TTC 389 DEL/ADD reporting transaction will fail if DEL Effective Date is less than 19981101.**
-- **Note 6: When an area has been designated as entitled to BAH disaster rate, notification will be provided by Marine Corps Pay Requirements Directorate (MCPRD).**
-- **Note 7: BAH Partial cannot be corrected by reporting TTC 388.**
+- Note 1: Report ZIP Code of '99999' for Marines who are entitled to BAH RC/T. The BAH RC/T amount is keyed off of this ZIP Code in MCTFS.
+- Note 2: The ZIP Code of the Marine's PDS and the designator 'M' will be used to base entitlement on the MHA located of the Marine who is assigned to a PDS in the United States.
+- Note 3: The ZIP Code of the Marine's dependents location and the designator 'D' will be used to base entitlement on the location where the Marine's dependents reside.
+- Note 4: When changing the ZIP Code Designator report TTC 389 (STOP BAH) first, and then TTC 388 (CHAN BAH). Reporting TTC 388 (CHAN BAH) alone will FAIL.
+- Note 5: TTC 389 DEL/ADD reporting transaction will fail if DEL Effective Date is less than 19981101.
+- Note 6: When an area has been designated as entitled to BAH disaster rate, notification will be provided by Marine Corps Pay Requirements Directorate (MCPRD).
+- Note 7: BAH Partial cannot be corrected by reporting TTC 388.
 ```
 TTC 389 001 [A] STOP BAH [B] ED [C] |
 ```
-** **   [A] DOA (Date of Action; never 00000000) ** **   [B] BAH RATE CODE (See Note below) ** **   [C] ED (Effective date; never 00000000)
+    [A] DOA (Date of Action; never 00000000)     [B] BAH RATE CODE (See Note below)     [C] ED (Effective date; never 00000000)
 
 Note: The BAH Rate Code is W (With dependents) or O (without dependents).
 
 ```
 TTC 187 041 [A] CHAN BAH DIFF ED [B] |
 ```
-** **   [A] DOA (Date of Action; never 00000000) ** **   [B] ED (Effective Date/Start Date; never 00000000)
+    [A] DOA (Date of Action; never 00000000)     [B] ED (Effective Date/Start Date; never 00000000)
 
 ```
 TTC 186 001 [A] STOP BAH DIFF ED [B] |
 ```
-** **   [A] DOA (Date of Action; never 00000000) ** **   [B] ED (Effective Date/Stop Date; never 00000000)
+    [A] DOA (Date of Action; never 00000000)     [B] ED (Effective Date/Stop Date; never 00000000)
 
 Note: BAH-DIFF can only be started and stopped. The CHAN BAH and CRED BAH transactions are not applicable for BAH DIFF.
 
@@ -99,19 +99,19 @@ To report a start, change or stop to partial BAH use one of the following statem
 ```
 TTC 187 034 [A] STRT BAH PARTL ED [B] |
 ```
-** **   [A] DOA (Date of Action; never 00000000) ** **   [B] ED (Effective Date/Start Date; never 00000000)
+    [A] DOA (Date of Action; never 00000000)     [B] ED (Effective Date/Start Date; never 00000000)
 
 Note: Del/Err is not authorized for Active Duty Units with TTC 187 034.
 
 ```
 TTC 187 015 [A] CHAN BAH PARTL ED [B] |
 ```
-** **   [A] DOA (Date of Action; never 00000000) ** **   [B] ED (Effective Date/Stop Date; never 00000000)
+    [A] DOA (Date of Action; never 00000000)     [B] ED (Effective Date/Stop Date; never 00000000)
 
 ```
 TTC 186 002 [A] STOP BAH PARTIAL [B] ED [C] |
 ```
-** **   [A] DOA (Date of Action; never 00000000) ** **   [B] STOP CODE (The BAH Stop Code is zero “0”) ** **   [C] ED (Effective Date; never 00000000)
+    [A] DOA (Date of Action; never 00000000)     [B] STOP CODE (The BAH Stop Code is zero “0”)     [C] ED (Effective Date; never 00000000)
 
 Note: The Effective Date must be equal to or greater than 19981031.
 
@@ -121,7 +121,7 @@ Note: The Effective Date for TTC 186 (all sequences) must be greater than or equ
 
 BAH Rates During PCS Elapsed Time Period
 
-**    **a. Marines with dependents receiving a BAH locality rate prior to detachment on PCS orders will continue to receive that rate during the elapsed time period. For those Marines that were occupying government quarters upon reporting TTC 186 STOP QTRS, MCTFS will automatically start BAH-RC/T.
+    a. Marines with dependents receiving a BAH locality rate prior to detachment on PCS orders will continue to receive that rate during the elapsed time period. For those Marines that were occupying government quarters upon reporting TTC 186 STOP QTRS, MCTFS will automatically start BAH-RC/T.
 
 b. When a member vacates Government quarters, the transferring command should report the BAH locality rate (old PDS) for that member. It is noted that close coordination between the Commanding Officer and Housing is essential. The joining command must review the member's record to determine if the member received the BAH locality rate for his old PDS. MCTFS will generate a BAH RC/T entitlement with the reporting of the STOP QTRS entry, however, the correct entitlement for the member is the BAH locality rate for the old PDS.  Determine if the rate in the member's record is BAH RC/T or BAH locality by accessing the website https://secureapp2.hqda.pentagon.mil/perdiem/bah.html using the ZIP Code for the old PDS, and entering the member's rank. Refer to PAAN 13-01 for additional information.
 
@@ -179,7 +179,7 @@ g.  To report a credit for a Marine's entitlement to BAH DIFF (Court ordered su
 
 h.  To check BAH RC/T that was previously reported by CRED BAH, report the DEL AS ERR transaction for TTC 896 sequence 002.
 
-- **Note 1: The period of BAH-RC/T entitlement being reported must equal or include dates within a previously or concurrently reported Active Duty period.**
+- Note 1: The period of BAH-RC/T entitlement being reported must equal or include dates within a previously or concurrently reported Active Duty period.
 i. Entitlement to partial BAH is automatic for Reservists not entitled to BAH with dependents, or in their own right, except under certain conditions. Specific conditions of entitlement are contained in the DOD 7000.14-R Financial Management Regulation, Volume 7A.
 
 (1) A Reservist's entitlement to partial BAH will be automatically established in MCTFS upon processing the proper join transaction reported by a Selected Marine Corps Reserve, Individual Mobilization Augment or Mobilization Training Unit. Partial BAH will be automatically credited to the account of an Individual Ready Reserve, not a member of a Mobilization Training Unit, when Active Duty is reported per Chapter 7 of this manual.
@@ -199,12 +199,12 @@ a. The BAH Effective Date for Reservists retained on Active Duty under incapacit
 ```
 TTC 187 019 [A] STRT BAH II WITH DEPN ED [B] |
 ```
-** **   [A] DOA (Date of Action; never 00000000) ** **   [B] ED (Effective Date/Start Date; never 00000000)
+    [A] DOA (Date of Action; never 00000000)     [B] ED (Effective Date/Start Date; never 00000000)
 
 ```
 TTC 896 002 [A] CRED BAH II WITHOUT DEPN [B] TO [C] |
 ```
-** **   [A] DOA (Date of Action; never 00000000) ** **   [B] FROM DATE (Never 00000000) ** **   [C] TO DATE (Never 00000000)
+    [A] DOA (Date of Action; never 00000000)     [B] FROM DATE (Never 00000000)     [C] TO DATE (Never 00000000)
 
 Note: The From and To dates are inclusive.
 
@@ -213,7 +213,7 @@ To report BAH II Without Dependents for Reserve Marines called or ordered to Act
 ```
 TTC 187 021 [A] STRT BAH II WITHOUT DEPN ED [B] |
 ```
-** **   [A] DOA (Date of Action; never 00000000) ** **   [B] ED (Effective Date; never 00000000)
+    [A] DOA (Date of Action; never 00000000)     [B] ED (Effective Date; never 00000000)
 
 Note: The Effective Date must be equal to or greater than 20060106.
 
@@ -224,12 +224,12 @@ Reserve Bah Partial. Use The Following Statement to Report Start and Stop Bah Pa
 ```
 TTC 187 034 STRT BAH PARTL ED [A] |
 ```
-** **   [A] STRT ED (Effective Date)
+    [A] STRT ED (Effective Date)
 
 ```
 TTC 186 002 STOP BAH PARTIAL [A] ED [B] |
 ```
-** **   [A] BAH STOP CODE (0; numeric) ** **   [B] ED (Effective Date; See Note below)
+    [A] BAH STOP CODE (0; numeric)     [B] ED (Effective Date; See Note below)
 
 Note: Reported Effective Date for TTC 186 (all sequences) must be greater than or equal to 19981031.
 
@@ -252,26 +252,26 @@ b. Assignment to Adequate Government Quarters. Use the following statement to re
 ```
 TTC 187 037 STRT QTRS ([A]) [B] ED [C] |
 ```
-** **   [A] Service Code cognizant military service (A=Army, F=Air Force, N=Navy, M=Marine Corps, X=Other) ** **   [B] Housing Office (UIC or AAAN) ** **   [C] ED (Effective Date of assignment)
+    [A] Service Code cognizant military service (A=Army, F=Air Force, N=Navy, M=Marine Corps, X=Other)     [B] Housing Office (UIC or AAAN)     [C] ED (Effective Date of assignment)
 
-- **Note 1: When dependents are prevented from occupying assigned quarters because of orders of competent authority, reporting of the STRT QTRS entry may be delayed until transportation is arranged for household goods and is available for the dependents, plus the normal travel time for the dependents to the Marine's duty station.  This is contingent upon prompt application by the Marine for shipment of household goods and transportation of dependents.**
-- **Note 2: Marine Corps housing officers who have been assigned a RUC are authorized to report quarters information.**
-- **Note 3: An existing BAH Entitlement (901 Remark With or Without Dependents) must exist.  TTC 388 (CHAN BAH) must be reported to establish a BAH entitlement prior to reporting members to Quarters.  The 901 Remark will determine the member's entitlement (with or without Dependents) for Quarters.  Also, members assigned to Inadequate Government Quarters will have a 901 Remark (BAH RC/T) entitlement established to offset the reported quarters deduction.**
+- Note 1: When dependents are prevented from occupying assigned quarters because of orders of competent authority, reporting of the STRT QTRS entry may be delayed until transportation is arranged for household goods and is available for the dependents, plus the normal travel time for the dependents to the Marine's duty station.  This is contingent upon prompt application by the Marine for shipment of household goods and transportation of dependents.
+- Note 2: Marine Corps housing officers who have been assigned a RUC are authorized to report quarters information.
+- Note 3: An existing BAH Entitlement (901 Remark With or Without Dependents) must exist.  TTC 388 (CHAN BAH) must be reported to establish a BAH entitlement prior to reporting members to Quarters.  The 901 Remark will determine the member's entitlement (with or without Dependents) for Quarters.  Also, members assigned to Inadequate Government Quarters will have a 901 Remark (BAH RC/T) entitlement established to offset the reported quarters deduction.
 c. Termination of Government Quarters. Use the following statement to report termination of government quarters:
 
 ```
 TTC 186 003 STOP QTRS ED [A] |
 ```
-** **   [A] ED (Effective Date of termination)
+    [A] ED (Effective Date of termination)
 
-- **Note 1: Computer logic will stop quarters as of 2359 the day PRIOR to the Effective Date entered. When the Marine is occupying quarters and there quarters are determined to be inadequate, a stop quarters and appropriate start inadequate quarters unit diary statement must be reported.**
-- **Note 2: A system utility is being executed as often as possible to establish a BAH II entitlement for members in quarters have been terminated. This utility will continue to be executed this utility until implementation of a future system change to automatically start BAH II upon reporting TTC 186 STOP QTRS.**
+- Note 1: Computer logic will stop quarters as of 2359 the day PRIOR to the Effective Date entered. When the Marine is occupying quarters and there quarters are determined to be inadequate, a stop quarters and appropriate start inadequate quarters unit diary statement must be reported.
+- Note 2: A system utility is being executed as often as possible to establish a BAH II entitlement for members in quarters have been terminated. This utility will continue to be executed this utility until implementation of a future system change to automatically start BAH II upon reporting TTC 186 STOP QTRS.
 d. Use the following statement to start inadequate quarters checkage when the Marine and/or dependents are assigned to inadequate quarters when the amount of checkage is to be reported as a percentage of the BAH RC/T vice a dollar amount. Do not use the statement for reporting inadequate-quarters assignment for Marines married to members of the United States Armed Forces who are on Active Duty.
 
 ```
 TTC 187 039 STRT INAD QTRS [A] PERCENT ([B]) [C] ED [D] |
 ```
-** **   [A] Percent (i.e., 050, 065, or 075; See Note below) ** **   [B] Service Code to denote cognizant military service (A=Army, F=Air Force, N=Navy, M=Marine Corps, X=Other) ** **   [C] Housing Office (UIC or AAAN)
+    [A] Percent (i.e., 050, 065, or 075; See Note below)     [B] Service Code to denote cognizant military service (A=Army, F=Air Force, N=Navy, M=Marine Corps, X=Other)     [C] Housing Office (UIC or AAAN)
 
 - [D] ED (Effective Date of assignment)
 Note: Effective 1 October 1982, percentage rate may not exceed 75 percent.  Also, when the Marine is occupying inadequate quarters and the quarters are determined to be adequate, or when the Marine moves from inadequate quarters to adequate quarters, a stop and start quarters statement must be reported; for example, STOP QTRS ED 19980115, STRT QTRS Effective Date 19980115.
@@ -281,19 +281,19 @@ e.   Member Married to Member. Start inadequate quarters checkage when the Mari
 ```
 TTC 187 038 STRT INAD QTRS $[A] ([B]) [C] ED [D] |
 ```
-** **   [A] Dollar Amount (show the amounts as $55.10 or $100.00) ** **   [B] Service Code of cognizant military service (A=Army, F=Air Force, N=Navy, M=Marine Corps, X=Other) ** **   [C] Housing Office (UIC or AAAN) ** **   [D] ED (Effective Date of assignment)
+    [A] Dollar Amount (show the amounts as $55.10 or $100.00)     [B] Service Code of cognizant military service (A=Army, F=Air Force, N=Navy, M=Marine Corps, X=Other)     [C] Housing Office (UIC or AAAN)     [D] ED (Effective Date of assignment)
 
 f.  Percentage or rate change.  Use the following applicable statement to change inadequate quarter's checkage when either the percentage or dollar value is changed:
 
 ```
 TTC 187 017 CHAN INAD QTRS [A] PERCENT ED [B] |
 ```
-** **   [A] Percent (i.e., 050, 075) ** **   [B] ED (Effective Date of change)
+    [A] Percent (i.e., 050, 075)     [B] ED (Effective Date of change)
 
 ```
 TTC 187 016 CHAN INAD QTRS $[A] ED [B] |
 ```
-** **   [A] Dollar Amount (i.e., $55.10, $100.00) ** **   [B] ED (Effective Date of change)
+    [A] Dollar Amount (i.e., $55.10, $100.00)     [B] ED (Effective Date of change)
 
 g.  Erroneous UIC or AAAN.  Use the following statement to correct an erroneous UIC or AAAN:
 

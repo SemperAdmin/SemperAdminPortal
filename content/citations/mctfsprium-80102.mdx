@@ -66,7 +66,7 @@ TTC 013 000 STOP COLA [A] ED [B] |
 - [A] 1-byte entitlement code (B, O, or 0-5)
 - [B] 8-byte ED (YYYYMMDD)
 ```
-- **Note 1: Concurrent (Dual) COLA: When a member is authorized concurrent payment of two OCONUS COLAs (that is, member is assigned unaccompanied overseas tour and the members dependent is residing at the old OCONUS PDS or a designated location OCONUS) the total number of dependents shall be “reduced by one” for purposes of determining the OCONUS COLA payment for the dependents location (1-byte numeric, 0 through 5) displayed on the COST OF LIVING ALLOWANCE 921 Remark.**
+- Note 1: Concurrent (Dual) COLA: When a member is authorized concurrent payment of two OCONUS COLAs (that is, member is assigned unaccompanied overseas tour and the members dependent is residing at the old OCONUS PDS or a designated location OCONUS) the total number of dependents shall be “reduced by one” for purposes of determining the OCONUS COLA payment for the dependents location (1-byte numeric, 0 through 5) displayed on the COST OF LIVING ALLOWANCE 921 Remark.
 The OCONUS COLA payment for the members PDS shall reflect a member with no dependents (1-byte alpha, B or O) (B=Barracks, O=Without Dependents/Own right) displayed on the COLA BARRACKS & NO DEPENDENTS 933 Remark. COLA zero (1-byte numeric, 0) should be reported for the dependent(s) while the member is in a non-pay status, regardless of how many dependents.
 
 Example: Member unaccompanied tour (Okinawa, Japan) and one dependent at old PDS (Berlin, Germany) reduced by one will be reported as follows:
@@ -83,7 +83,7 @@ KR155 (Seoul, South Korea) AU019 (Sydney, Australia)
 
 1-byte entitlement code = B or O (alpha) 1-byte entitlement code = 1 (num.)
 
-- **Note 2: When reporting the one byte entitlement code with a numeric value of 0, both COST-OF-LIVING-ALLOW-921-RMK and COLA-BARRACKS-NO-DEPN-933-RMK must be open. The encoded GEO-LOCN for both dependent and member cannot equal the same. The numeric entitlement code 0 is solely associated with the dependent (displayed on 921 Remark), therefore, an alpha entitlement code of B or O on behalf of the member must exist (displayed on 933 Remark). In the absence of the members COLA entitlement, the member must be in a non-pay/confinement status or the entry will fail.**
+- Note 2: When reporting the one byte entitlement code with a numeric value of 0, both COST-OF-LIVING-ALLOW-921-RMK and COLA-BARRACKS-NO-DEPN-933-RMK must be open. The encoded GEO-LOCN for both dependent and member cannot equal the same. The numeric entitlement code 0 is solely associated with the dependent (displayed on 921 Remark), therefore, an alpha entitlement code of B or O on behalf of the member must exist (displayed on 933 Remark). In the absence of the members COLA entitlement, the member must be in a non-pay/confinement status or the entry will fail.
 ### Section 5
 
 Corrections will be made by the FO using CRED COLA (TTC 522) and CHEK COLA (TTC 523) or by the Unit commander using the COLA ADJUST (TTC 015) or one-time CHEK (TTC 026) entries as required. Report a one-time COLA credit or a one-time COLA checkage as follows:
@@ -100,8 +100,8 @@ TTC 026 000 COLA CHECKAGE [A] [B] [C] [D] |
 - [C] 8-byte FROM ED (YYYYMMDD)
 - [D] 8-byte TO ED (YYYYMMDD)
 ```
-- **Note 1: The first two characters are alpha and denote the country code. The remaining three characters are numeric and denote city, area, states, etc. within a country. Two-character alpha country code. Example: JP = Japan or KR = Korea. 3-character numeric geographical locality code Example using Japan: 027 = Okinawa or 019 = Iwakuni. Geographical location codes can be found at DTMO website, http://www.defensetravel.dod.mil/site/locCodeCalc.cfm. Example 5-Byte: Okinawa Japan = JP027 or Seoul Korea = KR140.**
-- **Note 2: Entitlement Code. When a Marines entitlement to COLA changes from barracks or without dependents to with dependents, report a STOP COLA entry using code B or O, as appropriate. Then, report a STRT COLA entry using a code from 0 through 5. Follow the same STOP/STRT sequence, substituting the appropriate entitlement codes, if entitlement changes from with dependents to barracks or without dependents. The entitlement codes are alpha or numeric, as follows:**
+- Note 1: The first two characters are alpha and denote the country code. The remaining three characters are numeric and denote city, area, states, etc. within a country. Two-character alpha country code. Example: JP = Japan or KR = Korea. 3-character numeric geographical locality code Example using Japan: 027 = Okinawa or 019 = Iwakuni. Geographical location codes can be found at DTMO website, http://www.defensetravel.dod.mil/site/locCodeCalc.cfm. Example 5-Byte: Okinawa Japan = JP027 or Seoul Korea = KR140.
+- Note 2: Entitlement Code. When a Marines entitlement to COLA changes from barracks or without dependents to with dependents, report a STOP COLA entry using code B or O, as appropriate. Then, report a STRT COLA entry using a code from 0 through 5. Follow the same STOP/STRT sequence, substituting the appropriate entitlement codes, if entitlement changes from with dependents to barracks or without dependents. The entitlement codes are alpha or numeric, as follows:
 ENTITLEMENT CODES:
 
 CODE | DESCRIPTION
@@ -112,10 +112,10 @@ O | Without dependents (ALPHA) (933 Remark Screen)
 
 B | Barracks COLA (933 Remark Screen)
 
-- **Note 3: The ED is the date of the initial entitlement or the date of the change of entitlement.**
-- **Note 4: TTC 015 will only process on a closed remark. If the open remark is in error, report TTC 014 with the correct information and then on the following cycle report TTC 015 to adjust the closed remark.**
-- **Note 5: TTC 026 will only process if the checkage period has a compute flag (CMP CDE) equal to 4 on the appropriate MCTFS remark screen (D921, D933).**
-- **Note 6: Using category code S921 or S933 will enable a user to view a Marines entire COLA record on a single screen.**
+- Note 3: The ED is the date of the initial entitlement or the date of the change of entitlement.
+- Note 4: TTC 015 will only process on a closed remark. If the open remark is in error, report TTC 014 with the correct information and then on the following cycle report TTC 015 to adjust the closed remark.
+- Note 5: TTC 026 will only process if the checkage period has a compute flag (CMP CDE) equal to 4 on the appropriate MCTFS remark screen (D921, D933).
+- Note 6: Using category code S921 or S933 will enable a user to view a Marines entire COLA record on a single screen.
 ### Section 6
 
 The MCTFS system will:

@@ -29,7 +29,7 @@ def pdf_text(p, pages=2, archive=None):
     rel = os.path.relpath(str(p), str(archive))
     mirror = Path(archive) / "GunnyBot" / "text" / (rel + ".txt")
     if mirror.exists():
-        return mirror.read_text(encoding="utf8", errors="replace")[:8000]
+        return mirror.read_text(encoding="utf8", errors="replace")[:12000]
     return txt
 
 def sidecar(p):
@@ -47,16 +47,41 @@ def clean(t, limit=420):
         t = t[:limit].rsplit(" ", 1)[0] + " [...]"
     return t
 
+GEN_HEADS = ("What this ", "Stated purpose", "Subject", "Source excerpt",
+             "Purpose printed on the form", "Distribution printed on the form",
+             "Disposition printed on the form", "Access", "Chapters",
+             "Lead excerpt", "Sections")
+
+def strip_generated(body):
+    """Drop previously generated sections so re-enrichment never stacks
+    duplicate blocks. Hand-written sections survive."""
+    parts = re.split(r"(?m)^## ", body)
+    out = parts[0].strip()
+    for sec in parts[1:]:
+        head = sec.split("\n", 1)[0].strip()
+        if not head.startswith(GEN_HEADS):
+            out = (out + "\n\n## " + sec.strip()).strip()
+    return out
+
 def extract_order(txt):
-    subj = re.search(r"(?:Subj|SUBJ)[:\s/]+([^\n]+)", txt)
+    subjs = re.findall(r"(?:Subj|SUBJ)\s*[:\s/]\s*([^\n]{8,120})", txt)
+    subjs = [x.strip().rstrip("/") for x in subjs]
+    title = subjs[0] if subjs else None
+    # Administrative-change transmittals print their own subject first.
+    # The base order subject sits on a later page.
+    if title and len(subjs) > 1 and re.search(
+            r"ADMINISTRATIVE CHANGE|COMPLIANCE WITH EXECUTIVE ORDER", title):
+        later = [x for x in subjs[1:] if x != title]
+        if later:
+            title = later[-1]
     pur = re.search(
-        r"(?:Purpose|PURPOSE|Situation|SITUATION)[.:\s]+(.{50,500}?)(?:\n\s*\n|\s\d\.\s|\sb\.\s)",
+        r"\b(?:1\s*\.\s*)?(?:Purpose|PURPOSE|Situation|SITUATION)\s*[.:\n]\s*"
+        r"(.{40,1200}?)(?:\n\s*\n|\s\d\s*\.\s+[A-Z]|\s[a-e]\s*\.\s+[A-Z])",
         txt, re.S)
-    title = subj.group(1).strip().rstrip("/") if subj else None
     if not title:
         # Publication-style cover pages: a quoted volume title, or the run
         # of all-caps lines near the top of the cover.
-        q = re.search(r"[\u201c\"]([^\u201d\"]{8,90})[\u201d\"]", txt[:1500])
+        q = re.search(r"[\u201c\"]([^\u201d\"]{3,90})[\u201d\"]", txt[:1500])
         if q:
             title = q.group(1).strip()
         else:
@@ -66,8 +91,10 @@ def extract_order(txt):
             if caps:
                 title = " ".join(caps[:3])[:90]
     date = re.search(r"\b(\d{1,2}\s+[A-Z][a-z]{2}\s+\d{4}|\d{1,2}\s+[A-Z]{3}\s+\d{4})\b", txt[:1500])
-    return (title, clean(pur.group(1)) if pur else None,
-            date.group(1) if date else None)
+    ptext = None
+    if pur:
+        ptext = clean(re.sub(r"^[a-e]\s*\.\s+", "", pur.group(1).strip()), 520)
+    return (title, ptext, date.group(1) if date else None)
 
 def extract_maradmin(txt):
     subj = re.search(r"(?:Subj|SUBJ)[:\s/]+([^\n]+)", txt)
@@ -77,13 +104,15 @@ def extract_maradmin(txt):
     return (subj.group(1).strip().rstrip("/") if subj else None,
             clean(rmks.group(1)) if rmks else None)
 
-def order_body(kind, number, subj, purpose, doc_date, snap, has_url, keep=""):
+def order_body(kind, number, subj, purpose, doc_date, snap, has_url, keep="", cur=None):
     parts = []
     if keep: parts.append(keep.strip())
     head = f"## What this {kind} is\n\n{number}"
     if subj: head += f", {subj}"
     if doc_date: head += f". Signed {doc_date}"
     head += f". Source PDF on file from the {snap} archive snapshot."
+    if cur:
+        head += f" The archive copy is the current version, {cur}."
     parts.append(head)
     if purpose:
         parts.append(f"## Stated purpose\n\n> {purpose}\n\nQuoted from the document's opening section.")
@@ -146,7 +175,10 @@ def main():
     dd = {}
     for p in glob.glob(str(P / "DD_Forms" / "*" / "*.pdf")):
         m = re.match(r"DD[_ ]?0*(\d+[A-Z0-9\-]*)_?", os.path.basename(p), re.I)
-        if m: dd[m.group(1).upper()] = p
+        if m:
+            k = m.group(1).upper()
+            if k not in dd or len(os.path.basename(p)) > len(os.path.basename(dd[k])):
+                dd[k] = p
     navmc_f = {}
     for p in list(glob.glob(str(P / "NAVMC_Forms" / "*.pdf"))) + list(glob.glob(str(P / "NAVMC" / "*.pdf"))):
         m = re.match(r"NAVMC[_ ]?([\d.\-]+[A-Z]?)", os.path.basename(p), re.I)
@@ -215,19 +247,84 @@ def main():
             skipped.append({"file": f, "type": typ, "number": num,
                             "reason": "no source document in archive"})
             continue
-        keep = "" if f in boiler_files else body
+        keep = "" if f in boiler_files else strip_generated(body)
         has_url = "externalUrl" in front
         meta = sidecar(src) if mode != "dodfmr-vol" else {}
         snap = (meta.get("fetched_at", "") or "2026-04")[:10] or "2026-04"
         doc_date = meta.get("document_date", "")
-        if mode == "order":
-            subj, purpose, cover_date = extract_order(pdf_text(src, archive=P))
+        volm = re.match(r"mco-5800-16-vol-(\d+)\.mdx$", f)
+        if volm and mode == "order":
+            vtxt = pdf_text(src, pages=40, archive=P)
+            vtitle, _, vdate = extract_order(vtxt)
+            vt2 = re.search(
+                r"VOLUME\s+" + volm.group(1) +
+                r"\s*\n+[\u201c\"]?([A-Z][A-Z ,&'\-/()]{3,90}?)[\u201d\"]?\s*\n", vtxt)
+            if vt2:
+                vtitle = vt2.group(1).strip()
+            flat = re.sub(r"\s+", " ", vtxt)
+            chaps, seen = [], set()
+            for cm in re.finditer(
+                    r"CHAPTER\s+(\d+):\s*([A-Z][A-Z0-9 ,&'\-/()]{4,140}?)\s*\.{2,}", flat):
+                if cm.group(1) not in seen:
+                    seen.add(cm.group(1))
+                    chaps.append((cm.group(1), re.sub(r"\s+", " ", cm.group(2)).strip()))
+            lead = None
+            lm = re.search(r"\b\d{6}\.", vtxt)
+            if lm:
+                for para in re.split(r"\n\s*\n", vtxt[lm.end():]):
+                    pt = re.sub(r"\s+", " ", para).strip()
+                    if len(pt) > 120 and pt != pt.upper():
+                        lead = clean(pt, 520)
+                        break
+            parts = []
+            if keep: parts.append(keep)
+            head = (f"## What this volume is\n\nMCO 5800.16 Volume {volm.group(1)}"
+                    + (f", {vtitle}" if vtitle else "")
+                    + ". One of 17 volumes of the Legal Support and Administration Manual, short title LSAM, the Marine Corps legal services authority issued by CMC (JA)."
+                    + (f" Signed {vdate}." if vdate else "")
+                    + f" Source PDF on file from the {snap} archive snapshot.")
+            parts.append(head)
+            if chaps:
+                parts.append("## Chapters\n\n" + "\n".join(
+                    f"- Chapter {n}: {t.title()}" for n, t in chaps))
+            else:
+                secs = re.findall(r"(?m)^(\d{4})\s+([A-Z][A-Z0-9 ,&'/()\-]{3,80}?)\s*\.{3,}", vtxt)
+                dedup, seen2 = [], set()
+                for sn, st in secs:
+                    if sn not in seen2:
+                        seen2.add(sn)
+                        dedup.append((sn, re.sub(r"\s+", " ", st).strip()))
+                if dedup:
+                    parts.append("## Sections\n\n" + "\n".join(
+                        f"- {sn} {st.title()}" for sn, st in dedup[:12]))
+            if lead:
+                parts.append(f"## Lead excerpt\n\n> {lead}\n\nQuoted from the opening section of the volume.")
+            parts.append("## Access\n\nThe external link opens the official landing page for the current version."
+                         if has_url else
+                         "## Access\n\nNo public URL on file. Pull the working copy from the unit reference library.")
+            new_body = "\n\n".join(parts) + "\n"
+            if not chaps and not lead:
+                skipped.append({"file": f, "type": typ, "number": num,
+                                "reason": "volume PDF produced no chapter list or lead excerpt"})
+                continue
+        elif mode == "order":
+            srcbase = os.path.basename(str(src))[:-4].upper().replace("MCO_", "")
+            srcver = re.split(r"_W_|_WADMIN|_WITH|_CH-", srcbase)[0].replace("_", " ")
+            numkey = num.upper().replace("MCO", "").strip()
+            cur = None
+            if typ == "MCO" and srcver and srcver != numkey and srcver.lstrip("P") != numkey:
+                cur = f"MCO {srcver}"
+            subj, purpose, cover_date = extract_order(pdf_text(src, pages=8, archive=P))
+            if subj and re.search(r"[!]|[A-Z]:[A-Z]|'[A-Z]'", subj):
+                # OCR noise on the subject page. Fall back to the registry title.
+                t = get(front, "title")
+                subj = t.split(" - ", 1)[1] if " - " in t else None
             if not doc_date and cover_date:
                 doc_date = cover_date
             kind = {"MCO": "order", "MCBUL": "bulletin", "SECNAVINST": "instruction",
                     "NAVMC": "directive", "NAVMC-FORM": "directive"}.get(typ, "document")
             new_body = order_body(kind, num if num.upper().startswith(typ.split("-")[0]) else f"{typ} {num}",
-                                  subj, purpose, doc_date, snap, has_url, keep)
+                                  subj, purpose, doc_date, snap, has_url, keep, cur)
             if not subj and not purpose:
                 skipped.append({"file": f, "type": typ, "number": num,
                                 "reason": "PDF text extraction produced no subject or purpose"})
@@ -253,6 +350,10 @@ def main():
             fpur = re.search(
                 r"(?:PRINCIPAL )?PURPOSE\(?S?\)?:?\s*(.{40,900}?)(?:\s*ROUTINE|\s*DISCLOSURE|\n\s*\n)",
                 ftxt, re.S | re.I)
+            if fpur and not re.search(r"[a-z]", fpur.group(1)):
+                # All-caps warning text near the PURPOSES caution line, not
+                # a Privacy Act statement.
+                fpur = None
             dist = re.search(r"Distribution:\s*([^\n]{3,60})", ftxt)
             copies = re.search(r"Copy to:\s*([^\n]{3,60})", ftxt)
             parts = []
