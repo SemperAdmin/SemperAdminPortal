@@ -192,8 +192,9 @@ roles: ["admin"]
 
 Paragraph {pid}, Chapter {chapter} of the [MCTFSPRIUM](/citations/mctfsprium).
 Reproduced from the {SNAPSHOT_DATE} manual snapshot (source file {source_file}).
-The live manual sits behind MOL authentication. Verify against the current
-release before reporting a transaction.
+Verify against the live manual before reporting a transaction:
+[Open the PRIUM on MOL](https://mol.tfs.usmc.mil/prium/app/publicPrium?execution=e1s1)
+(MOL access required).
 
 ## Source text
 
@@ -290,8 +291,9 @@ roles: ["admin"]
 
 Chapter {ch} appendix of the [MCTFSPRIUM](/citations/mctfsprium).
 Reproduced from the {SNAPSHOT_DATE} manual snapshot (source file {fname}).
-The live manual sits behind MOL authentication. Verify against the current
-release before reporting a transaction.
+Verify against the live manual before reporting a transaction:
+[Open the PRIUM on MOL](https://mol.tfs.usmc.mil/prium/app/publicPrium?execution=e1s1)
+(MOL access required).
 
 ## Source text
 
