@@ -47,21 +47,52 @@ const marineCatBySlug = new Map(MARINES_CATEGORIES.map((c) => [c.slug, c]));
 const groupedMarineSlugs = new Set(
   MARINES_PARENT_GROUPS.flatMap((g) => g.children)
 );
+// Pages per container category, for ungrouped categories whose detail
+// pages live one level below the category index.
+const marinePagesByTopic = new Map();
+for (const e of marinesCatalog) {
+  if (e.topic && e.topic !== e.slug) {
+    if (!marinePagesByTopic.has(e.topic)) marinePagesByTopic.set(e.topic, []);
+    marinePagesByTopic.get(e.topic).push(e);
+  }
+}
+
+const groupItems = [...MARINES_PARENT_GROUPS].map((g) => ({
+  label: g.label,
+  href: `/marines/${g.slug}`,
+  children: g.children
+    .map((slug) => marineCatBySlug.get(slug))
+    .filter(Boolean)
+    .map((c) => ({ label: c.shortLabel, href: `/marines/${c.slug}` })),
+}));
+
+// Ungrouped categories sort into the same list as the groups. Container
+// categories render as branches with their pages as children so every
+// top-level item carries the same shape. Leaf categories stay leaves.
+const ungroupedItems = MARINES_CATEGORIES.filter(
+  (c) => !groupedMarineSlugs.has(c.slug)
+).map((c) => {
+  const pages = marinePagesByTopic.get(c.slug) ?? [];
+  if (c.pageType !== "leaf" && pages.length > 0) {
+    return {
+      label: c.label,
+      href: `/marines/${c.slug}`,
+      children: pages
+        .map((e) => ({
+          label: e.title,
+          href: `/marines/${c.slug}/${e.slug}`,
+        }))
+        .sort((a, b) => a.label.localeCompare(b.label)),
+    };
+  }
+  return { label: c.shortLabel, href: `/marines/${c.slug}` };
+});
+
 const marine = [
   { label: "Overview", href: "/marines" },
-  ...[...MARINES_PARENT_GROUPS]
-    .sort((a, b) => a.label.localeCompare(b.label))
-    .map((g) => ({
-      label: g.label,
-      href: `/marines/${g.slug}`,
-      children: g.children
-        .map((slug) => marineCatBySlug.get(slug))
-        .filter(Boolean)
-        .map((c) => ({ label: c.shortLabel, href: `/marines/${c.slug}` })),
-    })),
-  ...MARINES_CATEGORIES.filter((c) => !groupedMarineSlugs.has(c.slug))
-    .sort((a, b) => a.label.localeCompare(b.label))
-    .map((c) => ({ label: c.shortLabel, href: `/marines/${c.slug}` })),
+  ...[...groupItems, ...ungroupedItems].sort((a, b) =>
+    a.label.localeCompare(b.label)
+  ),
 ];
 
 // Drift guard: every marines.json topic should exist in the registry.
