@@ -54,6 +54,7 @@ export const citationSchema = z.object({
   effectiveDate: z.string().optional(),
   lastVerified: z.string(),
   externalUrl: z.string().url().optional(),
+  gatedSource: z.boolean().default(false),
   supersedes: z.array(z.string()).default([]),
   roles: z.array(ROLE_ENUM).min(1),
   hidden: z.boolean().default(false),

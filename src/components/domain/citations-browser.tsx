@@ -6,6 +6,7 @@ import {
   Search,
   ChevronRight,
   ExternalLink,
+  Lock,
   ArrowUpDown,
   Calendar,
   Clock,
@@ -26,7 +27,7 @@ export interface CitationsBrowserProps {
   roleOptions: Role[];
 }
 
-type UrlFilter = "any" | "has-url" | "no-url";
+type UrlFilter = "any" | "has-url" | "no-url" | "gated";
 type UsageFilter = "any" | "in-use" | "unused";
 type SortKey =
   | "id"
@@ -77,7 +78,9 @@ export function CitationsBrowser({
       if (typeFilter !== "all" && cit.type !== typeFilter) return false;
       if (roleFilter !== "all" && !cit.roles.includes(roleFilter)) return false;
       if (urlFilter === "has-url" && !cit.externalUrl) return false;
-      if (urlFilter === "no-url" && cit.externalUrl) return false;
+      if (urlFilter === "no-url" && (cit.externalUrl || cit.gatedSource))
+        return false;
+      if (urlFilter === "gated" && !cit.gatedSource) return false;
       if (usageFilter === "in-use" && row.citationCount === 0) return false;
       if (usageFilter === "unused" && row.citationCount > 0) return false;
       if (!q) return true;
@@ -209,6 +212,11 @@ export function CitationsBrowser({
             active={urlFilter === "no-url"}
             onClick={() => setUrlFilter("no-url")}
           />
+          <FilterChip
+            label="Gated source"
+            active={urlFilter === "gated"}
+            onClick={() => setUrlFilter("gated")}
+          />
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
@@ -333,6 +341,11 @@ export function CitationsBrowser({
                     <span className="inline-flex items-center gap-1 text-[var(--color-status-info)]">
                       <ExternalLink className="size-3" aria-hidden="true" />
                       External URL
+                    </span>
+                  ) : citation.gatedSource ? (
+                    <span className="inline-flex items-center gap-1 text-[var(--color-status-info)]">
+                      <Lock className="size-3" aria-hidden="true" />
+                      Gated source
                     </span>
                   ) : (
                     <span className="text-[var(--color-status-aging)]">

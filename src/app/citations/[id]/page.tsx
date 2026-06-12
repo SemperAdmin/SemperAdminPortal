@@ -144,7 +144,15 @@ export default async function CitationDetailPage({
         </Callout>
       )}
 
-      {!cit.externalUrl && (
+      {!cit.externalUrl && cit.gatedSource && (
+        <Callout variant="info" title="Gated source">
+          The source lives behind authentication, MOL, MISSA, or DoD
+          distribution channels, and carries no public URL by design. The
+          page body documents the access path.
+        </Callout>
+      )}
+
+      {!cit.externalUrl && !cit.gatedSource && (
         <Callout variant="info" title="No external URL">
           The registry has no public URL for this document yet. Pull the
           working copy from MOL or the relevant agency portal. Update this

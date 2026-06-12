@@ -187,6 +187,7 @@ type: "MCTFSPRIUM"
 number: "{number}"
 publisher: "{PUBLISHER}"
 lastVerified: "{SNAPSHOT_DATE}"
+gatedSource: true
 roles: ["admin"]
 ---
 
@@ -286,6 +287,7 @@ type: "MCTFSPRIUM"
 number: "{number}"
 publisher: "{PUBLISHER}"
 lastVerified: "{SNAPSHOT_DATE}"
+gatedSource: true
 roles: ["admin"]
 ---
 

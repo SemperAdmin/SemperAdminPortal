@@ -480,6 +480,13 @@ export const citationSchema = z.object({
   effectiveDate: z.string().optional(),
   lastVerified: z.string(),
   externalUrl: z.string().url().optional(),
+  /**
+   * True when the source exists behind authentication (MOL, MISSA, DoD
+   * distribution) and carries no public URL by design. The citations
+   * index renders these as gated instead of missing, and the entry body
+   * documents the access path.
+   */
+  gatedSource: z.boolean().default(false),
   supersedes: z.array(z.string()).default([]),
   roles: z.array(RoleEnum).min(1),
   hidden: z.boolean().default(false),
