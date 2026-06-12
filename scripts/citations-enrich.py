@@ -52,8 +52,22 @@ def extract_order(txt):
     pur = re.search(
         r"(?:Purpose|PURPOSE|Situation|SITUATION)[.:\s]+(.{50,500}?)(?:\n\s*\n|\s\d\.\s|\sb\.\s)",
         txt, re.S)
-    return (subj.group(1).strip().rstrip("/") if subj else None,
-            clean(pur.group(1)) if pur else None)
+    title = subj.group(1).strip().rstrip("/") if subj else None
+    if not title:
+        # Publication-style cover pages: a quoted volume title, or the run
+        # of all-caps lines near the top of the cover.
+        q = re.search(r"[\u201c\"]([^\u201d\"]{8,90})[\u201d\"]", txt[:1500])
+        if q:
+            title = q.group(1).strip()
+        else:
+            caps = re.findall(r"^([A-Z][A-Z ,&\-]{7,60})$", txt[:1200], re.M)
+            caps = [c.strip() for c in caps if not re.match(
+                r"^(HEADQUARTERS|DISTRIBUTION|DEPARTMENT|UNITED STATES|MARINE CORPS$|PCN)", c)]
+            if caps:
+                title = " ".join(caps[:3])[:90]
+    date = re.search(r"\b(\d{1,2}\s+[A-Z][a-z]{2}\s+\d{4}|\d{1,2}\s+[A-Z]{3}\s+\d{4})\b", txt[:1500])
+    return (title, clean(pur.group(1)) if pur else None,
+            date.group(1) if date else None)
 
 def extract_maradmin(txt):
     subj = re.search(r"(?:Subj|SUBJ)[:\s/]+([^\n]+)", txt)
@@ -142,8 +156,12 @@ def main():
         m = re.match(r"SECNAVINST_([\d.]+[A-Z]?)", os.path.basename(p), re.I)
         if m: secnav[m.group(1).upper()] = p
 
-    def find_source(typ, num):
+    def find_source(typ, num, fid=""):
         if typ == "MCO":
+            vol = re.search(r"vol-(\d+)", fid)
+            if vol:
+                vkey = num.upper().replace("MCO", "").strip() + f"_V{vol.group(1)}"
+                if vkey in mco: return mco[vkey], "order"
             key = num.upper().replace("MCO", "").strip().replace(" ", "_")
             for k in (key, "P" + key, key.rstrip("ABCDEFGHJK"), ("P" + key).rstrip("ABCDEFGHJK")):
                 if k in mco: return mco[k], "order"
@@ -185,7 +203,7 @@ def main():
     for f in sorted(work):
         front, body = entries[f]
         typ, num = get(front, "type"), get(front, "number")
-        src, mode = find_source(typ, num)
+        src, mode = find_source(typ, num, f)
         if not src:
             skipped.append({"file": f, "type": typ, "number": num,
                             "reason": "no source document in archive"})
@@ -196,7 +214,9 @@ def main():
         snap = (meta.get("fetched_at", "") or "2026-04")[:10] or "2026-04"
         doc_date = meta.get("document_date", "")
         if mode == "order":
-            subj, purpose = extract_order(pdf_text(src, archive=P))
+            subj, purpose, cover_date = extract_order(pdf_text(src, archive=P))
+            if not doc_date and cover_date:
+                doc_date = cover_date
             kind = {"MCO": "order", "MCBUL": "bulletin", "SECNAVINST": "instruction",
                     "NAVMC": "directive", "NAVMC-FORM": "directive"}.get(typ, "document")
             new_body = order_body(kind, num if num.upper().startswith(typ.split("-")[0]) else f"{typ} {num}",
