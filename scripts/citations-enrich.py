@@ -97,6 +97,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--archive", default="E:\\GunnyBot\\Policies")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--only", default="",
+                    help="comma-separated entry filenames to process regardless of classification")
     args = ap.parse_args()
     P = Path(args.archive)
     if not P.exists():
@@ -120,6 +122,8 @@ def main():
     work = {f for f, (fr, b) in entries.items()
             if (len(b.split()) < 60 or f in boiler_files)
             and not f.startswith(("mctfsprium", "fpm"))}
+    if args.only:
+        work = {f.strip() for f in args.only.split(",") if f.strip() in entries}
 
     def get(front, key):
         m = re.search(rf'^{key}:\s*"?([^"\n]+)"?$', front, re.M)
@@ -181,9 +185,12 @@ def main():
             if m:
                 k = m.group(1).upper()
                 for kk in (k, k.rstrip("ABCDEFGHJK")):
-                    if kk in navmc_f: return navmc_f[kk], "order"
+                    if kk in navmc_f:
+                        mode2 = "form" if "NAVMC_Forms" in navmc_f[kk] else "order"
+                        return navmc_f[kk], mode2
                 hits = sorted(v for key2, v in navmc_f.items() if key2.rstrip("ABCDEFGHJK") == k.rstrip("ABCDEFGHJK"))
-                if hits: return hits[-1], "order"
+                if hits:
+                    return hits[-1], ("form" if "NAVMC_Forms" in hits[-1] else "order")
         elif typ == "MCBUL":
             m = re.search(r"(\d+)", num)
             if m and m.group(1) in mcbul: return mcbul[m.group(1)], "order"
@@ -241,16 +248,30 @@ def main():
                          "## Access\n\nNo public URL on file. The message text sits in the unit policy archive.")
             new_body = "\n\n".join(parts) + "\n"
         elif mode == "form":
-            title = re.sub(r"^DD\d+[A-Z0-9\-]*_", "", os.path.basename(str(src))[:-4]).replace("_", " ")
+            title = re.sub(r"^(?:DD|NAVMC)[\d.\-A-Z]*[_ ]", "", os.path.basename(str(src))[:-4]).replace("_", " ")
+            ftxt = pdf_text(src, pages=3, archive=P)
+            fpur = re.search(
+                r"(?:PRINCIPAL )?PURPOSE\(?S?\)?:?\s*(.{40,900}?)(?:\s*ROUTINE|\s*DISCLOSURE|\n\s*\n)",
+                ftxt, re.S | re.I)
+            dist = re.search(r"Distribution:\s*([^\n]{3,60})", ftxt)
+            copies = re.search(r"Copy to:\s*([^\n]{3,60})", ftxt)
             parts = []
             if keep: parts.append(keep.strip())
-            parts.append(f"## What this form is\n\n{num}, {title}. Fillable PDF on file from the {snap} DD Forms archive snapshot.")
+            parts.append(f"## What this form is\n\n{num}, {title}. Fillable PDF on file from the {snap} forms archive snapshot.")
+            if fpur:
+                parts.append(f"## Purpose printed on the form\n\n> {clean(fpur.group(1))}\n\nQuoted from the form's Privacy Act statement.")
+            if dist or copies:
+                d = []
+                if dist: d.append(f"Distribution: {dist.group(1).strip()}.")
+                if copies: d.append(f"Copies to: {copies.group(1).strip()}.")
+                parts.append("## Disposition printed on the form\n\n" + " ".join(d))
             parts.append("## Access\n\nThe external link opens the official form page."
                          if has_url else
-                         "## Access\n\nNo public URL on file. Pull the current form from the DoD Forms site or the unit forms library.")
+                         "## Access\n\nNo public URL on file. Pull the current form from the DoD Forms site, Naval Forms Online, or the unit forms library.")
             new_body = "\n\n".join(parts) + "\n"
-            skipped.append({"file": f, "type": typ, "number": num,
-                            "reason": "form gets title-level context only, preparation instructions need SME input"})
+            if not fpur:
+                skipped.append({"file": f, "type": typ, "number": num,
+                                "reason": "form carries no extractable purpose statement, instructions need SME input"})
         elif mode == "dodfmr-vol":
             chapters = sorted(os.path.basename(c) for c in glob.glob(str(src / "*.pdf")))[:30]
             ch_list = "\n".join(f"- {re.sub(r'[_]+', ' ', c[:-4])}" for c in chapters)
