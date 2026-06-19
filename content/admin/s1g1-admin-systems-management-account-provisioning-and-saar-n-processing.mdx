@@ -1,9 +1,9 @@
 ---
 title: "Account Provisioning and SAAR-N Processing - S-1 Procedural Page"
 slug: "account-provisioning-and-saar-n-processing"
-summary: "Process system access requests through SAAR-N submission, role validation, MISSO routing, training, and account activation."
+summary: "Process system access requests. AutoSAAR to MISSA for MCTFS, NIS for UD/MIPS and DTMS. Validate role, train, activate."
 roles: ["admin", "leader", "commander"]
-lastVerified: "2026-05-10"
+lastVerified: "2026-06-18"
 unitType: "s1-g1"
 topic: "admin-systems-management"
 function: "GENA"
@@ -21,13 +21,16 @@ references:
   - "SECNAVINST 5211.5 Department of the Navy Privacy Act Program"
   - "MCO P1070.12K Individual Records Administration Manual"
   - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+  - "MCTFS FoS Access Policy and Procedures 8.0"
+  - "Naval Identity Services (NIS) FAQs UDMIPS and DTMS, 13 March 2026"
 performanceSteps:
   - "Receive the SAAR-N draft from the inbound clerk or billet change order"
   - "Validate billet, MOS, and grade against requested role"
   - "Validate need-to-know with the security manager"
   - "Confirm cyber awareness training is current"
-  - "Build the SAAR-N packet on DD Form 2875"
-  - "Submit to MISSO for MCTFS and UD-MIPS access"
+  - "Build the SAAR packet on the current DD Form 2875"
+  - "Submit the MCTFS manpower SAAR through AutoSAAR to MISSA"
+  - "Request UD-MIPS and DTMS access through NIS"
   - "Submit to RAPIDS for workstation access where required"
   - "Train the clerk on each system before activation"
   - "Activate and test in a training environment when available"
@@ -39,50 +42,77 @@ relatedRoles:
   leader: "/leader/admin-systems-management/account-provisioning-and-saar-n-processing"
   commander: "/commander/admin-systems-management/account-provisioning-and-saar-n-processing"
 source:
-  title: "Account Provisioning and SAAR-N Processing - MCO 5239.2B and MCAP Enclosure 6"
+  title: "Account Provisioning and SAAR-N Processing - MCTFS FoS Access Policy 8.0 and MCO 5239.2B"
   publisher: "Headquarters Marine Corps M&RA"
 ---
 
 ## Role and responsibility
 
-S-1 admin specialists own account provisioning at the unit level. The S-1 clerk receives the SAAR-N request and validates the requested role against the billet. The unit security manager signs the access validation per role-based access rules. The S-1 chief routes the request to MISSO and tracks activation. The S-1 officer signs by direction on privileged role requests.
+S-1 admin specialists own account provisioning at the unit level. The S-1 clerk receives the SAAR request and validates the requested role against the billet. The unit security manager signs the access validation per role-based access rules. The S-1 chief routes the request through AutoSAAR to MISSA and tracks provisioning. The S-1 officer signs by direction on privileged role requests.
 
-Source documents flow from billet assignments, MOS qualification certificates, command guidance on role assignment, and the unit access roster. SAAR-N requests route to MISSO for MCTFS and UD-MIPS access and to RAPIDS for workstation operator access. Outputs include the MISSO activation confirmation, the cyber awareness training certificate, the privileged access agreement when applicable, and the OMPF Field Folder systems tab entry.
+Source documents flow from billet assignments, MOS qualification certificates, command guidance on role assignment, and the unit access roster. MCTFS manpower access submits through AutoSAAR, where MISSA validates and TSO Mainframe Security provisions the account. RAPIDS handles workstation operator access. UD-MIPS and DTMS access routes through Naval Identity Services (NIS), the access manager for Marine Online applications. Outputs include the MISSA approval, the TSO provisioning confirmation, the NIS approval, the cyber awareness training certificate, the privileged access agreement when applicable, and the OMPF Field Folder systems tab entry.
 
-MCAAT inspects the SAAR-N packet for security manager signature, training proof, role-billet alignment, and activation audit trail. A clerk operating without a current SAAR-N triggers a finding under MCO 5239.2B<Citation source="MCO 5239.2B" />. Activate access only after training, not before.
+MCAAT inspects the SAAR packet for security manager signature, training proof, role-billet alignment, and activation audit trail. A clerk operating without a current SAAR triggers a finding under MCO 5239.2B<Citation source="MCO 5239.2B" />. Activate access only after training, not before.
 
 ## Trigger events
 
 - Inbound Marine reports for S-1 duty needing system access.
 - Billet change moves a clerk to a higher access role.
-- New system release requires fresh SAAR-N submission.
+- New system release requires fresh SAAR submission.
 - Cyber awareness training certificate expires triggering reactivation.
 - MOS conversion brings a Marine into the admin field.
 - Reservist activates and requires temporary access on Title 10 orders.
-- Audit identifies a clerk operating without a current SAAR-N.
+- Audit identifies a clerk operating without a current SAAR.
 
 ## Processing workflow
 
-1. Receive the request. Pull the SAAR-N draft from the inbound clerk or the billet change order. Cross-check EDIPI, billet, and requested role. The S-1 clerk runs receipt.
+<Callout variant="info" title="Two access paths, effective 2026">
+MCTFS manpower access submits through AutoSAAR, where MISSA validates and TSO Mainframe Security provisions. UD-MIPS and DTMS access routes through Naval Identity Services (NIS). RAPIDS uses its own workstation operator process. MISSO offices support the field but do not process the SAAR.
+</Callout>
+
+1. Receive the request. Pull the SAAR draft from the inbound clerk or the billet change order. Cross-check EDIPI, billet, and requested role. The S-1 clerk runs receipt.
 2. Validate billet, MOS, and grade. Confirm the role aligns with the billet, the MOS qualifies the Marine for the role, and the grade meets any minimum threshold per MCO 5239.2B<Citation source="MCO 5239.2B" /> Chapter 4.
 3. Validate need-to-know. The unit security manager confirms role-based access aligns with the duty per SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" />. The security manager signs.
-4. Confirm cyber awareness training. Verify the Marine holds a current annual cyber awareness training certificate per DOD 8500.01E<Citation source="DOD 8500.01E" />.
-5. Build the SAAR-N packet. Complete DD Form 2875 with all required signatures. Attach the training certificate and Privacy Act acknowledgment.
-6. Submit MISSO access request. Route DD Form 2875 to MISSO for MCTFS and UD-MIPS access per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
+4. Confirm cyber awareness training. Verify the Marine holds a current annual cyber awareness training certificate per DOD 8500.01E<Citation source="DOD 8500.01E" />. The completion date must sit within twelve months of the SAAR with at least 14 days remaining when MISSA receives it.
+5. Build the SAAR packet. Use the May 2022 DD Form 2875 with the separate Marine Corps User Agreement Addendum Version 1.0, the only acceptable form effective 25 March 2026 per MCTFS FoS Access Policy and Procedures 8.0<Citation source="MCTFS FoS Access Policy and Procedures 8.0" />. Attach the training certificate and Privacy Act acknowledgment.
+6. Submit the MCTFS SAAR through AutoSAAR. Manpower access routes through AutoSAAR to MISSA, not to MISSO. See the AutoSAAR path below. Request UD-MIPS and DTMS access through NIS using the NIS path below.
 7. Submit RAPIDS workstation access. Coordinate with the RAPIDS operator for workstation provisioning when the role requires CAC issuance or DEERS write access.
 8. Train the clerk. Run system-specific training before activation per NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 performance step 3.
 9. Activate the account. Confirm activation in each system. Test a sample transaction in a training environment when available.
 10. Document activation. Cut a Page 11 entry recording system access and training completion per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6.
-11. Update the active account roster. Add EDIPI, role, system, activation date, and SAAR-N reference. The S-1 clerk owns the roster.
-12. File the certified packet. Place the SAAR-N, training certificate, and activation confirmation in the OMPF Field Folder systems tab.
+11. Update the active account roster. Add EDIPI, role, system, activation date, and SAAR reference. The S-1 clerk owns the roster.
+12. File the certified packet. Place the SAAR, training certificate, and activation confirmation in the OMPF Field Folder systems tab.
+
+## MCTFS manpower SAAR through AutoSAAR
+
+MISSA owns MCTFS access, supported by the MISSO offices and RFF. Manpower users submit the SAAR through AutoSAAR at https://autosaar.usmc.mil, not on paper and not through MISSO. Paper DD Form 2875 and INFOMGT are discontinued for manpower access.
+
+1. Confirm the User ACID. The servicing TASO creates the User ACID before the SAAR. The user verifies the ACID exists, then starts the AutoSAAR.
+2. Complete and sign. The user completes the form and signs Block 11, which also signs the Marine Corps User Agreement. AutoSAAR routes to the supervisor.
+3. Supervisor signs. The supervisor must be a SNCO, officer, or GS-07 and above, senior in the user's chain. The supervisor verifies the IA training date in Block 10, signs Block 17d, and AutoSAAR routes to the security manager.
+4. Security manager signs. The security manager verifies the investigation, signs Block 25, and AutoSAAR routes to MISSA.
+5. MISSA validates and routes to TSO. MISSA verifies the form, signs, and submits a JIRA request to TSO Mainframe Security. TSO provisions the account and completes Part IV. MISSA approval is not provisioning, so confirm the account at first login.
+
+Finance access (34xx, disbursing) uses the paper DD Form 2875 plus an INFOMGT or JIRA ticket through the TASO to the RFF OMB, provisioned by TSO and held by RFF.
+
+## NIS request path for UD-MIPS and DTMS
+
+NIS replaces the SAAR route for Marine Online applications. Run these steps for UD-MIPS and DTMS access.
+
+1. Set up the requestor profile. Log in to NIS at https://sp.nis.navy.mil/identityiq/home.jsf. Input the organization address, the billet description, and the Information Assurance training date. Select the correct supervisor. The profile request routes to the supervisor for approval before any role request.
+2. Request the role. Open Manage Access, then Manage My Access. Search the ARUC, click the checkmark until it turns green, and submit.
+3. Validate the training date. The supervisor validates the user-inputted IA training date against the training certificate or existing MCTFS data before approval.
+4. Route for approval. UD-MIPS runs Requestor to Supervisor to Information Owner approver, the Certifier Account Provisioner or Certifier Commander. DTMS adds a Security Manager step, Requestor to Supervisor to Security Manager to Information Owner approver, the Control Agent or CO.
+5. Activate the account. After Information Owner approval, set the user from Pending to Active in UD/MIPS Manage Users. The MOL Administrator Permissions Management page carries the activation detail.
 
 ## Systems of record and forms
 
 ### Systems
 
-- MCTFS. Master record system requiring SAAR-N for access.
+- MCTFS. Master record system. Manpower access submits through AutoSAAR to MISSA, provisioned by TSO Mainframe Security.
 - MOL. Self-service surface tied to MCTFS access.
-- UD-MIPS. Diary cutting and certification system requiring SAAR-N.
+- UD-MIPS. Diary cutting and certification system. Access requested through NIS.
+- DTMS. Document tracking application under Marine Online. Access requested through NIS with an added Security Manager approval step.
 - RAPIDS. CAC and DEERS workstation requiring separate operator certification.
 - OMPF. Personnel file access tied to records billet.
 - TFSMS. Structure system tied to manpower billet.
@@ -90,15 +120,16 @@ MCAAT inspects the SAAR-N packet for security manager signature, training proof,
 
 ### Forms
 
-- DD Form 2875 SAAR-N. Standard access request form.
+- DD Form 2875 (SAAR). Manpower access uses AutoSAAR. Finance access uses the paper form. Effective 25 March 2026, the May 2022 version with the Marine Corps User Agreement Addendum Version 1.0 is the only acceptable form.
 - Privileged Access Agreement. Required for privileged certifier roles.
 - Cyber Awareness Training Certificate. Annual training proof.
 - Active Account Roster. Local register of provisioned access.
+- DD Form 577 Appointment and Termination Record. NIS holds no document uploads, so units maintain 577s externally for DTMS. The self-contained 577 process for UD-MIPS stays unchanged.
 - NAVMC 118 (11) Administrative Remarks. Page 11 documenting system access and training.
 
 ## Common pitfalls
 
-- SAAR-N submitted without security manager signature. MISSO rejects on the first review. Verify all signatures before routing.
+- SAAR submitted without security manager signature. AutoSAAR holds the form at the security manager step. Verify all signatures route before MISSA action.
 - Access activated before cyber awareness training. The clerk operates outside policy. Confirm training before submission per DOD 8500.01E<Citation source="DOD 8500.01E" />.
 - Role mismatch with billet. Clerk overprovisioned for the assigned duty. Verify role-billet alignment per MCO 5239.2B<Citation source="MCO 5239.2B" />.
 - Page 11 entry skipped. The OMPF lands without record of access. Cut the Page 11 within 5 working days of activation per MCO P1070.12K<Citation source="MCO P1070.12K" />.
@@ -107,17 +138,19 @@ MCAAT inspects the SAAR-N packet for security manager signature, training proof,
 ## Decision points
 
 - Standard versus privileged access. The 0111 needs MCTFS or UD-MIPS certifier access. Route through the Privileged Certifier Account Authorization workflow with the privileged access agreement attached per MCO 5239.2B<Citation source="MCO 5239.2B" />.
-- Temporary access for activated reservist. The reservist activates for a 90-day window. The S-1 chief routes a time-limited SAAR-N with explicit sunset date. MISSO closes the account at sunset.
-- Inbound clerk arrives without prior cyber awareness certificate. The clerk runs cyber awareness training as part of the inbound brief before SAAR-N submission per DOD 8500.01E<Citation source="DOD 8500.01E" />.
+- Temporary access for activated reservist. The reservist activates for a 90-day window. The S-1 chief routes a time-limited SAAR with explicit sunset date. MISSA closes the account at sunset.
+- Inbound clerk arrives without prior cyber awareness certificate. The clerk runs cyber awareness training as part of the inbound brief before SAAR submission per DOD 8500.01E<Citation source="DOD 8500.01E" />.
+- Supervisor-submitted NIS request. The supervisor submits the NIS request on behalf of the member. The request routes back to the user to acknowledge and complete, then forward to approval, not back to the supervisor. Each unit sets its own requestor-supervisor assignment and workflow.
 
 ## Authority
 
-This sub-page sits under MCO 5239.2B<Citation source="MCO 5239.2B" /> Marine Corps Cybersecurity Program and MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6, Responsibilities of the Manpower Information Systems Support Office. DoD-level policy at DOD 8500.01E<Citation source="DOD 8500.01E" /> sets the role-based access framework and annual training requirement. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 performance steps 2 and 3 govern administrator permissions and assignment. SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" /> Privacy Act Program governs Privacy Act acknowledgment at access.
+This sub-page sits under MCTFS FoS Access Policy and Procedures 8.0<Citation source="MCTFS FoS Access Policy and Procedures 8.0" />, the MISSA policy for MCTFS access and the AutoSAAR process. MCO 5239.2B<Citation source="MCO 5239.2B" /> Marine Corps Cybersecurity Program and MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6 set S-1 and support-office roles. DoD-level policy at DOD 8500.01E<Citation source="DOD 8500.01E" /> sets the role-based access framework and annual training requirement. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 performance steps 2 and 3 govern administrator permissions and assignment. SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" /> Privacy Act Program governs Privacy Act acknowledgment at access.
 
 ## Related references
 
+- MCTFS FoS Access Policy and Procedures 8.0. MISSA policy for MCTFS access, AutoSAAR, levels of privilege, and account management.
 - MCO 5239.2B Marine Corps Cybersecurity Program. Role-based access provisioning and review rules.
-- MCO 5000.14D Marine Corps Administrative Procedures. MISSO and S-1 roles for system management.
+- MCO 5000.14D Marine Corps Administrative Procedures. MISSA, MISSO, and S-1 roles for system management.
 - DOD 8500.01E Cybersecurity. DoD-level access provisioning and annual training rules.
 - SECNAVINST 5211.5 Privacy Act Program. Privacy Act acknowledgment at access.
 - MCO P1070.12K Individual Records Administration Manual. Page 11 entries documenting access.

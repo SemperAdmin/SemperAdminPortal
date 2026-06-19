@@ -3,7 +3,7 @@ title: "Admin Systems Management - S-1 Procedural Page"
 slug: "overview"
 summary: "Manage S-1 system access, account provisioning, privileged certifier accounts, and audit trails for MCTFS, MOL, UD-MIPS, RAPIDS, OMPF, and TFSMS."
 roles: ["admin", "leader", "commander"]
-lastVerified: "2026-05-10"
+lastVerified: "2026-06-18"
 unitType: "s1-g1"
 topic: "admin-systems-management"
 function: "GENA"
@@ -21,16 +21,18 @@ references:
   - "MCO P1070.12K Individual Records Administration Manual"
   - "DOD 8500.01E Cybersecurity"
   - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+  - "MCTFS FoS Access Policy and Procedures 8.0"
+  - "Naval Identity Services (NIS) FAQs UDMIPS and DTMS, 13 March 2026"
 performanceSteps:
   - "Inventory current S-1 system accounts each reporting period"
-  - "Process new account requests through SAAR-N or MOL workflow"
+  - "Process new account requests through AutoSAAR to MISSA for MCTFS, RAPIDS for workstations, and NIS for UD-MIPS and DTMS"
   - "Validate role-based access against billet"
   - "Run quarterly account reviews with the security manager"
   - "Disable accounts at detach within 24 hours"
   - "Audit privileged certifier accounts each month"
-  - "Coordinate MISSO support cases for system errors"
+  - "Coordinate MISSA and RFF support cases for system errors"
   - "Maintain backup processing capability for outages"
-  - "Document system change requests through MISSO"
+  - "Document system change requests through MISSA"
   - "Train inbound clerks on each system before granting access"
   - "Track system outages and remediation in the unit log"
   - "Close every account on transfer or separation"
@@ -47,9 +49,13 @@ source:
 
 S-1 admin specialists own system account management for every personnel and pay system the section touches. The S-1 chief supervises account provisioning and quarterly review. The S-1 officer signs by direction on access requests and approves privileged certifier accounts. The unit security manager reviews access against role and need-to-know per MCO 5239.2B<Citation source="MCO 5239.2B" />.
 
-Source documents flow from billet assignments, SAAR-N requests, and MOL workflow approvals. Account state lives across MCTFS, MOL, UD-MIPS, RAPIDS, OMPF, TFSMS, and DEERS. Outputs include the active account roster, the privileged certifier list, the quarterly review signature, and the disabled account log.
+Source documents flow from billet assignments, AutoSAAR submissions, and NIS access requests for Marine Online applications. Account state lives across MCTFS, MOL, UD-MIPS, RAPIDS, OMPF, TFSMS, and DEERS. Outputs include the active account roster, the privileged certifier list, the quarterly review signature, and the disabled account log.
 
 MCAAT inspects account rosters for stale accounts, unverified certifier credentials, and missing quarterly review signatures. A separated Marine with an active account triggers a finding under DOD 8500.01E<Citation source="DOD 8500.01E" />. Disable accounts at the moment of detach, not at the next review.
+
+<Callout variant="info" title="Two access paths, effective 2026">
+MCTFS manpower access submits through AutoSAAR, where MISSA validates and TSO Mainframe Security provisions. Naval Identity Services (NIS) governs UD-MIPS and DTMS. RAPIDS uses its own workstation operator process. Route every request to the correct path. The Account Provisioning and SAAR-N Processing page carries both paths.
+</Callout>
 
 ## Trigger events
 
@@ -59,30 +65,31 @@ MCAAT inspects account rosters for stale accounts, unverified certifier credenti
 - Billet change moving an 0111 to a higher access role.
 - System outage requiring backup processing capability.
 - New release of a system requiring training before access.
-- MISSO support case opened for a system error.
+- MISSA or RFF support case opened for a system error.
 
 ## Processing workflow
 
-1. Receive the access request. Pull the SAAR-N or MOL workflow request. Cross-check billet, MOS, and grade against the requested role. The S-1 clerk runs receipt.
+1. Receive the access request. Pull the AutoSAAR or NIS request. Cross-check billet, MOS, and grade against the requested role. The S-1 clerk runs receipt.
 2. Validate role and need-to-know. Confirm the access role aligns with the billet and need per MCO 5239.2B<Citation source="MCO 5239.2B" /> Chapter 4. The security manager signs the validation.
-3. Process the account request. Submit to MISSO for MCTFS and UD-MIPS access. Submit to RAPIDS for the issuing-system workstation. The S-1 chief routes.
+3. Process the account request. Submit the MCTFS manpower SAAR through AutoSAAR to MISSA. Request UD-MIPS and DTMS access through NIS. Submit to RAPIDS for the issuing-system workstation. The S-1 chief routes.
 4. Train the inbound clerk. Run the system-specific training before activating access. Document the training in a Page 11 entry per MCO P1070.12K<Citation source="MCO P1070.12K" />.
 5. Activate the account. Confirm activation in each system. Test transaction submission against a test member or training environment.
 6. Inventory active accounts. Maintain the unit account roster with name, EDIPI, role, system, and effective date. The S-1 clerk owns the roster.
 7. Run quarterly account reviews. Compare the account roster against the unit billet roster. Flag stale accounts. The security manager and S-1 chief sign the review.
-8. Disable accounts at detach. Submit account close requests to MISSO and RAPIDS within 24 hours of certified detach per DOD 8500.01E<Citation source="DOD 8500.01E" />.
+8. Disable accounts at detach. Delete the MCTFS User ACID through the TASO and submit RAPIDS closure within 24 hours of certified detach per DOD 8500.01E<Citation source="DOD 8500.01E" />.
 9. Audit privileged certifier accounts each month. Verify the certifier list against the diary certification log. The S-1 chief signs the audit.
-10. Manage system outages. Coordinate with MISSO on outage status. Run backup processing per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> outage procedures.
-11. Document system change requests. Route enhancement and bug requests through MISSO. Track resolution in the unit system log.
-12. Close the access cycle. File the SAAR-N, training records, and account close request in the OMPF Field Folder under the systems tab.
+10. Manage system outages. Coordinate with MISSA on outage status. Run backup processing per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> outage procedures.
+11. Document system change requests. Route enhancement and bug requests through MISSA. Track resolution in the unit system log.
+12. Close the access cycle. File the SAAR, training records, and account close confirmation in the OMPF Field Folder under the systems tab.
 
 ## Systems of record and forms
 
 ### Systems
 
-- MCTFS. The personnel and pay master record system.
+- MCTFS. The personnel and pay master record system. Manpower access submits through AutoSAAR to MISSA.
 - MOL. The Marine self-service and order delivery surface.
-- UD-MIPS. The unit diary cutting and certification system.
+- NIS. The access manager for Marine Online applications, including UD-MIPS and DTMS.
+- UD-MIPS. The unit diary cutting and certification system. Access through NIS.
 - RAPIDS. CAC issuing and DEERS update station.
 - OMPF. The official military personnel file system.
 - TFSMS. The T-O and T-E manning system.
@@ -90,7 +97,7 @@ MCAAT inspects account rosters for stale accounts, unverified certifier credenti
 
 ### Forms
 
-- DD Form 2875 SAAR-N. Standard access request for Navy and Marine Corps systems.
+- DD Form 2875 (SAAR). MCTFS manpower access uses AutoSAAR. The May 2022 version with the Marine Corps User Agreement Addendum Version 1.0 is the only acceptable form effective 25 March 2026.
 - NAVMC 118 (11) Administrative Remarks. Page 11 documenting system training.
 - DD Form 2842 DoD CAC PIN Reset Standard Form. Used at RAPIDS for CAC operations.
 - Privileged Access Agreement. Required for MCTFS certifier accounts.
@@ -101,21 +108,22 @@ MCAAT inspects account rosters for stale accounts, unverified certifier credenti
 - Privileged certifier account held by an untrained Marine. The Marine signs diary lines without the privileged access agreement. Suspend the account and run training before reactivation per MCO 5239.2B<Citation source="MCO 5239.2B" />.
 - Quarterly review skipped. The roster diverges from the billet picture. Run the review on a fixed cycle and sign the roster.
 - Outage processing not staged. The system goes down and the section halts. Maintain a backup processing kit with paper templates per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> outage section.
-- SAAR-N submitted without security manager signature. MISSO rejects the request. Verify all signatures before routing.
+- SAAR submitted without security manager signature. AutoSAAR holds the form at the security manager step. Verify all signatures route before MISSA action.
 
 ## Decision points
 
-- Privileged certifier authorization. The 0111 reaches the SSgt-with-DoR threshold for certifier access. The S-1 officer signs the privileged access agreement before MISSO activates the role per MCO 5239.2B<Citation source="MCO 5239.2B" />.
-- Outage backup activation. The system outage exceeds the daily processing window. The S-1 chief activates paper backup processing and notifies MISSO.
+- Privileged certifier authorization. The 0111 reaches the SSgt-with-DoR threshold for certifier access. The S-1 officer signs the privileged access agreement before MISSA validates the role per MCO 5239.2B<Citation source="MCO 5239.2B" />.
+- Outage backup activation. The system outage exceeds the daily processing window. The S-1 chief activates paper backup processing and notifies MISSA.
 - Account suspension on misconduct. The Marine is under investigation affecting integrity of the certified record. The S-1 officer suspends the account pending resolution per MCO P1070.12K<Citation source="MCO P1070.12K" />.
 
 ## Authority
 
-This category sits under MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6, Responsibilities of the Manpower Information Systems Support Office, and MCO 5239.2B<Citation source="MCO 5239.2B" /> Marine Corps Cybersecurity Program. DoD-level policy at DOD 8500.01E<Citation source="DOD 8500.01E" /> sets account provisioning and disablement rules. The processing workflow maps to NAVMC 3500.3E T-R event 0102-GENA-1015 Manage Marine Online (MOL) modules and supervisory events under 0170-PERA-2009 Manage personnel data analytics. The MCAAT admin track admin-systems-management is the audit reference for this functional area.
+This category sits under MCTFS FoS Access Policy and Procedures 8.0<Citation source="MCTFS FoS Access Policy and Procedures 8.0" />, the MISSA policy for MCTFS access, and MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6, Responsibilities of the Manpower Information Systems Support Office, and MCO 5239.2B<Citation source="MCO 5239.2B" /> Marine Corps Cybersecurity Program. DoD-level policy at DOD 8500.01E<Citation source="DOD 8500.01E" /> sets account provisioning and disablement rules. The processing workflow maps to NAVMC 3500.3E T-R event 0102-GENA-1015 Manage Marine Online (MOL) modules and supervisory events under 0170-PERA-2009 Manage personnel data analytics. The MCAAT admin track admin-systems-management is the audit reference for this functional area.
 
 ## Related references
 
-- MCO 5000.14D Marine Corps Administrative Procedures. Defines MISSO and S-1 roles for system management.
+- MCTFS FoS Access Policy and Procedures 8.0. MISSA policy for MCTFS access, AutoSAAR, and account management.
+- MCO 5000.14D Marine Corps Administrative Procedures. Defines MISSA, MISSO, and S-1 roles for system management.
 - MCO 5239.2B Marine Corps Cybersecurity Program. Sets access provisioning, role-based access, and account review rules.
 - MCTFSPRIUM. Reporting instructions and outage processing procedures.
 - DOD 8500.01E Cybersecurity. DoD-level account disablement and audit rules.

@@ -1,9 +1,9 @@
 ---
 title: "MOL Administrator Permissions Management - S-1 Procedural Page"
 slug: "mol-administrator-permissions-management"
-summary: "Acquire MOL administrator permissions, assign module-level access per command guidance, and remove permissions at detach or role change."
+summary: "Manage Marine Online access through NIS, assign module-level permissions, activate UD/MIPS users, and remove access at detach or role change."
 roles: ["admin", "leader", "commander"]
-lastVerified: "2026-05-10"
+lastVerified: "2026-06-18"
 unitType: "s1-g1"
 topic: "admin-systems-management"
 function: "GENA"
@@ -20,15 +20,19 @@ references:
   - "MCO 5239.2B Marine Corps Cybersecurity Program"
   - "MCO P1070.12K Individual Records Administration Manual"
   - "MOL Users Manual"
+  - "MCTFS FoS Access Policy and Procedures 8.0"
+  - "Naval Identity Services (NIS) FAQs UDMIPS and DTMS, 13 March 2026"
 performanceSteps:
   - "Publish command guidance on MOL access scope"
-  - "Acquire MOL administrator permissions through MISSO"
+  - "Acquire MOL administrator entitlements through MISSA"
   - "Identify required users by billet and module"
   - "Assign module-level permissions"
   - "Validate access in each assigned module"
   - "Train users on assigned modules"
   - "Document permission assignments in a Page 11 entry"
   - "Audit permissions monthly against the billet roster"
+  - "Activate UD/MIPS users in Manage Users from pending to active"
+  - "Run the DTMS Manage Permissions Annual Review"
   - "Remove permissions on detach or role change"
   - "Reconcile the permission roster against the billet roster"
 relatedRoles:
@@ -42,9 +46,9 @@ source:
 
 ## Role and responsibility
 
-The S-1 officer (0102) owns command guidance on MOL access scope. The S-1 chief (0111 SSgt or higher) holds MOL administrator permissions and assigns module-level access to clerks. The S-1 clerk operates within the assigned module set. The unit security manager audits MOL permissions during the quarterly account review.
+The S-1 officer (0102) owns command guidance on MOL access scope. The S-1 chief (0111 SSgt or higher) holds MOL administrator entitlements and assigns module-level access to clerks. The S-1 clerk operates within the assigned module set. The unit security manager audits MOL permissions during the quarterly account review.
 
-Source documents flow from command guidance memos, billet assignments, and SAAR-N submissions tied to MOL access. MOL administrator actions live inside the MOL administrator interface. Outputs include the permission roster, the Page 11 entries documenting access, and the OMPF Field Folder systems tab entry per Marine.
+Source documents flow from command guidance memos, billet assignments, and the NIS access requests tied to Marine Online access. Administrator actions live inside NIS Manage Permissions for DTMS and UD/MIPS Manage Users, and inside the MOL administrator interface for the remaining modules. MISSA is the functional manager for MOL Permission Management and User Management. Outputs include the permission roster, the Page 11 entries documenting access, and the OMPF Field Folder systems tab entry per Marine.
 
 MCAAT inspects the permission roster against the billet roster, the command guidance memo, and the monthly audit signature. Blanket permissions, stale permissions on departed Marines, and permissions assigned without command guidance trigger findings under MCO 5239.2B<Citation source="MCO 5239.2B" />.
 
@@ -60,8 +64,12 @@ MCAAT inspects the permission roster against the billet roster, the command guid
 
 ## Processing workflow
 
+<Callout variant="info" title="NIS access workflow, effective 17 March 2026">
+Naval Identity Services (NIS) manages Marine Online access. Assign and review DTMS permissions through NIS Manage Permissions. List and activate UD/MIPS users through Manage Users. UD/MIPS Manage Users stays tied to the Certifier Commander and Certifier Account Provisioner roles and lists all RUC user information for those roles.
+</Callout>
+
 1. Publish command guidance. The S-1 officer issues a command memo defining MOL access scope by billet, module, and grade per NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 performance step 1.
-2. Acquire MOL administrator permissions. The S-1 chief submits a SAAR-N for administrator access through MISSO per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
+2. Acquire MOL administrator entitlements. The S-1 chief requests the MOL administrator entitlements through MISSA, the functional manager for MOL Permission Management, per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
 3. Identify required users. Cross-check the billet roster against the command guidance to identify which users need which modules.
 4. Assign module-level permissions. Use the MOL administrator interface to assign permissions per user per module. Cover CLA, DTMS, MROWS, promotions, pro and con marks, APES, OMPF, personnel information, UMSR, BIC assignment, leave management, and permissions per the T-R event misc note.
 5. Validate access. Confirm the user navigates each assigned module per NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 performance step 4.
@@ -71,17 +79,27 @@ MCAAT inspects the permission roster against the billet roster, the command guid
 9. Remove permissions on detach. Remove all module-level permissions at certified detach per NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 performance step 5.
 10. Reconcile against the billet roster. Update the permission roster after every change. Reconcile at the next quarterly review.
 
+## NIS Manage Users and Manage Permissions
+
+NIS carries user activation and annual review for Marine Online applications.
+
+1. Activate the UD/MIPS user. After the Information Owner approves the request, open Manage Users in UD/MIPS and set the account from pending to active. The account stays inactive until you make this change.
+2. List RUC users. Manage Users lists all RUC user information for the Certifier Commander and Certifier Account Provisioner roles. The list ties to those Certifier roles and does not assign outside those NIS UD/MIPS entitlements.
+3. Run the DTMS Annual Review. For DTMS-enabled organizations, the Manage Permissions Annual Review lists all DTMS assigned users. The review keeps the ability to unsuspend users held for inactivity.
+
 ## Systems of record and forms
 
 ### Systems
 
+- NIS Manage Permissions. Assigns and reviews DTMS permissions, including the Annual Review of DTMS assigned users.
+- UD/MIPS Manage Users. Lists RUC users and activates accounts from pending to active for the Certifier Commander and Certifier Account Provisioner roles.
 - MOL Administrator Interface. Source of truth for assigned permissions per user per module.
 - MOL Modules. CLA, DTMS, MROWS, promotions, pro and con marks, APES, OMPF, personnel information, UMSR, BIC assignment, leave management, and permissions.
-- MISSO portal. Routes the administrator SAAR-N.
+- MISSA. Functional manager for MOL Permission Management and User Management.
 
 ### Forms
 
-- DD Form 2875 SAAR-N. Submission for administrator permissions.
+- NIS Access Request. Submission for MOL administrator entitlements through MISSA.
 - Command Guidance Memo. Defines access scope.
 - MOL Permission Roster. Local register of assigned permissions.
 - NAVMC 118 (11) Administrative Remarks. Page 11 documenting MOL access.
@@ -98,16 +116,17 @@ MCAAT inspects the permission roster against the billet roster, the command guid
 
 - Module assignment by billet versus by individual. The command guidance assigns by billet. Individual exceptions route through the S-1 officer for written waiver per MCO 5239.2B<Citation source="MCO 5239.2B" />.
 - Permission suspension on misconduct. The clerk is under investigation affecting record integrity. The S-1 officer suspends MOL access pending resolution per MCO P1070.12K<Citation source="MCO P1070.12K" />.
-- Cross-unit permissions for IPAC support. The IPAC clerk needs MOL access to multiple unit RUCs. The S-1 chief coordinates with the IPAC and MISSO on the cross-unit permission scope.
+- Cross-unit permissions for IPAC support. The IPAC clerk needs MOL access to multiple unit RUCs. The S-1 chief coordinates with the IPAC and MISSA on the cross-unit permission scope.
 
 ## Authority
 
-This sub-page sits under NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 Manage Marine Online (MOL) modules, which defines all five performance steps. MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6 establishes MISSO support for MOL administrator access. MCO 5239.2B<Citation source="MCO 5239.2B" /> Marine Corps Cybersecurity Program sets least-privilege and need-to-know rules. The MOL Users Manual<Citation source="MOL Users Manual" /> documents module functionality and release notes.
+This sub-page sits under NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 Manage Marine Online (MOL) modules, which defines all five performance steps. MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6 establishes MISSA support for MOL administrator access. MCTFS FoS Access Policy and Procedures 8.0<Citation source="MCTFS FoS Access Policy and Procedures 8.0" /> covers MOL service responsibility and access control. MCO 5239.2B<Citation source="MCO 5239.2B" /> Marine Corps Cybersecurity Program sets least-privilege and need-to-know rules. The MOL Users Manual<Citation source="MOL Users Manual" /> documents module functionality and release notes.
 
 ## Related references
 
 - NAVMC 3500.3E Manpower and Administration T-R Manual. Event 0102-GENA-1015 governs MOL administrator permissions.
-- MCO 5000.14D Marine Corps Administrative Procedures. MISSO support for MOL administrator SAAR-N.
+- MCO 5000.14D Marine Corps Administrative Procedures. MISSA support for MOL administrator access.
+- MCTFS FoS Access Policy and Procedures 8.0. MOL service responsibility and access control.
 - MCO 5239.2B Marine Corps Cybersecurity Program. Least-privilege framework.
 - MCO P1070.12K Individual Records Administration Manual. Page 11 entries documenting MOL access.
 - MOL Users Manual. Module functionality and release notes.

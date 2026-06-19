@@ -1,9 +1,9 @@
 ---
 title: "New System Release Onboarding - S-1 Procedural Page"
 slug: "new-system-release-onboarding"
-summary: "Coordinate training and access activation for new system releases, document change management through MISSO, and update the unit system log."
+summary: "Coordinate training and access activation for new system releases, document change management through MISSA, and update the unit system log."
 roles: ["admin", "leader", "commander"]
-lastVerified: "2026-05-10"
+lastVerified: "2026-06-18"
 unitType: "s1-g1"
 topic: "admin-systems-management"
 function: "GENA"
@@ -21,13 +21,15 @@ references:
   - "MOL Users Manual"
   - "MCO P1070.12K Individual Records Administration Manual"
   - "NAVMC 3500.3E Manpower and Administration T-R Manual"
+  - "MCTFS FoS Access Policy and Procedures 8.0"
+  - "Naval Identity Services (NIS) FAQs UDMIPS and DTMS, 13 March 2026"
 performanceSteps:
-  - "Receive the release notification from MISSO"
+  - "Receive the release notification from MISSA"
   - "Identify users affected by the release"
   - "Schedule release training before access activation"
   - "Conduct release training to the user manual"
   - "Document training in a Page 11 entry"
-  - "Request access activation through MISSO"
+  - "Request access activation through MISSA"
   - "Validate the release in a test transaction"
   - "Document the change in the unit system log"
   - "Brief the chain on the new functionality"
@@ -43,17 +45,18 @@ source:
 
 ## Role and responsibility
 
-S-1 admin specialists own new system release onboarding at the unit level. The S-1 chief coordinates training before activation and routes activation requests through MISSO. The S-1 officer authorizes activation on completion of training and signs the release brief to the chain. The IPAC release coordinator runs parallel onboarding for installation-tied accounts.
+S-1 admin specialists own new system release onboarding at the unit level. The S-1 chief coordinates training before activation and routes activation requests through MISSA. The S-1 officer authorizes activation on completion of training and signs the release brief to the chain. The IPAC release coordinator runs parallel onboarding for installation-tied accounts.
 
-Source documents flow from MISSO release notifications, MOL Users Manual updates, MCTFSPRIUM updates, and module-specific release notes. Onboarding actions touch every system the release affects. Outputs include the training roster, the activation confirmation per user, the unit system log entry, and the OMPF Field Folder Page 11 entry documenting training.
+Source documents flow from MISSA release notifications, MOL Users Manual updates, MCTFSPRIUM updates, and module-specific release notes. Onboarding actions touch every system the release affects. Outputs include the training roster, the activation confirmation per user, the unit system log entry, and the OMPF Field Folder Page 11 entry documenting training.
 
 MCAAT inspects the system log for release documentation, training records for completion before activation, and the unit access roster for post-release accuracy. Access activated before training triggers a finding under MCO 5239.2B<Citation source="MCO 5239.2B" />. Train before activate, every release.
 
 ## Trigger events
 
-- MISSO releases a new MOL module or major MOL update.
+- MISSA releases a new MOL module or major MOL update.
 - MCTFSPRIUM update changes transaction codes or KSD requirements.
 - New UD-MIPS release alters certifier or clerk workflow.
+- NIS releases or updates the access manager for Marine Online applications.
 - RAPIDS release changes CAC or DEERS workflow.
 - TFSMS release changes T-O or T-E reporting.
 - Pre-release notification arrives requiring readiness check.
@@ -61,12 +64,16 @@ MCAAT inspects the system log for release documentation, training records for co
 
 ## Processing workflow
 
-1. Receive the release notification. Pull from the MISSO support portal, the M&RA release feed, or the MOL administrator interface. Cross-check release date and affected systems. The S-1 clerk runs receipt.
+<Callout variant="info" title="NIS release, 17 March 2026">
+Naval Identity Services (NIS) released on 17 March 2026 as the access manager for Marine Online applications, including UD-MIPS and DTMS. NIS migrated existing users at release, so only new users follow the NIS request path. No preparatory training period ran before the UD-MIPS implementation. Brief the section on the new request and approval workflow and update the unit system log.
+</Callout>
+
+1. Receive the release notification. Pull from the MISSA support portal, the M&RA release feed, or the MOL administrator interface. Cross-check release date and affected systems. The S-1 clerk runs receipt.
 2. Identify affected users. Cross-check the active account roster against the affected systems. Build a release impact list. The S-1 chief identifies.
 3. Schedule release training. Set a training date before the activation date. The S-1 chief schedules.
 4. Conduct release training. Run training to the updated MOL Users Manual<Citation source="MOL Users Manual" /> or MCTFSPRIUM<Citation source="MCTFSPRIUM" /> release notes per NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015.
 5. Document training. Cut a Page 11 entry per user recording release training and date completed per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6.
-6. Request access activation. Route activation requests through MISSO per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
+6. Request access activation. Route activation requests through MISSA per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
 7. Validate the release. Run a test transaction in a training environment when available. Confirm functionality matches the user manual.
 8. Document the change. Record the release date, affected systems, training date, activation date, and validation outcome in the unit system log per MCO 5239.2B<Citation source="MCO 5239.2B" />.
 9. Brief the chain. Present the release scope, new functionality, and any process changes to the chain on a fixed cycle.
@@ -76,7 +83,7 @@ MCAAT inspects the system log for release documentation, training records for co
 
 ### Systems
 
-- MISSO support portal. Source of release notifications and activation requests.
+- MISSA support portal. Source of release notifications and activation requests for MISSA-owned services.
 - MOL, MCTFS, UD-MIPS, RAPIDS, TFSMS. Affected systems under release.
 - Unit system log. Local register of release events.
 - MOL Users Manual and MCTFSPRIUM. Authoritative release documentation.
@@ -90,25 +97,26 @@ MCAAT inspects the system log for release documentation, training records for co
 ## Common pitfalls
 
 - Access activated before training. The clerk operates without release knowledge. Train first, activate second per MCO 5239.2B<Citation source="MCO 5239.2B" />.
-- Release notification missed. The unit operates on the prior release while MISSO has rolled forward. Subscribe to the MISSO release feed.
+- Release notification missed. The unit operates on the prior release while MISSA has rolled forward. Subscribe to the MISSA release feed.
 - Test transaction skipped. The release defect surfaces in production. Test before live use when a training environment is available.
 - Manual copy not refreshed. The unit references stale documentation. Refresh the local copy at every release.
 - System log not updated. The audit trail breaks. Update at every release per MCO 5239.2B<Citation source="MCO 5239.2B" />.
 
 ## Decision points
 
-- Phased rollout versus full activation. MISSO releases in waves. The S-1 chief activates per the wave assigned to the unit, not ahead of schedule.
-- Emergency patch versus scheduled release. The patch arrives outside the normal cycle. The S-1 officer authorizes immediate activation when MISSO designates the release as a security patch per MCO 5239.2B<Citation source="MCO 5239.2B" />.
-- Training rollback. The release introduces a defect requiring rollback. Coordinate with MISSO and brief the chain on the temporary process per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
+- Phased rollout versus full activation. MISSA releases in waves. The S-1 chief activates per the wave assigned to the unit, not ahead of schedule.
+- Emergency patch versus scheduled release. The patch arrives outside the normal cycle. The S-1 officer authorizes immediate activation when MISSA designates the release as a security patch per MCO 5239.2B<Citation source="MCO 5239.2B" />.
+- Training rollback. The release introduces a defect requiring rollback. Coordinate with MISSA and brief the chain on the temporary process per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
 
 ## Authority
 
-This sub-page sits under MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6, MISSO release support. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 covers training as part of MOL administrator duties. MCO 5239.2B<Citation source="MCO 5239.2B" /> Marine Corps Cybersecurity Program sets the train-before-activate principle. The MOL Users Manual<Citation source="MOL Users Manual" /> and MCTFSPRIUM<Citation source="MCTFSPRIUM" /> are the authoritative release documentation.
+This sub-page sits under MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6, MISSA release support, and MCTFS FoS Access Policy and Procedures 8.0<Citation source="MCTFS FoS Access Policy and Procedures 8.0" /> for MCTFS access changes. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 covers training as part of MOL administrator duties. MCO 5239.2B<Citation source="MCO 5239.2B" /> Marine Corps Cybersecurity Program sets the train-before-activate principle. The MOL Users Manual<Citation source="MOL Users Manual" /> and MCTFSPRIUM<Citation source="MCTFSPRIUM" /> are the authoritative release documentation.
 
 ## Related references
 
-- MCO 5000.14D Marine Corps Administrative Procedures. MISSO release coordination.
+- MCO 5000.14D Marine Corps Administrative Procedures. MISSA release coordination.
 - MCO 5239.2B Marine Corps Cybersecurity Program. Train-before-activate framework.
+- MCTFS FoS Access Policy and Procedures 8.0. MCTFS access changes under MISSA.
 - MCTFSPRIUM. Release notes for MCTFS and UD-MIPS transactions.
 - MOL Users Manual. Release notes for MOL modules.
 - MCO P1070.12K Individual Records Administration Manual. Page 11 entries documenting training.

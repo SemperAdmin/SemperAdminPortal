@@ -3,7 +3,7 @@ title: "Account Closure at Detach - S-1 Procedural Page"
 slug: "account-closure-at-detach"
 summary: "Disable S-1 system accounts within 24 hours of certified detach across MCTFS, MOL, UD-MIPS, RAPIDS, OMPF, and TFSMS."
 roles: ["admin", "leader", "commander"]
-lastVerified: "2026-05-10"
+lastVerified: "2026-06-18"
 unitType: "s1-g1"
 topic: "admin-systems-management"
 function: "GENA"
@@ -21,13 +21,16 @@ references:
   - "MCO P1070.12K Individual Records Administration Manual"
   - "NAVMC 3500.3E Manpower and Administration T-R Manual"
   - "SECNAVINST 5211.5 Department of the Navy Privacy Act Program"
+  - "MCTFS FoS Access Policy and Procedures 8.0"
+  - "Naval Identity Services (NIS) FAQs UDMIPS and DTMS, 13 March 2026"
 performanceSteps:
   - "Detect the certified detach in UD-MIPS"
   - "Pull the active account roster for the departing Marine"
   - "Build closure requests per system"
-  - "Submit MISSO closure for MCTFS and UD-MIPS"
+  - "Delete the MCTFS User ACID through the losing command TASO"
   - "Submit RAPIDS closure for CAC and DEERS"
   - "Remove MOL administrator permissions per T-R event 0102-GENA-1015"
+  - "Confirm NIS revocation of UD-MIPS and DTMS permissions"
   - "Pull closure confirmations within 24 hours"
   - "Update the disabled account log"
   - "Stage the audit-trail PDF in the OMPF Field Folder"
@@ -39,15 +42,15 @@ relatedRoles:
   leader: "/leader/admin-systems-management/account-closure-at-detach"
   commander: "/commander/admin-systems-management/account-closure-at-detach"
 source:
-  title: "Account Closure at Detach - MCAP Enclosure 6 and DOD 8500.01E"
+  title: "Account Closure at Detach - MCTFS FoS Access Policy 8.0 and DOD 8500.01E"
   publisher: "Headquarters Marine Corps M&RA"
 ---
 
 ## Role and responsibility
 
-S-1 admin specialists own account closure at detach for every system the section touches. The S-1 chief tracks each detach against the active account roster and submits closure requests within 24 hours of certified detach. The S-1 officer signs by direction on the close request and validates the closure against the disabled account log. The unit security manager audits closures during the quarterly account review.
+S-1 admin specialists own account closure at detach for every system the section touches. The S-1 chief tracks each detach against the active account roster and drives closure within 24 hours of certified detach. The S-1 officer signs by direction and validates the closure against the disabled account log. The unit security manager audits closures during the quarterly account review.
 
-Source documents flow from the certified UD-MIPS detach transaction, the OMPF Field Folder closeout, and the disabled account log. Closure requests route to MISSO for MCTFS and UD-MIPS accounts and to the RAPIDS workstation operator for CAC and DEERS access. Outputs include the closure confirmation per system, the dated entry in the disabled account log, and the audit-trail PDF filed in the OMPF Field Folder systems tab.
+Source documents flow from the certified UD-MIPS detach transaction, the OMPF Field Folder closeout, and the disabled account log. MCTFS account closure runs through the losing command TASO, who deletes the User ACID at checkout. UD-MIPS and DTMS permissions revoke through Naval Identity Services (NIS). The RAPIDS workstation operator handles CAC and DEERS access. Outputs include the closure confirmation per system, the dated entry in the disabled account log, and the audit-trail PDF filed in the OMPF Field Folder systems tab.
 
 MCAAT inspects the disabled account log for closure within 24 hours of certified detach, paper trail completeness, and quarterly review reconciliation. A separated Marine retaining MCTFS access past 24 hours triggers a finding under DOD 8500.01E<Citation source="DOD 8500.01E" />. Close at certified detach, not at the next batch cycle.
 
@@ -63,13 +66,17 @@ MCAAT inspects the disabled account log for closure within 24 hours of certified
 
 ## Processing workflow
 
+<Callout variant="info" title="NIS permission revocation, effective 17 March 2026">
+For UD-MIPS and DTMS, Naval Identity Services (NIS) revokes permissions on its own schedule alongside the manual closure here. The user or the supervisor revokes permissions manually at any time. NIS also revokes automatically on CAC deprovisioning at 3 days, on an unactioned Mover event at 30 days, or on a NIS trouble ticket. Do not rely on auto-revocation for detach. Submit closure at certified detach.
+</Callout>
+
 1. Detect the detach event. Pull the certified detach transaction from UD-MIPS at the moment of submission. Cross-check EDIPI, losing RUC, and detach date. The S-1 clerk runs detection.
 2. Pull the active account roster for the departing Marine. Identify every system the Marine touches (MCTFS, MOL, UD-MIPS, RAPIDS, OMPF, TFSMS, DEERS). The S-1 clerk pulls.
-3. Build the closure request packet. Stage one closure request per system with EDIPI, role, system, and effective close date.
-4. Submit MISSO closure requests. Route requests for MCTFS and UD-MIPS access through the MISSO support channel per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
+3. Build the closure request packet. Stage one closure action per system with EDIPI, role, system, and effective close date.
+4. Delete the MCTFS User ACID. The losing command TASO deletes the User ACID at checkout per MCTFS FoS Access Policy and Procedures 8.0<Citation source="MCTFS FoS Access Policy and Procedures 8.0" />. Mainframe accounts also auto-suspend at 30 days of non-use and auto-delete at 45 days per MCEN Operational Advisory 294-16, but the TASO deletes at detach, not on the non-use clock. Revoke UD-MIPS and DTMS permissions through NIS by manual action at detach.
 5. Submit RAPIDS closure. Coordinate with the RAPIDS workstation operator for CAC suspension and DEERS access removal at the moment of detach.
-6. Remove MOL administrator permissions. Use the MOL administrator interface to remove module-level permissions for the departing Marine per NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 performance step 5.
-7. Confirm closure per system. Pull confirmation messages from MISSO and the RAPIDS log within 24 hours per DOD 8500.01E<Citation source="DOD 8500.01E" />.
+6. Remove MOL administrator permissions. Use NIS and the MOL administrator interface to remove module-level permissions for the departing Marine per NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 performance step 5.
+7. Confirm closure per system. Confirm the TASO deleted the User ACID, confirm NIS revocation, and pull the RAPIDS log within 24 hours per DOD 8500.01E<Citation source="DOD 8500.01E" />.
 8. Update the disabled account log. Record EDIPI, system, close date, and confirmation reference for every closure. The S-1 clerk owns the log entry.
 9. Stage the audit-trail PDF. Print closure confirmations and stage in the OMPF Field Folder under the systems tab per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 3.
 10. Reconcile against the next quarterly review. Validate the disabled account log against the unit billet roster at the next quarterly account review cycle.
@@ -80,43 +87,44 @@ MCAAT inspects the disabled account log for closure within 24 hours of certified
 
 ### Systems
 
-- MCTFS. Account state closed at the MISSO request.
-- MOL. Module-level permissions removed by the S-1 chief through the MOL administrator interface.
-- UD-MIPS. Certifier and clerk roles closed at the MISSO request.
+- MCTFS. User ACID deleted by the losing command TASO at checkout. Auto-suspend at 30 days of non-use, auto-delete at 45 days.
+- MOL. Module-level permissions removed through NIS and the MOL administrator interface.
+- UD-MIPS. Certifier and clerk roles revoked through NIS by manual action or the NIS auto-revocation schedule.
 - RAPIDS. CAC suspension and DEERS access removal handled at the workstation.
 - OMPF. Read access closed for the departing clerk.
 - TFSMS. T-O and T-E access closed for the departing manpower clerk.
 
 ### Forms
 
-- MISSO Account Close Request. Standard form for MCTFS and UD-MIPS closure.
+- TASO ACID Deletion. The losing command TASO deletes the MCTFS User ACID at checkout. Accounts cannot be reused or renamed.
 - DD Form 2842 RAPIDS Workstation Operator Form. Used for CAC and DEERS access removal.
 - Disabled Account Log. Local register tracking each closure with confirmation reference.
 - NAVMC 118 (11) Administrative Remarks. Page 11 documenting account closure at detach where applicable.
 
 ## Common pitfalls
 
-- Closure request batched to end of week. The account stays open past 24 hours. The unit takes a finding under DOD 8500.01E<Citation source="DOD 8500.01E" />. Submit closure at certified detach, not on a batch cycle.
+- Closure batched to end of week. The account stays open past 24 hours. The unit takes a finding under DOD 8500.01E<Citation source="DOD 8500.01E" />. Close at certified detach, not on a batch cycle.
 - Only MCTFS closed, RAPIDS access remains. The Marine retains CAC capability and DEERS write access. Confirm closure per system, not only the primary access.
-- Closure submitted, confirmation not pulled. The closure status sits assumed without proof. Pull MISSO and RAPIDS confirmations within 24 hours and file with the closure log entry.
+- ACID deletion assumed, not confirmed. The closure status sits assumed without proof. Confirm the TASO ACID deletion and pull the RAPIDS confirmation within 24 hours, then file with the closure log entry.
 - Closure log not reconciled at quarterly review. Stale closures sit unverified across cycles. Reconcile every quarter against the unit billet roster per MCO 5239.2B<Citation source="MCO 5239.2B" />.
 - Closure exception not briefed to the security manager. The security manager finds the exception during audit. Brief any delayed or missed closure within 24 hours of detection.
-- MOL administrator permissions overlooked. The Marine retains module-level access through MOL even after MCTFS closure. Remove MOL permissions through the administrator interface per NAVMC 3500.3E<Citation source="NAVMC 3500.3E" />.
+- MOL permissions overlooked. The Marine retains module-level access through MOL even after MCTFS closure. Remove MOL permissions through NIS and the administrator interface per NAVMC 3500.3E<Citation source="NAVMC 3500.3E" />.
 
 ## Decision points
 
-- Reactivation request post-closure. The departed Marine returns on a new assignment within 90 days. The S-1 officer routes a fresh access request through SAAR-N per MCO 5239.2B<Citation source="MCO 5239.2B" />. Reactivation requires a new access request, not a reopen.
-- Privileged certifier closure timing. The departing certifier is the only certifier on shift. The S-1 chief schedules closure at the end of the certifier's last shift, not the start of detach day. Coordinate hand-off with MISSO before submission.
-- Account preservation request. The Marine transfers to a sister command on the same installation. The S-1 officer confirms whether the account is RUC-tied (close required) or installation-tied (transferable) per MISSO guidance and MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
+- Reactivation request post-closure. The departed Marine returns on a new assignment within 90 days. The gaining command TASO creates a new User ACID and the Marine submits a fresh SAAR per MCTFS FoS Access Policy and Procedures 8.0<Citation source="MCTFS FoS Access Policy and Procedures 8.0" />. Accounts do not transfer, so reactivation is a new account, not a reopen.
+- Privileged certifier closure timing. The departing certifier is the only certifier on shift. The S-1 chief schedules closure at the end of the certifier's last shift, not the start of detach day. Coordinate hand-off with the incoming certifier and MISSA before deletion.
+- Account preservation request. The Marine transfers to a sister command on the same installation. Mainframe ACIDs do not transfer from command to command. The losing TASO deletes the ACID and the gaining TASO creates a new one per MCTFS FoS Access Policy and Procedures 8.0<Citation source="MCTFS FoS Access Policy and Procedures 8.0" />.
 - Death in service closure. The Marine dies on duty or off duty in active status. The S-1 officer routes immediate closure of all accounts and freezes the OMPF for casualty processing per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 3.
 
 ## Authority
 
-This sub-page sits under MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6, Responsibilities of the Manpower Information Systems Support Office, and DOD 8500.01E<Citation source="DOD 8500.01E" /> Cybersecurity which sets the 24-hour disablement requirement for separated personnel. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 Manage Marine Online (MOL) modules carries the MOL administrator removal step at performance step 5. MCO 5239.2B<Citation source="MCO 5239.2B" /> Marine Corps Cybersecurity Program sets the role-based access-control framework. SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" /> Privacy Act Program governs the record-keeping for closure events.
+This sub-page sits under MCTFS FoS Access Policy and Procedures 8.0<Citation source="MCTFS FoS Access Policy and Procedures 8.0" />, which sets TASO ACID deletion at checkout and the 30-day suspend and 45-day delete non-use rule, and DOD 8500.01E<Citation source="DOD 8500.01E" /> Cybersecurity, which sets the 24-hour disablement requirement for separated personnel. MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6 covers support-office roles. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 carries the MOL administrator removal step at performance step 5. MCO 5239.2B<Citation source="MCO 5239.2B" /> Marine Corps Cybersecurity Program sets the role-based access-control framework. SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" /> Privacy Act Program governs the record-keeping for closure events.
 
 ## Related references
 
-- MCO 5000.14D Marine Corps Administrative Procedures. Enclosure 6 defines MISSO support roles for account close.
+- MCTFS FoS Access Policy and Procedures 8.0. TASO ACID deletion, non-use rules, and account reuse rules.
+- MCO 5000.14D Marine Corps Administrative Procedures. Enclosure 6 defines support-office roles for account close.
 - DOD 8500.01E Cybersecurity. Sets the 24-hour disablement requirement for separated personnel.
 - MCO 5239.2B Marine Corps Cybersecurity Program. Marine Corps role-based access-control framework.
 - MCO P1070.12K Individual Records Administration Manual. OMPF Field Folder systems tab content.
