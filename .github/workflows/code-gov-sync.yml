@@ -1,0 +1,47 @@
+name: Sync code.json with code.gov
+
+on:
+  push:
+    branches: [main]
+  release:
+    types: [published, created]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    name: Generate and Commit code.json
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      - name: Generate code.json
+        run: node scripts/generate-code-json.mjs
+
+      - name: Check if code.json changed
+        id: check
+        run: |
+          if git diff --quiet code.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push code.json
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add code.json
+          git commit -m "chore: update code.json for code.gov sync"
+          git push

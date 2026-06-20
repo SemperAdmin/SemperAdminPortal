@@ -23,6 +23,7 @@
     "type-check": "tsc --noEmit",
     "prelint": "node scripts/generate-videos.js && node scripts/sync-content.mjs",
     "content:sync": "node scripts/generate-videos.js && node scripts/sync-content.mjs",
+    "code:json": "node scripts/generate-code-json.mjs",
     "citations:import": "python scripts/citations-import.py",
     "citations:audit": "python scripts/citations-audit.py",
     "links:import": "python scripts/links-import.py",
