@@ -37,9 +37,10 @@ jobs:
 
       - name: Install Cloud Foundry CLI
         run: |
-          curl -L -o cf-cli.tgz "https://s3-us-west-2.amazonaws.com/cf-cli-releases/releases/v8.7.10/cf8-cli_8.7.10_linux_x64.tgz"
-          tar -xzf cf-cli.tgz
-          sudo mv cf8 /usr/local/bin/cf
+          wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
+          echo "deb https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
+          sudo apt-get update
+          sudo apt-get install -y cf-cli
           cf --version
 
       - name: Authenticate with Cloud.gov
