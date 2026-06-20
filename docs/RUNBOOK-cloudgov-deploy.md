@@ -4,23 +4,19 @@ For any Next.js app built with `output: "export"`. Cloud.gov serves the static f
 
 ## Quick Start (SemperAdminPortal)
 
-**Automatic deployment is enabled.** Just push to `main` and GitHub Actions handles the rest.
+**Manual deployment via Cloud Foundry CLI.** Build locally with the Cloud.gov target flag, then push.
 
 ```bash
-# Make your changes
-git add .
-git commit -m "your message"
-git push origin main
+# Make your changes and build
+$env:DEPLOY_TARGET="cloudgov"
+npm run build
+
+# Stage and deploy
+Copy-Item deploy\Staticfile out\Staticfile -Force
+cf push
 ```
 
-The `.github/workflows/deploy-cloudgov.yml` workflow automatically:
-- Builds with `DEPLOY_TARGET=cloudgov`
-- Copies the Staticfile
-- Authenticates to Cloud.gov
-- Runs `cf push`
-- Deployment completes in ~5 minutes
-
-**No manual `cf push` needed.** Just commit and push.
+Deployment takes ~2-3 minutes. Watch the terminal for real-time progress.
 
 ## Placeholders
 
@@ -30,19 +26,6 @@ The `.github/workflows/deploy-cloudgov.yml` workflow automatically:
 - `<PROJECT_SLUG>`: the GitHub Pages path segment, for example `SemperAdminPortal`
 
 ## Prerequisites
-
-### For Automatic Deployment (CI/CD)
-
-- Cloud.gov account with org and space
-- GitHub Secrets configured (one-time setup):
-  - `CF_USERNAME` - Your Cloud.gov login email
-  - `CF_PASSWORD` - Your Cloud.gov password
-  - `CF_ORG` - Organization name (e.g., `sandbox-usmc`)
-  - `CF_SPACE` - Space name (e.g., `stephen.shorter`)
-
-To add secrets: GitHub repo → Settings → Secrets and variables → Actions → New repository secret
-
-### For Manual Deployment (if needed)
 
 - `cf` CLI v8 installed. Verify with `cf --version`.
 - A Cloud.gov account with an org and a space, and the Space Developer role. Developer is required for `cf push`.
@@ -104,19 +87,7 @@ A minimal file, copied into `out/` at deploy time.
 # Export uses trailingSlash, so every route is a folder with index.html.
 ```
 
-## Manual Trigger (Force Deployment)
-
-If you need to redeploy the current main branch without changes:
-
-1. Go to GitHub repo → Actions tab
-2. Select "Deploy to Cloud.gov" workflow
-3. Click "Run workflow" → "Run workflow"
-
-The deployment will run immediately.
-
----
-
-## Deploy Sequence (Manual, for Reference or Other Projects) (Windows PowerShell)
+## Deploy Sequence (Windows PowerShell)
 
 ### 1. Log in, passcode visible
 
@@ -172,33 +143,3 @@ The `routes` line shows the live URL.
 ## Verify
 
 Open the route, click into a deep page like `/<some-section>/`, and confirm styling and search load. Static export with `trailingSlash` serves deep routes as `folder/index.html`, so direct links work.
-
----
-
-## CI/CD Workflow (`.github/workflows/deploy-cloudgov.yml`)
-
-The automated deployment workflow:
-- **Triggers:** Every push to `main` or manual dispatch
-- **Build:** Sets `DEPLOY_TARGET=cloudgov` for root-level asset resolution
-- **Authenticate:** Uses GitHub Secrets for Cloud.gov credentials
-- **Deploy:** Runs `cf push` with no human interaction
-- **Verify:** Reports app status after deployment
-
-View logs: GitHub repo → Actions → "Deploy to Cloud.gov" → Latest run
-
-### When to Use Manual Deployment
-
-Manual deployment is rarely needed but useful for:
-- Deploying to a different org/space
-- Testing on a fresh Cloud.gov account
-- Troubleshooting deployment issues
-- Deploying other projects without automated workflows
-
-### Workflow Debugging
-
-If deployment fails:
-1. Check GitHub Actions logs (repo → Actions tab)
-2. Look for cf CLI errors or authentication issues
-3. Verify Cloud.gov secrets are set correctly
-4. Check disk quota hasn't been exceeded (`du -sh out/`)
-5. Confirm app state isn't in a stuck state (`cf app semper-admin-portal`)
