@@ -3,52 +3,17 @@ updates:
   - package-ecosystem: npm
     directory: "/"
     schedule:
-      interval: weekly
+      interval: monthly
       day: monday
-      time: "06:00"
-      timezone: "America/Los_Angeles"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
     labels:
       - dependencies
-      - npm
     commit-message:
       prefix: "deps"
-      include: scope
     groups:
-      radix-ui:
+      dependencies:
         patterns:
-          - "@radix-ui/*"
-      fontsource:
-        patterns:
-          - "@fontsource*"
-      types:
-        patterns:
-          - "@types/*"
-
-  - package-ecosystem: pip
-    directory: "/scripts"
-    schedule:
-      interval: weekly
-      day: monday
-      time: "06:00"
-      timezone: "America/Los_Angeles"
-    open-pull-requests-limit: 5
-    labels:
-      - dependencies
-      - python
-    commit-message:
-      prefix: "deps(py)"
-
-  - package-ecosystem: github-actions
-    directory: "/"
-    schedule:
-      interval: weekly
-      day: monday
-      time: "06:00"
-      timezone: "America/Los_Angeles"
-    open-pull-requests-limit: 5
-    labels:
-      - dependencies
-      - github-actions
-    commit-message:
-      prefix: "deps(actions)"
+          - "*"
+    allow:
+      - dependency-type: "production"
+      - dependency-type: "dev"
