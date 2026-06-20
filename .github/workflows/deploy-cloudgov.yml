@@ -1,0 +1,59 @@
+name: Deploy to Cloud.gov
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: |
+          npm ci --include=optional
+          npm install --no-save --include=optional --force lightningcss-linux-x64-gnu @img/sharp-linux-x64 @tailwindcss/oxide-linux-x64-gnu @tailwindcss/oxide-linux-x64-musl
+
+      - name: Type check
+        run: npm run type-check
+
+      - name: Build for Cloud.gov
+        run: npm run build
+        env:
+          DEPLOY_TARGET: cloudgov
+
+      - name: Copy Staticfile
+        run: cp deploy/Staticfile out/Staticfile
+
+      - name: Install Cloud Foundry CLI
+        run: |
+          curl -L -o cf-cli.tgz "https://s3-us-west-2.amazonaws.com/cf-cli-releases/releases/v8.7.10/cf8-cli_8.7.10_linux_x64.tgz"
+          tar -xzf cf-cli.tgz
+          sudo mv cf8 /usr/local/bin/cf
+          cf --version
+
+      - name: Authenticate with Cloud.gov
+        run: |
+          cf login -a api.fr.cloud.gov \
+            -u "${{ secrets.CF_USERNAME }}" \
+            -p "${{ secrets.CF_PASSWORD }}" \
+            -o "${{ secrets.CF_ORG }}" \
+            -s "${{ secrets.CF_SPACE }}"
+
+      - name: Deploy to Cloud.gov
+        run: cf push
+
+      - name: Verify deployment
+        run: |
+          echo "✅ Deployment complete"
+          cf app semper-admin-portal
