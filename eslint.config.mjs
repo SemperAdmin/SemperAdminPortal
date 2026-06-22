@@ -9,9 +9,12 @@ import nextTypescript from "eslint-config-next/typescript";
 const config = [
   {
     ignores: [
+      ".claude/**",
+      ".github/**",
       ".next/**",
       "out/**",
       "node_modules/**",
+      "redesign/**",
       "src/generated/**",
       "public/**",
       "scripts/**",
