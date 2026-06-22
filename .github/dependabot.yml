@@ -17,3 +17,6 @@ updates:
     allow:
       - dependency-type: "production"
       - dependency-type: "dev"
+    ignore:
+      - dependency-name: "gray-matter"
+        versions: ["4.x"]
