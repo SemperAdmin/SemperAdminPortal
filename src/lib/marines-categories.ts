@@ -992,6 +992,14 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     pageType: "leaf",
   },
   {
+    slug: "slip-duty-station-incentive",
+    label: "Strategic Location Incentive Program (SLIP)",
+    shortLabel: "SLIP",
+    description: "Volunteer for a hard-to-fill duty station overseas or in remote locations, earn the right to choose your follow-on duty station. MARADMIN 470/24. MOS-specific eligible locations. Eligibility: Zones B/C/D reenlistment, valid RE code, not HSST-screened, time-on-station requirement met.",
+    icon: "Plane",
+    pageType: "container",
+  },
+  {
     slug: "lateral-moves-program",
     label: "Lateral Moves (LATMOVE) Program",
     shortLabel: "LATMOVE",
