@@ -1000,6 +1000,14 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     pageType: "leaf",
   },
   {
+    slug: "slip-eligible-billets-by-mos",
+    label: "SLIP Eligible Billets by MOS",
+    shortLabel: "SLIP Billets",
+    description: "Quick reference table of SLIP-eligible duty stations by military occupational specialty. Representative locations only. Your PMOS monitor determines current availability and what counts as difficult to fill.",
+    icon: "ClipboardList",
+    pageType: "leaf",
+  },
+  {
     slug: "lateral-moves-program",
     label: "Lateral Moves (LATMOVE) Program",
     shortLabel: "LATMOVE",
