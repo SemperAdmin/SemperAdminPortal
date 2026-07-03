@@ -997,7 +997,7 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     shortLabel: "SLIP",
     description: "Volunteer for a hard-to-fill duty station overseas or in remote locations, earn the right to choose your follow-on duty station. MARADMIN 470/24. MOS-specific eligible locations. Eligibility: Zones B/C/D reenlistment, valid RE code, not HSST-screened, time-on-station requirement met.",
     icon: "Plane",
-    pageType: "container",
+    pageType: "leaf",
   },
   {
     slug: "lateral-moves-program",
@@ -2178,6 +2178,31 @@ export const MARINES_PARENT_GROUPS: MarinesParentGroup[] = [
       "personal-financial-management-program",
       "school-liaison-program",
       "survivor-benefits-and-ltap",
+    ],
+  },
+  {
+    slug: "strategic-location-incentive-program",
+    label: "Strategic Location Incentive Program (SLIP)",
+    shortLabel: "SLIP",
+    description:
+      "Career Marines volunteering for difficult-to-fill assignments earn the right to choose their follow-on duty station. MARADMIN 470/24. MOS-specific eligible locations. Zones B/C/D reenlistment, valid RE code, not HSST-screened, time-on-station requirement met.",
+    icon: "Plane",
+    // Children listed in alphabetical order by label (case-insensitive).
+    children: [
+      "slip-duty-station-incentive",
+      "slip-eligible-billets-by-mos",
+    ],
+  },
+  {
+    slug: "records-and-personal-data",
+    label: "Records and Personal Data",
+    shortLabel: "Records",
+    description:
+      "Your OMPF, MCTFS record, and Marine Online review responsibilities. Catching record errors before they cost you at a promotion or selection board.",
+    icon: "FileText",
+    // Children listed in alphabetical order by label (case-insensitive).
+    children: [
+      "records-and-personal-data",
     ],
   },
 ];
