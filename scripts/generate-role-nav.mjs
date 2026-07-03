@@ -57,6 +57,21 @@ for (const e of marinesCatalog) {
   }
 }
 
+// Hard gate: a group child slug with no category definition renders no card
+// on the group landing and no sidebar leaf. Fail the build so the miss
+// surfaces in CI instead of shipping as a silent 404.
+const unresolvedMarineChildren = MARINES_PARENT_GROUPS.flatMap((g) =>
+  g.children
+    .filter((slug) => !marineCatBySlug.has(slug))
+    .map((slug) => g.slug + " lists unknown child " + slug)
+);
+if (unresolvedMarineChildren.length > 0) {
+  throw new Error(
+    "[role-nav] Parent-group children missing from MARINES_CATEGORIES: " +
+      unresolvedMarineChildren.join(", ")
+  );
+}
+
 const groupItems = [...MARINES_PARENT_GROUPS].map((g) => ({
   label: g.label,
   href: `/marines/${g.slug}`,
@@ -113,6 +128,20 @@ if (marineOrphans.length > 0) {
 // --- Leader: parent-group branches, page leaves -------------------------------
 const { LEADER_PARENT_GROUPS, LEADER_CATEGORIES } = leaderLib;
 const leaderCatBySlug = new Map(LEADER_CATEGORIES.map((c) => [c.slug, c]));
+
+// Hard gate, same rule as the marine groups above.
+const unresolvedLeaderChildren = LEADER_PARENT_GROUPS.flatMap((g) =>
+  g.children
+    .filter((slug) => !leaderCatBySlug.has(slug))
+    .map((slug) => g.slug + " lists unknown child " + slug)
+);
+if (unresolvedLeaderChildren.length > 0) {
+  throw new Error(
+    "[role-nav] Parent-group children missing from LEADER_CATEGORIES: " +
+      unresolvedLeaderChildren.join(", ")
+  );
+}
+
 const leader = [
   { label: "Overview", href: "/leader" },
   ...LEADER_PARENT_GROUPS.filter((g) => g.children.length > 0).map((g) => ({
