@@ -47,7 +47,7 @@ Load profile: static assets served from the GitHub Pages CDN. Traffic unmeasured
 Data sensitivity: none. Public policy reference content. No auth, no PII storage, no user accounts.
 Team: Stephen, USMC admin SME, solo maintainer. Deep on the content domain, working depth on the TypeScript and Next.js stack.
 Non-goals: no backend services, no replatform, no auth, no user data collection. Section 1 of CLAUDE.md locks the technical foundation.
-Acceptance criteria: npm run lint clean, npm run build green including content:sync and zod frontmatter validation, writing constraints in CLAUDE.md section 6 hold in all user-facing copy.
+Acceptance criteria: npm run lint clean, npm run build green including content:sync and zod frontmatter validation, writing constraints in CLAUDE.md section 6 hold in all user-facing copy, UI work uses globals.css tokens with no hardcoded hex, Pill over Badge, PageHeader over custom headers, Callout for asides, per CLAUDE.md sections 3 and 7.
 ```
 
 Mode fit for this static site. Modes 1, 2, 3, 5, 6, and 7 apply as written. Mode 4 applies with client-side measurements - Lighthouse, bundle analysis, Pagefind index weight - in place of server latency. Mode 8 narrows to client-bundle secrets, dependency CVEs, and third-party exposure, since no server, auth layer, or database exists here. Mode 9 reduces to the Pages workflow - build gates, rollback by revert, uptime checks. Content authoring stays with the dedicated prompts in this directory, the library does not cover it.
@@ -63,6 +63,7 @@ These bind every mode.
 5. Never alter behavior during a quality task. Prove parity with tests or diff analysis.
 6. When requirements conflict, surface the conflict and stop. Do not resolve tradeoffs silently.
 7. When the request is ambiguous on a material point, state the interpretation chosen, then proceed under it.
+8. Adapt every mode to the Shared Context Block. Skip or scale down any requirement the context block excludes or renders non-applicable, for example database indexes, server-side monitoring, or authentication checks on a static site. Name each skipped requirement and the context line justifying the skip.
 
 ---
 
@@ -278,4 +279,4 @@ Version this file with the project. When a mode produces a bad result, log the f
 
 | Date | Mode | Failure observed | Patch applied |
 |---|---|---|---|
-| | | | |
+| 2026-07-05 | Global Rules | Modes assume a server-backed target, so runs against a static-export project carry dead instructions for databases, servers, and auth | Added Global Rule 8, adapt every mode to the context block and name each skipped requirement |
