@@ -6,7 +6,7 @@ These instructions govern all work in this repository. Read them before editing 
 
 - Live URL: https://semperadmin.github.io/SemperAdminPortal/
 - Repo root: D:\Coding\SemperAdminPortal
-- Stack: Next.js 15 App Router, TypeScript strict, Tailwind 4, MDX content collections, Pagefind search, static export to GitHub Pages.
+- Stack: Next.js 16 App Router, TypeScript strict, Tailwind 4, MDX content collections, Pagefind search, static export to GitHub Pages.
 - Owner: Stephen, USMC subject-matter expert.
 - Purpose: authoritative, sourced, role-tagged USMC administrative reference. Pay, records, life events, reserve operations.
 
