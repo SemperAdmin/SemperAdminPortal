@@ -48,7 +48,7 @@ export const ROLE_META: Record<Role, RoleMeta> = {
   commander: {
     id: "commander",
     label: "Commander",
-    shortLabel: "Commander",
+    shortLabel: "CMDR",
     description: "XO / CoS / CO. Policy summaries, signing authorities, discipline.",
     cssVar: "var(--color-role-commander)",
     iconName: "Award",
