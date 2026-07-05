@@ -43,7 +43,9 @@ export const videoSchema = baseFrontmatter.extend({
   posterUrl: z.string().optional(),
   transcript: z.string().optional(),
   chapters: z
-    .array(z.object({ label: z.string(), startSeconds: z.number().int().min(0) }))
+    .array(
+      z.object({ label: z.string(), startSeconds: z.number().int().min(0) })
+    )
     .default([]),
   relatedPolicies: z.array(z.string()).default([]),
 });
@@ -59,7 +61,13 @@ export const toolSchema = baseFrontmatter.extend({
 });
 
 export const externalToolSchema = baseFrontmatter.extend({
-  toolType: z.enum(["calculator", "monitor", "aggregator", "generator"]),
+  toolType: z.enum([
+    "calculator",
+    "monitor",
+    "aggregator",
+    "generator",
+    "simulator",
+  ]),
   externalUrl: z.string().url(),
 });
 

@@ -10,6 +10,7 @@ import {
   ClipboardList,
   Activity,
   Zap,
+  Gamepad2,
   type LucideIcon,
 } from "lucide-react";
 import { RoleChip } from "@/components/domain/role-chip";
@@ -22,7 +23,8 @@ import { cn } from "@/lib/utils";
 import { classifyFreshness } from "@/lib/verification";
 
 type OutputType = "pdf" | "docx" | "calculator" | "checklist";
-type ToolType = "calculator" | "monitor" | "aggregator" | "generator";
+type ToolType =
+  "calculator" | "monitor" | "aggregator" | "generator" | "simulator";
 
 interface InternalTool {
   slug: string;
@@ -60,6 +62,7 @@ const TOOL_ICON: Record<ToolType, LucideIcon> = {
   monitor: Activity,
   aggregator: Zap,
   generator: FileText,
+  simulator: Gamepad2,
 };
 
 const OUTPUT_LABEL: Record<OutputType, string> = {
@@ -74,6 +77,7 @@ const TOOL_LABEL: Record<ToolType, string> = {
   monitor: "Monitor",
   aggregator: "Aggregator",
   generator: "Generator",
+  simulator: "Simulator",
 };
 
 // Accents must hold visible contrast against both dark-navy and parchment
@@ -92,25 +96,36 @@ const TOOL_ACCENT: Record<ToolType, string> = {
   monitor: "var(--color-usmc-scarlet)",
   aggregator: "var(--color-leader-brass)",
   generator: "var(--color-marine-blue-100)",
+  simulator: "var(--color-role-admin)",
 };
 
 function getIcon(tool: ToolData): LucideIcon {
-  return tool.isExternal ? TOOL_ICON[tool.toolType] : OUTPUT_ICON[tool.outputType];
+  return tool.isExternal
+    ? TOOL_ICON[tool.toolType]
+    : OUTPUT_ICON[tool.outputType];
 }
 
 function getLabel(tool: ToolData): string {
-  return tool.isExternal ? TOOL_LABEL[tool.toolType] : OUTPUT_LABEL[tool.outputType];
+  return tool.isExternal
+    ? TOOL_LABEL[tool.toolType]
+    : OUTPUT_LABEL[tool.outputType];
 }
 
 function getAccent(tool: ToolData): string {
-  return tool.isExternal ? TOOL_ACCENT[tool.toolType] : OUTPUT_ACCENT[tool.outputType];
+  return tool.isExternal
+    ? TOOL_ACCENT[tool.toolType]
+    : OUTPUT_ACCENT[tool.outputType];
 }
-
 
 /* eslint-disable @typescript-eslint/no-require-imports */
 const TOOLS_DATA: ToolData[] = [
-  ...(require("@/generated/tools.json") as InternalTool[]).map((t) => ({ ...t, isExternal: false as const })),
-  ...(require("@/generated/external-tools.json") as ExternalTool[]).map((t) => ({ ...t, isExternal: true as const })),
+  ...(require("@/generated/tools.json") as InternalTool[]).map((t) => ({
+    ...t,
+    isExternal: false as const,
+  })),
+  ...(require("@/generated/external-tools.json") as ExternalTool[]).map(
+    (t) => ({ ...t, isExternal: true as const })
+  ),
 ];
 /* eslint-enable @typescript-eslint/no-require-imports */
 
@@ -142,13 +157,28 @@ export default function ToolsIndex() {
 
   const counts: Record<string, number> = {
     all: roleFiltered.length,
-    calculator: roleFiltered.filter((t) => (t.isExternal ? t.toolType === "calculator" : t.outputType === "calculator")).length,
-    pdf: roleFiltered.filter((t) => !t.isExternal && t.outputType === "pdf").length,
-    docx: roleFiltered.filter((t) => !t.isExternal && t.outputType === "docx").length,
-    checklist: roleFiltered.filter((t) => !t.isExternal && t.outputType === "checklist").length,
-    monitor: roleFiltered.filter((t) => t.isExternal && t.toolType === "monitor").length,
-    aggregator: roleFiltered.filter((t) => t.isExternal && t.toolType === "aggregator").length,
-    generator: roleFiltered.filter((t) => t.isExternal && t.toolType === "generator").length,
+    calculator: roleFiltered.filter((t) =>
+      t.isExternal ? t.toolType === "calculator" : t.outputType === "calculator"
+    ).length,
+    pdf: roleFiltered.filter((t) => !t.isExternal && t.outputType === "pdf")
+      .length,
+    docx: roleFiltered.filter((t) => !t.isExternal && t.outputType === "docx")
+      .length,
+    checklist: roleFiltered.filter(
+      (t) => !t.isExternal && t.outputType === "checklist"
+    ).length,
+    monitor: roleFiltered.filter(
+      (t) => t.isExternal && t.toolType === "monitor"
+    ).length,
+    aggregator: roleFiltered.filter(
+      (t) => t.isExternal && t.toolType === "aggregator"
+    ).length,
+    generator: roleFiltered.filter(
+      (t) => t.isExternal && t.toolType === "generator"
+    ).length,
+    simulator: roleFiltered.filter(
+      (t) => t.isExternal && t.toolType === "simulator"
+    ).length,
   };
 
   const roleCounts: Record<string, number> = {
@@ -164,6 +194,7 @@ export default function ToolsIndex() {
     { id: "generator", label: "Generator", count: counts.generator },
     { id: "aggregator", label: "Aggregator", count: counts.aggregator },
     { id: "monitor", label: "Monitor", count: counts.monitor },
+    { id: "simulator", label: "Simulator", count: counts.simulator },
     { id: "pdf", label: "PDF", count: counts.pdf },
     { id: "docx", label: "DOCX", count: counts.docx },
     { id: "checklist", label: "Checklist", count: counts.checklist },
@@ -171,23 +202,30 @@ export default function ToolsIndex() {
 
   const roleChips: FilterChip[] = [
     { id: "all", label: "All roles", count: roleCounts.all },
-    ...ROLES.map((r) => ({ id: r, label: ROLE_LABEL[r], count: roleCounts[r] })),
+    ...ROLES.map((r) => ({
+      id: r,
+      label: ROLE_LABEL[r],
+      count: roleCounts[r],
+    })),
   ];
 
   return (
     <div className="mx-auto max-w-6xl">
       <PageHeader
         eyebrow="Interactive"
-        tags={<StatusPill status="fresh" label={`${counts.all} tools available`} />}
+        tags={
+          <StatusPill status="fresh" label={`${counts.all} tools available`} />
+        }
         title="TOOLS"
-        summary="Client-side calculators, external cloud.gov apps, and document generators. No data leaves your browser."
+        summary="Client-side calculators, external apps, and document generators. No data leaves your browser."
       >
         <MetaRow
           items={[
             { label: "Tools", value: counts.all },
             {
               label: "Types",
-              value: "Calculator, Generator, Aggregator, Monitor, PDF, DOCX, Checklist",
+              value:
+                "Calculator, Generator, Aggregator, Monitor, Simulator, PDF, DOCX, Checklist",
               mono: false,
             },
           ]}
@@ -229,7 +267,7 @@ export default function ToolsIndex() {
               <>
                 <span
                   aria-hidden="true"
-                  className="absolute left-0 top-0 h-full w-1 opacity-0 transition-opacity group-hover:opacity-100"
+                  className="absolute top-0 left-0 h-full w-1 opacity-0 transition-opacity group-hover:opacity-100"
                   style={{ backgroundColor: accent }}
                 />
                 <div className="flex items-center justify-between gap-2">
@@ -255,14 +293,22 @@ export default function ToolsIndex() {
                     </span>
                     <StatusPill
                       status={status}
-                      label={status === "fresh" ? "Verified" : status === "aging" ? "Aging" : "Stale"}
+                      label={
+                        status === "fresh"
+                          ? "Verified"
+                          : status === "aging"
+                            ? "Aging"
+                            : "Stale"
+                      }
                       size="xs"
                     />
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-base font-bold tracking-tight">{t.title}</h3>
-                  <p className="mt-1 text-sm text-[var(--color-muted-foreground)] leading-snug">
+                  <h3 className="text-base font-bold tracking-tight">
+                    {t.title}
+                  </h3>
+                  <p className="mt-1 text-sm leading-snug text-[var(--color-muted-foreground)]">
                     {t.summary}
                   </p>
                 </div>
