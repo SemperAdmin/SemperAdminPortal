@@ -27,7 +27,7 @@ The portal serves four distinct audiences. Content, navigation, and tone separat
 
 - Every MDX entry carries a `roles` array in frontmatter. Minimum one role. Pages tagged for multiple roles render under each one.
 - Each role owns a route prefix: `/marines`, `/leader`, `/commander`, `/admin`. Do not cross-route.
-- Reference surfaces sit outside the role routes at top-level paths: `/policy`, `/situations`, `/snippets`, `/tools`, `/videos`, `/references`, `/citations`, `/search`, `/inspections`. These are role-agnostic chrome. Their entries still carry `roles` arrays for filtering and sidebar exposure.
+- Reference surfaces sit outside the role routes at top-level paths. Live today: `/tools`, `/videos`, `/links`, `/reports`, `/citations`, `/search`, `/inspections`. Planned, not yet routed: `/policy`, `/situations`, `/snippets`, `/references`. Those four collections hold no content and `scripts/sync-content.mjs` lists them as routeless, authoring into them warns at build time until their routes ship. These are role-agnostic chrome. Their entries still carry `roles` arrays for filtering and sidebar exposure.
 - Each role has its own curated tree in `src/lib/role-trees.ts`. Do not show another role's tree in the active sidebar.
 - Role switching happens in exactly one surface: the topbar segmented control on desktop, the top of the mobile drawer on mobile. The sidebar header is read-only "Viewing as" context. Do not add a second switcher.
 - Cross-role linking happens through one component only: `CrossRoleStrip` at the bottom of detail pages. Wire it via `relatedRoles` in `roleContentSchema`. Do not inline cross-role links in prose.
@@ -135,6 +135,8 @@ Every MDX file under `content/<collection>/<slug>.mdx` requires:
 Bad frontmatter fails the build. Validation runs through zod at build time.
 
 ### 4.2 Collections
+
+Four collections are schema-defined but hold no content and have no routes yet: `policies/`, `situations/`, `snippets/`, `references/`. The build treats them as routeless and warns if content lands in them before their routes ship. Build the route surface first, then author.
 
 - `policies/`: MARADMIN, MCO, ALMAR, NAVMC, DODI breakdowns. Requires `kind`, `number`, `effectiveDate`.
 - `situations/`: scenario walkthroughs. Requires `scenario`, optional `prerequisites`, `relatedPolicies`.

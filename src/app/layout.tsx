@@ -4,7 +4,6 @@ import { ThemeProvider } from "@/components/theme/theme-provider";
 import { AppShell } from "@/components/shell/app-shell";
 import "./globals.css";
 
-
 export const metadata: Metadata = {
   title: {
     default: "Semper Admin Portal",
@@ -47,16 +46,19 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased">
-        <Script src="/SemperAdminPortal/security/frame-buster.js" strategy="afterInteractive" />
+        <Script
+          src="/SemperAdminPortal/security/frame-buster.js"
+          strategy="afterInteractive"
+        />
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
           <a
             href="#main"
-            className="sr-only focus:not-sr-only focus:fixed focus:left-2 focus:top-2 focus:z-50 focus:rounded focus:bg-[var(--color-brass)] focus:px-3 focus:py-2 focus:text-[var(--color-neutral-950)]"
+            className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-[var(--color-brass)] focus:px-3 focus:py-2 focus:text-[var(--color-neutral-950)]"
           >
             Skip to content
           </a>
