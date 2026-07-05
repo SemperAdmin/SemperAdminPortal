@@ -241,12 +241,12 @@ Before editing or adding to this repo, confirm:
 - D:\Coding\SemperAdminPortal\src\lib\role-trees.ts - per-role navigation trees.
 - D:\Coding\SemperAdminPortal\src\lib\content\schemas.ts - zod schemas for every collection.
 
-## 9. Phase 6 Carry-Over (Open Work)
+## 9. Phase 6 Carry-Over (Closed 2026-07-05)
 
-These items are not blocking but flagged for the next pass:
+All three items shipped. Verified against the codebase on 2026-07-05.
 
-- Migrate Badge consumers to Pill on a per-file basis.
-- Wire CrossRoleStrip into detail pages by adding `crossRole: CrossRoleLink[]` to `roleContentSchema`.
-- Replace hand-curated `role-trees.ts` with a generator reading the JSON catalogs in `src/generated/` for content-driven nav.
+- Badge migration complete. No `badge.tsx` primitive remains under `src/components/ui/` and no component imports Badge. Pill owns all tag surfaces.
+- CrossRoleStrip is wired into all four role detail templates and resolves through `relatedRoles` in `roleContentSchema`.
+- `role-trees.ts` reads generated nav. `scripts/generate-role-nav.mjs` emits `src/generated/role-nav.json` from the content catalogs during content sync.
 
 End of instructions.
