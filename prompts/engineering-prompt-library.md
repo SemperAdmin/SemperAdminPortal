@@ -22,7 +22,7 @@ Consolidation map:
 
 ## Shared Context Block
 
-Fill this once per project. Prepend it to every mode. A mode invoked without this block returns a request for it instead of output.
+Fill this once per project. Prepend it to every mode. A mode invoked without this block returns a request for it instead of output. This gate is the single intake behavior for every mode. Clarifying questions inside a mode cover inputs beyond this block, never the block itself.
 
 ```
 PROJECT CONTEXT
@@ -61,8 +61,8 @@ These bind every mode.
 3. Label every material claim with an evidence tier - VERIFIED with source, INFERRED with the reasoning chain, ASSUMED with the assumption stated.
 4. Severity scale for all findings: Critical, Major, Minor, Informational. Lead with the finding shaping the decision.
 5. Never alter behavior during a quality task. Prove parity with tests or diff analysis.
-6. When requirements conflict, surface the conflict and stop. Do not resolve tradeoffs silently.
-7. When the request is ambiguous on a material point, state the interpretation chosen, then proceed under it.
+6. When requirements conflict, surface the conflict and stop. Do not resolve tradeoffs silently. A conflict means two explicit requirements point opposite ways.
+7. When the request is ambiguous on a material point, state the interpretation chosen, then proceed under it. Ambiguity means a missing or underspecified input. Two explicit requirements in opposition fall under Rule 6.
 8. Adapt every mode to the Shared Context Block. Skip or scale down any requirement the context block excludes or renders non-applicable, for example database indexes, server-side monitoring, or authentication checks on a static site. Name each skipped requirement and the context line justifying the skip.
 
 ---
@@ -80,7 +80,7 @@ Design and build {feature or system} for the project described in the context bl
 
 Sequence:
 1. Propose the system architecture. List every component, its single responsibility, and each data flow between components.
-2. Present the two decisions with the largest long-term cost - database choice, sync versus async, monolith versus services. Give the tradeoff for each and your recommendation with the reasoning chain. Wait for my confirmation before writing code.
+2. Present the two decisions with the largest long-term cost - database choice, sync versus async, monolith versus services. Give the tradeoff for each and your recommendation with the reasoning chain. Wait for my confirmation before writing code. In an autonomous or chained run with no human available, record both decisions as ASSUMED in the decision log, proceed with the recommendation, and flag both for review at delivery.
 3. After confirmation, deliver: file structure, database schema with indexes justified per query, API contract with request and response shapes, error handling strategy, and the implementation.
 4. Every scaling decision references the load profile numbers from the context block. No design justified by unquantified future growth.
 
@@ -97,6 +97,8 @@ Required inputs: Shared Context Block, repository access or file dump, the speci
 
 ```
 Audit this codebase.
+
+Precondition: confirm this session holds no context from the session building the code under audit. An auditor sharing the builder's context inherits the builder's blind spots. If build context is present, stop and restart the audit in a fresh session.
 
 Sequence:
 1. Reverse-engineer the architecture from the code as written, not from any README. Produce a component map.
@@ -204,7 +206,7 @@ Required inputs: Shared Context Block, the decision stated as a question, the op
 Evaluate: {decision question}
 
 Sequence:
-1. Ask up to five clarifying questions if material inputs are missing. Otherwise proceed.
+1. Ask up to five clarifying questions if material inputs beyond the context block are missing. Otherwise proceed. A missing context block follows the intake gate, not this step.
 2. Present each viable option with: five-year maintenance cost, failure modes, exit cost if the choice proves wrong, and the team-skill fit from the context block.
 3. Challenge my framing once - the strongest case for an option I excluded or a reframing of the question, with evidence. If my framing survives, say so and move on. Do not manufacture a second objection.
 4. Recommend one option. State the conditions under which the recommendation flips.
@@ -277,6 +279,13 @@ The fresh-session boundary at step 3 is the point. An auditor sharing the builde
 
 Version this file with the project. When a mode produces a bad result, log the failure in the table below and patch the mode - a prompt library nobody amends is a prompt library nobody trusts.
 
+Owner: Stephen. Review this table quarterly at minimum, alongside the content verification sweeps.
+
 | Date | Mode | Failure observed | Patch applied |
 |---|---|---|---|
 | 2026-07-05 | Global Rules | Modes assume a server-backed target, so runs against a static-export project carry dead instructions for databases, servers, and auth | Added Global Rule 8, adapt every mode to the context block and name each skipped requirement |
+| 2026-07-05 | Global Rules | Rule 6 stops on conflict, Rule 7 proceeds on ambiguity, and the boundary between the two was undefined | Defined the line, conflict means two explicit requirements in opposition, ambiguity means a missing input |
+| 2026-07-05 | Mode 1 | Step 2 waits for human confirmation, so autonomous and chained runs stall with no fallback | Added the ASSUMED fallback, record both decisions, proceed with the recommendation, flag for review |
+| 2026-07-05 | Mode 2 | The fresh-session boundary in Mode Chaining had no enforcement point inside the audit prompt | Added a precondition, confirm no build-session context before the audit starts |
+| 2026-07-05 | Mode 7 | Step 1 permitted proceeding without the context block, contradicting the intake gate | Scoped clarifying questions to inputs beyond the block, the gate stays the single intake behavior |
+| 2026-07-05 | Maintenance | The table had no owner and no review cadence, so it stays empty by default | Named the owner and set a quarterly review floor |
