@@ -115,8 +115,8 @@ export default async function AdminDetail({
             {fm.sourcePolicy && (
               <span className="rounded-sm bg-[var(--color-muted)] px-2 py-1 text-xs font-semibold text-[var(--color-muted-foreground)]">
                 <ReferenceLink text={fm.sourcePolicy} noIcon />
-                {fm.sourceChapter && " Ch " + fm.sourceChapter}
-                {fm.sourceSection && " Sec " + fm.sourceSection}
+                {fm.sourceChapter && <span>Ch {fm.sourceChapter}</span>}
+                {fm.sourceSection && <span>Sec {fm.sourceSection}</span>}
               </span>
             )}
             {fm.trEventCode && (

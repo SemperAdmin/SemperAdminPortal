@@ -42,7 +42,7 @@ export const StatusPill = React.forwardRef<HTMLSpanElement, StatusPillProps>(
       >
         <span
           aria-hidden="true"
-          className="inline-block h-1.5 w-1.5 rounded-full"
+          className="inline-block h-1.5 w-1.5 shrink-0 self-center rounded-full"
           style={{ background: DOT_COLOR[status] }}
         />
         {label}

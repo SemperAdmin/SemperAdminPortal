@@ -51,7 +51,7 @@ export function PolicyBadge({
       aria-label={`${kind} ${number}`}
       {...compProps}
     >
-      {icon && <FileText className="size-3" aria-hidden="true" />}
+      {icon && <FileText className="size-3 shrink-0 self-center" aria-hidden="true" />}
       <span>{kind}</span>
       <span className="opacity-70">{number}</span>
     </Comp>

@@ -13,12 +13,12 @@ const PATH_ROLE_MAP: Record<string, Role> = {
 };
 
 /**
- * RoleRouteSync - infers a role from the URL only when no role is set.
+ * RoleRouteSync - infers the active role from role-scoped URLs.
  *
- * Covers the deep-link first visit: landing on /marines/... without a stored
- * role sets the marine role and suppresses the role picker dialog. A user
- * with a chosen role keeps it while reading another role's pages. Explicit
- * switching happens through the RoleSwitcher segmented control only.
+ * Keeps the topbar role switcher aligned with direct navigation, deep links,
+ * and home-page role cards. Role switching still persists through the shared
+ * role store so the sidebar, search boosts, and dialog all read one source of
+ * truth.
  */
 export function RoleRouteSync() {
   const pathname = usePathname();
@@ -27,10 +27,9 @@ export function RoleRouteSync() {
 
   React.useEffect(() => {
     if (!pathname) return;
-    if (role !== null) return;
     const firstSegment = pathname.split("/").filter(Boolean)[0];
     const mapped = firstSegment ? PATH_ROLE_MAP[firstSegment] : undefined;
-    if (mapped) setRole(mapped);
+    if (mapped && mapped !== role) setRole(mapped);
   }, [pathname, role, setRole]);
 
   return null;

@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
  * ramp tokens in globals.css. No hex anywhere in this file.
  */
 const pillVariants = cva(
-  "inline-flex items-center gap-1 whitespace-nowrap rounded-[var(--radius-chip)] border font-semibold uppercase tracking-wider transition-colors",
+  "inline-flex items-center gap-1 whitespace-nowrap rounded-[var(--radius-chip)] border font-semibold uppercase leading-none tracking-wider transition-colors [&>svg]:shrink-0 [&>svg]:self-center",
   {
     variants: {
       variant: {
