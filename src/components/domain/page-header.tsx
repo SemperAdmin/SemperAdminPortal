@@ -55,7 +55,9 @@ export function PageHeader({
         </p>
       )}
       {tags && (
-        <div className="mb-3 flex flex-wrap items-center gap-2">{tags}</div>
+        <div className="mb-3 flex flex-wrap items-center gap-2 [&>*]:inline-flex [&>*]:items-center [&>*]:gap-1 [&>*]:leading-none [&_svg]:shrink-0 [&_svg]:self-center">
+          {tags}
+        </div>
       )}
       <h1
         className={cn(

@@ -56,7 +56,7 @@ export function RoleChip({
       )}
       {...props}
     >
-      {icon && Icon && <Icon className="size-3" aria-hidden="true" />}
+      {icon && Icon && <Icon className="size-3 shrink-0 self-center" aria-hidden="true" />}
       {meta.label}
     </Pill>
   );

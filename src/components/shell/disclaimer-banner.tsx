@@ -79,33 +79,35 @@ export function DisclaimerBanner() {
       className="relative w-full border-b border-[var(--color-border)] bg-[var(--color-bg-sunken)]"
     >
       <div className="absolute inset-y-0 left-0 w-[3px] bg-[var(--color-usmc-scarlet)]" />
-      <div className="mx-auto flex max-w-screen-2xl items-center gap-2 px-3 py-1.5 text-[11px] leading-tight sm:px-4 sm:text-xs">
-        <Info
-          aria-hidden="true"
-          className="size-3.5 shrink-0 text-[var(--color-usmc-scarlet)]"
-        />
-        <p className="min-w-0 flex-1 text-[var(--color-muted-foreground)]">
-          <span className="font-semibold uppercase tracking-wide text-[var(--color-foreground)]">
-            Proof of Concept.
-          </span>{" "}
-          Not official USMC content, not authoritative for pay, records, or
-          leave decisions. Sourced from public MCO and MARADMIN material.{" "}
-          <Link
-            href="/about"
-            className="whitespace-nowrap font-medium text-[var(--color-foreground)] underline decoration-[var(--color-usmc-scarlet)] decoration-2 underline-offset-2 hover:text-[var(--color-usmc-scarlet)]"
+      <div className="mx-auto flex max-w-screen-2xl justify-center px-3 py-1.5 text-[11px] leading-tight sm:px-4 sm:text-xs">
+        <div className="inline-flex max-w-full items-center justify-center gap-2 text-center">
+          <Info
+            aria-hidden="true"
+            className="size-3.5 shrink-0 text-[var(--color-usmc-scarlet)]"
+          />
+          <p className="min-w-0 text-[var(--color-muted-foreground)]">
+            <span className="font-semibold uppercase tracking-wide text-[var(--color-foreground)]">
+              Proof of Concept.
+            </span>{" "}
+            Not official USMC content, not authoritative for pay, records, or
+            leave decisions. Sourced from public MCO and MARADMIN material.{" "}
+            <Link
+              href="/about"
+              className="whitespace-nowrap font-medium text-[var(--color-foreground)] underline decoration-[var(--color-usmc-scarlet)] decoration-2 underline-offset-2 hover:text-[var(--color-usmc-scarlet)]"
+            >
+              Read full disclaimer
+            </Link>
+            .
+          </p>
+          <button
+            type="button"
+            onClick={dismiss}
+            aria-label="Dismiss disclaimer for this tab"
+            className="shrink-0 rounded p-1 text-[var(--color-muted-foreground)] transition-colors hover:bg-[var(--color-bg-elev)] hover:text-[var(--color-foreground)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--color-usmc-scarlet)]"
           >
-            Read full disclaimer
-          </Link>
-          .
-        </p>
-        <button
-          type="button"
-          onClick={dismiss}
-          aria-label="Dismiss disclaimer for this tab"
-          className="shrink-0 rounded p-1 text-[var(--color-muted-foreground)] transition-colors hover:bg-[var(--color-bg-elev)] hover:text-[var(--color-foreground)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--color-usmc-scarlet)]"
-        >
-          <X aria-hidden="true" className="size-3.5" />
-        </button>
+            <X aria-hidden="true" className="size-3.5" />
+          </button>
+        </div>
       </div>
     </div>
   );

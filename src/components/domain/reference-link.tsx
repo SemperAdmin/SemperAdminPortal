@@ -30,7 +30,8 @@ export function ReferenceLink({ text, className, noIcon }: ReferenceLinkProps) {
         target="_blank"
         rel="noopener noreferrer"
         className={cn(
-          "inline-flex items-center gap-1 text-[var(--color-usmc-scarlet)] underline-offset-2 hover:underline",
+          "inline-flex items-center gap-1 underline-offset-2 hover:underline",
+          noIcon ? "text-current" : "text-[var(--color-usmc-scarlet)]",
           className
         )}
         title={entry.title}
@@ -48,7 +49,8 @@ export function ReferenceLink({ text, className, noIcon }: ReferenceLinkProps) {
       <Link
         href={`/citations/${entry.id}`}
         className={cn(
-          "text-[var(--color-usmc-scarlet)] underline-offset-2 hover:underline",
+          "underline-offset-2 hover:underline",
+          noIcon ? "text-current" : "text-[var(--color-usmc-scarlet)]",
           className
         )}
         title={entry.title}
