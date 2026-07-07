@@ -167,12 +167,8 @@ export function navItemsForRole(role: Role | null): NavItem[] {
 const TEMPLATE_TOOLBOX_URL =
   "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCMRA_mra_SemperAdmin/SitePages/TemplateToolBox.aspx";
 
-/**
- * External SharePoint feedback form. Placeholder URL. Swap for the live
- * form address once the SharePoint feedback page publishes.
- */
-const FEEDBACK_URL =
-  "https://usmc.sharepoint-mil.us.mcas-gov.us/sites/DCMRA_mra_SemperAdmin/SitePages/Feedback.aspx";
+/** External DoD Forms feedback form. Live address, replaces the SharePoint placeholder. */
+const FEEDBACK_URL = "https://forms.osi.apps.mil/r/k5QWzJDL9P";
 
 export interface ReferenceLink {
   label: string;
