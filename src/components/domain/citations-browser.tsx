@@ -54,6 +54,29 @@ function formatDate(value: string | undefined): string {
 }
 
 /**
+ * List display title. The card renders the type pill and the mono number
+ * before the title, so a title beginning with the same type and number
+ * reads twice. Strip the redundant prefix for display only. Registry files
+ * keep the full canonical title.
+ */
+function displayTitle(citation: Citation): string {
+  const upper = citation.title.toUpperCase();
+  const prefixes = [
+    `${citation.type} ${citation.number}`.toUpperCase(),
+    citation.number.toUpperCase(),
+  ];
+  for (const prefix of prefixes) {
+    if (upper.startsWith(prefix)) {
+      const stripped = citation.title
+        .slice(prefix.length)
+        .replace(/^[\s:-]+/, "");
+      if (stripped.length > 0) return stripped;
+    }
+  }
+  return citation.title;
+}
+
+/**
  * CitationsBrowser - client-side filter, sort, and search over the citations
  * registry. Filters on type, role, URL presence, and usage. Sorts by ID,
  * recently added (lastVerified proxy), effective date, or citation count.
@@ -305,7 +328,7 @@ export function CitationsBrowser({
                     {citation.number}
                   </span>
                   <span className="flex-1 text-sm font-semibold text-[var(--color-foreground)] group-hover:text-[var(--color-usmc-scarlet)]">
-                    {citation.title}
+                    {displayTitle(citation)}
                   </span>
                   <ChevronRight
                     className="size-4 shrink-0 text-[var(--color-muted-foreground)] transition-transform group-hover:translate-x-0.5 group-hover:text-[var(--color-usmc-scarlet)]"
