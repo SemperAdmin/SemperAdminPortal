@@ -99,6 +99,23 @@ function generateLookupCandidates(input: string): string[] {
   const commaCut = trimmed.split(",")[0];
   push(commaCut ?? "");
 
+  // Sentence cut. Authors append free-text context after a period, as in
+  // "MCO 5800.16 Volume 11. Marine Corps admin separations." Keyword periods
+  // (Vol., Ch., Sec.) convert to spaces first so the split lands on the
+  // sentence boundary, not the abbreviation.
+  const sentenceSrc = trimmed.replace(
+    /\b(Vol|Vols|Ch|Chap|Chapter|Sec|Sect|Section|Par|Para|Paragraph|Encl|Enclosure|App|Appendix|Art|Article)\./gi,
+    "$1 "
+  );
+  push(sentenceSrc.split(/\.\s/)[0] ?? "");
+
+  // First four, then three whitespace tokens. Catches volume-level cites
+  // wrapped in a trailing subject, as in "MCO 5800.16 Volume 11
+  // Administrative Separations and Investigations". Tried before the
+  // two-token cut so the volume entry wins over the parent document.
+  push(trimmed.split(/\s+/).slice(0, 4).join(" "));
+  push(trimmed.split(/\s+/).slice(0, 3).join(" "));
+
   // First two whitespace tokens. Catches "MCO 5210.11F MCRAMM Chapter 3".
   const headWords = trimmed.split(/\s+/).slice(0, 2).join(" ");
   push(headWords);

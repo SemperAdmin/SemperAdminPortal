@@ -131,6 +131,20 @@ export function generateLookupCandidates(input) {
   push(trimmed.split(/\s*,?\s*\bch(?:ap(?:ter)?)?\.?\s/i)[0] || "");
   push(trimmed.split(/\s*,?\s*encl(?:osure)?\.?\s/i)[0] || "");
   push(trimmed.split(",")[0] || "");
+  // Sentence cut. Keyword periods (Vol., Ch., Sec.) convert to spaces first
+  // so the split lands on the sentence boundary, not the abbreviation.
+  push(
+    trimmed
+      .replace(
+        /\b(Vol|Vols|Ch|Chap|Chapter|Sec|Sect|Section|Par|Para|Paragraph|Encl|Enclosure|App|Appendix|Art|Article)\./gi,
+        "$1 "
+      )
+      .split(/\.\s/)[0] || ""
+  );
+  // Four-token and three-token head cuts. Volume-level cites with a trailing
+  // subject resolve to the volume entry before the two-token parent cut.
+  push(trimmed.split(/\s+/).slice(0, 4).join(" "));
+  push(trimmed.split(/\s+/).slice(0, 3).join(" "));
   push(trimmed.split(/\s+/).slice(0, 2).join(" "));
   // First single token. Catches standalone-acronym docs (MCTFSPRIUM, JTR, MCM)
   // suffixed with a section number.
