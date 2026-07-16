@@ -3145,17 +3145,13 @@
    "slug": "mco-1001-59",
    "title": "MCO 1001.59 - Active Duty For Operational Suppport (Ados) In Support Of The Total Force...",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 108,
+   "tier": "D-full",
+   "words": 475,
    "citedBy": 4,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1001r-1",
@@ -3191,40 +3187,8 @@
    "title": "MCO 10110.47 - Basic Allowance For Subsistence (Bas) And Meal Card Program",
    "type": "MCO",
    "tier": "B-thin",
-   "words": 95,
+   "words": 91,
    "citedBy": 3,
-   "hidden": false,
-   "hasExternalUrl": true,
-   "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
-  },
-  {
-   "slug": "mco-10110-47a",
-   "title": "MCO 10110.47A - Basic Allowance For Subsistence (Bas) And Meal Card Program",
-   "type": "MCO",
-   "tier": "B-thin",
-   "words": 95,
-   "citedBy": 3,
-   "hidden": false,
-   "hasExternalUrl": true,
-   "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
-  },
-  {
-   "slug": "mco-1020-34",
-   "title": "MCO 1020.34 - Marine Corps Uniform Regulations",
-   "type": "MCO",
-   "tier": "B-thin",
-   "words": 97,
-   "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
@@ -3234,6 +3198,30 @@
     "higher",
     "doctrine"
    ]
+  },
+  {
+   "slug": "mco-10110-47a",
+   "title": "MCO 10110.47A - Basic Allowance For Subsistence (Bas) And Meal Card Program",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 508,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": []
+  },
+  {
+   "slug": "mco-1020-34",
+   "title": "MCO 1020.34 - Marine Corps Uniform Regulations",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 481,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": []
   },
   {
    "slug": "mco-1040-31",
@@ -3317,17 +3305,13 @@
    "slug": "mco-11000-22",
    "title": "MCO 11000.22 - Unaccompanied Housing",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 149,
+   "tier": "D-full",
+   "words": 487,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-11240",
@@ -3376,97 +3360,80 @@
    "slug": "mco-1326-2h",
    "title": "MCO 1326.2H - Administration Of Temporary Flight Orders",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 66,
+   "tier": "D-full",
+   "words": 436,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1326-6",
    "title": "MCO 1326.6 - Selecting, Screening, And Preparing Enlisted Marines For Screenable Billets...",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 95,
+   "tier": "D-full",
+   "words": 483,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1400-31d",
    "title": "MCO 1400.31D - Marine Corps Promotion Manual, Volume 1, Officer Promotions (Marcorpromman,...",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 103,
+   "tier": "D-full",
+   "words": 484,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1500-55",
    "title": "MCO 1500.55 - Military Thinking And Decision Making Exercises",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 60,
+   "tier": "D-full",
+   "words": 345,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1500-59",
    "title": "MCO 1500.59 - Marine Corps Martial Arts Program (Mcmap)",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 133,
+   "tier": "B-thin",
+   "words": 91,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
+    "scope",
     "audience",
+    "map",
     "higher",
-    "doctrine"
+    "doctrine",
+    "status"
    ]
   },
   {
    "slug": "mco-1500-59a",
    "title": "MCO 1500.59A - Marine Corps Martial Arts Program (Mcmap)",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 124,
+   "tier": "D-full",
+   "words": 473,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1500-60",
@@ -3515,33 +3482,25 @@
    "slug": "mco-1500-63a",
    "title": "MCO 1500.63A - Marine Corps Common Military Training Requirements",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 105,
+   "tier": "D-full",
+   "words": 508,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1553-1",
    "title": "MCO 1553.1 - The Marine Corps Training And Education System",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 129,
+   "tier": "D-full",
+   "words": 390,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1553-3c",
@@ -3563,17 +3522,13 @@
    "slug": "mco-1553-4",
    "title": "MCO 1553.4 - Professional Military Education (Pme)",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 68,
+   "tier": "D-full",
+   "words": 399,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1560-25",
@@ -3595,17 +3550,13 @@
    "slug": "mco-1560-33",
    "title": "MCO 1560.33 - Marine Corps Tuition Assistance Program (Mctap)",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 71,
+   "tier": "D-full",
+   "words": 378,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1610-7b",
@@ -3678,33 +3629,25 @@
    "slug": "mco-1700-23",
    "title": "MCO 1700.23 - Request Mast Procedures",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 76,
+   "tier": "D-full",
+   "words": 418,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1700-30",
    "title": "MCO 1700.30 - Marine Corps Community Services Business Operations Manual",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 78,
+   "tier": "D-full",
+   "words": 480,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1700-31",
@@ -3738,65 +3681,49 @@
    "slug": "mco-1700-32",
    "title": "MCO 1700.32 - Leadership Scholar Program (Lsp)",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 85,
+   "tier": "D-full",
+   "words": 376,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1700-37",
    "title": "MCO 1700.37 - Personal Financial Management Program (Pfmp)",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 87,
+   "tier": "D-full",
+   "words": 463,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1710-30",
    "title": "MCO 1710.30 - Marine Corps Child And Youth Programs (Short Title: Cyp)",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 98,
+   "tier": "D-full",
+   "words": 441,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1730-6",
    "title": "MCO 1730.6 - Religious Ministry In The Marine Corps",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 61,
+   "tier": "D-full",
+   "words": 375,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1740-13",
@@ -3833,49 +3760,37 @@
    "slug": "mco-1741-11d",
    "title": "MCO 1741.11D - Survivor Annuity Program - Survivor Benefit Plans (Sbp)",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 85,
+   "tier": "D-full",
+   "words": 499,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1741-8",
    "title": "MCO 1741.8 - Marine Corps Government Life Insurance Manual (Short Title Marcorglinsman)",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 81,
+   "tier": "D-full",
+   "words": 491,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1742-1",
    "title": "MCO 1742.1 - Voting Assistance Program",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 86,
+   "tier": "D-full",
+   "words": 377,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1751-3",
@@ -3909,15 +3824,13 @@
    "slug": "mco-1754-10b",
    "title": "MCO 1754.10B - Marine Corps Information, Referral and Relocation (IR&R) Program",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 218,
+   "tier": "D-full",
+   "words": 458,
    "citedBy": 4,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "audience"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1754-6",
@@ -3930,26 +3843,25 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
+    "scope",
     "audience",
+    "map",
     "higher",
-    "doctrine"
+    "doctrine",
+    "status"
    ]
   },
   {
    "slug": "mco-1754-6c",
    "title": "MCO 1754.6C - Marine Corps Family Team Building (Mcftb)",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 78,
+   "tier": "D-full",
+   "words": 490,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1754-9",
@@ -4028,8 +3940,8 @@
    "slug": "mco-3000-18b",
    "title": "MCO 3000.18B - Marine Corps Force Deployment Planning and Execution Manual (FDP&E Manual)",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 200,
+   "tier": "D-full",
+   "words": 496,
    "citedBy": 6,
    "hidden": false,
    "hasExternalUrl": true,
@@ -4055,40 +3967,32 @@
    "slug": "mco-3070-2a",
    "title": "MCO 3070.2A - The Marine Corps Operations Security (Opsec) Program",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 93,
+   "tier": "D-full",
+   "words": 417,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-3120-11a",
    "title": "MCO 3120.11A - Marine Corps Parachuting Policy And Program Administration",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 128,
+   "tier": "D-full",
+   "words": 471,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-3120-12a",
    "title": "MCO 3120.12A - Marine Corps Global Force Management (GFM) and Force Synchronization",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 161,
+   "tier": "D-full",
+   "words": 460,
    "citedBy": 6,
    "hidden": false,
    "hasExternalUrl": true,
@@ -4099,17 +4003,13 @@
    "slug": "mco-3150-4a",
    "title": "MCO 3150.4A - Marine Corps Diving Policy And Program Administration",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 124,
+   "tier": "D-full",
+   "words": 445,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-3302",
@@ -4146,65 +4046,49 @@
    "slug": "mco-3571-2h",
    "title": "MCO 3571.2H - Explosive Ordnance Disposal (Eod) Program",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 61,
+   "tier": "D-full",
+   "words": 423,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-3574-2m",
    "title": "MCO 3574.2M - Marine Corps Combat Marksmanship Programs",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 65,
+   "tier": "D-full",
+   "words": 513,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-3710-7",
    "title": "MCO 3710.7 - Naval Air Training and Operating Procedures Standardization (NATOPS)",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 122,
+   "tier": "D-full",
+   "words": 412,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-3800-2",
    "title": "MCO 3800.2 - Oversight of Intelligence and Non-Intelligence Sensitive Activities",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 109,
+   "tier": "D-full",
+   "words": 358,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-4400-201",
@@ -4249,17 +4133,13 @@
    "slug": "mco-5000-12f",
    "title": "MCO 5000.12F - Marine Corps Policy Concerning Parenthood And Pregnancy",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 77,
+   "tier": "D-full",
+   "words": 518,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5000-14d",
@@ -4362,15 +4242,17 @@
    "title": "MCO 5215.1 - Marine Corps Directives Management Program",
    "type": "MCO",
    "tier": "B-thin",
-   "words": 72,
+   "words": 83,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
     "audience",
+    "map",
     "higher",
-    "doctrine"
+    "doctrine",
+    "status"
    ]
   },
   {
@@ -4485,50 +4367,37 @@
    "slug": "mco-5354-1",
    "title": "MCO 5354.1 - Prohibited Activities and Conduct Prevention and Response Program (PAC)",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 63,
+   "tier": "D-full",
+   "words": 509,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5420-16d",
    "title": "MCO 5420.16D - Enlisted Remedial Selection Board (Ersb)",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 83,
+   "tier": "D-full",
+   "words": 451,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5530-14a",
    "title": "MCO 5530.14A - Marine Corps Physical Security Program Manual",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 117,
+   "tier": "D-full",
+   "words": 457,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5740-4b",
@@ -4546,17 +4415,13 @@
    "slug": "mco-5750-1h",
    "title": "MCO 5750.1H - Manual For The Marine Corps Historical Program",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 107,
+   "tier": "D-full",
+   "words": 559,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-1",
@@ -4778,17 +4643,13 @@
    "slug": "mco-6100-13a",
    "title": "MCO 6100.13A - Marine Corps Physical Fitness And Combat Fitness Tests (Pft/Cft)",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 74,
+   "tier": "D-full",
+   "words": 493,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-6110-3a",
@@ -4806,34 +4667,25 @@
    "slug": "mco-6260-3",
    "title": "MCO 6260.3 - Marine Corps Hearing Conservation Program",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 81,
+   "tier": "D-full",
+   "words": 326,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-6320-4",
    "title": "MCO 6320.4 - Health Care Quality Assurance Policies for Operating Forces",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 114,
+   "tier": "D-full",
+   "words": 332,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-7220-12r",
@@ -4851,49 +4703,44 @@
    "slug": "mco-7220-13",
    "title": "MCO 7220.13 - Marine Corps Administrative Analysis Team (Mcaat)",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 78,
+   "tier": "D-full",
+   "words": 353,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-7220-24",
    "title": "MCO 7220.24 - Selective Retention Bonus (Srb) And Broken Service Selective Retention...",
    "type": "MCO",
    "tier": "B-thin",
-   "words": 81,
+   "words": 76,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
+    "scope",
     "audience",
+    "map",
     "higher",
-    "doctrine"
+    "doctrine",
+    "status"
    ]
   },
   {
    "slug": "mco-7220-24p",
    "title": "MCO 7220.24P - Selective Retention Bonus (Srb) And Broken Service Selective Retention...",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 81,
+   "tier": "D-full",
+   "words": 497,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-7220-56",
@@ -4976,17 +4823,13 @@
    "slug": "mco-8023-3",
    "title": "MCO 8023.3 - Personnel Qualification And Certification Program For Class V Ammunition...",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 90,
+   "tier": "D-full",
+   "words": 360,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-p1070-12",
@@ -5050,17 +4893,13 @@
    "slug": "mco-p3000-15b",
    "title": "MCO P3000.15B - Manpower Unit Deployment Program Standing Operating Procedures (Short...",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 67,
+   "tier": "D-full",
+   "words": 508,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-p3500-72a",
