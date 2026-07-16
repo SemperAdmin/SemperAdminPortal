@@ -1,0 +1,8338 @@
+{
+ "generated": "2026-07-16",
+ "headNote": "see report",
+ "totalEntries": 518,
+ "visibleEntries": 473,
+ "tierRule": {
+  "B-thin": "body under 120 words",
+  "C-partial": "120 to 249 words",
+  "D-full": "250 words or more"
+ },
+ "entries": [
+  {
+   "slug": "cfr-32-199",
+   "title": "32 CFR Part 199 - Civilian Health and Medical Program of the Uniformed Services (CHAMPUS / TRICARE)",
+   "type": "CFR",
+   "tier": "D-full",
+   "words": 316,
+   "citedBy": 8,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "citimanager-permanent-account-closure-confirmation",
+   "title": "CitiManager Permanent Account Closure Confirmation - Effective 13 Jun 2026",
+   "type": "OTHER",
+   "tier": "B-thin",
+   "words": 56,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "cjcsi-3401-02b",
+   "title": "CJCSI 3401.02B - Force Readiness Reporting",
+   "type": "OTHER",
+   "tier": "D-full",
+   "words": 297,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "cjcsm-3150-01b",
+   "title": "CJCSM 3150.01B - Not an Active Publication, See CJCSM 3150.03 Series for Current Joint Reporting Structure Guidance",
+   "type": "OTHER",
+   "tier": "C-partial",
+   "words": 185,
+   "citedBy": 3,
+   "hidden": true,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "cjcsm-3150-03d",
+   "title": "CJCSM 3150.03D - Joint Reporting Structure: Event and Incident Reports (Superseded)",
+   "type": "OTHER",
+   "tier": "D-full",
+   "words": 333,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "commanders-readiness-handbook",
+   "title": "Commanders Readiness Handbook",
+   "type": "OTHER",
+   "tier": "C-partial",
+   "words": 177,
+   "citedBy": 5,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "dd-form-1299",
+   "title": "DD Form 1299 - Application for Shipment and/or Storage of Personal Property",
+   "type": "DD-FORM",
+   "tier": "D-full",
+   "words": 337,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "dd-form-137",
+   "title": "DD Form 137",
+   "type": "DD-FORM",
+   "tier": "B-thin",
+   "words": 67,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "dd-form-1561",
+   "title": "DD Form 1561",
+   "type": "DD-FORM",
+   "tier": "B-thin",
+   "words": 83,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "dd-form-1797",
+   "title": "DD Form 1797",
+   "type": "DD-FORM",
+   "tier": "B-thin",
+   "words": 88,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "dd-form-214",
+   "title": "DD Form 214",
+   "type": "DD-FORM",
+   "tier": "C-partial",
+   "words": 142,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "dd-form-2367",
+   "title": "DD Form 2367",
+   "type": "DD-FORM",
+   "tier": "B-thin",
+   "words": 96,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "dd-form-2701",
+   "title": "DD Form 2701 - Initial Information for Victims and Witnesses of Crime",
+   "type": "DD-FORM",
+   "tier": "D-full",
+   "words": 283,
+   "citedBy": 5,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dd-form-2704",
+   "title": "DD Form 2704 - Victim and Witness Certification and Election Concerning Prisoner Status",
+   "type": "DD-FORM",
+   "tier": "D-full",
+   "words": 289,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dd-form-2792",
+   "title": "DD Form 2792 - Family Member Medical Summary",
+   "type": "DD-FORM",
+   "tier": "D-full",
+   "words": 400,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "dd-form-2883",
+   "title": "DD Form 2883",
+   "type": "DD-FORM",
+   "tier": "C-partial",
+   "words": 125,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "dd-form-577",
+   "title": "DD Form 577 - Appointment Termination Record Authorized Signature",
+   "type": "DD-FORM",
+   "tier": "D-full",
+   "words": 260,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dd-form-93",
+   "title": "DD Form 93",
+   "type": "DD-FORM",
+   "tier": "B-thin",
+   "words": 111,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "dod-dts-regulations",
+   "title": "DODI 5154.31, Volume 3 - Defense Travel System Regulations",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 375,
+   "citedBy": 8,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "dod-gtcc-regulations",
+   "title": "DoD Government Travel Charge Card Regulations",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 464,
+   "citedBy": 10,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodd-4500-09",
+   "title": "DoDD 4500.09 - Transportation and Traffic Management",
+   "type": "DODD",
+   "tier": "D-full",
+   "words": 286,
+   "citedBy": 7,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodd-5400-07",
+   "title": "DODD 5400.07 - DoD Freedom of Information Act (FOIA) Program",
+   "type": "DODD",
+   "tier": "D-full",
+   "words": 268,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodfmr-vol-1",
+   "title": "DOD Financial Management Regulation, Volume 1 - General Financial Management Information, Systems, and Requirements",
+   "type": "DODFMR",
+   "tier": "D-full",
+   "words": 378,
+   "citedBy": 9,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "dodfmr-vol-14",
+   "title": "DOD Financial Management Regulation, Volume 14 - Administrative Control of Funds and Antideficiency Act Violations",
+   "type": "DODFMR",
+   "tier": "B-thin",
+   "words": 53,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "dodfmr-vol-16",
+   "title": "DoD Financial Management Regulation, Volume 16 - Department of Defense Debt Management",
+   "type": "DODFMR",
+   "tier": "D-full",
+   "words": 472,
+   "citedBy": 11,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodfmr-vol-4",
+   "title": "DODFMR Vol 4",
+   "type": "DODFMR",
+   "tier": "C-partial",
+   "words": 166,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "dodfmr-vol-5",
+   "title": "DOD Financial Management Regulation, Volume 5 - Disbursing Policy",
+   "type": "DODFMR",
+   "tier": "D-full",
+   "words": 322,
+   "citedBy": 21,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "dodfmr-vol-7a",
+   "title": "DOD Financial Management Regulation, Volume 7A - Military Pay Policy, Active Duty and Reserve Pay",
+   "type": "DODFMR",
+   "tier": "C-partial",
+   "words": 177,
+   "citedBy": 148,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "dodfmr-vol-7b",
+   "title": "DoD Financial Management Regulation, Volume 7B - Military Pay Policy, Retired Pay",
+   "type": "DODFMR",
+   "tier": "D-full",
+   "words": 256,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodfmr-vol-8",
+   "title": "DOD Financial Management Regulation, Volume 8 - Civilian Pay Policy",
+   "type": "DODFMR",
+   "tier": "C-partial",
+   "words": 242,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodfmr-vol-9",
+   "title": "DOD Financial Management Regulation, Volume 9 - Travel Policy",
+   "type": "DODFMR",
+   "tier": "D-full",
+   "words": 377,
+   "citedBy": 28,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "dodi-1000-13",
+   "title": "DODI 1000.13 - Identification (ID) Cards for Members of the Uniformed Services, Their Dependents, and Other Eligible Individuals",
+   "type": "DODI",
+   "tier": "C-partial",
+   "words": 246,
+   "citedBy": 12,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "dodi-1015-11",
+   "title": "DODI 1015.11 - DoD Lodging Policy",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 412,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-1300-18",
+   "title": "DoDI 1300.18 - Department of Defense (DoD) Personnel Casualty Matters, Policies, and Procedures",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 416,
+   "citedBy": 12,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-1304-27",
+   "title": "DODI 1304.27 - Award and Administration of Special Duty Assignment Pay (HISTORICAL)",
+   "type": "DODI",
+   "tier": "C-partial",
+   "words": 126,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "dodi-1322-25",
+   "title": "DODI 1322.25 - Voluntary Education Programs",
+   "type": "DODI",
+   "tier": "C-partial",
+   "words": 249,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "dodi-1325-02",
+   "title": "DODI 1325.02 - Desertion and Unauthorized Absence or Absence Without Leave",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 343,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-1325-07",
+   "title": "DODI 1325.07 - Administration of Military Correctional Facilities and Clemency and Parole Programs",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 319,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-1327-06",
+   "title": "DODI 1327.06 - Military Leave, Liberty, and Administrative Absence",
+   "type": "DODI",
+   "tier": "C-partial",
+   "words": 231,
+   "citedBy": 8,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "dodi-1332-14",
+   "title": "DODI 1332.14 - Enlisted Administrative Separations",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 456,
+   "citedBy": 11,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "dodi-1332-18",
+   "title": "DoDI 1332.18 - Disability Evaluation System (DES)",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 558,
+   "citedBy": 11,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-1332-45",
+   "title": "DoDI 1332.45 - Retention Determinations for Non-Deployable Service Members",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 458,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-1340-09",
+   "title": "DODI 1340.09 - Hazard Pay (HzP) Program",
+   "type": "DODI",
+   "tier": "C-partial",
+   "words": 232,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-1340-26",
+   "title": "DODI 1340.26 - Assignment and Special Duty Pays",
+   "type": "DODI",
+   "tier": "C-partial",
+   "words": 231,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-1341-13",
+   "title": "DODI 1341.13 - Post-9/11 GI Bill, Transfer of Education Benefits",
+   "type": "DODI",
+   "tier": "C-partial",
+   "words": 192,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-1341-14",
+   "title": "DODI 1341.14 - Servicemembers Group Life Insurance (SGLI) On-Line Enrollment System (SOES)",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 312,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-1341-15",
+   "title": "DODI 1341.15 - Basic Needs Allowance",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 266,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "dodi-1342-22",
+   "title": "DODI 1342.22 - Military Family Readiness",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 253,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-1400-25",
+   "title": "DODI 1400.25 - DOD Civilian Personnel Management System",
+   "type": "DODI",
+   "tier": "C-partial",
+   "words": 168,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-4525-09",
+   "title": "DODI 4525.09 - Military Postal Service",
+   "type": "DODI",
+   "tier": "C-partial",
+   "words": 212,
+   "citedBy": 7,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-5025-01",
+   "title": "DODI 5025.01 - DoD Issuances Program",
+   "type": "DODI",
+   "tier": "C-partial",
+   "words": 238,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-5154-31",
+   "title": "DODI 5154.31, Volume 4 - Commercial Travel Management. DoD Government Travel Charge Card (GTCC) Program",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 281,
+   "citedBy": 20,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "dodi-5160-70",
+   "title": "DODI 5160.70 - Management of the Defense Language, Regional Expertise, and Culture (LREC) Program",
+   "type": "DODI",
+   "tier": "C-partial",
+   "words": 217,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-6025-19",
+   "title": "DODI 6025.19 - Individual Medical Readiness Program",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 344,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-6055-07",
+   "title": "DODI 6055.07 - Mishap Notification, Investigation, Reporting, and Record Keeping",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 287,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-6490-03",
+   "title": "DoDI 6490.03 - Deployment Health",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 356,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-7730-67",
+   "title": "DODI 7730.67 - Aviation Incentive Pays and Bonus Program",
+   "type": "DODI",
+   "tier": "C-partial",
+   "words": 225,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "dodi-8500-01",
+   "title": "DoDI 8500.01 - Cybersecurity",
+   "type": "DODI",
+   "tier": "D-full",
+   "words": 381,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dtmo-per-diem-rate-lookup",
+   "title": "DTMO Per Diem Rate Lookup",
+   "type": "OTHER",
+   "tier": "D-full",
+   "words": 279,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "dtmo-travel-incurred-debt-guide",
+   "title": "DTMO Guide for Managing Travel-Incurred Debt - Defense Travel System",
+   "type": "OTHER",
+   "tier": "D-full",
+   "words": 364,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "dtmo-understanding-travel-debt",
+   "title": "Understanding a Travel Debt - Information Paper",
+   "type": "OTHER",
+   "tier": "D-full",
+   "words": 374,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "fpm-vol-1",
+   "title": "FPM Volume 1 - Pay Policies",
+   "type": "FPM",
+   "tier": "B-thin",
+   "words": 118,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "fpm-vol-2",
+   "title": "FPM Volume 2 - Travel Policies",
+   "type": "FPM",
+   "tier": "B-thin",
+   "words": 103,
+   "citedBy": 5,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "fpm-vol-3",
+   "title": "FPM Volume 3 - Fiscal Policies",
+   "type": "FPM",
+   "tier": "B-thin",
+   "words": 99,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "fpm-vol-4",
+   "title": "FPM Volume 4 - Internal Control",
+   "type": "FPM",
+   "tier": "B-thin",
+   "words": 95,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "fpm",
+   "title": "FPM - Marine Corps Finance Policy Manual",
+   "type": "FPM",
+   "tier": "B-thin",
+   "words": 107,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "jaginst-5800-7g",
+   "title": "JAGINST 5800.7G - Manual of the Judge Advocate General (JAGMAN)",
+   "type": "JAGINST",
+   "tier": "D-full",
+   "words": 296,
+   "citedBy": 48,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "jtr",
+   "title": "JTR - Joint Travel Regulations",
+   "type": "OTHER",
+   "tier": "D-full",
+   "words": 402,
+   "citedBy": 63,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-002-23",
+   "title": "MARADMIN 002/23 - Cancellation of MARADMINs 754/20, 462/21, 533/21, 612/21, 733/21, 464/22",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 96,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-007-25",
+   "title": "MARADMIN 007/25 - Cancelation of MARADMIN 178/24 Reserve Component Telecommute Policy Update",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 121,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-014-25",
+   "title": "MARADMIN 014/25 - Fiscal Year 2025 Active Component Enlisted Marine Lateral Move Opportunities",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 321,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-015-20",
+   "title": "MARADMIN 015/20 - Manpower Audit Advisory 1-20, OMPF Field Folder as Central Document Repository for Pay Audit",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 330,
+   "citedBy": 23,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "maradmin-018-26",
+   "title": "MARADMIN 018/26 - Enterprise Generative Artificial Intelligence Availability and Governance",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 534,
+   "citedBy": 5,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-022-25",
+   "title": "MARADMIN 022/25 - Cancellation of MARADMIN 361/25",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 178,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-023-26",
+   "title": "MARADMIN 023/26 - Fiscal Year 2027 Selective Retention Bonus Program and Fiscal Year 2027 Broken Service Selective Retention Bonus Program",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 903,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-024-26",
+   "title": "MARADMIN 024/26 - Calendar Year 2026 U.S. Marine Corps Officer Non-Statutory Selection Boards and Panels",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 155,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-028-24",
+   "title": "MARADMIN 028/24 - Cancellation of MARADMIN 602/24",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 75,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-037-23",
+   "title": "MARADMIN 037/23 - FY23 USMC Chief Warrant Officer Five through Chief Warrant Officer Three Promotion Selection Board Results",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 111,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-042-08",
+   "title": "MARADMIN 042/08 - Implementation of the Improved Awards Processing System (IAPS)",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 342,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-050-03",
+   "title": "MARADMIN 050/03 - BAS Deductions and Per Diem for Marines Participating in Joint Force Contingency Operations",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 122,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-051-23",
+   "title": "MARADMIN 051/23 - Expansion of the Marine Corps Military Parental Leave Program",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 1001,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-052-26",
+   "title": "MARADMIN 052/26 - Marine Corps Total Force System Advisory to Identify Required Corrections to Pay Entry Base Date",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 298,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-056-25",
+   "title": "MARADMIN 056/25 - Communicating the Release of USMC Guidance on Generative Artificial Intelligence",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 253,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-065-20",
+   "title": "MARADMIN 065/20 - Military Awards Guidance for the 2020 Permanent Change of Station Season",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 1026,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-066-26",
+   "title": "MARADMIN 066/26 - Change 1 to the Advance Notification of Changes to the Marine Corps Physical Fitness Test and Body Composition Evaluation Process",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 1241,
+   "citedBy": 5,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-074-21",
+   "title": "MARADMIN 074/21 - Commandant of the Marine Corps Delegation of Awarding Authority for Military Awards",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 1042,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-076-22",
+   "title": "MARADMIN 076/22 - Updated Requirements Regarding Implementation of Servicemembers' Group Life Insurance",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 124,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-076-25",
+   "title": "MARADMIN 076/25 - Establishment of the Marine Corps Enlisted Career Designation Program Pilot",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 887,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-077-25",
+   "title": "MARADMIN 077/25 - Commandant of the Marine Corps Delegation of Awarding Authority for Military Awards",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 813,
+   "citedBy": 20,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-080-21",
+   "title": "MARADMIN 080/21 - Military Awards Guidance for the 2021 Permanent Change of Station Season",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 932,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-086-23",
+   "title": "MARADMIN 086/23 - Military Awards Guidance for the 2023 Permanent Change of Station Season",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 910,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-092-21",
+   "title": "MARADMIN 092/21 - Update to MARADMIN 414/20 FY21 Hardship Duty Pay - Tempo Program Details",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 97,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-093-25",
+   "title": "MARADMIN 093/25 - Military Awards Guidance for Permanent Change of Station Season",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 769,
+   "citedBy": 14,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-099-18",
+   "title": "MARADMIN 099/18 - Improved Awards Processing System (IAPS) Updates",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 495,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-100-01",
+   "title": "MARADMIN 100/01 - Marine Corps Lifelong Learning Program (Historical)",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 99,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-103-25",
+   "title": "MARADMIN 103/25 - Noncompetitive Active Duty Corporal to Sergeant Recruiter Promotions",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 109,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-104-06",
+   "title": "MARADMIN 104/06 - Awards Update",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 130,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-111-01",
+   "title": "MARADMIN 111/01 - Marine Corps Lifelong Learning Program (Historical)",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 99,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-111-23",
+   "title": "MARADMIN 111/23 - Update to Pregnancy Notification",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 454,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-115-19",
+   "title": "MARADMIN 115/19 - Use of Visa Intellilink Data Analytics and Misuse Case Management System for Monitoring Government Travel Charge Card Activity",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 287,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-115-24",
+   "title": "MARADMIN 115/24 - Permanent Change of Station Allowances When Attending Professional Military Education",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 107,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-126-14",
+   "title": "MARADMIN 126/14 - Manpower Management Division (MM) Reorganization",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 138,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-129-23",
+   "title": "MARADMIN 129/23 - Clarification to MARADMIN 051/23",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 101,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-132-22",
+   "title": "MARADMIN 132/22 - Military Awards Guidance for the 2022 Permanent Change of Station Season",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 926,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-135-26",
+   "title": "MARADMIN 135/26 - FY26-2 Artificial Intelligence Fellowship Programs",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 516,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-145-24",
+   "title": "MARADMIN 145/24 - Solicitation of Qualified Marines for Lateral Move into Marine Corps Community Services (4133)",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 171,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-145-26",
+   "title": "MARADMIN 145/26 - Academic Year 2026-2028 National Intelligence University (NIU) Reserve Component Masters Degree Programs",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 126,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-150-16",
+   "title": "MARADMIN 150/16 - Quarterly Page 11 Counselings for Not Recommended for Promotion to Corporal and Sergeant",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 110,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-150-22",
+   "title": "MARADMIN 150/22 - Advance Change to MCO 7220.56A Entitlement to Basic Allowance for Housing at Locations Other Than PDS",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 113,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-150-26",
+   "title": "MARADMIN 150/26 - Change to Family Separation Allowance (FSA) Rate",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 105,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-153-21",
+   "title": "MARADMIN 153/21 - Clarification to Promotion Recommendation Process and Remedial Promotions",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 91,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-157-25",
+   "title": "MARADMIN 157/25 - Inactive Duty Training (IDT) Travel Reimbursement Update",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 973,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-162-10",
+   "title": "MARADMIN 162/10 - Safeguarding Personally Identifiable Information",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 167,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-165-07",
+   "title": "MARADMIN 165/07 - Permanent Regulations for Change of Command Notification",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 359,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-181-26",
+   "title": "MARADMIN 181/26 - Fiscal Year 2028 (FY28) Headquarters Marine Corps Special Duty Assignment Campaign",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 384,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-184-26",
+   "title": "MARADMIN 184/26 - Enlisted Marine Applications Being Accepted by Navy Flight Demonstration Squadron (Blue Angels)",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 129,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-185-25",
+   "title": "MARADMIN 185/25 - Cancellation of Obsolete Promotion MARADMINs and Upcoming Changes to MCO P1400.32D",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 115,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-188-25",
+   "title": "MARADMIN 188/25 - Advance Notification of Changes to Special Leave Accrual",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 815,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-190-26",
+   "title": "MARADMIN 190/26 - Update and Extension of the Marine Corps Enlisted Career Designation Program Pilot",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 393,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-191-25",
+   "title": "MARADMIN 191/25 - Fiscal Year 2026 Selective Retention Bonus Program and Fiscal Year 2026 Broken Service Selective Retention Bonus Program",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 98,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-191-26",
+   "title": "MARADMIN 191/26 - Changes to Reserve Component Maternity Leave (RCML) and Reserve Component Parental Leave (RCPL)",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 1310,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-192-20",
+   "title": "MARADMIN 192/20 - COVID-19 Supplemental Personnel Guidance for Commanders",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 459,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-193-22",
+   "title": "MARADMIN 193/22 - Inactive Duty Training Travel Reimbursement Update",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 73,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-199-25",
+   "title": "MARADMIN 199/25 - FY26 Command Retention Mission (CRM)",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 398,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-199-26",
+   "title": "MARADMIN 199/26 - Update to Marine Corps Common Military Training Requirements",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 630,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-200-25",
+   "title": "MARADMIN 200/25 - Command Chronology Submission Requirements",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 469,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-209-26",
+   "title": "MARADMIN 209/26 - Clarifying Guidance Pertaining to Fitness Report Omission Criteria",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 525,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-211-10",
+   "title": "MARADMIN 211/10 - Awards Update",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 428,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-214-26",
+   "title": "MARADMIN 214/26 - Mandatory Completion of the Basic Artificial Intelligence Course",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 490,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-216-04",
+   "title": "MARADMIN 216/04 - Basic Allowance for Housing Waiver for Marines Attending Professional Military Education",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 118,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-222-24",
+   "title": "MARADMIN 222/24 - Military Awards Guidance for the 2024 Permanent Change of Station Season",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 719,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-222-26",
+   "title": "MARADMIN 222/26 - Forthcoming Changes to Time in Service Requirement for Promotion to Sergeant and Changes to the Staff Sergeant Promotion Process",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 538,
+   "citedBy": 7,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-224-26",
+   "title": "MARADMIN 224/26 - Calendar Year 2026 U.S. Marine Corps Staff Non-Commissioned Officer Selection Boards and Panels",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 430,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-225-23",
+   "title": "MARADMIN 225/23 - Establishment of the Small-Unit Leader Initiative",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 777,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-228-06",
+   "title": "MARADMIN 228/06 - Active Duty Career Retention and Permanent Limited Duty (PLD) Policy for Combat Wounded",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 131,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-229-25",
+   "title": "MARADMIN 229/25 - Noncompetitive Corporal to Sergeant Recruiter Promotions for the Marine Corps Reserve",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 95,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-234-26",
+   "title": "MARADMIN 234/26 - Marine Corps Official Lodging Facilities in the Defense Travel System",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 568,
+   "citedBy": 11,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-239-05",
+   "title": "MARADMIN 239/05 - Basic Allowance for Housing (BAH) at Locations Other Than the Member's Permanent Duty Station",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 102,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-245-11",
+   "title": "MARADMIN 245/11 - Purple Heart Medal - Revised Criteria for Mild Traumatic Brain Injury and Updated Coordinating Instructions",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 1330,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-263-26",
+   "title": "MARADMIN 263/26 - Guidance for Exception to Policy (ETP) Requests to the Enlisted Promotion Manual (ENLPROMMAN)",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 535,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-267-26",
+   "title": "MARADMIN 267/26 - Procedural Guidance for MCO 1900.16 Notification Requirements in Accordance with DODI 1332.14",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 822,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-270-05",
+   "title": "MARADMIN 270/05 - Aviation Commanders Preparation Program",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 86,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-270-25",
+   "title": "MARADMIN 270/25 - Available Artificial Intelligence and Data Management Training Solutions",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 640,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-280-24",
+   "title": "MARADMIN 280/24 - Interim Guidance on the Implementation of the SkillBridge Program",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 556,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-280-26",
+   "title": "Interim Guidance and Implementation of New Digital Submission Tools for Honorary, Retirement, and Career Service Awards",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 343,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "maradmin-291-12",
+   "title": "MARADMIN 291/12 - Defense Travel System (DTS) Voucher Approval Process",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 454,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-291-19",
+   "title": "MARADMIN 291/19 - Command Climate Survey Compliance",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 101,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-301-02",
+   "title": "MARADMIN 301/02 - IRAM CH 1 NAVMC 10132 Replacement",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 189,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-302-17",
+   "title": "MARADMIN 302/17 - Advance Notification of Change to MCO 7220.12R Special Duty Assignment Pay Program",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 135,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-308-23",
+   "title": "MARADMIN 308/23 - Revision of MCO 1610.7 Performance Evaluation System",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 820,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-326-23",
+   "title": "MARADMIN 326/23 - Enlisted Active Duty Service Limits",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 829,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-331-24",
+   "title": "MARADMIN 331/24 - Deadline for Marine Corps Enterprise Network Unclassified Networked Shared Drive Migration to Office 365 SharePoint Online",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 391,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-336-21",
+   "title": "MARADMIN 336/21 - Amplifying Guidance on the Defense Travel System Unsubmitted Travel Voucher Management",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 110,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-349-23",
+   "title": "MARADMIN 349/23 - Discontinue the Utilization of the Discounted Lump Sum Assignment Incentive Pay",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 109,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-350-11",
+   "title": "MARADMIN 350/11 - Fund Control Personnel Training Requirement",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 751,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-350-18",
+   "title": "MARADMIN 350/18 - Marine Corps SkillBridge Employment Training Program",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 127,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-359-25",
+   "title": "MARADMIN 359/25 - Updated Guidance for Processing Unsubmitted Defense Travel System Travel Vouchers and Closing Outstanding Travel Orders",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 1124,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-361-09",
+   "title": "MARADMIN 361/09 - Hazardous Duty Incentive Pay Demolition Duty",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 105,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-365-25",
+   "title": "MARADMIN 365/25 - Fiscal Year 2026 Active Component Enlisted Marine Lateral Move Opportunities",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 260,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-377-24",
+   "title": "MARADMIN 377/24 - Fiscal Year 2025 Class Dates for Cornerstone: The Commandant's Combined Commandership Course",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 323,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-379-22",
+   "title": "MARADMIN 379/22 - Awards Update",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 136,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-388-25",
+   "title": "MARADMIN 388/25 - Fiscal Year 2026 Class Dates for Cornerstone: The Commandant's Combined Commandership Course",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 84,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-398-10",
+   "title": "MARADMIN 398/10 - Awards Update",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 885,
+   "citedBy": 7,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-411-01",
+   "title": "MARADMIN 411/01 - Marine Corps Lifelong Learning Program (Historical)",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 99,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-412-20",
+   "title": "MARADMIN 412/20 - Implementation of Observed Academic Fitness Reports at Officer Resident Professional Military Education Courses",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 908,
+   "citedBy": 5,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-412-23",
+   "title": "MARADMIN 412/23 - Transition from Optical Digital Imaging Records Management System to the Official Military Personnel File",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 128,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-414-20",
+   "title": "MARADMIN 414/20 - FY21 Hardship Duty Pay - Tempo (HDP-T) Program Details",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 327,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-427-23",
+   "title": "MARADMIN 427/23 - Unit Punishment Book Policy Update for Officer Nonjudicial Punishment OMPF Filing",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 150,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-436-03",
+   "title": "MARADMIN 436/03 - National Call to Service",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 136,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-438-19",
+   "title": "MARADMIN 438/19 - Special Duty Assignments and Screenable Billets Incentives for Fiscal Year 2021",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 368,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-457-16",
+   "title": "MARADMIN 457/16 - Active Duty Career Retention and Expanded Permanent Limited Duty (EPLD) Policy for Wounded Marines",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 132,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-463-23",
+   "title": "MARADMIN 463/23 - Self-Initiated Referral Process for Mental Health Evaluations of Marines - The Brandon Act",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 490,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-465-13",
+   "title": "MARADMIN 465/13 - Mandatory Use of myPay to Create an Alternate Electronic Funds Transfer Account",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 125,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-468-23",
+   "title": "MARADMIN 468/23 - Command Climate Assessment Policy Updates and Guidance to the Fleet",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 733,
+   "citedBy": 5,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-469-24",
+   "title": "MARADMIN 469/24 - Fiscal Year 2025 Intended Military Occupational Specialty Promotions for Active Component",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 104,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-470-24",
+   "title": "Strategic Location Incentive Program (SLIP) Overview and Details",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 319,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "maradmin-474-21",
+   "title": "MARADMIN 474/21 - Updated Enlisted PME Requirements by Grade",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 150,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-474-23",
+   "title": "MARADMIN 474/23 - Advance Notification of Changes to Special Leave Accrual",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 136,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-478-24",
+   "title": "MARADMIN 478/24 - Issuance of the Government Travel Charge Card (GTCC) to Entry Level Marines",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 423,
+   "citedBy": 7,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-496-24",
+   "title": "MARADMIN 496/24 - Communicating the Availability of Authorized NIPR and SIPR LLM Capabilities",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 408,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-500-10",
+   "title": "MARADMIN 500/10 - Invitational Travel Orders to Unit Memorial Services",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 112,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-515-25",
+   "title": "MARADMIN 515/25 - Non-Competitive Intended Military Occupational Specialty Promotions for Active Component",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 95,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-518-21",
+   "title": "MARADMIN 518/21 - Defense Readiness Reporting System Marine Corps (DRRS-MC) Consolidation to DRRS",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 157,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-527-25",
+   "title": "MARADMIN 527/25 - Change 1: Fiscal Year 2026 Enlisted Retention Campaign",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 658,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-537-23",
+   "title": "MARADMIN 537/23 - Reactivation of the Command and Marine Profile Application",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 104,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-537-24",
+   "title": "MARADMIN 537/24 - Travel Reimbursement for a Designated Person to Provide Childcare During Permanent Change of Station Moves",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 354,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-559-14",
+   "title": "MARADMIN 559/14 - Guidance for Archiving Health Service Treatment Records for all United States Marines",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 122,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-559-23",
+   "title": "MARADMIN 559/23 - Announcement of Junior Enlisted Remedial Promotions Automation",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 621,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-570-18",
+   "title": "MARADMIN 570/18 - Clarification to MARADMIN 331/18 Changes to Parental Leave Policy",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 156,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-571-05",
+   "title": "MARADMIN 571/05 - Marine Corps Lifelong Learning Program (Historical)",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 87,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-573-24",
+   "title": "MARADMIN 573/24 - Taking Care of People (TCOP) Program Initiatives Overview",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 856,
+   "citedBy": 5,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-574-24",
+   "title": "MARADMIN 574/24 - Transport or Shipment Reimbursement of Human Breast Milk Expenses During a Permanent Change of Station",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 143,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-575-24",
+   "title": "MARADMIN 575/24 - Amendment 2 to the Performance Evaluation System",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 542,
+   "citedBy": 5,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-582-25",
+   "title": "MARADMIN 582/25 - Requirement Update on Official Photographs for Non-Promotion Selection Boards",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 408,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-585-24",
+   "title": "MARADMIN 585/24 - Fiscal Year 2026 Enlisted Retention Campaign",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 372,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-590-25",
+   "title": "MARADMIN 590/25 - Fiscal Year 2027 Enlisted Retention Campaign",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 523,
+   "citedBy": 9,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-595-24",
+   "title": "MARADMIN 595/24 - Amendment 3 to the Performance Evaluation System",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 509,
+   "citedBy": 5,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-601-24",
+   "title": "MARADMIN 601/24 - Directed Usage of the Unit Diary/Manpower Integrated Personnel Service (UD/MIPS) for Storage of Key Supporting Documents",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 337,
+   "citedBy": 7,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-602-24",
+   "title": "MARADMIN 602/24 - Guiding Principles for the Ethical Use of Artificial Intelligence by Communication Strategy and Operations",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 414,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-604-24",
+   "title": "MARADMIN 604/24 - Change 1 to the Fiscal Year 2025 Class Dates for Cornerstone",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 235,
+   "citedBy": 8,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-612-19",
+   "title": "MARADMIN 612/19 - Announcement of Authority for Early Reenlistment, Delegation of Reenlistment Approval Authority, and Changes to Promotion Requirements Policy",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 226,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-613-25",
+   "title": "MARADMIN 613/25 - Advance Notification of Changes to the Marine Corps Physical Fitness Test and Body Composition Evaluation Process",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 171,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-619-14",
+   "title": "MARADMIN 619/14 - Hardship Duty Pay - Tempo (HDP-T) Program Details",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 125,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-625-24",
+   "title": "MARADMIN 625/24 - Advance Notification of Forthcoming Changes to MCO 1050.3J, Regulations for Leave, Liberty, and Administrative Absence",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 660,
+   "citedBy": 7,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-628-20",
+   "title": "MARADMIN 628/20 - Special Duty Assignment Pay, Assignment Incentive Pay, and Volunteer Supplemental Incentive for Fiscal Year 2021",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 558,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-628-23",
+   "title": "MARADMIN 628/23 - FY26 U.S. Marine Corps Officer Promotion Selection Boards",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 660,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-630-24",
+   "title": "MARADMIN 630/24 - Updated Enlisted Professional Military Education (EPME) Requirements for Active Duty and Active Reserve Marines",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 137,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-631-24",
+   "title": "MARADMIN 631/24 - Updated Enlisted Professional Military Education (EPME) Requirements for Selected Marine Corps Reserve",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 90,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "maradmin-633-24",
+   "title": "MARADMIN 633/24 - Update to Notification Requirements for Covered Offenses",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 700,
+   "citedBy": 13,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-634-23",
+   "title": "MARADMIN 634/23 - Change to Annual Fitness Report Schedule for Active Component Captain through Lieutenant Colonel, Sergeants Major, and Master Gunnery Sergeants",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 720,
+   "citedBy": 7,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-635-24",
+   "title": "MARADMIN 635/24 - Guiding Principles for the Ethical Use of Artificial Intelligence by Communication Strategy and Operations",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 435,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-637-22",
+   "title": "MARADMIN 637/22 - Extension of Inherent Resolve Campaign Medal for Service in Iraq and Authorization",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 128,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-655-23",
+   "title": "MARADMIN 655/23 - Office of Special Trial Counsel Full Operational Capability and Notification Requirements for Covered Offenses",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 503,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-661-19",
+   "title": "MARADMIN 661/19 - Manpower Audit Advisory 1-19: Audit Compensating Controls to Dependency Application and the NAVMC 10922",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 610,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-665-17",
+   "title": "MARADMIN 665/17 - Additional Marine Corps Guidance on New Devices Authorized for Wear on Certain Military Medals and Ribbons",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 928,
+   "citedBy": 10,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "maradmin-691-21",
+   "title": "MARADMIN 691/21 - Continuation Pay Program for Calendar Year 2022 for Blended Retirement System Participants",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 119,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-692-20",
+   "title": "MARADMIN 692/20 - Awards Update",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 397,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-728-12",
+   "title": "MARADMIN 728/12 - Hazardous Duty Incentive Pay Demolition Duty",
+   "type": "MARADMIN",
+   "tier": "B-thin",
+   "words": 109,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "maradmin-754-20",
+   "title": "MARADMIN 754/20 - COVID-19 Vaccine Guidance for Active and Reserve Components",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 1019,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "marine-corps-manual",
+   "title": "Marine Corps Manual (W/CH 1-3)",
+   "type": "OTHER",
+   "tier": "D-full",
+   "words": 327,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mcbul-5210",
+   "title": "MCBUL 5210 - Announcement of Upcoming Changes to the Marine Corps Records Management Program Directive",
+   "type": "MCBUL",
+   "tier": "D-full",
+   "words": 1342,
+   "citedBy": 9,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
+   "slug": "mcbul-5810",
+   "title": "MCBUL 5810 - Criminal Justice Information System (CJIS) Reporting Requirements",
+   "type": "MCBUL",
+   "tier": "D-full",
+   "words": 291,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "mcbul-6110",
+   "title": "MCBUL 6110",
+   "type": "MCBUL",
+   "tier": "B-thin",
+   "words": 68,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mcm",
+   "title": "Manual for Courts-Martial, United States (2024 Edition)",
+   "type": "OTHER",
+   "tier": "D-full",
+   "words": 355,
+   "citedBy": 33,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "mco-1000-6",
+   "title": "MCO 1000.6 - Assignment, Classification, and Travel System Manual (ACTSMAN)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 379,
+   "citedBy": 9,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-1001-59",
+   "title": "MCO 1001.59 - Active Duty For Operational Suppport (Ados) In Support Of The Total Force...",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 108,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1001r-1",
+   "title": "MCO 1001R.1 - Marine Corps Reserve Administrative Management Manual (Short Title: Mcramm)",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 50,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1001r-1l",
+   "title": "MCO 1001R.1L - Marine Corps Reserve Administrative Management Manual (MCRAMM)",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 94,
+   "citedBy": 92,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-10110-47",
+   "title": "MCO 10110.47 - Basic Allowance For Subsistence (Bas) And Meal Card Program",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 95,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-10110-47a",
+   "title": "MCO 10110.47A - Basic Allowance For Subsistence (Bas) And Meal Card Program",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 95,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1020-34",
+   "title": "MCO 1020.34 - Marine Corps Uniform Regulations",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 97,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1040-31",
+   "title": "MCO 1040.31 - Enlisted Retention and Career Development Program",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 353,
+   "citedBy": 18,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-1050-16a",
+   "title": "MCO 1050.16A - Appellate Leave Awaiting Punitive Separation",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 1812,
+   "citedBy": 5,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
+  },
+  {
+   "slug": "mco-1050-3j",
+   "title": "MCO 1050.3J - Regulations for Leave, Liberty, and Administrative Absence",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 335,
+   "citedBy": 39,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-1070-1",
+   "title": "MCO 1070.1 - Official Military Personnel File (OMPF)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 370,
+   "citedBy": 11,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-1100-79",
+   "title": "MCO 1100.79 - No Standalone Order, See Marine Corps Bulletin 5314 and the Marine Corps Retention Manual",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 244,
+   "citedBy": 6,
+   "hidden": true,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-11000-22",
+   "title": "MCO 11000.22 - Unaccompanied Housing",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 149,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-11240",
+   "title": "MCO 11240 - Series Number, See the Numbered Motor Transport Orders",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 99,
+   "citedBy": 1,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1300-8",
+   "title": "MCO 1300.8 - Marine Corps Personnel Assignment Policy",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 173,
+   "citedBy": 34,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "mco-1320-11h",
+   "title": "MCO 1320.11H - Marine Corps Sponsorship Program (MCSP)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 721,
+   "citedBy": 16,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
+  },
+  {
+   "slug": "mco-1326-2h",
+   "title": "MCO 1326.2H - Administration Of Temporary Flight Orders",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 66,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1326-6",
+   "title": "MCO 1326.6 - Selecting, Screening, And Preparing Enlisted Marines For Screenable Billets...",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 95,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1400-31d",
+   "title": "MCO 1400.31D - Marine Corps Promotion Manual, Volume 1, Officer Promotions (Marcorpromman,...",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 103,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1500-55",
+   "title": "MCO 1500.55 - Military Thinking And Decision Making Exercises",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 60,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1500-59",
+   "title": "MCO 1500.59 - Marine Corps Martial Arts Program (Mcmap)",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 133,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1500-59a",
+   "title": "MCO 1500.59A - Marine Corps Martial Arts Program (Mcmap)",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 124,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1500-60",
+   "title": "MCO 1500.60 - Moved to MCO 1500.60A",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 76,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1500-60a",
+   "title": "MCO 1500.60A - Force Preservation Council (FPC)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 884,
+   "citedBy": 17,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
+  },
+  {
+   "slug": "mco-1500-61",
+   "title": "MCO 1500.61 - Marine Leader Development",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 304,
+   "citedBy": 18,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-1500-63a",
+   "title": "MCO 1500.63A - Marine Corps Common Military Training Requirements",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 105,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1553-1",
+   "title": "MCO 1553.1 - The Marine Corps Training And Education System",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 129,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1553-3c",
+   "title": "MCO 1553.3C - Unit Training Management (UTM) Program",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 439,
+   "citedBy": 16,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1553-4",
+   "title": "MCO 1553.4 - Professional Military Education (Pme)",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 68,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1560-25",
+   "title": "MCO 1560.25 - Marine Corps Lifelong Learning Program (LLPROGRAM)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 370,
+   "citedBy": 10,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-1560-33",
+   "title": "MCO 1560.33 - Marine Corps Tuition Assistance Program (Mctap)",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 71,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1610-7b",
+   "title": "MCO 1610.7B - Performance Evaluation System (PES)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 314,
+   "citedBy": 40,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-1616-1",
+   "title": "MCO 1616.1 - Junior Enlisted Performance Evaluation System (JEPES)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 339,
+   "citedBy": 8,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-1620-3a",
+   "title": "MCO 1620.3A - Marine Corps Absentee and Deserter Apprehension Program",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 391,
+   "citedBy": 8,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "mco-1640-6",
+   "title": "MCO 1640.6 - Marine Corps Confinement Manual",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 325,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-1650-19j",
+   "title": "MCO 1650.19J - Administrative and Issue Procedures for Decorations, Medals, and Awards",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 245,
+   "citedBy": 34,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1700-23",
+   "title": "MCO 1700.23 - Request Mast Procedures",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 76,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1700-30",
+   "title": "MCO 1700.30 - Marine Corps Community Services Business Operations Manual",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 78,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1700-31",
+   "title": "MCO 1700.31 - Moved to MCO 1700.31A",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 92,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1700-31a",
+   "title": "MCO 1700.31A - Marine Corps Transition Readiness Program (TRP)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 1409,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
+  },
+  {
+   "slug": "mco-1700-32",
+   "title": "MCO 1700.32 - Leadership Scholar Program (Lsp)",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 85,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1700-37",
+   "title": "MCO 1700.37 - Personal Financial Management Program (Pfmp)",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 87,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1710-30",
+   "title": "MCO 1710.30 - Marine Corps Child And Youth Programs (Short Title: Cyp)",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 98,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1730-6",
+   "title": "MCO 1730.6 - Religious Ministry In The Marine Corps",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 61,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1740-13",
+   "title": "MCO 1740.13 - Moved to MCO 1740.13D",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 77,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1740-13d",
+   "title": "MCO 1740.13D - Family Care Plans",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 1047,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
+  },
+  {
+   "slug": "mco-1741-11d",
+   "title": "MCO 1741.11D - Survivor Annuity Program - Survivor Benefit Plans (Sbp)",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 85,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1741-8",
+   "title": "MCO 1741.8 - Marine Corps Government Life Insurance Manual (Short Title Marcorglinsman)",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 81,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1742-1",
+   "title": "MCO 1742.1 - Voting Assistance Program",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 86,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1751-3",
+   "title": "MCO 1751.3 - Marine Corps Dependency Determination and Support Program for BAH and Travel and Transportation Allowance",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 291,
+   "citedBy": 23,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-1752-5c",
+   "title": "MCO 1752.5C - Sexual Assault Prevention and Response (SAPR) Program",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 785,
+   "citedBy": 11,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
+  },
+  {
+   "slug": "mco-1754-10b",
+   "title": "MCO 1754.10B - Marine Corps Information, Referral and Relocation (IR&R) Program",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 218,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "mco-1754-6",
+   "title": "MCO 1754.6 - Marine Corps Family Team Building (Mcftb)",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 78,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1754-6c",
+   "title": "MCO 1754.6C - Marine Corps Family Team Building (Mcftb)",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 78,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1754-9",
+   "title": "MCO 1754.9 - Moved to MCO 1754.9B",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 77,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-1754-9b",
+   "title": "MCO 1754.9B - Unit, Personal and Family Readiness Program (UPFRP)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 1605,
+   "citedBy": 8,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
+  },
+  {
+   "slug": "mco-1770-1",
+   "title": "MCO 1770.1 - Marine Corps Casualty Assistance Calls Program (CACP)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 309,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "mco-1900-16",
+   "title": "MCO 1900.16 - Separation and Retirement Manual (MARCORSEPMAN)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 406,
+   "citedBy": 65,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-3000-13b",
+   "title": "MCO 3000.13B - Marine Corps Readiness Reporting",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 220,
+   "citedBy": 19,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "mco-3000-18b",
+   "title": "MCO 3000.18B - Marine Corps Force Deployment Planning and Execution Manual (FDP&E Manual)",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 200,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "mco-3040-4",
+   "title": "MCO 3040.4 - Marine Corps Casualty Assistance Program (MARCORCASASTPRO)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 307,
+   "citedBy": 28,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-3070-2a",
+   "title": "MCO 3070.2A - The Marine Corps Operations Security (Opsec) Program",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 93,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-3120-11a",
+   "title": "MCO 3120.11A - Marine Corps Parachuting Policy And Program Administration",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 128,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-3120-12a",
+   "title": "MCO 3120.12A - Marine Corps Global Force Management (GFM) and Force Synchronization",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 161,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "mco-3150-4a",
+   "title": "MCO 3150.4A - Marine Corps Diving Policy And Program Administration",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 124,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-3302",
+   "title": "MCO 3302 - Not an Order, Antiterrorism Policy Issues Under the Numbered 3302 Series",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 79,
+   "citedBy": 1,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-3504-2a",
+   "title": "MCO 3504.2A - Operations Event/Incident Report (OPREP-3) Reporting",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 549,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-3571-2h",
+   "title": "MCO 3571.2H - Explosive Ordnance Disposal (Eod) Program",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 61,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-3574-2m",
+   "title": "MCO 3574.2M - Marine Corps Combat Marksmanship Programs",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 65,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-3710-7",
+   "title": "MCO 3710.7 - Naval Air Training and Operating Procedures Standardization (NATOPS)",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 122,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-3800-2",
+   "title": "MCO 3800.2 - Oversight of Intelligence and Non-Intelligence Sensitive Activities",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 109,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-4400-201",
+   "title": "MCO 4400.201 - Management of Property in the Possession of the Marine Corps",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 1046,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
+  },
+  {
+   "slug": "mco-4600-40c",
+   "title": "MCO 4600.40C - Government Travel Charge Card Program (GTCCP)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 283,
+   "citedBy": 34,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-4650-39a",
+   "title": "MCO 4650.39A - Defense Travel System (DTS)",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 238,
+   "citedBy": 37,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-5000-12f",
+   "title": "MCO 5000.12F - Marine Corps Policy Concerning Parenthood And Pregnancy",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 77,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5000-14d",
+   "title": "MCO 5000.14D - Marine Corps Administrative Procedures (MCAP)",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 236,
+   "citedBy": 171,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-5040-6k",
+   "title": "MCO 5040.6K - Inspector General of the Marine Corps Inspections Program",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 354,
+   "citedBy": 13,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5100-29c",
+   "title": "MCO 5100.29C - Marine Corps Safety Management System (MCSMS)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 739,
+   "citedBy": 12,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
+  },
+  {
+   "slug": "mco-5110-4b",
+   "title": "MCO 5110.4B - Marine Corps Postal Affairs and Official Mail Program",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 102,
+   "citedBy": 8,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5210-11",
+   "title": "MCO 5210.11 - Moved to MCO 5210.11F",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 77,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5210-11f",
+   "title": "MCO 5210.11F - Marine Corps Records Management Program",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 742,
+   "citedBy": 35,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
+  },
+  {
+   "slug": "mco-5214-2g",
+   "title": "MCO 5214.2G - Marine Corps Information Requirements (Reports) Management Program",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 328,
+   "citedBy": 8,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-5215-1",
+   "title": "MCO 5215.1 - Marine Corps Directives Management Program",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 72,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5215-1k",
+   "title": "MCO 5215.1K - Marine Corps Directives Management Program",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 625,
+   "citedBy": 17,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
+  },
+  {
+   "slug": "mco-5216-20",
+   "title": "MCO 5216.20B - Marine Corps Supplement to SECNAV M-5216.5 Department of the Navy Correspondence Manual",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 212,
+   "citedBy": 10,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "mco-5231-4",
+   "title": "MCO 5231.4 - Marine Corps Data and Artificial Intelligence (AI)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 401,
+   "citedBy": 11,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "mco-5239-2b",
+   "title": "MCO 5239.2B - Marine Corps Cybersecurity",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 435,
+   "citedBy": 14,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5300-17",
+   "title": "MCO 5300.17 - Moved to MCO 5300.17A",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 130,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5300-17a",
+   "title": "MCO 5300.17A - Marine Corps Substance Abuse Program",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 1891,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
+  },
+  {
+   "slug": "mco-5311-1e",
+   "title": "MCO 5311.1E - Total Force Structure Process",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 358,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "mco-5320-12h",
+   "title": "MCO 5320.12H - Precedence Levels for Manning and Staffing",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 255,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-5354-1",
+   "title": "MCO 5354.1 - Prohibited Activities and Conduct Prevention and Response Program (PAC)",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 63,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5420-16d",
+   "title": "MCO 5420.16D - Enlisted Remedial Selection Board (Ersb)",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 83,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5530-14a",
+   "title": "MCO 5530.14A - Marine Corps Physical Security Program Manual",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 117,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5740-4b",
+   "title": "MCO 5740.4B - Relationship with the Surveys and Investigations Staff, House Appropriations Committee",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 301,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-5750-1h",
+   "title": "MCO 5750.1H - Manual For The Marine Corps Historical Program",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 107,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-1",
+   "title": "MCO 5800.16 Vol 1 - Legal Support Within the Marine Corps",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 184,
+   "citedBy": 12,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-10",
+   "title": "MCO 5800.16 Vol 10 - Indebtedness",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 162,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-11",
+   "title": "MCO 5800.16 Vol 11 - Administrative Separations and Investigations",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 143,
+   "citedBy": 10,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-12",
+   "title": "MCO 5800.16 Vol 12 - Command Responsibilities in the Provision of Legal Services",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 188,
+   "citedBy": 14,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-13",
+   "title": "MCO 5800.16 Vol 13 - Compliance with Criminal Court Orders by Marines, Dependents, and Civilian Employees Serving Overseas",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 231,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-14",
+   "title": "MCO 5800.16 Vol 14 - Enlisted Nonjudicial Punishment Matters and Preparation of the Unit Punishment Book",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 268,
+   "citedBy": 8,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-15",
+   "title": "MCO 5800.16 Vol 15 - Officer Misconduct and Substandard Performance of Duty",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 225,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-16",
+   "title": "MCO 5800.16 Vol 16 - Military Justice",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 250,
+   "citedBy": 8,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-17",
+   "title": "MCO 5800.16 Vol 17 - Judge Advocate Division Awards Program",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 218,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-2",
+   "title": "MCO 5800.16 Vol 2 - Oversight of the Marine Corps Legal Community",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 138,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-3",
+   "title": "MCO 5800.16 Vol 3 - Marine Corps Defense Services Organization",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 203,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-4",
+   "title": "MCO 5800.16 Vol 4 - Marine Corps Victims' Legal Counsel Organization",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 216,
+   "citedBy": 5,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-5",
+   "title": "MCO 5800.16 Vol 5 - Marine Corps Legal Assistance Program",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 197,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-6",
+   "title": "MCO 5800.16 Vol 6 - International and Operational Law",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 177,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-7",
+   "title": "MCO 5800.16 Vol 7 - Ethics",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 138,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-8",
+   "title": "MCO 5800.16 Vol 8 - Gifts to the Marine Corps, Civil Litigation, and Claims",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 169,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16-vol-9",
+   "title": "MCO 5800.16 Vol 9 - Dependent Support and Paternity",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 188,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-5800-16",
+   "title": "MCO 5800.16 - Marine Corps Manual for Legal Administration (LSAM)",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 137,
+   "citedBy": 48,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-6100-13a",
+   "title": "MCO 6100.13A - Marine Corps Physical Fitness And Combat Fitness Tests (Pft/Cft)",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 74,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-6110-3a",
+   "title": "MCO 6110.3A - Marine Corps Body Composition and Military Appearance Program",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 1620,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
+  },
+  {
+   "slug": "mco-6260-3",
+   "title": "MCO 6260.3 - Marine Corps Hearing Conservation Program",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 81,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-6320-4",
+   "title": "MCO 6320.4 - Health Care Quality Assurance Policies for Operating Forces",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 114,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-7220-12r",
+   "title": "MCO 7220.12R - Special Duty Assignment Pay (SDAP) Program",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 211,
+   "citedBy": 8,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-7220-13",
+   "title": "MCO 7220.13 - Marine Corps Administrative Analysis Team (Mcaat)",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 78,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-7220-24",
+   "title": "MCO 7220.24 - Selective Retention Bonus (Srb) And Broken Service Selective Retention...",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 81,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-7220-24p",
+   "title": "MCO 7220.24P - Selective Retention Bonus (Srb) And Broken Service Selective Retention...",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 81,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-7220-56",
+   "title": "MCO 7220.56 - Moved to MCO 7220.56A",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 119,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-7220-56a",
+   "title": "MCO 7220.56A - Entitlement to Basic Allowance for Housing (BAH) at Locations Other Than Permanent Duty Station",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 1209,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
+  },
+  {
+   "slug": "mco-7220-65",
+   "title": "MCO 7220.65 - No Standalone Order, See DoD FMR Volume 7A and Specific Pay and Allowance MCOs",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 224,
+   "citedBy": 4,
+   "hidden": true,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-7220",
+   "title": "MCO 7220 - Not an Order, Pay and Allowance Policy Issues Under the Numbered 7220 Series",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 91,
+   "citedBy": 1,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-7300-21b",
+   "title": "MCO 7300.21B - Marine Corps Financial Management Standard Operating Procedure Manual",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 180,
+   "citedBy": 12,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "mco-8023-3",
+   "title": "MCO 8023.3 - Personnel Qualification And Certification Program For Class V Ammunition...",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 90,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-p1070-12",
+   "title": "MCO P1070.12K W/CH 1 - Marine Corps Individual Records Administration Manual (IRAM)",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 246,
+   "citedBy": 130,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-p1070-12k",
+   "title": "MCO P1070.12K Locator Sheet - see MCO P1070.12 IRAM",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 112,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-p1400-32d",
+   "title": "MCO P1400.32D W CH 1-2 - Marine Corps Promotion Manual, Volume 2, Enlisted Promotions (MARCORPROMMAN Vol 2, ENLPROM)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 254,
+   "citedBy": 32,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mco-p1700-27b",
+   "title": "MCO P1700.27B W/CH 1 - Marine Corps Community Services Policy Manual (MCCS Policy Manual)",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 304,
+   "citedBy": 9,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "mco-p3000-15b",
+   "title": "MCO P3000.15B - Manpower Unit Deployment Program Standing Operating Procedures (Short...",
+   "type": "MCO",
+   "tier": "B-thin",
+   "words": 67,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-p3500-72a",
+   "title": "MCO P3500.72A - Marine Corps Ground Training and Readiness (T&R) Program",
+   "type": "MCO",
+   "tier": "D-full",
+   "words": 477,
+   "citedBy": 20,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mco-p6320-13",
+   "title": "MCO P6320.13 - No Standalone Order, See Marine Corps 6000 Medical and Dental Series",
+   "type": "MCO",
+   "tier": "C-partial",
+   "words": 195,
+   "citedBy": 4,
+   "hidden": true,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mcrp-7-20a-1",
+   "title": "MCRP 7-20A.1 - Training Plan Design",
+   "type": "OTHER",
+   "tier": "C-partial",
+   "words": 131,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mcrp-7-20a-2",
+   "title": "MCRP 7-20A.2 - Event and Exercise Design",
+   "type": "OTHER",
+   "tier": "D-full",
+   "words": 272,
+   "citedBy": 5,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mcrp-7-20a-5",
+   "title": "MCRP 7-20A.5 - Training Data Management",
+   "type": "OTHER",
+   "tier": "C-partial",
+   "words": 138,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfs-fos-access-policy-8-0",
+   "title": "MCTFS FoS Access Policy and Procedures 8.0 with Addendum 9",
+   "type": "OTHER",
+   "tier": "D-full",
+   "words": 384,
+   "citedBy": 7,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "mctfsprium-10100",
+   "title": "MCTFSPRIUM 1-10100 - Introduction To Mctfs",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 936,
+   "citedBy": 5,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-10103",
+   "title": "MCTFSPRIUM 1-10103 - Accession Of Computer Records Into MCTFS",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 582,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-10111",
+   "title": "MCTFSPRIUM 1-10111 - Supporting Unit Commanding Officer's Specific Responsibilities",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 316,
+   "citedBy": 5,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-120101",
+   "title": "MCTFSPRIUM 12-120101 - AUDIT RESPONSIBILITIES 1. Reporting Unit Commanding Officer",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 556,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-120103",
+   "title": "MCTFSPRIUM 12-120103 - AUDIT OCCASIONS AND REQUIREMENTS",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 3324,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-120104",
+   "title": "MCTFSPRIUM 12-120104 - ADDITIONAL INSTRUCTIONS FOR THE AUDIT OF THE BIR AND BTR",
+   "type": "MCTFSPRIUM",
+   "tier": "C-partial",
+   "words": 139,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-120303",
+   "title": "MCTFSPRIUM 12-120303 - AUDIT REQUIREMENTS FOR THE UNIT ELECTRONIC DIARY FEEDBACK REPORT (DFR)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 1427,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-20103",
+   "title": "MCTFSPRIUM 2-20103 - UNIT DIARY TIMELINESS",
+   "type": "MCTFSPRIUM",
+   "tier": "C-partial",
+   "words": 141,
+   "citedBy": 8,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-20104",
+   "title": "MCTFSPRIUM 2-20104 - MCTFS Certification",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 709,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-20115",
+   "title": "MCTFSPRIUM 2-20115 - USER ROLES AND PERMISSIONS WITHIN THE UNIT DIARY / MARINE INTEGRATED PERSONNEL SERVICE (UD/MIPS)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 1090,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-30301",
+   "title": "MCTFSPRIUM 3-30301 - Reenlistment Into the Active Duty Component (TTC 004) 1. Report all necessary inf",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 801,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-30302",
+   "title": "MCTFSPRIUM 3-30302 - Reenlistment Into The Reserve Component (TTC 004) 1. This paragraph applies to Ac",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 756,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-30303",
+   "title": "MCTFSPRIUM 3-30303 - DO to ensure that the Marine is charged for the day of leave.",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 793,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-30306",
+   "title": "MCTFSPRIUM 3-30306 - EXPIRATION OF ACTIVE SERVICE (EAS) (TTC 077/081)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 1096,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-30307",
+   "title": "MCTFSPRIUM 3-30307 - EXPIRATION OF CURRENT CONTRACT (ECC) (TTC 122/081)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 637,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-40401",
+   "title": "MCTFSPRIUM 4-40401 - BODY COMPOSITION PROGRAM/MILITARY APPEARANCE PROGRAM",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 1436,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-60212",
+   "title": "MCTFSPRIUM 6-60212 - JOIN FROM DESERTION RUC 54321 MCC 910 WHILE DES IHCA |",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 881,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-60300",
+   "title": "MCTFSPRIUM 6-60300 - INTRODUCTION TO ATTACHMENTS 1. The following reporting instructions are covered i",
+   "type": "MCTFSPRIUM",
+   "tier": "C-partial",
+   "words": 138,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70101",
+   "title": "MCTFSPRIUM 7-70101 - Leave (TTC 115)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 2059,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70104",
+   "title": "MCTFSPRIUM 7-70104 - To Separations Absence (TTC 115 030) 1. Reported when Separations absence has bee",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 606,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70107",
+   "title": "MCTFSPRIUM 7-70107 - LUMP SUM LEAVE (LSL) (TTC 400) (RES)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 468,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70108",
+   "title": "MCTFSPRIUM 7-70108 - Career Lump Sum Leave (TTC 401)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 366,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70303",
+   "title": "MCTFSPRIUM 7-70303 - In the Hands of Civil Authority (TTC 281, 282)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 916,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70304",
+   "title": "MCTFSPRIUM 7-70304 - In Hands of Civilian Authorities (IHCA) Period Excused (TTC 314)",
+   "type": "MCTFSPRIUM",
+   "tier": "C-partial",
+   "words": 121,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70305",
+   "title": "MCTFSPRIUM 7-70305 - In the Hands of Foreign Civil Authority (TTC 291, 292)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 717,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70306",
+   "title": "MCTFSPRIUM 7-70306 - In the Hands of Foreign Civil Authorities Period Excused (TTC 300)",
+   "type": "MCTFSPRIUM",
+   "tier": "B-thin",
+   "words": 79,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70307",
+   "title": "MCTFSPRIUM 7-70307 - Desertion (TTC 381)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 705,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70501",
+   "title": "MCTFSPRIUM 7-70501 - AUTOMATED COURT-MARTIAL (TTC 257) (Active Duty and Reserve) 1. Reporting Court-Ma",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 2460,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70502",
+   "title": "MCTFSPRIUM 7-70502 - Forfeitures and Fines (TTC 268, 275, 283, 284, 315, 318, 329)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 3362,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70503",
+   "title": "MCTFSPRIUM 7-70503 - Non-Judicial Punishment Information (TTC 268)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 295,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70504",
+   "title": "MCTFSPRIUM 7-70504 - Pay Grade Corrections and Non-Judicial Punishment (TTC 320)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 547,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70505",
+   "title": "MCTFSPRIUM 7-70505 - APPELLATE LEAVE (TTC 061/062)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 1617,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70506",
+   "title": "MCTFSPRIUM 7-70506 - Confinement (TTC 310/313)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 1740,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70507",
+   "title": "MCTFSPRIUM 7-70507 - Reduction, Punitive and Non-Punitive (TTC 056)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 412,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70508",
+   "title": "MCTFSPRIUM 7-70508 - COURTS-MARTIAL/NONJUDICIAL PUNISHMENT STATISTICAL DATA",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 605,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70701",
+   "title": "MCTFSPRIUM 7-70701 - Promotion (Enlisted Only) (TTC 052)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 1760,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-70702",
+   "title": "MCTFSPRIUM 7-70702 - Enlisted Restricted Promotions and Ineligibility for Promotion (TTC 053)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 741,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-80100",
+   "title": "MCTFSPRIUM 8-80100 - INTRODUCTION TO COST-OF-LIVING ALLOWANCE (COLA) 1. The following reporting instru",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 277,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-80101",
+   "title": "MCTFSPRIUM 8-80101 - Continental United States Cost-of-Living Allowance (TTC 276/277)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 2114,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-80102",
+   "title": "MCTFSPRIUM 8-80102 - Cost-of-Living Allowances Outside of the Continental United States (Cola/Barracks Cola) (TTC 013, 01",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 2208,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-80201",
+   "title": "MCTFSPRIUM 8-80201 - BASIC ALLOWANCE FOR HOUSING (BAH) (TTC 186, 187, 388, 389, 896)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 5354,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-80205",
+   "title": "MCTFSPRIUM 8-80205 - Move-In Housing Allowance (",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 379,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-80207",
+   "title": "MCTFSPRIUM 8-80207 - Overseas Housing Allowance (TTC 496/497/498/458)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 2529,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-80402",
+   "title": "MCTFSPRIUM 8-80402 - Discount Meal Rate",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 463,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-80403",
+   "title": "MCTFSPRIUM 8-80403 - Basic Allowance for Subsistence (BAS)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 2267,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-80501",
+   "title": "MCTFSPRIUM 8-80501 - Service Member's Group Life Insurance (TTC 804, 309)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 1953,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-80604",
+   "title": "MCTFSPRIUM 8-80604 - Combat Zone Tax Exclusion (CZTE) (TTC 432/433/434/437)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 2017,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-81201",
+   "title": "MCTFSPRIUM 8-81201 - Basic Needs Allowance (TTC 694/693)",
+   "type": "MCTFSPRIUM",
+   "tier": "C-partial",
+   "words": 198,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-90101",
+   "title": "MCTFSPRIUM 9-90101 - INCENTIVE PAY FOR HAZARDOUS DUTY",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 658,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-90102",
+   "title": "MCTFSPRIUM 9-90102 - AVIATION DATA ELEMENTS",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 5016,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-90201",
+   "title": "MCTFSPRIUM 9-90201 - Special Duty Assignment Pay",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 877,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-90202",
+   "title": "MCTFSPRIUM 9-90202 - Special Duty Assignment and Assignment Incentive Pay",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 800,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-90601",
+   "title": "MCTFSPRIUM 9-90601 - Career Sea Pay (TTC 139, 173, 147, 188) (Active Duty Only)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 2987,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-90700",
+   "title": "MCTFSPRIUM 9-90700 - Introduction to Hostile Fire Pay and Imminent Danger Pay 1. The following reporti",
+   "type": "MCTFSPRIUM",
+   "tier": "C-partial",
+   "words": 120,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-90701",
+   "title": "MCTFSPRIUM 9-90701 - Imminent Danger Pay (TTC 236/293/294/297/899)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 1570,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-90801",
+   "title": "MCTFSPRIUM 9-90801 - Hardship Duty Pay-Location (TTC 125, 136, 175)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 937,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-90802",
+   "title": "MCTFSPRIUM 9-90802 - Hardship Duty Pay-Mission (TTC 125",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 329,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-90803",
+   "title": "MCTFSPRIUM 9-90803 - Hardship Duty Pay-Tempo (TTC 125, 136, 175)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 265,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-91003",
+   "title": "MCTFSPRIUM 9-91003 - Deployed Per Diem and Contingency Per Diem (TTC 327/328/331/332)",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 2165,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-91701",
+   "title": "MCTFSPRIUM 9-91701 - Arial, Verdana; font-size: 10pt;'>",
+   "type": "MCTFSPRIUM",
+   "tier": "C-partial",
+   "words": 176,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-91800",
+   "title": "MCTFSPRIUM 9-91800 - BLENDED RETIREMENT SYSTEM \u2013 CONTINUATION PAY (BRS-CP) (TTC 450/451/452/551) (ACTIVE COMPONENT (AC),",
+   "type": "MCTFSPRIUM",
+   "tier": "D-full",
+   "words": 1522,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium-appendix-c",
+   "title": "MCTFSPRIUM Chapter 13 Appendix C - Official Military Personnel File (OMPF) Forms List",
+   "type": "MCTFSPRIUM",
+   "tier": "B-thin",
+   "words": 65,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctfsprium",
+   "title": "MCTFSPRIUM - Marine Corps Total Force System Personnel Reporting Instructions Users Manual",
+   "type": "MCTFSPRIUM",
+   "tier": "C-partial",
+   "words": 176,
+   "citedBy": 106,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "mctp-3-30g",
+   "title": "MCTP 3-30G - Marine Corps Manpower and Personnel Administration",
+   "type": "OTHER",
+   "tier": "C-partial",
+   "words": 171,
+   "citedBy": 12,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "mcwp-4-11-1",
+   "title": "MCWP 4-11.1 - Health Service Support Operations",
+   "type": "OTHER",
+   "tier": "C-partial",
+   "words": 143,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "navmc-10132",
+   "title": "NAVMC 10132",
+   "type": "NAVMC",
+   "tier": "B-thin",
+   "words": 90,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "navmc-10274",
+   "title": "NAVMC 10274 - Administrative Action (AA Form)",
+   "type": "NAVMC",
+   "tier": "D-full",
+   "words": 352,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "navmc-11432",
+   "title": "NAVMC 11432 - Marine Corps Martial Arts Program Instructor's Course Record",
+   "type": "NAVMC",
+   "tier": "B-thin",
+   "words": 71,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "navmc-11533",
+   "title": "NAVMC 11533 - Personal Award Recommendation",
+   "type": "NAVMC",
+   "tier": "D-full",
+   "words": 467,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "navmc-11537",
+   "title": "NAVMC 11537 - Reenlistment Extension Lateral Move (RELM) Request",
+   "type": "NAVMC",
+   "tier": "D-full",
+   "words": 567,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "navmc-11800",
+   "title": "NAVMC 11800 - Family Care Plan",
+   "type": "NAVMC",
+   "tier": "C-partial",
+   "words": 160,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "navmc-1700-2b",
+   "title": "NAVMC 1700.2B - Marine Corps SkillBridge Employment Training Program",
+   "type": "NAVMC",
+   "tier": "D-full",
+   "words": 288,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "navmc-1720-1b",
+   "title": "NAVMC 1720.1B - Marine Corps Suicide Prevention System Procedures",
+   "type": "NAVMC",
+   "tier": "C-partial",
+   "words": 149,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "navmc-2795",
+   "title": "NAVMC 2795 - USMC User's Guide to Counseling",
+   "type": "NAVMC",
+   "tier": "D-full",
+   "words": 570,
+   "citedBy": 11,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "navmc-3000-1",
+   "title": "NAVMC 3000.1 - USMC Artificial Intelligence Implementation Plan, Version 1.0, FY 2025-2030",
+   "type": "NAVMC",
+   "tier": "D-full",
+   "words": 399,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "navmc-321m",
+   "title": "NAVMC 321M - Agreement to Extend Enlistment",
+   "type": "NAVMC",
+   "tier": "D-full",
+   "words": 440,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "navmc-3500-3e",
+   "title": "NAVMC 3500.3E - Manpower and Administration Training and Readiness Manual",
+   "type": "NAVMC",
+   "tier": "D-full",
+   "words": 279,
+   "citedBy": 140,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "opnavinst-3750-6t",
+   "title": "OPNAVINST 3750.6T - Naval Aviation Safety Program",
+   "type": "OTHER",
+   "tier": "C-partial",
+   "words": 137,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "paa-01-11",
+   "title": "PAA 01-11 - Updated Reporting Requirements on Personnel Deployed in Support of OND and OEF",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 147,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-01-13",
+   "title": "PAA 01-13 - Crisis Code, Personnel Reporting, and SIC SL0 for DOD Support to Hurricane Sandy Relief Efforts",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 197,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-01-17",
+   "title": "PAA 01-17 - Unit Responsibility in Issuance of PCS Orders to Surviving Spouse/Children of Deceased Active Duty Service Members",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 286,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "paa-01-21",
+   "title": "PAA 01-21 - Restriction Of Movement (Rom) Type Transaction Code (TTC) 104",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 287,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-01-22",
+   "title": "PAA 01-22 - Interim Guidance For Implementing Increase To Maximum Authorized Secondary Caregiver Leave",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 317,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-01-23",
+   "title": "PAA 01-23 - Amplifying Guidance For MARADMIN 212/23",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 156,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-01-24",
+   "title": "PAA 01-24 - Change to the Use of the Entry of Judgement Vice Convening Authority's Action to Assign a Member to Involuntary Appellate Leave",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 244,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-01-25",
+   "title": "PAA 01-25 - Cancellation Of Paa 02-19 Guidance On Area Clearance/Dependent",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 159,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-02-12",
+   "title": "PAA 02-12 - Updated Reporting Requirements on Personnel Deployed in Support of OEF",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 150,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-02-15",
+   "title": "PAA 02-15 - Standard Flat Rate Per Diem Allowance For Georgia Deployment Program-International Security Assistance Force (Gdp-Isaf)",
+   "type": "PAA",
+   "tier": "B-thin",
+   "words": 40,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "paa-02-18",
+   "title": "PAA 02-18 - Other Service Joins In MOL",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 325,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-02-21",
+   "title": "PAA 02-21 - Unit Deployment Program (UDP) Update",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 286,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-02-22",
+   "title": "PAA 02-22 - Authorization Of Digital Signatures On The DD Form 214",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 246,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-02-23",
+   "title": "PAA 02-23 - Amplifying Guidance for MARADMIN 225/23 (Small Unit Leader Initiative)",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 388,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-02-24",
+   "title": "PAA 02-24 - Policy Regarding Alignment Of Pay-Related Functions",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 224,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-02-25",
+   "title": "PAA 02-25 - Amplifying Administrative Guidance On MARADMIN 128-25 Initial Guidance To Prioritizing Military Excellence And Readiness",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 241,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-03-20",
+   "title": "PAA 03-20 - Amplifying Guidance For MARADMIN 015/20",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 237,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-03-21",
+   "title": "PAA 03-21 - Clarification to Promotion Recommendation Process and Minimum Observation Time Exceptions",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 326,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-03-23",
+   "title": "PAA 03-23 - Amplifying Guidance For MARADMIN 326/23",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 243,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-03-25",
+   "title": "PAA 03-25 - Amplifying Administrative Guidance On MARADMIN 260/25 Updates To Active-Duty Orders Writing Processes And Associated Marine Corps Orders And Systems",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 143,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-04-19",
+   "title": "PAA 04-19 - Discontinue Use Of \u201cFor Record Purpose\u201d",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 316,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-04-20",
+   "title": "PAA 04-20 - Supplemental Guidance In The Reporting Of COVID-19 Personnel Status",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 546,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-04-21",
+   "title": "PAA 04-21 - /Travel Advisory Notice 7-21; Payment Of Deployed Per Diem For Reserve Activations, Mobilizations And Individual Augments",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 524,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-04-23",
+   "title": "PAA 04-23 - Utilization Of NAVMC 10132 (Rev. 08-2023)(Ef) And Courts Martial-Njp Statistical Data Type Transaction Codes (TTC)",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 257,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-04-25",
+   "title": "PAA 04-25 - Administrative Guidance on the Proper Computation of Creditable Service and Pay Entry Base Date",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 299,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-05-12",
+   "title": "PAA 05-12 - Misjoins at Commands Throughout the Marine Corps",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 245,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-05-19",
+   "title": "PAA 05-19 - Port Call Information Required On Permanent Change Of Station Orders Detaching Endorsements For Hawaii And Alaska",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 289,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-05-20",
+   "title": "PAA 05-20 - Supplementary Guidance Regarding The Reporting Endorsement Requirements And Modification Of The Basic Order For Personnel Executing Permanent Change Of Station Orders (Pcso) Due To 2019 Novel Coronavirus (COVID-19)",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 558,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-05-21",
+   "title": "PAA 05-21 - Establishing Anniversary Dates For Reserve Component Officers",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 347,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-05-23",
+   "title": "PAA 05-23 - Clarification Of MCO P1070.12K (IRAM)",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 373,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-05-25",
+   "title": "PAA 05-25 - Guidance On Data Hygiene For Reporting Excess Billet Identification Codes For Active-Duty Personnel",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 429,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-06-10",
+   "title": "PAA 06-10 - Migration of USMC Mainframe 3270 Access to DISA Multi-Host Internet Access Portal (MIAP)",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 167,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-06-13",
+   "title": "PAA 06-13 - SBP Election for Single Retired Marines on the DD Form 2656",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 233,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-06-20",
+   "title": "PAA 06-20 - Amplification Of MARADMIN 320-20 BAH Waivers ICW Delay Depn TVL And OTEIP AUTH Due To Covid 19",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 299,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-06-21",
+   "title": "PAA 06-21 - Administrative Procedures Regarding Temporary Increase To 2021 Basic Allowance For Housing In Certain Locations",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 392,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-06-23",
+   "title": "PAA 06-23 - Automation Of The Small Unit Leader Initiatve Junior Enlisted Promotions",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 384,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-06-25",
+   "title": "PAA 06-25 - Guidance On Validation Period For Completed DD Form 2648 \u201cService Member Pre-Separation/Transition Counseling And Career Readiness Standards Eform For Service Members Separating, Retiring, Released From Active Duty (REFRAD)\u201d",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 335,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-07-10",
+   "title": "PAA 07-10 - MCTFSPRIUM Training Events Update, IRAM Interim Changes, SGVL-8285 Procedure Change, and FDHDIP Approval Delegation",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 268,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-07-20",
+   "title": "PAA 07-20 - Supplemental Guidance In The Reporting Of COVID-19 Personnel Status",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 337,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-07-21",
+   "title": "PAA 07-21 - Separation Program Designator Codes For COVID-19 Vaccination Refusal",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 259,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-07-25",
+   "title": "PAA 07-25 - DD Form 214 Completion And Obligated Service For Fy26 Warrant Officer Basic Course Attendees",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 545,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-08-20",
+   "title": "PAA 08-20 - DD Form 4 Update",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 194,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-08-21",
+   "title": "PAA 08-21 - Administrative Procedure For Processing SMCR, IMA And IRR Marines Refusing COVID-19 Vaccination While Serving In A Duty Status",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 215,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-09-11",
+   "title": "PAA 09-11 - Imminent Danger Pay and Hardship Duty Pay-Location for Libya, Tunisia, and Mediterranean Sea, and Interim Change to IRAM Paragraph 4006.3E",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 287,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-09-12",
+   "title": "PAA 09-12 - Integrated Disability Evaluation System (IDES) and DD Form 214 Processing for VA Benefits Delivery",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 224,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-09-20",
+   "title": "PAA 09-20 - Amplifying Guidance For Required Documentation On Air Mobility Command-Patriot Express (Amc-Pe) Flights To OCONUS",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 217,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-09-21",
+   "title": "PAA 09-21 - Area Clearance/Dependent Entry Approval For PCS Moves Submissions Via AMHS For Personnel Assigned To Marine Corps Installations Pacific Area Of Responsibility And Korea",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 352,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-10-13",
+   "title": "PAA 10-13 - Clarification For BAH W/O Depns During Transitional PTAD",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 469,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-12-12",
+   "title": "PAA 12-12 - Mailing Address for Copy 5 of DD Forms 214 and 215 to the Department of Labor",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 176,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-12-13",
+   "title": "PAA 12-13 - Cancellation Of Personnel Admin Advisory 12-13 Basic Allowance For Housing (BAH) Certification (CANCELLED)",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 221,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paa-14-13",
+   "title": "PAA 14-13 - Clarification For The Proper Transfer Of Health Service Treatment Records (STRS) Of Transitioning Service Members To The Veterans Administration Records Management Center (Varmc)",
+   "type": "PAA",
+   "tier": "C-partial",
+   "words": 185,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paan-02-15",
+   "title": "PAAN 02-15 - Basic Allowance for Subsistence During Unit Deployment Program (CANCELLED)",
+   "type": "PAAN",
+   "tier": "D-full",
+   "words": 450,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "paan-04-21",
+   "title": "PAAN 04-21 - Policy Regarding Alignment of Pay-Related Functions (CANCELLED)",
+   "type": "PAAN",
+   "tier": "B-thin",
+   "words": 41,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": false,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "scope",
+    "audience",
+    "map",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "paan-06-16",
+   "title": "PAAN 06-16 - Special Duty Assignment (SDA) Pay Start Date (CANCELLED)",
+   "type": "PAAN",
+   "tier": "D-full",
+   "words": 510,
+   "citedBy": 0,
+   "hidden": true,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "public-law-105-264",
+   "title": "Public Law 105-264 - Travel and Transportation Reform Act of 1998",
+   "type": "OTHER",
+   "tier": "D-full",
+   "words": 343,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "secnav-m-1650-1",
+   "title": "SECNAV M-1650.1 - Navy and Marine Corps Awards Manual",
+   "type": "SECNAV",
+   "tier": "D-full",
+   "words": 415,
+   "citedBy": 34,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "secnav-m-5210-1",
+   "title": "SECNAV M-5210.1 - Department of the Navy Records Management Manual",
+   "type": "SECNAV",
+   "tier": "C-partial",
+   "words": 245,
+   "citedBy": 36,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "secnav-m-5210-2",
+   "title": "SECNAV M-5210.2 - Department of the Navy Standard Subject Identification Codes (SSIC) Manual",
+   "type": "SECNAV",
+   "tier": "C-partial",
+   "words": 188,
+   "citedBy": 23,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "secnav-m-5215-1",
+   "title": "SECNAV M-5215.1 - Department of the Navy Directives Issuance System Manual",
+   "type": "SECNAV",
+   "tier": "C-partial",
+   "words": 133,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "secnav-m-5216-5",
+   "title": "SECNAV M-5216.5 - Department of the Navy Correspondence Manual",
+   "type": "SECNAV",
+   "tier": "D-full",
+   "words": 335,
+   "citedBy": 14,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "secnavinst-1000-10b",
+   "title": "DEPARTMENT OF THE NAVY POLICY ON PARENTHOOD AND PREGNANCY",
+   "type": "SECNAVINST",
+   "tier": "B-thin",
+   "words": 90,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "scope",
+    "audience",
+    "higher",
+    "doctrine",
+    "status"
+   ]
+  },
+  {
+   "slug": "secnavinst-1650-1j",
+   "title": "SECNAVINST 1650.1J - Department of the Navy Military Awards Policy",
+   "type": "SECNAVINST",
+   "tier": "D-full",
+   "words": 386,
+   "citedBy": 14,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "secnavinst-1754-1b",
+   "title": "SECNAVINST 1754.1B - Department of the Navy Family Support Programs",
+   "type": "SECNAVINST",
+   "tier": "C-partial",
+   "words": 217,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "secnavinst-5210-16",
+   "title": "SECNAVINST 5210.16 - Department of the Navy Reports Management Program",
+   "type": "SECNAVINST",
+   "tier": "C-partial",
+   "words": 190,
+   "citedBy": 7,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "secnavinst-5211-5f",
+   "title": "SECNAVINST 5211.5F - Department of the Navy Privacy Program",
+   "type": "SECNAVINST",
+   "tier": "C-partial",
+   "words": 211,
+   "citedBy": 11,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "secnavinst-5215-1f",
+   "title": "SECNAVINST 5215.1F - Secretary of the Navy Directives Policy",
+   "type": "SECNAVINST",
+   "tier": "C-partial",
+   "words": 177,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "secnavinst-5430-57h",
+   "title": "SECNAVINST 5430.57H - Mission and Functions of the Naval Inspector General",
+   "type": "SECNAVINST",
+   "tier": "C-partial",
+   "words": 206,
+   "citedBy": 2,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "secnavinst-5730-5k",
+   "title": "SECNAVINST 5730.5K - Mission, Function and Responsibilities of the Office of Legislative Affairs and Procedures for Handling Legislative Affairs and Congressional Relations",
+   "type": "SECNAVINST",
+   "tier": "D-full",
+   "words": 267,
+   "citedBy": 4,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "secnavinst-5800-12c",
+   "title": "SECNAVINST 5800.12C - Investigation of Allegations Made Against Senior Officials of the Department of the Navy",
+   "type": "SECNAVINST",
+   "tier": "C-partial",
+   "words": 172,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "ucmj",
+   "title": "Uniform Code of Military Justice (UCMJ) - 10 USC Chapter 47, Sections 801-946a",
+   "type": "USC",
+   "tier": "D-full",
+   "words": 468,
+   "citedBy": 21,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "usc-10",
+   "title": "Title 10, United States Code - Armed Forces",
+   "type": "USC",
+   "tier": "D-full",
+   "words": 369,
+   "citedBy": 100,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "usc-37",
+   "title": "Title 37, United States Code - Pay and Allowances of the Uniformed Services",
+   "type": "USC",
+   "tier": "D-full",
+   "words": 471,
+   "citedBy": 61,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "usc-5-552a",
+   "title": "5 U.S.C. \u00a7 552a - Privacy Act of 1974",
+   "type": "USC",
+   "tier": "D-full",
+   "words": 629,
+   "citedBy": 14,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher",
+    "doctrine"
+   ]
+  },
+  {
+   "slug": "usc-5-5701",
+   "title": "5 USC 5701 - Travel, Transportation, and Subsistence Definitions (and Notes)",
+   "type": "USC",
+   "tier": "D-full",
+   "words": 399,
+   "citedBy": 3,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "audience",
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "usmc-caseworker-handbook",
+   "title": "Congress and the Marine Corps Caseworker Handbook - 113th Congress, 2013 Edition",
+   "type": "OTHER",
+   "tier": "D-full",
+   "words": 280,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "higher"
+   ]
+  },
+  {
+   "slug": "usmc-warfighter-mental-readiness-playbook",
+   "title": "Marine Corps Warfighter Mental Readiness Playbook - Version 3",
+   "type": "OTHER",
+   "tier": "D-full",
+   "words": 356,
+   "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  },
+  {
+   "slug": "usps-domestic-mail-manual",
+   "title": "USPS Domestic Mail Manual (DMM)",
+   "type": "OTHER",
+   "tier": "D-full",
+   "words": 282,
+   "citedBy": 5,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": [
+    "map",
+    "higher"
+   ]
+  }
+ ]
+}
