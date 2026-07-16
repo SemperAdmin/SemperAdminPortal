@@ -19,8 +19,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -63,8 +62,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -100,17 +98,12 @@
    "title": "DD Form 1299 - Application for Shipment and/or Storage of Personal Property",
    "type": "DD-FORM",
    "tier": "D-full",
-   "words": 337,
+   "words": 515,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dd-form-137",
@@ -123,8 +116,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "audience",
-    "map"
+    "audience"
    ]
   },
   {
@@ -138,8 +130,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "audience",
-    "map"
+    "audience"
    ]
   },
   {
@@ -153,8 +144,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "audience",
-    "map"
+    "audience"
    ]
   },
   {
@@ -183,8 +173,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "audience",
-    "map"
+    "audience"
    ]
   },
   {
@@ -220,17 +209,12 @@
    "title": "DD Form 2792 - Family Member Medical Summary",
    "type": "DD-FORM",
    "tier": "D-full",
-   "words": 400,
+   "words": 561,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dd-form-2883",
@@ -243,8 +227,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "audience",
-    "map"
+    "audience"
    ]
   },
   {
@@ -266,17 +249,12 @@
    "title": "DD Form 93",
    "type": "DD-FORM",
    "tier": "D-full",
-   "words": 398,
+   "words": 574,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dod-dts-regulations",
@@ -337,8 +315,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -438,8 +415,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -633,15 +609,13 @@
    "title": "DODI 1341.15 - Basic Needs Allowance",
    "type": "DODI",
    "tier": "D-full",
-   "words": 266,
+   "words": 406,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -699,16 +673,12 @@
    "title": "DODI 5154.31, Volume 4 - Commercial Travel Management. DoD Government Travel Charge Card (GTCC) Program",
    "type": "DODI",
    "tier": "D-full",
-   "words": 281,
+   "words": 413,
    "citedBy": 20,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-5160-70",
@@ -855,8 +825,7 @@
    "missingSections": [
     "audience",
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -872,8 +841,7 @@
    "missingSections": [
     "audience",
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -889,8 +857,7 @@
    "missingSections": [
     "audience",
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -907,8 +874,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -922,8 +888,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -983,16 +948,13 @@
    "title": "MARADMIN 015/20 - Manpower Audit Advisory 1-20, OMPF Field Folder as Central Document Repository for Pay Audit",
    "type": "MARADMIN",
    "tier": "D-full",
-   "words": 330,
+   "words": 440,
    "citedBy": 23,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher",
-    "doctrine",
-    "status"
+    "map"
    ]
   },
   {
@@ -1085,8 +1047,7 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -1155,8 +1116,7 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -1217,15 +1177,13 @@
    "title": "MARADMIN 077/25 - Commandant of the Marine Corps Delegation of Awarding Authority for Military Awards",
    "type": "MARADMIN",
    "tier": "D-full",
-   "words": 813,
+   "words": 977,
    "citedBy": 20,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -1240,8 +1198,7 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -1256,8 +1213,7 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -1279,15 +1235,13 @@
    "title": "MARADMIN 093/25 - Military Awards Guidance for Permanent Change of Station Season",
    "type": "MARADMIN",
    "tier": "D-full",
-   "words": 769,
+   "words": 949,
    "citedBy": 14,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -1377,15 +1331,13 @@
    "title": "MARADMIN 115/19 - Use of Visa Intellilink Data Analytics and Misuse Case Management System for Monitoring Government Travel Charge Card Activity",
    "type": "MARADMIN",
    "tier": "D-full",
-   "words": 287,
+   "words": 382,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -1442,8 +1394,7 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -1796,8 +1747,7 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -1957,34 +1907,25 @@
    "title": "MARADMIN 280/24 - Interim Guidance on the Implementation of the SkillBridge Program",
    "type": "MARADMIN",
    "tier": "D-full",
-   "words": 556,
+   "words": 652,
    "citedBy": 6,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-280-26",
    "title": "Interim Guidance and Implementation of New Digital Submission Tools for Honorary, Retirement, and Career Service Awards",
    "type": "MARADMIN",
    "tier": "D-full",
-   "words": 343,
+   "words": 445,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
+    "map"
    ]
   },
   {
@@ -2186,8 +2127,7 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -2393,19 +2333,12 @@
    "title": "Strategic Location Incentive Program (SLIP) Overview and Details",
    "type": "MARADMIN",
    "tier": "D-full",
-   "words": 319,
+   "words": 382,
    "citedBy": 0,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-474-21",
@@ -2440,15 +2373,13 @@
    "title": "MARADMIN 478/24 - Issuance of the Government Travel Charge Card (GTCC) to Entry Level Marines",
    "type": "MARADMIN",
    "tier": "D-full",
-   "words": 423,
+   "words": 502,
    "citedBy": 7,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -2672,16 +2603,12 @@
    "title": "MARADMIN 590/25 - Fiscal Year 2027 Enlisted Retention Campaign",
    "type": "MARADMIN",
    "tier": "D-full",
-   "words": 523,
+   "words": 589,
    "citedBy": 9,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-595-24",
@@ -2700,16 +2627,12 @@
    "title": "MARADMIN 601/24 - Directed Usage of the Unit Diary/Manpower Integrated Personnel Service (UD/MIPS) for Storage of Key Supporting Documents",
    "type": "MARADMIN",
    "tier": "D-full",
-   "words": 337,
+   "words": 434,
    "citedBy": 7,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-602-24",
@@ -2784,32 +2707,24 @@
    "title": "MARADMIN 625/24 - Advance Notification of Forthcoming Changes to MCO 1050.3J, Regulations for Leave, Liberty, and Administrative Absence",
    "type": "MARADMIN",
    "tier": "D-full",
-   "words": 660,
+   "words": 744,
    "citedBy": 7,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-628-20",
    "title": "MARADMIN 628/20 - Special Duty Assignment Pay, Assignment Incentive Pay, and Volunteer Supplemental Incentive for Fiscal Year 2021",
    "type": "MARADMIN",
    "tier": "D-full",
-   "words": 558,
+   "words": 720,
    "citedBy": 4,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-628-23",
@@ -3006,16 +2921,12 @@
    "title": "Marine Corps Manual (W/CH 1-3)",
    "type": "OTHER",
    "tier": "D-full",
-   "words": 327,
+   "words": 442,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mcbul-5210",
@@ -3078,15 +2989,13 @@
    "title": "MCO 1000.6 - Assignment, Classification, and Travel System Manual (ACTSMAN)",
    "type": "MCO",
    "tier": "D-full",
-   "words": 379,
+   "words": 514,
    "citedBy": 9,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -3114,8 +3023,7 @@
    "missingSections": [
     "audience",
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -3143,8 +3051,7 @@
    "missingSections": [
     "audience",
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -3176,16 +3083,12 @@
    "title": "MCO 1040.31 - Enlisted Retention and Career Development Program",
    "type": "MCO",
    "tier": "D-full",
-   "words": 353,
+   "words": 400,
    "citedBy": 18,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1050-16a",
@@ -3204,32 +3107,24 @@
    "title": "MCO 1050.3J - Regulations for Leave, Liberty, and Administrative Absence",
    "type": "MCO",
    "tier": "D-full",
-   "words": 335,
+   "words": 518,
    "citedBy": 39,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1070-1",
    "title": "MCO 1070.1 - Official Military Personnel File (OMPF)",
    "type": "MCO",
    "tier": "D-full",
-   "words": 370,
+   "words": 403,
    "citedBy": 11,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1100-79",
@@ -3245,8 +3140,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -3275,8 +3169,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -3366,8 +3259,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -3395,8 +3287,7 @@
    "hasEffectiveDate": false,
    "missingSections": [
     "audience",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -3422,8 +3313,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -3455,16 +3345,12 @@
    "title": "MCO 1553.3C - Unit Training Management (UTM) Program",
    "type": "MCO",
    "tier": "D-full",
-   "words": 439,
+   "words": 528,
    "citedBy": 16,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1553-4",
@@ -3483,16 +3369,12 @@
    "title": "MCO 1560.25 - Marine Corps Lifelong Learning Program (LLPROGRAM)",
    "type": "MCO",
    "tier": "D-full",
-   "words": 370,
+   "words": 410,
    "citedBy": 10,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1560-33",
@@ -3517,8 +3399,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -3526,16 +3407,12 @@
    "title": "MCO 1616.1 - Junior Enlisted Performance Evaluation System (JEPES)",
    "type": "MCO",
    "tier": "D-full",
-   "words": 339,
+   "words": 439,
    "citedBy": 8,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1620-3a",
@@ -3609,8 +3486,7 @@
    "hasEffectiveDate": false,
    "missingSections": [
     "audience",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -3687,8 +3563,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -3745,15 +3620,13 @@
    "title": "MCO 1751.3 - Marine Corps Dependency Determination and Support Program for BAH and Travel and Transportation Allowance",
    "type": "MCO",
    "tier": "D-full",
-   "words": 291,
+   "words": 430,
    "citedBy": 23,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -3794,8 +3667,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -3825,8 +3697,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -3861,15 +3732,13 @@
    "title": "MCO 1900.16 - Separation and Retirement Manual (MARCORSEPMAN)",
    "type": "MCO",
    "tier": "D-full",
-   "words": 406,
+   "words": 575,
    "citedBy": 65,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -3907,8 +3776,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -3973,8 +3841,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -4061,8 +3928,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -4106,17 +3972,12 @@
    "title": "MCO 5040.6K - Inspector General of the Marine Corps Inspections Program",
    "type": "MCO",
    "tier": "D-full",
-   "words": 354,
+   "words": 515,
    "citedBy": 13,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5100-29c",
@@ -4156,8 +4017,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -4198,8 +4058,7 @@
    "missingSections": [
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -4246,17 +4105,12 @@
    "title": "MCO 5239.2B - Marine Corps Cybersecurity",
    "type": "MCO",
    "tier": "D-full",
-   "words": 435,
+   "words": 561,
    "citedBy": 14,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5300-17",
@@ -4271,8 +4125,7 @@
    "missingSections": [
     "audience",
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -4673,8 +4526,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -4702,8 +4554,7 @@
    "hasEffectiveDate": false,
    "missingSections": [
     "audience",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -4732,8 +4583,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -4750,8 +4600,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -4803,8 +4652,7 @@
    "hasEffectiveDate": false,
    "missingSections": [
     "audience",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -4812,16 +4660,12 @@
    "title": "MCO P1400.32D W CH 1-2 - Marine Corps Promotion Manual, Volume 2, Enlisted Promotions (MARCORPROMMAN Vol 2, ENLPROM)",
    "type": "MCO",
    "tier": "D-full",
-   "words": 254,
+   "words": 410,
    "citedBy": 32,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-p1700-27b",
@@ -4854,16 +4698,12 @@
    "title": "MCO P3500.72A - Marine Corps Ground Training and Readiness (T&R) Program",
    "type": "MCO",
    "tier": "D-full",
-   "words": 477,
+   "words": 591,
    "citedBy": 20,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-p6320-13",
@@ -4879,8 +4719,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -4894,8 +4733,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -4903,17 +4741,13 @@
    "title": "MCRP 7-20A.2 - Event and Exercise Design",
    "type": "OTHER",
    "tier": "D-full",
-   "words": 272,
+   "words": 462,
    "citedBy": 5,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
+    "map"
    ]
   },
   {
@@ -4927,8 +4761,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -4936,15 +4769,13 @@
    "title": "MCTFS FoS Access Policy and Procedures 8.0 with Addendum 9",
    "type": "OTHER",
    "tier": "D-full",
-   "words": 384,
+   "words": 527,
    "citedBy": 7,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -4961,8 +4792,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -4980,8 +4810,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -4999,8 +4828,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5018,8 +4846,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5037,8 +4864,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5056,8 +4882,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5075,8 +4900,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5094,8 +4918,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5113,8 +4936,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5132,8 +4954,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5151,8 +4972,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5170,8 +4990,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5189,8 +5008,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5208,8 +5026,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5227,8 +5044,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5246,8 +5062,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5265,8 +5080,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5284,8 +5098,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5303,8 +5116,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5322,8 +5134,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5341,8 +5152,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5360,8 +5170,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5379,8 +5188,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5398,8 +5206,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5417,8 +5224,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5436,8 +5242,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5455,8 +5260,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5474,8 +5278,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5493,8 +5296,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5512,8 +5314,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5531,8 +5332,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5550,8 +5350,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5569,8 +5368,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5588,8 +5386,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5607,8 +5404,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5626,8 +5422,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5645,8 +5440,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5664,8 +5458,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5683,8 +5476,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5702,8 +5494,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5721,8 +5512,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5740,8 +5530,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5759,8 +5548,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5778,8 +5566,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5797,8 +5584,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5816,8 +5602,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5835,8 +5620,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5854,8 +5638,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5873,8 +5656,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5892,8 +5674,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5911,8 +5692,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5930,8 +5710,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5949,8 +5728,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5968,8 +5746,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -5987,8 +5764,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -6006,8 +5782,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -6025,8 +5800,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -6044,8 +5818,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -6063,8 +5836,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -6082,8 +5854,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -6101,8 +5872,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -6120,8 +5890,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine",
+    "connections",
     "status"
    ]
   },
@@ -6178,17 +5947,12 @@
    "title": "NAVMC 10274 - Administrative Action (AA Form)",
    "type": "NAVMC",
    "tier": "D-full",
-   "words": 352,
+   "words": 550,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "navmc-11432",
@@ -6207,34 +5971,24 @@
    "title": "NAVMC 11533 - Personal Award Recommendation",
    "type": "NAVMC",
    "tier": "D-full",
-   "words": 467,
+   "words": 667,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "navmc-11537",
    "title": "NAVMC 11537 - Reenlistment Extension Lateral Move (RELM) Request",
    "type": "NAVMC",
    "tier": "D-full",
-   "words": 567,
+   "words": 760,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "navmc-11800",
@@ -6253,16 +6007,12 @@
    "title": "NAVMC 1700.2B - Marine Corps SkillBridge Employment Training Program",
    "type": "NAVMC",
    "tier": "D-full",
-   "words": 288,
+   "words": 371,
    "citedBy": 6,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "navmc-1720-1b",
@@ -6281,16 +6031,12 @@
    "title": "NAVMC 2795 - USMC User's Guide to Counseling",
    "type": "NAVMC",
    "tier": "D-full",
-   "words": 570,
+   "words": 642,
    "citedBy": 11,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "navmc-3000-1",
@@ -6309,33 +6055,24 @@
    "title": "NAVMC 321M - Agreement to Extend Enlistment",
    "type": "NAVMC",
    "tier": "D-full",
-   "words": 440,
+   "words": 586,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "navmc-3500-3e",
    "title": "NAVMC 3500.3E - Manpower and Administration Training and Readiness Manual",
    "type": "NAVMC",
    "tier": "D-full",
-   "words": 279,
+   "words": 419,
    "citedBy": 140,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "opnavinst-3750-6t",
@@ -6400,8 +6137,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6415,8 +6151,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6496,8 +6231,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6629,8 +6363,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6644,8 +6377,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6659,8 +6391,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6674,8 +6405,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6713,8 +6443,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6728,8 +6457,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6743,8 +6471,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6758,8 +6485,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6773,8 +6499,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6812,8 +6537,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6827,8 +6551,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6842,8 +6565,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6857,8 +6579,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6884,8 +6605,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6899,8 +6619,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6914,8 +6633,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -6995,8 +6713,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -7010,8 +6727,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -7080,8 +6796,7 @@
     "scope",
     "audience",
     "map",
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -7195,8 +6910,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -7304,15 +7018,13 @@
    "title": "Title 10, United States Code - Armed Forces",
    "type": "USC",
    "tier": "D-full",
-   "words": 369,
+   "words": 444,
    "citedBy": 100,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -7326,8 +7038,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "connections"
    ]
   },
   {
@@ -7335,16 +7046,12 @@
    "title": "5 U.S.C. \u00a7 552a - Privacy Act of 1974",
    "type": "USC",
    "tier": "D-full",
-   "words": 629,
+   "words": 701,
    "citedBy": 14,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "usc-5-5701",
