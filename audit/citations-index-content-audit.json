@@ -38,8 +38,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -52,10 +51,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "cjcsm-3150-01b",
@@ -88,9 +84,7 @@
    "missingSections": [
     "scope",
     "audience",
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -103,9 +97,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dd-form-1299",
@@ -122,8 +114,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -141,8 +132,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -160,8 +150,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -179,8 +168,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -198,8 +186,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -217,8 +204,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -232,8 +218,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -247,8 +232,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -266,8 +250,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -285,8 +268,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -300,8 +282,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -319,8 +300,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -333,9 +313,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dod-gtcc-regulations",
@@ -347,10 +325,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodd-4500-09",
@@ -362,10 +337,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodd-5400-07",
@@ -377,9 +349,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodfmr-vol-1",
@@ -407,12 +377,10 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -425,9 +393,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodfmr-vol-4",
@@ -440,12 +406,10 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -458,10 +422,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodfmr-vol-7a",
@@ -486,8 +447,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -500,9 +460,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodfmr-vol-9",
@@ -545,9 +503,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-1300-18",
@@ -560,8 +516,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -606,9 +561,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-1325-07",
@@ -620,9 +573,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-1327-06",
@@ -650,9 +601,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-1332-18",
@@ -665,8 +614,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -680,8 +628,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -694,9 +641,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-1340-26",
@@ -708,9 +653,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-1341-13",
@@ -723,8 +666,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -737,10 +679,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-1341-15",
@@ -769,8 +708,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "audience",
-    "higher"
+    "audience"
    ]
   },
   {
@@ -783,9 +721,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-4525-09",
@@ -797,9 +733,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-5025-01",
@@ -812,8 +746,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "audience",
-    "higher"
+    "audience"
    ]
   },
   {
@@ -842,9 +775,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-6025-19",
@@ -857,8 +788,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -872,8 +802,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "audience",
-    "higher"
+    "audience"
    ]
   },
   {
@@ -887,8 +816,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -901,9 +829,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-8500-01",
@@ -916,8 +842,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -931,8 +856,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -945,9 +869,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dtmo-understanding-travel-debt",
@@ -960,8 +882,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -978,8 +899,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -996,8 +916,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -1014,8 +933,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -1032,8 +950,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -1051,8 +968,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -1080,9 +996,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-002-23",
@@ -1095,8 +1009,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1124,8 +1037,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1170,8 +1082,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1199,8 +1110,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1214,8 +1124,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1229,8 +1138,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1260,8 +1168,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1376,8 +1283,7 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "audience",
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1439,8 +1345,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1484,8 +1389,7 @@
    "hasExternalUrl": false,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1499,8 +1403,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1528,8 +1431,7 @@
    "hasExternalUrl": false,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1587,8 +1489,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1602,8 +1503,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1647,8 +1547,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1662,8 +1561,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1677,8 +1575,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1692,8 +1589,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1721,8 +1617,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1778,8 +1673,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1793,8 +1687,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1808,8 +1701,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1837,8 +1729,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1852,8 +1743,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1895,8 +1785,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -1994,8 +1883,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2067,8 +1955,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2082,8 +1969,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2097,8 +1983,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -2112,8 +1997,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2140,9 +2024,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-267-26",
@@ -2154,9 +2036,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-270-05",
@@ -2169,8 +2049,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2247,8 +2126,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2262,8 +2140,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2277,8 +2154,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2307,8 +2183,7 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "audience",
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2336,8 +2211,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2351,8 +2225,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2422,8 +2295,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2467,8 +2339,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2496,8 +2367,7 @@
    "hasExternalUrl": false,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2525,8 +2395,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2554,8 +2423,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2569,8 +2437,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2598,8 +2465,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2627,8 +2493,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2656,8 +2521,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2690,8 +2554,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2705,8 +2568,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2750,8 +2612,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2765,8 +2626,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2780,8 +2640,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2809,8 +2668,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2852,8 +2710,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2867,8 +2724,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2882,8 +2738,7 @@
    "hasExternalUrl": false,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -2953,8 +2808,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -3044,8 +2898,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -3133,8 +2986,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -3148,8 +3000,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -3247,8 +3098,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -3348,8 +3198,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -3366,8 +3215,7 @@
     "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3381,8 +3229,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -3412,11 +3259,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3430,11 +3275,10 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
+    "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3460,11 +3304,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3478,11 +3320,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3497,9 +3337,9 @@
    "hasEffectiveDate": false,
    "missingSections": [
     "audience",
+    "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3593,8 +3433,7 @@
    "missingSections": [
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3651,11 +3490,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3669,11 +3506,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3687,11 +3522,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3705,11 +3538,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3723,11 +3554,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3741,11 +3570,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3759,11 +3586,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3804,11 +3629,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3822,11 +3645,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3856,11 +3677,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3890,11 +3709,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3938,9 +3755,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1640-6",
@@ -3952,9 +3767,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1650-19j",
@@ -3981,8 +3794,7 @@
    "missingSections": [
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -3996,11 +3808,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4014,11 +3824,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4044,11 +3852,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4062,11 +3868,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4080,11 +3884,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4098,11 +3900,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4147,11 +3947,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4165,11 +3963,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4185,8 +3981,7 @@
    "missingSections": [
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4228,8 +4023,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "audience",
-    "higher"
+    "audience"
    ]
   },
   {
@@ -4243,11 +4037,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4261,11 +4053,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4310,8 +4100,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -4340,9 +4129,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-3000-18b",
@@ -4354,9 +4141,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-3040-4",
@@ -4384,11 +4169,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4402,11 +4185,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4419,9 +4200,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-3150-4a",
@@ -4434,11 +4213,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4470,9 +4247,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-3571-2h",
@@ -4485,11 +4260,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4503,11 +4276,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4523,8 +4294,7 @@
    "missingSections": [
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4540,8 +4310,7 @@
    "missingSections": [
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4594,11 +4363,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4701,9 +4468,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5215-1",
@@ -4716,11 +4481,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4745,9 +4508,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5231-4",
@@ -4760,8 +4521,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -4792,11 +4552,10 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
+    "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4821,9 +4580,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5320-12h",
@@ -4835,9 +4592,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5354-1",
@@ -4851,9 +4606,9 @@
    "hasEffectiveDate": false,
    "missingSections": [
     "audience",
+    "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4867,11 +4622,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4885,11 +4638,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4902,9 +4653,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5750-1h",
@@ -4917,11 +4666,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4929,328 +4676,212 @@
    "title": "MCO 5800.16 Vol 1 - Legal Support Within the Marine Corps",
    "type": "MCO",
    "tier": "C-partial",
-   "words": 184,
+   "words": 244,
    "citedBy": 12,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-10",
    "title": "MCO 5800.16 Vol 10 - Indebtedness",
    "type": "MCO",
    "tier": "C-partial",
-   "words": 162,
+   "words": 204,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-11",
    "title": "MCO 5800.16 Vol 11 - Administrative Separations and Investigations",
    "type": "MCO",
    "tier": "C-partial",
-   "words": 143,
+   "words": 200,
    "citedBy": 10,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-12",
    "title": "MCO 5800.16 Vol 12 - Command Responsibilities in the Provision of Legal Services",
    "type": "MCO",
    "tier": "C-partial",
-   "words": 188,
+   "words": 240,
    "citedBy": 14,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-13",
    "title": "MCO 5800.16 Vol 13 - Compliance with Criminal Court Orders by Marines, Dependents, and Civilian Employees Serving Overseas",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 231,
+   "tier": "D-full",
+   "words": 281,
    "citedBy": 0,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-14",
    "title": "MCO 5800.16 Vol 14 - Enlisted Nonjudicial Punishment Matters and Preparation of the Unit Punishment Book",
    "type": "MCO",
    "tier": "D-full",
-   "words": 268,
-   "citedBy": 8,
+   "words": 351,
+   "citedBy": 9,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-15",
    "title": "MCO 5800.16 Vol 15 - Officer Misconduct and Substandard Performance of Duty",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 225,
+   "tier": "D-full",
+   "words": 266,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-16",
    "title": "MCO 5800.16 Vol 16 - Military Justice",
    "type": "MCO",
    "tier": "D-full",
-   "words": 250,
-   "citedBy": 8,
+   "words": 352,
+   "citedBy": 18,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-17",
    "title": "MCO 5800.16 Vol 17 - Judge Advocate Division Awards Program",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 218,
+   "tier": "D-full",
+   "words": 251,
    "citedBy": 0,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-2",
    "title": "MCO 5800.16 Vol 2 - Oversight of the Marine Corps Legal Community",
    "type": "MCO",
    "tier": "C-partial",
-   "words": 138,
+   "words": 183,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-3",
    "title": "MCO 5800.16 Vol 3 - Marine Corps Defense Services Organization",
    "type": "MCO",
    "tier": "C-partial",
-   "words": 203,
+   "words": 242,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-4",
    "title": "MCO 5800.16 Vol 4 - Marine Corps Victims' Legal Counsel Organization",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 216,
+   "tier": "D-full",
+   "words": 276,
    "citedBy": 5,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-5",
    "title": "MCO 5800.16 Vol 5 - Marine Corps Legal Assistance Program",
    "type": "MCO",
    "tier": "C-partial",
-   "words": 197,
+   "words": 247,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-6",
    "title": "MCO 5800.16 Vol 6 - International and Operational Law",
    "type": "MCO",
    "tier": "C-partial",
-   "words": 177,
+   "words": 213,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-7",
    "title": "MCO 5800.16 Vol 7 - Ethics",
    "type": "MCO",
    "tier": "C-partial",
-   "words": 138,
+   "words": 182,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-8",
    "title": "MCO 5800.16 Vol 8 - Gifts to the Marine Corps, Civil Litigation, and Claims",
    "type": "MCO",
    "tier": "C-partial",
-   "words": 169,
+   "words": 210,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16-vol-9",
    "title": "MCO 5800.16 Vol 9 - Dependent Support and Paternity",
    "type": "MCO",
    "tier": "C-partial",
-   "words": 188,
+   "words": 237,
    "citedBy": 0,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5800-16",
    "title": "MCO 5800.16 - Marine Corps Manual for Legal Administration (LSAM)",
    "type": "MCO",
    "tier": "D-full",
-   "words": 568,
-   "citedBy": 48,
+   "words": 499,
+   "citedBy": 46,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
@@ -5267,11 +4898,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -5297,11 +4926,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -5331,9 +4958,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-7220-13",
@@ -5346,11 +4971,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -5364,11 +4987,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -5382,11 +5003,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -5400,11 +5019,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -5466,9 +5083,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-8023-3",
@@ -5481,11 +5096,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -5511,11 +5124,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -5545,8 +5156,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -5560,11 +5170,9 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -6871,9 +6479,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mcwp-4-11-1",
@@ -6907,8 +6513,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -6926,8 +6531,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -6945,8 +6549,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -6964,8 +6567,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -6983,8 +6585,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -7002,8 +6603,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -7035,8 +6635,7 @@
    "missingSections": [
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -7065,9 +6664,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "navmc-321m",
@@ -7084,8 +6681,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -7162,9 +6758,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "paa-01-21",
@@ -7221,9 +6815,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "paa-01-25",
@@ -7270,8 +6862,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -7299,9 +6890,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "paa-02-22",
@@ -7328,9 +6917,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "paa-02-24",
@@ -7387,9 +6974,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "paa-03-23",
@@ -7491,9 +7076,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "paa-05-12",
@@ -7505,9 +7088,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "paa-05-19",
@@ -7609,9 +7190,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "paa-06-20",
@@ -7683,9 +7262,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "paa-07-20",
@@ -7772,9 +7349,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "paa-09-12",
@@ -7786,9 +7361,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "paa-09-20",
@@ -7890,9 +7463,7 @@
    "hidden": true,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "paan-04-21",
@@ -7909,8 +7480,7 @@
     "audience",
     "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -7923,9 +7493,7 @@
    "hidden": true,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "public-law-105-264",
@@ -7938,9 +7506,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "audience",
-    "map",
-    "higher"
+    "audience"
    ]
   },
   {
@@ -7954,8 +7520,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -7982,8 +7547,7 @@
    "hasEffectiveDate": false,
    "missingSections": [
     "audience",
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -7998,8 +7562,7 @@
    "hasEffectiveDate": false,
    "missingSections": [
     "audience",
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -8012,9 +7575,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "secnavinst-1000-10b",
@@ -8030,8 +7591,7 @@
     "scope",
     "audience",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -8060,8 +7620,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "audience",
-    "higher"
+    "audience"
    ]
   },
   {
@@ -8075,8 +7634,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -8090,8 +7648,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "audience",
-    "higher"
+    "audience"
    ]
   },
   {
@@ -8105,8 +7662,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "audience",
-    "higher"
+    "audience"
    ]
   },
   {
@@ -8121,8 +7677,7 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "audience",
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -8136,8 +7691,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -8152,8 +7706,7 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "audience",
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -8167,8 +7720,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -8230,8 +7782,7 @@
    "hasEffectiveDate": false,
    "missingSections": [
     "audience",
-    "map",
-    "higher"
+    "map"
    ]
   },
   {
@@ -8244,9 +7795,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "usmc-warfighter-mental-readiness-playbook",
@@ -8258,10 +7807,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "usps-domestic-mail-manual",
@@ -8274,8 +7820,7 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "map",
-    "higher"
+    "map"
    ]
   }
  ]
