@@ -27,18 +27,14 @@
    "slug": "citimanager-permanent-account-closure-confirmation",
    "title": "CitiManager Permanent Account Closure Confirmation - Effective 13 Jun 2026",
    "type": "OTHER",
-   "tier": "B-thin",
-   "words": 56,
+   "tier": "D-full",
+   "words": 351,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": false,
    "hasEffectiveDate": true,
    "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine"
+    "scope"
    ]
   },
   {
@@ -91,8 +87,8 @@
    "slug": "commanders-readiness-handbook",
    "title": "Commanders Readiness Handbook",
    "type": "OTHER",
-   "tier": "C-partial",
-   "words": 177,
+   "tier": "D-full",
+   "words": 418,
    "citedBy": 5,
    "hidden": false,
    "hasExternalUrl": true,
@@ -110,7 +106,6 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "map",
     "higher",
@@ -121,90 +116,75 @@
    "slug": "dd-form-137",
    "title": "DD Form 137",
    "type": "DD-FORM",
-   "tier": "B-thin",
-   "words": 67,
+   "tier": "D-full",
+   "words": 380,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
    "slug": "dd-form-1561",
    "title": "DD Form 1561",
    "type": "DD-FORM",
-   "tier": "B-thin",
-   "words": 83,
+   "tier": "D-full",
+   "words": 377,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
    "slug": "dd-form-1797",
    "title": "DD Form 1797",
    "type": "DD-FORM",
-   "tier": "B-thin",
-   "words": 88,
+   "tier": "D-full",
+   "words": 349,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
    "slug": "dd-form-214",
    "title": "DD Form 214",
    "type": "DD-FORM",
-   "tier": "C-partial",
-   "words": 142,
+   "tier": "D-full",
+   "words": 411,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
    "slug": "dd-form-2367",
    "title": "DD Form 2367",
    "type": "DD-FORM",
-   "tier": "B-thin",
-   "words": 96,
+   "tier": "D-full",
+   "words": 390,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -246,7 +226,6 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "map",
     "higher",
@@ -257,18 +236,15 @@
    "slug": "dd-form-2883",
    "title": "DD Form 2883",
    "type": "DD-FORM",
-   "tier": "C-partial",
-   "words": 125,
+   "tier": "D-full",
+   "words": 391,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -289,14 +265,13 @@
    "slug": "dd-form-93",
    "title": "DD Form 93",
    "type": "DD-FORM",
-   "tier": "B-thin",
-   "words": 111,
+   "tier": "D-full",
+   "words": 398,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "map",
     "higher",
@@ -370,18 +345,13 @@
    "slug": "dodfmr-vol-14",
    "title": "DOD Financial Management Regulation, Volume 14 - Administrative Control of Funds and Antideficiency Act Violations",
    "type": "DODFMR",
-   "tier": "B-thin",
-   "words": 53,
+   "tier": "D-full",
+   "words": 352,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodfmr-vol-16",
@@ -399,18 +369,13 @@
    "slug": "dodfmr-vol-4",
    "title": "DODFMR Vol 4",
    "type": "DODFMR",
-   "tier": "C-partial",
-   "words": 166,
+   "tier": "D-full",
+   "words": 442,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodfmr-vol-5",
@@ -454,8 +419,8 @@
    "slug": "dodfmr-vol-8",
    "title": "DOD Financial Management Regulation, Volume 8 - Civilian Pay Policy",
    "type": "DODFMR",
-   "tier": "C-partial",
-   "words": 242,
+   "tier": "D-full",
+   "words": 362,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
@@ -519,17 +484,13 @@
    "slug": "dodi-1304-27",
    "title": "DODI 1304.27 - Award and Administration of Special Duty Assignment Pay (HISTORICAL)",
    "type": "DODI",
-   "tier": "C-partial",
-   "words": 126,
+   "tier": "D-full",
+   "words": 328,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-1322-25",
@@ -635,8 +596,8 @@
    "slug": "dodi-1340-26",
    "title": "DODI 1340.26 - Assignment and Special Duty Pays",
    "type": "DODI",
-   "tier": "C-partial",
-   "words": 231,
+   "tier": "D-full",
+   "words": 398,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
@@ -647,15 +608,13 @@
    "slug": "dodi-1341-13",
    "title": "DODI 1341.13 - Post-9/11 GI Bill, Transfer of Education Benefits",
    "type": "DODI",
-   "tier": "C-partial",
-   "words": 192,
+   "tier": "D-full",
+   "words": 372,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-1341-14",
@@ -703,8 +662,8 @@
    "slug": "dodi-1400-25",
    "title": "DODI 1400.25 - DOD Civilian Personnel Management System",
    "type": "DODI",
-   "tier": "C-partial",
-   "words": 168,
+   "tier": "D-full",
+   "words": 427,
    "citedBy": 4,
    "hidden": false,
    "hasExternalUrl": true,
@@ -727,15 +686,13 @@
    "slug": "dodi-5025-01",
    "title": "DODI 5025.01 - DoD Issuances Program",
    "type": "DODI",
-   "tier": "C-partial",
-   "words": 238,
+   "tier": "D-full",
+   "words": 396,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "audience"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-5154-31",
@@ -757,8 +714,8 @@
    "slug": "dodi-5160-70",
    "title": "DODI 5160.70 - Management of the Defense Language, Regional Expertise, and Culture (LREC) Program",
    "type": "DODI",
-   "tier": "C-partial",
-   "words": 217,
+   "tier": "D-full",
+   "words": 350,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
@@ -811,8 +768,8 @@
    "slug": "dodi-7730-67",
    "title": "DODI 7730.67 - Aviation Incentive Pays and Bonus Program",
    "type": "DODI",
-   "tier": "C-partial",
-   "words": 225,
+   "tier": "D-full",
+   "words": 390,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
@@ -3092,17 +3049,14 @@
    "slug": "mcbul-6110",
    "title": "MCBUL 6110",
    "type": "MCBUL",
-   "tier": "B-thin",
-   "words": 68,
+   "tier": "D-full",
+   "words": 352,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
-    "audience",
-    "higher",
-    "doctrine"
+    "audience"
    ]
   },
   {
@@ -4933,18 +4887,15 @@
    "slug": "mcrp-7-20a-1",
    "title": "MCRP 7-20A.1 - Training Plan Design",
    "type": "OTHER",
-   "tier": "C-partial",
-   "words": 131,
+   "tier": "D-full",
+   "words": 369,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "audience",
-    "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -4969,18 +4920,15 @@
    "slug": "mcrp-7-20a-5",
    "title": "MCRP 7-20A.5 - Training Data Management",
    "type": "OTHER",
-   "tier": "C-partial",
-   "words": 138,
+   "tier": "D-full",
+   "words": 368,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "audience",
-    "map",
     "higher",
-    "doctrine",
-    "status"
+    "doctrine"
    ]
   },
   {
@@ -6205,36 +6153,25 @@
    "slug": "mcwp-4-11-1",
    "title": "MCWP 4-11.1 - Health Service Support Operations",
    "type": "OTHER",
-   "tier": "C-partial",
-   "words": 143,
+   "tier": "D-full",
+   "words": 378,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "navmc-10132",
    "title": "NAVMC 10132",
    "type": "NAVMC",
-   "tier": "B-thin",
-   "words": 90,
+   "tier": "D-full",
+   "words": 423,
    "citedBy": 4,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "navmc-10274",
@@ -6247,7 +6184,6 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "map",
     "higher",
@@ -6258,19 +6194,13 @@
    "slug": "navmc-11432",
    "title": "NAVMC 11432 - Marine Corps Martial Arts Program Instructor's Course Record",
    "type": "NAVMC",
-   "tier": "B-thin",
-   "words": 71,
+   "tier": "D-full",
+   "words": 323,
    "citedBy": 0,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "navmc-11533",
@@ -6283,7 +6213,6 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "map",
     "higher",
@@ -6301,7 +6230,6 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "map",
     "higher",
@@ -6312,19 +6240,13 @@
    "slug": "navmc-11800",
    "title": "NAVMC 11800 - Family Care Plan",
    "type": "NAVMC",
-   "tier": "C-partial",
-   "words": 160,
+   "tier": "D-full",
+   "words": 391,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "navmc-1700-2b",
@@ -6346,17 +6268,13 @@
    "slug": "navmc-1720-1b",
    "title": "NAVMC 1720.1B - Marine Corps Suicide Prevention System Procedures",
    "type": "NAVMC",
-   "tier": "C-partial",
-   "words": 149,
+   "tier": "D-full",
+   "words": 413,
    "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "navmc-2795",
@@ -6397,7 +6315,6 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
     "audience",
     "map",
     "higher",
@@ -6424,48 +6341,40 @@
    "slug": "opnavinst-3750-6t",
    "title": "OPNAVINST 3750.6T - Naval Aviation Safety Program",
    "type": "OTHER",
-   "tier": "C-partial",
-   "words": 137,
+   "tier": "D-full",
+   "words": 380,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "paa-01-11",
    "title": "PAA 01-11 - Updated Reporting Requirements on Personnel Deployed in Support of OND and OEF",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 147,
+   "tier": "D-full",
+   "words": 280,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
    "slug": "paa-01-13",
    "title": "PAA 01-13 - Crisis Code, Personnel Reporting, and SIC SL0 for DOD Support to Hurricane Sandy Relief Efforts",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 197,
+   "tier": "D-full",
+   "words": 338,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -6514,75 +6423,66 @@
    "slug": "paa-01-23",
    "title": "PAA 01-23 - Amplifying Guidance For MARADMIN 212/23",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 156,
+   "tier": "D-full",
+   "words": 330,
    "citedBy": 1,
-   "hidden": false,
-   "hasExternalUrl": true,
-   "hasEffectiveDate": false,
-   "missingSections": [
-    "higher",
-    "doctrine"
-   ]
-  },
-  {
-   "slug": "paa-01-24",
-   "title": "PAA 01-24 - Change to the Use of the Entry of Judgement Vice Convening Authority's Action to Assign a Member to Involuntary Appellate Leave",
-   "type": "PAA",
-   "tier": "C-partial",
-   "words": 244,
-   "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": []
   },
   {
-   "slug": "paa-01-25",
-   "title": "PAA 01-25 - Cancellation Of Paa 02-19 Guidance On Area Clearance/Dependent",
+   "slug": "paa-01-24",
+   "title": "PAA 01-24 - Change to the Use of the Entry of Judgement Vice Convening Authority's Action to Assign a Member to Involuntary Appellate Leave",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 159,
-   "citedBy": 1,
+   "tier": "D-full",
+   "words": 431,
+   "citedBy": 3,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "map"
    ]
+  },
+  {
+   "slug": "paa-01-25",
+   "title": "PAA 01-25 - Cancellation Of Paa 02-19 Guidance On Area Clearance/Dependent",
+   "type": "PAA",
+   "tier": "D-full",
+   "words": 322,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": false,
+   "missingSections": []
   },
   {
    "slug": "paa-02-12",
    "title": "PAA 02-12 - Updated Reporting Requirements on Personnel Deployed in Support of OEF",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 150,
+   "tier": "D-full",
+   "words": 278,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
    "slug": "paa-02-15",
    "title": "PAA 02-15 - Standard Flat Rate Per Diem Allowance For Georgia Deployment Program-International Security Assistance Force (Gdp-Isaf)",
    "type": "PAA",
-   "tier": "B-thin",
-   "words": 40,
+   "tier": "D-full",
+   "words": 286,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": false,
    "hasEffectiveDate": false,
    "missingSections": [
-    "scope",
-    "audience",
-    "map",
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -6616,16 +6516,13 @@
    "slug": "paa-02-22",
    "title": "PAA 02-22 - Authorization Of Digital Signatures On The DD Form 214",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 246,
+   "tier": "D-full",
+   "words": 440,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "paa-02-23",
@@ -6643,45 +6540,42 @@
    "slug": "paa-02-24",
    "title": "PAA 02-24 - Policy Regarding Alignment Of Pay-Related Functions",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 224,
+   "tier": "D-full",
+   "words": 418,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
    "slug": "paa-02-25",
    "title": "PAA 02-25 - Amplifying Administrative Guidance On MARADMIN 128-25 Initial Guidance To Prioritizing Military Excellence And Readiness",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 241,
+   "tier": "D-full",
+   "words": 393,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
    "slug": "paa-03-20",
    "title": "PAA 03-20 - Amplifying Guidance For MARADMIN 015/20",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 237,
+   "tier": "D-full",
+   "words": 431,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -6700,30 +6594,28 @@
    "slug": "paa-03-23",
    "title": "PAA 03-23 - Amplifying Guidance For MARADMIN 326/23",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 243,
+   "tier": "D-full",
+   "words": 433,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
    "slug": "paa-03-25",
    "title": "PAA 03-25 - Amplifying Administrative Guidance On MARADMIN 260/25 Updates To Active-Duty Orders Writing Processes And Associated Marine Corps Orders And Systems",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 143,
+   "tier": "D-full",
+   "words": 284,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -6802,8 +6694,8 @@
    "slug": "paa-05-12",
    "title": "PAA 05-12 - Misjoins at Commands Throughout the Marine Corps",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 245,
+   "tier": "D-full",
+   "words": 375,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
@@ -6889,23 +6781,20 @@
    "slug": "paa-06-10",
    "title": "PAA 06-10 - Migration of USMC Mainframe 3270 Access to DISA Multi-Host Internet Access Portal (MIAP)",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 167,
+   "tier": "D-full",
+   "words": 260,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "paa-06-13",
    "title": "PAA 06-13 - SBP Election for Single Retired Marines on the DD Form 2656",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 233,
+   "tier": "D-full",
+   "words": 387,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
@@ -7033,30 +6922,28 @@
    "slug": "paa-08-20",
    "title": "PAA 08-20 - DD Form 4 Update",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 194,
+   "tier": "D-full",
+   "words": 406,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
    "slug": "paa-08-21",
    "title": "PAA 08-21 - Administrative Procedure For Processing SMCR, IMA And IRR Marines Refusing COVID-19 Vaccination While Serving In A Duty Status",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 215,
+   "tier": "D-full",
+   "words": 429,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -7075,8 +6962,8 @@
    "slug": "paa-09-12",
    "title": "PAA 09-12 - Integrated Disability Evaluation System (IDES) and DD Form 214 Processing for VA Benefits Delivery",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 224,
+   "tier": "D-full",
+   "words": 353,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
@@ -7087,15 +6974,14 @@
    "slug": "paa-09-20",
    "title": "PAA 09-20 - Amplifying Guidance For Required Documentation On Air Mobility Command-Patriot Express (Amc-Pe) Flights To OCONUS",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 217,
+   "tier": "D-full",
+   "words": 388,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -7132,45 +7018,40 @@
    "slug": "paa-12-12",
    "title": "PAA 12-12 - Mailing Address for Copy 5 of DD Forms 214 and 215 to the Department of Labor",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 176,
+   "tier": "D-full",
+   "words": 284,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "paa-12-13",
    "title": "PAA 12-13 - Cancellation Of Personnel Admin Advisory 12-13 Basic Allowance For Housing (BAH) Certification (CANCELLED)",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 221,
+   "tier": "D-full",
+   "words": 394,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
    "slug": "paa-14-13",
    "title": "PAA 14-13 - Clarification For The Proper Transfer Of Health Service Treatment Records (STRS) Of Transitioning Service Members To The Veterans Administration Records Management Center (Varmc)",
    "type": "PAA",
-   "tier": "C-partial",
-   "words": 185,
+   "tier": "D-full",
+   "words": 388,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "higher",
-    "doctrine"
+    "map"
    ]
   },
   {
@@ -7260,7 +7141,7 @@
    "title": "SECNAV M-5210.2 - Department of the Navy Standard Subject Identification Codes (SSIC) Manual",
    "type": "SECNAV",
    "tier": "D-full",
-   "words": 354,
+   "words": 382,
    "citedBy": 23,
    "hidden": false,
    "hasExternalUrl": true,
@@ -7271,16 +7152,13 @@
    "slug": "secnav-m-5215-1",
    "title": "SECNAV M-5215.1 - Department of the Navy Directives Issuance System Manual",
    "type": "SECNAV",
-   "tier": "C-partial",
-   "words": 133,
+   "tier": "D-full",
+   "words": 358,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "secnav-m-5216-5",
@@ -7298,18 +7176,13 @@
    "slug": "secnavinst-1000-10b",
    "title": "DEPARTMENT OF THE NAVY POLICY ON PARENTHOOD AND PREGNANCY",
    "type": "SECNAVINST",
-   "tier": "B-thin",
-   "words": 90,
+   "tier": "D-full",
+   "words": 322,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "secnavinst-1650-1j",
@@ -7330,15 +7203,13 @@
    "slug": "secnavinst-1754-1b",
    "title": "SECNAVINST 1754.1B - Department of the Navy Family Support Programs",
    "type": "SECNAVINST",
-   "tier": "C-partial",
-   "words": 217,
+   "tier": "D-full",
+   "words": 414,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "audience"
-   ]
+   "missingSections": []
   },
   {
    "slug": "secnavinst-5210-16",
@@ -7357,7 +7228,7 @@
    "title": "SECNAVINST 5211.5F - Department of the Navy Privacy Program",
    "type": "SECNAVINST",
    "tier": "D-full",
-   "words": 381,
+   "words": 399,
    "citedBy": 11,
    "hidden": false,
    "hasExternalUrl": true,
@@ -7368,30 +7239,25 @@
    "slug": "secnavinst-5215-1f",
    "title": "SECNAVINST 5215.1F - Secretary of the Navy Directives Policy",
    "type": "SECNAVINST",
-   "tier": "C-partial",
-   "words": 177,
+   "tier": "D-full",
+   "words": 355,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "audience"
-   ]
+   "missingSections": []
   },
   {
    "slug": "secnavinst-5430-57h",
    "title": "SECNAVINST 5430.57H - Mission and Functions of the Naval Inspector General",
    "type": "SECNAVINST",
-   "tier": "C-partial",
-   "words": 206,
+   "tier": "D-full",
+   "words": 393,
    "citedBy": 2,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "audience",
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "secnavinst-5730-5k",
@@ -7411,16 +7277,13 @@
    "slug": "secnavinst-5800-12c",
    "title": "SECNAVINST 5800.12C - Investigation of Allegations Made Against Senior Officials of the Department of the Navy",
    "type": "SECNAVINST",
-   "tier": "C-partial",
-   "words": 172,
+   "tier": "D-full",
+   "words": 315,
    "citedBy": 1,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "audience",
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "ucmj",
