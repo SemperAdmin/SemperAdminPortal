@@ -82,7 +82,7 @@ Ranked by citing-page count from `src/generated/citations-reverse.json`. Authori
 | 106 | 176 | C | `mctfsprium` MCTFS PRIUM parent entry |
 | 92 | 94 | B | `mco-1001r-1l` MCRAMM, Reserve Administrative Management Manual |
 | 48 | 137 | C | `mco-5800-16` LSAM parent, Legal Support and Administration Manual |
-| 37 | 238 | C | `mco-4650-39a` Marine Corps Travel Instructions |
+| 37 | 238 | C | `mco-4650-39a` Defense Travel System (DTS) |
 | 36 | 245 | C | `secnav-m-5210-1` DoN Records Management Manual |
 | 34 | 173 | C | `mco-1300-8` Marine Corps Personnel Assignment Policy |
 | 34 | 245 | C | `mco-1650-19j` Administrative and Issue Procedures for Decorations, Awards, and Honors |
@@ -121,6 +121,20 @@ Batching by document type keeps one source family and one body shape per session
 
 - `externalUrl` missing on 70 visible entries. 63 are MCTFSPRIUM paragraph entries and 5 are FPM volumes, system manuals without a public canonical landing page. One decision resolves all 68: either point the parent entry at a canonical landing page and leave paragraph children internal by design, or record the no-URL posture in CLAUDE.md Section 4.5 so future audits stop flagging them.
 - `effectiveDate` missing on 226 visible entries. Sweep this during body authoring, the date comes off the source document already open on the desk.
+
+## Source-pass flags from Phase 1 evidence mining (added 2026-07-16)
+
+Phase 1 authoring ran on in-repo evidence because the session's network policy blocks the policy hosts. The evidence sweep surfaced contradictions between portal surfaces. Each needs a source check to settle which side is right, then a sweep of the losing side's pages.
+
+1. LSAM volume labels. The registry volume entries, authored from source PDFs, and the older `content/marines/` topic pages disagree wholesale on volume subjects. The topic pages call Vol 6 NJP, Vol 5 court-martial procedure, Vol 8 admin separation, Vol 4 claims. The registry places NJP at Vol 14, military justice at Vol 16, admin separations at Vol 11, claims at Vol 8. The registry side is source-grounded, sweep the marines topic pages.
+2. VWAP citation form. Admin VWAP pages cite bare "MCO 5800.16 Chapter 4", the IGMC guide cites "V-16 par 040902", Volume 16 Chapter 4. Normalize to the volume-qualified form.
+3. MCO 1650.19J structure. The citation entry and admin pages describe enclosures 1 through 5, every leader awards page cites chapters 1 through 8, and the submission system appears as both MGCAPS and iAPS. The authored body now hedges beyond Enclosure 1.
+4. SECNAV M-5210.1 edition split. The registry records the 2007-11-16 revision, roughly 15 admin and IG pages cite a 2019 edition with CH-1, and two finance checklists mislabel it SECNAVINST.
+5. IRAM chapter map. `pac-iram-overview.mdx` maps Chapter 4 to performance and Chapter 7 to discipline, the citation entry and inspection JSONs place paragraphs 4005 through 4007 in Chapter 4 and awards in Chapter 6, and a dozen S-1 pages route generic Page 11 entries to Chapter 6.
+6. MCRAMM IDT minimum conflict. Reserve admin pages state a 4-hour minimum IDT period, `reserve-pay-and-entitlements.mdx` states 2 hours citing DoDFMR Volume 7A.
+7. Duplicate registry entries. `mco-1001r-1` duplicates `mco-1001r-1l`, and `mco-p1070-12k` exists as a hidden locator beside `mco-p1070-12`. Confirm the duplicates stay deliberate.
+8. MCO 1300.8 mislabel. The OCONUS sponsorship page titles it the "Assignment, Classification, and Travel System Manual", the subject belonging to MCO 1000.6. Two citation entries still cite the predecessor P1300.8R.
+9. Publisher variance. `joining-a-unit.mdx` and `dts-roles-and-routing.mdx` attribute their orders to "Manpower Plans and Policy Division" against the registry's M&RA and MIF attributions.
 
 ## Recommended execution order
 
