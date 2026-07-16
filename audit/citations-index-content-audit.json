@@ -1,6 +1,5 @@
 {
  "generated": "2026-07-16",
- "headNote": "see report",
  "totalEntries": 518,
  "visibleEntries": 473,
  "tierRule": {
@@ -468,18 +467,13 @@
    "slug": "dodfmr-vol-7a",
    "title": "DOD Financial Management Regulation, Volume 7A - Military Pay Policy, Active Duty and Reserve Pay",
    "type": "DODFMR",
-   "tier": "C-partial",
-   "words": 177,
+   "tier": "D-full",
+   "words": 575,
    "citedBy": 148,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodfmr-vol-7b",
@@ -776,7 +770,6 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "audience",
-    "map",
     "higher"
    ]
   },
@@ -820,7 +813,6 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "audience",
-    "map",
     "higher"
    ]
   },
@@ -881,7 +873,6 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "audience",
-    "map",
     "higher"
    ]
   },
@@ -3450,17 +3441,13 @@
    "slug": "mco-1001r-1l",
    "title": "MCO 1001R.1L - Marine Corps Reserve Administrative Management Manual (MCRAMM)",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 94,
+   "tier": "D-full",
+   "words": 564,
    "citedBy": 92,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-10110-47",
@@ -3633,15 +3620,13 @@
    "slug": "mco-1300-8",
    "title": "MCO 1300.8 - Marine Corps Personnel Assignment Policy",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 173,
+   "tier": "D-full",
+   "words": 506,
    "citedBy": 34,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "higher"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1320-11h",
@@ -3855,7 +3840,6 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
     "higher",
     "doctrine",
     "status"
@@ -3976,17 +3960,13 @@
    "slug": "mco-1650-19j",
    "title": "MCO 1650.19J - Administrative and Issue Procedures for Decorations, Medals, and Awards",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 245,
+   "tier": "D-full",
+   "words": 538,
    "citedBy": 34,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-1700-23",
@@ -4249,7 +4229,6 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "audience",
-    "map",
     "higher"
    ]
   },
@@ -4596,17 +4575,13 @@
    "slug": "mco-4650-39a",
    "title": "MCO 4650.39A - Defense Travel System (DTS)",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 238,
+   "tier": "D-full",
+   "words": 549,
    "citedBy": 37,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5000-12f",
@@ -4630,16 +4605,13 @@
    "slug": "mco-5000-14d",
    "title": "MCO 5000.14D - Marine Corps Administrative Procedures (MCAP)",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 236,
+   "tier": "D-full",
+   "words": 616,
    "citedBy": 171,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5040-6k",
@@ -4653,7 +4625,6 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "audience",
-    "map",
     "higher",
     "doctrine",
     "status"
@@ -5277,19 +5248,13 @@
    "slug": "mco-5800-16",
    "title": "MCO 5800.16 - Marine Corps Manual for Legal Administration (LSAM)",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 137,
+   "tier": "D-full",
+   "words": 568,
    "citedBy": 48,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "scope",
-    "audience",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-6100-13a",
@@ -5527,18 +5492,13 @@
    "slug": "mco-p1070-12",
    "title": "MCO P1070.12K W/CH 1 - Marine Corps Individual Records Administration Manual (IRAM)",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 246,
+   "tier": "D-full",
+   "words": 570,
    "citedBy": 130,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-p1070-12k",
@@ -5618,7 +5578,6 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
     "higher",
     "doctrine",
     "status"
@@ -6894,18 +6853,13 @@
    "slug": "mctfsprium",
    "title": "MCTFSPRIUM - Marine Corps Total Force System Personnel Reporting Instructions Users Manual",
    "type": "MCTFSPRIUM",
-   "tier": "C-partial",
-   "words": 176,
+   "tier": "D-full",
+   "words": 608,
    "citedBy": 106,
    "hidden": false,
    "hasExternalUrl": false,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mctp-3-30g",
@@ -7096,7 +7050,6 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
    "missingSections": [
-    "map",
     "higher",
     "doctrine",
     "status"
@@ -7113,7 +7066,6 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
     "higher"
    ]
   },
@@ -7147,7 +7099,6 @@
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
    "missingSections": [
-    "map",
     "higher",
     "doctrine",
     "status"
@@ -8011,17 +7962,13 @@
    "slug": "secnav-m-5210-1",
    "title": "SECNAV M-5210.1 - Department of the Navy Records Management Manual",
    "type": "SECNAV",
-   "tier": "C-partial",
-   "words": 245,
+   "tier": "D-full",
+   "words": 457,
    "citedBy": 36,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "secnav-m-5210-2",
@@ -8114,7 +8061,6 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "audience",
-    "map",
     "higher"
    ]
   },
@@ -8145,7 +8091,6 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "audience",
-    "map",
     "higher"
    ]
   },
@@ -8161,7 +8106,6 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "audience",
-    "map",
     "higher"
    ]
   },
