@@ -233,6 +233,28 @@ if (fs.existsSync(CITATIONS_DIR)) {
           file
       );
     }
+    // Scaffold-body guard. Import tooling writes marker text into stub
+    // bodies under _stubs/. A visible entry carrying a marker means a stub
+    // moved into the live collection without authoring. Fail the sync so no
+    // build, CI or local cf push, ships scaffold text to a public page.
+    // Hidden entries are exempt, clarification stubs stay hidden by design.
+    if (!result.data.hidden) {
+      const scaffoldMarkers = [
+        "Scaffolded entry",
+        "citations-import.py",
+        "move from _stubs",
+      ];
+      const hit = scaffoldMarkers.find((m) => parsed.content.includes(m));
+      if (hit) {
+        throw new Error(
+          "[content-sync] Scaffold marker " +
+            JSON.stringify(hit) +
+            " found in visible citation content/citations/" +
+            file +
+            ". Author the body or move the file back to _stubs/ before building."
+        );
+      }
+    }
     citations.push(result.data);
   }
   assertUniqueCitationAliases(citations);
