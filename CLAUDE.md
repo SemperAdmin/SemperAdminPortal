@@ -181,6 +181,10 @@ Resolver behavior.
 - `resolveReference(input)` normalizes the input. Uppercase, single space, strip periods after Vol/Ch/Sect/Para/Encl/App/Art keywords, strip commas. Strip section, chapter, enclosure, and parenthetical suffixes. Look up against the byAlias map.
 - Click rule. Explicit `href` prop wins. Registry hit with `externalUrl` opens the source in a new tab. Registry hit without `externalUrl` routes to `/citations/<id>`. No hit renders a plain chip.
 
+No-URL posture.
+
+- Around 70 visible entries carry no `externalUrl` by design. The 63 MCTFSPRIUM source-text children resolve to their portal pages, and the FPM volumes sit behind access gates with no public landing page. Audits stop flagging these. A missing `externalUrl` on any other entry type is a genuine gap.
+
 Deprecation.
 
 - `src/lib/inspections/resolve-reference.ts` is `@deprecated`. ReferencePill still falls back to it for the 99 percent of inspection references not yet in the registry. Plan removal once registry coverage of inspection references crosses 80 percent.
