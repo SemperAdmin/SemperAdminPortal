@@ -481,17 +481,13 @@
    "slug": "dodi-1000-13",
    "title": "DODI 1000.13 - Identification (ID) Cards for Members of the Uniformed Services, Their Dependents, and Other Eligible Individuals",
    "type": "DODI",
-   "tier": "C-partial",
-   "words": 246,
+   "tier": "D-full",
+   "words": 362,
    "citedBy": 12,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-1015-11",
@@ -539,17 +535,13 @@
    "slug": "dodi-1322-25",
    "title": "DODI 1322.25 - Voluntary Education Programs",
    "type": "DODI",
-   "tier": "C-partial",
-   "words": 249,
+   "tier": "D-full",
+   "words": 293,
    "citedBy": 6,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-1325-02",
@@ -579,17 +571,13 @@
    "slug": "dodi-1327-06",
    "title": "DODI 1327.06 - Military Leave, Liberty, and Administrative Absence",
    "type": "DODI",
-   "tier": "C-partial",
-   "words": 231,
+   "tier": "D-full",
+   "words": 447,
    "citedBy": 8,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "dodi-1332-14",
@@ -635,8 +623,8 @@
    "slug": "dodi-1340-09",
    "title": "DODI 1340.09 - Hazard Pay (HzP) Program",
    "type": "DODI",
-   "tier": "C-partial",
-   "words": 232,
+   "tier": "D-full",
+   "words": 312,
    "citedBy": 6,
    "hidden": false,
    "hasExternalUrl": true,
@@ -727,8 +715,8 @@
    "slug": "dodi-4525-09",
    "title": "DODI 4525.09 - Military Postal Service",
    "type": "DODI",
-   "tier": "C-partial",
-   "words": 212,
+   "tier": "D-full",
+   "words": 306,
    "citedBy": 7,
    "hidden": false,
    "hasExternalUrl": true,
@@ -889,18 +877,13 @@
    "slug": "fpm-vol-1",
    "title": "FPM Volume 1 - Pay Policies",
    "type": "FPM",
-   "tier": "B-thin",
-   "words": 118,
+   "tier": "D-full",
+   "words": 371,
    "citedBy": 6,
    "hidden": false,
    "hasExternalUrl": false,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "fpm-vol-2",
@@ -1036,9 +1019,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-015-20",
@@ -1067,9 +1048,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-022-25",
@@ -1081,9 +1060,7 @@
    "hidden": true,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-023-26",
@@ -1109,9 +1086,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-028-24",
@@ -1181,9 +1156,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-052-26",
@@ -1239,9 +1212,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-074-21",
@@ -1253,9 +1224,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-076-22",
@@ -1532,9 +1501,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-145-24",
@@ -1560,9 +1527,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-150-16",
@@ -1630,9 +1595,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-162-10",
@@ -1644,9 +1607,7 @@
    "hidden": true,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-165-07",
@@ -1658,9 +1619,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-181-26",
@@ -1686,9 +1645,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-185-25",
@@ -1714,9 +1671,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-190-26",
@@ -1728,9 +1683,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-191-25",
@@ -1756,9 +1709,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-192-20",
@@ -1812,9 +1763,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-200-25",
@@ -1826,9 +1775,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-209-26",
@@ -1840,9 +1787,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-211-10",
@@ -1868,9 +1813,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-216-04",
@@ -1912,9 +1855,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-224-26",
@@ -1926,9 +1867,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-225-23",
@@ -1940,9 +1879,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-228-06",
@@ -1982,9 +1919,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-239-05",
@@ -2062,9 +1997,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-280-24",
@@ -2111,9 +2044,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-291-19",
@@ -2167,9 +2098,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-326-23",
@@ -2196,9 +2125,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-336-21",
@@ -2238,9 +2165,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-350-18",
@@ -2266,9 +2191,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-361-09",
@@ -2352,9 +2275,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-411-01",
@@ -2380,9 +2301,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-412-23",
@@ -2408,9 +2327,7 @@
    "hidden": true,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-427-23",
@@ -2492,9 +2409,7 @@
    "hidden": true,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-468-23",
@@ -2506,9 +2421,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-469-24",
@@ -2653,9 +2566,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-537-23",
@@ -2709,9 +2620,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-570-18",
@@ -2751,9 +2660,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-574-24",
@@ -2779,9 +2686,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-582-25",
@@ -2837,9 +2742,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-601-24",
@@ -2875,17 +2778,13 @@
    "slug": "maradmin-604-24",
    "title": "MARADMIN 604/24 - Change 1 to the Fiscal Year 2025 Class Dates for Cornerstone",
    "type": "MARADMIN",
-   "tier": "C-partial",
-   "words": 235,
+   "tier": "D-full",
+   "words": 265,
    "citedBy": 8,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map",
-    "higher",
-    "doctrine"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-612-19",
@@ -3027,9 +2926,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-635-24",
@@ -3069,9 +2966,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-661-19",
@@ -3083,9 +2978,7 @@
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "maradmin-665-17",
@@ -4123,8 +4016,8 @@
    "slug": "mco-3000-13b",
    "title": "MCO 3000.13B - Marine Corps Readiness Reporting",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 220,
+   "tier": "D-full",
+   "words": 421,
    "citedBy": 19,
    "hidden": false,
    "hasExternalUrl": true,
@@ -4413,19 +4306,13 @@
    "slug": "mco-5110-4b",
    "title": "MCO 5110.4B - Marine Corps Postal Affairs and Official Mail Program",
    "type": "MCO",
-   "tier": "B-thin",
-   "words": 102,
+   "tier": "D-full",
+   "words": 489,
    "citedBy": 8,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "audience",
-    "map",
-    "higher",
-    "doctrine",
-    "status"
-   ]
+   "missingSections": []
   },
   {
    "slug": "mco-5210-11",
@@ -4502,8 +4389,8 @@
    "slug": "mco-5216-20",
    "title": "MCO 5216.20B - Marine Corps Supplement to SECNAV M-5216.5 Department of the Navy Correspondence Manual",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 212,
+   "tier": "D-full",
+   "words": 353,
    "citedBy": 10,
    "hidden": false,
    "hasExternalUrl": true,
@@ -4952,8 +4839,8 @@
    "slug": "mco-7220-12r",
    "title": "MCO 7220.12R - Special Duty Assignment Pay (SDAP) Program",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 211,
+   "tier": "D-full",
+   "words": 433,
    "citedBy": 8,
    "hidden": false,
    "hasExternalUrl": true,
@@ -5077,8 +4964,8 @@
    "slug": "mco-7300-21b",
    "title": "MCO 7300.21B - Marine Corps Financial Management Standard Operating Procedure Manual",
    "type": "MCO",
-   "tier": "C-partial",
-   "words": 180,
+   "tier": "D-full",
+   "words": 376,
    "citedBy": 12,
    "hidden": false,
    "hasExternalUrl": true,
@@ -6473,8 +6360,8 @@
    "slug": "mctp-3-30g",
    "title": "MCTP 3-30G - Marine Corps Manpower and Personnel Administration",
    "type": "OTHER",
-   "tier": "C-partial",
-   "words": 171,
+   "tier": "D-full",
+   "words": 408,
    "citedBy": 12,
    "hidden": false,
    "hasExternalUrl": true,
@@ -7539,16 +7426,13 @@
    "slug": "secnav-m-5210-2",
    "title": "SECNAV M-5210.2 - Department of the Navy Standard Subject Identification Codes (SSIC) Manual",
    "type": "SECNAV",
-   "tier": "C-partial",
-   "words": 188,
+   "tier": "D-full",
+   "words": 354,
    "citedBy": 23,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "audience",
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "secnav-m-5215-1",
@@ -7627,29 +7511,25 @@
    "slug": "secnavinst-5210-16",
    "title": "SECNAVINST 5210.16 - Department of the Navy Reports Management Program",
    "type": "SECNAVINST",
-   "tier": "C-partial",
-   "words": 190,
+   "tier": "D-full",
+   "words": 311,
    "citedBy": 7,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
-   "missingSections": [
-    "map"
-   ]
+   "missingSections": []
   },
   {
    "slug": "secnavinst-5211-5f",
    "title": "SECNAVINST 5211.5F - Department of the Navy Privacy Program",
    "type": "SECNAVINST",
-   "tier": "C-partial",
-   "words": 211,
+   "tier": "D-full",
+   "words": 381,
    "citedBy": 11,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": [
-    "audience"
-   ]
+   "missingSections": []
   },
   {
    "slug": "secnavinst-5215-1f",
