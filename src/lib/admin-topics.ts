@@ -34,6 +34,11 @@ export const TOPIC_LABEL_OVERRIDES: Record<string, string> = {
   bas: "Basic Allowance for Subsistence",
   "separation-retirement": "Separation and Retirement",
   "limited-duty": "Limited Duty",
+  selres: "SELRES (SMCR)",
+  irr: "IRR",
+  tricare: "TRICARE",
+  ucmj: "UCMJ",
+  vwap: "VWAP",
 };
 
 /** Formats a topic slug for display, honoring the override table. */

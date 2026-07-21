@@ -25,6 +25,13 @@ interface IndexEntry {
   policy: string;
   refs: string;
   mos: string;
+  /**
+   * Spoken-term synonyms for the page, built at sync time from
+   * scripts/search-synonyms.mjs. Lets "SMCR" and "drill" find pages titled
+   * "SELRES" and "IDT". Scored below summary so a synonym never outranks a
+   * direct match.
+   */
+  alias: string;
 }
 
 interface SearchResult {
@@ -63,6 +70,7 @@ function scoreEntry(entry: IndexEntry, q: string, activeRole: string | null): nu
     if (policy.includes(term)) score += 50;
     if (entry.refs.includes(term)) score += 30;
     if (entry.mos.includes(term)) score += 30;
+    if (entry.alias.includes(term)) score += 20;
   }
   if (score === 0) return 0;
 

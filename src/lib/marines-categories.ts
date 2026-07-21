@@ -539,7 +539,7 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     slug: "reserve-parental-leave",
     label: "Reserve Component Parental Leave (RCPL)",
     shortLabel: "RCPL",
-    description: "12 paid IDT periods for SELRES Marines after qualifying event (birth, adoption, foster). Max 2 per day. Per MARADMIN 191/26.",
+    description: "12 paid IDT periods for SELRES Marines, the drilling Reserve most Marines call SMCR, after a qualifying event (birth, adoption, foster). Max 2 per day. Per MARADMIN 191/26.",
     icon: "Heart2",
     pageType: "leaf",
   },
