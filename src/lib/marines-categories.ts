@@ -112,6 +112,14 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     pageType: "leaf",
   },
   {
+    slug: "enterprise-ai-data-software-platforms",
+    label: "Enterprise AI, Data, and Software Platforms",
+    shortLabel: "Enterprise Platforms",
+    description: "Enterprise AI, data, and software baseline per MARADMIN 325/26. Announces the ADS Information Resource Manual (IRM). Six platforms: War Data Platform, Maven Smart System, GenAI.mil, LCAP, Local Development and Data Science Environment, TAK. Enterprise data across manpower, readiness, logistics, financial. FAM coordination and quarterly portfolio-management assessment.",
+    icon: "Star",
+    pageType: "leaf",
+  },
+  {
     slug: "genai-mil-enterprise-platform",
     label: "GenAI.mil Enterprise Platform",
     shortLabel: "GenAI.mil",
@@ -1816,6 +1824,7 @@ export const MARINES_PARENT_GROUPS: MarinesParentGroup[] = [
       "basic-ai-course",
       "camogpt-and-approved-ai-tools",
       "data-and-ai-workforce-roles",
+      "enterprise-ai-data-software-platforms",
       "genai-mil-enterprise-platform",
       "practical-ai-use",
       "semper-admin-ai-field-manual",
