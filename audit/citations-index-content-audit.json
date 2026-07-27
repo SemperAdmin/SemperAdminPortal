@@ -1,7 +1,7 @@
 {
- "generated": "2026-07-16",
- "totalEntries": 518,
- "visibleEntries": 473,
+ "generated": "2026-07-27",
+ "totalEntries": 520,
+ "visibleEntries": 475,
  "tierRule": {
   "B-thin": "body under 120 words",
   "C-partial": "120 to 249 words",
@@ -1995,6 +1995,18 @@
    "missingSections": []
   },
   {
+   "slug": "maradmin-323-26",
+   "title": "MARADMIN 323/26 - Update to Fiscal Year 2026 Judge Advocate Continuation Pay Program",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 210,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
+  },
+  {
    "slug": "maradmin-326-23",
    "title": "MARADMIN 326/23 - Enlisted Active Duty Service Limits",
    "type": "MARADMIN",
@@ -2445,6 +2457,18 @@
    "tier": "D-full",
    "words": 658,
    "citedBy": 6,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
+  },
+  {
+   "slug": "maradmin-528-25",
+   "title": "MARADMIN 528/25 - Fiscal Year 2026 Judge Advocate Continuation Pay Program",
+   "type": "MARADMIN",
+   "tier": "C-partial",
+   "words": 201,
+   "citedBy": 0,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
