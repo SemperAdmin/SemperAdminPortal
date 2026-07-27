@@ -10,6 +10,7 @@ import {
   buildCitationIndex,
   resolveReferenceToId,
 } from "./citations-validate.mjs";
+import { aliasesFor } from "./search-synonyms.mjs";
 
 const ROOT = process.cwd();
 const CONTENT = path.join(ROOT, "content");
@@ -416,6 +417,14 @@ if (citationIndex) {
     Array.isArray(arr)
       ? [...new Set(arr.join(" ").toLowerCase().split(/\s+/))].join(" ")
       : "";
+  // Spoken-term aliases. Marines search "SMCR" and "drill", the pages are
+  // titled "SELRES" and "IDT". Derived from the fields a reader sees, never
+  // from body text, so the index stays slim.
+  const aliasFields = (e) =>
+    [e.title, e.summary, e.topic, e.slug, e.sourcePolicy]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
   const searchIndex = [];
   for (const e of loaded.admin) {
     const badges = [];
@@ -436,6 +445,7 @@ if (citationIndex) {
       policy: e.sourcePolicy ?? "",
       refs: joinLower(e.references),
       mos: joinLower(e.mosPerforming),
+      alias: aliasesFor(aliasFields(e)),
     });
   }
   const roleEntry = (e, category, url) => ({
@@ -451,6 +461,7 @@ if (citationIndex) {
     policy: e.sourcePolicy ?? "",
     refs: joinLower(e.references),
     mos: "",
+    alias: aliasesFor(aliasFields(e)),
   });
   for (const e of loaded.marines) {
     // Leaves under parent groups carry topic equal to slug. The
