@@ -2466,13 +2466,15 @@
    "slug": "maradmin-528-25",
    "title": "MARADMIN 528/25 - Fiscal Year 2026 Judge Advocate Continuation Pay Program",
    "type": "MARADMIN",
-   "tier": "C-partial",
-   "words": 201,
+   "tier": "D-full",
+   "words": 677,
    "citedBy": 0,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": true,
-   "missingSections": []
+   "missingSections": [
+    "map"
+   ]
   },
   {
    "slug": "maradmin-537-23",
