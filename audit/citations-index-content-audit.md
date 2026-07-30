@@ -142,7 +142,7 @@ Flags 10 through 15 surfaced during Phase 2 evidence mining, added 2026-07-16.
 11. SECNAV M-5210.2 disposition attribution. The IGMC legal guide and two citation entries attribute Part III disposition schedules to M-5210.2. Disposition lives in M-5210.1, the M-5210.2 manual carries the SSIC codes.
 12. SECNAVINST 5211.5 revision mix. Portal cites split across 5211.5F, the prior 5211.5E, and the unlettered base, while MCO 5211.5 is a separate Marine Corps order sharing the base number.
 13. MCO 5216.20 form variance. Inline citations wrap 5216.20B text with a 5216.20 source string, one entry cites Admin Change 3 against the registry's Change 4, and two unreviewed import stubs for the same order sit in `_stubs/`.
-14. DODI 1327.06 edition split. Marines leave pages cite Change 5 of the 2009 instruction dated 2023-08-25, the registry records the 2025-08-07 reissue cancelling the 2009 instruction.
+14. DODI 1327.06 edition split. Marines leave pages cite Change 5 of the 2009 instruction dated 2023-08-25, the registry records the 2025-08-07 reissue cancelling the 2009 instruction. New evidence 2026-07-30, MARADMIN 341/26 cites the instruction as incorporating Change 5 of 2023-08-07, tilting toward the reissue date being a 2023 transposition. Settle from the DoD issuances site.
 15. MCO 3000.13B revision watch. The IGMC functional area registry lists Unit Readiness under 3000.13 with a 2025-05-15 effective date, newer than the B version's 2020 signature, and one admin page cites the order unlettered.
 
 ## Recommended execution order
