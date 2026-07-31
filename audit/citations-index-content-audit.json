@@ -1,7 +1,7 @@
 {
- "generated": "2026-07-30",
- "totalEntries": 523,
- "visibleEntries": 478,
+ "generated": "2026-07-31",
+ "totalEntries": 526,
+ "visibleEntries": 481,
  "tierRule": {
   "B-thin": "body under 120 words",
   "C-partial": "120 to 249 words",
@@ -443,6 +443,20 @@
    "missingSections": []
   },
   {
+   "slug": "dodi-1020-03",
+   "title": "DODI 1020.03 - Harassment Prevention and Response in the Armed Forces",
+   "type": "DODI",
+   "tier": "C-partial",
+   "words": 141,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
+   ]
+  },
+  {
    "slug": "dodi-1300-18",
    "title": "DoDI 1300.18 - Department of Defense (DoD) Personnel Casualty Matters, Policies, and Procedures",
    "type": "DODI",
@@ -630,6 +644,20 @@
    "hasEffectiveDate": true,
    "missingSections": [
     "audience"
+   ]
+  },
+  {
+   "slug": "dodi-1350-02",
+   "title": "DODI 1350.02 - DoD Military Equal Opportunity Program",
+   "type": "DODI",
+   "tier": "C-partial",
+   "words": 147,
+   "citedBy": 1,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": [
+    "map"
    ]
   },
   {
@@ -2084,6 +2112,18 @@
    "missingSections": [
     "map"
    ]
+  },
+  {
+   "slug": "maradmin-349-26",
+   "title": "MARADMIN 349/26 - Revision to Marine Corps Military Equal Opportunity Terminology",
+   "type": "MARADMIN",
+   "tier": "D-full",
+   "words": 404,
+   "citedBy": 0,
+   "hidden": false,
+   "hasExternalUrl": true,
+   "hasEffectiveDate": true,
+   "missingSections": []
   },
   {
    "slug": "maradmin-350-11",
@@ -4231,8 +4271,8 @@
    "title": "MCO 5354.1 - Prohibited Activities and Conduct Prevention and Response Program (PAC)",
    "type": "MCO",
    "tier": "D-full",
-   "words": 509,
-   "citedBy": 1,
+   "words": 599,
+   "citedBy": 5,
    "hidden": false,
    "hasExternalUrl": true,
    "hasEffectiveDate": false,
