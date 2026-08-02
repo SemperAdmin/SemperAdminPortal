@@ -76,6 +76,23 @@ MCAAT inspects the BIC fill roster against TFSMS, the internal assignment order 
 - Exception-to-Policy Authorization. Documented exception for grade or MOS mismatches.
 - BIC Vacancy Report. Local report surfacing unfilled BICs.
 
+## Excess BIC Indicators and the 10-day rule
+
+Per MCO 1000.6<Citation source="MCO 1000.6" /> Chapter 1 Section 2 paragraph 1, MCTFS is the authoritative source tying uniformed manpower to structure. A Marine reports a BIC or an Excess BIC Indicator (EBI) in MCTFS within 10 days of joining a new permanent duty station. An EBI stands in when no valid BIC vacancy exists for the command or the Marine fills a nonstructure position. Report the EBI using the Total Force Structure unit identification code in bytes 1 through 6 and the indicator in the remaining bytes.
+
+Active component indicators.
+
+| Code | Condition |
+|---|---|
+| EX101 | MOS and grade match |
+| EX102 | MOS match, no grade match |
+| EX103 | Neither MOS nor grade match |
+| EX104 | Administrative join or attachment |
+
+Reserve component indicators run EX001 through EX003 for obligors across the same three match conditions, EX004 through EX006 for the non-obligor equivalents, EX007 for an obligor unsatisfactory participant, and EX008 for an obligor pending medical separation.
+
+Two assignment rules ride alongside. Assignments run one grade above or below the BIC requirement, except at O-6 and above. Two Marines fill the same BIC only during a 90-day turnover tied to a Headquarters-directed assignment, and when two Marines of the same grade and MOS meet one open BIC, the Marine with the longest time remaining on station takes the BIC while the other takes an EBI.
+
 ## Common pitfalls
 
 - Marine assigned to a BIC outside grade rules. The exception-to-policy authorization is missing. The 0170 officer signs an exception only with documented authority per MCO 1300.8<Citation source="MCO 1300.8" /> Chapter 4.
@@ -97,6 +114,7 @@ This sub-page maps to NAVMC 3500.3E T-R event 0102-MPMN-2202 Manage the Manning 
 ## Related references
 
 - MCO 1300.8 Marine Corps Personnel Assignment Policy. Internal assignment rules at Chapter 4.
+- MCO 1000.6 ACTSMAN. Chapter 1 Section 2 paragraph 1 carries the BIC and Excess BIC Indicator reporting rules, the 10-day MCTFS requirement, and the EBI code tables.
 - MCO 5311.1E Total Force Structure Process. TFSMS T-O and BIC structure.
 - MCTP 3-30G Marine Corps Manpower and Personnel Administration. Chapter 2 manpower administration function.
 - MCO 5000.14D Marine Corps Administrative Procedures. S-1 manpower responsibilities.
