@@ -27,7 +27,7 @@ The portal serves four distinct audiences. Content, navigation, and tone separat
 
 - Every MDX entry carries a `roles` array in frontmatter. Minimum one role. Pages tagged for multiple roles render under each one.
 - Each role owns a route prefix: `/marines`, `/leader`, `/commander`, `/admin`. Do not cross-route.
-- Reference surfaces sit outside the role routes at top-level paths. Live today: `/tools`, `/videos`, `/links`, `/reports`, `/citations`, `/search`, `/inspections`. Planned, not yet routed: `/policy`, `/situations`, `/snippets`, `/references`. Those four collections hold no content and `scripts/sync-content.mjs` lists them as routeless, authoring into them warns at build time until their routes ship. These are role-agnostic chrome. Their entries still carry `roles` arrays for filtering and sidebar exposure.
+- Reference surfaces sit outside the role routes at top-level paths. Live today: `/tools`, `/videos`, `/links`, `/reports`, `/citations`, `/search`, `/inspections`, `/updates`. Planned, not yet routed: `/policy`, `/situations`, `/snippets`, `/references`. Those four collections hold no content and `scripts/sync-content.mjs` lists them as routeless, authoring into them warns at build time until their routes ship. These are role-agnostic chrome. Their entries still carry `roles` arrays for filtering and sidebar exposure.
 - Each role has its own curated tree in `src/lib/role-trees.ts`. Do not show another role's tree in the active sidebar.
 - Role switching happens in exactly one surface: the topbar segmented control on desktop, the top of the mobile drawer on mobile. The sidebar header is read-only "Viewing as" context. Do not add a second switcher.
 - Cross-role linking happens through one component only: `CrossRoleStrip` at the bottom of detail pages. Wire it via `relatedRoles` in `roleContentSchema`. Do not inline cross-role links in prose.
@@ -52,7 +52,7 @@ The redesign shipped on 2026-05-04. The spec lives at D:\Coding\SemperAdminPorta
 - Topbar: floating pill, 56px tall, 14px inset, `r-lg` corners, backdrop blur, `shadow-md`, scarlet 80px underline accent. Do not collapse to flush flat.
 - Sidebar: 268px Mintlify TreeNav driven by `src/lib/role-trees.ts`. Active leaf carries a scarlet dot.
 - Right TOC: 224px, sticky, conditional. Render only on content pages with 3+ h2 headings.
-- Mobile: 48px topbar, bottom tab bar with 5 tabs (Home, Search, Browse, Tools, Recent). Drawer holds the role tree.
+- Mobile: 48px topbar, bottom tab bar with 5 tabs (Home, Search, Browse, Tools, Updates). Drawer holds the role tree. Recently-viewed lives at `/recent` under the name History and reaches from the topbar reference menu, not the tab bar.
 - Footer: three columns. Build date and verification posture in mono.
 
 ### 3.2 Color Tokens
@@ -145,6 +145,7 @@ Four collections are schema-defined but hold no content and have no routes yet: 
 - `references/`: forms, calculators, checklists. Requires `type`.
 - `tools/`: interactive tool registry. Requires `outputType`, `routeSlug`.
 - `inspections/`: IGMC and MCAAT checklist programs. JSON-sourced under `content/inspections/<track>/<programNumber>.json`, validated by `inspectionSchema`. Requires `track` (igmc, mcaat), `programNumber`, `slug`, `sponsor`, `applicabilityLevel`, `effectiveDate`, `subsections[]` with `items[]` (code, question, references, evidenceHint).
+- `updates/`: curated changelog behind `/updates`. MDX-sourced under `content/updates/<slug>.mdx`, validated by `updateSchema`. Requires `slug` (must match filename), `date` (ISO, when the portal reflected the change), `kind` (policy-change, new-content, correction, verification-sweep), `impact` (action-required, awareness, reference), `title`, `summary`, `roles[]`. Optional `effectiveDate`, `citations[]` (registry ids), `affectedPages[]` (absolute routes), `count` (sweeps only), `supersededBy`. Carries no `lastVerified` and no `source` object on purpose. An update is an event, not a page, and authority resolves through the citations registry. See Section 4.6.
 - `citations/`: parent policies and authority documents. MDX-sourced under `content/citations/<id>.mdx`, validated by `citationSchema`. Requires `id` (URL-safe slug, must match filename), `aliases[]` (every input form the resolver should accept), `title`, `type` (CITATION_TYPES enum), `number`, `publisher`, `lastVerified`, `roles[]`. Optional `effectiveDate`, `externalUrl`, `supersedes[]`. Sync emits `src/generated/citations.json` with `byId` and `byAlias` maps. Alias uniqueness is enforced across the collection at build time. This is the canonical home for parent-document URLs. Other surfaces resolve through it.
 - Admin content: extra fields (`unitType`, `function`, `skillLevel`, `mosPerforming`, optional `trEventCode`).
 
@@ -188,6 +189,29 @@ No-URL posture.
 Deprecation.
 
 - `src/lib/inspections/resolve-reference.ts` is `@deprecated`. ReferencePill still falls back to it for the 99 percent of inspection references not yet in the registry. Plan removal once registry coverage of inspection references crosses 80 percent.
+
+## 4.6 Updates Workflow - The 90-Day Rule
+
+`/updates` answers one question for a reader coming back after a few weeks. Did anything I rely on change, and do I need to act. It is not a maintenance log and not a release history.
+
+The window is fixed at 90 days, measured from build time. There is no window control and no archive view. Entries older than 90 days stay in `content/updates/` as history and stop rendering. `scripts/sync-content.mjs` prints the in-window count and names every aged-out entry on each sync.
+
+Standing authoring rule. Read this list before shipping any content change.
+
+1. Every `policy-change` gets an entry. A new MARADMIN, a suspension, a revision, a cancellation.
+2. Every `correction` gets an entry. A published fact was wrong and is now right.
+3. `new-content` gets an entry only for a new page. Deepening an existing page does not qualify.
+4. `verification-sweep` gets an entry when a batch of pages is re-checked against source with no content change. Set `count` to the page total. Sweeps collapse under the timeline.
+5. Copy edits, body rewrites, structural passes, and dependency work never get an entry. Git is the record for those.
+
+Field discipline.
+
+- `date` is when the portal reflected the change. `effectiveDate` is when the policy itself took effect. Carry both when they differ, the gap is honest.
+- `citations[]` holds registry ids, not free text. Author `content/citations/<id>.mdx` first. Sync fails on an unknown id.
+- `affectedPages[]` holds absolute routes. The first entry becomes the card title link.
+- `supersededBy` names a later entry reversing this one. The superseded entry renders struck back rather than disappearing. A changelog quietly deleting its own history is not a changelog.
+
+Anything worth reading 90 days from now belongs in the role content itself, not in the changelog.
 
 ## 5. Code Rules
 

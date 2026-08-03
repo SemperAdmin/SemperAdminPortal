@@ -1,0 +1,24 @@
+---
+slug: "pcs-travel-day-computation-corrected"
+date: "2026-08-02"
+kind: "correction"
+impact: "awareness"
+title: "PCS travel day math corrected, the 51-mile remainder threshold"
+summary: "The PCS page rounded partial travel days up. MCO 1000.6 Chapter 4 Section 2 computes the remainder precisely, so a 2,500-mile move allows seven days rather than eight."
+roles: ["marine", "leader", "admin"]
+citations: ["mco-1000-6"]
+affectedPages:
+  - "/marines/pcs-per-diem"
+  - "/marines/tdy-transportation"
+supersededBy: null
+---
+
+The old rule on the page read one travel day per 350 miles, rounding up.
+Rounding up is wrong. The ACTSMAN adds a day only when the remainder runs
+over 51 miles. A 2,500-mile move breaks into seven full increments plus a
+50-mile remainder, so it allows seven days, not eight.
+
+Two related rules landed with the fix. Any commercial leg adds one day
+regardless of distance, and a move under 401 miles allows one day whatever
+the mode. The TDY page picked up proceed time in the same pass, four days
+maximum, not charged to leave, and authorized on PCS moves only.

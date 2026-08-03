@@ -768,6 +768,14 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     pageType: "leaf",
   },
   {
+    slug: "humanitarian-transfer",
+    label: "Humanitarian Transfer and PTAD",
+    shortLabel: "Humanitarian",
+    description: "Humanitarian transfer, retention on station, and humanitarian permissive TAD. The 36-month short-term rule, the five criteria, and reenlistment code RE-3C.",
+    icon: "Truck",
+    pageType: "leaf",
+  },
+  {
     slug: "pcs-per-diem",
     label: "PCS Per Diem",
     shortLabel: "PCS Per Diem",
@@ -1950,6 +1958,7 @@ export const MARINES_PARENT_GROUPS: MarinesParentGroup[] = [
       "dislocation-allowance",
       "household-goods-and-ppm",
       "human-breast-milk-shipment",
+      "humanitarian-transfer",
       "joining-a-unit",
       "member-and-dependent-travel",
       "miscellaneous-expense-allowance",

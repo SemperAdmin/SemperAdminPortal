@@ -13,6 +13,7 @@ import {
   ClipboardCheck,
   FileText,
   Link2,
+  Megaphone,
   type LucideIcon,
 } from "lucide-react";
 import type { Role } from "@/lib/roles";
@@ -129,6 +130,15 @@ export const NAV_ITEMS: NavItem[] = [
     phase: 6,
   },
   {
+    label: "What changed",
+    href: "/updates",
+    description: "Policy changes, corrections, and new coverage from the last 90 days.",
+    icon: Megaphone,
+    roles: [...ROLES],
+    ready: true,
+    phase: 10,
+  },
+  {
     label: "Citations",
     href: "/citations",
     description: "Every Marine Corps policy referenced across the wiki, with linked pages.",
@@ -183,6 +193,7 @@ export interface ReferenceLink {
  */
 export const REFERENCE_LINKS: ReferenceLink[] = [
   { label: "Search", href: "/search" },
+  { label: "What changed", href: "/updates" },
   { label: "Citations Index", href: "/citations" },
   { label: "Tools", href: "/tools" },
   { label: "Videos", href: "/videos" },
@@ -190,6 +201,9 @@ export const REFERENCE_LINKS: ReferenceLink[] = [
   { label: "Reports", href: "/reports" },
   { label: "Inspections", href: "/inspections" },
   { label: "TemplateToolBox", href: TEMPLATE_TOOLBOX_URL, external: true },
+  // Recently viewed lost its mobile tab to Updates. It stays reachable here
+  // under a name a reader does not confuse with the changelog.
+  { label: "History", href: "/recent" },
   { label: "About", href: "/about" },
   { label: "Feedback", href: FEEDBACK_URL, external: true },
 ];

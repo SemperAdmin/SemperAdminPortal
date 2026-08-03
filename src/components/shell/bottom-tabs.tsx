@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Search, LayoutGrid, Wrench, Clock } from "lucide-react";
+import { Home, Search, LayoutGrid, Wrench, Megaphone } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 /**
@@ -34,7 +34,10 @@ const TABS: TabSpec[] = [
   { id: "search", label: "Search", icon: Search, href: "/search" },
   { id: "browse", label: "Browse", icon: LayoutGrid, action: "browse" },
   { id: "tools", label: "Tools", icon: Wrench, href: "/tools" },
-  { id: "recent", label: "Recent", icon: Clock, href: "/recent" },
+  // Updates took the fifth slot from recently-viewed. Recently-viewed is a
+  // per-device convenience and stays reachable at /recent from the browse
+  // drawer. What changed in the last 90 days earns the thumb position.
+  { id: "updates", label: "Updates", icon: Megaphone, href: "/updates" },
 ];
 
 export function BottomTabs({ onBrowse, browseOpen = false }: BottomTabsProps) {

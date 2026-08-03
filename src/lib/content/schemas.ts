@@ -187,6 +187,74 @@ export const legalSchema = baseFrontmatter.extend({
   type: z.enum(["disclaimer", "terms"]),
 });
 
+/**
+ * Updates collection. Curated changelog behind /updates.
+ *
+ * Diverges from baseFrontmatter on purpose. An update record is an event,
+ * not a page. It carries no lastVerified and no source object. The date
+ * field is the record, and authority resolves through the citations
+ * registry by id.
+ *
+ * The four kinds map to the three words in the page title plus the
+ * collapsed roll-up. policy-change reads as changed, correction reads as
+ * updated, new-content reads as added, verification-sweep collapses.
+ */
+export const UPDATE_KINDS = [
+  "policy-change",
+  "new-content",
+  "correction",
+  "verification-sweep",
+] as const;
+export type UpdateKind = (typeof UPDATE_KINDS)[number];
+
+export const UPDATE_IMPACTS = [
+  "action-required",
+  "awareness",
+  "reference",
+] as const;
+export type UpdateImpact = (typeof UPDATE_IMPACTS)[number];
+
+/**
+ * Fixed reporting window. The surface shows the trailing 90 days and
+ * nothing else, measured from build time. Entries older than the window
+ * stay in the repo as history and stop rendering. Authors treat this as
+ * the standing rule, anything worth reading 90 days from now needs a
+ * home in the role content itself, not in the changelog.
+ */
+export const UPDATES_WINDOW_DAYS = 90;
+
+export const updateSchema = z.object({
+  slug: z
+    .string()
+    .min(1)
+    .regex(
+      /^[a-z0-9-]+$/,
+      "Update slug must be lowercase letters, digits, and hyphens"
+    ),
+  /** ISO date the portal reflected the change. */
+  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Expected an ISO date"),
+  /** ISO date the underlying policy took effect, when it differs. */
+  effectiveDate: z
+    .string()
+    .regex(/^\d{4}-\d{2}-\d{2}$/, "Expected an ISO date")
+    .optional(),
+  kind: z.enum(UPDATE_KINDS),
+  impact: z.enum(UPDATE_IMPACTS),
+  title: z.string().min(2),
+  summary: z.string().min(10).max(280),
+  roles: z.array(RoleEnum).min(1),
+  /** Citation registry ids. Validated against the index during sync. */
+  citations: z.array(z.string()).default([]),
+  /** Absolute portal routes the change lands on. */
+  affectedPages: z.array(z.string()).default([]),
+  /** Page count for verification-sweep entries. Ignored elsewhere. */
+  count: z.number().int().positive().optional(),
+  /** Slug of a later entry that reverses or replaces this one. */
+  supersededBy: z.string().nullable().default(null),
+});
+
+export type Update = z.infer<typeof updateSchema>;
+
 export const UNIT_TYPES = ["s1-g1", "i-and-i", "pac"] as const;
 export const ADMIN_FUNCTIONS = ["GENA", "OPER", "MPMN", "PERA"] as const;
 export const SKILL_LEVELS = [1000, 2000, 2100] as const;

@@ -31,7 +31,9 @@ export default function RecentPage() {
       <div className="mb-5 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Clock className="size-5 text-[var(--color-usmc-scarlet)]" aria-hidden="true" />
-          <h1 className="text-xl font-bold tracking-tight">Recently viewed</h1>
+          <h1 className="text-xl font-bold tracking-tight">
+            History, pages you viewed
+          </h1>
         </div>
         {recents.length > 0 && (
           <button
