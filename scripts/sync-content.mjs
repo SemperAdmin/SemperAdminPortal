@@ -44,6 +44,7 @@ const mdxCollections = [
   "marines",
   "leader",
   "commander",
+  "updates",
 ];
 
 const loaded = {};
@@ -400,6 +401,129 @@ if (citationIndex) {
       "[content-sync] citations coverage 100%. " +
         totalScanned +
         " references resolved."
+    );
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Updates collection. Curated changelog behind /updates. The zod schema in
+// src/lib/content/schemas.ts owns shape validation and runs during the Next
+// build. This pass owns the cross-file checks beyond zod's reach: citation ids
+// against the registry, affectedPages against the route shape, supersededBy
+// against sibling slugs, and the 90-day reporting window.
+//
+// The window check is the standing authoring rule. Entries that age out stay
+// in the repo as history and stop rendering. The log line names them so the
+// next content pass sees what dropped off.
+// ---------------------------------------------------------------------------
+{
+  const UPDATE_KINDS = [
+    "policy-change",
+    "new-content",
+    "correction",
+    "verification-sweep",
+  ];
+  const UPDATE_IMPACTS = ["action-required", "awareness", "reference"];
+  const UPDATE_ROLES = ["marine", "leader", "commander", "admin"];
+  const WINDOW_DAYS = 90;
+
+  const updatesDir = path.join(CONTENT, "updates");
+  const updateFiles = fs.existsSync(updatesDir)
+    ? fs
+        .readdirSync(updatesDir)
+        .filter((f) => f.endsWith(".mdx") && !f.startsWith("."))
+    : [];
+  const stems = new Set(updateFiles.map((f) => f.replace(/\.mdx$/, "")));
+  const problems = [];
+  const check = (file, ok, message) => {
+    if (!ok) problems.push("content/updates/" + file + ": " + message);
+  };
+
+  for (const file of updateFiles) {
+    const stem = file.replace(/\.mdx$/, "");
+    const fm = matter(fs.readFileSync(path.join(updatesDir, file), "utf8")).data;
+
+    check(
+      file,
+      !fm.slug || fm.slug === stem,
+      "slug " + JSON.stringify(fm.slug) + " must match filename " + stem
+    );
+    check(
+      file,
+      typeof fm.date === "string" &&
+        /^\d{4}-\d{2}-\d{2}$/.test(fm.date) &&
+        !isNaN(new Date(fm.date + "T00:00:00Z").getTime()),
+      "date must be a real ISO date"
+    );
+    check(file, UPDATE_KINDS.includes(fm.kind), "kind " + fm.kind + " is not a known kind");
+    check(
+      file,
+      UPDATE_IMPACTS.includes(fm.impact),
+      "impact " + fm.impact + " is not a known impact"
+    );
+    check(
+      file,
+      Array.isArray(fm.roles) &&
+        fm.roles.length > 0 &&
+        fm.roles.every((r) => UPDATE_ROLES.includes(r)),
+      "roles must be a non-empty array of known roles"
+    );
+
+    for (const id of fm.citations ?? []) {
+      check(
+        file,
+        Boolean(citationIndex && citationIndex.byId[id]),
+        "citation id " + JSON.stringify(id) + " is not in the registry. " +
+          "Author content/citations/" + id + ".mdx first."
+      );
+    }
+    for (const route of fm.affectedPages ?? []) {
+      check(
+        file,
+        typeof route === "string" && route.startsWith("/"),
+        "affectedPages entry " + JSON.stringify(route) + " must be an absolute route"
+      );
+    }
+    if (fm.supersededBy) {
+      check(
+        file,
+        stems.has(fm.supersededBy),
+        "supersededBy " + JSON.stringify(fm.supersededBy) + " names no entry in this collection"
+      );
+    }
+  }
+
+  if (problems.length > 0) {
+    throw new Error(
+      "[content-sync] Updates collection failed validation:\n  " +
+        problems.join("\n  ")
+    );
+  }
+
+  const cutoff = Date.now() - WINDOW_DAYS * 24 * 60 * 60 * 1000;
+  const dated = loaded.updates.map((u) => ({
+    slug: u.slug,
+    date: u.date,
+    ms: new Date(u.date + "T00:00:00Z").getTime(),
+  }));
+  const inWindow = dated.filter((u) => u.ms >= cutoff);
+  const agedOut = dated.filter((u) => u.ms < cutoff);
+  console.log(
+    "[content-sync] updates: " +
+      dated.length +
+      " authored, " +
+      inWindow.length +
+      " inside the " +
+      WINDOW_DAYS +
+      "-day window"
+  );
+  if (agedOut.length > 0) {
+    console.log(
+      "[content-sync] updates aged out of the window and no longer render: " +
+        agedOut
+          .sort((a, b) => b.date.localeCompare(a.date))
+          .map((u) => u.slug + " (" + u.date + ")")
+          .join(", ")
     );
   }
 }

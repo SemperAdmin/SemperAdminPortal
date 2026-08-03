@@ -17,13 +17,11 @@ import {
   getCommanderContent,
   getLeaderContent,
   getTools,
+  getUpdatesInWindow,
 } from "@/lib/content/loader";
+import type { UpdateKind } from "@/lib/content/schemas";
 import externalToolsData from "@/generated/external-tools.json";
-import {
-  findMarinesCategory,
-  findParentGroupForCategory,
-} from "@/lib/marines-categories";
-import { humanizeSegment, formatVerified, roleAccentVar, roleAccentStyle } from "@/lib/utils";
+import { formatVerified, roleAccentVar, roleAccentStyle } from "@/lib/utils";
 
 // Build-time anchor for verified-fresh percentage math. Hoisted out
 // of the render function so React Compiler purity rule does not flag
@@ -47,13 +45,13 @@ interface RoleCardSpec {
   count: number;
 }
 
-interface RecentEntry {
-  href: string;
-  eyebrow: string;
-  title: string;
-  summary: string;
-  lastVerified: string;
-}
+/** Eyebrow label per changelog kind on the home strip. */
+const UPDATE_EYEBROW: Record<UpdateKind, string> = {
+  "policy-change": "Policy change",
+  "new-content": "New coverage",
+  correction: "Correction",
+  "verification-sweep": "Verification",
+};
 
 
 export default function HomePage() {
@@ -108,53 +106,12 @@ export default function HomePage() {
       ? Math.round((freshCount / allRoleContent.length) * 100)
       : 0;
 
-  // Latest updated: pull from every role catalog, sort by lastVerified, take top 6
-  const latestUpdated: RecentEntry[] = [
-    ...marinesContent.map((e) => {
-      const { topic, slug } = e.frontmatter;
-      // Leaf topics carry topic equal to slug. The single-segment route
-      // renders them, so collapse the stuttered /marines/x/x form and
-      // label the eyebrow with the registry group instead of the raw slug.
-      const leaf = !topic || topic === slug;
-      const groupLabel =
-        findParentGroupForCategory(topic)?.shortLabel ??
-        findMarinesCategory(topic)?.shortLabel ??
-        humanizeSegment(topic);
-      return {
-        href: leaf ? `/marines/${slug}` : `/marines/${topic}/${slug}`,
-        eyebrow: `Marines / ${groupLabel}`,
-        title: e.frontmatter.title,
-        summary: e.frontmatter.summary,
-        lastVerified: e.frontmatter.lastVerified,
-      };
-    }),
-    ...leaderContent.map((e) => ({
-      href: `/leader/${e.frontmatter.topic}/${e.frontmatter.slug}`,
-      eyebrow: `Leader / ${humanizeSegment(e.frontmatter.topic)}`,
-      title: e.frontmatter.title,
-      summary: e.frontmatter.summary,
-      lastVerified: e.frontmatter.lastVerified,
-    })),
-    ...commanderContent.map((e) => ({
-      href: `/commander/${e.frontmatter.topic}/${e.frontmatter.slug}`,
-      eyebrow: `Commander / ${humanizeSegment(e.frontmatter.topic)}`,
-      title: e.frontmatter.title,
-      summary: e.frontmatter.summary,
-      lastVerified: e.frontmatter.lastVerified,
-    })),
-    ...adminContent.map((e) => ({
-      href: `/admin/${e.frontmatter.unitType}/${e.frontmatter.topic}/${e.frontmatter.slug}`,
-      eyebrow: `Admin / ${humanizeSegment(e.frontmatter.unitType)}`,
-      title: e.frontmatter.title,
-      summary: e.frontmatter.summary,
-      lastVerified: e.frontmatter.lastVerified,
-    })),
-  ]
-    .sort(
-      (a, b) =>
-        new Date(b.lastVerified).getTime() - new Date(a.lastVerified).getTime()
-    )
-    .slice(0, 6);
+  // What changed: the curated changelog, newest first, inside the fixed
+  // 90-day window. This strip used to sort every role page by lastVerified,
+  // which presented bulk import batches as news. lastVerified records a
+  // source check, not a change, so it never belonged on this surface.
+  const recentUpdates = getUpdatesInWindow(BUILD_TIME_MS).slice(0, 3);
+  const updatesInWindow = getUpdatesInWindow(BUILD_TIME_MS).length;
 
   const roleCards: RoleCardSpec[] = [
     {
@@ -287,29 +244,33 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* LATEST UPDATED */}
-      {latestUpdated.length > 0 && (
+      {/* WHAT CHANGED */}
+      {recentUpdates.length > 0 && (
         <section className="mb-14">
           <div className="mb-5 flex items-baseline justify-between gap-3">
             <h2
               className="font-display text-3xl tracking-wide"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              LATEST UPDATED
+              WHAT CHANGED
             </h2>
-            <span className="font-mono text-xs text-[var(--color-subtle-foreground)]">
-              {latestUpdated.length} of {allRoleContent.length}
-            </span>
+            <Link
+              href="/updates"
+              className="inline-flex items-center gap-1 font-mono text-xs text-[var(--color-muted-foreground)] hover:text-[var(--color-foreground)]"
+            >
+              {updatesInWindow} in the last 90 days
+              <ArrowRight className="size-3" aria-hidden="true" />
+            </Link>
           </div>
-          <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-            {latestUpdated.map((entry) => (
+          <div className="grid gap-3 md:grid-cols-3">
+            {recentUpdates.map((entry) => (
               <EntryCard
-                key={entry.href}
-                href={entry.href}
-                eyebrow={entry.eyebrow}
-                title={entry.title}
-                body={entry.summary}
-                lastVerified={entry.lastVerified}
+                key={entry.frontmatter.slug}
+                href={entry.frontmatter.affectedPages[0] ?? "/updates"}
+                eyebrow={UPDATE_EYEBROW[entry.frontmatter.kind]}
+                title={entry.frontmatter.title}
+                body={entry.frontmatter.summary}
+                lastVerified={entry.frontmatter.date}
               />
             ))}
           </div>
@@ -398,12 +359,14 @@ function EntryCard({
   title,
   body,
   lastVerified,
+  dateLabel = "Posted",
 }: {
   href: string;
   eyebrow: string;
   title: string;
   body: string;
   lastVerified?: string;
+  dateLabel?: string;
 }) {
   return (
     <Link
@@ -419,7 +382,7 @@ function EntryCard({
       </p>
       {lastVerified && (
         <p className="mt-2 font-mono text-[10px] text-[var(--color-subtle-foreground)]">
-          Updated {formatVerified(lastVerified)}
+          {dateLabel} {formatVerified(lastVerified)}
         </p>
       )}
     </Link>

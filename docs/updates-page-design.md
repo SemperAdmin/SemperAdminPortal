@@ -1,6 +1,16 @@
 # Design: What Changed, a 90-Day Updates Surface
 
-Status: proposal, not built. Written 2026-08-03.
+Status: decided and built. Written 2026-08-03, decisions folded in the same day.
+
+Decisions as built.
+
+1. Mobile bottom tab. Updates took the fifth slot. Recently-viewed moved to the topbar reference menu under the name History.
+2. Verification sweeps. Collapsed count row under the timeline, with a disclosure.
+3. Window. Fixed at 90 days, no window control and no archive view. Entries older than the window stay in the repo and stop rendering. The rule is recorded in CLAUDE.md Section 4.6 as the standing authoring discipline.
+4. Authoring trigger. Confirmed. Every policy-change and correction gets an entry. New-content only for new pages, not deepened ones.
+5. Display title. What Changed, Updated, or Added. Route stays `/updates`, nav label reads What changed.
+
+Sections 5, 6, and 9 below describe the pre-decision proposal. Where they differ from the list above, the list wins.
 
 ## 1. The finding that shapes everything
 

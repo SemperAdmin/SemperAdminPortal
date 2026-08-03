@@ -11,6 +11,8 @@ import {
   roleContentSchema,
   inspectionSchema,
   citationSchema,
+  updateSchema,
+  UPDATES_WINDOW_DAYS,
   INSPECTION_TRACKS,
   type Video,
   type Tool,
@@ -21,6 +23,7 @@ import {
   type Inspection,
   type InspectionTrack,
   type Citation,
+  type Update,
 } from "./schemas";
 
 const CONTENT_ROOT = path.join(process.cwd(), "content");
@@ -257,4 +260,30 @@ export function findCitationById(
   id: string
 ): ContentEntry<Citation> | undefined {
   return getCitations().find((e) => e.frontmatter.id === id);
+}
+
+/**
+ * Curated changelog entries behind /updates. Sorted newest first. The
+ * route applies the 90-day window, so this returns the full authored
+ * history and leaves the cutoff to the caller.
+ */
+export function getUpdates(): ContentEntry<Update>[] {
+  return loadDir("updates", updateSchema).sort((a, b) =>
+    b.frontmatter.date.localeCompare(a.frontmatter.date)
+  );
+}
+
+/**
+ * Trailing-window filter for the changelog. Pass a build-time anchor so
+ * static export resolves the cutoff once, at the moment the HTML is
+ * generated, instead of at render.
+ */
+export function getUpdatesInWindow(
+  nowMs: number,
+  windowDays: number = UPDATES_WINDOW_DAYS
+): ContentEntry<Update>[] {
+  const cutoff = nowMs - windowDays * 24 * 60 * 60 * 1000;
+  return getUpdates().filter(
+    (e) => new Date(e.frontmatter.date + "T00:00:00Z").getTime() >= cutoff
+  );
 }
