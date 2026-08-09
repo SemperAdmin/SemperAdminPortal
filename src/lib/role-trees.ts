@@ -31,7 +31,11 @@ export interface TreeBranch {
   label: string;
   href?: string;
   defaultOpen?: boolean;
-  children: TreeLeaf[];
+  /**
+   * A child is a leaf or another branch. Admin nests three levels deep,
+   * unit type to topic to page. Marine, Leader, and Commander stop at two.
+   */
+  children: (TreeLeaf | TreeBranch)[];
 }
 
 export interface TreeSection {
@@ -107,6 +111,7 @@ const COMMANDER_TREE: TreeSection[] = [
           { label: "Pre-CoC requirements", href: "/commander/aviation/pre-coc" },
           { label: "Safety program", href: "/commander/aviation/safety-program" },
           { label: "Readiness and training", href: "/commander/aviation/readiness-training" },
+          { label: "Flight performance boards", href: "/commander/aviation/flight-performance-boards" },
         ],
       },
       {

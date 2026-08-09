@@ -174,20 +174,69 @@ if (leaderOrphans.length > 0) {
   );
 }
 
-// --- Admin: unit-type branches, topic leaves ----------------------------------
+// --- Admin: unit type -> topic -> page, three levels --------------------------
+// Admin is the only role with a third level. Marine and Leader put pages
+// directly under a category, so two levels cover them. Admin routes as
+// /admin/<unitType>/<topic>/<slug>, and stopping the tree at the topic left
+// every page reachable only from the topic index.
 const { UNIT_NAV_ORDER, UNIT_LABELS, toTopicLabel } = adminLib;
 const topicsByUnit = new Map();
+const pagesByUnitTopic = new Map();
 for (const e of adminCatalog) {
   if (!topicsByUnit.has(e.unitType)) topicsByUnit.set(e.unitType, new Set());
   topicsByUnit.get(e.unitType).add(e.topic);
+  const key = `${e.unitType}/${e.topic}`;
+  if (!pagesByUnitTopic.has(key)) pagesByUnitTopic.set(key, []);
+  pagesByUnitTopic.get(key).push(e);
 }
+
+// Overview first, then alphabetical by title. Mirrors the ordering in
+// src/app/admin/[unitType]/[topic]/page.tsx so the sidebar and the topic
+// index read in the same sequence.
+function adminPageLeaves(unitType, topic) {
+  const pages = pagesByUnitTopic.get(`${unitType}/${topic}`) ?? [];
+  const isOverview = (e) =>
+    String(e.slug).toLowerCase().includes("overview") ||
+    String(e.title ?? "")
+      .toLowerCase()
+      .includes("overview");
+  return [...pages]
+    .sort((a, b) => {
+      if (isOverview(a) && !isOverview(b)) return -1;
+      if (!isOverview(a) && isOverview(b)) return 1;
+      return String(a.title ?? a.slug).localeCompare(String(b.title ?? b.slug));
+    })
+    .map((e) => ({
+      label: adminNavLabel(e),
+      href: `/admin/${unitType}/${topic}/${e.slug}`,
+    }));
+}
+
+// Admin titles run long. Median 49 characters, max 94, against a 268px
+// sidebar that gives a third-level label around 180px. Two safe cuts:
+// the topic overview reads as "Overview", and the boilerplate
+// " - S-1 Procedural Page" suffix on 211 titles carries no information the
+// tree does not already convey through its position.
+let strippedSuffixCount = 0;
+function adminNavLabel(entry) {
+  if (entry.slug === "overview") return "Overview";
+  const title = String(entry.title ?? entry.slug);
+  const trimmed = title.replace(/\s-\sS-1 Procedural Page$/, "").trim();
+  if (trimmed !== title) strippedSuffixCount++;
+  return trimmed || title;
+}
+
 const admin = [
   { label: "Overview", href: "/admin" },
   ...UNIT_NAV_ORDER.filter((ut) => topicsByUnit.has(ut)).map((ut) => ({
     label: UNIT_LABELS[ut] ?? ut,
     href: `/admin/${ut}`,
     children: [...topicsByUnit.get(ut)]
-      .map((t) => ({ label: toTopicLabel(t), href: `/admin/${ut}/${t}` }))
+      .map((t) => ({
+        label: toTopicLabel(t),
+        href: `/admin/${ut}/${t}`,
+        children: adminPageLeaves(ut, t),
+      }))
       .sort((a, b) => a.label.localeCompare(b.label)),
   })),
 ];
@@ -207,8 +256,17 @@ fs.writeFileSync(
   path.join(OUT, "role-nav.json"),
   JSON.stringify(roleNav, null, 2)
 );
+// Counts every node at any depth. The old version summed one level of
+// children and undercounted the admin tree once it grew a third.
 const count = (items) =>
-  items.reduce((n, i) => n + 1 + (i.children ? i.children.length : 0), 0);
+  items.reduce((n, i) => n + 1 + (i.children ? count(i.children) : 0), 0);
+if (strippedSuffixCount > 0) {
+  console.log(
+    "[role-nav] shortened " +
+      strippedSuffixCount +
+      " admin labels by dropping the Procedural Page suffix"
+  );
+}
 console.log(
   "[role-nav] marine " +
     count(marine) +
