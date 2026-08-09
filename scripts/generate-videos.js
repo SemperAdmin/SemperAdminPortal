@@ -5,6 +5,26 @@ const path = require("path");
 
 const projectRoot = path.join(__dirname, "..");
 
+// Slugs written by the previous run. Pruning is scoped to this list so the
+// generator never removes a page it did not create. Pages outside the catalog,
+// such as hand-authored entries pending a decision, are left alone.
+const MANIFEST_PATH = path.join(
+  projectRoot,
+  "src",
+  "generated",
+  "videos-manifest.json"
+);
+
+async function readManifest() {
+  try {
+    const raw = await fs.readFile(MANIFEST_PATH, "utf-8");
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
 async function generateVideos() {
   const videoDataPath = path.join(projectRoot, "data", "videos-marinenet.json");
   const outputDir = path.join(projectRoot, "content", "videos");
@@ -64,7 +84,7 @@ async function generateVideos() {
         yamlLines.push(`  url: "${escapeYaml(source.url)}"`);
       }
 
-      yamlLines.push(`lastVerified: "2026-06-02"`);
+      yamlLines.push(`lastVerified: "${video.lastVerified || "2026-06-02"}"`);
 
       const yaml = yamlLines.join("\n");
 
@@ -84,7 +104,38 @@ async function generateVideos() {
       created++;
     }
 
+    // Drop pages whose slug left the catalog. Scoped to the previous manifest.
+    const previous = await readManifest();
+    const current = new Set(videos.map((v) => v.slug).filter(Boolean));
+    let pruned = 0;
+    const stranded = [];
+    for (const slug of previous) {
+      if (current.has(slug)) continue;
+      try {
+        await fs.unlink(path.join(outputDir, slug + ".mdx"));
+        console.log(`  pruned ${slug}.mdx`);
+        pruned++;
+      } catch (err) {
+        if (err.code === "ENOENT") continue;
+        // A locked or read-only checkout should not abort the whole sync.
+        // Name the file and let the run finish.
+        console.warn(
+          `  ⚠ could not remove ${slug}.mdx (${err.code}). Delete it by hand.`
+        );
+        stranded.push(slug);
+      }
+    }
+    await fs.mkdir(path.dirname(MANIFEST_PATH), { recursive: true });
+    await fs.writeFile(
+      MANIFEST_PATH,
+      JSON.stringify([...new Set([...current, ...stranded])].sort(), null, 2) + "\n",
+      "utf-8"
+    );
+
     console.log(`✓ Generated ${created} video MDX files`);
+    if (pruned > 0) {
+      console.log(`✓ Pruned ${pruned} pages dropped from the catalog`);
+    }
     if (skipped > 0) {
       console.log(`⚠ Skipped ${skipped} videos`);
     }

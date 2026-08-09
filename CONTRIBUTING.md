@@ -41,6 +41,56 @@ Collection-specific fields documented in `src/lib/content/schemas.ts`. Frontmatt
 4. Run `npm run lint` and `npm run build` locally.
 5. Open a PR. CI builds and Pagefind reindexes on merge.
 
+## Video pipeline
+
+Video pages are generated. Do not hand-edit `content/videos/*.mdx`, the next
+`npm run content:sync` overwrites them.
+
+```
+vanguard.db  ->  data/videos-marinenet.json  ->  content/videos/*.mdx
+(source facts)   (committed build input)        (generated, disposable)
+```
+
+Two environment variables drive it. Set both once in your shell profile.
+
+| Variable | Points at | Used by |
+| --- | --- | --- |
+| `VANGUARD_DB` | `vanguard.db` in the Vanguard video database folder | `videos:pull`, `videos:audit` |
+| `THUMBNAILS_SRC` | the thumbnail image root, `E:\Videos\Photos\Thumbnails` | `sync:thumbnails` |
+
+PowerShell, persisted for your user:
+
+```powershell
+[Environment]::SetEnvironmentVariable("VANGUARD_DB", "E:\Videos\Video Database\Video Database\data\vanguard.db", "User")
+[Environment]::SetEnvironmentVariable("THUMBNAILS_SRC", "E:\Videos\Photos\Thumbnails", "User")
+```
+
+Commands.
+
+- `npm run videos:pull` rewrites the catalog from the database. Add `--dry-run`
+  to preview, `--prune` to drop entries with no database row.
+- `npm run videos:audit` compares the committed catalog against the database
+  and exits non-zero when a published video has no entry or a URL disagrees.
+  Run it before opening a PR that touches video content.
+- `npm run content:sync` regenerates the pages and prints video and thumbnail
+  coverage lines.
+- `npm run sync:thumbnails` copies images from `THUMBNAILS_SRC` and rewrites
+  `src/generated/thumbnails.json`.
+
+Field ownership. The database owns `title`, `videoUrl`, `mceleUrl`, and
+`source.title`. Humans own `roles`, `summary`, `durationSeconds`, and
+`lastVerified`. The pull merges the human-owned fields forward by slug, so
+editorial work survives. Make those edits in `data/videos-marinenet.json`.
+
+Two silent-failure traps to know about.
+
+- `sync:thumbnails` with no reachable source rebuilds the index from whatever
+  already sits in `public/thumbnails` and exits 0. It prints one line saying so.
+  A stale index looks like a successful run. This is how 30 pages lost their
+  thumbnails in August 2026.
+- The catalog goes stale on its own. New MCeLE uploads stay invisible until
+  someone runs the pull. `content:sync` warns once the last pull passes 30 days.
+
 ## Adding shadcn components
 
 `components.json` is set up for the New York style. Run:

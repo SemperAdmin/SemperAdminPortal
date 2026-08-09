@@ -35,20 +35,95 @@ export const snippetSchema = baseFrontmatter.extend({
   bullets: z.array(z.string()).min(2).max(4),
 });
 
-export const videoSchema = baseFrontmatter.extend({
-  durationSeconds: z.number().int().nonnegative().default(0),
-  videoUrl: z.string(),
-  youtubeUrl: z.string().url().optional(),
-  mceleUrl: z.string().url().optional(),
-  posterUrl: z.string().optional(),
-  transcript: z.string().optional(),
-  chapters: z
-    .array(
-      z.object({ label: z.string(), startSeconds: z.number().int().min(0) })
-    )
-    .default([]),
-  relatedPolicies: z.array(z.string()).default([]),
-});
+/**
+ * Hosts a video page is allowed to point at.
+ *
+ * portal.mcele.usmc.mil is canonical. The two legacy MCeLE hosts stay allowed
+ * so an older page does not break a build before it is migrated.
+ * marinenet.marines.mil is deliberately absent. Addresses on that host were
+ * built from the page slug rather than a media id and resolve to nothing.
+ */
+const ALLOWED_VIDEO_HOSTS = [
+  "portal.mcele.usmc.mil",
+  "www.mcele.usmc.mil",
+  "mcele.usmc.mil",
+] as const;
+
+/**
+ * Pages predating the 2026-08-08 URL sweep whose underlying video is gone or
+ * was never recorded. Each one points at a placeholder or a dead host and is
+ * pending a retire-or-record decision.
+ *
+ * This list only shrinks. Do not add to it. A new page failing the host check
+ * has a real defect, and the fix is a working URL, not an exemption. Delete
+ * the constant and the refinement branch reading it once the list is empty.
+ */
+const VIDEO_URL_QUARANTINE = new Set([
+  "administrative-separation-process-preparer",
+  "fitrep-self-input",
+  "how-to-read-an-les-msg-focused",
+  "how-to-set-alerts-for-new-videos",
+  "hqmc-ardb-directives-monthly-training-20240731",
+  "navmc-11000-walkthrough",
+  "pft-grading-overview",
+  "policy-and-software-updates",
+  "promotion-board-records",
+  "requesting-access",
+  "separation-packet-flow",
+  "skillbridge-program-policy-update-navmc-1700-2b",
+]);
+
+function videoUrlProblem(url: string): string | null {
+  let parsed: URL;
+  try {
+    parsed = new URL(url);
+  } catch {
+    return `is not a URL. Got "${url}".`;
+  }
+  if (parsed.protocol !== "https:" && parsed.protocol !== "http:") {
+    return `uses the ${parsed.protocol} scheme. Use https.`;
+  }
+  if (!(ALLOWED_VIDEO_HOSTS as readonly string[]).includes(parsed.host)) {
+    return (
+      `points at ${parsed.host}, which is not an MCeLE host. ` +
+      `Use https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=<mediaId>.`
+    );
+  }
+  return null;
+}
+
+export const videoSchema = baseFrontmatter
+  .extend({
+    durationSeconds: z.number().int().nonnegative().default(0),
+    videoUrl: z.string(),
+    youtubeUrl: z.string().url().optional(),
+    mceleUrl: z.string().url().optional(),
+    posterUrl: z.string().optional(),
+    transcript: z.string().optional(),
+    chapters: z
+      .array(
+        z.object({ label: z.string(), startSeconds: z.number().int().min(0) })
+      )
+      .default([]),
+    relatedPolicies: z.array(z.string()).default([]),
+  })
+  .superRefine((value, ctx) => {
+    if (VIDEO_URL_QUARANTINE.has(value.slug)) return;
+    // youtubeUrl is off-platform on purpose and carries its own host, so it
+    // sits outside this check.
+    for (const field of ["videoUrl", "mceleUrl"] as const) {
+      const url = value[field];
+      if (!url) continue;
+      const problem = videoUrlProblem(url);
+      if (problem) {
+        ctx.addIssue({
+          code: "custom",
+          path: [field],
+          message: `${field} ${problem}`,
+        });
+      }
+    }
+  });
 
 export const referenceSchema = baseFrontmatter.extend({
   type: z.enum(["form", "calculator", "checklist"]),

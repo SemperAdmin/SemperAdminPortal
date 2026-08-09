@@ -1,84 +1,75 @@
-# Thumbnail Mapping Configuration
+# Video Thumbnails
 
-This document explains how to maintain thumbnail mappings between MCeLE series names and actual folder names.
+How a video page gets its image.
 
-## Architecture
+## Owner
 
-The thumbnail mapping system separates configuration from code:
+`scripts/sync-thumbnails.mjs`. Nothing else touches thumbnails.
+`generate-videos.js` does not, despite what an earlier version of this file
+claimed. The `posterUrl` frontmatter field exists in the schema and is unused.
 
-1. **`series-folder-mapping.json`** - Configuration file mapping MCeLE series names to actual folder paths
-2. **`generate-videos.js`** - Build script that loads the mapping and generates video entries
+## Flow
 
-At build time, `npm run content:sync` reads the mapping and generates posterUrl paths that point to actual thumbnail files in `public/thumbnails/`.
-
-## How It Works
-
-When you run `npm run content:sync`:
-
-1. `generate-videos.js` loads `series-folder-mapping.json`
-2. For each video in `data/videos-marinenet.json`:
-   - Extract the series name from `source.title`
-   - Look up the mapped folder name (e.g., "Excel Intermediate" → "Excel")
-   - Normalize the video title to a filename (spaces to underscores, remove special chars)
-   - Generate posterUrl: `/thumbnails/{mappedFolder}/{normalizedTitle}.jpg`
-3. The videos catalog includes posterUrl values pointing to actual files
-
-## Maintaining the Mapping
-
-### When Adding a New Series
-
-1. Add an entry to `scripts/series-folder-mapping.json`:
-   ```json
-   "New Series Name": "actual_folder_name"
-   ```
-2. Ensure the folder exists at `public/thumbnails/actual_folder_name/`
-3. Run `npm run content:sync` to regenerate video entries
-4. Verify thumbnails load with 200 status in dev server
-
-### When Renaming a Folder
-
-1. Rename the folder in `public/thumbnails/`
-2. Update the mapping in `scripts/series-folder-mapping.json`:
-   ```json
-   "Series Name": "new_folder_name"
-   ```
-3. Run `npm run content:sync` to regenerate video entries
-
-### When a Series Has No Thumbnails
-
-Set the mapping value to `null`:
-```json
-"Series Name": null
+```
+THUMBNAILS_SRC/<Series>/<Video Title>.jpg
+        |  npm run sync:thumbnails
+        v
+public/thumbnails/<Series>/<Video Title>.jpg   (committed)
+        |
+        v
+src/generated/thumbnails.json   { slug: "/thumbnails/..." }   (gitignored)
+        |
+        v
+src/app/videos/page-client.tsx
 ```
 
-Videos in this series will have no posterUrl, and the VideoCard component will show a placeholder pattern instead.
+`THUMBNAILS_SRC` defaults to `E:\Videos\Photos\Thumbnails` when the variable is
+unset and the path exists. Set it explicitly on any other machine.
 
-### Special Cases
+`sync:thumbnails` runs as part of `prebuild`, `predev`, and `pretype-check`. It
+reads `src/generated/videos.json`, so it has to run after `sync-content.mjs`,
+never before. Run it alone with `npm run sync:thumbnails` after adding videos.
 
-Some series map to shared folders:
-- Excel Beginner, Excel Intermediate, Excel Challenge all use folder "Excel"
-- SharePoint O365 Beginner, SharePoint O365 Intermediate both use folder "SharePoint"
+## Matching
 
-This is intentional for DRY storage (no duplicate thumbnails).
+For each video, resolve the folder from `source.title`, then resolve the file
+from the video title. File matching tries these in order and stops at the first
+hit: exact base name, case-insensitive, normalized with non-alphanumerics
+collapsed to spaces, condensed with whitespace removed, substring, word overlap
+at 60 percent or better, and finally a 20-character prefix.
 
-## Files to Edit
+The condensed pass is what matches `T/O Validation - The Unit-Level Review` to
+`TO Validation - The Unit-Level Review.jpg`, where the source filename drops a
+character illegal in a Windows path.
 
-- **Add/rename series**: `scripts/series-folder-mapping.json`
-- **Change generation logic**: `scripts/generate-videos.js`
-- **View result**: `src/generated/videos.json` (auto-generated, do not edit)
+Folder names outside the simple case live in `FOLDER_OVERRIDES` at the top of
+`scripts/sync-thumbnails.mjs`. Add new ones there. There is no separate mapping
+file. `series-folder-mapping.json` was retired on 2026-08-08 after confirming no
+code read it.
 
-## Debugging
+## Adding a thumbnail
 
-If thumbnails return 404 after running `npm run content:sync`:
+1. Drop the image in `THUMBNAILS_SRC/<Series>/`, named to match the video title.
+2. Run `npm run sync:thumbnails`.
+3. Confirm the run reports it under matched rather than UNMATCHED.
+4. Commit the copy that landed in `public/thumbnails/`.
 
-1. Check that the series name in `data/videos-marinenet.json` matches a key in the mapping
-2. Verify the mapped folder exists in `public/thumbnails/`
-3. Verify the normalized filename matches an actual file in that folder
-4. Check the dev server log for which URLs returned 404
+## Silent failure to watch for
 
-Example:
-- Series in JSON: "MISSA/MISSO"
-- Mapped to: "MISSA_MISSO" (in series-folder-mapping.json)
-- Video title: "Accessing training guides"
-- Normalized title: "Accessing_training_guides"
-- Expected file: `public/thumbnails/MISSA_MISSO/Accessing_training_guides.jpg`
+With no reachable source the script rebuilds the index from whatever already
+sits in `public/thumbnails`, prints one line saying so, and exits 0. A stale
+index looks like a clean run. Thirty pages lost their thumbnails this way in
+August 2026. Read the summary line, do not assume exit 0 means current.
+
+## Coverage
+
+`npm run content:sync` prints a coverage line and names up to 10 pages with no
+image. Pages carrying no thumbnail today are the ones with no recorded video,
+tracked in `VIDEO-REMEDIATION-PLAN-2026-08-08.md` Segment 3.
+
+## Housekeeping note
+
+Every series folder used to exist twice, once with spaces and once with
+underscores, from an older naming scheme. The underscore copies were never
+referenced and shipped 24.9 MB of duplicate images in every static export. They
+were removed on 2026-08-08. Keep one folder per series, spaces only.

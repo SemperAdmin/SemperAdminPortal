@@ -616,6 +616,106 @@ if (citationIndex) {
 }
 
 // ---------------------------------------------------------------------------
+// Coverage lines. The video catalog and the thumbnail index are produced by
+// scripts outside this one, so drift shows up here rather than at the moment
+// it happens. Both read committed or generated state, never the database, so
+// they work in CI and on a fresh clone.
+// ---------------------------------------------------------------------------
+{
+  // videos coverage
+  const statusPath = path.join(ROOT, "data", "videos-catalog-status.json");
+  const catalogPath = path.join(ROOT, "data", "videos-marinenet.json");
+  const catalogCount = fs.existsSync(catalogPath)
+    ? JSON.parse(fs.readFileSync(catalogPath, "utf8")).length
+    : 0;
+
+  if (!fs.existsSync(statusPath)) {
+    console.warn(
+      "[content-sync] WARN videos: no catalog status found. Run " +
+        "npm run videos:pull to record one."
+    );
+  } else {
+    const status = JSON.parse(fs.readFileSync(statusPath, "utf8"));
+    const pulled = Date.parse(status.pulledAt + "T00:00:00Z");
+    const ageDays = Number.isNaN(pulled)
+      ? null
+      : Math.floor((Date.now() - pulled) / 86400000);
+    const ageText = ageDays === null ? "unknown age" : ageDays + " days ago";
+
+    if (catalogCount !== status.dbPublished) {
+      console.warn(
+        "[content-sync] WARN videos: catalog holds " +
+          catalogCount +
+          " entries against " +
+          status.dbPublished +
+          " published assets at the last pull. Run npm run videos:audit."
+      );
+    } else {
+      console.log(
+        "[content-sync] videos: " +
+          catalogCount +
+          " of " +
+          status.dbPublished +
+          " published assets in the catalog, pulled " +
+          status.pulledAt +
+          " (" +
+          ageText +
+          ")"
+      );
+    }
+    if (status.unpublishedCount > 0) {
+      console.log(
+        "[content-sync] videos: " +
+          status.unpublishedCount +
+          " recorded assets carry no MCeLE URL and stay out of the portal"
+      );
+    }
+    if (ageDays !== null && ageDays > 30) {
+      console.warn(
+        "[content-sync] WARN videos: catalog last pulled " +
+          ageDays +
+          " days ago. New MCeLE uploads land invisible until you run " +
+          "npm run videos:pull."
+      );
+    }
+  }
+
+  // thumbnail coverage
+  const thumbsPath = path.join(OUT, "thumbnails.json");
+  const videosPath = path.join(OUT, "videos.json");
+  if (!fs.existsSync(thumbsPath)) {
+    console.warn(
+      "[content-sync] WARN thumbnails: no index found. Run npm run sync:thumbnails."
+    );
+  } else if (fs.existsSync(videosPath)) {
+    const thumbs = JSON.parse(fs.readFileSync(thumbsPath, "utf8"));
+    const pages = JSON.parse(fs.readFileSync(videosPath, "utf8"));
+    const bare = pages.map((v) => v.slug).filter((slug) => !thumbs[slug]);
+    if (bare.length === 0) {
+      console.log(
+        "[content-sync] thumbnails: " + pages.length + " of " + pages.length + " video pages"
+      );
+    } else {
+      console.warn(
+        "[content-sync] WARN thumbnails: " +
+          (pages.length - bare.length) +
+          " of " +
+          pages.length +
+          " video pages, " +
+          bare.length +
+          " with no image"
+      );
+      for (const slug of bare.slice(0, 10)) {
+        console.warn("    bare  " + slug);
+      }
+      if (bare.length > 10) {
+        console.warn("    ... and " + (bare.length - 10) + " more");
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Role navigation trees. Delegates to scripts/generate-role-nav.mjs, which
 // imports the TS label registries via Node type stripping. On Node 22.18+
 // the direct import works. On Node 22.6 through 22.17 the .ts import fails,

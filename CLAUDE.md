@@ -213,6 +213,50 @@ Field discipline.
 
 Anything worth reading 90 days from now belongs in the role content itself, not in the changelog.
 
+## 4.7 Video Pipeline - One Direction Only
+
+Video pages are generated. Never hand-edit `content/videos/*.mdx`. The next
+`content:sync` overwrites them.
+
+Direction of travel:
+
+```
+vanguard.db  ->  data/videos-marinenet.json  ->  content/videos/*.mdx
+(source facts)   (committed build input)        (generated, disposable)
+```
+
+- `npm run videos:pull` reads the Vanguard SQLite database and rewrites the
+  catalog at `data/videos-marinenet.json`. Set `VANGUARD_DB` or pass `--db`.
+  Add `--dry-run` to preview and `--prune` to drop entries with no database row.
+- `npm run content:sync` runs `scripts/generate-videos.js`, which writes one MDX
+  per catalog entry and prunes pages whose slug left the catalog.
+
+Field ownership. The database owns `title`, `videoUrl`, `mceleUrl`, and
+`source.title`. Humans own `roles`, `summary`, `durationSeconds`, and
+`lastVerified`. The pull merges the human-owned fields forward by slug, so an
+editorial change survives every future pull. Make those edits in the catalog
+JSON, not in the MDX.
+
+Slug rule. Every non-alphanumeric run collapses to a single hyphen.
+`T/O Validation` becomes `t-o-validation`, `FDP&E` becomes `fdp-e`. A rule
+stripping punctuation instead of replacing it produces a second slug for the
+same video, which is how nine duplicate pages appeared before 2026-08-08.
+
+Canonical video URL. One host, built from the MCeLE media id:
+`https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=`
+Do not author `marinenet.marines.mil/<series>/<slug>` addresses. Those resolve
+to nothing.
+
+Pruning is scoped to `src/generated/videos-manifest.json`, the slug list from
+the previous run. The generator never removes a page it did not create, so
+hand-authored pages outside the catalog stay put.
+
+Thumbnails are a separate step. `npm run sync:thumbnails` copies from
+`THUMBNAILS_SRC`, defaulting to `E:\Videos\Photos\Thumbnails`. Convention is
+`public/thumbnails/<Series>/<Exact Video Title>.jpg`. When the source is absent
+the script rebuilds from whatever already sits in `public/thumbnails` and exits
+0, so a missing source degrades quietly rather than failing.
+
 ## 5. Code Rules
 
 - TypeScript strict. No `any`.
