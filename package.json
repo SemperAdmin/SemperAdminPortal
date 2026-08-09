@@ -4,7 +4,7 @@
   "private": true,
   "overrides": {
     "next": {
-      "postcss": "^8.5.18",
+      "postcss": "^8.5.26",
       "sharp": "^0.35.3"
     }
   },
@@ -29,9 +29,10 @@
     "citations:import": "python scripts/citations-import.py",
     "citations:audit": "python scripts/citations-audit.py",
     "links:import": "python scripts/links-import.py",
-    "videos:sync": "python scripts/sync-videos.py",
-    "prebuild": "node scripts/generate-videos.js && node scripts/sync-content.mjs",
-    "predev": "node scripts/generate-videos.js && node scripts/sync-content.mjs",
+    "videos:pull": "python scripts/sync-videos.py",
+    "videos:audit": "python scripts/sync-videos.py --check",
+    "prebuild": "node scripts/generate-videos.js && node scripts/sync-content.mjs && node scripts/sync-thumbnails.mjs",
+    "predev": "node scripts/generate-videos.js && node scripts/sync-content.mjs && node scripts/sync-thumbnails.mjs",
     "search:index": "pagefind --site out --output-path out/pagefind",
     "postbuild": "node scripts/sync-content.mjs && next-sitemap && pagefind --site out --output-path out/pagefind"
   },
@@ -63,13 +64,13 @@
     "date-fns": "^4.1.0",
     "docx": "^9.6.1",
     "file-saver": "^2.0.5",
-    "gray-matter": "^2.0.1",
+    "gray-matter": "^4.0.3",
     "immer": "^11.1.4",
     "lucide-react": "^1.22.0",
     "next": "16.2.12",
     "next-mdx-remote": "^6.0.0",
     "next-themes": "^0.4.6",
-    "postcss": "^8.5.18",
+    "postcss": "^8.5.26",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.80.0",
