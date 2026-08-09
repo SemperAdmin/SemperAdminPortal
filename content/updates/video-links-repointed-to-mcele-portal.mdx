@@ -1,0 +1,29 @@
+---
+slug: "video-links-repointed-to-mcele-portal"
+date: "2026-08-08"
+kind: "correction"
+impact: "awareness"
+title: "Every video link repointed to the MCeLE portal host"
+summary: "Fifty eight video pages carried invented marinenet.marines.mil links with no working video behind them. All 363 video pages now resolve through one canonical MCeLE portal URL built from the real media id."
+roles: ["marine", "leader", "commander", "admin"]
+citations: []
+affectedPages:
+  - "/videos"
+supersededBy: null
+---
+
+Fifty eight video pages pointed at marinenet.marines.mil addresses built
+from the page slug rather than the MCeLE media id. Those links resolved to
+nothing. Each one now carries the real media id taken from the video
+production database.
+
+The portal previously ran three URL conventions side by side across
+marinenet.marines.mil, www.mcele.usmc.mil/mvs, and the MCeLE portal host.
+All 363 video pages now use a single form:
+portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=
+
+Nine duplicate pages rendering the same video under two slugs came out at
+the same time. Seven pages remain without a working link because the
+production database marks the underlying video outdated or has no record of
+it. Those seven stay flagged for a re-record decision rather than shipping a
+guess.

@@ -1,0 +1,33 @@
+{
+  "pulledAt": "2026-08-08",
+  "dbRowsTotal": 1073,
+  "dbPublished": 363,
+  "catalogEntries": 363,
+  "unpublishedCount": 6,
+  "unpublished": [
+    {
+      "title": "Administrative Separation Process (Preparer)",
+      "note": "Video Outdated"
+    },
+    {
+      "title": "HQMC ARDB Directives Monthly Training - 20240731",
+      "note": "Video concept for ARDB"
+    },
+    {
+      "title": "How to set alerts for new videos",
+      "note": "Video Outdated"
+    },
+    {
+      "title": "Policy and Software Updates",
+      "note": "Video Outdated"
+    },
+    {
+      "title": "Requesting Access",
+      "note": "Video Outdated"
+    },
+    {
+      "title": "SkillBridge Program Policy Update (NAVMC 1700.2B)",
+      "note": "Video Outdated"
+    }
+  ]
+}
