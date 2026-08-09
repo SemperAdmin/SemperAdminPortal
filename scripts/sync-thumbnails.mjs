@@ -17,7 +17,12 @@
 import fs from "fs";
 import path from "path";
 
-const SRC_ROOT = process.env.THUMBNAILS_SRC || "";
+// Known local thumbnail drive. Tried when THUMBNAILS_SRC is unset so a routine
+// run on the authoring machine does not silently fall back to a stale index.
+// CI has no E: drive, so the absent-source branch below still applies there.
+const DEFAULT_SRC = "E:\\Videos\\Photos\\Thumbnails";
+const SRC_ROOT =
+  process.env.THUMBNAILS_SRC || (fs.existsSync(DEFAULT_SRC) ? DEFAULT_SRC : "");
 const DEST_ROOT = path.resolve("public/thumbnails");
 const VIDEOS_JSON = path.resolve("src/generated/videos.json");
 const OUT_JSON = path.resolve("src/generated/thumbnails.json");
@@ -25,7 +30,7 @@ const OUT_JSON = path.resolve("src/generated/thumbnails.json");
 // Manual overrides: source.title → folder name under SRC_ROOT
 const FOLDER_OVERRIDES = {
   "Casualty Affairs": "Casualty  Affaires",
-  "FITREPS": "FITREP",
+  FITREPS: "FITREP",
   "MISSA/MISSO": "MISSA_MISSO",
   "SharePoint O365 Beginner": "SharePoint",
   "SharePoint O365 Intermediate": "SharePoint",
@@ -40,7 +45,15 @@ const FOLDER_OVERRIDES = {
   "Separation packet flow source": "Semper Admin",
 };
 
-const IMAGE_EXTS = new Set([".jpg", ".jpeg", ".png", ".webp", ".JPG", ".JPEG", ".PNG"]);
+const IMAGE_EXTS = new Set([
+  ".jpg",
+  ".jpeg",
+  ".png",
+  ".webp",
+  ".JPG",
+  ".JPEG",
+  ".PNG",
+]);
 
 function normalize(str) {
   return str
@@ -49,6 +62,9 @@ function normalize(str) {
     .replace(/\s+/g, " ")
     .trim();
 }
+
+// Source images with no bytes. Reported at the end of a run.
+const emptySources = [];
 
 // Build index of all files per folder: { folderName: [ { base, file, ext } ] }
 function buildFolderIndex() {
@@ -61,13 +77,22 @@ function buildFolderIndex() {
   for (const entry of entries) {
     if (!entry.isDirectory()) continue;
     const folderPath = path.join(SRC_ROOT, entry.name);
-    const files = fs.readdirSync(folderPath, { withFileTypes: true })
-      .filter(f => f.isFile() && IMAGE_EXTS.has(path.extname(f.name)))
-      .map(f => ({
+    const files = fs
+      .readdirSync(folderPath, { withFileTypes: true })
+      .filter((f) => f.isFile() && IMAGE_EXTS.has(path.extname(f.name)))
+      .map((f) => ({
         base: path.basename(f.name, path.extname(f.name)),
         file: f.name,
         full: path.join(folderPath, f.name),
-      }));
+      }))
+      // A zero-byte image is worse than a missing one. Mapping a video to it
+      // renders a broken-image icon on the card, while leaving it unmatched
+      // renders the intended placeholder. Drop empties and name them.
+      .filter((f) => {
+        if (fs.statSync(f.full).size > 0) return true;
+        emptySources.push(path.join(entry.name, f.file));
+        return false;
+      });
     index[entry.name] = files;
   }
   return index;
@@ -80,61 +105,72 @@ function resolveFolder(sourceTitle, folderIndex) {
     if (folderIndex[override]) return override;
     // Normalized match — handles space/underscore differences between source drive and public/thumbnails
     const normOverride = normalize(override);
-    const normMatch = Object.keys(folderIndex).find(k => normalize(k) === normOverride);
+    const normMatch = Object.keys(folderIndex).find(
+      (k) => normalize(k) === normOverride
+    );
     if (normMatch) return normMatch;
   }
   // Exact match
   if (folderIndex[sourceTitle]) return sourceTitle;
   // Case-insensitive match
   const lower = sourceTitle.toLowerCase();
-  const match = Object.keys(folderIndex).find(k => k.toLowerCase() === lower);
+  const match = Object.keys(folderIndex).find((k) => k.toLowerCase() === lower);
   if (match) return match;
   // Normalized fuzzy match
   const normSrc = normalize(sourceTitle);
-  const fuzzy = Object.keys(folderIndex).find(k => normalize(k) === normSrc);
+  const fuzzy = Object.keys(folderIndex).find((k) => normalize(k) === normSrc);
   return fuzzy || null;
 }
 
 function resolveFile(title, files) {
   if (!files || files.length === 0) return null;
   // Exact base name match
-  const exact = files.find(f => f.base === title);
+  const exact = files.find((f) => f.base === title);
   if (exact) return exact;
   // Case-insensitive
   const lower = title.toLowerCase();
-  const ci = files.find(f => f.base.toLowerCase() === lower);
+  const ci = files.find((f) => f.base.toLowerCase() === lower);
   if (ci) return ci;
   // Normalized (non-alphanumeric stripped, lowercased)
   const normTitle = normalize(title);
-  const norm = files.find(f => normalize(f.base) === normTitle);
+  const norm = files.find((f) => normalize(f.base) === normTitle);
   if (norm) return norm;
   // Condensed match — strips all whitespace before comparing.
   // Catches slash-separated words like "Relicensing/Recertification" → "relicensingrecertification"
   // when the filename omits the separator entirely.
   const condensed = normTitle.replace(/\s+/g, "");
-  const condensedMatch = files.find(f => normalize(f.base).replace(/\s+/g, "") === condensed);
+  const condensedMatch = files.find(
+    (f) => normalize(f.base).replace(/\s+/g, "") === condensed
+  );
   if (condensedMatch) return condensedMatch;
   // Contains match — catches filename prefixes like "Board_Member_-_Reviewing_Awards..."
   // where the title is a substring of the file base name.
-  const containsMatch = files.find(f => normalize(f.base).includes(normTitle));
+  const containsMatch = files.find((f) =>
+    normalize(f.base).includes(normTitle)
+  );
   if (containsMatch) return containsMatch;
   // Word-overlap match — ≥60% of title words present in file base name.
   // Catches word-reorder ("My Account - Managing..." vs "Managing my account...") and
   // near-miss typos ("IPCOT" vs "IPOC") where most tokens still match.
-  const titleWords = normTitle.split(/\s+/).filter(w => w.length > 2);
+  const titleWords = normTitle.split(/\s+/).filter((w) => w.length > 2);
   if (titleWords.length > 0) {
     let bestFile = null;
     let bestScore = 0;
     for (const f of files) {
       const normBase = normalize(f.base);
-      const hits = titleWords.filter(w => normBase.includes(w)).length;
+      const hits = titleWords.filter((w) => normBase.includes(w)).length;
       const score = hits / titleWords.length;
-      if (score > bestScore) { bestScore = score; bestFile = f; }
+      if (score > bestScore) {
+        bestScore = score;
+        bestFile = f;
+      }
     }
     if (bestScore >= 0.6) return bestFile;
   }
   // Starts-with (for truncated names — last resort, low precision)
-  const startsWith = files.find(f => f.base.toLowerCase().startsWith(lower.substring(0, 20)));
+  const startsWith = files.find((f) =>
+    f.base.toLowerCase().startsWith(lower.substring(0, 20))
+  );
   return startsWith || null;
 }
 
@@ -147,6 +183,11 @@ function copyFile(srcPath, destFolder, fileName) {
     fs.copyFileSync(srcPath, dest, fs.constants.COPYFILE_EXCL);
   } catch (err) {
     if (err.code !== "EEXIST") throw err;
+    // EXCL refuses to overwrite, which permanently pins a zero-byte file
+    // copied by an earlier run. Replace it once the source has real bytes.
+    if (fs.statSync(dest).size === 0 && fs.statSync(srcPath).size > 0) {
+      fs.copyFileSync(srcPath, dest);
+    }
   }
   return dest;
 }
@@ -190,13 +231,17 @@ if (!fs.existsSync(SRC_ROOT)) {
     const folderName = resolveFolder(sourceTitle, publicIndex);
     if (!folderName) {
       fallbackUnmatched++;
-      console.warn(`  UNMATCHED [no folder] slug=${video.slug}  source="${sourceTitle}"`);
+      console.warn(
+        `  UNMATCHED [no folder] slug=${video.slug}  source="${sourceTitle}"`
+      );
       continue;
     }
     const fileEntry = resolveFile(video.title, publicIndex[folderName]);
     if (!fileEntry) {
       fallbackUnmatched++;
-      console.warn(`  UNMATCHED [no file]   slug=${video.slug}  folder="${folderName}"  title="${video.title}"`);
+      console.warn(
+        `  UNMATCHED [no file]   slug=${video.slug}  folder="${folderName}"  title="${video.title}"`
+      );
       continue;
     }
     fallbackMap[video.slug] =
@@ -235,7 +280,13 @@ for (const video of videos) {
 
   if (!fileEntry) {
     unmatched++;
-    unmatchedList.push({ slug: video.slug, title: video.title, sourceTitle, folder: folderName, reason: "no file" });
+    unmatchedList.push({
+      slug: video.slug,
+      title: video.title,
+      sourceTitle,
+      folder: folderName,
+      reason: "no file",
+    });
     continue;
   }
 
@@ -250,7 +301,20 @@ for (const video of videos) {
 
 fs.writeFileSync(OUT_JSON, JSON.stringify(thumbnailMap, null, 2));
 
-console.log(`[thumbnails] matched: ${matched}  unmatched: ${unmatched}  total: ${videos.length}`);
+console.log(
+  `[thumbnails] matched: ${matched}  unmatched: ${unmatched}  total: ${videos.length}`
+);
+if (emptySources.length > 0) {
+  console.warn(
+    `[thumbnails] WARN ${emptySources.length} source image(s) hold zero bytes and were skipped. ` +
+      `Re-export them, the page falls back to the placeholder until then:`
+  );
+  for (const name of emptySources) console.warn(`    empty  ${name}`);
+}
 if (unmatchedList.length > 0) {
-  unmatchedList.forEach(u => console.warn(`  UNMATCHED [${u.reason}] slug=${u.slug}${u.folder ? `  folder="${u.folder}"` : `  source="${u.sourceTitle}"`}${u.title ? `  title="${u.title}"` : ""}`));
+  unmatchedList.forEach((u) =>
+    console.warn(
+      `  UNMATCHED [${u.reason}] slug=${u.slug}${u.folder ? `  folder="${u.folder}"` : `  source="${u.sourceTitle}"`}${u.title ? `  title="${u.title}"` : ""}`
+    )
+  );
 }
