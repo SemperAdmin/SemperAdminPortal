@@ -46,8 +46,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased">
+        {/* Base path comes from next.config.mjs, empty on cloud.gov and
+            /SemperAdminPortal on GitHub Pages. Hardcoding the Pages prefix
+            404s the script on cloud.gov and silently drops clickjacking
+            protection there. */}
         <Script
-          src="/SemperAdminPortal/security/frame-buster.js"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/security/frame-buster.js`}
           strategy="afterInteractive"
         />
         <ThemeProvider

@@ -12,6 +12,7 @@ const config = [
       ".claude/**",
       ".github/**",
       ".next/**",
+      "_to_delete/**",
       "out/**",
       "node_modules/**",
       "redesign/**",

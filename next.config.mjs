@@ -35,6 +35,11 @@ const nextConfig = {
   },
   reactStrictMode: true,
   poweredByHeader: false,
+  // gray-matter 2.x hard-depends on coffee-script 1.x, whose bin/coffee does a
+  // dynamic require Turbopack cannot resolve. Keeping gray-matter external stops
+  // the bundler from tracing into it. Remove this line once gray-matter moves to
+  // 4.x, which dropped the coffee-script dependency.
+  serverExternalPackages: ["gray-matter"],
 };
 
 export default nextConfig;

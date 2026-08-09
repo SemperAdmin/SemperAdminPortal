@@ -45,3 +45,11 @@ next-env.d.ts
 # Working-copy backups
 *.wip-bak
 *.wip.bak
+
+# Holding pen. The Cowork device bridge cannot delete, so files bound for
+# removal are moved here instead. Never compiled, linted, or committed.
+/_to_delete/
+
+# Python bytecode from the citation and video scripts
+__pycache__/
+*.pyc
