@@ -81,6 +81,7 @@ const COMMANDER_TREE: TreeSection[] = [
           { label: "SAPR Unrestricted Report", href: "/commander/incident-playbooks/sapr-unrestricted-report" },
           { label: "Off-base arrest", href: "/commander/incident-playbooks/off-base-arrest" },
           { label: "Suicide attempt and mental health crisis", href: "/commander/incident-playbooks/suicide-response" },
+          { label: "MEO complaint received", href: "/commander/incident-playbooks/meo-complaint" },
         ],
       },
       {

@@ -464,6 +464,14 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     pageType: "leaf",
   },
   {
+    slug: "equal-opportunity-reporting",
+    label: "Equal Opportunity Reporting",
+    shortLabel: "EO Reporting",
+    description: "Reporting discrimination or harassment under Military Equal Opportunity. Confidential, informal, formal, and anonymous lanes and what each one starts. The 60-day filing window, 120 days for Reserve Marines. Dismissal grounds and the 5-day appeal. Per MARADMIN 380/26 and MCO 5354.1G.",
+    icon: "LifeBuoy",
+    pageType: "leaf",
+  },
+  {
     slug: "sexual-assault-reporting-svc",
     label: "Sexual Assault Reporting and Special Victims' Counsel",
     shortLabel: "SAPR and SVC",
@@ -2084,6 +2092,7 @@ export const MARINES_PARENT_GROUPS: MarinesParentGroup[] = [
       "article-138-and-ig-complaints",
       "article-31-rights-and-investigations",
       "court-martial-process",
+      "equal-opportunity-reporting",
       "family-law-for-marines",
       "foreign-jurisdiction-sofa",
       "legal-services-overview",
