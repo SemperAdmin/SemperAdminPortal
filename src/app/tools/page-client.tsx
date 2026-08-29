@@ -7,6 +7,9 @@ import {
   Calculator,
   FileText,
   FileDown,
+  FileSearch,
+  Lock,
+  Workflow,
   ClipboardList,
   Activity,
   Zap,
@@ -24,7 +27,13 @@ import { classifyFreshness } from "@/lib/verification";
 
 type OutputType = "pdf" | "docx" | "calculator" | "checklist";
 type ToolType =
-  "calculator" | "monitor" | "aggregator" | "generator" | "simulator";
+  | "calculator"
+  | "monitor"
+  | "aggregator"
+  | "generator"
+  | "simulator"
+  | "inspector"
+  | "processor";
 
 interface InternalTool {
   slug: string;
@@ -44,6 +53,8 @@ interface ExternalTool {
   roles: Role[];
   toolType: ToolType;
   externalUrl: string;
+  access?: "public" | "cac";
+  requiresCac?: boolean;
   lastVerified: string;
   isExternal: true;
 }
@@ -63,6 +74,8 @@ const TOOL_ICON: Record<ToolType, LucideIcon> = {
   aggregator: Zap,
   generator: FileText,
   simulator: Gamepad2,
+  inspector: FileSearch,
+  processor: Workflow,
 };
 
 const OUTPUT_LABEL: Record<OutputType, string> = {
@@ -78,6 +91,8 @@ const TOOL_LABEL: Record<ToolType, string> = {
   aggregator: "Aggregator",
   generator: "Generator",
   simulator: "Simulator",
+  inspector: "Inspector",
+  processor: "Processor",
 };
 
 // Accents must hold visible contrast against both dark-navy and parchment
@@ -97,6 +112,8 @@ const TOOL_ACCENT: Record<ToolType, string> = {
   aggregator: "var(--color-leader-brass)",
   generator: "var(--color-marine-blue-100)",
   simulator: "var(--color-role-admin)",
+  inspector: "var(--color-status-aging)",
+  processor: "var(--color-usmc-scarlet-300)",
 };
 
 function getIcon(tool: ToolData): LucideIcon {
@@ -179,6 +196,12 @@ export default function ToolsIndex() {
     simulator: roleFiltered.filter(
       (t) => t.isExternal && t.toolType === "simulator"
     ).length,
+    inspector: roleFiltered.filter(
+      (t) => t.isExternal && t.toolType === "inspector"
+    ).length,
+    processor: roleFiltered.filter(
+      (t) => t.isExternal && t.toolType === "processor"
+    ).length,
   };
 
   const roleCounts: Record<string, number> = {
@@ -195,6 +218,8 @@ export default function ToolsIndex() {
     { id: "aggregator", label: "Aggregator", count: counts.aggregator },
     { id: "monitor", label: "Monitor", count: counts.monitor },
     { id: "simulator", label: "Simulator", count: counts.simulator },
+    { id: "inspector", label: "Inspector", count: counts.inspector },
+    { id: "processor", label: "Processor", count: counts.processor },
     { id: "pdf", label: "PDF", count: counts.pdf },
     { id: "docx", label: "DOCX", count: counts.docx },
     { id: "checklist", label: "Checklist", count: counts.checklist },
@@ -217,7 +242,7 @@ export default function ToolsIndex() {
           <StatusPill status="fresh" label={`${counts.all} tools available`} />
         }
         title="TOOLS"
-        summary="Client-side calculators, external apps, and document generators. No data leaves your browser."
+        summary="Client-side calculators, document generators, and external apps. Unmarked tools run in your browser. Tools marked CAC open on the Marine Corps tenant and send your inputs there."
       >
         <MetaRow
           items={[
@@ -225,7 +250,7 @@ export default function ToolsIndex() {
             {
               label: "Types",
               value:
-                "Calculator, Generator, Aggregator, Monitor, Simulator, PDF, DOCX, Checklist",
+                "Calculator, Generator, Aggregator, Monitor, Simulator, Inspector, Processor, PDF, DOCX, Checklist",
               mono: false,
             },
           ]}
@@ -291,6 +316,15 @@ export default function ToolsIndex() {
                     >
                       {label}
                     </span>
+                    {t.isExternal && t.requiresCac && (
+                      <span
+                        title="CAC required"
+                        className="inline-flex items-center gap-0.5 rounded-[var(--radius-xs)] border border-[color-mix(in_srgb,var(--color-status-aging)_30%,transparent)] bg-[color-mix(in_srgb,var(--color-status-aging)_10%,transparent)] px-1.5 py-0.5 font-mono text-[10px] font-bold uppercase text-[var(--color-status-aging-700)] dark:text-[var(--color-brass-300)]"
+                      >
+                        <Lock className="size-2.5" aria-hidden="true" />
+                        CAC
+                      </span>
+                    )}
                     <StatusPill
                       status={status}
                       label={

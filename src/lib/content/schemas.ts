@@ -142,8 +142,14 @@ export const externalToolSchema = baseFrontmatter.extend({
     "aggregator",
     "generator",
     "simulator",
+    "inspector",
+    "processor",
   ]),
   externalUrl: z.string().url(),
+  // CAC-gated apps (Power Apps on the USMC tenant) carry access: "cac" and
+  // requiresCac: true so the card shows a lock pill. Default is public.
+  access: z.enum(["public", "cac"]).default("public"),
+  requiresCac: z.boolean().default(false),
 });
 
 export const LINK_CATEGORIES = [
