@@ -1009,6 +1009,23 @@
     "lastVerified": "2025-02-06"
   },
   {
+    "slug": "combat-and-administrative-replacements",
+    "title": "Combat and Administrative Replacements",
+    "summary": "Training on Combat and Administrative Replacements",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9689751153F6",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9689751153F6",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
+  },
+  {
     "slug": "combat-awards-timeliness-is-key",
     "title": "Combat Awards - Timeliness is Key",
     "summary": "Combat Awards - Timeliness is Key.",
@@ -1639,6 +1656,23 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "dc-m-ra-and-dc-cd-i-who-does-what-in-manning-and-staffing",
+    "title": "DC M&RA and DC CD&I - Who Does What in Manning and Staffing",
+    "summary": "Training on DC M&RA and DC CD&I - Who Does What in Manning and Staffing",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=972799DA499B",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=972799DA499B",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
   },
   {
     "slug": "decorating-departing-marines-awards-and-pcs-orders",
@@ -2495,6 +2529,23 @@
     "lastVerified": "2025-05-18"
   },
   {
+    "slug": "how-the-mc-builds-its-inventory-accessions-through-assignments",
+    "title": "How the MC Builds Its Inventory - Accessions Through Assignments",
+    "summary": "Training on How the MC Builds Its Inventory - Accessions Through Assignments",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97266BCDC848",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97266BCDC848",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
+  },
+  {
     "slug": "how-to-access-tfsms",
     "title": "How to access TFSMS",
     "summary": "access TFSMS.",
@@ -2667,6 +2718,23 @@
       "url": ""
     },
     "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "hqmc-organizations-and-the-mroc",
+    "title": "HQMC Organizations and the MROC",
+    "summary": "Training on HQMC Organizations and the MROC",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9721D0A0D92F",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9721D0A0D92F",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
   },
   {
     "slug": "if-function",
@@ -3129,6 +3197,23 @@
     "lastVerified": "2026-08-08"
   },
   {
+    "slug": "manning-document-analysis-and-shortfall-management",
+    "title": "Manning Document Analysis and Shortfall Management",
+    "summary": "Training on Manning Document Analysis and Shortfall Management",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=96983CAD237F",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=96983CAD237F",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
+  },
+  {
     "slug": "maradmins-what-are-they",
     "title": "MARADMINS - What are they",
     "summary": "Training on MARADMINS - What are they",
@@ -3350,6 +3435,26 @@
     "lastVerified": "2026-08-08"
   },
   {
+    "slug": "meeting-of-the-minds-afternoon-20260820",
+    "title": "Meeting of the Minds (Afternoon)-20260820",
+    "summary": "Training on Meeting of the Minds (Afternoon)-20260820",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9701454D2D3B",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9701454D2D3B",
+    "source": {
+      "title": "Semper Admin",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
+  },
+  {
     "slug": "meeting-of-the-minds-morning-20250903",
     "title": "Meeting of the Minds (Morning)-20250903",
     "summary": "Training on Meeting of the Minds (Morning)-20250903",
@@ -3416,6 +3521,26 @@
       "url": ""
     },
     "lastVerified": "2026-08-08"
+  },
+  {
+    "slug": "meeting-of-the-minds-morning-20260819",
+    "title": "Meeting of the Minds (Morning)-20260819",
+    "summary": "Training on Meeting of the Minds (Morning)-20260819",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97009C62DF6D",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97009C62DF6D",
+    "source": {
+      "title": "Semper Admin",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
   },
   {
     "slug": "min-function",
@@ -3518,6 +3643,23 @@
       "url": ""
     },
     "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "mos-sponsors-occfld-managers-and-mos-specialists",
+    "title": "MOS Sponsors, OccFld Managers, and MOS Specialists",
+    "summary": "Training on MOS Sponsors, OccFld Managers, and MOS Specialists",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9720E5EA3CFC",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9720E5EA3CFC",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
   },
   {
     "slug": "my-account-managing-mol-notification-settings",
@@ -4370,6 +4512,57 @@
     "lastVerified": "2026-08-08"
   },
   {
+    "slug": "reading-the-enlisted-csr-every-field-explained",
+    "title": "Reading the Enlisted CSR - Every Field Explained",
+    "summary": "Training on Reading the Enlisted CSR - Every Field Explained",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9730F0259D6F",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9730F0259D6F",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
+  },
+  {
+    "slug": "reading-the-officer-csr-what-is-different",
+    "title": "Reading the Officer CSR - What is Different",
+    "summary": "Training on Reading the Officer CSR - What is Different",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9731481D3E75",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9731481D3E75",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
+  },
+  {
+    "slug": "reading-the-t-o-report-every-field-explained",
+    "title": "Reading the T/O Report - Every Field Explained",
+    "summary": "Training on Reading the T/O Report - Every Field Explained",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97283A87C638",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97283A87C638",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
+  },
+  {
     "slug": "register-for-training",
     "title": "Register for training",
     "summary": "Training on Register for training",
@@ -5069,6 +5262,23 @@
     "lastVerified": "2025-06-10"
   },
   {
+    "slug": "structure-vs-manning-vs-staffing-the-three-terms-you-need-to-own",
+    "title": "Structure vs Manning vs Staffing - The Three Terms You Need to Own",
+    "summary": "Training on Structure vs Manning vs Staffing - The Three Terms You Need to Own",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9693C258F7E3",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9693C258F7E3",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
+  },
+  {
     "slug": "subject-reference-and-enclosure-lines",
     "title": "Subject, Reference, and Enclosure lines",
     "summary": "Training on Subject, Reference, and Enclosure lines",
@@ -5426,6 +5636,74 @@
     "lastVerified": "2026-04-08"
   },
   {
+    "slug": "the-asr-how-the-mc-decides-what-it-buys",
+    "title": "The ASR - How the MC Decides What It Buys",
+    "summary": "Training on The ASR - How the MC Decides What It Buys",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9722E1B792A6",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9722E1B792A6",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
+  },
+  {
+    "slug": "the-cpg-and-strategic-context-force-design-2030-and-talent-management",
+    "title": "The CPG and Strategic Context - Force Design 2030 and Talent Management",
+    "summary": "Training on The CPG and Strategic Context - Force Design 2030 and Talent Management",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9694D5F5E8D6",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9694D5F5E8D6",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
+  },
+  {
+    "slug": "the-dotmlpf-c-working-group-how-requirements-get-assessed",
+    "title": "The DOTMLPF&C Working Group - How Requirements Get Assessed",
+    "summary": "Training on The DOTMLPF&C Working Group - How Requirements Get Assessed",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9697A93B8D72",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9697A93B8D72",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
+  },
+  {
+    "slug": "the-gar-and-staffing-goals-from-asr-to-assignments",
+    "title": "The GAR and Staffing Goals - From ASR to Assignments",
+    "summary": "Training on The GAR and Staffing Goals - From ASR to Assignments",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9725D19CAAD1",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9725D19CAAD1",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
+  },
+  {
     "slug": "the-lifecycle-of-a-marine-corps-award",
     "title": "The Lifecycle of a Marine Corps Award",
     "summary": "The Lifecycle of a Marine Corps Award.",
@@ -5462,6 +5740,23 @@
     "lastVerified": "2025-10-12"
   },
   {
+    "slug": "the-staffing-summary-grid-msr-sg-and-12-month-projections",
+    "title": "The Staffing Summary Grid - MSR, SG, and 12-Month Projections",
+    "summary": "Training on The Staffing Summary Grid - MSR, SG, and 12-Month Projections",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9732B6A18BCF",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9732B6A18BCF",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
+  },
+  {
     "slug": "the-t-o-review-battle-rhythm",
     "title": "The T/O Review Battle Rhythm",
     "summary": "Training on The T/O Review Battle Rhythm",
@@ -5477,6 +5772,40 @@
       "url": ""
     },
     "lastVerified": "2026-08-08"
+  },
+  {
+    "slug": "the-tfsp-how-the-mc-builds-its-requirements",
+    "title": "The TFSP - How the MC Builds Its Requirements",
+    "summary": "Training on The TFSP - How the MC Builds Its Requirements",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9695B7A8E69D",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9695B7A8E69D",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
+  },
+  {
+    "slug": "toecrs-how-force-structure-changes-get-made",
+    "title": "TOECRs - How Force Structure Changes Get Made",
+    "summary": "Training on TOECRs - How Force Structure Changes Get Made",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=96966C40F130",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=96966C40F130",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
   },
   {
     "slug": "top-mistakes-to-avoid-in-award-recommendations",
@@ -6059,6 +6388,23 @@
       "url": ""
     },
     "lastVerified": "2026-08-08"
+  },
+  {
+    "slug": "what-is-the-hrdp-and-why-it-drives-everything",
+    "title": "What is the HRDP and Why It Drives Everything",
+    "summary": "Training on What is the HRDP and Why It Drives Everything",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=969218ADC735",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=969218ADC735",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-08-29"
   },
   {
     "slug": "who-can-receive-your-benefits-dependent-eligibility",
