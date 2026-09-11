@@ -23,7 +23,7 @@ We store the following when you visit:
 - Your selected role (marine, leader, commander, admin). Stored in `localStorage` as `semper-admin.role.v2`. Persists until you clear browser data or explicitly change your role.
 - Your viewing history. Up to 12 of your recently viewed pages (title and URL only). Stored in the same localStorage key as your role. Persists until you clear browser data or explicitly clear your recents.
 - Disclaimer acceptance. A flag indicating you have read and dismissed the proof-of-concept banner. Stored in `sessionStorage` as `sap.disclaimer.dismissed`. Clears when you close your browser tab.
-- Terms acceptance. A flag indicating you accepted the terms on your first visit. Stored in `localStorage` as `semper-admin-terms-agreed`. Persists until you clear browser data.
+- Terms acknowledgment. A record of the date you acknowledged the disclaimer and terms, and the version of the terms you saw. Stored in `localStorage` as `semper-admin-terms-accepted`. Persists until you clear browser data, or until the terms are revised, at which point the acknowledgment prompt returns.
 
 None of these values contain personal information. Your role selection is a category (one of four words). Your viewing history contains only page titles and URLs, which are already visible in your browser history.
 
