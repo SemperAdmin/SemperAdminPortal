@@ -14,9 +14,21 @@ updates:
       dependencies:
         patterns:
           - "*"
+    # "development", not "dev". Dependabot's schema accepts only direct,
+    # indirect, production, development, and all. The invalid value sat here
+    # from this file's first commit on 2026-06-18 and made the whole config
+    # unparseable, which is consistent with what the repository saw: eleven
+    # separate Dependabot pull requests despite a group matching "*" and a
+    # limit of five.
     allow:
       - dependency-type: "production"
-      - dependency-type: "dev"
-    ignore:
-      - dependency-name: "gray-matter"
-        versions: ["4.x"]
+      - dependency-type: "development"
+    # No ignore rules. A prior "gray-matter 4.x" ignore covered the package's
+    # entire published range, since 4.0.3 is its latest release, and it landed
+    # with no recorded reason. While it stood, nothing reached us about that
+    # dependency chain, and the high-severity js-yaml advisory
+    # GHSA-2883-xcg3-v3hh arrived through it unannounced.
+    #
+    # Dependabot is blind to the "overrides" block in package.json either way.
+    # sharp and js-yaml both reach the tree that route and neither raised a PR.
+    # dependency-audit.yml covers the blind spots this file leaves.
