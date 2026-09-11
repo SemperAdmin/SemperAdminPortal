@@ -5,8 +5,9 @@
   "overrides": {
     "next": {
       "postcss": "^8.5.26",
-      "sharp": "^0.35.3"
-    }
+      "sharp": "^0.35.4"
+    },
+    "js-yaml": "^3.15.2"
   },
   "scripts": {
     "test": "vitest run",
@@ -65,9 +66,9 @@
     "docx": "^9.6.1",
     "file-saver": "^2.0.5",
     "gray-matter": "^4.0.3",
-    "immer": "^11.1.4",
+    "immer": "^11.1.16",
     "lucide-react": "^1.22.0",
-    "next": "16.2.12",
+    "next": "16.3.4",
     "next-mdx-remote": "^6.0.0",
     "next-themes": "^0.4.6",
     "postcss": "^8.5.26",
@@ -84,23 +85,23 @@
     "zustand": "^5.0.12"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "3.3.5",
-    "@testing-library/jest-dom": "^6.9.1",
+    "@eslint/eslintrc": "3.3.6",
+    "@testing-library/jest-dom": "^7.0.0",
     "@testing-library/react": "^16.3.2",
-    "@testing-library/user-event": "^14.6.1",
+    "@testing-library/user-event": "^14.6.3",
     "@types/node": "^26.0.1",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^4.7.0",
-    "@vitest/ui": "^4.1.9",
+    "@vitejs/plugin-react": "^6.0.5",
+    "@vitest/ui": "^5.0.0",
     "eslint": "^9.39.4",
-    "eslint-config-next": "16.2.12",
-    "jsdom": "^26.1.0",
+    "eslint-config-next": "16.3.4",
+    "jsdom": "^30.0.1",
     "next-sitemap": "^4.2.3",
     "pagefind": "^1.5.2",
     "prettier": "^3.9.3",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "typescript": "^5.9.3",
-    "vitest": "^4.1.9"
+    "vitest": "^5.0.0"
   }
 }
