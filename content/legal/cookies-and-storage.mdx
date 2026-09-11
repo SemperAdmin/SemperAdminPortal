@@ -50,15 +50,15 @@ All storage is under your control. You may inspect, delete, or disable it at any
 **Size:** Typically 1-5 KB.  
 **Shared With:** Only your local browser. Not transmitted to servers.
 
-### Terms Acceptance Flag
+### Terms Acknowledgment Record
 
-**Key:** `semper-admin-terms-agreed`  
+**Key:** `semper-admin-terms-accepted`  
 **Type:** localStorage (persists across browser sessions)  
-**Purpose:** Tracks that you have reviewed and accepted the terms on first visit  
-**Data:** String value `"true"` when set, absent when not set  
+**Purpose:** Records the date you acknowledged the disclaimer and terms, and the version of the terms shown to you  
+**Data:** JSON object, for example `{"version":"2026-09-11","acceptedAt":"2026-09-11T14:02:11.418Z"}`  
 **Retention:** Persists indefinitely until you clear browser data.  
 **Size:** Bytes.  
-**Effect:** If this key is set, the terms modal will not appear on subsequent visits.
+**Effect:** If the stored version matches the current terms version, the acknowledgment dialog stays hidden. When the terms are revised the version changes, the stored record no longer matches, and the dialog returns once against the new text.
 
 ### Disclaimer Dismissal Flag
 
