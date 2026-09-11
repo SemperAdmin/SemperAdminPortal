@@ -1,8 +1,48 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { AppShell } from "@/components/shell/app-shell";
 import "./globals.css";
+
+/**
+ * Clickjacking protection, inlined.
+ *
+ * Static hosts set no response headers, so neither X-Frame-Options nor the
+ * frame-ancestors CSP directive is available and this stands in for them.
+ * Tracked as INFRA-04 in docs/security/ATO-CHECKLIST.md, where a real header
+ * replaces it once the hosting supports one.
+ *
+ * Inline and synchronous on purpose. Two earlier shapes both failed:
+ *
+ * 1. next/script at afterInteractive injected the tag only after hydration,
+ *    so the built HTML carried a preload link and no executing script. A
+ *    hostile frame got the whole render and hydrate window first.
+ * 2. beforeInteractive moved it earlier, to a queue entry Next's runtime
+ *    drains, and still produced no blocking tag in the markup.
+ *
+ * Inlining also drops the basePath interpolation the file version needed.
+ * That path is empty on cloud.gov and /SemperAdminPortal on GitHub Pages,
+ * and hardcoding the Pages prefix once silently removed this protection from
+ * cloud.gov entirely.
+ *
+ * The string is a build-time constant with no interpolation of request or
+ * user data, which is the one shape where dangerouslySetInnerHTML is sound.
+ *
+ * Failure mode is deliberate. Navigating the top frame is permitted across
+ * origins, so the redirect normally works. A sandbox without
+ * allow-top-navigation throws instead, and there the fallback hides the
+ * document so an overlay attack has nothing to sit on top of. Content stays
+ * readable with scripting off, which a hide-by-default guard would break on
+ * a static reference site.
+ */
+const FRAME_BUSTER = `
+if (window.top !== window.self) {
+  try {
+    window.top.location = window.self.location;
+  } catch (e) {
+    document.documentElement.style.display = "none";
+  }
+}
+`.trim();
 
 export const metadata: Metadata = {
   title: {
@@ -46,14 +86,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased">
-        {/* Base path comes from next.config.mjs, empty on cloud.gov and
-            /SemperAdminPortal on GitHub Pages. Hardcoding the Pages prefix
-            404s the script on cloud.gov and silently drops clickjacking
-            protection there. */}
-        <Script
-          src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/security/frame-buster.js`}
-          strategy="afterInteractive"
-        />
+        {/* Clickjacking protection. Runs synchronously as the first thing
+            in the body, before any visible content parses. See
+            FRAME_BUSTER above for why it is inline rather than a file. */}
+        <script dangerouslySetInnerHTML={{ __html: FRAME_BUSTER }} />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
