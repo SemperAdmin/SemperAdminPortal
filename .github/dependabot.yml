@@ -14,9 +14,15 @@ updates:
       dependencies:
         patterns:
           - "*"
+    # "development", not "dev". Dependabot's schema accepts only direct,
+    # indirect, production, development, and all. The invalid value sat here
+    # from this file's first commit on 2026-06-18 and made the whole config
+    # unparseable, which is consistent with what the repository saw: eleven
+    # separate Dependabot pull requests despite a group matching "*" and a
+    # limit of five.
     allow:
       - dependency-type: "production"
-      - dependency-type: "dev"
+      - dependency-type: "development"
     # No ignore rules. A prior "gray-matter 4.x" ignore covered the package's
     # entire published range, since 4.0.3 is its latest release, and it landed
     # with no recorded reason. While it stood, nothing reached us about that
