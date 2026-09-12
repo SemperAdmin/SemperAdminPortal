@@ -1,0 +1,927 @@
+{
+  "track": "igmc",
+  "programNumber": "5110.1",
+  "slug": "postal-affairs-and-official-mail-program-military-postal-activity",
+  "title": "Postal Affairs and Official Mail Program - Military Postal Activity",
+  "summary": "Commands operating a Military Postal Activity (MPO, UMR, or OMC). 112 items across the program.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "sponsor": "M&RA (MF)",
+  "effectiveDate": "2025-06-03",
+  "lastVerified": "2026-09-11",
+  "source": {
+    "title": "IGMC Functional Area Checklist - Postal Affairs and Official Mail Program - Military Postal Activity",
+    "publisher": "Inspector General of the Marine Corps"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "Administration, Finance, Operations, Quality Management",
+      "description": "",
+      "items": [
+        {
+          "code": "0101",
+          "question": "Is an Installation/Base order for Postal Affairs published?",
+          "references": [
+            "MCO 5110.4B, Chap 2, par 8"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0102",
+          "question": "Has the Installation Commander appointed in writing a MCPO or MPO supervisor that possess a high moral standard to maintain operational control of Postal Affairs?",
+          "references": [
+            "MPM 12.2a, and MCO 5110.4B, par 4b(6)(a), (b)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0103",
+          "question": "Are the designation documents correctly completed for personnel?",
+          "references": [
+            "MCO 5110.4B, Chap 1, par 2(c)(6), (7) and Chap 2, par 4"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0104",
+          "question": "Does the MPO maintain an updated profile in AMPS?",
+          "references": [
+            "MPM 2.12.t and MCO 5110.4B, Chap 2, par 9b-d"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0105",
+          "question": "Are personnel removed for cause and reported by the MPA?",
+          "references": [
+            "MPM 35.2d and MCO 5110.4B, Chap 2, par 5"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0106",
+          "question": "Are terminating designation documents for personnel correctly processed and maintained?",
+          "references": [
+            "MCO 5110.4B Chap 2, par 5"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0107",
+          "question": "Are MPOs conducting local Primary Military Occupational Specialty (PMOS) Training and Readiness (T&R) events and continuum training?",
+          "references": [
+            "MPM 2.14.h, Sect 13 and MCO 5110.4B, Chap 2, par 7a"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0108",
+          "question": "Does the military postal facility meet space and structural criteria requirements?",
+          "references": [
+            "MPM 8.2, Sect 15 and MCO 5110.4B, Chap 2, par 2"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0109",
+          "question": "Does the MPO meet physical security requirements?",
+          "references": [
+            "DODI O-2000.16, Vol. 1 & Vol 2, DOD UFC 4-020-01, MPM Sect 8, and MCO 5110.4B, Chap 2, par 15"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0110",
+          "question": "Does the MPA maintain a Continuity of Operations Plan (COOP) and update annually?",
+          "references": [
+            "DODI 4525.09 3.4.b.(1) and MPM 2.9g-i and Appendix 15D"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0111",
+          "question": "Does the MPA maintain a facility and equipment upgrade plan?",
+          "references": [
+            "DODI 4525.09 3.4.b.(2) and MPM Appendix 15C"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0112",
+          "question": "Does the MPO supervisor maintain a current list of individuals that are issued keys to the post office?",
+          "references": [
+            "MPM 8.2(f) and MCO 5110.4B, Chap 2, par 15k"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0113",
+          "question": "Are assigned duplicate keys/safe combinations and passwords safeguarded and sealed in an envelope/PS Form 3977?",
+          "references": [
+            "USPS Handbook F-101, 3-8, MPM 8.2f, 38.2b and MCO 5110.4B, Chap 2, par 19c"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0114",
+          "question": "Are proper procedures followed when preparing, maintaining, and opening a PS Form 3977?",
+          "references": [
+            "USPS Handbook F-101, 3-8"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0115",
+          "question": "Is mail properly scanned?",
+          "references": [
+            "MPM Sect 26 and MCO 5110.4B, Chap 2, par 27"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0201",
+          "question": "Has the Postal Finance Officer (PFO) completed quarterly/annual MPO inspections?",
+          "references": [
+            "MCO 5110.4B, Chap 1, par 2e(2)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0202",
+          "question": "Are unannounced audits on postal accounts conducted?",
+          "references": [
+            "MPM 2.14.g, Sect 25 and MCO 5110.4B, Chap 2, par 35a"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0203",
+          "question": "Has the Custodian of Postal Effects (COPE) completed unannounced audits of Postal Clerks’ accounts?",
+          "references": [
+            "USPS Handbook F-101, Chap 13, MPM Sect 25, and MCO 5110.4B, Chap 2, par 35b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0204",
+          "question": "Is the PS Form 1590 annotated correctly for receipt, transfer, or return of capital/sensitive equipment?",
+          "references": [
+            "MPM 2.3.b and MCO 5110.4B, Chap 2, par 19d-f"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0205",
+          "question": "Are payment card industry terminal inspections completed as required?",
+          "references": [
+            "MPM 24.2.h and i and MCO 5110.4B, Chap 2, par 35.a.(2)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0206",
+          "question": "Are PS Form 17 – Stamp Requisitions correctly prepared, submitted, and received?",
+          "references": [
+            "USPS Handbook F-101, Chap 13, MPM 24.2j and k"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0207",
+          "question": "Are Money Orders correctly maintained and distributed?",
+          "references": [
+            "USPS Handbook F-101, Chap 10, 13 and MPM 24.2, k(6)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0208",
+          "question": "Are Change of Custody and financial accounts exchanged for clerks absent for more than five consecutive workdays, but less than thirty-one total days?",
+          "references": [
+            "MPM 2.12b and MCO 5110.4B, Chap 2, par 20"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0209",
+          "question": "Are assigned stock and funds protected in safes, lockable drawers, or cash boxes?",
+          "references": [
+            "USPS Handbook F-101, Chap 3 and MCO 5110.4B, Chap 2, par 19c"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0210",
+          "question": "Does the MPO maintain records for financial accounts?",
+          "references": [
+            "USPS Handbook F101 Appendix D, MPM 25.2m, 38.1c, Appendix 38A and MCO 5110.4B, Chap 2, par 35b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0211",
+          "question": "Are window clerks authorized in writing to retain fixed credit stocks in excess of $1,000?",
+          "references": [
+            "MPM 24.2.k(1)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0212",
+          "question": "Are overages/shortages in excess of tolerance limits reconciled properly?",
+          "references": [
+            "USPS Handbook F-101, Chap 13, MPM 25.1e and MCO 5110.4B, Chap 2, par 35b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0213",
+          "question": "Does the MPA provide support to only authorized patrons?",
+          "references": [
+            "DODI 4525.09 3.6 and MPM 1.l"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0214",
+          "question": "Does the MPA report suspicious money order transactions on PS Form 8105?",
+          "references": [
+            "USPS Handbook F-101, Chap 10 and MPM 24.2.c(1)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0215",
+          "question": "Is mail properly accepted?",
+          "references": [
+            "MPM 24.1.f and MCO 5110.4B, Chap2, par 24"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0216",
+          "question": "Does the MPA make deposits as required?",
+          "references": [
+            "USPS Handbook F-101, Chap 9-1 and MPM 24.2.f and g"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0301",
+          "question": "Are Mail Handling Procedures (MHP) and floor changes being prepared and distributed for deploying units?",
+          "references": [
+            "MCO 5110.4B, Chap 1, par 2, h(2), Chap 2, par 30c, and Chap 3, par 28 (a), (b)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0302",
+          "question": "Does the activity participate in Marine Expeditionary Force (MEF) operational planning teams?",
+          "references": [
+            "MCO 5110.4B, Chap 1, par 2c(2)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0303",
+          "question": "Does the activity maintain current contingency operation postal support plans?",
+          "references": [
+            "MCO 5110.4B, Chap 1, par 2c(3), (4)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0304",
+          "question": "Are contingency postal kits upgraded and tested semi-annually?",
+          "references": [
+            "MPM Appendix 5A.1b(3), 16.1 and MCO 5110.4B, Chap 2, par 16f"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0305",
+          "question": "Has the MACOM conducted an annual MPO field exercise for practical T&R skill application?",
+          "references": [
+            "MCO 5110.4B, Chap 2, par 7c"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0306",
+          "question": "Are Postal Offense(s) properly reported and updated?",
+          "references": [
+            "MPM Sect 35, MCO 5110.4B, Chap 1, par 2b(6) and Chap 7"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0307",
+          "question": "Is a postal supply clerk designated in writing?",
+          "references": [
+            "MPM 2.12.c. and MCO 5110.4B, Chap 2, par 16a"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0308",
+          "question": "Is PS Form 1586 – Supply Record, with location numbering system, utilized to meet current operational requirements?",
+          "references": [
+            "MPM 16.2 and MCO 5110.4B, Chap 2, par 16b-d"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0309",
+          "question": "Are United States Postal Service (USPS) supplies and equipment controlled and maintained?",
+          "references": [
+            "MPM Sect 16, MCO 5110.4B, Chap 2, par 16c-e and par 19d"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0310",
+          "question": "Are scales accurate with validated calibration records?",
+          "references": [
+            "USPS Postal Operations Manual Issue 9, Chap 1, Sect 125.323 and MCO 5110.4B, Chap 2, par 16g"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0311",
+          "question": "Does the MPA properly transport mail and postal items?",
+          "references": [
+            "MPM 28.2.k, 29.1.f and MCO 5110.4B, Chap 2, par 29"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0312",
+          "question": "Do Postal Clerks understand the receipt and delivery instructions for absentee ballots/election material?",
+          "references": [
+            "MPM 19.2.a(1), Sect 39 and MCO 5110.4B Chap 2, par 26"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0313",
+          "question": "Are Absentee Balloting Materials, Express, Priority, First Class, Accountable, and IDS Correspondence processed and available within one duty day of receipt.?",
+          "references": [
+            "MPM 19.2.a(1)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0314",
+          "question": "Is Standard and Bulk Rate Mail; as well as IDS Parcels processed and available within two duty days of receipt?",
+          "references": [
+            "MPM 19.2.a(2)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0315",
+          "question": "Does the MPA use customs clearance documents for postal items transiting international boundaries?",
+          "references": [
+            "MPM 28.2m and MCO 5110.4B Chap, 2 par 31c"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0316",
+          "question": "Does the MPA nest barcoded postal items by transportation category? Reference MPM 27.2 and MCO 5110.4B, Chap 2, par 31",
+          "references": [],
+          "evidenceHint": null
+        },
+        {
+          "code": "0317",
+          "question": "Does the MPA have receptacle nesting and dispatching certificate for all users? Reference MCO 5110.4B, Chap 2, par 31e",
+          "references": [],
+          "evidenceHint": null
+        },
+        {
+          "code": "0318",
+          "question": "Are Military postal activities utilizing the most current AMPS Receptacle Nesting/Dispatching procedures manual?",
+          "references": [
+            "MCO 5110.4B, Chap 2, par 31f"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0319",
+          "question": "Are GTC clearance for postal items achieved?",
+          "references": [
+            "MPM 27.1b and MCO 5110.4B, Chap 2, par 31a"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0320",
+          "question": "Are postal items received and dispatched at least 5 days a week?",
+          "references": [
+            "DODI 4525.09 3.4d(4) and MPM 1.m"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0321",
+          "question": "Does the MPA properly dispatch IDS items?",
+          "references": [
+            "DODI 4525.09 1.2a and 3.6b(3) and MPM Sect 30"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0322",
+          "question": "Are designation documents on file for Unit Mailroom personnel?",
+          "references": [
+            "MCO 5110.4B, Chap 3, par 3g-h"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0323",
+          "question": "Is mail delivered to the authorized addressee or agent?",
+          "references": [
+            "MPM 41.2.n and MCO 5110.4B, Chap 2, par 24c"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0324",
+          "question": "Has the MCPO assigned in writing a primary Registry Clerk?",
+          "references": [
+            "MPM 2.12.c, and MCO 5110.4B, Chap 2, par 33a"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0325",
+          "question": "Do MPA personnel handling \"Registered\" official mail have at least an interim or adjudicated Secret clearance?",
+          "references": [
+            "MPM 12.2.e, 23.1b, and MCO 5110.4B, Chap 2, par 33e"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0326",
+          "question": "Is access to the registered cage restricted?",
+          "references": [
+            "MPM 23.1.e(1) and MCO 5110.4B, Chap 2, par 33j"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0327",
+          "question": "Do registered mail personnel know how to report irregularities when receiving registered mail?",
+          "references": [
+            "USPS Handbook DM 901, Chap 6, par 6-3, MPM Sect 32 and MCO 5110.4B, Chap 2, par 32"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0328",
+          "question": "Is the registry section constructed and equipped with GSA-approved locks/containers?",
+          "references": [
+            "MPM 8.2b-c and MCO 5110.4B, Chap 2, par 33b-d"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0329",
+          "question": "Is a SF Form 702 for safes, lockable containers, or registry cages completed and maintained?",
+          "references": [
+            "MPM 8.2d and MCO 5110.4B, Chap 2, par 33g(4)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0330",
+          "question": "Is there a chain of receipts, using approved USPS and DD Forms, for registered mail?",
+          "references": [
+            "DM 901, 3-4, 4 - 5 and MPM 23.2"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0331",
+          "question": "Is correct and supporting documentation for the registered mail process maintained?",
+          "references": [
+            "MCO 5110.4B, Chap 2, par 33d and h-i"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0332",
+          "question": "Is registered mail processed with the highest security measures?",
+          "references": [
+            "MCO 5110.4B, Chap 2, par 33d-j"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0333",
+          "question": "Is personal registered mail handled correctly?",
+          "references": [
+            "MCO 5110.4B, Chap 2, par 4e and g"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0334",
+          "question": "Is registered mail accepted and delivered by/to an authorized patron/agent?",
+          "references": [
+            "MCO 5110.4B, Chap 2, par 24a, 33e"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0335",
+          "question": "Are proper procedures followed at the close of each business day, shift change, as applicable?",
+          "references": [
+            "MPM 23.2o and MCO 5110.4B, Chap 2, par 33h"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0336",
+          "question": "Are proper procedures followed opening/accessing the registry cage?",
+          "references": [
+            "MCO 5110.4B, Chap 2, par 33i"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0337",
+          "question": "Is directory service provided for mail with unknown delivery address, i.e., EDA, general delivery, UAA, etc.?",
+          "references": [
+            "MPM Sect 21 and MCO 5110.4B, Chap 2, par 34"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0338",
+          "question": "Are mail delivery receptacles assigned with required forms and information? MCO 5110.4B, Chap 4, par 2 and 3",
+          "references": [],
+          "evidenceHint": null
+        },
+        {
+          "code": "0339",
+          "question": "Are correct receptacle maintenance and records procedures followed?",
+          "references": [
+            "MCO 5110.4B, Chap 4, par 5"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0340",
+          "question": "Are mail delivery receptacles issued to authorized patrons?",
+          "references": [
+            "MCO 5110.4B, Chap 4, par 2a, 2b, 3a, and 6d"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0341",
+          "question": "Is correctly addressed mail placed in assigned receptacles?",
+          "references": [
+            "MCO 5110.4B, Chap 4, par 8"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0342",
+          "question": "Are the mail delivery receptacles checked bi-weekly for excessive mail accumulation, old mail, or non-use?",
+          "references": [
+            "MCO 5110.4B, Chap 4, par 6a"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0343",
+          "question": "Are customers notified of large mail items or excess mail accumulation using a PS Form 3907?",
+          "references": [
+            "MPM 18.2(l) and MCO 5110.4B, Chap 4, par 8c"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0344",
+          "question": "Is DD Form 2258 - Temporary Mail Disposition Instructions used to indicate the status of addressee and proper mail disposition?",
+          "references": [
+            "MCO 5110.4B, Chap 4, par 6b, 8d and 8e"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0345",
+          "question": "Are mail delivery receptacles correctly closed?",
+          "references": [
+            "MCO 5110.4B, Chap 4, par 9"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0346",
+          "question": "Are mail delivery receptacle key lock cylinder/combination procedures followed?",
+          "references": [
+            "MCO 5110.4B, Chap 4, par 7"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0347",
+          "question": "Is general delivery service provided to mail addressed for members due to arrive?",
+          "references": [
+            "MCO 5110.4B, Chap 2, par 26h and Chap 4, par 4"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0348",
+          "question": "Are USPS mail collection boxes being maintained and properly secured?",
+          "references": [
+            "MCO 51104B, Chap 2, par 25"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0349",
+          "question": "Do the Postal Clerks understand the detection/notification instructions for potential mail bombs and suspicious mail?",
+          "references": [
+            "MPM 7.2.b, 8.2.j and MCO 5110.4B, Chap 6"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0350",
+          "question": "Does the MPA submit seizure reports within one workday of postal items confiscated?",
+          "references": [
+            "DODI 4525.09 3.9j and MPM 7.2.p and q"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0351",
+          "question": "Are Postal Net Alert (PNA) properly reported and updated?",
+          "references": [
+            "MPM Sect 31 and MCO 5110.4B, Chap 1, par 2b(6)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0401",
+          "question": "Has the postal activity established a Quality Assurance/Quality Control (QA/QC) section?",
+          "references": [
+            "MCO 5110.4B, par 4b(6)(e) and Chap 2, par 35a"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0402",
+          "question": "Are Marine Corps Postal Inspectors appointed and assigned to the QA/QC section?",
+          "references": [
+            "MCO 5110.4B, Chap 1, par 2c(8)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0403",
+          "question": "Does the MPA provide training for postal personnel, Unit Official Mail Managers (OMM)s, Unit Mail Officers, and Unit Mail Clerks?",
+          "references": [
+            "MCO 5110.4B, Chap 1, par 2d(10) and Chap 3, par 5"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0404",
+          "question": "Are Installation/Operational Force (OPFOR) Military Postal Activity (MPA)/Military Postal Service (MPS) inspections effectively conducted each fiscal year?",
+          "references": [
+            "MPM 36.1.c, 36.2.a., MCO 5110.4B, par 4b(3)(c), Chap 1, par 2b(3) and Chap 2, par 35"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0405",
+          "question": "Are Unit Mailroom (UMR) inspections conducted each quarter?",
+          "references": [
+            "MCO 5110.4B, Chap 1, par 2g(4) and Chap 3, par 14e"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0406",
+          "question": "Are corrective action reports received from MPAs (MPO, UMR, OMC) for findings and failed/ineffective inspections?",
+          "references": [
+            "MCO 5040.6J, Chap 4, par 2c"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0407",
+          "question": "Are Installation/OPFOR MPA/MPS inspections forwarded to appropriate Major Command (MACOM)?",
+          "references": [
+            "MCO 5110.4B, par 4b(3)(d), par 4b(4)(c) and Chap 2, par 35e"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0408",
+          "question": "Are MACOM OPFOR inspection reports retained?",
+          "references": [
+            "MPM 36.2b, MCO 5110.4B, Chap 1, par 2b(4) and Chap 2, par 35a(2)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0409",
+          "question": "Does the QA/QC officer/chief provide Fiscal Year (FY) summary inspection report to MCICOM?",
+          "references": [
+            "MCO 5110.4B, Chap 1, par 2g(7)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0410",
+          "question": "Is the MPO free of personal effects and funds in work areas where mail is processed, or retail services are provided?",
+          "references": [
+            "MPM 15.2.e. and MCO 5110.4B, Chap 2, par 15h-i"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    },
+    {
+      "id": "05.0",
+      "title": "OFFICIAL MAIL PROGRAM",
+      "description": "",
+      "items": [
+        {
+          "code": "0501",
+          "question": "Has the Command appointed personnel in writing the grade of E-6/GS-9 or above as the OMM?",
+          "references": [
+            "DODI 4525.09, 3.2g, MPM 41.2a-c, MCO 5110.4B, 4b(6)(a) and Ch 5, par 2"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0502",
+          "question": "Has the installation established an Official Mail Center?",
+          "references": [
+            "DODI 4525.09, 3.1a and MCO 5110.4B, Chap 5, par 9"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0503",
+          "question": "Is a postage stamp inventory maintained for the authorized unit?",
+          "references": [
+            "MCO 5110.4B, Chap 5, par 30a"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0504",
+          "question": "Are postage meters/stamps correctly secured?",
+          "references": [
+            "MCO 5110.4B, Chap 5, par 28 and 30b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0505",
+          "question": "Are assigned duplicate meter keys/safe combinations and passwords safeguarded and sealed in an envelope/PS Form 3977?",
+          "references": [
+            "USPS Handbook F-101, 3-8, and MCO 5110.4B, Chap 5, par 28d"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0506",
+          "question": "Are postage stamp stock audits conducted?",
+          "references": [
+            "DODI 4525.09, 3.11c and MCO 5110.4B, Chap 5, par 30c"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0507",
+          "question": "Is a daily record of meter register correctly recorded?",
+          "references": [
+            "MPM Appendix 25A, Table 5, Steps 1-2 and MCO 5110.4B, Chap 5, par 26"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0508",
+          "question": "Is PS Forms 3533 Application for Voucher for Refund of Postage and Fees, processed and submitted?",
+          "references": [
+            "USPS DMM 604, 9.3 and MCO 5110.4B, Chap 5, par 27"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0509",
+          "question": "Has the OMM analyzed the record of postage expended weekly?",
+          "references": [
+            "MCO 5110.4B, Chap 5, par 31"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0510",
+          "question": "Are appropriated funds for postage properly used?",
+          "references": [
+            "MPM 18.1.d, 41.1.a, 41.1.b, 41.2.ff, MCO 5110.4B, Chap 5, par 11 and 12"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0511",
+          "question": "Does the OMM maintain a copy of the most current edition of the listed publications/directives?",
+          "references": [
+            "MCO 5110.4B, Chap 5, par 8"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0512",
+          "question": "Are cost saving measures applied to official mailings?",
+          "references": [
+            "MCO 5110.4B, Chap 5, par 20 and 22b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0513",
+          "question": "Is the classification of official items correctly endorsed?",
+          "references": [
+            "MCO 5110.4B, Chap 5, par 15"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0514",
+          "question": "Are the Priority Mail Express provisions correctly followed?",
+          "references": [
+            "MPM 41.1c, e, g and MCO 5110.4B, Chap 5, par 17a"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0515",
+          "question": "Are permit mailings correctly used?",
+          "references": [
+            "USPS Handbook F-101, Chap 16 and MCO 5110.4B, Chap 5, par14c-e"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0516",
+          "question": "Is a structured, documented, and viable OMP training program provided?",
+          "references": [
+            "DODI 4525.09, 2.2k, MPM 41.2.j, MCO 5110.4B, Chap 2, par 7 and Chap 5, par 4"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0517",
+          "question": "Are Official Mail Program (OMP) inspections effectively conducted each fiscal year?",
+          "references": [
+            "MCO 5110.4B, par 4b(3)(c), Chap 1, par 2g(5), and chap 5, par 6"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0518",
+          "question": "Are OMP inspections forwarded to the appropriate MACOM?",
+          "references": [
+            "MCO 5110.4B, par 4b(3)(d), (4)(c) and Ch 2, par 35e"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0519",
+          "question": "Are postage expenditure reports submitted?",
+          "references": [
+            "DODI 4525.09, 2.2c and MCO 5110.4B, Chap 5, par 32"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0520",
+          "question": "Has the OMM met the supervision requirements?",
+          "references": [
+            "MCO 5110.4B, Chap 1, par 2k and Chap 5 par 5"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    }
+  ],
+  "category": "CoRE+",
+  "faName": "Postal Affairs and Official Mail Program - Military Postal Activity",
+  "applicabilityLevel": "Commands operating a Military Postal Activity (MPO, UMR, or OMC)"
+}

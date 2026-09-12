@@ -1,0 +1,1513 @@
+{
+  "faNumber": "1040",
+  "sourceDoc": "MCO 1040.31 Enlisted Retention and Career Development Program, 8 Sep 2010. MCO 1040R.31 Marine Corps Reserve Enlisted Retention and Career Development Program, 26 Jun 2020. MCO 7220.12R, 6 Aug 2013. MCO 1326.6 CH-1, 11 May 2021. NAVMC 1200.1J para 3156. MCO 1900.16 CH 2 Appendix I. MARADMIN 632/19. Drafted from source text against the FAC revised 7 Mar 2024. Quote walk 2026-09-11: 87 of 87 quotes matched verbatim against the extracted source text after OCR normalization of the scanned 2010 order. Two quotes are labeled as table rows or section headings where the source is not linear prose. Inspection steps, questions, and verification await SME review.",
+  "lastVerified": "2026-09-11",
+  "verifiedAtSource": false,
+  "items": {
+    "0101": {
+      "title": "CAREER PLANNER WORKING AREA AND RESOURCES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 2, Par 4a",
+            "text": "The nature of career planning requires that the Career Planner's office receive special consideration. The Career Planner's office should be located so it is readily accessible to all Marines during normal working hours. The location should offer privacy during an interview. An office where conversation can be readily overheard is not conducive to establishing good rapport with a Marine being interviewed."
+          },
+          {
+            "citation": "MCO 1040.31, Chap 2, Par 4b",
+            "text": "At a minimum the Career Planner should be provided with the computer hardware needed to enhance the effectiveness of daily operations and to access the retention system or other available on-line databases. The following assets should be provided by the local command in order to perform daily retention functions; computer with Internet access, digital camera, color printer, digital scanner and fax machine."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 2, Par 7a",
+            "text": "The Career Planner must have a dedicated office space located in an area that is readily accessible to all Marines during normal working hours and provides privacy during an interview."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 2, Par 7b(1) and 7b(2)",
+            "text": "At a minimum, the following assets are required in order to perform daily career planning functions: (1) Hardware/Software. Laptop with internet access, air card, external hard-drive, web camera, color printer, digital scanner, two Common Access Card (CAC) readers and Adobe Acrobat Pro. (2) On-line Databases. Total Force Retention System (TFRS), Marine Corps Total Force System (MCTFS), Optical Digital Imaging (ODI), Marine Corps Training Information Management System (MCTIMS), Basic Orders System (BOS), Automated Message Handling System (AHMS), ReportNet, etc."
+          }
+        ],
+        "summary": "The Career Planner holds a private, accessible office and the hardware to run TFRS and the other retention databases. Active commands owe a computer with internet, digital camera, color printer, scanner, and fax. Reserve commands owe a laptop with internet and air card, external drive, web camera, color printer, scanner, two CAC readers, and Adobe Acrobat Pro, plus access to TFRS, MCTFS, ODI, MCTIMS, BOS, AMHS, and ReportNet."
+      },
+      "howToInspect": [
+        {
+          "step": "Walk The Office",
+          "actions": [
+            "Visit the Career Planner's space during working hours.",
+            "Confirm a Marine finds it without escort and a closed-door interview cannot be overheard.",
+            "Reject a shared bay, a corner of the S-1, or a desk in the SgtMaj's office as the primary space."
+          ],
+          "callout": "No dedicated or private interview space",
+          "severity": "finding"
+        },
+        {
+          "step": "Inventory The Assets",
+          "actions": [
+            "Active: computer with internet, digital camera, color printer, scanner, fax.",
+            "Reserve: laptop with internet and air card, external drive, web camera, color printer, scanner, two CAC readers, Acrobat Pro.",
+            "Confirm each item works and belongs to the billet, not the individual."
+          ],
+          "callout": "Required hardware missing or inoperable",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check System Access",
+          "actions": [
+            "Have the Career Planner log into TFRS and MCTFS from the office.",
+            "Reserve: confirm ODI, MCTIMS, BOS, AMHS, and ReportNet access as well."
+          ],
+          "callout": "Career Planner cannot reach TFRS or MCTFS from the working area",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Where do you interview a Marine who wants privacy?",
+        "Which of the listed assets are missing, and what have you requested?",
+        "Log into TFRS for me from this desk."
+      ],
+      "verification": [
+        "Private, accessible office observed.",
+        "Hardware list satisfied for the component.",
+        "Live login to TFRS and MCTFS."
+      ],
+      "verified": false
+    },
+    "0102": {
+      "title": "ANNUAL CERTIFICATION OF SDAP ELIGIBILITY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 7220.12R, Par 4a(2)(a)5",
+            "text": "Commanding officers with Marines in SDAs are responsible for annually certifying that each Marine remains eligible for SDAP."
+          },
+          {
+            "citation": "MCO 7220.12R, Par 5b",
+            "text": "Annual Certification. Commanders, (O5 and above) will certify annually (via page 11 or naval correspondence) that all Marines eligible for SDAP remain qualified to serve in the special duty assignment designated for SDAP."
+          },
+          {
+            "citation": "MCO 1040.31, Chap 2, Par 3b",
+            "text": "Marines possessing PMOS 4821 and serving in T/O Career Planner billets receive special duty assignment pay per reference (b)."
+          }
+        ],
+        "summary": "A PMOS 4821 Career Planner in a T/O billet draws SDAP. The O-5 or above commander certifies once a year, by page 11 or naval correspondence, the Career Planner remains qualified for the assignment. Review and authentication are delegable. Responsibility is not."
+      },
+      "howToInspect": [
+        {
+          "step": "Confirm SDAP Status",
+          "actions": [
+            "Identify every PMOS 4821 Marine in a T/O Career Planner billet drawing SDAP.",
+            "Additional-duty Career Planners without PMOS 4821 draw no SDAP and need no certification."
+          ]
+        },
+        {
+          "step": "Pull The Certification",
+          "actions": [
+            "For each SDAP Marine, locate the page 11 entry or naval letter certifying continued eligibility.",
+            "Confirm the date falls within the last 12 months and the signer is O-5 or above, or a delegate with the delegation on file."
+          ],
+          "callout": "SDAP Marine with no certification inside 12 months",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Certification signed by the XO with no written delegation.",
+            "Page 11 entry present for the previous Career Planner only.",
+            "Certification lapsed during a change of command."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Which Career Planners draw SDAP, and when was each last certified?",
+        "Show me the page 11 entry or letter.",
+        "Who signs when the commander is absent, and is the delegation written?"
+      ],
+      "verification": [
+        "Page 11 or naval correspondence dated within 12 months for each SDAP Career Planner.",
+        "Signer O-5 or above, or delegation on file."
+      ],
+      "verified": false
+    },
+    "0103": {
+      "title": "CAREER PLANNER PERFORMANCE EVALUATIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 1, Par 3b(1)(e)",
+            "text": "Performance Evaluation. In order for Career Planners to be evaluated in an equitable manner, the Commanding Officer will treat the Career Planner as a Special Staff Officer. The CO will act as the Reporting Senior (RS) for the Career Planner but may delegate this authority using the below guidelines: 1. Commanding General Level Career Planners. The G-1/Chief of Staff is the lowest level of delegation permitted. 2. Unit Level Career Planners. The Executive Officer is the lowest level of delegation permitted. 3. Other Career Planners. Career Planners working in other billets where the command structure does not fit option one or two above should provide performance evaluations at the highest level possible."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 1, Par 3c(1)",
+            "text": "Performance Evaluation. As a Special Staff Officer, the Career Planner will be evaluated by the Commanding Officer/Inspector-Instructor. The CO/I-I shall act as the Reporting Senior (RS) for Career Planners but may delegate this authority using the below guidelines: (a) Commanding General Level Career Planners. The Chief of Staff is the lowest level of delegation permitted. (b) Unit Level Career Planners. The Executive Officer/Assistant Inspector-Instructor is the lowest level of delegation permitted."
+          }
+        ],
+        "summary": "The Career Planner is a special staff officer. The commander is the Reporting Senior. Delegation stops at the G-1 or Chief of Staff for CG-level Career Planners and at the XO or Assistant I-I for unit Career Planners. A fitness report with the SgtMaj, S-1 officer, or company commander as RS fails the standard."
+      },
+      "howToInspect": [
+        {
+          "step": "Check The Last Fitness Report",
+          "actions": [
+            "Pull the Career Planner's most recent fitness report from MMSB or the Marine's copy.",
+            "Read the Reporting Senior block against the delegation floor for the command level."
+          ],
+          "callout": "Reporting Senior below the XO, Assistant I-I, G-1, or Chief of Staff",
+          "severity": "finding"
+        },
+        {
+          "step": "Check The Reporting Chain On File",
+          "actions": [
+            "Confirm the command's fitness report reporting chain lists the Career Planner under the CO or the permitted delegate.",
+            "Confirm the same holds for any SNCOIC and for collateral duty Career Planners in the Reserve."
+          ],
+          "callout": "Reporting chain places the Career Planner under a line company or the S-1",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Who is the Career Planner's Reporting Senior, and who is the Reviewing Officer?",
+        "Show me the reporting chain letter for special staff."
+      ],
+      "verification": [
+        "Most recent fitness report RS at or above the delegation floor.",
+        "Reporting chain document matches."
+      ],
+      "verified": false
+    },
+    "0104": {
+      "title": "WRITTEN DELEGATION TO CONDUCT INTERVIEWS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 3, Par 1g",
+            "text": "Delegation to Conduct Interviews. While the unit CO is directly responsible for conducting interviews for all Marines within the command it is not always feasible for the CO to do 100% of the interviews. In this instance, the CO must delegate, in writing, the appropriate level (i.e. HqCo Cmdrs, MSG Co Cmdrs, OIC's, etc.) to conduct the interviews on their behalf."
+          },
+          {
+            "citation": "MCO 1040.31, Chap 3, Par 2b",
+            "text": "The CO may designate the executive officer or Company Commander to conduct Commanding Officer interviews. The Commanding Officer must conduct an interview when the Marine is not recommended for reenlistment."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 3, Par 6",
+            "text": "While the Commanding Officer/Inspector-Instructor is directly responsible for conducting interviews for all Marines within the command, it is not always feasible for the CO/I-I to conduct 100% of the interviews. In this instance, the CO/I-I must delegate, in writing, to the appropriate level (Commissioned Officers and Chief Warrant Officers) to conduct the interviews on their behalf. a. Officers delegated authority to conduct interviews may only interview Marines over whom they have cognizance. b. The CO/I-I must conduct the interview when a Marine is not recommended for retention. c. Authority to conduct interviews will be retained at the highest level feasible."
+          }
+        ],
+        "summary": "Any officer conducting CO interviews on the commander's behalf holds a written delegation. Delegates are commissioned officers or chief warrant officers with cognizance over the Marine. The commander personally interviews any Marine not recommended for reenlistment or retention."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The Delegation Letter",
+          "actions": [
+            "Request the current commander's written delegation naming who conducts CO interviews.",
+            "Confirm it is signed by the sitting commander, not inherited from a predecessor."
+          ],
+          "callout": "Interviews conducted by delegates with no letter from the current commander",
+          "severity": "finding"
+        },
+        {
+          "step": "Match Delegates To Interviews",
+          "actions": [
+            "From IMM or contact records, list who signed CO interviews in the period.",
+            "Confirm each signer appears on the letter and interviewed only Marines under their cognizance.",
+            "Confirm every not-recommended interview carries the commander's own signature."
+          ],
+          "callout": "SNCO or unlisted officer signing CO interviews, or a not-recommended interview delegated",
+          "severity": "finding"
+        }
+      ],
+      "questionsToAsk": [
+        "Who conducts CO interviews for you, and where is the letter?",
+        "Show me the last Marine you did not recommend and who interviewed them."
+      ],
+      "verification": [
+        "Delegation letter signed by the current commander.",
+        "Interview signers reconcile to the letter.",
+        "Not-recommended interviews signed by the commander."
+      ],
+      "verified": false
+    },
+    "0105": {
+      "title": "EAS AND RECC INTERVIEW RECOMMENDATIONS AND RE CODES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 3, Par 2b(3)(d)",
+            "text": "The Commanding Officer, or those delegated to conduct interviews, will assign the appropriate Reenlistment Eligibility (RE) Code, per appendix D, during the EAS interview for those Marines who will separate at EAS and for those Marines that are not reenlistment eligible. Additionally, the CO, not their delegate, must assign the appropriate code for those Marines who receive anything other than RE-1A. Appendix D provides details on the qualifications of each code."
+          },
+          {
+            "citation": "MCO 1040.31, Chap 4, Par 4c",
+            "text": "Amplifying information must be provided for a recommendation of \"Recommended With Reservation\" or \"Not Recommended\". Though a recommendation of \"Not Recommended\" does not disqualify a Marine from reenlistment eligibility, but it is key input. The authority to provide a recommendation of \"Recommended With Reservation\" or \"Not Recommended\" may not be delegated."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 3, Par 6b",
+            "text": "The CO/I-I must conduct the interview when a Marine is not recommended for retention."
+          },
+          {
+            "citation": "MCO 1900.16 CH 2, Appendix I (table rows, columns joined)",
+            "text": "RE-1A Recommended and eligible No restrictions to reenlistment. Meets all prerequisites, includes those Marines discharged at EAS while pregnant who would otherwise be eligible. RE-4 Not recommended for reenlistment. Page 11 entry required stating reason for assignment. Individual Marine must sign Page 11 entry. This code may be assigned in lieu of any RE-3 code (except RE-3B and RE-3F) if the Marine's performance warrants and the reason can be documented."
+          }
+        ],
+        "summary": "At the EAS interview the commander or written delegate records a reenlistment recommendation and assigns the RE code from MCO 1900.16 Appendix I. Any code other than RE-1A and any recommendation of Recommended With Reservation or Not Recommended comes from the commander personally. RE-3 and RE-4 codes require a page 11 entry stating the reason, signed by the Marine."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample EAS Interviews",
+          "actions": [
+            "From IMM, pull EAS or RECC interviews closed in the period.",
+            "Confirm each carries a recommendation and an RE code."
+          ],
+          "callout": "EAS interview closed with no recommendation or RE code",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Non-RE-1A Cases",
+          "actions": [
+            "For every RE code other than RE-1A, confirm the commander, not a delegate, signed.",
+            "Confirm a page 11 entry states the reason and carries the Marine's signature.",
+            "Confirm the code matches an Appendix I definition."
+          ],
+          "callout": "RE-3 or RE-4 assigned by a delegate, or no signed page 11",
+          "severity": "finding"
+        },
+        {
+          "step": "Reconcile With Separations",
+          "actions": [
+            "For Marines separated in the period, compare the RE code on the DD 214 with the interview record.",
+            "Flag mismatches."
+          ],
+          "callout": "DD 214 RE code differs from the interview record",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Who assigns an RE-4, and where is the page 11?",
+        "Show me an EAS interview with a Recommended With Reservation entry.",
+        "How does the RE code reach IPAC for the DD 214?"
+      ],
+      "verification": [
+        "Sampled EAS interviews carry recommendation and RE code.",
+        "Non-RE-1A codes signed by the commander with page 11 on file.",
+        "DD 214 codes match interview records."
+      ],
+      "verified": false
+    },
+    "0106": {
+      "title": "NO MISSED COMMANDING OFFICER INTERVIEWS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 3, Par 2b",
+            "text": "Required. The Career Planner and Commanding Officer will ensure interviews are conducted as required."
+          },
+          {
+            "citation": "MCO 1040.31, Chap 3, Par 2b(3)(a)",
+            "text": "The Career Planner and Commanding Officer will conduct an EAS interview eight to six months before the Marine's EAS. This interview is not required if a Marine has submitted a reenlistment request or has been approved for transfer to the FMCR."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 3, Par 5d",
+            "text": "The prescribed occasions for interviews will be completed within the required time frames for each occasion. Interviews conducted after the required time frame for each occasion will be considered 'Missed'."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 3, Par 5f(2) and 5f(3)",
+            "text": "(2) Careerist Interview. The careerist interview is a two-part interview required to be conducted by both the CP and CO/I-I with all Marines with a Reserve Component Code of K1 – K4, K8, K9, KA, KB, and KF. This interview is to be conducted between 1 July and 31 October immediately prior to the Marine's Reserve End of Current Contract (RECC). (3) RECC Interview. The RECC interview is a two-part interview required to be conducted by both the CP and CO/I-I with all Marines with a Reserve Component Code of K1 – K4, K8, K9, KA, KB, and KF. This interview is to be conducted no earlier than 3 months prior to the month in which the Marine's RECC resides and no later than the Marine's RECC."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 3, Par 5k",
+            "text": "If a required interview cannot be conducted prior to becoming 'Missed', the Career Planner will make administrative notes depicting the circumstances in the IMM. These notes will be validated via signature by CP and CO/I-I in the IMM. The required interview will be conducted with the Marine at the earliest possible opportunity utilizing a voluntary interview in the IMM."
+          }
+        ],
+        "summary": "Active: the CO EAS interview falls eight to six months before EAS unless the Marine has a reenlistment request in or FMCR approval. Reserve: the CO shares the careerist interview (1 July to 31 October before the RECC fiscal year) and the RECC interview (three months before the RECC month through the RECC), plus AR occasions. IMM marks anything outside its window Missed. A missed interview carries a signed administrative note and a follow-up voluntary interview."
+      },
+      "howToInspect": [
+        {
+          "step": "Run The IMM Report",
+          "actions": [
+            "Have the Career Planner open the IMM Missed and Overdue views for CO interviews across the inspection period.",
+            "Count missed CO interviews and list the Marines."
+          ],
+          "callout": "Missed CO interviews with no administrative note",
+          "severity": "finding"
+        },
+        {
+          "step": "Test The Windows On Paper Records",
+          "actions": [
+            "Where contact records are used instead of IMM, sample Marines by EAS or RECC and compute the required window.",
+            "Confirm the CO interview date sits inside the window."
+          ],
+          "callout": "CO interview dated outside the prescribed window",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Missed-Interview Handling",
+          "actions": [
+            "For each missed interview, confirm the IMM note explains the circumstance and carries CP and CO signatures.",
+            "Confirm a voluntary interview followed at the earliest opportunity."
+          ],
+          "callout": "Missed interview never recovered",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "How many CO interviews show Missed this fiscal year, and why?",
+        "Show me the IMM Due list for next month.",
+        "What happens when a Marine is deployed during the window?"
+      ],
+      "verification": [
+        "IMM Missed view reviewed for the period.",
+        "Sampled CO interviews inside their windows.",
+        "Missed interviews annotated, signed, and recovered."
+      ],
+      "verified": false
+    },
+    "0107": {
+      "title": "COMMANDING OFFICER EAS INTERVIEW CONTENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 3, Par 2b(3)(b) and (c)",
+            "text": "(b) Review the Marine's plans for separation; re-address the benefits of staying Marine. (c) The primary purpose of the EAS interview is to ensure the Marine is apprised of the benefits of joining the Selected Marine Corps Reserve, Transition Assistance Management Programs and advise him/her on the Marine 4 Life program. Also advise the Marine of the requirement to attend a mandatory pre-separation brief. Both the Commanding Officer and the Career Planner will conduct EAS interviews."
+          },
+          {
+            "citation": "MCO 1040.31, Chap 3, Par 3a",
+            "text": "It is the responsibility of Commanding Generals, Commanding Officers, and Officers-In-Charge to ensure all Marines who choose to separate at EAS are briefed on Marine Corps Reserve benefits and obligations."
+          }
+        ],
+        "summary": "The CO EAS interview covers five points: the Marine's separation plan, the case for staying Marine, Selected Marine Corps Reserve benefits, transition assistance and Marine for Life, and the mandatory pre-separation brief. The record shows each point addressed."
+      },
+      "howToInspect": [
+        {
+          "step": "Read Sampled CO EAS Interviews",
+          "actions": [
+            "From the 0106 sample, read the CO portion of each EAS interview.",
+            "Tick the five required points against the narrative."
+          ],
+          "callout": "CO EAS interviews with one or more required topics absent",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Look For Boilerplate",
+          "actions": [
+            "Compare narratives across Marines. Identical text on every record signals a template, not an interview.",
+            "Confirm the separation plan is specific to the Marine."
+          ],
+          "callout": "Templated narratives with no Marine-specific content",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through your last EAS interview. What did the Marine plan to do?",
+        "How do you brief SMCR and Marine for Life?"
+      ],
+      "verification": [
+        "Five topics present on sampled CO EAS interviews.",
+        "Narratives specific to each Marine."
+      ],
+      "verified": false
+    },
+    "0108": {
+      "title": "COMMANDING OFFICER REVIEWS REENLISTMENT APPROVALS BEFORE EXECUTION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 4, Par 3b",
+            "text": "Reenlistment will not be effected, if in the opinion of the commander, the Marine authorized to reenlist has failed to maintain the high standards of professional and personal performance that led to the authority for reenlistment being granted. In such cases the command must immediately inform CMC (MMEA-6) who will then reconsider the Marine's request. Commanding Officers will review all reenlistment packages prior to executing reenlistment."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 4, Par 11a",
+            "text": "COs/I-Is shall certify all reenlistment packages by signing the reenlistment authority prior to executing the authority. Reenlistment shall not be executed when, in the opinion of the CO/I-I, the Marine authorized to be reenlisted has failed to maintain the high standards of professionalism, personal performance, and core values after the authority for reenlistment was granted."
+          }
+        ],
+        "summary": "Between HQMC approval and the oath, the commander reviews the package and certifies the Marine still meets the standard. The Reserve order requires the commander's signature on the reenlistment authority itself. A Marine whose conduct changed after approval is not reenlisted until MMEA or RA reconsiders."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample Executed Reenlistments",
+          "actions": [
+            "From TFRS, list reenlistments executed in the period.",
+            "For each, locate the approved RELM response and the commander's review evidence dated before the DD Form 4 execution date."
+          ],
+          "callout": "Reenlistment executed with no commander review before the oath",
+          "severity": "finding"
+        },
+        {
+          "step": "Test The Hold Process",
+          "actions": [
+            "Ask how the command stops a reenlistment when misconduct surfaces after approval.",
+            "Look for any case where CMC was notified and the approval reconsidered."
+          ],
+          "callout": "No process to hold a reenlistment after approval",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the commander's signature on an approved RELM before the DD Form 4.",
+        "Has a reenlistment been held after approval, and what happened?"
+      ],
+      "verification": [
+        "Commander review evidence predates execution on sampled reenlistments.",
+        "Reserve: commander signature on the reenlistment authority."
+      ],
+      "verified": false
+    },
+    "0109": {
+      "title": "COMMANDING OFFICER SIGNS AND DATES RELM RESPONSES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 6, Par 2",
+            "text": "Forward completed requests for reenlistment or extensions of Regular Marines to CMC (MMEA-6) via the electronic processing system. The Career Planner must ensure that Marines meet the reenlistment prerequisites contained in Chapter 4 of this manual prior to submission of the request. Career Planners will also ensure that Commanding Officers sight and sign all RELM responses from CMC (MMEA-6)."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 4, Par 11a",
+            "text": "COs/I-Is shall certify all reenlistment packages by signing the reenlistment authority prior to executing the authority."
+          }
+        ],
+        "summary": "Every RELM response from HQMC, approved or disapproved, is sighted, signed, and dated by the commander. The Career Planner owns getting it in front of the commander. TFRS carries the response page and training guidance on where the signature lands."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample RELM Responses",
+          "actions": [
+            "From the RELM tracker, pull responses received in the period, including disapprovals.",
+            "Confirm the commander's signature and date on each response page."
+          ],
+          "callout": "RELM responses with no commander signature",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Timeliness",
+          "actions": [
+            "Compare the response date with the commander's signature date.",
+            "Flag responses sitting unsigned for weeks."
+          ],
+          "callout": "Responses signed long after receipt or undated",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "How does a RELM response get to the commander, and how fast?",
+        "Show me a disapproved RELM with the commander's signature."
+      ],
+      "verification": [
+        "Commander signature and date on sampled responses, approvals and disapprovals alike."
+      ],
+      "verified": false
+    },
+    "0110": {
+      "title": "SENIOR ENLISTED LEADER SCREENS FOR SPECIAL DUTY AND B BILLETS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "NAVMC 1200.1J, Par 3156-6d(1)(j)",
+            "text": "Screen personnel within the command for assignment to special duty assignments, screen able \"B\" billets and overseas assignments."
+          },
+          {
+            "citation": "NAVMC 1200.1J, Par 3156-6d(2)(b)",
+            "text": "Assist the commander with, retention, career development, retirement, and separations of all Marines in the command."
+          },
+          {
+            "citation": "MCO 1326.6, Encl (2), Chap 1, Par 2(1)(a)",
+            "text": "The unit Commanding Officers have the most important role in the screening process. They are responsible for the initial screening and personal interview of their Marines and final re-certification before detachment."
+          }
+        ],
+        "summary": "The First Sergeant or Sergeant Major screens Marines for special duty assignments, screenable B billets, and overseas assignments as a stated MOS duty, and assists the commander with retention and career development. The screening product feeds the commander's certification under MCO 1326.6."
+      },
+      "howToInspect": [
+        {
+          "step": "Ask For The Screening Process",
+          "actions": [
+            "Have the senior enlisted leader describe how the command identifies and screens candidates for SDA and B billets.",
+            "Request the screening checklists completed in the period."
+          ],
+          "callout": "No screening activity or no record of it",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Match Screenings To Submissions",
+          "actions": [
+            "For each SDA or B billet volunteer or directed assignment in the period, confirm a completed screening with the senior enlisted leader's involvement.",
+            "Confirm the Career Planner and senior enlisted leader work the same list."
+          ],
+          "callout": "Marines submitted for SDA with no command screening on file",
+          "severity": "finding"
+        }
+      ],
+      "questionsToAsk": [
+        "How many Marines did you screen for SDA this year, and how did you pick them?",
+        "Show me a completed screening checklist."
+      ],
+      "verification": [
+        "Screening records for SDA and B billet candidates in the period.",
+        "Senior enlisted leader participation evident."
+      ],
+      "verified": false
+    },
+    "0111": {
+      "title": "RE-CERTIFICATION TIMELINES FOR SDA AND B BILLETS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1326.6, Encl (2), Chap 1, Par 2b",
+            "text": "Initially, Commanding Officers are required to certify that the Marines meet the required eligibility criteria during the volunteer submission, or within 60 days of the receipt of orders. No less than 45 days prior to departure, Commanding Officers will re-certify that the selected Marine remains qualified. Commanding Officers may request a deferment, a waiver/exception to policy, or cancellation of orders for Marines who do not meet one or more eligibility requirements."
+          },
+          {
+            "citation": "MCO 1326.6, Encl (2), Chap 2, Par 2d",
+            "text": "Commanders Re-certification. No earlier than 60 days and no later than 45 days prior to class report date, Commanding Officers will re-certify that a Marine remains qualified for recruiting duty."
+          },
+          {
+            "citation": "MCO 1326.6, Encl (2), Chap 2, Par 3d",
+            "text": "Commanders Re-certification. No earlier than 60 days and no later than 45 days prior to class report date, Commanding Officers will re-certify that a Marine remains qualified for Drill Instructor duty."
+          },
+          {
+            "citation": "MCO 7220.12R, Par 5b",
+            "text": "Annual Certification. Commanders, (O5 and above) will certify annually (via page 11 or naval correspondence) that all Marines eligible for SDAP remain qualified to serve in the special duty assignment designated for SDAP."
+          }
+        ],
+        "summary": "Initial certification comes with the volunteer package or within 60 days of orders. Re-certification lands no earlier than 60 and no later than 45 days before the class report or departure date for recruiting, drill instructor, and other Type-1 billets. Marines already in an SDA are re-certified annually for SDAP. The senior enlisted leader tracks the windows so the commander signs on time."
+      },
+      "howToInspect": [
+        {
+          "step": "Build The Departure List",
+          "actions": [
+            "List Marines with SDA or B billet orders in the period and their class report or departure dates.",
+            "For each, locate the initial certification and the re-certification."
+          ],
+          "callout": "Marine departed for an SDA with no re-certification",
+          "severity": "finding"
+        },
+        {
+          "step": "Check The Windows",
+          "actions": [
+            "Initial: with the package or within 60 days of orders.",
+            "Re-certification: 60 to 45 days before report date.",
+            "Annual SDAP certification for Marines already on SDA."
+          ],
+          "callout": "Re-certification outside the 60 to 45 day window",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Tracking",
+          "actions": [
+            "Ask the senior enlisted leader how upcoming windows are tracked.",
+            "Confirm the ICF SDA section files by month of re-certification due, per MCO 1040.31 chapter 6."
+          ],
+          "callout": "No tracking mechanism for re-certification windows",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Who is leaving for an SDA in the next 90 days, and when is each re-certification due?",
+        "Show me the last re-certification and the date against the class report date."
+      ],
+      "verification": [
+        "Initial and re-certifications on file for sampled departures.",
+        "Dates inside the prescribed windows.",
+        "Tracking mechanism in use."
+      ],
+      "verified": false
+    },
+    "0201": {
+      "title": "CAREER PLANNER ADDITIONAL DUTIES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 2, Par 7d",
+            "text": "All Marines routinely perform additional duties, however, commanders should make every effort not to assign additional duties to the Career Planner which will compromise their position, demand a preponderance of their time, or pose a conflict of interest. Those billets include, but are not limited to: Substance Abuse Control Officer (SACO), Legal NCO, Classified Material Systems (CMS) Custodian, Equal Opportunity Representative/Advisor (EOR/EOA), etc."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 2, Par 4a",
+            "text": "Restrictions applicable to PMOS 4821 Career Planners. Substance Abuse Control Officer (SACO), Legal NCO, Classified Material Systems (CMS) Custodian, Equal Opportunity Representative/Advisor (EOR/EOA), Sexual Assault Prevention and Response (SAPR), Uniformed Victim Advocate (UVA), Sexual Assault Response Coordinator (SARC), Uniformed Readiness Coordinator, Toys for Tots Coordinator, Billet Identification Code Manager (BIC), etc."
+          },
+          {
+            "citation": "MARADMIN 632/19, Par 11c",
+            "text": "Career Planners cannot be designated as UTCs."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 13, Par 3",
+            "text": "Career Planners cannot be designated as UTCs."
+          }
+        ],
+        "summary": "The Career Planner holds no duty compromising the position, eating most of the day, or creating a conflict. Named exclusions: SACO, Legal NCO, CMS Custodian, EOR or EOA, SAPR roles, UVA, SARC, Uniformed Readiness Coordinator, Toys for Tots, BIC Manager. Unit Transition Coordinator is barred outright by both the MARADMIN and MCO 1700.31A."
+      },
+      "howToInspect": [
+        {
+          "step": "List The Collateral Duties",
+          "actions": [
+            "Pull the command's collateral duty roster and the Career Planner's appointment letters.",
+            "Check MCTFS for collateral duty codes against the Career Planner."
+          ],
+          "callout": "Career Planner appointed as UTC, SACO, Legal NCO, EOR, or another excluded billet",
+          "severity": "finding"
+        },
+        {
+          "step": "Assess Time Load",
+          "actions": [
+            "Ask the Career Planner what share of the week goes to non-retention duties.",
+            "Compare interview completion rates with the load."
+          ],
+          "callout": "Additional duties consuming a preponderance of time",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "What collateral duties does the Career Planner hold?",
+        "Who is the UTC, and is it the Career Planner?"
+      ],
+      "verification": [
+        "Collateral duty roster and MCTFS codes clear of excluded billets.",
+        "Time load compatible with the retention mission."
+      ],
+      "verified": false
+    },
+    "0202": {
+      "title": "CAREER PLANNING RECORDS MAINTAINED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 6, Par 1a(4)",
+            "text": "Career planning contact records will be maintained in three separate binders. (a) Open Binder. (b) Working Binder. (c) Closed Binder. Contact records will be closed when the Marine detaches, separates or reenlists. (d) Contact Record binders will be maintained for the current FY (including those in the open binder) and 2 previous fiscal years then destroyed per reference (ab) SSIC 1040.2."
+          },
+          {
+            "citation": "MCO 1040.31, Chap 6, Par 1b and 1d (section headings only)",
+            "text": "b. Individual Case Files (ICF). An ICF will be created for all retention related requests. ICFs are maintained in the following six sections filed alphabetically: (1) Routing. (2) Pending. (3) Approved/Disapproved. (4) Admin. (5) SDA. (6) Closed. d. Disposition. ICFs will be maintained for current fiscal year plus 2 previous fiscal years and then destroyed per reference (ab) SSIC 1040.2."
+          },
+          {
+            "citation": "MCO 1040.31, Chap 2, Par 2b(2)",
+            "text": "Commands must maintain individual case folders (with documents pertaining to the Service Record Book (SRB) and Official Military Personnel File (OMPF)) for two fiscal years."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 7, Par 2a",
+            "text": "Individual Case Files (ICF). An ICF will be created for all reserve retention related requests. The Reserve Electronic RELM Tracker (R-ERT) is used once an ICF has been initiated and will be maintained by updating the status of all RELM requests. The RERT will be maintained for the current fiscal year plus 2 previous fiscal years."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 7, Par 1",
+            "text": "All documents pertaining to a Marine's retention request will be uploaded within the online retention database and distributed in accordance with appendix (c)."
+          }
+        ],
+        "summary": "Active: contact records in open, working, and closed binders, and an ICF for every retention request in six sections, both held for the current plus two prior fiscal years under SSIC 1040.2. Reserve: ICF and the R-ERT for the same period, with every retention document uploaded to the online retention database. Interview records live in IMM."
+      },
+      "howToInspect": [
+        {
+          "step": "Inspect The Binders Or Database",
+          "actions": [
+            "Active: view the open, working, and closed contact record binders and the ICF sections.",
+            "Reserve: view the R-ERT and confirm uploads in the online retention database."
+          ],
+          "callout": "No ICF structure or no contact record system",
+          "severity": "finding"
+        },
+        {
+          "step": "Test Retention Period",
+          "actions": [
+            "Confirm closed records for the two prior fiscal years are present.",
+            "Confirm nothing older is held past disposition without reason."
+          ],
+          "callout": "Prior fiscal year records missing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Test Filing Discipline",
+          "actions": [
+            "Pick three RELMs in different states and confirm each ICF sits in the matching section.",
+            "Confirm the SDA section files by re-certification month."
+          ],
+          "callout": "ICFs misfiled or SDA section not by month",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the closed binder for the last two fiscal years.",
+        "Pull the ICF for a pending RELM."
+      ],
+      "verification": [
+        "Binder or database structure per the order.",
+        "Current plus two fiscal years retained.",
+        "Sampled ICFs filed in the correct section."
+      ],
+      "verified": false
+    },
+    "0203": {
+      "title": "NO MISSED CAREER PLANNER INTERVIEWS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 3, Par 2b(1)(a)1 and 2b(1)(c)",
+            "text": "The Career Planner will conduct an initial interview on ALL First Term Marines between 26 and 24 months prior to the Marine's ECC. FTAP Interview. The Career Planner will conduct an FTAP interview between 14-12 months from the Marine's ECC."
+          },
+          {
+            "citation": "MCO 1040.31, Chap 3, Par 2b(2)(a) and 2b(3)(a)",
+            "text": "Careerist Interview. The Career Marine's interview will be conducted 14-12 months from current ECC, except for Marines approved for transfer to the FMCR or retirement. EAS Interviews. The Career Planner and Commanding Officer will conduct an EAS interview eight to six months before the Marine's EAS."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 3, Par 3a(1)",
+            "text": "Identify Marines to be interviewed via the Interview Management Module (IMM). Emphasis should be placed on \"Due\" and \"Overdue\" interviews."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 3, Par 5f(1)(a) and (b)",
+            "text": "(a) For Marines with a future MDPSD, this interview is to be conducted between 1 July and 31 October immediately prior to the Marine's MDPSD. (b) For Marines without a MDPSD or with a MDPSD that has passed, this interview is to be conducted between 1 July and 31 October immediately prior to the Marine's MSO."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 3, Par 5h",
+            "text": "AR Interviews. (1) ARAP Interview. This interview is to be conducted between 1 June and 31 August prior to the fiscal year in which the Marine's ECC resides. (2) AR EAS Interview. This interview is to be conducted no earlier than 6 months prior to the month in which the Marine's EAS resides and no later than 3 months prior to the Marine's EAS."
+          }
+        ],
+        "summary": "Active windows: initial 26 to 24 months before ECC, FTAP 14 to 12 months, careerist 14 to 12 months, EAS 8 to 6 months, NCS three months before EAS. Reserve windows: first term and careerist 1 July to 31 October before the governing date, RECC three months before the RECC month, ARAP 1 June to 31 August, AR EAS 6 to 3 months. IMM flags Due, Overdue, and Missed. A missed interview outside its window is a discrepancy regardless of later completion."
+      },
+      "howToInspect": [
+        {
+          "step": "Run The IMM Missed Report",
+          "actions": [
+            "Have the Career Planner display Missed interviews for the period by type.",
+            "Count and list."
+          ],
+          "callout": "Missed Career Planner interviews without administrative notes",
+          "severity": "finding"
+        },
+        {
+          "step": "Recompute Windows For A Sample",
+          "actions": [
+            "Pick five Marines across first-term, careerist, and EAS status.",
+            "From MCTFS ECC or EAS, compute each window and compare with the interview date."
+          ],
+          "callout": "Interviews outside the prescribed window not reflected in IMM",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Recovery",
+          "actions": [
+            "For missed interviews, confirm signed IMM notes and a follow-up voluntary interview."
+          ],
+          "callout": "Missed interviews never recovered",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "How many interviews are Due this month, and how do you schedule them?",
+        "Show me the Missed list and the notes on each."
+      ],
+      "verification": [
+        "IMM Missed report reviewed.",
+        "Sampled windows recomputed and met.",
+        "Missed interviews annotated and recovered."
+      ],
+      "verified": false
+    },
+    "0204": {
+      "title": "INTERVIEWS CAPTURE TRUE REASONS FOR RETENTION DECISIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 3, Par 1c",
+            "text": "Interviews are important from the standpoint of gaining an understanding of the true reasons why Marines do or do not desire to reenlist. By analyzing many similar interviews, the Career Planner can determine solutions to retention problems within a unit."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 3, Par 1c",
+            "text": "Interviews are important from the standpoint of gaining an understanding of the true reasons why Marines do or do not desire to be retained. By analyzing many similar interviews, the Career Planner and Commanding Officer/Inspector-Instructor can determine solutions to retention problems within a unit."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 3, Par 3c(1)(c)",
+            "text": "Properly executed, interviews will provide a chronological record of: (c) The Marine's specific reason(s) for retention or transition."
+          }
+        ],
+        "summary": "Interview records state the Marine's own reasons for staying or leaving in enough detail to see patterns. Records reading only Marine desires to separate or Marine intends to reenlist fail the intent. The Career Planner uses the pattern to advise the commander on unit retention problems."
+      },
+      "howToInspect": [
+        {
+          "step": "Read A Cross Section",
+          "actions": [
+            "Read ten interview narratives across first-term, careerist, and EAS.",
+            "For each, find a specific reason: pay, family, MOS, leadership, education, civilian offer, and so on."
+          ],
+          "callout": "Narratives with no stated reason or a one-word reason",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Ask For The Analysis",
+          "actions": [
+            "Ask the Career Planner what the interviews say about why Marines in this unit leave.",
+            "Confirm the answer reaches the commander in a retention report or brief."
+          ],
+          "callout": "Career Planner unable to summarize unit retention drivers",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Why do Marines in this unit leave?",
+        "Show me an interview where the Marine's reason changed your advice."
+      ],
+      "verification": [
+        "Sampled narratives carry specific reasons.",
+        "Career Planner articulates unit patterns and briefs the commander."
+      ],
+      "verified": false
+    },
+    "0205": {
+      "title": "FIRST TERM INTERVIEW CONTENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 3, Par 2b(1)(a)2",
+            "text": "Use the initial interview to determine if the Marine meets all prerequisites for reenlistment/lateral move, to ensure that corrective action is initiated if necessary (for example, retaking the AFQT), and to ensure the Marine is fully apprised of the benefits and incentives related to reenlistment. The Marine should also be familiarized with the FTAP process."
+          },
+          {
+            "citation": "MCO 1040.31, Chap 3, Par 2b(1)(c)1",
+            "text": "Career Planner FTAP Interview. a. The FTAP interview will ensure the Marine is made aware of the benefits of a Marine Corps career. b. The Marine should be reminded of the need for a complete and competitive performance record."
+          }
+        ],
+        "summary": "First-term interviews cover five tasks: benefits and incentives of a career and reenlistment, the need for a complete and competitive record, a prerequisite check for reenlistment or lateral move, corrective action started where a prerequisite is missing, and FTAP familiarization. The record shows each."
+      },
+      "howToInspect": [
+        {
+          "step": "Read Sampled Initial And FTAP Interviews",
+          "actions": [
+            "Tick the five tasks against each narrative.",
+            "Where a prerequisite gap appears, confirm the corrective action and its follow-up."
+          ],
+          "callout": "First-term interviews missing required tasks",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Prerequisite Screening",
+          "actions": [
+            "Pick two Marines with a known gap, such as GT score or PFT, and confirm the interview identified it."
+          ],
+          "callout": "Prerequisite gaps not identified at the initial interview",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "How do you screen prerequisites before the initial interview?",
+        "Show me a Marine who needed corrective action and where it stands."
+      ],
+      "verification": [
+        "Five tasks evident on sampled records.",
+        "Corrective actions tracked."
+      ],
+      "verified": false
+    },
+    "0206": {
+      "title": "CAREERIST INTERVIEW CONTENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 3, Par 2b(2)(a)",
+            "text": "This interview is designed to advise the career Marine of current options and benefits such as SRBP, special duty assignments, and to determine reenlistment eligibility. During the interview, the Career Planner must review each Marine's records to ensure the Marine is not missing any fitness reports and meets all reenlistment prerequisites. The Career Planner will also counsel the Marine concerning enlisted career force controls and separation pay, if applicable. This interview also allows the Career Planner time to get a CG waiver or recover missing fitness reports should the Marine desire further service."
+          }
+        ],
+        "summary": "The careerist interview covers current options and benefits including SRBP and SDA, a reenlistment eligibility determination with a fitness report gap check, and counseling on enlisted career force controls and involuntary separation pay where they apply. Missing reports and waivers start here, not at RELM submission."
+      },
+      "howToInspect": [
+        {
+          "step": "Read Sampled Careerist Interviews",
+          "actions": [
+            "Confirm SRBP and SDA options, eligibility determination, and ECFC or separation pay counseling appear where applicable.",
+            "Confirm a fitness report gap check was done and any gaps are noted."
+          ],
+          "callout": "Careerist interviews missing eligibility or ECFC content",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Follow A Gap",
+          "actions": [
+            "For a Marine with a missing fitness report or waiver need, confirm action started at the careerist interview."
+          ],
+          "callout": "Gaps discovered only at RELM submission",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "How do you check for missing fitness reports before the careerist interview?",
+        "Which Marines are near an ECFC gate, and were they counseled?"
+      ],
+      "verification": [
+        "Required content on sampled careerist records.",
+        "Gap actions started at interview."
+      ],
+      "verified": false
+    },
+    "0207": {
+      "title": "CAREER PLANNER EAS INTERVIEW CONTENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 3, Par 2b(3)(b) and (c)",
+            "text": "(b) Review the Marine's plans for separation; re-address the benefits of staying Marine. (c) The primary purpose of the EAS interview is to ensure the Marine is apprised of the benefits of joining the Selected Marine Corps Reserve, Transition Assistance Management Programs and advise him/her on the Marine 4 Life program. Also advise the Marine of the requirement to attend a mandatory pre-separation brief. Both the Commanding Officer and the Career Planner will conduct EAS interviews."
+          },
+          {
+            "citation": "MCO 1040.31, Chap 6, Par 1a(3)(g)",
+            "text": "Part VI - EAS Interview. Complete this part of the contact record during the Marine's EAS interview or prior to transfer to a command designated to process the Marine for separation or discharge. After completing the EAS interview, the Career Planner will make a specific recommendation to the commanding officer regarding the reenlistment eligibility code to be assigned to the Marine upon separation (Appendix D)."
+          }
+        ],
+        "summary": "The Career Planner's EAS interview mirrors the commander's five topics and adds a specific RE code recommendation to the commander. It happens before any transfer to a separations command."
+      },
+      "howToInspect": [
+        {
+          "step": "Read Sampled CP EAS Interviews",
+          "actions": [
+            "Tick the five topics and the RE code recommendation.",
+            "Confirm the interview predates any transfer for separation."
+          ],
+          "callout": "CP EAS interviews missing topics or RE code recommendation",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "What RE code did you recommend on your last EAS interview, and why?",
+        "How do you handle a Marine transferring early for separation?"
+      ],
+      "verification": [
+        "Five topics and RE recommendation on sampled records."
+      ],
+      "verified": false
+    },
+    "0208": {
+      "title": "INTERVIEWS DOCUMENTED, COMPLETED, AND ARCHIVED IN IMM",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 3, Par 3c(1)",
+            "text": "Properly document the CP interview within the Interview Management Module (IMM) in the online retention database. This can be achieved by completing the interview electronically within the IMM or uploading a completed Reserve Career Planning Contact Record to the IMM. Signatures of the Marine and Career Planner are required. The preferred method to obtain signatures will be digital, utilizing dual CAC readers. Properly executed, interviews will provide a chronological record of: (a) The Marine's basic qualifications for retention. (b) The CP's evaluation and guidance to the Marine. (c) The Marine's specific reason(s) for retention or transition. (d) The recommended RE-Code (as applicable)."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 3, Par 3g",
+            "text": "The career planning personnel shall transcribe the CO's recommendation and comments into the IMM within the online retention database. Career planning personnel will reconcile the CO's interview within the IMM."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 7, Par 2b",
+            "text": "(1) Results of all interviews that are conducted between the individual Marine, CP, and CO, will be captured and maintained within the IMM. (2) In instances where the use of the IMM is not feasible or practical, the Reserve Career Planning Contact Record is authorized. Interview notes captured on the Reserve Career Planning Contact Record will be transferred into the IMM once available."
+          }
+        ],
+        "summary": "Every interview closes in IMM with Marine and Career Planner signatures, digital where possible, and the four record elements: qualifications, evaluation and guidance, the Marine's reasons, and the recommended RE code. CO interviews are transcribed and reconciled in IMM. Paper contact records are a bridge, transferred into IMM when available."
+      },
+      "howToInspect": [
+        {
+          "step": "Open Sampled IMM Records",
+          "actions": [
+            "Confirm each shows both signatures and the four elements.",
+            "Confirm CO interviews are reconciled, not left open."
+          ],
+          "callout": "IMM records unsigned, incomplete, or CO interviews unreconciled",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Paper Bridge Records",
+          "actions": [
+            "For any contact record completed on paper, confirm it was uploaded or transcribed into IMM."
+          ],
+          "callout": "Paper interviews never transferred to IMM",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Show me an interview in IMM with dual CAC signatures.",
+        "How do you reconcile the CO's portion?"
+      ],
+      "verification": [
+        "Sampled IMM records complete and signed.",
+        "Paper records transferred."
+      ],
+      "verified": false
+    },
+    "0209": {
+      "title": "REQUIRED INTERVIEW TOPICS COVERED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 3, Par 5e",
+            "text": "All prescribed interviews shall, at a minimum, educate the individual Marine on the following topics: (1) Retention prerequisites to include enlisted career force controls. (2) The need to have a complete and competitive performance record. (3) Career enhancement opportunities to include Professional Military Education (PME) requirements for grade, career progression courses, and special duty assignments. (4) Incentives for which the Marine is eligible based on current policies and programs. (5) Available career paths: SMCR, IRR, AR, IMA and augmentation to the active component. (6) Benefits of a career in the MCR, to include but not limited to obtaining a reserve retirement and Tricare Reserve Select. (7) Eligibility requirements for Post-9/11 GI Bill, Transfer of Education Benefit (TEB), Montgomery GI Bill (MGIB), Montgomery GI Bill-Selected Reserve (MGIB-SR), Marine Corps Tattoo Policy and MOS eligibility requirements. (8) For Marines entering, or currently in, the IRR: Updating contact information and changes in dependent status via Marine On-line (MOL) and Marine Corps Individual Reserve Support Activity (MCIRSA) points of contact."
+          }
+        ],
+        "summary": "Eight topics ride every required Reserve interview: prerequisites and ECFC, the competitive record, PME and career enhancement, incentives, career paths across SMCR, IRR, AR, IMA, and augmentation, Reserve career benefits including retirement and Tricare Reserve Select, education benefit eligibility with tattoo and MOS rules, and IRR contact maintenance. First-term, careerist, and RECC occasions each add their own extra topics."
+      },
+      "howToInspect": [
+        {
+          "step": "Audit Sampled Interviews Against The Eight Topics",
+          "actions": [
+            "Read five required interviews in IMM.",
+            "Tick each of the eight topics plus the occasion-specific additions."
+          ],
+          "callout": "Required topics absent from interview records",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Interview The Career Planner",
+          "actions": [
+            "Ask the Career Planner to brief the eight topics without notes."
+          ],
+          "callout": "Career Planner unable to cover the required topics",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Brief me the retention topics you cover at every interview.",
+        "What do you add for a first-term Marine approaching MDPSD?"
+      ],
+      "verification": [
+        "Eight topics evident on sampled records.",
+        "Career Planner briefs them fluently."
+      ],
+      "verified": false
+    },
+    "0210": {
+      "title": "CAREER PLANNER AND MARINE SIGN AND DATE RELM RESPONSES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 6, Par 2b(7)",
+            "text": "When to acknowledge a RELM Authority: Acknowledge a RELM for reenlistment ONLY after the Marine executes the authority. The reenlistment date must be entered when accepting the authority."
+          },
+          {
+            "citation": "MCO 1040.31, Chap 6, Par 1b(3)",
+            "text": "Approved/Disapproved. Used once approval/disapproval is received from HQMC. The ICF will remain in this section until the Marine executes the authority or accepts disapproval and RELM has been acknowledged."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 7, Par 2a(3)",
+            "text": "Approved/Disapproved. Used once approval/disapproval is received from HQMC. The ICF will remain in this section until the Marine executes the authority or accepts disapproval and RELM has been acknowledged. Disapprovals will move to closed section after acknowledging and no further action is required."
+          }
+        ],
+        "summary": "The Career Planner and the requesting Marine sign and date each RELM response. Approvals are acknowledged in TFRS only after the Marine executes the authority, with the reenlistment date entered. Disapprovals are acknowledged by the Marine and closed. TFRS training material shows the response page fields."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample RELM Responses",
+          "actions": [
+            "From the ICF approved and disapproved sections, confirm Career Planner and Marine signatures with dates on each response.",
+            "Confirm TFRS acknowledgement dates follow execution, not precede it."
+          ],
+          "callout": "RELM responses unsigned by the Marine or acknowledged before execution",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Show me a disapproved RELM with the Marine's acknowledgement.",
+        "When do you acknowledge an approval in TFRS?"
+      ],
+      "verification": [
+        "Signatures and dates on sampled responses.",
+        "Acknowledgement sequence correct."
+      ],
+      "verified": false
+    },
+    "0211": {
+      "title": "NAVMC 321A, DD FORM 4, AND STATEMENTS OF UNDERSTANDING",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 2, Par 2b(1)",
+            "text": "The Unit Career Planner is responsible for accurate completion of all forms pertinent to career planning, to include the reenlistment contract (DD Form 4), Selective Reenlistment Bonus Program (SRBP) forms, the career planning contact record, and extension agreement (NAVMC 321A)."
+          },
+          {
+            "citation": "MCO 1040.31, Chap 6, Par 2b(5)",
+            "text": "The reference number on the answered RELM is the authority to be entered on the DD Form 4 or NAVMC 321a."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 2, Par 6a(4)",
+            "text": "Ensure accurate completion of all the administrative procedures and forms associated with career retention. These include, but are not limited to: (a) Career Planning Contact Record. (b) Enlistment/Reenlistment Document-Armed Forces of the United States (DD Form 4). (c) Agreement to Extend Enlistment (NAVMC 321A). (d) Appropriate Certificates (e.g., Discharge certificates, Reenlistment Certificates, Spouse Certificates)."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 5, Par 5c(1) and 5e",
+            "text": "(1) The reference number on the approved RELM is the authority to be entered on the NAVMC 321A. e. Execute the NAVMC 321A prior to or on the date of expiration of enlistment."
+          }
+        ],
+        "summary": "The Career Planner completes the DD Form 4, NAVMC 321A, SRBP forms, and required statements of understanding accurately. The RELM reference number is the authority line. Extensions execute on or before the expiration date. Errors on these documents become pay and service problems the Marine carries for years."
+      },
+      "howToInspect": [
+        {
+          "step": "Audit Executed Documents",
+          "actions": [
+            "Sample DD Form 4s and NAVMC 321As executed in the period.",
+            "Check the authority line against the RELM reference number, dates against expiration, term against approval, and all signatures and witness blocks."
+          ],
+          "callout": "Authority mismatch, execution after expiration, or missing signatures",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Statements Of Understanding",
+          "actions": [
+            "For SRBP, lateral move, and other conditional approvals, confirm the required statement of understanding is executed and filed with the contract."
+          ],
+          "callout": "Required statement of understanding missing",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the last DD Form 4 and its RELM authority.",
+        "Which statements of understanding do you use, and when?"
+      ],
+      "verification": [
+        "Sampled contracts accurate against RELM approval.",
+        "Statements of understanding present where required."
+      ],
+      "verified": false
+    },
+    "0301": {
+      "title": "SNCOIC TRAINS SUBORDINATE CAREER PLANNERS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 2, Par 2a(1) and 2a(8)",
+            "text": "(1) Instruct and train unit level Career Planners. (8) Conduct and document follow-on training for subordinate Career Planner. (a) MSC Career Planner SNCOIC will conduct training for subordinates on a quarterly basis. (b) All other SNCOICs will conduct training on a monthly basis."
+          },
+          {
+            "citation": "MCO 1040.31, Chap 2, Par 3a",
+            "text": "The Career Planner SNCOICs will conduct and document quarterly training for all subordinate Career Planners."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 2, Par 6b(8)",
+            "text": "Conduct and document follow-on training for subordinate Career Planners. (a) MSC Career Planner SNCOIC shall conduct training for subordinate unit Career Planners on a quarterly basis at a minimum. (b) All other SNCOICs shall conduct training on a monthly basis at a minimum."
+          }
+        ],
+        "summary": "MSC-level SNCOICs train subordinates quarterly, all other SNCOICs monthly, and document it. The checklist ties the training to 2000 and 2500 level individual events in the 4821 T&R manual and the Advanced Tools for Coaching guide."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The Training Record",
+          "actions": [
+            "Request the SNCOIC's training log for the period.",
+            "Confirm frequency meets the level: quarterly at MSC, monthly elsewhere."
+          ],
+          "callout": "No documented training or frequency below the minimum",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Content",
+          "actions": [
+            "Confirm entries reference T&R events at the 2000 and 2500 level and name attendees.",
+            "Confirm new Career Planners received instruction on arrival."
+          ],
+          "callout": "Training log with no T&R linkage or attendee record",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your training log for the last two quarters.",
+        "Which T&R events did you cover last month?"
+      ],
+      "verification": [
+        "Training documented at the required frequency.",
+        "T&R events and attendees recorded."
+      ],
+      "verified": false
+    },
+    "0302": {
+      "title": "SNCOIC IMPLEMENTS THE RETENTION PLAN",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 2, Par 2a(2)",
+            "text": "Coordinate the implementation of the FTAP/STAP within the command."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 2, Par 6b(2)",
+            "text": "Facilitate the implementation of the retention plan within the command."
+          },
+          {
+            "citation": "MCO 1040.31, Chap 1, Par 3b(1)(b)",
+            "text": "Commanders are encouraged to make every attempt to conduct programs that support retention, e.g., (Career Fair/Retention Stand-down) for all Marines during the months of March through July every calendar year to ensure that Marines are aware of the opportunities available to them for retention."
+          }
+        ],
+        "summary": "The SNCOIC turns the fiscal year retention campaign plan, published by MARADMIN, and the FTAP or STAP boat space picture into a command plan with milestones, briefs, and stand-downs. Current TFRS messages carry the running guidance."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Command Retention Plan",
+          "actions": [
+            "Confirm a written plan exists for the current fiscal year keyed to the retention campaign MARADMIN.",
+            "Confirm it names milestones, mission by MOS, and the stand-down or career fair window."
+          ],
+          "callout": "No command retention plan for the fiscal year",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Execution",
+          "actions": [
+            "Compare planned events with what happened: briefs held, stand-down conducted, mission attainment tracked.",
+            "Confirm the SNCOIC pushes current TFRS messages to subordinate Career Planners."
+          ],
+          "callout": "Plan exists but events not executed or tracked",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Where does the command stand on this fiscal year's mission by MOS?",
+        "When was the last retention stand-down?"
+      ],
+      "verification": [
+        "Written plan keyed to the current campaign MARADMIN.",
+        "Executed events and mission tracking on file."
+      ],
+      "verified": false
+    },
+    "0303": {
+      "title": "SNCOIC ADVISES COMMANDERS ON RETENTION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 2, Par 2a(4)",
+            "text": "Advise Commanders on retention matters (e.g. Retention Reports, Letters of Instruction, Case Studies, and After Action Reports.)"
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 2, Par 6b(4)",
+            "text": "Advise Commanders/I-Is on retention matters (e.g. Career Planner Strategy, Retention Reports, Retention Mission Attainment, Letters of Instruction, After Action Reports, Case Studies, etc.)"
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 1, Par 3c(2)",
+            "text": "Measures of Effectiveness (MOE). The Commanding Officer can gauge the effectiveness of their retention program by utilizing the suggested MOEs as listed below. (a) Percentage of required interviews completed. (b) Number of reenlistments and incentives executed by unit members. (c) Percentage of unit comprised of non-obligors/obligors. (d) Number of separations/transitions. (e) Percentage of retention goal/mission achieved."
+          }
+        ],
+        "summary": "The SNCOIC produces the products commanders decide with: retention reports, mission attainment, letters of instruction, after action reports, and case studies. The Reserve order lists the measures of effectiveness a commander expects to see."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Advisory Products",
+          "actions": [
+            "Ask for retention reports delivered to the commander in the period and any LOIs or AARs.",
+            "Confirm a regular cadence, monthly or quarterly."
+          ],
+          "callout": "No retention reporting to the commander",
+          "severity": "finding"
+        },
+        {
+          "step": "Ask The Commander",
+          "actions": [
+            "Ask the commander when the SNCOIC last briefed retention and what the numbers were."
+          ],
+          "callout": "Commander unaware of retention status",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the last retention report you gave the commander.",
+        "What measures of effectiveness do you brief?"
+      ],
+      "verification": [
+        "Retention reports on a regular cadence.",
+        "Commander confirms being briefed."
+      ],
+      "verified": false
+    },
+    "0304": {
+      "title": "SNCOIC QUALITY CONTROL ON SUBORDINATE RELM REQUESTS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 2, Par 2a(10)",
+            "text": "Conduct quality control on all RELMs submitted by subordinate commands."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 2, Par 6b(10)",
+            "text": "Conduct quality control on all Reenlistment/Extensions/Lateral Move (RELM) requests submitted by subordinate commands."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 1, Par 3d",
+            "text": "The CP SNCOIC is responsible to the commander for administering the command career retention program by ensuring quality control on all retention request submitted to HQMC and training subordinate unit Career Planners."
+          }
+        ],
+        "summary": "Every RELM from a subordinate command passes the SNCOIC before HQMC sees it. Quality control checks prerequisites, required attachments, comments block entries, and compliance with the current TFRS messages and campaign plan. Returned RELMs from HQMC for administrative error are the failure signal."
+      },
+      "howToInspect": [
+        {
+          "step": "Trace The QC Step",
+          "actions": [
+            "Ask how a subordinate RELM reaches the SNCOIC in TFRS before submission.",
+            "Sample five submitted RELMs and confirm SNCOIC review evidence."
+          ],
+          "callout": "RELMs reaching HQMC with no SNCOIC review",
+          "severity": "finding"
+        },
+        {
+          "step": "Check The Return Rate",
+          "actions": [
+            "Count RELMs returned by HQMC for administrative error in the period.",
+            "A high return rate signals weak quality control."
+          ],
+          "callout": "Repeated administrative returns from HQMC",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "How many RELMs came back from HQMC for errors this year, and why?",
+        "What do you check before releasing a RELM?"
+      ],
+      "verification": [
+        "SNCOIC review evident on sampled RELMs.",
+        "Return rate reviewed."
+      ],
+      "verified": false
+    },
+    "0305": {
+      "title": "SNCOIC CAREER PLANNER EVALUATIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040.31, Chap 2, Par 2a(6)",
+            "text": "The SNCOIC will conduct Career Planning evaluations to evaluate the effectiveness and knowledge of a Career Planner. (a) Career Planners with less than one year on the Career Planning Force are required to have three evaluations during the first year. 1. Initial - Conduct within three months of the Career Planner joining a unit. 2. Intermediate - Conduct between three and six months of the Career Planner joining a unit. 3. Final - Conduct between six and nine months of the Career Planner joining a unit. (b) Career Planners with more than one year on the Career Planning Force are required to have annual evaluations."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 2, Par 6b(5)",
+            "text": "The SNCOIC shall conduct Career Planning evaluations using the current Career Planner Evaluation form to evaluate the effectiveness and knowledge of a Career Planner."
+          }
+        ],
+        "summary": "New Career Planners get three evaluations in the first year at three, six, and nine months. Career Planners past one year get an annual evaluation. The Reserve order requires the current Career Planner Evaluation form. Evaluations use the T&R manual and Advanced Tools for Coaching as the standard."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull Evaluations For Each Subordinate",
+          "actions": [
+            "For each Career Planner, determine time on the Career Planning Force.",
+            "Under one year: confirm initial, intermediate, and final evaluations inside their windows.",
+            "Over one year: confirm an evaluation inside the last 12 months."
+          ],
+          "callout": "Career Planner with no evaluation on the required schedule",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Form And Follow-Up",
+          "actions": [
+            "Confirm the current evaluation form is used.",
+            "Confirm deficiencies carry a corrective action and a re-check."
+          ],
+          "callout": "Evaluations informal or without follow-up",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "When did each of your Career Planners join the force, and when was each evaluated?",
+        "Show me an evaluation with a deficiency and the re-check."
+      ],
+      "verification": [
+        "Evaluations on schedule for each subordinate.",
+        "Current form and corrective follow-up."
+      ],
+      "verified": false
+    },
+    "0401": {
+      "title": "COLLATERAL DUTY CAREER PLANNERS ASSIGNED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 2, Par 3b",
+            "text": "Collateral Duty Career Planner (CDCP). Commanders/I-Is shall assign Active Reserve (AR) or Active Component (AC) Marines as Collateral Duty Career Planners for units without an assigned PMOS 4821 Career Planner. However, special duty assignment pay and the issuance of the dress blue uniform allowance are not authorized per references (a) and (b). Additionally, CDCPs shall meet the following prerequisites prior to appointment: (1) Be in the grade of E5 through E8. (2) Possess a minimum of 24 months remaining on station at date of appointment. (3) Possess current Secret security clearance eligibility and be verified by the unit security manager. (4) Completion of the MarineNet Career Planner Course."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 1, Par 3e",
+            "text": "At a minimum, CPs will be assigned to Battalion, Squadron, and equivalent level commands."
+          }
+        ],
+        "summary": "Every unit or site without a PMOS 4821 Career Planner has a Collateral Duty Career Planner: an AR or AC Marine E5 through E8, 24 months remaining on station at appointment, Secret eligibility verified by the security manager, and the MarineNet Career Planner Course complete before appointment. No SDAP or blues allowance."
+      },
+      "howToInspect": [
+        {
+          "step": "Map Units To Career Planners",
+          "actions": [
+            "List every unit and site under the command and the Career Planner covering each.",
+            "Flag any without a 4821 or an appointed CDCP."
+          ],
+          "callout": "Unit or site with no Career Planner coverage",
+          "severity": "finding"
+        },
+        {
+          "step": "Check CDCP Prerequisites",
+          "actions": [
+            "For each CDCP, confirm the appointment letter, grade E5 to E8, 24 months on station at appointment, security manager verification, and the MarineNet course certificate dated before appointment."
+          ],
+          "callout": "CDCP appointed without a prerequisite",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Which sites lack a 4821, and who covers them?",
+        "Show me a CDCP appointment letter and the MarineNet certificate."
+      ],
+      "verification": [
+        "Every unit and site covered.",
+        "CDCP prerequisites documented."
+      ],
+      "verified": false
+    },
+    "0402": {
+      "title": "RESERVE CAREER PLANNER COURSE WITHIN ONE YEAR",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 2, Par 5b",
+            "text": "Marines assigned as a CDCP will attend the non-MOS producing Reserve Career Planner Course (RCPC) within one year of assignment. The COMMARFORRES CP SNCOIC will solicit nominations to attend the RCPC annually."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 2, Par 5c",
+            "text": "Once a Career Planner has obtained the rank of Staff Sergeant, they are required to attend the Advance Career Planning Course (ACPC) within 2 years or prior to assignment to a Career Planner SNCOIC billet, whichever is less."
+          }
+        ],
+        "summary": "A CDCP attends the Reserve Career Planner Course within one year of assignment. The command nominates when COMMARFORRES solicits. A Career Planner promoted to Staff Sergeant attends the Advanced Career Planner Course within two years or before an SNCOIC billet."
+      },
+      "howToInspect": [
+        {
+          "step": "Match CDCPs To RCPC Completion",
+          "actions": [
+            "For each CDCP, compare appointment date with the RCPC completion certificate.",
+            "For a CDCP inside the first year, confirm a nomination or seat request is on file."
+          ],
+          "callout": "CDCP past one year with no RCPC and no nomination",
+          "severity": "finding"
+        },
+        {
+          "step": "Check ACPC For Staff Sergeants",
+          "actions": [
+            "For any Career Planner at SSgt or above, confirm ACPC inside two years of promotion or before the SNCOIC billet."
+          ],
+          "callout": "SNCOIC serving without ACPC",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "When was each CDCP appointed, and when did they attend RCPC?",
+        "When did the command last submit nominations?"
+      ],
+      "verification": [
+        "RCPC certificates inside one year of appointment.",
+        "Nominations on file for those pending."
+      ],
+      "verified": false
+    },
+    "0403": {
+      "title": "ANNUAL SITE VISITS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 2, Par 6a(5)",
+            "text": "Conduct site assist visits within the command annually, at a minimum."
+          },
+          {
+            "citation": "MCO 1040R.31, Encl (2), Chap 2, Par 6b(6) and 6b(7)",
+            "text": "(6) Conduct site assist visits and/or on-site inspections of Career Planners within the command annually, at a minimum. (7) Execute Career Planning functional area inspections in accordance with the Unit Inspection Program (UIP)."
+          }
+        ],
+        "summary": "The Career Planner visits every site under the command at least once a year. The SNCOIC visits or inspects every subordinate Career Planner at least once a year and runs the functional area inspection under the UIP. Visits are documented with findings and follow-up."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The Visit Schedule And Reports",
+          "actions": [
+            "List every site and subordinate Career Planner.",
+            "Confirm a documented visit or inspection for each inside the last 12 months."
+          ],
+          "callout": "Site or subordinate Career Planner with no visit in 12 months",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Follow-Up",
+          "actions": [
+            "For visits with findings, confirm corrective action and a re-check."
+          ],
+          "callout": "Visit findings with no follow-up",
+          "severity": "discrepancy"
+        }
+      ],
+      "questionsToAsk": [
+        "Which sites did you visit this year, and what did you find?",
+        "Show me a visit report and the corrective action."
+      ],
+      "verification": [
+        "Documented annual visit for every site and subordinate.",
+        "Findings tracked to closure."
+      ],
+      "verified": false
+    }
+  }
+}

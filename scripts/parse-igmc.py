@@ -7,6 +7,7 @@ effectiveDate, category, faName, and title.
 import json, os, re, sys
 from pathlib import Path
 from datetime import datetime
+from types import SimpleNamespace
 from docx import Document
 
 SUBSECTION_RE = re.compile(r"Subsection\s+(\d+)\s*[–—\-]+\s*(.*)", re.I)
@@ -95,9 +96,194 @@ def walk_tables(tables, out):
                     walk_tables([nt], out)
 
 
+BODY_CODE_RE = re.compile(r"^(0\d{3})\b\s*(.*)$", re.S)
+BODY_STOP_RE = re.compile(r"^(result|comments?|total questions)\b", re.I)
+
+
+def collect_body_items(doc, rows):
+    """Pick up items authored as body paragraphs outside any table.
+
+    Some FACs continue the question list after the table closes (1050 adds
+    0108 to 0111 this way). Those paragraphs never appear in doc.tables, so
+    synthesize a row per code with a cell-like object parse_item_cell accepts.
+    """
+    seen_codes = {texts[0] for texts, _ in rows if texts and ITEM_CODE_RE.match(texts[0])}
+    paras = [p.text.strip() for p in doc.paragraphs]
+    i = 0
+    while i < len(paras):
+        m = BODY_CODE_RE.match(paras[i])
+        if not m or m.group(1) in seen_codes:
+            i += 1
+            continue
+        code = m.group(1)
+        buf = [m.group(2).strip()] if m.group(2).strip() else []
+        j = i + 1
+        while j < len(paras):
+            t = paras[j]
+            if BODY_CODE_RE.match(t) or BODY_STOP_RE.match(t) or SUBSECTION_RE.match(t):
+                break
+            if t:
+                buf.append(t)
+            j += 1
+        if buf:
+            fake = SimpleNamespace(paragraphs=[SimpleNamespace(text=b) for b in buf])
+            rows.append(([code, " ".join(buf)], [None, fake]))
+            seen_codes.add(code)
+        i = j
+
+
 def collect_rows(doc):
     out = []
     walk_tables(doc.tables, out)
+    collect_body_items(doc, out)
+    return out
+
+
+GENERIC_SUB_RE = re.compile(r"^(items|section\s+\d+)$", re.I)
+SUB_ITER_RE = re.compile(
+    r"Subsection\s+(\d+)\s*[–—\-]+\s*(.*?)(?=\s*Subsection\s+\d+\s*[–—\-]|$)", re.I | re.S)
+
+
+def parse_subsection_header(text):
+    """Return (number, title) for a header cell, or None.
+
+    A cell sometimes lists several Subsection lines at once (5110.1 puts
+    Administration, Finance, Operations, and Quality Management in one
+    cell above a single run of codes). Join those titles so the label is
+    honest about what the block covers.
+    """
+    norm = re.sub(r"\s+", " ", text or "").strip()
+    found = SUB_ITER_RE.findall(norm)
+    if not found:
+        return None
+    num = int(found[0][0])
+    titles = [t.strip().rstrip(".") for _, t in found if t.strip()]
+    return num, ", ".join(titles)
+
+
+def body_fallbacks(doc, meta):
+    """Fill metadata from body paragraphs when the table walk found nothing.
+
+    Several FACs (1700.23, 5110.1) put the applicability sentence, the
+    Revised line, and the Subsection headers in body paragraphs between
+    tables rather than inside them.
+    """
+    paras = [p.text.strip() for p in doc.paragraphs if p.text.strip()]
+    big = "\n".join(paras)
+    if not meta["applicability"]:
+        for t in paras:
+            if re.match(r"^\s*this checklist (applies|is applicable)", t, re.I):
+                cleaned = re.sub(r"^\s*this checklist (applies\s+to|is\s+applicable\s+to)\s*",
+                                 "", t, flags=re.I).strip()
+                cleaned = re.sub(r"\s+", " ", cleaned).rstrip(".")
+                if cleaned:
+                    meta["applicability"] = cleaned[0].upper() + cleaned[1:]
+                break
+    if not meta["revised"]:
+        v = first_match("Revised", big)
+        if v:
+            meta["revised"] = v
+    if meta["total_questions"] is None:
+        tq = first_match("Total Questions", big)
+        if tq:
+            m = re.search(r"\d+", tq)
+            if m:
+                meta["total_questions"] = int(m.group(0))
+    body_subs = {}
+    for t in paras:
+        m = SUBSECTION_RE.match(t)
+        if m:
+            body_subs.setdefault(int(m.group(1)), re.sub(r"\s+", " ", m.group(2)).strip())
+    return body_subs
+
+
+def code_headers_in_order(doc):
+    """Map each item code to the Subsection header above it in document order.
+
+    Walks body children (paragraphs and tables) top to bottom so a header
+    that sits in a body paragraph between two tables still governs the
+    codes below it. Needed for 5110.1, whose codes run 0101 to 0192 under
+    four headers, and 1700.23, whose headers live outside the tables.
+    """
+    from docx.oxml.ns import qn
+    body = doc.element.body
+    cur = None
+    out = {}
+
+    def text_of(el):
+        # Join runs with tabs and breaks rendered as spaces, so a code
+        # followed by a tab ("0101\tCan the...") keeps its word boundary.
+        parts = []
+        for node in el.iter():
+            tg = node.tag.split("}")[-1]
+            if tg == "t":
+                parts.append(node.text or "")
+            elif tg in ("tab", "br", "cr"):
+                parts.append(" ")
+        return re.sub(r"\s+", " ", "".join(parts)).strip()
+
+    for child in body.iterchildren():
+        tag = child.tag.split("}")[-1]
+        if tag == "p":
+            txt = text_of(child)
+            hdr = parse_subsection_header(txt)
+            if hdr:
+                cur = hdr
+                continue
+            m2 = BODY_CODE_RE.match(txt)
+            if m2 and cur:
+                out[m2.group(1)] = cur
+        elif tag == "tbl":
+            for tr in child.iter(qn("w:tr")):
+                # Cells sit inside w:sdt content controls in several FACs,
+                # so find() on the row misses them. iter() does not.
+                tc = next(tr.iter(qn("w:tc")), None)
+                if tc is None:
+                    continue
+                txt = text_of(tc)
+                hdr = parse_subsection_header(txt)
+                if hdr:
+                    cur = hdr
+                    continue
+                if ITEM_CODE_RE.match(txt) and cur:
+                    out[txt] = cur
+    return out
+
+
+def reconcile_subsections(subs, body_subs, code_map):
+    """Regroup items under the header each code sits beneath.
+
+    Runs only when the table walk produced generic titles or when the
+    document-order map yields a different group count. Table-derived titles
+    win when present and not generic.
+    """
+    if not code_map:
+        return subs
+    table_titles = {}
+    for s in subs:
+        num = int(s["id"].split(".")[0])
+        if not GENERIC_SUB_RE.match(s["title"]):
+            table_titles.setdefault(num, s["title"])
+    groups = {}
+    order = []
+    for s in subs:
+        for it in s["items"]:
+            hdr = code_map.get(it["code"])
+            num = hdr[0] if hdr else int(it["code"][:2])
+            if num not in groups:
+                groups[num] = []
+                order.append(num)
+            groups[num].append(it)
+    generic = any(GENERIC_SUB_RE.match(s["title"]) for s in subs)
+    if len(order) == len(subs) and not generic:
+        return subs
+    doc_titles = {num: title for num, title in code_map.values()}
+    out = []
+    for num in order:
+        title = (table_titles.get(num) or doc_titles.get(num)
+                 or body_subs.get(num) or "Section " + str(num))
+        out.append({"id": str(num).zfill(2) + ".0", "title": title,
+                    "description": "", "items": groups[num]})
     return out
 
 
@@ -173,16 +359,16 @@ def extract_subsections(rows):
         if not texts:
             continue
         c0 = texts[0]
-        sm = SUBSECTION_RE.match(c0)
-        if sm:
+        hdr = parse_subsection_header(c0)
+        if hdr:
             if cur:
                 subs.append(cur)
-            best = sm.group(2).strip()
+            num, best = hdr
             for t in texts:
-                m = SUBSECTION_RE.match(t)
-                if m and len(m.group(2)) > len(best):
-                    best = m.group(2).strip()
-            cur = {"id": sm.group(1).zfill(2) + ".0", "title": best,
+                h = parse_subsection_header(t)
+                if h and len(h[1]) > len(best):
+                    best = h[1]
+            cur = {"id": str(num).zfill(2) + ".0", "title": best,
                    "description": "", "items": []}
             continue
         if ITEM_CODE_RE.match(c0):
@@ -196,9 +382,8 @@ def extract_subsections(rows):
             code, q, refs, ev = parse_item_cell(c0, qcell)
             if not q:
                 continue
-            item = {"code": code, "question": q, "references": refs}
-            if ev:
-                item["evidenceHint"] = ev
+            item = {"code": code, "question": q, "references": refs,
+                    "evidenceHint": ev or None}
             cur["items"].append(item)
     if cur:
         subs.append(cur)
@@ -309,7 +494,9 @@ def build_record(path, registry):
     doc = Document(str(path))
     rows = collect_rows(doc)
     meta = extract_metadata(rows)
-    subs = extract_subsections(rows)
+    body_subs = body_fallbacks(doc, meta)
+    subs = reconcile_subsections(extract_subsections(rows), body_subs,
+                                 code_headers_in_order(doc))
     program_number = derive_program_number(meta["title_raw"], path.name)
     title = derive_title(meta["title_raw"], path.name) or path.stem
     revised_iso = parse_date(meta["revised"]) if meta["revised"] else "2025-01-01"
@@ -388,7 +575,8 @@ def main():
         if registry and "category" not in record:
             unmatched.append((path.name, record["programNumber"], record["title"]))
         out_path = dst / (record["programNumber"] + "-" + record["slug"] + ".json")
-        out_path.write_text(json.dumps(record, indent=2, ensure_ascii=False))
+        out_path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n",
+                            encoding="utf-8")
         items_n = sum(len(s["items"]) for s in record["subsections"])
         written.append((path.name, out_path.name, len(record["subsections"]), items_n))
     print("Parsed", len(written), "files,", len(skipped), "skipped")

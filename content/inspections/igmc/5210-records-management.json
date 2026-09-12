@@ -11,7 +11,7 @@
   "sponsor": "AR (ARD)",
   "applicabilityLevel": "All Marine Corps commands and activities. Records Management (RM) is the responsibility of all Marines in uniform as well as civilian Marines and contractors. In keeping with the Headquarters Marine Corps 3-Phased Approach to electronic records management (ERM), questions within each of the subsections of this checklist lead to compliance in the RM program",
   "effectiveDate": "2025-09-23",
-  "lastVerified": "2025-09-16",
+  "lastVerified": "2026-09-11",
   "source": {
     "title": "IGMC Functional Area Checklist - Records Management",
     "publisher": "Inspector General of the Marine Corps"
@@ -130,7 +130,7 @@
     },
     {
       "id": "04.0",
-      "title": "CAPSTONE (This section applies to commands with billets identified in",
+      "title": "CAPSTONE (This section applies to commands with billets identified in General Records Schedule 6.1 located at: https://www.archives.gov/records-mgmt/grs.html",
       "description": "",
       "items": [
         {
@@ -171,8 +171,7 @@
           "code": "0501",
           "question": "Has the command submitted command chronologies to the Archives Branch, Marine Corps History Division, by the deadlines provided by receipt of letters and/or emails from the Archives Branch? Command historical summary files include the following elements: Copies of lineage and honors certificates Copy of streamer entitlement Copies of past (5) years of command chronologies Master copy of command/unit insignia and corresponding documentation/correspondence List of all property, facilities, and/or commemorative sites Note: Command chronologies are due NLT 90 days after the end of the reporting period: For semiannual submissions, due dates are 30 June and 31 December. For annual submissions, due dates are NLT 31 December. Note: For information on Command Chronologies, visit the Marine Corps History Division website at: https://www.usmcu.edu/Research/History-Division/, ‘Archives Branch’. MARADMIN 200/25",
           "references": [
-            "MCO 5750.1H, encl(1), Chap 5; Annex 5 of App A; and",
-            "MARADMIN 200/25"
+            "MCO 5750.1H, encl(1), Chap 5; Annex 5 of App A; and"
           ],
           "evidenceHint": null
         }

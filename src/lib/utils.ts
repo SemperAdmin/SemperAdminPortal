@@ -34,6 +34,7 @@ export function formatVerified(date: string): string {
   const d = new Date(date);
   if (isNaN(d.getTime())) return date;
   return d.toLocaleDateString("en-US", {
+    timeZone: "UTC",
     year: "numeric",
     month: "short",
     day: "numeric",

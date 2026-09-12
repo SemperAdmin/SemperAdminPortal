@@ -238,6 +238,7 @@ export function NavalLetterBuilder() {
             new TextRun({
               text: new Date(form.date)
                 .toLocaleDateString("en-US", {
+                  timeZone: "UTC",
                   year: "numeric",
                   month: "short",
                   day: "numeric",

@@ -8,10 +8,10 @@
     "admin",
     "commander"
   ],
-  "sponsor": "HQMC (MF)",
+  "sponsor": "M&RA (MF)",
   "applicabilityLevel": "All levels and types of commands",
-  "effectiveDate": "2025-05-15",
-  "lastVerified": "2025-03-24",
+  "effectiveDate": "2026-09-08",
+  "lastVerified": "2026-09-11",
   "source": {
     "title": "IGMC Functional Area Checklist - Marine Corps Sponsorship Program",
     "publisher": "Inspector General of the Marine Corps"
@@ -63,6 +63,6 @@
       ]
     }
   ],
-  "category": "Non-CoRE",
+  "category": "CoRE",
   "faName": "Marine Corps Sponsorship Program"
 }

@@ -106,7 +106,8 @@ export function IgmcNewsStrip() {
 }
 
 function formatShortDate(iso: string): string {
-  return new Date(iso).toLocaleDateString(undefined, {
+  return new Date(iso).toLocaleDateString("en-US", {
+    timeZone: "UTC",
     year: "numeric",
     month: "short",
     day: "numeric",

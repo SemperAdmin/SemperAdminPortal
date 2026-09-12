@@ -47,6 +47,7 @@ function formatDate(value: string | undefined): string {
   const d = new Date(value);
   if (isNaN(d.getTime())) return value;
   return d.toLocaleDateString("en-US", {
+    timeZone: "UTC",
     year: "numeric",
     month: "short",
     day: "numeric",

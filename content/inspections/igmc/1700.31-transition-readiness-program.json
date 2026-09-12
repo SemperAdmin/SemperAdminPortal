@@ -1,0 +1,117 @@
+{
+  "track": "igmc",
+  "programNumber": "1700.31",
+  "slug": "transition-readiness-program",
+  "title": "Transition Readiness Program (TRP)",
+  "summary": "All levels and types of commands. 9 items across the program.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "sponsor": "M&RA (MF)",
+  "applicabilityLevel": "All levels and types of commands",
+  "effectiveDate": "2025-05-15",
+  "lastVerified": "2026-09-11",
+  "source": {
+    "title": "IGMC Functional Area Checklist - Transition Readiness Program (TRP)",
+    "publisher": "Inspector General of the Marine Corps"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "UNIT-SPECIFIC ITEMS (All commands. This section also applies to other intermediate echelons of command with subordinate Unit Transition Coordinators)",
+      "description": "",
+      "items": [
+        {
+          "code": "0101",
+          "question": "Did the Commanding Officer (CO) appoint, in writing, Unit Transition Coordinators (UTCs) and Designees? Was the UTCN code reported?",
+          "references": [
+            "MCO 1700.31, par 3b(5)(c)",
+            "MARADMIN 632/19, par 11c",
+            "MARADMIN 632/19, par 5"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0102",
+          "question": "Did the UTC(s) complete UTC training with the installation’s TRP office no later than 45 days following appointment?",
+          "references": [
+            "MCO 1700.31, par 3b(5)(d)",
+            "MARADMIN 632/19, par 11c"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0103",
+          "question": "Does the UTC facilitate all unit transition activities and coordinate with appropriate personnel to identify, notify and track all eligible Marines within the unit?",
+          "references": [
+            "MCO 1700.31, par 3b(6)(a)",
+            "MARADMIN 632/19, par 11c"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0104",
+          "question": "Does the CO ensure that all Active Duty (AD) and Reserve Component (RC) Marines complete mandatory Individualized Initial Counseling (IC) beginning 24 months from retirement, or 18 months from separation, demobilization, or deactivation, but no later than 12 months prior to End of Active Service (EAS) date?",
+          "references": [
+            "10 USC ch. 58, § 1142",
+            "DoDI 1332.35, Section 6",
+            "MCO 1700.31, par 3b (5)(b)",
+            "MARADMIN 632/19, par 5"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0105",
+          "question": "Does the CO ensure that all AD and RC Marines attend the mandatory Pre-separation Counseling Brief, beginning 24 months from retirement, or 18 months from separation, demobilization, or deactivation, but no later than 12 months prior to EAS date?",
+          "references": [
+            "10 USC ch. 58, § 1142",
+            "DoDI 1332.35, Section 5",
+            "MCO 1700.31, par 3b (5)(b)",
+            "MARADMIN 632/19, par 5"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0106",
+          "question": "Does the CO ensure that all AD and RC Marines attend mandatory TRS courses and 2-day tracks, beginning 24 months from retirement, or 18 months from separation, demobilization, or deactivation, but no later than 6 months prior to EAS date?",
+          "references": [
+            "10 USC ch. 58, § 1144",
+            "MCO 1700.31, par 3b (5)(e)",
+            "MARADMIN 632/19, par 7"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0107",
+          "question": "Does the CO or Designee personally conduct Commander’s Verification no later than 90 days prior to EAS, using the DD Form 2648 eForm?",
+          "references": [
+            "DoDI 1332.35, Section 9",
+            "MARADMIN 632/19, par 9"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0108",
+          "question": "Does the UTC coordinate entry of the training event code “TA” (Transition Readiness Seminar) and training event code “TZ” (Transition Readiness Capstone)?",
+          "references": [
+            "MCO 1700.31, par 3b (4)(u)",
+            "MARADMIN 632/19, par 7c"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0109",
+          "question": "Does the UTC ensure that the final completed DD Form 2648 is filed in the Command’s official files for 12 months following the Marine’s EAS date?",
+          "references": [
+            "MCO 1700.31, par 3b(5)(j)",
+            "MARADMIN 632/19, par 9b"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    }
+  ],
+  "category": "CoRE",
+  "faName": "Transition Readiness Program (TRP)"
+}

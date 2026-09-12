@@ -1,14 +1,17 @@
 {
-  "lastUpdated": "2026-02-02",
+  "lastUpdated": "2026-09-11",
   "buckets": [
     {
       "id": "core",
       "label": "CoRE",
-      "description": "Forty functional areas designated Critical or Required Evaluation. Inspected during Independent Command Inspections and Comprehensive Command Inspections.",
+      "description": "Forty-three functional areas designated Critical or Required Evaluation. Inspected during Independent Command Inspections and Comprehensive Command Inspections.",
       "items": [
         "Antiterrorism",
         "Body Composition and Military Appearance",
-        "Career Planning",
+        {
+          "label": "Career Planning",
+          "programKey": "1040-career-planning-program"
+        },
         "Casualty Affairs",
         "Consumer Level Supply",
         "Cyber Security Management",
@@ -25,14 +28,22 @@
         "Legal Administration",
         "Marine Corps Martial Arts",
         "Marine Corps Safety Management Systems",
+        {
+          "label": "Marine Corps Sponsorship",
+          "programKey": "1320-marine-corps-sponsorship-program"
+        },
         "Military Awards",
+        "Operational Stress Control and Readiness",
         "Operations Security",
         "Oversight-Intel/Non-Intel Sensitive Activities",
         {
           "label": "Performance Evaluation System",
           "programKey": "1610-performance-evaluation-system"
         },
-        "Personal Financial Management",
+        {
+          "label": "Personal Financial Management",
+          "programKey": "1700.37-personal-financial-management-program"
+        },
         "Physical Fitness and Combat Fitness",
         "Physical Fitness and Force Fitness Instructor",
         "Physical Security",
@@ -42,12 +53,19 @@
         },
         "Prohibited Activities and Conduct Prevention and Response Program",
         "Records Management",
-        "Request Mast Procedures",
+        {
+          "label": "Request Mast Procedures",
+          "programKey": "1700.23-request-mast-procedures"
+        },
         "Separation, Retirement, and Limited Duty",
         "Sexual Assault Prevention and Response",
+        "Single Marine Program",
         "Substance Assessment and Counseling",
         "Suicide Prevention",
-        "Transition Readiness",
+        {
+          "label": "Transition Readiness",
+          "programKey": "1700.31-transition-readiness-program"
+        },
         "Unaccompanied Housing",
         "Unit, Personal, and Family Readiness",
         "Unit Readiness",
@@ -56,7 +74,10 @@
           "label": "Victim and Witness Assistance",
           "programKey": "5800.16-victim-and-witness-assistance-program"
         },
-        "Voting Assistance",
+        {
+          "label": "Voting Assistance",
+          "programKey": "1742.1-voting-assistance-program"
+        },
         "Water Survival Training"
       ]
     },
@@ -89,11 +110,19 @@
       "description": "Applied when the command holds the listed mission.",
       "items": [
         "Assistance and Hotline",
-        "Command Inspection",
+        {
+          "label": "Command Inspection",
+          "programKey": "5040-command-inspection-program"
+        },
+        "Communication Strategy and Operations",
         "Critical Infrastructure",
+        "Formal School Management",
         "Marine Corps Combat Readiness Evaluation",
         "Marine Corps Fleet Band",
-        "Postal Affairs and Official Mail - Military Postal Activity"
+        {
+          "label": "Postal Affairs and Official Mail - Military Postal Activity",
+          "programKey": "5110.1-postal-affairs-and-official-mail-program-military-postal-activity"
+        }
       ]
     }
   ]
