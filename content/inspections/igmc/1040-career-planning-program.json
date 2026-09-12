@@ -1,0 +1,294 @@
+{
+  "track": "igmc",
+  "programNumber": "1040",
+  "slug": "career-planning-program",
+  "title": "Career Planning Program",
+  "summary": "All levels from the Battalion/Squadron to the CG and affects every type of command unit (Air, Ground, Logistics, and Installations). 24 items across the program.",
+  "roles": [
+    "admin",
+    "commander",
+    "leader"
+  ],
+  "sponsor": "M&RA (MMEA)",
+  "applicabilityLevel": "All levels from the Battalion/Squadron to the CG and affects every type of command unit (Air, Ground, Logistics, and Installations)",
+  "effectiveDate": "2024-03-07",
+  "lastVerified": "2026-09-11",
+  "source": {
+    "title": "IGMC Functional Area Checklist - Career Planning Program",
+    "publisher": "Inspector General of the Marine Corps"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "COMMAND GROUP (Applies to all levels of Career Planning programs)",
+      "description": "",
+      "items": [
+        {
+          "code": "0101",
+          "question": "Does the command provide the Career Planner an appropriate working area and required resources per the references?",
+          "references": [
+            "MCO 1040.31, chap 2, para 4.a-b",
+            "MCO 1040R.31, chap 2, para 7.a-c"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0102",
+          "question": "Does the command certify annually the Career Planner remains eligible for assignment incentive pay?",
+          "references": [
+            "MCO 7220.12R, para 5.b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0103",
+          "question": "Does the command process Career Planner performance evaluations per the references? Reference MCO 1040.31, chap 1.3.b(e); MCO 1040R.31, chap 1.3.c(1)",
+          "references": [],
+          "evidenceHint": null
+        },
+        {
+          "code": "0104",
+          "question": "Does the commanding officer grant written authority to conduct interviews on their behalf?",
+          "references": [],
+          "evidenceHint": null
+        },
+        {
+          "code": "0105",
+          "question": "Does the Commanding Officer, or those delegated in writing to conduct EAS/RECC interviews, make reenlistment recommendations and assign appropriate reenlistment eligibility codes?",
+          "references": [
+            "MCO 1040.31, chap 3, para 1.g",
+            "MCO 1040R.31, chap 3, para 6",
+            "MCO 1040.31, chap 3, para 2.b.(3)(d)",
+            "MCO 1900.16 W/CH 2, Appendix I"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0106",
+          "question": "Does the Interview Management System or the examination of Career Planning Contact Records identify any missed Commanding Officer EAS/RECC interviews within the prescribed timeline?",
+          "references": [
+            "MCO 1040.31, chap 3, para 2.b",
+            "MCO 1040R.31, chap 3, Para 5"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0107",
+          "question": "Does the examination of the Commanding Officer EAS interviews confirm the following are being completed: reviewed the Marine's plans for separation, reiterated the advantages of remaining in the Marine Corps, informed the Marine about the benefits of joining the Selected Marine Corps Reserve and Transition Assistance Management Programs, and advised on the Marine 4 Life program as well as the mandatory pre-separation briefing requirement? Reference 1040.31, chap 3, Para 2b (3).",
+          "references": [],
+          "evidenceHint": null
+        },
+        {
+          "code": "0108",
+          "question": "Does the Commanding Officer review all reenlistment approvals prior to executing the reenlistment? Note: Approved TFRS RELM",
+          "references": [
+            "MCO 1040.31, chap 4, para 3.b",
+            "MCO 1040R.31 chap 5, para 11"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0109",
+          "question": "Does the Commanding Officer sign and date all RELM responses? Note: Additional sources in TFRS RELM responses; TFRS WEBSITE - training page",
+          "references": [
+            "MCO 1040.31, chap 6, para 2"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0110",
+          "question": "Does the Command Senior Enlisted Leader screen personnel within the command for assignment to special duty assignments, screen able “B” billets?",
+          "references": [
+            "NAVMC 1200.J, Para 3156-6, d (1), (J)",
+            "NAVMC 1200.J, Para 3156-6, d (2)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0111",
+          "question": "Does the Command Senior Enlisted Leader ensure the Commanders re-certification for special duty assignments and screenable “B” billets are conducted per the prescribed timelines?",
+          "references": [
+            "MCO 1326.6"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    },
+    {
+      "id": "02.0",
+      "title": "UNIT CAREER PLANNER FUNCTIONS (Applies to any Career Planner program with an enlisted population.)",
+      "description": "",
+      "items": [
+        {
+          "code": "0201",
+          "question": "Does the Career Planner have additional duties that either require the preponderance of their time or compromise the Career Planner's position (SACO, Legal NCO, EOR, UTC).",
+          "references": [
+            "MCO 1040.31, chap 2, para 7.d",
+            "MCO 1040R.31, chap 2, para 4",
+            "MARADMIN 632/19"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0202",
+          "question": "Does the Career Planner maintain records per the references? MCO 1040.31, chap 6, para 1.b.; MCO1040R.31 chap 7, para 2.a; MCO 5210.11F, OMB M-19-21",
+          "references": [],
+          "evidenceHint": null
+        },
+        {
+          "code": "0203",
+          "question": "Does the Interview Management System or examination of Career Planning Contact Records identify any missed Career Planner interviews within the prescribed timelines?",
+          "references": [
+            "MCO 1040.31, chap 3, para 2.b",
+            "MCO 1040R.31, chap 5"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0204",
+          "question": "Does the examination of the Interview Management System and/or Career Planning Contact Records reveal the Career Planner is conducting interviews to gain an understanding of the true reasons why Marines do or do not desire to reenlist? Reference MCO 1040.31, chap 3, para 1.c.; MCO 1040R.31, chap 3, par 1.c.",
+          "references": [],
+          "evidenceHint": null
+        },
+        {
+          "code": "0205",
+          "question": "Does the examination of the First Term interviews confirm the Career Planner fulfilled the following tasks: fully apprised the Marine of the benefits of a Marine Corps career and incentives related to reenlistment, the need for a complete and competitive performance record, determined if the Marine meets all prerequisites for reenlistment/lateral move, advised the Marine on any required corrective action is initiated if necessary (for example, retaking the AFQT) and familiarized the Marine with the FTAP process?",
+          "references": [
+            "1040.31, chap 3, Para 2b (1)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0206",
+          "question": "Does the examination of the Careerist interview confirm that the Career Planner fulfilled the following tasks: advised the career Marine of current options and benefits such as SRBP and special duty assignments, determined reenlistment eligibility, and, if applicable, counseled the Marine on enlisted career force controls and involuntary separation pay? Reference 1040.31, chap 3, Para 2b (2).",
+          "references": [],
+          "evidenceHint": null
+        },
+        {
+          "code": "0207",
+          "question": "Does the examination of the EAS interviews confirm that the Career Planner fulfilled the following tasks: reviewed the Marine's plans for separation, reiterated the advantages of remaining in the Marine Corps, informed the Marine about the benefits of joining the Selected Marine Corps Reserve and Transition Assistance Management Programs, and advised on the Marine 4 Life program as well as the mandatory pre-separation briefing requirement? Reference 1040.31, chap 3, Para 2b (3).",
+          "references": [],
+          "evidenceHint": null
+        },
+        {
+          "code": "0208",
+          "question": "Does examination of the Interview Management System reveal the Career Planner properly documented, completed, and archived interviews?",
+          "references": [
+            "MCO 1040R.31, chap 3, para 3.c.(1)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0209",
+          "question": "Does examination of the Interview Management System reveal during required interviews, that the Career Planner educates Marines on required topics?",
+          "references": [
+            "MCO 1040R.31, chap 3, para 5.e"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0210",
+          "question": "Does the Career Planner, and requesting Marine sign and date all RELM responses? Note: Additional sources in TFRS RELM responses; TFRS WEBSITE - training page",
+          "references": [
+            "MCO 1040.31, chap 6, para 2"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0211",
+          "question": "Does the Career Planner accurately complete the NAVMC 321a (Agreement to Extend Enlistment), DD Form 4(Reenlistment Contract), and required Statement of Understanding(s)?",
+          "references": [
+            "MCO 1040.31, chap 2, para 2.b(1)"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    },
+    {
+      "id": "03.0",
+      "title": "CAREER PLANNER STAFF NONCOMMISSIONED OFFICER-IN-CHARGE (SNCOIC) (Applies to all Career Planners in a SNCOIC billet)",
+      "description": "",
+      "items": [
+        {
+          "code": "0301",
+          "question": "Does the SNCOIC conduct, and document required 2000/2500 level individual training events for subordinate Career Planners per the references? Note: Additional sources are Advanced Tools for Coaching (AT4C) Participant Guide, T&R Manual",
+          "references": [
+            "MCO 1040.31, chap 2, para 2.a.(8)",
+            "MCO 1040R.31, chap 2, para 6.b.(8b)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0302",
+          "question": "Does the Career Planner SNCOIC facilitate the implementation of the retention plan within the command? Note: Additional sources are Current FY Retention Campaign Plans (MARADMINs); Current TFRS Messages",
+          "references": [
+            "MCO 1040.31, chap 2, para 2.a.(1)",
+            "MCO 1040R.31, chap 2, para 6.b.(2)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0303",
+          "question": "Does the Career Planner SNCOIC advise the Commanders on Marine Corps enlisted retention matters?",
+          "references": [
+            "MCO 1040.31, chap 2, para 2.a.(4)",
+            "MCO 1040R.31, chap 2, para 6.b.(4)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0304",
+          "question": "Does the SNCOIC conduct quality control on all RELM requests submitted by subordinate commands? Note: Additional sources are Current TFRS Messages, Current FY Retention Campaign Plan MARADMIN",
+          "references": [
+            "MCO 1040.31, chap 2, para 2.a.(10)",
+            "MCO 1040R.31 chap 2, para 6.b.(10)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0305",
+          "question": "Does the SNCOIC conduct Career Planner evaluations to evaluate the effectiveness and knowledge of subordinate Career Planners? Note: Additional sources are Advanced Tools for Coaching (AT4C) Participant Guide, T&R MANUAL",
+          "references": [
+            "MCO 1040.31, chap 2, para 2.a.(6)",
+            "MCO 1040R.31, chap 2, para 6.b.(5)"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    },
+    {
+      "id": "04.0",
+      "title": "RESERVE COMMAND GROUP (Applies to commands with a Reserve Monitor Command Code)",
+      "description": "",
+      "items": [
+        {
+          "code": "0401",
+          "question": "Does the Commanding Officer or Inspector Instructor assign Collateral Duty Career Planners who meets the requirements for each unit/site without an assigned PMOS 4821 Career Planner?",
+          "references": [
+            "MCO 1040R.31, chap 2, para 3.b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0402",
+          "question": "Does the command facilitate Collateral Duty Career Planners completion a Reserve Career Planner Course within one year of assignment?",
+          "references": [
+            "MCO 1040R.31, chap 2, para 5.b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0403",
+          "question": "Does the Career Planner / Career Planner SNCOIC conduct annual site visits within the command?",
+          "references": [
+            "MCO 1040R.31, chap 2, para 6.a.(5)",
+            "MCO 1040R.31, chap 2, para 6.b.(6)"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    }
+  ],
+  "category": "CoRE",
+  "faName": "Career Planning Program"
+}

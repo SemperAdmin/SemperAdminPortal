@@ -40,7 +40,8 @@ export default function InspectionsHub() {
     .map((p) => new Date(p.lastVerified).getTime())
     .reduce((a, b) => (b > a ? b : a), 0);
   const lastRefreshLabel = lastRefresh
-    ? new Date(lastRefresh).toLocaleDateString(undefined, {
+    ? new Date(lastRefresh).toLocaleDateString("en-US", {
+        timeZone: "UTC",
         year: "numeric",
         month: "short",
         day: "2-digit",

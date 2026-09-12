@@ -10,7 +10,7 @@
   ],
   "sponsor": "M&RA (MF)",
   "effectiveDate": "2026-04-15",
-  "lastVerified": "2026-05-06",
+  "lastVerified": "2026-09-11",
   "source": {
     "title": "IGMC Functional Area Checklist - Postal Affairs and Official Mail Program - Organization",
     "publisher": "Inspector General of the Marine Corps"
@@ -18,7 +18,7 @@
   "subsections": [
     {
       "id": "01.0",
-      "title": "Items",
+      "title": "Unit Mail Room (UMR)",
       "description": "",
       "items": [
         {
@@ -473,7 +473,7 @@
     },
     {
       "id": "02.0",
-      "title": "Section 2",
+      "title": "Command Official Mail Program",
       "description": "",
       "items": [
         {
@@ -632,7 +632,7 @@
     },
     {
       "id": "03.0",
-      "title": "Section 3",
+      "title": "Official Postage Application. This is applicable for all commands that have official mail metering sites. Subsection 2 must be completed when Subsection 3 is applicable",
       "description": "",
       "items": [
         {

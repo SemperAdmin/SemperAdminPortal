@@ -29,6 +29,7 @@ export function LastVerified({
   const d = typeof date === "string" ? new Date(date) : date;
   const status = classifyFreshness(d, referenceDate);
   const formatted = d.toLocaleDateString("en-US", {
+    timeZone: "UTC",
     year: "numeric",
     month: "short",
     day: "numeric",

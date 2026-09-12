@@ -1,0 +1,707 @@
+{
+  "faNumber": "1700.23",
+  "sourceDoc": "MCO 1700.23G Request Mast Procedures, 21 Jun 2019. Drafted from order text against the FAC revised 29 Jul 2024. Quote walk 2026-09-11: 35 of 35 quotes matched verbatim against the extracted order text. Inspection steps, questions, and verification await SME review.",
+  "lastVerified": "2026-09-11",
+  "verifiedAtSource": false,
+  "items": {
+    "0101": {
+      "title": "PERSONNEL FAMILIAR WITH REQUEST MAST POLICY",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1700.23G, Par 4b(2)(b)",
+            "text": "Ensure that all personnel are familiar with request mast policy and procedures contained in this Order."
+          },
+          {
+            "citation": "MCO 1700.23G, Par 4a(1)",
+            "text": "All commanders down to the lowest administrative level shall institute a request mast program that conforms to this Order. All personnel shall be informed of the contents of this Order upon publication."
+          },
+          {
+            "citation": "MCO 1700.23G, Par 4c(1)",
+            "text": "This Order describes the process and procedural aspects of the request mast program and is the single request mast directive for the Marine Corps. Command request mast orders are no longer required to be produced or published."
+          },
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 2, Par 1",
+            "text": "All commanders down to the lowest administrative level with NJP authority shall institute the commander's request mast program in accordance with this Order. Commanders shall ensure all personnel are informed of request mast policies and procedures."
+          }
+        ],
+        "summary": "Every commander with NJP authority runs a request mast program and informs all personnel of the policy and procedures in MCO 1700.23G. The Order is the single directive. A local command order is no longer required, and a stale local order does not satisfy the requirement on its own. The checklist accepts read boards, websites, SharePoint, social media, or training rosters as proof of familiarization."
+      },
+      "howToInspect": [
+        {
+          "step": "Ask How Personnel Are Informed",
+          "actions": [
+            "Ask the commander or adjutant to describe every channel used to make personnel familiar with request mast policy.",
+            "Accept any combination of read board, unit website, SharePoint, social media, check-in brief, or formal class.",
+            "Reject an answer built on a cancelled local request mast order with no reference to MCO 1700.23G."
+          ],
+          "callout": "Commander unable to describe any familiarization method",
+          "severity": "finding"
+        },
+        {
+          "step": "Verify The Evidence",
+          "actions": [
+            "View the read board, page, or SharePoint site named by the command and confirm MCO 1700.23G or a summary of it is posted.",
+            "Review training rosters or check-in sheets for request mast familiarization entries with dates and signatures.",
+            "Confirm the posted material cites MCO 1700.23G, not 1700.23F or a local order."
+          ],
+          "callout": "Familiarization material missing, outdated, or cites a cancelled order",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Spot Check Marines",
+          "actions": [
+            "Ask two or three Marines of different grades where request mast policy is posted and how to submit a NAVMC 11296.",
+            "Note gaps between the command's stated method and what Marines know."
+          ],
+          "callout": "Marines unaware of where policy is posted or how to request mast",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Read board copy is the cancelled 1700.23F.",
+            "Familiarization rests on a local order the Order says is no longer required, with no reference to 1700.23G.",
+            "Training rosters exist for one cohort only, new joins never briefed.",
+            "SharePoint link named by the command is dead or restricted."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where is MCO 1700.23G posted for your Marines?",
+        "How does a new join learn request mast procedures during check-in?",
+        "When was the last request mast class, and who attended?",
+        "Do you still publish a local request mast order?"
+      ],
+      "verification": [
+        "Read board, website, or SharePoint post of MCO 1700.23G viewed in person.",
+        "Training roster or check-in sheet with request mast familiarization, dated and signed.",
+        "Posted material references MCO 1700.23G.",
+        "Two or three Marines interviewed know where policy is posted."
+      ],
+      "verified": false
+    },
+    "0201": {
+      "title": "APPLICATIONS PROCESSED WITHOUT DELAY, DELAYS ANNOTATED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 2, Par 3",
+            "text": "Each intermediate commander, up to the commander with whom the Marine desires an audience, will offer to resolve the Marine's request mast, but must do so without intimidation. In general, there should be no more than one working day delay at any level of command and the request mast will be heard at the earliest reasonable time. Explanations for delay shall be provided in writing on the NAVMC 11296 and acknowledged by the commander and the Marine."
+          },
+          {
+            "citation": "MCO 1700.23G, Par 4b(2)(c)",
+            "text": "Offer to process and resolve a Marine's request mast without delay. There should be no more than one working day delay from when the request is presented to when the Marine has an audience with the commander. This applies at each level of the command."
+          },
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 2, Par 3 (emergency cases)",
+            "text": "Commanders shall hear emergency cases as soon as identified. To determine whether a request mast is an emergency case, commanders must consider the following: a. Whether a Marine is subject to an ongoing hardship (e.g., pay, family emergencies, if the well-being of a person is in jeopardy, etc.). b. The severity of the hardship. c. If the issue is time sensitive and will remain unresolved upon a certain date, time, or expected event in the immediate future."
+          },
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 2, Par 4",
+            "text": "Commanders shall make every effort to provide Marines an opportunity to request mast in person. If a personal appearance, to include telephonic or video communications is not practical, the commander shall respond in writing to the Marine. Additionally, the commander shall provide an explanation of why a personal appearance was not practical and annotate such on the NAVMC 11296."
+          }
+        ],
+        "summary": "One working day is the standard at every level of command from presentation of the NAVMC 11296 to the audience with the commander. Any delay past one working day is explained in writing on the form and acknowledged by both the commander and the Marine. Emergency cases are heard as soon as identified. The Marine gets an in-person audience, or the form records why one was not practical and the commander answers in writing."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The Retained Applications",
+          "actions": [
+            "Request every NAVMC 11296 retained under records schedule 1000-34 for the inspection period.",
+            "Build a sample across intermediate commanders and across resolved, forwarded, and denied outcomes."
+          ],
+          "callout": "Command unable to produce retained applications",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Timelines At Each Level",
+          "actions": [
+            "Compare the date the Marine presented the form with the date of each intermediate commander's action and the date of the audience.",
+            "Flag any gap over one working day at any single level.",
+            "For each flagged gap, confirm a written explanation on the form, acknowledged by the commander and the Marine."
+          ],
+          "callout": "Delay over one working day with no written, acknowledged explanation",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Emergency And In-Person Handling",
+          "actions": [
+            "Identify any application with a pay, family, or welfare hardship and confirm it was heard on identification, not queued.",
+            "Where the audience was written rather than in person, confirm the form explains why a personal, telephonic, or video appearance was not practical."
+          ],
+          "callout": "Emergency case queued, or written response with no explanation of why in-person was not practical",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Intermediate commander held the form several days with no annotation.",
+            "Delay explanation present but signed by the commander only.",
+            "Written response used for convenience with no annotation of why in-person was not practical.",
+            "No process to identify emergency cases on receipt."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How is a NAVMC 11296 logged when it enters the chain, and who tracks the one-working-day clock at each level?",
+        "Show me a delayed case and the annotation on the form.",
+        "How do you identify an emergency request mast on receipt?",
+        "When was the last written-only disposition, and why was an appearance not practical?"
+      ],
+      "verification": [
+        "Sample of NAVMC 11296 with dates at each routing level.",
+        "No gap over one working day at any level, or a written explanation acknowledged by commander and Marine.",
+        "Emergency cases show same-day or next-available handling.",
+        "Written responses carry the annotation required by Chapter 2, paragraph 4."
+      ],
+      "verified": false
+    },
+    "0202": {
+      "title": "REQUEST MAST RECORDS SAFEGUARDED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1700.23G, Par 5a(1)",
+            "text": "Records created as a result of this Order shall be managed according to National Archives and Records Administration (NARA)-approved dispositions per references (j) and (k) to ensure proper maintenance, use, accessibility and preservation, regardless of format or medium. Refer to reference (l) for Marine Corps records management policy and procedures."
+          },
+          {
+            "citation": "MCO 1700.23G, Par 5a(2)",
+            "text": "Request mast records shall be properly safeguarded and maintained separately from service records."
+          },
+          {
+            "citation": "MCO 1700.23G, Par 5a(3)",
+            "text": "The command shall manage request mast records in accordance with record schedule 1000-34."
+          },
+          {
+            "citation": "MCO 1700.23G, Par 5b",
+            "text": "Any misuse or unauthorized disclosure of Personally Identifiable Information (PII) may result in both civil and criminal penalties. The Department of the Navy (DON) recognizes that the privacy of an individual is a personal and fundamental right that shall be respected and protected."
+          },
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 2, Par 1",
+            "text": "NAVMC 11296 is the Marine Corps Request Mast Application. Electronic files shall be treated equivalently as paper media as described in paragraph 1(h) and paragraph 3 of chapter 5 in this order."
+          }
+        ],
+        "summary": "Completed request mast records are kept apart from service records, protected as PII, and retained under records schedule 1000-34. Electronic copies carry the same protections as paper. The item covers every application where the unit completed Part II or Part III, meaning the commander acted on it."
+      },
+      "howToInspect": [
+        {
+          "step": "Locate The Records",
+          "actions": [
+            "Ask where completed NAVMC 11296 forms are stored, both paper and electronic.",
+            "Confirm they are not filed in the service record, the unit personnel folder, or an open share."
+          ],
+          "callout": "Request mast records filed with service records or in an open location",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Access Control",
+          "actions": [
+            "Confirm paper records sit in a locked container with access limited to the commander and named staff.",
+            "Confirm electronic records sit in a restricted folder with permissions reviewed, not a unit-wide drive."
+          ],
+          "callout": "Records accessible beyond the commander and designated staff",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Retention",
+          "actions": [
+            "Ask the records manager for the schedule 1000-34 disposition applied to request mast files.",
+            "Confirm records within the retention period are present and none were destroyed early."
+          ],
+          "callout": "No disposition applied or records destroyed inside the retention period",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Copies of NAVMC 11296 placed in the SRB or OMPF.",
+            "Scanned forms on a shared drive with unit-wide read access.",
+            "No record of the schedule 1000-34 disposition.",
+            "Sealed applications opened and filed by admin staff."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where are completed request mast forms kept, and who holds the key or the folder permissions?",
+        "Are any request mast documents filed in service records?",
+        "What disposition under schedule 1000-34 applies to these files?",
+        "How are electronic copies protected?"
+      ],
+      "verification": [
+        "Storage location viewed, separate from service records.",
+        "Access limited to commander and named staff, paper and electronic.",
+        "Schedule 1000-34 disposition identified by the records manager.",
+        "Retained records present for the full period."
+      ],
+      "verified": false
+    },
+    "0203": {
+      "title": "APPLICATIONS CORRECTLY FINALIZED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 2, Par 2",
+            "text": "Request mast applications shall be submitted using NAVMC 11296 via the chain of command to the commander with whom the Marine desires to request mast. In addition to processing this form as a hard copy document, NAVMC 11296 has the capability of being digitally signed and has expandable text boxes where Marines and commanders can enter data pertaining to the request mast."
+          },
+          {
+            "citation": "MCO 1700.23G, Par 4b(2)(f)",
+            "text": "The commander shall annotate that the request mast was denied in Part II, Section 9 (if the commander is the audience sought or agreed to by the Marine) and state the reason explained to the Marine for the denial in Part III, Section 10 of NAVMC Form 11296, \"Marine Corps Request Mast Application.\""
+          },
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 3, Par 1c",
+            "text": "When a request mast addressed to the CG is resolved at a lower level, the Marine shall make an annotation in block 11 of the NAVMC 11296 indicating that he or she voluntarily disclosed the request mast to a commander who was subordinate to the commander originally requested in Block 5a and the Marine fully understands and accepts the disposition of the grievance. The Marine and a witness will jointly sign and date this statement."
+          },
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 3, Par 1d",
+            "text": "Upon conclusion of the request mast, the Marine shall initial the NAVMC 11296 to indicate that he or she has had the opportunity to communicate directly with the CG and was informed of any action(s) to be taken by the CG regarding the request mast."
+          }
+        ],
+        "summary": "Every retained NAVMC 11296 is complete. All signatures, dates, and fields are filled, hard copy or digital. The commander's signature date is the date the mast was held and a probable disposition given to the Marine. Denials are annotated in Part II Section 9 with the reason in Part III Section 10. A CG-addressed request resolved lower carries the block 11 statement signed by the Marine and a witness. The Marine initials the form at conclusion."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample Retained Forms",
+          "actions": [
+            "Select retained NAVMC 11296 forms across outcomes: resolved at first level, forwarded, resolved below the addressed commander, and denied.",
+            "Work each form part by part."
+          ],
+          "callout": "No retained forms available for review",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Completeness",
+          "actions": [
+            "Confirm every required field in Parts I through IV is filled, with no blank signature or date blocks.",
+            "Confirm digital signatures validate where the form was signed electronically."
+          ],
+          "callout": "Blank signature, date, or required field on a retained form",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check The Commander's Date And Disposition",
+          "actions": [
+            "Compare the commander's signature date with the date of the audience recorded on the form or in the tracker.",
+            "Confirm a probable disposition was stated to the Marine on the day of the mast.",
+            "Confirm the Marine's initials or acknowledgement at conclusion."
+          ],
+          "callout": "Commander signature dated before or well after the mast, or no disposition recorded",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Special Annotations",
+          "actions": [
+            "Denials: Part II Section 9 marked denied and Part III Section 10 states the reason given to the Marine.",
+            "CG-addressed requests resolved lower: block 11 statement present, signed and dated by the Marine and a witness."
+          ],
+          "callout": "Denial or lower-level resolution without the required annotation",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Commander signed the form days after the audience.",
+            "Part IV never completed by the Marine.",
+            "Denial recorded in a memo but not on the form.",
+            "Block 11 statement missing a witness signature."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Walk me through how a form moves from Part I to Part IV in your command.",
+        "Who checks the form for completeness before it is filed?",
+        "Show me a denied application and where the reason is recorded.",
+        "Show me a CG-addressed request resolved at your level."
+      ],
+      "verification": [
+        "Sample of retained NAVMC 11296 with all parts complete.",
+        "Commander signature date matches the mast date and a disposition is recorded.",
+        "Denials annotated in Part II Section 9 and Part III Section 10.",
+        "Block 11 statements signed by Marine and witness where applicable."
+      ],
+      "verified": false
+    },
+    "0204": {
+      "title": "DENIAL REPORTING REQUIREMENTS EXECUTED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 1, Par 5",
+            "text": "Only the commander with whom the Marine is requesting an audience can deny a request mast. Commanders should carefully evaluate each request mast to determine if other peripheral issues should be addressed. Accordingly, commanders should make every attempt to hear the Marine's presentation of matters before making a decision to deny a request mast. The commander shall explain to the Marine why the request mast is denied and if appropriate, what procedure must be followed to resolve the issue. The authority to deny a request mast includes authority to refuse to further process the request mast. Whenever a commander denies a request mast, he or she shall forward a report of the denial to the first GO via the chain of command within five working days. The correspondence shall include the basis surrounding the denial and affirmation that the Marine understands why the request was denied. No such report needs to be made in cases where the commander denying the request mast is the first GO in the chain of command; however, the request mast must be processed in accordance with paragraph 4.b.(2)(f) of this Order."
+          },
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 1, Par 4",
+            "text": "A commander may deny a request mast application if there is another specific avenue of redress available to the Marine, such as: a. Actions under the UCMJ. Reference (d) provides for the protection of the rights of a Marine at every stage of disciplinary action and for investigations through final review or appeal. Therefore, a commander may deny a request mast that includes an element of disciplinary action, whether contemplated, pending, in progress, or final. Request mast is not to be used as a means of collateral attack against the proceedings, punishment, findings, or sentence resulting from disciplinary action brought under the UCMJ. b. Involuntary Administrative Separations. Reference (e), chapters 4 and 6, contain provisions for the protection of the rights of Marines being processed for involuntary administrative separation. Accordingly, commanders may deny a request mast that has at its core a grievance involving involuntary administrative discharge proceedings, whether contemplated, pending, in progress, or final. c. Complaints under Article 138, UCMJ and Article 1150, U.S. Navy Regulations. Chapter III of reference (f) contains guidance for the preparation, submission, and processing of complaints under Article 138, UCMJ, and Article 1150 of reference (a). Commanders may deny a request mast if its subject is an ongoing Article 138 or 1150 investigation."
+          },
+          {
+            "citation": "MCO 1700.23G, Par 4b(2)(f)",
+            "text": "When matters cannot or should not be resolved using the request mast program due to other appropriate forms of redress, explain to the Marine why action will not be taken to attempt to resolve the grievance and advise the marine as to the proper avenue of redress, if there is one."
+          }
+        ],
+        "summary": "Only the commander the Marine addressed denies a request mast, and only where another avenue of redress exists: UCMJ action, involuntary administrative separation, or an Article 138 or 1150 complaint. The commander explains the denial and the proper avenue to the Marine, annotates the form, and forwards a denial report to the first General Officer via the chain within five working days. The report states the basis and affirms the Marine understands. A first GO denying at their own level files no report but still processes the form under paragraph 4b(2)(f)."
+      },
+      "howToInspect": [
+        {
+          "step": "Identify Denials",
+          "actions": [
+            "From the tracker and retained forms, list every application denied during the inspection period.",
+            "Confirm the denying officer was the commander the Marine addressed, not an intermediate."
+          ],
+          "callout": "Denial by an intermediate commander not addressed in the application",
+          "severity": "finding"
+        },
+        {
+          "step": "Check The Basis",
+          "actions": [
+            "Confirm each denial rests on an avenue of redress named in Chapter 1 paragraph 4.",
+            "Confirm the form shows the Marine was told why and was pointed to the proper avenue."
+          ],
+          "callout": "Denial with no qualifying avenue of redress or no explanation to the Marine",
+          "severity": "finding"
+        },
+        {
+          "step": "Check The Report To The First GO",
+          "actions": [
+            "For each denial, locate the report forwarded via the chain to the first General Officer.",
+            "Confirm the date is within five working days of the denial.",
+            "Confirm the report states the basis and affirms the Marine understands the denial."
+          ],
+          "callout": "Denial with no report, a late report, or a report missing the affirmation",
+          "severity": "finding"
+        },
+        {
+          "step": "No Denials On Record",
+          "actions": [
+            "Ask the commander to state the reporting requirement without notes: who receives it, the deadline, and the two required contents.",
+            "Accept a complete answer as compliant for this item."
+          ],
+          "callout": "Commander unable to articulate the five working day report to the first GO",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Denial handled verbally with nothing on the form.",
+            "Report sent to the next commander but never reached the first GO.",
+            "Report lists the basis but no affirmation the Marine understands.",
+            "Denial for a reason outside Chapter 1 paragraph 4, such as workload or the Marine's tone."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How many request masts have you denied, and on what basis?",
+        "Who receives your denial report, and by when?",
+        "What two things must the report contain?",
+        "Show me the annotation on the form for the last denial."
+      ],
+      "verification": [
+        "List of denials reconciled against retained forms.",
+        "Each denial tied to UCMJ, administrative separation, or Article 138 or 1150 grounds.",
+        "Denial report to the first GO dated within five working days, with basis and affirmation.",
+        "Commander articulates the requirement when no denials exist."
+      ],
+      "verified": false
+    },
+    "0205": {
+      "title": "FOLLOW-UP PROCEDURES ESTABLISHED AND DOCUMENTED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1700.23G, Par 4b(2)(e)",
+            "text": "Establish, monitor, and document follow-up procedures to ensure that each request mast is processed in a timely manner, that the disposition is being executed, and that no adverse or prejudicial action is taken against a Marine as a result of exercising the right to request mast."
+          },
+          {
+            "citation": "MCO 1700.23G, Par 4b(2)(h)",
+            "text": "Exercise appropriate disciplinary or administrative action if a Marine commits or attempts to commit interference or reprisal against any Marine exercising his or her right to request mast. Subsequent to the final disposition, ensure the Marine submitting the request mast is briefed on his or her rights associated with retaliation."
+          },
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 1, Par 13",
+            "text": "Any interference with a Marine's right to request mast or any attempt to retaliate against a Marine who has requested mast is strictly prohibited. Any attempted violation, or soliciting another to violate this Order by interfering with or restricting a Marine's right to request mast, subjects involved personnel to disciplinary action under Article 92 of the UCMJ."
+          }
+        ],
+        "summary": "The commander establishes, monitors, and documents follow-up on every request mast. Follow-up covers three things: timely processing, execution of the disposition, and protection of the Marine from adverse or prejudicial action. After final disposition the Marine is briefed on retaliation rights. A tracker is the expected evidence. IGMC publishes a sample."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Tracker",
+          "actions": [
+            "Ask for the request mast log or tracker in whatever form the command keeps it.",
+            "Confirm every retained NAVMC 11296 for the period appears on it."
+          ],
+          "callout": "No tracker or log of request masts",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Tracker Content",
+          "actions": [
+            "Confirm each entry records date received, each routing level with dates, date heard, disposition, follow-up actions, and closure date.",
+            "Confirm open items show a next action and owner."
+          ],
+          "callout": "Tracker missing dates, disposition, or follow-up actions",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify Dispositions Were Executed",
+          "actions": [
+            "Pick two or three closed cases and ask for proof the disposition happened, such as a pay correction, a reassignment, or a corrected record.",
+            "Confirm the Marine received the retaliation rights brief after final disposition and the brief is documented."
+          ],
+          "callout": "Disposition recorded but never executed, or no retaliation brief",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Tracker exists but stops at the date heard, no follow-through.",
+            "Cases closed with no evidence the promised action occurred.",
+            "Retaliation brief given verbally with no record.",
+            "Follow-up delegated to the SNCO with no commander visibility."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me your tracker and pick a closed case. How do you know the disposition was carried out?",
+        "How do you monitor for reprisal against a Marine who requested mast?",
+        "When and how is the Marine briefed on retaliation rights?",
+        "Who reviews the tracker, and how often?"
+      ],
+      "verification": [
+        "Tracker reconciled against retained forms.",
+        "Entries carry routing dates, disposition, follow-up, and closure.",
+        "Sampled dispositions supported by evidence of execution.",
+        "Retaliation rights brief documented after final disposition."
+      ],
+      "verified": false
+    },
+    "0301": {
+      "title": "ADMINISTRATIVE SUPPORT FOR SEALED APPLICATIONS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 3, Par 2a",
+            "text": "Any Marine requesting mast to his or her CG has the option to do so confidentially. If the Marine does not desire to reveal the subject of the request mast to subordinate commanders in the chain of command, the Marine must include a statement as to why the subject was not revealed in the request mast. The Marine shall place the NAVMC 11296 and any supporting documentation in a sealed envelope marked \"to be opened by the CG only.\""
+          },
+          {
+            "citation": "MCO 1700.23G, Par 4b(2)(i)",
+            "text": "Administratively support Marines in the production and submission of the NAVMC 11296."
+          },
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 3, Par 2b",
+            "text": "The Marine's first commander in his or her chain of command shall receive any request mast sealed and marked \"to be opened by the CG only.\" Each intermediate commander shall offer to understand and attempt to resolve the issue or grievance. If the Marine maintains that he or she does not desire to reveal the subject, each of the Marine's commanders in his or her chain of command shall forward the request mast to the next higher level of command until it is delivered to the CG or the RMRA."
+          },
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 3, Par 2c",
+            "text": "If a Marine desires to submit a confidential request mast \"to be opened by the CG only,\" no documentation is required on the NAVMC 11296 and intermediate commanders shall continue routing the request mast."
+          },
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 1, Par 7",
+            "text": "A Marine does not have to disclose the subject of the request mast to anyone in the chain of command except to the commander with whom the Marine is requesting mast."
+          }
+        ],
+        "summary": "A Marine addressing the CG holds the option of a sealed application marked to be opened by the CG only. The command supports production and submission of the NAVMC 11296, receives the sealed envelope at the first commander, offers to help at each level, and forwards it unopened until it reaches the CG or the designated Request Mast Reviewing Authority. No one in the chain requires the Marine to reveal the subject."
+      },
+      "howToInspect": [
+        {
+          "step": "Ask About Form Access And Assistance",
+          "actions": [
+            "Ask how a Marine obtains a blank NAVMC 11296 and who helps complete Part I.",
+            "Confirm Naval Forms Online or a local copy is available without going through a supervisor."
+          ],
+          "callout": "Marines cannot obtain or complete the form without disclosing the subject to a supervisor",
+          "severity": "finding"
+        },
+        {
+          "step": "Walk The Sealed Envelope Route",
+          "actions": [
+            "Ask the commander to describe what happens when a sealed envelope marked for the CG only arrives.",
+            "Confirm each intermediate commander offers help and forwards unopened when the Marine declines.",
+            "Confirm only the CG or a designated RMRA opens it."
+          ],
+          "callout": "Sealed application opened below the CG or RMRA, or held pending disclosure",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Records Of Sealed Cases",
+          "actions": [
+            "If sealed applications were routed during the period, confirm the tracker shows forwarding dates within one working day at each level.",
+            "Confirm no annotation demanded the subject from the Marine."
+          ],
+          "callout": "Sealed application delayed or subject demanded in routing",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Admin section opens sealed envelopes to log them.",
+            "Intermediate commander refuses to forward until the Marine explains the subject.",
+            "Blank forms held by the first sergeant only.",
+            "No one in the command knows who the RMRA is."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Where does a Marine get a NAVMC 11296, and who helps them fill it out?",
+        "What do you do when a sealed envelope marked for the CG only reaches you?",
+        "Who in your higher headquarters is authorized to open it?",
+        "Has a Marine ever been asked to reveal the subject before forwarding?"
+      ],
+      "verification": [
+        "Blank NAVMC 11296 available to Marines without supervisor involvement.",
+        "Commander describes the sealed route correctly: receive, offer help, forward unopened.",
+        "Tracker shows sealed cases forwarded within one working day per level.",
+        "Only the CG or RMRA opened sealed applications."
+      ],
+      "verified": false
+    },
+    "0401": {
+      "title": "DENIAL REPORTS RETAINED AT THE GENERAL OFFICER LEVEL",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 1, Par 5",
+            "text": "Whenever a commander denies a request mast, he or she shall forward a report of the denial to the first GO via the chain of command within five working days. The correspondence shall include the basis surrounding the denial and affirmation that the Marine understands why the request was denied."
+          },
+          {
+            "citation": "MCO 1700.23G, Par 5a(3)",
+            "text": "The command shall manage request mast records in accordance with record schedule 1000-34."
+          },
+          {
+            "citation": "MCO 1700.23G, Par 5a(2)",
+            "text": "Request mast records shall be properly safeguarded and maintained separately from service records."
+          },
+          {
+            "citation": "MCO 1700.23G, Encl (1), Chap 3, Par 3",
+            "text": "When establishing internal request mast procedures, CGs may authorize a specified individual to act as the CG's RMRA. For example, a CG may designate a local command inspector general (CIG) to review requests mast, to include those that are sealed and marked \"to be opened by the CG only.\""
+          }
+        ],
+        "summary": "The first General Officer receives every denial report from subordinate officers with NJP authority and retains them under records schedule 1000-34. Each retained report shows the basis for the denial and an affirmation the Marine understands why. The CG's Command Inspector General or designated RMRA is the usual custodian."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Denial File",
+          "actions": [
+            "Ask the CIG or RMRA for every denial report received from subordinate commands during the retention period.",
+            "Confirm the file is kept apart from service records and access controlled."
+          ],
+          "callout": "No denial file, or reports not retained",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Each Report",
+          "actions": [
+            "Confirm each report states the basis for the denial.",
+            "Confirm each report affirms the Marine understands why the request was denied.",
+            "Confirm the date received is within five working days of the denial."
+          ],
+          "callout": "Report retained without basis or affirmation",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Reconcile With Subordinate Commands",
+          "actions": [
+            "Compare the file against denials found on subordinate command trackers during the same inspection.",
+            "Flag any subordinate denial with no report at the GO level."
+          ],
+          "callout": "Subordinate denial with no report on file at the first GO",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Reports received by email and never filed.",
+            "Reports lack the affirmation the Marine understands.",
+            "No disposition under schedule 1000-34 applied.",
+            "RMRA designation exists in practice but no written authorization from the CG."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who receives denial reports for the CG, and where are they filed?",
+        "How many denial reports have you received this year, and from which commands?",
+        "What disposition under schedule 1000-34 applies?",
+        "Is the RMRA designation in writing?"
+      ],
+      "verification": [
+        "Denial file produced by the CIG or RMRA.",
+        "Each report carries basis and affirmation.",
+        "File reconciles with subordinate command denials.",
+        "Retention under schedule 1000-34 confirmed."
+      ],
+      "verified": false
+    },
+    "0501": {
+      "title": "REQUEST MAST BULLETIN PUBLISHED FOR IGMC INSPECTION",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1700.23G, Encl (1), App A, Par 3f",
+            "text": "When the time and venue have been determined for request mast with the IGMC or designated representative, a command bulletin shall be published. (1) The subject of the bulletin will be: \"REQUEST MAST WITH THE INSPECTOR GENERAL OF THE MARINE CORPS (IGMC)/OR DESIGNATED REPRESENTATIVE.\" (2) The text in the bulletin must contain the following: (a) Every Marine who is a member of the inspected unit will be afforded the opportunity to appear before the IGMC or the designated representative to request mast. (b) Marines who, in good faith, wish to appear before the IGMC or designated representative at request mast may do so without fear of retaliation or prejudice to their interests. (c) Marines desiring to keep the subject of the request mast private must seal the request mast in an envelope and mark it \"to be opened by the IGMC only.\" (3) The date, time, and location of the request mast shall be published in the bulletin along with specific instructions for routing the application."
+          },
+          {
+            "citation": "MCO 1700.23G, Encl (1), App A, Par 1",
+            "text": "Prior to IGMC inspections, unit commanders shall publish a command bulletin which notifies Marines of the opportunity to request mast with the IGMC or the designated representative."
+          },
+          {
+            "citation": "MCO 1700.23G, Encl (1), App A, Par 3e",
+            "text": "The command shall provide the IGMC or designated representative an area with sufficient space for privacy to accommodate Marines requesting mast. Commands shall support the IGMC or representative with administrative, telephone, and/or video capability if needed."
+          }
+        ],
+        "summary": "Before an IGMC inspection the command publishes a bulletin with the prescribed subject line, three required statements, the date, time, and location, and routing instructions. The checklist names three of the required elements. The Order adds a fourth: Marines wanting privacy seal the application and mark it to be opened by the IGMC only. IGMC publishes a template."
+      },
+      "howToInspect": [
+        {
+          "step": "Obtain The Bulletin",
+          "actions": [
+            "Ask for the published bulletin and its distribution record.",
+            "Confirm it went out after the time and venue were set and before the inspection."
+          ],
+          "callout": "No bulletin published",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Required Content",
+          "actions": [
+            "Subject line reads: REQUEST MAST WITH THE INSPECTOR GENERAL OF THE MARINE CORPS (IGMC)/OR DESIGNATED REPRESENTATIVE.",
+            "Statement one: every Marine of the inspected unit is afforded the opportunity to appear.",
+            "Statement two: Marines who in good faith wish to appear do so without fear of retaliation or prejudice.",
+            "Statement three: Marines wanting privacy seal the application and mark it to be opened by the IGMC only.",
+            "Date, time, and location present with specific routing instructions."
+          ],
+          "callout": "Bulletin missing a required statement, the date-time-location, or routing instructions",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Reach",
+          "actions": [
+            "Ask how the bulletin reached every Marine, including those on leave, TAD, or deployed detachments.",
+            "Spot check two or three Marines for awareness of the date and location."
+          ],
+          "callout": "Bulletin published but not distributed to the whole unit",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Subject line paraphrased instead of the prescribed text.",
+            "Sealed-envelope instruction omitted.",
+            "Routing instructions absent, Marines unsure where to hand the form.",
+            "Bulletin posted on the read board only, detachments never notified."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When was the bulletin published, and how was it distributed?",
+        "Show me the subject line and the three required statements.",
+        "Where do Marines route a sealed application for the IGMC?",
+        "Where is the private space set aside for request mast?"
+      ],
+      "verification": [
+        "Bulletin on file with distribution record.",
+        "Subject line and three required statements present verbatim in substance.",
+        "Date, time, location, and routing instructions present.",
+        "Marines spot checked are aware of the opportunity."
+      ],
+      "verified": false
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "track": "igmc",
+  "programNumber": "1700.23",
+  "slug": "request-mast-procedures",
+  "title": "Request Mast Procedures",
+  "summary": "All commands. All O-5 and above commanders must have a formal Request Mast Program. Regardless, all officers vested with Non-Judicial Punishment (NJP) authority may and can be inspected to verify their compliance with the Request Mast references. Questions with multi-part an...",
+  "roles": [
+    "admin",
+    "commander",
+    "leader"
+  ],
+  "sponsor": "IGMC",
+  "applicabilityLevel": "All commands. All O-5 and above commanders must have a formal Request Mast Program. Regardless, all officers vested with Non-Judicial Punishment (NJP) authority may and can be inspected to verify their compliance with the Request Mast references. Questions with multi-part answers must be fully correct to be found compliant",
+  "effectiveDate": "2024-07-29",
+  "lastVerified": "2026-09-11",
+  "source": {
+    "title": "IGMC Functional Area Checklist - Request Mast Procedures",
+    "publisher": "Inspector General of the Marine Corps"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "COMMANDER’S RESPONSIBILITIES (O-5 and above commands)",
+      "description": "",
+      "items": [
+        {
+          "code": "0101",
+          "question": "Can the Commander demonstrate how all unit personnel are made familiar with the Request Mast policy and procedures (e.g., MCO been placed on the Command Read Board, Website, SharePoint, social media, training rosters)? Note: A sample Request Mast class can be found on the IGMC Inspections Division website at http://www.hqmc.marines.mil/igmc/Units/Inspections-Division/",
+          "references": [
+            "MCO 1700.23G, par 4b(2)(b)"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    },
+    {
+      "id": "02.0",
+      "title": "REQUEST MAST DOCUMENTS (all Officers with NJP Authority)",
+      "description": "",
+      "items": [
+        {
+          "code": "0201",
+          "question": "Does the Commander process Request Mast Applications, NAVMC 11296, in accordance with MCO 1700.23G. Are explanations for delays annotated in the NAVMC 11296?",
+          "references": [
+            "MCO 1700.23G, Encl (1), chap 2, par 3"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0202",
+          "question": "Does the Commander properly safeguard all Request Mast records in which the unit has completed Part II or Part III of NAVMC 11296?",
+          "references": [
+            "MCO 1700.23G, par 5a(1)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0203",
+          "question": "Are all retained Request Mast Applications, NAVMC 11296(s), correctly finalized? - All signatures, dates, and fields must be completed. -The Commander's signature date must reflect the day the Mast was conducted, and a probable disposition was provided to the applicant.",
+          "references": [
+            "MCO 1700.23G, Encl (1), chap 2, par 2"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0204",
+          "question": "Do records show the Commander correctly executed the reporting requirements when he/she denied a Request Mast application specifically addressed to them when presented matters that cannot or should not be resolved using the Request Mast Program due to other appropriate forms of redress? If no records are available, can the Commander articulate the reporting requirements?",
+          "references": [
+            "MCO 1700.23G, Encl (1) chap 1, par 5"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0205",
+          "question": "Can the Commander demonstrate what specific follow-up procedures are used to ensure Request Mast applications are resolved in a timely manner, that the disposition is being executed, and that no adverse or prejudicial action befall Marines exercising their right to Request Mast? Note: A sample tracker can be found on the IGMC Inspections Division’s website at http://www.hqmc.marines.mil/igmc/Units/Inspections-Division/.",
+          "references": [
+            "MCO 1700.23G, par 4b(2)(e)"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    },
+    {
+      "id": "03.0",
+      "title": "REQUEST MAST APPLICATIONS “TO BE OPENED BY THE COMMANDER / CG ONLY”",
+      "description": "",
+      "items": [
+        {
+          "code": "0301",
+          "question": "Does the Commander administratively support Marines in the production and submission of the NAVMC 11296 addressed “to be opened by the Commander / General’s only”.",
+          "references": [
+            "MCO 1700.23G, Encl (1), chap 3, par 2a"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    },
+    {
+      "id": "04.0",
+      "title": "GENERAL OFFICER REQUIREMENTS (General Officers & their Command Inspector General (CIG))",
+      "description": "",
+      "items": [
+        {
+          "code": "0401",
+          "question": "Are all Request Mast denials from any subordinate officer vested with NJP authority retained, in accordance with records schedule 1000-34? Note: Acceptable verifying documentation shall include the basis surrounding the denial and affirmation that the Marine understands why the request was denied.",
+          "references": [
+            "MCO 1700.23G, Encl (1), par 5"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    },
+    {
+      "id": "05.0",
+      "title": "REQUEST MAST BULLETIN (only when inspected by the IGMC)",
+      "description": "",
+      "items": [
+        {
+          "code": "0501",
+          "question": "Did the command publish a Request Mast Bulletin containing the following information: -That every Marine will be afforded the opportunity to appear before the IGMC Representative? -The date, time, and location of the Request Mast? -That Marines who, in good faith, wish to appear before the IGMC Representative at Request Mast may do so without fear of restriction, reprisal, or prejudice to their interests?",
+          "references": [
+            "MCO 1700.23G, App A, par 3f"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    }
+  ],
+  "category": "CoRE",
+  "faName": "Request Mast Procedures"
+}

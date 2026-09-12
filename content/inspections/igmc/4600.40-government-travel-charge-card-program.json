@@ -11,7 +11,7 @@
   "sponsor": "P&R (RFF)",
   "applicabilityLevel": "All levels and types of commands",
   "effectiveDate": "2026-03-25",
-  "lastVerified": "2026-02-25",
+  "lastVerified": "2026-09-11",
   "source": {
     "title": "IGMC Functional Area Checklist - Government Travel Charge Card Program",
     "publisher": "Inspector General of the Marine Corps"
@@ -269,7 +269,14 @@
             "MCO 4600.40C, encl 2, appendix B, par. 10b"
           ],
           "evidenceHint": null
-        },
+        }
+      ]
+    },
+    {
+      "id": "03.0",
+      "title": "Visa IntelliLink Compliance Management (VICM)",
+      "description": "",
+      "items": [
         {
           "code": "0301",
           "question": "Has the GTCC APC at HL3 and HL4 obtained access to Visa IntelliLink Compliance Management (VICM) and completed the “Programs & Policies – VICM” training in TraX, as required? Note: Refresher training is required every three years.",

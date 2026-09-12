@@ -1,0 +1,173 @@
+{
+  "track": "igmc",
+  "programNumber": "5040",
+  "slug": "command-inspection-program",
+  "title": "Command Inspection Program",
+  "summary": "Command Inspectors General who conduct inspections under the Commanding General’s Inspection Program",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "sponsor": "IGMC (IGI)",
+  "applicabilityLevel": "Command Inspectors General who conduct inspections under the Commanding General’s Inspection Program",
+  "effectiveDate": "2023-01-13",
+  "lastVerified": "2026-09-11",
+  "source": {
+    "title": "IGMC Functional Area Checklist - Command Inspection Program",
+    "publisher": "Inspector General of the Marine Corps"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "ORGANIZATION",
+      "description": "",
+      "items": [
+        {
+          "code": "0101",
+          "question": "Is the command inspector billet a primary duty?",
+          "references": [
+            "MCO 5040.6J, Chap 2, par 2.b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0102",
+          "question": "Has the command published a CGIP directive? Is the directive in compliance with higher headquarters directives?",
+          "references": [
+            "MCO 5040.6J, Chap 2, par 2.b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0103",
+          "question": "Does the command inspector have a training program for augment inspectors?",
+          "references": [
+            "MCO 5040.6J, Chap 2, par 2.b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0104",
+          "question": "Do augment inspectors have the technical expertise to inspect their functional area, i.e., are they qualified?",
+          "references": [
+            "MCO 5040.6J, Chap 2, par 2.b"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    },
+    {
+      "id": "02.0",
+      "title": "CONDUCT OF INSPECTIONS",
+      "description": "",
+      "items": [
+        {
+          "code": "0201",
+          "question": "Does the command inspector inspect all the subordinate units at least every two years?",
+          "references": [
+            "MCO 5040.6J, Chap 2, par 2.b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0202",
+          "question": "Does the command inspector, and all augment inspectors, use the functional area checklists maintained on the IGMC website as the basis for conducting inspections?",
+          "references": [
+            "MCO 5040.6J, Chap 3, par 2.b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0203",
+          "question": "Does the commander's grading system comply with Marine Corps policy, i.e., Effective/Ineffective?",
+          "references": [
+            "MCO 5040.6J, Chap 1, par 5.b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0204",
+          "question": "Has the command adopted a philosophy of short or no notice inspections similar to that of the IGMC in order to minimize wasted preparation time and to give commanders an accurate assessment?",
+          "references": [
+            "MCO 5040.6J, Chap 1, par 3.a"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0205",
+          "question": "Are the CoRE functional areas included in the CGIP?",
+          "references": [
+            "MCO 5040.6J, Chap 1, par 4.a"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0206",
+          "question": "Are inspectors making clear and useful annotations to each question on the checklist?",
+          "references": [
+            "MCO 5040.6J, Chap 3, par 1.a"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0207",
+          "question": "Are findings and discrepancies clearly noted on the checklist?",
+          "references": [
+            "MCO 5040.6J, Chap 3, par 1.a"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    },
+    {
+      "id": "03.0",
+      "title": "REPORTS",
+      "description": "",
+      "items": [
+        {
+          "code": "0301",
+          "question": "Is the Final Inspection Report (FIR) provided to the commander of the inspected unit within 30 days from the completion of the inspection?",
+          "references": [
+            "MCO 5040.6J, Chap 4, par 2.b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0302",
+          "question": "Are recommendations contained in the FIR supported by references?",
+          "references": [
+            "MCO 5040.6J, Chap 4, par 2.b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0303",
+          "question": "Does the FIR require action by the inspected unit to correct findings and Ineffective functional areas?",
+          "references": [
+            "MCO 5040.6J, Chap 4, par 2.b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0304",
+          "question": "Does the command inspector maintain an effective system for monitoring and tracking actions taken to correct problem areas reported on FIR?",
+          "references": [
+            "MCO 5040.6J, chap 2, par 2.b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0305",
+          "question": "Does the IG maintain a copy of the FIR in accordance with records schedule 5040 of 6 years? (The checklists of the inspection need only to be retained for 2 years, and may be removed from the FIR thereafter) Part III, par 2.b.",
+          "references": [
+            "MCO 5040.6J, Chap 4, par 2.b",
+            "SECNAV M-5210.1,"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    }
+  ],
+  "category": "CoRE+",
+  "faName": "Command Inspection Program"
+}

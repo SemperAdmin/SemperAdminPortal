@@ -11,7 +11,7 @@
   "sponsor": "M&RA (MPO)",
   "applicabilityLevel": "All O-5 and O-6 Level Commands",
   "effectiveDate": "2025-09-03",
-  "lastVerified": "2025-09-03",
+  "lastVerified": "2026-09-11",
   "source": {
     "title": "IGMC Functional Area Checklist - Leave, Liberty and Administrative Absence",
     "publisher": "Inspector General of the Marine Corps"
@@ -79,6 +79,39 @@
           "question": "Does the command have procedures to ensure Marines are not being approved for Active-Duty Parental Leave for no more than 84 days?",
           "references": [
             "DoDI 1327.06 Sect 3.11.c, and MARADMIN 051/23"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0108",
+          "question": "Is the command ensuring that Marines are executing their Active-Duty Parental Leave periods in increments not less than 7 days?",
+          "references": [
+            "DoDI 1327.06 Sect 3.11.c.(7)(a); and MARADMIN 051/23"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0109",
+          "question": "Are Marines being charged for leave when they check out on a non-duty day?",
+          "references": [
+            "DoDI 1327.06 Sect 5.1.b.(1)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0110",
+          "question": "Does the command have procedures in place for convalescent leave following childbirth or perinatal loss?",
+          "references": [
+            "DoDI 1327.06 Sect 3.11.c.(13), BUMED NOTE 6000, and MARADMIN 129/23"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0111",
+          "question": "Does the command have established procedures and requirements in place for managing the allocation of bereavement leave?",
+          "references": [
+            "DoDI 1327.06 Sect 3.11.j.(5)",
+            "MARADMIN 220/23"
           ],
           "evidenceHint": null
         }

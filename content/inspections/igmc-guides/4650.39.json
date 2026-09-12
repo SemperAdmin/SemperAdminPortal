@@ -1,7 +1,7 @@
 {
   "faNumber": "4650.39",
-  "sourceDoc": "DTS (4650.39A) - INSPECTOR GUIDE - REBUILT.docx",
-  "lastVerified": "2026-05-20",
+  "sourceDoc": "DTS (4650.39A) - INSPECTOR GUIDE - REBUILT.docx. Refreshed 2026-09-11 against the FAC revised 20 Jul 2026: items 0101, 0102, 0104, 0105, 0106, 0110, 0201, 0202, 0204, 0205, 0206, 0207, 0208, 0209 carry updated summaries, added MCO 4650.39A quotes, and one added inspection step each. SME re-review pending on the items marked verified false. Quote walk 2026-09-11: 42 of 43 quotes matched verbatim against the extracted order text, including three SME quotes on 0101, 0104, and 0110 replaced with verbatim text after the walk found paraphrases. Paragraph 4c was transcribed from the scanned page 6 image. DoD FMR Vol 5 chapter 5 (Oct 2024) received 2026-09-11: the 0105 quote was a paraphrase and now carries the verbatim paragraph 3.4.1.2, with FMR quotes added on 0102, 0106, 0202, 0205, 0206, and 0207.",
+  "lastVerified": "2026-09-11",
   "verifiedAtSource": true,
   "items": {
     "0101": {
@@ -14,10 +14,14 @@
           },
           {
             "citation": "MCO 4650.39A, Ch. 6, par 2",
-            "text": "LDTA Report. Complete Traveler Information List Report. This Report shall be retrieved monthly by the LDTA to verify appropriate permission levels and separation of duties."
+            "text": "LDTA Report. Complete Traveler Information List Report. This report shall be retrieved monthly. The report shall be reviewed to ensure permission levels and access have been granted according to DD Form 577s on file; no change in permission levels or access have occurred; and no unsubstantiated duplicate EFT information is present."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 2, Par 3e",
+            "text": "The official granting permissions shall monitor permission levels by retrieving the Complete Traveler Information List Report each week and comparing it to the previous week's report. (1) The report shall be compared to the permissions that were assigned by the official granting permission levels. (2) Any changes that cannot be validated shall be removed and the individual and their ODTA shall be sent an e-mail notifying them of the discrepancy, and the procedures they need to follow to be assigned permissions."
           }
         ],
-        "summary": "The LDTA must retrieve the Complete Traveler Information List Report monthly from DTS, reconcile permission levels and separation of duties, and retain the report for the current plus previous calendar year."
+        "summary": "Checklist wording revised 20 July 2026. The LDTA pulls the Complete Traveler Information List monthly, reconciles permission and access levels to the DD Form 577s on file, confirms separation of duties, and confirms no duplicate or missing EFT data. The report is annotated with the actions taken to resolve each discrepancy and retained for the current plus previous calendar year. Chapter 2 adds a weekly comparison by the official granting permissions, with unvalidated changes removed and the individual and ODTA notified."
       },
       "howToInspect": [
         {
@@ -47,6 +51,15 @@
           ]
         },
         {
+          "step": "Verify Actions-Taken Annotations",
+          "actions": [
+            "For each discrepancy on a sampled monthly report, confirm the annotation names the action taken to resolve it, not only the discrepancy.",
+            "Confirm unvalidated permission changes were removed and the individual and ODTA were notified in writing."
+          ],
+          "callout": "Discrepancies listed with no action taken recorded",
+          "severity": "discrepancy"
+        },
+        {
           "step": "Common Discrepancies",
           "actions": [
             "Reports not extracted monthly.",
@@ -58,15 +71,18 @@
       "questionsToAsk": [
         "When did you last pull the Complete Traveler Information List Report?",
         "How do you reconcile permissions against DD Form 577?",
-        "Where are the previous year's reports retained?"
+        "Where are the previous year's reports retained?",
+        "Show me a discrepancy on last month's report and the action taken to close it."
       ],
       "verification": [
         "CTIL Report retrieved monthly for the inspection period.",
         "Reconciliation against DD Form 577 documented.",
         "Separation of duties verified per Ch. 2 Table 2-1.",
-        "Reports retained for current plus previous calendar year."
+        "Reports retained for current plus previous calendar year.",
+        "Each discrepancy on sampled monthly reports carries an action-taken annotation.",
+        "EFT data reviewed for duplicates and gaps on each monthly report."
       ],
-      "verified": true
+      "verified": false
     },
     "0102": {
       "title": "ALL REQUIRED ROLES APPOINTED VIA DD FORM 577",
@@ -79,9 +95,25 @@
           {
             "citation": "MCO 4650.39A, Ch. 1, par 2.b",
             "text": "Retain (electronically or hardcopy) copies of all DD Form 577s for appointed positions within the geographic area in the LDTA office, with the exception of Disbursing Office/Finance Office (DO/FO) appointments or outside the LDTAs geographic area of responsibility."
+          },
+          {
+            "citation": "MCO 4650.39A, Par 4b(6)(b)",
+            "text": "The Department of Defense Form 577 (DD Form 577), \"Appointment/Termination Record - Authorized Signature,\" shall be used for appointments to accountable and other non-accountable positions as detailed within this Order. DD Form 577 shall be issued and retained for six years and three months from the date of release or cancellation of assignment as required by references (a) and (l)."
+          },
+          {
+            "citation": "DoD FMR Vol 5, Ch. 5, par 4.1 (Oct 2024)",
+            "text": "Appointing authorities (see paragraph 3.1) appoint and terminate the appointments of COs and DAOs using a DD 577, identifying as necessary the types of payments to be certified (e.g., vendor pay, purchase card, CBAs, travel, transportation, military and civilian pay) and, if appropriate, the entitlement system(s) involved. Avoid the term \"various\" and similar generalities when identifying types of vouchers to be certified. The effective date of an Appointee Acknowledgment (Item 15 or 16a - Digital) may not be earlier than the date of the Appointing Authority (Item 12)."
+          },
+          {
+            "citation": "DoD FMR Vol 5, Ch. 5, par 4.1.5 and 4.1.7 (Oct 2024)",
+            "text": "4.1.5. COs who certify vouchers electronically, (e.g., Defense Travel System), must submit the DD 577 electronically, satisfying the requirements in Chapter 1, subparagraph 3.5.3. 4.1.7. These forms cannot be amended. Pen-and-ink changes are not authorized. Any change (e.g., to alter the types of vouchers to be certified) requires termination of the existing and preparation of a new appointment."
+          },
+          {
+            "citation": "DoD FMR Vol 5, Ch. 5, par 4.3 (Oct 2024)",
+            "text": "Keep DD 577 copies after appointment termination for a retention period following the guidance in Volume 1, Chapter 9; except for transactions affecting Foreign Military Sales, use a retention period following the guidance in Volume 15, Chapter 6."
           }
         ],
-        "summary": "All DTS roles (LDTAs, ODTAs, FDTAs, BDTAs, AOs, NDEAs, ROs, DMMs) must be appointed via DD Form 577. The LDTA retains copies of DD Form 577 for all appointed positions within the geographic area in the LDTA office."
+        "summary": "Checklist wording revised 20 July 2026. Every required DTS role holds a current-version DD Form 577, digitally signed by the commander or designated representative and the appointee, with no pen changes. Assumption of Command letters and Delegation of Authority documents sit on file. Group or organization access outside the appointee's own organization carries a written justification. The checklist sets retention at 10 years. DoD FMR Volume 5 chapter 5 paragraph 4.3 defers the period to Volume 1 chapter 9. MCO 4650.39A sets six years and three months from release or cancellation. Apply the longer checklist figure. Paragraph 4.1.7 bars pen-and-ink changes outright, any change means a termination and a new appointment."
       },
       "howToInspect": [
         {
@@ -196,11 +228,23 @@
       "regulatory": {
         "quotes": [
           {
-            "citation": "MCO 4650.39A, par 4.c",
-            "text": "Waivers. Waivers to specific grade or duty assignment requirements established in this Order shall be submitted via standard naval correspondence and approved by the first O-6 or GS-15 in the supervisory chain. Only the following may be waived: (1) AOs in a grade below those listed in this Order; (2) LDTAs/ODTAs serving in routing lists. Waivers shall be on a by-name basis."
+            "citation": "MCO 4650.39A, Par 4c",
+            "text": "Coordinating Instructions. The AO grade (SNCO or GS-7 or above) and separation of duties (Lead and Organization Defense Travel Administrators shall not be in any routing list) requirements may be waived by completing a standard naval correspondence letter with by-name approval from the first O-6 or GS-15 in the supervisory chain. The DD Form 577 on file with the servicing LDTA shall accompany waiver request letters. A copy of all waiver letters shall be sent to DC M&RA (MIF) by the servicing LDTA. Waivers are not required for Disbursing and Finance Office personnel. Disbursing and Finance Officers are exempt from this grade requirement and have the authority to appoint AOs who are in lower grades at their discretion."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 2, Par 5a(3)",
+            "text": "In emergency situations, LDTAs may use approval override to approve documents. LDTAs shall not be listed in a routing list."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 2, Par 5d(3)",
+            "text": "AO/COs shall not concurrently serve in any accountable position within DTS, specifically including DTA nor will they have permission level 3 or 5 in their profiles."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 1, Par 5a",
+            "text": "AOs shall be a SNCO (E-6) or civilian GS-7 or above and be appointed in writing by the commander or their designated representatives using the DD Form 577 as detailed in the template in Chapter 2, paragraph 4. AOs shall complete initial/annual Certifying Officer Legislation (COL) training. A waiver may be filed for the grade requirement using the waiver process outlined in paragraph 4.c. of this Order."
           }
         ],
-        "summary": "Waivers to grade or duty requirements (AO below required grade; LDTA/ODTA in routing lists) require by-name standard naval correspondence approval by the first O-6 or GS-15 in the supervisory chain. No other waivers are authorized."
+        "summary": "Checklist wording revised 20 July 2026. Two waivers exist and no others: an AO below SNCO or GS-7, and an LDTA or ODTA placed in a routing list. Each waiver is a by-name standard naval correspondence letter signed by the first O-6 or GS-15 in the supervisory chain and retained for review. The July wording adds two absolute rules: an LDTA or ODTA never sits in a routing list as an AO, and an AO holds no other DTS role. A waiver covers routing-list placement as a reviewer only."
       },
       "howToInspect": [
         {
@@ -230,6 +274,16 @@
           ]
         },
         {
+          "step": "Verify Role Exclusivity",
+          "actions": [
+            "From the CTIL report, confirm no AO carries permission level 3 or 5 or any DTA role.",
+            "Confirm no LDTA or ODTA appears in any routing list as the approving AO, waiver or not.",
+            "Where an LDTA or ODTA sits in a routing list under waiver, confirm the position is reviewer, not AO."
+          ],
+          "callout": "AO holding another DTS role, or LDTA/ODTA approving as AO",
+          "severity": "finding"
+        },
+        {
           "step": "Common Discrepancies",
           "actions": [
             "No waiver for AO below required grade.",
@@ -241,15 +295,19 @@
       "questionsToAsk": [
         "Which AOs in your command are below the required grade?",
         "Are any LDTAs or ODTAs included in routing lists?",
-        "Show me the by-name waiver letters?"
+        "Show me the by-name waiver letters?",
+        "Does any AO hold a second DTS role or permission level 3 or 5?",
+        "Is any LDTA or ODTA an approving AO in a routing list?"
       ],
       "verification": [
         "Waiver letters on file for each below-grade AO.",
         "Waiver letters on file for each LDTA/ODTA in routing lists.",
         "Letters signed by first O-6 or GS-15 in supervisory chain.",
-        "Each waiver is by-name and on standard naval correspondence."
+        "Each waiver is by-name and on standard naval correspondence.",
+        "No AO holds another DTS role or permission level 3 or 5.",
+        "No LDTA or ODTA approves as AO in any routing list, waiver or not."
       ],
-      "verified": true
+      "verified": false
     },
     "0105": {
       "title": "LDTA AND AO CERTIFYING OFFICER LEGISLATION (COL) TRAINING",
@@ -260,11 +318,19 @@
             "text": "Ensure personnel requiring Certifying Officer Legislation (COL) certification have completed the training as listed in Chapter 5."
           },
           {
-            "citation": "DoD FMR Vol 5, Ch. 5, par 3.4.1.2",
-            "text": "Certifying Officer Legislation training must be completed prior to appointment and annually thereafter for personnel performing AO duties involving certification of payment."
+            "citation": "DoD FMR Vol 5, Ch. 5, par 3.4.1.2 (Oct 2024)",
+            "text": "Must complete an approved \"Certifying Officer Legislation\" training course applicable to their mission area prior to their appointment and refresher training annually and provide proof of completion to their supervisor. Evidence of having completed this training is required prior to performing as a CO. On-the-job training is not acceptable."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 1, Par 2d and 2e",
+            "text": "d. Ensure personnel requiring Certifying Officer Legislation (COL) certification have completed the training as listed in Chapter 5. e. Conduct ODTA, FDTA, AO, NDEA, SAO, RO, DMM, and Traveler initial and annual refresher training as listed in Chapter 5. Maintain a copy of attendance rosters for the current plus the previous year."
+          },
+          {
+            "citation": "DoD FMR Vol 5, Ch. 5, par 4.2.1 (Oct 2024)",
+            "text": "CO Appointments. Ensure the training required by subparagraph 3.4.1.2 is complete before submission."
           }
         ],
-        "summary": "The LDTA must ensure each AO has completed COL initial training prior to appointment and the COL refresher annually thereafter. LDTAs must also complete COL training if they perform certifying duties."
+        "summary": "Checklist wording revised 20 July 2026. The LDTA and every AO complete initial COL training before appointment and the annual refresher by the end of the calendar year. Evidence is an exported TRAX training record or individual certificates. The LDTA completes COL because the Approval Override authority carries certifying liability."
       },
       "howToInspect": [
         {
@@ -293,6 +359,16 @@
           ]
         },
         {
+          "step": "Accept TRAX Export As Evidence",
+          "actions": [
+            "Accept an exported TRAX training record covering the appointee in place of individual certificates.",
+            "Confirm the export shows the initial COL date before appointment and the refresher inside the current calendar year.",
+            "Confirm the LDTA appears on the export with current COL."
+          ],
+          "callout": "No TRAX export or certificate for the LDTA or an AO",
+          "severity": "finding"
+        },
+        {
           "step": "Common Discrepancies",
           "actions": [
             "AO appointed without prior COL training.",
@@ -303,15 +379,17 @@
       ],
       "questionsToAsk": [
         "Show me the COL certificates for each AO?",
-        "How do you track refresher training due dates?"
+        "How do you track refresher training due dates?",
+        "Show me the TRAX export covering the LDTA and the AO roster."
       ],
       "verification": [
         "Initial COL certificate predates each AO appointment.",
         "Annual refresher completed within 12 months for each AO.",
         "Certificates on file for current plus previous calendar year.",
-        "LDTA COL training completed where performing certifying duties."
+        "LDTA COL training completed where performing certifying duties.",
+        "TRAX export or certificates show initial COL before appointment and the refresher inside the current calendar year for the LDTA and every AO."
       ],
-      "verified": true
+      "verified": false
     },
     "0106": {
       "title": "APPOINTEE TRAINING WITHIN TWO WEEKS OF APPOINTMENT",
@@ -324,9 +402,21 @@
           {
             "citation": "MCO 4650.39A, Ch. 1, par 2.g",
             "text": "Assign, manage, and monitor permission levels to ensure appropriate separation of duties in accordance with Chapter 2. Appropriate training shall be completed before DTS permissions are assigned (see Chapter 5 for training requirements). DTS permissions shall be revoked immediately should a lapse in training occur."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 2, Par 3b and 3c",
+            "text": "Requirements to attain permissions are as follows: (1) A completed DD Form 577. (2) A current COL certificate (if required). (3) Completion of all required training as outlined in Chapter 5 of this Order. c. All documents in paragraph 3.b. shall be submitted to the granting official(s) for assignment."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 1, Par 2g",
+            "text": "Assign, manage, and monitor permission levels to ensure appropriate separation of duties in accordance with Chapter 2. Appropriate training shall be completed before DTS permissions are assigned (see Chapter 5 for training requirements). DTS permissions shall be revoked immediately should a lapse in training occur."
+          },
+          {
+            "citation": "DoD FMR Vol 5, Ch. 5, par 3.5.2 (Oct 2024)",
+            "text": "DAOs must complete approved training applicable to their mission areas within two weeks of their appointment, refresher training annually, and provide a copy of their training completion certificate to their supervisor. Evidence of having completed this training is required prior to performing as a DAO."
           }
         ],
-        "summary": "The LDTA must conduct initial training and ensure appointees complete required training within two weeks of appointment. DTS permissions must not be assigned until training is complete. Permissions must be revoked immediately on training lapse. Attendance rosters retained for current plus previous calendar year."
+        "summary": "Checklist wording revised 20 July 2026. Appointees complete required role training within two weeks of appointment. Evidence is an exported TRAX record or a training certificate. Training remains effective for one year. Permissions are not assigned before training and are removed for non-compliant personnel. Chapter 2 makes a completed DD Form 577, a current COL certificate where required, and completed training the three prerequisites for any permission."
       },
       "howToInspect": [
         {
@@ -362,6 +452,16 @@
           ]
         },
         {
+          "step": "Apply One-Year Validity",
+          "actions": [
+            "For each appointee, confirm the most recent role training date is inside the last 12 months.",
+            "Confirm permissions were removed for anyone past 12 months with no refresher.",
+            "Accept an exported TRAX record as the evidence source."
+          ],
+          "callout": "Appointee past one year with permissions still active",
+          "severity": "finding"
+        },
+        {
           "step": "Common Discrepancies",
           "actions": [
             "Training completed beyond two-week window.",
@@ -372,15 +472,18 @@
       ],
       "questionsToAsk": [
         "How do you track training completion against the two-week window?",
-        "What is your process when training lapses?"
+        "What is your process when training lapses?",
+        "Which appointees passed 12 months since their last training, and what happened to their permissions?"
       ],
       "verification": [
         "Training within two weeks for each appointee in the inspection period.",
         "Permissions not assigned before training complete.",
         "Permissions revoked immediately on training lapse.",
-        "Attendance rosters retained for current plus previous calendar year."
+        "Attendance rosters retained for current plus previous calendar year.",
+        "Every appointee trained inside the last 12 months, or permissions removed.",
+        "TRAX export or certificate on file within two weeks of each appointment."
       ],
-      "verified": true
+      "verified": false
     },
     "0107": {
       "title": "DMO REVIEWERS INSERTED INTO AUTHORIZATION ROUTING LISTS",
@@ -576,10 +679,14 @@
         "quotes": [
           {
             "citation": "MCO 4650.39A, Ch. 6, par 4.a",
-            "text": "Approved Status Report. The FDTA shall retrieve and reconcile this report every two weeks (bi-weekly/bi-monthly). Reports shall be maintained for the current plus the previous year."
+            "text": "Approved Status Report. Shall be retrieved every two weeks. The report shall be reviewed for accounting rejects in the \"Current Status\" column. Identified rejects shall be corrected appropriately. Once rejects are corrected in the accounting system, FDTAs shall coordinate with ODTAs to ensure travelers amend and resubmit vouchers and authorizations."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 6, Par 1",
+            "text": "The reports identified below shall be retained (electronically or hardcopy) for the current and previous year."
           }
         ],
-        "summary": "The FDTA must retrieve and reconcile the Approved Status Report every two weeks (bi-weekly/bi-monthly) and retain the reports for the current plus previous calendar year."
+        "summary": "Checklist wording revised 20 July 2026. The FDTA reconciles the Approved Status Report every two weeks to correct accounting rejects. The report is annotated with the actions taken to resolve each reject and the associated notification records, system header data stays on the report, and reports are retained for the current plus previous calendar year. Once rejects are corrected, the FDTA coordinates with ODTAs so travelers amend and resubmit."
       },
       "howToInspect": [
         {
@@ -614,6 +721,15 @@
           ]
         },
         {
+          "step": "Confirm Reject Correction And Resubmission",
+          "actions": [
+            "For sampled rejects, confirm the correction in the accounting system and the notification to the ODTA.",
+            "Confirm the traveler amended and resubmitted the document and the reject cleared on the next report."
+          ],
+          "callout": "Rejects annotated but never corrected or resubmitted",
+          "severity": "discrepancy"
+        },
+        {
           "step": "Common Discrepancies",
           "actions": [
             "Bi-weekly cadence not met.",
@@ -624,21 +740,37 @@
       ],
       "questionsToAsk": [
         "Show me the last six FDTA Approved Status Reports?",
-        "How do you act on AR REJECT vouchers?"
+        "How do you act on AR REJECT vouchers?",
+        "Walk me through one reject from this report to its resubmission."
       ],
       "verification": [
         "FDTA appointment via DD Form 577 on file.",
         "Approved Status Reports retrieved bi-weekly.",
         "Reconciliation annotations present on each report.",
-        "Reports retained current plus previous calendar year."
+        "Reports retained current plus previous calendar year.",
+        "Sampled rejects corrected in the accounting system, ODTA notified, document resubmitted.",
+        "Notification records retained with each report."
       ],
-      "verified": true
+      "verified": false
     },
     "0201": {
       "title": "COMPLETE TRAVELER INFORMATION LIST REPORT",
       "regulatory": {
-        "quotes": [],
-        "summary": "ODTAs must extract the Complete Traveler Information List report monthly, conduct thorough reconciliation including verification of profile accuracy and DD Form 577 alignment, annotate all discrepancies and actions taken, and retain reports for the current plus previous calendar year. Header information must remain unaltered. Inspector Note: Reconciliation includes verifying and annotating the following: 1) information for accuracy. Profile information, SSN, address, unit information, GTCC duplication, EFT data, etc. 2) Ensuring permission levels are consistent with DD Form 577 appointments and that appropriate separation of duties are maintained."
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 6, Par 3d",
+            "text": "Complete Traveler Information List Report. This Report shall be retrieved monthly. The report shall be reviewed to ensure all traveler profile fields have been correctly entered and are up to date (SSN has the correct number of digits; GTCC data is entered according to Figure 6-1, and a valid E-mail address has been entered). During the review ensure: there are no duplicate GTCC numbers, travelers are notified of cards expiring within 30 days, and expired cards are updated appropriately. Validate with the unit roster to ensure members that have separated, retired, or have transferred have been properly detached in DTS."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 3, Par 2d",
+            "text": "EFT and Split Disbursement. Per reference (r), split disbursement is mandatory for all military and DoD civilian GTCC card holders. DTS computes travel entitlements and initiates EFT disbursements to the traveler's bank account eliminating the expense of processing check payments and expedites reimbursement."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 6, Par 1",
+            "text": "The reports identified below shall be retained (electronically or hardcopy) for the current and previous year."
+          }
+        ],
+        "summary": "Checklist wording revised 20 July 2026. The ODTA pulls the Complete Traveler Information List monthly, verifies and annotates profile accuracy including SSN, address, unit, GTCC duplication, and EFT with the Mandatory EFT Payment flag set to yes, and confirms permission levels match DD Form 577 appointments with separation of duties intact. The unit roster is validated against the report so separated, retired, and transferred members are detached. Reports are retained for the current plus previous calendar year."
       },
       "howToInspect": [
         {
@@ -768,6 +900,15 @@
           "severity": "discrepancy"
         },
         {
+          "step": "Check Mandatory EFT Payment Flag",
+          "actions": [
+            "On a sample of profiles from the report, confirm Mandatory EFT Payment is set to yes and EFT banking data is present.",
+            "Confirm GTCC data settings match Figure 6-1 for cardholders and non-cardholders."
+          ],
+          "callout": "Profiles with Mandatory EFT Payment not set or EFT data missing",
+          "severity": "discrepancy"
+        },
+        {
           "step": "Common Discrepancies",
           "actions": [
             "Missing monthly reports",
@@ -787,7 +928,8 @@
         "How do you verify permissions match DD Form 577 appointments?",
         "Have you found any GTCC duplications? How did you resolve them?",
         "Show me examples of discrepancies you've identified and corrected?",
-        "Do you have reports for the entire current and previous calendar year?"
+        "Do you have reports for the entire current and previous calendar year?",
+        "Show me a profile with Mandatory EFT Payment set to yes and one you had to correct."
       ],
       "verification": [
         "Report Date verified.",
@@ -797,15 +939,34 @@
         "EFT Checked verified.",
         "On File verified.",
         "Jan verified.",
-        "Feb verified."
+        "Feb verified.",
+        "Mandatory EFT Payment set to yes on sampled profiles.",
+        "Unit roster validated against the report, departed members detached."
       ],
-      "verified": true
+      "verified": false
     },
     "0202": {
       "title": "DD FORM 577 APPOINTMENTS",
       "regulatory": {
-        "quotes": [],
-        "summary": "All DTS roles must be formally appointed using the current electronic DD Form 577 with digital signatures from both the appointing official and appointee. Appointments must be maintained for 10 years. No pen changes allowed. Delegation authority and Assumption of Command documentation must be on file. Inspector Note: Appointments must be completed using the most current DD577 form version at the time of appointment. Pen changes are not authorized. DD Form 577s must be digitally signed by commander or designated representative and the appointee. Personnel with group or organization access outside their designated organization must provide justification. DD Form 577s must be retained for 10 years. Assumption of Command letters and Delegation of Authority documents must be retained on file."
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Par 4b(6)(b)",
+            "text": "The Department of Defense Form 577 (DD Form 577), \"Appointment/Termination Record - Authorized Signature,\" shall be used for appointments to accountable and other non-accountable positions as detailed within this Order. DD Form 577 shall be issued and retained for six years and three months from the date of release or cancellation of assignment as required by references (a) and (l)."
+          },
+          {
+            "citation": "DoD FMR Vol 5, Ch. 5, par 4.1 (Oct 2024)",
+            "text": "Appointing authorities (see paragraph 3.1) appoint and terminate the appointments of COs and DAOs using a DD 577, identifying as necessary the types of payments to be certified (e.g., vendor pay, purchase card, CBAs, travel, transportation, military and civilian pay) and, if appropriate, the entitlement system(s) involved. Avoid the term \"various\" and similar generalities when identifying types of vouchers to be certified. The effective date of an Appointee Acknowledgment (Item 15 or 16a - Digital) may not be earlier than the date of the Appointing Authority (Item 12)."
+          },
+          {
+            "citation": "DoD FMR Vol 5, Ch. 5, par 4.1.5 and 4.1.7 (Oct 2024)",
+            "text": "4.1.5. COs who certify vouchers electronically, (e.g., Defense Travel System), must submit the DD 577 electronically, satisfying the requirements in Chapter 1, subparagraph 3.5.3. 4.1.7. These forms cannot be amended. Pen-and-ink changes are not authorized. Any change (e.g., to alter the types of vouchers to be certified) requires termination of the existing and preparation of a new appointment."
+          },
+          {
+            "citation": "DoD FMR Vol 5, Ch. 5, par 4.3 (Oct 2024)",
+            "text": "Keep DD 577 copies after appointment termination for a retention period following the guidance in Volume 1, Chapter 9; except for transactions affecting Foreign Military Sales, use a retention period following the guidance in Volume 15, Chapter 6."
+          }
+        ],
+        "summary": "Checklist wording revised 20 July 2026. Every required DTS role holds a current-version DD Form 577, digitally signed by the commander or designated representative and the appointee, with no pen changes. Assumption of Command letters and Delegation of Authority documents sit on file. Group or organization access outside the appointee's own organization carries a written justification. The checklist sets retention at 10 years. DoD FMR Volume 5 chapter 5 paragraph 4.3 defers the period to Volume 1 chapter 9. MCO 4650.39A sets six years and three months from release or cancellation. Apply the longer checklist figure. Paragraph 4.1.7 bars pen-and-ink changes outright, any change means a termination and a new appointment."
       },
       "howToInspect": [
         {
@@ -1020,7 +1181,7 @@
           "step": "Check Routing List Structure",
           "actions": [
             "Typical routing order:",
-            "Traveler \u2192 RO (if applicable) \u2192 AO \u2192 Finance",
+            "Traveler → RO (if applicable) → AO → Finance",
             "Verify: Logical flow",
             "Check: No routing loops or dead ends"
           ],
@@ -1116,8 +1277,25 @@
     "0204": {
       "title": "WAIVER LETTERS",
       "regulatory": {
-        "quotes": [],
-        "summary": "Two specific situations require formal waiver letters signed by the first O-6 or GS-15 in the supervisory chain: (1) Appointment of AOs in grades below SNCO or GS-7, and (2) Placement of LDTAs or ODTAs in routing lists. Waivers must be by-name, standard naval correspondence format, and retained on file. Inspector Note: Waiver(s) must be retained and available for review."
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Par 4c",
+            "text": "Coordinating Instructions. The AO grade (SNCO or GS-7 or above) and separation of duties (Lead and Organization Defense Travel Administrators shall not be in any routing list) requirements may be waived by completing a standard naval correspondence letter with by-name approval from the first O-6 or GS-15 in the supervisory chain. The DD Form 577 on file with the servicing LDTA shall accompany waiver request letters. A copy of all waiver letters shall be sent to DC M&RA (MIF) by the servicing LDTA. Waivers are not required for Disbursing and Finance Office personnel. Disbursing and Finance Officers are exempt from this grade requirement and have the authority to appoint AOs who are in lower grades at their discretion."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 2, Par 5a(3)",
+            "text": "In emergency situations, LDTAs may use approval override to approve documents. LDTAs shall not be listed in a routing list."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 2, Par 5d(3)",
+            "text": "AO/COs shall not concurrently serve in any accountable position within DTS, specifically including DTA nor will they have permission level 3 or 5 in their profiles."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 1, Par 5a",
+            "text": "AOs shall be a SNCO (E-6) or civilian GS-7 or above and be appointed in writing by the commander or their designated representatives using the DD Form 577 as detailed in the template in Chapter 2, paragraph 4. AOs shall complete initial/annual Certifying Officer Legislation (COL) training. A waiver may be filed for the grade requirement using the waiver process outlined in paragraph 4.c. of this Order."
+          }
+        ],
+        "summary": "Checklist wording revised 20 July 2026. Two waivers exist and no others: an AO below SNCO or GS-7, and an LDTA or ODTA placed in a routing list. The July wording moves the signature to the first O-6 or GS-15 in the supervisory chain, matching item 0104, and adds two absolute rules: an LDTA or ODTA never sits in a routing list as an AO, and an AO holds no other DTS role. Waivers are by-name standard naval correspondence and retained for review."
       },
       "howToInspect": [
         {
@@ -1233,6 +1411,16 @@
           ]
         },
         {
+          "step": "Verify Role Exclusivity And Signature Level",
+          "actions": [
+            "Confirm each waiver letter is signed by the first O-6 or GS-15 in the supervisory chain, not a unit commander below the O-6 or GS-15 level.",
+            "From the CTIL report, confirm no AO carries permission level 3 or 5 or any DTA role.",
+            "Confirm no LDTA or ODTA appears in any routing list as the approving AO."
+          ],
+          "callout": "Waiver signed below O-6/GS-15, AO with another role, or LDTA/ODTA approving as AO",
+          "severity": "finding"
+        },
+        {
           "step": "Common Discrepancies",
           "actions": [
             "No waiver when required",
@@ -1250,25 +1438,42 @@
         "Do you have any AOs in a grade below SNCO or GS-7?",
         "Are any LDTAs or ODTAs in your routing lists?",
         "Show me the waiver letters for these personnel?",
-        "Who approved the waivers - what is their rank/grade?"
+        "Who approved the waivers - what is their rank/grade?",
+        "Who signed your waiver letters, and where do they sit in the supervisory chain?",
+        "Does any AO hold a second DTS role?"
       ],
       "verification": [
-        "Waivable Item: \u25a1 AO Grade \u25a1 LDTA/ODTA in Routing",
+        "Waivable Item: □ AO Grade □ LDTA/ODTA in Routing",
         "Waiver letter on file",
         "Standard naval correspondence format",
         "By-name identification",
         "Signed by O-6/GS-15 or above",
         "Proper justification",
         "Current/valid",
-        "Matches actual appointment/position"
+        "Matches actual appointment/position",
+        "Waiver letters signed by the first O-6 or GS-15 in the supervisory chain.",
+        "No AO holds another DTS role. No LDTA or ODTA approves as AO."
       ],
-      "verified": true
+      "verified": false
     },
     "0205": {
       "title": "AO COL TRAINING",
       "regulatory": {
-        "quotes": [],
-        "summary": "All Authorizing Officials (AOs) must complete Certifying Officers Legislation (COL) training BEFORE appointment. Annual COL refresher training must be completed by 31 December each year. Training certificates must be retained for review. Inspector Note: Annual refresher training must be completed by the end of the calendar year. Certificates must be provided for review."
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 1, Par 5a",
+            "text": "AOs shall be a SNCO (E-6) or civilian GS-7 or above and be appointed in writing by the commander or their designated representatives using the DD Form 577 as detailed in the template in Chapter 2, paragraph 4. AOs shall complete initial/annual Certifying Officer Legislation (COL) training. A waiver may be filed for the grade requirement using the waiver process outlined in paragraph 4.c. of this Order."
+          },
+          {
+            "citation": "DoD FMR Vol 5, Ch. 5, par 3.4.1.2 (Oct 2024)",
+            "text": "Must complete an approved \"Certifying Officer Legislation\" training course applicable to their mission area prior to their appointment and refresher training annually and provide proof of completion to their supervisor. Evidence of having completed this training is required prior to performing as a CO. On-the-job training is not acceptable."
+          },
+          {
+            "citation": "DoD FMR Vol 5, Ch. 5, par 4.2.1 (Oct 2024)",
+            "text": "CO Appointments. Ensure the training required by subparagraph 3.4.1.2 is complete before submission."
+          }
+        ],
+        "summary": "Checklist wording revised 20 July 2026. Every AO completes initial COL training before appointment and the annual refresher by the end of the calendar year. Evidence is an exported TRAX training record or a training certificate."
       },
       "howToInspect": [
         {
@@ -1318,7 +1523,7 @@
             "How many full calendar years since initial training?",
             "Count required refreshers: __________",
             "Count completed refreshers: __________",
-            "All refreshers completed? \u25a1 Yes \u25a1 No"
+            "All refreshers completed? □ Yes □ No"
           ],
           "callout": "AO refresher training overdue",
           "severity": "discrepancy"
@@ -1387,6 +1592,15 @@
           "severity": "finding"
         },
         {
+          "step": "Accept TRAX Export As Evidence",
+          "actions": [
+            "Accept an exported TRAX training record covering the AO roster in place of individual certificates.",
+            "Confirm each AO shows initial COL before the DD Form 577 date and a refresher inside the current calendar year."
+          ],
+          "callout": "AO with no TRAX export or certificate showing current COL",
+          "severity": "finding"
+        },
+        {
           "step": "Common Discrepancies",
           "actions": [
             "Initial COL completed AFTER appointment",
@@ -1403,25 +1617,40 @@
         "Show me COL training certificates for all your AOs?",
         "When were your AOs appointed, and when did they complete initial COL?",
         "Have all AOs completed this year's refresher training?",
-        "When is the deadline for annual refresher?"
+        "When is the deadline for annual refresher?",
+        "Show me the TRAX export for your AOs."
       ],
       "verification": [
-        "Current Status: \u25a1 Current \u25a1 Expired",
+        "Current Status: □ Current □ Expired",
         "AO roster current and on file.",
         "COL certificate on file for each AO.",
         "Initial COL certificate predates each AO appointment date.",
         "Annual refresher certificate within 12 months for each AO.",
         "AO with expired training has had DTS permissions revoked.",
         "Certificates retained for current plus previous calendar year.",
-        "AOs can demonstrate working knowledge of certifying officer responsibilities."
+        "AOs can demonstrate working knowledge of certifying officer responsibilities.",
+        "TRAX export or certificates show initial COL before each AO's appointment and the refresher inside the current calendar year."
       ],
-      "verified": true
+      "verified": false
     },
     "0206": {
       "title": "APPOINTEE TRAINING",
       "regulatory": {
-        "quotes": [],
-        "summary": "ODTAs must receive and retain all required training certificates within two weeks of personnel appointment. Defense Administration Office (DAO) roles require annual refresher by 31 December. Travelers and NDEAs require training every three years. Non-compliant personnel must have permissions removed by LDTA. Inspector Note: DAO annual refresher training must be completed by the end of the calendar year. Notify LDTA to remove permission/accesses for non-compliant personnel. Traveler and NDEA training must be completed every three years. Training certificates must be available for review. This question does not encompass AO initial and refresher COL training."
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 2, Par 3b and 3c",
+            "text": "Requirements to attain permissions are as follows: (1) A completed DD Form 577. (2) A current COL certificate (if required). (3) Completion of all required training as outlined in Chapter 5 of this Order. c. All documents in paragraph 3.b. shall be submitted to the granting official(s) for assignment."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 1, Par 2g",
+            "text": "Assign, manage, and monitor permission levels to ensure appropriate separation of duties in accordance with Chapter 2. Appropriate training shall be completed before DTS permissions are assigned (see Chapter 5 for training requirements). DTS permissions shall be revoked immediately should a lapse in training occur."
+          },
+          {
+            "citation": "DoD FMR Vol 5, Ch. 5, par 3.5.2 (Oct 2024)",
+            "text": "DAOs must complete approved training applicable to their mission areas within two weeks of their appointment, refresher training annually, and provide a copy of their training completion certificate to their supervisor. Evidence of having completed this training is required prior to performing as a DAO."
+          }
+        ],
+        "summary": "Checklist wording revised 20 July 2026. The ODTA receives and retains each appointee's required training evidence, an exported TRAX record or a certificate, prior to or within two weeks of appointment. Training remains effective for one year. DAO annual refresher training completes by the end of the calendar year. The ODTA notifies the LDTA to remove permissions for non-compliant personnel. The July wording drops the separate three-year traveler and NDEA cycle from this item."
       },
       "howToInspect": [
         {
@@ -1549,6 +1778,16 @@
           ]
         },
         {
+          "step": "Apply One-Year Validity",
+          "actions": [
+            "For each appointee, confirm the most recent role training date is inside the last 12 months.",
+            "Confirm the ODTA notified the LDTA for anyone past 12 months with no refresher and permissions were removed.",
+            "Accept an exported TRAX record as the evidence source."
+          ],
+          "callout": "Appointee past one year with permissions still active",
+          "severity": "finding"
+        },
+        {
           "step": "Common Discrepancies",
           "actions": [
             "Training certificates not received within two weeks",
@@ -1566,24 +1805,44 @@
         "Show me your training tracking system?",
         "Have all DAO personnel completed this year's refresher?",
         "When did you last notify LDTA about expired training?",
-        "How do you ensure you receive certificates within two weeks?"
+        "How do you ensure you receive certificates within two weeks?",
+        "Which appointees are past 12 months since training, and did you notify the LDTA?"
       ],
       "verification": [
-        "Current Training Status: \u25a1 Current \u25a1 Expired",
+        "Current Training Status: □ Current □ Expired",
         "List of all appointees requiring training on file.",
         "Appointee training documented within two weeks of appointment.",
         "Three-year refresher training tracked with due dates.",
         "Training rosters retained for current plus previous calendar year.",
         "DTS permissions not assigned before training complete.",
-        "DTS permissions revoked immediately on training lapse."
+        "DTS permissions revoked immediately on training lapse.",
+        "Every appointee trained inside the last 12 months, or LDTA notified and permissions removed.",
+        "DAO annual refresher complete by calendar year end."
       ],
-      "verified": true
+      "verified": false
     },
     "0207": {
       "title": "CHECK-IN/CHECK-OUT PROCEDURES",
       "regulatory": {
-        "quotes": [],
-        "summary": "Commands must have written check-in/check-out procedures ensuring all personnel check in and out with ODTA. Check-in requires creation or receipt of DTS profiles into proper organization. Check-out requires verification of no outstanding advances, unsettled documents, or debt. ODTAs must reconcile personnel rosters against DTS profiles monthly and annotate discrepancies. Inspector Note: The ODTA must create or receive DTS profiles into the designated organization(s). Verify command personnel rosters such as alpha rosters, HR civilian rosters, morning reports, inbound rosters, etc. against the DTS profiles. Annotate the differences and any corrective action required. The ODTA must verify there are no outstanding travel advances, unsettled authorizations, vouchers, or debt in DTS prior to transfer/separation."
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Par 4b(6)(d)",
+            "text": "Establish DTS check-in and check-out procedures to ensure travelers have no outstanding travel advances, un-settled authorizations and vouchers, or debt in DTS upon transfer or separation. The specific procedures and requirements are outlined in Chapter 3, paragraph 3, of the Enclosure."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 3, Par 3 and 3a",
+            "text": "Detaching and Receiving Travelers. Commands shall incorporate a requirement for the Tier I or Tier II Help Desk signature block on all check-in and check-out sheets. a. Personnel Detachment/Check-out Requirements. All personnel shall checkout with the Tier I or Tier II Help Desk when detaching from an organization. The Tier I or Tier II Help Desk shall ensure the individual is detached in DTS using the DTA Maintenance Tool. The Tier I or Tier II Help Desk should not detach an individual if there are documents being processed. Prior to detaching any individual with \"Due U.S.\", \"Due Process Served\", or \"Pay Collection\" status, the DMM shall be contacted."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 3, Par 3b",
+            "text": "Personnel Join/Check-in Requirements. Upon check-in, the Tier I or Tier II Help Desk shall ensure the individual has been received in the organization through the DTS Maintenance Tool. In the event an individual has not been detached from their previous organization, the Tier I or Tier II Help Desk shall contact the prior command and request they detach the individual."
+          },
+          {
+            "citation": "DoD FMR Vol 5, Ch. 5, par 4.1.8 (Oct 2024)",
+            "text": "Terminate appointments using Section IV and submit the DD 577 to all recipients who received copies of the original appointment."
+          }
+        ],
+        "summary": "Checklist wording revised 20 July 2026. The commander establishes procedures so travelers check in and out with the ODTA, with a Tier I or Tier II Help Desk signature block on every check-in and check-out sheet. Before transfer or separation the ODTA verifies no outstanding advances, unsettled authorizations or vouchers, or debt, and contacts the DMM before detaching anyone in Due U.S., Due Process Served, or Pay Collection status. The ODTA creates or receives profiles into the designated organization, reconciles alpha rosters, civilian rosters, morning reports, and inbound rosters against DTS profiles, and annotates differences. The July wording adds appointment terminations on checkout."
       },
       "howToInspect": [
         {
@@ -1714,6 +1973,15 @@
           "severity": "discrepancy"
         },
         {
+          "step": "Verify Appointment Terminations At Checkout",
+          "actions": [
+            "For each appointee who detached in the period, confirm a DD Form 577 termination and removal of DTS permissions on or before the checkout date.",
+            "Confirm the checkout sheet requires the Help Desk signature block."
+          ],
+          "callout": "Departed appointee with an open DD Form 577 or live permissions",
+          "severity": "finding"
+        },
+        {
           "step": "Common Discrepancies",
           "actions": [
             "No written procedures",
@@ -1730,7 +1998,9 @@
         "Show me your written check-in/check-out procedures?",
         "Walk me through what happens when someone checks into your command?",
         "What do you do if someone is checking out with an outstanding voucher?",
-        "When did you last reconcile your personnel roster against DTS profiles?"
+        "When did you last reconcile your personnel roster against DTS profiles?",
+        "Show me the DD Form 577 termination for the last appointee who checked out.",
+        "Is the Help Desk signature block on your check-in and check-out sheets?"
       ],
       "verification": [
         "Written procedures exist",
@@ -1742,15 +2012,31 @@
         "Authorizations settled",
         "Vouchers settled",
         "Debt resolved",
-        "Profile transferred/inactivated"
+        "Profile transferred/inactivated",
+        "DD Form 577 termination and permission removal on or before checkout for departed appointees.",
+        "Help Desk signature block present on check-in and check-out sheets.",
+        "DMM contacted before detaching anyone in a debt status."
       ],
-      "verified": true
+      "verified": false
     },
     "0208": {
       "title": "UNSUBMITTED VOUCHER REPORT",
       "regulatory": {
-        "quotes": [],
-        "summary": "ODTAs must extract and reconcile the Unsubmitted Voucher Report weekly, notify travelers, AOs, and APCs of unsubmitted vouchers beyond the five-business-day requirement, and retain reports for current plus previous calendar year. Inspector Note: The ODTA must provide evidence of notifying the AO and APC of outstanding travel vouchers to assist with timely settlement."
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 6, Par 3a",
+            "text": "Unsubmitted Voucher Report. This report shall be retrieved weekly. This report shall be reconciled with AOs and APCs to verify travelers are submitting their travel vouchers within the prescribed time frame after completion of travel and GTCCs are being properly paid by cardholders."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 1, Par 5a(2)(d) and (e)",
+            "text": "(d) Ensure travelers submit vouchers within five (5) business days of returning from travel. (e) Ensure vouchers are stamped \"reviewed\" (meaning have been authorized by the unit AO) within two (2) business days after being signed by the traveler."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 6, Par 1",
+            "text": "The reports identified below shall be retained (electronically or hardcopy) for the current and previous year."
+          }
+        ],
+        "summary": "Checklist wording revised 20 July 2026. The ODTA reconciles the Unsubmitted Voucher Report weekly with AOs and APCs, notifies the traveler, AO, and APC so vouchers submit within five business days after travel, and retains the reports for the current plus previous calendar year. Evidence of notifying the AO and APC is required. The July wording adds returned vouchers: the report shows initial and returned vouchers, and returned vouchers follow the same notification process."
       },
       "howToInspect": [
         {
@@ -1889,6 +2175,15 @@
           "severity": "finding"
         },
         {
+          "step": "Include Returned Vouchers",
+          "actions": [
+            "On sampled weekly reports, identify vouchers returned to the traveler and confirm the same traveler, AO, and APC notification trail as for initial vouchers.",
+            "Confirm returned vouchers resubmit inside five business days of return."
+          ],
+          "callout": "Returned vouchers tracked outside the notification process",
+          "severity": "discrepancy"
+        },
+        {
           "step": "Common Discrepancies",
           "actions": [
             "Reports not extracted weekly",
@@ -1907,19 +2202,31 @@
         "Show me your Unsubmitted Voucher Reports for the past year?",
         "How often do you pull this report?",
         "Show me examples of notifications you sent for overdue vouchers?",
-        "Who do you notify when vouchers aren't submitted on time?"
+        "Who do you notify when vouchers aren't submitted on time?",
+        "Show me a returned voucher on the report and the notifications you sent after it came back."
       ],
       "verification": [
-        "Report Retained: \u25a1 Yes",
-        "Status: \u25a1 On Time \u25a1 Overdue (5+ days)"
+        "Report Retained: □ Yes",
+        "Status: □ On Time □ Overdue (5+ days)",
+        "Returned vouchers carry the same traveler, AO, and APC notification trail as initial vouchers.",
+        "Evidence of AO and APC notification retained with each weekly report."
       ],
-      "verified": true
+      "verified": false
     },
     "0209": {
       "title": "APPROVED STATUS REPORT (FDTA)",
       "regulatory": {
-        "quotes": [],
-        "summary": "FDTAs must extract the Approved Status Report every two weeks, reconcile all rejected vouchers with documented actions taken, retain system header data unaltered, maintain correspondence and notification records, and retain reports for current plus previous calendar year. Inspector Note: Reconciliation includes verifying all rejects, report annotations, actions taken to resolve rejects, correspondence, and notification records. Do not remove system header data from the report. The FDTA must demonstrate the validation process."
+        "quotes": [
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 6, Par 4a",
+            "text": "Approved Status Report. Shall be retrieved every two weeks. The report shall be reviewed for accounting rejects in the \"Current Status\" column. Identified rejects shall be corrected appropriately. Once rejects are corrected in the accounting system, FDTAs shall coordinate with ODTAs to ensure travelers amend and resubmit vouchers and authorizations."
+          },
+          {
+            "citation": "MCO 4650.39A, Encl (1), Chap 6, Par 1",
+            "text": "The reports identified below shall be retained (electronically or hardcopy) for the current and previous year."
+          }
+        ],
+        "summary": "Checklist wording revised 20 July 2026. The FDTA reconciles the Approved Status Report every two weeks to correct accounting rejects. The report carries annotations, the actions taken to resolve each reject, and the associated notification records. System header data stays on the report. Reports are retained for the current plus previous calendar year. The July wording narrows the reference to chapter 6 paragraph 4a and drops the validation-process demonstration."
       },
       "howToInspect": [
         {
@@ -2076,6 +2383,15 @@
           "severity": "finding"
         },
         {
+          "step": "Confirm Reject Correction And Resubmission",
+          "actions": [
+            "For sampled rejects, confirm the correction in the accounting system and the notification to the ODTA.",
+            "Confirm the traveler amended and resubmitted the document and the reject cleared on the next report."
+          ],
+          "callout": "Rejects annotated but never corrected or resubmitted",
+          "severity": "discrepancy"
+        },
+        {
           "step": "Common Discrepancies",
           "actions": [
             "Reports not extracted bi-weekly",
@@ -2095,14 +2411,17 @@
         "Show me your Approved Status Reports for the past year?",
         "How often do you extract this report?",
         "Walk me through how you reconcile rejected vouchers?",
-        "Show me correspondence and notifications for recent rejects?"
+        "Show me correspondence and notifications for recent rejects?",
+        "Walk me through one reject from this report to its resubmission."
       ],
       "verification": [
-        "System Header Intact: \u25a1 Yes \u25a1 No",
-        "Annotations Present: \u25a1 Yes \u25a1 No",
-        "Report Retained: \u25a1 Yes"
+        "System Header Intact: □ Yes □ No",
+        "Annotations Present: □ Yes □ No",
+        "Report Retained: □ Yes",
+        "Sampled rejects corrected in the accounting system, ODTA notified, document resubmitted.",
+        "System header data intact on retained reports."
       ],
-      "verified": true
+      "verified": false
     },
     "0210": {
       "title": "TRAVELER VOUCHER SUBMISSION",
@@ -2268,8 +2587,8 @@
         "What do you do when travelers consistently submit late?"
       ],
       "verification": [
-        "Status: \u25a1 On Time (0-5 days) \u25a1 Late (6+ days)",
-        "Assessment: \u25a1 \u226590% (Compliant) \u25a1 <90% (Discrepancy) \u25a1 <75% (Finding)"
+        "Status: □ On Time (0-5 days) □ Late (6+ days)",
+        "Assessment: □ ≥90% (Compliant) □ <90% (Discrepancy) □ <75% (Finding)"
       ],
       "verified": true
     },
@@ -2403,7 +2722,7 @@
           "step": "Check Routing List Configuration",
           "actions": [
             "Ask: \"Show me a typical voucher routing list.\"",
-            "Should be: Traveler \u2192 RO (if applicable) \u2192 AO \u2192 Finance",
+            "Should be: Traveler → RO (if applicable) → AO → Finance",
             "Check: No unnecessary routing stops",
             "Verify: Logical, efficient flow"
           ],
@@ -2455,12 +2774,12 @@
         "Show me the routing history for this voucher?"
       ],
       "verification": [
-        "FSTS Exception: \u25a1 Yes (exempt) \u25a1 No (must comply)",
-        "Status: \u25a1 On Time (0-3 days) \u25a1 Late (4+ days) \u25a1 Exempt (FSTS)",
+        "FSTS Exception: □ Yes (exempt) □ No (must comply)",
+        "Status: □ On Time (0-3 days) □ Late (4+ days) □ Exempt (FSTS)",
         "Traveler to RO: _____ days",
         "RO to AO: _____ days",
         "AO to Finance: _____ days",
-        "Assessment: \u25a1 \u226590% (Compliant) \u25a1 <90% (Discrepancy) \u25a1 <75% (Finding)"
+        "Assessment: □ ≥90% (Compliant) □ <90% (Discrepancy) □ <75% (Finding)"
       ],
       "verified": true
     }

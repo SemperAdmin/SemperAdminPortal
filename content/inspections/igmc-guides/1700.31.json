@@ -1,0 +1,769 @@
+{
+  "faNumber": "1700.31",
+  "sourceDoc": "MCO 1700.31A Transition Readiness Program, 2 Mar 2026 (cancels MCO 1700.31). MARADMIN 632/19, 13 Nov 2019. 10 USC 1142 and 1144. DoDI 1332.35 CH-1, 29 Jul 2025. The FAC revised 21 Feb 2024 cites the cancelled MCO 1700.31 paragraph numbers, so each item maps the old cite to the current enclosure (2) chapter. Quote walk 2026-09-11: 46 of 46 quotes matched verbatim against the extracted source text, the statute quotes against the fetched law.cornell.edu text. Inspection steps, questions, and verification await SME review.",
+  "lastVerified": "2026-09-11",
+  "verifiedAtSource": false,
+  "items": {
+    "0101": {
+      "title": "UTC AND DESIGNEE APPOINTED IN WRITING, UTCN CODE REPORTED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 3, Par 9",
+            "text": "Appoint UTC(s) at a ratio of one UTC to every 75 eligible Marines based on command transitional throughput, as defined in the Glossary. The UTC must be a uniformed member in the grade of E5 or above who has access to the commander and at least 12 months remaining with the command."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 3, Par 10",
+            "text": "Ensure all UTCs are appointed in writing. Use sample appointment letter from chapter 15 to appoint the UTCs and ensure a copy of the appointment letter is provided to the installation TRP personnel. Career Planners cannot be appointed as UTCs."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 3, Par 13",
+            "text": "Conduct Commander's Verification with all eligible Marines. To assist with this requirement, each commander may appoint designees in writing. Commanders, or designees, must conduct Commander's Verification in accordance with enclosure (2). Use sample appointment letter in chapter 15 of this Order to appoint designees and ensure a copy of the appointment letter is provided to the installation TRP personnel. Career Planners cannot be appointed as designees."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 14, Par 1a",
+            "text": "A designee must be a uniformed member, appointed in writing by the commander, who is a staff non-commissioned officer or higher not currently serving in the capacity as a UTC. Career Planners cannot be appointed as designees."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 13, Par 7c",
+            "text": "Coordinate the entry of the collateral duty code \"UTCN – Unit Transition Counselor\", reported via Electronic Personnel Administrative Request using the appointment letter to the servicing personnel center or via MCTIMS."
+          },
+          {
+            "citation": "MARADMIN 632/19, Par 11c",
+            "text": "The CO (or designee), must ensure at least one UTC is appointed for every 75 Marines in the unit. UTCs must be uniformed members, appointed in writing, in the pay grade of E5 and above, with at least 12 months remaining with the command. Career Planners cannot be designated as UTCs. The collateral duty code \"UTCN – Unit Transition Counselor\" must be reported via E-PAR using the appointment letter to the servicing personnel center."
+          }
+        ],
+        "summary": "The commander appoints UTCs in writing at one per 75 eligible Marines. Each UTC is a uniformed E5 or above with 12 months left on station and commander access. Designees for Commander's Verification are SNCO or above, appointed in writing, and not serving as a UTC. Career Planners hold neither billet. Copies of both letters go to the installation TRP office. The UTCN collateral duty code posts to MCTFS through an ePAR built on the appointment letter, or through MCTIMS. The checklist cite of MCO 1700.31 paragraph 3b(5)(c) now lives in enclosure (2) chapter 3 of MCO 1700.31A."
+      },
+      "howToInspect": [
+        {
+          "step": "Pull The Appointment Letters",
+          "actions": [
+            "Request every current UTC appointment letter and every designee letter.",
+            "Confirm each is signed by the commander, dated, and matches the chapter 15 sample in substance.",
+            "Confirm a copy went to the installation TRP office."
+          ],
+          "callout": "UTC or designee acting with no written appointment",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Eligibility Of The Appointees",
+          "actions": [
+            "UTC: uniformed, E5 or above, 12 months remaining on station at appointment, not a Career Planner.",
+            "Designee: uniformed, SNCO or above, not a current UTC, not a Career Planner.",
+            "Compare the UTC count with eligible Marines on the tracker. One UTC per 75 eligible Marines."
+          ],
+          "callout": "Appointee below grade, Career Planner appointed, or ratio exceeded",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Verify The UTCN Code",
+          "actions": [
+            "Ask the UTC or S-1 for the MCTFS or MCTIMS screen showing UTCN against each appointed UTC.",
+            "Confirm the ePAR or MCTIMS entry rests on the appointment letter."
+          ],
+          "callout": "UTCN code not reported for an appointed UTC",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "UTC appointed verbally at a staff meeting, letter never signed.",
+            "Career Planner doubling as UTC.",
+            "Designee letter dated after Commander's Verifications the designee already signed.",
+            "UTCN code entered for a prior UTC and never updated on turnover."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How many eligible Marines does the command carry, and how many UTCs are appointed?",
+        "Show me the UTC and designee letters and the copy sent to the TRP office.",
+        "Where is the UTCN code visible in MCTFS or MCTIMS?",
+        "Who signs Commander's Verification when you are absent?"
+      ],
+      "verification": [
+        "Signed UTC and designee appointment letters on file, copies at the TRP office.",
+        "Appointees meet grade, tenure, and non-Career-Planner rules.",
+        "UTC ratio holds at one per 75 eligible Marines.",
+        "UTCN code visible in MCTFS or MCTIMS for each UTC."
+      ],
+      "verified": false
+    },
+    "0102": {
+      "title": "UTC TRAINING COMPLETED AFTER APPOINTMENT",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 3, Par 11",
+            "text": "Ensure all UTCs complete HQMC standardized UTC training provided by the installation TRP personnel, not later than 60 days from official appointment. UTCs are recommended to audit the TRS courses as space permits."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 13, Par 6",
+            "text": "UTCs must attend UTC training as conducted and provided by the installation TRP personnel not later than 60 days from appointment to this collateral duty. Training will be required upon change of duty station if re-appointed as the UTC. UTCs must complete training with the Marine Corps installation they are physically attached to."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 3, Par 14",
+            "text": "Attend or ensure designees attend commander/designee training, as provided by the installation TRP personnel, not later than 60 days after official appointment."
+          },
+          {
+            "citation": "MARADMIN 632/19, Par 11c",
+            "text": "Initial training is required within 45 days of appointment and will be required upon change of duty station if re-appointed as the UTC. UTCs geographically detached, may contact the nearest Marine Corps installation for virtual training after first gaining access to the Transition Readiness Program (TRP) resources as directed in paragraph 11(d)."
+          }
+        ],
+        "summary": "The checklist asks for UTC training within 45 days, the MARADMIN figure. MCO 1700.31A of 2 March 2026 sets 60 days from official appointment for UTCs and for commanders and designees, delivered by the installation TRP office with HQMC standardized content. The MARADMIN cancels on incorporation into the Order, so 60 days governs. Re-training is required on a change of duty station. Geographically detached UTCs train through their designated installation under chapter 13 paragraph 6."
+      },
+      "howToInspect": [
+        {
+          "step": "Match Certificates To Letters",
+          "actions": [
+            "For each UTC letter, request the UTC training certificate from the installation TRP office.",
+            "Compute days from the appointment letter date to the training date.",
+            "Apply 60 days under MCO 1700.31A. Note any UTC trained between day 46 and day 60 as compliant with the current Order."
+          ],
+          "callout": "UTC past 60 days from appointment with no training certificate",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Designee Training",
+          "actions": [
+            "Repeat the same check for every designee and for the commander where the commander signs verifications personally.",
+            "Confirm training came from the installation TRP office, not a locally built brief."
+          ],
+          "callout": "Designee signing verifications with no commander/designee training",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Re-Training And Detached UTCs",
+          "actions": [
+            "For a UTC re-appointed after a PCS, confirm a new certificate from the gaining installation.",
+            "For a detached UTC, confirm training through the designated installation listed in chapter 13 paragraph 6."
+          ],
+          "callout": "Certificate from a prior duty station accepted after re-appointment",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Certificate on file for the previous UTC only.",
+            "Training completed before the appointment letter was signed, then the letter backdated.",
+            "Designee never trained because the command assumed UTC training covered it.",
+            "Detached unit UTC trained by a Navy or Army transition office without TRP coordination."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "When was each UTC appointed, and when did they complete UTC training?",
+        "Who trained your designees, and when?",
+        "Has any UTC been re-appointed after a PCS, and were they re-trained?",
+        "Which installation TRP office does a detached UTC train with?"
+      ],
+      "verification": [
+        "Training certificate for every appointed UTC within 60 days of the letter date.",
+        "Training certificate for every designee within 60 days of the letter date.",
+        "Certificates issued by the installation TRP office.",
+        "Re-appointed UTCs hold a certificate from the current installation."
+      ],
+      "verified": false
+    },
+    "0103": {
+      "title": "UTC IDENTIFIES, NOTIFIES, AND TRACKS ELIGIBLE MARINES",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 13, Par 5",
+            "text": "UTCs must identify, notify, track, and monitor all separating, retiring, demobilizing or deactivating Marines, regardless of their rank. This includes all short notice and involuntary separations."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 13, Par 7a, 7b, 7e, 7k",
+            "text": "a. Establish, organize, and administer the command's TRS processes. b. Conduct continuous outreach and education to the Marines on TRS requirements. Disseminate TRS information and literature within the command and ensure Marines are proactively completing the TRS requirements. e. Identify, notify, and track eligible Marines within their command of mandatory TRS requirements. k. Update commander and all other leadership on the Marine's progress and completion or attendance to all TRS requirements."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 3, Par 3 and 4",
+            "text": "3. Within 60 days of assuming command, publish or update a standard operating procedure aligning with the requirements of this Order and outlining roles and responsibilities specific to the unit. 4. Ensure TRP is included in the command's check-in and check-out sheets."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 3, Par 7",
+            "text": "Ensure Marines scheduled to deploy initiate and complete TRS requirements prior to deploying as outlined below. To support this, commanders must ensure the TRP is included in the command's pre-deployment checklist. a. Marines with a deployment return date within 365 days prior to EAS date must complete, at a minimum, IC and Pre-separation Counseling Brief with the parent installation prior to deployment. b. Marines with a deployment return date less than 180 days prior to or during deployment must complete all TRS requirements prior to deployment."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 5, Par 4a",
+            "text": "All AC Marines who are separating or retiring and who have completed a minimum of 180 days or more of continuous AD orders must complete the TRS requirements. For purposes of TRS eligibility, the 180 days start accumulating upon the Marine's arrival to their first permanent duty station."
+          }
+        ],
+        "summary": "The UTC owns the unit process end to end: identify every Marine separating, retiring, demobilizing, or deactivating regardless of rank, notify them of each TRS requirement, track and monitor progress, and brief the commander. The command SOP, the check-in and check-out sheets, and the pre-deployment checklist all carry TRP. Deploying Marines finish IC and Pre-separation Counseling before departure when their return falls inside 365 days of EAS, and everything when the return falls inside 180 days. The checklist cite of MCO 1700.31 paragraph 3b(6)(a) now lives in enclosure (2) chapter 13 of MCO 1700.31A."
+      },
+      "howToInspect": [
+        {
+          "step": "Request The Tracker And Reconcile It",
+          "actions": [
+            "Ask the UTC for the tracking mechanism listed in the turnover binder.",
+            "Pull the unit EAS report from MCTFS for the next 24 months and compare name by name.",
+            "Flag any Marine inside 24 months of EAS or retirement not on the tracker, including officers and SNCOs."
+          ],
+          "callout": "Eligible Marines inside the TRS window missing from the tracker",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Notification Evidence",
+          "actions": [
+            "For a sample of Marines on the tracker, ask for the notification the UTC sent and the date.",
+            "Confirm the notification names the requirement, the deadline, and the TRP office contact."
+          ],
+          "callout": "Marines on the tracker with no record of notification",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check The Command Framework",
+          "actions": [
+            "Confirm the command SOP exists and was published or updated within 60 days of the current commander assuming command.",
+            "Confirm TRP appears on the check-in sheet, the check-out sheet, and the pre-deployment checklist.",
+            "Confirm the UTC briefs the commander on progress, and ask how often."
+          ],
+          "callout": "No SOP, or TRP missing from check-in, check-out, or pre-deployment checklists",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Deploying And Short-Notice Marines",
+          "actions": [
+            "For any Marine deploying with a return date inside 365 days of EAS, confirm IC and Pre-separation Counseling were done before departure.",
+            "For any short-notice or involuntary separation, confirm the UTC started TRS requirements on identification."
+          ],
+          "callout": "Deploying Marine sent without required TRS stages complete",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Tracker built from a one-time roster pull and never refreshed.",
+            "Officers and retirees left off because the UTC tracked enlisted EAS only.",
+            "Check-out sheet has TRP but check-in and pre-deployment lists do not.",
+            "Short-notice separations discovered by the UTC after the Marine left."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "How do you find every Marine inside 24 months of EAS or retirement, and how often do you refresh the list?",
+        "Show me the last notification you sent and the response.",
+        "When did the commander last get a TRS status brief?",
+        "How do you catch a short-notice or involuntary separation?"
+      ],
+      "verification": [
+        "Tracker reconciled against the MCTFS EAS report with no gaps.",
+        "Notification records for sampled Marines.",
+        "Command SOP current, TRP on check-in, check-out, and pre-deployment sheets.",
+        "Deploying and short-notice Marines handled per chapter 3 paragraphs 7 and 15."
+      ],
+      "verified": false
+    },
+    "0104": {
+      "title": "INDIVIDUALIZED INITIAL COUNSELING NO LATER THAN 365 DAYS BEFORE EAS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "10 USC 1142(a)(3)(A)",
+            "text": "In the case of an anticipated retirement, preseparation counseling shall commence as soon as possible during the 24-month period preceding the anticipated retirement date. In the case of a separation other than a retirement, preseparation counseling shall commence not later than 365 days before the anticipated date."
+          },
+          {
+            "citation": "DoDI 1332.35 CH-1, Par 6.1a and 6.1b",
+            "text": "a. Eligible Service members will receive individualized IC in person or, if in-person IC is not feasible, by video conference, regardless of discharge, not later than 365 days prior to release from active duty. b. Eligible Service members who have less than 365 days before their anticipated date of separation or retirement, or who are members of the RC being demobilized/deactivated at a time which makes the 365 day requirement unfeasible, will begin the IC as soon as possible within the remaining period of service."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 8, Par 2 through 5",
+            "text": "2. IC must be completed, in-person, prior to the Pre-separation Counseling Brief. 3. All eligible Marines must complete IC with their designated installation TRP office. When in-person completion is not feasible, UTCs must coordinate the Marine's virtual completion of an individualized and synchronous IC provided by the designated installation. 4. IC must be completed no later than 365 days prior to the EAS date. a. For EAS dates due to retirement, this may begin as soon as possible during the 24-month period preceding an anticipated retirement date but no later than 365 days prior to EAS date. b. For EAS dates other than retirement, Marines may complete the IC 18 months before separation or release from AD but no later than 365 days prior to EAS date. 5. IC completion is valid for 24 months, for both AC and RC Marines."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 8, Par 6",
+            "text": "Eligible Marines must complete all mandatory and standard pre-work, in accordance with chapter 15 of this Order, in preparation for the IC. Completed pre-work must be submitted to the installation TRP personnel for verification."
+          },
+          {
+            "citation": "MARADMIN 632/19, Par 5",
+            "text": "All eligible Marines must receive face-to-face Individualized Initial Counseling with the Transition Readiness staff, no later than 365 days prior to their end of active service (EAS) date. Unit Transition Coordinators (UTCs) will provide pre-work instructions provided by the Transition Readiness staff, to the Marine in preparation for the Individualized Initial Counseling meeting. This requirement lasts for 24 months following completion."
+          }
+        ],
+        "summary": "IC opens the TRS sequence and must be complete no later than 365 days before EAS. Retirees start inside the 24-month window, others inside 18 months. IC is in person with the designated installation TRP office, or a synchronous virtual session the UTC coordinates when in person is not feasible. The Marine completes standard pre-work first. Completion is valid 24 months. RC Marines demobilizing on short timelines and any unanticipated separation start as soon as possible in the remaining service. The checklist cite of MCO 1700.31 paragraph 3b(5)(b) now lives in enclosure (2) chapters 5 and 8 of MCO 1700.31A."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample Marines Inside 365 Days",
+          "actions": [
+            "From the tracker, select Marines whose EAS falls inside the next 365 days, mixing retirements, separations, and any RC demobilizations.",
+            "For each, open the DD Form 2648 and read the IC completion date."
+          ],
+          "callout": "Marine inside 365 days of EAS with no IC on the DD Form 2648",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Timing And Sequence",
+          "actions": [
+            "Confirm the IC date is on or before EAS minus 365 days.",
+            "Confirm IC precedes the Pre-separation Counseling Brief date on the same form.",
+            "For retirees, confirm IC started inside the 24-month window."
+          ],
+          "callout": "IC completed later than 365 days before EAS, or after the Pre-separation Brief",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Delivery And Pre-Work",
+          "actions": [
+            "Confirm IC was in person with the designated installation, or a synchronous virtual session the UTC arranged with a documented reason.",
+            "Confirm the Marine submitted the chapter 15 pre-work to the TRP office before IC."
+          ],
+          "callout": "Asynchronous or self-paced IC, or pre-work never submitted",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Exceptions",
+          "actions": [
+            "For unanticipated separations and short-notice RC demobilizations, confirm IC began as soon as the separation was identified.",
+            "Confirm any eligibility exemption is documented on the DD Form 2648 by the TRP office."
+          ],
+          "callout": "Late IC with no documented unanticipated separation or exemption",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "IC scheduled at EAS minus 300 days because the UTC used the TRS 180-day deadline for everything.",
+            "Marine attended IC at a different installation without designated office coordination.",
+            "Pre-work skipped, IC held anyway, tier assignment unsupported.",
+            "Reenlistment intent used as a reason to skip IC before approval was verified."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Which Marines are inside 365 days of EAS, and where does each stand on IC?",
+        "How do you schedule IC for a retiree versus a first-term Marine?",
+        "Show me a DD Form 2648 with IC complete and the pre-work behind it.",
+        "How do you handle a Marine whose separation was unanticipated?"
+      ],
+      "verification": [
+        "DD Form 2648 IC dates at or before EAS minus 365 days for sampled Marines.",
+        "IC precedes Pre-separation Counseling on each form.",
+        "In-person or synchronous virtual delivery through the designated installation.",
+        "Pre-work submitted and exemptions documented by the TRP office."
+      ],
+      "verified": false
+    },
+    "0105": {
+      "title": "PRE-SEPARATION COUNSELING BRIEF NO LATER THAN 365 DAYS BEFORE EAS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "10 USC 1142(a)(1)",
+            "text": "Within the time periods specified in paragraph (3), the Secretary concerned shall (except as provided in paragraph (4)) provide for individual preseparation counseling of each member of the armed forces whose discharge (regardless of character of discharge) or release from active duty is anticipated as of a specific date."
+          },
+          {
+            "citation": "10 USC 1142(a)(3)(B)",
+            "text": "In the event that a retirement or other separation is unanticipated until there are 365 or fewer days before the anticipated retirement or separation date, or in the event a member of a reserve component is being demobilized under circumstances in which (as determined by the Secretary concerned) operational requirements make the 365-day requirement under subparagraph (A) unfeasible, preseparation counseling shall begin as soon as possible within the remaining period of service."
+          },
+          {
+            "citation": "DoDI 1332.35 CH-1, Par 5.2c and 5.2d",
+            "text": "c. Transition assistance must begin no later than 365 days before separation, retirement, or release from active duty except in those cases pursuant to Title 10, U.S.C., specific timelines. d. In an unanticipated separation or retirement, or in the event a member of an RC is being demobilized under circumstances in which prescribed timelines cannot be met, as determined by the Secretary concerned, transition assistance must begin as soon as possible within the remaining period of service or the effective date on the DD Form 214."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 9, Par 2 through 5",
+            "text": "2. The Pre-separation Counseling Brief must be attended after IC completion and prior to attendance to TRS. 3. All eligible Marines must attend the in-person Pre-separation Counseling Brief with their designated installation TRP office as outlined in chapter 7 of this Order. When in-person attendance is not feasible, UTCs must coordinate the Marine's virtual attendance to a synchronous Pre-Separation Counseling Brief provided by the designated installation. 4. The Pre-separation Counseling Brief must be attended no later than 365 days prior to the EAS date. 5. Attendance to the Pre-separation Counseling Brief is valid for 24 months, for both AC and RC Marines."
+          },
+          {
+            "citation": "MARADMIN 632/19, Par 6",
+            "text": "All eligible Marines must receive Pre-Separation Counseling as directed by the Transition Readiness staff, no later than 365 days prior to EAS per reference (a). This can only be completed after Individualized Initial Counseling and prior to attending TRS. This requirement lasts for 24 months following completion."
+          }
+        ],
+        "summary": "The Pre-separation Counseling Brief is the statutory counseling in 10 USC 1142. It follows IC, precedes TRS workshops, and is complete no later than 365 days before EAS. Retirees start inside 24 months, others inside 18. Delivery is in person with the designated installation or a synchronous virtual session the UTC coordinates. Attendance is valid 24 months. Unanticipated separations and infeasible RC timelines start as soon as possible. The checklist cite of MCO 1700.31 paragraph 3b(5)(b) now lives in enclosure (2) chapters 5 and 9 of MCO 1700.31A."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample The Same Marines As 0104",
+          "actions": [
+            "On each sampled DD Form 2648, read the Pre-separation Counseling Brief date.",
+            "Confirm the date is on or before EAS minus 365 days."
+          ],
+          "callout": "Marine inside 365 days of EAS with no Pre-separation Brief recorded",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Sequence",
+          "actions": [
+            "Confirm the brief date falls after IC and before any TRS workshop date.",
+            "Flag a form where TRS workshops predate the brief."
+          ],
+          "callout": "Pre-separation Brief out of sequence with IC or TRS",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Delivery",
+          "actions": [
+            "Confirm attendance was in person with the designated installation under chapter 7, or a synchronous virtual session the UTC coordinated.",
+            "Confirm the Reserve Opportunities and Obligations Brief was offered in this phase."
+          ],
+          "callout": "Brief taken asynchronously or at an uncoordinated location",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Brief completed the same week as TRS, months past the 365-day mark.",
+            "UTC treated the DoD Transition Day as the pre-separation brief.",
+            "Detached Marine attended a sister-service brief with no TRP office record on the 2648.",
+            "Twenty-four month validity misread, Marine re-briefed and the original date overwritten."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the Pre-separation Brief date for each sampled Marine against EAS.",
+        "How do you sequence IC, the brief, and TRS on the schedule?",
+        "Where do detached Marines attend the brief?",
+        "Was the ROOB offered at the brief?"
+      ],
+      "verification": [
+        "Brief date at or before EAS minus 365 days on sampled forms.",
+        "Sequence holds: IC, then brief, then TRS.",
+        "Delivery through the designated installation, in person or synchronous virtual.",
+        "Unanticipated separations started on identification."
+      ],
+      "verified": false
+    },
+    "0106": {
+      "title": "TRS WORKSHOPS AND TWO-DAY TRACKS NO LATER THAN 180 DAYS BEFORE EAS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "10 USC 1144(a)(1)",
+            "text": "The Secretary of Labor, in conjunction with the Secretary of Defense, the Secretary of Homeland Security, and the Secretary of Veterans Affairs, shall establish and maintain a program to furnish counseling, assistance in identifying employment and training opportunities, help in obtaining such employment and training, and other related information and services to members of the armed forces under the jurisdiction of the Secretary concerned who are being separated from active duty and the spouses of such members."
+          },
+          {
+            "citation": "10 USC 1144(c)",
+            "text": "The Secretary of Defense and the Secretary of Homeland Security shall require the participation in the program carried out under this section of the members eligible for assistance under the program."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 10, Par 2 through 6",
+            "text": "2. All eligible Marines must attend the TRS workshops with their designated installation TRP office, as outlined in chapter 7 of this Order. 3. TRS workshops must be attended after completion of the Pre-separation Counseling Brief. 4. TRS workshops must be completed no later than 180 days prior to the EAS date. 5. The completion of TRS workshops is valid for 24 months, for both AC and RC Marines. 6. Attendance to the TRS workshops is documented on the Marine's DD Form 2648 by the installation TRP personnel."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 10, Par 7 and 8",
+            "text": "7. TRS workshops are composed of Core Curriculum and 2-Day Tracks as outlined below: a. Core Curriculum consists of the DoD Transition Day, the VA Benefits and Services, and DOL One-Day. b. 2-Day Tracks consist of: (1) DOL Employment track. (2) DoD Education track. (3) DOL Vocational track. (4) SBA Entrepreneurship track. 8. Eligible Marines must attend the TRS workshops in accordance with their assigned tier level as outlined in chapter 15 of this Order."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 6, Par 3 and 4",
+            "text": "3. Department of Labor (DOL) Exemption. Marines may receive exemption from participation in the DOL One-Day Employment Fundamentals of Career Transition. Marines assigned to tier level III cannot be exempt. Exemptions must be documented on the Marine's DD Form 2648 by the installation TRP personnel. Exemptions must be received from the installation TRP personnel and confirmed by the commander or designee at Commander's Verification. 4. 2-Day Track Exemption. Marines assigned to tier level I and II must elect a 2-Day Track but may receive exemption from participation. Tier III Marines cannot receive exemption from attending the elected 2-Day Track."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 11, Par 3 and 4",
+            "text": "3. The installation TRP leadership remain the sole granting authority for completion of the virtual curriculum. 4. Eligible Marines who complete the virtual curriculum without prior written authorization from the installation TRP leadership will not receive credit."
+          },
+          {
+            "citation": "MARADMIN 632/19, Par 7 and 7a",
+            "text": "Upon completion of Individualized Initial Counseling and Pre-Separation Counseling, attendance at the TRS and Tracks shall be completed no later than 180 days prior to EAS, per reference (b). Completion of these requirements is necessary to achieve TAP Compliance. This requirement lasts for 24 months following completion. 7a. Using JKO to complete mandatory requirements will not be accepted without advance approval and instruction from Transition Readiness staff."
+          }
+        ],
+        "summary": "TRS workshops follow the Pre-separation Brief and finish no later than 180 days before EAS. Core curriculum is DoD Transition Day, VA Benefits and Services, and DOL One-Day. Tier assignment from IC drives which two-day track the Marine attends. DOL One-Day and track exemptions come only from the installation TRP office, documented on the DD Form 2648, and confirmed at Commander's Verification. Tier III Marines get no exemption. Virtual curriculum counts only with prior written TRP authorization. The checklist cite of MCO 1700.31 paragraph 3b(5)(e) now lives in enclosure (2) chapters 5, 6, 10, and 11 of MCO 1700.31A."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample Marines Inside 180 Days",
+          "actions": [
+            "From the tracker, select Marines with EAS inside the next 180 days.",
+            "On each DD Form 2648, read the workshop session dates for DoD Transition Day, VA Benefits and Services, DOL One-Day, and the elected track."
+          ],
+          "callout": "Marine inside 180 days of EAS with TRS workshops incomplete",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Timing, Sequence, And Tier",
+          "actions": [
+            "Confirm the last workshop date is on or before EAS minus 180 days.",
+            "Confirm workshops follow the Pre-separation Brief date.",
+            "Confirm the track attended matches the tier and goal recorded at IC."
+          ],
+          "callout": "Workshops late, out of sequence, or track mismatched to tier",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Exemptions And Virtual Credit",
+          "actions": [
+            "For any DOL One-Day or track exemption, confirm the TRP office documented it on the 2648 and the Marine is not tier III.",
+            "For any virtual completion, confirm written TRP leadership authorization predates the session."
+          ],
+          "callout": "Exemption granted by the unit, or virtual credit with no written TRP authorization",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Command Support",
+          "actions": [
+            "Confirm Marines were released for the full 24-hour period of each workshop day and the 12 hours either side under chapter 3 paragraph 1.",
+            "Ask how the UTC verifies no competing appointments on workshop days."
+          ],
+          "callout": "Marines pulled from workshops for duty or scheduled against them",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Marine completed JKO modules on their own and the unit counted them.",
+            "First sergeant excused the DOL One-Day for a Marine with a job offer, no TRP documentation.",
+            "Track attended does not match the tier pathway on the ITP.",
+            "Workshops finished inside 180 days because the seat was booked late."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Which Marines are inside 180 days of EAS, and which workshops remain for each?",
+        "Who grants a DOL One-Day exemption in your command?",
+        "Has any Marine completed the virtual curriculum, and where is the written authorization?",
+        "How do you protect workshop days from duty?"
+      ],
+      "verification": [
+        "Workshop session dates on the 2648 at or before EAS minus 180 days.",
+        "Core curriculum plus the tier-appropriate track complete.",
+        "Exemptions documented by the TRP office, none for tier III.",
+        "Written TRP authorization on file for any virtual completion."
+      ],
+      "verified": false
+    },
+    "0107": {
+      "title": "COMMANDER'S VERIFICATION NO LATER THAN 90 DAYS BEFORE EAS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "DoDI 1332.35 CH-1, Section 9",
+            "text": "Capstone occurs in two stages and should take place no later than 90 days prior to separation. In stage one, TAP staff conduct an in-depth review of the Service member's ITP and CRS. In stage two, the commander or commander's designee determines whether, in his or her judgment, the Service member completed a viable ITP and has met the CRS. If the commander or commander's designee determines the Service member did not meet the CRS or did not complete a viable ITP, then he or she must confirm the Service member's warm handover takes place with the appropriate interagency partners prior to the issuance of the DD 214."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 12, Par 2a through 2f",
+            "text": "a. Eligible Marines must complete Commander's Verification with the commander or designee. b. Commander's Verification must be completed no later than 90 days prior to the EAS date. c. The completion of Commander's Verification is valid for 24 months, for both AC and RC Marines. d. The commander or designee must ensure the Marine has had positive contact with the appropriate agency noted by the transition personnel in the Warm Handover section and check the \"Warm Handover Executed\" box. e. Eligible Marines identified by their commander or designee during Commander's Verification or during a Force Preservation Council and assessed to be high risk due to a wound, illness, or injury must be referred to the Wounded Warrior Regiment for assessment of needs. f. Once the DD Form 2648 is digitally signed by the commander or designee, it will be converted to a non-editable PDF."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 12, Par 1b, 1c, and 1f",
+            "text": "b. Capstone Review must be completed no later than 120 days prior to the EAS date. c. Capstone Review must be completed after completion of TRS workshops and prior to Commander's Verification. f. Upon completion of the Capstone Review, the installation TRP personnel must forward an electronic token to the commander or designee for completion of Commander's Verification. (1) This token is only authorized for use by the recipient and must not be forwarded."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 14, Par 2 and 3",
+            "text": "2. The commander or designee must properly assess the Marine's TRS and Warm Handover compliance. The commander or designee must ensure the Marine has had positive contact with the appropriate agency noted by the transition personnel in the Warm Handover section and check the \"Warm Handover Executed\" box. 3. Upon completion of Commander's Verification, the commander or designee must digitally sign the Marine's DD Form 2648."
+          },
+          {
+            "citation": "MARADMIN 632/19, Par 9",
+            "text": "Completed no later than 90 days prior to EAS, the CO (or designee) will validate the Marine's overall preparedness to transition based on the factors in paragraph (8). If the Marine has met any of the factors listed, the CO (or designee) must ensure the Marine has had positive contact with the appropriate agency noted by the transition staff in the Warm Handover section, and check the \"Warm Handover Executed\" box. In the case of eligible Active or Reserve Component (RC) Marines with an unanticipated EAS of less than 90 days or fewer before discharge, Capstone will be completed no later than the date of separation as reflected on the DD Form 214."
+          }
+        ],
+        "summary": "Capstone Review by the TRP office closes no later than 120 days before EAS and releases a one-use token to the commander or designee. Commander's Verification closes no later than 90 days before EAS. The commander or designee reviews the ITP, CRS, and DD Form 2648, confirms positive contact with any Warm Handover agency and checks the box, refers wounded, ill, or injured high-risk Marines to Wounded Warrior Regiment, and digitally signs the form. Unanticipated EAS inside 90 days closes by the DD Form 214 date. The designee is SNCO or above, appointed in writing, trained, and not a UTC or Career Planner."
+      },
+      "howToInspect": [
+        {
+          "step": "Sample Marines Inside 90 Days",
+          "actions": [
+            "From the tracker, select Marines with EAS inside the next 90 days and Marines separated in the last 12 months.",
+            "On each DD Form 2648, read the Capstone Review date and the Commander's Verification signature date."
+          ],
+          "callout": "Marine inside 90 days of EAS with no Commander's Verification signed",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Who Signed And How",
+          "actions": [
+            "Confirm the digital signature belongs to the commander or a designee with a current letter and training.",
+            "Confirm the token was used by the addressee, not forwarded to the UTC or S-1 to sign.",
+            "Confirm the form converted to a non-editable PDF after signature."
+          ],
+          "callout": "Verification signed by a UTC, an untrained or unappointed designee, or on a forwarded token",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Warm Handover And Referrals",
+          "actions": [
+            "For any Marine with a Warm Handover entry, confirm the commander or designee recorded positive contact with the named agency and checked Warm Handover Executed.",
+            "For any Marine flagged high risk at verification or at Force Preservation Council, confirm the Wounded Warrior Regiment referral signed at O-5 level."
+          ],
+          "callout": "Warm Handover box checked with no evidence of agency contact, or high-risk Marine not referred",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Timing",
+          "actions": [
+            "Capstone Review on or before EAS minus 120 days and after the last workshop.",
+            "Commander's Verification on or before EAS minus 90 days.",
+            "Unanticipated separations inside 90 days closed by the DD Form 214 date."
+          ],
+          "callout": "Capstone or verification past the prescribed timeframe with no unanticipated separation on record",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "Commander signed the 2648 the week of EAS as an out-processing chop.",
+            "Designee signed with a letter dated after the signature.",
+            "Warm Handover Executed checked without the Marine ever contacting the agency.",
+            "Token forwarded to the admin chief who signed on the commander's behalf."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Who conducts Commander's Verification, and how do you personally review the ITP and CRS?",
+        "What happens when the TRP office flags a Warm Handover?",
+        "Have you referred any transitioning Marine to Wounded Warrior Regiment this year?",
+        "Show me a signed 2648 and the token email it came from."
+      ],
+      "verification": [
+        "Commander's Verification signed at or before EAS minus 90 days on sampled forms.",
+        "Signature by the commander or a lettered, trained designee using their own token.",
+        "Warm Handover Executed backed by documented agency contact.",
+        "High-risk referrals to Wounded Warrior Regiment on file."
+      ],
+      "verified": false
+    },
+    "0108": {
+      "title": "TA AND TZ TRAINING EVENT CODES ENTERED",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 13, Par 7f",
+            "text": "Coordinate and ensure entry of the training event code \"TA – Transition Readiness Seminar\" and code \"TZ - Transition Readiness Seminar Capstone\" into the Marine's MCTFS or MCTIMS record."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 3, Par 17",
+            "text": "Ensure TRS requirements are recorded, by the UTC, in HQMC defined systems, to include coordination with individual unit administrative sections aboard the installation for the entry of appropriate codes in Marine Corps Total Force System (MCTFS) or Marine Corps Training Information System (MCTIMS)."
+          },
+          {
+            "citation": "MCO 1700.31A, Par 4b(7)",
+            "text": "Installation Personnel Administration Center (IPAC), Administration Unit. Verify training event codes \"TA\" and \"TZ\" are reported for all Marines in possession of the DD Form 2648, prior to completing out-processing. In the absence of codes, Marines must be referred to the Unit Transition Coordinator (UTC) for resolution. This form must be uploaded to the Marine's Electronic Service Record."
+          },
+          {
+            "citation": "MARADMIN 632/19, Par 7c and 9c",
+            "text": "7c. Upon successful completion of Individualized Initial Counseling, Pre-Separation Counseling, and TRS, the UTC will coordinate entry of the training event code \"TA – Transition Readiness Seminar\" into MCTFS or MCTIMS. 9c. Upon completion of the Commander's Verification, the UTC will coordinate entry of training event code \"TZ - Transition Readiness Seminar Capstone\" into the Marine's MCTFS or MCTIMS record."
+          }
+        ],
+        "summary": "Two training event codes mark TRS completion in the system of record. TA posts after IC, the Pre-separation Brief, and TRS workshops are complete. TZ posts after Commander's Verification. The UTC coordinates entry with the unit admin section. IPAC verifies both codes before out-processing and uploads the DD Form 2648 to the Electronic Service Record. The checklist cite of MCO 1700.31 paragraph 3b(4)(u) now lives in enclosure (2) chapter 13 of MCO 1700.31A."
+      },
+      "howToInspect": [
+        {
+          "step": "Match Codes To Forms",
+          "actions": [
+            "For each sampled Marine with TRS workshops complete on the 2648, pull the MCTFS or MCTIMS training record and look for TA.",
+            "For each sampled Marine with Commander's Verification signed, look for TZ."
+          ],
+          "callout": "Completed stage on the 2648 with no matching code in MCTFS or MCTIMS",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check The Process",
+          "actions": [
+            "Ask the UTC how a code request reaches the admin section and how they confirm it posted.",
+            "Confirm the turnover binder holds the internal process for TA and TZ entry.",
+            "Confirm the code date is not earlier than the completion date on the 2648."
+          ],
+          "callout": "No documented process for code entry, or codes entered before the stage completed",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Check Out-Processing Integration",
+          "actions": [
+            "For Marines separated in the last 12 months, confirm IPAC verified TA and TZ before out-processing.",
+            "Confirm the final 2648 was uploaded to the Electronic Service Record."
+          ],
+          "callout": "Marine out-processed with codes missing and no referral back to the UTC",
+          "severity": "finding"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "TA entered at IC instead of after the workshops.",
+            "TZ never entered because the UTC believed IPAC did it.",
+            "Codes present in MCTIMS but the unit checks MCTFS only, or the reverse.",
+            "Separated Marines missing TZ, discovered at the IPAC counter on the last day."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me TA and TZ for a Marine who completed verification last month.",
+        "How does a code request move from you to the admin section?",
+        "How do you confirm the code posted?",
+        "What does IPAC do when a code is missing at out-processing?"
+      ],
+      "verification": [
+        "TA present after workshops and TZ present after verification on sampled records.",
+        "Code dates on or after the completion dates on the 2648.",
+        "Written internal process in the turnover binder.",
+        "Separated Marines show both codes and the 2648 in the Electronic Service Record."
+      ],
+      "verified": false
+    },
+    "0109": {
+      "title": "FINAL DD FORM 2648 FILED FOR 12 MONTHS AFTER EAS",
+      "regulatory": {
+        "quotes": [
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 13, Par 7h",
+            "text": "Ensure each final DD Form 2648 is filed in the command's official files for 12 months following the Marine's EAS date."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 14, Par 4",
+            "text": "The commander or designee must provide a copy of the DD Form 2648 to the UTC to file in the command's official files for 12 months following the Marine's EAS date."
+          },
+          {
+            "citation": "MCO 1700.31A, Encl (2), Chap 6, Par 5",
+            "text": "DD Form 2648. Also referred to as the eForm, the DD Form 2648 documents the Marine's completion of each TRS requirement. Eligible Marines who meet the eligibility exemptions prior to or after beginning the TRS requirements in accordance with the prescribed timeframes, will not be required to complete a DD Form 2648."
+          },
+          {
+            "citation": "MCO 1700.31A, Par 5a and 5b",
+            "text": "a. Records Management. Records created as a result of this Directive shall be managed according to National Archives and Records Administration-approved dispositions in reference (l), to ensure proper maintenance, use, accessibility, and preservation, regardless of format or medium. b. Privacy Act. Any misuse or unauthorized disclosure of Personally Identifiable Information (PII) may result in both civil and criminal penalties."
+          },
+          {
+            "citation": "MARADMIN 632/19, Par 9b",
+            "text": "Once the eForm is digitally signed by the CO (or designee) it will be converted to a pdf. The CO (or designee) shall send a copy to the UTC to file in the command's official files for 12 months post EAS. The Marine will access the pdf from milConnect, upload it to their \"Outbound Interview\" module, and print a copy for Installation Personnel Administration Center (IPAC)."
+          }
+        ],
+        "summary": "After the commander or designee signs, the DD Form 2648 becomes a non-editable PDF. The commander passes a copy to the UTC, who files it in the command's official files for 12 months after the Marine's EAS. The form carries PII and sits under records management and Privacy Act controls. Marines with a documented eligibility exemption never generate a 2648. The checklist cite of MCO 1700.31 paragraph 3b(5)(j) now lives in enclosure (2) chapters 13 and 14 of MCO 1700.31A."
+      },
+      "howToInspect": [
+        {
+          "step": "Build The Separated Roster",
+          "actions": [
+            "Pull every Marine who reached EAS in the last 12 months from MCTFS.",
+            "Remove any with a TRP-documented eligibility exemption."
+          ],
+          "callout": "Command unable to produce a list of Marines separated in the last 12 months",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Match Forms To The Roster",
+          "actions": [
+            "For each Marine, locate the final signed 2648 PDF in the command's official files.",
+            "Confirm the copy is the non-editable PDF with the commander or designee signature, not a draft."
+          ],
+          "callout": "Separated Marines with no final 2648 on file",
+          "severity": "finding"
+        },
+        {
+          "step": "Check Storage And Handling",
+          "actions": [
+            "Confirm the files sit in the command's official files with access limited, paper or encrypted electronic.",
+            "Confirm the UTC turnover binder references the file location and the 12-month retention."
+          ],
+          "callout": "Forms held on a personal drive, an open share, or discarded before 12 months",
+          "severity": "discrepancy"
+        },
+        {
+          "step": "Common Discrepancies",
+          "actions": [
+            "UTC kept forms in email only and lost them on PCS.",
+            "Unsigned drafts filed in place of the final PDF.",
+            "Retention counted from the signature date instead of EAS.",
+            "Forms for exempt Marines demanded and never produced, logged as missing."
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "Show me the final 2648 for three Marines who separated in the last year.",
+        "Where are these forms filed, and who has access?",
+        "How do you know when a form reaches 12 months past EAS?",
+        "How do you handle a Marine with an eligibility exemption?"
+      ],
+      "verification": [
+        "Final signed 2648 PDF on file for each Marine separated in the last 12 months.",
+        "Files held in the command's official files with restricted access.",
+        "Retention tracked from EAS date.",
+        "Exemptions documented by the TRP office where no form exists."
+      ],
+      "verified": false
+    }
+  }
+}

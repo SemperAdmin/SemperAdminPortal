@@ -1,0 +1,493 @@
+{
+  "track": "igmc",
+  "programNumber": "1742.1",
+  "slug": "voting-assistance-program",
+  "title": "Voting Assistance Program",
+  "summary": "All Marine Corps Commands. 52 items across the program.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "sponsor": "M&RA (MF)",
+  "applicabilityLevel": "All Marine Corps Commands",
+  "effectiveDate": "2025-05-15",
+  "lastVerified": "2026-09-11",
+  "source": {
+    "title": "IGMC Functional Area Checklist - Voting Assistance Program",
+    "publisher": "Inspector General of the Marine Corps"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "MAJOR COMMAND VOTING ASSISTANCE OFFICER (This section also applies to other intermediate echelons of command with subordinate Unit Voting Assistance Officers.)",
+      "description": "",
+      "items": [
+        {
+          "code": "0101",
+          "question": "Has a civilian employee at the GS-12 level or above, or a field grade officer been assigned to serve as the Major Command Voting Assistance Officer (MCVAO), or is there a HQMC SVAO approved grade waiver?",
+          "references": [
+            "DoDI 1000.04, 3.1.b(1), MCO 1742.1C, par 4b(4)(a)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0102",
+          "question": "Has the Commanding Officer given specific written authorization (if a SNCO or civilian equivalent) to witness and administer oaths as required by some State’s voting regulations?",
+          "references": [
+            "MCO 1742.1C, par 4b(6)(a)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0103",
+          "question": "Did the MCVAO submit a copy of his/her appointment letter to their immediate higher headquarters, and to the HQMC SVAO, (MFP-4)?",
+          "references": [
+            "MCO 1742.1C, par 4b(4)(a)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0104",
+          "question": "Has the MCVAO completed the required FVAP VAO Training Course and maintain a copy of their training certificate?",
+          "references": [
+            "DoDI 1000.04, 3.1.b(5), MCO 1742.1C, Chap 1, par 1"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0105",
+          "question": "Does the MCVAO maintain an updated Voting Continuity Folder with all its required contents?",
+          "references": [
+            "MCO 1742.1C, Chap 1, par 16"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0106",
+          "question": "Does the MCVAO maintain current copies of the appointment letters and training certificates of their subordinate commands VAOs?",
+          "references": [
+            "MCO 1742.1C, Chap 1, par 17"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0107",
+          "question": "Does the MCVAO have an active Federal Voting Assistance Program (FVAP) Portal account and utilizes the portal to submit all quarterly voting assistance metrics reports, when required to FVAP?",
+          "references": [
+            "DoDI 1000.04, 3.1.b(7)(c), MCO 1742.1C, Chap 1, par 12"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0108",
+          "question": "Does the MCVAO maintain copies (electronic or paper) of all submitted voting assistance metrics reports, and copies of all submitted quarterly metrics reports from their subordinate units in accordance with record schedule 1000-35 for a period of three (3) years?",
+          "references": [
+            "DoDI 1000.04, 3.1.b(7)(c), MCO 1742.1C, Chap 1, par 13"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0109",
+          "question": "Did the MCVAO forward the results of all inspections conducted by the IGMC and CGIP, including the inspections of subordinate units on the Voter Assistance Program (FA 1742), to the HQMC SVAO, MFP-4?",
+          "references": [
+            "MCO 1742.1C, Chap 1, par 11"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0110",
+          "question": "Does the MCVAO disseminate all voting messages/information from FVAP/HQMC SVAO as necessary to their subordinate commands?",
+          "references": [
+            "MCO 1742.1C, par 4b(4)(b)"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    },
+    {
+      "id": "02.0",
+      "title": "INSTALLATION VOTING ASSISTANCE OFFICER (IVAO) (Applies to all Marine Corps Installations)",
+      "description": "",
+      "items": [
+        {
+          "code": "0201",
+          "question": "Has a civilian employee (GS-11 level or above), Captain (0-3 or above), or Chief Warrant Officer (W-2 or above) been assigned to serve as the Installation Voting Assistance Officer, or is there a HQMC SVAO approved grade waiver?",
+          "references": [
+            "DoDI 1000.04, 3.1.b(1), MCO 1742.1C, par 4b(5)(a)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0202",
+          "question": "Has specific written authorization by the Commander been given (required only if a SNCO or civilian is appointed) to witness and administer oaths as required by some State’s voting regulations?",
+          "references": [
+            "MCO 1742.1C, par 4b(6)(a)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0203",
+          "question": "Did the IVAO submit a copy of his/her appointment letter to their higher Headquarters and to the HQMC SVAO, MFP-4?",
+          "references": [
+            "MCO 1742.1C, par 4b(5)(a)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0204",
+          "question": "Has the IVAO and the IVA Office staff completed the required FVAP IVAO Training Course and maintain a copy of their training certificate?",
+          "references": [
+            "DoDI 1000.04, 3.3.a",
+            "MCO 1742.1C, Chap 2, par 1"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0205",
+          "question": "Does the IVAO maintain an updated Voting Continuity Folder with all its required contents for the IVA Office?",
+          "references": [
+            "MCO 1742.1C, Chap 2, par 12"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0206",
+          "question": "Does the IVAO maintain the current version of the Voting Assistance Guide (VAG) (Electronic or paper version)",
+          "references": [
+            "MCO 1742.1C, Chap 6, par 1"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0207",
+          "question": "Does the IVAO have an active FVAP Portal account and utilizes the portal to submit all required quarterly IVA Office voting assistance metrics reports to FVAP?",
+          "references": [
+            "DoDI 1000.04, 3.1.b(7)(c)",
+            "MCO 1742.1C, Chap 2, par 6"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0208",
+          "question": "Does the IVAO maintain copies (electronic or paper) of all submitted required quarterly voting assistance metrics reports in accordance with record schedule 1000-35 for a period of three (3) years?",
+          "references": [
+            "DoDI 1000.04, 3.1.b(7)(c)",
+            "MCO 1742.1C, Chap 2, par 7"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0209",
+          "question": "Does the IVAO provide a copy of all submitted required quarterly IVA Office voting assistance metrics reports to the appropriate MCVAO in their chain of command?",
+          "references": [
+            "MCO 1742.1C, Chap 2, par 7"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0210",
+          "question": "Has the IVAO established an IVA Office in a well-advertised, fixed location that is easily accessible, and receives extensive visits by service personnel, their families, and civilian federal employees?",
+          "references": [
+            "DoDI 1000.04, 3.2.e(1), f",
+            "MCO 1742.1C, Chap 2, par 2"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0211",
+          "question": "Has the IVA Office been established within the installation headquarters organization and the IVAO reports directly to the Installation Commander?",
+          "references": [
+            "DoDI 1000.04, 3.2.e",
+            "MCO 1742.1C, par 4b(5)(a)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0212",
+          "question": "Has the IVAO ensured the installation directory and/or website includes the email, location, and telephone numbers of the IVAO and IVA Office?",
+          "references": [
+            "DoDI 1000.04, 3.3.b",
+            "MCO 1742.1C, Chap 2, par 8"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0213",
+          "question": "Is the IVA Office adequately staffed to provide voter assistance and voting information to all eligible voters on the installation?",
+          "references": [
+            "DoDI 1000.04, 3.2.f",
+            "MCO 1742.1C, Chap 2, par 14"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0214",
+          "question": "Does the IVA Office have all the necessary equipment (computers, printers, scanners, etc.) to assist voters with completing/submitting the FPCA and all other necessary forms to the State election offices?",
+          "references": [
+            "MCO 1742.1C, Chap 2, par 17"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0215",
+          "question": "Does the IVAO maintain and disseminate voting materials and current voting information to all subordinate and tenant commands on their installation?",
+          "references": [
+            "DoDI 1000.04, 3.3.g",
+            "MCO 1742.1C, Chap 2, par 3"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0216",
+          "question": "Does the IVAO and IVA Office provide eligible installation personnel with current information on absentee voting, voter registration, voting procedures, and voting assistance?",
+          "references": [
+            "DoDI 1000.04 3.3.g",
+            "MCO 1742.1C, Chap 2, Par 4"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0217",
+          "question": "Is the IVA Office included in the commands check-in/out process? (This applies only if the command’s check-in/out process does not include the subordinate Unit Voting Assistance Officer)",
+          "references": [
+            "DoDI 1000.04, 3.4.c(2)",
+            "MCO 1742.1C, Chap 2, par 15"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0218",
+          "question": "Does the IVA Office assist in mailing all completed voting materials, and when requested, transmit all completed registration applications in a timely manner to the appropriate State Election offices?",
+          "references": [
+            "DoDI 1000.04, 3.4.f",
+            "MCO 1742.1C, Chap 2, par 16"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0219",
+          "question": "Does the IVA Office have a voicemail established with a greeting indicating that the caller has reached the IVA Office, the hours of operation, and an anticipated response time to return their calls?",
+          "references": [
+            "DoDI 1000.04, 3.2.f(2)",
+            "MCO 1742.1C, Chap 2, par 19"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0220",
+          "question": "Does the IVA Office have the standard email address in the form of “vote(unit)@usmc.mil” for personnel and their families to have email access to the IVA Office?",
+          "references": [
+            "DoDI 1000.04, 3.2.f(2)",
+            "MCO 1742.1C, Chap 2, par 18"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    },
+    {
+      "id": "03.0",
+      "title": "UNIT VOTING ASSISTANCE OFFICER (UVAO) (Applies to all Marine Corps Commands)",
+      "description": "",
+      "items": [
+        {
+          "code": "0301",
+          "question": "Has the command appointed an officer (O-1/W-1 or above), or Staff Non-Commissioned Officer (E-7 or above) as the UVAO, or is there a HQMC SVAO approved grade waiver?",
+          "references": [
+            "DoDI 1000.04, 3.1.b(1)",
+            "MCO 1742.1C, par 4b(6)(a)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0302",
+          "question": "Has specific written authorization by the unit's commanding officer been given to the UVAO (only if a SNCO or civilian) to witness and administer oaths required by some State’s voting regulations?",
+          "references": [
+            "MCO 1742.1C, par 4b(6)(a); Chap 3, par 14"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0303",
+          "question": "Did the UVAO submit a copy of his/her appointment letter to the appropriate higher headquarters MCVAO in their chain of command?",
+          "references": [
+            "MCO 1742.1C, par 4b(6)(a)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0304",
+          "question": "Has the UVAO completed the required FVAP VAO Training Course and maintain a copy of their training certificate?",
+          "references": [
+            "DoDI 1000.04, 3.1.b(5)",
+            "MCO 1742.1C, Chap 3, par 1"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0305",
+          "question": "Does the UVAO maintain an updated Voting Continuity Folder with all its required contents?",
+          "references": [
+            "MCO 1742.1C, Chap 3, par 8"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0306",
+          "question": "Does the UVAO maintain the current version of the Voting Assistance Guide (VAG)? (Electronic or paper version)",
+          "references": [
+            "MCO 1742.1C, Chap 6, par 1"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0307",
+          "question": "Does the UVAO provide adequate absentee voting assistance, increase voting awareness, and ensure all eligible voters in their unit receives current voting information?",
+          "references": [
+            "DoDI 1000.04, 3.1.b(7)(e)",
+            "MCO 1742.1C, Chap 3, par 2, 3, 7 and 15"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0308",
+          "question": "Did the UVAO provide voter training on absentee voting procedures to all unit personnel annually, and maintained training rosters? (Training rosters are to be maintained in accordance with record schedule 1000-35 for a period of three (3) years.)",
+          "references": [
+            "MCO 1742.1C, Chap 3, par 17"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0309",
+          "question": "Does the UVAO maintain sufficient Federal Post Card Applications (FPCA) and Federal Write-in Absentee Ballots (FWAB) on hand to support their unit personnel? (Electronic or paper forms)",
+          "references": [
+            "MCO 1742.1C, Chap 3, par 13; Chap 6, par 2a and 2b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0310",
+          "question": "Is the UVAO providing the FPCA (electronic or paper) to all unit personnel during the unit’s check-in and check-out process, and during all pre-deployment briefs?",
+          "references": [
+            "MCO 1742.1C, Chap 3, par 12 and 19"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0311",
+          "question": "Is the UVAO providing the FPCA (electronic or paper) by 15 January of each calendar year, and additional copies by 15 July during even numbered years to all personnel in the unit?",
+          "references": [
+            "DoDI 1000.04, 3.1.b(7)(b)",
+            "MCO 1742.1C, Chap 3, par 12"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0312",
+          "question": "Is the UVAO familiar with, or can locate the required procedures within the reference to be used when military prisoners desire to vote?",
+          "references": [
+            "MCO 1742.1C, Chap 3, par 24"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0313",
+          "question": "Does the UVAO display voting posters and all other relevant voting information received from FVAP, the HQMC SVAO, and the higher headquarters MCVAO throughout the organization’s common areas?",
+          "references": [
+            "MCO 1742.1C, Chap 3, par 3"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0314",
+          "question": "Does the UVAO maintains an active FVAP Portal account and utilizes the portal to submit all quarterly voting assistance metrics reports to FVAP?",
+          "references": [
+            "DoDI 1000.04 3.1.b(7)(c)",
+            "MCO 1742.1C, Chap 3, par 4"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0315",
+          "question": "Does the UVAO maintain copies (electronic or paper) of all submitted required quarterly voting assistance metrics reports in accordance with record schedule 1000-35 for a period of three (3) years, and provide a copy to the appropriate higher headquarters MCVAO?",
+          "references": [
+            "DoDI 1000.04 3.1.b(7)(c)",
+            "MCO 1742.1C, Chap 3, par 5"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0316",
+          "question": "Is the UVAO within the maximum (200) number of eligible voters a UVAO can represent? If more than (200) unit members, is/are there additional Voting Assistance Officers assigned? If a Training Command, Officer Candidates School or MCRD, is there a HQMC approved local policy that ensures adequate voting assistance to student personnel?",
+          "references": [
+            "DoDI 1000.04, 3.1.b(1)",
+            "MCO 1742.1C, Chap 3, par 18"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    },
+    {
+      "id": "04.0",
+      "title": "RECRUITING STATIONS/RECRUITING SUB-STATIONS (RS/RSS) (Applies to all Marine Corps Recruiting Commands)",
+      "description": "",
+      "items": [
+        {
+          "code": "0401",
+          "question": "Does the RS/RSS offer the Voter Registration Information Form (DD 2645) and a National Mail Voter Registration Form (NVRF) to anyone receiving services and assistance? http://www.fvap.gov/uploads/FVAP/Policies/nvralaw.pdf",
+          "references": [
+            "DoDI 1000.04, 3.5.b",
+            "MCO 1742.1C, Chap 4, par 1a and 1b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0402",
+          "question": "Does the RS/RSS provide assistance to prospective enlistees and eligible citizens in completing NVRF applications?",
+          "references": [
+            "DoDI 1000.04, 3.5.b",
+            "MCO 1742.1C, Chap 4, par 1b"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0403",
+          "question": "Does the RS/RSS accept completed voter registration forms and send them to the appropriate State election official by the State’s deadline?",
+          "references": [
+            "DoDI 1000.04, 3.5.b(2)",
+            "MCO 1742.1C, Chap 4, par 1c"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0404",
+          "question": "Does the RS/RSS provide to each eligible citizen, whether a prospective enlistee or not, the same degree of assistance for the completion of the registration application form as is provided by the office for the completion of its own forms (i.e., application for enlistment) unless the person refuses such assistance?",
+          "references": [
+            "DoDI 1000.04, 3.5.b(1)(b)",
+            "MCO 1742.1C, Chap 4, par 1d"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0405",
+          "question": "Does the RS/RSS maintain an active FVAP Admin Portal account and utilizes the admin portal to submit quarterly voter assistance metrics reports and the recruiter registration summary reports to FVAP?",
+          "references": [
+            "DoDI 1000.04 3.1.b(7)(c)",
+            "MCO 1742.1C, Chap 4, par 1e"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0406",
+          "question": "Does the RS/RSS maintain records (electronic or paper) pertaining to voter registration assistance or activities in accordance with record schedule 1000-35 for a period of three (3) years, and provide a copy to the higher headquarters MCVAO?",
+          "references": [
+            "DoDI 1000.04 3.5.b(3)",
+            "MCO 1742.1C, Chap 4, par 1e"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    }
+  ],
+  "category": "CoRE",
+  "faName": "Voting Assistance Program"
+}

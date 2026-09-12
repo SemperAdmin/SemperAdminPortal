@@ -1,0 +1,90 @@
+{
+  "track": "igmc",
+  "programNumber": "1700.37",
+  "slug": "personal-financial-management-program",
+  "title": "Personal Financial Management Program",
+  "summary": "All levels of command Air, Ground, Logistics, and Installations with 75 or more assigned personnel. 7 items across the program.",
+  "roles": [
+    "admin",
+    "commander"
+  ],
+  "sponsor": "M&RA (MF)",
+  "applicabilityLevel": "All levels of command Air, Ground, Logistics, and Installations with 75 or more assigned personnel",
+  "effectiveDate": "2026-02-02",
+  "lastVerified": "2026-09-11",
+  "source": {
+    "title": "IGMC Functional Area Checklist - Personal Financial Management Program",
+    "publisher": "Inspector General of the Marine Corps"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "UNIT-SPECIFIC PROGRAM (All Marine Corps units with more than 75 personnel)",
+      "description": "",
+      "items": [
+        {
+          "code": "0101",
+          "question": "Does the unit have the appropriate number of command appointed Command Financial Specialists (CFSs)?",
+          "references": [
+            "MCO 1700.37, par 3.b.(11)(b)",
+            "DODI 1322.34, par 4.3"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0102",
+          "question": "Has the CFS completed the approved CFS course and the CFS refresher course every three years?",
+          "references": [
+            "MCO 1700.37, encl (2), par 3",
+            "DODI 1322.34, par 4.3.c"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0103",
+          "question": "Have all Marines attended the Personal Readiness Seminar (PRS) within three months of arrival when the command is their first permanent duty station or Reserve Training Center?",
+          "references": [
+            "MCO 1700.37, par 3.b.(11)(e)",
+            "MCO 1700.37, encl (2), par 2.i"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0104",
+          "question": "Does the CFS complete the personal finance screening checklist prior to overseas/special duty assignments/independent duty orders for members of the command?",
+          "references": [
+            "SECNAVINST 1740.4A, encl (2), par 2.i",
+            "MCO 1700.37, pg. 2-2, encl (2), par 2.j"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0105",
+          "question": "Can the CFS demonstrate that referrals are made to authorized providers of counseling and education?",
+          "references": [
+            "MCO 1700.37, pg. 4, par 3.a.(2)(j),"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0106",
+          "question": "Does the CFS update PFMP staff with overall financial trends or metrics in the commands?",
+          "references": [
+            "MCO 1700.37, pg. 2-2, encl (2), par 2.h"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0107",
+          "question": "Does the CFS make themselves readily available to speak at Welcome Aboard briefs, Command Team trainings, Transition events, and both pre-deployment and post-deployment briefings?",
+          "references": [
+            "MCO 1700.37, pg.4, par 3.b.(9)(b)1"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    }
+  ],
+  "category": "CoRE",
+  "faName": "Personal Financial Management Program"
+}

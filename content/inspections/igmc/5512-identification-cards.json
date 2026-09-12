@@ -1,0 +1,149 @@
+{
+  "track": "igmc",
+  "programNumber": "5512",
+  "slug": "identification-cards",
+  "title": "Identification Cards",
+  "summary": "Installations that maintain a Real-time Automated Personnel Identification System (RAPIDS). 15 items across the program.",
+  "roles": [
+    "admin"
+  ],
+  "sponsor": "M&RA (MF)",
+  "applicabilityLevel": "Installations that maintain a Real-time Automated Personnel Identification System (RAPIDS)",
+  "effectiveDate": "2025-05-15",
+  "lastVerified": "2026-09-11",
+  "source": {
+    "title": "IGMC Functional Area Checklist - Identification Cards",
+    "publisher": "Inspector General of the Marine Corps"
+  },
+  "subsections": [
+    {
+      "id": "01.0",
+      "title": "NO SUBCAT FOR THESE STATEMENTS",
+      "description": "",
+      "items": [
+        {
+          "code": "0101",
+          "question": "Does the RAPIDS Verifying Official (VO) comply with the cross-servicing agreement by assisting military members/dependents who belong to another service and who are covered under the terms of the agreement?",
+          "references": [
+            "MCO 5512.11F, par 1.3"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0102",
+          "question": "Does the RAPIDS VO ensure that he or she does not cross-service those categories of individuals who are not covered under the provisions of the cross-servicing agreement?",
+          "references": [
+            "MCO 5512.11F, par 1.3.4"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0103",
+          "question": "Does the verifying official determine if the applicant is entitled to hospital insurance benefits under Medicare, Part A?",
+          "references": [
+            "MCO 5512.11F, par 1.5.6"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0104",
+          "question": "Does the RAPIDS VO brief the ID card holder on their responsibilities?",
+          "references": [
+            "MCO 5512.11F, par 1.19"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0105",
+          "question": "Does the RAPIDS VO view the basic documentation required to verify an individual's eligibility when it cannot be verified through the Defense Enrollment Eligibility Reporting System (DEERS) database?",
+          "references": [
+            "MCO 5512.11F, par 2.3, 2.4, and attachment 5"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0106",
+          "question": "Does the issuing activity prominently display a copy of the Privacy Act statement and have applicants read the statement before signing the DD Form 1172?",
+          "references": [
+            "MCO 5512.11F, par 2.3, table 2.2., note 10"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0107",
+          "question": "Does the RAPIDS VO obtain HQMC approval before issuing a former spouse his or her initial ID card?",
+          "references": [
+            "MCO 5512.11F, par 3.1, 3.4, 22.7 and 22.8"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0108",
+          "question": "Does the RAPIDS VO ensure that no dependent child possesses more than one DD Form 1173 at a time and that the child is not receiving benefits from more than one sponsor at a time?",
+          "references": [
+            "MCO 5512.11F, 4.2"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0109",
+          "question": "If military members cannot agree on which one will sponsor the child for an ID card (if appropriate) and DEERS enrollment, does the RAPIDS VO verify legal documentation to determine who shall sponsor the child?",
+          "references": [
+            "MCO 5512.11F, 4.2.1 and table 4.1"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0110",
+          "question": "Does the RAPIDS VO obtain HQMC approval before issuing an ID card to an incapacitated child, Parent, Parent-in-law, Step-Parent, or Parent-by-Adoption, and a court ordered ward?",
+          "references": [
+            "MCO 5512.11F, par 4.6, 4.7, 4.8, 4.11, 4.12 and 22.4; 22.5; 22.6"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0111",
+          "question": "Does the RAPIDS VO understand that only authorized RAPIDS contractors may move the RAPIDS equipment unless a self-help relocation is approved by DRPO?",
+          "references": [
+            "MCO 5512.11F, par 10.5.2 and 10.5.3"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0112",
+          "question": "Does the RAPIDS VO contact the appropriate DEERS/RAPIDS Assistance Center (DRAC)/RAPIDS Support Centers (DRCS) for their area when they encounter RAPIDS hardware or software problems?",
+          "references": [
+            "MCO 5512.11F, par 10.9"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0113",
+          "question": "Does the RAPIDS site secure the automated ID card stock under lock when it is not in use or when the office is closed?",
+          "references": [
+            "MCO 5512.11F, par 11.3"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0114",
+          "question": "Does the RAPIDS VO obtain HQMC approval before issuing an ID card to a Parent, Parent-in-law, Step-Parent, or Parent-by-Adoption?",
+          "references": [
+            "MCO 5512.11F, par 22.5"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0115",
+          "question": "Once the RAPIDS VO verifies an individual's eligibility does he or she refer to the entitlement guide as well as the effective date guidelines to ensure that the individual is assigned the correct benefits and privileges and issued a DD Form 1173 (if appropriate) with the correct expiration date?",
+          "references": [
+            "MCO 5512.11F, attachments 2 and 4"
+          ],
+          "evidenceHint": null
+        }
+      ]
+    }
+  ],
+  "category": "Non-CoRE",
+  "faName": "Identification Cards"
+}
