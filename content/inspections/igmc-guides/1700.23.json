@@ -1,8 +1,8 @@
 {
   "faNumber": "1700.23",
-  "sourceDoc": "MCO 1700.23G Request Mast Procedures, 21 Jun 2019. Drafted from order text against the FAC revised 29 Jul 2024. Quote walk 2026-09-11: 35 of 35 quotes matched verbatim against the extracted order text. Inspection steps, questions, and verification await SME review.",
+  "sourceDoc": "MCO 1700.23G Request Mast Procedures, 21 Jun 2019. Drafted from order text against the FAC revised 29 Jul 2024. Quote walk 2026-09-11: 35 of 35 quotes matched verbatim against the extracted order text. Inspection steps, questions, and verification await SME review. SME accepted the inspection steps, questions, and verification on 2026-09-11; item flags set verified true.",
   "lastVerified": "2026-09-11",
-  "verifiedAtSource": false,
+  "verifiedAtSource": true,
   "items": {
     "0101": {
       "title": "PERSONNEL FAMILIAR WITH REQUEST MAST POLICY",
@@ -79,7 +79,7 @@
         "Posted material references MCO 1700.23G.",
         "Two or three Marines interviewed know where policy is posted."
       ],
-      "verified": false
+      "verified": true
     },
     "0201": {
       "title": "APPLICATIONS PROCESSED WITHOUT DELAY, DELAYS ANNOTATED",
@@ -155,7 +155,7 @@
         "Emergency cases show same-day or next-available handling.",
         "Written responses carry the annotation required by Chapter 2, paragraph 4."
       ],
-      "verified": false
+      "verified": true
     },
     "0202": {
       "title": "REQUEST MAST RECORDS SAFEGUARDED",
@@ -234,7 +234,7 @@
         "Schedule 1000-34 disposition identified by the records manager.",
         "Retained records present for the full period."
       ],
-      "verified": false
+      "verified": true
     },
     "0203": {
       "title": "APPLICATIONS CORRECTLY FINALIZED",
@@ -319,7 +319,7 @@
         "Denials annotated in Part II Section 9 and Part III Section 10.",
         "Block 11 statements signed by Marine and witness where applicable."
       ],
-      "verified": false
+      "verified": true
     },
     "0204": {
       "title": "DENIAL REPORTING REQUIREMENTS EXECUTED",
@@ -400,7 +400,7 @@
         "Denial report to the first GO dated within five working days, with basis and affirmation.",
         "Commander articulates the requirement when no denials exist."
       ],
-      "verified": false
+      "verified": true
     },
     "0205": {
       "title": "FOLLOW-UP PROCEDURES ESTABLISHED AND DOCUMENTED",
@@ -471,7 +471,7 @@
         "Sampled dispositions supported by evidence of execution.",
         "Retaliation rights brief documented after final disposition."
       ],
-      "verified": false
+      "verified": true
     },
     "0301": {
       "title": "ADMINISTRATIVE SUPPORT FOR SEALED APPLICATIONS",
@@ -551,7 +551,7 @@
         "Tracker shows sealed cases forwarded within one working day per level.",
         "Only the CG or RMRA opened sealed applications."
       ],
-      "verified": false
+      "verified": true
     },
     "0401": {
       "title": "DENIAL REPORTS RETAINED AT THE GENERAL OFFICER LEVEL",
@@ -627,7 +627,7 @@
         "File reconciles with subordinate command denials.",
         "Retention under schedule 1000-34 confirmed."
       ],
-      "verified": false
+      "verified": true
     },
     "0501": {
       "title": "REQUEST MAST BULLETIN PUBLISHED FOR IGMC INSPECTION",
@@ -701,7 +701,7 @@
         "Date, time, location, and routing instructions present.",
         "Marines spot checked are aware of the opportunity."
       ],
-      "verified": false
+      "verified": true
     }
   }
 }

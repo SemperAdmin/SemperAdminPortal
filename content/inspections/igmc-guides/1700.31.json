@@ -1,8 +1,8 @@
 {
   "faNumber": "1700.31",
-  "sourceDoc": "MCO 1700.31A Transition Readiness Program, 2 Mar 2026 (cancels MCO 1700.31). MARADMIN 632/19, 13 Nov 2019. 10 USC 1142 and 1144. DoDI 1332.35 CH-1, 29 Jul 2025. The FAC revised 21 Feb 2024 cites the cancelled MCO 1700.31 paragraph numbers, so each item maps the old cite to the current enclosure (2) chapter. Quote walk 2026-09-11: 46 of 46 quotes matched verbatim against the extracted source text, the statute quotes against the fetched law.cornell.edu text. Inspection steps, questions, and verification await SME review.",
+  "sourceDoc": "MCO 1700.31A Transition Readiness Program, 2 Mar 2026 (cancels MCO 1700.31). MARADMIN 632/19, 13 Nov 2019. 10 USC 1142 and 1144. DoDI 1332.35 CH-1, 29 Jul 2025. The FAC revised 21 Feb 2024 cites the cancelled MCO 1700.31 paragraph numbers, so each item maps the old cite to the current enclosure (2) chapter. Quote walk 2026-09-11: 46 of 46 quotes matched verbatim against the extracted source text, the statute quotes against the fetched law.cornell.edu text. Inspection steps, questions, and verification await SME review. SME accepted the inspection steps, questions, and verification on 2026-09-11; item flags set verified true.",
   "lastVerified": "2026-09-11",
-  "verifiedAtSource": false,
+  "verifiedAtSource": true,
   "items": {
     "0101": {
       "title": "UTC AND DESIGNEE APPOINTED IN WRITING, UTCN CODE REPORTED",
@@ -87,7 +87,7 @@
         "UTC ratio holds at one per 75 eligible Marines.",
         "UTCN code visible in MCTFS or MCTIMS for each UTC."
       ],
-      "verified": false
+      "verified": true
     },
     "0102": {
       "title": "UTC TRAINING COMPLETED AFTER APPOINTMENT",
@@ -163,7 +163,7 @@
         "Certificates issued by the installation TRP office.",
         "Re-appointed UTCs hold a certificate from the current installation."
       ],
-      "verified": false
+      "verified": true
     },
     "0103": {
       "title": "UTC IDENTIFIES, NOTIFIES, AND TRACKS ELIGIBLE MARINES",
@@ -253,7 +253,7 @@
         "Command SOP current, TRP on check-in, check-out, and pre-deployment sheets.",
         "Deploying and short-notice Marines handled per chapter 3 paragraphs 7 and 15."
       ],
-      "verified": false
+      "verified": true
     },
     "0104": {
       "title": "INDIVIDUALIZED INITIAL COUNSELING NO LATER THAN 365 DAYS BEFORE EAS",
@@ -342,7 +342,7 @@
         "In-person or synchronous virtual delivery through the designated installation.",
         "Pre-work submitted and exemptions documented by the TRP office."
       ],
-      "verified": false
+      "verified": true
     },
     "0105": {
       "title": "PRE-SEPARATION COUNSELING BRIEF NO LATER THAN 365 DAYS BEFORE EAS",
@@ -421,7 +421,7 @@
         "Delivery through the designated installation, in person or synchronous virtual.",
         "Unanticipated separations started on identification."
       ],
-      "verified": false
+      "verified": true
     },
     "0106": {
       "title": "TRS WORKSHOPS AND TWO-DAY TRACKS NO LATER THAN 180 DAYS BEFORE EAS",
@@ -518,7 +518,7 @@
         "Exemptions documented by the TRP office, none for tier III.",
         "Written TRP authorization on file for any virtual completion."
       ],
-      "verified": false
+      "verified": true
     },
     "0107": {
       "title": "COMMANDER'S VERIFICATION NO LATER THAN 90 DAYS BEFORE EAS",
@@ -608,7 +608,7 @@
         "Warm Handover Executed backed by documented agency contact.",
         "High-risk referrals to Wounded Warrior Regiment on file."
       ],
-      "verified": false
+      "verified": true
     },
     "0108": {
       "title": "TA AND TZ TRAINING EVENT CODES ENTERED",
@@ -684,7 +684,7 @@
         "Written internal process in the turnover binder.",
         "Separated Marines show both codes and the 2648 in the Electronic Service Record."
       ],
-      "verified": false
+      "verified": true
     },
     "0109": {
       "title": "FINAL DD FORM 2648 FILED FOR 12 MONTHS AFTER EAS",
@@ -763,7 +763,7 @@
         "Retention tracked from EAS date.",
         "Exemptions documented by the TRP office where no form exists."
       ],
-      "verified": false
+      "verified": true
     }
   }
 }

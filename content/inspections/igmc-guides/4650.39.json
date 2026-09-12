@@ -1,6 +1,6 @@
 {
   "faNumber": "4650.39",
-  "sourceDoc": "DTS (4650.39A) - INSPECTOR GUIDE - REBUILT.docx. Refreshed 2026-09-11 against the FAC revised 20 Jul 2026: items 0101, 0102, 0104, 0105, 0106, 0110, 0201, 0202, 0204, 0205, 0206, 0207, 0208, 0209 carry updated summaries, added MCO 4650.39A quotes, and one added inspection step each. SME re-review pending on the items marked verified false. Quote walk 2026-09-11: 42 of 43 quotes matched verbatim against the extracted order text, including three SME quotes on 0101, 0104, and 0110 replaced with verbatim text after the walk found paraphrases. Paragraph 4c was transcribed from the scanned page 6 image. DoD FMR Vol 5 chapter 5 (Oct 2024) received 2026-09-11: the 0105 quote was a paraphrase and now carries the verbatim paragraph 3.4.1.2, with FMR quotes added on 0102, 0106, 0202, 0205, 0206, and 0207.",
+  "sourceDoc": "DTS (4650.39A) - INSPECTOR GUIDE - REBUILT.docx. Refreshed 2026-09-11 against the FAC revised 20 Jul 2026: items 0101, 0102, 0104, 0105, 0106, 0110, 0201, 0202, 0204, 0205, 0206, 0207, 0208, 0209 carry updated summaries, added MCO 4650.39A quotes, and one added inspection step each. SME re-review pending on the items marked verified false. Quote walk 2026-09-11: 42 of 43 quotes matched verbatim against the extracted order text, including three SME quotes on 0101, 0104, and 0110 replaced with verbatim text after the walk found paraphrases. Paragraph 4c was transcribed from the scanned page 6 image. DoD FMR Vol 5 chapter 5 (Oct 2024) received 2026-09-11: the 0105 quote was a paraphrase and now carries the verbatim paragraph 3.4.1.2, with FMR quotes added on 0102, 0106, 0202, 0205, 0206, and 0207. SME accepted the inspection steps, questions, and verification on 2026-09-11; item flags set verified true.",
   "lastVerified": "2026-09-11",
   "verifiedAtSource": true,
   "items": {
@@ -82,7 +82,7 @@
         "Each discrepancy on sampled monthly reports carries an action-taken annotation.",
         "EFT data reviewed for duplicates and gaps on each monthly report."
       ],
-      "verified": false
+      "verified": true
     },
     "0102": {
       "title": "ALL REQUIRED ROLES APPOINTED VIA DD FORM 577",
@@ -307,7 +307,7 @@
         "No AO holds another DTS role or permission level 3 or 5.",
         "No LDTA or ODTA approves as AO in any routing list, waiver or not."
       ],
-      "verified": false
+      "verified": true
     },
     "0105": {
       "title": "LDTA AND AO CERTIFYING OFFICER LEGISLATION (COL) TRAINING",
@@ -389,7 +389,7 @@
         "LDTA COL training completed where performing certifying duties.",
         "TRAX export or certificates show initial COL before appointment and the refresher inside the current calendar year for the LDTA and every AO."
       ],
-      "verified": false
+      "verified": true
     },
     "0106": {
       "title": "APPOINTEE TRAINING WITHIN TWO WEEKS OF APPOINTMENT",
@@ -483,7 +483,7 @@
         "Every appointee trained inside the last 12 months, or permissions removed.",
         "TRAX export or certificate on file within two weeks of each appointment."
       ],
-      "verified": false
+      "verified": true
     },
     "0107": {
       "title": "DMO REVIEWERS INSERTED INTO AUTHORIZATION ROUTING LISTS",
@@ -751,7 +751,7 @@
         "Sampled rejects corrected in the accounting system, ODTA notified, document resubmitted.",
         "Notification records retained with each report."
       ],
-      "verified": false
+      "verified": true
     },
     "0201": {
       "title": "COMPLETE TRAVELER INFORMATION LIST REPORT",
@@ -943,7 +943,7 @@
         "Mandatory EFT Payment set to yes on sampled profiles.",
         "Unit roster validated against the report, departed members detached."
       ],
-      "verified": false
+      "verified": true
     },
     "0202": {
       "title": "DD FORM 577 APPOINTMENTS",
@@ -1454,7 +1454,7 @@
         "Waiver letters signed by the first O-6 or GS-15 in the supervisory chain.",
         "No AO holds another DTS role. No LDTA or ODTA approves as AO."
       ],
-      "verified": false
+      "verified": true
     },
     "0205": {
       "title": "AO COL TRAINING",
@@ -1631,7 +1631,7 @@
         "AOs can demonstrate working knowledge of certifying officer responsibilities.",
         "TRAX export or certificates show initial COL before each AO's appointment and the refresher inside the current calendar year."
       ],
-      "verified": false
+      "verified": true
     },
     "0206": {
       "title": "APPOINTEE TRAINING",
@@ -1819,7 +1819,7 @@
         "Every appointee trained inside the last 12 months, or LDTA notified and permissions removed.",
         "DAO annual refresher complete by calendar year end."
       ],
-      "verified": false
+      "verified": true
     },
     "0207": {
       "title": "CHECK-IN/CHECK-OUT PROCEDURES",
@@ -2017,7 +2017,7 @@
         "Help Desk signature block present on check-in and check-out sheets.",
         "DMM contacted before detaching anyone in a debt status."
       ],
-      "verified": false
+      "verified": true
     },
     "0208": {
       "title": "UNSUBMITTED VOUCHER REPORT",
@@ -2211,7 +2211,7 @@
         "Returned vouchers carry the same traveler, AO, and APC notification trail as initial vouchers.",
         "Evidence of AO and APC notification retained with each weekly report."
       ],
-      "verified": false
+      "verified": true
     },
     "0209": {
       "title": "APPROVED STATUS REPORT (FDTA)",
@@ -2421,7 +2421,7 @@
         "Sampled rejects corrected in the accounting system, ODTA notified, document resubmitted.",
         "System header data intact on retained reports."
       ],
-      "verified": false
+      "verified": true
     },
     "0210": {
       "title": "TRAVELER VOUCHER SUBMISSION",

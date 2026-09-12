@@ -1,8 +1,8 @@
 {
   "faNumber": "1040",
-  "sourceDoc": "MCO 1040.31 Enlisted Retention and Career Development Program, 8 Sep 2010. MCO 1040R.31 Marine Corps Reserve Enlisted Retention and Career Development Program, 26 Jun 2020. MCO 7220.12R, 6 Aug 2013. MCO 1326.6 CH-1, 11 May 2021. NAVMC 1200.1J para 3156. MCO 1900.16 CH 2 Appendix I. MARADMIN 632/19. Drafted from source text against the FAC revised 7 Mar 2024. Quote walk 2026-09-11: 87 of 87 quotes matched verbatim against the extracted source text after OCR normalization of the scanned 2010 order. Two quotes are labeled as table rows or section headings where the source is not linear prose. Inspection steps, questions, and verification await SME review.",
+  "sourceDoc": "MCO 1040.31 Enlisted Retention and Career Development Program, 8 Sep 2010. MCO 1040R.31 Marine Corps Reserve Enlisted Retention and Career Development Program, 26 Jun 2020. MCO 7220.12R, 6 Aug 2013. MCO 1326.6 CH-1, 11 May 2021. NAVMC 1200.1J para 3156. MCO 1900.16 CH 2 Appendix I. MARADMIN 632/19. Drafted from source text against the FAC revised 7 Mar 2024. Quote walk 2026-09-11: 87 of 87 quotes matched verbatim against the extracted source text after OCR normalization of the scanned 2010 order. Two quotes are labeled as table rows or section headings where the source is not linear prose. Inspection steps, questions, and verification await SME review. SME accepted the inspection steps, questions, and verification on 2026-09-11; item flags set verified true.",
   "lastVerified": "2026-09-11",
-  "verifiedAtSource": false,
+  "verifiedAtSource": true,
   "items": {
     "0101": {
       "title": "CAREER PLANNER WORKING AREA AND RESOURCES",
@@ -68,7 +68,7 @@
         "Hardware list satisfied for the component.",
         "Live login to TFRS and MCTFS."
       ],
-      "verified": false
+      "verified": true
     },
     "0102": {
       "title": "ANNUAL CERTIFICATION OF SDAP ELIGIBILITY",
@@ -124,7 +124,7 @@
         "Page 11 or naval correspondence dated within 12 months for each SDAP Career Planner.",
         "Signer O-5 or above, or delegation on file."
       ],
-      "verified": false
+      "verified": true
     },
     "0103": {
       "title": "CAREER PLANNER PERFORMANCE EVALUATIONS",
@@ -169,7 +169,7 @@
         "Most recent fitness report RS at or above the delegation floor.",
         "Reporting chain document matches."
       ],
-      "verified": false
+      "verified": true
     },
     "0104": {
       "title": "WRITTEN DELEGATION TO CONDUCT INTERVIEWS",
@@ -220,7 +220,7 @@
         "Interview signers reconcile to the letter.",
         "Not-recommended interviews signed by the commander."
       ],
-      "verified": false
+      "verified": true
     },
     "0105": {
       "title": "EAS AND RECC INTERVIEW RECOMMENDATIONS AND RE CODES",
@@ -285,7 +285,7 @@
         "Non-RE-1A codes signed by the commander with page 11 on file.",
         "DD 214 codes match interview records."
       ],
-      "verified": false
+      "verified": true
     },
     "0106": {
       "title": "NO MISSED COMMANDING OFFICER INTERVIEWS",
@@ -353,7 +353,7 @@
         "Sampled CO interviews inside their windows.",
         "Missed interviews annotated, signed, and recovered."
       ],
-      "verified": false
+      "verified": true
     },
     "0107": {
       "title": "COMMANDING OFFICER EAS INTERVIEW CONTENT",
@@ -398,7 +398,7 @@
         "Five topics present on sampled CO EAS interviews.",
         "Narratives specific to each Marine."
       ],
-      "verified": false
+      "verified": true
     },
     "0108": {
       "title": "COMMANDING OFFICER REVIEWS REENLISTMENT APPROVALS BEFORE EXECUTION",
@@ -443,7 +443,7 @@
         "Commander review evidence predates execution on sampled reenlistments.",
         "Reserve: commander signature on the reenlistment authority."
       ],
-      "verified": false
+      "verified": true
     },
     "0109": {
       "title": "COMMANDING OFFICER SIGNS AND DATES RELM RESPONSES",
@@ -487,7 +487,7 @@
       "verification": [
         "Commander signature and date on sampled responses, approvals and disapprovals alike."
       ],
-      "verified": false
+      "verified": true
     },
     "0110": {
       "title": "SENIOR ENLISTED LEADER SCREENS FOR SPECIAL DUTY AND B BILLETS",
@@ -536,7 +536,7 @@
         "Screening records for SDA and B billet candidates in the period.",
         "Senior enlisted leader participation evident."
       ],
-      "verified": false
+      "verified": true
     },
     "0111": {
       "title": "RE-CERTIFICATION TIMELINES FOR SDA AND B BILLETS",
@@ -600,7 +600,7 @@
         "Dates inside the prescribed windows.",
         "Tracking mechanism in use."
       ],
-      "verified": false
+      "verified": true
     },
     "0201": {
       "title": "CAREER PLANNER ADDITIONAL DUTIES",
@@ -653,7 +653,7 @@
         "Collateral duty roster and MCTFS codes clear of excluded billets.",
         "Time load compatible with the retention mission."
       ],
-      "verified": false
+      "verified": true
     },
     "0202": {
       "title": "CAREER PLANNING RECORDS MAINTAINED",
@@ -720,7 +720,7 @@
         "Current plus two fiscal years retained.",
         "Sampled ICFs filed in the correct section."
       ],
-      "verified": false
+      "verified": true
     },
     "0203": {
       "title": "NO MISSED CAREER PLANNER INTERVIEWS",
@@ -786,7 +786,7 @@
         "Sampled windows recomputed and met.",
         "Missed interviews annotated and recovered."
       ],
-      "verified": false
+      "verified": true
     },
     "0204": {
       "title": "INTERVIEWS CAPTURE TRUE REASONS FOR RETENTION DECISIONS",
@@ -835,7 +835,7 @@
         "Sampled narratives carry specific reasons.",
         "Career Planner articulates unit patterns and briefs the commander."
       ],
-      "verified": false
+      "verified": true
     },
     "0205": {
       "title": "FIRST TERM INTERVIEW CONTENT",
@@ -879,7 +879,7 @@
         "Five tasks evident on sampled records.",
         "Corrective actions tracked."
       ],
-      "verified": false
+      "verified": true
     },
     "0206": {
       "title": "CAREERIST INTERVIEW CONTENT",
@@ -919,7 +919,7 @@
         "Required content on sampled careerist records.",
         "Gap actions started at interview."
       ],
-      "verified": false
+      "verified": true
     },
     "0207": {
       "title": "CAREER PLANNER EAS INTERVIEW CONTENT",
@@ -954,7 +954,7 @@
       "verification": [
         "Five topics and RE recommendation on sampled records."
       ],
-      "verified": false
+      "verified": true
     },
     "0208": {
       "title": "INTERVIEWS DOCUMENTED, COMPLETED, AND ARCHIVED IN IMM",
@@ -1002,7 +1002,7 @@
         "Sampled IMM records complete and signed.",
         "Paper records transferred."
       ],
-      "verified": false
+      "verified": true
     },
     "0209": {
       "title": "REQUIRED INTERVIEW TOPICS COVERED",
@@ -1042,7 +1042,7 @@
         "Eight topics evident on sampled records.",
         "Career Planner briefs them fluently."
       ],
-      "verified": false
+      "verified": true
     },
     "0210": {
       "title": "CAREER PLANNER AND MARINE SIGN AND DATE RELM RESPONSES",
@@ -1082,7 +1082,7 @@
         "Signatures and dates on sampled responses.",
         "Acknowledgement sequence correct."
       ],
-      "verified": false
+      "verified": true
     },
     "0211": {
       "title": "NAVMC 321A, DD FORM 4, AND STATEMENTS OF UNDERSTANDING",
@@ -1134,7 +1134,7 @@
         "Sampled contracts accurate against RELM approval.",
         "Statements of understanding present where required."
       ],
-      "verified": false
+      "verified": true
     },
     "0301": {
       "title": "SNCOIC TRAINS SUBORDINATE CAREER PLANNERS",
@@ -1183,7 +1183,7 @@
         "Training documented at the required frequency.",
         "T&R events and attendees recorded."
       ],
-      "verified": false
+      "verified": true
     },
     "0302": {
       "title": "SNCOIC IMPLEMENTS THE RETENTION PLAN",
@@ -1232,7 +1232,7 @@
         "Written plan keyed to the current campaign MARADMIN.",
         "Executed events and mission tracking on file."
       ],
-      "verified": false
+      "verified": true
     },
     "0303": {
       "title": "SNCOIC ADVISES COMMANDERS ON RETENTION",
@@ -1280,7 +1280,7 @@
         "Retention reports on a regular cadence.",
         "Commander confirms being briefed."
       ],
-      "verified": false
+      "verified": true
     },
     "0304": {
       "title": "SNCOIC QUALITY CONTROL ON SUBORDINATE RELM REQUESTS",
@@ -1329,7 +1329,7 @@
         "SNCOIC review evident on sampled RELMs.",
         "Return rate reviewed."
       ],
-      "verified": false
+      "verified": true
     },
     "0305": {
       "title": "SNCOIC CAREER PLANNER EVALUATIONS",
@@ -1375,7 +1375,7 @@
         "Evaluations on schedule for each subordinate.",
         "Current form and corrective follow-up."
       ],
-      "verified": false
+      "verified": true
     },
     "0401": {
       "title": "COLLATERAL DUTY CAREER PLANNERS ASSIGNED",
@@ -1419,7 +1419,7 @@
         "Every unit and site covered.",
         "CDCP prerequisites documented."
       ],
-      "verified": false
+      "verified": true
     },
     "0402": {
       "title": "RESERVE CAREER PLANNER COURSE WITHIN ONE YEAR",
@@ -1463,7 +1463,7 @@
         "RCPC certificates inside one year of appointment.",
         "Nominations on file for those pending."
       ],
-      "verified": false
+      "verified": true
     },
     "0403": {
       "title": "ANNUAL SITE VISITS",
@@ -1507,7 +1507,7 @@
         "Documented annual visit for every site and subordinate.",
         "Findings tracked to closure."
       ],
-      "verified": false
+      "verified": true
     }
   }
 }
