@@ -1,0 +1,123 @@
+# Deploy to cloud.gov, on Linux.
+#
+# Modeled on SemperAdmin/semperscribe's deploy-cloudgov.yml. Same shape for
+# every Semper Admin app: gate on the same checks deploy.yml (GitHub Pages)
+# runs, build for the route root, prove the bundle, push with a
+# space-deployer service account, smoke-test the live route.
+#
+# The single most likely failure on this path is a base-path mismatch.
+# deploy.yml builds with NEXT_PUBLIC_BASE_PATH=/SemperAdminPortal for Pages;
+# on cloud.gov the app is served at the route root, so this workflow runs
+# build:cloudgov (DEPLOY_TARGET=cloudgov, stages deploy/Staticfile) and then
+# proves it by inspecting out/index.html.
+#
+# workflow_dispatch only, not a push trigger: a deploy to a government
+# sandbox is an explicit act, not a side effect of merging to main (that is
+# what deploy.yml / GitHub Pages is for).
+#
+# CREDENTIALS. CF_USERNAME / CF_PASSWORD are a cloud.gov space-deployer
+# service account, never an SSO user (service accounts have no MFA prompt,
+# so they are the only credential CI can use unattended). One account can
+# serve every repo: store the pair as organization secrets on SemperAdmin,
+# or per repo under Settings > Secrets and variables > Actions. To mint one:
+#   cf create-service cloud-gov-service-account space-deployer <name>
+#   cf create-service-key <name> github-actions
+#   cf service-key <name> github-actions
+# The sandbox purge (90 days) deletes the account; mint again afterwards.
+name: Deploy to cloud.gov
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudgov
+  cancel-in-progress: false
+
+env:
+  CF_API: https://api.fr.cloud.gov
+  CF_ORG: sandbox-usmc
+  CF_SPACE: stephen.shorter
+  APP_ROUTE: https://semper-admin-portal.app.cloud.gov/
+  NEXT_TELEMETRY_DISABLED: "1"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment:
+      name: cloudgov
+      url: https://semper-admin-portal.app.cloud.gov/
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        # npm ci alone hits npm issue 4828: a package-lock.json generated on
+        # Windows omits Linux-only optional native binaries (lightningcss,
+        # sharp). The follow-up install forces those binaries onto the
+        # ubuntu-latest runner without touching the lockfile.
+        run: |
+          npm ci --include=optional
+          npm install --no-save --include=optional --force lightningcss-linux-x64-gnu @img/sharp-linux-x64 @tailwindcss/oxide-linux-x64-gnu @tailwindcss/oxide-linux-x64-musl
+
+      # Same gates as deploy.yml.
+      - name: Security audit (production, blocking)
+        run: npm audit --audit-level=moderate --omit=dev
+
+      - name: Type check
+        run: npm run type-check
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build for cloud.gov
+        run: npm run build:cloudgov
+
+      - name: Prove the bundle
+        run: |
+          if grep -q '/SemperAdminPortal/_next/' out/index.html; then
+            echo "::error::out/index.html references /SemperAdminPortal/_next/. This is a GitHub Pages build; DEPLOY_TARGET did not reach next.config. Every asset would 404 on cloud.gov."
+            exit 1
+          fi
+          grep -q '/_next/' out/index.html || { echo "::error::out/index.html references no /_next/ assets at all; inspect it by hand before pushing"; exit 1; }
+          test -f out/Staticfile || { echo "::error::out/Staticfile missing; build:cloudgov did not stage it"; exit 1; }
+          test -f out/sitemap.xml || echo "::warning::out/sitemap.xml missing; postbuild may not have run"
+          test -d out/pagefind || echo "::warning::out/pagefind missing; site search will be empty"
+
+      # Official apt repo, no third-party action: one less supply-chain hop
+      # ahead of the step that hands this runner production credentials.
+      - name: Install cf CLI
+        run: |
+          curl -fsSL https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo gpg --dearmor -o /usr/share/keyrings/cloudfoundry-keyring.gpg
+          echo "deb [signed-by=/usr/share/keyrings/cloudfoundry-keyring.gpg] https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry.list
+          sudo apt-get update && sudo apt-get install --yes cf8-cli
+          cf version
+
+      - name: Push
+        env:
+          CF_USERNAME: ${{ secrets.CF_USERNAME }}
+          CF_PASSWORD: ${{ secrets.CF_PASSWORD }}
+        run: |
+          cf api "$CF_API"
+          cf auth "$CF_USERNAME" "$CF_PASSWORD"
+          cf target -o "$CF_ORG" -s "$CF_SPACE"
+          cf push
+
+      - name: Post-deploy smoke
+        run: |
+          code=$(curl -sS -o /tmp/live.html -w '%{http_code}' "$APP_ROUTE")
+          [ "$code" = "200" ] || { echo "::error::$APP_ROUTE returned HTTP $code"; exit 1; }
+          grep -qi '<html' /tmp/live.html || { echo "::error::$APP_ROUTE body carries no <html>"; exit 1; }
+          if grep -q '/SemperAdminPortal/_next/' /tmp/live.html; then echo "::error::Live page references /SemperAdminPortal/_next/; wrong base path shipped"; exit 1; fi
+          code=$(curl -sS -o /dev/null -w '%{http_code}' "${APP_ROUTE}legal/terms/")
+          [ "$code" = "200" ] || { echo "::error::${APP_ROUTE}legal/terms/ returned HTTP $code"; exit 1; }
+          curl -sSI "$APP_ROUTE" | grep -qi '^strict-transport-security:' || echo "::warning::No Strict-Transport-Security header on $APP_ROUTE"
