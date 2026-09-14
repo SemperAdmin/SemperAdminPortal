@@ -1,20 +1,21 @@
 ---
 title: "Account Provisioning and SAAR-N Processing - S-1 Procedural Page"
 slug: "account-provisioning-and-saar-n-processing"
-summary: "Process system access requests. AutoSAAR to MISSA for MCTFS, NIS for UD/MIPS and DTMS. Validate role, train, activate."
+summary: "Process system access requests. DoD E-ICAM for MCTFS from 21 September 2026, NIS for UD/MIPS and DTMS. Validate role, train, activate."
 roles: ["admin", "leader", "commander"]
-lastVerified: "2026-06-18"
+lastVerified: "2026-09-14"
 unitType: "s1-g1"
 topic: "admin-systems-management"
 function: "GENA"
 skillLevel: 2000
 trEventCode: "0102-GENA-1015"
 mosPerforming: ["0102", "0111", "0170"]
-sourcePolicy: "MCO 5239.2B"
+sourcePolicy: "PAA 02-26"
 billets: ["s-1-clerk", "s-1-chief", "g-1-officer", "ipac-clerk"]
 gradesPerforming: ["LCpl", "Cpl", "Sgt", "SSgt"]
 sustainmentInterval: "12 months"
 references:
+  - "PAA 02-26 Transition of MCTFS Access Requests from AutoSAAR to DoD E-ICAM"
   - "MCO 5239.2B Marine Corps Cybersecurity Program"
   - "MCO 5000.14D Marine Corps Administrative Procedures"
   - "DOD 8500.01E Cybersecurity"
@@ -23,13 +24,16 @@ references:
   - "NAVMC 3500.3E Manpower and Administration T-R Manual"
   - "MCTFS FoS Access Policy and Procedures 8.0"
   - "Naval Identity Services (NIS) FAQs UDMIPS and DTMS, 13 March 2026"
+  - "FPM Vol 4 section 0208 (Role Control Agent)"
 performanceSteps:
-  - "Receive the SAAR-N draft from the inbound clerk or billet change order"
+  - "Receive the access request from the inbound clerk or billet change order"
   - "Validate billet, MOS, and grade against requested role"
   - "Validate need-to-know with the security manager"
   - "Confirm cyber awareness training is current"
-  - "Build the SAAR packet on the current DD Form 2875"
-  - "Submit the MCTFS manpower SAAR through AutoSAAR to MISSA"
+  - "Confirm the requestor holds an active E-ICAM identity and a registered supervisor"
+  - "Validate identity, supervisor, and roles in E-ICAM before 25 September 2026"
+  - "Submit the MCTFS access request through DoD E-ICAM"
+  - "Attach the cyber awareness certificate as a PDF before submitting"
   - "Request UD-MIPS and DTMS access through NIS"
   - "Submit to RAPIDS for workstation access where required"
   - "Train the clerk on each system before activation"
@@ -42,74 +46,184 @@ relatedRoles:
   leader: "/leader/admin-systems-management/account-provisioning-and-saar-n-processing"
   commander: "/commander/admin-systems-management/account-provisioning-and-saar-n-processing"
 source:
-  title: "Account Provisioning and SAAR-N Processing - MCTFS FoS Access Policy 8.0 and MCO 5239.2B"
+  title: "Account Provisioning - PAA 02-26, MCTFS FoS Access Policy 8.0, and MCO 5239.2B"
   publisher: "Headquarters Marine Corps M&RA"
 ---
 
+<Callout variant="danger" title="AutoSAAR retires 17 September 2026">
+PAA 02-26<Citation source="PAA 02-26" /> moves MCTFS end-user access to DoD
+E-ICAM. Four dates drive the work. Stop submitting through AutoSAAR, email, or a
+locally routed DD Form 2875 after **17 September 2026**. Requests not approved by
+then require resubmission. Use E-ICAM for every create, modify, and revoke from
+**21 September 2026**. Verify email, phone, and supervisor in E-ICAM by
+**25 September 2026**, and have supervisors validate role and Information
+Assurance training date by the same day. Accounts not validated by
+**30 September 2026** are subject to immediate disablement and a fresh request.
+</Callout>
+
 ## Role and responsibility
 
-S-1 admin specialists own account provisioning at the unit level. The S-1 clerk receives the SAAR request and validates the requested role against the billet. The unit security manager signs the access validation per role-based access rules. The S-1 chief routes the request through AutoSAAR to MISSA and tracks provisioning. The S-1 officer signs by direction on privileged role requests.
+S-1 admin specialists own account provisioning at the unit level. The S-1 clerk
+receives the access request and validates the requested role against the billet.
+The unit security manager signs the access validation per role-based access
+rules. The S-1 chief drives the request through DoD E-ICAM and tracks
+provisioning. The S-1 officer signs by direction on privileged role requests.
 
-Source documents flow from billet assignments, MOS qualification certificates, command guidance on role assignment, and the unit access roster. MCTFS manpower access submits through AutoSAAR, where MISSA validates and TSO Mainframe Security provisions the account. RAPIDS handles workstation operator access. UD-MIPS and DTMS access routes through Naval Identity Services (NIS), the access manager for Marine Online applications. Outputs include the MISSA approval, the TSO provisioning confirmation, the NIS approval, the cyber awareness training certificate, the privileged access agreement when applicable, and the OMPF Field Folder systems tab entry.
+Source documents flow from billet assignments, MOS qualification certificates,
+command guidance on role assignment, and the unit access roster. MCTFS manpower
+access submits through DoD E-ICAM, where the supervisor, security manager,
+Information Owner, and Information System Security Manager review in sequence
+before provisioning. RAPIDS handles workstation operator access. UD-MIPS and
+DTMS access routes through Naval Identity Services (NIS), the access manager for
+Marine Online applications. Outputs include the E-ICAM approval trail, the
+provisioning confirmation, the NIS approval, the cyber awareness training
+certificate, the privileged access agreement when applicable, and the OMPF Field
+Folder systems tab entry.
 
-MCAAT inspects the SAAR packet for security manager signature, training proof, role-billet alignment, and activation audit trail. A clerk operating without a current SAAR triggers a finding under MCO 5239.2B<Citation source="MCO 5239.2B" />. Activate access only after training, not before.
+MCAAT inspects the access packet for security manager signature, training proof,
+role-billet alignment, and activation audit trail. A clerk operating without a
+current access approval triggers a finding under MCO 5239.2B<Citation source="MCO 5239.2B" />.
+Activate access only after training, not before. An automated account creation
+does not by itself establish need-to-know or entitlement to a role per
+PAA 02-26<Citation source="PAA 02-26" /> paragraph 3.
 
 ## Trigger events
 
 - Inbound Marine reports for S-1 duty needing system access.
 - Billet change moves a clerk to a higher access role.
-- New system release requires fresh SAAR submission.
-- Cyber awareness training certificate expires triggering reactivation.
+- New system release requires a fresh access request.
+- Cyber awareness training certificate expires triggering revalidation.
 - MOS conversion brings a Marine into the admin field.
 - Reservist activates and requires temporary access on Title 10 orders.
-- Audit identifies a clerk operating without a current SAAR.
+- Audit identifies a clerk operating without a current access approval.
+- Supervisor changes, which starts an E-ICAM Manager Transfer certification campaign.
 
 ## Processing workflow
 
-<Callout variant="info" title="Two access paths, effective 2026">
-MCTFS manpower access submits through AutoSAAR, where MISSA validates and TSO Mainframe Security provisions. UD-MIPS and DTMS access routes through Naval Identity Services (NIS). RAPIDS uses its own workstation operator process. MISSO offices support the field but do not process the SAAR.
+<Callout variant="info" title="Two access paths">
+MCTFS manpower access submits through DoD E-ICAM. UD-MIPS and DTMS access routes
+through Naval Identity Services (NIS). RAPIDS uses its own workstation operator
+process. MISSO offices support the field and answer role, documentation, and
+mainframe account questions, but they do not process the request.
 </Callout>
 
-1. Receive the request. Pull the SAAR draft from the inbound clerk or the billet change order. Cross-check EDIPI, billet, and requested role. The S-1 clerk runs receipt.
+1. Receive the request. Pull the request from the inbound clerk or the billet change order. Cross-check EDIPI, billet, and requested role. The S-1 clerk runs receipt.
 2. Validate billet, MOS, and grade. Confirm the role aligns with the billet, the MOS qualifies the Marine for the role, and the grade meets any minimum threshold per MCO 5239.2B<Citation source="MCO 5239.2B" /> Chapter 4.
-3. Validate need-to-know. The unit security manager confirms role-based access aligns with the duty per SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" />. The security manager signs.
-4. Confirm cyber awareness training. Verify the Marine holds a current annual cyber awareness training certificate per DOD 8500.01E<Citation source="DOD 8500.01E" />. The completion date must sit within twelve months of the SAAR with at least 14 days remaining when MISSA receives it.
-5. Build the SAAR packet. Use the May 2022 DD Form 2875 with the separate Marine Corps User Agreement Addendum Version 1.0, the only acceptable form effective 25 March 2026 per MCTFS FoS Access Policy and Procedures 8.0<Citation source="MCTFS FoS Access Policy and Procedures 8.0" />. Attach the training certificate and Privacy Act acknowledgment.
-6. Submit the MCTFS SAAR through AutoSAAR. Manpower access routes through AutoSAAR to MISSA, not to MISSO. See the AutoSAAR path below. Request UD-MIPS and DTMS access through NIS using the NIS path below.
+3. Validate need-to-know. The unit security manager confirms role-based access aligns with the duty per SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" />. The security manager signs in the E-ICAM workflow.
+4. Confirm cyber awareness training. Verify the Marine holds a current annual cyber awareness training certificate per DOD 8500.01E<Citation source="DOD 8500.01E" />. E-ICAM carries the completion date as the Information Assurance training date. A certification older than one year is subject to disablement unless the user updates it and the supervisor validates it per PAA 02-26<Citation source="PAA 02-26" /> paragraph 4.d.2.
+5. Confirm the E-ICAM identity. The requestor needs a valid CAC or PIV credential and an active E-ICAM identity. The supervisor needs to be registered in E-ICAM before the user names them as Manager or Supervisor.
+6. Submit the MCTFS request through E-ICAM. Follow the E-ICAM path below. Request UD-MIPS and DTMS access through NIS using the NIS path below.
 7. Submit RAPIDS workstation access. Coordinate with the RAPIDS operator for workstation provisioning when the role requires CAC issuance or DEERS write access.
 8. Train the clerk. Run system-specific training before activation per NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 performance step 3.
 9. Activate the account. Confirm activation in each system. Test a sample transaction in a training environment when available.
 10. Document activation. Cut a Page 11 entry recording system access and training completion per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6.
-11. Update the active account roster. Add EDIPI, role, system, activation date, and SAAR reference. The S-1 clerk owns the roster.
-12. File the certified packet. Place the SAAR, training certificate, and activation confirmation in the OMPF Field Folder systems tab.
+11. Update the active account roster. Add EDIPI, role, system, activation date, and the E-ICAM Access Request ID. The S-1 clerk owns the roster.
+12. File the certified packet. Place the request record, training certificate, and activation confirmation in the OMPF Field Folder systems tab. E-ICAM discards attachments once a request completes, so keep local copies of every certificate and letter.
 
-## MCTFS manpower SAAR through AutoSAAR
+## MCTFS access through DoD E-ICAM
 
-MISSA owns MCTFS access, supported by the MISSO offices and RFF. Manpower users submit the SAAR through AutoSAAR at https://autosaar.usmc.mil, not on paper and not through MISSO. Paper DD Form 2875 and INFOMGT are discontinued for manpower access.
+Effective 21 September 2026, DoD E-ICAM is the authoritative path for creating,
+modifying, and revoking MCTFS end-user access per PAA 02-26<Citation source="PAA 02-26" />.
+The MCTFS instance sits at https://spnfm01-acc.icam.disa.mil/identityiq/home.jsf
+per the E-ICAM-MCTFS Account Validation Quick Start Guide. Sign in over NIPRNet
+on a government furnished computer with Chrome, Edge, or Firefox. Internet
+Explorer is not supported. Select the CAC or PIV certificate, then enter the
+PIN. The session times out at 10 minutes. Fields on this site load slowly, so
+give each page time to populate before treating a blank field as missing data.
 
-1. Confirm the User ACID. The servicing TASO creates the User ACID before the SAAR. The user verifies the ACID exists, then starts the AutoSAAR.
-2. Complete and sign. The user completes the form and signs Block 11, which also signs the Marine Corps User Agreement. AutoSAAR routes to the supervisor.
-3. Supervisor signs. The supervisor must be a SNCO, officer, or GS-07 and above, senior in the user's chain. The supervisor verifies the IA training date in Block 10, signs Block 17d, and AutoSAAR routes to the security manager.
-4. Security manager signs. The security manager verifies the investigation, signs Block 25, and AutoSAAR routes to MISSA.
-5. MISSA validates and routes to TSO. MISSA verifies the form, signs, and submits a JIRA request to TSO Mainframe Security. TSO provisions the account and completes Part IV. MISSA approval is not provisioning, so confirm the account at first login.
+### Validate your identity before 25 September 2026
 
-Finance access (34xx, disbursing) uses the paper DD Form 2875 plus an INFOMGT or JIRA ticket through the TASO to the RFF OMB, provisioned by TSO and held by RFF.
+This is a one-time task for every Marine who already holds MCTFS access, and it
+runs separately from any new request. Paragraphs 4.c and 4.d of
+PAA 02-26<Citation source="PAA 02-26" /> set the requirement. An account left
+unvalidated on 30 September 2026 is subject to immediate disablement and a fresh
+request. Run this now, not in the last week.
+
+Every user runs these five steps.
+
+1. Sign in at the MCTFS instance with the CAC or PIV certificate and enter the PIN.
+2. Open the three-dot menu at top left, then **Manage Identity**, then **Edit Identity**.
+3. Verify or update **OFFICIAL EMAIL ADDRESS** and **PHONE**. Both are drop-downs fed by the identity data feed, with no free-text entry. Correct a wrong value at IDCard online and allow 48 to 72 hours for it to reach E-ICAM. Every E-ICAM notice goes to the address selected here.
+4. Verify or populate the **Manager** field, which carries the supervisor. The supervisor has to be registered in E-ICAM before the name populates.
+5. Confirm the assigned roles are correct under Access selection in the Roles section.
+
+Every supervisor runs these five steps for each Marine they carry.
+
+1. Open the three-dot menu, then **Manage Identity**, then **Edit Identity**.
+2. Click **Manage** on the target employee.
+3. Verify or update **OFFICIAL EMAIL ADDRESS**, **PHONE**, and the **IA Training Date**. Pull the date from the Cyber Awareness Challenge certificate. A future date is rejected. A certification older than one year puts the account at risk of disablement per PAA 02-26<Citation source="PAA 02-26" /> paragraph 4.d.2.
+4. Confirm the Roles section carries the assigned MCTFS role.
+5. Open **My Work**, then **Work Items**, to clear pending actions and review the archive of previous ones.
+
+### Submitting the request
+
+1. Sign in with CAC, PIV, or ECA. First sign-on creates the identity the roles attach to. On a credential failure, open a ticket with the identity provider.
+2. Open the request. Click **Manage My Access** or **Manage User Access** on the dashboard, or use **Manage Access** on the main menu. Supervisors with direct reports select the identity first, then click **Next**.
+3. Search the role. Filter by keyword or pick the MCTFS role source application from the **Role Source Application** filter, then click **Apply**. Select the role with the check mark. The check turns green.
+4. Keep one application and one approval path per request. E-ICAM routes a request to a single approval workflow. Roles in different applications, or roles pulling different security manager, Information Owner, or Information System Security Manager workgroups, need separate requests.
+5. Attach the documents. A paper clip marked with a red asterisk means an attachment is required. Upload PDFs only, five per role at most. Every identity needs a current Cyber Awareness Challenge certificate. Privileged roles add the appointment letter, authorization letter, or privileged user agreement. Attachments cannot be added later, so a missed document means cancelling and starting over.
+6. Complete the form. Work through the Privacy Act Statement, the user data fields, the access selection, the acceptable use policy, and the justification for access. Justification is required for approval. Supervisor email drives the supervisor name lookup, and the address has to belong to an individual rather than a distribution list.
+7. Sign and submit. Acknowledge the CAC digital signature prompt and let the page finish reloading. Touching the form mid-submission clears the inputs. Signature timestamps render in GMT.
+8. Track the request. Use **Track My Requests** or **My Work** then **Access Requests**. Request status reads Pending, Completed, or Canceled. Each role inside the request reads Waiting, Complete, or Denied. E-ICAM cancels a request left incomplete for more than 20 calendar days.
+
+### Approval chain
+
+The standard workflow runs in a fixed order, and each approver signs with a CAC.
+
+1. Supervisor. Confirms the requestor's job role and need for access, names the security manager, sets or confirms the Information Assurance training date from the certificate, and certifies verification of need-to-know. The supervisor also sets the access or contract expiration date when the user left it blank. E-ICAM does not validate the contents of an attachment, so the supervisor reads the PDF.
+2. Security manager. Confirms investigation type, investigation date, and clearance level. E-ICAM checks the eligibility code against the role restriction and surfaces the result.
+3. Information Owner or Authorizing Official. Verifies the inputs of the prior approvers.
+4. Information System Security Manager. Finalizes the request and releases provisioning.
+
+Roles requiring a DD Form 577 add a 577 approver step to the chain. An inactive
+supervisor routes to the supervisor's supervisor, then to E-ICAM Tier II. An
+inactive security manager, Information Owner, or Information System Security
+Manager routes to the default workgroup. Any approver rejects with a mandatory
+comment. Supervisors, 577 approvers, Information Owners, and security officers
+also reject and resubmit, which returns an edited request to the requestor
+instead of killing it outright. Security managers hold no reject-and-resubmit
+option.
+
+### Recertification and account status
+
+E-ICAM evaluates recertification weekly and runs certification campaigns against
+the supervisor.
+
+- Authorized roles recertify every 365 days. Privileged roles recertify every 90 days. Approval letters, appointment letters, and privileged user agreements run an annual clock.
+- The user receives notices 21 days before a campaign opens. The supervisor then holds 10 days to act. An unanswered campaign escalates to the supervisor's supervisor on day 11, who holds four days. Roles revoke at the end of the campaign when nobody acts and no request is in flight.
+- A supervisor change closes open campaigns and opens a Manager Transfer campaign with a 10-day clock.
+- No login to the host system for 35 calendar days disables the account. Daily warnings start at day 25. A disabled account requires a new access request.
+- E-ICAM gives 25 days notice before the contract expiration date, access expiration date, or Information Assurance training date lapses. No action disables access to the application.
 
 ## NIS request path for UD-MIPS and DTMS
 
-NIS replaces the SAAR route for Marine Online applications. Run these steps for UD-MIPS and DTMS access.
+NIS governs access for Marine Online applications. Run these steps for UD-MIPS
+and DTMS access.
 
 1. Set up the requestor profile. Log in to NIS at https://sp.nis.navy.mil/identityiq/home.jsf. Input the organization address, the billet description, and the Information Assurance training date. Select the correct supervisor. The profile request routes to the supervisor for approval before any role request.
 2. Request the role. Open Manage Access, then Manage My Access. Search the ARUC, click the checkmark until it turns green, and submit.
-3. Validate the training date. The supervisor validates the user-inputted IA training date against the training certificate or existing MCTFS data before approval.
+3. Validate the training date. The supervisor validates the user-inputted Information Assurance training date against the training certificate or existing MCTFS data before approval.
 4. Route for approval. UD-MIPS runs Requestor to Supervisor to Information Owner approver, the Certifier Account Provisioner or Certifier Commander. DTMS adds a Security Manager step, Requestor to Supervisor to Security Manager to Information Owner approver, the Control Agent or CO.
 5. Activate the account. After Information Owner approval, set the user from Pending to Active in UD/MIPS Manage Users. The MOL Administrator Permissions Management page carries the activation detail.
+
+<Callout variant="info" title="DTMS has two provisioning scopes, do not confuse them">
+Naval Identity Services carries the S-1 and IPAC request for DTMS access as a
+Marine Online application. Inside a disbursing or finance office, a Role Control
+Agent assigns the office's own users as reviewers, preparers, certifiers, online
+transaction certifiers, and internal control holders per FPM Vol 4<Citation source="FPM Vol 4" />
+section 0208. The Role Control Agent is appointed in writing, sits at gunnery
+sergeant, warrant officer, commissioned officer, or GS-9 and above, and comes off
+active certifying roles while holding the permission. An S-1 clerk routes through
+Naval Identity Services, not through the Role Control Agent.
+</Callout>
 
 ## Systems of record and forms
 
 ### Systems
 
-- MCTFS. Master record system. Manpower access submits through AutoSAAR to MISSA, provisioned by TSO Mainframe Security.
+- MCTFS. Master record system. Manpower access submits through DoD E-ICAM effective 21 September 2026.
+- DoD E-ICAM. Identity and access workflow for MCTFS end-user roles. Replaced AutoSAAR.
+- AutoSAAR. Retired for new MCTFS end-user requests after 17 September 2026.
 - MOL. Self-service surface tied to MCTFS access.
 - UD-MIPS. Diary cutting and certification system. Access requested through NIS.
 - DTMS. Document tracking application under Marine Online. Access requested through NIS with an added Security Manager approval step.
@@ -120,35 +234,56 @@ NIS replaces the SAAR route for Marine Online applications. Run these steps for 
 
 ### Forms
 
-- DD Form 2875 (SAAR). Manpower access uses AutoSAAR. Finance access uses the paper form. Effective 25 March 2026, the May 2022 version with the Marine Corps User Agreement Addendum Version 1.0 is the only acceptable form.
-- Privileged Access Agreement. Required for privileged certifier roles.
-- Cyber Awareness Training Certificate. Annual training proof.
-- Active Account Roster. Local register of provisioned access.
-- DD Form 577 Appointment and Termination Record. NIS holds no document uploads, so units maintain 577s externally for DTMS. The self-contained 577 process for UD-MIPS stays unchanged.
+- Cyber Awareness Challenge Certificate. Annual training proof. Upload as a PDF on the first E-ICAM request, and keep a local copy because E-ICAM discards attachments after a request completes.
+- Privileged Access Agreement. Required for privileged certifier roles and uploaded with the request.
+- Appointment Letter and Authorization Letter. Required where the role is configured for them. Both run an annual recertification clock.
+- DD Form 2875 (SAAR). No longer the submission instrument for MCTFS end-user access. E-ICAM builds the SAAR record from the online form.
+- Active Account Roster. Local register of provisioned access, keyed to the E-ICAM Access Request ID.
+- DD Form 577 Appointment and Termination Record. Drives the 577 approver step in E-ICAM where a role requires it. NIS holds no document uploads, so units maintain 577s externally for DTMS.
 - NAVMC 118 (11) Administrative Remarks. Page 11 documenting system access and training.
 
 ## Common pitfalls
 
-- SAAR submitted without security manager signature. AutoSAAR holds the form at the security manager step. Verify all signatures route before MISSA action.
+- Request submitted through AutoSAAR after 17 September 2026. The request dies unapproved and needs resubmission in E-ICAM per PAA 02-26<Citation source="PAA 02-26" /> paragraph 4.e.
+- Supervisor not registered in E-ICAM. The user cannot name them as Manager or Supervisor and the request stalls. Register the supervisor first per PAA 02-26<Citation source="PAA 02-26" /> paragraph 4.d.1.
+- Attachment missed at submission. E-ICAM blocks uploads at every later stage. Cancel the request and start over with every document in hand.
+- Multiple roles bundled across approval paths. E-ICAM routes one request to one workflow, so the second workgroup never sees it. Split the roles into separate requests.
 - Access activated before cyber awareness training. The clerk operates outside policy. Confirm training before submission per DOD 8500.01E<Citation source="DOD 8500.01E" />.
 - Role mismatch with billet. Clerk overprovisioned for the assigned duty. Verify role-billet alignment per MCO 5239.2B<Citation source="MCO 5239.2B" />.
+- Attachments treated as a system of record. E-ICAM discards them after approval. Keep local copies of every certificate and letter.
 - Page 11 entry skipped. The OMPF lands without record of access. Cut the Page 11 within 5 working days of activation per MCO P1070.12K<Citation source="MCO P1070.12K" />.
 - Active account roster not updated. The quarterly review picks up the gap. Update the roster at every activation.
 
 ## Decision points
 
 - Standard versus privileged access. The 0111 needs MCTFS or UD-MIPS certifier access. Route through the Privileged Certifier Account Authorization workflow with the privileged access agreement attached per MCO 5239.2B<Citation source="MCO 5239.2B" />.
-- Temporary access for activated reservist. The reservist activates for a 90-day window. The S-1 chief routes a time-limited SAAR with explicit sunset date. MISSA closes the account at sunset.
-- Inbound clerk arrives without prior cyber awareness certificate. The clerk runs cyber awareness training as part of the inbound brief before SAAR submission per DOD 8500.01E<Citation source="DOD 8500.01E" />.
+- Request stranded in the AutoSAAR window. A request sits unapproved on 17 September 2026. Do not chase the old approval. Resubmit in E-ICAM on or after 21 September 2026 per PAA 02-26<Citation source="PAA 02-26" /> paragraph 4.e.
+- Temporary access for activated reservist. The reservist activates for a 90-day window. The S-1 chief sets the access expiration date on the E-ICAM request to the sunset date. E-ICAM warns at 25 days out and disables access at expiry.
+- Inbound clerk arrives without prior cyber awareness certificate. The clerk runs cyber awareness training as part of the inbound brief before submission per DOD 8500.01E<Citation source="DOD 8500.01E" />.
+- Finance and disbursing access. PAA 02-26 covers MCTFS end-user access without naming the RFF finance path. Confirm the current instruction with the supporting MISSO before routing a 34xx or disbursing request on the legacy paper path.
 - Supervisor-submitted NIS request. The supervisor submits the NIS request on behalf of the member. The request routes back to the user to acknowledge and complete, then forward to approval, not back to the supervisor. Each unit sets its own requestor-supervisor assignment and workflow.
 
 ## Authority
 
-This sub-page sits under MCTFS FoS Access Policy and Procedures 8.0<Citation source="MCTFS FoS Access Policy and Procedures 8.0" />, the MISSA policy for MCTFS access and the AutoSAAR process. MCO 5239.2B<Citation source="MCO 5239.2B" /> Marine Corps Cybersecurity Program and MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6 set S-1 and support-office roles. DoD-level policy at DOD 8500.01E<Citation source="DOD 8500.01E" /> sets the role-based access framework and annual training requirement. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 performance steps 2 and 3 govern administrator permissions and assignment. SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" /> Privacy Act Program governs Privacy Act acknowledgment at access.
+PAA 02-26<Citation source="PAA 02-26" /> sets the transition from AutoSAAR to DoD
+E-ICAM and the September 2026 dates. It changes the submission method only. TASO
+appointment, cybersecurity, account management, oversight, and incident reporting
+duties stand unchanged. MCTFS FoS Access Policy and Procedures 8.0<Citation source="MCTFS FoS Access Policy and Procedures 8.0" />
+remains the MISSA policy for MCTFS access, levels of privilege, and account
+management, with its AutoSAAR submission path superseded. MCO 5239.2B<Citation source="MCO 5239.2B" />
+Marine Corps Cybersecurity Program and MCO 5000.14D<Citation source="MCO 5000.14D" />
+MCAP enclosure 6 set S-1 and support-office roles. DoD-level policy at
+DOD 8500.01E<Citation source="DOD 8500.01E" /> sets the role-based access framework
+and annual training requirement. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" />
+T-R event 0102-GENA-1015 performance steps 2 and 3 govern administrator
+permissions and assignment. SECNAVINST 5211.5<Citation source="SECNAVINST 5211.5" />
+Privacy Act Program governs Privacy Act acknowledgment at access.
 
 ## Related references
 
-- MCTFS FoS Access Policy and Procedures 8.0. MISSA policy for MCTFS access, AutoSAAR, levels of privilege, and account management.
+- PAA 02-26. Transition of MCTFS access requests from AutoSAAR to DoD E-ICAM, effective 21 September 2026.
+- DISA E-ICAM Help Guide and the E-ICAM-MCTFS Account Validation Quick Start Guide. Both attach to PAA 02-26 on the MISSA portal.
+- MCTFS FoS Access Policy and Procedures 8.0. MISSA policy for MCTFS access, levels of privilege, and account management.
 - MCO 5239.2B Marine Corps Cybersecurity Program. Role-based access provisioning and review rules.
 - MCO 5000.14D Marine Corps Administrative Procedures. MISSA, MISSO, and S-1 roles for system management.
 - DOD 8500.01E Cybersecurity. DoD-level access provisioning and annual training rules.

@@ -320,6 +320,14 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     pageType: "leaf",
   },
   {
+    slug: "savings-deposit-program",
+    label: "Savings Deposit Program (SDP)",
+    shortLabel: "SDP",
+    description: "10 percent a year, compounded quarterly, on up to 10,000 dollars while deployed. Opens after 30 consecutive days in an eligible area while drawing CZTE. Funds return 120 days after you leave.",
+    icon: "FileText",
+    pageType: "leaf",
+  },
+  {
     slug: "apes-and-fitrep-administration",
     label: "A-PES and FITREP Administration",
     shortLabel: "A-PES and Admin",
