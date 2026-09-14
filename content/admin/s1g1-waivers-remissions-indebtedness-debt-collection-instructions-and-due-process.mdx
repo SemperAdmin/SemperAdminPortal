@@ -16,6 +16,7 @@ gradesPerforming: ["Sgt", "SSgt", "GySgt"]
 sustainmentInterval: "12 months"
 references:
   - "DoDFMR Vol 16 Chapter 2 General Instructions for Collection of Debt Owed to the DoD"
+  - "FPM Vol 1 Chapter 12 paragraph 120202 (In-Service Debt Notification)"
   - "DoDFMR Vol 16 Chapter 7 Interest, Penalties, and Administrative Costs"
   - "5 USC 5514 Federal Salary Offset"
   - "31 USC 3711 Collection and Compromise"
@@ -52,8 +53,8 @@ DoDFMR Vol 16 Chapter 2 is the framework for every DoD debt collection action. M
 ## Processing workflow
 
 1. Validate the debt. Trace the debt to the source transaction and the supporting KSD per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2. The debt is valid only with a documented source.
-2. Issue the initial demand letter. The demand letter notifies the Marine of the debt, the basis, the amount, the right to inspect records, the right to dispute, the right to a hearing, the right to apply for a waiver or remission, the right to repay voluntarily, and the consequences of nonpayment per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2.
-3. Track the due process timeline. The Marine has 30 days from the demand letter to dispute, request a hearing, apply for waiver remission, or arrange voluntary repayment per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2.
+2. Issue the initial demand letter. The demand letter notifies the Marine of the debt, the basis, the amount, the right to inspect records, the right to dispute, the right to a hearing, the right to apply for a waiver or remission, the right to repay voluntarily, and the consequences of nonpayment per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2. For Marine Corps in-service pay debt the instrument is fixed. Follow the In-Service Debt Notification Letter rules below.
+3. Track the due process timeline. The Marine has 30 days from the demand letter to dispute, request a hearing, apply for waiver remission, or arrange voluntary repayment per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2. On an in-service pay debt the clock runs from the certification date of the notification letter, not the mailing date.
 4. Process the Marine response. The S-1 chief routes dispute requests to the hearing process at hearings-informal-disputes-and-waivers-remissions. The S-1 chief routes waiver remission applications under DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 4 and Vol 7A Chapter 50.
 5. Start salary offset. On expiration of the 30-day window without dispute or repayment arrangement, the IPAC pay clerk starts salary offset per 5 USC 5514 and DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2. Salary offset caps at 15 percent of disposable pay for routine debt.
 6. Process administrative offset. For tax refund offset, vendor payment offset, or other federal payment offset, the salary offset extends to administrative offset per 31 USC 3716.
@@ -62,11 +63,29 @@ DoDFMR Vol 16 Chapter 2 is the framework for every DoD debt collection action. M
 9. Refer delinquent debt to Treasury. After 120 days delinquent, DFAS refers the debt to Treasury Offset Program (TOP) per 31 USC 3716 and DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2.
 10. Report to credit bureaus. Per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2, DFAS reports delinquent debt to credit bureaus after the 30-day due process window and 60 days delinquent.
 
+## In-Service Debt Notification Letter
+
+FPM Vol 1<Citation source="FPM Vol 1" /> paragraph 120202 sets the Marine Corps
+instrument for notifying a member of an in-service pay debt. It overlays the
+generic demand letter framework rather than replacing the due process rights.
+
+- The disbursing or finance office, or the administrative unit, informs the member within 5 working days of confirming the existence and validity of the debt.
+- The In-Service Debt Notification Letter generated inside DTMS is the only acceptable form of notification. A locally drafted letter does not satisfy the requirement.
+- Mail the letter the same day it is certified. The due date keys to the certification date, so a letter held for a day burns a day of the member's window.
+- No payroll offset runs until the member has had at least 30 days to exercise due process.
+- Report the checkage with the delayed checkage transaction codes at FPM Vol 1 paragraph 120204.
+- The commanding officer confirms the member understands their rights and coordinates with the disbursing office for a member electing to exercise any of them.
+
+Reserve delayed checkage follows the same instrument. A checkage over 50 dollars
+suspends for 75 days, the member receives an In-Service Debt Notification Letter,
+and the LES remarks carry the suspension notice per FPM Vol 1 paragraph 200101.
+
 ## Systems of record and forms
 
 ### Systems
 
 - MCTFS. Holds the debt entry and the salary offset transaction.
+- DTMS. Generates and certifies the In-Service Debt Notification Letter.
 - DFAS Indianapolis. Owns the demand letter issuance, due process tracking, and Treasury referral.
 - UD-MIPS. Cuts the salary offset transaction.
 - Treasury Offset Program (TOP). Receives the Treasury referral for delinquent debt.
@@ -74,6 +93,7 @@ DoDFMR Vol 16 Chapter 2 is the framework for every DoD debt collection action. M
 
 ### Forms
 
+- In-Service Debt Notification Letter. The Marine Corps instrument for in-service pay debt, generated and certified inside DTMS per FPM Vol 1 paragraph 120202.
 - Initial Demand Letter. The debtor due process notification per Vol 16 Ch 2.
 - Final Demand Letter. The second notification before Treasury referral.
 - Salary Offset Authorization. The internal authorization for the 15 percent salary offset.
@@ -83,6 +103,8 @@ DoDFMR Vol 16 Chapter 2 is the framework for every DoD debt collection action. M
 ## Common pitfalls
 
 - Demand letter missing due process language. The salary offset is procedurally defective. Include every Vol 16 Ch 2 required element in the demand letter.
+- Locally drafted letter used for in-service pay debt. The notification does not count and the offset rests on nothing. Generate the In-Service Debt Notification Letter inside DTMS per FPM Vol 1<Citation source="FPM Vol 1" /> paragraph 120202.
+- Certified notification letter held before mailing. The due date runs from the certification date, so every day held shortens the member's window. Mail on the day of certification.
 - 30-day window not tracked. Salary offset starts late and interest accrues. Calendar the 30-day window at the moment of demand letter delivery.
 - Salary offset exceeds 15 percent of disposable pay. The Marine disputes and the offset rolls back. Apply the 15 percent cap per 5 USC 5514 and DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 2.
 - Administrative wage garnishment without notice. The garnishment is procedurally defective. Issue the 30-day notice per 31 USC 3720D before the garnishment routes to the employer.

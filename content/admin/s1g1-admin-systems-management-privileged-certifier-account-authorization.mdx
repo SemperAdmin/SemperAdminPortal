@@ -3,7 +3,7 @@ title: "Privileged Certifier Account Authorization - S-1 Procedural Page"
 slug: "privileged-certifier-account-authorization"
 summary: "Authorize MCTFS certifiers and UD-MIPS Certifier roles through NIS approver groups, with privileged access agreement, training, and monthly audit."
 roles: ["admin", "leader", "commander"]
-lastVerified: "2026-06-18"
+lastVerified: "2026-09-14"
 unitType: "s1-g1"
 topic: "admin-systems-management"
 function: "GENA"
@@ -15,6 +15,7 @@ billets: ["s-1-officer", "s-1-chief", "g-1-officer", "ipac-clerk"]
 gradesPerforming: ["SSgt", "GySgt"]
 sustainmentInterval: "12 months"
 references:
+  - "PAA 02-26 Transition of MCTFS Access Requests from AutoSAAR to DoD E-ICAM"
   - "MCO 5239.2B Marine Corps Cybersecurity Program"
   - "MCO 5000.14D Marine Corps Administrative Procedures"
   - "DOD 8500.01E Cybersecurity"
@@ -27,7 +28,7 @@ performanceSteps:
   - "Validate the candidate's grade and date of rank against the certifier threshold"
   - "Confirm completion of certifier-specific training"
   - "Sign the privileged access agreement and draw the NCPASS token"
-  - "Submit the MCTFS certifier SAAR through AutoSAAR to MISSA"
+  - "Submit the MCTFS certifier role request through DoD E-ICAM"
   - "Activate the certifier account"
   - "Test certifier function on a sample diary line"
   - "Document authorization in a Page 11 entry"
@@ -47,7 +48,7 @@ source:
 
 The S-1 officer (0102) signs every privileged certifier authorization. The S-1 chief (0111 SSgt or higher) supervises certifier training and audits the certifier list monthly. The unit security manager validates the certifier's privileged access agreement against the cybersecurity baseline. The IPAC certifier coordinator runs parallel authorization for installation-tied certifier roles.
 
-Source documents flow from grade and date-of-rank verification, certifier-specific training certificates, signed privileged access agreements, and the unit certifier roster. The MCTFS certifier SAAR routes through AutoSAAR to MISSA for validation, then TSO Mainframe Security provisions the role. UD-MIPS Certifier roles route through Naval Identity Services (NIS) Information Owner approver groups. Outputs include the activation confirmation, the certifier roster entry, the Page 11 documenting authorization, and the OMPF Field Folder systems tab entry.
+Source documents flow from grade and date-of-rank verification, certifier-specific training certificates, signed privileged access agreements, and the unit certifier roster. The MCTFS certifier role request routes through DoD E-ICAM effective 21 September 2026 per PAA 02-26<Citation source="PAA 02-26" />. Upload the privileged user agreement, appointment letter, and authorization letter with the request, since E-ICAM blocks attachments at every later stage. UD-MIPS Certifier roles route through Naval Identity Services (NIS) Information Owner approver groups. Outputs include the activation confirmation, the certifier roster entry, the Page 11 documenting authorization, and the OMPF Field Folder systems tab entry.
 
 MCAAT inspects the certifier roster against the privileged access agreement file, the monthly audit signature, and the diary certification log. A certifier signing diary lines without a current privileged access agreement triggers a finding under MCO 5239.2B<Citation source="MCO 5239.2B" />. Authorize before activate, audit monthly.
 
@@ -63,19 +64,23 @@ MCAAT inspects the certifier roster against the privileged access agreement file
 
 ## Processing workflow
 
+<Callout variant="warning" title="Certifier roles move to E-ICAM, privileged mainframe accounts do not">
+PAA 02-26<Citation source="PAA 02-26" /> paragraph 6 draws a hard line. The E-ICAM end-user workflow carries MCTFS certifier role requests from 21 September 2026. It does not replace the appointment or establishment process for privileged TASO, Limited Security Control Account, Zone Control Accessor ID, Division Control Accessor ID, or Department Control Accessor ID accounts. Those stay under Marine Corps Cyberspace Operations Group procedures until superseding guidance publishes. Commanders and directors keep responsibility for appointing TASOs and validating the organizational requirement for privileged mainframe security access.
+</Callout>
+
 <Callout variant="info" title="Two certifier paths">
-The MCTFS certifier role routes through AutoSAAR to MISSA, then TSO Mainframe Security provisions it. UD-MIPS Certifier roles route through Naval Identity Services (NIS) Information Owner approver groups. For UD-MIPS the approvers are the Certifier Commander (COM) and the Certifier Account Provisioner (IPAC Director or IPAC Deputy). For DTMS the approvers are the CO, the Disbursing Officer, or the IPAC Director.
+The MCTFS certifier role routes through DoD E-ICAM, where the supervisor, security manager, Information Owner, and Information System Security Manager approve in sequence before provisioning. Roles requiring a DD Form 577 add a 577 approver step. UD-MIPS Certifier roles route through Naval Identity Services (NIS) Information Owner approver groups. For UD-MIPS the approvers are the Certifier Commander (COM) and the Certifier Account Provisioner (IPAC Director or IPAC Deputy). For DTMS the approvers are the CO, the Disbursing Officer, or the IPAC Director.
 </Callout>
 
 1. Validate grade and date of rank. Confirm the candidate holds SSgt or higher with sufficient DoR per the local certifier policy and MCO 5239.2B<Citation source="MCO 5239.2B" /> Chapter 4. The S-1 chief validates.
 2. Confirm certifier-specific training. Verify completion of MCTFS certifier training, UD-MIPS certifier training, and current annual cyber awareness training per DOD 8500.01E<Citation source="DOD 8500.01E" />.
 3. Sign the privileged access agreement. The candidate signs the privileged access agreement acknowledging certifier responsibilities. The unit security manager countersigns per MCO 5239.2B<Citation source="MCO 5239.2B" />. IT Level I privileged users also draw an NCPASS token for multifactor authentication, held with the agreement by the ISSM or ISSO per MCTFS FoS Access Policy and Procedures 8.0<Citation source="MCTFS FoS Access Policy and Procedures 8.0" />.
-4. Submit the MCTFS certifier SAAR. Route the certifier SAAR through AutoSAAR to MISSA with the privileged access agreement on file. Route UD-MIPS Certifier role requests through NIS to the Information Owner approver group.
-5. Activate the certifier account. MISSA validates the MCTFS certifier SAAR and TSO provisions the role. NIS approves the UD-MIPS Certifier role. Confirm activation per system.
+4. Submit the MCTFS certifier role request. Route the request through DoD E-ICAM with the privileged user agreement, appointment letter, and authorization letter attached as PDFs. Route UD-MIPS Certifier role requests through NIS to the Information Owner approver group.
+5. Activate the certifier account. The E-ICAM approval chain validates and releases the MCTFS certifier role. NIS approves the UD-MIPS Certifier role. Confirm activation per system.
 6. Test certifier function. Submit a sample diary line and certify it in a training environment when available. Validate the certified line posts correctly per MCTFSPRIUM<Citation source="MCTFSPRIUM" />.
 7. Document authorization. Cut a Page 11 entry recording certifier authorization, training completion, and privileged access agreement date per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6.
 8. Audit the certifier list monthly. Pull the diary certification log and reconcile against the certifier roster. The S-1 chief signs the audit per MCO 5239.2B<Citation source="MCO 5239.2B" />.
-9. Reauthorize annually. Run certifier-specific training renewal and refresh the privileged access agreement at the annual cycle.
+9. Reauthorize on the E-ICAM clock. Privileged roles recertify every 90 days against the supervisor, and the privileged user agreement, appointment letter, and authorization letter run an annual clock. The supervisor holds 10 days to act on a campaign before it escalates. An unanswered campaign revokes the role. Run certifier-specific training renewal at the annual cycle.
 10. Suspend on misconduct. The S-1 officer suspends certifier access on any pending investigation affecting record integrity per MCO P1070.12K<Citation source="MCO P1070.12K" />.
 
 ## NIS approver groups and proxy
@@ -91,14 +96,14 @@ NIS ties Information Owner approver group membership to specific platform permis
 
 ### Systems
 
-- MCTFS. Holds the certifier role and certified diary lines. Certifier access submits through AutoSAAR to MISSA, provisioned by TSO.
+- MCTFS. Holds the certifier role and certified diary lines. Certifier access submits through DoD E-ICAM effective 21 September 2026.
 - UD-MIPS. Cuts and certifies diary lines requiring certifier signature. Certifier roles route through NIS.
-- AutoSAAR. Carries the MCTFS certifier SAAR to MISSA.
+- DoD E-ICAM. Carries the MCTFS certifier role request through the supervisor, security manager, Information Owner, and Information System Security Manager chain.
 - Diary certification log. Local log of certified lines per certifier.
 
 ### Forms
 
-- DD Form 2875 (SAAR). Submission for the MCTFS certifier role through AutoSAAR.
+- Privileged User Agreement, Appointment Letter, and Authorization Letter. Uploaded as PDFs with the E-ICAM request. Each runs an annual recertification clock.
 - Privileged Access Agreement. Required for every certifier.
 - NCPASS Token. Required for IT Level I privileged users, held with the agreement by the ISSM or ISSO.
 - MCTFS Certifier Training Certificate. Required for activation.
@@ -124,11 +129,12 @@ NIS ties Information Owner approver group membership to specific platform permis
 
 ## Authority
 
-This sub-page sits under MCTFS FoS Access Policy and Procedures 8.0<Citation source="MCTFS FoS Access Policy and Procedures 8.0" />, which sets the AutoSAAR process, privileged access controls, and the NCPASS token requirement. MCO 5239.2B<Citation source="MCO 5239.2B" /> Marine Corps Cybersecurity Program sets the privileged access agreement requirement for certifier roles. MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6 establishes support-office roles. DOD 8500.01E<Citation source="DOD 8500.01E" /> Cybersecurity sets DoD-level privileged access controls. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 covers administrator role assignment and removal. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> defines certifier function within UD-MIPS diary submission.
+PAA 02-26<Citation source="PAA 02-26" /> moves the MCTFS certifier role request to DoD E-ICAM from 21 September 2026 and, at paragraph 6, leaves privileged TASO and mainframe security control accounts under Marine Corps Cyberspace Operations Group procedures. This sub-page sits under MCTFS FoS Access Policy and Procedures 8.0<Citation source="MCTFS FoS Access Policy and Procedures 8.0" />, which sets privileged access controls and the NCPASS token requirement. MCO 5239.2B<Citation source="MCO 5239.2B" /> Marine Corps Cybersecurity Program sets the privileged access agreement requirement for certifier roles. MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 6 establishes support-office roles. DOD 8500.01E<Citation source="DOD 8500.01E" /> Cybersecurity sets DoD-level privileged access controls. NAVMC 3500.3E<Citation source="NAVMC 3500.3E" /> T-R event 0102-GENA-1015 covers administrator role assignment and removal. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> defines certifier function within UD-MIPS diary submission.
 
 ## Related references
 
-- MCTFS FoS Access Policy and Procedures 8.0. AutoSAAR process, levels of privilege, and NCPASS token requirement.
+- PAA 02-26. Moves the certifier role request to DoD E-ICAM and preserves the MCCOG path for privileged mainframe accounts.
+- MCTFS FoS Access Policy and Procedures 8.0. Levels of privilege and the NCPASS token requirement.
 - MCO 5239.2B Marine Corps Cybersecurity Program. Privileged access agreement requirement.
 - MCO 5000.14D Marine Corps Administrative Procedures. MISSA and support-office roles.
 - DOD 8500.01E Cybersecurity. DoD-level privileged access controls.

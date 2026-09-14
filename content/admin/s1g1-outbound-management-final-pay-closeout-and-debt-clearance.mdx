@@ -15,6 +15,7 @@ billets: ["s-1-officer", "s-1-chief", "disbursing-technician", "apc", "ipac-outb
 gradesPerforming: ["SSgt", "GySgt", "MSgt"]
 sustainmentInterval: "12 months"
 references:
+  - "FPM Vol 1 Chapter 9 paragraph 090105 (Out Of Service Debt Collection)"
   - "DoDFMR Vol 7A Chapter 32 (Advance Pay)"
   - "DoDFMR Vol 7A Chapter 35 (Separation Payments)"
   - "DoDFMR Vol 16 DoD Debt Management"
@@ -71,15 +72,35 @@ Per DoDFMR Vol 7A Chapter 32, Advance Pay repayment runs through pay deductions 
 5. Process separation payments. Per Vol 7A Chapter 35 and MCO 1900.16<Citation source="MCO 1900.16" /> Chapter 1 Section 3 paragraphs 1301-1312, separation pay applies per characterization (Honorable, General, Other Than Honorable) and the service time.
 6. Close GTCC account on separation. Per MCO 4600.40C<Citation source="MCO 4600.40C" /> paragraph 041106, the APC closes the IBA on separation. The Marine pays any remaining balance.
 7. Close DTS profile on separation. Per MCO 4650.39A paragraph 4.b.(6)(d), the ODTA closes the DTS profile after the DMM clears travel-incurred debt.
-8. Run out-of-service debt processing. Per MCO 4650.39A Chapter 9 and DoDFMR Vol 16, uncollectible debt at separation routes to the out-of-service debt process. The unit commander signs the package.
+8. Run out-of-service debt processing. Per MCO 4650.39A Chapter 9 and DoDFMR Vol 16, uncollectible debt at separation routes to the out-of-service debt process. The unit commander signs the package. For Marine Corps pay debt the disbursing office issues the Out-of-Service Debt Notification Letter under the rules below.
 9. Document final pay closeout. Per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6, cut a Page 11 documenting the closeout.
 10. Brief the Marine. The disbursing technician briefs the Marine on post-separation pay channels (final LES delivery, separation pay timing, VA disability pay if applicable).
+
+## Out-of-service pay debt and the Debt Notification Letter
+
+FPM Vol 1<Citation source="FPM Vol 1" /> paragraph 090105 governs money due the
+government left uncollected at the end of current contract or during final pay.
+The travel debt path under MCO 4650.39A runs alongside it, not instead of it.
+Non-fraudulent recruit separations settle under paragraph 090101 instead.
+
+- The disbursing office coordinates with travel first and applies any available funds from the final travel settlement. Collection is attempted against the settlement for any debt over one dollar.
+- A Debt Notification Letter issues only for debt over 225 dollars. Under the threshold the debt still exists and still collects, with no letter.
+- The debt counts as verified once every adjustment to the pay account has cycled and shows on the production LES with a negative carried forward balance. A future LES does not verify a debt. Documented evidence of a pending adjustment is the exception.
+- Mail the letter within 5 working days following the production LES showing the debt, and mail on the day of certification, because the due date keys to the certification date.
+- Report transaction code 617/000 for every debt regardless of amount, except for Marines transferring to SMCR or IMA. Those debts collect from the reserve pay account instead.
+- Once 617/000 posts to the production LES, close the NAVMC 11060 and retire it to history in DTMS.
+
+Reserve out of balance records follow the same instrument at the same threshold
+per FPM Vol 1 paragraph 210105. Debts of 224.99 dollars or less clear with
+617/000 and no letter. Debts of 225 dollars or more attach an Out-of-Service Debt
+Notification Letter to the out of balance document.
 
 ## Systems of record and forms
 
 ### Systems
 
 - Marine Corps Total Force System (MCTFS). Holds pay records.
+- DTMS. Generates and certifies the Out-of-Service Debt Notification Letter and holds the NAVMC 11060.
 - DFAS. Processes final pay and debt.
 - DTS Debt Management Report. Per MCO 4650.39A Chapter 6 paragraph 6.
 - GTCC vendor Electronic Access System (EAS). Per MCO 4600.40C.
@@ -94,6 +115,8 @@ Per DoDFMR Vol 7A Chapter 32, Advance Pay repayment runs through pay deductions 
 - GTCC Account Closure Memorandum. Per MCO 4600.40C paragraph 041106.
 - DTS Profile Closure Memorandum. Per MCO 4650.39A paragraph 4.b.(6)(d).
 - Out-of-Service Debt Package. Per DoDFMR Vol 16.
+- Out-of-Service Debt Notification Letter. Issued by the disbursing office for pay debt over 225 dollars per FPM Vol 1 paragraph 090105.
+- NAVMC 11060. Closed and retired to history in DTMS once transaction code 617/000 posts.
 - Separation Pay Authorization. Per Vol 7A Chapter 35 and MCO 1900.16 Appendix K.
 - NAVMC 118 (11) Administrative Remarks. Page 11 per MCO P1070.12K paragraph 4006.
 

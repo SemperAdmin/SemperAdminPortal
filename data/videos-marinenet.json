@@ -395,7 +395,7 @@
   {
     "slug": "autosaar-submission",
     "title": "AutoSAAR Submission",
-    "summary": "Training on AutoSAAR Submission",
+    "summary": "Legacy AutoSAAR submission walkthrough. AutoSAAR retired for new MCTFS access requests after 17 September 2026 per PAA 02-26. Use DoD E-ICAM instead.",
     "roles": [
       "leader"
     ],
@@ -407,7 +407,7 @@
       "publisher": "MCeLE",
       "url": ""
     },
-    "lastVerified": "2025-06-09"
+    "lastVerified": "2026-09-14"
   },
   {
     "slug": "autosum-and-autofill",
@@ -1387,7 +1387,7 @@
   {
     "slug": "creating-a-autosaar-account",
     "title": "Creating a AutoSAAR Account",
-    "summary": "Creating a AutoSAAR Account.",
+    "summary": "Legacy AutoSAAR account creation walkthrough. Superseded by DoD E-ICAM on 21 September 2026 per PAA 02-26. Retained for historical reference.",
     "roles": [
       "admin",
       "leader"
@@ -1400,7 +1400,7 @@
       "publisher": "MCeLE",
       "url": ""
     },
-    "lastVerified": "2026-06-02"
+    "lastVerified": "2026-09-14"
   },
   {
     "slug": "creating-a-miap-account",
@@ -3164,7 +3164,7 @@
   {
     "slug": "manage-users-ia",
     "title": "Manage users IA",
-    "summary": "Manage users IA.",
+    "summary": "Managing user Information Assurance training dates. The IA training date carries forward into DoD E-ICAM, where the supervisor validates it at approval and recertification.",
     "roles": [
       "admin",
       "leader"
@@ -3177,7 +3177,7 @@
       "publisher": "MCeLE",
       "url": ""
     },
-    "lastVerified": "2026-06-02"
+    "lastVerified": "2026-09-14"
   },
   {
     "slug": "mandatory-remarks-reason-codes-and-the-commander-s-report",
