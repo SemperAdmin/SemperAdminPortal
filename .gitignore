@@ -53,3 +53,8 @@ next-env.d.ts
 # Python bytecode from the citation and video scripts
 __pycache__/
 *.pyc
+
+# Citation stubs awaiting SME review. citations-import.py writes them and the
+# manifest locally. Approved entries move into content/citations/ and commit
+# from there. See CLAUDE.md section 4.5.
+content/citations/_stubs/
