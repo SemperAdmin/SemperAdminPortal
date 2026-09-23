@@ -124,3 +124,8 @@ Open after this pass.
 - MCO 1700.31A (2 Mar 2026) cancels MCO 1700.31 and incorporates MARADMIN 632/19. The 1700.31 FAC revised Feb 2024 still cites the cancelled order and the MARADMIN's 45-day UTC training figure. The current order sets 60 days. Guide applies the current order and flags the delta.
 - Optional `revisedDate` schema field to carry the DOCX revision line separately from the check date.
 - 5110.1 codes 0101 to 0192 sit under one header cell naming Administration, Finance, Operations, and Quality Management. The portal shows that joined label because the source does not delineate which codes belong to which.
+
+
+## Erratum, 23 September 2026
+
+The 5210 finding above is wrong. The source DOCX never dropped MARADMIN 200/25 from item 0501. The References line wraps across paragraphs, and the parser read only the first paragraph, so the tail landed in the question text and the diff saw a dropped reference. The same defect cut the reference list on 9 of 15 items in 5210 and on 4 items across 3040, 5040, and 1050. A full re-pull of all 22 checklists on 23 September confirmed the rest. The parser now keeps every paragraph of a References block. See content/updates/records-checklist-references-restored.mdx.

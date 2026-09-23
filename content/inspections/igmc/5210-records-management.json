@@ -11,7 +11,7 @@
   "sponsor": "AR (ARD)",
   "applicabilityLevel": "All Marine Corps commands and activities. Records Management (RM) is the responsibility of all Marines in uniform as well as civilian Marines and contractors. In keeping with the Headquarters Marine Corps 3-Phased Approach to electronic records management (ERM), questions within each of the subsections of this checklist lead to compliance in the RM program",
   "effectiveDate": "2025-09-23",
-  "lastVerified": "2026-09-11",
+  "lastVerified": "2026-09-23",
   "source": {
     "title": "IGMC Functional Area Checklist - Records Management",
     "publisher": "Inspector General of the Marine Corps"
@@ -24,10 +24,10 @@
       "items": [
         {
           "code": "0101",
-          "question": "Has the command appointed a Command Designated Records Manager (CDRM) in CROSS? Note: Appointed CDRMs must be the rank/grade of E-6/GS-09 or higher. If appointment letters are not generated in CROSS, hardcopy letters can be scanned and uploaded to the ‘Documents’ and ‘Miscellaneous’ tabs within CROSS. dtd 29 Aug 25, par 3b(1)(a)1",
+          "question": "Has the command appointed a Command Designated Records Manager (CDRM) in CROSS? Note: Appointed CDRMs must be the rank/grade of E-6/GS-09 or higher. If appointment letters are not generated in CROSS, hardcopy letters can be scanned and uploaded to the ‘Documents’ and ‘Miscellaneous’ tabs within CROSS.",
           "references": [
             "MCO 5210.11F, par 4b(5)(a) and par 4c(2)(c)",
-            "MCBul 5210"
+            "MCBul 5210 dtd 29 Aug 25, par 3b(1)(a)1"
           ],
           "evidenceHint": null
         },
@@ -41,10 +41,12 @@
         },
         {
           "code": "0103",
-          "question": "Does the CDRM annually monitor Records Management training for the command? Are individual RM training certificates for all CDRM(s) and Staff Section Records Managers (SSRM) uploaded in CROSS? Note: Training events are available at any of the following online locations: 1. Waypoints at: https://don.csod.com. Course Title: ‘Records Management in the DON: Everyone’s Responsibility’ 2. CROSS at: https://usmc.sharepoint-mil.us/sites/USMC_CROSS. Prior to clicking the blue tile to enter CROSS, in the ‘Search’ block at the top of the page, type ‘USMC RM-Everyone’s Responsibility Training’. 3. HQMC ARD RM SharePoint homepage at: https://usmc.sharepoint-mil.us/sites/AR_RecordsManagement. Note: Proof of training is required to be uploaded in CROSS under the ‘Documents’ tab, ‘Training Documents’. For command/block proof of training, CDRMs may upload a signed organizational training roster in CROSS, or a Marine Corps Training Information Management System occasion (MCTIMS) as proof of completion. Note: CDRM and SSRM training certificates are to be uploaded as separate records within the ‘Documents’ and ‘Training Documents’ tabs. par 5.1, encl(4), par 2b(2) and par 4j; MCO 5210.11F, chap 8, par 5; MCBul 5210 dtd 29 Aug 25, 3b(1)(a)5",
+          "question": "Does the CDRM annually monitor Records Management training for the command? Are individual RM training certificates for all CDRM(s) and Staff Section Records Managers (SSRM) uploaded in CROSS? Note: Training events are available at any of the following online locations: 1. Waypoints at: https://don.csod.com. Course Title: ‘Records Management in the DON: Everyone’s Responsibility’ 2. CROSS at: https://usmc.sharepoint-mil.us/sites/USMC_CROSS. Prior to clicking the blue tile to enter CROSS, in the ‘Search’ block at the top of the page, type ‘USMC RM-Everyone’s Responsibility Training’. 3. HQMC ARD RM SharePoint homepage at: https://usmc.sharepoint-mil.us/sites/AR_RecordsManagement. Note: Proof of training is required to be uploaded in CROSS under the ‘Documents’ tab, ‘Training Documents’. For command/block proof of training, CDRMs may upload a signed organizational training roster in CROSS, or a Marine Corps Training Information Management System occasion (MCTIMS) as proof of completion. Note: CDRM and SSRM training certificates are to be uploaded as separate records within the ‘Documents’ and ‘Training Documents’ tabs.",
           "references": [
             "NARA Bulletin 2017-01, par 3A",
-            "SECNAV Instruction 5210.8F,"
+            "SECNAV Instruction 5210.8F, par 5.1, encl(4), par 2b(2) and par 4j",
+            "MCO 5210.11F, chap 8, par 5",
+            "MCBul 5210 dtd 29 Aug 25, 3b(1)(a)5"
           ],
           "evidenceHint": null
         },
@@ -58,9 +60,10 @@
         },
         {
           "code": "0105",
-          "question": "Has the command identified a file plan in CROSS, and do the identified record schedules correspond with the records maintained in the command’s SharePoint Online (SPO) Records Library? UPDATE: It is now the responsibility of the CDRM to account for all command records within one file plan versus multiple command file plans. All separate file plans will “roll into” a master command file plan within CROSS. Commands are required to use the new disposition schedule metadata or the available labeling options within Microsoft SPO. Note: If the command has approval to manage paper records, they must be identified on the file plan in CROSS. Locations of the paper records will be annotated in the Excel spreadsheet version. See Question 0201 below. section 3.2.4; SECNAV M-5210.1 Part III, par 2b",
+          "question": "Has the command identified a file plan in CROSS, and do the identified record schedules correspond with the records maintained in the command’s SharePoint Online (SPO) Records Library? UPDATE: It is now the responsibility of the CDRM to account for all command records within one file plan versus multiple command file plans. All separate file plans will “roll into” a master command file plan within CROSS. Commands are required to use the new disposition schedule metadata or the available labeling options within Microsoft SPO. Note: If the command has approval to manage paper records, they must be identified on the file plan in CROSS. Locations of the paper records will be annotated in the Excel spreadsheet version. See Question 0201 below.",
           "references": [
-            "MCO 5210.11F, chap 3, par 3 and Figure 303; ARD’s RM SOP,"
+            "MCO 5210.11F, chap 3, par 3 and Figure 303; ARD’s RM SOP, section 3.2.4",
+            "SECNAV M-5210.1 Part III, par 2b"
           ],
           "evidenceHint": null
         },
@@ -81,9 +84,9 @@
       "items": [
         {
           "code": "0201",
-          "question": "SKIP TO 0202 IF COMMAND HAS NO PAPER RECORDS ON PREMISE Does the command have an approved and current NAVMC 10030/1, ‘Records Management Paper Waiver Request’? Note: All NAVMC 10030/1s in the Marine Corps have unique expiration dates that are determined by the Records Officer of the Marine Corps. Commands with an approved NAVMC 10030/1 have until the form’s expiration date to transition the identified paper records to an electronic format. Failure to do so within the approved timeframe will result in non- compliance. Only under extremely rare circumstances will a NAVMC 10030/1 be approved or renewed. Note: If you believe the command holds records that meet the criteria to remain in paper format, download the NAVMC 10030/1 from Navy Forms online at: https://forms.documentservices.dla.mil/order. Complete the form and send via email to: HQMCREC-MGR@usmc.mil and SMB_HQMC_RMOUTREACH@usmc.mil. ARD will review the waiver request and approve if it is determined the records have met the criteria. ARD retains a list of approved waivers; the list is audited annually to evaluate and extend or rescind waivers as necessary. Note: Paper records that are identified as exceptions on an approved NAVMC 11030/1 must be annotated on the command File Plan (Excel version). Add a ‘Notes’ section (column F) to describe the physical locations of paper records (i.e., Bldg. 123, Room X, front file cabinet). and 3-3",
+          "question": "SKIP TO 0202 IF COMMAND HAS NO PAPER RECORDS ON PREMISE Does the command have an approved and current NAVMC 10030/1, ‘Records Management Paper Waiver Request’? Note: All NAVMC 10030/1s in the Marine Corps have unique expiration dates that are determined by the Records Officer of the Marine Corps. Commands with an approved NAVMC 10030/1 have until the form’s expiration date to transition the identified paper records to an electronic format. Failure to do so within the approved timeframe will result in non- compliance. Only under extremely rare circumstances will a NAVMC 10030/1 be approved or renewed. Note: If you believe the command holds records that meet the criteria to remain in paper format, download the NAVMC 10030/1 from Navy Forms online at: https://forms.documentservices.dla.mil/order. Complete the form and send via email to: HQMCREC-MGR@usmc.mil and SMB_HQMC_RMOUTREACH@usmc.mil. ARD will review the waiver request and approve if it is determined the records have met the criteria. ARD retains a list of approved waivers; the list is audited annually to evaluate and extend or rescind waivers as necessary. Note: Paper records that are identified as exceptions on an approved NAVMC 11030/1 must be annotated on the command File Plan (Excel version). Add a ‘Notes’ section (column F) to describe the physical locations of paper records (i.e., Bldg. 123, Room X, front file cabinet).",
           "references": [
-            "MCO 5210.11F, Chap 3 par 2a, par 3c, par 5a, Figures 3-1, 3-2,"
+            "MCO 5210.11F, Chap 3 par 2a, par 3c, par 5a, Figures 3-1, 3-2, and 3-3"
           ],
           "evidenceHint": null
         },
@@ -104,9 +107,9 @@
       "items": [
         {
           "code": "0301",
-          "question": "Has the command developed and maintained an Essential Records (formerly Vital Records) plan? Is it included as part of the command RM SOP? Is it integrated into the command’s Continuity of Operations Plan (COOP)? or Does it stand alone? Note: It is recommended that commands adopt their higher headquarters’ Continuity of Operations Plans if appropriate. Commands can include their Essential Records and Emergency Action Plans within the adopted COOP. Note: All command sections, directorates, and programs must identify their respective essential records and add that information into the command’s master Essential Records inventory. Note: Essential Records inventory must be uploaded to CROSS. Note: Templates and samples are available in CROSS. Chap 7; ARD RM SOP, section 5.1",
+          "question": "Has the command developed and maintained an Essential Records (formerly Vital Records) plan? Is it included as part of the command RM SOP? Is it integrated into the command’s Continuity of Operations Plan (COOP)? or Does it stand alone? Note: It is recommended that commands adopt their higher headquarters’ Continuity of Operations Plans if appropriate. Commands can include their Essential Records and Emergency Action Plans within the adopted COOP. Note: All command sections, directorates, and programs must identify their respective essential records and add that information into the command’s master Essential Records inventory. Note: Essential Records inventory must be uploaded to CROSS. Note: Templates and samples are available in CROSS.",
           "references": [
-            "MCO 5210.11F, par 4a(1)(b)6, par 4b(5)(b-c), par 4c(2)(q),"
+            "MCO 5210.11F, par 4a(1)(b)6, par 4b(5)(b-c), par 4c(2)(q), Chap 7; ARD RM SOP, section 5.1"
           ],
           "evidenceHint": null
         },
@@ -135,28 +138,32 @@
       "items": [
         {
           "code": "0401",
-          "question": "Does the command have a Capstone official? If yes, is General Records Schedule 6.1 part of the command file plan? Note: Upload Capstone official information in CROSS. If no, SKIP TO SUBSECTION 5 below. 3b(1)(a)3.a.",
+          "question": "Does the command have a Capstone official? If yes, is General Records Schedule 6.1 part of the command file plan? Note: Upload Capstone official information in CROSS. If no, SKIP TO SUBSECTION 5 below.",
           "references": [
             "MCO 5210.11F, par 4(b)(12)",
-            "MCBul 5210 dtd 29 Aug 2025,"
+            "MCBul 5210 dtd 29 Aug 2025, 3b(1)(a)3.a"
           ],
           "evidenceHint": null
         },
         {
           "code": "0402",
-          "question": "Has the command responded to the quarterly Capstone reconciliation requirement via the Marine Corps tasker system (ETMS2)? Note: The command task manager must notify the CDRM of this quarterly requirement upon receipt of task. It is an OMB requirement to maintain updates of this information. 6.g and encl(5), par 4; SECNAV-M 5210.1, Part 1, par 16.b.(e); MCO 5210.11F Chap 1, 1b(1)(a)",
+          "question": "Has the command responded to the quarterly Capstone reconciliation requirement via the Marine Corps tasker system (ETMS2)? Note: The command task manager must notify the CDRM of this quarterly requirement upon receipt of task. It is an OMB requirement to maintain updates of this information.",
           "references": [
             "OMB M-19-21, section 1.1",
-            "SECNAVINST 5210.8F, encl(4), par"
+            "SECNAVINST 5210.8F, encl(4), par 6.g and encl(5), par 4",
+            "SECNAV-M 5210.1, Part 1, par 16.b.(e)",
+            "MCO 5210.11F Chap 1, 1b(1)(a)"
           ],
           "evidenceHint": null
         },
         {
           "code": "0403",
-          "question": "Upon change of command/rotation/departure of Capstone official, did the CDRM revise the CROSS ‘Capstone’ tab to reflect changes? Note: If a change of command has occurred, the CDRM must initiate the NAVMC 10030 within 90 days and upload the signed form to CROSS. par 6.g and encl(5), par 4; SECNAV M-5210.1, Part 1, par 16.b(e); MCBul 5210 dtd 29 Aug 25, par 3b(1)(a)",
+          "question": "Upon change of command/rotation/departure of Capstone official, did the CDRM revise the CROSS ‘Capstone’ tab to reflect changes? Note: If a change of command has occurred, the CDRM must initiate the NAVMC 10030 within 90 days and upload the signed form to CROSS.",
           "references": [
             "OMB M-19-21, section 1.1",
-            "SECNAVINST 5210.8F, encl(4),"
+            "SECNAVINST 5210.8F, encl(4), par 6.g and encl(5), par 4",
+            "SECNAV M-5210.1, Part 1, par 16.b(e)",
+            "MCBul 5210 dtd 29 Aug 25, par 3b(1)(a)"
           ],
           "evidenceHint": null
         }
@@ -169,9 +176,10 @@
       "items": [
         {
           "code": "0501",
-          "question": "Has the command submitted command chronologies to the Archives Branch, Marine Corps History Division, by the deadlines provided by receipt of letters and/or emails from the Archives Branch? Command historical summary files include the following elements: Copies of lineage and honors certificates Copy of streamer entitlement Copies of past (5) years of command chronologies Master copy of command/unit insignia and corresponding documentation/correspondence List of all property, facilities, and/or commemorative sites Note: Command chronologies are due NLT 90 days after the end of the reporting period: For semiannual submissions, due dates are 30 June and 31 December. For annual submissions, due dates are NLT 31 December. Note: For information on Command Chronologies, visit the Marine Corps History Division website at: https://www.usmcu.edu/Research/History-Division/, ‘Archives Branch’. MARADMIN 200/25",
+          "question": "Has the command submitted command chronologies to the Archives Branch, Marine Corps History Division, by the deadlines provided by receipt of letters and/or emails from the Archives Branch? Command historical summary files include the following elements: Copies of lineage and honors certificates Copy of streamer entitlement Copies of past (5) years of command chronologies Master copy of command/unit insignia and corresponding documentation/correspondence List of all property, facilities, and/or commemorative sites Note: Command chronologies are due NLT 90 days after the end of the reporting period: For semiannual submissions, due dates are 30 June and 31 December. For annual submissions, due dates are NLT 31 December. Note: For information on Command Chronologies, visit the Marine Corps History Division website at: https://www.usmcu.edu/Research/History-Division/, ‘Archives Branch’.",
           "references": [
-            "MCO 5750.1H, encl(1), Chap 5; Annex 5 of App A; and"
+            "MCO 5750.1H, encl(1), Chap 5; Annex 5 of App A",
+            "MARADMIN 200/25"
           ],
           "evidenceHint": null
         }
