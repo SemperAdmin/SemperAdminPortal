@@ -299,7 +299,7 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     slug: "hostile-fire-and-imminent-danger-pay",
     label: "Hostile Fire Pay and Imminent Danger Pay (HFP/IDP)",
     shortLabel: "HFP/IDP",
-    description: "$225/month for combat zone or hostile fire area service. HFP full month for any qualifying event. IDP prorated daily.",
+    description: "HFP $450/month for any qualifying event. IDP $9.16/day up to $275/month in a designated area. Effective 1 October 2026.",
     icon: "AlertCircle",
     pageType: "leaf",
   },
