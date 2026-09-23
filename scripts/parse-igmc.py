@@ -63,6 +63,10 @@ def carry_forward(parts):
         p = p.strip().rstrip(".")
         if not p:
             continue
+        # "...; and MARADMIN 200/25" names a new document behind a conjunction.
+        bare = re.sub(r"^(and|or)\s+", "", p, flags=re.I)
+        if bare != p and is_doc_start(bare):
+            p = bare
         if out and not is_doc_start(p):
             out[-1] = out[-1] + "; " + p
         else:
@@ -336,14 +340,29 @@ def parse_item_cell(code, cell):
     refs = []
     qlines = []
     evidence = None
+    # The DOCX hard-wraps a long References line into several paragraphs.
+    # Every paragraph after the References lead belongs to the block until an
+    # Evidence or Note lead. Splitting per paragraph dropped the tail or pushed
+    # it into the question text (5210 item 0501 lost MARADMIN 200/25 this way).
+    ref_block = None
     for p in paras:
         if REFERENCE_LEAD_RE.match(p):
-            refs.extend(split_references(p))
+            if ref_block is not None:
+                refs.extend(split_references(" ".join(ref_block)))
+            ref_block = [p]
             continue
         if re.match(r"^\s*evidence\s*:", p, re.I):
             evidence = re.sub(r"^\s*evidence\s*:\s*", "", p, flags=re.I).strip()
             continue
+        if ref_block is not None and not re.match(r"^\s*note\s*:", p, re.I):
+            ref_block.append(p)
+            continue
+        if ref_block is not None:
+            refs.extend(split_references(" ".join(ref_block)))
+            ref_block = None
         qlines.append(p)
+    if ref_block is not None:
+        refs.extend(split_references(" ".join(ref_block)))
     q = re.sub(r"\s+", " ", " ".join(qlines)).strip()
     inline = re.search(r"references?\s*:\s*(.+)$", q, re.I)
     if inline and not refs:
