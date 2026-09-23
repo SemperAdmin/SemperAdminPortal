@@ -1,4 +1,8 @@
 # Cloud.gov staticfile buildpack config.
-# Copied into out/ at deploy time. The export uses trailingSlash, so every
-# route is a folder with index.html and the buildpack serves it directly.
-# Directory index listing stays off by default.
+# Assembled into out/ at build time by scripts/build-cloudgov.mjs.
+# root:public separates the web content from the nginx config dir, which
+# location_include requires. The include sets absolute_redirect off so the
+# trailing-slash directory redirect stays relative and preserves https behind
+# cloud.gov's TLS-terminating router. See cloudfoundry/staticfile-buildpack #137.
+root: public
+location_include: includes/*.conf

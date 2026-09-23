@@ -8,8 +8,11 @@
 # The single most likely failure on this path is a base-path mismatch.
 # deploy.yml builds with NEXT_PUBLIC_BASE_PATH=/SemperAdminPortal for Pages;
 # on cloud.gov the app is served at the route root, so this workflow runs
-# build:cloudgov (DEPLOY_TARGET=cloudgov, stages deploy/Staticfile) and then
-# proves it by inspecting out/index.html.
+# build:cloudgov (DEPLOY_TARGET=cloudgov) and then proves it by inspecting
+# out/public/index.html. build:cloudgov stages the bundle as out/public (the
+# site), out/nginx (config), and out/Staticfile (root: public). The nginx
+# include turns absolute_redirect off so the trailing-slash redirect keeps
+# https behind the cloud.gov TLS router.
 #
 # workflow_dispatch only, not a push trigger: a deploy to a government
 # sandbox is an explicit act, not a side effect of merging to main (that is
@@ -84,14 +87,17 @@ jobs:
 
       - name: Prove the bundle
         run: |
-          if grep -q '/SemperAdminPortal/_next/' out/index.html; then
-            echo "::error::out/index.html references /SemperAdminPortal/_next/. This is a GitHub Pages build; DEPLOY_TARGET did not reach next.config. Every asset would 404 on cloud.gov."
+          test -f out/public/index.html || { echo "::error::out/public/index.html missing; build:cloudgov did not move the export under out/public"; exit 1; }
+          if grep -q '/SemperAdminPortal/_next/' out/public/index.html; then
+            echo "::error::out/public/index.html references /SemperAdminPortal/_next/. This is a GitHub Pages build; DEPLOY_TARGET did not reach next.config. Every asset would 404 on cloud.gov."
             exit 1
           fi
-          grep -q '/_next/' out/index.html || { echo "::error::out/index.html references no /_next/ assets at all; inspect it by hand before pushing"; exit 1; }
+          grep -q '/_next/' out/public/index.html || { echo "::error::out/public/index.html references no /_next/ assets at all; inspect it by hand before pushing"; exit 1; }
           test -f out/Staticfile || { echo "::error::out/Staticfile missing; build:cloudgov did not stage it"; exit 1; }
-          test -f out/sitemap.xml || echo "::warning::out/sitemap.xml missing; postbuild may not have run"
-          test -d out/pagefind || echo "::warning::out/pagefind missing; site search will be empty"
+          grep -q '^root: public' out/Staticfile || { echo "::error::out/Staticfile does not set root: public; location_include is ignored without it"; exit 1; }
+          grep -q 'absolute_redirect off' out/nginx/conf/includes/redirect.conf || { echo "::error::out/nginx/conf/includes/redirect.conf missing or lacks absolute_redirect off; trailing-slash redirects would drop to http"; exit 1; }
+          test -f out/public/sitemap.xml || echo "::warning::out/public/sitemap.xml missing; postbuild may not have run"
+          test -d out/public/pagefind || echo "::warning::out/public/pagefind missing; site search will be empty"
 
       # Official apt repo, no third-party action: one less supply-chain hop
       # ahead of the step that hands this runner production credentials.
@@ -120,4 +126,8 @@ jobs:
           if grep -q '/SemperAdminPortal/_next/' /tmp/live.html; then echo "::error::Live page references /SemperAdminPortal/_next/; wrong base path shipped"; exit 1; fi
           code=$(curl -sS -o /dev/null -w '%{http_code}' "${APP_ROUTE}legal/terms/")
           [ "$code" = "200" ] || { echo "::error::${APP_ROUTE}legal/terms/ returned HTTP $code"; exit 1; }
+          # A route without its trailing slash redirects. The Location header
+          # has to stay relative (or https), never http, or the router drops TLS.
+          loc=$(curl -sS -o /dev/null -w '%{redirect_url}' "${APP_ROUTE}legal/terms")
+          case "$loc" in http://*) echo "::error::${APP_ROUTE}legal/terms redirects to $loc, an http downgrade"; exit 1;; esac
           curl -sSI "$APP_ROUTE" | grep -qi '^strict-transport-security:' || echo "::warning::No Strict-Transport-Security header on $APP_ROUTE"
