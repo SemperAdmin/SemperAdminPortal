@@ -1,7 +1,10 @@
 # Cloud.gov deployment manifest.
-# Serves the static export in out/ through the staticfile buildpack.
-# Build first with DEPLOY_TARGET=cloudgov so assets resolve at the host root,
-# then copy deploy/Staticfile into out/ before cf push.
+# Serves the static export through the staticfile buildpack.
+# Build with: node scripts/build-cloudgov.mjs  (or npm run build:cloudgov)
+# The script stages out/ as the deploy bundle: the exported site under out/public,
+# the nginx config under out/nginx, and out/Staticfile. root:public plus the
+# nginx include keep trailing-slash redirects relative, so https is preserved
+# behind the cloud.gov TLS router. Then run: cf push
 ---
 applications:
   - name: semper-admin-portal
