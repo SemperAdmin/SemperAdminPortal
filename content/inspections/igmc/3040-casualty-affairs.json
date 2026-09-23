@@ -11,7 +11,7 @@
   "sponsor": "M&RA (MF)",
   "applicabilityLevel": "All commands down to the battalion, squadron, and I&I level",
   "effectiveDate": "2025-05-15",
-  "lastVerified": "2026-09-11",
+  "lastVerified": "2026-09-23",
   "source": {
     "title": "IGMC Functional Area Checklist - Casualty Affairs",
     "publisher": "Inspector General of the Marine Corps"
@@ -186,18 +186,19 @@
         },
         {
           "code": "0121",
-          "question": "Is the command ensuring the generation of PCS travel orders to authorized family members of deceased Marines? par 24; PAA 1-17",
+          "question": "Is the command ensuring the generation of PCS travel orders to authorized family members of deceased Marines?",
           "references": [
             "JTR, Chap 5, sect 051104",
-            "MCO 3040.4, chap 7, sect 2,"
+            "MCO 3040.4, chap 7, sect 2, par 24; PAA 1-17"
           ],
           "evidenceHint": null
         },
         {
           "code": "0122",
-          "question": "Is the command conducting preliminary inquiries and/or command investigations, when warranted into the deaths and injuries/illnesses of Marines, as well as submitting and maintaining supplemental PCRs upon the initiation of command investigations and monthly supplemental PCRs thereafter until completion? JAGINST 5800.7F",
+          "question": "Is the command conducting preliminary inquiries and/or command investigations, when warranted into the deaths and injuries/illnesses of Marines, as well as submitting and maintaining supplemental PCRs upon the initiation of command investigations and monthly supplemental PCRs thereafter until completion?",
           "references": [
-            "MCO 3040.4, chap 2, par 4g and 5l; chap 3, sect 2, par 2b"
+            "MCO 3040.4, chap 2, par 4g and 5l; chap 3, sect 2, par 2b",
+            "JAGINST 5800.7F"
           ],
           "evidenceHint": null
         },

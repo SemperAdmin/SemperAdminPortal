@@ -128,4 +128,4 @@ Open after this pass.
 
 ## Erratum, 23 September 2026
 
-The 5210 finding above is wrong. The source DOCX never dropped MARADMIN 200/25 from item 0501. The References line wraps across paragraphs, and the parser read only the first paragraph, so the tail landed in the question text and the diff saw a dropped reference. The same defect cut the reference list on 9 of 15 items in 5210 and on at least 6 other checklists. The parser now keeps every paragraph of a References block. See content/updates/records-checklist-references-restored.mdx.
+The 5210 finding above is wrong. The source DOCX never dropped MARADMIN 200/25 from item 0501. The References line wraps across paragraphs, and the parser read only the first paragraph, so the tail landed in the question text and the diff saw a dropped reference. The same defect cut the reference list on 9 of 15 items in 5210 and on 4 items across 3040, 5040, and 1050. A full re-pull of all 22 checklists on 23 September confirmed the rest. The parser now keeps every paragraph of a References block. See content/updates/records-checklist-references-restored.mdx.

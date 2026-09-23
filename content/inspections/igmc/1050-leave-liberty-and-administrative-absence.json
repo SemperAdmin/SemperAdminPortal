@@ -11,7 +11,7 @@
   "sponsor": "M&RA (MPO)",
   "applicabilityLevel": "All O-5 and O-6 Level Commands",
   "effectiveDate": "2025-09-03",
-  "lastVerified": "2026-09-11",
+  "lastVerified": "2026-09-23",
   "source": {
     "title": "IGMC Functional Area Checklist - Leave, Liberty and Administrative Absence",
     "publisher": "Inspector General of the Marine Corps"
@@ -86,7 +86,8 @@
           "code": "0108",
           "question": "Is the command ensuring that Marines are executing their Active-Duty Parental Leave periods in increments not less than 7 days?",
           "references": [
-            "DoDI 1327.06 Sect 3.11.c.(7)(a); and MARADMIN 051/23"
+            "DoDI 1327.06 Sect 3.11.c.(7)(a)",
+            "MARADMIN 051/23"
           ],
           "evidenceHint": null
         },

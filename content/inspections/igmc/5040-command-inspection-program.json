@@ -11,7 +11,7 @@
   "sponsor": "IGMC (IGI)",
   "applicabilityLevel": "Command Inspectors General who conduct inspections under the Commanding General’s Inspection Program",
   "effectiveDate": "2023-01-13",
-  "lastVerified": "2026-09-11",
+  "lastVerified": "2026-09-23",
   "source": {
     "title": "IGMC Functional Area Checklist - Command Inspection Program",
     "publisher": "Inspector General of the Marine Corps"
@@ -158,10 +158,10 @@
         },
         {
           "code": "0305",
-          "question": "Does the IG maintain a copy of the FIR in accordance with records schedule 5040 of 6 years? (The checklists of the inspection need only to be retained for 2 years, and may be removed from the FIR thereafter) Part III, par 2.b.",
+          "question": "Does the IG maintain a copy of the FIR in accordance with records schedule 5040 of 6 years? (The checklists of the inspection need only to be retained for 2 years, and may be removed from the FIR thereafter)",
           "references": [
             "MCO 5040.6J, Chap 4, par 2.b",
-            "SECNAV M-5210.1,"
+            "SECNAV M-5210.1, Part III, par 2.b"
           ],
           "evidenceHint": null
         }
