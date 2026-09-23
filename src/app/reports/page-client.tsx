@@ -20,9 +20,8 @@ import { PageHeader } from "@/components/domain/page-header";
 import { MetaRow } from "@/components/domain/meta-row";
 import { StatusPill } from "@/components/ui/status-pill";
 import { RoleChip } from "@/components/domain/role-chip";
-import { useRoleStore } from "@/lib/store/role-store";
-import { useMounted } from "@/hooks/use-mounted";
 import type { Role } from "@/lib/roles";
+import reportsData from "@/generated/reports.json";
 import {
   REPORT_CATEGORIES,
   type ReportCategory,
@@ -306,19 +305,12 @@ function PortalCard({ r }: { r: ReportData }) {
   );
 }
 
-export default function ReportsIndex() {
-  const role = useRoleStore((s) => s.role);
-  const mounted = useMounted();
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const data = require("@/generated/reports.json") as ReportData[];
+// Every role sees every report. The roles array on each entry renders as
+// audience chips on the card and does not gate visibility.
+const ALL_REPORTS = reportsData as ReportData[];
 
-  const visible = React.useMemo(() => {
-    let list = data;
-    if (mounted && role) {
-      list = list.filter((r) => r.roles.includes(role));
-    }
-    return list;
-  }, [data, mounted, role]);
+export default function ReportsIndex() {
+  const visible = ALL_REPORTS;
 
   const videos = visible.filter((r) => r.entryType === "video");
   const portals = visible.filter((r) => r.entryType === "portal");
@@ -438,7 +430,7 @@ export default function ReportsIndex() {
       {visible.length === 0 && (
         <div className="rounded-[var(--radius-md)] border border-dashed border-[var(--color-border-strong)] bg-[var(--color-surface-2)] p-8 text-center">
           <p className="text-sm text-[var(--color-muted-foreground)]">
-            No reports match your current role.
+            No reports published yet.
           </p>
         </div>
       )}
