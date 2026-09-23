@@ -33,10 +33,29 @@ export interface ContentEntry<T> {
   body: string;
 }
 
+/**
+ * Per-process cache of parsed collections.
+ *
+ * Every page needing a collection calls its loader, and a detail route calls
+ * it twice, once in generateMetadata and once in the component. Without a
+ * cache, a static export re-reads, re-parses, and re-validates every MDX file
+ * in a collection once per page rendered from it.
+ *
+ * Content stays fixed for the life of a build, so caching is safe there.
+ * Disabled outside production so the dev server keeps picking up edits.
+ * Callers treat the returned arrays as read-only.
+ */
+const CACHE = new Map<string, unknown>();
+const CACHE_ENABLED = process.env.NODE_ENV === "production";
+
 function loadDir<T>(
   collection: string,
   schema: z.ZodSchema<T>
 ): ContentEntry<T>[] {
+  if (CACHE_ENABLED) {
+    const hit = CACHE.get(collection);
+    if (hit) return hit as ContentEntry<T>[];
+  }
   const dir = path.join(CONTENT_ROOT, collection);
   if (!fs.existsSync(dir)) return [];
   // Filter to .mdx files only and exclude hidden/dot files (e.g., .trash-* leftovers
@@ -59,6 +78,7 @@ function loadDir<T>(
     }
     entries.push({ frontmatter: fmResult.data, body: parsed.content });
   }
+  if (CACHE_ENABLED) CACHE.set(collection, entries);
   return entries;
 }
 
