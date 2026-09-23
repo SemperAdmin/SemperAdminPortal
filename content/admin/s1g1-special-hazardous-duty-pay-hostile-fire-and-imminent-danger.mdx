@@ -3,7 +3,7 @@ title: "Hostile Fire and Imminent Danger Pay - S-1 Procedural Page"
 slug: "hostile-fire-and-imminent-danger"
 summary: "Process Hostile Fire Pay (HFP) and Imminent Danger Pay (IDP) for Marines in designated areas per DoDFMR Vol 7A Chapter 10 with Combat Zone Tax Exclusion cross-reference at Chapter 44 paragraph 2.3 and 37 U.S.C. 351 statutory base."
 roles: ["admin", "leader", "commander"]
-lastVerified: "2026-05-11"
+lastVerified: "2026-09-23"
 unitType: "s1-g1"
 topic: "special-hazardous-duty-pay"
 function: "PERA"
@@ -23,11 +23,13 @@ references:
   - "DoD designated HFP/IDP areas list"
   - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
   - "PAA 09-11 - Imminent Danger Pay and HDP-L for Libya, Tunisia, and Mediterranean Sea Designations Effective 19 March 2011"
+  - "MARADMIN 433/26 - Advance Notification of Forthcoming Increases to Monthly Amounts of Hostile Fire Pay and Imminent Danger Pay"
 performanceSteps:
   - "Receive deployment notification or hostile fire certification"
   - "Confirm the deployed location appears on the DoD HFP/IDP area list"
   - "Determine HFP versus IDP eligibility per Chapter 10"
   - "Build the KSD packet with deployment orders"
+  - "Confirm the rate leg against the 01 October 2026 increase"
   - "Cut the pay start in UD-MIPS at the HFP or IDP code"
   - "Apply CZTE per Chapter 44 paragraph 2.3 when the location is a designated combat zone"
   - "Verify LES on the next pay cut"
@@ -51,6 +53,17 @@ Source documents flow from the deployment orders, the DoD designated HFP/IDP are
 
 Per DoDFMR Vol 7A Chapter 10, IDP applies to Marines on duty in DoD-designated imminent danger areas based on the standing area list. HFP applies to Marines exposed to hostile fire or hostile mine explosions in non-IDP areas based on commander certification. Marines do not draw both HFP and IDP for the same month for the same exposure. Per Chapter 44 paragraph 2.3, CZTE excludes pay from federal income tax when the deployment location is a designated combat zone.
 
+## Rate legs
+
+MARADMIN 433/26<Citation source="MARADMIN 433/26" /> raises both monthly amounts effective 01 October 2026. The increase ends the parity the two pays held at 225 dollars.
+
+| Pay | Through 30 Sep 2026 | Effective 01 Oct 2026 | Proration |
+| --- | --- | --- | --- |
+| HFP | 225 dollars per month | 450 dollars per month | None. One certified event earns the month |
+| IDP | 225 dollars per month ceiling | 275 dollars per month ceiling | Daily. 7.50 dollars per day, then 9.16 dollars per day |
+
+Every other provision of Chapter 10 stays in effect. The message changes the amounts only. Cut the transaction against the leg matching the service month, not the processing month. A deployment spanning 30 September 2026 carries both legs.
+
 ## Trigger events
 
 - Marine receives deployment orders to an HFP/IDP designated area.
@@ -58,6 +71,7 @@ Per DoDFMR Vol 7A Chapter 10, IDP applies to Marines on duty in DoD-designated i
 - Marine redeploys triggering pay stop.
 - Area is added to or removed from the DoD HFP/IDP area list.
 - Combat zone designation changes affecting CZTE.
+- Monthly amount change under MARADMIN 433/26 effective 01 October 2026.
 - Monthly special pay audit cycle.
 - LES surfaces unexpected HFP/IDP or CZTE state.
 
@@ -70,7 +84,7 @@ Per DoDFMR Vol 7A Chapter 10, IDP applies to Marines on duty in DoD-designated i
    - HFP applies to non-IDP areas when the Marine is exposed to hostile fire or mine explosion. Effective per the incident date with commander certification.
    - The Marine does not draw both for the same month for the same exposure.
 4. Build the KSD packet. Stage the deployment orders, the DoD area list confirmation, the hostile fire certification when applicable, and the duration period.
-5. Cut the pay start in UD-MIPS. Per Appendix E and MCTFSPRIUM<Citation source="MCTFSPRIUM" />, submit the HFP or IDP pay start at the assigned code. Apply the effective date per the chapter rules.
+5. Cut the pay start in UD-MIPS. Per Appendix E and MCTFSPRIUM<Citation source="MCTFSPRIUM" />, submit the HFP or IDP pay start at the assigned code. Apply the effective date per the chapter rules. Confirm the rate leg against the Rate legs table before submitting.
 6. Apply CZTE. Per Chapter 44 paragraph 2.3 and 26 U.S.C. 112, when the deployment location is a designated combat zone (per Executive Order), the disbursing office applies CZTE excluding pay from federal income tax up to the statutory cap.
 7. Verify LES. The next LES carries the HFP/IDP and the CZTE application. Discrepancies route to disbursing.
 8. Track deployment duration. The S-1 chief tracks against the deployment timeline.
@@ -104,13 +118,14 @@ Per DoDFMR Vol 7A Chapter 10, IDP applies to Marines on duty in DoD-designated i
 - Pay continued past redeployment. The S-1 cuts the pay stop on redeployment. Continued pay creates indebtedness.
 - Wrong effective date. The duty assumption date drives IDP. The incident date drives HFP. The chapter rules govern.
 - CZTE applied past the deployment month. The CZTE follows the deployment month per Chapter 44.
+- Rate leg drawn from the processing month instead of the service month. Per MARADMIN 433/26, the amounts changed on 01 October 2026. A September service month pays the old rate no matter when the transaction is cut.
 
 ## Decision points
 
 - IDP versus HFP. The standing area list drives IDP. Commander certification of hostile fire exposure drives HFP in non-list areas.
 - CZTE eligibility. The combat zone designation per Executive Order drives CZTE.
 - Effective date. The duty assumption date drives IDP. The incident date drives HFP per Chapter 10.
-- Cap on tax-excluded pay. Per 26 U.S.C. 112 and Chapter 44, officer CZTE caps at the Senior Enlisted Member Imminent Danger Pay rate plus the maximum enlisted pay.
+- Cap on tax-excluded pay. Per 26 U.S.C. 112 and Chapter 44, the officer CZTE monthly ceiling is the highest rate of enlisted basic pay plus the HFP or IDP amount the officer draws. Since the two amounts diverge on 01 October 2026, the ceiling now depends on which pay the officer draws. An officer drawing HFP adds 450 dollars. An officer drawing prorated IDP adds the prorated amount up to 275 dollars.
 
 ## Authority
 
@@ -123,4 +138,5 @@ This sub-page sits under DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapte
 - 37 U.S.C. 351. Statutory authority.
 - 26 U.S.C. 112. Combat Zone Compensation tax exclusion.
 - DoD HFP/IDP area list. Operational area list.
+- MARADMIN 433/26. Monthly amounts effective 01 October 2026.
 - MCTFSPRIUM. MCTFS transactions.

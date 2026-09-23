@@ -1807,6 +1807,15 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     icon: "FileText",
     pageType: "container",
   },
+  {
+    slug: "perstempo-and-your-deployment-record",
+    label: "PERSTEMPO and Your Deployment Record",
+    shortLabel: "PERSTEMPO Record",
+    description:
+      "Pull your PERSTEMPO report in MOL, apply the day away rule, and fix a missing TDY through your S-1.",
+    icon: "FileText",
+    pageType: "leaf",
+  },
 ];
 
 export function findMarinesCategory(slug: string): MarinesCategory | undefined {
@@ -2245,6 +2254,7 @@ export const MARINES_PARENT_GROUPS: MarinesParentGroup[] = [
     icon: "FileText",
     // Children listed in alphabetical order by label (case-insensitive).
     children: [
+      "perstempo-and-your-deployment-record",
       "records-and-personal-data",
     ],
   },

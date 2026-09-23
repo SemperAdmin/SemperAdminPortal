@@ -151,6 +151,7 @@ const COMMANDER_TREE: TreeSection[] = [
           { label: "Retirement processing", href: "/commander/personnel-decisions/retirement" },
           { label: "Reductions in grade", href: "/commander/personnel-decisions/reductions" },
           { label: "Promotion withholds", href: "/commander/personnel-decisions/promotion-withholds" },
+          { label: "PERSTEMPO threshold management", href: "/commander/personnel-decisions/perstempo-threshold-management" },
         ],
       },
       {
