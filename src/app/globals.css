@@ -1,6 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/*
+ * Bind dark: utilities to the .dark class next-themes sets on <html>.
+ * Tailwind 4 defaults dark: to prefers-color-scheme, which ignored the
+ * theme toggle and left navy text on the navy default for readers whose OS
+ * runs light.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* Self-hosted fonts. No FOIT, no Google Fonts request. */
 @import "@fontsource-variable/inter";
 @import "@fontsource-variable/jetbrains-mono";
