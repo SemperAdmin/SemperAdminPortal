@@ -46,12 +46,98 @@ const SEGMENT_LABEL_OVERRIDES: Record<string, string> = {
   tap: "TAP",
 };
 
+/**
+ * Acronyms that appear as one word inside a longer slug. Whole-segment
+ * overrides above miss them, so "oconus-tour-extension-incentive" rendered
+ * as "Oconus Tour Extension Incentive".
+ */
+const WORD_LABEL_OVERRIDES: Record<string, string> = {
+  ...SEGMENT_LABEL_OVERRIDES,
+  oconus: "OCONUS",
+  perstempo: "PERSTEMPO",
+  sbp: "SBP",
+  srb: "SRB",
+  upb: "UPB",
+  dd: "DD",
+  va: "VA",
+  sgli: "SGLI",
+  tricare: "TRICARE",
+  deers: "DEERS",
+  mol: "MOL",
+  mctfs: "MCTFS",
+  ipac: "IPAC",
+  igmc: "IGMC",
+  mcaat: "MCAAT",
+  selres: "SELRES",
+  smcr: "SMCR",
+  irr: "IRR",
+  tad: "TAD",
+  tdy: "TDY",
+  rr: "R&R",
+  srr: "SR&R",
+  ai: "AI",
+  cgip: "CGIP",
+  sapr: "SAPR",
+  meo: "MEO",
+};
+
+/** Joining words stay lowercase unless they open the label. */
+const MINOR_WORDS = new Set([
+  "a",
+  "an",
+  "and",
+  "as",
+  "at",
+  "by",
+  "for",
+  "from",
+  "in",
+  "of",
+  "on",
+  "or",
+  "the",
+  "to",
+  "vs",
+  "with",
+]);
+
 function humanize(segment: string): string {
   if (SEGMENT_LABEL_OVERRIDES[segment]) return SEGMENT_LABEL_OVERRIDES[segment];
   return segment
     .split("-")
-    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .map((part, i) => {
+      const override = WORD_LABEL_OVERRIDES[part];
+      if (override) return override;
+      if (i > 0 && MINOR_WORDS.has(part)) return part;
+      return part.charAt(0).toUpperCase() + part.slice(1);
+    })
     .join(" ");
+}
+
+/**
+ * Detail templates stamp data-page-title on their article with the
+ * frontmatter title. The current crumb reads it so the trail ends on
+ * "Overseas Tour Extension Incentive Program (OTEIP)", not a humanized slug.
+ * The static HTML carries the humanized slug. The title swaps in at
+ * hydration, and the observer catches client-side route changes.
+ */
+function subscribeToPageTitle(callback: () => void): () => void {
+  const root = document.getElementById("main") ?? document.body;
+  const observer = new MutationObserver(callback);
+  observer.observe(root, { childList: true, subtree: true });
+  return () => observer.disconnect();
+}
+
+function getPageTitle(): string | null {
+  return (
+    document
+      .querySelector<HTMLElement>("[data-page-title]")
+      ?.getAttribute("data-page-title") ?? null
+  );
+}
+
+function getServerPageTitle(): string | null {
+  return null;
 }
 
 /**
@@ -79,6 +165,11 @@ export function Breadcrumbs({
   maxSegments = 4,
 }: BreadcrumbsProps) {
   const real = usePathname();
+  const pageTitle = React.useSyncExternalStore(
+    subscribeToPageTitle,
+    getPageTitle,
+    getServerPageTitle
+  );
   const pathname = pathnameOverride ?? real ?? "/";
   if (pathname === "/" || pathname === "") return null;
 
@@ -89,6 +180,9 @@ export function Breadcrumbs({
       href: "/" + segments.slice(0, i + 1).join("/"),
     }))
     .filter((c) => !isHidden(c.href));
+
+  const leaf = trail[trail.length - 1];
+  if (leaf && pageTitle) leaf.label = pageTitle;
 
   // Always render Home as first crumb. Last item is non-link "current".
   const crumbs = [{ label: "Home", href: "/" }, ...trail];

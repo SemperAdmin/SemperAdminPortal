@@ -7,6 +7,7 @@ import {
 } from "@/lib/content/loader";
 import { PageHeader } from "@/components/domain/page-header";
 import { MdxContent } from "@/components/domain/mdx-content";
+import { TableOfContents } from "@/components/domain/toc";
 import { LastVerified } from "@/components/domain/last-verified";
 import { SourceCitation } from "@/components/domain/source-citation";
 import { ReferenceLink } from "@/components/domain/reference-link";
@@ -80,76 +81,80 @@ export default async function LeaderDetail({
   }
 
   return (
-    <article className="mx-auto max-w-3xl">
-      <PageHeader
-        eyebrow={topicLabel}
-        tags={
-          <>
-            {fm.roles.map((r) => (
-              <RoleChip key={r} role={r} size="sm" />
-            ))}
-            <LastVerified date={fm.lastVerified} />
-            {fm.sourcePolicy && (
-              <span className="rounded-sm bg-[var(--color-muted)] px-2 py-1 text-[10px] font-semibold text-[var(--color-muted-foreground)]">
-                <ReferenceLink text={fm.sourcePolicy} noIcon />
-                {fm.sourceChapter && <span>Ch {fm.sourceChapter}</span>}
-                {fm.sourceSection && <span>Sec {fm.sourceSection}</span>}
-              </span>
-            )}
-            {fm.trEventCode && (
-              <span className="rounded-sm border border-[var(--color-border)] px-2 py-1 font-mono text-[10px] text-[var(--color-foreground)]">
-                T&R {fm.trEventCode}
-              </span>
-            )}
-          </>
-        }
-        title={fm.title}
-        summary={fm.summary}
-        compact
-      />
+    <div className="mx-auto flex max-w-[calc(48rem+var(--toc-w)+3.5rem)] justify-center gap-14">
+      <article className="min-w-0 max-w-3xl flex-1" data-page-title={fm.title}>
+        <PageHeader
+          eyebrow={topicLabel}
+          tags={
+            <>
+              {fm.roles.map((r) => (
+                <RoleChip key={r} role={r} size="sm" />
+              ))}
+              <LastVerified date={fm.lastVerified} />
+              {fm.sourcePolicy && (
+                <span className="rounded-sm bg-[var(--color-muted)] px-2 py-1 text-[10px] font-semibold text-[var(--color-muted-foreground)]">
+                  <ReferenceLink text={fm.sourcePolicy} noIcon />
+                  {fm.sourceChapter && <span>Ch {fm.sourceChapter}</span>}
+                  {fm.sourceSection && <span>Sec {fm.sourceSection}</span>}
+                </span>
+              )}
+              {fm.trEventCode && (
+                <span className="rounded-sm border border-[var(--color-border)] px-2 py-1 font-mono text-[10px] text-[var(--color-foreground)]">
+                  T&R {fm.trEventCode}
+                </span>
+              )}
+            </>
+          }
+          title={fm.title}
+          summary={fm.summary}
+          compact
+        />
 
-      {fm.performanceSteps.length > 0 && (
-        <section className="mb-6 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-          <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
-            Leader Steps
-          </p>
-          <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm">
-            {fm.performanceSteps.map((step, i) => (
-              <li key={i}>{step}</li>
-            ))}
-          </ol>
-        </section>
-      )}
+        {fm.performanceSteps.length > 0 && (
+          <section className="mb-6 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
+              Leader Steps
+            </p>
+            <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm">
+              {fm.performanceSteps.map((step, i) => (
+                <li key={i}>{step}</li>
+              ))}
+            </ol>
+          </section>
+        )}
 
-      <MdxContent source={entry.body} />
+        <MdxContent source={entry.body} />
 
-      <CrossRoleStrip links={crossRoleLinks} />
+        <CrossRoleStrip links={crossRoleLinks} />
 
-      {fm.references.length > 0 && (
-        <section className="mt-4 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-          <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
-            References
-          </p>
-          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm">
-            {fm.references.map((r, i) => (
-              <li key={i} className="font-mono text-xs">
-                <ReferenceLink text={r} />
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+        {fm.references.length > 0 && (
+          <section className="mt-4 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
+              References
+            </p>
+            <ul className="mt-2 list-disc space-y-1 pl-5 text-sm">
+              {fm.references.map((r, i) => (
+                <li key={i} className="font-mono text-xs">
+                  <ReferenceLink text={r} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
-      <RelatedPages currentSlug={fm.slug} current={fm} />
+        <RelatedPages currentSlug={fm.slug} current={fm} />
 
-      <PrevNextNav prev={prev} next={next} topicLabel={topicLabel} />
+        <PrevNextNav prev={prev} next={next} topicLabel={topicLabel} />
 
-      <Separator className="my-6" />
-      <SourceCitation
-        title={fm.source.title}
-        publisher={fm.source.publisher}
-        url={fm.source.url}
-      />
-    </article>
+        <Separator className="my-6" />
+        <SourceCitation
+          title={fm.source.title}
+          publisher={fm.source.publisher}
+          url={fm.source.url}
+        />
+      </article>
+
+      <TableOfContents className="lg:hidden xl:block" />
+    </div>
   );
 }
