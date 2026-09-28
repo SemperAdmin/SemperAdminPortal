@@ -61,9 +61,12 @@ function humanize(segment: string): string {
  * /inspections/igmc/<programNumber> has no index page. Only the leaf at
  * /inspections/igmc/<programNumber>/<slug> renders, so the program-number
  * crumb is hidden.
+ *
+ * /legal has no index page. The four legal documents live one level down.
  */
 const HIDDEN_SEGMENT_PATTERNS: RegExp[] = [
   /^\/inspections\/igmc\/[^/]+$/,
+  /^\/legal$/,
 ];
 
 function isHidden(href: string): boolean {

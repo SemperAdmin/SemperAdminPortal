@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
  * router. next/link prepends basePath on its own, so Link hrefs below stay
  * root-relative. Feeding PORTAL_ROOT to Link doubled the prefix.
  */
-const PORTAL_ROOT = "/SemperAdminPortal/";
+const PORTAL_ROOT = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/`;
 
 /**
  * Hybrid not-found / root redirect.

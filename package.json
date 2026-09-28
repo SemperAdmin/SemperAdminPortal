@@ -35,8 +35,9 @@
     "prebuild": "node scripts/generate-videos.js && node scripts/sync-content.mjs && node scripts/sync-thumbnails.mjs",
     "predev": "node scripts/generate-videos.js && node scripts/sync-content.mjs && node scripts/sync-thumbnails.mjs",
     "search:index": "pagefind --site out --output-path out/pagefind",
-    "postbuild": "node scripts/sync-content.mjs && next-sitemap && pagefind --site out --output-path out/pagefind && node scripts/check-crossrole-links.mjs --strict",
-    "links:crossrole": "node scripts/check-crossrole-links.mjs"
+    "postbuild": "node scripts/sync-content.mjs && next-sitemap && pagefind --site out --output-path out/pagefind && node scripts/check-crossrole-links.mjs --strict && node scripts/check-internal-links.mjs --strict",
+    "links:crossrole": "node scripts/check-crossrole-links.mjs",
+    "links:internal": "node scripts/check-internal-links.mjs"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.2.8",
