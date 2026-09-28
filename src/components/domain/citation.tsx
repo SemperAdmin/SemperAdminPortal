@@ -30,7 +30,7 @@ export function Citation({ source, href, className }: CitationProps) {
   const inner = (
     <span
       className={cn(
-        "inline-flex items-center rounded-[var(--radius-xs)] border px-1 py-px font-mono text-[10px] font-bold align-super leading-none transition-colors",
+        "inline-flex items-center rounded-[var(--radius-xs)] border px-1 py-px font-mono text-[11px] font-bold align-super leading-none transition-colors",
         className
       )}
       style={{
