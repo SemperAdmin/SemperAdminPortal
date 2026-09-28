@@ -64,6 +64,13 @@ export function RoleSwitcher({
             onClick={() => select(r)}
             disabled={!mounted}
             aria-pressed={isActive}
+            // Screen readers spell out "CMDR". The full name leads and the
+            // visible short label stays in the name for voice control.
+            aria-label={
+              meta.shortLabel === meta.label
+                ? undefined
+                : `${meta.label} (${meta.shortLabel})`
+            }
             title={meta.description}
             className={cn(
               "flex h-full items-center gap-1.5 rounded-[var(--radius-pill)] px-2.5 text-[12px] font-medium transition-colors duration-[120ms]",

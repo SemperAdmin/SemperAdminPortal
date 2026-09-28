@@ -9,6 +9,7 @@ import { UNIT_TYPES, type UnitType } from "@/lib/content/schemas";
 import { toTopicLabel } from "@/lib/admin-topics";
 import { PageHeader } from "@/components/domain/page-header";
 import { MdxContent } from "@/components/domain/mdx-content";
+import { TableOfContents } from "@/components/domain/toc";
 import { LastVerified } from "@/components/domain/last-verified";
 import { SourceCitation } from "@/components/domain/source-citation";
 import { ReferenceLink } from "@/components/domain/reference-link";
@@ -97,150 +98,154 @@ export default async function AdminDetail({
   }
 
   return (
-    <article className="mx-auto max-w-3xl">
-      <PageHeader
-        eyebrow={topicLabel}
-        tags={
-          <>
-            {fm.roles.map((r) => (
-              <RoleChip key={r} role={r} size="sm" />
-            ))}
-            <span className="rounded-sm bg-[var(--color-primary)]/10 px-2 py-1 text-xs font-bold uppercase tracking-wider text-[var(--color-primary)]">
-              {fm.function} - {FUNCTION_LABELS[fm.function] ?? fm.function}
-            </span>
-            <span className="rounded-sm bg-[var(--color-muted)] px-2 py-1 text-xs font-semibold text-[var(--color-muted-foreground)]">
-              {fm.skillLevel}-level
-            </span>
-            <LastVerified date={fm.lastVerified} />
-            {fm.sourcePolicy && (
+    <div className="mx-auto flex max-w-[calc(48rem+var(--toc-w)+3.5rem)] justify-center gap-14">
+      <article className="min-w-0 max-w-3xl flex-1" data-page-title={fm.title}>
+        <PageHeader
+          eyebrow={topicLabel}
+          tags={
+            <>
+              {fm.roles.map((r) => (
+                <RoleChip key={r} role={r} size="sm" />
+              ))}
+              <span className="rounded-sm bg-[var(--color-primary)]/10 px-2 py-1 text-xs font-bold uppercase tracking-wider text-[var(--color-primary)]">
+                {fm.function} - {FUNCTION_LABELS[fm.function] ?? fm.function}
+              </span>
               <span className="rounded-sm bg-[var(--color-muted)] px-2 py-1 text-xs font-semibold text-[var(--color-muted-foreground)]">
-                <ReferenceLink text={fm.sourcePolicy} noIcon />
-                {fm.sourceChapter && <span>Ch {fm.sourceChapter}</span>}
-                {fm.sourceSection && <span>Sec {fm.sourceSection}</span>}
+                {fm.skillLevel}-level
               </span>
-            )}
-            {fm.trEventCode && (
-              <span className="rounded-sm border border-[var(--color-border)] px-2 py-1 font-mono text-xs text-[var(--color-foreground)]">
-                {fm.trEventCode}
-              </span>
-            )}
-          </>
-        }
-        title={fm.title}
-        summary={fm.summary}
-        compact
-      />
+              <LastVerified date={fm.lastVerified} />
+              {fm.sourcePolicy && (
+                <span className="rounded-sm bg-[var(--color-muted)] px-2 py-1 text-xs font-semibold text-[var(--color-muted-foreground)]">
+                  <ReferenceLink text={fm.sourcePolicy} noIcon />
+                  {fm.sourceChapter && <span>Ch {fm.sourceChapter}</span>}
+                  {fm.sourceSection && <span>Sec {fm.sourceSection}</span>}
+                </span>
+              )}
+              {fm.trEventCode && (
+                <span className="rounded-sm border border-[var(--color-border)] px-2 py-1 font-mono text-xs text-[var(--color-foreground)]">
+                  {fm.trEventCode}
+                </span>
+              )}
+            </>
+          }
+          title={fm.title}
+          summary={fm.summary}
+          compact
+        />
 
-      <section className="mb-6 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-4">
-        <p className="text-xs font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
-          {fm.trEventCode ? "T&R Event Details" : "Reference Information"}
-        </p>
-        <dl className="mt-2 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-2">
-          {fm.trEventCode && (
+        <section className="mb-6 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-4">
+          <p className="text-xs font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
+            {fm.trEventCode ? "T&R Event Details" : "Reference Information"}
+          </p>
+          <dl className="mt-2 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-2">
+            {fm.trEventCode && (
+              <div>
+                <dt className="text-xs font-semibold text-[var(--color-muted-foreground)]">
+                  Event Code
+                </dt>
+                <dd className="font-mono">{fm.trEventCode}</dd>
+              </div>
+            )}
+            {fm.sourcePolicy && (
+              <div>
+                <dt className="text-xs font-semibold text-[var(--color-muted-foreground)]">
+                  Source Policy
+                </dt>
+                <dd>
+                  {fm.sourcePolicy}
+                  {fm.sourceChapter && " Ch " + fm.sourceChapter}
+                  {fm.sourceSection && " Sec " + fm.sourceSection}
+                </dd>
+              </div>
+            )}
             <div>
               <dt className="text-xs font-semibold text-[var(--color-muted-foreground)]">
-                Event Code
+                MOS Performing
               </dt>
-              <dd className="font-mono">{fm.trEventCode}</dd>
+              <dd>{fm.mosPerforming.join(", ")}</dd>
             </div>
-          )}
-          {fm.sourcePolicy && (
             <div>
               <dt className="text-xs font-semibold text-[var(--color-muted-foreground)]">
-                Source Policy
+                Grades
               </dt>
               <dd>
-                {fm.sourcePolicy}
-                {fm.sourceChapter && " Ch " + fm.sourceChapter}
-                {fm.sourceSection && " Sec " + fm.sourceSection}
+                {fm.gradesPerforming.length > 0
+                  ? fm.gradesPerforming.join(", ")
+                  : "All grades"}
               </dd>
             </div>
-          )}
-          <div>
-            <dt className="text-xs font-semibold text-[var(--color-muted-foreground)]">
-              MOS Performing
-            </dt>
-            <dd>{fm.mosPerforming.join(", ")}</dd>
-          </div>
-          <div>
-            <dt className="text-xs font-semibold text-[var(--color-muted-foreground)]">
-              Grades
-            </dt>
-            <dd>
-              {fm.gradesPerforming.length > 0
-                ? fm.gradesPerforming.join(", ")
-                : "All grades"}
-            </dd>
-          </div>
-          {fm.trEventCode && (
-            <>
-              <div>
-                <dt className="text-xs font-semibold text-[var(--color-muted-foreground)]">
-                  Sustainment Interval
-                </dt>
-                <dd>{fm.sustainmentInterval}</dd>
-              </div>
-              <div>
-                <dt className="text-xs font-semibold text-[var(--color-muted-foreground)]">
-                  Evaluation-Coded
-                </dt>
-                <dd>{fm.evaluationCoded ? "Yes" : "No"}</dd>
-              </div>
-              <div>
-                <dt className="text-xs font-semibold text-[var(--color-muted-foreground)]">
-                  Readiness-Coded
-                </dt>
-                <dd>{fm.readinessCoded ? "Yes" : "No"}</dd>
-              </div>
-            </>
-          )}
-        </dl>
-      </section>
-
-      {fm.performanceSteps.length > 0 && (
-        <section className="mt-4 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-          <p className="text-xs font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
-            {fm.trEventCode ? "Performance Steps (T&R)" : "Key Steps"}
-          </p>
-          <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm">
-            {fm.performanceSteps.map((step, i) => (
-              <li key={i}>{step}</li>
-            ))}
-          </ol>
+            {fm.trEventCode && (
+              <>
+                <div>
+                  <dt className="text-xs font-semibold text-[var(--color-muted-foreground)]">
+                    Sustainment Interval
+                  </dt>
+                  <dd>{fm.sustainmentInterval}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs font-semibold text-[var(--color-muted-foreground)]">
+                    Evaluation-Coded
+                  </dt>
+                  <dd>{fm.evaluationCoded ? "Yes" : "No"}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs font-semibold text-[var(--color-muted-foreground)]">
+                    Readiness-Coded
+                  </dt>
+                  <dd>{fm.readinessCoded ? "Yes" : "No"}</dd>
+                </div>
+              </>
+            )}
+          </dl>
         </section>
-      )}
 
-      <Separator className="my-6" />
+        {fm.performanceSteps.length > 0 && (
+          <section className="mt-4 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+            <p className="text-xs font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
+              {fm.trEventCode ? "Performance Steps (T&R)" : "Key Steps"}
+            </p>
+            <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm">
+              {fm.performanceSteps.map((step, i) => (
+                <li key={i}>{step}</li>
+              ))}
+            </ol>
+          </section>
+        )}
 
-      <MdxContent source={entry.body} />
+        <Separator className="my-6" />
 
-      <CrossRoleStrip links={crossRoleLinks} />
+        <MdxContent source={entry.body} />
 
-      {fm.references.length > 0 && (
-        <section className="mt-4 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-          <p className="text-xs font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
-            References
-          </p>
-          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm">
-            {fm.references.map((r, i) => (
-              <li key={i} className="font-mono text-xs">
-                <ReferenceLink text={r} />
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+        <CrossRoleStrip links={crossRoleLinks} />
 
-      <RelatedPages currentSlug={fm.slug} current={fm} />
+        {fm.references.length > 0 && (
+          <section className="mt-4 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+            <p className="text-xs font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
+              References
+            </p>
+            <ul className="mt-2 list-disc space-y-1 pl-5 text-sm">
+              {fm.references.map((r, i) => (
+                <li key={i} className="font-mono text-xs">
+                  <ReferenceLink text={r} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
-      <PrevNextNav prev={prev} next={next} topicLabel={topicLabel} />
+        <RelatedPages currentSlug={fm.slug} current={fm} />
 
-      <Separator className="my-6" />
-      <SourceCitation
-        title={fm.source.title}
-        publisher={fm.source.publisher}
-        url={fm.source.url}
-      />
-    </article>
+        <PrevNextNav prev={prev} next={next} topicLabel={topicLabel} />
+
+        <Separator className="my-6" />
+        <SourceCitation
+          title={fm.source.title}
+          publisher={fm.source.publisher}
+          url={fm.source.url}
+        />
+      </article>
+
+      <TableOfContents className="lg:hidden xl:block" />
+    </div>
   );
 }

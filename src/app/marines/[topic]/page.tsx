@@ -17,6 +17,7 @@ import {
   type MarinesCategory,
 } from "@/lib/marines-categories";
 import { MdxContent } from "@/components/domain/mdx-content";
+import { TableOfContents } from "@/components/domain/toc";
 import { LastVerified } from "@/components/domain/last-verified";
 import { SourceCitation } from "@/components/domain/source-citation";
 import { RoleChip } from "@/components/domain/role-chip";
@@ -314,132 +315,136 @@ function LeafTopicPage({ topic }: { topic: string }) {
   }
 
   return (
-    <article className="mx-auto max-w-3xl">
-            <div className="mb-3 flex flex-wrap items-center gap-2">
-        {fm.trEventCode && (
-          <span className="rounded-sm border border-[var(--color-border)] px-2 py-1 font-mono text-[10px] text-[var(--color-foreground)]">
-            T&R {fm.trEventCode}
-          </span>
+    <div className="mx-auto flex max-w-[calc(48rem+var(--toc-w)+3.5rem)] justify-center gap-14">
+      <article className="min-w-0 max-w-3xl flex-1" data-page-title={fm.title}>
+              <div className="mb-3 flex flex-wrap items-center gap-2">
+          {fm.trEventCode && (
+            <span className="rounded-sm border border-[var(--color-border)] px-2 py-1 font-mono text-[10px] text-[var(--color-foreground)]">
+              T&R {fm.trEventCode}
+            </span>
+          )}
+          {fm.sourcePolicy && (
+            <span className="inline-flex items-center gap-1 rounded-sm bg-[var(--color-muted)] px-2 py-1 text-[10px] font-semibold leading-none text-[var(--color-muted-foreground)]">
+              {fm.sourcePolicy}
+              {fm.sourceChapter && <span>Ch {fm.sourceChapter}</span>}
+              {fm.sourceSection && <span>Sec {fm.sourceSection}</span>}
+            </span>
+          )}
+          <LastVerified date={fm.lastVerified} />
+        </div>
+
+        <h1
+          className="text-4xl font-bold tracking-tight"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
+          {fm.title}
+        </h1>
+        <p className="mt-2 text-[var(--color-muted-foreground)]">{fm.summary}</p>
+
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {fm.roles.map((r) => (
+            <RoleChip key={r} role={r} size="sm" />
+          ))}
+        </div>
+
+        {fm.performanceSteps.length > 0 && (
+          <section className="mt-6 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
+              Quick Steps
+            </p>
+            <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm">
+              {fm.performanceSteps.map((step, i) => (
+                <li key={i}>{step}</li>
+              ))}
+            </ol>
+          </section>
         )}
-        {fm.sourcePolicy && (
-          <span className="inline-flex items-center gap-1 rounded-sm bg-[var(--color-muted)] px-2 py-1 text-[10px] font-semibold leading-none text-[var(--color-muted-foreground)]">
-            {fm.sourcePolicy}
-            {fm.sourceChapter && <span>Ch {fm.sourceChapter}</span>}
-            {fm.sourceSection && <span>Sec {fm.sourceSection}</span>}
-          </span>
+
+        <Separator className="my-6" />
+
+        <MdxContent source={entry.body} />
+
+        {fm.relatedRoles && (
+          <section className="mt-8 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-4">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
+              How other roles handle this
+            </p>
+            <ul className="mt-2 space-y-1.5 text-sm">
+              {fm.relatedRoles.admin && (
+                <li>
+                  <Link
+                    href={fm.relatedRoles.admin}
+                    className="text-[var(--color-primary)] hover:underline"
+                  >
+                    Admin view
+                  </Link>{" "}
+                  <span className="text-[var(--color-muted-foreground)]">
+                    - the processing side
+                  </span>
+                </li>
+              )}
+              {fm.relatedRoles.leader && (
+                <li>
+                  <Link
+                    href={fm.relatedRoles.leader}
+                    className="text-[var(--color-primary)] hover:underline"
+                  >
+                    Leader view
+                  </Link>{" "}
+                  <span className="text-[var(--color-muted-foreground)]">
+                    - your NCO and SNCO oversight
+                  </span>
+                </li>
+              )}
+              {fm.relatedRoles.commander && (
+                <li>
+                  <Link
+                    href={fm.relatedRoles.commander}
+                    className="text-[var(--color-primary)] hover:underline"
+                  >
+                    Commander view
+                  </Link>{" "}
+                  <span className="text-[var(--color-muted-foreground)]">
+                    - command authority and decisions
+                  </span>
+                </li>
+              )}
+            </ul>
+          </section>
         )}
-        <LastVerified date={fm.lastVerified} />
-      </div>
 
-      <h1
-        className="text-4xl font-bold tracking-tight"
-        style={{ fontFamily: "var(--font-display)" }}
-      >
-        {fm.title}
-      </h1>
-      <p className="mt-2 text-[var(--color-muted-foreground)]">{fm.summary}</p>
+        {fm.references.length > 0 && (
+          <section className="mt-4 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
+              References
+            </p>
+            <ul className="mt-2 list-disc space-y-1 pl-5 text-sm">
+              {fm.references.map((r, i) => (
+                <li key={i} className="font-mono text-xs">
+                  {r}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
-      <div className="mt-3 flex flex-wrap gap-1.5">
-        {fm.roles.map((r) => (
-          <RoleChip key={r} role={r} size="sm" />
-        ))}
-      </div>
+        <RelatedPages currentSlug={fm.slug} current={fm} />
 
-      {fm.performanceSteps.length > 0 && (
-        <section className="mt-6 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-          <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
-            Quick Steps
-          </p>
-          <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm">
-            {fm.performanceSteps.map((step, i) => (
-              <li key={i}>{step}</li>
-            ))}
-          </ol>
-        </section>
-      )}
+        <PrevNextNav
+          prev={prev}
+          next={next}
+          topicLabel={parentGroup?.label}
+        />
 
-      <Separator className="my-6" />
+        <Separator className="my-6" />
+        <SourceCitation
+          title={fm.source.title}
+          publisher={fm.source.publisher}
+          url={fm.source.url}
+        />
+      </article>
 
-      <MdxContent source={entry.body} />
-
-      {fm.relatedRoles && (
-        <section className="mt-8 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-4">
-          <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
-            How other roles handle this
-          </p>
-          <ul className="mt-2 space-y-1.5 text-sm">
-            {fm.relatedRoles.admin && (
-              <li>
-                <Link
-                  href={fm.relatedRoles.admin}
-                  className="text-[var(--color-primary)] hover:underline"
-                >
-                  Admin view
-                </Link>{" "}
-                <span className="text-[var(--color-muted-foreground)]">
-                  - the processing side
-                </span>
-              </li>
-            )}
-            {fm.relatedRoles.leader && (
-              <li>
-                <Link
-                  href={fm.relatedRoles.leader}
-                  className="text-[var(--color-primary)] hover:underline"
-                >
-                  Leader view
-                </Link>{" "}
-                <span className="text-[var(--color-muted-foreground)]">
-                  - your NCO and SNCO oversight
-                </span>
-              </li>
-            )}
-            {fm.relatedRoles.commander && (
-              <li>
-                <Link
-                  href={fm.relatedRoles.commander}
-                  className="text-[var(--color-primary)] hover:underline"
-                >
-                  Commander view
-                </Link>{" "}
-                <span className="text-[var(--color-muted-foreground)]">
-                  - command authority and decisions
-                </span>
-              </li>
-            )}
-          </ul>
-        </section>
-      )}
-
-      {fm.references.length > 0 && (
-        <section className="mt-4 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-          <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-muted-foreground)]">
-            References
-          </p>
-          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm">
-            {fm.references.map((r, i) => (
-              <li key={i} className="font-mono text-xs">
-                {r}
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      <RelatedPages currentSlug={fm.slug} current={fm} />
-
-      <PrevNextNav
-        prev={prev}
-        next={next}
-        topicLabel={parentGroup?.label}
-      />
-
-      <Separator className="my-6" />
-      <SourceCitation
-        title={fm.source.title}
-        publisher={fm.source.publisher}
-        url={fm.source.url}
-      />
-    </article>
+      <TableOfContents className="lg:hidden xl:block" />
+    </div>
   );
 }

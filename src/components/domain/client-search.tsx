@@ -6,111 +6,53 @@ import { Search, ChevronRight } from "lucide-react";
 import searchIndexData from "@/generated/search-index.json";
 import { useRoleStore } from "@/lib/store/role-store";
 import { useMounted } from "@/hooks/use-mounted";
-
-/**
- * Slim search record emitted by scripts/sync-content.mjs. One per page
- * across the marine, leader, commander, and admin collections. Full
- * catalogs stay out of the client bundle.
- */
-interface IndexEntry {
-  title: string;
-  url: string;
-  summary: string;
-  category: string;
-  badges: string[];
-  roles: string[];
-  slug: string;
-  topic: string;
-  tr: string;
-  policy: string;
-  refs: string;
-  mos: string;
-  /**
-   * Spoken-term synonyms for the page, built at sync time from
-   * scripts/search-synonyms.mjs. Lets "SMCR" and "drill" find pages titled
-   * "SELRES" and "IDT". Scored below summary so a synonym never outranks a
-   * direct match.
-   */
-  alias: string;
-}
-
-interface SearchResult {
-  title: string;
-  url: string;
-  summary: string;
-  category: string;
-  badges: string[];
-  score: number;
-}
+import { searchEntries, type IndexEntry } from "@/lib/search/score";
 
 const INDEX: IndexEntry[] = searchIndexData as IndexEntry[];
 
-/** Score boost for pages tagged with the user's active role. */
-const ACTIVE_ROLE_BOOST = 25;
-
-function scoreEntry(entry: IndexEntry, q: string, activeRole: string | null): number {
-  const query = q.toLowerCase().trim();
-  if (!query) return 0;
-  const terms = query.split(/\s+/).filter(Boolean);
-
-  let score = 0;
-  const title = entry.title.toLowerCase();
-  const summary = entry.summary.toLowerCase();
-  const slug = entry.slug.toLowerCase();
-  const topic = entry.topic.toLowerCase();
-  const tr = entry.tr.toLowerCase();
-  const policy = entry.policy.toLowerCase();
-
-  for (const term of terms) {
-    if (title.includes(term)) score += 100;
-    if (slug.includes(term)) score += 80;
-    if (topic.includes(term)) score += 50;
-    if (summary.includes(term)) score += 40;
-    if (tr.includes(term)) score += 60;
-    if (policy.includes(term)) score += 50;
-    if (entry.refs.includes(term)) score += 30;
-    if (entry.mos.includes(term)) score += 30;
-    if (entry.alias.includes(term)) score += 20;
-  }
-  if (score === 0) return 0;
-
-  // Boost exact matches
-  if (title === query) score += 200;
-  if (slug === query) score += 200;
-
-  // Active-role pages rank ahead of cross-role matches at equal relevance.
-  if (activeRole && entry.roles.includes(activeRole)) score += ACTIVE_ROLE_BOOST;
-
-  return score;
+function subscribeToNothing(): () => void {
+  return () => {};
 }
 
-function searchAll(query: string, activeRole: string | null): SearchResult[] {
-  if (!query || query.trim().length < 2) return [];
+/** Reads ?q= once on the client. The static build renders an empty query. */
+function getUrlQuery(): string {
+  return new URLSearchParams(window.location.search).get("q") ?? "";
+}
 
-  const results: SearchResult[] = [];
-  for (const entry of INDEX) {
-    const score = scoreEntry(entry, query, activeRole);
-    if (score === 0) continue;
-    results.push({
-      title: entry.title,
-      url: entry.url,
-      summary: entry.summary,
-      category: entry.category,
-      badges: entry.badges,
-      score,
-    });
-  }
-  results.sort((a, b) => b.score - a.score);
-  return results.slice(0, 50);
+function getServerUrlQuery(): string {
+  return "";
+}
+
+/**
+ * Mirrors the query into ?q= so a result list is linkable and the command
+ * palette hands off with /search?q=. replaceState keeps typing out of the
+ * back-button history.
+ */
+function writeUrlQuery(q: string) {
+  const url = new URL(window.location.href);
+  if (q) url.searchParams.set("q", q);
+  else url.searchParams.delete("q");
+  window.history.replaceState(window.history.state, "", url);
 }
 
 export function ClientSearch() {
-  const [query, setQuery] = React.useState("");
+  const urlQuery = React.useSyncExternalStore(
+    subscribeToNothing,
+    getUrlQuery,
+    getServerUrlQuery
+  );
+  // null until the reader types, so an incoming ?q= seeds the box.
+  const [typed, setTyped] = React.useState<string | null>(null);
+  const query = typed ?? urlQuery;
+  const setQuery = React.useCallback((q: string) => {
+    setTyped(q);
+    writeUrlQuery(q.trim());
+  }, []);
   const mounted = useMounted();
   const role = useRoleStore((s) => s.role);
   const activeRole = mounted ? role : null;
   const results = React.useMemo(
-    () => searchAll(query, activeRole),
+    () => searchEntries(INDEX, query, activeRole),
     [query, activeRole]
   );
 

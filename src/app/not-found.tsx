@@ -6,7 +6,12 @@ import { usePathname } from "next/navigation";
 import { Search, Home, Compass } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const PORTAL_ROOT = "/SemperAdminPortal/";
+/**
+ * Raw URL for window.location and the meta refresh, which bypass the
+ * router. next/link prepends basePath on its own, so Link hrefs below stay
+ * root-relative. Feeding PORTAL_ROOT to Link doubled the prefix.
+ */
+const PORTAL_ROOT = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/`;
 
 /**
  * Hybrid not-found / root redirect.
@@ -52,12 +57,12 @@ function Redirecting() {
         </p>
         <noscript>
           <p className="mt-4 text-sm">
-            <Link
+            <a
               href={PORTAL_ROOT}
               className="font-semibold text-[var(--color-usmc-scarlet)] underline-offset-2 hover:underline"
             >
               Continue manually
-            </Link>
+            </a>
           </p>
         </noscript>
       </main>
@@ -69,6 +74,7 @@ function FourOhFour() {
   return (
     <main
       id="main"
+      data-not-found=""
       className="mx-auto flex min-h-[60dvh] max-w-2xl flex-col items-center justify-center px-4 text-center"
     >
       <p className="mb-3 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--color-usmc-scarlet)]">
@@ -90,19 +96,19 @@ function FourOhFour() {
       </p>
       <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
         <Button asChild variant="primary" size="lg">
-          <Link href={PORTAL_ROOT}>
+          <Link href="/">
             <Home className="size-4" aria-hidden="true" />
             Home
           </Link>
         </Button>
         <Button asChild variant="outline" size="lg">
-          <Link href={`${PORTAL_ROOT}search`}>
+          <Link href="/search">
             <Search className="size-4" aria-hidden="true" />
             Search
           </Link>
         </Button>
         <Button asChild variant="outline" size="lg">
-          <Link href={`${PORTAL_ROOT}citations`}>
+          <Link href="/citations">
             <Compass className="size-4" aria-hidden="true" />
             Citations index
           </Link>

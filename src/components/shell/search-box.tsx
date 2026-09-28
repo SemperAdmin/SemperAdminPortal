@@ -39,7 +39,7 @@ export function SearchBox({ onOpenPalette, className }: SearchBoxProps) {
     >
       <Search className="size-4 shrink-0 opacity-70" aria-hidden="true" />
       <span className="flex-1 truncate">
-        Search policies, situations, citations.
+        Search pages, policies, and codes.
       </span>
       <kbd className="hidden shrink-0 items-center gap-0.5 rounded-[var(--radius-xs)] border border-[var(--color-border)] border-b-2 bg-[var(--color-bg-elev)] px-1.5 py-0.5 font-mono text-[10px] font-semibold sm:inline-flex">
         {modKey} K

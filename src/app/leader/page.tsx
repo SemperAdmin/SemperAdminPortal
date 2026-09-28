@@ -38,7 +38,7 @@ import { StatusPill } from "@/components/ui/status-pill";
 export const metadata: Metadata = {
   title: "Leader",
   description:
-    "NCO, SNCO, and Officer content. How leaders coach Marines, verify records, run section readiness, counsel against MCO 1500.61 and NAVMC 2795, and bridge members to S-1 and PAC processes.",
+    "NCO and SNCO content. How leaders coach Marines, verify records, run section readiness, counsel against MCO 1500.61 and NAVMC 2795, and bridge members to S-1 and PAC processes.",
 };
 
 const ICON_MAP: Record<string, LucideIcon> = {

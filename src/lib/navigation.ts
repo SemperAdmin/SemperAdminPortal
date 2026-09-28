@@ -96,7 +96,7 @@ export const NAV_ITEMS: NavItem[] = [
   {
     label: "Leader",
     href: "/leader",
-    description: "NCO, SNCO, and Officer content for coaching Marines, verifying records, and section readiness.",
+    description: "NCO and SNCO content for coaching Marines, verifying records, and section readiness.",
     icon: Star,
     roles: ["leader", "commander", "admin"],
     ready: true,

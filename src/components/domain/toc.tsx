@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 export interface TocProps {
   /** CSS selector for the prose container holding headings. Default: "article". */
   containerSelector?: string;
-  /** Minimum heading count before the TOC renders. Default 3. */
+  /** Minimum h2 count before the TOC renders. Default 3. h3 entries still list. */
   minHeadings?: number;
   className?: string;
   /** Optional title shown above the list. Default "On this page". */
@@ -70,7 +70,7 @@ export function TableOfContents({
     return () => observer.disconnect();
   }, [containerSelector]);
 
-  if (entries.length < minHeadings) return null;
+  if (entries.filter((e) => e.level === 2).length < minHeadings) return null;
 
   return (
     <nav

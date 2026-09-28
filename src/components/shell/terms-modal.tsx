@@ -46,11 +46,20 @@ const STORAGE_KEY = "semper-admin-terms-accepted";
 const TERMS_VERSION = "2026-09-11";
 
 function subscribe(callback: () => void): () => void {
-  // The native storage event fires cross-tab only. handleAcknowledge
+  // The native storage event fires cross-tab only. acknowledgeTerms
   // dispatches a synthetic event for the accepting tab.
   window.addEventListener("storage", callback);
   return () => window.removeEventListener("storage", callback);
 }
+
+/**
+ * Fallback for a browser refusing localStorage, private mode among the
+ * causes. The click still clears the dialog for this page session. The
+ * reader meets it again on a hard reload, which beats a button with no
+ * effect trapping them on the page. Module scope so the role picker reads
+ * the same answer as the dialog.
+ */
+let clearedThisSession = false;
 
 /**
  * True when this browser holds an acknowledgment matching the current
@@ -58,6 +67,7 @@ function subscribe(callback: () => void): () => void {
  * as false, so the dialog returns after a revision.
  */
 function getSnapshot(): boolean {
+  if (clearedThisSession) return true;
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return false;
@@ -80,35 +90,42 @@ function getServerSnapshot(): boolean {
   return true;
 }
 
+/**
+ * Records the acknowledgment, in storage when the browser allows it and
+ * for this page session regardless.
+ */
+function acknowledgeTerms() {
+  try {
+    localStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({
+        version: TERMS_VERSION,
+        acceptedAt: new Date().toISOString(),
+      })
+    );
+  } catch {
+    // Nothing to persist. clearedThisSession carries the dismissal.
+  }
+  clearedThisSession = true;
+  // The native storage event fires cross-tab only. This synthetic event
+  // re-reads the snapshot in this tab for the dialog and the role picker.
+  // The subscriber ignores the payload, so a plain Event carries it.
+  window.dispatchEvent(new Event("storage"));
+}
+
+/**
+ * True once the reader acknowledged the current terms, in storage or for
+ * this page session. The role picker waits on it so the two first-visit
+ * dialogs open one after the other instead of stacking.
+ */
+export function useTermsAcknowledged(): boolean {
+  return React.useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+}
+
 export function TermsModal() {
-  const acknowledged = React.useSyncExternalStore(
-    subscribe,
-    getSnapshot,
-    getServerSnapshot
-  );
-  // Fallback for a browser refusing localStorage, private mode among the
-  // causes. The click still clears the dialog for this page session. The
-  // reader meets it again on a hard reload, which beats a button with no
-  // effect trapping them on the page.
-  const [clearedThisSession, setClearedThisSession] = React.useState(false);
+  const acknowledged = useTermsAcknowledged();
 
-  if (acknowledged || clearedThisSession) return null;
-
-  const handleAcknowledge = () => {
-    try {
-      localStorage.setItem(
-        STORAGE_KEY,
-        JSON.stringify({
-          version: TERMS_VERSION,
-          acceptedAt: new Date().toISOString(),
-        })
-      );
-      window.dispatchEvent(new StorageEvent("storage", { key: STORAGE_KEY }));
-    } catch {
-      // Nothing to persist. clearedThisSession below carries the dismissal.
-    }
-    setClearedThisSession(true);
-  };
+  if (acknowledged) return null;
 
   return (
     <Dialog open>
@@ -230,7 +247,7 @@ export function TermsModal() {
             browser. Nothing is sent to a server.
           </p>
           <Button
-            onClick={handleAcknowledge}
+            onClick={acknowledgeTerms}
             className="shrink-0 bg-[var(--color-usmc-scarlet)] hover:bg-[var(--color-usmc-scarlet)]/90"
           >
             I Understand

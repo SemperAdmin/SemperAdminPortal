@@ -12,6 +12,7 @@ import {
 import { useRoleStore } from "@/lib/store/role-store";
 import { ROLES, ROLE_META, type Role } from "@/lib/roles";
 import { useMounted } from "@/hooks/use-mounted";
+import { useTermsAcknowledged } from "./terms-modal";
 import { cn } from "@/lib/utils";
 
 const ICON_MAP: Record<string, LucideIcon> = {
@@ -23,7 +24,8 @@ const ICON_MAP: Record<string, LucideIcon> = {
 
 /**
  * RolePickerDialog - v1.2.
- * First-visit role picker. Renders only after mount and only when no role is set.
+ * First-visit role picker. Renders only after mount, only when no role is set,
+ * and only after the terms acknowledgment, so the two dialogs never stack.
  * Visual refresh: parchment surface, scarlet hover edge, marine-blue active treatment.
  * Phase 5 will add an analytics ping and an in-app rerun trigger.
  */
@@ -31,7 +33,8 @@ export function RolePickerDialog() {
   const role = useRoleStore((s) => s.role);
   const setRole = useRoleStore((s) => s.setRole);
   const mounted = useMounted();
-  const open = mounted && role === null;
+  const termsAcknowledged = useTermsAcknowledged();
+  const open = mounted && termsAcknowledged && role === null;
 
   const choose = (r: Role) => {
     setRole(r);
@@ -41,7 +44,7 @@ export function RolePickerDialog() {
     <Dialog open={open}>
       <DialogContent
         showClose={false}
-        className="max-w-2xl"
+        className="max-h-[85dvh] max-w-2xl overflow-y-auto"
         onEscapeKeyDown={(e) => e.preventDefault()}
         onPointerDownOutside={(e) => e.preventDefault()}
       >
@@ -54,8 +57,8 @@ export function RolePickerDialog() {
           </DialogTitle>
           <DialogDescription className="text-md">
             Select the role that fits your current work. The portal filters
-            content for you. Switch any time from the topbar role switcher or
-            the command palette.
+            content for you. Switch any time from the topbar role switcher, or
+            from the top of the menu drawer on mobile.
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-3 sm:grid-cols-2">
