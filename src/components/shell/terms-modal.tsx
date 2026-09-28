@@ -109,7 +109,8 @@ function acknowledgeTerms() {
   clearedThisSession = true;
   // The native storage event fires cross-tab only. This synthetic event
   // re-reads the snapshot in this tab for the dialog and the role picker.
-  window.dispatchEvent(new StorageEvent("storage", { key: STORAGE_KEY }));
+  // The subscriber ignores the payload, so a plain Event carries it.
+  window.dispatchEvent(new Event("storage"));
 }
 
 /**
