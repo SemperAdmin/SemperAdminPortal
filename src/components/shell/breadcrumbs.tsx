@@ -141,6 +141,21 @@ function getServerPageTitle(): string | null {
 }
 
 /**
+ * The 404 page builds at /_not-found and serves at whatever URL missed. A
+ * trail built from either path is wrong, and the two disagree, which threw
+ * a hydration mismatch. not-found.tsx marks its main with data-not-found.
+ * The server snapshot reads the DOM on the client too, so hydration sees
+ * the same answer the build rendered.
+ */
+function getOnNotFoundPage(): boolean {
+  return document.querySelector("[data-not-found]") !== null;
+}
+
+function getServerOnNotFoundPage(): boolean {
+  return typeof document !== "undefined" && getOnNotFoundPage();
+}
+
+/**
  * Drop intermediate path segments that carry no real page. The crumb
  * disappears entirely so the trail reads cleanly.
  *
@@ -170,8 +185,14 @@ export function Breadcrumbs({
     getPageTitle,
     getServerPageTitle
   );
+  const onNotFoundPage = React.useSyncExternalStore(
+    subscribeToPageTitle,
+    getOnNotFoundPage,
+    getServerOnNotFoundPage
+  );
   const pathname = pathnameOverride ?? real ?? "/";
   if (pathname === "/" || pathname === "") return null;
+  if (onNotFoundPage || pathname.startsWith("/_not-found")) return null;
 
   const segments = pathname.split("/").filter(Boolean);
   const trail = segments

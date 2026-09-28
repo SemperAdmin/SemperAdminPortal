@@ -169,7 +169,7 @@ export function CommandPalette({ open, onOpenChange }: CommandPaletteProps) {
                 </Command.Loading>
               )}
 
-              {searching && (
+              {pages.length > 0 && (
                 <Command.Group
                   heading="Pages"
                   className="px-1 pt-1 pb-2 text-xs font-semibold tracking-wider text-[var(--color-muted-foreground)] uppercase"

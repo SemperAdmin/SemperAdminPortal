@@ -74,6 +74,7 @@ function FourOhFour() {
   return (
     <main
       id="main"
+      data-not-found=""
       className="mx-auto flex min-h-[60dvh] max-w-2xl flex-col items-center justify-center px-4 text-center"
     >
       <p className="mb-3 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--color-usmc-scarlet)]">
