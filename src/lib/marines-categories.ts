@@ -1283,7 +1283,7 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     slug: "oconus-tour-extension-incentive",
     label: "OCONUS Tour Extension Incentive",
     shortLabel: "OCONUS Extension",
-    description: "Up to $80/month or $2,000/year (or 30 days SR&R absence) for extending OCONUS tours.",
+    description: "Extend 12 months or more overseas. Pick $2,000, 30 days SR&R leave, or 15 to 20 days SR&R with a paid trip home.",
     icon: "RefreshCcw",
     pageType: "leaf",
   },
