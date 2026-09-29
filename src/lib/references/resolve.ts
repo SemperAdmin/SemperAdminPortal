@@ -16,6 +16,13 @@
  * chapter, section, paragraph metadata, parenthetical commentary, and the
  * comma-prefixed tail that authors append for context. Each candidate form is
  * tried in turn against the registry alias map.
+ *
+ * Revision wildcard. A candidate missing the exact alias map retries against
+ * byBase with its trailing revision letter collapsed, so MCO 1742.1C finds
+ * the MCO 1742.1 series entry. Exact aliases always win.
+ *
+ * Compound references. "DoDI 1000.04, 3.1.b(1), MCO 1742.1C" names two
+ * documents. A miss on the whole string retries each document segment.
  */
 
 import citationIndex from "@/generated/citations.json";
@@ -24,6 +31,7 @@ import type { Citation } from "@/lib/content/schemas";
 interface CitationIndexShape {
   byId: Record<string, Citation>;
   byAlias: Record<string, string>;
+  byBase: Record<string, string>;
 }
 
 const INDEX = citationIndex as CitationIndexShape;
@@ -43,6 +51,66 @@ function normalize(input: string): string {
     .replace(/,/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+/**
+ * Mirror of collapseRevision in scripts/citations-validate.mjs. Order and
+ * instruction series revise by trailing letter. DODI, MARADMIN, USC, and
+ * forms stay literal.
+ */
+const REVISION_GATED = new Set([
+  "MCO",
+  "SECNAVINST",
+  "OPNAVINST",
+  "MCBUL",
+  "NAVMCDIR",
+  "JAGINST",
+]);
+
+export function collapseRevision(key: string): string {
+  const parts = key.split(" ");
+  const type = parts[0];
+  const num = parts[1];
+  if (type === undefined || num === undefined || !REVISION_GATED.has(type)) return key;
+  if (/^P?\d[\dA-Z.\-/]*[A-Z]$/.test(num)) {
+    parts[1] = num.slice(0, -1) + "_";
+  } else if (/^P?\d[\dA-Z.\-/]*\d$/.test(num)) {
+    parts[1] = num + "_";
+  } else {
+    return key;
+  }
+  return parts.join(" ");
+}
+
+const DOC_TYPE_START =
+  /^(?:MCO|MCBUL|NAVMC|NAVMCDIR|SECNAVINST|SECNAV|OPNAVINST|OPNAV|JAGINST|DODI|DODD|DODM|DOD ?FMR|DD ?FORM|MARADMIN|ALMAR|ALNAV|NAVADMIN|JTR|FPM|MCTFSPRIUM|PAAN|PAA|\d+ U\.?S\.?C|\d+ CFR)\b/i;
+const COMPOUND_BOUNDARY = /\s*[;,&]\s*(?:and\s+)?|\s+and\s+/gi;
+
+/**
+ * Mirror of splitCompoundReference in scripts/citations-validate.mjs. Splits
+ * a reference naming several documents into one segment per document. A
+ * boundary counts only when the next text opens with a document type and
+ * the boundary sits outside parentheses.
+ */
+export function splitCompoundReference(input: string): string[] {
+  const text = input.trim();
+  const parts: string[] = [];
+  const boundary = new RegExp(COMPOUND_BOUNDARY.source, "gi");
+  let start = 0;
+  let match: RegExpExecArray | null;
+  while ((match = boundary.exec(text)) !== null) {
+    const end = match.index + match[0].length;
+    if (!DOC_TYPE_START.test(text.slice(end))) continue;
+    const before = text.slice(0, match.index);
+    const depth = (before.match(/\(/g) ?? []).length - (before.match(/\)/g) ?? []).length;
+    if (depth > 0) continue;
+    const segment = text.slice(start, match.index).trim();
+    if (segment) parts.push(segment);
+    start = end;
+  }
+  const tail = text.slice(start).trim();
+  if (tail) parts.push(tail);
+  return parts.length > 0 ? parts : [text];
 }
 
 /**
@@ -137,9 +205,17 @@ function generateLookupCandidates(input: string): string[] {
  */
 export function resolveReference(input: string | null | undefined): Citation | null {
   if (!input) return null;
+  for (const part of [input, ...splitCompoundReference(input)]) {
+    const record = resolveSingle(part);
+    if (record) return record;
+  }
+  return null;
+}
+
+function resolveSingle(input: string): Citation | null {
   for (const candidate of generateLookupCandidates(input)) {
     const key = normalize(candidate);
-    const id = INDEX.byAlias[key];
+    const id = INDEX.byAlias[key] ?? INDEX.byBase[collapseRevision(key)];
     if (id) {
       const record = INDEX.byId[id];
       if (record) return record;

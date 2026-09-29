@@ -8,7 +8,7 @@ import {
   citationSchema,
   assertUniqueCitationAliases,
   buildCitationIndex,
-  resolveReferenceToId,
+  resolveReferenceSegments,
 } from "./citations-validate.mjs";
 import { aliasesFor } from "./search-synonyms.mjs";
 
@@ -270,7 +270,9 @@ if (fs.existsSync(CITATIONS_DIR)) {
       citations.length +
       " entries, " +
       Object.keys(citationIndex.byAlias).length +
-      " aliases"
+      " aliases, " +
+      Object.keys(citationIndex.byBase).length +
+      " revision bases"
   );
 }
 
@@ -316,13 +318,15 @@ if (citationIndex) {
   let scanUnresolved = 0;
   function scanRefs(refs, payload) {
     if (!Array.isArray(refs)) return;
+    // A compound reference counts once per document it names.
     for (const ref of refs) {
-      const id = resolveReferenceToId(ref, citationIndex.byAlias);
-      if (id && reverse[id]) {
-        push(id, payload);
-        scanResolved++;
-      } else {
-        scanUnresolved++;
+      for (const id of resolveReferenceSegments(ref, citationIndex)) {
+        if (id && reverse[id]) {
+          push(id, payload);
+          scanResolved++;
+        } else {
+          scanUnresolved++;
+        }
       }
     }
   }

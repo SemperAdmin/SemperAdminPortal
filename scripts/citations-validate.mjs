@@ -72,6 +72,44 @@ export function normalizeCitationAlias(input) {
     .trim();
 }
 
+// Order and instruction series revise by trailing letter. MCO 1500.59,
+// MCO 1500.59A, and a future MCO 1500.59B name one document series. DODI,
+// MARADMIN, USC, and forms carry no letter revision and stay literal, so
+// DODI 1332.30 never collapses.
+const REVISION_GATED = new Set([
+  "MCO",
+  "SECNAVINST",
+  "OPNAVINST",
+  "MCBUL",
+  "NAVMCDIR",
+  "JAGINST",
+]);
+
+// Collapses the trailing revision letter of a normalized key to a single
+// base slot. A number ending in a digit gains the same slot. Embedded
+// letters survive, so MCO 1001R.1L and MCO 1001R.1 both become MCO 1001R.1_.
+// Returns the key unchanged when the type is not revision-gated.
+export function collapseRevision(key) {
+  const parts = key.split(" ");
+  if (parts.length < 2 || !REVISION_GATED.has(parts[0])) return key;
+  const num = parts[1];
+  if (/^P?\d[\dA-Z.\-/]*[A-Z]$/.test(num)) {
+    parts[1] = num.slice(0, -1) + "_";
+  } else if (/^P?\d[\dA-Z.\-/]*\d$/.test(num)) {
+    parts[1] = num + "_";
+  } else {
+    return key;
+  }
+  return parts.join(" ");
+}
+
+// Revision letter as a rank. A bare number ranks 0, A ranks 1, B ranks 2.
+function revisionRank(key) {
+  const num = key.split(" ")[1] || "";
+  const last = num.slice(-1);
+  return /[A-Z]/.test(last) ? last.charCodeAt(0) - 64 : 0;
+}
+
 export function assertUniqueCitationAliases(items) {
   const owners = new Map();
   for (const item of items) {
@@ -94,16 +132,36 @@ export function assertUniqueCitationAliases(items) {
   }
 }
 
+// byAlias holds exact keys and stays unique. byBase is the revision wildcard
+// fallback. Several entries share a base when the registry carries more than
+// one revision of a series, so the base goes to the visible entry with the
+// highest revision letter. Ties keep the first entry seen.
 export function buildCitationIndex(items) {
   const byId = {};
   const byAlias = {};
+  const byBase = {};
+  const baseScore = {};
   for (const item of items) {
     byId[item.id] = item;
     for (const raw of item.aliases) {
-      byAlias[normalizeCitationAlias(raw)] = item.id;
+      const key = normalizeCitationAlias(raw);
+      byAlias[key] = item.id;
+      const base = collapseRevision(key);
+      if (base === key) continue;
+      const score = (item.hidden ? 0 : 100) + revisionRank(key);
+      if (!(base in baseScore) || score > baseScore[base]) {
+        baseScore[base] = score;
+        byBase[base] = item.id;
+      }
     }
   }
-  return { byId, byAlias };
+  return { byId, byAlias, byBase };
+}
+
+// One candidate against the index. Exact alias first, revision wildcard second.
+function lookupCandidate(candidate, index) {
+  const key = normalizeCitationAlias(candidate);
+  return index.byAlias[key] || index.byBase[collapseRevision(key)] || null;
 }
 
 // Mirror of generateLookupCandidates in src/lib/references/resolve.ts.
@@ -152,13 +210,50 @@ export function generateLookupCandidates(input) {
   return out;
 }
 
-// Resolves a raw reference string to a citation id, or null. Used at build
-// time to compute the reverse index of citing pages per citation.
-export function resolveReferenceToId(input, byAlias) {
-  if (!input) return null;
+// A segment opens a new document when it starts with one of these types.
+const DOC_TYPE_START =
+  /^(?:MCO|MCBUL|NAVMC|NAVMCDIR|SECNAVINST|SECNAV|OPNAVINST|OPNAV|JAGINST|DODI|DODD|DODM|DOD ?FMR|DD ?FORM|MARADMIN|ALMAR|ALNAV|NAVADMIN|JTR|FPM|MCTFSPRIUM|PAAN|PAA|\d+ U\.?S\.?C|\d+ CFR)\b/i;
+const COMPOUND_BOUNDARY = /\s*[;,&]\s*(?:and\s+)?|\s+and\s+/gi;
+
+// Mirror of splitCompoundReference in src/lib/references/resolve.ts.
+// Splits "DoDI 1000.04, 3.1.b(1), MCO 1742.1C, par 4b" into one segment per
+// document. A boundary counts only when the next text opens with a document
+// type and the boundary sits outside parentheses, so "MCO 5800.16, Vol. 8"
+// and "Ch. 5, 6, 7" stay whole. Each segment keeps its tail for the
+// candidate cuts. Authored reference text never changes.
+export function splitCompoundReference(input) {
+  const text = String(input).trim();
+  const parts = [];
+  const boundary = new RegExp(COMPOUND_BOUNDARY.source, "gi");
+  let start = 0;
+  let match;
+  while ((match = boundary.exec(text)) !== null) {
+    const end = match.index + match[0].length;
+    if (!DOC_TYPE_START.test(text.slice(end))) continue;
+    const before = text.slice(0, match.index);
+    const depth = (before.match(/\(/g) || []).length - (before.match(/\)/g) || []).length;
+    if (depth > 0) continue;
+    const segment = text.slice(start, match.index).trim();
+    if (segment) parts.push(segment);
+    start = end;
+  }
+  const tail = text.slice(start).trim();
+  if (tail) parts.push(tail);
+  return parts.length > 0 ? parts : [text];
+}
+
+function resolveSingleToId(input, index) {
   for (const candidate of generateLookupCandidates(input)) {
-    const id = byAlias[normalizeCitationAlias(candidate)];
+    const id = lookupCandidate(candidate, index);
     if (id) return id;
   }
   return null;
+}
+
+// Resolves each document segment of a raw reference string. Returns one
+// entry per segment, the citation id or null, in authored order. Used at
+// build time for the reverse index of citing pages and the coverage count.
+export function resolveReferenceSegments(input, index) {
+  if (!input) return [];
+  return splitCompoundReference(input).map((part) => resolveSingleToId(part, index));
 }
