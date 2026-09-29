@@ -41,6 +41,25 @@ def normalize(s: str) -> str:
     return text
 
 
+# Mirror of collapseRevision in scripts/citations-validate.mjs. Order and
+# instruction series revise by trailing letter. Other types stay literal.
+REVISION_GATED = {"MCO", "SECNAVINST", "OPNAVINST", "MCBUL", "NAVMCDIR", "JAGINST"}
+
+
+def collapse_revision(key: str) -> str:
+    parts = key.split(" ")
+    if len(parts) < 2 or parts[0] not in REVISION_GATED:
+        return key
+    num = parts[1]
+    if re.match(r"^P?\d[\dA-Z.\-/]*[A-Z]$", num):
+        parts[1] = num[:-1] + "_"
+    elif re.match(r"^P?\d[\dA-Z.\-/]*\d$", num):
+        parts[1] = num + "_"
+    else:
+        return key
+    return " ".join(parts)
+
+
 def generate_candidates(input_str: str) -> list[str]:
     trimmed = input_str.strip()
     candidates: list[str] = []
@@ -66,11 +85,12 @@ def generate_candidates(input_str: str) -> list[str]:
     return candidates
 
 
-def resolve(input_str: str, by_alias: dict[str, str]) -> str | None:
+def resolve(input_str: str, by_alias: dict[str, str], by_base: dict[str, str]) -> str | None:
     if not input_str:
         return None
     for c in generate_candidates(input_str):
-        hit = by_alias.get(normalize(c))
+        key = normalize(c)
+        hit = by_alias.get(key) or by_base.get(collapse_revision(key))
         if hit:
             return hit
     return None
@@ -96,8 +116,36 @@ def yaml_references(text: str) -> list[str]:
     return refs
 
 
+# Mirror of splitCompoundReference in scripts/citations-validate.mjs. One
+# segment per document named. A boundary counts only when the next text opens
+# with a document type and the boundary sits outside parentheses.
+DOC_TYPE_START = re.compile(
+    r"^(?:MCO|MCBUL|NAVMC|NAVMCDIR|SECNAVINST|SECNAV|OPNAVINST|OPNAV|JAGINST|DODI|DODD|DODM|"
+    r"DOD ?FMR|DD ?FORM|MARADMIN|ALMAR|ALNAV|NAVADMIN|JTR|FPM|MCTFSPRIUM|PAAN|PAA|"
+    r"\d+ U\.?S\.?C|\d+ CFR)\b",
+    re.IGNORECASE,
+)
+COMPOUND_BOUNDARY = re.compile(r"\s*[;,&]\s*(?:and\s+)?|\s+and\s+", re.IGNORECASE)
+
+
 def split_compound(citation: str) -> list[str]:
-    return [p for p in re.split(r"[;]\s*", citation) if p.strip()]
+    text = citation.strip()
+    parts: list[str] = []
+    start = 0
+    for m in COMPOUND_BOUNDARY.finditer(text):
+        if not DOC_TYPE_START.match(text[m.end():]):
+            continue
+        before = text[: m.start()]
+        if before.count("(") - before.count(")") > 0:
+            continue
+        segment = text[start : m.start()].strip()
+        if segment:
+            parts.append(segment)
+        start = m.end()
+    tail = text[start:].strip()
+    if tail:
+        parts.append(tail)
+    return parts or [text]
 
 
 def scan_all() -> list[tuple[str, str, str]]:
@@ -142,6 +190,7 @@ def main() -> int:
 
     index = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
     by_alias: dict[str, str] = index.get("byAlias", {})
+    by_base: dict[str, str] = index.get("byBase", {})
 
     total = 0
     resolved = 0
@@ -153,7 +202,7 @@ def main() -> int:
         for piece in split_compound(citation):
             total += 1
             stats = per_collection.setdefault(collection, {"resolved": 0, "unresolved": 0})
-            hit = resolve(piece, by_alias)
+            hit = resolve(piece, by_alias, by_base)
             if hit:
                 resolved += 1
                 stats["resolved"] += 1
