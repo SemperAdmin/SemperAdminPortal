@@ -23,7 +23,25 @@ updates:
     allow:
       - dependency-type: "production"
       - dependency-type: "development"
-    # No ignore rules. A prior "gray-matter 4.x" ignore covered the package's
+    # Two scoped ignores, majors only, each with an exit condition.
+    #
+    # typescript 7 and eslint 10 break the lint step, and lint gates the
+    # deploy. typescript-eslint, bundled in eslint-config-next, rejects
+    # TypeScript 7 outright (typescript-eslint issue 10940). ESLint 10 fails
+    # loading the React plugin in the same config. The catch-all group above
+    # pulled both majors in twice, PR 98 and PR 120, and each time GitHub
+    # Pages stopped publishing until a manual revert (commit 6049ee7, then
+    # PR 123). Minor and patch updates to both still flow.
+    #
+    # Remove both entries once eslint-config-next ships a typescript-eslint
+    # supporting TypeScript 7 and a React plugin passing on ESLint 10. Bump
+    # them by hand then, with lint run locally first.
+    ignore:
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "eslint"
+        update-types: ["version-update:semver-major"]
+    # No other ignore rules. A prior "gray-matter 4.x" ignore covered the package's
     # entire published range, since 4.0.3 is its latest release, and it landed
     # with no recorded reason. While it stood, nothing reached us about that
     # dependency chain, and the high-severity js-yaml advisory
