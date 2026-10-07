@@ -49,7 +49,7 @@ IPAC sits between unit S-1 and DFAS. Errors at this desk produce pay disputes, m
 
 <IPACvsUnitDecisionMatrix rows={[
   { unit: "Receive orders, sponsor handoff, unit check-in", ipac: "Validate the inbound package, run MCTFS join" },
-  { unit: "Stage NAVMC 10922, SGLI election, BAH eligibility docs", ipac: "Post BAH and BAS, post FLPP and SDAP if eligible" },
+  { unit: "Stage NAVMC 10922, SGLI election, BAH eligibility docs", ipac: "Post BAH and BAS, post FLPB and SDAP if eligible" },
   { unit: "Hand off OMPF Field Folder to IPAC", ipac: "Open OMPF Field Folder, file KSDs per IRAM Chapter 6" },
   { unit: "Reconcile unit roster", ipac: "Pull EDFR, clear rejections, post corrections" }
 ]} />
@@ -111,7 +111,7 @@ The 0111 pay clerk runs the BAH start per DoDFMR Vol 7A Chapter 26<Citation sour
 If the Marine moves into government quarters on arrival, post a BAH stop on the same date. Document the quarters assignment in the OMPF.
 
 <IPACRoutingCallout billet="ipac-pay-clerk" route="Pay starts post on the same MCTFS cycle as the join">
-  Post BAH, BAS, FLPP, and SDAP on the same join cycle. A delayed pay post creates a member debt when retroactive starts hit one or two cycles later.
+  Post BAH, BAS, FLPB, and SDAP on the same join cycle. A delayed pay post creates a member debt when retroactive starts hit one or two cycles later.
 </IPACRoutingCallout>
 
 ### Step 5 - Post BAS
@@ -179,11 +179,11 @@ The top five MCTFS join rejections at the IPAC inbound desk.
 
 ## Pay Starts on the Same Cycle
 
-IPAC posts BAH, BAS, FLPP, and SDAP on the same MCTFS cycle as the join.
+IPAC posts BAH, BAS, FLPB, and SDAP on the same MCTFS cycle as the join.
 
 - BAH start, effective the arrival date
 - BAS start, effective the arrival date
-- FLPP start if the Marine carries a current DLPT score and the billet supports it
+- FLPB start if the Marine carries current DLPT or OPI scores, a qualifying FLPB category under MARADMIN 480/26, and a signed Page 11 agreement
 - SDAP start if the Marine reports to a billet on the SDAP table
 
 A pay start posted off-cycle generates a retroactive payment one to two cycles later. The retroactive often hits at the wrong rate and produces a member debt. Run the pay starts on the join cycle.

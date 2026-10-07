@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import {
-  findAdminBySlug,
+  findAdminByRoute,
   getAdminContent,
   getAdminByUnitAndTopic
 } from "@/lib/content/loader";
@@ -45,8 +45,8 @@ export async function generateMetadata({
 }: {
   params: Promise<{ unitType: string; topic: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const entry = findAdminBySlug(slug);
+  const { unitType, topic, slug } = await params;
+  const entry = findAdminByRoute(unitType, topic, slug);
   if (!entry) return { title: "Admin" };
   return {
     title: entry.frontmatter.title,
@@ -61,10 +61,9 @@ export default async function AdminDetail({
 }) {
   const { unitType, topic, slug } = await params;
   if (!UNIT_TYPES.includes(unitType as UnitType)) notFound();
-  const entry = findAdminBySlug(slug);
+  const entry = findAdminByRoute(unitType, topic, slug);
   if (!entry) notFound();
   const fm = entry.frontmatter;
-  if (fm.unitType !== unitType || fm.topic !== topic) notFound();
 
   const ut = unitType as UnitType;
   const topicLabel = toTopicLabel(topic);

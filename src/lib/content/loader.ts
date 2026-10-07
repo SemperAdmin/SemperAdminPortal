@@ -113,10 +113,22 @@ export function getAdminByUnit(
   return getAdminContent().filter((e) => e.frontmatter.unitType === unitType);
 }
 
-export function findAdminBySlug(
+/**
+ * Admin slugs repeat across topics, every topic carries an "overview". Match
+ * the full route, unit type, topic, and slug, or the first "overview" wins
+ * and every other topic's overview renders as a 404.
+ */
+export function findAdminByRoute(
+  unitType: string,
+  topic: string,
   slug: string
 ): ContentEntry<AdminContent> | undefined {
-  return getAdminContent().find((e) => e.frontmatter.slug === slug);
+  return getAdminContent().find(
+    (e) =>
+      e.frontmatter.unitType === unitType &&
+      e.frontmatter.topic === topic &&
+      e.frontmatter.slug === slug
+  );
 }
 
 /**

@@ -518,6 +518,16 @@ export const LEADER_CATEGORIES: LeaderCategory[] = [
     icon: "Calendar",
   },
   {
+    slug: "records-staff-section-records-manager",
+    leafSlug: "staff-section-records-manager",
+    parentGroup: "records",
+    label: "Staff Section Records Manager (SSRM)",
+    shortLabel: "SSRM",
+    description:
+      "Section records in CROSS and SharePoint Online, training, and IGMC 5210 evidence.",
+    icon: "ClipboardList",
+  },
+  {
     slug: "readiness-at-section-planning",
     leafSlug: "at-section-planning",
     parentGroup: "readiness",
@@ -1054,7 +1064,7 @@ export const LEADER_PARENT_GROUPS: LeaderParentGroup[] = [
     label: "Records Verification",
     shortLabel: "Records",
     description:
-      "Section records audit cadence, MCTFS review oversight, OMPF audit walkthrough, promotion board records prep. Catching errors before they hurt a Marine.",
+      "Section records audit cadence, MCTFS review oversight, OMPF audit walkthrough, promotion board records prep, and section records management in CROSS. Catching errors before they hurt a Marine.",
     icon: "FileText",
     children: [
       "records-section-records-audit",
@@ -1063,6 +1073,7 @@ export const LEADER_PARENT_GROUPS: LeaderParentGroup[] = [
       "records-ompf-audit-walkthrough",
       "records-promotion-board-prep",
       "records-awards-records-cleanup",
+      "records-staff-section-records-manager",
     ],
   },
   {
