@@ -18,7 +18,7 @@
   "subsections": [
     {
       "id": "01.0",
-      "title": "Administration, Finance, Operations, Quality Management",
+      "title": "Administration",
       "description": "",
       "items": [
         {
@@ -140,7 +140,14 @@
             "MPM Sect 26 and MCO 5110.4B, Chap 2, par 27"
           ],
           "evidenceHint": null
-        },
+        }
+      ]
+    },
+    {
+      "id": "02.0",
+      "title": "Finance",
+      "description": "",
+      "items": [
         {
           "code": "0201",
           "question": "Has the Postal Finance Officer (PFO) completed quarterly/annual MPO inspections?",
@@ -268,7 +275,14 @@
             "USPS Handbook F-101, Chap 9-1 and MPM 24.2.f and g"
           ],
           "evidenceHint": null
-        },
+        }
+      ]
+    },
+    {
+      "id": "03.0",
+      "title": "Operations",
+      "description": "",
+      "items": [
         {
           "code": "0301",
           "question": "Are Mail Handling Procedures (MHP) and floor changes being prepared and distributed for deploying units?",
@@ -670,7 +684,14 @@
             "MPM Sect 31 and MCO 5110.4B, Chap 1, par 2b(6)"
           ],
           "evidenceHint": null
-        },
+        }
+      ]
+    },
+    {
+      "id": "04.0",
+      "title": "Quality Management",
+      "description": "",
+      "items": [
         {
           "code": "0401",
           "question": "Has the postal activity established a Quality Assurance/Quality Control (QA/QC) section?",
