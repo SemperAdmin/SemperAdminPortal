@@ -10,6 +10,9 @@ import { ShieldCheck, AlertTriangle, ShieldAlert } from "lucide-react";
  *   2. FA grade      - Effective / Ineffective, applied per functional area.
  *   3. FAC question  - Compliant / Discrepancy / Finding, applied per item.
  *
+ * A footer note carries the MCO 5040.6K Chapter 4 exclusion of assist
+ * visits from the command tier.
+ *
  * The Compliant / Discrepancy / Finding palette mirrors the CalloutChip in
  * the inspector guide so users learn the visual vocabulary once.
  */
@@ -63,13 +66,13 @@ export function IgmcGradingRubric() {
               label: "Effective",
               meta: "Program in compliance and assured forward",
               tone: "fresh",
-              note: "May still carry findings or discrepancies",
+              note: "Findings and discrepancies do not rule it out",
             },
             {
               label: "Ineffective",
               meta: "Does not meet intent of the directive",
               tone: "stale",
-              note: "Includes FAs that exist in name only",
+              note: "Includes FAs existing in name only",
             },
           ]}
         />
@@ -86,19 +89,26 @@ export function IgmcGradingRubric() {
             },
             {
               label: "Discrepancy",
-              meta: "Minor deviation, FA manager can fix",
+              meta: "Minor deviation, FA manager fixes it",
               tone: "aging",
               note: "Minor risk to the command",
             },
             {
               label: "Finding",
-              meta: "Significant problem, requires CO involvement",
+              meta: "Substantial problem or systemic noncompliance",
               tone: "stale",
-              note: "Greater than minor risk",
+              note: "Often needs commander corrective guidance",
             },
           ]}
         />
       </div>
+
+      <p className="mt-4 border-t border-[var(--color-border)] pt-3 text-[11px] text-[var(--color-muted-foreground)]">
+        Assist visits do not count. FAs receiving an assist visit, an
+        unofficial evaluation requested by a unit or directed by a senior
+        commander, stay out of the command tier calculation.{" "}
+        <span className="font-mono">MCO 5040.6K, Ch 4, par 1, Note</span>
+      </p>
     </section>
   );
 }

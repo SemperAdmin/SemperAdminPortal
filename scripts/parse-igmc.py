@@ -143,26 +143,44 @@ def collect_rows(doc):
     return out
 
 
+CODE_SPLIT_RE = re.compile(r"(?<!\d)0\d{3}(?!\d)")
 GENERIC_SUB_RE = re.compile(r"^(items|section\s+\d+)$", re.I)
 SUB_ITER_RE = re.compile(
     r"Subsection\s+(\d+)\s*[–—\-]+\s*(.*?)(?=\s*Subsection\s+\d+\s*[–—\-]|$)", re.I | re.S)
 
 
-def parse_subsection_header(text):
-    """Return (number, title) for a header cell, or None.
+def parse_subsection_headers(text):
+    """Return every (number, title) pair a header cell lists, in order.
 
-    A cell sometimes lists several Subsection lines at once (5110.1 puts
+    A cell sometimes lists several Subsection lines at once. 5110.1 puts
     Administration, Finance, Operations, and Quality Management in one
-    cell above a single run of codes). Join those titles so the label is
-    honest about what the block covers.
+    cell above a single run of codes 0101 to 0410. Each code still belongs
+    to the subsection matching its first two digits, so callers keep the
+    full list and route each code by prefix.
     """
     norm = re.sub(r"\s+", " ", text or "").strip()
     found = SUB_ITER_RE.findall(norm)
+    # When one cell holds the headers and the item rows below them, the
+    # last title runs into the first code. Cut each title at the first
+    # four-digit item code.
+    return [(int(n), CODE_SPLIT_RE.split(t)[0].strip().rstrip("."))
+            for n, t in found]
+
+
+def parse_subsection_header(text):
+    """Return (number, title) for the first subsection a header cell lists."""
+    found = parse_subsection_headers(text)
     if not found:
         return None
-    num = int(found[0][0])
-    titles = [t.strip().rstrip(".") for _, t in found if t.strip()]
-    return num, ", ".join(titles)
+    num = found[0][0]
+    title = next((t for n, t in found if n == num and t), "")
+    return num, title
+
+
+def header_for_code(headers, code):
+    """Pick the header whose number matches the code prefix, else the first."""
+    pre = int(code[:2])
+    return next((h for h in headers if h[0] == pre), headers[0])
 
 
 def body_fallbacks(doc, meta):
@@ -230,13 +248,13 @@ def code_headers_in_order(doc):
         tag = child.tag.split("}")[-1]
         if tag == "p":
             txt = text_of(child)
-            hdr = parse_subsection_header(txt)
-            if hdr:
-                cur = hdr
+            hdrs = parse_subsection_headers(txt)
+            if hdrs:
+                cur = hdrs
                 continue
             m2 = BODY_CODE_RE.match(txt)
             if m2 and cur:
-                out[m2.group(1)] = cur
+                out[m2.group(1)] = header_for_code(cur, m2.group(1))
         elif tag == "tbl":
             for tr in child.iter(qn("w:tr")):
                 # Cells sit inside w:sdt content controls in several FACs,
@@ -245,12 +263,12 @@ def code_headers_in_order(doc):
                 if tc is None:
                     continue
                 txt = text_of(tc)
-                hdr = parse_subsection_header(txt)
-                if hdr:
-                    cur = hdr
+                hdrs = parse_subsection_headers(txt)
+                if hdrs:
+                    cur = hdrs
                     continue
                 if ITEM_CODE_RE.match(txt) and cur:
-                    out[txt] = cur
+                    out[txt] = header_for_code(cur, txt)
     return out
 
 
