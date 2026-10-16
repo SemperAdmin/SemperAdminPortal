@@ -153,6 +153,23 @@
     "lastVerified": "2024-12-29"
   },
   {
+    "slug": "advance-bah",
+    "title": "Advance BAH",
+    "summary": "Training on Advance BAH",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9897DEEB8618",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9897DEEB8618",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "advance-bah-application-process-and-documentation-requirements",
     "title": "Advance BAH - Application Process and Documentation Requirements",
     "summary": "Training on Advance BAH - Application Process and Documentation Requirements",
@@ -204,6 +221,43 @@
     "lastVerified": "2025-08-19"
   },
   {
+    "slug": "advance-pay-incident-to-a-pcs-exception-requests-and-approvals",
+    "title": "Advance Pay Incident to a PCS - Exception Requests and Approvals",
+    "summary": "Training on Advance Pay Incident to a PCS - Exception Requests and Approvals",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9877C2EFEA9D",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9877C2EFEA9D",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "advance-pay-incident-to-a-pcs-normal-parameters-application",
+    "title": "Advance Pay Incident to a PCS - Normal Parameters Application",
+    "summary": "Training on Advance Pay Incident to a PCS - Normal Parameters Application",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9878D90FE503",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9878D90FE503",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "advance-pay-incident-to-a-pcs-understanding-the-basics",
     "title": "Advance Pay Incident to a PCS - Understanding the Basics",
     "summary": "Training on Advance Pay Incident to a PCS - Understanding the Basics",
@@ -236,6 +290,26 @@
       "url": ""
     },
     "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "advanced-reasoning-tree-of-thought-and-react",
+    "title": "Advanced Reasoning, Tree-of-Thought and ReAct",
+    "summary": "Training on Advanced Reasoning, Tree-of-Thought and ReAct",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=983999BB376E",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=983999BB376E",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "after-approval-managing-and-modifying-benefits",
@@ -359,6 +433,26 @@
     "lastVerified": "2024-12-29"
   },
   {
+    "slug": "ask-the-ai-to-write-the-prompt",
+    "title": "Ask the AI to Write the Prompt",
+    "summary": "Training on Ask the AI to Write the Prompt",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9840D58DAC5A",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9840D58DAC5A",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "assigned-attached-detached-and-non-deployable-getting-the-numbers-right",
     "title": "Assigned, Attached, Detached, and Non-Deployable - Getting the Numbers Right",
     "summary": "Training on Assigned, Attached, Detached, and Non-Deployable - Getting the Numbers Right",
@@ -386,7 +480,7 @@
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=62676B7B47AC",
     "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=62676B7B47AC",
     "source": {
-      "title": "GTCCP",
+      "title": "Government Travel Charge Card Program",
       "publisher": "MCeLE",
       "url": ""
     },
@@ -533,6 +627,23 @@
     "lastVerified": "2026-06-02"
   },
   {
+    "slug": "bah-rate-protection",
+    "title": "BAH Rate Protection",
+    "summary": "Training on BAH Rate Protection",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9898D1227B2F",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9898D1227B2F",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "bah-rate-protection-maintaining-higher-rates",
     "title": "BAH Rate Protection - Maintaining Higher Rates",
     "summary": "Training on BAH Rate Protection - Maintaining Higher Rates",
@@ -567,6 +678,23 @@
     "lastVerified": "2025-08-20"
   },
   {
+    "slug": "bah-waivers-location-rate",
+    "title": "BAH Waivers (Location Rate)",
+    "summary": "Training on BAH Waivers (Location Rate)",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9899FB148B7C",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9899FB148B7C",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "bamcis-framework-for-prompts",
     "title": "BAMCIS Framework for Prompts",
     "summary": "Training on BAMCIS Framework for Prompts",
@@ -582,6 +710,108 @@
       "url": ""
     },
     "lastVerified": "2025-05-22"
+  },
+  {
+    "slug": "basic-allowance-for-subsistence-bas-bas-ii-approval-and-mctfs-reporting",
+    "title": "Basic Allowance for Subsistence (BAS) - BAS II Approval and MCTFS Reporting",
+    "summary": "Training on Basic Allowance for Subsistence (BAS) - BAS II Approval and MCTFS Reporting",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9984F8F19275",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9984F8F19275",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "basic-allowance-for-subsistence-bas-bas-ii-eligibility-and-the-adequacy-standard",
+    "title": "Basic Allowance for Subsistence (BAS) - BAS II Eligibility and the Adequacy Standard",
+    "summary": "Training on Basic Allowance for Subsistence (BAS) - BAS II Eligibility and the Adequacy Standard",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99857B6DD45B",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99857B6DD45B",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "basic-allowance-for-subsistence-bas-commander-s-discretionary-authority",
+    "title": "Basic Allowance for Subsistence (BAS) - Commander's Discretionary Authority",
+    "summary": "Training on Basic Allowance for Subsistence (BAS) - Commander's Discretionary Authority",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99862A8A8879",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99862A8A8879",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "basic-allowance-for-subsistence-bas-enlisted-bas-vs-bas-ii-authorization",
+    "title": "Basic Allowance for Subsistence (BAS) - Enlisted BAS vs BAS II Authorization",
+    "summary": "Training on Basic Allowance for Subsistence (BAS) - Enlisted BAS vs BAS II Authorization",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99871D3C8B35",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99871D3C8B35",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "basic-allowance-for-subsistence-bas-messing-separately-and-the-navmc-10522",
+    "title": "Basic Allowance for Subsistence (BAS) - Messing Separately and the NAVMC 10522",
+    "summary": "Training on Basic Allowance for Subsistence (BAS) - Messing Separately and the NAVMC 10522",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99883EDFB854",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99883EDFB854",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "basic-allowance-for-subsistence-bas-who-messes-separately-without-a-navmc-10522",
+    "title": "Basic Allowance for Subsistence (BAS) - Who Messes Separately Without a NAVMC 10522",
+    "summary": "Training on Basic Allowance for Subsistence (BAS) - Who Messes Separately Without a NAVMC 10522",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9989C9D51F9F",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9989C9D51F9F",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "basic-charts-column-bar-pie",
@@ -616,6 +846,23 @@
       "url": ""
     },
     "lastVerified": "2025-07-25"
+  },
+  {
+    "slug": "basic-needs-allowance-bna-certification-and-ongoing-requirements",
+    "title": "Basic Needs Allowance (BNA) - Certification and Ongoing Requirements",
+    "summary": "Training on Basic Needs Allowance (BNA) - Certification and Ongoing Requirements",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99902607D48E",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99902607D48E",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "basic-needs-allowance-bna-eligibility-determination",
@@ -754,6 +1001,26 @@
     "lastVerified": "2026-06-02"
   },
   {
+    "slug": "build-a-prompt-library-that-works",
+    "title": "Build a Prompt Library That Works",
+    "summary": "Training on Build a Prompt Library That Works",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=984113398600",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=984113398600",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "building-a-basic-report-running-options-and-saving",
     "title": "Building a basic report, Running options, and Saving",
     "summary": "Building a basic report, Running options, and Saving.",
@@ -769,6 +1036,26 @@
       "url": ""
     },
     "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "building-award-narratives-and-citations",
+    "title": "Building Award Narratives and Citations",
+    "summary": "Training on Building Award Narratives and Citations",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98424BA04DD1",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98424BA04DD1",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "business-date-time-functions-and-expressions",
@@ -890,6 +1177,23 @@
     "lastVerified": "2025-10-26"
   },
   {
+    "slug": "career-sea-pay-csp",
+    "title": "Career Sea Pay (CSP)",
+    "summary": "Training on Career Sea Pay (CSP)",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98795C4BBA47",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98795C4BBA47",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "cba-covered-expenses",
     "title": "CBA Covered Expenses",
     "summary": "Training on CBA Covered Expenses",
@@ -900,11 +1204,31 @@
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=62684B373579",
     "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=62684B373579",
     "source": {
-      "title": "GTCCP",
+      "title": "Government Travel Charge Card Program",
       "publisher": "MCeLE",
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "chain-of-thought-step-by-step-and-scratchpad",
+    "title": "Chain-of-Thought, Step by Step and Scratchpad",
+    "summary": "Training on Chain-of-Thought, Step by Step and Scratchpad",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=984327087F8C",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=984327087F8C",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "choose-function",
@@ -941,6 +1265,26 @@
     "lastVerified": "2024-12-29"
   },
   {
+    "slug": "choosing-a-commercial-tool-chatgpt-claude-gemini-copilot",
+    "title": "Choosing a Commercial Tool, ChatGPT, Claude, Gemini, Copilot",
+    "summary": "Training on Choosing a Commercial Tool, ChatGPT, Claude, Gemini, Copilot",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9844E4EF5DCF",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9844E4EF5DCF",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "clearing-delinquencies-apcs",
     "title": "Clearing Delinquencies - APCs",
     "summary": "Training on Clearing Delinquencies - APCs",
@@ -951,7 +1295,7 @@
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6269BDE90472",
     "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6269BDE90472",
     "source": {
-      "title": "GTCCP",
+      "title": "Government Travel Charge Card Program",
       "publisher": "MCeLE",
       "url": ""
     },
@@ -968,7 +1312,7 @@
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6270CAD809A6",
     "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6270CAD809A6",
     "source": {
-      "title": "GTCCP",
+      "title": "Government Travel Charge Card Program",
       "publisher": "MCeLE",
       "url": ""
     },
@@ -985,11 +1329,31 @@
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=62719B4F2AC2",
     "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=62719B4F2AC2",
     "source": {
-      "title": "GTCCP",
+      "title": "Government Travel Charge Card Program",
       "publisher": "MCeLE",
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "clipboard-dropdown",
+    "title": "Clipboard Dropdown",
+    "summary": "Training on Clipboard Dropdown",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9754D2EE159A",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9754D2EE159A",
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "cognos-walkthrough",
@@ -1043,6 +1407,111 @@
       "url": ""
     },
     "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "combat-zone-tax-exclusion-czte-basics-and-eligibility",
+    "title": "Combat Zone Tax Exclusion (CZTE) - Basics and Eligibility",
+    "summary": "Training on Combat Zone Tax Exclusion (CZTE) - Basics and Eligibility",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=988032A17F79",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=988032A17F79",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "combat-zone-tax-exclusion-czte-bonuses-timing-and-the-officer-cap",
+    "title": "Combat Zone Tax Exclusion (CZTE) - Bonuses, Timing, and the Officer Cap",
+    "summary": "Training on Combat Zone Tax Exclusion (CZTE) - Bonuses, Timing, and the Officer Cap",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9881E13EB820",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9881E13EB820",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "combat-zone-tax-exclusion-czte-case-management-tracking-and-documentation",
+    "title": "Combat Zone Tax Exclusion (CZTE) - Case Management Tracking and Documentation",
+    "summary": "Training on Combat Zone Tax Exclusion (CZTE) - Case Management Tracking and Documentation",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9882C1995251",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9882C1995251",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "combat-zone-tax-exclusion-czte-hospitalization-benefits",
+    "title": "Combat Zone Tax Exclusion (CZTE) - Hospitalization Benefits",
+    "summary": "Training on Combat Zone Tax Exclusion (CZTE) - Hospitalization Benefits",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=988339FD334F",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=988339FD334F",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "commander-authority-chain-of-command-vs-chains-of-authority",
+    "title": "Commander Authority - Chain of Command vs Chains of Authority",
+    "summary": "Training on Commander Authority - Chain of Command vs Chains of Authority",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=978325877678",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=978325877678",
+    "source": {
+      "title": "Legal",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "commander-authority-commander-acting-by-direction-and-delegation",
+    "title": "Commander Authority - Commander, Acting, By Direction, and Delegation",
+    "summary": "Training on Commander Authority - Commander, Acting, By Direction, and Delegation",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9785AD2428C0",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9785AD2428C0",
+    "source": {
+      "title": "Legal",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "common-functions-and-expressions",
@@ -1281,6 +1750,26 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "copilot-preview-what-it-is-and-is-not",
+    "title": "Copilot Preview, What It Is and Is Not",
+    "summary": "Training on Copilot Preview, What It Is and Is Not",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=984558756C7C",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=984558756C7C",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "core-and-assigned-missions-c-level-and-a-level",
@@ -1556,6 +2045,26 @@
     "lastVerified": "2025-06-05"
   },
   {
+    "slug": "creating-multiple-table-names-and-pivot-tables",
+    "title": "Creating Multiple Table Names and Pivot Tables",
+    "summary": "Training on Creating Multiple Table Names and Pivot Tables",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9756692ED4EF",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9756692ED4EF",
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "creating-poa-ms-and-training-schedules",
     "title": "Creating POA&Ms and Training Schedules",
     "summary": "Training on Creating POA&Ms and Training Schedules",
@@ -1571,40 +2080,6 @@
       "url": ""
     },
     "lastVerified": "2025-12-19"
-  },
-  {
-    "slug": "creating-the-not-rec-page-11-entry",
-    "title": "Creating the Not Rec Page 11 Entry",
-    "summary": "Training on Creating the Not Rec Page 11 Entry",
-    "roles": [
-      "leader"
-    ],
-    "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=95380D7807DC",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=95380D7807DC",
-    "source": {
-      "title": "Promotions",
-      "publisher": "MCeLE",
-      "url": ""
-    },
-    "lastVerified": "2026-08-08"
-  },
-  {
-    "slug": "creating-the-promotion-rec-page-11-entry",
-    "title": "Creating the Promotion Rec Page 11 Entry",
-    "summary": "Training on Creating the Promotion Rec Page 11 Entry",
-    "roles": [
-      "leader"
-    ],
-    "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=953775D53C9A",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=953775D53C9A",
-    "source": {
-      "title": "Promotions",
-      "publisher": "MCeLE",
-      "url": ""
-    },
-    "lastVerified": "2026-08-08"
   },
   {
     "slug": "critical-mos-fill-and-non-deployable-categories",
@@ -1675,6 +2150,24 @@
     "lastVerified": "2026-08-29"
   },
   {
+    "slug": "dc-m-ra-the-hrdp-owner",
+    "title": "DC M&RA, the HRDP Owner",
+    "summary": "Training on DC M&RA, the HRDP Owner",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97612A405C83",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97612A405C83",
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "decorating-departing-marines-awards-and-pcs-orders",
     "title": "Decorating Departing Marines - Awards and PCS Orders",
     "summary": "Decorating Departing Marines - Awards and PCS Orders.",
@@ -1694,21 +2187,55 @@
     "lastVerified": "2026-06-02"
   },
   {
-    "slug": "delete-as-erroneous-process-for-promotion",
-    "title": "Delete as Erroneous Process for Promotion",
-    "summary": "Training on Delete as Erroneous Process for Promotion",
+    "slug": "deployed-per-diem-basics",
+    "title": "Deployed Per Diem - Basics",
+    "summary": "Training on Deployed Per Diem - Basics",
     "roles": [
-      "leader"
+      "admin"
     ],
     "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87840376086C",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87840376086C",
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9900E6125AC7",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9900E6125AC7",
     "source": {
-      "title": "Promotions",
+      "title": "Pay and Entitlements",
       "publisher": "MCeLE",
       "url": ""
     },
-    "lastVerified": "2025-10-12"
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "deployed-per-diem-dts-or-unit-diary",
+    "title": "Deployed Per Diem - DTS or Unit Diary",
+    "summary": "Training on Deployed Per Diem - DTS or Unit Diary",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99014DD67512",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99014DD67512",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "deployed-per-diem-reporting-it-in-mctfs",
+    "title": "Deployed Per Diem - Reporting It in MCTFS",
+    "summary": "Training on Deployed Per Diem - Reporting It in MCTFS",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9902D40C8F03",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9902D40C8F03",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "detailed-filters-dates",
@@ -1864,6 +2391,74 @@
     "lastVerified": "2024-12-29"
   },
   {
+    "slug": "discount-meal-rate-dmr-advance-party-and-main-body",
+    "title": "Discount Meal Rate (DMR) - Advance Party and Main Body",
+    "summary": "Training on Discount Meal Rate (DMR) - Advance Party and Main Body",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=993882AB0BFD",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=993882AB0BFD",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "discount-meal-rate-dmr-contingency-deployments",
+    "title": "Discount Meal Rate (DMR) - Contingency Deployments",
+    "summary": "Training on Discount Meal Rate (DMR) - Contingency Deployments",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9939BDE78758",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9939BDE78758",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "discount-meal-rate-dmr-retrograde-and-rear-party",
+    "title": "Discount Meal Rate (DMR) - Retrograde and Rear Party",
+    "summary": "Training on Discount Meal Rate (DMR) - Retrograde and Rear Party",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=994012F16510",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=994012F16510",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "discount-meal-rate-dmr-shipboard-messing-basics",
+    "title": "Discount Meal Rate (DMR) - Shipboard Messing Basics",
+    "summary": "Training on Discount Meal Rate (DMR) - Shipboard Messing Basics",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99419E30E003",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99419E30E003",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "discussion-on-data-integration-and-privacy",
     "title": "Discussion on Data Integration and Privacy",
     "summary": "Training on Discussion on Data Integration and Privacy",
@@ -1881,72 +2476,72 @@
     "lastVerified": "2025-05-18"
   },
   {
-    "slug": "dislocation-allowance-dla",
-    "title": "Dislocation Allowance (DLA)",
-    "summary": "Training on Dislocation Allowance (DLA)",
+    "slug": "dislocation-allowance-dla-basics-and-eligibility",
+    "title": "Dislocation Allowance (DLA) - Basics and Eligibility",
+    "summary": "Training on Dislocation Allowance (DLA) - Basics and Eligibility",
     "roles": [
       "leader"
     ],
     "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6384BFE98A85",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6384BFE98A85",
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9888208B411F",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9888208B411F",
     "source": {
       "title": "Pay and Entitlements",
       "publisher": "MCeLE",
       "url": ""
     },
-    "lastVerified": "2025-01-14"
+    "lastVerified": "2026-10-15"
   },
   {
-    "slug": "dislocation-allowance-dla-fiscal-year-limitations",
-    "title": "Dislocation Allowance (DLA) - Fiscal-Year Limitations",
-    "summary": "Training on Dislocation Allowance (DLA) - Fiscal-Year Limitations",
+    "slug": "dislocation-allowance-dla-dependent-status-determinations",
+    "title": "Dislocation Allowance (DLA) - Dependent Status Determinations",
+    "summary": "Training on Dislocation Allowance (DLA) - Dependent Status Determinations",
     "roles": [
       "leader"
     ],
     "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6397EF0F3DE7",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6397EF0F3DE7",
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98899DBA3D08",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98899DBA3D08",
     "source": {
       "title": "Pay and Entitlements",
       "publisher": "MCeLE",
       "url": ""
     },
-    "lastVerified": "2025-01-22"
+    "lastVerified": "2026-10-15"
   },
   {
-    "slug": "dislocation-allowance-dla-service-member-with-a-dependent",
-    "title": "Dislocation Allowance (DLA) - Service Member with a Dependent",
-    "summary": "Training on Dislocation Allowance (DLA) - Service Member with a Dependent",
+    "slug": "dislocation-allowance-dla-fiscal-year-limits-and-when-dla-is-not-authorized",
+    "title": "Dislocation Allowance (DLA) - Fiscal-Year Limits and When DLA Is Not Authorized",
+    "summary": "Training on Dislocation Allowance (DLA) - Fiscal-Year Limits and When DLA Is Not Authorized",
     "roles": [
       "leader"
     ],
     "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6398C01FC022",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6398C01FC022",
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9895E02EFF48",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9895E02EFF48",
     "source": {
       "title": "Pay and Entitlements",
       "publisher": "MCeLE",
       "url": ""
     },
-    "lastVerified": "2025-01-22"
+    "lastVerified": "2026-10-15"
   },
   {
-    "slug": "dislocation-allowance-dla-service-member-with-or-without-a-dependent",
-    "title": "Dislocation Allowance (DLA) - Service Member with or without a Dependent",
-    "summary": "Training on Dislocation Allowance (DLA) - Service Member with or without a Dependent",
+    "slug": "dislocation-allowance-dla-partial-and-secondary-dla",
+    "title": "Dislocation Allowance (DLA) - Partial and Secondary DLA",
+    "summary": "Training on Dislocation Allowance (DLA) - Partial and Secondary DLA",
     "roles": [
       "leader"
     ],
     "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=639686F12096",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=639686F12096",
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9890654B7510",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9890654B7510",
     "source": {
       "title": "Pay and Entitlements",
       "publisher": "MCeLE",
       "url": ""
     },
-    "lastVerified": "2025-01-22"
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "documentation-legal-ceremony-planning-4-2-months",
@@ -1981,6 +2576,26 @@
       "url": ""
     },
     "lastVerified": "2025-12-19"
+  },
+  {
+    "slug": "drafting-sops-and-desk-guides",
+    "title": "Drafting SOPs and Desk Guides",
+    "summary": "Training on Drafting SOPs and Desk Guides",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9846833D2622",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9846833D2622",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "earliest-phase-36-24-months",
@@ -2078,11 +2693,31 @@
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=627281871433",
     "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=627281871433",
     "source": {
-      "title": "GTCCP",
+      "title": "Government Travel Charge Card Program",
       "publisher": "MCeLE",
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "explain-like-i-m-5",
+    "title": "Explain Like I'm 5",
+    "summary": "Training on Explain Like I'm 5",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98473E32715E",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98473E32715E",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "explaining-complex-regulations-in-plain-language",
@@ -2117,6 +2752,46 @@
       "url": ""
     },
     "lastVerified": "2025-10-26"
+  },
+  {
+    "slug": "family-separation-allowance-fsa",
+    "title": "Family Separation Allowance (FSA)",
+    "summary": "Training on Family Separation Allowance (FSA)",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=989106DDCD6B",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=989106DDCD6B",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "few-shot-prompting",
+    "title": "Few-Shot Prompting",
+    "summary": "Training on Few-Shot Prompting",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98487B908DA5",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98487B908DA5",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "filters-copy-cut-paste-and-delete-data",
@@ -2202,6 +2877,40 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "flight-deck-duty-pay-evolutions-proration-and-restrictions",
+    "title": "Flight-Deck Duty Pay - Evolutions, Proration, and Restrictions",
+    "summary": "Training on Flight-Deck Duty Pay - Evolutions, Proration, and Restrictions",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9903B9F31280",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9903B9F31280",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "flight-deck-duty-pay-what-it-is-and-who-qualifies",
+    "title": "Flight-Deck Duty Pay - What It Is and Who Qualifies",
+    "summary": "Training on Flight-Deck Duty Pay - What It Is and Who Qualifies",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=990473506107",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=990473506107",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "for-operator-examples",
@@ -2376,6 +3085,26 @@
     "lastVerified": "2025-05-29"
   },
   {
+    "slug": "generate-a-graphic-for-a-brief-with-gemini",
+    "title": "Generate a Graphic for a Brief with Gemini",
+    "summary": "Training on Generate a Graphic for a Brief with Gemini",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9849E14BE9F0",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9849E14BE9F0",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "generating-awards-with-llm",
     "title": "Generating Awards with LLM",
     "summary": "Training on Generating Awards with LLM",
@@ -2391,6 +3120,26 @@
       "url": ""
     },
     "lastVerified": "2025-05-07"
+  },
+  {
+    "slug": "generating-fitness-report-and-evaluation-input",
+    "title": "Generating Fitness Report and Evaluation Input",
+    "summary": "Training on Generating Fitness Report and Evaluation Input",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9850F1A60F2A",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9850F1A60F2A",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "gfm-and-force-synchronization-how-requirements-reach-your-desk",
@@ -2461,6 +3210,40 @@
     "lastVerified": "2026-06-02"
   },
   {
+    "slug": "hardship-duty-pay-location-hdp-l",
+    "title": "Hardship Duty Pay Location (HDP-L)",
+    "summary": "Training on Hardship Duty Pay Location (HDP-L)",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9892A2585E2D",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9892A2585E2D",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "hardship-duty-pay-tempo-hdp-t",
+    "title": "Hardship Duty Pay Tempo (HDP-T)",
+    "summary": "Training on Hardship Duty Pay Tempo (HDP-T)",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98937895163F",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98937895163F",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "headers-footers-and-adding-text",
     "title": "Headers, Footers and adding text",
     "summary": "Headers, Footers and adding text.",
@@ -2510,6 +3293,26 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "hostile-fire-pay",
+    "title": "Hostile Fire Pay",
+    "summary": "Training on Hostile Fire Pay",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=990580DB6D90",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=990580DB6D90",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "how-humans-differ-from-llms",
@@ -2580,6 +3383,26 @@
       "url": ""
     },
     "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "how-to-begin-your-first-ten-minutes-with-an-ai-assistant",
+    "title": "How to Begin, Your First Ten Minutes with an AI Assistant",
+    "summary": "Training on How to Begin, Your First Ten Minutes with an AI Assistant",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9851BC7532A6",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9851BC7532A6",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "how-to-build-a-battle-rhythm",
@@ -2771,6 +3594,26 @@
     "lastVerified": "2024-12-29"
   },
   {
+    "slug": "imminent-danger-pay",
+    "title": "Imminent Danger Pay",
+    "summary": "Training on Imminent Danger Pay",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9906BEF6CAAA",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9906BEF6CAAA",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "imos-dor-examples",
     "title": "IMOS DOR Examples",
     "summary": "Training on IMOS DOR Examples",
@@ -2905,6 +3748,40 @@
       "url": ""
     },
     "lastVerified": "2025-04-29"
+  },
+  {
+    "slug": "installation-admin-walkthrough",
+    "title": "Installation Admin Walkthrough",
+    "summary": "Training on Installation Admin Walkthrough",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100065177066",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100065177066",
+    "source": {
+      "title": "VICIOUS",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "installation-section-walkthrough",
+    "title": "Installation Section Walkthrough",
+    "summary": "Training on Installation Section Walkthrough",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10007A4D82B5",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10007A4D82B5",
+    "source": {
+      "title": "VICIOUS",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "intro-to-excel-and-basic-navigation",
@@ -3043,6 +3920,23 @@
     "lastVerified": "2026-08-08"
   },
   {
+    "slug": "justasking-ask-a-question-and-get-the-answer-back",
+    "title": "JustAsking, Ask a Question and Get the Answer Back",
+    "summary": "Training on JustAsking, Ask a Question and Get the Answer Back",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98193AA0FE0D",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98193AA0FE0D",
+    "source": {
+      "title": "Semper Admin",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "key-players-in-the-fitrep-process",
     "title": "Key Players in the FITREP Process",
     "summary": "Training on Key Players in the FITREP Process",
@@ -3092,6 +3986,26 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "leaving-active-duty-for-the-reserve",
+    "title": "Leaving Active Duty for the Reserve",
+    "summary": "Training on Leaving Active Duty for the Reserve",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=976320C33AC9",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=976320C33AC9",
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "left-right-and-mid-functions",
@@ -3214,6 +4128,60 @@
     "lastVerified": "2026-08-29"
   },
   {
+    "slug": "manpower-information-division",
+    "title": "Manpower Information Division",
+    "summary": "Training on Manpower Information Division",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=976677286E9E",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=976677286E9E",
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "manpower-management-division",
+    "title": "Manpower Management Division",
+    "summary": "Training on Manpower Management Division",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=976881C4883B",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=976881C4883B",
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "manpower-plans-and-policy-division",
+    "title": "Manpower Plans and Policy Division",
+    "summary": "Training on Manpower Plans and Policy Division",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9769AC6A2D4D",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9769AC6A2D4D",
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "maradmins-what-are-they",
     "title": "MARADMINS - What are they",
     "summary": "Training on MARADMINS - What are they",
@@ -3246,6 +4214,24 @@
       "url": ""
     },
     "lastVerified": "2024-12-27"
+  },
+  {
+    "slug": "marine-and-family-programs-and-business-and-support-services",
+    "title": "Marine and Family Programs and Business and Support Services",
+    "summary": "Training on Marine and Family Programs and Business and Support Services",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9770F7D8C74C",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9770F7D8C74C",
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "marinenet-video-service",
@@ -3333,6 +4319,23 @@
     "lastVerified": "2024-12-29"
   },
   {
+    "slug": "mcpp-and-fdp-e-when-you-get-called",
+    "title": "MCPP and FDP&E - When You Get Called",
+    "summary": "Training on MCPP and FDP&E - When You Get Called",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9818C8ABBD6C",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9818C8ABBD6C",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "medical-awareness-documentation-24-18-months",
     "title": "Medical Awareness & Documentation (24-18 Months)",
     "summary": "Training on Medical Awareness & Documentation (24-18 Months)",
@@ -3357,8 +4360,8 @@
       "leader"
     ],
     "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=8819A59F2777",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=8819A59F2777",
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=8820C9120895",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=8820C9120895",
     "source": {
       "title": "Separations and Retirement",
       "publisher": "MCeLE",
@@ -3577,6 +4580,58 @@
     "lastVerified": "2024-12-29"
   },
   {
+    "slug": "missed-meals",
+    "title": "Missed Meals",
+    "summary": "Training on Missed Meals",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9912F9903926",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9912F9903926",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "missed-meals-getting-the-credit",
+    "title": "Missed Meals - Getting the Credit",
+    "summary": "Training on Missed Meals - Getting the Credit",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9907BCB00AD5",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9907BCB00AD5",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "missed-meals-the-rule",
+    "title": "Missed Meals - The Rule",
+    "summary": "Training on Missed Meals - The Rule",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99085DF8F31A",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99085DF8F31A",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "misso-vs-aau-vs-mcaat-vs-igmc-what-s-the-difference",
     "title": "MISSO vs AAU vs MCAAT vs IGMC - What's the Difference?",
     "summary": "Training on MISSO vs AAU vs MCAAT vs IGMC - What's the Difference?",
@@ -3677,6 +4732,23 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "my-dashboard-walkthrough",
+    "title": "My Dashboard Walkthrough",
+    "summary": "Training on My Dashboard Walkthrough",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100088F2BD50",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100088F2BD50",
+    "source": {
+      "title": "VICIOUS",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "naval-letter-format-generator",
@@ -3798,6 +4870,206 @@
     "lastVerified": "2024-12-29"
   },
   {
+    "slug": "nexus-court-martial-reports-by-month",
+    "title": "Nexus, Court-Martial Reports by Month",
+    "summary": "Training on Nexus, Court-Martial Reports by Month",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9805E948C56E",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9805E948C56E",
+    "source": {
+      "title": "Semper Admin",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "nexus-dod-issuances-and-dd-forms",
+    "title": "Nexus, DoD Issuances and DD Forms",
+    "summary": "Training on Nexus, DoD Issuances and DD Forms",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9806756C7306",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9806756C7306",
+    "source": {
+      "title": "Semper Admin",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "nexus-dodfmr-and-jtr-changes",
+    "title": "Nexus, DoDFMR and JTR Changes",
+    "summary": "Training on Nexus, DoDFMR and JTR Changes",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98075C73BD0A",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98075C73BD0A",
+    "source": {
+      "title": "Semper Admin",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "nexus-find-any-directive-in-a-minute",
+    "title": "Nexus, Find Any Directive in a Minute",
+    "summary": "Training on Nexus, Find Any Directive in a Minute",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9808B732B0C3",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9808B732B0C3",
+    "source": {
+      "title": "Semper Admin",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "nexus-inspection-prep-with-fa-checklists-and-mcpel",
+    "title": "Nexus, Inspection Prep with FA Checklists and MCPEL",
+    "summary": "Training on Nexus, Inspection Prep with FA Checklists and MCPEL",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98098150CA8E",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98098150CA8E",
+    "source": {
+      "title": "Semper Admin",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "nexus-navmc-forms-by-number-and-by-name",
+    "title": "Nexus, NAVMC Forms by Number and by Name",
+    "summary": "Training on Nexus, NAVMC Forms by Number and by Name",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9815BC0BE590",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9815BC0BE590",
+    "source": {
+      "title": "Semper Admin",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "nexus-nexus-on-your-phone",
+    "title": "Nexus, Nexus on Your Phone",
+    "summary": "Training on Nexus, Nexus on Your Phone",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9811C00F16F1",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9811C00F16F1",
+    "source": {
+      "title": "Semper Admin",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "nexus-search-across-every-source-at-once",
+    "title": "Nexus, Search Across Every Source at Once",
+    "summary": "Training on Nexus, Search Across Every Source at Once",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=981225CD752F",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=981225CD752F",
+    "source": {
+      "title": "Semper Admin",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "nexus-the-cac-tabs",
+    "title": "Nexus, The CAC Tabs",
+    "summary": "Training on Nexus, The CAC Tabs",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98138DA747BD",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98138DA747BD",
+    "source": {
+      "title": "Semper Admin",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "nexus-what-it-pulls-and-how-current-it-is",
+    "title": "Nexus, What It Pulls and How Current It Is",
+    "summary": "Training on Nexus, What It Pulls and How Current It Is",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9814B85F6AB8",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9814B85F6AB8",
+    "source": {
+      "title": "Semper Admin",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "nipr-gpt-create-an-account",
     "title": "NIPR GPT - Create an account",
     "summary": "Training on NIPR GPT - Create an account",
@@ -3830,23 +5102,6 @@
       "url": ""
     },
     "lastVerified": "2025-06-02"
-  },
-  {
-    "slug": "non-mandatory-use-of-the-travel-card",
-    "title": "Non-Mandatory use of the Travel Card",
-    "summary": "Training on Non-Mandatory use of the Travel Card",
-    "roles": [
-      "leader"
-    ],
-    "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=62730886DB1D",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=62730886DB1D",
-    "source": {
-      "title": "GTCCP",
-      "publisher": "MCeLE",
-      "url": ""
-    },
-    "lastVerified": "2024-12-29"
   },
   {
     "slug": "offset-function",
@@ -4002,6 +5257,176 @@
     "lastVerified": "2026-06-02"
   },
   {
+    "slug": "pac-pay-counseling-requirements-marine-education",
+    "title": "PAC Pay Counseling Requirements - Marine Education",
+    "summary": "Training on PAC Pay Counseling Requirements - Marine Education",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=999146ABFEC7",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=999146ABFEC7",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "pac-pay-counseling-sheet-navmc-1771-2-form-completion",
+    "title": "PAC Pay Counseling Sheet - NAVMC 1771/2 Form Completion",
+    "summary": "Training on PAC Pay Counseling Sheet - NAVMC 1771/2 Form Completion",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=996083AAFA27",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=996083AAFA27",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "pac-pay-documentation-requirements-building-the-case-file",
+    "title": "PAC Pay Documentation Requirements - Building the Case File",
+    "summary": "Training on PAC Pay Documentation Requirements - Building the Case File",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99615F495848",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99615F495848",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "pac-pay-eligibility-requirements-combat-zone-injuries",
+    "title": "PAC Pay Eligibility Requirements - Combat Zone Injuries",
+    "summary": "Training on PAC Pay Eligibility Requirements - Combat Zone Injuries",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=996297EFECF2",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=996297EFECF2",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "pac-pay-entitlements-what-s-included-and-what-s-not",
+    "title": "PAC Pay Entitlements - What's Included and What's Not",
+    "summary": "Training on PAC Pay Entitlements - What's Included and What's Not",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9963B85F894E",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9963B85F894E",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "pac-pay-extensions-beyond-12-months",
+    "title": "PAC Pay Extensions - Beyond 12 Months",
+    "summary": "Training on PAC Pay Extensions - Beyond 12 Months",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9964D332BF0F",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9964D332BF0F",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "pac-pay-line-of-duty-investigations-impact-on-entitlement",
+    "title": "PAC Pay Line of Duty Investigations - Impact on Entitlement",
+    "summary": "Training on PAC Pay Line of Duty Investigations - Impact on Entitlement",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9965A8284BE4",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9965A8284BE4",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "pac-pay-mctfs-reporting-ttc-codes-and-diary-entries",
+    "title": "PAC Pay MCTFS Reporting - TTC Codes and Diary Entries",
+    "summary": "Training on PAC Pay MCTFS Reporting - TTC Codes and Diary Entries",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99661683FCC4",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99661683FCC4",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "pac-pay-medical-status-tracking-light-duty-to-limited-duty",
+    "title": "PAC Pay Medical Status Tracking - Light Duty to Limited Duty",
+    "summary": "Training on PAC Pay Medical Status Tracking - Light Duty to Limited Duty",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99675F71BD3D",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99675F71BD3D",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "pac-pay-overview-what-marines-need-to-know",
+    "title": "PAC Pay Overview - What Marines Need to Know",
+    "summary": "Training on PAC Pay Overview - What Marines Need to Know",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9968E99ACA70",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9968E99ACA70",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "password-resets",
     "title": "Password Resets",
     "summary": "Training on Password Resets",
@@ -4034,6 +5459,60 @@
       "url": ""
     },
     "lastVerified": "2024-12-27"
+  },
+  {
+    "slug": "personnel-management-use-cases",
+    "title": "Personnel Management Use Cases",
+    "summary": "Training on Personnel Management Use Cases",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98520ED75882",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98520ED75882",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "personnel-tempo-perstempo-the-400-day-waiver",
+    "title": "Personnel Tempo (PERSTEMPO) - The 400-Day Waiver",
+    "summary": "Training on Personnel Tempo (PERSTEMPO) - The 400-Day Waiver",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9942BCCA8C73",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9942BCCA8C73",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "personnel-tempo-perstempo-the-policy",
+    "title": "Personnel Tempo (PERSTEMPO) - The Policy",
+    "summary": "Training on Personnel Tempo (PERSTEMPO) - The Policy",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9943D4A00235",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9943D4A00235",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "planned-promotions-for-sncos",
@@ -4155,6 +5634,23 @@
     "lastVerified": "2026-06-02"
   },
   {
+    "slug": "precedence-levels-and-red-lines",
+    "title": "Precedence Levels and Red Lines",
+    "summary": "Training on Precedence Levels and Red Lines",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=982311A69FAE",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=982311A69FAE",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "preparing-briefing-outlines-and-talking-points",
     "title": "Preparing Briefing Outlines and Talking Points",
     "summary": "Training on Preparing Briefing Outlines and Talking Points",
@@ -4221,23 +5717,6 @@
       "url": ""
     },
     "lastVerified": "2025-12-19"
-  },
-  {
-    "slug": "processing-suli-promotions",
-    "title": "Processing SULI Promotions",
-    "summary": "Training on Processing SULI Promotions",
-    "roles": [
-      "leader"
-    ],
-    "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=8762048E84DF",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=8762048E84DF",
-    "source": {
-      "title": "Promotions",
-      "publisher": "MCeLE",
-      "url": ""
-    },
-    "lastVerified": "2025-10-01"
   },
   {
     "slug": "promotion-folder-part-1-missing-training-and-jepes-occasions",
@@ -4391,6 +5870,26 @@
       "url": ""
     },
     "lastVerified": "2025-05-18"
+  },
+  {
+    "slug": "prompt-injection-and-safety",
+    "title": "Prompt Injection and Safety",
+    "summary": "Training on Prompt Injection and Safety",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9853B801C906",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9853B801C906",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "prompt-types-zero-shot-vs-chain-vs-mega",
@@ -4578,23 +6077,6 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
-  },
-  {
-    "slug": "reimbursement-of-qualifying-spouse-relicensing-recertification-costs-and-business-costs",
-    "title": "Reimbursement of Qualifying Spouse Relicensing/Recertification Costs and Business Costs",
-    "summary": "Training on Reimbursement of Qualifying Spouse Relicensing/Recertification Costs and Business Costs",
-    "roles": [
-      "leader"
-    ],
-    "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6443FA2CCDB3",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6443FA2CCDB3",
-    "source": {
-      "title": "Pay and Entitlements",
-      "publisher": "MCeLE",
-      "url": ""
-    },
-    "lastVerified": "2025-02-20"
   },
   {
     "slug": "relative-and-absolute-cell-referencing",
@@ -4837,6 +6319,24 @@
     "lastVerified": "2025-09-28"
   },
   {
+    "slug": "reserve-affairs-division",
+    "title": "Reserve Affairs Division",
+    "summary": "Training on Reserve Affairs Division",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=977131C81D16",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=977131C81D16",
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "responsibilities-by-role",
     "title": "Responsibilities by Role",
     "summary": "Training on Responsibilities by Role",
@@ -4847,7 +6347,7 @@
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=627477FCD7A2",
     "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=627477FCD7A2",
     "source": {
-      "title": "GTCCP",
+      "title": "Government Travel Charge Card Program",
       "publisher": "MCeLE",
       "url": ""
     },
@@ -4888,23 +6388,6 @@
     "lastVerified": "2024-12-29"
   },
   {
-    "slug": "reviewing-awards-for-context-and-format",
-    "title": "Reviewing Awards for Context and Format",
-    "summary": "Training on Reviewing Awards for Context and Format",
-    "roles": [
-      "leader"
-    ],
-    "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=820736E738E2",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=820736E738E2",
-    "source": {
-      "title": "Improved Awards Processing System",
-      "publisher": "MCeLE",
-      "url": ""
-    },
-    "lastVerified": "2026-06-02"
-  },
-  {
     "slug": "rff-advisory-notifications-ican-paan-fan-tan",
     "title": "RFF Advisory Notifications (ICAN, PAAN, FAN, TAN)",
     "summary": "Training on RFF Advisory Notifications (ICAN, PAAN, FAN, TAN)",
@@ -4922,8 +6405,28 @@
     "lastVerified": "2024-12-27"
   },
   {
+    "slug": "role-based-prompting",
+    "title": "Role-Based Prompting",
+    "summary": "Training on Role-Based Prompting",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98545628D37A",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98545628D37A",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "round-roundup-rounddown-functions",
-    "title": "ROUND, ROUNDUP,  ROUNDDOWN Functions",
+    "title": "ROUND, ROUNDUP, ROUNDDOWN Functions",
     "summary": "Training on ROUND, ROUNDUP,  ROUNDDOWN Functions",
     "roles": [
       "leader"
@@ -5024,6 +6527,26 @@
     "lastVerified": "2024-12-29"
   },
   {
+    "slug": "self-critique-prompting",
+    "title": "Self-Critique Prompting",
+    "summary": "Training on Self-Critique Prompting",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9855E6645E2E",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9855E6645E2E",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "self-register-for-an-account-on-marine-online",
     "title": "Self Register for an Account on Marine Online",
     "summary": "Training on Self Register for an Account on Marine Online",
@@ -5092,6 +6615,26 @@
     "lastVerified": "2025-05-02"
   },
   {
+    "slug": "sharepoint-and-json-scripting-support",
+    "title": "SharePoint and JSON Scripting Support",
+    "summary": "Training on SharePoint and JSON Scripting Support",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9856A0E69A57",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9856A0E69A57",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "sharing-and-converting-reports-between-packages",
     "title": "Sharing and converting reports between packages",
     "summary": "Training on Sharing and converting reports between packages",
@@ -5124,23 +6667,6 @@
       "url": ""
     },
     "lastVerified": "2024-12-27"
-  },
-  {
-    "slug": "signature-requirements-for-non-rec-page-11s",
-    "title": "Signature Requirements for Non Rec Page 11s",
-    "summary": "Training on Signature Requirements for Non Rec Page 11s",
-    "roles": [
-      "leader"
-    ],
-    "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87860EBBEA1B",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87860EBBEA1B",
-    "source": {
-      "title": "Promotions",
-      "publisher": "MCeLE",
-      "url": ""
-    },
-    "lastVerified": "2025-10-12"
   },
   {
     "slug": "simple-conditional-formatting",
@@ -5194,6 +6720,26 @@
     "lastVerified": "2025-02-18"
   },
   {
+    "slug": "small-and-large-functions",
+    "title": "SMALL and LARGE Functions",
+    "summary": "Training on SMALL and LARGE Functions",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9757D26BCE05",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9757D26BCE05",
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "sorting-and-filtering-data",
     "title": "Sorting and Filtering Data",
     "summary": "Training on Sorting and Filtering Data",
@@ -5228,6 +6774,23 @@
     "lastVerified": "2026-08-08"
   },
   {
+    "slug": "special-diets-and-commuted-rations",
+    "title": "Special Diets and Commuted Rations",
+    "summary": "Training on Special Diets and Commuted Rations",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9909FA70E2B0",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9909FA70E2B0",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "special-situations-purple-heart-colmery-act-and-more",
     "title": "Special Situations - Purple Heart, Colmery Act, and More",
     "summary": "Training on Special Situations - Purple Heart, Colmery Act, and More",
@@ -5243,6 +6806,57 @@
       "url": ""
     },
     "lastVerified": "2025-09-28"
+  },
+  {
+    "slug": "split-pay-option",
+    "title": "Split Pay Option",
+    "summary": "Training on Split Pay Option",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=989686A470DA",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=989686A470DA",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "sponsorship-walkthrough",
+    "title": "Sponsorship Walkthrough",
+    "summary": "Training on Sponsorship Walkthrough",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100098E10888",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100098E10888",
+    "source": {
+      "title": "VICIOUS",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "spouse-relicensing-and-business-cost-reimbursement",
+    "title": "Spouse Relicensing and Business Cost Reimbursement",
+    "summary": "Training on Spouse Relicensing and Business Cost Reimbursement",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9894F8D336EC",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9894F8D336EC",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "staying-current-with-rapid-technology-changes",
@@ -5279,6 +6893,26 @@
     "lastVerified": "2026-08-29"
   },
   {
+    "slug": "structure-your-prompt-markdown-json-and-xml-tags",
+    "title": "Structure Your Prompt, Markdown, JSON, and XML Tags",
+    "summary": "Training on Structure Your Prompt, Markdown, JSON, and XML Tags",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98570F162462",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98570F162462",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "subject-reference-and-enclosure-lines",
     "title": "Subject, Reference, and Enclosure lines",
     "summary": "Training on Subject, Reference, and Enclosure lines",
@@ -5313,40 +6947,6 @@
     "lastVerified": "2024-12-29"
   },
   {
-    "slug": "suli-effective-dates-and-timing",
-    "title": "SULI Effective Dates and Timing",
-    "summary": "Training on SULI Effective Dates and Timing",
-    "roles": [
-      "leader"
-    ],
-    "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87615E6924A8",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87615E6924A8",
-    "source": {
-      "title": "Promotions",
-      "publisher": "MCeLE",
-      "url": ""
-    },
-    "lastVerified": "2025-10-01"
-  },
-  {
-    "slug": "suli-eligibility-requirements",
-    "title": "SULI Eligibility Requirements",
-    "summary": "Training on SULI Eligibility Requirements",
-    "roles": [
-      "leader"
-    ],
-    "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87604D5ACF0C",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87604D5ACF0C",
-    "source": {
-      "title": "Promotions",
-      "publisher": "MCeLE",
-      "url": ""
-    },
-    "lastVerified": "2025-10-01"
-  },
-  {
     "slug": "sum-function",
     "title": "SUM Function",
     "summary": "Training on SUM Function",
@@ -5379,6 +6979,26 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "sumifs-function",
+    "title": "SUMIFS Function",
+    "summary": "Training on SUMIFS Function",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=975860B4556A",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=975860B4556A",
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "summaries-functions-and-expressions",
@@ -5430,6 +7050,46 @@
       "url": ""
     },
     "lastVerified": "2025-12-19"
+  },
+  {
+    "slug": "summary-prompt-patterns-tl-dr-bullets-what-changed",
+    "title": "Summary Prompt Patterns, TL;DR, Bullets, What Changed",
+    "summary": "Training on Summary Prompt Patterns, TL;DR, Bullets, What Changed",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98580B837B7D",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98580B837B7D",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "system-user-and-assistant-roles",
+    "title": "System, User, and Assistant Roles",
+    "summary": "Training on System, User, and Assistant Roles",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9859DE66E606",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9859DE66E606",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "t-o-validation-the-billet-level-review",
@@ -5517,6 +7177,23 @@
     "lastVerified": "2024-12-29"
   },
   {
+    "slug": "task-manager-walkthrough",
+    "title": "Task Manager Walkthrough",
+    "summary": "Training on Task Manager Walkthrough",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10010CC4B447",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10010CC4B447",
+    "source": {
+      "title": "VICIOUS",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "teb-overview-what-you-need-to-know-now",
     "title": "TEB Overview - What You Need to Know NOW",
     "summary": "Training on TEB Overview - What You Need to Know NOW",
@@ -5532,6 +7209,26 @@
       "url": ""
     },
     "lastVerified": "2025-09-28"
+  },
+  {
+    "slug": "temperature-top-p-and-why-results-vary",
+    "title": "Temperature, Top-p, and Why Results Vary",
+    "summary": "Training on Temperature, Top-p, and Why Results Vary",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9860D62867A1",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9860D62867A1",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "template-toolbox-overview",
@@ -5670,6 +7367,24 @@
     "lastVerified": "2026-08-29"
   },
   {
+    "slug": "the-deputy-commandants",
+    "title": "The Deputy Commandants",
+    "summary": "Training on The Deputy Commandants",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9772B2BC81B0",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9772B2BC81B0",
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "the-dotmlpf-c-working-group-how-requirements-get-assessed",
     "title": "The DOTMLPF&C Working Group - How Requirements Get Assessed",
     "summary": "Training on The DOTMLPF&C Working Group - How Requirements Get Assessed",
@@ -5721,6 +7436,26 @@
       "url": ""
     },
     "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "the-paper-trail-marine-corps-counseling-and-documentation",
+    "title": "The Paper Trail - Marine Corps Counseling and Documentation",
+    "summary": "Training on The Paper Trail - Marine Corps Counseling and Documentation",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97825D940112",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97825D940112",
+    "source": {
+      "title": "Legal",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "the-snowball-effect-of-missing-not-recs",
@@ -5895,6 +7630,26 @@
     "lastVerified": "2025-03-24"
   },
   {
+    "slug": "trim-and-clean-functions",
+    "title": "TRIM and CLEAN Functions",
+    "summary": "Training on TRIM and CLEAN Functions",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97596B13E2BD",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97596B13E2BD",
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "tuition-assistance-navmc-1560-25-updates",
     "title": "Tuition Assistance NAVMC 1560.25 Updates",
     "summary": "Training on Tuition Assistance NAVMC 1560.25 Updates",
@@ -5980,57 +7735,6 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
-  },
-  {
-    "slug": "understanding-not-rec-vs-promotion-restriction",
-    "title": "Understanding Not Rec vs Promotion Restriction",
-    "summary": "Training on Understanding Not Rec vs Promotion Restriction",
-    "roles": [
-      "leader"
-    ],
-    "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=8787FE2ECC04",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=8787FE2ECC04",
-    "source": {
-      "title": "Promotions",
-      "publisher": "MCeLE",
-      "url": ""
-    },
-    "lastVerified": "2025-10-12"
-  },
-  {
-    "slug": "understanding-permanent-not-recs",
-    "title": "Understanding Permanent Not Recs",
-    "summary": "Training on Understanding Permanent Not Recs",
-    "roles": [
-      "leader"
-    ],
-    "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87839A4EACB8",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87839A4EACB8",
-    "source": {
-      "title": "Promotions",
-      "publisher": "MCeLE",
-      "url": ""
-    },
-    "lastVerified": "2025-10-12"
-  },
-  {
-    "slug": "understanding-promotion-page-11-entry-requirements",
-    "title": "Understanding Promotion Page 11 Entry Requirements",
-    "summary": "Training on Understanding Promotion Page 11 Entry Requirements",
-    "roles": [
-      "leader"
-    ],
-    "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=95365DE99984",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=95365DE99984",
-    "source": {
-      "title": "Promotions",
-      "publisher": "MCeLE",
-      "url": ""
-    },
-    "lastVerified": "2026-08-08"
   },
   {
     "slug": "understanding-promotion-recommendations",
@@ -6152,23 +7856,6 @@
     "lastVerified": "2025-12-12"
   },
   {
-    "slug": "understanding-the-suli-program",
-    "title": "Understanding the SULI Program",
-    "summary": "Training on Understanding the SULI Program",
-    "roles": [
-      "leader"
-    ],
-    "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=8759AEA53199",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=8759AEA53199",
-    "source": {
-      "title": "Promotions",
-      "publisher": "MCeLE",
-      "url": ""
-    },
-    "lastVerified": "2025-10-01"
-  },
-  {
     "slug": "understanding-tig-and-tis-requirements-and-eligibility-dates",
     "title": "Understanding TIG and TIS Requirements and Eligibility Dates",
     "summary": "Training on Understanding TIG and TIS Requirements and Eligibility Dates",
@@ -6203,6 +7890,74 @@
     "lastVerified": "2025-09-28"
   },
   {
+    "slug": "unit-admin-forms-tasks-and-members",
+    "title": "Unit Admin Forms, Tasks, and Members",
+    "summary": "Training on Unit Admin Forms, Tasks, and Members",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10011E2DA4BD",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10011E2DA4BD",
+    "source": {
+      "title": "VICIOUS",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "unit-admin-setup-walkthrough",
+    "title": "Unit Admin Setup Walkthrough",
+    "summary": "Training on Unit Admin Setup Walkthrough",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10012DB06941",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10012DB06941",
+    "source": {
+      "title": "VICIOUS",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "unit-company-and-section-managers",
+    "title": "Unit, Company, and Section Managers",
+    "summary": "Training on Unit, Company, and Section Managers",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10013A84C114",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10013A84C114",
+    "source": {
+      "title": "VICIOUS",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "unit-responsibilities-for-pac-pay-cases",
+    "title": "Unit Responsibilities for PAC Pay Cases",
+    "summary": "Training on Unit Responsibilities for PAC Pay Cases",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99697114D6B4",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=99697114D6B4",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "updating-your-own-ompf",
     "title": "Updating your own OMPF",
     "summary": "Training on Updating your own OMPF",
@@ -6220,6 +7975,46 @@
     "lastVerified": "2024-12-29"
   },
   {
+    "slug": "upload-a-document-and-ask-questions-about-it",
+    "title": "Upload a Document and Ask Questions About It",
+    "summary": "Training on Upload a Document and Ask Questions About It",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9861F3869F6A",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9861F3869F6A",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "upper-lower-and-proper-functions",
+    "title": "UPPER, LOWER, and PROPER Functions",
+    "summary": "Training on UPPER, LOWER, and PROPER Functions",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97603C63EFC0",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97603C63EFC0",
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "use-of-the-travel-card",
     "title": "Use of the Travel Card",
     "summary": "Training on Use of the Travel Card",
@@ -6230,11 +8025,28 @@
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=62753CACAEA5",
     "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=62753CACAEA5",
     "source": {
-      "title": "GTCCP",
+      "title": "Government Travel Charge Card Program",
       "publisher": "MCeLE",
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "using-the-csr-to-brief-the-commander",
+    "title": "Using the CSR to Brief the Commander",
+    "summary": "Training on Using the CSR to Brief the Commander",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=981767318FF8",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=981767318FF8",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "usmap-enrollment",
@@ -6288,6 +8100,43 @@
     "lastVerified": "2026-06-02"
   },
   {
+    "slug": "verify-before-you-send-check-ai-output-against-the-source-order",
+    "title": "Verify Before You Send, Check AI Output Against the Source Order",
+    "summary": "Training on Verify Before You Send, Check AI Output Against the Source Order",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98621DA60226",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=98621DA60226",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "visit-board-search-and-seizure-vbss-pay",
+    "title": "Visit Board Search and Seizure (VBSS) Pay",
+    "summary": "Training on Visit Board Search and Seizure (VBSS) Pay",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9910BB80D260",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9910BB80D260",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "vlookup-function",
     "title": "VLOOKUP Function",
     "summary": "Training on VLOOKUP Function",
@@ -6303,6 +8152,24 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "what-hqmc-is",
+    "title": "What HQMC Is",
+    "summary": "Training on What HQMC Is",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9773E014B4C1",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9773E014B4C1",
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   },
   {
     "slug": "what-is-a-large-language-model",
@@ -6390,6 +8257,23 @@
     "lastVerified": "2026-08-08"
   },
   {
+    "slug": "what-is-the-csr-and-why-it-matters",
+    "title": "What is the CSR and Why It Matters",
+    "summary": "Training on What is the CSR and Why It Matters",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9816B3AEAA05",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9816B3AEAA05",
+    "source": {
+      "title": "Manpower",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "what-is-the-hrdp-and-why-it-drives-everything",
     "title": "What is the HRDP and Why It Drives Everything",
     "summary": "Training on What is the HRDP and Why It Drives Everything",
@@ -6407,6 +8291,26 @@
     "lastVerified": "2026-08-29"
   },
   {
+    "slug": "what-you-can-and-cannot-paste-into-a-commercial-ai",
+    "title": "What You Can and Cannot Paste Into a Commercial AI",
+    "summary": "Training on What You Can and Cannot Paste Into a Commercial AI",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=986378C5EDF7",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=986378C5EDF7",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "who-can-receive-your-benefits-dependent-eligibility",
     "title": "Who Can Receive Your Benefits? Dependent Eligibility",
     "summary": "Training on Who Can Receive Your Benefits? Dependent Eligibility",
@@ -6422,23 +8326,6 @@
       "url": ""
     },
     "lastVerified": "2025-09-28"
-  },
-  {
-    "slug": "why-do-we-non-rec",
-    "title": "Why do we non rec",
-    "summary": "Training on Why do we non rec",
-    "roles": [
-      "leader"
-    ],
-    "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6334BF199229",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6334BF199229",
-    "source": {
-      "title": "Promotions",
-      "publisher": "MCeLE",
-      "url": ""
-    },
-    "lastVerified": "2024-12-30"
   },
   {
     "slug": "why-marines-get-erroneously-promoted",
@@ -6473,23 +8360,6 @@
       "url": ""
     },
     "lastVerified": "2025-05-27"
-  },
-  {
-    "slug": "working-the-eligibility-roster-what-to-look-for",
-    "title": "Working the Eligibility Roster - What to Look For",
-    "summary": "Training on Working the Eligibility Roster - What to Look For",
-    "roles": [
-      "leader"
-    ],
-    "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=90298E539B72",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=90298E539B72",
-    "source": {
-      "title": "Promotions",
-      "publisher": "MCeLE",
-      "url": ""
-    },
-    "lastVerified": "2026-01-11"
   },
   {
     "slug": "writing-counseling-statements-and-page-11-entries",
@@ -6528,6 +8398,166 @@
     "lastVerified": "2026-06-02"
   },
   {
+    "slug": "xlookup-and-choosecols-function-combination",
+    "title": "XLOOKUP and CHOOSECOLS Function Combination",
+    "summary": "Training on XLOOKUP and CHOOSECOLS Function Combination",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97554AB0BD38",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97554AB0BD38",
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "xlookup-function",
+    "title": "XLOOKUP Function",
+    "summary": "Training on XLOOKUP Function",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9753FFDF5A7F",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9753FFDF5A7F",
+    "source": {
+      "title": "Excel Intermediate",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "your-eas-your-retirement-and-the-medical-board",
+    "title": "Your EAS, Your Retirement, and the Medical Board",
+    "summary": "Training on Your EAS, Your Retirement, and the Medical Board",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9774366C7ED2",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9774366C7ED2",
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "your-family-your-worst-day-and-the-counter",
+    "title": "Your Family, Your Worst Day, and the Counter",
+    "summary": "Training on Your Family, Your Worst Day, and the Counter",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9775E44C08AA",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9775E44C08AA",
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "your-orders-and-your-monitor",
+    "title": "Your Orders and Your Monitor",
+    "summary": "Training on Your Orders and Your Monitor",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=977648C198E9",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=977648C198E9",
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "your-pcs-entitlements-your-augment-and-the-orders-behind-leave",
+    "title": "Your PCS Entitlements, Your Augment, and the Orders Behind Leave",
+    "summary": "Training on Your PCS Entitlements, Your Augment, and the Orders Behind Leave",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=977759047A63",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=977759047A63",
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "your-promotion-your-record-your-award",
+    "title": "Your Promotion, Your Record, Your Award",
+    "summary": "Training on Your Promotion, Your Record, Your Award",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97789D1244A7",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=97789D1244A7",
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "your-reenlistment-package-and-where-it-goes",
+    "title": "Your Reenlistment Package and Where It Goes",
+    "summary": "Training on Your Reenlistment Package and Where It Goes",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9779DAC61051",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9779DAC61051",
+    "source": {
+      "title": "Manpower & Reserve Affairs",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
+  },
+  {
     "slug": "your-service-obligation-the-48-month-commitment",
     "title": "Your Service Obligation - The 48-Month Commitment",
     "summary": "Training on Your Service Obligation - The 48-Month Commitment",
@@ -6543,5 +8573,25 @@
       "url": ""
     },
     "lastVerified": "2025-09-28"
+  },
+  {
+    "slug": "zero-shot-prompting",
+    "title": "Zero-Shot Prompting",
+    "summary": "Training on Zero-Shot Prompting",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9864B8E859E1",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=9864B8E859E1",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-15"
   }
 ]
