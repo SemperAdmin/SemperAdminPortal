@@ -18,6 +18,12 @@ Editorial fields are owned by humans and survive every pull. roles, summary,
 durationSeconds, and lastVerified are merged forward from the existing JSON
 by slug. The database owns title, video URL, and series only.
 
+A row publishes only while its MarineNet column holds an ISO date. Vanguard
+retires a video by clearing that date and keeps the URL for history, and a
+dash marks a video never placed on MCeLE. Retired rows drop out of the
+catalog on every pull, with or without --prune, and --check fails while one
+lingers.
+
 The DB path resolves from VANGUARD_DB or --db. No hardcoded local default,
 since local paths leak developer environment detail into a public repo.
 
@@ -96,6 +102,24 @@ def media_id(url: str) -> str | None:
     return match.group(1).upper() if match else None
 
 
+def is_live(row: dict) -> bool:
+    """A video is live on MCeLE only while its MarineNet column holds a date.
+
+    Vanguard keeps the URL on a retired row for history and clears the date.
+    A dash means the video never reached MCeLE. Gating on the URL alone kept
+    retired videos on the portal.
+    """
+    value = (row["MarineNet"] or "").strip()
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+        return False
+    # The shape check alone passes "2026-13-45". Parse to reject impossible dates.
+    try:
+        date.fromisoformat(value)
+    except ValueError:
+        return False
+    return True
+
+
 def load_catalog() -> list[dict]:
     if not CATALOG_PATH.exists():
         return []
@@ -114,7 +138,7 @@ def read_rows(db_path: Path) -> list[dict]:
         cur = con.execute(
             """
             SELECT Title, "Video Title", Audience, Series,
-                   "MarineNet URL", Recorded, "Upload Date"
+                   "MarineNet URL", MarineNet, Recorded, "Upload Date"
             FROM assets
             ORDER BY Title
             """
@@ -131,6 +155,7 @@ def build(rows: list[dict], existing: dict[str, dict]) -> tuple[dict[str, dict],
         "added": [],
         "changed": [],
         "unpublished": [],
+        "retired": [],
         "dirty_titles": [],
         "collisions": [],
     }
@@ -154,6 +179,9 @@ def build(rows: list[dict], existing: dict[str, dict]) -> tuple[dict[str, dict],
 
         slug = slugify(title)
         if not slug:
+            continue
+        if not is_live(row):
+            report["retired"].append({"slug": slug, "title": title})
             continue
         if slug in catalog:
             report["collisions"].append({"slug": slug, "title": title})
@@ -190,6 +218,11 @@ def build(rows: list[dict], existing: dict[str, dict]) -> tuple[dict[str, dict],
     return catalog, report
 
 
+def retired_slugs(report: dict, catalog: dict[str, dict]) -> set[str]:
+    """Slugs of retired rows, minus any slug a live row still claims."""
+    return {item["slug"] for item in report["retired"]} - set(catalog)
+
+
 def resolve_db(arg_db: str | None) -> Path:
     if not arg_db:
         print(
@@ -214,7 +247,9 @@ def run_check(rows: list[dict]) -> int:
     expected, report = build(rows, on_disk)
 
     missing = sorted(set(expected) - set(on_disk))
-    orphaned = sorted(set(on_disk) - set(expected))
+    retired = retired_slugs(report, expected)
+    lingering = sorted(retired & set(on_disk))
+    orphaned = sorted(set(on_disk) - set(expected) - retired)
     mismatched = [
         slug
         for slug in sorted(set(expected) & set(on_disk))
@@ -235,6 +270,10 @@ def run_check(rows: list[dict]) -> int:
             print(f"    stale    {slug}")
             print(f"        catalog  {on_disk[slug].get('videoUrl')}")
             print(f"        database {expected[slug]['videoUrl']}")
+    if lingering:
+        print(f"[videos-audit] FAIL retired videos still in the catalog: {len(lingering)}")
+        for slug in lingering:
+            print(f"    retired  {slug}")
     if orphaned:
         print(f"[videos-audit] WARN catalog entries with no database row: {len(orphaned)}")
         for slug in orphaned:
@@ -246,21 +285,23 @@ def run_check(rows: list[dict]) -> int:
         for item in report["unpublished"]:
             print(f"    {item['title']}  ->  {item['note']}")
 
-    if missing or mismatched:
+    if missing or mismatched or lingering:
         print("[videos-audit] FAILED. Run npm run videos:pull to reconcile.")
         return 1
     print("[videos-audit] PASS. Every published video has a catalog entry.")
     return 0
 
 
-def write_status(rows: list[dict], catalog: dict, report: dict) -> None:
+def write_status(rows: list[dict], published: int, catalog: dict, report: dict) -> None:
     status = {
         "pulledAt": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "dbRowsTotal": len(rows),
-        "dbPublished": len(catalog),
+        "dbPublished": published,
         "catalogEntries": len(catalog),
         "unpublishedCount": len(report["unpublished"]),
         "unpublished": report["unpublished"],
+        "retiredCount": len(report["retired"]),
+        "retired": [item["title"] for item in report["retired"]],
     }
     with STATUS_PATH.open("w", encoding="utf-8") as handle:
         json.dump(status, handle, indent=2, ensure_ascii=False)
@@ -300,8 +341,14 @@ def main() -> None:
 
     existing = {entry["slug"]: entry for entry in load_catalog()}
     catalog, report = build(rows, existing)
+    # Count before kept orphans join the catalog, so dbPublished stays a DB fact.
+    published = len(catalog)
 
-    orphans = sorted(set(existing) - set(catalog))
+    # A retired row still has a database row, so it is not an orphan. Drop it
+    # from the catalog even without --prune.
+    retired = retired_slugs(report, catalog)
+    dropped = sorted(retired & set(existing))
+    orphans = sorted(set(existing) - set(catalog) - retired)
     if not args.prune:
         for slug in orphans:
             catalog[slug] = existing[slug]
@@ -319,6 +366,10 @@ def main() -> None:
     print(f"[videos-pull] recorded but not published: {len(report['unpublished'])}")
     for item in report["unpublished"]:
         print(f"    ! {item['title']}  ->  {item['note']}")
+    print(f"[videos-pull] retired, no MarineNet date: {len(report['retired'])}")
+    print(f"[videos-pull] retired entries removed from the catalog: {len(dropped)}")
+    for slug in dropped:
+        print(f"    - {slug}")
     if report["collisions"]:
         print(f"[videos-pull] WARN slug collisions dropped: {len(report['collisions'])}")
         for item in report["collisions"]:
@@ -344,7 +395,7 @@ def main() -> None:
     with CATALOG_PATH.open("w", encoding="utf-8") as handle:
         json.dump(output, handle, indent=2, ensure_ascii=False)
         handle.write("\n")
-    write_status(rows, catalog, report)
+    write_status(rows, published, catalog, report)
     print(f"[videos-pull] wrote {CATALOG_PATH.relative_to(REPO_ROOT)}")
     print(f"[videos-pull] wrote {STATUS_PATH.relative_to(REPO_ROOT)}")
     print("[videos-pull] run npm run content:sync to regenerate the pages")

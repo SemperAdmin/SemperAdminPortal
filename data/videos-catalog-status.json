@@ -1,17 +1,25 @@
 {
-  "pulledAt": "2026-08-29",
-  "dbRowsTotal": 1075,
-  "dbPublished": 383,
-  "catalogEntries": 383,
-  "unpublishedCount": 6,
+  "pulledAt": "2026-10-16",
+  "dbRowsTotal": 1141,
+  "dbPublished": 493,
+  "catalogEntries": 493,
+  "unpublishedCount": 8,
   "unpublished": [
     {
       "title": "Administrative Separation Process (Preparer)",
       "note": "Video Outdated"
     },
     {
+      "title": "Deck Is The Script",
+      "note": "-"
+    },
+    {
       "title": "HQMC ARDB Directives Monthly Training - 20240731",
       "note": "Video concept for ARDB"
+    },
+    {
+      "title": "How to read an LES (MSG Focused)",
+      "note": "-"
     },
     {
       "title": "How to set alerts for new videos",
@@ -29,5 +37,29 @@
       "title": "SkillBridge Program Policy Update (NAVMC 1700.2B)",
       "note": "Video Outdated"
     }
+  ],
+  "retiredCount": 21,
+  "retired": [
+    "Creating the Not Rec Page 11 Entry",
+    "Creating the Promotion Rec Page 11 Entry",
+    "Delete as Erroneous Process for Promotion",
+    "Dislocation Allowance (DLA)",
+    "Dislocation Allowance (DLA) - Fiscal-Year Limitations",
+    "Dislocation Allowance (DLA) - Service Member with a Dependent",
+    "Dislocation Allowance (DLA) - Service Member with or without a Dependent",
+    "Non-Mandatory use of the Travel Card",
+    "Processing SULI Promotions",
+    "Reimbursement of Qualifying Spouse Relicensing/Recertification Costs and Business Costs",
+    "Reviewing Awards for Context and Format",
+    "SULI Effective Dates and Timing",
+    "SULI Eligibility Requirements",
+    "Signature Requirements for Non Rec Page 11s",
+    "Understanding Not Rec vs Promotion Restriction",
+    "Understanding Permanent Not Recs",
+    "Understanding Promotion Page 11 Entry Requirements",
+    "Understanding the SULI Program",
+    "What's the Difference",
+    "Why do we non rec",
+    "Working the Eligibility Roster - What to Look For"
   ]
 }
