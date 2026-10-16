@@ -231,6 +231,12 @@ vanguard.db  ->  data/videos-marinenet.json  ->  content/videos/*.mdx
 - `npm run content:sync` runs `scripts/generate-videos.js`, which writes one MDX
   per catalog entry and prunes pages whose slug left the catalog.
 
+Publish gate. A row reaches the portal only while its `MarineNet` column holds
+an ISO date. Vanguard retires a video by clearing the date and keeps the URL
+for history. A dash marks a video never placed on MCeLE. The pull drops
+retired rows from the catalog without `--prune`, and `videos:audit` fails
+while one lingers.
+
 Field ownership. The database owns `title`, `videoUrl`, `mceleUrl`, and
 `source.title`. Humans own `roles`, `summary`, `durationSeconds`, and
 `lastVerified`. The pull merges the human-owned fields forward by slug, so an
