@@ -109,7 +109,15 @@ def is_live(row: dict) -> bool:
     A dash means the video never reached MCeLE. Gating on the URL alone kept
     retired videos on the portal.
     """
-    return bool(re.fullmatch(r"\d{4}-\d{2}-\d{2}", (row["MarineNet"] or "").strip()))
+    value = (row["MarineNet"] or "").strip()
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+        return False
+    # The shape check alone passes "2026-13-45". Parse to reject impossible dates.
+    try:
+        date.fromisoformat(value)
+    except ValueError:
+        return False
+    return True
 
 
 def load_catalog() -> list[dict]:
@@ -284,11 +292,11 @@ def run_check(rows: list[dict]) -> int:
     return 0
 
 
-def write_status(rows: list[dict], catalog: dict, report: dict) -> None:
+def write_status(rows: list[dict], published: int, catalog: dict, report: dict) -> None:
     status = {
         "pulledAt": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "dbRowsTotal": len(rows),
-        "dbPublished": len(catalog),
+        "dbPublished": published,
         "catalogEntries": len(catalog),
         "unpublishedCount": len(report["unpublished"]),
         "unpublished": report["unpublished"],
@@ -333,6 +341,8 @@ def main() -> None:
 
     existing = {entry["slug"]: entry for entry in load_catalog()}
     catalog, report = build(rows, existing)
+    # Count before kept orphans join the catalog, so dbPublished stays a DB fact.
+    published = len(catalog)
 
     # A retired row still has a database row, so it is not an orphan. Drop it
     # from the catalog even without --prune.
@@ -385,7 +395,7 @@ def main() -> None:
     with CATALOG_PATH.open("w", encoding="utf-8") as handle:
         json.dump(output, handle, indent=2, ensure_ascii=False)
         handle.write("\n")
-    write_status(rows, catalog, report)
+    write_status(rows, published, catalog, report)
     print(f"[videos-pull] wrote {CATALOG_PATH.relative_to(REPO_ROOT)}")
     print(f"[videos-pull] wrote {STATUS_PATH.relative_to(REPO_ROOT)}")
     print("[videos-pull] run npm run content:sync to regenerate the pages")
