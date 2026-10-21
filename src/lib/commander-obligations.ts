@@ -191,7 +191,7 @@ export const OBLIGATIONS: Obligation[] = [
     id: "annual-deocs-cca",
     title: "DEOCS/CCA between 1 August and 30 November",
     cadence: "annual",
-    authority: "MARADMIN 468/23 Para 6",
+    authority: "MARADMIN 534/23 Para 6; MARADMIN 225/26",
     detailLink: "/commander/turnover/90-120-and-recurring",
     description:
       "Annual climate assessment. Begin DEOCS by 31 October. Annotate in FITREP.",
@@ -201,7 +201,7 @@ export const OBLIGATIONS: Obligation[] = [
     id: "annual-deocs-deadline",
     title: "DEOCS initiation deadline",
     cadence: "annual",
-    authority: "MARADMIN 468/23",
+    authority: "MARADMIN 225/26 Para 1",
     detailLink: "/commander/turnover/90-120-and-recurring",
     description:
       "Annual DEOCS initiation deadline. Hard deadline 31 October.",

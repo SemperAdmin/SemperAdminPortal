@@ -867,7 +867,7 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     slug: "flexible-spending-accounts",
     label: "Flexible Spending Accounts (DCFSA and HCFSA)",
     shortLabel: "FSA Accounts",
-    description: "Pre-tax DCFSA up to $5,000 per household and HCFSA up to $3,200 per Marine. Enroll at FSAFEDS.gov. HCFSA opened to active-duty in 2025 per MARADMIN 573/24.",
+    description: "Pre-tax DCFSA up to $7,500 per household and HCFSA up to $3,400 per Marine for 2026. Enroll at FSAFEDS.gov. HCFSA opened to active-duty in 2025 per MARADMIN 573/24.",
     icon: "DollarSign",
     pageType: "leaf",
   },
