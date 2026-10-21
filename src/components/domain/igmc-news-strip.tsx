@@ -7,7 +7,7 @@ interface News {
   lastUpdated: string;
   trendsReport: { title: string; url: string; publisher: string };
   checklistsLanding: { title: string; url: string };
-  fy26Schedule: { number: string; title: string; url: string };
+  currentSchedule: { number: string; title: string; url: string };
   maradmins: Array<{ number: string; title: string; url: string }>;
 }
 

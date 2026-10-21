@@ -18,7 +18,7 @@ import { classifyInspectionStatus, type Inspection } from "@/lib/content/schemas
 import { cn } from "@/lib/utils";
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const NEWS = require("@/generated/igmc-news.json") as {
-  fy26Schedule: { number: string; title: string; url: string };
+  currentSchedule: { number: string; title: string; url: string };
   checklistsLanding: { title: string; url: string };
 };
 
@@ -111,7 +111,7 @@ export default function IgmcIndex() {
           items={[
             { label: "Programs", value: data.length },
             { label: "Sponsors", value: sponsors.length },
-            { label: "FY26 schedule", value: NEWS.fy26Schedule.number, mono: true },
+            { label: "FY27 schedule", value: NEWS.currentSchedule.number, mono: true },
             { label: "Cadence", value: "6 / 12 mo", mono: false },
           ]}
         />
