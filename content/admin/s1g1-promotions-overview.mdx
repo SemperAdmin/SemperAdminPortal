@@ -15,6 +15,7 @@ billets: ["s-1-officer", "s-1-chief", "g-1-officer", "promotions-clerk"]
 gradesPerforming: ["Sgt", "SSgt", "GySgt"]
 sustainmentInterval: "12 months"
 references:
+  - "MARADMIN 502/26 Fiscal Year 2027 Active-Duty Component Corporal and Sergeant Promotion Guidance"
   - "MCO P1400.32D W CH 1-2 Marine Corps Promotion Manual Volume 2 Enlisted Promotions"
   - "MCO 1400.31C Marine Corps Promotion Manual Volume 1 Officer Promotions"
   - "SECNAVINST 1400.1B Department of the Navy Promotion and Selection Board Procedures"
@@ -23,7 +24,7 @@ references:
   - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
   - "NAVMC 3500.3E Manpower and Administration T-R Manual"
 performanceSteps:
-  - "Receive promotion warrant from MMEA or MMPB"
+  - "Prepare or receive the promotion warrant under the promotion authority"
   - "Validate Marine eligibility against the warrant per Chapter 1 paragraph 1202"
   - "Apply promotion policies per Chapter 1 paragraph 1203"
   - "Screen restrictions per Chapter 1 paragraph 1204"
@@ -44,13 +45,13 @@ source:
 
 The promotions clerk owns daily promotion processing. The S-1 chief tracks the unit promotion roster against zone and selection cycles. The S-1 officer signs by direction on promotion ceremony coordination and Page 11 entries. The commander pins the rank at the promotion ceremony and signs reduction or denial actions.
 
-Source documents flow from MMEA promotion warrants, MMPB selection lists, meritorious or remedial promotion recommendations, time-in-grade and time-in-service rosters, and the unit composite score worksheets. Promotion actions land in MCTFS as grade changes with effective date and pay impact. Outputs include the executed promotion order, the updated pay grade, the Page 11 entry per MCO P1070.12K paragraph 4006, the unit awards register entry, and the ceremony record.
+Source documents flow from command-prepared Cpl and Sgt warrants under MCO P1400.32D W/CH 2, MMPB selection lists, meritorious or remedial promotion recommendations, time-in-grade and time-in-service rosters, and JEPES data in MCTFS. Promotion actions land in MCTFS as grade changes with effective date and pay impact. Outputs include the executed promotion order, the updated pay grade, the Page 11 entry per MCO P1070.12K paragraph 4006, the unit awards register entry, and the ceremony record.
 
-Per MCO P1400.32D<Citation source="MCO P1400.32D" /> Chapter 1 paragraph 1201 (Promotion System), the enlisted promotion system runs across the active component, the Selected Marine Corps Reserve and Active Reserve (SMCR/AR), and the Individual Ready Reserve (IRR). Per Chapter 1 paragraph 1202 (Time in Grade and Time in Service), eligibility flows from the TIG and TIS rules. Per Chapter 1 paragraph 1203 (Promotion Policies), promotion authorities and approval routes are set. Per Chapter 1 paragraph 1204 (Promotion Restrictions), MMEA and the commander apply restrictions tied to discipline, medical, or performance state. Per Chapter 1 paragraph 1205 (Promotion Records), the S-1 documents the promotion in the OMPF and MCTFS.
+Per MCO P1400.32D<Citation source="MCO P1400.32D" /> Chapter 1 paragraph 1201 (Promotion System), the enlisted promotion system runs across the active component, the Selected Marine Corps Reserve and Active Reserve (SMCR/AR), and the Individual Ready Reserve (IRR). Per Chapter 1 paragraph 1202 (Time in Grade and Time in Service), eligibility flows from the TIG and TIS rules. Per Chapter 1 paragraph 1203 (Promotion Policies), promotion authorities and approval routes are set. Per Chapter 1 paragraph 1204 (Promotion Restrictions), the commander applies restrictions tied to discipline, medical, or performance state. Per Chapter 1 paragraph 1205 (Promotion Records), the S-1 documents the promotion in the OMPF and MCTFS.
 
 ## Trigger events
 
-- Promotion warrant received from MMEA (enlisted) or MMPB (officer).
+- Select grades post for Cpl and Sgt, or a selection board release arrives for SNCO and officer promotions.
 - Time-in-grade reached for non-board zone promotion.
 - Selection board results released.
 - Meritorious promotion recommendation routed.
@@ -61,7 +62,7 @@ Per MCO P1400.32D<Citation source="MCO P1400.32D" /> Chapter 1 paragraph 1201 (P
 
 ## Processing workflow
 
-1. Receive promotion warrant. Pull from MMEA, MMPB, or selection board release.
+1. Prepare or receive the promotion warrant. Active duty Cpl and Sgt warrants cite MCO P1400.32D W/CH 2 per MARADMIN 502/26<Citation source="MARADMIN 502/26" />. Board-driven promotions follow the selection board release.
 2. Validate eligibility. Cross-check time-in-grade, time-in-service, MOS qualification, and education requirements against the warrant per MCO P1400.32D<Citation source="MCO P1400.32D" /> Chapter 1 paragraph 1202.
 3. Apply promotion policies. Per Chapter 1 paragraph 1203, validate the promotion authority and approval route.
 4. Screen restrictions. Per Chapter 1 paragraph 1204, screen for discipline, medical, performance, or administrative holds.
@@ -70,11 +71,11 @@ Per MCO P1400.32D<Citation source="MCO P1400.32D" /> Chapter 1 paragraph 1201 (P
 7. Process Page 11. Per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6 and MCO P1400.32D Chapter 1 paragraph 1205, document the promotion.
 8. Update pay grade and entitlements. New pay grade triggers base pay change. BAH and BAS shift on the effective date.
 9. Process meritorious or remedial recommendations. Per MCO P1400.32D<Citation source="MCO P1400.32D" /> Chapter 2 paragraphs 2300-2306 (special programs) and paragraphs 2600-2604 (remedial), recommendations follow specific routing.
-10. Track promotion zones. Maintain unit roster of Marines in promotion zone against MMEA published cutting scores per Chapter 2 paragraphs 2500-2501.
+10. Track promotion zones. Maintain unit roster of Marines in promotion zone against the monthly cutting scores in MCTFS JEPA per Chapter 2 paragraphs 2500-2501. Retain each month's scores per MARADMIN 502/26 paragraph 3.
 
 ## Sub-pages in this category
 
-- Cpl and Sgt Promotion. Composite score and cutting score mechanics per Chapter 2 paragraphs 2200-2203 and 2500-2501.
+- Cpl and Sgt Promotion. JEPES score, monthly cutting scores, and FY27 record cutoff dates per Chapter 2 paragraphs 2200-2203 and 2500-2501.
 - Enlisted Promotion Eligibility. TIG and TIS rules per Chapter 1 paragraph 1202.
 - Officer Promotions. Citation hooks tied to MCO 1400.31C (officer promotion manual).
 - PFC and LCpl Promotion. Automatic promotion mechanics per Chapter 2 paragraphs 2100-2103.
@@ -90,15 +91,15 @@ Per MCO P1400.32D<Citation source="MCO P1400.32D" /> Chapter 1 paragraph 1201 (P
 - MCTFS. Holds grade and pay state.
 - UD-MIPS. Cuts promotion transactions through Unit Diary.
 - MOL. Surfaces promotion warrant and selection results to the Marine.
-- MMEA. Issues enlisted warrants and cutting scores.
+- MMPB-11. Sets enlisted cutting scores for Sergeants and below. Scores post in MCTFS.
 - MMPB. Issues officer warrants and selection board results.
 
 ### Forms
 
-- Promotion Warrant. Issued by MMEA or MMPB.
+- Promotion Warrant. Prepared by the command for Cpl and Sgt, citing MCO P1400.32D W/CH 2.
 - NAVMC 11070 Recommendation for Promotion. Local meritorious recommendation.
 - NAVMC 118 (11) Administrative Remarks. Page 11 documenting promotion or non-recommendation.
-- Composite Score Worksheet. Per Chapter 2 paragraphs 2200-2203.
+- Monthly cutting score record. Retained per MARADMIN 502/26 paragraph 3.
 - Frocking Letter. Per MCO P1400.32D Chapter 2 (and MCO 1400.31C for officers).
 
 ## Common pitfalls
@@ -114,7 +115,7 @@ Per MCO P1400.32D<Citation source="MCO P1400.32D" /> Chapter 1 paragraph 1201 (P
 
 - Frocking versus promotion. Per MCO P1400.32D<Citation source="MCO P1400.32D" /> Chapter 1 paragraph 1203, frocking allows wear of grade without pay. The commander authorizes per the criteria.
 - Meritorious versus board promotion. Per MCO P1400.32D Chapter 2 paragraphs 2300-2306 and MCO 1400.31C, meritorious or special programs route through specific authority versus the standard board cycle.
-- Promotion deferral, withhold, or removal. Per Chapter 1 paragraph 1204 and Chapter 2 paragraphs 2600-2604, the action routes through MMEA with documentation.
+- Promotion deferral, withhold, or removal. Per Chapter 1 paragraph 1204 and Chapter 2 paragraphs 2600-2604, the action routes per the order with documentation.
 
 ## Authority
 
