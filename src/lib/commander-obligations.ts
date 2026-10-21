@@ -239,10 +239,10 @@ export const OBLIGATIONS: Obligation[] = [
     id: "annual-appointment-revalidation",
     title: "Revalidate all key appointment letters",
     cadence: "annual",
-    authority: "MCO 5800.16 Vol. 12; MARADMIN 350/11",
+    authority: "MCO 5800.16 Vol. 12; MARADMIN 490/26",
     detailLink: "/commander/turnover/30-day-actions",
     description:
-      "D-SAACP currency for SAPR VAs. Fund control training currency for Tier 1 fiscal staff. Other appointment letters as needed.",
+      "D-SAACP currency for SAPR VAs. Delegation of Authority letters and training currency for Funds Control Personnel. Other appointment letters as needed.",
   },
   {
     id: "annual-fpc-sop-review",
@@ -277,21 +277,21 @@ export const OBLIGATIONS: Obligation[] = [
   // =================================================================
   {
     id: "multiyear-fund-control",
-    title: "Tier 1 Fund Control fiscal/appropriations law training",
+    title: "Appropriations Law refresher training",
     cadence: "multi-year",
-    authority: "MARADMIN 350/11 Para 4; DoD FMR Vol. 14 Ch. 2",
+    authority: "MARADMIN 490/26 Para 4.A; DoD FMR Vol. 14 Ch. 2",
     detailLink: "/commander/turnover/30-day-actions",
     description:
-      "CO is Tier 1 Fund Control Personnel. Training required every 3 years. Comptroller-led briefing satisfies in lieu of full course.",
+      "CO is Funds Control Personnel by position. Funds Control for Commanding Officers course within 2 weeks of assuming command, then Appropriations Law refresher at least once every 3 years while in command.",
   },
   {
     id: "multiyear-don-budget-execution",
-    title: "DON Budget Execution Course",
+    title: "DON Budget Execution Course for comptroller staff",
     cadence: "multi-year",
-    authority: "MARADMIN 350/11 Para 2",
+    authority: "MARADMIN 490/26 Para 4.C",
     detailLink: "/commander/turnover/30-day-actions",
     description:
-      "Online course on ASN(FMC) website. Required in addition to fiscal law training.",
+      "G-8, Comptroller, Deputy Comptroller, and Budget Officer complete it once in their DON tenure. The CO meets it through the Funds Control for Commanding Officers course.",
   },
 
   // =================================================================
