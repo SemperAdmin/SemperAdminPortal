@@ -59,6 +59,8 @@ MCO 5810.8 check, from the PDF. Subject: Criminal Justice Information (CJI) Repo
 
 Discrepancy to resolve. The MCO names "MCBul 5810 dtd May 2025". The portal and the checklist both used "22 May 2024", and the archive holds only MCBul_5810_DTD_22_MAY_2024.pdf. Either a May 2025 extension or reissue exists, or the MCO misdates it. Treat the 2024 bulletin as cancelled either way, and flag the date gap to the owner. Do not write "22 May 2024" into the new citation as the cancelled document's date without a check.
 
+Owner decision, 2026-10-20. The most recent MCBul 5810 is dated 22 May 2024. The portal date stands. Treat the MCO 5810.8 cancellation line date of May 2025 as an error in the order. The mco-5810-8 citation records the cancellation of MCBul 5810 dtd 22 May 2024 and notes the date printed in the order.
+
 MCO 5810.8 content deltas worth routing to the admin pages (from enclosure 2): units not aboard an installation with a servicing LEA notify Marine Corps CID by email at usmccid@ncis.navy.mil with the subject "REQUEST FOR NICS ENTRY" (para 3.b). Deployed conduct routes the member to the LEA after redeployment (para 4). Return from deserter status is a reporting trigger (para 2.d). Government weapons exception excludes domestic violence convictions (para 5.b). Enclosure 5 adds duties for individual Marines. Read the rest of the order before rewriting body copy.
 
 ## Where it fits
@@ -95,7 +97,7 @@ MCO 5810.8 content deltas worth routing to the admin pages (from enclosure 2): u
 3. Inspector guide misalignment predates this revision. The guide has 45 items keyed by code with SME titles. From 0115 on, its titles do not match the portal questions: guide 0301 is "UPB maintenance" while the checklist 0301 asks about file labels, guide 0401 is "Preliminary inquiry completion timeline" while the checklist 0401 asks about file copies of investigations, guide 0502 to 0506 describe notification-of-rights topics, and guide 0601 to 0605 describe three-business-day, STR, entry of judgment, record of trial, and DD Form 2791 topics. None match the portal CJI items. The guide was rebuilt against some other version of this checklist. The guide page renders guide?.items?.[item.code], so after regeneration the new 0502 and 0603 items and every shifted code pick up the wrong guide body, or none for 0606 and 0507. Today the pairing is already wrong for much of the form, so treat this as an existing defect that the revision makes worse.
 4. Guide lastVerified is 2026-05-20, older than the 2026-09-23 checklist pass.
 5. I did not load the anthropic-skills igmc-guide-release-gate skill text. I know it only from its listed description (alignment gate and release controls) and from the refresh memory (SME rebuilt DOCX, never hand-edited). Read the skill before the guide step.
-6. MCBul 5810 date: the MCO says May 2025, the portal says 22 May 2024. See above.
+6. MCBul 5810 date: resolved 2026-10-20. The owner confirms 22 May 2024. See above.
 7. MARADMIN 209/04 and 186/03 are cancelled by the same order. Neither has a registry entry. content/citations has maradmin-209-26, a different message. Do not alias it.
 8. The 2026-09-23 update entry (igmc-checklist-references-and-scope-corrected) lists /inspections/igmc/5800.16/legal-administration in affectedPages. The new entry must not claim to supersede it. They cover different changes.
 9. Applicability wording and the "OSJA executing FAM duties" clause need a read against the live portal page, since the 2026-09-23 pass changed the scope text.
