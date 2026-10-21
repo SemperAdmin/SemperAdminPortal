@@ -19,6 +19,7 @@ references:
   - "MCTFSCODESMAN Marine Corps Total Force System Codes Manual"
   - "MCO P1070.12 Marine Corps Individual Records Administration Manual (IRAM)"
   - "MARADMIN 601/24 Directed Usage of UD/MIPS for Storage of Key Supporting Documents"
+  - "PAA 03-26 Mandatory Use of the Notes Tab in UD/MIPS"
 performanceSteps:
   - "Receive source document for transaction"
   - "Identify correct UD/MIPS transaction type"
@@ -34,6 +35,10 @@ source:
   publisher: "HQMC"
   url: "https://www.marines.mil/News/Publications/"
 ---
+
+<Callout variant="warning" title="Unit Diary Notes are mandatory since 1 October 2026">
+PAA 03-26<Citation source="PAA 03-26" /> requires Unit Diary Notes on every unit diary requiring certification in UD/MIPS. Preparers, Reviewers, and Certifiers each add dated annotations for their role. The Unit Diary Notes section below carries the wording and the append rule.
+</Callout>
 
 ## What UD/MIPS Transactions Do
 
@@ -151,6 +156,7 @@ When all daily transactions ready.
 
 - Review the batch for completeness
 - Verify no duplicate transactions
+- Add the Preparer note to each diary requiring certification (see Unit Diary Notes)
 - Submit batch for processing
 - Note batch ID for follow-up
 
@@ -171,6 +177,43 @@ For any failures.
 - Correct the source data or transaction
 - Resubmit corrected transaction
 - Verify subsequent EDFR
+
+## Unit Diary Notes
+
+PAA 03-26<Citation source="PAA 03-26" /> makes the Unit Diary-level Diary Notes capability mandatory for all unit diaries requiring certification, effective 1 October 2026. The capability sits at the bottom of each unit diary and is role-specific. Users enter notes only for their assigned role. The notes document the review the Research Diary Report certification statement only implies.
+
+The table lists the minimum annotations (paragraphs 5, 6, and 7). Replace YYYYMMDD with the date of the action. Match the wording.
+
+| Role | Trigger | Annotation |
+|------|---------|------------|
+| Preparer | Submit a diary for review or certification | YYYYMMDD - Diary has been submitted for review/certification. |
+| Preparer | Resubmit after corrective action | YYYYMMDD - Diary returned with corrections for review/certification. |
+| Reviewer | Finish review and forward to the Certifier | YYYYMMDD - Diary reviewed and forwarded for certification. |
+| Reviewer | Return the diary to the Preparer | YYYYMMDD - Diary returned to Preparer for corrections. |
+| Certifier | Return a diary for correction | YYYYMMDD - Returned for corrections. |
+| Certifier | Finish review, before certification | YYYYMMDD - Diary transactions reviewed against supporting documentation and verified as accurate. Diary is ready for certification. |
+
+The Reviewer role is optional. A reporting unit has no requirement to use it. If the unit uses the role, the Reviewer annotations apply (paragraph 6).
+
+### Chronological History Rule
+
+Paragraph 8 governs every note until system enhancements provide an append-only record.
+
+- Append each new annotation to the existing note.
+- Never delete, alter, or overwrite a prior annotation.
+- Separate annotations with a forward slash (/).
+- Apply the rule to each submission, return for correction, corrective action, resubmission, review, and certification.
+- Date every annotation. Editing a note updates the system Last Update date, so the date lives inside the annotation.
+
+Example from paragraph 8: "20261001 - Diary returned for corrections / 20261002 - Diary transactions reviewed against supporting documentation and verified as accurate. Diary is ready for certification."
+
+Paragraph 9 calls this arrangement a procedural control. Commands ensure prior annotations stay intact.
+
+### Scope
+
+- The requirement covers Unit Diary Notes only. Transaction User Notes, Transaction System Notes, and Diary Feedback Report (DFR) Notes sit outside it unless otherwise specified (paragraph 3).
+- The MCTFS PRIUM update the advisory calls forthcoming is not published. Treat the advisory as the controlling text and re-check for the PRIUM change.
+- A tutorial sits under the UD/MIPS header of the Application Training and Information Tile on the MISSA and MISSO portal (paragraph 10). For questions, route a case through MISSO.
 
 ## Transaction Code Patterns
 
@@ -197,6 +240,7 @@ These hit during S-1 daily processing.
 3. **Transaction submitted twice.** Duplicate processing causes member's record to show double the action. Reverse the duplicate.
 4. **Transaction failed silently.** Submitted but did not process. Caught only by EDFR review. Resubmit after correction.
 5. **Transaction applied to wrong member.** SSN typo causes action to apply to different member. Reverse on both members (added to wrong, missing from right) and resubmit correctly.
+6. **Diary Note overwritten.** A user replaced the prior annotation instead of appending. The review history is gone. Append every new annotation after a forward slash and never overwrite per PAA 03-26<Citation source="PAA 03-26" /> paragraph 8.
 
 ## EDFR Review Discipline
 
@@ -242,6 +286,7 @@ For each transaction.
 - Verify effective date matches action date
 - Verify member SSN exact match to MCTFS
 - Verify any required cross-references included
+- Verify the role note is on each diary requiring certification, dated, and appended to prior annotations
 
 Pre-submission checks prevent EDFR failures.
 
