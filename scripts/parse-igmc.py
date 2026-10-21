@@ -100,6 +100,7 @@ def walk_tables(tables, out):
                     walk_tables([nt], out)
 
 
+UNLABELED_REF_RE = re.compile(r"^(MCO|MCBul|NAVMC|JAGINST|SECNAVINST|DoDI|DoDD|DoDM|MARADMIN|ALMAR)\s", re.I)
 BODY_CODE_RE = re.compile(r"^(0\d{3})\b\s*(.*)$", re.S)
 BODY_STOP_RE = re.compile(r"^(result|comments?|total questions)\b", re.I)
 
@@ -408,6 +409,17 @@ def extract_subsections(rows):
             cur = {"id": str(num).zfill(2) + ".0", "title": best,
                    "description": "", "items": []}
             continue
+        if not c0 and cur and cur["items"] and not cur["items"][-1]["references"]:
+            # The 21 Sep 2026 Legal Administration DOCX puts each References
+            # line in its own row under the question row, with an empty code
+            # cell. Attach it to the item above.
+            lead = next((t for t in texts if REFERENCE_LEAD_RE.match(t)), None)
+            if lead is None:
+                # Item 0502 carries its reference row without the lead word.
+                lead = next((t for t in texts if UNLABELED_REF_RE.match(t)), None)
+            if lead:
+                cur["items"][-1]["references"] = split_references(lead)
+                continue
         if ITEM_CODE_RE.match(c0):
             if cur is None:
                 cur = {"id": "01.0", "title": "Items", "description": "", "items": []}

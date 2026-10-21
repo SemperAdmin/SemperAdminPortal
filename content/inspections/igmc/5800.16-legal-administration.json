@@ -3,14 +3,14 @@
   "programNumber": "5800.16",
   "slug": "legal-administration",
   "title": "Legal Administration",
-  "summary": "All Commanders/Commanding Generals at the Air, Ground, Logistics, and Installation level but is not intended to inspect legal support functions within the Office of the Staff Judge Advocate. 45 items across the program.",
+  "summary": "All Commanders/Commanding Generals at the Air, Ground, Logistics, and Installation level, plus any OSJA executing Legal Administration Functional Area Manager duties for its GCMCA. 47 items across the program.",
   "roles": [
     "admin",
     "commander"
   ],
   "sponsor": "HQMC (JAD)",
-  "effectiveDate": "2025-09-23",
-  "lastVerified": "2026-09-23",
+  "effectiveDate": "2026-09-21",
+  "lastVerified": "2026-10-20",
   "source": {
     "title": "IGMC Functional Area Checklist - Legal Administration",
     "publisher": "Inspector General of the Marine Corps"
@@ -136,7 +136,7 @@
         },
         {
           "code": "0115",
-          "question": "Are processes in place to ensure that victims are notified of any decision to dispose of an alleged offense at non-judicial punishment?",
+          "question": "Can the functional area manager explain the processes in place to ensure that victims are notified of any decision to dispose of an alleged offense at non-judicial punishment?",
           "references": [
             "MCO 5800.16-V16, para. 040401.Y"
           ],
@@ -144,7 +144,7 @@
         },
         {
           "code": "0116",
-          "question": "Are processes in place to ensure that victims are notified of the time and location of any NJP?",
+          "question": "Can the functional area manager explain the processes in place to ensure that victims are notified of the time and location of any NJP?",
           "references": [
             "MCO 5800.16-V16, para. 040401.Y"
           ],
@@ -152,7 +152,7 @@
         },
         {
           "code": "0117",
-          "question": "Are processes in place to ensure that victims are notified of the findings and sentence imposed at NJP?",
+          "question": "Can the functional area manager explain the processes in place to ensure that victims are notified of the findings and sentence imposed at NJP?",
           "references": [
             "MCO 5800.16-V16, para. 040401.Y"
           ],
@@ -183,7 +183,7 @@
         },
         {
           "code": "0203",
-          "question": "Does the unit maintain copies of all special/general courts-martial cases, to include a copy of the record of trial and Judge Advocate Review, for two years after completion of appellate review or are the case files maintained by the servicing Legal Services Support Section (if the command’s legal services is provided by another Service (e.g. Navy, Army, Air Force) then the command must retain copies of all courts-martial cases for two years after appellate review)?",
+          "question": "Does the unit maintain copies of all special/general courts-martial cases, to include a copy of the record of trial and Judge Advocate Review, for two years after completion of appellate review or are the case files maintained by the servicing Legal Services Support Section? Note: if the command’s legal services is provided by another Service (e.g. Navy, Army, Air Force) then the command must retain copies of all courts-martial cases for two years after appellate review.",
           "references": [
             "SECNAV M 5210.1 (2019), pg. III-1, par 2.b., electronic file – Schedules Cross Walked by Chapter"
           ],
@@ -193,7 +193,7 @@
     },
     {
       "id": "03.0",
-      "title": "FILES (Question applies to all legal files accumulated by the command regarding all legal matters, to include but not limited to, Investigations, Administrative Separations, and Courts-Martial)",
+      "title": "FILES (Question applies to all legal files accumulated by the command regarding all subsections of this functional area checklist.)",
       "description": "",
       "items": [
         {
@@ -317,6 +317,14 @@
         },
         {
           "code": "0502",
+          "question": "In cases that require a period of rehabilitation to overcome deficiencies, does the page 11 counseling contain the necessary language concerning deficiencies, recommending corrective action, the consequences of failing to take corrective actions, and being given a reasonable opportunity to undertake corrective actions?",
+          "references": [
+            "MCO 1900.16 w/CH 3, Chap 6, par 6105"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0503",
           "question": "Are activity copies of Administrative Discharge Records destroyed when 3 years old?",
           "references": [
             "SECNAV M 5210.1 (2019), pg. III-1, par 2.b., electronic file – Schedules Cross Walked by Chapter"
@@ -324,34 +332,34 @@
           "evidenceHint": null
         },
         {
-          "code": "0503",
+          "code": "0504",
           "question": "Are notification letters and command recommendations signed personally by the commanding officer, or during the commanding officer’s official absence, are these letters signed “Acting” by the officer temporarily succeeding to command?",
           "references": [
-            "MCO 1900.16 w/CH 2, Chap 6, par 6302.3"
-          ],
-          "evidenceHint": null
-        },
-        {
-          "code": "0504",
-          "question": "If there is evidence of alcohol or drug abuse/dependence, is the respondent being screened at a SACC or an equivalent facility (i.e., military MTF, or other DOD counseling facility) and offered treatment before the case is referred to a board or forwarded to the separation authority?",
-          "references": [
-            "MCO 1900.16 w/CH 2, Chap 6, par 6303.3"
+            "MCO 1900.16 w/CH 3, Chap 6, par 6302.3"
           ],
           "evidenceHint": null
         },
         {
           "code": "0505",
-          "question": "Are all Enlisted Involuntary Administrative Separations processed for a Personality Disorder in compliance with the procedural requirements?",
+          "question": "If there is evidence of alcohol or drug abuse/dependence, is the respondent being screened at a SACC or an equivalent facility (i.e., military MTF, or other DOD counseling facility) and offered treatment before the case is referred to a board or forwarded to the separation authority?",
           "references": [
-            "MCO 1900.16 w/CH 2, Chap 6, 6203.2"
+            "MCO 1900.16 w/CH 3, Chap 6, par 6303.3"
           ],
           "evidenceHint": null
         },
         {
           "code": "0506",
+          "question": "Are all Enlisted Involuntary Administrative Separations processed for a Personality Disorder in compliance with the procedural requirements?",
+          "references": [
+            "MCO 1900.16 w/CH 3, Chap 6, 6203.2"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0507",
           "question": "Are all Enlisted Involuntary Administrative Separations processed for Sexual Misconduct procedurally compliant?",
           "references": [
-            "MCO 1900.16 w/CH 2, Chap 6, sect 6210.4"
+            "MCO 1900.16 w/CH 3, Chap 6, sect 6210.4"
           ],
           "evidenceHint": null
         }
@@ -366,7 +374,7 @@
           "code": "0601",
           "question": "In any case where a member of the command is subject to a civilian court-issued restraining order or is convicted at SPCM, GCM, or in a civilian court of a crime of domestic violence, did the commanding officer provide supporting documentation to and direct the member to report to the servicing law enforcement agency, (NCIS, CID, PMO or other) within five working days of notification?",
           "references": [
-            "MCBUL 5810 of 22 May 2024, encl (2)"
+            "MCO 5810.8 dtd 10 Aug 26, Encl (2) para 2(a) & 3(a)"
           ],
           "evidenceHint": null
         },
@@ -374,31 +382,39 @@
           "code": "0602",
           "question": "In any case where a member of the command is determined, via a finding at an NJP, SCM, SPCM, or Admin Separation Proceedings to have wrongfully used any controlled substance in violation of Article 112a, UCMJ, did the commanding officer provide supporting documentation to and direct the member to report to the servicing law enforcement agency (NCIS, CID, PMO or other) within five working days of disposition?",
           "references": [
-            "MCBUL 5810 of 22 May 2024, encl (2)"
+            "MCO 5810.8 dtd 10 Aug 26, Encl (2) para 2(b) & 3(a)"
           ],
           "evidenceHint": null
         },
         {
           "code": "0603",
-          "question": "In any case where a member of the command is either: 1. Subject to charges referred to a GCM; 2. Is convicted by a GCM of any offense punishable by more than one year confinement, regardless of the amount of confinement actually awarded or imposed; 3. Is found guilty at trial by SPCM or GCM of any offense of domestic violence as defined in the reference regardless of the punishment awarded; 4. Is found incompetent to stand trial or found not guilty by reason of lack of mental responsibility at trial by SPCM or GCM; or 5. Enters an unauthorized absence or deserter status following preferral of charges; Did the commanding officer provide supporting documentation to and direct the member to report to the servicing law enforcement agency (NCIS, CID, PMO or other) within five working days of disposition?",
+          "question": "For any member convicted of a domestic violence offense, did the command ensure that the member was de-issued and restricted from use of government weapons and ammunition any reason?",
           "references": [
-            "MCBUL 5810 of 22 May 2024, encl (2)"
+            "MCO 5810.8 dtd 10 Aug 26, Encl (2), para 5(b)"
           ],
           "evidenceHint": null
         },
         {
           "code": "0604",
-          "question": "Did the commanding officer counsel in writing a “prohibited person” to abide by Federal law pertaining to restricted access to personally owned firearms and ammunition and to make arrangements to dispose of all such items?",
+          "question": "In any case where a member of the command is either: 1. Subject to charges referred to a GCM; 2. Is convicted by a GCM of any offense punishable by more than one year confinement, regardless of the amount of confinement actually awarded or imposed; 3. Is found guilty at trial by SPCM or GCM of any offense of domestic violence as defined in the reference regardless of the punishment awarded; 4. Is found incompetent to stand trial or found not guilty by reason of lack of mental responsibility at trial by SPCM or GCM; or 5. Enters an unauthorized absence or deserter status following preferral of charges; Did the commanding officer provide supporting documentation to and direct the member to report to the servicing law enforcement agency (NCIS, CID, PMO or other) within five working days of disposition?",
           "references": [
-            "MCBUL 5810 of 22 May 2024, encl (2)"
+            "MCO 5810.8 dtd 10 Aug 26, Encl (2) para 1(b), 2(c), & 3(a)"
           ],
           "evidenceHint": null
         },
         {
           "code": "0605",
+          "question": "Did the commanding officer counsel in writing a “prohibited person” to abide by Federal law pertaining to restricted access to personally owned firearms and ammunition and to make arrangements to dispose of all such items?",
+          "references": [
+            "MCO 5810.8 dtd 10 Aug 26, Encl (2) para 6(a)"
+          ],
+          "evidenceHint": null
+        },
+        {
+          "code": "0606",
           "question": "Does the command have a procedure in place to ensure a “prohibited person” is not permitted access to privately owned firearms stored in unit armories? If yes, what is the procedure?",
           "references": [
-            "MCBUL 5810 of 22 May 2024, encl (2)"
+            "MCO 5810.8 dtd 10 Aug 26, Encl (2) para 5(a)"
           ],
           "evidenceHint": null
         }
@@ -431,8 +447,5 @@
   ],
   "category": "CoRE",
   "faName": "Legal Administration",
-  "applicabilityLevel": "All Commanders/Commanding Generals at the Air, Ground, Logistics, and Installation level but is not intended to inspect legal support functions within the Office of the Staff Judge Advocate",
-  "_audit_notes": {
-    "applicabilityLevel_default": true
-  }
+  "applicabilityLevel": "All Commanders/Commanding Generals at the Air, Ground, Logistics, and Installation level. Legal support functions within the Office of the Staff Judge Advocate (OSJA) are not inspectable; however, any OSJA executing the duties and responsibilities of the Legal Administration Functional Area Manager for their General Courts-Martial Convening Authority will be inspected on the administrative items listed herein"
 }

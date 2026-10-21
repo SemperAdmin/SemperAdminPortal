@@ -39,7 +39,7 @@
     { "faName": "Intelligence", "category": "CoRE", "faNumber": "3800", "sponsor": "DC, I (Intel)", "effectiveDate": "2025-03-07" },
     { "faName": "Law Enforcement Operations", "category": "CoRE+", "faNumber": "5580", "sponsor": "I&L (LF)", "effectiveDate": "2026-04-21" },
     { "faName": "Leave, Liberty and Administrative Absence", "category": "Non-CoRE", "faNumber": "1050", "sponsor": "M&RA (MPO)", "effectiveDate": "2025-09-03" },
-    { "faName": "Legal Administration", "category": "CoRE", "faNumber": "5800.16", "sponsor": "HQMC (JAD)", "effectiveDate": "2025-09-23" },
+    { "faName": "Legal Administration", "category": "CoRE", "faNumber": "5800.16", "sponsor": "HQMC (JAD)", "effectiveDate": "2026-09-21" },
     { "faName": "Marine Corps Combat Readiness Evaluation", "category": "CoRE+", "faNumber": "3501.1", "sponsor": "PP&O (POF)", "effectiveDate": "2025-08-22" },
     { "faName": "Marine Corps Fleet Bands", "category": "CoRE+", "faNumber": "5000.18", "sponsor": "CD (Fleet Music)", "effectiveDate": "2025-09-23" },
     { "faName": "Marine Corps Martial Arts Program (MCMAP)", "category": "CoRE", "faNumber": "1500.59", "sponsor": "TECOM (HPB)", "effectiveDate": "2025-05-15" },
