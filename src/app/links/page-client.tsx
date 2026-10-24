@@ -63,7 +63,7 @@ const CATEGORY_LABEL: Record<LinkCategory, string> = {
   educational: "Educational",
   reference: "Reference",
   system: "System",
-  ai: "AI",
+  ai: "SI",
   "teams-channels": "Teams Channels",
   sharepoints: "SharePoints",
   "more-great-links": "More Great Links",
