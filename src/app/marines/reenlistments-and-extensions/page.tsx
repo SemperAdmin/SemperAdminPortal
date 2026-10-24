@@ -152,7 +152,7 @@ export default function ReenlistmentsAndExtensionsLanding() {
       </section>
 
       <section className="mt-6 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-card)] p-5">
-        <h2 className="text-lg font-bold">AI prompt reference</h2>
+        <h2 className="text-lg font-bold">SI prompt reference</h2>
         <p className="mt-2 text-sm">
           The Semper Admin AI Field Manual Category 02 (Personnel
           Administration) contains 10 prompts directly relevant to reenlistment

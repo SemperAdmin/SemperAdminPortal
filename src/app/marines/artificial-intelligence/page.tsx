@@ -63,9 +63,9 @@ const ICON_MAP: Record<string, LucideIcon> = {
 };
 
 export const metadata: Metadata = {
-  title: "Artificial Intelligence (AI) - Marines",
+  title: "Super Intelligence (SI) - Marines",
   description:
-    "Marine Corps data and AI framework. MCO 5231.4 governance. DC I as service lead. Service Data Office (SDO). Mandatory Basic AI Course (CDETBAIC01). GenAI.mil enterprise platform. NPS AI Fellowship. Responsible AI principles. Per MCO 5231.4 and MARADMIN ecosystem (214/26, 635/24, 270/25, 018/26, 135/26).",
+    "Super Intelligence (SI), formerly Artificial Intelligence (AI), per MARADMIN 521/26. Marine Corps data and SI framework. MCO 5231.4 governance. DC I as service lead. Service Data Office (SDO). Mandatory Basic AI Course (CDETBAIC01). GenAI.mil enterprise platform. NPS AI Fellowship. Responsible SI principles. Per MCO 5231.4 and MARADMIN ecosystem (214/26, 635/24, 270/25, 018/26, 135/26).",
 };
 
 export default function ArtificialIntelligenceLanding() {
@@ -147,7 +147,10 @@ export default function ArtificialIntelligenceLanding() {
       <section className="mt-10 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-muted)]/40 p-5">
         <h2 className="text-lg font-bold">Source authority</h2>
         <p className="mt-2 text-sm">
-          Artificial Intelligence content sources from MCO 5231.4 (Marine
+          Per MARADMIN 521/26, the Marine Corps uses Super Intelligence (SI)
+          in place of Artificial Intelligence (AI). Official titles, course
+          names, and program names below keep their published wording. SI
+          content sources from MCO 5231.4 (Marine
           Corps Data and Artificial Intelligence, signed 11 March 2024), the
           USMC AI Implementation Plan approved by DC I on 23 April 2025, and
           the active MARADMIN ecosystem. Active MARADMINs include 214/26
