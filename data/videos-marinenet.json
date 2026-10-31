@@ -312,6 +312,23 @@
     "lastVerified": "2026-10-15"
   },
   {
+    "slug": "adverse-material-that-requires-not-rec",
+    "title": "Adverse Material That Requires Not Rec",
+    "summary": "Training on Adverse Material That Requires Not Rec",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10016543BFB9",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10016543BFB9",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
+  },
+  {
     "slug": "after-approval-managing-and-modifying-benefits",
     "title": "After Approval - Managing and Modifying Benefits",
     "summary": "Training on After Approval - Managing and Modifying Benefits",
@@ -468,23 +485,6 @@
       "url": ""
     },
     "lastVerified": "2026-08-08"
-  },
-  {
-    "slug": "authorized-expenses",
-    "title": "Authorized Expenses",
-    "summary": "Training on Authorized Expenses",
-    "roles": [
-      "leader"
-    ],
-    "durationSeconds": 0,
-    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=62676B7B47AC",
-    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=62676B7B47AC",
-    "source": {
-      "title": "Government Travel Charge Card Program",
-      "publisher": "MCeLE",
-      "url": ""
-    },
-    "lastVerified": "2024-12-29"
   },
   {
     "slug": "autosaar-submission",
@@ -1631,6 +1631,23 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "confirming-the-not-rec-page-11",
+    "title": "Confirming the Not Rec Page 11",
+    "summary": "Training on Confirming the Not Rec Page 11",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10017A2E6A05",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10017A2E6A05",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
   },
   {
     "slug": "connecting-mctfs-fos-events-to-outlook",
@@ -3422,6 +3439,23 @@
     "lastVerified": "2026-06-02"
   },
   {
+    "slug": "how-to-change-from-not-rec-to-rec",
+    "title": "How to Change from Not Rec to Rec",
+    "summary": "Training on How to Change from Not Rec to Rec",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100183F8D8D6",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100183F8D8D6",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
+  },
+  {
     "slug": "how-to-complete-the-navmc-763-first-commission",
     "title": "How to complete the NAVMC 763 - First Commission",
     "summary": "Training on How to complete the NAVMC 763 - First Commission",
@@ -3454,6 +3488,24 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "how-to-not-recommend-marines-in-mol",
+    "title": "How to Not Recommend Marines in MOL",
+    "summary": "Training on How to Not Recommend Marines in MOL",
+    "roles": [
+      "leader",
+      "commander"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10019C6985EF",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10019C6985EF",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
   },
   {
     "slug": "how-to-onboard-a-marine",
@@ -3867,6 +3919,23 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "jepes-semiannual-occasion-dangers",
+    "title": "JEPES Semiannual Occasion Dangers",
+    "summary": "Training on JEPES Semiannual Occasion Dangers",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100203798969",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100203798969",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
   },
   {
     "slug": "jia-process-joint-manning-documents-and-fmts",
@@ -5104,6 +5173,57 @@
     "lastVerified": "2025-06-02"
   },
   {
+    "slug": "not-rec-for-pending-administrative-action",
+    "title": "Not Rec for Pending Administrative Action",
+    "summary": "Training on Not Rec for Pending Administrative Action",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10022C246CC5",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10022C246CC5",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
+  },
+  {
+    "slug": "not-rec-for-pending-legal-action",
+    "title": "Not Rec for Pending Legal Action",
+    "summary": "Training on Not Rec for Pending Legal Action",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10023E41DF4E",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10023E41DF4E",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
+  },
+  {
+    "slug": "not-rec-for-pft-and-cft-failure",
+    "title": "Not Rec for PFT and CFT Failure",
+    "summary": "Training on Not Rec for PFT and CFT Failure",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1002152280B8",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1002152280B8",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
+  },
+  {
     "slug": "offset-function",
     "title": "OFFSET Function",
     "summary": "Training on OFFSET Function",
@@ -5683,6 +5803,23 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "processing-denied-remedials",
+    "title": "Processing Denied Remedials",
+    "summary": "Training on Processing Denied Remedials",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10024F051B76",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10024F051B76",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
   },
   {
     "slug": "processing-imos-promotions",
@@ -6386,6 +6523,23 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "reviewing-and-tracking-remedial-promotions",
+    "title": "Reviewing and Tracking Remedial Promotions",
+    "summary": "Training on Reviewing and Tracking Remedial Promotions",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10025834B140",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10025834B140",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
   },
   {
     "slug": "rff-advisory-notifications-ican-paan-fan-tan",
@@ -7667,6 +7821,24 @@
     "lastVerified": "2024-12-27"
   },
   {
+    "slug": "understanding-and-working-the-eligibility-roster",
+    "title": "Understanding and Working the Eligibility Roster",
+    "summary": "Training on Understanding and Working the Eligibility Roster",
+    "roles": [
+      "leader",
+      "commander"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100289D11854",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100289D11854",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
+  },
+  {
     "slug": "understanding-intended-mos-promotions",
     "title": "Understanding Intended MOS Promotions",
     "summary": "Training on Understanding Intended MOS Promotions",
@@ -7737,6 +7909,23 @@
     "lastVerified": "2024-12-29"
   },
   {
+    "slug": "understanding-pme-triggered-remedials",
+    "title": "Understanding PME-Triggered Remedials",
+    "summary": "Training on Understanding PME-Triggered Remedials",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1002604D54CB",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1002604D54CB",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
+  },
+  {
     "slug": "understanding-promotion-recommendations",
     "title": "Understanding Promotion Recommendations",
     "summary": "Training on Understanding Promotion Recommendations",
@@ -7752,6 +7941,23 @@
       "url": ""
     },
     "lastVerified": "2025-02-14"
+  },
+  {
+    "slug": "understanding-promotion-restrictions",
+    "title": "Understanding Promotion Restrictions",
+    "summary": "Training on Understanding Promotion Restrictions",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10027E061387",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10027E061387",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
   },
   {
     "slug": "understanding-promotion-zones",
@@ -8152,6 +8358,23 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "what-are-remedial-promotions",
+    "title": "What Are Remedial Promotions",
+    "summary": "Training on What Are Remedial Promotions",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100290FC83B7",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100290FC83B7",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
   },
   {
     "slug": "what-hqmc-is",

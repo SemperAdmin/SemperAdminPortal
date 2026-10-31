@@ -1,8 +1,8 @@
 {
-  "pulledAt": "2026-10-16",
-  "dbRowsTotal": 1141,
-  "dbPublished": 493,
-  "catalogEntries": 493,
+  "pulledAt": "2026-10-31",
+  "dbRowsTotal": 1151,
+  "dbPublished": 506,
+  "catalogEntries": 506,
   "unpublishedCount": 8,
   "unpublished": [
     {
@@ -38,8 +38,9 @@
       "note": "Video Outdated"
     }
   ],
-  "retiredCount": 21,
+  "retiredCount": 22,
   "retired": [
+    "Authorized Expenses",
     "Creating the Not Rec Page 11 Entry",
     "Creating the Promotion Rec Page 11 Entry",
     "Delete as Erroneous Process for Promotion",
