@@ -64,7 +64,11 @@ export default async function VideoDetail({
         >
           <MetaRow
             items={[
-              { label: "Duration", value: formatDuration(fm.durationSeconds) },
+              // Hidden when the catalog carries no runtime. Vanguard holds no
+              // duration field, so most entries sit at 0.
+              ...(fm.durationSeconds > 0
+                ? [{ label: "Duration", value: formatDuration(fm.durationSeconds) }]
+                : []),
               { label: "Chapters", value: fm.chapters.length },
             ]}
           />

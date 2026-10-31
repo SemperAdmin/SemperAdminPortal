@@ -105,7 +105,7 @@ export function VideoEmbed({
       <CardHeader>
         <div className="flex items-center justify-between gap-2">
           <CardTitle>{title}</CardTitle>
-          <Pill variant="neutral">{fmt(durationSeconds)}</Pill>
+          {durationSeconds > 0 && <Pill variant="neutral">{fmt(durationSeconds)}</Pill>}
         </div>
         {description && (
           <p className="text-sm text-[var(--color-muted-foreground)]">{description}</p>
@@ -154,9 +154,11 @@ export function VideoEmbed({
               <Captions className="size-4" /> Captions
             </Button>
           )}
-          <span className="ml-auto font-mono text-xs text-[var(--color-muted-foreground)]">
-            {fmt(currentTime)} / {fmt(durationSeconds)}
-          </span>
+          {durationSeconds > 0 && (
+            <span className="ml-auto font-mono text-xs text-[var(--color-muted-foreground)]">
+              {fmt(currentTime)} / {fmt(durationSeconds)}
+            </span>
+          )}
         </div>
 
         {chapters.length > 0 && (

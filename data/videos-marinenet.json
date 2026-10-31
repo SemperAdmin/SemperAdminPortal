@@ -2,7 +2,7 @@
   {
     "slug": "a-business-model-for-the-ages",
     "title": "A Business Model for the Ages",
-    "summary": "Training on A Business Model for the Ages",
+    "summary": "Traces the history of MCTFS, from the Marine Corps Finance Center and the 1970s through REMMPS, REAL FAMMIS, and the Defense Finance and Accounting Service.",
     "roles": [
       "leader"
     ],
@@ -70,7 +70,7 @@
   {
     "slug": "admin-dashboard-archive-tab",
     "title": "Admin Dashboard (Archive tab)",
-    "summary": "Training on Admin Dashboard (Archive tab)",
+    "summary": "Shows you how to use the JEPES Admin Dashboard Archive tab to view approved occasions and modify them to process corrections.",
     "roles": [
       "leader"
     ],
@@ -87,7 +87,7 @@
   {
     "slug": "admin-dashboard-members-tab",
     "title": "Admin Dashboard (Members tab)",
-    "summary": "Training on Admin Dashboard (Members tab)",
+    "summary": "Walks you through the JEPES Admin Dashboard Members tab, from the Organization Tree to the No Active Occasion filter and creating occasions.",
     "roles": [
       "leader"
     ],
@@ -104,7 +104,7 @@
   {
     "slug": "admin-dashboard-occasions-tab",
     "title": "Admin Dashboard (Occasions tab)",
-    "summary": "Training on Admin Dashboard (Occasions tab)",
+    "summary": "Covers the JEPES Admin Dashboard Occasions tab, the Missing Assignments and Dropped/Transferred filters, and assigning reporting chain contributors.",
     "roles": [
       "leader"
     ],
@@ -121,7 +121,7 @@
   {
     "slug": "admin-dashboard-promotion-tab",
     "title": "Admin Dashboard (Promotion tab)",
-    "summary": "Training on Admin Dashboard (Promotion tab)",
+    "summary": "Shows how you read the JEPES Admin Dashboard Promotion tab to see Marines selected to the next grade and whether a PR occasion exists.",
     "roles": [
       "leader"
     ],
@@ -138,7 +138,7 @@
   {
     "slug": "admin-dashboard-reporting-chain-tab",
     "title": "Admin Dashboard (Reporting Chain tab)",
-    "summary": "Training on Admin Dashboard (Reporting Chain tab)",
+    "summary": "Covers the JEPES Admin Dashboard Reporting Chain tab, viewing Marines assigned to reporting chain roles and general responsibilities in MCO 1616.1.",
     "roles": [
       "leader"
     ],
@@ -155,7 +155,7 @@
   {
     "slug": "advance-bah",
     "title": "Advance BAH",
-    "summary": "Training on Advance BAH",
+    "summary": "Covers what Advance BAH pays for, who requests it, the cap and repayment rules, and your role verifying the package, per DoD FMR Vol 7A, Ch 26.",
     "roles": [
       "leader"
     ],
@@ -172,7 +172,7 @@
   {
     "slug": "advance-bah-application-process-and-documentation-requirements",
     "title": "Advance BAH - Application Process and Documentation Requirements",
-    "summary": "Training on Advance BAH - Application Process and Documentation Requirements",
+    "summary": "Walks you through the Advance BAH package, including the signed lease, utility receipts and deposit statements, and the statement of understanding.",
     "roles": [
       "leader"
     ],
@@ -189,7 +189,7 @@
   {
     "slug": "advance-bah-eligibility-and-authorized-uses",
     "title": "Advance BAH - Eligibility and Authorized Uses",
-    "summary": "Training on Advance BAH - Eligibility and Authorized Uses",
+    "summary": "Explains how you qualify for Advance BAH while already receiving BAH, the 3-month limit for rental housing costs, and the 30-day window to apply.",
     "roles": [
       "leader"
     ],
@@ -206,7 +206,7 @@
   {
     "slug": "advance-bah-repayment-and-liquidation-procedures",
     "title": "Advance BAH - Repayment and Liquidation Procedures",
-    "summary": "Training on Advance BAH - Repayment and Liquidation Procedures",
+    "summary": "Covers Advance BAH repayment over 12 months, extension to 24 months with CO approval, and recoupment on vacating, PCS, or moving to government quarters.",
     "roles": [
       "leader"
     ],
@@ -223,7 +223,7 @@
   {
     "slug": "advance-oha",
     "title": "Advance OHA",
-    "summary": "Training on Advance OHA",
+    "summary": "Covers what Advance OHA pays, the two approval tiers, repayment, landlord refunds, and currency rules for Marines overseas, per DoD FMR Vol 7A, Ch 26.",
     "roles": [
       "leader"
     ],
@@ -240,7 +240,7 @@
   {
     "slug": "advance-pay-incident-to-a-pcs-exception-requests-and-approvals",
     "title": "Advance Pay Incident to a PCS - Exception Requests and Approvals",
-    "summary": "Training on Advance Pay Incident to a PCS - Exception Requests and Approvals",
+    "summary": "Covers advance pay exception requests incident to a PCS, the ceilings, written justification, and CO authorization, per MCO 7220.21F.",
     "roles": [
       "leader"
     ],
@@ -257,7 +257,7 @@
   {
     "slug": "advance-pay-incident-to-a-pcs-normal-parameters-application",
     "title": "Advance Pay Incident to a PCS - Normal Parameters Application",
-    "summary": "Training on Advance Pay Incident to a PCS - Normal Parameters Application",
+    "summary": "Walks you through a normal advance pay request incident to a PCS, the rank gate, amount, documentation, and timing window, per MCO 7220.21F.",
     "roles": [
       "marine",
       "leader",
@@ -277,7 +277,7 @@
   {
     "slug": "advance-pay-incident-to-a-pcs-understanding-the-basics",
     "title": "Advance Pay Incident to a PCS - Understanding the Basics",
-    "summary": "Training on Advance Pay Incident to a PCS - Understanding the Basics",
+    "summary": "Explains what advance pay incident to a PCS is, who rates it, its limits, and why it is a loan, per MCO 7220.21F and DoD FMR Vol 7A, Ch 32.",
     "roles": [
       "leader"
     ],
@@ -311,7 +311,7 @@
   {
     "slug": "advanced-reasoning-tree-of-thought-and-react",
     "title": "Advanced Reasoning, Tree-of-Thought and ReAct",
-    "summary": "Training on Advanced Reasoning, Tree-of-Thought and ReAct",
+    "summary": "Runs Tree-of-Thought and ReAct prompts in ChatGPT on the Free plan, showing you how to read all three drafts and check which actions the tool performed.",
     "roles": [
       "marine",
       "leader",
@@ -331,7 +331,7 @@
   {
     "slug": "adverse-material-that-requires-not-rec",
     "title": "Adverse Material That Requires Not Rec",
-    "summary": "Training on Adverse Material That Requires Not Rec",
+    "summary": "Covers the six kinds of adverse material for a not rec and which ones a unit diary entry restricts, per MCO 1616.1, MCO P1400.32D, and MARADMIN 559/23.",
     "roles": [
       "leader",
       "admin"
@@ -349,7 +349,7 @@
   {
     "slug": "after-approval-managing-and-modifying-benefits",
     "title": "After Approval - Managing and Modifying Benefits",
-    "summary": "Training on After Approval - Managing and Modifying Benefits",
+    "summary": "Covers TEB management after approval, including the approval letter, dependent use through VA Form 22-1990E, changing month allocations, and revoking benefits.",
     "roles": [
       "leader"
     ],
@@ -366,7 +366,7 @@
   {
     "slug": "am-i-eligible-understanding-teb-requirements",
     "title": "Am I Eligible? Understanding TEB Requirements",
-    "summary": "Training on Am I Eligible? Understanding TEB Requirements",
+    "summary": "Explains TEB eligibility, including six years of service, PGIB eligibility, the 48-month additional obligation, EAS effects, and the Purple Heart exception.",
     "roles": [
       "leader"
     ],
@@ -419,7 +419,7 @@
   {
     "slug": "application-introduction",
     "title": "Application Introduction",
-    "summary": "Training on Application Introduction",
+    "summary": "Introduces the MISSA Command Legal Action module, its links and help, and the ADSEP roles for preparer, endorser reviewer, and separation authority.",
     "roles": [
       "leader"
     ],
@@ -470,7 +470,7 @@
   {
     "slug": "ask-the-ai-to-write-the-prompt",
     "title": "Ask the AI to Write the Prompt",
-    "summary": "Training on Ask the AI to Write the Prompt",
+    "summary": "Shows you how to describe a job to ChatGPT, have it write the prompt and justify every line, and run it once before you save it.",
     "roles": [
       "marine",
       "leader",
@@ -490,7 +490,7 @@
   {
     "slug": "assigned-attached-detached-and-non-deployable-getting-the-numbers-right",
     "title": "Assigned, Attached, Detached, and Non-Deployable - Getting the Numbers Right",
-    "summary": "Training on Assigned, Attached, Detached, and Non-Deployable - Getting the Numbers Right",
+    "summary": "Covers the four personnel fields, detachments versus shortfalls, task organization, and non-deployable categories for readiness reporting, per MCO 3000.13B.",
     "roles": [
       "leader"
     ],
@@ -592,7 +592,7 @@
   {
     "slug": "avoiding-common-pitfalls-in-awards-processing",
     "title": "Avoiding Common Pitfalls in Awards Processing",
-    "summary": "Training on Avoiding Common Pitfalls in Awards Processing",
+    "summary": "Lists steps to avoid awards processing errors, from reviewing recommendations for accuracy to routing endorsements and meeting timelines.",
     "roles": [
       "leader"
     ],
@@ -647,7 +647,7 @@
   {
     "slug": "bah-location-rate-flexibility-37-u-s-c-403a",
     "title": "BAH Location Rate Flexibility (37 U.S.C. 403a)",
-    "summary": "Training on BAH Location Rate Flexibility (37 U.S.C. 403a)",
+    "summary": "Covers BAH location rate flexibility under 37 U.S.C. 403a, who qualifies when the family moves on a different day, and the three areas used to set the rate.",
     "roles": [
       "leader"
     ],
@@ -664,7 +664,7 @@
   {
     "slug": "bah-rate-protection",
     "title": "BAH Rate Protection",
-    "summary": "Training on BAH Rate Protection",
+    "summary": "Explains how BAH rate protection holds the rate through cost and rank changes, what breaks it, and the reset, per DoD FMR Vol 7A, Ch 26, para 5.2.",
     "roles": [
       "leader"
     ],
@@ -681,7 +681,7 @@
   {
     "slug": "bah-rate-protection-maintaining-higher-rates",
     "title": "BAH Rate Protection - Maintaining Higher Rates",
-    "summary": "Training on BAH Rate Protection - Maintaining Higher Rates",
+    "summary": "Covers how BAH rate protection blocks cuts from area or national cost changes and promotion, resets on PCS, and holds for Reserves in continuous service.",
     "roles": [
       "leader"
     ],
@@ -698,7 +698,7 @@
   {
     "slug": "bah-waivers-criteria-and-authorization-process",
     "title": "BAH Waivers - Criteria and Authorization Process",
-    "summary": "Training on BAH Waivers - Criteria and Authorization Process",
+    "summary": "Walks you through four BAH waiver types, proximity, PME/training, delayed dependent travel, and advance family travel, with proximity eligibility checks.",
     "roles": [
       "leader"
     ],
@@ -715,7 +715,7 @@
   {
     "slug": "bah-waivers-location-rate",
     "title": "BAH Waivers (Location Rate)",
-    "summary": "Training on BAH Waivers (Location Rate)",
+    "summary": "Explains the Location Rate behind a BAH waiver, its seven routine triggers, special cases and limits, and routing the request, per DoD FMR Vol 7A, Ch 26.",
     "roles": [
       "leader"
     ],
@@ -749,7 +749,7 @@
   {
     "slug": "basic-allowance-for-subsistence-bas-bas-ii-approval-and-mctfs-reporting",
     "title": "Basic Allowance for Subsistence (BAS) - BAS II Approval and MCTFS Reporting",
-    "summary": "Training on Basic Allowance for Subsistence (BAS) - BAS II Approval and MCTFS Reporting",
+    "summary": "Covers who approves BAS II, what a strong command request shows, and the diary entries to start, pause, and end it, per MCO 10110.47A and MCTFS PRIUM 80401.",
     "roles": [
       "leader"
     ],
@@ -766,7 +766,7 @@
   {
     "slug": "basic-allowance-for-subsistence-bas-bas-ii-eligibility-and-the-adequacy-standard",
     "title": "Basic Allowance for Subsistence (BAS) - BAS II Eligibility and the Adequacy Standard",
-    "summary": "Training on Basic Allowance for Subsistence (BAS) - BAS II Eligibility and the Adequacy Standard",
+    "summary": "Teaches you to test a barracks case against BAS II conditions and the adequacy standard and spot what does not qualify, per DoDD 1418.05 and MCO 10110.47A.",
     "roles": [
       "leader"
     ],
@@ -783,7 +783,7 @@
   {
     "slug": "basic-allowance-for-subsistence-bas-commander-s-discretionary-authority",
     "title": "Basic Allowance for Subsistence (BAS) - Commander's Discretionary Authority",
-    "summary": "Training on Basic Allowance for Subsistence (BAS) - Commander's Discretionary Authority",
+    "summary": "Covers commander approval of messing separately, the three categories, what ends permission, and what goes to CMC (MPO), per MCO 10110.47A.",
     "roles": [
       "leader"
     ],
@@ -800,7 +800,7 @@
   {
     "slug": "basic-allowance-for-subsistence-bas-enlisted-bas-vs-bas-ii-authorization",
     "title": "Basic Allowance for Subsistence (BAS) - Enlisted BAS vs BAS II Authorization",
-    "summary": "Training on Basic Allowance for Subsistence (BAS) - Enlisted BAS vs BAS II Authorization",
+    "summary": "Separates the officer rate, standard enlisted BAS, and BAS II, including who approves the highest rate, per DoD FMR Vol 7A, Ch 25 and MCO 10110.47A.",
     "roles": [
       "leader"
     ],
@@ -817,7 +817,7 @@
   {
     "slug": "basic-allowance-for-subsistence-bas-messing-separately-and-the-navmc-10522",
     "title": "Basic Allowance for Subsistence (BAS) - Messing Separately and the NAVMC 10522",
-    "summary": "Training on Basic Allowance for Subsistence (BAS) - Messing Separately and the NAVMC 10522",
+    "summary": "Walks you through routing a NAVMC 10522 from request to approval, reporting it on the unit diary, and closing it out, per MCO 10110.47A and MARADMIN 109/19.",
     "roles": [
       "leader"
     ],
@@ -834,7 +834,7 @@
   {
     "slug": "basic-allowance-for-subsistence-bas-who-messes-separately-without-a-navmc-10522",
     "title": "Basic Allowance for Subsistence (BAS) - Who Messes Separately Without a NAVMC 10522",
-    "summary": "Training on Basic Allowance for Subsistence (BAS) - Who Messes Separately Without a NAVMC 10522",
+    "summary": "Covers which enlisted Marines mess separately without a NAVMC 10522 and the checks your shop runs before stopping a meal charge, per MCO 10110.47A.",
     "roles": [
       "leader"
     ],
@@ -851,7 +851,7 @@
   {
     "slug": "basic-charts-column-bar-pie",
     "title": "Basic Charts (Column, Bar, Pie)",
-    "summary": "Training on Basic Charts (Column, Bar, Pie)",
+    "summary": "Shows you how to prepare data and build column, bar, and pie charts in Excel to present information to leadership.",
     "roles": [
       "leader"
     ],
@@ -868,7 +868,7 @@
   {
     "slug": "basic-needs-allowance-bna-application-submission-process",
     "title": "Basic Needs Allowance (BNA) - Application Submission Process",
-    "summary": "Training on Basic Needs Allowance (BNA) - Application Submission Process",
+    "summary": "Walks you through submitting a BNA application through MOL, the required documents, CO adjudication, and closeout, per MARADMIN 369/25 and 37 U.S.C. 402b.",
     "roles": [
       "leader"
     ],
@@ -885,7 +885,7 @@
   {
     "slug": "basic-needs-allowance-bna-certification-and-ongoing-requirements",
     "title": "Basic Needs Allowance (BNA) - Certification and Ongoing Requirements",
-    "summary": "Training on Basic Needs Allowance (BNA) - Certification and Ongoing Requirements",
+    "summary": "Covers keeping BNA current, from the yearly resubmission to recertification events, reporting changes, and appeals, per MARADMIN 369/25 and 37 U.S.C. 402b.",
     "roles": [
       "leader"
     ],
@@ -902,7 +902,7 @@
   {
     "slug": "basic-needs-allowance-bna-eligibility-determination",
     "title": "Basic Needs Allowance (BNA) - Eligibility Determination",
-    "summary": "Training on Basic Needs Allowance (BNA) - Eligibility Determination",
+    "summary": "Teaches you to test BNA eligibility with the income test, household count, and window to apply, per MARADMIN 369/25 and 37 U.S.C. 402b.",
     "roles": [
       "leader"
     ],
@@ -953,7 +953,7 @@
   {
     "slug": "board-member-navigating-the-awards-board-process",
     "title": "Board Member - Navigating the Awards Board Process",
-    "summary": "Training on Board Member - Navigating the Awards Board Process",
+    "summary": "Walks an awards board member through iAPS, from Tasks and nominee packages to the Summary of Action, Citation, Attachments, History and Comments, and the vote.",
     "roles": [
       "leader"
     ],
@@ -970,7 +970,7 @@
   {
     "slug": "board-member-reviewing-awards-for-context-and-format",
     "title": "Board Member - Reviewing Awards for Context and Format",
-    "summary": "Training on Board Member - Reviewing Awards for Context and Format",
+    "summary": "Covers how a board member weighs achievement merit over formatting, applies criteria consistently, checks evidence, and documents the decision rationale.",
     "roles": [
       "leader"
     ],
@@ -987,7 +987,7 @@
   {
     "slug": "board-member-understanding-your-role-and-responsibilities",
     "title": "Board Member - Understanding Your Role and Responsibilities",
-    "summary": "Training on Board Member - Understanding Your Role and Responsibilities",
+    "summary": "Explains what an awards board appointment means, the types of awards boards, and your duty to review award packages objectively.",
     "roles": [
       "leader"
     ],
@@ -1004,7 +1004,7 @@
   {
     "slug": "board-member-upgrading-and-downgrading-award-recommendations",
     "title": "Board Member - Upgrading and Downgrading Award Recommendations",
-    "summary": "Training on Board Member - Upgrading and Downgrading Award Recommendations",
+    "summary": "Uses NAM examples to show when performance clearly exceeds what is expected for grade, training, and experience as you weigh an upgrade or downgrade.",
     "roles": [
       "leader"
     ],
@@ -1038,7 +1038,7 @@
   {
     "slug": "build-a-prompt-library-that-works",
     "title": "Build a Prompt Library That Works",
-    "summary": "Training on Build a Prompt Library That Works",
+    "summary": "Shows you how to build a prompt library with one card per prompt, five fields, a starter set, and two upkeep habits, using ChatGPT on the Free plan.",
     "roles": [
       "marine",
       "leader",
@@ -1075,7 +1075,7 @@
   {
     "slug": "building-award-narratives-and-citations",
     "title": "Building Award Narratives and Citations",
-    "summary": "Training on Building Award Narratives and Citations",
+    "summary": "Walks you through drafting award citations and summaries of action in ChatGPT from a facts sheet, with placeholders and every number traced.",
     "roles": [
       "marine",
       "leader",
@@ -1112,7 +1112,7 @@
   {
     "slug": "camogpt-awards-and-citations-generation",
     "title": "CamoGPT - Awards and Citations Generation",
-    "summary": "Training on CamoGPT - Awards and Citations Generation",
+    "summary": "Covers using AI for awards and citations, from uploading doctrinal and regulatory references and standardized prompts to adding personal accomplishments.",
     "roles": [
       "leader"
     ],
@@ -1180,7 +1180,7 @@
   {
     "slug": "career-education-financial-planning-18-12-months",
     "title": "Career, Education & Financial Planning (18-12 Months)",
-    "summary": "Training on Career, Education & Financial Planning (18-12 Months)",
+    "summary": "Covers the 18 to 12 month separation window, including TAP, resume and LinkedIn work, GI Bill and SkillBridge review, and financial steps like pension and SBP.",
     "roles": [
       "leader"
     ],
@@ -1197,7 +1197,7 @@
   {
     "slug": "career-preparation-financial-foundation-24-18-months",
     "title": "Career Preparation & Financial Foundation (24-18 Months)",
-    "summary": "Training on Career Preparation & Financial Foundation (24-18 Months)",
+    "summary": "Covers the 24 to 18 month window, career exploration, certifications, GI Bill transfer, transition savings, TSP, pension calculation, and life insurance.",
     "roles": [
       "leader"
     ],
@@ -1214,7 +1214,7 @@
   {
     "slug": "career-sea-pay-csp",
     "title": "Career Sea Pay (CSP)",
-    "summary": "Training on Career Sea Pay (CSP)",
+    "summary": "Explains Career Sea Pay and the CSP-P premium, who rates it on sea duty, and the rate, per 37 U.S.C. 352 and DoD FMR Vol 7A, Ch 18.",
     "roles": [
       "leader"
     ],
@@ -1231,7 +1231,7 @@
   {
     "slug": "cba-covered-expenses",
     "title": "CBA Covered Expenses",
-    "summary": "Training on CBA Covered Expenses",
+    "summary": "Covers the purpose of the Central Billed Account in the GTCCP, the expenses it covers, and the correct procedures for using it on official travel.",
     "roles": [
       "leader"
     ],
@@ -1248,7 +1248,7 @@
   {
     "slug": "chain-of-thought-step-by-step-and-scratchpad",
     "title": "Chain-of-Thought, Step by Step and Scratchpad",
-    "summary": "Training on Chain-of-Thought, Step by Step and Scratchpad",
+    "summary": "Shows you how chain-of-thought prompting in ChatGPT asks for each step and uses a scratchpad, and when to use it over the answer alone.",
     "roles": [
       "marine",
       "leader",
@@ -1268,7 +1268,7 @@
   {
     "slug": "childcare-provider-travel-pilot",
     "title": "Childcare Provider Travel Pilot",
-    "summary": "Training on Childcare Provider Travel Pilot",
+    "summary": "Covers the Childcare Provider Travel Pilot, who qualifies, what it pays, and how you build and file the claim, per JTR par. 050108 and MARADMIN 537/24.",
     "roles": [
       "leader"
     ],
@@ -1319,7 +1319,7 @@
   {
     "slug": "choosing-a-commercial-tool-chatgpt-claude-gemini-copilot",
     "title": "Choosing a Commercial Tool, ChatGPT, Claude, Gemini, Copilot",
-    "summary": "Training on Choosing a Commercial Tool, ChatGPT, Claude, Gemini, Copilot",
+    "summary": "Compares ChatGPT, Claude, Gemini, and Copilot free plans from vendor pricing pages and helps you pick one in under a minute, citing MARADMIN 018/26.",
     "roles": [
       "marine",
       "leader",
@@ -1339,7 +1339,7 @@
   {
     "slug": "clearing-delinquencies-apcs",
     "title": "Clearing Delinquencies - APCs",
-    "summary": "Training on Clearing Delinquencies - APCs",
+    "summary": "Walks APCs through clearing GTCC delinquencies, from cardholder training and management reports to notifying supervisors and closing accounts.",
     "roles": [
       "leader"
     ],
@@ -1356,7 +1356,7 @@
   {
     "slug": "clearing-delinquencies-approving-official",
     "title": "Clearing Delinquencies - Approving Official",
-    "summary": "Training on Clearing Delinquencies - Approving Official",
+    "summary": "Shows how you as an approving official confirm split disbursement on TDY and PCS vouchers within 48 hours and monitor voucher status with travel reports.",
     "roles": [
       "leader"
     ],
@@ -1373,7 +1373,7 @@
   {
     "slug": "clearing-delinquencies-supervisor",
     "title": "Clearing Delinquencies - Supervisor",
-    "summary": "Training on Clearing Delinquencies - Supervisor",
+    "summary": "Covers your supervisor steps for GTCC delinquencies, from training Marines and tracking unsubmitted vouchers to counseling and notifying the command.",
     "roles": [
       "leader"
     ],
@@ -1390,7 +1390,7 @@
   {
     "slug": "clipboard-dropdown",
     "title": "Clipboard Dropdown",
-    "summary": "Training on Clipboard Dropdown",
+    "summary": "Shows you how to open the Office Clipboard, which holds up to twenty-four items, and use Paste All, Clear All, the item dropdown, and the bottom options.",
     "roles": [
       "marine",
       "leader",
@@ -1427,7 +1427,7 @@
   {
     "slug": "combat-and-administrative-replacements",
     "title": "Combat and Administrative Replacements",
-    "summary": "Training on Combat and Administrative Replacements",
+    "summary": "Covers combat and administrative replacements during deployment, the FRN in JOPES, the sourcing chain, and your G-1 role, per MCO 3120.12A.",
     "roles": [
       "admin"
     ],
@@ -1463,7 +1463,7 @@
   {
     "slug": "combat-zone-tax-exclusion-czte-basics-and-eligibility",
     "title": "Combat Zone Tax Exclusion (CZTE) - Basics and Eligibility",
-    "summary": "Training on Combat Zone Tax Exclusion (CZTE) - Basics and Eligibility",
+    "summary": "Explains what CZTE excludes, who qualifies, the enlisted and officer rules, and how it reaches your pay, per 26 U.S.C. 112 and DoD FMR Vol 7A, Ch 44.",
     "roles": [
       "leader"
     ],
@@ -1480,7 +1480,7 @@
   {
     "slug": "combat-zone-tax-exclusion-czte-bonuses-timing-and-the-officer-cap",
     "title": "Combat Zone Tax Exclusion (CZTE) - Bonuses, Timing, and the Officer Cap",
-    "summary": "Training on Combat Zone Tax Exclusion (CZTE) - Bonuses, Timing, and the Officer Cap",
+    "summary": "Covers how one day in a combat zone exempts a whole month, which bonuses and special pay qualify, and the officer cap, per 26 U.S.C. 112.",
     "roles": [
       "leader"
     ],
@@ -1497,7 +1497,7 @@
   {
     "slug": "combat-zone-tax-exclusion-czte-case-management-tracking-and-documentation",
     "title": "Combat Zone Tax Exclusion (CZTE) - Case Management Tracking and Documentation",
-    "summary": "Training on Combat Zone Tax Exclusion (CZTE) - Case Management Tracking and Documentation",
+    "summary": "Walks you through CZTE case management, finding qualifying Marines, building the file, counseling, processing, and retention, per DoD FMR Vol 7A, Ch 44.",
     "roles": [
       "leader"
     ],
@@ -1514,7 +1514,7 @@
   {
     "slug": "combat-zone-tax-exclusion-czte-hospitalization-benefits",
     "title": "Combat Zone Tax Exclusion (CZTE) - Hospitalization Benefits",
-    "summary": "Training on Combat Zone Tax Exclusion (CZTE) - Hospitalization Benefits",
+    "summary": "Covers CZTE for hospitalization, separate from PAC PAY, who qualifies, the gating rules, and the two-year limit, per 26 U.S.C. 112.",
     "roles": [
       "leader"
     ],
@@ -1531,7 +1531,7 @@
   {
     "slug": "commander-authority-chain-of-command-vs-chains-of-authority",
     "title": "Commander Authority - Chain of Command vs Chains of Authority",
-    "summary": "Training on Commander Authority - Chain of Command vs Chains of Authority",
+    "summary": "Separates the chain of command from the six chains of authority and shows how they split on joint staff, temporary duty, and ship, per JAGINST 5800.7G.",
     "roles": [
       "leader"
     ],
@@ -1548,7 +1548,7 @@
   {
     "slug": "commander-authority-commander-acting-by-direction-and-delegation",
     "title": "Commander Authority - Commander, Acting, By Direction, and Delegation",
-    "summary": "Training on Commander Authority - Commander, Acting, By Direction, and Delegation",
+    "summary": "Explains the four ways authority flows, commander, acting, by direction, and delegation, with signature block scenarios, per JAGINST 5800.7G.",
     "roles": [
       "marine",
       "leader",
@@ -1585,7 +1585,7 @@
   {
     "slug": "common-mistakes-that-cost-marines-their-teb-benefits",
     "title": "Common Mistakes That Cost Marines Their TEB Benefits",
-    "summary": "Training on Common Mistakes That Cost Marines Their TEB Benefits",
+    "summary": "Lists common TEB mistakes, from assuming it is automatic and misreading the 48-month obligation to wrong DEERS data and not resubmitting rejected requests.",
     "roles": [
       "leader"
     ],
@@ -1602,7 +1602,7 @@
   {
     "slug": "completing-marinenet-courses",
     "title": "Completing MarineNet Courses",
-    "summary": "Training on Completing MarineNet Courses",
+    "summary": "Walks you through completing MarineNet courses, from logging in and finding enrolled courses to modules, quizzes, the final exam, and your certificate.",
     "roles": [
       "leader"
     ],
@@ -1619,7 +1619,7 @@
   {
     "slug": "completing-the-enterprise-saar",
     "title": "Completing the Enterprise SAAR",
-    "summary": "Training on Completing the Enterprise SAAR",
+    "summary": "Shows you how to complete the SAAR for Enterprise Cognos access using MCTFS FoS Access Policy 8.0 Addendum 6 from the MISSA/MISSO Portal.",
     "roles": [
       "leader"
     ],
@@ -1687,7 +1687,7 @@
   {
     "slug": "confirming-the-not-rec-page-11",
     "title": "Confirming the Not Rec Page 11",
-    "summary": "Training on Confirming the Not Rec Page 11",
+    "summary": "Shows you how to confirm a not rec posted and its Page 11 is written, acknowledged, and on file through O-RMA, per MARADMIN 559/23 and MCTFS PRIUM 70607.",
     "roles": [
       "leader",
       "admin"
@@ -1705,7 +1705,7 @@
   {
     "slug": "connecting-mctfs-fos-events-to-outlook",
     "title": "Connecting MCTFS FoS Events to outlook",
-    "summary": "Training on Connecting MCTFS FoS Events to outlook",
+    "summary": "Shows you how to add MCTFS FoS events to Outlook one at a time or connect the whole events calendar from site contents.",
     "roles": [
       "leader"
     ],
@@ -1807,7 +1807,7 @@
   {
     "slug": "continuing-education-units-reserve-points-courses",
     "title": "Continuing Education Units & Reserve Points Courses",
-    "summary": "Training on Continuing Education Units & Reserve Points Courses",
+    "summary": "Walks you through finding, filtering, and enrolling in MarineNet courses for Continuing Education Units and Reserve Points and tracking your progress.",
     "roles": [
       "leader"
     ],
@@ -1824,7 +1824,7 @@
   {
     "slug": "copilot-preview-what-it-is-and-is-not",
     "title": "Copilot Preview, What It Is and Is Not",
-    "summary": "Training on Copilot Preview, What It Is and Is Not",
+    "summary": "Shows you how to tell the two Copilot products apart by sign-in, tests one Excel formula task, and checks what Microsoft Learn says about reading your files.",
     "roles": [
       "marine",
       "leader",
@@ -1844,7 +1844,7 @@
   {
     "slug": "core-and-assigned-missions-c-level-and-a-level",
     "title": "Core and Assigned Missions - C-Level and A-Level",
-    "summary": "Training on Core and Assigned Missions - C-Level and A-Level",
+    "summary": "Explains core versus assigned missions, C-1 through C-5, Y/Q/N assessments, reporting occasions, and readiness boards, per MCO 3000.13B.",
     "roles": [
       "leader"
     ],
@@ -1861,7 +1861,7 @@
   {
     "slug": "correct-promotion-authority-references",
     "title": "Correct Promotion Authority References",
-    "summary": "Training on Correct Promotion Authority References",
+    "summary": "Shows you how to put the right authority on regular and meritorious warrants from PFC through SGT, per MCO P1400.32D W/CH 2 and MARADMIN 502/26.",
     "roles": [
       "leader"
     ],
@@ -1998,7 +1998,7 @@
   {
     "slug": "creating-a-tfsms-account",
     "title": "Creating a TFSMS Account",
-    "summary": "Training on Creating a TFSMS Account",
+    "summary": "Covers accessing the updated Total Force Structure Management System, account setup, reference materials, training resources, the help center, and dashboards.",
     "roles": [
       "leader"
     ],
@@ -2032,7 +2032,7 @@
   {
     "slug": "creating-and-managing-lists",
     "title": "Creating and Managing Lists",
-    "summary": "Training on Creating and Managing Lists",
+    "summary": "Shows Marines and civilians how to create a basic SharePoint List in SharePoint Online to track and manage data and records.",
     "roles": [
       "leader"
     ],
@@ -2100,7 +2100,7 @@
   {
     "slug": "creating-charts-with-pandas-tool",
     "title": "Creating Charts with Pandas Tool",
-    "summary": "Training on Creating Charts with Pandas Tool",
+    "summary": "Shows you how to activate the CamoGPT Pandas tool, select a data file, give specific formatting instructions, and refine generated charts through iteration.",
     "roles": [
       "leader"
     ],
@@ -2117,7 +2117,7 @@
   {
     "slug": "creating-multiple-table-names-and-pivot-tables",
     "title": "Creating Multiple Table Names and Pivot Tables",
-    "summary": "Training on Creating Multiple Table Names and Pivot Tables",
+    "summary": "Shows you how to build a pivot table from a control T table and use Show Report Filter Pages to create one named sheet per filter item.",
     "roles": [
       "marine",
       "leader",
@@ -2137,7 +2137,7 @@
   {
     "slug": "creating-poa-ms-and-training-schedules",
     "title": "Creating POA&Ms and Training Schedules",
-    "summary": "Training on Creating POA&Ms and Training Schedules",
+    "summary": "Shows you how to give genai.mil your requirements and constraints, refine its draft training schedule, and transfer it to your official format.",
     "roles": [
       "leader"
     ],
@@ -2154,7 +2154,7 @@
   {
     "slug": "critical-mos-fill-and-non-deployable-categories",
     "title": "Critical MOS Fill and Non-Deployable Categories",
-    "summary": "Training on Critical MOS Fill and Non-Deployable Categories",
+    "summary": "Covers the six critical MOS fill rules, BIC fill, deployable personnel in Table A-1, non-deployable categories in Table A-2, and MCTFS codes, per MCO 3000.13B.",
     "roles": [
       "leader"
     ],
@@ -2205,7 +2205,7 @@
   {
     "slug": "dc-m-ra-and-dc-cd-i-who-does-what-in-manning-and-staffing",
     "title": "DC M&RA and DC CD&I - Who Does What in Manning and Staffing",
-    "summary": "Training on DC M&RA and DC CD&I - Who Does What in Manning and Staffing",
+    "summary": "Explains how DC CD&I owns requirements, DC M&RA owns inventory and staffing, and CG TECOM bridges training, so you route actions correctly.",
     "roles": [
       "admin"
     ],
@@ -2222,7 +2222,7 @@
   {
     "slug": "dc-m-ra-the-hrdp-owner",
     "title": "DC M&RA, the HRDP Owner",
-    "summary": "Training on DC M&RA, the HRDP Owner",
+    "summary": "Covers the DC M and RA mission, its staffing role versus CD and I manning, and its six divisions, per MCO 5320.12H and MCO 5311.1E.",
     "roles": [
       "admin",
       "leader"
@@ -2259,7 +2259,7 @@
   {
     "slug": "deployed-per-diem-basics",
     "title": "Deployed Per Diem - Basics",
-    "summary": "Training on Deployed Per Diem - Basics",
+    "summary": "Explains what deployed per diem pays Marines under the Unit Deployment Program, when it starts and stops, and your role verifying the claim, per the JTR.",
     "roles": [
       "admin"
     ],
@@ -2276,7 +2276,7 @@
   {
     "slug": "deployed-per-diem-dts-or-unit-diary",
     "title": "Deployed Per Diem - DTS or Unit Diary",
-    "summary": "Training on Deployed Per Diem - DTS or Unit Diary",
+    "summary": "Covers whether deployed per diem pays through the MCTFS unit diary or DTS, the cases breaking the split, and the correction channel, per FPM Vol 2, Ch 6.",
     "roles": [
       "admin"
     ],
@@ -2293,7 +2293,7 @@
   {
     "slug": "deployed-per-diem-reporting-it-in-mctfs",
     "title": "Deployed Per Diem - Reporting It in MCTFS",
-    "summary": "Training on Deployed Per Diem - Reporting It in MCTFS",
+    "summary": "Covers the four MCTFS transactions for deployed per diem, the date rule, qualifier codes, error code 4E, and periods you report, per MCTFS PRIUM 91003.",
     "roles": [
       "admin"
     ],
@@ -2395,7 +2395,7 @@
   {
     "slug": "difference-between-3270-and-mctfs",
     "title": "Difference between 3270 and MCTFS",
-    "summary": "Training on Difference between 3270 and MCTFS",
+    "summary": "Compares the 3270 terminal and MCTFS in purpose, technology, and interface, and explains how the two work together in Marine Corps operations.",
     "roles": [
       "leader"
     ],
@@ -2412,7 +2412,7 @@
   {
     "slug": "different-types-of-leave-know-your-options",
     "title": "Different Types of Leave - Know Your Options",
-    "summary": "Training on Different Types of Leave - Know Your Options",
+    "summary": "Covers annual, convalescent, emergency, special, and environmental and morale leave so you manage time off within Marine Corps regulations.",
     "roles": [
       "leader"
     ],
@@ -2463,7 +2463,7 @@
   {
     "slug": "discount-meal-rate-dmr-advance-party-and-main-body",
     "title": "Discount Meal Rate (DMR) - Advance Party and Main Body",
-    "summary": "Training on Discount Meal Rate (DMR) - Advance Party and Main Body",
+    "summary": "Explains the Discount Meal Rate rules for advance party and main body movements and the arrival date tying them together, per DoD FMR Vol 7A, Ch 25.",
     "roles": [
       "leader"
     ],
@@ -2480,7 +2480,7 @@
   {
     "slug": "discount-meal-rate-dmr-contingency-deployments",
     "title": "Discount Meal Rate (DMR) - Contingency Deployments",
-    "summary": "Training on Discount Meal Rate (DMR) - Contingency Deployments",
+    "summary": "Covers the Discount Meal Rate for contingency deployments by flight, the arrival-day switch, travel days, and the overlap rule, per DoD FMR Vol 7A, Ch 25.",
     "roles": [
       "leader"
     ],
@@ -2497,7 +2497,7 @@
   {
     "slug": "discount-meal-rate-dmr-retrograde-and-rear-party",
     "title": "Discount Meal Rate (DMR) - Retrograde and Rear Party",
-    "summary": "Training on Discount Meal Rate (DMR) - Retrograde and Rear Party",
+    "summary": "Covers the Discount Meal Rate for retrograde movement, the per diem transition, rear party rules, and the air crew exception, per DoD FMR Vol 7A, Ch 25.",
     "roles": [
       "leader"
     ],
@@ -2514,7 +2514,7 @@
   {
     "slug": "discount-meal-rate-dmr-shipboard-messing-basics",
     "title": "Discount Meal Rate (DMR) - Shipboard Messing Basics",
-    "summary": "Training on Discount Meal Rate (DMR) - Shipboard Messing Basics",
+    "summary": "Explains the Discount Meal Rate for shipboard messing, the checking rule and its one exception, and messing status, per DoD FMR Vol 7A, Ch 25, par 2.4.3.1.",
     "roles": [
       "leader"
     ],
@@ -2531,7 +2531,7 @@
   {
     "slug": "discussion-on-data-integration-and-privacy",
     "title": "Discussion on Data Integration and Privacy",
-    "summary": "Training on Discussion on Data Integration and Privacy",
+    "summary": "Covers AI data permissions and privacy, DoD AI ethics principles, advertising algorithms, and safeguards for protecting sensitive information.",
     "roles": [
       "leader"
     ],
@@ -2548,7 +2548,7 @@
   {
     "slug": "dislocation-allowance-dla-basics-and-eligibility",
     "title": "Dislocation Allowance (DLA) - Basics and Eligibility",
-    "summary": "Training on Dislocation Allowance (DLA) - Basics and Eligibility",
+    "summary": "Explains what DLA is and who rates it on a PCS, with and without dependents and regardless of dependents, per JTR Ch 5, para 0505.",
     "roles": [
       "leader"
     ],
@@ -2565,7 +2565,7 @@
   {
     "slug": "dislocation-allowance-dla-dependent-status-determinations",
     "title": "Dislocation Allowance (DLA) - Dependent Status Determinations",
-    "summary": "Training on Dislocation Allowance (DLA) - Dependent Status Determinations",
+    "summary": "Covers how dependency status sets your DLA rate, being considered without dependents, the 60-day quarters rule, and military couples, per JTR Ch 5.",
     "roles": [
       "leader"
     ],
@@ -2582,7 +2582,7 @@
   {
     "slug": "dislocation-allowance-dla-fiscal-year-limits-and-when-dla-is-not-authorized",
     "title": "Dislocation Allowance (DLA) - Fiscal-Year Limits and When DLA Is Not Authorized",
-    "summary": "Training on Dislocation Allowance (DLA) - Fiscal-Year Limits and When DLA Is Not Authorized",
+    "summary": "Covers the one DLA per fiscal year rule, when a second is allowed and the approval path, and moves where DLA is not authorized, per JTR Ch 5.",
     "roles": [
       "leader"
     ],
@@ -2599,7 +2599,7 @@
   {
     "slug": "dislocation-allowance-dla-partial-and-secondary-dla",
     "title": "Dislocation Allowance (DLA) - Partial and Secondary DLA",
-    "summary": "Training on Dislocation Allowance (DLA) - Partial and Secondary DLA",
+    "summary": "Explains Partial DLA, Secondary DLA when orders change, and the hard limits on both, per JTR Ch 5, para 050507 and 050508.",
     "roles": [
       "leader"
     ],
@@ -2616,7 +2616,7 @@
   {
     "slug": "documentation-legal-ceremony-planning-4-2-months",
     "title": "Documentation, Legal & Ceremony Planning (4-2 Months)",
-    "summary": "Training on Documentation, Legal & Ceremony Planning (4-2 Months)",
+    "summary": "Covers 4 to 2 month retirement tasks, including DD Form 2656, SBP briefings, draft DD-214 review, Capstone, POA updates, and beneficiary checks.",
     "roles": [
       "leader"
     ],
@@ -2633,7 +2633,7 @@
   {
     "slug": "drafting-professional-emails-in-seconds",
     "title": "Drafting Professional Emails in Seconds",
-    "summary": "Training on Drafting Professional Emails in Seconds",
+    "summary": "Shows you how to turn bullet points into professional emails with genai.mil, letting the AI handle formal language while you review before sending.",
     "roles": [
       "leader"
     ],
@@ -2650,7 +2650,7 @@
   {
     "slug": "drafting-sops-and-desk-guides",
     "title": "Drafting SOPs and Desk Guides",
-    "summary": "Training on Drafting SOPs and Desk Guides",
+    "summary": "Walks you through turning a process described in plain speech into a desk guide with ChatGPT, then closing the gaps and keeping the wrong content out.",
     "roles": [
       "marine",
       "leader",
@@ -2670,7 +2670,7 @@
   {
     "slug": "earliest-phase-36-24-months",
     "title": "Earliest Phase (36-24 Months)",
-    "summary": "Training on Earliest Phase (36-24 Months)",
+    "summary": "Covers the 36-24 month retirement phase, from your retirement vision and GI Bill transfer requirements to SBP, life insurance, debt, and financial readiness.",
     "roles": [
       "leader"
     ],
@@ -2687,7 +2687,7 @@
   {
     "slug": "early-return-of-dependents-erd-vs-advance-return-of-dependents-ard",
     "title": "Early Return of Dependents (ERD) vs Advance Return of Dependents (ARD)",
-    "summary": "Training on Early Return of Dependents (ERD) vs Advance Return of Dependents (ARD)",
+    "summary": "Explains how ERD differs from ARD for Marines overseas, based on whether PCS orders exist yet, with ERD governed by the Joint Travel Regulations.",
     "roles": [
       "leader"
     ],
@@ -2721,7 +2721,7 @@
   {
     "slug": "enrolling-in-marinenet-courses",
     "title": "Enrolling in MarineNet Courses",
-    "summary": "Training on Enrolling in MarineNet Courses",
+    "summary": "Walks you through enrolling in MarineNet courses, from logging in and searching the course catalog to enrolling and opening your enrolled courses.",
     "roles": [
       "leader"
     ],
@@ -2772,7 +2772,7 @@
   {
     "slug": "explain-like-i-m-5",
     "title": "Explain Like I'm 5",
-    "summary": "Training on Explain Like I'm 5",
+    "summary": "Shows how you ask an AI tool to explain a topic at age five, ten, or fifteen, and why audience and example matter more than age.",
     "roles": [
       "marine",
       "leader",
@@ -2792,7 +2792,7 @@
   {
     "slug": "explaining-complex-regulations-in-plain-language",
     "title": "Explaining Complex Regulations in Plain Language",
-    "summary": "Training on Explaining Complex Regulations in Plain Language",
+    "summary": "Shows how you paste confusing regulation text into an AI tool, ask for a plain-language explanation, and verify it against the source before sharing.",
     "roles": [
       "leader"
     ],
@@ -2809,7 +2809,7 @@
   {
     "slug": "family-relocation-administrative-prep-24-18-months",
     "title": "Family, Relocation & Administrative Prep (24-18 Months)",
-    "summary": "Training on Family, Relocation & Administrative Prep (24-18 Months)",
+    "summary": "Covers family readiness, spouse career planning, move entitlements, housing research, OMPF review and correction, beneficiary checks, and a transition binder.",
     "roles": [
       "leader"
     ],
@@ -2826,7 +2826,7 @@
   {
     "slug": "family-separation-allowance-fsa",
     "title": "Family Separation Allowance (FSA)",
-    "summary": "Training on Family Separation Allowance (FSA)",
+    "summary": "Covers the three FSA types, the more-than-30-day rule, and the form and pay rules, per 37 U.S.C. 427, DoD FMR Vol 7A, Ch 27, and MARADMIN 150/26.",
     "roles": [
       "marine",
       "leader",
@@ -2846,7 +2846,7 @@
   {
     "slug": "few-shot-prompting",
     "title": "Few-Shot Prompting",
-    "summary": "Training on Few-Shot Prompting",
+    "summary": "Shows how you give an AI tool worked input and output examples so it copies the shape, and how you fix weak results by fixing the examples.",
     "roles": [
       "marine",
       "leader",
@@ -2883,7 +2883,7 @@
   {
     "slug": "final-phase-month-of-retirement",
     "title": "Final Phase (Month of Retirement)",
-    "summary": "Training on Final Phase (Month of Retirement)",
+    "summary": "Covers final outprocessing, from the last IPAC appointment and DD-214 review to retiree ID, CAC deactivation, retirement pay, TRICARE, FEDVIP, and VGLI.",
     "roles": [
       "leader"
     ],
@@ -2900,7 +2900,7 @@
   {
     "slug": "final-preparations-outprocessing-2-0-months",
     "title": "Final Preparations & Outprocessing (2-0 Months)",
-    "summary": "Training on Final Preparations & Outprocessing (2-0 Months)",
+    "summary": "Covers the last two months before retirement, including TRICARE, FEDVIP/VGLI enrollment, terminal leave, outprocessing, HHG, and quarters inspection.",
     "roles": [
       "leader"
     ],
@@ -2917,7 +2917,7 @@
   {
     "slug": "financial-family-terminal-leave-planning-months-8-6",
     "title": "Financial, Family & Terminal Leave Planning (Months 8-6)",
-    "summary": "Training on Financial, Family & Terminal Leave Planning (Months 8-6)",
+    "summary": "Covers pension estimates, TSP strategy, emergency funds, family and healthcare planning, and terminal leave timing for months 8 to 6 before retirement.",
     "roles": [
       "leader"
     ],
@@ -2951,7 +2951,7 @@
   {
     "slug": "flight-deck-duty-pay-evolutions-proration-and-restrictions",
     "title": "Flight-Deck Duty Pay - Evolutions, Proration, and Restrictions",
-    "summary": "Training on Flight-Deck Duty Pay - Evolutions, Proration, and Restrictions",
+    "summary": "Covers what counts as a flight deck evolution, the minimums by deck, the proration math, and the three restrictions barring pay, per OPNAVINST 7220.4L.",
     "roles": [
       "leader"
     ],
@@ -2968,7 +2968,7 @@
   {
     "slug": "flight-deck-duty-pay-what-it-is-and-who-qualifies",
     "title": "Flight-Deck Duty Pay - What It Is and Who Qualifies",
-    "summary": "Training on Flight-Deck Duty Pay - What It Is and Who Qualifies",
+    "summary": "Explains what FDHDIP pays, who it covers, the three-part full-month test, and your role verifying billet, orders, and dates, per 37 U.S.C. 351.",
     "roles": [
       "leader"
     ],
@@ -3021,7 +3021,7 @@
   {
     "slug": "formatting-cells-and-worksheets",
     "title": "Formatting Cells and Worksheets",
-    "summary": "Training on Formatting Cells and Worksheets",
+    "summary": "Walks you through formatting cells in Excel, applying number formats, adjusting row height and column width, and applying styles and themes.",
     "roles": [
       "leader"
     ],
@@ -3038,7 +3038,7 @@
   {
     "slug": "forthcoming-changes-to-leave-liberty-and-administrative-absence",
     "title": "Forthcoming Changes To Leave, Liberty, And Administrative Absence",
-    "summary": "Training on Forthcoming Changes To Leave, Liberty, And Administrative Absence",
+    "summary": "Breaks down MARADMIN 625/24 updates to leave, liberty, and administrative absence, including MPLP, House Hunting PTAD, Skillbridge, and terminal leave.",
     "roles": [
       "leader"
     ],
@@ -3055,7 +3055,7 @@
   {
     "slug": "foundation-building-retirement-request-career-foundation-12-10-months",
     "title": "Foundation Building - Retirement Request & Career Foundation (12-10 Months)",
-    "summary": "Training on Foundation Building - Retirement Request & Career Foundation (12-10 Months)",
+    "summary": "Covers submitting your retirement request at 12 months, the DD Form 2648 pre-separation checklist, leave planning, your resume, and LinkedIn.",
     "roles": [
       "leader"
     ],
@@ -3072,7 +3072,7 @@
   {
     "slug": "freeze-panes-and-split-screens",
     "title": "Freeze Panes and Split Screens",
-    "summary": "Training on Freeze Panes and Split Screens",
+    "summary": "Shows how you freeze rows or columns and split the screen from the Excel View tab to compare parts of a large spreadsheet.",
     "roles": [
       "leader"
     ],
@@ -3123,7 +3123,7 @@
   {
     "slug": "game-changer-the-government-policy-repository",
     "title": "Game Changer - The Government Policy Repository",
-    "summary": "Training on Game Changer - The Government Policy Repository",
+    "summary": "Introduces Game Changer, the DoD policy repository, covering access, its document library, search and analytics, MRA use, and offline features.",
     "roles": [
       "leader"
     ],
@@ -3140,7 +3140,7 @@
   {
     "slug": "game-changer-using-for-policy-research",
     "title": "Game Changer - Using for Policy Research",
-    "summary": "Training on Game Changer - Using for Policy Research",
+    "summary": "Shows how you run targeted Game Changer searches, filter results, use document relationship graphs, and work the advanced document view for policy research.",
     "roles": [
       "leader"
     ],
@@ -3157,7 +3157,7 @@
   {
     "slug": "generate-a-graphic-for-a-brief-with-gemini",
     "title": "Generate a Graphic for a Brief with Gemini",
-    "summary": "Training on Generate a Graphic for a Brief with Gemini",
+    "summary": "Shows how you write one four-part sentence for Gemini to generate a graphic for a brief, then check the picture and pixels before it goes on a slide.",
     "roles": [
       "marine",
       "leader",
@@ -3177,7 +3177,7 @@
   {
     "slug": "generating-awards-with-llm",
     "title": "Generating Awards with LLM",
-    "summary": "Training on Generating Awards with LLM",
+    "summary": "Shows how you use LLMs to draft and refine award summary of action wording, built on the opening, body, and closing structure in SECNAV M-1650.1.",
     "roles": [
       "leader"
     ],
@@ -3194,7 +3194,7 @@
   {
     "slug": "generating-fitness-report-and-evaluation-input",
     "title": "Generating Fitness Report and Evaluation Input",
-    "summary": "Training on Generating Fitness Report and Evaluation Input",
+    "summary": "Shows how you turn a raw list of accomplishments into stronger FITREP input with ChatGPT, then audit the output so your own numbers stay intact.",
     "roles": [
       "marine",
       "leader",
@@ -3214,7 +3214,7 @@
   {
     "slug": "gfm-and-force-synchronization-how-requirements-reach-your-desk",
     "title": "GFM and Force Synchronization - How Requirements Reach Your Desk",
-    "summary": "Training on GFM and Force Synchronization - How Requirements Reach Your Desk",
+    "summary": "Traces how Global Force Management and Force Synchronization turn strategic decisions into IA requirements, per MCO 3120.12A and I MEFO 1300.1.",
     "roles": [
       "leader"
     ],
@@ -3231,7 +3231,7 @@
   {
     "slug": "global-force-management-and-jopes-how-your-requirements-feed-the-machine",
     "title": "Global Force Management and JOPES - How Your Requirements Feed the Machine",
-    "summary": "Training on Global Force Management and JOPES - How Your Requirements Feed the Machine",
+    "summary": "Covers the three levels of force sourcing, the GFM Allocation Process, JOPES as the system of record, and the JMD and FMTS manning tools, per JP 3-35.",
     "roles": [
       "leader"
     ],
@@ -3248,7 +3248,7 @@
   {
     "slug": "grouping-areas-of-responsibility",
     "title": "Grouping Areas of Responsibility",
-    "summary": "Training on Grouping Areas of Responsibility",
+    "summary": "Shows how you organize your admin section into task lists, role classifications, and grouped functions to run operations and train your Marines.",
     "roles": [
       "leader"
     ],
@@ -3282,7 +3282,7 @@
   {
     "slug": "hardship-duty-pay-location-hdp-l",
     "title": "Hardship Duty Pay Location (HDP-L)",
-    "summary": "Training on Hardship Duty Pay Location (HDP-L)",
+    "summary": "Covers what HDP-L pays, the 31-day rule, the location and rate tables, and your role verifying the claim, per 37 U.S.C. 352 and DoD FMR Vol 7A, Ch 17.",
     "roles": [
       "leader"
     ],
@@ -3299,7 +3299,7 @@
   {
     "slug": "hardship-duty-pay-tempo-hdp-t",
     "title": "Hardship Duty Pay Tempo (HDP-T)",
-    "summary": "Training on Hardship Duty Pay Tempo (HDP-T)",
+    "summary": "Covers what HDP-T pays, the 220-day threshold, the leave rule resetting it, and the current authority, per MARADMIN 619/14 and MARADMIN 531/23.",
     "roles": [
       "leader"
     ],
@@ -3333,7 +3333,7 @@
   {
     "slug": "history-of-3270",
     "title": "History of 3270",
-    "summary": "Training on History of 3270",
+    "summary": "Traces the IBM 3270 terminal from its origins and features to its mainframe role, decline, modern emulation, and place in the Marine Corps.",
     "roles": [
       "leader"
     ],
@@ -3367,7 +3367,7 @@
   {
     "slug": "hostile-fire-pay",
     "title": "Hostile Fire Pay",
-    "summary": "Training on Hostile Fire Pay",
+    "summary": "Explains how HFP differs from IDP, the certification chain, the concurrency bar, and the MCTFS entries, per DoD FMR Vol 7A, Ch 10 and MARADMIN 433/26.",
     "roles": [
       "marine",
       "leader",
@@ -3387,7 +3387,7 @@
   {
     "slug": "how-humans-differ-from-llms",
     "title": "How Humans Differ from LLMs",
-    "summary": "Training on How Humans Differ from LLMs",
+    "summary": "Compares how humans and LLMs differ in reasoning, ethics, initiative, error handling, and context, and where each adds strength in admin work.",
     "roles": [
       "leader"
     ],
@@ -3404,7 +3404,7 @@
   {
     "slug": "how-the-mc-builds-its-inventory-accessions-through-assignments",
     "title": "How the MC Builds Its Inventory - Accessions Through Assignments",
-    "summary": "Training on How the MC Builds Its Inventory - Accessions Through Assignments",
+    "summary": "Covers how DC M&RA turns ASR output into Marines in billets, from recruiting and training through classification and assignment by MMIB-1.",
     "roles": [
       "admin"
     ],
@@ -3457,7 +3457,7 @@
   {
     "slug": "how-to-begin-your-first-ten-minutes-with-an-ai-assistant",
     "title": "How to Begin, Your First Ten Minutes with an AI Assistant",
-    "summary": "Training on How to Begin, Your First Ten Minutes with an AI Assistant",
+    "summary": "Walks you through your first ten minutes with an AI assistant, from telling it who you are to on and off MCEN use, per MARADMIN 018/26.",
     "roles": [
       "marine",
       "leader",
@@ -3494,7 +3494,7 @@
   {
     "slug": "how-to-change-from-not-rec-to-rec",
     "title": "How to Change from Not Rec to Rec",
-    "summary": "Training on How to Change from Not Rec to Rec",
+    "summary": "Shows who lifts a not rec, the three ways to do it, the rec Page 11, and what lifting it does not change, per MCO 1616.1 and MARADMIN 153/21.",
     "roles": [
       "leader",
       "admin"
@@ -3512,7 +3512,7 @@
   {
     "slug": "how-to-complete-the-navmc-763-first-commission",
     "title": "How to complete the NAVMC 763 - First Commission",
-    "summary": "Training on How to complete the NAVMC 763 - First Commission",
+    "summary": "Covers completing the NAVMC 763 for a first commission, with a focus on accurate data entry and proper document flow.",
     "roles": [
       "leader"
     ],
@@ -3546,7 +3546,7 @@
   {
     "slug": "how-to-not-recommend-marines-in-mol",
     "title": "How to Not Recommend Marines in MOL",
-    "summary": "Training on How to Not Recommend Marines in MOL",
+    "summary": "Shows how you enter a not rec in MOL before the 1st, back it with counseling and a Page 11, and use the unit diary backstop, per MCO 1616.1.",
     "roles": [
       "leader",
       "commander",
@@ -3601,7 +3601,7 @@
   {
     "slug": "how-to-submit-personal-awards-for-your-marines",
     "title": "How to Submit Personal Awards for Your Marines",
-    "summary": "Training on How to Submit Personal Awards for Your Marines",
+    "summary": "Walks you through a personal award in iAPS, from gathering facts and picking the award level to drafting, routing, and submitting to the awarding authority.",
     "roles": [
       "leader"
     ],
@@ -3618,7 +3618,7 @@
   {
     "slug": "how-to-submit-your-teb-request-step-by-step",
     "title": "How to Submit Your TEB Request (Step-by-Step)",
-    "summary": "Training on How to Submit Your TEB Request (Step-by-Step)",
+    "summary": "Walks you through a TEB request in milConnect, allocating 1-36 months to dependents, setting begin and end dates, reviewing acknowledgements, and submitting.",
     "roles": [
       "leader"
     ],
@@ -3652,7 +3652,7 @@
   {
     "slug": "hqmc-organizations-and-the-mroc",
     "title": "HQMC Organizations and the MROC",
-    "summary": "Training on HQMC Organizations and the MROC",
+    "summary": "Covers the key HQMC organizations in manning and staffing, the DC CD&I to DC M&RA handoff, and the MROC and its 10 corporate functions.",
     "roles": [
       "admin"
     ],
@@ -3669,7 +3669,7 @@
   {
     "slug": "human-breast-milk-transport-and-shipment-during-a-pcs",
     "title": "Human Breast Milk Transport and Shipment During a PCS",
-    "summary": "Training on Human Breast Milk Transport and Shipment During a PCS",
+    "summary": "Covers who rates breast milk transport in a PCS, the endorsement first, what the money pays for, and the voucher, per JTR, Ch 2, Table 2-24 and MARADMIN 574/24.",
     "roles": [
       "leader"
     ],
@@ -3720,7 +3720,7 @@
   {
     "slug": "imminent-danger-pay",
     "title": "Imminent Danger Pay",
-    "summary": "Training on Imminent Danger Pay",
+    "summary": "Covers how IDP pays and prorates, calendar traps, MCTFS entries, and rules for hospitalization, concurrency, and Reserve duty, per DoD FMR Vol 7A, Ch 10.",
     "roles": [
       "marine",
       "leader",
@@ -3740,7 +3740,7 @@
   {
     "slug": "imos-dor-examples",
     "title": "IMOS DOR Examples",
-    "summary": "Training on IMOS DOR Examples",
+    "summary": "Shows how you work out the date of rank for a non-competitive IMOS promotion to Sergeant, with five worked examples, per MARADMIN 515/25 and MARADMIN 222/26.",
     "roles": [
       "leader"
     ],
@@ -3757,7 +3757,7 @@
   {
     "slug": "imos-failures-and-reductions",
     "title": "IMOS Failures and Reductions",
-    "summary": "Training on IMOS Failures and Reductions",
+    "summary": "Covers who reduces a Marine failing to qualify in an IMOS, to what grade and date, the no-fault exception, and the road back, per MARADMIN 515/25.",
     "roles": [
       "leader"
     ],
@@ -3774,7 +3774,7 @@
   {
     "slug": "imos-for-corporal-promotion",
     "title": "IMOS for Corporal Promotion",
-    "summary": "Training on IMOS for Corporal Promotion",
+    "summary": "Shows how you counsel a Lance Corporal lateral mover on Corporal selection in the IMOS, the cutting score, and the requirements still owed, per MCO P1400.32D.",
     "roles": [
       "leader"
     ],
@@ -3791,7 +3791,7 @@
   {
     "slug": "imos-for-sergeant-promotion",
     "title": "IMOS for Sergeant Promotion",
-    "summary": "Training on IMOS for Sergeant Promotion",
+    "summary": "Shows how you place a Corporal with an IMOS on the competitive or non-competitive route to Sergeant and check time, PME, and list rules, per MCO P1400.32D.",
     "roles": [
       "leader"
     ],
@@ -3859,7 +3859,7 @@
   {
     "slug": "install-websites-as-apps",
     "title": "Install Websites as Apps",
-    "summary": "Training on Install Websites as Apps",
+    "summary": "Shows how you install a frequently used webpage as an app with the Microsoft Edge browser for faster access than favorites or open tabs.",
     "roles": [
       "leader"
     ],
@@ -3876,7 +3876,7 @@
   {
     "slug": "installation-admin-walkthrough",
     "title": "Installation Admin Walkthrough",
-    "summary": "Training on Installation Admin Walkthrough",
+    "summary": "Walks an installation admin through V.I.C.I.O.U.S. setup, from installation info and units to sections, tasks, matching rules, admins, and sponsor coordinators.",
     "roles": [
       "leader"
     ],
@@ -3893,7 +3893,7 @@
   {
     "slug": "installation-section-walkthrough",
     "title": "Installation Section Walkthrough",
-    "summary": "Training on Installation Section Walkthrough",
+    "summary": "Walks section staff through V.I.C.I.O.U.S., clearing tasks from the inbound and outbound queues, building section tasks, and managing section info and members.",
     "roles": [
       "leader"
     ],
@@ -3910,7 +3910,7 @@
   {
     "slug": "intro-to-excel-and-basic-navigation",
     "title": "Intro to Excel and Basic Navigation",
-    "summary": "Training on Intro to Excel and Basic Navigation",
+    "summary": "Covers opening a new Excel workbook, reading the interface, and moving within a worksheet and between worksheets.",
     "roles": [
       "leader"
     ],
@@ -3927,7 +3927,7 @@
   {
     "slug": "intro-to-standard-travel-and-transportation-allowances",
     "title": "Intro to Standard Travel and Transportation Allowances",
-    "summary": "Training on Intro to Standard Travel and Transportation Allowances",
+    "summary": "Explains the three standard travel allowances, transportation, per diem, and miscellaneous expenses, and how incidental and miscellaneous expenses differ.",
     "roles": [
       "leader"
     ],
@@ -3944,7 +3944,7 @@
   {
     "slug": "introduction-to-fitness-reports",
     "title": "Introduction to Fitness Reports",
-    "summary": "Training on Introduction to Fitness Reports",
+    "summary": "Explains how FITREPs close out the counseling process, who receives them from sergeant to major general, and how the 14 PARS attributes rate from A to G.",
     "roles": [
       "leader"
     ],
@@ -3961,7 +3961,7 @@
   {
     "slug": "introduction-to-marinenet",
     "title": "Introduction to MarineNet",
-    "summary": "Training on Introduction to MarineNet",
+    "summary": "Introduces MarineNet, the Marine Corps online training portal, its key features, and how you get started with courses for professional development.",
     "roles": [
       "leader"
     ],
@@ -3978,7 +3978,7 @@
   {
     "slug": "ipcot-travel-executing-approved-ipcot-travel",
     "title": "IPCOT Travel - Executing Approved IPCOT Travel",
-    "summary": "Training on IPCOT Travel - Executing Approved IPCOT Travel",
+    "summary": "Shows how you execute travel after an approved IPCOT, from verifying approval and the funding request to family and HHG moves, per JTR and MCO 1300.8.",
     "roles": [
       "leader"
     ],
@@ -3995,7 +3995,7 @@
   {
     "slug": "jepes-score-vs-cutting-score",
     "title": "JEPES Score VS Cutting Score",
-    "summary": "Training on JEPES Score VS Cutting Score",
+    "summary": "Explains how a PES score compares with the monthly HQMC cutting score to decide Corporal and Sergeant promotions, per MCO 1616.1 Appendix F.",
     "roles": [
       "leader"
     ],
@@ -4012,7 +4012,7 @@
   {
     "slug": "jepes-semiannual-occasion-dangers",
     "title": "JEPES Semiannual Occasion Dangers",
-    "summary": "Training on JEPES Semiannual Occasion Dangers",
+    "summary": "Explains how approving a JEPES semiannual occasion lifts a not rec in MCTFS, and the checks to hold a Marine before and after approval, per MARADMIN 153/21.",
     "roles": [
       "leader"
     ],
@@ -4029,7 +4029,7 @@
   {
     "slug": "jia-process-joint-manning-documents-and-fmts",
     "title": "JIA Process - Joint Manning Documents and FMTS",
-    "summary": "Training on JIA Process - Joint Manning Documents and FMTS",
+    "summary": "Covers the JIA process, from JMDs through FMTS and JCRM to MCFAPS tasking, the 13 reporting instruction items, and shortfall IA tiering, per MCO 3120.12A.",
     "roles": [
       "leader"
     ],
@@ -4046,7 +4046,7 @@
   {
     "slug": "job-search-medical-readiness-6-4-months",
     "title": "Job Search & Medical Readiness (6-4 Months)",
-    "summary": "Training on Job Search & Medical Readiness (6-4 Months)",
+    "summary": "Covers job search tracking, veteran hiring programs, the retirement physical, a VA BDD claim in the 90-180 day window, and HHG relocation planning.",
     "roles": [
       "leader"
     ],
@@ -4063,7 +4063,7 @@
   {
     "slug": "joint-deployment-and-redeployment-personnel-accountability-from-origin-to-destination",
     "title": "Joint Deployment and Redeployment - Personnel Accountability from Origin to Destination",
-    "summary": "Training on Joint Deployment and Redeployment - Personnel Accountability from Origin to Destination",
+    "summary": "Covers the 4 phases of joint deployment and redeployment, the 4 JRSOI components, the strategic mobility triad, and your accountability role, per JP 3-35.",
     "roles": [
       "leader"
     ],
@@ -4080,7 +4080,7 @@
   {
     "slug": "justasking-ask-a-question-and-get-the-answer-back",
     "title": "JustAsking, Ask a Question and Get the Answer Back",
-    "summary": "Training on JustAsking, Ask a Question and Get the Answer Back",
+    "summary": "Shows how you build a JustAsking question card, send the link, and read the answer back, with free text, choice, date, and date and time questions.",
     "roles": [
       "leader"
     ],
@@ -4097,7 +4097,7 @@
   {
     "slug": "key-players-in-the-fitrep-process",
     "title": "Key Players in the FITREP Process",
-    "summary": "Training on Key Players in the FITREP Process",
+    "summary": "Explains the roles of the Marine Reported On, Reporting Senior, Reviewing Officer, and Third Officer Sighter in the FITREP process.",
     "roles": [
       "leader"
     ],
@@ -4131,7 +4131,7 @@
   {
     "slug": "leave-and-liberty-module-overview",
     "title": "Leave and Liberty Module Overview",
-    "summary": "Training on Leave and Liberty Module Overview",
+    "summary": "Covers the Leave and Liberty Module, from accessing it and applying for leave to checking leave balances and the approval process.",
     "roles": [
       "leader"
     ],
@@ -4148,7 +4148,7 @@
   {
     "slug": "leaving-active-duty-for-the-reserve",
     "title": "Leaving Active Duty for the Reserve",
-    "summary": "Training on Leaving Active Duty for the Reserve",
+    "summary": "Covers Reserve Affairs, RAC, the Direct Affiliation Program and its window, RAM, MMSR-5, and RAP-4 for a Marine leaving active duty for the Reserve.",
     "roles": [
       "marine",
       "leader",
@@ -4168,7 +4168,7 @@
   {
     "slug": "left-right-and-mid-functions",
     "title": "LEFT, RIGHT, and MID Functions",
-    "summary": "Training on LEFT, RIGHT, and MID Functions",
+    "summary": "Shows how you use LEFT, RIGHT, and MID in Excel to split a unit code into its RUC, company code, and section or platoon code.",
     "roles": [
       "leader"
     ],
@@ -4185,7 +4185,7 @@
   {
     "slug": "llm-training-data-sources-and-implications",
     "title": "LLM Training Data - Sources and Implications",
-    "summary": "Training on LLM Training Data - Sources and Implications",
+    "summary": "Covers where LLM training data comes from, including internet content and book databases, what the data leaves out, and how gaps drive bias and hallucinations.",
     "roles": [
       "leader"
     ],
@@ -4254,7 +4254,7 @@
   {
     "slug": "mandatory-remarks-reason-codes-and-the-commander-s-report",
     "title": "Mandatory Remarks, Reason Codes, and the Commander's Report",
-    "summary": "Training on Mandatory Remarks, Reason Codes, and the Commander's Report",
+    "summary": "Covers personnel remarks in BLUF format, reason and employed/deployed codes, the 8 commander summary requirements, and report verification, per MCO 3000.13B.",
     "roles": [
       "leader"
     ],
@@ -4271,7 +4271,7 @@
   {
     "slug": "manning-document-analysis-and-shortfall-management",
     "title": "Manning Document Analysis and Shortfall Management",
-    "summary": "Training on Manning Document Analysis and Shortfall Management",
+    "summary": "Covers MEF G-1 manning document analysis and shortfall management across both sourcing phases, the escalation chain, and draw case codes, per I MEFO 1300.1.",
     "roles": [
       "admin"
     ],
@@ -4288,7 +4288,7 @@
   {
     "slug": "manpower-information-division",
     "title": "Manpower Information Division",
-    "summary": "Training on Manpower Information Division",
+    "summary": "Maps Manpower Information Division, MIT, MID, MIO, MIF, and MISSA with its four branches, plus the ticket rule for routing to your MISSO, MISSA, or MIO.",
     "roles": [
       "admin",
       "leader"
@@ -4306,7 +4306,7 @@
   {
     "slug": "manpower-management-division",
     "title": "Manpower Management Division",
-    "summary": "Training on Manpower Management Division",
+    "summary": "Maps the six Manpower Management branches, MMEA, MMOA, MMIB, MMPB, MMSR, and MMSL, and the routing table for sending your actions, per MCO 5311.1E.",
     "roles": [
       "admin",
       "leader"
@@ -4324,7 +4324,7 @@
   {
     "slug": "manpower-plans-and-policy-division",
     "title": "Manpower Plans and Policy Division",
-    "summary": "Training on Manpower Plans and Policy Division",
+    "summary": "Covers the six Manpower Plans and Policy branches, MPP 40 for official strength numbers, MPO portfolios and Orders, and your five G-1 actions.",
     "roles": [
       "admin",
       "leader"
@@ -4342,7 +4342,7 @@
   {
     "slug": "maradmins-what-are-they",
     "title": "MARADMINS - What are they",
-    "summary": "Training on MARADMINS - What are they",
+    "summary": "Explains what MARADMINs are, who releases them, their proper use and limits, authorization requirements, and formatting.",
     "roles": [
       "leader"
     ],
@@ -4376,7 +4376,7 @@
   {
     "slug": "marine-and-family-programs-and-business-and-support-services",
     "title": "Marine and Family Programs and Business and Support Services",
-    "summary": "Training on Marine and Family Programs and Business and Support Services",
+    "summary": "Covers the five parts of Marine and Family Programs, the Total Fitness Directorate, Military Personnel Services for casualty and DEERS, and MCCS under MR.",
     "roles": [
       "admin",
       "leader"
@@ -4479,7 +4479,7 @@
   {
     "slug": "mcpp-and-fdp-e-when-you-get-called",
     "title": "MCPP and FDP&E - When You Get Called",
-    "summary": "Training on MCPP and FDP&E - When You Get Called",
+    "summary": "Maps the 6 MCPP steps to the 10 FDP&E activities, your manpower actions at each, the FDPWG and DOT, and the parallel planning cycle during force rotation.",
     "roles": [
       "admin"
     ],
@@ -4496,7 +4496,7 @@
   {
     "slug": "medical-awareness-documentation-24-18-months",
     "title": "Medical Awareness & Documentation (24-18 Months)",
-    "summary": "Training on Medical Awareness & Documentation (24-18 Months)",
+    "summary": "Covers tracking appointments, saving Service Treatment Records, documenting issues, and researching VA-eligible conditions tied to service at 24-18 months.",
     "roles": [
       "leader"
     ],
@@ -4513,7 +4513,7 @@
   {
     "slug": "medical-family-administrative-preparation-18-12-months",
     "title": "Medical, Family & Administrative Preparation (18-12 Months)",
-    "summary": "Training on Medical, Family & Administrative Preparation (18-12 Months)",
+    "summary": "Covers medical reviews, service treatment records, deployment exposures, VSOs, and BDD, plus family meetings, spouse jobs, and schools at 18-12 months.",
     "roles": [
       "leader"
     ],
@@ -4723,7 +4723,7 @@
   {
     "slug": "miscellaneous-reimbursable-expenses",
     "title": "Miscellaneous Reimbursable Expenses",
-    "summary": "Training on Miscellaneous Reimbursable Expenses",
+    "summary": "Covers reimbursable GTCC late fees from mission demands, international transaction fees up to 1%, merchant surcharges up to 4%, and baggage storage.",
     "roles": [
       "leader"
     ],
@@ -4740,7 +4740,7 @@
   {
     "slug": "missed-meals",
     "title": "Missed Meals",
-    "summary": "Training on Missed Meals",
+    "summary": "Explains the missed meal exception to BAS collection, the twenty-percent threshold, the rates, and your role verifying the certification, per DoD FMR Vol 7A.",
     "roles": [
       "leader"
     ],
@@ -4757,7 +4757,7 @@
   {
     "slug": "missed-meals-getting-the-credit",
     "title": "Missed Meals - Getting the Credit",
-    "summary": "Training on Missed Meals - Getting the Credit",
+    "summary": "Covers the four conditions for a missed meal credit, when it is barred, and the reporting path, per MCTFS PRIUM 80404 and DoD FMR Vol 7A, Ch 25.",
     "roles": [
       "leader"
     ],
@@ -4774,7 +4774,7 @@
   {
     "slug": "missed-meals-the-rule",
     "title": "Missed Meals - The Rule",
-    "summary": "Training on Missed Meals - The Rule",
+    "summary": "Explains the missed meal exception to BAS collection, the twenty-percent threshold, the rates, and your role verifying it, per DoD FMR Vol 7A, Ch 25.",
     "roles": [
       "admin",
       "leader"
@@ -4826,7 +4826,7 @@
   {
     "slug": "modal-verbs",
     "title": "Modal Verbs",
-    "summary": "Training on Modal Verbs",
+    "summary": "Explains how modal verbs such as SHALL, MUST, and SHOULD set mandatory or discretionary action in military directives.",
     "roles": [
       "leader"
     ],
@@ -4860,7 +4860,7 @@
   {
     "slug": "mos-sponsors-occfld-managers-and-mos-specialists",
     "title": "MOS Sponsors, OccFld Managers, and MOS Specialists",
-    "summary": "Training on MOS Sponsors, OccFld Managers, and MOS Specialists",
+    "summary": "Covers the roles of MOS Sponsors, OccFld Managers, and MOS Specialists per MCO 5311.1E and NAVMC 1200.1L, and when you coordinate with each on a TOECR.",
     "roles": [
       "admin"
     ],
@@ -4894,7 +4894,7 @@
   {
     "slug": "my-dashboard-walkthrough",
     "title": "My Dashboard Walkthrough",
-    "summary": "Training on My Dashboard Walkthrough",
+    "summary": "Walks you through the V.I.C.I.O.U.S. My Dashboard, starting inbound and outbound forms, your checklist, and your sponsor, profile, and permissions.",
     "roles": [
       "leader"
     ],
@@ -4945,7 +4945,7 @@
   {
     "slug": "navigating-the-awards-approval-process",
     "title": "Navigating the Awards Approval Process",
-    "summary": "Training on Navigating the Awards Approval Process",
+    "summary": "Covers how you move award recommendations through approval, from prioritizing them to making timely decisions and delegating authority when needed.",
     "roles": [
       "leader"
     ],
@@ -5030,7 +5030,7 @@
   {
     "slug": "nexus-court-martial-reports-by-month",
     "title": "Nexus, Court-Martial Reports by Month",
-    "summary": "Training on Nexus, Court-Martial Reports by Month",
+    "summary": "Shows how you find monthly court-martial reports in Nexus by year and month, read the date filter and posting lag, and open the official PDF to cite.",
     "roles": [
       "marine",
       "leader",
@@ -5050,7 +5050,7 @@
   {
     "slug": "nexus-dod-issuances-and-dd-forms",
     "title": "Nexus, DoD Issuances and DD Forms",
-    "summary": "Training on Nexus, DoD Issuances and DD Forms",
+    "summary": "Shows how you search 847 DoD issuances and over a thousand DD forms in Nexus by number or subject, then open the PDF and cite from it.",
     "roles": [
       "marine",
       "leader",
@@ -5070,7 +5070,7 @@
   {
     "slug": "nexus-dodfmr-and-jtr-changes",
     "title": "Nexus, DoDFMR and JTR Changes",
-    "summary": "Training on Nexus, DoDFMR and JTR Changes",
+    "summary": "Shows how you find DoD FMR chapters and JTR determinations in Nexus by volume, number, or subject, then confirm the regulation on the source site.",
     "roles": [
       "marine",
       "leader",
@@ -5090,7 +5090,7 @@
   {
     "slug": "nexus-find-any-directive-in-a-minute",
     "title": "Nexus, Find Any Directive in a Minute",
-    "summary": "Training on Nexus, Find Any Directive in a Minute",
+    "summary": "Shows how you search every source in Nexus from the landing page, fix the zero count with All, read the badges, and open the official document.",
     "roles": [
       "marine",
       "leader",
@@ -5110,7 +5110,7 @@
   {
     "slug": "nexus-inspection-prep-with-fa-checklists-and-mcpel",
     "title": "Nexus, Inspection Prep with FA Checklists and MCPEL",
-    "summary": "Training on Nexus, Inspection Prep with FA Checklists and MCPEL",
+    "summary": "Shows how you prep for inspections in Nexus by searching FA checklists by functional area number and opening the MCPEL order behind each one.",
     "roles": [
       "marine",
       "leader",
@@ -5130,7 +5130,7 @@
   {
     "slug": "nexus-navmc-forms-by-number-and-by-name",
     "title": "Nexus, NAVMC Forms by Number and by Name",
-    "summary": "Training on Nexus, NAVMC Forms by Number and by Name",
+    "summary": "Shows how you find NAVMC forms in Nexus by number or name, read the EF tag for a fillable download, and open the forms service to get the active row.",
     "roles": [
       "marine",
       "leader",
@@ -5150,7 +5150,7 @@
   {
     "slug": "nexus-nexus-on-your-phone",
     "title": "Nexus, Nexus on Your Phone",
-    "summary": "Training on Nexus, Nexus on Your Phone",
+    "summary": "Shows how you install Nexus on your phone through Safari or Chrome, use the offline copy, and refresh data with auto refresh or the Refresh button.",
     "roles": [
       "marine",
       "leader",
@@ -5170,7 +5170,7 @@
   {
     "slug": "nexus-search-across-every-source-at-once",
     "title": "Nexus, Search Across Every Source at Once",
-    "summary": "Training on Nexus, Search Across Every Source at Once",
+    "summary": "Shows you how to set the scope in Nexus first, search by message or order number or keyword, and narrow results with a tab or a date.",
     "roles": [
       "marine",
       "leader",
@@ -5190,7 +5190,7 @@
   {
     "slug": "nexus-the-cac-tabs",
     "title": "Nexus, The CAC Tabs",
-    "summary": "Training on Nexus, The CAC Tabs",
+    "summary": "Shows you how to spot the five Nexus link tabs, where each one opens, and what to expect from the CAC sign-in on the other side.",
     "roles": [
       "marine",
       "leader",
@@ -5210,7 +5210,7 @@
   {
     "slug": "nexus-what-it-pulls-and-how-current-it-is",
     "title": "Nexus, What It Pulls and How Current It Is",
-    "summary": "Training on Nexus, What It Pulls and How Current It Is",
+    "summary": "Explains the live feeds, snapshot files, and link tabs behind the twelve Nexus tabs, and why you trust the card date, never the footer.",
     "roles": [
       "marine",
       "leader",
@@ -5230,7 +5230,7 @@
   {
     "slug": "nipr-gpt-create-an-account",
     "title": "NIPR GPT - Create an account",
-    "summary": "Training on NIPR GPT - Create an account",
+    "summary": "Walks you through creating a NIPR GPT account, from CAC authentication and registration to mandatory training and email verification.",
     "roles": [
       "leader"
     ],
@@ -5247,7 +5247,7 @@
   {
     "slug": "nipr-gpt-overview-and-model-selection",
     "title": "NIPR GPT - Overview and Model Selection",
-    "summary": "Training on NIPR GPT - Overview and Model Selection",
+    "summary": "Covers the models inside NIPR GPT, when to pick Gemini or Claude for a task, and where to find the built-in training resources.",
     "roles": [
       "leader"
     ],
@@ -5264,7 +5264,7 @@
   {
     "slug": "not-rec-for-pending-administrative-action",
     "title": "Not Rec for Pending Administrative Action",
-    "summary": "Training on Not Rec for Pending Administrative Action",
+    "summary": "Shows which pending administrative actions bar promotion to Corporal or Sergeant and how you enter, review, and lift the not rec, per MCO P1400.32D.",
     "roles": [
       "leader",
       "admin"
@@ -5282,7 +5282,7 @@
   {
     "slug": "not-rec-for-pending-legal-action",
     "title": "Not Rec for Pending Legal Action",
-    "summary": "Training on Not Rec for Pending Legal Action",
+    "summary": "Covers the pending legal matters which bar a promotion, how you run and review the not rec, and the restrictions after punishment, per MCO P1400.32D.",
     "roles": [
       "leader",
       "admin"
@@ -5300,7 +5300,7 @@
   {
     "slug": "not-rec-for-pft-and-cft-failure",
     "title": "Not Rec for PFT and CFT Failure",
-    "summary": "Training on Not Rec for PFT and CFT Failure",
+    "summary": "Explains what a PFT or CFT failure bars, what clears it, and how you run, review, and lift the not rec, per MCO P1400.32D and MCO 6100.13A.",
     "roles": [
       "leader",
       "admin"
@@ -5335,7 +5335,7 @@
   {
     "slug": "open-vs-closed-source-models",
     "title": "Open vs Closed Source Models",
-    "summary": "Training on Open vs Closed Source Models",
+    "summary": "Compares closed models such as ChatGPT and Gemini with open models such as Llama and DeepSeek on performance and security.",
     "roles": [
       "leader"
     ],
@@ -5403,7 +5403,7 @@
   {
     "slug": "overview-of-o-rma",
     "title": "Overview of O-RMA",
-    "summary": "Training on Overview of O-RMA",
+    "summary": "Walks you through O-RMA and how your OMPF is organized, including the summary, promotion photo, Master Brief Sheet, and performance folder.",
     "roles": [
       "leader"
     ],
@@ -5437,7 +5437,7 @@
   {
     "slug": "p-level-deep-dive-the-formulas-and-calculations",
     "title": "P-Level Deep Dive - The Formulas and Calculations",
-    "summary": "Training on P-Level Deep Dive - The Formulas and Calculations",
+    "summary": "Breaks down the P-Level rule, the personnel strength and Critical MOS formulas, and where structure strength comes from, per MCO 3000.13B.",
     "roles": [
       "leader"
     ],
@@ -5471,7 +5471,7 @@
   {
     "slug": "pac-pay-counseling-requirements-marine-education",
     "title": "PAC Pay Counseling Requirements - Marine Education",
-    "summary": "Training on PAC Pay Counseling Requirements - Marine Education",
+    "summary": "Shows you when to run the two required PAC Pay counselings and the four subjects each one covers, per MCO 1771.2 and NAVMC 1771/2.",
     "roles": [
       "leader"
     ],
@@ -5488,7 +5488,7 @@
   {
     "slug": "pac-pay-counseling-sheet-navmc-1771-2-form-completion",
     "title": "PAC Pay Counseling Sheet - NAVMC 1771/2 Form Completion",
-    "summary": "Training on PAC Pay Counseling Sheet - NAVMC 1771/2 Form Completion",
+    "summary": "Shows you how to find the right PAC Pay form, NAVMC 1771/2, and what each of its four pages does, per MCO 1771.2.",
     "roles": [
       "leader"
     ],
@@ -5505,7 +5505,7 @@
   {
     "slug": "pac-pay-documentation-requirements-building-the-case-file",
     "title": "PAC Pay Documentation Requirements - Building the Case File",
-    "summary": "Training on PAC Pay Documentation Requirements - Building the Case File",
+    "summary": "Shows you how to assemble a PAC Pay case file which holds up under inspection, and where its retention rules come from, per MCO 1771.2.",
     "roles": [
       "leader"
     ],
@@ -5522,7 +5522,7 @@
   {
     "slug": "pac-pay-eligibility-requirements-combat-zone-injuries",
     "title": "PAC Pay Eligibility Requirements - Combat Zone Injuries",
-    "summary": "Training on PAC Pay Eligibility Requirements - Combat Zone Injuries",
+    "summary": "Walks you through deciding whether PAC Pay applies to the case of a specific Marine, from the qualifying rule to the four restrictions, per MCO 1771.2.",
     "roles": [
       "leader"
     ],
@@ -5539,7 +5539,7 @@
   {
     "slug": "pac-pay-entitlements-what-s-included-and-what-s-not",
     "title": "PAC Pay Entitlements - What's Included and What's Not",
-    "summary": "Training on PAC Pay Entitlements - What's Included and What's Not",
+    "summary": "Shows you how to build the list of continued pays for one Marine under PAC Pay, starting from the evacuation LES, per MCO 1771.2.",
     "roles": [
       "leader"
     ],
@@ -5556,7 +5556,7 @@
   {
     "slug": "pac-pay-extensions-beyond-12-months",
     "title": "PAC Pay Extensions - Beyond 12 Months",
-    "summary": "Training on PAC Pay Extensions - Beyond 12 Months",
+    "summary": "Covers how you build and route a PAC Pay extension request, the two disqualifying bars, and the sixty-day submission target, per MCO 1771.2.",
     "roles": [
       "leader"
     ],
@@ -5573,7 +5573,7 @@
   {
     "slug": "pac-pay-line-of-duty-investigations-impact-on-entitlement",
     "title": "PAC Pay Line of Duty Investigations - Impact on Entitlement",
-    "summary": "Training on PAC Pay Line of Duty Investigations - Impact on Entitlement",
+    "summary": "Explains what a line of duty finding does to PAC Pay and what you do the day a finding goes against the Marine, per MCO 1771.2.",
     "roles": [
       "leader"
     ],
@@ -5590,7 +5590,7 @@
   {
     "slug": "pac-pay-mctfs-reporting-ttc-codes-and-diary-entries",
     "title": "PAC Pay MCTFS Reporting - TTC Codes and Diary Entries",
-    "summary": "Training on PAC Pay MCTFS Reporting - TTC Codes and Diary Entries",
+    "summary": "Shows you how to pick the TTC 104 sequence, close sick status and CZTE, and verify each PAC Pay entry posted in MCTFS, per MCTFS PRIUM 70202.",
     "roles": [
       "leader"
     ],
@@ -5607,7 +5607,7 @@
   {
     "slug": "pac-pay-medical-status-tracking-light-duty-to-limited-duty",
     "title": "PAC Pay Medical Status Tracking - Light Duty to Limited Duty",
-    "summary": "Training on PAC Pay Medical Status Tracking - Light Duty to Limited Duty",
+    "summary": "Covers the duty limitation codes, the document moving a Marine between them, and how you prove restricted status before a board, per MCTFS PRIUM 40501.",
     "roles": [
       "leader"
     ],
@@ -5624,7 +5624,7 @@
   {
     "slug": "pac-pay-overview-what-marines-need-to-know",
     "title": "PAC Pay Overview - What Marines Need to Know",
-    "summary": "Training on PAC Pay Overview - What Marines Need to Know",
+    "summary": "Explains what PAC Pay continues, who qualifies, and when it starts and ends on one twelve-month clock, per MCO 1771.2 and 37 U.S.C. 372.",
     "roles": [
       "leader"
     ],
@@ -5675,7 +5675,7 @@
   {
     "slug": "personnel-management-use-cases",
     "title": "Personnel Management Use Cases",
-    "summary": "Training on Personnel Management Use Cases",
+    "summary": "Shows you how to turn a position description into a turnover binder table with ChatGPT, then audit the result and keep sensitive items out.",
     "roles": [
       "marine",
       "leader",
@@ -5695,7 +5695,7 @@
   {
     "slug": "personnel-tempo-perstempo-the-400-day-waiver",
     "title": "Personnel Tempo (PERSTEMPO) - The 400-Day Waiver",
-    "summary": "Training on Personnel Tempo (PERSTEMPO) - The 400-Day Waiver",
+    "summary": "Covers the 400-day PERSTEMPO threshold, how to calculate it with a worked example, and how to route the waiver package, per MARADMIN 436/26.",
     "roles": [
       "leader"
     ],
@@ -5712,7 +5712,7 @@
   {
     "slug": "personnel-tempo-perstempo-the-policy",
     "title": "Personnel Tempo (PERSTEMPO) - The Policy",
-    "summary": "Training on Personnel Tempo (PERSTEMPO) - The Policy",
+    "summary": "Explains what PERSTEMPO measures, the Day Away rule, which event types count against a Marine, and who owns what, per MARADMIN 436/26.",
     "roles": [
       "leader"
     ],
@@ -5729,7 +5729,7 @@
   {
     "slug": "pet-relocation-alternate-location-and-designated-place",
     "title": "Pet Relocation - Alternate Location and Designated Place",
-    "summary": "Training on Pet Relocation - Alternate Location and Designated Place",
+    "summary": "Covers pet relocation to an alternate location or designated place, the eight qualifying cases, evacuations, and which cap applies, per the JTR.",
     "roles": [
       "leader"
     ],
@@ -5746,7 +5746,7 @@
   {
     "slug": "pet-relocation-claims-compliance-and-common-denials",
     "title": "Pet Relocation - Claims, Compliance, and Common Denials",
-    "summary": "Training on Pet Relocation - Claims, Compliance, and Common Denials",
+    "summary": "Shows how a pet relocation claim survives review, from TMO statements and foreign air carriers to the dog entry rule and receipts, per the JTR.",
     "roles": [
       "leader"
     ],
@@ -5763,7 +5763,7 @@
   {
     "slug": "pet-relocation-eligibility-and-allowances",
     "title": "Pet Relocation - Eligibility and Allowances",
-    "summary": "Training on Pet Relocation - Eligibility and Allowances",
+    "summary": "Explains who qualifies for pet relocation on a PCS, the CONUS and OCONUS caps, and the $4,000 exception, per the JTR and MARADMIN 378/23.",
     "roles": [
       "leader"
     ],
@@ -5797,7 +5797,7 @@
   {
     "slug": "point-paper",
     "title": "Point Paper",
-    "summary": "Training on Point Paper",
+    "summary": "Shows the point paper format, with background, short numbered points written for brevity and clarity, a summary, and the prepared-by block.",
     "roles": [
       "leader"
     ],
@@ -5814,7 +5814,7 @@
   {
     "slug": "policy-and-software-updates-new-site",
     "title": "Policy and Software Updates (New Site)",
-    "summary": "Training on Policy and Software Updates (New Site)",
+    "summary": "Walks you through the policy and software update features of the new MISSA/MISSO Portal, including Following, the cycle calendar, PAAs, and alerts.",
     "roles": [
       "leader"
     ],
@@ -5848,7 +5848,7 @@
   {
     "slug": "position-decision-paper",
     "title": "Position/Decision Paper",
-    "summary": "Training on Position/Decision Paper",
+    "summary": "Shows the position/decision paper format through a sample request for a Commanding General decision, with purpose, major points, and discussion.",
     "roles": [
       "leader"
     ],
@@ -5899,7 +5899,7 @@
   {
     "slug": "precedence-levels-and-red-lines",
     "title": "Precedence Levels and Red Lines",
-    "summary": "Training on Precedence Levels and Red Lines",
+    "summary": "Covers the four precedence levels and red line minimum manning standards in MCO 5320.12H, and how your precedence level drives your ASR fill.",
     "roles": [
       "admin"
     ],
@@ -5916,7 +5916,7 @@
   {
     "slug": "preparing-briefing-outlines-and-talking-points",
     "title": "Preparing Briefing Outlines and Talking Points",
-    "summary": "Training on Preparing Briefing Outlines and Talking Points",
+    "summary": "Shows you how to use genai.mil to structure briefing content, draft talking points and anticipated questions, then rehearse and deliver.",
     "roles": [
       "leader"
     ],
@@ -5933,7 +5933,7 @@
   {
     "slug": "printing-and-page-setup",
     "title": "Printing and Page Setup",
-    "summary": "Training on Printing and Page Setup",
+    "summary": "Walks you through Excel page setup for printing, including margins, orientation, and paper size on the Page Layout tab and setting a print area.",
     "roles": [
       "leader"
     ],
@@ -5950,7 +5950,7 @@
   {
     "slug": "processing-denied-remedials",
     "title": "Processing Denied Remedials",
-    "summary": "Training on Processing Denied Remedials",
+    "summary": "Shows how you stop a remedial promotion the commander declines for a Corporal or Sergeant, posted or not, per MARADMIN 559/23 and MCO P1400.32D.",
     "roles": [
       "leader",
       "admin"
@@ -5968,7 +5968,7 @@
   {
     "slug": "processing-imos-promotions",
     "title": "Processing IMOS Promotions",
-    "summary": "Training on Processing IMOS Promotions",
+    "summary": "Walks you through checking the record, sending the request letter, and carrying an IMOS promotion to Sergeant to the warrant, per MARADMIN 515/25.",
     "roles": [
       "leader"
     ],
@@ -5985,7 +5985,7 @@
   {
     "slug": "processing-maradmin-action-items",
     "title": "Processing MARADMIN Action Items",
-    "summary": "Training on Processing MARADMIN Action Items",
+    "summary": "Shows you how to have genai.mil pull action items, suspense dates, and affected populations from a MARADMIN, then verify and build a tracker.",
     "roles": [
       "leader"
     ],
@@ -6002,7 +6002,7 @@
   {
     "slug": "promotion-folder-part-1-missing-training-and-jepes-occasions",
     "title": "Promotion Folder Part 1 - Missing Training and JEPES Occasions",
-    "summary": "Training on Promotion Folder Part 1 - Missing Training and JEPES Occasions",
+    "summary": "Covers how you work missing training data before the cutoff, track JEPES occasions to approval, and file proof in Part 1, per MCO 1616.1.",
     "roles": [
       "leader"
     ],
@@ -6019,7 +6019,7 @@
   {
     "slug": "promotion-folder-part-2-recommendation-rosters",
     "title": "Promotion Folder Part 2 - Recommendation Rosters",
-    "summary": "Training on Promotion Folder Part 2 - Recommendation Rosters",
+    "summary": "Shows you how to pull the certified rec and not rec roster, prove each not rec went in before the 1st, and file the Page 11s, per MCO 1616.1.",
     "roles": [
       "leader"
     ],
@@ -6036,7 +6036,7 @@
   {
     "slug": "promotion-folder-part-3-promotion-authority",
     "title": "Promotion Folder Part 3 - Promotion Authority",
-    "summary": "Training on Promotion Folder Part 3 - Promotion Authority",
+    "summary": "Shows you how to name and file the authority for every promotion your command effects in a month, per MCO P1400.32D W/CH 2 and MARADMIN 502/26.",
     "roles": [
       "leader"
     ],
@@ -6053,7 +6053,7 @@
   {
     "slug": "promotion-folder-part-4-select-grade-documentation",
     "title": "Promotion Folder Part 4 - Select Grade Documentation",
-    "summary": "Training on Promotion Folder Part 4 - Select Grade Documentation",
+    "summary": "Walks you through building Part 4 of the promotion folder, the select grade roster, checks, and warrant delivery, per MCO P1400.32D W/CH 2.",
     "roles": [
       "leader"
     ],
@@ -6070,7 +6070,7 @@
   {
     "slug": "promotion-folder-part-5-not-recommended-after-select-grade",
     "title": "Promotion Folder Part 5 - Not Recommended After Select Grade",
-    "summary": "Training on Promotion Folder Part 5 - Not Recommended After Select Grade",
+    "summary": "Shows you how to build Part 5 of the promotion folder and file proof a selected Marine was stopped correctly, per MARADMIN 559/23.",
     "roles": [
       "leader"
     ],
@@ -6087,7 +6087,7 @@
   {
     "slug": "promotion-folder-part-6-miscellaneous",
     "title": "Promotion Folder Part 6 - Miscellaneous",
-    "summary": "Training on Promotion Folder Part 6 - Miscellaneous",
+    "summary": "Covers how you file remedials, erroneous promotions, and unusual cases in Part 6 of the promotion folder, per MARADMIN 559/23 and MCO P1400.32D.",
     "roles": [
       "leader"
     ],
@@ -6121,7 +6121,7 @@
   {
     "slug": "prompt-creation-and-reusable-templates",
     "title": "Prompt Creation and Reusable Templates",
-    "summary": "Training on Prompt Creation and Reusable Templates",
+    "summary": "Covers building prompts with the Prompt Maker tool, defining roles and tasks, building templates for common work, and refining them over time.",
     "roles": [
       "leader"
     ],
@@ -6155,7 +6155,7 @@
   {
     "slug": "prompt-injection-and-safety",
     "title": "Prompt Injection and Safety",
-    "summary": "Training on Prompt Injection and Safety",
+    "summary": "Shows what a prompt injection line hidden in a pasted email does to the tool, and how tags, fences, and a paste rule keep it in check.",
     "roles": [
       "marine",
       "leader",
@@ -6175,7 +6175,7 @@
   {
     "slug": "prompt-types-zero-shot-vs-chain-vs-mega",
     "title": "Prompt Types - Zero-Shot vs Chain vs Mega",
-    "summary": "Training on Prompt Types - Zero-Shot vs Chain vs Mega",
+    "summary": "Compares zero-shot, mega, and chain prompts, plus hybrid approaches and a decision framework for picking the right type for the task.",
     "roles": [
       "leader"
     ],
@@ -6226,7 +6226,7 @@
   {
     "slug": "protecting-worksheets-and-workbooks",
     "title": "Protecting Worksheets and Workbooks",
-    "summary": "Training on Protecting Worksheets and Workbooks",
+    "summary": "Walks you through protecting Excel worksheets and workbooks from the Review tab to prevent accidental or unauthorized changes to your data.",
     "roles": [
       "leader"
     ],
@@ -6277,7 +6277,7 @@
   {
     "slug": "reading-out-year-columns-tracking-fy-to-fy-changes",
     "title": "Reading Out-Year Columns - Tracking FY-to-FY Changes",
-    "summary": "Training on Reading Out-Year Columns - Tracking FY-to-FY Changes",
+    "summary": "Shows how you read the 21-year T/O outlook, sort FY-to-FY changes into three types, and compare February and August ASR publications.",
     "roles": [
       "leader"
     ],
@@ -6294,7 +6294,7 @@
   {
     "slug": "reading-the-enlisted-csr-every-field-explained",
     "title": "Reading the Enlisted CSR - Every Field Explained",
-    "summary": "Training on Reading the Enlisted CSR - Every Field Explained",
+    "summary": "Walks you through every field on the enlisted CSR, from identity and duty dates to billet match checks, and how you read each row left to right.",
     "roles": [
       "admin"
     ],
@@ -6311,7 +6311,7 @@
   {
     "slug": "reading-the-officer-csr-what-is-different",
     "title": "Reading the Officer CSR - What is Different",
-    "summary": "Training on Reading the Officer CSR - What is Different",
+    "summary": "Covers the fields the officer CSR shares with the enlisted report and the six officer-specific columns, with examples from a real report.",
     "roles": [
       "admin"
     ],
@@ -6328,7 +6328,7 @@
   {
     "slug": "reading-the-t-o-report-every-field-explained",
     "title": "Reading the T/O Report - Every Field Explained",
-    "summary": "Training on Reading the T/O Report - Every Field Explained",
+    "summary": "Explains every field on the T/O report, from billet line identity and coding fields to real JF1 billet lines and your G-1 role, per MCO 5311.1E.",
     "roles": [
       "admin"
     ],
@@ -6362,7 +6362,7 @@
   {
     "slug": "relative-and-absolute-cell-referencing",
     "title": "Relative and Absolute Cell Referencing",
-    "summary": "Training on Relative and Absolute Cell Referencing",
+    "summary": "Explains the difference between relative and absolute cell references in Excel and how you toggle between them with the F4 key.",
     "roles": [
       "leader"
     ],
@@ -6379,7 +6379,7 @@
   {
     "slug": "relative-value-rv",
     "title": "Relative Value (RV)",
-    "summary": "Training on Relative Value (RV)",
+    "summary": "Explains how Relative Value compares one FITREP to other reports by the same Reporting Senior on Marines of the same grade, on an 80 to 100 scale.",
     "roles": [
       "leader"
     ],
@@ -6447,7 +6447,7 @@
   {
     "slug": "request-access-to-o-rma-ompf-viewer",
     "title": "Request access to O-RMA - OMPF Viewer",
-    "summary": "Training on Request access to O-RMA - OMPF Viewer",
+    "summary": "Walks you through registering with the M&RA Portal, requesting OMPF Viewer permissions in O-RMA, and completing the SAAR.",
     "roles": [
       "leader"
     ],
@@ -6551,7 +6551,7 @@
   {
     "slug": "requirements-for-corporal",
     "title": "Requirements for Corporal",
-    "summary": "Training on Requirements for Corporal",
+    "summary": "Covers every requirement a Lance Corporal must meet to compete for Corporal, from time and PME to the cutting score and the part the commander plays.",
     "roles": [
       "leader"
     ],
@@ -6568,7 +6568,7 @@
   {
     "slug": "requirements-for-pfc-and-lcpl",
     "title": "Requirements for PFC and LCpl",
-    "summary": "Training on Requirements for PFC and LCpl",
+    "summary": "Shows you how to work out promotion dates to PFC and LCpl and what the commander does when a Marine should not promote, per MCO P1400.32D.",
     "roles": [
       "leader"
     ],
@@ -6585,7 +6585,7 @@
   {
     "slug": "requirements-for-sergeant",
     "title": "Requirements for Sergeant",
-    "summary": "Training on Requirements for Sergeant",
+    "summary": "Covers the 30-month time in service rule, PME, the score, the not rec, and the warrant for a Corporal competing for Sergeant, per MARADMIN 222/26.",
     "roles": [
       "leader"
     ],
@@ -6602,7 +6602,7 @@
   {
     "slug": "reserve-affairs-division",
     "title": "Reserve Affairs Division",
-    "summary": "Training on Reserve Affairs Division",
+    "summary": "Explains the three Reserve Affairs Division branches, RAP, RAM, and RAC, what each owns, and what Reserve Affairs does not own.",
     "roles": [
       "admin",
       "leader"
@@ -6620,7 +6620,7 @@
   {
     "slug": "responsibilities-by-role",
     "title": "Responsibilities by Role",
-    "summary": "Training on Responsibilities by Role",
+    "summary": "Covers GTCC program duties by role, from GSA and OUSD down through DTMO, DFAS, component heads, CBA managers, and individual cardholders.",
     "roles": [
       "leader"
     ],
@@ -6637,7 +6637,7 @@
   {
     "slug": "retirement-timeline-and-checklist",
     "title": "Retirement Timeline and Checklist",
-    "summary": "Training on Retirement Timeline and Checklist",
+    "summary": "Walks you through the 12 to 24 month retirement checklist, including the mandatory Transition Readiness Seminar and the DD Form 2648.",
     "roles": [
       "leader"
     ],
@@ -6671,7 +6671,7 @@
   {
     "slug": "reviewing-and-tracking-remedial-promotions",
     "title": "Reviewing and Tracking Remedial Promotions",
-    "summary": "Training on Reviewing and Tracking Remedial Promotions",
+    "summary": "Shows you how to take a remedial select grade to the commander in Promotion Recommendations and track it in the JEPES Remedial tab, per MARADMIN 559/23.",
     "roles": [
       "leader",
       "admin"
@@ -6706,7 +6706,7 @@
   {
     "slug": "role-based-prompting",
     "title": "Role-Based Prompting",
-    "summary": "Training on Role-Based Prompting",
+    "summary": "Shows how adding a role, an audience, and an output shape to a prompt changes the answer, using the same facts for different readers.",
     "roles": [
       "marine",
       "leader",
@@ -6726,7 +6726,7 @@
   {
     "slug": "round-roundup-rounddown-functions",
     "title": "ROUND, ROUNDUP, ROUNDDOWN Functions",
-    "summary": "Training on ROUND, ROUNDUP,  ROUNDDOWN Functions",
+    "summary": "Explains the syntax of the Excel ROUND, ROUNDUP, and ROUNDDOWN functions and when to use each, with Marine Corps examples such as PFT run times.",
     "roles": [
       "leader"
     ],
@@ -6760,7 +6760,7 @@
   {
     "slug": "s-level-r-level-and-t-level-the-other-three-resource-levels",
     "title": "S-Level, R-Level, and T-Level - The Other Three Resource Levels",
-    "summary": "Training on S-Level, R-Level, and T-Level - The Other Three Resource Levels",
+    "summary": "Covers how S-Level, R-Level, and T-Level are calculated and how all four levels feed the C-Level and A-Level, per MCO 3000.13B.",
     "roles": [
       "leader"
     ],
@@ -6777,7 +6777,7 @@
   {
     "slug": "same-page-endorsements",
     "title": "Same Page Endorsements",
-    "summary": "Training on Same Page Endorsements",
+    "summary": "Shows the same page endorsement format through a sample appointment letter and its first endorsement, per SECNAV M-5216.5 CH-1.",
     "roles": [
       "leader"
     ],
@@ -6811,7 +6811,7 @@
   {
     "slug": "sea-dashboard-processing-a-self-initiated-review",
     "title": "SEA Dashboard (Processing a Self Initiated Review)",
-    "summary": "Training on SEA Dashboard (Processing a Self Initiated Review)",
+    "summary": "Walks you through processing a self-initiated review in the JEPES SEA Dashboard, from active occasions to selecting a MROW and adding a review.",
     "roles": [
       "leader"
     ],
@@ -6828,7 +6828,7 @@
   {
     "slug": "self-critique-prompting",
     "title": "Self-Critique Prompting",
-    "summary": "Training on Self-Critique Prompting",
+    "summary": "Shows you how to have the tool critique its own draft against four named checks, return a fenced rewrite and scorecard, then read the fix.",
     "roles": [
       "marine",
       "leader",
@@ -6848,7 +6848,7 @@
   {
     "slug": "self-register-for-an-account-on-marine-online",
     "title": "Self Register for an Account on Marine Online",
-    "summary": "Training on Self Register for an Account on Marine Online",
+    "summary": "Walks you through self-registering for a Marine Online account, saving your user name, and configuring email password reset.",
     "roles": [
       "leader"
     ],
@@ -6882,7 +6882,7 @@
   {
     "slug": "service-augments-and-magtf-augmentation",
     "title": "Service Augments and MAGTF Augmentation",
-    "summary": "Training on Service Augments and MAGTF Augmentation",
+    "summary": "Explains Service Augments and MAGTF Augmentation, the SA validation board, screening criteria, and your G-1 role, per MCO 3120.12A.",
     "roles": [
       "leader"
     ],
@@ -6899,7 +6899,7 @@
   {
     "slug": "setting-up-microsoft-skills-initiative-account",
     "title": "Setting Up Microsoft Skills Initiative Account",
-    "summary": "Training on Setting Up Microsoft Skills Initiative Account",
+    "summary": "Walks you through registering for the Microsoft Skills Initiative Learner Experience portal and using the Microsoft Learning Assistant.",
     "roles": [
       "leader"
     ],
@@ -6916,7 +6916,7 @@
   {
     "slug": "sharepoint-and-json-scripting-support",
     "title": "SharePoint and JSON Scripting Support",
-    "summary": "Training on SharePoint and JSON Scripting Support",
+    "summary": "Shows you how to get SharePoint JSON and a click path from the Copilot app, check both against the docs, then paste, preview, and save.",
     "roles": [
       "marine",
       "leader",
@@ -6936,7 +6936,7 @@
   {
     "slug": "sharing-and-converting-reports-between-packages",
     "title": "Sharing and converting reports between packages",
-    "summary": "Training on Sharing and converting reports between packages",
+    "summary": "Covers how you share Cognos Analytics reports with permissions and recreate the structure, calculations, and formatting in a new package.",
     "roles": [
       "leader"
     ],
@@ -6987,7 +6987,7 @@
   {
     "slug": "skill-development-professional-growth-months-10-8",
     "title": "Skill Development & Professional Growth (Months 10-8)",
-    "summary": "Training on Skill Development & Professional Growth (Months 10-8)",
+    "summary": "Covers professional growth 10 to 8 months before separation, including certifications, informational interviews, mentors, and SkillBridge research.",
     "roles": [
       "leader"
     ],
@@ -7021,7 +7021,7 @@
   {
     "slug": "small-and-large-functions",
     "title": "SMALL and LARGE Functions",
-    "summary": "Training on SMALL and LARGE Functions",
+    "summary": "Shows you how LARGE and SMALL return the k-th biggest or smallest value and how INDEX and MATCH build a ranked list with names in Excel.",
     "roles": [
       "marine",
       "leader",
@@ -7041,7 +7041,7 @@
   {
     "slug": "sorting-and-filtering-data",
     "title": "Sorting and Filtering Data",
-    "summary": "Training on Sorting and Filtering Data",
+    "summary": "Walks you through preparing a data table with headers and sorting and filtering it in Excel with the Sort and Filter button.",
     "roles": [
       "leader"
     ],
@@ -7058,7 +7058,7 @@
   {
     "slug": "sourcing-phases-and-categories-from-requirement-to-execution",
     "title": "Sourcing Phases and Categories - From Requirement to Execution",
-    "summary": "Training on Sourcing Phases and Categories - From Requirement to Execution",
+    "summary": "Covers the four sourcing phases and five joint force sourcing categories per MCO 3120.12A, including ILO and ad hoc sourcing.",
     "roles": [
       "leader"
     ],
@@ -7075,7 +7075,7 @@
   {
     "slug": "special-diets-and-commuted-rations",
     "title": "Special Diets and Commuted Rations",
-    "summary": "Training on Special Diets and Commuted Rations",
+    "summary": "Explains what a special-diet authorization is, who qualifies, and how your shop approves, reports, and closes it, per MCO 10110.47A.",
     "roles": [
       "leader"
     ],
@@ -7092,7 +7092,7 @@
   {
     "slug": "special-situations-purple-heart-colmery-act-and-more",
     "title": "Special Situations - Purple Heart, Colmery Act, and More",
-    "summary": "Training on Special Situations - Purple Heart, Colmery Act, and More",
+    "summary": "Covers special TEB situations, including Purple Heart exceptions, Colmery Act provisions, reallocation from deceased dependents, and CIP restrictions.",
     "roles": [
       "leader"
     ],
@@ -7109,7 +7109,7 @@
   {
     "slug": "split-pay-option",
     "title": "Split Pay Option",
-    "summary": "Training on Split Pay Option",
+    "summary": "Explains the Split Pay Option for Marines on direct deposit, who qualifies, and how you start and stop it with the right TTC codes, per MCTFSPRIUM par 91101.",
     "roles": [
       "leader"
     ],
@@ -7126,7 +7126,7 @@
   {
     "slug": "sponsorship-walkthrough",
     "title": "Sponsorship Walkthrough",
-    "summary": "Training on Sponsorship Walkthrough",
+    "summary": "Walks you through V.I.C.I.O.U.S. sponsorship, from assigning or removing a sponsor to confirming arrival and checking installation oversight.",
     "roles": [
       "leader"
     ],
@@ -7143,7 +7143,7 @@
   {
     "slug": "spouse-relicensing-and-business-cost-reimbursement",
     "title": "Spouse Relicensing and Business Cost Reimbursement",
-    "summary": "Training on Spouse Relicensing and Business Cost Reimbursement",
+    "summary": "Covers reimbursement of spouse relicensing and business costs after a PCS, the two categories and caps, and filing the claim, per MARADMIN 413/26.",
     "roles": [
       "leader"
     ],
@@ -7177,7 +7177,7 @@
   {
     "slug": "structure-vs-manning-vs-staffing-the-three-terms-you-need-to-own",
     "title": "Structure vs Manning vs Staffing - The Three Terms You Need to Own",
-    "summary": "Training on Structure vs Manning vs Staffing - The Three Terms You Need to Own",
+    "summary": "Defines structure, manning, and staffing per MCO 5311.1E, who owns each, and why each kind of unit shortfall needs a different fix.",
     "roles": [
       "admin"
     ],
@@ -7194,7 +7194,7 @@
   {
     "slug": "structure-your-prompt-markdown-json-and-xml-tags",
     "title": "Structure Your Prompt, Markdown, JSON, and XML Tags",
-    "summary": "Training on Structure Your Prompt, Markdown, JSON, and XML Tags",
+    "summary": "Shows when to structure a prompt with Markdown for people, JSON for systems, or tags for pasted text, and what structure does not fix.",
     "roles": [
       "marine",
       "leader",
@@ -7231,7 +7231,7 @@
   {
     "slug": "submitting-a-mio-system-change-request",
     "title": "Submitting a MIO System Change Request",
-    "summary": "Training on Submitting a MIO System Change Request",
+    "summary": "Walks you through submitting a MIO System Change Request in the MISSA/MISSO Portal, from the problem and end state to priority and ROI.",
     "roles": [
       "leader"
     ],
@@ -7282,7 +7282,7 @@
   {
     "slug": "sumifs-function",
     "title": "SUMIFS Function",
-    "summary": "Training on SUMIFS Function",
+    "summary": "Shows you the SUMIFS syntax in Excel, with one or two conditions, wildcards and comparisons, and criteria pointed at cells to fill a table.",
     "roles": [
       "marine",
       "leader",
@@ -7336,7 +7336,7 @@
   {
     "slug": "summarizing-long-policy-documents",
     "title": "Summarizing Long Policy Documents",
-    "summary": "Training on Summarizing Long Policy Documents",
+    "summary": "Shows you how to summarize MARADMINs and policy documents with genai.mil, verify the output, and share it with your team.",
     "roles": [
       "leader"
     ],
@@ -7353,7 +7353,7 @@
   {
     "slug": "summary-prompt-patterns-tl-dr-bullets-what-changed",
     "title": "Summary Prompt Patterns, TL;DR, Bullets, What Changed",
-    "summary": "Training on Summary Prompt Patterns, TL;DR, Bullets, What Changed",
+    "summary": "Covers three summary prompt patterns, a one-sentence summary, cited bullets, and what changed, using MARADMIN 018/26, and how to check each.",
     "roles": [
       "marine",
       "leader",
@@ -7373,7 +7373,7 @@
   {
     "slug": "system-user-and-assistant-roles",
     "title": "System, User, and Assistant Roles",
-    "summary": "Training on System, User, and Assistant Roles",
+    "summary": "Explains the system, user, and assistant roles in every chat, why explicit instructions beat defaults, and where you control each role.",
     "roles": [
       "marine",
       "leader",
@@ -7393,7 +7393,7 @@
   {
     "slug": "t-o-validation-the-billet-level-review",
     "title": "T/O Validation - The Billet-Level Review",
-    "summary": "Training on T/O Validation - The Billet-Level Review",
+    "summary": "Walks you through the billet-level T/O review, checking every identity and coding field on a single billet line, per MCO 5311.1E.",
     "roles": [
       "leader"
     ],
@@ -7410,7 +7410,7 @@
   {
     "slug": "t-o-validation-the-unit-level-review",
     "title": "T/O Validation - The Unit-Level Review",
-    "summary": "Training on T/O Validation - The Unit-Level Review",
+    "summary": "Shows how you verify your unit structure, read MF and MT mapped billets, count chargeable billets, and spot protected billets, per MCO 5311.1E.",
     "roles": [
       "leader"
     ],
@@ -7427,7 +7427,7 @@
   {
     "slug": "t-o-vs-on-hand-building-the-gap-analysis",
     "title": "T/O vs On-Hand - Building the Gap Analysis",
-    "summary": "Training on T/O vs On-Hand - Building the Gap Analysis",
+    "summary": "Shows how you pull T/O data from TFSMS and on-hand data from MCTFS to build a grade-by-MOS comparison matrix for your unit.",
     "roles": [
       "leader"
     ],
@@ -7444,7 +7444,7 @@
   {
     "slug": "t-o-vs-on-hand-diagnosing-the-shortfall",
     "title": "T/O vs On-Hand - Diagnosing the Shortfall",
-    "summary": "Training on T/O vs On-Hand - Diagnosing the Shortfall",
+    "summary": "Shows how you sort each T/O versus on-hand delta into a structure, manning, or staffing problem and pick the right action, per MCO 5311.1E.",
     "roles": [
       "leader"
     ],
@@ -7461,7 +7461,7 @@
   {
     "slug": "taking-foreign-leave-what-you-need-to-know",
     "title": "Taking Foreign Leave - What You Need to Know",
-    "summary": "Training on Taking Foreign Leave - What You Need to Know",
+    "summary": "Walks you through foreign leave, from SERE 100.2, ISOPREP, and a threat briefing to APACS clearance, the FCG, and command approval.",
     "roles": [
       "leader"
     ],
@@ -7478,7 +7478,7 @@
   {
     "slug": "task-manager-walkthrough",
     "title": "Task Manager Walkthrough",
-    "summary": "Training on Task Manager Walkthrough",
+    "summary": "Walks you through the V.I.C.I.O.U.S. Task Manager, clearing text, date, and options tasks, creating new tasks, and deleting them.",
     "roles": [
       "leader"
     ],
@@ -7495,7 +7495,7 @@
   {
     "slug": "teb-overview-what-you-need-to-know-now",
     "title": "TEB Overview - What You Need to Know NOW",
-    "summary": "Training on TEB Overview - What You Need to Know NOW",
+    "summary": "Covers why Transfer of Education Benefits (TEB) is a retention tool and not automatic, and why you must apply before the service obligation runs out.",
     "roles": [
       "leader"
     ],
@@ -7512,7 +7512,7 @@
   {
     "slug": "temperature-top-p-and-why-results-vary",
     "title": "Temperature, Top-p, and Why Results Vary",
-    "summary": "Training on Temperature, Top-p, and Why Results Vary",
+    "summary": "Explains why one prompt run three times gives different answers, how temperature and top-p steer output, and how you get consistency without a dial.",
     "roles": [
       "marine",
       "leader",
@@ -7549,7 +7549,7 @@
   {
     "slug": "temporary-lodging-allowance-tla",
     "title": "Temporary Lodging Allowance (TLA)",
-    "summary": "Training on Temporary Lodging Allowance (TLA)",
+    "summary": "Covers the OCONUS Temporary Lodging Allowance, when it applies, the 60-day window, and your role with the command, per DoD FMR Vol 7A, Ch 68.",
     "roles": [
       "leader"
     ],
@@ -7566,7 +7566,7 @@
   {
     "slug": "temporary-lodging-allowance-tla-special-tla",
     "title": "Temporary Lodging Allowance (TLA) - Special TLA",
-    "summary": "Training on Temporary Lodging Allowance (TLA) - Special TLA",
+    "summary": "Walks you through TLA Special requests for a higher lodging rate during special events, who decides, and what blocks one, per DoD FMR Vol 7A, Ch 68.",
     "roles": [
       "leader"
     ],
@@ -7583,7 +7583,7 @@
   {
     "slug": "temporary-lodging-expense-tle",
     "title": "Temporary Lodging Expense (TLE)",
-    "summary": "Training on Temporary Lodging Expense (TLE)",
+    "summary": "Shows how you file a clean Temporary Lodging Expense claim during a CONUS PCS, with day limits and payment rates, per JTR Ch 5, par 050601.",
     "roles": [
       "leader"
     ],
@@ -7617,7 +7617,7 @@
   {
     "slug": "the-10-categories-of-force-requirements",
     "title": "The 10 Categories of Force Requirements",
-    "summary": "Training on The 10 Categories of Force Requirements",
+    "summary": "Covers the 10 force requirement categories per MCO 3120.12A, who originates, validates, and approves each, and which ones need SecDef approval.",
     "roles": [
       "leader"
     ],
@@ -7634,7 +7634,7 @@
   {
     "slug": "the-8-functional-areas-and-10-activities-where-you-plug-in",
     "title": "The 8 Functional Areas and 10 Activities - Where You Plug In",
-    "summary": "Training on The 8 Functional Areas and 10 Activities - Where You Plug In",
+    "summary": "Maps the 8 functional areas and 10 activities, with Personnel as your lane, and traces the SA/IA sourcing chain from UDMIPS to MDSS II.",
     "roles": [
       "leader"
     ],
@@ -7651,7 +7651,7 @@
   {
     "slug": "the-asr-how-the-mc-decides-what-it-buys",
     "title": "The ASR - How the MC Decides What It Buys",
-    "summary": "Training on The ASR - How the MC Decides What It Buys",
+    "summary": "Explains the Authorized Strength Report, its three inputs, the semiannual process, and why chargeable versus non-chargeable status matters, per MCO 5311.1E.",
     "roles": [
       "admin"
     ],
@@ -7668,7 +7668,7 @@
   {
     "slug": "the-cpg-and-strategic-context-force-design-2030-and-talent-management",
     "title": "The CPG and Strategic Context - Force Design 2030 and Talent Management",
-    "summary": "Training on The CPG and Strategic Context - Force Design 2030 and Talent Management",
+    "summary": "Covers how the 39th CMC Planning Guidance, Force Design 2030, Talent Management 2030, and MARADMIN 034/26 drive manning and staffing decisions.",
     "roles": [
       "admin"
     ],
@@ -7685,7 +7685,7 @@
   {
     "slug": "the-deputy-commandants",
     "title": "The Deputy Commandants",
-    "summary": "Training on The Deputy Commandants",
+    "summary": "Covers the statutory cap of eight Deputy Commandants under 10 U.S.C. 8045, where the titles come from, and the mission of each portfolio.",
     "roles": [
       "admin",
       "leader"
@@ -7703,7 +7703,7 @@
   {
     "slug": "the-dotmlpf-c-working-group-how-requirements-get-assessed",
     "title": "The DOTMLPF&C Working Group - How Requirements Get Assessed",
-    "summary": "Training on The DOTMLPF&C Working Group - How Requirements Get Assessed",
+    "summary": "Covers the Total Force DOTMLPF&C Working Group, its 8 pillars, and the Personnel pillar under DC M&RA, so your TOECR holds up to review.",
     "roles": [
       "admin"
     ],
@@ -7720,7 +7720,7 @@
   {
     "slug": "the-gar-and-staffing-goals-from-asr-to-assignments",
     "title": "The GAR and Staffing Goals - From ASR to Assignments",
-    "summary": "Training on The GAR and Staffing Goals - From ASR to Assignments",
+    "summary": "Explains the GAR, the ESGM and OSGM staffing goal models, and the full flow from the ASR to a Marine in a billet.",
     "roles": [
       "admin"
     ],
@@ -7756,7 +7756,7 @@
   {
     "slug": "the-paper-trail-marine-corps-counseling-and-documentation",
     "title": "The Paper Trail - Marine Corps Counseling and Documentation",
-    "summary": "Training on The Paper Trail - Marine Corps Counseling and Documentation",
+    "summary": "Walks you through the informal, formal, and punitive tiers of counseling and documentation, from the green book to the 6105 entry and courts-martial.",
     "roles": [
       "marine",
       "leader",
@@ -7776,7 +7776,7 @@
   {
     "slug": "the-snowball-effect-of-missing-not-recs",
     "title": "The Snowball Effect of Missing Not Recs",
-    "summary": "Training on The Snowball Effect of Missing Not Recs",
+    "summary": "Shows how one missed not rec grows, how you fix a promotion posted in error, and how you stop the repeat, per MARADMIN 559/23 and MCO P1400.32D.",
     "roles": [
       "leader"
     ],
@@ -7793,7 +7793,7 @@
   {
     "slug": "the-staffing-summary-grid-msr-sg-and-12-month-projections",
     "title": "The Staffing Summary Grid - MSR, SG, and 12-Month Projections",
-    "summary": "Training on The Staffing Summary Grid - MSR, SG, and 12-Month Projections",
+    "summary": "Shows how you read the CSR staffing summary grid, the MSR and SG columns, and the 12-month projection, and why MSR and SG numbers differ.",
     "roles": [
       "admin"
     ],
@@ -7810,7 +7810,7 @@
   {
     "slug": "the-t-o-review-battle-rhythm",
     "title": "The T/O Review Battle Rhythm",
-    "summary": "Training on The T/O Review Battle Rhythm",
+    "summary": "Builds a repeatable T/O review battle rhythm, when to pull, what to check each cycle, how to tie it to the CSR and TOECRs, and the commander brief.",
     "roles": [
       "admin"
     ],
@@ -7827,7 +7827,7 @@
   {
     "slug": "the-tfsp-how-the-mc-builds-its-requirements",
     "title": "The TFSP - How the MC Builds Its Requirements",
-    "summary": "Training on The TFSP - How the MC Builds Its Requirements",
+    "summary": "Covers the Total Force Structure Process per MCO 5311.1E, who owns it, the role of TFSMS, its five phases, and the T/O&E publication cycle.",
     "roles": [
       "admin"
     ],
@@ -7844,7 +7844,7 @@
   {
     "slug": "toecrs-how-force-structure-changes-get-made",
     "title": "TOECRs - How Force Structure Changes Get Made",
-    "summary": "Training on TOECRs - How Force Structure Changes Get Made",
+    "summary": "Covers who originates a TOECR, the review chain, key considerations, and how precedence levels change, so you submit force structure changes correctly.",
     "roles": [
       "admin"
     ],
@@ -7880,7 +7880,7 @@
   {
     "slug": "tpfdd-basics-the-data-your-manning-document-feeds",
     "title": "TPFDD Basics - The Data Your Manning Document Feeds",
-    "summary": "Training on TPFDD Basics - The Data Your Manning Document Feeds",
+    "summary": "Explains how your manning data feeds the TPFDD, what ULN and UIC codes mean, and how the key dates set the delivery window, per MCO 3000.18B.",
     "roles": [
       "leader"
     ],
@@ -7897,7 +7897,7 @@
   {
     "slug": "tpfdd-report-types-and-levels-of-detail-what-you-read-and-produce",
     "title": "TPFDD Report Types and Levels of Detail - What You Read and Produce",
-    "summary": "Training on TPFDD Report Types and Levels of Detail - What You Read and Produce",
+    "summary": "Covers the 6 TPFDD levels of detail per MCO 3000.18B, how they nest, and how your by-name data at Level VI feeds every higher level.",
     "roles": [
       "leader"
     ],
@@ -7948,7 +7948,7 @@
   {
     "slug": "trim-and-clean-functions",
     "title": "TRIM and CLEAN Functions",
-    "summary": "Training on TRIM and CLEAN Functions",
+    "summary": "Shows how you strip extra spaces with TRIM, remove nonprinting characters with CLEAN, handle the nonbreaking space, and prove the result with LEN.",
     "roles": [
       "marine",
       "leader",
@@ -7968,7 +7968,7 @@
   {
     "slug": "tuition-assistance-navmc-1560-25-updates",
     "title": "Tuition Assistance NAVMC 1560.25 Updates",
-    "summary": "Training on Tuition Assistance NAVMC 1560.25 Updates",
+    "summary": "Breaks down NAVMC 1560.25 Tuition Assistance rules, including eligibility, PME and promotion requirements, per-credit caps, and the annual limit.",
     "roles": [
       "leader"
     ],
@@ -7985,7 +7985,7 @@
   {
     "slug": "understanding-and-working-the-eligibility-roster",
     "title": "Understanding and Working the Eligibility Roster",
-    "summary": "Training on Understanding and Working the Eligibility Roster",
+    "summary": "Shows how you find promotion-eligible Marines in MOL, screen the roster each month, and submit not recs before the 1st, per MCO 1616.1 and MARADMIN 559/23.",
     "roles": [
       "leader",
       "commander"
@@ -8003,7 +8003,7 @@
   {
     "slug": "understanding-intended-mos-promotions",
     "title": "Understanding Intended MOS Promotions",
-    "summary": "Training on Understanding Intended MOS Promotions",
+    "summary": "Explains what an Intended MOS is, who is considered in one, and the two routes it opens to promotion, per MCO P1400.32D and MARADMIN 515/25.",
     "roles": [
       "leader"
     ],
@@ -8020,7 +8020,7 @@
   {
     "slug": "understanding-jepes-what-it-is",
     "title": "Understanding JEPES - What It Is",
-    "summary": "Training on Understanding JEPES - What It Is",
+    "summary": "Covers what JEPES is, what it replaced, who it covers, and the four pillars behind its score, per MCO 1616.1 and MCO P1400.32D W/CH 2.",
     "roles": [
       "leader"
     ],
@@ -8073,7 +8073,7 @@
   {
     "slug": "understanding-pme-triggered-remedials",
     "title": "Understanding PME-Triggered Remedials",
-    "summary": "Training on Understanding PME-Triggered Remedials",
+    "summary": "Covers required PME for Lance Corporals and Corporals, why incomplete PME needs no not rec, and how you handle a PME-triggered remedial, per MARADMIN 630/24.",
     "roles": [
       "leader",
       "admin"
@@ -8091,7 +8091,7 @@
   {
     "slug": "understanding-promotion-recommendations",
     "title": "Understanding Promotion Recommendations",
-    "summary": "Training on Understanding Promotion Recommendations",
+    "summary": "Shows when a promotion recommendation needs action, how the rules changed since 2016, and how you document a not rec and its lift, per MCO P1400.32D W/CH 2.",
     "roles": [
       "leader"
     ],
@@ -8108,7 +8108,7 @@
   {
     "slug": "understanding-promotion-restrictions",
     "title": "Understanding Promotion Restrictions",
-    "summary": "Training on Understanding Promotion Restrictions",
+    "summary": "Shows how you tell a restriction coded in MCTFS from a bar with no code, how to handle each, and what happens when one ends, per MCO P1400.32D.",
     "roles": [
       "leader",
       "admin"
@@ -8177,7 +8177,7 @@
   {
     "slug": "understanding-the-fitrep-audience",
     "title": "Understanding the FITREP Audience",
-    "summary": "Training on Understanding the FITREP Audience",
+    "summary": "Explains why the FITREP audience is a selection board and not the Marine Reported On, and how you write comments for board members who never met the MRO.",
     "roles": [
       "leader"
     ],
@@ -8194,7 +8194,7 @@
   {
     "slug": "understanding-the-pes-score-components",
     "title": "Understanding the PES Score Components",
-    "summary": "Training on Understanding the PES Score Components",
+    "summary": "Breaks down each part of the PES promotion score, how each earns points, the bonus points, and the command cutoff, per MCO 1616.1 and MARADMIN 404/23.",
     "roles": [
       "leader"
     ],
@@ -8211,7 +8211,7 @@
   {
     "slug": "understanding-the-promotion-folder",
     "title": "Understanding the Promotion Folder",
-    "summary": "Training on Understanding the Promotion Folder",
+    "summary": "Shows how you set up a promotion folder by month, what goes in its six parts, and how you keep it current and protected, per MCO P1400.32D W/CH 2.",
     "roles": [
       "leader"
     ],
@@ -8228,7 +8228,7 @@
   {
     "slug": "understanding-tig-and-tis-requirements-and-eligibility-dates",
     "title": "Understanding TIG and TIS Requirements and Eligibility Dates",
-    "summary": "Training on Understanding TIG and TIS Requirements and Eligibility Dates",
+    "summary": "Shows how you read the current TIG and TIS table, count each clock the way the manual does, and check the date in Prom Rec, per MARADMIN 185/25.",
     "roles": [
       "leader"
     ],
@@ -8245,7 +8245,7 @@
   {
     "slug": "understanding-training-cutoff-dates",
     "title": "Understanding Training Cutoff Dates",
-    "summary": "Training on Understanding Training Cutoff Dates",
+    "summary": "Covers the two-month rule, the monthly promotion cycle, the FY27 cutoff dates, and what late data does to a promotion, per MCO 1616.1 and MARADMIN 502/26.",
     "roles": [
       "leader"
     ],
@@ -8262,7 +8262,7 @@
   {
     "slug": "unit-admin-forms-tasks-and-members",
     "title": "Unit Admin Forms, Tasks, and Members",
-    "summary": "Training on Unit Admin Forms, Tasks, and Members",
+    "summary": "Walks you through unit tasks, forms, members, and manager roles in V.I.C.I.O.U.S. Unit Admin, including how you start a form for a member.",
     "roles": [
       "leader"
     ],
@@ -8279,7 +8279,7 @@
   {
     "slug": "unit-admin-setup-walkthrough",
     "title": "Unit Admin Setup Walkthrough",
-    "summary": "Training on Unit Admin Setup Walkthrough",
+    "summary": "Walks you through setting up your unit in V.I.C.I.O.U.S. Unit Admin, from unit records to creating and managing companies and sections.",
     "roles": [
       "leader"
     ],
@@ -8296,7 +8296,7 @@
   {
     "slug": "unit-company-and-section-managers",
     "title": "Unit, Company, and Section Managers",
-    "summary": "Training on Unit, Company, and Section Managers",
+    "summary": "Covers the unit, company, and section manager dashboards in V.I.C.I.O.U.S., their scopes, inbound and outbound views, and how you edit member roles.",
     "roles": [
       "leader"
     ],
@@ -8313,7 +8313,7 @@
   {
     "slug": "unit-responsibilities-for-pac-pay-cases",
     "title": "Unit Responsibilities for PAC Pay Cases",
-    "summary": "Training on Unit Responsibilities for PAC Pay Cases",
+    "summary": "Lists what your unit owes the personnel admin center on a PAC pay case, in order from the casualty forward, per MCO 1771.2 and MARADMIN 186/25.",
     "roles": [
       "leader"
     ],
@@ -8330,7 +8330,7 @@
   {
     "slug": "updating-your-own-ompf",
     "title": "Updating your own OMPF",
-    "summary": "Training on Updating your own OMPF",
+    "summary": "Walks you through updating your own OMPF in O-RMA, from choosing the document type and creating the batch to verifying the folder before you submit.",
     "roles": [
       "leader"
     ],
@@ -8347,7 +8347,7 @@
   {
     "slug": "upload-a-document-and-ask-questions-about-it",
     "title": "Upload a Document and Ask Questions About It",
-    "summary": "Training on Upload a Document and Ask Questions About It",
+    "summary": "Covers the upload rule under MARADMIN 018/26, the upload flow in ChatGPT, what to ask about a document, and what an upload does not change.",
     "roles": [
       "marine",
       "leader",
@@ -8367,7 +8367,7 @@
   {
     "slug": "upper-lower-and-proper-functions",
     "title": "UPPER, LOWER, and PROPER Functions",
-    "summary": "Training on UPPER, LOWER, and PROPER Functions",
+    "summary": "Shows how UPPER, LOWER, and PROPER change letter case, where PROPER breaks on names and acronyms, and why case never fixes a lookup match.",
     "roles": [
       "marine",
       "leader",
@@ -8387,7 +8387,7 @@
   {
     "slug": "use-of-the-travel-card",
     "title": "Use of the Travel Card",
-    "summary": "Training on Use of the Travel Card",
+    "summary": "Covers mandatory GTCC use for official travel, consequences of nonuse, required travel authorization statements, leave with travel, and IBA use on PCS.",
     "roles": [
       "leader"
     ],
@@ -8404,7 +8404,7 @@
   {
     "slug": "using-the-csr-to-brief-the-commander",
     "title": "Using the CSR to Brief the Commander",
-    "summary": "Training on Using the CSR to Brief the Commander",
+    "summary": "Shows how you pull and analyze the CSR, read the 12-month projection for shortfalls, and build the commander brief, per MCO 5320.12H and MCTP 3-30G.",
     "roles": [
       "admin"
     ],
@@ -8472,7 +8472,7 @@
   {
     "slug": "verify-before-you-send-check-ai-output-against-the-source-order",
     "title": "Verify Before You Send, Check AI Output Against the Source Order",
-    "summary": "Training on Verify Before You Send, Check AI Output Against the Source Order",
+    "summary": "Shows how you check AI output against the source order with a three-part test, exists, matches, nothing added, per MARADMIN 018/26 and NAVMC 5239.1.",
     "roles": [
       "marine",
       "leader",
@@ -8492,7 +8492,7 @@
   {
     "slug": "visit-board-search-and-seizure-vbss-pay",
     "title": "Visit Board Search and Seizure (VBSS) Pay",
-    "summary": "Training on Visit Board Search and Seizure (VBSS) Pay",
+    "summary": "Covers what VBSS pay is, who qualifies, who draws it today, and how a Marine shop handles a case it has no way to report yet, per DoD FMR Vol 7A, Ch 24.",
     "roles": [
       "leader"
     ],
@@ -8526,7 +8526,7 @@
   {
     "slug": "what-are-remedial-promotions",
     "title": "What Are Remedial Promotions",
-    "summary": "Training on What Are Remedial Promotions",
+    "summary": "Explains how late data becomes a remedial promotion, when it posts, and what your commander still controls, per MARADMIN 559/23 and MCO P1400.32D.",
     "roles": [
       "leader",
       "admin"
@@ -8544,7 +8544,7 @@
   {
     "slug": "what-hqmc-is",
     "title": "What HQMC Is",
-    "summary": "Training on What HQMC Is",
+    "summary": "Covers Headquarters Marine Corps by statute under 10 U.S.C. 8041 and 8042, its five general duties, the leadership at the top, and the special staff offices.",
     "roles": [
       "admin",
       "leader"
@@ -8579,7 +8579,7 @@
   {
     "slug": "what-is-fdp-e-and-why-it-matters-to-you",
     "title": "What is FDP&E and Why It Matters to You",
-    "summary": "Training on What is FDP&E and Why It Matters to You",
+    "summary": "Defines FDP&E as the process for force deployment and redeployment plans, explains the Concept of Employment, and shows your three personnel roles.",
     "roles": [
       "leader"
     ],
@@ -8613,7 +8613,7 @@
   {
     "slug": "what-is-llm-and-gpt",
     "title": "What is LLM and GPT",
-    "summary": "Training on What is LLM and GPT",
+    "summary": "Introduces Large Language Models and GPT, how they are trained, their limits, and current and future uses in the Marine Corps under AI strategy and policy.",
     "roles": [
       "leader"
     ],
@@ -8630,7 +8630,7 @@
   {
     "slug": "what-is-readiness-and-why-you-own-it",
     "title": "What is Readiness and Why You Own It",
-    "summary": "Training on What is Readiness and Why You Own It",
+    "summary": "Defines readiness per MCO 3000.13B, covers the five pillars of institutional readiness, and shows how your personnel data feeds DRRS reporting.",
     "roles": [
       "leader"
     ],
@@ -8647,7 +8647,7 @@
   {
     "slug": "what-is-the-csr-and-why-it-matters",
     "title": "What is the CSR and Why It Matters",
-    "summary": "Training on What is the CSR and Why It Matters",
+    "summary": "Introduces the Command Staffing Report, its enlisted and officer types, and its In Bound, On Board, and Out Bound sections, per MCO 5320.12H.",
     "roles": [
       "admin"
     ],
@@ -8664,7 +8664,7 @@
   {
     "slug": "what-is-the-hrdp-and-why-it-drives-everything",
     "title": "What is the HRDP and Why It Drives Everything",
-    "summary": "Training on What is the HRDP and Why It Drives Everything",
+    "summary": "Explains the Human Resources Development Process, its two sides, and the chain from structure to a Marine in a billet, per MCO 5311.1E.",
     "roles": [
       "admin"
     ],
@@ -8681,7 +8681,7 @@
   {
     "slug": "what-you-can-and-cannot-paste-into-a-commercial-ai",
     "title": "What You Can and Cannot Paste Into a Commercial AI",
-    "summary": "Training on What You Can and Cannot Paste Into a Commercial AI",
+    "summary": "Covers the public-release test for commercial AI, how you sanitize data before you paste it, and the settings to check, per NAVMC 5239.1 and MARADMIN 018/26.",
     "roles": [
       "marine",
       "leader",
@@ -8718,7 +8718,7 @@
   {
     "slug": "why-marines-get-erroneously-promoted",
     "title": "Why Marines Get Erroneously Promoted",
-    "summary": "Training on Why Marines Get Erroneously Promoted",
+    "summary": "Names five gaps behind erroneous promotions, the check to close each, and how you fix one posted anyway, per MCO P1400.32D and MARADMIN 559/23.",
     "roles": [
       "leader"
     ],
@@ -8735,7 +8735,7 @@
   {
     "slug": "windows-v",
     "title": "Windows + V",
-    "summary": "Training on Windows + V",
+    "summary": "Walks you through turning on Windows clipboard history and using Windows + V to paste saved items while you complete routine admin tasks.",
     "roles": [
       "leader"
     ],
@@ -8788,7 +8788,7 @@
   {
     "slug": "xlookup-and-choosecols-function-combination",
     "title": "XLOOKUP and CHOOSECOLS Function Combination",
-    "summary": "Training on XLOOKUP and CHOOSECOLS Function Combination",
+    "summary": "Shows how you return a full matching row with XLOOKUP, pick and reorder fields with CHOOSECOLS, and fix the SPILL and VALUE errors.",
     "roles": [
       "marine",
       "leader",
@@ -8808,7 +8808,7 @@
   {
     "slug": "xlookup-function",
     "title": "XLOOKUP Function",
-    "summary": "Training on XLOOKUP Function",
+    "summary": "Covers the three core XLOOKUP arguments, right-to-left lookups, the if-not-found argument over IFERROR, wildcard matching, and searching from the bottom.",
     "roles": [
       "marine",
       "leader",
@@ -8828,7 +8828,7 @@
   {
     "slug": "your-eas-your-retirement-and-the-medical-board",
     "title": "Your EAS, Your Retirement, and the Medical Board",
-    "summary": "Training on Your EAS, Your Retirement, and the Medical Board",
+    "summary": "Walks you through the four MMSR sections by population, from the active duty and medical desks to the retired desk and the Survivor Benefit Plan.",
     "roles": [
       "marine",
       "leader",
@@ -8848,7 +8848,7 @@
   {
     "slug": "your-family-your-worst-day-and-the-counter",
     "title": "Your Family, Your Worst Day, and the Counter",
-    "summary": "Training on Your Family, Your Worst Day, and the Counter",
+    "summary": "Covers Military Personnel Services and its twelve programs, including Family Care and Total Fitness, and three facts to hold before the worst day.",
     "roles": [
       "marine",
       "leader",
@@ -8868,7 +8868,7 @@
   {
     "slug": "your-orders-and-your-monitor",
     "title": "Your Orders and Your Monitor",
-    "summary": "Training on Your Orders and Your Monitor",
+    "summary": "Explains the monitor at MMEA-2, staffing goals from MMIB-1, enlisted stabilization, and the humanitarian transfer at MMEA-26 with its fifteen-day clock.",
     "roles": [
       "marine",
       "leader",
@@ -8888,7 +8888,7 @@
   {
     "slug": "your-pcs-entitlements-your-augment-and-the-orders-behind-leave",
     "title": "Your PCS Entitlements, Your Augment, and the Orders Behind Leave",
-    "summary": "Training on Your PCS Entitlements, Your Augment, and the Orders Behind Leave",
+    "summary": "Covers MMIB-3 for PCS entitlements, MMIB-2 for augmentation, MPO as the branch behind leave and accommodation orders, and the MISSO chain.",
     "roles": [
       "marine",
       "leader",
@@ -8908,7 +8908,7 @@
   {
     "slug": "your-promotion-your-record-your-award",
     "title": "Your Promotion, Your Record, Your Award",
-    "summary": "Training on Your Promotion, Your Record, Your Award",
+    "summary": "Walks you through the Performance Branch, from promotion boards at MMPB-1 and MMPB-4 to records at MMPB-2 and awards at MMPB-3.",
     "roles": [
       "marine",
       "leader",
@@ -8928,7 +8928,7 @@
   {
     "slug": "your-reenlistment-package-and-where-it-goes",
     "title": "Your Reenlistment Package and Where It Goes",
-    "summary": "Training on Your Reenlistment Package and Where It Goes",
+    "summary": "Shows where your reenlistment package lands at MMEA-1 Retention, the branch above it per MCO 5311.1E, and the retention campaign in MARADMIN 590/25.",
     "roles": [
       "marine",
       "leader",
@@ -8965,7 +8965,7 @@
   {
     "slug": "zero-shot-prompting",
     "title": "Zero-Shot Prompting",
-    "summary": "Training on Zero-Shot Prompting",
+    "summary": "Explains zero-shot prompting and shows how you turn a weak prompt into a structured one, with sample structured and summary answers in ChatGPT.",
     "roles": [
       "marine",
       "leader",
