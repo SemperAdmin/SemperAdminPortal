@@ -221,6 +221,23 @@
     "lastVerified": "2025-08-19"
   },
   {
+    "slug": "advance-oha",
+    "title": "Advance OHA",
+    "summary": "Training on Advance OHA",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100382AB96C5",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100382AB96C5",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
+  },
+  {
     "slug": "advance-pay-incident-to-a-pcs-exception-requests-and-approvals",
     "title": "Advance Pay Incident to a PCS - Exception Requests and Approvals",
     "summary": "Training on Advance Pay Incident to a PCS - Exception Requests and Approvals",
@@ -316,7 +333,8 @@
     "title": "Adverse Material That Requires Not Rec",
     "summary": "Training on Adverse Material That Requires Not Rec",
     "roles": [
-      "leader"
+      "leader",
+      "admin"
     ],
     "durationSeconds": 0,
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10016543BFB9",
@@ -625,6 +643,23 @@
       "url": ""
     },
     "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "bah-location-rate-flexibility-37-u-s-c-403a",
+    "title": "BAH Location Rate Flexibility (37 U.S.C. 403a)",
+    "summary": "Training on BAH Location Rate Flexibility (37 U.S.C. 403a)",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100392EFB38C",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100392EFB38C",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
   },
   {
     "slug": "bah-rate-protection",
@@ -1231,6 +1266,23 @@
     "lastVerified": "2026-10-15"
   },
   {
+    "slug": "childcare-provider-travel-pilot",
+    "title": "Childcare Provider Travel Pilot",
+    "summary": "Training on Childcare Provider Travel Pilot",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1004087465B9",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1004087465B9",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
+  },
+  {
     "slug": "choose-function",
     "title": "CHOOSE Function",
     "summary": "Training on CHOOSE Function",
@@ -1637,7 +1689,8 @@
     "title": "Confirming the Not Rec Page 11",
     "summary": "Training on Confirming the Not Rec Page 11",
     "roles": [
-      "leader"
+      "leader",
+      "admin"
     ],
     "durationSeconds": 0,
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10017A2E6A05",
@@ -3443,7 +3496,8 @@
     "title": "How to Change from Not Rec to Rec",
     "summary": "Training on How to Change from Not Rec to Rec",
     "roles": [
-      "leader"
+      "leader",
+      "admin"
     ],
     "durationSeconds": 0,
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100183F8D8D6",
@@ -3495,7 +3549,8 @@
     "summary": "Training on How to Not Recommend Marines in MOL",
     "roles": [
       "leader",
-      "commander"
+      "commander",
+      "admin"
     ],
     "durationSeconds": 0,
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10019C6985EF",
@@ -3610,6 +3665,23 @@
       "url": ""
     },
     "lastVerified": "2026-08-29"
+  },
+  {
+    "slug": "human-breast-milk-transport-and-shipment-during-a-pcs",
+    "title": "Human Breast Milk Transport and Shipment During a PCS",
+    "summary": "Training on Human Breast Milk Transport and Shipment During a PCS",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1004197FC510",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1004197FC510",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
   },
   {
     "slug": "if-function",
@@ -3902,6 +3974,23 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "ipcot-travel-executing-approved-ipcot-travel",
+    "title": "IPCOT Travel - Executing Approved IPCOT Travel",
+    "summary": "Training on IPCOT Travel - Executing Approved IPCOT Travel",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1004242E3559",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1004242E3559",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
   },
   {
     "slug": "jepes-score-vs-cutting-score",
@@ -5177,7 +5266,8 @@
     "title": "Not Rec for Pending Administrative Action",
     "summary": "Training on Not Rec for Pending Administrative Action",
     "roles": [
-      "leader"
+      "leader",
+      "admin"
     ],
     "durationSeconds": 0,
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10022C246CC5",
@@ -5194,7 +5284,8 @@
     "title": "Not Rec for Pending Legal Action",
     "summary": "Training on Not Rec for Pending Legal Action",
     "roles": [
-      "leader"
+      "leader",
+      "admin"
     ],
     "durationSeconds": 0,
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10023E41DF4E",
@@ -5211,7 +5302,8 @@
     "title": "Not Rec for PFT and CFT Failure",
     "summary": "Training on Not Rec for PFT and CFT Failure",
     "roles": [
-      "leader"
+      "leader",
+      "admin"
     ],
     "durationSeconds": 0,
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1002152280B8",
@@ -5635,6 +5727,57 @@
     "lastVerified": "2026-10-15"
   },
   {
+    "slug": "pet-relocation-alternate-location-and-designated-place",
+    "title": "Pet Relocation - Alternate Location and Designated Place",
+    "summary": "Training on Pet Relocation - Alternate Location and Designated Place",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100436BA2B5E",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100436BA2B5E",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
+  },
+  {
+    "slug": "pet-relocation-claims-compliance-and-common-denials",
+    "title": "Pet Relocation - Claims, Compliance, and Common Denials",
+    "summary": "Training on Pet Relocation - Claims, Compliance, and Common Denials",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100446056974",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100446056974",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
+  },
+  {
+    "slug": "pet-relocation-eligibility-and-allowances",
+    "title": "Pet Relocation - Eligibility and Allowances",
+    "summary": "Training on Pet Relocation - Eligibility and Allowances",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10045938CE7A",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10045938CE7A",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
+  },
+  {
     "slug": "planned-promotions-for-sncos",
     "title": "Planned Promotions for SNCOS",
     "summary": "Training on Planned Promotions for SNCOS",
@@ -5809,7 +5952,8 @@
     "title": "Processing Denied Remedials",
     "summary": "Training on Processing Denied Remedials",
     "roles": [
-      "leader"
+      "leader",
+      "admin"
     ],
     "durationSeconds": 0,
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10024F051B76",
@@ -6529,7 +6673,8 @@
     "title": "Reviewing and Tracking Remedial Promotions",
     "summary": "Training on Reviewing and Tracking Remedial Promotions",
     "roles": [
-      "leader"
+      "leader",
+      "admin"
     ],
     "durationSeconds": 0,
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10025834B140",
@@ -7419,6 +7564,23 @@
     "lastVerified": "2025-01-13"
   },
   {
+    "slug": "temporary-lodging-allowance-tla-special-tla",
+    "title": "Temporary Lodging Allowance (TLA) - Special TLA",
+    "summary": "Training on Temporary Lodging Allowance (TLA) - Special TLA",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1004630A0F03",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1004630A0F03",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-10-31"
+  },
+  {
     "slug": "temporary-lodging-expense-tle",
     "title": "Temporary Lodging Expense (TLE)",
     "summary": "Training on Temporary Lodging Expense (TLE)",
@@ -7913,7 +8075,8 @@
     "title": "Understanding PME-Triggered Remedials",
     "summary": "Training on Understanding PME-Triggered Remedials",
     "roles": [
-      "leader"
+      "leader",
+      "admin"
     ],
     "durationSeconds": 0,
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1002604D54CB",
@@ -7947,7 +8110,8 @@
     "title": "Understanding Promotion Restrictions",
     "summary": "Training on Understanding Promotion Restrictions",
     "roles": [
-      "leader"
+      "leader",
+      "admin"
     ],
     "durationSeconds": 0,
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10027E061387",
@@ -8364,7 +8528,8 @@
     "title": "What Are Remedial Promotions",
     "summary": "Training on What Are Remedial Promotions",
     "roles": [
-      "leader"
+      "leader",
+      "admin"
     ],
     "durationSeconds": 0,
     "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100290FC83B7",
