@@ -364,6 +364,24 @@
     "lastVerified": "2025-09-28"
   },
   {
+    "slug": "alpha-roster-with-ruc-and-mcc-prompts",
+    "title": "Alpha Roster With RUC and MCC Prompts",
+    "summary": "Shows you how to build an alpha roster in Cognos with RUC and MCC prompts, a hidden name sort, and a count check against the RUC total.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1008180F0E83",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1008180F0E83",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "am-i-eligible-understanding-teb-requirements",
     "title": "Am I Eligible? Understanding TEB Requirements",
     "summary": "Explains TEB eligibility, including six years of service, PGIB eligibility, the 48-month additional obligation, EAS effects, and the Purple Heart exception.",
@@ -503,6 +521,41 @@
       "url": ""
     },
     "lastVerified": "2026-08-08"
+  },
+  {
+    "slug": "authorized-expenses",
+    "title": "Authorized Expenses",
+    "summary": "Covers the expenses you charge to the government travel card on official travel, from transportation and lodging to meals, per the Joint Travel Regulations.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=62676B7B47AC",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=62676B7B47AC",
+    "source": {
+      "title": "Government Travel Charge Card Program",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "automatic-vs-manual-remedial-promotions",
+    "title": "Automatic vs Manual Remedial Promotions",
+    "summary": "Shows you how to sort a remedial promotion into automatic or letter, the six exceptions needing MMPB-11, and who signs, per MARADMIN 559/23 and MCO P1400.32D.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100684C59CBB",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100684C59CBB",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "autosaar-submission",
@@ -1073,6 +1126,42 @@
     "lastVerified": "2026-06-02"
   },
   {
+    "slug": "building-a-list-report-and-the-query-behind-it",
+    "title": "Building a List Report and the Query Behind It",
+    "summary": "Shows you how to build a list report from scratch in Cognos, pick the right field when names repeat, and read the query behind each column.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10054CB78475",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10054CB78475",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "building-a-record-gap-roster-one-flag-per-missing-field",
+    "title": "Building a Record Gap Roster, One Flag per Missing Field",
+    "summary": "Shows you how to build a record gap roster in Cognos with one flag per missing field, rules fitted to the right Marines, and a gap total.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10074D881242",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10074D881242",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "building-award-narratives-and-citations",
     "title": "Building Award Narratives and Citations",
     "summary": "Walks you through drafting award citations and summaries of action in ChatGPT from a facts sheet, with placeholders and every number traced.",
@@ -1178,6 +1267,24 @@
     "lastVerified": "2025-05-18"
   },
   {
+    "slug": "capstone-building-the-unit-strength-dashboard",
+    "title": "Capstone, Building the Unit Strength Dashboard",
+    "summary": "Builds a three-page Cognos unit strength dashboard with header cards, strength, EAS, and an Excel export page, and every number reconciled.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1009166FD6A2",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1009166FD6A2",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "career-education-financial-planning-18-12-months",
     "title": "Career, Education & Financial Planning (18-12 Months)",
     "summary": "Covers the 18 to 12 month separation window, including TAP, resume and LinkedIn work, GI Bill and SkillBridge review, and financial steps like pension and SBP.",
@@ -1227,6 +1334,24 @@
       "url": ""
     },
     "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "case-and-nvl-in-sql",
+    "title": "CASE and NVL in SQL",
+    "summary": "Shows you how to label codes with CASE and fill blanks with NVL in Cognos SQL, plus the not-equal and empty-quote traps with blank values.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10090A63505A",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10090A63505A",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "cba-covered-expenses",
@@ -1335,6 +1460,24 @@
       "url": ""
     },
     "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "cleaning-text-and-converting-types",
+    "title": "Cleaning Text and Converting Types",
+    "summary": "Shows you how to slice codes, fill blanks, join and search text, and convert types in Cognos without dropping a leading zero.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100920D015E2",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100920D015E2",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "clearing-delinquencies-apcs",
@@ -1529,6 +1672,42 @@
     "lastVerified": "2026-10-15"
   },
   {
+    "slug": "combining-filters-with-and-or-and-parentheses",
+    "title": "Combining Filters with AND, OR, and Parentheses",
+    "summary": "Shows you how Cognos filters combine as AND, where to write OR, and how parentheses change your result, proved with a record count.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100555C70888",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100555C70888",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "command-profile-or-cognos-picking-the-right-tool",
+    "title": "Command Profile or Cognos, Picking the Right Tool",
+    "summary": "Explains where Command Profile lives, what it shows, the rules on its data, and when you use ODSE Cognos instead for data to decision makers.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100569561D9D",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100569561D9D",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "commander-authority-chain-of-command-vs-chains-of-authority",
     "title": "Commander Authority - Chain of Command vs Chains of Authority",
     "summary": "Separates the chain of command from the six chains of authority and shows how they split on joint staff, temporary duty, and ship, per JAGINST 5800.7G.",
@@ -1566,6 +1745,42 @@
     "lastVerified": "2026-10-15"
   },
   {
+    "slug": "commenting-your-expressions",
+    "title": "Commenting Your Expressions",
+    "summary": "Shows you which comment marks fail and which work in Cognos expressions, where to put them, and what happens to them at run time.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10093AB2E2DA",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10093AB2E2DA",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "comments-in-sql",
+    "title": "Comments in SQL",
+    "summary": "Shows you line and block comments in Cognos SQL, a header block, switching a filter off, and the last-line comment trap.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10094B9628A7",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10094B9628A7",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "common-functions-and-expressions",
     "title": "Common Functions and Expressions",
     "summary": "Common Functions and Expressions.",
@@ -1598,6 +1813,24 @@
       "url": ""
     },
     "lastVerified": "2025-09-28"
+  },
+  {
+    "slug": "common-table-expressions-with-with",
+    "title": "Common Table Expressions With WITH",
+    "summary": "Shows you how to build a Cognos SQL query in named WITH steps, unit first, then billet, then the join, with a comment on each block.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10095992B794",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10095992B794",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "completing-marinenet-courses",
@@ -1683,6 +1916,42 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "conditional-colors-and-hiding-columns-flag-the-eas-that-needs-action",
+    "title": "Conditional Colors and Hiding Columns, Flag the EAS That Needs Action",
+    "summary": "Shows you how to color an EAS column by rule in Cognos with a day count instead of a fixed date, handle missing values, and hide a column.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1005783C3E44",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1005783C3E44",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "conditional-logic-with-case-if-and-is-missing",
+    "title": "Conditional Logic With CASE, IF, and Is Missing",
+    "summary": "Covers if then else, simple and searched CASE, why the order of WHEN matters, and testing is missing first in Cognos expressions.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10096DB20B99",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10096DB20B99",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "confirming-the-not-rec-page-11",
@@ -1944,6 +2213,24 @@
     "lastVerified": "2024-12-29"
   },
   {
+    "slug": "counting-right-for-report-and-for-each-marine",
+    "title": "Counting Right, FOR Report and FOR Each Marine",
+    "summary": "Shows you how to count distinct Marines instead of rows in Cognos, put the unit total on every row, and count each Marine across a join.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10097D55BD5B",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10097D55BD5B",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "creating-a-autosaar-account",
     "title": "Creating a AutoSAAR Account",
     "summary": "Legacy AutoSAAR account creation walkthrough. Superseded by DoD E-ICAM on 21 September 2026 per PAA 02-26. Retained for historical reference.",
@@ -2152,6 +2439,42 @@
     "lastVerified": "2025-12-19"
   },
   {
+    "slug": "creating-the-not-rec-page-11-entry",
+    "title": "Creating the Not Rec Page 11 Entry",
+    "summary": "Walks you through a not rec Page 11, including the start month, the required indefinite duration statement, and the signatures it needs.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=95380D7807DC",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=95380D7807DC",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "creating-the-promotion-rec-page-11-entry",
+    "title": "Creating the Promotion Rec Page 11 Entry",
+    "summary": "Walks you through the Page 11 restoring a Marine to recommended status, including the effective month and the language the entry needs.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=953775D53C9A",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=953775D53C9A",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "critical-mos-fill-and-non-deployable-categories",
     "title": "Critical MOS Fill and Non-Deployable Categories",
     "summary": "Covers the six critical MOS fill rules, BIC fill, deployable personnel in Table A-1, non-deployable categories in Table A-2, and MCTFS codes, per MCO 3000.13B.",
@@ -2201,6 +2524,42 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "date-driven-delinquencies-pft-cft-cyber-awareness-and-duty-limitations",
+    "title": "Date-Driven Delinquencies, PFT, CFT, Cyber Awareness, and Duty Limitations",
+    "summary": "Shows you how to find PFT, CFT, cyber awareness, and duty limitation delinquencies in Cognos with a Marine-first join and the policy window.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10075B8E38B9",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10075B8E38B9",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "date-math-for-manpower-days-between-age-time-in-grade",
+    "title": "Date Math for Manpower, Days Between, Age, Time in Grade",
+    "summary": "Shows you date math in Cognos, from the as-of cycle date to days, months, and years between, age without showing a birth date, and adding time.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1009892D9231",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1009892D9231",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "dc-m-ra-and-dc-cd-i-who-does-what-in-manning-and-staffing",
@@ -2257,6 +2616,42 @@
     "lastVerified": "2026-06-02"
   },
   {
+    "slug": "delete-as-erroneous-process-for-promotion",
+    "title": "Delete as Erroneous Process for Promotion",
+    "summary": "Covers why a late not rec lets MCTFS auto-promote a Marine and how you request a delete as erroneous to reverse it, per MARADMIN 559/23.",
+    "roles": [
+      "leader",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87840376086C",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87840376086C",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "demographics",
+    "title": "Demographics",
+    "summary": "Covers the three Command Profile Demographics pages, age, education, and diversity, and how to read their percentages without being misled.",
+    "roles": [
+      "admin",
+      "commander"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=101202C2C007",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=101202C2C007",
+    "source": {
+      "title": "Command Profile",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "deployed-per-diem-basics",
     "title": "Deployed Per Diem - Basics",
     "summary": "Explains what deployed per diem pays Marines under the Unit Deployment Program, when it starts and stops, and your role verifying the claim, per the JTR.",
@@ -2306,6 +2701,24 @@
       "url": ""
     },
     "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "deptempo-and-deployment",
+    "title": "Deptempo and Deployment",
+    "summary": "Covers the seven Command Profile deployment pages, including dep tempo, crisis deployments, and why the deployable counts on two pages disagree.",
+    "roles": [
+      "admin",
+      "commander"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10121F8B6D13",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10121F8B6D13",
+    "source": {
+      "title": "Command Profile",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "detailed-filters-dates",
@@ -2546,6 +2959,24 @@
     "lastVerified": "2025-05-18"
   },
   {
+    "slug": "dislocation-allowance-dla",
+    "title": "Dislocation Allowance (DLA)",
+    "summary": "Covers what DLA reimburses on a PCS, the one-per-fiscal-year limit and its exceptions, and who qualifies with or without dependents, per JTR Chapter 5.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6384BFE98A85",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6384BFE98A85",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "dislocation-allowance-dla-basics-and-eligibility",
     "title": "Dislocation Allowance (DLA) - Basics and Eligibility",
     "summary": "Explains what DLA is and who rates it on a PCS, with and without dependents and regardless of dependents, per JTR Ch 5, para 0505.",
@@ -2580,6 +3011,24 @@
     "lastVerified": "2026-10-15"
   },
   {
+    "slug": "dislocation-allowance-dla-fiscal-year-limitations",
+    "title": "Dislocation Allowance (DLA) - Fiscal-Year Limitations",
+    "summary": "Covers the one DLA payment per fiscal year rule, how the departure date sets the year, and the exceptions allowing a second payment, per JTR 050501.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6397EF0F3DE7",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6397EF0F3DE7",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "dislocation-allowance-dla-fiscal-year-limits-and-when-dla-is-not-authorized",
     "title": "Dislocation Allowance (DLA) - Fiscal-Year Limits and When DLA Is Not Authorized",
     "summary": "Covers the one DLA per fiscal year rule, when a second is allowed and the approval path, and moves where DLA is not authorized, per JTR Ch 5.",
@@ -2612,6 +3061,42 @@
       "url": ""
     },
     "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "dislocation-allowance-dla-service-member-with-a-dependent",
+    "title": "Dislocation Allowance (DLA) - Service Member with a Dependent",
+    "summary": "Covers when a Marine with dependents draws DLA, from a standard PCS to evacuation, early return, and tour conversion, per JTR 050503.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6398C01FC022",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6398C01FC022",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "dislocation-allowance-dla-service-member-with-or-without-a-dependent",
+    "title": "Dislocation Allowance (DLA) - Service Member with or without a Dependent",
+    "summary": "Covers the moves paying DLA regardless of dependency status, including directed housing changes and proximity PCS moves, per JTR 050502.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=639686F12096",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=639686F12096",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "documentation-legal-ceremony-planning-4-2-months",
@@ -2666,6 +3151,60 @@
       "url": ""
     },
     "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "drill-through-from-summary-counts-to-unit-detail",
+    "title": "Drill-Through From Summary Counts to Unit Detail",
+    "summary": "Shows you how to set a drill-through in Cognos so a summary count opens the unit detail behind it, and how to check the detail adds up.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100990A929DC",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100990A929DC",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "duplicates-when-one-marine-shows-up-twice",
+    "title": "Duplicates, When One Marine Shows Up Twice",
+    "summary": "Shows you how to spot a Marine listed twice in Cognos, tell a true duplicate from real history, and keep the latest row.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10076CA5E334",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10076CA5E334",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "duty-limitation-tracking-roster",
+    "title": "Duty Limitation Tracking Roster",
+    "summary": "Shows you how to build a duty limitation roster in Cognos, current row only, admin codes by Marine, and medical codes as counts only.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1008200DD028",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1008200DD028",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "earliest-phase-36-24-months",
@@ -2864,6 +3403,24 @@
     "lastVerified": "2026-10-15"
   },
   {
+    "slug": "filtering-text-numbers-dates-and-missing-values",
+    "title": "Filtering Text, Numbers, Dates, and Missing Values",
+    "summary": "Shows you how to filter a Cognos report on text, numbers, and dates, check a field's type first, and find missing values.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10058C79CD8F",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10058C79CD8F",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "filters-copy-cut-paste-and-delete-data",
     "title": "Filters, Copy, Cut, Paste, and Delete data",
     "summary": "Filters, Copy, Cut, Paste, and Delete data.",
@@ -2947,6 +3504,60 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "finding-canned-unit-reports-and-copying-them-to-my-content",
+    "title": "Finding Canned Unit Reports and Copying Them to My Content",
+    "summary": "Shows you where the canned unit reports live in Cognos Team content, how to copy one to My content, and how to treat shared folders.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10059DFCD792",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10059DFCD792",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "finding-mismatches-billet-mos-vs-pmos-and-grade-vs-billet-grade",
+    "title": "Finding Mismatches, Billet MOS vs PMOS and Grade vs Billet Grade",
+    "summary": "Shows you how to compare a Marine's grade and primary MOS against the billet in Cognos, keep every Marine with an outer join, and label excess BICs.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100776223EB8",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100776223EB8",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "finding-tables-and-columns-with-the-data-dictionary",
+    "title": "Finding Tables and Columns With the Data Dictionary",
+    "summary": "Shows you how to find any ODSE table, column, and data type with the data dictionary before you write SQL, and the owner filter to keep.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=101000D33A85",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=101000D33A85",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "flight-deck-duty-pay-evolutions-proration-and-restrictions",
@@ -3212,6 +3823,24 @@
     "lastVerified": "2026-10-15"
   },
   {
+    "slug": "getting-started",
+    "title": "Getting Started",
+    "summary": "Shows you how to get into Command Profile, the 35-day login rule, setting your unit filter, and requesting a hierarchy correction, per MARADMIN 537/23.",
+    "roles": [
+      "admin",
+      "commander"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10118153656D",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10118153656D",
+    "source": {
+      "title": "Command Profile",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "gfm-and-force-synchronization-how-requirements-reach-your-desk",
     "title": "GFM and Force Synchronization - How Requirements Reach Your Desk",
     "summary": "Traces how Global Force Management and Force Synchronization turn strategic decisions into IA requirements, per MCO 3120.12A and I MEFO 1300.1.",
@@ -3246,6 +3875,24 @@
     "lastVerified": "2026-08-08"
   },
   {
+    "slug": "group-by-and-count-in-sql",
+    "title": "GROUP BY and COUNT in SQL",
+    "summary": "Shows you GROUP BY in Cognos SQL, the three kinds of count, counting across a join, and filtering groups with HAVING.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1010157F7F90",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1010157F7F90",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "grouping-areas-of-responsibility",
     "title": "Grouping Areas of Responsibility",
     "summary": "Shows how you organize your admin section into task lists, role classifications, and grouped functions to run operations and train your Marines.",
@@ -3261,6 +3908,24 @@
       "url": ""
     },
     "lastVerified": "2025-02-26"
+  },
+  {
+    "slug": "grouping-sections-and-totals-count-the-marines-not-the-rows",
+    "title": "Grouping, Sections, and Totals, Count the Marines Not the Rows",
+    "summary": "Shows you how to group a Cognos list, add totals counting Marines instead of rows, see how blanks drop out, and build sections.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100608122916",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100608122916",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "groups-and-sections",
@@ -3383,6 +4048,42 @@
       "url": ""
     },
     "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "how-cognos-aggregates-detail-and-summary-aggregation",
+    "title": "How Cognos Aggregates, Detail and Summary Aggregation",
+    "summary": "Explains how Cognos aggregates, from auto group and detail aggregation to count against count distinct and footer summaries.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10103ED4AA87",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10103ED4AA87",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "how-current-is-your-data-mctfs-processing-cycles",
+    "title": "How Current Is Your Data, MCTFS Processing Cycles",
+    "summary": "Explains how Cognos reads a copy of MCTFS as of the last cycle, when cycles run, how to read a cycle number, and how to check your data's age.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100616B9A364",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100616B9A364",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "how-humans-differ-from-llms",
@@ -3665,6 +4366,24 @@
       "url": ""
     },
     "lastVerified": "2026-08-29"
+  },
+  {
+    "slug": "html-items-styling-a-page-and-showing-data",
+    "title": "HTML Items, Styling a Page and Showing Data",
+    "summary": "Shows you how to use the Cognos HTML item to style a page and show data in a banner, a card, and list rows.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=101027723B1D",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=101027723B1D",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "human-breast-milk-transport-and-shipment-during-a-pcs",
@@ -4061,6 +4780,24 @@
     "lastVerified": "2025-10-27"
   },
   {
+    "slug": "joining-two-tables-in-sql",
+    "title": "Joining Two Tables in SQL",
+    "summary": "Shows you inner and left joins in Cognos SQL, the keys to use, and how to catch and fix a fan-out by counting rows and Marines.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=101048701479",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=101048701479",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "joint-deployment-and-redeployment-personnel-accountability-from-origin-to-destination",
     "title": "Joint Deployment and Redeployment - Personnel Accountability from Origin to Destination",
     "summary": "Covers the 4 phases of joint deployment and redeployment, the 4 JRSOI components, the strategic mobility triad, and your accountability role, per JP 3-35.",
@@ -4112,6 +4849,24 @@
     "lastVerified": "2024-12-29"
   },
   {
+    "slug": "kpi-headers-with-singletons-and-crosstabs",
+    "title": "KPI Headers With Singletons and Crosstabs",
+    "summary": "Shows you how to build a Cognos header row of key numbers from one query and singletons, with a crosstab below reconciled to the header.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1010522AB880",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1010522AB880",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "labels",
     "title": "Labels",
     "summary": "Training on Labels",
@@ -4129,6 +4884,24 @@
     "lastVerified": "2026-06-02"
   },
   {
+    "slug": "labels-headers-and-footers-a-report-leadership-can-read",
+    "title": "Labels, Headers, and Footers, a Report Leadership Can Read",
+    "summary": "Shows you how to rename columns, add a page header and footer with date and page number, and style a Cognos report for leadership.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10062F3F7E14",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10062F3F7E14",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "leave-and-liberty-module-overview",
     "title": "Leave and Liberty Module Overview",
     "summary": "Covers the Leave and Liberty Module, from accessing it and applying for leave to checking leave balances and the approval process.",
@@ -4144,6 +4917,24 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "leave-balances-and-use-or-lose",
+    "title": "Leave Balances and Use or Lose",
+    "summary": "Shows you how to find Marines at risk of losing leave in Cognos, bucket balances, and project to 30 September against the 60-day carryover.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1008309BC072",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1008309BC072",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "leaving-active-duty-for-the-reserve",
@@ -4181,6 +4972,26 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "llm-capabilities-and-limitations",
+    "title": "LLM Capabilities and Limitations",
+    "summary": "Covers what a large language model does well, where it fails, and a live six-prompt test on ChatGPT, per NAVMC 5239.1.",
+    "roles": [
+      "marine",
+      "leader",
+      "commander",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10125710B2ED",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10125710B2ED",
+    "source": {
+      "title": "Large Language Models",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "llm-training-data-sources-and-implications",
@@ -4441,6 +5252,24 @@
       "url": ""
     },
     "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "master-detail-report-by-company",
+    "title": "Master-Detail Report by Company",
+    "summary": "Shows you how to build a Cognos master-detail report with company and platoon queries joined by one link, then check the sums roll up.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10084CA4B3AA",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10084CA4B3AA",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "match-function",
@@ -4875,6 +5704,24 @@
     "lastVerified": "2026-08-29"
   },
   {
+    "slug": "multiple-pages-and-an-export-to-excel-page",
+    "title": "Multiple Pages and an Export to Excel Page",
+    "summary": "Shows you how to add pages to a Cognos report, build a flat Excel export page, and hide it on screen with a render variable.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10106231AEDF",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10106231AEDF",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "my-account-managing-mol-notification-settings",
     "title": "My Account - Managing MOL Notification Settings",
     "summary": "Training on My Account - Managing MOL Notification Settings",
@@ -4958,6 +5805,24 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "navigation-buttons-with-url-parameters",
+    "title": "Navigation Buttons With URL Parameters",
+    "summary": "Shows you how to build Cognos navigation buttons from a saved report path and a page parameter, with well-formed links.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10107A534495",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10107A534495",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "nested-if-functions",
@@ -5260,6 +6125,23 @@
       "url": ""
     },
     "lastVerified": "2025-06-02"
+  },
+  {
+    "slug": "non-mandatory-use-of-the-travel-card",
+    "title": "Non-Mandatory use of the Travel Card",
+    "summary": "Covers who stays exempt from mandatory travel card use, the rules for voluntary use, and when a commander requires a card anyway, per DoD GTCC Regulations 0407.",
+    "roles": [
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=62730886DB1D",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=62730886DB1D",
+    "source": {
+      "title": "Government Travel Charge Card Program",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "not-rec-for-pending-administrative-action",
@@ -5639,6 +6521,24 @@
     "lastVerified": "2026-10-15"
   },
   {
+    "slug": "page-layout-with-tables-blocks-and-singletons",
+    "title": "Page Layout with Tables, Blocks and Singletons",
+    "summary": "Shows you how to lay out a Cognos page with tables, blocks, and singletons, headline numbers on top and a list inside a cell.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10108EFDE9B2",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10108EFDE9B2",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "password-resets",
     "title": "Password Resets",
     "summary": "Training on Password Resets",
@@ -5931,6 +6831,23 @@
     "lastVerified": "2025-12-19"
   },
   {
+    "slug": "preparing-promotion-warrants-in-mol",
+    "title": "Preparing Promotion Warrants in MOL",
+    "summary": "Shows you how to generate a Cpl or Sgt warrant in Prom Rec, check every line, and get it signed and delivered on time, per MCO P1400.32D and MCO 1616.1.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100692F3812C",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100692F3812C",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "printing-and-page-setup",
     "title": "Printing and Page Setup",
     "summary": "Walks you through Excel page setup for printing, including margins, orientation, and paper size on the Page Layout tab and setting a print area.",
@@ -5946,6 +6863,23 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "processing-approved-remedials",
+    "title": "Processing Approved Remedials",
+    "summary": "Walks you through a remedial promotion from the commander's review in Prom Rec to the warrant dates, PR occasion, and delivery, per MARADMIN 559/23.",
+    "roles": [
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10070B8D736D",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10070B8D736D",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "processing-denied-remedials",
@@ -5998,6 +6932,42 @@
       "url": ""
     },
     "lastVerified": "2025-12-19"
+  },
+  {
+    "slug": "processing-suli-promotions",
+    "title": "Processing SULI Promotions",
+    "summary": "Covers how SULI promotions run as automatic selections against the cutting score and how they differ from regular and meritorious promotions.",
+    "roles": [
+      "leader",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=8762048E84DF",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=8762048E84DF",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "projected-gains-and-losses-roster",
+    "title": "Projected Gains and Losses Roster",
+    "summary": "Shows you how to build a 90-day projected gains and losses roster in Cognos from the cycle date, with one reason per loss and gains by MCC.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10085FEFBFE6",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10085FEFBFE6",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "promotion-folder-part-1-missing-training-and-jepes-occasions",
@@ -6173,6 +7143,24 @@
     "lastVerified": "2026-10-15"
   },
   {
+    "slug": "prompt-pages-and-cascading-prompts",
+    "title": "Prompt Pages and Cascading Prompts",
+    "summary": "Shows you how to build a Cognos prompt page with a parent and cascading child prompt, tie them with a filter, and test the run.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10109FD21B99",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10109FD21B99",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "prompt-types-zero-shot-vs-chain-vs-mega",
     "title": "Prompt Types - Zero-Shot vs Chain vs Mega",
     "summary": "Compares zero-shot, mega, and chain prompts, plus hybrid approaches and a decision framework for picking the right type for the task.",
@@ -6205,6 +7193,24 @@
       "url": ""
     },
     "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "prompts-letting-the-user-pick-the-ruc-or-mcc",
+    "title": "Prompts, Letting the User Pick the RUC or MCC",
+    "summary": "Shows you how to put a parameter in a Cognos filter, build a prompt page with the Prompt Wizard, and set prompts required or optional.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100632AA001E",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100632AA001E",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "proofreading",
@@ -6241,6 +7247,24 @@
     "lastVerified": "2024-12-29"
   },
   {
+    "slug": "proving-your-report-is-right-reconciling-against-command-profile",
+    "title": "Proving Your Report Is Right, Reconciling Against Command Profile",
+    "summary": "Shows you how to reconcile a Cognos report against Command Profile by matching the cycle and scope, then documenting any gap left.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10086875435B",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10086875435B",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "rank-function",
     "title": "RANK Function",
     "summary": "Training on RANK Function",
@@ -6256,6 +7280,24 @@
       "url": ""
     },
     "lastVerified": "2026-08-08"
+  },
+  {
+    "slug": "rank-running-totals-and-percent-of-total",
+    "title": "Rank, Running Totals and Percent of Total",
+    "summary": "Shows you rank, running totals, and percent of total in Cognos, including keeping the newest entry for each Marine.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10110C2F6FC9",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10110C2F6FC9",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "readdressing",
@@ -6326,6 +7368,24 @@
     "lastVerified": "2026-08-29"
   },
   {
+    "slug": "reading-the-sql-behind-your-report",
+    "title": "Reading the SQL Behind Your Report",
+    "summary": "Shows you how to open the SQL behind a Cognos report, map it to your data items, and guard the dialog carrying your EDIPI.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10111F6DFA38",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10111F6DFA38",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "reading-the-t-o-report-every-field-explained",
     "title": "Reading the T/O Report - Every Field Explained",
     "summary": "Explains every field on the T/O report, from billet line identity and coding fields to real JF1 billet lines and your G-1 role, per MCO 5311.1E.",
@@ -6358,6 +7418,24 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "reimbursement-of-qualifying-spouse-relicensing-recertification-costs-and-business-costs",
+    "title": "Reimbursement of Qualifying Spouse Relicensing/Recertification Costs and Business Costs",
+    "summary": "Covers who qualifies for spouse relicensing, recertification, and business cost reimbursement on a PCS, the date cutoffs, and the claim process.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6443FA2CCDB3",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6443FA2CCDB3",
+    "source": {
+      "title": "Pay and Entitlements",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "relative-and-absolute-cell-referencing",
@@ -6394,6 +7472,24 @@
     "lastVerified": "2025-03-18"
   },
   {
+    "slug": "remedials-for-tad-marines-and-new-joins",
+    "title": "Remedials for TAD Marines and New Joins",
+    "summary": "Shows you who holds promotion authority and how you work a remedial for a new join or a TAD or attached Marine, per MCO P1400.32D and MARADMIN 559/23.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10071E5C7A5C",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10071E5C7A5C",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "removing-duplicates-with-filters",
     "title": "Removing duplicates with Filters",
     "summary": "Removing duplicates with Filters.",
@@ -6409,6 +7505,24 @@
       "url": ""
     },
     "lastVerified": "2026-06-02"
+  },
+  {
+    "slug": "render-variables-the-right-object-for-the-right-choice",
+    "title": "Render Variables, the Right Object for the Right Choice",
+    "summary": "Shows you how to use string and Boolean render variables in Cognos to show the right object for a prompt choice and handle the empty case.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=101124CCFAE4",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=101124CCFAE4",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "repeaters-and-repeater-tables",
@@ -6494,6 +7608,24 @@
       "url": ""
     },
     "lastVerified": "2025-03-24"
+  },
+  {
+    "slug": "requesting-cognos-enterprise-access-the-saar-and-the-trouble-ticket",
+    "title": "Requesting Cognos Enterprise Access, the SAAR and the Trouble Ticket",
+    "summary": "Walks you through requesting full Cognos access, the SAAR, the signature order, and the COGNOS trouble ticket to submit it.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10064063D4A3",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10064063D4A3",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "requesting-ipcot-travel",
@@ -6741,6 +7873,24 @@
     "lastVerified": "2025-08-18"
   },
   {
+    "slug": "running-a-report-and-exporting-to-excel-without-losing-leading-zeros",
+    "title": "Running a Report and Exporting to Excel Without Losing Leading Zeros",
+    "summary": "Shows you how to run a Cognos report, pick the right output, and keep leading zeros on codes when the data reaches Excel.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1006590349ED",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1006590349ED",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "s-1-battle-rhythm",
     "title": "S-1 Battle Rhythm",
     "summary": "S-1 Battle Rhythm.",
@@ -6824,6 +7974,24 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "select-from-where-your-first-sql-query",
+    "title": "SELECT, FROM, WHERE, Your First SQL Query",
+    "summary": "Walks you through your first Cognos SQL query, SELECT, FROM, and WHERE with the unit filter, then reconciling the count against the package.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10113A094FEA",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10113A094FEA",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "self-critique-prompting",
@@ -6951,6 +8119,24 @@
     "lastVerified": "2025-03-31"
   },
   {
+    "slug": "sharing-reports-and-moving-them-between-packages",
+    "title": "Sharing Reports and Moving Them Between Packages",
+    "summary": "Shows you how to save and share a Cognos report, copy it to a shared folder, replace its package, and recheck the counts.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10114CF74AD4",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10114CF74AD4",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "signature-and-copy-to-lines-with-page-numbering",
     "title": "Signature and Copy To Lines with Page Numbering",
     "summary": "Training on Signature and Copy To Lines with Page Numbering",
@@ -6966,6 +8152,24 @@
       "url": ""
     },
     "lastVerified": "2024-12-27"
+  },
+  {
+    "slug": "signature-requirements-for-non-rec-page-11s",
+    "title": "Signature Requirements for Non Rec Page 11s",
+    "summary": "Covers which not rec Page 11s need the CO or SPCMCA signature, such as 6105 counseling, and which need only the Marine's acknowledgment.",
+    "roles": [
+      "leader",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87860EBBEA1B",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87860EBBEA1B",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "simple-conditional-formatting",
@@ -7037,6 +8241,24 @@
       "url": ""
     },
     "lastVerified": "2026-10-15"
+  },
+  {
+    "slug": "snco-and-special-meritorious-authority-references",
+    "title": "SNCO and Special Meritorious Authority References",
+    "summary": "Shows you the authority for staff NCO, combat, and special program meritorious warrants, per MCO P1400.32D and the FY26 selection MARADMINs.",
+    "roles": [
+      "leader",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1005387750BC",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1005387750BC",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "sorting-and-filtering-data",
@@ -7158,6 +8380,24 @@
     "lastVerified": "2026-10-15"
   },
   {
+    "slug": "staffing",
+    "title": "Staffing",
+    "summary": "Covers the eight Command Profile Staffing pages, including both rosters, the availability report, leader to led, MOS mix, and turnover.",
+    "roles": [
+      "admin",
+      "commander"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10123E8FDCD5",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10123E8FDCD5",
+    "source": {
+      "title": "Command Profile",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "staying-current-with-rapid-technology-changes",
     "title": "Staying Current with Rapid Technology Changes",
     "summary": "Training on Staying Current with Rapid Technology Changes",
@@ -7173,6 +8413,42 @@
       "url": ""
     },
     "lastVerified": "2025-06-10"
+  },
+  {
+    "slug": "stopping-a-promotion-after-the-select-grade-posts",
+    "title": "Stopping a Promotion After the Select Grade Posts",
+    "summary": "Shows you how to stop a Cpl or Sgt promotion after the select grade posts and fix one already effected, per MARADMIN 559/23 and MCTFS PRIUM 70607.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1007280454E6",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1007280454E6",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "strength-by-occupational-field-and-grade-a-crosstab",
+    "title": "Strength by Occupational Field and Grade, a Crosstab",
+    "summary": "Shows you how to build a Cognos crosstab of strength by occupational field and grade group, counting Marines with totals both ways.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10087314FDB3",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10087314FDB3",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "structure-vs-manning-vs-staffing-the-three-terms-you-need-to-own",
@@ -7244,6 +8520,42 @@
       "url": ""
     },
     "lastVerified": "2024-12-29"
+  },
+  {
+    "slug": "suli-effective-dates-and-timing",
+    "title": "SULI Effective Dates and Timing",
+    "summary": "Walks you through SULI dates, from the reenlistment signature date to the month-after eligibility rule and the resulting promotion date.",
+    "roles": [
+      "leader",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87615E6924A8",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87615E6924A8",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "suli-eligibility-requirements",
+    "title": "SULI Eligibility Requirements",
+    "summary": "Covers the SULI gates, 36 months in service, 12 months in grade as a Cpl, and the FY23 or later reenlistment no command waives.",
+    "roles": [
+      "leader",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87604D5ACF0C",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87604D5ACF0C",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "sum-function",
@@ -7718,6 +9030,24 @@
     "lastVerified": "2026-08-29"
   },
   {
+    "slug": "the-expression-editor-functions-parameters-and-validate",
+    "title": "The Expression Editor, Functions, Parameters, and Validate",
+    "summary": "Walks you through the Cognos expression editor, its six tabs, the function tips, and validating until it reports no errors.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100884AD19E1",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100884AD19E1",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "the-gar-and-staffing-goals-from-asr-to-assignments",
     "title": "The GAR and Staffing Goals - From ASR to Assignments",
     "summary": "Explains the GAR, the ESGM and OSGM staffing goal models, and the full flow from the ASR to a Marine in a billet.",
@@ -7929,6 +9259,24 @@
     "lastVerified": "2025-05-20"
   },
   {
+    "slug": "training",
+    "title": "Training",
+    "summary": "Covers the fifteen Command Profile Training pages, from rifle and pistol to fitness tests and BCP, and what each one leaves out.",
+    "roles": [
+      "admin",
+      "commander"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10124318E069",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10124318E069",
+    "source": {
+      "title": "Command Profile",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "transitional-assistance-management-program",
     "title": "Transitional Assistance Management Program",
     "summary": "Training on Transitional Assistance Management Program",
@@ -8071,6 +9419,42 @@
     "lastVerified": "2024-12-29"
   },
   {
+    "slug": "understanding-not-rec-vs-promotion-restriction",
+    "title": "Understanding Not Rec vs Promotion Restriction",
+    "summary": "Explains how a promotion restriction differs from a not rec, what triggers each, and when you use one, the other, or both, per MCO P1400.32D.",
+    "roles": [
+      "leader",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=8787FE2ECC04",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=8787FE2ECC04",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "understanding-permanent-not-recs",
+    "title": "Understanding Permanent Not Recs",
+    "summary": "Explains how MARADMIN 153/21 made not recs indefinite, ended the quarterly Page 11, and leaves the change to the commanding officer.",
+    "roles": [
+      "leader",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87839A4EACB8",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=87839A4EACB8",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "understanding-pme-triggered-remedials",
     "title": "Understanding PME-Triggered Remedials",
     "summary": "Covers required PME for Lance Corporals and Corporals, why incomplete PME needs no not rec, and how you handle a PME-triggered remedial, per MARADMIN 630/24.",
@@ -8087,6 +9471,24 @@
       "url": ""
     },
     "lastVerified": "2026-10-31"
+  },
+  {
+    "slug": "understanding-promotion-page-11-entry-requirements",
+    "title": "Understanding Promotion Page 11 Entry Requirements",
+    "summary": "Covers the Page 11 entries used in promotions, restriction, not rec, and rec, and how you pick the right one after an NJP or other adverse event.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=95365DE99984",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=95365DE99984",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "understanding-promotion-recommendations",
@@ -8226,6 +9628,24 @@
     "lastVerified": "2025-12-12"
   },
   {
+    "slug": "understanding-the-suli-program",
+    "title": "Understanding the SULI Program",
+    "summary": "Explains the Small Unit Leader Initiative, why it exists to fill Sergeant shortfalls, and how it keeps quality Corporals, per MARADMIN 225/23 and PAA 02/23.",
+    "roles": [
+      "leader",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=8759AEA53199",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=8759AEA53199",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "understanding-tig-and-tis-requirements-and-eligibility-dates",
     "title": "Understanding TIG and TIS Requirements and Eligibility Dates",
     "summary": "Shows how you read the current TIG and TIS table, count each clock the way the manual does, and check the date in Prom Rec, per MARADMIN 185/25.",
@@ -8258,6 +9678,24 @@
       "url": ""
     },
     "lastVerified": "2025-09-28"
+  },
+  {
+    "slug": "union-intersect-and-except-comparing-two-lists-of-marines",
+    "title": "Union, Intersect, and Except, Comparing Two Lists of Marines",
+    "summary": "Shows you how to compare two lists of Marines in Cognos with union, intersect, and except, and check the math.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10078BC44AFA",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10078BC44AFA",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "unit-admin-forms-tasks-and-members",
@@ -8436,6 +9874,24 @@
     "lastVerified": "2024-12-27"
   },
   {
+    "slug": "validating-your-sql-against-the-package",
+    "title": "Validating Your SQL Against the Package",
+    "summary": "Shows you how to validate Cognos SQL against the package, compare totals, break down the gap, and record the cycle, source, and filter.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=101159816770",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=101159816770",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "various-location-tracking",
     "title": "Various Location Tracking",
     "summary": "Training on Various Location Tracking",
@@ -8540,6 +9996,24 @@
       "url": ""
     },
     "lastVerified": "2026-10-31"
+  },
+  {
+    "slug": "what-cognos-analytics-is-and-where-it-lives-in-mol",
+    "title": "What Cognos Analytics Is and Where It Lives in MOL",
+    "summary": "Explains what Cognos Analytics is, how current its MCTFS data runs, how to get in through MOL, and why your audits point to it.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100669674A51",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100669674A51",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "what-hqmc-is",
@@ -8699,6 +10173,42 @@
     "lastVerified": "2026-10-15"
   },
   {
+    "slug": "when-filters-and-totals-apply-detail-vs-summary-filters",
+    "title": "When Filters and Totals Apply, Detail vs Summary Filters",
+    "summary": "Explains how Cognos filters before and after aggregation change your totals, footers, and percents, and how to brief the difference.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10116054D38A",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10116054D38A",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "which-cognos-package-do-you-need",
+    "title": "Which Cognos Package Do You Need",
+    "summary": "Explains what a Cognos package is, the unit, enterprise, and functional packages, and why your choice stays with the report.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100673226757",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=100673226757",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "who-can-receive-your-benefits-dependent-eligibility",
     "title": "Who Can Receive Your Benefits? Dependent Eligibility",
     "summary": "Training on Who Can Receive Your Benefits? Dependent Eligibility",
@@ -8714,6 +10224,60 @@
       "url": ""
     },
     "lastVerified": "2025-09-28"
+  },
+  {
+    "slug": "who-is-in-the-reenlistment-window",
+    "title": "Who Is in the Reenlistment Window",
+    "summary": "Shows you how to pull the Marines in the reenlistment window in Cognos, count days to ECC from the cycle date, and work missing codes.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10089B805450",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10089B805450",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "who-is-missing-from-this-list-outer-joins-between-two-queries",
+    "title": "Who Is Missing From This List, Outer Joins Between Two Queries",
+    "summary": "Shows you how to join a Marines query to the T/O billet query with an outer join in Cognos and read the blanks to find who has no billet.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1007982FDB9B",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=1007982FDB9B",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "why-do-we-non-rec",
+    "title": "Why do we non rec",
+    "summary": "Explains why a command not recommends a Marine for promotion and how the not rec ripples into cutting scores and every later promotion.",
+    "roles": [
+      "leader",
+      "admin"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6334BF199229",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=6334BF199229",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "why-marines-get-erroneously-promoted",
@@ -8750,6 +10314,42 @@
     "lastVerified": "2025-05-27"
   },
   {
+    "slug": "working-the-eligibility-roster-what-to-look-for",
+    "title": "Working the Eligibility Roster - What to Look For",
+    "summary": "Walks you through researching each Marine on the eligibility roster against the legal tracker and other systems to catch adverse actions in time.",
+    "roles": [
+      "leader",
+      "commander"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=90298E539B72",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=90298E539B72",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "slug": "working-the-select-grade-roster",
+    "title": "Working the Select Grade Roster",
+    "summary": "Shows you where the select grade roster lives, the cutting score and adverse material checks to run, and the warrant hand-off, per MARADMIN 559/23.",
+    "roles": [
+      "leader",
+      "commander"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10073802998D",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10073802998D",
+    "source": {
+      "title": "Promotions",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
     "slug": "writing-counseling-statements-and-page-11-entries",
     "title": "Writing Counseling Statements and Page 11 Entries",
     "summary": "Training on Writing Counseling Statements and Page 11 Entries",
@@ -8765,6 +10365,24 @@
       "url": ""
     },
     "lastVerified": "2025-12-19"
+  },
+  {
+    "slug": "writing-sql-safely-in-cognos",
+    "title": "Writing SQL Safely in Cognos",
+    "summary": "Covers five habits for safe Cognos SQL, the unit filter, named columns, the masked ID, testing small, and keeping data off your screen.",
+    "roles": [
+      "admin",
+      "leader"
+    ],
+    "durationSeconds": 0,
+    "videoUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10117C6EAC9E",
+    "mceleUrl": "https://portal.mcele.usmc.mil/content/mcele-portal/en/media/detail.html?Id=10117C6EAC9E",
+    "source": {
+      "title": "Cognos Analytics",
+      "publisher": "MCeLE",
+      "url": ""
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "slug": "writing-strong-award-summaries",
