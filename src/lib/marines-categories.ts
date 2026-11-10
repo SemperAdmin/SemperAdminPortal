@@ -539,7 +539,7 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     slug: "special-leave-accrual",
     label: "Special Leave Accrual (SLA)",
     shortLabel: "SLA",
-    description: "Up to 30 days SLA on top of 60-day annual leave (90-day cap total). Qualifying duties, GO approval, FY+2 expiration. Per MARADMIN 188/25.",
+    description: "Up to 30 days SLA on top of 60-day annual leave (90-day cap total). Three FY26 categories, GO approval, FY+2 expiration. Per MARADMIN 545/26.",
     icon: "CalendarDays",
     pageType: "leaf",
   },
@@ -1084,6 +1084,14 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     label: "Involuntary Separations",
     shortLabel: "Involuntary Sep",
     description: "Misconduct (minor, pattern, serious), Unsatisfactory performance, Failure to meet standards (body composition, PFT), Drug abuse. Per MCO 1900.16. Cross-reference Administrative Separation in Legal Services.",
+    icon: "LogOut",
+    pageType: "leaf",
+  },
+  {
+    slug: "gender-dysphoria-involuntary-separation",
+    label: "Gender Dysphoria Involuntary Separation",
+    shortLabel: "GD Separation",
+    description: "Identification, administrative absence, board rights and the 10-day election, Honorable characterization, retention waiver, RE-3G, retirement options. Per MARADMIN 189/26 and MARADMIN 539/26.",
     icon: "LogOut",
     pageType: "leaf",
   },
@@ -2153,6 +2161,7 @@ export const MARINES_PARENT_GROUPS: MarinesParentGroup[] = [
     // Children listed in alphabetical order by label (case-insensitive).
     children: [
       "disability-evaluation-system",
+      "gender-dysphoria-involuntary-separation",
       "involuntary-separations",
       "limited-duty",
       "reserve-component-survivor-benefit-plan",

@@ -152,6 +152,8 @@ const COMMANDER_TREE: TreeSection[] = [
           { label: "Reductions in grade", href: "/commander/personnel-decisions/reductions" },
           { label: "Promotion withholds", href: "/commander/personnel-decisions/promotion-withholds" },
           { label: "PERSTEMPO threshold management", href: "/commander/personnel-decisions/perstempo-threshold-management" },
+          { label: "Special leave accrual", href: "/commander/personnel-decisions/special-leave-accrual" },
+          { label: "Gender dysphoria separation", href: "/commander/personnel-decisions/gender-dysphoria-involuntary-separation" },
         ],
       },
       {
