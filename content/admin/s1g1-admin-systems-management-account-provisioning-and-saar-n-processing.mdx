@@ -25,6 +25,8 @@ references:
   - "MCTFS FoS Access Policy and Procedures 8.0"
   - "Naval Identity Services (NIS) FAQs UDMIPS and DTMS, 13 March 2026"
   - "FPM Vol 4 section 0208 (Role Control Agent)"
+  - "MARADMIN 541/26 ICAM Transition Guidance, Retirement of the Legacy DD Form 2875"
+  - "ALNAV 037/26 Mandatory Transition to NIS for Automated SAAR"
 performanceSteps:
   - "Receive the access request from the inbound clerk or billet change order"
   - "Validate billet, MOS, and grade against requested role"
@@ -55,6 +57,10 @@ then require resubmission. Use E-ICAM for every create, modify, and revoke from
 **25 September 2026**, and have supervisors validate role and Information
 Assurance training date by the same day. Accounts not validated by
 **30 September 2026** are subject to immediate disablement and a fresh request.
+</Callout>
+
+<Callout variant="info" title="Manual DD Form 2875 retires on every NIPRNET system by 30 September 2027">
+Per MARADMIN 541/26<Citation source="MARADMIN 541/26" />, Functional Area Managers, Program Managers, and System Owners move NIPRNET system access from the manual DD Form 2875<Citation source="DD Form 2875" /> to the Naval Identity Services (NIS) automated SAAR workflow by 30 September 2027, the Department of the Navy deadline in ALNAV 037/26<Citation source="ALNAV 037/26" />. Each system moves on its own NIS Program Office milestone. Keep using the path each system owner publishes until the system announces its move. Today MCTFS runs through DoD E-ICAM, and UD-MIPS and DTMS run through NIS.
 </Callout>
 
 ## Role and responsibility
@@ -93,6 +99,7 @@ PAA 02-26<Citation source="PAA 02-26" /> paragraph 3.
 - Reservist activates and requires temporary access on Title 10 orders.
 - Audit identifies a clerk operating without a current access approval.
 - Supervisor changes, which starts an E-ICAM Manager Transfer certification campaign.
+- A system owner announces its move from DD Form 2875 to the NIS automated SAAR workflow under MARADMIN 541/26.
 
 ## Processing workflow
 
@@ -233,7 +240,7 @@ Naval Identity Services, not through the Role Control Agent.
 - Cyber Awareness Challenge Certificate. Annual training proof. Upload as a PDF on the first E-ICAM request, and keep a local copy because E-ICAM discards attachments after a request completes.
 - Privileged Access Agreement. Required for privileged certifier roles and uploaded with the request.
 - Appointment Letter and Authorization Letter. Required where the role is configured for them. Both run an annual recertification clock.
-- DD Form 2875 (SAAR). No longer the submission instrument for MCTFS end-user access. E-ICAM builds the SAAR record from the online form.
+- DD Form 2875 (SAAR). No longer the submission instrument for MCTFS end-user access. E-ICAM builds the SAAR record from the online form. Manual DD Form 2875 processes retire on every NIPRNET system by 30 September 2027 per MARADMIN 541/26. Until then, use the form only where the system owner still requires it.
 - Active Account Roster. Local register of provisioned access, keyed to the E-ICAM Access Request ID.
 - DD Form 577 Appointment and Termination Record. Drives the 577 approver step in E-ICAM where a role requires it. NIS holds no document uploads, so units maintain 577s externally for DTMS.
 - NAVMC 118 (11) Administrative Remarks. Page 11 documenting system access and training.
