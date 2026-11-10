@@ -539,7 +539,7 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     slug: "special-leave-accrual",
     label: "Special Leave Accrual (SLA)",
     shortLabel: "SLA",
-    description: "Up to 30 days SLA on top of 60-day annual leave (90-day cap total). Qualifying duties, GO approval, FY+2 expiration. Per MARADMIN 188/25.",
+    description: "Up to 30 days SLA on top of 60-day annual leave (90-day cap total). Three FY26 categories, GO approval, FY+2 expiration. Per MARADMIN 545/26.",
     icon: "CalendarDays",
     pageType: "leaf",
   },
