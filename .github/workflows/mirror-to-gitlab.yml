@@ -30,6 +30,11 @@ permissions:
 
 jobs:
   mirror:
+    # Dependabot-triggered runs receive no repository secrets, so the push
+    # step fails on every Dependabot branch and marks its pull request red.
+    # Skip those runs. The branch reaches GitLab on the next push by a human
+    # or on the nightly schedule.
+    if: github.actor != 'dependabot[bot]'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
