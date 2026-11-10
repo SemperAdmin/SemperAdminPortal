@@ -1088,6 +1088,14 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     pageType: "leaf",
   },
   {
+    slug: "gender-dysphoria-involuntary-separation",
+    label: "Gender Dysphoria Involuntary Separation",
+    shortLabel: "GD Separation",
+    description: "Identification, administrative absence, board rights and the 10-day election, Honorable characterization, retention waiver, RE-3G, retirement options. Per MARADMIN 189/26 and MARADMIN 539/26.",
+    icon: "LogOut",
+    pageType: "leaf",
+  },
+  {
     slug: "spd-and-re-codes",
     label: "SPD and RE Codes",
     shortLabel: "SPD / RE Codes",
@@ -2153,6 +2161,7 @@ export const MARINES_PARENT_GROUPS: MarinesParentGroup[] = [
     // Children listed in alphabetical order by label (case-insensitive).
     children: [
       "disability-evaluation-system",
+      "gender-dysphoria-involuntary-separation",
       "involuntary-separations",
       "limited-duty",
       "reserve-component-survivor-benefit-plan",
