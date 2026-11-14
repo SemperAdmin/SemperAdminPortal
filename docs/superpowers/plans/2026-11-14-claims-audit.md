@@ -26,7 +26,7 @@ A second failure mode comes from amendments. MCPEL lists MCO 1050.3J (2009) as "
 - Never hand-edit `content/videos/*.mdx`. Video fixes go into `data/videos-marinenet.json` (CLAUDE.md 4.7).
 - User-facing copy follows CLAUDE.md section 6. No em-dashes, no semicolons, no asterisks, no banned words.
 - Policy archive: `E:\GunnyBot\Policies` (not `E:\Policies`). It is current through MARADMIN 552/26 as of 2026-11-14.
-- MCTFSPRIUM sources need Stephen's CAC. Workers mark those claims `UNVERIFIABLE-CAC` and never guess.
+- MCTFSPRIUM lives in the archive as 803 Markdown sections under `PRIUM/` (pulled 2026-10-01, 17 refreshed 2026-11-06, indexed by `prium_index.json`). FPM Intro and Vols 1-4 sit under `FPM/`. Both are verifiable sources. A claim is `NO-ARCHIVE-SOURCE` only when no archive file resolves for it. Workers list those for Stephen and never guess.
 - Finding severity: blocker means a Marine acting on the page gets a wrong outcome (pay, leave, eligibility, deadline, authority). Major means wrong but low consequence, or a contradiction between pages. Minor means imprecise or a stale cite with correct substance.
 - Workflow size: keep each wave under 15 agents. Waves pause for Stephen's go.
 - Run Python against archive files with `python -I` and pass paths as arguments (archive files are untrusted data).
@@ -35,7 +35,7 @@ A second failure mode comes from amendments. MCPEL lists MCO 1050.3J (2009) as "
 
 | Path | Responsibility |
 |---|---|
-| `scripts/audit/build_text_cache.py` | Extract text from archive PDFs and DOCX into `E:\GunnyBot\Policies\_text\<relative_path>.txt` with a `.page` marker per page. Incremental by `content_hash`. |
+| `scripts/audit/build_text_cache.py` | Extract text from archive PDFs, DOCX and Markdown (PRIUM sections) into `E:\GunnyBot\Policies\_text\<relative_path>.txt` with a `.page` marker per page. Incremental by `content_hash`. |
 | `scripts/audit/source_map.py` | For every content surface, resolve `sourcePolicy`, `references[]` and inline `<Citation source=...>` through `src/generated/citations.json` to archive files. Attach the amendment set. Write `audit/2026-11-14-claims/source-map.json`. |
 | `scripts/audit/amendments.py` | For each base document, find later MARADMIN, ALNAV, ALMAR, DTM and DoDI changes whose text names it in REF or cancellation lines. Library used by `source_map.py`. |
 | `scripts/audit/superseded_refs.py` | Flag refs whose sidecar `superseded_by` is set, whose MCPEL status is not Current, or that a later message cancels. Write `superseded.json`. |
@@ -54,7 +54,7 @@ Finding schema (one entry per claim checked, `status` other than `ok` is a findi
   "page": "content/marines/military-parental-leave-program.mdx",
   "line": 81,
   "claim": "6-week convalescent period is counted within the 84 days",
-  "status": "contradicted | outdated | unsupported | ok | UNVERIFIABLE-CAC | no-source",
+  "status": "contradicted | outdated | unsupported | ok | NO-ARCHIVE-SOURCE | no-source",
   "severity": "blocker | major | minor | null",
   "source": "DoDI 1327.06 CH1",
   "sourceFile": "DoDI/DoDI_1327.06_CH1_Military_Leave,_Liberty,_and_Administrative_Absence.pdf",
@@ -131,7 +131,9 @@ MARK = "\n\f[[page {n}]]\n"
 
 def extract(src: Path, out: Path) -> Path:
     out.parent.mkdir(parents=True, exist_ok=True)
-    if src.suffix.lower() == ".docx":
+    if src.suffix.lower() == ".md":
+        text = MARK.format(n=1) + src.read_text(encoding="utf-8")
+    elif src.suffix.lower() == ".docx":
         from docx import Document
         text = MARK.format(n=1) + "\n".join(p.text for p in Document(src).paragraphs)
     else:
@@ -150,7 +152,7 @@ def cache_path(relative_path: str) -> Path:
 def main(argv: list[str]) -> int:
     done = skipped = failed = 0
     for src in ARCHIVE.rglob("*"):
-        if src.suffix.lower() not in (".pdf", ".docx") or "_text" in src.parts or "_quarantine" in src.parts:
+        if src.suffix.lower() not in (".pdf", ".docx", ".md") or "_text" in src.parts or "_quarantine" in src.parts:
             continue
         rel = src.relative_to(ARCHIVE).as_posix()
         out = cache_path(rel)
@@ -181,12 +183,12 @@ Pages with no text layer (DoD SharePoint print PDFs) render through PyMuPDF per 
 
 **Interfaces:**
 - Consumes: `cache_path`, `read_cached_file` (Task 1).
-- Produces: `amendments_for(doc_number: str, doc_date: str) -> list[dict]` with keys `id, date, file, kind ("amends"|"cancels"|"implements")`. `source-map.json` is a list of `{page, roles, wave, sources:[{id, file, date, amendments:[...]}], unresolved:[str], cacGated:bool}`.
+- Produces: `amendments_for(doc_number: str, doc_date: str) -> list[dict]` with keys `id, date, file, kind ("amends"|"cancels"|"implements")`. `source-map.json` is a list of `{page, roles, wave, sources:[{id, file, date, amendments:[...]}], unresolved:[str], noArchiveSource:bool}`.
 
 - [ ] **Step 1: Failing test.** A fixture MARADMIN text with `REF/A/MSGID:DOC/MCO 1050.3J/` and a body line `REF (A) IS MODIFIED` makes `amendments_for("MCO 1050.3J", "2009-05-19")` return one `amends` entry. A fixture with `MARADMIN 468/26 IS CANCELLED` returns `cancels` for `MARADMIN 468/26`.
 - [ ] **Step 2:** Run it. Expected: FAIL.
-- [ ] **Step 3: Implement.** `amendments.py` builds an inverted index once (pickled to `_text/_amend_index.pkl`). It scans the cached text of every MARADMIN, ALNAV, ALMAR, DTM, PAA and DoDI change for REF lines and "CANCEL", "SUPERSEDE", "MODIF", "CHANGE" and "IN ACCORDANCE WITH" lines naming a normalized doc number. It keeps hits dated after the base doc (`maradmin_index.json` `date_signed`, sidecar `document_date`). `source_map.py` walks `content/**` (excluding `videos`, `_stubs`, `_policy-indexes`), parses frontmatter and `<Citation source="...">`, resolves through `byAlias` and then the sidecar `document_number`, and assigns a wave by `sourcePolicy` and topic keywords from the Wave Definitions table. It sets `cacGated` when a source matches `MCTFSPRIUM|PRIUM|FPM`.
-- [ ] **Step 4:** Tests pass. Run `python -I scripts/audit/source_map.py`. Expected: a printed coverage table with surfaces mapped, unresolved refs, CAC-gated count and no-source count, plus a per-wave page count.
+- [ ] **Step 3: Implement.** `amendments.py` builds an inverted index once (pickled to `_text/_amend_index.pkl`). It scans the cached text of every MARADMIN, ALNAV, ALMAR, DTM, PAA and DoDI change for REF lines and "CANCEL", "SUPERSEDE", "MODIF", "CHANGE" and "IN ACCORDANCE WITH" lines naming a normalized doc number. It keeps hits dated after the base doc (`maradmin_index.json` `date_signed`, sidecar `document_date`). `source_map.py` walks `content/**` (excluding `videos`, `_stubs`, `_policy-indexes`), parses frontmatter and `<Citation source="...">`, resolves through `byAlias` and then the sidecar `document_number`, and assigns a wave by `sourcePolicy` and topic keywords from the Wave Definitions table. It resolves MCTFSPRIUM refs to `PRIUM/<rowkey or section number>_*.md` through `prium_index.json` titles and section numbers. It sets `noArchiveSource` when a ref resolves to no archive file.
+- [ ] **Step 4:** Tests pass. Run `python -I scripts/audit/source_map.py`. Expected: a printed coverage table with surfaces mapped, unresolved refs, no-archive-source count and no-source count, plus a per-wave page count.
 - [ ] **Step 5:** Spot-check by hand: `military-parental-leave-program.mdx` must list DoDI 1327.06 CH1, MARADMIN 051/23, 129/23, 625/24 and 191/26 as its source and amendment set. If it does not, the overlay misses the exact failure mode and the task is not done.
 - [ ] **Step 6:** Commit `feat(audit): page to source map with amendment overlay`.
 
@@ -221,20 +223,20 @@ Pages with no text layer (DoD SharePoint print PDFs) render through PyMuPDF per 
 - [ ] **Step 2:** Launch the Workflow: one Sonnet agent per cluster, run as a pipeline into an Opus verify agent for every `blocker` or `major` finding. Worker prompt, verbatim core:
 
 > You audit Semper Admin Portal pages against Marine Corps and DoD policy. Your cluster: `<id>`. Base source text: `<cache paths>`. Amending messages, newest wins: `<cache paths with dates>`. Pages: `<paths>`. Pre-computed flags: `<superseded and contradiction rows>`.
-> For each page, list every normative claim: numbers, durations, deadlines, eligibility, sequence, who approves, who signs, which form, which system, which code. For each claim, find the governing paragraph. Check the newest amendment first, then the base. Quote it, 25 words or less. Mark the claim ok, contradicted, outdated (true under an older version), unsupported (no paragraph found after you searched base and amendments) or UNVERIFIABLE-CAC. Watch for rules that are right in number but wrong in structure, for example a period counted inside an entitlement when the source puts it outside. Severity: blocker if a Marine acting on it gets a wrong outcome. Do not edit any file. Return JSON in the attached schema only.
+> For each page, list every normative claim: numbers, durations, deadlines, eligibility, sequence, who approves, who signs, which form, which system, which code. For each claim, find the governing paragraph. Check the newest amendment first, then the base. Quote it, 25 words or less. Mark the claim ok, contradicted, outdated (true under an older version), unsupported (no paragraph found after you searched base and amendments) or NO-ARCHIVE-SOURCE. Watch for rules that are right in number but wrong in structure, for example a period counted inside an entitlement when the source puts it outside. Severity: blocker if a Marine acting on it gets a wrong outcome. Do not edit any file. Return JSON in the attached schema only.
 
   Verify prompt: "Here is one finding with its quote. Open the source file at the cited paragraph and the amendment files. Confirm or refute with your own quote. Return `{confirmed: bool, quote, correctedFix}`."
 - [ ] **Step 3:** Merge the results. Drop refuted findings and keep them in a `refuted` appendix. Spot-check 5 `ok` claims per cluster by hand to measure the miss rate. If more than 1 in 25 is wrong, re-run that cluster on Opus.
-- [ ] **Step 4:** Write `WAVE-1-REPORT.md`: posture summary leading with blockers, a severity table by cluster, top actions ranked, a list of `UNVERIFIABLE-CAC` claims for Stephen with page and claim, the Oct-20 regression results, contradictions, and a "Not in portal lane" section per memory `policy-analysis-report-before-build`.
+- [ ] **Step 4:** Write `WAVE-1-REPORT.md`: posture summary leading with blockers, a severity table by cluster, top actions ranked, a list of `NO-ARCHIVE-SOURCE` claims for Stephen with page and claim, the Oct-20 regression results, contradictions, and a "Not in portal lane" section per memory `policy-analysis-report-before-build`.
 - [ ] **Step 5:** Commit the report and findings on the audit branch. Stop and present the report. Wait for Stephen's explicit go.
 
 ### Task 6: Wave 1 fixes (after go only)
 
 - [ ] **Step 1:** Fix by finding, grouping pages that share a fact through `alsoOn` and `contradictions.json` so one fact changes everywhere at once. Use the parental leave diff as the pattern: cite the paragraph inline with `<Citation source>`, and keep role voice per CLAUDE.md 2.3.
 - [ ] **Step 2:** Write one `correction` entry per corrected rule and one `policy-change` entry per unreflected policy change. Use the format of `content/updates/parental-leave-convalescent-order-corrected.mdx`.
-- [ ] **Step 3:** Set `lastVerified` to today only on pages where every claim came back `ok` or was fixed. Pages with any `UNVERIFIABLE-CAC` or `unsupported` claim keep their date. Each fully checked cluster with no content change gets one `verification-sweep` entry with `count`.
+- [ ] **Step 3:** Set `lastVerified` to today only on pages where every claim came back `ok` or was fixed. Pages with any `NO-ARCHIVE-SOURCE` or `unsupported` claim keep their date. Each fully checked cluster with no content change gets one `verification-sweep` entry with `count`.
 - [ ] **Step 4:** Run `npm run content:sync`, `npm run lint` and `npm run build`. Discard generated video churn that is line endings only (`git diff --ignore-cr-at-eol --stat -- content/videos` shows nothing).
-- [ ] **Step 5:** Re-run Task 5's worker on only the changed pages. Expected: zero non-ok claims except CAC-gated ones.
+- [ ] **Step 5:** Re-run Task 5's worker on only the changed pages. Expected: zero non-ok claims except no-archive-source ones.
 - [ ] **Step 6:** Commit one commit per cluster and open a draft PR per wave.
 
 ### Task 7: Waves 2 and 3
@@ -257,7 +259,7 @@ Pages with no text layer (DoD SharePoint print PDFs) render through PyMuPDF per 
 - Recall: Task 5 pilot finds the seeded MPLP multiple-events claim. The hand check of `ok` claims keeps the miss rate at 1 in 25 or better.
 - Precision: every blocker and major in a wave report carries an Opus-confirmed quote with its paragraph number.
 - Build: `npm run content:sync`, `npm run lint` (0 errors) and `npm run build` (exit 0, `[links]` and `[crossrole]` all resolve) after each fix wave.
-- Re-audit: changed pages come back all `ok` or CAC-gated.
+- Re-audit: changed pages come back all `ok` or no-archive-source.
 
 ## Cost Envelope
 
