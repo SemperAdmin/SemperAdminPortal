@@ -31,6 +31,18 @@ def cache_path(relative_path: str) -> Path:
 def read_cached(relative_path: str) -> list[str]:
     return read_cached_file(cache_path(relative_path))
 
+def source_hash(src: Path) -> str:
+    """Return the sidecar content_hash, or the source mtime when the sidecar is absent, unreadable, or empty."""
+    side = src.with_name(src.name + ".json")
+    try:
+        if side.exists():
+            value = json.loads(side.read_text(encoding="utf-8")).get("content_hash", "")
+            if value:
+                return str(value)
+    except (OSError, ValueError, AttributeError):
+        pass  # normal fallback, not logged
+    return str(src.stat().st_mtime)
+
 def main(argv: list[str]) -> int:
     done = skipped = failed = 0
     for src in ARCHIVE.rglob("*"):
@@ -38,14 +50,13 @@ def main(argv: list[str]) -> int:
             continue
         rel = src.relative_to(ARCHIVE).as_posix()
         out = cache_path(rel)
-        side = src.with_name(src.name + ".json")
         stamp = out.with_name(out.name + ".hash")
-        h = json.loads(side.read_text(encoding="utf-8")).get("content_hash", "") if side.exists() else str(src.stat().st_mtime)
-        if out.exists() and stamp.exists() and stamp.read_text() == h:
-            skipped += 1; continue
         try:
+            h = source_hash(src)
+            if out.exists() and stamp.exists() and stamp.read_text() == h:
+                skipped += 1; continue
             extract(src, out); stamp.write_text(h); done += 1
-        except Exception as e:  # broken PDFs are logged, not fatal
+        except Exception as e:  # broken PDFs and bad sidecars are logged, not fatal
             failed += 1; print(f"FAIL {rel}: {e}", file=sys.stderr)
     print(f"[audit:cache] extracted {done}, unchanged {skipped}, failed {failed}")
     return 0
