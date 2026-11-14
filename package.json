@@ -24,6 +24,7 @@
     "format:check": "prettier --check .",
     "sync:thumbnails": "node scripts/sync-thumbnails.mjs",
     "videos:generate": "node scripts/generate-videos.js",
+    "audit:cache": "python -I scripts/audit/build_text_cache.py",
     "pretype-check": "node scripts/generate-videos.js && node scripts/sync-content.mjs && node scripts/sync-thumbnails.mjs",
     "type-check": "tsc --noEmit",
     "prelint": "node scripts/generate-videos.js && node scripts/sync-content.mjs",
