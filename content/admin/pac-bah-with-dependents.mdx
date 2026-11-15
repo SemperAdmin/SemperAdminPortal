@@ -1,7 +1,7 @@
 ---
 title: "BAH With Dependents"
 slug: "bah-with-dependents"
-summary: "BAH with dependents rate applies when a Marine has qualifying dependents at the duty station. The rate is higher than without-dependents BAH and reflects family housing costs. Dependent eligibility per MCO 1751.3 drives entitlement."
+summary: "BAH with dependents rate applies when a Marine has qualifying dependents. The rate is higher than without-dependents BAH and reflects family housing costs. Dependent eligibility per MCO 1751.3 drives entitlement."
 roles: ["admin", "leader", "commander"]
 lastVerified: "2026-05-01"
 unitType: "pac"
@@ -18,13 +18,13 @@ references:
   - "MCO 7220.56 BAH Policies"
   - "MCO 1751.3 Marine Corps Dependency Determination and Support Program"
   - "DOD FMR 7000.14-R Volume 7A Chapter 26"
-  - "MARADMIN 661/19 Dependency Validation Cycle"
+  - "MCO 1751.3 Chapter 1 Paragraph 8 Annual Re-Determination of Dependency"
 performanceSteps:
   - "Verify dependent eligibility per MCO 1751.3"
-  - "Verify dependent at duty station (or eligible separate location)"
+  - "Verify dependency status for the standard with-dependents rate"
   - "Determine with-dependents BAH rate"
   - "Process UD/MIPS BAH transaction"
-  - "Coordinate annual dependency revalidation"
+  - "Coordinate annual re-determination for secondary dependents"
 relatedRoles:
   commander: "/commander/personnel-decisions/admin-discharges"
 source:
@@ -46,7 +46,8 @@ Per MCO 1751.3<Citation source="MCO 1751.3" />, a dependent for BAH purposes inc
 
 ### Children
 
-- Biological children under age 21 (or 23 if full-time student)
+- Biological children under age 21
+- Full-time students age 21 to 22 are secondary dependents. They need DD Form 137<Citation source="DD Form 137" />, over 50 percent support from the member, and annual recertification per MCO 1751.3<Citation source="MCO 1751.3" /> chapter 1 paragraph 6
 - Adopted children with final adoption
 - Stepchildren in member's household
 - Court-ordered custodial children
@@ -63,7 +64,7 @@ Per MCO 1751.3<Citation source="MCO 1751.3" />, a dependent for BAH purposes inc
 A Marine receives BAH at the with-dependents rate when.
 
 - Has at least one qualifying dependent
-- Dependent resides with member at duty station (or eligible separate location)
+- Rate follows grade, dependency status, and PDS, wherever the dependents live, per MCO 7220.56A<Citation source="MCO 7220.56A" /> enclosure 1 chapter 1 paragraph 1.a
 - Member is not in government quarters
 - Documentation establishes dependent status (NAVMC 10922<Citation source="NAVMC 10922" /> with supporting docs)
 
@@ -105,13 +106,12 @@ When member submits NAVMC 10922<Citation source="NAVMC 10922" />.
 - Verify documents are properly executed
 - Verify member identification on documents
 
-### Step 2 - Verify Dependent Resides at Duty Station
+### Step 2 - Verify Dependency Status
 
-The dependent must reside at the member's duty station for standard with-dependents BAH.
+The standard with-dependents rate follows grade, dependency status, and PDS per MCO 7220.56A<Citation source="MCO 7220.56A" /> enclosure 1 chapter 1 paragraph 1.a. Family address does not set the rate.
 
-- Verify family residence address
-- Verify the address matches the duty station zip code area
-- For dependents at separate location, evaluate BAH-Diff eligibility
+- Verify dependency status against the NAVMC 10922<Citation source="NAVMC 10922" /> and supporting documents
+- For a dependent in another person's custody, or a member in single-type quarters, evaluate BAH-DIFF eligibility
 
 ### Step 3 - Determine Effective Date
 
@@ -128,7 +128,7 @@ Apply the BAH change.
 
 - UD/MIPS dependency transaction with effective date
 - BAH category change to with-dependents
-- Verify rate updates to with-dependents rate for zip code
+- Verify rate updates to with-dependents rate for the PDS
 
 ### Step 5 - Coordinate Member ID and DEERS
 
@@ -148,9 +148,9 @@ Confirm processing.
 
 ## Annual Dependency Revalidation
 
-Per MARADMIN 661/19<Citation source="MARADMIN 661/19" />, the Marine Corps validates dependency annually.
+Per MCO 1751.3<Citation source="MCO 1751.3" /> chapter 1 paragraph 8, annual re-determination of dependency is required for a member who claims a housing allowance for any secondary dependent.
 
-- Each member's dependents reviewed
+- Each secondary dependent reviewed
 - Member submits or confirms current status
 - Discrepancies trigger re-validation
 - Failure to revalidate may stop BAH
@@ -181,7 +181,7 @@ Member divorces. No children. No other dependents remaining.
 
 - Was: With-dependents rate
 - Becomes: Without-dependents rate
-- Effective date: Date of divorce decree
+- Effective date: Day after the divorce decree date. BAH-with-dependents continues through the decree date
 - Documentation: Divorce decree, NAVMC 10922<Citation source="NAVMC 10922" />
 
 ### Divorce With Custodial Children
@@ -209,7 +209,7 @@ These hit during PAC processing.
 1. **Marriage processed but BAH not changed.** NAVMC 10922<Citation source="NAVMC 10922" /> submitted but BAH category transaction missed. Fix by submitting separate BAH change.
 2. **Effective date wrong.** BAH effective on submission date instead of marriage or birth date. Causes retroactive pay issues. Fix by reversing and resubmitting with correct date.
 3. **Dependent not in DEERS.** Dependent processed for BAH but not enrolled in DEERS. Coordinate with member for RAPIDS visit.
-4. **Annual revalidation skipped.** MARADMIN 661/19<Citation source="MARADMIN 661/19" /> cycle not completed. BAH may stop. Process revalidation.
+4. **Annual revalidation skipped.** Secondary dependent re-determination under MCO 1751.3<Citation source="MCO 1751.3" /> chapter 1 paragraph 8 not completed. Failure to recertify suspends benefits. Process the re-determination.
 5. **Photocopy submitted as supporting document.** Marriage cert or birth cert not certified copy. Reject and request original.
 
 ## When With-Dependents BAH Stops
@@ -225,7 +225,7 @@ BAH stops or changes when.
 
 BAH-Diff is different from with-dependents BAH.
 
-- BAH-Diff: Member has dependents not at duty station (separated locations)
+- BAH-Diff: Member supports a dependent in another person's custody, or lives in single-type quarters. A family living apart does not trigger it
 - BAH-Diff is a fixed rate, not zip-code based
 - Less common but applies in specific situations
 
@@ -247,5 +247,5 @@ Photocopies do not satisfy MCO 1751.3<Citation source="MCO 1751.3" /> requiremen
 With-dependents BAH affects every Marine with family.
 
 - **Marines** submit dependency documents and verify BAH on LES.
-- **Leaders** ensure Marines submit life event documents within 10 working days.
+- **Leaders** ensure Marines submit life event documents within 30 days of the life event per MCO 1751.3<Citation source="MCO 1751.3" /> chapter 1 paragraph 1.f.
 - **Commanders** support timely processing through proper routing and documentation.
