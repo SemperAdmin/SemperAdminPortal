@@ -191,3 +191,23 @@ def test_archive_table_refuses_partial_walk(tmp_path, monkeypatch):
     with pytest.raises(RuntimeError, match="ALNAVS"):
         sm.load_archive_table(rebuild=True)
     assert not (root / "_text" / "_archive_docs.json").exists()
+
+def test_archive_table_refuses_unreadable_sidecar(tmp_path, monkeypatch):
+    import pytest
+    sm = load("source_map")
+    root = _tmp_archive(tmp_path, list(sm.EXPECTED_FOLDERS))
+    (root / "MCO" / "MCO_1.pdf.json").write_text('{"document_number": "MCO 1"}', encoding="utf-8")
+    (root / "MCO" / "MCO_2.pdf.json").write_text("{bad json", encoding="utf-8")  # skipped, not fatal
+    monkeypatch.setattr(sm.tc, "ARCHIVE", root)
+    monkeypatch.setattr(sm.tc, "CACHE", root / "_text")
+    assert len(sm.load_archive_table(rebuild=True)) == 1
+    (root / "_text" / "_archive_docs.json").unlink()
+    real = Path.read_text
+    def flaky(self, *a, **k):
+        if self.name == "MCO_1.pdf.json":
+            raise PermissionError(13, "denied")
+        return real(self, *a, **k)
+    monkeypatch.setattr(Path, "read_text", flaky)
+    with pytest.raises(RuntimeError, match="MCO_1.pdf.json"):
+        sm.load_archive_table(rebuild=True)
+    assert not (root / "_text" / "_archive_docs.json").exists()

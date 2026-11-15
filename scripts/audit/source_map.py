@@ -165,6 +165,7 @@ def build_archive_table() -> list[dict]:
     if not root.is_dir():
         errors = [f"{root} is missing"]
     walk_errors: list[str] = []
+    read_errors: list[str] = []
     for dirpath, dirnames, filenames in os.walk(root, onerror=lambda e: walk_errors.append(f"{e.filename}: {e.strerror}")):
         dirnames[:] = [d for d in dirnames if d not in ARCHIVE_SKIP]
         for fn in filenames:
@@ -172,12 +173,16 @@ def build_archive_table() -> list[dict]:
                 continue
             try:
                 meta = json.loads((Path(dirpath) / fn).read_text(encoding="utf-8"))
-            except (OSError, ValueError):
+            except ValueError:
+                continue  # bad JSON is a data fault, skipped
+            except OSError as e:
+                read_errors.append(f"{Path(dirpath) / fn}: {e.strerror}")
                 continue
             rel = str(meta.get("relative_path") or (Path(dirpath) / fn[:-5]).relative_to(root)).replace("\\", "/")
             rows.append(_row(rel, str(meta.get("document_number") or ""), meta.get("document_date"),
                              meta.get("source_type") or rel.split("/")[0], meta.get("superseded_by") or []))
     errors.extend(walk_errors)
+    errors.extend(read_errors)
     if errors:  # never hand back, or cache, a short table
         raise RuntimeError("archive walk failed, table not built: " + "; ".join(errors[:10]))
     paa = json.loads((root / "paa_index.json").read_text(encoding="utf-8")).get("downloaded", {})
