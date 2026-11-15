@@ -11,9 +11,9 @@ PR 152 owns these two pages and is still open. Five confirmed findings wait unti
 
 The finding text sits in the held-pr152.json next to this file.
 
-## Source conflict, needs Stephen
+## Source conflict, resolved
 
-- Separation pay character of service. MCO 1900.16 para 1307 allows full separation pay for honorable or general. DoD FMR Vol 7A Ch 35 para 3.1.1.2 reads honorable only. content/marines/separation-payments.mdx now cites MCO 1900.16 and notes the FMR reading. content/admin/pac-separation-pay.mdx and content/marines/separation-pay-and-final-pay.mdx still say honorable only. content/updates/separation-pay-eligibility-corrected.mdx names the conflict and points readers to MPO. Pick the governing source, then align all three pages.
+- Separation pay character of service. Stephen ruled 2026-11-15. 10 U.S.C. 1174, DoDI 1332.29 para 3.1.a.(2) and DoD FMR Vol 7A Ch 35 para 3.1.1.2 govern. Full pay requires honorable, half pay accepts honorable or general. MCO 1900.16 para 1307 defers to 10 U.S.C. 1174 and DoDI 1332.29. separation-payments, separation-pay-and-final-pay and the update entry now match pac-separation-pay. No DoDI 1332.29 entry exists in content/citations, so its chips render plain.
 
 ## Rests on a secondary source
 
