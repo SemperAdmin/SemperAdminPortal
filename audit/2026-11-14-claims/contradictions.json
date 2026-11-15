@@ -1,0 +1,607 @@
+[
+  {
+    "topic": "bah",
+    "values": {
+      "$171": [
+        "content/admin/pac-bah-overview.mdx:45"
+      ],
+      "30 days": [
+        "content/admin/pac-bah-special-categories.mdx:180",
+        "content/marines/bah.mdx:433",
+        "content/marines/reenlistments-and-extensions-overview.mdx:341",
+        "content/marines/separation-pay-and-final-pay.mdx:205"
+      ],
+      "60 days": [
+        "content/leader/life-events-marriage-walkthrough.mdx:81",
+        "content/marines/death-payments.mdx:233"
+      ],
+      "12 months": [
+        "content/leader/pay-bah-error-catch.mdx:103"
+      ],
+      "3 months": [
+        "content/marines/advance-and-emergency-pay.mdx:95"
+      ],
+      "365 days": [
+        "content/marines/death-payments.mdx:4",
+        "content/marines/death-payments.mdx:28",
+        "content/marines/death-payments.mdx:145",
+        "content/marines/death-payments.mdx:234",
+        "content/marines/death-payments.mdx:257",
+        "content/marines/death-payments.mdx:286"
+      ],
+      "90 days": [
+        "content/marines/joining-a-unit.mdx:4"
+      ]
+    }
+  },
+  {
+    "topic": "bas",
+    "values": {
+      "$953.90": [
+        "content/admin/pac-bas-overview.mdx:69"
+      ],
+      "3 months": [
+        "content/marines/advance-and-emergency-pay.mdx:87"
+      ],
+      "60 days": [
+        "content/marines/death-payments.mdx:233"
+      ],
+      "30 days": [
+        "content/marines/separation-pay-and-final-pay.mdx:205"
+      ]
+    }
+  },
+  {
+    "topic": "cft",
+    "values": {
+      "1%": [
+        "content/marines/body-composition-reporting.mdx:185"
+      ],
+      "75%": [
+        "content/marines/jepes-junior-enlisted.mdx:131"
+      ],
+      "12.5%": [
+        "content/marines/jepes-junior-enlisted.mdx:146"
+      ],
+      "36 months": [
+        "content/marines/lateral-moves-program.mdx:289",
+        "content/marines/selective-retention-bonus-and-targeted-mos.mdx:528"
+      ]
+    }
+  },
+  {
+    "topic": "convalescent",
+    "values": {
+      "6 weeks": [
+        "content/marines/birth-and-adoption.mdx:196",
+        "content/marines/military-parental-leave-program.mdx:4",
+        "content/marines/military-parental-leave-program.mdx:314",
+        "content/marines/reserve-maternity-leave.mdx:80",
+        "content/marines/reserve-maternity-leave.mdx:153"
+      ],
+      "30 days": [
+        "content/marines/convalescent-leave.mdx:69",
+        "content/marines/convalescent-leave.mdx:73"
+      ],
+      "12 weeks": [
+        "content/marines/military-parental-leave-program.mdx:31",
+        "content/marines/military-parental-leave-program.mdx:36"
+      ],
+      "84 days": [
+        "content/marines/military-parental-leave-program.mdx:81"
+      ],
+      "42 days": [
+        "content/marines/military-parental-leave-program.mdx:81",
+        "content/marines/military-parental-leave-program.mdx:249"
+      ],
+      "8 weeks": [
+        "content/marines/reserve-maternity-leave.mdx:270"
+      ]
+    }
+  },
+  {
+    "topic": "dla",
+    "values": {
+      "252504229%": [
+        "content/links/amps.mdx:11"
+      ],
+      "14 days": [
+        "content/marines/dislocation-allowance.mdx:143",
+        "content/marines/dislocation-allowance.mdx:153"
+      ],
+      "90 days": [
+        "content/marines/joining-a-unit.mdx:4"
+      ]
+    }
+  },
+  {
+    "topic": "fsa",
+    "values": {
+      "$300": [
+        "content/admin/iandi-mobilization-active-duty-pay.mdx:91",
+        "content/admin/pac-family-separation-allowance.mdx:4",
+        "content/admin/pac-family-separation-allowance.mdx:41",
+        "content/admin/pac-family-separation-allowance.mdx:124",
+        "content/marines/combat-zone-tax-exclusion.mdx:65",
+        "content/marines/family-separation-allowance.mdx:12",
+        "content/marines/family-separation-allowance.mdx:96",
+        "content/marines/family-separation-allowance.mdx:159",
+        "content/marines/pay-problems-and-fixes.mdx:96"
+      ],
+      "30 days": [
+        "content/admin/pac-family-separation-allowance.mdx:99",
+        "content/admin/pac-family-separation-allowance.mdx:164",
+        "content/admin/pac-family-separation-allowance.mdx:168",
+        "content/admin/pac-hardship-duty-pay.mdx:214",
+        "content/admin/pac-hostile-fire-imminent-danger-pay.mdx:197",
+        "content/admin/s1g1-military-pay-processing-allowances-bah-bas-and-uniforms.mdx:66",
+        "content/leader/pay-coaching-marines-on-pay.mdx:65",
+        "content/marines/.trash-deployment-pays.mdx:201",
+        "content/marines/.trash-deployment-pays.mdx:251",
+        "content/marines/.trash-pay-review-les.mdx:110",
+        "content/marines/family-separation-allowance.mdx:4",
+        "content/marines/family-separation-allowance.mdx:155",
+        "content/marines/family-separation-allowance.mdx:226",
+        "content/marines/family-separation-allowance.mdx:250"
+      ],
+      "$250": [
+        "content/marines/.trash-deployment-pays.mdx:4",
+        "content/marines/.trash-deployment-pays.mdx:33",
+        "content/marines/.trash-deployment-pays.mdx:134",
+        "content/marines/.trash-deployment-pays.mdx:253",
+        "content/marines/.trash-deployment-pays.mdx:347",
+        "content/marines/.trash-pay-review-les.mdx:67"
+      ],
+      "$300.00": [
+        "content/marines/family-separation-allowance.mdx:195"
+      ],
+      "$7500": [
+        "content/marines/flexible-spending-accounts.mdx:4",
+        "content/marines/flexible-spending-accounts.mdx:26"
+      ],
+      "$3400": [
+        "content/marines/flexible-spending-accounts.mdx:4",
+        "content/marines/flexible-spending-accounts.mdx:26"
+      ],
+      "12 months": [
+        "content/marines/illness-or-injury-payments.mdx:186"
+      ]
+    }
+  },
+  {
+    "topic": "hfp",
+    "values": {
+      "$450": [
+        "content/admin/iandi-mobilization-active-duty-pay.mdx:90",
+        "content/admin/pac-combat-zone-tax-exclusion.mdx:218",
+        "content/admin/pac-hostile-fire-imminent-danger-pay.mdx:4",
+        "content/admin/pac-hostile-fire-imminent-danger-pay.mdx:48",
+        "content/admin/pac-hostile-fire-imminent-danger-pay.mdx:218",
+        "content/admin/s1g1-special-hazardous-duty-pay-hostile-fire-and-imminent-danger.mdx:60",
+        "content/admin/s1g1-special-hazardous-duty-pay-hostile-fire-and-imminent-danger.mdx:119",
+        "content/admin/s1g1-special-hazardous-duty-pay-hostile-fire-and-imminent-danger.mdx:126",
+        "content/marines/combat-zone-tax-exclusion.mdx:80",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:4",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:49",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:64",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:188",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:205",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:249"
+      ],
+      "$100": [
+        "content/admin/pac-hardship-duty-pay.mdx:89"
+      ],
+      "$325": [
+        "content/admin/pac-hardship-duty-pay.mdx:89"
+      ],
+      "$175": [
+        "content/admin/pac-hostile-fire-imminent-danger-pay.mdx:74",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:52",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:217"
+      ],
+      "$225": [
+        "content/marines/.trash-deployment-pays.mdx:4",
+        "content/marines/.trash-deployment-pays.mdx:33",
+        "content/marines/.trash-deployment-pays.mdx:54",
+        "content/marines/.trash-deployment-pays.mdx:58",
+        "content/marines/.trash-deployment-pays.mdx:65",
+        "content/marines/.trash-deployment-pays.mdx:275",
+        "content/marines/.trash-deployment-pays.mdx:289",
+        "content/marines/.trash-deployment-pays.mdx:291",
+        "content/marines/.trash-deployment-pays.mdx:347"
+      ],
+      "12 months": [
+        "content/marines/.trash-deployment-pays.mdx:113",
+        "content/marines/illness-or-injury-payments.mdx:186"
+      ]
+    }
+  },
+  {
+    "topic": "idp",
+    "values": {
+      "$450": [
+        "content/admin/iandi-mobilization-active-duty-pay.mdx:90",
+        "content/admin/pac-combat-zone-tax-exclusion.mdx:218",
+        "content/admin/pac-hostile-fire-imminent-danger-pay.mdx:4",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:4",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:249"
+      ],
+      "$100": [
+        "content/admin/pac-hardship-duty-pay.mdx:89"
+      ],
+      "$325": [
+        "content/admin/pac-hardship-duty-pay.mdx:89"
+      ],
+      "$275": [
+        "content/admin/pac-hostile-fire-imminent-danger-pay.mdx:49",
+        "content/admin/pac-hostile-fire-imminent-danger-pay.mdx:218",
+        "content/admin/s1g1-special-hazardous-duty-pay-hostile-fire-and-imminent-danger.mdx:61",
+        "content/admin/s1g1-special-hazardous-duty-pay-hostile-fire-and-imminent-danger.mdx:119",
+        "content/admin/s1g1-special-hazardous-duty-pay-hostile-fire-and-imminent-danger.mdx:126",
+        "content/marines/combat-zone-tax-exclusion.mdx:81",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:87",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:189",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:209"
+      ],
+      "$175": [
+        "content/admin/pac-hostile-fire-imminent-danger-pay.mdx:74",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:52",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:217"
+      ],
+      "$225": [
+        "content/marines/.trash-deployment-pays.mdx:4",
+        "content/marines/.trash-deployment-pays.mdx:33",
+        "content/marines/.trash-deployment-pays.mdx:54",
+        "content/marines/.trash-deployment-pays.mdx:69",
+        "content/marines/.trash-deployment-pays.mdx:275",
+        "content/marines/.trash-deployment-pays.mdx:291",
+        "content/marines/.trash-deployment-pays.mdx:347"
+      ],
+      "30 days": [
+        "content/marines/.trash-deployment-pays.mdx:85",
+        "content/marines/.trash-deployment-pays.mdx:86",
+        "content/marines/.trash-deployment-pays.mdx:87",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:116",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:118",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:120",
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:122"
+      ],
+      "12 months": [
+        "content/marines/.trash-deployment-pays.mdx:113",
+        "content/marines/illness-or-injury-payments.mdx:186"
+      ],
+      "5 days": [
+        "content/marines/.trash-deployment-pays.mdx:293",
+        "content/marines/.trash-deployment-pays.mdx:295"
+      ],
+      "$50000": [
+        "content/marines/combat-zone-tax-exclusion.mdx:65"
+      ],
+      "$750": [
+        "content/marines/combat-zone-tax-exclusion.mdx:66"
+      ],
+      "$9.16": [
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:50"
+      ],
+      "15 days": [
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:106"
+      ],
+      "23 days": [
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:120"
+      ],
+      "6 days": [
+        "content/marines/hostile-fire-and-imminent-danger-pay.mdx:205"
+      ],
+      "5 months": [
+        "content/marines/special-leave-accrual.mdx:206"
+      ]
+    }
+  },
+  {
+    "topic": "idt",
+    "values": {
+      "2 days": [
+        "content/admin/iandi-muster-duty.mdx:145"
+      ],
+      "12 months": [
+        "content/leader/personnel-unsat-participation-counseling.mdx:34"
+      ],
+      "$500": [
+        "content/marines/dts-overview.mdx:128"
+      ],
+      "14 days": [
+        "content/marines/officers-uniform-and-equipment-allowance.mdx:4",
+        "content/marines/officers-uniform-and-equipment-allowance.mdx:31"
+      ],
+      "6 weeks": [
+        "content/marines/reserve-maternity-leave.mdx:27",
+        "content/marines/reserve-maternity-leave.mdx:52"
+      ],
+      "1 years": [
+        "content/marines/reserve-maternity-leave.mdx:27",
+        "content/marines/reserve-maternity-leave.mdx:204",
+        "content/marines/reserve-parental-leave.mdx:255"
+      ],
+      "8 weeks": [
+        "content/marines/reserve-maternity-leave.mdx:32",
+        "content/marines/reserve-maternity-leave.mdx:270"
+      ],
+      "270 days": [
+        "content/marines/reserve-pay-and-entitlements.mdx:154"
+      ],
+      "360 days": [
+        "content/marines/reserve-pay-and-entitlements.mdx:154"
+      ]
+    }
+  },
+  {
+    "topic": "leave days",
+    "values": {
+      "30 days": [
+        "content/admin/iandi-ready-reserve.mdx:90",
+        "content/marines/annual-leave.mdx:54",
+        "content/marines/annual-leave.mdx:63",
+        "content/marines/leave-problems-and-fixes.mdx:343",
+        "content/marines/pay-problems-and-fixes.mdx:121",
+        "content/marines/renewal-agreement-travel.mdx:61",
+        "content/marines/separation-pay-and-final-pay.mdx:68",
+        "content/marines/separation-pay-and-final-pay.mdx:201",
+        "content/marines/separation-pay-and-final-pay.mdx:232"
+      ],
+      "120 days": [
+        "content/marines/.trash-pay-review-les.mdx:92"
+      ],
+      "20 days": [
+        "content/marines/advance-and-excess-leave.mdx:68"
+      ],
+      "12.5 days": [
+        "content/marines/advance-and-excess-leave.mdx:78"
+      ],
+      "2.5 days": [
+        "content/marines/annual-leave.mdx:4",
+        "content/marines/annual-leave.mdx:335",
+        "content/marines/basic-pay.mdx:305",
+        "content/marines/reenlistments-and-extensions-overview.mdx:203",
+        "content/marines/separation-pay-and-final-pay.mdx:67",
+        "content/marines/special-leave-accrual.mdx:241"
+      ],
+      "90 days": [
+        "content/marines/annual-leave.mdx:30",
+        "content/marines/annual-leave.mdx:35"
+      ],
+      "60 days": [
+        "content/marines/annual-leave.mdx:62",
+        "content/marines/annual-leave.mdx:151",
+        "content/marines/annual-leave.mdx:153",
+        "content/marines/annual-leave.mdx:282",
+        "content/marines/special-leave-accrual.mdx:61"
+      ],
+      "2 days": [
+        "content/marines/annual-leave.mdx:143"
+      ],
+      "75 days": [
+        "content/marines/annual-leave.mdx:304",
+        "content/marines/leave-problems-and-fixes.mdx:335"
+      ],
+      "84 days": [
+        "content/marines/birth-and-adoption.mdx:32"
+      ],
+      "15 days": [
+        "content/marines/rr-and-srr-leave-programs.mdx:220"
+      ],
+      "10 days": [
+        "content/marines/special-leave-accrual.mdx:152"
+      ]
+    }
+  },
+  {
+    "topic": "parental leave",
+    "values": {
+      "84 days": [
+        "content/marines/birth-and-adoption.mdx:194",
+        "content/marines/military-parental-leave-program.mdx:4",
+        "content/marines/military-parental-leave-program.mdx:31",
+        "content/marines/military-parental-leave-program.mdx:73",
+        "content/marines/military-parental-leave-program.mdx:117",
+        "content/marines/military-parental-leave-program.mdx:207",
+        "content/marines/military-parental-leave-program.mdx:314",
+        "content/marines/pcs-orders-and-overview.mdx:312"
+      ],
+      "12 weeks": [
+        "content/marines/military-parental-leave-program.mdx:4",
+        "content/marines/military-parental-leave-program.mdx:31"
+      ],
+      "12 months": [
+        "content/marines/military-parental-leave-program.mdx:89"
+      ],
+      "168 days": [
+        "content/marines/military-parental-leave-program.mdx:176"
+      ]
+    }
+  },
+  {
+    "topic": "pft",
+    "values": {
+      "5 days": [
+        "content/leader/counseling-smart-goals.mdx:82"
+      ],
+      "1%": [
+        "content/marines/body-composition-reporting.mdx:185"
+      ],
+      "75%": [
+        "content/marines/jepes-junior-enlisted.mdx:131"
+      ],
+      "12.5%": [
+        "content/marines/jepes-junior-enlisted.mdx:145"
+      ],
+      "36 months": [
+        "content/marines/lateral-moves-program.mdx:289",
+        "content/marines/selective-retention-bonus-and-targeted-mos.mdx:528"
+      ]
+    }
+  },
+  {
+    "topic": "ptad",
+    "values": {
+      "10 days": [
+        "content/marines/permissive-tad.mdx:4",
+        "content/marines/permissive-tad.mdx:28",
+        "content/marines/permissive-tad.mdx:33",
+        "content/marines/permissive-tad.mdx:80",
+        "content/marines/permissive-tad.mdx:300",
+        "content/marines/permissive-tad.mdx:389"
+      ],
+      "120 days": [
+        "content/marines/permissive-tad.mdx:4",
+        "content/marines/permissive-tad.mdx:35",
+        "content/marines/permissive-tad.mdx:320"
+      ],
+      "90 days": [
+        "content/marines/permissive-tad.mdx:4",
+        "content/marines/terminal-leave.mdx:4"
+      ],
+      "5 days": [
+        "content/marines/permissive-tad.mdx:302"
+      ]
+    }
+  },
+  {
+    "topic": "sell-back",
+    "values": {
+      "60 days": [
+        "content/admin/s1g1-leave-liberty-and-administrative-absence-overview.mdx:92",
+        "content/admin/s1g1-leave-liberty-and-administrative-absence-overview.mdx:105",
+        "content/marines/annual-leave.mdx:335",
+        "content/marines/terminal-leave.mdx:4",
+        "content/marines/terminal-leave.mdx:74",
+        "content/marines/terminal-leave.mdx:175",
+        "content/marines/terminal-leave.mdx:186",
+        "content/marines/terminal-leave.mdx:311"
+      ],
+      "90 days": [
+        "content/marines/annual-leave.mdx:4",
+        "content/marines/special-leave-accrual.mdx:180"
+      ],
+      "30 days": [
+        "content/marines/annual-leave.mdx:298",
+        "content/marines/basic-pay.mdx:298",
+        "content/marines/separation-pay-and-final-pay.mdx:205",
+        "content/marines/separation-pay-and-final-pay.mdx:236",
+        "content/marines/terminal-leave.mdx:78",
+        "content/marines/terminal-leave.mdx:311"
+      ],
+      "10%": [
+        "content/marines/separation-payments.mdx:28"
+      ],
+      "2.5 days": [
+        "content/marines/special-leave-accrual.mdx:241"
+      ],
+      "$5000": [
+        "content/marines/terminal-leave.mdx:86"
+      ]
+    }
+  },
+  {
+    "topic": "srb",
+    "values": {
+      "$300000": [
+        "content/marines/.trash-special-pays.mdx:4"
+      ],
+      "$360000": [
+        "content/marines/.trash-special-pays.mdx:4",
+        "content/marines/.trash-special-pays.mdx:233",
+        "content/marines/enlisted-bonuses.mdx:34",
+        "content/marines/enlisted-bonuses.mdx:67",
+        "content/marines/selective-retention-bonus-and-targeted-mos.mdx:4",
+        "content/marines/selective-retention-bonus-and-targeted-mos.mdx:32",
+        "content/marines/selective-retention-bonus-and-targeted-mos.mdx:39",
+        "content/marines/selective-retention-bonus-and-targeted-mos.mdx:271",
+        "content/marines/selective-retention-bonus-and-targeted-mos.mdx:591"
+      ],
+      "28 years": [
+        "content/marines/.trash-special-pays.mdx:231",
+        "content/marines/enlisted-bonuses.mdx:65",
+        "content/marines/enlisted-bonuses.mdx:143"
+      ],
+      "$30000": [
+        "content/marines/.trash-special-pays.mdx:232",
+        "content/marines/.trash-special-pays.mdx:287",
+        "content/marines/enlisted-bonuses.mdx:66",
+        "content/marines/enlisted-bonuses.mdx:121"
+      ],
+      "$180000": [
+        "content/marines/.trash-special-pays.mdx:232",
+        "content/marines/enlisted-bonuses.mdx:66"
+      ],
+      "$200000": [
+        "content/marines/.trash-special-pays.mdx:244",
+        "content/marines/enlisted-bonuses.mdx:34",
+        "content/marines/enlisted-bonuses.mdx:78"
+      ],
+      "24 months": [
+        "content/marines/career-reenlistments-stap.mdx:379"
+      ],
+      "$50000": [
+        "content/marines/combat-zone-tax-exclusion.mdx:65",
+        "content/marines/combat-zone-tax-exclusion.mdx:220"
+      ],
+      "$30": [
+        "content/marines/enlisted-bonuses.mdx:4"
+      ],
+      "$105000": [
+        "content/marines/first-term-reenlistments-ftap.mdx:290"
+      ],
+      "2 years": [
+        "content/marines/pay-problems-and-fixes.mdx:315"
+      ],
+      "36 months": [
+        "content/marines/selective-retention-bonus-and-targeted-mos.mdx:4",
+        "content/marines/selective-retention-bonus-and-targeted-mos.mdx:32"
+      ],
+      "$259000": [
+        "content/marines/selective-retention-bonus-and-targeted-mos.mdx:275"
+      ]
+    }
+  },
+  {
+    "topic": "terminal leave",
+    "values": {
+      "90 days": [
+        "content/admin/s1g1-leave-liberty-and-administrative-absence-terminal-leave-processing.mdx:57",
+        "content/admin/s1g1-leave-liberty-and-administrative-absence-terminal-leave-processing.mdx:93",
+        "content/marines/awards-retirement-awards-and-dd214.mdx:179",
+        "content/marines/leave-submission-and-administration.mdx:176",
+        "content/marines/permissive-tad.mdx:4"
+      ],
+      "60 days": [
+        "content/admin/s1g1-leave-liberty-and-administrative-absence-terminal-leave-processing.mdx:94",
+        "content/marines/awards-retirement-awards-and-dd214.mdx:191",
+        "content/marines/terminal-leave.mdx:307"
+      ],
+      "120 days": [
+        "content/marines/awards-retirement-awards-and-dd214.mdx:70"
+      ],
+      "150 days": [
+        "content/marines/awards-retirement-awards-and-dd214.mdx:191",
+        "content/marines/awards-retirement-awards-and-dd214.mdx:242"
+      ]
+    }
+  },
+  {
+    "topic": "tle",
+    "values": {
+      "90 days": [
+        "content/marines/joining-a-unit.mdx:4"
+      ],
+      "21 days": [
+        "content/marines/joining-a-unit.mdx:371",
+        "content/marines/temporary-lodging-expense.mdx:60",
+        "content/marines/temporary-lodging-expense.mdx:169",
+        "content/marines/temporary-lodging-expense.mdx:201"
+      ],
+      "60 days": [
+        "content/marines/temporary-lodging-expense.mdx:76"
+      ]
+    }
+  }
+]

@@ -50,7 +50,7 @@ Pay reconciliation errors create overpayment debts routing through DoDFMR Vol 16
 ## Processing workflow
 
 1. Cut the pay stop at UA. The UD-MIPS UA transaction triggers the pay stop effective hour 1 of UA per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> UA transaction rules. The Marine forfeits pay and allowances for the UA period.
-2. Verify the BAH and BAS state. Dependents-eligible BAH continues during UA if dependents reside in the family residence and the Marine had a valid BAH-with-dependents authorization before UA per DoDFMR Vol 7A Chapter 26.
+2. Verify the BAH and BAS state. Per DoDFMR Vol 7A Chapter 26 paragraph 1, housing allowances are not authorized during UA not excused as unavoidable. Stop BAH for the unexcused UA period.
 3. Cut the deserter declaration pay state. The deserter declaration shifts the pay record. Back pay for the UA period stays forfeited per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Appendix B.
 4. Process forfeitures on apprehension. On return to military control, court-martial action and NJP forfeitures process through MCTFS punishment transactions per DoDFMR Vol 7A Chapters 48 and 49.
 5. Restart pay at RMC. The Marine restarts entitled pay effective the return date per the UD-MIPS RMC transaction. The S-1 chief verifies the start date and the BAH rate.
@@ -75,21 +75,21 @@ Pay reconciliation errors create overpayment debts routing through DoDFMR Vol 16
 - DD Form 458 Charge Sheet. Documents the charges driving court-martial action.
 - NAVMC 10132 NJP Record. Documents Article 15 punishment including forfeitures.
 - DD Form 2707 Confinement Order. Triggers the MCTFS confinement transaction.
-- Court-Martial Promulgating Order. The convening authority approval action triggering pay reduction or forfeiture.
+- Court-Martial Promulgating Order. Records the convening authority approval action. The date starts forfeitures for a summary court-martial only.
 
 ## Common pitfalls
 
 - Pay stop cut from the UA reporting date instead of UA hour 1. Pay continues into the UA period. Cut the pay stop effective hour 1 of UA per MCTFSPRIUM<Citation source="MCTFSPRIUM" />.
-- BAH-with-dependents stopped on UA. The dependents lose housing without basis. BAH-with-dependents continues during UA when dependents reside in the family residence per DoDFMR Vol 7A Chapter 26.
-- Forfeitures applied without the promulgating order. The convening authority action drives forfeiture timing. Apply forfeitures only after the promulgating order is signed per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 48 paragraph 480107.
+- BAH continued during unexcused UA. Per DoDFMR Vol 7A Chapter 26 paragraph 1, housing allowances are not authorized when the Marine is absent without leave and the absence is not excused as unavoidable.
+- Forfeitures started on the wrong date. The sentence announcement date drives forfeiture timing for general and special courts-martial. Start forfeitures 14 days after the sentence is announced, not on promulgating order signature, per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 48 paragraph 5.2.1. Summary court-martial forfeitures begin when the convening authority approves the forfeiture portion of the sentence.
 - NJP forfeitures exceed the maximum. Article 15 forfeitures cap at the maximum punishment limits in MCM Part V. Verify the forfeiture amount against the grade and the punishing officer authority per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 49.
 - Pay restart at RMC missed. The Marine restarts pay only at the next pay cycle. Cut the UD-MIPS RMC transaction the day of return.
 
 ## Decision points
 
-- BAH-with-dependents during UA. Dependents resident in the family residence keep the BAH-with-dependents rate during UA per DoDFMR Vol 7A Chapter 26. The S-1 chief verifies dependents residency before continuing or stopping BAH.
+- BAH during UA. Per DoDFMR Vol 7A Chapter 26 paragraph 1, BAH stops for unexcused UA. The S-1 chief verifies whether the command excused the absence as unavoidable before stopping or continuing BAH.
 - Pretrial versus post-trial confinement pay. Pretrial confinement holds full pay. Post-trial confinement applies the adjudged forfeitures and the reduction to E-1 if adjudged per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 48 paragraph 480105.
-- Allen credit and RCM 305(k) credit on forfeitures. Forfeiture timing runs from the date of the convening authority action, not from confinement entry. Allen credit and RCM 305(k) credit reduce confinement duration but do not shift forfeiture timing.
+- Allen credit and RCM 305(k) credit on forfeitures. Forfeiture timing runs from 14 days after the sentence is announced (convening authority approval for a summary court-martial), not from confinement entry. Allen credit and RCM 305(k) credit reduce confinement duration but do not shift forfeiture timing.
 
 ## Authority
 

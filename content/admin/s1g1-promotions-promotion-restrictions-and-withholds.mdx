@@ -24,7 +24,7 @@ references:
   - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
   - "NAVMC 3500.3E Manpower and Administration T-R Manual"
 performanceSteps:
-  - "Identify the restriction trigger (discipline, medical, performance, administrative)"
+  - "Identify the restriction trigger (discipline, performance, administrative)"
   - "Validate the restriction basis against Chapter 1 paragraph 1204"
   - "Route the Page 11 non-recommendation per MCO P1070.12K paragraph 4006"
   - "Update MCTFS with the restriction marker"
@@ -45,15 +45,13 @@ source:
 
 The S-1 chief owns the restriction screen per MCO P1400.32D<Citation source="MCO P1400.32D" /> Chapter 1 paragraph 1204 (Promotion Restrictions). The S-1 officer signs by direction on Page 11 non-recommendation entries. The commander signs the non-recommendation decision and the clearance memorandum. The promotions clerk maintains the unit restriction register.
 
-Source documents flow from NJP records, court-martial actions, MEB or PEB referrals, limited duty memoranda, adverse FITREP, low conduct or proficiency marks, weight control program (BCP) entries, and chain-of-command non-recommendation decisions. Restriction actions land in MCTFS as a promotion suspension marker. Outputs include the Page 11 non-recommendation per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6, the unit restriction register entry, and the clearance memorandum when applicable.
+Source documents flow from NJP records, court-martial actions, failed PFT or CFT records, weight control program (BCP) entries, and chain-of-command non-recommendation decisions. Restriction actions land in MCTFS as a promotion suspension marker. Outputs include the Page 11 non-recommendation per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6, the unit restriction register entry, and the clearance memorandum when applicable.
 
-Per MCO P1400.32D Chapter 1 paragraph 1204, restrictions cover discipline (NJP, court-martial), medical (limited duty, MEB, PEB), performance (failed PFT/CFT, adverse FITREP, low marks), and administrative (BCP, Page 11 non-recommendation) state. For officers, MCO 1400.31D<Citation source="MCO 1400.31D" /> sets the adverse information withhold (AIW) and promotion delay rules.
+Per MCO P1400.32D Chapter 1 paragraph 1204, restrictions cover discipline (NJP, court-martial), performance (failed PFT/CFT), and administrative (BCP, Page 11 non-recommendation) state. Per paragraph 1203.4a, the enlisted promotion system has no medical prerequisites. Hospitalization, temporary limited duty, and a pending PEB do not remove eligibility or selection outside the exceptions listed in paragraph 1203.4a. For officers, MCO 1400.31D<Citation source="MCO 1400.31D" /> sets the adverse information withhold (AIW) and promotion delay rules.
 
 ## Trigger events
 
 - NJP imposed or charges preferred against the Marine.
-- MEB or PEB referral or limited duty determination.
-- Adverse FITREP or low conduct/proficiency marks.
 - Failed PFT, CFT, body composition, or weight standards.
 - Chain-of-command non-recommendation decision.
 - Officer adverse information surfaces after selection.
@@ -61,7 +59,7 @@ Per MCO P1400.32D Chapter 1 paragraph 1204, restrictions cover discipline (NJP, 
 
 ## Processing workflow
 
-1. Identify the restriction trigger. Pull the discipline, medical, performance, or administrative event from the source system or memorandum.
+1. Identify the restriction trigger. Pull the discipline, performance, or administrative event from the source system or memorandum.
 2. Validate the restriction basis. Per MCO P1400.32D<Citation source="MCO P1400.32D" /> Chapter 1 paragraph 1204, confirm the event meets the restriction criteria.
 3. Route the Page 11 non-recommendation. Per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6 and MCO P1400.32D Chapter 1 paragraph 1205, draft, route, and file the Page 11.
 4. Update MCTFS. Submit the restriction transaction through UD-MIPS per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> per the restriction type.
@@ -86,8 +84,6 @@ Per MCO P1400.32D Chapter 1 paragraph 1204, restrictions cover discipline (NJP, 
 
 - NAVMC 118 (11) Administrative Remarks. Page 11 documenting non-recommendation, restriction, or clearance.
 - NJP Record (NAVPERS 1626/7 equivalent for Marines). Discipline source document.
-- Limited Duty Memorandum. Medical source document.
-- Adverse FITREP. Performance source document.
 - BCP Entry. Administrative source document.
 - Officer AIW Letter. Per MCO 1400.31D.
 
@@ -101,8 +97,8 @@ Per MCO P1400.32D Chapter 1 paragraph 1204, restrictions cover discipline (NJP, 
 
 ## Decision points
 
-- Discipline restriction duration. Per MCO P1400.32D<Citation source="MCO P1400.32D" /> Chapter 1 paragraph 1204, NJP duration tied to forfeiture and reduction periods. The S-1 officer routes per the NJP record.
-- Performance versus medical restriction. Adverse FITREP triggers performance restriction. Limited duty triggers medical restriction. The basis differs per Chapter 1 paragraph 1204. Match the documentation.
+- Discipline restriction duration. Per MCO P1400.32D<Citation source="MCO P1400.32D" /> Chapter 1 paragraph 1204, paragraph 1204.4j sets a fixed 3-month restriction from the date NJP is awarded. A punitive reduction to Pvt through Cpl adds the full time in grade requirement for the lower grade. The S-1 officer routes per the NJP record.
+- Medical state is not a restriction. Per MCO P1400.32D<Citation source="MCO P1400.32D" /> paragraph 1203.4a, hospitalization and temporary limited duty do not remove eligibility outside the exceptions listed in paragraph 1203.4a. Do not cut a restriction marker for limited duty or a PEB referral. Use the enumerated paragraph 1204.4 restrictions only.
 - Officer AIW versus enlisted restriction. Per MCO 1400.31D<Citation source="MCO 1400.31D" />, the officer process runs through MMPB with adverse information review. Enlisted runs through the chain and MMEA per MCO P1400.32D Chapter 1 paragraph 1204.
 
 ## Authority

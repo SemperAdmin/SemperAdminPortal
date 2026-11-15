@@ -38,7 +38,7 @@ performanceSteps:
   - "OIC LSST appoints LSST VWAC per paragraph 040904(B)(1)"
   - "TSO enters VWAP data in electronic case management per paragraph 040904(E)(3)"
   - "TSO reports DD Form distribution to IVWLO quarterly per paragraph 040904(E)(4)"
-  - "Trial counsel notifies victim of VLC right before interviews per paragraph 040904(F)(3)"
+  - "Trial counsel confirms VLC representation and routes notifications through the VLC per paragraph 040904(F)(3)"
   - "Trial counsel issues DD Form 2702 after preferral per paragraph 040904(F)(2)"
   - "Trial counsel notifies victims and witnesses at trial milestones per paragraph 040904(F)(3)"
   - "Trial counsel provides separate waiting area per paragraph 040904(F)(6)"
@@ -58,13 +58,13 @@ The Officer in Charge, Legal Services Support Team (LSST) appoints a Legal Servi
 
 Source documents flow from the preferral of charges, the trial counsel disposition record, the victim's notification election per DD Form 2702, the trial milestone schedule, the courtroom waiting area plan, the victim property log, the post-conviction record per DD Form 2703, the confinement adjudication record per DD Form 2704, the LSST data on DD Form distribution per paragraph 040904(F)(12), and the OJAG Code 46 handoff per paragraph 040904(F)(13)(b). Outputs include the appointed LSST VWAC, the electronic case management entries, the issued DD Forms 2702-2704, the documented victim notifications at each milestone, the provided separate waiting area, the returned victim property, the OJAG Code 46 contact information forwarding for appeal-election victims, and the audit trail.
 
-Per paragraph 040904(F)(3), trial counsel notifies victims of the right to seek assistance from a Victims Legal Counsel prior to conducting any interviews with the victim. Per paragraph 040904(F)(6), trial counsel provides a separate waiting area out of sight and hearing of the accused and defense witnesses. Per paragraph 040904(F)(11), trial counsel completes DD Form 2704 at the conclusion of every court-martial in which confinement is adjudged.
+Per paragraph 040904(F)(3), trial counsel determines at the earliest opportunity whether a Victims Legal Counsel represents any victim in the case and routes all required case notifications through the VLC. Per paragraph 040904(F)(6), trial counsel provides a separate waiting area out of sight and hearing of the accused and defense witnesses. Per paragraph 040904(F)(11), trial counsel completes DD Form 2704 at the conclusion of every court-martial in which confinement is adjudged.
 
 ## Trigger events
 
 - LSST stand-up triggering LSST VWAC appointment.
 - Charge sheet preferral triggering DD Form 2702 issuance.
-- Victim interview triggering VLC notification per paragraph 040904(F)(3).
+- New case assignment triggering the VLC representation check per paragraph 040904(F)(3).
 - Trial event or procedural milestone triggering notification per paragraph 040904(F)(3).
 - Courtroom proceeding requiring separate waiting area per paragraph 040904(F)(6).
 - Victim property in trial counsel possession requiring safeguarding per paragraph 040904(F)(9).
@@ -81,7 +81,7 @@ Per paragraph 040904(F)(3), trial counsel notifies victims of the right to seek 
 2. Enter VWAP data in electronic case management. Per paragraph 040904(E)(3), the TSO enters all VWAP data into the electronic military justice case management system.
 3. Report TSO quarterly data. Per paragraph 040904(E)(4), the TSO reports the total number of victims and witnesses provided DD Forms 2702 and 2703, and the total number electing prisoner status change notification via DD Form 2704, to the Installation VWLO quarterly.
 4. Assign LSST VWAC to Council. Per paragraph 040904(E)(5), the CTC, RTC, and STC of the LSST ensure each LSST VWAC is assigned to the Victim and Witness Assistance Council on installations the LSST supports.
-5. Notify victim of VLC right before interviews. Per paragraph 040904(F)(3), trial counsel notifies victims of the right to seek assistance from Victims Legal Counsel prior to any victim interview.
+5. Confirm VLC representation. Per paragraph 040904(F)(3), trial counsel determines at the earliest opportunity whether a VLC represents any victim in the case. When a VLC represents the victim, trial counsel provides all required case notifications through the VLC.
 6. Issue DD Form 2702 after preferral. Per paragraph 040904(F)(2), trial counsel or the LSST VWAC provides all victims and witnesses with DD Form 2702 (Court-Martial Information for Victims and Witnesses of Crime) and determines their elections as to those rights.
 7. Notify at trial milestones. Per paragraph 040904(F)(3), trial counsel provides timely notification of the required trial events and procedural milestones. If the victim is represented by VLC, notifications route through the VLC.
 8. Provide separate waiting area. Per paragraph 040904(F)(6), during court-martial proceedings, detailed trial counsel ensures victims, victim witness support personnel, and prosecution witnesses receive a waiting area separate from and out of sight and hearing of the accused and defense witnesses.
@@ -114,7 +114,7 @@ Per paragraph 040904(F)(3), trial counsel notifies victims of the right to seek 
 
 - LSST VWAC appointment missing. Per paragraph 040904(B)(1), the OIC LSST appoints in writing.
 - DD Form 2702 not provided after preferral. Per paragraph 040904(F)(2), trial counsel or LSST VWAC provides at preferral.
-- Trial counsel interviews victim without notifying of VLC right. Per paragraph 040904(F)(3), notification of VLC right runs prior to interviews.
+- Trial counsel skips the VLC representation check. Per paragraph 040904(F)(3), trial counsel confirms VLC representation at the earliest opportunity and routes notifications through the VLC.
 - Notifications not routed through VLC when victim has counsel. Per paragraph 040904(F)(3), the VLC carries the channel.
 - Separate waiting area not provided. Per paragraph 040904(F)(6), the waiting area separates from and is out of sight and hearing of the accused and defense witnesses.
 - Victim property not returned post-trial. Per paragraph 040904(F)(9), trial counsel returns property as soon as possible with due consideration of appeals.
