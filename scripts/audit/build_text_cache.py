@@ -1,10 +1,10 @@
 """Extract archive PDFs and DOCX to a page-marked text cache. Incremental by sidecar content_hash."""
-import json, sys
+import json, os, sys
 from pathlib import Path
 import pymupdf
 
 ARCHIVE = Path(r"E:\GunnyBot\Policies")
-CACHE = ARCHIVE / "_text"
+CACHE = Path(os.environ["AUDIT_TEXT_CACHE"]) if os.environ.get("AUDIT_TEXT_CACHE") else ARCHIVE / "_text"
 MARK = "\n\f[[page {n}]]\n"
 SKIP_DIRS = ("_text", "_quarantine", "_broken_pdfs")
 
@@ -43,22 +43,38 @@ def source_hash(src: Path) -> str:
         pass  # normal fallback, not logged
     return str(src.stat().st_mtime)
 
+def process(src: Path) -> str:
+    """Extract one source. Returns 'done', 'skipped', or 'failed'."""
+    rel = src.relative_to(ARCHIVE).as_posix()
+    out = cache_path(rel)
+    stamp = out.with_name(out.name + ".hash")
+    try:
+        h = source_hash(src)
+        if out.exists() and stamp.exists() and stamp.read_text() == h:
+            return "skipped"
+        extract(src, out); stamp.write_text(h)
+        return "done"
+    except Exception as e:  # broken PDFs and bad sidecars are logged, not fatal
+        print(f"FAIL {rel}: {e}", file=sys.stderr)
+        return "failed"
+
 def main(argv: list[str]) -> int:
-    done = skipped = failed = 0
-    for src in ARCHIVE.rglob("*"):
-        if src.suffix.lower() not in (".pdf", ".docx", ".md") or any(d in src.parts for d in SKIP_DIRS):
-            continue
-        rel = src.relative_to(ARCHIVE).as_posix()
-        out = cache_path(rel)
-        stamp = out.with_name(out.name + ".hash")
-        try:
-            h = source_hash(src)
-            if out.exists() and stamp.exists() and stamp.read_text() == h:
-                skipped += 1; continue
-            extract(src, out); stamp.write_text(h); done += 1
-        except Exception as e:  # broken PDFs and bad sidecars are logged, not fatal
-            failed += 1; print(f"FAIL {rel}: {e}", file=sys.stderr)
-    print(f"[audit:cache] extracted {done}, unchanged {skipped}, failed {failed}")
+    counts = {"done": 0, "skipped": 0, "failed": 0}
+    walk_errors: list[str] = []
+
+    def on_walk_error(err: OSError) -> None:
+        walk_errors.append(f"{err.filename}: {err.strerror or err}")
+
+    for root, dirnames, filenames in os.walk(ARCHIVE, onerror=on_walk_error):
+        dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
+        for name in filenames:
+            src = Path(root) / name
+            if src.suffix.lower() in (".pdf", ".docx", ".md"):
+                counts[process(src)] += 1
+    print(f"[audit:cache] extracted {counts['done']}, unchanged {counts['skipped']}, failed {counts['failed']}", flush=True)
+    if walk_errors:
+        print(f"[audit:cache] WALK ERRORS {len(walk_errors)} (first: {walk_errors[0]})", file=sys.stderr, flush=True)
+        return 1
     return 0
 
 if __name__ == "__main__":

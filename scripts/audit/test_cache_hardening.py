@@ -49,3 +49,24 @@ def test_per_file_failure_is_logged_and_counted(tmp_path, monkeypatch, capsys):
     captured = capsys.readouterr()
     assert "extracted 1, unchanged 0, failed 1" in captured.out
     assert "FAIL broken.pdf" in captured.err
+
+def test_env_override_sets_cache(tmp_path, monkeypatch):
+    custom = tmp_path / "custom-cache"
+    monkeypatch.setenv("AUDIT_TEXT_CACHE", str(custom))
+    tc = load("build_text_cache")
+    assert tc.CACHE == custom
+    assert tc.cache_path("MCO/x.pdf") == custom / "MCO" / "x.pdf.txt"
+
+def test_default_cache_under_archive_without_env(tmp_path, monkeypatch):
+    monkeypatch.delenv("AUDIT_TEXT_CACHE", raising=False)
+    tc = load("build_text_cache")
+    assert tc.CACHE == tc.ARCHIVE / "_text"
+
+def test_missing_archive_returns_nonzero(tmp_path, monkeypatch, capsys):
+    tc = load("build_text_cache")
+    monkeypatch.setattr(tc, "ARCHIVE", tmp_path / "does-not-exist")
+    monkeypatch.setattr(tc, "CACHE", tmp_path / "cache")
+    assert tc.main([]) == 1
+    captured = capsys.readouterr()
+    assert "extracted 0, unchanged 0, failed 0" in captured.out
+    assert "WALK ERRORS" in captured.err
