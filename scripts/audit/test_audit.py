@@ -95,3 +95,67 @@ def test_readability_checked_on_every_row(tmp_path, monkeypatch):
     entries = [{"sources": [{"readable": "unreadable", "file": "A/one.pdf", "unreadableFiles": ["A/two.pdf"], "amendments": []}],
                 "unresolved": [], "noArchiveSource": False, "hasRefs": True, "wave": 1}]
     assert "A/two.pdf" in sm.coverage(entries)
+
+
+# ---- Task 3: mechanical checks ----
+
+def _cancel_index():
+    am = load("amendments")
+    return am.build_index([
+        ("MARADMIN 251/26", "2026-05-01", "m251.pdf", "MARADMIN 251/26\nGENTEXT/REMARKS/1. MARADMIN 468/23 IS CANCELLED."),
+        ("MARADMIN 300/26", "", "m300.pdf", "GENTEXT/REMARKS/1. MARADMIN 150/24 IS CANCELLED."),
+        ("MARADMIN 301/26", "2026-06-01", "m301.pdf", "GENTEXT/REMARKS/1. MARADMIN 160/24 IS MODIFIED."),
+    ])
+
+
+def test_superseded_cancelled_ref_names_replacement():
+    sr = load("superseded_refs")
+    got = sr.check_ref("MARADMIN 468/23", _cancel_index())
+    assert got["proven"][0]["replacement"] == "MARADMIN 251/26"
+    assert got["proven"][0]["reason"] == "cancels"
+    assert got["unconfirmed"] == []
+
+
+def test_superseded_undated_cancel_is_unconfirmed_only():
+    sr = load("superseded_refs")
+    got = sr.check_ref("MARADMIN 150/24", _cancel_index())
+    assert got["proven"] == []
+    assert got["unconfirmed"][0]["replacement"] == "MARADMIN 300/26"
+
+
+def test_superseded_amend_is_not_a_cancellation():
+    sr = load("superseded_refs")
+    got = sr.check_ref("MARADMIN 160/24", _cancel_index())
+    assert got["proven"] == [] and got["unconfirmed"] == []
+
+
+def test_superseded_scan_text_reports_page_and_line():
+    sr = load("superseded_refs")
+    text = "intro\nSee MARADMIN 468/23 for details.\nAlso MARADMIN 251/26.\n"
+    out = sr.scan_text("content/x.mdx", text, _cancel_index())
+    assert [(o["page"], o["line"], o["ref"], o["replacement"]) for o in out["superseded"]] == [
+        ("content/x.mdx", 2, "MARADMIN 468/23", "MARADMIN 251/26")]
+    assert out["superseded"][0]["alsoCitesReplacement"] is True
+
+
+def test_contradictions_fsa_two_values():
+    cx = load("contradictions")
+    pages = {"content/a.mdx": "Intro\nFSA is paid at $250 per month.\n",
+             "content/b.mdx": "Text\nThe FSA rate is $300 a month for members.\n"}
+    out = cx.find_contradictions(pages)
+    assert len(out) == 1 and out[0]["topic"] == "fsa"
+    assert out[0]["values"] == {"$250": ["content/a.mdx:2"], "$300": ["content/b.mdx:2"]}
+
+
+def test_contradictions_agreeing_pages_are_silent():
+    cx = load("contradictions")
+    pages = {"a": "FSA is $300 monthly.", "b": "FSA pays $300 per month."}
+    assert cx.find_contradictions(pages) == []
+
+
+def test_contradictions_units_normalize():
+    cx = load("contradictions")
+    hits = cx.topic_hits("Parental leave is 12 weeks. Convalescent leave: 84 days. SRB cap 6 percent")
+    assert ("parental leave", "12 weeks") in hits
+    assert ("convalescent", "84 days") in hits
+    assert ("srb", "6%") in hits
