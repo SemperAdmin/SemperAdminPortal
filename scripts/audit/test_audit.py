@@ -307,7 +307,8 @@ def test_wave1_budget_cap_and_overflow_listing():
     over = {o["page"]: o["reason"] for o in overflow}
     assert sorted(placed + list(over)) == sorted(r["page"] for r in rows)
     assert not set(placed) & set(over)
-    assert over["c/k2.mdx"] and over["c/k3.mdx"] and "c/k1.mdx" in placed or "c/k1.mdx" in over
+    assert over["c/k2.mdx"] and over["c/k3.mdx"]
+    assert "c/k1.mdx" in placed
     assert all(o["reason"] for o in overflow)
 
 def test_wave1_keyword_page_joins_family_by_source():
@@ -315,3 +316,33 @@ def test_wave1_keyword_page_joins_family_by_source():
     rows = [_row("c/k1.mdx", "MCO 1050.3 J", "keyword"), _row("c/p.mdx", "MCO 1050.3 J", "leave-1050-3j")]
     clusters, overflow = sm.build_wave1(rows, lambda r: 10, page_cap=40, token_cap=10**9, budget=10)
     assert [c["id"] for c in clusters] == ["leave-1050-3j"] and not overflow
+
+
+def test_decorate_includes_non_primary_sources():
+    sm = load("source_map")
+    r = _row("c/a.mdx", "MCO 1001R.1L", "mcramm")
+    r["sources"].append({"id": "MARADMIN 1/20", "file": "MARADMINS/m1.pdf", "date": "2020-02-02",
+                         "amendments": [{"id": "MARADMIN 9/21", "date": "2021-01-01", "file": "MARADMINS/m9.pdf", "kind": "amends", "via": "direct"}]})
+    d = sm.decorate({"id": "x", "family": "mcramm", "rows": [r], "pageTokens": 1}, [], [])
+    got = {(f["file"], f["role"]) for f in d["sourceFiles"]}
+    assert got == {("MCO/MCO 1001R.1L.pdf", "baseDoc"), ("MARADMINS/m1.pdf", "companion"), ("MARADMINS/m9.pdf", "amendment")}
+    assert [f["date"] for f in d["sourceFiles"]] == ["2021-01-01", "2020-02-02", "2020-01-01"]
+    assert set(d["uncachedFiles"]) == {f["file"] for f in d["sourceFiles"]}
+
+def test_run_clusters_places_every_page_once(tmp_path, monkeypatch):
+    sm = load("source_map")
+    rows = [_row(f"c/p{i}.mdx", "MCO 1001R.1L", "mcramm") for i in range(3)]
+    rows += [_row(f"c/o{i}.mdx", "MCO 9999", "keyword") for i in range(2)]
+    rows += [_row(f"c/w2{i}.mdx", "MCO 8888", wave=2) for i in range(6)]
+    rows += [_row(f"c/w3{i}.mdx", "MCO 7777", wave=3) for i in range(6)]
+    for name, data in (("SOURCE_MAP_JSON", rows), ("SUPERSEDED_JSON", []), ("CONTRADICTIONS_JSON", [])):
+        f = tmp_path / (name + ".json"); f.write_text(__import__("json").dumps(data))
+        monkeypatch.setattr(sm, name, f)
+    monkeypatch.setattr(sm, "CLUSTERS_OUT", tmp_path / "out.json")
+    monkeypatch.setattr(sm, "REPO", tmp_path)
+    sm.run_clusters()
+    w = __import__("json").loads((tmp_path / "out.json").read_text())["waves"]
+    pages = [p["page"] for v in w.values() for c in v["clusters"] for p in c["pages"]]
+    assert len(pages) == len(set(pages)) == len(rows)
+    homes = {p["page"]: c["id"] for c in w["2"]["clusters"] for p in c["pages"]}
+    assert all(o["movedTo"] == homes[o["page"]] for o in w["1"]["overflow"]) and len(w["1"]["overflow"]) == 2

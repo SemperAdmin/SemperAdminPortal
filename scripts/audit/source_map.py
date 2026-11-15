@@ -719,9 +719,15 @@ def decorate(cluster: dict, superseded: list[dict], contradictions: list[dict]) 
         b = prim[sorted(counts, key=lambda i: (-counts[i], i))[0]]
         base = {"id": b["id"], "file": b["file"], "date": b.get("date")}
     entries: dict[str, dict] = {}
-    for s in prim.values():
+    allsrc: dict[str, dict] = {}
+    for r in rows:
+        for s in r["sources"]:
+            allsrc.setdefault(s["id"], s)
+    base_first = sorted(allsrc.values(), key=lambda s: 0 if base and s["id"] == base["id"] else 1)
+    for s in base_first:
         role = "baseDoc" if base and s["id"] == base["id"] else "companion"
         entries.setdefault(s["file"], {"role": role, "id": s["id"], "date": s.get("date"), "file": s["file"]})
+    for s in base_first:
         for a in s.get("amendments", []):
             entries.setdefault(a["file"], {"role": "amendment", "id": a["id"], "date": a.get("date"), "file": a["file"],
                                            "kind": a.get("kind"), "via": a.get("via")})
@@ -734,7 +740,7 @@ def decorate(cluster: dict, superseded: list[dict], contradictions: list[dict]) 
         else:
             src_tok += t
         source_files.append({**e, "path": str(tc.cache_path(e["file"])), "cached": t is not None})
-    base_amend = prim[base["id"]].get("amendments", []) if base else []
+    base_amend = allsrc[base["id"]].get("amendments", []) if base else []
     amends = sorted(({"id": a["id"], "date": a.get("date"), "file": a["file"], "kind": a.get("kind"), "via": a.get("via"),
                       **({"dateUnknown": True} if a.get("dateUnknown") else {})} for a in base_amend),
                     key=lambda a: (a["date"] or "", a["id"]), reverse=True)
@@ -754,7 +760,7 @@ def decorate(cluster: dict, superseded: list[dict], contradictions: list[dict]) 
 
 
 def run_clusters() -> int:
-    from datetime import datetime, timezone
+    from datetime import datetime
     entries = json.loads(SOURCE_MAP_JSON.read_text(encoding="utf-8"))
     superseded = json.loads(SUPERSEDED_JSON.read_text(encoding="utf-8"))
     superseded = superseded["superseded"] if isinstance(superseded, dict) else superseded
@@ -767,23 +773,32 @@ def run_clusters() -> int:
         return page_tok[r["page"]]
 
     waves: dict[str, dict] = {}
+    over1_pages: set[str] = set()
     lines = []
     for w in (1, 2, 3):
         rows = [e for e in entries if e["wave"] == w]
         if w == 1:
             cl, over = build_wave1(rows, tokens_of)
         else:
+            if w == 2:
+                rows = rows + [e for e in entries if e["page"] in over1_pages]
             cl, over = build_generic(rows, tokens_of), []
         deco = [decorate(c, superseded, contradictions) for c in cl]
+        if w == 1:
+            over1_pages = {o["page"] for o in over}
+        if w == 2:
+            home = {p["page"]: c["id"] for c in deco for p in c["pages"]}
+            for o in waves["1"]["overflow"]:
+                o["movedTo"] = home[o["page"]]
         waves[str(w)] = {"clusters": deco, "overflow": over}
         sizes = sorted((len(c["pages"]) for c in deco), reverse=True)
-        lines.append(f"wave {w}: {len(rows)} pages, {len(deco)} clusters, overflow {len(over)}, "
+        lines.append(f"wave {w}: {sum(len(c['pages']) for c in deco)} pages, {len(deco)} clusters, overflow {len(over)}, "
                      f"largest {sizes[0] if sizes else 0}, max tokenEstimate {max((c['tokenEstimate'] for c in deco), default=0)}")
         if w == 1:
             lines += [f"  {c['id']:28s} {len(c['pages']):3d} pages  pageTok {c['pageTokens']:7d}  tokenEstimate {c['tokenEstimate']:8d}  "
                       f"amend {len(c['amendments']):3d}  superseded {len(c['supersededCandidates']):3d}  "
                       f"contra {len(c['contradictions'])}  uncached {len(c['uncachedFiles'])}" for c in deco]
-    out = {"generated": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "waves": waves}
+    out = {"generated": datetime.now().strftime("%Y-%m-%d"), "waves": waves}
     CLUSTERS_OUT.write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     print("\n".join(lines))
     print(f"[audit:clusters] wrote {CLUSTERS_OUT.relative_to(REPO).as_posix()}; wave 1 overflow {len(waves['1']['overflow'])}")
