@@ -1,7 +1,7 @@
 ---
 title: "EDFR Processing and Failure Resolution"
 slug: "edfr-processing"
-summary: "The Electronic Diary Feedback Report (EDFR) confirms which UD/MIPS transactions processed and which failed. Daily EDFR review catches failures before they become audit findings or pay errors."
+summary: "The Electronic Diary Feedback Report (EDFR) confirms which UD/MIPS transactions processed and which failed. Cycle-by-cycle EDFR review catches failures before they become audit findings or pay errors."
 roles: ["admin", "leader", "commander"]
 lastVerified: "2026-05-01"
 unitType: "s1-g1"
@@ -19,7 +19,7 @@ references:
   - "MCTFSCODESMAN Marine Corps Total Force System Codes Manual"
   - "MCO P1070.12 Marine Corps Individual Records Administration Manual (IRAM)"
 performanceSteps:
-  - "Pull EDFR daily from MCTFS"
+  - "Pull the EDFR each MCTFS cycle"
   - "Identify successful and failed transactions"
   - "Investigate each failure"
   - "Determine corrective action"
@@ -36,7 +36,7 @@ source:
 
 ## What the EDFR Is
 
-The Electronic Diary Feedback Report (EDFR) is the daily MCTFS report showing which UD/MIPS transactions processed successfully and which failed. Per MCTFSPRIUM, S-1 admin reviews the EDFR daily to catch failures before they become persistent problems.
+The Electronic Diary Feedback Report (EDFR) is the per-cycle MCTFS report showing which UD/MIPS transactions processed successfully and which failed. Per MCTFSPRIUM 12-120303<Citation source="MCTFSPRIUM 12-120303" />, S-1 admin views each cycle DFR the day the cycle becomes available, or the first working day after a weekend or holiday, and accounts for every cycle to catch failures before they become persistent problems.
 
 The EDFR is the safety net. Without it, failed transactions go undetected. Failed transactions cause.
 
@@ -51,7 +51,7 @@ After UD/MIPS transaction batch submission.
 
 1. MCTFS attempts to process each transaction
 2. Successful transactions update the system of record
-3. Failed transactions stay in pending status
+3. Failed transactions reject to DFR Part II and need correction on a new unit diary
 4. EDFR generates showing both outcomes
 5. S-1 reviews EDFR and addresses failures
 
@@ -59,7 +59,13 @@ The cycle is: submit, process, EDFR, correct, resubmit, EDFR.
 
 ## EDFR Contents
 
-The EDFR contains.
+The EDFR has three parts per MCTFSPRIUM 12-120303 paragraph 1.
+
+- Part I lists the unit diaries processed in the cycle. Compare each diary transaction total to the Transaction Counter Page of the unit diary.
+- Part II lists error messages for rejected transactions from your unit diaries. Audit each one, annotate the corrective action with the unit diary number and date, and ask the regional MISSO for help when unit efforts fail.
+- Part III lists advisory messages not tied to a particular unit diary. Annotate each with the action taken, or NAR when no action is required.
+
+The sections below break out what the parts carry.
 
 ### Transaction-Level Detail
 
@@ -92,11 +98,11 @@ Roll-up data for the batch.
 
 ## Performance Steps
 
-### Step 1 - Pull EDFR Daily
+### Step 1 - Pull the EDFR Each Cycle
 
-Build EDFR review into daily routine.
+Build EDFR review into the cycle routine.
 
-- First action of the workday: pull yesterday's EDFR
+- First action: view the DFR the day the cycle becomes available, or the first working day after a weekend or holiday
 - Second action: review failures
 - Third action: address failures before processing new transactions
 
@@ -246,13 +252,13 @@ EDFR review compliance is audit-relevant.
 - Patterns of failures suggest systemic issues
 - Documentation of corrective actions required
 
-Daily discipline on EDFR prevents audit findings.
+Cycle-by-cycle discipline on EDFR prevents audit findings.
 
 ## Common EDFR Review Errors
 
 These hit at the section level.
 
-1. **EDFR not pulled daily.** Failures accumulate undetected. Catches happen during quarterly review or audit.
+1. **EDFR not pulled each cycle.** Failures accumulate undetected. Catches happen during quarterly review or audit.
 2. **EDFR pulled but not reviewed.** Failures noted but not investigated. Same effect as not pulling.
 3. **Failures investigated but not corrected.** Investigation does not equal correction. Submit fix.
 4. **Corrections submitted without verification.** Resubmitted but next EDFR not checked. May still be failing.
@@ -262,7 +268,7 @@ These hit at the section level.
 
 For section-level EDFR discipline.
 
-- EDFR review on a specific schedule (daily start of workday)
+- EDFR review on a specific schedule (each cycle, the day it posts or the next working day)
 - Failure investigation within same business day
 - Corrections submitted within 24 hours
 - Verification within 5 business days
@@ -273,5 +279,5 @@ For section-level EDFR discipline.
 EDFR review affects every transaction processed.
 
 - **Marines** see correct MCTFS data when EDFR review catches failures.
-- **Leaders** at S-1 perform daily EDFR review.
+- **Leaders** at S-1 perform EDFR review each cycle.
 - **Commanders** depend on accurate MCTFS data for unit reporting and member actions.

@@ -33,11 +33,11 @@ references:
   - "NAVMC 3500.3E Manpower and Administration T-R Manual"
 performanceSteps:
   - "Validate MOL access for RS, RO, MRO before reporting occasion"
-  - "Open the report in MOL within 30 days of reporting period start"
+  - "Set the billet description and counsel the MRO within 30 days of reporting period start"
   - "RS prepares Sections D through L in MOL"
-  - "RS digital signature submits to RO queue"
-  - "RO reviews and digital signature submits to MRO"
-  - "MRO acknowledges report through MOL"
+  - "RS digital signature informs the MRO and routes to the RO"
+  - "RO reviews and digital signature completes the chain on a non-adverse report"
+  - "MRO signs section J item 2 on adverse reports only"
   - "Submit to MMSB per Chapter 7 within 30-day normal or 60-day adverse window"
   - "Track MMSB rejection codes and resubmit corrections"
   - "Verify OMPF posting after MMSB acceptance"
@@ -49,7 +49,7 @@ source:
 
 ## Role and responsibility
 
-The Reporting Senior (RS) prepares the FITREP in MOL within the 30-day submission window after the end of the reporting period per MCO 1610.7B<Citation source="MCO 1610.7B" /> Chapter 3 paragraph 2. The Reviewing Officer (RO) reviews and digitally signs through MOL. The Marine Reported On (MRO) acknowledges through MOL self-service. The S-1 chief tracks the report through MOL submission to MMSB acceptance. The PES clerk operates MOL daily and processes rejections.
+The Reporting Senior (RS) prepares the FITREP in MOL within the 30-day submission window after the end of the reporting period per MCO 1610.7B<Citation source="MCO 1610.7B" /> Chapter 3 paragraph 2. The Reviewing Officer (RO) reviews and digitally signs through MOL. The Marine Reported On (MRO) signs section J item 2 only when the report is adverse. The S-1 chief tracks the report through MOL submission to MMSB acceptance. The PES clerk operates MOL daily and processes rejections.
 
 Source documents flow from the reporting occasion trigger, the RS draft narrative for Sections A through L, the chain digital signatures, the MMSB acceptance response, and any rejection codes. MOL FITREP actions land in MOL through MMSB to OMPF. Outputs include the certified MOL submission, the MMSB acceptance, the OMPF posting, and the unit PES tracking register.
 
@@ -58,8 +58,8 @@ Per MCO 1610.7B<Citation source="MCO 1610.7B" /> Chapter 3 paragraph 2 (Submissi
 ## Trigger events
 
 - Reporting occasion identified triggering MOL report creation.
-- RS opens report in MOL within the first 30 days of the reporting period per MCO 1610.7B<Citation source="MCO 1610.7B" /> Chapter 3 paragraph 2.
-- Temporary duty status reaches 31 days requiring FD report per MCO 1610.7B<Citation source="MCO 1610.7B" /> Chapter 3.
+- RS sets the billet description and counsels the MRO within the first 30 days of the reporting period per MCO 1610.7B<Citation source="MCO 1610.7B" /> Chapter 2 paragraph 3c(2).
+- Temporary duty of 31 days or longer starts under a different RS, requiring a TD report from the parent command per MCO 1610.7B<Citation source="MCO 1610.7B" /> Chapter 3 paragraph 4f. The FD report follows at return.
 - 90-day observation threshold reached per Chapter 3.
 - RO change triggers CH report timing per Chapter 3.
 - MMSB rejection received requiring correction.
@@ -68,11 +68,11 @@ Per MCO 1610.7B<Citation source="MCO 1610.7B" /> Chapter 3 paragraph 2 (Submissi
 ## Processing workflow
 
 1. Validate MOL access. The S-1 chief confirms RS, RO, and MRO each hold current MOL access. Per MCO 5239.2B<Citation source="MCO 5239.2B" />, access requires an approved system access request. MOL rides MCTFS access, so from 21 September 2026 a new or modified request routes through DoD E-ICAM per PAA 02-26<Citation source="PAA 02-26" />.
-2. Open the report in MOL. The RS opens within the first 30 days of the reporting period per MCO 1610.7B<Citation source="MCO 1610.7B" /> Chapter 3 paragraph 2 (RS expectations set within the first 30 days).
+2. Open the report in MOL and set the billet description. Within the first 30 days of the reporting period, the RS sets section B and counsels the MRO per MCO 1610.7B<Citation source="MCO 1610.7B" /> Chapter 2 paragraph 3c(2).
 3. RS prepares Sections D through L. Per MCO 1610.7B<Citation source="MCO 1610.7B" /> Chapter 4 paragraphs 8 through 16, draft each section per the order.
-4. RS digital signature. The RS signs in MOL and submits to RO queue.
-5. RO reviews and signs. Per MCO 1610.7B<Citation source="MCO 1610.7B" /> Chapter 2 paragraph 4, the RO reviews. RO digital signature submits to MRO.
-6. MRO acknowledges. The MRO views in MOL self-service and acknowledges. Per Chapter 5 paragraph 9, the MRO is permitted to submit a rebuttal for adverse reports.
+4. RS digital signature. The RS signs in MOL and informs the MRO that the RS portion is complete per MCO 1610.7B<Citation source="MCO 1610.7B" /> Chapter 4 paragraph 14c(1). The report then routes to the RO.
+5. RO reviews and signs. Per MCO 1610.7B<Citation source="MCO 1610.7B" /> Chapter 2 paragraph 4, the RO reviews. RO digital signature completes the chain for a non-adverse report.
+6. MRO acknowledgment on adverse reports only. The MRO signs section J item 2 only when the report is adverse per Chapter 4 paragraph 14d and Chapter 5. Per Chapter 5 paragraph 9, the MRO is permitted to submit a rebuttal for adverse reports. A non-adverse report needs no MRO signature.
 7. Submit to MMSB. Per MCO 1610.7B<Citation source="MCO 1610.7B" /> Chapter 3 paragraph 2, normal reports submit within 30 days of the end of the reporting period. Adverse reports submit within 60 days per Chapter 5 paragraph 5.
 8. Track MMSB rejection codes. Pull rejection messages and route corrections. Common rejection reasons include missing data fields, occasion code mismatch, observation period gap, missing signatures.
 9. Verify OMPF posting. After MMSB acceptance, the report posts to OMPF. Confirm via MOL Self-Service or PES portal.
@@ -84,7 +84,7 @@ Per MCO 1610.7B<Citation source="MCO 1610.7B" />, the operational timeline runs 
 
 - Reporting period start. RS sets expectations with MRO within the first 30 days per Chapter 4 references.
 - 90-day minimum observation. Per Chapter 3 paragraph 5, observation reports require 90-day minimum unless an exception applies.
-- 31 days temporary duty. Per Chapter 3, temporary duty lasting 31 days or longer requires an FD report.
+- 31 days temporary duty. Per Chapter 3 paragraph 4f, the parent command submits a TD report when the Marine starts 31 or more days of temporary duty under a different RS. The FD report follows at return.
 - 89-day rule. Per Chapter 3, exception to policy applies for periods of 89 days or less. RSs shall not write reports under specific circumstances at this threshold.
 - Reporting period end. Day 0 of submission window.
 - Day 30 submission deadline. Normal report deadline at HQMC per Chapter 3 paragraph 2 (Ensure completed fitness reports arrive at HQMC within 30 days of the end of the reporting period).
@@ -107,7 +107,7 @@ Per MCO 1610.7B<Citation source="MCO 1610.7B" />, the operational timeline runs 
 
 - NAVMC 10835 Marine Fitness Report. Electronic format in MOL.
 - MOL Digital Signature Block. Per MCO 5239.2B cybersecurity rules.
-- MRO Acknowledgment Record. Captured in MOL.
+- MRO Acknowledgment Record. Adverse reports only, section J item 2.
 - Rejection Notice. Generated by MMSB on return.
 
 ## Common pitfalls
@@ -115,7 +115,7 @@ Per MCO 1610.7B<Citation source="MCO 1610.7B" />, the operational timeline runs 
 - MOL access lapses for the RS or RO before submission. The chain stalls. Validate access per MCO 5239.2B<Citation source="MCO 5239.2B" /> before reporting occasion.
 - Submission past 30 days. Per MCO 1610.7B<Citation source="MCO 1610.7B" /> Chapter 3 paragraph 2, normal reports arrive at HQMC within 30 days. Late submission triggers tracking impact.
 - Adverse report submitted past 60 days. Per Chapter 5 paragraph 5, adverse timing is strict. Track on a tickler.
-- MRO does not acknowledge. The report stalls. Brief the MRO at preparation start on the acknowledgment requirement.
+- MRO refuses to acknowledge an adverse report. Per Chapter 5 paragraph 6g(5)(b), the report proceeds and the order treats it as accurate as written. Brief the MRO at preparation start on the adverse acknowledgment step.
 - Rejection codes ignored. The report sits without resubmission. Pull MMSB rejection messages on a fixed cycle and route corrections.
 - Digital signature workflow broken by personnel change. Per Chapter 2 paragraph 10 (Special Situations), refresh the chain at every personnel turnover.
 

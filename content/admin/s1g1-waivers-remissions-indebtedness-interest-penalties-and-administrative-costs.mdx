@@ -39,14 +39,14 @@ Interest, penalty, and administrative costs add to the principal debt. A small d
 - Debt sits delinquent past 90 days, triggering penalty assessment.
 - DFAS calculates monthly interest, penalty, and administrative cost.
 - Marine inquires on the total debt balance at the waiver remission application.
-- Treasury Current Value of Funds Rate changes (annual or as published).
+- A new debt starts interest accrual. The CVFR in effect on the accrual start date applies.
 - Marine elects voluntary repayment and requests the total balance with interest, penalty, and administrative cost.
 
 ## Interest, penalty, and administrative cost framework
 
 DoDFMR Vol 16 Chapter 7 implements 31 USC 3717 at the DoD level. The three components apply to delinquent debt:
 
-- Interest. Accrues from the date of the initial demand letter at the Treasury Current Value of Funds Rate (CVFR). The CVFR is published annually by Treasury per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 7 paragraph 070201.
+- Interest. Accrues from the date of the initial demand letter at the Treasury Current Value of Funds Rate (CVFR). The CVFR in effect when interest starts stays fixed for the life of the debt per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 7 paragraph 3.2.4.
 - Penalty. Assessed at 6 percent per annum on debt delinquent more than 90 days per 31 USC 3717 and DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 7 paragraph 070301.
 - Administrative costs. Recovered for the cost of processing and collecting the delinquent debt. DFAS Component administrative cost schedule applies per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 7 paragraph 070401.
 
@@ -55,7 +55,7 @@ The three components accrue separately and are reported on the DFAS debt stateme
 ## Processing workflow
 
 1. Identify the interest accrual start date. The date of the initial demand letter is the interest accrual start per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 7 paragraph 070201.
-2. Pull the current Treasury CVFR. The Treasury publishes the CVFR annually. Apply the CVFR effective on the interest accrual start date.
+2. Pull the Treasury CVFR in effect on the interest accrual start date. The rate stays fixed for the life of the debt.
 3. Calculate accrued interest. The accrued interest equals the principal multiplied by the CVFR rate multiplied by the time elapsed in years since the accrual start date.
 4. Track the 90-day penalty threshold. The penalty applies on debt delinquent more than 90 days from the initial demand letter date. Calculate penalty at 6 percent per annum from the 90-day mark.
 5. Calculate administrative costs. Apply the DFAS Component administrative cost schedule per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 7 paragraph 070401.
@@ -70,7 +70,7 @@ The three components accrue separately and are reported on the DFAS debt stateme
 ### Systems
 
 - DFAS Debt Statement. The DFAS-issued statement reflecting the principal and the interest, penalty, and administrative cost components.
-- Treasury CVFR Publication. Treasury annual publication of the Current Value of Funds Rate.
+- Treasury CVFR Publication. Treasury publication of the Current Value of Funds Rate.
 - MCTFS. Reflects the principal debt entry.
 - IPAC Reconciliation Tool. Internal IPAC verification of DFAS calculations.
 
@@ -86,7 +86,7 @@ The three components accrue separately and are reported on the DFAS debt stateme
 - Interest accrual start date wrong. The IPAC pay clerk uses the debt creation date instead of the demand letter date. Apply the demand letter date as the accrual start per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 7 paragraph 070201.
 - Penalty applied before 90 days delinquent. The penalty applies only on debt delinquent more than 90 days per 31 USC 3717. Verify the 90-day threshold before assessment.
 - Administrative cost not separated from interest. The three components accrue separately and report separately on the DFAS debt statement. The IPAC pay clerk separates the components.
-- Treasury CVFR misapplied. The IPAC pay clerk applies a stale CVFR rate. Verify the current Treasury CVFR publication at every accrual cycle.
+- Treasury CVFR misapplied. The IPAC pay clerk applies a later CVFR to an existing debt. Keep the rate in effect when interest started for the life of the debt. Do not refresh it each accrual cycle.
 - Waiver remission application without component breakdown. The DD Form 2789 reflects only the principal. Include the accrued interest, penalty, and administrative costs in the application per DoDFMR Vol 16<Citation source="DoDFMR Vol 16" /> Chapter 7.
 
 ## Decision points

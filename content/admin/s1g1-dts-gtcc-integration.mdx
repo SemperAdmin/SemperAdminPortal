@@ -3,7 +3,7 @@ title: "DTS GTCC Integration - S-1 Procedural Page"
 slug: "gtcc-integration"
 summary: "Integrate the Government Travel Charge Card with DTS per MCO 4600.40C, DODI 5154.31 Volume 4, and DTS Regulations section 030604 covering IBA issuance, split disbursement, CBA reconciliation, and delinquency action."
 roles: ["admin", "leader", "commander"]
-lastVerified: "2026-05-11"
+lastVerified: "2026-11-15"
 unitType: "s1-g1"
 topic: "dts"
 function: "OPER"
@@ -37,8 +37,8 @@ performanceSteps:
   - "Run delinquency review with the APC monthly"
   - "Coordinate IBA delinquency notification with the AO and ODTA"
   - "Document GTCC misuse through the chain of command"
-  - "Submit MCO 4600.40C required reports per Enclosure 2"
-  - "Process card cancellation on separation or removal"
+  - "Pull, reconcile, and retain MCO 4600.40C required reports each billing cycle per Enclosure 2"
+  - "Set Closed Temporary Block on separation or removal"
 source:
   title: "DTS GTCC Integration - MCO 4600.40C and DODI 5154.31 Vol 4"
   publisher: "Headquarters Marine Corps Programs and Resources (RFF)"
@@ -60,7 +60,7 @@ Per DODI 5154.31 Vol 4<Citation source="DODI 5154.31" />, eligible members of th
 - GTCC vendor delinquency notification arrives.
 - CBA monthly invoice arrives.
 - Unsubmitted Voucher Report cycle flags GTCC charges sitting without voucher.
-- Separation triggers card cancellation.
+- Separation triggers Closed Temporary Block.
 - IGMC GTCC FA inspection or Defense Travel System FA inspection notice arrives.
 
 ## Processing workflow
@@ -71,11 +71,11 @@ Per DODI 5154.31 Vol 4<Citation source="DODI 5154.31" />, eligible members of th
 4. Process Scheduled Partial Payments (SPP). Per DTS Regs section 030603, travel longer than 45 days supports an SPP request. After AO approval, DTS schedules a payment every 30 days to the IBA vendor to avoid account delinquency and suspension.
 5. Process Non-ATM Advances. Per DTS Regs section 030602, the traveler requests a non-ATM advance through the authorization. The AO approves at least 10 days before departure to support EFT to the traveler's financial institution.
 6. Reconcile CBA invoices. Per DTS Regs section 030402 and MCO 4600.40C<Citation source="MCO 4600.40C" /> Enclosure 2 Appendix C, the CBA-S reconciles the monthly CBA invoice against authorized expenses charged to CBAs. The CBA-S who certifies the invoice for payment carries Certifying Officer appointment.
-7. Run delinquency review. Per MCO 4600.40C<Citation source="MCO 4600.40C" /> Enclosure 2 Appendix B paragraph 4.b(1) and aging reports IV through IX, the APC pulls the IBA Listing Report monthly and the aging reports per the published cycle.
+7. Run delinquency review. Per MCO 4600.40C<Citation source="MCO 4600.40C" /> Enclosure 2 Appendix B paragraph 4.b(1) and aging reports IV through IX, the APC pulls, reconciles, and retains the IBA Listing Report and the aging reports after each monthly billing cycle.
 8. Coordinate delinquency notification. Per Chapter 6 paragraph 5.a of MCO 4650.39A<Citation source="MCO 4650.39A" />, the ODTA notifies the AO and APC of outstanding travel vouchers. Voucher submission settles GTCC charges through split disbursement.
 9. Document misuse. Per MCO 4600.40C, the commander reports card misuse, abuse, or fraud through the chain of command. The unit uses the Department of Defense Information Systems for Security (DISS) for incident reporting and updates DISS with the final disciplinary action.
-10. Submit required reports. Per MCO 4600.40C<Citation source="MCO 4600.40C" /> Enclosure 1 Chapter 1 paragraph 1.b, paragraph 2, and Enclosure 2 Appendix B paragraph 4.b(1), submit Reports I (Program Review), II (Root Cause Analysis with PIP), III (IBA Listing Report), IV through IX (aging and delinquency), and X (CBA Aging Analysis Report).
-11. Cancel card on separation. The APC cancels the IBA on separation. The DMM clears the IBA-side delinquency before the cancellation where the balance permits.
+10. Pull required reports. Per MCO 4600.40C<Citation source="MCO 4600.40C" /> Enclosure 2 Appendix B paragraph 4a, APCs pull, reconcile, and retain the mandatory reports after each monthly billing cycle, including III (IBA Listing Report) and IV through IX (aging and delinquency). They do not submit them up the chain. Report I (Program Review) runs every two years and Report II (Root Cause Analysis with PIP) goes to the CPM after a Red metric, per Enclosure 2 Chapter 1 paragraph 2.
+11. Close the card on separation. Per MCO 4600.40C Appendix B paragraph 9b, the APC sets the account to Closed Temporary Block on separation. The commander ensures the balance is paid. The DMM owns DTS debt only.
 
 ## Systems of record and forms
 
@@ -84,7 +84,7 @@ Per DODI 5154.31 Vol 4<Citation source="DODI 5154.31" />, eligible members of th
 - GTCC vendor portal. Citibank or successor.
 - Defense Travel System (DTS). Holds split disbursement framework per section 030604.
 - DoD Information Systems for Security (DISS). Incident reporting per MCO 4600.40C.
-- MCO 4600.40C report packages I through X. Submitted per Enclosure 2.
+- MCO 4600.40C report packages I through X. Pulled, reconciled, and retained per Enclosure 2.
 - CBA invoice reconciliation tool. Driven by the CBA-S per DTS Regs section 030402.
 
 ### Forms
@@ -113,7 +113,7 @@ Per DODI 5154.31 Vol 4<Citation source="DODI 5154.31" />, eligible members of th
 - Standard IBA versus Restricted card. Per 10 U.S.C. 2784a, the applicant's authorization for the creditworthiness evaluation drives the card type.
 - SPP versus single payment voucher. Per DTS Regs section 030603, travel longer than 45 days routes through SPP.
 - Non-ATM advance versus no advance. Per section 030602, the traveler requests the advance only when the IBA does not cover up-front expenses. Per DODI 5154.31 Vol 4, the IBA is the primary payment method.
-- IBA cancellation timing on separation. The APC times the cancellation against the final voucher submission and the delinquency clearance.
+- IBA closure timing on separation. The APC sets Closed Temporary Block at separation and the commander ensures the balance is paid. The DMM clears DTS debt only.
 
 ## Authority
 

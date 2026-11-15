@@ -30,7 +30,7 @@ performanceSteps:
   - "Compute timeliness metrics (days from notification to sponsor assignment)"
   - "Compute welcome aboard letter issuance rate per Enclosures (2) and (4)-(6)"
   - "Compute inbound brief completion rate"
-  - "Compute Page 11 documentation rate"
+  - "Compute sponsor training documentation rate"
   - "Build the unit metrics report using Enclosure (3) as the template"
   - "Brief the commander on the metrics cycle"
   - "Submit data to HQMC MF per paragraph 4.b.(2)"
@@ -44,13 +44,13 @@ source:
 
 The SC builds the unit utilization metrics report per MCO 1320.11H<Citation source="MCO 1320.11H" /> Enclosure (3) (Sample Sponsorship Program Utilization Metrics). The unit commanding officer reviews and signs the metrics report per paragraph 4.b.(6) (Unit Commanding Officers). The installation commander rolls up unit metrics for installation-level accountability per paragraph 4.b.(5). HQMC MF Director per paragraph 4.b.(2) aggregates strategic-level metrics. The S-1 chief reconciles unit metrics against MCTFS inbound data.
 
-Source documents flow from MCTFS inbound assignments, sponsor assignment letters per Enclosure (7), welcome aboard letter issuance records, eAOC touchpoint records, inbound brief attendance logs, IR&R handoff records, and Page 11 documentation completion records. Metrics outputs include the unit utilization metrics report per Enclosure (3), the rolled-up installation metrics, the HQMC MF data submission, and the unit commander metrics brief.
+Source documents flow from MCTFS inbound assignments, sponsor assignment letters per Enclosure (7), welcome aboard letter issuance records, inbound brief attendance logs, IR&R handoff records, and MCTIMS event code US training records. Metrics outputs include the unit utilization metrics report per Enclosure (3), the rolled-up installation metrics, the HQMC MF data submission, and the unit commander metrics brief.
 
-Per MCO 1320.11H paragraph 4.b.(6), unit commanding officers maintain unit-level program execution. Per paragraph 4.b.(5), installation commanders oversee installation-level execution. Per paragraph 4.b.(2), MF Director oversees strategic-level program execution. Per Enclosure (3), the standard metrics cover coverage, timeliness, letter issuance, brief completion, and Page 11 documentation.
+Per MCO 1320.11H paragraph 4.b.(6), unit commanding officers maintain unit-level program execution. Per paragraph 4.b.(5), installation commanders oversee installation-level execution. Per paragraph 4.b.(2), MF Director oversees strategic-level program execution. Per Enclosure (3), the standard metrics cover coverage, timeliness, letter issuance, brief completion, and sponsor training documentation.
 
 ## Trigger events
 
-- Monthly metrics cycle opens.
+- Quarterly metrics report window opens, due by the end of the first month of the next quarter.
 - Quarterly commander brief due.
 - HQMC MF data call.
 - Installation-level metrics roll-up due to installation commander.
@@ -64,7 +64,7 @@ Per MCO 1320.11H paragraph 4.b.(6), unit commanding officers maintain unit-level
 3. Compute timeliness metrics. Compute days from inbound notification to sponsor assignment, days from sponsor assignment to welcome aboard letter issuance, and days from arrival to inbound brief.
 4. Compute welcome aboard letter issuance rate. Per Enclosures (2) and (4)-(6), compute the issuance rate by letter type (CONUS, Accompanied OCONUS, Unaccompanied OCONUS).
 5. Compute inbound brief completion rate. Per paragraph 4.b.(9), compute the rate of inbound brief attendance.
-6. Compute Page 11 documentation rate. Per MCO P1070.12K paragraph 4006, compute the rate of Page 11 entries documenting sponsorship completion.
+6. Compute sponsor training documentation rate. Per MCO 1320.11H paragraph 4.b.(7)(e), compute the rate of sponsors with training recorded in MCTIMS under event code US.
 7. Build the unit metrics report. Per Enclosure (3) as the template, build the unit-specific report.
 8. Brief the commander. The S-1 officer briefs the commander on the metrics cycle, the coverage gaps, and the corrective actions.
 9. Submit data to HQMC MF. Per paragraph 4.b.(2), the unit submits data per the MF data call cadence.
@@ -92,12 +92,12 @@ Per MCO 1320.11H paragraph 4.b.(6), unit commanding officers maintain unit-level
 - Coverage rate computed without sponsor assignment validation. Per MCO 1320.11H<Citation source="MCO 1320.11H" /> Enclosure (3), the sponsor assignment counts only when the assignment letter is signed and delivered. Verbal designation does not count.
 - Timeliness metrics not benchmarked against the inbound notification date. Pull the notification date from MCTFS. Without the baseline, timeliness analysis is invalid.
 - Letter issuance rate aggregated across types. Per Enclosures (4)-(6), the type-specific rates surface gaps in accompanied OCONUS or unaccompanied OCONUS coverage.
-- Inbound brief attendance not tied to Page 11. Per MCO P1070.12K paragraph 4006, the Page 11 documents the brief. A missed Page 11 invalidates the brief attendance metric.
+- Sponsor training not tied to MCTIMS. Per MCO 1320.11H paragraph 4.b.(7)(e), MCTIMS event code US holds the record. A missing entry drops the sponsor from the training metric.
 - HQMC MF submission missed. Per paragraph 4.b.(2), the strategic-level visibility breaks. Submit per the cadence.
 
 ## Decision points
 
-- Metrics cycle cadence. Per MCO 1320.11H<Citation source="MCO 1320.11H" /> Enclosure (3), the unit cycle is typically monthly with a quarterly commander brief. The installation cycle is quarterly. The HQMC MF cadence is annual or per data call.
+- Metrics cycle cadence. Per MCO 1320.11H<Citation source="MCO 1320.11H" /> paragraph 4.b.(7)(i), the SC reports program utilization metrics quarterly, by the end of the first month of the following quarter. The IR&R Manager rolls the metrics up annually.
 - Coverage gap response. The unit identifies a coverage gap. Per paragraph 4.b.(6), the unit commanding officer routes corrective action to the SC.
 - Metrics format. Per Enclosure (3) as the sample, units adapt the format to local context without dropping the core metrics.
 
