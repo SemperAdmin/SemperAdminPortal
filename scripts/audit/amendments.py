@@ -1,8 +1,8 @@
 """Amendment overlay. Finds later messages that amend, cancel or implement a base document.
 
-Library for source_map.py. Run with `python -I scripts/audit/amendments.py` to rebuild the pickle.
+Library for source_map.py. Run with `python -I scripts/audit/amendments.py` to rebuild the index.
 """
-import importlib.util, json, os, pickle, re, sys
+import importlib.util, json, os, re, sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -263,7 +263,10 @@ def _archive_messages(tc):
             text = pages[0] if label == "DODI" and pages else "\n".join(pages)
             date = meta.get("document_date") or index_dates.get(Path(rel).name.lower())
             yield mid, date, rel, text
-    paa_index = json.loads((archive / "paa_index.json").read_text(encoding="utf-8")).get("downloaded", {})
+    try:
+        paa_index = json.loads((archive / "paa_index.json").read_text(encoding="utf-8")).get("downloaded", {})
+    except (OSError, ValueError) as e:  # fail loud, a missing PAA index must not cache a short amendment index
+        raise RuntimeError(f"paa_index.json unreadable, amendment index not built: {e}") from e
     for entry in paa_index.values():
         fn = str(entry.get("filename", "")).replace("\\", "/")
         m = re.search(r"paa-(\d+-\d+)", fn)
@@ -277,7 +280,7 @@ def _archive_messages(tc):
 
 
 def pickle_path(tc) -> Path:
-    return tc.CACHE / "_amend_index.pkl"
+    return tc.CACHE / "_amend_index.json"
 
 
 _STAMP_SKIP = {"_text", "_quarantine", "_broken_pdfs"}
@@ -328,14 +331,14 @@ def load_index(rebuild: bool = False, tc=None) -> dict:
     tc = tc or _load_sibling("build_text_cache")
     pkl = pickle_path(tc)
     stamp = archive_stamp(tc, with_cache=True)
-    # The pickle is our own derived output inside the cache (plain dict/list/str only). Never load one from elsewhere.
+    # Stored as JSON, not pickle: the index is plain dict/list/str, and JSON never runs code on load.
     if os.path.exists(tc.io_path(pkl)) and not rebuild and stamp_ok(tc, pkl, stamp):
-        with open(tc.io_path(pkl), "rb") as f:
-            return pickle.load(f)
-    index = build_index(_archive_messages(tc))  # raises on a partial walk, so no pickle is written then
+        with open(tc.io_path(pkl), encoding="utf-8") as f:
+            return json.load(f)
+    index = build_index(_archive_messages(tc))  # raises on a partial walk, so no index is written then
     os.makedirs(tc.io_path(pkl.parent), exist_ok=True)
-    with open(tc.io_path(pkl), "wb") as f:
-        pickle.dump(index, f)
+    with open(tc.io_path(pkl), "w", encoding="utf-8") as f:
+        json.dump(index, f)
     write_stamp(tc, pkl, stamp)
     return index
 

@@ -171,3 +171,22 @@ def test_cache_main_returns_1_on_failed_file(tmp_path, monkeypatch, capsys):
     (archive / "broken.pdf").write_bytes(b"not a pdf")
     assert tc.main([]) == 1
     assert "failed 1" in capsys.readouterr().out
+
+
+def test_amend_index_fails_loud_without_paa_index(tmp_path):
+    import pytest
+    am = load("amendments")
+    tc = load("build_text_cache")
+    root = tmp_path / "arch"
+    for f in ("MARADMINS", "ALNAVS", "ALMARS", "DoDI"):
+        (root / f).mkdir(parents=True)
+    tc.ARCHIVE, tc.CACHE = root, tmp_path / "cache"
+    with pytest.raises(RuntimeError, match="paa_index"):
+        am.load_index(rebuild=True, tc=tc)
+    assert not (tmp_path / "cache" / "_amend_index.json").exists()
+
+
+def test_archive_env_override(monkeypatch, tmp_path):
+    monkeypatch.setenv("AUDIT_ARCHIVE", str(tmp_path))
+    tc = load("build_text_cache")
+    assert tc.ARCHIVE == tmp_path

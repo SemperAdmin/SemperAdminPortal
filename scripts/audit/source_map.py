@@ -185,7 +185,10 @@ def build_archive_table() -> list[dict]:
     errors.extend(read_errors)
     if errors:  # never hand back, or cache, a short table
         raise RuntimeError("archive walk failed, table not built: " + "; ".join(errors[:10]))
-    paa = json.loads((root / "paa_index.json").read_text(encoding="utf-8")).get("downloaded", {})
+    try:
+        paa = json.loads((root / "paa_index.json").read_text(encoding="utf-8")).get("downloaded", {})
+    except (OSError, ValueError) as e:  # same fail-loud rule as the walk, never cache a short table
+        raise RuntimeError(f"paa_index.json unreadable, table not built: {e}") from e
     for e in paa.values():
         fn = str(e.get("filename", "")).replace("\\", "/")
         m = re.search(r"paa-(\d+-\d+)", fn)
@@ -819,7 +822,7 @@ def run_clusters() -> int:
         if w == 2:
             home = {p["page"]: c["id"] for c in deco for p in c["pages"]}
             for o in waves["1"]["overflow"]:
-                o["movedTo"] = home[o["page"]]
+                o["movedTo"] = home.get(o["page"], "unplaced")
         waves[str(w)] = {"clusters": deco, "overflow": over}
         sizes = sorted((len(c["pages"]) for c in deco), reverse=True)
         lines.append(f"wave {w}: {sum(len(c['pages']) for c in deco)} pages, {len(deco)} clusters, overflow {len(over)}, "

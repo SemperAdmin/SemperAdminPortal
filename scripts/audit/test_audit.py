@@ -176,11 +176,11 @@ def test_amend_index_refuses_partial_walk(tmp_path):
     tc.ARCHIVE, tc.CACHE = root, root / "_text"
     with pytest.raises(RuntimeError, match="ALMARS"):
         am.load_index(rebuild=True, tc=tc)
-    assert not (root / "_text" / "_amend_index.pkl").exists()
+    assert not (root / "_text" / "_amend_index.json").exists()
     for f in ("ALMARS",):
         (root / f).mkdir()
     assert am.load_index(rebuild=True, tc=tc) == {}
-    assert (root / "_text" / "_amend_index.pkl").exists()
+    assert (root / "_text" / "_amend_index.json").exists()
 
 def test_archive_table_refuses_partial_walk(tmp_path, monkeypatch):
     import pytest

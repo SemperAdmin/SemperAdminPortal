@@ -3,7 +3,7 @@ import json, os, sys
 from pathlib import Path
 import pymupdf
 
-ARCHIVE = Path(r"E:\GunnyBot\Policies")
+ARCHIVE = Path(os.environ["AUDIT_ARCHIVE"]) if os.environ.get("AUDIT_ARCHIVE") else Path(r"E:\GunnyBot\Policies")
 CACHE = Path(os.environ["AUDIT_TEXT_CACHE"]) if os.environ.get("AUDIT_TEXT_CACHE") else Path(__file__).resolve().parents[2] / ".superpowers" / "text-cache"
 MARK = "\n\f[[page {n}]]\n"
 SKIP_DIRS = ("_text", "_quarantine", "_broken_pdfs")
