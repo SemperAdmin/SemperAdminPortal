@@ -1,0 +1,44 @@
+[
+ {
+  "cluster": "dd1299-misc",
+  "page": "content/citations/dd-form-1299.mdx",
+  "line": 17,
+  "claim": "March 2022 edition, items 1 through 18, Privacy Act authorities 37 USC 406 and 5 USC 5726, CUI category PRVCY",
+  "status": "NO-ARCHIVE-SOURCE",
+  "severity": "minor",
+  "source": "DD Form 1299",
+  "sourceFile": "DD_Forms/DD1000_1499/DD1299_Application_for_Shipment_andor_Storage_of_Personal_Property.pdf",
+  "paragraph": "form face",
+  "quote": "the cached copy holds only the Adobe Reader placeholder, no form text",
+  "fix": "Re-export the fillable DD Form 1299 with a text layer, then verify the item list and authorities.",
+  "alsoOn": []
+ },
+ {
+  "cluster": "dd1299-misc",
+  "page": "content/citations/dd-form-1299.mdx",
+  "line": 38,
+  "claim": "Portal guidance anchors the workflow to JTR Chapter 5 paragraph 0570",
+  "status": "unsupported",
+  "severity": "minor",
+  "source": "JTR",
+  "sourceFile": "DTMO/JTR_Joint_Travel_Regulations.pdf",
+  "paragraph": "Chapter 5",
+  "quote": "no paragraph 0570 and no mention of DD Form 1299 in the cached JTR",
+  "fix": "Cite the JTR Chapter 5 household goods paragraph by its current number, found in the PDTATAC edition.",
+  "alsoOn": []
+ },
+ {
+  "cluster": "dd1299-misc",
+  "page": "content/citations/dd-form-1299.mdx",
+  "line": 40,
+  "claim": "MCO 4050.6 is the Marine Corps Personal Property Movement Manual",
+  "status": "NO-ARCHIVE-SOURCE",
+  "severity": "minor",
+  "source": "MCO 4050.6",
+  "sourceFile": "none",
+  "paragraph": "n/a",
+  "quote": "no MCO 4050.6 file in the archive",
+  "fix": "Add the order to the archive or confirm the number and title.",
+  "alsoOn": []
+ }
+]

@@ -1,0 +1,403 @@
+[
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 23,
+  "claim": "The manual sets format and signing rules for naval correspondence, memoranda, business letters, electronic mail, and naval messages",
+  "status": "contradicted",
+  "severity": "minor",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Foreword",
+  "quote": "This manual implements policy set forth in Secretary of the Navy Instruction 5216.7, is issued to prescribe uniform standards for the management and preparation",
+  "fix": "Drop naval messages from the scope line. The manual has no message chapter. Name a messaging source for GENADMIN release.",
+  "alsoOn": [
+   "content/admin/s1g1-naval-correspondence-messages-naval-messages-and-genadmins.mdx"
+  ]
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 27,
+  "claim": "Records managers use the manual for filing, retention, and SSIC labeling",
+  "status": "ok",
+  "severity": null,
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Ch 7 para 7-2.3 and Ch 3",
+  "quote": "type the Standard Subject Identification Code (SSIC) on the next line. If “in reply",
+  "fix": "",
+  "alsoOn": []
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 31,
+  "claim": "Chapter 1 is the Naval Letter",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Table of Contents, Chapter 1",
+  "quote": "CHAPTER 1 – CORRESPONDENCE",
+  "fix": "Retitle Chapter 1 as Correspondence Management. The standard letter sits in Chapter 7.",
+  "alsoOn": [
+   "content/admin/s1g1-naval-correspondence-messages-overview.mdx"
+  ]
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 32,
+  "claim": "Chapter 2 is Endorsements",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Table of Contents, Chapter 2",
+  "quote": "CHAPTER 2 – CORRESPONDENCE STANDARDS AND",
+  "fix": "Retitle Chapter 2 as Correspondence Standards and Procedures. Endorsements sit in Chapter 9.",
+  "alsoOn": [
+   "content/admin/s1g1-naval-correspondence-messages-overview.mdx"
+  ]
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 33,
+  "claim": "Chapter 3 is Memorandum",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Table of Contents, Chapter 3",
+  "quote": "CHAPTER 3 - ELECTRONIC",
+  "fix": "Retitle Chapter 3 as Electronic Records. Memorandums sit in Chapter 10.",
+  "alsoOn": [
+   "content/admin/s1g1-naval-correspondence-messages-overview.mdx"
+  ]
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 34,
+  "claim": "Chapter 4 is Business Letter",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Table of Contents, Chapter 4",
+  "quote": "CHAPTER 4 - ELECTRONIC",
+  "fix": "Retitle Chapter 4 as Electronic Mail. Business letters sit in Chapter 11.",
+  "alsoOn": [
+   "content/admin/s1g1-naval-correspondence-messages-overview.mdx"
+  ]
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 35,
+  "claim": "Chapter 5 is Multiple Address Letter",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Table of Contents, Chapter 5",
+  "quote": "CHAPTER 5 - FACSIMILE TRANSMISSION",
+  "fix": "Retitle Chapter 5 as Facsimile Transmission Services. Multiple-address letters sit in Chapter 8.",
+  "alsoOn": [
+   "content/admin/s1g1-naval-correspondence-messages-overview.mdx"
+  ]
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 36,
+  "claim": "Chapter 6 is Other Correspondence (joint letters, point papers, special formats)",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Table of Contents, Chapter 6",
+  "quote": "CHAPTER 6 – POSTAL",
+  "fix": "Retitle Chapter 6 as Postal Standards. Joint letters sit in Chapter 7 and executive correspondence in Chapter 12.",
+  "alsoOn": [
+   "content/admin/s1g1-naval-correspondence-messages-overview.mdx"
+  ]
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 37,
+  "claim": "Chapter 7 is Standard Subject Identification Codes with a cross-reference to SECNAV M-5210.2",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Chapter 7 para 7-2.3",
+  "quote": "CHAPTER 7 – CORRESPONDENCE",
+  "fix": "Retitle Chapter 7 as Correspondence Format. It carries the standard letter and tells the writer to find the SSIC in SECNAV M-5210.2.",
+  "alsoOn": [
+   "content/admin/s1g1-naval-correspondence-messages-overview.mdx"
+  ]
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 38,
+  "claim": "Chapter 8 is Signing and Authenticating (by direction signing, signature authority, DD Form 577, acting signature rules)",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Chapter 2 para 5.b(1) and para 5.c",
+  "quote": "All delegations of signature authority will be made in writing and signed by the person delegating the authority.",
+  "fix": "Cite Chapter 2 paras 5 and 6 for signature authority, by direction and acting. Chapter 8 is the multiple-address letter. The manual names no DD Form 577. A signed written delegation letter is the instrument.",
+  "alsoOn": [
+   "content/admin/s1g1-naval-correspondence-messages-signing-authority-and-by-direction.mdx"
+  ]
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 39,
+  "claim": "Chapter 9 is Electronic Mail",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Table of Contents, Chapter 9",
+  "quote": "CHAPTER 9 –",
+  "fix": "Retitle Chapter 9 as Endorsements. E-mail sits in Chapter 4.",
+  "alsoOn": [
+   "content/admin/s1g1-naval-correspondence-messages-overview.mdx"
+  ]
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 40,
+  "claim": "Chapter 10 is Naval Messages and GENADMIN",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Table of Contents, Chapter 10",
+  "quote": "CHAPTER 10 –",
+  "fix": "Retitle Chapter 10 as Memorandums. The manual has no message chapter. Add Chapter 11 Business Letters and Chapter 12 Executive Correspondence.",
+  "alsoOn": [
+   "content/admin/s1g1-naval-correspondence-messages-naval-messages-and-genadmins.mdx",
+   "content/admin/s1g1-naval-correspondence-messages-overview.mdx"
+  ]
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 41,
+  "claim": "Appendices cover sample letters, sample endorsements, SSIC indexes, and stationery rules",
+  "status": "contradicted",
+  "severity": "minor",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Appendices A-E",
+  "quote": "APPENDIX A – Military Models of Address A-1 APPENDIX B –",
+  "fix": "List the five appendices: A Military Models of Address, B Civilian Models of Address, C Stationery Requirements, D Forms and Envelopes, E Index.",
+  "alsoOn": []
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 31,
+  "claim": "The naval letter is the formal correspondence between DON activities and other Federal agencies",
+  "status": "contradicted",
+  "severity": "minor",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Chapter 7 para 7-1.1",
+  "quote": "Use the standard letter format or one of its variations to correspond officially within or outside the DoD. 2. The",
+  "fix": "Say the standard letter serves official correspondence within or outside DoD.",
+  "alsoOn": []
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 33,
+  "claim": "The memorandum is internal correspondence within and between DON activities",
+  "status": "contradicted",
+  "severity": "minor",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Chapter 10 para 10-1",
+  "quote": "A memorandum provides a less formal way to correspond within an activity/command. Subordinates within",
+  "fix": "Say a memorandum is the less formal way to correspond within an activity or command.",
+  "alsoOn": []
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 34,
+  "claim": "The business letter is for correspondence with non-Federal recipients",
+  "status": "contradicted",
+  "severity": "minor",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Chapter 11 para 11-1",
+  "quote": "Use the business letter to correspond with agencies, businesses, or individuals outside DoD, who are",
+  "fix": "Say the business letter serves agencies, businesses or individuals outside DoD who do not know the standard letter.",
+  "alsoOn": []
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 35,
+  "claim": "The multiple address letter is a naval letter with multiple recipients",
+  "status": "ok",
+  "severity": null,
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Chapter 8 para 8-1",
+  "quote": "Use a multiple-address letter when you have more than one action addressee. The",
+  "fix": "",
+  "alsoOn": []
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 45,
+  "claim": "MCO 5216.20 is the Marine Corps supplement to SECNAV M-5216.5",
+  "status": "outdated",
+  "severity": "minor",
+  "source": "MCO 5216.20B w/Admin CH-4",
+  "sourceFile": "MCO/MCO_5216.20B_WADMIN_CH-4.pdf.txt",
+  "paragraph": "Subj and Ref (a)",
+  "quote": "Subj: MARINE CORPS SUPPLEMENT TO THE DEPARTMENT OF THE NAVY",
+  "fix": "Cite the order as MCO 5216.20B w/ Admin Ch 4. The archive holds this edition.",
+  "alsoOn": []
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 46,
+  "claim": "MCO 5215.1K directives format and routing cross-reference SECNAV M-5216.5",
+  "status": "unsupported",
+  "severity": "minor",
+  "source": "MCO 5215.1K w/Admin CH-3",
+  "sourceFile": "MCO/MCO_5215.1K_WADMIN_CH-3.pdf.txt",
+  "paragraph": "Ref (f)",
+  "quote": "(f) SECNAVINST",
+  "fix": "Drop the cross-reference claim or cite SECNAVINST 5216.5D, the item the order lists.",
+  "alsoOn": []
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 47,
+  "claim": "SECNAV M-5210.2 provides the SSIC system",
+  "status": "ok",
+  "severity": null,
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Chapter 7 para 7-2.3(1)",
+  "quote": "To find the SSIC that most closely represents the subject, refer to SECNAV M-5210.2.",
+  "fix": "",
+  "alsoOn": []
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 48,
+  "claim": "MCO 5000.14D is Marine Corps Administrative Procedures with S-1 correspondence duties",
+  "status": "ok",
+  "severity": null,
+  "source": "MCO 5000.14D",
+  "sourceFile": "MCO/MCO_5000.14D.pdf.txt",
+  "paragraph": "Subj",
+  "quote": "Subj: MARINE CORPS ADMINISTRATIVE PROCEDURES (SHORT TITLE: MCAP)",
+  "fix": "",
+  "alsoOn": []
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 49,
+  "claim": "MCO P1070.12K Individual Records Administration Manual governs OMPF Field Folder routing from this manual",
+  "status": "unsupported",
+  "severity": "minor",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "none",
+  "quote": "",
+  "fix": "Drop the OMPF routing tie. The correspondence manual does not address the Field Folder.",
+  "alsoOn": []
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 49,
+  "claim": "Supersession candidate: MCO P1070.12K cancelled by PAA 05-23, MARADMIN 052/19 and MARADMIN 548/16",
+  "status": "ok",
+  "severity": null,
+  "source": "PAA 05-23",
+  "sourceFile": "PAA/CY2023/paa-05-23.md.txt",
+  "paragraph": "PAA 05-23 para 3",
+  "quote": "The purpose of this PAA is to provide clarification to paragraphs 4006.3r",
+  "fix": "No change to the order status. PAA 05-23 clarifies paragraphs 4006.3r and 4006.3x of MCO P1070.12K w/ Ch 1. MARADMIN 052/19 and 548/16 are OMPF photograph guidance and do not cancel the order.",
+  "alsoOn": []
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 53,
+  "claim": "Status: Change 1 published",
+  "status": "contradicted",
+  "severity": "minor",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Foreword and Table of Issuances",
+  "quote": "The following manual is cancelled: SECNAV M-5216.5 of March 2010 Local supplements",
+  "fix": "Say the June 2015 revision cancelled the March 2010 manual and the issuance table shows no change. Remove Change 1 and the 5216.5 CH-1 alias until a source appears.",
+  "alsoOn": []
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/citations/secnav-m-5216-5.mdx",
+  "line": 17,
+  "claim": "externalUrl is a deep PDF path on secnav.navy.mil/doni",
+  "status": "unsupported",
+  "severity": "minor",
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Foreword",
+  "quote": "This manual may be accessed through the Department of the Navy Issuances Web site",
+  "fix": "Point to the issuances site the manual names. Judged by shape only, the link is not fetchable here.",
+  "alsoOn": []
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/external-tools/semperscribe.mdx",
+  "line": 4,
+  "claim": "The tool generates MCO, MCBul, MOA, and directive documents to DoD standards",
+  "status": "unsupported",
+  "severity": "minor",
+  "source": "MCO 5215.1K w/Admin CH-3",
+  "sourceFile": "MCO/MCO_5215.1K_WADMIN_CH-3.pdf.txt",
+  "paragraph": "Chapter 1 para 3.c",
+  "quote": "Bulletins shall be written in the format prescribed in Chapter 3 of this Order.",
+  "fix": "Say naval letter output follows SECNAV M-5216.5 and directive output follows MCO 5215.1K. Drop the DoD standards claim.",
+  "alsoOn": []
+ },
+ {
+  "cluster": "secnav-m-5216-5-misc",
+  "page": "content/external-tools/semperscribe.mdx",
+  "line": 10,
+  "claim": "Source of record for the tool is SECNAV M-5216.5, the Department of the Navy Correspondence Manual",
+  "status": "ok",
+  "severity": null,
+  "source": "SECNAV M-5216.5 (Jun 2015)",
+  "sourceFile": "SECNAV/SECNAV_M-5216.5.pdf.txt",
+  "paragraph": "Title",
+  "quote": "SECNAV M-5216.5 JUNE 2015 DEPARTMENT OF THE NAVY CORRESPONDENCE MANUAL",
+  "fix": "",
+  "alsoOn": []
+ }
+]
