@@ -2,7 +2,7 @@
 
 Library for source_map.py. Run with `python -I scripts/audit/amendments.py` to rebuild the pickle.
 """
-import importlib.util, json, pickle, re, sys
+import importlib.util, json, os, pickle, re, sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -218,7 +218,10 @@ def _archive_messages(tc):
     archive = tc.ARCHIVE
     index_dates = _index_dates(archive)
     for folder, label in (("MARADMINS", "MARADMIN"), ("ALNAVS", "ALNAV"), ("ALMARS", "ALMAR"), ("DoDI", "DODI")):
-        for side in sorted((archive / folder).rglob("*.json")):
+        sides = []
+        for dirpath, _dirs, files in os.walk(archive / folder, onerror=lambda e: None):  # tolerate a dropped drive
+            sides.extend(Path(dirpath) / f for f in files if f.endswith(".json"))
+        for side in sorted(sides):
             if not side.name.endswith((".pdf.json", ".docx.json")):
                 continue
             if not tc.cache_path(side.relative_to(archive).as_posix()[:-5]).exists():
