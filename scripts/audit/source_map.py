@@ -237,11 +237,13 @@ def _row(rel, number, date, source_type, superseded_by):
 
 def load_archive_table(rebuild=False):
     cache = tc.CACHE / "_archive_docs.json"
-    if cache.exists() and not rebuild:
-        return json.loads(cache.read_text(encoding="utf-8"))
+    if os.path.exists(tc.io_path(cache)) and not rebuild:
+        with open(tc.io_path(cache), encoding="utf-8") as f:
+            return json.load(f)
     rows = build_archive_table()
-    cache.parent.mkdir(parents=True, exist_ok=True)
-    cache.write_text(json.dumps(rows), encoding="utf-8")
+    os.makedirs(tc.io_path(cache.parent), exist_ok=True)
+    with open(tc.io_path(cache), "w", encoding="utf-8") as f:
+        json.dump(rows, f)
     return rows
 
 
@@ -443,7 +445,7 @@ def source_record(row, ref, record, mismatch, archive_rows, index):
 def readability(rel: str) -> str:
     """ok, unreadable (every cached page blank) or uncached."""
     p = tc.cache_path(rel)
-    if not p.exists():
+    if not os.path.exists(tc.io_path(p)):
         return "uncached"
     try:
         pages = tc.read_cached_file(p)

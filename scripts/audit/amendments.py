@@ -239,7 +239,7 @@ def _archive_messages(tc):
         for side in sorted(walked[folder]):
             if not side.name.endswith((".pdf.json", ".docx.json")):
                 continue
-            if not tc.cache_path(side.relative_to(archive).as_posix()[:-5]).exists():
+            if not os.path.exists(tc.io_path(tc.cache_path(side.relative_to(archive).as_posix()[:-5]))):
                 continue  # no cached text yet, skip before touching the sidecar
             try:
                 meta = json.loads(side.read_text(encoding="utf-8"))
@@ -255,7 +255,7 @@ def _archive_messages(tc):
                 mid = f"{label} {num}"
             rel = (meta.get("relative_path") or str(side.relative_to(archive))[:-5]).replace("\\", "/")
             cached = tc.cache_path(rel)
-            if not cached.exists():
+            if not os.path.exists(tc.io_path(cached)):
                 continue
             pages = tc.read_cached_file(cached)
             text = pages[0] if label == "DODI" and pages else "\n".join(pages)
@@ -269,7 +269,7 @@ def _archive_messages(tc):
             continue
         rel = f"PAA/{fn}"
         cached = tc.cache_path(rel)
-        if cached.exists():
+        if os.path.exists(tc.io_path(cached)):
             date = entry.get("date") or entry.get("created") or ""
             yield f"PAA {m.group(1)}", date, rel, "\n".join(tc.read_cached_file(cached))
 
@@ -282,12 +282,12 @@ def load_index(rebuild: bool = False, tc=None) -> dict:
     tc = tc or _load_sibling("build_text_cache")
     pkl = pickle_path(tc)
     # The pickle is our own derived output inside _text/ (plain dict/list/str only). Never load one from elsewhere.
-    if pkl.exists() and not rebuild:
-        with pkl.open("rb") as f:
+    if os.path.exists(tc.io_path(pkl)) and not rebuild:
+        with open(tc.io_path(pkl), "rb") as f:
             return pickle.load(f)
     index = build_index(_archive_messages(tc))  # raises on a partial walk, so no pickle is written then
-    pkl.parent.mkdir(parents=True, exist_ok=True)
-    with pkl.open("wb") as f:
+    os.makedirs(tc.io_path(pkl.parent), exist_ok=True)
+    with open(tc.io_path(pkl), "wb") as f:
         pickle.dump(index, f)
     return index
 

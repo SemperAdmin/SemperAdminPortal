@@ -211,3 +211,29 @@ def test_archive_table_refuses_unreadable_sidecar(tmp_path, monkeypatch):
     with pytest.raises(RuntimeError, match="MCO_1.pdf.json"):
         sm.load_archive_table(rebuild=True)
     assert not (root / "_text" / "_archive_docs.json").exists()
+
+def test_long_cache_paths_are_read_and_written(tmp_path, monkeypatch):
+    import os, sys, pytest
+    if sys.platform != "win32":
+        pytest.skip("MAX_PATH only applies on Windows")
+    sm = load("source_map")
+    am = load("amendments")
+    deep = tmp_path / ("d" * 60) / ("e" * 60) / ("f" * 60) / ("g" * 60) / ("h" * 60)
+    monkeypatch.setattr(sm.tc, "CACHE", deep / "_text")
+    rel = "MARADMINS/CY2023/" + "X" * 80 + ".pdf"
+    out = sm.tc.cache_path(rel)
+    assert len(str(out)) > 300
+    os.makedirs(sm.tc.io_path(out.parent), exist_ok=True)
+    with open(sm.tc.io_path(out), "w", encoding="utf-8") as f:
+        f.write("\f[[page 1]]\nbody text")
+    assert sm.readability(rel) == "ok"
+    root = _tmp_archive(tmp_path, list(sm.EXPECTED_FOLDERS))
+    monkeypatch.setattr(sm.tc, "ARCHIVE", root)
+    (root / "MARADMINS" / "CY2023").mkdir(parents=True)
+    rows = sm.load_archive_table(rebuild=True)  # writes _archive_docs.json under the deep root
+    assert rows == [] and os.path.exists(sm.tc.io_path(sm.tc.CACHE / "_archive_docs.json"))
+    assert sm.load_archive_table() == []
+    am.tc = sm.tc
+    idx = am.load_index(rebuild=True, tc=sm.tc)
+    assert idx == {} and os.path.exists(sm.tc.io_path(am.pickle_path(sm.tc)))
+    assert am.load_index(tc=sm.tc) == {}
