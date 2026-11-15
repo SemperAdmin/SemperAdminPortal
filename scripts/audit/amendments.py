@@ -213,23 +213,38 @@ def _index_dates(archive: Path) -> dict[str, str]:
     return out
 
 
+def walk_json(root: Path, errors: list[str]) -> list[Path]:
+    """All .json files under root. A missing root or any walk error is appended to errors."""
+    if not root.is_dir():
+        errors.append(f"{root} is missing")
+        return []
+    found: list[Path] = []
+    os_errors: list[str] = []
+    for dirpath, _dirs, files in os.walk(root, onerror=lambda e: os_errors.append(f"{e.filename}: {e.strerror}")):
+        found.extend(Path(dirpath) / f for f in files if f.endswith(".json"))
+    errors.extend(os_errors)
+    return found
+
+
 def _archive_messages(tc):
     """Yield (id, date, relative file, text) for MARADMIN, ALNAV, ALMAR, DoDI changes and PAA."""
     archive = tc.ARCHIVE
     index_dates = _index_dates(archive)
-    for folder, label in (("MARADMINS", "MARADMIN"), ("ALNAVS", "ALNAV"), ("ALMARS", "ALMAR"), ("DoDI", "DODI")):
-        sides = []
-        for dirpath, _dirs, files in os.walk(archive / folder, onerror=lambda e: None):  # tolerate a dropped drive
-            sides.extend(Path(dirpath) / f for f in files if f.endswith(".json"))
-        for side in sorted(sides):
+    folders = (("MARADMINS", "MARADMIN"), ("ALNAVS", "ALNAV"), ("ALMARS", "ALMAR"), ("DoDI", "DODI"))
+    errors: list[str] = []
+    walked = {folder: walk_json(archive / folder, errors) for folder, _ in folders}
+    if errors:  # fail before yielding anything so no partial index is built
+        raise RuntimeError("archive walk failed, index not built: " + "; ".join(errors[:10]))
+    for folder, label in folders:
+        for side in sorted(walked[folder]):
             if not side.name.endswith((".pdf.json", ".docx.json")):
                 continue
             if not tc.cache_path(side.relative_to(archive).as_posix()[:-5]).exists():
                 continue  # no cached text yet, skip before touching the sidecar
             try:
                 meta = json.loads(side.read_text(encoding="utf-8"))
-            except (OSError, ValueError):
-                continue
+            except ValueError:
+                continue  # bad JSON in one sidecar is a data fault, not a walk fault
             number = str(meta.get("document_number") or "")
             if label == "DODI":
                 if not re.search(r"\bCH\b", number.upper()):
@@ -263,14 +278,14 @@ def pickle_path(tc) -> Path:
     return tc.CACHE / "_amend_index.pkl"
 
 
-def load_index(rebuild: bool = False) -> dict:
-    tc = _load_sibling("build_text_cache")
+def load_index(rebuild: bool = False, tc=None) -> dict:
+    tc = tc or _load_sibling("build_text_cache")
     pkl = pickle_path(tc)
     # The pickle is our own derived output inside _text/ (plain dict/list/str only). Never load one from elsewhere.
     if pkl.exists() and not rebuild:
         with pkl.open("rb") as f:
             return pickle.load(f)
-    index = build_index(_archive_messages(tc))
+    index = build_index(_archive_messages(tc))  # raises on a partial walk, so no pickle is written then
     pkl.parent.mkdir(parents=True, exist_ok=True)
     with pkl.open("wb") as f:
         pickle.dump(index, f)

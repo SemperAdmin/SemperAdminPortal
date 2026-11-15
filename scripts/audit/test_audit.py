@@ -159,3 +159,35 @@ def test_contradictions_units_normalize():
     assert ("parental leave", "12 weeks") in hits
     assert ("convalescent", "84 days") in hits
     assert ("srb", "6%") in hits
+
+
+def _tmp_archive(tmp_path, folders):
+    root = tmp_path / "Policies"
+    for f in folders:
+        (root / f).mkdir(parents=True)
+    (root / "paa_index.json").write_text('{"downloaded": {}}', encoding="utf-8")
+    return root
+
+def test_amend_index_refuses_partial_walk(tmp_path):
+    import pytest
+    am = load("amendments")
+    tc = load("build_text_cache")
+    root = _tmp_archive(tmp_path, ["MARADMINS", "ALNAVS", "DoDI"])  # ALMARS missing
+    tc.ARCHIVE, tc.CACHE = root, root / "_text"
+    with pytest.raises(RuntimeError, match="ALMARS"):
+        am.load_index(rebuild=True, tc=tc)
+    assert not (root / "_text" / "_amend_index.pkl").exists()
+    for f in ("ALMARS",):
+        (root / f).mkdir()
+    assert am.load_index(rebuild=True, tc=tc) == {}
+    assert (root / "_text" / "_amend_index.pkl").exists()
+
+def test_archive_table_refuses_partial_walk(tmp_path, monkeypatch):
+    import pytest
+    sm = load("source_map")
+    root = _tmp_archive(tmp_path, ["MARADMINS"])  # most expected folders missing
+    monkeypatch.setattr(sm.tc, "ARCHIVE", root)
+    monkeypatch.setattr(sm.tc, "CACHE", root / "_text")
+    with pytest.raises(RuntimeError, match="ALNAVS"):
+        sm.load_archive_table(rebuild=True)
+    assert not (root / "_text" / "_archive_docs.json").exists()

@@ -29,6 +29,7 @@ OUT = REPO / "audit" / "2026-11-14-claims" / "source-map.json"
 SKIP_DIRS = {"videos", "_stubs", "_policy-indexes"}
 ROLE_DIRS = {"marines": "marine", "leader": "leader", "commander": "commander", "admin": "admin"}
 ARCHIVE_SKIP = {"_text", "_quarantine", "_broken_pdfs"}
+EXPECTED_FOLDERS = ("MARADMINS", "ALNAVS", "ALMARS", "DoDI", "DoDD", "DoDFMR", "MCO", "NAVMC", "SECNAV", "Legal", "PAA", "DTMO", "FPM", "DD_Forms", "PRIUM")
 
 # ---------------------------------------------------------------- resolver (port of resolve.ts)
 
@@ -160,7 +161,11 @@ def build_archive_table() -> list[dict]:
     """One row per archive document: rel, number, date, keys, norm aliases, superseded_by."""
     root = tc.ARCHIVE
     rows = []
-    for dirpath, dirnames, filenames in os.walk(root):
+    errors = [f"{root / f} is missing" for f in EXPECTED_FOLDERS if not (root / f).is_dir()]
+    if not root.is_dir():
+        errors = [f"{root} is missing"]
+    walk_errors: list[str] = []
+    for dirpath, dirnames, filenames in os.walk(root, onerror=lambda e: walk_errors.append(f"{e.filename}: {e.strerror}")):
         dirnames[:] = [d for d in dirnames if d not in ARCHIVE_SKIP]
         for fn in filenames:
             if not fn.endswith((".pdf.json", ".docx.json", ".md.json")):
@@ -172,6 +177,9 @@ def build_archive_table() -> list[dict]:
             rel = str(meta.get("relative_path") or (Path(dirpath) / fn[:-5]).relative_to(root)).replace("\\", "/")
             rows.append(_row(rel, str(meta.get("document_number") or ""), meta.get("document_date"),
                              meta.get("source_type") or rel.split("/")[0], meta.get("superseded_by") or []))
+    errors.extend(walk_errors)
+    if errors:  # never hand back, or cache, a short table
+        raise RuntimeError("archive walk failed, table not built: " + "; ".join(errors[:10]))
     paa = json.loads((root / "paa_index.json").read_text(encoding="utf-8")).get("downloaded", {})
     for e in paa.values():
         fn = str(e.get("filename", "")).replace("\\", "/")
