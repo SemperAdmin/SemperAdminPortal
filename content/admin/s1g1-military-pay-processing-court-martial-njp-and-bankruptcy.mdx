@@ -45,13 +45,13 @@ The IPAC pay clerk cuts court-martial pay forfeitures per DoDFMR Vol 7A<Citation
 
 Source documents flow from the court-martial sentence per MCO 5800.16<Citation source="MCO 5800.16" /> Volume 16 and Manual for Courts-Martial 2024 Rule for Courts-Martial 1004, the NJP UPB per MCO 5800.16 Volume 14, the bankruptcy filing notification per 11 U.S.C. Bankruptcy Code, the convening authority post-trial action, and the prior MCTFS pay history. Outputs include the executed UD-MIPS forfeiture transaction, the documented KSD packet, the verified LES reflecting forfeiture or deduction, the tracked forfeiture duration, the Page 11 entry per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6, the bankruptcy coordination record per Chapter 50, and the audit trail.
 
-Per DoDFMR Vol 7A Chapter 48, court-martial pay forfeitures apply per the sentence and become effective per the convening authority action timing. Per Chapter 49, NJP forfeitures apply per the UPB and the imposing commander's signature. Per Chapter 50, bankruptcy proceedings affect pay through automatic stays, debt discharge, and creditor priorities.
+Per DoDFMR Vol 7A Chapter 48, court-martial pay forfeitures apply per the sentence and begin 14 days after the sentence is announced, per paragraph 5.2.1. Summary court-martial forfeitures begin on the date the convening authority approves the forfeiture portion of the sentence. Per Chapter 49, NJP forfeitures apply per the UPB and the imposing commander's signature. Per Chapter 50, bankruptcy proceedings affect pay through automatic stays, debt discharge, and creditor priorities.
 
 ## Trigger events
 
 - Court-martial sentence with forfeiture component.
 - NJP imposition with forfeiture component per Manual for Courts-Martial Part V paragraph 5.
-- Convening authority post-trial action triggering forfeiture effective date.
+- Sentence announcement starting the 14-day forfeiture clock. Summary court-martial forfeitures start on convening authority approval.
 - Bankruptcy filing notification from the Marine.
 - Forfeiture period completion.
 - Bankruptcy discharge order.
@@ -86,13 +86,13 @@ Per DoDFMR Vol 7A Chapter 48, court-martial pay forfeitures apply per the senten
 
 - Court-Martial Sentence (DD Form 490 / 491). Per MCO 5800.16 Volume 16.
 - Unit Punishment Book NAVMC 10132. Per MCO 5800.16 Volume 14 and the NJP build.
-- Convening Authority Post-Trial Action. Per Manual for Courts-Martial.
+- Convening Authority Post-Trial Action. Per Manual for Courts-Martial. Drives the start date for summary court-martial forfeitures only.
 - Bankruptcy Filing Notification. Per Chapter 50.
 - NAVMC 118 (11) Administrative Remarks. Page 11 per MCO P1070.12K paragraph 4006.
 
 ## Common pitfalls
 
-- Court-martial forfeiture cut without convening authority action. Per Chapter 48, the convening authority acts on the sentence before forfeiture takes effect.
+- Court-martial forfeiture cut on the wrong date. Per Chapter 48 paragraph 5.2.1, forfeitures begin 14 days after the sentence is announced. Summary court-martial forfeitures begin when the convening authority approves the forfeiture portion of the sentence.
 - NJP forfeiture exceeds maximum per Manual for Courts-Martial Part V paragraph 5. Per Chapter 49, the imposed punishment fits within the maximum.
 - Bankruptcy notification not routed to disbursing. Per Chapter 50, the bankruptcy triggers an automatic stay affecting deductions.
 - Forfeiture continued past sentence duration. The S-1 closes at completion.
@@ -105,7 +105,7 @@ Per DoDFMR Vol 7A Chapter 48, court-martial pay forfeitures apply per the senten
 - Total versus partial forfeiture. Per Chapter 48, total forfeiture applies on punitive discharge sentences pending appellate review. Partial forfeiture applies per the specified monthly amount and duration.
 - NJP forfeiture cap. Per Manual for Courts-Martial Part V paragraph 5 and Chapter 49, the maximum NJP forfeiture varies by grade and the imposing commander's authority.
 - Bankruptcy automatic stay scope. Per Chapter 50, the automatic stay affects pre-petition debt collections. Post-petition debts continue.
-- Effective date timing. Per Chapter 48, the convening authority post-trial action drives the effective date for court-martial. Per Chapter 49, the imposition date drives the effective date for NJP.
+- Effective date timing. Per Chapter 48 paragraph 5.2.1, the sentence announcement date plus 14 days drives the effective date for court-martial. The convening authority approval date drives it for summary court-martial. Per Chapter 49, the imposition date drives the effective date for NJP.
 
 ## Authority
 
