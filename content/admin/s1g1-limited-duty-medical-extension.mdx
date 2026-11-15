@@ -1,7 +1,7 @@
 ---
 title: "Medical Extension - S-1 Procedural Page"
 slug: "medical-extension"
-summary: "Process medical extension of standard 6-month LIMDU period per MCO 1900.16 Chapter 8 paragraph 8111 (Medical Extension) for the additional 2-month window before DES referral becomes required."
+summary: "Process the medical contract extension for Marines on TLD per MCO 1900.16 Chapter 8 paragraph 8111 (Medical Extension) as a contract extension of up to 6 months for TLD, 12 months for DES or PEB cases, and 2 months for short-term care."
 roles: ["admin", "leader", "commander"]
 lastVerified: "2026-05-11"
 unitType: "s1-g1"
@@ -24,9 +24,9 @@ references:
   - "MCTFSPRIUM Marine Corps Total Force System Personnel Reporting Instructions Users Manual"
 performanceSteps:
   - "Receive MTF medical extension recommendation"
-  - "Validate extension request against 2-month limit per Chapter 8 paragraph 8111"
-  - "Confirm total LIMDU period does not exceed 8 months without DES referral"
-  - "MTF commander signs the medical extension determination"
+  - "Validate extension length against the paragraph 8111.1.a(3) limits"
+  - "Confirm the TLD period stays within the 12 month cumulative limit per paragraph 8102"
+  - "Route the NAVMC 321M to the commanding officer or CMC (MMSR-4) per paragraph 8111.1.a"
   - "Unit commander approves the extension within policy bounds"
   - "Cut updated LIMDU duty status transaction in UD-MIPS"
   - "Document extension on Page 11 per MCO P1070.12K paragraph 4006"
@@ -40,28 +40,28 @@ source:
 
 ## Role and responsibility
 
-The MTF medical officer recommends the medical extension per MCO 1900.16<Citation source="MCO 1900.16" /> Chapter 8 paragraph 8111 (Medical Extension) when the Marine's recovery requires additional time beyond the standard 6-month LIMDU period per paragraph 8105. The MTF commander signs the medical extension determination per paragraph 8110 (Limited Duty Responsibilities). The unit commander approves the extension within the policy bounds. The S-1 chief tracks the extension period and the extended re-evaluation gate. The S-1 officer signs by direction on the routing of the extension transaction. The IPAC outbound counselor cuts the updated LIMDU transaction in MCTFS through UD-MIPS per MCTFSPRIUM<Citation source="MCTFSPRIUM" />.
+The MTF medical officer recommends the medical extension per MCO 1900.16<Citation source="MCO 1900.16" /> Chapter 8 paragraph 8111 (Medical Extension) when the Marine's recovery requires additional time beyond the end of contract. The medical extension extends the contract, not the duty period. The commanding officer approves the first extension on the NAVMC 321M per paragraph 8111.1.a(1), and CMC (MMSR-4) approves later extensions. The S-1 chief tracks the extension period and the extended re-evaluation gate. The S-1 officer signs by direction on the routing of the extension transaction. The IPAC outbound counselor cuts the updated LIMDU transaction in MCTFS through UD-MIPS per MCTFSPRIUM<Citation source="MCTFSPRIUM" />.
 
-Source documents flow from the standard 6-month LIMDU period, the medical re-evaluation, the medical officer recommendation for extension, the MTF commander signature, the unit commander approval, the Page 11 entry per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6, and the extended re-evaluation appointment. Medical extension outputs include the approved 2-month extension, the documented total LIMDU period (not exceeding 8 months), the Page 11 entry, the extended re-evaluation gate, the DES referral package when warranted per Chapter 8 Section 2, or the fit-for-full-duty return record.
+Source documents flow from the TLD period, the medical re-evaluation, the medical officer recommendation for extension, the NAVMC 321M, the commanding officer or CMC approval, the Page 11 entry per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6, and the extended re-evaluation appointment. Medical extension outputs include the approved extension, the documented total LIMDU period (12 months cumulative for enlisted at the MTF), the Page 11 entry, the extended re-evaluation gate, the DES referral package when warranted per Chapter 8 Section 2, or the fit-for-full-duty return record.
 
-Per Chapter 8 paragraph 8111 (Medical Extension), the medical extension covers a 2-month period beyond standard LIMDU. Total LIMDU period including the extension does not normally exceed 8 months. Cases requiring continued LIMDU beyond 8 months route to DES per Chapter 8 Section 2.
+Per Chapter 8 paragraph 8111.1.a(3) (Medical Extension), the medical extension is a contract extension. For Marines in a TLD status, it covers the TLD period up to 6 months. For Marines pending DES referral or PEB determination, it runs up to 12 months. For short-term health assessment or medical treatment, it runs up to 2 months. The TLD period itself runs in up to two 6 month periods, 12 months cumulative for enlisted at the MTF, per paragraphs 8003.24 and 8102. A MEB goes to the PEB when the Marine is unlikely to return to full duty within the 12 month cumulative period.
 
 ## Trigger events
 
-- Standard 6-month LIMDU re-evaluation arrives with continued medical limitation.
+- TLD re-evaluation arrives with continued medical limitation.
 - MTF medical officer recommends additional recovery time.
-- Marine requires 2 additional months to support fit-for-full-duty return.
-- 8-month total LIMDU threshold approaches.
+- Marine requires additional time under contract to support fit-for-full-duty return.
+- 12 month cumulative TLD limit approaches.
 - Re-evaluation during the extension period surfaces continued condition warranting DES.
 - Fit-for-full-duty return during the extension period.
 
 ## Processing workflow
 
 1. Receive the MTF medical extension recommendation. The MTF medical officer recommends the extension based on the re-evaluation.
-2. Validate the extension request. Per MCO 1900.16<Citation source="MCO 1900.16" /> Chapter 8 paragraph 8111 (Medical Extension), the extension covers a 2-month period. Total LIMDU including the extension does not normally exceed 8 months.
-3. Confirm total LIMDU period. Per Chapter 8 paragraph 8105 (Limited Duty Policy) and paragraph 8111, the total period (initial LIMDU plus extension) stays at or below 8 months without DES referral.
-4. MTF commander signs the medical extension determination. Per Chapter 8 paragraph 8110, the MTF commander signs.
-5. Unit commander approves. The unit commander approves within the policy. The S-1 documents the approval on Page 11.
+2. Validate the extension request. Per MCO 1900.16<Citation source="MCO 1900.16" /> Chapter 8 paragraph 8111.1.a(3) (Medical Extension), the extension covers the TLD period up to 6 months, DES or PEB cases up to 12 months, and short-term care up to 2 months.
+3. Confirm total LIMDU period. Per Chapter 8 paragraphs 8003.24 and 8102, TLD runs 12 months cumulative for enlisted at the MTF. The extension extends the contract, not the duty period.
+4. Route the NAVMC 321M. Per Chapter 8 paragraph 8111.1.a, route it to the commanding officer for the first extension and to CMC (MMSR-4) for later ones.
+5. Record the approval. The S-1 documents the commanding officer or CMC (MMSR-4) approval on Page 11.
 6. Cut updated LIMDU duty status transaction. Per Appendix E and MCTFSPRIUM, the IPAC cuts the updated duty status transaction in UD-MIPS reflecting the extended period.
 7. Document on Page 11. Per MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6, cut a Page 11 documenting the medical extension, the new period, the medical scope, and the extended re-evaluation gate.
 8. Schedule the extended re-evaluation gate. Per Chapter 8 paragraph 8110, the unit and the IPAC track the extended appointment.
@@ -81,16 +81,16 @@ Per Chapter 8 paragraph 8111 (Medical Extension), the medical extension covers a
 ### Forms
 
 - Medical Extension Recommendation. Per Chapter 8 paragraph 8111.
-- MTF Commander Medical Extension Determination Letter. Per paragraph 8110.
-- Unit Commander Extension Approval. Local format.
+- NAVMC 321M Medical Extension. Per paragraph 8111.1.a.
+- Commanding Officer or CMC (MMSR-4) Extension Approval. Per paragraph 8111.1.a.
 - NAVMC 118 (11) Administrative Remarks. Page 11 documenting the extension per MCO P1070.12K paragraph 4006.
 - Extended Re-Evaluation Appointment Memorandum. Per paragraph 8110.
 
 ## Common pitfalls
 
-- Extension applied without MTF commander signature. Per Chapter 8 paragraph 8110, the MTF commander signs the medical extension determination.
-- Extension exceeds 2 months. Per Chapter 8 paragraph 8111, the standard extension covers 2 months. Beyond 2 months, DES referral applies.
-- Total LIMDU exceeds 8 months without DES referral. Per paragraphs 8105 and 8111, total LIMDU does not normally exceed 8 months. Past the threshold, DES referral per Section 2 applies.
+- Extension routed to the wrong approver. Per Chapter 8 paragraph 8111.1.a(1), the commanding officer approves first extensions and CMC (MMSR-4) approves later ones.
+- Extension length set wrong. Per Chapter 8 paragraph 8111.1.a(3), the 2 month limit applies to short-term assessment or treatment only. TLD extensions run up to 6 months and DES cases up to 12.
+- TLD exceeds 12 months cumulative without a MEB to the PEB. Per paragraphs 8003.24 and 8102, enlisted TLD runs up to 12 months at the MTF. Past 12 months, DES referral per Section 2 applies.
 - MCTFS transaction not updated. Per Appendix E and MCTFSPRIUM, the IPAC cuts the updated duty status transaction.
 - Page 11 omitted on extension. Per MCO P1070.12K paragraph 4006, document the extension.
 - Extended re-evaluation appointment missed. Per paragraph 8110, the unit and the IPAC track the extended appointment.
@@ -98,13 +98,13 @@ Per Chapter 8 paragraph 8111 (Medical Extension), the medical extension covers a
 
 ## Decision points
 
-- Extension versus DES referral. Per Chapter 8 paragraph 8111, extension covers cases where the recovery requires 2 additional months. Per Section 2, DES referral covers cases warranting PEB review.
-- Total LIMDU threshold. Per paragraph 8105, standard LIMDU is 6 months. Per paragraph 8111, the extension brings total to 8 months. Past 8 months, DES applies.
-- Fit-for-full-duty return versus continued extension. The MTF medical officer recommends. The MTF commander approves.
+- Extension versus DES referral. Per Chapter 8 paragraph 8111.1.a(3), extension length follows the Marine's medical status. Per Section 2, DES referral covers cases warranting PEB review.
+- Total LIMDU threshold. Per paragraphs 8003.24 and 8102, enlisted TLD runs 12 months cumulative at the MTF. Per paragraph 8111, the extension extends the contract, not the duty period.
+- Fit-for-full-duty return versus continued extension. The MTF medical officer recommends. The commanding officer approves the first extension and CMC (MMSR-4) approves later ones.
 
 ## Authority
 
-This sub-page sits under MCO 1900.16<Citation source="MCO 1900.16" /> Chapter 8 paragraph 8111 (Medical Extension). Paragraph 8105 (Limited Duty Policy) sets the standard 6-month period. Paragraph 8110 (Limited Duty Responsibilities) sets unit and IPAC tracking duties. Chapter 8 Section 2 paragraphs 8201-8208 covers DES referral. DODI 1332.18 sets parent DoD Disability Evaluation System. MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6 covers Page 11 documentation. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> covers MCTFS transactions.
+This sub-page sits under MCO 1900.16<Citation source="MCO 1900.16" /> Chapter 8 paragraph 8111 (Medical Extension). Paragraph 8102 (Purpose) sets the 12 month cumulative TLD guideline. Paragraph 8110 (Limited Duty Responsibilities) sets unit and IPAC tracking duties. Chapter 8 Section 2 paragraphs 8201-8208 covers DES referral. DODI 1332.18 sets parent DoD Disability Evaluation System. MCO P1070.12K<Citation source="MCO P1070.12K" /> Chapter 6 covers Page 11 documentation. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> covers MCTFS transactions.
 
 ## Related references
 
