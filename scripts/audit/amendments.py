@@ -49,7 +49,9 @@ def _fmt(kind: str, num: str) -> str:
 def doc_keys(text: str) -> list[str]:
     """Every normalized document key named in text, in order."""
     out = []
-    for m in DOC_RE.finditer(normalize(text)):
+    # "MCO 1050.3 J" (sidecar style) names the same document as "MCO 1050.3J"
+    folded = re.sub(r"(\d) ([A-Z])(?![A-Z0-9(])", r"\1\2", normalize(text))
+    for m in DOC_RE.finditer(folded):
         kind, msg_num, gen_num = m.group(1).upper(), m.group(2), m.group(3)
         if kind in MSG_TYPES and not msg_num:
             continue  # a MARADMIN number without its year names nothing

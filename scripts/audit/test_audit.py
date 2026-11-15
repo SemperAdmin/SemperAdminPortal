@@ -237,3 +237,10 @@ def test_long_cache_paths_are_read_and_written(tmp_path, monkeypatch):
     idx = am.load_index(rebuild=True, tc=sm.tc)
     assert idx == {} and os.path.exists(sm.tc.io_path(am.pickle_path(sm.tc)))
     assert am.load_index(tc=sm.tc) == {}
+
+def test_doc_key_folds_spaced_revision_letter():
+    am = load("amendments")
+    assert am.doc_key("MCO 1050.3 J") == "MCO 1050.3J"
+    assert am.doc_key("NAVMC 1200.1 L") == "NAVMC 1200.1L"
+    assert am.doc_key("MARADMIN 051/23 CLARIFICATION") == "MARADMIN 051/23"
+    assert am.doc_key("DoDI 1327.06 CH 1") == "DODI 1327.06"
