@@ -20,3 +20,47 @@ def test_read_cached_resolves_relative_path(tmp_path, monkeypatch):
     pages = tc.read_cached("MCO/two-page.pdf")
     assert len(pages) == 2
     assert "PARAGRAPH TWO" in pages[1]
+
+
+def test_amendments_amends_via_ref_letter():
+    am = load("amendments")
+    idx = am.build_index([("MARADMIN 100/10", "2010-03-01", "MARADMINS/CY2010/x.pdf",
+                           (HERE / "fixtures" / "maradmin-amends.txt").read_text())])
+    got = am.amendments_for("MCO 1050.3J", "2009-05-19", index=idx)
+    assert [(g["id"], g["kind"], g["date"]) for g in got] == [("MARADMIN 100/10", "amends", "2010-03-01")]
+    assert got[0]["file"] == "MARADMINS/CY2010/x.pdf"
+    assert am.amendments_for("MCO 1050.3J", "2011-01-01", index=idx) == []
+
+def test_amendments_cancels_direct_mention():
+    am = load("amendments")
+    idx = am.build_index([("MARADMIN 251/26", "2026-05-01", "m.pdf",
+                           (HERE / "fixtures" / "maradmin-cancels.txt").read_text())])
+    got = am.amendments_for("MARADMIN 468/26", "2026-01-01", index=idx)
+    assert [(g["id"], g["kind"]) for g in got] == [("MARADMIN 251/26", "cancels")]
+
+def test_normalize_doc_key():
+    am = load("amendments")
+    assert am.doc_key("DoDI 1327.06 CH 1") == "DODI 1327.06"
+    assert am.doc_key("MARADMIN 001/26~A4370991") == "MARADMIN 001/26"
+    assert am.doc_key("Vol. 8 MCO 5800.16, par. 4") == "MCO 5800.16"
+
+def test_source_map_resolves_title_fallback():
+    sm = load("source_map")
+    cites = {"byId": {"dodi-1327-06": {"id": "dodi-1327-06", "type": "DODI", "number": "1327.06",
+              "title": "DODI 1327.06 - Military Leave, Liberty, and Administrative Absence"}},
+             "byAlias": {"DODI 1327.06": "dodi-1327-06"}, "byBase": {}}
+    r = sm.Resolver(cites)
+    assert r.resolve("DODI 1327.06 par 3")["id"] == "dodi-1327-06"
+    assert r.resolve("DODI Leave, Liberty, and Administrative Absence (7 August 2025)")["id"] == "dodi-1327-06"
+    assert r.resolve("Nothing Known") is None
+
+def test_archive_rows_resolve_messages_and_corpora():
+    sm = load("source_map")
+    rows = [sm._row("MARADMINS/CY2023/MARADMIN_051_23_X.pdf", "051/23", "2023-01-30", "MARADMIN", []),
+            sm._row("DoDFMR/Vol_07a/Vol07a_Ch01_Basic_Pay.pdf", "DoDFMR Vol 07a Ch 01", "2024-05-01", "DoDFMR", []),
+            sm._row("DoDFMR/Vol_07a/Vol07a_Ch02_Bonuses.pdf", "DoDFMR Vol 07a Ch 02", "2024-05-01", "DoDFMR", [])]
+    arch = sm.Archive(rows, {})
+    got, _ = arch.find({"id": "m", "type": "MARADMIN", "number": "051/23", "aliases": ["MARADMIN 051/23"]})
+    assert got[0]["rel"].endswith("MARADMIN_051_23_X.pdf") and got[0]["number"] == "MARADMIN 051/23"
+    got, _ = arch.find({"id": "f", "type": "DODFMR", "number": "7000.14-R Vol 7A", "aliases": ["DoDFMR Vol 7A"]})
+    assert len(got) == 2
