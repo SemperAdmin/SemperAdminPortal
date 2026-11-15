@@ -1,0 +1,71 @@
+{
+ "content/marines/military-parental-leave-program.mdx": [
+  {
+   "line": 73,
+   "claim": "The 84-day secondary caregiver entitlement reflects the interim increase issued under PAA 01-22",
+   "severity": "major",
+   "source": "PAA 01-22",
+   "sourceFile": "PAA/CY2022/paa-01-22.md",
+   "paragraph": "PAA 01-22 para 2",
+   "quote": "implementing the increase in Secondary Caregiver Leave (SCL) from 14 days to 21 days",
+   "fix": "Drop the PAA 01-22 attribution. Cite MARADMIN 051/23 and DoDI 1327.06 para 3.11.c for the 84-day entitlement.",
+   "originPage": "content/marines/military-parental-leave-program.mdx",
+   "originCluster": "leave-1050-3j",
+   "sharedFact": false
+  },
+  {
+   "line": 313,
+   "claim": "The 12-month usage window is firm and unused days are forfeited with no extension",
+   "severity": "major",
+   "source": "DoDI 1327.06 CH 1",
+   "sourceFile": "DoDI/DoDI_1327.06_CH1_Military_Leave,_Liberty,_and_Administrative_Absence.pdf",
+   "paragraph": "DoDI 1327.06 CH1 3.11.c(11)(a)",
+   "quote": "A Service member is authorized to take ADPL after the 1-year period, if they would ordinarily lose unused ADPL",
+   "fix": "State the 1-year window extends for deployment, exercise, or resident PME of 90 or more consecutive days, and the other listed conditions.",
+   "originPage": "content/marines/military-parental-leave-program.mdx",
+   "originCluster": "leave-1050-3j",
+   "sharedFact": false
+  },
+  {
+   "line": 95,
+   "claim": "A new qualifying event inside the window triggers a new 84-day entitlement and forfeits the unused portion of the prior event",
+   "severity": "major",
+   "source": "DoDI 1327.06 CH 1",
+   "sourceFile": "DoDI/DoDI_1327.06_CH1_Military_Leave,_Liberty,_and_Administrative_Absence.pdf",
+   "paragraph": "DoDI 1327.06 CH1 3.11.c(6)(c)",
+   "quote": "If the Service member only used 42 days ... then the Service member is only authorized an additional 42 days",
+   "fix": "State unused leave from the first event carries over, and the second event adds only enough days to restore 84, per DoDI 1327.06 CH1 3.11.c.(6)(a) and (c). Cite the DoDI, not MARADMIN 191/26.",
+   "originPage": "content/marines/military-parental-leave-program.mdx",
+   "originCluster": "leave-1050-3j",
+   "sharedFact": false
+  }
+ ],
+ "content/marines/convalescent-leave.mdx": [
+  {
+   "line": 69,
+   "claim": "Initial convalescent leave is typically 30 days and extensions are decided by the medical authority",
+   "severity": "major",
+   "source": "MCO 1050.3J",
+   "sourceFile": "MCO/MCO_1050.3J.pdf",
+   "paragraph": "DoDI 1327.06 CH1 3.11.a",
+   "quote": "a Service member's unit commander or the director of a military medical treatment facility (MMTF) may grant convalescent leave",
+   "fix": "State convalescent leave caps at 30 days per condition outside childbirth. The provider recommends and the unit commander or MTF director grants.",
+   "originPage": "content/marines/convalescent-leave.mdx",
+   "originCluster": "leave-1050-3j",
+   "sharedFact": false
+  },
+  {
+   "line": 292,
+   "claim": "Only the medical authority can authorize or extend convalescent leave and the command cannot",
+   "severity": "major",
+   "source": "DoDI 1327.06 CH 1",
+   "sourceFile": "DoDI/DoDI_1327.06_CH1_Military_Leave,_Liberty,_and_Administrative_Absence.pdf",
+   "paragraph": "DoDI 1327.06 CH1 3.11.a",
+   "quote": "unit commander or the director of a military medical treatment facility (MMTF) may grant convalescent leave",
+   "fix": "Answer the FAQ with the rule. The medical provider recommends convalescent leave and the unit commander or MTF director grants it.",
+   "originPage": "content/marines/convalescent-leave.mdx",
+   "originCluster": "leave-1050-3j",
+   "sharedFact": false
+  }
+ ]
+}
