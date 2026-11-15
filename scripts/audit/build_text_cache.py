@@ -4,7 +4,7 @@ from pathlib import Path
 import pymupdf
 
 ARCHIVE = Path(r"E:\GunnyBot\Policies")
-CACHE = Path(os.environ["AUDIT_TEXT_CACHE"]) if os.environ.get("AUDIT_TEXT_CACHE") else ARCHIVE / "_text"
+CACHE = Path(os.environ["AUDIT_TEXT_CACHE"]) if os.environ.get("AUDIT_TEXT_CACHE") else Path(__file__).resolve().parents[2] / ".superpowers" / "text-cache"
 MARK = "\n\f[[page {n}]]\n"
 SKIP_DIRS = ("_text", "_quarantine", "_broken_pdfs")
 
@@ -95,7 +95,7 @@ def main(argv: list[str]) -> int:
     if walk_errors:
         print(f"[audit:cache] WALK ERRORS {len(walk_errors)} (first: {walk_errors[0]})", file=sys.stderr, flush=True)
         return 1
-    return 0
+    return 1 if counts["failed"] else 0
 
 if __name__ == "__main__":
     sys.exit(main(sys.argv[1:]))

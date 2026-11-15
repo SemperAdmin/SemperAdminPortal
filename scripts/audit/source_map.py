@@ -237,13 +237,15 @@ def _row(rel, number, date, source_type, superseded_by):
 
 def load_archive_table(rebuild=False):
     cache = tc.CACHE / "_archive_docs.json"
-    if os.path.exists(tc.io_path(cache)) and not rebuild:
+    stamp = am.archive_stamp(tc)
+    if os.path.exists(tc.io_path(cache)) and not rebuild and am.stamp_ok(tc, cache, stamp):
         with open(tc.io_path(cache), encoding="utf-8") as f:
             return json.load(f)
     rows = build_archive_table()
     os.makedirs(tc.io_path(cache.parent), exist_ok=True)
     with open(tc.io_path(cache), "w", encoding="utf-8") as f:
         json.dump(rows, f)
+    am.write_stamp(tc, cache, stamp)
     return rows
 
 
@@ -269,8 +271,33 @@ class Archive:
         self._memo: dict = {}
 
     @staticmethod
-    def _latest(rows):
-        return sorted(rows, key=lambda r: (r["date"], r["rel"]))[-1]
+    def _in_superseded(r) -> bool:
+        return "_superseded" in r["rel"].split("/")
+
+    @classmethod
+    def _latest(cls, rows):
+        live = [r for r in rows if not cls._in_superseded(r)]
+        return sorted(live or rows, key=lambda r: (r["date"], r["rel"]))[-1]
+
+    def _redirect(self, rows: list[dict]) -> list[dict]:
+        """Follow a sidecar superseded_by to a replacement that exists in the archive. Records supersededFrom."""
+        out, seen = [], set()
+        for r in rows:
+            cur, origin = r, None
+            for _ in range(5):
+                repl = next((self._by_rel[x.replace("\\", "/")] for x in cur.get("supersededBy") or []
+                             if isinstance(x, str) and x.replace("\\", "/") in self._by_rel
+                             and x.replace("\\", "/") != cur["rel"]), None)
+                if not repl:
+                    break
+                origin = origin or r["rel"]
+                cur = repl
+            if origin:
+                cur = {**cur, "supersededFrom": origin}
+            if cur["rel"] not in seen:
+                seen.add(cur["rel"])
+                out.append(cur)
+        return out
 
     def _prefix(self, n: str):
         """Rows whose normalized name equals n or continues it after a space."""
@@ -296,7 +323,8 @@ class Archive:
         memo_key = rec["id"]
         if memo_key in self._memo:
             return self._memo[memo_key]
-        self._memo[memo_key] = result = self._find(rec, ctype, number)
+        rows, mismatch = self._find(rec, ctype, number)
+        self._memo[memo_key] = result = (self._redirect(rows), mismatch)
         return result
 
     def _find(self, rec, ctype, number):
@@ -323,7 +351,7 @@ class Archive:
     def find_direct(self, ref: str) -> list[dict]:
         k = am.doc_key(ref)
         if k and k in self.by_key:
-            return [self._latest(self.by_key[k])]
+            return self._redirect([self._latest(self.by_key[k])])
         return []
 
 
@@ -405,7 +433,7 @@ def assign_wave(collection: str, fm: dict, slug: str) -> tuple[int, str | None]:
 def content_files():
     for path in sorted(CONTENT.rglob("*")):
         rel = path.relative_to(CONTENT)
-        if path.suffix not in (".mdx", ".json") or any(p in SKIP_DIRS for p in rel.parts):
+        if path.suffix not in (".mdx", ".json") or any(p in SKIP_DIRS or p.startswith(".") for p in rel.parts):
             continue
         if path.suffix == ".json" and rel.parts[0] != "inspections":
             continue
@@ -435,6 +463,8 @@ def source_record(row, ref, record, mismatch, archive_rows, index):
         entry["revisionMismatch"] = True
     if row.get("supersededBy"):
         entry["supersededBy"] = row["supersededBy"]
+    if row.get("supersededFrom"):
+        entry["supersededFrom"] = row["supersededFrom"]
     if len(archive_rows) > 1:
         entry["files"] = [r["rel"] for r in archive_rows]
     if row["type"] not in ("PRIUM",):

@@ -106,7 +106,7 @@ def load_pages() -> dict[str, str]:
     pages = {}
     for p in sorted(CONTENT.rglob("*.mdx")):
         rel = p.relative_to(CONTENT).parts
-        if rel[0] in SKIP_DIRS:
+        if rel[0] in SKIP_DIRS or any(x.startswith(".") for x in rel):
             continue
         pages[p.relative_to(REPO).as_posix()] = p.read_text(encoding="utf-8", errors="replace")
     return pages

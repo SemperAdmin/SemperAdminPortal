@@ -94,7 +94,7 @@ def scan_text(page: str, text: str, index: dict, dates: dict | None = None) -> d
 def content_pages():
     for p in sorted(CONTENT.rglob("*.mdx")):
         rel = p.relative_to(CONTENT).parts
-        if rel[0] in SKIP_DIRS or "_stubs" in rel:
+        if rel[0] in SKIP_DIRS or "_stubs" in rel or any(x.startswith(".") for x in rel):
             continue
         yield p.relative_to(REPO).as_posix(), p
 

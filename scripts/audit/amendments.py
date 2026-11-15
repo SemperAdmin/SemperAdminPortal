@@ -280,17 +280,63 @@ def pickle_path(tc) -> Path:
     return tc.CACHE / "_amend_index.pkl"
 
 
+_STAMP_SKIP = {"_text", "_quarantine", "_broken_pdfs"}
+
+
+def archive_stamp(tc, with_cache: bool = False) -> str:
+    """Hash of (path, mtime, size) for every archive json file, plus the text cache file count when asked."""
+    import hashlib
+    h = hashlib.sha256()
+    root = tc.ARCHIVE
+    entries = []
+    for dirpath, dirs, files in os.walk(root):
+        dirs[:] = [d for d in dirs if d not in _STAMP_SKIP]
+        for f in files:
+            if f.endswith(".json"):
+                full = Path(dirpath) / f
+                try:
+                    st = os.stat(tc.io_path(full))
+                except OSError:
+                    continue
+                entries.append((full.relative_to(root).as_posix(), st.st_mtime_ns, st.st_size))
+    for e in sorted(entries):
+        h.update(repr(e).encode("utf-8"))
+    if with_cache:
+        n = 0
+        for _d, _s, files in os.walk(tc.CACHE):
+            n += sum(1 for f in files if f.endswith(".txt"))
+        h.update(f"cache:{n}".encode())
+    return h.hexdigest()
+
+
+def stamp_ok(tc, derived: Path, stamp: str) -> bool:
+    sp = derived.with_name(derived.name + ".stamp")
+    try:
+        with open(tc.io_path(sp), encoding="utf-8") as f:
+            return f.read().strip() == stamp
+    except OSError:
+        return False
+
+
+def write_stamp(tc, derived: Path, stamp: str) -> None:
+    sp = derived.with_name(derived.name + ".stamp")
+    with open(tc.io_path(sp), "w", encoding="utf-8") as f:
+        f.write(stamp)
+
+
 def load_index(rebuild: bool = False, tc=None) -> dict:
     tc = tc or _load_sibling("build_text_cache")
     pkl = pickle_path(tc)
-    # The pickle is our own derived output inside _text/ (plain dict/list/str only). Never load one from elsewhere.
-    if os.path.exists(tc.io_path(pkl)) and not rebuild:
+    stamp = archive_stamp(tc, with_cache=True)
+    # The pickle is our own derived output inside the cache (plain dict/list/str only). Never load one from elsewhere.
+    if os.path.exists(tc.io_path(pkl)) and not rebuild and stamp_ok(tc, pkl, stamp):
         with open(tc.io_path(pkl), "rb") as f:
             return pickle.load(f)
     index = build_index(_archive_messages(tc))  # raises on a partial walk, so no pickle is written then
     os.makedirs(tc.io_path(pkl.parent), exist_ok=True)
     with open(tc.io_path(pkl), "wb") as f:
         pickle.dump(index, f)
+    write_stamp(tc, pkl, stamp)
     return index
 
 
