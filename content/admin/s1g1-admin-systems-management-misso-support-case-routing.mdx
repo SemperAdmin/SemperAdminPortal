@@ -3,7 +3,7 @@ title: "MISSO Support Case Routing - S-1 Procedural Page"
 slug: "misso-support-case-routing"
 summary: "Submit MISSO trouble tickets for system errors, escalate to MISSA when MISSO defers, and track case resolution through closure."
 roles: ["admin", "leader", "commander"]
-lastVerified: "2026-05-10"
+lastVerified: "2026-11-15"
 unitType: "s1-g1"
 topic: "admin-systems-management"
 function: "GENA"
@@ -26,7 +26,7 @@ performanceSteps:
   - "Submit the MISSO trouble ticket"
   - "Capture the case number and assigned technician"
   - "Track case status on a fixed cycle"
-  - "Escalate to MISSA at 5 working days without resolution"
+  - "Escalate to MISSA when the case exceeds MISSO capabilities"
   - "Validate the fix on resolution"
   - "File the case packet in the unit MISSO case register"
   - "Document the resolution in the unit system log"
@@ -41,7 +41,7 @@ S-1 admin specialists own MISSO support case routing at the unit level. The S-1 
 
 Source documents flow from system error messages, EDFR rejection lists pointing to system defects, transaction reject codes, performance issues, and account lockouts. Tickets route to MISSO through the support portal. Escalations route from MISSO to MISSA per MCAP enclosure 6. Outputs include the case number, the resolution log, the system change request when filed, and the unit MISSO case register.
 
-MCAAT inspects the MISSO case register for documentation completeness, escalation timeliness, and resolution audit trail. Open cases past 30 days without escalation trigger findings. Escalate within 5 working days when MISSO does not resolve.
+MCAAT inspects the MISSO case register for documentation completeness, escalation timeliness, and resolution audit trail. Per MCO 5000.14D enclosure 6 paragraph 1.d, the MISSO submits trouble calls beyond its capabilities to MISSA. A 5 working day escalation mark and a 30 day open-case limit are local SOP, not MCAP requirements.
 
 ## Trigger events
 
@@ -61,7 +61,7 @@ MCAAT inspects the MISSO case register for documentation completeness, escalatio
 4. Submit the MISSO trouble ticket. Route through the MISSO support portal with all documentation attached per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
 5. Capture the case number. Log the case number, submission date, and assigned MISSO technician in the unit MISSO case register.
 6. Track the case. Pull case status updates on a fixed cycle (daily for active cases, weekly for deferred). The S-1 chief tracks.
-7. Escalate to MISSA. When MISSO defers the case beyond 5 working days without resolution, escalate to the Manpower Information Systems Support Activity per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
+7. Escalate to MISSA. When the case exceeds MISSO capabilities, the MISSO escalates it to the Manpower Information Systems Support Activity per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6 paragraph 1.d. Any day limit is local SOP.
 8. Validate the fix. On case resolution, repeat the original action and confirm the system behaves correctly. The S-1 clerk validates.
 9. File the case packet. Place the trouble ticket, case number, escalation log, and resolution confirmation in the unit MISSO case register.
 10. Document the resolution. When the resolution involves a workaround or a process change, brief the chain and document in the unit system log per MCO 5239.2B<Citation source="MCO 5239.2B" />.
@@ -83,7 +83,7 @@ MCAAT inspects the MISSO case register for documentation completeness, escalatio
 ## Common pitfalls
 
 - Trouble ticket submitted without screenshots. MISSO closes the case for insufficient documentation. Capture screenshots at every error.
-- No escalation past 5 working days. The case lingers. Escalate at the 5-day mark per MCO 5000.14D<Citation source="MCO 5000.14D" />.
+- No escalation of a case beyond MISSO capabilities. The case lingers. The MISSO escalates to MISSA per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6 paragraph 1.d. Any day limit is local SOP.
 - Case resolution not validated. The user assumes a fix without retest. Validate the fix by repeating the original action.
 - Resolution not documented in the unit system log. Knowledge stays with one clerk. Document at every resolution.
 - Local fix attempted without ticket. The unit recreates the workaround monthly. Submit a ticket on first occurrence.
@@ -92,7 +92,7 @@ MCAAT inspects the MISSO case register for documentation completeness, escalatio
 
 - User error versus system error. The transaction rejects. The clerk reproduces the action. If the error reproduces across users, route to MISSO. If the error is single-user, run a record audit and retraining.
 - Local fix versus MISSO ticket. Account lockout resolves locally through password reset. System error requires a ticket. The S-1 chief routes per error type.
-- MISSA escalation timing. MISSO defers but does not close the case. Escalate at 5 working days regardless of MISSO comment per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6.
+- MISSA escalation timing. MISSO defers but does not close the case. Escalate to MISSA per MCO 5000.14D<Citation source="MCO 5000.14D" /> enclosure 6 paragraph 1.d. The unit sets any day limit in local SOP.
 
 ## Authority
 
