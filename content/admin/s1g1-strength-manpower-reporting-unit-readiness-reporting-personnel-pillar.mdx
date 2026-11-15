@@ -28,7 +28,7 @@ source:
 
 ## Role and responsibility
 
-S-1 admin specialists own the personnel pillar input to unit readiness reporting. The S-1 chief pulls the MCTFS authoritative data source (ADS) for assigned strength, available strength, and critical MOS fill. The 0170 Manpower Officer calculates the P-rating per MCO 3000.13B. The adjutant builds the personnel input narrative for the commander assessment. The commander signs the readiness report with the personnel pillar narrative.
+S-1 admin specialists own the personnel pillar input to unit readiness reporting. The S-1 chief pulls the MCTFS authoritative data source (ADS) for personnel strength and critical MOS fill. The 0170 Manpower Officer calculates the P-rating per MCO 3000.13B. The adjutant builds the personnel input narrative for the commander assessment. The commander signs the readiness report with the personnel pillar narrative.
 
 Source documents flow from the MCTFS ADS pull, the unit T-O from TFSMS, the BIC vacancy report, the non-available roster (LIMDU, PCS, hospitalization, deployment), the MMEA monitor projection, and the commander assessment narrative. Outputs include the P-rating value (P-1 through P-4), the personnel input narrative, the supporting MCTFS pull record, and the certified DRRS submission.
 
@@ -44,23 +44,23 @@ MCAAT and IGMC inspect the P-rating calculation against the MCTFS ADS pull, the 
 
 ## P-rating framework
 
-MCO 3000.13B defines the personnel readiness rating (P-rating) on a four-level scale tied to assigned strength against T-O strength, available strength against assigned strength, and critical MOS fill against critical MOS T-O.
+MCO 3000.13B defines the personnel readiness rating (P-rating) on a four-level scale tied to personnel strength against T-O strength and critical MOS fill against critical MOS T-O.
 
 - P-1. The unit has the required strength to undertake the full wartime mission.
 - P-2. The unit has the required strength to undertake the majority of the wartime mission.
 - P-3. The unit has the required strength to undertake portions of the wartime mission.
 - P-4. The unit lacks the required strength to undertake the wartime mission.
 
-The P-rating uses the lowest score across the three substrate calculations (assigned strength percentage, available strength percentage, critical MOS fill percentage) per MCO 3000.13B<Citation source="MCO 3000.13B" /> Paragraph 4.
+The P-level is based on the lower percentage of the two calculations, personnel strength and critical MOS, per MCO 3000.13B<Citation source="MCO 3000.13B" /> chapter 2 paragraph 4.a.
 
 ## Processing workflow
 
-1. Pull the MCTFS ADS data. The S-1 chief pulls the authoritative data source for assigned strength, available strength, and critical MOS fill at the report cycle cutoff date.
+1. Pull the MCTFS ADS data. The S-1 chief pulls the authoritative data source for personnel strength and critical MOS fill at the report cycle cutoff date.
 2. Pull the T-O from TFSMS. Cross-reference the T-O baseline against the assigned strength pull.
 3. Build the non-available roster. Identify Marines non-available for the wartime mission (LIMDU, hospitalization, PCS in transit, deployment in support of another unit, legal hold).
 4. Identify the critical MOS list. Pull the critical MOS list from the unit METL and the HQMC critical MOS designations per MCO 3000.13B<Citation source="MCO 3000.13B" /> Paragraph 4b(1)(l).
-5. Calculate the substrate percentages. Compute assigned strength percentage, available strength percentage, and critical MOS fill percentage against the T-O baseline.
-6. Apply the lowest-score rule. The P-rating takes the lowest of the three substrate scores per MCO 3000.13B<Citation source="MCO 3000.13B" /> Paragraph 4.
+5. Calculate the substrate percentages. Compute personnel strength percentage and critical MOS fill percentage against the T-O baseline.
+6. Apply the lowest-score rule. The P-rating takes the lower of the two substrate scores per MCO 3000.13B<Citation source="MCO 3000.13B" /> Paragraph 4.
 7. Build the personnel input narrative. The adjutant drafts the narrative covering the manning posture, gap drivers, mitigation actions, and projected closure.
 8. Route for commander assessment. The commander reviews the P-rating, the substrate scores, the narrative, and signs the readiness report.
 9. Submit to DRRS. Submit through the DRRS reporting cycle per MARADMIN 518-21 DRRS-MC consolidation direction.
