@@ -10,7 +10,7 @@ function: "PERA"
 skillLevel: 2000
 trEventCode: "0111-PERA-2009"
 mosPerforming: ["0102", "0111", "0170"]
-sourcePolicy: "MCO 1050.3J"
+sourcePolicy: "MCO 1050.16A"
 billets: ["s-1-officer", "s-1-chief", "g-1-officer", "ipac-clerk"]
 gradesPerforming: ["SSgt", "GySgt"]
 sustainmentInterval: "12 months"
@@ -41,7 +41,7 @@ source:
 
 ## Role and responsibility
 
-The convening authority and the legal advisor route the Appellate Leave action. The S-1 officer processes the Appellate Leave authorization per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 26. The S-1 chief tracks the Appellate Leave status against the MCTFS record. The IPAC pay clerk coordinates pay-side adjustments.
+The convening authority and the legal advisor route the Appellate Leave action. The officer in the chain of command exercising general court-martial jurisdiction (OEGCMJ) approves voluntary Appellate Leave and orders involuntary Appellate Leave per MCO 1050.16A<Citation source="MCO 1050.16A" /> paragraphs 4 and 7. The S-1 officer processes the resulting authorization per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 26. The S-1 chief tracks the Appellate Leave status against the MCTFS record. The IPAC pay clerk coordinates pay-side adjustments.
 
 Source documents flow from the court-martial appellate notification, the legal advisor's case status, the Marine's MCTFS record, and the convening authority's direction. Appellate Leave transactions land in MOL and MCTFS with the right chargeable or non-chargeable code per paragraph 26. Outputs include the Appellate Leave authorization, the MCTFS transaction, the chargeable status entry, and the legal records integration.
 
@@ -60,11 +60,11 @@ Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 26 (Appella
 ## Processing workflow
 
 1. Receive the notification. Pull the court-martial appellate notification from the legal advisor or convening authority.
-2. Validate eligibility. Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 26, confirm against the order rules.
+2. Validate eligibility. Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 26 and MCO 1050.16A<Citation source="MCO 1050.16A" />, confirm against the order rules.
 3. Coordinate with legal advisor. Per MCO 5800.16<Citation source="MCO 5800.16" /> Volume 16, route through legal for appellate status validation.
-4. Process the Appellate Leave authorization. The S-1 officer signs the authorization per paragraph 26.
+4. Process the Appellate Leave authorization. The OEGCMJ approves voluntary Appellate Leave and orders involuntary Appellate Leave per MCO 1050.16A<Citation source="MCO 1050.16A" /> paragraphs 4 and 7. The S-1 officer does not sign it.
 5. Cut the Appellate Leave transaction. Submit through UD-MIPS per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> with the right Appellate Leave code.
-6. Track chargeable status. Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 26, status follows the program rules.
+6. Track chargeable status. Per MCO 1050.16A<Citation source="MCO 1050.16A" /> paragraph 9.a, Appellate Leave draws down accrued leave first, then runs as excess leave with pay stopped.
 7. Coordinate Marine duty status. Per the appellate process and legal direction, Marine duty status follows the court-martial result.
 8. Process return-to-duty or separation action. On appellate resolution, route per MCO 1900.16<Citation source="MCO 1900.16" /> when separation applies.
 9. Document the period in MCTFS. Capture Appellate Leave start, end, and resolution.
@@ -81,7 +81,7 @@ Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 26 (Appella
 
 ### Forms
 
-- Appellate Leave Authorization Memorandum. Local format signed by the S-1 officer.
+- Appellate Leave Authorization Memorandum. Local format approved by the OEGCMJ.
 - Court-Martial Appellate Notification. From the convening authority or legal advisor.
 - DD Form 214 Certificate of Release or Discharge. Cut on separation following appellate review.
 

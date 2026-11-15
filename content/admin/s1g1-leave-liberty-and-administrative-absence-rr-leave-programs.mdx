@@ -8,7 +8,6 @@ unitType: "s1-g1"
 topic: "leave-liberty-and-administrative-absence"
 function: "PERA"
 skillLevel: 2000
-trEventCode: "0111-GENA-2013"
 mosPerforming: ["0102", "0111", "0170"]
 sourcePolicy: "MCO 1050.3J"
 billets: ["s-1-clerk", "s-1-chief", "g-1-officer", "ipac-clerk"]
@@ -44,7 +43,7 @@ The deployed commander authorizes R&R Leave per MCO 1050.3J<Citation source="MCO
 
 Source documents flow from the deployment order, the qualifying operation designation, the Marine's deployment duration, and the unit R&R quota. R&R Leave transactions land in MOL and MCTFS. Outputs include the R&R Leave order, the travel coordination, the chargeable status entry, and the return-to-deployment record.
 
-Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 13 (Rest and Recuperation Leave Programs), R&R Leave is authorized for Marines deployed to qualifying operations. Per paragraph 14 (Special R&R Leave Programs), Special R&R programs apply additional rules per qualifying operation. Per paragraph 16 (Leave Travel In Connection With), the travel coordination follows.
+Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 13 (Rest and Recuperation Leave Programs), R&R Leave is authorized for Marines deployed to qualifying operations. Per paragraph 14 (Special R&R Leave Programs), Special R&R is an overseas tour extension incentive the Marine elects, not an R&R variant set per operation. Per paragraph 16 (Leave Travel In Connection With), the travel coordination follows.
 
 ## Trigger events
 
@@ -61,7 +60,7 @@ Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 13 (Rest an
 1. Identify eligibility. Pull the Marine's deployment record and validate qualifying operation status per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 13.
 2. Confirm qualifying operation designation. Pull HHQ designation per the order rules.
 3. Validate deployment duration. Confirm the Marine meets the duration threshold per paragraph 13.
-4. Determine R&R or Special R&R. Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 14, Special R&R applies in specific circumstances. The deployed commander calls.
+4. Determine R&R or Special R&R. Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 14, Special R&R is an overseas tour extension incentive the Marine elects. The deployed commander does not select it.
 5. Coordinate travel arrangements. Per Chapter 2 paragraph 16 (Leave Travel In Connection With), arrange travel through the unit travel coordinator.
 6. Process the R&R Leave order. The S-1 chief cuts the leave order per paragraph 13.
 7. Track chargeable status. R&R chargeable rules differ from standard annual leave. Apply per paragraph 13.
@@ -94,13 +93,13 @@ Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 13 (Rest an
 
 ## Decision points
 
-- R&R versus Special R&R selection. Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraphs 13 and 14, Special R&R applies in specific circumstances. The deployed commander selects.
+- R&R versus Special R&R selection. Per MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraphs 13 and 14, Special R&R is an overseas tour extension incentive the Marine elects. The deployed commander does not select it.
 - Travel coordination path. Per Chapter 2 paragraph 16, travel runs through the unit travel coordinator. Coordinate timing with deployment cycle.
 - R&R extension. The Marine requests extension. The deployed commander authorizes per paragraph 13 or routes through HHQ per the order rules.
 
 ## Authority
 
-This sub-page sits under MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 13 (R&R Leave Programs), paragraph 14 (Special R&R Leave Programs), and paragraph 16 (Leave Travel In Connection With). S-1 responsibilities sit at MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 4. The processing workflow maps to NAVMC 3500.3E T-R event 0111-GENA-2013.
+This sub-page sits under MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 paragraph 13 (R&R Leave Programs), paragraph 14 (Special R&R Leave Programs), and paragraph 16 (Leave Travel In Connection With). S-1 responsibilities sit at MCO 5000.14D<Citation source="MCO 5000.14D" /> MCAP enclosure 4.
 
 ## Related references
 
@@ -109,4 +108,4 @@ This sub-page sits under MCO 1050.3J<Citation source="MCO 1050.3J" /> Chapter 2 
 - MCO 1050.3J Chapter 2 paragraph 16. Leave Travel In Connection With.
 - MCO 5000.14D Marine Corps Administrative Procedures. S-1 leave responsibilities.
 - MCTFSPRIUM. R&R Leave transaction format.
-- NAVMC 3500.3E Manpower and Administration T-R Manual. Event 0111-GENA-2013.
+- NAVMC 3500.3E Manpower and Administration T-R Manual.
