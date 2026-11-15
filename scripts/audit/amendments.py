@@ -124,36 +124,45 @@ def _ref_map(text: str) -> dict[str, str]:
     return refs
 
 
-def scan_message(text: str, own_id: str) -> list[tuple[str, str]]:
-    """Return (doc key, kind) pairs the message acts on. Kinds: cancels, amends, implements."""
+def scan_message(text: str, own_id: str) -> list[tuple[str, str, str]]:
+    """Return (doc key, kind, via) triples. Kinds: cancels, amends, implements.
+
+    via is "direct" when the sentence names the document, "ref-letter" when only a REF (A) style letter points at it.
+    """
     own = doc_key(own_id)
     refs = _ref_map(text)
     body = _BLOCKS.sub("\n", "\n" + text.upper())
     body = re.sub(r"\s+", " ", body)
-    hits: dict[str, str] = {}
+    hits: dict[str, tuple[str, str]] = {}
     rank = {"cancels": 3, "amends": 2, "implements": 1}
     for sent in re.split(r"(?<=[.!?;])\s+(?=[A-Z0-9(])|//", body):
         kind = _classify(sent)
         if not kind:
             continue
-        targets = set(doc_keys(sent))
+        direct = set(doc_keys(sent))
+        targets = set(direct)
         for m in _REFS.finditer(sent):
             for letter in re.findall(r"\(([A-Z])\)", m.group(1)):
                 if letter in refs:
                     targets.add(refs[letter])
         targets.discard(own)
         for t in targets:
-            if rank[kind] > rank.get(hits.get(t, ""), 0):
-                hits[t] = kind
-    return sorted(hits.items())
+            via = "direct" if t in direct else "ref-letter"
+            old = hits.get(t)
+            if old is None or rank[kind] > rank[old[0]] or (rank[kind] == rank[old[0]] and via == "direct"):
+                hits[t] = (kind, via)
+    return sorted((k, v[0], v[1]) for k, v in hits.items())
 
 
 def build_index(messages) -> dict[str, list[dict]]:
     """messages: iterable of (id, date, file, text). Returns {doc key: [entry]}."""
     index: dict[str, list[dict]] = {}
     for mid, date, file, text in messages:
-        for key, kind in scan_message(text, mid):
-            index.setdefault(key, []).append({"id": mid, "date": iso_date(date), "file": file, "kind": kind})
+        for key, kind, via in scan_message(text, mid):
+            entry = {"id": mid, "date": iso_date(date), "file": file, "kind": kind, "via": via}
+            if not entry["date"]:
+                entry["dateUnknown"] = True
+            index.setdefault(key, []).append(entry)
     return index
 
 
@@ -179,7 +188,10 @@ def amendments_for(doc_number: str, doc_date: str, index: dict | None = None) ->
             sig = (e["id"], e["kind"])
             if sig not in seen:
                 seen.add(sig)
-                out.append(dict(e))
+                item = dict(e)
+                if not e["date"] or not floor:
+                    item["dateUnknown"] = True  # kept, but not proven later than the base
+                out.append(item)
     return sorted(out, key=lambda e: (e["date"], e["id"]))
 
 

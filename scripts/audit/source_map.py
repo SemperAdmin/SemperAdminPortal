@@ -463,7 +463,14 @@ def build(resolver: Resolver, archive: Archive, index: dict) -> list[dict]:
                     continue
                 seen_files.add(rows[0]["rel"])
                 src = source_record(rows[0], ref, rec, mismatch, rows, index)
-                src["readable"] = readability(rows[0]["rel"])
+                states = {r["rel"]: readability(r["rel"]) for r in rows}
+                bad = sorted(f for f, st in states.items() if st == "unreadable")
+                miss = sorted(f for f, st in states.items() if st == "uncached")
+                src["readable"] = "unreadable" if bad else "uncached" if miss else "ok"
+                if bad:
+                    src["unreadableFiles"] = bad
+                if miss:
+                    src["uncachedFiles"] = miss
                 sources.append(src)
             elif rec:
                 if rec.get("type") == "MCTFSPRIUM" or rec.get("id") == "mctfsprium":
@@ -503,10 +510,10 @@ def coverage(entries: list[dict]) -> str:
     uncached = Counter()
     for e in entries:
         for s in e["sources"]:
-            if s["readable"] == "unreadable":
-                unreadable[s["file"]] += 1
-            elif s["readable"] == "uncached":
-                uncached[s["file"]] += 1
+            for f in s.get("unreadableFiles", []):
+                unreadable[f] += 1
+            for f in s.get("uncachedFiles", []):
+                uncached[f] += 1
     amended = sum(1 for e in entries if any(s["amendments"] for s in e["sources"]))
     waves = Counter(e["wave"] for e in entries)
     lines = [

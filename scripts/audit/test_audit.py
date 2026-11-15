@@ -64,3 +64,34 @@ def test_archive_rows_resolve_messages_and_corpora():
     assert got[0]["rel"].endswith("MARADMIN_051_23_X.pdf") and got[0]["number"] == "MARADMIN 051/23"
     got, _ = arch.find({"id": "f", "type": "DODFMR", "number": "7000.14-R Vol 7A", "aliases": ["DoDFMR Vol 7A"]})
     assert len(got) == 2
+
+
+def test_undated_entry_is_flagged_not_proven_later():
+    am = load("amendments")
+    text = (HERE / "fixtures" / "maradmin-amends.txt").read_text()
+    idx = am.build_index([("MARADMIN 100/10", "", "x.pdf", text)])
+    got = am.amendments_for("MCO 1050.3J", "2009-05-19", index=idx)
+    assert len(got) == 1 and got[0]["dateUnknown"] is True
+    assert "dateUnknown" not in am.build_index([("MARADMIN 100/10", "2010-03-01", "x.pdf", text)])["MCO 1050.3J"][0]
+
+def test_via_distinguishes_ref_letter_from_direct():
+    am = load("amendments")
+    letter = am.scan_message((HERE / "fixtures" / "maradmin-amends.txt").read_text(), "MARADMIN 100/10")
+    assert ("MCO 1050.3J", "amends", "ref-letter") in letter
+    direct = am.scan_message((HERE / "fixtures" / "maradmin-cancels.txt").read_text(), "MARADMIN 251/26")
+    assert direct == [("MARADMIN 468/26", "cancels", "direct")]
+    idx = am.build_index([("MARADMIN 251/26", "2026-05-01", "m.pdf", (HERE / "fixtures" / "maradmin-cancels.txt").read_text())])
+    assert am.amendments_for("MARADMIN 468/26", "2026-01-01", index=idx)[0]["via"] == "direct"
+
+def test_readability_checked_on_every_row(tmp_path, monkeypatch):
+    sm = load("source_map")
+    monkeypatch.setattr(sm.tc, "CACHE", tmp_path)
+    for rel, body in (("A/one.pdf", "text"), ("A/two.pdf", "  ")):
+        out = sm.tc.cache_path(rel); out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text("\f[[page 1]]\n" + body, encoding="utf-8")
+    assert sm.readability("A/one.pdf") == "ok"
+    assert sm.readability("A/two.pdf") == "unreadable"
+    assert sm.readability("A/three.pdf") == "uncached"
+    entries = [{"sources": [{"readable": "unreadable", "file": "A/one.pdf", "unreadableFiles": ["A/two.pdf"], "amendments": []}],
+                "unresolved": [], "noArchiveSource": False, "hasRefs": True, "wave": 1}]
+    assert "A/two.pdf" in sm.coverage(entries)
