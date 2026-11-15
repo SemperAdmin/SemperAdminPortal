@@ -1,19 +1,19 @@
 ---
 title: "Medical and Dental Readiness Tracking"
 slug: "medical-dental"
-summary: "Section leaders track Medical Readiness Class and Dental Class for every Marine. Catch Class 3 dental at the section, not at the deployment alert. The window for fixes shrinks fast."
+summary: "Section leaders track the IMR category (FMR, PMR, NMR) and Dental Readiness Class for every Marine. Catch DRC 3 at the section, not at the deployment alert. The window for fixes shrinks fast."
 roles: ["leader", "commander", "admin"]
-lastVerified: "2026-05-06"
+lastVerified: "2026-11-15"
 topic: "readiness"
 order: 3
 sourcePolicy: "DoDI 6025.19"
 sourceChapter: "Individual Medical Readiness"
 performanceSteps:
-  - "Pull MRC and Dental Class for every Marine monthly"
+  - "Pull IMR category and Dental Readiness Class for every Marine monthly"
   - "Schedule appointments for Marines below standard"
   - "Track each appointment to closure"
   - "Verify status update post-appointment"
-  - "Brief commander on section MRC and Dental status"
+  - "Brief commander on section IMR and dental status"
 references:
   - "DoDI 6025.19 Individual Medical Readiness"
   - "DoDI 6490.03 Deployment Health"
@@ -25,26 +25,25 @@ source:
   publisher: "DoD"
 ---
 
-## What MRC Means
+## What the IMR Categories Mean
 
-Medical Readiness Class summarizes the Marine's deployability across medical conditions, immunizations, lab results, dental status, and required appointments.
+Per DoDI 6025.19<Citation source="DoDI 6025.19" /> paragraph 3.1.a, every Marine sits in one Individual Medical Readiness (IMR) category in the service tracking system. The category summarizes the Marine's PHA, dental readiness assessment, immunizations, lab studies, medical equipment, and deployability.
 
-| Class | Meaning |
+| Category | Meaning |
 |---|---|
-| 1 | Fully ready, no action required |
-| 2 | Partially ready, minor action needed |
-| 3 | Not ready, deployment limiting condition |
-| 4 | Status unknown or overdue assessment |
+| FMR | Fully Medically Ready. PHA and dental assessment current, DRC 1 or 2, immunizations, labs, and equipment complete, deployable |
+| PMR | Partially Medically Ready. Overdue PHA or dental assessment (DRC 4), or missing immunizations, labs, or equipment |
+| NMR | Not Medically Ready. Deployment-limiting medical condition, or DRC 3 urgent dental need |
 
-A section running on Class 1 and 2 is a section that can deploy on alert. A section with Class 3 and 4 Marines starts behind.
+A section full of FMR Marines deploys on alert. A section with PMR and NMR Marines starts behind.
 
 ## Monthly Section Pull
 
-Pull MRC for every Marine on a fixed monthly date.
+Pull the IMR category for every Marine on a fixed monthly date.
 
-- Identify Class 3 Marines. These are deploy-blockers.
-- Identify Class 4 Marines. These are overdue or assessment gaps.
-- Identify Class 2 Marines with appointments scheduled. Track to closure.
+- Identify NMR Marines. These are deploy-blockers.
+- Identify PMR Marines. These are overdue or missing a required element.
+- Identify PMR Marines with appointments scheduled. Track to closure.
 - Identify the action item for each below-standard Marine.
 
 Common actions.
@@ -57,16 +56,16 @@ Common actions.
 
 ## Dental Class Discipline
 
-Dental Class drives a sub-component of MRC.
+Dental Readiness Class (DRC) drives a sub-component of the IMR category. Per DoDI 6025.19 paragraph 3.5.b.
 
 | Class | Meaning |
 |---|---|
-| 1 | No treatment needed |
-| 2 | Minor treatment, deployable |
-| 3 | Treatment required, deploy-limiting |
-| 4 | Status unknown |
+| DRC 1 | Current exam, no treatment needed. FMR |
+| DRC 2 | Current exam, non-urgent treatment needed. FMR |
+| DRC 3 | Urgent or emergent treatment needed. NMR, temporary non-deployable |
+| DRC 4 | Overdue for the annual dental readiness assessment. PMR |
 
-A Marine in Class 3 dental cannot deploy until treatment completes. Treatment can take weeks. The section catches Class 3 monthly, not at the alert.
+A Marine in DRC 3 cannot deploy until treatment completes. Treatment takes weeks. The section catches DRC 3 monthly, not at the alert.
 
 ## Reserve Component Considerations
 
@@ -83,38 +82,38 @@ The leader cannot drive the appointment scheduling for reserve Marines the same 
 
 Maintain a section readiness sheet.
 
-| Marine | MRC | Dental | Last PHA | Action | Due Date | Status |
+| Marine | IMR | Dental | Last PHA | Action | Due Date | Status |
 |---|---|---|---|---|---|---|
 | ... | ... | ... | ... | ... | ... | ... |
 
-Review weekly. A Class 3 Marine sitting at Class 3 for two months is a Marine the section is not pushing.
+Review weekly. A Marine sitting at NMR or DRC 3 for two months is a Marine the section is not pushing.
 
 ## Briefing the Commander
 
-Monthly section MRC and Dental status brief.
+Monthly section IMR and dental status brief.
 
 - Total Marines.
-- Class 1 and 2 count.
-- Class 3 count with action plan.
-- Class 4 count with appointment scheduled.
+- FMR count.
+- NMR and DRC 3 count with action plan.
+- PMR and DRC 4 count with appointment scheduled.
 - Trend over the prior 90 days.
 
 Commander wants the trend, not just the snapshot.
 
 ## When the Deployment Alert Drops
 
-A deployed-tomorrow alert with Class 3 Marines is a section in trouble.
+A deployed-tomorrow alert with NMR Marines is a section in trouble.
 
-- Some Class 3 conditions resolve fast (cleaning, fluoride). Schedule today.
-- Some Class 3 conditions take weeks (extractions, implants). The Marine likely cannot deploy.
-- Some Class 3 conditions require waivers. Coordinate with medical.
+- Some DRC 3 conditions resolve fast. Schedule today.
+- Some DRC 3 conditions take weeks (extractions, implants). The Marine likely cannot deploy.
+- Some deployment-limiting conditions require waivers. Coordinate with medical.
 
-The fix is to never let Class 3 sit unaddressed in the first place.
+The fix is to never let NMR or DRC 3 sit unaddressed in the first place.
 
 ## Common Tracking Failures
 
 - Monthly pull skipped during a busy month.
-- Class 4 Marines ignored because "they will get to it."
+- PMR and DRC 4 Marines ignored because "they will get to it."
 - Reserve Marines fall through the cracks.
 - Treatment tracked but post-appointment update never verified.
 - No commander brief, so the chain finds out at the alert.

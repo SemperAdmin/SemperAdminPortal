@@ -1,7 +1,7 @@
 ---
 title: "MCTFS Join and KSD Upload - S-1 Procedural Page"
 slug: "mctfs-join-and-ksd-upload"
-summary: "Cut the MCTFS join transaction through UD-MIPS with the KSD packet uploaded per MCTFSPRIUM codes, certify the diary line, and clear EDFR rejections within 5 working days per MCO 1300.8."
+summary: "Cut the MCTFS join transaction through UD-MIPS with the KSD packet uploaded per MCTFSPRIUM codes, certify the diary line, and certify the DFR within 10 calendar days per MCTFSPRIUM 120303."
 roles: ["admin", "leader"]
 lastVerified: "2026-05-11"
 unitType: "s1-g1"
@@ -27,8 +27,8 @@ performanceSteps:
   - "Cut the UD-MIPS join transaction"
   - "Attach the KSD packet to the join"
   - "Certify the diary line"
-  - "Pull EDFR within 24-48 hours"
-  - "Clear rejections within 5 working days"
+  - "View the DFR on the cycle day"
+  - "Certify each DFR within 10 calendar days and correct rejects as new diary entries"
   - "Audit the rebuilt ESR"
 source:
   title: "MCTFS Join and KSD Upload - MCO 1300.8 and MCTFSPRIUM"
@@ -39,7 +39,7 @@ source:
 
 The IPAC inbound counselor cuts the MCTFS join transaction through UD-MIPS and uploads the KSD packet per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> codes. The S-1 chief audits the rebuilt ESR after the join. The S-1 officer signs by direction on the join routing. The Marine provides the orders, the CAC, the DEERS enrollment, the dependency documents, and the prior LES.
 
-Source documents flow from the Marine's orders, the prior MCTFS ESR record, the dependency documents (marriage certificate, birth certificates), the OMPF Field Folder, the prior LES, and the supporting KSD records per MCTFSPRIUM. Join outputs include the certified UD-MIPS join transaction, the KSD packet on file, the diary line certification, the EDFR pull within 24-48 hours, the rebuilt ESR audit record, and the cleared rejections within 5 working days.
+Source documents flow from the Marine's orders, the prior MCTFS ESR record, the dependency documents (marriage certificate, birth certificates), the OMPF Field Folder, the prior LES, and the supporting KSD records per MCTFSPRIUM. Join outputs include the certified UD-MIPS join transaction, the KSD packet on file, the diary line certification, the DFR view on the cycle day, the rebuilt ESR audit record, and the DFR certified within 10 calendar days.
 
 Per MCO 1300.8<Citation source="MCO 1300.8" /> and MCTFSPRIUM, the MCTFS join sets the personnel record at the gaining unit. The KSD packet provides the supporting evidence for the join.
 
@@ -52,15 +52,15 @@ Per MCO 1300.8<Citation source="MCO 1300.8" /> and MCTFSPRIUM, the MCTFS join se
 
 ## Processing workflow
 
-1. Receive the orders and validate the report date. The IPAC inbound counselor confirms the report date drives the join effective date.
+1. Receive the orders and validate the report date. The IPAC inbound counselor confirms the date the Marine physically reports drives the join effective date per MCTFSPRIUM 60204 paragraph 3.a.
 2. Verify CAC and DEERS. Per RAPIDS, verify the Marine's CAC, DEERS enrollment, and identity.
 3. Build the KSD packet. Per MCTFSPRIUM<Citation source="MCTFSPRIUM" /> codes, the packet carries the orders, dependency documents, OMPF receipt, prior LES, and supporting records.
 4. Stage supporting documents. The dependency documents support BAH and FSA. The prior LES supports pay continuity.
 5. Cut the UD-MIPS join transaction. Per Appendix E and MCTFSPRIUM, submit the join transaction.
 6. Attach the KSD packet. Per MCTFSPRIUM, the KSD attaches to the join with the appropriate document type codes.
 7. Certify the diary line. The S-1 chief or designated certifier signs the diary line.
-8. Pull EDFR. Per MCO 1300.8<Citation source="MCO 1300.8" />, pull EDFR within 24-48 hours of the join.
-9. Clear rejections. Per MCO 1300.8, clear EDFR rejections within 5 working days. Common rejections include dependency mismatch, COLA initiation, and BAH rate.
+8. View the DFR. Per MCTFSPRIUM 120303<Citation source="MCTFSPRIUM 12-120303" /> paragraph 1, view the DFR on the date the cycle becomes available.
+9. Certify and correct. Per MCTFSPRIUM 120303 paragraph 1, certify each DFR within 10 calendar days. Correct each reject as a new diary entry inside the 5 business day timeliness goal per MCTFSPRIUM 20103. Common rejections include dependency mismatch, COLA initiation, and BAH rate.
 10. Audit the rebuilt ESR. Per MCTFSPRIUM, audit the ESR for AFADBD, PEBD, EAS, BAH, BAS, COLA, SGLI, and dependency state.
 
 ## Systems of record and forms
@@ -79,21 +79,21 @@ Per MCO 1300.8<Citation source="MCO 1300.8" /> and MCTFSPRIUM, the MCTFS join se
 - KSD Packet. Per MCTFSPRIUM codes.
 - Dependency Documents. Marriage certificate, birth certificates.
 - Prior LES. Pay continuity reference.
-- EDFR Rejection Report. Per MCO 1300.8.
+- EDFR Rejection Report. Per MCTFSPRIUM 120303.
 
 ## Common pitfalls
 
 - Join cut without KSD upload. Per MCTFSPRIUM<Citation source="MCTFSPRIUM" />, every join carries the KSD packet.
-- EDFR not pulled within 24-48 hours. Per MCO 1300.8<Citation source="MCO 1300.8" />, the EDFR cycle catches rejections early.
-- EDFR rejections past 5 working days unresolved. Per MCO 1300.8, the rejection cycle closes within 5 working days.
+- DFR not viewed on the cycle day. Per MCTFSPRIUM 120303, the DFR cycle catches rejections early.
+- DFR not certified within 10 calendar days. Per MCTFSPRIUM 120303, certify every DFR within 10 calendar days.
 - KSD packet incomplete. Per MCTFSPRIUM, the required documents support the join.
-- Effective date wrong. The report date on the orders drives the effective date.
+- Effective date wrong. The date the Marine physically reports to the major command for duty drives the effective date, not the report date on the orders.
 - ESR audit skipped. Per MCO 1300.8 and MCTFSPRIUM, the rebuilt ESR audit catches data errors.
 - Dependency status not validated. The dependency documents drive BAH and FSA.
 
 ## Decision points
 
-- Effective date. Per the orders report date, the join effective date sets pay and allowance continuity.
+- Effective date. Per the date the Marine physically reports, the join effective date sets pay and allowance continuity.
 - KSD document type code. Per MCTFSPRIUM, the code matches the document being uploaded.
 - EDFR rejection resolution priority. Pay-affecting rejections (BAH, dependency, COLA) resolve first.
 - Retroactive join. Late inbound triggers retroactive KSD upload with the correct effective date.

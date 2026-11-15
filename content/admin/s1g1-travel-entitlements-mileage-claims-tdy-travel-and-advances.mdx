@@ -1,7 +1,7 @@
 ---
 title: "TDY Travel and Advances - S-1 Procedural Page"
 slug: "tdy-travel-and-advances"
-summary: "Apply Temporary Duty (TDY) travel entitlements per DoDFMR Vol 9 Chapter 5 covering per diem, lodging, M&IE rates, travel advances per JTR Chapter 3, and TDY-specific reimbursable expenses."
+summary: "Apply Temporary Duty (TDY) travel entitlements per DoDFMR Vol 9 Chapter 5 covering per diem, lodging, M&IE rates, travel advances per DoDFMR Vol 9 Chapter 5, and TDY-specific reimbursable expenses."
 roles: ["admin", "leader", "commander"]
 lastVerified: "2026-05-22"
 unitType: "s1-g1"
@@ -17,7 +17,6 @@ sustainmentInterval: "12 months"
 references:
   - "DoDFMR Vol 9 Chapter 5 (Temporary Duty Travel and Travel Advances)"
   - "Joint Travel Regulations (JTR) Chapter 3 (Temporary Duty Travel)"
-  - "DoDFMR Vol 7A Chapter 32 (Advance Pay - travel advance cross-reference)"
   - "DTMO Per Diem Rate Tables"
   - "MCO 4650.39A Defense Travel System"
   - "MARADMIN 234/26 - Marine Corps Official Lodging Facilities in the Defense Travel System"
@@ -28,7 +27,7 @@ performanceSteps:
   - "Build the DTS authorization with lodging and M&IE"
   - "Process travel advance per DoDFMR Vol 9 Chapter 5"
   - "Apply TDY-specific reimbursable expenses"
-  - "Apply flat rate per diem on long-term TDY"
+  - "Compute long-term TDY per diem for travel of 31 days or more"
   - "Cut the travel claim within 5 business days of return"
   - "Audit TDY voucher against per diem rate"
   - "Liquidate travel advance through voucher"
@@ -44,14 +43,14 @@ The Marine traveler builds the TDY authorization in DTS per DoDFMR Vol 9<Citatio
 
 Source documents flow from the TDY orders, the JTR Chapter 3 entitlement framework, the DTMO per diem rates for the duty location, the DTS authorization, the travel advance request, the supporting receipts, and the prior MCTFS pay history. Outputs include the executed DTS authorization with per diem and M&IE, the disbursed travel advance, the processed TDY voucher, the per diem and M&IE reimbursement, the long-term TDY flat rate application, the audit trail, and the records retention.
 
-Per DoDFMR Vol 9 Chapter 5, TDY travel covers temporary duty assignments away from the permanent duty station. Per JTR Chapter 3, the operational implementation covers per diem (lodging plus M&IE), reimbursable expenses, and flat rate per diem for long-term TDY. The travel advance per Chapter 5 supports up-front trip costs.
+Per DoDFMR Vol 9 Chapter 5, TDY travel covers temporary duty assignments away from the permanent duty station. Per JTR Chapter 3, the operational implementation covers per diem (lodging plus M&IE), reimbursable expenses, and long-term TDY per diem for travel of 31 days or more. Per Chapter 5, travel advances go only to GTCC-exempt travelers, capped at 80 percent of estimated allowances.
 
 ## Trigger events
 
 - TDY orders cut on a Marine.
 - Travel advance request from the Marine.
 - TDY voucher submission post-travel.
-- Long-term TDY triggers flat rate application.
+- Long-term TDY of 31 days or more triggers the long-term per diem computation.
 - Per diem rate update from DTMO.
 - TDY voucher rejection requires correction.
 
@@ -60,9 +59,9 @@ Per DoDFMR Vol 9 Chapter 5, TDY travel covers temporary duty assignments away fr
 1. Identify the TDY trip parameters. Per DoDFMR Vol 9<Citation source="DODFMR Vol 9" /> Chapter 5, capture the location, duration, mission, and authorized mode of travel.
 2. Apply per diem rate. Per the JTR<Citation source="JTR" /> Chapter 3 and DTMO published rates, the duty location and date drive the rate.
 3. Build the DTS authorization. Per MCO 4650.39A<Citation source="MCO 4650.39A" />, the DTS authorization sets the entitlement. Per MARADMIN 234/26<Citation source="MARADMIN 234/26" /> effective 25 May 2026, set the TDY destination as the installation when applicable. Select Marine Corps official lodging (Marine Lodges or Inns of the Corps) on Marine Corps installations. Mandatory use applies to both military and civilian travelers under the Integrated Lodging Program.
-4. Process travel advance. Per Vol 9 Chapter 5 and DoDFMR Vol 7A Chapter 32, the advance supports up-front costs.
+4. Process travel advance. Per Vol 9 Chapter 5<Citation source="DODFMR Vol 9" /> paragraphs 4.1 and 5.2, advances go only to travelers with a GTCC exemption, paid by EFT. Cap the advance at 80 percent of estimated allowances, with exceptions for hardship.
 5. Apply TDY-specific reimbursable expenses. Per JTR Chapter 3, reimbursable expenses include lodging tax, baggage handling, parking, and other authorized expenses.
-6. Apply flat rate per diem on long-term TDY. Per JTR Chapter 3, flat rate per diem applies to TDY greater than 30 days at a single location.
+6. Compute long-term TDY per diem. Per JTR Chapter 2 paragraph 020312<Citation source="JTR" />, long-term TDY means continuous travel for 31 days or more, other than deployment. Compute per diem under the current JTR Chapter 2 rules.
 7. Cut the travel claim within 5 business days of return. Per MCO 4650.39A Chapter 1 paragraph 5.a.(2)(d), the voucher submits within 5 business days.
 8. Audit TDY voucher. The S-1 chief and disbursing technician audit against the per diem framework.
 9. Liquidate travel advance. Per Vol 9 Chapter 5, the advance liquidates on the voucher.
@@ -87,30 +86,29 @@ Per DoDFMR Vol 9 Chapter 5, TDY travel covers temporary duty assignments away fr
 ## Common pitfalls
 
 - Per diem rate from wrong duty location. Per DTMO and the JTR<Citation source="JTR" />, the rate ties to the duty location.
-- Flat rate per diem not applied on long-term TDY. Per JTR Chapter 3, the flat rate applies past 30 days at one location.
+- Long-term TDY per diem not computed. Per JTR Chapter 2 paragraph 020312, long-term TDY runs 31 days or more.
 - Travel advance not liquidated through voucher. Per Vol 9 Chapter 5, the advance settles on the voucher.
 - TDY voucher submitted past 5 business days. Per MCO 4650.39A<Citation source="MCO 4650.39A" /> Chapter 1 paragraph 5.a.(2)(d), the cycle is 5 business days.
 - M&IE rate misaligned with duty location. Per DTMO, the M&IE rate ties to the duty location.
 - Lodging receipt missing for expense above $75. Per Vol 9 Chapter 8 and the JTR, receipts attach for lodging and reimbursable expenses of $75 or more.
-- Long-term TDY duration not tracked. The unit tracks TDY duration against the flat rate threshold.
+- Long-term TDY duration not tracked. The unit tracks TDY duration against the 31-day long-term TDY threshold.
 - Off-base lodging selected at a Marine Corps installation with no non-availability certificate. Per MARADMIN 234/26<Citation source="MARADMIN 234/26" /> paragraph 6, reimbursement caps at the official lodging rate. The traveler pays the delta. Audit the voucher for the certificate when off-base lodging shows on the voucher.
 - TDY destination set to the city instead of the installation. Per MARADMIN 234/26<Citation source="MARADMIN 234/26" /> paragraph 4, the AO sets the destination to the installation when applicable.
 
 ## Decision points
 
 - Per diem rate. Per DTMO and the JTR, the duty location and date drive the rate.
-- Flat rate versus actual lodging. Per JTR Chapter 3, the flat rate applies past 30 days at one location.
+- Long-term TDY computation. Per JTR Chapter 2 paragraph 020312, TDY of 31 days or more takes the long-term rules.
 - On-base lodging versus off-base lodging at a Marine Corps installation. Per MARADMIN 234/26<Citation source="MARADMIN 234/26" />, on-base lodging is mandatory under the ILP unless the AO issues a certificate of non-availability. Off-base lodging without a non-availability certificate caps reimbursement at the official lodging rate.
-- Travel advance amount. Per Vol 9 Chapter 5, the advance aligns with the expected costs up to the chapter cap.
+- Travel advance amount. Per Vol 9 Chapter 5 paragraph 5.2, the advance does not exceed 80 percent of estimated allowances, with exceptions for hardship.
 - Reimbursable expense scope. Per JTR Chapter 3, the JTR specifies the reimbursable expense categories.
 
 ## Authority
 
-This sub-page sits under DoDFMR Vol 9<Citation source="DODFMR Vol 9" /> Chapter 5 (Temporary Duty Travel and Travel Advances). The JTR<Citation source="JTR" /> Chapter 3 implements TDY entitlements. DoDFMR Vol 7A Chapter 32 covers Advance Pay as cross-reference. MCO 4650.39A<Citation source="MCO 4650.39A" /> covers DTS at the Marine Corps level. DTMO publishes per diem rates.
+This sub-page sits under DoDFMR Vol 9<Citation source="DODFMR Vol 9" /> Chapter 5 (Temporary Duty Travel and Travel Advances). The JTR<Citation source="JTR" /> Chapter 3 implements TDY entitlements. MCO 4650.39A<Citation source="MCO 4650.39A" /> covers DTS at the Marine Corps level. DTMO publishes per diem rates.
 
 ## Related references
 
 - DoDFMR Vol 9 Chapter 5. TDY framework.
 - JTR Chapter 3. Traveler-level TDY entitlements.
-- DoDFMR Vol 7A Chapter 32. Advance Pay.
 - MCO 4650.39A. DTS.
