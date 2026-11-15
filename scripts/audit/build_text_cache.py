@@ -8,21 +8,41 @@ CACHE = Path(os.environ["AUDIT_TEXT_CACHE"]) if os.environ.get("AUDIT_TEXT_CACHE
 MARK = "\n\f[[page {n}]]\n"
 SKIP_DIRS = ("_text", "_quarantine", "_broken_pdfs")
 
+def io_path(p) -> str:
+    """Return a string Windows file APIs accept past MAX_PATH (LongPathsEnabled is 0 here)."""
+    s = os.path.abspath(str(p))
+    if os.name != "nt" or s.startswith("\\\\?\\"):
+        return s
+    if s.startswith("\\\\"):
+        return "\\\\?\\UNC\\" + s[2:]
+    return "\\\\?\\" + s
+
+def _read(p) -> str:
+    with open(io_path(p), encoding="utf-8") as f:
+        return f.read()
+
+def _write(p, text: str) -> None:
+    with open(io_path(p), "w", encoding="utf-8") as f:
+        f.write(text)
+
+def _exists(p) -> bool:
+    return os.path.exists(io_path(p))
+
 def extract(src: Path, out: Path) -> Path:
-    out.parent.mkdir(parents=True, exist_ok=True)
+    os.makedirs(io_path(out.parent), exist_ok=True)
     if src.suffix.lower() == ".md":
-        text = MARK.format(n=1) + src.read_text(encoding="utf-8")
+        text = MARK.format(n=1) + _read(src)
     elif src.suffix.lower() == ".docx":
         from docx import Document
         text = MARK.format(n=1) + "\n".join(p.text for p in Document(src).paragraphs)
     else:
         doc = pymupdf.open(src)
         text = "".join(MARK.format(n=i + 1) + p.get_text() for i, p in enumerate(doc))
-    out.write_text(text, encoding="utf-8")
+    _write(out, text)
     return out
 
 def read_cached_file(path: Path) -> list[str]:
-    parts = path.read_text(encoding="utf-8").split("\f[[page ")
+    parts = _read(path).split("\f[[page ")
     return [p.split("]]\n", 1)[1] for p in parts if "]]\n" in p]
 
 def cache_path(relative_path: str) -> Path:
@@ -35,13 +55,13 @@ def source_hash(src: Path) -> str:
     """Return the sidecar content_hash, or the source mtime when the sidecar is absent, unreadable, or empty."""
     side = src.with_name(src.name + ".json")
     try:
-        if side.exists():
-            value = json.loads(side.read_text(encoding="utf-8")).get("content_hash", "")
+        if _exists(side):
+            value = json.loads(_read(side)).get("content_hash", "")
             if value:
                 return str(value)
     except (OSError, ValueError, AttributeError):
         pass  # normal fallback, not logged
-    return str(src.stat().st_mtime)
+    return str(os.stat(io_path(src)).st_mtime)
 
 def process(src: Path) -> str:
     """Extract one source. Returns 'done', 'skipped', or 'failed'."""
@@ -50,9 +70,9 @@ def process(src: Path) -> str:
     stamp = out.with_name(out.name + ".hash")
     try:
         h = source_hash(src)
-        if out.exists() and stamp.exists() and stamp.read_text() == h:
+        if _exists(out) and _exists(stamp) and _read(stamp) == h:
             return "skipped"
-        extract(src, out); stamp.write_text(h)
+        extract(src, out); _write(stamp, h)
         return "done"
     except Exception as e:  # broken PDFs and bad sidecars are logged, not fatal
         print(f"FAIL {rel}: {e}", file=sys.stderr)

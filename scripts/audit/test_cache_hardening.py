@@ -70,3 +70,19 @@ def test_missing_archive_returns_nonzero(tmp_path, monkeypatch, capsys):
     captured = capsys.readouterr()
     assert "extracted 0, unchanged 0, failed 0" in captured.out
     assert "WALK ERRORS" in captured.err
+
+def test_long_cache_path_roundtrip(tmp_path, monkeypatch):
+    import os, pytest
+    if os.name != "nt":
+        pytest.skip("long-path behaviour is Windows only")
+    tc = load("build_text_cache")
+    archive = tmp_path / "archive"
+    archive.mkdir()
+    src = archive / "deep.md"
+    src.write_text("PARAGRAPH DEEP", encoding="utf-8")
+    monkeypatch.setattr(tc, "CACHE", tmp_path / "cache")
+    rel = "/".join(["segment-" + "x" * 50] * 5) + "/deep.md"
+    out = tc.cache_path(rel)
+    assert len(str(out)) > 300
+    tc.extract(src, out)
+    assert "PARAGRAPH DEEP" in tc.read_cached(rel)[0]
