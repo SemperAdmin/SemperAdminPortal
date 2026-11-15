@@ -244,3 +244,12 @@ def test_doc_key_folds_spaced_revision_letter():
     assert am.doc_key("NAVMC 1200.1 L") == "NAVMC 1200.1L"
     assert am.doc_key("MARADMIN 051/23 CLARIFICATION") == "MARADMIN 051/23"
     assert am.doc_key("DoDI 1327.06 CH 1") == "DODI 1327.06"
+
+
+def test_superseded_uses_source_date_over_jan1():
+    sr = load("superseded_refs")
+    am = load("amendments")
+    idx = am.build_index([("MARADMIN 251/26", "2026-03-01", "m.pdf", "1. MARADMIN 468/26 IS CANCELLED.")])
+    assert sr.check_ref("MARADMIN 468/26", idx)["proven"][0]["replacement"] == "MARADMIN 251/26"
+    got = sr.check_ref("MARADMIN 468/26", idx, {"MARADMIN 468/26": "2026-06-01"})
+    assert got["proven"] == [] and got["unconfirmed"] == []
