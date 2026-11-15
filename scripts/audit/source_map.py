@@ -559,7 +559,240 @@ def coverage(entries: list[dict]) -> str:
     return "\n".join(lines)
 
 
+# ---- Wave clusters (Task 4) ----
+CLUSTERS_OUT = REPO / "audit" / "2026-11-14-claims" / "clusters.json"
+SOURCE_MAP_JSON = REPO / "audit" / "2026-11-14-claims" / "source-map.json"
+SUPERSEDED_JSON = REPO / "audit" / "2026-11-14-claims" / "superseded.json"
+CONTRADICTIONS_JSON = REPO / "audit" / "2026-11-14-claims" / "contradictions.json"
+WAVE1_FAMILIES = [
+    ("pay-dodfmr", re.compile(r"DODFMR|7000\.14", re.I)),
+    ("mcramm", re.compile(r"MCRAMM|1001R", re.I)),
+    ("separations-1900-16", re.compile(r"1900\.16")),
+    ("leave-1050-3j", re.compile(r"1050\.3|1327\.06")),
+    ("legal-5800", re.compile(r"5800\.16|5800\.7")),
+    ("travel-jtr", re.compile(r"\bJTR|4650\.39", re.I)),
+    ("promotions-1400-32d", re.compile(r"1400\.32")),
+    ("bah-1751-3", re.compile(r"1751\.3")),
+]
+WAVE1_BUDGET, WAVE1_PAGE_CAP, GENERIC_PAGE_CAP, TOKEN_CAP, MIN_MERGE = 10, 40, 30, 120_000, 5
+
+
+def primary_id(row: dict) -> str | None:
+    return row["sources"][0]["id"] if row.get("sources") else None
+
+
+def pack_bins(items: list[dict], page_cap: int, token_cap: int, min_merge: int = MIN_MERGE) -> list[list[dict]]:
+    """Greedy sequential packing by (key, page). A tail bin under min_merge pages folds into the previous bin when it fits."""
+    bins: list[list[dict]] = []
+    used = 0
+    for it in sorted(items, key=lambda i: (str(i.get("key")), i["page"])):
+        if not bins or len(bins[-1]) >= page_cap or used + it["tokens"] > token_cap:
+            bins.append([])
+            used = 0
+        bins[-1].append(it)
+        used += it["tokens"]
+    if len(bins) > 1 and len(bins[-1]) < min_merge:
+        tail_tokens = sum(i["tokens"] for i in bins[-1])
+        prev_tokens = sum(i["tokens"] for i in bins[-2])
+        if len(bins[-2]) + len(bins[-1]) <= page_cap and prev_tokens + tail_tokens <= token_cap:
+            bins[-2].extend(bins.pop())
+    return bins
+
+
+def wave1_family(row: dict) -> tuple[str | None, str]:
+    """Return (family, reason). Family comes from the map's cluster tag, else the primary source id."""
+    tag = row.get("cluster")
+    if tag and tag != "keyword":
+        return tag, ""
+    pid = primary_id(row)
+    if not pid:
+        return None, "no resolved source document, cannot assign a wave 1 family"
+    for fam, rx in WAVE1_FAMILIES:
+        if rx.search(pid):
+            return fam, ""
+    return None, f"primary source {pid} is outside the 8 wave 1 families"
+
+
+def build_wave1(rows: list[dict], tokens_of, page_cap: int = WAVE1_PAGE_CAP, token_cap: int = TOKEN_CAP,
+                budget: int = WAVE1_BUDGET) -> tuple[list[dict], list[dict]]:
+    overflow: list[dict] = []
+    fams: dict[str, list[dict]] = {}
+    for r in rows:
+        fam, why = wave1_family(r)
+        if fam is None:
+            overflow.append({"page": r["page"], "reason": why})
+            continue
+        fams.setdefault(fam, []).append({"page": r["page"], "tokens": tokens_of(r), "key": primary_id(r), "row": r})
+    plan = {f: pack_bins(items, page_cap, token_cap) for f, items in fams.items()}
+
+    def drop(fam: str, reason: str) -> None:
+        for it in plan[fam].pop():
+            overflow.append({"page": it["page"], "reason": reason})
+        if not plan[fam]:
+            del plan[fam]
+
+    while sum(len(b) for b in plan.values()) > budget:
+        split = [f for f, b in plan.items() if len(b) > 1]
+        if split:
+            f = min(split, key=lambda f: (len(plan[f][-1]), f))
+            drop(f, f"wave 1 budget of {budget} clusters: tail of {f} moved to wave 2")
+        else:
+            f = min(plan, key=lambda f: (len(plan[f][0]), f))
+            drop(f, f"wave 1 budget of {budget} clusters: family {f} moved to wave 2")
+    clusters = []
+    for f in sorted(plan):
+        for n, b in enumerate(plan[f], 1):
+            cid = f if len(plan[f]) == 1 else f"{f}-{n}"
+            clusters.append({"id": cid, "family": f, "rows": [i["row"] for i in b], "pageTokens": sum(i["tokens"] for i in b)})
+    return clusters, sorted(overflow, key=lambda o: o["page"])
+
+
+def _doc_token(pid: str | None) -> str:
+    return (pid or "unsourced").split()[0].upper()
+
+
+def _slug(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-") or "unsourced"
+
+
+def build_generic(rows: list[dict], tokens_of, page_cap: int = GENERIC_PAGE_CAP, token_cap: int = TOKEN_CAP,
+                  min_merge: int = MIN_MERGE) -> list[dict]:
+    """Waves 2 and 3. Group by primary source id, fold groups under min_merge into a sibling of the same doc family."""
+    groups: dict[str | None, list[dict]] = {}
+    for r in rows:
+        groups.setdefault(primary_id(r), []).append(r)
+    big = {k: list(v) for k, v in groups.items() if len(v) >= min_merge}
+    pooled: dict[str, list[dict]] = {}
+    for k in sorted(groups, key=lambda k: (len(groups[k]), str(k))):
+        v = groups[k]
+        if len(v) >= min_merge:
+            continue
+        sibs = sorted((b for b in big if _doc_token(b) == _doc_token(k) and len(big[b]) + len(v) <= page_cap),
+                      key=lambda b: (len(big[b]), str(b)))
+        if sibs:
+            big[sibs[0]].extend(v)
+        else:
+            pooled.setdefault(_doc_token(k), []).extend(v)
+    named = {(k if k is not None else "unsourced"): v for k, v in big.items()}
+    for tok, v in pooled.items():
+        named[f"{tok} misc"] = v
+    out = []
+    for name in sorted(named):
+        items = [{"page": r["page"], "tokens": tokens_of(r), "key": primary_id(r), "row": r} for r in named[name]]
+        bins = pack_bins(items, page_cap, token_cap, min_merge)
+        for n, b in enumerate(bins, 1):
+            out.append({"id": _slug(name) + (f"-{n}" if len(bins) > 1 else ""), "family": name,
+                        "rows": [i["row"] for i in b], "pageTokens": sum(i["tokens"] for i in b)})
+    return out
+
+
+def _words(path) -> int:
+    try:
+        return len(Path(path).read_text(encoding="utf-8").split())
+    except OSError:
+        return 0
+
+
+_SRC_TOKENS: dict[str, int | None] = {}
+
+
+def source_tokens(rel: str) -> int | None:
+    """Estimated tokens (words x 1.4) of a cached source, None when not cached."""
+    if rel not in _SRC_TOKENS:
+        p = tc.cache_path(rel)
+        _SRC_TOKENS[rel] = int(sum(len(t.split()) for t in tc.read_cached(rel)) * 1.4) if tc._exists(p) else None
+    return _SRC_TOKENS[rel]
+
+
+def decorate(cluster: dict, superseded: list[dict], contradictions: list[dict]) -> dict:
+    rows = cluster["rows"]
+    pages = {r["page"] for r in rows}
+    counts: dict[str, int] = {}
+    prim: dict[str, dict] = {}
+    for r in rows:
+        if r["sources"]:
+            s = r["sources"][0]
+            counts[s["id"]] = counts.get(s["id"], 0) + 1
+            prim.setdefault(s["id"], s)
+    base = None
+    if counts:
+        b = prim[sorted(counts, key=lambda i: (-counts[i], i))[0]]
+        base = {"id": b["id"], "file": b["file"], "date": b.get("date")}
+    entries: dict[str, dict] = {}
+    for s in prim.values():
+        role = "baseDoc" if base and s["id"] == base["id"] else "companion"
+        entries.setdefault(s["file"], {"role": role, "id": s["id"], "date": s.get("date"), "file": s["file"]})
+        for a in s.get("amendments", []):
+            entries.setdefault(a["file"], {"role": "amendment", "id": a["id"], "date": a.get("date"), "file": a["file"],
+                                           "kind": a.get("kind"), "via": a.get("via")})
+    ordered = sorted(entries.values(), key=lambda e: (e["date"] or "", e["file"]), reverse=True)
+    source_files, uncached, src_tok = [], [], 0
+    for e in ordered:
+        t = source_tokens(e["file"])
+        if t is None:
+            uncached.append(e["file"])
+        else:
+            src_tok += t
+        source_files.append({**e, "path": str(tc.cache_path(e["file"])), "cached": t is not None})
+    base_amend = prim[base["id"]].get("amendments", []) if base else []
+    amends = sorted(({"id": a["id"], "date": a.get("date"), "file": a["file"], "kind": a.get("kind"), "via": a.get("via"),
+                      **({"dateUnknown": True} if a.get("dateUnknown") else {})} for a in base_amend),
+                    key=lambda a: (a["date"] or "", a["id"]), reverse=True)
+    contra = []
+    for c in contradictions:
+        vals = {v: [loc for loc in locs if loc.rsplit(":", 1)[0] in pages] for v, locs in c["values"].items()}
+        vals = {v: locs for v, locs in vals.items() if locs}
+        if vals:
+            contra.append({**{k: x for k, x in c.items() if k != "values"}, "values": vals})
+    return {"id": cluster["id"], "family": cluster["family"], "baseDoc": base, "sourceFiles": source_files,
+            "uncachedFiles": uncached, "amendments": amends,
+            "pages": [{"page": r["page"]} for r in sorted(rows, key=lambda r: r["page"])],
+            "supersededCandidates": [s for s in superseded if s["page"] in pages],
+            "contradictions": contra,
+            "pageTokens": cluster["pageTokens"], "sourceTokens": src_tok,
+            "tokenEstimate": cluster["pageTokens"] + src_tok}
+
+
+def run_clusters() -> int:
+    from datetime import datetime, timezone
+    entries = json.loads(SOURCE_MAP_JSON.read_text(encoding="utf-8"))
+    superseded = json.loads(SUPERSEDED_JSON.read_text(encoding="utf-8"))
+    superseded = superseded["superseded"] if isinstance(superseded, dict) else superseded
+    contradictions = json.loads(CONTRADICTIONS_JSON.read_text(encoding="utf-8"))
+    page_tok: dict[str, int] = {}
+
+    def tokens_of(r):
+        if r["page"] not in page_tok:
+            page_tok[r["page"]] = int(_words(REPO / r["page"]) * 1.4)
+        return page_tok[r["page"]]
+
+    waves: dict[str, dict] = {}
+    lines = []
+    for w in (1, 2, 3):
+        rows = [e for e in entries if e["wave"] == w]
+        if w == 1:
+            cl, over = build_wave1(rows, tokens_of)
+        else:
+            cl, over = build_generic(rows, tokens_of), []
+        deco = [decorate(c, superseded, contradictions) for c in cl]
+        waves[str(w)] = {"clusters": deco, "overflow": over}
+        sizes = sorted((len(c["pages"]) for c in deco), reverse=True)
+        lines.append(f"wave {w}: {len(rows)} pages, {len(deco)} clusters, overflow {len(over)}, "
+                     f"largest {sizes[0] if sizes else 0}, max tokenEstimate {max((c['tokenEstimate'] for c in deco), default=0)}")
+        if w == 1:
+            lines += [f"  {c['id']:28s} {len(c['pages']):3d} pages  pageTok {c['pageTokens']:7d}  tokenEstimate {c['tokenEstimate']:8d}  "
+                      f"amend {len(c['amendments']):3d}  superseded {len(c['supersededCandidates']):3d}  "
+                      f"contra {len(c['contradictions'])}  uncached {len(c['uncachedFiles'])}" for c in deco]
+    out = {"generated": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "waves": waves}
+    CLUSTERS_OUT.write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    print("\n".join(lines))
+    print(f"[audit:clusters] wrote {CLUSTERS_OUT.relative_to(REPO).as_posix()}; wave 1 overflow {len(waves['1']['overflow'])}")
+    return 0
+
+
 def main(argv: list[str]) -> int:
+    if "--clusters" in argv:
+        return run_clusters()
     rebuild = "--rebuild" in argv
     cites = json.loads(CITATIONS_JSON.read_text(encoding="utf-8"))
     rows = load_archive_table(rebuild)

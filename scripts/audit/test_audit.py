@@ -253,3 +253,65 @@ def test_superseded_uses_source_date_over_jan1():
     assert sr.check_ref("MARADMIN 468/26", idx)["proven"][0]["replacement"] == "MARADMIN 251/26"
     got = sr.check_ref("MARADMIN 468/26", idx, {"MARADMIN 468/26": "2026-06-01"})
     assert got["proven"] == [] and got["unconfirmed"] == []
+
+
+# ---- Task 4: cluster builder ----
+def _items(n, tokens=10, key="K"):
+    return [{"page": f"content/marines/p{i:03d}.mdx", "tokens": tokens, "key": key} for i in range(n)]
+
+def test_pack_splits_over_page_cap():
+    sm = load("source_map")
+    bins = sm.pack_bins(_items(7), page_cap=3, token_cap=10**9, min_merge=1)
+    assert [len(b) for b in bins] == [3, 3, 1]
+
+def test_pack_splits_over_token_cap():
+    sm = load("source_map")
+    bins = sm.pack_bins(_items(5, tokens=50), page_cap=40, token_cap=120, min_merge=1)
+    assert [len(b) for b in bins] == [2, 2, 1]
+
+def test_pack_merges_tail_under_five_when_it_fits():
+    sm = load("source_map")
+    assert [len(b) for b in sm.pack_bins(_items(44), page_cap=40, token_cap=10**9, min_merge=5)] == [40, 4]
+    assert [len(b) for b in sm.pack_bins(_items(14), page_cap=10, token_cap=10**9, min_merge=5)] == [10, 4]
+    assert [len(b) for b in sm.pack_bins(_items(12), page_cap=14, token_cap=10**9, min_merge=5)] == [12]
+    bins = sm.pack_bins(_items(13), page_cap=10, token_cap=10**9, min_merge=5)
+    assert [len(b) for b in bins] == [10, 3]
+
+def _row(page, src, cluster=None, wave=1):
+    return {"page": page, "roles": ["marine"], "wave": wave, "cluster": cluster,
+            "sources": [{"id": src, "file": f"MCO/{src}.pdf", "date": "2020-01-01", "amendments": []}] if src else [],
+            "unresolved": [], "noArchiveSource": not src}
+
+def test_generic_merge_small_groups_into_sibling_family():
+    sm = load("source_map")
+    rows = [_row(f"c/a{i}.mdx", "MCO 100", wave=2) for i in range(20)]
+    rows += [_row(f"c/b{i}.mdx", "MCO 200", wave=2) for i in range(2)]
+    rows += [_row(f"c/c{i}.mdx", "MCO 300", wave=2) for i in range(2)]
+    rows += [_row(f"c/d{i}.mdx", "MARADMIN 1/20", wave=2) for i in range(2)]
+    out = sm.build_generic(rows, lambda r: 10, page_cap=30, token_cap=10**9)
+    sizes = sorted(len(c["rows"]) for c in out)
+    assert sizes == [2, 24]
+    big = [c for c in out if len(c["rows"]) == 24][0]
+    assert {r["sources"][0]["id"] for r in big["rows"]} == {"MCO 100", "MCO 200", "MCO 300"}
+
+def test_wave1_budget_cap_and_overflow_listing():
+    sm = load("source_map")
+    rows = [_row(f"c/p{i:03d}.mdx", "MCO 1001R.1L", "mcramm") for i in range(25)]
+    rows += [_row(f"c/q{i:03d}.mdx", "MCO 1900.16", "separations-1900-16") for i in range(12)]
+    rows += [_row("c/k1.mdx", "MCO 5800.16 W/ CH-1", "keyword")]
+    rows += [_row("c/k2.mdx", "MCO 9999", "keyword")]
+    rows += [_row("c/k3.mdx", None, "keyword")]
+    clusters, overflow = sm.build_wave1(rows, lambda r: 10, page_cap=10, token_cap=10**9, budget=3)
+    assert len(clusters) <= 3
+    placed = [r["page"] for c in clusters for r in c["rows"]]
+    over = {o["page"]: o["reason"] for o in overflow}
+    assert sorted(placed + list(over)) == sorted(r["page"] for r in rows)
+    assert not set(placed) & set(over)
+    assert over["c/k2.mdx"] and over["c/k3.mdx"] and "c/k1.mdx" in placed or "c/k1.mdx" in over
+    assert all(o["reason"] for o in overflow)
+
+def test_wave1_keyword_page_joins_family_by_source():
+    sm = load("source_map")
+    rows = [_row("c/k1.mdx", "MCO 1050.3 J", "keyword"), _row("c/p.mdx", "MCO 1050.3 J", "leave-1050-3j")]
+    clusters, overflow = sm.build_wave1(rows, lambda r: 10, page_cap=40, token_cap=10**9, budget=10)
+    assert [c["id"] for c in clusters] == ["leave-1050-3j"] and not overflow
