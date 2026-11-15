@@ -166,14 +166,14 @@ The Field Manual enforces a clear classification framework per EO 13556, 32 CFR 
 ### CUI
 
 - System required. DoD-authorized secured LLM ONLY. Verify ATO before use.
-- Example content. NJP packages, separation actions, pay records, medical, legal proceedings.
+- Example content. NJP packages, separation actions, legal proceedings. Per MARADMIN 018/26<Citation source="MARADMIN 018/26" /> paragraph 3.a, GenAI.mil is approved for CUI but not for PII or PHI. Keep pay records and medical information out of the platform.
 - Handling controls. Banner mark all outputs. Destroy per CUI Registry. Log all access.
 
 ### Non-Negotiable Rules
 
 1. System Authorization. Verify your LLM system holds an ATO for CUI before processing any CUI-tagged prompt.
 2. No Classified Input. No prompt in the library handles SECRET or above. If your input is classified, stop.
-3. PII in Placeholders. PII enters prompts only through [PLACEHOLDER] variables filled at runtime.
+3. PII Stays Out. Per MARADMIN 018/26 paragraph 3.a, the platform is not approved for PII or PHI. Leave PII as [PLACEHOLDER] variables and fill them only after the output leaves the platform.
 4. Mark All Outputs. Any output from a CUI or FOUO prompt must be banner-marked before saving or transmitting.
 5. Destruction Required. CUI outputs must be destroyed per CUI Registry requirements. Log the destruction.
 
@@ -228,7 +228,7 @@ Read the prompt body before filling variables. Confirm the output is what you ne
 
 ### Step 3. Fill Your Placeholders
 
-Replace every [PLACEHOLDER] with your real value before sending. Never leave a bracket unfilled. Be specific.
+Replace every non-PII [PLACEHOLDER] with your real value before sending. Fill PII placeholders only after the output leaves the platform, in a secure document. Never leave a bracket unfilled in the final product. Be specific.
 
 ### Step 4. Attach a Persona Card (Optional)
 

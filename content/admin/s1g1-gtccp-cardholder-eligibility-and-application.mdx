@@ -1,7 +1,7 @@
 ---
 title: "GTCCP Cardholder Eligibility and Application - S-1 Procedural Page"
 slug: "cardholder-eligibility-and-application"
-summary: "Process IBA applications, run credit-score checks per 10 U.S.C. 2784a, and place non-qualifying applicants on Restricted cards per DoD GTCC Regulations Sections 0404, 0409, and 0410.041001-041002."
+summary: "Process IBA applications, confirm the vendor credit-score check per 10 U.S.C. 2784a, and place non-qualifying applicants on Restricted cards per DoD GTCC Regulations Sections 0404, 0409, and 0410.041001-041002."
 roles: ["admin", "leader"]
 lastVerified: "2026-05-11"
 unitType: "s1-g1"
@@ -37,10 +37,10 @@ references:
 performanceSteps:
   - "Verify eligibility per Section 0404"
   - "Open the IBA application package per Section 040901"
-  - "Run the credit-score check per Section 041001 and 10 U.S.C. 2784a"
+  - "Confirm applicant consent to the vendor credit-score check, or a DD 2883, per Section 041001 and 10 U.S.C. 2784a"
   - "Place non-qualifying applicants on Restricted cards per Section 041002"
   - "Issue IBA cardholder training per Section 040802"
-  - "Set the credit limit per Annex 1"
+  - "Set the credit limit per the Annex 1 account type and approver level"
   - "Activate the card per Section 040902"
   - "Update the cardholder file"
   - "Maintain the cardholder profile in EAS"
@@ -52,17 +52,17 @@ source:
 
 ## Role and responsibility
 
-The APC processes IBA applications per DoD GTCC Regulations Section 040901 (IBA Applications). The applicant submits the application package through the GTCC vendor Electronic Access System (EAS). The APC runs the credit-score check per Section 041001 (Requirement for Credit Score Checks) and 10 U.S.C. 2784a. The APC places non-qualifying applicants on Restricted cards per Section 041002. The CPM at HQMC P&R-RFF holds the parent program scope per MCO 4600.40C<Citation source="MCO 4600.40C" />. The unit commander approves the application package. The ODTA aligns the DTS profile with the issued IBA per MCO 4650.39A<Citation source="MCO 4650.39A" /> Chapter 3 paragraph 3.
+The APC processes IBA applications per DoD GTCC Regulations Section 040901 (IBA Applications). The applicant submits the application package through the GTCC vendor Electronic Access System (EAS). Per Section 041001 (Requirement for Credit Score Checks) and 10 U.S.C. 2784a, the GTCC vendor performs a soft-pull credit score check on each new applicant who agrees to it. The APC confirms consent or a DD 2883. The APC places non-qualifying applicants on Restricted cards per Section 041002. The CPM at HQMC P&R-RFF holds the parent program scope per MCO 4600.40C<Citation source="MCO 4600.40C" />. The unit commander approves the application package. The ODTA aligns the DTS profile with the issued IBA per MCO 4650.39A<Citation source="MCO 4650.39A" /> Chapter 3 paragraph 3.
 
-Source documents flow from the eligibility category per Section 0404, the IBA application package per Section 040901, the credit-score check result per Section 041001, the Annex 1 credit limit chart, the IBA cardholder training certificate per Section 040802, the EAS account, and the cardholder file. Application outputs include the issued standard IBA or Restricted IBA, the activated card per Section 040902, the cardholder training record, the credit limit per Annex 1, the audit trail for the IBA Listing Report per Section 0414, and the DTS profile alignment with the GTCC vendor data.
+Source documents flow from the eligibility category per Section 0404, the IBA application package per Section 040901, the credit-score check result per Section 041001, the Annex 1 credit limit chart, the IBA cardholder training certificate per Section 040802, the EAS account, and the cardholder file. Application outputs include the issued standard IBA or Restricted IBA, the activated card per Section 040902, the cardholder training record, the credit limit per the Annex 1 account type and approver level, the audit trail for the IBA Listing Report per Section 0414, and the DTS profile alignment with the GTCC vendor data.
 
-Per Section 040401 (DoD Personnel), uniformed members and DoD civilian employees with reasonable expectation of official travel hold IBA eligibility. Per Section 040405 (DoD Contractors), contractors do not hold IBA eligibility for standard IBA. Per Section 040406 (DoD Volunteer Positions), volunteer position eligibility flows from the component policy.
+Per Section 040401 (DoD Personnel), uniformed members and DoD civilian employees with reasonable expectation of official travel hold IBA eligibility. Per Section 040405 (DoD Contractors), contractors are not authorized to possess or use any type of GTCC. Per Section 040406 (DoD Volunteer Positions), volunteers hold no IBA. Their transportation goes on a CBA when the command IOP allows.
 
 ## Trigger events
 
 - Inbound traveler arrives without an IBA.
 - Newly assigned DoD civilian employee qualifies for IBA.
-- Recruiting personnel assignment triggers Section 040404 issuance.
+- Recruiting personnel apply for an IBA the normal way per Section 040404.
 - Foreign National personnel assignment triggers Section 040402 review.
 - Restricted card upgrade request after the qualifying window.
 - Credit limit increase request per Annex 1.
@@ -72,10 +72,10 @@ Per Section 040401 (DoD Personnel), uniformed members and DoD civilian employees
 
 1. Verify eligibility. Per DoD GTCC Regulations Section 0404, confirm eligibility under the appropriate sub-section (040401 DoD personnel, 040402 foreign national, 040403 NAFI, 040404 recruiting, 040405 contractors, 040406 volunteers).
 2. Open the IBA application package. Per Section 040901 (IBA Applications), the applicant initiates the application inside EAS. The package carries identification, contact information, organization assignment, and the credit-score check authorization.
-3. Run the credit-score check. Per Section 041001 (Requirement for Credit Score Checks) and 10 U.S.C. 2784a, the credit-score check runs on every new IBA applicant. The check produces a qualifying or non-qualifying result.
-4. Place non-qualifying applicants on Restricted cards. Per Section 041002 (Non-Qualifying Applicants), applicants whose credit-score check is non-qualifying or who decline the check receive a Restricted card. The Restricted card carries reduced credit limits and merchant category restrictions.
+3. Confirm the credit-score check. Per Section 041001 (Requirement for Credit Score Checks) and 10 U.S.C. 2784a, the GTCC vendor runs the soft-pull check on each new applicant who agrees to it. The APC confirms consent or a DD 2883. The check produces a qualifying or non-qualifying result.
+4. Place non-qualifying applicants on Restricted cards. Per Section 041002 (Non-Qualifying Applicants), applicants whose credit-score check is non-qualifying or who decline the check receive a Restricted card. Per MCO 4600.40C<Citation source="MCO 4600.40C" /> Enclosure 2 Chapter 2 paragraph 1b, the Restricted card has lower credit and retail limits than a standard card.
 5. Issue IBA cardholder training. Per Section 040802 (IBA Cardholder Training), the cardholder completes Travel Card 101 before card activation. The APC retains the training certificate.
-6. Set the credit limit. Per Annex 1 (Credit Limit Charts), the APC sets the credit limit per the rank or pay grade band. Increases route through the APC and the EAS.
+6. Set the credit limit. Per Annex 1 (Credit Limit Charts), the limit follows the account type and the approver level: default APC (HL4-7) approval maximum, APC (HL3) approval maximum, or CPM (HL2). Increases route to the approver level the Annex 1 chart names.
 7. Activate the card. Per Section 040902 (Issuance of IBA Cards by the Travel Card Vendor), the cardholder activates the card on receipt. The AO inside DTS verifies activation before approval of travel per DoD DTS Regulations section 030401.B.9.
 8. Update the cardholder file. The APC files the application package, the credit-score check result, the training certificate, the credit limit setting, and the activation evidence.
 9. Maintain the cardholder profile in EAS. The APC updates the EAS profile on rank change, organization change, or financial information change.
@@ -100,19 +100,19 @@ Per Section 040401 (DoD Personnel), uniformed members and DoD civilian employees
 
 ## Common pitfalls
 
-- Eligibility category misapplied. Per Section 0404 sub-sections, the eligibility category flows from the personnel category. A contractor issued a standard IBA breaks Section 040405.
-- Credit-score check skipped. Per Section 041001 and 10 U.S.C. 2784a, the check runs on every new IBA applicant. Without the check, the applicant receives a Restricted card per Section 041002.
+- Eligibility category misapplied. Per Section 0404 sub-sections, the eligibility category flows from the personnel category. A contractor issued any GTCC breaks Section 040405.
+- Credit-score check consent missing. Per Section 041001 and 10 U.S.C. 2784a, the vendor checks each applicant who agrees to it. Without the check, the applicant receives a Restricted card per Section 041002.
 - Training skipped before activation. Per Section 040802, the cardholder completes Travel Card 101 before activation. Without training, the cardholder lacks program knowledge.
-- Credit limit outside the Annex 1 band. Per Annex 1, the limit aligns with the rank or pay grade band. Outside-band limits break the rule.
+- Credit limit above the approver level. Per Annex 1, the limit aligns with the account type and approver level. A limit above the approver maximum breaks the rule.
 - Card activation missing on inbound arrival. The AO inside DTS verifies activation before approval per DoD DTS Regs section 030401.B.9. Without activation, the AO holds the authorization.
 - DTS profile misaligned with EAS. Per MCO 4650.39A Chapter 6 paragraph 3.d, the ODTA aligns at the monthly reconciliation. Misalignment surfaces on the Complete Traveler Information List.
 
 ## Decision points
 
 - Standard IBA versus Restricted IBA. Per Sections 041001 and 041002, the credit-score check result and the applicant authorization drive the card type. The Restricted card upgrades after the qualifying window with a new check.
-- Credit limit band. Per Annex 1, the limit flows from rank or pay grade. The APC adjusts on rank change.
-- DoD personnel versus contractor versus volunteer. Per Section 0404, the eligibility category drives the application path. Contractors and volunteers route per component policy.
-- Recruiting personnel applicant. Per Section 040404, recruiting personnel hold a specific Section 040404 application path. The APC applies the recruiting-side limits.
+- Credit limit approver level. Per Annex 1, the limit flows from the account type and the approver level.
+- DoD personnel versus contractor versus volunteer. Per Section 0404, the eligibility category drives the application path. Contractors hold no GTCC of any type. Volunteers hold no IBA.
+- Recruiting personnel applicant. Per Section 040404, recruiters apply normally and use the card for official reimbursable expenses in their local recruiting areas.
 
 ## Authority
 

@@ -1,0 +1,22 @@
+---
+slug: "genai-pii-limit-corrected"
+date: "2026-11-15"
+kind: "correction"
+impact: "action-required"
+title: "GenAI.mil is not approved for PII or PHI"
+summary: "MARADMIN 018/26 approves GenAI.mil for CUI but not PII or PHI. Fill PII placeholders only after the output leaves the platform."
+roles: ["marine", "leader", "commander", "admin"]
+citations: ["maradmin-018-26"]
+affectedPages:
+  - "/marines/semper-admin-ai-field-manual"
+supersededBy: null
+---
+
+The AI field manual listed pay records and medical information as CUI content
+for a DoD-authorized secured LLM. It told users to replace every placeholder
+with a real value before sending a prompt.
+
+MARADMIN 018/26 paragraph 3.a approves GenAI.mil for CUI. It does not approve
+the platform for PII, PHI, or classified information. Keep pay records and
+medical information out of prompts. Leave PII as placeholders and fill them in
+a secure document after the output leaves the platform.
