@@ -555,7 +555,7 @@ export const MARINES_CATEGORIES: MarinesCategory[] = [
     slug: "military-parental-leave-program",
     label: "Military Parental Leave Program (MPLP)",
     shortLabel: "MPLP",
-    description: "Active Duty parental leave: 12 weeks (84 days) for primary/secondary caregivers, 6-week birth parent convalescent, 12-month usage window.",
+    description: "Active Duty parental leave: 12 weeks (84 days) for each parent, birth parent convalescent leave first and outside the 84 days, 12-month usage window.",
     icon: "Heart2",
     pageType: "leaf",
   },
