@@ -38,8 +38,13 @@ SOURCE_MAP = REPO / "audit" / "2026-11-14-claims" / "source-map.json"
 def _load_sibling(name):
     spec = importlib.util.spec_from_file_location(name, HERE / f"{name}.py")
     mod = importlib.util.module_from_spec(spec)
-    sys.modules.setdefault(name, mod)
-    spec.loader.exec_module(mod)
+    registered = sys.modules.setdefault(name, mod) is mod
+    try:
+        spec.loader.exec_module(mod)
+    except Exception:
+        if registered:
+            sys.modules.pop(name, None)  # never leave a half-initialized module cached
+        raise
     return mod
 
 
