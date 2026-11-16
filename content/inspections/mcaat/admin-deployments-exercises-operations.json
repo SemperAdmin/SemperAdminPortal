@@ -26,7 +26,7 @@
           "code": "57",
           "question": "Is FSA reported within 5 days of receiving key supporting documents for Temporarily Additional Duty period(s), deployments, exercises, or operations greater than 30 days?",
           "references": [
-            "DoDFMR Vol. 7A, Chap. 18, Tables 18-1, 18-3",
+            "DoDFMR Vol. 7A, Chap. 27",
             "MCTFSPRIUM, 9-90601"
           ],
           "audience": [
@@ -271,7 +271,7 @@
           "code": "02",
           "question": "Is FSA for Temporarily Additional Duty period(s), deployments, exercises, and operations reported within 5 days of the effective date for periods greater than 30 days?",
           "references": [
-            "DoDFMR Vol. 7A, Chap. 18, Tables 18-1, 18-3, MCTFSPRIUM, 9-90601"
+            "DoDFMR Vol. 7A, Chap. 27, MCTFSPRIUM, 9-90601"
           ],
           "audience": [
             "REPORTING"

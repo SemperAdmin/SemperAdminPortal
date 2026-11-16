@@ -1,0 +1,1094 @@
+[
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 286,
+  "paragraph": "basic-needs-allowance",
+  "claim": "Monthly allowance for Marines with dependents whose income falls below 150 percent FPG (200 percent in high-cost areas). Per DoDI 1341.16 and MARADMIN 037/23. Effective 1 January 2023.",
+  "status": "contradicted",
+  "severity": "blocker",
+  "source": "MARADMIN 369/25 para 2 and content/marines/basic-needs-allowance.mdx:49",
+  "quote": "200 percent of FPG effective 12 May 2025 per Public Law 118-159 Section 621 and Change 3 to DoDI 1341.15, implemented by MARADMIN 369/25, which cancelled both earlier messages.",
+  "fix": "Write: Monthly allowance for active-duty Marines with dependents whose gross household income falls below 200 percent of the federal poverty guideline. Per 37 U.S.C. 402b, DoDI 1341.15 CH-3 and MARADMIN 369/25. Effective 12 May 2025.",
+  "sourceFile": ".superpowers/text-cache/MARADMINS/CY2025/MARADMIN_369_25_UPDATE_TO_ELIGIBILITY_FOR_AND_ADMINISTRATION_OF_THE_BASIC_NE.pdf.txt"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 710,
+  "paragraph": "family-care-plan",
+  "claim": "Mandatory FCP for single parents, dual-military couples with dependents, and Marines with sole care responsibility. NAVMC 11432 (Family Care Plan Certificate).",
+  "status": "contradicted",
+  "severity": "blocker",
+  "source": "content/marines/family-care-plan.mdx:24 and audit/2026-11-14-claims/wave-2-confirmed.md (family-care-plan lines 42, 58)",
+  "quote": "EVERY Marine with a dependent must keep a validated FCP",
+  "fix": "Write: Mandatory FCP for every Marine with a dependent. Only dual-military couples with no dependents are exempt. Replace NAVMC 11432 with NAVMC 11800 (Family Care Plan Certificate).",
+  "alsoOn": [
+   "content/marines/family-care-plan.mdx"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 462,
+  "paragraph": "family-law-for-marines",
+  "claim": "Family Care Plans for single parents and dual-military couples.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "content/marines/family-care-plan.mdx:4 and audit/2026-11-14-claims/wave-1-confirmed.md (family-law-for-marines line 351)",
+  "quote": "Mandatory for every Marine with a dependent. Only dual-military couples with no dependents are exempt.",
+  "fix": "Write: Family Care Plans for every Marine with a dependent.",
+  "alsoOn": [
+   "src/lib/marines-categories.ts:710"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 478,
+  "paragraph": "equal-opportunity-reporting",
+  "claim": "Confidential, informal, formal, and anonymous lanes. The 60-day filing window, 120 days for Reserve Marines. Dismissal grounds and the 5-day appeal. Per MARADMIN 380/26 and MCO 5354.1G.",
+  "status": "outdated",
+  "severity": "blocker",
+  "source": "MARADMIN CANX-014/26 para 1 and content/marines/equal-opportunity-reporting.mdx:34",
+  "quote": "MARADMIN CANX-014/26 cancelled MARADMIN 380/26 on 29 September 2026.",
+  "fix": "Write: Reporting discrimination or harassment under Military Equal Opportunity. MARADMIN 380/26 is cancelled. Follow MCO 5354.1G and the EOA until a replacement message publishes. Drop the 60-day, 120-day and 5-day figures.",
+  "alsoOn": [
+   "content/marines/article-138-and-ig-complaints.mdx",
+   "content/marines/equal-opportunity-reporting.mdx"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1622,
+  "paragraph": "long-term-tdy",
+  "claim": "TDY over 30 days. Reduced per diem at 30+ days. Flat-rate per diem at 180+ days.",
+  "status": "contradicted",
+  "severity": "blocker",
+  "source": "content/marines/long-term-tdy.mdx:22 and audit/2026-11-14-claims/wave-1-confirmed.md (long-term-tdy lines 23, 50)",
+  "quote": "Reduced per diem is discretionary and the AO requests it before travel, per JTR 020308. TDY of 181 or more consecutive days needs advance approval",
+  "fix": "Write: TDY over 30 days. Reduced per diem is a discretionary action the AO requests before travel. TDY of 181 or more days needs advance approval. ITRA for extended TDY."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1462,
+  "paragraph": "tdy-per-diem",
+  "claim": "Flat-rate per diem (30+/180+ days).",
+  "status": "contradicted",
+  "severity": "blocker",
+  "source": "content/marines/tdy-per-diem.mdx:56 and audit/2026-11-14-claims/wave-1-confirmed.md (tdy-per-diem line 24)",
+  "quote": "No tier cuts the rate automatically at 30 days.",
+  "fix": "Write: M&IE rates, lodging rates, reduced per diem (discretionary, requested before travel), proportional meal rate. Per diem stops on day 181 without approval."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 814,
+  "paragraph": "miscellaneous-expense-allowance",
+  "claim": "MEA flat rate or itemized. Without-receipt and with-receipt frameworks. Per JTR.",
+  "status": "contradicted",
+  "severity": "blocker",
+  "source": "content/marines/miscellaneous-expense-allowance.mdx:4 and audit/2026-11-14-claims/wave-1-confirmed.md (lines 22, 48, 59)",
+  "quote": "MEA is a civilian employee PCS allowance under JTR section 0541. Marines draw Dislocation Allowance under section 0505",
+  "fix": "Write: MEA is a civilian employee PCS allowance. Marines draw DLA under JTR section 0505 and pet costs under paragraph 050107."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 822,
+  "paragraph": "renewal-agreement-travel",
+  "claim": "RAT for OCONUS Marines extending overseas tour. Consecutive Overseas Tour (COT) framework.",
+  "status": "contradicted",
+  "severity": "blocker",
+  "source": "content/marines/renewal-agreement-travel.mdx:4 and audit/2026-11-14-claims/wave-1-confirmed.md (renewal-agreement-travel lines 25, 47)",
+  "quote": "The JTR has no Renewal Agreement Travel entitlement for Marines.",
+  "fix": "Write: COT travel and COT leave under JTR 050812. OTEIP under MARADMIN 450/26. The JTR has no RAT entitlement for Marines."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 766,
+  "paragraph": "temporary-lodging-expense",
+  "claim": "CONUS PCS lodging allowance. Up to 14 days at the new or old PDS.",
+  "status": "outdated",
+  "severity": "blocker",
+  "source": "content/marines/temporary-lodging-expense.mdx:64 and DTMO notice DoD_Authorizes_Additional_7_Days_to_CONUS_Temporary_Lodging_Expense",
+  "quote": "MARADMIN 573/24 (26 November 2024) announced the move from 14 days to 21 days for Service members moving to a new PDS in CONUS.",
+  "fix": "Write: CONUS PCS lodging allowance. Up to 21 days total at the old and new PDS. With and without dependent rates per JTR Table 5-17.",
+  "sourceFile": ".superpowers/text-cache/DTMO/DoD_Authorizes_Additional_7_Days_to_CONUS_Temporary_Lodging_Expense.pdf.txt"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 598,
+  "paragraph": "emergency-leave",
+  "claim": "Up to 30 days for family death or imminent illness. American Red Cross verification. Funded leave travel for OCONUS Marines.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "content/marines/emergency-leave.mdx:26 and audit/2026-11-14-claims/wave-1-confirmed.md (emergency-leave lines 74, 101, 125)",
+  "quote": "no 30-day limit applies. American Red Cross verification is not required, even for funded travel.",
+  "fix": "Write: Granted for death or imminent illness of immediate family. Leave granting authority approves. No 30-day standard. Red Cross verification is optional. Funded travel covers overseas to CONUS, CONUS to overseas and between overseas areas."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 590,
+  "paragraph": "convalescent-leave",
+  "claim": "30-day initial period, extendable for surgery, injury, illness recovery.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "audit/2026-11-14-claims/wave-1-confirmed.md (convalescent-leave lines 69, 292)",
+  "quote": "State convalescent leave caps at 30 days per condition outside childbirth. The provider recommends and the unit commander or MTF director grants.",
+  "fix": "Write: Medical recovery leave. Not charged against accrued leave. Caps at 30 days per condition outside childbirth. The provider recommends. The unit commander or MTF director grants.",
+  "alsoOn": [
+   "content/marines/convalescent-leave.mdx:26 still carries the uncorrected 30-day extendable text"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 662,
+  "paragraph": "birth-and-adoption",
+  "claim": "10 working day submission window.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "MCO 1751.3 ch 1 para 1.f and content/marines/life-events-overview.mdx:112",
+  "quote": "MCO 1751.3 chapter 1 paragraph 1.f sets 30 days from the life event. It sets no working day count.",
+  "fix": "Replace the 10 working day figure with 30 days from the life event.",
+  "alsoOn": [
+   "audit/2026-11-14-claims/wave-1-confirmed.md"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 678,
+  "paragraph": "death-of-dependent",
+  "claim": "10 working day submission.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "MCO 1751.3 ch 1 para 1.f and content/marines/life-events-overview.mdx:112",
+  "quote": "MCO 1751.3 chapter 1 paragraph 1.f sets 30 days from the life event. It sets no working day count.",
+  "fix": "Replace the 10 working day figure with 30 days from the life event.",
+  "alsoOn": [
+   "audit/2026-11-14-claims/wave-1-confirmed.md"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 702,
+  "paragraph": "divorce-and-spouse-loss",
+  "claim": "NAVMC 10922 within 10 working days.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "MCO 1751.3 ch 1 para 1.f and content/marines/life-events-overview.mdx:112",
+  "quote": "MCO 1751.3 chapter 1 paragraph 1.f sets 30 days from the life event. It sets no working day count.",
+  "fix": "Replace the 10 working day figure with 30 days from the life event.",
+  "alsoOn": [
+   "audit/2026-11-14-claims/wave-1-confirmed.md"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 718,
+  "paragraph": "life-events-overview",
+  "claim": "10 working day submission rule.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "MCO 1751.3 ch 1 para 1.f and content/marines/life-events-overview.mdx:112",
+  "quote": "MCO 1751.3 chapter 1 paragraph 1.f sets 30 days from the life event. It sets no working day count.",
+  "fix": "Replace the 10 working day figure with 30 days from the life event.",
+  "alsoOn": [
+   "audit/2026-11-14-claims/wave-1-confirmed.md"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 726,
+  "paragraph": "marriage-and-spouse-add",
+  "claim": "10 working day submission.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "MCO 1751.3 ch 1 para 1.f and content/marines/life-events-overview.mdx:112",
+  "quote": "MCO 1751.3 chapter 1 paragraph 1.f sets 30 days from the life event. It sets no working day count.",
+  "fix": "Replace the 10 working day figure with 30 days from the life event.",
+  "alsoOn": [
+   "audit/2026-11-14-claims/wave-1-confirmed.md"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 647,
+  "paragraph": "life-events-family-docs-coaching",
+  "claim": "NAVMC 10922 inside the 10-working-day window.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "MCO 1751.3 ch 1 para 1.f and audit/2026-11-14-claims/wave-1-confirmed.md (life-events-coaching-family-docs lines 34, 269)",
+  "quote": "MCO 1751.3 chapter 1 paragraph 1.f sets 30 days from the life event. It sets no working day count.",
+  "fix": "Write: NAVMC 10922 inside 30 days of the life event.",
+  "alsoOn": [
+   "src/lib/leader-categories.ts:1115"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 1115,
+  "paragraph": "life-events (parent group)",
+  "claim": "NAVMC 10922 inside the 10-working-day window.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "MCO 1751.3 ch 1 para 1.f and content/marines/life-events-overview.mdx:112",
+  "quote": "MCO 1751.3 chapter 1 paragraph 1.f sets 30 days from the life event. It sets no working day count.",
+  "fix": "Write: NAVMC 10922 inside 30 days of the life event.",
+  "alsoOn": [
+   "src/lib/leader-categories.ts:647"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 694,
+  "paragraph": "dependency-validation-and-recertification",
+  "claim": "Annual dependency validation cycle. MARADMIN 661/19.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "audit/2026-11-14-claims/wave-1-confirmed.md (dependency-validation-and-recertification lines 27, 63)",
+  "quote": "Re-cite to MCO 1751.3 ch 1 para 8 and state the annual cycle covers secondary dependents only.",
+  "fix": "Write: Annual validation cycle for secondary dependents per MCO 1751.3 ch 1 para 8. Drop MARADMIN 661/19."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 670,
+  "paragraph": "child-custody-changes",
+  "claim": "Per MCO 1751.3 and MCO 7220.24.",
+  "status": "contradicted",
+  "severity": "minor",
+  "source": "audit/2026-11-14-claims/wave-1-confirmed.md (child-custody-changes line 13)",
+  "quote": "Replace MCO 7220.24 with MCO 1751.3 ch 2 as the BAH-DIFF source.",
+  "fix": "Cite MCO 1751.3 ch 2 for BAH-DIFF."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 926,
+  "paragraph": "meritorious-promotions",
+  "claim": "Meritorious limited to MSgt (1stSgt not authorized).",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "MCO P1400.32D para 4100.1b and content/marines/meritorious-promotions.mdx:77",
+  "quote": "meritorious promotions are NOT authorized above GySgt. The Recruiter of the Year program is the only path to MSgt.",
+  "fix": "Write: Meritorious promotion is capped at GySgt. Only Recruiter of the Year reaches MSgt. 1stSgt is not authorized."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 894,
+  "paragraph": "non-competitive-cpl-to-sgt-promotions",
+  "claim": "Four non-competitive paths for Cpl-to-Sgt promotion. SULI (MARADMIN 225/23).",
+  "status": "outdated",
+  "severity": "blocker",
+  "source": "MARADMIN 222/26 para 3.a.2",
+  "quote": "The Small-Unit Leader Initiative (SULI) established by reference (b) is cancelled.",
+  "fix": "Write: Three non-competitive paths for Cpl-to-Sgt promotion. SULI (MARADMIN 225/23) is cancelled effective 1 October 2026 per MARADMIN 222/26. Keep the Active Duty Recruiter, Reserve Recruiter and IMOS paths.",
+  "alsoOn": [
+   "src/lib/marines-categories.ts:2136"
+  ],
+  "sourceFile": ".superpowers/text-cache/MARADMINS/CY2026/MARADMIN_222_26_FORTHCOMING_CHANGES_TO_TIME_IN_SERVICE_REQUIREMENT_FOR_PROMO.pdf.txt"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 2136,
+  "paragraph": "promotions (parent group)",
+  "claim": "Junior enlisted (JEPES), SULI ... Per MARADMIN 225/23.",
+  "status": "outdated",
+  "severity": "major",
+  "source": "MARADMIN 222/26 para 3.a.2",
+  "quote": "The Small-Unit Leader Initiative (SULI) established by reference (b) is cancelled.",
+  "fix": "Remove SULI and the MARADMIN 225/23 cite. Cite MARADMIN 222/26 for the 30 month Sergeant TIS.",
+  "alsoOn": [
+   "src/lib/marines-categories.ts:894"
+  ],
+  "sourceFile": ".superpowers/text-cache/MARADMINS/CY2026/MARADMIN_222_26_FORTHCOMING_CHANGES_TO_TIME_IN_SERVICE_REQUIREMENT_FOR_PROMO.pdf.txt"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 998,
+  "paragraph": "career-reenlistments-stap",
+  "claim": "Enlisted Career Designation Program (ECDP) Pilot per MARADMIN 076/25 for E-8/E-9.",
+  "status": "outdated",
+  "severity": "major",
+  "source": "MARADMIN 190/26 paras 1-2 and audit/2026-11-14-claims/wave-2-confirmed.md (career-reenlistments-stap lines 94, 95)",
+  "quote": "selected to Master Sergeant/First Sergeant (E-8) with at least 15 years of service",
+  "fix": "Write: ECDP per MARADMIN 190/26 for E-8 and E-9, including E-8 selects with 15 years of service. ECC cutoff is 30 September 2027.",
+  "alsoOn": [
+   "src/lib/marines-categories.ts:2184"
+  ],
+  "sourceFile": ".superpowers/text-cache/MARADMINS/CY2026/MARADMIN_190_26_UPDATE_AND_EXTENSION_OF_THE_MARINE_CORPS_ENLISTED_CAREER.pdf.txt"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 2184,
+  "paragraph": "reenlistments-and-extensions (parent group)",
+  "claim": "MARADMIN 076/25 (ECDP).",
+  "status": "outdated",
+  "severity": "major",
+  "source": "MARADMIN 190/26",
+  "quote": "Update and extension of the Marine Corps Enlisted Career Designation Program",
+  "fix": "Cite MARADMIN 190/26 for ECDP.",
+  "alsoOn": [
+   "src/lib/marines-categories.ts:998"
+  ],
+  "sourceFile": ".superpowers/text-cache/MARADMINS/CY2026/MARADMIN_190_26_UPDATE_AND_EXTENSION_OF_THE_MARINE_CORPS_ENLISTED_CAREER.pdf.txt"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1022,
+  "paragraph": "duty-station-incentive",
+  "claim": "First-Term Marines on-station 18+ months requesting 36+ months reenlistment may submit up to 3 DSI preferences.",
+  "status": "unsupported",
+  "severity": "major",
+  "source": "audit/2026-11-14-claims/wave-2-confirmed.md (duty-station-incentive lines 59, 63, 71)",
+  "quote": "Remove the 18 month on-station rule or cite its source. The archive gives no DSI time-on-station rule.",
+  "fix": "Drop the 18 month, 36 month and three preference rules or cite the retention MARADMIN paragraph.",
+  "alsoOn": [
+   "content/marines/first-term-reenlistments-ftap.mdx"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1030,
+  "paragraph": "slip-duty-station-incentive",
+  "claim": "earn the right to choose your follow-on duty station.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "audit/2026-11-14-claims/wave-2-confirmed.md (slip-duty-station-incentive line 16)",
+  "quote": "Say you and your monitor agree on a follow-on duty station. The monitor applies it case by case, so it is not a guaranteed pick.",
+  "fix": "Write: Volunteer for a hard-to-fill station and agree on a follow-on duty station with your monitor. Not a guaranteed pick.",
+  "alsoOn": [
+   "src/lib/marines-categories.ts:2249"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 2249,
+  "paragraph": "strategic-location-incentive-program (parent group)",
+  "claim": "Career Marines volunteering for difficult-to-fill assignments earn the right to choose their follow-on duty station.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "audit/2026-11-14-claims/wave-2-confirmed.md (slip-duty-station-incentive line 16)",
+  "quote": "Say you and your monitor agree on a follow-on duty station. The monitor applies it case by case, so it is not a guaranteed pick.",
+  "fix": "Replace earn the right to choose with agree on a follow-on station with your monitor.",
+  "alsoOn": [
+   "src/lib/marines-categories.ts:1030"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1054,
+  "paragraph": "extensions",
+  "claim": "Three types (Convenience of Government, Personal Convenience, Operational).",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "audit/2026-11-14-claims/wave-2-confirmed.md (extensions lines 55, 97, 108, 114)",
+  "quote": "Replace the three invented categories with the chapter 5 circumstances.",
+  "fix": "Write: Extension circumstances per MCO 1040.31 chapter 5. LCA extensions cover three cases. Cumulative cap 48 months.",
+  "alsoOn": [
+   "src/lib/marines-categories.ts:974"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1062,
+  "paragraph": "direct-affiliation-program",
+  "claim": "Affiliate with SMCR, IMA, AR, or IRR.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "audit/2026-11-14-claims/wave-1-confirmed.md (obligated-service-for-promotion line 115) and content/marines/direct-affiliation-program.mdx:25",
+  "quote": "List SMCR and IMA only as DAP options. Remove Active Reserve and IRR.",
+  "fix": "Write: Affiliate with an SMCR unit or IMA. IRR is a standard transition with no DAP bonus."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 310,
+  "paragraph": "family-separation-allowance",
+  "claim": "$300/month for involuntary separation 30+ days.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "audit/2026-11-14-claims/wave-2-confirmed.md (family-separation-allowance line 4) and content/marines/family-separation-allowance.mdx:30",
+  "quote": "Marines who are involuntarily separated from their dependents for more than 30 continuous days.",
+  "fix": "Write: $300/month for involuntary separation of more than 30 continuous days."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1382,
+  "paragraph": "advance-and-emergency-pay",
+  "claim": "PCS advance up to 3 months basic pay.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "content/marines/advance-and-emergency-pay.mdx:26 and audit/2026-11-14-claims/wave-1-confirmed.md (advance-and-emergency-pay line 55)",
+  "quote": "E-3 and below draw 1 month of basic pay and E-4 and above draw up to 3 months",
+  "fix": "Write: PCS advance of 1 month (E-3 and below) or up to 3 months (E-4 and above), repaid over 12 months."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 358,
+  "paragraph": "fitrep-sections-and-marking",
+  "claim": "Section-by-section walkthrough of MCO 1610.7B FITREP Sections A through K.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "content/marines/fitrep-sections-and-marking.mdx:24 and audit/2026-11-14-claims/wave-2-confirmed.md (fitrep-sections-and-marking line 24)",
+  "quote": "has 12 sections labeled A through L.",
+  "fix": "Change Sections A through K to Sections A through L."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1246,
+  "paragraph": "foreign-language-proficiency-bonus",
+  "claim": "Up to $1,000/month or $12,000/year.",
+  "status": "unsupported",
+  "severity": "major",
+  "source": "content/marines/foreign-language-proficiency-bonus.mdx:29",
+  "quote": "Each skill you test (listening, reading, speaking) earns its own amount, from $50 to $400 a month. The total stops at",
+  "fix": "Write: $50 to $400 a month per tested skill, up to $12,000 a year, per MARADMIN 480/26. Drop the $1,000 monthly figure."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 398,
+  "paragraph": "fitrep-appeals-perb",
+  "claim": "Per MCO 1610.7B Chapter 7. Time limits.",
+  "status": "outdated",
+  "severity": "minor",
+  "source": "audit/2026-11-14-claims/wave-2-confirmed.md (fitrep-appeals-perb lines 139, 197)",
+  "quote": "State three years from discovery and drop the Chapter 7 cite.",
+  "fix": "Cite Chapter 10 for the DD 149 route and state three years from discovery."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1614,
+  "paragraph": "gtcc-misuse-and-suspension",
+  "claim": "Suspension thresholds (60-day delinquency).",
+  "status": "contradicted",
+  "severity": "minor",
+  "source": "content/marines/gtcc-misuse-and-suspension.mdx:88",
+  "quote": "the standard threshold for suspension is 61 days past billing on the GTCC bill",
+  "fix": "Write: Suspension thresholds (61-day delinquency)."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1790,
+  "paragraph": "personal-financial-management-program",
+  "claim": "Per MCO 1740.13 and Marine Corps Community Services policy.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "audit/2026-11-14-claims/wave-2-confirmed.md (personal-financial-management-program line 8)",
+  "quote": "Replace sourcePolicy with MARADMIN 112/26 and DoDI 1322.34.",
+  "fix": "Cite MARADMIN 112/26 and DoDI 1322.34. MCO 1740.13 governs Family Care Plans."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1726,
+  "paragraph": "casualty-assistance-program",
+  "claim": "Per MCO 3040.4 and MCO 1770.1.",
+  "status": "outdated",
+  "severity": "minor",
+  "source": "audit/2026-11-14-claims/wave-2-confirmed.md (casualty-assistance-program line 94)",
+  "quote": "Cite MCO 3040.4 chapter 2 for CACO training. Drop MCO 1770.1.",
+  "fix": "Drop MCO 1770.1.",
+  "alsoOn": [
+   "src/lib/marines-categories.ts:1734"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1686,
+  "paragraph": "marinenet-and-distance-learning",
+  "claim": "MarineNet at marinenet.usmc.mil.",
+  "status": "outdated",
+  "severity": "minor",
+  "source": "audit/2026-11-14-claims/wave-2-confirmed.md (marinenet-and-distance-learning line 4)",
+  "quote": "Rename to MCeLE, formerly MarineNet, and update the address.",
+  "fix": "Name MCeLE, formerly MarineNet."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 176,
+  "paragraph": "pe-overview",
+  "claim": "JEPES for the junior enlisted tier, FitRep for SNCO and officer.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "content/leader/performance-evaluation-overview.mdx:4, 34 and audit/2026-11-14-claims/wave-2-confirmed.md (lines 31, 32)",
+  "quote": "FitRep evaluates Sergeant through Major General.",
+  "fix": "Write: JEPES for Private through Corporal, FitRep for Sergeant through Major General.",
+  "alsoOn": [
+   "src/lib/leader-categories.ts:1005"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 1005,
+  "paragraph": "performance-evaluation (parent group)",
+  "claim": "FitRep cycle for SNCO and officer.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "content/leader/performance-evaluation-overview.mdx:34",
+  "quote": "Sergeants receive FitReps, not JEPES.",
+  "fix": "Write: FitRep cycle for Sergeant through Major General.",
+  "alsoOn": [
+   "src/lib/leader-categories.ts:176"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 186,
+  "paragraph": "jepes",
+  "claim": "Replaced Pro and Con marks for E-1 through E-5.",
+  "status": "contradicted",
+  "severity": "blocker",
+  "source": "MCO 1616.1 encl 1 ch 1 para 1a and audit/2026-11-14-claims/wave-2-confirmed.md (performance-evaluation-jepes line 4)",
+  "quote": "Change E-1 through E-5 to E-1 through E-4 in the summary and body.",
+  "fix": "Write: Replaced Pro and Con marks for E-1 through E-4."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 216,
+  "paragraph": "rs-mechanics",
+  "claim": "Reporting Senior writes Section H, attribute marks, narrative, comparative assessment.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "content/leader/performance-evaluation-rs-mechanics.mdx:4 and audit/2026-11-14-claims/wave-2-confirmed.md (rs-mechanics lines 34, 63)",
+  "quote": "The RO owns the comparative assessment.",
+  "fix": "Write: Reporting Senior writes the billet description, accomplishments, attribute marks and RS comments. The RO owns the comparative assessment in section K item 3."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 377,
+  "paragraph": "bridging-processing-timelines",
+  "claim": "Standard PAC windows.",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "content/leader/bridging-processing-timelines.mdx:4 and audit/2026-11-14-claims/wave-2-confirmed.md (bridging-processing-timelines line 29)",
+  "quote": "Typical PAC experience is 10 working days for most packages.",
+  "fix": "Write: Typical PAC experience.",
+  "alsoOn": [
+   "src/lib/leader-categories.ts:1166"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 1166,
+  "paragraph": "bridging (parent group)",
+  "claim": "PAC processing timelines. Follow-up cadence.",
+  "status": "contradicted",
+  "severity": "minor",
+  "source": "audit/2026-11-14-claims/wave-2-confirmed.md (bridging-processing-timelines line 29)",
+  "quote": "Retitle the table as typical local experience, not policy, or cite a source.",
+  "fix": "Call the windows typical local experience.",
+  "alsoOn": [
+   "src/lib/leader-categories.ts:377"
+  ]
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 70,
+  "paragraph": "ai-fellowship-programs",
+  "claim": "5-month fellowship. Eligibility O1-O5, E4-E8, CWO 1-5, GS-5 to GS-14.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/ai-fellowship-programs.mdx:283",
+  "quote": "Eligibility. O1-O5, E4-E8, CWO 1-5, GS-5 through GS-14."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 94,
+  "paragraph": "basic-ai-course",
+  "claim": "NLT 31 December 2026. CDETBAIC01. 45 minutes.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/basic-ai-course.mdx:4",
+  "quote": "complete NLT 31 December 2026. Course code CDETBAIC01"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 302,
+  "paragraph": "hostile-fire-and-imminent-danger-pay",
+  "claim": "HFP $450/month. IDP $9.16/day up to $275/month. Effective 1 October 2026.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/hostile-fire-and-imminent-danger-pay.mdx:49-50",
+  "quote": "IDP | $9.16 per day, up to $275 for the month"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 326,
+  "paragraph": "savings-deposit-program",
+  "claim": "10 percent, $10,000, 30 consecutive days, 120 days.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/savings-deposit-program.mdx:24-92",
+  "quote": "Your account closes and every dollar returns to you by direct deposit 120 days"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 542,
+  "paragraph": "special-leave-accrual",
+  "claim": "Up to 30 days SLA, 90-day cap, MARADMIN 545/26.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/special-leave-accrual.mdx:35",
+  "quote": "You carry up to 30 extra days, so your total stays at or under 90 days."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 566,
+  "paragraph": "reserve-parental-leave",
+  "claim": "12 paid IDT periods per MARADMIN 191/26.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/reserve-parental-leave.mdx:48",
+  "quote": "receive 12 paid Inactive Duty Training (IDT) periods"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 574,
+  "paragraph": "reserve-maternity-leave",
+  "claim": "6-week convalescent, up to 6 paid IDT periods.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/reserve-maternity-leave.mdx:27",
+  "quote": "6-week initial postpartum convalescent period followed by up to 6 paid IDT periods"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 862,
+  "paragraph": "childcare-provider-travel",
+  "claim": "$500 CONUS, $1,500 OCONUS, pilot 2024-2027.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/childcare-provider-travel.mdx:46",
+  "quote": "runs from 1 October 2024 through 30 September 2027"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 846,
+  "paragraph": "pet-transportation-allowance",
+  "claim": "$550 CONUS, $2,000 OCONUS, 1 January 2024.",
+  "status": "ok",
+  "severity": null,
+  "source": ".superpowers/text-cache/MARADMINS/CY2023/MARADMIN_378_23_PET_TRANSPORTATION_ENTITLEMENT_FINAL_DECISION.pdf.txt:117-119",
+  "quote": "maximum reimbursable amount is $2,000."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 854,
+  "paragraph": "human-breast-milk-shipment",
+  "claim": "Up to $1,000 per PCS.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/human-breast-milk-shipment.mdx:26",
+  "quote": "receive up to $1,000 reimbursement per PCS"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 582,
+  "paragraph": "permissive-tad",
+  "claim": "House Hunting 10 days, SkillBridge 90/120-day cap.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/permissive-tad.mdx:131-133",
+  "quote": "Category I. E1-E5. Up to 120 days."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 454,
+  "paragraph": "servicemembers-civil-relief-act",
+  "claim": "6% interest rate cap.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/servicemembers-civil-relief-act.mdx:79",
+  "quote": "interest on pre-service obligations cannot exceed 6 percent annually"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1094,
+  "paragraph": "gender-dysphoria-involuntary-separation",
+  "claim": "10-day election, MARADMIN 189/26 and 539/26.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/gender-dysphoria-involuntary-separation.mdx:27",
+  "quote": "You have 10 calendar days from your notification of separation to elect a board."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1014,
+  "paragraph": "selective-retention-bonus-and-targeted-mos",
+  "claim": "$360,000 career SRB cap, MCO 7220.24P.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/selective-retention-bonus-and-targeted-mos.mdx:39",
+  "quote": "The $360,000 career SRB cap"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1182,
+  "paragraph": "officer-bonuses",
+  "claim": "$300K career cap.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/officer-bonuses.mdx:37",
+  "quote": "The $300,000 career cap on combined bonuses"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1190,
+  "paragraph": "enlisted-bonuses",
+  "claim": "EB up to $75K, SRB up to $30K/year.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/enlisted-bonuses.mdx:52,66",
+  "quote": "DoD policy limits the SRB to $30,000 per year of obligated service."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1206,
+  "paragraph": "volunteer-supplemental-incentive",
+  "claim": "$10,000 lump sum or $278/month for 36 months.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/volunteer-supplemental-incentive.mdx:31",
+  "quote": "The amount is $10,000 lump sum (or $278 per month over 36 mo"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1222,
+  "paragraph": "diving-duty-pay",
+  "claim": "Up to $240/month.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/diving-duty-pay.mdx:27",
+  "quote": "It pays up to $240 per month"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1262,
+  "paragraph": "aviation-bonus",
+  "claim": "Up to $35K/year for RC pilots and UAS operators.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/aviation-bonus.mdx:28",
+  "quote": "Up to $35,000 per year for RC officers in flying duty or UAS"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1270,
+  "paragraph": "continuation-pay",
+  "claim": "2.5x to 13x monthly basic pay at 8-12 YOS.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/continuation-pay.mdx:4",
+  "quote": "2.5x to 13x monthly basic pay for AC"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1278,
+  "paragraph": "high-deployment-allowance",
+  "claim": "Up to $1,000/month after 191 consecutive days or 401/730.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/high-deployment-allowance.mdx:30",
+  "quote": "191+ consecutive days deployed, or 401+ days deployed in the preceding 730 days."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1294,
+  "paragraph": "oconus-tour-extension-incentive",
+  "claim": "$2,000, 30 days SR&R, or 15 to 20 days SR&R with paid trip.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/oconus-tour-extension-incentive.mdx:4",
+  "quote": "$2,000 in 12 payments, 30 days of free leave, or 15 to 20 days of free leave"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1334,
+  "paragraph": "sgli-and-vgli",
+  "claim": "$500K default SGLI.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/sgli-and-vgli.mdx:26",
+  "quote": "The default coverage is $500,000 at $25 per month"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1350,
+  "paragraph": "tsp-and-savings",
+  "claim": "BRS auto-enroll 5%, agency 1%.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/tsp-and-savings.mdx:28",
+  "quote": "BRS Marines are auto-enrolled at 5 percent of basic pay"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1358,
+  "paragraph": "allotments",
+  "claim": "Up to 6 discretionary allotments.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/allotments.mdx:29",
+  "quote": "allows up to 6 discretionary allotments"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1422,
+  "paragraph": "officers-uniform-and-equipment-allowance",
+  "claim": "$400 initial, $200 additional.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/officers-uniform-and-equipment-allowance.mdx:26",
+  "quote": "$400 Initial Uniform Allowance once at commission, plus a $200"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1446,
+  "paragraph": "priority-of-pay-deductions",
+  "claim": "17-level priority order.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/priority-of-pay-deductions.mdx:26",
+  "quote": "The 17-level priority sequence in Table 52-1"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1534,
+  "paragraph": "idt-travel-reimbursement",
+  "claim": "$750 cap, 150-mile test.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/idt-travel-reimbursement.mdx:27",
+  "quote": "more than 150 miles from their Primary Residence Address"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1710,
+  "paragraph": "tuition-assistance",
+  "claim": "$4,500 per fiscal year, $250 per semester hour.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/tuition-assistance.mdx:26",
+  "quote": "TA basics ($4,500 per FY, $250 per semester hour)"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1414,
+  "paragraph": "fica-and-afrh-deductions",
+  "claim": "6.2%, 1.45%, 0.9%, AFRH $0.50.",
+  "status": "ok",
+  "severity": null,
+  "source": "audit/2026-11-14-claims/wave-1-confirmed.md (fica-and-afrh-deductions line 36)",
+  "quote": "State the current AFRH deduction once, at $0.50"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1366,
+  "paragraph": "separation-payments",
+  "claim": "10% formula, 60-day leave sell-back cap.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/separation-payments.mdx:32-33",
+  "quote": "Full Separation Pay formula: 10 percent times 12 months basic pay times years of active service"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1398,
+  "paragraph": "death-payments",
+  "claim": "$100K Death Gratuity, SGLI up to $500K.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/death-payments.mdx:28",
+  "quote": "The Death Gratuity is $100,000 paid within 72 hours"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1574,
+  "paragraph": "standard-vs-restricted-iba",
+  "claim": "FICO 660 cutoff.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/marines/standard-vs-restricted-iba.mdx:24",
+  "quote": "FICO 660 or above gets you a Standard IBA."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/marines-categories.ts",
+  "line": 1526,
+  "paragraph": "dts-voucher-approval-process",
+  "claim": "2-day Reviewing Official, 3-day Approving Official windows.",
+  "status": "ok",
+  "severity": null,
+  "source": "audit/2026-11-14-claims/wave-1-confirmed.md (travel-ao-role line 80)",
+  "quote": "The 3-working-day clock belongs to the DO/FO approving official."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 118,
+  "paragraph": "cadence-and-events",
+  "claim": "Cpl through Col every 6 months. L/Cpl every 30 days.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/leader/counseling-cadence-and-events.mdx:31-33",
+  "quote": "Corporal through Colonel | Day 30 | Day 120, 90 days post-ICS | Every 6 months"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 108,
+  "paragraph": "initial-session",
+  "claim": "ICS within 30 days.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/leader/counseling-initial-session.mdx:4",
+  "quote": "Hold the ICS within 30 days of any new senior or junior relationship."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 297,
+  "paragraph": "awards-end-of-tour-timing",
+  "claim": "Submit at 90 days.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/leader/awards-end-of-tour-timing.mdx:53",
+  "quote": "90 | Submit the package to first endorser"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 327,
+  "paragraph": "awards-ompf-verification",
+  "claim": "60-day post-ceremony verification.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/leader/awards-ompf-verification.mdx:4",
+  "quote": "Verify on Marine Online within 60 days of the ceremony."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 617,
+  "paragraph": "discipline-witness-statements",
+  "claim": "Collect within 72 hours.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/leader/discipline-witness-statements.mdx:4",
+  "quote": "A witness statement collected within 72 hours carries detail."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 887,
+  "paragraph": "pay-secondary-dependency",
+  "claim": "Annual BAH recertification, quadrennial USIP.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/leader/pay-secondary-dependency.mdx:70-71",
+  "quote": "Quadrennial recertification (every four years)"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 918,
+  "paragraph": "travel-tad-coaching",
+  "claim": "Voucher within 5 working days of return.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/leader/travel-tad-coaching.mdx:39",
+  "quote": "Within 5 working days of return per JTR"
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 908,
+  "paragraph": "travel-pcs-coaching",
+  "claim": "180-day timeline. Sponsor 10-day rule.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/leader/travel-pcs-coaching.mdx:30-45",
+  "quote": "A standard PCS runs 180 days from orders to report date."
+ },
+ {
+  "cluster": "category-cards",
+  "page": "src/lib/leader-categories.ts",
+  "line": 777,
+  "paragraph": "career-reenlistment-conversation",
+  "claim": "FTAP and STAP windows. 18, 12, 6 month conversations.",
+  "status": "ok",
+  "severity": null,
+  "source": "content/leader/career-reenlistment-conversation.mdx:13-15",
+  "quote": "Open the reenlistment conversation at 18 months from EAS"
+ }
+]

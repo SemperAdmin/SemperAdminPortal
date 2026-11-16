@@ -253,15 +253,6 @@
           "severity": "discrepancy"
         },
         {
-          "step": "Verify Inventory Currency",
-          "actions": [
-            "Confirm the inventory was last updated within the past 12 months.",
-            "Confirm any cancelled reports identified within the past 12 months are reflected."
-          ],
-          "callout": "Inventory not current within annual review window",
-          "severity": "discrepancy"
-        },
-        {
           "step": "Cross-Check With Staff Sections",
           "actions": [
             "Sample 2 to 3 staff sections.",
@@ -277,7 +268,6 @@
             "No published Reports Inventory.",
             "Inventory does not include cancelled reports.",
             "Inventory missing Report Control Symbols.",
-            "Stale inventory not updated within 12 months.",
             "Active reports at command level not listed in inventory."
           ]
         }
@@ -293,7 +283,6 @@
         "Inventory lists all valid recurring reporting requirements.",
         "Inventory lists cancelled recurring reporting requirements.",
         "Report Control Symbols documented for each entry.",
-        "Inventory updated within the past 12 months.",
         "Sampled staff section reports appear in inventory."
       ],
       "verified": true
@@ -702,10 +691,6 @@
           {
             "citation": "MCO 5214.2G, par 5.b(2)",
             "text": "Reports Systems. When an electronic reports system is stood-up, the reports system shall be registered in Department of Defense Information Technology Portfolio Repository - Department of the Navy to ensure all records within are managed in accordance with reference (d)."
-          },
-          {
-            "citation": "SECNAVINST 5214.1 (DON Reports Management Program)",
-            "text": "Sponsors of electronic reporting systems shall register such systems in the Department of the Navy Information Technology Portfolio Repository (DITPR-DON) and shall comply with records management requirements for the data and outputs of those systems."
           }
         ],
         "summary": "Electronic reports systems sponsored by the command must be registered in DITPR-DON and managed per applicable records management requirements. Any electronic reports system sponsored or owned by the command must be registered in DITPR-DON. Registration ensures records management compliance per SECNAV Note 5210 and SECNAV M-5210.1."

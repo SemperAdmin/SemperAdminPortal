@@ -1,12 +1,12 @@
 ---
 title: "MEO Complaint Received"
 slug: "meo-complaint"
-summary: "Rapid-response playbook for a Military Equal Opportunity report reaching the command. Sorts the confidential report from the informal complaint, the formal complaint, and the anonymous allegation. Carries the five deadlines in MARADMIN 380/26, the eight dismissal grounds, the appeal to the next GCMCA, and the 7-day restart on delayed favorable personnel actions."
+summary: "Rapid-response playbook for a Military Equal Opportunity report reaching the command. Sorts the confidential report from the informal complaint, the formal complaint, and the anonymous allegation. Carries the five deadlines in MARADMIN 466/26, the eight dismissal grounds, the appeal to the next GCMCA, and the 7-day restart on delayed favorable personnel actions."
 roles: ["commander"]
 lastVerified: "2026-08-20"
 topic: "incident-playbooks"
 order: 6
-sourcePolicy: "MARADMIN 380/26"
+sourcePolicy: "MARADMIN 466/26"
 sourceChapter: "Paragraphs 2 through 9"
 sourceSection: "Application with MCO 5354.1G and ALNAV 048/26"
 performanceSteps:
@@ -19,7 +19,8 @@ performanceSteps:
   - "Brief the complainant on the 5-day appeal route to the next GCMCA"
   - "Resume delayed favorable personnel actions within 7 calendar days"
 references:
-  - "MARADMIN 380/26 Implementation Guidance for Military Equal Opportunity Reform Initiatives (20 Aug 2026)"
+  - "MARADMIN 466/26 Implementation Guidance for Military Equal Opportunity Reform Initiatives (1 Oct 2026)"
+  - "MARADMIN CANX-014/26 Cancellation of MARADMIN 380/26 (29 Sep 2026)"
   - "MARADMIN 357/26 Revision to Marine Corps Military Equal Opportunity Terminology (7 Aug 2026)"
   - "ALNAV 048/26 Department of the Navy Implementation Guidance for MEO Reform Initiatives (7 Aug 2026)"
   - "MCO 5354.1G Prohibited Activities and Conduct Prevention and Response Program"
@@ -31,9 +32,8 @@ references:
 relatedRoles:
   marine: "/marines/equal-opportunity-reporting"
 source:
-  title: "MARADMIN 380/26 MEO Reform Implementation Guidance"
-  publisher: "Semper Admin Portal - MARADMIN 380/26 application"
-  url: "https://www.marines.mil/News/Messages/Messages-Display/Article/4578527/implementation-guidance-for-military-equal-opportunity-reform-initiatives/"
+  title: "MARADMIN 466/26 MEO Reform Implementation Guidance"
+  publisher: "Semper Admin Portal - MARADMIN 466/26 application"
 ---
 
 ## Use This Page When
@@ -42,12 +42,12 @@ An Equal Opportunity Advisor forwards you a complaint, a Marine brings you a dis
 
 Your first decision is which lane the report arrived in. Get the lane wrong and every clock below runs on the wrong case.
 
-<Callout variant="danger" title="MARADMIN 380/26 is cancelled">
-MARADMIN CANX-014/26 cancelled MARADMIN 380/26 on 29 September 2026. The deadlines, confidential report handling, and dismissal grounds below come from the cancelled message. Treat them as the last published guidance, not current authority. Follow MCO 5354.1<Citation source="MCO 5354.1" /> and confirm each step with your EOA and staff judge advocate until the replacement message publishes.
+<Callout variant="warning" title="MARADMIN 466/26 replaced MARADMIN 380/26">
+MARADMIN CANX-014/26 cancelled MARADMIN 380/26 on 29 September 2026. MARADMIN 466/26<Citation source="MARADMIN 466/26" /> replaced it, signed 1 October 2026. The deadlines, confidential report handling, and dismissal grounds below come from MARADMIN 466/26. It holds until MCO 5354.1H incorporates it. Follow MCO 5354.1G<Citation source="MCO 5354.1" /> for everything else and confirm each step with your EOA and staff judge advocate.
 </Callout>
 
 <Callout variant="warning" title="A confidential report is not yours to investigate">
-Under MARADMIN 380/26<Citation source="MARADMIN 380/26" /> paragraph 2.c, a confidential report produces no command notification, inquiry, or investigation. Three exceptions release it: a specific and imminent threat of serious bodily harm or death, disclosed intent to commit a future crime or fraud, and disclosure required by federal law, Department of War policy, or competent legal authority. Nothing else. Opening an inquiry on a confidential report defeats the reporting option and exposes the Marine who used it.
+Under MARADMIN 466/26<Citation source="MARADMIN 466/26" /> paragraph 2.c, a confidential report produces no command notification, inquiry, or investigation. Five exceptions release it: the complainant's written consent to waive confidentiality, a clear and present risk to the health or safety of any person, disclosed intent to commit a future crime or fraud, disclosure required by federal law, state law, or Department of War policy, and disclosure ordered by a military judge or federal court. Nothing else. Opening an inquiry on a confidential report defeats the reporting option and exposes the Marine who used it.
 </Callout>
 
 ## The 90-Second Sort
@@ -55,10 +55,10 @@ Under MARADMIN 380/26<Citation source="MARADMIN 380/26" /> paragraph 2.c, a conf
 <ChecklistTool
   title="Which lane did this arrive in"
   items={[
-    { id: "lane-conf", label: "Confidential report", description: "Received by an EOA. No NAVMC 11512. No command notification, inquiry, or investigation outside the three exceptions. The Marine converts to informal or formal at any time." },
+    { id: "lane-conf", label: "Confidential report", description: "Received by an EOA. No NAVMC 11512. No command notification, inquiry, or investigation outside the five exceptions. The Marine converts to informal or formal at any time in the 60-day window. The complaint closes on day 61 if not converted." },
     { id: "lane-informal", label: "Informal complaint", description: "Filed on NAVMC 11512 or an MPE approved form. Conflict resolution offered where feasible. Voluntary for both parties." },
     { id: "lane-formal", label: "Formal complaint", description: "Filed on NAVMC 11512 or an MPE approved form. Your 30-day dismissal decision clock runs. EOA and SJA consultation required before any dismissal." },
-    { id: "lane-anon", label: "Anonymous allegation", description: "No MEO complaint results for discrimination or discriminatory harassment. You still take appropriate action on the information. Sexual harassment, hazing, and bullying keep their routing under ALNAV 048/26." }
+    { id: "lane-anon", label: "Anonymous allegation", description: "No MEO complaint results for discrimination or discriminatory harassment. You still take appropriate action on the information. Harassment, hazing, bullying, and sexual harassment keep their routing under ALNAV 048/26." }
   ]}
 />
 
@@ -113,7 +113,7 @@ Pull the list of delayed actions on the day you make the determination. Waiting 
 
 ## What You Do Not Do
 
-- Do not investigate a confidential report. Three exceptions release it and nothing else.
+- Do not investigate a confidential report. Five exceptions release it and nothing else.
 - Do not process an anonymous allegation of discrimination as an MEO complaint. Act on the information through another authority instead.
 - Do not treat the MEO program as an investigative body. MARADMIN 357/26<Citation source="MARADMIN 357/26" /> states plainly it is non-investigative and not the lead for misconduct outside its scope.
 - Do not force conflict resolution. Participation is voluntary for both parties under paragraph 4.c.
@@ -121,7 +121,7 @@ Pull the list of delayed actions on the day you make the determination. Waiting 
 
 ## Common Failure Modes
 
-1. Confidential read as anonymous. The two arrive in adjacent paragraphs with opposite effects. Confidential preserves the Marine's identity for authorized personnel and preserves the right to convert. Anonymous produces no complaint at all.
+1. Confidential read as anonymous. The two arrive in adjacent paragraphs with opposite effects. Confidential preserves the Marine's identity for authorized personnel and preserves the right to convert during the 60-day window. Anonymous produces no complaint at all.
 2. The 30-day clock started at the wrong desk. Log the EOA receipt date and the command receipt date separately.
 3. Written notice issued without the appeal route. The complainant loses a 5-day window they never learned about.
 4. Favorable actions left in limbo after an unsubstantiated finding. The 7-day restart applies to unsubstantiated findings, not to dismissals alone.
@@ -129,7 +129,7 @@ Pull the list of delayed actions on the day you make the determination. Waiting 
 
 ## Sources
 
-- MARADMIN 380/26<Citation source="MARADMIN 380/26" />, released 2026-08-20, cancelled by MARADMIN CANX-014/26 on 29 September 2026. A replacement message publishes separately.
+- MARADMIN 466/26<Citation source="MARADMIN 466/26" />, signed 2026-10-01. It replaced MARADMIN 380/26, which MARADMIN CANX-014/26 cancelled on 29 September 2026.
 - ALNAV 048/26<Citation source="ALNAV 048/26" />, the Department of the Navy frame, released 2026-08-07.
 - MARADMIN 357/26<Citation source="MARADMIN 357/26" />, the PAC to MEO terminology realignment.
 - MCO 5354.1G<Citation source="MCO 5354.1G" />, the governing order, still carrying the PAC title until its next revision.

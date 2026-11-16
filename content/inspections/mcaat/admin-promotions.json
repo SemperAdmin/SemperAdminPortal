@@ -193,7 +193,7 @@
           "audience": [
             "REPORTING"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Source check. MARADMIN 185/25 paragraph 1.c.2 requires justification for Marines left in a non-rec status for longer than three months."
         }
       ]
     },
@@ -337,7 +337,7 @@
           "audience": [
             "SUPPORTING"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Source check. MARADMIN 185/25 paragraph 1.c.2 requires justification for Marines left in a non-rec status for longer than three months."
         },
         {
           "code": "21",

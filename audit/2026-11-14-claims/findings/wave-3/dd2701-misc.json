@@ -1,0 +1,88 @@
+[
+ {
+  "cluster": "dd2701-misc",
+  "page": "content/citations/dd-form-2701.mdx",
+  "line": 20,
+  "claim": "DD Form 2701 is prescribed by DoDI 1325.07",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "DD Form 2701",
+  "sourceFile": "DD_Forms/DD2500_2999/DD2701_Initial_Information_for_Victims_and_Witnesses_of_Crime.pdf",
+  "paragraph": "form face (page 1)",
+  "quote": "DD Form 2701, October 2022 Prescribed by DoDI 1030.02",
+  "fix": "Name DoDI 1030.02 as the prescribing instruction. Correct the Marine Corps doctrine bullet for DoDI 1325.07 to a confinement program reference only.",
+  "alsoOn": []
+ },
+ {
+  "cluster": "dd2701-misc",
+  "page": "content/citations/dd-form-2701.mdx",
+  "line": 41,
+  "claim": "Marine Corps VWAP runs per MCO 5800.16 Vol. 9",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "MCO 5800.16 W/CH 1-7",
+  "sourceFile": "MCO/MCO_5800.16_WCH_1-7_WVOL_1-17.pdf",
+  "paragraph": "Vol 16 Ch 4 par 0409 (page 441)",
+  "quote": "040902. Command Roles and Responsibilities ... 040903. Victim Witness Liaison Officer Roles and Responsibilities",
+  "fix": "Cite MCO 5800.16 Volume 16 Chapter 4 (paragraphs 040902 to 040907). Volume 9 covers dependent support and paternity.",
+  "alsoOn": [
+   "content/citations/mco-5800-16-vol-9.mdx"
+  ]
+ },
+ {
+  "cluster": "dd2701-misc",
+  "page": "content/citations/dd-form-2701.mdx",
+  "line": 24,
+  "claim": "SVC and VLC provide DD 2701 to eligible victims at first contact",
+  "status": "contradicted",
+  "severity": "major",
+  "source": "MCO 5800.16 W/CH 1-7",
+  "sourceFile": "MCO/MCO_5800.16_WCH_1-7_WVOL_1-17.pdf",
+  "paragraph": "par 040902.D(3) and 040905.A (pages 445, 450)",
+  "quote": "Ensure victims and witnesses ... are provided a completed DD Form 2701 if one has not already been provided.",
+  "fix": "Name the unit VWAC, law enforcement and the trial counsel or LSST VWAC as the providers of DD 2701. Counsel advise victims but do not issue the form.",
+  "alsoOn": []
+ },
+ {
+  "cluster": "dd2701-misc",
+  "page": "content/citations/dd-form-2701.mdx",
+  "line": 13,
+  "claim": "Form updated 21 August 2024",
+  "status": "ok",
+  "severity": null,
+  "source": "DD Form 2701",
+  "sourceFile": "DD_Forms/DD2500_2999/DD2701_Initial_Information_for_Victims_and_Witnesses_of_Crime.pdf",
+  "paragraph": "form face",
+  "quote": "(Updated 20240821)",
+  "fix": "",
+  "alsoOn": []
+ },
+ {
+  "cluster": "dd2701-misc",
+  "page": "content/citations/dd-form-2701.mdx",
+  "line": 33,
+  "claim": "Overview of victim rights list and contact block",
+  "status": "ok",
+  "severity": null,
+  "source": "DD Form 2701",
+  "sourceFile": "DD_Forms/DD2500_2999/DD2701_Initial_Information_for_Victims_and_Witnesses_of_Crime.pdf",
+  "paragraph": "page 1",
+  "quote": "Be treated with fairness/respect for your dignity and privacy",
+  "fix": "",
+  "alsoOn": []
+ },
+ {
+  "cluster": "dd2701-misc",
+  "page": "content/citations/dd-form-2701.mdx",
+  "line": 46,
+  "claim": "DD Form 2701 is maintained in the case file and the Victim Witness Liaison file",
+  "status": "unsupported",
+  "severity": "minor",
+  "source": "MCO 5800.16 W/CH 1-7",
+  "sourceFile": "MCO/MCO_5800.16_WCH_1-7_WVOL_1-17.pdf",
+  "paragraph": "par 040902.D(4)",
+  "quote": "Ensure processes are in place to maintain data on the number of victims and witnesses who receive DD Forms 2701.",
+  "fix": "State the VWAC keeps count of DD 2701 issued and reports the total quarterly to the installation VWLO. Drop the case file claim or cite its source.",
+  "alsoOn": []
+ }
+]

@@ -45,7 +45,7 @@
           "audience": [
             "REPORTING"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Editor note. Weigh-in data now follows the waist-to-height ratio method, with a body fat evaluation second. See MARADMIN 066/26 and MARADMIN 358/26 for current BCP rules."
         },
         {
           "code": "04",
@@ -57,7 +57,7 @@
           "audience": [
             "REPORTING"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Editor note. Weigh-in data now follows the waist-to-height ratio method, with a body fat evaluation second. See MARADMIN 066/26 and MARADMIN 358/26 for current BCP rules."
         },
         {
           "code": "05",
@@ -69,7 +69,7 @@
           "audience": [
             "REPORTING"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Editor note. Weigh-in data now follows the waist-to-height ratio method, with a body fat evaluation second. See MARADMIN 066/26 and MARADMIN 358/26 for current BCP rules."
         },
         {
           "code": "06",
@@ -82,7 +82,7 @@
           "audience": [
             "REPORTING"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Editor note. Weigh-in data now follows the waist-to-height ratio method, with a body fat evaluation second. See MARADMIN 066/26 and MARADMIN 358/26 for current BCP rules."
         },
         {
           "code": "07",
@@ -96,7 +96,7 @@
           "audience": [
             "REPORTING"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Editor note. Weigh-in data now follows the waist-to-height ratio method, with a body fat evaluation second. See MARADMIN 066/26 and MARADMIN 358/26 for current BCP rules."
         },
         {
           "code": "08",
@@ -206,7 +206,7 @@
           "audience": [
             "SUPPORTING"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Editor note. Weigh-in data now follows the waist-to-height ratio method, with a body fat evaluation second. See MARADMIN 066/26 and MARADMIN 358/26 for current BCP rules."
         },
         {
           "code": "14",
@@ -218,7 +218,7 @@
           "audience": [
             "SUPPORTING"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Editor note. Weigh-in data now follows the waist-to-height ratio method, with a body fat evaluation second. See MARADMIN 066/26 and MARADMIN 358/26 for current BCP rules."
         },
         {
           "code": "15",
@@ -230,7 +230,7 @@
           "audience": [
             "SUPPORTING"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Editor note. Weigh-in data now follows the waist-to-height ratio method, with a body fat evaluation second. See MARADMIN 066/26 and MARADMIN 358/26 for current BCP rules."
         },
         {
           "code": "16",
@@ -243,7 +243,7 @@
           "audience": [
             "SUPPORTING"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Editor note. Weigh-in data now follows the waist-to-height ratio method, with a body fat evaluation second. See MARADMIN 066/26 and MARADMIN 358/26 for current BCP rules."
         },
         {
           "code": "17",
@@ -257,7 +257,7 @@
           "audience": [
             "SUPPORTING"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Editor note. Weigh-in data now follows the waist-to-height ratio method, with a body fat evaluation second. See MARADMIN 066/26 and MARADMIN 358/26 for current BCP rules."
         }
       ]
     }

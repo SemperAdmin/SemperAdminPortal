@@ -401,7 +401,7 @@
         "quotes": [
           {
             "citation": "MCO 3040.4, Chap 3, Sect 2, Figure 3-1",
-            "text": "Casualty Type - As appropriate: Hostile. Non-hostile. Pending (Determination Pending). Casualty Status - As appropriate: D-Deceased. M-Missing (will not be used unless an official declaration has been made by SECNAV or his designee, DC, M&RA). N-Not Wounded in Action. P-Duty Status Whereabouts Unknown (DUSTWUN). V-Very Seriously Ill or Injured. S-Seriously Ill or Injured. I-Ill or Injured but Not Seriously. H-Wounded in Action. Casualty Category - As appropriate: A-Accident. B-Besieged. C-Captured. D-Detained. H-Homicide. I-Illness. G-Missing in Action. K-Killed in Action. L-Beleaguered. M-Self-inflicted. N-Interned. P-Pending. R-Returned to Military Control. T-Terrorist Activity. V-Hostile Death. W-Wounded in Action."
+            "text": "Casualty Status - As appropriate: D-Deceased. M-Missing (will not be used unless an official declaration has been made by SECNAV or his designee, DC, M&RA). N-NSI ill/injury. R-Returned to Military Control. S-SI ill/injury. V-VSI ill/injury. W-DUSTWUN. Z-None. Casualty Category - As appropriate: A-Accident. B-Besieged. C-Captured. D-Detained. H-Homicide. I-Illness. G-Missing in Action. K-Killed in Action. L-Beleaguered. M-Missing. N-Interned. P-Pending. R-Died of Wounds. S-Self-inflicted. T-Terrorist. U-Undetermined. W-Wounded in Action."
           },
           {
             "citation": "MCO 3040.4, Chap 3, Sect 2, Figure 3-2",

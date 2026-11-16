@@ -26,7 +26,7 @@
           "code": "01",
           "question": "Does the office have a written training program that addresses fraud and/or deficiencies that are discovered and is the office implementing controls to mitigate those deficiencies while also conducting training in accordance with the training program and/or the references? Note: Documentation of training must be uploaded to the RFF SharePoint.",
           "references": [
-            "OMB Circular A-123, NAVMC 3500.69 C, and FPM Vol. 1 Ch. 16"
+            "OMB Circular A-123, NAVMC 3500.69 C, and FPM Vol. 4 Internal Control"
           ],
           "audience": [
             "DO",
@@ -75,7 +75,7 @@
           "code": "05",
           "question": "Is the office conducting monthly audits effectively and ensuring appropriate corrective action has been taken in accordance with the references?",
           "references": [
-            "OMB Circular A-123, FPM Vol. 1 Ch. 16, FPM Vol. 2 080202"
+            "OMB Circular A-123 and FPM Vol. 4 Internal Control"
           ],
           "audience": [
             "DO",
