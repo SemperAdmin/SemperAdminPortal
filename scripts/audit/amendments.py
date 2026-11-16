@@ -147,12 +147,16 @@ def scan_message(text: str, own_id: str) -> list[tuple[str, str, str]]:
             for letter in re.findall(r"\(([A-Z])\)", m.group(1)):
                 if letter in refs:
                     targets.add(refs[letter])
-        targets.discard(own)
+        targets.discard(own)  # a message naming itself in its own text is not a hit
         for t in targets:
             via = "direct" if t in direct else "ref-letter"
             old = hits.get(t)
             if old is None or rank[kind] > rank[old[0]] or (rank[kind] == rank[old[0]] and via == "direct"):
                 hits[t] = (kind, via)
+    if own and own.startswith("DODI ") and re.search(r"\bCH\b", (own_id or "").upper()):
+        # A DoDI change amends its own base instruction. doc_key folds "DoDI 1327.06 CH 2" to
+        # "DODI 1327.06", so the discard above drops that hit. Put it back.
+        hits.setdefault(own, ("amends", "direct"))
     return sorted((k, v[0], v[1]) for k, v in hits.items())
 
 
@@ -279,6 +283,10 @@ def _archive_messages(tc):
             yield f"PAA {m.group(1)}", date, rel, "\n".join(tc.read_cached_file(cached))
 
 
+# Bump when scan_message changes what it emits, so a cached index from older code rebuilds.
+INDEX_VERSION = 2
+
+
 def pickle_path(tc) -> Path:
     return tc.CACHE / "_amend_index.json"
 
@@ -330,7 +338,7 @@ def write_stamp(tc, derived: Path, stamp: str) -> None:
 def load_index(rebuild: bool = False, tc=None) -> dict:
     tc = tc or _load_sibling("build_text_cache")
     pkl = pickle_path(tc)
-    stamp = archive_stamp(tc, with_cache=True)
+    stamp = f"{archive_stamp(tc, with_cache=True)}:v{INDEX_VERSION}"
     # Stored as JSON, not pickle: the index is plain dict/list/str, and JSON never runs code on load.
     if os.path.exists(tc.io_path(pkl)) and not rebuild and stamp_ok(tc, pkl, stamp):
         with open(tc.io_path(pkl), encoding="utf-8") as f:
