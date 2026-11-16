@@ -2,9 +2,9 @@
 
 Items left open after the wave 3 fix pass on 2026-11-15.
 
-## Held for PR 152
+## PR 152 held findings, applied
 
-PR 152 merged on main. This branch does not carry main yet. Three wave 3 findings (military-parental-leave-program 2, convalescent-leave 1) and the five wave 1 findings in held-pr152.json wait until main merges into this branch.
+PR 152 merged and main merged into this branch on 2026-11-15. The eight held findings now apply on military-parental-leave-program and convalescent-leave. The 10 and 21 day paternity and adoption figures from MCO 1050.3J are not on the parental leave page, so that finding needed no edit.
 
 ## Needs a decision
 
