@@ -1,7 +1,7 @@
 ---
 title: "Career Sea Pay and Submarine Duty - S-1 Procedural Page"
 slug: "career-sea-pay-and-submarine-duty"
-summary: "Process Career Sea Pay (CSP) tied to creditable sea-duty time per DoDFMR Vol 7A Chapter 18 and Submarine Duty Pay per Chapter 23 for the rare Marine Corps submarine assignment with sea-duty creditable time tracking."
+summary: "Process Career Sea Pay (CSP) tied to creditable sea-duty time per DoDFMR Vol 7A Chapter 18 with sea-duty creditable time tracking. Submarine Duty Pay under Chapter 23 covers Navy members only."
 roles: ["admin", "leader", "commander"]
 lastVerified: "2026-05-11"
 unitType: "s1-g1"
@@ -27,7 +27,6 @@ performanceSteps:
   - "Determine the CSP rate per Chapter 18 rate table"
   - "Build the KSD packet"
   - "Cut the CSP pay start in UD-MIPS"
-  - "Process Submarine Duty Pay per Chapter 23 when applicable"
   - "Verify LES on the next pay cut"
   - "Track sea-duty creditable time accumulation"
   - "Stop the pay on transfer off sea duty"
@@ -40,18 +39,17 @@ source:
 
 ## Role and responsibility
 
-The IPAC pay clerk cuts Career Sea Pay (CSP) and Submarine Duty Pay transactions per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 18 (CSP) and Chapter 23 (Submarine Duty Pay). The S-1 chief tracks sea-duty creditable time and the CSP rate ladder. The S-1 officer signs by direction on the routing. The gaining sea-duty unit confirms the duty is creditable under Chapter 18. The HQMC Manpower (M&RA) Marine Aviation or Ground Monitor coordinates sea-duty assignments. Submarine Duty Pay applies to the rare Marine Corps Marine assigned to submarine duty, typically through HQMC or HHQ specialized assignments.
+The IPAC pay clerk cuts Career Sea Pay (CSP) transactions per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 18. The S-1 chief tracks sea-duty creditable time and the CSP rate ladder. The S-1 officer signs by direction on the routing. The gaining sea-duty unit confirms the duty is creditable under Chapter 18. The HQMC Manpower (M&RA) Marine Aviation or Ground Monitor coordinates sea-duty assignments. Submarine Duty Pay under Chapter 23 paragraph 1.1 covers members of the Navy and sits outside the Marine pay path.
 
-Source documents flow from the sea-duty assignment order, the gaining unit identification as a creditable sea-duty assignment per Chapter 18, the prior sea-duty creditable time record from MCTFS, the CSP rate ladder per Chapter 18, and the submarine duty assignment when applicable. CSP and Submarine Duty outputs include the MCTFS pay start at the appropriate CSP rate, the documented sea-duty creditable time, the verified LES, the rate increase as creditable time accumulates, the pay stop on transfer off sea duty, and the audit trail.
+Source documents flow from the sea-duty assignment order, the gaining unit identification as a creditable sea-duty assignment per Chapter 18, the prior sea-duty creditable time record from MCTFS, and the CSP rate ladder per Chapter 18. CSP outputs include the MCTFS pay start at the appropriate CSP rate, the documented sea-duty creditable time, the verified LES, the rate increase as creditable time accumulates, the pay stop on transfer off sea duty, and the audit trail.
 
-Per DoDFMR Vol 7A Chapter 18, CSP applies to Marines assigned to ships, ship-based units, and other sea-duty creditable assignments per DoD policy. The rate increases as creditable sea-duty time accumulates over a career. Per Chapter 23, Submarine Duty Pay applies to Marines on submarine duty (rare for Marines, typically with the Navy through specialized assignments).
+Per DoDFMR Vol 7A Chapter 18, CSP applies to Marines assigned to ships, ship-based units, and other sea-duty creditable assignments per DoD policy. The rate increases as creditable sea-duty time accumulates over a career. Per Chapter 23 paragraph 1.1, Submarine Duty Pay covers members of the Navy only, so no Marine draws it.
 
 ## Trigger events
 
 - Marine reports to a sea-duty creditable assignment.
 - Marine reaches a new CSP rate tier from accumulated creditable time.
 - Marine transfers off sea duty triggering CSP stop.
-- Marine assigned to submarine duty triggering Submarine Duty Pay (rare).
 - Annual sea-duty creditable time audit.
 - LES surfaces unexpected CSP rate.
 
@@ -63,7 +61,7 @@ Per DoDFMR Vol 7A Chapter 18, CSP applies to Marines assigned to ships, ship-bas
 4. Determine the CSP rate. Per Chapter 18 rate table, the rate ties to grade and accumulated creditable sea-duty time. The rate ladder increases with years of creditable time.
 5. Build the KSD packet. Stage the sea-duty assignment order, the gaining unit confirmation as creditable, the prior creditable time record, and the CSP rate authority.
 6. Cut the CSP pay start in UD-MIPS. Per Appendix E and MCTFSPRIUM<Citation source="MCTFSPRIUM" />, submit the CSP transaction at the rate code.
-7. Process Submarine Duty Pay when applicable. Per Chapter 23, the rare submarine-duty Marine receives the pay at the rate per Chapter 23 ladder.
+7. Screen out Submarine Duty Pay. Per Chapter 23 paragraph 1.1, the pay covers members of the Navy only. Do not cut it for a Marine.
 8. Verify LES. The next LES carries CSP at the correct rate.
 9. Track sea-duty creditable time. The unit IPAC tracks the time. At each anniversary of creditable time accumulation, the rate updates per the ladder.
 10. Stop the pay. On transfer off sea duty, cut the pay stop. The accumulated creditable time records in MCTFS for future sea-duty assignments.
@@ -72,8 +70,8 @@ Per DoDFMR Vol 7A Chapter 18, CSP applies to Marines assigned to ships, ship-bas
 
 ### Systems
 
-- Marine Corps Total Force System (MCTFS). Holds CSP and Submarine Duty Pay records and the cumulative creditable sea-duty time.
-- UD-MIPS. Cuts CSP and Submarine Duty Pay transactions per Appendix E.
+- Marine Corps Total Force System (MCTFS). Holds CSP records and the cumulative creditable sea-duty time.
+- UD-MIPS. Cuts CSP transactions per Appendix E.
 - DoD Sea-Duty Creditable List. Per Chapter 18.
 - LES. Validates pay rate.
 
@@ -90,22 +88,21 @@ Per DoDFMR Vol 7A Chapter 18, CSP applies to Marines assigned to ships, ship-bas
 - Wrong CSP rate tier applied. Per Chapter 18, grade and creditable time drive the rate.
 - Creditable time accumulation not updated. The MCTFS record reflects the running total. The S-1 audits.
 - Pay continued past transfer. The unit cuts the pay stop on transfer.
-- Submarine Duty Pay applied for non-submarine assignment. Per Chapter 23, only actual submarine duty draws the pay.
+- Submarine Duty Pay applied to a Marine. Per Chapter 23 paragraph 1.1, the pay covers members of the Navy only.
 - LES discrepancy not surfaced. Routine LES review catches CSP rate errors.
 
 ## Decision points
 
 - Sea-duty creditable assignment. Per Chapter 18 and DoD policy, the gaining unit's status drives eligibility.
 - CSP rate ladder. The grade and the cumulative creditable time drive the rate. Marines re-entering sea duty after time on shore restart the ladder at the level corresponding to their cumulative creditable time.
-- Submarine Duty Pay versus CSP. Per Chapters 18 and 23, submarine duty draws Submarine Duty Pay rather than CSP for the same period.
 - Embarked versus assigned status. Per Chapter 18, the assignment record (beyond embarked time alone) drives CSP eligibility for some MEU and embarked positions.
 
 ## Authority
 
-This sub-page sits under DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 18 (Career Sea Pay) and Chapter 23 (Submarine Duty Pay). 37 U.S.C. 305b sets CSP statutory authority. 37 U.S.C. 301c sets Submarine Duty Incentive Pay statutory authority. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> covers MCTFS transactions.
+This sub-page sits under DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 18 (Career Sea Pay). Chapter 23 (Submarine Duty Pay) covers Navy members only. 37 U.S.C. 305b sets CSP statutory authority. MCTFSPRIUM<Citation source="MCTFSPRIUM" /> covers MCTFS transactions.
 
 ## Related references
 
-- DoDFMR Vol 7A Chapters 18 and 23. CSP and Submarine Duty Pay framework.
-- 37 U.S.C. 305b and 301c. Statutory authority.
+- DoDFMR Vol 7A Chapter 18. CSP framework. Chapter 23 covers Submarine Duty Pay for Navy members only.
+- 37 U.S.C. 305b. Statutory authority.
 - MCTFSPRIUM. MCTFS transactions.

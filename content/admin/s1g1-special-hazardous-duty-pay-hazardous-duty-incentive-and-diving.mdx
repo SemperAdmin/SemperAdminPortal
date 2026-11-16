@@ -40,11 +40,11 @@ source:
 
 ## Role and responsibility
 
-The IPAC pay clerk cuts Hazardous Duty Incentive Pay (HDIP) and Diving Duty Pay transactions per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 24 (HDIP Other Than Flying) and Chapter 11 (Diving Duty Pay). The S-1 chief validates the hazardous duty qualification and the continued duty performance. The S-1 officer signs by direction on the pay transaction routing. The unit commander certifies the Marine's continued hazardous duty performance per DODI 1340.09<Citation source="DODI 1340.09" /> for HDIP categories requiring monthly performance. The MTF or designated medical officer signs the diving qualification record.
+The IPAC pay clerk cuts Hazardous Duty Incentive Pay (HDIP) and Diving Duty Pay transactions per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 24 (HDIP Other Than Flying) and Chapter 11 (Diving Duty Pay). The S-1 chief validates the hazardous duty qualification and the continued duty performance. The S-1 officer signs by direction on the pay transaction routing. The unit commander certifies the Marine's continued hazardous duty performance per DODI 1340.09<Citation source="DODI 1340.09" /> for every HDIP category. The MTF or designated medical officer signs the diving qualification record.
 
-Source documents flow from the hazardous duty qualification certificate (parachute, demolition, flight deck, toxic fuel, etc.), the diving qualification per Chapter 11, the continued duty performance record per DODI 1340.09 for monthly-performance HDIP categories, and the prior MCTFS pay history. HDIP and Diving Pay outputs include the MCTFS pay start at the appropriate code, the documented KSD packet, the verified LES, the qualification expiration tracking, the pay stop on lapsed qualification or duty change, and the audit trail.
+Source documents flow from the hazardous duty qualification certificate (parachute, demolition, flight deck, toxic fuel, etc.), the diving qualification per Chapter 11, the continued duty performance record per DODI 1340.09 for every HDIP category, and the prior MCTFS pay history. HDIP and Diving Pay outputs include the MCTFS pay start at the appropriate code, the documented KSD packet, the verified LES, the qualification expiration tracking, the pay stop on lapsed qualification or duty change, and the audit trail.
 
-Per DoDFMR Vol 7A Chapter 24 (HDIP Other Than Flying), categories include parachute duty pay (regular and HALO), demolition duty pay, toxic fuel exposure, flight deck duty, and other duties designated by DoD. Per DODI 1340.09, the DoD framework sets eligibility, monthly performance requirements, and pay rates. Per Chapter 11 (Diving Duty Pay), qualified diving Marines receive monthly pay tied to qualification level (basic diver, master diver, etc.).
+Per DoDFMR Vol 7A Chapter 24 (HDIP Other Than Flying), categories include parachute duty pay (regular and HALO), demolition duty pay, toxic fuel exposure, flight deck duty, and other duties designated by DoD. Per DODI 1340.09, the DoD framework sets eligibility, monthly performance requirements, and pay rates. Per Chapter 11 (Diving Duty Pay), Marine Corps diving pay runs at two monthly rates under Tables 11-6 and 11-7, 150 dollars for a dive school student and 215 dollars for a Combatant Diver.
 
 ## Trigger events
 
@@ -52,7 +52,7 @@ Per DoDFMR Vol 7A Chapter 24 (HDIP Other Than Flying), categories include parach
 - Marine qualifies in demolition duty (EOD, combat engineer).
 - Marine assigned to flight deck duty.
 - Marine assigned to toxic fuel exposure duty.
-- Marine qualifies in diving (Combatant Diver, Diving Officer, Diver, Master Diver).
+- Marine attends an approved Armed Services dive school or qualifies as a Combatant Diver.
 - Marine fails to perform monthly required hazardous duty.
 - Qualification expires triggering requalification or pay stop.
 - Transfer triggers pay stop.
@@ -60,9 +60,9 @@ Per DoDFMR Vol 7A Chapter 24 (HDIP Other Than Flying), categories include parach
 ## Processing workflow
 
 1. Verify the hazardous duty qualification. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 24 (HDIP) or Chapter 11 (Diving), the Marine holds the appropriate qualification.
-2. Validate eligibility per the chapter. Chapter 24 categories include parachute (regular, HALO), demolition, flight deck, toxic fuel, and other DoD-designated duties. Chapter 11 covers diving by qualification level.
-3. Apply DODI 1340.09 framework. Per DODI 1340.09<Citation source="DODI 1340.09" />, the DoD policy sets monthly performance requirements for HDIP categories requiring continued duty. The unit certifies continued performance.
-4. Confirm continued duty performance. Per Chapter 24 and DODI 1340.09, certain HDIP categories require monthly performance to draw the pay. Other categories (qualification-based) draw the pay so long as the qualification is current.
+2. Validate eligibility per the chapter. Chapter 24 categories include parachute (regular, HALO), demolition, flight deck, toxic fuel, and other DoD-designated duties. Chapter 11 covers diving at two Marine Corps rates, dive school student and Combatant Diver.
+3. Apply DODI 1340.09 framework. Per DODI 1340.09<Citation source="DODI 1340.09" />, the DoD policy sets the performance test for every HDIP category. The unit certifies continued performance.
+4. Confirm continued duty performance. Per Chapter 24 and DODI 1340.09, every HDIP category carries a performance test, so a current qualification alone does not draw the pay.
 5. Build the KSD packet. Stage the qualification certificate, the unit commander performance certification when required, the assignment order, and the prior MCTFS history.
 6. Cut the pay start in UD-MIPS. Per Appendix E and MCTFSPRIUM<Citation source="MCTFSPRIUM" />, submit the HDIP or Diving Pay start at the appropriate code.
 7. Verify LES. The next LES carries the pay at the correct rate.
@@ -86,25 +86,25 @@ Per DoDFMR Vol 7A Chapter 24 (HDIP Other Than Flying), categories include parach
 - Demolition / EOD Qualification Record. Per Chapter 24.
 - Diving Qualification Record. Per Chapter 11.
 - Flight Deck Duty Designation. Per Chapter 24.
-- Unit Commander Performance Certification. Per DODI 1340.09 for monthly-performance HDIP categories.
+- Unit Commander Performance Certification. Per DODI 1340.09 for every HDIP category.
 - Monthly Demolition Duty Letter. Per MCO 1000.6 Chapter 1 Section 2 paragraph 7. Lists name, rank, and EDIPI for every Marine who met the monthly requirement, who did not, and who terminated from the assignment.
 - KSD Packet. Local format documenting eligibility.
 
 ## Common pitfalls
 
 - HDIP cut without qualification verification. Per Chapter 24, only qualified Marines draw HDIP.
-- Monthly performance certification missing for categories requiring it. Per DODI 1340.09<Citation source="DODI 1340.09" />, certain HDIP categories require monthly performance certification.
+- Monthly performance certification missing. Per DODI 1340.09<Citation source="DODI 1340.09" />, every HDIP category requires it.
 - Diving Pay cut without medical clearance. Per Chapter 11, the medical officer signs the diving qualification record.
 - Pay continued past lapsed qualification. The unit cuts the pay stop on lapsed certification.
 - Wrong HDIP category selected. Per Chapter 24, each category carries distinct rules. Parachute differs from demolition differs from flight deck.
 - Multiple HDIP pays without cap awareness. Per Vol 7A cap rules, some HDIP pays do not run concurrent.
-- Diving Pay rate misaligned with qualification level. Per Chapter 11, the rate ties to qualification level.
+- Diving Pay rate misaligned with category. Per Chapter 11, the Marine Corps rate is 150 dollars for a dive school student and 215 dollars for a Combatant Diver.
 
 ## Decision points
 
 - HDIP category selection. The Marine's qualification and the duty assignment drive the category.
-- Qualification-based versus performance-based. Some HDIP categories pay on qualification alone. Others require monthly performance per DODI 1340.09.
-- Diving Pay level. Per Chapter 11, the qualification level drives the rate.
+- Performance test. Every HDIP category carries a performance test per DODI 1340.09<Citation source="DODI 1340.09" />. Confirm the Marine meets it before each pay period.
+- Diving Pay category. Per Chapter 11, dive school student or Combatant Diver drives the rate.
 - Concurrent HDIP pays. Per Vol 7A Chapter 24 and DODI 1340.09, the cap rules govern when a Marine qualifies for multiple HDIP categories.
 
 ## Authority
