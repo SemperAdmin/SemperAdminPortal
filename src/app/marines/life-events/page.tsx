@@ -142,7 +142,7 @@ export default function LifeEventsLanding() {
           (Dependency Application/Record of Emergency Data), NAVMC 11432
           (Family Care Plan Certificate), MARADMIN 661/19 (Dependency
           Validation Cycle), and MARADMIN 015/20 (OMPF Document Submission).
-          The HQMC Dependency Determination Section sits within the Marine and
+          The HQMC DEERS and Dependency Support Section (MFP-1) sits within the Marine and
           Family Programs Branch (MF) and adjudicates secondary dependency,
           BAH eligibility, USIP card residence determinations, and non-support
           investigations. The unit S-1 and IPAC handle initial submissions and

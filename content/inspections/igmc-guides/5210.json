@@ -1,7 +1,7 @@
 {
   "faNumber": "5210",
   "sourceDoc": "RECORDS MANAGEMENT (5210) - INSPECTOR GUIDE - REBUILT.docx",
-  "lastVerified": "2026-05-20",
+  "lastVerified": "2026-11-16",
   "verifiedAtSource": true,
   "items": {
     "0101": {
@@ -35,7 +35,7 @@
           "step": "Verify Active CDRM Appointment",
           "actions": [
             "Confirm the CDRM name, rank/grade, and appointment date are visible in CROSS",
-            "Confirm the appointed CDRM meets the E-6/GS-9 or higher grade requirement per MCBul 5210 dtd 29 Aug 25"
+            "Once the ARDB successor check confirms the grade, confirm the appointed CDRM meets the E-6/GS-9 or higher grade requirement per MCBul 5210 dtd 29 Aug 25. Until a successor confirms it, apply the MCO 5210.11F officer, SNCO or civilian equivalent standard"
           ],
           "callout": "No active CDRM appointment in CROSS",
           "severity": "finding"
@@ -64,7 +64,7 @@
           "step": "Common Discrepancies",
           "actions": [
             "CDRM has PCS'd or separated with no replacement designated",
-            "Appointed CDRM is below E-6/GS-9 - MCBul standard not applied",
+            "Appointed CDRM is below E-6/GS-9 - MCBul standard not applied (only once the ARDB successor check confirms the standard)",
             "Appointment letter exists in hardcopy but is not uploaded to CROSS",
             "No CDRM appointment exists at all"
           ]
@@ -79,7 +79,7 @@
       ],
       "verification": [
         "Command has an active CDRM appointment recorded in CROSS",
-        "Appointed CDRM meets minimum rank/grade of E-6/GS-9 or higher per MCBul 5210 dtd 29 Aug 25, par 3b(1)(a)1",
+        "After the ARDB successor check confirms the grade, appointed CDRM meets minimum rank/grade of E-6/GS-9 or higher per MCBul 5210 dtd 29 Aug 25, par 3b(1)(a)1. Until then, apply the MCO 5210.11F officer, SNCO or civilian equivalent standard",
         "Appointment is in writing - generated in CROSS or signed hardcopy letter on file",
         "If hardcopy, appointment letter is uploaded to 'Documents' and 'Miscellaneous' tabs in CROSS",
         "Appointed CDRM is currently assigned to the command",
@@ -175,7 +175,7 @@
             "text": "Monitor unit's annual records management training compliance and upload training roster to CROSS."
           }
         ],
-        "summary": "The CDRM must monitor annual RM training for the entire command. Individual CDRM and SSRM training certificates must be uploaded separately in CROSS under 'Documents,' 'Training Documents.' Command-wide proof of training - organizational training rosters or MCTIMS occasions - is uploaded separately. Failure to monitor, failure to upload certificates, or failure to upload command-wide proof constitutes non-compliance."
+        "summary": "The CDRM must monitor annual RM training for the entire command. Individual CDRM and SSRM training certificates must be uploaded separately in CROSS under 'Documents,' 'Training Documents.' Command-wide proof of training - organizational training rosters or MCTIMS occasions - is uploaded separately. Failure to monitor, failure to upload certificates, or failure to upload command-wide proof constitutes non-compliance. MCBul 5210 carries a cancellation date of August 2026, one year from publication or on incorporation into MCO 5210.11. Confirm the successor directive with ARDB before applying this standard."
       },
       "howToInspect": [
         {
@@ -887,7 +887,7 @@
             "text": "Capstone official rank, name, billet title."
           }
         ],
-        "summary": "Inspector Note: Capstone applies only to commands with billets identified on Form NA-1005. If the command has no Capstone billet, note this and skip to Q0501 - annotate 'N/A - No Capstone billet.' Commands with a billet on the NA-1005 must identify their Capstone official in CROSS, include GRS 6.1 in their command file plan, and notify ARD Records of changes via ETMS2."
+        "summary": "Inspector Note: Capstone applies only to commands with billets identified on Form NA-1005. If the command has no Capstone billet, note this and skip to Q0501 - annotate 'N/A - No Capstone billet.' Commands with a billet on the NA-1005 must identify their Capstone official in CROSS, include GRS 6.1 in their command file plan, and notify ARD Records of changes via ETMS2. MCBul 5210 carries a cancellation date of August 2026, one year from publication or on incorporation into MCO 5210.11. Confirm the successor directive with ARDB before applying this standard."
       },
       "howToInspect": [
         {
@@ -955,7 +955,7 @@
             "text": "Ensure Capstone SIPR email accounts are captured by submitting an update to ARD Records upon receipt of the regularly scheduled quarterly ETMS2 tasker. ARD Records will notify CDRMs via email upon each quarterly tasker release."
           }
         ],
-        "summary": "Inspector Note: The command task manager must notify the CDRM upon receipt of the quarterly ETMS2 tasker. This is an OMB requirement to maintain updates of Capstone information. The CDRM submits the response via ETMS2 to 'USMC HQMC AR ARD RECORDS.' Verify ETMS2 task completion records for the last four quarters. Commands with Capstone officials must respond to quarterly ETMS2 taskers from ARD Records to confirm and update Capstone official information. Failure to respond to one or more quarterly taskers constitutes non-compliance."
+        "summary": "Inspector Note: The command task manager must notify the CDRM upon receipt of the quarterly ETMS2 tasker. This is an OMB requirement to maintain updates of Capstone information. The CDRM submits the response via ETMS2 to 'USMC HQMC AR ARD RECORDS.' Verify ETMS2 task completion records for the last four quarters. Commands with Capstone officials must respond to quarterly ETMS2 taskers from ARD Records to confirm and update Capstone official information. Failure to respond to one or more quarterly taskers constitutes non-compliance. MCBul 5210 carries a cancellation date of August 2026, one year from publication or on incorporation into MCO 5210.11. Confirm the successor directive with ARDB before applying this standard."
       },
       "howToInspect": [
         {
@@ -1120,7 +1120,7 @@
             "text": "Unit commanders shall ensure a staff member is designated in writing to perform the additional duty of Staff Historian IAW reference (a)."
           }
         ],
-        "summary": "Inspector Note: Command chronologies are due NLT 90 days after the end of the reporting period. For semiannual submissions: due 30 June and 31 December. For annual submissions: due NLT 31 December. Digital signatures are not permitted and will not be accepted by the History Division. Commands must submit command chronologies on time with the commanding officer's original signature in OCR PDF format. A staff historian must be designated in writing. The command must maintain a complete historical summary file."
+        "summary": "Inspector Note: Command chronologies are due on fixed dates per MARADMIN 200/25 paragraph 3a. For semiannual submissions: due 30 June and 31 December. For annual submissions: due NLT 31 December. Digital signatures are not permitted and will not be accepted by the History Division. Commands must submit command chronologies on time with the commanding officer's original signature in OCR PDF format. A staff historian must be designated in writing. The command must maintain a complete historical summary file."
       },
       "howToInspect": [
         {

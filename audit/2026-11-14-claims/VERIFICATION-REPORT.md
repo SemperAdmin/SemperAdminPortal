@@ -73,3 +73,23 @@ Minor. NAVMC revision letters do not collapse into one family. match_key keeps o
 3. Fix the 4 important guard and citation findings before PR 156 merges. The weekly scheduled run depends on a guard that reports honestly.
 4. Work the 97 majors and the mco-3000-13b ok miss.
 5. Apply the minor review findings to the guard.
+
+## Fix pass, 2026-11-16
+
+Stephen approved all fixes. Results.
+
+- Re-audit findings. 10 Sonnet fixers worked 404 findings on 102 files. 416 edits applied across 103 files, 2 claims no longer present, 19 skipped with a reason in the workflow output. lastVerified moved on 37 files with every finding cleared. 3 rechecks flagged 48 problems, mostly sibling lines, banned words and update summaries over 160 characters. 46 fixed, 2 were recheck errors.
+- Page 11 authority. MCO P1070.12K chapter 6 is abbreviations. Enlisted pages now cite paragraph 4006, officer pages paragraph 3005, per the cached order.
+- BAH sweep. 26 more pages citing DoDFMR Vol 7A Ch 26 audited, 296 claims. Opus confirmed 85 of 98 findings (2 blocker, 18 major, 65 minor) and refuted 13. 88 edits applied. A recheck flagged 12 problems, all fixed. The HQMC Dependency Determination Section now reads DEERS and Dependency Support Section (MFP-1) per MARADMIN 311/25, on every page and the life events route. Output in bah-sweep/.
+- Correction entries. 33 written or extended under content/updates, including bah-rate-rules-corrected.
+- MCO 1754.4C entry. Status now names MARADMIN 459/26 and MARADMIN 012/25. The MCO 1754.4B alias came out, the supersedes field keeps the history.
+- audit:impact guard.
+  - DoDI changes register against their base instruction (INDEX_VERSION 2 forces one rebuild).
+  - --record refuses a failing run unless --force, and records the newest indexed message date, not the wall clock.
+  - Pages come from live content references unioned with the snapshot. 1,801 pages watched.
+  - NAVMC revisions collapse to one family, PAA serials zero-pad, every document in a reference counts.
+  - Undated messages print, a malformed --since exits 2.
+  - 55 audit tests pass. Live run with --since 2026-09-01: MARADMIN 459/26 now hits 6 pages, up from 1.
+- Validation. content:sync exit 0, lint 0 errors and 5 known warnings, build exit 0 with all links and crossrole links resolving.
+
+Not fixed. NO-ARCHIVE-SOURCE claims stay as listed. The leader secondary dependency page keeps a 90-day DFAS gate attributed to DFAS program rules, no cached source holds it.

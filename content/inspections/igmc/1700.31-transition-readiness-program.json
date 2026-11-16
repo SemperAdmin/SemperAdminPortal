@@ -11,7 +11,7 @@
   "sponsor": "M&RA (MF)",
   "applicabilityLevel": "All levels and types of commands",
   "effectiveDate": "2025-05-15",
-  "lastVerified": "2026-09-23",
+  "lastVerified": "2026-11-16",
   "source": {
     "title": "IGMC Functional Area Checklist - Transition Readiness Program (TRP)",
     "publisher": "Inspector General of the Marine Corps"
@@ -30,7 +30,7 @@
             "MARADMIN 632/19, par 11c",
             "MARADMIN 632/19, par 5"
           ],
-          "evidenceHint": null
+          "evidenceHint": "References cite cancelled MCO 1700.31 and MARADMIN 632/19. Verify the requirement against MCO 1700.31A (2 Mar 2026), which cancelled MCO 1700.31."
         },
         {
           "code": "0102",
@@ -48,7 +48,7 @@
             "MCO 1700.31, par 3b(6)(a)",
             "MARADMIN 632/19, par 11c"
           ],
-          "evidenceHint": null
+          "evidenceHint": "References cite cancelled MCO 1700.31 and MARADMIN 632/19. Verify the requirement against MCO 1700.31A (2 Mar 2026), which cancelled MCO 1700.31."
         },
         {
           "code": "0104",
@@ -59,7 +59,7 @@
             "MCO 1700.31, par 3b (5)(b)",
             "MARADMIN 632/19, par 5"
           ],
-          "evidenceHint": null
+          "evidenceHint": "References cite cancelled MCO 1700.31 and MARADMIN 632/19. Verify the requirement against MCO 1700.31A (2 Mar 2026), which cancelled MCO 1700.31."
         },
         {
           "code": "0105",
@@ -70,7 +70,7 @@
             "MCO 1700.31, par 3b (5)(b)",
             "MARADMIN 632/19, par 5"
           ],
-          "evidenceHint": null
+          "evidenceHint": "References cite cancelled MCO 1700.31 and MARADMIN 632/19. Verify the requirement against MCO 1700.31A (2 Mar 2026), which cancelled MCO 1700.31."
         },
         {
           "code": "0106",
@@ -80,7 +80,7 @@
             "MCO 1700.31, par 3b (5)(e)",
             "MARADMIN 632/19, par 7"
           ],
-          "evidenceHint": null
+          "evidenceHint": "References cite cancelled MCO 1700.31 and MARADMIN 632/19. Verify the requirement against MCO 1700.31A (2 Mar 2026), which cancelled MCO 1700.31."
         },
         {
           "code": "0107",
@@ -89,7 +89,7 @@
             "DoDI 1332.35, Section 9",
             "MARADMIN 632/19, par 9"
           ],
-          "evidenceHint": null
+          "evidenceHint": "References cite cancelled MCO 1700.31 and MARADMIN 632/19. Verify the requirement against MCO 1700.31A (2 Mar 2026), which cancelled MCO 1700.31."
         },
         {
           "code": "0108",
@@ -98,7 +98,7 @@
             "MCO 1700.31, par 3b (4)(u)",
             "MARADMIN 632/19, par 7c"
           ],
-          "evidenceHint": null
+          "evidenceHint": "References cite cancelled MCO 1700.31 and MARADMIN 632/19. Verify the requirement against MCO 1700.31A (2 Mar 2026), which cancelled MCO 1700.31."
         },
         {
           "code": "0109",
@@ -107,7 +107,7 @@
             "MCO 1700.31, par 3b(5)(j)",
             "MARADMIN 632/19, par 9b"
           ],
-          "evidenceHint": null
+          "evidenceHint": "References cite cancelled MCO 1700.31 and MARADMIN 632/19. Verify the requirement against MCO 1700.31A (2 Mar 2026), which cancelled MCO 1700.31."
         }
       ]
     }

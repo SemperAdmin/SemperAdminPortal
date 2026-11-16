@@ -1,7 +1,7 @@
 {
   "faNumber": "3040",
   "sourceDoc": "CASUALTY ASSISTANCE (3040) - INSPECTOR GUIDE - REBUILT.docx",
-  "lastVerified": "2026-05-20",
+  "lastVerified": "2026-11-16",
   "verifiedAtSource": true,
   "items": {
     "0101": {
@@ -344,7 +344,7 @@
             "text": "Voice Report. Commands will contact the MCOC at 1-866-476-2669 and MFPC at 1-800-847-1597 immediately upon learning a reportable casualty has occurred providing, at a minimum, the casualty's name, social security number and basic circumstances surrounding the casualty incident."
           }
         ],
-        "summary": "Upon learning of a reportable casualty, the command must immediately make a voice report to both MCOC and MFPC. Telephonic contact with MFPC must occur before the PCR is released. The PCR must be submitted no later than one hour after learning of the incident."
+        "summary": "Upon learning of a reportable casualty, the command must immediately make a voice report to both MCOC and MFPC. Telephonic contact with MFPC must occur before the PCR is released. The PCR must be submitted no later than one hour after learning of the incident. MARADMIN 186/25 paragraph 6 shortens the voice report to MFPC to 30 minutes and sets the one hour mark for the DCIPS-PCR template emailed to casualty.section@usmc.mil."
       },
       "howToInspect": [
         {
@@ -353,7 +353,8 @@
             "MCOC: 1-866-476-2669",
             "MFPC: 1-800-847-1597",
             "Telephonic notification to both MCOC and MFPC must occur before PCR release",
-            "PCR must be submitted no later than one hour after learning of the incident"
+            "PCR must be submitted no later than one hour after learning of the incident",
+            "Per MARADMIN 186/25 paragraph 6, voice report to MFPC within 30 minutes and DCIPS-PCR template emailed to casualty.section@usmc.mil within one hour"
           ]
         },
         {
@@ -390,6 +391,7 @@
         "CACR knows MCOC contact number: 1-866-476-2669.",
         "CACR correctly states telephonic notification must occur before PCR release.",
         "CACR correctly states PCR must be submitted no later than one hour after learning of the incident.",
+        "CACR correctly states the MFPC voice report is due within 30 minutes and the DCIPS-PCR template goes to casualty.section@usmc.mil within one hour, per MARADMIN 186/25 paragraph 6.",
         "Documentation of telephonic contacts is maintained for any reportable casualties during the inspection period.",
         "PCR submission timestamps confirm compliance with the one-hour standard."
       ],

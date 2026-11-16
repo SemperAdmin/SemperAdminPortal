@@ -46,7 +46,7 @@ The IPAC pay clerk processes BAH, BAS, FSA, Clothing Monetary Allowance, Officer
 
 Source documents flow from the dependency documents (marriage certificate, birth certificates, DEERS enrollment), the duty location for BAH rate per Chapter 26, the duty status (deployed, separated from dependents) for FSA per Chapter 27, the enlisted clothing replacement allowance schedule per Chapter 29, the officer uniform allowance scenario per Chapter 30, and the general officer Personal Money Allowance per Chapter 31. Allowances outputs include the set BAH at the correct rate, the continued BAS, the FSA when applicable, the clothing or uniform allowance, the Personal Money Allowance when applicable, the MCTFS allowance transactions, the verified LES, and the monthly audit record.
 
-Per DoDFMR Vol 7A Chapter 25 (Subsistence), BAS pays the Marine for subsistence. Per Chapter 26 (BAH), the housing allowance pays based on grade, dependent status, and duty location. Per Chapter 27 (FSA), the family separation allowance pays when the Marine separates from dependents by orders for more than 30 days. Per Chapter 29, enlisted clothing replacement allowance pays on an annual cycle. Per Chapter 30, officers receive uniform allowance at first appointment and at specified intervals. Per Chapter 31, general officers receive Personal Money Allowance.
+Per DoDFMR Vol 7A Chapter 25 (Subsistence), BAS pays the Marine for subsistence. Per Chapter 26 (BAH), the housing allowance pays based on grade, dependent status, and duty location. Per Chapter 27 (FSA), the family separation allowance pays FSA-S and FSA-T when separation from dependents exceeds 30 days. FSA-R carries no 30-day minimum. Per Chapter 29, enlisted clothing replacement allowance pays on an annual cycle. Per Chapter 30, officers receive uniform allowance at first appointment and at specified intervals. Per Chapter 31, general officers receive Personal Money Allowance.
 
 ## Trigger events
 
@@ -63,7 +63,7 @@ Per DoDFMR Vol 7A Chapter 25 (Subsistence), BAS pays the Marine for subsistence.
 1. Validate dependency status. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 26, the marriage certificate, birth certificates, and DEERS enrollment drive BAH dependent rate.
 2. Set BAH. Per Chapter 26 and 37 U.S.C. 403, the duty location, grade, and dependent status drive the rate. Per DTMO BAH tables, the rate updates annually on 1 January.
 3. Continue BAS. Per Chapter 25 and 37 U.S.C. 402, BAS continues at the enlisted or officer rate.
-4. Process FSA. Per Chapter 27, FSA applies when separation from dependents exceeds 30 days. FSA-T (temporary), FSA-R (restricted), and FSA-S (ship) categories apply per the situation.
+4. Process FSA. Per Chapter 27 paragraph 2.3.1.1, the 30-day test applies to FSA-S and FSA-T only. FSA-R carries no 30-day minimum. FSA-T (temporary), FSA-R (restricted), and FSA-S (ship) categories apply per the situation.
 5. Process clothing monetary allowance for enlisted. Per Chapter 29, the annual cycle drives the replacement allowance.
 6. Process officer uniform allowance. Per Chapter 30, the first appointment, the active duty period transition, and specified intervals drive the allowance.
 7. Process Personal Money Allowance. Per Chapter 31, eligible general officers receive the allowance.
@@ -83,7 +83,7 @@ Per DoDFMR Vol 7A Chapter 25 (Subsistence), BAS pays the Marine for subsistence.
 
 ### Forms
 
-- BAH Dependent Election Form. Per Chapter 26.
+- NAVMC 10922 dependency application. Per MCO 1751.3<Citation source="MCO 1751.3" />. Chapter 26 has no election form.
 - Dependency Documents. Marriage and birth certificates.
 - FSA Application. Per Chapter 27.
 - Clothing Replacement Allowance Record. Per Chapter 29.
@@ -102,7 +102,7 @@ Per DoDFMR Vol 7A Chapter 25 (Subsistence), BAS pays the Marine for subsistence.
 
 ## Decision points
 
-- BAH-with-dependents versus BAH-without-dependents. Per Chapter 26, the dependent status drives the rate.
+- BAH-with-dependents versus BAH-without-dependents. Per Chapter 26, the dependent status drives the rate. Add BAH-Partial and BAH-Diff for members in single-type quarters (paragraphs 5.5 and 5.6) and BAH-Transit for members between PDSs (paragraph 10.10).
 - FSA category. Per Chapter 27, FSA-T (temporary duty), FSA-R (restricted duty), or FSA-S (ship duty) applies based on the situation.
 - Clothing allowance type. Per Chapter 29, enlisted Marines receive the cash clothing replacement allowance after the issuance period.
 - Officer uniform allowance event. Per Chapter 30, first appointment, active duty entry from reserve, and specified intervals trigger the allowance.

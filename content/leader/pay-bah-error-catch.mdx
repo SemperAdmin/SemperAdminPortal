@@ -1,7 +1,7 @@
 ---
 title: "BAH Error Catch"
 slug: "bah-error-catch"
-summary: "BAH errors compound monthly. Wrong rate, wrong location, wrong dependent count. Section verifies LES against MCTFS quarterly. Catch the error early or the Marine carries months of underpayment."
+summary: "BAH errors compound monthly. Wrong rate, wrong location, wrong dependent count. Section verifies LES against MCTFS quarterly. Catch the error early or the Marine carries months of the wrong rate."
 roles: ["leader", "commander", "admin"]
 lastVerified: "2026-05-06"
 topic: "pay"
@@ -41,7 +41,7 @@ Marines recertify BAH when a trigger occurs. Per DoD FMR Volume 7A<Citation sour
 
 For Marines with secondary dependents driving the BAH rate, the recertification cadence is annual per DFAS Secondary Dependency program rules. The submission window opens 90 days before the existing certification's expiration. <Citation source="DFAS Secondary Dependency program" /> The dedicated Secondary Dependency leaf in this branch covers the package mechanics.
 
-For Marines with primary dependents (spouse, unmarried child under 21), the BAH driver verifies through standard NAVMC 10922<Citation source="NAVMC 10922" /> dependency status. Recertify on PDS change and on any status change. Annual certification does not apply to primary dependents under Chapter 26 paragraph 3.2.3.
+For Marines with primary dependents (spouse, unmarried child under 21), the BAH driver verifies through standard NAVMC 10922<Citation source="NAVMC 10922" /> dependency status. Recertify on PDS change and on any status change. Annual certification does not apply to primary dependents under Chapter 26 paragraph 3.2.3. Reserve Component Marines recertify each dependent at least every third year or on a status change, whichever comes first.
 
 Track each Marine's BAH certification status and surface expirations into the section's quarterly LES audit.
 
@@ -50,11 +50,11 @@ Track each Marine's BAH certification status and surface expirations into the se
 For each Marine, verify quarterly.
 
 - BAH rate matches expected for grade, location, and dependent status.
-- BAH location code matches duty station.
+- BAH location code matches the PDS unless an approved waiver or unaccompanied tour sets the dependent location with designator D. Do not correct those Marines to the PDS.
 - Dependent driver matches dependent count on MCTFS and DEERS.
 - Effective date matches the most recent change driver.
 
-A Marine PCSed three months ago with old BAH location is a Marine losing money every month.
+A Marine PCSed three months ago with old BAH location draws the wrong rate every month. The new PDS rate runs higher or lower than the old one, so the error is an underpayment or a debt.
 
 ## Cross-Check Sources
 
@@ -71,7 +71,6 @@ A discrepancy at any source flags the package for correction.
 - BAH location not updated post-PCS.
 - Dependent flag not set after marriage or first child.
 - Dependent flag stuck at with-dependent after divorce or dependent loss.
-- BAH location set to old housing area after a move within the same duty station.
 - Rate calculated at wrong grade after promotion or demotion.
 
 Each pattern surfaces with quarterly checks. Each costs the Marine in real dollars.
@@ -86,7 +85,7 @@ When you identify the error.
 - Track to closure.
 - Verify on the next LES.
 
-Retroactive correction usually applies. The Marine receives the back pay in a single LES line item.
+An underpayment corrects retroactively. The Marine receives the back pay in a single LES line item. An overpayment creates a debt. A missed PDS recertification is not retroactive without commander certification.
 
 ## Briefing the Marine
 
@@ -102,8 +101,8 @@ A Marine who reviews LES every payday catches errors faster than your quarterly 
 
 A Marine who has carried wrong BAH for 12 months.
 
-- The retroactive correction goes back to the start of the error.
-- The Marine receives back pay.
+- Split by direction. An underpayment repays the Marine back to the start of the error. An overpayment creates a debt.
+- A missed PDS recertification is not retroactive without commander certification.
 - The chain documents the source of the error.
 - Section adjusts the audit cadence to catch it sooner next time.
 

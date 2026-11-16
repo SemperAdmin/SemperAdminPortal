@@ -3,7 +3,7 @@ title: "Pay Reconciliation for UA, Deserter, and Confined Marines"
 slug: "pay-reconciliation-for-ua-deserter-and-confined-marines"
 summary: "Stop pay at UA hour 1, restart at RMC, apply court-martial forfeitures, apply NJP forfeitures, and process the desertion forfeiture disposition rules in DoDFMR Vol 7A Appendix B."
 roles: ["admin", "leader", "commander"]
-lastVerified: "2026-05-12"
+lastVerified: "2026-11-16"
 unitType: "s1-g1"
 topic: "absentee-deserter-confinement"
 function: "GENA"
@@ -33,7 +33,7 @@ source:
 
 S-1 admin specialists and IPAC pay clerks reconcile pay state across the UA, deserter, return, and confinement lifecycle. The S-1 clerk cuts the UA pay stop at hour 1 of UA per the UD-MIPS UA transaction. The S-1 chief cuts the deserter declaration at day 30 with the associated pay state shift. The IPAC pay clerk reconciles forfeitures from court-martial sentences and non-judicial punishment per DoDFMR Vol 7A Chapters 48 and 49.
 
-Source documents flow from the UD-MIPS UA transaction, the deserter declaration, the DD Form 616 return, the DD Form 2329 NJP record (Page 11 NJP entry), the DD Form 2707 court-martial confinement order, and the court-martial promulgating order. Outputs include the pay stop, the pay restart, the forfeiture deductions, the income tax withholding adjustments, and the certified pay reconciliation in MCTFS.
+Source documents flow from the UD-MIPS UA transaction, the deserter declaration, the DD Form 616 return, the NAVMC 10132 Unit Punishment Book NJP record (Page 11 NJP entry), the DD Form 2707 court-martial confinement order, and the court-martial promulgating order. Outputs include the pay stop, the pay restart, the forfeiture deductions, the income tax withholding adjustments, and the certified pay reconciliation in MCTFS.
 
 Pay reconciliation errors create overpayment debts routing through DoDFMR Vol 16 collection procedures. The waivers-remissions-indebtedness category covers the recovery path when reconciliation lapses.
 
@@ -55,9 +55,9 @@ Pay reconciliation errors create overpayment debts routing through DoDFMR Vol 16
 4. Process forfeitures on apprehension. On return to military control, court-martial action and NJP forfeitures process through MCTFS punishment transactions per DoDFMR Vol 7A Chapters 48 and 49.
 5. Restart pay at RMC. The Marine restarts entitled pay effective the return date per the UD-MIPS RMC transaction. The S-1 chief verifies the start date and the BAH rate.
 6. Process court-martial confinement pay rules. Pretrial confinement holds pay at full rate. Post-trial confinement triggers pay reduction or forfeiture per the adjudged and approved sentence per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 48.
-7. Process NJP forfeitures. Article 15 forfeitures apply per the maximum punishment limits in MCM Part V and per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 49 paragraph 490201.
-8. Apply Appendix B disposition rules. Forfeitures and fines from desertion, court-martial, and NJP route per the disposition rules in DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Appendix B. Treasury disposition rules apply to deserter forfeitures.
-9. Reconcile income tax withholding. The CZTE (Combat Zone Tax Exclusion) ends with UA per DoDFMR Vol 7A Chapter 44 paragraph 4402. Withholding state shifts back to the pre-deployment rate.
+7. Process NJP forfeitures. Article 15 forfeitures apply per the maximum punishment limits in MCM Part V and per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 49.
+8. Apply Appendix B disposition rules. Forfeitures and fines from desertion, court-martial, and NJP route per the disposition rules in DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Appendix B. Per Appendix B paragraph 4.7, forfeitures on account of desertion are credited to the Armed Forces Retirement Home Trust Fund.
+9. Reconcile income tax withholding. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 44 paragraph 2.3.2.1, absence from duty for sickness, wounds, internment by the enemy or other lawful cause counts as active service in a combat zone. UA is not a lawful cause, so UA days do not count toward the CZTE (Combat Zone Tax Exclusion). Adjust withholding for those days.
 10. Audit the pay reconciliation. The IPAC pay clerk audits the MCTFS pay history at return, confinement entry, confinement release, and case closure. Pay overpayments route to debt collection per DoDFMR Vol 16.
 
 ## Systems of record and forms
@@ -88,7 +88,7 @@ Pay reconciliation errors create overpayment debts routing through DoDFMR Vol 16
 ## Decision points
 
 - BAH during UA. Per DoDFMR Vol 7A Chapter 26 paragraph 1, BAH stops for unexcused UA. The S-1 chief verifies whether the command excused the absence as unavoidable before stopping or continuing BAH.
-- Pretrial versus post-trial confinement pay. Pretrial confinement holds full pay. Post-trial confinement applies the adjudged forfeitures and the reduction to E-1 if adjudged per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 48 paragraph 480105.
+- Pretrial versus post-trial confinement pay. Pretrial confinement holds full pay. Post-trial confinement applies the adjudged forfeitures and the reduction to E-1. Per DoDFMR Vol 7A<Citation source="DODFMR Vol 7A" /> Chapter 48 paragraph 3.1.1, a sentence with confinement or a punitive discharge reduces the member to E-1 by operation of law when regulation authorizes it. Per paragraph 3.2, an adjudged reduction takes effect 14 days after the sentence is announced.
 - Allen credit and RCM 305(k) credit on forfeitures. Forfeiture timing runs from 14 days after the sentence is announced (convening authority approval for a summary court-martial), not from confinement entry. Allen credit and RCM 305(k) credit reduce confinement duration but do not shift forfeiture timing.
 
 ## Authority
@@ -99,7 +99,7 @@ This sub-page maps to NAVMC 3500.3E T-R event 0111-GENA-2017 Process Return of A
 
 - DoDFMR Vol 7A Chapter 1 Basic Pay. Pay entitlement rules.
 - DoDFMR Vol 7A Chapter 34 Pay Entitlement of Members Missing or in a MIA Status.
-- DoDFMR Vol 7A Chapter 44 Withholding of Income Tax. CZTE rules at paragraph 4402.
+- DoDFMR Vol 7A Chapter 44 Withholding of Income Tax. CZTE rules at paragraph 2.3.2.
 - DoDFMR Vol 7A Chapter 48 Court-Martial Sentences. Forfeitures and confinement pay.
 - DoDFMR Vol 7A Chapter 49 Non-Judicial Punishment. Article 15 forfeitures.
 - DoDFMR Vol 7A Appendix B Disposition of Forfeitures and Fines.
