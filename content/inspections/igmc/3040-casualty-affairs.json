@@ -58,33 +58,37 @@
           "code": "0105",
           "question": "Is the CACR documenting the telephonic contact with the HQMC Casualty Section (MFPC) prior to releasing a Personnel Casualty Report (PCR) and submitting the PCR to MFPC within one hour of the voice notification?",
           "references": [
-            "MCO 3040.4, chap 2, par 4a and 5a; chap 3, par 1b and 4a"
+            "MCO 3040.4, chap 2, par 4a and 5a; chap 3, par 1b and 4a",
+            "MARADMIN 186/25, par 4 and 6"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Voice report to MFPC within 30 minutes. Casualty template to casualty.section@usmc.mil within one hour. DCIPS-PCR spreadsheet only, MARADMIN 186/25 par 4 and 6."
         },
         {
           "code": "0106",
           "question": "Is the CACR familiar with and properly submitting PCRs of the type, status, and categories of casualties reported, to include mass casualty incidents and deceased dependents?",
           "references": [
-            "MCO 3040.4, chap 3, sect 2, figures 3-1 and 3-2"
+            "MCO 3040.4, chap 3, sect 2, figures 3-1 and 3-2",
+            "MARADMIN 186/25, par 4"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Initial, STACH, PROG and SUPP reports use the DCIPS-PCR spreadsheet by email to casualty.section@usmc.mil, MARADMIN 186/25 par 4."
         },
         {
           "code": "0107",
           "question": "Is the CACR familiar with and properly submitting both initial and supplemental PCRs regarding the circumstances under which a Marine is DUSTWUN, and the timelines associated with this status?",
           "references": [
-            "MCO 3040.4, chap 8, figure 3-13"
+            "MCO 3040.4, chap 8, figure 3-13",
+            "MARADMIN 186/25, par 4"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Initial and supplemental reports use the DCIPS-PCR spreadsheet by email to casualty.section@usmc.mil, MARADMIN 186/25 par 4."
         },
         {
           "code": "0108",
           "question": "Is the CACR preparing, submitting, and maintaining progress reports regarding the location and status of hospitalized Marines, if reportable, to HQMC Casualty (MFPC)?",
           "references": [
-            "MCO 3040.4, chap 3"
+            "MCO 3040.4, chap 3",
+            "MARADMIN 186/25, par 4"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Progress reports use the DCIPS-PCR spreadsheet by email to casualty.section@usmc.mil, MARADMIN 186/25 par 4."
         },
         {
           "code": "0109",
