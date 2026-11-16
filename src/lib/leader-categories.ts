@@ -173,7 +173,7 @@ export const LEADER_CATEGORIES: LeaderCategory[] = [
     label: "Performance Evaluation Overview",
     shortLabel: "PE Overview",
     description:
-      "JEPES for the junior enlisted tier, FitRep for SNCO and officer. Two systems, one section.",
+      "JEPES for the junior enlisted tier, FitRep for Sergeant through Major General. Two systems, one section.",
     icon: "BookOpen",
   },
   {
@@ -183,7 +183,7 @@ export const LEADER_CATEGORIES: LeaderCategory[] = [
     label: "JEPES for Junior Enlisted",
     shortLabel: "JEPES",
     description:
-      "Replaced Pro and Con marks for E-1 through E-5. Section leader and NCO write the evaluation.",
+      "Replaced Pro and Con marks for E-1 through E-4. Section leader and NCO write the evaluation.",
     icon: "TrendingUp",
   },
   {
@@ -213,7 +213,7 @@ export const LEADER_CATEGORIES: LeaderCategory[] = [
     label: "RS Mechanics",
     shortLabel: "RS",
     description:
-      "Reporting Senior writes Section H, attribute marks, narrative, comparative assessment.",
+      "The RS marks attributes and writes RS comments. The RO owns the comparative assessment in section K-3.",
     icon: "FileText",
   },
   {
@@ -374,7 +374,7 @@ export const LEADER_CATEGORIES: LeaderCategory[] = [
     label: "Processing Timelines",
     shortLabel: "Timelines",
     description:
-      "Standard PAC windows. Brief honestly, follow up at day 7, escalate at day 14.",
+      "Typical PAC windows. Brief honestly, follow up at day 7, escalate at day 14.",
     icon: "Calendar",
   },
   {
@@ -644,7 +644,7 @@ export const LEADER_CATEGORIES: LeaderCategory[] = [
     label: "Family Docs Coaching",
     shortLabel: "Family Docs",
     description:
-      "NAVMC 10922 inside the 10-working-day window.",
+      "NAVMC 10922 inside 30 days of the life event.",
     icon: "Heart",
   },
   {
@@ -1002,7 +1002,7 @@ export const LEADER_PARENT_GROUPS: LeaderParentGroup[] = [
     label: "Performance Evaluation",
     shortLabel: "Performance",
     description:
-      "JEPES for the junior enlisted tier. FitRep cycle for SNCO and officer. RS and RO mechanics. Adverse reports. APES administration.",
+      "JEPES for the junior enlisted tier. FitRep cycle for Sergeant through Major General. RS and RO mechanics. Adverse reports. APES administration.",
     icon: "TrendingUp",
     children: [
       "pe-overview",
@@ -1112,7 +1112,7 @@ export const LEADER_PARENT_GROUPS: LeaderParentGroup[] = [
     label: "Life Events Coaching",
     shortLabel: "Life Events",
     description:
-      "Marriage, birth, divorce, custody changes, dependent loss, EFMP coordination. NAVMC 10922 inside the 10-working-day window.",
+      "Marriage, birth, divorce, custody changes, dependent loss, EFMP coordination. NAVMC 10922 inside 30 days of the life event.",
     icon: "Heart",
     children: [
       "life-events-family-docs-coaching",
