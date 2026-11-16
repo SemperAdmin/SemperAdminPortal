@@ -10,6 +10,8 @@ PR 152 merged and main merged into this branch on 2026-11-15. The eight held fin
 
 - Six hand-authored video pages with dead marinenet.marines.mil addresses were removed 2026-11-15. Stephen confirmed the videos are retired.
 
+- Six more video pages stay in review status, held by Stephen 2026-11-15: fitrep-self-input, how-to-set-alerts-for-new-videos, navmc-11000-walkthrough, pft-grading-overview, promotion-board-records, separation-packet-flow. They remain on VIDEO_URL_QUARANTINE in src/lib/content/schemas.ts until a retire or record decision.
+
 ## Partial fixes
 
 - content/citations/mctfsprium-70101.mdx. The Table 7-2 grid harvest is garbled, so the entry sends readers to the live manual. Table 7-1 rule 9 shows no TTC in the harvest.

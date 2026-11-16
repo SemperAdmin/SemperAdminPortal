@@ -1,0 +1,147 @@
+"""Standing guard. Lists portal pages touched by messages newer than the last audit run.
+
+Reads the amendment index (amendments.py) for MARADMIN, ALNAV, ALMAR, DoDI change and PAA
+entries dated after the date in audit/last-run.json, matches each amended, cancelled or
+implemented document against audit/2026-11-14-claims/source-map.json, and prints the impacted
+pages per message. Exits 1 when any impacted page carries a lastVerified older than the message.
+
+Run: python -I scripts/audit/new_message_impact.py [--since YYYY-MM-DD] [--record]
+  --since   override the date in audit/last-run.json
+  --record  after the run, write today's date to audit/last-run.json
+Reads the archive and text cache only. Writes nothing outside the repo.
+"""
+import argparse, datetime, importlib.util, json, re, sys
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+REPO = HERE.parents[1]
+LAST_RUN = REPO / "audit" / "last-run.json"
+SOURCE_MAP = REPO / "audit" / "2026-11-14-claims" / "source-map.json"
+
+
+def _load_sibling(name):
+    spec = importlib.util.spec_from_file_location(name, HERE / f"{name}.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+am = _load_sibling("amendments")
+
+
+def match_key(text: str | None) -> str | None:
+    """Revision family key. MCO P1050.3J, MCO 1050.3 J and MCO 1050.3J all give MCO 1050.3."""
+    key = am.doc_key(text or "")
+    if not key:
+        return None
+    kind, _, num = key.partition(" ")
+    if kind in am.REVISION_GATED:
+        num = re.sub(r"^P(?=\d)", "", num)
+    return am.base_key(f"{kind} {num}")
+
+
+def _page_index(source_map: list[dict]) -> dict[str, list[str]]:
+    """Family key to the pages whose source set holds it."""
+    out: dict[str, list[str]] = {}
+    for entry in source_map:
+        keys = set()
+        for s in entry.get("sources", []):
+            for field in ("ref", "id"):
+                k = match_key(s.get(field))
+                if k:
+                    keys.add(k)
+        for k in keys:
+            out.setdefault(k, []).append(entry["page"])
+    return out
+
+
+def impact_from_index(index: dict, source_map: list[dict], since: str, last_verified) -> list[dict]:
+    """index: amendments index {doc key: [entry]}. last_verified: page -> ISO date or None."""
+    pages_by_key = _page_index(source_map)
+    by_msg: dict[str, dict] = {}
+    for doc, entries in index.items():
+        fam = match_key(doc)
+        hit_pages = pages_by_key.get(fam, []) if fam else []
+        if not hit_pages:
+            continue
+        for e in entries:
+            if not e.get("date") or e["date"] <= since:
+                continue
+            m = by_msg.setdefault(e["id"], {"message": e["id"], "date": e["date"], "file": e.get("file"),
+                                            "documents": [], "kinds": {}, "pages": {}})
+            if doc not in m["documents"]:
+                m["documents"].append(doc)
+            m["kinds"][doc] = e["kind"]
+            for p in hit_pages:
+                lv = am.iso_date(last_verified(p) or "")
+                m["pages"][p] = {"page": p, "lastVerified": lv or None, "stale": not lv or lv < e["date"]}
+    report = []
+    for m in sorted(by_msg.values(), key=lambda m: (m["date"], m["message"])):
+        m["documents"].sort()
+        m["pages"] = sorted(m["pages"].values(), key=lambda p: p["page"])
+        report.append(m)
+    return report
+
+
+def impact(messages, source_map: list[dict], since: str, last_verified) -> list[dict]:
+    """messages: iterable of (id, date, file, text), scanned with amendments.build_index."""
+    return impact_from_index(am.build_index(messages), source_map, since, last_verified)
+
+
+def exit_code(report: list[dict]) -> int:
+    return 1 if any(p["stale"] for m in report for p in m["pages"]) else 0
+
+
+def read_since(path: Path = LAST_RUN) -> str:
+    data = json.loads(Path(path).read_text(encoding="utf-8"))
+    since = am.iso_date(data.get("date"))
+    if not since:
+        raise ValueError(f"{path} holds no ISO date")
+    return since
+
+
+_LV = re.compile(r'^lastVerified:\s*["\']?(\d{4}-\d{2}-\d{2})', re.M)
+
+
+def page_last_verified(page: str) -> str | None:
+    path = REPO / page
+    try:
+        raw = path.read_text(encoding="utf-8")
+    except OSError:
+        return None
+    if path.suffix == ".json":
+        try:
+            return am.iso_date(json.loads(raw).get("lastVerified")) or None
+        except ValueError:
+            return None
+    m = _LV.search(raw[:4000])
+    return m.group(1) if m else None
+
+
+def main(argv: list[str]) -> int:
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("--since")
+    ap.add_argument("--record", action="store_true")
+    args = ap.parse_args(argv)
+    since = am.iso_date(args.since) if args.since else read_since()
+    source_map = [e for e in json.loads(SOURCE_MAP.read_text(encoding="utf-8"))
+                  if (REPO / e["page"]).exists()]
+    report = impact_from_index(am.load_index(), source_map, since, page_last_verified)
+    stale_total = 0
+    for m in report:
+        stale = [p for p in m["pages"] if p["stale"]]
+        stale_total += len(stale)
+        docs = ", ".join(f"{d} ({m['kinds'][d]})" for d in m["documents"])
+        print(f"{m['date']}  {m['message']}  {docs}  {len(m['pages'])} pages, {len(stale)} need a source check")
+        for p in stale:
+            print(f"    {p['page']}  lastVerified {p['lastVerified'] or 'missing'}")
+    print(f"[audit:impact] since {since}: {len(report)} messages, "
+          f"{sum(len(m['pages']) for m in report)} page hits, {stale_total} older than their message")
+    if args.record:
+        LAST_RUN.write_text(json.dumps({"date": datetime.date.today().isoformat()}) + "\n", encoding="utf-8")
+        print(f"[audit:impact] recorded {LAST_RUN.relative_to(REPO).as_posix()}")
+    return exit_code(report)
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

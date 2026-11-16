@@ -204,6 +204,8 @@ Standing authoring rule. Read this list before shipping any content change.
 4. `verification-sweep` gets an entry when a batch of pages is re-checked against source with no content change. Set `count` to the page total. Sweeps collapse under the timeline.
 5. Copy edits, body rewrites, structural passes, and dependency work never get an entry. Git is the record for those.
 
+Impact check. Run `npm run audit:impact` before shipping an update entry. The script reads every MARADMIN, ALNAV, ALMAR, DoDI change and PAA dated after the date in `audit/last-run.json`, matches each amended, cancelled or implemented document against the audit source map, and lists the pages it touches. It exits 1 when an impacted page carries a `lastVerified` older than the message. Pass `--since YYYY-MM-DD` to widen the window. Pass `--record` after a full source check to move the date forward. The first run after an archive refresh rebuilds the amendment index and takes several minutes.
+
 Field discipline.
 
 - `date` is when the portal reflected the change. `effectiveDate` is when the policy itself took effect. Carry both when they differ, the gap is honest.
