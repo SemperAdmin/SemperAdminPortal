@@ -1,0 +1,717 @@
+{
+ "verified": [
+  {
+   "page": "content/admin/pac-flight-pay.mdx",
+   "line": 202,
+   "claim": "Member medically grounded or removed from flying duty: AvIP should stop",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "Service members temporarily medically incapacitated will be considered qualified for aviation service unless such incapacitation continues for more than 12 months.",
+   "paragraph": "DoDFMR Vol 7A Ch 22 para 3.3.2",
+   "correctedFix": "State AvIP continues through temporary medical incapacity for up to 365 days. AvIP stops on permanent disqualification under 3.3.3 or unauthorized absence under 3.3.4, so fix lines 174, 202 and 224 to match.",
+   "note": "Downgraded from blocker. The error underpays the Marine and the stop is reversible, but the instruction is wrong on three lines."
+  },
+  {
+   "page": "content/admin/pac-flight-pay.mdx",
+   "line": 114,
+   "claim": "Annual minimum flight hours and currency requirement",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "Achieves the minimum flight requirements of 4 hours during 1 calendar month or 24 hours during 6 consecutive months",
+   "paragraph": "DoDFMR Vol 7A Ch 22 para 3.2.5",
+   "correctedFix": "Replace the annual minimum with the 4 hours in one month or 24 hours in six consecutive months test. Add the RC test of 2 hours or 12 hours and note a certified simulator counts.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/pac-separation-pay.mdx",
+   "line": 68,
+   "claim": "Reservist separation pay covers Reserve members involuntarily separated from drilling status",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "Reserve members not on the active-duty list when separated must have 6 years of continuous active duty or full-time National Guard duty immediately preceding separation.",
+   "paragraph": "DoDFMR Vol 7A Ch 35 para 3.1.1.1.1",
+   "correctedFix": "State a Reserve member qualifies only when involuntarily separated from active duty after 6 or more continuous years of active duty or full-time National Guard duty. Separation from drilling status alone does not qualify.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/pac-separation-pay.mdx",
+   "line": 191,
+   "claim": "Separation pay must be repaid if the member returns to active duty before a set period, from future military pay",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "subject to the recoupment of the gross taxable separation pay they received. Recoupment from retired pay, retainer pay, or VA disability compensation",
+   "paragraph": "DoDFMR Vol 7A Ch 35 para 3.5",
+   "correctedFix": "Replace the rejoin rule with recoupment from later retired or retainer pay or VA disability compensation. Fix lines 191 to 203, 215, 227 and 271.",
+   "note": "The return-to-active-duty deduction in para 8.11 applies only to VSP, not separation pay."
+  },
+  {
+   "page": "content/admin/iandi-survivor-benefit-plan.mdx",
+   "line": 117,
+   "claim": "Annuity subject to Social Security offset for some situations",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "Social Security offset was eliminated effective April 1, 2008.",
+   "paragraph": "DoDFMR Vol 7B Ch 42 para 4.17",
+   "correctedFix": "Delete the offset bullet and rewrite the Social Security Q&A at lines 208 to 210 to say no offset applies. Also state the DIC offset ended 31 December 2022 at lines 218 and 241.",
+   "note": "Para 4.8 confirms the DIC offset phase-out ended December 31, 2022."
+  },
+  {
+   "page": "content/admin/iandi-survivor-benefit-plan.mdx",
+   "line": 125,
+   "claim": "Premium is 6.5 percent of the elected base amount, example $195 on $3000, on a Reserve-audience page",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "is entitled to disability or non-regular (Reserve) retirement, is entitled to whichever method is more favorable",
+   "paragraph": "DoDFMR Vol 7B Ch 45 para 3.2.1",
+   "correctedFix": "Say Reserve retirees pay the more favorable of 6.5 percent of base or 2.5 percent of the threshold plus 10 percent of the excess. Rework the line 130 example to show both methods.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/iandi-standby-categories.mdx",
+   "line": 76,
+   "claim": "ISL eligibility: specific medical conditions not warranting separation, long-term medical conditions",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "Have at least 20 years qualifying Federal service and a disability rated at less than 30 percent, and choose ISL vice separation",
+   "paragraph": "MCO 1001R.1L Ch 9 para 7.a(3); Ch 1 para 4.b(2)",
+   "correctedFix": "Replace lines 76 and 81 with the MCRAMM ISL criteria. List non-participating affiliation, mobilization potential, 20 years with a disability under 30 percent, board action, HIV-positive, and officers failing 27 or 50 points.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/iandi-smp-and-plc.mdx",
+   "line": 122,
+   "claim": "PLC graduate arrives at I&I: active duty during initial schools then Reserve drilling",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "Upon commissioning, PLC program members will be transferred to, and remain in, the IRR prior to completion of TBS.",
+   "paragraph": "MCO 1001R.1L Ch 2 Sec 3 para 4.c",
+   "correctedFix": "Say commissioned PLC members transfer to the IRR and stay there until TBS completes. Rewrite the receipt steps at lines 104 to 124 and the line 138 claim.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/iandi-smp-and-plc.mdx",
+   "line": 215,
+   "claim": "PLC course failure: disenrollment or possible enlistment contract",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "Marines who do not complete the PLC course are required to return to their parent unit.",
+   "paragraph": "MCO 1001R.1L Ch 2 Sec 3 para 4.c",
+   "correctedFix": "Say a Marine who does not complete the PLC course returns to the parent SMCR unit.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/iandi-smp-and-plc.mdx",
+   "line": 173,
+   "claim": "SMP documentation includes NROTC unit enrollment documentation",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "Members of the Platoon Leaders Class (PLC) Program ... may participate as enlisted members of SMCR units as part of the SMP.",
+   "paragraph": "MCO 1001R.1L Ch 2 Sec 3 para 4.a",
+   "correctedFix": "Delete NROTC unit enrollment from the SMP document list and replace it with PLC program acceptance documentation.",
+   "note": "MCRAMM contains no NROTC text. Severity lowered because this is one item in a records list."
+  },
+  {
+   "page": "content/admin/iandi-smp-and-plc.mdx",
+   "line": 192,
+   "claim": "SMP members coordinate with NROTC unit, ROTC eligibility, NROTC Units coordinate SMP (lines 192, 196, 231)",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "Members of the PLC must have been an enlisted member of an SMCR unit prior to acceptance to the PLC program",
+   "paragraph": "MCO 1001R.1L Ch 2 Sec 3 para 4.b",
+   "correctedFix": "Replace the NROTC references at lines 192, 196 and 231 with PLC and OCS coordination. SMP in the MCRAMM is PLC members drilling in SMCR units only.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/iandi-funeral-honors-duty.mdx",
+   "line": 61,
+   "claim": "FHD pay equals one period of drill pay or a flat rate, whichever applies",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "one funeral honors duty allowance (FHDA) of either the minimum stipend allowance or one basic drill pay (whichever is greater)",
+   "paragraph": "MCO 1001R.1L Ch 3 Sec 2 para 4.d(1); DoDFMR Vol 7A Ch 58 para 2.7.2",
+   "correctedFix": "Say the FHDA is the greater of the $50 stipend or one basic drill pay, per the MCRAMM and FMR Vol 7A Ch 58 para 2.7.2.",
+   "note": "Page wording is vague rather than wrong. Lowered to minor."
+  },
+  {
+   "page": "content/citations/mco-5300-17a.mdx",
+   "line": 34,
+   "claim": "Unit commanders approve the random urinalysis schedule each month (also line 142)",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "Ensure that at least 10 percent of the command's personnel are tested monthly using the random premise code IR",
+   "paragraph": "MCO 5300.17A W/Admin CH-2, SACO duties (text layer is font-shifted, decoded)",
+   "correctedFix": "Delete the monthly schedule approval duty at lines 34 and 142. The order assigns the monthly random testing program to the SACO.",
+   "note": "Real page path is content/citations/mco-5300-17a.mdx. No approval of a testing schedule appears anywhere in the order. Lowered to minor because the duty is added, not reversed."
+  },
+  {
+   "page": "content/citations/mco-5216-20.mdx",
+   "line": 41,
+   "claim": "SECNAV M-5216.5 chapters: naval letter Ch 1, endorsements Ch 2, signing Ch 8, messages Ch 10",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "CHAPTER 7 Correspondence Format ... CHAPTER 8 Multiple-Address Letter ... CHAPTER 9 Endorsements ... CHAPTER 10 Memorandums",
+   "paragraph": "SECNAV M-5216.5 TOC; Ch 2 para 5",
+   "correctedFix": "Correct to standard letter format Ch 7, endorsements Ch 9, memorandums Ch 10 and signature authority Ch 2 para 5. Drop the messages chapter since the manual has none.",
+   "note": "Lowered to minor. Wrong chapter pointers on a citation registry page."
+  },
+  {
+   "page": "content/marines/career-services.mdx",
+   "line": 102,
+   "claim": "SkillBridge has no cost to the Marine (also line 340)",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "Excess costs for transportation expenses are the personal financial responsibility of the Marine.",
+   "paragraph": "NAVMC 1700.2B Encl 2 (S-PTAD travel)",
+   "correctedFix": "Say the program charges no tuition to the Marine. Then state travel cost beyond the government cost to the HOS or HOR is at the Marine's expense.",
+   "note": "Lowered to minor. Only travel above the HOS or HOR constructed cost falls on the Marine."
+  },
+  {
+   "page": "content/marines/career-services.mdx",
+   "line": 42,
+   "claim": "Every fact on this page comes from MCO 1700.30 and others",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "MARINE CORPS COMMUNITY SERVICES BUSINESS OPERATIONS MANUAL",
+   "paragraph": "MCO 1700.30 Subj line",
+   "correctedFix": "Drop MCO 1700.30 from the line 42 sourcing statement. It is the MCCS Business Operations Manual and has no FMEAP, COOL, USMAP or MyCAA text.",
+   "note": "Lowered to minor. Misattribution, no fact reversed."
+  },
+  {
+   "page": "content/marines/career-services.mdx",
+   "line": 110,
+   "claim": "Linked permissive-tad page still states Cat I 120 and Cat II/III 90 day caps",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "SkillBridge participation does not exceed 180 days from retirement/End of Active Duty Service (EAS) date per reference (a).",
+   "paragraph": "NAVMC 1700.2B para 7",
+   "correctedFix": "Correct content/marines/permissive-tad.mdx lines 131 to 135 and 314 to 326 to the NAVMC 1700.2B 180 day rule and S-PTAD reporting. Retire the MARADMIN 280/24 category caps.",
+   "note": "NAVMC 1700.2B (Apr 2025) is newer than MARADMIN 280/24 and 625/24 and wins."
+  },
+  {
+   "page": "content/admin/s1g1-deployments-exercises-operations-magtf-and-meu-operations.mdx",
+   "line": 44,
+   "claim": "Per MCO P3500.72A, MEU certification follows a defined T&R event roadmap (also lines 42, 60, 75, 82, 90)",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "Subj: MARINE CORPS GROUND TRAINING AND READINESS (T&R) PROGRAM",
+   "paragraph": "MCO P3500.72A Admin CH-1, Subj. Zero MEU mentions in the cached text",
+   "correctedFix": "Remove the MEU work-up and certification claims attributed to MCO P3500.72A. Cite the MEU work-up order if one is archived, or mark the claims NO-ARCHIVE-SOURCE.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-absentee-deserter-confinement-pay-reconciliation-for-ua-deserter-and-confined-marines.mdx",
+   "line": 36,
+   "claim": "DD Form 2329 is the NJP record with Page 11 entry",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "DD FORM 2329, APR 2020 RECORD OF TRIAL BY SUMMARY COURT-MARTIAL",
+   "paragraph": "DD Form 2329 title",
+   "correctedFix": "Replace DD Form 2329 with NAVMC 10132 Unit Punishment Book as the NJP record. Keep DD 2329 only for summary court-martial.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-absentee-deserter-confinement-pay-reconciliation-for-ua-deserter-and-confined-marines.mdx",
+   "line": 59,
+   "claim": "Treasury disposition rules apply to deserter forfeitures",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "the amount of forfeitures on account of the desertion will be credited to the AFRHTF.",
+   "paragraph": "DoDFMR Vol 7A App B para 4.7",
+   "correctedFix": "Replace Treasury with the Armed Forces Retirement Home Trust Fund.",
+   "note": "Lowered to minor. The S-1 does not route the funds, so the error does not change a clerk action."
+  },
+  {
+   "page": "content/admin/s1g1-absentee-deserter-confinement-pay-reconciliation-for-ua-deserter-and-confined-marines.mdx",
+   "line": 60,
+   "claim": "CZTE ends with UA and withholding shifts back per Ch 44 para 4402",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "absent from the duty assignment because of sickness, wounds, internment by the enemy, or other lawful cause are periods of active service.",
+   "paragraph": "DoDFMR Vol 7A Ch 44 para 2.3.2.1",
+   "correctedFix": "Cite Ch 44 para 2.3.2.1 and say UA is not a lawful cause, so UA days do not count as CZ active service. Drop the nonexistent paragraph 4402.",
+   "note": "Ch 44 has no paragraph 4402. The underlying logic holds by inference, so the error is mostly citation. Lowered to minor."
+  },
+  {
+   "page": "content/marines/separation-pay-and-final-pay.mdx",
+   "line": 84,
+   "claim": "Home of record for non-retirement separation, home of selection for retirement only",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "Separation with severance or separation pay immediately following 8 years or more of continuous active duty with no single break of more than 90 days.",
+   "paragraph": "JTR 051003-A.1.c",
+   "correctedFix": "State HOS travel also applies to separation with severance or separation pay after 8 or more continuous years of active duty. Note non-disability retirement needs the same 8 year test.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-promotions-enlisted-promotion-eligibility.mdx",
+   "line": 66,
+   "claim": "Limited duty and MEB or PEB status are not restrictions (per 1203.4a)",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "Active component Marines who have been placed in a Permanent Limited Duty (PLD) status are not eligible for selection consideration or promotion",
+   "paragraph": "MCO P1400.32D para 1203.4a(2)",
+   "correctedFix": "Say a pending PEB and hospitalization do not remove eligibility. List the 1203.4a exceptions: own misconduct, active component PLD, and reserve NPQ with 18 to 20 years.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-promotions-pfc-and-lcpl-promotion.mdx",
+   "line": 66,
+   "claim": "A non-recommendation Page 11 suspends automatic PFC/LCpl promotion (also line 90)",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "To prevent a Marine from being promoted, the NOT RECOMMENDED entry can be reported either before or after the GRADE SELECT cycle",
+   "paragraph": "MARADMIN 559/23 para 2",
+   "correctedFix": "State the stop is a NOT RECOMMENDED entry in the MCTFS promotion module, or by unit diary, completed before the 1st of the month. The Page 11 is required with it but does not stop the promotion alone. Fix lines 33, 57, 66, 86, 90 and 98.",
+   "note": "Downgraded from blocker to major. MARADMIN 185/25 does not cancel 559/23."
+  },
+  {
+   "page": "content/admin/s1g1-promotions-promotion-restrictions-and-withholds.mdx",
+   "line": 92,
+   "claim": "Cutting a Page 11 non-recommendation at the decision point stops the promotion",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "the NOT RECOMMENDED entry can be reported either before or after the GRADE SELECT cycle, however, it must be completed before the 1st",
+   "paragraph": "MARADMIN 559/23 para 2",
+   "correctedFix": "Reword the pitfall to the NOT RECOMMENDED entry reported in MCTFS before the 1st of the month, with the Page 11 as the supporting record.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/promotion-delays-and-revocations.mdx",
+   "line": 77,
+   "claim": "Under investigation for major misconduct is a restriction category",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "z. While awaiting a pending court-martial or nonjudicial punishment. aa. While pending adjudication of charges by a civil court",
+   "paragraph": "MCO P1400.32D para 1204.4",
+   "correctedFix": "Delete the investigation bullet. Point lines 70 and 74 at para 1204.4, not 1204.3.",
+   "note": "No 1204.4 category covers a pending investigation. Lowered to minor because pending NJP or court-martial already appears."
+  },
+  {
+   "page": "content/marines/promotion-delays-and-revocations.mdx",
+   "line": 92,
+   "claim": "Commander notifies CMC immediately by standard naval letter",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "he will immediately notify the CMC (MMPR-2), by naval message, prior to the effective date of promotion",
+   "paragraph": "MCO P1400.32D para 5200.1",
+   "correctedFix": "Say the commander notifies CMC by naval message before the promotion effective date.",
+   "note": ""
+  },
+  {
+   "page": "content/citations/secnav-m-5210-2.mdx",
+   "line": 35,
+   "claim": "1626 is the SSIC for NJP",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "5812 Commanding Officer's Non-Judicial Punishment",
+   "paragraph": "SECNAV M-5210.2 SSIC 5800 series",
+   "correctedFix": "Use SSIC 5812 for NJP records. 1626 is Enlisted Discipline.",
+   "note": ""
+  },
+  {
+   "page": "content/citations/secnav-m-5210-2.mdx",
+   "line": 35,
+   "claim": "5830 is the SSIC for legal administrative files",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "5830 Courts of Inquiry and Investigations",
+   "paragraph": "SECNAV M-5210.2 SSIC 5800 series",
+   "correctedFix": "Label 5830 as Courts of Inquiry and Investigations.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-limited-duty-expanded-permanent-limited-duty.mdx",
+   "line": 54,
+   "claim": "Standard PLD review surfaces broader restrictions warranting EPLD consideration",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "The injury/disability must be combat-related, have occurred after 11 September 2001, and meet Purple Heart criteria.",
+   "paragraph": "MCO 1900.16 W/CH-3 para 8109.1.a",
+   "correctedFix": "Replace the trigger with a PEB unfit finding for a combat-related injury after 11 September 2001 that meets Purple Heart criteria or a DC M&RA waiver.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-limited-duty-expanded-permanent-limited-duty.mdx",
+   "line": 92,
+   "claim": "Breadth of restrictions drives PLD versus EPLD classification (lines 63, 91, 92, 100)",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "The injury/disability must be combat-related, have occurred after 11 September 2001, and meet Purple Heart criteria.",
+   "paragraph": "MCO 1900.16 W/CH-3 para 8109.1.a",
+   "correctedFix": "Reword lines 63, 91, 92 and 100 so the combat-related criteria, not restriction breadth, decide EPLD, matching line 49.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/retirement-types-and-eligibility.mdx",
+   "line": 369,
+   "claim": "Closing summary says submit retirement requests 6-18 months out",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "Submit requests for retirement/transfer to the FMCR not more than 14 months and not less than four months before the requested date.",
+   "paragraph": "MCO 1900.16 W/CH-3 para 7005.1; 2004.1",
+   "correctedFix": "Change line 369 to 14 months to 4 months before the requested date, matching line 194.",
+   "note": "Downgraded from blocker. MCTFS rejects an 18 month request, so the error causes rework, not an irreversible loss."
+  },
+  {
+   "page": "content/marines/retirement-types-and-eligibility.mdx",
+   "line": 130,
+   "claim": "Disability retirement requires a 30 percent rating, omits the 20 years of service route",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "(1) At least 20 years of service computed in accordance with Section 1208 ... or (2) A disability of at least 30 percent",
+   "paragraph": "DoDI 1332.18 para 7.2.b",
+   "correctedFix": "State disability retirement applies at 30 percent or higher, or at any rating with 20 or more years of service. Apply to lines 130, 153, 287, 319 and 369.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/retirement-types-and-eligibility.mdx",
+   "line": 281,
+   "claim": "Below 30 percent is severance pay, not retirement",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "Less than 30 percent disability rating with less than 20 years active service rates a medical discharge with disability severance pay.",
+   "paragraph": "MCO 1900.16 W/CH-3 para 8104.6.b",
+   "correctedFix": "Add with less than 20 years of active service to the severance statement.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-limited-duty-permanent-limited-duty.mdx",
+   "line": 68,
+   "claim": "MTF commander and PEB sign the retention recommendation for PLD",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "PLD requests recommending four months or less require commanding officer endorsement. PLD requests greater than four months require commanding general endorsement.",
+   "paragraph": "MCO 1900.16 W/CH-3 para 8108.2",
+   "correctedFix": "Route the Marine's AA form request through the chain of command to CMC (MMSR-4), with CO endorsement up to 4 months and CG endorsement over 4 months.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-limited-duty-permanent-limited-duty.mdx",
+   "line": 70,
+   "claim": "IPAC cuts the PLD duty status transaction in MCTFS",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "Only the CMC (MMSR-4) has the authority to enter or remove permanent limited duty (PLD) codes from MCTFS.",
+   "paragraph": "MCO 1900.16 W/CH-3 para 8110.3.e",
+   "correctedFix": "State CMC (MMSR-4) enters and removes PLD codes. The IPAC does not cut a PLD transaction.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-outbound-management-separation-and-retirement-handoff.mdx",
+   "line": 50,
+   "claim": "MCO 1700.31 cited as current on most lines, but MCO 1700.31A cancels it",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "2. Cancellation. MCO 1700.31.",
+   "paragraph": "MCO 1700.31A para 2",
+   "correctedFix": "Replace every MCO 1700.31 citation (lines 4, 28, 35, 40, 52, 71, 76, 94, 101, 107, 114, 118, 123) with MCO 1700.31A and change TAP wording to TRP.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/dislocation-allowance.mdx",
+   "line": 124,
+   "claim": "DLA is subject to RITA/WTA offset (lines 24, 124, 158, 178, 195)",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "A RIT allowance reimburses a civilian employee for the majority of the additional income taxes incurred from the reimbursement of taxable relocation allowances.",
+   "paragraph": "JTR 053611",
+   "correctedFix": "Delete the RITA and WTA claims on lines 124, 158, 178 and 195. RIT is a civilian employee allowance with no Service member counterpart for DLA.",
+   "note": "Line 24 carries no RITA text. Separately check the line 158 and 195 statement calling DLA taxable, which the cache did not resolve."
+  },
+  {
+   "page": "content/marines/long-term-tdy.mdx",
+   "line": 22,
+   "claim": "ITRA applies to Marines on TDY over 1 year",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "C. Income Tax Reimbursement Allowance (ITRA) for civilians (FTR 301-11, Subpart F).",
+   "paragraph": "JTR 020313-C",
+   "correctedFix": "Delete the ITRA section at lines 84 to 101 and the references at lines 4, 13, 29, 33, 145 and 168. JTR 020313 covers civilian employees only.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/long-term-tdy.mdx",
+   "line": 97,
+   "claim": "ITRA parallels RITA/WTA for PCS tax adjustments",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "A RIT allowance reimburses a civilian employee for the majority of the additional income taxes",
+   "paragraph": "JTR 053611",
+   "correctedFix": "Delete the sentence with the ITRA section.",
+   "note": "Duplicates the line 22 finding, so lowered to minor."
+  },
+  {
+   "page": "content/marines/pcs-orders-and-overview.mdx",
+   "line": 191,
+   "claim": "DD Form 1614 is the Marine PCS order",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "Request and Authorization for DoD Civilian Permanent Duty or Temporary Change of Station Travel",
+   "paragraph": "DD Form 1614 title",
+   "correctedFix": "Delete the DD 1614 entry. Describe Marine PCS orders as issued through the Marine Corps order-writing process, not DD 1614.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/pcs-orders-and-overview.mdx",
+   "line": 209,
+   "claim": "DD Form 1801 is the DoD International Carrier Service form",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "International Flight Plan, DoD",
+   "paragraph": "DD Form 1801 title",
+   "correctedFix": "Delete the DD 1801 entry. It is an aircrew flight plan form.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/pcs-orders-and-overview.mdx",
+   "line": 71,
+   "claim": "Six PCS types per JTR 050102",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "050102. PCS Per Diem Allowance",
+   "paragraph": "JTR 050102",
+   "correctedFix": "Present the six types as a portal grouping and drop the JTR 050102 citation, or cite each type's own JTR paragraph.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/pov-shipment-and-mileage.mdx",
+   "line": 51,
+   "claim": "Additional POVs ship at Government expense with approval via MMEA/MMOA",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "A Service member on a PCS order to or from a PDS OCONUS is authorized to ship one POV",
+   "paragraph": "JTR 053001-A; 053001-B.2.b",
+   "correctedFix": "Say one POV ships OCONUS at Government expense. Only two Service members married to each other ship two, and no MMEA or MMOA approval path exists. Fix lines 51 and 55 to 61.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/creating-dts-authorizations.mdx",
+   "line": 88,
+   "claim": "City Pair mandatory per JTR Ch 4 par 040301",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "The program requires a traveler to use these routes when they are available.",
+   "paragraph": "JTR 020206-M.1.a",
+   "correctedFix": "Cite JTR 020206 for the City Pair rule. 040301 is emergency leave travel.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/creating-dts-authorizations.mdx",
+   "line": 116,
+   "claim": "Rental car authorized per JTR Ch 4 par 040401",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "040401. FEML Transportation",
+   "paragraph": "JTR 040401; 020209",
+   "correctedFix": "Cite JTR 020209 Rental Vehicle.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/tdy-transportation.mdx",
+   "line": 209,
+   "claim": "POV use authorization is AO approval based on cost comparison",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "The traveler is reimbursed the appropriate cents per mile for the DTOD* distance between official points. No cost comparison is required.",
+   "paragraph": "JTR 020210-A Table 2-10 row 1",
+   "correctedFix": "Say POV is advantageous with no cost comparison at 400 miles one way or 800 round trip or less. Above that the AO decides case by case.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/tdy-transportation.mdx",
+   "line": 230,
+   "claim": "Closing line says POV use is authorized when cost-competitive",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "use of a private automobile or motorcycle is considered advantageous to the Government.",
+   "paragraph": "JTR 020210-A Table 2-10 rows 1-2",
+   "correctedFix": "Replace with the 400 mile one way or 800 mile round trip test, matching line 111.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/tdy-transportation.mdx",
+   "line": 39,
+   "claim": "City Pair, rental car and local transport cite JTR Chapter 4 paragraphs 040301, 040401, 040601 (lines 12, 39, 70, 143)",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "040301. Travel in Response to a Medical Emergency, Eldercare, Death, or Unusual Personal Hardship",
+   "paragraph": "JTR TOC Ch 4; 020206, 020209, 020212, 020213",
+   "correctedFix": "Cite JTR Chapter 2: 020206 for air, 020209 for rental vehicles, 020212 and 020213 for local and ground transportation. Fix the frontmatter source title at line 12.",
+   "note": "Citation error only, so lowered to minor."
+  },
+  {
+   "page": "content/marines/tdy-per-diem.mdx",
+   "line": 97,
+   "claim": "Meal deductions are about 25, 30 and 45 percent of M&IE (also line 164)",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "The PMR is computed by averaging the standard GMR and the meals portion of the applicable locality M&IE rate rounded up to the nearest dollar.",
+   "paragraph": "JTR 020304-A Table 2-17 row 2",
+   "correctedFix": "Delete the percentages at lines 97 to 99 and 164. Describe the PMR averaging method, its two triggers, and AO direction in the authorization.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/tdy-per-diem.mdx",
+   "line": 111,
+   "claim": "Incidentals include transport to meals, laundry on long TDY, phone calls",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "Within the CONUS, laundry and dry-cleaning expenses are a personal expense and are not reimbursable as part of per diem",
+   "paragraph": "JTR 020102; Appendix A Per Diem C.4",
+   "correctedFix": "Replace lines 111 to 114 with the JTR 020102 list: fees and tips, OCONUS laundry only, taxes and service charges, room-account lodging expenses, and courtesy transport tips. State CONUS laundry is a personal expense.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/renewal-agreement-travel.mdx",
+   "line": 81,
+   "claim": "Vol 7A Chapter 14 paragraph 4.4 names MCO 1300.8",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "4.3 Marine Corps Marine Corps Order 1300.8, Chapter 6, section 13 4.4 Air Force and Space Force",
+   "paragraph": "DoDFMR Vol 7A Ch 14 paras 4.3, 4.4",
+   "correctedFix": "Change paragraph 4.4 to 4.3.",
+   "note": ""
+  },
+  {
+   "page": "content/inspections/igmc-guides/3040.json",
+   "line": 0,
+   "claim": "DCIPS-Forward named as the only authorized PCR method with a Multiple Casualty module",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "The DCIPS-PCR spreadsheet method replaces DCIPS-8.0 (also known as DCIPS-Forward) as the sole authorized method",
+   "paragraph": "MARADMIN 186/25 para 2, 4",
+   "correctedFix": "Rewrite items 0106, 0108, 0123 and the 3040.json lines 124, 408, 411, 434, 457, 470, 475, 573, 586, 614 and 1892 to the DCIPS-PCR spreadsheet. Use Method One for single reports and Method Two for five or more casualties, emailed to casualty.section@usmc.mil.",
+   "note": ""
+  },
+  {
+   "page": "content/inspections/igmc-guides/3040.json",
+   "line": 0,
+   "claim": "Item 0105 voice report immediately and PCR within one hour",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "The timeframe for submitting the required voice report has been shortened from one hour to 30 minutes.",
+   "paragraph": "MARADMIN 186/25 para 6",
+   "correctedFix": "Add the 30 minute voice report to MFPC and the one hour template submission to casualty.section@usmc.mil in item 0105 and its verification lines.",
+   "note": ""
+  },
+  {
+   "page": "content/inspections/igmc-guides/5210.json",
+   "line": 24,
+   "claim": "Item 0101 treats the MCBul 5210 E-6/GS-9 CDRM grade as a finding standard after the Aug 2026 cancellation",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "This Bulletin is cancelled one year from the date of publication or when incorporated",
+   "paragraph": "MCBul 5210 para 4.e. Cover Canc: Aug 2026",
+   "correctedFix": "Gate the verification lines 38 and 82 on the ARDB successor check already in the line 24 note. Until a successor confirms the grade, apply the MCO 5210.11F officer, SNCO or civilian equivalent standard.",
+   "note": "Partly refuted. The line 24 summary already flags the cancellation and tells inspectors to confirm the successor first. Only the verification criteria lack the gate. Lowered to minor."
+  },
+  {
+   "page": "content/inspections/igmc-guides/5210.json",
+   "line": 882,
+   "claim": "Items 0103, 0401, 0402 quote MCBul 5210 with no cancellation flag",
+   "confirmed": true,
+   "severity": "minor",
+   "quote": "Canc: Aug 2026",
+   "paragraph": "MCBul 5210 cover",
+   "correctedFix": "Add the Aug 2026 cancellation flag and the ARDB successor check to items 0103, 0401 and 0402, matching 0101, 0102 and 0403.",
+   "note": "Scripted check confirms 0103, 0401 and 0402 carry no cancellation text. Lowered to minor because the flag is a caveat, not a changed rule."
+  },
+  {
+   "page": "content/inspections/igmc-guides/5800.16-legal-administration.json",
+   "line": 0,
+   "claim": "Item 0501 notification elements omit the MARADMIN 267/26 DoDI 1332.14 para 5.11 statement and sexual assault paragraph",
+   "confirmed": true,
+   "severity": "major",
+   "quote": "include the following statement during notification: A statement of the Marine's right to submit statements in accordance with reference (b), paragraph 5.11.",
+   "paragraph": "MARADMIN 267/26 para 2.a, 3.a",
+   "correctedFix": "Add the para 5.11 statement and the Figure 6-2, 6-2A, 6-3 and 6-3A sexual assault paragraph to item 0501 and its verification lines.",
+   "note": "Item 0501 JSON contains no 267/26, 1332.14 or 5.11 text."
+  }
+ ],
+ "okChecks": [
+  {
+   "page": "content/admin/iandi-survivor-benefit-plan.mdx:148",
+   "claim": "Spouse must concur unless member elects highest level",
+   "correct": true,
+   "quote": "who elect coverage for children only, must obtain the concurrence by signature, of the spouse. Spouse concurrence must be witnessed by a notary.",
+   "note": "MCO 1001R.1L Ch 12. The bullet omits the notary witness requirement."
+  },
+  {
+   "page": "content/admin/iandi-court-martial-for-reservists.mdx:60",
+   "claim": "GCM is judge and eight members non-capital, twelve capital, or judge alone",
+   "correct": true,
+   "quote": "In non-capital cases, a general court-martial shall consist of: (i) A military judge and eight members",
+   "note": "MCM 2024 R.C.M. 501(a)(1)"
+  },
+  {
+   "page": "content/admin/iandi-utilization-categories.mdx:69",
+   "claim": "AT minimum 14 days for SMCR unit members",
+   "correct": true,
+   "quote": "For all members of SMCR units, AT will not be less than 14 days (maximum of 15 days including travel time)",
+   "note": "MCO 1001R.1L Ch 3"
+  },
+  {
+   "page": "content/admin/pac-separation-pay.mdx:78",
+   "claim": "Separation pay requires involuntary separation",
+   "correct": true,
+   "quote": "The member is being separated involuntarily, through either the denial of reenlistment or the denial of continuation on active duty",
+   "note": "DoDFMR Vol 7A Ch 35 para 3.1.1.3"
+  },
+  {
+   "page": "content/marines/junior-enlisted-promotions.mdx:83",
+   "claim": "Meritorious Sgt TIS 18 months",
+   "correct": true,
+   "quote": "Sgt 12 MOS 4 YRS (Note 1) N/A 18 MOS",
+   "note": "MARADMIN 185/25 para 1.b table. Separate issue: lines 73 and 74 still show 3 and 4 years for Sgt, which conflicts with line 62 and MARADMIN 222/26 (30 months)."
+  },
+  {
+   "page": "content/admin/s1g1-absentee-deserter-confinement-pay-reconciliation-for-ua-deserter-and-confined-marines.mdx:42",
+   "claim": "UA pay stop applies once absence exceeds 24 hours",
+   "correct": true,
+   "quote": "Unauthorized absence of 24 consecutive hours or less does not affect pay or allowances.",
+   "note": "DoDFMR Vol 7A Ch 1 para 4.2.3. The line cites UCMJ Article 86 as pay authority, which is the wrong source."
+  },
+  {
+   "page": "content/admin/s1g1-prepare-upb.mdx:83",
+   "claim": "Unsuspended reduction effective on imposition date",
+   "correct": true,
+   "quote": "Forfeitures of pay and reductions in grade, if unsuspended, are effective on the date the commander imposes the punishment.",
+   "note": "DoDFMR Vol 7A Ch 49 para 6.0"
+  },
+  {
+   "page": "content/admin/s1g1-limited-duty-limdu-board-and-policy.mdx:54",
+   "claim": "Extended light or non-full duty triggers LIMDU referral",
+   "correct": true,
+   "quote": "Ensure Marines not in a full duty status in excess of 60 days for medical reasons are scheduled for a MEB, placed on TLD",
+   "note": "MCO 1900.16 W/CH-3 para 8110.1.b(4). The line is vague and does not state the 60 day threshold."
+  },
+  {
+   "page": "content/marines/dislocation-allowance.mdx:112",
+   "claim": "Married members: same dwelling old and new pays one DLA, separate dwellings pay each",
+   "correct": true,
+   "quote": "the same dwelling at the new PDS, either Service member is paid a DLA at the without-dependent rate, but not both.",
+   "note": "JTR 050506-B Table 5-11 rows 3 to 6. It omits the one-DLA rule when both move into the same family-type Government quarters."
+  },
+  {
+   "page": "content/marines/separations-and-retirement-overview.mdx:171",
+   "claim": "Reserve retired pay P/360 x .025 x B legacy, .020 under BRS",
+   "correct": true,
+   "quote": "(P divided by 360) X .020 X B = $/month",
+   "note": "MCO 1900.16 W/CH-3 para 3013.2"
+  },
+  {
+   "page": "content/marines/temporary-lodging-expense.mdx:110",
+   "claim": "TLE: you alone draw 65 percent of the locality rate",
+   "correct": true,
+   "quote": "1 Service member or one dependent 65",
+   "note": "JTR 050601 Table 5-17"
+  },
+  {
+   "page": "content/marines/renewal-agreement-travel.mdx:65",
+   "claim": "OTEIP financial incentive $2,000 in 12 installments of $166.66",
+   "correct": true,
+   "quote": "Financial Incentive - $2,000, paid in 12 equal installments of $166.66 per month.",
+   "note": "MARADMIN 450/26 para 1.a. The re-audit row cited line 24, but the claim sits at line 65."
+  }
+ ]
+}
