@@ -31,7 +31,7 @@
           "audience": [
             "IPAC"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Source check. MCTFSPRIUM 120103 paragraph 1.b requires Training Event Code ER (OQR/SRB scan to e-record completed) no later than 45 days from the date the Marine joined the unit."
         },
         {
           "code": "12",
@@ -144,7 +144,7 @@
           "audience": [
             "REPORTING"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Source check. MCTFSPRIUM 120103 paragraph 1.b requires Training Event Code ER (OQR/SRB scan to e-record completed) no later than 45 days from the date the Marine joined the unit."
         },
         {
           "code": "06",
@@ -167,7 +167,7 @@
           "audience": [
             "REPORTING"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Source check. MCTFSPRIUM 120103 paragraph 1.c sets five days from the report date, not five working days."
         },
         {
           "code": "08",
@@ -233,7 +233,7 @@
           "audience": [
             "SUPPORTING"
           ],
-          "evidenceHint": null
+          "evidenceHint": "Source check. MCTFSPRIUM 120103 paragraph 1.c sets five days from the report date, not five working days."
         },
         {
           "code": "11",
