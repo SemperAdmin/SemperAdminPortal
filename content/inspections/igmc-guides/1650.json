@@ -476,11 +476,11 @@
       "regulatory": {
         "quotes": [
           {
-            "citation": "SECNAVINST 1650.1J",
-            "text": "Commanders must process all valor award recommendations, to either approve the award or forward via the chain of command to the appropriate awarding authority, within 20 days of receipt. Non-valor award recommendations should be processed or forwarded within 30 days of receipt."
+            "citation": "SECNAVINST 1650.1J, Encl. 5, Para. 3.b",
+            "text": "Each echelon of review will act upon valor award nominations within ten (10) working days of receipt."
           }
         ],
-        "summary": "Commands must act on valor award recommendations within 20 days of receipt and non-valor recommendations within 30 days. Submissions outside these limits require explanatory comments in iAPS."
+        "summary": "Each echelon of review must act on valor award nominations within 10 working days of receipt. This guide sets no day limit for non-valor recommendations."
       },
       "howToInspect": [
         {
@@ -494,11 +494,10 @@
           "step": "Calculate Days At Command Level",
           "actions": [
             "For each pending valor award, calculate days since receipt.",
-            "Reject any valor award pending more than 20 days without action.",
-            "For each pending non-valor award, calculate days since receipt.",
-            "Flag any non-valor award pending more than 30 days."
+            "Flag any valor award pending more than 10 working days without action.",
+            "For each pending non-valor award, calculate days since receipt and ask the command how it tracks them."
           ],
-          "callout": "Award held at command level beyond authorized days without explanation",
+          "callout": "Valor award held at command level beyond 10 working days",
           "severity": "discrepancy"
         },
         {
@@ -507,14 +506,6 @@
             "Identify date of receipt and date forwarded.",
             "Calculate processing time."
           ]
-        },
-        {
-          "step": "Verify Explanatory Comments For Late Action",
-          "actions": [
-            "For any award processed outside time limits, confirm explanatory comment in iAPS."
-          ],
-          "callout": "No explanatory comments for late action documented",
-          "severity": "discrepancy"
         },
         {
           "step": "Verify Tracking System",
@@ -528,9 +519,7 @@
         {
           "step": "Common Discrepancies",
           "actions": [
-            "Valor award pending more than 20 days at command.",
-            "Non-valor award pending more than 30 days at command.",
-            "Late action without explanatory comment.",
+            "Valor award pending more than 10 working days at command.",
             "No tracking system for pending awards.",
             "Awards lost or untracked between receipt and forwarding."
           ]
@@ -539,14 +528,11 @@
       "questionsToAsk": [
         "Show me your current pending awards queue in iAPS?",
         "For each, when was it received and what is its current status?",
-        "How do you track time at command level?",
-        "Show me an explanatory comment for a late submission?"
+        "How do you track time at command level?"
       ],
       "verification": [
         "Pending awards queue reviewed.",
-        "No valor award pending more than 20 days at command without justification.",
-        "Non-valor awards processed or forwarded within 30 days.",
-        "Explanatory comments documented for any late processing.",
+        "No valor award pending more than 10 working days at command.",
         "Awards tracking system in place and demonstrated."
       ],
       "verified": true
@@ -632,15 +618,11 @@
       "regulatory": {
         "quotes": [
           {
-            "citation": "SECNAVINST 1650.1J, Encl. 4, Para. 2.a.(3)",
-            "text": "Commands will manage iAPS permissions to ensure that only currently assigned personnel hold active access. Pending permission requests must be acted upon within 30 days. Permissions for personnel who depart the command must be removed within 30 days of departure."
-          },
-          {
-            "citation": "MARADMIN 99/18",
-            "text": "iAPS permissions audits will be conducted at least quarterly. Commanders are responsible for ensuring departed personnel do not retain active iAPS permissions in the command's hierarchy."
+            "citation": "MARADMIN 099/18, Para. 4.g",
+            "text": "UAAs should review pending user requests on a routine basis (i.e. weekly, monthly, etc.)"
           }
         ],
-        "summary": "Pending iAPS permission requests must be actioned within 30 days. Departed personnel permissions must be removed within 30 days of departure. Quarterly audits are required."
+        "summary": "User administrators review pending iAPS permission requests on a routine basis. This guide sets no day limit for requests or departures and no audit cycle."
       },
       "howToInspect": [
         {
@@ -660,40 +642,28 @@
           "severity": "finding"
         },
         {
-          "step": "Verify Departure Removal Within 30 Days",
+          "step": "Verify Departure Removal",
           "actions": [
-            "For each departure in the past 12 months, calculate days between departure and iAPS permission removal.",
-            "Reject any permission active more than 30 days post-departure."
+            "For each departure in the past 12 months, confirm the iAPS permission was removed.",
+            "Flag any permission still active for a Marine who left the command."
           ],
-          "callout": "iAPS permissions not removed within 30 days of departure",
+          "callout": "iAPS permissions not removed after departure",
           "severity": "discrepancy"
         },
         {
-          "step": "Verify Pending Request Action Within 30 Days",
+          "step": "Verify Routine Review Of Pending Requests",
           "actions": [
             "Pull pending permission requests.",
-            "Calculate days since each request submitted.",
-            "Reject any pending request older than 30 days without action."
+            "Confirm the user administrator reviews pending requests on a routine basis."
           ],
-          "callout": "Pending iAPS requests not actioned within 30 days",
-          "severity": "discrepancy"
-        },
-        {
-          "step": "Verify Quarterly Audit",
-          "actions": [
-            "Request documentation of the most recent quarterly iAPS permissions audit.",
-            "Confirm audit was within the past 90 days."
-          ],
-          "callout": "No documented quarterly iAPS permissions audit",
+          "callout": "Pending iAPS requests not reviewed on a routine basis",
           "severity": "discrepancy"
         },
         {
           "step": "Common Discrepancies",
           "actions": [
             "Departed personnel still have active iAPS permissions.",
-            "Pending requests older than 30 days without action.",
-            "No quarterly audit documentation.",
-            "Audit conducted but not documented.",
+            "Pending requests left unreviewed.",
             "No procedure to remove permissions at check-out."
           ]
         }
@@ -702,14 +672,13 @@
         "Show me your current iAPS permissions roster?",
         "Cross-check this against your current unit roster - are all permission holders still here?",
         "How quickly do you remove permissions when someone departs?",
-        "Show me your most recent quarterly permissions audit?"
+        "How often do you review pending permission requests?"
       ],
       "verification": [
         "Current iAPS permissions roster pulled.",
         "Cross-check against unit roster complete.",
         "No active permissions for departed personnel.",
-        "No pending permission requests older than 30 days.",
-        "Most recent quarterly audit conducted within 90 days and documented."
+        "Pending permission requests reviewed on a routine basis."
       ],
       "verified": true
     },
@@ -1104,70 +1073,73 @@
       "regulatory": {
         "quotes": [
           {
-            "citation": "SECNAV M-5216.5, Ch. 2, Para. 2.2.8.a",
-            "text": "Approved awards shall be submitted to MMPB-31 via iAPS within 10 working days after the summary of action end date or date of presentation, whichever is later. Failure to submit within this timeline delays entry into the awardee's permanent personnel record."
+            "citation": "MARADMIN 093/25, Para. 5.a",
+            "text": "In accordance with reference (h), awards approved by CMC, the nominations must reach CMC (MMPB-31) in iAPS NLT 60 days prior to the anticipated presentation date."
+          },
+          {
+            "citation": "MARADMIN 093/25, Para. 5.b",
+            "text": "In accordance with references (g) and (h), awards approved by the SECNAV must reach CMC (MMPB-31) in iAPS NLT 90 days prior to the anticipated presentation date."
           }
         ],
-        "summary": "Approved awards must be submitted to MMPB-31 in iAPS within 10 working days of the later of the SOA end date or the presentation date."
+        "summary": "Nominations for CMC-approved awards must reach MMPB-31 in iAPS at least 60 days before the anticipated presentation date. SECNAV-approved awards need at least 90 days."
       },
       "howToInspect": [
         {
-          "step": "Pull At Least Five Command-Approved Awards From iAPS Archives",
+          "step": "Pull At Least Five Awards Sent To MMPB-31 From iAPS",
           "actions": [
             "Select awards from the past 12 months."
           ]
         },
         {
-          "step": "Identify Trigger Date For Each",
+          "step": "Identify Approval Level And Presentation Date For Each",
           "actions": [
-            "Identify SOA end date.",
-            "Identify presentation date.",
-            "Trigger date is the later of the two."
+            "Identify whether CMC or the SECNAV approves the award.",
+            "Identify the anticipated presentation date."
           ]
         },
         {
-          "step": "Calculate Working Days To MMPB-31 Submission",
+          "step": "Calculate Lead Time To MMPB-31",
           "actions": [
-            "For each award, count working days between trigger date and MMPB-31 submission.",
-            "Working days exclude weekends and federal holidays.",
-            "Reject any award submitted more than 10 working days after trigger date."
+            "For each award, count days between the date the nomination reached MMPB-31 in iAPS and the anticipated presentation date.",
+            "Flag any CMC-approved award with less than 60 days.",
+            "Flag any SECNAV-approved award with less than 90 days."
           ],
-          "callout": "Submission to MMPB-31 beyond required working day window",
+          "callout": "Nomination reached MMPB-31 less than the required lead time before the anticipated presentation date",
           "severity": "discrepancy"
         },
         {
           "step": "Verify Currently-Processing Awards",
           "actions": [
-            "Pull awards currently in processing.",
-            "For each approved award not yet at MMPB-31, calculate working days since trigger date.",
-            "Flag any approaching or exceeding 10 working days."
+            "Pull nominations still in the command queue.",
+            "For each, calculate days remaining before the anticipated presentation date.",
+            "Flag any approaching the 60 or 90 day line."
           ],
-          "callout": "Currently-processing awards exceed established working day timeline",
+          "callout": "Currently-processing nominations will miss the MMPB-31 lead time",
           "severity": "discrepancy"
         },
         {
           "step": "Common Discrepancies",
           "actions": [
-            "Approved award not submitted to MMPB-31 within 10 working days.",
-            "Trigger date misidentified (using approval date instead of presentation date).",
-            "Working days miscalculated (calendar days used instead).",
-            "Approved awards lingering in command queue without forward action.",
-            "No tracking of post-approval submission timeline."
+            "CMC-approved nomination reached MMPB-31 less than 60 days before presentation.",
+            "SECNAV-approved nomination reached MMPB-31 less than 90 days before presentation.",
+            "Anticipated presentation date missing or changed after submission.",
+            "Nominations lingering in command queue without forward action.",
+            "No tracking of the MMPB-31 submission timeline."
           ]
         }
       ],
       "questionsToAsk": [
-        "Show me five command-approved awards in iAPS archives?",
-        "Walk me through how you identify the trigger date?",
-        "Show me how you track post-approval timeline?",
-        "What is the working-day count for the awards I name?"
+        "Show me five awards sent to MMPB-31 in the past 12 months?",
+        "Walk me through how you set the anticipated presentation date?",
+        "Show me how you track the MMPB-31 submission timeline?",
+        "Which of these awards were SECNAV-approved?"
       ],
       "verification": [
-        "At least five archived awards reviewed.",
-        "Trigger date correctly identified for each.",
-        "Each submitted to MMPB-31 within 10 working days of trigger date.",
-        "Currently-processing awards on track for 10-working-day standard.",
-        "Tracking system in place for post-approval submission timeline."
+        "At least five awards reviewed.",
+        "Approval level and presentation date identified for each.",
+        "CMC-approved nominations reached MMPB-31 at least 60 days before presentation.",
+        "SECNAV-approved nominations reached MMPB-31 at least 90 days before presentation.",
+        "Tracking system in place for the MMPB-31 submission timeline."
       ],
       "verified": true
     },

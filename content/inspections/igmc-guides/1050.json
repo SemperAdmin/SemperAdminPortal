@@ -635,7 +635,8 @@
         {
           "step": "Verify Correct Handling of the 1-Year Period",
           "actions": [
-            "ADPL must be used within 1 year of the qualifying event (birth, adoption placement, or foster care placement)"
+            "ADPL runs during the 1-year period after the qualifying event (birth, adoption placement, or foster care placement). Per DoDI 1327.06 CH1, Para. 3.11.c.(11)(a), the Marine takes ADPL after the year ends if unused ADPL would otherwise lapse because of a deployment, exercise, in-residence PME, PCS with TDY en route, routine TDY, or hospitalization of at least 90 days within the year, or other extenuating circumstances a Service Secretary determines.",
+            "Check for one of those conditions before flagging ADPL taken after the 1-year period."
           ],
           "callout": "ADPL used after the 1-year period without a qualifying extension",
           "severity": "discrepancy"
@@ -683,7 +684,7 @@
         "Command maintains local ADPL tracking records per MARADMIN 051/23, Par 11c.",
         "Local tracking records are cross-referenced against MOL entries for accuracy.",
         "No Marine has been approved for more than 84 days of ADPL for a single qualifying event.",
-        "ADPL is being used within the 1-year period from the qualifying event or an authorized extension applies.",
+        "ADPL is used within the 1-year period from the qualifying event, or a DoDI 1327.06 CH1 Para. 3.11.c.(11)(a) condition of at least 90 days extends it.",
         "Command correctly handles multiple qualifying events - events within 72 hours treated as a single event.",
         "Command has a process to ensure Marines add dependent children to MCTFS within 30 days.",
         "ADPL is not being granted in conjunction with or consecutive to terminal leave."
