@@ -21,7 +21,7 @@
             "text": "Appoint a CDRM in the rank of E-6/GS-9 or higher."
           }
         ],
-        "summary": "Inspector Note: MCO 5210.11F defines minimum CDRM grade as 'company/field grade officer, SNCO, or civilian equivalent.' MCBul 5210 dtd 29 Aug 25 supersedes this with a specific minimum of E-6/GS-9 or higher. Apply the MCBul standard during inspection. A CDRM below E-6/GS-9 is a discrepancy regardless of MCO language. The command is required to appoint a CDRM in writing at the rank/grade of E-6/GS-9 or higher and record that appointment in CROSS. Failure to appoint, failure to meet grade requirements, or failure to record the appointment in CROSS constitutes non-compliance."
+        "summary": "Inspector Note: MCO 5210.11F defines minimum CDRM grade as 'company/field grade officer, SNCO, or civilian equivalent.' MCBul 5210 dtd 29 Aug 25 supersedes this with a specific minimum of E-6/GS-9 or higher. MCBul 5210 carries a cancellation date of August 2026, one year from publication or on incorporation into MCO 5210.11. Confirm the successor directive with ARDB before inspectors apply the E-6/GS-9 standard. While the bulletin stands, the command is required to appoint a CDRM in writing at the rank/grade of E-6/GS-9 or higher and record that appointment in CROSS. Failure to appoint, failure to meet grade requirements, or failure to record the appointment in CROSS constitutes non-compliance."
       },
       "howToInspect": [
         {
@@ -100,7 +100,7 @@
             "text": "Upon receipt of the completed NAVMC 10030, 'Commander's Records Management Acknowledgement Agreement', upload to CROSS within 90 days of release of this Bulletin. Place the form into the command's/organization's CROSS page (located in the 'Documents' tab, 'Miscellaneous' folder)."
           }
         ],
-        "summary": "The commanding officer must sign the NAVMC 10030 within 90 days of assuming command. The signed form is provided to the CDRM and uploaded to CROSS under the 'Documents' tab, 'Miscellaneous' folder. Failure to sign within the 90-day window or failure to upload to CROSS constitutes non-compliance."
+        "summary": "The commanding officer must sign the NAVMC 10030 within 90 days of assuming command. The signed form is provided to the CDRM and uploaded to CROSS under the 'Documents' tab, 'Miscellaneous' folder. Failure to sign within the 90-day window or failure to upload to CROSS constitutes non-compliance. MCBul 5210 carries a cancellation date of August 2026, one year from publication or on incorporation into MCO 5210.11. Confirm the successor directive with ARDB before applying this standard."
       },
       "howToInspect": [
         {
@@ -1027,7 +1027,7 @@
             "text": "Commands/organizations with a billet identified on the Form NA-1005 are required to inform ARD Records of any Capstone official changes by submitting an ETMS2 task to 'USMC HQMC AR ARD RECORDS.'"
           }
         ],
-        "summary": "Inspector Note: If a change of command has occurred, the CDRM must initiate the NAVMC 10030 within 90 days of the new commanding officer assuming command and upload the signed form to CROSS. The CROSS Capstone tab must also be revised to reflect the new official. Notification to ARD Records via ETMS2 is required anytime a change occurs. Any time a Capstone official changes, the CDRM must update the CROSS Capstone tab and notify ARD Records via ETMS2. If a change of command occurred, the NAVMC 10030 must be initiated within 90 days."
+        "summary": "Inspector Note: If a change of command has occurred, the CDRM must initiate the NAVMC 10030 within 90 days of the new commanding officer assuming command and upload the signed form to CROSS. The CROSS Capstone tab must also be revised to reflect the new official. Notification to ARD Records via ETMS2 is required anytime a change occurs. Any time a Capstone official changes, the CDRM must update the CROSS Capstone tab and notify ARD Records via ETMS2. If a change of command occurred, the NAVMC 10030 must be initiated within 90 days. MCBul 5210 carries a cancellation date of August 2026, one year from publication or on incorporation into MCO 5210.11. Confirm the successor directive with ARDB before applying this standard."
       },
       "howToInspect": [
         {

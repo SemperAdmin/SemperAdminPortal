@@ -1667,13 +1667,6 @@
           "severity": "discrepancy"
         },
         {
-          "step": "Three-Year Training",
-          "actions": [
-            "Travelers",
-            "NDEAs"
-          ]
-        },
-        {
           "step": "Request Training Certificate Files",
           "actions": [
             "Ask: \"Show me training certificates for all appointed personnel.\"",
@@ -1701,31 +1694,6 @@
             "Check: Current year refresher completed?"
           ],
           "callout": "If past 31 December without refresher",
-          "severity": "discrepancy"
-        },
-        {
-          "step": "Check Traveler Training (Three-Year)",
-          "actions": [
-            "Random sample of travelers (10-15):",
-            "For each:",
-            "Initial traveler training date: __________",
-            "Add three years: __________",
-            "Refresher due: __________",
-            "Refresher completed: __________"
-          ],
-          "callout": "If expired",
-          "severity": "discrepancy"
-        },
-        {
-          "step": "Check NDEA Training (Three-Year)",
-          "actions": [
-            "For each NDEA:",
-            "Initial NDEA training date: __________",
-            "Add three years: __________",
-            "Refresher due: __________",
-            "Refresher completed: __________"
-          ],
-          "callout": "If expired",
           "severity": "discrepancy"
         },
         {
@@ -1764,7 +1732,7 @@
           "actions": [
             "Current date: __________",
             "DAO roles: All current year refreshers complete?",
-            "Three-year training: Any expiring in next 30 days?",
+            "Annual refresher: Any expiring in next 30 days?",
             "If expirations pending: How is ODTA tracking?"
           ]
         },
@@ -1793,7 +1761,6 @@
             "Training certificates not received within two weeks",
             "Missing training certificates",
             "DAO annual refresher not completed by 31 December",
-            "Traveler/NDEA training expired (past three years)",
             "No notification to LDTA for non-compliant personnel",
             "Permissions not removed for expired training",
             "No tracking system for training due dates",
@@ -1812,7 +1779,7 @@
         "Current Training Status: □ Current □ Expired",
         "List of all appointees requiring training on file.",
         "Appointee training documented within two weeks of appointment.",
-        "Three-year refresher training tracked with due dates.",
+        "Annual refresher training tracked with due dates.",
         "Training rosters retained for current plus previous calendar year.",
         "DTS permissions not assigned before training complete.",
         "DTS permissions revoked immediately on training lapse.",
