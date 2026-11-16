@@ -59,18 +59,12 @@ const ALLOWED_VIDEO_HOSTS = [
  * the constant and the refinement branch reading it once the list is empty.
  */
 const VIDEO_URL_QUARANTINE = new Set([
-  "administrative-separation-process-preparer",
   "fitrep-self-input",
-  "how-to-read-an-les-msg-focused",
   "how-to-set-alerts-for-new-videos",
-  "hqmc-ardb-directives-monthly-training-20240731",
   "navmc-11000-walkthrough",
   "pft-grading-overview",
-  "policy-and-software-updates",
   "promotion-board-records",
-  "requesting-access",
   "separation-packet-flow",
-  "skillbridge-program-policy-update-navmc-1700-2b",
 ]);
 
 function videoUrlProblem(url: string): string | null {
