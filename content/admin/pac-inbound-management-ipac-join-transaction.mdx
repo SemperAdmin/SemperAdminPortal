@@ -28,7 +28,7 @@ performanceSteps:
   - "Receive the inbound package from unit S-1 per MCO 5000.14D"
   - "Validate orders, ID card, NAVMC 10922, and SGLI election"
   - "Cut the MCTFS join transaction per MCTFSPRIUM"
-  - "Post BAH at the with or without dependents rate"
+  - "Post the BAH, BAH-Partial, BAH-Diff, BAH-RC or OHA entitlement the join supports"
   - "Post BAS at the standard rate"
   - "Open the OMPF Field Folder per MCO P1070.12K Chapter 2"
   - "Upload KSDs to the OMPF per MCO P1070.12K Chapter 1"
@@ -64,7 +64,7 @@ The unit S-1 hands off a packet containing.
 - Original ID card
 - Endorsed NAVMC 10922 with dependent documentation
 - SGLI election or declination
-- BAH supporting documents (lease, dependent address, government quarters status)
+- BAH supporting documents (dependency documents and quarters status). A lease supports OHA only
 - OMPF Field Folder routed through unit S-1
 
 Per MCO 5000.14D<Citation source="MCO 5000.14D" />, IPAC refuses incomplete packets. Return for completion. Do not run a partial join.
@@ -103,15 +103,16 @@ Submit the transaction. Pull the receipt. File the receipt in the OMPF Field Fol
 
 The 0111 pay clerk runs the BAH start per DoDFMR Vol 7A Chapter 26<Citation source="DoDFMR Vol 7A Chapter 26" />.
 
+- Post the housing entitlement the join supports. BAH with or without dependents off base, BAH-Partial or BAH-Diff in single-type quarters, BAH-RC for reserve orders of 30 or fewer days, OHA at an overseas PDS
 - Rate category from the NAVMC 10922 dependency status
-- Zip code from PCS orders or the government quarters address
+- Report the PDS zip with designator M. Report the dependent zip with designator D only under an approved waiver or unaccompanied tour. A quarters address sets no BAH rate
 - Effective date matches the arrival date
 - Confirm the rate against the DTMO BAH calculator
 
-If the Marine moves into government quarters on arrival, post a BAH stop on the same date. Document the quarters assignment in the OMPF.
+If the Marine moves into government quarters on arrival, stop BAH effective the day before quarters assignment. A Marine without dependents moving into single-type quarters starts BAH-Partial on the assignment date. Document the quarters assignment in the OMPF.
 
 <IPACRoutingCallout billet="ipac-pay-clerk" route="Pay starts post on the same MCTFS cycle as the join">
-  Post BAH, BAS, FLPB, and SDAP on the same join cycle. A delayed pay post creates a member debt when retroactive starts hit one or two cycles later.
+  Post BAH, BAS, FLPB, and SDAP on the same join cycle. A late start produces back pay owed to the Marine. Debt forms when an entry posts at a rate above entitlement or a stop posts late.
 </IPACRoutingCallout>
 
 ### Step 5 - Post BAS
@@ -186,7 +187,7 @@ IPAC posts BAH, BAS, FLPB, and SDAP on the same MCTFS cycle as the join.
 - FLPB start if the Marine carries current DLPT or OPI scores, a qualifying FLPB category under MARADMIN 480/26, and a signed Page 11 agreement
 - SDAP start if the Marine reports to a billet on the SDAP table
 
-A pay start posted off-cycle generates a retroactive payment one to two cycles later. The retroactive often hits at the wrong rate and produces a member debt. Run the pay starts on the join cycle.
+A pay start posted off-cycle generates a retroactive payment one to two cycles later. Debt risk ties to the rate posted and to late stops, not to a delayed start. A missed PDS recertification restarts the with-dependent rate on the certification date with no retroactive pay unless the commander certifies. Run the pay starts on the join cycle.
 
 ## EDFR Reconciliation Window
 

@@ -1,7 +1,7 @@
 ---
 title: "BAH Overview - Basic Allowance for Housing"
 slug: "bah-overview"
-summary: "Basic Allowance for Housing (BAH) is monthly cash payment offsetting the cost of housing for Marines not residing in government quarters. Rate depends on rank, dependent status, and zip code. Drives one of the largest pay categories with significant audit risk."
+summary: "Basic Allowance for Housing (BAH) is monthly cash payment offsetting the cost of housing for Marines not assigned to government quarters. Rate depends on rank, dependent status, and zip code. Drives one of the largest pay categories with significant audit risk."
 roles: ["admin", "leader", "commander"]
 lastVerified: "2026-05-01"
 unitType: "pac"
@@ -36,9 +36,9 @@ source:
 
 ## What BAH Is
 
-Basic Allowance for Housing (BAH) is monthly cash payment to military members not residing in government quarters. Per DOD FMR 7000.14-R Volume 7A Chapter 26 and MCO 7220.56<Citation source="MCO 7220.56" />, BAH offsets housing costs in the local civilian market.
+Basic Allowance for Housing (BAH) is monthly cash payment to military members not assigned to government quarters. Per DOD FMR 7000.14-R Volume 7A Chapter 26 and MCO 7220.56<Citation source="MCO 7220.56" />, BAH offsets housing costs in the local civilian market.
 
-BAH is one of the largest pay categories. It also generates the most pay audit findings. PAC processes BAH actions daily.
+BAH is one of the largest pay categories. It is also a frequent source of pay audit findings. PAC processes BAH actions daily.
 
 ## Why BAH Is Audit Critical
 
@@ -58,7 +58,7 @@ Per MCO 7220.56<Citation source="MCO 7220.56" />, BAH has three primary categori
 
 ### BAH-With Dependents
 
-Member with dependents at the duty station receives.
+Member with dependents receives the with-dependents rate, normally based on the PDS, per DoDFMR Vol 7A Chapter 26<Citation source="DODFMR Vol 7A" /> paragraphs 10.2.1 and 10.2.2. Dependents living elsewhere do not change the rate.
 
 - BAH at the with-dependents rate for the duty station zip code
 - Larger amount reflecting family housing costs
@@ -66,7 +66,7 @@ Member with dependents at the duty station receives.
 
 ### BAH-Without Dependents
 
-Member without dependents (single or with dependents not at duty station) receives.
+Member without dependents receives.
 
 - BAH at the without-dependents rate for the duty station zip code
 - Smaller amount reflecting individual housing
@@ -85,7 +85,7 @@ A member in single-type Government quarters who pays child support receives BAH-
 A Marine qualifies for BAH when meeting these.
 
 - Active duty status (or qualifying reservist on active duty over 30 days)
-- Not residing in government quarters
+- Not assigned to government quarters. A member in single-type quarters draws BAH-Partial or BAH-Diff, per DoDFMR Vol 7A Chapter 26<Citation source="DODFMR Vol 7A" /> paragraph 5.5.1
 - Has dependents (for with-dependents rate)
 - Specific dependent and household situations per MCO 1751.3<Citation source="MCO 1751.3" />
 
@@ -132,9 +132,9 @@ Pull member's MCTFS record.
 
 Based on member's situation.
 
-- With dependents at duty station: With-Dependents rate
+- With dependents: With-Dependents rate, normally at the PDS rate
 - Without dependents: Without-Dependents rate
-- Dependents at separate location: With-Dependents rate. BAH-Diff applies only to a member in single-type Government quarters who pays child support
+- Dependents at separate location: With-Dependents rate at the PDS rate. BAH-Diff applies only to a member in single-type Government quarters who pays child support
 
 ### Step 3 - Look Up Rate
 
@@ -198,7 +198,7 @@ These hit during PAC processing.
 
 1. **Wrong rate after promotion.** Member promoted but BAH not updated. Fix by submitting BAH rate change effective with promotion date.
 2. **Dependent change not processed.** Marriage or divorce occurred, NAVMC 10922<Citation source="NAVMC 10922" /> submitted, but BAH category not changed. Submit BAH change transaction.
-3. **Member moved to government quarters but still drawing BAH.** Critical error. Member is overpaid. Stop BAH retroactive to move-in date. Member owes back-payment.
+3. **Member moved to government quarters but still drawing BAH.** Critical error. Member is overpaid. Stop BAH effective the day before occupancy begins. Member owes back-payment.
 4. **Wrong zip code on PCS.** Member transferred but BAH still based on old zip code. Update zip code with PCS effective date.
 5. **BAH-Diff not processed when applicable.** Member has dependents at separate location but BAH still showing without-dependents. Pay the with-dependents rate. Use BAH-Diff only for a member in single-type Government quarters who pays child support.
 
@@ -206,8 +206,9 @@ These hit during PAC processing.
 
 When member PCS, BAH coordinates with the move.
 
-- Old duty station BAH stops on PCS departure
-- New duty station BAH starts on arrival
+- Old PDS BAH continues through PCS travel, leave and TDY en route, through the day before the member reports to the new PDS
+- New PDS BAH starts on the reporting day, per DoDFMR Vol 7A Chapter 26<Citation source="DODFMR Vol 7A" /> Table 26-38 rule 1 and Table 26-20 rule 3
+- BAH-Transit covers the gap when the member leaves an OCONUS PDS
 - Member may have brief gap or overlap requiring action
 - New zip code drives new rate
 
@@ -215,9 +216,9 @@ When member PCS, BAH coordinates with the move.
 
 Member moving to or from government quarters triggers BAH action.
 
-- Move into government quarters: BAH stops effective move-in date
+- Move into government quarters: BAH stops at midnight the day before assignment or occupancy, per DoDFMR Vol 7A Chapter 26<Citation source="DODFMR Vol 7A" /> Table 26-3 rule 1
 - Move out of government quarters: BAH starts effective move-out date
-- Members in government quarters do not draw BAH
+- Members in single-type government quarters draw BAH-Partial or BAH-Diff, not full BAH
 - Some categories of quarters have specific BAH rules
 
 ## Documentation Required

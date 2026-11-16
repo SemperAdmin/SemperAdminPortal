@@ -1,0 +1,914 @@
+{
+ "verified": [
+  {
+   "page": "content/marines/birth-and-adoption.mdx",
+   "line": 114,
+   "claim": "Unmarried Marine paying child support but not residing with the child: BAH-Diff may apply",
+   "confirmed": true,
+   "quote": "if a non-custodial Service member is not residing in or assigned to Government quarters and pays support",
+   "paragraph": "DoDFMR Vol 7A Ch 26 (Sep 2026) 4.3.2, 5.6.1",
+   "severity": "blocker",
+   "correctedFix": "Off base, support at or above the BAH-Diff rate earns BAH at the with-dependent rate. BAH-Diff applies only to a member in single-type Government quarters.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/birth-and-adoption.mdx",
+   "line": 118,
+   "claim": "BAH-Diff is lower than BAH-with-dependents but higher than BAH-without-dependents",
+   "confirmed": true,
+   "quote": "The BAH-Diff rate is a fixed, non-locality-based rate and is the difference between the with-dependent BAQ rate and the without-dependent BAQ rate",
+   "paragraph": "DoDFMR Vol 7A Ch 26 5.6.2",
+   "severity": "major",
+   "correctedFix": "Delete the sentence. BAH-Diff is a small fixed grade-based rate paid in place of BAH-Partial to a member in single-type quarters.",
+   "note": "Downgraded from blocker. The sentence misdescribes the rate but drives no wrong entitlement once line 114 is fixed."
+  },
+  {
+   "page": "content/marines/child-custody-changes.mdx",
+   "line": 28,
+   "claim": "BAH-Diff applies if you pay support of at least the BAH-DIFF rate but the child is not a dependent",
+   "confirmed": true,
+   "quote": "pays support for the child in an amount equal to or more than the applicable BAH-Diff rate, the Service member is authorized a housing allowance at the with-dependent rate",
+   "paragraph": "DoDFMR Vol 7A Ch 26 4.3.2",
+   "severity": "blocker",
+   "correctedFix": "Off base, qualifying support earns the with-dependent rate. BAH-Diff applies only in single-type Government quarters.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/child-custody-changes.mdx",
+   "line": 114,
+   "claim": "BAH-Diff applies when you are without dependents and pay child support",
+   "confirmed": true,
+   "quote": "such Service member is entitled to BAH-Diff if the Service member is paying support",
+   "paragraph": "DoDFMR Vol 7A Ch 26 5.6.1",
+   "severity": "blocker",
+   "correctedFix": "Replace the list. BAH-Diff applies when the member lives in single-type Government quarters and pays support at or above the BAH-Diff rate.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/child-custody-changes.mdx",
+   "line": 118,
+   "claim": "BAH-Diff is a partial BAH, less than with-dependents but more than without-dependents",
+   "confirmed": true,
+   "quote": "The BAH-Diff rate is a fixed, non-locality-based rate",
+   "paragraph": "DoDFMR Vol 7A Ch 26 5.6.2",
+   "severity": "major",
+   "correctedFix": "Delete the sentence.",
+   "note": "Downgraded from blocker for the same reason as birth-and-adoption line 118."
+  },
+  {
+   "page": "content/marines/child-custody-changes.mdx",
+   "line": 314,
+   "claim": "Quick reference: FCP required if single parent or dual-military",
+   "confirmed": true,
+   "quote": "All Service Members with a dependent(s) shall have their FCP validated",
+   "paragraph": "MCO 1740.13D encl (1) para 1.b and para 4.b(3)(c)",
+   "severity": "major",
+   "correctedFix": "Every Marine with a dependent needs a validated FCP in MOL.",
+   "note": "Downgraded from blocker. Understated requirement, not a pay or legal error. Encl (1) 1.b is the better quote."
+  },
+  {
+   "page": "content/marines/marriage-and-spouse-add.mdx",
+   "line": 231,
+   "claim": "BAH back-dating typically not granted for very late submissions",
+   "confirmed": true,
+   "quote": "a with-dependent housing allowance is authorized as of the date the dependent is acquired",
+   "paragraph": "DoDFMR Vol 7A Ch 26 (Sep 2026) sec 10 intro to Table 26-21 (acquiring a dependent)",
+   "severity": "major",
+   "correctedFix": "Delete the line. Late filing delays payment but entitlement runs from the marriage date, as line 101 states.",
+   "note": "MCO 1751.3 1.f sets the 30-day filing rule and says nothing about forfeiture. The FMR start-date rule is the stronger refutation. Downgraded to major."
+  },
+  {
+   "page": "content/marines/marriage-and-spouse-add.mdx",
+   "line": 232,
+   "claim": "Forward-going entitlement applies from submission date",
+   "confirmed": true,
+   "quote": "a with-dependent housing allowance is authorized as of the date the dependent is acquired",
+   "paragraph": "DoDFMR Vol 7A Ch 26 (Sep 2026) sec 10 intro to Table 26-21 (acquiring a dependent)",
+   "severity": "major",
+   "correctedFix": "Delete the line. Same fix as line 231.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/convalescent-leave.mdx",
+   "line": 65,
+   "claim": "Competent medical authority writes the determination authorizing convalescent leave",
+   "confirmed": true,
+   "quote": "a Service member's unit commander or the director of a military medical treatment facility (MMTF) may grant convalescent leave",
+   "paragraph": "DoDI 1327.06 CH1 3.11.a",
+   "severity": "major",
+   "correctedFix": "The provider recommends convalescent leave in writing. The unit commander or MMTF director grants it.",
+   "note": "Downgraded from blocker. Routing error, no loss of entitlement."
+  },
+  {
+   "page": "content/marines/convalescent-leave.mdx",
+   "line": 302,
+   "claim": "Convalescent leave authorization goes through the medical authority",
+   "confirmed": true,
+   "quote": "unit commander or the director of a military medical treatment facility (MMTF) may grant convalescent leave",
+   "paragraph": "DoDI 1327.06 CH1 3.11.a",
+   "severity": "major",
+   "correctedFix": "Take the provider recommendation to your unit commander or the MMTF director, who grants the leave.",
+   "note": "Downgraded from blocker."
+  },
+  {
+   "page": "src/lib/marines-categories.ts",
+   "line": 670,
+   "claim": "Child custody card cites MCO 7220.24 for BAH-Diff",
+   "confirmed": true,
+   "quote": "SELECTIVE RETENTION BONUS (SRB) AND BROKEN SERVICE SELECTIVE RETENTION",
+   "paragraph": "MCO 7220.24P subject",
+   "severity": "minor",
+   "correctedFix": "Cite MCO 1751.3 and DoDFMR Vol 7A Ch 26.",
+   "note": "Card description only. Wrong cite, no wrong fact. Downgraded to minor."
+  },
+  {
+   "page": "content/admin/pac-bah-with-dependents.mdx",
+   "line": 51,
+   "claim": "Adopted children with final adoption",
+   "confirmed": true,
+   "quote": "adopted child(ren), pre-adopted child(ren)",
+   "paragraph": "MCO 1751.3 CH-1 ch 1 para 1.b",
+   "severity": "major",
+   "correctedFix": "List pre-adopted children as eligible dependents. A final decree is not the only path.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/pac-bah-with-dependents.mdx",
+   "line": 122,
+   "claim": "Adoption effective date is date adoption finalized",
+   "confirmed": true,
+   "quote": "a with-dependent housing allowance is authorized as of the date the dependent is acquired",
+   "paragraph": "DoDFMR Vol 7A Ch 26 (Sep 2026) sec 10 intro to Table 26-21 (acquiring a dependent), MCO 1751.3 ch 1 para 1.b",
+   "severity": "minor",
+   "correctedFix": "Say entitlement starts the date the child becomes a dependent. For a pre-adopted child that date precedes the final decree.",
+   "note": "The archive holds no explicit placement-date rule, so the auditor's placement-date fix is unsourced. The decree date stays right for an adoption first claimed at decree. Downgraded to minor."
+  },
+  {
+   "page": "content/admin/pac-bah-with-dependents.mdx",
+   "line": 202,
+   "claim": "Member adopts dependent: effective date is date adoption finalized",
+   "confirmed": true,
+   "quote": "a with-dependent housing allowance is authorized as of the date the dependent is acquired",
+   "paragraph": "DoDFMR Vol 7A Ch 26 (Sep 2026) sec 10 intro to Table 26-21 (acquiring a dependent)",
+   "severity": "minor",
+   "correctedFix": "Same fix as line 122.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/birth-and-adoption.mdx",
+   "line": 110,
+   "claim": "BAH-with-dependents effective date of birth only if NAVMC 10922 submitted within 30 days",
+   "confirmed": true,
+   "quote": "a with-dependent housing allowance is authorized as of the date the dependent is acquired",
+   "paragraph": "DoDFMR Vol 7A Ch 26 (Sep 2026) sec 10 intro to Table 26-21 (acquiring a dependent)",
+   "severity": "major",
+   "correctedFix": "BAH at the with-dependent rate starts on the date of birth. File the NAVMC 10922 within 30 days to avoid a pay delay.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/child-custody-changes.mdx",
+   "line": 135,
+   "claim": "FSA applies when separated 30 or more days",
+   "confirmed": true,
+   "quote": "away from their PDS or homeport continuously for more than 30 days",
+   "paragraph": "DoDFMR Vol 7A Ch 27 2.3.1.2.1, 2.3.1.3",
+   "severity": "major",
+   "correctedFix": "Say more than 30 continuous days for FSA-S and FSA-T. FSA-R turns on dependents not authorized to travel, not a day count.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/child-custody-changes.mdx",
+   "line": 147,
+   "claim": "FSA requires orders separating Marine from dependent for 30+ days",
+   "confirmed": true,
+   "quote": "continuously for more than 30 days",
+   "paragraph": "DoDFMR Vol 7A Ch 27 2.3.1.3",
+   "severity": "major",
+   "correctedFix": "Same fix as line 135.",
+   "note": "TDY paragraph is 2.3.1.3. The auditor cited 2.3.1.2, the shipboard rule."
+  },
+  {
+   "page": "content/marines/child-custody-changes.mdx",
+   "line": 209,
+   "claim": "FCP required if you become single parent",
+   "confirmed": true,
+   "quote": "All Service Members with a dependent(s) shall have their FCP validated",
+   "paragraph": "MCO 1740.13D encl (1) 1.b",
+   "severity": "major",
+   "correctedFix": "Any Marine with a dependent needs a FCP, and a gain or loss of a dependent triggers revalidation.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/child-custody-changes.mdx",
+   "line": 225,
+   "claim": "DD Form 137 ward form used for unmarried-parent custody scenario",
+   "confirmed": true,
+   "quote": "These types of dependents are primary dependents, and can be approved at the command level",
+   "paragraph": "MCO 1751.3 CH-1 ch 1 para 5",
+   "severity": "major",
+   "correctedFix": "Your own child born out of wedlock is a primary dependent. Prove parentage on the NAVMC 10922 and use the DD 137 only for a court ward.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/child-custody-changes.mdx",
+   "line": 294,
+   "claim": "Custody changes affecting single-parent or dual-military status trigger FCP requirements",
+   "confirmed": true,
+   "quote": "In conjunction with a loss or gain of dependent",
+   "paragraph": "MCO 1740.13D encl (1) 1.b.3",
+   "severity": "major",
+   "correctedFix": "Any gain or loss of a dependent triggers FCP revalidation.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/marriage-and-spouse-add.mdx",
+   "line": 246,
+   "claim": "Quick reference: effective marriage date if on time",
+   "confirmed": true,
+   "quote": "a with-dependent housing allowance is authorized as of the date the dependent is acquired",
+   "paragraph": "DoDFMR Vol 7A Ch 26 (Sep 2026) sec 10 intro to Table 26-21 (acquiring a dependent)",
+   "severity": "major",
+   "correctedFix": "Drop if on time. The rate runs from the marriage date.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/marriage-and-spouse-add.mdx",
+   "line": 241,
+   "claim": "Cross reference: FCP if dual-military or single parent",
+   "confirmed": true,
+   "quote": "All Service Members with a dependent(s) shall have their FCP validated",
+   "paragraph": "MCO 1740.13D encl (1) 1.b",
+   "severity": "major",
+   "correctedFix": "Every Marine with a dependent needs a FCP.",
+   "note": "Marriage adds a dependent, so this page is the trigger point."
+  },
+  {
+   "page": "content/marines/convalescent-leave.mdx",
+   "line": 4,
+   "claim": "Summary: leave authorized by competent medical authority",
+   "confirmed": true,
+   "quote": "may recommend convalescent leave to provide for the Service member's recovery",
+   "paragraph": "DoDI 1327.06 CH1 3.11.a",
+   "severity": "major",
+   "correctedFix": "The provider recommends. The unit commander or MMTF director grants.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/convalescent-leave.mdx",
+   "line": 33,
+   "claim": "The role of competent medical authority in authorization",
+   "confirmed": true,
+   "quote": "determines such member's fitness for duty and may recommend convalescent leave",
+   "paragraph": "DoDI 1327.06 CH1 3.11.a",
+   "severity": "minor",
+   "correctedFix": "Rename to the provider's recommending role.",
+   "note": "Table-of-contents bullet. Downgraded to minor."
+  },
+  {
+   "page": "content/marines/convalescent-leave.mdx",
+   "line": 98,
+   "claim": "Documentation: medical authority's written determination authorizing the leave",
+   "confirmed": true,
+   "quote": "A health care provider's recommendation for convalescent leave must be based upon the Service member's individual health circumstances",
+   "paragraph": "DoDI 1327.06 CH1 3.11.a.(1)(b)1",
+   "severity": "major",
+   "correctedFix": "Call it the provider's written recommendation.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/convalescent-leave.mdx",
+   "line": 268,
+   "claim": "FAQ: the medical authority determines the duration",
+   "confirmed": true,
+   "quote": "In granting convalescent leave, the unit commander or the MMTF director must: 1. Limit the duration to the minimum",
+   "paragraph": "DoDI 1327.06 CH1 3.11.a.(1)(a)",
+   "severity": "major",
+   "correctedFix": "The provider recommends a period. The unit commander or MMTF director sets it, up to 30 days absent higher approval.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/convalescent-leave.mdx",
+   "line": 323,
+   "claim": "Closing summary: authorized by the medical authority",
+   "confirmed": true,
+   "quote": "may grant convalescent leave",
+   "paragraph": "DoDI 1327.06 CH1 3.11.a",
+   "severity": "major",
+   "correctedFix": "Provider recommends, commander or MMTF director grants.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/sexual-assault-reporting-svc.mdx",
+   "line": 111,
+   "claim": "Anyone in chain of command, NCIS, MP or MAA can receive an Unrestricted Report",
+   "confirmed": true,
+   "quote": "Only a SARC or SAPR VA may receive an Unrestricted or Restricted Report",
+   "paragraph": "MCO 1752.5C encl (1) ch 1 para 3",
+   "severity": "minor",
+   "correctedFix": "A SARC or SAPR VA takes the report. Telling the chain of command or NCIS starts an investigation and ends the Restricted option.",
+   "note": "Partly refuted. MCO 1752.5C App A definition 38 says a report to command authorities goes to law enforcement and opens an investigation. The line conflicts with line 81 on who files, not on outcome. Downgraded to minor."
+  },
+  {
+   "page": "content/marines/sexual-assault-reporting-svc.mdx",
+   "line": 115,
+   "claim": "Report becomes Unrestricted upon disclosure to a non-confidential recipient",
+   "confirmed": true,
+   "quote": "Disclosure of a sexual assault incident to others ... MAY eliminate the Restricted Reporting option",
+   "paragraph": "MCO 1752.5C encl (1) ch 1 para 2.b(1)",
+   "severity": "major",
+   "correctedFix": "Say telling others may remove the Restricted option. It does not file an Unrestricted Report.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/pac-disability-severance-pay.mdx",
+   "line": 39,
+   "claim": "Authority cited as DOD FMR Volume 7B Chapter 9",
+   "confirmed": true,
+   "quote": "Vol07b_Ch09_Advancements_on_Retired_List",
+   "paragraph": "DoDFMR Vol 7B Ch 9 title, Vol 7A Ch 35 5.0",
+   "severity": "major",
+   "correctedFix": "Cite DoDFMR Vol 7A Ch 35 section 5.0 on lines 12, 18, 32 and 39.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/pac-disability-severance-pay.mdx",
+   "line": 12,
+   "claim": "sourcePolicy DOD FMR Volume 7B Chapter 9",
+   "confirmed": true,
+   "quote": "5.0 DISABILITY SEVERANCE PAY",
+   "paragraph": "DoDFMR Vol 7A Ch 35 5.0",
+   "severity": "major",
+   "correctedFix": "Change to DoDFMR Vol 7A Ch 35.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/pac-disability-severance-pay.mdx",
+   "line": 229,
+   "claim": "Combat-related disability: Combat-Related Special Compensation (CRSC)",
+   "confirmed": true,
+   "quote": "No deduction will be made in the case of disability severance pay received by a member for a disability incurred in the line of duty in a CZ",
+   "paragraph": "DoDFMR Vol 7A Ch 35 5.6.1, 5.4.1.1",
+   "severity": "major",
+   "correctedFix": "Drop CRSC, a retired-pay program. Cite the 5.4.1 tax exclusion and the 5.6.1 no-deduction rule.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-legal-administration-administrative-investigations.mdx",
+   "line": 81,
+   "claim": "Step 10 lists Litigation-Report Investigation as a close-out option for a death preliminary inquiry",
+   "confirmed": true,
+   "quote": "Litigation-report investigations will never be conducted in any incident where an active duty death has occurred",
+   "paragraph": "JAGINST 5800.7G CH-2 0226",
+   "severity": "major",
+   "correctedFix": "Remove Litigation-Report Investigation from step 10. Lines 113 and 119 already say it is not an option.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-legal-administration-administrative-investigations.mdx",
+   "line": 38,
+   "claim": "Extension requests cited to 0225e on lines 38, 98, 107 and 120",
+   "confirmed": true,
+   "quote": "As necessary, the CA may grant extensions of a reasonable amount of time as the CA deems appropriate",
+   "paragraph": "JAGINST 5800.7G CH-2 0206.d(3), 0225.e",
+   "severity": "major",
+   "correctedFix": "Cite 0206.d(3) for extensions on lines 38, 98, 107 and 120. Keep 0225.e for death cases only.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-legal-administration-administrative-investigations.mdx",
+   "line": 57,
+   "claim": "Commander endorses every Command Investigation, including unit-closed cases, per 0204d",
+   "confirmed": true,
+   "quote": "determine that the investigation is of no interest to anyone outside the command, and ... may treat it as an internal report",
+   "paragraph": "JAGINST 5800.7G CH-2 0209.f(1)",
+   "severity": "major",
+   "correctedFix": "Cite 0209.f on lines 41, 55, 57, 100 and 111. The CA either treats the report as internal or endorses it in writing.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-legal-administration-overview.mdx",
+   "line": 98,
+   "claim": "Step 7 says commander endorses per 0204d and cites 0225 for extensions",
+   "confirmed": true,
+   "quote": "may treat it as an internal report",
+   "paragraph": "JAGINST 5800.7G CH-2 0209.f, 0206.d(3)",
+   "severity": "major",
+   "correctedFix": "Cite 0209.f for CA action and 0206.d(3) for extensions. Cite 0225 for death cases only.",
+   "note": "The same line labels 0206 as Command Investigation. 0206 is Convening Orders and 0209 is Command Investigations."
+  },
+  {
+   "page": "content/admin/s1g1-legal-administration-pretrial-confinement-and-restriction.mdx",
+   "line": 95,
+   "claim": "Pitfall says three findings are required. Lines 47 and 63 list four.",
+   "confirmed": true,
+   "quote": "Confinement is necessary because it is foreseeable that: (a) The confinee will not appear at trial",
+   "paragraph": "MCM 2024 RCM 305(h)(2)(B) and (i)(2)(B)",
+   "severity": "major",
+   "correctedFix": "Change three findings to four and add the foreseeable flight or serious criminal misconduct finding.",
+   "note": ""
+  },
+  {
+   "page": "content/commander/aviation-pre-coc.mdx",
+   "line": 37,
+   "claim": "Lists three aviation-specific pre-assumption blocks and omits the MAG/Squadron Commanding Officers Course",
+   "confirmed": true,
+   "quote": "APPLICABLE FLIGHT REFRESHER TRAINING, AVIATION COMMANDERS SAFETY COURSE, AND THE MAG/SQUADRON COMMANDING OFFICERS COURSE",
+   "paragraph": "MARADMIN 270/05 para 3",
+   "severity": "minor",
+   "correctedFix": "Add the MAG/Squadron Commanding Officers Course on both pages, or name the current course that replaced it.",
+   "note": "MARADMIN 270/05 dates from 2005. The archive holds no later message confirming or cancelling the course. Downgraded to minor."
+  },
+  {
+   "page": "content/marines/assignment-incentive-pay.mdx",
+   "line": 308,
+   "claim": "Q and A weighs the 6.81 percent discounted lump sum against monthly AIP and the PCS example recoups a $9,800 discounted lump sum",
+   "confirmed": true,
+   "quote": "Effective 1 July 2023, the Marine Corps will discontinue the utilization, offering, and execution of the 6.8 percent discounted lump sum",
+   "paragraph": "MARADMIN 349/23 para 2, 3",
+   "severity": "major",
+   "correctedFix": "Rewrite the lump sum answer at lines 306 to 316 and the example at line 320. Label lump sum rate columns as pre-1 July 2023 agreements.",
+   "note": "Lines drifted. The Q and A sits at 306 to 308 and the recoupment example at 320, not 321."
+  },
+  {
+   "page": "content/citations/maradmin-527-25.mdx",
+   "line": 63,
+   "claim": "1751 is Total Information Environment Cyber Operator",
+   "confirmed": true,
+   "quote": "1751  Influence Specialist",
+   "paragraph": "MARADMIN 365/25 para 5, 6",
+   "severity": "major",
+   "correctedFix": "Title 1751 as Influence Specialist.",
+   "note": ""
+  },
+  {
+   "page": "content/citations/maradmin-527-25.mdx",
+   "line": 64,
+   "claim": "1834 is Special Reaction Team member",
+   "confirmed": true,
+   "quote": "1834  Amphibious Combat Vehicle (ACV) Crewmember",
+   "paragraph": "MARADMIN 365/25 para 5, 6",
+   "severity": "major",
+   "correctedFix": "Title 1834 as ACV Crewmember.",
+   "note": ""
+  },
+  {
+   "page": "content/citations/maradmin-527-25.mdx",
+   "line": 65,
+   "claim": "2143 is Combat Engineer related",
+   "confirmed": true,
+   "quote": "2143  ACV Repairer/Technician",
+   "paragraph": "MARADMIN 365/25 para 5, 6",
+   "severity": "major",
+   "correctedFix": "Title 2143 as ACV Repairer/Technician.",
+   "note": "Line 66 also titles 2336 loosely as EOD Marine related. MARADMIN 365/25 lists 2336 as Explosive Ordnance Disposal (EOD) Technician."
+  },
+  {
+   "page": "content/citations/maradmin-527-25.mdx",
+   "line": 67,
+   "claim": "4133 is Aviation Operations Specialist",
+   "confirmed": true,
+   "quote": "4133  Marine Corps Community Services Marine",
+   "paragraph": "MARADMIN 365/25 para 5, 6",
+   "severity": "major",
+   "correctedFix": "Title 4133 as Marine Corps Community Services Marine.",
+   "note": ""
+  },
+  {
+   "page": "content/citations/maradmin-527-25.mdx",
+   "line": 68,
+   "claim": "5821 is Counterintelligence/HUMINT Specialist Marine",
+   "confirmed": true,
+   "quote": "5821  Criminal Investigator Agent",
+   "paragraph": "MARADMIN 365/25 para 5, 6",
+   "severity": "major",
+   "correctedFix": "Title 5821 as Criminal Investigator Agent.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/fitrep-appeals-perb.mdx",
+   "line": 77,
+   "claim": "PERB members are senior officers selected by CMC",
+   "confirmed": true,
+   "quote": "PERB members will be field grade officers; chief warrant officers in the grades CWO4 and CWO5",
+   "paragraph": "MCO 1610.7B ch 10 4.b(1)",
+   "severity": "minor",
+   "correctedFix": "Say PERB members come from HQMC and include field grade officers, CWO4 and CWO5, E-9 SNCOs and senior civilians.",
+   "note": "Composition detail only. Downgraded to minor."
+  },
+  {
+   "page": "content/marines/fitrep-appeals-perb.mdx",
+   "line": 62,
+   "claim": "Comparative assessment markings are Section G",
+   "confirmed": true,
+   "quote": "Section G - Intellect and Wisdom",
+   "paragraph": "MCO 1610.7B encl (2) ch 4 para 11",
+   "severity": "major",
+   "correctedFix": "Move comparative assessment out of Section G, which is Intellect and Wisdom. Fix lines 62 and 241.",
+   "note": "The archive confirms Section G is Intellect and Wisdom. Confirm the exact Section I or K block for comparative assessment before editing."
+  },
+  {
+   "page": "content/marines/fitrep-appeals-perb.mdx",
+   "line": 241,
+   "claim": "PERB does not change the Section G comparative assessment absent factual or procedural error",
+   "confirmed": true,
+   "quote": "The perceived competitiveness of a report's relative value or comparative assessment mark is not a basis for removing or modifying the report",
+   "paragraph": "MCO 1610.7B ch 10 1.c",
+   "severity": "major",
+   "correctedFix": "Name the correct section and state competitiveness is not a basis for relief.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/fitrep-appeals-perb.mdx",
+   "line": 28,
+   "claim": "Grounds include inconsistency with the RS profile or unit pattern",
+   "confirmed": true,
+   "quote": "A report is not considered unjust solely because the relative value and/or comparative assessment mark are rated lower than other reports",
+   "paragraph": "MCO 1610.7B ch 10 3.b(5)",
+   "severity": "major",
+   "correctedFix": "Remove profile or unit pattern inconsistency as a ground. Grounds are probable material error, substantive inaccuracy or injustice.",
+   "note": "The summary at line 4 repeats the same ground and needs the same fix."
+  },
+  {
+   "page": "content/marines/fitrep-appeals-perb.mdx",
+   "line": 124,
+   "claim": "Inconsistency with RS marking pattern is grounds for appeal",
+   "confirmed": true,
+   "quote": "A report is not considered unjust solely because the relative value and/or comparative assessment mark are rated lower",
+   "paragraph": "MCO 1610.7B ch 10 3.b(5)",
+   "severity": "major",
+   "correctedFix": "Same fix as line 28.",
+   "note": ""
+  },
+  {
+   "page": "content/leader/performance-evaluation-jepes.mdx",
+   "line": 45,
+   "claim": "The exact JEPES category list lives in the active MARADMIN",
+   "confirmed": true,
+   "quote": "The PES score is comprised of four equally weighted pillars each worth 25 percent",
+   "paragraph": "MCO 1616.1 ch 1 para 1.c(1)",
+   "severity": "major",
+   "correctedFix": "List the four pillars from MCO 1616.1. Warfighting, Physical Toughness, Mental Agility and Command Input. Cite 1616.1 and drop the placeholder citation.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-promotions-officer-promotions.mdx",
+   "line": 46,
+   "claim": "The commander signs ceremony coordination and frocking authorization when applicable",
+   "confirmed": true,
+   "quote": "Captains.  First General Officer in the chain of command.",
+   "paragraph": "MCO 1400.31D 6008.1, 6008.2, 6008.7",
+   "severity": "minor",
+   "correctedFix": "Say the first general officer in the chain approves frocking to captain, Dir MM approves field grade and SECNAV via MMSL approves general officers. The unit commander originates the request.",
+   "note": "Partly refuted. A general officer commander does sign captain frocking, so the line is incomplete, not flatly wrong. Downgraded to minor."
+  },
+  {
+   "page": "content/admin/s1g1-military-awards-overview.mdx",
+   "line": 72,
+   "claim": "Award nomination arrives as a NAVMC 11533 packet from the chain and S-1 reviews the packet",
+   "confirmed": true,
+   "quote": "All DoN PMDs from Marine Corps Commands shall be originated in iAPS.",
+   "paragraph": "MARADMIN 093/25 para 4, 5.a, 5.b",
+   "severity": "major",
+   "correctedFix": "Rewrite steps 1, 3 and 6 around iAPS origination. Add the 60-day CMC and 90-day SECNAV submission deadlines.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-military-awards-overview.mdx",
+   "line": 77,
+   "claim": "S-1 processes the approved award through MCTFS by cutting the transaction in UD-MIPS",
+   "confirmed": true,
+   "quote": "Local commands not permitted to report (add, remove, or make changes) Personal Awards",
+   "paragraph": "MCTFSPRIUM 50101 para 1, 2",
+   "severity": "major",
+   "correctedFix": "CMC reports personal awards, the CAR, the HSM and foreign awards to MCTFS. The unit submits service awards, unit awards and decorations other than the CAR through the PAC and iAPS.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-military-awards-overview.mdx",
+   "line": 56,
+   "claim": "Award transactions land in MCTFS as award entries from the unit",
+   "confirmed": true,
+   "quote": "These awards will be reported in MCTFS by the Commandant of the Marine Corps",
+   "paragraph": "MCTFSPRIUM 50101 para 1",
+   "severity": "major",
+   "correctedFix": "Same fix as line 77.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-casualty-affairs-overview.mdx",
+   "line": 70,
+   "claim": "SGLV 8286 SGLI Election processing per DODFMR Vol 7A Chapter 36 paragraph 2.0 Death Gratuity",
+   "confirmed": true,
+   "quote": "The beneficiary must complete and submit the Claim for Death Benefits, SGLV 8283.",
+   "paragraph": "MCO 3040.4 ch 7 sec 3 2.c, DoDFMR Vol 7A Ch 47 13.0",
+   "severity": "major",
+   "correctedFix": "The SGLI death claim is the SGLV 8283, filed by the beneficiary through MFPC. Elections run in SOES per Vol 7A Ch 47, and Chapter 36 covers the death gratuity only.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-casualty-affairs-overview.mdx",
+   "line": 92,
+   "claim": "SGLV 8286 SGLI Election listed as insurance benefit processing form",
+   "confirmed": true,
+   "quote": "Members with full-time SGLI coverage are no longer required to complete the paper SGLV 8286",
+   "paragraph": "DoDFMR Vol 7A Ch 47 13.0, MCO 3040.4 ch 7 sec 3 2.c",
+   "severity": "major",
+   "correctedFix": "List the SGLV 8283 as the claim form. SOES holds the Marine's elections.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-casualty-affairs-overview.mdx",
+   "line": 99,
+   "claim": "Refresh DD Form 93 annually and at every life event",
+   "confirmed": true,
+   "quote": "Prior to approval of departure on permanent change of station orders. 5. Triennially.",
+   "paragraph": "MCO 3040.4 ch 1 unit commander duties (b)",
+   "severity": "minor",
+   "correctedFix": "Audit the RED at check-in, TAD over 30 days, before deployment, before PCS departure and triennially. Drop annually.",
+   "note": "An annual refresh exceeds the requirement and harms no one. Downgraded to minor."
+  },
+  {
+   "page": "content/admin/s1g1-casualty-affairs-overview.mdx",
+   "line": 73,
+   "claim": "S-1 cuts the casualty status code transaction in UD-MIPS",
+   "confirmed": true,
+   "quote": "Coordinate with Personnel Administrative Center (PAC) to run deceased transactions in MCTFS.",
+   "paragraph": "MCO 3040.4 unit commander duties i",
+   "severity": "major",
+   "correctedFix": "The unit coordinates with the PAC, which runs the deceased transaction, and gives the IPAC a copy of the PCR. Fix lines 73, 83 and 101.",
+   "note": ""
+  },
+  {
+   "page": "content/commander/discipline-njp-routing.mdx",
+   "line": 50,
+   "claim": "Flag officer row: all of the above plus extended periods (enlisted limits)",
+   "confirmed": true,
+   "quote": "If imposed by a commanding officer of the grade of major or lieutenant commander or above",
+   "paragraph": "MCM 2024 Part V 5.b.(2)(B)",
+   "severity": "major",
+   "correctedFix": "Delete the row. Enlisted limits top out at the O-4 and above tier. General officer rank adds arrest in quarters and longer restriction for officers only.",
+   "note": "Downgraded from blocker. A commander reading the table still lands inside the O-4 limits in rows 48 and 49."
+  },
+  {
+   "page": "content/commander/discipline-njp-routing.mdx",
+   "line": 128,
+   "claim": "Do not act on a suspended punishment until appeal period expires or appeal is decided",
+   "confirmed": true,
+   "quote": "A Servicemember who has appealed may be required to undergo any punishment imposed while the appeal is pending",
+   "paragraph": "MCM 2024 Part V 7.d",
+   "severity": "minor",
+   "correctedFix": "Say punishment runs during the appeal. Unexecuted restraint or extra duty stays only when no action comes within 5 days and the Marine asks.",
+   "note": "The sentence is ambiguous about vacating a suspension. Downgraded to minor."
+  },
+  {
+   "page": "content/admin/pac-bah-overview.mdx",
+   "line": 69,
+   "claim": "Without-dependents rate covers a member with dependents not at the duty station",
+   "confirmed": true,
+   "quote": "a Service member with a dependent, who is entitled to basic pay, is authorized BAH or OHA at the with-dependent rate",
+   "paragraph": "DoDFMR Vol 7A Ch 26 10.2.1",
+   "severity": "blocker",
+   "correctedFix": "Delete the parenthetical. Dependents elsewhere still draw the with-dependent rate, normally at the PDS rate.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/pac-bah-overview.mdx",
+   "line": 209,
+   "claim": "Old duty station BAH stops on PCS departure, new starts on arrival",
+   "confirmed": true,
+   "quote": "continue BAH based on the old PDS through the day before the Service member reports to the new PDS",
+   "paragraph": "DoDFMR Vol 7A Ch 26 Table 26-38 rule 1, Table 26-20 rule 3",
+   "severity": "blocker",
+   "correctedFix": "Old PDS BAH continues through PCS travel, leave and TDY en route. New PDS BAH starts on the reporting day, and BAH-Transit covers the gap when leaving OCONUS.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/pac-bah-overview.mdx",
+   "line": 61,
+   "claim": "With-dependents BAH requires dependents at the duty station",
+   "confirmed": true,
+   "quote": "Ordinarily, a housing allowance is based on the Service member's PDS",
+   "paragraph": "DoDFMR Vol 7A Ch 26 10.2.1, 10.2.2",
+   "severity": "major",
+   "correctedFix": "Remove at the duty station.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/pac-bah-without-dependents.mdx",
+   "line": 38,
+   "claim": "Separated Marine whose dependent does not live with member draws without-dependents rate",
+   "confirmed": true,
+   "quote": "the Service member must provide proof of support at the required level to continue to receive a housing allowance for the spouse",
+   "paragraph": "DoDFMR Vol 7A Ch 26 3.3.2.3",
+   "severity": "blocker",
+   "correctedFix": "Delete the line or restate it. A legally separated spouse stays a dependent until the final decree, with proof of support.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/pac-bah-without-dependents.mdx",
+   "line": 49,
+   "claim": "Without-dependents BAH when dependents are not eligible to be claimed at duty station",
+   "confirmed": true,
+   "quote": "is authorized BAH or OHA at the with-dependent rate",
+   "paragraph": "DoDFMR Vol 7A Ch 26 10.2.1",
+   "severity": "major",
+   "correctedFix": "Remove the parenthetical. It contradicts lines 108 and 174.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/pac-special-duty-assignment-pay.mdx",
+   "line": 167,
+   "claim": "Leave and TAD up to 90 days do not stop SDAP",
+   "confirmed": true,
+   "quote": "(5) On authorized leave or administrative absences ... The exception to this is terminal leave",
+   "paragraph": "MCO 7220.12R 5.f.(2), 5.f.(5)",
+   "severity": "major",
+   "correctedFix": "The 90-day cap covers temporary duty only. Authorized leave has no cap, and SDAP ends the day before terminal leave starts.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/pac-special-duty-assignment-pay.mdx",
+   "line": 43,
+   "claim": "Formal school instructors draw AIP, not SDAP",
+   "confirmed": true,
+   "quote": "T1 screenable billets authorized monetary incentives are Combat Instructors, MSG Watch Standers, and Security Force Guards (PRP).",
+   "paragraph": "MARADMIN 628/20 para 2, 6.B",
+   "severity": "major",
+   "correctedFix": "Delete formal school instructors. Neither MARADMIN 628/20 nor 181/26 names them for SDAP or AIP.",
+   "note": "Unsupported, not contradicted."
+  },
+  {
+   "page": "content/admin/pac-special-duty-assignment-pay.mdx",
+   "line": 20,
+   "claim": "Cites DOD FMR Vol 7A Chapter 23 for SDAP",
+   "confirmed": true,
+   "quote": "Vol07a_Ch23_Submarine_Duty_Pay",
+   "paragraph": "DoDFMR Vol 7A Ch 8, Ch 23 titles",
+   "severity": "major",
+   "correctedFix": "Cite Vol 7A Chapter 8. Chapter 23 is Submarine Duty Pay.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/pac-special-duty-assignment-pay.mdx",
+   "line": 19,
+   "claim": "Authority cited as 37 USC 307",
+   "confirmed": true,
+   "quote": "A member who receives SDAP in accordance with 37 U.S.C. 352",
+   "paragraph": "DoDFMR Vol 7A Ch 8 2.2",
+   "severity": "major",
+   "correctedFix": "Cite 37 U.S.C. 352.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-special-hazardous-duty-pay-sdap-and-assignment-incentive-pay.mdx",
+   "line": 46,
+   "claim": "HQMC RFM sets SDAP eligibility, rate levels, and program scope",
+   "confirmed": true,
+   "quote": "Deputy Commandant, Manpower and Reserve Affairs (DC M&RA) determines eligible Special Duty Assignments (SDA) and corresponding SDAP levels",
+   "paragraph": "MCO 7220.12R 3.a.(2)(a)2",
+   "severity": "major",
+   "correctedFix": "Name DC M&RA for SDAs and levels. Change source.publisher on line 41 from P&R (RFM) to M&RA.",
+   "note": "Line 46 body text already names DC M&RA. The error sits in source.publisher at line 41."
+  },
+  {
+   "page": "content/admin/s1g1-special-hazardous-duty-pay-sdap-and-assignment-incentive-pay.mdx",
+   "line": 50,
+   "claim": "MCSF, MSG watch standers, and formal school instructors draw AIP, not SDAP",
+   "confirmed": true,
+   "quote": "Combat Instructor    $300.00 per month",
+   "paragraph": "MARADMIN 181/26 7.d, MARADMIN 628/20 para 2",
+   "severity": "major",
+   "correctedFix": "Delete formal school instructors.",
+   "note": "Unsupported, not contradicted."
+  },
+  {
+   "page": "content/admin/s1g1-special-hazardous-duty-pay-sdap-and-assignment-incentive-pay.mdx",
+   "line": 73,
+   "claim": "Turnover and leave up to 90 days do not stop pay",
+   "confirmed": true,
+   "quote": "On authorized leave or administrative absences",
+   "paragraph": "MCO 7220.12R 5.d, 5.f.(5)",
+   "severity": "major",
+   "correctedFix": "90 days caps turnover and temporary duty. Authorized leave has no cap, and pay ends the day before terminal leave.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-special-hazardous-duty-pay-sdap-and-assignment-incentive-pay.mdx",
+   "line": 22,
+   "claim": "Statutory authority 37 U.S.C. 307 and 307a",
+   "confirmed": true,
+   "quote": "in accordance with Section 352 of Title 37, U.S.C.",
+   "paragraph": "DoDI 1340.26 CH1 purpose",
+   "severity": "major",
+   "correctedFix": "Cite 37 U.S.C. 352.",
+   "note": ""
+  },
+  {
+   "page": "content/admin/s1g1-special-hazardous-duty-pay-sdap-and-assignment-incentive-pay.mdx",
+   "line": 21,
+   "claim": "DODI 1304.27 covers the DoD-level SDAP framework",
+   "confirmed": true,
+   "quote": "Incorporates and Cancels: DoD Instruction 1304.27",
+   "paragraph": "DoDI 1340.26 CH1 cover",
+   "severity": "major",
+   "correctedFix": "Replace with DoDI 1340.26 Change 1.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/appellate-leave.mdx",
+   "line": 179,
+   "claim": "If the discharge is set aside on appeal, back pay follows",
+   "confirmed": true,
+   "quote": "entitlement to pay and allowances under this provision shall be reduced by the total gross income from wages",
+   "paragraph": "MCO 1050.16A 9.c",
+   "severity": "major",
+   "correctedFix": "Back pay is reduced by civilian earnings and unemployment pay. A rehearing that again adjudges a punitive discharge bars it.",
+   "note": ""
+  },
+  {
+   "page": "content/marines/appellate-leave.mdx",
+   "line": 268,
+   "claim": "Marine on involuntary appellate leave may attend college using GI Bill, yes in most cases",
+   "confirmed": true,
+   "quote": "",
+   "paragraph": "none in archive",
+   "severity": "minor",
+   "correctedFix": "Remove the GI Bill claim or cite VA authority. Keep the advice to coordinate with NAMALA.",
+   "note": "No archive source. Unsupported, not shown wrong. Downgraded to minor."
+  }
+ ],
+ "okChecks": [
+  {
+   "page": "content/marines/child-custody-changes.mdx",
+   "claim": "Line 28. 30 days to submit NAVMC 10922 with certified court order",
+   "correct": true,
+   "quote": "Substantiating documentation shall be submitted within 30 days of a life event (MCO 1751.3 CH-1 ch 1 1.f)"
+  },
+  {
+   "page": "content/citations/dd-form-577.mdx",
+   "claim": "Line 35. Section II Items 9 to 13, no monetary limit or period field",
+   "correct": true,
+   "quote": "SECTION II - APPOINTING AUTHORITY 9. NAME ... 13. SIGNATURE (DD 577, Nov 2014)"
+  },
+  {
+   "page": "content/marines/convalescent-leave.mdx",
+   "claim": "Line 144. RC birth parent 6-week postpartum period, up to 6 RCML periods in 8-week window",
+   "correct": true,
+   "quote": "up to 6 paid IDT periods as RCML ... within the 8-week period (MARADMIN 191/26 12.b)"
+  },
+  {
+   "page": "content/citations/maradmin-074-21.mdx",
+   "claim": "Lines 37 to 39 (audited as 27). Sub-delegation O-8 BSM and AM V, O-7 AM C, Strike, NC V, CAR, O-6 NC C, NAM C",
+   "correct": true,
+   "quote": "Sub-delegation authorized to commanders in grades no lower than O-8 (MARADMIN 077/25 4.d.1)"
+  },
+  {
+   "page": "content/marines/assignment-incentive-pay.mdx",
+   "claim": "Line 296. Combat Instructors draw SDAP and AIP at $300 per month, no VSI",
+   "correct": true,
+   "quote": "Combat Instructor $300.00 per month, Total (SDAP and AIP only) (MARADMIN 181/26 7.d)"
+  },
+  {
+   "page": "content/commander/playbook-off-base-arrest.mdx",
+   "claim": "Lines 84 to 86. Civil confinement not excused as unavoidable carries no pay except leave periods",
+   "correct": true,
+   "quote": "is not entitled to pay and allowances, except for that part of the period that is covered by authorized leave (Vol 7A Ch 1 Table 1-12 rule 6)"
+  },
+  {
+   "page": "content/marines/fitrep-appeals-perb.mdx",
+   "claim": "Line 4. MRO files DD 149 with CMC (MMRP-13), normally within three years of discovery",
+   "correct": true,
+   "quote": "appeals should be filed within three years of the discovery date (MCO 1610.7B ch 10 3.c(2)). Line 4 also repeats the refuted profile ground."
+  },
+  {
+   "page": "content/admin/pac-special-duty-assignment-pay.mdx",
+   "claim": "Line 49. Drill Instructors are SD-5 per MCO 7220.12R 4.d.(8)",
+   "correct": true,
+   "quote": "0911 billet at either MCRD, OCS Quantico, VA or OCS Officer Training Command, Newport, RI are authorized SD-5"
+  },
+  {
+   "page": "content/commander/discipline-njp-routing.mdx",
+   "claim": "Line 90. Correctional custody limited to E-3 and below in some cases",
+   "correct": true,
+   "quote": "will not be imposed on persons in paygrade E-4 and above unless an unsuspended reduction below paygrade E-4 (JAGMAN 0111.b)"
+  },
+  {
+   "page": "content/inspections/igmc/1742.1-voting-assistance-program.json",
+   "claim": "Line 27. MCVAO is GS-12 or above or field grade officer",
+   "correct": true,
+   "quote": "Appoint a Major (O-4)/GS-12 or above as the MCVAO (MCO 1742.1C 4.a(4)(a))"
+  },
+  {
+   "page": "content/admin/s1g1-military-awards-overview.mdx",
+   "claim": "Line 76. Approving authority depends on the award level",
+   "correct": true,
+   "quote": "Awarding authority delegated to Marine commanders in grades no lower than O-9 (MARADMIN 077/25 3.a.1)"
+  },
+  {
+   "page": "content/citations/mco-3000-13b.mdx",
+   "claim": "Line 18. MARADMIN 518/21 directed DRRS-MC consolidation into DRRS",
+   "correct": false,
+   "quote": "In accordance with ref (a), the Services were directed to consolidate. Ref A is the FY2019 NDAA sec 358. 518/21 announced the cutover."
+  }
+ ]
+}

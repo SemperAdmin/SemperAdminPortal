@@ -4297,6 +4297,14 @@
           ]
         },
         {
+          "step": "MARADMIN 267/26 additions to the notification",
+          "actions": [
+            "Statement of the Marine's right to submit statements per DoDI 1332.14 paragraph 5.11 included (MARADMIN 267/26 paragraph 2.a)",
+            "Sexual assault review paragraph added to Figure 6-2 and 6-3 notifications (MARADMIN 267/26 paragraph 3.a)",
+            "Initialed sexual assault review paragraph added to Figure 6-2A and 6-3A acknowledgments (MARADMIN 267/26 paragraph 3.b)"
+          ]
+        },
+        {
           "step": "Common Discrepancies",
           "actions": [
             "Missing element: No specific basis (only general basis stated)",
@@ -4307,6 +4315,7 @@
             "Missing element: Board rights not fully enumerated",
             "Incomplete element: Challenge members right stated but not \"for cause\"",
             "Missing element: Consequences of failure to respond not stated",
+        "Missing MARADMIN 267/26 paragraph 5.11 statement or sexual assault review paragraph",
             "Generic notification (not tailored to specific case)",
             "Wrong notification form used (board form for non-board case)",
             "Notification not signed by commanding officer",
@@ -4326,7 +4335,9 @@
         "Proper form used (Figure 6-3) confirmed.",
         "Signed by CO confirmed.",
         "Enclosures attached confirmed.",
-        "Response deadline stated confirmed."
+        "Response deadline stated confirmed.",
+        "DoDI 1332.14 paragraph 5.11 statement included confirmed.",
+        "Sexual assault review paragraph added to the Figure 6-2, 6-2A, 6-3 or 6-3A template confirmed."
       ],
       "verified": true
     },

@@ -1,0 +1,909 @@
+[
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 122,
+  "claim": "E-1 through E-3 in barracks draw no BAH",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "Ch 26 5.5.1, 5.6.1, PRIUM 80201.2",
+  "correctedFix": "A Marine without dependents in single-type government quarters draws BAH-Partial. A barracks Marine paying child support at or above the BAH-Diff rate draws BAH-Diff instead. Only BAH at the with or without-dependent locality rate is absent.",
+  "note": "Downgraded from blocker. BAH-Partial posts automatically at accession."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 44,
+  "claim": "OHA covers move-in and move-out costs",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 6.4.1, 6.4.3.3",
+  "correctedFix": "OHA includes MIHA for move-in costs only, paid for one dwelling per tour at a PDS unless a government-funded local move occurs. No allowance covers move-out costs."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 90,
+  "claim": "Partial BAH applies only in narrow situations",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "Ch 26 5.5.1, 5.5.3",
+  "correctedFix": "BAH-Partial is the standing entitlement of every member without dependents assigned to single-type government quarters and not authorized BAH or OHA. Para 5.5.3 adds the confinement, arrest, hospital, between-PDS and dual-military cases."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 100,
+  "claim": "Partial BAH is not common",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "PRIUM 80201.2, Ch 26 5.5.1",
+  "correctedFix": "Delete the sentence. BAH-Partial is the default for every barracks Marine without dependents and posts automatically at accession."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 134,
+  "claim": "In government quarters BAH typically does not apply",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 5.0",
+  "correctedFix": "In adequate government quarters no BAH pays at the locality rate. A member without dependents in single-type quarters draws BAH-Partial, and a member paying qualifying child support draws BAH-Diff."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 146,
+  "claim": "Member in government quarters gets no BAH",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "Ch 26 5.0, 5.5.1, 5.6.1",
+  "correctedFix": "Member in adequate government quarters draws no BAH at the locality rate. BAH-Partial or BAH-Diff still pays when the member qualifies."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 155,
+  "claim": "BAH continues at home port for all sea-duty Marines",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "Ch 26 10.1.5.1, 10.1.5.2, 10.2.2.5.1",
+  "correctedFix": "A member with dependents draws the home port with-dependent rate on a CO statement of dependent residence. A member without dependents in E-6 and above elects BAH or OHA. A member without dependents below E-6 occupies shipboard quarters and draws BAH-Partial unless the Secretary of the Navy authorizes BAH or OHA under 10.1.5.2.",
+  "note": "Sep 2026 revision of 10.1 added the Secretary authority."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 168,
+  "claim": "Reservists on active duty receive standard BAH",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "Ch 26 10.5.3.1.1, 10.5.3.1.2, 10.5.3.2",
+  "correctedFix": "A reservist on orders of 30 or fewer days, not for a contingency, draws BAH-RC. Orders of 31 or more days, or contingency orders of any length, pay BAH or OHA at the primary residence."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 180,
+  "claim": "BAH applies during AT or orders over 30 days",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "Ch 26 10.5.3.1.1",
+  "correctedFix": "AT and other orders of 30 or fewer days pay BAH-RC. BAH or OHA starts on orders of 31 or more days or on contingency orders of any length."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 225,
+  "claim": "Partial BAH on an off-base member is an error, upgrade to full BAH",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "Ch 26 5.5.3.2.7, 10.1.3, 10.1.4, MCO 11000.22 Encl 2 Ch 10 par 7c, 7e, Option to elect BAH",
+  "correctedFix": "Check entitlement before upgrading. A Marine E-5 and below without dependents who is offered adequate quarters and lives off base at own expense stays on BAH-Partial. Full BAH needs Installation Commander approval for non-availability or an approved exception. E-6 and above elect off base without approval under MCO 11000.22 Ch 10, unless military necessity applies.",
+  "note": "Finding fix said E-6 or below. MCO 11000.22 extends the CONUS election to E-6."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 43,
+  "claim": "OHA reimburses utilities and other housing costs",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 6.3.1, 6.3.2",
+  "correctedFix": "The utility and recurring maintenance allowance is a fixed locality amount paid when rent excludes utilities or the member owns the home. It is not receipt-based reimbursement. A utility point score reduces it when rent includes some utilities."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 54,
+  "claim": "Utility allowance equals average utility costs",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 6.3.1",
+  "correctedFix": "Set at a locality amount covering utility costs for 80 percent of members in the area. A member without dependents who is not a sharer receives 75 percent of the with-dependent amount. Sharers receive a prorated amount."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 68,
+  "claim": "Member submits utility cost documentation",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 6.3.1, 6.3.2.2",
+  "correctedFix": "Remove the utility receipt requirement. Document on the DD 2367 which utilities the rent includes so the utility point score is correct."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 69,
+  "claim": "Member submits move-in receipts for MIHA",
+  "confirmed": false,
+  "severity": "minor",
+  "paragraph": "Ch 26 6.4.2.1, 6.4.3.2",
+  "correctedFix": "No change required. Optional clarification. MIHA/Miscellaneous is a lump sum with no receipts. MIHA/Rent, Security, Infectious Disease and Safety need receipts.",
+  "note": "Refuted. Four of five MIHA types require receipts."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 70,
+  "claim": "Annual lease renewal documentation required",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 6.2.3",
+  "correctedFix": "Replace with a new DD 2367 and lease documents whenever rent or the dwelling changes so OHA is recomputed. Ch 26 sets no annual lease renewal requirement."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 79,
+  "claim": "PAC verifies the lease meets OHA standards",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 6.1.1",
+  "correctedFix": "The in-country senior officer or the designated housing office approves the DD 2367. PAC reports OHA after approval."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 86,
+  "claim": "Per MCO 7220.56, partial BAH applies in limited situations",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MCO 7220.56A subject line, Ch 26 5.5",
+  "correctedFix": "Cite DoDFMR Vol 7A Ch 26 para 5.5 for BAH-Partial. MCO 7220.56A covers BAH waivers away from the PDS and contains no BAH-Partial rule."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 104,
+  "claim": "Single SNCO is E-7 and above for BAH, per MCO 7220.56",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 10.1.3, 10.1.4, MCO 11000.22 Encl 2 Ch 10 Option to elect BAH",
+  "correctedFix": "Cite Ch 26 10.1.3 and MCO 11000.22 Ch 10. Ch 26 gives E-7 and above the election at any time. MCO 11000.22 extends the CONUS election to E-6 without Installation Commander approval, subject to military necessity.",
+  "note": "Finding fix limited E-6 to inadequate quarters. USMC extends the election to E-6."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 126,
+  "claim": "Junior enlisted exceptions per MCO 7220.56",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MCO 11000.22 Encl 2 Ch 10 par 7c, 7d, 7e",
+  "correctedFix": "Cite MCO 11000.22 Encl 2 Ch 10 par 7c to 7e. The Installation Commander approves BAH without dependents for non-availability at 95 percent occupancy, the 7d allowable exceptions, and 7e hardship exceptions."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 148,
+  "claim": "Quarters used for command convenience",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 8.1, 8.2",
+  "correctedFix": "Delete the line. Ch 26 has no command-convenience category."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 168,
+  "claim": "MCRAMM Chapter 12 is the reserve BAH authority",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MCO 1001R.1L Ch 7 par 3, Ch 26 10.5",
+  "correctedFix": "Cite DoDFMR Vol 7A Ch 26 para 10.5. MCRAMM addresses BAH in Chapter 7 par 3. Chapter 12 covers other programs."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 224,
+  "claim": "OHA stops on CONUS return and BAH starts at the CONUS station",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 10.10.2.2, Table 26-38 rule 2",
+  "correctedFix": "Pay OHA through the day before departure. Pay BAH-Transit from departure through the day before reporting, TDY en route included. Start BAH at the new PDS on the reporting day."
+ },
+ {
+  "page": "content/admin/pac-bah-special-categories.mdx",
+  "line": 231,
+  "claim": "Ch 26 section 6.0 requires annual OHA review",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 6.2.3",
+  "correctedFix": "Remove the Ch 26 attribution for an annual review. Ch 26 requires recompute on any rent change. Name local OHA audit procedures as the source for any periodic review."
+ },
+ {
+  "page": "content/admin/pac-inbound-management-ipac-join-transaction.mdx",
+  "line": 31,
+  "claim": "Post BAH at the with or without dependents rate",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "PRIUM 80201.2",
+  "correctedFix": "Post the housing entitlement the join supports. BAH with or without dependents off base, BAH-Partial or BAH-Diff in single-type quarters, BAH-RC for reserve orders of 30 or fewer days, OHA at an overseas PDS."
+ },
+ {
+  "page": "content/admin/pac-inbound-management-ipac-join-transaction.mdx",
+  "line": 67,
+  "claim": "BAH supporting documents include the lease",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 5.1.1",
+  "correctedFix": "BAH supporting documents are the NAVMC 10922 with dependency documents and the quarters status. A lease supports OHA only."
+ },
+ {
+  "page": "content/admin/pac-inbound-management-ipac-join-transaction.mdx",
+  "line": 107,
+  "claim": "BAH zip code comes from PCS orders or quarters address",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "PRIUM 80201.5 notes 2 and 3",
+  "correctedFix": "Report the PDS zip with designator M. Report the dependent zip with designator D only under an approved waiver or unaccompanied tour. A quarters address sets no BAH rate."
+ },
+ {
+  "page": "content/admin/pac-inbound-management-ipac-join-transaction.mdx",
+  "line": 111,
+  "claim": "Post BAH stop on the quarters move-in date",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 8.1.4, 5.5.1",
+  "correctedFix": "Stop BAH effective the day before quarters assignment. A Marine without dependents moving into single-type quarters starts BAH-Partial on the assignment date."
+ },
+ {
+  "page": "content/admin/pac-inbound-management-ipac-join-transaction.mdx",
+  "line": 115,
+  "claim": "Delayed pay post creates a member debt",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 10.3, 3.2.3.2",
+  "correctedFix": "A late start produces back pay owed to the Marine. Debt forms when an entry posts at a rate above entitlement or a stop posts late."
+ },
+ {
+  "page": "content/admin/pac-inbound-management-ipac-join-transaction.mdx",
+  "line": 189,
+  "claim": "Retroactive starts often post at wrong rate and create debt",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 3.2.3.1, 3.2.3.2",
+  "correctedFix": "Tie debt risk to the rate posted and to late stops, not to a delayed start. A missed PDS recertification restarts the with-dependent rate on the certification date without retroactive pay unless the commander certifies."
+ },
+ {
+  "page": "content/admin/s1g1-audit-internal-controls-overview.mdx",
+  "line": 58,
+  "claim": "DEERS dependency change requires a BAS code audit",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 25 2.2.2.1",
+  "correctedFix": "Audit BAH and, where the Marine draws it, BNA. BAS does not vary with dependency."
+ },
+ {
+  "page": "content/admin/s1g1-audit-internal-controls-overview.mdx",
+  "line": 99,
+  "claim": "Ch 26 requires a per-cycle BAH and BAS dependency cross-check",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 3.2",
+  "correctedFix": "Attribute the per-cycle cadence to local SOP. Ch 26 requires adequate internal audit without a set cycle. Remove BAS from the misalignment."
+ },
+ {
+  "page": "content/admin/s1g1-inbound-management-pay-starts-and-allowance-initiation.mdx",
+  "line": 65,
+  "claim": "Inbound duty location, grade and dependent status drive BAH",
+  "confirmed": false,
+  "severity": "minor",
+  "paragraph": "Ch 26 10.2.2",
+  "correctedFix": "No change required. Optional note on the waiver and unaccompanied tour exceptions.",
+  "note": "Refuted. Page states the ordinary rule the source uses."
+ },
+ {
+  "page": "content/admin/s1g1-inbound-management-pay-starts-and-allowance-initiation.mdx",
+  "line": 69,
+  "claim": "FSA applies on separation over 30 days",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 27 2.3.1.1 to 2.3.1.3",
+  "correctedFix": "The 30-day test applies to FSA-S and FSA-T. FSA-R pays on a PCS where dependent travel to the PDS is not authorized at government expense, with no 30-day minimum."
+ },
+ {
+  "page": "content/admin/s1g1-inbound-management-pay-starts-and-allowance-initiation.mdx",
+  "line": 88,
+  "claim": "BAH Dependent Election Form per Ch 26",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MCO 1751.3 Ch 1 par 1.e",
+  "correctedFix": "Name the NAVMC 10922 dependency application per MCO 1751.3. Secondary dependents use the DD Form 137."
+ },
+ {
+  "page": "content/admin/s1g1-military-pay-processing-allowances-bah-bas-and-uniforms.mdx",
+  "line": 66,
+  "claim": "FSA applies when separation exceeds 30 days",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 27 2.3.1.1",
+  "correctedFix": "Limit the 30-day test to FSA-S and FSA-T. FSA-R carries no 30-day minimum."
+ },
+ {
+  "page": "content/admin/s1g1-military-pay-processing-allowances-bah-bas-and-uniforms.mdx",
+  "line": 86,
+  "claim": "BAH Dependent Election Form per Ch 26",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MCO 1751.3 Ch 1 par 1.e",
+  "correctedFix": "Name the NAVMC 10922. Ch 26 has no election form."
+ },
+ {
+  "page": "content/admin/s1g1-military-pay-processing-allowances-bah-bas-and-uniforms.mdx",
+  "line": 96,
+  "claim": "BAH rate not updated at 1 January is a pitfall",
+  "confirmed": false,
+  "severity": "minor",
+  "paragraph": "Ch 26 5.1.3, 5.2",
+  "correctedFix": "No change required. Optional note to keep the protected rate when the locality rate drops.",
+  "note": "Refuted. A missed annual increase is a real pitfall."
+ },
+ {
+  "page": "content/admin/s1g1-military-pay-processing-allowances-bah-bas-and-uniforms.mdx",
+  "line": 105,
+  "claim": "With versus without dependents is the BAH decision point",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 5.5, 5.6, 10.10",
+  "correctedFix": "Add BAH-Partial and BAH-Diff for members in single-type quarters and BAH-Transit for members between PDSs."
+ },
+ {
+  "page": "content/admin/s1g1-travel-entitlements-mileage-claims-permanent-duty-travel-pcs.mdx",
+  "line": 66,
+  "claim": "TLE covers lodging at the gaining station only",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "JTR 050601, Tables 5-12 and 5-13",
+  "correctedFix": "TLE covers CONUS temporary lodging near the old PDS, a designated place, or the new PDS. It pays up to 21 days on a move to a CONUS PDS and up to 7 days at CONUS locations on a move OCONUS."
+ },
+ {
+  "page": "content/leader/pay-bah-error-catch.mdx",
+  "line": 53,
+  "claim": "BAH location code matches duty station",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 10.2.2, 10.4.2.2.1, PRIUM 80201.5 note 3",
+  "correctedFix": "Location matches the PDS unless an approved waiver or unaccompanied tour sets the dependent location with designator D. Do not correct those Marines to the PDS.",
+  "note": "Downgraded to minor. Checklist omission."
+ },
+ {
+  "page": "content/leader/pay-bah-error-catch.mdx",
+  "line": 74,
+  "claim": "Old housing area after a move within the duty station is an error",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 10.2.2, PRIUM 80201.5 note 2",
+  "correctedFix": "Delete. A move within the PDS vicinity does not change the BAH rate. The rate keys to the PDS zip with designator M, not the residence.",
+  "note": "Same defect at content/marines/bah.mdx line 342 Error 3, not in the finding list."
+ },
+ {
+  "page": "content/leader/pay-bah-error-catch.mdx",
+  "line": 40,
+  "claim": "Failure to recertify produces suspension and overpayment exposure",
+  "confirmed": false,
+  "severity": "minor",
+  "paragraph": "Ch 26 3.2.3.1, 3.2.3.2",
+  "correctedFix": "No change required. Optional. State the with-dependent rate stops at month end and restarts without retroactive pay.",
+  "note": "Refuted. Both outcomes are accurate."
+ },
+ {
+  "page": "content/leader/pay-bah-error-catch.mdx",
+  "line": 44,
+  "claim": "Annual certification does not apply to primary dependents",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 3.2.3.4",
+  "correctedFix": "Add the RC rule. Reserve Component Marines recertify each dependent at least every third year or on a status change, whichever comes first."
+ },
+ {
+  "page": "content/leader/pay-bah-error-catch.mdx",
+  "line": 57,
+  "claim": "Marine with old BAH location after PCS loses money every month",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 Table 26-38 rule 1",
+  "correctedFix": "Say the Marine draws the wrong rate. The new PDS rate runs higher or lower than the old one, so the error is an underpayment or a debt."
+ },
+ {
+  "page": "content/leader/pay-bah-error-catch.mdx",
+  "line": 103,
+  "claim": "A 12-month error always produces back pay",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 3.2.3.1, 3.2.3.2",
+  "correctedFix": "Split by direction. An underpayment repays the Marine. An overpayment creates a debt. A missed PDS recertification is not retroactive without commander certification."
+ },
+ {
+  "page": "content/leader/pay-secondary-dependency.mdx",
+  "line": 99,
+  "claim": "Submission goes to the DFAS processing office",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "MCO 1751.3 Ch 1 par 1.h, 11, 12, Ch 26 Tables 26-10 to 26-13",
+  "correctedFix": "Route the DD 137 package through the S-1 or IPAC to CMC (MFP-1), the DEERS and Dependency Support Section. The Commandant determines USMC secondary dependency."
+ },
+ {
+  "page": "content/leader/pay-secondary-dependency.mdx",
+  "line": 105,
+  "claim": "AskDFAS or U.S. Mail are the submission paths",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "Ch 26 Tables 26-10 to 26-13 USMC rows, MARADMIN 311/25 par 2 and 3",
+  "correctedFix": "Replace with the USMC path. The Marine completes the DD 137 with the S-1 and the command forwards it to CMC (MFP-1). The DFAS site serves as a criteria reference only."
+ },
+ {
+  "page": "content/leader/pay-secondary-dependency.mdx",
+  "line": 118,
+  "claim": "Marine starts the package at the 90-day mark",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MCO 1751.3 Ch 1 par 8",
+  "correctedFix": "CMC (MFP-1) initiates the annual recertification and the Marine answers it by the suspense. Keep the tracker and stage evidence early."
+ },
+ {
+  "page": "content/leader/pay-secondary-dependency.mdx",
+  "line": 56,
+  "claim": "Secondary dependency gives increased BAH up to the with-dependent ceiling",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "DD 137 Section 1, Ch 26 3.1",
+  "correctedFix": "Say the with-dependent rate adds pay only when the secondary dependent is the Marine's sole dependent. A Marine already at the with-dependent rate gains no BAH.",
+  "note": "Ceiling wording matches DD 137. The word increased misleads."
+ },
+ {
+  "page": "content/leader/pay-secondary-dependency.mdx",
+  "line": 85,
+  "claim": "Debt typically forms during the lapse period",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 3.2.3.2, 3.3.4.3, MCO 1751.3 Ch 1 par 8",
+  "correctedFix": "Say a debt forms when BAH pays past a status change or a period of inadequate support. A lapse in recertification suspends benefits through CMC (MFP-1)."
+ },
+ {
+  "page": "content/citations/dd-form-137.mdx",
+  "line": 26,
+  "claim": "IPAC routes to the HQMC Dependency Determination Section",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MARADMIN 311/25 par 2",
+  "correctedFix": "Rename to the DEERS and Dependency Support Section (MFP-1)."
+ },
+ {
+  "page": "content/citations/maradmin-115-24.mdx",
+  "line": 11,
+  "claim": "Effective date 2024-03-04",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MARADMIN 115/24 par 1, DTG 061330Z MAR 24",
+  "correctedFix": "Set effectiveDate to 2024-03-06, the release date. Pay reaches back to the start of the class for Marines already attending."
+ },
+ {
+  "page": "content/citations/maradmin-115-24.mdx",
+  "line": 17,
+  "claim": "Message aligns travel and HHG entitlements with the JTR",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MARADMIN 115/24 par 2, 4.c",
+  "correctedFix": "State the purpose. It implements 37 USC 453(i), starts FSH-B at the without-dependent rate for the PME or training PDS via TTC 388/002, and keeps the with-dependent rate at the dependent location. No FSA authority."
+ },
+ {
+  "page": "content/citations/maradmin-115-24.mdx",
+  "line": 21,
+  "claim": "Marines on PCS orders to PME apply the PCS framework",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MARADMIN 115/24 par 3.a to 3.d",
+  "correctedFix": "Add the eligibility limits. The Marine has dependents, holds CONUS orders of one year or less, the orders state the return to the prior station, and no government quarters are provided."
+ },
+ {
+  "page": "content/citations/mco-11000-22.mdx",
+  "line": 26,
+  "claim": "Commanders approve BAH Without Dependents and CNAs",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MCO 11000.22 Encl 2 Ch 10 par 7c, Ch 10 Option to elect BAH, Ch 11 par 6",
+  "correctedFix": "Name the Installation Commander as the BAH without dependents approver. E-6 and above electing off base need no approval. CNA numbers come from installation transient housing for TAD travelers per Ch 11 par 6.",
+  "note": "Finding said CNAs have no archive source. MCO 11000.22 Ch 11 par 6 covers them."
+ },
+ {
+  "page": "content/citations/mco-11000-22.mdx",
+  "line": 38,
+  "claim": "BAH without dependents approval defined by local policy",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MCO 11000.22 Encl 2 Ch 10 par 7c",
+  "correctedFix": "State the rule. The Installation Commander approves BAH without dependents for non-availability only at 95 percent installation occupancy, or for a 7d or 7e exception. E-6 and above elect off base without approval. Replace the MCO P11000.22 paragraph 2600 citation."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 306,
+  "claim": "Old PDS rate stops on the detachment date",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "Ch 26 10.10.2.1, Table 26-38 rule 1",
+  "correctedFix": "Old PDS BAH continues through travel, leave and TDY en route until the day before reporting. New PDS BAH starts on the reporting day.",
+  "note": "Downgraded from blocker."
+ },
+ {
+  "page": "content/marines/divorce-and-spouse-loss.mdx",
+  "line": 96,
+  "claim": "Non-custodial Marine paying the BAH-Diff rate gets BAH-Diff",
+  "confirmed": true,
+  "severity": "blocker",
+  "paragraph": "Ch 26 4.3.2, 5.6.1",
+  "correctedFix": "Off base, a non-custodial Marine paying support at or above the BAH-Diff rate draws BAH at the with-dependent rate for the child. BAH-Diff applies only in single-type government quarters."
+ },
+ {
+  "page": "content/marines/divorce-and-spouse-loss.mdx",
+  "line": 156,
+  "claim": "Sole custody to former spouse stops with-dependent BAH",
+  "confirmed": true,
+  "severity": "blocker",
+  "paragraph": "Ch 26 4.3.2",
+  "correctedFix": "Off base and paying support at or above the BAH-Diff rate, the Marine keeps the with-dependent rate. Below that amount, the without-dependent rate. In single-type quarters, BAH-Diff when support meets the rate."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 127,
+  "claim": "Rate protection on promotion carries across MHAs",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 5.2",
+  "correctedFix": "Rewrite as: a promotion never lowers BAH at the current MHA. Protection does not follow the Marine to a new MHA.",
+  "note": "Downgraded to minor. Garbled parenthetical conflicts with line 396."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 198,
+  "claim": "OHA and LQA not paid concurrently",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "Ch 26 6.9",
+  "correctedFix": "Delete the election claim. A Marine draws OHA at the with-dependent rate even when a civilian spouse draws LQA."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 272,
+  "claim": "FSH-B is a fixed CONUS rate",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "Ch 26 7.3.1",
+  "correctedFix": "FSH-B equals the locality BAH without-dependent rate for the Marine's grade and PDS."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 298,
+  "claim": "Privatized housing is treated as government quarters",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "Ch 26 9.0, 2.1.4.2",
+  "correctedFix": "Privatized housing is not government quarters. The Marine draws BAH as if off base and pays rent to the operator."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 344,
+  "claim": "BAH-Diff heading names a single custodial parent",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "Ch 26 4.1, 5.6.1",
+  "correctedFix": "Rename the heading to BAH-Diff not started for a non-custodial Marine in the barracks. A custodial parent draws the with-dependent rate."
+ },
+ {
+  "page": "content/marines/dependency-validation-and-recertification.mdx",
+  "line": 130,
+  "claim": "BAH-Diff Marine confirms still without dependents",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "Ch 26 5.5.3.3.4",
+  "correctedFix": "Remove the line. A BAH-Diff Marine is not a member without dependents."
+ },
+ {
+  "page": "content/marines/dependency-validation-and-recertification.mdx",
+  "line": 214,
+  "claim": "Death of a dependent triggers immediate removal",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "Ch 26 10.2.4",
+  "correctedFix": "When a sole dependent dies on or after 23 Dec 2022 while residing with the Marine on active duty, and the Marine is not in government quarters, the with-dependent rate continues up to one year. It ends early on the 10.2.4.2 triggers such as quarters assignment or a new dependent."
+ },
+ {
+  "page": "content/marines/life-events-overview.mdx",
+  "line": 95,
+  "claim": "BAH adjustment timing depends on submission date",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 10.3, 3.2.3.1",
+  "correctedFix": "Entitlement runs from the acquisition date. Late filing delays payment. A missed PDS recertification is the exception and restarts on the certification date."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 119,
+  "claim": "Demotion reduces BAH only below the protected rate",
+  "confirmed": true,
+  "severity": "major",
+  "paragraph": "Ch 26 5.2",
+  "correctedFix": "On demotion, rate protection ends. BAH resets to the current rate for the lower grade at the MHA, which becomes the new protected rate.",
+  "note": "Contradicted, not only unsupported."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 334,
+  "claim": "Submit orders to new S-1 within 7 days",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 3.2.3.1",
+  "correctedFix": "Drop the 7 days. Recertify dependents on arrival at the new PDS. A missed recertification stops the with-dependent rate at month end and restarts without retroactive pay unless the commander certifies."
+ },
+ {
+  "page": "content/marines/dependency-validation-and-recertification.mdx",
+  "line": 27,
+  "claim": "Annual recertification covers court-ordered BAH-Diff cases",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MCO 1751.3 Ch 1 par 8, Ch 26 3.2.3.3",
+  "correctedFix": "Remove BAH-Diff cases from annual recertification here and at lines 70, 124 to 130 and 350. Support rises within 60 days of a BAH-Diff rate increase (3.3.2)."
+ },
+ {
+  "page": "content/marines/dependency-validation-and-recertification.mdx",
+  "line": 70,
+  "claim": "Court-ordered BAH-Diff is an annual recert category",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 3.2.3.3",
+  "correctedFix": "Same as line 27. Remove the category."
+ },
+ {
+  "page": "content/marines/divorce-and-spouse-loss.mdx",
+  "line": 88,
+  "claim": "Custody or court-ordered support keeps with-dependent BAH",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 3.3.2.4, 4.1, 4.3.2",
+  "correctedFix": "Split the cases. A custodial parent keeps the with-dependent rate. A non-custodial parent off base keeps it only while paying at least the BAH-Diff rate, with proof when the court order is below that amount."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 12,
+  "claim": "Cites Ch 26 May 2025 edition",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 summary of changes",
+  "correctedFix": "Update the reference to the September 2026 edition."
+ },
+ {
+  "page": "content/citations/mctfsprium-80201.mdx",
+  "line": 144,
+  "claim": "BAH-RC/T on return from accompanied overseas tour",
+  "confirmed": false,
+  "severity": "minor",
+  "paragraph": "PRIUM 80201, Ch 26 Table 26-38 rule 2",
+  "correctedFix": "No change required. Optional note that Ch 26 names the entitlement BAH-Transit.",
+  "note": "Refuted. Page restates PRIUM text and timing matches Table 26-38."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 176,
+  "claim": "BAH-Diff approximates the dependent-rate increment",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 5.6.2, 4.3.2",
+  "correctedFix": "Say BAH-Diff is the 1997 BAQ difference indexed by pay raises, far below the current BAH difference. Off base the same support earns the full with-dependent rate."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 188,
+  "claim": "MIHA covers security deposits",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 6.4.2",
+  "correctedFix": "Drop security deposits. List the five MIHA types, Miscellaneous, Rent, Security, Infectious Disease and Safety."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 435,
+  "claim": "Commanders certify BAH-Partial elections for E-6 and E-7",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 10.1.3, 10.1.4, 5.5.3.2.7",
+  "correctedFix": "The election yields full BAH or OHA, not BAH-Partial. Remove the BAH-Partial election wording."
+ },
+ {
+  "page": "content/marines/secondary-dependency-dd-137.mdx",
+  "line": 157,
+  "claim": "In loco parentis 5 years before sponsor's emancipation",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MCO 1751.3 Ch 1 par 7.b",
+  "correctedFix": "Stood in place of a parent for a continuous period of at least five years before the Marine turned 21."
+ },
+ {
+  "page": "content/marines/secondary-dependency-dd-137.mdx",
+  "line": 348,
+  "claim": "Annual recert per MARADMIN 661/19",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MCO 1751.3 Ch 1 par 8",
+  "correctedFix": "Cite MCO 1751.3 Ch 1 par 8. MARADMIN 661/19 covers audit controls on the NAVMC 10922."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 68,
+  "claim": "Para 5.1.1 states the two-rate structure",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 5.1.1",
+  "correctedFix": "Cite the DTMO BAH rate tables for the with and without-dependent rates. Para 5.1.1 states the median housing cost basis only."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 81,
+  "claim": "Support of a primary dependent is automatically assumed",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 3.3.2",
+  "correctedFix": "Say support at or above the BAH-Diff rate is required. Proof comes into play when the Marine lives apart from the dependent."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 92,
+  "claim": "Stepparent relationship persists after death of biological parent",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 3.1.2.3.1",
+  "correctedFix": "Say the stepparent relationship does not necessarily end at the parent's death and the stepparent qualifies as a secondary dependent on proof. Fix the paragraph number to 3.1.2.3.1."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 118,
+  "claim": "Promotion raises rate effective promotion date, prorated",
+  "confirmed": false,
+  "severity": "minor",
+  "paragraph": "Ch 26 5.2",
+  "correctedFix": "No change required.",
+  "note": "Refuted. Source does not contradict the page."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 135,
+  "claim": "Protected rate resets on dependent change",
+  "confirmed": false,
+  "severity": "minor",
+  "paragraph": "Ch 26 5.2",
+  "correctedFix": "No change required. Optional DTMO or JTR citation for the dependency-status condition.",
+  "note": "Refuted. A dependency change moves the Marine to a different rate type. Ch 26 is silent, not contrary."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 187,
+  "claim": "OHA utility allowance is a fixed amount by location",
+  "confirmed": false,
+  "severity": "minor",
+  "paragraph": "Ch 26 6.3.1",
+  "correctedFix": "No change required. Optional note on the 75 percent rate for members without dependents and the point-score reduction.",
+  "note": "Refuted. Page matches 6.3.1."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 190,
+  "claim": "DTMO publishes OHA rates monthly",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 6.1",
+  "correctedFix": "Drop the monthly claim or verify it against DTMO. Say DTMO adjusts OHA rental ceilings and currency factors on its own schedule."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 264,
+  "claim": "FSH limited to unaccompanied or dependent-restricted tours",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 7.2",
+  "correctedFix": "Add deferred or denied concurrent travel and PME or training assignments of at least 140 and fewer than 365 days without dependents."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 326,
+  "claim": "PAA 06-20 covers BAH waivers",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "PAA 06-20 par 3 to 5",
+  "correctedFix": "Say PAA 06-20 amplifies MARADMIN 320/20 with a Page 11 entry for OTEIP incentive changes. Cite MARADMIN 320/20 for the BAH waivers.",
+  "note": "PAA title names BAH waivers, body covers OTEIP only."
+ },
+ {
+  "page": "content/marines/bah.mdx",
+  "line": 338,
+  "claim": "Dependent status updates within one pay period",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MCO 1751.3 Ch 1 par 1.f",
+  "correctedFix": "Submit documents and a new NAVMC 10922 within 30 days of the life event. Verify the change on the next LES."
+ },
+ {
+  "page": "content/marines/deers-enrollment-and-id-cards.mdx",
+  "line": 73,
+  "claim": "BAH traces back to DEERS",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "MCO 1751.3 Ch 1 par 1.e",
+  "correctedFix": "BAH runs on the NAVMC 10922 and MCTFS. DEERS drives ID cards and TRICARE."
+ },
+ {
+  "page": "content/marines/divorce-and-spouse-loss.mdx",
+  "line": 148,
+  "claim": "Joint custody BAH depends on who pays housing",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 4.1",
+  "correctedFix": "Use the custodial test. A Marine awarded primary physical custody, or whose child lives with the Marine at least half the calendar year, is the custodial parent."
+ },
+ {
+  "page": "content/marines/divorce-and-spouse-loss.mdx",
+  "line": 162,
+  "claim": "Support recertified annually",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 3.3.2, MCO 1751.3 Ch 1 par 8",
+  "correctedFix": "Remove annual recertification. Raise support within 60 days of a BAH-Diff rate increase and report any change in support obligation."
+ },
+ {
+  "page": "content/marines/divorce-and-spouse-loss.mdx",
+  "line": 218,
+  "claim": "Separation agreements do not affect spouse BAH",
+  "confirmed": false,
+  "severity": "minor",
+  "paragraph": "Ch 26 3.3.2.3",
+  "correctedFix": "No change required. Optional note on the support floor for a legally separated spouse.",
+  "note": "Refuted. Page says separation agreements do not establish divorce, which holds."
+ },
+ {
+  "page": "content/marines/joining-a-unit.mdx",
+  "line": 332,
+  "claim": "DEERS errors can stop family pay",
+  "confirmed": false,
+  "severity": "minor",
+  "paragraph": "MCO 1751.3 Ch 1 par 1.e",
+  "correctedFix": "No change required.",
+  "note": "Refuted. Source silent on DEERS impact, hedged line states no false rule."
+ },
+ {
+  "page": "content/marines/life-events-overview.mdx",
+  "line": 99,
+  "claim": "Late submission creates pay debts",
+  "confirmed": true,
+  "severity": "minor",
+  "paragraph": "Ch 26 3.2.3.2, 10.3",
+  "correctedFix": "Say late loss reports create debts and late additions delay payment."
+ },
+ {
+  "page": "content/marines/life-events-overview.mdx",
+  "line": 116,
+  "claim": "BAH delayed start or unrecouped overpayment",
+  "confirmed": false,
+  "severity": "minor",
+  "paragraph": "Ch 26 10.3, 3.2.3.2",
+  "correctedFix": "No change required.",
+  "note": "Refuted. Both outcomes occur."
+ },
+ {
+  "page": "content/marines/secondary-dependency-dd-137.mdx",
+  "line": 48,
+  "claim": "BAH-with-dependents not to exceed full BAH-with-dependents",
+  "confirmed": false,
+  "severity": "minor",
+  "paragraph": "DD 137 Section 1",
+  "correctedFix": "No change required.",
+  "note": "Refuted. Page restates DD 137 entitlement language."
+ },
+ {
+  "page": "content/citations/mctfsprium-80201.mdx",
+  "line": 152,
+  "claim": "Dependents visit over 90 days ends dependent-locality BAH",
+  "confirmed": false,
+  "severity": "minor",
+  "paragraph": "PRIUM 80201 par 8, Ch 26 7.5.1",
+  "correctedFix": "No change required.",
+  "note": "Refuted. Page restates PRIUM 80201 par 8, and Ch 26 7.5.1 deems dependents resident at the PDS on day 91."
+ }
+]
