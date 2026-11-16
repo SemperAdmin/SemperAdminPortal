@@ -242,7 +242,7 @@
         },
         {
           "code": "20",
-          "question": "Have all Disbursing payment, adjustment, and report records, that are not required to be recorded to CEDMS or DTMS, been safeguarded to enable retrieval over the full 10 years in accordance with the references?",
+          "question": "Have all Disbursing payment, adjustment, and report records, that are not required to be recorded to CEDMS or DTMS, been safeguarded to enable retrieval for the full retention period in accordance with the references?",
           "references": [
             "SECNAVINST M-5210.1 and DODFMR Vol 1. CH. 9"
           ],
@@ -461,7 +461,7 @@
         },
         {
           "code": "20",
-          "question": "Have all Disbursing payment, adjustment, and report records, that are not required to be recorded to CEDMS or DTMS, been safeguarded to enable retrieval over the full 10 years in accordance with the references?",
+          "question": "Have all Disbursing payment, adjustment, and report records, that are not required to be recorded to CEDMS or DTMS, been safeguarded to enable retrieval for the full retention period in accordance with the references?",
           "references": [
             "SECNAVINST M-5210.1 and DODFMR Vol 1. CH. 9"
           ],

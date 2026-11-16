@@ -781,10 +781,10 @@
           },
           {
             "citation": "MCO 5800.16, V-14, par 011105.B",
-            "text": "Item 2. After advising the Marine in accordance with Article 31, UCMJ, and providing the right against self-incrimination, ensure the accused selects intentions from the drop-down or writes them in, then dates and signs. If the accused refuses to sign, the refused-to-sign box must be checked and the CO must sign in Item 2 instead."
+            "text": "Item 2. After advising the Marine in accordance with Article 31, UCMJ, and reference (r), require the Marine to indicate intentions by striking out inapplicable portions, unless the Marine is attached to or embarked aboard a naval vessel. In such cases, strike out with a single black or blue-black ink line all sentences after the first sentence (see reference (r), section 0109). Thereafter, require the Marine to date and sign the item. When a Marine refuses to indicate an intention and/or refuses to sign, process charges as a refusal to accept NJP and forward the UPB to the officer exercising court-martial jurisdiction for disposition. Note in item 2, \"See item 16.\" Note in item 16, \"Marine refuses to indicate intentions or to sign item 2. Case forwarded recommending (special court-martial), (summary court-martial), (etc.).\""
           }
         ],
-        "summary": "NAVMC 10132 (REV. 08-2023) contains 22 numbered items that must be completed per MCO 5800.16 V-14 par 011105 detailed preparation instructions. This is the most detailed question in the checklist and inspects all 22 UPB blocks against their specific requirements. Compliance requires that the regulatory standard above be met for the inspection period reviewed. Inspector Note: Q0108 inspects all 22 UPB blocks. Use the item-by-item guidance below for each block. Mark this question Compliant only if every required block is correctly completed across the sample reviewed."
+        "summary": "NAVMC 10132 (REV. 08-2023) contains 22 numbered items that must be completed per MCO 5800.16 V-14 par 011105 detailed preparation instructions. This is the most detailed question in the checklist and inspects all 22 UPB blocks against their specific requirements. Compliance requires that the regulatory standard above be met for the inspection period reviewed. Inspector Note: The drop-down and refused-to-sign box wording below is IGMC checklist wording for the NAVMC 10132 (REV. 08-2023) form. The quoted par 011105.B text above is the order. Q0108 inspects all 22 UPB blocks. Use the item-by-item guidance below for each block. Mark this question Compliant only if every required block is correctly completed across the sample reviewed."
       },
       "howToInspect": [
         {
@@ -1852,7 +1852,7 @@
             "text": "Under no circumstance shall the notifications required by this paragraph be conducted by the SARC."
           }
         ],
-        "summary": "Commands must notify victims of sex-related offenses of the disposition decision within 5 working days of that decision. Notification is conducted by the unit Victim Witness Assistance Coordinator (VWAC), not the Sexual Assault Response Coordinator (SARC). Inspector Note: If the command had no cases involving victims of sex-related offenses during the inspection period, mark N/A and document that finding. Sex-related offenses are defined in MCO 5800.16 V-16, par 040402D."
+        "summary": "Commands must notify victims of sex-related offenses of the disposition decision. MCO 5800.16 V-16 sets no time limit for the disposition notice. Notification is conducted by the unit Victim Witness Assistance Coordinator (VWAC), not the Sexual Assault Response Coordinator (SARC). Inspector Note: If the command had no cases involving victims of sex-related offenses during the inspection period, mark N/A and document that finding. Sex-related offenses are defined in MCO 5800.16 V-16, par 040402D."
       },
       "howToInspect": [
         {
@@ -1885,11 +1885,11 @@
           ]
         },
         {
-          "step": "Verify Working Day Timeline",
+          "step": "Verify Notification Timing",
           "actions": [
-            "Calculate working days between disposition decision and victim notification. Working days are Monday through Friday excluding federal holidays.",
-            "Confirm notification occurred within 5 working days.",
-            "Flag any notification exceeding 5 working days."
+            "Record the disposition decision date and the victim notification date.",
+            "Confirm the victim was notified of the disposition decision. V-16 sets no time limit for the notice.",
+            "Flag any case with no notice of the disposition decision on file."
           ]
         },
         {
@@ -1911,11 +1911,10 @@
           "step": "Common Discrepancies",
           "actions": [
             "No documentation of victim disposition notifications.",
-            "Notifications made but not within 5 working days.",
+            "Disposition decision notifications not made.",
             "SARC conducted notifications instead of VWAC.",
             "No VWAC assigned to the case.",
             "Notifications made verbally without written documentation.",
-            "Working days versus calendar days calculation incorrect.",
             "Missing commander notification forms."
           ]
         }
@@ -1924,7 +1923,7 @@
         "Have you had any cases with victims of sex-related offenses in the past 24 months?",
         "Who is your VWAC?",
         "Show me the disposition decision date and the date the victim was notified for each qualifying case?",
-        "How do you track the 5 working day requirement?",
+        "How do you track victim notification of the disposition decision?",
         "Do you use the standard commander notification form?",
         "How do you ensure the SARC does not conduct these notifications?"
       ],
@@ -1933,7 +1932,7 @@
         "If no qualifying cases, finding is documented and question marked N/A.",
         "For each qualifying case, the disposition decision date is recorded.",
         "For each qualifying case, the victim notification date is recorded.",
-        "Working days between disposition decision and notification is 5 or fewer.",
+        "Victim notification of the disposition decision is recorded.",
         "Notification was conducted by the VWAC, not the SARC.",
         "Notification is documented in the case file with method of notification recorded."
       ],

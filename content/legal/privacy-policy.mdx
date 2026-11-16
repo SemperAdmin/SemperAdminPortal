@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
 slug: privacy-policy
-summary: How Semper Admin Portal collects, stores, and protects data. Your browser stores role preference and viewing history. GitHub Pages logs access. No third-party tracking.
+summary: How Semper Admin Portal collects, stores, and protects data. Your browser stores role preference, viewing history, checklist progress, and a session log. GitHub Pages logs access. No third-party tracking.
 type: terms
 roles: [marine, leader, commander, admin]
 lastVerified: "2026-06-02"
@@ -24,12 +24,14 @@ We store the following when you visit:
 - Your viewing history. Up to 12 of your recently viewed pages (title and URL only). Stored in the same localStorage key as your role. Persists until you clear browser data or explicitly clear your recents.
 - Disclaimer acceptance. A flag indicating you have read and dismissed the proof-of-concept banner. Stored in `sessionStorage` as `sap.disclaimer.dismissed`. Clears when you close your browser tab.
 - Terms acknowledgment. A record of the date you acknowledged the disclaimer and terms, and the version of the terms you saw. Stored in `localStorage` as `semper-admin-terms-accepted`. Persists until you clear browser data, or until the terms are revised, at which point the acknowledgment prompt returns.
+- Inspector guide checklist progress. The lines you checked in an inspector guide item. Stored in `localStorage` under keys shaped `semperadmin:guide:<FA>:<item>`. Persists until you clear browser data.
+- Session audit log. A rolling log of up to 500 events from your current tab session, covering role changes and PDF or DOCX exports. Each event holds a timestamp, a page path, and a random session identifier. Stored in `sessionStorage` as `sap.audit.sessionId` and `sap.audit.events`. Clears when you close your browser tab and never leaves your browser.
 
-None of these values contain personal information. Your role selection is a category (one of four words). Your viewing history contains only page titles and URLs, which are already visible in your browser history.
+None of these values contain personal information. Your role selection is a category (one of four words). Your viewing history contains only page titles and URLs, which are already visible in your browser history. Checklist progress holds true and false values only. The audit log holds no text you type.
 
 ### Data You Voluntarily Enter in Tools
 
-Some tools on this site (PDF Letter Builder, DOCX Counseling Builder, PFT Score Calculator) accept text input. This data stays entirely in your browser. It does not reach our servers or any external service. When you export a PDF or DOCX file, the file is generated locally and downloaded to your computer. We never see the data you entered.
+Some tools on this site (PDF Letter Builder, Naval Letter Builder) accept text input. This data stays entirely in your browser. It does not reach our servers or any external service. When you export a PDF or DOCX file, the file is generated locally and downloaded to your computer. We never see the data you entered.
 
 ## Third-Party Data Processing
 

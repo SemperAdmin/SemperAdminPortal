@@ -1,7 +1,7 @@
 ---
 title: Cookies and Browser Storage
 slug: cookies-and-storage
-summary: Technical reference for all data Semper Admin Portal stores in your browser. localStorage keys, purposes, retention, and how to inspect or delete.
+summary: Technical reference for all data Semper Admin Portal stores in your browser. localStorage and sessionStorage keys, purposes, retention, and how to inspect or delete.
 type: terms
 roles: [marine, leader, commander, admin]
 lastVerified: "2026-06-02"
@@ -70,13 +70,30 @@ All storage is under your control. You may inspect, delete, or disable it at any
 **Size:** Bytes.  
 **Effect:** Once dismissed, the banner remains hidden for the duration of your tab session.
 
+### Inspector Guide Checklist Progress
+
+- Key: `semperadmin:guide:<FA>:<item>`, one key per functional area and checklist item you open.
+- Type: localStorage (persists across browser sessions).
+- Purpose: Remembers which lines you checked in an inspector guide item.
+- Data: A list of true and false values, one per checklist line.
+- Retention: Persists indefinitely until you clear browser data.
+- Shared With: Only your local browser. Not transmitted to servers.
+
+### Session Audit Log
+
+- Keys: `sap.audit.sessionId` and `sap.audit.events`.
+- Type: sessionStorage (cleared when you close the browser tab).
+- Purpose: Keeps a rolling log of up to 500 events from your current tab session. Events cover role changes, role tamper checks, and PDF or DOCX exports. Each event holds a timestamp, a page path, and a random session identifier.
+- Retention: Clears when you close the browser tab or window.
+- Shared With: Only your local browser. The log never leaves your browser.
+
 ## How to Inspect Your Storage
 
 ### Chrome, Edge, or Brave
 
 1. Press `F12` to open Developer Tools.
 2. Click the **Application** tab.
-3. In the left sidebar, expand **Local Storage** and select this site (semperadmin.github.io).
+3. In the left sidebar, expand **Local Storage** and select this site (semperadmin.github.io). Expand Session Storage to see the audit log keys.
 4. You will see all keys and values as a table.
 5. Click on any key to view its full value in the panel below.
 
@@ -210,9 +227,9 @@ Unlike cookies, localStorage items do not have automatic expiration dates. Items
 
 This site applies data minimization principles:
 
-- We store only what is necessary for core functionality (your role selection and recently viewed pages).
+- We store only what is necessary for core functionality (your role selection, recently viewed pages, terms and banner flags, inspector guide checklist progress, and a session-scoped log).
 - We do not store personal information, account credentials, or identifiable data.
-- We do not track your behavior across sites.
+- We do not track your behavior across sites. The session audit log records role changes and exports in sessionStorage. It clears when you close the tab and never leaves your browser.
 - We do not build a profile about you.
 
 Your data serves only to improve your experience on this site. It is never analyzed, mined, or sold.
