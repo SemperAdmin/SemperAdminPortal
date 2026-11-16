@@ -6,9 +6,9 @@ Items left open after the wave 3 fix pass on 2026-11-15.
 
 PR 152 merged and main merged into this branch on 2026-11-15. The eight held findings now apply on military-parental-leave-program and convalescent-leave. The 10 and 21 day paternity and adoption figures from MCO 1050.3J are not on the parental leave page, so that finding needed no edit.
 
-## Needs a decision
+## Decided
 
-- Six hand-authored video pages sit outside the catalog and point at dead marinenet.marines.mil addresses: administrative-separation-process-preparer, how-to-read-an-les-msg-focused, hqmc-ardb-directives-monthly-training-20240731, policy-and-software-updates, requesting-access, skillbridge-program-policy-update-navmc-1700-2b. The generator never prunes them. Repoint each to an MCeLE media id or delete it.
+- Six hand-authored video pages with dead marinenet.marines.mil addresses were removed 2026-11-15. Stephen confirmed the videos are retired.
 
 ## Partial fixes
 
