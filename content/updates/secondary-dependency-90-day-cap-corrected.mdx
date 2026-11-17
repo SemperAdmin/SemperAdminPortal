@@ -1,0 +1,26 @@
+---
+slug: "secondary-dependency-90-day-cap-corrected"
+date: "2026-11-16"
+kind: "correction"
+impact: "action-required"
+title: "Secondary dependency 90-day limit is a cap, not a window"
+summary: "DFAS completes no secondary dependency determination more than 90 days early. The CMC (MFP-1) suspense drives recertification, and a PDS arrival triggers one."
+roles: ["leader"]
+citations: ["dfas-secondary-dependency", "dodfmr-vol-7a", "mco-1751-3"]
+affectedPages:
+  - "/leader/pay/secondary-dependency"
+  - "/leader/pay/bah-error-catch"
+supersededBy: null
+---
+
+The secondary dependency and BAH error catch pages said a 90-day
+submission window opens before a certification expires, and the section
+tracker keyed on the date. The DFAS Secondary Dependency Claims page says
+the opposite. DFAS completes no determination more than 90 days before the
+current one expires. The limit caps how early a determination completes.
+
+CMC (MFP-1) initiates the annual recertification under MCO 1751.3. Track
+the CMC (MFP-1) suspense, not a 90-day mark. The pages now also carry two
+DoD FMR Volume 7A Chapter 26 rules. A Marine recertifies on arrival at a
+new PDS, paragraph 3.2.3.1, and a Reserve Component Marine recertifies at
+least every third year, paragraph 3.2.3.4.
