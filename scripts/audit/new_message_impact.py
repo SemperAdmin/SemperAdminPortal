@@ -159,14 +159,16 @@ def read_since(path: Path = LAST_RUN) -> str:
     return since
 
 
-def record_date(index: dict, today: str) -> str:
+def record_date(index: dict, today: str, since: str = "") -> str:
     """The date --record writes. The newest indexed message, never later than today.
 
     Recording the wall clock would bury a message signed before today but archived after
-    the run, since the window filter is date > since.
+    the run, since the window filter is date > since. Never earlier than since either, so
+    a run with nothing new does not move the window backward.
     """
     newest = newest_date(index)
-    return min(newest, today) if newest else today
+    date = min(newest, today) if newest else today
+    return max(date, since) if since else date
 
 
 _LV = re.compile(r'^lastVerified:\s*["\']?(\d{4}-\d{2}-\d{2})', re.M)
@@ -234,7 +236,7 @@ def main(argv: list[str]) -> int:
             print("[audit:impact] --record refused, pages still need a source check. Fix them or pass --force.",
                   file=sys.stderr)
         else:
-            date = record_date(index, datetime.date.today().isoformat())
+            date = record_date(index, datetime.date.today().isoformat(), since)
             LAST_RUN.write_text(json.dumps({"date": date}) + "\n", encoding="utf-8")
             print(f"[audit:impact] recorded {date} to {LAST_RUN.relative_to(REPO).as_posix()}")
     return code
