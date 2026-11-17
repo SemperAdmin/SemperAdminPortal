@@ -88,6 +88,13 @@ def test_record_date_is_newest_message_not_wall_clock():
     assert im.record_date({}, "2026-11-16") == "2026-11-16"
 
 
+def test_record_date_never_moves_backward():
+    im = load("new_message_impact")
+    idx = {"MCO 1050.3J": [{"id": "MARADMIN 600/26", "date": "2026-11-10", "kind": "amends"}]}
+    assert im.record_date(idx, "2026-11-16", since="2026-11-14") == "2026-11-14"
+    assert im.record_date(idx, "2026-11-16", since="2026-11-01") == "2026-11-10"
+
+
 def test_bad_since_is_rejected():
     im = load("new_message_impact")
     import pytest
