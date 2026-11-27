@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<circle cx="32" cy="32" r="31" fill="#1B2A47"/>
+<circle cx="32" cy="32" r="28.5" fill="none" stroke="#D4AF37" stroke-width="2"/>
+<path d="M32 12 l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z" fill="#D4AF37"/>
+<text x="32" y="50" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="19" fill="#F7F3E8">SA</text>
+</svg>

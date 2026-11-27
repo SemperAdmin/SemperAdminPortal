@@ -4,7 +4,8 @@
 //
 // Layout produced in out/:
 //   out/public/      the exported site (served content; Staticfile root: public)
-//   out/nginx/       nginx config dir (conf/includes/redirect.conf)
+//   out/nginx/       nginx config dir (conf/includes/redirect.conf, plus the
+//                    generated legacy-redirects.conf)
 //   out/Staticfile   buildpack config (root: public, location_include)
 //
 // public/ is required because the staticfile buildpack honors location_include
@@ -14,6 +15,7 @@
 import { spawnSync } from "node:child_process";
 import { cpSync, mkdirSync, readdirSync, renameSync, rmSync } from "node:fs";
 import path from "node:path";
+import { writeLegacyRedirects } from "./build-legacy-redirects.mjs";
 
 const result = spawnSync("npm", ["run", "build"], {
   stdio: "inherit",
@@ -43,6 +45,18 @@ for (const entry of readdirSync(OUT)) {
 rmSync(path.join(OUT, "nginx"), { recursive: true, force: true });
 cpSync("deploy/nginx", path.join(OUT, "nginx"), { recursive: true });
 cpSync("deploy/Staticfile", path.join(OUT, "Staticfile"));
+
+// Redirect moved pages. Done here, not in next.config, because a static export
+// emits no HTTP redirects (`redirects()` is unsupported with output: 'export').
+// GitHub Pages builds do not get them. The writer fails the build if a target
+// page is missing or a redirect would shadow a live page.
+const redirectCount = writeLegacyRedirects({
+  publicDir: PUBLIC,
+  includeDir: path.join(OUT, "nginx", "conf", "includes"),
+});
+console.log(
+  `Wrote ${redirectCount} legacy redirects to out/nginx/conf/includes.`
+);
 
 console.log(
   "Cloud.gov build staged in out/ (site under out/public, nginx config at out/nginx). Deploy with cf push."
