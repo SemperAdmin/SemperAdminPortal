@@ -1,93 +1,73 @@
-<<<<<<< HEAD
 # Semper Admin Portal
 
-> **Status: Proof of Concept.** This repository is a personal subject-matter-expert project, not an official Marine Corps product. The content is not authoritative for pay, records, leave, separation, or any other administrative decision. Every claim is sourced from public MCO and MARADMIN material via citation chips, and contributors are individual SMEs acting in their personal capacity, not as government employees in official capacity. Verify against the underlying source before relying on anything here.
+A sourced, role-tagged reference for Marine Corps administration, with policy summaries, situation guides, checklists and small tools, for Marines, leaders, commanders and admin specialists.
 
-Sourced, role-tagged USMC administrative reference and tools for Marines, leaders, commanders, and admin specialists.
+**Live:** https://semper-admin-portal.app.cloud.gov
+**Also on GitHub Pages:** https://semperadmin.github.io/SemperAdminPortal/
 
-Live URL: https://semperadmin.github.io/SemperAdminPortal/
+## What it does
 
-## Stack
+- Organizes content by role (Marine, leader, commander, admin) and shows the pages for the role you pick first.
+- Summarizes policy (MCOs, MARADMINs and related orders) with citations to the source, and marks pages that are aging or stale by their last-verified date.
+- Provides situation guides, quick references, checklists, inspection material and a library of links.
+- Lists video pages with chapters. The video files are hosted by the Marine Corps eLearning platform (see Privacy and security).
+- Includes browser-based tools, including PDF and Word (DOCX) document builders.
+- Searches all content in the browser, and offers a command palette (Ctrl+K or Cmd+K) and a dark theme.
 
-- Next.js 15 App Router, TypeScript strict, static export targeting GitHub Pages.
-- Tailwind CSS 4 with shadcn-style component layer, Radix primitives, lucide-react.
-- Zustand store with persist middleware for the role state.
-- Custom MDX content loader using gray-matter and zod schemas, plus a build-time JSON sync script for client components.
-- Pagefind for build-time full-text search, indexed against the static `out/` directory.
-- @react-pdf/renderer for PDF generation, docx and file-saver for DOCX exports. Both lazy-loaded.
-- next-themes for dark mode, cmdk for the Cmd+K and Ctrl+K command palette.
-- next-sitemap for sitemap.xml and robots.txt.
+## Using it
 
-## Local development
+Open the live site in a current browser and choose a role. No account is needed. Content is a reference prepared by individual subject-matter experts and is not authoritative: verify against the cited order before relying on it for a pay, records, leave, separation or other administrative decision.
 
-Prereqs: Node 22, npm 10 or newer.
+## Privacy and security
 
-1. `npm install`
-2. `npm run dev`
-3. Open `http://localhost:3000/SemperAdminPortal/`
+- **Data flow:** nothing you enter is sent to a server. Search runs in your browser against content bundled with the site, and the site makes no `fetch` or other background requests of its own. Three things reach other hosts only because of what you open or click. Video pages point the video player at the Marine Corps eLearning portal (a .mil host that needs a .mil network), so opening one makes your browser contact that host. Links to other sites, such as the other Semper Admin apps, the TemplateToolBox and the Feedback form, send nothing until you follow them. The contact link on the MCAAT page opens your own mail program.
+- The browser stores your selected role, a list of up to 12 recently viewed pages, your acceptance of the terms, inspector-guide checklist progress, and a per-tab session log of role changes and exports that never leaves the browser. There are no accounts, analytics or cookies. The in-site [Cookies and Browser Storage](https://semper-admin-portal.app.cloud.gov/legal/cookies-and-storage/) page lists every key.
+- The hosting platforms (cloud.gov and GitHub Pages) keep standard web server access logs, such as IP address, time, requested page and browser type, for operations and security. Semper Admin does not add tracking of its own.
 
-## Build and preview
+See the in-site [Privacy Policy](https://semper-admin-portal.app.cloud.gov/legal/privacy-policy/) and [Security](SECURITY.md).
 
-- Type check: `npm run type-check`
-- Lint: `npm run lint`
-- Format: `npm run format`
-- Production build (with content sync, sitemap, Pagefind index): `npm run build`
+## Development
 
-The build emits to `out/` with the Pagefind index at `out/pagefind/`.
+Requires a current LTS Node (CI uses Node 22) and npm. The site is Next.js 16 with TypeScript, exported as static files.
 
-## Deploy
-
-Push to `main`. GitHub Actions runs `npm ci`, `npm run build`, then publishes via `actions/deploy-pages`.
-
-Repo settings:
-
-1. Settings, Pages, Source = GitHub Actions.
-2. Settings, Actions, General, Workflow permissions = Read and write.
-
-## Routes
-
-- `/` Home with role-aware hero and surface cards.
-- `/knowledge` Three-bullet snippets grouped by topic.
-- `/policy` Policy index plus dynamic `/policy/[slug]` detail pages.
-- `/situations` Situation index plus dynamic `/situations/[slug]` detail pages.
-- `/videos` Video index plus dynamic `/videos/[slug]` detail with chapters and transcript.
-- `/references` Forms, calculators, and checklists.
-- `/tools` Tools index plus first four tools at `/tools/eas-countdown`, `/tools/pft-score`, `/tools/pdf-letter-builder`, `/tools/docx-counseling`, `/tools/separation-checklist`.
-- `/search` Pagefind UI bound to the static index.
-- `/about` Mission, sources, update cadence.
-- `/styleguide` Design system reference.
-
-## Content authoring
-
-See CONTRIBUTING.md for the full role-tagged content workflow, frontmatter schema, and verification policy.
-
-## Project layout
-
-```
-.
-├── content/                  MDX content collections, six folders
-├── next.config.mjs           Static export, basePath, assetPrefix
-├── next-sitemap.config.cjs   Sitemap and robots
-├── postcss.config.mjs        Tailwind 4 PostCSS plugin
-├── scripts/sync-content.mjs  Regenerates src/generated/*.json catalogs
-├── public/                   Static assets, logo
-├── src/
-│   ├── app/                  App Router routes
-│   ├── components/
-│   │   ├── domain/           Domain components (RoleChip, PolicyBadge, etc.)
-│   │   ├── shell/            App shell, top nav, side nav, palette
-│   │   ├── theme/            Theme provider and toggle
-│   │   └── ui/               shadcn-style primitives
-│   ├── generated/            Built JSON catalogs (gitignored)
-│   ├── hooks/                use-mounted, future hooks
-│   ├── lib/                  utils, navigation, content loader, role store
-│   └── styles/               (tokens live in src/app/globals.css)
-└── .github/workflows/        Pages deploy pipeline
+```bash
+npm ci
+npm run dev          # http://localhost:3000/SemperAdminPortal/
+npm test             # vitest
+npm run type-check
+npm run lint
+npm run build        # static export to out/, sitemap, search index and link checks
 ```
 
-## Reference folder
+`npm run build:cloudgov` builds for the cloud.gov route root and stages the bundle in `out/` for `cf push`: the site under `out/public`, the nginx configuration, and a generated set of permanent redirects for pages that have moved (from `deploy/legacy-redirects.json`). GitHub Pages builds do not get those redirects. Contributing content and the project layout are described in [CONTRIBUTING.md](CONTRIBUTING.md) and [docs/CONTRIBUTING-CONTENT.md](docs/CONTRIBUTING-CONTENT.md).
 
-`D:\Coding\SemperAdminPortal-OldReference` was specified for content mining. Not yet mounted in this build session, mount it to extend content collections.
-=======
-# SemperAdminPortal
->>>>>>> 798ba01be2f7ff168543dd88994426e8875d80a1
+## Deployment
+
+| Environment | URL | How |
+|---|---|---|
+| cloud.gov | https://semper-admin-portal.app.cloud.gov | `manifest.yml` (staticfile buildpack); manual **Deploy to cloud.gov** workflow (`.github/workflows/deploy-cloudgov.yml`); sandbox managed by the private cloudgov-redeploy repository |
+| GitHub Pages | https://semperadmin.github.io/SemperAdminPortal/ | `.github/workflows/deploy.yml` on push to `main`, served under `/SemperAdminPortal` |
+
+## Documentation
+
+- [CONTRIBUTING.md](CONTRIBUTING.md): content workflow, frontmatter, video pipeline and code style.
+- [docs/CONTRIBUTING-CONTENT.md](docs/CONTRIBUTING-CONTENT.md): site sections and source layout.
+
+## Feedback and support
+
+[Open an issue](https://github.com/SemperAdmin/SemperAdminPortal/issues), or use **Feedback** in the site menu (the form needs a .mil network). Report security problems as described in [SECURITY.md](SECURITY.md).
+
+## License and disclaimer
+
+MIT (see [LICENSE](LICENSE)).
+
+> This is an independent tool built to help Marines with administrative
+> work. It is not an official Department of the Navy or U.S. Marine Corps
+> system and is not endorsed by, affiliated with, or approved by either.
+> Always confirm requirements against the current governing orders.
+
+## Part of Semper Admin
+
+One of the tools in the Semper Admin suite. Start at the
+[Semper Admin Portal](https://semper-admin-portal.app.cloud.gov) for the
+full set.
